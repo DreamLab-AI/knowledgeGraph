@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:database",
+  "title": "Database",
+  "slug": "database",
+  "public": true,
+  "classIri": "urn:ngm:class:database",
+  "domain": "infrastructure",
+  "definition": "A database is an organised collection of structured data managed by a database management system that supports persistent storage, efficient retrieval, concurrent access and integrity guarantees. Databases expose query interfaces, enforce schemas or schemaless models, and provide transactional or eventual-consistency semantics depending on their design. They form the durable state layer beneath most data-intensive applications and services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "id": "urn:ngm:class:persistence",
+        "label": "Persistence"
+      },
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

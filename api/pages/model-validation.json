@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:model-validation",
+  "title": "Model Validation",
+  "slug": "model-validation",
+  "public": true,
+  "classIri": "urn:ngm:class:model-validation",
+  "domain": "artificial-intelligence",
+  "definition": "Model validation is the process of assessing whether a trained model meets its intended requirements for accuracy, robustness, fairness and generalisation before it is trusted in practice. It uses held-out data, cross-validation and stress tests to estimate performance on unseen inputs and to detect overfitting, bias or specification gaps. Distinct from evaluation metrics alone, validation judges fitness for purpose within the model lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-lifecycle",
+      "label": "AI Lifecycle"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "interpretability",
+      "label": "Interpretability"
+    }
+  ]
+}

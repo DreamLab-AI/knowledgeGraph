@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:backward-compatibility",
+  "title": "Backward Compatibility",
+  "slug": "backward-compatibility",
+  "public": true,
+  "classIri": "urn:ngm:class:backward-compatibility",
+  "domain": "infrastructure",
+  "definition": "Backward compatibility is the property of a system, interface, or data format that allows newer versions to continue working correctly with inputs, clients, or data produced for older versions. It ensures that existing consumers do not break when a producer is upgraded, preserving established contracts while permitting evolution. Maintaining backward compatibility typically requires additive, non-breaking changes and careful deprecation policies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:semantic-versioning",
+        "label": "Semantic Versioning"
+      },
+      {
+        "id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "id": "urn:ngm:class:software-system",
+        "label": "Software System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

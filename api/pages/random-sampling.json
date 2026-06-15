@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:random-sampling",
+  "title": "Random Sampling",
+  "slug": "random-sampling",
+  "public": true,
+  "classIri": "urn:ngm:class:random-sampling",
+  "domain": "artificial-intelligence",
+  "definition": "Random sampling is a method of selecting a subset of items from a population such that every element has a known, non-zero probability of being chosen, with selections governed by chance rather than judgement. It is the foundation of statistical inference, allowing properties of a population to be estimated from a representative sample while quantifying uncertainty. In machine learning it underpins data partitioning, stochastic optimisation and Monte Carlo estimation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistics",
+      "label": "Statistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:variance",
+        "label": "Variance"
+      },
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

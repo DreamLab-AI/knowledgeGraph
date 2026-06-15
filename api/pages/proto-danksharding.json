@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:proto-danksharding",
+  "title": "Proto-Danksharding",
+  "slug": "proto-danksharding",
+  "public": true,
+  "classIri": "urn:ngm:class:proto-danksharding",
+  "domain": "blockchain",
+  "definition": "Proto-danksharding is an Ethereum scaling upgrade, specified in EIP-4844, that introduces blob-carrying transactions to provide cheap, temporary data availability for layer-2 rollups. It adds a new transaction type carrying large binary data blobs that are not accessible to the Ethereum Virtual Machine and are pruned after a short retention period, with KZG commitments proving their contents. It is an incremental step towards the full danksharding design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-availability",
+      "label": "Data Availability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eip-4844",
+        "label": "EIP-4844"
+      },
+      {
+        "id": "urn:ngm:class:blob-transaction",
+        "label": "Blob Transaction"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kzg-commitment",
+        "label": "KZG Commitment"
+      },
+      {
+        "id": "urn:ngm:class:blob-transaction",
+        "label": "Blob Transaction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK Rollup"
+      },
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

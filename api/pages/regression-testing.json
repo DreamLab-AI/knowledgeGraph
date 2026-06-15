@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:regression-testing",
+  "title": "Regression Testing",
+  "slug": "regression-testing",
+  "public": true,
+  "classIri": "urn:ngm:class:regression-testing",
+  "domain": "infrastructure",
+  "definition": "Regression testing is the practice of re-executing previously passing tests after a code change to confirm that existing behaviour has not been broken. It guards against regressions introduced by new features, bug fixes or refactoring by maintaining a suite of repeatable checks that are run automatically as part of integration and delivery pipelines. The discipline trades upfront test authoring and maintenance for sustained confidence in evolving systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-testing",
+      "label": "Software Testing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:unit-testing",
+        "label": "Unit Testing"
+      },
+      {
+        "id": "urn:ngm:class:integration-testing",
+        "label": "Integration Testing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:test-automation",
+        "label": "Test Automation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:unit-testing",
+        "label": "Unit Testing"
+      },
+      {
+        "id": "urn:ngm:class:test-automation",
+        "label": "Test Automation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

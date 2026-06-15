@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:vpn",
+  "title": "VPN",
+  "slug": "vpn",
+  "public": true,
+  "classIri": "urn:ngm:class:vpn",
+  "domain": "security",
+  "definition": "A Virtual Private Network (VPN) is a security technology that establishes an encrypted tunnel between a user's device and a remote server, routing traffic through it so that data confidentiality and integrity are preserved across untrusted networks. By encapsulating and encrypting packets, a VPN conceals the user's originating address and protects communications from interception on shared or public infrastructure. VPNs are widely used for secure remote access to private networks, for privacy on public Wi-Fi, and for circumventing network-level filtering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-security",
+      "label": "Network Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tor",
+        "label": "Tor"
+      },
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocols",
+        "label": "Cryptographic Protocols"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

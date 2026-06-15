@@ -1,0 +1,123 @@
+{
+  "id": "urn:visionflow:page:schema",
+  "title": "Schema",
+  "slug": "schema",
+  "public": true,
+  "classIri": "urn:ngm:class:schema",
+  "domain": "data",
+  "definition": "A schema is a formal specification of the structure, types and constraints that valid data must satisfy within a given system. It defines entities, their attributes, relationships and permissible values, acting as a contract between data producers and consumers. Schemas underpin validation, interoperability and the reliable exchange of structured data across applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-model",
+      "label": "Data Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:structured-data",
+        "label": "Structured Data"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:xml-schema",
+        "label": "XML Schema"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "interface-layer",
+      "label": "Interface Layer"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

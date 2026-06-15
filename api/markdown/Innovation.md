@@ -1,0 +1,161 @@
+public:: true
+
+# Innovation
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:innovation",
+  "@type": "Page",
+  "title": "Innovation",
+  "vc:slug": "innovation",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:innovation",
+  "@type": "Class",
+  "label": "Innovation",
+  "definition": "Innovation is the process of creating and successfully introducing new or significantly improved products, services, processes or business models that deliver value. It spans the journey from invention and creative ideation through development, adoption and diffusion across markets and organisations. Innovation is a primary driver of economic growth, competitiveness and societal change, and is closely linked to research, knowledge transfer and entrepreneurship.",
+  "domain": "ai",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:digital-economy",
+      "label": "Digital Economy"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "@id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
+- ### Definition
+  - Innovation is the process of creating and successfully introducing new or significantly improved products, services, processes or business models that deliver value. It spans the journey from invention and creative ideation through development, adoption and diffusion across markets and organisations. Innovation is a primary driver of economic growth, competitiveness and societal change, and is closely linked to research, knowledge transfer and entrepreneurship.
+  - Key related concepts: [[Digital Economy]] [[Technology Transfer]] [[Knowledge Transfer]] [[Collaboration]] [[Artificial Intelligence]]
+- ### Overview
+  - [[Innovation]] is situated within the ai domain and is defined as a subclass of [[Digital Economy]].
+  - It connects to the wider knowledge graph through 15 typed relations spanning structural, functional and contrastive predicates.
+  - As a mature concept, it represents established knowledge with stable terminology and well-understood boundaries.
+- ### Key aspects
+  - Relationship to [[Digital Economy]] situates this concept within its operational and conceptual context.
+  - Relationship to [[Technology Transfer]] situates this concept within its operational and conceptual context.
+  - Relationship to [[Knowledge Transfer]] situates this concept within its operational and conceptual context.
+  - Relationship to [[Collaboration]] situates this concept within its operational and conceptual context.
+  - Relationship to [[Artificial Intelligence]] situates this concept within its operational and conceptual context.
+- ### Mechanisms
+  - The concept is realised through its constituent parts and the standards, methods and dependencies enumerated in its relations.
+  - It both requires upstream capabilities and enables downstream capabilities, forming part of a directed chain of dependencies in the graph.
+- ### Applications
+  - Practical use of [[Innovation]] appears wherever its enabled and supported concepts are deployed.
+  - It is referenced by existing classes in the graph, anchoring those edges to a defined, rooted node.
+- ### Relationships
+  - partOf:: [[Digital Economy]]
+  - hasPart:: [[Technology Transfer]]
+  - hasPart:: [[Knowledge Transfer]]
+  - enables:: [[Digital Economy]]
+  - enables:: [[Technology Transfer]]
+  - enables:: [[Enterprise Architecture]]
+  - supports:: [[Knowledge Transfer]]
+  - supports:: [[Artificial Intelligence]]
+  - requires:: [[Collaboration]]
+  - requires:: [[Knowledge Transfer]]
+  - uses:: [[Machine Learning]]
+  - dependsOn:: [[Technology Transfer]]
+  - relatedTo:: [[Artificial Intelligence]]
+  - relatedTo:: [[Digital Economy]]
+  - relatedTo:: [[Governance]]
+  - subClassOf:: [[Digital Economy]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

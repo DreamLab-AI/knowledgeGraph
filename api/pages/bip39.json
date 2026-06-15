@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:bip39",
+  "title": "BIP-39",
+  "slug": "bip39",
+  "public": true,
+  "classIri": "urn:ngm:class:bip39",
+  "domain": "blockchain",
+  "definition": "BIP-39 is a Bitcoin Improvement Proposal that defines how to encode wallet entropy as a human-readable mnemonic seed phrase and how to derive a binary seed from it. It maps random entropy plus a checksum onto words drawn from a fixed wordlist, then stretches the phrase and an optional passphrase into a seed via a key derivation function. The resulting seed feeds hierarchical deterministic wallets, making secrets easier to back up and transcribe.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:seed-phrase",
+      "label": "Seed Phrase"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hierarchical-deterministic-wallet",
+        "label": "Hierarchical Deterministic Wallet"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:seed-phrase",
+        "label": "Seed Phrase"
+      },
+      {
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:key-derivation-function",
+        "label": "Key Derivation Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptocurrency-storage",
+      "label": "Cryptocurrency Storage"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:alerting",
+  "title": "Alerting",
+  "slug": "alerting",
+  "public": true,
+  "classIri": "urn:ngm:class:alerting",
+  "domain": "infrastructure",
+  "definition": "Alerting is the observability capability that evaluates monitored signals against defined conditions and notifies responsible humans or automated systems when those conditions indicate a problem or an impending one. It converts continuous telemetry into discrete, actionable notifications routed to the appropriate on-call recipient. Effective alerting balances sensitivity against noise so that every alert is meaningful and timely.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:observability",
+      "label": "Observability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:notification",
+        "label": "Notification"
+      },
+      {
+        "id": "urn:ngm:class:alert-fatigue",
+        "label": "Alert Fatigue"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incident-reporting",
+        "label": "Incident Reporting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:incident-management",
+        "label": "Incident Management"
+      },
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root Cause Analysis"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      },
+      {
+        "id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

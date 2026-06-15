@@ -1,0 +1,126 @@
+{
+  "id": "urn:visionflow:page:copyright",
+  "title": "Copyright",
+  "slug": "copyright",
+  "public": true,
+  "classIri": "urn:ngm:class:copyright",
+  "domain": "governance",
+  "definition": "Copyright is a legal right that grants the creator of an original work exclusive control over its reproduction, distribution, adaptation and public performance for a limited term. It arises automatically upon fixation of an expressive work and may be licensed, assigned or waived by the rights holder. Within governance it anchors how digital content, software and creative outputs are owned, shared and monetised.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:intellectual-property-rights-framework",
+      "label": "Intellectual Property Rights Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      },
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      },
+      {
+        "id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:patent",
+        "label": "Patent"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property Rights Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-governance-law-and-privacy",
+      "label": "AI Governance Law and Privacy"
+    },
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "co-training",
+      "label": "Co Training"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

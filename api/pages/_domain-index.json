@@ -251,6 +251,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "certification",
+      "title": "Certification",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "change-management",
       "title": "Change Management",
       "qualityScore": 0.72
@@ -399,6 +404,11 @@
       "slug": "coordination-mechanisms",
       "title": "Coordination Mechanisms",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "copyright",
+      "title": "Copyright",
+      "qualityScore": 0.62
     },
     {
       "slug": "corporate-governance",
@@ -1031,6 +1041,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "international-cooperation",
+      "title": "International Cooperation",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "internet-governance",
       "title": "Internet Governance",
       "qualityScore": 0.62
@@ -1221,6 +1236,11 @@
       "qualityScore": 0.74
     },
     {
+      "slug": "net-zero",
+      "title": "Net Zero",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "northern-powerhouse",
       "title": "Northern Powerhouse",
       "qualityScore": 0.72
@@ -1244,6 +1264,11 @@
       "slug": "online-safety-act-2023",
       "title": "Online Safety Act 2023",
       "qualityScore": 0.74
+    },
+    {
+      "slug": "open-access",
+      "title": "Open Access",
+      "qualityScore": 0.62
     },
     {
       "slug": "open-rights-group",
@@ -2178,6 +2203,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "bip39",
+      "title": "BIP-39",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "blake2",
       "title": "BLAKE2",
       "qualityScore": 0.0
@@ -2636,6 +2666,11 @@
       "slug": "blockchain-transaction",
       "title": "Blockchain Transaction",
       "qualityScore": 0.74
+    },
+    {
+      "slug": "blockchain-wallet",
+      "title": "Blockchain Wallet",
+      "qualityScore": 0.62
     },
     {
       "slug": "blockchain",
@@ -3608,6 +3643,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "eip",
+      "title": "EIP",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "ens",
       "title": "ENS",
       "qualityScore": 0.74
@@ -4518,6 +4558,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "intellectual-property-rights",
+      "title": "Intellectual Property Rights",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "inter-blockchain-communication",
       "title": "Inter-Blockchain Communication",
       "qualityScore": 0.62
@@ -5348,6 +5393,11 @@
       "qualityScore": 0.6
     },
     {
+      "slug": "payment-processing",
+      "title": "Payment Processing",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "payment-routing",
       "title": "Payment Routing",
       "qualityScore": 0.62
@@ -5598,6 +5648,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "proto-danksharding",
+      "title": "Proto-Danksharding",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "protocol-sustainability",
       "title": "Protocol Sustainability",
       "qualityScore": 0.72
@@ -5831,6 +5886,11 @@
       "slug": "rootstock",
       "title": "Rootstock",
       "qualityScore": 0.6
+    },
+    {
+      "slug": "routing-algorithm",
+      "title": "Routing Algorithm",
+      "qualityScore": 0.62
     },
     {
       "slug": "royalty-distribution",
@@ -6513,6 +6573,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "transaction-throughput",
+      "title": "Transaction Throughput",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "transaction-validation",
       "title": "Transaction Validation",
       "qualityScore": 0.72
@@ -7015,6 +7080,11 @@
       "qualityScore": 0.6
     },
     {
+      "slug": "biomechanics",
+      "title": "Biomechanics",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "biosensing-interface",
       "title": "Biosensing Interface",
       "qualityScore": 0.5
@@ -7308,6 +7378,11 @@
       "slug": "electric-motor",
       "title": "Electric Motor",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "embedded-system",
+      "title": "Embedded System",
+      "qualityScore": 0.62
     },
     {
       "slug": "end-effector",
@@ -10372,6 +10447,11 @@
       "qualityScore": 0.35
     },
     {
+      "slug": "data-ingestion",
+      "title": "Data Ingestion",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "data-protection",
       "title": "Data Protection",
       "qualityScore": 0.35
@@ -11547,6 +11627,11 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "interpolation",
+      "title": "Interpolation",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "iso-standards",
       "title": "Iso Standards",
       "qualityScore": 0.5
@@ -12415,6 +12500,11 @@
       "slug": "proteus-effect",
       "title": "Proteus Effect",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "prototyping",
+      "title": "Prototyping",
+      "qualityScore": 0.62
     },
     {
       "slug": "provenance-ontology-prov-o",
@@ -15559,6 +15649,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "experimental-design",
+      "title": "Experimental Design",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "expert-systems",
       "title": "Expert Systems",
       "qualityScore": 0.65
@@ -16309,6 +16404,11 @@
       "qualityScore": 0.65
     },
     {
+      "slug": "mathematical-logic",
+      "title": "Mathematical Logic",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "mathematical-reasoning",
       "title": "Mathematical Reasoning",
       "qualityScore": 0.74
@@ -16472,6 +16572,11 @@
       "slug": "model-transparency",
       "title": "Model Transparency",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "model-validation",
+      "title": "Model Validation",
+      "qualityScore": 0.62
     },
     {
       "slug": "model-weights",
@@ -17034,6 +17139,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "random-sampling",
+      "title": "Random Sampling",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "rapid-ai-deployment",
       "title": "Rapid AI Deployment",
       "qualityScore": 0.0
@@ -17224,6 +17334,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "scientific-method",
+      "title": "Scientific Method",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "score-based-generative-model",
       "title": "Score-Based Generative Model",
       "qualityScore": 0.62
@@ -17282,6 +17397,11 @@
       "slug": "semantic-web-linked-data-standard",
       "title": "Semantic Web Linked Data Standard",
       "qualityScore": 0.68
+    },
+    {
+      "slug": "semantic-web",
+      "title": "Semantic Web",
+      "qualityScore": 0.62
     },
     {
       "slug": "semi-supervised-learning",
@@ -17419,6 +17539,11 @@
       "qualityScore": 0.75
     },
     {
+      "slug": "statistical-analysis",
+      "title": "Statistical Analysis",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "statistical-modelling",
       "title": "Statistical Modelling",
       "qualityScore": 0.62
@@ -17532,6 +17657,11 @@
       "slug": "text-to-speech",
       "title": "Text-to-Speech",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "theorem-proving",
+      "title": "Theorem Proving",
+      "qualityScore": 0.62
     },
     {
       "slug": "third-party-vulnerability",
@@ -18066,6 +18196,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "api-versioning",
+      "title": "API Versioning",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "api",
       "title": "API",
       "qualityScore": 0.72
@@ -18133,6 +18268,11 @@
     {
       "slug": "agent-communication-language",
       "title": "Agent Communication Language",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "alerting",
+      "title": "Alerting",
       "qualityScore": 0.62
     },
     {
@@ -18216,6 +18356,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "auto-scaling",
+      "title": "Auto-Scaling",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "automata-theory",
       "title": "Automata Theory",
       "qualityScore": 0.72
@@ -18246,6 +18391,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "backward-compatibility",
+      "title": "Backward Compatibility",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "bandwidth-optimization",
       "title": "Bandwidth Optimization",
       "qualityScore": 0.8
@@ -18268,6 +18418,11 @@
     {
       "slug": "benchmarking",
       "title": "Benchmarking",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "big-data",
+      "title": "Big Data",
       "qualityScore": 0.62
     },
     {
@@ -18384,6 +18539,11 @@
       "slug": "cncf",
       "title": "CNCF",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "cpu",
+      "title": "CPU",
+      "qualityScore": 0.62
     },
     {
       "slug": "cqrs",
@@ -18691,6 +18851,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "container-runtime",
+      "title": "Container Runtime",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "containerisation",
       "title": "Containerisation",
       "qualityScore": 0.62
@@ -18956,6 +19121,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "data-transformation",
+      "title": "Data Transformation",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "data-validation",
       "title": "Data Validation",
       "qualityScore": 0.62
@@ -18969,6 +19139,11 @@
       "slug": "database-system",
       "title": "Database System",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "database",
+      "title": "Database",
+      "qualityScore": 0.62
     },
     {
       "slug": "datalog-knowledge-graph-query-language",
@@ -19184,6 +19359,11 @@
       "slug": "documentation-as-code",
       "title": "Documentation As Code",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "domain-name-system",
+      "title": "Domain Name System",
+      "qualityScore": 0.62
     },
     {
       "slug": "domain-ontology",
@@ -19431,6 +19611,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "fipa",
+      "title": "FIPA",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "fpga",
       "title": "FPGA",
       "qualityScore": 0.72
@@ -19586,6 +19771,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "gitops",
+      "title": "GitOps",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "google-cloud",
       "title": "Google Cloud",
       "qualityScore": 0.72
@@ -19624,6 +19814,11 @@
       "slug": "h-264",
       "title": "H.264",
       "qualityScore": 0.8
+    },
+    {
+      "slug": "html",
+      "title": "HTML",
+      "qualityScore": 0.62
     },
     {
       "slug": "http-protocol",
@@ -19831,6 +20026,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "in-memory-computing",
+      "title": "In-Memory Computing",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "in-page-executable-notebook-pattern",
       "title": "In-Page Executable Notebook Pattern",
       "qualityScore": 0.35
@@ -19879,6 +20079,11 @@
       "slug": "infrastructure",
       "title": "Infrastructure",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "instrumentation",
+      "title": "Instrumentation",
+      "qualityScore": 0.62
     },
     {
       "slug": "integration-layer",
@@ -19946,6 +20151,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "iot-device",
+      "title": "IoT Device",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "io-t-infrastructure",
       "title": "IoT Infrastructure",
       "qualityScore": 0.72
@@ -20004,6 +20214,11 @@
       "slug": "jira",
       "title": "Jira",
       "qualityScore": 0.8
+    },
+    {
+      "slug": "kzg-commitment",
+      "title": "KZG Commitment",
+      "qualityScore": 0.62
     },
     {
       "slug": "kademlia-dht",
@@ -20441,6 +20656,11 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "network-bandwidth",
+      "title": "Network Bandwidth",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "network-communication",
       "title": "Network Communication",
       "qualityScore": 0.85
@@ -20511,9 +20731,19 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "networking",
+      "title": "Networking",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "newcastle",
       "title": "Newcastle",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "nosql-database",
+      "title": "NoSQL Database",
+      "qualityScore": 0.62
     },
     {
       "slug": "node-graph-visual-programming-interface",
@@ -20639,6 +20869,11 @@
       "slug": "open-api-specification",
       "title": "OpenAPI Specification",
       "qualityScore": 0.75
+    },
+    {
+      "slug": "openapi",
+      "title": "OpenAPI",
+      "qualityScore": 0.62
     },
     {
       "slug": "opencl",
@@ -20946,6 +21181,11 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "procurement",
+      "title": "Procurement",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "product-management",
       "title": "Product Management",
       "qualityScore": 0.72
@@ -21221,6 +21461,11 @@
       "qualityScore": 0.35
     },
     {
+      "slug": "regression-testing",
+      "title": "Regression Testing",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "regulatory-reporting",
       "title": "Regulatory Reporting",
       "qualityScore": 0.52
@@ -21326,6 +21571,11 @@
       "qualityScore": 0.35
     },
     {
+      "slug": "root-cause-analysis",
+      "title": "Root Cause Analysis",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "rule-of-law",
       "title": "Rule of Law",
       "qualityScore": 0.0
@@ -21359,6 +21609,11 @@
       "slug": "sme-ai-productivity-toolkit",
       "title": "SME AI Productivity Toolkit",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "soap",
+      "title": "SOAP",
+      "qualityScore": 0.62
     },
     {
       "slug": "spir-v",
@@ -21756,6 +22011,11 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "synchronous-communication",
+      "title": "Synchronous Communication",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "system-architecture",
       "title": "System Architecture",
       "qualityScore": 0.68
@@ -21788,6 +22048,11 @@
     {
       "slug": "tcp-ip",
       "title": "TCP/IP",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "tcp",
+      "title": "TCP",
       "qualityScore": 0.62
     },
     {
@@ -21853,6 +22118,11 @@
     {
       "slug": "tensor-core",
       "title": "Tensor Core",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "test-automation",
+      "title": "Test Automation",
       "qualityScore": 0.62
     },
     {
@@ -22109,6 +22379,11 @@
       "slug": "wearable-computing-platform",
       "title": "Wearable Computing Platform",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "web-application-firewall",
+      "title": "Web Application Firewall",
+      "qualityScore": 0.62
     },
     {
       "slug": "web-dev-and-consumer-tooling",
@@ -22381,6 +22656,11 @@
       "slug": "automatic-1111-web-ui",
       "title": "AUTOMATIC1111 WebUI",
       "qualityScore": 0.6
+    },
+    {
+      "slug": "academic-conference",
+      "title": "Academic Conference",
+      "qualityScore": 0.62
     },
     {
       "slug": "accessibility-tree",
@@ -22728,6 +23008,11 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "computational-biology",
+      "title": "Computational Biology",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "computational-creativity",
       "title": "Computational Creativity",
       "qualityScore": 0.72
@@ -22776,6 +23061,11 @@
       "slug": "content-generation",
       "title": "Content Generation",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "context-management",
+      "title": "Context Management",
+      "qualityScore": 0.62
     },
     {
       "slug": "control-net-conditioning",
@@ -23128,6 +23418,11 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "genomics",
+      "title": "Genomics",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "gesture-recognition",
       "title": "Gesture Recognition",
       "qualityScore": 0.8
@@ -23291,6 +23586,11 @@
       "slug": "informed-decision-making",
       "title": "Informed decision-making",
       "qualityScore": 0.8
+    },
+    {
+      "slug": "innovation",
+      "title": "Innovation",
+      "qualityScore": 0.62
     },
     {
       "slug": "instant-id",
@@ -24033,8 +24333,18 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "research-institution",
+      "title": "Research Institution",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "research-university",
       "title": "Research University",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "research-and-development",
+      "title": "Research and Development",
       "qualityScore": 0.62
     },
     {
@@ -25295,6 +25605,11 @@
       "qualityScore": 0.6
     },
     {
+      "slug": "working-group",
+      "title": "Working Group",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "supports",
       "title": "supports",
       "qualityScore": 0.6
@@ -26119,6 +26434,11 @@
       "qualityScore": 0.74
     },
     {
+      "slug": "defense-in-depth",
+      "title": "Defense In Depth",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "diffie-hellman-key-exchange",
       "title": "Diffie-Hellman Key Exchange",
       "qualityScore": 0.62
@@ -26444,6 +26764,11 @@
       "qualityScore": 0.6
     },
     {
+      "slug": "key-generation",
+      "title": "Key Generation",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "key-management-system",
       "title": "Key Management System",
       "qualityScore": 0.72
@@ -26519,6 +26844,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "network-segmentation",
+      "title": "Network Segmentation",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "noise-protocol",
       "title": "Noise Protocol",
       "qualityScore": 0.72
@@ -26542,6 +26872,11 @@
       "slug": "owasp-llm-top-10-2025",
       "title": "OWASP LLM Top 10 2025",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "obfuscation",
+      "title": "Obfuscation",
+      "qualityScore": 0.62
     },
     {
       "slug": "offline-verification",
@@ -26694,6 +27029,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "privilege-escalation",
+      "title": "Privilege Escalation",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "privileged-access-management",
       "title": "Privileged Access Management",
       "qualityScore": 0.72
@@ -26707,6 +27047,11 @@
       "slug": "pseudonymity",
       "title": "Pseudonymity",
       "qualityScore": 0.73
+    },
+    {
+      "slug": "public-key-cryptography",
+      "title": "Public Key Cryptography",
+      "qualityScore": 0.62
     },
     {
       "slug": "public-key-infrastructure",
@@ -27119,6 +27464,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "unlinkability",
+      "title": "Unlinkability",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "user-authentication",
       "title": "User Authentication",
       "qualityScore": 0.8
@@ -27132,6 +27482,11 @@
       "slug": "user-identity-management",
       "title": "User Identity Management",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "vpn",
+      "title": "VPN",
+      "qualityScore": 0.62
     },
     {
       "slug": "verifiable-computation",
@@ -27736,6 +28091,11 @@
       "qualityScore": 0.6
     },
     {
+      "slug": "inflation-targeting",
+      "title": "Inflation Targeting",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "information-asymmetry",
       "title": "Information Asymmetry",
       "qualityScore": 0.72
@@ -27759,6 +28119,11 @@
       "slug": "institutional-layer",
       "title": "Institutional Layer",
       "qualityScore": 0.6
+    },
+    {
+      "slug": "interest-rate",
+      "title": "Interest Rate",
+      "qualityScore": 0.62
     },
     {
       "slug": "international-monetary-fund",
@@ -27804,6 +28169,11 @@
       "slug": "macroeconomics",
       "title": "Macroeconomics",
       "qualityScore": 0.74
+    },
+    {
+      "slug": "macroprudential-policy",
+      "title": "Macroprudential Policy",
+      "qualityScore": 0.62
     },
     {
       "slug": "market-integrity",
@@ -28029,6 +28399,11 @@
       "slug": "tether",
       "title": "Tether",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "third-party-verification",
+      "title": "Third Party Verification",
+      "qualityScore": 0.62
     },
     {
       "slug": "trade-finance-automation",
@@ -28553,6 +28928,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "software-bill-of-materials",
+      "title": "Software Bill of Materials",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "sticky-notes",
       "title": "Sticky Notes",
       "qualityScore": 0.7
@@ -28830,6 +29210,11 @@
       "qualityScore": 0.75
     },
     {
+      "slug": "central-limit-theorem",
+      "title": "Central Limit Theorem",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "classification",
       "title": "Classification",
       "qualityScore": 0.75
@@ -28837,6 +29222,11 @@
     {
       "slug": "clustering",
       "title": "Clustering",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "collective-communication",
+      "title": "Collective Communication",
       "qualityScore": 0.62
     },
     {
@@ -29053,6 +29443,11 @@
       "slug": "f1-score",
       "title": "F1 Score",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "false-positive",
+      "title": "False Positive",
+      "qualityScore": 0.62
     },
     {
       "slug": "feature-engineering",
@@ -29438,6 +29833,11 @@
       "slug": "model-cards",
       "title": "Model Cards",
       "qualityScore": 0.74
+    },
+    {
+      "slug": "model-complexity",
+      "title": "Model Complexity",
+      "qualityScore": 0.62
     },
     {
       "slug": "model-compression",
@@ -29848,6 +30248,11 @@
       "slug": "tensor-parallelism",
       "title": "Tensor Parallelism",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "tensor",
+      "title": "Tensor",
+      "qualityScore": 0.62
     },
     {
       "slug": "tensor-flow-lite",
@@ -30600,6 +31005,11 @@
       "slug": "scenario-analysis",
       "title": "Scenario Analysis",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "schema",
+      "title": "Schema",
+      "qualityScore": 0.62
     },
     {
       "slug": "semantic-interoperability",

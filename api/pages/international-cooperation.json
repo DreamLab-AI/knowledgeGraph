@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:international-cooperation",
+  "title": "International Cooperation",
+  "slug": "international-cooperation",
+  "public": true,
+  "classIri": "urn:ngm:class:international-cooperation",
+  "domain": "governance",
+  "definition": "International cooperation is the coordinated action of states, multilateral bodies and other actors to address shared challenges that no single jurisdiction can resolve alone. In technology governance it covers harmonised regulation, mutual recognition of standards, cross-border data arrangements and joint oversight of frontier capabilities. It relies on negotiated agreements, trust between parties and interoperable rules that align otherwise divergent national regimes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:internet-governance",
+      "label": "Internet Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Transfer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Transfer"
+      },
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

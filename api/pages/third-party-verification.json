@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:third-party-verification",
+  "title": "Third Party Verification",
+  "slug": "third-party-verification",
+  "public": true,
+  "classIri": "urn:ngm:class:third-party-verification",
+  "domain": "finance",
+  "definition": "Third party verification is the independent assessment of a claim, asset, process, or record by an entity that has no stake in the outcome, providing impartial assurance that stated facts are accurate and conform to defined standards. By separating the verifier from the parties being assessed, it increases trust, reduces conflicts of interest, and supports accountability in markets, supply chains, and reporting. It is central to audit, certification, and attestation regimes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:verification",
+      "label": "VERIFICATION"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "VERIFICATION"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "VERIFICATION"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    }
+  ]
+}

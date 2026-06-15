@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:synchronous-communication",
+  "title": "Synchronous Communication",
+  "slug": "synchronous-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:synchronous-communication",
+  "domain": "infrastructure",
+  "definition": "Synchronous communication is an interaction pattern in which participants exchange messages in real time, with sender and receiver engaged simultaneously and responses expected without significant delay. In collaboration it covers video conferencing, live chat and voice calls; in distributed systems it covers blocking request-response exchanges where a caller waits for a reply. It favours immediacy and tight coordination at the cost of requiring co-presence and tolerance to latency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:real-time-communication",
+      "label": "Real-Time Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      },
+      {
+        "id": "urn:ngm:class:instant-messaging",
+        "label": "Instant Messaging"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    }
+  ]
+}

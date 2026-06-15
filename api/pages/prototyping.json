@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:prototyping",
+  "title": "Prototyping",
+  "slug": "prototyping",
+  "public": true,
+  "classIri": "urn:ngm:class:prototyping",
+  "domain": "spatial-computing",
+  "definition": "Prototyping is the practice of building early, often incomplete representations of a product, system, or experience to explore ideas, test assumptions, and gather feedback before committing to full development. Prototypes range from low-fidelity sketches and wireframes to high-fidelity interactive or physical models, and they shorten the cycle between concept and validated learning. In spatial computing and product design it is central to iterative, user-centred development.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:design-thinking",
+      "label": "Design Thinking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rapid-prototyping",
+        "label": "Rapid Prototyping"
+      },
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      },
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:cnc-machining",
+        "label": "CNC Machining"
+      },
+      {
+        "id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      },
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    }
+  ]
+}

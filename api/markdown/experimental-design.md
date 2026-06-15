@@ -1,0 +1,40 @@
+- ### Definition
+	- Experimental design is the planning of studies so their data yield valid, efficient, unbiased causal inferences.
+	- It is the planning arm of the [[Scientific Method]], drawing on [[Statistics]] for rigour.
+	- It specifies controls, randomisation, and replication to separate signal from confounders.
+	- It enables credible [[Causal Inference]] and supports [[Reproducibility]].
+- ### Overview
+	- Good design decides what is varied, what is held constant, and how observations are allocated before data are gathered.
+	- Randomisation balances unknown confounders across treatment groups, while blocking removes known nuisance variation.
+	- Replication and adequate power ensure effects can be detected and estimated precisely.
+	- The same principles scale from controlled lab experiments to online experimentation at internet scale.
+- ### Mechanisms
+	- Randomised assignment of units to treatment and control conditions.
+	- Blocking and stratification to control identifiable sources of variability.
+	- Factorial structures to study multiple factors and their interactions efficiently.
+	- Power and sample-size analysis to set the scale of the study.
+- ### Applications
+	- Clinical and laboratory trials testing interventions.
+	- [[A/B Testing]] of product and interface changes.
+	- Machine-learning ablations and benchmark comparisons.
+	- Agricultural, industrial, and social-science field experiments.
+- ### Relationships
+	- subClassOf:: [[Scientific Method]]
+	- partOf:: [[Scientific Method]]
+	- requires:: [[Hypothesis Testing]]
+	- requires:: [[Sampling]]
+	- dependsOn:: [[Statistics]]
+	- dependsOn:: [[Data Collection]]
+	- enables:: [[Causal Inference]]
+	- enables:: [[Reproducibility]]
+	- uses:: [[A/B Testing]]
+	- supports:: [[Data Analysis]]
+	- implements:: [[Scientific Method]]
+	- relatedTo:: [[Statistics]]
+	- relatedTo:: [[Causal Inference]]
+	- relatedTo:: [[A/B Testing]]
+	- relatedTo:: [[Data Analysis]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

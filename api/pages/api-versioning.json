@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:api-versioning",
+  "title": "API Versioning",
+  "slug": "api-versioning",
+  "public": true,
+  "classIri": "urn:ngm:class:api-versioning",
+  "domain": "infrastructure",
+  "definition": "API versioning is the discipline of evolving a programmatic interface over time while controlling the impact of changes on existing consumers. It defines how new versions are identified, published, and retired, and how backward compatibility is preserved or broken deliberately. Sound versioning lets providers innovate without forcing every client to upgrade in lockstep.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:api-management",
+      "label": "API Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:semantic-versioning",
+        "label": "Semantic Versioning"
+      },
+      {
+        "id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:deprecation",
+        "label": "Deprecation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:semantic-versioning",
+        "label": "Semantic Versioning"
+      },
+      {
+        "id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openapi-specification",
+        "label": "OpenAPI Specification"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      },
+      {
+        "id": "urn:ngm:class:api-lifecycle",
+        "label": "API Lifecycle"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

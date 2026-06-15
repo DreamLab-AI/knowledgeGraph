@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:defense-in-depth",
+  "title": "Defense In Depth",
+  "slug": "defense-in-depth",
+  "public": true,
+  "classIri": "urn:ngm:class:defense-in-depth",
+  "domain": "security",
+  "definition": "Defense in depth is a security strategy that layers multiple, independent controls across an environment so that the failure or bypass of any single control does not lead to compromise. Adapted from military doctrine, it spans physical, network, host, application, and data layers, combining preventive, detective, and responsive measures to slow attackers, increase the cost of intrusion, and provide redundancy. It assumes no control is infallible and complements modern paradigms such as zero trust by ensuring that defences are distributed rather than concentrated at a single perimeter.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security-architecture",
+      "label": "Security Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:intrusion-detection",
+        "label": "Intrusion Detection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:perimeter-security",
+        "label": "Perimeter Security"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:endpoint-security",
+        "label": "Endpoint Security"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:security-architecture",
+        "label": "Security Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:theorem-proving",
+  "title": "Theorem Proving",
+  "slug": "theorem-proving",
+  "public": true,
+  "classIri": "urn:ngm:class:theorem-proving",
+  "domain": "artificial-intelligence",
+  "definition": "Theorem proving is the activity of establishing the truth of mathematical or logical statements by constructing rigorous, step-by-step deductions from axioms and inference rules. Automated theorem proving uses software to search for or verify such proofs, while interactive theorem proving combines machine checking with human guidance. It underpins formal verification of hardware, software and protocols, as well as the mechanisation of mathematics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automated-reasoning",
+      "label": "Automated Reasoning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "id": "urn:ngm:class:auditability",
+        "label": "Auditability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

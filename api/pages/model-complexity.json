@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:model-complexity",
+  "title": "Model Complexity",
+  "slug": "model-complexity",
+  "public": true,
+  "classIri": "urn:ngm:class:model-complexity",
+  "domain": "machine-learning",
+  "definition": "Model complexity is a measure of the capacity of a machine-learning model to fit varied patterns in data, governed by factors such as the number of parameters, the richness of the hypothesis space, and the flexibility of the functional form. Higher complexity lets a model capture intricate structure but raises the risk of overfitting, while lower complexity risks underfitting. Managing complexity is central to achieving good generalisation on unseen data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:number-of-parameters",
+        "label": "Number of Parameters"
+      },
+      {
+        "id": "urn:ngm:class:vc-dimension",
+        "label": "VC Dimension"
+      },
+      {
+        "id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:number-of-parameters",
+        "label": "Number of Parameters"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "id": "urn:ngm:class:occams-razor",
+        "label": "Occam's Razor"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

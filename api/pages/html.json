@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:html",
+  "title": "HTML",
+  "slug": "html",
+  "public": true,
+  "classIri": "urn:ngm:class:html",
+  "domain": "infrastructure",
+  "definition": "HTML (HyperText Markup Language) is the standard markup language for creating and structuring documents and applications on the World Wide Web. It uses a system of nested elements and attributes to describe the semantic structure of content such as headings, paragraphs, links, images, and interactive controls. Web browsers parse HTML into a document object model that is rendered visually and made accessible to assistive technologies and scripts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:css",
+        "label": "CSS"
+      },
+      {
+        "id": "urn:ngm:class:web-browser",
+        "label": "Web Browser"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:progressive-web-app",
+        "label": "Progressive Web App"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

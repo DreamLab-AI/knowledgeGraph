@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:openapi",
+  "title": "OpenAPI",
+  "slug": "openapi",
+  "public": true,
+  "classIri": "urn:ngm:class:openapi",
+  "domain": "infrastructure",
+  "definition": "OpenAPI is a language-agnostic, machine-readable specification for describing HTTP-based RESTful APIs. An OpenAPI document defines available endpoints, operations, parameters, request and response schemas, and authentication mechanisms in a single structured file written in YAML or JSON. It enables automated generation of documentation, client SDKs, server stubs, and validation logic, decoupling an API's contract from its implementation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:api",
+      "label": "API"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:api-specification",
+        "label": "API Specification"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:yaml",
+        "label": "YAML"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "id": "urn:ngm:class:documentation",
+        "label": "Documentation"
+      },
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

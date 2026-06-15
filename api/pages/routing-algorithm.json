@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:routing-algorithm",
+  "title": "Routing Algorithm",
+  "slug": "routing-algorithm",
+  "public": true,
+  "classIri": "urn:ngm:class:routing-algorithm",
+  "domain": "blockchain",
+  "definition": "A routing algorithm is a procedure that determines the path along which data, messages, or value should travel from a source to a destination across a network of interconnected nodes. It typically models the network as a graph and selects routes by optimising criteria such as shortest path, lowest cost, available capacity, or reliability, while adapting to changing topology and link state. In blockchain payment networks such as the Lightning Network, routing algorithms find viable multi-hop paths across payment channels, balancing fees, liquidity, and privacy through techniques like source routing and onion encryption.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:payment-routing",
+        "label": "Payment Routing"
+      },
+      {
+        "id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:hashed-timelock-contract",
+        "label": "Hashed Timelock Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mesh-network",
+        "label": "Mesh Network"
+      },
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    }
+  ]
+}

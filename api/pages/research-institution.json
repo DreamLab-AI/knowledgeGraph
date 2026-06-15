@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:research-institution",
+  "title": "Research Institution",
+  "slug": "research-institution",
+  "public": true,
+  "classIri": "urn:ngm:class:research-institution",
+  "domain": "ai",
+  "definition": "A research institution is an organisation whose primary mission is the systematic production of new knowledge through investigation, experimentation and scholarship. It encompasses universities, dedicated research laboratories, government agencies and independent institutes that employ researchers, secure funding, and disseminate findings via peer-reviewed publication. Research institutions provide the infrastructure, governance and intellectual community within which scientific and technical advances are pursued and validated.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:research-university",
+      "label": "Research University"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:laboratory",
+        "label": "Laboratory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:grant-funding",
+        "label": "Grant Funding"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      },
+      {
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:think-tank",
+        "label": "Think Tank"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:publication",
+        "label": "Publication"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:research-university",
+        "label": "Research University"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:university",
+        "label": "University"
+      },
+      {
+        "id": "urn:ngm:class:think-tank",
+        "label": "Think Tank"
+      },
+      {
+        "id": "urn:ngm:class:academia",
+        "label": "Academia"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "patent",
+      "label": "Patent"
+    }
+  ]
+}

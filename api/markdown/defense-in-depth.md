@@ -1,0 +1,39 @@
+- ### Definition
+	- Defense in depth layers independent security controls so no single failure causes compromise.
+	- It is a strategy within [[Security Architecture]] that distributes protection across many tiers.
+	- It implements [[Risk Mitigation]] by adding redundancy and raising attacker cost.
+	- It contrasts with single-boundary [[Perimeter Security]] models.
+- ### Overview
+	- The principle assumes every control can eventually fail, so overlapping defences provide resilience.
+	- Controls span physical, network, host, application, identity, and data layers.
+	- Each layer adds preventive, detective, and responsive capability, slowing and exposing attackers.
+	- It complements zero-trust thinking by ensuring defences are not concentrated at one point.
+- ### Mechanisms
+	- Network segmentation and [[Firewall]] rules limit lateral movement.
+	- [[Access Control]] and least privilege constrain what compromised credentials can reach.
+	- [[Encryption]] protects data at rest and in transit even if other layers fail.
+	- [[Intrusion Detection]] and monitoring surface activity that bypasses prevention.
+- ### Applications
+	- Enterprise network and data-centre protection.
+	- Cloud workload hardening across identity, network, and workload layers.
+	- Critical-infrastructure and industrial control system security.
+	- Endpoint and application protection programmes.
+- ### Relationships
+	- subClassOf:: [[Security Architecture]]
+	- partOf:: [[Security Architecture]]
+	- implements:: [[Risk Mitigation]]
+	- uses:: [[Firewall]]
+	- uses:: [[Encryption]]
+	- uses:: [[Access Control]]
+	- requires:: [[Intrusion Detection]]
+	- enables:: [[Risk Mitigation]]
+	- supports:: [[Endpoint Security]]
+	- supports:: [[Network Security]]
+	- contrastsWith:: [[Perimeter Security]]
+	- relatedTo:: [[Cybersecurity]]
+	- relatedTo:: [[Network Security]]
+	- relatedTo:: [[Access Control]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

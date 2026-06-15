@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:nosql-database",
+  "title": "NoSQL Database",
+  "slug": "nosql-database",
+  "public": true,
+  "classIri": "urn:ngm:class:nosql-database",
+  "domain": "infrastructure",
+  "definition": "A NoSQL database is a class of data store that departs from the rigid tabular schema and relational model of traditional SQL systems to favour flexible schemas, horizontal scalability, and high write throughput. NoSQL systems are typically organised by data model \u2014 document, key-value, wide-column, or graph \u2014 and often relax strong consistency in exchange for availability and partition tolerance. They are designed for large-scale, distributed workloads where the relational model is a poor fit.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:database-management-system",
+      "label": "Database Management System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:document-database",
+        "label": "Document Database"
+      },
+      {
+        "id": "urn:ngm:class:key-value-store",
+        "label": "Key-Value Store"
+      },
+      {
+        "id": "urn:ngm:class:time-series-database",
+        "label": "Time-Series Database"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

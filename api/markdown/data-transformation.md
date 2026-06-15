@@ -1,0 +1,44 @@
+- ### Definition
+- [[Data Transformation]] converts data from one structure or format into another so it can be stored, integrated and analysed. It is a core stage of [[Data Processing]].
+- It covers [[Data Cleaning]], type conversion, normalisation, aggregation, enrichment and [[Data Serialization]].
+- Within a [[Data Pipeline]] it reconciles heterogeneous sources against a target [[Schema]] while enforcing [[Data Validation]] rules.
+- It is the operational heart of [[ETL]] and the precondition for trustworthy [[Data Analytics]].
+- ### Overview
+- Raw data rarely arrives in the shape downstream systems expect. Sources differ in encoding, units, granularity, naming and completeness. Data transformation is the disciplined reshaping that bridges that gap.
+- Transformations may be value-level (parsing, casting, rounding, deduplication) or structure-level (pivoting, flattening, joining, schema mapping). Both are routinely composed into multi-stage flows.
+- Modern practice favours declarative transformation expressed in SQL or domain-specific languages, with lineage and tests attached, so that logic is auditable and reproducible.
+- The classic ETL ordering performs transformation before loading; the ELT pattern defers it to a warehouse, exploiting elastic compute. The conceptual transformation step is identical in both.
+- ### Key aspects
+- Cleansing: removing duplicates, correcting errors and handling missing values to raise data quality.
+- Conversion: changing types, encodings, units and date formats to a canonical representation.
+- Normalisation and denormalisation: restructuring relations for integrity or for query performance.
+- Aggregation and enrichment: summarising records and augmenting them with derived or external attributes.
+- Schema mapping: aligning source fields to a target model so disparate systems interoperate.
+- Lineage and testing: tracking provenance and asserting expectations to guarantee correctness over time.
+- ### Applications
+- Preparing operational data for loading into a [[Data Warehouse]] or [[Data Lake]].
+- Harmonising records from many systems during [[Data Integration]] projects.
+- Producing model-ready inputs through [[Feature Engineering]] for machine learning.
+- Standardising telemetry and logs before observability and analytics.
+- Reconciling formats across APIs, message buses and batch exports.
+- Enforcing governance and conformance rules as data crosses trust boundaries.
+- ### Relationships
+- partOf:: [[Data Pipeline]]
+- hasPart:: [[Data Cleaning]]
+- hasPart:: [[Data Serialization]]
+- uses:: [[Schema]]
+- uses:: [[Data Validation]]
+- requires:: [[Data Quality]]
+- implements:: [[ETL]]
+- enables:: [[Data Integration]]
+- enables:: [[Data Analytics]]
+- supports:: [[Feature Engineering]]
+- supports:: [[Data Warehouse]]
+- dependsOn:: [[Data Engineering]]
+- relatedTo:: [[Data Processing]]
+- relatedTo:: [[Data Lake]]
+- bridgesTo:: [[Data Integration]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

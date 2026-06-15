@@ -1,0 +1,36 @@
+- ### Definition
+  - The [[Central Limit Theorem]] states that the mean or sum of many independent, identically distributed random variables tends toward a normal distribution as the sample grows.
+  - It holds regardless of the underlying distribution's shape, given finite variance, and is a cornerstone of [[Probability Theory]].
+  - It explains the prevalence of the [[Gaussian Distribution]] and grounds much of statistical [[Inference]].
+- ### Overview
+  - As sample size increases, the sampling distribution of the mean concentrates around the population mean and becomes approximately Gaussian.
+  - The approximation improves with larger samples and is remarkably robust to the form of the source distribution.
+  - This convergence justifies using normal-based confidence intervals and tests even when raw data are non-normal.
+  - The theorem also underwrites the accuracy of averaging-based estimators in simulation and learning.
+- ### Key aspects
+  - **Independence**: contributing variables must be (approximately) independent.
+  - **Finite variance**: the underlying distribution must have a finite second moment.
+  - **Convergence to normality**: the standardised mean converges in distribution to the standard normal.
+  - **Sample-size effect**: larger samples yield closer Gaussian approximation.
+- ### Applications
+  - Constructing confidence intervals and hypothesis tests in [[Statistical Analysis]].
+  - Justifying Gaussian noise assumptions in machine learning models.
+  - Estimating error of Monte Carlo estimators in [[Monte Carlo Integration]].
+  - Aggregating measurements where errors average out.
+- ### Relationships
+  - dependsOn:: [[Probability Theory]]
+  - dependsOn:: [[Sampling]]
+  - uses:: [[Gaussian Distribution]]
+  - uses:: [[Statistics]]
+  - hasPart:: [[Inference]]
+  - enables:: [[Statistical Testing]]
+  - enables:: [[Statistical Analysis]]
+  - enables:: [[Bayesian Inference]]
+  - supports:: [[Monte Carlo Simulation]]
+  - supports:: [[Monte Carlo Integration]]
+  - relatedTo:: [[Data Analysis]]
+  - relatedTo:: [[Probability Theory]]
+  - relatedTo:: [[Uncertainty Quantification]]
+  - relatedTo:: [[Machine Learning]]
+- ### Provenance
+  - updated:: 2026-06-15

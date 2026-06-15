@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:open-access",
+  "title": "Open Access",
+  "slug": "open-access",
+  "public": true,
+  "classIri": "urn:ngm:class:open-access",
+  "domain": "governance",
+  "definition": "Open access is the practice of making scholarly and other knowledge outputs freely available online without subscription or most copyright and licensing barriers. It aims to maximise the dissemination, reuse and impact of research by removing paywalls and granting broad reuse rights. Open access is a core component of the wider open science and open data movements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:open-data",
+      "label": "Open Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      },
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

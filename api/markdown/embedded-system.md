@@ -1,0 +1,39 @@
+- ### Definition
+  - An embedded system is a dedicated computing system designed to perform specific functions within a larger mechanical or electrical system, typically under real-time constraints. It combines a microcontroller or microprocessor with firmware and tightly coupled hardware such as sensors and actuators, often operating with limited memory, power, and processing resources. Embedded systems are ubiquitous in consumer devices, vehicles, industrial equipment, and robotics.
+  - Related concepts: [[Microcontroller]] [[Firmware]] [[Real-Time System]] [[Robot Control]]
+- ### Overview
+  - An embedded system is engineered for a fixed purpose rather than general-purpose computing, which allows it to be optimised for cost, size, power consumption, and deterministic timing. Many embedded systems must respond to physical events within strict deadlines, leading to the use of real-time operating systems or bare-metal firmware. As connectivity has spread, embedded systems increasingly form the computational core of Internet-of-Things devices and edge computing nodes.
+- ### Key aspects
+  - A microcontroller or microprocessor executes firmware tailored to a single application.
+  - Hardware abstraction layers and device drivers mediate access to sensors, actuators, and peripherals.
+  - Real-time constraints often require deterministic scheduling via an RTOS or interrupt-driven design.
+  - Resource limits on power, memory, and compute drive aggressive optimisation.
+- ### Applications
+  - Controlling motors, sensors, and actuators in robots and industrial machinery.
+  - Powering consumer electronics, appliances, and automotive control units.
+  - Acting as the compute core of Internet-of-Things and edge devices.
+  - Implementing deterministic control loops in safety-critical systems.
+- ### Relationships
+  - subClassOf:: [[Robotics]]
+  - partOf:: [[Internet of Things]]
+  - partOf:: [[Control System]]
+  - relatedTo:: [[Microcontroller]]
+  - relatedTo:: [[Firmware]]
+  - relatedTo:: [[Real-Time System]]
+  - relatedTo:: [[System-on-Chip]]
+  - relatedTo:: [[FPGA]]
+  - enables:: [[Automation]]
+  - enables:: [[Robot Control]]
+  - enables:: [[IoT]]
+  - dependsOn:: [[Firmware]]
+  - dependsOn:: [[Hardware Abstraction Layer]]
+  - dependsOn:: [[RTOS]]
+  - uses:: [[Sensor]]
+  - uses:: [[Actuator]]
+  - uses:: [[Microcontroller]]
+  - supports:: [[Edge Computing]]
+  - supports:: [[Power Management]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

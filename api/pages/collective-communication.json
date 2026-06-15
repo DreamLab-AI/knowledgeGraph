@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:collective-communication",
+  "title": "Collective Communication",
+  "slug": "collective-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:collective-communication",
+  "domain": "machine-learning",
+  "definition": "Collective communication is the class of synchronised, multi-party data-exchange operations in which a group of processes jointly participate, such as broadcast, scatter, gather, all-gather, reduce, and all-reduce. It provides the communication primitives that coordinate state across the nodes of a parallel or distributed system, and it is the backbone of distributed machine-learning training, where gradients and parameters are aggregated and synchronised across many accelerators. Implementations are optimised over high-speed interconnects to minimise the communication overhead that otherwise bottlenecks scaling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-training",
+      "label": "Distributed Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interconnect",
+        "label": "Interconnect"
+      },
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:rdma",
+        "label": "RDMA"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gradient-aggregation",
+        "label": "Gradient Aggregation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mpi",
+        "label": "MPI"
+      },
+      {
+        "id": "urn:ngm:class:infiniband",
+        "label": "InfiniBand"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:parameter-server",
+        "label": "Parameter Server"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:gradient-aggregation",
+        "label": "Gradient Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    }
+  ]
+}

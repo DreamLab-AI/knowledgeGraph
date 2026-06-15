@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:research-and-development",
+  "title": "Research and Development",
+  "slug": "research-and-development",
+  "public": true,
+  "classIri": "urn:ngm:class:research-and-development",
+  "domain": "ai",
+  "definition": "Research and development (R&D) is the systematic, investigative activity undertaken to create new knowledge and to apply it in novel products, processes and services. It spans basic research that expands understanding, applied research that targets specific problems, and experimental development that turns findings into working technology. R&D is the principal engine of innovation and long-term competitive advantage in technology-intensive fields.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:innovation",
+      "label": "Innovation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      },
+      {
+        "id": "urn:ngm:class:engineering-design",
+        "label": "Engineering Design"
+      },
+      {
+        "id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      },
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      },
+      {
+        "id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

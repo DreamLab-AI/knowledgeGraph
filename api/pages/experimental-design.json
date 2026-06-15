@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:experimental-design",
+  "title": "Experimental Design",
+  "slug": "experimental-design",
+  "public": true,
+  "classIri": "urn:ngm:class:experimental-design",
+  "domain": "artificial-intelligence",
+  "definition": "Experimental design is the systematic planning of investigations so that the resulting data can support valid, efficient, and unbiased inferences about cause and effect. It specifies the treatments, controls, randomisation, replication, and blocking that isolate the effect of manipulated variables from confounders and noise. Grounded in the scientific method and statistical theory, it governs how hypotheses are tested, how sample sizes and power are determined, and how variability is controlled, and it underpins disciplined experimentation from laboratory trials to large-scale online A/B tests.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scientific-method",
+      "label": "Scientific Method"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      },
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      },
+      {
+        "id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:gitops",
+  "title": "GitOps",
+  "slug": "gitops",
+  "public": true,
+  "classIri": "urn:ngm:class:gitops",
+  "domain": "infrastructure",
+  "definition": "GitOps is an operational model in which the desired state of infrastructure and applications is declared in version-controlled repositories and continuously reconciled into running systems by automated agents. Git becomes the single source of truth, so changes flow through pull requests and merges while reconcilers detect and correct drift. It applies software-delivery practices, review, audit and rollback, to operations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure-as-code",
+      "label": "Infrastructure as Code"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,37 @@
+- ### Definition
+  - A central processing unit (CPU) is the primary general-purpose processor of a computer, responsible for fetching, decoding, and executing the instructions of programs. It performs arithmetic, logic, control, and input/output operations dictated by software, coordinating the activity of the whole machine. As a versatile sequential and lightly parallel engine, the CPU contrasts with specialised accelerators such as GPUs that favour massive data parallelism.
+  - Related concepts: [[Hardware]] [[Operating System]] [[GPU]] [[Compute Resources]] [[Parallel Computing]]
+- ### Overview
+  - A modern CPU executes instructions through a pipeline that fetches, decodes, executes, and retires operations, accelerated by caches, branch prediction, out-of-order execution, and superscalar dispatch. Its capability is governed by clock speed, instruction-set architecture, core count, and the memory hierarchy that feeds it. Multi-core CPUs provide modest parallelism well suited to diverse, branch-heavy workloads, whereas data-parallel and matrix-heavy tasks are increasingly offloaded to GPUs and other accelerators, with the CPU acting as the orchestrating host.
+- ### Mechanisms
+  - Instruction pipeline: overlapping fetch, decode, execute, and write-back stages to raise throughput.
+  - Memory hierarchy: multi-level caches that hide the latency of main memory access.
+  - Instruction-set architecture: the contract between hardware and software defining available operations.
+  - Parallelism: multiple cores and superscalar, out-of-order execution exploiting instruction-level parallelism.
+  - Speculation: branch prediction and prefetching that keep the pipeline busy.
+- ### Applications
+  - General-purpose application and operating-system execution.
+  - Server and cloud compute hosting diverse, latency-sensitive workloads.
+  - Orchestrating accelerators in heterogeneous compute systems.
+  - Edge and embedded control where power efficiency and versatility matter.
+- ### Relationships
+  - partOf:: [[Hardware]]
+  - partOf:: [[Compute Resources]]
+  - hasPart:: [[Cache]]
+  - hasPart:: [[Instruction Set Architecture]]
+  - requires:: [[Memory]]
+  - requires:: [[Clock Speed]]
+  - dependsOn:: [[Instruction Set Architecture]]
+  - dependsOn:: [[Memory]]
+  - enables:: [[Operating System]]
+  - enables:: [[Parallel Computing]]
+  - supports:: [[Operating System]]
+  - uses:: [[Cache]]
+  - relatedTo:: [[Throughput]]
+  - relatedTo:: [[Latency]]
+  - relatedTo:: [[Computer Architecture]]
+  - contrastsWith:: [[GPU]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:domain-name-system",
+  "title": "Domain Name System",
+  "slug": "domain-name-system",
+  "public": true,
+  "classIri": "urn:ngm:class:domain-name-system",
+  "domain": "infrastructure",
+  "definition": "The Domain Name System (DNS) is a hierarchical, distributed naming system that translates human-readable domain names into the numerical addresses used to locate computers and services on a network. It is a foundational component of the Internet, resolving names through a delegated tree of authoritative servers, recursive resolvers and caching layers. DNS also carries service, security and routing metadata that many higher-level protocols depend upon.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:networking-infrastructure",
+      "label": "Networking Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:name-resolution",
+        "label": "Name Resolution"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ip-address",
+        "label": "IP Address"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:availability",
+        "label": "Availability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

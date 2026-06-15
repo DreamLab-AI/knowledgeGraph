@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:in-memory-computing",
+  "title": "In-Memory Computing",
+  "slug": "in-memory-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:in-memory-computing",
+  "domain": "infrastructure",
+  "definition": "In-memory computing is an architectural approach that holds working data sets in a system's main memory (RAM) rather than on disk, eliminating storage-layer I/O from the critical path of data access and processing. By keeping data resident in fast volatile memory, it delivers order-of-magnitude reductions in latency and supports high-throughput analytics, transaction processing, and real-time decisioning. It typically pairs with techniques such as columnar layouts, distributed caching, and durability mechanisms (logging, replication, persistence) to combine speed with resilience.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:memory-hierarchy",
+        "label": "Memory Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:database",
+        "label": "Database"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:persistent-storage",
+        "label": "Persistent Storage"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:memory-hierarchy",
+        "label": "Memory Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

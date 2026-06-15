@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:network-segmentation",
+  "title": "Network Segmentation",
+  "slug": "network-segmentation",
+  "public": true,
+  "classIri": "urn:ngm:class:network-segmentation",
+  "domain": "security",
+  "definition": "Network segmentation is the security practice of dividing a computer network into smaller, isolated zones so that traffic between them is controlled, inspected, and restricted by policy. By limiting the blast radius of a compromise, segmentation prevents an attacker who breaches one zone from moving laterally to others. It is a core control in defence-in-depth and a prerequisite for zero-trust network architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-security",
+      "label": "Network Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vlan",
+        "label": "VLAN"
+      },
+      {
+        "id": "urn:ngm:class:microsegmentation",
+        "label": "Microsegmentation"
+      },
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:defence-in-depth",
+        "label": "Defence in Depth"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lateral-movement",
+        "label": "Lateral Movement"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "zero-trust-architecture-zta",
+      "label": "Zero-Trust Architecture (ZTA)"
+    }
+  ]
+}

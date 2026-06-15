@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:privilege-escalation",
+  "title": "Privilege Escalation",
+  "slug": "privilege-escalation",
+  "public": true,
+  "classIri": "urn:ngm:class:privilege-escalation",
+  "domain": "security",
+  "definition": "Privilege escalation is the act of gaining rights beyond those originally granted, allowing an attacker or process to perform actions reserved for higher-trust principals. Vertical escalation moves from a lower to a higher privilege level, while horizontal escalation moves laterally to another principal at the same level. It is a pivotal phase in attack chains, typically exploiting misconfiguration, flawed access control or software vulnerabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

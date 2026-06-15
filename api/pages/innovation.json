@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:innovation",
+  "title": "Innovation",
+  "slug": "innovation",
+  "public": true,
+  "classIri": "urn:ngm:class:innovation",
+  "domain": "ai",
+  "definition": "Innovation is the process of creating and successfully introducing new or significantly improved products, services, processes or business models that deliver value. It spans the journey from invention and creative ideation through development, adoption and diffusion across markets and organisations. Innovation is a primary driver of economic growth, competitiveness and societal change, and is closely linked to research, knowledge transfer and entrepreneurship.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-economy",
+      "label": "Digital Economy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem"
+    }
+  ]
+}

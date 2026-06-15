@@ -1,0 +1,33 @@
+- ### Definition
+  - Backward compatibility is the property of a system, interface, or data format that allows newer versions to continue working correctly with inputs, clients, or data produced for older versions. It ensures that existing consumers do not break when a producer is upgraded, preserving established contracts while permitting evolution. Maintaining backward compatibility typically requires additive, non-breaking changes and careful deprecation policies.
+  - Related concepts: [[Semantic Versioning]] [[API Versioning]] [[Interoperability]] [[Software System]]
+- ### Overview
+  - Backward compatibility is a central concern whenever software, hardware, file formats, or protocols evolve over time. It allows an ecosystem of dependent systems to upgrade incrementally rather than requiring a coordinated, simultaneous migration. The discipline distinguishes breaking changes, which alter or remove existing behaviour, from non-breaking changes, which only add new behaviour.
+- ### Key aspects
+  - Additive changes such as new optional fields or endpoints preserve compatibility; removals and semantic changes break it.
+  - Versioning schemes communicate compatibility expectations to consumers.
+  - Deprecation cycles give consumers time to migrate before functionality is removed.
+  - Contract tests and compatibility checks detect inadvertent breaking changes before release.
+- ### Applications
+  - Evolving public APIs without disrupting existing integrations.
+  - Reading older file formats in newer application versions.
+  - Maintaining wire-protocol compatibility across distributed system upgrades.
+  - Supporting legacy clients during phased rollouts of new services.
+- ### Relationships
+  - subClassOf:: [[Software Engineering]]
+  - requires:: [[Version Control]]
+  - requires:: [[Semantic Versioning]]
+  - requires:: [[API Versioning]]
+  - supports:: [[Interoperability]]
+  - supports:: [[Reliability]]
+  - supports:: [[Software System]]
+  - relatedTo:: [[API Design]]
+  - relatedTo:: [[Software Development]]
+  - relatedTo:: [[Software Engineering]]
+  - relatedTo:: [[Standards]]
+  - enables:: [[Interoperability]]
+  - contrastsWith:: [[API Versioning]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

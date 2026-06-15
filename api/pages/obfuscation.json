@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:obfuscation",
+  "title": "Obfuscation",
+  "slug": "obfuscation",
+  "public": true,
+  "classIri": "urn:ngm:class:obfuscation",
+  "domain": "security",
+  "definition": "Obfuscation is the deliberate transformation of data, code, or communication into a form that is difficult to understand or analyse while preserving its function, used to protect intellectual property, hinder reverse engineering, and conceal sensitive information. Unlike encryption, which renders data unreadable without a key, obfuscation aims to raise the effort required to comprehend an artefact rather than to guarantee secrecy. It is widely applied in software protection and privacy engineering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocols",
+        "label": "Cryptographic Protocols"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

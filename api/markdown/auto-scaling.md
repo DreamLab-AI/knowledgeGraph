@@ -1,0 +1,38 @@
+- ### Definition
+	- [[Auto-Scaling]] is the automated adjustment of computing capacity in response to demand, adding or removing resources to hold performance steady while controlling cost. It is a form of [[Scalability]] that closes a control loop using [[Monitoring]] signals and policies.
+	- It scales horizontally by changing instance counts or vertically by resizing instances, removing the need for manual capacity changes.
+- ### Overview
+	- Auto-scaling observes workload signals, request rate, queue depth, CPU and memory utilisation, latency, through [[Monitoring]] and [[Observability]], and compares them against target thresholds. Controllers then act to converge actual capacity on the level the policy implies.
+	- Horizontal scaling adds or removes interchangeable instances behind [[Load Balancing]], which is the dominant pattern for [[Microservices]] and stateless workloads. Vertical scaling resizes a single instance and suits stateful services that are harder to replicate.
+	- In modern platforms auto-scaling is implemented by [[Kubernetes]] and other [[Container Orchestration]] systems, and informed by [[Capacity Planning]] so that scaling limits, cooldowns and reserves are set sensibly.
+- ### Mechanisms
+	- Metric collection and aggregation feeding scaling decisions.
+	- Threshold, target-tracking and predictive scaling policies.
+	- Horizontal scaling of instance counts behind a load balancer.
+	- Vertical resizing of individual instances.
+	- Cooldown windows and stabilisation to avoid oscillation.
+- ### Applications
+	- Absorbing traffic spikes for web and API services.
+	- Right-sizing [[Microservices]] fleets to demand.
+	- Improving [[High Availability]] and [[Fault Tolerance]] through redundancy.
+	- Reducing idle cost during low-demand periods.
+- ### Relationships
+	- hasPart:: [[Monitoring]]
+	- hasPart:: [[Resource Allocation]]
+	- requires:: [[Observability]]
+	- requires:: [[Capacity Planning]]
+	- enables:: [[High Availability]]
+	- enables:: [[Fault Tolerance]]
+	- uses:: [[Load Balancing]]
+	- uses:: [[Monitoring]]
+	- supports:: [[Microservices]]
+	- supports:: [[Performance Optimization]]
+	- dependsOn:: [[Resource Management]]
+	- implementedBy:: [[Kubernetes]]
+	- implementedBy:: [[Container Orchestration]]
+	- relatedTo:: [[Orchestration]]
+	- relatedTo:: [[Cloud Computing]]
+- ### Provenance
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation
+	- updated:: 2026-06-15

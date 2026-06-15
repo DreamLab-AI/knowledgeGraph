@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:inflation-targeting",
+  "title": "Inflation Targeting",
+  "slug": "inflation-targeting",
+  "public": true,
+  "classIri": "urn:ngm:class:inflation-targeting",
+  "domain": "finance",
+  "definition": "Inflation targeting is a monetary-policy framework in which a central bank publicly commits to achieving a specified rate of inflation over the medium term and adjusts its policy instruments to meet that target. By anchoring expectations to a clear, numerical goal, it aims to deliver price stability while preserving transparency and accountability. The framework links interest-rate decisions to forecasts of how inflation will deviate from the announced target.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:forward-guidance",
+        "label": "Forward Guidance"
+      },
+      {
+        "id": "urn:ngm:class:taylor-rule",
+        "label": "Taylor Rule"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      },
+      {
+        "id": "urn:ngm:class:consumer-price-index",
+        "label": "Consumer Price Index"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      },
+      {
+        "id": "urn:ngm:class:forward-guidance",
+        "label": "Forward Guidance"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      },
+      {
+        "id": "urn:ngm:class:federal-reserve",
+        "label": "Federal Reserve"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

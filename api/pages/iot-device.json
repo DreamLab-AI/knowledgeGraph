@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:iot-device",
+  "title": "IoT Device",
+  "slug": "iot-device",
+  "public": true,
+  "classIri": "urn:ngm:class:iot-device",
+  "domain": "infrastructure",
+  "definition": "An IoT device is a networked physical object embedding sensing, processing and communication capabilities that allows it to collect, exchange and act on data over a network. Such devices range from simple sensors and actuators to complex embedded systems, and typically operate under tight power, compute and bandwidth constraints. They form the edge of the Internet of Things, feeding data to gateways, edge nodes and cloud services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:internet-of-things",
+      "label": "Internet of Things"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

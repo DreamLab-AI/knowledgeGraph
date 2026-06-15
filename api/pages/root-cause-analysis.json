@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:root-cause-analysis",
+  "title": "Root Cause Analysis",
+  "slug": "root-cause-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:root-cause-analysis",
+  "domain": "infrastructure",
+  "definition": "Root cause analysis (RCA) is a structured problem-solving discipline that identifies the underlying origin of a fault, failure, or incident rather than merely treating its visible symptoms. In infrastructure and reliability engineering it traces a chain of contributing causes back to the conditions that, if corrected, would have prevented the event. RCA produces durable, systemic fixes and feeds learning back into operational practice.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:incident-management",
+      "label": "Incident Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incident-reporting",
+        "label": "Incident Reporting"
+      },
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:incident-reporting",
+        "label": "Incident Reporting"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "id": "urn:ngm:class:five-whys",
+        "label": "Five Whys"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:incident-management",
+        "label": "Incident Management"
+      },
+      {
+        "id": "urn:ngm:class:post-incident-review",
+        "label": "Post-Incident Review"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

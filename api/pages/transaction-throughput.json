@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:transaction-throughput",
+  "title": "Transaction Throughput",
+  "slug": "transaction-throughput",
+  "public": true,
+  "classIri": "urn:ngm:class:transaction-throughput",
+  "domain": "blockchain",
+  "definition": "Transaction throughput is the rate at which a system processes and finalises transactions, commonly expressed as transactions per second, and is a primary measure of a blockchain network's capacity and scalability. It is shaped by block size, block interval, consensus mechanism, and execution efficiency, and it trades off against decentralisation and security in protocol design. Improving throughput is a central goal of layer-2 solutions and sharding.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scalability",
+      "label": "Scalability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:performance",
+        "label": "Performance"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

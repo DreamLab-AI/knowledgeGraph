@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:instrumentation",
+  "title": "Instrumentation",
+  "slug": "instrumentation",
+  "public": true,
+  "classIri": "urn:ngm:class:instrumentation",
+  "domain": "infrastructure",
+  "definition": "Instrumentation is the practice of adding code, agents, or probes to software and systems so that they emit measurable signals \u2014 metrics, logs, traces, and events \u2014 about their internal behaviour and performance. It is the foundational producer of telemetry that downstream observability and monitoring tooling consumes. Without instrumentation a system is opaque; with it, operators gain insight into how the system actually runs in production.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:observability",
+      "label": "Observability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:metrics",
+        "label": "Metrics"
+      },
+      {
+        "id": "urn:ngm:class:logging",
+        "label": "Logging"
+      },
+      {
+        "id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:code-profiling",
+        "label": "Code Profiling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root Cause Analysis"
+      },
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

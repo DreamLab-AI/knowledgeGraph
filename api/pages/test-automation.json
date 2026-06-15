@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:test-automation",
+  "title": "Test Automation",
+  "slug": "test-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:test-automation",
+  "domain": "infrastructure",
+  "definition": "Test automation is the practice of using software tools to execute predefined tests against an application, compare actual outcomes with expected results and report defects without manual intervention. It accelerates feedback, improves repeatability and enables tests to run continuously as part of integration and delivery pipelines. Test automation spans unit, integration, regression, performance and end-to-end testing, and is central to maintaining quality in fast-moving software systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-testing",
+      "label": "Software Testing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:test-driven-development",
+        "label": "Test-Driven Development"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

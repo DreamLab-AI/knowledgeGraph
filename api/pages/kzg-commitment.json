@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:kzg-commitment",
+  "title": "KZG Commitment",
+  "slug": "kzg-commitment",
+  "public": true,
+  "classIri": "urn:ngm:class:kzg-commitment",
+  "domain": "infrastructure",
+  "definition": "A KZG commitment is a polynomial commitment scheme, named after Kate, Zaverucha and Goldberg, that lets a prover commit to a polynomial with a single constant-size group element and later open it at any point with a constant-size proof. Its security rests on elliptic-curve pairings and a structured reference string produced by a trusted setup. It is central to modern data-availability and scaling designs on Ethereum, including proto-danksharding and danksharding.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:polynomial-commitment",
+      "label": "Polynomial Commitment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-availability-sampling",
+        "label": "Data Availability Sampling"
+      },
+      {
+        "id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      },
+      {
+        "id": "urn:ngm:class:danksharding",
+        "label": "Danksharding"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

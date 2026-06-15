@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:interpolation",
+  "title": "Interpolation",
+  "slug": "interpolation",
+  "public": true,
+  "classIri": "urn:ngm:class:interpolation",
+  "domain": "spatial-computing",
+  "definition": "Interpolation is the construction of new data points within the range of a discrete set of known points, producing a continuous function that passes through or near the samples. Methods range from simple linear and nearest-neighbour schemes to higher-order polynomial, spline and barycentric formulations, each trading smoothness against computational cost and overshoot. In spatial computing and graphics it underpins resampling, shading, animation between keyframes, and the reconstruction of continuous fields from sparse measurements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:numerical-methods",
+      "label": "Numerical Methods"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:linear-interpolation",
+        "label": "Linear Interpolation"
+      },
+      {
+        "id": "urn:ngm:class:spline",
+        "label": "Spline"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:numerical-analysis",
+        "label": "Numerical Analysis"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:keyframe-animation",
+        "label": "Keyframe Animation"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:curve-fitting",
+        "label": "Curve Fitting"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:extrapolation",
+        "label": "Extrapolation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:approximation",
+        "label": "Approximation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

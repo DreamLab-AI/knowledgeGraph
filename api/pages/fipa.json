@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:fipa",
+  "title": "FIPA",
+  "slug": "fipa",
+  "public": true,
+  "classIri": "urn:ngm:class:fipa",
+  "domain": "infrastructure",
+  "definition": "FIPA, the Foundation for Intelligent Physical Agents, is a standards body \u2014 now an IEEE Computer Society standards committee \u2014 that produced specifications for interoperable software agents and multi-agent systems. Its best-known output is FIPA-ACL, an agent communication language with formally defined performatives and interaction protocols. FIPA standards enable heterogeneous agents from different developers to discover, communicate, and coordinate with one another.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA ACL"
+      },
+      {
+        "id": "urn:ngm:class:interaction-protocol",
+        "label": "Interaction Protocol"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      },
+      {
+        "id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kqml",
+        "label": "KQML"
+      },
+      {
+        "id": "urn:ngm:class:software-agent",
+        "label": "Software Agent"
+      },
+      {
+        "id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

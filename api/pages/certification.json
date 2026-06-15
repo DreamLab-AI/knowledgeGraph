@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:certification",
+  "title": "Certification",
+  "slug": "certification",
+  "public": true,
+  "classIri": "urn:ngm:class:certification",
+  "domain": "governance",
+  "definition": "Certification is the formal process by which an independent authority attests that a product, system, process or person meets defined standards or requirements. It produces a verifiable credential or mark that signals conformance to interested parties and reduces the cost of establishing trust. Certification regimes are central to regulation, quality assurance and the safe interoperability of regulated goods and services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance",
+      "label": "Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:conformance",
+        "label": "Conformance"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:conformance",
+        "label": "Conformance"
+      },
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

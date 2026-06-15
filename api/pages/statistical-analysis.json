@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:statistical-analysis",
+  "title": "Statistical Analysis",
+  "slug": "statistical-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:statistical-analysis",
+  "domain": "artificial-intelligence",
+  "definition": "Statistical analysis is the systematic application of statistical methods to collect, describe, model, and draw inferences from data, quantifying uncertainty and supporting evidence-based conclusions. It spans descriptive summarisation, exploratory examination, hypothesis testing, and predictive modelling, relying on probability theory to generalise from samples to populations. In artificial intelligence and data science it provides the inferential foundation for validating models, interpreting results, and reasoning under uncertainty.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistics",
+      "label": "Statistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistical-testing",
+        "label": "Statistical Testing"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "reputation-scoring-model",
+      "label": "Reputation Scoring Model"
+    },
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    }
+  ]
+}

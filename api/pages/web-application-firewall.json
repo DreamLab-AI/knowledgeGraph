@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:web-application-firewall",
+  "title": "Web Application Firewall",
+  "slug": "web-application-firewall",
+  "public": true,
+  "classIri": "urn:ngm:class:web-application-firewall",
+  "domain": "infrastructure",
+  "definition": "A web application firewall is a security control that inspects and filters HTTP and HTTPS traffic between clients and a web application to detect and block application-layer attacks. Operating at layer seven, it applies signature, rule and behavioural policies to mitigate threats such as injection, cross-site scripting and automated abuse that traditional network firewalls cannot see. It is commonly deployed as a reverse proxy, an inline appliance or a cloud service in front of the protected application.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-security",
+      "label": "Network Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    }
+  ]
+}

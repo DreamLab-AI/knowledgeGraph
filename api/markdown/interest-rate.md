@@ -1,0 +1,39 @@
+- ### Definition
+	- An interest rate is the price of borrowing money or the return earned on lending it, stated as a percentage of principal per period.
+	- It is an instrument of [[Monetary Policy]] set and influenced by [[Central Banking]] authorities.
+	- It compensates lenders for the time value of money, expected [[Inflation]], and [[Credit Risk]].
+	- The rate spread across maturities forms the basis of bond pricing and the yield curve.
+- ### Overview
+	- Interest rates coordinate the supply of savings with the demand for loanable funds across an economy.
+	- Central banks adjust policy rates to manage inflation and economic activity, transmitting changes through to commercial lending and deposit rates.
+	- Rates are distinguished as nominal (headline) versus real (inflation-adjusted), and as fixed versus floating.
+	- The term structure of interest rates links short-term and long-term borrowing costs and signals market expectations.
+- ### Key aspects
+	- The real rate equals the nominal rate minus expected inflation, isolating the true cost of capital.
+	- Policy rates anchor the short end of the curve, while market forces shape longer maturities.
+	- Risk premia widen rates for borrowers with weaker creditworthiness.
+	- Compounding frequency materially affects the effective cost or yield over time.
+- ### Applications
+	- Pricing of loans, mortgages, bonds, and deposit products.
+	- Discounting future cash flows in valuation and capital budgeting.
+	- Transmission channel for monetary policy via [[Federal Reserve]] and peer central banks.
+	- Macroeconomic stabilisation through tightening or easing cycles such as [[Quantitative Easing]].
+- ### Relationships
+	- subClassOf:: [[Monetary Policy]]
+	- partOf:: [[Monetary Policy]]
+	- dependsOn:: [[Central Banking]]
+	- dependsOn:: [[Inflation]]
+	- requires:: [[Credit Risk]]
+	- enables:: [[Quantitative Easing]]
+	- uses:: [[Gross Domestic Product]]
+	- supports:: [[Fiscal Policy]]
+	- relatedTo:: [[Central Banking]]
+	- relatedTo:: [[Inflation]]
+	- relatedTo:: [[Federal Reserve]]
+	- relatedTo:: [[Quantitative Easing]]
+	- relatedTo:: [[Gross Domestic Product]]
+	- relatedTo:: [[Credit Risk]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

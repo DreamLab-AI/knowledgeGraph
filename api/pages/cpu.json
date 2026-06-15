@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:cpu",
+  "title": "CPU",
+  "slug": "cpu",
+  "public": true,
+  "classIri": "urn:ngm:class:cpu",
+  "domain": "infrastructure",
+  "definition": "A central processing unit (CPU) is the primary general-purpose processor of a computer, responsible for fetching, decoding, and executing the instructions of programs. It performs arithmetic, logic, control, and input/output operations dictated by software, coordinating the activity of the whole machine. As a versatile sequential and lightly parallel engine, the CPU contrasts with specialised accelerators such as GPUs that favour massive data parallelism.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cache",
+        "label": "Cache"
+      },
+      {
+        "id": "urn:ngm:class:instruction-set-architecture",
+        "label": "Instruction Set Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:memory",
+        "label": "Memory"
+      },
+      {
+        "id": "urn:ngm:class:clock-speed",
+        "label": "Clock Speed"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:instruction-set-architecture",
+        "label": "Instruction Set Architecture"
+      },
+      {
+        "id": "urn:ngm:class:memory",
+        "label": "Memory"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cache",
+        "label": "Cache"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      },
+      {
+        "id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:computer-architecture",
+        "label": "Computer Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

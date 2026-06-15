@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:working-group",
+  "title": "Working Group",
+  "slug": "working-group",
+  "public": true,
+  "classIri": "urn:ngm:class:working-group",
+  "domain": "standards",
+  "definition": "A working group is a chartered subgroup of a standards organisation or collaborative body tasked with developing, reviewing and reaching consensus on a specific technical topic or deliverable. It brings together domain experts who draft specifications, resolve issues and progress documents through review and approval stages. Working groups are the principal unit of work through which formal standards and specifications are produced.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:technical-committee",
+        "label": "Technical Committee"
+      },
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:technical-committee",
+        "label": "Technical Committee"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

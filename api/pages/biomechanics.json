@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:biomechanics",
+  "title": "Biomechanics",
+  "slug": "biomechanics",
+  "public": true,
+  "classIri": "urn:ngm:class:biomechanics",
+  "domain": "robotics",
+  "definition": "Biomechanics is the study of the mechanical principles governing biological systems, analysing forces, motion and structure in living organisms. In robotics it informs the design of actuators, limbs and gaits that emulate or assist biological movement, bridging physiology and mechanical engineering. It supplies the models of kinematics and dynamics used to make legged, humanoid and wearable machines move efficiently and safely.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:dynamics",
+        "label": "Dynamics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:rehabilitation-robotics",
+        "label": "Rehabilitation Robotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:locomotion",
+        "label": "Locomotion"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    }
+  ]
+}

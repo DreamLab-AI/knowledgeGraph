@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:auto-scaling",
+  "title": "Auto-Scaling",
+  "slug": "auto-scaling",
+  "public": true,
+  "classIri": "urn:ngm:class:auto-scaling",
+  "domain": "infrastructure",
+  "definition": "Auto-scaling is the automated adjustment of computing capacity in response to observed demand, adding or removing resources to maintain performance and control cost. It uses metrics, policies and controllers to scale horizontally by changing instance counts or vertically by resizing instances. Auto-scaling is foundational to elastic cloud infrastructure, balancing responsiveness against efficiency without manual intervention.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scalability",
+      "label": "Scalability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

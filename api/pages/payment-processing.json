@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:payment-processing",
+  "title": "Payment Processing",
+  "slug": "payment-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:payment-processing",
+  "domain": "blockchain",
+  "definition": "Payment processing is the sequence of operations that authorise, capture, clear and settle a monetary transaction between a payer and a payee. It coordinates merchants, payment gateways, networks and settlement institutions to verify funds, manage risk and move value reliably. Modern payment processing spans card rails, digital wallets and blockchain-based settlement, increasingly emphasising speed, fraud detection and interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-network",
+      "label": "Payment Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      },
+      {
+        "id": "urn:ngm:class:clearing",
+        "label": "Clearing"
+      },
+      {
+        "id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:payment-rail",
+        "label": "Payment Rail"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      },
+      {
+        "id": "urn:ngm:class:fintech",
+        "label": "Financial Technology"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stripe",
+        "label": "Stripe"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    }
+  ]
+}

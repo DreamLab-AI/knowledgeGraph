@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:tensor",
+  "title": "Tensor",
+  "slug": "tensor",
+  "public": true,
+  "classIri": "urn:ngm:class:tensor",
+  "domain": "machine-learning",
+  "definition": "A tensor is a multidimensional array of numerical values characterised by a rank, a shape and a data type, generalising scalars, vectors and matrices to arbitrary dimensions. In machine learning it is the fundamental data structure that holds inputs, parameters, activations and gradients as they flow through a model. Tensor operations such as contraction, broadcasting and elementwise functions are the computational primitives executed on accelerators during training and inference.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:linear-algebra",
+      "label": "Linear Algebra"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:tensorflow",
+        "label": "TensorFlow"
+      },
+      {
+        "id": "urn:ngm:class:pytorch",
+        "label": "PyTorch"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:interest-rate",
+  "title": "Interest Rate",
+  "slug": "interest-rate",
+  "public": true,
+  "classIri": "urn:ngm:class:interest-rate",
+  "domain": "finance",
+  "definition": "An interest rate is the price of borrowing money or the return on lending it, expressed as a percentage of the principal over a defined period, typically annualised. It compensates lenders for the time value of money, expected inflation, and the credit risk of the borrower, and it acts as the principal lever through which central banks transmit monetary policy to the broader economy. Interest rates are categorised as nominal or real, fixed or floating, and short-term or long-term, with the term structure across maturities forming the yield curve.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:credit-risk",
+        "label": "Credit Risk"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gross-domestic-product",
+        "label": "Gross Domestic Product"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fiscal-policy",
+        "label": "Fiscal Policy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:federal-reserve",
+        "label": "Federal Reserve"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      },
+      {
+        "id": "urn:ngm:class:gross-domestic-product",
+        "label": "Gross Domestic Product"
+      },
+      {
+        "id": "urn:ngm:class:credit-risk",
+        "label": "Credit Risk"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

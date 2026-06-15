@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:mathematical-logic",
+  "title": "Mathematical Logic",
+  "slug": "mathematical-logic",
+  "public": true,
+  "classIri": "urn:ngm:class:mathematical-logic",
+  "domain": "artificial-intelligence",
+  "definition": "Mathematical logic is the branch of mathematics that studies formal systems, proof, computability and the foundations of mathematics using rigorous symbolic methods. It encompasses subfields such as model theory, proof theory, set theory and recursion theory, and provides the formal underpinnings for reasoning about truth, provability and decidability. Mathematical logic is foundational to theoretical computer science, automated reasoning and the formal semantics of programming languages.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:logic",
+      "label": "Logic"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

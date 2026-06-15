@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:soap",
+  "title": "SOAP",
+  "slug": "soap",
+  "public": true,
+  "classIri": "urn:ngm:class:soap",
+  "domain": "infrastructure",
+  "definition": "SOAP (Simple Object Access Protocol) is a standardised, XML-based messaging protocol for exchanging structured information between applications, typically over HTTP but also over other transports. It defines an envelope structure with a header and body, supports remote procedure calls and document-style messaging, and is described by WSDL contracts and extended by the WS-* specifications for security, transactions, and reliable messaging. SOAP underpinned the first generation of enterprise web services and remains common in regulated and legacy integration scenarios, contrasting with the lighter, resource-oriented REST style.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:web-services",
+      "label": "Web Services"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-integration",
+        "label": "Enterprise Integration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:web-services",
+        "label": "Web Services"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

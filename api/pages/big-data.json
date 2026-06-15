@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:big-data",
+  "title": "Big Data",
+  "slug": "big-data",
+  "public": true,
+  "classIri": "urn:ngm:class:big-data",
+  "domain": "infrastructure",
+  "definition": "Big data denotes datasets whose volume, velocity and variety exceed the capacity of conventional single-machine tools, demanding distributed storage and parallel computation. It is characterised by horizontally scalable architectures, schema-flexible stores, and batch or streaming processing frameworks that move computation to where data resides. The term also names the discipline of extracting value from such datasets through analytics, mining and machine learning at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-processing",
+      "label": "Data Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "id": "urn:ngm:class:nosql-database",
+        "label": "NoSQL Database"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-lake",
+      "label": "Data Lake"
+    }
+  ]
+}

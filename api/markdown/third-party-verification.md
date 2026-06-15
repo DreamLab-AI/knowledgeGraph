@@ -1,0 +1,34 @@
+- ### Definition
+  - [[Third Party Verification]] is independent assessment of a claim or record by an impartial entity with no stake in the outcome.
+  - It provides assurance that stated facts are accurate and conform to defined standards, underpinning [[Trust]].
+  - It is a form of [[VERIFICATION]] central to [[Audit]], certification, and attestation.
+- ### Overview
+  - Self-asserted claims carry inherent conflicts of interest; an independent verifier separates the assessor from the assessed.
+  - The verifier examines evidence against agreed criteria and issues an opinion, certificate, or attestation.
+  - Independence, competence, and consistent methodology determine the credibility of the verification.
+  - Results feed into compliance, market access, and reporting decisions.
+- ### Key aspects
+  - **Independence**: the verifier is free of financial or operational ties to the verified party.
+  - **Standards**: assessment is against documented, often externally defined criteria.
+  - **Evidence**: conclusions rest on traceable [[Provenance]] and [[Data Integrity]].
+  - **Attestation**: a formal statement records the verification outcome.
+- ### Applications
+  - Verifying [[Carbon Credits]] and sustainability claims.
+  - Financial statement audits and assurance engagements.
+  - Product and process certification.
+  - Supply-chain provenance and integrity checks.
+- ### Relationships
+  - requires:: [[Audit]]
+  - requires:: [[Provenance]]
+  - requires:: [[Data Integrity]]
+  - dependsOn:: [[Trust]]
+  - dependsOn:: [[VERIFICATION]]
+  - supports:: [[Compliance]]
+  - supports:: [[Carbon Credits]]
+  - enables:: [[Quality Assurance]]
+  - implements:: [[VERIFICATION]]
+  - relatedTo:: [[Trust]]
+  - relatedTo:: [[Compliance]]
+  - relatedTo:: [[Audit]]
+- ### Provenance
+  - updated:: 2026-06-15

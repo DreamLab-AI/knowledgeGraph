@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:academic-conference",
+  "title": "Academic Conference",
+  "slug": "academic-conference",
+  "public": true,
+  "classIri": "urn:ngm:class:academic-conference",
+  "domain": "ai",
+  "definition": "An academic conference is a periodic gathering at which researchers present, discuss, and publish peer-reviewed work, disseminating new findings and shaping the direction of a field. Submissions are typically reviewed by a programme committee, with accepted papers published in conference proceedings and presented through talks, posters, and workshops. In computer science and artificial intelligence, leading conferences such as NeurIPS, ICML, and CVPR serve as the primary venues of record, where peer review, publication, and community exchange are tightly coupled rather than mediated solely through journals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scientific-research",
+      "label": "Scientific Research"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence-research",
+        "label": "Artificial Intelligence Research"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      },
+      {
+        "id": "urn:ngm:class:academia",
+        "label": "Academia"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neurips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      },
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:publication",
+        "label": "Publication"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

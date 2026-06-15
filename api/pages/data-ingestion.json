@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:data-ingestion",
+  "title": "Data Ingestion",
+  "slug": "data-ingestion",
+  "public": true,
+  "classIri": "urn:ngm:class:data-ingestion",
+  "domain": "spatial-computing",
+  "definition": "Data ingestion is the process of acquiring data from heterogeneous sources and moving it into a target store or processing system for downstream use. It covers batch and streaming acquisition, format normalisation, validation and routing, and forms the entry stage of data pipelines. In spatial-computing contexts ingestion handles sensor streams and captured geometry before reconstruction and analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-pipeline",
+      "label": "Data Pipeline"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    }
+  ]
+}

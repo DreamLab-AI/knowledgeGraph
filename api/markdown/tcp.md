@@ -1,0 +1,36 @@
+- ### Definition
+  - [[TCP]] (Transmission Control Protocol) is a connection-oriented transport protocol delivering a reliable, ordered byte stream over [[Internet Protocol]].
+  - It guarantees delivery through acknowledgements, retransmission, and sequencing, and it shares capacity via [[Congestion Control]].
+  - TCP sits in the transport layer of the [[OSI Model]] and underpins protocols such as [[HTTP]].
+- ### Overview
+  - TCP opens a connection with a three-way handshake, after which both endpoints can send data as a continuous stream segmented into packets.
+  - Each segment carries a sequence number; the receiver acknowledges received bytes, letting the sender detect and retransmit losses.
+  - Flow control via a sliding window prevents a fast sender from overwhelming a slow receiver, while congestion control adapts the sending rate to network conditions.
+  - The connection is closed gracefully with a teardown exchange, releasing resources at both ends.
+- ### Mechanisms
+  - **Three-way handshake**: SYN, SYN-ACK, ACK establishes synchronised sequence numbers.
+  - **Reliable delivery**: cumulative acknowledgements and timeouts trigger retransmission of lost segments.
+  - **Ordering**: sequence numbers let the receiver reassemble the stream in order.
+  - **Congestion control**: algorithms such as slow start and congestion avoidance adjust the window to avoid collapse.
+- ### Applications
+  - Web traffic carried over HTTP and HTTPS.
+  - Email transport, file transfer, and remote shell sessions.
+  - Any application requiring guaranteed, in-order delivery over IP.
+  - Foundation for TLS-secured channels.
+- ### Relationships
+  - requires:: [[Internet Protocol]]
+  - requires:: [[Network Transport]]
+  - enables:: [[HTTP]]
+  - enables:: [[Secure Communication]]
+  - enables:: [[Client-Server Architecture]]
+  - uses:: [[Congestion Control]]
+  - uses:: [[Packet Switching]]
+  - implements:: [[Reliability]]
+  - supports:: [[TLS]]
+  - contrastsWith:: [[UDP]]
+  - partOf:: [[OSI Model]]
+  - relatedTo:: [[Latency]]
+  - relatedTo:: [[Network Protocol]]
+  - relatedTo:: [[Network Layer]]
+- ### Provenance
+  - updated:: 2026-06-15

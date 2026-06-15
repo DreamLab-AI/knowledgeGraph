@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:scientific-method",
+  "title": "Scientific Method",
+  "slug": "scientific-method",
+  "public": true,
+  "classIri": "urn:ngm:class:scientific-method",
+  "domain": "artificial-intelligence",
+  "definition": "The scientific method is a systematic process for acquiring knowledge through observation, formulation of testable hypotheses, controlled experimentation, and analysis of results, with conclusions subject to revision in light of new evidence. It emphasises empirical testing, reproducibility, and peer scrutiny to distinguish well-supported claims from conjecture. In artificial intelligence it underpins rigorous experimentation, benchmarking, and the validation of models and theories.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:statistical-testing",
+        "label": "Statistical Testing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      },
+      {
+        "id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model",
+        "label": "Model"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "research-layer",
+      "label": "Research Layer"
+    }
+  ]
+}

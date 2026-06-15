@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:tcp",
+  "title": "TCP",
+  "slug": "tcp",
+  "public": true,
+  "classIri": "urn:ngm:class:tcp",
+  "domain": "infrastructure",
+  "definition": "The Transmission Control Protocol (TCP) is a connection-oriented transport-layer protocol that provides reliable, ordered, and error-checked delivery of a byte stream between applications over an IP network. It establishes connections via a three-way handshake, segments data, acknowledges receipt, retransmits lost segments, and applies flow and congestion control to share network capacity fairly. TCP is one of the core protocols of the Internet protocol suite, underlying most application protocols that demand reliability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-transport",
+      "label": "Network Transport"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:udp",
+        "label": "UDP"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      },
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

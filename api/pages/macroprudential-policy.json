@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:macroprudential-policy",
+  "title": "Macroprudential Policy",
+  "slug": "macroprudential-policy",
+  "public": true,
+  "classIri": "urn:ngm:class:macroprudential-policy",
+  "domain": "finance",
+  "definition": "Macroprudential policy is a regulatory approach aimed at safeguarding the stability of the financial system as a whole rather than the soundness of individual institutions, addressing systemic risk that arises from interconnections, common exposures, and procyclical behaviour. It deploys instruments such as countercyclical capital buffers, leverage limits, and stress testing to limit the build-up of vulnerabilities and to enhance resilience to shocks. It complements microprudential supervision and monetary policy in promoting financial stability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      },
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fsb",
+        "label": "FSB"
+      },
+      {
+        "id": "urn:ngm:class:g20",
+        "label": "G20"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

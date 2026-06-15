@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:data-transformation",
+  "title": "Data Transformation",
+  "slug": "data-transformation",
+  "public": true,
+  "classIri": "urn:ngm:class:data-transformation",
+  "domain": "infrastructure",
+  "definition": "Data transformation is the process of converting data from one structure, format or representation into another to make it suitable for storage, integration or analysis. It includes cleansing, type conversion, normalisation, aggregation, enrichment, schema mapping and serialisation, and is typically expressed as declarative or programmatic steps within a pipeline. Transformation reconciles heterogeneous sources, enforces quality and conformance rules, and shapes raw inputs into the canonical forms required by downstream systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-processing",
+      "label": "Data Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      },
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:etl",
+        "label": "ETL"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    }
+  ]
+}

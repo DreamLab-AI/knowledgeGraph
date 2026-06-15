@@ -1,0 +1,34 @@
+- ### Definition
+  - [[Macroprudential Policy]] protects the financial system as a whole from [[Systemic Risk]], rather than focusing on single institutions.
+  - It uses instruments such as countercyclical buffers, leverage limits, and [[Stress Testing]] to curb the build-up of vulnerabilities.
+  - It is a pillar of [[Financial Regulation]] complementing [[Monetary Policy]] and microprudential supervision.
+- ### Overview
+  - Systemic crises arise from interconnections, correlated exposures, and procyclical credit and leverage cycles that individual-institution oversight can miss.
+  - Macroprudential policy targets these system-wide externalities, leaning against the cycle to reduce both the probability and severity of crises.
+  - Authorities monitor aggregate indicators of risk and adjust capital, liquidity, and lending standards accordingly.
+  - International bodies coordinate frameworks to limit regulatory arbitrage across jurisdictions.
+- ### Key aspects
+  - **Countercyclical capital buffers**: requiring more capital in booms to absorb losses in downturns.
+  - **Borrower-based measures**: loan-to-value and debt-to-income limits dampening credit excess.
+  - **Stress testing**: assessing resilience of the system to adverse scenarios.
+  - **Systemic surcharges**: higher requirements for institutions whose failure would be most disruptive.
+- ### Applications
+  - Limiting credit and asset-price bubbles.
+  - Strengthening bank capital and liquidity buffers ahead of shocks.
+  - Reducing contagion across interconnected institutions.
+  - Coordinating cross-border stability frameworks.
+- ### Relationships
+  - supports:: [[Financial Stability]]
+  - supports:: [[Risk Management]]
+  - hasPart:: [[Stress Testing]]
+  - hasPart:: [[Capital Adequacy]]
+  - implements:: [[Financial Regulation]]
+  - implements:: [[Prudential Regulation]]
+  - implements:: [[Basel III]]
+  - requires:: [[Systemic Risk]]
+  - standardizedBy:: [[FSB]]
+  - standardizedBy:: [[G20]]
+  - relatedTo:: [[Monetary Policy]]
+  - relatedTo:: [[Financial Stability]]
+- ### Provenance
+  - updated:: 2026-06-15

@@ -1,0 +1,39 @@
+- ### Definition
+	- An academic conference is a recurring venue where researchers present and publish peer-reviewed work.
+	- It is a form of [[Scientific Research]] activity central to scholarly life in [[Academia]].
+	- It produces [[Publication]] records through reviewed proceedings.
+	- In computing it is the primary venue of record, anchored by gatekeeping [[Peer Review]].
+- ### Overview
+	- Conferences combine dissemination, evaluation, and community building into a single periodic event.
+	- A programme committee reviews submissions and curates an accepted programme of talks, posters, and workshops.
+	- In AI and computer science, conference proceedings carry the weight that journals do in many other fields.
+	- They set agendas, surface emerging directions, and accelerate feedback far faster than journal cycles.
+- ### Key aspects
+	- Peer-reviewed selection by a programme committee governs what is presented.
+	- Proceedings provide a citable, archival publication of accepted work.
+	- Oral, poster, and workshop formats serve different depths of exchange.
+	- Co-located workshops and tutorials extend the core technical programme.
+- ### Applications
+	- Premier AI venues such as [[NeurIPS]], [[ICML]], and [[CVPR]].
+	- Dissemination of new methods, datasets, and benchmarks.
+	- Networking, recruitment, and cross-institution [[Collaboration]].
+	- Setting community standards and research agendas.
+- ### Relationships
+	- subClassOf:: [[Scientific Research]]
+	- partOf:: [[Scientific Research]]
+	- partOf:: [[Academia]]
+	- produces:: [[Publication]]
+	- requires:: [[Peer Review]]
+	- uses:: [[Peer Review]]
+	- enables:: [[Knowledge Sharing]]
+	- enables:: [[Collaboration]]
+	- supports:: [[Artificial Intelligence Research]]
+	- supports:: [[Deep Learning]]
+	- relatedTo:: [[NeurIPS]]
+	- relatedTo:: [[ICML]]
+	- relatedTo:: [[CVPR]]
+	- relatedTo:: [[Publication]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation
