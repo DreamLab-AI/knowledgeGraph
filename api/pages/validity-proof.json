@@ -22,7 +22,7 @@
         "label": "zk-SNARK"
       },
       {
-        "id": "urn:ngm:class:zk-stark",
+        "id": "urn:ngm:class:zk-starks",
         "label": "zk-STARK"
       }
     ],
@@ -72,7 +72,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:zksync",
+        "id": "urn:ngm:class:zk-sync",
         "label": "zkSync"
       },
       {

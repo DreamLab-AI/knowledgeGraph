@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:cypher-query-language",
+  "title": "Cypher Query Language",
+  "slug": "cypher-query-language",
+  "public": true,
+  "classIri": "urn:ngm:class:cypher-query-language",
+  "domain": "data",
+  "definition": "Cypher is a declarative graph query language originally developed by Neo4j for querying property graph databases, using an ASCII-art syntax to express patterns of nodes and relationships intuitively. It allows users to describe graph patterns using parentheses for nodes and arrows for relationships, making queries readable and expressive without requiring deep knowledge of graph traversal algorithms. Cypher has become the basis of the openCypher project and GQL ISO standard, establishing it as a cross-vendor lingua franca for graph databases.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data",
+      "label": "Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:pattern-matching",
+        "label": "Pattern Matching"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graph-databases",
+        "label": "Graph Databases"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:query-language",
+        "label": "Query Language"
+      },
+      {
+        "id": "urn:ngm:class:declarative-programming",
+        "label": "Declarative Programming"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "id": "urn:ngm:class:gremlin",
+        "label": "Gremlin"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-databases",
+        "label": "Graph Databases"
+      },
+      {
+        "id": "urn:ngm:class:property-graph",
+        "label": "Property Graph"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:data-modelling",
+        "label": "Data Modelling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

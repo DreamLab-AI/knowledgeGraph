@@ -171,6 +171,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "biometric-data",
+      "title": "Biometric Data",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "biosecurity",
       "title": "Biosecurity",
       "qualityScore": 0.72
@@ -4473,6 +4478,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "externally-owned-account",
+      "title": "Externally Owned Account",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "f-2-pool",
       "title": "F2Pool",
       "qualityScore": 0.6
@@ -5813,6 +5823,11 @@
       "qualityScore": 0.6
     },
     {
+      "slug": "off-chain-governance",
+      "title": "Off Chain Governance",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "off-chain-scaling",
       "title": "Off-Chain Scaling",
       "qualityScore": 0.72
@@ -6375,6 +6390,11 @@
     {
       "slug": "proto-danksharding",
       "title": "Proto-Danksharding",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "protocol-governance",
+      "title": "Protocol Governance",
       "qualityScore": 0.62
     },
     {
@@ -7123,6 +7143,11 @@
       "qualityScore": 0.8
     },
     {
+      "slug": "streaming-payment",
+      "title": "Streaming Payment",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "streaming-payments",
       "title": "Streaming Payments",
       "qualityScore": 0.62
@@ -7221,6 +7246,11 @@
       "slug": "tlv-encoding",
       "title": "TLV Encoding",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "tagged-hash",
+      "title": "Tagged Hash",
+      "qualityScore": 0.62
     },
     {
       "slug": "tally",
@@ -12985,6 +13015,11 @@
       "slug": "inclusive-xr-experience",
       "title": "Inclusive Xr Experience",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "indoor-navigation",
+      "title": "Indoor Navigation",
+      "qualityScore": 0.62
     },
     {
       "slug": "industrial-metaverse",
@@ -21391,6 +21426,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "data-exchange",
+      "title": "Data Exchange",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "data-fabric-architecture",
       "title": "Data Fabric Architecture",
       "qualityScore": 0.35
@@ -22561,6 +22601,11 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "infrastructure-as-a-service",
+      "title": "Infrastructure As A Service",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "infrastructure-layer",
       "title": "Infrastructure Layer",
       "qualityScore": 0.35
@@ -22979,6 +23024,11 @@
       "slug": "low-latency-computing",
       "title": "Low-Latency Computing",
       "qualityScore": 0.8
+    },
+    {
+      "slug": "lpwan",
+      "title": "Lpwan",
+      "qualityScore": 0.62
     },
     {
       "slug": "mimo-antenna",
@@ -23728,6 +23778,11 @@
     {
       "slug": "pkce",
       "title": "Pkce",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "platform-as-a-service",
+      "title": "Platform As A Service",
       "qualityScore": 0.62
     },
     {
@@ -24696,6 +24751,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "software-as-a-service",
+      "title": "Software As A Service",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "software-development",
       "title": "Software Development",
       "qualityScore": 0.72
@@ -25171,6 +25231,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "ultra-wideband",
+      "title": "Ultra Wideband",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "unit-testing",
       "title": "Unit Testing",
       "qualityScore": 0.62
@@ -25394,6 +25459,11 @@
       "slug": "xr-testing-infrastructure",
       "title": "XR Testing Infrastructure",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "z-wave",
+      "title": "Z Wave",
+      "qualityScore": 0.62
     },
     {
       "slug": "z-wave-js-ui",
@@ -26336,6 +26406,11 @@
       "slug": "foundation-model",
       "title": "Foundation Model",
       "qualityScore": 0.74
+    },
+    {
+      "slug": "fourier-transform",
+      "title": "Fourier Transform",
+      "qualityScore": 0.62
     },
     {
       "slug": "frontier-ai",
@@ -29414,6 +29489,11 @@
       "qualityScore": 0.74
     },
     {
+      "slug": "ca-browser-forum",
+      "title": "Ca Browser Forum",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "centralized-identity-provider",
       "title": "Centralized Identity Provider",
       "qualityScore": 0.6
@@ -30399,6 +30479,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "policy-administration-point",
+      "title": "Policy Administration Point",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "policy-decision-point",
       "title": "Policy Decision Point",
       "qualityScore": 0.8
@@ -30407,6 +30492,11 @@
       "slug": "policy-enforcement-point",
       "title": "Policy Enforcement Point",
       "qualityScore": 0.74
+    },
+    {
+      "slug": "policy-information-point",
+      "title": "Policy Information Point",
+      "qualityScore": 0.62
     },
     {
       "slug": "portable-identity",
@@ -30826,6 +30916,11 @@
     {
       "slug": "service-endpoint",
       "title": "Service Endpoint",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "session-key",
+      "title": "Session Key",
       "qualityScore": 0.62
     },
     {
@@ -33400,6 +33495,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "euclidean-distance",
+      "title": "Euclidean Distance",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "evidence-lower-bound",
       "title": "Evidence Lower Bound",
       "qualityScore": 0.62
@@ -34255,6 +34355,11 @@
       "qualityScore": 0.68
     },
     {
+      "slug": "python-programming-language",
+      "title": "Python Programming Language",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "python-pytorch-deep-learning-stack",
       "title": "Python PyTorch Deep Learning Stack",
       "qualityScore": 0.0
@@ -34492,6 +34597,11 @@
     {
       "slug": "temporal-difference-learning",
       "title": "Temporal Difference Learning",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "tensor-computation",
+      "title": "Tensor Computation",
       "qualityScore": 0.62
     },
     {
@@ -34767,6 +34877,11 @@
       "qualityScore": 0.75
     },
     {
+      "slug": "cypher-query-language",
+      "title": "Cypher Query Language",
+      "qualityScore": 0.62
+    },
+    {
       "slug": "dbpedia",
       "title": "DBpedia",
       "qualityScore": 0.72
@@ -34905,6 +35020,11 @@
       "slug": "data-model",
       "title": "Data Model",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "data-modelling",
+      "title": "Data Modelling",
+      "qualityScore": 0.62
     },
     {
       "slug": "data-models",

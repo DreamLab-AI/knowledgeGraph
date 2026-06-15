@@ -51,7 +51,7 @@ public:: true
         "label": "Leaderboard"
       },
       {
-        "@id": "urn:ngm:class:performance-metric",
+        "@id": "urn:ngm:class:performance-metrics",
         "label": "Performance Metric"
       }
     ],

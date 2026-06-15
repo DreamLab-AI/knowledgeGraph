@@ -81,7 +81,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:benchmark",
+        "@id": "urn:ngm:class:benchmarks",
         "label": "Benchmark"
       }
     ],

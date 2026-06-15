@@ -85,7 +85,7 @@ public:: true
         "label": "Stochastic Optimisation"
       },
       {
-        "@id": "urn:ngm:class:monte-carlo-method",
+        "@id": "urn:ngm:class:monte-carlo-methods",
         "label": "Monte Carlo Method"
       }
     ],

@@ -128,7 +128,7 @@ public:: true
         "label": "Texture Mapping"
       },
       {
-        "@id": "urn:ngm:class:antialiasing",
+        "@id": "urn:ngm:class:anti-aliasing",
         "label": "Antialiasing"
       }
     ],

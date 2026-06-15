@@ -40,7 +40,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:3d-modeling",
+        "id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modelling"
       }
     ],
@@ -85,7 +85,7 @@
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:3d-modeling",
+        "id": "urn:ngm:class:3-d-modeling",
         "label": "3D Modelling"
       }
     ],

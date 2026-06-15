@@ -640,7 +640,7 @@ public:: true
         "label": "Algorithmic Auditing"
       },
       {
-        "@id": "urn:ngm:class:capability-evaluations",
+        "@id": "urn:ngm:class:capability-evaluation",
         "label": "Capability Evaluations"
       },
       {
@@ -670,7 +670,7 @@ public:: true
         "label": "AI Liability Frameworks"
       },
       {
-        "@id": "urn:ngm:class:algorithmic-impact-assessments",
+        "@id": "urn:ngm:class:algorithmic-impact-assessment",
         "label": "Algorithmic Impact Assessments"
       },
       {
@@ -738,7 +738,7 @@ public:: true
         "label": "Mechanistic Interpretability"
       },
       {
-        "@id": "urn:ngm:class:risk-registers",
+        "@id": "urn:ngm:class:risk-register",
         "label": "Risk Registers"
       },
       {

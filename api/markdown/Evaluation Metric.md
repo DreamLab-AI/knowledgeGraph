@@ -72,7 +72,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:ground-truth-label",
+        "@id": "urn:ngm:class:ground-truth-labels",
         "label": "Ground Truth Label"
       },
       {

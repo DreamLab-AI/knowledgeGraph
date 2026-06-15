@@ -126,7 +126,7 @@ public:: true
         "label": "Account Abstraction"
       },
       {
-        "@id": "urn:ngm:class:bip-39",
+        "@id": "urn:ngm:class:bip39",
         "label": "BIP-39"
       }
     ],

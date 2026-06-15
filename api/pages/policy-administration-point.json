@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:policy-administration-point",
+  "title": "Policy Administration Point",
+  "slug": "policy-administration-point",
+  "public": true,
+  "classIri": "urn:ngm:class:policy-administration-point",
+  "domain": "security",
+  "definition": "A Policy Administration Point (PAP) is the component within an attribute-based or policy-based access control architecture responsible for authoring, storing, and distributing access control policies to Policy Decision Points. The PAP provides the administrative interface through which security administrators define rules governing which subjects may access which resources under what conditions. It is distinct from policy enforcement and evaluation components, focusing solely on policy lifecycle management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:biometric-data",
+        "label": "Biometric Data"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:policy-information-point",
+        "label": "Policy Information Point"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    }
+  ]
+}

@@ -117,7 +117,7 @@ public:: true
         "label": "Polynomial Commitment"
       },
       {
-        "@id": "urn:ngm:class:kzg-commitments",
+        "@id": "urn:ngm:class:kzg-commitment",
         "label": "KZG Commitments"
       },
       {

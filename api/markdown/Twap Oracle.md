@@ -61,10 +61,6 @@ public:: true
       {
         "@id": "urn:ngm:class:decentralized-finance",
         "label": "Decentralized Finance"
-      },
-      {
-        "@id": "urn:ngm:class:decentralized-finance",
-        "label": "Decentralized Finance"
       }
     ],
     "uses": [

@@ -210,7 +210,7 @@ public:: true
         "label": "Proof of Reserve"
       },
       {
-        "@id": "urn:ngm:class:overcollateralization",
+        "@id": "urn:ngm:class:over-collateralisation",
         "label": "Overcollateralization"
       }
     ],

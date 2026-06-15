@@ -29,7 +29,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:generalization",
+        "id": "urn:ngm:class:generalisation",
         "label": "Generalisation"
       },
       {
@@ -43,7 +43,7 @@
         "label": "Model Architecture"
       },
       {
-        "id": "urn:ngm:class:regularization",
+        "id": "urn:ngm:class:regularisation",
         "label": "Regularisation"
       }
     ],
@@ -62,7 +62,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:regularization",
+        "id": "urn:ngm:class:regularisation",
         "label": "Regularisation"
       },
       {
@@ -93,7 +93,7 @@
         "label": "Bias-Variance Tradeoff"
       },
       {
-        "id": "urn:ngm:class:generalization",
+        "id": "urn:ngm:class:generalisation",
         "label": "Generalisation"
       },
       {

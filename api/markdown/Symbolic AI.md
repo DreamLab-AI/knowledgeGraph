@@ -176,7 +176,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:neurosymbolic-ai",
+        "@id": "urn:ngm:class:neuro-symbolic-ai",
         "label": "Neurosymbolic AI"
       },
       {

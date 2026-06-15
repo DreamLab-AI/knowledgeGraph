@@ -96,7 +96,7 @@ public:: true
         "label": "Immutability"
       },
       {
-        "@id": "urn:ngm:class:decentralized-network",
+        "@id": "urn:ngm:class:decentralised-network",
         "label": "Decentralized Network"
       }
     ],

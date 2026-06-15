@@ -146,7 +146,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:nosql-databases",
+        "@id": "urn:ngm:class:nosql-database",
         "label": "NoSQL Databases"
       },
       {

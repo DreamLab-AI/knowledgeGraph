@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:off-chain-governance",
+  "title": "Off Chain Governance",
+  "slug": "off-chain-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:off-chain-governance",
+  "domain": "blockchain",
+  "definition": "Off-chain governance refers to blockchain protocol governance processes conducted outside the ledger itself \u2014 through social consensus, developer forums, BIPs/EIPs, foundation decisions, and miner or validator coordination \u2014 rather than through on-chain voting mechanisms. Changes are agreed informally or through established processes, then implemented via software upgrades adopted voluntarily by network participants. This approach prioritises flexibility and expert deliberation but relies on social coordination and may lack the transparency of on-chain mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:externally-owned-account",
+        "label": "Externally Owned Account"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-wallet",
+        "label": "Blockchain Wallet"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:python-programming-language",
+  "title": "Python Programming Language",
+  "slug": "python-programming-language",
+  "public": true,
+  "classIri": "urn:ngm:class:python-programming-language",
+  "domain": "machine-learning",
+  "definition": "Python is a high-level, interpreted, general-purpose programming language emphasising code readability and a clean syntax. It has become the dominant language for machine learning and data science due to its extensive ecosystem of numerical and scientific libraries. Python supports multiple programming paradigms including procedural, object-oriented, and functional styles, and its dynamic typing and interactive REPL accelerate experimentation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tensor-computation",
+        "label": "Tensor Computation"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-modelling",
+        "label": "Data Modelling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      },
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      },
+      {
+        "id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

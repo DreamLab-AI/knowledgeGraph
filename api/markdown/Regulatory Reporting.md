@@ -353,7 +353,7 @@ alias:: BC-0486-regulatory-reporting
         "label": "LEI System"
       },
       {
-        "@id": "urn:ngm:class:suspicious-activity-reports",
+        "@id": "urn:ngm:class:suspicious-activity-report",
         "label": "Suspicious Activity Reports"
       },
       {

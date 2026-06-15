@@ -127,7 +127,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:low-code-platforms",
+        "@id": "urn:ngm:class:low-code-platform",
         "label": "Low-Code Platforms"
       },
       {

@@ -75,11 +75,11 @@ public:: true
         "label": "Graph Databases"
       },
       {
-        "@id": "urn:ngm:class:nosql-databases",
+        "@id": "urn:ngm:class:nosql-database",
         "label": "NoSQL Databases"
       },
       {
-        "@id": "urn:ngm:class:time-series-databases",
+        "@id": "urn:ngm:class:time-series-database",
         "label": "Time-Series Databases"
       },
       {

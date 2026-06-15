@@ -25,11 +25,11 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:remittance",
+        "id": "urn:ngm:class:remittances",
         "label": "Remittance"
       },
       {
-        "id": "urn:ngm:class:digital-payment",
+        "id": "urn:ngm:class:digital-payments",
         "label": "Digital Payment"
       }
     ],
@@ -53,7 +53,7 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:cbdc",
+        "id": "urn:ngm:class:cbdcs",
         "label": "CBDC"
       },
       {
@@ -73,7 +73,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:defi",
+        "id": "urn:ngm:class:de-fi",
         "label": "DeFi"
       },
       {
@@ -89,7 +89,7 @@
         "label": "Settlement"
       },
       {
-        "id": "urn:ngm:class:digital-payment",
+        "id": "urn:ngm:class:digital-payments",
         "label": "Digital Payment"
       }
     ]

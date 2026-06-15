@@ -91,7 +91,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:iot",
+        "@id": "urn:ngm:class:io-t",
         "label": "IoT"
       },
       {

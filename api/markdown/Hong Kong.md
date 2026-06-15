@@ -71,7 +71,7 @@ public:: true
         "label": "Cross-Border Payment"
       },
       {
-        "@id": "urn:ngm:class:tokenised-asset",
+        "@id": "urn:ngm:class:tokenized-asset",
         "label": "Tokenised Asset"
       }
     ],

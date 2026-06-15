@@ -24,7 +24,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:containerization",
+        "id": "urn:ngm:class:containerisation",
         "label": "Containerization"
       },
       {
@@ -56,7 +56,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:virtualization",
+        "id": "urn:ngm:class:virtualisation",
         "label": "Virtualization"
       }
     ],
@@ -72,7 +72,7 @@
         "label": "Control Groups"
       },
       {
-        "id": "urn:ngm:class:namespaces",
+        "id": "urn:ngm:class:namespace",
         "label": "Namespaces"
       }
     ],

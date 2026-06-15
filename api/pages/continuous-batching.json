@@ -62,7 +62,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:vllm",
+        "id": "urn:ngm:class:v-llm",
         "label": "vLLM"
       },
       {

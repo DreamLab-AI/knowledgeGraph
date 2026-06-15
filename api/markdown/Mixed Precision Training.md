@@ -71,7 +71,7 @@ alias:: Mixed-Precision Training
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:tensor-cores",
+        "@id": "urn:ngm:class:tensor-core",
         "label": "Tensor Cores"
       }
     ],

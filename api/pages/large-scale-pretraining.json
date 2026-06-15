@@ -43,7 +43,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:scaling-law",
+        "id": "urn:ngm:class:scaling-laws",
         "label": "Scaling Law"
       }
     ],

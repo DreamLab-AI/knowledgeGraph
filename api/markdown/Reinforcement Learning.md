@@ -103,7 +103,7 @@ alias:: ReinforcementLearning
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:policy-gradient-method",
+        "@id": "urn:ngm:class:policy-gradient-methods",
         "label": "Policy Gradient Method"
       },
       {

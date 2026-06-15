@@ -175,7 +175,7 @@ alias:: AuditTrail
         "label": "Access Logs"
       },
       {
-        "@id": "urn:ngm:class:event-logs",
+        "@id": "urn:ngm:class:event-log",
         "label": "Event Logs"
       },
       {

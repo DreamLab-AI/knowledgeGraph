@@ -1,0 +1,123 @@
+{
+  "id": "urn:visionflow:page:platform-as-a-service",
+  "title": "Platform As A Service",
+  "slug": "platform-as-a-service",
+  "public": true,
+  "classIri": "urn:ngm:class:platform-as-a-service",
+  "domain": "infrastructure",
+  "definition": "Platform as a Service (PaaS) is a cloud computing service model that provides a managed execution environment \u2014 including runtime, middleware, databases, and development tools \u2014 over the internet, allowing developers to build, deploy, and scale applications without managing underlying infrastructure. PaaS abstracts operating system and server management from the development team, enabling faster iteration cycles and lower operational overhead. Examples include Heroku, Google App Engine, Microsoft Azure App Service, and AWS Elastic Beanstalk.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "id": "urn:ngm:class:database",
+        "label": "Database"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:application-development",
+        "label": "Application Development"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure As A Service"
+      },
+      {
+        "id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:infrastructure-as-a-service",
+        "label": "Infrastructure As A Service"
+      },
+      {
+        "id": "urn:ngm:class:software-as-a-service",
+        "label": "Software As A Service"
+      },
+      {
+        "id": "urn:ngm:class:serverless-architecture",
+        "label": "Serverless Architecture"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    }
+  ]
+}

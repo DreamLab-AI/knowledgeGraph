@@ -57,7 +57,7 @@ public:: true
         "label": "Digital Marketing"
       },
       {
-        "@id": "urn:ngm:class:optimization",
+        "@id": "urn:ngm:class:optimisation",
         "label": "Optimization"
       }
     ],
@@ -75,7 +75,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:data-visualization",
+        "@id": "urn:ngm:class:data-visualisation",
         "label": "Data Visualization"
       }
     ],

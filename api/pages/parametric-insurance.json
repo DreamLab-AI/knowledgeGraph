@@ -64,7 +64,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:defi",
+        "id": "urn:ngm:class:de-fi",
         "label": "DeFi"
       }
     ],
@@ -89,7 +89,7 @@
         "label": "Liquidity Pool"
       },
       {
-        "id": "urn:ngm:class:defi",
+        "id": "urn:ngm:class:de-fi",
         "label": "DeFi"
       }
     ]

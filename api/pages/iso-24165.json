@@ -93,7 +93,7 @@
         "label": "Stablecoin"
       },
       {
-        "id": "urn:ngm:class:tokenised-asset",
+        "id": "urn:ngm:class:tokenized-asset",
         "label": "Tokenised Asset"
       }
     ],

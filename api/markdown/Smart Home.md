@@ -42,7 +42,7 @@ public:: true
         "label": "IoT Device"
       },
       {
-        "@id": "urn:ngm:class:sensor-network",
+        "@id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Network"
       },
       {
@@ -96,7 +96,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:iot",
+        "@id": "urn:ngm:class:io-t",
         "label": "IoT"
       },
       {

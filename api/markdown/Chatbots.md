@@ -362,7 +362,7 @@ public:: true
         "label": "Task Automation"
       },
       {
-        "@id": "urn:ngm:class:virtual-assistants",
+        "@id": "urn:ngm:class:virtual-assistant",
         "label": "Virtual Assistants"
       },
       {

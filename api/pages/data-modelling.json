@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:data-modelling",
+  "title": "Data Modelling",
+  "slug": "data-modelling",
+  "public": true,
+  "classIri": "urn:ngm:class:data-modelling",
+  "domain": "data",
+  "definition": "Data modelling is the process of defining the structure, relationships, constraints, and semantics of data to be stored, processed, or exchanged in an information system. It produces formal artefacts \u2014 conceptual, logical, and physical models \u2014 that guide database design, API contracts, and data integration. Effective data modelling ensures data consistency, reduces redundancy, and aligns technical storage structures with the business domain concepts they represent.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:python-programming-language",
+        "label": "Python Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:tensor-computation",
+        "label": "Tensor Computation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

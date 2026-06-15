@@ -482,7 +482,7 @@ public:: true
         "label": "ONNX Graph"
       },
       {
-        "@id": "urn:ngm:class:tensor-cores",
+        "@id": "urn:ngm:class:tensor-core",
         "label": "Tensor Cores"
       }
     ],

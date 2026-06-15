@@ -61,7 +61,7 @@
         "label": "Universal Scene Description"
       },
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       }
     ],

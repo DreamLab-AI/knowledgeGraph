@@ -64,7 +64,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:sensor-network",
+        "@id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Network"
       },
       {

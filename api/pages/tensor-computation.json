@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:tensor-computation",
+  "title": "Tensor Computation",
+  "slug": "tensor-computation",
+  "public": true,
+  "classIri": "urn:ngm:class:tensor-computation",
+  "domain": "machine-learning",
+  "definition": "Tensor computation is the set of mathematical operations performed on multi-dimensional arrays (tensors) that form the core numerical substrate of modern machine learning. These operations include contraction, element-wise arithmetic, broadcasting, decomposition, and automatic differentiation, typically executed on specialised hardware such as GPUs or TPUs. Tensor computation frameworks provide graph-based or eager execution models that map operations to hardware acceleration primitives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:tensor",
+      "label": "Tensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:euclidean-distance",
+        "label": "Euclidean Distance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:python-programming-language",
+        "label": "Python Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-modelling",
+        "label": "Data Modelling"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    }
+  ]
+}

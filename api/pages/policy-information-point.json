@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:policy-information-point",
+  "title": "Policy Information Point",
+  "slug": "policy-information-point",
+  "public": true,
+  "classIri": "urn:ngm:class:policy-information-point",
+  "domain": "security",
+  "definition": "A Policy Information Point (PIP) is the component in a policy-based access control architecture that retrieves and supplies attribute values needed by a Policy Decision Point to evaluate access requests against policies. The PIP acts as an attribute authority, querying identity stores, databases, and external services to resolve subject attributes, resource properties, and environmental conditions at decision time. It decouples the decision logic from the data sources that inform it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      },
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:biometric-data",
+        "label": "Biometric Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:policy-administration-point",
+        "label": "Policy Administration Point"
+      },
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    }
+  ]
+}

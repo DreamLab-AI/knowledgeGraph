@@ -18,7 +18,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:differential-equation",
+        "id": "urn:ngm:class:differential-equations",
         "label": "Differential Equation"
       }
     ],
@@ -53,7 +53,7 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:differential-equation",
+        "id": "urn:ngm:class:differential-equations",
         "label": "Differential Equation"
       },
       {

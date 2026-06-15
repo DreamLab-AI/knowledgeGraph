@@ -88,7 +88,7 @@ public:: true
         "label": "Feature Extraction"
       },
       {
-        "@id": "urn:ngm:class:sensor-network",
+        "@id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Network"
       }
     ],

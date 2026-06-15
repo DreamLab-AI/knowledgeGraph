@@ -457,7 +457,7 @@ alias:: Privacy-Preserving Analytics
         "label": "l-Diversity"
       },
       {
-        "@id": "urn:ngm:class:noise-mechanism",
+        "@id": "urn:ngm:class:noise-mechanisms",
         "label": "Noise Mechanism"
       },
       {

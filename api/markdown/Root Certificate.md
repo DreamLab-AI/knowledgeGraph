@@ -40,7 +40,7 @@ public:: true
         "label": "Trust Anchor"
       },
       {
-        "@id": "urn:ngm:class:x509-certificate",
+        "@id": "urn:ngm:class:x-509-certificate",
         "label": "X.509 Certificate"
       }
     ],

@@ -47,7 +47,7 @@ public:: true
         "label": "Wireless Communication"
       },
       {
-        "@id": "urn:ngm:class:5g",
+        "@id": "urn:ngm:class:5-g",
         "label": "5G"
       },
       {
@@ -63,7 +63,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:iot",
+        "@id": "urn:ngm:class:io-t",
         "label": "IoT"
       },
       {

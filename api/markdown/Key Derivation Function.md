@@ -84,7 +84,7 @@ public:: true
         "label": "Hash Function"
       },
       {
-        "@id": "urn:ngm:class:pseudo-random-function",
+        "@id": "urn:ngm:class:pseudorandom-function",
         "label": "Pseudo-Random Function"
       },
       {

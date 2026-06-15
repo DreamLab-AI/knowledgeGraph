@@ -58,7 +58,7 @@
         "label": "GPT"
       },
       {
-        "id": "urn:ngm:class:roberta",
+        "id": "urn:ngm:class:ro-berta",
         "label": "RoBERTa"
       }
     ],

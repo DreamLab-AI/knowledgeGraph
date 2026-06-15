@@ -53,7 +53,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:pytorch",
+        "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
       },
       {
@@ -112,7 +112,7 @@
         "label": "Python"
       },
       {
-        "id": "urn:ngm:class:opencv",
+        "id": "urn:ngm:class:open-cv",
         "label": "OpenCV"
       }
     ]

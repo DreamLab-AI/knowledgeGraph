@@ -22,7 +22,7 @@
         "label": "Bootloader"
       },
       {
-        "id": "urn:ngm:class:device-driver",
+        "id": "urn:ngm:class:device-drivers",
         "label": "Device Driver"
       }
     ],

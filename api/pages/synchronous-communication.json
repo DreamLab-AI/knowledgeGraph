@@ -44,7 +44,7 @@
         "label": "Remote Procedure Call"
       },
       {
-        "id": "urn:ngm:class:webrtc",
+        "id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       }
     ],
@@ -96,7 +96,7 @@
         "label": "Remote Collaboration"
       },
       {
-        "id": "urn:ngm:class:webrtc",
+        "id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       }
     ]

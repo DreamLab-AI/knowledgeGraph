@@ -121,7 +121,7 @@ public:: true
         "label": "Prompt Engineering"
       },
       {
-        "@id": "urn:ngm:class:process-reward-models",
+        "@id": "urn:ngm:class:process-reward-model",
         "label": "Process Reward Models"
       },
       {

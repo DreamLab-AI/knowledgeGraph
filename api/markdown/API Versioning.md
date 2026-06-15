@@ -62,7 +62,7 @@ public:: true
         "label": "Semantic Versioning"
       },
       {
-        "@id": "urn:ngm:class:openapi-specification",
+        "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Specification"
       }
     ],
@@ -80,7 +80,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:openapi-specification",
+        "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Specification"
       }
     ],

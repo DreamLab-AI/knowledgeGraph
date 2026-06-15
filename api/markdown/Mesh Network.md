@@ -58,13 +58,13 @@ public:: true
         "label": "Internet Of Things"
       },
       {
-        "@id": "urn:ngm:class:sensor-network",
+        "@id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Network"
       }
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:iot",
+        "@id": "urn:ngm:class:io-t",
         "label": "IoT"
       },
       {

@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:biometric-data",
+  "title": "Biometric Data",
+  "slug": "biometric-data",
+  "public": true,
+  "classIri": "urn:ngm:class:biometric-data",
+  "domain": "governance",
+  "definition": "Biometric data is a category of personal data comprising unique physiological or behavioural characteristics of an individual \u2014 such as fingerprints, facial geometry, iris patterns, voice prints, gait, and keystroke dynamics \u2014 that can be used to identify or authenticate that person. Under data protection frameworks such as GDPR, biometric data processed for identification purposes is classified as a special category of personal data subject to heightened protection. Its irrevocable nature (an individual cannot change their biometrics) makes breaches particularly consequential.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:personal-data",
+      "label": "Personal Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:policy-information-point",
+        "label": "Policy Information Point"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:session-key",
+        "label": "Session Key"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:policy-administration-point",
+        "label": "Policy Administration Point"
+      },
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:personal-data",
+        "label": "Personal Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

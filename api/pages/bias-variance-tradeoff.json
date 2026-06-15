@@ -70,7 +70,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:regularization",
+        "id": "urn:ngm:class:regularisation",
         "label": "Regularization"
       }
     ],
@@ -92,7 +92,7 @@
         "label": "Cross-Validation"
       },
       {
-        "id": "urn:ngm:class:regularization",
+        "id": "urn:ngm:class:regularisation",
         "label": "Regularization"
       },
       {

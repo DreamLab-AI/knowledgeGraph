@@ -57,7 +57,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:webauthn",
+        "@id": "urn:ngm:class:web-authn",
         "label": "WebAuthn"
       },
       {

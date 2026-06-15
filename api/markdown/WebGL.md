@@ -126,7 +126,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:web-gpu",
+        "@id": "urn:ngm:class:webgpu",
         "label": "WebGPU"
       },
       {

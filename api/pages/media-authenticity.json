@@ -23,7 +23,7 @@
         "label": "Content Provenance"
       },
       {
-        "id": "urn:ngm:class:c2pa",
+        "id": "urn:ngm:class:c2-pa",
         "label": "C2PA"
       }
     ],
@@ -77,7 +77,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:c2pa",
+        "id": "urn:ngm:class:c2-pa",
         "label": "C2PA"
       }
     ],

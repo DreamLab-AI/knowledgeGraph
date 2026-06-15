@@ -34,7 +34,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:gltf",
+        "id": "urn:ngm:class:gl-tf",
         "label": "glTF"
       },
       {
@@ -73,7 +73,7 @@
         "label": "Digital Asset"
       },
       {
-        "id": "urn:ngm:class:webxr",
+        "id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       }
     ],

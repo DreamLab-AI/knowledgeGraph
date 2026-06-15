@@ -19,7 +19,7 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:sensor-network",
+        "id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Network"
       },
       {
@@ -39,7 +39,7 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:sensor-network",
+        "id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Network"
       }
     ],

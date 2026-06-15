@@ -97,7 +97,7 @@ public:: true
         "label": "Caching"
       },
       {
-        "@id": "urn:ngm:class:postgresql",
+        "@id": "urn:ngm:class:postgre-sql",
         "label": "PostgreSQL"
       }
     ]

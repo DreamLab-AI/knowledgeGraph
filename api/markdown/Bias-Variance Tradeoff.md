@@ -72,7 +72,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:regularization",
+        "@id": "urn:ngm:class:regularisation",
         "label": "Regularization"
       }
     ],
@@ -102,7 +102,7 @@ public:: true
         "label": "Cross-Validation"
       },
       {
-        "@id": "urn:ngm:class:regularization",
+        "@id": "urn:ngm:class:regularisation",
         "label": "Regularization"
       },
       {

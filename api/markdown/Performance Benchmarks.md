@@ -162,7 +162,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:service-level-objectives",
+        "@id": "urn:ngm:class:service-level-objective",
         "label": "Service Level Objectives"
       },
       {

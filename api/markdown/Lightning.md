@@ -105,7 +105,7 @@ public:: true
         "label": "Instant Payment"
       },
       {
-        "@id": "urn:ngm:class:streaming-payment",
+        "@id": "urn:ngm:class:streaming-payments",
         "label": "Streaming Payment"
       }
     ],

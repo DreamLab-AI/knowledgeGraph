@@ -22,7 +22,7 @@
         "label": "JSON Schema"
       },
       {
-        "id": "urn:ngm:class:data-contract",
+        "id": "urn:ngm:class:data-contracts",
         "label": "Data Contract"
       }
     ],
@@ -81,7 +81,7 @@
         "label": "API Specification"
       },
       {
-        "id": "urn:ngm:class:data-contract",
+        "id": "urn:ngm:class:data-contracts",
         "label": "Data Contract"
       }
     ],

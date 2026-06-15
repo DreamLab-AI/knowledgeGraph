@@ -132,7 +132,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:ethereum-improvement-proposals",
+        "@id": "urn:ngm:class:ethereum-improvement-proposal",
         "label": "Ethereum Improvement Proposals"
       },
       {

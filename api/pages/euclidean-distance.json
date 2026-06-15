@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:euclidean-distance",
+  "title": "Euclidean Distance",
+  "slug": "euclidean-distance",
+  "public": true,
+  "classIri": "urn:ngm:class:euclidean-distance",
+  "domain": "machine-learning",
+  "definition": "Euclidean distance is the straight-line distance between two points in Euclidean space, computed as the square root of the sum of squared differences across all coordinate dimensions. It is the most widely used distance metric in geometry, statistics, and machine learning, serving as the default measure of dissimilarity in clustering algorithms, nearest-neighbour search, and dimensionality reduction methods. As a special case of the Minkowski distance (p=2), it satisfies the metric axioms of non-negativity, symmetry, and the triangle inequality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distance-metric",
+      "label": "Distance Metric"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tensor-computation",
+        "label": "Tensor Computation"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-modelling",
+        "label": "Data Modelling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fourier-transform",
+        "label": "Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:distance-metric",
+        "label": "Distance Metric"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:python-programming-language",
+        "label": "Python Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:ultra-wideband",
+        "label": "Ultra Wideband"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

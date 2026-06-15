@@ -77,7 +77,7 @@ public:: true
         "label": "Liquidity Pool"
       },
       {
-        "@id": "urn:ngm:class:overcollateralisation",
+        "@id": "urn:ngm:class:over-collateralisation",
         "label": "Overcollateralisation"
       }
     ],

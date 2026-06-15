@@ -80,7 +80,7 @@ alias:: Chain of Thought Reasoning
         "label": "Self-Consistency"
       },
       {
-        "@id": "urn:ngm:class:process-reward-models",
+        "@id": "urn:ngm:class:process-reward-model",
         "label": "Process Reward Models"
       }
     ],

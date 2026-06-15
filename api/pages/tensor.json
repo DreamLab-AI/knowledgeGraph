@@ -45,11 +45,11 @@
     ],
     "implements": [
       {
-        "id": "urn:ngm:class:tensorflow",
+        "id": "urn:ngm:class:tensor-flow",
         "label": "TensorFlow"
       },
       {
-        "id": "urn:ngm:class:pytorch",
+        "id": "urn:ngm:class:py-torch",
         "label": "PyTorch"
       }
     ],

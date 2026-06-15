@@ -96,7 +96,7 @@ public:: true
         "label": "zkSNARK"
       },
       {
-        "@id": "urn:ngm:class:zkstark",
+        "@id": "urn:ngm:class:zk-starks",
         "label": "zkSTARK"
       },
       {

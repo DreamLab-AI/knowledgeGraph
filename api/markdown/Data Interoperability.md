@@ -176,7 +176,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:data-silos",
+        "@id": "urn:ngm:class:data-silo",
         "label": "Data Silos"
       },
       {

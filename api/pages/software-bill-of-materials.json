@@ -67,7 +67,7 @@
         "label": "Vulnerability Management"
       },
       {
-        "id": "urn:ngm:class:devsecops",
+        "id": "urn:ngm:class:dev-sec-ops",
         "label": "DevSecOps"
       },
       {
@@ -92,7 +92,7 @@
         "label": "Vulnerability"
       },
       {
-        "id": "urn:ngm:class:devsecops",
+        "id": "urn:ngm:class:dev-sec-ops",
         "label": "DevSecOps"
       }
     ]

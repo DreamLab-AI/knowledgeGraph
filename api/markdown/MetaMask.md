@@ -75,7 +75,7 @@ public:: true
         "label": "JSON-RPC"
       },
       {
-        "@id": "urn:ngm:class:bip-39",
+        "@id": "urn:ngm:class:bip39",
         "label": "BIP-39"
       }
     ],

@@ -60,7 +60,7 @@ public:: true
         "label": "Oracle"
       },
       {
-        "@id": "urn:ngm:class:iot",
+        "@id": "urn:ngm:class:io-t",
         "label": "IoT"
       }
     ],
@@ -100,7 +100,7 @@ public:: true
         "label": "Data Integrity"
       },
       {
-        "@id": "urn:ngm:class:sensor-network",
+        "@id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Network"
       }
     ],

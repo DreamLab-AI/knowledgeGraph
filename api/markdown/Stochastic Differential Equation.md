@@ -60,7 +60,7 @@ public:: true
         "label": "Diffusion Models"
       },
       {
-        "@id": "urn:ngm:class:score-based-generative-models",
+        "@id": "urn:ngm:class:score-based-generative-model",
         "label": "Score-Based Generative Models"
       },
       {

@@ -29,7 +29,7 @@
         "label": "Interoperability"
       },
       {
-        "id": "urn:ngm:class:iot",
+        "id": "urn:ngm:class:io-t",
         "label": "IoT"
       }
     ],
@@ -48,7 +48,7 @@
         "label": "REST"
       },
       {
-        "id": "urn:ngm:class:coap",
+        "id": "urn:ngm:class:co-ap",
         "label": "CoAP"
       },
       {
@@ -62,7 +62,7 @@
         "label": "Smart City"
       },
       {
-        "id": "urn:ngm:class:iot",
+        "id": "urn:ngm:class:io-t",
         "label": "IoT"
       }
     ],

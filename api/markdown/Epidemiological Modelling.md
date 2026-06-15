@@ -33,7 +33,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:differential-equation",
+        "@id": "urn:ngm:class:differential-equations",
         "label": "Differential Equation"
       }
     ],
@@ -79,7 +79,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:differential-equation",
+        "@id": "urn:ngm:class:differential-equations",
         "label": "Differential Equation"
       },
       {
