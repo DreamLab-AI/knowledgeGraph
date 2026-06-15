@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:computation-graph",
+  "title": "Computation Graph",
+  "slug": "computation-graph",
+  "public": true,
+  "classIri": "urn:ngm:class:computation-graph",
+  "domain": "machine-learning",
+  "definition": "A Computation Graph is a directed graph in which nodes represent operations or variables and edges represent the flow of data (typically tensors) between them. It is the central abstraction in modern machine learning frameworks, where a model's forward pass is expressed as a graph and gradients are computed by traversing it in reverse via automatic differentiation. Graphs may be built statically ahead of execution or dynamically as code runs, and they enable optimisation, scheduling and hardware acceleration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:directed-acyclic-graph",
+      "label": "Directed Acyclic Graph"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-framework",
+        "label": "Machine Learning Framework"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:tensor-flow",
+        "label": "TensorFlow"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

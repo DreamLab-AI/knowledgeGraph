@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:infrastructure-as-code",
+  "title": "Infrastructure as Code",
+  "slug": "infrastructure-as-code",
+  "public": true,
+  "classIri": "urn:ngm:class:infrastructure-as-code",
+  "domain": "infrastructure",
+  "definition": "Infrastructure as Code (IaC) is the practice of defining and provisioning computing infrastructure through machine-readable definition files rather than manual configuration. Declarative or imperative specifications describe the desired state of servers, networks, and services, which tooling then realises idempotently and reproducibly. Treating infrastructure like software allows version control, peer review, automated testing, and consistent deployment across environments, eliminating configuration drift.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automation",
+      "label": "Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:auto-scaling",
+        "label": "Auto-Scaling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:immutable-infrastructure",
+        "label": "Immutable Infrastructure"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:terraform",
+        "label": "Terraform"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:gitops",
+        "label": "GitOps"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:azure",
+        "label": "Azure Cloud"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "system-architecture",
+      "label": "System Architecture"
+    }
+  ]
+}

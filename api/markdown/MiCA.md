@@ -179,7 +179,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:dora",
+        "@id": "urn:ngm:class:do-ra",
         "label": "DORA"
       },
       {

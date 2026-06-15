@@ -80,7 +80,7 @@ public:: true
         "label": "JSON Serialisation"
       },
       {
-        "@id": "urn:ngm:class:webgl",
+        "@id": "urn:ngm:class:web-gl",
         "label": "WebGL"
       }
     ],
@@ -186,7 +186,7 @@ public:: true
         "label": "E-Commerce 3D"
       },
       {
-        "@id": "urn:ngm:class:webxr",
+        "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       }
     ]

@@ -1,0 +1,43 @@
+- ### Definition
+  - Real-time data processing is the continuous ingestion, transformation, and analysis of data immediately as it is produced, delivering results within strict latency bounds rather than in scheduled batches. It underpins applications that must react to events as they happen, such as fraud detection, monitoring, and live analytics, and depends on low-latency pipelines, stream-processing engines, and event-driven architectures. Its defining constraint is bounded end-to-end latency between data arrival and actionable output.
+  - Related concepts: [[Stream Processing]] [[Event Driven Architecture]] [[Low Latency]] [[Data Pipeline]]
+- ### Overview
+  - Real-time processing operates on data in motion, producing results within tight latency budgets as events arrive.
+  - It contrasts with batch processing, which accumulates data and processes it on a schedule.
+  - Stream-processing engines and message brokers form the backbone of real-time pipelines.
+  - Event-driven architectures propagate state changes immediately, enabling reactive downstream computation.
+- ### Mechanisms
+  - Continuous ingestion of unbounded data streams rather than finite batches.
+  - [[Message Queue]] and broker layers buffer and route events between stages.
+  - Windowing and stateful operators aggregate streaming data within time bounds.
+  - Bounded end-to-end [[Low Latency]] is the defining service-level objective.
+  - [[Apache Kafka]] is a common transport for high-throughput event streams.
+- ### Applications
+  - Real-time [[Fraud Detection]] scoring transactions as they occur.
+  - Live [[Monitoring]] and [[Observability]] dashboards over telemetry streams.
+  - Recommendation and personalisation reacting to current user behaviour.
+  - Operational analytics on sensor and clickstream data at the edge.
+- ### Relationships
+  - subClassOf:: [[Stream Processing]]
+  - dependsOn:: [[Stream Processing]]
+  - dependsOn:: [[Event Driven Architecture]]
+  - dependsOn:: [[Low Latency]]
+  - enables:: [[Fraud Detection]]
+  - enables:: [[Observability]]
+  - enables:: [[Monitoring]]
+  - requires:: [[Data Pipeline]]
+  - requires:: [[Message Queue]]
+  - requires:: [[Throughput]]
+  - uses:: [[Apache Kafka]]
+  - uses:: [[Stream Processing]]
+  - relatedTo:: [[Batch Processing]]
+  - relatedTo:: [[Data Processing]]
+  - relatedTo:: [[Edge Computing]]
+  - contrastsWith:: [[Batch Processing]]
+  - supports:: [[Data Management]]
+  - supports:: [[Infrastructure]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

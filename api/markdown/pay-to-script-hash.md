@@ -1,0 +1,36 @@
+- ### Definition
+  - A [[Bitcoin Script]] locking template
+  - Part of [[Bitcoin]]
+  - Specified by [[BIP 16]]
+  - Underpins [[Multi-Signature Wallet]] designs
+- ### Overview
+  - P2SH locks an output to the 20-byte hash of a redeem script encoded as a special script address.
+  - Spending requires revealing the redeem script and its satisfying inputs at redemption time.
+  - It enables compact, standardised addresses for arbitrarily complex spending policies.
+- ### Mechanisms
+  - Redeem script hashing and locking output
+  - Address encoding (Base58Check, prefix 3)
+  - Two-phase reveal-and-satisfy spending
+  - Backward-compatible soft-fork activation
+  - Composition with multisig redeem scripts
+- ### Applications
+  - Multi-signature custody and escrow
+  - Conditional and time-locked payments
+  - Wrapped SegWit (P2SH-P2WPKH) addresses
+  - Atomic swaps and payment channels
+- ### Relationships
+  - partOf:: [[Bitcoin]]
+  - implements:: [[BIP 16]]
+  - implements:: [[Multi-Signature Wallet]]
+  - uses:: [[Bitcoin Script]]
+  - uses:: [[Script]]
+  - dependsOn:: [[Transaction]]
+  - enables:: [[Smart Contract]]
+  - contrastsWith:: [[Pay-to-Public-Key-Hash]]
+  - contrastsWith:: [[Segregated Witness]]
+  - relatedTo:: [[Address]]
+  - supports:: [[Blockchain]]
+  - requires:: [[Script]]
+  - standardizedBy:: [[BIP 16]]
+- ### Provenance
+  - updated:: 2026-06-15

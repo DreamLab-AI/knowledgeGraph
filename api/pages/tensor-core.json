@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:tensor-core",
+  "title": "Tensor Core",
+  "slug": "tensor-core",
+  "public": true,
+  "classIri": "urn:ngm:class:tensor-core",
+  "domain": "infrastructure",
+  "definition": "A Tensor Core is a specialised hardware execution unit within a GPU that performs small matrix multiply-accumulate operations in a single instruction, optimised for the dense linear algebra at the heart of deep learning. It operates on mixed-precision inputs, accumulating in higher precision while multiplying in reduced precision to maximise throughput. By accelerating matrix multiplication, Tensor Cores deliver large gains in training and inference performance over general-purpose GPU cores.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gpu-architecture",
+      "label": "GPU Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gpu-architecture",
+        "label": "GPU Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    }
+  ]
+}

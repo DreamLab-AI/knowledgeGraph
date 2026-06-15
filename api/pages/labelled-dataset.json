@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:labelled-dataset",
+  "title": "Labelled Dataset",
+  "slug": "labelled-dataset",
+  "public": true,
+  "classIri": "urn:ngm:class:labelled-dataset",
+  "domain": "machine-learning",
+  "definition": "A labelled dataset is a collection of data examples each paired with one or more target annotations that specify the correct output for a learning task. The labels constitute the supervisory signal that allows a model to learn the mapping from inputs to outputs during training. Label quality, coverage and balance strongly determine the performance and fairness of the resulting model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:training-data",
+      "label": "Training Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

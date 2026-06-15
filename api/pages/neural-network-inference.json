@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:neural-network-inference",
+  "title": "Neural Network Inference",
+  "slug": "neural-network-inference",
+  "public": true,
+  "classIri": "urn:ngm:class:neural-network-inference",
+  "domain": "ai",
+  "definition": "Neural network inference is the phase in which a trained neural-network model is applied to new input data to produce predictions, classifications or generations, as distinct from the training phase that learns the model's parameters. It is computationally dominated by forward-pass matrix and tensor operations and is frequently accelerated on GPUs and dedicated hardware. Inference efficiency, measured in latency, throughput and energy, is critical for deploying models in real-time, edge and large-scale serving environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference",
+      "label": "Inference"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

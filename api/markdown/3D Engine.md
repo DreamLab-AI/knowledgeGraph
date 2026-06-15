@@ -125,7 +125,7 @@ public:: true
         "label": "Vulkan"
       },
       {
-        "@id": "urn:ngm:class:opengl",
+        "@id": "urn:ngm:class:open-gl",
         "label": "OpenGL"
       },
       {

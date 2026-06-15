@@ -135,7 +135,7 @@ alias:: ImmersiveTechnology
         "label": "Simultaneous Localization and Mapping"
       },
       {
-        "@id": "urn:ngm:class:webxr",
+        "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       }
     ],
@@ -151,7 +151,7 @@ alias:: ImmersiveTechnology
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
       {
@@ -175,7 +175,7 @@ alias:: ImmersiveTechnology
         "label": "Internet of Things"
       },
       {
-        "@id": "urn:ngm:class:5g-network",
+        "@id": "urn:ngm:class:5-g-network",
         "label": "5G Network"
       }
     ],

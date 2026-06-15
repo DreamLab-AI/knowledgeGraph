@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:dicom",
+  "title": "DICOM",
+  "slug": "dicom",
+  "public": true,
+  "classIri": "urn:ngm:class:dicom",
+  "domain": "artificial-intelligence",
+  "definition": "DICOM (Digital Imaging and Communications in Medicine) is the international standard for storing, transmitting, and managing medical images and associated metadata. It defines both a file format that binds pixel data to rich patient, study, and acquisition attributes, and network services for exchanging images between modalities, archives, and viewing workstations. DICOM enables interoperability across radiology, cardiology, and other imaging-intensive specialities, and serves as the canonical data substrate for medical imaging artificial intelligence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interoperability-standard",
+      "label": "Interoperability Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "health-metaverse-application",
+      "label": "Health Metaverse Application"
+    },
+    {
+      "slug": "radiology-ai",
+      "label": "Radiology AI"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:depth-first-search",
+  "title": "Depth-First Search",
+  "slug": "depth-first-search",
+  "public": true,
+  "classIri": "urn:ngm:class:depth-first-search",
+  "domain": "artificial-intelligence",
+  "definition": "Depth-first search (DFS) is a graph and tree traversal algorithm that explores as far as possible along each branch before backtracking, following one path to its end before considering alternatives. It is naturally expressed through recursion or an explicit last-in-first-out stack and runs in time linear in the number of vertices and edges. DFS underpins many algorithms including topological sorting, cycle detection, finding connected components and solving maze and constraint problems through systematic backtracking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graph-algorithms",
+      "label": "Graph Algorithms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:breadth-first-search",
+        "label": "Breadth-First Search"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:search-algorithms",
+        "label": "Search Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

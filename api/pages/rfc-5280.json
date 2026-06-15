@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:rfc-5280",
+  "title": "RFC 5280",
+  "slug": "rfc-5280",
+  "public": true,
+  "classIri": "urn:ngm:class:rfc-5280",
+  "domain": "security",
+  "definition": "RFC 5280 is the IETF standard that defines the Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) profile. It specifies the structure, encoding, and processing rules for X.509 v3 certificates and v2 CRLs, including the required and optional extensions and the certification path validation algorithm. The document is the normative reference that governs how PKI implementations issue, encode, and validate certificates on the public Internet.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "id": "urn:ngm:class:certificate-revocation-list",
+        "label": "Certificate Revocation List"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ocsp",
+        "label": "OCSP"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:revocation-registry",
+        "label": "Revocation Registry"
+      },
+      {
+        "id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    }
+  ]
+}

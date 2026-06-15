@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:clustering",
+  "title": "Clustering",
+  "slug": "clustering",
+  "public": true,
+  "classIri": "urn:ngm:class:clustering",
+  "domain": "machine-learning",
+  "definition": "Clustering is an unsupervised machine learning task that partitions a set of objects into groups, or clusters, such that objects within a group are more similar to one another than to those in other groups, according to a chosen distance or similarity metric. Unlike classification it operates without predefined labels, discovering latent structure directly from the data. Algorithms differ in their cluster model, ranging from centroid-based and density-based to hierarchical and probabilistic approaches. Clustering is widely used for exploratory analysis, segmentation, anomaly detection, and as a preprocessing step for downstream learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:unsupervised-learning",
+      "label": "Unsupervised Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:distance-metric",
+        "label": "Distance Metric"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-clustering",
+        "label": "Hierarchical Clustering"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distance-metric",
+        "label": "Distance Metric"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-mixture-model",
+        "label": "Gaussian Mixture Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "unsupervised-learning",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

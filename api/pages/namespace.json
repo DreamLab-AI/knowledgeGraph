@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:namespace",
+  "title": "Namespace",
+  "slug": "namespace",
+  "public": true,
+  "classIri": "urn:ngm:class:namespace",
+  "domain": "data",
+  "definition": "A namespace is a named scope that groups a set of identifiers so that names can be reused without collision across different contexts. By qualifying each name with its containing scope, a namespace lets the same local label denote distinct entities in different parts of a system. The concept appears across programming languages, XML and RDF vocabularies, file systems, DNS, and container orchestration as a fundamental mechanism for organising and disambiguating names.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data",
+      "label": "Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:uri",
+        "label": "URI"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:database",
+        "label": "Database"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:uri",
+        "label": "URI"
+      },
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      },
+      {
+        "id": "urn:ngm:class:database",
+        "label": "Database"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identifier-layer",
+      "label": "Identifier Layer"
+    }
+  ]
+}

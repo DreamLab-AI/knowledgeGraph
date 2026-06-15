@@ -74,7 +74,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:data-broker",
+        "@id": "urn:ngm:class:data-brokers",
         "label": "Data Broker"
       },
       {
@@ -148,7 +148,7 @@ public:: true
         "label": "Smart City"
       },
       {
-        "@id": "urn:ngm:class:iot",
+        "@id": "urn:ngm:class:io-t",
         "label": "IoT"
       }
     ]

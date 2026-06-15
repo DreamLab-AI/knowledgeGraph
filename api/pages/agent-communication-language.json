@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:agent-communication-language",
+  "title": "Agent Communication Language",
+  "slug": "agent-communication-language",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-communication-language",
+  "domain": "infrastructure",
+  "definition": "An Agent Communication Language (ACL) is a formal, standardised message format and semantics that lets autonomous software agents exchange information, requests and commitments independently of their internal implementation. ACLs define performatives (speech acts such as inform, request and propose), a content language and an ontology reference so that interacting agents share a common interpretation of messages. Established examples include FIPA-ACL and KQML.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multi-agent-system",
+      "label": "Multi-Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:fipa",
+        "label": "FIPA"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fipa",
+        "label": "FIPA"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

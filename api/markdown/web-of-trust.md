@@ -1,0 +1,33 @@
+- ### Definition
+  - A decentralised approach to [[Trust Establishment]] built from peer key endorsements.
+  - Participants sign each other's keys with a [[Digital Signature]] to vouch for authenticity.
+  - Contrasts with the hierarchical [[Certificate Authority]] model.
+- ### Overview
+  - Trust accumulates transitively as more trusted parties attest to a key.
+  - There is no single point of failure or central authority to compromise.
+  - PGP popularised the model for email and file signing.
+  - Concepts re-emerge in decentralised identity and verifiable credentials.
+- ### Mechanisms
+  - Each user maintains a keyring of others' public keys.
+  - Signing another's key publishes an attestation of belief in its ownership.
+  - Trust levels and chain length determine computed confidence.
+  - Key servers and introducers help propagate signatures.
+- ### Applications
+  - Authenticating PGP/GPG public keys for secure messaging.
+  - Bootstrapping trust in decentralised identity systems.
+  - Reputation and endorsement networks.
+- ### Relationships
+  - implements:: [[Digital Signature]]
+  - requires:: [[Cryptographic Key]]
+  - requires:: [[Key Management]]
+  - uses:: [[Trust Anchor]]
+  - enables:: [[Identity Verification]]
+  - supports:: [[Decentralised Identity]]
+  - contrastsWith:: [[Certificate Authority]]
+  - bridgesTo:: [[Verifiable Credentials]]
+  - bridgesTo:: [[Decentralised Identifiers]]
+  - relatedTo:: [[Reputation System]]
+  - relatedTo:: [[Trust Establishment]]
+  - relatedTo:: [[Security]]
+- ### Provenance
+  - updated:: 2026-06-15

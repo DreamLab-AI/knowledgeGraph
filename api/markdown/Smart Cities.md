@@ -48,7 +48,7 @@ public:: true
         "label": "Edge AI for Smart Cities"
       },
       {
-        "@id": "urn:ngm:class:5g-networks",
+        "@id": "urn:ngm:class:5-g-network",
         "label": "5G Networks"
       },
       {

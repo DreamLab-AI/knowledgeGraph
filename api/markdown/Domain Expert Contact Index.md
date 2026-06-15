@@ -78,7 +78,7 @@ elevatedFrom:: [[PEOPLE]]
         "label": "Knowledge Graph"
       },
       {
-        "@id": "urn:ngm:class:taxonomy",
+        "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
         "label": "Taxonomy"
       }
     ],

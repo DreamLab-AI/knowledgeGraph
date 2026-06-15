@@ -96,7 +96,7 @@ public:: true
         "label": "Positional Encoding"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],
@@ -174,7 +174,7 @@ public:: true
         "label": "BERT"
       },
       {
-        "@id": "urn:ngm:class:roberta",
+        "@id": "urn:ngm:class:ro-berta",
         "label": "RoBERTa"
       },
       {

@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:stress-testing",
+  "title": "Stress Testing",
+  "slug": "stress-testing",
+  "public": true,
+  "classIri": "urn:ngm:class:stress-testing",
+  "domain": "finance",
+  "definition": "Stress testing is a risk-management technique that evaluates how an institution, portfolio or system would perform under severe but plausible adverse conditions. It applies hypothetical or historical shock scenarios to estimate losses, capital depletion and liquidity strain beyond normal expectations. Supervisory stress tests are a central tool of prudential regulation for assessing resilience and informing capital requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scenario-analysis",
+        "label": "Scenario Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:scenario-analysis",
+        "label": "Scenario Analysis"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      },
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

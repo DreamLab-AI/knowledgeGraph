@@ -166,7 +166,7 @@ public:: true
         "label": "LoRA Fine-Tuning"
       },
       {
-        "@id": "urn:ngm:class:controlnet",
+        "@id": "urn:ngm:class:control-net",
         "label": "ControlNet"
       }
     ],

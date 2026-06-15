@@ -1,0 +1,37 @@
+- ### Definition
+  - [[Knowledge Graph Embedding]] maps the entities and relations of a [[Knowledge Graph]] into low-dimensional [[Vector Embedding|vectors]] that preserve structure, a form of [[Representation Learning]] enabling [[Link Prediction]] and [[Semantic Search]].
+  - It bridges symbolic [[Knowledge Representation]] with vector-based machine learning.
+- ### Overview
+  - Each entity and relation is assigned a vector, and a scoring function measures the plausibility of a candidate triple (head, relation, tail).
+  - Translational models treat relations as translations in vector space, while bilinear and neural models capture richer interactions.
+  - Graph neural networks aggregate neighbourhood structure to produce context-aware entity embeddings.
+  - The learned space supports algebraic inference and approximate nearest-neighbour retrieval over knowledge.
+- ### Mechanisms
+  - A scoring function ranks true triples above corrupted ones during training.
+  - Negative sampling supplies contrastive examples for optimisation.
+  - Regularisation and normalisation constrain the geometry of the space.
+  - Inductive variants generalise to entities unseen during training.
+- ### Applications
+  - Link prediction and knowledge-base completion.
+  - Entity resolution and deduplication.
+  - Semantic search and recommendation over linked data.
+  - Feature provision for downstream reasoning and relation extraction.
+- ### Relationships
+  - enables:: [[Link Prediction]]
+  - enables:: [[Entity Resolution]]
+  - enables:: [[Semantic Search]]
+  - uses:: [[Vector Embedding]]
+  - uses:: [[Graph Neural Network]]
+  - uses:: [[Embedding]]
+  - requires:: [[Knowledge Graph]]
+  - dependsOn:: [[Knowledge Graph]]
+  - dependsOn:: [[Representation Learning]]
+  - implements:: [[Graph Embedding]]
+  - supports:: [[Reasoning]]
+  - supports:: [[Relation Extraction]]
+  - relatedTo:: [[Knowledge Representation]]
+  - relatedTo:: [[Graph Neural Network]]
+  - relatedTo:: [[Semantic Search]]
+  - bridgesTo:: [[Knowledge Graph]]
+- ### Provenance
+  - updated:: 2026-06-15

@@ -97,7 +97,7 @@ alias:: Bulletproofs+
         "label": "zk-STARK"
       },
       {
-        "@id": "urn:ngm:class:groth16",
+        "@id": "urn:ngm:class:groth-16",
         "label": "Groth16"
       }
     ],

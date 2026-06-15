@@ -40,7 +40,7 @@ public:: true
         "label": "Feature Store"
       },
       {
-        "@id": "urn:ngm:class:experiment-tracking",
+        "@id": "urn:ngm:class:empirical-experimental-design-tracking",
         "label": "Experiment Tracking"
       },
       {

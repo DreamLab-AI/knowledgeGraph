@@ -70,7 +70,7 @@ public:: true
         "label": "Public Goods Funding"
       },
       {
-        "@id": "urn:ngm:class:protocol-upgrade",
+        "@id": "urn:ngm:class:protocol-upgrades",
         "label": "Protocol Upgrade"
       }
     ],

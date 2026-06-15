@@ -191,7 +191,7 @@ alias:: BC-0067-hyperledger-fabric, BC-0426-hyperledger-fabric, HyperledgerFabri
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:public-blockchain",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
         "label": "Public Blockchain"
       },
       {

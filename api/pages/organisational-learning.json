@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:organisational-learning",
+  "title": "Organisational Learning",
+  "slug": "organisational-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:organisational-learning",
+  "domain": "distributed-collaboration",
+  "definition": "Organisational learning is the process by which a group, team or enterprise creates, retains and transfers knowledge to improve its collective performance over time. It encompasses how experience is encoded into routines, how lessons from success and failure are shared, and how the organisation adapts its mental models and practices in response. As a discipline it bridges knowledge management, continuous improvement and organisational culture.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-management",
+      "label": "Knowledge Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:continuous-improvement",
+        "label": "Continuous Improvement"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:continuous-improvement",
+        "label": "Continuous Improvement"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:incident-reporting",
+        "label": "Incident Reporting"
+      },
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    }
+  ]
+}

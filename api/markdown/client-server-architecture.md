@@ -1,0 +1,35 @@
+- ### Definition
+  - Client-server architecture is a distributed computing model in which client processes request services or resources and dedicated server processes provide them, typically over a network. The model centralises shared resources, data and logic on servers while distributing presentation and interaction to many clients. It is the foundational pattern for the web, networked applications and most online services, and it contrasts with peer-to-peer architectures where every node is both provider and consumer.
+  - Related core concepts: [[Distributed Architecture]] [[API]] [[HTTP]] [[REST]] [[Scalability]]
+- ### Overview
+  - In the client-server model, responsibilities are partitioned: servers own authoritative state and enforce shared logic, while clients drive interaction and presentation. Communication follows a request-response discipline over defined protocols and interfaces. The model scales by replicating and load-balancing servers, and it underpins layered (multi-tier) designs that separate presentation, application and data concerns. It remains the dominant pattern even as microservices and edge deployments refine how the server side is structured.
+- ### Key aspects
+  - Clear separation of client (consumer) and server (provider) roles.
+  - Request-response communication over network protocols.
+  - Centralised authoritative state and shared business logic on servers.
+  - Well-defined interfaces and APIs decouple clients from servers.
+  - Horizontal scaling via replication and load balancing of servers.
+- ### Applications
+  - Web applications served over HTTP to browser and mobile clients.
+  - Database and file servers shared across an organisation.
+  - Email, messaging and API backends for online services.
+  - Multi-tier enterprise systems separating presentation and data.
+- ### Relationships
+  - subClassOf:: [[Distributed Architecture]]
+  - partOf:: [[Distributed Architecture]]
+  - hasPart:: [[API]]
+  - requires:: [[Network Protocol]]
+  - requires:: [[HTTP]]
+  - implements:: [[REST]]
+  - uses:: [[HTTP]]
+  - uses:: [[API]]
+  - enables:: [[Scalability]]
+  - supports:: [[Load Balancing]]
+  - contrastsWith:: [[Microservices]]
+  - relatedTo:: [[Stateless Protocol]]
+  - relatedTo:: [[Distributed Systems]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

@@ -64,7 +64,7 @@ public:: true
         "label": "MQTT"
       },
       {
-        "@id": "urn:ngm:class:coap",
+        "@id": "urn:ngm:class:co-ap",
         "label": "CoAP"
       },
       {

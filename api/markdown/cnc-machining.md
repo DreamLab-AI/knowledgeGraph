@@ -1,0 +1,36 @@
+- ### Definition
+  - CNC (computer numerical control) machining is a subtractive manufacturing process in which programmed instructions drive automated cutting tools to remove material from a workpiece and produce precise parts. Toolpaths derived from a digital model control multi-axis motion of mills, lathes and routers to achieve tight tolerances and repeatable results. It is a cornerstone of precision manufacturing across metals, plastics and composites.
+  - Related concepts: [[Precision Manufacturing]] [[Computer-Aided Design]] [[Motion Control]] [[Additive Manufacturing]] [[Manufacturing Automation]]
+- ### Overview
+  - CNC machining converts a digital design into a physical part by directing automated tools along precisely computed paths. A CAD model is processed by CAM software into machine code that coordinates spindle speed, feed rate and multi-axis motion. Because the process is programmable and deterministic, it delivers high repeatability and tight tolerances, making it indispensable for prototyping and production in aerospace, automotive, medical and tooling industries.
+- ### Key aspects
+  - Subtractive removal of material guided by computed toolpaths
+  - Multi-axis motion control for complex geometries
+  - CAD-to-CAM workflow generating machine instructions
+  - Tolerance control, fixturing and tool management
+  - Closed-loop feedback for accuracy and surface finish
+- ### Applications
+  - Aerospace and automotive precision component production
+  - Medical device and implant manufacturing
+  - Rapid prototyping and tooling fabrication
+  - Mould and die making
+  - Custom and short-run production of metal and plastic parts
+- ### Relationships
+  - subClassOf:: [[Precision Manufacturing]]
+  - partOf:: [[Precision Manufacturing]]
+  - hasPart:: [[Motion Control]]
+  - enables:: [[Manufacturing Automation]]
+  - enables:: [[Digital Fabrication]]
+  - enables:: [[Prototyping]]
+  - uses:: [[Computer-Aided Design]]
+  - uses:: [[CAD Software]]
+  - uses:: [[Actuator]]
+  - contrastsWith:: [[Additive Manufacturing]]
+  - dependsOn:: [[Automation]]
+  - supports:: [[Industrial Robotics]]
+  - supports:: [[Robotics]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

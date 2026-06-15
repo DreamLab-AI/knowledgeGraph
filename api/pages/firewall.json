@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:firewall",
+  "title": "Firewall",
+  "slug": "firewall",
+  "public": true,
+  "classIri": "urn:ngm:class:firewall",
+  "domain": "security",
+  "definition": "A firewall is a network security control that monitors and filters incoming and outgoing traffic according to a defined rule set, allowing or blocking packets and connections to enforce a security boundary. Firewalls range from stateless packet filters to stateful inspection devices and next-generation appliances that perform deep packet inspection and application awareness. They are a foundational component for segmenting trusted and untrusted networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-security",
+      "label": "Network Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:network-segmentation",
+        "label": "Network Segmentation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:network-segmentation",
+        "label": "Network Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:web-application-firewall",
+        "label": "Web Application Firewall"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
+      },
+      {
+        "id": "urn:ngm:class:vpn",
+        "label": "VPN"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:vpn",
+        "label": "VPN"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "networkcomponent",
+      "label": "Networkcomponent"
+    }
+  ]
+}

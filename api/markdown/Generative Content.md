@@ -155,13 +155,13 @@ public:: true
         "label": "Intellectual Property"
       },
       {
-        "@id": "urn:ngm:class:deepfake",
+        "@id": "urn:ngm:class:deepfakes",
         "label": "Deepfake"
       }
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:c2pa-standard",
+        "@id": "urn:ngm:class:c2-pa-standard",
         "label": "C2PA Standard"
       },
       {

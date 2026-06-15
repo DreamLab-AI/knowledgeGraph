@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:client-server-architecture",
+  "title": "Client-Server Architecture",
+  "slug": "client-server-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:client-server-architecture",
+  "domain": "distributed-systems",
+  "definition": "Client-server architecture is a distributed computing model in which client processes request services or resources and dedicated server processes provide them, typically over a network. The model centralises shared resources, data and logic on servers while distributing presentation and interaction to many clients. It is the foundational pattern for the web, networked applications and most online services, and it contrasts with peer-to-peer architectures where every node is both provider and consumer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-architecture",
+      "label": "Distributed Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stateless-protocol",
+        "label": "Stateless Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    }
+  ]
+}

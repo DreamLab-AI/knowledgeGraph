@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:score-based-generative-model",
+  "title": "Score-Based Generative Model",
+  "slug": "score-based-generative-model",
+  "public": true,
+  "classIri": "urn:ngm:class:score-based-generative-model",
+  "domain": "artificial-intelligence",
+  "definition": "A score-based generative model is a class of generative model that learns the gradient of the log probability density of data \u2014 the score function \u2014 and samples by reversing a noising process using that learned score. Training perturbs data with noise at multiple scales and fits a neural network to estimate the score at each scale, after which Langevin-style or reverse stochastic-differential-equation dynamics transform noise into samples. The framework provides a unifying continuous-time view that subsumes denoising diffusion models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:diffusion-policy",
+        "label": "Diffusion Policy"
+      },
+      {
+        "id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

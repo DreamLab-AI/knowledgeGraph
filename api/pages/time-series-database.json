@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:time-series-database",
+  "title": "Time-Series Database",
+  "slug": "time-series-database",
+  "public": true,
+  "classIri": "urn:ngm:class:time-series-database",
+  "domain": "infrastructure",
+  "definition": "A time-series database (TSDB) is a database system optimised for storing, querying, and analysing data points indexed by time. It is designed for workloads dominated by high-volume, append-only writes of timestamped measurements and by queries that aggregate over time ranges. TSDBs employ time-aware partitioning, columnar layouts, and specialised compression to handle the scale and access patterns of metrics, events, and sensor readings efficiently.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:database-management-system",
+      "label": "Database Management System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:retention-policy",
+        "label": "Retention Policy"
+      },
+      {
+        "id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:time-series-data",
+        "label": "Time-Series Data"
+      },
+      {
+        "id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:database",
+        "label": "Database"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:nosql-database",
+        "label": "NoSQL Database"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:metrics",
+        "label": "Metrics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

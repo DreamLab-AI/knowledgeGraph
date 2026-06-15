@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:a-b-testing",
+  "title": "A/B Testing",
+  "slug": "a-b-testing",
+  "public": true,
+  "classIri": "urn:ngm:class:a-b-testing",
+  "domain": "data",
+  "definition": "A/B testing is a controlled experimentation method that compares two or more variants by randomly assigning subjects to each and measuring a defined outcome metric. By holding all factors constant except the variant under test, it isolates causal effects and supports data-driven decisions with statistical rigour. It is widely used to optimise digital products, content and user experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-analytics",
+      "label": "Data Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-visualization",
+        "label": "Data Visualization"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:metrics",
+        "label": "Metrics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      },
+      {
+        "id": "urn:ngm:class:optimization",
+        "label": "Optimization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:dashboard",
+        "label": "Dashboard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    }
+  ]
+}

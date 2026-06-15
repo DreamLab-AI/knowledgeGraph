@@ -1,0 +1,42 @@
+- ### Definition
+  - **Computer-Supported Cooperative Work** (CSCW) is the research field studying how people collaborate through computer systems and how to design technology that supports them.
+  - It treats [[Distributed Collaboration]] as a socio-technical phenomenon, attending to coordination and communication as much as to software.
+  - CSCW bridges [[Human-Computer Interaction]] with the social sciences and distributed-systems engineering.
+  - Its findings inform the design of groupware, [[Shared Workspace]] tools and collaborative platforms.
+- ### Overview
+  - Emerging in the 1980s, CSCW grew from the recognition that real work is cooperative and that technology must fit the social practices around it.
+  - A central organising idea is the time–space matrix: collaboration may be same-time or different-time, same-place or different-place, each posing distinct design problems.
+  - Researchers study how groups maintain [[Awareness]] of one another, negotiate shared understanding, and coordinate interdependent tasks.
+  - The field repeatedly shows that naive automation of group work can fail because it ignores tacit social conventions.
+- ### Key aspects
+  - **Awareness** — keeping participants informed of relevant activity is a recurring CSCW design concern, drawing on [[Awareness]] and [[Presence]].
+  - **Coordination** — managing interdependencies between tasks and people so work flows without conflict.
+  - **Articulation work** — the often-invisible effort of organising and aligning cooperative activity.
+  - **Common ground** — building shared context so that communication is efficient and unambiguous.
+  - **Socio-technical fit** — ensuring tools respect existing social structures rather than imposing rigid workflows.
+- ### Mechanisms
+  - Empirical workplace studies and ethnography reveal how cooperative work actually happens.
+  - Design frameworks translate those insights into requirements for [[Shared Workspace]] and groupware systems.
+  - Concurrency research (e.g. [[Operational Transformation]] and [[CRDT]]) addresses the engineering of simultaneous editing.
+  - Evaluation methods assess whether deployed systems genuinely improve group outcomes.
+- ### Applications
+  - Designing collaborative editors, conferencing systems and project tools.
+  - Informing [[Remote Work]] and [[Remote Collaboration]] practice and platforms.
+  - Shaping awareness features in distributed teams and immersive collaboration.
+  - Guiding the introduction of new technology into organisations.
+- ### Relationships
+  - bridgesTo:: [[Human-Computer Interaction]]
+  - hasPart:: [[Awareness]]
+  - hasPart:: [[Presence]]
+  - enables:: [[Shared Workspace]]
+  - enables:: [[Remote Collaboration]]
+  - supports:: [[Collaboration]]
+  - supports:: [[Remote Work]]
+  - uses:: [[Synchronisation]]
+  - informs:: [[Operational Transformation]]
+  - relatedTo:: [[Distributed Collaboration]]
+  - relatedTo:: [[CRDT]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

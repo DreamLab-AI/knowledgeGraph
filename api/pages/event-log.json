@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:event-log",
+  "title": "Event Log",
+  "slug": "event-log",
+  "public": true,
+  "classIri": "urn:ngm:class:event-log",
+  "domain": "blockchain",
+  "definition": "An Event Log is an append-only record of discrete events emitted by a system, used to capture state changes for auditing, indexing and downstream processing. On blockchains, smart contracts emit events that are written to transaction receipts and stored in the log structure of each block, where they can be efficiently queried by off-chain services. Event logs provide an immutable, ordered history that decentralised applications use to reconstruct state and trigger reactions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:append-only-log",
+      "label": "Append-Only Log"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:event-emission",
+        "label": "Event Emission"
+      },
+      {
+        "id": "urn:ngm:class:state-change",
+        "label": "State Change"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:event-emission",
+        "label": "Event Emission"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-application",
+        "label": "Decentralised Application"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-data",
+        "label": "Blockchain Data"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:append-only-log",
+        "label": "Append-Only Log"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:state-change",
+        "label": "State Change"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-data",
+        "label": "Blockchain Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-twin-synchronisation-bus",
+      "label": "Digital Twin Synchronisation Bus"
+    }
+  ]
+}

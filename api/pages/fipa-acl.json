@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:fipa-acl",
+  "title": "FIPA ACL",
+  "slug": "fipa-acl",
+  "public": true,
+  "classIri": "urn:ngm:class:fipa-acl",
+  "domain": "artificial-intelligence",
+  "definition": "FIPA ACL is the Agent Communication Language standardised by the Foundation for Intelligent Physical Agents, defining a message format and a library of communicative acts that autonomous software agents use to exchange information and coordinate behaviour. Each message carries a performative such as inform, request, or propose, drawn from speech-act theory, together with parameters identifying sender, receiver, content language, and ontology. It provides the interoperability layer that lets heterogeneous agents in a multi-agent system understand one another's intentions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-communication-language",
+      "label": "Agent Communication Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    }
+  ]
+}

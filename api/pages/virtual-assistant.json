@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:virtual-assistant",
+  "title": "Virtual Assistant",
+  "slug": "virtual-assistant",
+  "public": true,
+  "classIri": "urn:ngm:class:virtual-assistant",
+  "domain": "artificial-intelligence",
+  "definition": "A virtual assistant is a software agent that interprets natural-language requests and performs tasks or retrieves information on behalf of a user through conversational interaction. It combines speech recognition or text understanding, intent recognition, dialogue management and task execution to mediate between the user and underlying services, devices or knowledge sources. Virtual assistants range from voice-driven smart-speaker agents to text-based assistants embedded in applications, increasingly powered by large language models for open-ended reasoning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:task-automation",
+        "label": "Task Automation"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:speech-synthesis",
+        "label": "SpeechSynthesis"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      },
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    }
+  ]
+}

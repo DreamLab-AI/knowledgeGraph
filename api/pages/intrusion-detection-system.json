@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:intrusion-detection-system",
+  "title": "Intrusion Detection System",
+  "slug": "intrusion-detection-system",
+  "public": true,
+  "classIri": "urn:ngm:class:intrusion-detection-system",
+  "domain": "security",
+  "definition": "An intrusion detection system (IDS) monitors network traffic or host activity to identify malicious behaviour, policy violations, and signs of compromise, raising alerts for investigation. It detects threats using signature matching against known attack patterns, anomaly detection against established baselines, or a hybrid of both. An IDS is a detective control that complements preventive measures; when it can also block traffic it becomes an intrusion prevention system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:threat-detection",
+      "label": "Threat Detection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    }
+  ]
+}

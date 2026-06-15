@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:opencl",
+  "title": "OpenCL",
+  "slug": "opencl",
+  "public": true,
+  "classIri": "urn:ngm:class:opencl",
+  "domain": "infrastructure",
+  "definition": "OpenCL (Open Computing Language) is an open, royalty-free standard for writing programs that execute across heterogeneous platforms including CPUs, GPUs, and other accelerators. It defines a C-based kernel language and host API for expressing data-parallel and task-parallel computation portably across vendors. OpenCL underpins general-purpose GPU computing where cross-vendor portability is valued over the deepest single-vendor optimisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gpu-computing",
+      "label": "GPU Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:portability",
+        "label": "Portability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spir-v",
+        "label": "SPIR-V"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:spir-v",
+        "label": "SPIR-V"
+      },
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

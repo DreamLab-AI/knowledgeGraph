@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:liquid-staking",
+  "title": "Liquid Staking",
+  "slug": "liquid-staking",
+  "public": true,
+  "classIri": "urn:ngm:class:liquid-staking",
+  "domain": "blockchain",
+  "definition": "Liquid staking is a mechanism that allows holders of proof-of-stake assets to stake their tokens while receiving a transferable derivative token representing the staked position and its accruing rewards. This derivative can be traded, lent or used as collateral in decentralised finance, unlocking liquidity that traditional staking locks up. It thereby lets participants earn staking rewards without sacrificing the capital efficiency of liquid assets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:staking",
+      "label": "Staking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:yield-generation",
+        "label": "Yield Generation"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:defi-protocol",
+        "label": "DeFi Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lido",
+        "label": "Lido"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability"
+    }
+  ]
+}

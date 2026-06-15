@@ -129,7 +129,7 @@ public:: true
         "label": "Server-Sent Events"
       },
       {
-        "@id": "urn:ngm:class:graphql",
+        "@id": "urn:ngm:class:graph-ql",
         "label": "GraphQL"
       }
     ],
@@ -139,7 +139,7 @@ public:: true
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       }
     ],
@@ -149,7 +149,7 @@ public:: true
         "label": "WebSocket"
       },
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       }
     ],
@@ -157,10 +157,6 @@ public:: true
       {
         "@id": "urn:ngm:class:communication-protocols",
         "label": "Communication Protocols"
-      },
-      {
-        "@id": "urn:ngm:class:https",
-        "label": "HTTPS"
       },
       {
         "@id": "urn:ngm:class:http2",

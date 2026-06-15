@@ -148,7 +148,7 @@ public:: true
         "label": "IEEE 802"
       },
       {
-        "@id": "urn:ngm:class:3gpp",
+        "@id": "urn:ngm:class:3-gpp",
         "label": "3GPP"
       }
     ],
@@ -174,7 +174,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:5g-networks",
+        "@id": "urn:ngm:class:5-g-network",
         "label": "5G Networks"
       },
       {

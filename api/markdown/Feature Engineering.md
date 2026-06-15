@@ -92,7 +92,7 @@ alias:: FeatureEngineering
         "label": "Machine Learning Pipeline"
       },
       {
-        "@id": "urn:ngm:class:automl",
+        "@id": "urn:ngm:class:auto-ml",
         "label": "AutoML"
       }
     ],

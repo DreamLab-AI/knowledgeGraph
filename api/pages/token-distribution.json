@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:token-distribution",
+  "title": "Token Distribution",
+  "slug": "token-distribution",
+  "public": true,
+  "classIri": "urn:ngm:class:token-distribution",
+  "domain": "blockchain",
+  "definition": "Token distribution is the process and schema by which a blockchain project allocates its native tokens across stakeholders such as founders, investors, the community, and a treasury. It specifies how many tokens each group receives, when they unlock through vesting, and through which mechanisms they are released, all of which shape decentralisation, incentive alignment, and market liquidity. A distribution design is a central lever of a project's tokenomics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:tokenomics",
+      "label": "Tokenomics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vesting-schedule",
+        "label": "Vesting Schedule"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:vesting-schedule",
+        "label": "Vesting Schedule"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ico",
+        "label": "ICO"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

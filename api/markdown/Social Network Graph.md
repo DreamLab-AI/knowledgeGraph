@@ -109,7 +109,7 @@ public:: true
         "label": "Nostr Protocol"
       },
       {
-        "@id": "urn:ngm:class:activitypub",
+        "@id": "urn:ngm:class:activity-pub",
         "label": "ActivityPub"
       },
       {

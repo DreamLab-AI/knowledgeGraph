@@ -378,7 +378,7 @@ public:: true
         "label": "Python"
       },
       {
-        "@id": "urn:ngm:class:react",
+        "@id": "urn:ngm:class:re-act",
         "label": "React"
       },
       {

@@ -1,0 +1,42 @@
+- ### Definition
+- A blockchain node is a computer running protocol software that maintains a copy of the ledger, validates transactions and blocks, and relays them across the [[Peer-to-Peer Network]]. Nodes collectively enforce the [[Consensus Mechanism]] and provide the [[Decentralisation]] that underpins a [[Distributed Ledger]].
+- ### Overview
+- The network is the sum of its nodes. Each node independently verifies that incoming blocks and transactions obey the protocol rules, so no central authority is required to police the system.
+- Full nodes download, validate and store the entire chain, giving them the ability to verify history from genesis without trusting anyone. They form the backbone of the network's integrity.
+- Light clients verify only block headers and selective proofs, trading completeness for low resource requirements suitable for mobile and embedded use.
+- Validator nodes go further, staking or expending resources to propose and attest to new blocks under the consensus protocol.
+- ### Mechanisms
+- Peer discovery and gossip allow nodes to find one another and propagate transactions and blocks across the network.
+- The mempool holds pending, validated transactions awaiting inclusion in a block.
+- Validation applies the protocol rules to each transaction and block, rejecting anything invalid before relaying it.
+- State synchronisation lets a newly joined node catch up to the current ledger state from peers.
+- ### Applications
+- Running infrastructure that serves wallets, explorers and decentralised applications via remote procedure calls.
+- Participating in consensus as a [[Validator]] to earn rewards and secure the chain.
+- Providing independent verification so users need not trust third-party services.
+- Supporting data availability and archival access to historical state.
+- ### Key aspects
+- The number and distribution of independent nodes is a key measure of a network's decentralisation and censorship resistance.
+- Storage, bandwidth and synchronisation costs shape who can practically run a full node.
+- Node software diversity reduces the risk that a single implementation bug halts the network.
+- ### Relationships
+- partOf:: [[Peer-to-Peer Network]]
+- partOf:: [[Blockchain]]
+- hasPart:: [[Mempool]]
+- hasPart:: [[Full Node]]
+- dependsOn:: [[Consensus Mechanism]]
+- dependsOn:: [[Peer-to-Peer Network]]
+- requires:: [[Transaction Validation]]
+- supports:: [[Decentralisation]]
+- supports:: [[Distributed Ledger]]
+- implements:: [[Block Propagation]]
+- uses:: [[State Synchronisation]]
+- enables:: [[Validator]]
+- relatedTo:: [[Full Node]]
+- relatedTo:: [[Light Client]]
+- relatedTo:: [[Consensus]]
+- bridgesTo:: [[Distributed Systems]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

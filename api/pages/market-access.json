@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:market-access",
+  "title": "Market Access",
+  "slug": "market-access",
+  "public": true,
+  "classIri": "urn:ngm:class:market-access",
+  "domain": "robotics",
+  "definition": "Market access is the ability of a product, service or system to be lawfully sold and adopted within a target jurisdiction or sector, conditioned on meeting regulatory, certification and conformity requirements. For robotic and physical-automation systems it depends on demonstrating compliance with safety, electromagnetic and product-directive obligations such as CE marking before placement on a market. Achieving market access is therefore a gateway to commercialisation rather than a purely commercial activity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-approval",
+        "label": "Regulatory Approval"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:regulatory-approval",
+        "label": "Regulatory Approval"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-approval",
+        "label": "Regulatory Approval"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

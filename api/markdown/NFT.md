@@ -74,7 +74,7 @@ alias:: NFTs
         "label": "Creator Economy"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {

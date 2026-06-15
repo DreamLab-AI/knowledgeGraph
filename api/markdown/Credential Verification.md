@@ -114,7 +114,7 @@ public:: true
         "label": "W3C Verifiable Credentials"
       },
       {
-        "@id": "urn:ngm:class:openid4vc",
+        "@id": "urn:ngm:class:open-id4-vc",
         "label": "OpenID4VC"
       },
       {

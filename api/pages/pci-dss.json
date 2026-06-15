@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:pci-dss",
+  "title": "PCI-DSS",
+  "slug": "pci-dss",
+  "public": true,
+  "classIri": "urn:ngm:class:pci-dss",
+  "domain": "finance",
+  "definition": "The Payment Card Industry Data Security Standard (PCI-DSS) is a security standard governing the handling of cardholder data by organisations that store, process, or transmit payment card information. It defines a set of requirements covering network security, encryption, access control, monitoring, and vulnerability management to reduce the risk of card data breaches. Compliance is mandated by the major card brands and verified through self-assessment questionnaires or external audits depending on transaction volume.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compliance",
+      "label": "Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:information-security",
+        "label": "Information Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC AML Compliance"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      },
+      {
+        "id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    }
+  ]
+}

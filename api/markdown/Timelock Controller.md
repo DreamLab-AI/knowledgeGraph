@@ -57,7 +57,7 @@ alias:: TimelockController
         "label": "Multisignature Wallet"
       },
       {
-        "@id": "urn:ngm:class:protocol-upgrade",
+        "@id": "urn:ngm:class:protocol-upgrades",
         "label": "Protocol Upgrade"
       }
     ],

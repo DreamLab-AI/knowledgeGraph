@@ -171,7 +171,7 @@ alias:: DecentralizedStorage
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:web3-infrastructure",
+        "@id": "urn:ngm:class:web-3-infrastructure",
         "label": "Web3 Infrastructure"
       },
       {

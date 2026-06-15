@@ -119,7 +119,7 @@ public:: true
         "label": "Monetary Policy"
       },
       {
-        "@id": "urn:ngm:class:remittance",
+        "@id": "urn:ngm:class:remittances",
         "label": "Remittance"
       },
       {

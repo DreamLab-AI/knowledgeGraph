@@ -155,7 +155,7 @@ public:: true
         "label": "Megatron-LM"
       },
       {
-        "@id": "urn:ngm:class:deepspeed",
+        "@id": "urn:ngm:class:deep-speed",
         "label": "DeepSpeed"
       }
     ]

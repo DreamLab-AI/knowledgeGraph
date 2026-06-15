@@ -76,7 +76,7 @@ public:: true
         "label": "Simultaneous Localisation and Mapping"
       },
       {
-        "@id": "urn:ngm:class:webxr",
+        "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       }
     ],

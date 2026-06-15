@@ -72,7 +72,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:ethercat",
+        "@id": "urn:ngm:class:ether-cat",
         "label": "EtherCAT"
       },
       {

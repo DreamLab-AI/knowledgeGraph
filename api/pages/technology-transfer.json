@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:technology-transfer",
+  "title": "Technology Transfer",
+  "slug": "technology-transfer",
+  "public": true,
+  "classIri": "urn:ngm:class:technology-transfer",
+  "domain": "ai",
+  "definition": "Technology transfer is the process of moving knowledge, skills, methods and inventions from the setting where they are created, such as a university or research laboratory, to organisations that can develop and commercialise them. It encompasses the legal, organisational and economic mechanisms, including licensing, spin-outs and collaborative research, by which research outputs become products, services and capabilities. Effective technology transfer is a central channel through which research and development drives economic and societal impact.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:innovation",
+      "label": "Innovation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      },
+      {
+        "id": "urn:ngm:class:patent",
+        "label": "Patent"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:patent",
+        "label": "Patent"
+      },
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

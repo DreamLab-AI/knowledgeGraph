@@ -76,7 +76,7 @@ public:: true
         "label": "Solid"
       },
       {
-        "@id": "urn:ngm:class:activitypub",
+        "@id": "urn:ngm:class:activity-pub",
         "label": "ActivityPub"
       },
       {
@@ -96,7 +96,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       },
       {

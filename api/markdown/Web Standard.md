@@ -57,7 +57,7 @@ public:: true
         "label": "CSS"
       },
       {
-        "@id": "urn:ngm:class:javascript",
+        "@id": "urn:ngm:class:java-script",
         "label": "JavaScript"
       },
       {
@@ -71,7 +71,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       },
       {
@@ -97,7 +97,7 @@ public:: true
         "label": "Progressive Web App"
       },
       {
-        "@id": "urn:ngm:class:webxr",
+        "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       }
     ],
@@ -143,11 +143,11 @@ public:: true
         "label": "WebGPU"
       },
       {
-        "@id": "urn:ngm:class:webgl",
+        "@id": "urn:ngm:class:web-gl",
         "label": "WebGL"
       },
       {
-        "@id": "urn:ngm:class:webassembly",
+        "@id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       }
     ]

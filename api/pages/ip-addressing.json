@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:ip-addressing",
+  "title": "IP Addressing",
+  "slug": "ip-addressing",
+  "public": true,
+  "classIri": "urn:ngm:class:ip-addressing",
+  "domain": "infrastructure",
+  "definition": "IP addressing is the scheme by which every host and interface on an Internet Protocol network is assigned a numeric identifier used to locate and route datagrams to it. It encompasses the structure of IPv4 and IPv6 address spaces, the partition of addresses into network and host portions via subnet masks and prefixes, and the assignment mechanisms that allocate addresses to devices. Correct addressing is the precondition for routing decisions and end-to-end delivery across interconnected networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:internet-protocol",
+      "label": "Internet Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ipv4",
+        "label": "IPv4"
+      },
+      {
+        "id": "urn:ngm:class:ipv6",
+        "label": "IPv6"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:subnet-mask",
+        "label": "Subnet Mask"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:routing",
+        "label": "Routing"
+      },
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:domain-name-system",
+        "label": "Domain Name System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:routing",
+        "label": "Routing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:domain-name-system",
+        "label": "Domain Name System"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf-rfc",
+        "label": "IETF RFC"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -75,7 +75,7 @@ public:: true
         "label": "WebAssembly"
       },
       {
-        "@id": "urn:ngm:class:typescript",
+        "@id": "urn:ngm:class:type-script",
         "label": "TypeScript"
       }
     ],
@@ -119,7 +119,7 @@ public:: true
         "label": "Python"
       },
       {
-        "@id": "urn:ngm:class:webassembly",
+        "@id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       }
     ],

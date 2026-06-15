@@ -1,0 +1,39 @@
+- ### Definition
+	- A [[Secure Element]] is a tamper-resistant chip that isolates secret keys and cryptographic operations from the host, used in [[Hardware Wallet]]s, payment cards and SIMs.
+	- It is a specialised form of [[Hardware Security Module]] that resists [[Side-Channel Attack]]s and physical extraction.
+	- It anchors [[Cold Storage]] and [[Self-Custody]] by ensuring a [[Private Key]] never leaves the chip in plaintext.
+- ### Overview
+	- A Secure Element combines isolated non-volatile storage, a cryptographic coprocessor and hardened firmware in a single package.
+	- Two principal form factors dominate: embedded SE soldered onto a device board, and removable SE such as smart cards and SIMs.
+	- Certification regimes (Common Criteria EAL5+/EAL6+, EMVCo, FIPS 140) provide assurance about resistance to defined attacker capabilities.
+	- The chip exposes a constrained command interface, so the host can request signatures or authentication results but cannot read the underlying secrets.
+- ### Mechanisms
+	- **Physical isolation**: secrets reside in shielded memory inaccessible to the application processor.
+	- **On-chip cryptography**: signing, key derivation and encryption execute inside the SE so plaintext keys never traverse external buses.
+	- **Tamper response**: active meshes, voltage and clock sensors, and shielding detect and react to invasive and fault-injection attempts.
+	- **Access control**: PIN, lifecycle states and counters gate operations and rate-limit guessing.
+- ### Applications
+	- [[Hardware Wallet]] devices that sign blockchain transactions without exposing keys to internet-connected hosts.
+	- Mobile and contactless payment, where the SE holds tokenised card credentials.
+	- SIM/eSIM identity and network authentication.
+	- Passports and national identity documents using embedded secure chips.
+- ### Relationships
+	- partOf:: [[Hardware Wallet]]
+	- partOf:: [[Trusted Execution Environment]]
+	- hasPart:: [[Private Key]]
+	- hasPart:: [[Firmware]]
+	- requires:: [[Cryptography]]
+	- requires:: [[Key Management]]
+	- enables:: [[Cold Storage]]
+	- enables:: [[Digital Signature]]
+	- enables:: [[Authentication]]
+	- uses:: [[Encryption]]
+	- supports:: [[Self-Custody]]
+	- contrastsWith:: [[Trusted Execution Environment]]
+	- relatedTo:: [[Secure Enclave]]
+	- relatedTo:: [[Trusted Platform Module]]
+	- relatedTo:: [[Side-Channel Attack]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

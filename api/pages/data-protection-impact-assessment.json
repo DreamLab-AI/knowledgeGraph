@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:data-protection-impact-assessment",
+  "title": "Data Protection Impact Assessment",
+  "slug": "data-protection-impact-assessment",
+  "public": true,
+  "classIri": "urn:ngm:class:data-protection-impact-assessment",
+  "domain": "governance",
+  "definition": "A Data Protection Impact Assessment is a structured process for identifying, evaluating and mitigating the risks that a planned data-processing activity poses to the rights and freedoms of individuals. It documents the nature, scope, context and purposes of processing, assesses necessity and proportionality, and records measures that reduce identified risks. Under the General Data Protection Regulation it is mandatory where processing is likely to result in high risk, such as large-scale profiling or use of sensitive data. It is a core accountability instrument linking privacy-by-design to demonstrable compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:risk-analysis",
+        "label": "Risk Analysis"
+      },
+      {
+        "id": "urn:ngm:class:mitigation-measures",
+        "label": "Mitigation Measures"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-mapping",
+        "label": "Data Mapping"
+      },
+      {
+        "id": "urn:ngm:class:legal-basis",
+        "label": "Legal Basis"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-protection-law",
+        "label": "Data Protection Law"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:academy-software-foundation",
+  "title": "Academy Software Foundation",
+  "slug": "academy-software-foundation",
+  "public": true,
+  "classIri": "urn:ngm:class:academy-software-foundation",
+  "domain": "spatial-computing",
+  "definition": "The Academy Software Foundation (ASWF) is a neutral, vendor-independent organisation, hosted under the Linux Foundation and founded with the Academy of Motion Picture Arts and Sciences, that develops and stewards open-source software for the motion picture and broader media industries. It provides shared governance, infrastructure and funding for foundational projects in visual effects, animation and digital content creation, such as OpenColorIO, OpenEXR, OpenVDB, OpenTimelineIO and MaterialX. Its goal is sustainable, interoperable open-source tooling across the production pipeline.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-organization",
+      "label": "Standards Organisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "USD"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    }
+  ]
+}

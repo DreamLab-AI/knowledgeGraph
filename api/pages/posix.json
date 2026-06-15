@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:posix",
+  "title": "POSIX",
+  "slug": "posix",
+  "public": true,
+  "classIri": "urn:ngm:class:posix",
+  "domain": "infrastructure",
+  "definition": "POSIX (Portable Operating System Interface) is a family of IEEE standards that defines the application programming interface, command-line shells, and utility interfaces for maintaining compatibility between operating systems. By specifying system calls, file-system semantics, process control, and shell behaviour, POSIX allows software written against the standard to be ported across conforming Unix-like systems with minimal modification. It is the canonical contract underpinning portable system software.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:portability",
+        "label": "Portability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:file-system",
+        "label": "File System"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:file-system",
+        "label": "File System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:portability",
+        "label": "Portability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:api-standard",
+        "label": "API Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

@@ -60,50 +60,134 @@ alias:: FinancialTechnology
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:digital-payment", "label": "Digital Payment"},
-      {"@id": "urn:ngm:class:open-banking", "label": "Open Banking"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:regulatory-technology", "label": "Regulatory Technology"},
-      {"@id": "urn:ngm:class:robo-advisory", "label": "Robo-Advisory"}
+      {
+        "@id": "urn:ngm:class:digital-payments",
+        "label": "Digital Payment"
+      },
+      {
+        "@id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-technology",
+        "label": "Regulatory Technology"
+      },
+      {
+        "@id": "urn:ngm:class:robo-advisory",
+        "label": "Robo-Advisory"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:application-programming-interface", "label": "Application Programming Interface"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:payment-system", "label": "Payment System"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:central-bank-digital-currency", "label": "Central Bank Digital Currency"},
-      {"@id": "urn:ngm:class:financial-inclusion", "label": "Financial Inclusion"}
+      {
+        "@id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      },
+      {
+        "@id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:cybersecurity", "label": "Cybersecurity"},
-      {"@id": "urn:ngm:class:data-privacy", "label": "Data Privacy"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "@id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:internet-infrastructure", "label": "Internet Infrastructure"},
-      {"@id": "urn:ngm:class:cryptography", "label": "Cryptography"}
+      {
+        "@id": "urn:ngm:class:internet-infrastructure",
+        "label": "Internet Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:financial-services-regulatory-body", "label": "Financial Services Regulatory Body"},
-      {"@id": "urn:ngm:class:iso-20022", "label": "ISO 20022"}
+      {
+        "@id": "urn:ngm:class:financial-services-regulatory-body",
+        "label": "Financial Services Regulatory Body"
+      },
+      {
+        "@id": "urn:ngm:class:iso-20022",
+        "label": "ISO 20022"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:traditional-banking", "label": "Traditional Banking"}
+      {
+        "@id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"},
-      {"@id": "urn:ngm:class:supply-chain-finance", "label": "Supply Chain Finance"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-finance",
+        "label": "Supply Chain Finance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:neobank", "label": "Neobank"},
-      {"@id": "urn:ngm:class:insurtech", "label": "InsurTech"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:neobank",
+        "label": "Neobank"
+      },
+      {
+        "@id": "urn:ngm:class:insurtech",
+        "label": "InsurTech"
+      }
     ]
   },
   "quality": 0.74,

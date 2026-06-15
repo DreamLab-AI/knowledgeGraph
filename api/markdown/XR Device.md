@@ -62,57 +62,141 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:display-panel", "label": "Display Panel"},
-      {"@id": "urn:ngm:class:inertial-measurement-unit", "label": "Inertial Measurement Unit"}
+      {
+        "@id": "urn:ngm:class:display-panel",
+        "label": "Display Panel"
+      },
+      {
+        "@id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:six-degrees-of-freedom", "label": "Six Degrees of Freedom"},
-      {"@id": "urn:ngm:class:wireless-connectivity", "label": "Wireless Connectivity"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:six-degrees-of-freedom",
+        "label": "Six Degrees of Freedom"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-experience", "label": "Immersive Experience"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:spatial-presence", "label": "Spatial Presence"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+      {
+        "@id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-presence",
+        "label": "Spatial Presence"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:motion-tracking", "label": "Motion Tracking"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:enterprise-training", "label": "Enterprise Training"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-training",
+        "label": "Enterprise Training"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"},
-      {"@id": "urn:ngm:class:webxr", "label": "WebXR"}
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:flat-screen-display", "label": "Flat Screen Display"}
+      {
+        "@id": "urn:ngm:class:flat-screen-display",
+        "label": "Flat Screen Display"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:wearable-computing", "label": "Wearable Computing"}
+      {
+        "@id": "urn:ngm:class:wearable-computing",
+        "label": "Wearable Computing"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:xr-headset", "label": "XR Headset"},
-    {"@id": "urn:ngm:class:extended-reality-device", "label": "Extended Reality Device"}
+    {
+      "@id": "urn:ngm:class:xr-headset",
+      "label": "XR Headset"
+    },
+    {
+      "@id": "urn:ngm:class:extended-reality-device",
+      "label": "Extended Reality Device"
+    }
   ],
   "provenance": {
     "attributedTo": "did:nostr:jjohare",

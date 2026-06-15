@@ -127,7 +127,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:activitypub",
+        "@id": "urn:ngm:class:activity-pub",
         "label": "ActivityPub"
       },
       {

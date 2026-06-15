@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:fast-fourier-transform",
+  "title": "Fast Fourier Transform",
+  "slug": "fast-fourier-transform",
+  "public": true,
+  "classIri": "urn:ngm:class:fast-fourier-transform",
+  "domain": "ai",
+  "definition": "The Fast Fourier Transform (FFT) is a family of efficient algorithms for computing the discrete Fourier transform and its inverse, reducing the cost from quadratic to log-linear time in the number of samples. By exploiting symmetry and recursive divide-and-conquer factorisation, such as the Cooley-Tukey scheme, the FFT makes spectral analysis of large signals computationally practical. It is a foundational primitive in digital signal processing, communications, numerical methods and many machine learning and scientific computing workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

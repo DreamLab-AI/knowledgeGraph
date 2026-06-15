@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:ietf-rfc",
+  "title": "IETF RFC",
+  "slug": "ietf-rfc",
+  "public": true,
+  "classIri": "urn:ngm:class:ietf-rfc",
+  "domain": "infrastructure",
+  "definition": "An IETF RFC (Request for Comments) is a numbered document published by the Internet Engineering Task Force and the RFC Editor that records Internet specifications, protocols, procedures, and informational notes. Standards-track RFCs progress through community review to define the protocols that constitute the Internet, while other categories capture experimental, informational, or historic material. The RFC series is the canonical record through which Internet technology is standardised and disseminated.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:protocol-specification",
+        "label": "Protocol Specification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:request-for-comments",
+        "label": "Request for Comments"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-standard",
+        "label": "Internet Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

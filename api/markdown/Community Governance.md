@@ -118,7 +118,7 @@ public:: true
         "label": "Commons Management"
       },
       {
-        "@id": "urn:ngm:class:protocol-upgrade",
+        "@id": "urn:ngm:class:protocol-upgrades",
         "label": "Protocol Upgrade"
       }
     ],

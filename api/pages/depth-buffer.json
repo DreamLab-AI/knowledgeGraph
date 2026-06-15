@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:depth-buffer",
+  "title": "Depth Buffer",
+  "slug": "depth-buffer",
+  "public": true,
+  "classIri": "urn:ngm:class:depth-buffer",
+  "domain": "spatial-computing",
+  "definition": "A depth buffer (also called a z-buffer) is a per-pixel array maintained during rasterised rendering that stores the depth of the nearest surface drawn at each screen position. As fragments are generated, their interpolated depth is compared against the stored value, and only fragments closer to the camera overwrite the colour and depth, resolving visibility automatically. The depth buffer is the standard hidden-surface-removal mechanism in real-time graphics pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:occlusion-culling",
+        "label": "Occlusion Culling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:finite-element-analysis",
+  "title": "Finite Element Analysis",
+  "slug": "finite-element-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:finite-element-analysis",
+  "domain": "spatial-computing",
+  "definition": "Finite Element Analysis (FEA) is a numerical method for approximating solutions to physical field problems by subdividing a continuous domain into a mesh of small, simple elements and assembling their local equations into a global system. It is widely used in engineering to predict structural stress, deformation, heat transfer, vibration and electromagnetic behaviour. FEA is a core technique in computer-aided engineering, enabling virtual testing of designs before physical prototypes are built.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:numerical-methods",
+      "label": "Numerical Methods"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:cad-software",
+        "label": "CAD Software"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:material-system",
+        "label": "Material System"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cad-software",
+        "label": "CAD Software"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:material-system",
+        "label": "Material System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "Soft Robotics"
+    }
+  ]
+}

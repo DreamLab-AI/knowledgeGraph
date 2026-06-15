@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:model-governance",
+  "title": "Model Governance",
+  "slug": "model-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:model-governance",
+  "domain": "machine-learning",
+  "definition": "Model governance is the framework of policies, roles, controls, and documentation that an organisation applies across the lifecycle of its machine learning and statistical models to manage their risk, ensure their fitness for purpose, and satisfy regulatory and ethical obligations. It establishes accountability for model development, validation, approval, deployment, and ongoing monitoring, supported by artefacts such as model cards, audit trails, and validation reports. By imposing oversight, documentation, and review gates, it ensures models remain accurate, fair, explainable, and compliant rather than opaque or unaccountable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance",
+      "label": "AI Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:model-validation",
+        "label": "Model Validation"
+      },
+      {
+        "id": "urn:ngm:class:model-documentation",
+        "label": "Model Documentation"
+      },
+      {
+        "id": "urn:ngm:class:model-cards",
+        "label": "Model Cards"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

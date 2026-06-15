@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:technical-debt",
+  "title": "Technical Debt",
+  "slug": "technical-debt",
+  "public": true,
+  "classIri": "urn:ngm:class:technical-debt",
+  "domain": "infrastructure",
+  "definition": "Technical debt is the implied future cost incurred when a software team chooses an expedient solution over a better but slower approach, accruing rework that must eventually be paid down through refactoring. Like financial debt it carries interest: the longer suboptimal code persists, the more effort future changes require. Managing it involves making the debt visible, prioritising repayment, and balancing delivery speed against long-term maintainability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

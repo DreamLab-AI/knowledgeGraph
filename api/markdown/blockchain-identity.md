@@ -1,0 +1,44 @@
+- ### Definition
+	- [[Blockchain Identity]] anchors digital identifiers and credentials to a [[Distributed Ledger]] rather than a central registry, giving users cryptographic control through key pairs.
+	- It builds on [[Decentralized Identity]] and [[Self-Sovereign Identity]] principles, using [[Decentralized Identifier]]s and [[Verifiable Credentials]] to express portable, tamper-evident claims.
+	- The model removes single points of failure inherent in traditional [[Identity Management]] and lets relying parties verify claims against [[Blockchain]]-anchored data.
+- ### Overview
+	- Conventional identity systems store identity records in centralised databases controlled by a provider, which creates honeypots for attackers and forces users to trust intermediaries.
+	- Blockchain Identity inverts this: the ledger holds only resolvable pointers and cryptographic proofs, while the actual credential data is held by the holder in a wallet.
+	- An identifier is typically a [[Decentralized Identifier]] (DID) whose method describes how it is created, resolved and updated against a ledger or anchoring layer.
+	- Issuers sign [[Verifiable Credentials]] that holders present to verifiers; the verifier checks signatures against the issuer's published keys without contacting the issuer.
+	- This separation of issuance, holding and verification is the defining architectural pattern of the approach.
+- ### Key aspects
+	- Cryptographic control: identity is bound to private keys the user holds, not to an account a provider can revoke unilaterally.
+	- Anchoring: identifiers and key states are anchored to a ledger so updates and revocations are auditable and tamper-evident.
+	- Selective disclosure: [[Zero-Knowledge Proof]] techniques let holders prove attributes (e.g. age over 18) without revealing underlying data, strengthening [[Privacy]].
+	- Interoperability: standardised DID and credential formats allow identities to move across services and ecosystems.
+	- Recovery and key rotation: methods exist for rotating compromised keys and recovering control, a recognised usability challenge.
+- ### Applications
+	- Passwordless [[Authentication]] and [[Single Sign-On]] where a wallet replaces username/password flows.
+	- Know-your-customer and reusable onboarding where verified credentials are presented once and reused.
+	- Access control for decentralised applications, where on-chain identity gates permissions via [[Smart Contract]] logic.
+	- Supply-chain and academic credentialing, where tamper-evident attestations follow goods or graduates.
+	- Cross-border identity aligned with frameworks such as eIDAS-style trust services.
+- ### Relationships
+	- bridgesTo:: [[Blockchain]]
+	- partOf:: [[Decentralized Identity]]
+	- hasPart:: [[Decentralized Identifier]]
+	- hasPart:: [[Verifiable Credentials]]
+	- requires:: [[Public Key Infrastructure]]
+	- requires:: [[Distributed Ledger]]
+	- enables:: [[Self-Sovereign Identity]]
+	- enables:: [[Single Sign-On]]
+	- dependsOn:: [[DID]]
+	- uses:: [[Zero-Knowledge Proof]]
+	- uses:: [[Digital Certificate]]
+	- uses:: [[Smart Contract]]
+	- supports:: [[Authentication]]
+	- supports:: [[Access Control]]
+	- supports:: [[Privacy]]
+	- contrastsWith:: [[Identity Management]]
+	- relatedTo:: [[Digital Identity]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

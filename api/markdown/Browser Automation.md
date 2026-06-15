@@ -76,7 +76,7 @@ public:: true
         "label": "Testing Process"
       },
       {
-        "@id": "urn:ngm:class:javascript",
+        "@id": "urn:ngm:class:java-script",
         "label": "JavaScript"
       }
     ],

@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:breadth-first-search",
+  "title": "Breadth-First Search",
+  "slug": "breadth-first-search",
+  "public": true,
+  "classIri": "urn:ngm:class:breadth-first-search",
+  "domain": "artificial-intelligence",
+  "definition": "Breadth-first search (BFS) is a graph and tree traversal algorithm that explores all neighbours of a node before moving to nodes at the next depth level, expanding the search frontier in order of increasing distance from the source. It is implemented with a first-in-first-out queue and, on unweighted graphs, finds the shortest path in terms of edge count from the start vertex to every reachable vertex. BFS runs in time linear in the number of vertices and edges and is foundational to pathfinding, connectivity analysis and level-order processing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graph-algorithms",
+      "label": "Graph Algorithms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:depth-first-search",
+        "label": "Depth-First Search"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graph-algorithms",
+        "label": "Graph Algorithms"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:search-algorithms",
+        "label": "Search Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
+      },
+      {
+        "id": "urn:ngm:class:computer-science",
+        "label": "Computer Science"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,169 @@
+public:: true
+
+# Evolutionary Algorithm
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:evolutionary-algorithm",
+  "@type": "Page",
+  "title": "Evolutionary Algorithm",
+  "vc:slug": "evolutionary-algorithm",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:evolutionary-algorithm",
+  "@type": "Class",
+  "label": "Evolutionary Algorithm",
+  "definition": "An evolutionary algorithm is a population-based, stochastic optimisation method inspired by biological evolution, in which a population of candidate solutions is iteratively improved through selection, recombination (crossover) and mutation guided by a fitness function. Because they require only the ability to evaluate a fitness score, evolutionary algorithms are derivative-free and well suited to non-differentiable, noisy, multimodal or black-box optimisation problems where gradient methods struggle.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "@id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "@id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
+- ### Definition
+  - An evolutionary algorithm is a population-based, stochastic optimisation method inspired by biological evolution, in which a population of candidate solutions is iteratively improved through selection, recombination (crossover) and mutation guided by a fitness function. Because they require only the ability to evaluate a fitness score, evolutionary algorithms are derivative-free and well suited to non-differentiable, noisy, multimodal or black-box optimisation problems where gradient methods struggle.
+  - Related core concepts: [[Optimisation]] [[Search Algorithm]] [[Reinforcement Learning]] [[Machine Learning]] [[Artificial Intelligence]]
+- ### Overview
+  - Evolutionary algorithms treat optimisation as survival of the fittest. They maintain a population of candidate solutions, evaluate each against a fitness function, and then generate the next population by preferentially reproducing high-fitness individuals, recombining their components and introducing random mutations. Over many generations the population concentrates around high-quality regions of the search space. Because they make no assumptions about differentiability or continuity, evolutionary algorithms excel where the objective is a black box, the landscape is rugged with many local optima, or evaluations are noisy.
+  - Evolutionary algorithms shine in the regime that defeats gradient methods: rugged, discontinuous or black-box objectives. By exploring with a population rather than a single iterate, they hedge against local optima and can be embarrassingly parallel, since fitness evaluations are independent. The balance between exploration (mutation, diversity) and exploitation (selection pressure) governs convergence and is the central tuning concern.
+- ### History and context
+  - Evolutionary computation grew from work in the 1960s and 1970s on genetic algorithms, evolution strategies and evolutionary programming, inspired by Darwinian selection. It has since matured into a broad family of derivative-free optimisers applied wherever gradients are unavailable.
+- ### Mechanisms
+  - Population: a set of candidate solutions explored in parallel rather than a single iterate.
+  - Fitness evaluation: scoring each candidate against the objective, the only required interface to the problem.
+  - Selection: probabilistically favouring fitter individuals for reproduction while preserving diversity.
+  - Crossover: recombining components of parent solutions to produce offspring.
+  - Mutation: random perturbation that maintains exploration and escapes local optima.
+  - Variants: genetic algorithms, evolution strategies, genetic programming and neuroevolution differ in representation and operators.
+- ### Applications
+  - Black-box and derivative-free optimisation of engineering and design parameters.
+  - Neuroevolution and hyperparameter search for machine-learning models.
+  - Reinforcement-learning policy search where gradients are unavailable or unreliable.
+  - Multi-objective optimisation balancing competing criteria via Pareto fronts.
+- ### Challenges and considerations
+  - Sample efficiency: many fitness evaluations may be needed, which is costly when evaluation is expensive.
+  - Premature convergence: excessive selection pressure collapses diversity into a local optimum.
+  - Parameter tuning: operator rates and population size strongly affect performance.
+  - Scaling: very high-dimensional search spaces strain population-based exploration.
+- ### Examples
+  - Evolving neural-network weights or architectures via neuroevolution.
+  - Optimising aerofoil or antenna designs against simulation-based fitness.
+  - Searching reinforcement-learning policies where gradients are noisy or unavailable.
+- ### Relationships
+  - subClassOf:: [[Optimisation]]
+  - partOf:: [[Optimisation]]
+  - hasPart:: [[Search Algorithm]]
+  - uses:: [[Sampling]]
+  - enables:: [[Reinforcement Learning]]
+  - enables:: [[Hyperparameter Tuning]]
+  - enables:: [[Neural Architecture Search]]
+  - contrastsWith:: [[Stochastic Gradient Descent]]
+  - contrastsWith:: [[Convex Optimisation]]
+  - contrastsWith:: [[Bayesian Optimisation]]
+  - supports:: [[Machine Learning]]
+  - supports:: [[Artificial Intelligence]]
+  - supports:: [[Neural Network]]
+  - relatedTo:: [[Numerical Methods]]
+  - relatedTo:: [[Uncertainty Quantification]]
+  - relatedTo:: [[Swarm Intelligence]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

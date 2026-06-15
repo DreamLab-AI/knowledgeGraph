@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:eidas-regulation",
+  "title": "eIDAS Regulation",
+  "slug": "eidas-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:eidas-regulation",
+  "domain": "security",
+  "definition": "The eIDAS Regulation is the European Union framework on electronic identification and trust services for electronic transactions in the internal market. It establishes legal recognition and cross-border interoperability for electronic identification schemes and for trust services such as electronic signatures, seals, timestamps and website authentication. Its revision introduces the European Digital Identity Wallet, extending qualified trust services to verifiable digital credentials.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:pki",
+        "label": "PKI"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:qualified-electronic-signature",
+        "label": "Qualified Electronic Signature"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:electronic-signature",
+        "label": "Electronic Signature"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:qualified-electronic-signature",
+        "label": "Qualified Electronic Signature"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:pki",
+        "label": "PKI"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

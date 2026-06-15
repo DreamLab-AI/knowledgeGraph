@@ -150,7 +150,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:public-key",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
         "label": "Public Key"
       },
       {

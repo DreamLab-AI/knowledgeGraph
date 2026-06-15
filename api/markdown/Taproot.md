@@ -74,11 +74,11 @@ public:: true
         "label": "Taproot Assets"
       },
       {
-        "@id": "urn:ngm:class:musig2",
+        "@id": "urn:ngm:class:mu-sig-2",
         "label": "MuSig2"
       },
       {
-        "@id": "urn:ngm:class:bitvm",
+        "@id": "urn:ngm:class:bit-vm",
         "label": "BitVM"
       },
       {
@@ -126,7 +126,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposals"
       }
     ],

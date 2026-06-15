@@ -95,7 +95,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:remittance",
+        "@id": "urn:ngm:class:remittances",
         "label": "Remittance"
       },
       {
@@ -131,7 +131,7 @@ public:: true
         "label": "Correspondent Banking"
       },
       {
-        "@id": "urn:ngm:class:paypal",
+        "@id": "urn:ngm:class:pay-pal",
         "label": "PayPal"
       }
     ],

@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:knowledge-graph-embedding",
+  "title": "Knowledge Graph Embedding",
+  "slug": "knowledge-graph-embedding",
+  "public": true,
+  "classIri": "urn:ngm:class:knowledge-graph-embedding",
+  "domain": "machine-learning",
+  "definition": "Knowledge graph embedding is the technique of representing the entities and relations of a knowledge graph as continuous low-dimensional vectors that preserve the graph's structural and semantic regularities. Scoring functions over these vectors model the plausibility of triples, enabling tasks such as link prediction, entity resolution and similarity-based retrieval through algebraic operations rather than symbolic traversal. It bridges symbolic knowledge representation with vector-based machine learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:link-prediction",
+        "label": "Link Prediction"
+      },
+      {
+        "id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:graph-embedding",
+        "label": "Graph Embedding"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

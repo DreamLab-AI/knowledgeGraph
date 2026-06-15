@@ -1,0 +1,41 @@
+- ### Definition
+	- A remote procedure call lets a program invoke a procedure on another machine as if it were local.
+	- It is a kind of [[Network Protocol]] central to [[Distributed Systems]] and [[Microservices]].
+	- The runtime marshals arguments, transmits them over [[HTTP]] or another transport, and returns the result.
+- ### Overview
+	- RPC raises the level of abstraction above raw sockets so developers think in terms of function calls, not byte streams.
+	- A stub on the caller serialises arguments; a skeleton on the callee deserialises, executes, and replies.
+	- Modern frameworks generate this glue from an interface definition and use compact binary encodings.
+	- Because the network can fail, RPC must handle timeouts, retries, and partial failure that local calls never face.
+- ### Mechanisms
+	- Interface definition languages specify procedures and message schemas.
+	- Marshalling and unmarshalling translate between in-memory objects and wire formats.
+	- Transports carry requests and responses, with optional streaming in either direction.
+	- Service discovery and load balancing route calls to healthy instances.
+- ### Applications
+	- Internal service-to-service communication in microservice architectures.
+	- High-throughput backend APIs using binary RPC frameworks.
+	- Distributed consensus and coordination protocols built on request-reply.
+	- Cross-language integration where clients and servers are written in different stacks.
+- ### Relationships
+	- subClassOf:: [[Network Protocol]]
+	- partOf:: [[Distributed Systems]]
+	- partOf:: [[Networking]]
+	- requires:: [[Protocol]]
+	- requires:: [[Service Discovery]]
+	- implements:: [[Synchronous Communication]]
+	- implements:: [[Message Passing Protocol]]
+	- enables:: [[Microservices]]
+	- enables:: [[Distributed Computing]]
+	- uses:: [[HTTP]]
+	- uses:: [[Network Protocol]]
+	- supports:: [[API Design]]
+	- supports:: [[Service Mesh]]
+	- contrastsWith:: [[Asynchronous Communication]]
+	- contrastsWith:: [[REST API]]
+	- relatedTo:: [[Distributed Protocol]]
+	- relatedTo:: [[API]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

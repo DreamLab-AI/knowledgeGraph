@@ -1,0 +1,34 @@
+- ### Definition
+	- [[Direct3D]] is Microsoft's [[Graphics API]] for real-time 3D rendering, part of the [[DirectX]] family and the dominant native interface on [[GPU]]-accelerated Windows and Xbox platforms.
+	- It drives the [[Rendering Pipeline]] through programmable [[Shader]] stages and explicit resource management.
+- ### Overview
+	- Direct3D abstracts the graphics hardware behind a device and command model, letting applications submit draw and dispatch commands that the driver translates into GPU work.
+	- Early versions (Direct3D 9/11) used an immediate, driver-managed model; Direct3D 12 introduced an explicit, low-overhead design that exposes command queues, descriptor heaps, and manual memory and synchronisation control.
+	- It is a core component of the Windows graphics stack and the primary backend for most Windows-native game engines.
+- ### Mechanisms
+	- Device and context objects mediate resource creation and command submission.
+	- Programmable shader stages (vertex, pixel, geometry, hull, domain, compute) run on the GPU and are authored in HLSL.
+	- Command lists and queues batch GPU work; descriptor heaps bind resources; pipeline state objects capture fixed-function configuration.
+	- DirectX Raytracing (DXR) extends the pipeline with hardware-accelerated [[Ray Tracing]].
+- ### Applications
+	- AAA and indie game rendering on Windows and Xbox.
+	- Real-time visualisation, CAD, and digital content creation tools.
+	- GPU compute for simulation and image processing via the compute pipeline.
+- ### Relationships
+	- uses:: [[GPU]]
+	- uses:: [[Shader]]
+	- implements:: [[Rendering Pipeline]]
+	- implements:: [[Graphics Pipeline]]
+	- enables:: [[Real-Time Rendering]]
+	- enables:: [[Rasterisation]]
+	- supports:: [[Ray Tracing]]
+	- supports:: [[Texture Mapping]]
+	- contrastsWith:: [[Vulkan]]
+	- contrastsWith:: [[WebGPU]]
+	- standardizedBy:: [[DirectX]]
+	- relatedTo:: [[Computer Graphics]]
+	- relatedTo:: [[Game Engine]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

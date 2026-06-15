@@ -40,7 +40,7 @@ public:: true
         "label": "Named Entity Recognition"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {

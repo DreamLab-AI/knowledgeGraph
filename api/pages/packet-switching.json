@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:packet-switching",
+  "title": "Packet Switching",
+  "slug": "packet-switching",
+  "public": true,
+  "classIri": "urn:ngm:class:packet-switching",
+  "domain": "infrastructure",
+  "definition": "Packet switching is a method of data transmission in which messages are divided into discrete packets that are routed independently across a shared network and reassembled at the destination. Each packet carries addressing information allowing intermediate nodes to forward it along varying paths, making efficient use of shared links. It is the foundational technique of the internet, contrasting with circuit switching that dedicates a fixed path for a session.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-communication",
+      "label": "Network Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

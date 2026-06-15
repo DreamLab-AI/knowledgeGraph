@@ -74,7 +74,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:webauthn",
+        "@id": "urn:ngm:class:web-authn",
         "label": "WebAuthn"
       }
     ],
@@ -90,7 +90,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       },
       {

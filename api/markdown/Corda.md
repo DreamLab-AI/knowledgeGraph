@@ -131,7 +131,7 @@ public:: true
         "label": "Hyperledger Fabric"
       },
       {
-        "@id": "urn:ngm:class:public-blockchain",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
         "label": "Public Blockchain"
       }
     ],
@@ -167,7 +167,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:defi",
+        "@id": "urn:ngm:class:de-fi",
         "label": "DeFi"
       },
       {

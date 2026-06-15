@@ -1,0 +1,32 @@
+- ### Definition
+	- [[Simplified Payment Verification]] lets a [[Light Client]] confirm a transaction's inclusion in a [[Blockchain]] using only [[Block Header]]s and a [[Merkle Proof]].
+	- It avoids downloading the full chain by trusting proof-of-work and verifying a path to the [[Merkle Root]].
+- ### Overview
+	- An SPV client stores the chain of block headers rather than every transaction, a tiny fraction of the full ledger.
+	- To check a payment, it obtains a Merkle proof — the sibling hashes connecting the transaction to the Merkle root committed in a block header.
+	- The presence of that header in the longest valid header chain, backed by accumulated proof-of-work, gives probabilistic assurance the transaction is confirmed.
+- ### Mechanisms
+	- Header synchronisation: the client validates header proof-of-work and linkage.
+	- Merkle path verification: recomputing hashes up the [[Merkle Tree]] to match the root.
+	- Bloom filters (BIP 37) historically let SPV wallets request relevant transactions while preserving some privacy.
+- ### Applications
+	- Mobile and embedded cryptocurrency wallets.
+	- Resource-constrained or IoT blockchain clients.
+	- Cross-chain bridges and light-client relays.
+- ### Relationships
+	- dependsOn:: [[Block Header]]
+	- dependsOn:: [[Merkle Proof]]
+	- uses:: [[Merkle Tree]]
+	- uses:: [[Merkle Root]]
+	- implements:: [[Light Client]]
+	- enables:: [[Light Node]]
+	- enables:: [[Scalability]]
+	- supports:: [[Bitcoin]]
+	- contrastsWith:: [[Full Node]]
+	- partOf:: [[Blockchain Node]]
+	- relatedTo:: [[UTXO Model]]
+	- relatedTo:: [[Bloom Filter]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

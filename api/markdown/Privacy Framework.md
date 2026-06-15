@@ -48,54 +48,141 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:consent-management", "label": "Consent Management"},
-      {"@id": "urn:ngm:class:data-minimisation", "label": "Data Minimisation"},
-      {"@id": "urn:ngm:class:privacy-by-design", "label": "Privacy By Design"},
-      {"@id": "urn:ngm:class:data-protection-impact-assessment", "label": "Data Protection Impact Assessment"}
+      {
+        "@id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      },
+      {
+        "@id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "@id": "urn:ngm:class:data-protection-impact-assessment",
+        "label": "Data Protection Impact Assessment"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero-Knowledge Proof"},
-      {"@id": "urn:ngm:class:access-control", "label": "Access Control"},
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:user-trust", "label": "User Trust"},
-      {"@id": "urn:ngm:class:data-sovereignty", "label": "Data Sovereignty"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:user-trust",
+        "label": "User Trust"
+      },
+      {
+        "@id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:gdpr", "label": "GDPR"},
-      {"@id": "urn:ngm:class:ccpa", "label": "CCPA"},
-      {"@id": "urn:ngm:class:iso-29100", "label": "ISO 29100"}
+      {
+        "@id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "@id": "urn:ngm:class:ccpa",
+        "label": "CCPA"
+      },
+      {
+        "@id": "urn:ngm:class:iso-29100",
+        "label": "ISO 29100"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"},
-      {"@id": "urn:ngm:class:differential-privacy", "label": "Differential Privacy"},
-      {"@id": "urn:ngm:class:digital-identity", "label": "Digital Identity"}
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "@id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "@id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:cryptographic-security", "label": "Cryptographic Security"},
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"}
+      {
+        "@id": "urn:ngm:class:cryptographic-security",
+        "label": "Cryptographic Security"
+      },
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:surveillance-capitalism", "label": "Surveillance Capitalism"},
-      {"@id": "urn:ngm:class:data-broker", "label": "Data Broker"}
+      {
+        "@id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      },
+      {
+        "@id": "urn:ngm:class:data-brokers",
+        "label": "Data Broker"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-ethics", "label": "AI Ethics"},
-      {"@id": "urn:ngm:class:self-sovereign-identity", "label": "Self Sovereign Identity"},
-      {"@id": "urn:ngm:class:homomorphic-encryption", "label": "Homomorphic Encryption"}
+      {
+        "@id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "@id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self Sovereign Identity"
+      },
+      {
+        "@id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:biometric-data", "label": "Biometric Data"},
-      {"@id": "urn:ngm:class:anonymisation", "label": "Anonymisation"},
-      {"@id": "urn:ngm:class:pseudonymisation", "label": "Pseudonymisation"}
+      {
+        "@id": "urn:ngm:class:biometric-data",
+        "label": "Biometric Data"
+      },
+      {
+        "@id": "urn:ngm:class:anonymisation",
+        "label": "Anonymisation"
+      },
+      {
+        "@id": "urn:ngm:class:pseudonymisation",
+        "label": "Pseudonymisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:data-privacy-framework", "label": "Data Privacy Framework"},
-    {"@id": "urn:ngm:class:privacy-governance-framework", "label": "Privacy Governance Framework"}
+    {
+      "@id": "urn:ngm:class:data-privacy-framework",
+      "label": "Data Privacy Framework"
+    },
+    {
+      "@id": "urn:ngm:class:privacy-governance-framework",
+      "label": "Privacy Governance Framework"
+    }
   ],
   "quality": 0.74,
   "provenance": {

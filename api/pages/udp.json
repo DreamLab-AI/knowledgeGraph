@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:udp",
+  "title": "UDP",
+  "slug": "udp",
+  "public": true,
+  "classIri": "urn:ngm:class:udp",
+  "domain": "infrastructure",
+  "definition": "The User Datagram Protocol (UDP) is a connectionless transport-layer protocol that sends discrete datagrams without establishing a session, handshaking, ordering or guaranteed delivery. By omitting the reliability and congestion-control machinery of connection-oriented protocols, UDP achieves low latency and minimal overhead, leaving any required reliability to the application layer. It is the foundation for real-time and high-throughput workloads such as voice, video, gaming, DNS and modern transport protocols built atop it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transport-protocol",
+      "label": "Transport Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      },
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      },
+      {
+        "id": "urn:ngm:class:gaming",
+        "label": "Gaming"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

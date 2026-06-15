@@ -118,7 +118,7 @@ public:: true
         "label": "Smart Contract"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],

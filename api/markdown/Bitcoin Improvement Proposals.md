@@ -82,7 +82,7 @@ public:: true
         "label": "Hard Fork"
       },
       {
-        "@id": "urn:ngm:class:protocol-upgrade",
+        "@id": "urn:ngm:class:protocol-upgrades",
         "label": "Protocol Upgrade"
       },
       {
@@ -116,7 +116,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:github",
+        "@id": "urn:ngm:class:git-hub",
         "label": "GitHub"
       },
       {

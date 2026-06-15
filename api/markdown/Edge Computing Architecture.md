@@ -118,7 +118,7 @@ public:: true
         "label": "Cloud Computing"
       },
       {
-        "@id": "urn:ngm:class:5g-network",
+        "@id": "urn:ngm:class:5-g-network",
         "label": "5G Network"
       }
     ],
@@ -166,7 +166,7 @@ public:: true
         "label": "ETSI MEC"
       },
       {
-        "@id": "urn:ngm:class:openapi-specification",
+        "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Specification"
       }
     ],

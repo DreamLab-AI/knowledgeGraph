@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:evm-compatible-blockchain",
+  "title": "EVM-Compatible Blockchain",
+  "slug": "evm-compatible-blockchain",
+  "public": true,
+  "classIri": "urn:ngm:class:evm-compatible-blockchain",
+  "domain": "blockchain",
+  "definition": "An EVM-compatible blockchain is a network whose execution environment implements the Ethereum Virtual Machine semantics, allowing it to run unmodified Ethereum smart contract bytecode and reuse Ethereum tooling. Compatibility lets developers deploy Solidity contracts, wallets and infrastructure across many chains with minimal changes, fostering an interoperable multi-chain ecosystem. Such chains include layer-2 rollups, sidechains and alternative layer-1 networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-application",
+        "label": "Decentralized Application"
+      },
+      {
+        "id": "urn:ngm:class:erc-20-token-standard",
+        "label": "ERC-20 Token Standard"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      },
+      {
+        "id": "urn:ngm:class:binance-smart-chain",
+        "label": "Binance Smart Chain"
+      },
+      {
+        "id": "urn:ngm:class:avalanche",
+        "label": "Avalanche"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

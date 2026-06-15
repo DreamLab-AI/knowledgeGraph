@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:monolithic-architecture",
+  "title": "Monolithic Architecture",
+  "slug": "monolithic-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:monolithic-architecture",
+  "domain": "infrastructure",
+  "definition": "Monolithic architecture is a software design style in which an application is built and deployed as a single, self-contained unit where the user interface, business logic, and data-access layers are tightly coupled within one codebase and process. Components communicate through in-process function calls rather than network protocols, simplifying development, testing, and deployment for small to medium systems. As applications grow, the monolith can become difficult to scale selectively, evolve independently, or deploy without full redeployment, which motivates migration toward modular or microservices architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:system-architecture",
+      "label": "System Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:business-logic-layer",
+        "label": "Business Logic Layer"
+      },
+      {
+        "id": "urn:ngm:class:data-access-layer",
+        "label": "Data Access Layer"
+      },
+      {
+        "id": "urn:ngm:class:presentation-layer",
+        "label": "Presentation Layer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:single-codebase",
+        "label": "Single Codebase"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simplified-deployment",
+        "label": "Simplified Deployment"
+      },
+      {
+        "id": "urn:ngm:class:atomic-refactoring",
+        "label": "Atomic Refactoring"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:vertical-scaling",
+        "label": "Vertical Scaling"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      },
+      {
+        "id": "urn:ngm:class:distributed-architecture",
+        "label": "Distributed Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:modular-monolith",
+        "label": "Modular Monolith"
+      },
+      {
+        "id": "urn:ngm:class:strangler-fig-pattern",
+        "label": "Strangler Fig Pattern"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:in-process-communication",
+        "label": "In-Process Communication"
+      },
+      {
+        "id": "urn:ngm:class:shared-database",
+        "label": "Shared Database"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rapid-prototyping",
+        "label": "Rapid Prototyping"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:n-tier-architecture",
+        "label": "N-Tier Architecture"
+      },
+      {
+        "id": "urn:ngm:class:deployment-unit",
+        "label": "Deployment Unit"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

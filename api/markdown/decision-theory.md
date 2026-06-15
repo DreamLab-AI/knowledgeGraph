@@ -1,0 +1,34 @@
+- ### Definition
+	- [[Decision Theory]] is the formal study of rational choice under uncertainty, weighing probabilities against utilities to maximise expected outcome.
+	- It draws on [[Probability Theory]] and [[Bayesian Inference]] and underpins rational action in [[Artificial Intelligence]].
+- ### Overview
+	- A decision problem comprises possible actions, uncertain states of the world, a probability distribution over those states, and a utility function over outcomes.
+	- The expected-utility principle selects the action whose probability-weighted utility is greatest.
+	- The normative view prescribes how an ideal agent should choose; the descriptive view models how humans and agents actually choose, often diverging from the ideal.
+- ### Key aspects
+	- Expected utility maximisation as the criterion of rationality (von Neumann–Morgenstern axioms).
+	- Bayesian updating of beliefs as evidence arrives.
+	- Value of information: quantifying the worth of reducing uncertainty before acting.
+	- Sequential decisions formalised as [[Markov Decision Process]] problems.
+- ### Applications
+	- Action selection and planning in autonomous agents.
+	- Foundations of [[Reinforcement Learning]] reward optimisation.
+	- Risk and policy analysis in [[Operations Research]] and economics.
+	- Aligning agent objectives in [[AI Safety Research]].
+- ### Relationships
+	- requires:: [[Probability Theory]]
+	- uses:: [[Bayesian Inference]]
+	- bridgesTo:: [[Game Theory]]
+	- bridgesTo:: [[Operations Research]]
+	- enables:: [[Decision Making]]
+	- enables:: [[Markov Decision Process]]
+	- supports:: [[Reinforcement Learning]]
+	- supports:: [[AI Safety Research]]
+	- supports:: [[Risk Management]]
+	- contrastsWith:: [[Game Theory]]
+	- relatedTo:: [[Operations Research]]
+	- relatedTo:: [[Bayesian Inference]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

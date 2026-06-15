@@ -23,15 +23,27 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-protocol-and-infra", "label": "Protocol and Infrastructure"}
+    {
+      "@id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:webrtc", "label": "WebRTC"},
-      {"@id": "urn:ngm:class:real-time-synchronisation", "label": "Real-Time Synchronisation"}
+      {
+        "@id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-synchronisation",
+        "label": "Real-Time Synchronisation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:signaling-server", "label": "Signaling Server"}
+      {
+        "@id": "urn:ngm:class:signaling-server",
+        "label": "Signaling Server"
+      }
     ]
   },
   "quality": 0.7

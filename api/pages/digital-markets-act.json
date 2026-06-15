@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:digital-markets-act",
+  "title": "Digital Markets Act",
+  "slug": "digital-markets-act",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-markets-act",
+  "domain": "governance",
+  "definition": "The Digital Markets Act (DMA) is a European Union regulation that imposes ex ante obligations and prohibitions on large online platforms designated as gatekeepers to ensure contestable and fair digital markets. Rather than waiting for case-by-case competition enforcement, it sets binding rules on designated core platform services covering interoperability, data use, self-preferencing, default settings, and access for business users. Gatekeepers must comply with a list of do's and don'ts, with the European Commission as sole enforcer empowered to levy substantial fines and structural remedies for non-compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:european-union",
+        "label": "European Union"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

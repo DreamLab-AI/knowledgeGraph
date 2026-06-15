@@ -151,7 +151,7 @@ public:: true
         "label": "Fourier Analysis"
       },
       {
-        "@id": "urn:ngm:class:optimization",
+        "@id": "urn:ngm:class:optimisation",
         "label": "Optimization"
       },
       {

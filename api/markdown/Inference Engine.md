@@ -112,7 +112,7 @@ public:: true
         "label": "ONNX"
       },
       {
-        "@id": "urn:ngm:class:compute-unified-device-architecture",
+        "@id": "urn:ngm:class:cuda",
         "label": "CUDA"
       },
       {

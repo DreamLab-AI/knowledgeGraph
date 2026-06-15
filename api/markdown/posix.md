@@ -1,0 +1,31 @@
+- ### Definition
+- [[POSIX]] is an [[IEEE]]-maintained family of [[API Standard]] documents that define a portable interface to an [[Operating System]], covering system calls, the [[File System]], and shell utilities. It exists to maximise software [[Portability]] and [[Interoperability]] across Unix-like platforms.
+- ### Overview
+- POSIX emerged in the late 1980s to reconcile the fragmentation of competing Unix derivatives, giving developers a single specification to target rather than each vendor's idiosyncratic interface.
+- The standard is layered: a core defines mandatory system interfaces, while optional feature groups cover threading, real-time extensions, and additional utilities. Conformance can be claimed at the source level (recompile and run) or at the binary level.
+- Today POSIX is jointly maintained by IEEE and The Open Group as part of the Single UNIX Specification, and most modern Unix-like systems implement a large subset even when they are not formally certified.
+- ### Key aspects
+- System call interface: standardised functions for process creation, signals, and I/O against the [[File System]].
+- Shell and utilities: a defined command language and a set of utilities ensuring scripts behave consistently.
+- File-system semantics: hierarchical paths, permissions, and the everything-is-a-file model.
+- Threading and real-time: optional groups specifying pthreads and timing guarantees.
+- ### Applications
+- Cross-platform system software and daemons that compile unchanged across Linux, BSD, and macOS.
+- Containerised and cloud workloads relying on consistent kernel-interface behaviour for [[Interoperability]].
+- Embedded and real-time systems adopting POSIX profiles for predictable behaviour.
+- Toolchains and shells whose portability depends on POSIX-conformant utilities.
+- ### Relationships
+- partOf:: [[Standards]]
+- implements:: [[Operating System]]
+- implements:: [[File System]]
+- standardizedBy:: [[IEEE]]
+- standardizedBy:: [[API Standard]]
+- enables:: [[Interoperability]]
+- enables:: [[Portability]]
+- supports:: [[Portability]]
+- relatedTo:: [[Interoperability]]
+- uses:: [[File System]]
+- bridgesTo:: [[Operating System]]
+- contrastsWith:: [[API Standard]]
+- ### Provenance
+- updated:: 2026-06-15

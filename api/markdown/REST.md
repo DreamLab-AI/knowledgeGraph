@@ -137,17 +137,17 @@ public:: true
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:graphql",
+        "@id": "urn:ngm:class:graph-ql",
         "label": "GraphQL"
       },
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       },
       {

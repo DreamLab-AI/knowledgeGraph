@@ -78,7 +78,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:quantization",
+        "@id": "urn:ngm:class:quantisation",
         "label": "Quantization"
       },
       {

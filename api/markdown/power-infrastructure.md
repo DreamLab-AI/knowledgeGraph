@@ -1,0 +1,32 @@
+- ### Definition
+- Power infrastructure delivers reliable electrical energy to computing facilities through [[Electrical Power]] feeds, [[Power Supply]] conditioning and backup systems. It is a foundational part of [[Cloud Infrastructure]] that enables [[High Availability]] alongside [[Cooling System]] design.
+- ### Overview
+- Compute facilities cannot tolerate power interruptions; even brief loss can corrupt workloads and trigger costly downtime. Power infrastructure exists to make supply continuous and fault-tolerant.
+- It spans the chain from utility feed through distribution, conditioning and backup generation, with redundancy designed in at each stage.
+- Increasingly it is co-optimised with sustainability goals, integrating renewable sources and efficiency measures to reduce carbon footprint.
+- ### Key aspects
+- Utility intake and on-site distribution via power distribution units.
+- Conditioning and uninterruptible supplies that ride through transients.
+- Backup generation for extended outages.
+- Redundancy topologies and capacity planning to match growing load.
+- ### Applications
+- Powering data centres and edge facilities.
+- Guaranteeing continuity for critical and high-availability services.
+- Integrating renewable energy and efficiency programmes.
+- ### Relationships
+- hasPart:: [[Electrical Power]]
+- hasPart:: [[Power Supply]]
+- partOf:: [[Cloud Infrastructure]]
+- requires:: [[Redundancy]]
+- requires:: [[Capacity Planning]]
+- dependsOn:: [[Electrical Power]]
+- dependsOn:: [[Renewable Energy]]
+- enables:: [[High Availability]]
+- supports:: [[Cooling System]]
+- supports:: [[Cloud Infrastructure]]
+- uses:: [[Energy Efficiency]]
+- relatedTo:: [[Carbon Footprint]]
+- relatedTo:: [[Renewable Energy]]
+- contrastsWith:: [[Cooling System]]
+- ### Provenance
+- updated:: 2026-06-15

@@ -1,0 +1,43 @@
+- ### Definition
+- An embedding space is a continuous vector space in which objects are positioned so that geometric proximity reflects semantic similarity. It is produced by [[Representation Learning]] and realised through [[Embedding]] vectors compared with [[Cosine Similarity]].
+- The space turns symbolic items into points whose relationships can be measured and manipulated numerically.
+- ### Overview
+- Models map inputs to fixed-length vectors; the collection of all such vectors and their geometry constitutes the embedding space.
+- Distances and angles in the space approximate relatedness, so similar items cluster and dissimilar items separate.
+- A well-structured space supports vector arithmetic, where directions can encode interpretable relations.
+- ### Key aspects
+- Continuity: nearby points represent semantically similar objects.
+- Dimensionality: the space typically has tens to thousands of dimensions, balancing expressiveness and cost via [[Dimensionality Reduction]].
+- Metric: similarity is measured by [[Cosine Similarity]] or Euclidean distance.
+- Transferability: spaces learned on large corpora transfer to new tasks through [[Transfer Learning]].
+- ### Mechanisms
+- Encoder models project inputs into the space during training on [[Training Data]].
+- Contrastive and reconstruction objectives shape the geometry so related items attract.
+- Indexing structures in a [[Vector Database]] enable fast nearest-neighbour retrieval.
+- Projection methods reduce dimensions for visualisation and storage.
+- ### Applications
+- [[Semantic Search]] and retrieval over text, images, and audio.
+- [[Clustering]] and recommendation by grouping nearby vectors.
+- Knowledge graph reasoning via [[Knowledge Graph Embedding]].
+- Cross-modal alignment linking [[Word Embedding]] spaces to image features.
+- ### Relationships
+- partOf:: [[Representation Learning]]
+- uses:: [[Embedding]]
+- uses:: [[Cosine Similarity]]
+- dependsOn:: [[Embedding]]
+- dependsOn:: [[Training Data]]
+- requires:: [[Dimensionality Reduction]]
+- enables:: [[Semantic Search]]
+- enables:: [[Clustering]]
+- supports:: [[Vector Database]]
+- implements:: [[Latent Space]]
+- bridgesTo:: [[Word Embedding]]
+- contrastsWith:: [[Latent Space]]
+- relatedTo:: [[Vector Embedding]]
+- relatedTo:: [[Knowledge Graph Embedding]]
+- relatedTo:: [[Transfer Learning]]
+- relatedTo:: [[Deep Neural Network]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

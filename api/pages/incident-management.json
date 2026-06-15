@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:incident-management",
+  "title": "Incident Management",
+  "slug": "incident-management",
+  "public": true,
+  "classIri": "urn:ngm:class:incident-management",
+  "domain": "infrastructure",
+  "definition": "Incident management is the operational discipline of detecting, responding to, resolving, and learning from unplanned disruptions to a service. It coordinates people and tooling through detection, triage, escalation, mitigation, and recovery, then conducts blameless post-mortems to prevent recurrence. Closely associated with site reliability engineering and ITIL practice, it aims to minimise mean time to recovery and protect service-level objectives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:site-reliability-engineering",
+      "label": "Site Reliability Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:post-mortem",
+        "label": "Post-Mortem"
+      },
+      {
+        "id": "urn:ngm:class:escalation",
+        "label": "Escalation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:on-call",
+        "label": "On-Call"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "id": "urn:ngm:class:runbook",
+        "label": "Runbook"
+      },
+      {
+        "id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root Cause Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:itil",
+        "label": "ITIL"
+      },
+      {
+        "id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "operational-layer",
+      "label": "Operational Layer"
+    }
+  ]
+}

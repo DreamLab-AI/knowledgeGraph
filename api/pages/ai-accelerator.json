@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:ai-accelerator",
+  "title": "AI Accelerator",
+  "slug": "ai-accelerator",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-accelerator",
+  "domain": "infrastructure",
+  "definition": "An AI accelerator is a class of specialised hardware designed to speed up machine learning workloads, particularly the dense linear algebra of neural network training and inference. Common forms include GPUs, tensor processing units, neural processing units, and custom application-specific integrated circuits that exploit massive parallelism, reduced-precision arithmetic, and high-bandwidth memory. By offloading matrix and tensor operations from general-purpose CPUs, AI accelerators deliver order-of-magnitude gains in throughput and energy efficiency for deep learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-accelerator",
+      "label": "Hardware Accelerator"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High-Bandwidth Memory"
+      },
+      {
+        "id": "urn:ngm:class:systolic-array",
+        "label": "Systolic Array"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-center",
+        "label": "Data Center"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:tpu",
+        "label": "TPU"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-corporation",
+        "label": "NVIDIA Corporation"
+      },
+      {
+        "id": "urn:ngm:class:nvlink",
+        "label": "NVLink"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "computer-hardware",
+      "label": "Computer Hardware"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    }
+  ]
+}

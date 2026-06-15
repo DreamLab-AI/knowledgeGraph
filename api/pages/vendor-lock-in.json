@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:vendor-lock-in",
+  "title": "Vendor Lock-in",
+  "slug": "vendor-lock-in",
+  "public": true,
+  "classIri": "urn:ngm:class:vendor-lock-in",
+  "domain": "standards",
+  "definition": "Vendor lock-in is a situation in which a customer becomes dependent on a particular supplier's products or services and cannot switch to an alternative without substantial cost, effort or disruption. It arises from proprietary formats, non-portable data, integration dependencies and incompatible interfaces that raise switching costs. Open standards, data portability and interoperability are the principal countermeasures that preserve customer choice.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interoperability",
+      "label": "Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:portability",
+        "label": "Portability"
+      },
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      },
+      {
+        "id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:standards-compliance",
+        "label": "Standards Compliance"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

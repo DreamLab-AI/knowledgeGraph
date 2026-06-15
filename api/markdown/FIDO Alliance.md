@@ -99,7 +99,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:webauthn",
+        "@id": "urn:ngm:class:web-authn",
         "label": "WebAuthn"
       },
       {

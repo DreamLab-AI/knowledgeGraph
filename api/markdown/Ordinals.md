@@ -113,7 +113,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:segwit",
+        "@id": "urn:ngm:class:seg-wit",
         "label": "SegWit"
       },
       {

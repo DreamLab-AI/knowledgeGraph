@@ -103,7 +103,7 @@ public:: true
         "label": "Enterprise Resource Planning"
       },
       {
-        "@id": "urn:ngm:class:iot",
+        "@id": "urn:ngm:class:io-t",
         "label": "IoT"
       },
       {
@@ -127,7 +127,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:gs1-standards",
+        "@id": "urn:ngm:class:gs-1-standards",
         "label": "GS1 Standards"
       },
       {

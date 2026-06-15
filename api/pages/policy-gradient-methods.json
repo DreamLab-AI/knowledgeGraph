@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:policy-gradient-methods",
+  "title": "Policy Gradient Methods",
+  "slug": "policy-gradient-methods",
+  "public": true,
+  "classIri": "urn:ngm:class:policy-gradient-methods",
+  "domain": "machine-learning",
+  "definition": "Policy Gradient Methods are a class of reinforcement-learning algorithms that directly optimise a parameterised policy by ascending the gradient of expected cumulative reward. Rather than deriving a policy from a learned value function, they adjust action probabilities to make rewarding behaviour more likely, using estimators such as REINFORCE and actor-critic variants. They naturally handle continuous and stochastic action spaces and underpin modern algorithms like proximal policy optimisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:policy-optimisation",
+        "label": "Policy Optimisation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:policy-optimisation",
+        "label": "Policy Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

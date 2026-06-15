@@ -90,7 +90,7 @@ public:: true
         "label": "Ethereum Smart Contract Platform"
       },
       {
-        "@id": "urn:ngm:class:opcode",
+        "@id": "urn:ngm:class:opcodes",
         "label": "Opcode"
       }
     ],

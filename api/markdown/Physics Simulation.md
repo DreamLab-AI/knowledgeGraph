@@ -135,7 +135,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:3d-rendering",
+        "@id": "urn:ngm:class:3-d-rendering",
         "label": "3D Rendering"
       },
       {

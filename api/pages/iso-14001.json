@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:iso-14001",
+  "title": "ISO 14001",
+  "slug": "iso-14001",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-14001",
+  "domain": "governance",
+  "definition": "ISO 14001 is an international standard, published by the International Organization for Standardization, that specifies the requirements for an environmental management system (EMS). It provides a framework for an organisation to identify, manage, monitor, and continually improve its environmental performance through a plan-do-check-act cycle. Certification against ISO 14001 demonstrates conformance to a recognised set of environmental governance practices and supports regulatory compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-9001",
+        "label": "ISO 9001"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lifecycle-assessment",
+        "label": "Lifecycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:environmental-impact-assessment",
+        "label": "Environmental Impact Assessment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-9001",
+        "label": "ISO 9001"
+      },
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

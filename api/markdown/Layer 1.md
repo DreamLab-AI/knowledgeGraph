@@ -92,7 +92,7 @@ public:: true
         "label": "Decentralised Application"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],

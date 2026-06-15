@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:remote-attestation",
+  "title": "Remote Attestation",
+  "slug": "remote-attestation",
+  "public": true,
+  "classIri": "urn:ngm:class:remote-attestation",
+  "domain": "security",
+  "definition": "Remote attestation is a security mechanism by which one system proves the integrity and identity of its software and hardware state to a remote verifier. The attesting platform produces cryptographically signed evidence, rooted in a hardware root of trust, that captures measurements of its boot sequence and running code. A verifier checks this evidence against expected values and a trusted signing key before granting access or releasing secrets, allowing trust decisions to be made about a machine that is not physically controlled.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:confidential-computing",
+      "label": "Confidential Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:root-of-trust",
+        "label": "Root of Trust"
+      },
+      {
+        "id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:intel-sgx",
+        "label": "Intel SGX"
+      },
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

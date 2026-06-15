@@ -107,7 +107,7 @@ alias:: DistributedConsensus
         "label": "PBFT"
       },
       {
-        "@id": "urn:ngm:class:hotstuff",
+        "@id": "urn:ngm:class:hot-stuff",
         "label": "HotStuff"
       },
       {

@@ -142,7 +142,7 @@ alias:: NetworkInfrastructure
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:3gpp",
+        "@id": "urn:ngm:class:3-gpp",
         "label": "3GPP"
       }
     ],

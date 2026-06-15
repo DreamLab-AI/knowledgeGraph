@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:zk-rollup",
+  "title": "ZK Rollup",
+  "slug": "zk-rollup",
+  "public": true,
+  "classIri": "urn:ngm:class:zk-rollup",
+  "domain": "blockchain",
+  "definition": "A ZK rollup is a Layer 2 scaling construction that executes transactions off-chain and posts a succinct validity proof, typically a zk-SNARK or zk-STARK, to a Layer 1 chain so the base layer can verify correctness without re-executing the batch. Compressed transaction data and the proof are published on-chain, inheriting the security of the underlying settlement layer while drastically reducing per-transaction cost. Unlike optimistic rollups, finality does not require a fraud-proof challenge window because validity is proven cryptographically.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rollup",
+      "label": "Rollup"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:trustless-settlement",
+        "label": "Trustless Settlement"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:layer-2-networks",
+        "label": "Layer 2 Networks"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

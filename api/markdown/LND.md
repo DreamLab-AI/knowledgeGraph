@@ -83,7 +83,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       },
       {
@@ -117,7 +117,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:c-lightning",
+        "@id": "urn:ngm:class:core-lightning",
         "label": "Core Lightning"
       },
       {

@@ -143,7 +143,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c-standards",
+        "@id": "urn:ngm:class:w-3-c-standards",
         "label": "W3C Standards"
       },
       {

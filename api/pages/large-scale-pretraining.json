@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:large-scale-pretraining",
+  "title": "Large-Scale Pretraining",
+  "slug": "large-scale-pretraining",
+  "public": true,
+  "classIri": "urn:ngm:class:large-scale-pretraining",
+  "domain": "artificial-intelligence",
+  "definition": "Large-scale pretraining is the training of a high-capacity neural network on a very large, broad corpus using a self-supervised objective, producing a general-purpose foundation model before any task-specific adaptation. It typically optimises an objective such as next-token prediction over web-scale text or paired multimodal data, learning transferable representations. The resulting model is later fine-tuned or prompted for downstream tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network-training",
+      "label": "Neural Network Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dataset",
+        "label": "Dataset"
+      },
+      {
+        "id": "urn:ngm:class:compute-cluster",
+        "label": "Compute Cluster"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:scaling-law",
+        "label": "Scaling Law"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      },
+      {
+        "id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    }
+  ]
+}

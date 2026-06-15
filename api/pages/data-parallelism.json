@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:data-parallelism",
+  "title": "Data Parallelism",
+  "slug": "data-parallelism",
+  "public": true,
+  "classIri": "urn:ngm:class:data-parallelism",
+  "domain": "machine-learning",
+  "definition": "Data parallelism is a parallel computing strategy in which the same operation is applied simultaneously to different partitions of a dataset distributed across multiple processing units. In machine learning it is the dominant approach to scaling model training: the model is replicated on every worker, each worker computes gradients on a distinct mini-batch shard, and gradients are aggregated through collective communication such as all-reduce before the synchronised parameter update. This contrasts with model parallelism, which splits a single model across devices, and underpins large-scale training on GPU and TPU clusters.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:parallel-processing",
+      "label": "Parallel Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gradient-aggregation",
+        "label": "Gradient Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:all-reduce",
+        "label": "All-Reduce"
+      },
+      {
+        "id": "urn:ngm:class:mini-batch",
+        "label": "Mini-Batch"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      },
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-scale-training",
+        "label": "Large-Scale Training"
+      },
+      {
+        "id": "urn:ngm:class:throughput-scaling",
+        "label": "Throughput Scaling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:network-bandwidth",
+        "label": "Network Bandwidth"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:parameter-server",
+        "label": "Parameter Server"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sharded-data-parallel",
+        "label": "Sharded Data Parallel"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

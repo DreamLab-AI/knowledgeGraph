@@ -194,7 +194,7 @@ public:: true
         "label": "Spatial Computing"
       },
       {
-        "@id": "urn:ngm:class:webxr",
+        "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       }
     ]

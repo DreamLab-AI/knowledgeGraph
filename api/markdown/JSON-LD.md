@@ -38,46 +38,115 @@ public:: true
   ],
   "relations": {
     "implements": [
-      {"@id": "urn:ngm:class:linked-data", "label": "Linked Data"},
-      {"@id": "urn:ngm:class:rdf", "label": "RDF"},
-      {"@id": "urn:ngm:class:semantic-web-linked-data-standard", "label": "Semantic Web Linked Data Standard"}
+      {
+        "@id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "@id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "@id": "urn:ngm:class:semantic-web-linked-data-standard",
+        "label": "Semantic Web Linked Data Standard"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:verifiable-credentials", "label": "Verifiable Credentials"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
-      {"@id": "urn:ngm:class:structured-data", "label": "Structured Data"},
-      {"@id": "urn:ngm:class:data-integrity", "label": "Data Integrity"}
+      {
+        "@id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "@id": "urn:ngm:class:structured-data",
+        "label": "Structured Data"
+      },
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:iri", "label": "IRI"},
-      {"@id": "urn:ngm:class:json-data-interchange-format", "label": "JSON Data Interchange Format"}
+      {
+        "@id": "urn:ngm:class:iri",
+        "label": "IRI"
+      },
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON Data Interchange Format"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:schema-org", "label": "Schema.org"},
-      {"@id": "urn:ngm:class:n-quads", "label": "N-Quads"}
+      {
+        "@id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      },
+      {
+        "@id": "urn:ngm:class:n-quads",
+        "label": "N-Quads"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:w3c", "label": "W3C"}
+      {
+        "@id": "urn:ngm:class:w3-c",
+        "label": "W3C"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"},
-      {"@id": "urn:ngm:class:turtle", "label": "Turtle"},
-      {"@id": "urn:ngm:class:rdf-xml", "label": "RDF/XML"}
+      {
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "@id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "@id": "urn:ngm:class:rdf-xml",
+        "label": "RDF/XML"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:sparql", "label": "SPARQL"},
-      {"@id": "urn:ngm:class:activity-pub", "label": "ActivityPub"},
-      {"@id": "urn:ngm:class:owl", "label": "OWL"},
-      {"@id": "urn:ngm:class:shacl", "label": "SHACL"}
+      {
+        "@id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "@id": "urn:ngm:class:activity-pub",
+        "label": "ActivityPub"
+      },
+      {
+        "@id": "urn:ngm:class:owl",
+        "label": "OWL"
+      },
+      {
+        "@id": "urn:ngm:class:shacl",
+        "label": "SHACL"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-identity", "label": "Decentralised Identity"},
-      {"@id": "urn:ngm:class:search-engine-optimisation", "label": "Search Engine Optimisation"}
+      {
+        "@id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      },
+      {
+        "@id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:json-for-linking-data", "label": "JSON for Linking Data"}
+    {
+      "@id": "urn:ngm:class:json-for-linking-data",
+      "label": "JSON for Linking Data"
+    }
   ],
   "quality": 0.74,
   "provenance": {

@@ -96,7 +96,7 @@ public:: true
         "label": "Cloud Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       },
       {

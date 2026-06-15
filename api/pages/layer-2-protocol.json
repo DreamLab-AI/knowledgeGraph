@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:layer-2-protocol",
+  "title": "Layer-2 Protocol",
+  "slug": "layer-2-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:layer-2-protocol",
+  "domain": "blockchain",
+  "definition": "A layer-2 protocol is a scaling construction built on top of an underlying layer-1 blockchain that executes transactions off the base chain while inheriting its security guarantees through periodic settlement. By batching, compressing, or channelling activity off-chain and committing only succinct proofs or state commitments to layer 1, these protocols dramatically increase throughput and reduce fees without changing the base consensus. Major families include rollups (optimistic and zero-knowledge), state channels, and sidechains, each trading off security, latency, and capital efficiency differently while bridging assets and messages back to the secured base layer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-scalability",
+      "label": "Blockchain Scalability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-throughput",
+        "label": "Transaction Throughput"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:layer-1-blockchain",
+        "label": "Layer-1 Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:layer-1-blockchain",
+        "label": "Layer-1 Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:arbitrum",
+        "label": "Arbitrum"
+      },
+      {
+        "id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

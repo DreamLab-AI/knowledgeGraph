@@ -148,7 +148,7 @@ elevatedFrom:: [[Llama]]
         "label": "Parameter-Efficient Fine-Tuning"
       },
       {
-        "@id": "urn:ngm:class:quantization",
+        "@id": "urn:ngm:class:quantisation",
         "label": "Quantization"
       }
     ]

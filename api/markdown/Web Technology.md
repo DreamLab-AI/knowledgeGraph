@@ -62,11 +62,11 @@ public:: true
         "label": "CSS"
       },
       {
-        "@id": "urn:ngm:class:javascript",
+        "@id": "urn:ngm:class:java-script",
         "label": "JavaScript"
       },
       {
-        "@id": "urn:ngm:class:webassembly",
+        "@id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       },
       {
@@ -128,13 +128,13 @@ public:: true
         "label": "REST API"
       },
       {
-        "@id": "urn:ngm:class:graphql",
+        "@id": "urn:ngm:class:graph-ql",
         "label": "GraphQL"
       }
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       },
       {

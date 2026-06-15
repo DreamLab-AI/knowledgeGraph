@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:carbon-aware-computing",
+  "title": "Carbon-Aware Computing",
+  "slug": "carbon-aware-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:carbon-aware-computing",
+  "domain": "infrastructure",
+  "definition": "Carbon-aware computing is the practice of scheduling and placing computational workloads to minimise their associated greenhouse-gas emissions by responding to the time-varying and location-varying carbon intensity of electricity. Rather than only reducing energy use, it shifts flexible work to periods and regions where the grid is cleaner. The approach combines real-time grid carbon-intensity signals with workload orchestration to lower the carbon footprint of data centres and cloud services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:green-computing",
+      "label": "Green Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:green-computing",
+        "label": "Green Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:lifecycle-assessment",
+        "label": "Lifecycle Assessment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

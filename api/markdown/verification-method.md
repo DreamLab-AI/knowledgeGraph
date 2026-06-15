@@ -1,0 +1,33 @@
+- ### Definition
+- A verification method is a [[DID Document]] entry declaring the [[Cryptographic Key]] material used to authenticate a subject. It carries a [[Public Key]] and is referenced by relationships such as [[Authentication]] to validate a [[Digital Signature]].
+- ### Overview
+- Decentralised identifiers separate the identifier from the keys that control it; verification methods are the named, published bindings between the two.
+- A DID document can list multiple verification methods, each with a distinct key type and purpose, allowing rotation and separation of authentication from assertion or key agreement.
+- Verifiers resolve the DID, retrieve the relevant verification method and check a presented proof against the declared key material.
+- ### Mechanisms
+- Key declaration: public key, key type and controller embedded in the DID document.
+- Verification relationships: authentication, assertionMethod, keyAgreement and others reference methods by id.
+- Proof checking: signatures and credential proofs validated against the referenced key.
+- Rotation: outdated methods removed and replaced without changing the identifier.
+- ### Applications
+- Authenticating control of a decentralised identifier.
+- Verifying verifiable credentials and presentations.
+- Establishing secure channels via key agreement.
+- ### Relationships
+- partOf:: [[DID Document]]
+- hasPart:: [[Public Key]]
+- hasPart:: [[Cryptographic Key]]
+- requires:: [[Cryptographic Key]]
+- requires:: [[Key Management]]
+- implements:: [[Authentication]]
+- enables:: [[Credential Verification]]
+- enables:: [[Identity Verification]]
+- uses:: [[Digital Signature]]
+- uses:: [[Cryptographic Proof]]
+- supports:: [[Verifiable Credential]]
+- dependsOn:: [[Self-Sovereign Identity]]
+- standardizedBy:: [[Decentralized Identifier]]
+- relatedTo:: [[Zero-Knowledge Proof]]
+- relatedTo:: [[Verification]]
+- ### Provenance
+- updated:: 2026-06-15

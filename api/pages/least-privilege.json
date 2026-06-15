@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:least-privilege",
+  "title": "Least Privilege",
+  "slug": "least-privilege",
+  "public": true,
+  "classIri": "urn:ngm:class:least-privilege",
+  "domain": "security",
+  "definition": "Least privilege is a security principle stating that every user, process or component should be granted only the minimum access rights necessary to perform its function, and no more. By limiting permissions to what is strictly required, the principle reduces the attack surface and confines the damage that a compromised account or faulty component can cause. It is a cornerstone of access control and underpins modern approaches such as zero-trust architecture and defence in depth.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:access-control",
+      "label": "Access Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:defense-in-depth",
+        "label": "Defence in Depth"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:privilege-escalation",
+        "label": "Privilege Escalation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:endpoint-security",
+        "label": "Endpoint Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:defense-in-depth",
+        "label": "Defence in Depth"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    }
+  ]
+}

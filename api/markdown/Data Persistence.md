@@ -38,65 +38,173 @@ public:: true
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:write-ahead-logging", "label": "Write-Ahead Logging"},
-      {"@id": "urn:ngm:class:database-replication", "label": "Database Replication"},
-      {"@id": "urn:ngm:class:object-storage", "label": "Object Storage"},
-      {"@id": "urn:ngm:class:event-sourcing", "label": "Event Sourcing"}
+      {
+        "@id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      },
+      {
+        "@id": "urn:ngm:class:database-replication",
+        "label": "Database Replication"
+      },
+      {
+        "@id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "@id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:data-management", "label": "Data Management"},
-      {"@id": "urn:ngm:class:system-architecture", "label": "System Architecture"}
+      {
+        "@id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "@id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:database-system", "label": "Database System"},
-      {"@id": "urn:ngm:class:storage-engine", "label": "Storage Engine"},
-      {"@id": "urn:ngm:class:file-system", "label": "File System"}
+      {
+        "@id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      },
+      {
+        "@id": "urn:ngm:class:storage-engine",
+        "label": "Storage Engine"
+      },
+      {
+        "@id": "urn:ngm:class:file-system",
+        "label": "File System"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:crash-recovery", "label": "Crash Recovery"},
-      {"@id": "urn:ngm:class:audit-logging", "label": "Audit Logging"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:crash-recovery",
+        "label": "Crash Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:acid-properties", "label": "ACID Properties"},
-      {"@id": "urn:ngm:class:consensus-algorithm", "label": "Consensus Algorithm"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"}
+      {
+        "@id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:cap-theorem", "label": "CAP Theorem"},
-      {"@id": "urn:ngm:class:pacelc-model", "label": "PACELC Model"}
+      {
+        "@id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "@id": "urn:ngm:class:pacelc-model",
+        "label": "PACELC Model"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:lsm-tree", "label": "LSM Tree"},
-      {"@id": "urn:ngm:class:b-tree-index", "label": "B-Tree Index"},
-      {"@id": "urn:ngm:class:erasure-coding", "label": "Erasure Coding"}
+      {
+        "@id": "urn:ngm:class:lsm-tree",
+        "label": "LSM Tree"
+      },
+      {
+        "@id": "urn:ngm:class:b-tree-index",
+        "label": "B-Tree Index"
+      },
+      {
+        "@id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:cqrs-pattern", "label": "CQRS Pattern"},
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"}
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:cqrs-pattern",
+        "label": "CQRS Pattern"
+      },
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:in-memory-computing", "label": "In-Memory Computing"},
-      {"@id": "urn:ngm:class:volatile-storage", "label": "Volatile Storage"},
-      {"@id": "urn:ngm:class:eventual-consistency", "label": "Eventual Consistency"}
+      {
+        "@id": "urn:ngm:class:in-memory-computing",
+        "label": "In-Memory Computing"
+      },
+      {
+        "@id": "urn:ngm:class:volatile-storage",
+        "label": "Volatile Storage"
+      },
+      {
+        "@id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:blockchain-ledger", "label": "Blockchain Ledger"},
-      {"@id": "urn:ngm:class:vector-database", "label": "Vector Database"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:blockchain-ledger",
+        "label": "Blockchain Ledger"
+      },
+      {
+        "@id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:replication-system", "label": "Replication System"},
-      {"@id": "urn:ngm:class:data-serialisation", "label": "Data Serialisation"},
-      {"@id": "urn:ngm:class:backup-and-recovery", "label": "Backup and Recovery"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:replication-system",
+        "label": "Replication System"
+      },
+      {
+        "@id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialisation"
+      },
+      {
+        "@id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:durable-storage", "label": "Durable Storage"},
-    {"@id": "urn:ngm:class:data-durability", "label": "Data Durability"}
+    {
+      "@id": "urn:ngm:class:durable-storage",
+      "label": "Durable Storage"
+    },
+    {
+      "@id": "urn:ngm:class:data-durability",
+      "label": "Data Durability"
+    }
   ],
   "quality": 0.73,
   "provenance": {

@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:acid-properties",
+  "title": "ACID Properties",
+  "slug": "acid-properties",
+  "public": true,
+  "classIri": "urn:ngm:class:acid-properties",
+  "domain": "distributed-systems",
+  "definition": "ACID Properties are the four guarantees - Atomicity, Consistency, Isolation and Durability - that define a reliable database transaction. Atomicity ensures a transaction is all-or-nothing; Consistency preserves invariants; Isolation hides concurrent intermediate states; and Durability persists committed results across failures. Together they let applications reason about correctness despite concurrency and crashes, distinguishing strongly consistent transactional systems from eventually consistent alternatives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transaction",
+      "label": "Transaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      },
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      },
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      },
+      {
+        "id": "urn:ngm:class:database-systems",
+        "label": "Database Systems"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:challenge-response-protocol",
+  "title": "Challenge-Response Protocol",
+  "slug": "challenge-response-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:challenge-response-protocol",
+  "domain": "security",
+  "definition": "A challenge-response protocol is an authentication protocol in which a verifier issues an unpredictable challenge and the claimant must return a response computed from a shared secret or private key, proving knowledge of the credential without transmitting it. Because each challenge is fresh, typically a random nonce, a valid response cannot be reused, defeating replay attacks. The pattern underpins many authentication mechanisms including CHAP, HMAC-based schemes, and public-key signature challenges.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication-protocol",
+      "label": "Authentication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authentication-protocol",
+        "label": "Authentication Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:authentication-standards",
+        "label": "Authentication Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:authentication-mechanism",
+        "label": "Authentication Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "humanity-attestation",
+      "label": "Humanity Attestation"
+    }
+  ]
+}

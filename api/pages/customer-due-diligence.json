@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:customer-due-diligence",
+  "title": "Customer Due Diligence",
+  "slug": "customer-due-diligence",
+  "public": true,
+  "classIri": "urn:ngm:class:customer-due-diligence",
+  "domain": "finance",
+  "definition": "Customer due diligence (CDD) is the set of regulated procedures by which a financial institution or obliged entity identifies and verifies a customer, understands the nature and purpose of the business relationship, and assesses the money-laundering and terrorist-financing risk it poses. It encompasses identity verification, beneficial-ownership identification, screening against sanctions and politically exposed person lists, and ongoing monitoring of transactions and risk profile. CDD is a core obligation of anti-money-laundering regimes, calibrated through a risk-based approach that escalates to enhanced due diligence for higher-risk customers and permits simplified measures for lower-risk ones.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:know-your-customer",
+      "label": "Know Your Customer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:beneficial-ownership",
+        "label": "Beneficial Ownership"
+      },
+      {
+        "id": "urn:ngm:class:enhanced-due-diligence",
+        "label": "Enhanced Due Diligence"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:risk-based-approach",
+        "label": "Risk-Based Approach"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:enhanced-due-diligence",
+        "label": "Enhanced Due Diligence"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:politically-exposed-person",
+        "label": "Politically Exposed Person"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

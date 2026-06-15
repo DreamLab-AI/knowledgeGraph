@@ -190,7 +190,7 @@ public:: true
         "label": "X.509 Standard"
       },
       {
-        "@id": "urn:ngm:class:oauth2",
+        "@id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
       },
       {

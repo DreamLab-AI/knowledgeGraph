@@ -1,0 +1,35 @@
+- ### Definition
+  - [[Stress Testing]] estimates how firms or portfolios behave under severe but plausible adverse scenarios.
+  - It is a core technique of [[Risk Management]] and a supervisory instrument of [[Prudential Regulation]].
+  - It builds on [[Scenario Analysis]] and [[Simulation]] to quantify tail losses and capital depletion.
+- ### Overview
+  - Routine risk measures capture normal conditions; stress testing probes the extreme tail where institutions fail.
+  - Tests apply hypothetical or historical shocks to balance sheets, exposures and funding.
+  - Supervisory stress tests aggregate across firms to gauge systemic resilience and set capital expectations.
+  - Reverse stress testing instead asks which scenarios would render a firm non-viable.
+- ### Mechanisms
+  - Scenario design specifies adverse macroeconomic and market paths.
+  - Loss projection models translate scenarios into losses and capital impacts.
+  - Sensitivity and reverse tests explore single-factor shocks and breaking points.
+  - Capital and liquidity metrics are recomputed under stressed conditions.
+- ### Applications
+  - Bank capital adequacy assessment under regulatory frameworks.
+  - Insurance solvency and reserve resilience testing.
+  - Portfolio and trading-book risk evaluation.
+  - System-wide macroprudential surveillance by central banks.
+- ### Relationships
+  - partOf:: [[Risk Management]]
+  - partOf:: [[Prudential Regulation]]
+  - hasPart:: [[Scenario Analysis]]
+  - implements:: [[Risk Assessment]]
+  - requires:: [[Scenario Analysis]]
+  - requires:: [[Simulation]]
+  - uses:: [[Simulation]]
+  - enables:: [[Capital Adequacy]]
+  - enables:: [[Financial Stability]]
+  - supports:: [[Regulatory Compliance]]
+  - contrastsWith:: [[Systemic Risk]]
+  - relatedTo:: [[Basel III]]
+  - relatedTo:: [[Central Bank]]
+- ### Provenance
+  - updated:: 2026-06-15

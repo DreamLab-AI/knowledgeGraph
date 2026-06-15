@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:itu",
+  "title": "ITU",
+  "slug": "itu",
+  "public": true,
+  "classIri": "urn:ngm:class:itu",
+  "domain": "infrastructure",
+  "definition": "The International Telecommunication Union (ITU) is the United Nations specialised agency responsible for information and communication technologies, coordinating global use of the radio spectrum and satellite orbits, developing technical standards and working to expand connectivity worldwide. Through its sectors for radiocommunication, standardization and development it produces recommendations that underpin interoperable telecommunications infrastructure. It is one of the principal international bodies governing the global telecommunications system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      },
+      {
+        "id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      },
+      {
+        "id": "urn:ngm:class:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "documentation-standards",
+      "label": "Documentation Standards"
+    }
+  ]
+}

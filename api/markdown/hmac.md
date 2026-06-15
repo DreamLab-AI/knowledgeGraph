@@ -1,0 +1,34 @@
+- ### Definition
+- [[HMAC]] is a keyed message authentication code built on a [[Cryptography]] hash function such as [[SHA-256]]. It implements message [[Authentication]] and integrity, supports protocols like [[TLS]], and underpins signing of a [[Token]] by binding a secret key to message content.
+- ### Overview
+- HMAC combines a secret key with a cryptographic hash to yield a tag that proves a message was produced by a party holding the key and was not altered.
+- The construction hashes the message together with key-derived inner and outer pad values, which strengthens it against certain attacks on the bare hash.
+- Verification recomputes the tag from the received message and key and compares it in constant time to the supplied tag.
+- HMAC can be instantiated with different hash functions, with HMAC-SHA-256 being a common choice.
+- ### Mechanisms
+- Keying: a shared secret key parameterises the computation.
+- Double hashing: inner and outer applications of the hash with padded keys.
+- Tag generation: output is a fixed-length authentication tag.
+- Constant-time verification: comparison avoids timing side channels.
+- ### Applications
+- Authenticating API requests by signing payloads or headers.
+- Signing and verifying tokens such as JWTs using the HS family of algorithms.
+- Message integrity within TLS and other transport security protocols.
+- Deriving and verifying webhooks and inter-service messages.
+- ### Relationships
+- subClassOf:: [[Cryptography]]
+- implements:: [[Authentication]]
+- uses:: [[SHA-256]]
+- requires:: [[SHA-256]]
+- dependsOn:: [[Cryptography]]
+- enables:: [[Security]]
+- supports:: [[TLS]]
+- hasPart:: [[SHA-256]]
+- bridgesTo:: [[Token]]
+- contrastsWith:: [[Authorization]]
+- relatedTo:: [[TLS]]
+- relatedTo:: [[Authentication]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:enterprise-resource-planning",
+  "title": "Enterprise Resource Planning",
+  "slug": "enterprise-resource-planning",
+  "public": true,
+  "classIri": "urn:ngm:class:enterprise-resource-planning",
+  "domain": "data",
+  "definition": "Enterprise resource planning (ERP) is an integrated category of business software that unifies core organisational processes - finance, procurement, manufacturing, inventory, human resources and sales - around a shared data model and central database. By recording transactions once and propagating them across modules, ERP systems eliminate data silos and give a consistent, real-time view of operations. Modern ERP is frequently delivered as a cloud service and extended with analytics and supply-chain capabilities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:business-process-management",
+      "label": "Business Process Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:crm",
+        "label": "CRM"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    }
+  ]
+}

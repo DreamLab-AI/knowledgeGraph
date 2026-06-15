@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:directx",
+  "title": "DirectX",
+  "slug": "directx",
+  "public": true,
+  "classIri": "urn:ngm:class:directx",
+  "domain": "spatial-computing",
+  "definition": "DirectX is a collection of application programming interfaces developed by Microsoft for handling multimedia tasks, especially graphics and gaming, on Windows and Xbox platforms. Its Direct3D component provides low-level access to graphics hardware for real-time rendering, while related APIs cover input, audio and compute. By abstracting diverse hardware behind a common interface, it lets developers target a wide range of GPUs through a single programming model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graphics-api",
+      "label": "Graphics API"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:rendering-engine",
+        "label": "Rendering Engine"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:microsoft",
+        "label": "Microsoft"
+      },
+      {
+        "id": "urn:ngm:class:gaming",
+        "label": "Gaming"
+      },
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

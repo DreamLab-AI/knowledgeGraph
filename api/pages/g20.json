@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:g20",
+  "title": "G20",
+  "slug": "g20",
+  "public": true,
+  "classIri": "urn:ngm:class:g20",
+  "domain": "governance",
+  "definition": "The G20 (Group of Twenty) is an intergovernmental forum of nineteen major economies plus the European Union and African Union that coordinates international economic and financial policy. It convenes heads of state, finance ministers and central bank governors to address global financial stability, trade, development and systemic risk. Through its leaders' summits and working groups, the G20 sets the political agenda that bodies such as the Financial Stability Board, IMF and Basel Committee translate into standards and recommendations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-governance",
+      "label": "Economic Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:international-cooperation",
+        "label": "International Cooperation"
+      },
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:international-cooperation",
+        "label": "International Cooperation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:macroprudential-policy",
+        "label": "Macroprudential Policy"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:fiscal-policy",
+        "label": "Fiscal Policy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fsb",
+        "label": "FSB"
+      },
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:economic-governance",
+        "label": "Economic Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
+      },
+      {
+        "id": "urn:ngm:class:world-bank",
+        "label": "World Bank"
+      },
+      {
+        "id": "urn:ngm:class:oecd",
+        "label": "OECD"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

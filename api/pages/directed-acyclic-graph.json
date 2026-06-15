@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:directed-acyclic-graph",
+  "title": "Directed Acyclic Graph",
+  "slug": "directed-acyclic-graph",
+  "public": true,
+  "classIri": "urn:ngm:class:directed-acyclic-graph",
+  "domain": "distributed-collaboration",
+  "definition": "A directed acyclic graph (DAG) is a graph whose edges have direction and which contains no directed cycles, so no path returns to its starting vertex. This structure naturally encodes ordered dependencies, enabling a topological ordering of vertices and making DAGs foundational for scheduling, dependency resolution, version histories, and certain distributed-ledger designs. The absence of cycles guarantees that dependency chains terminate, which underpins many algorithms built on top of the structure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graph-theory",
+      "label": "Graph Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

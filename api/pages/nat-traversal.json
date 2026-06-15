@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:nat-traversal",
+  "title": "NAT Traversal",
+  "slug": "nat-traversal",
+  "public": true,
+  "classIri": "urn:ngm:class:nat-traversal",
+  "domain": "blockchain",
+  "definition": "NAT traversal is the set of techniques that let two devices behind Network Address Translation establish a direct connection despite the address rewriting and connection-tracking that NAT imposes. Methods such as hole punching, relaying and the coordination protocols STUN, TURN and ICE allow peers to discover routable endpoints and open paths through restrictive routers. NAT traversal is essential to peer-to-peer and decentralised networks where nodes behind home or corporate routers must reach one another without a central server.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      },
+      {
+        "id": "urn:ngm:class:decentralization",
+        "label": "Decentralisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    }
+  ]
+}

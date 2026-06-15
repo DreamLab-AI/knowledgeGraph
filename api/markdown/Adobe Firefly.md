@@ -90,7 +90,7 @@ public:: true
         "label": "Content Credentials"
       },
       {
-        "@id": "urn:ngm:class:c2pa",
+        "@id": "urn:ngm:class:c2-pa",
         "label": "C2PA"
       }
     ],

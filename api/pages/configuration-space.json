@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:configuration-space",
+  "title": "Configuration Space",
+  "slug": "configuration-space",
+  "public": true,
+  "classIri": "urn:ngm:class:configuration-space",
+  "domain": "robotics",
+  "definition": "Configuration space, often written C-space, is the set of all possible configurations of a robot, where each point fully specifies the position of every part of the mechanism. Its dimensionality equals the robot's degrees of freedom, and obstacles in the physical workspace map to forbidden regions, partitioning C-space into free and blocked subsets. Motion planning is then recast as finding a continuous path through the free portion of configuration space.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:motion-planning",
+      "label": "Motion Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:degrees-of-freedom",
+        "label": "Degrees of Freedom"
+      },
+      {
+        "id": "urn:ngm:class:joint-space",
+        "label": "Joint Space"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:workspace",
+        "label": "Workspace"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sampling-based-planning",
+        "label": "Sampling-Based Planning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:rapidly-exploring-random-tree",
+        "label": "Rapidly-Exploring Random Tree"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-roadmap",
+        "label": "Probabilistic Roadmap"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "rrt-algorithm",
+      "label": "RRT Algorithm"
+    }
+  ]
+}

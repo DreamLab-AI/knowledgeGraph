@@ -112,7 +112,7 @@ public:: true
         "label": "Spatial Computing"
       },
       {
-        "@id": "urn:ngm:class:6dof-tracking",
+        "@id": "urn:ngm:class:6-do-f-tracking",
         "label": "6DoF Tracking"
       }
     ],
@@ -122,7 +122,7 @@ public:: true
         "label": "Game Engine"
       },
       {
-        "@id": "urn:ngm:class:webxr",
+        "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       },
       {

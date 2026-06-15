@@ -85,7 +85,7 @@
         "label": "Linked Data"
       },
       {
-        "id": "urn:ngm:class:webauthn",
+        "id": "urn:ngm:class:web-authn",
         "label": "WebAuthn"
       },
       {
@@ -102,7 +102,7 @@
         "label": "AT Protocol"
       },
       {
-        "id": "urn:ngm:class:activitypub",
+        "id": "urn:ngm:class:activity-pub",
         "label": "ActivityPub"
       },
       {

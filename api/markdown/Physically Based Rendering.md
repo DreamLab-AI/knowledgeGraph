@@ -124,7 +124,7 @@ alias:: Physically-Based Rendering
         "label": "Phong Shading"
       },
       {
-        "@id": "urn:ngm:class:rasterisation",
+        "@id": "urn:ngm:class:rasterization",
         "label": "Rasterisation"
       }
     ],

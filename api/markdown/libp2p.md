@@ -102,7 +102,7 @@ public:: true
         "label": "Cryptographic Protocol"
       },
       {
-        "@id": "urn:ngm:class:webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       }
     ],

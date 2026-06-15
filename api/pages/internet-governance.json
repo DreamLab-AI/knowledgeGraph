@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:internet-governance",
+  "title": "Internet Governance",
+  "slug": "internet-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:internet-governance",
+  "domain": "governance",
+  "definition": "Internet Governance is the collective development and application of shared principles, norms, rules, decision-making procedures, and programmes that shape the evolution and use of the Internet. It spans technical coordination of identifiers and protocols, allocation of addresses, and policy debates over access, security, and rights, conducted through a multistakeholder model involving governments, the private sector, civil society, and the technical community. Internet governance balances global interoperability against competing claims of sovereignty, openness, and public interest.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-governance",
+      "label": "Digital Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

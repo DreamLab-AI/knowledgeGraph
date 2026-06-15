@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:consensus-process",
+  "title": "Consensus Process",
+  "slug": "consensus-process",
+  "public": true,
+  "classIri": "urn:ngm:class:consensus-process",
+  "domain": "standards",
+  "definition": "A consensus process is the structured, participatory procedure by which a standards body or governance group develops, refines, and adopts decisions through deliberation aimed at broad agreement rather than narrow majority voting. It gathers stakeholder input, circulates drafts for review and public comment, resolves objections substantively, and seeks a state of general acceptance \u2014 often characterised as rough consensus \u2014 where remaining dissent has been heard and addressed. The process underpins the legitimacy and durability of open standards by ensuring decisions reflect the considered views of affected parties rather than the preferences of a dominant actor.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:working-group",
+        "label": "Working Group"
+      },
+      {
+        "id": "urn:ngm:class:public-comment",
+        "label": "Public Comment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:deliberation",
+        "label": "Deliberation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voting",
+        "label": "Voting"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rough-consensus",
+        "label": "Rough Consensus"
+      },
+      {
+        "id": "urn:ngm:class:voting",
+        "label": "Voting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

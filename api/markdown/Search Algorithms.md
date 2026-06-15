@@ -120,7 +120,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:optimization",
+        "@id": "urn:ngm:class:optimisation",
         "label": "Optimization"
       },
       {
@@ -136,7 +136,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:data-structures",
+        "@id": "urn:ngm:class:data-structure",
         "label": "Data Structures"
       }
     ],

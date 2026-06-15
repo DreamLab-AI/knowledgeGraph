@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:discriminator-network",
+  "title": "Discriminator Network",
+  "slug": "discriminator-network",
+  "public": true,
+  "classIri": "urn:ngm:class:discriminator-network",
+  "domain": "machine-learning",
+  "definition": "A discriminator network is the adversarial component of a generative adversarial network that learns to distinguish real data samples from those synthesised by the generator. Trained as a binary classifier, it outputs a probability that a given input is genuine, and its gradients provide the learning signal that pushes the generator toward producing more realistic outputs. The discriminator and generator are locked in a minimax game whose equilibrium yields a generator whose samples are indistinguishable from real data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:generator-network",
+        "label": "Generator Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:generator-network",
+        "label": "Generator Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:adversarial-training",
+        "label": "Adversarial Training"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:gan",
+        "label": "GAN"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    }
+  ]
+}

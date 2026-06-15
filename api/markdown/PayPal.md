@@ -129,7 +129,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {
@@ -187,7 +187,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:remittance",
+        "@id": "urn:ngm:class:remittances",
         "label": "Remittance"
       },
       {

@@ -71,7 +71,7 @@ public:: true
         "label": "Bluetooth"
       },
       {
-        "@id": "urn:ngm:class:5g",
+        "@id": "urn:ngm:class:5-g",
         "label": "5G"
       },
       {
@@ -153,7 +153,7 @@ public:: true
         "label": "IEEE"
       },
       {
-        "@id": "urn:ngm:class:3gpp",
+        "@id": "urn:ngm:class:3-gpp",
         "label": "3GPP"
       },
       {

@@ -1,0 +1,32 @@
+- ### Definition
+- Privacy-preserving machine learning protects sensitive data throughout the [[Machine Learning]] lifecycle using [[Cryptography]], [[Differential Privacy]], and distributed training such as [[Federated Learning]]. It is a specialisation of [[Privacy-Enhancing Technologies]] applied to model training and inference.
+- ### Overview
+- Standard machine learning concentrates raw data and exposes models to membership-inference and reconstruction attacks; privacy-preserving variants limit this exposure by design.
+- The field spans formal guarantees (differential privacy), cryptographic computation over encrypted data, hardware isolation, and architectural decentralisation.
+- Practitioners trade off utility, computational cost, and privacy budget, choosing techniques to match a threat model and regulatory regime.
+- ### Mechanisms
+- [[Differential Privacy]] injects calibrated noise so that any single record has bounded influence on outputs.
+- [[Federated Learning]] keeps data on-device and aggregates only model updates across participants.
+- [[Homomorphic Encryption]] allows computation directly on ciphertext, while a [[Trusted Execution Environment]] isolates computation in attested hardware.
+- Secure aggregation combines client updates so the server never sees any individual contribution in the clear.
+- ### Applications
+- Cross-institution medical and financial modelling without pooling raw records.
+- On-device personalisation that supports [[Edge Computing]] and mobile keyboards.
+- Regulated analytics that must demonstrate [[Data Privacy]] compliance.
+- Collaborative model building among mutually distrustful organisations.
+- ### Relationships
+- partOf:: [[Privacy-Enhancing Technologies]]
+- hasPart:: [[Differential Privacy]]
+- hasPart:: [[Federated Learning]]
+- uses:: [[Homomorphic Encryption]]
+- uses:: [[Cryptography]]
+- uses:: [[Trusted Execution Environment]]
+- requires:: [[Machine Learning]]
+- enables:: [[Data Privacy]]
+- supports:: [[Edge Computing]]
+- bridgesTo:: [[Security]]
+- relatedTo:: [[Privacy]]
+- relatedTo:: [[Encryption]]
+- relatedTo:: [[Model Training]]
+- ### Provenance
+- updated:: 2026-06-15

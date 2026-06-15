@@ -1,0 +1,36 @@
+- ### Definition
+  - Ontology alignment is the process of determining correspondences between the concepts, properties and relations of two or more separately developed ontologies. The output, an alignment or set of mappings, allows systems using different ontologies to interoperate by translating or relating their terms. Alignment is a core enabler of semantic interoperability across heterogeneous knowledge sources and is closely related to schema matching and entity resolution.
+  - Related core concepts: [[Ontology]] [[Semantic Interoperability]] [[Knowledge Graph]] [[Reasoning]] [[Entity Resolution]]
+- ### Overview
+  - When organisations independently model the same domain, their ontologies diverge in vocabulary, granularity and structure even when they describe the same things. Ontology alignment computes mappings, such as equivalence, subsumption or relatedness, between these models, often combining lexical similarity, structural analysis and logical reasoning. The resulting alignments allow query rewriting, data integration and reasoning across previously siloed knowledge bases.
+- ### Mechanisms
+  - Lexical matching compares labels, synonyms and definitions of terms.
+  - Structural matching exploits the graph topology around concepts.
+  - Logical reasoning validates and infers mappings using OWL semantics.
+  - Mappings carry relation types such as equivalence and subsumption.
+  - Confidence scores and human review refine candidate correspondences.
+- ### Applications
+  - Integrating data described by different domain ontologies.
+  - Federated querying across heterogeneous knowledge graphs.
+  - Merging vocabularies in linked-data and semantic-web systems.
+  - Mapping enterprise schemas to shared reference ontologies.
+- ### Relationships
+  - subClassOf:: [[Ontology]]
+  - partOf:: [[Ontology]]
+  - hasPart:: [[Mapping]]
+  - requires:: [[Ontology]]
+  - requires:: [[Reasoning]]
+  - enables:: [[Semantic Interoperability]]
+  - enables:: [[Data Integration]]
+  - uses:: [[Reasoning]]
+  - supports:: [[Interoperability]]
+  - supports:: [[Knowledge Graph]]
+  - contrastsWith:: [[Entity Resolution]]
+  - relatedTo:: [[Semantic Web]]
+  - relatedTo:: [[Linked Data]]
+  - relatedTo:: [[OWL]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

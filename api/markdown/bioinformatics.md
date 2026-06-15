@@ -1,0 +1,39 @@
+- ### Definition
+  - Bioinformatics is a subfield of [[Computational Biology]] that builds algorithms and software to analyse biological data at scale.
+  - It applies [[Machine Learning]], [[Statistics]], and [[Data Science]] to molecular sequences, structures, and networks.
+  - Core tasks include [[Sequence Alignment]], genome assembly, and [[Protein Structure Prediction]].
+- ### Overview
+  - High-throughput technologies such as next-generation [[DNA Sequencing]] produce datasets too large to interpret by hand, motivating automated pipelines.
+  - Bioinformatics sits at the intersection of life sciences and computing, translating noisy measurements into structured, queryable knowledge.
+  - Recent advances in deep learning, exemplified by [[AlphaFold]], have reshaped structure prediction and functional annotation.
+- ### Key aspects
+  - Algorithmic analysis of nucleotide and amino-acid sequences.
+  - Statistical modelling of variation, expression, and evolutionary relationships.
+  - Integration of heterogeneous omics data into coherent biological models.
+- ### Mechanisms
+  - Alignment and assembly algorithms reconstruct genomes from sequencing reads.
+  - Probabilistic and machine-learning models classify variants and predict structure or function.
+  - Network inference links genes, proteins, and pathways into [[Systems Biology]] representations.
+- ### Applications
+  - [[Drug Discovery]] and target identification.
+  - Precision medicine and clinical [[Genomics]].
+  - Comparative and evolutionary biology, and [[Proteomics]] analysis.
+- ### Relationships
+  - subClassOf:: [[Computational Biology]]
+  - hasPart:: [[Sequence Alignment]]
+  - hasPart:: [[Genomics]]
+  - uses:: [[Machine Learning]]
+  - uses:: [[Statistics]]
+  - uses:: [[Data Science]]
+  - requires:: [[DNA Sequencing]]
+  - requires:: [[Proteomics]]
+  - enables:: [[Drug Discovery]]
+  - enables:: [[Protein Structure Prediction]]
+  - supports:: [[Systems Biology]]
+  - relatedTo:: [[AlphaFold]]
+  - bridgesTo:: [[Machine Learning]]
+  - bridgesTo:: [[Biology]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

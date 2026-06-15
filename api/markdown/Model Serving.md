@@ -131,7 +131,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       },
       {

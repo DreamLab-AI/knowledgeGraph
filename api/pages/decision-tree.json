@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:decision-tree",
+  "title": "Decision Tree",
+  "slug": "decision-tree",
+  "public": true,
+  "classIri": "urn:ngm:class:decision-tree",
+  "domain": "machine-learning",
+  "definition": "A decision tree is a supervised learning model that predicts an outcome by recursively partitioning the feature space into regions, represented as a tree of decision nodes and leaf nodes. Each internal node tests a feature against a threshold and routes an instance down a branch, while leaves assign a class label or numeric value. Decision trees are valued for their interpretability and form the building blocks of ensemble methods such as random forests and gradient boosting.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supervised-learning",
+      "label": "Supervised Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

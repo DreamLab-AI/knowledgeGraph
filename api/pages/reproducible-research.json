@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:reproducible-research",
+  "title": "Reproducible Research",
+  "slug": "reproducible-research",
+  "public": true,
+  "classIri": "urn:ngm:class:reproducible-research",
+  "domain": "ai",
+  "definition": "Reproducible research is the practice of conducting and reporting scientific work so that an independent party can obtain the same results from the same data and code. It encompasses sharing datasets, source code, computational environments, and detailed methodology alongside published findings. In machine learning it is the discipline of making experiments verifiable through fixed seeds, versioned artefacts, recorded hyperparameters, and documented hardware, distinguishing genuine effects from artefacts of a particular run.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      },
+      {
+        "id": "urn:ngm:class:container",
+        "label": "Container"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:jupyter-notebook",
+        "label": "Jupyter Notebook"
+      },
+      {
+        "id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

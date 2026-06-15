@@ -1,0 +1,121 @@
+{
+  "id": "urn:visionflow:page:chaos-engineering",
+  "title": "Chaos Engineering",
+  "slug": "chaos-engineering",
+  "public": true,
+  "classIri": "urn:ngm:class:chaos-engineering",
+  "domain": "infrastructure",
+  "definition": "Chaos engineering is the discipline of experimenting on a software system by deliberately injecting controlled faults \u2014 such as instance termination, network latency, or resource exhaustion \u2014 in order to build confidence in the system's ability to withstand turbulent, real-world conditions. Practitioners form a hypothesis about steady-state behaviour, introduce a failure in production or production-like environments, and observe whether the system maintains its service level. Originating with Netflix's Chaos Monkey, the practice surfaces hidden dependencies and weaknesses before they cause outages, complementing observability and resilient design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:site-reliability-engineering",
+      "label": "Site Reliability Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fault-injection",
+        "label": "Fault Injection"
+      },
+      {
+        "id": "urn:ngm:class:steady-state-hypothesis",
+        "label": "Steady-State Hypothesis"
+      },
+      {
+        "id": "urn:ngm:class:blast-radius-control",
+        "label": "Blast Radius Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-qa-testing",
+        "label": "Traditional QA Testing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:game-day",
+        "label": "Game Day Exercise"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chaos-monkey",
+        "label": "Chaos Monkey"
+      },
+      {
+        "id": "urn:ngm:class:fault-injection",
+        "label": "Fault Injection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:resilient-architecture",
+        "label": "Resilient Architecture"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:resilience-engineering",
+        "label": "Resilience Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ]
+}

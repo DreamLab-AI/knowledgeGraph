@@ -67,7 +67,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:public-key",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
         "label": "Public Key"
       },
       {
@@ -145,7 +145,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       }
     ],

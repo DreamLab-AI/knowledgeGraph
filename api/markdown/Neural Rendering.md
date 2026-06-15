@@ -124,7 +124,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:rasterisation",
+        "@id": "urn:ngm:class:rasterization",
         "label": "Rasterisation"
       },
       {

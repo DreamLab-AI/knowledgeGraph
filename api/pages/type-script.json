@@ -28,7 +28,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:javascript",
+        "id": "urn:ngm:class:java-script",
         "label": "JavaScript"
       },
       {
@@ -67,7 +67,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:javascript",
+        "id": "urn:ngm:class:java-script",
         "label": "JavaScript"
       }
     ],
@@ -89,7 +89,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:react",
+        "id": "urn:ngm:class:re-act",
         "label": "React"
       }
     ],

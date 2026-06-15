@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:principal-component-analysis",
+  "title": "Principal Component Analysis",
+  "slug": "principal-component-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:principal-component-analysis",
+  "domain": "machine-learning",
+  "definition": "Principal Component Analysis (PCA) is an unsupervised linear technique that transforms correlated variables into a smaller set of uncorrelated components ordered by the variance they capture. The components are the eigenvectors of the data's covariance matrix, and projecting onto the leading components yields a lower-dimensional representation that preserves as much variance as possible. PCA is widely used for dimensionality reduction, noise reduction, visualisation, and feature decorrelation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    }
+  ]
+}

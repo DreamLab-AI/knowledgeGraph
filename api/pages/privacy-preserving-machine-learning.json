@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:privacy-preserving-machine-learning",
+  "title": "Privacy-Preserving Machine Learning",
+  "slug": "privacy-preserving-machine-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:privacy-preserving-machine-learning",
+  "domain": "security",
+  "definition": "Privacy-preserving machine learning is the set of techniques that train, evaluate, and serve machine-learning models while limiting exposure of sensitive training data and model internals. It combines cryptographic protocols, statistical guarantees, and distributed training architectures to bound what an adversary can learn about individual records. The goal is to retain predictive utility while satisfying confidentiality, regulatory, and trust constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:privacy-enhancing-technologies",
+      "label": "Privacy-Enhancing Technologies"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:privacy-enhancing-technologies",
+        "label": "Privacy-Enhancing Technologies"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    }
+  ]
+}

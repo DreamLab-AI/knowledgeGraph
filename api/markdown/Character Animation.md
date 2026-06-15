@@ -124,7 +124,7 @@ public:: true
         "label": "Universal Scene Description"
       },
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       }
     ]

@@ -1,0 +1,33 @@
+- ### Definition
+	- A [[Challenge-Response Protocol]] is an [[Authentication Protocol]] where a verifier sends a fresh challenge and the claimant returns a secret-derived response, proving possession of a credential without revealing it.
+	- The freshness of each [[Nonce]] challenge prevents replay, a core property of any [[Cryptographic Protocol]].
+- ### Overview
+	- The verifier generates an unpredictable challenge; the claimant transforms it using a shared key or private key and returns the result.
+	- The verifier recomputes or verifies the expected response and grants access only on a match.
+	- Because the secret never traverses the channel and the challenge changes each time, eavesdroppers cannot replay captured exchanges.
+- ### Mechanisms
+	- Symmetric variants use a keyed hash or MAC over the challenge (e.g. CHAP, HMAC challenges).
+	- Asymmetric variants ask the claimant to sign the challenge with a private key, verified against a public key ([[Digital Signature]]).
+	- A nonce, timestamp, or counter guarantees challenge freshness and supports [[Mutual Authentication]] when both parties challenge each other.
+- ### Applications
+	- Network access authentication (CHAP, EAP).
+	- Smart-card, FIDO, and hardware-token verification.
+	- Underlying step in [[Passwordless Authentication]] flows.
+- ### Relationships
+	- hasPart:: [[Nonce]]
+	- hasPart:: [[Cryptographic Protocol]]
+	- implements:: [[Authentication Protocol]]
+	- uses:: [[Digital Signature]]
+	- uses:: [[Encryption]]
+	- enables:: [[Mutual Authentication]]
+	- enables:: [[Identity Verification]]
+	- supports:: [[Authentication]]
+	- supports:: [[Passwordless Authentication]]
+	- partOf:: [[Authentication Mechanism]]
+	- standardizedBy:: [[Authentication Standards]]
+	- contrastsWith:: [[Zero-Knowledge Proof]]
+	- relatedTo:: [[Kerberos]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

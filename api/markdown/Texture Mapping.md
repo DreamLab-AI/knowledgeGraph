@@ -94,7 +94,7 @@ public:: true
         "label": "UV Unwrapping"
       },
       {
-        "@id": "urn:ngm:class:rasterisation",
+        "@id": "urn:ngm:class:rasterization",
         "label": "Rasterisation"
       },
       {
@@ -168,7 +168,7 @@ public:: true
         "label": "Khronos Group"
       },
       {
-        "@id": "urn:ngm:class:opengl",
+        "@id": "urn:ngm:class:open-gl",
         "label": "OpenGL"
       }
     ],

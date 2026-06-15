@@ -1,0 +1,41 @@
+- ### Definition
+- A **Merkle Patricia Trie** is a cryptographically authenticated [[Data Structure]] that fuses a Patricia (radix) trie with Merkle hashing.
+- It is a specialised [[Merkle Tree]] in which each node is addressed by the [[Cryptographic Hash Function]] of its contents, so a single root hash commits to all stored data.
+- It is the structure [[Ethereum]] uses to store account state, enabling compact [[Merkle Proof]]s of inclusion.
+- ### Overview
+- A plain Patricia trie stores key-value pairs by their shared key prefixes, compressing chains of single-child nodes for efficiency.
+- The Merkle layer replaces ordinary child pointers with the cryptographic hashes of child nodes, turning the trie into a Merkle structure whose root hash uniquely fingerprints the whole dataset.
+- Any modification to a value changes the hash of its node and every ancestor up to the root, making tampering detectable and giving a stable commitment to a snapshot of state.
+- Ethereum uses Merkle Patricia Tries for its world state, per-account storage, transactions, and receipts; clients can prove a single account balance or storage slot with a path of hashes rather than the full state.
+- The structure thus provides both efficient updates and succinct verification, central to light-client and stateless-verification designs.
+- ### Mechanisms
+- Prefix compression: a radix/Patricia trie collapses single-child paths.
+- Node typing: branch, extension, and leaf nodes encode the key path and values.
+- Merkle hashing: each node is keyed by the hash of its serialised contents.
+- Root commitment: one state root hash commits to the entire dataset.
+- Proofs: a [[Merkle Proof]] supplies the hash path needed to verify one entry.
+- ### Applications
+- Storing the Ethereum world state and per-contract storage in the [[EVM]].
+- Light clients verifying account balances without full state.
+- Generating inclusion proofs for [[Verification]] of state or transactions.
+- Authenticating [[Smart Contract]] storage and transaction receipts.
+- ### Relationships
+- hasPart:: [[Cryptographic Hash Function]]
+- hasPart:: [[Merkle Proof]]
+- dependsOn:: [[Cryptographic Hash Function]]
+- requires:: [[Cryptographic Hash Function]]
+- uses:: [[Data Structure]]
+- uses:: [[Persistence]]
+- implements:: [[Account Model]]
+- enables:: [[Merkle Proof]]
+- enables:: [[Verification]]
+- supports:: [[Ethereum]]
+- supports:: [[EVM]]
+- partOf:: [[Ethereum]]
+- contrastsWith:: [[Merkle DAG]]
+- relatedTo:: [[Nonce]]
+- relatedTo:: [[Smart Contract]]
+- ### Provenance
+- updated:: 2026-06-15
+- generatedAt:: 2026-06-15
+- inferenceRule:: GapMaterialisation

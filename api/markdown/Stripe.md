@@ -103,7 +103,7 @@ public:: true
         "label": "Webhook"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {
@@ -123,7 +123,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:paypal",
+        "@id": "urn:ngm:class:pay-pal",
         "label": "PayPal"
       },
       {

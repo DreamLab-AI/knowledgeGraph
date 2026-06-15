@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:open-source-governance",
+  "title": "Open Source Governance",
+  "slug": "open-source-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:open-source-governance",
+  "domain": "blockchain",
+  "definition": "Open source governance is the set of processes, roles and norms by which an open source project makes decisions about its direction, accepts contributions, resolves disputes and manages releases. Models range from benevolent-dictator and meritocratic maintainer structures to elected steering committees and foundation stewardship, each balancing openness against the need for coordination. It determines who may merge changes, how proposals are reviewed, and how the project sustains trust and continuity across a distributed, often volunteer, community.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-governance",
+      "label": "Decentralised Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ethereum-smart-contract-platform-foundation",
+        "label": "Ethereum Foundation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    }
+  ]
+}

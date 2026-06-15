@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:state-space-representation",
+  "title": "State Space Representation",
+  "slug": "state-space-representation",
+  "public": true,
+  "classIri": "urn:ngm:class:state-space-representation",
+  "domain": "robotics",
+  "definition": "State space representation is a mathematical model that describes a dynamical system through a set of state variables, capturing all information needed to determine the system's future behaviour given its inputs. It expresses the system as first-order differential or difference equations relating states, inputs and outputs, typically in matrix form. The formulation underpins modern control, estimation, planning and search by providing a compact, computable description of the system over time.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      },
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:dynamical-systems-theory",
+        "label": "Dynamical Systems Theory"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:search-algorithms",
+        "label": "Search Algorithms"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:dynamical-systems-theory",
+        "label": "Dynamical Systems Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    }
+  ]
+}

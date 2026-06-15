@@ -45,7 +45,7 @@ alias:: Cyber-Physical Systems
         "label": "Embedded Systems"
       },
       {
-        "@id": "urn:ngm:class:sensor-network",
+        "@id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Network"
       },
       {

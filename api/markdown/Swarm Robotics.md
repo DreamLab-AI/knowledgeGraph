@@ -215,7 +215,7 @@ alias:: SwarmRobotics
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:self-organization",
+        "@id": "urn:ngm:class:self-organisation",
         "label": "Self-Organization"
       },
       {

@@ -1,0 +1,37 @@
+- ### Definition
+  - Large-scale pretraining trains a high-capacity model on a broad corpus with a [[Self-Supervised Learning]] objective, as a form of [[Neural Network Training]].
+  - It produces a general-purpose [[Foundation Model]] before any task-specific adaptation.
+  - The resulting representations are later adapted via [[Fine-Tuning]] or prompting.
+- ### Overview
+  - The dominant recipe optimises next-token prediction (or masked prediction) over web-scale data using a [[Transformer Architecture]].
+  - Self-supervision removes the need for human labels at scale, letting models learn from raw text, code, images, and other modalities.
+  - Scaling laws describe how loss improves predictably with model size, data, and compute, guiding resource allocation.
+  - Pretraining is enormously resource-intensive, requiring large [[Compute Cluster]] deployments of accelerators and careful data curation.
+- ### Key aspects
+  - Objective: a self-supervised loss such as autoregressive or masked language modelling.
+  - Scale: parameters, tokens, and compute are jointly increased per scaling-law guidance.
+  - Data: deduplicated, filtered, and balanced corpora strongly affect downstream quality.
+  - Efficiency: parallelism, mixed precision, and checkpointing make training tractable.
+- ### Applications
+  - Producing foundation models that are subsequently fine-tuned or instruction-tuned.
+  - Enabling transfer learning across many downstream tasks from a single base model.
+  - Underpinning emergent capabilities that appear only at sufficient scale.
+- ### Relationships
+  - requires:: [[Dataset]]
+  - requires:: [[Compute Cluster]]
+  - requires:: [[GPU]]
+  - uses:: [[Self-Supervised Learning]]
+  - uses:: [[Transformer Architecture]]
+  - enables:: [[Foundation Model]]
+  - enables:: [[Fine-Tuning]]
+  - dependsOn:: [[Scaling Law]]
+  - supports:: [[Transfer Learning]]
+  - implements:: [[Neural Network Training]]
+  - produces:: [[Foundation Model]]
+  - relatedTo:: [[Emergent Capabilities]]
+  - relatedTo:: [[Generalisation]]
+  - bridgesTo:: [[Fine-Tuning]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

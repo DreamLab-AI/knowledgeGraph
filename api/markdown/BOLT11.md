@@ -121,7 +121,7 @@ public:: true
         "label": "Secp256k1"
       },
       {
-        "@id": "urn:ngm:class:sha256",
+        "@id": "urn:ngm:class:sha-256",
         "label": "SHA256"
       }
     ],

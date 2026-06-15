@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:international-monetary-fund",
+  "title": "International Monetary Fund",
+  "slug": "international-monetary-fund",
+  "public": true,
+  "classIri": "urn:ngm:class:international-monetary-fund",
+  "domain": "finance",
+  "definition": "The International Monetary Fund (IMF) is an international financial institution, established at the 1944 Bretton Woods conference, whose mandate is to promote global monetary cooperation, exchange-rate stability, balanced trade and financial stability among its member countries. It provides macroeconomic surveillance, technical assistance and conditional lending to members facing balance-of-payments difficulties, and manages the Special Drawing Rights reserve asset. As a central pillar of the international monetary system, the IMF shapes monetary policy advice and crisis response worldwide.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:finance",
+      "label": "Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    }
+  ]
+}

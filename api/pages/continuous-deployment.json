@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:continuous-deployment",
+  "title": "Continuous Deployment",
+  "slug": "continuous-deployment",
+  "public": true,
+  "classIri": "urn:ngm:class:continuous-deployment",
+  "domain": "infrastructure",
+  "definition": "Continuous Deployment is a software release practice in which every code change that passes the automated pipeline is released to production automatically, without manual approval gates. It extends continuous delivery by removing the final human decision step, so that a successful build, test, and integration sequence results directly in a live deployment. The practice depends on comprehensive automated testing, robust monitoring, and rapid rollback mechanisms to maintain reliability while sustaining a high deployment cadence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:continuous-delivery",
+      "label": "Continuous Delivery"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:automated-testing",
+        "label": "Automated Testing"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -122,7 +122,7 @@ public:: true
         "label": "Knowledge Representation"
       },
       {
-        "@id": "urn:ngm:class:data-structures",
+        "@id": "urn:ngm:class:data-structure",
         "label": "Data Structures"
       }
     ],

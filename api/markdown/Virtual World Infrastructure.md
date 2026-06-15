@@ -150,7 +150,7 @@ public:: true
         "label": "Cloud Computing"
       },
       {
-        "@id": "urn:ngm:class:5g-network",
+        "@id": "urn:ngm:class:5-g-network",
         "label": "5G Network"
       }
     ],
@@ -164,7 +164,7 @@ public:: true
         "label": "Universal Scene Description"
       },
       {
-        "@id": "urn:ngm:class:webxr",
+        "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       }
     ],

@@ -143,7 +143,7 @@ alias:: ImmersiveExperience
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       }
     ],

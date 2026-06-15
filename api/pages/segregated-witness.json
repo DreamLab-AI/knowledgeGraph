@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:segregated-witness",
+  "title": "Segregated Witness",
+  "slug": "segregated-witness",
+  "public": true,
+  "classIri": "urn:ngm:class:segregated-witness",
+  "domain": "blockchain",
+  "definition": "Segregated Witness (SegWit) is a protocol upgrade, activated on Bitcoin as a backwards-compatible soft fork, that moves the witness data \u2014 the digital signatures authorising spends \u2014 out of the main transaction body into a separate structure. By segregating signatures, it fixes transaction malleability, since the transaction identifier no longer depends on mutable signature data, and effectively increases block capacity through a block-weight accounting scheme. SegWit also created the foundation for second-layer protocols such as the Lightning Network and enabled later script upgrades.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-scalability",
+      "label": "Blockchain Scalability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

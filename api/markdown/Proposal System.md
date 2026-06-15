@@ -199,7 +199,7 @@ alias:: ProposalSystem
         "label": "On Chain Voting"
       },
       {
-        "@id": "urn:ngm:class:protocol-upgrade",
+        "@id": "urn:ngm:class:protocol-upgrades",
         "label": "Protocol Upgrade"
       },
       {

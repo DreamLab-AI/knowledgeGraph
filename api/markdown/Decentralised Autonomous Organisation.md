@@ -82,7 +82,7 @@ alias:: DecentralisedAutonomousOrganisation
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:public-blockchain",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
         "label": "Public Blockchain"
       },
       {

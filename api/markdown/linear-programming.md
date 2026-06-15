@@ -1,0 +1,35 @@
+- ### Definition
+  - Linear Programming is a mathematical optimisation technique for finding the best outcome of a linear objective function subject to a set of linear equality and inequality constraints. The feasible region forms a convex polytope, and the optimum, when it exists, lies at a vertex, which algorithms such as the simplex method and interior-point methods exploit. Linear programming underpins resource allocation, scheduling, and planning problems across operations research and machine learning.
+  - Related concepts: [[Optimisation]] [[Operations Research]] [[Objective Function]] [[Convex Optimisation]] [[Linear Algebra]]
+- ### Overview
+  - Linear Programming formalises a wide class of decision problems where both goals and limits are linear. Because the feasible region is a convex polytope, an optimal solution is found at a vertex, enabling the simplex method to traverse vertices efficiently and interior-point methods to converge through the interior. Duality theory provides bounds, sensitivity analysis, and economic interpretation of constraints, making it a cornerstone of [[Operations Research]].
+- ### Mechanisms
+  - Linear [[Objective Function]] maximised or minimised over a convex polytope.
+  - Linear equality and inequality [[Constraint Satisfaction]].
+  - Simplex traversal of polytope vertices toward the optimum.
+  - Interior-point methods for large-scale polynomial-time solutions.
+  - Duality giving bounds and sensitivity analysis.
+- ### Applications
+  - Resource allocation and production planning.
+  - Transportation and supply-chain scheduling.
+  - Portfolio and blending optimisation.
+  - Relaxations underpinning integer and [[Combinatorial Optimisation]].
+- ### Relationships
+  - partOf:: [[Operations Research]]
+  - partOf:: [[Optimisation]]
+  - hasPart:: [[Objective Function]]
+  - hasPart:: [[Constraint Satisfaction]]
+  - uses:: [[Linear Algebra]]
+  - requires:: [[Convex Optimisation]]
+  - enables:: [[Resource Allocation]]
+  - contrastsWith:: [[Combinatorial Optimisation]]
+  - supports:: [[Operations Research]]
+  - dependsOn:: [[Convex Optimisation]]
+  - relatedTo:: [[Numerical Methods]]
+  - relatedTo:: [[Machine Learning]]
+  - relatedTo:: [[Gradient Descent]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

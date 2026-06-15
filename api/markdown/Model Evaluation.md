@@ -84,7 +84,7 @@ public:: true
         "label": "Ground Truth"
       },
       {
-        "@id": "urn:ngm:class:experiment-tracking",
+        "@id": "urn:ngm:class:empirical-experimental-design-tracking",
         "label": "Experiment Tracking"
       }
     ],

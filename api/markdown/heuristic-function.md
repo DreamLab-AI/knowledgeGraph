@@ -1,0 +1,36 @@
+- ### Definition
+  - Estimates cost to a goal in [[Search Algorithm]]
+  - Drives [[Informed Search]]
+  - Enables efficient [[Pathfinding]]
+  - Builds on a [[Cost Function]]
+- ### Overview
+  - Heuristics encode domain knowledge that ranks candidate states by estimated remaining cost.
+  - Admissibility and consistency determine whether algorithms such as A* return optimal solutions.
+  - Well-designed heuristics dramatically prune the search space while preserving solution quality.
+- ### Key aspects
+  - Admissibility (never overestimates true cost)
+  - Consistency (monotonic, triangle inequality)
+  - Dominance and informedness comparisons
+  - Heuristic design: relaxation, pattern databases
+  - Trade-off between accuracy and computation cost
+- ### Applications
+  - A* and best-first search pathfinding
+  - Automated [[Task Planning]] and scheduling
+  - Game tree evaluation and move ordering
+  - Routing and navigation systems
+- ### Relationships
+  - partOf:: [[Informed Search]]
+  - partOf:: [[Search Algorithm]]
+  - enables:: [[Pathfinding]]
+  - enables:: [[Decision Making]]
+  - uses:: [[Cost Function]]
+  - uses:: [[Algorithm]]
+  - supports:: [[Task Planning]]
+  - supports:: [[Planning]]
+  - dependsOn:: [[Optimisation]]
+  - dependsOn:: [[State Space]]
+  - contrastsWith:: [[Constraint Satisfaction]]
+  - requires:: [[Artificial Intelligence]]
+  - relatedTo:: [[Graph Theory]]
+- ### Provenance
+  - updated:: 2026-06-15

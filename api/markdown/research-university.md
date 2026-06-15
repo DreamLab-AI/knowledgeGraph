@@ -1,0 +1,41 @@
+- ### Definition
+  - A research university is a [[Research Institution]] that fuses teaching with the production of original scholarship across disciplines.
+  - It conducts basic and applied research, trains postgraduate researchers, and sustains a [[Talent Pipeline]] of skilled graduates.
+  - Such institutions anchor regional [[Innovation Ecosystem]] activity and feed discoveries into [[Technology Transfer]].
+- ### Overview
+  - Research universities are distinguished from teaching-focused colleges by their emphasis on doctoral training, competitive [[Grant Funding]], and sustained scholarly output.
+  - They host laboratories, centres, and institutes whose findings circulate through [[Peer Review]] and [[Scientific Publication]].
+  - In fields such as [[Artificial Intelligence]] they are primary sources of foundational methods and of the researchers later recruited by industry.
+- ### Key aspects
+  - Dual mission of education and original research.
+  - Postgraduate and doctoral training through a structured [[PhD Programme]].
+  - Competitive funding cycles and dependence on external grants.
+  - Knowledge dissemination via publication and conferences.
+- ### Mechanisms
+  - Principal investigators assemble teams, secure grants, and run a [[Laboratory]] producing measurable research outputs.
+  - Findings are validated through [[Peer Review]] before publication and presentation at an [[Academic Conference]].
+  - Commercialisable results pass through technology-transfer offices into start-ups and licences.
+- ### Applications
+  - Advancing fundamental science and engineering.
+  - Supplying skilled graduates to industry and the public sector.
+  - Seeding regional economic development through spin-outs and partnerships.
+- ### Relationships
+  - subClassOf:: [[Research Institution]]
+  - hasPart:: [[Laboratory]]
+  - hasPart:: [[PhD Programme]]
+  - enables:: [[Academic Research]]
+  - enables:: [[Technology Transfer]]
+  - enables:: [[Talent Pipeline]]
+  - supports:: [[Innovation Ecosystem]]
+  - supports:: [[Scientific Publication]]
+  - dependsOn:: [[Grant Funding]]
+  - dependsOn:: [[Peer Review]]
+  - requires:: [[Research and Development]]
+  - produces:: [[Academic Conference]]
+  - relatedTo:: [[Artificial Intelligence]]
+  - bridgesTo:: [[Technology Transfer]]
+  - bridgesTo:: [[Innovation Ecosystem]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

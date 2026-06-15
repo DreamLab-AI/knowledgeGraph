@@ -91,7 +91,7 @@ public:: true
         "label": "Cloud Storage"
       },
       {
-        "@id": "urn:ngm:class:webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       }
     ],

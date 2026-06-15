@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:spatial-partitioning",
+  "title": "Spatial Partitioning",
+  "slug": "spatial-partitioning",
+  "public": true,
+  "classIri": "urn:ngm:class:spatial-partitioning",
+  "domain": "spatial-computing",
+  "definition": "Spatial partitioning is the technique of subdividing a space into non-overlapping or hierarchically nested regions so that objects can be organised by location and queried efficiently. By grouping nearby objects and pruning regions that cannot contain a query result, it reduces the cost of operations such as collision detection, ray casting, nearest-neighbour search and visibility culling from quadratic toward logarithmic or linear scaling. Common structures include grids, quadtrees, octrees, k-d trees, binary space partitioning trees and bounding-volume hierarchies, each trading construction cost against query performance for particular workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-data-structure",
+      "label": "Spatial Data Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bounding-volume-hierarchy",
+        "label": "Bounding Volume Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:bounding-volume",
+        "label": "Bounding Volume"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Nearest Neighbor Search"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    }
+  ]
+}

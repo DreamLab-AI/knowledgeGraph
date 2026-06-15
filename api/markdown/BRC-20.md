@@ -70,7 +70,7 @@ public:: true
         "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
-        "@id": "urn:ngm:class:segwit",
+        "@id": "urn:ngm:class:seg-wit",
         "label": "SegWit"
       },
       {
@@ -166,7 +166,7 @@ public:: true
         "label": "Decentralised Finance"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],

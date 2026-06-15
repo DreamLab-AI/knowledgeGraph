@@ -211,7 +211,7 @@ alias:: BC-0029-permissioned-blockchain, BC-0429-permissioned-blockchain, Permis
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:public-blockchain",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
         "label": "Public Blockchain"
       },
       {
@@ -239,7 +239,7 @@ alias:: BC-0029-permissioned-blockchain, BC-0429-permissioned-blockchain, Permis
         "label": "Distributed Consensus"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ]

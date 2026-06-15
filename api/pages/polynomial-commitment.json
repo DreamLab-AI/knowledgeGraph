@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:polynomial-commitment",
+  "title": "Polynomial Commitment",
+  "slug": "polynomial-commitment",
+  "public": true,
+  "classIri": "urn:ngm:class:polynomial-commitment",
+  "domain": "infrastructure",
+  "definition": "A Polynomial Commitment is a cryptographic scheme that lets a prover commit to a polynomial with a short, binding value and later open the commitment at chosen evaluation points without revealing the whole polynomial. Verification of an opening is succinct and the commitment hides the polynomial until opened. Polynomial commitments are a core building block of modern succinct proof systems such as zk-SNARKs and zk-STARKs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-commitment",
+      "label": "Cryptographic Commitment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:trusted-setup",
+        "label": "Trusted Setup"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:finite-field",
+        "label": "Finite Field"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:finite-field",
+        "label": "Finite Field"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "zk-SNARK"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kzg-commitment",
+        "label": "KZG Commitment"
+      },
+      {
+        "id": "urn:ngm:class:reed-solomon-codes",
+        "label": "Reed-Solomon Codes"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

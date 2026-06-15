@@ -122,7 +122,7 @@ public:: true
         "label": "Data Augmentation"
       },
       {
-        "@id": "urn:ngm:class:deepfake",
+        "@id": "urn:ngm:class:deepfakes",
         "label": "Deepfake"
       },
       {

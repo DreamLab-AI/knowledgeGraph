@@ -125,7 +125,7 @@ public:: true
         "label": "Decentralised Finance"
       },
       {
-        "@id": "urn:ngm:class:remittance",
+        "@id": "urn:ngm:class:remittances",
         "label": "Remittance"
       },
       {

@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:audio-generation",
+  "title": "Audio Generation",
+  "slug": "audio-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:audio-generation",
+  "domain": "machine-learning",
+  "definition": "Audio generation is the use of generative machine-learning models to synthesise sound \u2014 including speech, music, sound effects, and ambient audio \u2014 from inputs such as text, symbolic scores, or learned latent representations. Models learn the statistical structure of audio either in the raw waveform domain or in compressed time-frequency representations such as spectrograms, then sample new outputs that are perceptually realistic. The field encompasses text-to-speech, music generation, voice cloning, and general audio synthesis, drawing on autoregressive, diffusion, and adversarial generative architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:speech-synthesis",
+        "label": "Speech Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:speech-synthesis",
+        "label": "Speech Synthesis"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

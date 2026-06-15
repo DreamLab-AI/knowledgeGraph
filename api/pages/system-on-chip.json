@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:system-on-chip",
+  "title": "System-on-Chip",
+  "slug": "system-on-chip",
+  "public": true,
+  "classIri": "urn:ngm:class:system-on-chip",
+  "domain": "infrastructure",
+  "definition": "A system-on-chip (SoC) is an integrated circuit that combines most or all of the components of a computer system onto a single die, typically including one or more processor cores, memory, input and output interfaces and specialised accelerators. By co-locating these subsystems, an SoC reduces physical size, power consumption and inter-component latency compared with multi-chip designs. SoCs are foundational to mobile devices, embedded systems and edge computing, where space and energy efficiency are critical.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:memory",
+        "label": "Memory"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:processor",
+        "label": "Processor"
+      },
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:non-volatile-memory",
+        "label": "Non-Volatile Memory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field-Programmable Gate Array"
+      },
+      {
+        "id": "urn:ngm:class:system-architecture",
+        "label": "System Architecture"
+      },
+      {
+        "id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

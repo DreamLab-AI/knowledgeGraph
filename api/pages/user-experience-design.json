@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:user-experience-design",
+  "title": "User Experience Design",
+  "slug": "user-experience-design",
+  "public": true,
+  "classIri": "urn:ngm:class:user-experience-design",
+  "domain": "spatial-computing",
+  "definition": "User Experience Design is the discipline of shaping the overall perception, ease and satisfaction a person derives from interacting with a product, system or service. It synthesises research into user needs, information architecture, interaction flows and visual presentation into coherent experiences. In spatial computing it extends to embodied, three-dimensional and multimodal interactions across mixed reality. The goal is to make systems useful, usable and desirable across their full lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:user-interface-design",
+        "label": "User Interface Design"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:graphic-design",
+        "label": "Graphic Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      },
+      {
+        "id": "urn:ngm:class:design-system",
+        "label": "Design System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:user-centered-design",
+        "label": "User-Centered Design"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:product-design",
+        "label": "Product Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:visual-design",
+        "label": "Visual Design"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ]
+}

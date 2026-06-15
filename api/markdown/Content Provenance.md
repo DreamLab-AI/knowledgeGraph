@@ -102,7 +102,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:c2pa",
+        "@id": "urn:ngm:class:c2-pa",
         "label": "C2PA"
       },
       {
@@ -112,7 +112,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:deepfake",
+        "@id": "urn:ngm:class:deepfakes",
         "label": "Deepfake"
       },
       {

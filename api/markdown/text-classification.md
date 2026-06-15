@@ -1,0 +1,34 @@
+- ### Definition
+- Text classification assigns categorical labels to text using [[Supervised Learning]] over learned representations. It is a foundational task within [[Natural Language Processing]], typically realised with a [[Neural Network]] or [[Transformer Architecture]] feeding a [[Classification]] head.
+- ### Overview
+- The task reduces unstructured language to discrete decisions, letting downstream systems route, filter, rank, or summarise text at scale.
+- Inputs range from short queries to long documents; outputs span a fixed label set that may be binary (spam vs not-spam), multi-class (topic categories), or multi-label (multiple simultaneous tags).
+- Historically dominated by bag-of-words features with linear classifiers, the field shifted to dense embeddings and then to fine-tuned pretrained language models that capture context and word order.
+- ### Mechanisms
+- Preprocessing and [[Tokenisation]] convert raw characters into discrete units the model can consume.
+- [[Feature Engineering]] or learned embeddings produce a vector representation of the text.
+- A trained decision function maps the representation to label probabilities, optimised against labelled examples during [[Model Training]].
+- Threshold selection and calibration turn probabilities into final label assignments, especially for multi-label settings.
+- ### Applications
+- Spam and abuse filtering, topic tagging, and routing of support tickets.
+- [[Sentiment Analysis]] of reviews and social posts.
+- [[Content Moderation]] pipelines that flag policy-violating text.
+- Intent detection in conversational interfaces and search query understanding.
+- ### Relationships
+- partOf:: [[Natural Language Processing]]
+- hasPart:: [[Tokenisation]]
+- hasPart:: [[Feature Engineering]]
+- requires:: [[Supervised Learning]]
+- requires:: [[Model Training]]
+- uses:: [[Transformer Architecture]]
+- uses:: [[Neural Network]]
+- enables:: [[Sentiment Analysis]]
+- enables:: [[Content Moderation]]
+- implements:: [[Classification]]
+- contrastsWith:: [[Named Entity Recognition]]
+- relatedTo:: [[Information Retrieval]]
+- relatedTo:: [[Large Language Model]]
+- relatedTo:: [[Deep Learning]]
+- supports:: [[Foundation Model]]
+- ### Provenance
+- updated:: 2026-06-15

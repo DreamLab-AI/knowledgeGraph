@@ -116,7 +116,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:3-g-p-p",
+        "@id": "urn:ngm:class:3-gpp",
         "label": "3GPP"
       },
       {

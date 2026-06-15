@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:open-science",
+  "title": "Open Science",
+  "slug": "open-science",
+  "public": true,
+  "classIri": "urn:ngm:class:open-science",
+  "domain": "governance",
+  "definition": "Open science is a movement and set of practices aimed at making scientific research, data and dissemination accessible, transparent and reproducible for all members of society. It encompasses open access to publications, open data, open-source tools and open methodologies, lowering barriers to participation and verification of research. By promoting sharing throughout the research lifecycle, open science seeks to accelerate discovery, improve reproducibility and broaden public trust in science.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-sharing",
+        "label": "Data Sharing"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "id": "urn:ngm:class:digital-commons",
+        "label": "Digital Commons"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open-Source Software"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-access",
+        "label": "Open Access"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    }
+  ]
+}

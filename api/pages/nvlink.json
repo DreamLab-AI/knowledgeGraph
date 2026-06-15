@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:nvlink",
+  "title": "NVLink",
+  "slug": "nvlink",
+  "public": true,
+  "classIri": "urn:ngm:class:nvlink",
+  "domain": "ai",
+  "definition": "NVLink is NVIDIA's high-bandwidth, low-latency point-to-point interconnect that links GPUs directly to one another, and in some platforms to the CPU, providing far greater throughput than the PCIe bus it supplements. By creating a coherent, high-speed fabric between accelerators, NVLink enables fast peer-to-peer memory transfers and unified memory pooling across multiple GPUs. It is foundational to multi-GPU training and inference of large neural networks, where the interconnect bandwidth between devices often determines the achievable scaling efficiency of model and tensor parallelism.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gpu-computing",
+      "label": "GPU Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    }
+  ]
+}

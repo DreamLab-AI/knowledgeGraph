@@ -1,0 +1,35 @@
+- ### Definition
+  - Dialogue management is the control layer of [[Conversational AI]] that tracks interaction state and selects the next system action each turn.
+  - It consumes outputs of [[Natural Language Understanding]] including [[Intent Recognition]] and [[Slot Filling]].
+  - It maintains [[Context Management]] so the conversation coheres across multiple turns.
+- ### Overview
+  - A dialogue manager sits between language understanding and language generation, deciding what the agent should do or say given the conversation so far.
+  - Dialogue state tracking maintains a belief over the user's goals, filled slots, and history, updating it as new utterances arrive.
+  - Policy approaches range from hand-authored finite-state and frame-based rules to learned policies optimised with reinforcement learning, and increasingly to large-language-model-driven planning.
+  - The manager handles clarification, confirmation, error recovery, and topic switching to keep interactions on track.
+- ### Mechanisms
+  - State tracking: estimating and updating the current dialogue state from observations.
+  - Policy: mapping the tracked state to the next action, whether an API call or a response intent.
+  - Context management: retaining and resolving references across turns.
+  - Evaluation: task success, turn count, and user satisfaction guide policy improvement.
+- ### Applications
+  - Task-oriented assistants for booking, support, and transactions.
+  - Multi-turn [[Chatbot]] experiences that remember prior turns.
+  - Voice assistants coordinating understanding, action, and spoken responses.
+- ### Relationships
+  - hasPart:: [[State Tracking]]
+  - hasPart:: [[Context Management]]
+  - dependsOn:: [[Natural Language Understanding]]
+  - requires:: [[Intent Recognition]]
+  - requires:: [[Slot Filling]]
+  - enables:: [[Chatbot]]
+  - implements:: [[Conversational AI]]
+  - uses:: [[Reinforcement Learning]]
+  - supports:: [[Natural Language Processing]]
+  - relatedTo:: [[Context Management]]
+  - relatedTo:: [[Chatbot]]
+  - bridgesTo:: [[Natural Language Understanding]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

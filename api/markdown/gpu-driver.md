@@ -1,0 +1,33 @@
+- ### Definition
+	- A [[GPU Driver]] is a [[Hardware Abstraction Layer]] component that connects a [[Graphics API]] to the physical [[GPU]].
+	- It translates rendering and compute commands into hardware-specific instructions.
+	- It manages GPU memory, command queues, and synchronisation on behalf of the [[Operating System]].
+- ### Overview
+	- The driver presents standard interfaces such as [[Vulkan]], [[OpenGL]], [[DirectX]], and [[CUDA]] so applications target a stable abstraction rather than specific silicon.
+	- It cooperates with device [[Firmware]] and the OS kernel to schedule work and arbitrate access to the device.
+	- Driver versions gate feature exposure, extension availability, and performance.
+- ### Key aspects
+	- Command submission and queue management for the [[Render Pipeline]] and [[Compute Shader]] workloads.
+	- GPU [[Memory Management]], allocation, and residency control.
+	- Context isolation and synchronisation across concurrent applications.
+	- Power, thermal, and clock management in concert with [[Firmware]].
+- ### Applications
+	- Enabling [[Hardware Acceleration]] for rendering and general-purpose compute.
+	- Backing real-time graphics in games, simulation, and spatial computing.
+	- Exposing [[CUDA]] and compute interfaces for machine-learning workloads.
+- ### Relationships
+	- partOf:: [[Operating System]]
+	- requires:: [[GPU]]
+	- requires:: [[Firmware]]
+	- enables:: [[Vulkan]]
+	- enables:: [[CUDA]]
+	- enables:: [[Hardware Acceleration]]
+	- implements:: [[Graphics API]]
+	- supports:: [[Render Pipeline]]
+	- supports:: [[Compute Shader]]
+	- uses:: [[Memory Management]]
+	- relatedTo:: [[DirectX]]
+- ### Provenance
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation
+	- updated:: 2026-06-15

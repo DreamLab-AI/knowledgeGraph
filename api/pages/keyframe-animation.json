@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:keyframe-animation",
+  "title": "Keyframe Animation",
+  "slug": "keyframe-animation",
+  "public": true,
+  "classIri": "urn:ngm:class:keyframe-animation",
+  "domain": "spatial-computing",
+  "definition": "Keyframe animation is a technique in which an animator specifies an object's properties at a set of significant frames, called keyframes, and the system interpolates the in-between frames automatically. Property values such as position, rotation, and scale are stored on timed curves whose interpolation and easing control the motion between keys. It is a foundational method for authoring deterministic, repeatable motion in computer graphics and real-time engines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:animation",
+      "label": "Animation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "USD"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    }
+  ]
+}

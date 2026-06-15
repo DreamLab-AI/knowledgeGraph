@@ -119,7 +119,7 @@ public:: true
         "label": "Taproot"
       },
       {
-        "@id": "urn:ngm:class:musig2",
+        "@id": "urn:ngm:class:mu-sig-2",
         "label": "MuSig2"
       }
     ],
@@ -145,7 +145,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:c-lightning",
+        "@id": "urn:ngm:class:core-lightning",
         "label": "Core Lightning"
       },
       {

@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:multimodal-interaction",
+  "title": "Multimodal Interaction",
+  "slug": "multimodal-interaction",
+  "public": true,
+  "classIri": "urn:ngm:class:multimodal-interaction",
+  "domain": "spatial-computing",
+  "definition": "Multimodal interaction is a style of human-computer interaction in which users communicate with a system through two or more input or output modalities \u2014 such as speech, gesture, gaze, touch, and haptics \u2014 used in combination or interchangeably. By fusing complementary signals, multimodal systems interpret intent more robustly and naturally than any single channel, and they are central to spatial and immersive computing where physical input is rich. It is a key paradigm for designing interfaces in augmented and virtual reality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:spatial-interaction",
+        "label": "Spatial Interaction"
+      },
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "voice-interaction",
+      "label": "Voice Interaction"
+    }
+  ]
+}

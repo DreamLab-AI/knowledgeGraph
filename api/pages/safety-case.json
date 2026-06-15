@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:safety-case",
+  "title": "Safety Case",
+  "slug": "safety-case",
+  "public": true,
+  "classIri": "urn:ngm:class:safety-case",
+  "domain": "robotics",
+  "definition": "A safety case is a structured, evidence-backed argument that a system is acceptably safe to operate in a defined context and operational environment. It comprises explicit safety claims, the reasoning that connects them, and the supporting evidence drawn from hazard analysis, design measures, verification, and operational data. Commonly documented using notations such as the Goal Structuring Notation or Claims-Arguments-Evidence, the safety case is reviewed by stakeholders and regulators and maintained throughout the system lifecycle. It is the central assurance artefact in safety-critical and autonomous-systems engineering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:functional-safety",
+      "label": "Functional Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-approval",
+        "label": "Regulatory Approval"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      },
+      {
+        "id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      },
+      {
+        "id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

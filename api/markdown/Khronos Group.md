@@ -36,7 +36,7 @@ public:: true
         "label": "Vulkan"
       },
       {
-        "@id": "urn:ngm:class:opengl",
+        "@id": "urn:ngm:class:open-gl",
         "label": "OpenGL"
       },
       {
@@ -44,7 +44,7 @@ public:: true
         "label": "OpenCL"
       },
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
       {
@@ -56,7 +56,7 @@ public:: true
         "label": "SPIR-V"
       },
       {
-        "@id": "urn:ngm:class:webgl",
+        "@id": "urn:ngm:class:web-gl",
         "label": "WebGL"
       }
     ],

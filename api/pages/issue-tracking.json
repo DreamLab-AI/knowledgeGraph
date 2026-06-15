@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:issue-tracking",
+  "title": "Issue Tracking",
+  "slug": "issue-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:issue-tracking",
+  "domain": "distributed-collaboration",
+  "definition": "Issue tracking is the practice and supporting tooling for recording, prioritising, assigning, and resolving units of work such as bugs, feature requests, and tasks across a software project. Each issue carries metadata, status, discussion, and links to code changes, giving teams a shared backlog and an audit trail of decisions. It underpins collaborative and agile development and integrates tightly with version control and continuous integration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:project-management",
+      "label": "Project Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bug-tracking",
+        "label": "Bug Tracking"
+      },
+      {
+        "id": "urn:ngm:class:ticketing",
+        "label": "Ticketing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kanban",
+        "label": "Kanban"
+      },
+      {
+        "id": "urn:ngm:class:workflow",
+        "label": "Workflow"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agile-development",
+        "label": "Agile Development"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:jira",
+        "label": "Jira"
+      },
+      {
+        "id": "urn:ngm:class:github",
+        "label": "GitHub"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

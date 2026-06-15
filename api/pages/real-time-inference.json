@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:real-time-inference",
+  "title": "Real-Time Inference",
+  "slug": "real-time-inference",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-inference",
+  "domain": "machine-learning",
+  "definition": "Real-time inference is the execution of a trained machine-learning model to produce predictions within strict, low-latency time bounds suitable for interactive or streaming applications. It demands optimised serving infrastructure, efficient model formats, and often hardware acceleration to meet sub-second or millisecond response targets. Real-time inference enables responsive AI features such as recommendations, fraud scoring, and perception in autonomous systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-serving",
+      "label": "Model Serving"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      },
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time-processing",
+        "label": "Real-Time Processing"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

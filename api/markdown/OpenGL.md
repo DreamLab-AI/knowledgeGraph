@@ -151,11 +151,11 @@ public:: true
         "label": "Cross-Platform Development"
       },
       {
-        "@id": "urn:ngm:class:webgl",
+        "@id": "urn:ngm:class:web-gl",
         "label": "WebGL"
       },
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       }
     ],

@@ -49,7 +49,7 @@
         "label": "Taproot Assets"
       },
       {
-        "id": "urn:ngm:class:musig2",
+        "id": "urn:ngm:class:mu-sig-2",
         "label": "MuSig2"
       },
       {
@@ -94,11 +94,11 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:bitcoin-improvement-proposals",
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
         "label": "Bitcoin Improvement Proposals"
       },
       {
-        "id": "urn:ngm:class:sha256",
+        "id": "urn:ngm:class:sha-256",
         "label": "SHA-256"
       }
     ],

@@ -1,0 +1,46 @@
+- ### Definition
+  - [[Model Inference]] is the operational phase in which a trained [[Neural Network]] is applied to new inputs to produce predictions or generated outputs.
+  - It executes a single forward pass and is optimised for [[Latency]] and throughput rather than learning.
+  - Inference is the point where a model produces value, distinct from [[Model Training]].
+  - It is a core stage of [[MLOps]] and underpins [[Model Serving]].
+- ### Overview
+  - Once a model has been trained and validated, inference is the act of running it against production data.
+  - Inputs are pre-processed into the model's expected tensor format, passed through the network, and the raw outputs are post-processed into usable predictions.
+  - Inference can run synchronously (online, request-response), asynchronously, or in batches over large datasets.
+  - Deployment targets range from cloud GPUs and CPU clusters to mobile and embedded edge devices.
+- ### Mechanisms
+  - Forward propagation through the trained weights without gradient computation.
+  - Computational graph execution managed by an [[Inference Engine]] (for example ONNX Runtime, TensorRT, or TorchScript).
+  - Optimisations such as quantisation, operator fusion, kernel selection, and graph pruning via [[Model Optimization]].
+  - Hardware acceleration using [[GPU Acceleration]] and specialised accelerators.
+  - Batching and caching to maximise throughput and amortise overhead.
+- ### Key aspects
+  - Latency: the time taken to return a single prediction, critical for interactive applications.
+  - Throughput: the number of predictions served per unit time, critical for large-scale workloads.
+  - Cost efficiency: balancing accuracy against compute and memory footprint.
+  - Reproducibility: identical inputs must yield identical outputs across deployments.
+- ### Applications
+  - Real-time recommendation, fraud detection, and search ranking.
+  - Computer vision inference at the edge for robotics and AR.
+  - Large language model generation and conversational agents.
+  - Batch scoring of records in analytics pipelines via [[Predictive Analytics]].
+- ### Relationships
+  - requires:: [[Model Training]]
+  - requires:: [[Inference Engine]]
+  - uses:: [[Neural Network]]
+  - uses:: [[GPU Acceleration]]
+  - enables:: [[Model Serving]]
+  - enables:: [[Predictive Analytics]]
+  - dependsOn:: [[Model Deployment]]
+  - supports:: [[Model Monitoring]]
+  - supports:: [[Edge Computing]]
+  - partOf:: [[MLOps]]
+  - contrastsWith:: [[Model Training]]
+  - relatedTo:: [[Latency]]
+  - relatedTo:: [[Batch Processing]]
+  - relatedTo:: [[Model Optimization]]
+  - relatedTo:: [[Deep Learning]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - quality:: 0.62

@@ -89,7 +89,7 @@ public:: true
         "label": "Dead Reckoning"
       },
       {
-        "@id": "urn:ngm:class:6dof-tracking",
+        "@id": "urn:ngm:class:6-do-f-tracking",
         "label": "6-DoF Tracking"
       },
       {

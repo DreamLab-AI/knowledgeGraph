@@ -75,7 +75,7 @@ public:: true
         "label": "Edge Computing"
       },
       {
-        "@id": "urn:ngm:class:tinyml",
+        "@id": "urn:ngm:class:tiny-ml",
         "label": "TinyML"
       }
     ],

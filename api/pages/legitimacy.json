@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:legitimacy",
+  "title": "Legitimacy",
+  "slug": "legitimacy",
+  "public": true,
+  "classIri": "urn:ngm:class:legitimacy",
+  "domain": "governance",
+  "definition": "Legitimacy is the property of an authority, institution or decision being widely accepted as rightful and worthy of compliance by the people it governs. It rests on perceptions of fairness, due process, representation and shared values rather than on coercion alone, and it can be derived from procedure, performance, tradition or consent. In governance systems, including decentralised and blockchain communities, legitimacy is what makes coordinated action stable and what allows rules to be followed without constant enforcement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:social-contract",
+        "label": "Social Contract"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

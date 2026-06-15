@@ -65,7 +65,7 @@ public:: true
         "label": "Voting Mechanism"
       },
       {
-        "@id": "urn:ngm:class:protocol-upgrade",
+        "@id": "urn:ngm:class:protocol-upgrades",
         "label": "Protocol Upgrade"
       },
       {

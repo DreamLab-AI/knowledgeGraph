@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:network-transport",
+  "title": "Network Transport",
+  "slug": "network-transport",
+  "public": true,
+  "classIri": "urn:ngm:class:network-transport",
+  "domain": "distributed-systems",
+  "definition": "Network transport is the layer of communication concerned with end-to-end delivery of data between application endpoints across a network. It builds on the underlying packet-routing service to provide services such as connection establishment, multiplexing, reliable or unreliable delivery, ordering, flow control, and congestion control. Transport protocols determine the guarantees and performance characteristics that distributed applications experience.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transport-layer",
+      "label": "Transport Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:flow-control",
+        "label": "Flow Control"
+      },
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tcp",
+        "label": "TCP"
+      },
+      {
+        "id": "urn:ngm:class:udp",
+        "label": "UDP"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "id": "urn:ngm:class:data-distribution-service",
+        "label": "Data Distribution Service"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:networking",
+        "label": "Networking"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    }
+  ]
+}

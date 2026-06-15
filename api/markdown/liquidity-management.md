@@ -1,0 +1,33 @@
+- ### Definition
+  - Manages [[Liquidity]] to meet obligations
+  - A function of [[Treasury Management]]
+  - Supports [[Monetary Policy Implementation]]
+  - Relies on [[Risk Management]]
+- ### Overview
+  - Liquidity management balances the need for available funds against the cost of holding low-yield liquid assets.
+  - Institutions monitor inflows, outflows and contingent calls to maintain solvency under stress.
+  - Central banks use liquidity operations to keep money-market rates aligned with the policy rate.
+- ### Mechanisms
+  - Cash-flow forecasting and gap analysis
+  - Liquidity buffers and high-quality liquid assets
+  - Funding diversification and maturity laddering
+  - Stress testing and contingency funding plans
+  - Open market and standing facility operations
+- ### Applications
+  - Bank treasury and balance-sheet management
+  - Corporate working-capital and cash management
+  - Central bank reserve and rate steering
+  - Money-market fund and asset manager operations
+- ### Relationships
+  - partOf:: [[Treasury Management]]
+  - requires:: [[Liquidity]]
+  - requires:: [[Risk Management]]
+  - enables:: [[Monetary Policy Implementation]]
+  - uses:: [[Open Market Operations]]
+  - dependsOn:: [[Central Bank]]
+  - supports:: [[Price Stability]]
+  - supports:: [[Financial Stability]]
+  - relatedTo:: [[Monetary Policy]]
+  - relatedTo:: [[Interest Rate]]
+- ### Provenance
+  - updated:: 2026-06-15

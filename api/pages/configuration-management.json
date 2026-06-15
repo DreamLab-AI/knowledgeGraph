@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:configuration-management",
+  "title": "Configuration Management",
+  "slug": "configuration-management",
+  "public": true,
+  "classIri": "urn:ngm:class:configuration-management",
+  "domain": "artificial-intelligence",
+  "definition": "Configuration management is the engineering discipline of systematically establishing, recording, and maintaining the desired state of a system's components, settings, and dependencies throughout its lifecycle. It ensures that environments are reproducible and consistent by treating configuration as versioned, auditable artefacts rather than ad hoc manual changes. In modern practice it underpins infrastructure-as-code and continuous delivery, using declarative tools to converge machines and services to a defined state and to track every change for traceability and rollback.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:testing",
+        "label": "Testing"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "networkcomponent",
+      "label": "Networkcomponent"
+    }
+  ]
+}

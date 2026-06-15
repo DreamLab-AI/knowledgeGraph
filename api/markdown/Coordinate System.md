@@ -86,7 +86,7 @@ public:: true
         "label": "Spatial Anchor"
       },
       {
-        "@id": "urn:ngm:class:3d-rendering",
+        "@id": "urn:ngm:class:3-d-rendering",
         "label": "3D Rendering"
       },
       {
@@ -130,7 +130,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       }
     ],

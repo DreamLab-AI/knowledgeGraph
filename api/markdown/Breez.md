@@ -91,7 +91,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:bolt11",
+        "@id": "urn:ngm:class:bolt-11",
         "label": "BOLT11"
       },
       {

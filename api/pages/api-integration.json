@@ -44,7 +44,7 @@
         "label": "Network Protocol"
       },
       {
-        "id": "urn:ngm:class:data-serialisation",
+        "id": "urn:ngm:class:data-serialization",
         "label": "Data Serialisation"
       }
     ],
@@ -102,7 +102,7 @@
         "label": "REST API"
       },
       {
-        "id": "urn:ngm:class:graphql",
+        "id": "urn:ngm:class:graph-ql",
         "label": "GraphQL"
       },
       {
@@ -117,7 +117,7 @@
     "supports": [],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:openapi-specification",
+        "id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Specification"
       },
       {

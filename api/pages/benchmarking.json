@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:benchmarking",
+  "title": "Benchmarking",
+  "slug": "benchmarking",
+  "public": true,
+  "classIri": "urn:ngm:class:benchmarking",
+  "domain": "infrastructure",
+  "definition": "Benchmarking is the disciplined practice of measuring the performance, accuracy, efficiency, or quality of a system, component, or model against a standardised workload and a set of comparable baselines. It produces reproducible quantitative metrics \u2014 such as latency, throughput, resource utilisation, or task accuracy \u2014 that allow engineers to compare alternatives, detect regressions, and guide optimisation. Robust benchmarking requires controlled environments, representative workloads, statistically sound measurement, and transparent reporting to avoid misleading or non-generalisable results.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:performance-optimization",
+      "label": "Performance Optimization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:testing",
+        "label": "Testing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:testing",
+        "label": "Testing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-indicator",
+      "label": "Carbon Footprint Indicator"
+    }
+  ]
+}

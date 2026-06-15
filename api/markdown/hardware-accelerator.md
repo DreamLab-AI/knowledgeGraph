@@ -1,0 +1,42 @@
+- ### Definition
+- A hardware accelerator is specialised silicon that performs a class of computation more efficiently than a general CPU. It implements [[Hardware Acceleration]] and [[Parallel Computing]] to drive [[Deep Learning]], enabling fast [[Model Training]] and [[Inference]] while improving [[Energy Efficiency]].
+- ### Overview
+- General-purpose CPUs are optimised for low-latency sequential control flow, which makes them inefficient for the massively parallel dense arithmetic at the heart of machine learning.
+- Accelerators dedicate transistors to wide parallel execution units, large register files and high-bandwidth memory, achieving order-of-magnitude gains in throughput per watt for suitable workloads.
+- The accelerator landscape spans programmable [[GPU]] devices, domain-specific [[TPU]] systolic arrays, reconfigurable [[FPGA]] fabrics, and fixed-function [[ASIC]] chips.
+- Software stacks, drivers and compilers translate high-level models into kernels that exploit the accelerator's parallelism and memory hierarchy.
+- ### Mechanisms
+- Single-instruction-multiple-data and single-instruction-multiple-thread execution apply one operation across many data elements simultaneously.
+- Systolic arrays stream operands through a grid of multiply-accumulate units for efficient matrix multiplication.
+- High-bandwidth memory and on-chip caches feed the arithmetic units to avoid stalls.
+- Reduced and mixed precision arithmetic increases effective throughput while preserving acceptable accuracy.
+- ### Applications
+- Training and inference of deep neural networks at scale in data centres.
+- On-device inference in phones, cameras and embedded systems via compact accelerators.
+- Scientific computing, signal processing and cryptographic workloads.
+- Real-time graphics and simulation built atop the [[Graphics Processing Unit]] lineage.
+- ### Key aspects
+- Memory bandwidth and interconnect frequently bound performance more than raw arithmetic capacity.
+- Specialisation trades flexibility for efficiency: an ASIC is fastest but cannot be repurposed.
+- Energy efficiency and thermal limits shape both data-centre and edge deployment.
+- ### Relationships
+- partOf:: [[Compute Infrastructure]]
+- implements:: [[Hardware Acceleration]]
+- implements:: [[Parallel Computing]]
+- enables:: [[Deep Learning]]
+- enables:: [[Model Training]]
+- dependsOn:: [[Compute Infrastructure]]
+- requires:: [[Energy Efficiency]]
+- supports:: [[Inference Engine]]
+- supports:: [[Neural Network]]
+- hasPart:: [[GPU]]
+- hasPart:: [[TPU]]
+- hasPart:: [[FPGA]]
+- hasPart:: [[ASIC]]
+- relatedTo:: [[Graphics Processing Unit]]
+- relatedTo:: [[Inference]]
+- bridgesTo:: [[Parallel Computing]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

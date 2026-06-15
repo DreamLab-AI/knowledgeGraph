@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:robotic-manipulation",
+  "title": "Robotic Manipulation",
+  "slug": "robotic-manipulation",
+  "public": true,
+  "classIri": "urn:ngm:class:robotic-manipulation",
+  "domain": "robotics",
+  "definition": "Robotic manipulation is the field concerned with how robots physically interact with and change the state of objects in their environment \u2014 grasping, moving, assembling, and reorienting items using arms, hands, and end-effectors. It integrates perception, motion planning, control, and contact reasoning so that a robot can compute and execute the forces and trajectories needed to handle objects reliably under uncertainty. Manipulation spans rigid pick-and-place in structured factories through to dexterous, contact-rich handling of deformable or unfamiliar objects in unstructured human environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:manipulation",
+      "label": "Manipulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:grasp-planning",
+        "label": "Grasp Planning"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pick-and-place",
+        "label": "Pick and Place"
+      },
+      {
+        "id": "urn:ngm:class:robotic-grasping",
+        "label": "Robotic Grasping"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dc-servo-motor",
+      "label": "DC Servo Motor"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    }
+  ]
+}

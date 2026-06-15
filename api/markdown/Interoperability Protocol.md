@@ -115,7 +115,7 @@ alias:: InteroperabilityProtocol
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       },
       {
@@ -165,7 +165,7 @@ alias:: InteroperabilityProtocol
         "label": "Agent Communication Language"
       },
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       }
     ]

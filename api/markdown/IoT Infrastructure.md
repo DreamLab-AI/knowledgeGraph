@@ -62,7 +62,7 @@ public:: true
         "label": "Embedded Systems"
       },
       {
-        "@id": "urn:ngm:class:5g-network",
+        "@id": "urn:ngm:class:5-g-network",
         "label": "5G Network"
       },
       {

@@ -123,7 +123,7 @@ public:: true
         "label": "Bytecode"
       },
       {
-        "@id": "urn:ngm:class:opcode",
+        "@id": "urn:ngm:class:opcodes",
         "label": "Opcode"
       }
     ],
@@ -187,7 +187,7 @@ public:: true
         "label": "Ethereum Virtual Machine"
       },
       {
-        "@id": "urn:ngm:class:webassembly",
+        "@id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       }
     ],

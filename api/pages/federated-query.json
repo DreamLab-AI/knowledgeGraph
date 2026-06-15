@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:federated-query",
+  "title": "Federated Query",
+  "slug": "federated-query",
+  "public": true,
+  "classIri": "urn:ngm:class:federated-query",
+  "domain": "data",
+  "definition": "A federated query is a single query that is decomposed and executed across multiple autonomous, distributed data sources, with partial results combined into a unified answer without first consolidating the data into one store. In the semantic-web context, SPARQL federation evaluates sub-queries against several remote endpoints, joining their bindings transparently to the requester. It enables integrated access to heterogeneous, independently governed datasets while leaving each source in place. Effective federation depends on source description, query planning, and distributed join optimisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-integration",
+      "label": "Data Integration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-federation",
+        "label": "Data Federation"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:sparql-endpoint",
+        "label": "SPARQL Endpoint"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      },
+      {
+        "id": "urn:ngm:class:data-virtualization",
+        "label": "Data Virtualization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:relation-extraction",
+  "title": "Relation Extraction",
+  "slug": "relation-extraction",
+  "public": true,
+  "classIri": "urn:ngm:class:relation-extraction",
+  "domain": "artificial-intelligence",
+  "definition": "Relation extraction is the natural-language-processing task of identifying semantic relationships between entities mentioned in text and classifying them into predefined or open relation types. It typically operates on the output of named-entity recognition, determining whether and how two entities are connected, for example employer-of, located-in or part-of. Relation extraction is foundational to knowledge-graph construction, supplying the typed edges that link extracted entities into structured assertions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-extraction",
+      "label": "Information Extraction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    }
+  ]
+}

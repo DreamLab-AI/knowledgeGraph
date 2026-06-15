@@ -104,7 +104,7 @@ public:: true
         "label": "Simultaneous Localization and Mapping"
       },
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       }
     ],
@@ -144,7 +144,7 @@ public:: true
         "label": "Immersive Collaboration"
       },
       {
-        "@id": "urn:ngm:class:webxr",
+        "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       }
     ]

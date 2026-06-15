@@ -119,7 +119,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:5g-networks",
+        "@id": "urn:ngm:class:5-g-network",
         "label": "5G Networks"
       },
       {
@@ -127,7 +127,7 @@ public:: true
         "label": "Edge Computing"
       },
       {
-        "@id": "urn:ngm:class:webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       }
     ],

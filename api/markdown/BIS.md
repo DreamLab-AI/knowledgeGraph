@@ -96,7 +96,7 @@ public:: true
         "label": "Distributed Ledger Technology"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],

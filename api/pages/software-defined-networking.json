@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:software-defined-networking",
+  "title": "Software-Defined Networking",
+  "slug": "software-defined-networking",
+  "public": true,
+  "classIri": "urn:ngm:class:software-defined-networking",
+  "domain": "infrastructure",
+  "definition": "Software-defined networking (SDN) is a network architecture that decouples the control plane, which decides how traffic is routed, from the data plane, which forwards packets, centralising control logic in a programmable software controller. By exposing the network through open interfaces, SDN allows traffic flows and policies to be configured dynamically and programmatically rather than device-by-device. This abstraction enables automation, virtualisation and centralised orchestration of network behaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-architecture",
+      "label": "Network Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:virtual-network",
+        "label": "Virtual Network"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-network",
+        "label": "Virtual Network"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    }
+  ]
+}

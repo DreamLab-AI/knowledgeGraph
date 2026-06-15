@@ -191,7 +191,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:data-lakes",
+        "@id": "urn:ngm:class:data-lake",
         "label": "Data Lakes"
       },
       {

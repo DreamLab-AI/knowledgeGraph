@@ -113,7 +113,7 @@ public:: true
         "label": "Kubernetes"
       },
       {
-        "@id": "urn:ngm:class:tensorflow",
+        "@id": "urn:ngm:class:tensor-flow",
         "label": "TensorFlow"
       },
       {

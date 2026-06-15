@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:direct3d",
+  "title": "Direct3D",
+  "slug": "direct3d",
+  "public": true,
+  "classIri": "urn:ngm:class:direct3d",
+  "domain": "spatial-computing",
+  "definition": "Direct3D is the 3D graphics application programming interface within Microsoft's DirectX collection, providing low-level access to the graphics processing unit for rendering geometry, shading, and compute workloads on Windows and Xbox platforms. It exposes the rendering pipeline through programmable shaders, command buffers, and resource state management, with modern revisions such as Direct3D 12 offering explicit, low-overhead control over GPU memory and parallelism. It is the dominant native graphics interface on Microsoft platforms and a primary backend target for game engines and real-time rendering systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graphics-api",
+      "label": "Graphics API"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

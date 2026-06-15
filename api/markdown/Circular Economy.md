@@ -555,7 +555,7 @@ alias:: CircularEconomy
         "label": "Green Finance"
       },
       {
-        "@id": "urn:ngm:class:sdgs",
+        "@id": "urn:ngm:class:sustainable-development-goals",
         "label": "SDGs"
       },
       {

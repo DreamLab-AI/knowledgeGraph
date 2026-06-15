@@ -92,7 +92,7 @@ public:: true
         "label": "FIDO2"
       },
       {
-        "@id": "urn:ngm:class:webauthn",
+        "@id": "urn:ngm:class:web-authn",
         "label": "WebAuthn"
       }
     ],
@@ -160,7 +160,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       },
       {
@@ -190,7 +190,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:oauth2",
+        "@id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth2"
       },
       {

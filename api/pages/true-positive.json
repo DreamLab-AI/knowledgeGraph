@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:true-positive",
+  "title": "True Positive",
+  "slug": "true-positive",
+  "public": true,
+  "classIri": "urn:ngm:class:true-positive",
+  "domain": "machine-learning",
+  "definition": "A True Positive is an outcome in binary classification where the model correctly predicts the positive class for an instance that genuinely belongs to that class. It is one of the four cells of the confusion matrix, alongside false positives, true negatives and false negatives. Counts of true positives are central to evaluation metrics such as precision, recall and the F1 score.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:confusion-matrix",
+      "label": "Confusion Matrix"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:false-positive",
+        "label": "False Positive"
+      },
+      {
+        "id": "urn:ngm:class:true-negative",
+        "label": "True Negative"
+      },
+      {
+        "id": "urn:ngm:class:false-negative",
+        "label": "False Negative"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:classifier",
+        "label": "Classifier"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:sensitivity",
+        "label": "Sensitivity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      },
+      {
+        "id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "precision",
+      "label": "Precision"
+    }
+  ]
+}

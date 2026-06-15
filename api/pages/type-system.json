@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:type-system",
+  "title": "Type System",
+  "slug": "type-system",
+  "public": true,
+  "classIri": "urn:ngm:class:type-system",
+  "domain": "infrastructure",
+  "definition": "A type system is a formal component of a programming language that classifies values and expressions into types and defines rules constraining how they may be combined. It is enforced by a checker that rejects programs violating these rules, preventing classes of errors before or during execution. Type systems vary along axes such as static versus dynamic checking, strength, and expressiveness, trading safety guarantees against flexibility.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:interface",
+        "label": "Interface"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:type-script",
+        "label": "TypeScript"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:type-script",
+        "label": "TypeScript"
+      },
+      {
+        "id": "urn:ngm:class:interface",
+        "label": "Interface"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

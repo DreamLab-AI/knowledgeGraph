@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:static-analysis",
+  "title": "Static Analysis",
+  "slug": "static-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:static-analysis",
+  "domain": "infrastructure",
+  "definition": "Static analysis is the examination of software source code, byte code or binaries without executing the program, in order to detect defects, security vulnerabilities, style violations and correctness properties. Techniques range from simple pattern-based linting to formal abstract interpretation and data-flow analysis over the program's control structure. It is commonly integrated into editors and continuous-integration pipelines to provide early feedback before code runs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-testing",
+      "label": "Software Testing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "Verification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "id": "urn:ngm:class:testing",
+        "label": "Testing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    }
+  ]
+}

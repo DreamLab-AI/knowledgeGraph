@@ -1,0 +1,125 @@
+{
+  "id": "urn:visionflow:page:restful-api",
+  "title": "RESTful API",
+  "slug": "restful-api",
+  "public": true,
+  "classIri": "urn:ngm:class:restful-api",
+  "domain": "infrastructure",
+  "definition": "A RESTful API is a web application programming interface that follows the Representational State Transfer architectural style, exposing resources identified by URIs and manipulated through a uniform set of HTTP methods. It is stateless, treats responses as representations of resource state, and uses standard status codes and media types so clients and servers can evolve independently. RESTful design favours predictable, cacheable, hypermedia-driven interactions over the web.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:web-api",
+      "label": "Web API"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:hateoas",
+        "label": "HATEOAS"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:stateless-protocol",
+        "label": "Stateless Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:web-services",
+        "label": "Web Services"
+      },
+      {
+        "id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:soap",
+        "label": "SOAP"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:web-api",
+        "label": "Web API"
+      },
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:hateoas",
+        "label": "HATEOAS"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

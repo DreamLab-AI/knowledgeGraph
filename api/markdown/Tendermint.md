@@ -119,7 +119,7 @@ public:: true
         "label": "Nakamoto Consensus"
       },
       {
-        "@id": "urn:ngm:class:hotstuff",
+        "@id": "urn:ngm:class:hot-stuff",
         "label": "HotStuff"
       }
     ],

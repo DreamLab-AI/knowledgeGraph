@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:computer-supported-cooperative-work",
+  "title": "Computer-Supported Cooperative Work",
+  "slug": "computer-supported-cooperative-work",
+  "public": true,
+  "classIri": "urn:ngm:class:computer-supported-cooperative-work",
+  "domain": "distributed-collaboration",
+  "definition": "Computer-Supported Cooperative Work (CSCW) is the interdisciplinary research field that studies how people work together using computer systems and how to design technology that supports their collaboration. It examines coordination, communication, awareness and the social organisation of group work across time and space, informing the design of groupware and collaborative tools. CSCW bridges human-computer interaction, the social sciences and distributed-systems engineering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:awareness",
+        "label": "Awareness"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
+      },
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

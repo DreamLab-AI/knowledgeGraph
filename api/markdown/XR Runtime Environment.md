@@ -120,7 +120,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
       {
@@ -162,7 +162,7 @@ public:: true
         "label": "Khronos Group"
       },
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       }
     ],

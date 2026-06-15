@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:shared-workspace",
+  "title": "Shared Workspace",
+  "slug": "shared-workspace",
+  "public": true,
+  "classIri": "urn:ngm:class:shared-workspace",
+  "domain": "distributed-collaboration",
+  "definition": "A shared workspace is a common digital environment in which multiple people can view, edit and organise shared artefacts together, whether simultaneously or over time. It provides a persistent space holding documents, boards, tasks or models alongside cues about who is present and what they are doing. Shared workspaces are a core construct of collaborative and groupware systems, turning individual tools into venues for coordinated teamwork.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collaboration",
+      "label": "Collaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:awareness",
+        "label": "Awareness"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-learning",
+      "label": "Collaborative Learning"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    }
+  ]
+}

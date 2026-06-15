@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:medical-image-analysis",
+  "title": "Medical Image Analysis",
+  "slug": "medical-image-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:medical-image-analysis",
+  "domain": "machine-learning",
+  "definition": "Medical Image Analysis is the application of computer-vision and machine-learning methods to interpret images produced by medical imaging modalities such as radiography, computed tomography, magnetic resonance imaging, ultrasound and pathology slides. It encompasses tasks including segmentation of anatomy and lesions, detection and classification of abnormalities, registration across images, and quantitative measurement. Modern systems rely heavily on deep convolutional and transformer-based models trained on annotated clinical data. It supports radiologists and clinicians in diagnosis, treatment planning and monitoring.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:annotated-data",
+        "label": "Annotated Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:computer-aided-diagnosis",
+        "label": "Computer-Aided Diagnosis"
+      },
+      {
+        "id": "urn:ngm:class:diagnostic-imaging",
+        "label": "Diagnostic Imaging"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:radiology",
+        "label": "Radiology"
+      },
+      {
+        "id": "urn:ngm:class:treatment-planning",
+        "label": "Treatment Planning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:image-registration",
+        "label": "Image Registration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    }
+  ]
+}

@@ -80,7 +80,7 @@ public:: true
         "label": "Khronos Group"
       },
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       }
     ],
@@ -96,7 +96,7 @@ public:: true
         "label": "glTF"
       },
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
       {
@@ -104,7 +104,7 @@ public:: true
         "label": "USD"
       },
       {
-        "@id": "urn:ngm:class:webxr",
+        "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       }
     ],

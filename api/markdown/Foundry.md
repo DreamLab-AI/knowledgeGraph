@@ -161,7 +161,7 @@ public:: true
         "label": "Vyper"
       },
       {
-        "@id": "urn:ngm:class:openzeppelin",
+        "@id": "urn:ngm:class:open-zeppelin",
         "label": "OpenZeppelin"
       }
     ]

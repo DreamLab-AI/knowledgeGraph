@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:embedding-space",
+  "title": "Embedding Space",
+  "slug": "embedding-space",
+  "public": true,
+  "classIri": "urn:ngm:class:embedding-space",
+  "domain": "machine-learning",
+  "definition": "An embedding space is a continuous vector space into which discrete or high-dimensional objects \u2014 such as words, images, or graph nodes \u2014 are mapped so that geometric relationships encode semantic similarity. Learned by models during representation learning, the space arranges related items close together and supports operations like nearest-neighbour search and analogy via vector arithmetic. It is the substrate underlying semantic search, retrieval, and many downstream machine-learning tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-neural-network",
+        "label": "Deep Neural Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

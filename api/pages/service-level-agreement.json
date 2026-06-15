@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:service-level-agreement",
+  "title": "Service Level Agreement",
+  "slug": "service-level-agreement",
+  "public": true,
+  "classIri": "urn:ngm:class:service-level-agreement",
+  "domain": "infrastructure",
+  "definition": "A service level agreement (SLA) is a formal contract between a service provider and its customers that defines the measurable level of service to be delivered, including availability, performance, and response-time targets, together with the remedies or credits owed when those targets are breached. SLAs translate abstract reliability expectations into quantitative service level objectives and indicators that can be monitored and enforced. They are central to cloud computing, managed services, and outsourcing, providing the accountability framework around which capacity, support, and operational practices are organised.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      },
+      {
+        "id": "urn:ngm:class:service-level-indicator",
+        "label": "Service Level Indicator"
+      },
+      {
+        "id": "urn:ngm:class:service-credit",
+        "label": "Service Credit"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:uptime-measurement",
+        "label": "Uptime Measurement"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:contractual-obligation",
+        "label": "Contractual Obligation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:best-effort-service",
+        "label": "Best-Effort Service"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:error-budget",
+        "label": "Error Budget"
+      },
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:metrics",
+        "label": "Metrics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:managed-services",
+        "label": "Managed Services"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:service-management",
+        "label": "Service Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "6-g-network-slice",
+      "label": "6G Network Slice"
+    }
+  ]
+}

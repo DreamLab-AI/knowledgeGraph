@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:black-box-model",
+  "title": "Black-Box Model",
+  "slug": "black-box-model",
+  "public": true,
+  "classIri": "urn:ngm:class:black-box-model",
+  "domain": "artificial-intelligence",
+  "definition": "A black-box model is a predictive system whose internal decision logic is opaque or too complex for a human to inspect directly, so it can only be understood through its inputs and outputs. Many high-performing machine-learning systems, such as deep neural networks and large ensembles, are black-box in nature, trading interpretability for accuracy. This opacity motivates post-hoc explanation techniques and contrasts with inherently interpretable white-box models where the reasoning is transparent.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-interpretability",
+      "label": "Model Interpretability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:model-transparency",
+        "label": "Model Transparency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:shap",
+        "label": "SHAP"
+      },
+      {
+        "id": "urn:ngm:class:lime",
+        "label": "LIME"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "interpretable-ai",
+      "label": "Interpretable AI"
+    },
+    {
+      "slug": "intrinsic-interpretability",
+      "label": "Intrinsic Interpretability"
+    }
+  ]
+}

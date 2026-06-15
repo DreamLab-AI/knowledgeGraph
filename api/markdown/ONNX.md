@@ -42,7 +42,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:protocol-buffers",
+        "@id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffers"
       },
       {

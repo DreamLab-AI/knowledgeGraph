@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:containerisation",
+  "title": "Containerisation",
+  "slug": "containerisation",
+  "public": true,
+  "classIri": "urn:ngm:class:containerisation",
+  "domain": "infrastructure",
+  "definition": "Containerisation is an operating-system-level virtualisation technique that packages an application together with its dependencies, libraries, and configuration into a single portable, isolated unit called a container. Containers share the host kernel yet maintain isolated user spaces, making them far lighter than full virtual machines while remaining reproducible across environments. The approach underpins cloud-native software delivery, providing consistent runtime behaviour from a developer's laptop to production clusters.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:virtualisation",
+      "label": "Virtualisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:immutable-infrastructure",
+        "label": "Immutable Infrastructure"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:gitops",
+        "label": "GitOps"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adapter-slot",
+      "label": "Adapter Slot"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    }
+  ]
+}

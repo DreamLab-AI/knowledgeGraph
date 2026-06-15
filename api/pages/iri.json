@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:iri",
+  "title": "IRI",
+  "slug": "iri",
+  "public": true,
+  "classIri": "urn:ngm:class:iri",
+  "domain": "data",
+  "definition": "An Internationalised Resource Identifier (IRI) is a compact string that uniquely identifies an abstract or physical resource, generalising the Uniform Resource Identifier (URI) to permit characters from the full Unicode repertoire rather than only ASCII. IRIs are the foundational naming mechanism of the Semantic Web: every node and predicate in an RDF graph is named by an IRI, allowing data published by independent parties to refer unambiguously to the same entity. An IRI may be mapped to an equivalent URI through percent-encoding, preserving compatibility with legacy web infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:linked-data",
+      "label": "Linked Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:schema-org",
+        "label": "Schema.org"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:uri",
+        "label": "URI"
+      },
+      {
+        "id": "urn:ngm:class:namespace",
+        "label": "Namespace"
+      },
+      {
+        "id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identifier",
+        "label": "Decentralised Identifier"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

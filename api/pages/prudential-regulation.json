@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:prudential-regulation",
+  "title": "Prudential Regulation",
+  "slug": "prudential-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:prudential-regulation",
+  "domain": "finance",
+  "definition": "Prudential regulation is the body of supervisory rules and oversight aimed at ensuring the safety and soundness of individual financial institutions and the stability of the wider financial system. It sets requirements for capital adequacy, liquidity, governance and risk management, and grants supervisors powers to monitor, intervene and resolve failing firms. Microprudential measures protect depositors and counterparties of single firms, while macroprudential measures address risks to the system as a whole.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-reporting",
+        "label": "Regulatory Reporting"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:scenario-analysis",
+        "label": "Scenario Analysis"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

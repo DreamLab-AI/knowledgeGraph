@@ -104,7 +104,7 @@ alias:: Classifier Free Guidance
         "label": "Stable Diffusion"
       },
       {
-        "@id": "urn:ngm:class:controlnet",
+        "@id": "urn:ngm:class:control-net",
         "label": "ControlNet"
       },
       {

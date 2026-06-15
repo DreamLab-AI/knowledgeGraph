@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:bioinformatics",
+  "title": "Bioinformatics",
+  "slug": "bioinformatics",
+  "public": true,
+  "classIri": "urn:ngm:class:bioinformatics",
+  "domain": "machine-learning",
+  "definition": "Bioinformatics is the interdisciplinary field that develops computational methods and software to acquire, store, analyse, and interpret biological data, especially molecular sequences and structures. It combines biology, computer science, statistics, and increasingly machine learning to address problems such as genome assembly, sequence alignment, protein structure prediction, and the inference of biological networks. As high-throughput sequencing and imaging generate vast datasets, bioinformatics provides the algorithms and pipelines that turn raw measurements into testable biological insight.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computational-biology",
+      "label": "Computational Biology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sequence-alignment",
+        "label": "Sequence Alignment"
+      },
+      {
+        "id": "urn:ngm:class:genomics",
+        "label": "Genomics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dna-sequencing",
+        "label": "DNA Sequencing"
+      },
+      {
+        "id": "urn:ngm:class:proteomics",
+        "label": "Proteomics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:biology",
+        "label": "Biology"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:systems-biology",
+        "label": "Systems Biology"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:alphafold",
+        "label": "AlphaFold"
+      },
+      {
+        "id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

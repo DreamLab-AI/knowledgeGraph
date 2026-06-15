@@ -139,7 +139,7 @@ public:: true
         "label": "GDPR"
       },
       {
-        "@id": "urn:ngm:class:eidas",
+        "@id": "urn:ngm:class:e-idas",
         "label": "eIDAS"
       },
       {

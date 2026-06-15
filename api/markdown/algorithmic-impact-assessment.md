@@ -1,0 +1,44 @@
+- ### Definition
+  - An algorithmic impact assessment is a structured governance process for evaluating the potential effects of an automated decision-making or artificial-intelligence system on individuals, groups and society before and during its deployment. It documents the system's purpose, data, risks to fairness, privacy and safety, and the mitigations and oversight controls in place, producing an auditable record for accountability. Modelled on data-protection and environmental impact assessments, it is increasingly mandated by AI regulation and procurement frameworks to ensure responsible and transparent use of algorithms.
+  - Related core concepts: [[AI Governance]] [[AI Ethics]] [[Algorithmic Accountability]] [[Risk Assessment]]
+- ### Overview
+  - An algorithmic impact assessment is a documented, repeatable evaluation of an automated system's risks and effects before and during deployment.
+  - It mirrors data-protection and environmental impact assessments, producing an auditable record for accountability and oversight.
+  - Public-sector procurement and emerging AI regulation increasingly require such assessments for high-risk systems.
+- ### Key aspects
+  - Scoping: documents the system's purpose, affected populations and decision context.
+  - Risk analysis: identifies harms to fairness, privacy, safety and rights, including bias and opacity.
+  - Mitigation and oversight: records controls such as human review, monitoring and redress mechanisms.
+  - Stakeholder engagement: involves affected communities and domain experts to surface contextual risks.
+- ### Applications
+  - Governing automated decision-making in public services.
+  - Demonstrating regulatory compliance for high-risk AI systems.
+  - Informing procurement decisions for algorithmic tools.
+  - Establishing accountability records for audits and appeals.
+- ### Relationships
+  - partOf:: [[AI Governance]]
+  - implements:: [[Algorithmic Accountability]]
+  - implements:: [[Accountability]]
+  - implements:: [[Responsible AI]]
+  - requires:: [[Transparency]]
+  - requires:: [[Stakeholder Engagement]]
+  - requires:: [[Human Oversight]]
+  - uses:: [[Risk Assessment]]
+  - uses:: [[Bias]]
+  - uses:: [[Algorithmic Bias]]
+  - uses:: [[Explainability]]
+  - supports:: [[Regulatory Compliance]]
+  - supports:: [[AI Regulation]]
+  - supports:: [[Fairness]]
+  - relatedTo:: [[AI Ethics]]
+  - relatedTo:: [[Data Protection Impact Assessment]]
+  - relatedTo:: [[Privacy Impact Assessment]]
+  - relatedTo:: [[AI Impact Assessment]]
+  - relatedTo:: [[Compliance Framework]]
+  - relatedTo:: [[GDPR]]
+  - relatedTo:: [[Model Governance]]
+  - relatedTo:: [[Impact Assessment]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - attributedTo:: did:nostr:ontology-mesh

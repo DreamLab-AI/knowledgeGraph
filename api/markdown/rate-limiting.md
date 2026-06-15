@@ -1,0 +1,36 @@
+- ### Definition
+- [[Rate Limiting]] caps how many requests a client can make to a service within a time window, shedding or queuing the excess. It is enforced at the [[API Gateway]] and within [[API Management]] to protect resources and uphold [[Resilience]] and [[Security]].
+- ### Overview
+- Rate limiting transforms an unbounded stream of incoming requests into a controlled flow that backend services can sustain, trading a small fraction of rejected traffic for overall stability.
+- Algorithms differ in how they account for time. Token-bucket and leaky-bucket smooth bursts, while fixed- and sliding-window counters give precise per-interval ceilings. The choice trades burst tolerance against accuracy.
+- Limits are typically scoped per client, per API key, or per endpoint, and are paired with informative responses so well-behaved callers can back off and retry, supporting graceful [[Fault Tolerance]].
+- ### Mechanisms
+- Token bucket: tokens refill at a fixed rate and each request consumes one, permitting controlled bursts.
+- Sliding window: request timestamps within a moving interval are counted for precise enforcement.
+- Distributed counters: shared state, often in a cache, coordinates limits across [[Microservices]] replicas.
+- Response signalling: status codes and retry hints let clients adapt, complementing [[Load Balancing]].
+- ### Applications
+- Protecting public APIs through an [[API Gateway]] from overload and scraping.
+- Enforcing tiered quotas in [[API Management]] for monetised access.
+- Mitigating brute-force and denial-of-service abuse as a [[Security]] control.
+- Preserving [[Scalability]] of shared backend services under spiky demand.
+- ### Relationships
+- partOf:: [[Infrastructure]]
+- enables:: [[Scalability]]
+- enables:: [[Resilience]]
+- enables:: [[Fault Tolerance]]
+- hasPart:: [[Caching]]
+- implements:: [[API Gateway]]
+- implements:: [[API Management]]
+- relatedTo:: [[Load Balancing]]
+- relatedTo:: [[Authentication]]
+- relatedTo:: [[Microservices]]
+- supports:: [[Security]]
+- uses:: [[API]]
+- uses:: [[Caching]]
+- requires:: [[API Gateway]]
+- dependsOn:: [[API Management]]
+- bridgesTo:: [[Service Mesh]]
+- contrastsWith:: [[Load Balancing]]
+- ### Provenance
+- updated:: 2026-06-15

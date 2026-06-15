@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:first-order-logic",
+  "title": "First-Order Logic",
+  "slug": "first-order-logic",
+  "public": true,
+  "classIri": "urn:ngm:class:first-order-logic",
+  "domain": "artificial-intelligence",
+  "definition": "First-Order Logic (FOL), also called predicate logic, is a formal system that extends propositional logic with quantifiers, variables, predicates and functions, allowing statements about objects and their relationships. It can express assertions such as \"every X has some Y\" through universal and existential quantification over a domain of discourse. FOL provides a precise syntax and model-theoretic semantics that underpin automated reasoning, knowledge representation and the foundations of mathematics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:formal-logic",
+      "label": "Formal Logic"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:predicate-logic",
+        "label": "Predicate Logic"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:logical-inference",
+        "label": "Logical Inference"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:propositional-logic",
+        "label": "Propositional Logic"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:logical-inference",
+        "label": "Logical Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

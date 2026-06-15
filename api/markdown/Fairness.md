@@ -80,7 +80,7 @@ public:: true
         "label": "Protected Attribute"
       },
       {
-        "@id": "urn:ngm:class:fairness-metric",
+        "@id": "urn:ngm:class:fairness-metrics",
         "label": "Fairness Metric"
       }
     ],

@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:data-partitioning",
+  "title": "Data Partitioning",
+  "slug": "data-partitioning",
+  "public": true,
+  "classIri": "urn:ngm:class:data-partitioning",
+  "domain": "infrastructure",
+  "definition": "Data partitioning is the practice of dividing a dataset into smaller, independently manageable subsets distributed across storage nodes or processing units to improve scalability, performance, and availability. Partitioning strategies include horizontal splitting by key range or hash, vertical splitting by column, and functional splitting by domain, each balancing query locality against load distribution. Effective partitioning underpins distributed databases and large-scale data systems by enabling parallel processing while minimising cross-partition coordination.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sharding",
+      "label": "Sharding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

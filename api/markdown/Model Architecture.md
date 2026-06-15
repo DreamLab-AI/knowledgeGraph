@@ -93,7 +93,7 @@ alias:: ModelArchitecture
         "label": "Optimisation Algorithm"
       },
       {
-        "@id": "urn:ngm:class:computational-resource",
+        "@id": "urn:ngm:class:computational-resources",
         "label": "Computational Resource"
       }
     ],

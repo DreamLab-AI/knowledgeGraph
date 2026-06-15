@@ -879,7 +879,7 @@ alias:: BC-0434-blockchain-as-a-service
         "label": "Decentralised Identity"
       },
       {
-        "@id": "urn:ngm:class:dev-ops",
+        "@id": "urn:ngm:class:devops",
         "label": "DevOps"
       },
       {

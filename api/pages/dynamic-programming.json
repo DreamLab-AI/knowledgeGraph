@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:dynamic-programming",
+  "title": "Dynamic Programming",
+  "slug": "dynamic-programming",
+  "public": true,
+  "classIri": "urn:ngm:class:dynamic-programming",
+  "domain": "artificial-intelligence",
+  "definition": "Dynamic programming is an algorithmic technique for solving problems by breaking them into overlapping subproblems whose solutions are stored and reused rather than recomputed. It applies to problems exhibiting optimal substructure, combining subproblem solutions to construct an optimal whole. By memoising or tabulating intermediate results it converts exponential brute-force searches into polynomial-time algorithms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-paradigm",
+      "label": "Programming Paradigm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:programming-paradigm",
+        "label": "Programming Paradigm"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    }
+  ]
+}

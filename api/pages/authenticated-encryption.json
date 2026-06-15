@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:authenticated-encryption",
+  "title": "Authenticated Encryption",
+  "slug": "authenticated-encryption",
+  "public": true,
+  "classIri": "urn:ngm:class:authenticated-encryption",
+  "domain": "security",
+  "definition": "Authenticated encryption is a class of symmetric cryptographic schemes that simultaneously provide confidentiality, integrity and authenticity of a message in a single operation. Authenticated encryption with associated data (AEAD) additionally binds unencrypted header data to the ciphertext, so any tampering with the message or its context is detected on decryption. Modern AEAD constructions such as AES-GCM and ChaCha20-Poly1305 are the recommended default for secure communication because they avoid the pitfalls of composing encryption and authentication separately.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:encryption",
+      "label": "Encryption"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      },
+      {
+        "id": "urn:ngm:class:data-confidentiality",
+        "label": "Data Confidentiality"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:aes-gcm",
+        "label": "AES-GCM"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:tls-1-3",
+        "label": "TLS 1.3"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

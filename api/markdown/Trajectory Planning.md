@@ -134,7 +134,7 @@ public:: true
         "label": "Reinforcement Learning"
       },
       {
-        "@id": "urn:ngm:class:optimisation-algorithms",
+        "@id": "urn:ngm:class:optimization-algorithms",
         "label": "Optimisation Algorithms"
       },
       {

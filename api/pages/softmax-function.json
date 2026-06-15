@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:softmax-function",
+  "title": "Softmax Function",
+  "slug": "softmax-function",
+  "public": true,
+  "classIri": "urn:ngm:class:softmax-function",
+  "domain": "machine-learning",
+  "definition": "The softmax function is a normalising transformation that maps a vector of real-valued scores (logits) into a probability distribution, where each output lies in the open interval (0, 1) and the outputs sum to one. It exponentiates each input and divides by the sum of all exponentials, amplifying larger scores while preserving rank order. Softmax is ubiquitous in machine learning as the final layer of multi-class classifiers and as the normalisation step inside attention mechanisms, and it pairs naturally with the cross-entropy loss whose gradient simplifies to the difference between predicted and target distributions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:activation-function",
+      "label": "Activation Function"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

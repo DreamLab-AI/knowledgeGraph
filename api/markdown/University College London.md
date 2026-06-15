@@ -137,7 +137,7 @@ public:: true
         "label": "Research University"
       },
       {
-        "@id": "urn:ngm:class:deepmind",
+        "@id": "urn:ngm:class:deep-mind",
         "label": "DeepMind"
       },
       {

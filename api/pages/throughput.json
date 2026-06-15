@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:throughput",
+  "title": "Throughput",
+  "slug": "throughput",
+  "public": true,
+  "classIri": "urn:ngm:class:throughput",
+  "domain": "machine-learning",
+  "definition": "Throughput is the rate at which a system completes useful work over a unit of time, such as requests served per second, tokens generated per second or bytes transferred per second. It measures sustained productive capacity rather than the time to complete a single operation. In machine learning serving it captures how many inferences or training samples a system can process under load. Maximising throughput typically involves batching, parallelism and resource utilisation, often trading off against per-request latency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:performance-metrics",
+      "label": "Performance Metrics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:request-rate",
+        "label": "Request Rate"
+      },
+      {
+        "id": "urn:ngm:class:batch-size",
+        "label": "Batch Size"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:resource-utilization",
+        "label": "Resource Utilization"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:response-time",
+        "label": "Response Time"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:batching",
+        "label": "Batching"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

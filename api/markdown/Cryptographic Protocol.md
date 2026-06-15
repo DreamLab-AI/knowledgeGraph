@@ -235,7 +235,7 @@ alias:: Cryptographic-Protocol
         "label": "ECDSA"
       },
       {
-        "@id": "urn:ngm:class:eddsa",
+        "@id": "urn:ngm:class:ed-dsa",
         "label": "EdDSA"
       },
       {

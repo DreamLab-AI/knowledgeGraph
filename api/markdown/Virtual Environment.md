@@ -121,7 +121,7 @@ alias:: VirtualEnvironment
         "label": "Game Engine"
       },
       {
-        "@id": "urn:ngm:class:webxr",
+        "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       }
     ],
@@ -153,7 +153,7 @@ alias:: VirtualEnvironment
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
       {

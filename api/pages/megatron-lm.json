@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:megatron-lm",
+  "title": "Megatron-LM",
+  "slug": "megatron-lm",
+  "public": true,
+  "classIri": "urn:ngm:class:megatron-lm",
+  "domain": "machine-learning",
+  "definition": "Megatron-LM is an open-source framework developed by NVIDIA for training very large transformer language models efficiently across many GPUs. It pioneered intra-layer tensor model parallelism, splitting individual weight matrices and attention heads across devices, and combines this with pipeline and data parallelism to scale to models with hundreds of billions of parameters. The framework provides optimised kernels and communication patterns that minimise the overhead of synchronising gradients and activations between accelerators.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-training",
+      "label": "Distributed Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:gradient-accumulation",
+        "label": "Gradient Accumulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-gpu",
+        "label": "NVIDIA GPU"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed-Precision Training"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    }
+  ]
+}

@@ -186,7 +186,7 @@ public:: true
         "label": "Self-Supervised Learning"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {

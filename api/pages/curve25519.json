@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:curve25519",
+  "title": "Curve25519",
+  "slug": "curve25519",
+  "public": true,
+  "classIri": "urn:ngm:class:curve25519",
+  "domain": "security",
+  "definition": "Curve25519 is a Montgomery-form elliptic curve designed for fast, secure elliptic-curve Diffie-Hellman key exchange at a 128-bit security level. It was engineered to avoid common implementation pitfalls by enabling constant-time, branch-free arithmetic and to sidestep concerns about opaque parameter selection through rigid, transparent design choices. It underpins the X25519 key-agreement function and is widely deployed in modern secure-transport and messaging protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
+      },
+      {
+        "id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:signal-protocol",
+        "label": "Signal Protocol"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    }
+  ]
+}

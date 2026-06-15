@@ -94,7 +94,7 @@ public:: true
         "label": "Zero-Trust Security"
       },
       {
-        "@id": "urn:ngm:class:openapi-specification",
+        "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Specification"
       }
     ],

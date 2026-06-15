@@ -159,7 +159,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       },
       {

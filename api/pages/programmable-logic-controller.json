@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:programmable-logic-controller",
+  "title": "Programmable Logic Controller",
+  "slug": "programmable-logic-controller",
+  "public": true,
+  "classIri": "urn:ngm:class:programmable-logic-controller",
+  "domain": "robotics",
+  "definition": "A programmable logic controller (PLC) is a ruggedised industrial computer designed to control machinery and processes by repeatedly scanning inputs, executing a stored control program, and updating outputs in real time. Built to withstand harsh factory environments, it interfaces with sensors and actuators and is typically programmed in standardised languages such as ladder logic. PLCs are foundational building blocks of industrial automation and supervisory control systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:industrial-automation",
+      "label": "IndustrialAutomation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ]
+}

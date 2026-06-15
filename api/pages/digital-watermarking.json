@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:digital-watermarking",
+  "title": "Digital Watermarking",
+  "slug": "digital-watermarking",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-watermarking",
+  "domain": "artificial-intelligence",
+  "definition": "Digital watermarking is the technique of embedding identifying or authenticating information directly into digital content such as images, audio, video, text, or model outputs, ideally so the mark is imperceptible yet recoverable. A watermark may be robust, surviving compression and editing, or fragile, breaking on tampering to signal alteration. It is increasingly used to mark AI-generated media for provenance and to support copyright protection and content authentication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-provenance",
+      "label": "Content Provenance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:imperceptibility",
+        "label": "Imperceptibility"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      },
+      {
+        "id": "urn:ngm:class:copyright-protection",
+        "label": "Copyright Protection"
+      },
+      {
+        "id": "urn:ngm:class:attribution",
+        "label": "Attribution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:c2pa",
+        "label": "C2PA"
+      },
+      {
+        "id": "urn:ngm:class:data-provenance",
+        "label": "Data Provenance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:steganography",
+        "label": "Steganography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-origin-declaration",
+        "label": "AI Origin Declaration"
+      },
+      {
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-origin-declaration",
+      "label": "Ai Origin Declaration"
+    }
+  ]
+}

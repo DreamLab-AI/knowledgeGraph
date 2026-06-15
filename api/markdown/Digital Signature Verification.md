@@ -92,7 +92,7 @@ public:: true
         "label": "Signature Algorithm"
       },
       {
-        "@id": "urn:ngm:class:public-key",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-key",
         "label": "Public Key"
       },
       {
@@ -124,7 +124,7 @@ public:: true
         "label": "ECDSA"
       },
       {
-        "@id": "urn:ngm:class:eddsa",
+        "@id": "urn:ngm:class:ed-dsa",
         "label": "EdDSA"
       },
       {

@@ -1,0 +1,40 @@
+- ### Definition
+  - Digital watermarking embeds identifying information into digital content as a mechanism of [[Content Provenance]].
+  - The mark is ideally imperceptible to humans yet recoverable by a detector, balancing [[Imperceptibility]] against [[Robustness]].
+  - It is increasingly applied to [[Synthetic Media]] to signal AI origin and support [[Copyright Protection]].
+- ### Overview
+  - Unlike visible overlays, modern watermarks hide a signal in the statistical structure of pixels, samples, or token distributions.
+  - The core trade-off is between robustness to editing and imperceptibility to the consumer, with fragile variants used to detect tampering instead.
+  - For generative systems, watermarks can be baked into the sampling process so outputs are traceable to their model.
+- ### Key aspects
+  - Robust versus fragile designs serving provenance and tamper-evidence respectively.
+  - Capacity, imperceptibility, and robustness as competing objectives.
+  - Detector secrecy and resistance to removal or forgery attacks.
+- ### Mechanisms
+  - Encoders perturb content in transform or latent domains to carry a payload, related to [[Steganography]].
+  - For text and model outputs, watermarks bias token sampling toward a secret pattern detectable later.
+  - Detectors apply the inverse procedure and statistical tests to recover or verify the mark.
+- ### Applications
+  - Marking AI-generated images, audio, and text for [[AI Origin Declaration]].
+  - Tracing leaks and supporting [[Digital Rights Management]].
+  - Complementing [[Deepfake Detection]] and standardised provenance such as [[C2PA]].
+- ### Relationships
+  - subClassOf:: [[Content Provenance]]
+  - hasPart:: [[Robustness]]
+  - hasPart:: [[Imperceptibility]]
+  - enables:: [[Content Authentication]]
+  - enables:: [[Copyright Protection]]
+  - enables:: [[Attribution]]
+  - supports:: [[AI Origin Declaration]]
+  - supports:: [[Deepfake Detection]]
+  - requires:: [[Metadata]]
+  - uses:: [[Steganography]]
+  - relatedTo:: [[Synthetic Media]]
+  - relatedTo:: [[Generative AI]]
+  - relatedTo:: [[Digital Rights Management]]
+  - bridgesTo:: [[C2PA]]
+  - bridgesTo:: [[Data Provenance]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

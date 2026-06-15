@@ -1,0 +1,34 @@
+- ### Definition
+  - Technology transfer is the process of moving knowledge, skills, methods and inventions from the setting where they are created, such as a university or research laboratory, to organisations that can develop and commercialise them. It encompasses the legal, organisational and economic mechanisms, including licensing, spin-outs and collaborative research, by which research outputs become products, services and capabilities. Effective technology transfer is a central channel through which research and development drives economic and societal impact.
+  - Related core concepts: [[Innovation]] [[Knowledge Transfer]] [[Research and Development]] [[Patent]] [[Licensing]]
+- ### Overview
+  - Technology transfer bridges the gap between discovery and application. It typically involves protecting intellectual property, valuing and marketing it, and structuring agreements that allow industry to use the underlying invention. Universities operate technology-transfer offices to manage this, while public funders use it as a metric of research impact. The process also flows in reverse and laterally, as established firms adopt techniques developed elsewhere.
+- ### Key aspects
+  - Intellectual-property protection through patents and other rights.
+  - Valuation and marketing of inventions to potential adopters.
+  - Licensing agreements and the formation of spin-out companies.
+  - Collaborative and contract research between academia and industry.
+  - Diffusion of know-how, not only formal IP, between organisations.
+- ### Applications
+  - University spin-outs commercialising laboratory research.
+  - Industry licensing of patented methods and materials.
+  - Public-private partnerships translating funded research to market.
+  - Cross-sector adoption of methods from one field into another.
+- ### Relationships
+  - subClassOf:: [[Innovation]]
+  - partOf:: [[Innovation]]
+  - hasPart:: [[Knowledge Transfer]]
+  - requires:: [[Research and Development]]
+  - requires:: [[Patent]]
+  - uses:: [[Licensing]]
+  - enables:: [[Innovation]]
+  - bridgesTo:: [[Research and Development]]
+  - supports:: [[Knowledge Transfer]]
+  - relatedTo:: [[Patent]]
+  - relatedTo:: [[Licensing]]
+  - relatedTo:: [[Research and Development]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

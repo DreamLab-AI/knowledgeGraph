@@ -120,7 +120,7 @@ public:: true
         "label": "Public Key Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:oauth2",
+        "@id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth2"
       },
       {
@@ -138,7 +138,7 @@ public:: true
         "label": "EU Digital Identity Wallet"
       },
       {
-        "@id": "urn:ngm:class:openid4vc",
+        "@id": "urn:ngm:class:open-id4-vc",
         "label": "OpenID4VC"
       }
     ],

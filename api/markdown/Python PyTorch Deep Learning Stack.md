@@ -148,7 +148,7 @@ elevatedFrom:: [[Python and PyTorch]]
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:tensorflow",
+        "@id": "urn:ngm:class:tensor-flow",
         "label": "TensorFlow"
       },
       {

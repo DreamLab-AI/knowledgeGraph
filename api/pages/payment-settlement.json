@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:payment-settlement",
+  "title": "Payment Settlement",
+  "slug": "payment-settlement",
+  "public": true,
+  "classIri": "urn:ngm:class:payment-settlement",
+  "domain": "blockchain",
+  "definition": "Payment settlement is the process by which a payment obligation between parties is irrevocably discharged through the transfer of value, completing a transaction so that the recipient gains final, unconditional ownership of funds. Settlement may occur gross or net, in real time or in batches, and across traditional rails or blockchain ledgers, with finality being the property that the transfer can no longer be reversed. In distributed-ledger contexts, settlement is achieved when an on-chain transaction reaches consensus finality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:settlement",
+      "label": "Settlement"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:swift",
+        "label": "SWIFT"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

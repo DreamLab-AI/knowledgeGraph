@@ -122,7 +122,7 @@ public:: true
         "label": "Algorithmic Complexity"
       },
       {
-        "@id": "urn:ngm:class:data-structures",
+        "@id": "urn:ngm:class:data-structure",
         "label": "Data Structures"
       },
       {

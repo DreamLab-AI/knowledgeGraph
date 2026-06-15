@@ -171,7 +171,7 @@ alias:: Force-Torque Sensor, Force/Torque Sensor
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:ethercat",
+        "@id": "urn:ngm:class:ether-cat",
         "label": "EtherCAT"
       },
       {

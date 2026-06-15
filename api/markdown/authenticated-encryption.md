@@ -1,0 +1,39 @@
+- ### Definition
+	- Authenticated encryption is an [[Encryption]] scheme that delivers confidentiality, integrity and authenticity together.
+	- It combines a cipher with a [[Message Authentication Code]] so tampering is detected, not just hidden.
+	- The AEAD variant binds associated header data, and it underpins [[Secure Communication]] across the modern internet.
+- ### Overview
+	- Naively composing encryption and a MAC is error-prone; authenticated encryption packages the correct construction.
+	- AEAD modes take a key, a unique [[Nonce]], plaintext and optional associated data, and return ciphertext plus an authentication tag.
+	- Decryption verifies the tag before releasing plaintext, so forged or modified messages are rejected.
+	- It is the default in protocols such as [[TLS 1.3]], SSH and disk and message encryption systems.
+- ### Mechanisms
+	- Encrypt-then-MAC and dedicated AEAD constructions guarantee that authentication covers the ciphertext.
+	- Nonce uniqueness per key is mandatory; reuse can catastrophically break confidentiality and integrity.
+	- Galois/Counter Mode pairs counter-mode encryption with a polynomial authenticator for high throughput.
+	- Poly1305-based modes provide a fast, side-channel-resistant alternative on platforms without AES acceleration.
+- ### Applications
+	- Transport security in [[TLS 1.3]] cipher suites and QUIC packet protection.
+	- At-rest encryption of files, databases and backups with integrity guarantees.
+	- Secure messaging and VPN tunnels that must detect any in-transit modification.
+	- Token and session protection where forgery resistance is as important as secrecy.
+- ### Relationships
+	- subClassOf:: [[Encryption]]
+	- partOf:: [[Cryptography]]
+	- uses:: [[Symmetric Encryption]]
+	- uses:: [[Message Authentication Code]]
+	- uses:: [[Nonce]]
+	- enables:: [[Secure Communication]]
+	- enables:: [[Data Confidentiality]]
+	- enables:: [[Data Integrity]]
+	- implements:: [[AES-GCM]]
+	- supports:: [[TLS 1.3]]
+	- supports:: [[TLS]]
+	- requires:: [[Cryptographic Protocol]]
+	- requires:: [[Key Management]]
+	- relatedTo:: [[Cryptography]]
+	- relatedTo:: [[Hash Function]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

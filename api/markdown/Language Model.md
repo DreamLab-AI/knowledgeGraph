@@ -58,7 +58,7 @@ public:: true
         "label": "Context Window"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {

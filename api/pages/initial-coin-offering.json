@@ -1,0 +1,117 @@
+{
+  "id": "urn:visionflow:page:initial-coin-offering",
+  "title": "Initial Coin Offering",
+  "slug": "initial-coin-offering",
+  "public": true,
+  "classIri": "urn:ngm:class:initial-coin-offering",
+  "domain": "blockchain",
+  "definition": "An initial coin offering (ICO) is a blockchain-based fundraising mechanism in which a project issues and sells newly created cryptographic tokens to early backers, typically in exchange for established cryptocurrencies such as Bitcoin or Ether. Tokens are usually distributed via smart contracts and may grant utility within a planned protocol, governance rights, or speculative value. Pioneered around 2013\u20132017, ICOs enabled permissionless global capital formation but attracted intense regulatory scrutiny over investor protection and securities classification, prompting more structured successors such as security token offerings and initial exchange offerings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptocurrency-token",
+      "label": "Cryptocurrency Token"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:token-sale",
+        "label": "Token Sale"
+      },
+      {
+        "id": "urn:ngm:class:whitepaper",
+        "label": "Whitepaper"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-wallet",
+        "label": "Cryptocurrency Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-fundraising",
+        "label": "Decentralised Fundraising"
+      },
+      {
+        "id": "urn:ngm:class:capital-formation",
+        "label": "Capital Formation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:initial-public-offering",
+        "label": "Initial Public Offering"
+      },
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:initial-exchange-offering",
+        "label": "Initial Exchange Offering"
+      },
+      {
+        "id": "urn:ngm:class:initial-dex-offering",
+        "label": "Initial DEX Offering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      },
+      {
+        "id": "urn:ngm:class:protocol-bootstrapping",
+        "label": "Protocol Bootstrapping"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:crowdfunding",
+        "label": "Crowdfunding"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

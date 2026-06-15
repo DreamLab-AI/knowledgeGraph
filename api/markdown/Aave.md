@@ -103,7 +103,7 @@ public:: true
         "label": "Compound Protocol"
       },
       {
-        "@id": "urn:ngm:class:makerdao",
+        "@id": "urn:ngm:class:maker-dao",
         "label": "MakerDAO"
       },
       {

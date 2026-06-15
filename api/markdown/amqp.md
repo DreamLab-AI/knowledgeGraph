@@ -1,0 +1,35 @@
+- ### Definition
+  - [[AMQP]] is an open wire-level [[Network Protocol]] for [[Message Broker]] interoperability, enabling reliable [[Asynchronous Communication]] between heterogeneous systems through the [[Publish-Subscribe Pattern]].
+- ### Overview
+  - AMQP emerged from the financial-services industry to escape vendor lock-in inherent in proprietary messaging products. By specifying the exact bytes exchanged on the wire, AMQP guarantees that a broker and client from different vendors can interoperate, a property that distinguishes it from API-level messaging libraries.
+  - The protocol exists in two major lineages. AMQP 0-9-1 popularised the exchange/queue/binding broker model used by widely deployed brokers, while AMQP 1.0, standardised by OASIS and published as ISO/IEC 19464, redefined the protocol as a peer-to-peer link layer with formal type system, sessions and flow control.
+- ### Key aspects
+  - Broker model: producers publish to exchanges that route messages to bound queues from which consumers draw, decoupling sender and receiver lifecycles.
+  - Routing semantics: direct, topic, fanout and headers exchanges support point-to-point, hierarchical and broadcast distribution.
+  - Reliability: acknowledgements, transactions and persistent delivery provide at-least-once and exactly-once guarantees.
+  - Flow control: credit-based link flow control in AMQP 1.0 prevents fast producers from overwhelming slow consumers.
+- ### Mechanisms
+  - Frames carry method, header and body content over a multiplexed connection of channels or sessions.
+  - A self-describing type system encodes message bodies portably across languages and platforms.
+  - Settlement and disposition states track delivery progress for guaranteed handoff.
+- ### Applications
+  - Enterprise integration buses, financial trade messaging, telemetry ingestion and microservice event distribution.
+  - Cloud messaging services expose AMQP endpoints to bridge on-premises and cloud workloads.
+- ### Relationships
+  - uses:: [[Message Queue]]
+  - uses:: [[Message Broker]]
+  - implements:: [[Publish-Subscribe Pattern]]
+  - implements:: [[Asynchronous Communication]]
+  - enables:: [[Event Driven Architecture]]
+  - enables:: [[Interoperability]]
+  - standardizedBy:: [[OASIS]]
+  - partOf:: [[Middleware]]
+  - contrastsWith:: [[MQTT]]
+  - supports:: [[Network Protocol]]
+  - dependsOn:: [[API Gateway]]
+  - relatedTo:: [[Cloud Computing]]
+  - bridgesTo:: [[Event Sourcing]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - maturity:: mature

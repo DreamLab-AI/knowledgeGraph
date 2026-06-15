@@ -74,7 +74,7 @@ public:: true
         "label": "Social Network Graph"
       },
       {
-        "@id": "urn:ngm:class:collaborative-learning",
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
         "label": "Collaborative Learning"
       },
       {

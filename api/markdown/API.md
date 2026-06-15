@@ -73,7 +73,7 @@ public:: true
         "label": "Authentication"
       },
       {
-        "@id": "urn:ngm:class:data-serialisation",
+        "@id": "urn:ngm:class:data-serialization",
         "label": "Data Serialisation"
       }
     ],
@@ -103,11 +103,11 @@ public:: true
         "label": "REST"
       },
       {
-        "@id": "urn:ngm:class:graphql",
+        "@id": "urn:ngm:class:graph-ql",
         "label": "GraphQL"
       },
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       }
     ],
@@ -127,7 +127,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:openapi-specification",
+        "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Specification"
       },
       {

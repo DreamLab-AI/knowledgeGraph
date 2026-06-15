@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:centralised-exchange",
+  "title": "Centralised Exchange",
+  "slug": "centralised-exchange",
+  "public": true,
+  "classIri": "urn:ngm:class:centralised-exchange",
+  "domain": "blockchain",
+  "definition": "A centralised exchange (CEX) is a custodial trading venue operated by a single company that matches buy and sell orders for cryptocurrencies and other assets through an internal order book. Users deposit funds into accounts the operator controls, and the exchange maintains the ledger of balances off-chain, settling trades internally rather than on a public blockchain. Centralised exchanges typically enforce identity verification and provide high liquidity and fast execution, at the cost of requiring trust in the operator.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-infrastructure",
+      "label": "Financial Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:aml",
+        "label": "AML"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:binance",
+        "label": "Binance"
+      },
+      {
+        "id": "urn:ngm:class:coinbase",
+        "label": "Coinbase"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ]
+}

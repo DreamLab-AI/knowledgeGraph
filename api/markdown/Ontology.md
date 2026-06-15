@@ -109,7 +109,7 @@ public:: true
         "label": "Database Schema"
       },
       {
-        "@id": "urn:ngm:class:taxonomy",
+        "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
         "label": "Taxonomy"
       }
     ],

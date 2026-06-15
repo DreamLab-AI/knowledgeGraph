@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:bank-for-international-settlements",
+  "title": "Bank for International Settlements",
+  "slug": "bank-for-international-settlements",
+  "public": true,
+  "classIri": "urn:ngm:class:bank-for-international-settlements",
+  "domain": "finance",
+  "definition": "The Bank for International Settlements (BIS) is an international financial institution, established in 1930 and headquartered in Basel, that serves as a bank for central banks and fosters international monetary and financial cooperation. It provides banking services to its central bank members, hosts standard-setting bodies such as the Basel Committee on Banking Supervision, and conducts economic research on global financial stability. Through its Innovation Hub it also coordinates experimentation with central bank digital currencies and the modernisation of cross-border payments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:central-bank",
+      "label": "Central Bank"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:basel-committee-on-banking-supervision",
+        "label": "Basel Committee on Banking Supervision"
+      },
+      {
+        "id": "urn:ngm:class:bis-innovation-hub",
+        "label": "BIS Innovation Hub"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:international-cooperation",
+        "label": "International Cooperation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:central-bank-cooperation",
+        "label": "Central Bank Cooperation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:banking-regulation",
+        "label": "Banking Regulation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank-digital-currency",
+        "label": "Central Bank Digital Currency"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:economic-research",
+        "label": "Economic Research"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy-coordination",
+        "label": "Monetary Policy Coordination"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-accords",
+        "label": "Basel Accords"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:international-financial-system",
+        "label": "International Financial System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:international-monetary-fund",
+        "label": "International Monetary Fund"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability-board",
+        "label": "Financial Stability Board"
+      },
+      {
+        "id": "urn:ngm:class:swift",
+        "label": "SWIFT"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    }
+  ]
+}

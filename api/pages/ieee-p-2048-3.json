@@ -76,7 +76,7 @@
         "label": "IEEE P2048-4"
       },
       {
-        "id": "urn:ngm:class:w3c-webxr",
+        "id": "urn:ngm:class:w-3-c-web-xr",
         "label": "W3C WebXR"
       }
     ],
@@ -132,7 +132,7 @@
         "label": "IEEE P2048-2"
       },
       {
-        "id": "urn:ngm:class:openxr",
+        "id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       }
     ]

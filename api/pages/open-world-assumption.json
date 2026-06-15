@@ -1,0 +1,117 @@
+{
+  "id": "urn:visionflow:page:open-world-assumption",
+  "title": "Open World Assumption",
+  "slug": "open-world-assumption",
+  "public": true,
+  "classIri": "urn:ngm:class:open-world-assumption",
+  "domain": "artificial-intelligence",
+  "definition": "The open world assumption (OWA) is a logical stance in knowledge representation under which the absence of a statement from a knowledge base does not imply that the statement is false, only that its truth value is unknown. It is the foundational semantic principle of description logics and the Web Ontology Language (OWL), reflecting the incomplete and distributed nature of knowledge on the Semantic Web. The OWA contrasts directly with the closed world assumption used in conventional databases and logic programming, where unstated facts are treated as false.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ontology",
+      "label": "Ontology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:no-unique-name-assumption",
+        "label": "No Unique Name Assumption"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-integration",
+        "label": "Knowledge Integration"
+      },
+      {
+        "id": "urn:ngm:class:semantic-reasoning",
+        "label": "Semantic Reasoning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:formal-semantics",
+        "label": "Formal Semantics"
+      },
+      {
+        "id": "urn:ngm:class:logical-inference",
+        "label": "Logical Inference"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:monotonic-reasoning",
+        "label": "Monotonic Reasoning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:closed-world-assumption",
+        "label": "Closed World Assumption"
+      },
+      {
+        "id": "urn:ngm:class:negation-as-failure",
+        "label": "Negation as Failure"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:automated-reasoner",
+        "label": "Automated Reasoner"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:web-ontology-language",
+        "label": "Web Ontology Language"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:domain-ontology",
+        "label": "Domain Ontology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    }
+  ]
+}

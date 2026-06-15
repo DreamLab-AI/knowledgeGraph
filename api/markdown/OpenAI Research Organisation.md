@@ -120,7 +120,7 @@ alias:: Open AI
         "label": "Anthropic"
       },
       {
-        "@id": "urn:ngm:class:deepmind",
+        "@id": "urn:ngm:class:deep-mind",
         "label": "DeepMind"
       },
       {

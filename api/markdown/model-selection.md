@@ -1,0 +1,40 @@
+- ### Definition
+	- Model selection chooses the best [[Machine Learning Model]] or configuration for a task from candidate options.
+	- It is a stage of [[Model Evaluation]] that relies on [[Cross-Validation]] and [[Benchmarking]].
+	- The objective is the model expected to generalise best, not the one that minimises training error.
+- ### Overview
+	- Many algorithms and configurations can fit the same data; selection picks the one that performs best on unseen examples.
+	- Validation strategies estimate out-of-sample performance to avoid optimistic bias from the training set.
+	- The choice trades off accuracy against interpretability, latency, and operational cost.
+	- Selection is often interleaved with hyperparameter tuning, producing a joint search over models and settings.
+- ### Key aspects
+	- Cross-validation provides robust performance estimates under limited data.
+	- Information criteria penalise complexity to discourage overfitting.
+	- Held-out and nested validation prevent leakage when tuning and selecting jointly.
+	- Multi-objective selection weighs accuracy against deployment constraints.
+- ### Applications
+	- Choosing between algorithm families for a tabular prediction task.
+	- Selecting a pretrained backbone for transfer learning.
+	- Picking the smallest model meeting an accuracy threshold for edge deployment.
+	- Automated machine learning pipelines that search over models and configurations.
+- ### Relationships
+	- subClassOf:: [[Model Evaluation]]
+	- partOf:: [[Model Evaluation]]
+	- partOf:: [[Machine Learning]]
+	- requires:: [[Cross-Validation]]
+	- requires:: [[Benchmarking]]
+	- dependsOn:: [[Model Performance]]
+	- dependsOn:: [[Generalisation]]
+	- uses:: [[Hyperparameter Tuning]]
+	- uses:: [[Accuracy]]
+	- uses:: [[AUC]]
+	- enables:: [[Model Deployment]]
+	- enables:: [[Model Comparison]]
+	- supports:: [[Machine Learning Model]]
+	- supports:: [[Feature Engineering]]
+	- relatedTo:: [[Overfitting]]
+	- relatedTo:: [[Deep Learning]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

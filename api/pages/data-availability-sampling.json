@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:data-availability-sampling",
+  "title": "Data Availability Sampling",
+  "slug": "data-availability-sampling",
+  "public": true,
+  "classIri": "urn:ngm:class:data-availability-sampling",
+  "domain": "blockchain",
+  "definition": "Data availability sampling (DAS) is a technique that lets resource-limited clients gain high statistical confidence that all the data behind a block has been published, without downloading the whole block. Each client requests a few random fragments of an erasure-coded dataset; if enough randomly chosen fragments are returned across many clients, the full data can be reconstructed, so withholding it becomes detectable. DAS is a foundational primitive for scalable, modular blockchains and rollup-centric architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-availability",
+      "label": "Data Availability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:erasure-coding",
+        "label": "Erasure Coding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:celestia",
+        "label": "Celestia"
+      },
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    }
+  ]
+}

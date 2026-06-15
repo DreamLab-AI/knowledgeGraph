@@ -128,7 +128,7 @@ public:: true
         "label": "Non-Fungible Token"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {

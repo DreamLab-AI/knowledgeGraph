@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:commodity-money",
+  "title": "Commodity Money",
+  "slug": "commodity-money",
+  "public": true,
+  "classIri": "urn:ngm:class:commodity-money",
+  "domain": "finance",
+  "definition": "Commodity money is a form of money whose value derives from the intrinsic worth of the physical commodity from which it is made, such as gold, silver, salt or grain. Because the medium of exchange is itself a useful or scarce good, its monetary value is anchored to its commodity value rather than to government decree. Commodity money predates and contrasts with fiat currency, where value rests on trust in an issuing authority.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:money",
+      "label": "Money"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:value",
+        "label": "Value"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:store-of-value",
+        "label": "Store of Value"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:hard-money",
+        "label": "Hard Money"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gold",
+        "label": "Gold"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:gold-standard",
+        "label": "Gold Standard"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:money",
+        "label": "Money"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:research-university",
+  "title": "Research University",
+  "slug": "research-university",
+  "public": true,
+  "classIri": "urn:ngm:class:research-university",
+  "domain": "ai",
+  "definition": "A research university is a higher-education institution whose mission combines teaching with the production of original scholarship, conducting basic and applied research across disciplines and training postgraduate researchers. Such universities operate laboratories, secure competitive grant funding, publish peer-reviewed scholarship, and frequently anchor regional innovation ecosystems through technology transfer. They are central nodes in the pipeline that converts fundamental discovery into trained talent and commercialisable knowledge.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:research-institution",
+      "label": "Research Institution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:laboratory",
+        "label": "Laboratory"
+      },
+      {
+        "id": "urn:ngm:class:phd-programme",
+        "label": "PhD Programme"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      },
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "id": "urn:ngm:class:talent-pipeline",
+        "label": "Talent Pipeline"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:grant-funding",
+        "label": "Grant Funding"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:technology-transfer",
+        "label": "Technology Transfer"
+      },
+      {
+        "id": "urn:ngm:class:innovation-ecosystem",
+        "label": "Innovation Ecosystem"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:innovation-ecosystem",
+        "label": "Innovation Ecosystem"
+      },
+      {
+        "id": "urn:ngm:class:scientific-publication",
+        "label": "Scientific Publication"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:research-institution",
+        "label": "Research Institution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

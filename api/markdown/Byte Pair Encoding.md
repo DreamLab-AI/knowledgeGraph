@@ -108,11 +108,11 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:wordpiece",
+        "@id": "urn:ngm:class:word-piece",
         "label": "WordPiece"
       },
       {
-        "@id": "urn:ngm:class:sentencepiece",
+        "@id": "urn:ngm:class:sentence-piece",
         "label": "SentencePiece"
       }
     ],
@@ -122,7 +122,7 @@ public:: true
         "label": "Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {
@@ -130,7 +130,7 @@ public:: true
         "label": "GPT"
       },
       {
-        "@id": "urn:ngm:class:roberta",
+        "@id": "urn:ngm:class:ro-berta",
         "label": "RoBERTa"
       }
     ],

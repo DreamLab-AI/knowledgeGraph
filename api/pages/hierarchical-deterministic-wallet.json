@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:hierarchical-deterministic-wallet",
+  "title": "Hierarchical Deterministic Wallet",
+  "slug": "hierarchical-deterministic-wallet",
+  "public": true,
+  "classIri": "urn:ngm:class:hierarchical-deterministic-wallet",
+  "domain": "blockchain",
+  "definition": "A hierarchical deterministic (HD) wallet is a cryptocurrency wallet that derives a tree of key pairs from a single master seed using a deterministic algorithm, as standardised in BIP-32 and related proposals. From one human-readable mnemonic phrase the wallet can regenerate an effectively unlimited hierarchy of addresses, allowing backup of an entire wallet from a single seed. The structure improves privacy by using fresh addresses while keeping recovery and organisation manageable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-wallet",
+      "label": "Blockchain Wallet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:seed-phrase",
+        "label": "Seed Phrase"
+      },
+      {
+        "id": "urn:ngm:class:mnemonic-phrase",
+        "label": "Mnemonic Phrase"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:key-generation",
+        "label": "Key Generation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bip39",
+        "label": "BIP-39"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic-Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:secp256k1",
+        "label": "secp256k1"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-wallet",
+        "label": "Blockchain Wallet"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hardware-wallet",
+        "label": "Hardware Wallet"
+      },
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "key-derivation-function",
+      "label": "Key Derivation Function"
+    }
+  ]
+}

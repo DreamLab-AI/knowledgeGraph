@@ -1,0 +1,35 @@
+- ### Definition
+  - Breadth-first search (BFS) is a graph and tree traversal algorithm that explores all neighbours of a node before moving to nodes at the next depth level, expanding the search frontier in order of increasing distance from the source. It is implemented with a first-in-first-out queue and, on unweighted graphs, finds the shortest path in terms of edge count from the start vertex to every reachable vertex. BFS runs in time linear in the number of vertices and edges and is foundational to pathfinding, connectivity analysis and level-order processing.
+  - Related core concepts: [[Graph Algorithms]] [[Search Algorithm]] [[Pathfinding]] [[Graph Theory]]
+- ### Overview
+  - BFS explores a graph layer by layer, visiting all nodes at distance k before any at distance k+1 from the source.
+  - It uses a FIFO queue to manage the frontier and a visited set to avoid revisiting nodes.
+  - On unweighted graphs BFS yields shortest paths in terms of number of edges from the start vertex.
+- ### Mechanisms
+  - Queue-driven frontier: nodes are dequeued in discovery order, ensuring level-by-level expansion.
+  - Shortest paths: distances recorded during traversal are optimal for unweighted graphs.
+  - Linear complexity: BFS runs in O(V+E) time and O(V) space for the frontier and visited markers.
+  - Completeness: BFS will find a solution if one exists, exploring the shallowest goals first.
+- ### Applications
+  - Shortest-path routing in unweighted networks.
+  - Connectivity and reachability analysis.
+  - Web crawling and social-network neighbourhood exploration.
+  - Level-order processing of trees and state-space search.
+- ### Relationships
+  - partOf:: [[Graph Algorithms]]
+  - implements:: [[Search Algorithm]]
+  - implements:: [[Graph Search]]
+  - requires:: [[Data Structure]]
+  - uses:: [[Graph Theory]]
+  - uses:: [[Algorithm]]
+  - enables:: [[Pathfinding]]
+  - contrastsWith:: [[Depth-First Search]]
+  - relatedTo:: [[Dijkstra Algorithm]]
+  - relatedTo:: [[Search Algorithms]]
+  - relatedTo:: [[Node]]
+  - relatedTo:: [[AI Search]]
+  - relatedTo:: [[Computer Science]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - attributedTo:: did:nostr:ontology-mesh

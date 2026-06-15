@@ -96,7 +96,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       },
       {
@@ -132,11 +132,11 @@ public:: true
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       },
       {
-        "@id": "urn:ngm:class:3gpp",
+        "@id": "urn:ngm:class:3-gpp",
         "label": "3GPP"
       }
     ],

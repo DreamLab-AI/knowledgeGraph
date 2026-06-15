@@ -137,7 +137,7 @@ alias:: MotorDriver
         "label": "CAN Bus"
       },
       {
-        "@id": "urn:ngm:class:ethercat",
+        "@id": "urn:ngm:class:ether-cat",
         "label": "EtherCAT"
       }
     ],

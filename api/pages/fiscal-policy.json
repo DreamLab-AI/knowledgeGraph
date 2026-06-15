@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:fiscal-policy",
+  "title": "Fiscal Policy",
+  "slug": "fiscal-policy",
+  "public": true,
+  "classIri": "urn:ngm:class:fiscal-policy",
+  "domain": "finance",
+  "definition": "Fiscal policy is the use of government spending and taxation to influence aggregate demand, employment, inflation and economic growth within an economy. It is enacted by a government's treasury or finance ministry through budgets that adjust expenditure programmes, tax rates and public borrowing, and it is the principal counterpart to the monetary policy operated by a central bank. Expansionary fiscal policy raises spending or cuts taxes to stimulate a weak economy, while contractionary policy does the reverse to restrain overheating or reduce public debt.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:macroeconomics",
+      "label": "Macroeconomics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hm-treasury",
+        "label": "HM Treasury"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:inflation-control",
+        "label": "Inflation Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      },
+      {
+        "id": "urn:ngm:class:econometrics",
+        "label": "Econometrics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:economic-governance",
+        "label": "Economic Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
+        "id": "urn:ngm:class:political-economy",
+        "label": "Political Economy"
+      },
+      {
+        "id": "urn:ngm:class:economic-systems",
+        "label": "Economic Systems"
+      },
+      {
+        "id": "urn:ngm:class:economic-model",
+        "label": "Economic Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

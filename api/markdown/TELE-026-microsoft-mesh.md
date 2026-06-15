@@ -147,7 +147,7 @@ public:: true
         "label": "Holographic Rendering"
       },
       {
-        "@id": "urn:ngm:class:webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       }
     ],

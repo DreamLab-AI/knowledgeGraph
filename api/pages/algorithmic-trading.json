@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:algorithmic-trading",
+  "title": "Algorithmic Trading",
+  "slug": "algorithmic-trading",
+  "public": true,
+  "classIri": "urn:ngm:class:algorithmic-trading",
+  "domain": "blockchain",
+  "definition": "Algorithmic trading is the use of computer programs to execute trading decisions automatically according to predefined rules covering timing, price, quantity and order routing, often without human intervention. It spans execution algorithms that minimise market impact, systematic strategies that generate signals, and high-frequency trading that exploits microsecond advantages. In crypto markets it operates across centralised and decentralised venues and interacts closely with on-chain mechanisms such as maximal extractable value.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-trading",
+      "label": "Financial Trading"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-frequency-trading",
+        "label": "High Frequency Trading"
+      },
+      {
+        "id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "id": "urn:ngm:class:crypto-trading",
+        "label": "Crypto Trading"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-trading",
+        "label": "Financial Trading"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mev",
+        "label": "MEV"
+      },
+      {
+        "id": "urn:ngm:class:financial-trading",
+        "label": "Financial Trading"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ]
+}

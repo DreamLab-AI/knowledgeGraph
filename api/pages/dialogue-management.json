@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:dialogue-management",
+  "title": "Dialogue Management",
+  "slug": "dialogue-management",
+  "public": true,
+  "classIri": "urn:ngm:class:dialogue-management",
+  "domain": "ai",
+  "definition": "Dialogue management is the component of a conversational system that tracks the evolving state of an interaction and decides the system's next action at each turn. It maintains context across utterances, integrates recognised user intents and slots, and selects responses or operations that move the conversation toward the user's goal. It is the control layer that connects language understanding to language generation in a dialogue agent.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:conversational-ai",
+      "label": "Conversational AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:state-tracking",
+        "label": "State Tracking"
+      },
+      {
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      },
+      {
+        "id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:context-management",
+        "label": "Context Management"
+      },
+      {
+        "id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -116,7 +116,7 @@ public:: true
         "label": "Alan Turing Institute"
       },
       {
-        "@id": "urn:ngm:class:deepmind",
+        "@id": "urn:ngm:class:deep-mind",
         "label": "DeepMind"
       },
       {

@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:verification-method",
+  "title": "Verification Method",
+  "slug": "verification-method",
+  "public": true,
+  "classIri": "urn:ngm:class:verification-method",
+  "domain": "blockchain",
+  "definition": "A verification method is an entry in a decentralised identifier document that specifies the cryptographic material and parameters used to authenticate or authorise actions on behalf of the identifier subject. It typically expresses a public key, key type and controller, and is referenced by verification relationships such as authentication, assertion and key agreement. Verification methods are the mechanism by which proofs presented by a subject are checked against the published DID document.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:did-document",
+      "label": "DID Document"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity",
+        "label": "Self-Sovereign Identity"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "Verification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    }
+  ]
+}

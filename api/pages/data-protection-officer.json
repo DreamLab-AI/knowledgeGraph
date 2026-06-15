@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:data-protection-officer",
+  "title": "Data Protection Officer",
+  "slug": "data-protection-officer",
+  "public": true,
+  "classIri": "urn:ngm:class:data-protection-officer",
+  "domain": "governance",
+  "definition": "A Data Protection Officer (DPO) is an organisational role responsible for overseeing an entity's data-protection strategy and monitoring compliance with applicable privacy law such as the GDPR. The DPO advises on data-protection obligations, conducts and reviews privacy impact assessments, serves as the contact point for supervisory authorities and data subjects, and operates with independence from operational management. Designation of a DPO is mandatory under the GDPR for public authorities and for controllers or processors whose core activities involve large-scale or sensitive personal-data processing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:privacy-impact-assessment",
+        "label": "Privacy Impact Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:pseudonymisation",
+        "label": "Pseudonymisation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

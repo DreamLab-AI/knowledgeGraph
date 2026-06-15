@@ -71,7 +71,7 @@ public:: true
         "label": "State Channels"
       },
       {
-        "@id": "urn:ngm:class:sidechains",
+        "@id": "urn:ngm:class:sidechain",
         "label": "Sidechains"
       },
       {

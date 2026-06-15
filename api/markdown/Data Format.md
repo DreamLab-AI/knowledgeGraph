@@ -140,7 +140,7 @@ public:: true
         "label": "ISO"
       },
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       }
     ],
@@ -160,7 +160,7 @@ public:: true
         "label": "JSON-LD"
       },
       {
-        "@id": "urn:ngm:class:protocol-buffers",
+        "@id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffers"
       },
       {

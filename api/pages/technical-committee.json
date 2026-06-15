@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:technical-committee",
+  "title": "Technical Committee",
+  "slug": "technical-committee",
+  "public": true,
+  "classIri": "urn:ngm:class:technical-committee",
+  "domain": "standards",
+  "definition": "A Technical Committee is a chartered working body within a standards organisation responsible for developing, reviewing and maintaining standards in a defined subject area. It convenes domain experts and stakeholders to draft specifications, resolve comments and reach consensus through structured procedures before publication. Technical committees are the engine of formal standardisation, balancing competing interests to produce interoperable, vendor-neutral specifications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-organization",
+      "label": "Standards Organization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:compliance-testing",
+        "label": "Compliance Testing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:vendor-neutrality",
+        "label": "Vendor Neutrality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      },
+      {
+        "id": "urn:ngm:class:compliance-testing",
+        "label": "Compliance Testing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      },
+      {
+        "id": "urn:ngm:class:vendor-neutrality",
+        "label": "Vendor Neutrality"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:hardware-root-of-trust",
+  "title": "Hardware Root of Trust",
+  "slug": "hardware-root-of-trust",
+  "public": true,
+  "classIri": "urn:ngm:class:hardware-root-of-trust",
+  "domain": "security",
+  "definition": "A Hardware Root of Trust (HRoT) is an immutable, hardware-anchored set of functions and keys that a system inherently trusts and from which all higher-level security properties are derived. Implemented in silicon or a dedicated security chip, it provides the foundation for secure boot, measured boot, attestation and key protection by establishing a starting point that cannot be modified by software. Because every subsequent trust decision chains back to it, the integrity of the HRoT determines the trustworthiness of the entire platform.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:trusted-platform-module",
+        "label": "Trusted Platform Module"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "id": "urn:ngm:class:secure-element",
+        "label": "Secure Element"
+      },
+      {
+        "id": "urn:ngm:class:side-channel-attack",
+        "label": "Side-Channel Attack"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

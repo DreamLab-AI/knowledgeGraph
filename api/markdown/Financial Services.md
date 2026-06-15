@@ -148,7 +148,7 @@
         "label": "Central Bank Digital Currency"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],

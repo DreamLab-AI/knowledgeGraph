@@ -121,7 +121,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:webgl",
+        "@id": "urn:ngm:class:web-gl",
         "label": "WebGL"
       },
       {

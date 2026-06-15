@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:test-driven-development",
+  "title": "Test-Driven Development",
+  "slug": "test-driven-development",
+  "public": true,
+  "classIri": "urn:ngm:class:test-driven-development",
+  "domain": "infrastructure",
+  "definition": "Test-driven development is a software practice in which developers write an automated test that defines a desired behaviour before writing the code to satisfy it, then refactor once the test passes. This red-green-refactor cycle drives design from the perspective of usage and ensures that every feature is covered by tests as it is built. The discipline tends to produce modular, well-specified code and a comprehensive regression suite.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-testing",
+      "label": "Software Testing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:extreme-programming",
+        "label": "Extreme Programming"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "remote-pair-programming",
+      "label": "Remote Pair Programming"
+    }
+  ]
+}

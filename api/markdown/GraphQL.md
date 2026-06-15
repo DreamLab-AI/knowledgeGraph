@@ -42,11 +42,11 @@ public:: true
         "label": "API Gateway"
       },
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       },
       {
-        "@id": "urn:ngm:class:openapi-specification",
+        "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Specification"
       }
     ],
@@ -100,7 +100,7 @@ public:: true
         "label": "REST API"
       },
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       }
     ],

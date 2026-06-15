@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:sidetree-protocol",
+  "title": "Sidetree Protocol",
+  "slug": "sidetree-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:sidetree-protocol",
+  "domain": "blockchain",
+  "definition": "The Sidetree Protocol is a layer-two protocol for operating scalable decentralised identifier networks on top of any existing decentralised ledger without requiring trusted intermediaries or special-purpose consensus. It batches large numbers of DID create, update, recover, and deactivate operations, anchors a single compact commitment to the underlying chain, and stores the operation data in content-addressed storage so that any node can deterministically replay the operation log to compute current DID states. This separation of anchoring from data lets identifier throughput scale far beyond the base chain's transaction capacity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:did-method",
+      "label": "DID Method"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:content-addressed-storage",
+        "label": "Content-Addressed Storage"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:w3-c-did",
+        "label": "W3C DID"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:w3-c-did",
+        "label": "W3C DID"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    }
+  ]
+}

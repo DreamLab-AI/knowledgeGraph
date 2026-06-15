@@ -132,7 +132,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:experiment-tracking",
+        "@id": "urn:ngm:class:empirical-experimental-design-tracking",
         "label": "Experiment Tracking"
       },
       {
@@ -196,7 +196,7 @@ public:: true
         "label": "Federated Learning"
       },
       {
-        "@id": "urn:ngm:class:automl",
+        "@id": "urn:ngm:class:auto-ml",
         "label": "AutoML"
       }
     ]

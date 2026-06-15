@@ -80,7 +80,7 @@ public:: true
         "label": "Network Security"
       },
       {
-        "@id": "urn:ngm:class:https",
+        "@id": "urn:ngm:class:http",
         "label": "HTTPS"
       },
       {

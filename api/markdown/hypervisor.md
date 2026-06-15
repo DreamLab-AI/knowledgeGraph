@@ -1,0 +1,40 @@
+- ### Definition
+- A **Hypervisor** is the [[Virtualisation]] software that creates and runs [[Virtual Machine]]s by partitioning a host's CPU, memory, and I/O.
+- It uses [[Hardware Abstraction]] and [[Memory Management]] to isolate multiple guest [[Operating System]]s on shared hardware.
+- It is the foundational technology of [[Cloud Computing]] and server consolidation.
+- ### Overview
+- The hypervisor sits between physical hardware and one or more guest operating systems, presenting each guest with the illusion of dedicated machine resources.
+- Type 1 (bare-metal) hypervisors run directly on the host hardware for maximum performance and isolation, common in data centres and cloud platforms.
+- Type 2 (hosted) hypervisors run as an application on top of a conventional operating system, convenient for development and desktop use.
+- The hypervisor schedules virtual CPUs onto physical cores, virtualises memory through nested page tables, mediates device access, and enforces isolation so a fault or compromise in one guest does not affect others.
+- Modern hypervisors exploit hardware virtualisation extensions to reduce overhead, and support live migration, snapshots, and dynamic resource allocation.
+- ### Mechanisms
+- CPU virtualisation: scheduling virtual CPUs and trapping privileged instructions.
+- Memory virtualisation: nested or shadow page tables mapping guest to host memory.
+- I/O virtualisation: emulated, para-virtualised, or pass-through device access.
+- Isolation: strong boundaries between guests for security and fault containment.
+- Lifecycle features: [[Snapshot]], cloning, and live migration of running guests.
+- ### Applications
+- Server consolidation, packing many [[Virtual Machine]]s onto fewer physical hosts.
+- Public and private [[Cloud Infrastructure]] offering elastic compute.
+- [[Multi-Tenancy]] isolation between customers on shared hardware.
+- Secure workload separation, complementing a [[Trusted Execution Environment]].
+- ### Relationships
+- enables:: [[Virtual Machine]]
+- enables:: [[Cloud Computing]]
+- requires:: [[Hardware Abstraction]]
+- requires:: [[Memory Management]]
+- uses:: [[Hardware Abstraction]]
+- manages:: [[Virtual Machine]]
+- supports:: [[Multi-Tenancy]]
+- supports:: [[Cloud Infrastructure]]
+- partOf:: [[System Software]]
+- contrastsWith:: [[Containerisation]]
+- relatedTo:: [[Operating System]]
+- relatedTo:: [[Snapshot]]
+- relatedTo:: [[Trusted Execution Environment]]
+- dependsOn:: [[Operating System]]
+- ### Provenance
+- updated:: 2026-06-15
+- generatedAt:: 2026-06-15
+- inferenceRule:: GapMaterialisation

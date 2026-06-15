@@ -169,7 +169,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:quantization",
+        "@id": "urn:ngm:class:quantisation",
         "label": "Quantization"
       },
       {

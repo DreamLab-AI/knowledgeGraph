@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:business-continuity",
+  "title": "Business Continuity",
+  "slug": "business-continuity",
+  "public": true,
+  "classIri": "urn:ngm:class:business-continuity",
+  "domain": "infrastructure",
+  "definition": "Business continuity is the discipline of ensuring that an organisation's critical functions can continue, or be rapidly restored, during and after a disruptive event such as an outage, disaster, or cyber-incident. It combines planning, redundancy, recovery procedures, and testing to limit downtime and data loss against defined objectives. In technical infrastructure it is realised through high availability, disaster recovery, fault tolerance, and resilient architecture, and is closely coupled with risk management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:resilience",
+      "label": "Resilience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

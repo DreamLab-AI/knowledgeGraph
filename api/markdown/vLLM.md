@@ -153,7 +153,7 @@ public:: true
         "label": "Throughput"
       },
       {
-        "@id": "urn:ngm:class:quantization",
+        "@id": "urn:ngm:class:quantisation",
         "label": "Quantization"
       },
       {

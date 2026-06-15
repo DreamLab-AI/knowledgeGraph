@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:audio-codec",
+  "title": "Audio Codec",
+  "slug": "audio-codec",
+  "public": true,
+  "classIri": "urn:ngm:class:audio-codec",
+  "domain": "spatial-computing",
+  "definition": "An audio codec is a technology that encodes audio into a compressed digital representation and decodes it back for playback, reducing storage and bandwidth requirements. Lossy codecs discard perceptually less important information to achieve high compression, while lossless codecs preserve the original signal exactly. Codecs balance bitrate, audio quality, latency and computational cost, and define container-independent bitstream formats. They are essential to streaming, telephony, broadcasting and immersive spatial audio.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:audio-processing",
+      "label": "Audio Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:decoder",
+        "label": "Decoder"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audio-streaming",
+        "label": "Audio Streaming"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
+      },
+      {
+        "id": "urn:ngm:class:quantization",
+        "label": "Quantization"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "id": "urn:ngm:class:lossy-compression",
+        "label": "Lossy Compression"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lossless-compression",
+        "label": "Lossless Compression"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:voice-over-ip",
+        "label": "Voice over IP"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitrate",
+        "label": "Bitrate"
+      },
+      {
+        "id": "urn:ngm:class:sample-rate",
+        "label": "Sample Rate"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "spatial-audio-scene-description",
+      "label": "Spatial Audio Scene Description"
+    }
+  ]
+}

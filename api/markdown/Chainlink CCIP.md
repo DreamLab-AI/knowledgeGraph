@@ -77,7 +77,7 @@ alias:: Chainlink-CCIP
         "label": "Cross-Chain Bridge"
       },
       {
-        "@id": "urn:ngm:class:layerzero",
+        "@id": "urn:ngm:class:layer-zero",
         "label": "LayerZero"
       },
       {

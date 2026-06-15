@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:peer-review",
+  "title": "Peer Review",
+  "slug": "peer-review",
+  "public": true,
+  "classIri": "urn:ngm:class:peer-review",
+  "domain": "finance",
+  "definition": "Peer review is the evaluation of work, proposals or decisions by qualified individuals of comparable competence, used to assess validity, quality and significance before acceptance or publication. In scholarship it gates journal and conference publication; in finance, governance and standards it underpins independent assessment, audit and consensus-based approval. It is a quality-assurance process intended to surface errors, reduce bias and confer credibility through independent scrutiny.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quality-assurance",
+      "label": "Quality Assurance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:validation",
+        "label": "Validation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "id": "urn:ngm:class:validation",
+        "label": "Validation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:institutional-trust",
+        "label": "Institutional Trust"
+      },
+      {
+        "id": "urn:ngm:class:open-access",
+        "label": "Open Access"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:scientific-research",
+        "label": "Scientific Research"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "id": "urn:ngm:class:institutional-trust",
+        "label": "Institutional Trust"
+      },
+      {
+        "id": "urn:ngm:class:open-access",
+        "label": "Open Access"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    }
+  ]
+}

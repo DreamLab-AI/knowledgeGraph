@@ -103,11 +103,11 @@ alias:: Open API Specification
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:graphql",
+        "@id": "urn:ngm:class:graph-ql",
         "label": "GraphQL"
       },
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       },
       {

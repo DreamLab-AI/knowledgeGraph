@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:zero-knowledge-rollup",
+  "title": "Zero-Knowledge Rollup",
+  "slug": "zero-knowledge-rollup",
+  "public": true,
+  "classIri": "urn:ngm:class:zero-knowledge-rollup",
+  "domain": "blockchain",
+  "definition": "A zero-knowledge rollup (ZK-rollup) is a layer-2 scaling construction that executes transactions off-chain in batches and posts a succinct validity proof to a base chain attesting that the new state was computed correctly. Because the proof cryptographically guarantees correctness, the base chain need not re-execute the transactions, achieving high throughput while inheriting the security of the underlying ledger. ZK-rollups offer near-instant finality once a proof is verified, distinguishing them from optimistic designs that rely on challenge periods.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rollup",
+      "label": "Rollup"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-availability",
+        "label": "Data Availability"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      },
+      {
+        "id": "urn:ngm:class:plonk",
+        "label": "PLONK"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      },
+      {
+        "id": "urn:ngm:class:starknet",
+        "label": "Starknet"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "btc-layer-3",
+      "label": "BTC Layer 3"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

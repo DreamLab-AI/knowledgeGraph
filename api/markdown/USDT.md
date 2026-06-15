@@ -131,7 +131,7 @@ public:: true
         "label": "Stablecoin Ecosystem"
       },
       {
-        "@id": "urn:ngm:class:defi",
+        "@id": "urn:ngm:class:de-fi",
         "label": "DeFi"
       }
     ],

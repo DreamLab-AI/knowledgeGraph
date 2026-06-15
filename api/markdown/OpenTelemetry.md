@@ -62,7 +62,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       },
       {

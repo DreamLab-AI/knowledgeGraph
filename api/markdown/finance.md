@@ -1,0 +1,42 @@
+- ### Definition
+	- Finance is the discipline of managing money, investments, and financial instruments across actors and markets.
+	- It is a branch of [[Economics]] spanning corporate, public, and personal domains.
+	- Its modern frontier intersects with [[Decentralised Finance]] and the [[Token Economy]].
+- ### Overview
+	- Finance studies how capital is raised, allocated, priced, and risk-managed over time.
+	- It coordinates savers and borrowers through markets, intermediaries, and instruments.
+	- The field divides broadly into corporate finance, investments, and financial institutions.
+	- Blockchain-based instruments are reshaping settlement, custody, and intermediation within this discipline.
+- ### Key aspects
+	- Time value of money and the pricing of risk underpin valuation across instruments.
+	- Capital markets channel funds between issuers and investors at scale.
+	- Risk management hedges exposure to market, credit, and liquidity shocks.
+	- Regulation and compliance shape how financial activity is conducted and reported.
+- ### Applications
+	- Corporate capital raising through equity and debt issuance.
+	- Portfolio and asset management for institutions and individuals.
+	- Payment, lending, and settlement infrastructure.
+	- Decentralised protocols offering lending, exchange, and derivatives without traditional intermediaries.
+- ### Relationships
+	- subClassOf:: [[Economics]]
+	- hasPart:: [[Capital Markets]]
+	- hasPart:: [[Investment Management]]
+	- hasPart:: [[Asset Management]]
+	- partOf:: [[Economics]]
+	- requires:: [[Financial System]]
+	- requires:: [[Banking System]]
+	- dependsOn:: [[Monetary Policy]]
+	- enables:: [[FinTech]]
+	- enables:: [[Payment Processing]]
+	- uses:: [[Risk]]
+	- uses:: [[Financial Services]]
+	- supports:: [[Financial Inclusion]]
+	- supports:: [[Banking]]
+	- bridgesTo:: [[Decentralised Finance]]
+	- bridgesTo:: [[Token Economy]]
+	- relatedTo:: [[Regulatory Compliance]]
+	- relatedTo:: [[Open Banking]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:topology",
+  "title": "Topology",
+  "slug": "topology",
+  "public": true,
+  "classIri": "urn:ngm:class:topology",
+  "domain": "machine-learning",
+  "definition": "Topology is the mathematical study of properties of spaces that are preserved under continuous deformation, such as connectivity, continuity and the presence of holes. It provides the formal language for reasoning about shape independent of exact distances or coordinates, underpinning fields from network analysis to topological data analysis. In machine learning it informs how the structure of data and networks can be characterised and exploited.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graph-theory",
+      "label": "Graph Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:persistence",
+        "label": "Persistence"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

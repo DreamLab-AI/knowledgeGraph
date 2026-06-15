@@ -1,0 +1,35 @@
+- ### Definition
+  - An Internationalised Resource Identifier (IRI) is a compact string that uniquely identifies an abstract or physical resource, generalising the Uniform Resource Identifier (URI) to permit characters from the full Unicode repertoire rather than only ASCII. IRIs are the foundational naming mechanism of the Semantic Web: every node and predicate in an RDF graph is named by an IRI, allowing data published by independent parties to refer unambiguously to the same entity. An IRI may be mapped to an equivalent URI through percent-encoding, preserving compatibility with legacy web infrastructure.
+  - Related core concepts: [[Linked Data]] [[RDF]] [[Knowledge Graph]] [[Ontology]]
+- ### Overview
+  - An IRI extends the URI syntax (RFC 3987) to the Universal Character Set, so identifiers may contain characters from non-Latin scripts directly rather than via percent-encoding.
+  - Every resource in the Semantic Web stack — subjects, predicates and many objects in RDF triples — is named by an IRI, giving global, dereferenceable identity to data.
+  - An IRI can be shortened in serialisations such as Turtle and JSON-LD using prefixes and compact forms, while still expanding to a full absolute identifier.
+- ### Key aspects
+  - Globally unique: an IRI names exactly one resource, enabling independent datasets to refer to the same thing without coordination.
+  - Unicode-aware: unlike ASCII-only URIs, IRIs allow internationalised characters, improving readability for non-English vocabularies.
+  - Dereferenceable: many IRIs use the HTTP scheme so that resolving them returns a description of the resource (Linked Data principle).
+  - URI mapping: any IRI has a deterministic mapping to an equivalent URI via percent-encoding for compatibility with legacy systems.
+- ### Applications
+  - Naming classes and properties in ontologies and RDF vocabularies.
+  - Identifying entities in knowledge graphs so that edges resolve to defined nodes.
+  - Carrying stable identifiers within JSON-LD and Turtle documents.
+  - Supporting SPARQL queries that match patterns over IRI-named graph terms.
+- ### Relationships
+  - partOf:: [[Linked Data]]
+  - partOf:: [[RDF]]
+  - requires:: [[Metadata]]
+  - enables:: [[Knowledge Graph]]
+  - enables:: [[Ontology]]
+  - uses:: [[HTTP]]
+  - supports:: [[Turtle]]
+  - supports:: [[SPARQL]]
+  - standardizedBy:: [[Schema.org]]
+  - relatedTo:: [[URI]]
+  - relatedTo:: [[Namespace]]
+  - relatedTo:: [[Content Identifier]]
+  - relatedTo:: [[Decentralised Identifier]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - attributedTo:: did:nostr:ontology-mesh

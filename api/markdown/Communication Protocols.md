@@ -180,7 +180,7 @@ public:: true
         "label": "WebSocket"
       },
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       },
       {

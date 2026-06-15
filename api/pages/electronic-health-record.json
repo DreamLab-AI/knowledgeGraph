@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:electronic-health-record",
+  "title": "Electronic Health Record",
+  "slug": "electronic-health-record",
+  "public": true,
+  "classIri": "urn:ngm:class:electronic-health-record",
+  "domain": "artificial-intelligence",
+  "definition": "An electronic health record (EHR) is a longitudinal digital record of a patient's health information maintained across care episodes and, increasingly, across providers. It consolidates demographics, diagnoses, medications, results and clinical notes into a structured, queryable store that supports care delivery, decision support and analytics. EHRs depend on interoperability standards and strong privacy controls to be shared safely between systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:healthcare-records",
+      "label": "Healthcare Records"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      },
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy by Design"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "id": "urn:ngm:class:hipaa",
+        "label": "HIPAA"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:healthcare-records",
+        "label": "Healthcare Records"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hipaa",
+        "label": "HIPAA"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+- ### Definition
+- An application programming interface is a published contract through which software requests services without knowing the callee's internals. It is a kind of [[Interface]] central to [[Software Architecture]], typically delivered over [[HTTP]] for networked services.
+- ### Overview
+- APIs establish a boundary: a producer commits to a set of operations and data shapes, and consumers code against that commitment rather than the implementation.
+- This decoupling lets each side evolve independently, supports reuse across teams and organisations, and is the connective tissue of modern distributed systems.
+- Styles range from in-process function and class interfaces to network APIs such as REST, RPC, and event-driven contracts.
+- ### Key aspects
+- A contract specifies endpoints or methods, parameters, return types, error semantics, and authentication.
+- Versioning and backward compatibility govern how an API may change without breaking consumers.
+- [[REST API]] design, schema definitions, and machine-readable specifications make APIs discoverable and testable.
+- Rate limiting, authentication, and observability are operational concerns layered around the contract.
+- ### Applications
+- Service-to-service communication within [[Microservices]] architectures.
+- Third-party platform [[Integration]] and developer ecosystems.
+- Abstraction of cloud, payment, and AI capabilities behind stable endpoints.
+- Internal libraries exposing reusable functionality across [[Software Engineering]] teams.
+- ### Relationships
+- partOf:: [[Software Architecture]]
+- hasPart:: [[REST API]]
+- implements:: [[Interface]]
+- dependsOn:: [[Network Protocol]]
+- dependsOn:: [[HTTP]]
+- enables:: [[Microservices]]
+- enables:: [[REST API]]
+- supports:: [[Edge Computing]]
+- uses:: [[Software Engineering]]
+- contrastsWith:: [[Graphics Pipeline]]
+- relatedTo:: [[Software Architecture]]
+- relatedTo:: [[Scalability]]
+- ### Provenance
+- updated:: 2026-06-15

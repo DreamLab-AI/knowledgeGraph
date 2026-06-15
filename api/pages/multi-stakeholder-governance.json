@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:multi-stakeholder-governance",
+  "title": "Multi-Stakeholder Governance",
+  "slug": "multi-stakeholder-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-stakeholder-governance",
+  "domain": "governance",
+  "definition": "Multi-stakeholder governance is a model of collective decision-making in which government, private sector, civil society, technical communities, and academia participate jointly and on a relatively equal footing to develop policies, standards, or norms. It emphasises inclusiveness, transparency, and consensus over top-down or purely state-led control, and is the prevailing model for governing shared resources such as the internet. Its legitimacy derives from broad participation rather than hierarchical authority.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

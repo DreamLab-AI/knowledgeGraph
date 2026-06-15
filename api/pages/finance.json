@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:finance",
+  "title": "Finance",
+  "slug": "finance",
+  "public": true,
+  "classIri": "urn:ngm:class:finance",
+  "domain": "blockchain",
+  "definition": "Finance is the discipline concerned with the management, creation, and study of money, investments, and other financial instruments across individuals, organisations, and markets. It encompasses how capital is raised, allocated, priced, and risk-managed over time, spanning corporate finance, public finance, and personal finance. In the context of distributed systems, finance increasingly intersects with blockchain-based instruments and decentralised protocols that reimagine settlement, custody, and intermediation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      },
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      },
+      {
+        "id": "urn:ngm:class:banking-system",
+        "label": "Banking System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fintech",
+        "label": "FinTech"
+      },
+      {
+        "id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:token-economy",
+        "label": "Token Economy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:risk",
+        "label": "Risk"
+      },
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      },
+      {
+        "id": "urn:ngm:class:banking",
+        "label": "Banking"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

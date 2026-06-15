@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:diffie-hellman-key-exchange",
+  "title": "Diffie-Hellman Key Exchange",
+  "slug": "diffie-hellman-key-exchange",
+  "public": true,
+  "classIri": "urn:ngm:class:diffie-hellman-key-exchange",
+  "domain": "security",
+  "definition": "Diffie-Hellman Key Exchange is a cryptographic method by which two parties establish a shared secret over an insecure channel without ever transmitting the secret itself. Each party combines its private value with the other party's public value such that both arrive at the same key, which an eavesdropper cannot feasibly compute. Its security rests on the difficulty of the discrete logarithm problem, with elliptic-curve variants offering equivalent strength at smaller key sizes. It underpins forward-secret session establishment in protocols such as Transport Layer Security.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:key-exchange",
+      "label": "Key Exchange"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:perfect-forward-secrecy",
+        "label": "Perfect Forward Secrecy"
+      },
+      {
+        "id": "urn:ngm:class:secure-channel",
+        "label": "Secure Channel"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:key-agreement",
+        "label": "Key Agreement"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      },
+      {
+        "id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:ngm:class:tls-handshake",
+        "label": "TLS Handshake"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    }
+  ]
+}

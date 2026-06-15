@@ -24,57 +24,150 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+    {
+      "@id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:api-gateway", "label": "API Gateway"},
-      {"@id": "urn:ngm:class:webhook", "label": "Webhook"},
-      {"@id": "urn:ngm:class:api-versioning", "label": "API Versioning"},
-      {"@id": "urn:ngm:class:rate-limiting", "label": "Rate Limiting"}
+      {
+        "@id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "@id": "urn:ngm:class:webhook",
+        "label": "Webhook"
+      },
+      {
+        "@id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:authentication-service", "label": "Authentication Service"},
-      {"@id": "urn:ngm:class:network-protocol", "label": "Network Protocol"},
-      {"@id": "urn:ngm:class:data-serialisation", "label": "Data Serialisation"}
+      {
+        "@id": "urn:ngm:class:authentication-service",
+        "label": "Authentication Service"
+      },
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:microservices-architecture", "label": "Microservices Architecture"},
-      {"@id": "urn:ngm:class:event-driven-architecture", "label": "Event Driven Architecture"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"},
-      {"@id": "urn:ngm:class:composable-architecture", "label": "Composable Architecture"},
-      {"@id": "urn:ngm:class:digital-transformation", "label": "Digital Transformation"}
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:composable-architecture",
+        "label": "Composable Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:middleware", "label": "Middleware"},
-      {"@id": "urn:ngm:class:rest-api", "label": "REST API"},
-      {"@id": "urn:ngm:class:graphql", "label": "GraphQL"},
-      {"@id": "urn:ngm:class:message-queue", "label": "Message Queue"},
-      {"@id": "urn:ngm:class:oauth", "label": "OAuth"}
+      {
+        "@id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "@id": "urn:ngm:class:graph-ql",
+        "label": "GraphQL"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:openapi-specification", "label": "OpenAPI Specification"},
-      {"@id": "urn:ngm:class:asyncapi", "label": "AsyncAPI"}
+      {
+        "@id": "urn:ngm:class:open-api-specification",
+        "label": "OpenAPI Specification"
+      },
+      {
+        "@id": "urn:ngm:class:asyncapi",
+        "label": "AsyncAPI"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:point-to-point-integration", "label": "Point-to-Point Integration"},
-      {"@id": "urn:ngm:class:enterprise-service-bus", "label": "Enterprise Service Bus"}
+      {
+        "@id": "urn:ngm:class:point-to-point-integration",
+        "label": "Point-to-Point Integration"
+      },
+      {
+        "@id": "urn:ngm:class:enterprise-service-bus",
+        "label": "Enterprise Service Bus"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-integration", "label": "Data Integration"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
-      {"@id": "urn:ngm:class:integration-platform-as-a-service", "label": "Integration Platform as a Service"}
+      {
+        "@id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:integration-platform-as-a-service",
+        "label": "Integration Platform as a Service"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"},
-      {"@id": "urn:ngm:class:blockchain-oracle", "label": "Blockchain Oracle"}
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:system-integration", "label": "System Integration"},
-    {"@id": "urn:ngm:class:application-integration", "label": "Application Integration"}
+    {
+      "@id": "urn:ngm:class:system-integration",
+      "label": "System Integration"
+    },
+    {
+      "@id": "urn:ngm:class:application-integration",
+      "label": "Application Integration"
+    }
   ],
   "quality": 0.73,
   "provenance": {

@@ -128,7 +128,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:tensorrt",
+        "@id": "urn:ngm:class:tensor-rt",
         "label": "TensorRT"
       },
       {

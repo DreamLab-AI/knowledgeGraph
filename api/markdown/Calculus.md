@@ -1,0 +1,156 @@
+public:: true
+
+# Calculus
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:calculus",
+  "@type": "Page",
+  "title": "Calculus",
+  "vc:slug": "calculus",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:calculus",
+  "@type": "Class",
+  "label": "Calculus",
+  "definition": "Calculus is the branch of mathematics concerned with continuous change, comprising differential calculus (rates of change and slopes via derivatives) and integral calculus (accumulation and areas via integrals). In machine learning it provides the foundational machinery for optimisation: gradients computed through differentiation drive parameter updates, while integration underpins probability, expectation and continuous-time models. It is indispensable for understanding how learning algorithms adjust models to minimise loss.",
+  "domain": "machine-learning",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "@id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
+- ### Definition
+  - Calculus is the branch of mathematics concerned with continuous change, comprising differential calculus (rates of change and slopes via derivatives) and integral calculus (accumulation and areas via integrals). In machine learning it provides the foundational machinery for optimisation: gradients computed through differentiation drive parameter updates, while integration underpins probability, expectation and continuous-time models. It is indispensable for understanding how learning algorithms adjust models to minimise loss.
+  - Related core concepts: [[Machine Learning]] [[Linear Algebra]] [[Optimisation]] [[Backpropagation]] [[Probability Theory]]
+- ### Overview
+  - Calculus formalises the notions of limit, derivative and integral that describe how quantities vary smoothly. The derivative measures instantaneous rate of change and, generalised to many variables, becomes the gradient: a vector pointing in the direction of steepest ascent of a function. In machine learning the gradient of a loss function with respect to model parameters tells an optimiser how to nudge those parameters to reduce error, which is the core mechanism behind training neural networks. Integration, the inverse operation, accumulates infinitesimal contributions and is central to probability densities, expected values and continuous normalisation.
+  - In machine learning, the most consequential idea from calculus is that a smooth loss function can be minimised by following the negative of its gradient. Every gradient-based optimiser, from plain gradient descent to adaptive methods, rests on differentiating the loss with respect to millions or billions of parameters. The chain rule, applied mechanically over a computational graph, makes this differentiation tractable and is the mathematical content of backpropagation.
+- ### History and context
+  - Developed independently by Newton and Leibniz in the seventeenth century, calculus became the language of physics and engineering and, in the modern era, of optimisation and machine learning. The advent of automatic differentiation turned its theory into a practical engine that powers the training of large neural networks.
+- ### Mechanisms
+  - Differentiation: computing derivatives and partial derivatives, including the chain rule that composes derivatives through nested functions.
+  - Gradients and the Jacobian/Hessian: vector- and matrix-valued generalisations of the derivative used in multivariate optimisation.
+  - Integration: definite and indefinite integrals underpinning expectation, marginalisation and area-under-curve metrics.
+  - Chain rule and computational graphs: the basis of backpropagation and automatic differentiation in modern frameworks.
+  - Taylor expansion: local polynomial approximation used to analyse convergence and curvature of loss surfaces.
+- ### Applications
+  - Training neural networks by gradient descent over differentiable loss landscapes.
+  - Deriving and analysing optimisation algorithms such as Newton's method and momentum.
+  - Computing expectations and normalising constants in probabilistic and generative models.
+  - Sensitivity analysis and uncertainty propagation in scientific and engineering models.
+- ### Challenges and considerations
+  - Numerical stability: vanishing and exploding gradients in deep compositions of functions.
+  - Non-differentiability: handling functions that are only piecewise smooth or non-smooth.
+  - Curvature: second-order information is informative but expensive to compute and store.
+  - High dimensionality: intuition from low-dimensional calculus can mislead in very high dimensions.
+- ### Examples
+  - Computing the gradient of a cross-entropy loss to update classifier weights.
+  - Using the chain rule to backpropagate errors through a deep network.
+  - Integrating a probability density to obtain a marginal or an expected value.
+- ### Relationships
+  - subClassOf:: [[Machine Learning]]
+  - requires:: [[Linear Algebra]]
+  - dependsOn:: [[Probability Theory]]
+  - uses:: [[Numerical Methods]]
+  - enables:: [[Optimisation]]
+  - enables:: [[Backpropagation]]
+  - enables:: [[Automatic Differentiation]]
+  - enables:: [[Stochastic Gradient Descent]]
+  - enables:: [[Convex Optimisation]]
+  - supports:: [[Machine Learning]]
+  - supports:: [[Deep Learning]]
+  - supports:: [[Neural Network]]
+  - relatedTo:: [[Statistics]]
+  - relatedTo:: [[Information Theory]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

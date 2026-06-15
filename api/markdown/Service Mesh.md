@@ -120,7 +120,7 @@ public:: true
         "label": "Zero Trust Network Access"
       },
       {
-        "@id": "urn:ngm:class:webassembly",
+        "@id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       }
     ],

@@ -125,7 +125,7 @@ public:: true
         "label": "LoRA"
       },
       {
-        "@id": "urn:ngm:class:controlnet",
+        "@id": "urn:ngm:class:control-net",
         "label": "ControlNet"
       },
       {

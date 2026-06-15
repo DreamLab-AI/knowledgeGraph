@@ -552,7 +552,7 @@ public:: true
         "label": "Feature Matching"
       },
       {
-        "@id": "urn:ngm:class:optimization",
+        "@id": "urn:ngm:class:optimisation",
         "label": "Optimization"
       },
       {

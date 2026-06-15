@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:iso-12100",
+  "title": "ISO 12100",
+  "slug": "iso-12100",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-12100",
+  "domain": "robotics",
+  "definition": "ISO 12100 is the foundational international standard for the safety of machinery, setting out general principles for design, risk assessment and risk reduction. It defines a structured methodology in which designers identify hazards, estimate and evaluate risk, then apply inherently safe design, safeguarding and information-for-use in a defined order of priority. As a Type-A standard it provides the overarching framework that more specific Type-B and Type-C machinery standards build upon.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:safety-standard",
+      "label": "Safety Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:ce-marking",
+        "label": "CE Marking"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-standard",
+        "label": "Robot Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218"
+      },
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482"
+      },
+      {
+        "id": "urn:ngm:class:robot-standard",
+        "label": "Robot Standard"
+      },
+      {
+        "id": "urn:ngm:class:iso-13849",
+        "label": "ISO 13849"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

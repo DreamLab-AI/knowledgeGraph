@@ -97,7 +97,7 @@ alias:: UnsupervisedLearning
         "label": "Density Estimation"
       },
       {
-        "@id": "urn:ngm:class:autoencoders",
+        "@id": "urn:ngm:class:autoencoder",
         "label": "Autoencoders"
       }
     ],

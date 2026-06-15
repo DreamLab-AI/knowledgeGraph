@@ -1,0 +1,34 @@
+- ### Definition
+	- A [[Sensor Model]] is a [[Probabilistic Robotics]] construct describing the likelihood of a measurement given a hypothesised world state.
+	- It encodes noise, range, resolution, and failure characteristics of a sensor such as a [[Lidar]] or [[Camera]].
+	- It is closely related to the [[Observation Model]] used in Bayesian filtering.
+- ### Overview
+	- In recursive state estimation the sensor model supplies the measurement-update (correction) step that refines a predicted belief.
+	- It complements the [[Motion Model]], which supplies the prediction step.
+	- Well-calibrated sensor models let a robot weight conflicting evidence during [[Sensor Fusion]].
+- ### Mechanisms
+	- Characterise the sensor's noise distribution and systematic biases empirically.
+	- Express the conditional likelihood of readings given state, including beam, feature, or pixel-level models.
+	- Incorporate the likelihood into a [[Kalman Filter]] or [[Particle Filter]] update.
+	- Validate against ground truth and recalibrate as hardware drifts.
+- ### Applications
+	- Robot [[Localization]] against a known map.
+	- Simultaneous mapping and localisation in [[SLAM]].
+	- Multi-sensor [[Sensor Fusion]] and [[Robot Perception]].
+	- Building consistent maps via [[Mapping]].
+- ### Relationships
+	- partOf:: [[State Estimation]]
+	- partOf:: [[Sensor Fusion]]
+	- hasPart:: [[Observation Model]]
+	- requires:: [[Lidar]]
+	- requires:: [[Camera]]
+	- enables:: [[Localization]]
+	- enables:: [[SLAM]]
+	- supports:: [[Kalman Filter]]
+	- supports:: [[Particle Filter]]
+	- contrastsWith:: [[Motion Model]]
+	- relatedTo:: [[Robot Perception]]
+- ### Provenance
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation
+	- updated:: 2026-06-15

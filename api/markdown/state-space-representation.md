@@ -1,0 +1,39 @@
+- ### Definition
+  - State space representation is a mathematical model that describes a dynamical system through a set of state variables, capturing all information needed to determine the system's future behaviour given its inputs. It expresses the system as first-order differential or difference equations relating states, inputs and outputs, typically in matrix form. The formulation underpins modern control, estimation, planning and search by providing a compact, computable description of the system over time.
+  - Related: [[Dynamical Systems Theory]] [[Optimal Control]] [[Kalman Filter]] [[Motion Model]]
+- ### Overview
+  - In state space representation a system's condition at any instant is captured by a finite vector of state variables, and its evolution is governed by equations mapping current state and input to the next state and output. This compact form supports analysis of stability, controllability and observability, and it generalises across linear and nonlinear, continuous and discrete systems. In robotics and AI, the state space also frames search and planning, where nodes correspond to states and edges to feasible transitions.
+- ### Mechanisms
+  - State variables and the state vector
+  - State, input and output equations in matrix form
+  - Controllability and observability
+  - Linear versus nonlinear, continuous versus discrete
+  - Estimation of hidden states from observations
+  - State-space search over discrete transitions
+- ### Applications
+  - Modelling robot dynamics for control
+  - State estimation with Kalman and particle filters
+  - Optimal and model-predictive control design
+  - Planning and search over discrete state spaces
+  - Analysing stability of dynamical systems
+- ### Relationships
+  - subClassOf:: [[Dynamical Systems Theory]]
+  - hasPart:: [[Motion Model]]
+  - partOf:: [[Dynamical Systems Theory]]
+  - requires:: [[Motion Model]]
+  - uses:: [[Kalman Filter]]
+  - enables:: [[Optimal Control]]
+  - enables:: [[Model Predictive Control]]
+  - enables:: [[Closed-Loop Control]]
+  - supports:: [[Planning]]
+  - supports:: [[Path Planning]]
+  - supports:: [[Motion Planning]]
+  - dependsOn:: [[Dynamical Systems Theory]]
+  - contrastsWith:: [[Search Algorithms]]
+  - relatedTo:: [[Markov Decision Process]]
+  - relatedTo:: [[Optimal Control]]
+  - bridgesTo:: [[Robotics]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

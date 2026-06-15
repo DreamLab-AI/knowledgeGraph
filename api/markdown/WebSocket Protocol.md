@@ -106,7 +106,7 @@ public:: true
         "label": "HTTP Long Polling"
       },
       {
-        "@id": "urn:ngm:class:webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       }
     ],

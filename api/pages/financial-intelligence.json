@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:financial-intelligence",
+  "title": "Financial Intelligence",
+  "slug": "financial-intelligence",
+  "public": true,
+  "classIri": "urn:ngm:class:financial-intelligence",
+  "domain": "blockchain",
+  "definition": "Financial intelligence is the collection, analysis, and dissemination of information about financial flows and transactions to detect, investigate, and disrupt illicit activity such as money laundering, terrorist financing, and sanctions evasion. In the blockchain context it applies graph analytics and transaction tracing across public ledgers to attribute addresses, cluster wallets, and surface suspicious patterns. It feeds compliance functions, law-enforcement investigations, and regulatory reporting, bridging on-chain data with off-chain identity and risk signals. Financial intelligence units and private analytics providers are its principal practitioners.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-analytics",
+      "label": "Blockchain Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:data-fusion",
+        "label": "Data Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fatf-travel-rule",
+        "label": "FATF Travel Rule"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
+      },
+      {
+        "id": "urn:ngm:class:chainalysis",
+        "label": "Chainalysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:suspicious-activity-report",
+        "label": "Suspicious Activity Report"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regtech",
+        "label": "RegTech"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

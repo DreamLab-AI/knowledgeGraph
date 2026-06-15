@@ -86,7 +86,7 @@ public:: true
         "label": "IEEE Standards Association"
       },
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       },
       {
@@ -118,7 +118,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:webxr",
+        "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       },
       {

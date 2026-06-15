@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:formal-methods",
+  "title": "Formal Methods",
+  "slug": "formal-methods",
+  "public": true,
+  "classIri": "urn:ngm:class:formal-methods",
+  "domain": "blockchain",
+  "definition": "Formal methods are mathematically rigorous techniques for the specification, development, and verification of software and hardware systems. They use formal logic, set theory, and automata to express system requirements precisely and to prove that an implementation satisfies them. In blockchain and smart-contract engineering, formal methods are applied to prove the absence of classes of bugs and to guarantee that contract behaviour matches its intended specification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:formal-verification",
+      "label": "Formal Verification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:model-checking",
+        "label": "Model Checking"
+      },
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:formal-specification",
+        "label": "Formal Specification"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:program-verification",
+        "label": "Program Verification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:program-analysis",
+        "label": "Program Analysis"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:temporal-logic",
+        "label": "Temporal Logic"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    }
+  ]
+}

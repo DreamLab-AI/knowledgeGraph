@@ -1,0 +1,37 @@
+- ### Definition
+  - AAAI is the Association for the Advancement of [[Artificial Intelligence]], a scientific society and a leading [[Academic Conference]] series.
+  - Its flagship [[AAAI Conference]] is among the most selective venues in AI, gated by rigorous [[Peer Review]].
+  - It supports research, education, and policy discussion across [[Machine Learning]] and AI more broadly.
+- ### Overview
+  - Founded to promote scientific understanding of the mechanisms underlying thought and intelligent behaviour, AAAI convenes researchers worldwide.
+  - Beyond the main conference it runs symposia, workshops, and publishes journals and proceedings that become a [[Research Publication]] record of the field.
+  - It sits alongside [[NeurIPS]] and [[ICML]] as a top-tier forum, with a broader scope spanning symbolic, statistical, and applied AI.
+- ### Key aspects
+  - Highly competitive double-blind peer review of submitted papers.
+  - Breadth across subfields from reasoning and planning to learning and perception.
+  - Stewardship of community norms, ethics, and public engagement.
+- ### Mechanisms
+  - Programme committees coordinate reviewers who assess submissions for novelty and rigour.
+  - Accepted work is presented and archived in conference proceedings.
+  - Awards and fellowships recognise sustained contributions to the discipline.
+- ### Applications
+  - Disseminating state-of-the-art AI research.
+  - Setting de facto quality bars for publication via [[Peer Review]].
+  - Convening cross-disciplinary dialogue on responsible AI.
+- ### Relationships
+  - subClassOf:: [[Academic Conference]]
+  - hasPart:: [[AAAI Conference]]
+  - hasPart:: [[Peer Review]]
+  - supports:: [[Artificial Intelligence]]
+  - supports:: [[Machine Learning]]
+  - standardizedBy:: [[Peer Review]]
+  - produces:: [[Research Publication]]
+  - contrastsWith:: [[NeurIPS]]
+  - contrastsWith:: [[ICML]]
+  - relatedTo:: [[Scientific Conference]]
+  - relatedTo:: [[Research Institution]]
+  - bridgesTo:: [[Artificial Intelligence]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

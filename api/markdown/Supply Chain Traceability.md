@@ -183,7 +183,7 @@ alias:: BC-0441-supply-chain-traceability, BC-0446-supply-chain-traceability
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:gs1-standards",
+        "@id": "urn:ngm:class:gs-1-standards",
         "label": "GS1 Standards"
       }
     ],

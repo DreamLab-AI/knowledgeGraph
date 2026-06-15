@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:word-embedding",
+  "title": "Word Embedding",
+  "slug": "word-embedding",
+  "public": true,
+  "classIri": "urn:ngm:class:word-embedding",
+  "domain": "artificial-intelligence",
+  "definition": "A Word Embedding is a dense, continuous vector representation of a word learned such that semantically or syntactically similar words occupy nearby positions in the vector space. Trained from large text corpora using distributional statistics, embeddings capture relationships through geometric structure, enabling analogical reasoning and similarity computation. They transformed natural language processing by replacing sparse one-hot encodings with low-dimensional features that generalise across vocabulary and feed downstream neural models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:embedding",
+      "label": "Embedding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

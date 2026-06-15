@@ -65,7 +65,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:javascript",
+        "@id": "urn:ngm:class:java-script",
         "label": "JavaScript"
       },
       {
@@ -109,7 +109,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:react",
+        "@id": "urn:ngm:class:re-act",
         "label": "React"
       }
     ],
@@ -125,7 +125,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:javascript",
+        "@id": "urn:ngm:class:java-script",
         "label": "JavaScript"
       }
     ],

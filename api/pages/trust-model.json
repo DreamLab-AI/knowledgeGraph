@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:trust-model",
+  "title": "Trust Model",
+  "slug": "trust-model",
+  "public": true,
+  "classIri": "urn:ngm:class:trust-model",
+  "domain": "security",
+  "definition": "A trust model is a formal description of which entities are trusted, for what, and on what basis within a security or identity system. It defines the roots of trust, the relationships through which trust is delegated or transitively established, and the assumptions an adversary cannot violate. Trust models range from centralised certificate hierarchies to decentralised webs of trust and zero-trust architectures, and they directly shape how authentication and authorisation are designed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:trust-establishment",
+        "label": "Trust Establishment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:web-of-trust",
+        "label": "Web of Trust"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-trust",
+        "label": "Decentralised Trust"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero-Trust Architecture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "c2-pa-standard",
+      "label": "C2PA Standard"
+    }
+  ]
+}

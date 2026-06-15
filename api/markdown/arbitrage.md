@@ -1,0 +1,40 @@
+- ### Definition
+  - Arbitrage is the practice of simultaneously buying and selling an asset across different markets or instruments to profit from a price discrepancy with minimal directional risk. In decentralised finance it is a central economic force that aligns token prices across exchanges and liquidity pools, often executed by automated bots exploiting transient inefficiencies. Arbitrage activity drives price discovery and improves market efficiency, but is closely tied to phenomena such as miner/maximal extractable value and impermanent loss.
+  - Related concepts: [[Market Efficiency]] [[Price Discovery]] [[Liquidity]] [[Decentralized Finance]] [[MEV]]
+- ### Overview
+  - Arbitrage exploits price differences for the same or equivalent asset across venues to capture near-risk-free profit.
+  - In decentralised markets, automated agents continuously scan exchanges and pools for exploitable spreads.
+  - By closing these gaps, arbitrage keeps prices consistent and improves overall market quality.
+- ### Mechanisms
+  - Cross-exchange arbitrage buys low on one venue and sells high on another simultaneously.
+  - Triangular arbitrage cycles through three trading pairs to capture relative mispricing.
+  - [[Flash Loan]] mechanisms allow capital-free atomic arbitrage within a single transaction.
+  - Competition for arbitrage opportunities is a primary driver of [[MEV]] on blockchains.
+- ### Applications
+  - Aligning token prices across [[Decentralized Exchange]] and [[DEX]] liquidity pools.
+  - Strengthening [[Price Discovery]] and [[Market Efficiency]] in [[Decentralized Finance]].
+  - Stabilising stablecoin pegs and derivative pricing.
+  - Informing [[Risk Management]] and [[Liquidity]] provision strategies.
+- ### Relationships
+  - subClassOf:: [[Market Efficiency]]
+  - enables:: [[Price Discovery]]
+  - enables:: [[Market Efficiency]]
+  - enables:: [[Liquidity]]
+  - requires:: [[Liquidity]]
+  - requires:: [[Order Book]]
+  - uses:: [[Flash Loan]]
+  - uses:: [[Decentralized Exchange]]
+  - uses:: [[DEX]]
+  - supports:: [[Decentralized Finance]]
+  - supports:: [[Digital Asset Trading]]
+  - relatedTo:: [[MEV]]
+  - relatedTo:: [[Impermanent Loss]]
+  - relatedTo:: [[Yield Farming]]
+  - relatedTo:: [[Cryptocurrency]]
+  - relatedTo:: [[Risk Management]]
+  - dependsOn:: [[Price Discovery]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

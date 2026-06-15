@@ -81,7 +81,7 @@ public:: true
         "label": "Transport Layer Security"
       },
       {
-        "@id": "urn:ngm:class:protocol-buffers",
+        "@id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffers"
       }
     ],
@@ -99,7 +99,7 @@ public:: true
         "label": "Long Polling"
       },
       {
-        "@id": "urn:ngm:class:webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       }
     ],
@@ -149,7 +149,7 @@ public:: true
         "label": "Latency"
       },
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       }
     ]

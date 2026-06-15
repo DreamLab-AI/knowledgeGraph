@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:amqp",
+  "title": "AMQP",
+  "slug": "amqp",
+  "public": true,
+  "classIri": "urn:ngm:class:amqp",
+  "domain": "infrastructure",
+  "definition": "AMQP (Advanced Message Queuing Protocol) is an open, binary application-layer protocol for message-oriented middleware that defines wire-level framing, message routing and reliable delivery between brokers and clients regardless of vendor or platform. It models messaging through exchanges, queues and bindings that decouple producers from consumers and support routing patterns including direct, topic, fanout and headers exchanges. AMQP 1.0 is standardised by OASIS and ISO/IEC 19464, while the earlier AMQP 0-9-1 specification remains widely deployed in broker implementations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:oasis",
+        "label": "OASIS"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

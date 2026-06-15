@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:dead-reckoning",
+  "title": "Dead Reckoning",
+  "slug": "dead-reckoning",
+  "public": true,
+  "classIri": "urn:ngm:class:dead-reckoning",
+  "domain": "robotics",
+  "definition": "Dead reckoning is a navigation technique that estimates an entity's current position by applying its known speed, heading, and elapsed time to a previously determined position. It relies on relative motion measurements from sensors such as inertial measurement units and wheel encoders rather than external position fixes. Because errors accumulate over time as drift, dead reckoning is typically fused with absolute references like GPS to maintain accuracy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:localisation",
+      "label": "Localisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:accelerometer",
+        "label": "Accelerometer"
+      },
+      {
+        "id": "urn:ngm:class:gyroscope",
+        "label": "Gyroscope"
+      },
+      {
+        "id": "urn:ngm:class:velocity",
+        "label": "Velocity"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:imu",
+        "label": "IMU"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

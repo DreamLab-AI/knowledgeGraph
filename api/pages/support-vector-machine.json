@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:support-vector-machine",
+  "title": "Support Vector Machine",
+  "slug": "support-vector-machine",
+  "public": true,
+  "classIri": "urn:ngm:class:support-vector-machine",
+  "domain": "machine-learning",
+  "definition": "A support vector machine (SVM) is a supervised learning model that finds the hyperplane separating classes with the maximum margin between the nearest training examples, called support vectors. Through the kernel trick it can construct non-linear decision boundaries by implicitly mapping inputs into higher-dimensional feature spaces. SVMs are grounded in statistical learning theory and are effective for classification and regression on small to medium, high-dimensional datasets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supervised-learning",
+      "label": "Supervised Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:labelled-dataset",
+        "label": "Labelled Dataset"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      },
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

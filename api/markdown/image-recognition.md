@@ -1,0 +1,36 @@
+- ### Definition
+  - [[Image Recognition]] is the [[Computer Vision]] capability that maps pixels to semantic labels, built on [[Feature Extraction]] learned by a [[Convolutional Neural Network]] under [[Supervised Learning]].
+- ### Overview
+  - Image recognition answers the question "what is in this picture?" It spans single-label classification, multi-label tagging and the localisation tasks that underpin detection and segmentation. The field shifted decisively from hand-crafted descriptors to learned representations as deep neural networks demonstrated large accuracy gains on benchmark datasets.
+  - Contemporary systems pretrain on broad image corpora and fine-tune for specific domains, exploiting transfer learning to perform well even when labelled data for the target task is scarce.
+- ### Key aspects
+  - Representation learning: convolutional and vision-transformer architectures discover edges, textures, parts and whole objects across stacked layers.
+  - Label granularity: tasks range from coarse scene categories to fine-grained species or product variants.
+  - Robustness: invariance to scale, rotation, lighting and occlusion remains a central engineering concern.
+  - Evaluation: top-1 and top-k accuracy, precision and recall quantify performance against held-out test sets.
+- ### Mechanisms
+  - Input images are normalised and passed through a feature backbone that produces a dense embedding.
+  - A classification head projects the embedding onto label probabilities via a softmax or sigmoid output.
+  - Training minimises a cross-entropy loss using gradient descent over annotated examples.
+- ### Applications
+  - Visual search, content moderation, medical imaging triage, industrial inspection, autonomous perception and accessibility tooling.
+- ### Relationships
+  - requires:: [[Feature Extraction]]
+  - requires:: [[Convolutional Neural Network]]
+  - requires:: [[Supervised Learning]]
+  - enables:: [[Object Detection]]
+  - enables:: [[Scene Understanding]]
+  - enables:: [[Facial Recognition]]
+  - uses:: [[Deep Learning]]
+  - uses:: [[Neural Network]]
+  - uses:: [[Transfer Learning]]
+  - partOf:: [[Computer Vision]]
+  - contrastsWith:: [[Semantic Segmentation]]
+  - relatedTo:: [[Image Classification]]
+  - relatedTo:: [[Pattern Recognition]]
+  - relatedTo:: [[Object Recognition]]
+  - supports:: [[Image Processing]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - maturity:: mature

@@ -1,0 +1,33 @@
+- ### Definition
+  - A custodial trading venue that matches orders through an internal [[Order Book]].
+  - Holds user funds in [[Custody]] and settles trades off-chain on its own ledger.
+  - Enforces [[KYC]] and [[AML]] checks via [[Identity Verification]].
+- ### Overview
+  - Centralised exchanges are the most common on-ramp between fiat and crypto assets.
+  - The operator runs matching, custody, and settlement, so users trust the company rather than code.
+  - High [[Liquidity]] and low latency come from internalised order matching.
+  - Regulatory obligations make them subject to licensing, audits and reporting.
+- ### Key aspects
+  - Internal order book and matching engine.
+  - Custodial wallets holding pooled user balances.
+  - Fiat gateways and banking relationships.
+  - Compliance stack for sanctions screening and reporting.
+- ### Applications
+  - Spot and derivatives trading of digital assets.
+  - Fiat-to-crypto and crypto-to-fiat conversion.
+  - Market-making and institutional execution.
+- ### Relationships
+  - hasPart:: [[Order Book]]
+  - requires:: [[Custody]]
+  - requires:: [[KYC]]
+  - implements:: [[AML]]
+  - enables:: [[Liquidity]]
+  - uses:: [[Identity Verification]]
+  - contrastsWith:: [[Decentralised Exchange]]
+  - relatedTo:: [[Binance]]
+  - relatedTo:: [[Coinbase]]
+  - relatedTo:: [[Blockchain]]
+  - relatedTo:: [[Financial Services]]
+  - supports:: [[Liquidity]]
+- ### Provenance
+  - updated:: 2026-06-15

@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:data-subject-rights",
+  "title": "Data Subject Rights",
+  "slug": "data-subject-rights",
+  "public": true,
+  "classIri": "urn:ngm:class:data-subject-rights",
+  "domain": "governance",
+  "definition": "Data subject rights are the legal entitlements granted to individuals over personal data that organisations hold about them, including rights of access, rectification, erasure, restriction, portability and objection. Codified in regimes such as the GDPR, these rights give people control over how their data is collected, used and shared, and impose corresponding obligations on data controllers and processors. Exercising and honouring them is a core requirement of modern data protection and privacy compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-protection",
+      "label": "Data Protection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-minimisation",
+        "label": "Data Minimisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

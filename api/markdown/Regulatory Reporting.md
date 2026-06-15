@@ -419,7 +419,7 @@ alias:: BC-0486-regulatory-reporting
         "label": "Basel IV"
       },
       {
-        "@id": "urn:ngm:class:dora",
+        "@id": "urn:ngm:class:do-ra",
         "label": "DORA"
       },
       {

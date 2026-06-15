@@ -1,0 +1,37 @@
+- ### Definition
+  - A [[Multisig Wallet]] is a [[Cryptocurrency Wallet]] requiring M-of-N [[Digital Signature|signatures]] to authorise a transaction, using [[Threshold Cryptography]] and [[Key Management]] to enforce shared control.
+  - It removes single points of failure and is central to [[Treasury Management]] and [[DAO]] governance.
+- ### Overview
+  - In an M-of-N scheme, N keys are designated and any M of them must sign before a transaction is valid.
+  - On Bitcoin, multisig is expressed through script (P2SH/P2WSH); on Ethereum it is typically implemented as a smart-contract wallet.
+  - Distributing keys across people, devices or geographies reduces theft and loss risk and enforces governance policy.
+  - Threshold-signature schemes can achieve similar guarantees while presenting a single on-chain signature.
+- ### Mechanisms
+  - Designated public keys and a signing threshold define the spending policy.
+  - Each signer independently authorises, and the protocol combines signatures.
+  - Smart-contract variants encode arbitrary approval logic and recovery paths.
+  - Hardware and air-gapped signers harden individual key custody.
+- ### Applications
+  - DAO and protocol treasury management.
+  - Institutional and exchange custody.
+  - Shared self-custody among family or partners.
+  - Escrow and conditional-release arrangements.
+- ### Relationships
+  - hasPart:: [[Digital Signature]]
+  - hasPart:: [[Key Management]]
+  - uses:: [[Threshold Cryptography]]
+  - uses:: [[Smart Contract]]
+  - uses:: [[Digital Signature]]
+  - requires:: [[Key Management]]
+  - enables:: [[Treasury Management]]
+  - enables:: [[Self-Custody]]
+  - supports:: [[DAO]]
+  - supports:: [[Custody]]
+  - dependsOn:: [[Cryptocurrency Wallet]]
+  - contrastsWith:: [[Hot Wallet]]
+  - relatedTo:: [[On-Chain Governance]]
+  - relatedTo:: [[Custody]]
+  - relatedTo:: [[Ethereum]]
+  - bridgesTo:: [[Bitcoin]]
+- ### Provenance
+  - updated:: 2026-06-15

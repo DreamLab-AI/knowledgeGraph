@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:statistical-testing",
+  "title": "Statistical Testing",
+  "slug": "statistical-testing",
+  "public": true,
+  "classIri": "urn:ngm:class:statistical-testing",
+  "domain": "artificial-intelligence",
+  "definition": "Statistical testing is the practice of using sample data to assess evidence for or against a hypothesis about a population or process. It formalises a null and alternative hypothesis, computes a test statistic and an associated significance level, and decides whether observed effects are likely to be genuine rather than due to chance. It underpins rigorous evaluation of models, experiments and measurements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistical-analysis",
+      "label": "Statistical Analysis"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      },
+      {
+        "id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:central-limit-theorem",
+        "label": "Central Limit Theorem"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      },
+      {
+        "id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:statistical-analysis",
+        "label": "Statistical Analysis"
+      },
+      {
+        "id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

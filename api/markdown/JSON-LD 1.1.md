@@ -115,7 +115,7 @@ public:: true
         "label": "SPARQL"
       },
       {
-        "@id": "urn:ngm:class:activitypub",
+        "@id": "urn:ngm:class:activity-pub",
         "label": "ActivityPub"
       },
       {

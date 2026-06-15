@@ -1,0 +1,41 @@
+- ### Definition
+  - Transaction signing is the cryptographic process by which the holder of a private key authorises a blockchain transaction by producing a digital signature over its contents. The signature proves that the legitimate key holder approved the exact transaction without revealing the private key, and it binds the transaction to a specific account so that the network can verify authenticity and integrity. It is fundamental to self-custody, wallet security and the trustless validation of transactions.
+  - Related: [[Cryptography]] [[Private Key]] [[Digital Signature]] [[ECDSA]]
+- ### Overview
+  - To sign a transaction, a wallet serialises the transaction data, hashes it, and applies an asymmetric signature scheme such as ECDSA over an elliptic curve using the account's private key. The resulting signature, together with the public key or recoverable parameters, lets any node verify that the holder of the corresponding key approved precisely this transaction and that nothing was altered. Because the private key never leaves the signer, hardware wallets and multi-signature schemes can perform signing in isolated environments to resist key theft.
+- ### Mechanisms
+  - Hashing and serialising the transaction payload
+  - Asymmetric signature schemes (ECDSA, EdDSA)
+  - Nonce handling and replay protection
+  - Air-gapped and hardware-based signing
+  - Multi-signature and threshold approval
+  - Verification of authenticity and integrity
+- ### Applications
+  - Authorising on-chain transfers and contract calls
+  - Self-custody via software and hardware wallets
+  - Multi-signature treasury and custody workflows
+  - Air-gapped cold-storage signing
+  - Verifying transaction authorship across the network
+- ### Relationships
+  - subClassOf:: [[Cryptography]]
+  - requires:: [[Private Key]]
+  - requires:: [[Digital Signature]]
+  - uses:: [[ECDSA]]
+  - uses:: [[Elliptic Curve Cryptography]]
+  - uses:: [[Nonce]]
+  - enables:: [[Smart Contract]]
+  - enables:: [[Custody]]
+  - implements:: [[Digital Signature]]
+  - supports:: [[Multi-Signature Wallet]]
+  - supports:: [[Hardware Wallet]]
+  - dependsOn:: [[Cryptography]]
+  - dependsOn:: [[Private Key]]
+  - partOf:: [[Digital Wallet]]
+  - relatedTo:: [[Hardware Wallet]]
+  - relatedTo:: [[Digital Wallet]]
+  - relatedTo:: [[Ethereum]]
+  - bridgesTo:: [[Blockchain]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

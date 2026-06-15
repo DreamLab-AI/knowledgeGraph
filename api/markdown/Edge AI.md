@@ -114,7 +114,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:tinyml",
+        "@id": "urn:ngm:class:tiny-ml",
         "label": "TinyML"
       },
       {

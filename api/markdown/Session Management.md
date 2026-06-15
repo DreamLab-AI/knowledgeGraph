@@ -157,7 +157,7 @@ public:: true
         "label": "Distributed Systems"
       },
       {
-        "@id": "urn:ngm:class:oauth2",
+        "@id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth2"
       }
     ],

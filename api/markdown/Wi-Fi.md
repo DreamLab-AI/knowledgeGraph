@@ -155,7 +155,7 @@ public:: true
         "label": "Bluetooth"
       },
       {
-        "@id": "urn:ngm:class:5g",
+        "@id": "urn:ngm:class:5-g",
         "label": "5G"
       },
       {

@@ -94,7 +94,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:ros2",
+        "@id": "urn:ngm:class:ros-2",
         "label": "ROS 2"
       },
       {

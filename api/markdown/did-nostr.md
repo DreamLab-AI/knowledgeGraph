@@ -119,7 +119,7 @@ alias:: did:nostr, DID Nostr, nostr-did, DID-Nostr
         "label": "Decentralised Identity"
       },
       {
-        "@id": "urn:ngm:class:webauthn",
+        "@id": "urn:ngm:class:web-authn",
         "label": "WebAuthn"
       },
       {

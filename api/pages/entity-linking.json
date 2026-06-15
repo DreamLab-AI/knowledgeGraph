@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:entity-linking",
+  "title": "Entity Linking",
+  "slug": "entity-linking",
+  "public": true,
+  "classIri": "urn:ngm:class:entity-linking",
+  "domain": "artificial-intelligence",
+  "definition": "Entity linking is the natural language processing task of mapping mentions of entities in unstructured text to their corresponding unique identifiers in a target knowledge base such as Wikidata or a domain ontology. It combines candidate generation, which retrieves plausible referents for a surface form, with entity disambiguation, which selects the correct referent using contextual, semantic, and popularity signals. The task resolves ambiguity where one surface form may denote many entities and one entity may be expressed by many surface forms. Entity linking is a foundational step in transforming free text into structured, machine-readable knowledge.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-extraction",
+      "label": "Information Extraction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:wikidata",
+        "label": "Wikidata"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:text-mining",
+        "label": "Text Mining"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:record-linkage",
+        "label": "Record Linkage"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

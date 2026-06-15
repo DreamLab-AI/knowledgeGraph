@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:relational-database",
+  "title": "Relational Database",
+  "slug": "relational-database",
+  "public": true,
+  "classIri": "urn:ngm:class:relational-database",
+  "domain": "data",
+  "definition": "A relational database organises data into tables of rows and columns, where relationships between tables are expressed through shared key values rather than physical pointers, following the relational model. Data is queried and manipulated declaratively, conventionally through SQL, and integrity is enforced via constraints, keys and typed schemas. Relational systems typically provide ACID transactions, making them the default choice for consistent, structured operational data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:database-management-system",
+      "label": "Database Management System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      },
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    }
+  ]
+}

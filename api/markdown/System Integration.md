@@ -79,7 +79,7 @@ public:: true
         "label": "Identity Federation"
       },
       {
-        "@id": "urn:ngm:class:data-serialisation",
+        "@id": "urn:ngm:class:data-serialization",
         "label": "Data Serialisation"
       }
     ],
@@ -131,11 +131,11 @@ public:: true
         "label": "REST API"
       },
       {
-        "@id": "urn:ngm:class:graphql",
+        "@id": "urn:ngm:class:graph-ql",
         "label": "GraphQL"
       },
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       },
       {

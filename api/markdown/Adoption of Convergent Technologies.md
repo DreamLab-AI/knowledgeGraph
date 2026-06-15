@@ -674,7 +674,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:dora",
+        "@id": "urn:ngm:class:do-ra",
         "label": "DORA"
       },
       {

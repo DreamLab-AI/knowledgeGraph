@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:trusted-third-party",
+  "title": "Trusted Third Party",
+  "slug": "trusted-third-party",
+  "public": true,
+  "classIri": "urn:ngm:class:trusted-third-party",
+  "domain": "blockchain",
+  "definition": "A trusted third party (TTP) is an intermediary that two or more parties rely upon to facilitate, witness, or settle an interaction without each party having to trust the other directly. Examples include certificate authorities, escrow agents, custodians, and clearing houses. Blockchain systems are largely motivated by the goal of minimising or eliminating trusted third parties, replacing institutional trust with cryptographic verification and decentralised consensus.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:centralized-exchange",
+        "label": "Centralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:multisig",
+        "label": "Multisig"
+      },
+      {
+        "id": "urn:ngm:class:centralized-exchange",
+        "label": "Centralized Exchange"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    }
+  ]
+}

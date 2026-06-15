@@ -1,0 +1,42 @@
+- ### Definition
+  - A **Seed Phrase** is an ordered list of words, usually twelve or twenty-four, that encodes the master secret of a [[Digital Wallet]].
+  - From this single secret the wallet deterministically derives every [[Private Key]] and address it controls.
+  - It is generated from random [[Entropy]] and mapped to words via a standard wordlist, giving a human-readable, transcribable backup.
+  - Because anyone holding the phrase controls the funds, it is the linchpin of [[Self-Custody]] and demands rigorous [[Security]].
+- ### Overview
+  - Seed phrases replace the impossible task of memorising or safely copying raw binary keys with a sequence of ordinary words.
+  - Standardised wordlists assign each word a fixed index, and a checksum word guards against transcription errors.
+  - The phrase seeds a [[Hierarchical Deterministic Wallet]], from which an entire tree of keys is generated, so one backup protects all accounts.
+  - Whoever possesses the phrase can recreate the wallet on any compatible device, which is both its great convenience and its central risk.
+- ### Key aspects
+  - **Entropy source** — the security of the wallet rests on the quality of the random [[Entropy]] used to create the seed.
+  - **Mnemonic encoding** — words are easier to write down accurately and recognise than hexadecimal, with a checksum to catch mistakes.
+  - **Deterministic derivation** — a standard derivation path reconstructs every [[Private Key]] from the seed, enabling full recovery.
+  - **Single point of control** — the phrase grants complete authority over funds, so its confidentiality is absolute.
+  - **Backup discipline** — durable, offline [[Cold Storage]] of the phrase protects against loss, theft and device failure.
+- ### Mechanisms
+  - Random entropy is converted into a mnemonic via a standard scheme, appending a checksum derived from the entropy.
+  - The mnemonic is stretched into a binary seed that initialises [[Key Management]] for the wallet hierarchy.
+  - Each account and address is then derived along a defined path, so recovery reproduces them exactly.
+  - Optional passphrases add a further secret, creating hidden wallets that the bare phrase alone cannot reveal.
+- ### Applications
+  - Backing up and restoring [[Cryptocurrency Wallet]]s across hardware and software clients.
+  - Enabling [[Self-Custody]] without reliance on a custodian to hold keys.
+  - Migrating a wallet between devices or recovering from hardware loss.
+  - Establishing inheritance and disaster-recovery plans for digital assets.
+- ### Relationships
+  - hasPart:: [[Entropy]]
+  - requires:: [[Cold Storage]]
+  - uses:: [[Cryptographic Key]]
+  - enables:: [[Self-Custody]]
+  - enables:: [[Hierarchical Deterministic Wallet]]
+  - supports:: [[Private Key]]
+  - supports:: [[Cryptocurrency Wallet]]
+  - dependsOn:: [[Key Management]]
+  - partOf:: [[Digital Wallet]]
+  - relatedTo:: [[Security]]
+  - relatedTo:: [[Blockchain]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

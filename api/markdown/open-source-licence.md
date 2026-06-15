@@ -1,0 +1,39 @@
+- ### Definition
+  - An open source licence is a [[Software Licence]] granting the rights to use, study, modify, and redistribute source code.
+  - It rests on [[Copyright]] law, which the licensor uses to grant rather than restrict freedoms.
+  - Licences divide into [[Permissive Licence]] and [[Copyleft]] families with different obligations on derivative works.
+- ### Overview
+  - Open source licences make [[Open Source Software]] legally shareable, turning copyright into a tool for collaboration.
+  - Permissive licences such as the [[MIT Licence]] and [[Apache Licence]] impose minimal conditions, while copyleft licences such as the [[GNU General Public License]] require derivatives to stay open.
+  - Recognition by the [[Open Source Initiative]] and identification via [[SPDX]] identifiers underpin licence interoperability and compliance.
+- ### Key aspects
+  - Grant of the four core freedoms balanced against conditions and obligations.
+  - Permissive versus copyleft trade-off between adoption and reciprocity.
+  - Compatibility rules governing how differently licensed code can be combined.
+- ### Mechanisms
+  - The licensor, holding copyright, publishes terms that downstream users accept by using the code.
+  - Copyleft provisions propagate obligations to derivative works to keep them open.
+  - Standard identifiers enable automated [[Licence Compliance]] scanning across dependencies.
+- ### Applications
+  - Distributing libraries, frameworks, and applications to a global developer base.
+  - Governing contributions and forks in collaborative repositories.
+  - Managing legal risk in software supply chains.
+- ### Relationships
+  - subClassOf:: [[Software Licence]]
+  - hasPart:: [[Copyleft]]
+  - hasPart:: [[Permissive Licence]]
+  - partOf:: [[Open Source Software]]
+  - enables:: [[Open Source]]
+  - enables:: [[Free Software]]
+  - requires:: [[Copyright]]
+  - standardizedBy:: [[Open Source Initiative]]
+  - standardizedBy:: [[SPDX]]
+  - supports:: [[Licence Compliance]]
+  - relatedTo:: [[MIT Licence]]
+  - relatedTo:: [[Apache Licence]]
+  - relatedTo:: [[GNU General Public License]]
+  - bridgesTo:: [[Intellectual Property]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

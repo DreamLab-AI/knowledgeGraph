@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:microcontroller",
+  "title": "Microcontroller",
+  "slug": "microcontroller",
+  "public": true,
+  "classIri": "urn:ngm:class:microcontroller",
+  "domain": "robotics",
+  "definition": "A microcontroller is a compact integrated circuit that combines a processor core, memory and programmable input and output peripherals on a single chip, designed to run a dedicated control program. Unlike a general-purpose processor, it embeds the resources needed for embedded control directly, enabling low-cost, low-power operation in devices that sense and actuate their environment. Microcontrollers execute firmware in real time and are the computational heart of countless embedded and robotic systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:processor",
+        "label": "Processor"
+      },
+      {
+        "id": "urn:ngm:class:memory",
+        "label": "Memory"
+      },
+      {
+        "id": "urn:ngm:class:non-volatile-memory",
+        "label": "Non-Volatile Memory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      },
+      {
+        "id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:motor-driver",
+        "label": "Motor Driver"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

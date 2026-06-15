@@ -167,7 +167,7 @@
         "label": "Replication System"
       },
       {
-        "id": "urn:ngm:class:data-serialisation",
+        "id": "urn:ngm:class:data-serialization",
         "label": "Data Serialisation"
       },
       {

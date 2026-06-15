@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:polkadot-xcm",
+  "title": "Polkadot XCM",
+  "slug": "polkadot-xcm",
+  "public": true,
+  "classIri": "urn:ngm:class:polkadot-xcm",
+  "domain": "blockchain",
+  "definition": "Polkadot XCM (Cross-Consensus Messaging) is a format and language for communicating intent between consensus systems within and beyond the Polkadot network. Rather than transferring assets directly, XCM expresses instructions that a receiving chain interprets and executes locally, enabling asset transfers, remote calls and governance actions across parachains and the relay chain. It is transport-agnostic, relying on underlying delivery layers such as XCMP and HRMP, and is designed to be extensible and version-negotiated.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-chain-communication",
+      "label": "Cross-Chain Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cross-chain-communication",
+        "label": "Cross-Chain Communication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      },
+      {
+        "id": "urn:ngm:class:layer-zero",
+        "label": "LayerZero"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:web-assembly",
+        "label": "WebAssembly"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cosmos-ibc",
+      "label": "Cosmos IBC"
+    }
+  ]
+}

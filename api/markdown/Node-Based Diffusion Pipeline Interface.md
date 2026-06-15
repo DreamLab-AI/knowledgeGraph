@@ -49,7 +49,7 @@ elevatedFrom:: [[ComfyUI]]
         "label": "Latent Diffusion Model"
       },
       {
-        "@id": "urn:ngm:class:controlnet",
+        "@id": "urn:ngm:class:control-net",
         "label": "ControlNet"
       },
       {

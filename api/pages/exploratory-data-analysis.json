@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:exploratory-data-analysis",
+  "title": "Exploratory Data Analysis",
+  "slug": "exploratory-data-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:exploratory-data-analysis",
+  "domain": "machine-learning",
+  "definition": "Exploratory data analysis (EDA) is the practice of summarising, visualising, and interrogating a dataset to understand its structure, distributions, relationships, and anomalies before formal modelling. Introduced as a discipline by John Tukey, it emphasises graphical methods and descriptive statistics to generate hypotheses rather than confirm them. EDA is an early, iterative phase of the data-science workflow that informs data cleaning, feature engineering, and model selection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-analysis",
+      "label": "Data Analysis"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

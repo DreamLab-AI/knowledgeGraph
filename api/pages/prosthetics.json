@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:prosthetics",
+  "title": "Prosthetics",
+  "slug": "prosthetics",
+  "public": true,
+  "classIri": "urn:ngm:class:prosthetics",
+  "domain": "robotics",
+  "definition": "Prosthetics is the field concerned with the design, fitting, and control of artificial devices that replace missing or impaired body parts to restore form and function. Modern prosthetic limbs increasingly incorporate actuators, sensors, and control systems, with advanced devices using myoelectric or neural signals to drive movement intuitively. The discipline draws on biomechanics, human-robot interaction, and assistive technology to match device behaviour to human intent and gait. It contrasts with exoskeletons and orthotics, which augment or support existing limbs rather than replacing them.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:assistive-technology",
+      "label": "Assistive Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:biomechanics",
+        "label": "Biomechanics"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:neural-interface",
+        "label": "Neural Interface"
+      },
+      {
+        "id": "urn:ngm:class:wearable-robotics",
+        "label": "Wearable Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-interface",
+        "label": "Neural Interface"
+      },
+      {
+        "id": "urn:ngm:class:series-elastic-actuation",
+        "label": "Series Elastic Actuation"
+      },
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rehabilitation-robotics",
+        "label": "Rehabilitation Robotics"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    }
+  ]
+}

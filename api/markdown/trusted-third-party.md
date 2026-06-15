@@ -1,0 +1,37 @@
+- ### Definition
+- A [[Trusted Third Party]] is an intermediary relied upon to facilitate or settle an interaction so that the participants need not trust one another directly.
+- Classic instances include the [[Certificate Authority]], escrow and [[Custody]] providers, and clearing houses.
+- Decentralised designs such as the [[Smart Contract]], [[Decentralized Exchange]], and [[Self-Custody]] aim to minimise reliance on trusted third parties.
+- ### Overview
+- The trusted-third-party pattern resolves the problem of mutual distrust by delegating trust to a reputable intermediary that all parties accept.
+- It is efficient and legally well understood but introduces a single point of failure, a censorship vector, and a target for attack or capture.
+- Cryptographic and consensus mechanisms reframe this trade-off: blockchains substitute verifiable computation for institutional trust, while oracles and multisig arrangements distribute or constrain it.
+- ### Key aspects
+- Intermediation: the party sits between counterparties to witness, hold, or settle value or information.
+- Single point of trust: correctness and availability depend on the intermediary's integrity.
+- Accountability: legal and reputational mechanisms enforce honest behaviour.
+- Trust minimisation: cryptography and decentralisation reduce the scope of required trust.
+- ### Applications
+- Public-key infrastructure and certificate issuance for secure communication.
+- Escrow, custody, and settlement in finance and commerce.
+- Centralised exchanges and custodial wallets holding user assets.
+- Oracles bridging off-chain data into smart contracts under bounded trust.
+- ### Relationships
+- contrastsWith:: [[Self-Custody]]
+- contrastsWith:: [[Decentralized Exchange]]
+- contrastsWith:: [[Smart Contract]]
+- requires:: [[Custody]]
+- uses:: [[Certificate Authority]]
+- uses:: [[Know Your Customer]]
+- enables:: [[Centralized Exchange]]
+- enables:: [[Custodial Wallet]]
+- supports:: [[Custody]]
+- relatedTo:: [[Oracle]]
+- relatedTo:: [[Multisig]]
+- relatedTo:: [[Centralized Exchange]]
+- bridgesTo:: [[Smart Contract]]
+- dependsOn:: [[Custody]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

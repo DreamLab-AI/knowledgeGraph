@@ -1,0 +1,34 @@
+- ### Definition
+  - The recorded representation of facts and observations, the raw material of [[Data Management]].
+  - Captured, modelled and stored using a [[Data Model]] and [[Data Storage]].
+  - Described and contextualised by [[Metadata]] to remain meaningful.
+- ### Overview
+  - Data exists in structured, semi-structured and unstructured forms.
+  - Through processing and analysis, data becomes information and, ultimately, knowledge.
+  - Its value depends on quality, lineage, accessibility and governance.
+  - Data flows through a lifecycle of capture, storage, transformation, use and retirement.
+- ### Key aspects
+  - Structure: schema-bound versus schema-on-read representations.
+  - Lineage and provenance tracking origin and transformations.
+  - Quality dimensions: accuracy, completeness, timeliness, consistency.
+  - Governance defining ownership, access and stewardship.
+- ### Applications
+  - Analytics and [[Business Intelligence]] reporting.
+  - Training and evaluating machine-learning models.
+  - Operational systems of record.
+  - Decision support across the organisation.
+- ### Relationships
+  - hasPart:: [[Metadata]]
+  - requires:: [[Data Storage]]
+  - requires:: [[Data Model]]
+  - enables:: [[Business Intelligence]]
+  - supports:: [[Data Processing]]
+  - supports:: [[Data Engineering]]
+  - uses:: [[Data Pipeline]]
+  - dependsOn:: [[Data Quality]]
+  - bridgesTo:: [[Data Governance]]
+  - relatedTo:: [[Data Management]]
+  - relatedTo:: [[Data Integration]]
+  - standardizedBy:: [[Data Governance]]
+- ### Provenance
+  - updated:: 2026-06-15

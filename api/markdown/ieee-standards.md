@@ -1,0 +1,39 @@
+- ### Definition
+  - IEEE Standards are technical standards developed and published by the Institute of Electrical and Electronics Engineers and its standards association, spanning electrical, electronic, computing and communications technologies. Well-known examples include the IEEE 802 family for local and metropolitan networks (Ethernet and Wi-Fi) and IEEE 754 for floating-point arithmetic. These standards promote interoperability, safety and consistent engineering practice across hardware and networking systems worldwide.
+  - Related concepts: [[IEEE]] [[Standards Organization]] [[Ethernet]] [[Network Communication]] [[Interoperability]]
+- ### Overview
+  - IEEE Standards codify engineering practice across electrical, electronic, computing and communications fields.
+  - They are produced through balloted working groups under the IEEE Standards Association.
+  - Adoption of these standards underpins much of the interoperable hardware and networking in everyday use.
+- ### Key aspects
+  - The IEEE 802 family defines local and metropolitan area networking, including [[Ethernet]] and Wi-Fi.
+  - IEEE 754 specifies binary floating-point arithmetic used across processors.
+  - Standards undergo periodic revision to track evolving technology.
+  - Conformance promotes [[Interoperability]] between products from different vendors.
+- ### Applications
+  - Wired and wireless [[Network Communication]] infrastructure.
+  - Consistent numerical behaviour across [[Hardware Component]] designs.
+  - Interoperable consumer and industrial networking equipment.
+  - Engineering baselines referenced in procurement and [[Compliance]].
+- ### Relationships
+  - subClassOf:: [[Standards Organization]]
+  - standardizedBy:: [[IEEE]]
+  - standardizedBy:: [[Standards Organization]]
+  - relatedTo:: [[Standards Body]]
+  - relatedTo:: [[Ethernet]]
+  - relatedTo:: [[Network Communication]]
+  - relatedTo:: [[Interoperability]]
+  - relatedTo:: [[Hardware Component]]
+  - relatedTo:: [[Network Protocol]]
+  - supports:: [[Interoperability]]
+  - supports:: [[Compliance]]
+  - supports:: [[Network Communication]]
+  - enables:: [[Interoperability]]
+  - enables:: [[Ethernet]]
+  - bridgesTo:: [[ISO]]
+  - contrastsWith:: [[Standards Body]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

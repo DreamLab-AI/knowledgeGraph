@@ -152,7 +152,7 @@ public:: true
         "label": "Edge AI"
       },
       {
-        "@id": "urn:ngm:class:tinyml",
+        "@id": "urn:ngm:class:tiny-ml",
         "label": "TinyML"
       },
       {

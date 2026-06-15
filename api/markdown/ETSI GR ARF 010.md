@@ -94,11 +94,11 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
       {
-        "@id": "urn:ngm:class:3gpp",
+        "@id": "urn:ngm:class:3-gpp",
         "label": "3GPP"
       },
       {
@@ -108,7 +108,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
       {

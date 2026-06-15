@@ -93,7 +93,7 @@ public:: true
         "label": "Solidity"
       },
       {
-        "@id": "urn:ngm:class:typescript",
+        "@id": "urn:ngm:class:type-script",
         "label": "TypeScript"
       }
     ],
@@ -137,7 +137,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:openzeppelin",
+        "@id": "urn:ngm:class:open-zeppelin",
         "label": "OpenZeppelin"
       }
     ]

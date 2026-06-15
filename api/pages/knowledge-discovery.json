@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:knowledge-discovery",
+  "title": "Knowledge Discovery",
+  "slug": "knowledge-discovery",
+  "public": true,
+  "classIri": "urn:ngm:class:knowledge-discovery",
+  "domain": "data",
+  "definition": "Knowledge Discovery is the process of identifying valid, novel, useful and understandable patterns in data, transforming raw records into actionable knowledge. It spans data selection, cleaning, transformation, mining and interpretation, and draws on statistics, machine learning, information retrieval and database technology. The discipline is often framed as Knowledge Discovery in Databases (KDD), within which data mining is the specific pattern-extraction step.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-management",
+      "label": "Knowledge Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:text-mining",
+        "label": "Text Mining"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    }
+  ]
+}

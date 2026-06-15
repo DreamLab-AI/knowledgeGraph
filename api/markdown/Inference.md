@@ -78,7 +78,7 @@ public:: true
         "label": "Inference Hardware"
       },
       {
-        "@id": "urn:ngm:class:quantization",
+        "@id": "urn:ngm:class:quantisation",
         "label": "Quantization"
       },
       {

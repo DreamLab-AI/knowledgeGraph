@@ -189,7 +189,7 @@ alias:: InverseKinematics, RB-1006-inverse-kinematics
         "label": "Numerical Methods"
       },
       {
-        "@id": "urn:ngm:class:optimization",
+        "@id": "urn:ngm:class:optimisation",
         "label": "Optimization"
       }
     ],

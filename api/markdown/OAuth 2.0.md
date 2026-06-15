@@ -43,7 +43,7 @@ public:: true
         "label": "Authentication"
       },
       {
-        "@id": "urn:ngm:class:https",
+        "@id": "urn:ngm:class:http",
         "label": "HTTPS"
       },
       {

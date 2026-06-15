@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:expert-parallelism",
+  "title": "Expert Parallelism",
+  "slug": "expert-parallelism",
+  "public": true,
+  "classIri": "urn:ngm:class:expert-parallelism",
+  "domain": "machine-learning",
+  "definition": "Expert parallelism is a distributed-training strategy for mixture-of-experts models that places different expert sub-networks on different accelerators and routes each token to its selected experts via all-to-all communication. Because only a sparse subset of experts is activated per token, expert parallelism scales total parameter count without a proportional rise in per-token compute. It is typically combined with data, tensor, and pipeline parallelism, and its efficiency hinges on balanced routing and low-latency interconnects.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-parallelism",
+      "label": "Model Parallelism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:routing-network",
+        "label": "Routing Network"
+      },
+      {
+        "id": "urn:ngm:class:all-to-all-communication",
+        "label": "All-to-All Communication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-cluster",
+        "label": "GPU Cluster"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:mixture-of-experts-architecture",
+        "label": "Mixture of Experts"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sparse-activation",
+        "label": "Sparse Activation"
+      },
+      {
+        "id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    }
+  ]
+}

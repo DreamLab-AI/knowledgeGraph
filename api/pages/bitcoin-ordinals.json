@@ -54,7 +54,7 @@
         "label": "On-Chain Storage"
       },
       {
-        "id": "urn:ngm:class:tokenisation",
+        "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],
@@ -98,7 +98,7 @@
         "label": "Taproot"
       },
       {
-        "id": "urn:ngm:class:segwit",
+        "id": "urn:ngm:class:seg-wit",
         "label": "SegWit"
       },
       {

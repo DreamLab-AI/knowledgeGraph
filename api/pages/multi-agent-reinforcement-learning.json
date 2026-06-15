@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:multi-agent-reinforcement-learning",
+  "title": "Multi-Agent Reinforcement Learning",
+  "slug": "multi-agent-reinforcement-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-agent-reinforcement-learning",
+  "domain": "ai",
+  "definition": "Multi-agent reinforcement learning (MARL) extends reinforcement learning to settings where several agents learn concurrently while interacting in a shared environment. Each agent optimises its own policy, but the environment is non-stationary from any single agent's perspective because the others are simultaneously adapting, which raises challenges of coordination, competition, credit assignment and equilibrium selection. MARL draws on game theory to analyse cooperative, competitive and mixed incentive structures and underpins applications from team robotics to automated trading and traffic control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-decision-making",
+        "label": "Distributed Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ai-model",
+        "label": "AI Model"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:distributed-decision-making",
+        "label": "Distributed Decision Making"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:task-automation",
+        "label": "Task Automation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    }
+  ]
+}

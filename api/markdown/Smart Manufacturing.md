@@ -68,7 +68,7 @@ public:: true
         "label": "Cyber Physical Systems"
       },
       {
-        "@id": "urn:ngm:class:5g-networks",
+        "@id": "urn:ngm:class:5-g-network",
         "label": "5G Networks"
       }
     ],

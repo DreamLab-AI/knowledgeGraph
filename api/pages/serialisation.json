@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:serialisation",
+  "title": "Serialisation",
+  "slug": "serialisation",
+  "public": true,
+  "classIri": "urn:ngm:class:serialisation",
+  "domain": "infrastructure",
+  "definition": "Serialisation is the process of converting in-memory data structures or object graphs into a linear byte sequence or text representation that can be stored, transmitted, and later reconstructed. The inverse operation, deserialisation, rebuilds the original structure from the encoded form. Serialisation underpins persistence, inter-process and network communication, and the interoperability of systems that exchange structured data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-format-standard",
+      "label": "Data Format Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:deserialisation",
+        "label": "Deserialisation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deserialisation",
+        "label": "Deserialisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "id": "urn:ngm:class:network-communication",
+        "label": "Network Communication"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    }
+  ]
+}

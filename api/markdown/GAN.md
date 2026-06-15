@@ -160,7 +160,7 @@ public:: true
         "label": "Synthetic Data"
       },
       {
-        "@id": "urn:ngm:class:deepfake",
+        "@id": "urn:ngm:class:deepfakes",
         "label": "Deepfake"
       },
       {

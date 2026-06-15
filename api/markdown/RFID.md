@@ -94,7 +94,7 @@ public:: true
         "label": "Network Communication"
       },
       {
-        "@id": "urn:ngm:class:sensor-network",
+        "@id": "urn:ngm:class:sensor-networks",
         "label": "Sensor Network"
       },
       {

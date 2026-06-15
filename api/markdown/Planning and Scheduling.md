@@ -116,7 +116,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:optimization",
+        "@id": "urn:ngm:class:optimisation",
         "label": "Optimization"
       },
       {

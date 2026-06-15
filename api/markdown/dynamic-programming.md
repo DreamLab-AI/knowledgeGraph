@@ -1,0 +1,32 @@
+- ### Definition
+  - [[Dynamic Programming]] solves problems by decomposing them into overlapping subproblems and reusing stored solutions.
+  - It is an algorithmic [[Programming Paradigm]] applicable to problems with optimal substructure.
+  - It underlies many [[Optimization Algorithm]] designs and the value computations in [[Reinforcement Learning]].
+- ### Overview
+  - Dynamic programming exploits two structural properties: optimal substructure and overlapping subproblems.
+  - It avoids the exponential blow-up of naive recursion by caching results (memoisation) or building tables bottom-up.
+  - The technique trades memory for time, turning intractable searches into efficient computations.
+  - It is a foundation for sequential decision problems and the Bellman equation in [[Markov Decision Process]] settings.
+- ### Mechanisms
+  - Top-down memoisation recurses while caching solved subproblems.
+  - Bottom-up tabulation fills a table of subproblem solutions in dependency order.
+  - State definition and transition recurrence capture how subproblems compose.
+  - Reconstruction recovers the optimal solution from the stored decisions.
+- ### Applications
+  - Shortest-path and graph optimisation algorithms.
+  - Sequence alignment and edit-distance problems in bioinformatics and text.
+  - Resource allocation, knapsack and scheduling optimisation.
+  - Policy and value iteration in [[Reinforcement Learning]] and control.
+- ### Relationships
+  - partOf:: [[Programming Paradigm]]
+  - implements:: [[Optimization Algorithm]]
+  - uses:: [[Algorithm]]
+  - enables:: [[Reinforcement Learning]]
+  - supports:: [[Markov Decision Process]]
+  - contrastsWith:: [[Algorithm]]
+  - requires:: [[Optimization Algorithm]]
+  - relatedTo:: [[Gradient Descent]]
+  - relatedTo:: [[Reinforcement Learning]]
+  - relatedTo:: [[Markov Decision Process]]
+- ### Provenance
+  - updated:: 2026-06-15

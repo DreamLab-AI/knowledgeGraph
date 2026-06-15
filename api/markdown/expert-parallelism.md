@@ -1,0 +1,38 @@
+- ### Definition
+  - Expert parallelism is a variant of [[Model Parallelism]] that distributes the expert sub-networks of a [[Mixture of Experts]] model across accelerators.
+  - Each token is dispatched to its chosen experts through a [[Routing Network]] and [[All-to-All Communication]].
+  - It exploits [[Sparse Activation]] so total parameters can grow far faster than per-token compute.
+- ### Overview
+  - In a mixture-of-experts layer, a gating function selects a small number of experts per token, leaving most parameters inactive on any given forward pass.
+  - Placing experts on separate devices lets the model hold many more parameters than fit on one accelerator, while keeping the active compute constant.
+  - The dominant cost becomes the all-to-all exchange that shuffles tokens to their experts and back, making interconnect bandwidth critical.
+- ### Key aspects
+  - Sparse, conditional computation driven by a learned router.
+  - Per-token dispatch and combine implemented as all-to-all collectives.
+  - Sensitivity to routing imbalance, which wastes capacity and stalls devices.
+- ### Mechanisms
+  - The router scores experts per token and selects the top-k, emitting dispatch tensors.
+  - An all-to-all collective sends tokens to the devices hosting their experts; a second all-to-all returns results.
+  - Auxiliary load-balancing losses encourage even expert utilisation to avoid stragglers.
+- ### Applications
+  - Training trillion-parameter sparse language models economically.
+  - Scaling model capacity on fixed inference budgets.
+  - Combining with [[Pipeline Parallelism]] and [[Data Parallelism]] in hybrid regimes.
+- ### Relationships
+  - subClassOf:: [[Model Parallelism]]
+  - hasPart:: [[Routing Network]]
+  - hasPart:: [[All-to-All Communication]]
+  - partOf:: [[Distributed Training]]
+  - implements:: [[Mixture of Experts]]
+  - uses:: [[Sparse Activation]]
+  - uses:: [[Collective Communication]]
+  - requires:: [[GPU Cluster]]
+  - requires:: [[Load Balancing]]
+  - contrastsWith:: [[Tensor Parallelism]]
+  - contrastsWith:: [[Data Parallelism]]
+  - relatedTo:: [[Pipeline Parallelism]]
+  - bridgesTo:: [[Distributed Training]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

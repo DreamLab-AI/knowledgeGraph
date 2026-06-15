@@ -118,7 +118,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:opentelemetry",
+        "@id": "urn:ngm:class:open-telemetry",
         "label": "OpenTelemetry"
       }
     ],
@@ -148,7 +148,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:opentelemetry",
+        "@id": "urn:ngm:class:open-telemetry",
         "label": "OpenTelemetry"
       },
       {

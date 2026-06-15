@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:application-programming-interface",
+  "title": "Application Programming Interface",
+  "slug": "application-programming-interface",
+  "public": true,
+  "classIri": "urn:ngm:class:application-programming-interface",
+  "domain": "infrastructure",
+  "definition": "An application programming interface (API) is a formally specified contract that defines how software components request services and exchange data with one another. It abstracts an implementation behind a stable set of operations, data types, and protocols, decoupling callers from internal details. APIs span in-process library interfaces, inter-process and network endpoints, and platform service boundaries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interface",
+      "label": "Interface"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:interface",
+        "label": "Interface"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    }
+  ]
+}

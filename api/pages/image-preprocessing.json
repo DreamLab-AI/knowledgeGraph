@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:image-preprocessing",
+  "title": "Image Preprocessing",
+  "slug": "image-preprocessing",
+  "public": true,
+  "classIri": "urn:ngm:class:image-preprocessing",
+  "domain": "ai",
+  "definition": "Image preprocessing is the set of operations applied to raw image data before it is fed into a computer vision or machine learning model. It standardises and conditions images through resizing, normalisation, colour-space conversion, denoising and contrast adjustment to improve downstream model accuracy and robustness. Preprocessing also includes augmentation transforms that synthetically expand training data and feature-oriented steps that emphasise salient structures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:image-processing",
+      "label": "Image Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:noise-reduction",
+        "label": "Noise Reduction"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

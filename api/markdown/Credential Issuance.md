@@ -52,7 +52,7 @@ public:: true
         "label": "Public Key Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:oauth2",
+        "@id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
       },
       {
@@ -148,7 +148,7 @@ public:: true
         "label": "Digital Wallet"
       },
       {
-        "@id": "urn:ngm:class:eidas",
+        "@id": "urn:ngm:class:e-idas",
         "label": "eIDAS"
       }
     ]

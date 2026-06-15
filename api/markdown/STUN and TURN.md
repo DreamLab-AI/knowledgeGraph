@@ -23,15 +23,27 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:dc-protocol-and-infra", "label": "Protocol and Infrastructure"}
+    {
+      "@id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
   ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:webrtc", "label": "WebRTC"},
-      {"@id": "urn:ngm:class:signaling-server", "label": "Signaling Server"}
+      {
+        "@id": "urn:ngm:class:web-rtc",
+        "label": "WebRTC"
+      },
+      {
+        "@id": "urn:ngm:class:signaling-server",
+        "label": "Signaling Server"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ]
   },
   "quality": 0.7

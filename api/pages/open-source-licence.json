@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:open-source-licence",
+  "title": "Open Source Licence",
+  "slug": "open-source-licence",
+  "public": true,
+  "classIri": "urn:ngm:class:open-source-licence",
+  "domain": "distributed-collaboration",
+  "definition": "An open source licence is a legal instrument that grants users the rights to use, study, modify, and redistribute software source code, subject to conditions defined by the licence. Such licences fall broadly into permissive families, which impose few obligations, and copyleft families, which require derivative works to remain under compatible terms. Recognition typically follows the Open Source Initiative's definition, and licences are identified by standard SPDX identifiers to support automated compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-licence",
+      "label": "Software Licence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:copyleft",
+        "label": "Copyleft"
+      },
+      {
+        "id": "urn:ngm:class:permissive-licence",
+        "label": "Permissive Licence"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "id": "urn:ngm:class:free-software",
+        "label": "Free Software"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:licence-compliance",
+        "label": "Licence Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-source-initiative",
+        "label": "Open Source Initiative"
+      },
+      {
+        "id": "urn:ngm:class:spdx",
+        "label": "SPDX"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mit-licence",
+        "label": "MIT Licence"
+      },
+      {
+        "id": "urn:ngm:class:apache-licence",
+        "label": "Apache Licence"
+      },
+      {
+        "id": "urn:ngm:class:gnu-general-public-license",
+        "label": "GNU General Public License"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

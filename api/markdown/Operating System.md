@@ -125,7 +125,7 @@ public:: true
         "label": "POSIX"
       },
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       }
     ],

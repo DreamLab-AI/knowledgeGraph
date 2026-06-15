@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:probabilistic-programming",
+  "title": "Probabilistic Programming",
+  "slug": "probabilistic-programming",
+  "public": true,
+  "classIri": "urn:ngm:class:probabilistic-programming",
+  "domain": "machine-learning",
+  "definition": "Probabilistic programming is a paradigm in which statistical models are expressed as programs that include random variables and conditioning statements, with inference performed automatically by the language runtime. It lets practitioners specify generative models declaratively while delegating the mechanics of Bayesian inference, such as sampling or variational optimisation, to the system. This separation of model specification from inference enables rapid iteration on complex probabilistic models across science and machine learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:statistical-modelling",
+        "label": "Statistical Modelling"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

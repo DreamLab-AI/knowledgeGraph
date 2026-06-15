@@ -1,0 +1,39 @@
+- ### Definition
+	- EVM compatibility lets a chain execute [[Smart Contract]] bytecode written for the [[EVM]], reusing the same account and gas model.
+	- It makes a network part of the [[Smart Contract Platform]] family that shares [[Ethereum]] tooling and standards.
+	- Compatible environments inherit [[Solidity]] contracts, wallets and indexers, dramatically reducing porting cost.
+- ### Overview
+	- The Ethereum Virtual Machine defines a stack-based instruction set that contracts compile to; compatibility means faithfully reproducing that machine.
+	- Chains range from fully equivalent (bytecode-identical) to merely compatible (same source language, slightly different runtime behaviour).
+	- Compatibility is the dominant strategy for [[Layer 2 Scaling]] solutions and alternative Layer-1s seeking developer adoption.
+	- It underpins composability across the [[Cross-Chain Bridge]] ecosystem by keeping execution semantics aligned.
+- ### Mechanisms
+	- Bytecode-level equivalence executes the exact opcode set so existing compiled contracts deploy unchanged.
+	- Language-level compatibility supports the same high-level languages while permitting a different underlying virtual machine.
+	- Precompiles and gas schedules are mirrored to preserve contract economics and cryptographic operations.
+	- Tooling parity (RPC API, wallet standards, indexers) ensures the developer experience transfers across chains.
+- ### Applications
+	- Layer-2 rollups such as [[Optimistic Rollup]] and [[zkSync]] inherit the contract base of mainnet.
+	- Alternative Layer-1 chains like [[BNB Chain]] attract applications by promising drop-in deployment.
+	- Scaling networks such as [[Arbitrum]] and [[Polygon]] reuse the entire Ethereum developer stack.
+	- Bridges and messaging layers like [[Connext]] route assets between compatible execution environments.
+- ### Relationships
+	- subClassOf:: [[Smart Contract Platform]]
+	- dependsOn:: [[EVM]]
+	- dependsOn:: [[Solidity]]
+	- enables:: [[Interoperability]]
+	- enables:: [[Cross-Chain Bridge]]
+	- enables:: [[Optimistic Rollup]]
+	- implements:: [[Smart Contract]]
+	- supports:: [[Layer 2 Scaling]]
+	- supports:: [[Rollup]]
+	- uses:: [[Ethereum]]
+	- relatedTo:: [[zkSync]]
+	- relatedTo:: [[Arbitrum]]
+	- relatedTo:: [[BNB Chain]]
+	- relatedTo:: [[Polygon]]
+	- relatedTo:: [[Connext]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

@@ -23,51 +23,134 @@ public:: true
   "definition": "Bitcoin is the first decentralised, permissionless, peer-to-peer electronic cash system, introduced by the pseudonymous Satoshi Nakamoto in a 2008 whitepaper and launched as open-source software in January 2009. It maintains a globally shared, tamper-evident ledger — the blockchain — through a proof-of-work consensus mechanism called Nakamoto Consensus, in which miners compete to extend the chain by finding nonces satisfying a difficulty-adjusted SHA-256 hash target, earning new bitcoin and transaction fees as reward. The monetary supply is strictly bounded by a 21 million coin cap enforced deterministically via a halving schedule that reduces the block subsidy approximately every four years, conferring programmatic scarcity and censorship-resistant value transfer without reliance on any trusted intermediary. Bitcoin's UTXO model, Script-based transaction authorisation, and secp256k1 elliptic-curve cryptography together form the foundational substrate upon which Lightning Network payment channels, Taproot smart contracting, and a growing ecosystem of Layer 2 protocols are built.",
   "domain": "blockchain",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:cryptocurrency", "label": "Cryptocurrency"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
   "sameAs": [
-    {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol", "label": "Bitcoin Proof-of-Work Protocol"}
+    {
+      "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol",
+      "label": "Bitcoin Proof-of-Work Protocol"
+    }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining", "label": "Bitcoin Mining"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-layer-2", "label": "Bitcoin Layer 2"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-halving", "label": "Bitcoin Halving"},
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script", "label": "Bitcoin Script"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-mining",
+        "label": "Bitcoin Mining"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-layer-2",
+        "label": "Bitcoin Layer 2"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-halving",
+        "label": "Bitcoin Halving"
+      },
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
+        "label": "Bitcoin Script"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof Of Work"},
-      {"@id": "urn:ngm:class:cryptographic-hash-function", "label": "Cryptographic Hash Function"},
-      {"@id": "urn:ngm:class:utxo-model", "label": "UTXO Model"},
-      {"@id": "urn:ngm:class:nakamoto-consensus", "label": "Nakamoto Consensus"},
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "@id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "@id": "urn:ngm:class:nakamoto-consensus",
+        "label": "Nakamoto Consensus"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:self-custody", "label": "Self-Custody"},
-      {"@id": "urn:ngm:class:censorship-resistance", "label": "Censorship Resistance"}
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "@id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:sound-money", "label": "Sound Money"},
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:sound-money",
+        "label": "Sound Money"
+      },
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:bitcoin-improvement-proposals", "label": "Bitcoin Improvement Proposals"},
-      {"@id": "urn:ngm:class:bip-341-taproot", "label": "BIP-341 Taproot"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-improvement-proposals",
+        "label": "Bitcoin Improvement Proposals"
+      },
+      {
+        "@id": "urn:ngm:class:bip-341-taproot",
+        "label": "BIP-341 Taproot"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ethereum-smart-contract-platform", "label": "Ethereum Smart Contract Platform"},
-      {"@id": "urn:ngm:class:solana", "label": "Solana"},
-      {"@id": "urn:ngm:class:digital-currency", "label": "Digital Currency"}
+      {
+        "@id": "urn:ngm:class:ethereum-smart-contract-platform",
+        "label": "Ethereum Smart Contract Platform"
+      },
+      {
+        "@id": "urn:ngm:class:solana",
+        "label": "Solana"
+      },
+      {
+        "@id": "urn:ngm:class:digital-currency",
+        "label": "Digital Currency"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:mining-pool", "label": "Mining Pool"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"}
+      {
+        "@id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:nostr", "label": "Nostr"},
-      {"@id": "urn:ngm:class:fedimint", "label": "Fedimint"}
+      {
+        "@id": "urn:ngm:class:nostr",
+        "label": "Nostr"
+      },
+      {
+        "@id": "urn:ngm:class:fedimint",
+        "label": "Fedimint"
+      }
     ]
   },
   "quality": 0.74,

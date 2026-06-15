@@ -96,7 +96,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:neurips",
+        "@id": "urn:ngm:class:neur-ips",
         "label": "NeurIPS"
       },
       {

@@ -143,7 +143,7 @@ public:: true
         "label": "Digital Twin"
       },
       {
-        "@id": "urn:ngm:class:5g-networks",
+        "@id": "urn:ngm:class:5-g-network",
         "label": "5G Networks"
       }
     ],

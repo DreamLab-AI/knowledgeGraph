@@ -105,7 +105,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:gs1-standards",
+        "@id": "urn:ngm:class:gs-1-standards",
         "label": "GS1 Standards"
       },
       {
@@ -139,11 +139,11 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:public-blockchain",
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier-blockchain",
         "label": "Public Blockchain"
       },
       {
-        "@id": "urn:ngm:class:centralized-database",
+        "@id": "urn:ngm:class:centralised-database",
         "label": "Centralised Database"
       }
     ],

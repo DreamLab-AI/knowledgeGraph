@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:hypervisor",
+  "title": "Hypervisor",
+  "slug": "hypervisor",
+  "public": true,
+  "classIri": "urn:ngm:class:hypervisor",
+  "domain": "infrastructure",
+  "definition": "A hypervisor, or virtual machine monitor, is system software that creates and runs virtual machines by abstracting and partitioning a host's physical CPU, memory, and I/O resources. Type 1 (bare-metal) hypervisors run directly on hardware, while Type 2 (hosted) hypervisors run atop a conventional operating system. By isolating multiple guest operating systems on shared hardware, the hypervisor is the foundational technology of server virtualisation and cloud computing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:virtualisation",
+      "label": "Virtualisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:multi-tenancy",
+        "label": "Multi-Tenancy"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:system-software",
+        "label": "System Software"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

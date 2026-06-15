@@ -138,7 +138,7 @@ public:: true
         "label": "Ray Tracing"
       },
       {
-        "@id": "urn:ngm:class:rasterisation",
+        "@id": "urn:ngm:class:rasterization",
         "label": "Rasterisation"
       }
     ],
@@ -148,7 +148,7 @@ public:: true
         "label": "Vulkan"
       },
       {
-        "@id": "urn:ngm:class:opengl",
+        "@id": "urn:ngm:class:open-gl",
         "label": "OpenGL"
       },
       {

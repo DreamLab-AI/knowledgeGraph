@@ -125,7 +125,7 @@ alias:: IEEE (Institute of Electrical and Electronics Engineers)
         "label": "ANSI"
       },
       {
-        "@id": "urn:ngm:class:3gpp",
+        "@id": "urn:ngm:class:3-gpp",
         "label": "3GPP"
       }
     ],

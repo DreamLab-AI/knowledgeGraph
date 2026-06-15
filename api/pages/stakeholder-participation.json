@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:stakeholder-participation",
+  "title": "Stakeholder Participation",
+  "slug": "stakeholder-participation",
+  "public": true,
+  "classIri": "urn:ngm:class:stakeholder-participation",
+  "domain": "governance",
+  "definition": "Stakeholder participation is the structured involvement of affected and interested parties in the deliberation, design, and decision-making processes that govern a system, organisation, or protocol. It encompasses mechanisms for consultation, representation, and shared authority that aim to surface diverse interests and confer legitimacy on collective decisions. In governance contexts it is a precondition for accountable, inclusive, and durable outcomes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stakeholder-engagement-in-ai",
+      "label": "Stakeholder Engagement in AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-consultation",
+        "label": "Public Consultation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:legitimacy",
+        "label": "Legitimacy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:legitimacy",
+        "label": "Legitimacy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-consultation",
+        "label": "Public Consultation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance-process",
+        "label": "Governance Process"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stakeholder-engagement-in-ai",
+        "label": "Stakeholder Engagement in AI"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

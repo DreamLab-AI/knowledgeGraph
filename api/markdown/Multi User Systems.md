@@ -134,7 +134,7 @@ alias:: Multi-User Systems, multi-user systems
         "label": "WebSocket"
       },
       {
-        "@id": "urn:ngm:class:webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       },
       {

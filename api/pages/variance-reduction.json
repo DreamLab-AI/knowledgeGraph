@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:variance-reduction",
+  "title": "Variance Reduction",
+  "slug": "variance-reduction",
+  "public": true,
+  "classIri": "urn:ngm:class:variance-reduction",
+  "domain": "machine-learning",
+  "definition": "Variance Reduction is a family of techniques that lower the statistical variance of Monte Carlo and stochastic estimators so that fewer samples are needed to reach a target accuracy. Methods such as importance sampling, control variates, antithetic variates, and stratification reshape how samples are drawn or combined without introducing bias. In machine learning, variance reduction stabilises gradient estimates in stochastic optimisation and accelerates convergence of simulation-based methods.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monte-carlo-integration",
+      "label": "Monte Carlo Integration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    }
+  ]
+}

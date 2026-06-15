@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:digital-inclusion",
+  "title": "Digital Inclusion",
+  "slug": "digital-inclusion",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-inclusion",
+  "domain": "governance",
+  "definition": "Digital Inclusion is the set of policies and practices that ensure all individuals and communities, especially the disadvantaged, have meaningful access to and the ability to use digital technologies. It addresses affordable connectivity, accessible devices and services, relevant skills and trustworthy content so that no group is left behind as services move online. Digital Inclusion is the constructive response to the digital divide and a precondition for equitable participation in modern civic and economic life.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:universal-access",
+        "label": "Universal Access"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:universal-access",
+        "label": "Universal Access"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:universal-access",
+        "label": "Universal Access"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-divide",
+        "label": "Digital Divide"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-divide",
+        "label": "Digital Divide"
+      },
+      {
+        "id": "urn:ngm:class:universal-access",
+        "label": "Universal Access"
+      },
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    }
+  ]
+}

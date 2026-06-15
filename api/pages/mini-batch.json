@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:mini-batch",
+  "title": "Mini-Batch",
+  "slug": "mini-batch",
+  "public": true,
+  "classIri": "urn:ngm:class:mini-batch",
+  "domain": "machine-learning",
+  "definition": "A mini-batch is a small, fixed-size subset of a training dataset processed together in a single forward and backward pass when training a machine learning model. Mini-batch gradient descent computes the gradient over the mini-batch rather than over a single example (stochastic) or the entire dataset (full batch), balancing the noise-reduction benefits of larger batches against the computational and memory cost. The mini-batch size is a key hyperparameter that influences convergence behaviour, gradient variance, hardware utilisation and generalisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimisation Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

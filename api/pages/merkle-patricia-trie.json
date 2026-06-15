@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:merkle-patricia-trie",
+  "title": "Merkle Patricia Trie",
+  "slug": "merkle-patricia-trie",
+  "public": true,
+  "classIri": "urn:ngm:class:merkle-patricia-trie",
+  "domain": "blockchain",
+  "definition": "A Merkle Patricia Trie is a cryptographically authenticated key-value data structure that combines a Patricia (radix) trie for compact prefix-keyed storage with Merkle hashing for tamper-evident integrity. Each node is referenced by the hash of its contents, so a single root hash commits to the entire dataset and any change propagates to the root. It is the data structure Ethereum uses to store account state, transactions, and receipts, enabling compact Merkle proofs of inclusion.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:merkle-tree",
+      "label": "Merkle Tree"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "Verification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:account-model",
+        "label": "Account Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:merkle-dag",
+        "label": "Merkle DAG"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:persistence",
+        "label": "Persistence"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

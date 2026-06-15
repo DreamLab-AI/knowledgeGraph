@@ -54,7 +54,7 @@ public:: true
         "label": "ECCV"
       },
       {
-        "@id": "urn:ngm:class:neurips",
+        "@id": "urn:ngm:class:neur-ips",
         "label": "NeurIPS"
       },
       {

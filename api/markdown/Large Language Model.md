@@ -78,7 +78,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {

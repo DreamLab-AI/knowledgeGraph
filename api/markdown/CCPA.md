@@ -131,7 +131,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:data-broker",
+        "@id": "urn:ngm:class:data-brokers",
         "label": "Data Broker"
       }
     ],

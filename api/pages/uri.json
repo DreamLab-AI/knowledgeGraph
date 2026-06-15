@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:uri",
+  "title": "URI",
+  "slug": "uri",
+  "public": true,
+  "classIri": "urn:ngm:class:uri",
+  "domain": "infrastructure",
+  "definition": "A URI (Uniform Resource Identifier) is a compact sequence of characters that uniquely identifies an abstract or physical resource on a network or within a namespace. It generalises both locators, which describe how to access a resource, and names, which identify a resource independently of access, under a single syntactic framework of scheme, authority, path, query and fragment. URIs are foundational to the architecture of the World Wide Web and the Semantic Web, where they serve as globally unique identifiers for documents, data and entities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:web-standard",
+      "label": "Web Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:persistent-identifier",
+        "label": "Persistent Identifier"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:did",
+        "label": "DID"
+      },
+      {
+        "id": "urn:ngm:class:solid",
+        "label": "Solid"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

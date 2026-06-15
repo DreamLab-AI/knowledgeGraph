@@ -136,7 +136,7 @@ public:: true
         "label": "Skeleton Animation"
       },
       {
-        "@id": "urn:ngm:class:materialx",
+        "@id": "urn:ngm:class:material-x",
         "label": "MaterialX"
       }
     ],

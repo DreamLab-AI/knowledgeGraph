@@ -110,7 +110,7 @@ public:: true
         "label": "Protocol and Consensus"
       },
       {
-        "@id": "urn:ngm:class:hotstuff",
+        "@id": "urn:ngm:class:hot-stuff",
         "label": "HotStuff"
       },
       {

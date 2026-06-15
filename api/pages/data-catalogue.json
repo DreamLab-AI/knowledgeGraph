@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:data-catalogue",
+  "title": "Data Catalogue",
+  "slug": "data-catalogue",
+  "public": true,
+  "classIri": "urn:ngm:class:data-catalogue",
+  "domain": "data",
+  "definition": "A data catalogue is a centralised, searchable inventory of an organisation's data assets enriched with metadata, descriptions, lineage and usage information. It helps users discover, understand, trust and govern data by linking technical metadata with business context and policies. Modern catalogues often automate metadata harvesting and use collaboration features to capture institutional knowledge.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:data-dictionary",
+        "label": "Data Dictionary"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dublin-core",
+        "label": "Dublin Core"
+      },
+      {
+        "id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-discovery",
+        "label": "Data Discovery"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

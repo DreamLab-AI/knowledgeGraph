@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:write-ahead-logging",
+  "title": "Write-Ahead Logging",
+  "slug": "write-ahead-logging",
+  "public": true,
+  "classIri": "urn:ngm:class:write-ahead-logging",
+  "domain": "infrastructure",
+  "definition": "Write-Ahead Logging (WAL) is a durability technique in which changes are recorded to a sequential append-only log before they are applied to the main data store. By guaranteeing that the log is flushed to stable storage before the corresponding pages are modified, the system can recover a consistent state after a crash by replaying or undoing logged operations. WAL is foundational to transactional databases, providing atomicity and durability without expensive synchronous writes to scattered data pages.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-persistence",
+      "label": "Data Persistence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "id": "urn:ngm:class:database-systems",
+        "label": "Database Systems"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

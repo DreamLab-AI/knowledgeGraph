@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:gpu-driver",
+  "title": "GPU Driver",
+  "slug": "gpu-driver",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu-driver",
+  "domain": "spatial-computing",
+  "definition": "A GPU driver is the system software that mediates between an operating system or application graphics API and the physical graphics processing unit, translating high-level rendering and compute commands into hardware-specific instructions. It manages GPU memory, command submission queues, context switching, and synchronisation, and exposes standard interfaces so that applications need not target individual hardware models. Driver quality and versioning directly affect performance, feature availability, and stability of graphics and GPU-compute workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-abstraction-layer",
+      "label": "Hardware Abstraction Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:render-pipeline",
+        "label": "Render Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      },
+      {
+        "id": "urn:ngm:class:open-gl",
+        "label": "OpenGL"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    }
+  ]
+}

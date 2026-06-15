@@ -86,7 +86,7 @@ public:: true
         "label": "Network Layer"
       },
       {
-        "@id": "urn:ngm:class:coap",
+        "@id": "urn:ngm:class:co-ap",
         "label": "CoAP"
       },
       {

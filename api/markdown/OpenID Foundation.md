@@ -135,7 +135,7 @@ public:: true
         "label": "Digital Wallet"
       },
       {
-        "@id": "urn:ngm:class:eidas",
+        "@id": "urn:ngm:class:e-idas",
         "label": "eIDAS"
       }
     ]

@@ -93,7 +93,7 @@ public:: true
         "label": "Access Control"
       },
       {
-        "@id": "urn:ngm:class:https",
+        "@id": "urn:ngm:class:http",
         "label": "HTTPS"
       }
     ],

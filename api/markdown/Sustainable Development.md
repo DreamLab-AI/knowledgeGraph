@@ -94,7 +94,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:sdgs",
+        "@id": "urn:ngm:class:sustainable-development-goals",
         "label": "Sustainable Development Goals"
       },
       {

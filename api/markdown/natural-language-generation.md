@@ -1,0 +1,34 @@
+- ### Definition
+- [[Natural Language Generation]] produces fluent human-readable text from data or prompts, forming the generative half of [[Natural Language Processing]]. Modern NLG is driven by the [[Large Language Model]] and the [[Transformer]] architecture, and it underpins [[Text Generation]] and [[Content Creation]].
+- ### Overview
+- Classical NLG pipelines were modular: a content-determination stage decided what to say, a sentence planner organised it, and a surface realiser produced grammatical text. These stages were largely rule-based or template-driven.
+- The neural era collapsed the pipeline into end-to-end sequence generation. Autoregressive models predict each next token conditioned on prior context, learning grammar, style, and world knowledge implicitly from large corpora.
+- NLG now spans short structured outputs, such as data-to-text reports, through open-ended long-form generation in assistants and creative tools.
+- ### Mechanisms
+- Autoregressive decoding: the model emits one token at a time, conditioning on all previously generated tokens.
+- Sampling strategies: temperature, top-k, and nucleus sampling trade off fluency against diversity.
+- Conditioning: prompts, retrieved context, or structured inputs steer the output, linking to [[Prompt Engineering]].
+- Evaluation: automatic metrics and human judgement assess fluency, faithfulness, and relevance.
+- ### Applications
+- Conversational assistants and the [[Chatbot]] and [[Dialogue System]] families.
+- Automated report and summary writing in [[Content Creation]] workflows.
+- Output generation for [[Machine Translation]] and code synthesis.
+- Creative writing, marketing copy, and data-to-text reporting.
+- ### Relationships
+- partOf:: [[Natural Language Processing]]
+- contrastsWith:: [[Natural Language Understanding]]
+- hasPart:: [[Text Generation]]
+- uses:: [[Large Language Model]]
+- uses:: [[Transformer]]
+- uses:: [[Language Model]]
+- enables:: [[Content Creation]]
+- enables:: [[Chatbot]]
+- enables:: [[Dialogue System]]
+- supports:: [[Machine Translation]]
+- requires:: [[Language Model]]
+- relatedTo:: [[Prompt Engineering]]
+- relatedTo:: [[GPT]]
+- dependsOn:: [[Transformer]]
+- bridgesTo:: [[Natural Language Understanding]]
+- ### Provenance
+- updated:: 2026-06-15

@@ -70,7 +70,7 @@ public:: true
         "label": "Tapscript"
       },
       {
-        "@id": "urn:ngm:class:musig2",
+        "@id": "urn:ngm:class:mu-sig-2",
         "label": "MuSig2"
       },
       {

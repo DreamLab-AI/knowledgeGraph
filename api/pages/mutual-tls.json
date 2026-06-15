@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:mutual-tls",
+  "title": "Mutual TLS",
+  "slug": "mutual-tls",
+  "public": true,
+  "classIri": "urn:ngm:class:mutual-tls",
+  "domain": "security",
+  "definition": "Mutual TLS is a configuration of the Transport Layer Security protocol in which both the client and the server present and verify X.509 certificates, establishing bidirectional authentication rather than authenticating only the server. Each party proves possession of the private key corresponding to its certificate, which a trusted certificate authority has signed. It is widely used to secure service-to-service communication in zero-trust architectures and microservice meshes. By binding identity to the transport channel, it prevents impersonation and unauthorised connections.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transport-layer-security",
+      "label": "Transport Layer Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:x509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:server-side-tls",
+        "label": "Server-Side TLS"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tls-handshake",
+        "label": "TLS Handshake"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

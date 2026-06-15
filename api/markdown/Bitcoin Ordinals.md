@@ -24,51 +24,131 @@ alias:: Bitcoin-Ordinals
   "definition": "Bitcoin Ordinals is a numbering scheme and inscription protocol that assigns a unique serial number to every individual satoshi on the Bitcoin network based on the order of its mining, enabling arbitrary content — text, images, code — to be embedded directly into Bitcoin transactions via the witness data introduced by SegWit and Taproot. Each inscription is permanently stored on-chain without requiring a separate token contract, making it a native non-fungible artefact within the Bitcoin base layer. The protocol was introduced by Casey Rodarmor in January 2023.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network", "label": "Bitcoin Network"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-network",
+      "label": "Bitcoin Network"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script", "label": "Bitcoin Script"},
-      {"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"},
-      {"@id": "urn:ngm:class:taproot", "label": "Taproot"},
-      {"@id": "urn:ngm:class:segwit", "label": "SegWit"},
-      {"@id": "urn:ngm:class:utxo", "label": "UTXO"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "@id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "@id": "urn:ngm:class:seg-wit",
+        "label": "SegWit"
+      },
+      {
+        "@id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core", "label": "Bitcoin Core"},
-      {"@id": "urn:ngm:class:proof-of-work", "label": "Proof of Work"},
-      {"@id": "urn:ngm:class:witness-data", "label": "Witness Data"}
+      {
+        "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "@id": "urn:ngm:class:witness-data",
+        "label": "Witness Data"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:inscription", "label": "Inscription"},
-      {"@id": "urn:ngm:class:brc-20", "label": "BRC-20"},
-      {"@id": "urn:ngm:class:satoshi", "label": "Satoshi"}
+      {
+        "@id": "urn:ngm:class:inscription",
+        "label": "Inscription"
+      },
+      {
+        "@id": "urn:ngm:class:brc-20",
+        "label": "BRC-20"
+      },
+      {
+        "@id": "urn:ngm:class:satoshi",
+        "label": "Satoshi"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:digital-ownership", "label": "Digital Ownership"},
-      {"@id": "urn:ngm:class:on-chain-storage", "label": "On-Chain Storage"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:digital-ownership",
+        "label": "Digital Ownership"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-storage",
+        "label": "On-Chain Storage"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:nft", "label": "NFT"},
-      {"@id": "urn:ngm:class:erc-721", "label": "ERC-721"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "@id": "urn:ngm:class:erc-721",
+        "label": "ERC-721"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:digital-art", "label": "Digital Art"},
-      {"@id": "urn:ngm:class:digital-asset", "label": "Digital Asset"},
-      {"@id": "urn:ngm:class:transaction-fee", "label": "Transaction Fee"},
-      {"@id": "urn:ngm:class:mining", "label": "Mining"}
+      {
+        "@id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "@id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:mining",
+        "label": "Mining"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:digital-collectible", "label": "Digital Collectible"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:digital-collectible",
+        "label": "Digital Collectible"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:ordinal-inscription", "label": "Ordinal Inscription"}
+    {
+      "@id": "urn:ngm:class:ordinal-inscription",
+      "label": "Ordinal Inscription"
+    }
   ],
   "quality": 0.72,
   "provenance": {

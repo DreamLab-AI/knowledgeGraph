@@ -1,0 +1,140 @@
+public:: true
+
+# DICOM
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:dicom",
+  "@type": "Page",
+  "title": "DICOM",
+  "vc:slug": "dicom",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:dicom",
+  "@type": "Class",
+  "label": "DICOM",
+  "definition": "DICOM (Digital Imaging and Communications in Medicine) is the international standard for storing, transmitting, and managing medical images and associated metadata. It defines both a file format that binds pixel data to rich patient, study, and acquisition attributes, and network services for exchanging images between modalities, archives, and viewing workstations. DICOM enables interoperability across radiology, cardiology, and other imaging-intensive specialities, and serves as the canonical data substrate for medical imaging artificial intelligence.",
+  "domain": "artificial-intelligence",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:interoperability-standard",
+      "label": "Interoperability Standard"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:medical-imaging-ai",
+        "label": "Medical Imaging AI"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:interoperability-framework",
+        "label": "Interoperability Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
+  },
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
+- ### Definition
+  - DICOM (Digital Imaging and Communications in Medicine) is the international standard for storing, transmitting, and managing medical images and associated metadata. It defines both a file format that binds pixel data to rich patient, study, and acquisition attributes, and network services for exchanging images between modalities, archives, and viewing workstations. DICOM enables interoperability across radiology, cardiology, and other imaging-intensive specialities, and serves as the canonical data substrate for medical imaging artificial intelligence.
+  - Related concepts: [[Interoperability Standard]] [[Medical Imaging]] [[Medical Imaging AI]] [[Interoperability]] [[Computer Vision]]
+- ### Overview
+  - DICOM unifies how medical imaging devices, archives, and software speak to one another. A DICOM object packages pixel data alongside structured metadata describing the patient, study, series, and acquisition parameters, while DICOM network services govern query, retrieval, and storage between picture-archiving systems and modalities. Because virtually all clinical imaging is captured and stored in DICOM, it is the foundational input format for [[Medical Imaging AI]] pipelines.
+- ### Key aspects
+  - Combined image-plus-metadata object model with rich attribute tags.
+  - Network services for store, query, and retrieve operations.
+  - Modality coverage spanning CT, MRI, ultrasound, and more.
+  - Patient-privacy considerations governed by [[Data Protection]] rules.
+  - Canonical input substrate for [[Medical Imaging AI]] workflows.
+- ### Applications
+  - Picture-archiving and communication systems in hospitals.
+  - Cross-vendor [[Medical Imaging]] interoperability.
+  - Training and inference data for [[Computer Vision]] diagnostic models.
+  - Teleradiology and remote reporting.
+- ### Relationships
+  - partOf:: [[Interoperability Standard]]
+  - standardizedBy:: [[Standards Body]]
+  - requires:: [[Interoperability]]
+  - enables:: [[Medical Imaging]]
+  - enables:: [[Medical Imaging AI]]
+  - supports:: [[Computer Vision]]
+  - supports:: [[Deep Learning]]
+  - uses:: [[Data Protection]]
+  - bridgesTo:: [[Interoperability Framework]]
+  - relatedTo:: [[Medical Imaging]]
+  - relatedTo:: [[Computer Vision]]
+  - relatedTo:: [[Interoperability]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

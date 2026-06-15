@@ -1,0 +1,34 @@
+- ### Definition
+  - An [[Append-Only Log]] is a [[Data Structure]] that enforces [[Immutability]] by allowing writes only at the tail, using a [[Cryptographic Hash]] chain to guarantee [[Data Integrity]].
+- ### Overview
+  - The append-only log treats history as a first-class, immutable artefact. Because records are never overwritten, the log doubles as both the system of record and a complete audit trail, and any consumer can rebuild derived state by replaying entries in order.
+  - This pattern recurs across databases, messaging systems and ledgers. Write-ahead logs guarantee durability; event-sourced systems treat the log as the canonical state; distributed ledgers and certificate-transparency logs add cryptographic linkage to make tampering detectable.
+- ### Key aspects
+  - Total ordering: every entry has a monotonic offset establishing an authoritative sequence.
+  - Tamper evidence: hash chaining or Merkle structures detect any retroactive alteration.
+  - Replayability: deterministic consumers reconstruct state from any starting offset.
+  - Retention: compaction or segment expiry bounds storage while preserving recent history.
+- ### Mechanisms
+  - New records are framed, optionally hash-linked to the previous entry, and fsynced to durable storage.
+  - Readers track an offset cursor and consume forward, enabling multiple independent consumers.
+  - Periodic checkpoints or snapshots accelerate recovery without discarding the log.
+- ### Applications
+  - Event sourcing, message brokers, blockchain ledgers, certificate transparency, database write-ahead logging and audit trails.
+- ### Relationships
+  - implements:: [[Immutability]]
+  - implements:: [[Event Sourcing]]
+  - uses:: [[Cryptographic Hash]]
+  - uses:: [[Hash Function]]
+  - requires:: [[Data Integrity]]
+  - enables:: [[Audit Log]]
+  - enables:: [[Certificate Transparency]]
+  - enables:: [[Non-Repudiation]]
+  - partOf:: [[Distributed Ledger]]
+  - relatedTo:: [[Merkle Tree]]
+  - relatedTo:: [[Blockchain Ledger]]
+  - supports:: [[Data Replication]]
+  - bridgesTo:: [[Blockchain]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - maturity:: mature

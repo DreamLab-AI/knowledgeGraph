@@ -95,7 +95,7 @@ public:: true
         "label": "Cross-Border Payments"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],

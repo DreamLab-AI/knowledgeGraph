@@ -117,7 +117,7 @@ public:: true
         "label": "PCIe Bus"
       },
       {
-        "@id": "urn:ngm:class:opengl",
+        "@id": "urn:ngm:class:open-gl",
         "label": "OpenGL"
       }
     ],

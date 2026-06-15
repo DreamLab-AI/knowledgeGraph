@@ -72,7 +72,7 @@ alias:: Cross Border Payments
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:remittance",
+        "@id": "urn:ngm:class:remittances",
         "label": "Remittance"
       },
       {
@@ -142,7 +142,7 @@ alias:: Cross Border Payments
         "label": "Consensus Mechanism"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ]

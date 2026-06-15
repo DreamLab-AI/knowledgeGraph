@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:open-policy-agent",
+  "title": "Open Policy Agent",
+  "slug": "open-policy-agent",
+  "public": true,
+  "classIri": "urn:ngm:class:open-policy-agent",
+  "domain": "security",
+  "definition": "Open Policy Agent (OPA) is an open-source, general-purpose policy engine that decouples authorisation and policy decisions from application code by evaluating declarative policies against structured input. Policies are written in its purpose-built language, Rego, and OPA returns decisions that calling services enforce. As a graduated Cloud Native Computing Foundation project, it is widely used to implement policy-as-code across Kubernetes admission control, microservice authorisation, and API gateways. OPA acts as a policy decision point, leaving enforcement to integrated policy enforcement points.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:policy-engine",
+      "label": "Policy Engine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:policy-enforcement-point",
+        "label": "Policy Enforcement Point"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:policy-as-code",
+        "label": "Policy as Code"
+      },
+      {
+        "id": "urn:ngm:class:policy-decision-point",
+        "label": "Policy Decision Point"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:security-policy",
+        "label": "Security Policy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:attribute-based-access-control",
+        "label": "Attribute-Based Access Control"
+      },
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    }
+  ]
+}

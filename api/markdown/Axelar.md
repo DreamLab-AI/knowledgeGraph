@@ -128,7 +128,7 @@ public:: true
         "label": "Chainlink CCIP"
       },
       {
-        "@id": "urn:ngm:class:layerzero",
+        "@id": "urn:ngm:class:layer-zero",
         "label": "LayerZero"
       }
     ],

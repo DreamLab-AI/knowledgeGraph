@@ -1,0 +1,38 @@
+- ### Definition
+	- Legitimacy is the quality that makes a form of [[Governance]] accepted as rightful by those it governs.
+	- It is built on [[Trust]], [[Transparency]] and a credible claim to represent the governed, not on force.
+	- Where legitimacy holds, rules are followed because they are seen as fair, reducing the need for enforcement.
+- ### Overview
+	- Political theory distinguishes input legitimacy (fair process and participation) from output legitimacy (effective results).
+	- Legitimacy can flow from consent, tradition, legal-rational procedure or charismatic authority.
+	- In digital and decentralised communities it determines which forks, upgrades or decisions the community will actually follow.
+	- It is fragile: perceived capture, opacity or unfairness can erode it faster than it accrues.
+- ### Key aspects
+	- Procedural legitimacy arises from transparent, inclusive and consistent decision processes.
+	- Performance legitimacy depends on delivering outcomes that stakeholders value.
+	- Representational legitimacy requires that affected parties have voice through [[Stakeholder Engagement]].
+	- Continuity legitimacy draws on precedent and the credible expectation that rules persist.
+- ### Applications
+	- Constitutional design and electoral systems that confer the right to rule.
+	- Standards bodies and [[Community Governance]] whose authority rests on voluntary adoption.
+	- Blockchain protocol upgrades where social consensus, not code alone, decides the canonical chain.
+	- Institutional reform programmes that seek to rebuild eroded public trust.
+- ### Relationships
+	- subClassOf:: [[Governance]]
+	- dependsOn:: [[Trust]]
+	- dependsOn:: [[Consensus]]
+	- dependsOn:: [[Transparency]]
+	- enables:: [[Stakeholder Engagement]]
+	- enables:: [[Governance Model]]
+	- requires:: [[Accountability]]
+	- requires:: [[Fairness]]
+	- supports:: [[Community Governance]]
+	- supports:: [[Decentralised Governance]]
+	- relatedTo:: [[Stakeholder Trust]]
+	- relatedTo:: [[Transparency]]
+	- relatedTo:: [[Accountability]]
+	- relatedTo:: [[Social Contract]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

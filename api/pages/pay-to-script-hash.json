@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:pay-to-script-hash",
+  "title": "Pay-to-Script-Hash",
+  "slug": "pay-to-script-hash",
+  "public": true,
+  "classIri": "urn:ngm:class:pay-to-script-hash",
+  "domain": "blockchain",
+  "definition": "Pay-to-Script-Hash (P2SH) is a Bitcoin transaction type, introduced in BIP 16, that locks funds to the hash of a redeem script rather than to a public key or full script. The spender must later provide both the original redeem script, whose hash matches the locking output, and the data that satisfies it. P2SH shifts the burden and storage cost of complex spending conditions from the sender to the recipient and underpins multi-signature and other advanced locking schemes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-script",
+      "label": "Bitcoin Script"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:script",
+        "label": "Script"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bip-16",
+        "label": "BIP 16"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pay-to-public-key-hash",
+        "label": "Pay-to-Public-Key-Hash"
+      },
+      {
+        "id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:script",
+        "label": "Script"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:bip-16",
+        "label": "BIP 16"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:address",
+        "label": "Address"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    }
+  ]
+}

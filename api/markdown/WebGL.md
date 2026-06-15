@@ -70,7 +70,7 @@ public:: true
         "label": "GLSL ES"
       },
       {
-        "@id": "urn:ngm:class:javascript",
+        "@id": "urn:ngm:class:java-script",
         "label": "JavaScript"
       }
     ],
@@ -114,7 +114,7 @@ public:: true
         "label": "Texture Mapping"
       },
       {
-        "@id": "urn:ngm:class:rasterisation",
+        "@id": "urn:ngm:class:rasterization",
         "label": "Rasterisation"
       }
     ],
@@ -162,7 +162,7 @@ public:: true
         "label": "Computer Graphics"
       },
       {
-        "@id": "urn:ngm:class:webassembly",
+        "@id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       }
     ]

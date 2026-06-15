@@ -124,7 +124,7 @@ public:: true
         "label": "Decentralised Finance"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {

@@ -36,7 +36,7 @@ public:: true
         "label": "ICML"
       },
       {
-        "@id": "urn:ngm:class:neurips",
+        "@id": "urn:ngm:class:neur-ips",
         "label": "NeurIPS"
       },
       {

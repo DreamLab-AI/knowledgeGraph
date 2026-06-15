@@ -56,7 +56,7 @@ public:: true
         "label": "Generative AI"
       },
       {
-        "@id": "urn:ngm:class:neurips",
+        "@id": "urn:ngm:class:neur-ips",
         "label": "NeurIPS"
       },
       {
@@ -122,7 +122,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:neurips",
+        "@id": "urn:ngm:class:neur-ips",
         "label": "NeurIPS"
       },
       {

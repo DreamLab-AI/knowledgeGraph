@@ -69,7 +69,7 @@ public:: true
         "label": "TCP/IP"
       },
       {
-        "@id": "urn:ngm:class:websockets",
+        "@id": "urn:ngm:class:web-sockets",
         "label": "WebSockets"
       },
       {
@@ -129,7 +129,7 @@ public:: true
         "label": "AMQP"
       },
       {
-        "@id": "urn:ngm:class:coap",
+        "@id": "urn:ngm:class:co-ap",
         "label": "CoAP"
       },
       {
@@ -139,7 +139,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:ros2",
+        "@id": "urn:ngm:class:ros-2",
         "label": "ROS 2"
       },
       {
@@ -153,7 +153,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:data-serialisation",
+        "@id": "urn:ngm:class:data-serialization",
         "label": "Data Serialisation"
       },
       {

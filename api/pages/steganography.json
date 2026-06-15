@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:steganography",
+  "title": "Steganography",
+  "slug": "steganography",
+  "public": true,
+  "classIri": "urn:ngm:class:steganography",
+  "domain": "security",
+  "definition": "Steganography is the practice of concealing the existence of a message by embedding it within an innocuous carrier such as an image, audio file or text, so that only the intended recipient is aware that hidden information is present. Unlike encryption, which scrambles content but leaves it visibly protected, steganography aims to make the very presence of communication undetectable. The two techniques are complementary and are often combined for layered confidentiality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:obfuscation",
+        "label": "Obfuscation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:obfuscation",
+        "label": "Obfuscation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    }
+  ]
+}

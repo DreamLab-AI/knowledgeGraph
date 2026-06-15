@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:inter-blockchain-communication",
+  "title": "Inter-Blockchain Communication",
+  "slug": "inter-blockchain-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:inter-blockchain-communication",
+  "domain": "blockchain",
+  "definition": "Inter-Blockchain Communication (IBC) is a standardised protocol that enables independent, sovereign blockchains to exchange data and transfer tokens trustlessly by verifying each other's consensus state. It defines transport, authentication and ordering semantics in which light clients on each chain verify the counterparty's headers, and relayers carry packets and acknowledgements between them. Originating in the Cosmos ecosystem, IBC provides a general-purpose interoperability layer for token transfers, cross-chain messaging and composable multi-chain applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cross-chain-interoperability",
+      "label": "Cross-Chain Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "id": "urn:ngm:class:polkadot",
+        "label": "Polkadot"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      },
+      {
+        "id": "urn:ngm:class:cosmos-sdk",
+        "label": "Cosmos SDK"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

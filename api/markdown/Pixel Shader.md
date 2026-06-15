@@ -99,7 +99,7 @@ public:: true
         "label": "Vertex Shader"
       },
       {
-        "@id": "urn:ngm:class:rasterisation",
+        "@id": "urn:ngm:class:rasterization",
         "label": "Rasterisation"
       },
       {

@@ -1,0 +1,38 @@
+- ### Definition
+  - Array of learnable [[Parameter]] values
+  - Core component of a [[Neural Network]]
+  - Applied via [[Matrix Multiplication]]
+  - Updated through [[Gradient Descent]]
+- ### Overview
+  - The weight matrix transforms an input activation vector into a higher- or lower-dimensional output space.
+  - Its dimensions are determined by the number of input and output units of the connected layers.
+  - Training adjusts the matrix entries so the network approximates the target mapping.
+- ### Mechanisms
+  - Initialisation strategies (Xavier, He, random)
+  - Forward pass: output = W x + b
+  - Gradient computation via [[Backpropagation]]
+  - Parameter update through optimiser steps
+  - Regularisation (weight decay, sparsity)
+- ### Applications
+  - Fully connected (dense) layers in deep networks
+  - Embedding lookup and projection layers
+  - Attention and transformer projection matrices
+  - Linear classifiers and regression heads
+- ### Relationships
+  - partOf:: [[Neural Network]]
+  - partOf:: [[Deep Learning]]
+  - partOf:: [[Machine Learning]]
+  - hasPart:: [[Parameter]]
+  - uses:: [[Matrix Multiplication]]
+  - uses:: [[Linear Algebra]]
+  - dependsOn:: [[Tensor]]
+  - dependsOn:: [[Loss Function]]
+  - enables:: [[Activation Function]]
+  - enables:: [[Inference]]
+  - requires:: [[Gradient Descent]]
+  - requires:: [[Training]]
+  - requires:: [[Optimisation]]
+  - relatedTo:: [[Backpropagation]]
+  - relatedTo:: [[Model Training]]
+- ### Provenance
+  - updated:: 2026-06-15

@@ -92,7 +92,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:5g-network",
+        "@id": "urn:ngm:class:5-g-network",
         "label": "5G Network"
       },
       {
@@ -130,11 +130,11 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:webxr",
+        "@id": "urn:ngm:class:web-xr",
         "label": "WebXR"
       },
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       }
     ],

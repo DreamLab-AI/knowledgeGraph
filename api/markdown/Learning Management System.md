@@ -118,7 +118,7 @@ public:: true
         "label": "Mobile Learning"
       },
       {
-        "@id": "urn:ngm:class:collaborative-learning",
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
         "label": "Collaborative Learning"
       }
     ],

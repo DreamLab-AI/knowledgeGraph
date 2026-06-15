@@ -45,49 +45,121 @@ elevatedFrom:: [[Projects]]
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:project-management", "label": "Project Management"},
-      {"@id": "urn:ngm:class:knowledge-graph-kanban-board", "label": "Knowledge Graph Kanban Board"},
-      {"@id": "urn:ngm:class:applied-ai-research-portfolio", "label": "Applied AI Research Portfolio"}
+      {
+        "@id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-kanban-board",
+        "label": "Knowledge Graph Kanban Board"
+      },
+      {
+        "@id": "urn:ngm:class:applied-ai-research-portfolio",
+        "label": "Applied AI Research Portfolio"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:knowledge-management-system", "label": "Knowledge Management System"}
+      {
+        "@id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:metadata-management", "label": "Metadata Management"},
-      {"@id": "urn:ngm:class:data-governance", "label": "Data Governance"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
+      {
+        "@id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "@id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:knowledge-management", "label": "Knowledge Management"},
-      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"},
-      {"@id": "urn:ngm:class:automated-planning", "label": "Automated Planning"}
+      {
+        "@id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:agile-software-development", "label": "Agile Software Development"},
-      {"@id": "urn:ngm:class:data-catalog", "label": "Data Catalog"},
-      {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"}
+      {
+        "@id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralised-agent-coordination-initiative", "label": "Decentralised Agent Coordination Initiative"},
-      {"@id": "urn:ngm:class:ai-augmented-research-tooling-suite", "label": "AI-Augmented Research Tooling Suite"}
+      {
+        "@id": "urn:ngm:class:decentralised-agent-coordination-initiative",
+        "label": "Decentralised Agent Coordination Initiative"
+      },
+      {
+        "@id": "urn:ngm:class:ai-augmented-research-tooling-suite",
+        "label": "AI-Augmented Research Tooling Suite"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:data-catalog", "label": "Data Catalog"},
-      {"@id": "urn:ngm:class:experiment-tracking", "label": "Experiment Tracking"}
+      {
+        "@id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      },
+      {
+        "@id": "urn:ngm:class:empirical-experimental-design-tracking",
+        "label": "Experiment Tracking"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:fair-data-principles", "label": "FAIR Data Principles"},
-      {"@id": "urn:ngm:class:open-data", "label": "Open Data"}
+      {
+        "@id": "urn:ngm:class:fair-data-principles",
+        "label": "FAIR Data Principles"
+      },
+      {
+        "@id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:collaboration-platform", "label": "Collaboration Platform"},
-      {"@id": "urn:ngm:class:knowledge-graph-publication-classifier", "label": "Knowledge Graph Publication Classifier"},
-      {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"}
+      {
+        "@id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-graph-publication-classifier",
+        "label": "Knowledge Graph Publication Classifier"
+      },
+      {
+        "@id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:research-project-catalogue", "label": "Research Project Catalogue"},
-    {"@id": "urn:ngm:class:active-project-index", "label": "Active Project Index"}
+    {
+      "@id": "urn:ngm:class:research-project-catalogue",
+      "label": "Research Project Catalogue"
+    },
+    {
+      "@id": "urn:ngm:class:active-project-index",
+      "label": "Active Project Index"
+    }
   ],
   "quality": 0.68,
   "provenance": {

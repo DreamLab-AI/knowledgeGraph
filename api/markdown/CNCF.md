@@ -86,7 +86,7 @@ public:: true
         "label": "Supply Chain Security"
       },
       {
-        "@id": "urn:ngm:class:webassembly",
+        "@id": "urn:ngm:class:web-assembly",
         "label": "WebAssembly"
       },
       {

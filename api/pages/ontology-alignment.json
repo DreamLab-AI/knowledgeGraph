@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:ontology-alignment",
+  "title": "Ontology Alignment",
+  "slug": "ontology-alignment",
+  "public": true,
+  "classIri": "urn:ngm:class:ontology-alignment",
+  "domain": "artificial-intelligence",
+  "definition": "Ontology alignment is the process of determining correspondences between the concepts, properties and relations of two or more separately developed ontologies. The output, an alignment or set of mappings, allows systems using different ontologies to interoperate by translating or relating their terms. Alignment is a core enabler of semantic interoperability across heterogeneous knowledge sources and is closely related to schema matching and entity resolution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ontology",
+      "label": "Ontology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:owl",
+        "label": "OWL"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    }
+  ]
+}

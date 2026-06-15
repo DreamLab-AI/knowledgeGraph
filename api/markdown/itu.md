@@ -1,0 +1,37 @@
+- ### Definition
+  - The International Telecommunication Union (ITU) is the United Nations specialised agency responsible for information and communication technologies, coordinating global use of the radio spectrum and satellite orbits, developing technical standards and working to expand connectivity worldwide. Through its sectors for radiocommunication, standardization and development it produces recommendations that underpin interoperable telecommunications infrastructure. It is one of the principal international bodies governing the global telecommunications system.
+  - Related concepts: [[Standards Body]] [[Telecommunications]] [[Spectrum Allocation]] [[Wireless Connectivity]] [[IETF]]
+- ### Overview
+  - The ITU operates through three sectors: ITU-R, which manages the international radio-frequency spectrum and satellite orbital slots; ITU-T, which produces telecommunications standards known as Recommendations; and ITU-D, which promotes equitable access and development. Its work coordinates spectrum across national borders, harmonises technical standards for networks and devices, and shapes policy that affects everything from mobile networks to satellite communications.
+- ### Key aspects
+  - Radiocommunication sector managing global spectrum and orbital resources
+  - Standardization sector producing ITU-T Recommendations
+  - Development sector advancing connectivity and digital inclusion
+  - World Radiocommunication Conferences setting binding spectrum rules
+  - Coordination with other standards bodies and member states
+- ### Applications
+  - International radio spectrum allocation and harmonisation
+  - Telecommunications interoperability standards
+  - Satellite orbital slot coordination
+  - Global connectivity and digital-divide initiatives
+  - Numbering, naming and signalling standards
+- ### Relationships
+  - subClassOf:: [[Standards Body]]
+  - partOf:: [[Standards Body]]
+  - standardizedBy:: [[Standards Body]]
+  - supports:: [[Telecommunications]]
+  - supports:: [[Wireless Connectivity]]
+  - enables:: [[Spectrum Allocation]]
+  - enables:: [[Satellite Communication]]
+  - relatedTo:: [[Network Protocol]]
+  - relatedTo:: [[IETF]]
+  - relatedTo:: [[ISO]]
+  - relatedTo:: [[IEEE]]
+  - relatedTo:: [[Internet of Things]]
+  - uses:: [[Network Infrastructure]]
+  - governs:: [[Telecommunications]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

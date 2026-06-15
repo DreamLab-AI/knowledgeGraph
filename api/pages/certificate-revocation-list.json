@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:certificate-revocation-list",
+  "title": "Certificate Revocation List",
+  "slug": "certificate-revocation-list",
+  "public": true,
+  "classIri": "urn:ngm:class:certificate-revocation-list",
+  "domain": "security",
+  "definition": "A Certificate Revocation List (CRL) is a digitally signed, periodically published list of digital certificates that a certificate authority has revoked before their scheduled expiry. Each entry records the serial number of a revoked certificate, the revocation date, and an optional reason code, allowing relying parties to reject certificates that are no longer trustworthy. CRLs are a core revocation mechanism of X.509 public key infrastructure, complemented or replaced in many deployments by the Online Certificate Status Protocol.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:revocation-registry",
+      "label": "Revocation Registry"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rfc-5280",
+        "label": "RFC 5280"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ocsp",
+        "label": "OCSP"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:x-509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptographic-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:certificate-transparency",
+        "label": "Certificate Transparency"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

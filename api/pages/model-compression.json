@@ -1,0 +1,119 @@
+{
+  "id": "urn:visionflow:page:model-compression",
+  "title": "Model Compression",
+  "slug": "model-compression",
+  "public": true,
+  "classIri": "urn:ngm:class:model-compression",
+  "domain": "machine-learning",
+  "definition": "Model compression is the family of techniques that reduce the size, memory footprint, and computational cost of a machine learning model while preserving as much of its predictive accuracy as possible. Common methods include quantisation of weights to lower precision, pruning of redundant parameters, knowledge distillation into a smaller student model, and weight sharing. Compression is essential for deploying large neural networks on resource-constrained hardware and for reducing inference latency and energy use.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-optimization",
+      "label": "Model Optimization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      },
+      {
+        "id": "urn:ngm:class:weight-sharing",
+        "label": "Weight Sharing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:efficient-inference",
+        "label": "Efficient Inference"
+      },
+      {
+        "id": "urn:ngm:class:latency-reduction",
+        "label": "Latency Reduction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:low-rank-adaptation",
+        "label": "Low-Rank Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Machine Learning Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      },
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-compression",
+      "label": "Data Compression"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

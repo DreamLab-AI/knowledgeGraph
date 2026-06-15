@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:validity-proof",
+  "title": "Validity Proof",
+  "slug": "validity-proof",
+  "public": true,
+  "classIri": "urn:ngm:class:validity-proof",
+  "domain": "blockchain",
+  "definition": "A validity proof is a cryptographic proof, typically a succinct zero-knowledge proof, that attests that a batch of state transitions was computed correctly according to the rules of a system. In layer-2 rollups it allows a base chain to accept a compressed state update after verifying a single proof, without re-executing the underlying transactions. Validity proofs give immediate, trustless finality in contrast to optimistic schemes that rely on fraud challenges.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-proof-system",
+      "label": "Cryptographic Proof System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "zk-SNARK"
+      },
+      {
+        "id": "urn:ngm:class:zk-stark",
+        "label": "zk-STARK"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fraud-proof",
+        "label": "Fraud Proof"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "ZK-Rollup"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer-2 Scaling"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zksync",
+        "label": "zkSync"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

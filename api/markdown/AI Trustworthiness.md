@@ -162,7 +162,7 @@ public:: true
         "label": "ISO/IEC TR 24028"
       },
       {
-        "@id": "urn:ngm:class:ieee-p7009",
+        "@id": "urn:ngm:class:ieee-p-7009",
         "label": "IEEE P7009"
       }
     ],

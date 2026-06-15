@@ -273,7 +273,7 @@ alias:: BC-0441-provenance-tracking
         "label": "EPCIS"
       },
       {
-        "@id": "urn:ngm:class:gs1-standards",
+        "@id": "urn:ngm:class:gs-1-standards",
         "label": "GS1 Standards"
       },
       {

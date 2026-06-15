@@ -1,0 +1,39 @@
+- ### Definition
+  - Smart city infrastructure is the networked physical and digital substrate that enables a city to sense, communicate and respond to conditions in real time, integrating sensors, connectivity, edge and cloud computing, and data platforms across municipal systems. It underpins applications such as intelligent transport, smart grids, environmental monitoring and public-safety services by fusing data from distributed devices into analytics and control loops. The infrastructure couples Internet-of-Things endpoints with high-bandwidth networks and analytical platforms to improve efficiency, resilience and sustainability of urban services.
+  - Related core concepts: [[Smart City]] [[Internet of Things]] [[Edge Computing]] [[Digital Twin]]
+- ### Overview
+  - Smart city infrastructure layers sensing, connectivity, computation and data platforms over traditional urban systems such as transport, energy and water.
+  - Internet-of-Things endpoints feed telemetry into edge and cloud tiers where it is fused, analysed and acted upon in near real time.
+  - Open data platforms and interoperability standards let multiple municipal services share a common digital backbone.
+- ### Key aspects
+  - Sensing layer: distributed sensors and meters capture conditions across the urban environment.
+  - Connectivity layer: wireless and fixed networks carry telemetry with low latency and high reliability.
+  - Compute layer: edge nodes handle latency-sensitive processing while cloud platforms perform large-scale analytics.
+  - Resilience and sustainability: control loops optimise energy, mobility and emissions while improving service continuity.
+- ### Applications
+  - Intelligent transport and adaptive traffic management.
+  - Smart grids and demand-responsive energy distribution.
+  - Environmental and air-quality monitoring.
+  - Public-safety, lighting and waste-management optimisation.
+- ### Relationships
+  - hasPart:: [[Sensor]]
+  - hasPart:: [[Internet of Things]]
+  - hasPart:: [[Edge Computing]]
+  - hasPart:: [[Smart Grid]]
+  - partOf:: [[Smart City]]
+  - requires:: [[Cloud Computing]]
+  - enables:: [[Autonomous Vehicle]]
+  - enables:: [[Real-Time Analytics]]
+  - enables:: [[Sustainability]]
+  - uses:: [[Predictive Analytics]]
+  - uses:: [[Network Transport]]
+  - supports:: [[Digital Twin]]
+  - supports:: [[Energy Management]]
+  - supports:: [[Environmental Monitoring]]
+  - relatedTo:: [[Infrastructure]]
+  - relatedTo:: [[Edge AI for Smart Cities]]
+  - relatedTo:: [[Building Automation]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - attributedTo:: did:nostr:ontology-mesh

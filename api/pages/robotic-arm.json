@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:robotic-arm",
+  "title": "Robotic Arm",
+  "slug": "robotic-arm",
+  "public": true,
+  "classIri": "urn:ngm:class:robotic-arm",
+  "domain": "robotics",
+  "definition": "A robotic arm is a programmable mechanical manipulator, typically composed of rigid links connected by actuated joints, that positions and orients an end-effector within a workspace. Its degrees of freedom allow it to reach and manipulate objects under the control of motion-planning and kinematics algorithms. Robotic arms range from industrial units performing repetitive high-precision tasks to collaborative arms designed to work safely alongside people. They are a foundational platform across manufacturing, surgery, logistics and research.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:manipulator",
+      "label": "Manipulator"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End-Effector"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:degrees-of-freedom",
+        "label": "Degrees of Freedom"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:grasping",
+        "label": "Grasping"
+      },
+      {
+        "id": "urn:ngm:class:pick-and-place",
+        "label": "Pick and Place"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:manufacturing-automation",
+        "label": "Manufacturing Automation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:industrial-robot",
+        "label": "Industrial Robot"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ]
+}

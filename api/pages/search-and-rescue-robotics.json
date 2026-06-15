@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:search-and-rescue-robotics",
+  "title": "Search and Rescue Robotics",
+  "slug": "search-and-rescue-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:search-and-rescue-robotics",
+  "domain": "robotics",
+  "definition": "Search and rescue robotics is the application of robotic systems to locate, assess and assist victims in disaster and emergency environments that are dangerous or inaccessible to human responders. These robots traverse rubble, water and confined spaces, carrying sensors to detect survivors and relay situational awareness to rescue teams. By extending responders' reach into hazardous zones, they reduce risk to human life while accelerating victim location.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:situational-awareness",
+        "label": "Situational Awareness"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:mobile-robotics",
+        "label": "Mobile Robotics"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rescue-robot",
+        "label": "Rescue Robot"
+      },
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

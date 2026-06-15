@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:user-generated-content",
+  "title": "User-Generated Content",
+  "slug": "user-generated-content",
+  "public": true,
+  "classIri": "urn:ngm:class:user-generated-content",
+  "domain": "spatial-computing",
+  "definition": "User-generated content (UGC) is media and information created and published by the users of a platform rather than by its operators or professional producers. It encompasses text, images, video, 3D assets, reviews, and virtual-world artefacts contributed by a community. UGC drives engagement and network effects on social and metaverse platforms while creating moderation, rights, and quality-control obligations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-content",
+      "label": "Digital Content"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:community",
+        "label": "Community"
+      },
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    },
+    {
+      "slug": "virtual-labor",
+      "label": "Virtual Labor"
+    }
+  ]
+}

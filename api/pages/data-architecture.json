@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:data-architecture",
+  "title": "Data Architecture",
+  "slug": "data-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:data-architecture",
+  "domain": "data",
+  "definition": "Data architecture is the discipline of designing the structures, standards, models and integration patterns that govern how an organisation collects, stores, transforms, moves and consumes data. It defines logical and physical data models, storage technologies, data flows, master data strategies and the policies that ensure consistency, quality and security across systems. As a component of enterprise architecture, it provides the blueprint that aligns data assets with business and analytical requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:enterprise-architecture",
+      "label": "Enterprise Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

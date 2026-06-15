@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:russell-group",
+  "title": "Russell Group",
+  "slug": "russell-group",
+  "public": true,
+  "classIri": "urn:ngm:class:russell-group",
+  "domain": "ai",
+  "definition": "The Russell Group is a self-selecting association of leading research-intensive universities in the United Kingdom that advocates collectively on research funding, policy, and higher-education strategy. Its members are characterised by substantial research output, strong postgraduate provision, and extensive industry and international links. Membership is frequently used as a shorthand for institutions with high research standing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:education",
+      "label": "Education"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:education",
+        "label": "Education"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:education",
+        "label": "Education"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:education",
+        "label": "Education"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

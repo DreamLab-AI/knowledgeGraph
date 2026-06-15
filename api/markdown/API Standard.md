@@ -144,7 +144,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:openapi-specification",
+        "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Specification"
       },
       {
@@ -178,7 +178,7 @@ public:: true
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       },
       {

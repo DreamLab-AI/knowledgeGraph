@@ -160,7 +160,7 @@ alias:: SensorData
         "label": "Edge Computing"
       },
       {
-        "@id": "urn:ngm:class:iot",
+        "@id": "urn:ngm:class:io-t",
         "label": "Internet of Things"
       }
     ],

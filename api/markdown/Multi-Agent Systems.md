@@ -150,7 +150,7 @@ alias:: Multi Agent Systems
         "label": "Decentralised Autonomous Organisations"
       },
       {
-        "@id": "urn:ngm:class:digital-twins",
+        "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twins"
       }
     ],

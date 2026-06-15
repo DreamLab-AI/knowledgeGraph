@@ -1,0 +1,45 @@
+- ### Definition
+  - [[Model Monitoring]] is the continuous observation of a deployed model's inputs, outputs, and performance, a core [[MLOps]] practice.
+  - It detects degradation, data drift, and concept drift against baselines.
+  - It builds on general [[Observability]] applied to model behaviour.
+  - It triggers alerts and feeds the [[Feedback Loop]] toward retraining.
+- ### Overview
+  - Once a model is in production via [[Model Deployment]], its accuracy can silently decay as the world changes.
+  - Monitoring tracks live predictions, input distributions, and quality metrics over time.
+  - Drift in inputs or in the input-output relationship signals that the model may no longer be valid.
+  - Detected issues route to alerting, investigation, and [[Model Training]] for refresh.
+- ### Mechanisms
+  - Tracking prediction quality where ground truth becomes available.
+  - Data and concept drift detection comparing live distributions to training baselines.
+  - Operational metrics: latency, throughput, error rates, and resource use.
+  - [[Anomaly Detection]] over feature and output streams to surface outliers.
+- ### Key aspects
+  - Drift: distributional shift in inputs or labels degrading performance.
+  - Ground-truth lag: delayed labels complicate quality measurement.
+  - Baselines: training-time references against which production is judged.
+  - Closed loop: connecting detection to retraining and redeployment.
+- ### Applications
+  - Production ML in fraud, recommendation, and risk scoring.
+  - Regulated domains requiring auditable model performance.
+  - Automated retraining triggers in continuous-delivery pipelines.
+  - Governance reporting drawing on the [[Model Registry]].
+- ### Relationships
+  - hasPart:: [[Anomaly Detection]]
+  - uses:: [[Observability]]
+  - uses:: [[Anomaly Detection]]
+  - enables:: [[Model Evaluation]]
+  - enables:: [[Feedback Loop]]
+  - requires:: [[Model Deployment]]
+  - requires:: [[Model Inference]]
+  - supports:: [[Model Training]]
+  - supports:: [[Model Registry]]
+  - dependsOn:: [[Data Quality]]
+  - partOf:: [[MLOps]]
+  - contrastsWith:: [[Model Evaluation]]
+  - relatedTo:: [[Observability]]
+  - relatedTo:: [[Model Serving]]
+  - relatedTo:: [[Machine Learning]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - quality:: 0.62

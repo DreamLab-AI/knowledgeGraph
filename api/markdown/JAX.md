@@ -137,7 +137,7 @@ public:: true
         "label": "PyTorch"
       },
       {
-        "@id": "urn:ngm:class:tensorflow",
+        "@id": "urn:ngm:class:tensor-flow",
         "label": "TensorFlow"
       }
     ],

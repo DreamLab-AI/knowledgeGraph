@@ -73,7 +73,7 @@ public:: true
         "label": "Windows Operating System"
       },
       {
-        "@id": "urn:ngm:class:github",
+        "@id": "urn:ngm:class:git-hub",
         "label": "GitHub"
       }
     ],

@@ -1,0 +1,39 @@
+- ### Definition
+  - A black-box model is a predictive system whose internal decision logic is opaque or too complex for a human to inspect directly, so it can only be understood through its inputs and outputs. Many high-performing machine-learning systems, such as deep neural networks and large ensembles, are black-box in nature, trading interpretability for accuracy. This opacity motivates post-hoc explanation techniques and contrasts with inherently interpretable white-box models where the reasoning is transparent.
+  - Related concepts: [[Model Interpretability]] [[Explainable AI]] [[Deep Learning]] [[Neural Network]] [[Model Transparency]]
+- ### Overview
+  - A black-box model can be queried for outputs but offers little visibility into how those outputs are produced.
+  - High-capacity learners such as deep networks and large ensembles typically fall into this category.
+  - Their opacity raises concerns around trust, accountability and regulatory acceptance.
+- ### Key aspects
+  - Predictive power often comes at the cost of human-understandable internal logic.
+  - Post-hoc explanation methods approximate the model's behaviour after the fact.
+  - Opacity complicates debugging, auditing and bias detection.
+  - It stands in contrast to inherently interpretable white-box models.
+- ### Applications
+  - Deep [[Neural Network]] systems used for vision and language tasks.
+  - Explanation via [[SHAP]] and [[LIME]] to recover [[Feature Importance]].
+  - [[Explainable AI]] programmes targeting [[Model Transparency]].
+  - Governance reviews assessing [[Bias]], [[Fairness]] and [[Accountability]].
+- ### Relationships
+  - subClassOf:: [[Model Interpretability]]
+  - contrastsWith:: [[Explainable AI]]
+  - contrastsWith:: [[Interpretability]]
+  - contrastsWith:: [[Model Transparency]]
+  - requires:: [[Explainable AI]]
+  - requires:: [[Model Interpretability]]
+  - relatedTo:: [[Deep Learning]]
+  - relatedTo:: [[Neural Network]]
+  - relatedTo:: [[Feature Importance]]
+  - relatedTo:: [[Explainability]]
+  - relatedTo:: [[Bias]]
+  - relatedTo:: [[Fairness]]
+  - bridgesTo:: [[SHAP]]
+  - bridgesTo:: [[LIME]]
+  - dependsOn:: [[Trust]]
+  - dependsOn:: [[Accountability]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

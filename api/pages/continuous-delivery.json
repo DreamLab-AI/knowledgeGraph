@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:continuous-delivery",
+  "title": "Continuous Delivery",
+  "slug": "continuous-delivery",
+  "public": true,
+  "classIri": "urn:ngm:class:continuous-delivery",
+  "domain": "infrastructure",
+  "definition": "Continuous Delivery is a software engineering discipline in which code changes are automatically built, tested and prepared for release to production so that the software is always in a deployable state. It extends continuous integration by adding automated release pipelines, environment promotion and deployment gates, allowing teams to ship changes rapidly, reliably and with low risk. Releases become routine, low-ceremony events rather than infrequent high-stakes operations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:devops",
+      "label": "DevOps"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:testing",
+        "label": "Testing"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

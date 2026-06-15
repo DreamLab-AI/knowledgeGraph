@@ -70,7 +70,7 @@ public:: true
         "label": "XML Schema Definition"
       },
       {
-        "@id": "urn:ngm:class:protocol-buffers",
+        "@id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffers"
       }
     ],
@@ -122,7 +122,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       },
       {

@@ -1,0 +1,44 @@
+- ### Definition
+	- Open Banking is a framework that lets authorised third parties access [[Banking]] data and initiate payments via secure [[REST API]]s under customer consent.
+	- It is a sub-discipline of [[Financial Services]] and a key enabler of modern [[FinTech]].
+	- Control of [[Data Privacy]] shifts to the account holder, who grants revocable permissions through [[Consent Management]].
+- ### Overview
+	- Open Banking emerged from regulatory mandates designed to break the data monopoly of incumbent banks and stimulate competition.
+	- The EU Revised Payment Services Directive (PSD2) and the UK Open Banking Standard are the canonical regimes, each defining authorisation, security, and data-sharing obligations.
+	- Banks expose standardised programmatic interfaces; licensed Account Information Service Providers and Payment Initiation Service Providers consume them.
+	- The architecture decouples the service layer from the data layer, allowing aggregators and budgeting tools to operate across multiple institutions.
+- ### Key aspects
+	- Strong Customer Authentication binds every sensitive action to a verified identity, typically via multi-factor methods.
+	- Consent is explicit, scoped, time-limited, and auditable, with the holder able to revoke access at any time.
+	- API standardisation ensures that a third party can integrate once and reach many banks consistently.
+	- Liability and dispute-resolution rules are defined by the governing regulator rather than bilateral contracts.
+- ### Applications
+	- Account aggregation dashboards that consolidate balances across providers.
+	- Payment initiation that bypasses card networks for lower-cost transfers.
+	- Affordability and credit-decisioning tools that read transaction history with consent.
+	- Embedded finance, where non-bank platforms offer banking features through licensed partners.
+- ### Relationships
+	- subClassOf:: [[Financial Services]]
+	- hasPart:: [[Consent Management]]
+	- hasPart:: [[API Gateway]]
+	- hasPart:: [[Payment Processing]]
+	- partOf:: [[Financial System]]
+	- requires:: [[Authentication]]
+	- requires:: [[Digital Identity]]
+	- requires:: [[Regulatory Compliance]]
+	- enables:: [[FinTech]]
+	- enables:: [[Financial Inclusion]]
+	- enables:: [[Data Sharing]]
+	- dependsOn:: [[Financial Regulation]]
+	- uses:: [[OAuth]]
+	- uses:: [[REST API]]
+	- uses:: [[API Standard]]
+	- supports:: [[Interoperability]]
+	- supports:: [[Data Privacy]]
+	- bridgesTo:: [[Decentralised Finance]]
+	- relatedTo:: [[GDPR]]
+	- relatedTo:: [[Banking]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

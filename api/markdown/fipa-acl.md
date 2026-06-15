@@ -1,0 +1,32 @@
+- ### Definition
+	- [[FIPA ACL]] is the standard [[Agent Communication Language]] for [[Inter-Agent Communication]], defining message structure and a set of communicative acts.
+	- It lets agents in a [[Multi-Agent System]] exchange [[Ontology]]-grounded content with explicit intent.
+- ### Overview
+	- Defined by the Foundation for Intelligent Physical Agents (now an IEEE standards committee), FIPA ACL standardises how agents talk to each other regardless of their internal architecture.
+	- A message is a structured object whose outer layer carries a performative (the communicative act) and whose inner content is expressed in a chosen content language interpreted against a shared ontology.
+	- It is rooted in speech-act theory: every message is an action that aims to change the receiver's mental state or trigger a response.
+- ### Key aspects
+	- Performatives include inform, request, query-if, propose, accept-proposal, reject-proposal, cfp (call for proposals), and failure.
+	- Standard parameters: sender, receiver, reply-to, content, language, encoding, ontology, protocol, conversation-id.
+	- Interaction protocols (e.g. Contract Net, request-response) compose individual messages into structured conversations.
+- ### Applications
+	- Negotiation and task allocation among autonomous agents.
+	- Coordination in distributed problem-solving and marketplace agents.
+	- Interoperability between agent platforms such as JADE.
+- ### Relationships
+	- implements:: [[Communication Protocol]]
+	- implements:: [[Inter-Agent Communication]]
+	- uses:: [[Ontology]]
+	- uses:: [[Agent-to-Agent Protocol]]
+	- partOf:: [[Multi-Agent System]]
+	- enables:: [[Multi-Agent Coordination]]
+	- enables:: [[Interoperability]]
+	- supports:: [[Autonomous Agent]]
+	- supports:: [[Agent]]
+	- standardizedBy:: [[Standards]]
+	- relatedTo:: [[Agent Communication Language]]
+	- relatedTo:: [[Communication Protocol]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

@@ -142,7 +142,7 @@ public:: true
         "label": "Stablecoin"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],

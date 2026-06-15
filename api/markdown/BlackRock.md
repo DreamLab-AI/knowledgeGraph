@@ -119,7 +119,7 @@ public:: true
         "label": "Bitcoin ETF"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {

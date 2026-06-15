@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:corporate-sustainability-reporting",
+  "title": "Corporate Sustainability Reporting",
+  "slug": "corporate-sustainability-reporting",
+  "public": true,
+  "classIri": "urn:ngm:class:corporate-sustainability-reporting",
+  "domain": "governance",
+  "definition": "Corporate sustainability reporting is the structured disclosure by an organisation of its environmental, social, and governance (ESG) performance, impacts, risks, and opportunities, typically published alongside or integrated within financial reporting. It translates non-financial activity \u2014 emissions, resource use, workforce conditions, supply-chain practices, and governance arrangements \u2014 into standardised, often externally assured metrics intended for investors, regulators, and other stakeholders. Modern regimes increasingly mandate disclosure under frameworks such as the EU Corporate Sustainability Reporting Directive (CSRD) and the ISSB's IFRS S1/S2 standards, shifting reporting from voluntary marketing toward audited, decision-useful information.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability-reporting",
+      "label": "Sustainability Reporting"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:double-materiality",
+        "label": "Double Materiality"
+      },
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:greenhouse-gas-protocol",
+        "label": "Greenhouse Gas Protocol"
+      },
+      {
+        "id": "urn:ngm:class:third-party-verification",
+        "label": "Third Party Verification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:esg-investing",
+        "label": "ESG Investing"
+      },
+      {
+        "id": "urn:ngm:class:net-zero-targets",
+        "label": "Net Zero Targets"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:issb",
+        "label": "ISSB"
+      },
+      {
+        "id": "urn:ngm:class:eu-taxonomy",
+        "label": "EU Taxonomy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:greenwashing",
+        "label": "Greenwashing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    }
+  ]
+}

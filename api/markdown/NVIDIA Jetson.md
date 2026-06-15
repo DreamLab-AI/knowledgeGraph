@@ -98,7 +98,7 @@ public:: true
         "label": "CUDA"
       },
       {
-        "@id": "urn:ngm:class:tensorrt",
+        "@id": "urn:ngm:class:tensor-rt",
         "label": "TensorRT"
       }
     ],

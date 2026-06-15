@@ -1,0 +1,119 @@
+{
+  "id": "urn:visionflow:page:voice-user-interface",
+  "title": "Voice User Interface",
+  "slug": "voice-user-interface",
+  "public": true,
+  "classIri": "urn:ngm:class:voice-user-interface",
+  "domain": "artificial-intelligence",
+  "definition": "A Voice User Interface (VUI) is a human-computer interaction modality in which users issue commands and receive responses through spoken language rather than visual controls. It chains automatic speech recognition, natural-language understanding, dialogue management and speech synthesis to turn utterances into actions and synthesised replies. VUIs power virtual assistants, in-car systems and accessibility tools where hands-free or eyes-free operation is valuable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-interface",
+      "label": "User Interface"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:speech-synthesis",
+        "label": "Speech Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chatbot",
+        "label": "Chatbot"
+      },
+      {
+        "id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

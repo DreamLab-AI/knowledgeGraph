@@ -43,7 +43,7 @@ public:: true
         "label": "HTTP"
       },
       {
-        "@id": "urn:ngm:class:openapi-specification",
+        "@id": "urn:ngm:class:open-api-specification",
         "label": "OpenAPI Specification"
       },
       {
@@ -79,7 +79,7 @@ public:: true
         "label": "XML"
       },
       {
-        "@id": "urn:ngm:class:oauth2",
+        "@id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth 2.0"
       },
       {
@@ -95,11 +95,11 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:graphql",
+        "@id": "urn:ngm:class:graph-ql",
         "label": "GraphQL"
       },
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       },
       {

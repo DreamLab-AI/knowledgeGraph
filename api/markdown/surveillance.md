@@ -1,0 +1,37 @@
+- ### Definition
+  - [[Monitoring]] of people and activities
+  - Tension with [[Privacy]] and [[Civil Liberties]]
+  - Use of [[Facial Recognition]] technology
+  - Governed by [[Data Governance]] frameworks
+- ### Overview
+  - Surveillance ranges from targeted, warrant-based investigation to mass, indiscriminate data collection.
+  - It is conducted across physical spaces (cameras, sensors) and digital channels (communications interception, metadata).
+  - Effective oversight, legal authorisation and accountability mechanisms are central to legitimate surveillance.
+- ### Key aspects
+  - Targeted versus mass surveillance distinctions
+  - Legal authorisation and judicial oversight
+  - Proportionality and necessity tests
+  - Data retention and minimisation requirements
+  - Chilling effects on free expression and assembly
+- ### Applications
+  - National security and counter-terrorism operations
+  - Law enforcement criminal investigations
+  - Workplace and corporate monitoring
+  - Public space safety and crowd management
+- ### Relationships
+  - enables:: [[Monitoring]]
+  - enables:: [[Observability]]
+  - enables:: [[Data Collection]]
+  - uses:: [[Facial Recognition]]
+  - contrastsWith:: [[Privacy]]
+  - contrastsWith:: [[Data Privacy]]
+  - contrastsWith:: [[Privacy-Enhancing Technology]]
+  - relatedTo:: [[Civil Liberties]]
+  - relatedTo:: [[Data Governance]]
+  - relatedTo:: [[Ethics]]
+  - requires:: [[Governance]]
+  - requires:: [[Accountability]]
+  - requires:: [[Transparency]]
+  - supports:: [[Security]]
+- ### Provenance
+  - updated:: 2026-06-15

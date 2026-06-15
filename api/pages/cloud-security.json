@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:cloud-security",
+  "title": "Cloud Security",
+  "slug": "cloud-security",
+  "public": true,
+  "classIri": "urn:ngm:class:cloud-security",
+  "domain": "security",
+  "definition": "Cloud security is the discipline of protecting data, applications, identities and infrastructure hosted in cloud computing environments against unauthorised access, misconfiguration, data loss and service disruption. It applies controls across the shared-responsibility boundary between cloud providers and customers, spanning identity and access management, encryption, network segmentation, configuration governance and continuous monitoring. Cloud security extends established information-security principles to elastic, multi-tenant and API-driven platforms where infrastructure is provisioned programmatically.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "id": "urn:ngm:class:data-loss-prevention",
+        "label": "Data Loss Prevention"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security-architecture",
+        "label": "Security Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

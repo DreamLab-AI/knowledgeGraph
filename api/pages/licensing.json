@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:licensing",
+  "title": "Licensing",
+  "slug": "licensing",
+  "public": true,
+  "classIri": "urn:ngm:class:licensing",
+  "domain": "governance",
+  "definition": "Licensing is the legal mechanism by which the holder of a right, such as a copyright, patent, trademark, or regulatory permission, grants another party permission to use it under specified terms. A licence defines the scope, duration, territory, and conditions of permitted use without transferring ownership of the underlying asset. In software and data, licensing governs how code, models, and datasets may be copied, modified, redistributed, and commercialised.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:creative-commons",
+        "label": "Creative Commons"
+      },
+      {
+        "id": "urn:ngm:class:terms-of-service",
+        "label": "Terms of Service"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:intellectual-property-rights",
+        "label": "Intellectual Property Rights"
+      },
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-science",
+        "label": "Open Science"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:intellectual-property-rights",
+        "label": "Intellectual Property Rights"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:patent",
+        "label": "Patent"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:open-data",
+        "label": "Open Data"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:patent",
+        "label": "Patent"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

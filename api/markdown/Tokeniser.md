@@ -53,11 +53,11 @@ public:: true
         "label": "Byte Pair Encoding"
       },
       {
-        "@id": "urn:ngm:class:wordpiece",
+        "@id": "urn:ngm:class:word-piece",
         "label": "WordPiece"
       },
       {
-        "@id": "urn:ngm:class:sentencepiece",
+        "@id": "urn:ngm:class:sentence-piece",
         "label": "SentencePiece"
       }
     ],

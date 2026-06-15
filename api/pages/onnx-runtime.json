@@ -55,7 +55,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:tensorrt",
+        "id": "urn:ngm:class:tensor-rt",
         "label": "TensorRT"
       },
       {
@@ -88,7 +88,7 @@
         "label": "PyTorch"
       },
       {
-        "id": "urn:ngm:class:tensorflow",
+        "id": "urn:ngm:class:tensor-flow",
         "label": "TensorFlow"
       },
       {

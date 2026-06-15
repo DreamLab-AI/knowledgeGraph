@@ -36,10 +36,6 @@ public:: true
       {
         "@id": "urn:ngm:class:description-logic",
         "label": "Description Logic"
-      },
-      {
-        "@id": "urn:ngm:class:rdfs",
-        "label": "RDFS"
       }
     ],
     "enables": [
@@ -104,7 +100,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:w3c",
+        "@id": "urn:ngm:class:w3-c",
         "label": "W3C"
       }
     ],

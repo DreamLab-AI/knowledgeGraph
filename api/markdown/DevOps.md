@@ -172,7 +172,7 @@ public:: true
         "label": "MLOps"
       },
       {
-        "@id": "urn:ngm:class:devsecops",
+        "@id": "urn:ngm:class:dev-sec-ops",
         "label": "DevSecOps"
       }
     ],

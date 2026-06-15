@@ -100,7 +100,7 @@ public:: true
         "label": "REST API"
       },
       {
-        "@id": "urn:ngm:class:grpc",
+        "@id": "urn:ngm:class:g-rpc",
         "label": "gRPC"
       },
       {

@@ -79,7 +79,7 @@ alias:: BlockchainTechnology
         "label": "Decentralised Autonomous Organisation"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],

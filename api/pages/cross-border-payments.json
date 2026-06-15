@@ -29,7 +29,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:remittance",
+        "id": "urn:ngm:class:remittances",
         "label": "Remittance"
       },
       {
@@ -72,7 +72,7 @@
         "label": "Consensus Mechanism"
       },
       {
-        "id": "urn:ngm:class:tokenisation",
+        "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],

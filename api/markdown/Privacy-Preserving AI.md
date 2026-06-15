@@ -99,7 +99,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:collaborative-learning",
+        "@id": "urn:ngm:class:collaborative-systems-modality-learning",
         "label": "Collaborative Learning"
       },
       {

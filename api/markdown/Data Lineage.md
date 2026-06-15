@@ -90,7 +90,7 @@ public:: true
         "label": "Apache Atlas"
       },
       {
-        "@id": "urn:ngm:class:openlineage",
+        "@id": "urn:ngm:class:open-lineage",
         "label": "OpenLineage"
       }
     ],
@@ -106,7 +106,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:openlineage",
+        "@id": "urn:ngm:class:open-lineage",
         "label": "OpenLineage"
       },
       {

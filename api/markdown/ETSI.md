@@ -71,7 +71,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:5g",
+        "@id": "urn:ngm:class:5-g",
         "label": "5G"
       },
       {
@@ -89,7 +89,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:eidas",
+        "@id": "urn:ngm:class:e-idas",
         "label": "eIDAS"
       },
       {
@@ -113,7 +113,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:3gpp",
+        "@id": "urn:ngm:class:3-gpp",
         "label": "3GPP"
       },
       {

@@ -78,7 +78,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:layerzero",
+        "@id": "urn:ngm:class:layer-zero",
         "label": "LayerZero"
       },
       {

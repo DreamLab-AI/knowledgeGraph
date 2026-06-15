@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:domain-driven-design",
+  "title": "Domain-Driven Design",
+  "slug": "domain-driven-design",
+  "public": true,
+  "classIri": "urn:ngm:class:domain-driven-design",
+  "domain": "infrastructure",
+  "definition": "Domain-driven design (DDD) is an approach to software development that centres the design on a deep, shared model of the business domain, expressed in a ubiquitous language common to engineers and domain experts. It provides strategic patterns for partitioning large systems into bounded contexts and tactical patterns such as aggregates, entities and value objects for structuring the model within each context. DDD aims to keep complex software aligned with the evolving realities of the business it serves.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-architecture",
+      "label": "Software Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:entity",
+        "label": "Entity"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:domain-model",
+        "label": "Domain Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:cqrs",
+        "label": "CQRS"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:domain-model",
+        "label": "Domain Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:domain-model",
+        "label": "Domain Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:entity",
+        "label": "Entity"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:event-sourcing",
+        "label": "Event Sourcing"
+      },
+      {
+        "id": "urn:ngm:class:cqrs",
+        "label": "CQRS"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    }
+  ]
+}

@@ -118,7 +118,7 @@ public:: true
         "label": "Distributed Systems Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:web3-infrastructure",
+        "@id": "urn:ngm:class:web-3-infrastructure",
         "label": "Web3 Infrastructure"
       }
     ],
@@ -200,7 +200,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:centralized-database",
+        "@id": "urn:ngm:class:centralised-database",
         "label": "Centralized Database"
       },
       {

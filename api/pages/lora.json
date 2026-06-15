@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:lora",
+  "title": "LoRa",
+  "slug": "lora",
+  "public": true,
+  "classIri": "urn:ngm:class:lora",
+  "domain": "artificial-intelligence",
+  "definition": "LoRa is a long-range, low-power wireless modulation technology that uses chirp spread-spectrum signalling to transmit small amounts of data over distances of several kilometres on unlicensed sub-gigahertz radio bands. It trades data rate for range and energy efficiency, enabling battery-powered devices to operate for years. LoRa provides the physical layer beneath the LoRaWAN networking protocol used in wide-area sensor deployments. It is a foundational technology for low-power wide-area Internet-of-things connectivity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:chirp-spread-spectrum",
+        "label": "Chirp Spread Spectrum"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:low-power-wide-area-network",
+        "label": "Low-Power Wide-Area Network"
+      },
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:unlicensed-spectrum",
+        "label": "Unlicensed Spectrum"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cellular-network",
+        "label": "Cellular Network"
+      },
+      {
+        "id": "urn:ngm:class:wifi",
+        "label": "Wi-Fi"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:spread-spectrum",
+        "label": "Spread Spectrum"
+      },
+      {
+        "id": "urn:ngm:class:radio-frequency",
+        "label": "Radio Frequency"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:lorawan",
+        "label": "LoRaWAN"
+      },
+      {
+        "id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:sensor-network",
+        "label": "Sensor Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

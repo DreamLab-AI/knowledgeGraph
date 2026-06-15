@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:payment-routing",
+  "title": "Payment Routing",
+  "slug": "payment-routing",
+  "public": true,
+  "classIri": "urn:ngm:class:payment-routing",
+  "domain": "blockchain",
+  "definition": "Payment routing is the process of determining a viable path along which value moves from a payer to a payee across one or more intermediaries, payment channels or networks. In layered payment systems such as the Lightning Network it involves finding a sequence of hops with sufficient liquidity and acceptable fees, whereas in conventional rails it selects acquirers, schemes or correspondent banks. Routing decisions balance cost, success probability, latency and privacy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-processing",
+      "label": "Payment Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:routing-table",
+        "label": "Routing Table"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:routing-algorithm",
+        "label": "Routing Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:htlc",
+        "label": "HTLC"
+      },
+      {
+        "id": "urn:ngm:class:routing-algorithm",
+        "label": "Routing Algorithm"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:routing-algorithm",
+        "label": "Routing Algorithm"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:payment-gateway",
+        "label": "Payment Gateway"
+      },
+      {
+        "id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:payment-network",
+        "label": "Payment Network"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

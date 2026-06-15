@@ -1,0 +1,35 @@
+- ### Definition
+  - Generalisation is a [[Machine Learning]] model's ability to perform on unseen data drawn from the training distribution, rather than memorising examples.
+  - It is the primary objective of learning and is the direct opposite of [[Overfitting]].
+  - It depends on appropriate [[Inductive Bias]] and is promoted through [[Regularisation]].
+- ### Overview
+  - A model that generalises well achieves a small gap between training error and held-out (test) error.
+  - The bias-variance trade-off frames generalisation: too little capacity underfits, too much overfits, and the sweet spot minimises expected error on new data.
+  - Statistical learning theory bounds generalisation error in terms of hypothesis-class complexity and sample size; modern over-parameterised networks complicate this classical picture.
+  - Distribution shift breaks the assumption that test data matches training data, motivating robustness and domain-adaptation research.
+- ### Key aspects
+  - Measurement: estimated using held-out validation sets and [[Cross-Validation]].
+  - Control: regularisation, early stopping, data augmentation, and capacity tuning narrow the generalisation gap.
+  - Inductive bias: architectural and prior assumptions steer the model toward solutions that transfer.
+  - Sample efficiency: how much data is needed to reach a target generalisation level.
+- ### Applications
+  - Selecting and tuning models so they deploy reliably on real-world inputs.
+  - Enabling [[Transfer Learning]], where representations learned on one task generalise to related tasks.
+  - Benchmarking and comparing models through evaluation on unseen test distributions.
+- ### Relationships
+  - enables:: [[Transfer Learning]]
+  - contrastsWith:: [[Overfitting]]
+  - dependsOn:: [[Training Data]]
+  - dependsOn:: [[Inductive Bias]]
+  - requires:: [[Regularisation]]
+  - uses:: [[Cross-Validation]]
+  - supports:: [[Model Evaluation]]
+  - measuredBy:: [[Model Evaluation]]
+  - relatedTo:: [[Machine Learning Model]]
+  - relatedTo:: [[Model Performance]]
+  - improvedBy:: [[Regularisation]]
+  - bridgesTo:: [[Transfer Learning]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

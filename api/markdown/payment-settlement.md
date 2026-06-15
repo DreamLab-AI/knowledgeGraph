@@ -1,0 +1,35 @@
+- ### Definition
+	- [[Payment Settlement]] is a form of [[Settlement]] that irrevocably discharges a payment obligation by transferring value.
+	- It completes a transaction so the recipient gains final, unconditional funds, governed by [[Finality]].
+	- It spans traditional rails and [[Distributed Ledger]] networks.
+- ### Overview
+	- Settlement can be gross or net, real-time or batched, and may run over [[Real-Time Gross Settlement]] systems or messaging networks like [[SWIFT]].
+	- In blockchain contexts settlement is reached when an [[On-Chain Transaction]] attains [[Consensus]] [[Finality]].
+	- [[Liquidity]] availability and credit risk shape how and when settlement occurs.
+- ### Mechanisms
+	- Match payment instructions and verify available [[Liquidity]].
+	- Transfer value across accounts or ledger states.
+	- Achieve irreversibility through [[Finality]], whether legal or consensus-based.
+	- Reconcile balances and confirm completion to both parties.
+- ### Applications
+	- Interbank settlement via [[Real-Time Gross Settlement]] and [[Central Bank]] infrastructure.
+	- Cross-border value transfer messaging through [[SWIFT]].
+	- On-chain settlement of crypto payments and [[Stablecoin]] transfers.
+	- Trust-minimised exchange via [[Atomic Swap]].
+- ### Relationships
+	- partOf:: [[Financial Regulation]]
+	- requires:: [[Finality]]
+	- requires:: [[Liquidity]]
+	- enables:: [[Atomic Swap]]
+	- enables:: [[Stablecoin]]
+	- dependsOn:: [[Consensus]]
+	- dependsOn:: [[Central Bank]]
+	- uses:: [[On-Chain Transaction]]
+	- uses:: [[Real-Time Gross Settlement]]
+	- supports:: [[SWIFT]]
+	- bridgesTo:: [[Distributed Ledger]]
+	- contrastsWith:: [[State Channel]]
+- ### Provenance
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation
+	- updated:: 2026-06-15

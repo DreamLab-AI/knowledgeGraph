@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:flexible-manufacturing",
+  "title": "Flexible Manufacturing",
+  "slug": "flexible-manufacturing",
+  "public": true,
+  "classIri": "urn:ngm:class:flexible-manufacturing",
+  "domain": "robotics",
+  "definition": "Flexible manufacturing is a production approach in which automated, reconfigurable equipment and material-handling systems can adapt rapidly to changes in product mix and volume with minimal downtime. It combines computer numerical control machines, robots, and automated transport under coordinated supervisory control so that the same line can produce varied parts on demand. The approach targets responsiveness and customisation while retaining the efficiency of automation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:industrial-automation",
+      "label": "IndustrialAutomation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      },
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "IndustrialAutomation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      },
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    }
+  ]
+}

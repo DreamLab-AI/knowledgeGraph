@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:aaai",
+  "title": "AAAI",
+  "slug": "aaai",
+  "public": true,
+  "classIri": "urn:ngm:class:aaai",
+  "domain": "ai",
+  "definition": "AAAI, the Association for the Advancement of Artificial Intelligence, is a scientific society devoted to advancing research in and responsible use of artificial intelligence. It is best known for its flagship annual peer-reviewed conference, one of the most selective venues in the field, alongside symposia, workshops, and journals. AAAI also engages in education, public communication, and policy discussion concerning AI.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:academic-conference",
+      "label": "Academic Conference"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aaai-conference",
+        "label": "AAAI Conference"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:neurips",
+        "label": "NeurIPS"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scientific-conference",
+        "label": "Scientific Conference"
+      },
+      {
+        "id": "urn:ngm:class:academic-conference",
+        "label": "Academic Conference"
+      },
+      {
+        "id": "urn:ngm:class:research-institution",
+        "label": "Research Institution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    }
+  ]
+}

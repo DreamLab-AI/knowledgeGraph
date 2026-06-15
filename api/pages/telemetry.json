@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:telemetry",
+  "title": "Telemetry",
+  "slug": "telemetry",
+  "public": true,
+  "classIri": "urn:ngm:class:telemetry",
+  "domain": "infrastructure",
+  "definition": "Telemetry is the automated collection, transmission and aggregation of measurements and signals from remote or distributed systems to a central point for monitoring and analysis. In software and infrastructure it commonly refers to the emission of metrics, logs, traces and events that describe a system's behaviour and health. Telemetry data is the raw substrate on which observability, alerting and performance analysis are built.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:observability",
+      "label": "Observability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:instrumentation",
+        "label": "Instrumentation"
+      },
+      {
+        "id": "urn:ngm:class:time-series-data",
+        "label": "Time-Series Data"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:instrumentation",
+        "label": "Instrumentation"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:performance-monitoring",
+        "label": "Performance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:prometheus",
+        "label": "Prometheus"
+      },
+      {
+        "id": "urn:ngm:class:dashboard",
+        "label": "Dashboard"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

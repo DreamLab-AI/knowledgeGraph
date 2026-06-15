@@ -1,0 +1,126 @@
+{
+  "id": "urn:visionflow:page:custodial-wallet",
+  "title": "Custodial Wallet",
+  "slug": "custodial-wallet",
+  "public": true,
+  "classIri": "urn:ngm:class:custodial-wallet",
+  "domain": "blockchain",
+  "definition": "A custodial wallet is a cryptocurrency wallet in which a third party \u2014 typically an exchange or custodian \u2014 holds and controls the private keys on behalf of the user, who accesses funds through an account rather than direct on-chain key ownership. This model trades the self-sovereignty of non-custodial wallets for convenience, account recovery, and integrated services, while introducing counterparty risk and reliance on the custodian's security and solvency. Custodial arrangements are common at centralised exchanges and increasingly subject to regulatory requirements for asset segregation and proof of reserves.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-wallet",
+      "label": "Digital Wallet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:account-balance-ledger",
+        "label": "Account Balance Ledger"
+      },
+      {
+        "id": "urn:ngm:class:omnibus-account",
+        "label": "Omnibus Account"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:account-recovery",
+        "label": "Account Recovery"
+      },
+      {
+        "id": "urn:ngm:class:fiat-on-ramp",
+        "label": "Fiat On-Ramp"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:trusted-third-party",
+        "label": "Trusted Third Party"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:non-custodial-wallet",
+        "label": "Non-Custodial Wallet"
+      },
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mpc-wallet",
+        "label": "MPC Wallet"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hot-wallet",
+        "label": "Hot Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "id": "urn:ngm:class:exchange-custody",
+        "label": "Exchange Custody"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:counterparty-risk",
+        "label": "Counterparty Risk"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-custody",
+        "label": "Cryptocurrency Custody"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    }
+  ]
+}

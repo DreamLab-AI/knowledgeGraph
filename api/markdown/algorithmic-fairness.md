@@ -1,0 +1,36 @@
+- ### Definition
+  - [[Algorithmic Fairness]] is the discipline of ensuring that [[Machine Learning]] systems avoid unjustified disparities across groups and individuals.
+  - It operationalises the broader notion of [[Fairness]] into measurable criteria evaluated during [[Model Evaluation]].
+  - It directly contrasts with [[Bias]] in data, models and deployment, and supports [[Responsible AI]].
+- ### Overview
+  - As models drive consequential decisions in lending, hiring and justice, fairness moved from a philosophical concern to an engineering requirement.
+  - Researchers formalised multiple, often incompatible, fairness definitions, exposing genuine trade-offs rather than a single correct metric.
+  - Fairness is contextual: the appropriate criterion depends on the decision, the harms at stake and the legal framework.
+  - It is inseparable from [[Accountability]], [[Transparency]] and [[Explainability]] within [[AI Governance and Ethics]].
+- ### Key aspects
+  - Group fairness criteria equalise statistical measures across protected groups.
+  - Individual fairness requires similar individuals to receive similar outcomes.
+  - Pre-processing, in-processing and post-processing methods mitigate measured bias.
+  - Impossibility results show that several fairness criteria conflict whenever base rates differ.
+  - Fairness auditing tests deployed systems against chosen metrics over time.
+- ### Applications
+  - Credit scoring and lending decisions subject to anti-discrimination law.
+  - Hiring, admissions and recommendation systems affecting opportunity.
+  - Risk-assessment tools in criminal justice and welfare.
+  - Content ranking and ad delivery where disparate exposure raises concern.
+- ### Relationships
+  - partOf:: [[AI Governance and Ethics]]
+  - partOf:: [[AI Ethics]]
+  - enables:: [[Accountability]]
+  - enables:: [[Transparency]]
+  - requires:: [[Model Evaluation]]
+  - supports:: [[Explainability]]
+  - supports:: [[Responsible AI]]
+  - contrastsWith:: [[Bias]]
+  - uses:: [[Machine Learning]]
+  - uses:: [[Classification]]
+  - relatedTo:: [[Fairness]]
+  - relatedTo:: [[AI Governance]]
+  - dependsOn:: [[Labelled Dataset]]
+- ### Provenance
+  - updated:: 2026-06-15

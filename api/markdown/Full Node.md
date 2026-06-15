@@ -180,7 +180,7 @@ public:: true
         "label": "Blockchain Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:network-synchronisation",
+        "@id": "urn:ngm:class:network-synchronization",
         "label": "Network Synchronisation"
       }
     ],

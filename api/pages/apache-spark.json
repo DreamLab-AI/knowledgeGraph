@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:apache-spark",
+  "title": "Apache Spark",
+  "slug": "apache-spark",
+  "public": true,
+  "classIri": "urn:ngm:class:apache-spark",
+  "domain": "infrastructure",
+  "definition": "Apache Spark is an open-source unified analytics engine for large-scale data processing across clusters of machines. It exposes high-level APIs for batch processing, structured queries, stream processing and machine learning, and accelerates workloads by keeping intermediate data in memory between operations. Spark abstracts distributed datasets as fault-tolerant collections and schedules computations as directed acyclic graphs of stages, making it a foundational tool for big-data engineering and analytics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      },
+      {
+        "id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:apache-flink",
+        "label": "Apache Flink"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:in-memory-computing",
+        "label": "In-Memory Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      },
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ]
+}

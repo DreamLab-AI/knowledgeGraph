@@ -101,7 +101,7 @@ alias:: BiometricAuthentication
         "label": "FIDO2"
       },
       {
-        "@id": "urn:ngm:class:webauthn",
+        "@id": "urn:ngm:class:web-authn",
         "label": "WebAuthn"
       }
     ],

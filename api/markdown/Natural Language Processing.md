@@ -151,7 +151,7 @@ alias:: NaturalLanguageProcessing
         "label": "Training Data"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       },
       {

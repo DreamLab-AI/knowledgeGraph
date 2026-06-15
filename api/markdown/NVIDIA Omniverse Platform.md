@@ -47,7 +47,7 @@ elevatedFrom:: [[NVIDIA Omniverse]]
         "label": "Ray Tracing"
       },
       {
-        "@id": "urn:ngm:class:materialx",
+        "@id": "urn:ngm:class:material-x",
         "label": "MaterialX"
       }
     ],

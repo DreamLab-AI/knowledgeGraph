@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:suspicious-activity-report",
+  "title": "Suspicious Activity Report",
+  "slug": "suspicious-activity-report",
+  "public": true,
+  "classIri": "urn:ngm:class:suspicious-activity-report",
+  "domain": "finance",
+  "definition": "A Suspicious Activity Report (SAR) is a formal regulatory filing through which a financial institution notifies a national financial intelligence unit of transactions or behaviours that may indicate money laundering, terrorist financing, fraud, or other financial crime. SARs are mandated under anti-money-laundering frameworks and must be submitted within prescribed deadlines whenever staff or monitoring systems form a reasonable suspicion. The report documents the parties, accounts, transaction patterns, and the analyst's narrative rationale, while strict confidentiality (tipping-off prohibitions) prevents disclosure to the subject.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:customer-due-diligence",
+        "label": "Customer Due Diligence"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:risk-based-approach",
+        "label": "Risk-Based Approach"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fatf",
+        "label": "FATF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    }
+  ]
+}

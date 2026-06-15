@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:cloud-native-computing-foundation",
+  "title": "Cloud Native Computing Foundation",
+  "slug": "cloud-native-computing-foundation",
+  "public": true,
+  "classIri": "urn:ngm:class:cloud-native-computing-foundation",
+  "domain": "infrastructure",
+  "definition": "The Cloud Native Computing Foundation (CNCF) is a vendor-neutral, open-source foundation hosted by the Linux Foundation that stewards critical cloud-native projects such as Kubernetes, Prometheus and Envoy. It defines and promotes the cloud-native computing model based on containers, microservices and declarative orchestration. The CNCF maintains a graduated project lifecycle (sandbox, incubating, graduated) and coordinates the wider ecosystem through events, certification programmes and a technical oversight committee.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:linux-foundation",
+      "label": "Linux Foundation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      },
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    }
+  ]
+}

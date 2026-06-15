@@ -1,0 +1,31 @@
+- ### Definition
+	- A [[Proprietary Protocol]] is a [[Communication Protocol]] owned and controlled by a single organisation.
+	- Its specification is closed, licensed, or undocumented rather than openly published.
+	- It contrasts sharply with an [[Open Standard]].
+- ### Overview
+	- Proprietary protocols can enable tight vendor integration and rapid feature iteration.
+	- They tend to reduce [[Interoperability]] and create dependence on the controlling vendor.
+	- They are part of the broader [[Standards]] landscape even though their internals are not open.
+- ### Key aspects
+	- Closed or licensed specifications restricting third-party implementation.
+	- Control over versioning and feature roadmap by the owning vendor.
+	- Exposure typically through a vendor-controlled [[API]].
+	- Tension between integration benefits and lock-in costs.
+- ### Applications
+	- Vendor-specific messaging and device control protocols.
+	- Closed ecosystems integrating hardware and software via a private [[Network Protocol]].
+	- Enterprise systems where a controlled [[API]] gates access.
+- ### Relationships
+	- partOf:: [[Standards]]
+	- contrastsWith:: [[Open Standard]]
+	- contrastsWith:: [[Network Protocol]]
+	- requires:: [[API]]
+	- uses:: [[API]]
+	- dependsOn:: [[Standards]]
+	- enables:: [[Interoperability]]
+	- supports:: [[Communication Protocol]]
+	- relatedTo:: [[Network Protocol]]
+- ### Provenance
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation
+	- updated:: 2026-06-15

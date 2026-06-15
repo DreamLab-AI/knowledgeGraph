@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:sensor-model",
+  "title": "Sensor Model",
+  "slug": "sensor-model",
+  "public": true,
+  "classIri": "urn:ngm:class:sensor-model",
+  "domain": "robotics",
+  "definition": "A sensor model, also called an observation or measurement model, is a probabilistic description of how a robot's sensor readings relate to the underlying state of the world, expressing the likelihood of an observation given a hypothesised state. It captures sensor characteristics such as noise, resolution, range limits, and failure modes, allowing a robot to weight evidence appropriately when fusing measurements. Sensor models are central to Bayesian state estimation, where they form the update step that corrects predictions using incoming data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:probabilistic-robotics",
+      "label": "Probabilistic Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:observation-model",
+        "label": "Observation Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:observation-model",
+        "label": "Observation Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:particle-filter",
+        "label": "Particle Filter"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

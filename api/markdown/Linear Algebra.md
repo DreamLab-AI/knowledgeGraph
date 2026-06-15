@@ -137,7 +137,7 @@ public:: true
         "label": "Numerical Methods"
       },
       {
-        "@id": "urn:ngm:class:optimization",
+        "@id": "urn:ngm:class:optimisation",
         "label": "Optimization"
       },
       {

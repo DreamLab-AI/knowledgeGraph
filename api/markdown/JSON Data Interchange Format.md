@@ -98,7 +98,7 @@ elevatedFrom:: [[json]]
         "label": "YAML"
       },
       {
-        "@id": "urn:ngm:class:protocol-buffers",
+        "@id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffers"
       },
       {
@@ -134,7 +134,7 @@ elevatedFrom:: [[json]]
         "label": "Data Format"
       },
       {
-        "@id": "urn:ngm:class:javascript",
+        "@id": "urn:ngm:class:java-script",
         "label": "JavaScript"
       },
       {

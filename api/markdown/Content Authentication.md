@@ -125,7 +125,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:c2pa-standard",
+        "@id": "urn:ngm:class:c2-pa-standard",
         "label": "C2PA Standard"
       },
       {
@@ -139,7 +139,7 @@ public:: true
         "label": "Synthetic Media"
       },
       {
-        "@id": "urn:ngm:class:deepfake",
+        "@id": "urn:ngm:class:deepfakes",
         "label": "Deepfake"
       }
     ],

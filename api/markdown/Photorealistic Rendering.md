@@ -48,53 +48,143 @@ public:: true
   ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:path-tracing", "label": "Path Tracing"},
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:shader", "label": "Shader"},
-      {"@id": "urn:ngm:class:monte-carlo-integration", "label": "Monte Carlo Integration"},
-      {"@id": "urn:ngm:class:bidirectional-reflectance-distribution-function", "label": "Bidirectional Reflectance Distribution Function"}
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "@id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      },
+      {
+        "@id": "urn:ngm:class:bidirectional-reflectance-distribution-function",
+        "label": "Bidirectional Reflectance Distribution Function"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:3-d-gaussian-splatting", "label": "3D Gaussian Splatting"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
-      {"@id": "urn:ngm:class:virtual-production", "label": "Virtual Production"},
-      {"@id": "urn:ngm:class:synthetic-data-generation", "label": "Synthetic Data Generation"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-gaussian-splatting",
+        "label": "3D Gaussian Splatting"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      },
+      {
+        "@id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:scene-graph", "label": "Scene Graph"},
-      {"@id": "urn:ngm:class:3-d-geometry", "label": "3D Geometry"}
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-geometry",
+        "label": "3D Geometry"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:global-illumination", "label": "Global Illumination"},
-      {"@id": "urn:ngm:class:ambient-occlusion", "label": "Ambient Occlusion"},
-      {"@id": "urn:ngm:class:subsurface-scattering", "label": "Subsurface Scattering"},
-      {"@id": "urn:ngm:class:volumetric-rendering", "label": "Volumetric Rendering"}
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "@id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "@id": "urn:ngm:class:subsurface-scattering",
+        "label": "Subsurface Scattering"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-rendering",
+        "label": "Volumetric Rendering"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rendering-equation", "label": "Rendering Equation"},
-      {"@id": "urn:ngm:class:3-d-rendering-engine", "label": "3D Rendering Engine"}
+      {
+        "@id": "urn:ngm:class:rendering-equation",
+        "label": "Rendering Equation"
+      },
+      {
+        "@id": "urn:ngm:class:3-d-rendering-engine",
+        "label": "3D Rendering Engine"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
-      {"@id": "urn:ngm:class:rasterisation", "label": "Rasterisation"},
-      {"@id": "urn:ngm:class:denoising", "label": "Denoising"}
+      {
+        "@id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      },
+      {
+        "@id": "urn:ngm:class:rasterization",
+        "label": "Rasterisation"
+      },
+      {
+        "@id": "urn:ngm:class:denoising",
+        "label": "Denoising"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:khronos-group", "label": "Khronos Group"},
-      {"@id": "urn:ngm:class:opengl", "label": "OpenGL"},
-      {"@id": "urn:ngm:class:vulkan", "label": "Vulkan"}
+      {
+        "@id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "@id": "urn:ngm:class:open-gl",
+        "label": "OpenGL"
+      },
+      {
+        "@id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:photo-real-rendering", "label": "Photo-Real Rendering"},
-    {"@id": "urn:ngm:class:physically-accurate-rendering", "label": "Physically Accurate Rendering"}
+    {
+      "@id": "urn:ngm:class:photo-real-rendering",
+      "label": "Photo-Real Rendering"
+    },
+    {
+      "@id": "urn:ngm:class:physically-accurate-rendering",
+      "label": "Physically Accurate Rendering"
+    }
   ],
   "quality": 0.72,
   "provenance": {

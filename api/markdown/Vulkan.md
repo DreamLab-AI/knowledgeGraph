@@ -56,7 +56,7 @@ public:: true
         "label": "GPU Driver"
       },
       {
-        "@id": "urn:ngm:class:spirv",
+        "@id": "urn:ngm:class:spir-v",
         "label": "SPIR-V"
       }
     ],
@@ -92,7 +92,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:opengl",
+        "@id": "urn:ngm:class:open-gl",
         "label": "OpenGL"
       },
       {

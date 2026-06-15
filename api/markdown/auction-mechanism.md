@@ -1,0 +1,32 @@
+- ### Definition
+	- An [[Auction Mechanism]] is a competitive allocation rule, a form of [[Mechanism Design]], that determines winners and prices from participant bids.
+	- It performs [[Price Discovery]] and shapes bidder behaviour through its [[Incentive Mechanism]].
+- ### Overview
+	- An auction defines who may bid, how bids are submitted, who wins, and what they pay, turning private valuations into an allocation and a price.
+	- Standard families are the ascending English auction, the descending Dutch auction, the first-price sealed-bid auction, and the Vickrey second-price auction, which makes truthful bidding a dominant strategy.
+	- Multi-unit and combinatorial variants extend these rules to allocate many items or bundles simultaneously.
+- ### Key aspects
+	- Allocation rule: maps the profile of bids to a winner (or winners).
+	- Payment rule: determines what each winner pays, governing incentive compatibility and revenue.
+	- Information structure: open (observable bids) versus sealed-bid formats.
+	- Strategic equilibrium analysed through [[Game Theory]].
+- ### Applications
+	- Real-time bidding in [[Programmatic Advertising]] and ad exchanges.
+	- Spectrum and procurement auctions in markets.
+	- Resource and task allocation among agents in a [[Virtual Economy]].
+- ### Relationships
+	- hasPart:: [[Price Discovery]]
+	- hasPart:: [[Incentive Mechanism]]
+	- implements:: [[Mechanism Design]]
+	- uses:: [[Game Theory]]
+	- enables:: [[Resource Allocation]]
+	- enables:: [[Programmatic Advertising]]
+	- supports:: [[Multi-Agent Coordination]]
+	- supports:: [[Virtual Economy]]
+	- partOf:: [[Economic Mechanism]]
+	- relatedTo:: [[Marketplace]]
+	- relatedTo:: [[Resource Management]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

@@ -97,7 +97,7 @@ public:: true
         "label": "Procedural Generation"
       },
       {
-        "@id": "urn:ngm:class:rasterisation",
+        "@id": "urn:ngm:class:rasterization",
         "label": "Rasterisation"
       }
     ],

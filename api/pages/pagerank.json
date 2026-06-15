@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:pagerank",
+  "title": "PageRank",
+  "slug": "pagerank",
+  "public": true,
+  "classIri": "urn:ngm:class:pagerank",
+  "domain": "ai",
+  "definition": "PageRank is a link-analysis algorithm that assigns a numerical importance score to each node in a directed graph based on the structure of incoming links, modelling importance as the stationary distribution of a random walk that occasionally teleports to a random node. Originally devised to rank web pages by treating hyperlinks as votes whose weight depends on the ranking of the linking page, it generalises to any graph where influence propagates along edges. The scores are computed iteratively until convergence and are robust to local manipulation because importance flows recursively from important neighbours.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-analysis",
+      "label": "Network Analysis"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

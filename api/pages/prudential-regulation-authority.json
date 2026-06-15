@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:prudential-regulation-authority",
+  "title": "Prudential Regulation Authority",
+  "slug": "prudential-regulation-authority",
+  "public": true,
+  "classIri": "urn:ngm:class:prudential-regulation-authority",
+  "domain": "finance",
+  "definition": "The Prudential Regulation Authority (PRA) is the United Kingdom regulator responsible for the prudential supervision of banks, building societies, credit unions, insurers and major investment firms. Operating as part of the Bank of England, it sets capital, liquidity and governance standards to promote the safety and soundness of individual firms and to protect insurance policyholders. The PRA shares the UK's twin-peaks regulatory model with the conduct-focused Financial Conduct Authority.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:financial-conduct-authority",
+        "label": "Financial Conduct Authority"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

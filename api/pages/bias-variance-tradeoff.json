@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:bias-variance-tradeoff",
+  "title": "Bias-Variance Tradeoff",
+  "slug": "bias-variance-tradeoff",
+  "public": true,
+  "classIri": "urn:ngm:class:bias-variance-tradeoff",
+  "domain": "machine-learning",
+  "definition": "The bias-variance tradeoff is the central principle in supervised learning describing how a model's expected generalisation error decomposes into bias, variance, and irreducible noise, and how reducing one component tends to increase the other. Bias is error from overly simplistic assumptions that cause systematic underfitting, while variance is error from excessive sensitivity to the training sample that causes overfitting. Effective model selection seeks a complexity sweet spot that minimises total expected error on unseen data, balancing these competing sources rather than eliminating either alone.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:model-complexity",
+        "label": "Model Complexity"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-complexity",
+        "label": "Model Complexity"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:underfitting",
+        "label": "Underfitting"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:regularization",
+        "label": "Regularization"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-learning",
+        "label": "Ensemble Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:ngm:class:regularization",
+        "label": "Regularization"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

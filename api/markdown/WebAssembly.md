@@ -280,7 +280,7 @@ public:: true
         "label": "Rust"
       },
       {
-        "@id": "urn:ngm:class:javascript",
+        "@id": "urn:ngm:class:java-script",
         "label": "JavaScript"
       }
     ],

@@ -115,11 +115,11 @@ alias:: low-latency
         "label": "Quality Of Service"
       },
       {
-        "@id": "urn:ngm:class:5g",
+        "@id": "urn:ngm:class:5-g",
         "label": "5G"
       },
       {
-        "@id": "urn:ngm:class:webrtc",
+        "@id": "urn:ngm:class:web-rtc",
         "label": "WebRTC"
       },
       {
@@ -161,7 +161,7 @@ alias:: low-latency
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:3gpp",
+        "@id": "urn:ngm:class:3-gpp",
         "label": "3GPP"
       }
     ]

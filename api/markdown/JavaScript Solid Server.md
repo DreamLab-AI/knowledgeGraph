@@ -73,7 +73,7 @@ alias:: javascriptsolidserver, JavaScriptSolidServer, JSS, JS Solid Server
         "label": "Linked Data"
       },
       {
-        "@id": "urn:ngm:class:webauthn",
+        "@id": "urn:ngm:class:web-authn",
         "label": "WebAuthn"
       },
       {
@@ -117,7 +117,7 @@ alias:: javascriptsolidserver, JavaScriptSolidServer, JSS, JS Solid Server
         "label": "AT Protocol"
       },
       {
-        "@id": "urn:ngm:class:activitypub",
+        "@id": "urn:ngm:class:activity-pub",
         "label": "ActivityPub"
       },
       {

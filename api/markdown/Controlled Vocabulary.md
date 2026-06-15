@@ -134,7 +134,7 @@ public:: true
         "label": "Thesaurus"
       },
       {
-        "@id": "urn:ngm:class:taxonomy",
+        "@id": "urn:ngm:class:corporate-tax-compliance-frameworkonomy",
         "label": "Taxonomy"
       }
     ],

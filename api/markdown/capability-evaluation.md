@@ -1,0 +1,42 @@
+- ### Definition
+- [[Capability Evaluation]] measures what an AI system can do, with emphasis on eliciting potentially dangerous capabilities, as a specialised form of [[AI Evaluation]].
+- It draws on [[Model Evaluation]] benchmarks and [[Red Teaming]] to establish upper bounds on behaviour under best-effort elicitation.
+- Findings feed a [[Responsible Scaling Policy]] and broader [[AI Safety]] decision-making, complementing [[Safety Evaluation]].
+- It is most consequential for frontier [[Large Language Model]] and [[AI Agent]] systems.
+- ### Overview
+- Capability evaluation asks not whether a model is safe by default but what it could be made to do given strong prompting, fine-tuning, scaffolding, and tools.
+- Because under-elicitation can hide latent capability, evaluators invest in adversarial elicitation, agentic harnesses, and expert-designed task suites.
+- Evaluations are calibrated to thresholds: crossing a capability level triggers heightened safeguards under preparedness and responsible-scaling commitments.
+- ### Key aspects
+- Dangerous-capability focus: cyber, biological, autonomy, and persuasion domains receive targeted assessment.
+- Elicitation rigour: best-effort prompting, tool access, and fine-tuning probes establish robust upper bounds.
+- Agentic tasks: multi-step autonomous tasks test planning, tool use, and self-improvement.
+- Threshold mapping: results are tied to defined capability levels that gate deployment decisions.
+- Reproducibility: standardised task suites and scoring support comparison across models and labs.
+- ### Applications
+- Pre-deployment risk assessment for frontier models.
+- Triggering safeguards and deployment gates in responsible scaling and preparedness frameworks.
+- Informing governance, disclosure, and third-party auditing.
+- Tracking capability trends across model generations.
+- ### Relationships
+- partOf:: [[AI Evaluation]]
+- partOf:: [[AI Safety]]
+- requires:: [[Model Evaluation]]
+- requires:: [[Red Teaming]]
+- uses:: [[Red Teaming]]
+- uses:: [[Model Evaluation]]
+- uses:: [[Safety Evaluation]]
+- enables:: [[Responsible Scaling Policy]]
+- enables:: [[AI Safety]]
+- supports:: [[Alignment]]
+- supports:: [[Interpretability]]
+- bridgesTo:: [[Responsible Scaling Policy]]
+- bridgesTo:: [[Safety Evaluation]]
+- relatedTo:: [[Large Language Model]]
+- relatedTo:: [[AI Agent]]
+- relatedTo:: [[Alignment]]
+- contrastsWith:: [[Safety Evaluation]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

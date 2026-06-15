@@ -190,7 +190,7 @@ public:: true
         "label": "Bandwidth Constraints"
       },
       {
-        "@id": "urn:ngm:class:data-serialisation",
+        "@id": "urn:ngm:class:data-serialization",
         "label": "Data Serialisation"
       },
       {

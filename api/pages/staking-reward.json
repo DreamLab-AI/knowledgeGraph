@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:staking-reward",
+  "title": "Staking Reward",
+  "slug": "staking-reward",
+  "public": true,
+  "classIri": "urn:ngm:class:staking-reward",
+  "domain": "blockchain",
+  "definition": "A staking reward is the compensation paid to participants who lock cryptocurrency to help secure a proof-of-stake network. Rewards are typically funded by protocol issuance and transaction fees and are distributed in proportion to the amount staked and the validator's correct, online participation in consensus. They create the economic incentive that aligns validator behaviour with network security and liveness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:yield-generation",
+        "label": "Yield Generation"
+      },
+      {
+        "id": "urn:ngm:class:liquid-staking",
+        "label": "Liquid Staking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:economic-mechanism",
+        "label": "Economic Mechanism"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "economic-mechanism",
+      "label": "Economic Mechanism"
+    }
+  ]
+}

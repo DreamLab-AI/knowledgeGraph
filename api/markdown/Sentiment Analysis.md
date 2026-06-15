@@ -78,7 +78,7 @@ public:: true
         "label": "Text Classification"
       },
       {
-        "@id": "urn:ngm:class:tokenisation",
+        "@id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
       }
     ],

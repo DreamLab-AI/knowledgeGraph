@@ -132,7 +132,7 @@ public:: true
         "label": "Identity Management"
       },
       {
-        "@id": "urn:ngm:class:network-synchronisation",
+        "@id": "urn:ngm:class:network-synchronization",
         "label": "Network Synchronisation"
       }
     ],

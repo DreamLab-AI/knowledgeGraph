@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:centralized-exchange",
+  "title": "Centralized Exchange",
+  "slug": "centralized-exchange",
+  "public": true,
+  "classIri": "urn:ngm:class:centralized-exchange",
+  "domain": "blockchain",
+  "definition": "A centralized exchange (CEX) is a digital-asset trading venue operated by a single company that custodies user funds, matches orders through an internal order book, and acts as an intermediary for every trade. Users deposit assets into accounts controlled by the operator, who maintains liquidity, settlement, and the matching engine off-chain. CEXs offer high throughput and familiar interfaces but require trust in the operator and typically enforce identity-verification and anti-money-laundering controls.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      },
+      {
+        "id": "urn:ngm:class:aml",
+        "label": "AML"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:binance",
+        "label": "Binance"
+      },
+      {
+        "id": "urn:ngm:class:coinbase",
+        "label": "Coinbase"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    }
+  ]
+}

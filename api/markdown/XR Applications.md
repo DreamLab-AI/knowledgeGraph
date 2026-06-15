@@ -23,51 +23,137 @@ public:: true
   "definition": "XR Applications are software systems designed to run on extended reality platforms — encompassing augmented reality (AR), virtual reality (VR), and mixed reality (MR) — that blend real and virtual environments to deliver spatially aware, immersive user experiences. They span consumer entertainment, enterprise training, industrial maintenance, medical simulation, and remote collaboration domains.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:extended-reality", "label": "Extended Reality"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:extended-reality",
+      "label": "Extended Reality"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:head-mounted-display", "label": "Head-Mounted Display"},
-      {"@id": "urn:ngm:class:gpu-acceleration", "label": "GPU Acceleration"},
-      {"@id": "urn:ngm:class:openxr", "label": "OpenXR"},
-      {"@id": "urn:ngm:class:spatial-audio", "label": "Spatial Audio"},
-      {"@id": "urn:ngm:class:hand-tracking", "label": "Hand Tracking"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "@id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:immersive-computing", "label": "Immersive Computing"},
-      {"@id": "urn:ngm:class:augmented-reality-collaboration", "label": "Augmented Reality Collaboration"},
-      {"@id": "urn:ngm:class:remote-assistance", "label": "Remote Assistance"},
-      {"@id": "urn:ngm:class:surgical-simulation", "label": "Surgical Simulation"},
-      {"@id": "urn:ngm:class:virtual-training", "label": "Virtual Training"}
+      {
+        "@id": "urn:ngm:class:immersive-computing",
+        "label": "Immersive Computing"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality-collaboration",
+        "label": "Augmented Reality Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:remote-assistance",
+        "label": "Remote Assistance"
+      },
+      {
+        "@id": "urn:ngm:class:surgical-simulation",
+        "label": "Surgical Simulation"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-training",
+        "label": "Virtual Training"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"},
-      {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:spatial-anchoring", "label": "Spatial Anchoring"}
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "@id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-anchoring",
+        "label": "Spatial Anchoring"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:webxr", "label": "WebXR"},
-      {"@id": "urn:ngm:class:foveated-rendering", "label": "Foveated Rendering"}
+      {
+        "@id": "urn:ngm:class:web-xr",
+        "label": "WebXR"
+      },
+      {
+        "@id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:enterprise-training", "label": "Enterprise Training"},
-      {"@id": "urn:ngm:class:industrial-maintenance", "label": "Industrial Maintenance"}
+      {
+        "@id": "urn:ngm:class:enterprise-training",
+        "label": "Enterprise Training"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-maintenance",
+        "label": "Industrial Maintenance"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:extended-reality-xr", "label": "Extended Reality (XR)"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"}
+      {
+        "@id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:immersive-applications", "label": "Immersive Applications"},
-    {"@id": "urn:ngm:class:spatial-applications", "label": "Spatial Applications"}
+    {
+      "@id": "urn:ngm:class:immersive-applications",
+      "label": "Immersive Applications"
+    },
+    {
+      "@id": "urn:ngm:class:spatial-applications",
+      "label": "Spatial Applications"
+    }
   ],
   "quality": 0.68,
   "provenance": {

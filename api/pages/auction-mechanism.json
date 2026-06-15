@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:auction-mechanism",
+  "title": "Auction Mechanism",
+  "slug": "auction-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:auction-mechanism",
+  "domain": "data",
+  "definition": "An auction mechanism is a structured rule set for allocating goods or resources and determining prices through competitive bidding among participants with private valuations. It specifies how bids are collected, who wins, and what each winner pays, with classic forms including English, Dutch, first-price sealed-bid, and Vickrey (second-price) auctions, each inducing different bidding incentives. Auction mechanisms are central to market design, online advertising, and resource allocation in multi-agent and computational settings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mechanism-design",
+      "label": "Mechanism Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      },
+      {
+        "id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:economic-mechanism",
+        "label": "Economic Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

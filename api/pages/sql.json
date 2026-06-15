@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:sql",
+  "title": "SQL",
+  "slug": "sql",
+  "public": true,
+  "classIri": "urn:ngm:class:sql",
+  "domain": "data",
+  "definition": "SQL (Structured Query Language) is a declarative, domain-specific language for defining, manipulating, and querying data held in relational database management systems. A user expresses the desired result set through clauses such as SELECT, FROM, WHERE, JOIN, and GROUP BY, while the database query optimiser determines the physical execution plan. Standardised by ANSI and ISO since 1986, SQL spans data definition (DDL), data manipulation (DML), and transaction control, and remains the predominant interface for structured data despite the rise of NoSQL alternatives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:database-system",
+      "label": "Database System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-definition-language",
+        "label": "Data Definition Language"
+      },
+      {
+        "id": "urn:ngm:class:data-manipulation-language",
+        "label": "Data Manipulation Language"
+      },
+      {
+        "id": "urn:ngm:class:query-optimiser",
+        "label": "Query Optimiser"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Database Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      },
+      {
+        "id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:relational-algebra",
+        "label": "Relational Algebra"
+      },
+      {
+        "id": "urn:ngm:class:declarative-query",
+        "label": "Declarative Query"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:nosql",
+        "label": "NoSQL"
+      },
+      {
+        "id": "urn:ngm:class:graph-query-language",
+        "label": "Graph Query Language"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:object-relational-mapping",
+        "label": "Object-Relational Mapping"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      },
+      {
+        "id": "urn:ngm:class:acid-transactions",
+        "label": "ACID Transactions"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-iec-9075",
+        "label": "ISO/IEC 9075"
+      },
+      {
+        "id": "urn:ngm:class:ansi",
+        "label": "ANSI"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:stored-procedure",
+        "label": "Stored Procedure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    }
+  ]
+}

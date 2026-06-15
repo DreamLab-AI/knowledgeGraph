@@ -1,0 +1,36 @@
+- ### Definition
+  - A branch of [[Optimisation]] over discrete sets
+  - Studied within [[Operations Research]]
+  - Relies on [[Graph Theory]]
+  - Contrasts with [[Convex Optimisation]]
+- ### Overview
+  - Combinatorial problems have discrete feasible sets that grow combinatorially with problem size.
+  - Many canonical problems (TSP, knapsack, graph colouring) are NP-hard.
+  - Solution strategies span exact branch-and-bound, approximation and metaheuristic search.
+- ### Key aspects
+  - Discrete feasible solution spaces
+  - Computational complexity and NP-hardness
+  - Exact methods: branch-and-bound, cutting planes
+  - Approximation algorithms with quality bounds
+  - Metaheuristics: local search, genetic algorithms
+- ### Applications
+  - Vehicle routing and logistics scheduling
+  - Network design and facility location
+  - Resource allocation and bin packing
+  - Portfolio and assignment problems
+- ### Relationships
+  - partOf:: [[Optimisation]]
+  - partOf:: [[Operations Research]]
+  - dependsOn:: [[Graph Theory]]
+  - dependsOn:: [[Algorithm]]
+  - enables:: [[Constraint Satisfaction]]
+  - enables:: [[Logistics]]
+  - uses:: [[Integer Programming]]
+  - uses:: [[Linear Programming]]
+  - uses:: [[Genetic Algorithm]]
+  - contrastsWith:: [[Convex Optimisation]]
+  - relatedTo:: [[Mathematical Optimisation]]
+  - requires:: [[Optimisation]]
+  - supports:: [[Decision Making]]
+- ### Provenance
+  - updated:: 2026-06-15

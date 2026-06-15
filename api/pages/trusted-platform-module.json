@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:trusted-platform-module",
+  "title": "Trusted Platform Module",
+  "slug": "trusted-platform-module",
+  "public": true,
+  "classIri": "urn:ngm:class:trusted-platform-module",
+  "domain": "security",
+  "definition": "A Trusted Platform Module (TPM) is a dedicated, tamper-resistant hardware component that provides cryptographic functions and secure storage of keys and platform measurements. It generates and protects keys that never leave the chip in plaintext, records integrity measurements in platform configuration registers, and supports operations such as secure boot and remote attestation. Defined by an open Trusted Computing Group specification, the TPM acts as a hardware root of trust on personal computers, servers and embedded devices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-security-module",
+      "label": "Hardware Security Module"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      },
+      {
+        "id": "urn:ngm:class:non-volatile-memory",
+        "label": "Non-Volatile Memory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tamper-resistance",
+        "label": "Tamper Resistance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:secure-boot",
+        "label": "Secure Boot"
+      },
+      {
+        "id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:root-of-trust",
+        "label": "Root of Trust"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      },
+      {
+        "id": "urn:ngm:class:fido-alliance",
+        "label": "FIDO Alliance"
+      },
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

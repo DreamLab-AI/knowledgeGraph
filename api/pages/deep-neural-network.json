@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:deep-neural-network",
+  "title": "Deep Neural Network",
+  "slug": "deep-neural-network",
+  "public": true,
+  "classIri": "urn:ngm:class:deep-neural-network",
+  "domain": "artificial-intelligence",
+  "definition": "A deep neural network is an artificial neural network with multiple hidden layers between its input and output, enabling it to learn hierarchical representations of data. Each layer applies a learnable linear transformation followed by a non-linear activation, and the network is trained by gradient descent with backpropagation to minimise a loss function. Depth lets the model compose simple features into increasingly abstract ones, which underlies modern deep learning across vision, language, and audio.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:feedforward-neural-network",
+        "label": "Feedforward Neural Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:feedforward-neural-network",
+        "label": "Feedforward Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    }
+  ]
+}

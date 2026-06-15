@@ -125,7 +125,7 @@ public:: true
         "label": "OpenID Connect"
       },
       {
-        "@id": "urn:ngm:class:oauth2",
+        "@id": "urn:ngm:class:oauth-2-0",
         "label": "OAuth2"
       }
     ],

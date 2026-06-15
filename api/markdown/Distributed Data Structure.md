@@ -231,7 +231,7 @@ alias:: DistributedDataStructure
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:centralized-database",
+        "@id": "urn:ngm:class:centralised-database",
         "label": "Centralized Database"
       },
       {

@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:endpoint-detection-and-response",
+  "title": "Endpoint Detection and Response",
+  "slug": "endpoint-detection-and-response",
+  "public": true,
+  "classIri": "urn:ngm:class:endpoint-detection-and-response",
+  "domain": "security",
+  "definition": "Endpoint Detection and Response (EDR) is a cybersecurity technology that continuously records endpoint activity, detects suspicious or malicious behaviour, and provides investigation and response capabilities on hosts such as laptops, servers and workstations. Lightweight agents stream rich telemetry to an analytics backend that applies behavioural detection, threat intelligence and anomaly models to surface and contain threats that bypass preventive controls. EDR enables analysts to investigate incidents, isolate compromised hosts and remediate threats, and increasingly feeds extended detection and response and managed services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:threat-detection",
+      "label": "Threat Detection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:security-operations-centre",
+        "label": "Security Operations Centre"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "id": "urn:ngm:class:soar",
+        "label": "SOAR"
+      },
+      {
+        "id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

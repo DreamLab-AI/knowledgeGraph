@@ -114,7 +114,7 @@ alias:: VirtualReality
         "label": "3D Model"
       },
       {
-        "@id": "urn:ngm:class:openxr",
+        "@id": "urn:ngm:class:open-xr",
         "label": "OpenXR"
       },
       {

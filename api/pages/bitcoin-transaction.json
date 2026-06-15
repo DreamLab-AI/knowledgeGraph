@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:bitcoin-transaction",
+  "title": "Bitcoin Transaction",
+  "slug": "bitcoin-transaction",
+  "public": true,
+  "classIri": "urn:ngm:class:bitcoin-transaction",
+  "domain": "blockchain",
+  "definition": "A Bitcoin transaction is a signed data structure that transfers value on the Bitcoin network by consuming unspent transaction outputs (UTXOs) and creating new ones. Each transaction references prior outputs, provides cryptographic signatures satisfying their spending conditions, and specifies new outputs locked to recipient scripts. Validated transactions are broadcast to the mempool and ultimately confirmed when included in a mined block.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-transaction",
+      "label": "Blockchain Transaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:rgb-protocol",
+        "label": "RGB Protocol"
+      },
+      {
+        "id": "urn:ngm:class:runes-protocol",
+        "label": "Runes Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}
