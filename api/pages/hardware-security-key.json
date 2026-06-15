@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:hardware-security-key",
+  "title": "Hardware Security Key",
+  "slug": "hardware-security-key",
+  "public": true,
+  "classIri": "urn:ngm:class:hardware-security-key",
+  "domain": "security",
+  "definition": "A hardware security key is a dedicated physical authenticator \u2014 typically a USB, NFC, or Bluetooth device \u2014 that stores cryptographic keys and performs origin-bound public-key challenge responses to prove possession of a second factor. By keeping private keys in tamper-resistant hardware and signing only challenges scoped to the legitimate web origin, it provides strong resistance to phishing, credential replay, and man-in-the-middle attacks that defeat one-time-password methods. Hardware keys implement open standards such as FIDO2 and U2F and are a core enabler of passwordless and passkey-based authentication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multi-factor-authentication",
+      "label": "Multi-Factor Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:yubikey",
+        "label": "YubiKey"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:passkey",
+        "label": "Passkey"
+      },
+      {
+        "id": "urn:ngm:class:phishing-resistance",
+        "label": "Phishing Resistance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "id": "urn:ngm:class:webauthn",
+        "label": "WebAuthn"
+      },
+      {
+        "id": "urn:ngm:class:u2f",
+        "label": "U2F"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:password",
+        "label": "Password"
+      },
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

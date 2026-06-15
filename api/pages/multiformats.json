@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:multiformats",
+  "title": "Multiformats",
+  "slug": "multiformats",
+  "public": true,
+  "classIri": "urn:ngm:class:multiformats",
+  "domain": "infrastructure",
+  "definition": "Multiformats is a collection of self-describing protocol and value specifications designed to make data formats future-proof and interoperable across decentralised systems. Rather than hard-coding a single hash, encoding, or address scheme, each multiformat prefixes the value with a compact code declaring which algorithm or format it uses, so software can interpret it unambiguously and evolve without breaking. Components include multihash, multibase, multicodec, and multiaddr, and the family underpins content addressing in IPFS and libp2p.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-addressing",
+      "label": "Content Addressing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      },
+      {
+        "id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralised-file-storage",
+        "label": "Decentralised file storage"
+      },
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    }
+  ]
+}

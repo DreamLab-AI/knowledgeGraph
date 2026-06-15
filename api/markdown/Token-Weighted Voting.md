@@ -103,10 +103,6 @@ public:: true
       {
         "@id": "urn:ngm:class:quorum-threshold",
         "label": "Quorum Threshold"
-      },
-      {
-        "@id": "urn:ngm:class:proposal-mechanism",
-        "label": "Proposal Mechanism"
       }
     ],
     "enables": [

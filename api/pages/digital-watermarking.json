@@ -40,10 +40,6 @@
       {
         "id": "urn:ngm:class:copyright-protection",
         "label": "Copyright Protection"
-      },
-      {
-        "id": "urn:ngm:class:attribution",
-        "label": "Attribution"
       }
     ],
     "dependsOn": [],

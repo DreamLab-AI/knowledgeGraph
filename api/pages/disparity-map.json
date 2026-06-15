@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:disparity-map",
+  "title": "Disparity Map",
+  "slug": "disparity-map",
+  "public": true,
+  "classIri": "urn:ngm:class:disparity-map",
+  "domain": "robotics",
+  "definition": "A disparity map is an image in which each pixel encodes the horizontal displacement of corresponding points between the two views of a stereo pair. Because disparity is inversely proportional to scene depth, the map converts directly to a depth map given the camera baseline and focal length. It is the core intermediate product of passive stereo vision, computed by rectifying the images and searching for correspondences along epipolar lines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stereo-vision",
+      "label": "Stereo Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:depth-map",
+        "label": "Depth Map"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:visual-perception",
+        "label": "Visual Perception"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "id": "urn:ngm:class:stereo-camera",
+        "label": "Stereo Camera"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    }
+  ]
+}

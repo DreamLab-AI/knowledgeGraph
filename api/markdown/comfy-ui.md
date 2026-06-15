@@ -1,0 +1,38 @@
+- ### Definition
+  - [[Comfy Ui]] is an [[Open Source Software]] [[Node Graph]] for composing [[Diffusion Model]] pipelines, a [[Generative AI]] tool that drives [[Image Generation]] with [[Stable Diffusion]].
+- ### Overview
+  - ComfyUI represents a generation pipeline as a directed graph of nodes for loading models, encoding prompts, sampling latents and decoding images.
+  - The explicit graph exposes every stage, giving advanced users precise control over conditioning, sampling schedules and post-processing.
+  - Workflows are serialisable, so a complete pipeline can be saved, shared and reproduced exactly.
+  - A rich ecosystem of custom nodes extends it to video, upscaling, ControlNet conditioning and animation.
+- ### Mechanisms
+  - Node-graph editor wiring inputs and outputs between processing stages.
+  - Checkpoint, VAE and LoRA loader nodes for model components.
+  - Sampler nodes implementing diffusion denoising schedules.
+  - Conditioning nodes for prompts, ControlNet and image-to-image guidance.
+  - Workflow serialisation enabling reproducible, shareable graphs.
+- ### Applications
+  - Advanced text-to-image and image-to-image generation with fine control.
+  - Inpainting, outpainting and ControlNet-guided composition.
+  - Batch and automated generation pipelines for production art.
+  - Experimentation with custom samplers, models and post-processing chains.
+- ### Relationships
+  - partOf:: [[Generative AI]]
+  - requires:: [[Diffusion Model]]
+  - requires:: [[Checkpoint Model]]
+  - uses:: [[Stable Diffusion]]
+  - uses:: [[Latent Diffusion]]
+  - uses:: [[Node Graph]]
+  - enables:: [[Image Generation]]
+  - enables:: [[Image Synthesis]]
+  - supports:: [[Prompt Engineering]]
+  - supports:: [[ControlNet]]
+  - implements:: [[Workflow Automation]]
+  - bridgesTo:: [[User Interface]]
+  - bridgesTo:: [[Open Source Software]]
+  - relatedTo:: [[Generative Model]]
+  - relatedTo:: [[Inpainting]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - quality:: 0.62

@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:singularity-analysis",
+  "title": "Singularity Analysis",
+  "slug": "singularity-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:singularity-analysis",
+  "domain": "robotics",
+  "definition": "Singularity analysis is the study of robot configurations at which the manipulator Jacobian loses rank, causing a loss or gain of instantaneous degrees of freedom. At singularities the robot cannot move in certain Cartesian directions, joint velocities may diverge, and force or motion control degrades. Identifying and avoiding singularities is essential for safe, well-conditioned trajectory planning and control of robotic arms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:kinematics",
+      "label": "Kinematics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      },
+      {
+        "id": "urn:ngm:class:kinematics-model",
+        "label": "Kinematics Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:workspace-analysis",
+        "label": "Workspace Analysis"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:workspace-analysis",
+        "label": "Workspace Analysis"
+      },
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:singularity",
+        "label": "Singularity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "differential-kinematics",
+      "label": "Differential Kinematics"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    }
+  ]
+}

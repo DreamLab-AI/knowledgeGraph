@@ -122,10 +122,6 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:opacity",
-        "label": "Opacity"
-      },
-      {
         "@id": "urn:ngm:class:black-box-model",
         "label": "Black-Box Model"
       }

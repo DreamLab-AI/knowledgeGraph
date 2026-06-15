@@ -1,0 +1,40 @@
+- ### Definition
+  - The [[Securities Act 1933]] is the core US statute requiring registration and disclosure for public securities offerings.
+  - It sits within [[Securities Law]] and is enforced through [[Securities Regulation]] and broader [[Financial Regulation]].
+  - In token economies it interacts with the [[Howey Test]] to classify whether a [[Security Token]] offering is regulated.
+- ### Overview
+  - Enacted in the aftermath of the 1929 crash, the Act established the principle that investors must receive material information before buying securities.
+  - Its two core goals are mandatory disclosure of financial information and prohibition of deceit and misrepresentation in securities sales.
+  - Registration statements and prospectuses are the primary disclosure instruments it mandates.
+  - The Act provides exemptions, such as private placements, that shape how offerings are structured.
+- ### Key aspects
+  - Registration: most public offerings must be registered before sale unless an exemption applies.
+  - Disclosure: issuers must provide truthful, complete material information to prospective buyers.
+  - Liability: the Act creates civil liability for material misstatements or omissions.
+  - Exemptions: private and limited offerings can avoid full registration under defined conditions.
+- ### Mechanisms
+  - The [[Howey Test]], derived from later case law, determines when an instrument is an investment contract subject to the Act.
+  - Issuers file registration statements that regulators review for completeness.
+  - Anti-fraud provisions allow enforcement and investor recovery for misrepresentation.
+  - Exemption frameworks let qualifying offerings proceed with reduced disclosure.
+- ### Applications
+  - Classifying whether a [[Security Token]] sale is an unregistered securities offering.
+  - Structuring compliant token sales through registration or exemption pathways.
+  - Underpinning [[Regulatory Compliance]] programmes for digital-asset issuers.
+  - Informing [[Investor Protection]] policy for novel financial instruments.
+- ### Relationships
+  - partOf:: [[Securities Law]]
+  - implements:: [[Investor Protection]]
+  - standardizedBy:: [[Securities Regulation]]
+  - dependsOn:: [[Regulatory Compliance]]
+  - requires:: [[Financial Regulation]]
+  - enables:: [[Investor Protection]]
+  - uses:: [[Howey Test]]
+  - relatedTo:: [[Security Token]]
+  - relatedTo:: [[Regulatory Framework]]
+  - contrastsWith:: [[Financial Regulation]]
+  - bridgesTo:: [[Security Token]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

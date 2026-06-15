@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:third-party-certification",
+  "title": "Third Party Certification",
+  "slug": "third-party-certification",
+  "public": true,
+  "classIri": "urn:ngm:class:third-party-certification",
+  "domain": "artificial-intelligence",
+  "definition": "Third-party certification is a conformity-assessment arrangement in which an independent accredited body, with no commercial interest in the outcome, evaluates a product, system or process against a defined standard and issues a certificate attesting to conformity. Its independence distinguishes it from first-party self-declaration and second-party customer assessment, lending the result greater credibility and market trust. In artificial intelligence it is increasingly proposed as a mechanism to assure that systems meet safety, fairness and governance requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:certification",
+      "label": "Certification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-audit",
+        "label": "AI Audit"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      },
+      {
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

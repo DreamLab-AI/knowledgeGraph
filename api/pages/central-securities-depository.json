@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:central-securities-depository",
+  "title": "Central Securities Depository",
+  "slug": "central-securities-depository",
+  "public": true,
+  "classIri": "urn:ngm:class:central-securities-depository",
+  "domain": "finance",
+  "definition": "A central securities depository (CSD) is a financial market infrastructure that holds securities in dematerialised or immobilised form and enables their transfer through book-entry, providing safekeeping and settlement of trades. It maintains the authoritative record of securities ownership and supports the final leg of post-trade processing, often in conjunction with clearing houses. By centralising custody and settlement, a CSD reduces operational risk and is foundational to the integrity of securities markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-market-infrastructure",
+      "label": "Financial Market Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:settlement-finality",
+        "label": "Settlement Finality"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:delivery-versus-payment",
+        "label": "Delivery Versus Payment"
+      },
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      },
+      {
+        "id": "urn:ngm:class:clearing-and-settlement",
+        "label": "Clearing And Settlement"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-market-infrastructure",
+        "label": "Financial Market Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:netting",
+        "label": "Netting"
+      },
+      {
+        "id": "urn:ngm:class:trade-execution",
+        "label": "Trade Execution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    }
+  ]
+}

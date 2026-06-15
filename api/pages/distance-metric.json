@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:distance-metric",
+  "title": "Distance Metric",
+  "slug": "distance-metric",
+  "public": true,
+  "classIri": "urn:ngm:class:distance-metric",
+  "domain": "machine-learning",
+  "definition": "A distance metric is a function that quantifies how dissimilar two data points are, satisfying non-negativity, identity, symmetry and the triangle inequality. In machine learning it defines the geometry of a feature space and thereby governs nearest-neighbour search, clustering and similarity-based retrieval. Choosing or learning an appropriate metric is often as important as the model itself for tasks driven by proximity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Nearest Neighbor Search"
+      },
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "spatial-index",
+      "label": "Spatial Index"
+    }
+  ]
+}

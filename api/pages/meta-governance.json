@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:meta-governance",
+  "title": "Meta Governance",
+  "slug": "meta-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:meta-governance",
+  "domain": "blockchain",
+  "definition": "Meta governance is the practice of governing the governance process itself, encompassing the rules, parameters, and mechanisms that determine how decisions are made, how voting power is allocated, and how the decision-making system can be amended. In decentralised protocols it often refers to one entity wielding governance rights over another, such as a protocol holding voting tokens of the protocols it integrates. Meta governance addresses the meta-level design of decision rights, escalation paths, and the evolution of governance structures over time.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-governance",
+      "label": "Decentralized Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:voting-system",
+        "label": "Voting System"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:polycentric-governance",
+        "label": "Polycentric Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:polycentric-governance",
+        "label": "Polycentric Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:polycentric-governance",
+        "label": "Polycentric Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

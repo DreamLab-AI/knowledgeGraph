@@ -1,0 +1,40 @@
+- ### Definition
+  - An [[Algorithmic Stablecoin]] targets a stable [[Peg]] through programmatic supply control and incentives rather than holding full external reserves.
+  - It is a variety of [[Stablecoin]] whose stability rests on [[Smart Contract]] logic and market arbitrage.
+  - It contrasts sharply with reserve-backed designs and has a record of severe de-peg events.
+- ### Overview
+  - When price exceeds the peg the protocol mints new supply; when it falls below, it contracts supply or rewards burning, nudging price toward target.
+  - Many designs pair the stable asset with an absorber/governance token that soaks up volatility, an arrangement vulnerable to reflexive collapse.
+  - It relies on a [[Price Oracle]] for market price and on continuous arbitrage demand to enforce the [[Peg]].
+- ### Key aspects
+  - Under-collateralised or fully algorithmic backing.
+  - Supply expansion and contraction driven by [[Smart Contract]] rules.
+  - A companion volatility token absorbing demand shocks.
+  - Fragility under loss-of-confidence and reflexive death spirals.
+- ### Mechanisms
+  - Mint/burn rebasing or bond-and-coupon incentive schemes.
+  - Seigniorage distribution to absorber-token holders.
+  - Oracle-driven price feedback loops.
+  - Arbitrage incentives to restore the [[Peg]].
+- ### Applications
+  - Capital-efficient stable units within [[Decentralised Finance]].
+  - Censorship-resistant on-chain settlement assets.
+  - Experimental monetary designs studied against [[Tether]] and [[DAI]].
+  - Yield and liquidity strategies built on protocol incentives.
+- ### Relationships
+  - contrastsWith:: [[Stablecoin]]
+  - implements:: [[Smart Contract]]
+  - enables:: [[Decentralised Finance]]
+  - uses:: [[Price Oracle]]
+  - dependsOn:: [[Price Oracle]]
+  - requires:: [[Smart Contract]]
+  - partOf:: [[Decentralised Finance]]
+  - relatedTo:: [[Tether]]
+  - relatedTo:: [[DAI]]
+  - relatedTo:: [[Terra]]
+  - relatedTo:: [[USD Coin]]
+  - supports:: [[Peg]]
+- ### Provenance
+  - inferenceRule:: GapMaterialisation
+  - attributedTo:: did:nostr:ontology-mesh
+  - updated:: 2026-06-15

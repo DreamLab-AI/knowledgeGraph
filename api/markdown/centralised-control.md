@@ -1,0 +1,39 @@
+- ### Definition
+  - [[Centralised Control]] concentrates authority within [[Governance]] structures.
+  - It contrasts sharply with [[Decentralisation]] and [[Decentralised Governance]].
+  - It relies on [[Hierarchical Organisation]] and is exposed to a [[Single Point Of Failure]].
+- ### Overview
+  - Under centralised control a single locus holds the power to set rules, allocate resources, and enforce outcomes.
+  - It yields fast, coherent decisions and clear accountability but concentrates risk and power.
+  - Failure or capture of the central authority compromises the whole system, the classic single point of failure.
+  - Many distributed and blockchain systems are explicitly designed to remove or constrain centralised control.
+- ### Key aspects
+  - Concentrated authority — decisions flow from a single command point.
+  - Hierarchical coordination — control propagates through layered chains of command.
+  - Single point of failure — compromise of the centre cascades to the whole.
+  - Accountability clarity — responsibility is unambiguous but power is unchecked.
+  - Efficiency versus resilience — speed of decision traded against robustness and trust minimisation.
+- ### Applications
+  - Corporate command structures and traditional institutions.
+  - Centralised exchanges and custodial financial services.
+  - Cloud platforms operated by a single provider.
+  - Comparative baseline for decentralised autonomous organisations.
+- ### Relationships
+  - Centralised control is a mode of governance and the principal contrast to decentralisation.
+  - partOf:: [[Governance]]
+  - contrastsWith:: [[Decentralisation]]
+  - contrastsWith:: [[Decentralised Governance]]
+  - contrastsWith:: [[Distributed Governance]]
+  - requires:: [[Access Control]]
+  - enables:: [[Hierarchical Organisation]]
+  - dependsOn:: [[Single Point Of Failure]]
+  - relatedTo:: [[Community Governance]]
+  - relatedTo:: [[Multi-Agent Coordination]]
+  - uses:: [[Access Control]]
+  - supports:: [[Hierarchical Organisation]]
+  - bridgesTo:: [[Governance]]
+  - implements:: [[Governance]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation inference over the narrativegoldmine ontology mesh
+  - attributedTo:: did:nostr:ontology-mesh

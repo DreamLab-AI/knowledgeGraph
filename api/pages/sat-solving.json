@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:sat-solving",
+  "title": "Sat Solving",
+  "slug": "sat-solving",
+  "public": true,
+  "classIri": "urn:ngm:class:sat-solving",
+  "domain": "ai",
+  "definition": "SAT solving is the algorithmic process of determining whether a propositional logic formula, typically in conjunctive normal form, has a satisfying truth assignment \u2014 the Boolean satisfiability problem. Although SAT is the canonical NP-complete problem, modern conflict-driven clause-learning solvers routinely decide instances with millions of variables and clauses, making SAT a practical engine for many computational tasks. SAT solving uses systematic search with unit propagation, clause learning, and intelligent backtracking. It underpins formal verification, automated planning, and constraint solving, and is closely related to satisfiability-modulo-theories reasoning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automated-reasoning",
+      "label": "Automated Reasoning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:constraint-solver",
+        "label": "Constraint Solver"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction-problem",
+        "label": "Constraint Satisfaction Problem"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:model-checking",
+        "label": "Model Checking"
+      },
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:propositional-logic",
+        "label": "Propositional Logic"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
+      },
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "Verification"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "id": "urn:ngm:class:electronic-design-automation",
+        "label": "Electronic Design Automation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

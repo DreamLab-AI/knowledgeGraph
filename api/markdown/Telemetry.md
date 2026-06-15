@@ -89,7 +89,7 @@ public:: true
         "label": "Prometheus"
       },
       {
-        "@id": "urn:ngm:class:dashboard",
+        "@id": "urn:ngm:class:monitoring-dashboard",
         "label": "Dashboard"
       },
       {

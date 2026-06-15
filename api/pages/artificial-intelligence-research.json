@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:artificial-intelligence-research",
+  "title": "Artificial Intelligence Research",
+  "slug": "artificial-intelligence-research",
+  "public": true,
+  "classIri": "urn:ngm:class:artificial-intelligence-research",
+  "domain": "ai",
+  "definition": "Artificial intelligence research is the scientific and engineering discipline concerned with understanding and building systems that exhibit intelligent behaviour, including perception, reasoning, learning, planning and language. It spans theoretical foundations, algorithmic innovation and empirical evaluation, and feeds discoveries into subfields such as machine learning, computer vision and natural language processing. The field advances through publication, benchmarking and reproducible experimentation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:research-and-development",
+      "label": "Research and Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-discovery",
+        "label": "Knowledge Discovery"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

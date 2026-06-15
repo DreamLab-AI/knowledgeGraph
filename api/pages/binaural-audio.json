@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:binaural-audio",
+  "title": "Binaural Audio",
+  "slug": "binaural-audio",
+  "public": true,
+  "classIri": "urn:ngm:class:binaural-audio",
+  "domain": "spatial-computing",
+  "definition": "Binaural audio is two-channel sound designed to reproduce the directional and spatial cues a listener would experience naturally, delivering an immersive three-dimensional image over headphones. It can be captured with a dummy head or in-ear microphones, or synthesised by convolving sources with head-related transfer functions. By preserving interaural time and level differences and pinna spectral cues, binaural audio conveys not just left-right panning but full surrounding placement including elevation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-audio",
+      "label": "Spatial Audio"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:head-related-transfer-function",
+        "label": "Head Related Transfer Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-audio",
+        "label": "Immersive Audio"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:immersive-audio",
+        "label": "Immersive Audio"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ambisonics",
+        "label": "Ambisonics"
+      },
+      {
+        "id": "urn:ngm:class:microphone-array",
+        "label": "Microphone Array"
+      },
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      },
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:rsa",
+  "title": "Rsa",
+  "slug": "rsa",
+  "public": true,
+  "classIri": "urn:ngm:class:rsa",
+  "domain": "security",
+  "definition": "RSA is a public-key cryptosystem, named after Rivest, Shamir and Adleman, whose security rests on the computational difficulty of factoring the product of two large prime numbers. It supports both encryption \u2014 where a message encrypted with a public key can only be decrypted with the corresponding private key \u2014 and digital signatures, where a private key signs data that anyone can verify with the public key. As one of the earliest and most widely deployed asymmetric algorithms, RSA underpins much of the legacy public-key infrastructure, though it is gradually being supplemented by faster elliptic-curve schemes and, prospectively, post-quantum alternatives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:public-key-cryptography",
+      "label": "Public Key Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:ed25519",
+        "label": "Ed25519"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:key-generation",
+        "label": "Key Generation"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:asymmetric-cryptography",
+        "label": "Asymmetric Cryptography"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    }
+  ]
+}

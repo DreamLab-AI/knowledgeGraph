@@ -1,0 +1,126 @@
+{
+  "id": "urn:visionflow:page:proof-of-spacetime",
+  "title": "Proof Of Spacetime",
+  "slug": "proof-of-spacetime",
+  "public": true,
+  "classIri": "urn:ngm:class:proof-of-spacetime",
+  "domain": "blockchain",
+  "definition": "Proof of Spacetime (PoSt) is a cryptographic consensus mechanism in which a participant repeatedly proves that it has continuously stored a specific set of data over a period of time, rather than expending computation as in proof of work. Used by decentralised storage networks such as Filecoin, it combines storage proofs with time-based challenges so that providers cannot reclaim space without losing the ability to answer. This ties block production and rewards to verifiable, useful storage capacity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      },
+      {
+        "id": "urn:ngm:class:file-storage",
+        "label": "File Storage"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-storage",
+        "label": "Decentralized Storage"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      },
+      {
+        "id": "urn:ngm:class:block-reward",
+        "label": "Block Reward"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

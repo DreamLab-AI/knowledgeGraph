@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:thermodynamics",
+  "title": "Thermodynamics",
+  "slug": "thermodynamics",
+  "public": true,
+  "classIri": "urn:ngm:class:thermodynamics",
+  "domain": "infrastructure",
+  "definition": "Thermodynamics is the branch of physics concerned with heat, work, temperature and energy, and the laws governing their transformation and the direction of spontaneous processes. Its core principles - conservation of energy, the increase of entropy, and absolute-zero limits - underpin engineering of engines, cooling and energy systems. In computing infrastructure it constrains power consumption, heat dissipation and the efficiency of data-centre cooling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:thermal-management",
+        "label": "Thermal Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:green-computing",
+        "label": "Green Computing"
+      },
+      {
+        "id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistical-mechanics",
+        "label": "Statistical Mechanics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:thermal-management",
+        "label": "Thermal Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:power-consumption",
+        "label": "Power Consumption"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:statistical-mechanics",
+        "label": "Statistical Mechanics"
+      },
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    }
+  ]
+}

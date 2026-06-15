@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:finite-state-machine",
+  "title": "Finite State Machine",
+  "slug": "finite-state-machine",
+  "public": true,
+  "classIri": "urn:ngm:class:finite-state-machine",
+  "domain": "artificial-intelligence",
+  "definition": "A finite state machine (FSM) is an abstract computational model consisting of a finite set of states, a set of input events, and a transition function that maps a current state and input to a next state. At any moment the machine occupies exactly one state, and its behaviour is fully determined by its current state and the inputs it receives. FSMs are widely used to specify control logic, protocol behaviour, and reactive systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:state-machine",
+      "label": "State Machine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "id": "urn:ngm:class:regular-expression",
+        "label": "Regular Expression"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:protocol-design",
+        "label": "Protocol Design"
+      },
+      {
+        "id": "urn:ngm:class:workflow-engine",
+        "label": "Workflow Engine"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:game-ai",
+        "label": "Game AI"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:turing-machine",
+        "label": "Turing Machine"
+      },
+      {
+        "id": "urn:ngm:class:behaviour-tree",
+        "label": "Behaviour Tree"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:regular-expression",
+        "label": "Regular Expression"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:protocol-design",
+        "label": "Protocol Design"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-ai",
+        "label": "Game AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    }
+  ]
+}

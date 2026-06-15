@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:workspace-analysis",
+  "title": "Workspace Analysis",
+  "slug": "workspace-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:workspace-analysis",
+  "domain": "robotics",
+  "definition": "Workspace analysis determines the set of poses a robot's end-effector can reach, characterising the reachable and dexterous workspaces of a manipulator. It uses forward kinematics and joint-limit constraints to map the volume and shape of attainable positions and orientations. Workspace analysis guides robot selection, cell layout, task placement and reachability assessment for a given manipulator.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:kinematics",
+      "label": "Kinematics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kinematics-model",
+        "label": "Kinematics Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:singularity-analysis",
+        "label": "Singularity Analysis"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:kinematics-model",
+        "label": "Kinematics Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:singularity-analysis",
+        "label": "Singularity Analysis"
+      },
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:second-order-optimisation",
+  "title": "Second Order Optimisation",
+  "slug": "second-order-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:second-order-optimisation",
+  "domain": "machine-learning",
+  "definition": "Second-order optimisation is a family of optimisation methods that use second-derivative (curvature) information, typically the Hessian matrix or its approximations, to determine search directions and step sizes. By accounting for the curvature of the objective, these methods can converge in far fewer iterations than first-order methods near a minimum, at the cost of higher per-iteration computation and memory. Examples include Newton's method, quasi-Newton methods such as L-BFGS, and conjugate-gradient approaches.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:convex-optimisation",
+      "label": "Convex Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:entropy-coding",
+  "title": "Entropy Coding",
+  "slug": "entropy-coding",
+  "public": true,
+  "classIri": "urn:ngm:class:entropy-coding",
+  "domain": "infrastructure",
+  "definition": "Entropy coding is a class of lossless data-compression techniques that assign shorter codewords to more frequent symbols and longer codewords to rarer ones, approaching the information-theoretic entropy limit of a source. Methods such as Huffman coding and arithmetic coding form the final, lossless stage of most image, audio, and video codecs, packing quantised data into a compact bitstream. Because it discards no information, entropy coding can be perfectly reversed during decoding.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lossless-compression",
+      "label": "Lossless Compression"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-encoding",
+        "label": "Data Encoding"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "id": "urn:ngm:class:image-compression",
+        "label": "Image Compression"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:lossless-compression",
+        "label": "Lossless Compression"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lossy-compression",
+        "label": "Lossy Compression"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:image-compression",
+        "label": "Image Compression"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "id": "urn:ngm:class:bitrate",
+        "label": "Bitrate"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:codec",
+        "label": "Codec"
+      },
+      {
+        "id": "urn:ngm:class:data-encoding",
+        "label": "Data Encoding"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

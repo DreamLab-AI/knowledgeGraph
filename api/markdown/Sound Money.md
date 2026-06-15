@@ -116,7 +116,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:decentralised-consensus",
+        "@id": "urn:ngm:class:consensus",
         "label": "Decentralised Consensus"
       },
       {

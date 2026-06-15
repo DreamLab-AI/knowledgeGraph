@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:gaussian-mixture-model",
+  "title": "Gaussian Mixture Model",
+  "slug": "gaussian-mixture-model",
+  "public": true,
+  "classIri": "urn:ngm:class:gaussian-mixture-model",
+  "domain": "machine-learning",
+  "definition": "A Gaussian mixture model is a probabilistic model that represents a population as a weighted combination of several Gaussian distributions, each describing a latent subpopulation or cluster. Its parameters \u2014 the mixing weights, means, and covariance matrices \u2014 are typically estimated by the expectation-maximisation algorithm, which iteratively assigns soft responsibilities to data points and updates the component parameters. As a generative latent-variable model, it supports soft clustering, density estimation, and probabilistic classification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:latent-variable-model",
+      "label": "Latent Variable Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "id": "urn:ngm:class:density-estimation",
+        "label": "Density Estimation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "id": "urn:ngm:class:density-estimation",
+        "label": "Density Estimation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:latent-variable-model",
+        "label": "Latent Variable Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

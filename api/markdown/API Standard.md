@@ -100,7 +100,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:data-format-specification",
+        "@id": "urn:ngm:class:data-format-standard",
         "label": "Data Format Specification"
       },
       {

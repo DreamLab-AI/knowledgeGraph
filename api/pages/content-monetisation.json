@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:content-monetisation",
+  "title": "Content Monetisation",
+  "slug": "content-monetisation",
+  "public": true,
+  "classIri": "urn:ngm:class:content-monetisation",
+  "domain": "governance",
+  "definition": "Content monetisation is the set of mechanisms by which creators and rights-holders earn revenue from digital media, including advertising, subscriptions, micropayments, licensing and royalty distribution. Governance of these mechanisms covers rights attribution, usage tracking and the fair allocation of proceeds among contributors. Emerging models use programmable payments and on-chain royalties to automate compensation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property Rights Framework"
+      },
+      {
+        "id": "urn:ngm:class:content-authentication",
+        "label": "Content Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:creator-monetization",
+        "label": "Creator Monetization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:royalty-distribution",
+        "label": "Royalty Distribution"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:creator-royalties",
+        "label": "Creator Royalties"
+      },
+      {
+        "id": "urn:ngm:class:royalty-distribution",
+        "label": "Royalty Distribution"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:x402-and-l402-payment-protocols",
+        "label": "x402 and l402 payment protocols"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

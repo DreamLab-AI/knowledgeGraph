@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:metaverse-commerce",
+  "title": "Metaverse Commerce",
+  "slug": "metaverse-commerce",
+  "public": true,
+  "classIri": "urn:ngm:class:metaverse-commerce",
+  "domain": "spatial-computing",
+  "definition": "Metaverse commerce is the buying, selling and trading of goods, services and experiences within immersive virtual worlds and spatial environments. It spans virtual goods, wearables and real estate, branded experiences and the digital twins of physical products, often settled with virtual currencies or tokens. Metaverse commerce extends e-commerce into embodied, social and persistent 3D spaces where avatars browse, transact and own digital assets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:marketplace-integration",
+        "label": "Marketplace Integration"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "id": "urn:ngm:class:virtual-currency",
+        "label": "Virtual Currency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:marketplace",
+        "label": "Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "marketplace-integration",
+      "label": "Marketplace Integration"
+    }
+  ]
+}

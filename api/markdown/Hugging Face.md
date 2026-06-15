@@ -136,7 +136,7 @@ alias:: HuggingFace
         "label": "Low-Rank Adaptation"
       },
       {
-        "@id": "urn:ngm:class:model-hub",
+        "@id": "urn:ngm:class:hugging-face-model-hub",
         "label": "Model Hub"
       },
       {

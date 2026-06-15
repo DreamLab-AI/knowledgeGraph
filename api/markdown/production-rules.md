@@ -1,0 +1,30 @@
+- ### Definition
+- Production rules are if-then statements that pair a condition with an action, encoding knowledge in a form an [[Inference Engine]] can apply mechanically. They are the core formalism of [[Knowledge Representation]] in rule-based [[Symbolic AI]].
+- A set of rules plus a working memory and an interpreter constitutes a production system, the engine behind classical [[Expert Systems]].
+- ### Overview
+- Each rule names the situation in which it is applicable and the conclusion or action it licenses. The inference engine cycles through a match-resolve-act loop: it finds all rules whose conditions hold, resolves which one to fire when several qualify, and applies it.
+- Because each rule is an independent, human-readable unit, knowledge can be added, removed, or audited without rewriting a monolithic program.
+- This transparency made production rules the dominant representation during the expert-systems era and keeps them relevant in business and compliance rule engines.
+- ### Mechanisms
+- Pattern matching of rule antecedents against facts in the [[Knowledge Base]].
+- Conflict resolution to choose among simultaneously eligible rules.
+- Forward chaining (data-driven) and backward chaining (goal-driven) inference strategies.
+- Explanation generation by tracing the chain of fired rules.
+- ### Applications
+- Diagnostic and advisory expert systems in medicine, finance, and engineering.
+- Business rule management and policy automation.
+- Configuration and constraint checking.
+- Cognitive architectures modelling human problem solving.
+- ### Relationships
+- subClassOf:: [[Knowledge Representation]]
+- hasPart:: [[Inference Engine]]
+- hasPart:: [[Conflict Resolution]]
+- requires:: [[Knowledge Base]]
+- uses:: [[Knowledge Base]]
+- partOf:: [[Expert Systems]]
+- enables:: [[Expert Systems]]
+- implements:: [[Knowledge Representation]]
+- supports:: [[Symbolic AI]]
+- relatedTo:: [[Symbolic AI]]
+- ### Provenance
+- updated:: 2026-06-15

@@ -1,0 +1,35 @@
+- ### Definition
+- An RSA signature applies the RSA trapdoor to a hashed message, producing a value that anyone holding the [[Public-Key Cryptography]] public key can verify. It is a concrete instance of a [[Digital Signature]] that relies on a [[Cryptographic Hash Function]] and the hardness of integer factorisation.
+- Verification proves both authenticity and integrity: only the private-key holder could have produced the signature over the given digest.
+- ### Overview
+- RSA, introduced in the late 1970s, remains one of the most widely deployed asymmetric primitives. Signing computes the signature from the message hash using the private exponent; verification raises the signature to the public exponent and compares against the recomputed hash.
+- Padding is essential to security. Deterministic PKCS#1 v1.5 padding is still common for compatibility, while the probabilistic PSS padding offers stronger, provable security guarantees.
+- Compared with elliptic-curve schemes, RSA signatures use substantially larger keys (commonly 2048 to 4096 bits) and larger signatures, but benefit from broad interoperability and fast verification.
+- ### Mechanisms
+- Key generation: choose two large primes, compute the modulus and totient, and derive matching public and private exponents.
+- Hashing: reduce the message to a fixed-length digest using a collision-resistant hash function.
+- Padding: encode the digest with PKCS#1 v1.5 or PSS to prevent forgery and malleability.
+- Signing: apply the private exponent modulo the modulus to the padded digest.
+- Verification: apply the public exponent, unpad, and compare to the recomputed digest.
+- ### Applications
+- TLS certificates and certificate authorities frequently use RSA signatures for chain-of-trust authentication.
+- Code signing of software packages and firmware updates.
+- Email security (S/MIME) and document signing.
+- Legacy and interoperability contexts where elliptic-curve support is incomplete.
+- ### Relationships
+- partOf:: [[Public-Key Cryptography]]
+- requires:: [[Cryptographic Hash Function]]
+- requires:: [[Public-Key Cryptography]]
+- uses:: [[Cryptographic Hash Function]]
+- enables:: [[Digital Signature]]
+- enables:: [[Code Signing]]
+- supports:: [[Certificate Authority]]
+- contrastsWith:: [[ECDSA]]
+- contrastsWith:: [[Post-Quantum Cryptography]]
+- relatedTo:: [[Cryptographic Signature]]
+- relatedTo:: [[Key Exchange]]
+- bridgesTo:: [[Security]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

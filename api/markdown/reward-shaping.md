@@ -1,0 +1,35 @@
+- ### Definition
+  - [[Reward Shaping]] adds intermediate signals to a [[Reward Function]] to accelerate [[Reinforcement Learning]], using [[Potential-Based Reward Shaping]] to preserve the optimal policy of the underlying [[Markov Decision Process]].
+- ### Overview
+  - Reward shaping injects extra reward terms that make the gradient of progress denser and easier to follow.
+  - Naive shaping risks changing the optimal policy and inducing reward hacking, where the agent exploits the proxy signal.
+  - Potential-based reward shaping defines the extra reward as the difference of a potential function over consecutive states, which provably leaves the optimal policy unchanged.
+  - Shaping is especially valuable in sparse-reward tasks where the agent rarely sees informative feedback.
+- ### Mechanisms
+  - Potential function over states whose differences form the shaping reward.
+  - Difference-of-potentials formula F(s,s') = gamma*phi(s') - phi(s).
+  - Curriculum and distance-based heuristics for designing potentials.
+  - Guarding against reward hacking by validating that proxy and true objectives align.
+  - Integration with value-function estimates as a learned potential.
+- ### Applications
+  - Speeding up training in sparse-reward robotics and control tasks.
+  - Guiding exploration in navigation and game-playing agents.
+  - Encoding domain knowledge as soft guidance without overriding the goal.
+  - Stabilising learning in long-horizon decision problems.
+- ### Relationships
+  - uses:: [[Reward Function]]
+  - uses:: [[Markov Decision Process]]
+  - supports:: [[Reinforcement Learning]]
+  - supports:: [[Value Function]]
+  - partOf:: [[Reward Engineering]]
+  - enables:: [[Agent Training]]
+  - requires:: [[Reward Function]]
+  - contrastsWith:: [[Reward Hacking]]
+  - contrastsWith:: [[Sparse Reward]]
+  - implements:: [[Potential-Based Reward Shaping]]
+  - relatedTo:: [[Inverse Reinforcement Learning]]
+  - relatedTo:: [[Exploration-Exploitation]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - quality:: 0.62

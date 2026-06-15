@@ -181,7 +181,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:scientific-reproducibility",
+        "@id": "urn:ngm:class:reproducibility",
         "label": "Scientific Reproducibility"
       }
     ],

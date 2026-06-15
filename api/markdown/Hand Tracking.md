@@ -432,7 +432,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:accessibility-technology",
+        "@id": "urn:ngm:class:accessibility",
         "label": "Accessibility Technology"
       },
       {

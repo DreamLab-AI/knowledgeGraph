@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:pulse-width-modulation",
+  "title": "Pulse Width Modulation",
+  "slug": "pulse-width-modulation",
+  "public": true,
+  "classIri": "urn:ngm:class:pulse-width-modulation",
+  "domain": "robotics",
+  "definition": "Pulse-width modulation (PWM) is a technique that controls the average power delivered to a load by rapidly switching a signal between on and off and varying the proportion of on-time, the duty cycle. Because the switching frequency is high relative to the load's response, the load reacts to the average value, yielding efficient, near-lossless control of voltage, current, or position. It is ubiquitous in motor drives, power conversion, and digital generation of analogue-like outputs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:duty-cycle",
+        "label": "Duty Cycle"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      },
+      {
+        "id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motor-control",
+        "label": "Motor Control"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:duty-cycle",
+        "label": "Duty Cycle"
+      },
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:dc-motor",
+        "label": "DC Motor"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:motor-control",
+        "label": "Motor Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:servo-motor",
+        "label": "Servo Motor"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

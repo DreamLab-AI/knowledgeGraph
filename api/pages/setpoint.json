@@ -1,0 +1,118 @@
+{
+  "id": "urn:visionflow:page:setpoint",
+  "title": "Setpoint",
+  "slug": "setpoint",
+  "public": true,
+  "classIri": "urn:ngm:class:setpoint",
+  "domain": "robotics",
+  "definition": "A setpoint is the desired target value that a control system attempts to maintain for a measured process variable, serving as the reference against which the controller compares the actual measurement. The difference between setpoint and measured value is the error signal that drives corrective action in a feedback loop. Setpoints can be fixed, scheduled, or continuously varying, as when a controller tracks a moving reference trajectory.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:closed-loop-control",
+      "label": "Closed-Loop Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:disturbance-rejection",
+        "label": "Disturbance Rejection"
+      },
+      {
+        "id": "urn:ngm:class:stability",
+        "label": "Stability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:disturbance-rejection",
+        "label": "Disturbance Rejection"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:pid-controller",
+        "label": "PID Controller"
+      },
+      {
+        "id": "urn:ngm:class:process-control",
+        "label": "Process Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:pid-control",
+        "label": "PID Control"
+      },
+      {
+        "id": "urn:ngm:class:trajectory",
+        "label": "Trajectory"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

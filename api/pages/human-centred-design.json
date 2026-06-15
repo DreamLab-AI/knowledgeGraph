@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:human-centred-design",
+  "title": "Human Centred Design",
+  "slug": "human-centred-design",
+  "public": true,
+  "classIri": "urn:ngm:class:human-centred-design",
+  "domain": "spatial-computing",
+  "definition": "Human centred design is a problem-solving approach that places the needs, capabilities and behaviours of people at the centre of the design process, iteratively shaping products and systems around real user contexts. It draws on empirical understanding of users and tasks, involves stakeholders throughout development, and refines solutions through repeated evaluation. The practice underpins usable, accessible and inclusive interactive systems across digital and physical domains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      },
+      {
+        "id": "urn:ngm:class:user-centered-design",
+        "label": "User Centered Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:universal-design",
+        "label": "Universal Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-interface-design",
+        "label": "User Interface Design"
+      },
+      {
+        "id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-standards",
+        "label": "Accessibility Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    }
+  ]
+}

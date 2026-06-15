@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:byzantine-generals-problem",
+  "title": "Byzantine Generals Problem",
+  "slug": "byzantine-generals-problem",
+  "public": true,
+  "classIri": "urn:ngm:class:byzantine-generals-problem",
+  "domain": "distributed-systems",
+  "definition": "The Byzantine Generals Problem is a foundational thought experiment in distributed computing describing how loyal participants can reach agreement when some participants are traitorous and may send arbitrary or conflicting messages. It formalises the difficulty of achieving consensus in the presence of arbitrary (Byzantine) faults, where faulty nodes behave maliciously rather than merely crashing. The problem establishes that agreement is solvable only when fewer than one-third of participants are faulty.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:crash-fault-tolerance",
+        "label": "Crash Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:atomic-broadcast",
+        "label": "Atomic Broadcast"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      },
+      {
+        "id": "urn:ngm:class:tendermint",
+        "label": "Tendermint"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ]
+}

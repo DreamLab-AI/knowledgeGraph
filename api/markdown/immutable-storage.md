@@ -1,0 +1,36 @@
+- ### Definition
+  - Immutable storage is a data persistence model in which written records cannot be modified or deleted for a defined period, preserving their integrity against tampering and accidental loss. It is realised through write-once-read-many policies, append-only logs, content addressing, and cryptographic hashing, and underpins audit trails, regulatory retention, and ransomware resilience. Immutability provides verifiable evidence that data has not changed since it was committed.
+  - [[Data Storage]] [[Cryptographic Hash]] [[Audit Trail]] [[Data Integrity]]
+- ### Overview
+  - Immutable storage trades the ability to overwrite for strong guarantees that committed data is durable and verifiable.
+  - Retention locks and legal-hold mechanisms prevent deletion even by privileged administrators for a configured period.
+  - Content addressing ties each object to the hash of its contents, so any alteration produces a different address.
+- ### Mechanisms
+  - Write-once-read-many policies block modification after the initial write.
+  - Append-only logs record new state as additional entries rather than overwriting history.
+  - Cryptographic hashing and content addressing make tampering detectable.
+  - Retention periods and legal holds enforce minimum durability windows.
+- ### Applications
+  - Compliance audit trails and regulatory record retention.
+  - Ransomware-resistant backups that cannot be encrypted or deleted by attackers.
+  - Verifiable provenance for documents, logs, and decentralised content on systems like IPFS and blockchains.
+- ### Relationships
+  - partOf:: [[Data Storage]]
+  - requires:: [[Cryptographic Hash]]
+  - requires:: [[Append-Only Log]]
+  - uses:: [[Cryptographic Hash]]
+  - uses:: [[Object Storage]]
+  - enables:: [[Audit Trail]]
+  - enables:: [[Compliance Audit Trail]]
+  - supports:: [[Regulatory Compliance]]
+  - supports:: [[Data Integrity]]
+  - supports:: [[Backup and Recovery]]
+  - implements:: [[Append-Only Log]]
+  - relatedTo:: [[Blockchain]]
+  - relatedTo:: [[IPFS]]
+  - relatedTo:: [[Object Storage]]
+  - contrastsWith:: [[Object Storage]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

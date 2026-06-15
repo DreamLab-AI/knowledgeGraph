@@ -182,10 +182,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:attribution",
-        "label": "Attribution"
-      },
-      {
         "@id": "urn:ngm:class:compliance-audit",
         "label": "Compliance Audit"
       },

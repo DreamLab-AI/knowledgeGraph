@@ -1,0 +1,38 @@
+- ### Definition
+  - A blend shape is a stored mesh deformation interpolated against a base shape by weighted vertex offsets.
+  - It is a technique within [[Facial Animation]] and a building block of [[Character Animation]].
+  - It is commonly driven by an [[Animation Rig]] and complements [[Skeletal Animation]].
+  - It powers expressive [[Avatar]] faces under [[Real-Time Rendering]] constraints.
+- ### Overview
+  - Blend shapes capture target poses of a mesh, such as a smile or a raised brow, as differences from a neutral base.
+  - At render time, weights between zero and one mix several targets, producing continuous, controllable deformation.
+  - Because topology stays constant, blend shapes preserve UVs and rigging, making them efficient for faces and soft deformations.
+  - They are the workhorse of facial animation pipelines, often combined with skeletal rigs for full-body and head motion.
+- ### Mechanisms
+  - Vertex interpolation: per-vertex offsets blended linearly against the base mesh.
+  - Weighted combination: multiple targets summed by independent weights to compose expressions.
+  - Corrective targets: additional shapes that fix artefacts arising from combined deformations.
+  - Rig binding: weights exposed as controls that animators or capture data drive over time.
+  - Performance capture mapping: tracked facial markers mapped onto named blend shape weights.
+- ### Applications
+  - Realistic facial animation for film, games, and virtual production.
+  - Driving expressive avatars in real-time social and immersive applications.
+  - Lip-sync and viseme systems for speech-driven character animation.
+  - Subtle soft-body deformations layered on top of skeletal rigs.
+- ### Relationships
+  - hasPart:: [[Point Cloud]]
+  - uses:: [[Animation Rig]]
+  - uses:: [[Skeletal Animation]]
+  - enables:: [[Facial Animation]]
+  - enables:: [[Character Animation]]
+  - supports:: [[Avatar]]
+  - supports:: [[Real-Time Rendering]]
+  - partOf:: [[Animation]]
+  - contrastsWith:: [[Skeletal Animation]]
+  - relatedTo:: [[Facial Animation]]
+  - relatedTo:: [[Character Animation]]
+  - relatedTo:: [[Avatar]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

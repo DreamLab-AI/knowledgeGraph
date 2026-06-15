@@ -1,0 +1,37 @@
+- ### Definition
+  - Distributed Key Generation (DKG) is a cryptographic protocol in which a group of mutually distrusting participants collaboratively compute a shared public key together with secret key shares, without any single party ever learning or holding the complete private key.
+  - Each participant contributes randomness so that the final key material is the joint product of all honest parties, providing resilience against compromise of individual nodes.
+  - DKG underpins threshold signatures and secure multi-party computation, removing the single point of failure inherent in a centrally generated key.
+  - Related core concepts: [[Cryptographic Protocol]] [[Secret Sharing]] [[Multi-Party Computation]] [[Threshold Signature Scheme]]
+- ### Overview
+  - DKG generalises Shamir secret sharing by removing the trusted dealer: the secret is never assembled in one place.
+  - Protocols such as Pedersen DKG and the Gennaro et al. construction add verifiable secret sharing to detect malicious shares.
+  - The resulting key shares can later be used jointly to sign or decrypt without reconstructing the master key.
+- ### Key aspects
+  - Verifiable secret sharing to expose participants who submit inconsistent shares.
+  - Threshold parameter t-of-n controlling how many shares are needed to operate the key.
+  - Robustness against a dishonest minority and against aborts during the protocol.
+  - Re-sharing and proactive refresh to rotate shares without changing the public key.
+- ### Applications
+  - Custody systems for digital assets where no operator holds the full key.
+  - Validator and oracle networks using threshold signatures.
+  - Confidential computing and distributed certificate authorities.
+- ### Relationships
+  - requires:: [[Secret Sharing]]
+  - requires:: [[Cryptographic Protocol]]
+  - requires:: [[Multi-Party Computation]]
+  - hasPart:: [[Private Key]]
+  - hasPart:: [[Key Management]]
+  - supports:: [[Threshold Signature Scheme]]
+  - supports:: [[Threshold Cryptography]]
+  - supports:: [[Multi Sig Governance]]
+  - enables:: [[Multi-Signature Wallet]]
+  - uses:: [[Secret Sharing]]
+  - relatedTo:: [[Hardware Security Module]]
+  - relatedTo:: [[Self-Custody]]
+  - bridgesTo:: [[Blockchain]]
+  - implements:: [[Threshold Cryptography]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

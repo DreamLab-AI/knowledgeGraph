@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:online-certificate-status-protocol",
+  "title": "Online Certificate Status Protocol",
+  "slug": "online-certificate-status-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:online-certificate-status-protocol",
+  "domain": "security",
+  "definition": "The Online Certificate Status Protocol (OCSP) is an internet protocol for obtaining the real-time revocation status of an X.509 digital certificate. A client queries an OCSP responder, which returns a signed good, revoked or unknown status, avoiding the need to download large certificate revocation lists. OCSP stapling allows a server to present a recent signed status during the TLS handshake to improve privacy and performance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      },
+      {
+        "id": "urn:ngm:class:tls-handshake",
+        "label": "TLS Handshake"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:x509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:certificate-revocation",
+        "label": "Certificate Revocation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:certificate-revocation",
+        "label": "Certificate Revocation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:tls-handshake",
+        "label": "TLS Handshake"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:x509-certificate",
+        "label": "X.509 Certificate"
+      },
+      {
+        "id": "urn:ngm:class:certificate-revocation",
+        "label": "Certificate Revocation"
+      },
+      {
+        "id": "urn:ngm:class:ocsp",
+        "label": "OCSP"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

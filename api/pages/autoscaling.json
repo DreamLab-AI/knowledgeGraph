@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:autoscaling",
+  "title": "Autoscaling",
+  "slug": "autoscaling",
+  "public": true,
+  "classIri": "urn:ngm:class:autoscaling",
+  "domain": "infrastructure",
+  "definition": "Autoscaling is the automated adjustment of computing resources allocated to an application in response to observed demand, scaling capacity up under load and down when demand falls. It monitors metrics such as utilisation, request rate or queue depth and triggers provisioning or removal of compute instances or containers against defined policies. Autoscaling improves cost efficiency and availability by matching supply to demand without manual intervention.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:resource-management",
+      "label": "Resource Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:auto-scaling",
+        "label": "Auto-Scaling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

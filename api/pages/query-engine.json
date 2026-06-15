@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:query-engine",
+  "title": "Query Engine",
+  "slug": "query-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:query-engine",
+  "domain": "infrastructure",
+  "definition": "A query engine is the software component that parses, plans, optimises, and executes declarative queries against one or more data stores, returning result sets to callers. It transforms a high-level query into an efficient physical execution plan using statistics, indexes, and cost models, and may operate over a single database, a data warehouse, or federated sources, forming the computational core of database and analytics systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:database-system",
+      "label": "Database System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:full-text-search",
+        "label": "Full-Text Search"
+      },
+      {
+        "id": "urn:ngm:class:olap",
+        "label": "OLAP"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "id": "urn:ngm:class:columnar-storage",
+        "label": "Columnar Storage"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:olap",
+        "label": "OLAP"
+      },
+      {
+        "id": "urn:ngm:class:columnar-storage",
+        "label": "Columnar Storage"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-virtualization",
+      "label": "Data Virtualization"
+    }
+  ]
+}

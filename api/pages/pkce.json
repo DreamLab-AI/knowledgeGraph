@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:pkce",
+  "title": "Pkce",
+  "slug": "pkce",
+  "public": true,
+  "classIri": "urn:ngm:class:pkce",
+  "domain": "infrastructure",
+  "definition": "PKCE, Proof Key for Code Exchange, is an extension to the OAuth 2.0 authorisation code flow that protects public clients, such as mobile and single-page applications, against interception of the authorisation code. The client generates a secret code verifier and sends its hashed code challenge when requesting authorisation, then proves possession of the verifier when redeeming the code, so a stolen code cannot be exchanged for tokens. It is now recommended for all OAuth clients, not only public ones.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:oauth-2-0",
+      "label": "OAuth 2.0"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:access-token",
+        "label": "Access Token"
+      },
+      {
+        "id": "urn:ngm:class:refresh-token",
+        "label": "Refresh Token"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

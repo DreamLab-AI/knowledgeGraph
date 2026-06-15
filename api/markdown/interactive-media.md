@@ -1,0 +1,38 @@
+- ### Definition
+	- [[Interactive Media]] is [[Digital Content Creation|digital content]] that responds to user input, giving audiences agency over the experience.
+	- It binds presentation to real-time feedback through a [[User Interface]] and considered [[User Experience]].
+	- It is the foundation of games, simulations, and [[Immersive Experience|immersive experiences]] across [[Virtual Reality]] and [[Augmented Reality]].
+- ### Overview
+	- Where film, print, and broadcast deliver a fixed sequence, interactive media constructs the experience partly from the participant's choices, gestures, or queries.
+	- The defining loop is input, system response, and updated state, repeated fast enough to feel continuous. Latency, affordances, and feedback clarity therefore shape perceived quality as much as visual fidelity.
+	- Forms range from branching web narratives and data dashboards to fully simulated 3D worlds rendered by a game engine.
+	- Spatial computing extends interactive media into the user's physical environment, blending rendered content with real-world context.
+- ### Key aspects
+	- User agency: meaningful choices that change outcomes or navigation.
+	- Real-time responsiveness and low-latency feedback.
+	- Interface and interaction design as primary authorship surfaces.
+	- Multimodal input including pointer, touch, voice, gaze, and motion.
+- ### Applications
+	- Video games and interactive entertainment built on a [[Game Engine]].
+	- Educational simulations and training environments.
+	- Interactive [[Digital Art]] installations and exhibits.
+	- Immersive marketing and product configurators in [[Augmented Reality]].
+	- Social and collaborative experiences within the [[Metaverse]].
+- ### Relationships
+	- partOf:: [[Digital Content Creation]]
+	- hasPart:: [[User Interface]]
+	- hasPart:: [[Animation]]
+	- uses:: [[Game Engine]]
+	- uses:: [[User Interface]]
+	- requires:: [[User Experience]]
+	- enables:: [[Immersive Experience]]
+	- supports:: [[Virtual Reality]]
+	- supports:: [[Augmented Reality]]
+	- relatedTo:: [[Digital Art]]
+	- relatedTo:: [[Animation]]
+	- relatedTo:: [[User Experience]]
+	- bridgesTo:: [[Metaverse]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

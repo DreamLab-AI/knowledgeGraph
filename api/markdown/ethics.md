@@ -1,0 +1,37 @@
+- ### Definition
+  - [[Ethics]] grounds [[Responsible AI]] and [[AI Safety]], bridging to [[Governance]] and enabling [[Accountability]], [[Transparency]] and [[Fairness]].
+- ### Overview
+  - Ethics provides the normative frameworks - such as consequentialism, deontology and virtue ethics - used to reason about right action.
+  - Applied to AI, it asks how systems should treat people, distribute benefits and harms, and remain answerable for their effects.
+  - It informs both technical choices and the governance structures that surround AI systems.
+- ### Key aspects
+  - Normative principles: beneficence, non-maleficence, autonomy and justice.
+  - Fairness and non-discrimination in automated decisions.
+  - Transparency and explainability of system behaviour.
+  - Accountability and redress when systems cause harm.
+- ### Applications
+  - Ethical review and impact assessment of AI deployments.
+  - Designing fairness and bias mitigation into models.
+  - Shaping regulation and professional codes of conduct.
+  - Guiding alignment between AI behaviour and human values.
+- ### Relationships
+  - partOf:: [[AI Safety]]
+  - partOf:: [[Responsible AI]]
+  - bridgesTo:: [[Governance]]
+  - bridgesTo:: [[Responsible AI]]
+  - bridgesTo:: [[AI Alignment]]
+  - enables:: [[Accountability]]
+  - enables:: [[Transparency]]
+  - enables:: [[Fairness]]
+  - supports:: [[Value Alignment]]
+  - supports:: [[Responsible AI]]
+  - requires:: [[Transparency]]
+  - requires:: [[Accountability]]
+  - dependsOn:: [[Governance]]
+  - relatedTo:: [[Fairness]]
+  - relatedTo:: [[AI Alignment]]
+  - relatedTo:: [[Value Alignment]]
+  - relatedTo:: [[Existential Risk]]
+- ### Provenance
+  - This class was materialised to resolve existing inbound references in the knowledge graph.
+  - updated:: 2026-06-15

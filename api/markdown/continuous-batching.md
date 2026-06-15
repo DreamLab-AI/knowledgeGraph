@@ -1,0 +1,38 @@
+- ### Definition
+	- [[Continuous Batching]] is a large language model serving technique that admits and evicts requests at per-token granularity rather than per-batch.
+	- It is a form of [[Inference Optimisation]] that keeps the GPU saturated under heterogeneous request lengths.
+	- It is a defining feature of engines such as [[vLLM]] and pairs with [[Paged Attention]] and a shared [[KV Cache]].
+- ### Overview
+	- Naive static batching groups requests, runs the whole batch until the longest sequence completes, then starts the next batch. Short requests stall behind long ones and the GPU sits idle, wasting capacity and inflating latency.
+	- Continuous batching (also called in-flight or dynamic batching) reframes scheduling around the decoding step. After every step, finished sequences release their slots and pending requests are injected immediately, so the active batch is continuously reshaped.
+	- The technique depends on efficient key-value cache management. Paged attention allocates cache memory in fixed blocks, allowing sequences of differing lengths to coexist and slots to be reclaimed without fragmentation.
+- ### Mechanisms
+	- Iteration-level scheduling that re-evaluates the batch after each decoding step.
+	- Slot reclamation when a sequence emits its end-of-sequence token.
+	- Admission control that respects memory budgets for the [[KV Cache]].
+	- Prefill and decode interleaving to balance prompt processing against generation.
+- ### Applications
+	- High-throughput LLM inference serving for chat and API workloads.
+	- Cost-efficient GPU utilisation in production model serving.
+	- Multi-tenant inference with mixed prompt and generation lengths.
+	- Latency-sensitive interactive applications.
+- ### Relationships
+	- hasPart:: [[Request Scheduling]]
+	- hasPart:: [[KV Cache]]
+	- partOf:: [[Model Serving]]
+	- uses:: [[Paged Attention]]
+	- uses:: [[KV Cache]]
+	- uses:: [[Autoregressive Decoding]]
+	- supports:: [[vLLM]]
+	- supports:: [[Token Generation]]
+	- enables:: [[Throughput]]
+	- enables:: [[GPU Utilisation]]
+	- requires:: [[GPU Compute]]
+	- improves:: [[Latency]]
+	- relatedTo:: [[Batch Processing]]
+	- relatedTo:: [[Tensor Parallelism]]
+	- relatedTo:: [[Transformer Architecture]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

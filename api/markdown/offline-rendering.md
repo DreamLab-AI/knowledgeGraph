@@ -1,0 +1,36 @@
+- ### Definition
+- Offline rendering is a [[Computer Graphics]] mode that prioritises fidelity over interactivity, allowing long per-frame compute.
+- It directly contrasts with [[Real-Time Rendering]].
+- It relies on physically based [[Path Tracing]] and [[Global Illumination]].
+- It underpins [[Film Production]] and [[Visual Effects]].
+- ### Overview
+- Because frames are not required at interactive rates, offline rendering can simulate complex light transport, volumetrics, and high sample counts.
+- It is the dominant approach for cinematic imagery, product visualisation, and architectural presentation where photorealism matters.
+- Workloads are typically distributed across render farms to parallelise the large compute demand.
+- The trade-off is latency: results are not available instantly, unlike real-time pipelines.
+- ### Key aspects
+- Unbounded per-frame compute budget enabling high sample counts.
+- Physically based light transport via path and ray tracing.
+- Distributed execution across many machines or accelerators.
+- Tight integration with compositing and visual-effects workflows.
+- ### Applications
+- Feature-film and animation rendering.
+- Visual effects and digital matte work.
+- High-end product and architectural visualisation.
+- Reference imagery for validating real-time approximations.
+- ### Relationships
+- partOf:: [[Computer Graphics]]
+- contrastsWith:: [[Real-Time Rendering]]
+- uses:: [[Path Tracing]]
+- uses:: [[Global Illumination]]
+- uses:: [[Ray Tracing]]
+- enables:: [[Visual Effects]]
+- enables:: [[Film Production]]
+- relatedTo:: [[Rendering Pipeline]]
+- relatedTo:: [[Anti Aliasing]]
+- relatedTo:: [[Texture Mapping]]
+- requires:: [[Parallel Computing]]
+- dependsOn:: [[GPU]]
+- supports:: [[Visual Effects]]
+- ### Provenance
+- updated:: 2026-06-15

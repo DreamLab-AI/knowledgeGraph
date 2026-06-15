@@ -63,51 +63,131 @@ public:: true
   },
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:training-strategy", "label": "Training Strategy"},
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning"},
-      {"@id": "urn:ngm:class:active-learning", "label": "Active Learning"},
-      {"@id": "urn:ngm:class:continual-learning", "label": "Continual Learning"},
-      {"@id": "urn:ngm:class:meta-learning", "label": "Meta-Learning"}
+      {
+        "@id": "urn:ngm:class:training-strategy",
+        "label": "Training Strategy"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "@id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "@id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "@id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:faster-convergence", "label": "Faster Convergence"},
-      {"@id": "urn:ngm:class:sample-efficiency", "label": "Sample Efficiency"}
+      {
+        "@id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:sample-efficiency",
+        "label": "Sample Efficiency"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:difficulty-measure", "label": "Difficulty Measure"},
-      {"@id": "urn:ngm:class:data-ordering", "label": "Data Ordering"}
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:difficulty-measure",
+        "label": "Difficulty Measure"
+      },
+      {
+        "@id": "urn:ngm:class:data-ordering",
+        "label": "Data Ordering"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:difficulty-assessment", "label": "Difficulty Assessment"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:difficulty-assessment",
+        "label": "Difficulty Assessment"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:self-paced-learning", "label": "Self-Paced Learning"},
-      {"@id": "urn:ngm:class:teacher-student-curriculum", "label": "Teacher-Student Curriculum"},
-      {"@id": "urn:ngm:class:automatic-curriculum", "label": "Automatic Curriculum"}
+      {
+        "@id": "urn:ngm:class:self-paced-learning",
+        "label": "Self-Paced Learning"
+      },
+      {
+        "@id": "urn:ngm:class:teacher-student-curriculum",
+        "label": "Teacher-Student Curriculum"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-curriculum",
+        "label": "Automatic Curriculum"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:random-sampling", "label": "Random Sampling"},
-      {"@id": "urn:ngm:class:anti-curriculum", "label": "Anti-Curriculum"}
+      {
+        "@id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:anti-curriculum",
+        "label": "Anti-Curriculum"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:optimisation-algorithm", "label": "Optimisation Algorithm"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:structured-training", "label": "Structured Training"},
-    {"@id": "urn:ngm:class:progressive-training", "label": "Progressive Training"}
+    {
+      "@id": "urn:ngm:class:structured-training",
+      "label": "Structured Training"
+    },
+    {
+      "@id": "urn:ngm:class:progressive-training",
+      "label": "Progressive Training"
+    }
   ],
   "quality": 0.72,
   "provenance": {

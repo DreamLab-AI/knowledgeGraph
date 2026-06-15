@@ -105,10 +105,6 @@ public:: true
         "label": "Future of Work"
       },
       {
-        "@id": "urn:ngm:class:chatgpt",
-        "label": "ChatGPT"
-      },
-      {
         "@id": "urn:ngm:class:ai-policy",
         "label": "AI Policy"
       }

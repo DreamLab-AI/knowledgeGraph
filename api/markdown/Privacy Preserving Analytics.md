@@ -449,7 +449,7 @@ alias:: Privacy-Preserving Analytics
         "label": "Homomorphic Encryption"
       },
       {
-        "@id": "urn:ngm:class:k-anonymity",
+        "@id": "urn:ngm:class:k-anonymity-in-datasets",
         "label": "k-Anonymity"
       },
       {

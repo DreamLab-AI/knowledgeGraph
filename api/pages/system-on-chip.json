@@ -43,10 +43,6 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:processor",
-        "label": "Processor"
-      },
-      {
         "id": "urn:ngm:class:hardware",
         "label": "Hardware"
       }

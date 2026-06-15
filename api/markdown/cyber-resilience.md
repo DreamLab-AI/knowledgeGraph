@@ -1,0 +1,41 @@
+- ### Definition
+  - Cyber resilience is a discipline within [[Security]] that builds on [[Cybersecurity]] and [[Risk Management]].
+  - It composes [[Incident Response]], [[Disaster Recovery]], and [[Business Continuity]] into a unified survivability posture.
+  - It depends on [[Redundancy]] and [[Fault Tolerance]] and leverages [[Zero Trust Architecture]] and [[Threat Intelligence]].
+- ### Overview
+  - Cyber resilience reframes security around the assumption of compromise: defences will eventually be breached, so systems must limit blast radius and recover essential services quickly.
+  - It couples preventive controls with detective and recovery capabilities, measured by metrics such as mean time to detect and mean time to recover.
+  - Resilience spans people, process, and technology, embedding security into governance and continuity planning rather than treating it as a perimeter problem.
+- ### Key aspects
+  - Anticipation through threat intelligence and proactive risk assessment.
+  - Withstanding via defence-in-depth, segmentation, and zero-trust controls that contain intrusions.
+  - Recovery through tested backups, disaster recovery runbooks, and incident response playbooks.
+  - Adaptation by post-incident learning that hardens the system against recurrence.
+- ### Applications
+  - Critical national infrastructure protection where downtime is unacceptable.
+  - Financial services and healthcare systems subject to strict continuity and regulatory requirements.
+  - Cloud and distributed platforms that must survive ransomware, supply-chain compromise, and DDoS while maintaining service.
+- ### Relationships
+  - hasPart:: [[Incident Response]]
+  - hasPart:: [[Disaster Recovery]]
+  - hasPart:: [[Business Continuity]]
+  - partOf:: [[Security]]
+  - requires:: [[Risk Management]]
+  - requires:: [[Threat Intelligence]]
+  - enables:: [[Business Continuity]]
+  - enables:: [[Fault Tolerance]]
+  - dependsOn:: [[Redundancy]]
+  - dependsOn:: [[Network Security]]
+  - uses:: [[Zero Trust Architecture]]
+  - uses:: [[Intrusion Detection]]
+  - uses:: [[Defense In Depth]]
+  - supports:: [[Security Operations]]
+  - relatedTo:: [[Cybersecurity]]
+  - relatedTo:: [[Risk Management]]
+  - bridgesTo:: [[Disaster Recovery]]
+  - bridgesTo:: [[Fault Tolerance]]
+  - subClassOf:: [[Security]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:deterministic-execution",
+  "title": "Deterministic Execution",
+  "slug": "deterministic-execution",
+  "public": true,
+  "classIri": "urn:ngm:class:deterministic-execution",
+  "domain": "infrastructure",
+  "definition": "Deterministic Execution guarantees that a computation produces identical outputs and state transitions whenever it is run on the same inputs in the same order, irrespective of host, timing, or scheduling. It is a prerequisite for state machine replication and blockchain smart contracts, where independent nodes must reach byte-identical results to agree on shared state. Achieving it demands eliminating sources of nondeterminism such as wall-clock time, unordered concurrency, and floating-point divergence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:state-machine-replication",
+      "label": "State Machine Replication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:propositional-logic",
+  "title": "Propositional Logic",
+  "slug": "propositional-logic",
+  "public": true,
+  "classIri": "urn:ngm:class:propositional-logic",
+  "domain": "artificial-intelligence",
+  "definition": "Propositional logic, also known as sentential logic or zeroth-order logic, is a formal system in which the basic units are whole propositions that are either true or false, combined using logical connectives such as conjunction, disjunction, negation, implication, and biconditional. It studies the truth-functional behaviour of compound statements and provides the foundation on which richer logics, including predicate logic, are built. Its decidability and clear semantics make it central to circuit design, satisfiability solving, and automated reasoning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:logic",
+      "label": "Logic"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:logical-inference",
+        "label": "Logical Inference"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:predicate-logic",
+        "label": "Predicate Logic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:logical-inference",
+        "label": "Logical Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:delegation",
+  "title": "Delegation",
+  "slug": "delegation",
+  "public": true,
+  "classIri": "urn:ngm:class:delegation",
+  "domain": "blockchain",
+  "definition": "Delegation in blockchain systems is the act of assigning one's stake or voting rights to another participant who acts on one's behalf in consensus or governance, without transferring ownership of the underlying assets. In proof-of-stake networks token holders delegate stake to validators, sharing in rewards and slashing risk while the validator performs block production. In on-chain governance, delegation lets holders entrust their votes to representatives, a pattern formalised as liquid democracy. Delegation lowers the participation barrier for ordinary holders and concentrates operational responsibility with capable operators, while introducing trust and centralisation trade-offs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:proof-of-stake",
+      "label": "Proof of Stake"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:liquid-democracy",
+        "label": "Liquid Democracy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:delegated-proof-of-stake",
+        "label": "Delegated Proof of Stake"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    }
+  ]
+}

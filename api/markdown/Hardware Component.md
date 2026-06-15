@@ -54,10 +54,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:processor",
-        "label": "Processor"
-      },
-      {
         "@id": "urn:ngm:class:memory-module",
         "label": "Memory Module"
       },

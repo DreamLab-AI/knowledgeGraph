@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:multi-objective-optimisation",
+  "title": "Multi Objective Optimisation",
+  "slug": "multi-objective-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-objective-optimisation",
+  "domain": "machine-learning",
+  "definition": "Multi-objective optimisation is the discipline of optimising two or more conflicting objective functions simultaneously, where improving one objective typically degrades another. Rather than a single optimum it yields a Pareto front of non-dominated trade-off solutions, from which a decision-maker selects according to preferences. It is solved with scalarisation, evolutionary, and gradient-based methods and is pervasive in engineering design, machine learning, and resource allocation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      },
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:simulated-annealing",
+        "label": "Simulated Annealing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

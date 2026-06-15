@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:raw-data",
+  "title": "Raw Data",
+  "slug": "raw-data",
+  "public": true,
+  "classIri": "urn:ngm:class:raw-data",
+  "domain": "data",
+  "definition": "Raw data is unprocessed information as originally collected from a source, before cleaning, transformation, aggregation or annotation. It may be noisy, inconsistent, redundant or incomplete, and typically lacks the structure and quality guarantees of processed data. Raw data forms the input to data pipelines, where it is ingested, validated and transformed into usable, analysis-ready forms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data",
+      "label": "Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-processing",
+        "label": "Data Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-transformation",
+        "label": "Data Transformation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-data",
+        "label": "Sensor Data"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

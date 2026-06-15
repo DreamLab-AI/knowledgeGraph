@@ -176,7 +176,7 @@ public:: true
         "label": "DID Nostr Identity"
       },
       {
-        "@id": "urn:ngm:class:eu-digital-identity-wallet",
+        "@id": "urn:ngm:class:digital-identity-wallet",
         "label": "EU Digital Identity Wallet"
       }
     ],

@@ -83,10 +83,6 @@
         "label": "International Monetary Fund"
       },
       {
-        "id": "urn:ngm:class:world-bank",
-        "label": "World Bank"
-      },
-      {
         "id": "urn:ngm:class:oecd",
         "label": "OECD"
       },

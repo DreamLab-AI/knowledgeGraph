@@ -1,0 +1,40 @@
+- ### Definition
+  - [[Six Degrees Of Freedom]] is captured by a [[Tracking System]] using [[Pose Estimation]] and an [[Inertial Measurement Unit]] to enable [[Virtual Reality]] and [[Augmented Reality]].
+- ### Overview
+  - 6DoF covers three translational axes (forward/back, left/right, up/down) and three rotational axes (pitch, yaw, roll).
+  - It contrasts with 3DoF, which tracks orientation only and cannot register positional movement.
+  - Full 6DoF tracking lets users physically move through and around virtual content for stronger presence.
+- ### Key aspects
+  - Simultaneous position and orientation estimation in a fixed reference frame.
+  - Sensor fusion of inertial, optical and depth data to reduce drift.
+  - Low-latency, high-rate updates to avoid motion sickness in immersive use.
+  - Calibration and re-localisation to maintain a stable world anchor.
+- ### Applications
+  - Room-scale virtual reality with natural walking and reaching.
+  - Augmented reality anchoring of content to the physical world.
+  - Robotic and drone pose tracking for navigation.
+  - Motion-captured interaction and embodied avatars.
+- ### Relationships
+  - partOf:: [[Tracking System]]
+  - partOf:: [[Spatial Tracking]]
+  - requires:: [[Pose Estimation]]
+  - requires:: [[Inertial Measurement Unit]]
+  - requires:: [[Sensor Fusion]]
+  - uses:: [[Inertial Measurement Unit]]
+  - uses:: [[Sensor Fusion]]
+  - uses:: [[SLAM]]
+  - enables:: [[Virtual Reality]]
+  - enables:: [[Augmented Reality]]
+  - enables:: [[Immersion]]
+  - supports:: [[Motion Tracking]]
+  - supports:: [[Locomotion]]
+  - supports:: [[Head-Mounted Display]]
+  - dependsOn:: [[Pose Estimation]]
+  - dependsOn:: [[Tracking System]]
+  - bridgesTo:: [[Spatial Computing]]
+  - bridgesTo:: [[Robotics]]
+  - relatedTo:: [[Spatial Tracking]]
+  - relatedTo:: [[Motion Tracking]]
+- ### Provenance
+  - This class was materialised to resolve existing inbound references in the knowledge graph.
+  - updated:: 2026-06-15

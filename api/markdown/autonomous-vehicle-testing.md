@@ -1,0 +1,33 @@
+- ### Definition
+  - [[Autonomous Vehicle Testing]] is the systematic validation of [[Self-Driving Car]] software and hardware, combining [[Simulation]], closed-course trials, and monitored road operation to certify that an [[Autonomous Vehicle]] behaves safely across the driving domain. It leans heavily on [[Computational Model]] based scenario generation.
+- ### Overview
+  - The behaviour space of a self-driving system is effectively infinite, dominated by long-tail edge cases such as unusual road users, adverse weather, and sensor degradation. Testing programmes must cover this space far more thoroughly than the millions of miles a fleet can drive physically.
+  - Simulation answers this challenge by reproducing sensor inputs and environmental dynamics in software, allowing thousands of scenario variations to run in parallel. Physical testing then validates that simulated results transfer to reality, closing the sim-to-real gap.
+- ### Mechanisms
+  - Scenario-based testing enumerates and parameterises driving situations to probe planner and controller responses.
+  - Software-in-the-loop and hardware-in-the-loop pipelines exercise the full stack against synthetic and recorded data.
+  - Sensor simulation reproduces camera, LiDAR, and radar returns from a [[Digital Twin]] of the environment.
+  - Safety metrics, disengagement analysis, and statistical coverage quantify readiness for deployment.
+- ### Applications
+  - Pre-deployment certification of [[Autonomous Driving]] features and driver-assistance systems.
+  - Regression testing of [[Perception System]] updates against curated edge-case libraries.
+  - Closed-course validation of emergency manoeuvres and failure handling.
+  - Continuous re-validation as machine-learning models are retrained.
+- ### Relationships
+  - partOf:: [[Autonomous Vehicle]]
+  - supports:: [[Self-Driving Car]]
+  - supports:: [[Autonomous Driving]]
+  - enables:: [[Self-Driving Car]]
+  - uses:: [[Simulation]]
+  - uses:: [[Digital Twin]]
+  - uses:: [[Physics Engine]]
+  - requires:: [[Perception System]]
+  - requires:: [[Computational Model]]
+  - hasPart:: [[Simulation]]
+  - implements:: [[Computational Model]]
+  - relatedTo:: [[Robotics]]
+  - relatedTo:: [[Spatial Computing]]
+  - relatedTo:: [[Digital Twin]]
+  - bridgesTo:: [[Machine Learning]]
+- ### Provenance
+  - updated:: 2026-06-15

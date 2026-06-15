@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:virtual-private-network",
+  "title": "Virtual Private Network",
+  "slug": "virtual-private-network",
+  "public": true,
+  "classIri": "urn:ngm:class:virtual-private-network",
+  "domain": "security",
+  "definition": "A virtual private network (VPN) is a technology that establishes an encrypted tunnel over a shared or public network, allowing devices to communicate as if they were directly connected to a private network. It authenticates endpoints, encrypts traffic in transit, and encapsulates packets so that data confidentiality and integrity are preserved across untrusted links. VPNs are used for secure remote access to corporate resources, site-to-site connectivity, and privacy-preserving internet use. Common implementations rely on protocols such as IPsec, TLS, and WireGuard, though zero-trust architectures increasingly complement or supersede perimeter VPN models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-security",
+      "label": "Network Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:tunneling",
+        "label": "Tunneling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-access",
+        "label": "Remote Access"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:zero-trust",
+        "label": "Zero Trust"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:ipsec",
+        "label": "IPsec"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:firewall",
+        "label": "Firewall"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

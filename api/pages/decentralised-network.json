@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:decentralised-network",
+  "title": "Decentralised Network",
+  "slug": "decentralised-network",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralised-network",
+  "domain": "infrastructure",
+  "definition": "A Decentralised Network is a network architecture in which control, data and decision-making are distributed across many independent nodes rather than concentrated in a central authority or server. Nodes communicate peer-to-peer, share responsibility for routing, storage and consensus, and the network continues to operate even when individual nodes fail or leave. This topology improves resilience, censorship resistance and fault tolerance at the cost of greater coordination complexity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:censorship-resistance",
+        "label": "Censorship Resistance"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:federation",
+        "label": "Federation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      },
+      {
+        "id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-hash-table",
+        "label": "Distributed Hash Table"
+      },
+      {
+        "id": "urn:ngm:class:federation",
+        "label": "Federation"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    }
+  ]
+}

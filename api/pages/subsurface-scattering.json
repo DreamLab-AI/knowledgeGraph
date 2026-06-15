@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:subsurface-scattering",
+  "title": "Subsurface Scattering",
+  "slug": "subsurface-scattering",
+  "public": true,
+  "classIri": "urn:ngm:class:subsurface-scattering",
+  "domain": "spatial-computing",
+  "definition": "Subsurface scattering is a light-transport phenomenon in which light penetrates the surface of a translucent material, scatters within it, and exits at a different point, producing the soft, diffuse glow characteristic of skin, wax, marble, and milk. In computer graphics it is modelled as part of global illumination to render such materials realistically, since a purely surface-level reflectance model cannot capture the way light bleeds beneath and through them. Approaches range from physically based diffusion and path-traced volumetric scattering to fast screen-space and pre-integrated approximations used in real-time rendering. It is essential to photorealistic depiction of organic and semi-transparent matter.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:global-illumination",
+      "label": "Global Illumination"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:brdf",
+        "label": "BRDF"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

@@ -569,7 +569,7 @@ alias:: FaultTolerance
         "label": "Replication"
       },
       {
-        "@id": "urn:ngm:class:write-ahead-log",
+        "@id": "urn:ngm:class:write-ahead-logging",
         "label": "Write Ahead Log"
       },
       {

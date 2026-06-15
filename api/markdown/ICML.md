@@ -114,12 +114,6 @@ public:: true
         "label": "Proceedings of Machine Learning Research"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:tutorial",
-        "label": "Tutorial"
-      }
-    ],
     "contrastsWith": [
       {
         "@id": "urn:ngm:class:neur-ips",

@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:algorithmic-stablecoin",
+  "title": "Algorithmic Stablecoin",
+  "slug": "algorithmic-stablecoin",
+  "public": true,
+  "classIri": "urn:ngm:class:algorithmic-stablecoin",
+  "domain": "blockchain",
+  "definition": "An algorithmic stablecoin is a cryptocurrency that seeks to maintain a stable peg, typically to a fiat unit, through on-chain algorithmic supply adjustments and incentive mechanisms rather than full reserves of external collateral. Smart contracts expand or contract token supply, often using a companion volatility-absorbing token, to push the market price toward target. The model contrasts with fiat- and crypto-collateralised stablecoins and has proven fragile, with several high-profile de-peg failures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:price-oracle",
+        "label": "Price Oracle"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:peg",
+        "label": "Peg"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tether",
+        "label": "Tether"
+      },
+      {
+        "id": "urn:ngm:class:dai",
+        "label": "DAI"
+      },
+      {
+        "id": "urn:ngm:class:terra",
+        "label": "Terra"
+      },
+      {
+        "id": "urn:ngm:class:usd-coin",
+        "label": "USD Coin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    }
+  ]
+}

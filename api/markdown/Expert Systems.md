@@ -80,10 +80,6 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:domain-knowledge",
-        "label": "Domain Knowledge"
-      },
-      {
         "@id": "urn:ngm:class:production-rules",
         "label": "Production Rules"
       }

@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:web-api",
+  "title": "Web Api",
+  "slug": "web-api",
+  "public": true,
+  "classIri": "urn:ngm:class:web-api",
+  "domain": "infrastructure",
+  "definition": "A web API is an application programming interface exposed over the web using HTTP, allowing programs to request and exchange data with a remote service rather than rendering pages for humans. It defines a contract of endpoints, request and response formats, authentication and error semantics, commonly returning structured data such as JSON. Web APIs are the backbone of integration between applications, mobile clients, microservices and third-party platforms, with REST and GraphQL being two prevailing architectural styles.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:api-design",
+      "label": "API Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      },
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

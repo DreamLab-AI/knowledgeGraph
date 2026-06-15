@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:hidden-markov-model",
+  "title": "Hidden Markov Model",
+  "slug": "hidden-markov-model",
+  "public": true,
+  "classIri": "urn:ngm:class:hidden-markov-model",
+  "domain": "machine-learning",
+  "definition": "A hidden Markov model (HMM) is a probabilistic model for sequences in which an unobserved Markov chain of discrete states generates observable outputs, one per state, according to state-dependent emission distributions. The model is defined by transition probabilities between hidden states and emission probabilities for observations, plus an initial state distribution. HMMs support efficient inference for filtering, decoding, and learning over sequential data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graphical-model",
+      "label": "Graphical Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:part-of-speech-tagging",
+        "label": "Part Of Speech Tagging"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sequence-model",
+        "label": "Sequence Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      },
+      {
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:time-series",
+        "label": "Time Series"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latent-variable-model",
+        "label": "Latent Variable Model"
+      },
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      },
+      {
+        "id": "urn:ngm:class:time-series",
+        "label": "Time Series"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

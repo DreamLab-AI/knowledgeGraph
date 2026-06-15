@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:turing-machine",
+  "title": "Turing Machine",
+  "slug": "turing-machine",
+  "public": true,
+  "classIri": "urn:ngm:class:turing-machine",
+  "domain": "artificial-intelligence",
+  "definition": "A Turing machine is an abstract model of computation consisting of an infinite tape, a read-write head, a finite set of states and a transition function that, given the current state and the symbol under the head, prescribes a symbol to write, a direction to move and a next state. Introduced by Alan Turing, it formalises the notion of an effective procedure and serves as the canonical definition of what is computable. The Church-Turing thesis holds that any function computable by any reasonable mechanism is computable by a Turing machine.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automata-theory",
+      "label": "Automata Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "id": "urn:ngm:class:state-machine",
+        "label": "State Machine"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

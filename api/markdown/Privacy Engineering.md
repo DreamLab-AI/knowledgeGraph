@@ -62,7 +62,7 @@ public:: true
         "label": "Homomorphic Encryption"
       },
       {
-        "@id": "urn:ngm:class:k-anonymity",
+        "@id": "urn:ngm:class:k-anonymity-in-datasets",
         "label": "K-Anonymity"
       },
       {

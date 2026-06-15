@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:nash-equilibrium",
+  "title": "Nash Equilibrium",
+  "slug": "nash-equilibrium",
+  "public": true,
+  "classIri": "urn:ngm:class:nash-equilibrium",
+  "domain": "artificial-intelligence",
+  "definition": "A Nash equilibrium is a solution concept in game theory describing a profile of strategies, one for each player, such that no player can increase their own payoff by unilaterally changing strategy while the others hold theirs fixed. It captures a stable state of mutual best responses and may be in pure or mixed strategies. Nash proved that every finite game has at least one such equilibrium, making it the central predictive concept for strategic interaction among rational agents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:game-theory",
+      "label": "Game Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cooperative-game-theory",
+        "label": "Cooperative Game Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:auction-theory",
+        "label": "Auction Theory"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cooperative-game-theory",
+        "label": "Cooperative Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

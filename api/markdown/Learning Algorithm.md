@@ -382,7 +382,7 @@ public:: true
         "label": "Meta-Learner"
       },
       {
-        "@id": "urn:ngm:class:policy-gradient",
+        "@id": "urn:ngm:class:policy-gradient-methods",
         "label": "Policy Gradient"
       },
       {

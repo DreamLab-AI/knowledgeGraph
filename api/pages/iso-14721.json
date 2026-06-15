@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:iso-14721",
+  "title": "Iso 14721",
+  "slug": "iso-14721",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-14721",
+  "domain": "spatial-computing",
+  "definition": "ISO 14721 is the international standard defining the Open Archival Information System (OAIS) reference model, a conceptual framework for the long-term preservation of digital information. It specifies the functional entities, information packages and responsibilities of an archive committed to preserving content and making it accessible to a designated community over time. As the foundational model for digital preservation, it underpins repositories, audit and certification frameworks, and cultural heritage and scientific data archives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-preservation",
+      "label": "Digital Preservation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      },
+      {
+        "id": "urn:ngm:class:long-term-preservation",
+        "label": "Long Term Preservation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:long-term-preservation",
+        "label": "Long Term Preservation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cultural-heritage-preservation",
+        "label": "Cultural Heritage Preservation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cultural-heritage-preservation",
+        "label": "Cultural Heritage Preservation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-preservation",
+        "label": "Digital Preservation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:metadata-standard",
+        "label": "Metadata Standard"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "archival-standards",
+      "label": "Archival Standards"
+    }
+  ]
+}

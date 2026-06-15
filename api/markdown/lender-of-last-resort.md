@@ -1,0 +1,36 @@
+- ### Definition
+  - A lender of last resort is the liquidity backstop role of a [[Central Bank]].
+  - It lends to solvent but illiquid banks to protect [[Financial Stability]].
+  - It supplies [[Liquidity]] to contain [[Systemic Risk]] during panics.
+- ### Overview
+  - Bagehot's rule: lend freely, against good collateral, at a penalty rate.
+  - Targets illiquidity, not insolvency, to distinguish rescue from bailout.
+  - Tension with moral hazard, since the backstop can encourage risk-taking.
+- ### Mechanisms
+  - Discount-window and emergency liquidity facilities.
+  - Collateral eligibility and haircut policies.
+  - Penalty pricing to discourage routine reliance.
+  - Coordination with prudential regulation and deposit insurance.
+- ### Applications
+  - Containing bank runs and interbank-market freezes.
+  - Stabilising financial systems during crises.
+  - Backstopping payment and clearing systems.
+  - Cross-border swap lines among central banks.
+- ### Relationships
+  - partOf:: [[Central Bank]]
+  - partOf:: [[Financial System]]
+  - dependsOn:: [[Central Bank]]
+  - dependsOn:: [[Monetary Policy]]
+  - enables:: [[Financial Stability]]
+  - enables:: [[Liquidity]]
+  - supports:: [[Financial Stability]]
+  - supports:: [[Commercial Bank]]
+  - requires:: [[Liquidity]]
+  - relatedTo:: [[Systemic Risk]]
+  - relatedTo:: [[Prudential Regulation]]
+  - relatedTo:: [[Quantitative Easing]]
+  - uses:: [[Monetary Policy]]
+  - contrastsWith:: [[Quantitative Easing]]
+  - bridgesTo:: [[Finance]]
+- ### Provenance
+  - updated:: 2026-06-15

@@ -143,7 +143,7 @@ alias:: NetworkLayer
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:latency-management",
+        "@id": "urn:ngm:class:latency-management-protocol",
         "label": "Latency Management"
       },
       {
@@ -187,7 +187,7 @@ alias:: NetworkLayer
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:ieee-802",
+        "@id": "urn:ngm:class:ieee-802-x",
         "label": "IEEE 802"
       }
     ],

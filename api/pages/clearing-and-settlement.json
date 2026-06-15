@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:clearing-and-settlement",
+  "title": "Clearing And Settlement",
+  "slug": "clearing-and-settlement",
+  "public": true,
+  "classIri": "urn:ngm:class:clearing-and-settlement",
+  "domain": "finance",
+  "definition": "Clearing and settlement are the post-trade processes that finalise a financial transaction: clearing reconciles, nets and confirms the obligations between counterparties, while settlement effects the actual transfer of securities and funds to discharge those obligations. Central counterparties and securities depositories reduce counterparty risk by interposing themselves and managing margin. The integrity of these processes underpins the stability of payment and securities markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-infrastructure",
+      "label": "Financial Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      },
+      {
+        "id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      },
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cross-border-settlement",
+        "label": "Cross-Border Settlement"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real-Time Gross Settlement"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kyc-aml-compliance",
+        "label": "KYC/AML Compliance"
+      },
+      {
+        "id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

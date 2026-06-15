@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:secure-aggregation",
+  "title": "Secure Aggregation",
+  "slug": "secure-aggregation",
+  "public": true,
+  "classIri": "urn:ngm:class:secure-aggregation",
+  "domain": "security",
+  "definition": "Secure aggregation is a cryptographic protocol that computes the sum of inputs held by many parties without revealing any individual input to the aggregator or other participants. It is most prominent in federated learning, where a server combines model updates from clients while learning only the aggregate. Typical constructions use pairwise masking, secret sharing, or additively homomorphic encryption, with dropout-resilient designs so the protocol completes even when some clients disconnect.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:oblivious-transfer",
+        "label": "Oblivious Transfer"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    }
+  ]
+}

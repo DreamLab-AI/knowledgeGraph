@@ -1,0 +1,41 @@
+- ### Definition
+	- A [[Container]] is a lightweight, isolated package that bundles an application with its dependencies so it runs consistently across environments.
+	- It relies on [[Containerization]], [[Control Groups]] and [[Namespaces]] for isolation while sharing the host kernel.
+	- Containers are the standard deployment unit that enables [[Microservices]] and [[Model Deployment]].
+- ### Overview
+	- A container image is an immutable, layered filesystem snapshot containing the application binary, runtime libraries and configuration.
+	- At runtime the image is instantiated as an isolated process using kernel namespaces (for process, network and mount isolation) and control groups (for resource limits).
+	- Because containers share the host kernel rather than virtualising hardware, they start in milliseconds and consume far less memory than virtual machines.
+	- Containers are typically managed at scale by an orchestration platform such as Kubernetes, which schedules, networks and heals them across a cluster.
+- ### Key aspects
+	- Image layering: cached, composable filesystem layers that speed builds and distribution.
+	- Isolation primitives: namespaces and cgroups providing process and resource separation.
+	- Portability: identical behaviour from developer laptop to production cluster.
+	- Immutability: containers are replaced rather than patched, supporting reproducible deployments.
+	- Registries: versioned image storage and distribution.
+- ### Applications
+	- Packaging and serving machine-learning inference services.
+	- Microservice architectures with independent scaling.
+	- Reproducible CI/CD build and test environments.
+	- Edge and hybrid-cloud deployment of portable workloads.
+- ### Relationships
+	- requires:: [[Containerization]]
+	- requires:: [[Resource Isolation]]
+	- uses:: [[Control Groups]]
+	- uses:: [[Namespaces]]
+	- hasPart:: [[Deployment Artifact]]
+	- enables:: [[Microservices]]
+	- enables:: [[Model Deployment]]
+	- supports:: [[MLOps]]
+	- supports:: [[CI/CD]]
+	- dependsOn:: [[Orchestration]]
+	- partOf:: [[Cloud Infrastructure]]
+	- implements:: [[Resource Isolation]]
+	- contrastsWith:: [[Virtualization]]
+	- bridgesTo:: [[Kubernetes]]
+	- relatedTo:: [[DevOps]]
+	- relatedTo:: [[Serverless]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:head-related-transfer-function",
+  "title": "Head Related Transfer Function",
+  "slug": "head-related-transfer-function",
+  "public": true,
+  "classIri": "urn:ngm:class:head-related-transfer-function",
+  "domain": "spatial-computing",
+  "definition": "A head-related transfer function (HRTF) describes how sound from a point in space is filtered by the listener's head, torso and outer ears before reaching each eardrum. It captures the frequency-dependent level, time and spectral cues that the auditory system uses to localise sound. Convolving a mono source with the appropriate left and right HRTFs synthesises a convincing three-dimensional position over headphones, making the HRTF the mathematical core of binaural and spatial audio rendering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-audio",
+      "label": "Spatial Audio"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:binaural-audio",
+        "label": "Binaural Audio"
+      },
+      {
+        "id": "urn:ngm:class:immersive-audio",
+        "label": "Immersive Audio"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:ambisonics",
+        "label": "Ambisonics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      },
+      {
+        "id": "urn:ngm:class:microphone-array",
+        "label": "Microphone Array"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

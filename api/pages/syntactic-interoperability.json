@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:syntactic-interoperability",
+  "title": "Syntactic Interoperability",
+  "slug": "syntactic-interoperability",
+  "public": true,
+  "classIri": "urn:ngm:class:syntactic-interoperability",
+  "domain": "data",
+  "definition": "Syntactic interoperability is the ability of two or more systems to exchange data using compatible formats, structures, and encoding rules so that the receiving system can correctly parse the transmitted information. It concerns agreement on data formats, message structure, and serialisation grammar, independent of the meaning of the data. Syntactic interoperability is a prerequisite layer beneath semantic interoperability in interoperability frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interoperability",
+      "label": "Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "id": "urn:ngm:class:message-format",
+        "label": "Message Format"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:ngm:class:protocol",
+        "label": "Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "id": "urn:ngm:class:data-mapping",
+        "label": "Data Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

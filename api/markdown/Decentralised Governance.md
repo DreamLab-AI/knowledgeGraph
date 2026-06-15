@@ -75,10 +75,6 @@ public:: true
       {
         "@id": "urn:ngm:class:token-weighted-voting",
         "label": "Token-Weighted Voting"
-      },
-      {
-        "@id": "urn:ngm:class:proposal-mechanism",
-        "label": "Proposal Mechanism"
       }
     ],
     "partOf": [

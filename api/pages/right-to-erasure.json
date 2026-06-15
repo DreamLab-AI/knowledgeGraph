@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:right-to-erasure",
+  "title": "Right To Erasure",
+  "slug": "right-to-erasure",
+  "public": true,
+  "classIri": "urn:ngm:class:right-to-erasure",
+  "domain": "governance",
+  "definition": "The right to erasure, also known as the right to be forgotten, is a data-subject right under the UK GDPR and EU GDPR that allows individuals to require a controller to delete their personal data in defined circumstances. It applies where data is no longer necessary, consent is withdrawn, processing is unlawful, or the data subject objects without overriding legitimate grounds. The right is qualified by exemptions such as freedom of expression, legal obligations, and the public interest.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-subject-rights",
+      "label": "Data Subject Rights"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:uk-gdpr",
+        "label": "UK GDPR"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:uk-gdpr",
+        "label": "UK GDPR"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-subject-rights",
+        "label": "Data Subject Rights"
+      },
+      {
+        "id": "urn:ngm:class:right-to-be-forgotten",
+        "label": "Right to Be Forgotten"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

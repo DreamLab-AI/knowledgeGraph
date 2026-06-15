@@ -1,0 +1,76 @@
+{
+  "id": "urn:visionflow:page:proprietary-specification",
+  "title": "Proprietary Specification",
+  "slug": "proprietary-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:proprietary-specification",
+  "domain": "standards",
+  "definition": "A proprietary specification is a technical specification controlled by a single vendor or consortium that retains exclusive rights over its definition, evolution and use. Access may require licensing, non-disclosure or membership, and the owner can change it unilaterally. It contrasts with an open standard governed by a neutral body under royalty-free or fair terms, and it tends to increase the risk of vendor lock-in for adopters.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technical-standard",
+      "label": "Technical Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-rights",
+        "label": "Intellectual Property Rights"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:intellectual-property-rights",
+        "label": "Intellectual Property Rights"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      },
+      {
+        "id": "urn:ngm:class:protocol-specification",
+        "label": "Protocol Specification"
+      },
+      {
+        "id": "urn:ngm:class:reference-implementation",
+        "label": "Reference Implementation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

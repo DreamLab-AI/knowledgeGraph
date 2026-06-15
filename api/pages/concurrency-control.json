@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:concurrency-control",
+  "title": "Concurrency Control",
+  "slug": "concurrency-control",
+  "public": true,
+  "classIri": "urn:ngm:class:concurrency-control",
+  "domain": "distributed-systems",
+  "definition": "Concurrency control is the set of techniques that coordinate simultaneous operations on shared data so that correctness is preserved despite interleaving. It ensures that concurrent transactions or processes produce results equivalent to some valid serial execution, preventing anomalies such as lost updates and inconsistent reads. It is foundational to databases, distributed systems, and collaborative applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "id": "urn:ngm:class:data-consistency",
+        "label": "Data Consistency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-consistency",
+        "label": "Data Consistency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-consistency",
+        "label": "Data Consistency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "id": "urn:ngm:class:state-synchronization",
+        "label": "State Synchronization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

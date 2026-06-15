@@ -102,7 +102,7 @@ public:: true
         "label": "Large Language Model Serving"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicle-perception",
+        "@id": "urn:ngm:class:autonomous-driving-perception",
         "label": "Autonomous Vehicle Perception"
       }
     ],
@@ -152,7 +152,7 @@ public:: true
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:autonomous-robotics",
+        "@id": "urn:ngm:class:robotics",
         "label": "Autonomous Robotics"
       }
     ],

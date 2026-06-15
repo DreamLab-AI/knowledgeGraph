@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:connectionist-temporal-classification",
+  "title": "Connectionist Temporal Classification",
+  "slug": "connectionist-temporal-classification",
+  "public": true,
+  "classIri": "urn:ngm:class:connectionist-temporal-classification",
+  "domain": "distributed-collaboration",
+  "definition": "Connectionist Temporal Classification (CTC) is a sequence-modelling loss function and decoding scheme that trains neural networks to map unsegmented input sequences to output label sequences without requiring pre-aligned data. It introduces a blank symbol and marginalises over all valid alignments, allowing a network to learn the alignment implicitly during training. CTC is widely used in speech recognition and handwriting recognition where input and output lengths differ and frame-level labels are unavailable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:speech-recognition",
+      "label": "Speech Recognition"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:real-time-translation",
+        "label": "Real-time Translation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sequence-to-sequence",
+        "label": "Sequence To Sequence"
+      },
+      {
+        "id": "urn:ngm:class:speech-to-text",
+        "label": "Speech To Text"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lstm",
+        "label": "LSTM"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:acoustic-model",
+        "label": "Acoustic Model"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    }
+  ]
+}

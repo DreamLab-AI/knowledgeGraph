@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:longtermism",
+  "title": "Longtermism",
+  "slug": "longtermism",
+  "public": true,
+  "classIri": "urn:ngm:class:longtermism",
+  "domain": "governance",
+  "definition": "Longtermism is an ethical position holding that positively influencing the long-term future is a key moral priority of our time, grounded in the claims that future people matter morally, that the future may contain vastly more people than the present, and that present actions can foreseeably shape their welfare. It motivates particular concern for reducing existential and catastrophic risks, safeguarding civilisational trajectory, and preserving option value for future generations. As a strand of effective altruism and applied ethics, longtermism informs governance debates on emerging technologies, biosecurity, and the safe development of advanced artificial intelligence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ethics",
+      "label": "Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:forecasting",
+        "label": "Forecasting"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:long-term-governance",
+        "label": "Long-Term Governance"
+      },
+      {
+        "id": "urn:ngm:class:technology-policy",
+        "label": "Technology Policy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:moral-philosophy",
+        "label": "Moral Philosophy"
+      },
+      {
+        "id": "urn:ngm:class:utilitarianism",
+        "label": "Utilitarianism"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:short-termism",
+        "label": "Short-Termism"
+      },
+      {
+        "id": "urn:ngm:class:person-affecting-view",
+        "label": "Person-Affecting View"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:global-priorities-research",
+        "label": "Global Priorities Research"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:effective-altruism",
+        "label": "Effective Altruism"
+      },
+      {
+        "id": "urn:ngm:class:intergenerational-equity",
+        "label": "Intergenerational Equity"
+      },
+      {
+        "id": "urn:ngm:class:catastrophic-risk",
+        "label": "Catastrophic Risk"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ]
+}

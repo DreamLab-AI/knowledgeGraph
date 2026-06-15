@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:anonymity",
+  "title": "Anonymity",
+  "slug": "anonymity",
+  "public": true,
+  "classIri": "urn:ngm:class:anonymity",
+  "domain": "security",
+  "definition": "Anonymity is the property of an actor being unidentifiable within a set of potential actors, so that actions cannot be linked to a real-world identity. It is a core privacy goal achieved through techniques that obscure identifying attributes, network paths and metadata. Anonymity contrasts with pseudonymity, where a persistent but non-identifying handle is retained.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:privacy",
+      "label": "Privacy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pseudonymity",
+        "label": "Pseudonymity"
+      },
+      {
+        "id": "urn:ngm:class:identity",
+        "label": "Identity"
+      },
+      {
+        "id": "urn:ngm:class:surveillance",
+        "label": "Surveillance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "id": "urn:ngm:class:anonymisation",
+        "label": "Anonymisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tor",
+        "label": "Tor"
+      },
+      {
+        "id": "urn:ngm:class:vpn",
+        "label": "VPN"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    }
+  ]
+}

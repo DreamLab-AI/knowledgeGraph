@@ -1,0 +1,35 @@
+- ### Definition
+  - Capability forecasting is the practice of predicting the future capabilities of AI systems before they are built or deployed, typically by extrapolating from scaling laws, benchmark trends, and historical progress. It aims to anticipate when models will reach particular performance thresholds so that safety, governance, and deployment decisions can be made proactively. Forecasts are inherently uncertain because of emergent behaviour and discontinuous jumps in capability.
+  - [[AI Governance]] [[Scaling Laws]] [[Model Evaluation]] [[AI Safety]]
+- ### Overview
+  - Capability forecasting treats AI progress as partly predictable, exploiting smooth scaling relationships between compute, data, and loss.
+  - It supports anticipatory governance by estimating when risky capabilities might appear.
+  - Emergent abilities and benchmark saturation complicate forecasts, so practitioners couple quantitative extrapolation with expert judgement.
+- ### Key aspects
+  - Scaling-law extrapolation projects loss and downstream performance from compute and data trends.
+  - Benchmark trend analysis tracks how task performance improves across model generations.
+  - Threshold estimation predicts when specific dangerous or transformative capabilities emerge.
+  - Uncertainty quantification communicates the confidence and failure modes of a forecast.
+- ### Applications
+  - Informing AI safety and deployment timelines for frontier models.
+  - Guiding regulatory and governance interventions ahead of capability jumps.
+  - Prioritising evaluation and red-teaming effort for anticipated capabilities.
+- ### Relationships
+  - partOf:: [[AI Governance]]
+  - uses:: [[Scaling Laws]]
+  - uses:: [[Model Evaluation]]
+  - requires:: [[Scaling Laws]]
+  - requires:: [[Evaluation benchmarks and leaderboards]]
+  - supports:: [[AI Safety]]
+  - supports:: [[Risk Assessment]]
+  - enables:: [[Risk Assessment]]
+  - enables:: [[AI Safety]]
+  - relatedTo:: [[Emergent Capabilities]]
+  - relatedTo:: [[Capability Evaluation]]
+  - relatedTo:: [[Foundation Model]]
+  - relatedTo:: [[Alignment]]
+  - contrastsWith:: [[Emergent Capabilities]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

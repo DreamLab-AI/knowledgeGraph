@@ -1,0 +1,33 @@
+- ### Definition
+  - The [[S3 Api]] is a RESTful interface for [[Object Storage]] built on the [[REST API]] style, widely adopted across [[Cloud Storage]] and [[Storage Infrastructure]].
+- ### Overview
+  - Exposes object operations (PUT, GET, DELETE, LIST) over HTTP against buckets and keys.
+  - Has become a de facto industry standard, implemented by numerous compatible storage backends.
+  - Uses request signing for authentication and fine-grained access policies.
+- ### Mechanisms
+  - Bucket and key namespace for addressing immutable objects.
+  - Signed request authentication and policy-based authorisation.
+  - Multipart upload, versioning and lifecycle management semantics.
+  - Compatibility layers that let diverse systems present an S3-shaped surface.
+- ### Applications
+  - Backing store for data lakes and analytics pipelines.
+  - Static asset and media hosting at scale.
+  - Backup, archival and disaster-recovery storage.
+  - Portable application storage across cloud providers.
+- ### Relationships
+  - implements:: [[REST API]]
+  - implements:: [[Object Storage]]
+  - standardizedBy:: [[API]]
+  - partOf:: [[Cloud Storage]]
+  - uses:: [[API Gateway]]
+  - uses:: [[Authentication]]
+  - enables:: [[Data Storage]]
+  - enables:: [[Interoperability]]
+  - requires:: [[Access Control]]
+  - supports:: [[Storage Infrastructure]]
+  - relatedTo:: [[Cloud Computing]]
+  - relatedTo:: [[Data Ingestion]]
+  - dependsOn:: [[Infrastructure]]
+  - bridgesTo:: [[Data Pipeline]]
+- ### Provenance
+  - updated:: 2026-06-15

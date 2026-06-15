@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:academic-research",
+  "title": "Academic Research",
+  "slug": "academic-research",
+  "public": true,
+  "classIri": "urn:ngm:class:academic-research",
+  "domain": "governance",
+  "definition": "Academic research is the systematic, disciplined inquiry conducted within universities and research institutions to generate, validate, and disseminate new knowledge. It proceeds through formulating questions, reviewing prior literature, designing and executing studies under the scientific method, and subjecting findings to peer review before publication. Its outputs include papers, datasets, and theories that are cited and built upon by the wider scholarly community. Governance norms such as reproducibility, transparency, and research integrity distinguish it from informal or commercial knowledge production.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-access",
+        "label": "Open Access"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:open-access",
+        "label": "Open Access"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:academia",
+        "label": "Academia"
+      },
+      {
+        "id": "urn:ngm:class:scientific-method",
+        "label": "Scientific Method"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    }
+  ]
+}

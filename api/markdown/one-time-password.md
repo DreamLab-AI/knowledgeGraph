@@ -1,0 +1,33 @@
+- ### Definition
+  - A one-time password (OTP) is a credential that is valid for only a single login session or transaction, mitigating the risk of credential replay associated with static passwords. OTPs are typically generated from a shared secret combined with a moving factor — either a counter (HOTP) or the current time (TOTP) — using an HMAC construction, and delivered through authenticator apps, hardware tokens, or out-of-band channels such as SMS. While OTPs strengthen authentication as a second factor, they remain susceptible to real-time phishing, in contrast to origin-bound phishing-resistant methods.
+  - [[Multi-Factor Authentication]] [[HMAC]] [[Hash Function]] [[Nonce]] [[Authentication]]
+- ### Overview
+  - One-time passwords introduce a moving factor so that an intercepted code cannot be reused. HOTP advances a counter on each generation, while TOTP derives the code from the current time divided into fixed intervals, both feeding an HMAC of the moving factor under a shared secret and truncating the output to a short numeric code. Synchronisation tolerance handles clock drift and counter desynchronisation, but because the code is a transferable secret, an attacker who relays it in real time can still defeat the scheme.
+- ### Mechanisms
+  - Shared secret seed provisioned to the authenticator
+  - Moving factor: counter (HOTP) or time interval (TOTP)
+  - HMAC computation over the moving factor with truncation
+  - Time-window or counter tolerance for clock and sync drift
+  - Delivery via authenticator apps, hardware tokens, or SMS
+- ### Applications
+  - Second factor in multi-factor authentication
+  - Authenticator-app sign-in codes
+  - Hardware OTP tokens for enterprise access
+  - Transaction confirmation in banking
+- ### Relationships
+  - hasPart:: [[HMAC]]
+  - hasPart:: [[Nonce]]
+  - uses:: [[HMAC]]
+  - uses:: [[Hash Function]]
+  - implements:: [[Multi-Factor Authentication]]
+  - contrastsWith:: [[Passwordless Authentication]]
+  - requires:: [[Key Generation]]
+  - enables:: [[Authentication]]
+  - dependsOn:: [[Modular Arithmetic]]
+  - relatedTo:: [[Authentication]]
+  - relatedTo:: [[Digital Signature]]
+- ### Provenance
+  - This class was materialised to resolve inbound references from existing classes in the knowledge graph.
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

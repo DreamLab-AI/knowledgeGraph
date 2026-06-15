@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:detailed-balance",
+  "title": "Detailed Balance",
+  "slug": "detailed-balance",
+  "public": true,
+  "classIri": "urn:ngm:class:detailed-balance",
+  "domain": "ai",
+  "definition": "Detailed balance is a condition on a Markov chain stating that, in equilibrium, the probability flux between any two states is equal in both directions. When a transition kernel satisfies detailed balance with respect to a target distribution, that distribution is a stationary distribution of the chain. It is the central design principle behind most Markov chain Monte Carlo samplers, including Metropolis-Hastings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:markov-chain-monte-carlo",
+      "label": "Markov Chain Monte Carlo"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

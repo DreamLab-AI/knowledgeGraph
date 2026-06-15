@@ -1,0 +1,37 @@
+- ### Definition
+  - Epidemiological modelling is the use of mathematical and computational models to describe how infectious diseases spread through populations over time. Compartmental models partition a population into states such as susceptible, infected, and recovered, and use differential equations to govern transitions between them, while network and agent-based models capture heterogeneous contact structures. These models inform forecasting, intervention design, and public-health policy.
+  - Related: [[Computational Modelling]] [[Differential Equation]] [[Network Analysis]] [[Public Health]] [[Agent-Based Modelling]]
+- ### Overview
+  - The canonical compartmental approach is the SIR family of models, which tracks the flow of individuals between susceptible, infected, and recovered compartments using coupled differential equations parameterised by transmission and recovery rates. The basic reproduction number summarises whether an outbreak grows or declines. Network and agent-based extensions relax the assumption of homogeneous mixing, representing individuals and their contacts explicitly so that interventions such as vaccination, isolation, and contact tracing can be evaluated.
+- ### Mechanisms
+  - Compartmental models partition populations into disease states.
+  - The basic reproduction number characterises outbreak growth.
+  - Differential equations govern compartment transitions over time.
+  - Network models encode heterogeneous contact structures.
+  - Agent-based simulations represent individuals and their behaviours explicitly.
+- ### Applications
+  - Forecasting outbreak trajectories and healthcare demand.
+  - Evaluating vaccination and intervention strategies.
+  - Estimating transmission parameters from surveillance data.
+  - Designing testing and contact-tracing policies.
+  - Planning resource allocation during epidemics.
+- ### Relationships
+  - hasPart:: [[Differential Equation]]
+  - partOf:: [[Computational Modelling]]
+  - bridgesTo:: [[Public Health]]
+  - bridgesTo:: [[Network Analysis]]
+  - relatedTo:: [[Agent-Based Modelling]]
+  - relatedTo:: [[Graph Theory]]
+  - relatedTo:: [[Time Series Forecasting]]
+  - enables:: [[Public Health]]
+  - enables:: [[Time Series Forecasting]]
+  - uses:: [[Differential Equation]]
+  - uses:: [[Simulation]]
+  - uses:: [[Agent-Based Modelling]]
+  - dependsOn:: [[Computational Modelling]]
+  - supports:: [[Public Health]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

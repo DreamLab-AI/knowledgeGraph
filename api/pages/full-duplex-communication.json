@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:full-duplex-communication",
+  "title": "Full Duplex Communication",
+  "slug": "full-duplex-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:full-duplex-communication",
+  "domain": "infrastructure",
+  "definition": "Full-duplex communication is a mode of data exchange in which both endpoints can transmit and receive simultaneously over a single connection. It contrasts with half-duplex, where only one side may send at a time. Full-duplex channels enable low-latency, bidirectional interaction and are central to technologies such as web sockets and real-time messaging.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transmission-control-protocol",
+        "label": "Transmission Control Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bidirectional-communication",
+        "label": "Bidirectional Communication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transmission-control-protocol",
+        "label": "Transmission Control Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bidirectional-communication",
+        "label": "Bidirectional Communication"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

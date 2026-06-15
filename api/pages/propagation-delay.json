@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:propagation-delay",
+  "title": "Propagation Delay",
+  "slug": "propagation-delay",
+  "public": true,
+  "classIri": "urn:ngm:class:propagation-delay",
+  "domain": "infrastructure",
+  "definition": "Propagation delay is the time a signal takes to travel from sender to receiver across a transmission medium, determined by the physical distance divided by the signal's propagation speed. Bounded by the speed of light and reduced in copper or fibre by the medium's refractive properties, it sets a hard floor on network latency that no amount of bandwidth can remove. Propagation delay is one of several additive components of end-to-end latency, alongside transmission, queuing, and processing delays.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-latency",
+      "label": "Network Latency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:round-trip-time",
+        "label": "Round Trip Time"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:transmission-delay",
+        "label": "Transmission Delay"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:low-latency",
+        "label": "Low Latency"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-latency",
+        "label": "Network Latency"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transmission-delay",
+        "label": "Transmission Delay"
+      },
+      {
+        "id": "urn:ngm:class:jitter",
+        "label": "Jitter"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "latency",
+      "label": "Latency"
+    }
+  ]
+}

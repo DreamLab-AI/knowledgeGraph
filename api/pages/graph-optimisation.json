@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:graph-optimisation",
+  "title": "Graph Optimisation",
+  "slug": "graph-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:graph-optimisation",
+  "domain": "ai",
+  "definition": "Graph optimisation is the set of compiler transformations applied to a model's computation graph to reduce latency, memory footprint and energy use without altering the model's semantics. Typical passes include operator fusion, constant folding, dead-node elimination, layout reordering and kernel selection. It is performed by inference runtimes and ahead-of-time compilers as a precursor to deployment on a target accelerator.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      },
+      {
+        "id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      },
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      },
+      {
+        "id": "urn:ngm:class:tensor-rt",
+        "label": "TensorRT"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ]
+}

@@ -102,7 +102,7 @@
         "label": "Consensus Algorithm"
       },
       {
-        "@id": "urn:ngm:class:latency-management",
+        "@id": "urn:ngm:class:latency-management-protocol",
         "label": "Latency Management"
       }
     ],

@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:asyncapi",
+  "title": "Asyncapi",
+  "slug": "asyncapi",
+  "public": true,
+  "classIri": "urn:ngm:class:asyncapi",
+  "domain": "infrastructure",
+  "definition": "AsyncAPI is an open specification for describing event-driven and message-based APIs in a machine-readable document, analogous to how OpenAPI describes request-response REST APIs. It defines channels, messages, payloads and the protocols and brokers used to exchange them, enabling documentation, code generation, validation and tooling for asynchronous systems. AsyncAPI standardises contracts for publish-subscribe and streaming architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:api-specification",
+      "label": "API Specification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:streaming-data",
+        "label": "Streaming Data"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:ngm:class:schema-validation",
+        "label": "Schema Validation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-messaging",
+        "label": "Asynchronous Messaging"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

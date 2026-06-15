@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:lossless-compression",
+  "title": "Lossless Compression",
+  "slug": "lossless-compression",
+  "public": true,
+  "classIri": "urn:ngm:class:lossless-compression",
+  "domain": "infrastructure",
+  "definition": "Lossless compression is a class of data compression in which the original data can be reconstructed exactly, bit for bit, from the compressed representation. It exploits statistical redundancy through techniques such as entropy coding and dictionary substitution, contrasting with lossy compression which discards perceptually insignificant information for higher ratios. It is essential where fidelity must be preserved, such as for text, executables, and archival data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-compression",
+      "label": "Data Compression"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:codec",
+        "label": "Codec"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:file-format",
+        "label": "File Format"
+      },
+      {
+        "id": "urn:ngm:class:backup",
+        "label": "Backup"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lossy-compression",
+        "label": "Lossy Compression"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:entropy-coding",
+        "label": "Entropy Coding"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:image-compression",
+        "label": "Image Compression"
+      },
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

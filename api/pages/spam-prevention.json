@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:spam-prevention",
+  "title": "Spam Prevention",
+  "slug": "spam-prevention",
+  "public": true,
+  "classIri": "urn:ngm:class:spam-prevention",
+  "domain": "blockchain",
+  "definition": "Spam prevention is the set of mechanisms that deter the flooding of a shared system with low-value or malicious activity. In blockchain networks it most commonly takes the form of transaction fees or proof-of-work requirements that impose a real cost on each submission, making large-scale spamming economically or computationally infeasible. Spam prevention protects scarce resources such as block space, mempool capacity and validator compute from denial-of-service style abuse. It is a key design constraint that interacts with throughput, fee markets and decentralisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

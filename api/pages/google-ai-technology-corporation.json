@@ -110,12 +110,7 @@
     ],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:alphabet-inc",
-        "label": "Alphabet Inc"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:large-language-model",

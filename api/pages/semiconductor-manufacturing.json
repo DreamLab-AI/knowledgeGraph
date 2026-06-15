@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:semiconductor-manufacturing",
+  "title": "Semiconductor Manufacturing",
+  "slug": "semiconductor-manufacturing",
+  "public": true,
+  "classIri": "urn:ngm:class:semiconductor-manufacturing",
+  "domain": "infrastructure",
+  "definition": "Semiconductor manufacturing is the multi-stage industrial process that fabricates integrated circuits on silicon wafers through cycles of deposition, photolithographic patterning, etching, doping, and metallisation in cleanroom fabs. It transforms electronic designs into physical chips at nanometre feature sizes and is the foundation of all modern computing hardware. The capital-intensive supply chain spans wafer production, fabrication, packaging, and test.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:integrated-circuit",
+        "label": "Integrated Circuit"
+      },
+      {
+        "id": "urn:ngm:class:wafer-fabrication",
+        "label": "Wafer Fabrication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:semiconductor",
+        "label": "Semiconductor"
+      },
+      {
+        "id": "urn:ngm:class:nanotechnology",
+        "label": "Nanotechnology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cpu-computing",
+        "label": "CPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-architecture",
+        "label": "Computer Architecture"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:foundry",
+        "label": "Foundry"
+      },
+      {
+        "id": "urn:ngm:class:chip",
+        "label": "Chip"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    }
+  ]
+}

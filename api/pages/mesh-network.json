@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:mesh-network",
+  "title": "Mesh Network",
+  "slug": "mesh-network",
+  "public": true,
+  "classIri": "urn:ngm:class:mesh-network",
+  "domain": "infrastructure",
+  "definition": "A mesh network is a network topology in which each node relays data for the network, cooperating to distribute information so that traffic can take multiple paths between source and destination. Mesh networks self-organise and self-heal: when a link or node fails, traffic is rerouted around the fault without manual reconfiguration. They are widely used in wireless sensor networks, smart-home protocols, and community and industrial deployments where infrastructure-free, resilient connectivity is required.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-topology",
+      "label": "Network Topology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-home",
+        "label": "Smart Home"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet Of Things"
+      },
+      {
+        "id": "urn:ngm:class:sensor-network",
+        "label": "Sensor Network"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:wireless-network",
+        "label": "Wireless Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:iot",
+        "label": "IoT"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "id": "urn:ngm:class:thread-protocol",
+        "label": "Thread Protocol"
+      },
+      {
+        "id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

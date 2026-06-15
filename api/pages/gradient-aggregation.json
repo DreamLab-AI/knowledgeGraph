@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:gradient-aggregation",
+  "title": "Gradient Aggregation",
+  "slug": "gradient-aggregation",
+  "public": true,
+  "classIri": "urn:ngm:class:gradient-aggregation",
+  "domain": "machine-learning",
+  "definition": "Gradient aggregation is the step in distributed machine learning where gradients computed independently on different workers or data shards are combined into a single update for the shared model. Typically realised by summing or averaging local gradients, it lets parallel workers train a consistent global model despite operating on disjoint data. The aggregation strategy and its communication pattern strongly influence training throughput, convergence and, in federated settings, privacy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-training",
+      "label": "Distributed Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:all-reduce",
+        "label": "All Reduce"
+      },
+      {
+        "id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:parameter-server",
+        "label": "Parameter Server"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gradient-compression",
+        "label": "Gradient Compression"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

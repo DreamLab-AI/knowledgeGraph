@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:ergodic-theory",
+  "title": "Ergodic Theory",
+  "slug": "ergodic-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:ergodic-theory",
+  "domain": "machine-learning",
+  "definition": "Ergodic theory is the branch of mathematics that studies the long-term statistical behaviour of dynamical systems that preserve a measure. Its central result, the ergodic theorem, gives conditions under which the time average of a quantity along a single trajectory equals its average over the whole state space. The theory provides the foundations for understanding when sampling a process over time yields the same information as sampling its underlying distribution, which is essential for Monte Carlo methods and statistical learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dynamical-systems",
+      "label": "Dynamical Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-method",
+        "label": "Monte Carlo Method"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      },
+      {
+        "id": "urn:ngm:class:density-estimation",
+        "label": "Density Estimation"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    }
+  ]
+}

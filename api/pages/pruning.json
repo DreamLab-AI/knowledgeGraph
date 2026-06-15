@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:pruning",
+  "title": "Pruning",
+  "slug": "pruning",
+  "public": true,
+  "classIri": "urn:ngm:class:pruning",
+  "domain": "artificial-intelligence",
+  "definition": "Pruning is a model compression technique that removes redundant or low-importance parameters from a neural network to reduce its size and computational cost while preserving accuracy. It ranges from unstructured pruning of individual weights to structured pruning of whole neurons, channels or attention heads. Pruned models are typically fine-tuned to recover any lost accuracy and can be deployed with lower memory and latency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-compression",
+      "label": "Model Compression"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:tinyml",
+        "label": "TinyML"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-memory",
+        "label": "GPU Memory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:on-device-ai",
+        "label": "On-Device AI"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ]
+}

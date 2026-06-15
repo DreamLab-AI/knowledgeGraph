@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:ergonomics",
+  "title": "Ergonomics",
+  "slug": "ergonomics",
+  "public": true,
+  "classIri": "urn:ngm:class:ergonomics",
+  "domain": "robotics",
+  "definition": "Ergonomics, also called human factors engineering, is the discipline of designing systems, tools and environments to fit the physical and cognitive characteristics of the people who use them. It studies posture, reach, force, repetition, perception and workload in order to optimise human performance, comfort and safety while reducing fatigue and injury. In robotics and automation it governs the design of workstations, controls and collaborative robots so that machines and humans can operate together efficiently and without harm.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-factors",
+      "label": "Human Factors"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:user-centred-design",
+        "label": "User-Centred Design"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    }
+  ]
+}

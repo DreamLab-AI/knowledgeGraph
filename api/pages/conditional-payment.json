@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:conditional-payment",
+  "title": "Conditional Payment",
+  "slug": "conditional-payment",
+  "public": true,
+  "classIri": "urn:ngm:class:conditional-payment",
+  "domain": "blockchain",
+  "definition": "A conditional payment is a transfer of value that is released only when one or more predefined conditions are met, rather than executing unconditionally on submission. On blockchains these conditions are enforced by smart contracts or scripts such as hash and time locks, removing the need for a trusted intermediary to adjudicate. Conditional payments are the foundation of escrow, payment channels and atomic cross-chain swaps.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "id": "urn:ngm:class:trustless-execution",
+        "label": "Trustless Execution"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:state-channel",
+        "label": "State Channel"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:trustless-execution",
+        "label": "Trustless Execution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

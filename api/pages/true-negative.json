@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:true-negative",
+  "title": "True Negative",
+  "slug": "true-negative",
+  "public": true,
+  "classIri": "urn:ngm:class:true-negative",
+  "domain": "artificial-intelligence",
+  "definition": "A true negative is an outcome in binary classification where the model correctly predicts the negative class for an instance that is genuinely negative. It is one of the four cells of the confusion matrix and contributes to metrics such as specificity and accuracy. Counting true negatives is essential for evaluating how well a classifier avoids false alarms on negative cases.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:confusion-matrix",
+      "label": "Confusion Matrix"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:specificity",
+        "label": "Specificity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:true-positive",
+        "label": "True Positive"
+      },
+      {
+        "id": "urn:ngm:class:false-positive",
+        "label": "False Positive"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sensitivity",
+        "label": "Sensitivity"
+      },
+      {
+        "id": "urn:ngm:class:precision",
+        "label": "Precision"
+      },
+      {
+        "id": "urn:ngm:class:recall",
+        "label": "Recall"
+      },
+      {
+        "id": "urn:ngm:class:threshold-selection",
+        "label": "Threshold Selection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    }
+  ]
+}

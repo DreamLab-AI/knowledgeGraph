@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:spot-trading",
+  "title": "Spot Trading",
+  "slug": "spot-trading",
+  "public": true,
+  "classIri": "urn:ngm:class:spot-trading",
+  "domain": "blockchain",
+  "definition": "Spot trading is the buying and selling of an asset for immediate delivery and settlement at the current market price, as opposed to settlement at a future date. In cryptocurrency and traditional markets it involves placing orders against an order book or liquidity pool, with ownership of the underlying asset transferring promptly, and it contrasts with derivatives and margin trading where exposure is taken without immediate full ownership.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset",
+      "label": "Digital Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:limit-order",
+        "label": "Limit Order"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bid-ask-spread",
+        "label": "Bid-Ask Spread"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:derivatives-trading",
+        "label": "Derivatives Trading"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

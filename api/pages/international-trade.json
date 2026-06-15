@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:international-trade",
+  "title": "International Trade",
+  "slug": "international-trade",
+  "public": true,
+  "classIri": "urn:ngm:class:international-trade",
+  "domain": "finance",
+  "definition": "International trade is the exchange of goods, services, and capital across national borders, allowing countries to specialise according to comparative advantage and access markets, inputs, and resources beyond their own economies. It is governed by tariffs, trade agreements, and institutions such as the World Trade Organization, and is recorded in the balance of payments. It is a primary driver of economic growth and global interdependence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:macroeconomics",
+      "label": "Macroeconomics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      },
+      {
+        "id": "urn:ngm:class:customs",
+        "label": "Customs"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:customs",
+        "label": "Customs"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:balance-of-payments",
+        "label": "Balance of Payments"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:world-trade-organization",
+        "label": "World Trade Organization"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "id": "urn:ngm:class:gross-domestic-product",
+        "label": "Gross Domestic Product"
+      },
+      {
+        "id": "urn:ngm:class:global-trade",
+        "label": "Global Trade"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

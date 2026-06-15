@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:rsa-algorithm",
+  "title": "Rsa Algorithm",
+  "slug": "rsa-algorithm",
+  "public": true,
+  "classIri": "urn:ngm:class:rsa-algorithm",
+  "domain": "security",
+  "definition": "The RSA algorithm is a public-key cryptosystem whose security rests on the practical difficulty of factoring the product of two large prime numbers. A public key derived from this product encrypts data or verifies signatures, while the corresponding private key, recoverable only with knowledge of the prime factors, decrypts or signs. RSA was among the first practical asymmetric schemes and remains widely used for key exchange, digital signatures, and certificate-based authentication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:public-key-cryptography",
+      "label": "Public-Key Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:key-pair",
+        "label": "Key Pair"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:key-pair",
+        "label": "Key Pair"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:trapdoor-function",
+        "label": "Trapdoor Function"
+      },
+      {
+        "id": "urn:ngm:class:one-way-function",
+        "label": "One Way Function"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-algorithm",
+        "label": "Cryptographic Algorithm"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:one-way-function",
+        "label": "One Way Function"
+      },
+      {
+        "id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ssl-tls",
+        "label": "SSL/TLS"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:public-key",
+        "label": "Public Key"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

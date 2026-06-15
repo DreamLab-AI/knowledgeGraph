@@ -230,7 +230,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:model-alignment",
+        "@id": "urn:ngm:class:ai-alignment",
         "label": "Model Alignment"
       },
       {

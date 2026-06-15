@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:offline-rendering",
+  "title": "Offline Rendering",
+  "slug": "offline-rendering",
+  "public": true,
+  "classIri": "urn:ngm:class:offline-rendering",
+  "domain": "spatial-computing",
+  "definition": "Offline rendering is the production of images or animation sequences where computation time per frame is not constrained to interactive rates, allowing each frame to take seconds, minutes, or hours to achieve maximum visual fidelity. It is the counterpart to real-time rendering and is typical of film, visual effects, and high-end visualisation, where physically based light transport such as path tracing is feasible. Offline rendering is commonly executed across render farms to parallelise the heavy computation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:path-tracing",
+        "label": "Path Tracing"
+      },
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:anti-aliasing",
+        "label": "Anti Aliasing"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

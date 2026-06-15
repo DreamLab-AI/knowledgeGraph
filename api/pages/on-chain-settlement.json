@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:on-chain-settlement",
+  "title": "On Chain Settlement",
+  "slug": "on-chain-settlement",
+  "public": true,
+  "classIri": "urn:ngm:class:on-chain-settlement",
+  "domain": "blockchain",
+  "definition": "On chain settlement is the process by which the transfer of value or assets between parties is recorded directly on a distributed ledger and becomes economically irreversible according to the ledger's consensus rules. Unlike off-chain or netting arrangements that defer ledger updates, on chain settlement writes each transaction's final state into the canonical chain, removing the need for a trusted central clearing intermediary. Settlement is considered complete once the relevant transaction attains the chain's finality guarantee, after which reversal requires violating consensus. It underpins payment, securities, and decentralised finance flows on public and permissioned blockchains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:settlement-finality",
+      "label": "Settlement Finality"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:settlement-finality",
+        "label": "Settlement Finality"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:payment-rail",
+        "label": "Payment Rail"
+      },
+      {
+        "id": "urn:ngm:class:transaction-throughput",
+        "label": "Transaction Throughput"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+- ### Definition
+	- An [[Optimisation Algorithm]] is a systematic procedure for finding decision-variable values that minimise or maximise an [[Objective Function]], possibly under constraints.
+	- It is a concrete instance of [[Mathematical Optimisation]], spanning gradient, Newton-type, and derivative-free methods.
+	- In machine learning it drives [[Model Training]] by iteratively reducing a [[Loss Function]].
+- ### Overview
+	- Optimisation algorithms turn an objective and a feasible region into a sequence of candidate points that converge towards an optimum. The right choice depends on the structure of the problem: convexity, smoothness, dimensionality, and whether gradients are available.
+	- First-order methods such as [[Gradient Descent]] and its stochastic variant use only the objective and its gradient, scaling to the millions of parameters typical of deep networks. Second-order methods exploit curvature for faster local convergence at higher per-step cost.
+	- When the objective is non-differentiable, noisy, or combinatorial, derivative-free metaheuristics, including [[Genetic Algorithm|genetic algorithms]] and [[Simulated Annealing]], explore the space stochastically.
+	- Convex optimisation provides strong guarantees: any local optimum is global, and efficient solvers exist for problems cast in convex form.
+- ### Key aspects
+	- Convergence rate and computational cost per iteration.
+	- Sensitivity to step size, conditioning, and initialisation.
+	- Handling of constraints via projection, penalties, or duality.
+	- Global versus local optimality guarantees.
+- ### Applications
+	- Training neural networks and statistical models.
+	- [[Hyperparameter Optimisation]] and architecture search.
+	- Operations research, logistics, and resource allocation.
+	- Engineering design and control.
+- ### Relationships
+	- hasPart:: [[Gradient Descent]]
+	- hasPart:: [[Stochastic Gradient Descent]]
+	- partOf:: [[Mathematical Optimisation]]
+	- dependsOn:: [[Loss Function]]
+	- dependsOn:: [[Objective Function]]
+	- requires:: [[Gradient Descent]]
+	- requires:: [[Backpropagation]]
+	- enables:: [[Model Training]]
+	- enables:: [[Hyperparameter Optimisation]]
+	- enables:: [[Deep Learning]]
+	- implements:: [[Convex Optimisation]]
+	- uses:: [[Statistics]]
+	- relatedTo:: [[Simulated Annealing]]
+	- relatedTo:: [[Genetic Algorithm]]
+	- relatedTo:: [[Hyperparameter Tuning]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

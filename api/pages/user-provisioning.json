@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:user-provisioning",
+  "title": "User Provisioning",
+  "slug": "user-provisioning",
+  "public": true,
+  "classIri": "urn:ngm:class:user-provisioning",
+  "domain": "security",
+  "definition": "User provisioning is the identity-and-access-management process of creating, configuring, maintaining and eventually removing user accounts and their associated access entitlements across systems and applications. It encompasses the full account lifecycle \u2014 from initial onboarding through entitlement changes to deprovisioning at offboarding \u2014 and is increasingly automated through directory services and standards such as SCIM. Effective provisioning ensures that each identity holds exactly the access required, supporting least-privilege and timely revocation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-and-access-management",
+      "label": "Identity and Access Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:directory-service",
+        "label": "Directory Service"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:scim",
+        "label": "SCIM"
+      },
+      {
+        "id": "urn:ngm:class:directory-service",
+        "label": "Directory Service"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:scim",
+        "label": "SCIM"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:identity-and-access-management",
+        "label": "Identity and Access Management"
+      },
+      {
+        "id": "urn:ngm:class:lifecycle-management",
+        "label": "Lifecycle Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identity-provider-id-p",
+      "label": "Identity Provider (IdP)"
+    }
+  ]
+}

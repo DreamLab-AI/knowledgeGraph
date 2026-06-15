@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:holder-binding",
+  "title": "Holder Binding",
+  "slug": "holder-binding",
+  "public": true,
+  "classIri": "urn:ngm:class:holder-binding",
+  "domain": "security",
+  "definition": "Holder binding is the cryptographic mechanism that ties a verifiable credential to the legitimate holder's controlled key material, ensuring that only the entity to whom a credential was issued can present it. It prevents credential theft and replay by requiring the presenter to prove possession of a private key bound to the credential at presentation time. Common realisations include key binding in SD-JWT and proof-of-possession challenges during presentation exchange.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-identifier",
+      "label": "Decentralized Identifier"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:tls-handshake",
+        "label": "TLS Handshake"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decentralized-identifier",
+        "label": "Decentralized Identifier"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:credential-verification",
+        "label": "Credential Verification"
+      },
+      {
+        "id": "urn:ngm:class:selective-disclosure",
+        "label": "Selective Disclosure"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:credential-issuance",
+        "label": "Credential Issuance"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:did",
+        "label": "DID"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:net-zero-transition",
+  "title": "Net Zero Transition",
+  "slug": "net-zero-transition",
+  "public": true,
+  "classIri": "urn:ngm:class:net-zero-transition",
+  "domain": "finance",
+  "definition": "The net zero transition is the structural shift of economies and financial portfolios toward balancing residual greenhouse-gas emissions with removals, in line with limiting global warming. It mobilises capital toward low-carbon technologies, retires or retrofits high-emitting assets, and aligns corporate strategy and disclosure with decarbonisation pathways. Transition finance provides the funding and instruments that allow hard-to-abate sectors to decarbonise credibly over time.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:climate-finance",
+      "label": "Climate Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:impact-investing",
+        "label": "Impact Investing"
+      },
+      {
+        "id": "urn:ngm:class:green-finance",
+        "label": "Green Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-markets",
+        "label": "Carbon Markets"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

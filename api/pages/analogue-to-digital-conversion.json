@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:analogue-to-digital-conversion",
+  "title": "Analogue To Digital Conversion",
+  "slug": "analogue-to-digital-conversion",
+  "public": true,
+  "classIri": "urn:ngm:class:analogue-to-digital-conversion",
+  "domain": "robotics",
+  "definition": "Analogue-to-digital conversion is the process of transforming a continuous physical signal, such as voltage from a sensor, into a discrete sequence of numerical values that a digital system can store and process. It proceeds by sampling the signal at regular intervals and quantising each sample to a finite set of levels, with the sampling rate and bit depth determining how faithfully the original is represented. In robotics and embedded systems it is the essential bridge between the analogue physical world and digital control and perception pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog To Digital Converter"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:signal-conditioning",
+        "label": "Signal Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-acquisition",
+        "label": "Data Acquisition"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:analog-to-digital-converter",
+        "label": "Analog To Digital Converter"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-acquisition",
+        "label": "Data Acquisition"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:signal-conditioning",
+        "label": "Signal Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:embedded-system",
+        "label": "Embedded System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "current-sensor",
+      "label": "Current Sensor"
+    }
+  ]
+}

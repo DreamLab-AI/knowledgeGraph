@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:real-time-messaging",
+  "title": "Real Time Messaging",
+  "slug": "real-time-messaging",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-messaging",
+  "domain": "distributed-collaboration",
+  "definition": "Real-time messaging is the exchange of messages between participants with sub-second latency, so that communication feels instantaneous and conversational. It relies on persistent, bidirectional transport such as WebSockets and on patterns like publish-subscribe to fan out events to many recipients. Real-time messaging underpins chat, presence, notifications and live collaboration across distributed systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:real-time-communication",
+      "label": "Real-Time Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:presence-awareness",
+        "label": "Presence Awareness"
+      },
+      {
+        "id": "urn:ngm:class:notification-system",
+        "label": "Notification System"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:instant-messaging",
+        "label": "Instant Messaging"
+      },
+      {
+        "id": "urn:ngm:class:event-streaming",
+        "label": "Event Streaming"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:slack",
+        "label": "Slack"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:notification-system",
+        "label": "Notification System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

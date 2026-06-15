@@ -50,10 +50,6 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:faster-convergence",
-        "label": "Faster Convergence"
-      },
-      {
         "id": "urn:ngm:class:sample-efficiency",
         "label": "Sample Efficiency"
       }

@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:utility-theory",
+  "title": "Utility Theory",
+  "slug": "utility-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:utility-theory",
+  "domain": "ai",
+  "definition": "Utility Theory is the formal framework for representing an agent's preferences over outcomes as a numerical utility function, such that the agent's rational behaviour can be modelled as the maximisation of expected utility. It provides the axiomatic foundation \u2014 completeness, transitivity, continuity, and independence \u2014 under which preferences admit a utility representation. In artificial intelligence it grounds rational-agent design, decision-making under uncertainty, and the objective functions of planning and reinforcement-learning systems. It is closely tied to decision theory, game theory, and economic models of choice.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decision-theory",
+      "label": "Decision Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rational-agent",
+        "label": "Rational Agent"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:welfare-economics",
+        "label": "Welfare Economics"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:microeconomics",
+        "label": "Microeconomics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

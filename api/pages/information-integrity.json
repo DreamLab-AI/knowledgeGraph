@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:information-integrity",
+  "title": "Information Integrity",
+  "slug": "information-integrity",
+  "public": true,
+  "classIri": "urn:ngm:class:information-integrity",
+  "domain": "governance",
+  "definition": "Information integrity is the property and governance objective of ensuring that information remains accurate, complete, authentic and resistant to unauthorised or deceptive alteration across its lifecycle. In the digital-content context it spans provenance, authenticity verification and resilience against misinformation and disinformation. It draws on technical measures such as digital watermarking and cryptographic provenance alongside institutional trust-and-safety practices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-provenance",
+      "label": "Content Provenance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fact-checking",
+        "label": "Fact-Checking"
+      },
+      {
+        "id": "urn:ngm:class:media-literacy",
+        "label": "Media Literacy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:misinformation",
+        "label": "Misinformation"
+      },
+      {
+        "id": "urn:ngm:class:disinformation",
+        "label": "Disinformation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:content-authenticity",
+        "label": "Content Authenticity"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:epistemic-security",
+        "label": "Epistemic Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    }
+  ]
+}

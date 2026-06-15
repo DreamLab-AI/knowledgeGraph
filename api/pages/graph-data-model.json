@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:graph-data-model",
+  "title": "Graph Data Model",
+  "slug": "graph-data-model",
+  "public": true,
+  "classIri": "urn:ngm:class:graph-data-model",
+  "domain": "data",
+  "definition": "A graph data model represents information as nodes connected by edges, where edges carry the semantics of relationships between entities. It makes connections first-class, so traversing and querying relationships is direct rather than reconstructed through joins as in tabular models. The two dominant variants are the labelled property graph, which attaches key-value properties to nodes and edges, and the RDF triple model, which expresses facts as subject-predicate-object statements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-model",
+      "label": "Data Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:property-graph",
+        "label": "Property Graph"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:structured-data",
+        "label": "Structured Data"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

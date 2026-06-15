@@ -103,7 +103,7 @@ public:: true
         "label": "Residual Network"
       },
       {
-        "@id": "urn:ngm:class:softmax",
+        "@id": "urn:ngm:class:softmax-function",
         "label": "Softmax"
       }
     ],

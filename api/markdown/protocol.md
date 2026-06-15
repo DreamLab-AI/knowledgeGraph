@@ -1,0 +1,36 @@
+- ### Definition
+  - A [[Protocol]] defines [[Message Format]]s and rules that enable [[Interoperability]], realised as a [[Network Protocol]] or [[Communication Protocol]] and often standardised via [[Open Standards]].
+- ### Overview
+  - A protocol specifies what messages may be exchanged, in what order, and how parties react to each message and to errors.
+  - Layered protocol stacks let higher-level concerns build on lower-level guarantees, as in the internet protocol suite.
+  - Well-defined protocols are the foundation of interoperability between independently built systems.
+- ### Key aspects
+  - Syntax: the structure and encoding of messages.
+  - Semantics: the meaning of messages and the state changes they cause.
+  - Timing and sequencing: handshakes, retransmission and flow control.
+  - Error handling and versioning for graceful evolution.
+- ### Applications
+  - Network communication across heterogeneous devices and vendors.
+  - Distributed consensus and coordination among nodes.
+  - Application interfaces and remote procedure calls.
+  - Secure exchange through cryptographic handshakes.
+- ### Relationships
+  - partOf:: [[Open Standards]]
+  - hasPart:: [[Message Format]]
+  - hasPart:: [[API]]
+  - requires:: [[Message Format]]
+  - requires:: [[Interoperability Standard]]
+  - enables:: [[Interoperability]]
+  - enables:: [[Communication Protocol]]
+  - supports:: [[Interoperability]]
+  - supports:: [[Semantic Interoperability]]
+  - implements:: [[Interoperability Standard]]
+  - standardizedBy:: [[Internet Engineering Task Force]]
+  - uses:: [[Network Protocol]]
+  - relatedTo:: [[Network Protocol]]
+  - relatedTo:: [[Communication Protocol]]
+  - relatedTo:: [[Request For Comments]]
+  - bridgesTo:: [[Interoperability]]
+- ### Provenance
+  - This class was materialised to resolve existing inbound references in the knowledge graph.
+  - updated:: 2026-06-15

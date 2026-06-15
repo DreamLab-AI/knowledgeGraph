@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:coordinate-reference-system",
+  "title": "Coordinate Reference System",
+  "slug": "coordinate-reference-system",
+  "public": true,
+  "classIri": "urn:ngm:class:coordinate-reference-system",
+  "domain": "spatial-computing",
+  "definition": "A coordinate reference system (CRS) is a framework that defines how positions are described and measured on or near the Earth's surface, combining a datum, a coordinate system, and often a map projection. It enables consistent interpretation of spatial coordinates by anchoring them to a known model of the Earth. CRSs are essential for aligning geospatial data sets and for accurate location computations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:geospatial-data",
+      "label": "Geospatial Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

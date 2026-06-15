@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:health-monitoring",
+  "title": "Health Monitoring",
+  "slug": "health-monitoring",
+  "public": true,
+  "classIri": "urn:ngm:class:health-monitoring",
+  "domain": "infrastructure",
+  "definition": "Health monitoring is the continuous observation of a system's components, services, and dependencies to determine whether they are operating correctly and are able to serve requests. It uses signals such as heartbeats, readiness and liveness probes, resource metrics, and synthetic checks to produce a real-time view of system health. Health monitoring underpins high availability by enabling automated detection of failures and triggering recovery, failover, or load redistribution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:observability",
+      "label": "Observability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:metrics",
+        "label": "Metrics"
+      },
+      {
+        "id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:single-point-of-failure",
+        "label": "Single Point Of Failure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    }
+  ]
+}

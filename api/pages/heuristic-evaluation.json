@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:heuristic-evaluation",
+  "title": "Heuristic Evaluation",
+  "slug": "heuristic-evaluation",
+  "public": true,
+  "classIri": "urn:ngm:class:heuristic-evaluation",
+  "domain": "spatial-computing",
+  "definition": "Heuristic evaluation is a usability inspection method in which a small number of expert evaluators judge an interface against a set of recognised usability principles, or heuristics, to identify usability problems. It is a discount technique that requires no test participants, producing a ranked list of issues with severity estimates. Because it depends on evaluator expertise rather than observed user behaviour, it complements, rather than replaces, empirical usability testing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:usability",
+      "label": "Usability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:design-thinking",
+        "label": "Design Thinking"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-walkthrough",
+        "label": "Cognitive Walkthrough"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:computational-graph",
+  "title": "Computational Graph",
+  "slug": "computational-graph",
+  "public": true,
+  "classIri": "urn:ngm:class:computational-graph",
+  "domain": "machine-learning",
+  "definition": "A computational graph is a directed acyclic graph in which nodes represent mathematical operations or variables and edges represent the flow of data (tensors) between them. It provides the structural backbone for evaluating composite functions and for computing gradients through automatic differentiation. Deep learning frameworks construct such graphs either statically ahead of execution or dynamically during the forward pass, then traverse them in reverse to propagate derivatives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automatic-differentiation",
+      "label": "Automatic Differentiation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ]
+}

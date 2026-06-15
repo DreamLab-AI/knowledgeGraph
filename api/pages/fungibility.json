@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:fungibility",
+  "title": "Fungibility",
+  "slug": "fungibility",
+  "public": true,
+  "classIri": "urn:ngm:class:fungibility",
+  "domain": "blockchain",
+  "definition": "Fungibility is the property of a good or asset whereby individual units are mutually interchangeable, each unit being indistinguishable from and equal in value to any other. It is a defining characteristic of money and of fungible blockchain tokens, in which any one token of a given type can substitute for another. Fungibility contrasts with non-fungibility, where each unit is unique and not interchangeable, as in non-fungible tokens.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:tokenization",
+      "label": "Tokenization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:value-transfer",
+        "label": "Value Transfer"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:non-fungible-token",
+        "label": "Non-Fungible Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:erc-20",
+        "label": "ERC-20"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:money",
+        "label": "Money"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    }
+  ]
+}

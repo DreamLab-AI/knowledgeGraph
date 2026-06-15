@@ -1,0 +1,31 @@
+- ### Definition
+- A finite field is an algebraic structure with finitely many elements on which the field operations behave consistently, generalising [[Modular Arithmetic]] over a prime. Grounded in [[Number Theory]], finite fields underpin [[Cryptography]], including [[Elliptic Curve Cryptography]] and [[Zero-Knowledge Proof]] systems.
+- ### Overview
+- A field supports addition, subtraction, multiplication, and division by non-zero elements, all satisfying the usual algebraic laws; a finite field simply has a finite element set.
+- The number of elements in a finite field is always a prime raised to a positive integer power, and any two finite fields of the same size are structurally identical.
+- The simplest finite fields are the integers modulo a prime, while larger fields are built as extensions using irreducible polynomials.
+- ### Key aspects
+- Prime fields consist of the residues modulo a prime under modular arithmetic.
+- Extension fields are constructed over a prime field using an irreducible polynomial, giving prime-power sizes.
+- Every non-zero element has a multiplicative inverse, enabling exact division within the field.
+- The non-zero elements form a cyclic group, a property exploited heavily in cryptography.
+- ### Applications
+- Public-key cryptography, including elliptic-curve and discrete-logarithm schemes.
+- Error-correcting codes such as Reed-Solomon used in storage and communications.
+- Zero-knowledge proof systems and other advanced cryptographic protocols.
+- Fast and exact arithmetic in computer algebra and coding theory.
+- ### Relationships
+- requires:: [[Modular Arithmetic]]
+- uses:: [[Number Theory]]
+- dependsOn:: [[Number Theory]]
+- enables:: [[Elliptic Curve Cryptography]]
+- enables:: [[Zero-Knowledge Proof]]
+- supports:: [[Cryptography]]
+- implements:: [[Modular Arithmetic]]
+- partOf:: [[Number Theory]]
+- bridgesTo:: [[Cryptography]]
+- relatedTo:: [[Elliptic Curve Cryptography]]
+- relatedTo:: [[Zero-Knowledge Proof]]
+- relatedTo:: [[Cryptography]]
+- ### Provenance
+- updated:: 2026-06-15

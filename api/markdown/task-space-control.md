@@ -1,0 +1,33 @@
+- ### Definition
+  - [[Task Space Control]] regulates the [[End Effector]] in Cartesian coordinates using the [[Jacobian Matrix]] and [[Inverse Kinematics]], a form of [[Robot Control]] complementary to [[Trajectory Control]].
+- ### Overview
+  - Controls end-effector pose and force directly in Cartesian task space.
+  - Maps task commands to joint actuation through the Jacobian.
+  - Simplifies specification of contact and interaction tasks.
+- ### Mechanisms
+  - Operational-space dynamics and Jacobian transpose mapping.
+  - Position, orientation and force regulation in task coordinates.
+  - Redundancy resolution via null-space projection.
+  - Singularity handling at the task-space boundary.
+- ### Applications
+  - Compliant assembly and contact-rich manipulation.
+  - Path and force following for machining or polishing.
+  - Teleoperation and human-robot interaction.
+  - Hybrid position/force control of manipulators.
+- ### Relationships
+  - relatedTo:: [[Trajectory Control]]
+  - relatedTo:: [[Robot Control]]
+  - enables:: [[Force Control]]
+  - enables:: [[Compliance Control]]
+  - partOf:: [[Robot Control]]
+  - uses:: [[Jacobian Matrix]]
+  - uses:: [[Inverse Kinematics]]
+  - requires:: [[Kinematics Model]]
+  - contrastsWith:: [[Trajectory Control]]
+  - supports:: [[Motion Planning]]
+  - supports:: [[End Effector]]
+  - dependsOn:: [[Feedback Control]]
+  - implements:: [[Closed-Loop Control]]
+  - bridgesTo:: [[Impedance Control]]
+- ### Provenance
+  - updated:: 2026-06-15

@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:inside-out-tracking",
+  "title": "Inside Out Tracking",
+  "slug": "inside-out-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:inside-out-tracking",
+  "domain": "spatial-computing",
+  "definition": "Inside-out tracking is a positional-tracking method in which cameras and sensors mounted on a head-mounted display observe the surrounding environment to determine the device's own pose in space. It requires no external base stations, computing six-degrees-of-freedom position and orientation from features detected in the scene. The approach underpins standalone virtual and mixed reality headsets by enabling self-contained spatial tracking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:positional-tracking",
+      "label": "Positional Tracking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:camera",
+        "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:visual-inertial-odometry",
+        "label": "Visual-Inertial Odometry"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:six-degrees-of-freedom",
+        "label": "Six Degrees of Freedom"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:data-labelling",
+  "title": "Data Labelling",
+  "slug": "data-labelling",
+  "public": true,
+  "classIri": "urn:ngm:class:data-labelling",
+  "domain": "machine-learning",
+  "definition": "Data labelling is the process of annotating raw data, such as images, text, audio or sensor readings, with the target outputs or categories a supervised model is expected to predict. It produces the ground-truth signal that links inputs to desired outputs and largely determines the achievable accuracy of trained models. Labelling combines human annotators, guidelines, tooling and quality control, increasingly augmented by model-assisted and active-learning workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-annotation",
+      "label": "Data Annotation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      },
+      {
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human In The Loop"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human In The Loop"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

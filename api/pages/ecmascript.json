@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:ecmascript",
+  "title": "Ecmascript",
+  "slug": "ecmascript",
+  "public": true,
+  "classIri": "urn:ngm:class:ecmascript",
+  "domain": "infrastructure",
+  "definition": "ECMAScript is the standardised specification of the scripting language commonly implemented as JavaScript, defining its syntax, semantics, and core libraries. Maintained by Ecma International as the ECMA-262 standard and developed through the TC39 process, it provides a stable, versioned contract that browser and runtime vendors implement. ECMAScript underpins client-side web programming and a large ecosystem of server-side and tooling runtimes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:programming-language",
+      "label": "Programming Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:web-application",
+        "label": "Web Application"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:html",
+        "label": "HTML"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ecma-international",
+        "label": "Ecma International"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:css",
+        "label": "CSS"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

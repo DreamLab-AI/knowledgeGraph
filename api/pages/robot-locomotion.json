@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:robot-locomotion",
+  "title": "Robot Locomotion",
+  "slug": "robot-locomotion",
+  "public": true,
+  "classIri": "urn:ngm:class:robot-locomotion",
+  "domain": "robotics",
+  "definition": "Robot locomotion is the study and engineering of how robots move through their environment, encompassing legged walking, wheeled rolling, crawling, swimming and flight. It integrates mechanical design, control theory and sensing to generate stable, efficient and adaptive movement over varied terrain. Locomotion distinguishes itself from manipulation by focusing on whole-body displacement and dynamic balance rather than interaction with objects.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:legged-robot",
+        "label": "Legged Robot"
+      },
+      {
+        "id": "urn:ngm:class:locomotion",
+        "label": "Locomotion"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:robotic-control",
+        "label": "Robotic Control"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robotic-control",
+        "label": "Robotic Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:humanoid-robot",
+        "label": "Humanoid Robot"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

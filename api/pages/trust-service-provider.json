@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:trust-service-provider",
+  "title": "Trust Service Provider",
+  "slug": "trust-service-provider",
+  "public": true,
+  "classIri": "urn:ngm:class:trust-service-provider",
+  "domain": "security",
+  "definition": "A trust service provider (TSP) is an entity that issues and manages trust services such as electronic signatures, seals, timestamps and website authentication certificates. Under regimes like the EU eIDAS regulation, qualified TSPs meet stringent audit and security requirements so that the services they provide carry defined legal effect. A TSP operates the cryptographic infrastructure \u2014 certificate issuance, timestamping authorities and validation services \u2014 that lets relying parties trust the authenticity and integrity of electronic transactions. It is a cornerstone of digital identity and electronic trust frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:timestamp-authority",
+        "label": "Timestamp Authority"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:qualified-electronic-signature",
+        "label": "Qualified Electronic Signature"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:identity",
+        "label": "Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
+      },
+      {
+        "id": "urn:ngm:class:timestamp-authority",
+        "label": "Timestamp Authority"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    }
+  ]
+}

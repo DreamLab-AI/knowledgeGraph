@@ -1,0 +1,117 @@
+{
+  "id": "urn:visionflow:page:machine-learning-accelerator",
+  "title": "Machine Learning Accelerator",
+  "slug": "machine-learning-accelerator",
+  "public": true,
+  "classIri": "urn:ngm:class:machine-learning-accelerator",
+  "domain": "spatial-computing",
+  "definition": "A Machine Learning Accelerator is specialised hardware designed to execute the dense linear-algebra workloads of neural networks far more efficiently than general-purpose CPUs. It optimises matrix multiplication, convolution and tensor operations through massive parallelism, dedicated multiply-accumulate arrays and high memory bandwidth. Examples span GPUs, tensor processing units, FPGAs and custom ASICs deployed from data centres to edge and embedded devices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-acceleration",
+      "label": "Hardware Acceleration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

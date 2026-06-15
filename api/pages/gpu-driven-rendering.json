@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:gpu-driven-rendering",
+  "title": "Gpu Driven Rendering",
+  "slug": "gpu-driven-rendering",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu-driven-rendering",
+  "domain": "spatial-computing",
+  "definition": "GPU-driven rendering is an architecture in which the GPU itself determines what to draw and issues its own draw commands, rather than relying on the CPU to traverse the scene and submit each object individually. Using compute shaders for culling and indirect, multi-draw commands, it minimises CPU overhead and draw-call cost, enabling scenes with very large object counts. It builds on compute capability, indirect drawing, and modern graphics APIs to keep the GPU saturated and scalable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:real-time-rendering",
+      "label": "Real-Time Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:shader-compiler",
+        "label": "Shader Compiler"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:frustum-culling",
+        "label": "Frustum Culling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

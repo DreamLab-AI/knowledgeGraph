@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:time-lock",
+  "title": "Time Lock",
+  "slug": "time-lock",
+  "public": true,
+  "classIri": "urn:ngm:class:time-lock",
+  "domain": "blockchain",
+  "definition": "A time lock is a cryptographic and protocol-level constraint that prevents the spending or execution of funds, transactions, or governance actions until a specified time or block height has been reached. Implemented on blockchains through absolute and relative locktime fields and dedicated script opcodes, time locks enforce delayed settlement, contestation windows, and staged execution without trusting a third party. They are foundational to payment channels, atomic swaps, vesting schedules, and the safety delays in DAO governance, where they give participants time to react before irreversible actions occur.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:timelock",
+        "label": "Timelock"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:hashed-timelock-contract",
+        "label": "Hashed Timelock Contract"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:hashed-timelock-contract",
+        "label": "Hashed Timelock Contract"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

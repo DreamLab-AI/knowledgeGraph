@@ -1,0 +1,41 @@
+- ### Definition
+  - A Machine Learning Accelerator is specialised hardware designed to execute the dense linear-algebra workloads of neural networks far more efficiently than general-purpose CPUs. It optimises matrix multiplication, convolution and tensor operations through massive parallelism, dedicated multiply-accumulate arrays and high memory bandwidth. Examples span GPUs, tensor processing units, FPGAs and custom ASICs deployed from data centres to edge and embedded devices.
+  - Related core concepts: [[Hardware Acceleration]] [[GPU]] [[Tensor Processing Unit]] [[Matrix Multiplication]] [[Neural Network]]
+- ### Overview
+  - ML accelerators address the gap between the explosive compute demands of deep learning and the limited throughput of scalar CPUs. By embedding thousands of parallel multiply-accumulate units close to fast memory, they sustain the tensor operations that dominate training and inference. Architectures range from flexible GPUs to fixed-function ASICs, trading programmability for energy efficiency.
+- ### Mechanisms
+  - Systolic and SIMD arrays: dense grids of multiply-accumulate units executing matrix operations.
+  - Memory hierarchy: high-bandwidth memory and on-chip buffers minimising data movement.
+  - Reduced precision: bfloat16, int8 and other formats trading accuracy for throughput and energy.
+  - Dataflow optimisation: scheduling computation to maximise reuse and minimise off-chip traffic.
+  - Deployment tiers: data-centre training accelerators versus low-power edge inference chips.
+- ### Applications
+  - Training large neural networks in data centres.
+  - Low-latency inference for vision and language models.
+  - On-device intelligence in spatial-computing headsets and mobile devices.
+  - Edge accelerators for robotics, autonomous systems and IoT.
+- ### Relationships
+  - subClassOf:: [[Hardware Acceleration]]
+  - bridgesTo:: [[GPU]]
+  - bridgesTo:: [[Tensor Processing Unit]]
+  - uses:: [[Matrix Multiplication]]
+  - uses:: [[Parallel Computing]]
+  - enables:: [[Inference]]
+  - enables:: [[Model Training]]
+  - enables:: [[Neural Network]]
+  - supports:: [[Deep Learning Framework]]
+  - supports:: [[Edge Computing]]
+  - requires:: [[Parallel Computing]]
+  - dependsOn:: [[GPU Computing]]
+  - implements:: [[Hardware Acceleration]]
+  - partOf:: [[Hardware Acceleration]]
+  - relatedTo:: [[FPGA]]
+  - relatedTo:: [[ASIC]]
+  - relatedTo:: [[Tensor Processing Unit]]
+  - contrastsWith:: [[CPU]]
+  - hasPart:: [[Matrix Multiplication]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

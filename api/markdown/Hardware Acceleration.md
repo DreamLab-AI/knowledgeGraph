@@ -160,7 +160,7 @@ public:: true
         "label": "Variable Rate Shading"
       },
       {
-        "@id": "urn:ngm:class:latency-reduction",
+        "@id": "urn:ngm:class:latency",
         "label": "Latency Reduction"
       }
     ]

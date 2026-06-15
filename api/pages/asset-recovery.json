@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:asset-recovery",
+  "title": "Asset Recovery",
+  "slug": "asset-recovery",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-recovery",
+  "domain": "finance",
+  "definition": "Asset recovery is the process of identifying, tracing, freezing, and ultimately returning funds or property obtained through fraud, corruption, money laundering, or other financial crime. It combines financial investigation, legal action, and cross-border cooperation to follow illicit value through layered transactions and recover it for victims or the state. In the digital era it increasingly relies on blockchain analytics to trace cryptocurrency proceeds.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:anti-money-laundering",
+      "label": "Anti-Money Laundering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:aml",
+        "label": "AML"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "token-custody-service",
+      "label": "Token Custody Service"
+    }
+  ]
+}

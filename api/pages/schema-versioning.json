@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:schema-versioning",
+  "title": "Schema Versioning",
+  "slug": "schema-versioning",
+  "public": true,
+  "classIri": "urn:ngm:class:schema-versioning",
+  "domain": "infrastructure",
+  "definition": "Schema versioning is the discipline of managing changes to a data schema over time so that producers and consumers can evolve independently without breaking interoperability. It defines policies and mechanisms \u2014 version identifiers, compatibility rules, deprecation windows and migration paths \u2014 that govern how additions, removals and modifications to fields and types are introduced. Robust schema versioning underpins reliable data interchange in distributed systems, event streams and long-lived APIs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-versioning",
+      "label": "Data Versioning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      },
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
+      },
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:ngm:class:xml-schema-definition",
+        "label": "Xml Schema Definition"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "semantic-metadata-registry",
+      "label": "Semantic Metadata Registry"
+    }
+  ]
+}

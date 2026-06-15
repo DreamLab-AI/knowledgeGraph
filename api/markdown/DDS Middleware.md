@@ -88,7 +88,7 @@ public:: true
         "label": "Autonomous Vehicle"
       },
       {
-        "@id": "urn:ngm:class:real-time-system",
+        "@id": "urn:ngm:class:real-time",
         "label": "Real-Time System"
       }
     ],

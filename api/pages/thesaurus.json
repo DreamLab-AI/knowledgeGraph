@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:thesaurus",
+  "title": "Thesaurus",
+  "slug": "thesaurus",
+  "public": true,
+  "classIri": "urn:ngm:class:thesaurus",
+  "domain": "data",
+  "definition": "A thesaurus is a controlled vocabulary that organises preferred terms together with their synonyms and structured semantic relationships, principally broader, narrower and related-term links. By mapping non-preferred synonyms onto a single preferred descriptor, it enforces consistent indexing and improves retrieval by reconciling the many ways people express the same concept. Thesauri underpin information retrieval, library cataloguing and knowledge organisation, and are formalised by standards such as ISO 25964 and expressible in SKOS.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:controlled-vocabulary",
+      "label": "Controlled Vocabulary"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:knowledge-organization",
+        "label": "Knowledge Organization"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:controlled-vocabulary",
+        "label": "Controlled Vocabulary"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      },
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-organization",
+        "label": "Knowledge Organization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:supply-chain-decarbonisation",
+  "title": "Supply Chain Decarbonisation",
+  "slug": "supply-chain-decarbonisation",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-decarbonisation",
+  "domain": "governance",
+  "definition": "Supply chain decarbonisation is the systematic reduction of greenhouse gas emissions arising across an organisation's upstream and downstream value chain, including the indirect Scope 3 emissions that typically dominate a company's total footprint. It combines supplier engagement, low-carbon procurement, logistics optimisation, materials substitution and product redesign with rigorous emissions accounting. Because most value-chain emissions lie outside a firm's direct operational control, decarbonisation depends on data sharing, contractual incentives and collaboration across many tiers of suppliers. It is a core operational lever within broader climate governance and net-zero strategy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decarbonisation",
+      "label": "Decarbonisation Strategy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      },
+      {
+        "id": "urn:ngm:class:greenhouse-gas-protocol",
+        "label": "Greenhouse Gas Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation Strategy"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:climate-governance",
+        "label": "Climate Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:climate-governance",
+        "label": "Climate Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:scope-1-emissions",
+        "label": "Scope 1 Emissions"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

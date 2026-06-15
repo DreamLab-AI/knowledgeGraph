@@ -1,0 +1,37 @@
+- ### Definition
+  - Graph embedding is a family of representation-learning techniques that map the nodes, edges, or whole subgraphs of a graph into a continuous low-dimensional vector space while preserving structural and relational properties. The learned vectors place topologically or semantically similar elements close together, enabling machine-learning models to operate on graph-structured data. Methods range from random-walk approaches to neural graph encoders.
+  - Related: [[Representation Learning]] [[Network Analysis]] [[Graph Neural Network]] [[Embedding]] [[Knowledge Graph]]
+- ### Overview
+  - Early graph-embedding methods adapted ideas from word embeddings: by sampling random walks over a graph and treating node sequences as sentences, models such as skip-gram learn vectors that capture neighbourhood structure. Later approaches use graph neural networks to aggregate information from a node's neighbourhood through message passing, producing embeddings conditioned on both topology and node features. The resulting vectors serve as input to downstream classifiers, recommenders, and link predictors.
+- ### Mechanisms
+  - Random-walk sampling converts graph structure into sequences for skip-gram training.
+  - Matrix-factorisation methods decompose adjacency or proximity matrices.
+  - Graph neural networks aggregate neighbourhood features via message passing.
+  - Embeddings can target nodes, edges, or entire subgraphs.
+  - Objective functions preserve first-order and higher-order proximity.
+- ### Applications
+  - Node classification and community detection.
+  - Link prediction and recommendation systems.
+  - Knowledge-graph completion and reasoning.
+  - Anomaly and fraud detection in transaction graphs.
+  - Molecular and biological network analysis.
+- ### Relationships
+  - hasPart:: [[Random Walk]]
+  - hasPart:: [[Embedding]]
+  - partOf:: [[Network Analysis]]
+  - implements:: [[Dimensionality Reduction]]
+  - uses:: [[Graph Neural Network]]
+  - uses:: [[Random Walk]]
+  - enables:: [[Link Prediction]]
+  - enables:: [[Node Classification]]
+  - dependsOn:: [[Representation Learning]]
+  - relatedTo:: [[Knowledge Graph Embedding]]
+  - relatedTo:: [[Word Embedding]]
+  - relatedTo:: [[Knowledge Graph]]
+  - supports:: [[Network Analysis]]
+  - contrastsWith:: [[Dimensionality Reduction]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

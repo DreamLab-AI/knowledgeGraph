@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:network-interface",
+  "title": "Network Interface",
+  "slug": "network-interface",
+  "public": true,
+  "classIri": "urn:ngm:class:network-interface",
+  "domain": "infrastructure",
+  "definition": "A network interface is the hardware or software point at which a computing device connects to a network, mediating the transmission and reception of data frames. In hardware it is realised as a network interface controller bearing a unique MAC address; in software it appears as a named, addressable endpoint that the operating system binds to a protocol stack. The interface bridges the physical and data-link layers to the network layer, allowing higher-level protocols to send and receive packets without managing the underlying medium.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "id": "urn:ngm:class:tcp",
+        "label": "TCP"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      },
+      {
+        "id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    }
+  ]
+}

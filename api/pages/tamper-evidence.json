@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:tamper-evidence",
+  "title": "Tamper Evidence",
+  "slug": "tamper-evidence",
+  "public": true,
+  "classIri": "urn:ngm:class:tamper-evidence",
+  "domain": "spatial-computing",
+  "definition": "Tamper evidence is the property of a system, record, or physical artefact whereby any unauthorised alteration leaves detectable traces that can be subsequently verified. It relies on mechanisms such as cryptographic hashing, digital signatures, and immutable logs so that the integrity of an item can be assessed after the fact. Tamper evidence does not necessarily prevent modification, but it guarantees that modification cannot occur undetected.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:integrity-verification",
+        "label": "Integrity Verification"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:provenance-tracking",
+        "label": "Provenance Tracking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tamper-resistance",
+        "label": "Tamper Resistance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-anchoring",
+        "label": "Blockchain Anchoring"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tamper-resistance",
+        "label": "Tamper Resistance"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "virtual-notary-service",
+      "label": "Virtual Notary Service"
+    }
+  ]
+}

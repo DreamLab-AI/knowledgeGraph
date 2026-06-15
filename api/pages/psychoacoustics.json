@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:psychoacoustics",
+  "title": "Psychoacoustics",
+  "slug": "psychoacoustics",
+  "public": true,
+  "classIri": "urn:ngm:class:psychoacoustics",
+  "domain": "spatial-computing",
+  "definition": "Psychoacoustics is the scientific study of how humans perceive sound, relating physical properties of acoustic signals such as frequency, intensity and timing to subjective sensations of pitch, loudness, timbre and spatial location. It characterises perceptual phenomena including auditory masking, critical bands and localisation cues, and explains the limits and biases of the human auditory system. Its findings underpin perceptual audio coding, spatial audio rendering and hearing-aid design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:perception",
+      "label": "Perception"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:immersive-audio",
+        "label": "Immersive Audio"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      },
+      {
+        "id": "urn:ngm:class:ambisonics",
+        "label": "Ambisonics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

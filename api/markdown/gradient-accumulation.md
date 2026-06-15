@@ -1,0 +1,37 @@
+- ### Definition
+- [[Gradient Accumulation]] sums [[Gradient]] values over several [[Mini-Batch]] iterations before a single [[Stochastic Gradient Descent]] update is applied.
+- It emulates a large [[Batch Size]] without the corresponding peak memory cost, enabling [[Model Training]] of large models on constrained hardware.
+- The optimiser step is deferred and gradients are reset only after the configured number of accumulation steps.
+- ### Overview
+- Standard training computes a gradient on one mini-batch and immediately updates parameters; gradient accumulation instead accumulates gradients across N micro-batches and updates once.
+- This makes the effective batch size equal to the micro-batch size multiplied by the number of accumulation steps.
+- The technique exchanges compute time for memory: more forward and backward passes per update, but lower instantaneous memory footprint.
+- It is widely combined with mixed precision and parallelism strategies to fit very large models on commodity accelerators.
+- ### Mechanisms
+- Gradients are added into the parameter `.grad` buffers across successive micro-batches rather than being zeroed each step.
+- After the final accumulation step the optimiser applies the averaged or summed gradient and the buffers are cleared.
+- Loss is typically scaled by the number of accumulation steps to keep update magnitudes equivalent to a single large batch.
+- Care is required with normalisation layers and learning-rate schedules, since batch statistics still reflect the micro-batch.
+- ### Applications
+- Fine-tuning and pretraining of large language and vision models on single GPUs or modest clusters.
+- Stabilising training where large batches improve convergence but memory is the limiting constraint.
+- Combining with [[Pipeline Parallelism]] and [[Data Parallelism]] to scale effective batch size across devices.
+- ### Relationships
+- subClassOf:: [[Model Training]]
+- uses:: [[Backpropagation]]
+- uses:: [[Gradient]]
+- requires:: [[Mini-Batch]]
+- enables:: [[Distributed Training]]
+- supports:: [[Stochastic Gradient Descent]]
+- supports:: [[Gradient Descent]]
+- dependsOn:: [[Batch Size]]
+- contrastsWith:: [[Data Parallelism]]
+- relatedTo:: [[Learning Rate]]
+- relatedTo:: [[Pipeline Parallelism]]
+- partOf:: [[Model Training]]
+- bridgesTo:: [[Deep Learning]]
+- implements:: [[Optimization Algorithm]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

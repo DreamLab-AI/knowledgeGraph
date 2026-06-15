@@ -1,0 +1,41 @@
+- ### Definition
+  - [[Commonsense Reasoning]] lets a system draw plausible everyday inferences from broad tacit background knowledge.
+  - It is a form of [[Reasoning]] that complements and contrasts with formal [[Symbolic Reasoning]].
+  - It draws on a [[Knowledge Base]] and an internal [[World Model]] to interpret situations the way humans do.
+- ### Overview
+  - Humans effortlessly know that water makes things wet or that a dropped glass may break; encoding this for machines is hard.
+  - The required knowledge is enormous, mostly unstated, and varies with context, defying simple enumeration.
+  - Classical approaches built large hand-curated knowledge bases of commonsense facts and rules.
+  - Modern [[Large Language Model]] systems acquire much commonsense implicitly from text, though gaps and brittleness remain.
+- ### Mechanisms
+  - Knowledge bases store typical properties, relations, and default assumptions about the world.
+  - Default and non-monotonic [[Inference]] lets conclusions be revised when exceptions appear.
+  - Learned representations capture statistical regularities about how the world usually behaves.
+  - Grounding links language to a [[World Model]] so inferences respect physical and social plausibility.
+- ### Key aspects
+  - Tacitness: the knowledge is rarely stated explicitly anywhere.
+  - Defeasibility: conclusions hold by default but can be overturned.
+  - Breadth: coverage must span an open-ended range of situations.
+  - Context sensitivity: the right inference depends on the surrounding circumstances.
+- ### Applications
+  - Improving [[Natural Language Understanding]] of implicit meaning.
+  - Making conversational agents respond sensibly to underspecified requests.
+  - Supporting robust planning in [[Cognitive Architecture]] systems.
+  - Reducing absurd or unsafe outputs from generative models.
+- ### Relationships
+  - partOf:: [[Reasoning]]
+  - contrastsWith:: [[Symbolic Reasoning]]
+  - enables:: [[Natural Language Understanding]]
+  - supports:: [[Natural Language Processing]]
+  - requires:: [[Knowledge Base]]
+  - requires:: [[World Model]]
+  - uses:: [[Large Language Model]]
+  - uses:: [[Inference]]
+  - dependsOn:: [[Knowledge Representation]]
+  - relatedTo:: [[Cognitive Architecture]]
+  - relatedTo:: [[Automated Reasoning]]
+  - bridgesTo:: [[World Model]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

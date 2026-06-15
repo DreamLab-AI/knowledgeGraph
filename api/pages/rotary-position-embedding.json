@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:rotary-position-embedding",
+  "title": "Rotary Position Embedding",
+  "slug": "rotary-position-embedding",
+  "public": true,
+  "classIri": "urn:ngm:class:rotary-position-embedding",
+  "domain": "artificial-intelligence",
+  "definition": "Rotary Position Embedding (RoPE) is a method for injecting positional information into transformer attention by rotating the query and key vectors by an angle proportional to each token's absolute position, so that their dot product depends only on relative position. Because the rotation is applied multiplicatively in feature pairs rather than added to the embeddings, RoPE unifies absolute and relative positional encoding while preserving the inner-product structure that attention relies on. It is the dominant positional scheme in modern large language models such as Llama, and its frequency basis can be rescaled to extrapolate context windows far beyond the training length.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:positional-encoding",
+      "label": "Positional Encoding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:relative-positional-encoding",
+        "label": "Relative Positional Encoding"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:long-context-modelling",
+        "label": "Long Context Modelling"
+      },
+      {
+        "id": "urn:ngm:class:extrapolation",
+        "label": "Extrapolation"
+      },
+      {
+        "id": "urn:ngm:class:context-length",
+        "label": "Context Length"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:relative-positional-encoding",
+        "label": "Relative Positional Encoding"
+      },
+      {
+        "id": "urn:ngm:class:absolute-positional-encoding",
+        "label": "Absolute Positional Encoding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:absolute-positional-encoding",
+        "label": "Absolute Positional Encoding"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:llama",
+        "label": "Llama"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sinusoidal-positional-encoding",
+        "label": "Sinusoidal Positional Encoding"
+      },
+      {
+        "id": "urn:ngm:class:alibi",
+        "label": "ALiBi"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    }
+  ]
+}

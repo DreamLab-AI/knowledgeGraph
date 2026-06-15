@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:proprietary-software",
+  "title": "Proprietary Software",
+  "slug": "proprietary-software",
+  "public": true,
+  "classIri": "urn:ngm:class:proprietary-software",
+  "domain": "distributed-collaboration",
+  "definition": "Proprietary software is software whose source code and usage rights are owned and controlled by a vendor, distributed under restrictive licences that limit copying, modification and redistribution. Users typically receive only compiled binaries and a licence granting specified use, while the owner retains the underlying intellectual property. It contrasts with open source, where source code is freely available under permissive or copyleft terms, and is often associated with commercial licensing and vendor control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-in"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "id": "urn:ngm:class:open-source-licence",
+        "label": "Open Source Licence"
+      },
+      {
+        "id": "urn:ngm:class:inner-source",
+        "label": "Inner Source"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-in"
+      },
+      {
+        "id": "urn:ngm:class:proprietary-format",
+        "label": "Proprietary Format"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

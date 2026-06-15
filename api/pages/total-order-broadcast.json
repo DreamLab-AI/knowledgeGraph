@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:total-order-broadcast",
+  "title": "Total Order Broadcast",
+  "slug": "total-order-broadcast",
+  "public": true,
+  "classIri": "urn:ngm:class:total-order-broadcast",
+  "domain": "distributed-systems",
+  "definition": "Total order broadcast, also called atomic broadcast, is a communication primitive in distributed systems that guarantees all correct processes deliver the same set of messages in exactly the same order. It strengthens reliable broadcast with a total ordering property, ensuring that every replica observes an identical sequence of events. Total order broadcast is provably equivalent to consensus and forms the foundation of state machine replication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:linearizability",
+        "label": "Linearizability"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:raft",
+        "label": "Raft"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

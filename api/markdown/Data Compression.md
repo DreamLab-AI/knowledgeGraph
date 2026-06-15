@@ -156,7 +156,7 @@ public:: true
         "label": "TinyML"
       },
       {
-        "@id": "urn:ngm:class:efficient-inference",
+        "@id": "urn:ngm:class:ai-inference",
         "label": "Efficient Inference"
       }
     ],

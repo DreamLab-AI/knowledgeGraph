@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:shading-model",
+  "title": "Shading Model",
+  "slug": "shading-model",
+  "public": true,
+  "classIri": "urn:ngm:class:shading-model",
+  "domain": "spatial-computing",
+  "definition": "A shading model is a mathematical description of how a surface reflects and emits light, determining the colour and intensity seen at each point given the lighting and viewing geometry. It encapsulates a bidirectional reflectance distribution function together with parameters such as albedo, roughness and metalness. Shading models range from simple empirical formulations to physically based formulations grounded in energy conservation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering",
+      "label": "Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:brdf",
+        "label": "BRDF"
+      },
+      {
+        "id": "urn:ngm:class:material-system",
+        "label": "Material System"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:brdf",
+        "label": "BRDF"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rendering-technique",
+        "label": "Rendering Technique"
+      },
+      {
+        "id": "urn:ngm:class:material-system",
+        "label": "Material System"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:stateless-protocol",
+  "title": "Stateless Protocol",
+  "slug": "stateless-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:stateless-protocol",
+  "domain": "infrastructure",
+  "definition": "A stateless protocol is a communication protocol in which each request from a client to a server is treated independently, carrying all the information needed to be understood without relying on stored context from previous requests. The server retains no session state between requests, which simplifies server design and improves scalability and resilience because any server instance can handle any request. HTTP is the canonical example; where continuity is needed, state is reintroduced at a higher layer through tokens, cookies or explicit session management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:protocol",
+      "label": "Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:protocol",
+        "label": "Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

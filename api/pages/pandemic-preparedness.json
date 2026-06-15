@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:pandemic-preparedness",
+  "title": "Pandemic Preparedness",
+  "slug": "pandemic-preparedness",
+  "public": true,
+  "classIri": "urn:ngm:class:pandemic-preparedness",
+  "domain": "governance",
+  "definition": "Pandemic preparedness is the set of plans, capabilities, and investments that enable societies to detect, prevent, and respond effectively to large-scale infectious-disease outbreaks. It spans surveillance, diagnostics, vaccine and treatment readiness, healthcare surge capacity, stockpiles, and coordinated governance across borders. As a domain of public-health governance, it aims to reduce the health, social, and economic harm of pandemics through anticipatory action rather than reactive crisis management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:biosecurity",
+      "label": "Biosecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:capital-allocation",
+        "label": "Capital Allocation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:biosecurity",
+        "label": "Biosecurity"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    }
+  ]
+}

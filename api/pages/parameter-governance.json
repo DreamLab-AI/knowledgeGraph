@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:parameter-governance",
+  "title": "Parameter Governance",
+  "slug": "parameter-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:parameter-governance",
+  "domain": "blockchain",
+  "definition": "Parameter governance is the on-chain process by which a decentralised protocol's tunable configuration values \u2014 such as fees, collateral ratios, interest-rate curves, and reward emissions \u2014 are proposed, deliberated, voted upon, and enacted without altering the underlying contract code. By exposing safe adjustment levers to token-holder governance, it lets protocols adapt to market conditions while preserving the immutability of core logic. It is a foundational pattern in DeFi and DAO management, distinct from full code upgrades.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:on-chain-governance",
+      "label": "On-chain Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:defi",
+        "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:on-chain-voting",
+        "label": "On Chain Voting"
+      },
+      {
+        "id": "urn:ngm:class:token-weighted-voting",
+        "label": "Token-Weighted Voting"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-chain Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    }
+  ]
+}

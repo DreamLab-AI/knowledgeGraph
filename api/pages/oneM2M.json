@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:oneM2M",
+  "title": "Onem2M",
+  "slug": "oneM2M",
+  "public": true,
+  "classIri": "urn:ngm:class:oneM2M",
+  "domain": "infrastructure",
+  "definition": "oneM2M is a global standards initiative that defines a common service layer for machine-to-machine and Internet of Things communication, enabling interoperable connection of devices, applications, and platforms across vertical industries. Developed by a partnership of regional standards bodies including ETSI, it specifies a horizontal middleware exposing reusable capabilities such as data management, device management, security, and discovery through a RESTful resource model. By abstracting these common functions, oneM2M reduces fragmentation and lets IoT solutions span domains like smart cities, transport, and energy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:io-t-infrastructure",
+      "label": "IoT Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:service-layer",
+        "label": "Service Layer"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:iot",
+        "label": "IoT"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:service-layer",
+        "label": "Service Layer"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "id": "urn:ngm:class:coap",
+        "label": "CoAP"
+      },
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "id": "urn:ngm:class:iot",
+        "label": "IoT"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:io-t-infrastructure",
+        "label": "IoT Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:transformers-library",
+  "title": "Transformers Library",
+  "slug": "transformers-library",
+  "public": true,
+  "classIri": "urn:ngm:class:transformers-library",
+  "domain": "artificial-intelligence",
+  "definition": "The Transformers library is an open-source software framework that provides unified access to thousands of pretrained transformer-based models for natural language processing, computer vision, audio and multimodal tasks. Maintained primarily by Hugging Face, it exposes a consistent interface for loading, fine-tuning and running inference across architectures, and integrates with deep-learning backends such as PyTorch. It has become a de facto standard toolkit for working with large pretrained models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:deep-learning-framework",
+      "label": "Deep Learning Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tokenizer",
+        "label": "Tokenizer"
+      },
+      {
+        "id": "urn:ngm:class:pretrained-model",
+        "label": "Pretrained Model"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "Python PyTorch Deep Learning Stack"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:pretraining",
+        "label": "Pretraining"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-model-hub",
+        "label": "Hugging Face Model Hub"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    }
+  ]
+}

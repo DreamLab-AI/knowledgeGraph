@@ -1,0 +1,38 @@
+- ### Definition
+- [[Emotion Recognition]] infers affective state from facial, vocal, linguistic and physiological signals, a core task within [[Affective Computing]].
+- It combines [[Facial Recognition]], [[Sentiment Analysis]] and [[Speech Recognition]] to classify or estimate emotion.
+- The technology informs [[Empathetic AI]] and [[Social Robotics]] while raising serious ethical concerns.
+- ### Overview
+- Emotion can be modelled as discrete categories, such as happiness or anger, or as continuous dimensions such as valence and arousal.
+- Multimodal systems fuse cues from face, voice and text because no single channel is reliable in isolation.
+- Performance is highly sensitive to cultural context, individual variation and dataset bias.
+- The scientific validity of mapping expressions to internal states is contested, motivating cautious and transparent use.
+- ### Key aspects
+- Facial analysis extracts action units and expression features from images or video.
+- Vocal analysis examines prosody, pitch and energy via [[Speaker Diarisation]] and acoustic modelling.
+- Textual analysis applies [[Natural Language Processing]] and [[Sentiment Analysis]] to language.
+- Fusion strategies combine modalities at the feature, decision or model level.
+- ### Applications
+- Adaptive tutoring, accessibility tools and mental-health support contexts.
+- Conversational agents that adjust tone via [[Empathetic AI]].
+- Socially aware robots through [[Social Robotics]].
+- ### Relationships
+- subClassOf:: [[Affective Computing]]
+- hasPart:: [[Facial Recognition]]
+- hasPart:: [[Sentiment Analysis]]
+- requires:: [[Speech Recognition]]
+- uses:: [[Natural Language Processing]]
+- uses:: [[Speaker Diarisation]]
+- enables:: [[Empathetic AI]]
+- enables:: [[Social Robotics]]
+- supports:: [[Human-Computer Interaction]]
+- implements:: [[Affective Computing]]
+- dependsOn:: [[Facial Recognition]]
+- relatedTo:: [[Sentiment Analysis]]
+- relatedTo:: [[Artificial Intelligence]]
+- bridgesTo:: [[Human-Computer Interaction]]
+- contrastsWith:: [[Facial Recognition]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

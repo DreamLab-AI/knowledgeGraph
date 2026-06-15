@@ -126,7 +126,7 @@ alias:: Self Custody
         "label": "Decentralised Identity"
       },
       {
-        "@id": "urn:ngm:class:social-recovery-wallet",
+        "@id": "urn:ngm:class:social-recovery",
         "label": "Social Recovery Wallet"
       },
       {

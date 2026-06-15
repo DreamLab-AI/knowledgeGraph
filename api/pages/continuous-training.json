@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:continuous-training",
+  "title": "Continuous Training",
+  "slug": "continuous-training",
+  "public": true,
+  "classIri": "urn:ngm:class:continuous-training",
+  "domain": "artificial-intelligence",
+  "definition": "Continuous training is an MLOps practice in which machine-learning models are automatically retrained on fresh data on a recurring or event-driven basis to maintain predictive accuracy over time. It extends continuous integration and delivery to the model lifecycle, triggering retraining when new data arrives or when monitoring detects data or model drift. The retrained model is validated and promoted through automated pipelines before deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mlops",
+      "label": "MLOps"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-drift",
+        "label": "Data Drift"
+      },
+      {
+        "id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:ci-cd-automation",
+        "label": "CI-CD Automation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:model-training-pipeline",
+        "label": "Model Training Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

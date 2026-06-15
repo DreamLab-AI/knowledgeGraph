@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:over-the-air-update",
+  "title": "Over The Air Update",
+  "slug": "over-the-air-update",
+  "public": true,
+  "classIri": "urn:ngm:class:over-the-air-update",
+  "domain": "infrastructure",
+  "definition": "An over-the-air (OTA) update is the wireless delivery of new software, firmware, or configuration to a deployed device without physical access. OTA mechanisms package an update, transport it over a network, verify its authenticity and integrity, and apply it safely with rollback protection. They are essential to maintaining, securing, and extending the capabilities of fleets of embedded and connected devices throughout their operational life.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:non-volatile-memory",
+        "label": "Non Volatile Memory"
+      },
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:iot",
+        "label": "IoT"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iot",
+        "label": "IoT"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

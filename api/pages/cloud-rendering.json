@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:cloud-rendering",
+  "title": "Cloud Rendering",
+  "slug": "cloud-rendering",
+  "public": true,
+  "classIri": "urn:ngm:class:cloud-rendering",
+  "domain": "spatial-computing",
+  "definition": "Cloud rendering is the practice of generating images or interactive 3D frames on remote, GPU-equipped servers and streaming the results to a client device, rather than rendering locally. It decouples visual fidelity from the client's hardware, enabling thin clients to display high-quality graphics by offloading computation to data centers. It powers cloud gaming, remote visualisation, and immersive metaverse experiences, but depends on low-latency networking and efficient video streaming to remain responsive.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:remote-rendering",
+      "label": "Remote Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:thin-client",
+        "label": "Thin Client"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-center",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-gaming",
+        "label": "Cloud Gaming"
+      },
+      {
+        "id": "urn:ngm:class:volumetric-rendering",
+        "label": "Volumetric Rendering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:webrtc",
+        "label": "WebRTC"
+      },
+      {
+        "id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interactive-rendering",
+        "label": "Interactive Rendering"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:root-certificate",
+  "title": "Root Certificate",
+  "slug": "root-certificate",
+  "public": true,
+  "classIri": "urn:ngm:class:root-certificate",
+  "domain": "security",
+  "definition": "A root certificate is a self-signed X.509 certificate that identifies a root certificate authority and serves as the trust anchor at the top of a certificate chain. Relying parties pre-install trusted root certificates in trust stores, and any certificate that chains back to a trusted root is accepted as authentic. Because a compromised root undermines all certificates beneath it, root keys are protected with the highest assurance and kept offline.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-certificate",
+      "label": "Digital Certificate"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ocsp",
+        "label": "OCSP"
+      },
+      {
+        "id": "urn:ngm:class:certificate-revocation",
+        "label": "Certificate Revocation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      },
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      },
+      {
+        "id": "urn:ngm:class:x509-certificate",
+        "label": "X.509 Certificate"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

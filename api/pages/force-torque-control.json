@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:force-torque-control",
+  "title": "Force Torque Control",
+  "slug": "force-torque-control",
+  "public": true,
+  "classIri": "urn:ngm:class:force-torque-control",
+  "domain": "robotics",
+  "definition": "Force-torque control is a robot control strategy that regulates the contact forces and moments a manipulator exerts on its environment, rather than commanding position alone. It uses force-torque sensing, typically at the wrist or in the joints, within a feedback loop so that the robot can maintain a desired contact force or yield compliantly to external loads. This is essential for tasks involving physical contact, such as assembly, polishing, and safe interaction with people.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:force-control",
+      "label": "Force Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuators",
+        "label": "Actuators"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:motion-control",
+        "label": "Motion Control"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End-Effector"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotic-arm",
+        "label": "Robotic Arm"
+      },
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

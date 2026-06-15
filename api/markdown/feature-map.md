@@ -1,0 +1,36 @@
+- ### Definition
+  - A [[Feature Map]] is the spatial activation produced by [[Convolution]] of a [[Filter Kernel]] over an input in a [[Convolutional Neural Network]], the substrate of learned [[Feature Extraction]].
+- ### Overview
+  - Convolving a learned kernel with an input yields a feature map whose values measure how strongly the kernel's pattern matches each location.
+  - Multiple kernels in a layer produce a stack of feature maps (channels), each tuned to a different pattern.
+  - Early layers form low-level maps (edges, colours); deeper layers form abstract, semantically meaningful maps.
+  - The receptive field of a feature-map cell is the region of input that influences it, growing with depth.
+- ### Key aspects
+  - Channels: one feature map per convolutional filter in a layer.
+  - Receptive field determining how much input context a cell summarises.
+  - Non-linear activation (e.g. ReLU) applied element-wise to the map.
+  - Spatial dimensionality reduced by pooling and strided convolution.
+  - Visualisation of feature maps for interpretability and debugging.
+- ### Applications
+  - Image classification and recognition backbones.
+  - Object detection where feature pyramids aggregate maps at multiple scales.
+  - Semantic segmentation using high-resolution feature maps.
+  - Transfer learning, reusing pretrained feature maps for new tasks.
+- ### Relationships
+  - hasPart:: [[Filter Kernel]]
+  - hasPart:: [[Receptive Field]]
+  - partOf:: [[Convolutional Neural Network]]
+  - uses:: [[Convolution]]
+  - uses:: [[Activation Function]]
+  - enables:: [[Feature Extraction]]
+  - enables:: [[Feature Detection]]
+  - supports:: [[Image Recognition]]
+  - supports:: [[Object Detection]]
+  - dependsOn:: [[Backpropagation]]
+  - contrastsWith:: [[Pooling Layer]]
+  - relatedTo:: [[Tensor]]
+  - relatedTo:: [[Spatial Hierarchy]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - quality:: 0.62

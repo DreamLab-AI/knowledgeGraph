@@ -1,0 +1,40 @@
+- ### Definition
+  - A pull request is a reviewable proposal to merge changes from one branch into another.
+  - It is a structured form of [[Code Review]] and a core artefact of [[Software Development]].
+  - It requires [[Version Control]] and is most commonly enacted through [[Git]] hosting platforms.
+  - It packages [[Commit]] history with [[Peer Review]] discussion and automated checks.
+- ### Overview
+  - A pull request makes a change proposal explicit, gathering the diff, a rationale, and a conversation in one place.
+  - Reviewers inspect the changes, comment inline, request modifications, and approve when satisfied.
+  - Continuous integration runs tests and policy checks against the proposed change, gating merge on passing results.
+  - The merged or closed pull request leaves a durable, auditable record of why and how the codebase evolved.
+- ### Key aspects
+  - Diff and changeset: the concrete set of additions and deletions proposed for merge.
+  - Review thread: inline and general comments capturing discussion and requested changes.
+  - Status checks: automated builds, tests, and policy gates that must pass before merge.
+  - Approvals and rules: required reviewer sign-off and branch protection policies.
+  - Merge strategies: options such as merge commit, squash, or rebase that integrate the change.
+- ### Applications
+  - Coordinating contributions in open source and internal engineering teams.
+  - Enforcing quality gates through mandatory review and passing CI before integration.
+  - Providing an audit trail linking code changes to discussion and approvals.
+  - Triggering automated workflows for testing, security scanning, and deployment.
+- ### Relationships
+  - hasPart:: [[Commit]]
+  - hasPart:: [[Peer Review]]
+  - requires:: [[Version Control]]
+  - requires:: [[Git]]
+  - uses:: [[Continuous Integration]]
+  - uses:: [[Code Review]]
+  - enables:: [[Collaboration]]
+  - enables:: [[Quality Assurance]]
+  - supports:: [[Workflow Automation]]
+  - supports:: [[Audit]]
+  - partOf:: [[Software Development]]
+  - relatedTo:: [[Git]]
+  - relatedTo:: [[Continuous Integration]]
+  - relatedTo:: [[Peer Review]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

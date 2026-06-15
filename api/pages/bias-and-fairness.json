@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:bias-and-fairness",
+  "title": "Bias And Fairness",
+  "slug": "bias-and-fairness",
+  "public": true,
+  "classIri": "urn:ngm:class:bias-and-fairness",
+  "domain": "ai",
+  "definition": "Bias and Fairness is the area of responsible AI concerned with detecting, measuring, and mitigating systematic disparities in how machine learning systems treat individuals and groups. It addresses biases that enter through training data, model design, and deployment context, and it formalises competing notions of fairness such as demographic parity, equalised odds, and individual fairness. The goal is to ensure that automated decisions do not unjustifiably disadvantage protected populations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:responsible-ai",
+      "label": "Responsible AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:dataset",
+        "label": "Dataset"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aiethics",
+      "label": "AIEthics"
+    }
+  ]
+}

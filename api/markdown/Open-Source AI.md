@@ -124,7 +124,7 @@ alias:: Open Source AI
         "label": "AI Safety"
       },
       {
-        "@id": "urn:ngm:class:scientific-reproducibility",
+        "@id": "urn:ngm:class:reproducibility",
         "label": "Scientific Reproducibility"
       }
     ],
@@ -136,7 +136,7 @@ alias:: Open Source AI
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:model-hub",
+        "@id": "urn:ngm:class:hugging-face-model-hub",
         "label": "Model Hub"
       }
     ],

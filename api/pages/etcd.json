@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:etcd",
+  "title": "Etcd",
+  "slug": "etcd",
+  "public": true,
+  "classIri": "urn:ngm:class:etcd",
+  "domain": "infrastructure",
+  "definition": "etcd is a strongly consistent, distributed key-value store used to hold the critical configuration and coordination data of distributed systems. It uses the Raft consensus algorithm to replicate data across a cluster, providing linearisable reads and writes with reliable failover. etcd is best known as the primary datastore for Kubernetes cluster state, and is also used for service discovery, distributed locking, leader election, and configuration management in many cloud-native platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:zookeeper",
+        "label": "ZooKeeper"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:key-value-store",
+        "label": "Key-Value Store"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consul",
+        "label": "Consul"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ]
+}

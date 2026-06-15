@@ -1,0 +1,37 @@
+- ### Definition
+  - Enterprise AI is the application of artificial-intelligence systems within large organisations to automate workflows, augment knowledge work and inform decisions, subject to governance, security and integration constraints. It spans foundation-model assistants, retrieval-augmented systems over corporate data, and agentic automation embedded in existing software estates. Distinct from consumer AI, it prioritises auditability, data residency, access control and measurable return on investment.
+  - Related concepts: [[Artificial Intelligence]] [[Foundation Model]] [[Enterprise Automation]] [[AI Governance Law and Privacy]] [[Institutional Adoption]]
+- ### Overview
+  - Enterprise AI integrates models into the operational fabric of a business: connected to systems of record, gated by identity and access management, and monitored for cost and compliance. The dominant patterns are assistant copilots embedded in productivity tools, retrieval-augmented generation grounding outputs in proprietary corpora, and autonomous or semi-autonomous agents executing multi-step processes. Success is governed less by raw model capability than by data plumbing, evaluation, and organisational change.
+- ### Key aspects
+  - Grounding model outputs in proprietary corporate data
+  - Identity, access control and data-residency constraints
+  - Cost governance and ROI measurement
+  - Human-in-the-loop oversight and auditability
+  - Integration with existing ERP, CRM and workflow systems
+- ### Applications
+  - Knowledge-work copilots for drafting, summarising and search
+  - Customer-support automation grounded in internal documentation
+  - Agentic process automation across back-office workflows
+  - Decision support over enterprise analytics and reporting
+- ### Relationships
+  - subClassOf:: [[Artificial Intelligence]]
+  - bridgesTo:: [[Enterprise Automation]]
+  - bridgesTo:: [[Enterprise Resource Planning]]
+  - supports:: [[AI Adoption]]
+  - supports:: [[Technology Adoption]]
+  - relatedTo:: [[Institutional Adoption]]
+  - relatedTo:: [[Enterprise AI Adoption]]
+  - uses:: [[Foundation Model]]
+  - uses:: [[AI Agents]]
+  - uses:: [[Microsoft Copilot]]
+  - requires:: [[AI Governance Law and Privacy]]
+  - enables:: [[Agentic Workflow]]
+  - enables:: [[Enterprise Search]]
+  - implements:: [[Foundation Model]]
+  - dependsOn:: [[AI Governance Law and Privacy]]
+  - contrastsWith:: [[AI Adoption]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

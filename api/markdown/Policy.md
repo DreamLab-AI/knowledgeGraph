@@ -37,12 +37,6 @@ public:: true
         "label": "Governance Framework"
       }
     ],
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:enforcement",
-        "label": "Enforcement"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:decision-making",

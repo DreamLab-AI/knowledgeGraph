@@ -127,7 +127,7 @@ public:: true
         "label": "Amazon Web Services"
       },
       {
-        "@id": "urn:ngm:class:microsoft-azure",
+        "@id": "urn:ngm:class:azure",
         "label": "Microsoft Azure"
       },
       {

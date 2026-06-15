@@ -92,7 +92,7 @@ public:: true
         "label": "Public Key Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:secure-key-exchange",
+        "@id": "urn:ngm:class:key-exchange",
         "label": "Secure Key Exchange"
       },
       {
@@ -138,7 +138,7 @@ public:: true
         "label": "Mathematical Hardness Assumption"
       },
       {
-        "@id": "urn:ngm:class:private-key-management",
+        "@id": "urn:ngm:class:key-management",
         "label": "Private Key Management"
       }
     ],

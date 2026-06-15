@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:depth-camera",
+  "title": "Depth Camera",
+  "slug": "depth-camera",
+  "public": true,
+  "classIri": "urn:ngm:class:depth-camera",
+  "domain": "spatial-computing",
+  "definition": "A depth camera is a sensor that captures, for each pixel, the distance from the camera to objects in the scene, producing a depth map or 3D point cloud rather than only colour intensity. Common operating principles include structured light, time-of-flight, and stereo disparity, often combined with a colour stream to yield RGB-D data. Depth cameras are foundational sensors for spatial perception, enabling reconstruction, mapping, and interaction with three-dimensional environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:camera",
+      "label": "Camera"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:structured-light",
+        "label": "Structured Light"
+      },
+      {
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mixed-reality-mr",
+      "label": "Mixed Reality (MR)"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:triton-inference-server",
+  "title": "Triton Inference Server",
+  "slug": "triton-inference-server",
+  "public": true,
+  "classIri": "urn:ngm:class:triton-inference-server",
+  "domain": "machine-learning",
+  "definition": "Triton Inference Server is NVIDIA's open-source platform for serving machine-learning models in production across CPUs and GPUs. It supports multiple frameworks through a common interface, batches and schedules concurrent requests, and exposes models over HTTP and gRPC. Triton is a standard component of GPU-accelerated inference stacks, often paired with TensorRT-optimised models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference-serving",
+      "label": "Inference Serving"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:nvidia-corporation",
+        "label": "NVIDIA Corporation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:auto-scaling",
+        "label": "Auto-Scaling"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:g-rpc",
+        "label": "gRPC"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:tensor-rt",
+        "label": "TensorRT"
+      },
+      {
+        "id": "urn:ngm:class:onnx-runtime",
+        "label": "ONNX Runtime"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    }
+  ]
+}

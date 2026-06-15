@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:elements-project",
+  "title": "Elements Project",
+  "slug": "elements-project",
+  "public": true,
+  "classIri": "urn:ngm:class:elements-project",
+  "domain": "blockchain",
+  "definition": "The Elements Project is an open-source blockchain platform, derived from Bitcoin Core, that serves as a testbed and reference implementation for advanced features such as confidential transactions, asset issuance, and federated sidechains. Maintained primarily by Blockstream, it provides the codebase underpinning the Liquid Network and allows developers to experiment with extensions that may later be proposed for Bitcoin itself. It packages cryptographic enhancements like confidential assets and amounts into a deployable, Bitcoin-compatible client.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:open-source-software",
+      "label": "Open Source Software"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquid-network",
+        "label": "Liquid Network"
+      },
+      {
+        "id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transactions"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transactions"
+      },
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:liquid-network",
+        "label": "Liquid Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-core",
+        "label": "Bitcoin Core"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:blockstream",
+        "label": "Blockstream"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockstream",
+        "label": "Blockstream"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

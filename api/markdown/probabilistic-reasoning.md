@@ -1,0 +1,41 @@
+- ### Definition
+  - Probabilistic reasoning draws conclusions under uncertainty by representing beliefs as distributions and updating them with evidence.
+  - It is a mode of [[Reasoning]] central to [[Artificial Intelligence]].
+  - It applies [[Bayesian Inference]] over a [[Probabilistic Model]] expressed as a [[Graphical Model]].
+  - It quantifies [[Uncertainty]] explicitly, distinguishing it from non-probabilistic schemes like [[Fuzzy Logic]].
+- ### Overview
+  - Probabilistic reasoning treats unknowns as random variables and beliefs as probability distributions over their values.
+  - Evidence is incorporated by conditioning, updating prior beliefs into posteriors according to the rules of probability.
+  - Graphical models compactly encode dependencies among variables, making large joint distributions tractable to reason about.
+  - Inference procedures, exact or approximate, compute marginals and posteriors that drive predictions and decisions.
+- ### Mechanisms
+  - Bayesian updating: revising priors into posteriors as new evidence arrives.
+  - Graphical model representation: encoding conditional independence to factor joint distributions.
+  - Marginalisation and conditioning: summing out variables and fixing observed evidence.
+  - Approximate inference: sampling and variational methods when exact computation is infeasible.
+  - Uncertainty propagation: carrying distributions through computations rather than point estimates.
+- ### Applications
+  - Diagnosis and prediction systems that reason from noisy or incomplete evidence.
+  - Probabilistic machine learning models and their training and inference.
+  - Robotics and perception where sensor noise demands explicit uncertainty handling.
+  - Decision support that weighs outcomes by their estimated likelihoods.
+- ### Relationships
+  - uses:: [[Bayesian Inference]]
+  - uses:: [[Probability Distribution]]
+  - uses:: [[Graphical Model]]
+  - implements:: [[Statistical Inference]]
+  - implements:: [[Inference]]
+  - requires:: [[Probabilistic Model]]
+  - requires:: [[Inference Engine]]
+  - enables:: [[Decision Making]]
+  - enables:: [[Uncertainty Quantification]]
+  - supports:: [[Machine Learning]]
+  - partOf:: [[Artificial Intelligence]]
+  - contrastsWith:: [[Fuzzy Logic]]
+  - relatedTo:: [[Bayesian Inference]]
+  - relatedTo:: [[Uncertainty]]
+  - relatedTo:: [[Markov Chain]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

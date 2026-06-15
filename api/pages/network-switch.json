@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:network-switch",
+  "title": "Network Switch",
+  "slug": "network-switch",
+  "public": true,
+  "classIri": "urn:ngm:class:network-switch",
+  "domain": "infrastructure",
+  "definition": "A network switch is a hardware device that connects devices within a local area network and forwards data frames between them based on MAC addresses at the data link layer. By learning which addresses sit on which ports, it forwards traffic only to its destination, improving efficiency over shared media. Switches are foundational building blocks of wired networks in offices, campuses and data centres.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:networking-infrastructure",
+      "label": "Networking Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:network-interface-card",
+        "label": "Network Interface Card"
+      },
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "id": "urn:ngm:class:network-interface",
+        "label": "Network Interface"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:time-sensitive-networking",
+        "label": "Time-Sensitive Networking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:networking-standard",
+        "label": "Networking Standard"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-link-layer",
+        "label": "Data Link Layer"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-networking",
+        "label": "Low-Latency Networking"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-defined-networking",
+        "label": "Software-Defined Networking"
+      },
+      {
+        "id": "urn:ngm:class:networking-technology",
+        "label": "Networking Technology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

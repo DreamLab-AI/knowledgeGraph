@@ -40,12 +40,6 @@ public:: true
         "label": "Gemini Multimodal Language Model"
       }
     ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:alphabet-inc",
-        "label": "Alphabet Inc"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:high-performance-computing",

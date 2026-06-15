@@ -74,7 +74,7 @@ public:: true
         "label": "Time Series Database"
       },
       {
-        "@id": "urn:ngm:class:data-ingestion-pipeline",
+        "@id": "urn:ngm:class:data-ingestion",
         "label": "Data Ingestion Pipeline"
       }
     ],

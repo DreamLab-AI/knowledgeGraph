@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:feeless-blockchain",
+  "title": "Feeless Blockchain",
+  "slug": "feeless-blockchain",
+  "public": true,
+  "classIri": "urn:ngm:class:feeless-blockchain",
+  "domain": "blockchain",
+  "definition": "A feeless blockchain is a distributed ledger that allows transactions to be submitted without an explicit per-transaction fee paid to validators. Such designs replace fee-based economics with alternative mechanisms \u2014 for example directed acyclic graph structures where each sender contributes a small proof-of-work to confirm prior transactions, or networks where validators are compensated through other means. Feeless models aim to enable micropayments and machine-to-machine value transfer that fee-bearing chains render uneconomic. They must still solve spam prevention and resource accounting without using fees as the deterrent.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:proof-of-history",
+        "label": "Proof of History"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      },
+      {
+        "id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      },
+      {
+        "id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      },
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

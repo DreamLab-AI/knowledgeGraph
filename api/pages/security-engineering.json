@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:security-engineering",
+  "title": "Security Engineering",
+  "slug": "security-engineering",
+  "public": true,
+  "classIri": "urn:ngm:class:security-engineering",
+  "domain": "security",
+  "definition": "Security engineering is the discipline of designing, building, and maintaining systems that remain dependable and trustworthy in the face of malice, error, and accident. It applies systematic engineering practices to protect the confidentiality, integrity, and availability of information and assets, integrating threat modelling, secure architecture, and verifiable controls across the development lifecycle. Security engineers reason about adversaries, attack surfaces, and trust boundaries to make risk decisions defensible and economically rational.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:security-architecture",
+        "label": "Security Architecture"
+      },
+      {
+        "id": "urn:ngm:class:security-testing",
+        "label": "Security Testing"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:defense-in-depth",
+        "label": "Defence in Depth"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:privacy-engineering",
+        "label": "Privacy Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

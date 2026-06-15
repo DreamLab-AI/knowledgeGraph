@@ -98,7 +98,7 @@ public:: true
         "label": "Locking Script"
       },
       {
-        "@id": "urn:ngm:class:utxo-set",
+        "@id": "urn:ngm:class:utxo",
         "label": "UTXO Set"
       }
     ],

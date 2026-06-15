@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:safety-monitoring",
+  "title": "Safety Monitoring",
+  "slug": "safety-monitoring",
+  "public": true,
+  "classIri": "urn:ngm:class:safety-monitoring",
+  "domain": "robotics",
+  "definition": "Safety monitoring is the continuous supervision of a robotic or automated system to detect hazardous states, component degradation or human proximity and to trigger protective responses. It fuses proprioceptive and exteroceptive sensing with state estimation, anomaly detection and decision logic to enforce safety constraints independently of the nominal task controller. It underpins certified human-robot collaboration and autonomous operation in shared workspaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-safety",
+      "label": "Robot Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robot-safety",
+        "label": "Robot Safety"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-collaboration",
+        "label": "Human-Robot Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-operation",
+      "label": "Collaborative Operation"
+    }
+  ]
+}

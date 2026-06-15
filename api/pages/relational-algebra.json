@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:relational-algebra",
+  "title": "Relational Algebra",
+  "slug": "relational-algebra",
+  "public": true,
+  "classIri": "urn:ngm:class:relational-algebra",
+  "domain": "data",
+  "definition": "Relational algebra is a formal, procedural query language consisting of operators that take relations as input and produce relations as output. Its core operators \u2014 selection, projection, union, set difference, Cartesian product, rename, and derived operators such as join \u2014 provide a closed algebra that gives precise semantics to relational queries. It is the theoretical foundation for SQL and for the query optimisation performed by relational database systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:relational-database",
+      "label": "Relational Database"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:join",
+        "label": "Join"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "id": "urn:ngm:class:query-processing",
+        "label": "Query Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:relational-model",
+        "label": "Relational Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:relational-calculus",
+        "label": "Relational Calculus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:relational-calculus",
+        "label": "Relational Calculus"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "id": "urn:ngm:class:query-optimization",
+        "label": "Query Optimisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:relational-model",
+        "label": "Relational Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      },
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      },
+      {
+        "id": "urn:ngm:class:query-optimization",
+        "label": "Query Optimisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:feature-map",
+  "title": "Feature Map",
+  "slug": "feature-map",
+  "public": true,
+  "classIri": "urn:ngm:class:feature-map",
+  "domain": "machine-learning",
+  "definition": "A feature map (or activation map) is the output produced when a convolutional filter is applied across an input in a convolutional neural network, encoding the spatial response of a learned feature. Each channel of a feature map highlights where a particular pattern, such as an edge or texture, occurs in the input. Stacks of feature maps form the intermediate representations that deeper layers compose into higher-level concepts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:filter-kernel",
+        "label": "Filter Kernel"
+      },
+      {
+        "id": "urn:ngm:class:receptive-field",
+        "label": "Receptive Field"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pooling-layer",
+        "label": "Pooling Layer"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:image-recognition",
+        "label": "Image Recognition"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      },
+      {
+        "id": "urn:ngm:class:spatial-hierarchy",
+        "label": "Spatial Hierarchy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

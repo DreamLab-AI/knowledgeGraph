@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:institutional-trust",
+  "title": "Institutional Trust",
+  "slug": "institutional-trust",
+  "public": true,
+  "classIri": "urn:ngm:class:institutional-trust",
+  "domain": "finance",
+  "definition": "Institutional trust is the confidence that individuals and organisations place in formal institutions, such as central banks, regulators, courts, and clearing infrastructures, to act competently, fairly, and predictably in accordance with their stated mandates. Unlike interpersonal trust, it is impersonal and systemic: it rests on transparency, accountability, the rule of law, and a credible track record rather than personal acquaintance. Institutional trust underpins the functioning of fiat currency, financial markets, and governance, and its erosion is a primary driver of demand for trust-minimising alternatives such as blockchain systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trust",
+      "label": "Trust"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:reputation",
+        "label": "Reputation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:legitimacy",
+        "label": "Legitimacy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptoasset-regulation",
+        "label": "Cryptoasset Regulation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:social-capital",
+        "label": "Social Capital"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

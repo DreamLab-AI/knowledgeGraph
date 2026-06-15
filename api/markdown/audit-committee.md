@@ -1,0 +1,34 @@
+- ### Definition
+  - An audit committee is a board sub-committee within an organisation's [[Governance Structure]].
+  - It oversees financial reporting, [[Risk Management]], and [[Compliance]].
+  - It upholds [[Accountability]] and the board's [[Fiduciary Duty]] to [[Stakeholder]]s.
+- ### Overview
+  - Typically composed of independent non-executive directors with financial literacy.
+  - Engages and evaluates both internal audit and the external auditor.
+  - Mandated by governance codes and securities regulation in many jurisdictions.
+- ### Key aspects
+  - Oversight of the integrity of financial statements.
+  - Review of internal control and risk-management effectiveness.
+  - Auditor independence, appointment, and remuneration.
+  - Whistleblowing arrangements and regulatory compliance monitoring.
+- ### Applications
+  - Listed-company governance and financial assurance.
+  - Public-sector and charity oversight bodies.
+  - Bank and insurer prudential governance.
+  - Investor confidence and capital-market integrity.
+- ### Relationships
+  - partOf:: [[Governance Structure]]
+  - partOf:: [[Corporate Governance]]
+  - hasPart:: [[Compliance]]
+  - requires:: [[Accountability]]
+  - requires:: [[Fiduciary Duty]]
+  - enables:: [[Risk Management]]
+  - enables:: [[Compliance]]
+  - supports:: [[Financial Stability]]
+  - relatedTo:: [[Stakeholder]]
+  - relatedTo:: [[Governance]]
+  - relatedTo:: [[Prudential Regulation]]
+  - dependsOn:: [[Corporate Governance]]
+  - uses:: [[Risk Management]]
+- ### Provenance
+  - updated:: 2026-06-15

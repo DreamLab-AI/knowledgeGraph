@@ -1,0 +1,88 @@
+{
+  "id": "urn:visionflow:page:signature-aggregation",
+  "title": "Signature Aggregation",
+  "slug": "signature-aggregation",
+  "public": true,
+  "classIri": "urn:ngm:class:signature-aggregation",
+  "domain": "blockchain",
+  "definition": "Signature Aggregation is a cryptographic technique that combines multiple digital signatures over distinct or identical messages into a single compact signature that can be verified with one operation. It reduces on-chain storage and verification cost in blockchain systems where many parties sign, such as validator committees. Schemes such as BLS and Schnorr support aggregation, improving scalability and bandwidth efficiency for distributed consensus.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-signature",
+      "label": "Digital Signature"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bls-signature",
+        "label": "BLS Signature"
+      },
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "Verification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

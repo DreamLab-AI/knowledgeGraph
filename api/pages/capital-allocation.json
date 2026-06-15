@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:capital-allocation",
+  "title": "Capital Allocation",
+  "slug": "capital-allocation",
+  "public": true,
+  "classIri": "urn:ngm:class:capital-allocation",
+  "domain": "finance",
+  "definition": "Capital allocation is the process by which firms, investors and markets distribute scarce financial resources across competing uses to maximise risk-adjusted return or strategic value. It spans corporate decisions about investing, returning capital and funding, as well as investor decisions about deploying funds across assets and opportunities. Effective allocation channels capital towards its most productive uses, making it central to both firm performance and the efficiency of the wider financial system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:investment-management",
+      "label": "Investment Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:portfolio-management",
+        "label": "Portfolio Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:capital-efficiency",
+        "label": "Capital Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:portfolio-management",
+        "label": "Portfolio Management"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:investment-management",
+        "label": "Investment Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+- ### Definition
+  - Relates to [[Energy Efficiency]]
+  - Relates to [[Data Centre]]
+  - Relates to [[Cooling System]]
+  - Relates to [[Energy Consumption]]
+  - Relates to [[Carbon Footprint Measurement]]
+- ### Overview
+  - PUE divides total facility energy by the energy consumed by IT load.
+  - Values approach 1.0 as cooling and conversion overheads are minimised.
+  - It is reported by operators and used in sustainability disclosures and procurement.
+  - Complementary metrics address water use and carbon intensity alongside power efficiency.
+- ### Key aspects
+  - **Definition** — Total facility energy divided by IT equipment energy yields a dimensionless ratio at or above 1.0.
+  - **Overhead drivers** — Cooling, power distribution losses and lighting account for the gap between PUE and 1.0.
+  - **Measurement** — Metering of facility and IT loads over representative periods produces credible figures.
+  - **Limitations** — PUE ignores absolute consumption, workload utilisation and embodied energy, so it is read alongside other metrics.
+- ### Applications
+  - Benchmarking and reporting data-centre energy efficiency.
+  - Justifying investment in advanced cooling such as liquid and immersion systems.
+  - Informing site selection and design for hyperscale facilities.
+  - Supporting corporate sustainability and carbon-reporting commitments.
+- ### Relationships
+  - subClassOf:: [[Energy Efficiency]]
+  - uses:: [[Energy Consumption]]
+  - uses:: [[Electricity Consumption]]
+  - relatedTo:: [[Energy Efficiency]]
+  - relatedTo:: [[Data Centre]]
+  - relatedTo:: [[Immersion Cooling]]
+  - hasPart:: [[Cooling System]]
+  - hasPart:: [[Power Supply]]
+  - partOf:: [[Environmental Sustainability]]
+  - partOf:: [[SustainabilityReporting]]
+  - dependsOn:: [[Power Distribution Unit]]
+  - dependsOn:: [[Energy Management]]
+  - supports:: [[Carbon Footprint Measurement]]
+  - enables:: [[Operational Efficiency]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

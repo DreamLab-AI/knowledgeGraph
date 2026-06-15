@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:presentation-attack-detection",
+  "title": "Presentation Attack Detection",
+  "slug": "presentation-attack-detection",
+  "public": true,
+  "classIri": "urn:ngm:class:presentation-attack-detection",
+  "domain": "security",
+  "definition": "Presentation attack detection (PAD) is the set of techniques that determine whether a biometric sample is presented by a genuine, live subject or by an artefact intended to spoof the system. Attacks include printed photographs, replayed video, silicone fingerprints, and three-dimensional masks. PAD, also known as liveness or anti-spoofing analysis, is standardised under ISO/IEC 30107 and is essential to the trustworthiness of biometric authentication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:biometric-authentication",
+      "label": "Biometric Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:kqml",
+  "title": "Kqml",
+  "slug": "kqml",
+  "public": true,
+  "classIri": "urn:ngm:class:kqml",
+  "domain": "ai",
+  "definition": "KQML, the Knowledge Query and Manipulation Language, is an early agent communication language and protocol for exchanging information and knowledge among software agents. It defines a set of performatives, message types grounded in speech-act theory, that express the intent of a communication such as ask, tell, subscribe or achieve. KQML influenced later standards including the FIPA Agent Communication Language.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-communication-language",
+      "label": "Agent Communication Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA ACL"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fipa-acl",
+        "label": "FIPA ACL"
+      },
+      {
+        "id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

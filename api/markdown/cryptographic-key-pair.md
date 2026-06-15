@@ -1,0 +1,34 @@
+- ### Definition
+  - A [[Cryptographic Key Pair]] is a linked public and [[Private Key]] used in [[Asymmetric Cryptography]].
+  - The private key stays secret while the public key is shared freely; each undoes operations of the other.
+  - Key pairs enable [[Encryption]], [[Digital Signature]] and key agreement, forming the basis of [[Public Key Cryptography]].
+- ### Overview
+  - Symmetric ciphers share one secret, which is hard to distribute safely; asymmetric key pairs solve this by separating roles.
+  - Anyone can encrypt to a recipient using the public key, but only the holder of the private key can decrypt.
+  - Conversely, the private key signs data and anyone can verify the signature with the public key, proving authorship.
+  - The security rests on hard mathematical problems such as integer factorisation or the discrete logarithm.
+- ### Key aspects
+  - Asymmetry: distinct keys for inverse operations remove the shared-secret distribution problem.
+  - Confidentiality and authenticity: encryption protects content, signatures bind identity to data.
+  - Key generation and storage: secure randomness and protected private-key storage are critical.
+  - Lifecycle: generation, rotation, revocation and recovery are governed by key management.
+- ### Applications
+  - TLS and secure messaging that establish encrypted channels.
+  - Digital signatures for software, documents and blockchain transactions.
+  - Decentralised identity, where a key pair anchors a DID and its verifiable credentials.
+  - SSH and code-signing infrastructures authenticating users and artefacts.
+- ### Relationships
+  - hasPart:: [[Private Key]]
+  - partOf:: [[Public Key Cryptography]]
+  - uses:: [[Asymmetric Cryptography]]
+  - enables:: [[Digital Signature]]
+  - enables:: [[Encryption]]
+  - supports:: [[DID Method]]
+  - requires:: [[Key Management]]
+  - dependsOn:: [[Asymmetric Cryptography]]
+  - relatedTo:: [[Cryptography]]
+  - bridgesTo:: [[DID Method]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

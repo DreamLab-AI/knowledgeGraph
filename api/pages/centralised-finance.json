@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:centralised-finance",
+  "title": "Centralised Finance",
+  "slug": "centralised-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:centralised-finance",
+  "domain": "blockchain",
+  "definition": "Centralised Finance (CeFi) is a model of financial service provision in which a trusted intermediary custodies user assets and operates the order books, matching engines and settlement rails on behalf of participants. In the cryptocurrency context it denotes exchanges and lending platforms that hold customer funds in pooled wallets and enforce identity verification, in contrast to non-custodial, smart-contract-mediated alternatives. CeFi platforms offer familiar account models, fiat on-ramps and regulatory compliance at the cost of counterparty trust.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:finance",
+      "label": "Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:traditional-finance",
+        "label": "Traditional Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      },
+      {
+        "id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      },
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:global-digital-finance",
+        "label": "Global Digital Finance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

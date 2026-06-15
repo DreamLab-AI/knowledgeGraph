@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:refresh-token",
+  "title": "Refresh Token",
+  "slug": "refresh-token",
+  "public": true,
+  "classIri": "urn:ngm:class:refresh-token",
+  "domain": "security",
+  "definition": "A refresh token is a long-lived credential issued alongside a short-lived access token, used to obtain new access tokens without prompting the user to re-authenticate. By keeping access tokens short-lived and exchanging the refresh token at the authorisation server, systems limit the damage of a leaked access token while preserving a smooth user session. Refresh tokens are sensitive and typically bound, rotated, and revocable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:oauth-2-0",
+      "label": "OAuth 2.0"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

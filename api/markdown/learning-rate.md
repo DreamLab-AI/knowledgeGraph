@@ -1,0 +1,30 @@
+- ### Definition
+- The learning rate is a [[Hyperparameter]] that scales each parameter update in [[Gradient Descent]]. It controls the balance between convergence speed and stability during [[Neural Network Training]], and is often adjusted by a [[Learning Rate Schedule]] or adapted by the [[Optimiser]].
+- ### Overview
+- In gradient-based training, parameters move opposite to the gradient of the loss; the learning rate sets how far they move at each step.
+- An appropriate value lets the loss decrease steadily towards a good minimum, whereas an inappropriate one causes either divergence or impractically slow progress.
+- Because the ideal value depends on the model, data, and optimiser, it is typically searched for and often changed during training.
+- ### Key aspects
+- A value that is too high can overshoot minima, oscillate, or diverge entirely.
+- A value that is too low wastes computation and may stall in flat or poor regions.
+- Schedules such as warm-up, step decay, and cosine annealing vary the rate over training.
+- Adaptive optimisers adjust an effective per-parameter rate from gradient statistics.
+- ### Applications
+- Training deep neural networks across vision, language, and other domains.
+- Fine-tuning pretrained models, where small rates preserve learned features.
+- Hyperparameter searches and learning-rate range tests to find good settings.
+- Stabilising large-batch and distributed training regimes.
+- ### Relationships
+- requires:: [[Gradient Descent]]
+- relatedTo:: [[Hyperparameter]]
+- relatedTo:: [[Convergence]]
+- relatedTo:: [[Loss Function]]
+- uses:: [[Learning Rate Schedule]]
+- enables:: [[Convergence]]
+- dependsOn:: [[Optimiser]]
+- supports:: [[Neural Network Training]]
+- implements:: [[Hyperparameter Tuning]]
+- partOf:: [[Gradient Descent]]
+- bridgesTo:: [[Adam Optimiser]]
+- ### Provenance
+- updated:: 2026-06-15

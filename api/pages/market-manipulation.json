@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:market-manipulation",
+  "title": "Market Manipulation",
+  "slug": "market-manipulation",
+  "public": true,
+  "classIri": "urn:ngm:class:market-manipulation",
+  "domain": "finance",
+  "definition": "Market manipulation is the deliberate attempt to interfere with the free and fair operation of a financial market by creating false or misleading appearances of supply, demand or price. It encompasses practices such as spoofing, wash trading, pump-and-dump schemes and the dissemination of false information. As a form of market abuse it is prohibited by securities regulation and undermines price discovery and investor protection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:market-integrity",
+      "label": "Market Integrity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:insider-trading",
+        "label": "Insider Trading"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:front-running",
+        "label": "Front Running"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:market-surveillance",
+        "label": "Market Surveillance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:insider-trading",
+        "label": "Insider Trading"
+      },
+      {
+        "id": "urn:ngm:class:front-running",
+        "label": "Front Running"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    }
+  ]
+}

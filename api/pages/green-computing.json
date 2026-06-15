@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:green-computing",
+  "title": "Green Computing",
+  "slug": "green-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:green-computing",
+  "domain": "infrastructure",
+  "definition": "Green computing is the design, manufacture, operation and disposal of computing systems in ways that minimise environmental impact across their lifecycle. It targets energy efficiency, reduced carbon emissions, sustainable materials and responsible electronic-waste management. Practices range from efficient hardware and data-centre design to carbon-aware scheduling of workloads onto low-carbon energy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:carbon-aware-computing",
+        "label": "Carbon-Aware Computing"
+      },
+      {
+        "id": "urn:ngm:class:lifecycle-assessment",
+        "label": "Lifecycle Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:power-usage-effectiveness",
+        "label": "Power Usage Effectiveness"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:carbon-aware-computing",
+        "label": "Carbon-Aware Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

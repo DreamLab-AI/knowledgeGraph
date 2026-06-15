@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:source-routing",
+  "title": "Source Routing",
+  "slug": "source-routing",
+  "public": true,
+  "classIri": "urn:ngm:class:source-routing",
+  "domain": "blockchain",
+  "definition": "Source routing is a packet-forwarding technique in which the sender, rather than intermediate routers, specifies all or part of the path a packet must traverse, embedding the route as a list of hops within the packet itself. By moving path selection to the originator it enables explicit path control, multipath delivery, and privacy-preserving forwarding, at the cost of overhead and forwarding-table-bypass security considerations. It underpins onion-routing anonymity networks and payment-channel networks, where the sender constructs and conceals an end-to-end route across an overlay before any hop sees the full path.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:routing",
+      "label": "Routing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:tor",
+        "label": "Tor"
+      },
+      {
+        "id": "urn:ngm:class:overlay-network",
+        "label": "Overlay Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:networking",
+        "label": "Networking"
+      },
+      {
+        "id": "urn:ngm:class:onion-routing",
+        "label": "Onion Routing"
+      },
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

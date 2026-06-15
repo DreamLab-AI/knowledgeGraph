@@ -104,7 +104,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:electronic-health-records",
+        "@id": "urn:ngm:class:electronic-health-record",
         "label": "Electronic Health Records"
       },
       {

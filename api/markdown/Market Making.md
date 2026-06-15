@@ -67,7 +67,7 @@ public:: true
         "label": "Price Discovery"
       },
       {
-        "@id": "urn:ngm:class:market-liquidity",
+        "@id": "urn:ngm:class:liquidity",
         "label": "Market Liquidity"
       },
       {

@@ -1,0 +1,37 @@
+- ### Definition
+  - A false negative is a classification error in which a model incorrectly predicts the negative class for an instance that actually belongs to the positive class. It is a fundamental cell of the confusion matrix, often denoted FN, and directly reduces recall (sensitivity). In high-stakes domains such as medical screening or fraud detection, false negatives represent missed true cases and frequently carry asymmetric cost relative to false positives.
+  - [[Confusion Matrix]] [[Recall]] [[Classification]] [[Sensitivity]]
+- ### Overview
+  - A false negative arises when a classifier assigns the negative label to an instance whose ground-truth label is positive. Within the confusion matrix it sits opposite the true positive cell, and the count of false negatives appears in the denominator of recall: recall = TP / (TP + FN). A model that minimises false negatives is described as having high sensitivity. The relative cost of a false negative versus a false positive depends entirely on the application: missing a malignant tumour or a fraudulent transaction is typically far more damaging than raising a false alarm, which motivates threshold tuning that trades precision for recall.
+- ### Key aspects
+  - Occupies the FN cell of the confusion matrix, opposite the true positive.
+  - Lowers recall and sensitivity without affecting precision directly.
+  - Cost is application-dependent and often asymmetric relative to false positives.
+  - Reduced by lowering the decision threshold or rebalancing class weights.
+  - Tracked alongside true positives, false positives and true negatives for full evaluation.
+- ### Applications
+  - Medical screening where a missed diagnosis is a false negative.
+  - Fraud and intrusion detection where undetected attacks are false negatives.
+  - Spam and content moderation pipelines balancing miss rate against over-blocking.
+  - Quality control and defect detection on production lines.
+- ### Relationships
+  - subClassOf:: [[Model Evaluation]]
+  - partOf:: [[Confusion Matrix]]
+  - partOf:: [[Model Evaluation]]
+  - contrastsWith:: [[False Positive]]
+  - contrastsWith:: [[True Positive]]
+  - contrastsWith:: [[True Negative]]
+  - relatedTo:: [[Recall]]
+  - relatedTo:: [[Sensitivity]]
+  - relatedTo:: [[Precision]]
+  - relatedTo:: [[Classification]]
+  - relatedTo:: [[F1 Score]]
+  - uses:: [[Loss Function]]
+  - supports:: [[Anomaly Detection]]
+  - supports:: [[Fraud Detection]]
+  - enables:: [[Specificity]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

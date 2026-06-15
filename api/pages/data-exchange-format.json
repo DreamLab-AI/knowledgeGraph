@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:data-exchange-format",
+  "title": "Data Exchange Format",
+  "slug": "data-exchange-format",
+  "public": true,
+  "classIri": "urn:ngm:class:data-exchange-format",
+  "domain": "infrastructure",
+  "definition": "A data exchange format is an agreed structure and encoding for representing data so that it can be reliably transmitted, stored, and interpreted between independent systems. It defines syntax, data types, and often a schema, allowing a producer and a consumer that share no internal code to exchange information without loss of meaning. Common examples include JSON, XML, CSV, and binary formats such as Protocol Buffers, each trading off readability, compactness, and parsing speed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-format",
+      "label": "Data Format"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json",
+        "label": "JSON"
+      },
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standardization",
+        "label": "Standardization"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:protocol-buffers",
+        "label": "Protocol Buffers"
+      },
+      {
+        "id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    }
+  ]
+}

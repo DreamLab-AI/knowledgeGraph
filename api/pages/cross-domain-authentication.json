@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:cross-domain-authentication",
+  "title": "Cross Domain Authentication",
+  "slug": "cross-domain-authentication",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-domain-authentication",
+  "domain": "security",
+  "definition": "Cross-domain authentication is the capability for a principal authenticated in one security or administrative domain to prove its identity to services in another domain without re-enrolling separate credentials. It relies on federated trust relationships and standard token exchanges so that an identity provider in one realm is accepted by relying parties in another. This underpins single sign-on across organisations and is essential to federated and distributed systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:kerberos",
+        "label": "Kerberos"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

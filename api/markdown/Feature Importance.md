@@ -127,7 +127,7 @@ public:: true
         "label": "Random Forest"
       },
       {
-        "@id": "urn:ngm:class:gradient-boosting",
+        "@id": "urn:ngm:class:boosting",
         "label": "Gradient Boosting"
       }
     ],

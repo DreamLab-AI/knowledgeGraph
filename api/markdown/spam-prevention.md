@@ -1,0 +1,33 @@
+- ### Definition
+- Spam prevention is the set of mechanisms that deter flooding a shared system with low-value or malicious activity. On a [[Blockchain]] it usually relies on a [[Transaction Fee]] or [[Proof of Work]] to make abuse costly, protecting the [[Mempool]] and [[Network Security]].
+- ### Overview
+- Permissionless networks accept submissions from anyone, so they must price or rate-limit activity to stop a single actor from monopolising scarce resources.
+- The dominant approach attaches an economic cost to each transaction; an alternative is a computational puzzle that must be solved before a request is accepted.
+- Spam prevention is therefore inseparable from fee design, [[Consensus Mechanism]] choices and resistance to [[Sybil Attack]].
+- ### Mechanisms
+- Fee-based deterrence: every transaction pays a fee, so spamming at scale becomes prohibitively expensive; the [[Fee Market]] sets the clearing price under load.
+- Proof-of-work tickets: requiring a small amount of computation per request raises the marginal cost of mass submission.
+- Resource accounting: gas-style metering caps the work any single transaction can demand from a [[Validator]].
+- ### Key aspects
+- Cost asymmetry: legitimate users pay a tolerable cost while abusers face a multiplied one.
+- Mempool protection: prioritising fee-paying transactions keeps the [[Mempool]] from being saturated by junk.
+- Trade-off with accessibility: high anti-spam costs can exclude low-value but legitimate use.
+- ### Applications
+- Base-layer fee markets on smart-contract platforms.
+- Lightweight proof-of-work in messaging and identity systems.
+- Rate limiting and prioritisation in transaction propagation.
+- ### Relationships
+- enables:: [[Scalability]]
+- requires:: [[Transaction Fee]]
+- uses:: [[Proof of Work]]
+- uses:: [[Transaction Fee]]
+- dependsOn:: [[Consensus Mechanism]]
+- supports:: [[Mempool]]
+- implements:: [[Fee Market]]
+- partOf:: [[Network Security]]
+- bridgesTo:: [[Sybil Attack]]
+- relatedTo:: [[Transaction]]
+- relatedTo:: [[Validator]]
+- contrastsWith:: [[Proof of Stake]]
+- ### Provenance
+- updated:: 2026-06-15

@@ -134,12 +134,6 @@ public:: true
         "label": "OpenID Connect"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:anonymous-access",
-        "label": "Anonymous Access"
-      }
-    ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:decentralised-identity",

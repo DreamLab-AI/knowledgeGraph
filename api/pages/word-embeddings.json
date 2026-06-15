@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:word-embeddings",
+  "title": "Word Embeddings",
+  "slug": "word-embeddings",
+  "public": true,
+  "classIri": "urn:ngm:class:word-embeddings",
+  "domain": "artificial-intelligence",
+  "definition": "Word embeddings are dense, real-valued vector representations of words learned so that semantic and syntactic relationships are reflected as geometric relationships in a continuous vector space. Words with similar meanings map to nearby points, and linear offsets often capture analogical structure. They are learned from large text corpora by predicting words from their contexts, and replaced sparse one-hot encodings as the default input representation for natural language processing. Word embeddings underpin downstream tasks from classification to machine translation and serve as the conceptual precursor to contextual representations produced by transformer models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,36 @@
+- ### Definition
+  - Thermodynamics is a key concept in the infrastructure domain.
+  - Related foundational concepts: [[Infrastructure]] [[Information Theory]] [[Entropy]] [[Energy Efficiency]] [[Thermal Management]].
+  - Thermodynamics is the branch of physics concerned with heat, work, temperature and energy, and the laws governing their transformation and the direction of spontaneous processes. Its core principles - conservation of energy, the increase of entropy, and absolute-zero limits - underpin engineering of engines, cooling and energy systems. In computing infrastructure it constrains power consumption, heat dissipation and the efficiency of data-centre cooling.
+- ### Overview
+  - The laws of thermodynamics govern any system that converts or dissipates energy, from heat engines to processors. Its concept of entropy links to information theory, and its constraints on heat and efficiency directly shape data-centre design, cooling strategies and the energy economics of large-scale computing.
+- ### Key aspects
+  - Zeroth, first, second and third laws.
+  - Energy conservation, heat and work.
+  - Entropy and the arrow of irreversible processes.
+  - Connection to statistical mechanics and information theory.
+  - Practical limits on efficiency and waste-heat handling.
+- ### Applications
+  - Data-centre cooling and thermal management.
+  - Energy-efficiency and power-consumption optimisation.
+  - Green and sustainable computing design.
+  - Engineering of energy and cooling systems.
+- ### Relationships
+  - subClassOf:: [[Infrastructure]]
+  - bridgesTo:: [[Information Theory]]
+  - bridgesTo:: [[Statistical Mechanics]]
+  - dependsOn:: [[Entropy]]
+  - hasPart:: [[Entropy]]
+  - requires:: [[Thermal Management]]
+  - supports:: [[Energy Efficiency]]
+  - supports:: [[Power Consumption]]
+  - enables:: [[Green Computing]]
+  - enables:: [[Energy Management]]
+  - relatedTo:: [[Statistical Mechanics]]
+  - relatedTo:: [[Energy Efficiency]]
+  - uses:: [[Thermal Management]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

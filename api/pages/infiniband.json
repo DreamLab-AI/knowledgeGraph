@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:infiniband",
+  "title": "Infiniband",
+  "slug": "infiniband",
+  "public": true,
+  "classIri": "urn:ngm:class:infiniband",
+  "domain": "ai",
+  "definition": "InfiniBand is a high-throughput, low-latency switched-fabric interconnect standard used to connect servers, storage, and accelerators in high-performance computing and large-scale AI training clusters. It provides remote direct memory access (RDMA) that bypasses the operating system kernel, enabling near-wire-speed data movement between nodes. InfiniBand is widely deployed as the backbone fabric for GPU clusters where collective communication bandwidth determines training scalability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      },
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:nvlink",
+        "label": "NVLink"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rdma",
+        "label": "RDMA"
+      },
+      {
+        "id": "urn:ngm:class:network-fabric",
+        "label": "Network Fabric"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

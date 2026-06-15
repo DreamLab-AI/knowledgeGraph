@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:video-understanding",
+  "title": "Video Understanding",
+  "slug": "video-understanding",
+  "public": true,
+  "classIri": "urn:ngm:class:video-understanding",
+  "domain": "artificial-intelligence",
+  "definition": "Video understanding is the field of artificial intelligence concerned with extracting semantic meaning from video, including recognising objects, actions, events, and their temporal relationships across frames. Unlike single-image analysis, it must model motion, temporal context, and long-range dependencies to interpret what is happening over time. Modern approaches combine spatial feature extraction with temporal modelling using recurrent, 3D-convolutional, and transformer-based architectures, increasingly fused with language for captioning, retrieval, and question answering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:action-recognition",
+        "label": "Action Recognition"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

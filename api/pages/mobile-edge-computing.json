@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:mobile-edge-computing",
+  "title": "Mobile Edge Computing",
+  "slug": "mobile-edge-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:mobile-edge-computing",
+  "domain": "infrastructure",
+  "definition": "Mobile edge computing, also termed multi-access edge computing, places cloud computing capabilities at the edge of the mobile network, close to end users and devices. By hosting applications and services at base stations or aggregation points it reduces latency, conserves backhaul bandwidth and enables real-time processing. It is a foundational enabler for 5G use cases such as augmented reality, autonomous vehicles and industrial automation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ultra-low-latency",
+        "label": "Ultra-Low Latency"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:edge-computing-architecture",
+        "label": "Edge Computing Architecture"
+      },
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "id": "urn:ngm:class:iot",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:fog-computing",
+        "label": "Fog Computing"
+      },
+      {
+        "id": "urn:ngm:class:mobile-computing",
+        "label": "Mobile Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

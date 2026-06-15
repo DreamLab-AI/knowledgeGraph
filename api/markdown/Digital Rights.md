@@ -190,7 +190,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:cyber-security",
+        "@id": "urn:ngm:class:security",
         "label": "Cybersecurity"
       },
       {

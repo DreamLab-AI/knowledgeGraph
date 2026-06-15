@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:cpu-computing",
+  "title": "CPU Computing",
+  "slug": "cpu-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:cpu-computing",
+  "domain": "spatial-computing",
+  "definition": "CPU computing is the execution of computational workloads on a general-purpose central processing unit, which performs instructions sequentially across a small number of high-clock cores optimised for low latency and complex control flow. It excels at branch-heavy, irregular, and serial tasks but contrasts with the massively parallel throughput model of GPU computing. CPUs follow a stored-program architecture with deep cache hierarchies, out-of-order execution, and rich instruction sets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:semiconductor",
+        "label": "Semiconductor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:integrated-circuit",
+        "label": "Integrated Circuit"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:central-processing-unit",
+        "label": "Central Processing Unit"
+      },
+      {
+        "id": "urn:ngm:class:instruction-set-architecture",
+        "label": "Instruction Set Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -70,10 +70,6 @@ public:: true
         "label": "Regulatory Frameworks"
       },
       {
-        "@id": "urn:ngm:class:enforcement",
-        "label": "Enforcement"
-      },
-      {
         "@id": "urn:ngm:class:supervisory-authority",
         "label": "Supervisory Authority"
       }
@@ -117,10 +113,6 @@ public:: true
       }
     ],
     "dependsOn": [
-      {
-        "@id": "urn:ngm:class:legislation",
-        "label": "Legislation"
-      },
       {
         "@id": "urn:ngm:class:standards",
         "label": "Standards"

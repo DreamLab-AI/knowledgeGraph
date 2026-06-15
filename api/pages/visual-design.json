@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:visual-design",
+  "title": "Visual Design",
+  "slug": "visual-design",
+  "public": true,
+  "classIri": "urn:ngm:class:visual-design",
+  "domain": "spatial-computing",
+  "definition": "Visual design is the practice of shaping the appearance of interfaces and artefacts through the deliberate arrangement of typography, colour, imagery, space and composition to communicate meaning and guide attention. It establishes visual hierarchy, consistency and aesthetic quality so that products are both legible and emotionally resonant. As a core part of user experience and interaction design, visual design translates structure and intent into perceivable form, increasingly across spatial and immersive media.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-experience",
+      "label": "User Experience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    }
+  ]
+}

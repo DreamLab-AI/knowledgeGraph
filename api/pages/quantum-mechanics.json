@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:quantum-mechanics",
+  "title": "Quantum Mechanics",
+  "slug": "quantum-mechanics",
+  "public": true,
+  "classIri": "urn:ngm:class:quantum-mechanics",
+  "domain": "infrastructure",
+  "definition": "Quantum mechanics is the physical theory describing matter and energy at atomic and subatomic scales, where observable quantities are discrete and systems are represented by state vectors in a complex Hilbert space evolving under unitary dynamics. Core principles such as superposition, entanglement, measurement collapse and the uncertainty relation depart sharply from classical intuition. It provides the foundational substrate for quantum computing, quantum cryptography and the engineering of qubit-based information systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quantum-computation-paradigm",
+      "label": "Quantum Computation Paradigm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      },
+      {
+        "id": "urn:ngm:class:quantum-cryptography",
+        "label": "Quantum Cryptography"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:quantum-error-correction",
+        "label": "Quantum Error Correction"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      },
+      {
+        "id": "urn:ngm:class:quantum-gate",
+        "label": "Quantum Gate"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    }
+  ]
+}

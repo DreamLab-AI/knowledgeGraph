@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:biometric-identification",
+  "title": "Biometric Identification",
+  "slug": "biometric-identification",
+  "public": true,
+  "classIri": "urn:ngm:class:biometric-identification",
+  "domain": "spatial-computing",
+  "definition": "Biometric identification is the recognition of an individual by measuring and matching distinctive physiological or behavioural characteristics, such as fingerprints, facial geometry, iris patterns, voice or gait. It captures a sample, extracts a feature template and compares it against enrolled templates to verify a claimed identity (one-to-one) or identify an unknown subject (one-to-many). It underpins access control, border management and device authentication, and raises significant privacy considerations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-verification",
+      "label": "Identity Verification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:iris-recognition",
+        "label": "Iris Recognition"
+      },
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:privacy-preserving",
+        "label": "Privacy Preserving"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:facial-recognition",
+        "label": "Facial Recognition"
+      },
+      {
+        "id": "urn:ngm:class:fingerprint-recognition",
+        "label": "Fingerprint Recognition"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy-preserving",
+        "label": "Privacy Preserving"
+      },
+      {
+        "id": "urn:ngm:class:liveness-detection",
+        "label": "Liveness Detection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

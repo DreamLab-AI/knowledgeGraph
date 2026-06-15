@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:babylon-js",
+  "title": "Babylon Js",
+  "slug": "babylon-js",
+  "public": true,
+  "classIri": "urn:ngm:class:babylon-js",
+  "domain": "spatial-computing",
+  "definition": "Babylon.js is an open-source, JavaScript and TypeScript real-time 3D rendering engine for the web that drives interactive graphics, games, and immersive experiences through WebGL and WebGPU backends. It provides a scene graph, physically based rendering, a node-based material system, glTF asset loading, an animation system, physics integration, and first-class WebXR support for virtual and augmented reality. As a spatial-computing framework it is a common foundation for browser-delivered metaverse and 3D applications, abstracting low-level GPU programming behind a high-level scene and entity API.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering-engine",
+      "label": "Rendering Engine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:three-js",
+        "label": "Three.js"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      },
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:three-js",
+        "label": "Three.js"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

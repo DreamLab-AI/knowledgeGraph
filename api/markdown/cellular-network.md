@@ -1,0 +1,41 @@
+- ### Definition
+  - Relates to [[Telecommunications Infrastructure]]
+  - Relates to [[Radio Access Network]]
+  - Relates to [[Wireless Communication]]
+  - Relates to [[Telecommunications]]
+  - Relates to [[Networking Infrastructure]]
+- ### Overview
+  - Coverage areas are divided into cells, each with a base station serving local devices.
+  - Frequency reuse lets non-adjacent cells share spectrum, increasing aggregate capacity.
+  - Handover transfers a device's connection between cells as it moves, preserving continuity.
+  - Generational standards from 4G LTE to 5G raise data rates and reduce latency.
+- ### Key aspects
+  - **Cellular architecture** — A radio access network of base stations connects to a core network for routing and authentication.
+  - **Frequency reuse** — Careful spectrum planning across cells maximises capacity within limited bandwidth.
+  - **Handover** — Mobility management hands connections between cells to maintain service for moving users.
+  - **Generations** — Successive standards add capacity, throughput and latency improvements over predecessors.
+- ### Applications
+  - Mobile voice and broadband for smartphones and tablets.
+  - Connectivity for IoT and machine-to-machine devices at scale.
+  - Fixed-wireless access as an alternative to wired broadband.
+  - Low-latency services enabled by modern 5G deployments.
+- ### Relationships
+  - subClassOf:: [[Telecommunications Infrastructure]]
+  - requires:: [[Radio Access Network]]
+  - requires:: [[Wireless Communication]]
+  - contrastsWith:: [[Wireless Connectivity]]
+  - contrastsWith:: [[Mesh Networking]]
+  - hasPart:: [[Radio Transceiver]]
+  - hasPart:: [[Network Protocol]]
+  - partOf:: [[Telecommunications Infrastructure]]
+  - partOf:: [[Telecommunications]]
+  - uses:: [[Wireless Radio]]
+  - uses:: [[Network Transport]]
+  - supports:: [[Mobile Device]]
+  - supports:: [[Low-Latency Networking]]
+  - enables:: [[Internet of Things]]
+  - relatedTo:: [[Networking Infrastructure]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

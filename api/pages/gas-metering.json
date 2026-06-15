@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:gas-metering",
+  "title": "Gas Metering",
+  "slug": "gas-metering",
+  "public": true,
+  "classIri": "urn:ngm:class:gas-metering",
+  "domain": "blockchain",
+  "definition": "Gas metering is the mechanism by which a blockchain virtual machine accounts for the computational, storage and bandwidth resources consumed by executing a transaction or smart contract. Each low-level operation is assigned a gas cost, and execution proceeds only while the sender's prepaid gas budget remains, halting deterministically when the budget is exhausted. By pricing computation, gas metering deters denial-of-service abuse, bounds execution and forms the basis of transaction fees.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-platform",
+        "label": "Smart Contract Platform"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

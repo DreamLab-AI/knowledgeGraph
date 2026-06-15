@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:runbook",
+  "title": "Runbook",
+  "slug": "runbook",
+  "public": true,
+  "classIri": "urn:ngm:class:runbook",
+  "domain": "infrastructure",
+  "definition": "A runbook is a documented set of procedures for operating, maintaining and recovering a system, giving operators a repeatable sequence of steps for routine tasks and known failure scenarios. Modern runbooks range from human-readable checklists to executable automations that orchestrate remediation directly. They are a core artefact of site reliability engineering, reducing reliance on individual expertise during incidents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:documentation",
+      "label": "Documentation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incident-management",
+        "label": "Incident Management"
+      },
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:on-call",
+        "label": "On-Call"
+      },
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:documentation",
+        "label": "Documentation"
+      },
+      {
+        "id": "urn:ngm:class:incident-management",
+        "label": "Incident Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    }
+  ]
+}

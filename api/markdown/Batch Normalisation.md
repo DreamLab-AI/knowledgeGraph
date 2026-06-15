@@ -104,10 +104,6 @@ public:: true
       {
         "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
-      },
-      {
-        "@id": "urn:ngm:class:faster-convergence",
-        "label": "Faster Convergence"
       }
     ],
     "dependsOn": [

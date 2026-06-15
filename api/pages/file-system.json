@@ -21,10 +21,6 @@
       {
         "id": "urn:ngm:class:storage-hardware",
         "label": "Storage Hardware"
-      },
-      {
-        "id": "urn:ngm:class:kernel",
-        "label": "Kernel"
       }
     ],
     "enables": [

@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:unfccc",
+  "title": "Unfccc",
+  "slug": "unfccc",
+  "public": true,
+  "classIri": "urn:ngm:class:unfccc",
+  "domain": "governance",
+  "definition": "The United Nations Framework Convention on Climate Change (UNFCCC) is an international environmental treaty, adopted in 1992, that establishes the institutional framework for intergovernmental cooperation to limit greenhouse gas emissions and address climate change. It convenes the annual Conference of the Parties and provides the legal and procedural basis for subsequent agreements including the Kyoto Protocol and the Paris Agreement. The convention defines reporting, review and finance mechanisms that govern global climate action.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      },
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    }
+  ]
+}

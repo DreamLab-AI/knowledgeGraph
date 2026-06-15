@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:arkit",
+  "title": "Arkit",
+  "slug": "arkit",
+  "public": true,
+  "classIri": "urn:ngm:class:arkit",
+  "domain": "spatial-computing",
+  "definition": "ARKit is Apple's augmented reality development framework for iOS and iPadOS devices, providing motion tracking, environment understanding and rendering integration for placing virtual content in the physical world. It uses visual-inertial odometry, plane detection and scene reconstruction to anchor digital objects stably relative to real surfaces. ARKit gives developers a high-level API over the device camera, motion sensors and Neural Engine to build mobile AR experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:augmented-reality",
+      "label": "Augmented Reality"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:arcore",
+        "label": "Arcore"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:unity",
+        "label": "Unity"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:arcore",
+        "label": "Arcore"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    }
+  ]
+}

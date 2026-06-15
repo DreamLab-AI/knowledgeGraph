@@ -1,0 +1,32 @@
+- ### Definition
+  - [[Audience Engagement]] sustains viewer participation through tools such as [[Live Polls and QandA]] and [[Gamification]], a facet of [[User Engagement]] central to [[Content Creation]] and [[Live Streaming]].
+- ### Overview
+  - Captures and sustains viewer attention and participation.
+  - Uses interactive mechanisms such as polls, Q&A and reactions.
+  - Measured by watch time, interaction rate and retention.
+- ### Key aspects
+  - Real-time interactivity and live feedback loops.
+  - Gamification, rewards and participation incentives.
+  - Personalisation and community-building features.
+  - Engagement analytics and retention measurement.
+- ### Applications
+  - Live streaming and virtual events.
+  - Online courses and educational platforms.
+  - Brand and marketing campaigns.
+  - Creator monetisation and community growth.
+- ### Relationships
+  - enables:: [[User Engagement]]
+  - enables:: [[Creator Economy]]
+  - requires:: [[Content Creation]]
+  - partOf:: [[Content Creation]]
+  - uses:: [[Live Polls and QandA]]
+  - uses:: [[Gamification]]
+  - supports:: [[Live Streaming]]
+  - supports:: [[Virtual Event]]
+  - relatedTo:: [[User Engagement]]
+  - relatedTo:: [[Content Distribution]]
+  - dependsOn:: [[Content Creation]]
+  - bridgesTo:: [[Creator Economy]]
+  - implements:: [[Gamification]]
+- ### Provenance
+  - updated:: 2026-06-15

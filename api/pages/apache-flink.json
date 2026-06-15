@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:apache-flink",
+  "title": "Apache Flink",
+  "slug": "apache-flink",
+  "public": true,
+  "classIri": "urn:ngm:class:apache-flink",
+  "domain": "infrastructure",
+  "definition": "Apache Flink is an open-source distributed engine for stateful computations over unbounded and bounded data streams. It provides a unified runtime that treats batch processing as a special case of streaming, with event-time semantics, sophisticated windowing, and exactly-once state consistency backed by distributed snapshots. Flink is widely used for low-latency, high-throughput stream processing in real-time analytics, event-driven applications, and continuous data pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stream-processing",
+      "label": "Stream Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-analytics",
+        "label": "Real-Time Analytics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Distributed Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ]
+}

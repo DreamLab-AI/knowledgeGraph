@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:graph-embedding",
+  "title": "Graph Embedding",
+  "slug": "graph-embedding",
+  "public": true,
+  "classIri": "urn:ngm:class:graph-embedding",
+  "domain": "ai",
+  "definition": "Graph embedding is a family of representation-learning techniques that map the nodes, edges, or whole subgraphs of a graph into a continuous low-dimensional vector space while preserving structural and relational properties. The learned vectors place topologically or semantically similar elements close together, enabling machine-learning models to operate on graph-structured data. Methods range from random-walk approaches to neural graph encoders.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:random-walk",
+        "label": "Random Walk"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:link-prediction",
+        "label": "Link Prediction"
+      },
+      {
+        "id": "urn:ngm:class:node-classification",
+        "label": "Node Classification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:random-walk",
+        "label": "Random Walk"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      },
+      {
+        "id": "urn:ngm:class:word-embedding",
+        "label": "Word Embedding"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    }
+  ]
+}

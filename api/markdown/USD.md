@@ -63,12 +63,6 @@ public:: true
     "label": "Fiat Currency"
   },
   "relations": {
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:bretton-woods-system",
-        "label": "Bretton Woods System"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:central-bank",
@@ -91,12 +85,6 @@ public:: true
       {
         "@id": "urn:ngm:class:stablecoin",
         "label": "Stablecoin"
-      }
-    ],
-    "dependsOn": [
-      {
-        "@id": "urn:ngm:class:federal-reserve",
-        "label": "Federal Reserve"
       }
     ],
     "supports": [

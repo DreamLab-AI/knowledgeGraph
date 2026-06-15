@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:patch-management",
+  "title": "Patch Management",
+  "slug": "patch-management",
+  "public": true,
+  "classIri": "urn:ngm:class:patch-management",
+  "domain": "security",
+  "definition": "Patch management is the systematic process of acquiring, testing, prioritising, and deploying software updates across an organisation's systems to remediate vulnerabilities and defects. It tracks asset inventory and known vulnerabilities, schedules and stages patches to balance risk against operational disruption, and verifies that fixes are applied. Effective patch management is a core control for reducing the window during which known exploits can be used.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:vulnerability-management",
+      "label": "Vulnerability Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:security-operations",
+        "label": "Security Operations"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:nist",
+        "label": "NIST"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

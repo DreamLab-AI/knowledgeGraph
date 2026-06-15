@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:gig-economy",
+  "title": "Gig Economy",
+  "slug": "gig-economy",
+  "public": true,
+  "classIri": "urn:ngm:class:gig-economy",
+  "domain": "finance",
+  "definition": "The gig economy is a labour market structured around short-term, task-based, and on-demand work mediated largely by digital platforms, rather than long-term salaried employment. Workers are typically engaged as independent contractors, gaining flexibility and autonomy while bearing income volatility and reduced access to traditional employment protections. It is enabled by platform technology that matches supply and demand at scale and managed through algorithmic coordination, raising ongoing questions about worker classification and social protection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:platform-economy",
+      "label": "Platform Economy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:universal-basic-income",
+        "label": "Universal Basic Income"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:payment-service-provider",
+        "label": "Payment Service Provider"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    }
+  ]
+}

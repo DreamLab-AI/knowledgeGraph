@@ -1,0 +1,45 @@
+- ### Definition
+	- [[Capital Allocation]] distributes scarce financial resources across competing uses to maximise risk-adjusted return or strategic value.
+	- It is a core function of [[Investment Management]] and is operationalised through [[Portfolio Management]] and [[Risk Management]].
+	- Well-functioning allocation underpins [[Capital Efficiency]] and supports efficient [[Price Discovery]].
+- ### Overview
+	- At the firm level, capital allocation covers how managers reinvest in operations, pursue acquisitions, repay debt or return cash to shareholders.
+	- At the market level, it concerns how savings are channelled through intermediaries and markets towards the most productive investments.
+	- Decisions weigh expected return, risk, cost of capital and strategic fit, frequently under uncertainty and resource constraints.
+	- The quality of capital allocation is a primary driver of long-run firm value and of aggregate economic productivity.
+- ### Key aspects
+	- Evaluation of competing investment opportunities on a risk-adjusted basis.
+	- Trade-offs between reinvestment, distribution and deleveraging.
+	- Cost of capital as the hurdle for acceptable returns.
+	- Diversification and risk budgeting across the portfolio.
+	- Alignment of allocation with strategy and constraints.
+- ### Mechanisms
+	- Discounted-cash-flow and net-present-value appraisal of projects.
+	- Hurdle rates and capital-rationing rules.
+	- Portfolio construction and rebalancing across asset classes.
+	- Scenario analysis and stress testing of allocation decisions.
+	- Performance attribution feeding back into future allocation.
+- ### Applications
+	- Corporate capital budgeting and treasury management.
+	- Asset-management and fund construction.
+	- Bank balance-sheet and regulatory-capital deployment.
+	- Venture and private-equity portfolio decisions.
+	- Sovereign and endowment long-horizon investment.
+- ### Relationships
+	- subClassOf:: [[Investment Management]]
+	- enables:: [[Capital Efficiency]]
+	- enables:: [[Price Discovery]]
+	- requires:: [[Risk Management]]
+	- requires:: [[Portfolio Management]]
+	- uses:: [[Resource Allocation]]
+	- supports:: [[Capital Markets]]
+	- dependsOn:: [[Liquidity]]
+	- partOf:: [[Investment Management]]
+	- implements:: [[Portfolio Management]]
+	- bridgesTo:: [[Financial Services]]
+	- relatedTo:: [[Financial System]]
+	- relatedTo:: [[Risk Management]]
+- ### Provenance
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation
+	- updated:: 2026-06-15

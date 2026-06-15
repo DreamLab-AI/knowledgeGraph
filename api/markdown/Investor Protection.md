@@ -89,10 +89,6 @@ public:: true
         "label": "Market Integrity"
       },
       {
-        "@id": "urn:ngm:class:investor-confidence",
-        "label": "Investor Confidence"
-      },
-      {
         "@id": "urn:ngm:class:financial-inclusion",
         "label": "Financial Inclusion"
       }

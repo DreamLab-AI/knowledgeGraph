@@ -1,0 +1,49 @@
+- ### Definition
+- Edge deployment is the practice of running machine learning models on or near the devices where data is generated, rather than in a centralised cloud.
+- It reduces inference [[Latency]], preserves bandwidth and improves privacy by keeping data local.
+- It typically depends on [[Model Compression]] to fit within tight compute, memory and power budgets.
+- It is the device-side complement of cloud-centred [[Model Serving]].
+- ### Overview
+- Edge deployment shifts inference from remote data centres to gateways, phones, cameras, vehicles and embedded controllers, removing the round trip to the cloud.
+- Local execution yields predictable low latency, continued operation when connectivity is poor, and stronger privacy because raw data need not leave the device.
+- The constraint is that edge hardware offers far less compute, memory and energy than cloud accelerators, so models must be optimised aggressively before they will fit.
+- Techniques such as pruning, quantisation and distillation, combined with hardware-aware compilation and runtimes, make large models tractable on small targets.
+- ### Key aspects
+- Local inference close to the data source.
+- Hardware constraints on compute, memory and power.
+- Reliance on model compression and optimisation.
+- Privacy and resilience benefits from local processing.
+- Lifecycle management of models across fleets of devices.
+- ### Mechanisms
+- Model compression through pruning, quantisation and distillation.
+- Conversion to portable runtimes and formats such as ONNX.
+- Hardware-aware compilation targeting NPUs, DSPs and microcontrollers.
+- Over-the-air model updates and monitoring via MLOps pipelines.
+- ### Applications
+- On-device computer vision in cameras and smartphones.
+- Predictive maintenance and control in industrial IoT.
+- Driver assistance and perception in vehicles.
+- Privacy-preserving inference paired with federated learning.
+- ### Relationships
+- enables:: [[On-Device AI]]
+- enables:: [[Edge AI]]
+- enables:: [[Ultra-Low Latency]]
+- supports:: [[TinyML]]
+- supports:: [[Inference]]
+- supports:: [[Federated Learning]]
+- requires:: [[Model Compression]]
+- requires:: [[Pruning]]
+- requires:: [[Model Quantization]]
+- dependsOn:: [[Edge Computing]]
+- dependsOn:: [[Mobile Edge Computing]]
+- uses:: [[ONNX]]
+- uses:: [[MLOps]]
+- contrastsWith:: [[Model Serving]]
+- relatedTo:: [[Machine Learning Model]]
+- relatedTo:: [[Latency]]
+- relatedTo:: [[Mobile Computing]]
+- bridgesTo:: [[Internet of Things]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

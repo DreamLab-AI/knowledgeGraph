@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:task-space-control",
+  "title": "Task Space Control",
+  "slug": "task-space-control",
+  "public": true,
+  "classIri": "urn:ngm:class:task-space-control",
+  "domain": "robotics",
+  "definition": "Task space control, also called operational space control, regulates a robot's end-effector directly in Cartesian task coordinates rather than in joint space. Control laws are formulated in terms of end-effector position, orientation and force, with the manipulator Jacobian mapping task-space commands to joint actuation. This approach simplifies specification of interaction tasks such as following a path, applying a force or maintaining compliance against the environment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-control",
+      "label": "Robot Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kinematics-model",
+        "label": "Kinematics Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:closed-loop-control",
+        "label": "Closed-Loop Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:end-effector",
+        "label": "End Effector"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trajectory-control",
+        "label": "Trajectory Control"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    }
+  ]
+}

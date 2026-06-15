@@ -38,10 +38,6 @@ alias:: Open AI
         "label": "GPT"
       },
       {
-        "@id": "urn:ngm:class:chatgpt",
-        "label": "ChatGPT"
-      },
-      {
         "@id": "urn:ngm:class:dall-e-3",
         "label": "DALL-E"
       },
@@ -110,7 +106,7 @@ alias:: Open AI
         "label": "Compute Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:microsoft-azure",
+        "@id": "urn:ngm:class:azure",
         "label": "Microsoft Azure"
       }
     ],

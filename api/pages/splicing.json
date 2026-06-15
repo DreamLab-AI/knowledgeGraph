@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:splicing",
+  "title": "Splicing",
+  "slug": "splicing",
+  "public": true,
+  "classIri": "urn:ngm:class:splicing",
+  "domain": "blockchain",
+  "definition": "Splicing is a Lightning Network operation that resizes an existing payment channel by adding or removing on-chain funds without closing and reopening it, preserving the channel's state and routing history. A splice-in increases capacity by committing additional bitcoin, while a splice-out withdraws funds to an on-chain address, both executed through a single funding transaction. This keeps the channel continuously available and reduces the on-chain cost and downtime of channel management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-channel",
+      "label": "Payment Channel"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:on-chain-transaction",
+        "label": "On-Chain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:core-lightning",
+        "label": "Core Lightning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lightning-network",
+      "label": "Lightning Network"
+    }
+  ]
+}

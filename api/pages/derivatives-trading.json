@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:derivatives-trading",
+  "title": "Derivatives Trading",
+  "slug": "derivatives-trading",
+  "public": true,
+  "classIri": "urn:ngm:class:derivatives-trading",
+  "domain": "blockchain",
+  "definition": "Derivatives trading is the buying and selling of financial contracts whose value is derived from an underlying asset, index or rate, such as futures, options, swaps and perpetual contracts. Traders use these instruments to hedge exposure, gain leveraged directional exposure or speculate on price movements without holding the underlying. In decentralised finance, derivatives are implemented through smart contracts that handle margin, settlement and liquidation on-chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset-trading",
+      "label": "Digital Asset Trading"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-trading",
+        "label": "Digital Asset Trading"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

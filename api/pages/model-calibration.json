@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:model-calibration",
+  "title": "Model Calibration",
+  "slug": "model-calibration",
+  "public": true,
+  "classIri": "urn:ngm:class:model-calibration",
+  "domain": "machine-learning",
+  "definition": "Model calibration is the process of ensuring that the probabilities a predictive model outputs reflect the true likelihood of outcomes, so that, for example, events predicted with 70 per cent confidence occur roughly 70 per cent of the time. A well-calibrated model produces reliable confidence estimates, which is essential when predictions inform risk-sensitive decisions. Calibration is assessed with reliability diagrams and metrics such as expected calibration error, and corrected with post-hoc techniques that adjust a model's output probabilities without changing its rankings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "calculation-parameters",
+      "label": "Calculation Parameters"
+    }
+  ]
+}

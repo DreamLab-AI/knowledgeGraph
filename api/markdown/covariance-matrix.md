@@ -1,0 +1,35 @@
+- ### Definition
+  - A symmetric matrix of pairwise covariances summarising the spread of a multivariate [[Probability Distribution]].
+  - Built with [[Linear Algebra]] and central to [[Bayesian Inference]].
+  - Diagonal holds variances; off-diagonal entries encode linear dependence.
+- ### Overview
+  - Positive semi-definite, enabling eigen-decomposition that reveals principal directions of variance.
+  - Defines the shape of a [[Gaussian Distribution]] together with its mean vector.
+  - Estimated from samples and regularised when data are scarce relative to dimension.
+- ### Key aspects
+  - Eigenvectors give principal axes used by [[Principal Component Analysis]].
+  - Conditioning and invertibility affect numerical stability of estimators.
+  - Shrinkage and structured estimators improve robustness in high dimensions.
+  - Updated recursively inside state estimators such as the [[Kalman Filter]].
+- ### Applications
+  - Dimensionality reduction and whitening of feature spaces.
+  - Uncertainty propagation in state estimation and tracking.
+  - Anomaly detection via Mahalanobis distance.
+- ### Relationships
+  - subClassOf:: [[Linear Algebra]]
+  - partOf:: [[Probability Distribution]]
+  - requires:: [[Linear Algebra]]
+  - dependsOn:: [[Gaussian Distribution]]
+  - enables:: [[Principal Component Analysis]]
+  - enables:: [[Dimensionality Reduction]]
+  - uses:: [[Feature Extraction]]
+  - supports:: [[Kalman Filter]]
+  - supports:: [[Anomaly Detection]]
+  - supports:: [[Bayesian Inference]]
+  - relatedTo:: [[Gaussian Distribution]]
+  - relatedTo:: [[Probability Distribution]]
+  - relatedTo:: [[Feature Extraction]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - generatedBy:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

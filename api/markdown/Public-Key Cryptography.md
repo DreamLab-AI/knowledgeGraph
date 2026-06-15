@@ -129,7 +129,7 @@ alias:: Public Key Cryptography
         "label": "Non-Repudiation"
       },
       {
-        "@id": "urn:ngm:class:secure-key-exchange",
+        "@id": "urn:ngm:class:key-exchange",
         "label": "Secure Key Exchange"
       }
     ],

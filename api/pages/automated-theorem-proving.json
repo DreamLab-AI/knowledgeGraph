@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:automated-theorem-proving",
+  "title": "Automated Theorem Proving",
+  "slug": "automated-theorem-proving",
+  "public": true,
+  "classIri": "urn:ngm:class:automated-theorem-proving",
+  "domain": "artificial-intelligence",
+  "definition": "Automated theorem proving is the subfield of automated reasoning concerned with constructing formal proofs of mathematical or logical statements by machine. Given a set of axioms and a conjecture expressed in a formal logic, an automated theorem prover searches for a derivation that establishes the conjecture as a consequence of the axioms. Techniques span resolution, tableaux, term rewriting and decision procedures, and underpin formal verification, mathematics and AI reasoning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automated-reasoning",
+      "label": "Automated Reasoning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

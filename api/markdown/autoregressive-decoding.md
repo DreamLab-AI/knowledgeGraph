@@ -1,0 +1,42 @@
+- ### Definition
+  - Autoregressive decoding generates a sequence token by token, with each token conditioned on the ones before it.
+  - It is the standard generation method for a [[Large Language Model]] built on the [[Transformer]] architecture.
+  - At each step it emits a distribution over the vocabulary from which a token is chosen by a [[Sampling]] or search strategy.
+- ### Overview
+  - In autoregressive generation the model factorises the probability of a sequence into a product of conditionals, predicting the next token given the prefix.
+  - Generation is inherently sequential: each token depends on the previous output, so steps cannot be trivially parallelised, which makes decoding latency a central performance concern.
+  - The [[Attention Mechanism]] lets each new token attend to the entire context, and reusing past computation via a [[KV Cache]] avoids recomputing attention over the prefix at every step.
+- ### Key aspects
+  - Step-by-step conditioning: the next token depends on all prior tokens in the sequence.
+  - Distribution and selection: a logit vector is turned into probabilities and a token is chosen.
+  - Selection strategies: greedy, [[Sampling]] with temperature and top-k or top-p, or [[Beam Search]].
+  - Caching: a [[KV Cache]] stores attention keys and values to make each step cheaper.
+  - Latency profile: dominated by many sequential, memory-bound steps rather than raw compute.
+- ### Mechanisms
+  - The model computes logits for the next position, converts them to probabilities, and selects a token.
+  - The chosen token is appended and fed back as input for the subsequent step.
+  - [[Speculative Decoding]] uses a small drafter to propose tokens that the large model verifies in parallel, reducing the number of expensive steps.
+  - Reusing cached keys and values keeps per-step cost roughly constant as the sequence grows.
+- ### Applications
+  - Text generation, chat and completion in [[Large Language Model]] products.
+  - Code generation and translation that emit tokens sequentially.
+  - Streaming generation in [[Model Serving]] systems where tokens are returned as produced.
+  - Baseline behaviour optimised by batching and speculative techniques.
+- ### Relationships
+  - partOf:: [[Large Language Model]]
+  - hasPart:: [[Sampling]]
+  - requires:: [[Transformer]]
+  - enables:: [[Large Language Model]]
+  - uses:: [[KV Cache]]
+  - dependsOn:: [[Attention Mechanism]]
+  - supports:: [[Model Serving]]
+  - implements:: [[Sampling]]
+  - relatedTo:: [[Beam Search]]
+  - relatedTo:: [[Speculative Decoding]]
+  - bridgesTo:: [[Model Serving]]
+  - contrastsWith:: [[Beam Search]]
+  - standardizedBy:: [[Transformer]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

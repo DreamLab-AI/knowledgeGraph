@@ -504,7 +504,7 @@ public:: true
         "label": "Inductive Bias"
       },
       {
-        "@id": "urn:ngm:class:neural-scaling-laws",
+        "@id": "urn:ngm:class:scaling-laws",
         "label": "Neural Scaling Laws"
       },
       {

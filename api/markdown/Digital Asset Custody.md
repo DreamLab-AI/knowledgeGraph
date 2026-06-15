@@ -52,7 +52,7 @@ public:: true
         "label": "Hardware Security Module"
       },
       {
-        "@id": "urn:ngm:class:private-key-management",
+        "@id": "urn:ngm:class:key-management",
         "label": "Private Key Management"
       },
       {

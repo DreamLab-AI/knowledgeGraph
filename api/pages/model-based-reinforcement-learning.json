@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:model-based-reinforcement-learning",
+  "title": "Model Based Reinforcement Learning",
+  "slug": "model-based-reinforcement-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:model-based-reinforcement-learning",
+  "domain": "robotics",
+  "definition": "Model-based reinforcement learning is a class of reinforcement learning in which the agent learns or is given an explicit model of the environment's dynamics and reward, then uses that model to plan or to generate simulated experience for policy improvement. By predicting future states it can be far more sample-efficient than model-free methods, at the cost of vulnerability to model error. It underpins planning algorithms, world models and many robotics control approaches.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sample-efficiency",
+        "label": "Sample Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:q-learning",
+        "label": "Q-Learning"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "id": "urn:ngm:class:model-predictive-control",
+        "label": "Model Predictive Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:phoenix-wallet",
+  "title": "Phoenix Wallet",
+  "slug": "phoenix-wallet",
+  "public": true,
+  "classIri": "urn:ngm:class:phoenix-wallet",
+  "domain": "blockchain",
+  "definition": "Phoenix is a non-custodial Bitcoin Lightning wallet developed by ACINQ, the team behind the Eclair implementation, that automates channel management so that users experience Lightning payments without manually opening or balancing channels. It keeps users in self-custody of their keys while abstracting liquidity provisioning, on-the-fly channel creation, and fee handling, making the Lightning Network accessible to non-technical mobile users.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:non-custodial-wallet",
+      "label": "Non-Custodial Wallet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:eclair",
+        "label": "Eclair"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:non-custodial-wallet",
+        "label": "Non-Custodial Wallet"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:eclair",
+        "label": "Eclair"
+      },
+      {
+        "id": "urn:ngm:class:acinq",
+        "label": "ACINQ"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

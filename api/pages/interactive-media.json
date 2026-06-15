@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:interactive-media",
+  "title": "Interactive Media",
+  "slug": "interactive-media",
+  "public": true,
+  "classIri": "urn:ngm:class:interactive-media",
+  "domain": "spatial-computing",
+  "definition": "Interactive media refers to digital content and systems that respond dynamically to user input, allowing audiences to influence, navigate, or co-create the experience rather than consume it passively. It spans video games, interactive narratives, simulations, web applications, kiosks, and immersive virtual and augmented reality experiences. Unlike linear media, interactive media couples presentation with real-time feedback loops, making user agency, interface design, and responsiveness central to its form.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-content-creation",
+      "label": "Digital Content Creation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

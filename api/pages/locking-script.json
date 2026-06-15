@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:locking-script",
+  "title": "Locking Script",
+  "slug": "locking-script",
+  "public": true,
+  "classIri": "urn:ngm:class:locking-script",
+  "domain": "blockchain",
+  "definition": "A locking script (also called scriptPubKey or an output script) is the predicate attached to a transaction output in UTXO-based blockchains that specifies the conditions under which that output may later be spent. To redeem the output, a spending transaction must supply an unlocking script whose combination with the locking script evaluates to true. Locking scripts encode spending policies ranging from a single signature to multi-signature, time locks and arbitrary smart-contract logic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:utxo-model",
+      "label": "UTXO Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:utxo-model",
+        "label": "UTXO Model"
+      },
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

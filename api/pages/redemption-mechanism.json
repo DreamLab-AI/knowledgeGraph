@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:redemption-mechanism",
+  "title": "Redemption Mechanism",
+  "slug": "redemption-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:redemption-mechanism",
+  "domain": "blockchain",
+  "definition": "A redemption mechanism is the process by which a token holder can exchange a stablecoin or wrapped asset back into the underlying reserve asset it represents, such as fiat currency or collateral. It is the structural counterpart of minting and is central to maintaining a stablecoin's peg: credible redeemability allows arbitrageurs to profit from deviations between market price and par value, pulling the price back to the peg. Redemption mechanisms vary from direct par redemption with the issuer to on-chain burn-and-release contracts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:burning",
+        "label": "Burning"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      },
+      {
+        "id": "urn:ngm:class:reserve",
+        "label": "Reserve"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:peg",
+        "label": "Peg"
+      },
+      {
+        "id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:minting",
+        "label": "Minting"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:usdc",
+        "label": "USDC"
+      },
+      {
+        "id": "urn:ngm:class:tether",
+        "label": "Tether"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-stablecoin",
+        "label": "Algorithmic Stablecoin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    }
+  ]
+}

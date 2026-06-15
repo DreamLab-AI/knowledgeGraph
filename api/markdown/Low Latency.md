@@ -59,7 +59,7 @@ alias:: low-latency
         "label": "High-Frequency Trading"
       },
       {
-        "@id": "urn:ngm:class:autonomous-robotics",
+        "@id": "urn:ngm:class:robotics",
         "label": "Autonomous Robotics"
       },
       {

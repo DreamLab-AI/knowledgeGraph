@@ -50,7 +50,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:latency-management",
+        "id": "urn:ngm:class:latency-management-protocol",
         "label": "Latency Management"
       },
       {
@@ -119,7 +119,7 @@
         "label": "IETF"
       },
       {
-        "id": "urn:ngm:class:ieee-802",
+        "id": "urn:ngm:class:ieee-802-x",
         "label": "IEEE 802"
       }
     ],

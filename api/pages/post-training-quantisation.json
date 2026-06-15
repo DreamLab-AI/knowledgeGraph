@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:post-training-quantisation",
+  "title": "Post Training Quantisation",
+  "slug": "post-training-quantisation",
+  "public": true,
+  "classIri": "urn:ngm:class:post-training-quantisation",
+  "domain": "machine-learning",
+  "definition": "Post-training quantisation (PTQ) converts a trained full-precision neural network to a lower-precision representation, typically 8-bit integers, without re-running the original training loop. A small calibration dataset is used to estimate the dynamic range of activations so that scale and zero-point parameters can be chosen. PTQ trades a small, usually recoverable, drop in accuracy for substantial reductions in model size and inference cost.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quantisation",
+      "label": "Quantisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-neural-network",
+        "label": "Deep Neural Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Neural Network Quantisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:model-pruning-for-edge-deployment",
+        "label": "Model Pruning for Edge Deployment"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:inference-compute",
+        "label": "Inference Compute"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:model-compression-for-edge",
+        "label": "Model Compression for Edge"
+      },
+      {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ]
+}

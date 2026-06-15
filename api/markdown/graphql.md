@@ -1,0 +1,36 @@
+- ### Definition
+  - [[Graphql]] is a query language and runtime for APIs in which clients request exactly the data they need against a typed [[Schema]].
+  - A single endpoint exposes a graph of types resolved server-side, avoiding the over- and under-fetching of fixed [[REST]] endpoints.
+  - It is a prominent [[API Design]] style served over [[HTTP]].
+- ### Overview
+  - In GraphQL the client declares the precise shape of the response, and the server returns just that, no more and no less.
+  - The schema is the contract: a strongly typed graph of object types, fields and relationships that the API exposes.
+  - Resolvers attach to fields and fetch the underlying data, composing results from databases, services or other APIs.
+  - Beyond reads, mutations change data and subscriptions push real-time updates over a persistent connection.
+- ### Key aspects
+  - Declarative queries: clients specify needed fields, eliminating round trips and excess payload.
+  - Strong typing and introspection: the schema is self-describing, powering tooling and code generation.
+  - Single endpoint: one URL serves the whole graph, unlike many fixed REST resources.
+  - Trade-offs: caching and rate limiting are harder than with cache-friendly REST.
+- ### Applications
+  - Mobile and web clients minimising bandwidth by fetching only required fields.
+  - API gateways aggregating multiple backend services behind one graph.
+  - Real-time features via subscriptions, such as live feeds and notifications.
+  - Developer platforms exposing flexible, introspectable data access.
+- ### Relationships
+  - partOf:: [[API Design]]
+  - implements:: [[API Design]]
+  - uses:: [[HTTP]]
+  - uses:: [[Schema]]
+  - hasPart:: [[Schema]]
+  - requires:: [[Client-Server Architecture]]
+  - enables:: [[Interoperability]]
+  - supports:: [[Microservices]]
+  - contrastsWith:: [[REST]]
+  - dependsOn:: [[Schema]]
+  - relatedTo:: [[Web Standards]]
+  - bridgesTo:: [[Microservices]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

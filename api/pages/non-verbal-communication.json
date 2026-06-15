@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:non-verbal-communication",
+  "title": "Non Verbal Communication",
+  "slug": "non-verbal-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:non-verbal-communication",
+  "domain": "spatial-computing",
+  "definition": "Non-verbal communication is the transmission of meaning through channels other than spoken or written words, including gesture, facial expression, gaze, posture, and interpersonal distance. It conveys emotion, intent, and social context that frequently carries more weight than the literal verbal message. In spatial computing and avatar-mediated environments, reproducing non-verbal cues is essential for credible co-presence and natural social interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:immersive-communication",
+      "label": "Immersive Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:proxemics",
+        "label": "Proxemics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gaze-tracking",
+        "label": "Gaze Tracking"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:co-presence",
+        "label": "Co-presence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "id": "urn:ngm:class:proxemics",
+        "label": "Proxemics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

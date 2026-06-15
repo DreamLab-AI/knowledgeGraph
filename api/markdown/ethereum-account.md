@@ -1,0 +1,36 @@
+- ### Definition
+  - An [[Ethereum]] account is the unit of state addressed by a 20-byte [[Address]].
+  - Externally owned accounts are controlled by a [[Private Key]]; contract accounts by a [[Smart Contract]].
+  - Each account carries a balance and a [[Nonce]] and is charged [[Gas]] for state changes.
+- ### Overview
+  - Account state lives in the world-state trie alongside balance, nonce, code hash, and storage root.
+  - The nonce orders an account's outgoing transactions and prevents replay.
+  - Contract accounts have no private key and act only when called by a transaction or another contract.
+- ### Key aspects
+  - Externally owned account: balance + nonce, signs transactions.
+  - Contract account: balance + nonce + code + storage.
+  - Address derivation from the public key for EOAs; from deployer address and nonce for contracts.
+  - Account abstraction blurs the EOA/contract distinction via programmable validity.
+- ### Applications
+  - Holding and transferring Ether and tokens.
+  - Deploying and interacting with smart contracts.
+  - Identity and authorisation in decentralised applications.
+  - Multi-signature and smart-contract wallets.
+- ### Relationships
+  - partOf:: [[Ethereum]]
+  - partOf:: [[Ledger]]
+  - requires:: [[Private Key]]
+  - requires:: [[Address]]
+  - requires:: [[Gas]]
+  - hasPart:: [[Nonce]]
+  - enables:: [[Transaction]]
+  - enables:: [[Smart Contract]]
+  - uses:: [[ECDSA]]
+  - uses:: [[Key Management]]
+  - relatedTo:: [[Wallet]]
+  - relatedTo:: [[Cryptocurrency]]
+  - relatedTo:: [[Proof Of Stake]]
+  - dependsOn:: [[Blockchain]]
+  - bridgesTo:: [[Account Abstraction]]
+- ### Provenance
+  - updated:: 2026-06-15

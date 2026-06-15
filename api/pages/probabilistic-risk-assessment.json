@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:probabilistic-risk-assessment",
+  "title": "Probabilistic Risk Assessment",
+  "slug": "probabilistic-risk-assessment",
+  "public": true,
+  "classIri": "urn:ngm:class:probabilistic-risk-assessment",
+  "domain": "infrastructure",
+  "definition": "Probabilistic Risk Assessment (PRA) is a systematic methodology for quantifying the likelihood and consequences of adverse events in complex engineered systems. It enumerates accident scenarios, estimates the probability of each contributing failure and combines them to produce numeric risk measures and confidence bounds. PRA underpins safety-critical decision-making in domains such as nuclear, aerospace and critical infrastructure where rare, high-consequence failures must be rigorously characterised.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:safety-engineering",
+        "label": "Safety Engineering"
+      },
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safety-engineering",
+        "label": "Safety Engineering"
+      },
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

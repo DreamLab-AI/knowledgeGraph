@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:proprioception",
+  "title": "Proprioception",
+  "slug": "proprioception",
+  "public": true,
+  "classIri": "urn:ngm:class:proprioception",
+  "domain": "robotics",
+  "definition": "Proprioception is a robot's internal sense of its own configuration and motion, derived from sensors that report joint angles, velocities, motor torques, body orientation and contact forces. Distinct from exteroceptive sensing of the external world, proprioceptive feedback lets a system estimate its pose and dynamics without external references, which is essential for stable balance, compliant interaction and dead-reckoning. It provides the fast, low-latency state signal that closed-loop motor controllers depend upon.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-perception",
+      "label": "Robot Perception"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    }
+  ]
+}

@@ -64,10 +64,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:attribution",
-        "label": "Attribution"
-      },
-      {
         "@id": "urn:ngm:class:e-discovery",
         "label": "E-Discovery"
       },

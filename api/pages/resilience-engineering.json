@@ -1,0 +1,124 @@
+{
+  "id": "urn:visionflow:page:resilience-engineering",
+  "title": "Resilience Engineering",
+  "slug": "resilience-engineering",
+  "public": true,
+  "classIri": "urn:ngm:class:resilience-engineering",
+  "domain": "infrastructure",
+  "definition": "Resilience engineering is the discipline concerned with how complex socio-technical systems sustain required operation under expected and unexpected disturbances, and how they adapt, degrade gracefully, and recover. Rather than treating failure solely as a deviation to be eliminated, it studies the adaptive capacities that let systems anticipate, monitor, respond to, and learn from disruption. In computing it informs architectures and operational practices that bend rather than break under load spikes, partial outages, and cascading faults.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reliability-engineering",
+      "label": "Reliability Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

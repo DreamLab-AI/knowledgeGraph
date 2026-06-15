@@ -648,7 +648,7 @@ public:: true
         "label": "Homeostasis"
       },
       {
-        "@id": "urn:ngm:class:model-alignment",
+        "@id": "urn:ngm:class:ai-alignment",
         "label": "Model Alignment"
       },
       {

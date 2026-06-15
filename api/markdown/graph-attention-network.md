@@ -1,0 +1,37 @@
+- ### Definition
+  - A graph attention network is a graph neural network architecture that aggregates information from a node's neighbours using learned attention coefficients, allowing the model to weight each neighbour's contribution according to its relevance. By replacing fixed or degree-normalised aggregation with attention, it adapts to local structure without requiring knowledge of the full graph in advance. Multi-head attention stabilises learning and lets the model capture several relational patterns simultaneously.
+  - Related core concepts: [[Graph Neural Network]] [[Attention Mechanism]] [[Message Passing]] [[Node Classification]] [[Graph Convolutional Network]]
+- ### Overview
+  - Graph attention networks bring the attention mechanism into the message-passing framework of graph neural networks. Each node computes attention weights over its neighbours, then aggregates their features as a weighted sum, learning which connections matter for the task. This inductive, masked-attention formulation generalises to unseen graph structures and supports node- and edge-level prediction.
+- ### Mechanisms
+  - Attention coefficients weight neighbour contributions during aggregation
+  - Masked attention restricts each node to its local neighbourhood
+  - Multi-head attention captures multiple relational patterns and stabilises training
+  - Inductive formulation generalises to graphs unseen during training
+  - Stacked layers expand the effective receptive field over the graph
+- ### Applications
+  - Node classification in citation, social, and biological networks
+  - Link prediction and recommendation over relational data
+  - Molecular property prediction on graph-structured chemistry
+  - Knowledge-graph reasoning and entity relationship modelling
+- ### Relationships
+  - hasPart:: [[Attention Mechanism]]
+  - hasPart:: [[Message Passing]]
+  - bridgesTo:: [[Attention Mechanism]]
+  - relatedTo:: [[Graph Neural Network]]
+  - relatedTo:: [[Graph Convolutional Network]]
+  - relatedTo:: [[Self-Attention]]
+  - uses:: [[Message Passing]]
+  - uses:: [[Self-Attention]]
+  - implements:: [[Message Passing]]
+  - enables:: [[Node Classification]]
+  - enables:: [[Link Prediction]]
+  - supports:: [[Node Classification]]
+  - contrastsWith:: [[Graph Convolutional Network]]
+  - requires:: [[Deep Learning]]
+  - partOf:: [[Graph Neural Network]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

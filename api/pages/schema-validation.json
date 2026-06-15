@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:schema-validation",
+  "title": "Schema Validation",
+  "slug": "schema-validation",
+  "public": true,
+  "classIri": "urn:ngm:class:schema-validation",
+  "domain": "standards",
+  "definition": "Schema validation is the process of checking that a data instance conforms to a formally declared structure, asserting required fields, types, value constraints and relationships before the data is accepted or processed. It uses a schema language such as JSON Schema or XML Schema to define the contract and a validator to report conformance and errors. Schema validation enforces data integrity at system boundaries and underpins reliable interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-validation",
+      "label": "Data Validation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:ngm:class:data-contract",
+        "label": "Data Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      },
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-schema",
+        "label": "Data Schema"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:asyncapi",
+        "label": "AsyncAPI"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      },
+      {
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:api-specification",
+        "label": "API Specification"
+      },
+      {
+        "id": "urn:ngm:class:data-contract",
+        "label": "Data Contract"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

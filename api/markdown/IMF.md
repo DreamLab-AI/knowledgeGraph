@@ -32,10 +32,6 @@ public:: true
   "relations": {
     "partOf": [
       {
-        "@id": "urn:ngm:class:bretton-woods-system",
-        "label": "Bretton Woods System"
-      },
-      {
         "@id": "urn:ngm:class:international-financial-architecture",
         "label": "International Financial Architecture"
       }
@@ -94,12 +90,6 @@ public:: true
       {
         "@id": "urn:ngm:class:macroprudential-policy",
         "label": "Macroprudential Policy"
-      }
-    ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:world-bank",
-        "label": "World Bank"
       }
     ],
     "relatedTo": [

@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:jurisdiction",
+  "title": "Jurisdiction",
+  "slug": "jurisdiction",
+  "public": true,
+  "classIri": "urn:ngm:class:jurisdiction",
+  "domain": "governance",
+  "definition": "Jurisdiction is the authority of a legal or governmental body to interpret and apply law, exercise control, and adjudicate disputes within a defined territorial, personal, or subject-matter scope. In digital systems it determines which national or regional laws govern data, transactions, and conduct, and which courts or regulators may assert competence. Conflicts arise when data, parties, or services span multiple jurisdictions with divergent legal regimes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:legal-framework",
+      "label": "Legal Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-data-transfer",
+        "label": "Cross-Border Data Transfer"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

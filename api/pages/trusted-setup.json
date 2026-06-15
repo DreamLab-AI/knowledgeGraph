@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:trusted-setup",
+  "title": "Trusted Setup",
+  "slug": "trusted-setup",
+  "public": true,
+  "classIri": "urn:ngm:class:trusted-setup",
+  "domain": "security",
+  "definition": "A trusted setup is a one-time procedure that generates the public parameters (a common reference string) required by certain cryptographic protocols, notably succinct zero-knowledge proof systems. The procedure produces secret randomness, often called toxic waste, that must be irrecoverably destroyed; if it leaks, an adversary can forge proofs. Multi-party ceremonies distribute trust so that the setup remains sound as long as a single participant behaves honestly.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "ZK-SNARK"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      },
+      {
+        "id": "urn:ngm:class:kzg-commitment",
+        "label": "KZG Commitment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:plonk",
+        "label": "PLONK"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

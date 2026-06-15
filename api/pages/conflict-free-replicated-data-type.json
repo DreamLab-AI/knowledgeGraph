@@ -1,0 +1,121 @@
+{
+  "id": "urn:visionflow:page:conflict-free-replicated-data-type",
+  "title": "Conflict Free Replicated Data Type",
+  "slug": "conflict-free-replicated-data-type",
+  "public": true,
+  "classIri": "urn:ngm:class:conflict-free-replicated-data-type",
+  "domain": "distributed-collaboration",
+  "definition": "A conflict-free replicated data type (CRDT) is a data structure that can be replicated across many nodes and updated independently, with mathematical guarantees that all replicas converge to the same state once they have exchanged updates. By designing operations to be commutative or merges to be monotonic, CRDTs avoid the need for coordination or central conflict resolution. They are a foundational technique for offline-first and real-time collaborative distributed systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:eventual-consistency",
+      "label": "Eventual Consistency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "id": "urn:ngm:class:state-synchronisation",
+        "label": "State Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:state-synchronisation",
+        "label": "State Synchronisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ]
+}

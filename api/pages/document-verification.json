@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:document-verification",
+  "title": "Document Verification",
+  "slug": "document-verification",
+  "public": true,
+  "classIri": "urn:ngm:class:document-verification",
+  "domain": "finance",
+  "definition": "Document verification is the process of confirming that an identity or supporting document presented by a customer is authentic, unaltered, and belongs to the presenting individual. In financial onboarding it combines optical capture, security-feature and template checks, data extraction, and cross-referencing against issuing-authority records or biometric liveness, forming a core step within know-your-customer and anti-money-laundering controls.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:know-your-customer",
+      "label": "Know Your Customer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:onboarding",
+        "label": "Onboarding"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:aml",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:onboarding",
+        "label": "Onboarding"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:verifiable-credential",
+        "label": "Verifiable Credential"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:monocular-depth-estimation",
+  "title": "Monocular Depth Estimation",
+  "slug": "monocular-depth-estimation",
+  "public": true,
+  "classIri": "urn:ngm:class:monocular-depth-estimation",
+  "domain": "spatial-computing",
+  "definition": "Monocular depth estimation is the task of inferring the distance of scene points from a single image, recovering a depth map without the explicit stereo disparity available from multiple cameras. Because depth from one view is inherently ambiguous, modern approaches learn statistical and contextual cues such as texture gradients, object size, and perspective, typically using deep convolutional or transformer networks trained on labelled or self-supervised data. It contrasts with stereo and active depth sensing while offering a low-cost route to three-dimensional perception.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:depth-estimation",
+      "label": "Depth Estimation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stereo-vision",
+        "label": "Stereo Vision"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure From Motion"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    }
+  ]
+}

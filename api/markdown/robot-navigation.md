@@ -1,0 +1,41 @@
+- ### Definition
+  - Robot navigation lets a mobile robot localise, plan, and move to a goal safely.
+  - It is a core capability of [[Robotics]] and [[Mobile Robot]] systems.
+  - It integrates [[Localization]], [[Mapping]], and [[Path Planning]].
+  - It relies on [[Sensor Fusion]] and [[SLAM]] in unknown environments.
+- ### Overview
+  - Navigation fuses sensing, localisation, planning, and control into a closed loop.
+  - Robots build or use maps to reason about free space and obstacles.
+  - Path and motion planning translate goals into safe, feasible trajectories.
+  - Dynamic environments demand continuous re-planning and obstacle avoidance.
+- ### Key aspects
+  - Localisation estimates robot pose from sensor data and prior maps.
+  - Mapping constructs spatial models, often jointly with localisation via SLAM.
+  - Path planning finds collision-free global routes toward the goal.
+  - Motion planning and control produce executable, kinematically feasible trajectories.
+- ### Applications
+  - Autonomous mobile robots in warehouses and logistics.
+  - Service and delivery robots operating in human environments.
+  - Field and inspection robots traversing unstructured terrain.
+  - Indoor wheeled platforms performing repeatable transport tasks.
+- ### Relationships
+  - enables:: [[Autonomous Navigation]]
+  - enables:: [[Mobile Robot]]
+  - uses:: [[SLAM]]
+  - uses:: [[Sensor Fusion]]
+  - uses:: [[LiDAR]]
+  - uses:: [[Odometry]]
+  - requires:: [[Localization]]
+  - requires:: [[Mapping]]
+  - requires:: [[Path Planning]]
+  - dependsOn:: [[Robot Perception]]
+  - dependsOn:: [[Environmental Mapping]]
+  - implements:: [[Motion Planning]]
+  - supports:: [[Wheeled Mobile Robot]]
+  - supports:: [[Manipulation]]
+  - relatedTo:: [[Path Planning]]
+  - partOf:: [[Robotics]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

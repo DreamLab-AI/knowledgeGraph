@@ -1,0 +1,30 @@
+- ### Definition
+  - The automated adjustment of compute resources in response to demand, scaling capacity up and down by policy to balance cost and availability.
+  - Related: [[Resource Management]] [[Scalability]] [[Monitoring]] [[Cloud Computing]]
+- ### Overview
+  - Autoscaling automatically grows or shrinks an application's resource footprint to track demand.
+  - It watches signals such as CPU utilisation, request rate or queue length against policy thresholds.
+  - Horizontal autoscaling adds or removes instances; vertical autoscaling resizes individual instances.
+  - The mechanism reduces over-provisioning costs while protecting against demand spikes.
+- ### Mechanisms
+  - Metric collection and observability feeding scaling decisions.
+  - Scaling policies with thresholds, cooldowns and target tracking.
+  - Horizontal pod or instance autoscaling in container platforms.
+  - Predictive and scheduled scaling for anticipated demand patterns.
+  - Integration with load balancers to distribute traffic across new capacity.
+- ### Applications
+  - Web services absorbing variable and bursty traffic.
+  - Batch and queue workers scaling with backlog depth.
+  - Cost optimisation by releasing idle capacity during quiet periods.
+  - Resilient cloud-native deployments maintaining service-level objectives.
+- ### Relationships
+  - partOf:: [[Resource Management]]
+  - hasPart:: [[Monitoring]]
+  - uses:: [[Kubernetes]]
+  - enables:: [[Scalability]]
+  - supports:: [[High Availability]]
+  - relatedTo:: [[Load Balancing]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

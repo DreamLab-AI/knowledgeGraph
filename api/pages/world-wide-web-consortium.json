@@ -103,10 +103,6 @@
         "label": "Internet Engineering Task Force"
       },
       {
-        "id": "urn:ngm:class:whatwg",
-        "label": "WHATWG"
-      },
-      {
         "id": "urn:ngm:class:digital-identity-standards",
         "label": "Digital Identity Standards"
       }

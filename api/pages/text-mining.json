@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:text-mining",
+  "title": "Text Mining",
+  "slug": "text-mining",
+  "public": true,
+  "classIri": "urn:ngm:class:text-mining",
+  "domain": "artificial-intelligence",
+  "definition": "Text mining is the automated discovery of useful patterns, structure and knowledge from large collections of unstructured natural-language text. It combines natural-language processing, information retrieval and data-mining techniques to transform documents into structured representations amenable to analysis. Applications span extracting entities and relations, classifying and clustering documents, and surfacing trends across corpora too large to read manually.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

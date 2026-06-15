@@ -1,0 +1,40 @@
+- ### Definition
+  - A [[Data Silo]] is an isolated data store controlled by one team or system and largely inaccessible elsewhere.
+  - It contrasts with [[Data Integration]], which seeks to unify data across the organisation.
+  - Silos undermine [[Data Quality]] through duplication and inconsistency.
+- ### Overview
+  - Silos form when departments adopt their own tools and schemas, or when systems lack shared interfaces and ownership.
+  - The result is fragmented, redundant, and stale data that resists organisation-wide analytics and reporting.
+  - Breaking silos is the central motivation behind [[Data Integration]], [[Data Governance]], and [[Interoperability]] programmes.
+- ### Key aspects
+  - Isolation by organisational, technical, or format boundaries.
+  - Duplicated and inconsistent copies of related data.
+  - Limited discoverability and reuse across teams.
+  - A barrier to a unified [[Data Warehouse]] or analytics layer.
+- ### Mechanisms
+  - Departmental tool proliferation without shared standards.
+  - Incompatible schemas and proprietary formats.
+  - Access controls that restrict data to its originating team.
+  - Absence of a shared [[Data Catalog]] or [[Metadata Management]].
+- ### Applications
+  - Diagnosing fragmentation that [[Data Stewardship]] must remediate.
+  - Motivating integration pipelines into a [[Data Warehouse]].
+  - Framing the case for [[Interoperability]] standards.
+  - Prioritising governance to consolidate redundant stores.
+- ### Relationships
+  - contrastsWith:: [[Data Integration]]
+  - contrastsWith:: [[Data Fabric]]
+  - contrastsWith:: [[Data Mesh]]
+  - relatedTo:: [[Data Governance]]
+  - relatedTo:: [[Enterprise Data]]
+  - requires:: [[Data Quality]]
+  - partOf:: [[Data Management]]
+  - uses:: [[Metadata Management]]
+  - supports:: [[Data Warehouse]]
+  - bridgesTo:: [[Interoperability]]
+  - dependsOn:: [[Data Management]]
+  - implements:: [[Data Management]]
+- ### Provenance
+  - inferenceRule:: GapMaterialisation
+  - attributedTo:: did:nostr:ontology-mesh
+  - updated:: 2026-06-15

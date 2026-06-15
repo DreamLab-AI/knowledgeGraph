@@ -1,0 +1,40 @@
+- ### Definition
+  - Financial reporting underpins [[Treasury Management]] and [[Transparency]] across [[Blockchain]] organisations.
+  - It requires [[Compliance]], [[Regulatory Compliance]], and independent [[Audit]] assurance.
+  - It increasingly uses [[Proof Of Reserves]] attestations and relates to [[Tokenomics]] and [[Taxation]].
+- ### Overview
+  - Financial reporting translates raw transactions into standardised statements of position, performance, and cash flow that external parties can interpret and compare.
+  - Its credibility depends on adherence to accounting standards, internal controls, and independent audit assurance.
+  - Blockchain introduces continuous, cryptographically verifiable transparency, allowing reserves and balances to be attested directly on-chain alongside conventional reporting.
+- ### Key aspects
+  - Recognition, measurement, and presentation of assets, liabilities, income, and expenses.
+  - Disclosure of accounting policies, risks, and material events in supporting notes.
+  - Audit and assurance processes that validate the faithfulness of reported figures.
+  - On-chain attestations such as proof-of-reserves that complement traditional statements for digital-asset entities.
+- ### Applications
+  - Corporate annual reports and regulatory filings for listed entities.
+  - Treasury reporting and disclosures for decentralised organisations and protocols.
+  - Proof-of-reserves and on-chain transparency for exchanges and stablecoin issuers.
+- ### Relationships
+  - hasPart:: [[Disclosure]]
+  - hasPart:: [[Audit]]
+  - partOf:: [[Blockchain]]
+  - requires:: [[Compliance]]
+  - requires:: [[Regulatory Compliance]]
+  - requires:: [[Audit]]
+  - enables:: [[Transparency]]
+  - enables:: [[Treasury Management]]
+  - uses:: [[Proof Of Reserves]]
+  - uses:: [[Disclosure]]
+  - supports:: [[Transparency]]
+  - supports:: [[Treasury Management]]
+  - dependsOn:: [[Compliance]]
+  - relatedTo:: [[Tokenomics]]
+  - relatedTo:: [[Taxation]]
+  - relatedTo:: [[Regulatory Compliance]]
+  - bridgesTo:: [[Proof Of Reserves]]
+  - subClassOf:: [[Blockchain]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

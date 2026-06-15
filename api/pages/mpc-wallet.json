@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:mpc-wallet",
+  "title": "Mpc Wallet",
+  "slug": "mpc-wallet",
+  "public": true,
+  "classIri": "urn:ngm:class:mpc-wallet",
+  "domain": "blockchain",
+  "definition": "An MPC wallet is a digital wallet whose private key is split into shares held by independent parties and never reconstructed in one place, so transactions are authorised through a multi-party computation protocol that jointly produces a signature. By distributing trust across devices or institutions, it removes the single seed phrase as a single point of failure while preserving a single on-chain address. MPC wallets contrast with traditional self-custody seed wallets and with on-chain multisignature schemes by keeping the threshold logic off-chain and chain-agnostic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-wallet",
+      "label": "Digital Wallet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:multi-sig-governance",
+        "label": "Multi Sig Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:multi-party-computation",
+        "label": "Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:distributed-key-generation",
+        "label": "Distributed Key Generation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security-module",
+        "label": "Hardware Security Module"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      },
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    }
+  ]
+}

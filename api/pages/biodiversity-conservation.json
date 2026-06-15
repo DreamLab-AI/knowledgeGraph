@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:biodiversity-conservation",
+  "title": "Biodiversity Conservation",
+  "slug": "biodiversity-conservation",
+  "public": true,
+  "classIri": "urn:ngm:class:biodiversity-conservation",
+  "domain": "governance",
+  "definition": "Biodiversity conservation is the protection, restoration and sustainable management of the variety of life on Earth \u2014 genes, species, habitats and ecosystems \u2014 to maintain ecological function and resilience. It combines protected areas, species recovery, habitat restoration, sustainable use and policy instruments, increasingly informed by monitoring data and remote sensing. As a pillar of environmental sustainability, it is closely linked to climate change mitigation, ecosystem services and emerging biodiversity finance markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:environmental-sustainability",
+      "label": "Environmental Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:climate-change-mitigation",
+        "label": "Climate Change Mitigation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:climate-change-mitigation",
+        "label": "Climate Change Mitigation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:carbon-credits",
+        "label": "Carbon Credits"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:climate-finance",
+        "label": "Climate Finance"
+      },
+      {
+        "id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    }
+  ]
+}

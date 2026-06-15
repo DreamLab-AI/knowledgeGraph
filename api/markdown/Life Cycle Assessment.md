@@ -104,7 +104,7 @@ alias:: LifeCycleAssessment
         "label": "Supply Chain Traceability"
       },
       {
-        "@id": "urn:ngm:class:environmental-impact-assessment",
+        "@id": "urn:ngm:class:environmental-assessment",
         "label": "Environmental Impact Assessment"
       },
       {
@@ -128,7 +128,7 @@ alias:: LifeCycleAssessment
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:environmental-impact-assessment",
+        "@id": "urn:ngm:class:environmental-assessment",
         "label": "Environmental Impact Assessment"
       },
       {

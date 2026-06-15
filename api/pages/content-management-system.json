@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:content-management-system",
+  "title": "Content Management System",
+  "slug": "content-management-system",
+  "public": true,
+  "classIri": "urn:ngm:class:content-management-system",
+  "domain": "spatial-computing",
+  "definition": "A Content Management System (CMS) is software that lets users create, store, organise, edit and publish digital content without requiring direct manipulation of underlying code. It separates content from presentation, providing authoring interfaces, versioning, access control and workflow so that non-technical contributors can manage websites and applications. Modern variants include headless systems that expose content through APIs for delivery across many front ends, including spatial and immersive interfaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset-management",
+      "label": "Digital Asset Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:database",
+        "label": "Database"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:database",
+        "label": "Database"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-management",
+        "label": "Digital Asset Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "tourism-metaverse",
+      "label": "Tourism Metaverse"
+    }
+  ]
+}

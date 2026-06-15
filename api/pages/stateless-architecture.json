@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:stateless-architecture",
+  "title": "Stateless Architecture",
+  "slug": "stateless-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:stateless-architecture",
+  "domain": "infrastructure",
+  "definition": "Stateless architecture is a design approach in which each request carries all the information needed to process it, and the serving component retains no client session state between requests. By externalising state to caches, databases, or tokens, stateless services can be freely replicated, replaced, and load-balanced, which simplifies horizontal scaling and fault recovery at the cost of pushing state management to dedicated stores.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cloud-native",
+      "label": "Cloud Native"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

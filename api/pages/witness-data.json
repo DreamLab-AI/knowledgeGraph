@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:witness-data",
+  "title": "Witness Data",
+  "slug": "witness-data",
+  "public": true,
+  "classIri": "urn:ngm:class:witness-data",
+  "domain": "blockchain",
+  "definition": "Witness data is the portion of a Bitcoin transaction that contains the signatures and scripts proving authorisation to spend inputs, separated from the core transaction body by Segregated Witness. Moving this data into a distinct structure fixes transaction malleability and allows witness bytes to be discounted when computing block weight. Witness data is also the field where inscriptions such as Ordinals embed arbitrary content.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transaction",
+      "label": "Transaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:script",
+        "label": "Script"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:ordinals",
+        "label": "Ordinals"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ordinals",
+        "label": "Ordinals"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:block-size",
+        "label": "Block Size"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:ordinals",
+        "label": "Ordinals"
+      },
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

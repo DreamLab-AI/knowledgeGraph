@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:separation-of-duties",
+  "title": "Separation Of Duties",
+  "slug": "separation-of-duties",
+  "public": true,
+  "classIri": "urn:ngm:class:separation-of-duties",
+  "domain": "security",
+  "definition": "Separation of duties is a control principle that divides a sensitive task among multiple people or roles so that no single individual can complete it alone, reducing the risk of fraud, error and abuse of privilege. It requires collusion to subvert controls and is foundational to access governance, financial controls and compliance regimes. It complements least-privilege and is operationalised through role-based access control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fraud-prevention",
+        "label": "Fraud Prevention"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:role-based-access-control",
+        "label": "Role-Based Access Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:segregation-of-duties",
+        "label": "Segregation of Duties"
+      },
+      {
+        "id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    }
+  ]
+}

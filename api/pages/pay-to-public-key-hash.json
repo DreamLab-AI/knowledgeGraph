@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:pay-to-public-key-hash",
+  "title": "Pay To Public Key Hash",
+  "slug": "pay-to-public-key-hash",
+  "public": true,
+  "classIri": "urn:ngm:class:pay-to-public-key-hash",
+  "domain": "blockchain",
+  "definition": "Pay-to-Public-Key-Hash (P2PKH) is the classic Bitcoin transaction output script that locks funds to the hash of a recipient's public key rather than to the key itself. Spending requires the spender to supply both the matching public key, which is hashed and compared to the committed hash, and a valid signature over the transaction, providing privacy until spend time and shorter addresses. It is expressed in Bitcoin Script as a fixed opcode sequence and contrasts with pay-to-script-hash and witness output types.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin-script",
+      "label": "Bitcoin Script"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pay-to-script-hash",
+        "label": "Pay To Script Hash"
+      },
+      {
+        "id": "urn:ngm:class:segregated-witness",
+        "label": "Segregated Witness"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:stack-machine",
+        "label": "Stack Machine"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:unspent-transaction-output",
+        "label": "Unspent Transaction Output"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

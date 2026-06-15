@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:inter-process-communication",
+  "title": "Inter Process Communication",
+  "slug": "inter-process-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:inter-process-communication",
+  "domain": "infrastructure",
+  "definition": "Inter-process communication (IPC) is the set of mechanisms an operating system provides for separate processes to exchange data and coordinate their actions despite running in isolated address spaces. Common mechanisms include pipes, message queues, shared memory, sockets and remote procedure calls, each trading off speed, structure and scope. IPC is foundational to modular system design, microservices and any architecture composed of cooperating processes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:operating-system",
+      "label": "Operating System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:scheduler",
+        "label": "Scheduler"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:multithreading",
+        "label": "Multithreading"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shared-memory",
+        "label": "Shared Memory"
+      },
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:shared-memory",
+        "label": "Shared Memory"
+      },
+      {
+        "id": "urn:ngm:class:process",
+        "label": "Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

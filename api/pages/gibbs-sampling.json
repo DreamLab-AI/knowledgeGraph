@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:gibbs-sampling",
+  "title": "Gibbs Sampling",
+  "slug": "gibbs-sampling",
+  "public": true,
+  "classIri": "urn:ngm:class:gibbs-sampling",
+  "domain": "ai",
+  "definition": "Gibbs sampling is a Markov chain Monte Carlo algorithm that draws samples from a multivariate distribution by iteratively sampling each variable from its full conditional distribution given the current values of all others. It is a special case of Metropolis-Hastings in which every proposal is accepted, and it requires the conditionals to be tractable. Gibbs sampling is widely used for posterior inference in hierarchical and graphical models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:markov-chain-monte-carlo",
+      "label": "Markov Chain Monte Carlo"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    }
+  ]
+}

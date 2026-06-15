@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:tls-handshake",
+  "title": "Tls Handshake",
+  "slug": "tls-handshake",
+  "public": true,
+  "classIri": "urn:ngm:class:tls-handshake",
+  "domain": "security",
+  "definition": "The TLS handshake is the negotiation phase of the Transport Layer Security protocol in which a client and server agree on protocol version and cipher suite, authenticate via certificates, and establish shared session keys. It combines public-key cryptography for authentication and key agreement with symmetric cryptography for the subsequent record protocol. Modern versions complete in fewer round trips and provide forward secrecy through ephemeral key exchange.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transport-layer-security",
+      "label": "Transport Layer Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mutual-tls",
+        "label": "Mutual TLS"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:diffie-hellman-key-exchange",
+        "label": "Diffie-Hellman Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

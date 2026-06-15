@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:public-trust-in-ai",
+  "title": "Public Trust In Ai",
+  "slug": "public-trust-in-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:public-trust-in-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Public trust in AI is the degree of confidence that individuals and society place in artificial-intelligence systems to behave reliably, fairly, and in their interests. It is shaped by transparency, accountability, demonstrated safety, and the alignment of systems with human values. Sustaining public trust is widely seen as a precondition for broad and beneficial adoption of AI.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trustworthy-ai",
+      "label": "Trustworthy AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

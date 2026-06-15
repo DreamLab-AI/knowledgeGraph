@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:automation-bias",
+  "title": "Automation Bias",
+  "slug": "automation-bias",
+  "public": true,
+  "classIri": "urn:ngm:class:automation-bias",
+  "domain": "governance",
+  "definition": "Automation bias is the human tendency to over-rely on automated systems, accepting their outputs uncritically and discounting contradictory information, including one's own judgement. It manifests as errors of commission, following an automated recommendation that is wrong, and errors of omission, failing to act because the system did not prompt. Driven by the perceived authority of computers and the cognitive ease of deferring, it grows with workload, trust, and system opacity. Automation bias is a central human-factors concern in the governance of decision-support systems and human-in-the-loop oversight, where it can erode the very safeguards that human supervision is meant to provide.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bias",
+      "label": "Bias"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:situational-awareness",
+        "label": "Situational Awareness"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "id": "urn:ngm:class:human-factors",
+        "label": "Human Factors"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human in the Loop"
+    }
+  ]
+}

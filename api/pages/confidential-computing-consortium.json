@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:confidential-computing-consortium",
+  "title": "Confidential Computing Consortium",
+  "slug": "confidential-computing-consortium",
+  "public": true,
+  "classIri": "urn:ngm:class:confidential-computing-consortium",
+  "domain": "security",
+  "definition": "The Confidential Computing Consortium is a Linux Foundation project that brings together hardware vendors, cloud providers and software firms to advance the adoption and standardisation of confidential computing. It defines confidential computing as protecting data in use by performing computation within a hardware-based trusted execution environment. The consortium stewards open-source projects, terminology and best practices that promote interoperable enclave technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-documentation",
+      "label": "Standards Documentation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-documentation",
+        "label": "Standards Documentation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards-documentation",
+        "label": "Standards Documentation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "confidential-computing",
+      "label": "Confidential Computing"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+- ### Definition
+  - [[Singularity Analysis]] examines configurations where the [[Jacobian Matrix]] loses rank, drawing on [[Forward Kinematics]] and informing [[Workspace Analysis]] and [[Robot Control]].
+- ### Overview
+  - Identifies configurations where the Jacobian becomes rank-deficient.
+  - At singularities the robot loses controllable Cartesian directions.
+  - Critical for conditioning, safety and trajectory feasibility.
+- ### Mechanisms
+  - Jacobian rank and determinant evaluation across the workspace.
+  - Boundary versus internal singularity classification.
+  - Manipulability measures and conditioning indices.
+  - Singularity-avoidance and damped least-squares strategies.
+- ### Applications
+  - Safe trajectory planning for robotic manipulators.
+  - Workspace design and robot selection.
+  - Redundancy resolution in redundant arms.
+  - Control law design near degenerate configurations.
+- ### Relationships
+  - hasPart:: [[Jacobian Matrix]]
+  - relatedTo:: [[Workspace Analysis]]
+  - relatedTo:: [[Forward Kinematics]]
+  - relatedTo:: [[Singularity]]
+  - enables:: [[Motion Planning]]
+  - enables:: [[Trajectory Planning]]
+  - partOf:: [[Kinematics]]
+  - uses:: [[Linear Algebra]]
+  - requires:: [[Jacobian Matrix]]
+  - requires:: [[Kinematics Model]]
+  - supports:: [[Robot Control]]
+  - supports:: [[Redundancy]]
+  - dependsOn:: [[Forward Kinematics]]
+  - contrastsWith:: [[Workspace Analysis]]
+- ### Provenance
+  - updated:: 2026-06-15

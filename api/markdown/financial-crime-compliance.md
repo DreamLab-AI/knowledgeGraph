@@ -1,0 +1,37 @@
+- ### Definition
+  - Financial crime compliance is the discipline by which regulated firms detect, prevent, and report illicit financial activity such as money laundering, terrorist financing, fraud, bribery, and sanctions evasion. It combines customer due diligence, transaction monitoring, sanctions screening, and suspicious-activity reporting under a risk-based framework mandated by regulators. The function protects the integrity of the financial system and exposes firms to significant penalties when controls fail.
+  - Related concepts: [[Anti-Money Laundering]], [[Know Your Customer]], [[Transaction Monitoring]], [[Sanctions Screening]], [[Regulatory Compliance]].
+- ### Overview
+  - Financial crime compliance integrates several control domains into a single programme governed by a [[Risk-Based Approach]].
+  - It depends on [[Know Your Customer]] onboarding, ongoing [[Transaction Monitoring]], and [[Sanctions Screening]] against watchlists.
+  - Outputs feed into [[Suspicious Activity Report]] filings with financial-intelligence units.
+- ### Key aspects
+  - Customer due diligence and beneficial-ownership identification.
+  - Ongoing [[Transaction Monitoring]] for anomalous patterns.
+  - [[Sanctions Screening]] of parties and payments against regulatory lists.
+  - Escalation and filing of suspicious-activity reports.
+  - Governance, training, and independent testing of controls.
+- ### Applications
+  - Bank and fintech onboarding and payment screening pipelines.
+  - Risk scoring of customers and correspondents.
+  - Regulatory examinations and audit readiness.
+  - Integration of [[Fraud Detection]] analytics with compliance casework.
+- ### Relationships
+  - relatedTo:: [[Anti-Money Laundering]]
+  - relatedTo:: [[Know Your Customer]]
+  - supports:: [[Regulatory Compliance]]
+  - supports:: [[Fraud Detection]]
+  - bridgesTo:: [[Finance]]
+  - partOf:: [[Regulatory Compliance]]
+  - hasPart:: [[Transaction Monitoring]]
+  - hasPart:: [[Sanctions Screening]]
+  - hasPart:: [[Suspicious Activity Report]]
+  - requires:: [[Risk-Based Approach]]
+  - requires:: [[Know Your Customer]]
+  - uses:: [[Fraud Detection]]
+  - uses:: [[Transaction Monitoring]]
+  - enables:: [[Anti-Money Laundering]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - generatedBy:: GapMaterialisation
+  - quality:: 0.62

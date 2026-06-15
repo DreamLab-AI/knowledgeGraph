@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:instruction-set-architecture",
+  "title": "Instruction Set Architecture",
+  "slug": "instruction-set-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:instruction-set-architecture",
+  "domain": "infrastructure",
+  "definition": "An Instruction Set Architecture (ISA) is the abstract contract between hardware and software that defines the instructions a processor can execute, its registers, data types, addressing modes and memory model. It is the stable interface that allows compilers and operating systems to target a processor family without knowing its microarchitectural implementation. Examples include x86, ARM and the open RISC-V ISA, each balancing complexity, power efficiency and ecosystem support.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cpu",
+      "label": "CPU"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cpu",
+        "label": "CPU"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

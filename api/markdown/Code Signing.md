@@ -76,7 +76,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:private-key-management",
+        "@id": "urn:ngm:class:key-management",
         "label": "Private Key Management"
       },
       {

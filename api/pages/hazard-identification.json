@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:hazard-identification",
+  "title": "Hazard Identification",
+  "slug": "hazard-identification",
+  "public": true,
+  "classIri": "urn:ngm:class:hazard-identification",
+  "domain": "robotics",
+  "definition": "Hazard identification is the systematic process of recognising and cataloguing sources of potential harm within a system, task, or environment before they cause injury, damage, or loss. It is the first and enabling stage of risk assessment, producing the list of hazards that downstream analysis, evaluation, and mitigation depend on. In robotics it underpins functional-safety compliance by exposing mechanical, electrical, control, and human-interaction hazards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      },
+      {
+        "id": "urn:ngm:class:fmea",
+        "label": "Failure Mode and Effects Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:safety-engineering",
+        "label": "Safety Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:risk-mitigation",
+        "label": "Risk Mitigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:collision-avoidance",
+        "label": "Collision Avoidance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:safety-case",
+        "label": "Safety Case"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-13482",
+        "label": "ISO 13482"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    }
+  ]
+}

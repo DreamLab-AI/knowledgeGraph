@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:bytecode",
+  "title": "Bytecode",
+  "slug": "bytecode",
+  "public": true,
+  "classIri": "urn:ngm:class:bytecode",
+  "domain": "blockchain",
+  "definition": "Bytecode is a compact, platform-independent instruction set produced by compiling source code, designed to be executed by a virtual machine rather than directly by hardware. In blockchain systems, smart contracts written in high-level languages such as Solidity are compiled to bytecode that the Ethereum Virtual Machine deterministically executes across every node. Bytecode strikes a balance between the portability of source code and the efficiency of native machine code.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract-execution",
+      "label": "Smart Contract Execution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:opcode_note",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:interpreter_note",
+        "label": "Runtime Environment"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:smart-contract-execution",
+        "label": "Smart Contract Execution"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    }
+  ]
+}

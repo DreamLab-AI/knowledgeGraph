@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:uk-industrial-strategy",
+  "title": "Uk Industrial Strategy",
+  "slug": "uk-industrial-strategy",
+  "public": true,
+  "classIri": "urn:ngm:class:uk-industrial-strategy",
+  "domain": "infrastructure",
+  "definition": "UK Industrial Strategy is the United Kingdom government's framework of coordinated public policy aimed at raising productivity, supporting strategic sectors, and steering long-term economic development through targeted investment, skills, and innovation funding. It identifies priority sectors and missions\u2014such as advanced manufacturing, clean energy, and digital technologies\u2014and aligns regulation, infrastructure, and research support behind them. The strategy seeks to balance market dynamics with directed state intervention to address regional and sectoral imbalances.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:advanced-manufacturing",
+        "label": "Advanced Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:economic-development",
+        "label": "Economic Development"
+      },
+      {
+        "id": "urn:ngm:class:national-ai-strategy",
+        "label": "National Ai Strategy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:public-policy",
+        "label": "Public Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

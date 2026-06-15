@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:mesh-generation",
+  "title": "Mesh Generation",
+  "slug": "mesh-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:mesh-generation",
+  "domain": "spatial-computing",
+  "definition": "Mesh generation is the process of constructing a discrete representation of a geometric domain as a network of vertices, edges and faces - typically triangles or tetrahedra - suitable for rendering, simulation or analysis. It transforms continuous shapes, point clouds or implicit surfaces into well-formed polygonal or volumetric meshes that meet quality, density and topology constraints. Mesh generation underpins computer graphics, 3D reconstruction and numerical simulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:point-cloud-generation",
+        "label": "Point Cloud Generation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:signed-distance-function",
+        "label": "Signed Distance Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:point-cloud-generation",
+        "label": "Point Cloud Generation"
+      },
+      {
+        "id": "urn:ngm:class:signed-distance-function",
+        "label": "Signed Distance Function"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-field",
+        "label": "Neural Radiance Field"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

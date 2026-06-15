@@ -1,0 +1,31 @@
+- ### Definition
+  - Competency-Based Education is an instructional model that grants progression and credentials based on demonstrated mastery of defined competencies rather than time spent in instruction.
+  - Related concepts: [[Education Technology]] [[Adaptive Learning]] [[Learning Management System]] [[Learning Analytics]] [[Artificial Intelligence]]
+- ### Overview
+  - Competency-Based Education is an instructional model that grants progression and credentials based on demonstrated mastery of defined competencies rather than time spent in instruction.
+  - Learners advance when they can prove they have met explicit, measurable outcomes, often supported by personalised pacing and frequent assessment.
+  - The approach relies on learning analytics and educational technology to track and verify competency attainment.
+  - It is modelled as a subclass of [[Education Technology]] within the artificial-intelligence domain.
+- ### Key aspects
+  - [[Learning Management System]] is a constituent or mechanism relevant to Competency Based Education.
+- ### Mechanisms
+  - Competency Based Education enables [[Adaptive Learning]].
+  - Competency Based Education supports [[Learning Analytics]].
+- ### Applications
+  - Applied in contexts involving [[Adaptive Learning]].
+  - Applied in contexts involving [[Learning Analytics]].
+  - Applied in contexts involving [[Artificial Intelligence]].
+- ### Relationships
+  - subClassOf:: [[Education Technology]]
+  - partOf:: [[Education Technology]]
+  - enables:: [[Adaptive Learning]]
+  - supports:: [[Learning Analytics]]
+  - uses:: [[Learning Management System]]
+  - relatedTo:: [[Artificial Intelligence]]
+  - dependsOn:: [[Learning Management System]]
+  - contrastsWith:: [[Adaptive Learning]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

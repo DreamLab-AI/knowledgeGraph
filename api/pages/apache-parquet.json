@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:apache-parquet",
+  "title": "Apache Parquet",
+  "slug": "apache-parquet",
+  "public": true,
+  "classIri": "urn:ngm:class:apache-parquet",
+  "domain": "blockchain",
+  "definition": "Apache Parquet is an open-source columnar storage file format designed for efficient analytical processing of large datasets. By storing values of the same column contiguously, it enables aggressive compression and encoding, predicate pushdown, and reading only the columns a query needs, dramatically reducing I/O for analytical workloads. It carries a self-describing schema and rich metadata, and is widely used as the on-disk format for data lakes and big-data engines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:file-format",
+        "label": "File Format"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:olap",
+        "label": "OLAP"
+      },
+      {
+        "id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialisation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:columnar-storage",
+        "label": "Columnar Storage"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:file-format",
+        "label": "File Format"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:columnar-storage",
+        "label": "Columnar Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "id": "urn:ngm:class:schema-evolution",
+        "label": "Schema Evolution"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:apache-spark",
+        "label": "Apache Spark"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:big-data",
+        "label": "Big Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    }
+  ]
+}

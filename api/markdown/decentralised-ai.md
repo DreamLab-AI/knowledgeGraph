@@ -1,0 +1,36 @@
+- ### Definition
+  - Decentralised AI refers to artificial intelligence systems whose training, inference, data provenance, or governance are distributed across many independent participants rather than controlled by a single centralised entity. It commonly combines machine-learning techniques such as federated learning with blockchain or peer-to-peer infrastructure to coordinate compute, verify contributions, and align incentives through crypto-economic mechanisms. The goal is to reduce single points of control and failure, preserve data sovereignty, and enable open marketplaces for models, data, and compute.
+  - [[Blockchain]] [[Decentralised Identity]] [[Federated Learning]] [[Smart Contract]] [[Peer-to-Peer Network]]
+- ### Overview
+  - Decentralised AI emerges at the intersection of two trends: the rising cost and concentration of large-model training, and the maturation of blockchain primitives for coordination without trusted intermediaries. Participants may contribute data, compute, or model updates and be rewarded through tokens, while on-chain records provide auditable provenance for datasets and model lineage. Verifiability remains a core challenge, since proving that off-chain computation was performed correctly typically requires cryptographic proofs or trusted execution.
+- ### Key aspects
+  - Federated and collaborative training across independent nodes
+  - Token incentives rewarding data, compute, and model contributions
+  - On-chain provenance and auditability of datasets and model lineage
+  - Verifiable off-chain computation via proofs or trusted execution
+  - Open marketplaces for models, inference, and compute capacity
+- ### Applications
+  - Community-owned model training networks
+  - Privacy-preserving healthcare and finance analytics
+  - Decentralised compute and inference marketplaces
+  - Data unions where contributors retain ownership and earn from usage
+- ### Relationships
+  - bridgesTo:: [[Artificial Intelligence]]
+  - bridgesTo:: [[Machine Learning]]
+  - uses:: [[Federated Learning]]
+  - uses:: [[Smart Contract]]
+  - uses:: [[Peer-to-Peer Network]]
+  - enables:: [[Data Sovereignty]]
+  - enables:: [[Privacy-Preserving Machine Learning]]
+  - enables:: [[Edge AI]]
+  - dependsOn:: [[Distributed Ledger]]
+  - dependsOn:: [[Tokenization]]
+  - implements:: [[Decentralised Identity]]
+  - supports:: [[Web3]]
+  - relatedTo:: [[Blockchain Consensus]]
+  - relatedTo:: [[Proof of Stake]]
+- ### Provenance
+  - This class was materialised to resolve inbound references from existing classes in the knowledge graph.
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

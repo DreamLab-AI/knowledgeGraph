@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:broadband-connectivity",
+  "title": "Broadband Connectivity",
+  "slug": "broadband-connectivity",
+  "public": true,
+  "classIri": "urn:ngm:class:broadband-connectivity",
+  "domain": "infrastructure",
+  "definition": "Broadband Connectivity is high-capacity, always-on access to the internet delivered over fixed or wireless infrastructure such as fibre, cable, DSL, or cellular networks, characterised by data rates substantially higher than legacy dial-up. It provides the underlying transport for digital services, remote work, streaming, cloud applications, and the Internet of Things. Universal broadband is treated as essential infrastructure, and disparities in its availability constitute the digital divide. Its delivery depends on telecommunications infrastructure, network protocols, and last-mile access technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ip-addressing",
+        "label": "IP Addressing"
+      },
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-divide",
+        "label": "Digital Divide"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      },
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:urban-computing",
+        "label": "Urban Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

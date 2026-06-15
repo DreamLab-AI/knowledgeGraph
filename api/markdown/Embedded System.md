@@ -49,7 +49,7 @@ public:: true
         "label": "Firmware"
       },
       {
-        "@id": "urn:ngm:class:real-time-system",
+        "@id": "urn:ngm:class:real-time",
         "label": "Real-Time System"
       },
       {

@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:fiat-shamir-heuristic",
+  "title": "Fiat Shamir Heuristic",
+  "slug": "fiat-shamir-heuristic",
+  "public": true,
+  "classIri": "urn:ngm:class:fiat-shamir-heuristic",
+  "domain": "security",
+  "definition": "The Fiat-Shamir heuristic is a cryptographic technique that transforms an interactive public-coin proof or identification protocol into a non-interactive one by replacing the verifier's random challenges with the output of a cryptographic hash function applied to the prover's messages. This removes the need for live interaction, allowing proofs and signatures to be generated and verified offline. It is foundational to many digital signature schemes and non-interactive zero-knowledge proofs, with security analysed in the random oracle model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-protocol",
+      "label": "Cryptographic Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:bulletproofs",
+        "label": "Bulletproofs"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:interactive-proof-system",
+        "label": "Interactive Proof System"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:schnorr-signature",
+        "label": "Schnorr Signature"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interactive-proof-system",
+        "label": "Interactive Proof System"
+      },
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    }
+  ]
+}

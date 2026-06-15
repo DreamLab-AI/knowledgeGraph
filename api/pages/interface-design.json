@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:interface-design",
+  "title": "Interface Design",
+  "slug": "interface-design",
+  "public": true,
+  "classIri": "urn:ngm:class:interface-design",
+  "domain": "infrastructure",
+  "definition": "Interface design is the discipline of defining the boundaries, contracts, and points of interaction between components, systems, or between a system and its users. In software it encompasses both human-facing user interface design and machine-facing application programming interface design, focusing on clarity, consistency, and ease of correct use. Good interface design minimises coupling, communicates intent, and shapes how reliably and pleasantly the parts of a system can be combined or operated.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      },
+      {
+        "id": "urn:ngm:class:figma",
+        "label": "Figma"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    }
+  ]
+}

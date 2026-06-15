@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:security-monitoring",
+  "title": "Security Monitoring",
+  "slug": "security-monitoring",
+  "public": true,
+  "classIri": "urn:ngm:class:security-monitoring",
+  "domain": "security",
+  "definition": "Security monitoring is the continuous collection, correlation and analysis of telemetry from systems, networks and applications to detect indicators of compromise and policy violations. It feeds detection rules, baselines and analytics that surface suspicious behaviour for investigation and response. As a discipline it spans log aggregation, intrusion detection, threat intelligence enrichment and alerting, and is a core function of a security operations centre.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:threat-detection",
+      "label": "Threat Detection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:metrics-collection",
+        "label": "Metrics Collection"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:intrusion-detection",
+        "label": "Intrusion Detection"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "id": "urn:ngm:class:logging",
+        "label": "Logging"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:security-operations-centre",
+        "label": "Security Operations Centre"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "id": "urn:ngm:class:defense-in-depth",
+        "label": "Defense In Depth"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "threat-surface-map",
+      "label": "Threat Surface Map"
+    }
+  ]
+}

@@ -470,7 +470,7 @@ public:: true
         "label": "Datalog Knowledge Graph Query Language"
       },
       {
-        "@id": "urn:ngm:class:softmax",
+        "@id": "urn:ngm:class:softmax-function",
         "label": "Softmax"
       },
       {

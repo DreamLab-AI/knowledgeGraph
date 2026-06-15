@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:shadow-banking",
+  "title": "Shadow Banking",
+  "slug": "shadow-banking",
+  "public": true,
+  "classIri": "urn:ngm:class:shadow-banking",
+  "domain": "finance",
+  "definition": "Shadow banking refers to credit intermediation and maturity transformation conducted by non-bank financial entities that operate outside the perimeter of conventional deposit-taking banking regulation. It encompasses activities such as money-market funds, securitisation vehicles, repo markets, and hedge-fund lending that perform bank-like functions without access to central-bank backstops or deposit insurance. Because it sits beyond standard prudential oversight, shadow banking can amplify systemic risk during periods of market stress.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:finance",
+      "label": "Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:traditional-banking",
+        "label": "Traditional Banking"
+      },
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

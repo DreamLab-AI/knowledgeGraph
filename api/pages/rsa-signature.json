@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:rsa-signature",
+  "title": "Rsa Signature",
+  "slug": "rsa-signature",
+  "public": true,
+  "classIri": "urn:ngm:class:rsa-signature",
+  "domain": "security",
+  "definition": "An RSA signature is a digital signature scheme built on the RSA public-key cryptosystem, where a message digest is signed with the holder's private exponent and verified with the corresponding public exponent and modulus. Security rests on the difficulty of factoring large composite integers, and practical deployments use padding schemes such as PKCS#1 v1.5 or PSS together with a cryptographic hash function. RSA signatures are widely used for certificate authorities, code signing, and transport-layer authentication, though they produce larger keys and signatures than elliptic-curve alternatives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-signature",
+      "label": "Digital Signature"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

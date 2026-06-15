@@ -1,0 +1,128 @@
+{
+  "id": "urn:visionflow:page:beacon-chain",
+  "title": "Beacon Chain",
+  "slug": "beacon-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:beacon-chain",
+  "domain": "blockchain",
+  "definition": "The Beacon Chain is the proof-of-stake consensus backbone introduced to Ethereum that coordinates validators, manages staking, and finalises blocks. It organises time into slots and epochs, assigns block-proposal and attestation duties, and applies a finality gadget that locks in the canonical chain. The Beacon Chain decouples consensus from execution, providing the security and randomness that the broader sharded and execution layers build upon.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus-layer",
+      "label": "Consensus Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      },
+      {
+        "id": "urn:ngm:class:epoch",
+        "label": "Epoch"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:block-proposal",
+        "label": "Block Proposal"
+      },
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:consensus-layer",
+        "label": "Consensus Layer"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:consensus-layer",
+        "label": "Consensus Layer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

@@ -129,12 +129,6 @@ public:: true
         "@id": "urn:ngm:class:chaos-engineering",
         "label": "Chaos Engineering"
       }
-    ],
-    "relatedTo": [
-      {
-        "@id": "urn:ngm:class:availability",
-        "label": "Availability"
-      }
     ]
   },
   "quality": 0.74,

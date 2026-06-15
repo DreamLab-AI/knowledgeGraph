@@ -102,12 +102,6 @@ public:: true
         "label": "Verifiable Credentials"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:anonymous-access",
-        "label": "Anonymous Access"
-      }
-    ],
     "standardizedBy": [
       {
         "@id": "urn:ngm:class:iso",

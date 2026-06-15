@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:custodial-exchange",
+  "title": "Custodial Exchange",
+  "slug": "custodial-exchange",
+  "public": true,
+  "classIri": "urn:ngm:class:custodial-exchange",
+  "domain": "blockchain",
+  "definition": "A custodial exchange is a cryptocurrency trading venue that holds users' assets and private keys on their behalf, settling trades on its internal ledger rather than on-chain. Users gain convenience, liquidity and familiar account-based access, but cede control of their keys and accept counterparty risk in the operator. It is the centralised counterpart to non-custodial and decentralised trading models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptocurrency-exchange",
+      "label": "Cryptocurrency Exchange"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:centralized-exchange",
+        "label": "Centralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:qualified-custodian",
+        "label": "Qualified Custodian"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

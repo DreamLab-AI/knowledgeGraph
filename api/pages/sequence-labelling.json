@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:sequence-labelling",
+  "title": "Sequence Labelling",
+  "slug": "sequence-labelling",
+  "public": true,
+  "classIri": "urn:ngm:class:sequence-labelling",
+  "domain": "artificial-intelligence",
+  "definition": "Sequence labelling is a class of natural-language-processing tasks in which each element of an input sequence is assigned a categorical label from a fixed tag set. It encompasses tasks such as named-entity recognition, part-of-speech tagging and slot filling, where contextual dependencies between adjacent tokens matter. Classical approaches use hidden Markov models and conditional random fields, while modern systems use neural encoders.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:labelled-data",
+        "label": "Labelled Data"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:conditional-random-field",
+        "label": "Conditional Random Field"
+      },
+      {
+        "id": "urn:ngm:class:hidden-markov-model",
+        "label": "Hidden Markov Model"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:part-of-speech-tagging",
+        "label": "Part-of-Speech Tagging"
+      },
+      {
+        "id": "urn:ngm:class:semantic-role-labelling",
+        "label": "Semantic Role Labelling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

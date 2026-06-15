@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:bradley-terry-model",
+  "title": "Bradley Terry Model",
+  "slug": "bradley-terry-model",
+  "public": true,
+  "classIri": "urn:ngm:class:bradley-terry-model",
+  "domain": "machine-learning",
+  "definition": "The Bradley-Terry model is a probabilistic model for paired comparisons that estimates a latent strength or quality score for each item and predicts the probability that one item beats another via the logistic of their score difference. Fitted by maximum-likelihood from observed comparison outcomes, it produces a global ranking from local pairwise data. In machine learning it underpins preference modelling and reward learning from human comparisons.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:pairwise-comparison",
+        "label": "Pairwise Comparison"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "id": "urn:ngm:class:pairwise-comparison",
+        "label": "Pairwise Comparison"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:statistical-model",
+        "label": "Statistical Model"
+      },
+      {
+        "id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    }
+  ]
+}

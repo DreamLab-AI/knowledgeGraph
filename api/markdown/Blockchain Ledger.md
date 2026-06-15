@@ -49,7 +49,7 @@ alias:: BlockchainLedger
         "label": "Merkle Tree"
       },
       {
-        "@id": "urn:ngm:class:utxo-set",
+        "@id": "urn:ngm:class:utxo",
         "label": "UTXO Set"
       }
     ],

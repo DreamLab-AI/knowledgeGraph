@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:initial-dex-offering",
+  "title": "Initial Dex Offering",
+  "slug": "initial-dex-offering",
+  "public": true,
+  "classIri": "urn:ngm:class:initial-dex-offering",
+  "domain": "blockchain",
+  "definition": "An initial DEX offering (IDO) is a token fundraising and distribution model in which a new token is launched directly on a decentralised exchange, with liquidity provided into an automated market maker pool so trading begins immediately. Unlike centralised or regulated offerings, an IDO is permissionless and settled on-chain through smart contracts, often using launchpads that manage allocation and anti-bot measures. It contrasts with the initial coin offering and the regulated initial public offering by emphasising immediate liquidity and decentralised access.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:token-sale",
+      "label": "Token Sale"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:initial-public-offering",
+        "label": "Initial Public Offering"
+      },
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decentralized-exchange",
+        "label": "Decentralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:token-sale",
+        "label": "Token Sale"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-token",
+        "label": "Blockchain Token"
+      },
+      {
+        "id": "urn:ngm:class:yield-farming",
+        "label": "Yield Farming"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

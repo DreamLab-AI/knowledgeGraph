@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:rapidly-exploring-random-tree",
+  "title": "Rapidly Exploring Random Tree",
+  "slug": "rapidly-exploring-random-tree",
+  "public": true,
+  "classIri": "urn:ngm:class:rapidly-exploring-random-tree",
+  "domain": "robotics",
+  "definition": "A Rapidly Exploring Random Tree (RRT) is a sampling-based motion-planning algorithm that incrementally builds a space-filling tree by drawing random samples from the configuration space and extending the tree toward each sample. It efficiently explores high-dimensional spaces while respecting kinematic and obstacle constraints, and its variants such as RRT* add asymptotic optimality. RRT is widely used for robot path planning where the free space is too large or complex for grid-based search.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sampling-based-planning",
+      "label": "Sampling Based Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sampling-based-planning",
+        "label": "Sampling Based Planning"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:configuration-space",
+        "label": "Configuration Space"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:sampling-based-planning",
+        "label": "Sampling Based Planning"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

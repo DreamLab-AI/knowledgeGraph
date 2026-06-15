@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:records-management",
+  "title": "Records Management",
+  "slug": "records-management",
+  "public": true,
+  "classIri": "urn:ngm:class:records-management",
+  "domain": "standards",
+  "definition": "Records management is the systematic control of an organisation's records throughout their lifecycle \u2014 from creation and capture through classification, storage and use, to retention, archiving and eventual disposal. It applies policies and standards, notably ISO 15489, to ensure that records remain authentic, reliable and accessible for as long as they are required for business, legal and regulatory purposes. Effective records management supports accountability, compliance and efficient information governance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-governance",
+      "label": "Information Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:retention-policy",
+        "label": "Retention Policy"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:information-governance",
+        "label": "Information Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:retention-policy",
+        "label": "Retention Policy"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:information-governance",
+        "label": "Information Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-archive",
+        "label": "Digital Archive"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

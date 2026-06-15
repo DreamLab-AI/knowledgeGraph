@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:augmented-reality-tracking",
+  "title": "Augmented Reality Tracking",
+  "slug": "augmented-reality-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:augmented-reality-tracking",
+  "domain": "robotics",
+  "definition": "Augmented reality tracking is the continuous estimation of a device's position and orientation relative to the physical environment so that virtual content can be registered and rendered as if anchored in the real world. It fuses camera imagery, inertial measurements and depth or feature data to maintain a stable six-degree-of-freedom pose at interactive rates. Robust tracking is the foundation of believable spatial overlay, addressing drift, occlusion and relocalisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:marker-based-tracking",
+        "label": "Marker-Based Tracking"
+      },
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:visual-slam",
+        "label": "Visual SLAM"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:marker-based-tracking",
+        "label": "Marker-Based Tracking"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:extended-kalman-filter",
+        "label": "Extended Kalman Filter"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tracking",
+        "label": "Tracking"
+      },
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

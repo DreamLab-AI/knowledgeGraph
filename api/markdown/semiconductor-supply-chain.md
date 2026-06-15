@@ -1,0 +1,33 @@
+- ### Definition
+  - The [[Semiconductor Supply Chain]] spans design through fabrication and distribution, depending on the [[Foundry]], [[Logistics]] and [[Export Controls]], and central to [[Compute Governance]] and [[Digital Sovereignty]].
+- ### Overview
+  - Globally distributed network producing integrated circuits.
+  - Highly specialised and geographically concentrated at the leading edge.
+  - A focal point of geopolitics, export controls and national security.
+- ### Key aspects
+  - Design, fabrication, assembly, test and distribution stages.
+  - Dependence on advanced lithography and rare materials.
+  - Concentration risk and single points of failure.
+  - Export controls and trade policy shaping access.
+- ### Applications
+  - Compute governance and AI chip access policy.
+  - National-security and resilience planning.
+  - Industrial strategy and reshoring initiatives.
+  - Procurement and logistics for hardware producers.
+- ### Relationships
+  - requires:: [[Foundry]]
+  - requires:: [[Logistics]]
+  - dependsOn:: [[Export Controls]]
+  - dependsOn:: [[Geopolitics]]
+  - partOf:: [[Supply Chain]]
+  - uses:: [[Supply Chain Management]]
+  - supports:: [[AI Chips]]
+  - supports:: [[GPU]]
+  - relatedTo:: [[Compute Governance]]
+  - relatedTo:: [[Digital Sovereignty]]
+  - enables:: [[Hardware]]
+  - contrastsWith:: [[Supply Chain Management]]
+  - bridgesTo:: [[Resilience]]
+  - implements:: [[Supply Chain Management]]
+- ### Provenance
+  - updated:: 2026-06-15

@@ -76,7 +76,7 @@ public:: true
         "label": "Trust"
       },
       {
-        "@id": "urn:ngm:class:ai-auditing",
+        "@id": "urn:ngm:class:algorithmic-auditing",
         "label": "AI Auditing"
       },
       {

@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:stack-machine",
+  "title": "Stack Machine",
+  "slug": "stack-machine",
+  "public": true,
+  "classIri": "urn:ngm:class:stack-machine",
+  "domain": "blockchain",
+  "definition": "A stack machine is an execution model in which operands and intermediate results are held on a last-in-first-out stack rather than in named registers, with instructions implicitly consuming their inputs from the top of the stack and pushing their outputs back onto it. The model yields compact, position-independent bytecode and a simple deterministic evaluator, which is why it underpins many scripting languages and blockchain virtual machines such as Bitcoin Script and the Ethereum Virtual Machine.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:execution-model",
+      "label": "Execution Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bytecode",
+        "label": "Bytecode"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bitcoin-script",
+        "label": "Bitcoin Script"
+      },
+      {
+        "id": "urn:ngm:class:ethereum-virtual-machine",
+        "label": "Ethereum Virtual Machine"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:execution-model",
+        "label": "Execution Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:execution-model",
+        "label": "Execution Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bytecode",
+        "label": "Bytecode"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:script",
+        "label": "Script"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:taproot",
+        "label": "Taproot"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

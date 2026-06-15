@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:logical-inference",
+  "title": "Logical Inference",
+  "slug": "logical-inference",
+  "public": true,
+  "classIri": "urn:ngm:class:logical-inference",
+  "domain": "artificial-intelligence",
+  "definition": "Logical inference is the process of deriving new statements (conclusions) from existing ones (premises) according to rules that preserve truth, such that whenever the premises are true the conclusion must also be true. It encompasses deductive mechanisms like modus ponens, resolution, and unification, and is the operational core of automated reasoning systems. Logical inference connects formal logics to practical computation by turning syntactic manipulation of formulae into sound derivations of consequences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reasoning",
+      "label": "Reasoning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:semantic-reasoning",
+        "label": "Semantic Reasoning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:propositional-logic",
+        "label": "Propositional Logic"
+      },
+      {
+        "id": "urn:ngm:class:predicate-logic",
+        "label": "Predicate Logic"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

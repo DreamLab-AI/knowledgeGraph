@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:clearing",
+  "title": "Clearing",
+  "slug": "clearing",
+  "public": true,
+  "classIri": "urn:ngm:class:clearing",
+  "domain": "finance",
+  "definition": "Clearing is the post-trade process of confirming, matching and managing the obligations arising from a transaction in the interval between execution and settlement. A clearing house, often acting as a central counterparty, novates trades and nets exposures, calculating the net obligations of each party and managing counterparty credit risk through margin and default funds. Clearing reduces systemic risk and operational burden in securities, derivatives and payment markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-market-infrastructure",
+      "label": "Financial Market Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:trade-execution",
+        "label": "Trade Execution"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      },
+      {
+        "id": "urn:ngm:class:trade-execution",
+        "label": "Trade Execution"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:payment-processing",
+        "label": "Payment Processing"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-market-infrastructure",
+        "label": "Financial Market Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -109,12 +109,6 @@ public:: true
         "@id": "urn:ngm:class:blockchain",
         "label": "Blockchain"
       }
-    ],
-    "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:protocol-labs",
-        "label": "Protocol Labs"
-      }
     ]
   },
   "sameAs": [

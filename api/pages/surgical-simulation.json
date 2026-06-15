@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:surgical-simulation",
+  "title": "Surgical Simulation",
+  "slug": "surgical-simulation",
+  "public": true,
+  "classIri": "urn:ngm:class:surgical-simulation",
+  "domain": "spatial-computing",
+  "definition": "Surgical simulation is the use of interactive virtual environments to model surgical procedures for training, planning and assessment. It combines real-time graphics, deformable tissue modelling, collision detection and haptic feedback to recreate the visual and tactile experience of operating. Surgical simulators allow clinicians to rehearse techniques and acquire skills without risk to patients.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:medical-simulation",
+      "label": "Medical Simulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:force-feedback",
+        "label": "Force Feedback"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:xr-applications",
+        "label": "XR Applications"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:force-feedback",
+        "label": "Force Feedback"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:medical-simulation",
+        "label": "Medical Simulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:xr-applications",
+        "label": "XR Applications"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    }
+  ]
+}

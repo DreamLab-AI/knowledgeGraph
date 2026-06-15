@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:property-graph",
+  "title": "Property Graph",
+  "slug": "property-graph",
+  "public": true,
+  "classIri": "urn:ngm:class:property-graph",
+  "domain": "data",
+  "definition": "A property graph is a graph data structure in which both nodes and edges carry labels and an arbitrary set of key-value properties. Edges are directed and uniquely identifiable, allowing multiple parallel relationships of different types between the same pair of nodes. It is the data model behind many native graph databases and is queried with traversal languages such as Cypher and Gremlin.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graph-data-model",
+      "label": "Graph Data Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:structured-data",
+        "label": "Structured Data"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-embedding",
+        "label": "Knowledge Graph Embedding"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    }
+  ]
+}

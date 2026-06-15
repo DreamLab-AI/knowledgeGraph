@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:smart-home-automation",
+  "title": "Smart Home Automation",
+  "slug": "smart-home-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:smart-home-automation",
+  "domain": "infrastructure",
+  "definition": "Smart Home Automation is the networked control and coordination of domestic devices \u2014 lighting, heating, security, appliances, and entertainment \u2014 so that they can be monitored and operated remotely or triggered automatically by rules, schedules, and sensor input. It builds on Internet of Things connectivity, local hubs, and standard protocols to integrate heterogeneous devices into a single controllable environment. Voice assistants, mobile apps, and rule engines provide the user interface, while local processing increasingly handles latency-sensitive and privacy-sensitive logic. It enables energy management, accessibility, and convenience in residential settings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:internet-of-things",
+      "label": "Internet of Things"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:home-assistant",
+        "label": "Home Assistant"
+      },
+      {
+        "id": "urn:ngm:class:iot-platform",
+        "label": "IoT Platform"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      },
+      {
+        "id": "urn:ngm:class:voice-assistant",
+        "label": "Voice Assistant"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:sensor-network",
+        "label": "Sensor Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mqtt",
+        "label": "MQTT"
+      },
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "id": "urn:ngm:class:matter-protocol",
+        "label": "Matter Protocol"
+      },
+      {
+        "id": "urn:ngm:class:thread-protocol",
+        "label": "Thread Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:building-automation",
+        "label": "Building Automation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:pervasive-computing",
+        "label": "Pervasive Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    }
+  ]
+}

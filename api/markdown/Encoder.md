@@ -66,7 +66,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:multi-head-self-attention",
+        "@id": "urn:ngm:class:multi-head-attention",
         "label": "Multi Head Self Attention"
       },
       {

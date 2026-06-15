@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:jacobian-determinant",
+  "title": "Jacobian Determinant",
+  "slug": "jacobian-determinant",
+  "public": true,
+  "classIri": "urn:ngm:class:jacobian-determinant",
+  "domain": "machine-learning",
+  "definition": "The Jacobian determinant is the scalar determinant of the Jacobian matrix of a differentiable vector-valued function, measuring the local factor by which the function expands or contracts volume around a point. In probability and machine learning it provides the change-of-variables correction needed to transform a probability density through an invertible mapping, ensuring the transformed density integrates to one. Its sign indicates whether the transformation preserves or reverses orientation, and its magnitude governs local volume scaling.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:jacobian-matrix",
+      "label": "Jacobian Matrix"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:normalising-flows",
+        "label": "Normalising Flows"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:jacobian-matrix",
+        "label": "Jacobian Matrix"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

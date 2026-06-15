@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:resampling",
+  "title": "Resampling",
+  "slug": "resampling",
+  "public": true,
+  "classIri": "urn:ngm:class:resampling",
+  "domain": "machine-learning",
+  "definition": "Resampling is a family of statistical and machine-learning techniques that repeatedly draw samples from observed data to estimate the variability of a statistic, validate a model, or rebalance a dataset. It includes methods such as bootstrapping, cross-validation, permutation testing, and over- and under-sampling for class imbalance. By substituting computation for restrictive distributional assumptions, resampling provides robust estimates of error, confidence and generalisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistical-inference",
+      "label": "Statistical Inference"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:ngm:class:bagging",
+        "label": "Bagging"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:bagging",
+        "label": "Bagging"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:ngm:class:bagging",
+        "label": "Bagging"
+      },
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:internet-connectivity",
+  "title": "Internet Connectivity",
+  "slug": "internet-connectivity",
+  "public": true,
+  "classIri": "urn:ngm:class:internet-connectivity",
+  "domain": "infrastructure",
+  "definition": "Internet connectivity is the capability of a device or network to exchange data with the global Internet, established through physical or wireless access links and the protocol stack that routes packets between endpoints. It depends on addressing, name resolution, and routing infrastructure provided by access and transit providers. Connectivity is characterised by attributes such as bandwidth, latency, reliability, and reachability, all of which shape the performance of applications that rely on it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-connectivity",
+      "label": "Network Connectivity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tcp-ip",
+        "label": "TCP/IP"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:dns",
+        "label": "DNS"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    }
+  ]
+}

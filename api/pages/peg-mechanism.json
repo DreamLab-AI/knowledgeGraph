@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:peg-mechanism",
+  "title": "Peg Mechanism",
+  "slug": "peg-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:peg-mechanism",
+  "domain": "blockchain",
+  "definition": "A peg mechanism is the set of economic and technical arrangements by which a token maintains a stable exchange rate against a reference asset such as a fiat currency or another token. It typically combines collateral backing, minting and redemption rules, and arbitrage incentives so that market deviations from the target price are pushed back towards parity. The design of the peg mechanism determines how robustly a stablecoin or wrapped asset holds its value under stress.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stablecoin",
+      "label": "Stablecoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:peg",
+        "label": "Peg"
+      },
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:algorithmic-stablecoin",
+        "label": "Algorithmic Stablecoin"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:defi",
+        "label": "DeFi"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      },
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      },
+      {
+        "id": "urn:ngm:class:token-minting",
+        "label": "Token Minting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:peg",
+        "label": "Peg"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-stablecoin",
+        "label": "Algorithmic Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:dai",
+        "label": "DAI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    }
+  ]
+}

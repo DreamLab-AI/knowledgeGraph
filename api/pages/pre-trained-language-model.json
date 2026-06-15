@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:pre-trained-language-model",
+  "title": "Pre Trained Language Model",
+  "slug": "pre-trained-language-model",
+  "public": true,
+  "classIri": "urn:ngm:class:pre-trained-language-model",
+  "domain": "machine-learning",
+  "definition": "A pre-trained language model is a neural language model that has first been trained on a large, general corpus using self-supervised objectives such as masked or next-token prediction, then reused as a foundation for many downstream tasks. By learning broadly transferable linguistic and world knowledge during pre-training, it can be adapted with comparatively little task-specific data through fine-tuning, prompting, or instruction tuning. This pre-train-then-adapt paradigm, exemplified by BERT and the GPT family, is the foundation of modern natural language processing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:language-model",
+      "label": "Language Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      },
+      {
+        "id": "urn:ngm:class:roberta",
+        "label": "RoBERTa"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:pretrained-model",
+        "label": "Pretrained Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

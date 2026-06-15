@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:power-grid",
+  "title": "Power Grid",
+  "slug": "power-grid",
+  "public": true,
+  "classIri": "urn:ngm:class:power-grid",
+  "domain": "infrastructure",
+  "definition": "A power grid is the interconnected network of generation, transmission and distribution infrastructure that delivers electrical power from producers to consumers. It balances supply and demand in real time across high-voltage transmission lines, substations and lower-voltage distribution networks. Modern grids increasingly integrate renewable generation and digital controls to maintain stability and reliability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:power-infrastructure",
+      "label": "Power Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      },
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      },
+      {
+        "id": "urn:ngm:class:power-distribution-unit",
+        "label": "Power Distribution Unit"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:renewable-energy-integration",
+        "label": "Renewable Energy Integration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:electrical-power",
+        "label": "Electrical Power"
+      },
+      {
+        "id": "urn:ngm:class:transmission-network",
+        "label": "Transmission Network"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:power-electronics",
+        "label": "Power Electronics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:grid-infrastructure",
+        "label": "Grid Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    }
+  ]
+}

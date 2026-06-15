@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:data-monetisation",
+  "title": "Data Monetisation",
+  "slug": "data-monetisation",
+  "public": true,
+  "classIri": "urn:ngm:class:data-monetisation",
+  "domain": "governance",
+  "definition": "Data monetisation is the practice of generating economic value from data assets, either directly by selling data and data-derived products, or indirectly by using data to improve decisions, products and operations. It spans approaches from licensing raw or aggregated datasets through data marketplaces to embedding analytics in services that command a premium. Responsible data monetisation must be balanced against data privacy, consent and governance obligations, and it raises questions about data ownership and the ethics of treating personal information as a tradeable resource.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-marketplace",
+        "label": "Data Marketplace"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-marketplace",
+        "label": "Data Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:data-sharing",
+        "label": "Data Sharing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-sharing",
+        "label": "Data Sharing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-classification",
+        "label": "Data Classification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

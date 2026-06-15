@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:reward-signal",
+  "title": "Reward Signal",
+  "slug": "reward-signal",
+  "public": true,
+  "classIri": "urn:ngm:class:reward-signal",
+  "domain": "machine-learning",
+  "definition": "A reward signal is the scalar feedback an agent receives from its environment in reinforcement learning, indicating the immediate desirability of the state-action pair just experienced. It is the primary mechanism by which goals are communicated to a learning agent, which seeks to maximise the cumulative reward it accumulates over time rather than any single immediate value. The design of the reward signal strongly shapes learned behaviour, and poorly specified rewards can lead to unintended or degenerate strategies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "id": "urn:ngm:class:temporal-difference-learning",
+        "label": "Temporal Difference Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "id": "urn:ngm:class:temporal-difference-learning",
+        "label": "Temporal Difference Learning"
+      },
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    }
+  ]
+}

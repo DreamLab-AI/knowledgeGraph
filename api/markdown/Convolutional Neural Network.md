@@ -183,7 +183,7 @@ alias:: Convolutional Neural Networks, ConvolutionalNeuralNetwork
     ],
     "bridgesTo": [
       {
-        "@id": "urn:ngm:class:autonomous-vehicle-perception",
+        "@id": "urn:ngm:class:autonomous-driving-perception",
         "label": "Autonomous Vehicle Perception"
       },
       {

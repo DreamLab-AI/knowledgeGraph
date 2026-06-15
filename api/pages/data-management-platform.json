@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:data-management-platform",
+  "title": "Data Management Platform",
+  "slug": "data-management-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:data-management-platform",
+  "domain": "data",
+  "definition": "A data management platform is a centralised system for collecting, organising, segmenting, and activating large volumes of data drawn from multiple sources so that it can be used for analytics, audience targeting, and decision-making. Historically associated with advertising, where it aggregated and anonymised audience data for campaign targeting, the term also denotes broader enterprise platforms that unify data pipelines, storage, and governance. It is closely related to, but distinct from, customer data platforms and data warehouses.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data",
+      "label": "Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:advertising",
+        "label": "Advertising"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:synthetic-data-generator",
+        "label": "Synthetic Data Generator"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "synthetic-data-generator",
+      "label": "Synthetic Data Generator"
+    }
+  ]
+}

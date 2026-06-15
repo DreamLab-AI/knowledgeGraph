@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:neural-ode",
+  "title": "Neural Ode",
+  "slug": "neural-ode",
+  "public": true,
+  "classIri": "urn:ngm:class:neural-ode",
+  "domain": "machine-learning",
+  "definition": "A neural ordinary differential equation (Neural ODE) is a deep learning model that parameterises the continuous-time derivative of a hidden state with a neural network, so the forward pass becomes the solution of an ODE by a numerical integrator. This replaces a discrete stack of layers with a continuous-depth transformation and trains efficiently via the adjoint sensitivity method, giving constant memory cost. Neural ODEs are well suited to modelling continuous dynamics, irregularly sampled time series, and continuous normalising flows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:residual-network",
+        "label": "Residual Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:residual-network",
+        "label": "Residual Network"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:dynamical-systems",
+        "label": "Dynamical Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

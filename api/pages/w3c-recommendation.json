@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:w3c-recommendation",
+  "title": "W3C Recommendation",
+  "slug": "w3c-recommendation",
+  "public": true,
+  "classIri": "urn:ngm:class:w3c-recommendation",
+  "domain": "security",
+  "definition": "A W3C Recommendation is the final, ratified stage of a technical specification produced by the World Wide Web Consortium, signifying that the document has completed the consortium's review process and is endorsed for broad deployment. It carries the strongest standing in the W3C Recommendation Track, having passed through Working Draft, Candidate Recommendation and Proposed Recommendation maturity levels. Many web security and identity specifications, such as WebAuthn and Verifiable Credentials, are published as W3C Recommendations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:web-standard",
+      "label": "Web Standard"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:specification",
+        "label": "Specification"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:json-ld",
+        "label": "JSON-LD"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:specification",
+        "label": "Specification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:webauthn",
+        "label": "WebAuthn"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-documentation",
+        "label": "Standards Documentation"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:specification",
+        "label": "Specification"
+      },
+      {
+        "id": "urn:ngm:class:user-interface-standard",
+        "label": "User Interface Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:atomic-broadcast",
+  "title": "Atomic Broadcast",
+  "slug": "atomic-broadcast",
+  "public": true,
+  "classIri": "urn:ngm:class:atomic-broadcast",
+  "domain": "distributed-systems",
+  "definition": "Atomic broadcast (also called total-order broadcast) is a distributed communication primitive guaranteeing that all correct processes deliver the same set of messages in the same total order. It strengthens reliable broadcast with an ordering property, ensuring agreement on both the content and sequence of delivered messages. Atomic broadcast is equivalent in power to consensus and underpins state-machine replication.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "id": "urn:ngm:class:replication",
+        "label": "Replication"
+      },
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:byzantine-generals-problem",
+        "label": "Byzantine Generals Problem"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
+        "label": "Practical Byzantine Fault Tolerance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:raft",
+        "label": "Raft"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:crash-fault-tolerance",
+        "label": "Crash Fault Tolerance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:clock-synchronization",
+        "label": "Clock Synchronization"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-consensus",
+        "label": "Blockchain Consensus"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ]
+}

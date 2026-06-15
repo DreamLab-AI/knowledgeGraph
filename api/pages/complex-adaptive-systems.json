@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:complex-adaptive-systems",
+  "title": "Complex Adaptive Systems",
+  "slug": "complex-adaptive-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:complex-adaptive-systems",
+  "domain": "artificial-intelligence",
+  "definition": "Complex adaptive systems are systems composed of many interacting agents whose collective behaviour emerges from local interactions and adaptation rather than central control. The agents adjust their behaviour in response to one another and to their environment, producing non-linear dynamics, self-organisation and emergent order. Studied across biology, economics and artificial intelligence, they provide a lens for understanding resilience, learning and unpredictability in distributed populations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:complexity-science",
+      "label": "Complexity Science"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:systems-theory",
+        "label": "Systems Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:complexity-science",
+        "label": "Complexity Science"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cybernetics",
+        "label": "Cybernetics"
+      },
+      {
+        "id": "urn:ngm:class:systems-theory",
+        "label": "Systems Theory"
+      },
+      {
+        "id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

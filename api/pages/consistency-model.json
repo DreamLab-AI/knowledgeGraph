@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:consistency-model",
+  "title": "Consistency Model",
+  "slug": "consistency-model",
+  "public": true,
+  "classIri": "urn:ngm:class:consistency-model",
+  "domain": "distributed-systems",
+  "definition": "A consistency model is a contract between a distributed data store and its clients that specifies the guarantees about the visibility and ordering of reads and writes across replicas. It defines which outcomes of concurrent operations are permissible, ranging from strong models like linearizability that behave as a single up-to-date copy, to weak models like eventual consistency that allow temporary divergence. The chosen model shapes application correctness, performance, and the achievable balance among consistency, availability, and partition tolerance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:strong-consistency",
+        "label": "Strong Consistency"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      },
+      {
+        "id": "urn:ngm:class:linearizability",
+        "label": "Linearizability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:replication-protocol",
+        "label": "Replication Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:replication-protocol",
+        "label": "Replication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:partition-tolerance",
+        "label": "Partition Tolerance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-data-structure",
+        "label": "Distributed Data Structure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cap-theorem",
+        "label": "CAP Theorem"
+      },
+      {
+        "id": "urn:ngm:class:partition-tolerance",
+        "label": "Partition Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

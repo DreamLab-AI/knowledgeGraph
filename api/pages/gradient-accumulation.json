@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:gradient-accumulation",
+  "title": "Gradient Accumulation",
+  "slug": "gradient-accumulation",
+  "public": true,
+  "classIri": "urn:ngm:class:gradient-accumulation",
+  "domain": "machine-learning",
+  "definition": "Gradient accumulation is a training technique that sums the gradients computed over several consecutive mini-batches before performing a single parameter update, thereby simulating a larger effective batch size than fits in device memory. It allows training of large models on limited hardware by trading additional forward and backward passes for reduced peak memory usage. The optimiser step and gradient reset occur only after the configured number of accumulation steps has been reached.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-training",
+      "label": "Model Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mini-batch",
+        "label": "Mini-Batch"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:batch-size",
+        "label": "Batch Size"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:learning-rate",
+        "label": "Learning Rate"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    }
+  ]
+}

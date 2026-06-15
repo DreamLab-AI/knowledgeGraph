@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:gradient-boosted-trees",
+  "title": "Gradient Boosted Trees",
+  "slug": "gradient-boosted-trees",
+  "public": true,
+  "classIri": "urn:ngm:class:gradient-boosted-trees",
+  "domain": "ai",
+  "definition": "Gradient boosted trees are an ensemble learning method that builds a strong predictor by sequentially adding shallow decision trees, each fitted to the negative gradient of a differentiable loss with respect to the current model's predictions. By combining many weak learners in an additive, stage-wise manner, the method achieves high accuracy on structured and tabular data while controlling overfitting through regularisation, shrinkage and subsampling. It is among the most effective approaches for supervised regression and classification on heterogeneous features.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:boosting",
+      "label": "Boosting"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:boosting",
+        "label": "Boosting"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:random-forest",
+        "label": "Random Forest"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:boosting",
+        "label": "Boosting"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    }
+  ]
+}

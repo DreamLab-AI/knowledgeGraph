@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:risk-scoring",
+  "title": "Risk Scoring",
+  "slug": "risk-scoring",
+  "public": true,
+  "classIri": "urn:ngm:class:risk-scoring",
+  "domain": "finance",
+  "definition": "Risk scoring is the quantitative practice of assigning a numerical value to an entity, transaction or event to express the likelihood and potential severity of an adverse outcome such as credit default, fraud or money laundering. Scores are derived from statistical and machine-learning models trained on historical data and behavioural features, producing a calibrated probability or rank that informs automated and human decisions. In finance it underpins lending, underwriting, transaction monitoring and regulatory compliance workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

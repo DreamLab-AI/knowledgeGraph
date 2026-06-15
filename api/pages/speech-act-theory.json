@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:speech-act-theory",
+  "title": "Speech Act Theory",
+  "slug": "speech-act-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:speech-act-theory",
+  "domain": "distributed-systems",
+  "definition": "Speech Act Theory is a framework from the philosophy of language holding that utterances perform actions rather than merely describing states of affairs. In distributed and multi-agent systems it underpins agent communication languages by classifying messages as performatives such as inform, request, commit, and declare, each carrying defined intent and felicity conditions. It distinguishes the locutionary content, illocutionary force, and perlocutionary effect of a communicative act, giving coordinating agents a shared semantics for interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:coordination-protocol",
+        "label": "Coordination Protocol"
+      },
+      {
+        "id": "urn:ngm:class:negotiation",
+        "label": "Negotiation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dialogue-system",
+        "label": "Dialogue System"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

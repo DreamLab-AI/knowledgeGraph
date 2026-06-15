@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:rabbitmq",
+  "title": "Rabbitmq",
+  "slug": "rabbitmq",
+  "public": true,
+  "classIri": "urn:ngm:class:rabbitmq",
+  "domain": "infrastructure",
+  "definition": "RabbitMQ is an open-source message broker that implements the Advanced Message Queuing Protocol (AMQP) and related messaging standards, routing messages between producers and consumers through exchanges, bindings, and queues. It supports flexible routing topologies, message acknowledgement, durability, and clustering for high availability. RabbitMQ is widely used to decouple services and enable reliable asynchronous communication in distributed systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:message-broker",
+      "label": "Message Broker"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asynchronous-messaging",
+        "label": "Asynchronous Messaging"
+      },
+      {
+        "id": "urn:ngm:class:loose-coupling",
+        "label": "Loose Coupling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:routing",
+        "label": "Routing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

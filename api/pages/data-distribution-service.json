@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:data-distribution-service",
+  "title": "Data Distribution Service",
+  "slug": "data-distribution-service",
+  "public": true,
+  "classIri": "urn:ngm:class:data-distribution-service",
+  "domain": "robotics",
+  "definition": "The Data Distribution Service is a middleware standard for real-time, data-centric publish-subscribe communication between distributed system components. It defines a global data space in which publishers and subscribers exchange typed data samples without direct knowledge of one another, governed by configurable quality-of-service policies for reliability, latency, and durability. It is widely used in robotics, autonomous vehicles, and other systems requiring deterministic machine-to-machine messaging.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:middleware",
+      "label": "Middleware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-systems",
+        "label": "Real-Time Systems"
+      },
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality of Service"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ros",
+        "label": "ROS"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    }
+  ]
+}

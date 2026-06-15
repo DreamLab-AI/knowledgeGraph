@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:data-silo",
+  "title": "Data Silo",
+  "slug": "data-silo",
+  "public": true,
+  "classIri": "urn:ngm:class:data-silo",
+  "domain": "data",
+  "definition": "A data silo is an isolated repository of data controlled by one team, system, or department and not readily accessible to the rest of an organisation. Silos arise from fragmented tooling, organisational boundaries, and incompatible formats, producing duplicated, inconsistent, and underused data. They are the principal obstacle that data integration, governance, and interoperability efforts seek to dismantle.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:data-fabric",
+        "label": "Data Fabric"
+      },
+      {
+        "id": "urn:ngm:class:data-mesh",
+        "label": "Data Mesh"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-data",
+        "label": "Enterprise Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

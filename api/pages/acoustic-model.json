@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:acoustic-model",
+  "title": "Acoustic Model",
+  "slug": "acoustic-model",
+  "public": true,
+  "classIri": "urn:ngm:class:acoustic-model",
+  "domain": "artificial-intelligence",
+  "definition": "An Acoustic Model is the component of a speech-recognition system that maps audio signal features to the probability of phonetic or sub-word units. It learns the statistical relationship between observed acoustic features and the linguistic sounds that produced them, traditionally using hidden Markov models with Gaussian mixtures and increasingly using deep neural networks. Combined with a language model, it converts spoken audio into the most likely sequence of words.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:speech-recognition",
+      "label": "Speech Recognition"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:speech-processing",
+        "label": "Speech Processing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

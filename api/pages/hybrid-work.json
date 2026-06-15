@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:hybrid-work",
+  "title": "Hybrid Work",
+  "slug": "hybrid-work",
+  "public": true,
+  "classIri": "urn:ngm:class:hybrid-work",
+  "domain": "distributed-collaboration",
+  "definition": "Hybrid work is a working model that combines on-site presence with remote work, allowing employees to split their time between a central workplace and distributed locations. It blends synchronous in-person collaboration with asynchronous and video-mediated coordination, and depends on digital collaboration tooling to keep co-located and remote participants on equal footing. Hybrid work has become a default operating model for many knowledge organisations seeking flexibility without abandoning physical workspace.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:remote-work",
+      "label": "Remote Work"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:video-conferencing",
+        "label": "Video Conferencing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:slack",
+        "label": "Slack"
+      },
+      {
+        "id": "urn:ngm:class:microsoft-teams",
+        "label": "Microsoft Teams"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

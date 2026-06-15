@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:bid-ask-spread",
+  "title": "Bid Ask Spread",
+  "slug": "bid-ask-spread",
+  "public": true,
+  "classIri": "urn:ngm:class:bid-ask-spread",
+  "domain": "finance",
+  "definition": "The bid-ask spread is the difference between the highest price a buyer is willing to pay (the bid) and the lowest price a seller will accept (the ask) for an asset at a given moment. It is a core measure of market liquidity and an implicit transaction cost borne by traders who cross the spread. Narrow spreads indicate liquid, competitive markets, while wide spreads reflect thin liquidity, volatility, or elevated risk for liquidity providers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:market-microstructure",
+      "label": "Market Microstructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      },
+      {
+        "id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      },
+      {
+        "id": "urn:ngm:class:price-discovery",
+        "label": "Price Discovery"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

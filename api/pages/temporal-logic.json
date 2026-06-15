@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:temporal-logic",
+  "title": "Temporal Logic",
+  "slug": "temporal-logic",
+  "public": true,
+  "classIri": "urn:ngm:class:temporal-logic",
+  "domain": "artificial-intelligence",
+  "definition": "Temporal logic is a formal system of logic that extends classical propositional or predicate logic with operators for reasoning about propositions whose truth changes over time. Operators such as 'eventually', 'always', 'next' and 'until' allow the specification of orderings and timing of events without explicit reference to clock values. It is the standard language for stating correctness properties of reactive and concurrent systems in formal verification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:logic",
+      "label": "Logic"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-checking",
+        "label": "Model Checking"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      },
+      {
+        "id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-checking",
+        "label": "Model Checking"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:transmission-control-protocol",
+  "title": "Transmission Control Protocol",
+  "slug": "transmission-control-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:transmission-control-protocol",
+  "domain": "infrastructure",
+  "definition": "The Transmission Control Protocol (TCP) is a connection-oriented transport-layer protocol that provides reliable, ordered, and error-checked delivery of byte streams between applications over an IP network. It establishes connections through a handshake and uses acknowledgements, retransmission, and flow and congestion control to ensure data arrives intact. TCP is the dominant reliable transport underlying most internet applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transport-layer",
+      "label": "Transport Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:reliable-data-transfer",
+        "label": "Reliable Data Transfer"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:osi-model",
+        "label": "OSI Model"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:congestion-control",
+        "label": "Congestion Control"
+      },
+      {
+        "id": "urn:ngm:class:flow-control",
+        "label": "Flow Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:packet-switching",
+        "label": "Packet Switching"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "transport-layer",
+      "label": "Transport Layer"
+    }
+  ]
+}

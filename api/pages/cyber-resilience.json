@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:cyber-resilience",
+  "title": "Cyber Resilience",
+  "slug": "cyber-resilience",
+  "public": true,
+  "classIri": "urn:ngm:class:cyber-resilience",
+  "domain": "security",
+  "definition": "Cyber resilience is the capacity of an organisation or system to anticipate, withstand, recover from, and adapt to adverse cyber events while continuing to deliver its intended outcomes. It extends conventional cybersecurity from breach prevention towards graceful degradation, rapid restoration, and continuous learning under sustained attack. Cyber resilience integrates technical controls, business continuity planning, and governance so that critical functions persist even when individual defences fail.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:intrusion-detection",
+        "label": "Intrusion Detection"
+      },
+      {
+        "id": "urn:ngm:class:defense-in-depth",
+        "label": "Defense In Depth"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:security-operations",
+        "label": "Security Operations"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

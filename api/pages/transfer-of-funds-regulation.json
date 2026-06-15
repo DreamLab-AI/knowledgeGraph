@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:transfer-of-funds-regulation",
+  "title": "Transfer Of Funds Regulation",
+  "slug": "transfer-of-funds-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:transfer-of-funds-regulation",
+  "domain": "governance",
+  "definition": "The Transfer of Funds Regulation is a body of financial regulation requiring that information about the payer and payee accompany transfers of funds and certain crypto-asset transfers, so that transactions remain traceable for anti-money-laundering and counter-terrorist-financing purposes. It implements the Financial Action Task Force travel rule within a regulatory framework, obliging payment service providers and crypto-asset service providers to collect, transmit, and screen originator and beneficiary data. It is a central pillar of payment-chain transparency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "id": "urn:ngm:class:beneficial-ownership",
+        "label": "Beneficial Ownership"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:counter-terrorist-financing",
+        "label": "Counter-Terrorist Financing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-action-task-force",
+        "label": "Financial Action Task Force"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:payment-service-provider",
+        "label": "Payment Service Provider"
+      },
+      {
+        "id": "urn:ngm:class:crypto-asset-service-provider",
+        "label": "Crypto-Asset Service Provider"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

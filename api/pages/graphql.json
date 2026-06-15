@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:graphql",
+  "title": "Graphql",
+  "slug": "graphql",
+  "public": true,
+  "classIri": "urn:ngm:class:graphql",
+  "domain": "infrastructure",
+  "definition": "GraphQL is a query language and runtime for APIs in which clients specify exactly the data they need against a strongly typed schema, and the server returns precisely that shape in a single response. A single endpoint exposes a graph of types whose fields are resolved by server-side resolvers, eliminating the over-fetching and under-fetching common to fixed REST endpoints. GraphQL supports queries, mutations and subscriptions, and its self-describing schema enables strong tooling, introspection and client code generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:api-design",
+      "label": "API Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:client-server-architecture",
+        "label": "Client-Server Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

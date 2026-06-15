@@ -1,0 +1,49 @@
+- ### Definition
+	- A [[Neural Ordinary Differential Equation]] parameterises the derivative of a hidden state with a [[Neural Network]] and integrates it to produce outputs.
+	- It treats representation transformation as a continuous trajectory governed by an [[Ordinary Differential Equation]] rather than discrete layers.
+	- This continuous-depth view enables memory-efficient training within [[Deep Learning]].
+- ### Overview
+	- Conventional deep networks transform data through a fixed sequence of layers; a Neural ODE instead defines an instantaneous rate of change learned by a network.
+	- The model output is obtained by integrating this learned dynamics from an input state over a notion of depth expressed as integration time.
+	- This perspective was motivated by the observation that residual networks resemble discretised steps of a continuous flow.
+	- Training uses the adjoint sensitivity method to compute gradients with constant memory cost, decoupling memory from effective depth.
+- ### Key aspects
+	- Continuous depth: layers are replaced by integration over a continuous variable.
+	- Learned dynamics: a neural network specifies the derivative of the hidden state.
+	- Adjoint method: gradients are computed by solving an augmented ODE backwards in time.
+	- Adaptive computation: ODE solvers allocate effort according to required accuracy.
+	- Natural time-series modelling: irregularly sampled sequences fit the continuous formulation.
+- ### Mechanisms
+	- A numerical solver integrates the network-defined derivative from input to output.
+	- The adjoint method propagates gradients through the solver with bounded memory.
+	- Gradient-based optimisation updates the network parameters that define the dynamics.
+- ### Applications
+	- Modelling continuous-time [[Dynamical Systems]] and irregular time series.
+	- Building memory-efficient deep models as an alternative to a deep [[Residual Network]].
+	- Bridging [[Deep Learning]] with [[Scientific Computing]] and physical modelling.
+	- Supporting [[Simulation]] of learned continuous processes.
+- ### Relationships
+	- subClassOf:: [[Neural Network]]
+	- uses:: [[Ordinary Differential Equation]]
+	- uses:: [[Numerical Integration]]
+	- uses:: [[Backpropagation]]
+	- requires:: [[Numerical Integration]]
+	- requires:: [[Gradient Descent]]
+	- enables:: [[Dynamical Systems]]
+	- enables:: [[Simulation]]
+	- implements:: [[Ordinary Differential Equation]]
+	- partOf:: [[Deep Learning]]
+	- supports:: [[Scientific Computing]]
+	- supports:: [[Optimisation]]
+	- dependsOn:: [[Ordinary Differential Equation]]
+	- relatedTo:: [[Residual Network]]
+	- relatedTo:: [[Deep Learning]]
+	- relatedTo:: [[Dynamical Systems]]
+	- bridgesTo:: [[Ordinary Differential Equation]]
+	- bridgesTo:: [[Scientific Computing]]
+	- contrastsWith:: [[Residual Network]]
+	- contrastsWith:: [[Stochastic Differential Equation]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

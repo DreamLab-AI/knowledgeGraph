@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:cen-cenelec",
+  "title": "Cen Cenelec",
+  "slug": "cen-cenelec",
+  "public": true,
+  "classIri": "urn:ngm:class:cen-cenelec",
+  "domain": "standards",
+  "definition": "CEN-CENELEC refers to the joint operation of the European Committee for Standardization (CEN) and the European Committee for Electrotechnical Standardization (CENELEC), the recognised European Standardisation Organisations responsible for developing voluntary European Standards (EN). Together with ETSI they produce harmonised standards that support the EU single market and underpin presumption of conformity with European legislation. CEN covers general and mechanical sectors while CENELEC covers electrotechnical fields.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards-body",
+      "label": "Standards Body"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:standardization",
+        "label": "Standardisation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:iec",
+        "label": "IEC"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:standardization",
+        "label": "Standardisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:technical-standard",
+        "label": "Technical Standard"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:iec",
+        "label": "IEC"
+      },
+      {
+        "id": "urn:ngm:class:etsi",
+        "label": "ETSI"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

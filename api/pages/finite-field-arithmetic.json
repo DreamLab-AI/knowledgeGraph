@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:finite-field-arithmetic",
+  "title": "Finite Field Arithmetic",
+  "slug": "finite-field-arithmetic",
+  "public": true,
+  "classIri": "urn:ngm:class:finite-field-arithmetic",
+  "domain": "infrastructure",
+  "definition": "Finite Field Arithmetic is the set of operations - addition, subtraction, multiplication and inversion - defined over a finite field (Galois field), a mathematical structure with a finite number of elements in which every non-zero element has a multiplicative inverse. Computations stay closed within the field and behave consistently under modular reduction by a prime or irreducible polynomial. It is foundational to error-correcting codes, cryptography and many digital signal-processing algorithms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:modular-arithmetic",
+      "label": "Modular Arithmetic"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      },
+      {
+        "id": "urn:ngm:class:reed-solomon-codes",
+        "label": "Reed-Solomon Codes"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      },
+      {
+        "id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    }
+  ]
+}

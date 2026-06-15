@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:iso-9001",
+  "title": "Iso 9001",
+  "slug": "iso-9001",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-9001",
+  "domain": "governance",
+  "definition": "ISO 9001 is an international standard that specifies the requirements for a quality management system (QMS), enabling organisations to demonstrate their ability to consistently provide products and services that meet customer and regulatory requirements. Published by the International Organization for Standardization, it is built on principles such as customer focus, process approach and continual improvement. Organisations can be independently certified against ISO 9001 to evidence conformity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:continuous-improvement",
+        "label": "continuous improvement"
+      },
+      {
+        "id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "validation-process",
+      "label": "Validation Process"
+    }
+  ]
+}

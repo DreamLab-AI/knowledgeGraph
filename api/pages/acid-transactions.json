@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:acid-transactions",
+  "title": "Acid Transactions",
+  "slug": "acid-transactions",
+  "public": true,
+  "classIri": "urn:ngm:class:acid-transactions",
+  "domain": "data",
+  "definition": "ACID transactions are units of database work that uphold four guarantees: atomicity, consistency, isolation and durability. Atomicity ensures a transaction either fully completes or has no effect; consistency keeps the database in a valid state; isolation prevents concurrent transactions from interfering; and durability guarantees committed changes survive failures. Together these properties allow reliable, predictable updates to shared data and form the bedrock of relational database systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:database-management-system",
+      "label": "Database Management System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:database",
+        "label": "Database"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      },
+      {
+        "id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two-Phase Commit"
+      },
+      {
+        "id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:centralised-database",
+        "label": "Centralised Database"
+      },
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

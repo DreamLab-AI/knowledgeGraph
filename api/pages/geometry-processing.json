@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:geometry-processing",
+  "title": "Geometry Processing",
+  "slug": "geometry-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:geometry-processing",
+  "domain": "spatial-computing",
+  "definition": "Geometry processing is the field concerned with acquiring, representing, analysing and manipulating geometric models, typically triangle meshes and point clouds. It encompasses operations such as smoothing, simplification, parameterisation, remeshing and surface reconstruction, drawing on differential geometry and linear algebra. Geometry processing underpins 3D content pipelines, simulation and rendering by transforming raw or noisy geometric data into clean, structured representations suitable for downstream use.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computational-geometry",
+      "label": "Computational Geometry"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:triangulation",
+        "label": "Triangulation"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modelling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    }
+  ]
+}

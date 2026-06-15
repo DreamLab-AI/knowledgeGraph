@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:computational-neuroscience",
+  "title": "Computational Neuroscience",
+  "slug": "computational-neuroscience",
+  "public": true,
+  "classIri": "urn:ngm:class:computational-neuroscience",
+  "domain": "artificial-intelligence",
+  "definition": "Computational neuroscience is the study of the nervous system through mathematical models, simulations, and information-processing theories that describe how neurons and neural circuits represent, compute, and learn. It spans biophysical models of single neurons, network models of population dynamics, and theories of coding, plasticity, and behaviour. The field both explains experimental data and inspires artificial neural and neuromorphic systems by clarifying the principles of biological computation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    }
+  ]
+}

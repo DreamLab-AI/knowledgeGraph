@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:securities-act-1933",
+  "title": "Securities Act 1933",
+  "slug": "securities-act-1933",
+  "public": true,
+  "classIri": "urn:ngm:class:securities-act-1933",
+  "domain": "blockchain",
+  "definition": "The Securities Act of 1933 is the foundational United States federal statute governing the offer and sale of securities. It requires that securities offered to the public be registered with regulators and accompanied by truthful disclosure, with the aim of preventing fraud and protecting investors. In digital-asset contexts it is central to determining whether a token sale constitutes an unregistered securities offering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:securities-law",
+      "label": "Securities Law"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:howey-test",
+        "label": "Howey Test"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:securities-law",
+        "label": "Securities Law"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    }
+  ]
+}

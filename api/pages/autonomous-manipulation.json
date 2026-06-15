@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:autonomous-manipulation",
+  "title": "Autonomous Manipulation",
+  "slug": "autonomous-manipulation",
+  "public": true,
+  "classIri": "urn:ngm:class:autonomous-manipulation",
+  "domain": "robotics",
+  "definition": "Autonomous manipulation is the capability of a robot to perceive, plan and physically interact with objects to achieve a task goal without step-by-step human teleoperation. It integrates perception, grasp and motion planning, force control and feedback to handle uncertainty in object pose, shape and contact dynamics. The aim is robust, closed-loop interaction in unstructured environments rather than the repetition of pre-programmed trajectories.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotic-manipulation",
+      "label": "Robotic Manipulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:humanoid-robotics",
+        "label": "Humanoid Robotics"
+      },
+      {
+        "id": "urn:ngm:class:pick-and-place",
+        "label": "Pick And Place"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:robot-perception",
+        "label": "Robot Perception"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:robot-control",
+        "label": "Robot Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:pick-and-place",
+        "label": "Pick And Place"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

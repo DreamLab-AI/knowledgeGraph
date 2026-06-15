@@ -1,0 +1,37 @@
+- ### Definition
+	- [[Onem2M]] is a global standard defining a common [[Service Layer]] for machine-to-machine and [[IoT]] communication.
+	- It is developed by a partnership of regional standards bodies including [[ETSI]] to deliver cross-domain [[Interoperability]].
+	- It exposes reusable [[IoT Infrastructure]] capabilities through a RESTful resource model.
+- ### Overview
+	- IoT deployments historically grew as vertical silos, each with bespoke protocols and data models, preventing reuse across smart-home, transport, energy, and industrial domains.
+	- oneM2M addresses this by specifying a horizontal middleware — the Common Services Layer — that sits between connectivity protocols below and applications above.
+	- It defines standard resource types, a uniform RESTful API, and bindings over transports such as HTTP, CoAP, and MQTT, so a device or application written once can interoperate broadly.
+	- The standard also covers security, access control, subscription and notification, group management, and semantic discovery.
+- ### Mechanisms
+	- A resource-oriented architecture where everything is a uniformly addressable resource.
+	- Common service functions for registration, data management, device management, and discovery.
+	- Protocol bindings to [[REST]], [[CoAP]], and [[MQTT]] for transport flexibility.
+	- Semantic annotation to enable cross-vertical data interpretation.
+- ### Applications
+	- Interoperable [[Smart City]] platforms integrating sensors across departments.
+	- Connected-vehicle and transport telematics backends.
+	- Smart-energy and utility metering infrastructures.
+	- Industrial and building-automation IoT gateways.
+- ### Relationships
+	- partOf:: [[IoT Infrastructure]]
+	- hasPart:: [[Service Layer]]
+	- standardizedBy:: [[ETSI]]
+	- enables:: [[Interoperability]]
+	- enables:: [[IoT]]
+	- uses:: [[REST]]
+	- uses:: [[CoAP]]
+	- uses:: [[MQTT]]
+	- supports:: [[Smart City]]
+	- supports:: [[IoT]]
+	- implements:: [[Service Layer]]
+	- relatedTo:: [[Standards]]
+	- relatedTo:: [[Interoperability]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

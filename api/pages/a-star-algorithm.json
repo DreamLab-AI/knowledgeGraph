@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:a-star-algorithm",
+  "title": "A Star Algorithm",
+  "slug": "a-star-algorithm",
+  "public": true,
+  "classIri": "urn:ngm:class:a-star-algorithm",
+  "domain": "artificial-intelligence",
+  "definition": "The A Star algorithm is an informed graph-search method that finds a least-cost path between nodes by combining the accumulated cost from the start with a heuristic estimate of the remaining cost to the goal. By expanding the node with the lowest combined estimate, it guarantees an optimal path when the heuristic is admissible. A Star generalises Dijkstra's algorithm by adding goal-directed guidance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:search-algorithm",
+      "label": "Search Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:informed-search",
+        "label": "Informed Search"
+      },
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:game-ai",
+        "label": "Game AI"
+      },
+      {
+        "id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dijkstra-algorithm",
+      "label": "Dijkstra Algorithm"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "rrt-algorithm",
+      "label": "RRT Algorithm"
+    }
+  ]
+}

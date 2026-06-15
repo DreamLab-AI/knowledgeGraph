@@ -1,0 +1,39 @@
+- ### Definition
+  - Node.js is a [[Runtime Environment]] that runs JavaScript on the server.
+  - Its event loop and non-blocking [[API]] suit high-concurrency [[Microservices]].
+  - It is widely used to build [[Web3]] tooling and interact with [[Ethereum]] [[Smart Contract]] code.
+- ### Overview
+  - Node.js couples the V8 engine with an asynchronous event loop, allowing a single thread to multiplex thousands of network connections.
+  - Its CommonJS and ES module systems plus the npm registry give access to a vast library ecosystem.
+  - These properties make it a default choice for back-end services, API gateways and developer tooling.
+- ### Key aspects
+  - Single-threaded, event-driven, non-blocking I/O model.
+  - V8-based just-in-time compilation of JavaScript.
+  - npm package ecosystem and module resolution.
+  - Streams, buffers and asynchronous primitives for I/O.
+- ### Applications
+  - RESTful and GraphQL API back-ends and microservices.
+  - Build tooling, bundlers and command-line utilities.
+  - Blockchain development frameworks and JSON-RPC clients.
+- ### Operational notes
+  - Scales horizontally well for I/O-bound workloads.
+  - CPU-bound tasks benefit from worker threads or offloading.
+  - Long-term-support releases provide production stability.
+- ### Relationships
+  - partOf:: [[Runtime Environment]]
+  - hasPart:: [[API]]
+  - requires:: [[Network Protocol]]
+  - uses:: [[Microservices]]
+  - uses:: [[API]]
+  - enables:: [[Distributed Systems]]
+  - enables:: [[Smart Contract]]
+  - supports:: [[Web3]]
+  - supports:: [[Distributed Collaboration]]
+  - relatedTo:: [[Ethereum]]
+  - relatedTo:: [[Infrastructure]]
+  - dependsOn:: [[Authentication]]
+  - bridgesTo:: [[Low Latency]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - quality:: 0.62

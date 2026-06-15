@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:traditional-corporation",
+  "title": "Traditional Corporation",
+  "slug": "traditional-corporation",
+  "public": true,
+  "classIri": "urn:ngm:class:traditional-corporation",
+  "domain": "blockchain",
+  "definition": "A traditional corporation is a centralised legal entity owned by shareholders and directed by a board, granting limited liability and a hierarchical management structure under company law. Decision-making authority and capital are concentrated, with accountability mediated through fiduciary duties and regulatory oversight. It is the conventional organisational form against which decentralised autonomous organisations are contrasted.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:fiduciary-duty",
+        "label": "Fiduciary Duty"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:fiduciary-duty",
+        "label": "Fiduciary Duty"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:rule-of-law",
+        "label": "Rule Of Law"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:fiduciary-duty",
+        "label": "Fiduciary Duty"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

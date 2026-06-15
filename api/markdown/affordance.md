@@ -1,0 +1,35 @@
+- ### Definition
+- An affordance is the relationship between an agent and an artefact whereby the artefact's features signal what actions are possible. It is central to [[Interaction Design]] and [[Human-Computer Interaction]], shaping how [[User Interface]] elements communicate their use and how [[Perception]] drives action.
+- ### Overview
+- The term was coined in ecological psychology to describe action possibilities an environment offers an organism, then adapted to design to distinguish real affordances from perceived affordances: a control may physically permit an action, but only a perceived affordance makes that action discoverable.
+- In spatial computing the concept becomes especially important, because [[Augmented Reality]] and [[Virtual Reality]] interfaces lack the inherited conventions of flat screens and must build perceptible cues for grabbing, pushing or pointing into the design itself.
+- ### Key aspects
+- Real versus perceived affordances and the role of signifiers.
+- The match between an artefact's features and an agent's capabilities.
+- Discoverability: making available actions visible without instruction.
+- Constraints that complement affordances by ruling out invalid actions.
+- Feedback loops that confirm an affordance was acted upon successfully.
+- ### Applications
+- Designing grab, point and gesture interactions in [[Augmented Reality]] and [[Virtual Reality]].
+- Improving [[Usability]] and [[User Experience]] through self-evident controls.
+- Supporting [[Accessibility]] by offering multiple perceptible cues per action.
+- Informing [[Gesture Recognition]] vocabularies that feel natural to learn.
+- ### Relationships
+- hasPart:: [[Perception]]
+- hasPart:: [[Usability]]
+- partOf:: [[Human-Computer Interaction]]
+- enables:: [[User Experience]]
+- enables:: [[Gesture Recognition]]
+- supports:: [[Accessibility]]
+- supports:: [[User Interface]]
+- dependsOn:: [[Perception]]
+- dependsOn:: [[Scene Understanding]]
+- uses:: [[User-Centred Design]]
+- relatedTo:: [[Augmented Reality]]
+- relatedTo:: [[Virtual Reality]]
+- relatedTo:: [[Ergonomics]]
+- relatedTo:: [[Cognitive Load]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

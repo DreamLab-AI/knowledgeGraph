@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:graph-query-language",
+  "title": "Graph Query Language",
+  "slug": "graph-query-language",
+  "public": true,
+  "classIri": "urn:ngm:class:graph-query-language",
+  "domain": "data",
+  "definition": "A graph query language is a declarative language for expressing queries, traversals, and pattern matches over graph-structured data composed of nodes and edges. Rather than joining tables, it lets users describe paths and subgraph patterns directly, making relationship-centric questions concise. Examples include Cypher and Gremlin, with GQL emerging as an ISO standard that unifies property-graph querying alongside the W3C SPARQL language for RDF.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graph-database",
+      "label": "Graph Database"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      },
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "urn:visionflow:page:liquid-staking-token",
+  "title": "Liquid Staking Token",
+  "slug": "liquid-staking-token",
+  "public": true,
+  "classIri": "urn:ngm:class:liquid-staking-token",
+  "domain": "blockchain",
+  "definition": "A liquid staking token (LST) is a transferable token issued to a user in exchange for assets staked through a liquid-staking protocol, representing a claim on the underlying stake plus accrued rewards. It frees staked capital from the usual lock-up by remaining tradable and composable across decentralised-finance applications while the principal continues to secure the network. The token's value tracks the staked position, accruing yield either through a rising exchange rate or a growing balance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:liquid-staking",
+      "label": "Liquid Staking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:defi",
+        "label": "DeFi"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:liquid-staking",
+        "label": "Liquid Staking"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:token-minting",
+        "label": "Token Minting"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:lido",
+        "label": "Lido"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:liquid-staking",
+        "label": "Liquid Staking"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reward-distribution",
+        "label": "Reward Distribution"
+      },
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-validator",
+        "label": "Blockchain Validator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

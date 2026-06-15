@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:protobuf",
+  "title": "Protobuf",
+  "slug": "protobuf",
+  "public": true,
+  "classIri": "urn:ngm:class:protobuf",
+  "domain": "infrastructure",
+  "definition": "Protocol Buffers (Protobuf) is a language-neutral, platform-neutral mechanism for serialising structured data using a compact binary wire format defined by an interface description in a .proto schema. A code generator produces typed accessors in many languages from that schema, enabling efficient, forwards- and backwards-compatible message exchange. It is the default payload format for gRPC and is widely used for high-throughput inter-service communication and storage.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-format",
+      "label": "Data Format"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      },
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:serialisation",
+        "label": "Serialisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "id": "urn:ngm:class:schema-registry",
+        "label": "Schema Registry"
+      },
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

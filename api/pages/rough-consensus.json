@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:rough-consensus",
+  "title": "Rough Consensus",
+  "slug": "rough-consensus",
+  "public": true,
+  "classIri": "urn:ngm:class:rough-consensus",
+  "domain": "standards",
+  "definition": "Rough consensus is a decision-making principle, central to internet standards development, in which a working group adopts a position when the dominant view has been established and substantive objections have been addressed, rather than requiring unanimity or a formal majority vote. Famously paired with running code in the IETF, it favours technically sound, broadly acceptable outcomes over precise headcounts. The chair judges the sense of the group, ensuring dissent is engaged with rather than merely outnumbered.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:consensus",
+      "label": "Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:working-group",
+        "label": "Working Group"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:governance-mechanism",
+        "label": "Governance Mechanism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:standardization",
+        "label": "Standardization"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

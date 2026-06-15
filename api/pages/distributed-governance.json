@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:distributed-governance",
+  "title": "Distributed Governance",
+  "slug": "distributed-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:distributed-governance",
+  "domain": "blockchain",
+  "definition": "Distributed governance is a model of collective decision-making in which authority over a protocol, network or organisation is spread across many independent participants rather than held by a central body. In blockchain systems it is typically enacted through on-chain mechanisms such as token-weighted or quadratic voting, proposals and treasury control, allowing stakeholders to direct upgrades, parameters and resource allocation. It aims to align incentives, resist capture and make governance transparent and verifiable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-governance",
+      "label": "Decentralised Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-autonomous-organization",
+        "label": "Decentralized Autonomous Organization"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:quadratic-voting",
+        "label": "Quadratic Voting"
+      },
+      {
+        "id": "urn:ngm:class:multisignature",
+        "label": "Multisignature"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:stakeholder",
+        "label": "Stakeholder"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-autonomous-organization",
+      "label": "Decentralized Autonomous Organization"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    }
+  ]
+}

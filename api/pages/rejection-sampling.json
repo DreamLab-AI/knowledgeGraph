@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:rejection-sampling",
+  "title": "Rejection Sampling",
+  "slug": "rejection-sampling",
+  "public": true,
+  "classIri": "urn:ngm:class:rejection-sampling",
+  "domain": "artificial-intelligence",
+  "definition": "Rejection sampling is a Monte Carlo technique for drawing samples from a target probability distribution by sampling from a simpler proposal distribution and accepting or rejecting each draw according to a ratio test. It requires a proposal that bounds the target up to a constant and yields exact samples from the target when accepted. In machine learning it also names a practical method of generating candidate model outputs, scoring them and keeping only those that pass a quality or reward threshold.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sampling",
+      "label": "Sampling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:normalizing-flow",
+        "label": "Normalizing Flow"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    }
+  ]
+}

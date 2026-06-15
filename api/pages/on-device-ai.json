@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:on-device-ai",
+  "title": "On Device Ai",
+  "slug": "on-device-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:on-device-ai",
+  "domain": "machine-learning",
+  "definition": "On-device AI is the execution of machine-learning inference, and increasingly some training, directly on an end-user device such as a phone, wearable or embedded sensor, rather than sending data to remote servers. Keeping computation local reduces latency, removes network dependence and improves privacy because raw data need not leave the device. It relies on model compression, quantisation and hardware acceleration to fit capable models within tight power, memory and compute budgets, and it is a cornerstone of edge AI and privacy-preserving machine learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:edge-ai",
+      "label": "Edge AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-machine-learning",
+        "label": "Privacy-Preserving Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-optimization",
+        "label": "Model Optimization"
+      },
+      {
+        "id": "urn:ngm:class:tinyml",
+        "label": "TinyML"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mobile-computing",
+        "label": "Mobile Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

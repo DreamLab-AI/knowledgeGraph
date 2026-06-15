@@ -47,7 +47,7 @@ public:: true
         "label": "Sensor Data"
       },
       {
-        "@id": "urn:ngm:class:real-time-data-streaming",
+        "@id": "urn:ngm:class:real-time-streaming",
         "label": "Real-Time Data Streaming"
       },
       {

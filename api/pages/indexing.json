@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:indexing",
+  "title": "Indexing",
+  "slug": "indexing",
+  "public": true,
+  "classIri": "urn:ngm:class:indexing",
+  "domain": "data",
+  "definition": "Indexing is the technique of building auxiliary data structures that allow a system to locate records satisfying a query without scanning the entire dataset. By maintaining ordered or hashed mappings from key values to record locations, indexes turn linear searches into logarithmic or constant-time lookups, dramatically improving query performance at the cost of additional storage and update overhead. It is fundamental to databases, search engines and information retrieval.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:search-index",
+        "label": "Search Index"
+      },
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:database",
+        "label": "Database"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sharding",
+        "label": "Sharding"
+      },
+      {
+        "id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

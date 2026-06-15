@@ -189,7 +189,7 @@ alias:: Cyber-Physical Systems
         "label": "SCADA"
       },
       {
-        "@id": "urn:ngm:class:cyber-security",
+        "@id": "urn:ngm:class:security",
         "label": "Cyber Security"
       }
     ]

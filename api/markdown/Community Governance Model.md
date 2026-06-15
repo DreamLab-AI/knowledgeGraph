@@ -162,10 +162,6 @@ public:: true
         "label": "Dispute Resolution Process"
       },
       {
-        "@id": "urn:ngm:class:proposal-mechanism",
-        "label": "Proposal Mechanism"
-      },
-      {
         "@id": "urn:ngm:class:voting-systems",
         "label": "Voting Systems"
       },

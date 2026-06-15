@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:voronoi-diagram",
+  "title": "Voronoi Diagram",
+  "slug": "voronoi-diagram",
+  "public": true,
+  "classIri": "urn:ngm:class:voronoi-diagram",
+  "domain": "spatial-computing",
+  "definition": "A Voronoi diagram is a partition of a plane (or higher-dimensional space) into regions based on proximity to a set of seed points, where each region contains all locations closer to its seed than to any other. It is a foundational structure in computational geometry, dual to the Delaunay triangulation, and supports nearest-neighbour queries, spatial interpolation and procedural generation. Voronoi tessellations appear across spatial analysis, graphics and natural sciences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computational-geometry",
+      "label": "Computational Geometry"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tessellation",
+        "label": "Tessellation"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbour",
+        "label": "Nearest Neighbour"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:nearest-neighbour-search",
+        "label": "Nearest-Neighbour Search"
+      },
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-analysis",
+        "label": "Spatial Analysis"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:spatial-partitioning",
+        "label": "Spatial Partitioning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:delaunay-triangulation",
+        "label": "Delaunay Triangulation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:geometry",
+        "label": "Geometry"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      },
+      {
+        "id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-data-structure",
+        "label": "Spatial Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:spatial-index",
+        "label": "Spatial Index"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    }
+  ]
+}

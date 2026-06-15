@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:adaptive-bitrate-streaming",
+  "title": "Adaptive Bitrate Streaming",
+  "slug": "adaptive-bitrate-streaming",
+  "public": true,
+  "classIri": "urn:ngm:class:adaptive-bitrate-streaming",
+  "domain": "infrastructure",
+  "definition": "Adaptive bitrate streaming (ABR) is a media delivery technique that encodes content at multiple quality levels and dynamically switches between them in response to measured network throughput and client buffer state. The player requests short segments at the highest sustainable bitrate, smoothing playback over variable connections. It underpins modern over-the-top video via protocols such as HLS and MPEG-DASH delivered over HTTP and content delivery networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:video-streaming",
+      "label": "Video Streaming"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:codec",
+        "label": "Codec"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lossless-compression",
+        "label": "Lossless Compression"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:video-streaming",
+        "label": "Video Streaming"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lossy-compression",
+        "label": "Lossy Compression"
+      },
+      {
+        "id": "urn:ngm:class:mpeg",
+        "label": "MPEG"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

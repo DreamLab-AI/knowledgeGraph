@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:item-response-theory",
+  "title": "Item Response Theory",
+  "slug": "item-response-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:item-response-theory",
+  "domain": "artificial-intelligence",
+  "definition": "Item Response Theory (IRT) is a family of psychometric models that relate the probability of a correct response to a test item to a latent trait of the respondent, such as ability, and to properties of the item, such as difficulty and discrimination. Unlike classical test theory, IRT places examinees and items on a common scale, enabling adaptive testing, equating across forms, and fine-grained measurement of ability. It is widely used in assessment, educational technology, and the adaptive components of intelligent learning systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:adaptive-learning",
+      "label": "Adaptive Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bayesian-knowledge-tracing",
+        "label": "Bayesian Knowledge Tracing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bayesian-knowledge-tracing",
+        "label": "Bayesian Knowledge Tracing"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    }
+  ]
+}

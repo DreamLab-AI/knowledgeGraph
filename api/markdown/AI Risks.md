@@ -802,10 +802,6 @@ public:: true
         "label": "Insurance Underwriting"
       },
       {
-        "@id": "urn:ngm:class:international-coordination",
-        "label": "International Coordination"
-      },
-      {
         "@id": "urn:ngm:class:knowledge-graph-publication-classifier",
         "label": "Public Awareness"
       },

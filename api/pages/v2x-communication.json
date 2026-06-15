@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:v2x-communication",
+  "title": "V2X Communication",
+  "slug": "v2x-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:v2x-communication",
+  "domain": "artificial-intelligence",
+  "definition": "Vehicle-to-everything (V2X) communication is a wireless technology that lets vehicles exchange real-time information with other vehicles, roadside infrastructure, pedestrians, and networks. It extends the perception of automated and connected vehicles beyond their onboard sensors by sharing position, speed, intent, and hazard data, improving safety and traffic efficiency. Implemented through cellular C-V2X or dedicated short-range radio standards, it is a key enabler of cooperative driving and intelligent transport systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:wireless-communication",
+      "label": "Wireless Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:traffic-management",
+        "label": "Traffic Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:5g",
+        "label": "5G"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:5g",
+        "label": "5G"
+      },
+      {
+        "id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      },
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:etsi-gr-mec-032",
+        "label": "ETSI GR MEC 032"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:5g-network",
+        "label": "5G Network"
+      },
+      {
+        "id": "urn:ngm:class:traffic-management",
+        "label": "Traffic Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

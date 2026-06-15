@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:saml-assertion",
+  "title": "Saml Assertion",
+  "slug": "saml-assertion",
+  "public": true,
+  "classIri": "urn:ngm:class:saml-assertion",
+  "domain": "security",
+  "definition": "A SAML assertion is an XML-based security token, issued by an identity provider, that conveys statements about an authenticated subject to a relying service provider. Assertions carry authentication, attribute and authorisation-decision statements, are bound to a subject and validity window, and are protected by XML digital signatures to ensure integrity and origin. They are the core data structure exchanged in SAML single sign-on and federated identity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:saml",
+      "label": "SAML"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:identity-federation",
+        "label": "Identity Federation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      },
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

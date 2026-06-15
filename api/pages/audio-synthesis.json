@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:audio-synthesis",
+  "title": "Audio Synthesis",
+  "slug": "audio-synthesis",
+  "public": true,
+  "classIri": "urn:ngm:class:audio-synthesis",
+  "domain": "artificial-intelligence",
+  "definition": "Audio synthesis is the generation of audio signals, including speech, music, and sound effects, from symbolic, textual, or latent representations. Contemporary approaches use deep generative models such as autoregressive networks, diffusion models, and neural vocoders to produce high-fidelity waveforms. It underpins text-to-speech, music generation, and sound design, and is a core modality of generative artificial intelligence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:speech-synthesis",
+        "label": "SpeechSynthesis"
+      },
+      {
+        "id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:content-generation",
+        "label": "Content Generation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      },
+      {
+        "id": "urn:ngm:class:gan",
+        "label": "GAN"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

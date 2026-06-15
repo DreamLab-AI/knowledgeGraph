@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:edge-detection",
+  "title": "Edge Detection",
+  "slug": "edge-detection",
+  "public": true,
+  "classIri": "urn:ngm:class:edge-detection",
+  "domain": "artificial-intelligence",
+  "definition": "Edge detection is a computer vision technique that identifies points in a digital image where brightness changes sharply, marking the boundaries of objects, surfaces and textures. It typically computes image gradients and applies thresholding to produce a binary or magnitude map of edges. As a low-level feature operator it underpins higher-level tasks such as segmentation, object detection and shape analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:feature-detection",
+      "label": "Feature Detection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:gradient",
+        "label": "Gradient"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:machine-vision",
+        "label": "Machine Vision"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:xapi",
+  "title": "Xapi",
+  "slug": "xapi",
+  "public": true,
+  "classIri": "urn:ngm:class:xapi",
+  "domain": "spatial-computing",
+  "definition": "xAPI (the Experience API, also known as Tin Can API) is an e-learning interoperability specification that captures learning experiences as actor-verb-object statements sent to a Learning Record Store. Unlike SCORM, it records learning that occurs outside a single course or platform, including informal, mobile and simulation-based activity. xAPI underpins rich learning analytics by providing a flexible, standardised data model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:education-technology",
+      "label": "Education Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

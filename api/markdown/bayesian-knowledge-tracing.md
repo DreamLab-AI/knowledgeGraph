@@ -1,0 +1,31 @@
+- ### Definition
+  - [[Bayesian Knowledge Tracing]] is a probabilistic learner-modelling method that infers latent skill mastery from response sequences, underpinning [[Adaptive Learning]] and [[Intelligent Tutoring System]] pacing. It applies a hidden Markov model to estimate when a student has learned each skill, drawing on [[Machine Learning]] and [[Cognitive Science]].
+- ### Overview
+  - BKT represents each skill's mastery as an unobservable binary state. After each attempt, Bayesian updating revises the probability of mastery using whether the response was correct, accounting for the chance that a knowing student slipped or an unknowing student guessed.
+  - The model's four parameters — prior knowledge, transition (learning) rate, guess rate, and slip rate — are typically fitted from historical response data per skill, allowing the tutor to predict performance and decide when a learner is ready to advance.
+- ### Mechanisms
+  - The hidden Markov state evolves only from not-mastered to mastered, reflecting that knowledge, once acquired, is assumed retained within a session.
+  - Guess and slip parameters separate true mastery from noisy observations.
+  - Posterior mastery probability drives decisions to advance, remediate, or repeat.
+  - Parameter fitting uses expectation-maximisation or gradient methods over logged interactions.
+- ### Applications
+  - Skill-by-skill progress tracking in cognitive tutors for mathematics and programming.
+  - Mastery-based gating that holds learners on a topic until a threshold is reached.
+  - Dashboards reporting estimated mastery to learners and instructors.
+  - Content sequencing in [[Personalised Learning]] platforms.
+- ### Relationships
+  - partOf:: [[Adaptive Learning]]
+  - partOf:: [[Intelligent Tutoring System]]
+  - uses:: [[Machine Learning]]
+  - implements:: [[Adaptive Learning]]
+  - enables:: [[Personalised Learning]]
+  - enables:: [[Intelligent Tutoring System]]
+  - requires:: [[Educational Technology]]
+  - supports:: [[Personalised Learning]]
+  - contrastsWith:: [[Item Response Theory]]
+  - relatedTo:: [[Item Response Theory]]
+  - relatedTo:: [[Spaced Repetition]]
+  - relatedTo:: [[Cognitive Science]]
+  - bridgesTo:: [[Artificial Intelligence]]
+- ### Provenance
+  - updated:: 2026-06-15

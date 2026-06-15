@@ -1,0 +1,40 @@
+- ### Definition
+  - [[Distributed Trust]] replaces a central authority with [[Cryptography]], [[Consensus Mechanism]]s and [[Byzantine Fault Tolerance]], enabling [[Trustless Transaction]]s on a [[Blockchain]].
+- ### Overview
+  - Distributed trust spreads the assurance of correctness across many participants so that compromising any minority cannot subvert the system.
+  - It combines cryptographic verification, consensus over shared state, and incentives that reward honest behaviour.
+  - The result is systems where strangers can transact and coordinate without a central intermediary.
+- ### Mechanisms
+  - Consensus protocols tolerant of faulty or adversarial nodes.
+  - Cryptographic signatures and hashing to make tampering detectable.
+  - Economic incentives and slashing to align participant behaviour.
+  - Replicated, append-only ledgers that anyone can independently verify.
+- ### Applications
+  - Permissionless blockchains and cryptocurrencies.
+  - Decentralised finance and trustless settlement.
+  - Web-of-trust identity and reputation systems.
+  - Tamper-evident provenance and supply-chain records.
+- ### Relationships
+  - partOf:: [[Blockchain]]
+  - partOf:: [[Decentralisation]]
+  - implements:: [[Consensus Mechanism]]
+  - implements:: [[Byzantine Fault Tolerance]]
+  - dependsOn:: [[Cryptography]]
+  - dependsOn:: [[Consensus Mechanism]]
+  - dependsOn:: [[Digital Signature]]
+  - enables:: [[Trustless Transaction]]
+  - enables:: [[Decentralisation]]
+  - enables:: [[Smart Contract]]
+  - uses:: [[Merkle Tree]]
+  - uses:: [[Distributed Ledger]]
+  - supports:: [[Decentralised Finance]]
+  - supports:: [[Web of Trust]]
+  - bridgesTo:: [[Web of Trust]]
+  - bridgesTo:: [[Reputation System]]
+  - contrastsWith:: [[Trust]]
+  - relatedTo:: [[Immutability]]
+  - relatedTo:: [[Provenance]]
+  - relatedTo:: [[Identity]]
+- ### Provenance
+  - This class was materialised to resolve existing inbound references in the knowledge graph.
+  - updated:: 2026-06-15

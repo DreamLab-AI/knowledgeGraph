@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:supply-chain-data",
+  "title": "Supply Chain Data",
+  "slug": "supply-chain-data",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-data",
+  "domain": "blockchain",
+  "definition": "Supply chain data is the structured information captured as goods, materials, and assets move through production and distribution networks, including provenance, location, condition, custody, and transaction records. When anchored on a blockchain or distributed ledger, this data gains tamper-evidence and shared, verifiable lineage across organisational boundaries, enabling end-to-end traceability. Reliable supply chain data underpins recall management, compliance, anti-counterfeiting, and sustainability reporting across multi-party supply chains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain",
+      "label": "Supply Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      },
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:sensor-network",
+        "label": "Sensor Network"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet Of Things"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:iot",
+        "label": "IoT"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    }
+  ]
+}

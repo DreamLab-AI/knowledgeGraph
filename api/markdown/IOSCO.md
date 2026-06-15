@@ -79,10 +79,6 @@ public:: true
       {
         "@id": "urn:ngm:class:imf",
         "label": "IMF"
-      },
-      {
-        "@id": "urn:ngm:class:world-bank",
-        "label": "World Bank"
       }
     ],
     "standardizedBy": [

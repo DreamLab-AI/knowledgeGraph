@@ -59,10 +59,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:kernel",
-        "label": "Kernel"
-      },
-      {
         "@id": "urn:ngm:class:process-scheduler",
         "label": "Process Scheduler"
       },

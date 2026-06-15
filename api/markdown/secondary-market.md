@@ -1,0 +1,46 @@
+- ### Definition
+	- A [[Secondary Market]] is a venue where existing financial assets are traded among investors after their initial issuance.
+	- It provides [[Liquidity]] and continuous [[Price Discovery]] by letting holders exit and new buyers enter.
+	- Secondary markets underpin [[Finance]] because resale ability makes initial investment attractive.
+- ### Overview
+	- When an asset is first created it is sold in a primary market; thereafter it changes hands in the secondary market.
+	- These markets give investors confidence that they can convert holdings back into cash, lowering the cost of capital for issuers.
+	- Continuous trading aggregates information into prices, providing a real-time signal of an asset's value.
+	- Secondary markets exist across asset classes, from equities and bonds to tokenised assets traded on decentralised venues.
+- ### Key aspects
+	- Liquidity provision: enabling holders to buy and sell with minimal friction.
+	- Price discovery: aggregating supply and demand into observable prices.
+	- Transferability: separating the act of investing from the act of exiting.
+	- Market depth: the volume available at given prices, shaping execution quality.
+	- Continuous valuation: ongoing trading marks positions to current market value.
+- ### Mechanisms
+	- Buyers and sellers submit orders that are matched on an exchange or marketplace.
+	- Market makers and liquidity providers narrow spreads and absorb temporary imbalances.
+	- Settlement transfers ownership and funds once a trade is agreed.
+- ### Applications
+	- Trading equities, bonds, and other instruments on exchanges.
+	- Providing exit liquidity for early investors and issuers in [[Capital Allocation]].
+	- Trading tokenised assets on a [[Decentralised Exchange]].
+	- Supporting valuation and [[Asset Trading]] across the financial system.
+- ### Relationships
+	- subClassOf:: [[Finance]]
+	- enables:: [[Liquidity]]
+	- enables:: [[Price Discovery]]
+	- enables:: [[Asset Trading]]
+	- supports:: [[Capital Allocation]]
+	- supports:: [[Liquidity]]
+	- uses:: [[Asset Trading]]
+	- uses:: [[Price Discovery]]
+	- requires:: [[Liquidity]]
+	- hasPart:: [[Asset Trading]]
+	- relatedTo:: [[Decentralised Exchange]]
+	- relatedTo:: [[Interest Rate]]
+	- relatedTo:: [[Capital Allocation]]
+	- implements:: [[Price Discovery]]
+	- dependsOn:: [[Liquidity]]
+	- contrastsWith:: [[Capital Allocation]]
+	- bridgesTo:: [[Decentralised Exchange]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

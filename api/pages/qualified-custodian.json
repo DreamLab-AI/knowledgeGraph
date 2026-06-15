@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:qualified-custodian",
+  "title": "Qualified Custodian",
+  "slug": "qualified-custodian",
+  "public": true,
+  "classIri": "urn:ngm:class:qualified-custodian",
+  "domain": "blockchain",
+  "definition": "A qualified custodian is a regulated financial institution authorised to hold client assets, including digital assets, under fiduciary and supervisory standards set by securities regulators. It provides segregated accounts, independent audit and statutory protections that distinguish it from informal custody arrangements. For institutional investors, using a qualified custodian is often a regulatory precondition for holding crypto assets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset-custody",
+      "label": "Digital Asset Custody"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      },
+      {
+        "id": "urn:ngm:class:custodial-wallet",
+        "label": "Custodial Wallet"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-reserve",
+        "label": "Proof of Reserve"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody"
+      },
+      {
+        "id": "urn:ngm:class:custodial-exchange",
+        "label": "Custodial Exchange"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    }
+  ]
+}

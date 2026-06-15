@@ -1,0 +1,36 @@
+- ### Definition
+  - Threshold selection is part of [[Model Evaluation]] for [[Classification]] systems.
+  - It uses the [[ROC Curve]] and [[Precision-Recall Curve]] to visualise trade-offs.
+  - The choice balances [[Precision]] against [[Recall]] and reads from the [[Confusion Matrix]].
+- ### Overview
+  - A probabilistic classifier outputs scores; the threshold determines which scores become positive predictions.
+  - Raising the threshold increases precision but reduces recall, and vice versa, so the optimal point reflects business costs and class balance.
+  - Methods include maximising F1 or Youden's J, cost-weighted optimisation, and matching a target operating point.
+- ### Mechanisms
+  - Sweeping thresholds to trace ROC and PR curves.
+  - Cost-sensitive optimisation weighting false positives and negatives.
+  - Maximising composite metrics such as F1 or Youden's J.
+  - Calibration to make scores interpretable as probabilities.
+- ### Applications
+  - Tuning fraud and anomaly detectors to control alert volume.
+  - Setting clinical screening cut-offs to favour sensitivity.
+  - Balancing precision and recall in information retrieval.
+- ### Relationships
+  - partOf:: [[Model Evaluation]]
+  - enables:: [[Classification]]
+  - enables:: [[Inference]]
+  - uses:: [[ROC Curve]]
+  - uses:: [[Precision-Recall Curve]]
+  - uses:: [[Confusion Matrix]]
+  - dependsOn:: [[Precision]]
+  - dependsOn:: [[Recall]]
+  - dependsOn:: [[Specificity]]
+  - relatedTo:: [[Sensitivity]]
+  - relatedTo:: [[F1 Score]]
+  - relatedTo:: [[Evaluation Metric]]
+  - supports:: [[Supervised Learning]]
+  - bridgesTo:: [[Statistical Inference]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - quality:: 0.62

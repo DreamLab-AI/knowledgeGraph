@@ -117,7 +117,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:dropout-regularisation",
+        "@id": "urn:ngm:class:dropout",
         "label": "Dropout Regularisation"
       },
       {

@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:embodied-interaction",
+  "title": "Embodied Interaction",
+  "slug": "embodied-interaction",
+  "public": true,
+  "classIri": "urn:ngm:class:embodied-interaction",
+  "domain": "spatial-computing",
+  "definition": "Embodied interaction is an approach to human-computer interaction in which the user's body, physical movement, and spatial context are the primary means of engaging with digital systems. It draws on theories of embodied cognition, treating perception and action as inseparable, and is central to virtual, augmented, and mixed reality where users act through avatars and natural gesture. The paradigm prioritises tangible, gestural, and full-body input over abstract symbolic command.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:proprioceptive-sensing",
+        "label": "Proprioceptive Sensing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:social-presence-theory",
+        "label": "Social Presence Theory"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:proxemics",
+        "label": "Proxemics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

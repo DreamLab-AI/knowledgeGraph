@@ -1,0 +1,32 @@
+- ### Definition
+- Word embeddings are dense vector representations of words in which semantic similarity corresponds to geometric proximity. They are a form of [[Representation Learning]] central to [[Natural Language Processing]].
+- They replaced sparse symbolic encodings and provided the input layer for the [[Neural Network]] models that followed.
+- ### Overview
+- Embeddings are learned by training a model to predict a word from its surrounding context, or vice versa, over a large corpus. The resulting vectors place semantically related words near one another and often encode analogical structure as consistent linear offsets.
+- Because the space is continuous and differentiable, embeddings integrate naturally into gradient-trained networks and reduce the dimensionality of the input compared with one-hot encodings.
+- They are the conceptual ancestor of contextual representations, where a word's vector depends on its sentence rather than being fixed.
+- ### Key aspects
+- Distributional hypothesis: meaning is inferred from co-occurrence patterns.
+- Fixed (static) embeddings assign one vector per word type, independent of context.
+- Vector arithmetic captures relational regularities between concepts.
+- [[Cosine Similarity]] is the standard measure of closeness between embedding vectors.
+- ### Applications
+- Feature inputs for text classification, sentiment analysis, and named-entity recognition.
+- Initialisation and lookup layers in [[Language Model]] architectures.
+- Semantic search, clustering, and recommendation over text.
+- Cross-lingual mapping and machine translation.
+- ### Relationships
+- subClassOf:: [[Representation Learning]]
+- uses:: [[Neural Network]]
+- uses:: [[Tokenization]]
+- dependsOn:: [[Representation Learning]]
+- enables:: [[Natural Language Processing]]
+- enables:: [[Language Model]]
+- requires:: [[Tokenization]]
+- hasPart:: [[Embedding]]
+- contrastsWith:: [[BERT]]
+- bridgesTo:: [[Transformer]]
+- relatedTo:: [[Cosine Similarity]]
+- relatedTo:: [[Dimensionality Reduction]]
+- ### Provenance
+- updated:: 2026-06-15

@@ -1,0 +1,39 @@
+- ### Definition
+	- Consistency checking verifies that a body of statements contains no contradiction and admits at least one valid model.
+	- It is a form of [[Verification]] that protects [[Reasoning]] from deriving unsound or arbitrary conclusions.
+	- In data systems it confirms records satisfy declared [[Data Integrity]] rules.
+- ### Overview
+	- A consistent set of axioms is satisfiable; an inconsistent one entails everything and is therefore useless for inference.
+	- Description-logic reasoners check ontology consistency before answering queries or classifying concepts.
+	- In databases, consistency checks enforce referential and domain constraints across related records.
+	- The cost ranges from polynomial constraint checks to undecidable cases in expressive logics, driving the choice of formalism.
+- ### Mechanisms
+	- Tableau and resolution procedures search for a contradiction; failure to find one certifies consistency.
+	- [[Constraint Satisfaction]] solvers assign values that simultaneously satisfy every declared constraint.
+	- [[Theorem Proving]] establishes that the negation of a desired property is unsatisfiable.
+	- Schema engines compare instance data against type, cardinality and uniqueness rules.
+- ### Applications
+	- Validating an [[Ontology]] before publishing it to the [[Semantic Web]].
+	- Guarding a [[Knowledge Base]] so an [[Inference Engine]] only fires sound rules.
+	- Powering [[Data Validation]] pipelines that reject malformed or contradictory inputs.
+	- Supporting [[Quality Assurance]] by detecting conflicting configuration or policy statements.
+- ### Relationships
+	- subClassOf:: [[Verification]]
+	- enables:: [[Reasoning]]
+	- enables:: [[Inference]]
+	- enables:: [[Data Integrity]]
+	- uses:: [[Constraint Satisfaction]]
+	- uses:: [[Theorem Proving]]
+	- uses:: [[Inference Engine]]
+	- requires:: [[Knowledge Representation]]
+	- requires:: [[Formal Verification]]
+	- supports:: [[Data Validation]]
+	- supports:: [[Quality Assurance]]
+	- appliesTo:: [[Ontology]]
+	- appliesTo:: [[Knowledge Base]]
+	- relatedTo:: [[Semantic Web]]
+	- relatedTo:: [[Schema Validation]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

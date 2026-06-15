@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:one-hot-encoding",
+  "title": "One Hot Encoding",
+  "slug": "one-hot-encoding",
+  "public": true,
+  "classIri": "urn:ngm:class:one-hot-encoding",
+  "domain": "artificial-intelligence",
+  "definition": "One hot encoding is a representation technique that converts categorical variables into binary vectors, where each category is mapped to a vector containing a single high (1) value and all other positions set to zero. It removes any implied ordinal relationship between categories, allowing machine learning models that operate on numeric input to consume nominal data without inferring spurious magnitude. The dimensionality of the encoding equals the cardinality of the category set, which can become sparse and high-dimensional for variables with many levels.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:feature-engineering",
+      "label": "Feature Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:token-embedding",
+        "label": "Token Embedding"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

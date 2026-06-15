@@ -1,0 +1,47 @@
+- ### Definition
+	- [[Financial Market Infrastructure]] is the set of shared systems that clear and settle payments and securities among financial institutions.
+	- It is the post-trade and payment plumbing of the [[Financial System]].
+	- It comprises components such as the [[Clearing House]], [[Central Securities Depository]] and [[Real Time Gross Settlement]] systems.
+- ### Overview
+	- Financial market infrastructures act as the trusted intermediaries through which large volumes of obligations are netted, cleared and finally settled.
+	- They centralise functions that would otherwise require fragile bilateral arrangements, improving efficiency but concentrating systemic importance.
+	- International standards such as the Principles for Financial Market Infrastructures set risk-management and governance expectations for these systems.
+	- Because their failure could cascade across the financial system, they are subject to intensive oversight by central banks and regulators.
+- ### Key aspects
+	- Payment systems that move funds between participants with finality.
+	- Central counterparties that interpose themselves to manage counterparty risk.
+	- Central securities depositories that hold and transfer securities.
+	- Securities settlement systems coordinating delivery against payment.
+	- Trade repositories that record transaction data for transparency.
+- ### Mechanisms
+	- Multilateral netting to reduce the number and size of obligations.
+	- Delivery-versus-payment to remove principal risk at settlement.
+	- Real-time gross settlement for high-value, time-critical transfers.
+	- Margining, default funds and waterfalls to absorb participant failure.
+	- Standardised messaging for instruction and reconciliation.
+- ### Applications
+	- Wholesale interbank payment and large-value transfers.
+	- Clearing and settlement of equities, bonds and derivatives.
+	- Cross-border correspondent banking and securities flows.
+	- Central-bank operations and monetary-policy implementation.
+	- Market-wide risk monitoring through repository data.
+- ### Relationships
+	- subClassOf:: [[Financial System]]
+	- hasPart:: [[Clearing House]]
+	- hasPart:: [[Central Securities Depository]]
+	- hasPart:: [[Real Time Gross Settlement]]
+	- partOf:: [[Financial System]]
+	- supports:: [[Financial Services]]
+	- supports:: [[Capital Markets]]
+	- uses:: [[SWIFT Messaging]]
+	- enables:: [[Securities Settlement]]
+	- enables:: [[Payment System]]
+	- requires:: [[Regulatory Compliance]]
+	- dependsOn:: [[Central Bank]]
+	- bridgesTo:: [[Liquidity]]
+	- relatedTo:: [[Risk Management]]
+	- relatedTo:: [[Financial System]]
+- ### Provenance
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation
+	- updated:: 2026-06-15

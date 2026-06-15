@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:benchmark-dataset",
+  "title": "Benchmark Dataset",
+  "slug": "benchmark-dataset",
+  "public": true,
+  "classIri": "urn:ngm:class:benchmark-dataset",
+  "domain": "machine-learning",
+  "definition": "A benchmark dataset is a standardised, publicly shared collection of data with established splits and evaluation protocols, used to compare the performance of machine-learning models on a common task. By fixing the data, metrics, and procedure, benchmarks enable fair, reproducible comparison and track progress over time. Well-known benchmarks have driven advances in computer vision, natural language processing, and many other fields.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dataset",
+      "label": "Dataset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-curation",
+        "label": "Data Curation"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:leaderboard",
+        "label": "Leaderboard"
+      },
+      {
+        "id": "urn:ngm:class:performance-metric",
+        "label": "Performance Metric"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    }
+  ]
+}

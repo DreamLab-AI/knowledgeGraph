@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:nonverbal-communication",
+  "title": "Nonverbal Communication",
+  "slug": "nonverbal-communication",
+  "public": true,
+  "classIri": "urn:ngm:class:nonverbal-communication",
+  "domain": "spatial-computing",
+  "definition": "Nonverbal communication is the transmission of meaning through cues other than words, including facial expression, gaze, gesture, posture, interpersonal distance, and tone of voice. It conveys emotion, regulates interaction, and signals social presence, and it is central to creating believable avatars and co-presence in virtual and augmented reality. Reproducing nonverbal channels faithfully is a core challenge for embodied and immersive collaboration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-theory",
+      "label": "Communication Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:communication-theory",
+        "label": "Communication Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:social-presence-theory",
+        "label": "Social Presence Theory"
+      },
+      {
+        "id": "urn:ngm:class:embodied-interaction",
+        "label": "Embodied Interaction"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:communication-theory",
+        "label": "Communication Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-presence-theory",
+        "label": "Social Presence Theory"
+      },
+      {
+        "id": "urn:ngm:class:proxemics",
+        "label": "Proxemics"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "social-presence-theory",
+      "label": "Social Presence Theory"
+    }
+  ]
+}

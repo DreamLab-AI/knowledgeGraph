@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:document-summarisation",
+  "title": "Document Summarisation",
+  "slug": "document-summarisation",
+  "public": true,
+  "classIri": "urn:ngm:class:document-summarisation",
+  "domain": "ai",
+  "definition": "Document summarisation is the natural language processing task of producing a concise, faithful representation of the salient information in one or more source documents. It encompasses extractive approaches, which select and concatenate important spans, and abstractive approaches, which generate new text that paraphrases the content. Modern systems are built predominantly on transformer-based large language models and are evaluated for informativeness, coherence, and factual consistency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:text-summarisation",
+        "label": "Text Summarisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:content-generation",
+        "label": "Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:document-processing",
+        "label": "Document Processing"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:personal-data",
+  "title": "Personal Data",
+  "slug": "personal-data",
+  "public": true,
+  "classIri": "urn:ngm:class:personal-data",
+  "domain": "governance",
+  "definition": "Personal data is any information relating to an identified or identifiable natural person, known as the data subject. Under data protection regimes such as the GDPR, identifiability can be direct (a name or identification number) or indirect (factors specific to a person's physical, economic, cultural or social identity). Special categories such as health, biometric or political data attract heightened protection. The concept anchors most privacy and data governance obligations, determining when processing rules, consent requirements and individual rights apply.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:personal-data-store",
+        "label": "Personal Data Store"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:anonymisation",
+        "label": "Anonymisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:identity",
+        "label": "Identity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:pseudonymisation",
+        "label": "Pseudonymisation"
+      },
+      {
+        "id": "urn:ngm:class:anonymisation",
+        "label": "Anonymisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-breach",
+        "label": "Data Breach"
+      },
+      {
+        "id": "urn:ngm:class:right-to-be-forgotten",
+        "label": "Right to be Forgotten"
+      },
+      {
+        "id": "urn:ngm:class:surveillance",
+        "label": "Surveillance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

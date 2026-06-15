@@ -1,0 +1,41 @@
+- ### Definition
+  - [[Service Mesh]]
+  - [[Reverse Proxy]]
+  - [[Load Balancing]]
+  - [[API Gateway]]
+  - [[CNCF]]
+- ### Overview
+  - Acts as a uniform, programmable network substrate so applications stay oblivious to networking concerns.
+  - Configured dynamically through the xDS protocol, allowing control planes to push routes and policy at runtime.
+  - Pervasive as a sidecar data plane, decoupling resilience and security from business logic.
+- ### Key aspects
+  - L7-aware routing for HTTP, gRPC, and TCP with rich matching and transformation.
+  - Resilience primitives including retries, timeouts, circuit breaking, and outlier detection.
+  - Built-in observability via structured logs, metrics, and distributed tracing.
+  - Dynamic xDS configuration for clusters, listeners, routes, and endpoints.
+  - Mutual-TLS termination and origination for zero-trust service communication.
+- ### Applications
+  - Sidecar data plane in service meshes such as Istio and Consul.
+  - Edge and ingress gateways fronting microservice fleets.
+  - API gateways enforcing authentication, rate limiting, and routing.
+  - Traffic shifting for canary and blue-green deployments.
+- ### Relationships
+  - partOf:: [[Service Mesh]]
+  - hasPart:: [[Circuit Breaker]]
+  - hasPart:: [[Rate Limiting]]
+  - uses:: [[HTTP]]
+  - uses:: [[Mutual TLS]]
+  - enables:: [[Traffic Management]]
+  - enables:: [[Load Balancing]]
+  - supports:: [[Observability]]
+  - supports:: [[Telemetry]]
+  - supports:: [[API Gateway]]
+  - implements:: [[Reverse Proxy]]
+  - standardizedBy:: [[Cloud Native Computing Foundation]]
+  - dependsOn:: [[Kubernetes]]
+  - relatedTo:: [[Microservices]]
+  - relatedTo:: [[Infrastructure]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

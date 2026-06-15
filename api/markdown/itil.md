@@ -1,0 +1,41 @@
+- ### Definition
+- ITIL is a best-practice framework for IT service management, structuring how technology services are designed, delivered and improved as a [[Governance Framework]].
+- It defines disciplines such as [[Incident Management]] and [[Change Management]] within a service value system.
+- ### Overview
+- ITIL gives IT organisations a common vocabulary and process structure for running services reliably and aligning them to business outcomes.
+- Recent editions frame practices around a service value system that integrates demand, value co-creation and continual improvement.
+- It is frequently compared with [[DevOps]] and [[Site Reliability Engineering]], which emphasise automation and engineering ownership.
+- ### Key aspects
+- A service value system linking strategy, design, transition, operation and improvement.
+- Service-level management defining and measuring service commitments.
+- Incident, problem and change practices for stable operations.
+- A configuration and asset baseline supporting controlled change.
+- Continual improvement as an explicit, recurring discipline.
+- ### Mechanisms
+- Processes define roles, inputs, activities and outputs for repeatability.
+- [[Monitoring]] and [[Observability]] feed measurement and improvement loops.
+- Change control balances agility against operational risk.
+- Maturity assessments guide adoption and tailoring to context.
+- ### Applications
+- Enterprise IT operations and service desks.
+- Managed service providers structuring delivery.
+- Governance and audit of technology services.
+- Hybrid models blending ITIL governance with DevOps delivery.
+- ### Relationships
+- subClassOf:: [[Governance Framework]]
+- standardizedBy:: [[Standards Organization]]
+- contrastsWith:: [[DevOps]]
+- contrastsWith:: [[Site Reliability Engineering]]
+- hasPart:: [[Incident Management]]
+- hasPart:: [[Change Management]]
+- supports:: [[Governance]]
+- supports:: [[Regulatory Compliance]]
+- uses:: [[Monitoring]]
+- uses:: [[Observability]]
+- enables:: [[Compliance]]
+- relatedTo:: [[Risk Management]]
+- relatedTo:: [[Cloud Computing]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

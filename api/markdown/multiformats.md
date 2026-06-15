@@ -1,0 +1,37 @@
+- ### Definition
+	- [[Multiformats]] is a family of self-describing format specifications that make values portable across decentralised systems.
+	- Each value carries a prefix code declaring its algorithm, enabling unambiguous interpretation and graceful evolution, central to [[Content Addressing]].
+	- It includes [[Multihash]] and underpins the [[Content Identifier]] used by [[IPFS]] and [[libp2p]].
+- ### Overview
+	- Distributed systems must agree on how to hash, encode, and address data, but hard-coding one algorithm makes upgrades impossible without breaking existing references.
+	- Multiformats solves this by making every value self-describing: a short prefix names the algorithm or format, so the same parser handles old and new variants side by side.
+	- The core members are multihash (self-describing cryptographic digests), multibase (self-describing text encodings), multicodec (self-describing serialisation/codec tags), and multiaddr (self-describing network addresses).
+	- Together they let content-addressed systems remain agile in the face of evolving cryptography and transport layers.
+- ### Mechanisms
+	- Prefix each value with a varint code drawn from a shared codec table.
+	- Compose codes to describe layered structures such as a CID wrapping a multihash and multicodec.
+	- Parse generically by reading the prefix before the payload, never assuming a fixed algorithm.
+	- Extend the registry to adopt new hashes or encodings without invalidating existing data.
+- ### Applications
+	- Building [[Content Identifier|content identifiers]] (CIDs) for [[IPFS]] and the broader IPLD data model.
+	- Encoding peer and transport addresses in [[libp2p]] via multiaddr.
+	- Representing cryptographic digests portably with [[Multihash]].
+	- Enabling forward-compatible [[Decentralised file storage]] and naming.
+- ### Relationships
+	- partOf:: [[Content Addressing]]
+	- hasPart:: [[Multihash]]
+	- hasPart:: [[Content Identifier]]
+	- standardizedBy:: [[Standards]]
+	- enables:: [[Interoperability]]
+	- enables:: [[Content Addressing]]
+	- uses:: [[Cryptography]]
+	- supports:: [[IPFS]]
+	- supports:: [[libp2p]]
+	- implements:: [[Content Identifier]]
+	- relatedTo:: [[Decentralised file storage]]
+	- relatedTo:: [[Distributed Hash Table]]
+	- relatedTo:: [[Interoperability]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

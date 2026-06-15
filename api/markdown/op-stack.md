@@ -1,0 +1,37 @@
+- ### Definition
+- The OP Stack is an open-source modular framework for deploying [[Ethereum]] [[Layer-2 Scaling]] networks using the [[Optimistic Rollup]] model.
+- It standardises rollup components such as the [[Sequencer]], derivation pipeline, [[Fraud Proof]] system, and bridge contracts.
+- Originally built for [[Optimism]], it lets many chains share a common foundation and interoperate as a federated superchain.
+- ### Overview
+- Rather than each layer-2 reinventing the same plumbing, the OP Stack offers a reusable, audited codebase that abstracts a rollup into swappable modules.
+- The framework is governed as a public good with the intention that improvements to one chain benefit the wider ecosystem.
+- Chains deployed with it inherit Ethereum security by posting transaction data and proofs to layer-1 while executing transactions cheaply off-chain.
+- The shared standard is what makes a coherent multi-chain superchain feasible, with common bridging, messaging, and upgrade paths.
+- ### Mechanisms
+- Sequencing: a sequencer orders and batches user transactions before submitting them to layer-1.
+- Derivation: the rollup state is deterministically derived from data posted to Ethereum, enabling permissionless reconstruction.
+- Fault proving: a fraud-proof system allows challengers to dispute incorrect state transitions during a challenge window.
+- Bridging: standard bridge contracts move assets and messages between layer-1 and the rollup.
+- Modularity: execution, settlement, and data-availability layers can be configured independently.
+- ### Applications
+- Launching application-specific or general-purpose layer-2 chains with minimal bespoke engineering.
+- Building superchain ecosystems where many chains share security, bridging, and tooling.
+- Enterprise and consumer rollups that need predictable low fees while inheriting Ethereum settlement.
+- ### Relationships
+- hasPart:: [[Sequencer]]
+- hasPart:: [[Fraud Proof]]
+- uses:: [[Data Availability]]
+- uses:: [[EVM Compatibility]]
+- dependsOn:: [[Ethereum]]
+- requires:: [[Rollup]]
+- requires:: [[Smart Contract]]
+- implements:: [[Layer-2 Scaling]]
+- enables:: [[Optimism]]
+- enables:: [[Cross-Chain Bridge]]
+- supports:: [[Modular Blockchain]]
+- contrastsWith:: [[Gas Optimization]]
+- relatedTo:: [[Blockchain]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

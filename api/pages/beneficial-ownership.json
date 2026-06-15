@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:beneficial-ownership",
+  "title": "Beneficial Ownership",
+  "slug": "beneficial-ownership",
+  "public": true,
+  "classIri": "urn:ngm:class:beneficial-ownership",
+  "domain": "finance",
+  "definition": "Beneficial ownership identifies the natural persons who ultimately own or control a legal entity or arrangement, or on whose behalf a transaction is conducted, regardless of the formal legal title. It distinguishes the real human beneficiaries from nominee shareholders, trustees and layered corporate structures. Establishing beneficial ownership is a core obligation in anti-financial-crime regimes, enabling regulators and institutions to pierce opaque structures and attribute responsibility.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:corporate-governance",
+      "label": "Corporate Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sanctions-screening",
+        "label": "Sanctions Screening"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-inclusion",
+        "label": "Financial Inclusion"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:transaction-privacy",
+        "label": "Transaction Privacy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti Money Laundering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity",
+        "label": "Digital Identity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    }
+  ]
+}

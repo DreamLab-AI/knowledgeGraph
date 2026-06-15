@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:uv-mapping",
+  "title": "Uv Mapping",
+  "slug": "uv-mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:uv-mapping",
+  "domain": "spatial-computing",
+  "definition": "UV mapping is the process of projecting a 3D model's surface onto a two-dimensional coordinate space so that texture images can be applied accurately to its geometry. The letters U and V denote the axes of this 2D texture space, distinct from the X, Y, and Z axes of the model. By unwrapping the mesh into UV islands, artists control how textures, normal maps, and other surface data wrap around the object with minimal stretching or seams.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:3d-modeling",
+      "label": "3D Modelling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vertex-attribute",
+        "label": "Vertex Attribute"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:normal-map",
+        "label": "Normal Map"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:3d-modeling",
+        "label": "3D Modelling"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:skeletal-rig",
+        "label": "Skeletal Rig"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:texture-atlas",
+        "label": "Texture Atlas"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:3d-modeling",
+        "label": "3D Modelling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

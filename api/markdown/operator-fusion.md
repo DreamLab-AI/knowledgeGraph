@@ -1,0 +1,33 @@
+- ### Definition
+- Operator fusion is a compiler optimisation that merges adjacent operations in a [[Neural Network]] computation graph into a single fused kernel. It is a form of [[Model Optimization]] that relies on the [[Compiler]] and targets [[GPU]] and other accelerators.
+- ### Overview
+- Deep learning models are graphs of tensor operations. Executing each operation as a separate kernel forces intermediate results to be written to and read back from global memory, which is bound by [[Memory Bandwidth]] rather than raw compute.
+- Operator fusion collapses such sequences (for example matrix multiply, bias add, and activation) into one kernel that keeps intermediates in registers or shared memory.
+- The result is fewer kernel launches, less memory traffic, and lower [[Latency]] for [[Inference]] and training.
+- ### Mechanisms
+- Pattern matching over the computation graph identifies fusible subgraphs (element-wise chains, reduction-followed-by-elementwise, epilogue fusion after GEMM).
+- Code generation emits a single kernel that streams data through the fused stages without materialising intermediate tensors.
+- Cost models decide when fusion helps versus when it harms occupancy or register pressure.
+- ### Key aspects
+- Vertical fusion chains element-wise operations; horizontal fusion combines independent operations sharing inputs.
+- Epilogue fusion attaches bias, activation and scaling onto the tail of a matrix multiply.
+- Fusion interacts with [[Hardware Acceleration]] features such as tensor cores and on-chip memory.
+- ### Applications
+- Inference runtimes and exporters (including [[ONNX]] based toolchains) apply fusion before deployment.
+- Training frameworks fuse element-wise epilogues to raise throughput.
+- Serving stacks use fused kernels to meet latency budgets in [[Model Serving]].
+- ### Relationships
+- partOf:: [[Compiler]]
+- hasPart:: [[Hardware Acceleration]]
+- requires:: [[Compiler]]
+- enables:: [[Model Serving]]
+- dependsOn:: [[Memory Bandwidth]]
+- uses:: [[GPU]]
+- uses:: [[ONNX]]
+- supports:: [[Inference]]
+- implements:: [[Hardware Acceleration]]
+- relatedTo:: [[Latency]]
+- relatedTo:: [[Neural Network]]
+- contrastsWith:: [[Model Optimization]]
+- ### Provenance
+- updated:: 2026-06-15

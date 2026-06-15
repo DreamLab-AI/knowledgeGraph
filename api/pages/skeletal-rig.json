@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:skeletal-rig",
+  "title": "Skeletal Rig",
+  "slug": "skeletal-rig",
+  "public": true,
+  "classIri": "urn:ngm:class:skeletal-rig",
+  "domain": "spatial-computing",
+  "definition": "A skeletal rig is the hierarchy of bones and control structures bound to a 3D model that allows it to be posed and animated. Each bone influences nearby vertices through skinning weights, so that rotating or translating a bone deforms the surrounding mesh in a controlled way. Rigs typically combine forward and inverse kinematics with control handles, enabling animators to drive complex character motion from a compact set of controls.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:3d-modeling",
+      "label": "3D Modelling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vertex-attribute",
+        "label": "Vertex Attribute"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:3d-modeling",
+        "label": "3D Modelling"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:animation-rig",
+        "label": "Animation Rig"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:animation-rig",
+        "label": "Animation Rig"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

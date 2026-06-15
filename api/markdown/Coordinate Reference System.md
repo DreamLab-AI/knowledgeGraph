@@ -1,0 +1,157 @@
+public:: true
+
+# Coordinate Reference System
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v1",
+  "@id": "urn:visionflow:page:coordinate-reference-system",
+  "@type": "Page",
+  "title": "Coordinate Reference System",
+  "vc:slug": "coordinate-reference-system",
+  "vc:public": true,
+  "vc:schemaVersion": 2,
+  "vc:outboundWikilinks": []
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:coordinate-reference-system",
+  "@type": "Class",
+  "label": "Coordinate Reference System",
+  "definition": "A coordinate reference system (CRS) is a framework that defines how positions are described and measured on or near the Earth's surface, combining a datum, a coordinate system, and often a map projection. It enables consistent interpretation of spatial coordinates by anchoring them to a known model of the Earth. CRSs are essential for aligning geospatial data sets and for accurate location computations.",
+  "domain": "spatial-computing",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:geospatial-data",
+      "label": "Geospatial Data"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "GPS"
+      },
+      {
+        "@id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "GPS"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:geographic-information-system",
+        "label": "Geographic Information System"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
+}
+```
+
+- ### Definition
+  - A [[Coordinate Reference System]] defines how positions are described relative to a model of the Earth.
+  - It is a core element of [[Geospatial Data]] and underlies every [[Geographic Information System]].
+  - It combines a datum, a coordinate system, and frequently a map projection to anchor coordinates meaningfully.
+- ### Overview
+  - Without a declared CRS, a pair of numbers like a latitude and longitude is ambiguous because different datums place the same coordinate at slightly different physical points.
+  - Geographic CRSs express position as angular coordinates on an ellipsoid; projected CRSs flatten them onto a plane for mapping and measurement.
+  - CRSs are commonly identified by registry codes so that software can resolve their full definition unambiguously.
+  - Transforming data between CRSs is a routine and accuracy-critical operation in spatial pipelines.
+- ### Key aspects
+  - Datum: the reference surface and orientation that ties coordinates to the real Earth.
+  - Coordinate system: the axes and units used to express position.
+  - Projection: the mathematical mapping from the curved surface to a flat plane, where applicable.
+  - Identifier: a registry code that uniquely names the CRS for interoperability.
+- ### Mechanisms
+  - Coordinate transformation converts positions from one datum or projection to another.
+  - Reprojection re-renders data so that overlapping layers align spatially.
+  - Satellite positioning via [[GPS]] supplies coordinates that must be interpreted within a known CRS.
+  - Standards registries publish authoritative CRS definitions for consistent use.
+- ### Applications
+  - Aligning multiple [[Geospatial Data]] layers in a [[Geographic Information System]].
+  - Anchoring augmented and [[Spatial Computing]] content to real-world locations.
+  - Performing accurate distance, area, and routing calculations.
+  - Exchanging location data across organisations using shared CRS identifiers.
+- ### Relationships
+  - partOf:: [[Geospatial Data]]
+  - requires:: [[GPS]]
+  - requires:: [[Geospatial Data]]
+  - hasPart:: [[Geospatial Data]]
+  - uses:: [[GPS]]
+  - enables:: [[Geographic Information System]]
+  - enables:: [[Spatial Computing]]
+  - supports:: [[Geographic Information System]]
+  - standardizedBy:: [[Standards]]
+  - relatedTo:: [[Spatial Computing]]
+  - dependsOn:: [[Geospatial Data]]
+  - bridgesTo:: [[Spatial Computing]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

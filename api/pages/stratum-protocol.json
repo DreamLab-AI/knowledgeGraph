@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:stratum-protocol",
+  "title": "Stratum Protocol",
+  "slug": "stratum-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:stratum-protocol",
+  "domain": "blockchain",
+  "definition": "The Stratum Protocol is a lightweight, JSON-based line protocol used to coordinate work between cryptocurrency mining pools and individual miners. The pool server distributes block templates and difficulty targets to connected mining clients, which return valid share submissions, allowing aggregated hashing power to be measured and rewarded. Stratum reduces bandwidth and latency compared with earlier polling schemes and remains the dominant pool communication standard for proof-of-work coins.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mining-pool",
+      "label": "Mining Pool"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mining-hardware",
+        "label": "Mining Hardware"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mining-pool",
+        "label": "Mining Pool"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:mining-hardware",
+        "label": "Mining Hardware"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    }
+  ]
+}

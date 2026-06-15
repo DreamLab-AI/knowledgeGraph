@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:pattern-matching",
+  "title": "Pattern Matching",
+  "slug": "pattern-matching",
+  "public": true,
+  "classIri": "urn:ngm:class:pattern-matching",
+  "domain": "ai",
+  "definition": "Pattern matching is the act of checking a sequence or structure against a pattern to detect the presence of constituent components, and, in programming languages, of binding variables to parts of the matched structure. In symbolic AI and computation it underpins rule firing, unification, and term rewriting; in software it provides a declarative way to deconstruct data by shape. It contrasts with statistical pattern recognition by operating on exact, often symbolic, structure rather than learned probabilistic similarity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:regular-expression",
+        "label": "Regular Expression"
+      },
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite-State Machine"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:regular-expression",
+        "label": "Regular Expression"
+      },
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite-State Machine"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:regular-expression",
+        "label": "Regular Expression"
+      },
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite-State Machine"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    }
+  ]
+}

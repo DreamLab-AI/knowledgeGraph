@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:request-for-comments",
+  "title": "Request For Comments",
+  "slug": "request-for-comments",
+  "public": true,
+  "classIri": "urn:ngm:class:request-for-comments",
+  "domain": "standards",
+  "definition": "A Request for Comments (RFC) is a formally numbered document in a series used to define, describe and discuss internet technologies, protocols, procedures and conventions. Originating with the early ARPANET community and now stewarded primarily through the IETF, RFCs range from formal standards to informational and experimental memos. The series provides a durable, citable record of how core internet infrastructure is specified and evolved.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:open-standards",
+      "label": "Open Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:communication-protocol",
+        "label": "Communication Protocol"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:internet-engineering-task-force",
+        "label": "Internet Engineering Task Force"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reference-implementation",
+        "label": "Reference Implementation"
+      },
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

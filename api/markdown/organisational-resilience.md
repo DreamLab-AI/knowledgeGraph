@@ -1,0 +1,32 @@
+- ### Definition
+  - [[Organisational Resilience]] is a [[Governance]] capability spanning [[Risk Management]], [[Business Continuity]], [[Incident Response]] and [[Change Management]] that lets an organisation absorb shocks and adapt.
+- ### Overview
+  - It reframes survival as an ongoing capability rather than a one-off plan, aligning strategy, culture, leadership and operations so the organisation can withstand and learn from disruption.
+  - Standards such as ISO 22316 codify principles including shared vision, situational awareness, adaptive capacity and effective governance.
+- ### Key aspects
+  - Anticipation: horizon-scanning and risk assessment to detect emerging threats early.
+  - Coping capacity: business continuity, disaster recovery and crisis management to respond under stress.
+  - Adaptive capacity: governance, culture and learning loops that reshape the organisation after events.
+- ### Applications
+  - Board-level governance frameworks ensuring continuity of critical services.
+  - Regulatory operational-resilience regimes in finance and critical infrastructure.
+  - Post-incident learning programmes that convert disruptions into structural improvement.
+- ### Relationships
+  - supports:: [[Business Continuity]]
+  - supports:: [[Disaster Recovery]]
+  - supports:: [[Operational Resilience]]
+  - relatedTo:: [[Risk Management]]
+  - relatedTo:: [[Change Management]]
+  - relatedTo:: [[Governance Framework]]
+  - relatedTo:: [[Compliance]]
+  - requires:: [[Risk Management]]
+  - requires:: [[Incident Response]]
+  - enables:: [[Business Continuity]]
+  - dependsOn:: [[Governance Framework]]
+  - hasPart:: [[Disaster Recovery]]
+  - hasPart:: [[Operational Resilience]]
+  - uses:: [[Incident Response]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - generated-by:: did:nostr:ontology-mesh
+  - inference-rule:: GapMaterialisation

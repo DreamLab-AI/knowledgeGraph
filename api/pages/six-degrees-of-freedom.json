@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:six-degrees-of-freedom",
+  "title": "Six Degrees Of Freedom",
+  "slug": "six-degrees-of-freedom",
+  "public": true,
+  "classIri": "urn:ngm:class:six-degrees-of-freedom",
+  "domain": "spatial-computing",
+  "definition": "Six degrees of freedom (6DoF) describes the full set of ways a rigid body can move in three-dimensional space: translation along three perpendicular axes and rotation about each of them. In spatial computing it characterises tracking systems that capture both an object's position and its orientation. Supporting 6DoF is essential for convincing virtual and augmented reality, robotics and motion-tracked interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:tracking-system",
+      "label": "Tracking System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      },
+      {
+        "id": "urn:ngm:class:locomotion",
+        "label": "Locomotion"
+      },
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:tracking-system",
+        "label": "Tracking System"
+      },
+      {
+        "id": "urn:ngm:class:spatial-tracking",
+        "label": "Spatial Tracking"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-tracking",
+        "label": "Spatial Tracking"
+      },
+      {
+        "id": "urn:ngm:class:motion-tracking",
+        "label": "Motion Tracking"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

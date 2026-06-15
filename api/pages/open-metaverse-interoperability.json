@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:open-metaverse-interoperability",
+  "title": "Open Metaverse Interoperability",
+  "slug": "open-metaverse-interoperability",
+  "public": true,
+  "classIri": "urn:ngm:class:open-metaverse-interoperability",
+  "domain": "metaverse",
+  "definition": "Open metaverse interoperability is the principle and set of open standards enabling users, avatars, digital assets, and identities to move freely across independently operated virtual worlds and platforms without proprietary lock-in. It depends on shared formats for 3D content, portable avatar and identity descriptions, and common protocols for asset provenance and transport. Driven by bodies such as the Metaverse Standards Forum and the Khronos Group, it aims to make the metaverse a federated network of interoperable spaces rather than a collection of isolated walled gardens.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interoperability",
+      "label": "Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:portability",
+        "label": "Portability"
+      },
+      {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      },
+      {
+        "id": "urn:ngm:class:cross-platform",
+        "label": "Cross-Platform"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:identity-portability",
+        "label": "Identity Portability"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:webxr",
+        "label": "WebXR"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:metaverse-standards-forum",
+        "label": "Metaverse Standards Forum"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "vircadia",
+      "label": "Vircadia"
+    }
+  ]
+}

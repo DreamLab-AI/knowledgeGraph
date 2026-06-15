@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:numpy",
+  "title": "Numpy",
+  "slug": "numpy",
+  "public": true,
+  "classIri": "urn:ngm:class:numpy",
+  "domain": "machine-learning",
+  "definition": "NumPy (Numerical Python) is the foundational library for numerical and scientific computing in Python, providing the N-dimensional array (ndarray) object together with a comprehensive suite of vectorised mathematical, logical, linear algebra, Fourier transform, and random number operations. Its contiguous, typed memory layout and broadcasting semantics enable concise, high-performance array programming by delegating element-wise loops to compiled C and Fortran routines. NumPy underpins almost the entire Python data and machine learning ecosystem, serving as the in-memory array substrate that libraries such as pandas, SciPy, scikit-learn, and the deep learning frameworks build upon or interoperate with.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scientific-computing",
+      "label": "Scientific Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ndarray",
+        "label": "N-Dimensional Array"
+      },
+      {
+        "id": "urn:ngm:class:broadcasting",
+        "label": "Broadcasting"
+      },
+      {
+        "id": "urn:ngm:class:vectorisation",
+        "label": "Vectorisation"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pandas",
+        "label": "Pandas"
+      },
+      {
+        "id": "urn:ngm:class:scipy",
+        "label": "SciPy"
+      },
+      {
+        "id": "urn:ngm:class:scikit-learn",
+        "label": "Scikit-Learn"
+      },
+      {
+        "id": "urn:ngm:class:matplotlib",
+        "label": "Matplotlib"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pytorch",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:cupy",
+        "label": "CuPy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blas",
+        "label": "BLAS"
+      },
+      {
+        "id": "urn:ngm:class:lapack",
+        "label": "LAPACK"
+      },
+      {
+        "id": "urn:ngm:class:simd",
+        "label": "SIMD"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      },
+      {
+        "id": "urn:ngm:class:python-ecosystem",
+        "label": "Python Ecosystem"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "id": "urn:ngm:class:opencv",
+        "label": "OpenCV"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

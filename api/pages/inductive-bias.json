@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:inductive-bias",
+  "title": "Inductive Bias",
+  "slug": "inductive-bias",
+  "public": true,
+  "classIri": "urn:ngm:class:inductive-bias",
+  "domain": "machine-learning",
+  "definition": "Inductive bias is the set of assumptions a learning algorithm uses to generalise from finite training data to unseen inputs. Because infinitely many functions fit any finite sample, a learner must prefer some hypotheses over others, and that preference \u2014 encoded in model architecture, regularisation, priors, or the choice of hypothesis space \u2014 is its inductive bias. Appropriate inductive bias is what lets a model extrapolate sensibly rather than merely memorise.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hypothesis-space",
+        "label": "Hypothesis Space"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generalization",
+        "label": "Generalisation"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:regularization",
+        "label": "Regularisation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:no-free-lunch-theorem",
+        "label": "No Free Lunch Theorem"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:regularization",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "id": "urn:ngm:class:generalization",
+        "label": "Generalisation"
+      },
+      {
+        "id": "urn:ngm:class:hypothesis-space",
+        "label": "Hypothesis Space"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    }
+  ]
+}

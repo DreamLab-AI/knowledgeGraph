@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:liquidity-coverage-ratio",
+  "title": "Liquidity Coverage Ratio",
+  "slug": "liquidity-coverage-ratio",
+  "public": true,
+  "classIri": "urn:ngm:class:liquidity-coverage-ratio",
+  "domain": "finance",
+  "definition": "The Liquidity Coverage Ratio (LCR) is a prudential regulatory standard requiring banks to hold a stock of high-quality liquid assets sufficient to cover their projected net cash outflows over a thirty-day stress scenario. Introduced under Basel III, it is expressed as the ratio of the liquidity buffer to stressed net outflows and must equal or exceed one hundred per cent. The measure is designed to ensure short-term resilience to acute liquidity shocks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:banking-regulation",
+      "label": "Banking Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      },
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

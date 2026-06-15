@@ -59,7 +59,7 @@ public:: true
         "label": "Actuator"
       },
       {
-        "@id": "urn:ngm:class:real-time-system",
+        "@id": "urn:ngm:class:real-time",
         "label": "Real-Time System"
       }
     ],

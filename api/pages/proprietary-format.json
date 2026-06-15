@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:proprietary-format",
+  "title": "Proprietary Format",
+  "slug": "proprietary-format",
+  "public": true,
+  "classIri": "urn:ngm:class:proprietary-format",
+  "domain": "standards",
+  "definition": "A proprietary format is a data or file format whose specification is controlled by a single vendor and is not openly published or freely implementable. Access to and interpretation of the data typically depend on the vendor's software, which can constrain interoperability, archival longevity, and user control. Proprietary formats stand in contrast to open standards and are a common source of vendor lock-in.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-format",
+      "label": "Data Format"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:proprietary-software",
+        "label": "Proprietary Software"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:file-format",
+        "label": "File Format"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

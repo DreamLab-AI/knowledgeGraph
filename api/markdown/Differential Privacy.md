@@ -140,7 +140,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:k-anonymity",
+        "@id": "urn:ngm:class:k-anonymity-in-datasets",
         "label": "K-Anonymity"
       },
       {

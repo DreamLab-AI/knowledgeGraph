@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:asset-inventory",
+  "title": "Asset Inventory",
+  "slug": "asset-inventory",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-inventory",
+  "domain": "security",
+  "definition": "Asset Inventory is the systematic, continuously maintained catalogue of all hardware, software, data stores, network devices and cloud resources within an organisation's environment. It establishes the authoritative record of what must be protected, forming the foundation for vulnerability management, configuration control and incident response. An accurate inventory enables defenders to scope attack surfaces, prioritise patching and detect unauthorised or rogue assets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:vulnerability-management",
+      "label": "Vulnerability Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "threat-surface-map",
+      "label": "Threat Surface Map"
+    }
+  ]
+}

@@ -130,7 +130,7 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:labelled-training-data",
+        "@id": "urn:ngm:class:annotated-training-data",
         "label": "Labelled Training Data"
       },
       {
@@ -190,7 +190,7 @@ public:: true
         "label": "Multimodal Interaction"
       },
       {
-        "@id": "urn:ngm:class:accessibility-technology",
+        "@id": "urn:ngm:class:accessibility",
         "label": "Accessibility Technology"
       }
     ]

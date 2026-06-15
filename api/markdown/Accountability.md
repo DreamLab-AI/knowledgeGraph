@@ -176,12 +176,6 @@ public:: true
         "label": "OECD AI Principles"
       }
     ],
-    "contrastsWith": [
-      {
-        "@id": "urn:ngm:class:opacity",
-        "label": "Opacity"
-      }
-    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:ai-audit",

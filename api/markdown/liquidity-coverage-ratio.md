@@ -1,0 +1,36 @@
+- ### Definition
+- The [[Liquidity Coverage Ratio]] requires banks to hold high-quality liquid assets sufficient to survive a thirty-day liquidity stress, a core component of [[Banking Regulation]].
+- It was introduced under [[Basel III]] and is overseen by the [[Basel Committee]] as part of [[Prudential Regulation]].
+- The ratio promotes [[Financial Stability]] by reducing reliance on volatile short-term funding.
+- ### Overview
+- The LCR is computed as the stock of high-quality liquid assets divided by total net cash outflows over a defined thirty-day stress horizon.
+- Regulators require the ratio to be at least one hundred per cent, meaning the liquidity buffer fully covers stressed outflows.
+- High-quality liquid assets are classified into tiers reflecting their reliability of conversion to cash under stress, with haircuts applied to lower tiers.
+- Net outflows are derived by applying standardised run-off rates to deposits and other liabilities and inflow caps to expected receipts.
+- ### Key aspects
+- The numerator emphasises unencumbered assets that can be monetised quickly with little or no loss of value.
+- The denominator reflects a hypothetical but severe combined idiosyncratic and market-wide stress scenario.
+- The standard complements longer-horizon measures such as the net stable funding ratio that address structural funding.
+- Supervisors monitor the ratio continuously and may require remediation if it falls below the threshold.
+- ### Applications
+- Forms part of the supervisory toolkit used by central banks and prudential authorities to assess bank resilience.
+- Drives bank treasury management of liquidity buffers and funding profiles.
+- Underpins [[Stress Testing]] exercises and recovery planning.
+- ### Relationships
+- subClassOf:: [[Banking Regulation]]
+- hasPart:: [[Capital Adequacy]]
+- requires:: [[Stress Testing]]
+- standardizedBy:: [[Basel III]]
+- standardizedBy:: [[Basel Committee]]
+- supports:: [[Financial Stability]]
+- implements:: [[Prudential Regulation]]
+- dependsOn:: [[Risk Management]]
+- partOf:: [[Basel III]]
+- relatedTo:: [[Capital Adequacy]]
+- relatedTo:: [[Financial Regulation]]
+- contrastsWith:: [[Capital Adequacy]]
+- bridgesTo:: [[Regulatory Framework]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

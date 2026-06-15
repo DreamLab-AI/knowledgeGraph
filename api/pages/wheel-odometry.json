@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:wheel-odometry",
+  "title": "Wheel Odometry",
+  "slug": "wheel-odometry",
+  "public": true,
+  "classIri": "urn:ngm:class:wheel-odometry",
+  "domain": "robotics",
+  "definition": "Wheel odometry is a method of estimating a mobile robot's change in position and orientation by counting wheel rotations measured with encoders and applying a kinematic motion model. As an instance of dead reckoning, it integrates incremental wheel displacement over time to track pose relative to a starting point. It is simple and low-cost but accumulates drift from wheel slip, uneven terrain and calibration error, so it is typically fused with other sensors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:odometry",
+      "label": "Odometry"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:motion-model",
+        "label": "Motion Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:localization",
+        "label": "Localization"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encoder",
+        "label": "Encoder"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:odometry",
+        "label": "Odometry"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

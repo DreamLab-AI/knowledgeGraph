@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:data-localisation",
+  "title": "Data Localisation",
+  "slug": "data-localisation",
+  "public": true,
+  "classIri": "urn:ngm:class:data-localisation",
+  "domain": "governance",
+  "definition": "Data localisation is the legal or regulatory requirement that certain categories of data be stored, processed, or retained within the geographic borders of a particular country or jurisdiction. Governments impose such rules to assert data sovereignty, protect citizens' personal information, support law-enforcement access, or shield strategic sectors, and the requirements range from mandating in-country copies to outright bans on cross-border transfer. Compliance forces organisations to architect regional data residency, partition storage, and reconcile conflicting national regimes, materially shaping cloud architecture and international data flows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-residency",
+        "label": "Data Residency"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:privacy-regulation",
+        "label": "Privacy Regulation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    }
+  ]
+}

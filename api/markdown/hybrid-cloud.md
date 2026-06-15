@@ -1,0 +1,38 @@
+- ### Definition
+  - [[Hybrid Cloud]] unifies [[Private Cloud]], [[On-Premises]] and [[Public Cloud]] resources under common orchestration, a deployment model of [[Cloud Computing]] that bridges to [[Edge Computing]].
+- ### Overview
+  - Hybrid cloud connects controlled internal environments with elastic public capacity through secure networking and shared identity.
+  - Workloads are placed according to data sovereignty, latency, cost and compliance requirements.
+  - Container platforms and orchestration give a consistent runtime so the same application can run in either location.
+  - It differs from multi-cloud, which spans several public providers without necessarily integrating private infrastructure.
+- ### Key aspects
+  - Workload portability across private and public environments.
+  - Unified control plane for orchestration, observability and policy.
+  - Secure connectivity (VPN, dedicated interconnects) and consistent identity.
+  - Data placement governed by sovereignty and compliance constraints.
+  - Cloud bursting to absorb demand spikes using public capacity.
+- ### Applications
+  - Regulated industries keeping sensitive data on-premises while using public AI services.
+  - Disaster recovery replicating workloads to a public region.
+  - Cloud migration in phases, gradually shifting workloads off legacy infrastructure.
+  - Edge-to-cloud pipelines processing data near its source then aggregating centrally.
+- ### Relationships
+  - hasPart:: [[Private Cloud]]
+  - hasPart:: [[Public Cloud]]
+  - partOf:: [[Cloud Computing]]
+  - uses:: [[Kubernetes]]
+  - uses:: [[Containerisation]]
+  - supports:: [[Disaster Recovery]]
+  - supports:: [[Data Sovereignty]]
+  - enables:: [[Cloud Migration]]
+  - enables:: [[Elasticity]]
+  - bridgesTo:: [[On-Premises]]
+  - bridgesTo:: [[Edge Computing]]
+  - requires:: [[Interoperability]]
+  - contrastsWith:: [[Multi-Cloud]]
+  - contrastsWith:: [[Vendor Lock-In]]
+  - relatedTo:: [[Cloud Infrastructure]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - quality:: 0.62

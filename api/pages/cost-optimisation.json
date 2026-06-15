@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:cost-optimisation",
+  "title": "Cost Optimisation",
+  "slug": "cost-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:cost-optimisation",
+  "domain": "infrastructure",
+  "definition": "Cost optimisation is the discipline of minimising the financial cost of computing infrastructure while preserving required performance, reliability and capacity. It combines right-sizing of resources, elimination of waste, demand-aligned scaling and commercial levers such as committed-use and spot pricing. In cloud environments it is operationalised through continuous measurement, allocation of spend to teams, and feedback loops that align consumption with actual need.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:resource-management",
+      "label": "Resource Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:autoscaling",
+        "label": "Autoscaling"
+      },
+      {
+        "id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

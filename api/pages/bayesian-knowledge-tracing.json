@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:bayesian-knowledge-tracing",
+  "title": "Bayesian Knowledge Tracing",
+  "slug": "bayesian-knowledge-tracing",
+  "public": true,
+  "classIri": "urn:ngm:class:bayesian-knowledge-tracing",
+  "domain": "artificial-intelligence",
+  "definition": "Bayesian Knowledge Tracing (BKT) is a probabilistic modelling technique that estimates a learner's mastery of a skill over time by treating knowledge as a latent binary state inferred from a sequence of correct and incorrect responses. Using a hidden Markov model with parameters for prior knowledge, learning, guessing, and slipping, BKT updates the probability that a student has mastered each skill after every interaction. It is a cornerstone of intelligent tutoring systems and adaptive learning, enabling personalised pacing and content selection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:adaptive-learning",
+      "label": "Adaptive Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:educational-technology",
+        "label": "Educational Technology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:item-response-theory",
+        "label": "Item Response Theory"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:item-response-theory",
+        "label": "Item Response Theory"
+      },
+      {
+        "id": "urn:ngm:class:spaced-repetition",
+        "label": "Spaced Repetition"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    }
+  ]
+}

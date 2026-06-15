@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:transaction-privacy",
+  "title": "Transaction Privacy",
+  "slug": "transaction-privacy",
+  "public": true,
+  "classIri": "urn:ngm:class:transaction-privacy",
+  "domain": "blockchain",
+  "definition": "Transaction privacy is the property of a payment or ledger system that conceals sensitive details of a transaction, such as sender, receiver and amount, from third parties while preserving verifiability of correctness. On public blockchains it is achieved through cryptographic techniques that prove a transaction is valid without revealing its contents. It addresses the inherent transparency of open ledgers, trading off auditability and regulatory visibility against confidentiality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:privacy-preserving-computation",
+      "label": "Privacy Preserving Computation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stealth-address",
+        "label": "Stealth Address"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transactions"
+      },
+      {
+        "id": "urn:ngm:class:shielded-transaction",
+        "label": "Shielded Transaction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy Preserving Computation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:beneficial-ownership",
+        "label": "Beneficial Ownership"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:monero",
+        "label": "Monero"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:zk-snark",
+        "label": "ZK SNARK"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:privacy-coin",
+        "label": "Privacy Coin"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zcash",
+        "label": "Zcash"
+      },
+      {
+        "id": "urn:ngm:class:confidential-transactions",
+        "label": "Confidential Transactions"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

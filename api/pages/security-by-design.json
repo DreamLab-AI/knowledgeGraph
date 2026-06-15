@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:security-by-design",
+  "title": "Security By Design",
+  "slug": "security-by-design",
+  "public": true,
+  "classIri": "urn:ngm:class:security-by-design",
+  "domain": "security",
+  "definition": "Security by design is an engineering approach in which security is treated as a foundational requirement and built into systems from the earliest stages rather than bolted on retrospectively. It favours secure defaults, minimal attack surface, defence in depth and least-privilege access, supported by threat modelling and continuous verification across the development lifecycle. The principle is increasingly mandated by regulators and procurement frameworks for connected products and critical infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:defense-in-depth",
+        "label": "Defense In Depth"
+      },
+      {
+        "id": "urn:ngm:class:least-privilege",
+        "label": "Least Privilege"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy-by-design",
+        "label": "Privacy By Design"
+      },
+      {
+        "id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

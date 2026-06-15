@@ -1,0 +1,139 @@
+{
+  "id": "urn:visionflow:page:custodian",
+  "title": "Custodian",
+  "slug": "custodian",
+  "public": true,
+  "classIri": "urn:ngm:class:custodian",
+  "domain": "blockchain",
+  "definition": "A custodian is an entity entrusted with safeguarding assets on behalf of others, holding and securing them while the legal or beneficial owner retains a claim. In digital-asset markets a custodian secures cryptographic keys and underlying holdings for clients and, in the case of fiat-backed stablecoins, holds the reserves that back issued tokens. Custodianship concentrates security and introduces counterparty risk, which is mitigated through controls such as segregation, audits, and proof of reserves.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:custody",
+      "label": "Custody"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "id": "urn:ngm:class:multisig",
+        "label": "Multisig"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "KYC"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof of Reserves"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self-Custody"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:counterparty-risk",
+        "label": "Counterparty Risk"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "id": "urn:ngm:class:hot-wallet",
+        "label": "Hot Wallet"
+      },
+      {
+        "id": "urn:ngm:class:multisig",
+        "label": "Multisig"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:tether",
+        "label": "Tether"
+      },
+      {
+        "id": "urn:ngm:class:centralized-exchange",
+        "label": "Centralized Exchange"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-custody",
+        "label": "Digital Asset Custody Innovation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit and Assurance"
+      },
+      {
+        "id": "urn:ngm:class:aml",
+        "label": "AML"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    }
+  ]
+}

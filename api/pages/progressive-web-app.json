@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:progressive-web-app",
+  "title": "Progressive Web App",
+  "slug": "progressive-web-app",
+  "public": true,
+  "classIri": "urn:ngm:class:progressive-web-app",
+  "domain": "infrastructure",
+  "definition": "A Progressive Web App (PWA) is a web application built with standard web technologies that delivers an app-like experience by being installable, working offline, and supporting capabilities such as background synchronisation and push notifications. PWAs use service workers and a web app manifest to bridge the gap between web pages and native mobile applications, allowing a single codebase to run across platforms. They are designed to be reliable on poor networks, fast to load, and engaging enough to live on a device home screen.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:web-technology",
+      "label": "Web Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:web-technology",
+        "label": "Web Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:web-technology",
+        "label": "Web Technology"
+      },
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

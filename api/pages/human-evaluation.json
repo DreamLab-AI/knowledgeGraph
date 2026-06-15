@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:human-evaluation",
+  "title": "Human Evaluation",
+  "slug": "human-evaluation",
+  "public": true,
+  "classIri": "urn:ngm:class:human-evaluation",
+  "domain": "ai",
+  "definition": "Human evaluation is the assessment of machine-learning system outputs by human judges against quality criteria such as relevance, fluency, helpfulness, factuality, or preference between alternatives. It complements automatic metrics by capturing nuanced, subjective, and context-dependent judgements that proxy measures miss, and is central to evaluating generative and conversational models. It contrasts with automatic evaluation in cost, latency, and the need to manage rater agreement and bias.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:benchmark",
+        "label": "Benchmark"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inter-annotator-agreement",
+        "label": "Inter-Annotator Agreement"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:crowdsourcing",
+        "label": "Crowdsourcing"
+      },
+      {
+        "id": "urn:ngm:class:inter-annotator-agreement",
+        "label": "Inter-Annotator Agreement"
+      },
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A/B Testing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      },
+      {
+        "id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    }
+  ]
+}

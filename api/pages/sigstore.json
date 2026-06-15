@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:sigstore",
+  "title": "Sigstore",
+  "slug": "sigstore",
+  "public": true,
+  "classIri": "urn:ngm:class:sigstore",
+  "domain": "security",
+  "definition": "Sigstore is an open-source project and set of services for signing, verifying, and proving the provenance of software artefacts using short-lived keys and a public transparency log. It removes the burden of long-term key management by issuing ephemeral signing certificates bound to OpenID Connect identities, recording signatures in an append-only log (Rekor) for auditability. Sigstore underpins software supply-chain security through tools such as Cosign for container and artefact signing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-security",
+      "label": "Supply Chain Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:code-signing",
+        "label": "Code Signing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      },
+      {
+        "id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:bfloat16",
+  "title": "Bfloat16",
+  "slug": "bfloat16",
+  "public": true,
+  "classIri": "urn:ngm:class:bfloat16",
+  "domain": "artificial-intelligence",
+  "definition": "Bfloat16 (brain floating point) is a 16-bit floating-point format that keeps the same 8-bit exponent as 32-bit IEEE float but truncates the mantissa to 7 bits. It preserves the dynamic range of single precision while halving memory and bandwidth, making it well suited to deep-learning training and inference. Because it trades precision for range, it avoids the overflow and underflow problems that affect narrower formats during gradient computation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-compression",
+      "label": "Model Compression"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference-optimisation",
+        "label": "Inference Optimisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      },
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ]
+}

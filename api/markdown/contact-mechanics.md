@@ -1,0 +1,38 @@
+- ### Definition
+  - Contact mechanics is the study of the forces, deformations, and motions that arise when solid bodies touch and interact at their surfaces. It models phenomena such as normal contact forces, friction, adhesion, and local deformation, and provides the constitutive laws that govern how bodies push against, stick to, and slide over one another. In robotics it is essential for grasping, manipulation, locomotion, and physical simulation.
+  - Related: [[Physics Simulation]] [[Rigid Body Dynamics]] [[Friction]] [[Grasping]] [[Collision Detection]]
+- ### Overview
+  - Contact mechanics distinguishes the normal direction, governed by non-penetration constraints and contact stiffness, from the tangential direction, governed by friction laws such as the Coulomb model. Classical results describe how pressure distributes over a contact patch and how local deformation develops under load. In robotics these principles let controllers predict grasp stability, regulate contact forces during manipulation, and simulate interactions in physics engines, while soft-robotic and deformable contexts demand richer deformation models.
+- ### Mechanisms
+  - Normal contact enforces non-penetration and distributes pressure.
+  - Tangential behaviour is governed by friction laws such as Coulomb friction.
+  - Local deformation determines the size and shape of contact patches.
+  - Adhesion and stiction matter at small scales and soft interfaces.
+  - Numerical formulations integrate contact into physics engines.
+- ### Applications
+  - Grasp planning and stability analysis.
+  - Force-controlled manipulation and assembly.
+  - Legged and wheeled locomotion modelling.
+  - Tactile-sensor interpretation.
+  - Realistic physical simulation of robots and objects.
+- ### Relationships
+  - requires:: [[Rigid Body Dynamics]]
+  - requires:: [[Friction]]
+  - dependsOn:: [[Physics Simulation]]
+  - dependsOn:: [[Collision Detection]]
+  - relatedTo:: [[Friction]]
+  - relatedTo:: [[Tactile Sensing]]
+  - relatedTo:: [[Rigid Body Dynamics]]
+  - enables:: [[Grasping]]
+  - enables:: [[Dexterous Manipulation]]
+  - uses:: [[Collision Detection]]
+  - uses:: [[Physics Engine]]
+  - partOf:: [[Physics Simulation]]
+  - supports:: [[Dexterous Manipulation]]
+  - supports:: [[Soft Robotics]]
+  - contrastsWith:: [[Rigid Body Dynamics]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

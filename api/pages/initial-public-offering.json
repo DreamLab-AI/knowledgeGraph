@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:initial-public-offering",
+  "title": "Initial Public Offering",
+  "slug": "initial-public-offering",
+  "public": true,
+  "classIri": "urn:ngm:class:initial-public-offering",
+  "domain": "blockchain",
+  "definition": "An initial public offering (IPO) is the process by which a privately held company first sells its shares to the public on a regulated stock exchange, transitioning into a publicly traded entity. It is intermediated by investment banks that underwrite the issue, set a price range, and allocate shares to institutional and retail investors under securities regulation. In blockchain discourse the IPO serves as the regulated, equity-based reference point against which token-based fundraising mechanisms are contrasted.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:capital-markets",
+      "label": "Capital Markets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "id": "urn:ngm:class:crowdfunding",
+        "label": "Crowdfunding"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

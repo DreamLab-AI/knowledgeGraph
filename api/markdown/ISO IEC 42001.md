@@ -124,7 +124,7 @@ alias:: ISO/IEC 42001
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:third-party-audit",
+        "@id": "urn:ngm:class:third-party-verification",
         "label": "Third-Party Audit"
       },
       {

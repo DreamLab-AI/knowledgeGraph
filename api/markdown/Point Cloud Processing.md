@@ -74,7 +74,7 @@ public:: true
         "label": "Digital Twin"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicle-perception",
+        "@id": "urn:ngm:class:autonomous-driving-perception",
         "label": "Autonomous Vehicle Perception"
       }
     ],

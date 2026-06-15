@@ -1,0 +1,42 @@
+- ### Definition
+  - [[Privacy Regulation]] is a form of [[Data Protection Regulation]].
+  - It enforces [[Data Protection]] and [[Privacy]].
+  - It is exemplified by [[GDPR]] and [[CCPA]].
+  - It grants [[Data Subject Rights]].
+- ### Overview
+  - Privacy regulation codifies how personal data may lawfully be used.
+  - It defines individual rights such as access, erasure, and portability.
+  - It imposes accountability, transparency, and security duties on controllers.
+  - Enforcement bodies levy penalties for breaches of the rules.
+- ### Key aspects
+  - Lawful bases such as consent or legitimate interest.
+  - Data subject rights including access and erasure.
+  - Breach-notification and security obligations.
+  - Cross-border transfer safeguards.
+  - Privacy by design embedded into systems.
+- ### Applications
+  - Compliance programmes for digital platforms.
+  - Consent management and cookie governance.
+  - Data-handling controls in analytics and marketing.
+  - Cross-jurisdictional data transfer arrangements.
+- ### Relationships
+  - partOf:: [[Data Protection Regulation]]
+  - partOf:: [[Regulatory Compliance]]
+  - implements:: [[Data Protection]]
+  - implements:: [[Privacy By Design]]
+  - relatedTo:: [[GDPR]]
+  - relatedTo:: [[CCPA]]
+  - relatedTo:: [[Privacy]]
+  - relatedTo:: [[Data Governance]]
+  - requires:: [[Consent Management]]
+  - requires:: [[Data Subject Rights]]
+  - supports:: [[Privacy]]
+  - supports:: [[Data Subject Rights]]
+  - enables:: [[Compliance]]
+  - bridgesTo:: [[Data Governance]]
+  - contrastsWith:: [[Surveillance]]
+  - dependsOn:: [[Regulation]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

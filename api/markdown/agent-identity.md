@@ -1,0 +1,42 @@
+- ### Definition
+- Agent identity is the credential and attribute set that uniquely identifies an [[AI Agent]] within [[Identity Management]].
+- It is a building block of the [[Agentic Internet]].
+- It is constructed from [[Verifiable Credentials]], a [[DID]], and [[Key Management]].
+- It enables [[Authentication]], [[Accountability]], and [[Trust]] for autonomous actions.
+- ### Overview
+- As AI agents increasingly act on users' behalf, they need durable, verifiable identities distinct from the humans and devices they operate for.
+- Agent identity lets relying parties authenticate an agent, scope its permissions, and attribute its actions for audit.
+- It typically composes decentralised identifiers, cryptographic keys, and verifiable credentials describing capabilities and delegation.
+- It is foundational to safe tool use and to multi-agent coordination.
+- ### Key aspects
+- Unique, resolvable identifiers for each agent instance or class.
+- Cryptographic key material and disciplined key management.
+- Verifiable credentials encoding delegation and authorisation.
+- Action attribution and provenance for accountability.
+- ### Applications
+- Authenticating agents to APIs, services, and other agents.
+- Delegated authority where an agent acts within a user's mandate.
+- Auditable provenance of agent decisions and tool invocations.
+- Trust establishment in open multi-agent ecosystems.
+- ### Relationships
+- partOf:: [[Agentic Internet]]
+- partOf:: [[Identity Management]]
+- hasPart:: [[Verifiable Credentials]]
+- hasPart:: [[DID]]
+- hasPart:: [[Key Management]]
+- requires:: [[Authentication]]
+- requires:: [[Key Management]]
+- enables:: [[Accountability]]
+- enables:: [[Trust]]
+- enables:: [[Tool Use]]
+- uses:: [[Decentralized Identity]]
+- bridgesTo:: [[AI Agent]]
+- bridgesTo:: [[Autonomous Agent]]
+- supports:: [[Multi-Agent System]]
+- supports:: [[AI Safety]]
+- relatedTo:: [[Agentic AI]]
+- relatedTo:: [[Provenance]]
+- relatedTo:: [[Single Sign-On]]
+- dependsOn:: [[Artificial Intelligence]]
+- ### Provenance
+- updated:: 2026-06-15

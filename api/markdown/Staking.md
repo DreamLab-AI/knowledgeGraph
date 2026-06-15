@@ -115,7 +115,7 @@ public:: true
         "label": "Network Security"
       },
       {
-        "@id": "urn:ngm:class:block-finality",
+        "@id": "urn:ngm:class:finality",
         "label": "Block Finality"
       },
       {

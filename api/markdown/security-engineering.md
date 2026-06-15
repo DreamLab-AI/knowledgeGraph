@@ -1,0 +1,43 @@
+- ### Definition
+  - [[Security]]
+  - [[Cybersecurity]]
+  - [[Software Engineering]]
+  - [[Risk Management]]
+  - [[Cryptography]]
+- ### Overview
+  - Treats security as a property to be engineered in from first principles rather than bolted on after deployment.
+  - Frames protection economically: defenders allocate finite effort against rational adversaries with their own cost models.
+  - Spans people, process, and technology, recognising that the weakest link often lies outside the software itself.
+- ### Key aspects
+  - Threat modelling to enumerate adversaries, assets, and attack surfaces before design is fixed.
+  - Secure architecture establishing trust boundaries, least privilege, and fail-safe defaults.
+  - Cryptographic and key-management foundations for confidentiality, integrity, and authenticity.
+  - Assurance through review, testing, and verification that controls behave as intended.
+  - Operational feedback via monitoring, vulnerability management, and incident response.
+- ### Applications
+  - Designing payment, identity, and authentication platforms resistant to fraud and compromise.
+  - Hardening cloud, embedded, and industrial control systems against targeted attack.
+  - Building secure software development lifecycles into engineering organisations.
+  - Assessing and mitigating supply-chain and third-party dependency risk.
+- ### Relationships
+  - partOf:: [[Cybersecurity]]
+  - hasPart:: [[Security Architecture]]
+  - hasPart:: [[Security Testing]]
+  - hasPart:: [[Key Management]]
+  - requires:: [[Risk Management]]
+  - requires:: [[Cryptography]]
+  - enables:: [[Defence in Depth]]
+  - enables:: [[Data Protection]]
+  - uses:: [[Authentication]]
+  - uses:: [[Authorisation]]
+  - uses:: [[Access Control]]
+  - uses:: [[Penetration Testing]]
+  - supports:: [[Vulnerability Management]]
+  - supports:: [[Incident Response]]
+  - contrastsWith:: [[Privacy Engineering]]
+  - bridgesTo:: [[Supply Chain Security]]
+  - relatedTo:: [[Security]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

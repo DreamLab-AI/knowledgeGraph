@@ -135,7 +135,7 @@ public:: true
         "label": "Unsupervised Learning"
       },
       {
-        "@id": "urn:ngm:class:neural-scaling-laws",
+        "@id": "urn:ngm:class:scaling-laws",
         "label": "Neural Scaling Laws"
       }
     ],
@@ -167,10 +167,6 @@ public:: true
       {
         "@id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
-      },
-      {
-        "@id": "urn:ngm:class:chatgpt",
-        "label": "ChatGPT"
       }
     ],
     "bridgesTo": [

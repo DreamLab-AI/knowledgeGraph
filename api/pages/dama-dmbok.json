@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:dama-dmbok",
+  "title": "Dama Dmbok",
+  "slug": "dama-dmbok",
+  "public": true,
+  "classIri": "urn:ngm:class:dama-dmbok",
+  "domain": "data",
+  "definition": "The DAMA Data Management Body of Knowledge (DAMA-DMBOK) is a reference framework published by DAMA International that codifies the principles, functions, and best practices of enterprise data management. It organises the discipline into knowledge areas such as data governance, data quality, metadata, master data, and data architecture, arranged around a central data governance function. DAMA-DMBOK provides a common vocabulary and standard structure for establishing and assessing data management programmes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-architecture",
+        "label": "Data Architecture"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-security",
+        "label": "Data Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      },
+      {
+        "id": "urn:ngm:class:data-stewardship",
+        "label": "Data Stewardship"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:best-practice",
+        "label": "Best Practice"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-infrastructure",
+        "label": "Data Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

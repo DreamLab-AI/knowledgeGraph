@@ -1,0 +1,37 @@
+- ### Definition
+- On-device AI runs machine-learning [[Inference]] locally on phones, wearables and sensors instead of in the cloud. As a form of [[Edge AI]] within [[Edge Computing]], it trades remote scale for low [[Latency]], offline operation and stronger [[Data Privacy]].
+- ### Overview
+- Moving computation to the device removes the round trip to a server, so results arrive immediately and work even without connectivity. Because raw inputs such as images, audio and location stay on the device, on-device AI is a natural substrate for [[Privacy-Preserving Machine Learning]].
+- The challenge is fitting capable models into constrained power and memory budgets, which is solved with [[Model Compression]], quantisation, [[Model Optimization]] and dedicated [[Hardware Acceleration]]. It pairs naturally with [[Federated Learning]], where many devices train collaboratively without centralising data.
+- ### Key aspects
+- Local inference with minimal or no dependence on the network.
+- Model shrinking through compression, pruning and quantisation.
+- Exploitation of on-device accelerators and [[Embedded Systems]].
+- Privacy by design: sensitive data never leaves the device.
+- Energy and thermal budgeting for sustained operation.
+- ### Applications
+- Voice assistants and keyboard prediction on [[Mobile Computing]] devices.
+- Real-time vision on cameras, wearables and AR headsets.
+- [[TinyML]] workloads on microcontrollers and sensors.
+- On-device personalisation feeding [[Federated Learning]].
+- ### Relationships
+- partOf:: [[Edge Computing]]
+- requires:: [[Model Compression]]
+- requires:: [[Hardware Acceleration]]
+- requires:: [[Embedded Systems]]
+- uses:: [[Model Optimization]]
+- uses:: [[TinyML]]
+- uses:: [[Neural Network]]
+- enables:: [[Privacy-Preserving Machine Learning]]
+- enables:: [[Inference]]
+- supports:: [[Mobile Computing]]
+- supports:: [[Data Privacy]]
+- dependsOn:: [[Hardware Acceleration]]
+- bridgesTo:: [[Federated Learning]]
+- contrastsWith:: [[Cloud Computing]]
+- relatedTo:: [[Latency]]
+- relatedTo:: [[Edge AI]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

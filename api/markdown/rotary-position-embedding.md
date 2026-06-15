@@ -1,0 +1,37 @@
+- ### Definition
+	- [[Rotary Position Embedding]] (RoPE) injects positional information into [[Self Attention]] by rotating query and key vectors by an angle proportional to token position.
+	- It is a form of [[Positional Encoding]] that makes the attention dot product depend on relative position.
+	- It is the dominant positional scheme in models such as [[Llama]] and supports context-window [[Extrapolation]].
+- ### Overview
+	- Transformers are permutation-invariant by default, so position must be encoded explicitly. Earlier schemes either added fixed sinusoidal signals or learned absolute position embeddings, both added to the token representations.
+	- RoPE instead rotates pairs of features in the query and key vectors. Because a rotation by the difference of two positions falls out of the inner product, the resulting attention score depends only on the relative offset between tokens, giving relative-position behaviour through an absolute-position construction.
+	- This property preserves the linear structure attention relies on, integrates cleanly with optimised kernels, and degrades gracefully when sequences exceed the training length. Frequency rescaling techniques such as position interpolation and NTK-aware scaling extend the usable context window.
+- ### Mechanisms
+	- Pairwise rotation of feature dimensions by a position-dependent angle.
+	- A geometric series of rotation frequencies spanning short to long wavelengths.
+	- Relative-offset dependence emerging from the inner product of rotated vectors.
+	- Frequency-base rescaling for context-length [[Extrapolation]].
+- ### Applications
+	- Positional encoding in modern decoder-only [[Large Language Models]].
+	- Long-context model variants with extended windows.
+	- Multimodal and code models that inherit transformer attention.
+	- Efficient attention kernels that fold rotation into the dot product.
+- ### Relationships
+	- hasPart:: [[Relative Positional Encoding]]
+	- partOf:: [[Transformer Architecture]]
+	- implements:: [[Relative Positional Encoding]]
+	- implements:: [[Absolute Positional Encoding]]
+	- uses:: [[Self Attention]]
+	- uses:: [[Attention Mechanism]]
+	- enables:: [[Long Context Modelling]]
+	- enables:: [[Extrapolation]]
+	- enables:: [[Context Length]]
+	- supports:: [[Llama]]
+	- supports:: [[Large Language Models]]
+	- relatedTo:: [[Sinusoidal Positional Encoding]]
+	- relatedTo:: [[ALiBi]]
+	- contrastsWith:: [[Absolute Positional Encoding]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

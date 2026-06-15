@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:surrogate-model",
+  "title": "Surrogate Model",
+  "slug": "surrogate-model",
+  "public": true,
+  "classIri": "urn:ngm:class:surrogate-model",
+  "domain": "artificial-intelligence",
+  "definition": "A surrogate model (or metamodel) is an inexpensive, data-driven approximation of an expensive-to-evaluate function, simulation or experiment, used to predict outcomes without running the full computation. It is fitted to a sample of evaluations and then queried cheaply to explore the design space, drive optimisation or quantify uncertainty. Surrogate models are central to Bayesian optimisation, where a Gaussian process guides where to evaluate next.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

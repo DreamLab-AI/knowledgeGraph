@@ -98,7 +98,7 @@ public:: true
         "label": "Accountability (AI-0068)"
       },
       {
-        "@id": "urn:ngm:class:ai-auditing",
+        "@id": "urn:ngm:class:algorithmic-auditing",
         "label": "AI Auditing"
       },
       {
@@ -168,10 +168,6 @@ public:: true
       {
         "@id": "urn:ngm:class:black-box-model",
         "label": "Black-Box Model"
-      },
-      {
-        "@id": "urn:ngm:class:opacity",
-        "label": "Opacity"
       }
     ],
     "relatedTo": [

@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:clearing-house",
+  "title": "Clearing House",
+  "slug": "clearing-house",
+  "public": true,
+  "classIri": "urn:ngm:class:clearing-house",
+  "domain": "finance",
+  "definition": "A clearing house is a financial market intermediary that stands between the buyers and sellers of a trade to guarantee its completion, most often acting as a central counterparty that legally interposes itself through novation. By collecting margin, mutualising risk across a default fund, and netting offsetting obligations, it reduces counterparty credit risk and systemic contagion in securities, derivatives, and payment markets. Clearing houses are critical financial market infrastructure, subject to stringent prudential supervision because their failure could propagate across the financial system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-market-infrastructure",
+      "label": "Financial Market Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:central-counterparty",
+        "label": "Central Counterparty"
+      },
+      {
+        "id": "urn:ngm:class:netting",
+        "label": "Netting"
+      },
+      {
+        "id": "urn:ngm:class:margin",
+        "label": "Margin"
+      },
+      {
+        "id": "urn:ngm:class:default-management",
+        "label": "Default Management"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:settlement-finality",
+        "label": "Settlement Finality"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      },
+      {
+        "id": "urn:ngm:class:clearing",
+        "label": "Clearing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:derivatives",
+        "label": "Derivatives"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-market-infrastructure",
+        "label": "Financial Market Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:institutional-trust",
+        "label": "Institutional Trust"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

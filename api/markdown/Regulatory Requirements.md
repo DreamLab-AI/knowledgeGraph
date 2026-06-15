@@ -115,10 +115,6 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:legislation",
-        "label": "Legislation"
-      },
-      {
         "@id": "urn:ngm:class:standards",
         "label": "Standards"
       }
@@ -157,10 +153,6 @@ public:: true
       {
         "@id": "urn:ngm:class:policy",
         "label": "Policy"
-      },
-      {
-        "@id": "urn:ngm:class:enforcement",
-        "label": "Enforcement"
       },
       {
         "@id": "urn:ngm:class:supervisory-authority",

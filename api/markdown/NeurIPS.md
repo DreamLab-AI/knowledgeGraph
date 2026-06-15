@@ -116,10 +116,6 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:tutorial",
-        "label": "Tutorial"
-      },
-      {
         "@id": "urn:ngm:class:competition-in-ai",
         "label": "Competition"
       }

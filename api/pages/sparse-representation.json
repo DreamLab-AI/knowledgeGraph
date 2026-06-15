@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:sparse-representation",
+  "title": "Sparse Representation",
+  "slug": "sparse-representation",
+  "public": true,
+  "classIri": "urn:ngm:class:sparse-representation",
+  "domain": "artificial-intelligence",
+  "definition": "A sparse representation expresses a signal or data point as a linear combination of a small number of basis elements drawn from a larger, often overcomplete dictionary, with most coefficients zero. Sparsity yields compact, interpretable and noise-robust encodings, and underpins compressed sensing, dictionary learning and feature selection. It contrasts with dense distributed representations such as neural embeddings, and is recovered using L1 regularisation or greedy pursuit algorithms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:autoencoder",
+        "label": "Autoencoder"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

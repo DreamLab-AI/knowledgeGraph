@@ -1,0 +1,40 @@
+- ### Definition
+  - [[Anti-Money Laundering]]
+  - [[Fraud Detection]]
+  - [[Know Your Customer]]
+  - [[Blockchain Analytics]]
+  - [[Compliance]]
+- ### Overview
+  - Closes the loop on financial crime by reclaiming the value that detection and prosecution alone leave in place.
+  - Operates across legal, investigative, and analytical disciplines, often spanning multiple jurisdictions.
+  - Depends on traceability: the ability to follow value through obfuscation and layering.
+- ### Key aspects
+  - Tracing the movement of illicit proceeds through accounts, entities, and chains of transactions.
+  - Freezing and seizure orders to preserve assets before they are dissipated.
+  - Cross-border mutual legal assistance and cooperation among regulators and law enforcement.
+  - Blockchain analytics to deanonymise and follow cryptocurrency flows.
+  - Restitution mechanisms returning recovered value to victims or the public purse.
+- ### Applications
+  - Recovering proceeds of fraud, embezzlement, and corruption.
+  - Tracing and seizing cryptocurrency obtained through ransomware or scams.
+  - Supporting sanctions enforcement and confiscation of criminal property.
+  - Insolvency and victim-compensation recovery actions.
+- ### Relationships
+  - partOf:: [[Anti-Money Laundering]]
+  - requires:: [[Know Your Customer]]
+  - requires:: [[Audit]]
+  - uses:: [[Blockchain Analytics]]
+  - uses:: [[Fraud Detection]]
+  - enables:: [[Regulatory Compliance]]
+  - supports:: [[Compliance]]
+  - supports:: [[Governance]]
+  - dependsOn:: [[Traceability]]
+  - bridgesTo:: [[Cryptocurrency]]
+  - relatedTo:: [[Finance]]
+  - relatedTo:: [[Financial Services]]
+  - relatedTo:: [[Risk Management]]
+  - relatedTo:: [[AML]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

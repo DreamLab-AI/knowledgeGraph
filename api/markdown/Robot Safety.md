@@ -92,7 +92,7 @@ public:: true
         "label": "Real-Time Systems"
       },
       {
-        "@id": "urn:ngm:class:force-torque-sensing",
+        "@id": "urn:ngm:class:force-torque-sensor",
         "label": "Force Torque Sensing"
       }
     ],

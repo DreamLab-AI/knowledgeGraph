@@ -79,7 +79,7 @@ public:: true
         "label": "Clinical Decision Support"
       },
       {
-        "@id": "urn:ngm:class:electronic-health-records",
+        "@id": "urn:ngm:class:electronic-health-record",
         "label": "Electronic Health Records"
       },
       {

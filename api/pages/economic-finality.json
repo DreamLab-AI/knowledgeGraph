@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:economic-finality",
+  "title": "Economic Finality",
+  "slug": "economic-finality",
+  "public": true,
+  "classIri": "urn:ngm:class:economic-finality",
+  "domain": "blockchain",
+  "definition": "Economic finality is a guarantee in proof-of-stake blockchains that reverting a finalised block would require an attacker to forfeit an economically prohibitive amount of staked capital through slashing. Rather than relying on probabilistic confirmation depth, it makes reversal irrational by binding the cost of an attack to a large, destroyable bond. A block is economically final once enough validators have attested to it that any conflicting chain would entail penalising at least a quantified fraction of the total stake. It is the cryptoeconomic foundation of settlement assurance in modern staking-based consensus.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:finality",
+      "label": "Finality"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:settlement-finality",
+        "label": "Settlement Finality"
+      },
+      {
+        "id": "urn:ngm:class:economic-security",
+        "label": "Economic Security"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:crypto-economics",
+        "label": "Crypto-Economics"
+      },
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

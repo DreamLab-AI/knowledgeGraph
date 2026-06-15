@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:task-delegation",
+  "title": "Task Delegation",
+  "slug": "task-delegation",
+  "public": true,
+  "classIri": "urn:ngm:class:task-delegation",
+  "domain": "artificial-intelligence",
+  "definition": "Task Delegation is the mechanism by which an agent assigns a sub-task to another agent or tool deemed more capable, available or specialised for that work. In multi-agent and agentic systems it underpins division of labour, allowing a coordinating agent to decompose a goal and route components to subordinate executors. Effective delegation requires shared task representation, capability awareness and result aggregation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multi-agent-system",
+      "label": "Multi-Agent System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:agent-communication-language",
+        "label": "Agent Communication Language"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inter-agent-communication",
+        "label": "Inter-Agent Communication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:task-allocation",
+        "label": "Task Allocation"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

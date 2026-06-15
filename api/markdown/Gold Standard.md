@@ -116,10 +116,6 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:bretton-woods-system",
-        "label": "Bretton Woods System"
-      },
-      {
         "@id": "urn:ngm:class:inflation",
         "label": "Inflation"
       },

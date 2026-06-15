@@ -53,7 +53,7 @@
         "label": "Lifecycle Assessment"
       },
       {
-        "id": "urn:ngm:class:environmental-impact-assessment",
+        "id": "urn:ngm:class:environmental-assessment",
         "label": "Environmental Impact Assessment"
       }
     ],

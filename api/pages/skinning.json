@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:skinning",
+  "title": "Skinning",
+  "slug": "skinning",
+  "public": true,
+  "classIri": "urn:ngm:class:skinning",
+  "domain": "spatial-computing",
+  "definition": "Skinning is the process of binding a deformable surface mesh to an underlying skeleton so that the mesh deforms naturally as the skeleton is animated. Each vertex is assigned weights that determine how strongly it follows each influencing bone, and these weights drive the deformation during playback. Skinning is essential to character animation, allowing a single rigged model to be posed and animated across many motions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:character-rigging",
+      "label": "Character Rigging"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      },
+      {
+        "id": "urn:ngm:class:blend-shape",
+        "label": "Blend Shape"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:topology",
+        "label": "Topology"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:geometry-processing",
+        "label": "Geometry Processing"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      },
+      {
+        "id": "urn:ngm:class:fbx",
+        "label": "FBX"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "character-rigging",
+      "label": "Character Rigging"
+    }
+  ]
+}

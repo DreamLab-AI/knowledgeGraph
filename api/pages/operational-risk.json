@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:operational-risk",
+  "title": "Operational Risk",
+  "slug": "operational-risk",
+  "public": true,
+  "classIri": "urn:ngm:class:operational-risk",
+  "domain": "finance",
+  "definition": "Operational risk is the risk of loss resulting from inadequate or failed internal processes, people and systems, or from external events. It encompasses fraud, human error, system failures, legal and compliance breaches, and disruptions such as cyber-attacks or natural disasters, but excludes strategic and reputational risk in its narrow Basel definition. Managing it relies on controls, monitoring, capital allocation and resilience planning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      },
+      {
+        "id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance-risk-compliance",
+        "label": "Governance Risk Compliance"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:capital-adequacy",
+        "label": "Capital Adequacy"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:market-risk",
+        "label": "Market Risk"
+      },
+      {
+        "id": "urn:ngm:class:credit-risk",
+        "label": "Credit Risk"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-risk-management",
+        "label": "Supply Chain Risk Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    }
+  ]
+}

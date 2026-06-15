@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:latent-variable-model",
+  "title": "Latent Variable Model",
+  "slug": "latent-variable-model",
+  "public": true,
+  "classIri": "urn:ngm:class:latent-variable-model",
+  "domain": "machine-learning",
+  "definition": "A latent variable model is a statistical model that explains observed data in terms of unobserved (latent) variables, which capture hidden structure such as cluster membership, low-dimensional factors, or underlying states. By positing latent causes, these models compactly represent complex distributions and support tasks like density estimation, dimensionality reduction, and generation. Inference recovers distributions over the latent variables given the observations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:probabilistic-model",
+      "label": "Probabilistic Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-mixture-model",
+        "label": "Gaussian Mixture Model"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graphical-model",
+        "label": "Graphical Model"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+- ### Definition
+  - A trusted setup is a procedure in [[Cryptography]] that produces public parameters for [[ZK-SNARK]] systems.
+  - It depends on [[Commitment Scheme]] and [[Elliptic Curve Cryptography]] primitives.
+  - Multi-party ceremonies use [[Multi-Party Computation]] to dilute trust and enable [[Zero-Knowledge Proof]] verification.
+- ### Overview
+  - The setup samples secret randomness to build a structured reference string consumed by the prover and verifier.
+  - Security hinges on destroying the secret; a multi-party ceremony makes the parameters trustworthy as long as one contributor is honest.
+  - Universal and updatable setups, as in PLONK, reduce the need to re-run the ceremony for each circuit.
+- ### Mechanisms
+  - Generation of a common reference string from secret randomness.
+  - Toxic-waste destruction so the trapdoor cannot be reconstructed.
+  - Powers-of-tau multi-party ceremonies for distributed trust.
+  - Universal and updatable variants that decouple setup from circuit.
+- ### Applications
+  - Bootstrapping zk-SNARK proving systems in privacy-preserving blockchains.
+  - Establishing parameters for verifiable computation and rollups.
+  - Securing confidential transactions and identity proofs.
+- ### Risks
+  - Compromise of toxic waste permits undetectable proof forgery.
+  - Ceremony coordination and verifiability are critical to soundness.
+  - Transparent proof systems avoid setup at higher proof cost.
+- ### Relationships
+  - partOf:: [[Cryptography]]
+  - requires:: [[Multi-Party Computation]]
+  - requires:: [[Hash Function]]
+  - dependsOn:: [[Commitment Scheme]]
+  - dependsOn:: [[Elliptic Curve Cryptography]]
+  - enables:: [[ZK-SNARK]]
+  - enables:: [[Zero-Knowledge Proof]]
+  - enables:: [[Verifiable Computation]]
+  - uses:: [[Polynomial Commitment]]
+  - uses:: [[KZG Commitment]]
+  - relatedTo:: [[PLONK]]
+  - relatedTo:: [[Public-Key Cryptography]]
+  - supports:: [[Blockchain]]
+  - contrastsWith:: [[Forward Secrecy]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - quality:: 0.62

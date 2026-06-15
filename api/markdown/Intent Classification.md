@@ -36,7 +36,7 @@ public:: true
         "label": "Natural Language Understanding"
       },
       {
-        "@id": "urn:ngm:class:labelled-training-data",
+        "@id": "urn:ngm:class:annotated-training-data",
         "label": "Labelled Training Data"
       }
     ],

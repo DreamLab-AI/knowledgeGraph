@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:consumer-price-index",
+  "title": "Consumer Price Index",
+  "slug": "consumer-price-index",
+  "public": true,
+  "classIri": "urn:ngm:class:consumer-price-index",
+  "domain": "finance",
+  "definition": "The Consumer Price Index (CPI) is a statistical measure that tracks the average change over time in the prices paid by households for a representative basket of consumer goods and services. It is the principal indicator used to quantify inflation, adjust wages and benefits, and inform monetary policy. The index is computed by weighting price observations according to typical household expenditure patterns and rebasing them against a reference period.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:macroeconomics",
+      "label": "Macroeconomics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:fiscal-policy",
+        "label": "Fiscal Policy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

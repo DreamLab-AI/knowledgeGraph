@@ -1066,10 +1066,6 @@ public:: true
         "label": "OpenSats"
       },
       {
-        "@id": "urn:ngm:class:protocol-labs",
-        "label": "Protocol Labs"
-      },
-      {
         "@id": "urn:ngm:class:trust-over-ip-foundation",
         "label": "Trust Over IP Foundation"
       },

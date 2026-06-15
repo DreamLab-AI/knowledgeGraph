@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:lens-distortion-correction",
+  "title": "Lens Distortion Correction",
+  "slug": "lens-distortion-correction",
+  "public": true,
+  "classIri": "urn:ngm:class:lens-distortion-correction",
+  "domain": "spatial-computing",
+  "definition": "Lens distortion correction is the process of removing geometric aberrations introduced by camera optics so that straight lines in the world appear straight in the image. It estimates distortion coefficients, typically radial and tangential terms, from calibration data and remaps pixels to an undistorted, rectilinear projection. The correction is a prerequisite for accurate measurement, pose estimation, and image rectification in computer-vision pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:camera-calibration",
+      "label": "Camera Calibration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      },
+      {
+        "id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      },
+      {
+        "id": "urn:ngm:class:checkerboard-pattern",
+        "label": "Checkerboard Pattern"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:homography",
+        "label": "Homography"
+      },
+      {
+        "id": "urn:ngm:class:fiducial-marker",
+        "label": "Fiducial Marker"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "calibration-target",
+      "label": "Calibration Target"
+    }
+  ]
+}

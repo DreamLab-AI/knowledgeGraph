@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:log-replication",
+  "title": "Log Replication",
+  "slug": "log-replication",
+  "public": true,
+  "classIri": "urn:ngm:class:log-replication",
+  "domain": "distributed-systems",
+  "definition": "Log replication is the mechanism by which an ordered, append-only sequence of commands is copied consistently across the nodes of a distributed system so that each replica can apply the same operations in the same order. In leader-based consensus protocols such as Raft, the leader appends client commands to its log and replicates entries to followers, committing an entry once a quorum has durably stored it. By ensuring every replica converges on an identical log, it is the substrate for state machine replication and strong consistency. It must handle leader failover, log divergence, and consistency checks to keep replicas in agreement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:replication",
+      "label": "Replication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      },
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:linearizability",
+        "label": "Linearizability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      },
+      {
+        "id": "urn:ngm:class:consensus-algorithm",
+        "label": "Consensus Algorithm"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:raft",
+        "label": "Raft"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

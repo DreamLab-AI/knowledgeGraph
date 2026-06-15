@@ -1,0 +1,39 @@
+- ### Definition
+  - A [[Trustless Transaction]] relies on [[Distributed Trust]], a [[Consensus Mechanism]] and [[Cryptography]] to enable an [[Atomic Swap]] or [[Payment Channel]] without intermediaries.
+- ### Overview
+  - In a trustless transaction the protocol, not a person or institution, guarantees that the agreed exchange either completes or is safely aborted.
+  - Cryptographic commitments and consensus prevent double-spending and unilateral reneging.
+  - This shifts trust from counterparties and intermediaries to verifiable mathematics and economic incentives.
+- ### Mechanisms
+  - Digital signatures authorising spends without revealing private keys.
+  - Consensus and finality preventing conflicting or reversed transactions.
+  - Atomicity primitives such as hash-time-locked contracts.
+  - Smart contracts encoding conditional, self-enforcing settlement.
+- ### Applications
+  - Cryptocurrency payments between unknown parties.
+  - Cross-chain atomic swaps without a custodial exchange.
+  - Off-chain payment channels for fast, low-cost settlement.
+  - Decentralised finance lending, trading and escrow.
+- ### Relationships
+  - partOf:: [[Blockchain]]
+  - partOf:: [[Distributed Ledger]]
+  - dependsOn:: [[Distributed Trust]]
+  - dependsOn:: [[Consensus Mechanism]]
+  - dependsOn:: [[Cryptography]]
+  - implements:: [[Smart Contract]]
+  - uses:: [[Digital Signature]]
+  - uses:: [[Smart Contract]]
+  - enables:: [[Atomic Swap]]
+  - enables:: [[Payment Channel]]
+  - enables:: [[Decentralised Finance]]
+  - supports:: [[Decentralisation]]
+  - supports:: [[Cryptocurrency]]
+  - requires:: [[Byzantine Fault Tolerance]]
+  - requires:: [[Immutability]]
+  - bridgesTo:: [[Distributed Trust]]
+  - contrastsWith:: [[Transaction]]
+  - relatedTo:: [[Double Spending]]
+  - relatedTo:: [[Atomic Swap]]
+- ### Provenance
+  - This class was materialised to resolve existing inbound references in the knowledge graph.
+  - updated:: 2026-06-15

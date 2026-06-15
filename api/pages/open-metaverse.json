@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:open-metaverse",
+  "title": "Open Metaverse",
+  "slug": "open-metaverse",
+  "public": true,
+  "classIri": "urn:ngm:class:open-metaverse",
+  "domain": "spatial-computing",
+  "definition": "The open metaverse is a vision of interconnected virtual worlds built on open standards, interoperable formats, and user-owned assets and identity, in contrast to closed, single-vendor platforms. It emphasises portability of avatars, content, and value across experiences, decentralised ownership, and protocols rather than walled gardens. The open metaverse depends on shared standards for 3D assets, identity, and interoperability so that participation is not locked to any one provider.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:metaverse",
+      "label": "Metaverse"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-format",
+        "label": "Proprietary Format"
+      },
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "USD"
+      },
+      {
+        "id": "urn:ngm:class:open-protocol",
+        "label": "Open Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

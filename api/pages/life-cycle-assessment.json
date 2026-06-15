@@ -37,7 +37,7 @@
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:environmental-impact-assessment",
+        "id": "urn:ngm:class:environmental-assessment",
         "label": "Environmental Impact Assessment"
       },
       {
@@ -96,7 +96,7 @@
         "label": "Supply Chain Traceability"
       },
       {
-        "id": "urn:ngm:class:environmental-impact-assessment",
+        "id": "urn:ngm:class:environmental-assessment",
         "label": "Environmental Impact Assessment"
       },
       {

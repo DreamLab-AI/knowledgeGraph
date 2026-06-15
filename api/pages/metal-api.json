@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:metal-api",
+  "title": "Metal Api",
+  "slug": "metal-api",
+  "public": true,
+  "classIri": "urn:ngm:class:metal-api",
+  "domain": "spatial-computing",
+  "definition": "Metal is Apple's low-level graphics and compute application programming interface that provides near-direct access to the GPU on Apple platforms. It minimises driver overhead, exposes explicit command-buffer and resource management, and unifies rendering and general-purpose compute under one programming model. Metal is the platform-native alternative to cross-vendor APIs such as Vulkan and the legacy OpenGL on Apple hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graphics-api",
+      "label": "Graphics API"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:opengl",
+        "label": "OpenGL"
+      },
+      {
+        "id": "urn:ngm:class:directx",
+        "label": "DirectX"
+      },
+      {
+        "id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,42 @@
+- ### Definition
+  - Population health management is a [[Healthcare Technology]] practice that improves outcomes across a defined population rather than one patient at a time.
+  - It aggregates data from the [[Electronic Health Record]] and other sources, stratifies people by risk, and coordinates targeted interventions.
+  - It draws on [[Predictive Analytics]] over clinical [[Data]] to direct resources to those most likely to benefit.
+- ### Overview
+  - Rather than reacting to individual visits, population health management takes responsibility for the aggregate health of a group, such as the patients of a health system or members of an insurance plan.
+  - It combines clinical, claims and social data into a longitudinal view, then identifies cohorts, such as people with poorly controlled chronic conditions, who warrant proactive outreach.
+  - The approach is closely tied to value-based care, where providers are rewarded for outcomes and cost efficiency rather than volume of services.
+- ### Key aspects
+  - Data aggregation: unifying records from disparate systems into a population view.
+  - Risk stratification: ranking members by clinical and social risk to prioritise effort.
+  - Care gaps: detecting missed screenings, immunisations and follow-ups.
+  - Care coordination: orchestrating interventions across providers and settings.
+  - Outcome measurement: tracking quality and cost metrics over time.
+- ### Mechanisms
+  - The [[Electronic Health Record]] supplies the structured clinical data that feeds population analytics.
+  - [[Predictive Analytics]] models forecast which members are likely to deteriorate or incur high costs.
+  - Risk stratification routes high-need members into coordinated outreach and case management.
+  - Continuous monitoring closes care gaps and feeds outcomes back into [[Risk Management]] decisions.
+- ### Applications
+  - Chronic disease management programmes for diabetes, heart failure and hypertension.
+  - Value-based contracts and accountable care arrangements.
+  - Preventive outreach and screening campaigns.
+  - Resource planning and equity analysis across patient populations.
+- ### Relationships
+  - partOf:: [[Healthcare Technology]]
+  - hasPart:: [[Electronic Health Record]]
+  - requires:: [[Electronic Health Record]]
+  - enables:: [[Predictive Analytics]]
+  - uses:: [[Predictive Analytics]]
+  - dependsOn:: [[Data]]
+  - supports:: [[Healthcare Technology]]
+  - implements:: [[Risk Management]]
+  - relatedTo:: [[Predictive Analytics]]
+  - relatedTo:: [[Electronic Health Record]]
+  - bridgesTo:: [[Risk Management]]
+  - contrastsWith:: [[Electronic Health Record]]
+  - standardizedBy:: [[Healthcare Technology]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

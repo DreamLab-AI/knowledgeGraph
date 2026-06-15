@@ -1,0 +1,41 @@
+- ### Definition
+- The RSA algorithm is a [[Public-Key Cryptography]] scheme whose security rests on the difficulty of factoring the product of two large primes.
+- It implements [[Asymmetric Encryption]] using a [[Key Pair]]: a public key to encrypt or verify and a private key to decrypt or sign.
+- RSA relies on a [[Trapdoor Function]] built from [[Modular Arithmetic]] and is the basis for much [[Digital Signature]] and certificate-based authentication.
+- ### Overview
+- RSA, named after Rivest, Shamir, and Adleman, was one of the first practical public-key cryptosystems.
+- Key generation multiplies two large secret primes to form a modulus and derives matched public and private exponents from it.
+- Encryption and verification use the public exponent; decryption and signing use the private exponent, which only the holder of the prime factors can compute.
+- The system is a [[One Way Function]] with a trapdoor: easy to compute forwards, infeasible to invert without the secret.
+- Security depends on sufficiently large keys, since advances in factoring and the prospect of quantum computers erode shorter key strengths.
+- ### Mechanisms
+- Key generation — choosing primes, forming the modulus, and deriving exponents.
+- Modular exponentiation — the core operation for encryption, decryption, and signing.
+- Padding schemes — OAEP and PSS that prevent structural attacks on raw RSA.
+- Trapdoor structure — factorisation difficulty makes inversion infeasible without the private key.
+- Key size — larger moduli trade performance for stronger security margins.
+- ### Applications
+- Establishing session keys during [[SSL/TLS]] handshakes.
+- Signing software, documents, and certificates for authenticity.
+- Authenticating identities in public-key infrastructure.
+- Encrypting small payloads such as symmetric keys for hybrid encryption.
+- ### Relationships
+- partOf:: [[Public-Key Cryptography]]
+- implements:: [[Asymmetric Encryption]]
+- uses:: [[One Way Function]]
+- uses:: [[Modular Arithmetic]]
+- dependsOn:: [[Trapdoor Function]]
+- dependsOn:: [[One Way Function]]
+- requires:: [[Key Pair]]
+- enables:: [[Digital Signature]]
+- enables:: [[Key Exchange]]
+- supports:: [[SSL/TLS]]
+- relatedTo:: [[Public Key]]
+- relatedTo:: [[Private Key]]
+- contrastsWith:: [[Symmetric Encryption]]
+- bridgesTo:: [[Cryptographic Algorithm]]
+- hasPart:: [[Key Pair]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

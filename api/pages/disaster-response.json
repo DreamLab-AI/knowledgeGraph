@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:disaster-response",
+  "title": "Disaster Response",
+  "slug": "disaster-response",
+  "public": true,
+  "classIri": "urn:ngm:class:disaster-response",
+  "domain": "spatial-computing",
+  "definition": "Disaster response is the coordinated use of sensing, mapping and robotic systems to assess damage, locate survivors and direct relief in the aftermath of natural or human-made catastrophes. Spatial-computing techniques fuse aerial imagery, LiDAR, satellite remote sensing and ground-robot telemetry into situational maps that guide responders. Speed, robustness under degraded conditions, and accurate geospatial localisation are the defining requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      },
+      {
+        "id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      },
+      {
+        "id": "urn:ngm:class:multirotor-uav",
+        "label": "Multirotor UAV"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rescue-robot",
+        "label": "Rescue Robot"
+      },
+      {
+        "id": "urn:ngm:class:drone-navigation",
+        "label": "Drone Navigation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:ground-robot",
+        "label": "Ground Robot"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+- ### Definition
+  - Relates to [[Central Bank]]
+  - Relates to [[Monetary System]]
+  - Relates to [[Payment System]]
+  - Relates to [[Liquidity]]
+  - Relates to [[Traditional Banking]]
+- ### Overview
+  - Commercial banks intermediate between savers and borrowers, transforming short-term deposits into longer-term loans.
+  - Lending against fractional reserves expands the money supply and channels central-bank policy into the real economy.
+  - They provide deposit accounts, credit, payments, foreign exchange and treasury services.
+  - Prudential rules on capital and liquidity constrain risk-taking and protect depositors.
+- ### Key aspects
+  - **Deposit taking** — Current and savings accounts give the public safe, liquid claims that fund the bank's lending.
+  - **Credit creation** — Loans extended against a fraction of deposits create new deposit money in the banking system.
+  - **Payments and settlement** — Banks operate accounts and clearing links that move funds between parties domestically and internationally.
+  - **Prudential regulation** — Capital, leverage and liquidity standards such as Basel III limit insolvency and run risk.
+- ### Applications
+  - Retail banking for households: accounts, mortgages and consumer credit.
+  - Corporate banking: working-capital facilities, trade finance and cash management.
+  - Acting as the operational layer for monetary-policy transmission.
+  - Providing the rails for domestic and cross-border payments.
+- ### Relationships
+  - subClassOf:: [[Monetary System]]
+  - contrastsWith:: [[Central Bank]]
+  - contrastsWith:: [[Shadow Banking]]
+  - hasPart:: [[Payment System]]
+  - hasPart:: [[Lending Protocol]]
+  - relatedTo:: [[Correspondent Banking]]
+  - relatedTo:: [[Traditional Banking]]
+  - dependsOn:: [[Monetary System]]
+  - dependsOn:: [[Liquidity]]
+  - supports:: [[Payment Settlement]]
+  - supports:: [[Liquidity Provision]]
+  - requires:: [[Basel III]]
+  - requires:: [[Liquidity Coverage Ratio]]
+  - implements:: [[Monetary Policy Transmission]]
+  - uses:: [[Digital Payment System]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

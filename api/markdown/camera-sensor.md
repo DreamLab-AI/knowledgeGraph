@@ -1,0 +1,31 @@
+- ### Definition
+  - A [[Camera Sensor]] is the [[Image Sensor]] inside a [[Camera]] that converts incident light into electrical signals for [[Image Processing]], feeding [[Computer Vision]] and [[Perception]].
+- ### Overview
+  - A camera sensor is the photosensitive component, typically a CMOS or CCD array, that converts incident light focused by the optics into an electrical signal.
+  - Sensor characteristics such as resolution, pixel size, dynamic range and frame rate determine the quality of the resulting imagery.
+  - It is the primary exteroceptive vision input for robots, vehicles and immersive devices.
+- ### Key aspects
+  - Photodiode array converting photons to charge per pixel.
+  - Colour filtering and demosaicing for chromatic imagery.
+  - Trade-offs between resolution, sensitivity and noise.
+  - Global versus rolling shutter readout behaviour.
+- ### Applications
+  - Visual perception input for [[Robotics]] and autonomous vehicles.
+  - Tracking inputs such as [[Hand Tracking]] in immersive devices.
+  - Multi-modal fusion with [[Lidar]] via [[Sensor Fusion]].
+- ### Relationships
+  - partOf:: [[Camera]]
+  - requires:: [[Image Sensor]]
+  - requires:: [[Camera Calibration]]
+  - uses:: [[Image Processing]]
+  - enables:: [[Computer Vision]]
+  - enables:: [[Visual Perception]]
+  - enables:: [[Perception]]
+  - supports:: [[Object Detection]]
+  - supports:: [[Hand Tracking]]
+  - contrastsWith:: [[Lidar]]
+  - relatedTo:: [[Sensor]]
+  - relatedTo:: [[Stereo Camera]]
+  - bridgesTo:: [[Sensor Fusion]]
+- ### Provenance
+  - updated:: 2026-06-15

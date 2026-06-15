@@ -1,0 +1,39 @@
+- ### Definition
+  - Traditional Securities are conventional financial instruments such as equities, bonds and fund units that are issued, held and transferred through established centralised market infrastructure including exchanges, central securities depositories and custodians. They represent legal claims on assets or income and are governed by long-standing securities regulation. In blockchain discourse they form the baseline against which tokenised and on-chain security tokens are compared.
+  - Related concepts: [[Security Token]] [[Capital Markets]] [[Centralised Exchange]] [[Asset Tokenization]]
+- ### Overview
+  - Traditional securities are the incumbent representation of financial claims, settled through layered intermediaries: brokers, exchanges, clearing houses and central securities depositories. Settlement typically follows a multi-day cycle and relies on reconciliation between siloed ledgers. Blockchain-based security tokens propose to compress this stack by representing the same legal claims as programmable on-chain assets, which is why the two are routinely contrasted and bridged.
+- ### Key aspects
+  - Issuance and transfer via centralised market infrastructure
+  - Multi-day settlement cycles and intermediary reconciliation
+  - Legal claims on equity, debt or fund interests
+  - Heavy reliance on custodians and central depositories
+  - Comprehensive securities-law regulatory regime
+- ### Mechanisms
+  - Issuance and transfer via centralised market infrastructure
+  - Multi-day settlement cycles and intermediary reconciliation
+  - Legal claims on equity, debt or fund interests
+- ### Applications
+  - Public equity and bond markets
+  - Pension and collective investment vehicles
+  - Collateral in lending and repo markets
+  - Benchmark for tokenised-asset comparison
+  - Bridge endpoints for hybrid on-chain settlement
+- ### Relationships
+  - subClassOf:: [[Blockchain]]
+  - partOf:: [[Capital Markets]]
+  - contrastsWith:: [[Security Token]]
+  - contrastsWith:: [[Asset Tokenization]]
+  - bridgesTo:: [[Security Token]]
+  - bridgesTo:: [[Asset Tokenization]]
+  - dependsOn:: [[Centralised Exchange]]
+  - requires:: [[Regulatory Conformance]]
+  - relatedTo:: [[Capital Markets]]
+  - relatedTo:: [[Centralised Exchange]]
+  - supports:: [[Capital Markets]]
+  - standardizedBy:: [[Regulatory Conformance]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

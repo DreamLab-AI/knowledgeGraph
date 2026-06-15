@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:genetic-algorithm",
+  "title": "Genetic Algorithm",
+  "slug": "genetic-algorithm",
+  "public": true,
+  "classIri": "urn:ngm:class:genetic-algorithm",
+  "domain": "artificial-intelligence",
+  "definition": "A genetic algorithm is a population-based metaheuristic for optimisation and search inspired by Darwinian natural selection, in which candidate solutions are encoded as chromosomes and evolved across generations through selection, crossover, and mutation. A fitness function ranks individuals so that fitter solutions are preferentially recombined, gradually steering the population towards high-quality regions of the search space without requiring gradient information. Genetic algorithms are well suited to combinatorial, non-convex, and black-box problems where the objective is rugged, discontinuous, or expensive to differentiate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:evolutionary-algorithm",
+      "label": "Evolutionary Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:crossover",
+        "label": "Crossover"
+      },
+      {
+        "id": "urn:ngm:class:mutation",
+        "label": "Mutation"
+      },
+      {
+        "id": "urn:ngm:class:selection",
+        "label": "Selection"
+      },
+      {
+        "id": "urn:ngm:class:fitness-function",
+        "label": "Fitness Function"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:optimisation-algorithm",
+        "label": "Optimisation Algorithm"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:simulated-annealing",
+        "label": "Simulated Annealing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:population",
+        "label": "Population"
+      },
+      {
+        "id": "urn:ngm:class:fitness-function",
+        "label": "Fitness Function"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:simulated-annealing",
+        "label": "Simulated Annealing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    }
+  ]
+}

@@ -75,10 +75,6 @@ public:: true
         "label": "W3C"
       },
       {
-        "@id": "urn:ngm:class:whatwg",
-        "label": "WHATWG"
-      },
-      {
         "@id": "urn:ngm:class:ietf",
         "label": "IETF"
       },

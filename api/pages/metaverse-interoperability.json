@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:metaverse-interoperability",
+  "title": "Metaverse Interoperability",
+  "slug": "metaverse-interoperability",
+  "public": true,
+  "classIri": "urn:ngm:class:metaverse-interoperability",
+  "domain": "spatial-computing",
+  "definition": "Metaverse interoperability is the capability for users, avatars, digital assets, and experiences to move and function across multiple independently operated virtual worlds and platforms without loss of identity, ownership, or fidelity. It depends on shared standards for asset formats, identity, and transport, alongside the economic and governance arrangements that make cross-platform portability viable. The goal is an open, connected metaverse rather than a set of isolated walled gardens.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interoperability",
+      "label": "Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-identity",
+        "label": "Decentralized Identity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:open-metaverse",
+        "label": "Open Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:usd",
+        "label": "Universal Scene Description"
+      },
+      {
+        "id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:asset-portability",
+        "label": "Asset Portability"
+      },
+      {
+        "id": "urn:ngm:class:virtual-world",
+        "label": "Virtual World"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    }
+  ]
+}

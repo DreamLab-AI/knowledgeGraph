@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:counterparty-risk",
+  "title": "Counterparty Risk",
+  "slug": "counterparty-risk",
+  "public": true,
+  "classIri": "urn:ngm:class:counterparty-risk",
+  "domain": "blockchain",
+  "definition": "Counterparty Risk is the risk that the other party to a financial transaction or contract will fail to meet its obligations before settlement, causing loss to the non-defaulting party. It is central to derivatives, lending and securities trading, and is managed through collateral, netting and central clearing. Blockchain settlement and atomic swaps aim to reduce counterparty risk by removing reliance on trusted intermediaries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "Verification"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

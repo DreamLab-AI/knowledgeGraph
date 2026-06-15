@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:tessellation-shader",
+  "title": "Tessellation Shader",
+  "slug": "tessellation-shader",
+  "public": true,
+  "classIri": "urn:ngm:class:tessellation-shader",
+  "domain": "spatial-computing",
+  "definition": "A tessellation shader is a programmable stage of the GPU graphics pipeline that subdivides coarse geometric patches into finer primitives at render time, controlling the level of detail of surfaces dynamically. It comprises a control phase that sets tessellation factors and an evaluation phase that positions the generated vertices. By adaptively refining meshes on the GPU, it produces smooth curved surfaces and displacement-mapped detail without inflating the source geometry.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:shader-language",
+      "label": "Shader Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level Of Detail"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shader-language",
+        "label": "Shader Language"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level Of Detail"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:webgpu",
+        "label": "WebGPU"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

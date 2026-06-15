@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:audience-segmentation",
+  "title": "Audience Segmentation",
+  "slug": "audience-segmentation",
+  "public": true,
+  "classIri": "urn:ngm:class:audience-segmentation",
+  "domain": "data",
+  "definition": "Audience segmentation is the practice of dividing a population of users or customers into distinct groups that share attributes, behaviours, or needs. Segments are derived from demographic, behavioural, contextual, and inferred signals and are used to tailor messaging, targeting, and experiences. Segmentation makes personalisation, efficient targeting, and measurement possible across marketing and product functions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-marketing",
+      "label": "Digital Marketing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:first-party-data",
+        "label": "First Party Data"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:a-b-testing",
+        "label": "A B Testing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:conversion-rate-optimisation",
+        "label": "Conversion Rate Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

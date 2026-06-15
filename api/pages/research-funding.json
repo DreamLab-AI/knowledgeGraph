@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:research-funding",
+  "title": "Research Funding",
+  "slug": "research-funding",
+  "public": true,
+  "classIri": "urn:ngm:class:research-funding",
+  "domain": "ai",
+  "definition": "Research funding is the provision of financial resources to support scientific, scholarly and technological investigation, supplied through mechanisms such as competitive grants, institutional block funding, philanthropy and industry sponsorship. It typically flows through proposal submission, peer review and award management, and shapes which questions are pursued and by whom. Research funding is a primary determinant of the direction, scale and independence of academic research and innovation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:academic-research",
+      "label": "Academic Research"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:academic-research",
+        "label": "Academic Research"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

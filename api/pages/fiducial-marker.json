@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:fiducial-marker",
+  "title": "Fiducial Marker",
+  "slug": "fiducial-marker",
+  "public": true,
+  "classIri": "urn:ngm:class:fiducial-marker",
+  "domain": "spatial-computing",
+  "definition": "A fiducial marker is a designed visual pattern placed in a scene to serve as a reliable reference point for computer-vision systems. Its known geometry and high-contrast, machine-readable encoding allow algorithms to detect it robustly, recover camera pose, and assign a unique identifier. Fiducial markers such as ArUco and AprilTag families are widely used for camera calibration, augmented-reality registration, and robot localisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optical-calibration-target",
+      "label": "Optical Calibration Target"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:checkerboard-pattern",
+        "label": "Checkerboard Pattern"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:checkerboard-pattern",
+        "label": "Checkerboard Pattern"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:homography",
+        "label": "Homography"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:lens-distortion-correction",
+        "label": "Lens Distortion Correction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -82,10 +82,6 @@ public:: true
       {
         "@id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
-      },
-      {
-        "@id": "urn:ngm:class:investor-confidence",
-        "label": "Investor Confidence"
       }
     ],
     "contrastsWith": [

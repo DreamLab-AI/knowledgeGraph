@@ -121,7 +121,7 @@ public:: true
         "label": "Superposition Hypothesis"
       },
       {
-        "@id": "urn:ngm:class:ai-safety-evaluation",
+        "@id": "urn:ngm:class:safety-evaluation",
         "label": "AI Safety Evaluation"
       },
       {

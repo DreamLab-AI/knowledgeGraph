@@ -1,0 +1,40 @@
+- ### Definition
+  - Relates to [[Open Source Governance]]
+  - Relates to [[Transparency]]
+  - Relates to [[Consensus]]
+  - Relates to [[Stakeholder Engagement]]
+  - Relates to [[Open Standards]]
+- ### Overview
+  - Open governance publishes its rules, roles and decision records for scrutiny.
+  - Participation is open to interested parties rather than restricted to insiders.
+  - Decisions are reached through documented consensus or voting procedures.
+  - It underpins the legitimacy of open-source projects and standards processes.
+- ### Key aspects
+  - **Transparency** — Decision processes, meeting records and rationales are made publicly accessible.
+  - **Open participation** — Stakeholders can join, contribute and influence outcomes under published criteria.
+  - **Consensus mechanisms** — Rough consensus, voting or hybrid procedures resolve disagreement and confer legitimacy.
+  - **Accountable roles** — Maintainers, boards and working groups hold defined, reviewable responsibilities.
+- ### Applications
+  - Governance of open-source software foundations and projects.
+  - Multi-stakeholder standards development and ratification.
+  - Internet governance and protocol stewardship.
+  - Community-run platforms and decentralised organisations.
+- ### Relationships
+  - subClassOf:: [[Open Source Governance]]
+  - requires:: [[Transparency]]
+  - requires:: [[Accountability]]
+  - uses:: [[Consensus]]
+  - uses:: [[Stakeholder Engagement]]
+  - implements:: [[Decision Making]]
+  - implements:: [[Collective Governance]]
+  - relatedTo:: [[Open Source Governance]]
+  - relatedTo:: [[Multi-Stakeholder Governance]]
+  - supports:: [[Open Standards]]
+  - supports:: [[Community Governance]]
+  - dependsOn:: [[Governance Framework]]
+  - enables:: [[Transparent Decision Making]]
+  - bridgesTo:: [[Standards Body]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

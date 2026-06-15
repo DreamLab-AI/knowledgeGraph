@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:information-theoretic-security",
+  "title": "Information Theoretic Security",
+  "slug": "information-theoretic-security",
+  "public": true,
+  "classIri": "urn:ngm:class:information-theoretic-security",
+  "domain": "security",
+  "definition": "Information theoretic security is a class of cryptographic guarantee in which a scheme is secure against an adversary with unlimited computational power, because the ciphertext or protocol transcript carries no statistical information about the secret. Unlike computational security, which rests on the assumed hardness of mathematical problems, these guarantees follow from the structure of information itself and remain valid even against future advances such as quantum computers. Canonical examples include the one-time pad and threshold secret sharing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptography",
+      "label": "Cryptography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      },
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:secret-sharing",
+        "label": "Secret Sharing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:quantum-key-distribution",
+        "label": "Quantum Key Distribution"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:quantum-key-distribution",
+        "label": "Quantum Key Distribution"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:covariance-matrix",
+  "title": "Covariance Matrix",
+  "slug": "covariance-matrix",
+  "public": true,
+  "classIri": "urn:ngm:class:covariance-matrix",
+  "domain": "machine-learning",
+  "definition": "A covariance matrix is a square symmetric matrix whose entries are the pairwise covariances between the components of a random vector, with variances on its diagonal. It summarises the second-order statistics and linear dependence structure of multivariate data. Positive semi-definite by construction, it is central to multivariate statistics, dimensionality reduction and probabilistic estimation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:linear-algebra",
+      "label": "Linear Algebra"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
+      },
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

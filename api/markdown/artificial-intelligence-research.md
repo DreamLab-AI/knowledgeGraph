@@ -1,0 +1,39 @@
+- ### Definition
+  - [[Research and Development]]
+  - [[Artificial Intelligence]]
+  - [[Machine Learning]]
+  - [[Scientific Method]]
+  - Artificial Intelligence Research is defined within the [[Research and Development]] area of the ai domain.
+- ### Overview
+  - Artificial intelligence research operates as the upstream engine of the wider AI field: it formulates hypotheses about how intelligence can be mechanised, designs algorithms and architectures to test them, and validates results against shared benchmarks. The discipline oscillates between symbolic and statistical paradigms, and its modern phase is dominated by data-driven learning. Outputs flow into applied subfields and ultimately into deployed systems, while open problems in robustness, alignment and reasoning continue to define the research frontier.
+- ### Key aspects
+  - Hypothesis-driven inquiry grounded in the scientific method and reproducible experimentation.
+  - Algorithmic and architectural innovation across learning, reasoning and perception.
+  - Benchmarking and empirical evaluation on shared datasets and tasks.
+  - Cross-pollination between symbolic, probabilistic and connectionist paradigms.
+  - Open frontiers including robustness, interpretability, alignment and general reasoning.
+- ### Applications
+  - Advancing machine-learning and deep-learning methods adopted across industry.
+  - Developing foundation models and evaluation methodologies.
+  - Academic and industrial laboratories producing peer-reviewed advances.
+  - Translating research breakthroughs into applied vision, language and robotics systems.
+- ### Relationships
+  - subClassOf:: [[Research and Development]]
+  - partOf:: [[Research and Development]]
+  - supports:: [[Artificial Intelligence]]
+  - supports:: [[Machine Learning]]
+  - bridgesTo:: [[Machine Learning]]
+  - bridgesTo:: [[Deep Learning]]
+  - uses:: [[Scientific Method]]
+  - enables:: [[Knowledge Discovery]]
+  - enables:: [[Artificial Intelligence]]
+  - implements:: [[Scientific Method]]
+  - relatedTo:: [[Computer Vision]]
+  - relatedTo:: [[Neural Network]]
+  - dependsOn:: [[Research and Development]]
+  - contrastsWith:: [[Artificial Intelligence]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

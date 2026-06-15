@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:distributed-teamwork",
+  "title": "Distributed Teamwork",
+  "slug": "distributed-teamwork",
+  "public": true,
+  "classIri": "urn:ngm:class:distributed-teamwork",
+  "domain": "spatial-computing",
+  "definition": "Distributed teamwork is the coordinated effort of team members who are geographically dispersed and collaborate primarily through digital and immersive tools rather than co-located presence. It addresses the challenges of time-zone separation, reduced informal contact, and asynchronous decision-making by combining shared artefacts, communication norms, and presence technologies. In spatial computing, distributed teamwork increasingly leverages virtual environments that recreate co-presence and shared spatial context for remote collaborators.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:ngm:class:virtual-meeting",
+        "label": "Virtual Meeting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asynchronous-communication",
+        "label": "Asynchronous Communication"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:immersive-communication",
+        "label": "Immersive Communication"
+      },
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:virtual-meeting",
+        "label": "Virtual Meeting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:co-presence",
+        "label": "Co-presence"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    }
+  ]
+}

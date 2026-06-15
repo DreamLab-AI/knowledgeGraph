@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:national-ai-strategy",
+  "title": "National Ai Strategy",
+  "slug": "national-ai-strategy",
+  "public": true,
+  "classIri": "urn:ngm:class:national-ai-strategy",
+  "domain": "governance",
+  "definition": "A national AI strategy is a government-led policy framework setting a country's vision, priorities and coordinated actions for developing, adopting and governing artificial intelligence. It typically addresses research and innovation funding, talent and skills, data and compute infrastructure, ethical and regulatory guardrails, public-sector adoption and economic competitiveness. Such strategies align ministries, industry and academia around shared objectives and measurable outcomes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-policy",
+      "label": "AI Policy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:technological-sovereignty",
+        "label": "Technological Sovereignty"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:economic-development",
+        "label": "Economic Development"
+      },
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:economic-development",
+        "label": "Economic Development"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:research-and-development",
+        "label": "Research and Development"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:public-policy",
+        "label": "Public Policy"
+      },
+      {
+        "id": "urn:ngm:class:digital-policy",
+        "label": "Digital Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    }
+  ]
+}

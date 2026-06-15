@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:flow-state",
+  "title": "Flow State",
+  "slug": "flow-state",
+  "public": true,
+  "classIri": "urn:ngm:class:flow-state",
+  "domain": "spatial-computing",
+  "definition": "Flow state is a psychological condition of complete absorption in an activity, characterised by intense focus, loss of self-consciousness, distortion of the sense of time, and a balance between perceived challenge and skill. In spatial and immersive computing it is a target experiential outcome, where well-designed interaction and feedback sustain deep engagement. Cultivating flow is central to the design of immersive learning, games, and presence-driven environments because it maximises both performance and intrinsic satisfaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:immersion",
+      "label": "Immersion"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      },
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "id": "urn:ngm:class:embodiment",
+        "label": "Embodiment"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:immersion",
+        "label": "Immersion"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:telepresence",
+        "label": "Telepresence"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "immersion",
+      "label": "Immersion"
+    }
+  ]
+}

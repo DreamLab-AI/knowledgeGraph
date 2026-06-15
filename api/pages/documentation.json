@@ -1,0 +1,128 @@
+{
+  "id": "urn:visionflow:page:documentation",
+  "title": "Documentation",
+  "slug": "documentation",
+  "public": true,
+  "classIri": "urn:ngm:class:documentation",
+  "domain": "data",
+  "definition": "Documentation is the structured body of written, diagrammatic, or interactive material that describes the purpose, design, behaviour, and use of a system, dataset, process, or software artefact. It serves as the primary medium through which knowledge about an artefact is transferred between its creators and its users, maintainers, and auditors. Effective documentation spans reference material, conceptual explanations, tutorials, and procedural guides, and is increasingly treated as a versioned, testable component of the artefact itself rather than an afterthought.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data",
+      "label": "Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:api-reference",
+        "label": "API Reference"
+      },
+      {
+        "id": "urn:ngm:class:tutorial",
+        "label": "Tutorial"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:onboarding",
+        "label": "Onboarding"
+      },
+      {
+        "id": "urn:ngm:class:maintainability",
+        "label": "Maintainability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tribal-knowledge",
+        "label": "Tribal Knowledge"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:markdown",
+        "label": "Markdown"
+      },
+      {
+        "id": "urn:ngm:class:static-site-generation",
+        "label": "Static Site Generation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:technical-writing",
+        "label": "Technical Writing"
+      },
+      {
+        "id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "image-classification",
+      "label": "Image Classification"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    }
+  ]
+}

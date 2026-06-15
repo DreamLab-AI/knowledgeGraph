@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:kernel-fusion",
+  "title": "Kernel Fusion",
+  "slug": "kernel-fusion",
+  "public": true,
+  "classIri": "urn:ngm:class:kernel-fusion",
+  "domain": "artificial-intelligence",
+  "definition": "Kernel fusion is a compiler and runtime optimisation that merges several adjacent GPU or accelerator operations into a single executable kernel. By combining elementwise, reduction and other operators, it eliminates intermediate memory writes, reduces kernel-launch overhead and improves arithmetic intensity. It is a key technique for accelerating deep-learning training and inference on memory-bandwidth-bound hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gpu-acceleration",
+      "label": "GPU Acceleration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inference-optimisation",
+        "label": "Inference Optimisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:operator-fusion",
+        "label": "Operator Fusion"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:inference-optimisation",
+        "label": "Inference Optimisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      },
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ]
+}

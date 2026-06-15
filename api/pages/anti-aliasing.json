@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:anti-aliasing",
+  "title": "Anti Aliasing",
+  "slug": "anti-aliasing",
+  "public": true,
+  "classIri": "urn:ngm:class:anti-aliasing",
+  "domain": "spatial-computing",
+  "definition": "Anti-aliasing is a family of rendering techniques that reduce the jagged, stair-stepped edges and shimmering artefacts that arise when continuous geometry and signals are sampled onto a discrete pixel grid. By increasing effective sampling, blending edge pixels, or reconstructing from accumulated samples, anti-aliasing produces smoother, more visually faithful images. It is a standard stage of real-time and offline rendering pipelines, with methods such as supersampling, multisampling, post-process filtering, and temporal accumulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:real-time-rendering",
+      "label": "Real-Time Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:post-processing",
+        "label": "Post-Processing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:offline-rendering",
+        "label": "Offline Rendering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

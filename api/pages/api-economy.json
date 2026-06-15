@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:api-economy",
+  "title": "Api Economy",
+  "slug": "api-economy",
+  "public": true,
+  "classIri": "urn:ngm:class:api-economy",
+  "domain": "finance",
+  "definition": "The API economy is the ecosystem of business value created when organisations expose their data and services as application-programming interfaces that other parties can consume, compose, and monetise. By packaging capabilities as products, firms turn internal functions into reusable building blocks that partners and developers integrate, enabling new revenue streams, faster innovation, and platform network effects. It underpins models such as open banking and embedded services, and its growth depends on robust API management, gateways, and developer experience to govern access, security, and consumption at scale.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:platform-economy",
+      "label": "Platform Economy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:application-programming-interface",
+        "label": "Application Programming Interface"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      },
+      {
+        "id": "urn:ngm:class:digital-platform",
+        "label": "Digital Platform"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:graphql",
+        "label": "GraphQL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:webhook",
+        "label": "Webhook"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

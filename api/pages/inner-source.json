@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:inner-source",
+  "title": "Inner Source",
+  "slug": "inner-source",
+  "public": true,
+  "classIri": "urn:ngm:class:inner-source",
+  "domain": "distributed-collaboration",
+  "definition": "Inner source is the adoption of open-source development practices, tools and culture within the boundaries of a single organisation, allowing teams to discover, use and contribute to each other's code as if it were open source internally. It promotes shared repositories, transparent collaboration, peer review and meritocratic contribution while keeping the code private to the company. The approach aims to reduce duplication, improve quality and spread knowledge across organisational silos.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:proprietary-software",
+        "label": "Proprietary Software"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "id": "urn:ngm:class:community",
+        "label": "Community"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

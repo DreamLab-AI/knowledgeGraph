@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:fiduciary-duty",
+  "title": "Fiduciary Duty",
+  "slug": "fiduciary-duty",
+  "public": true,
+  "classIri": "urn:ngm:class:fiduciary-duty",
+  "domain": "governance",
+  "definition": "A fiduciary duty is a legal and ethical obligation requiring one party, the fiduciary, to act in the best interests of another, the beneficiary, with loyalty, prudence, and good faith. It typically encompasses a duty of loyalty that prohibits self-dealing and conflicts of interest, and a duty of care that demands competent, diligent management of the beneficiary's affairs. Fiduciary duties arise in relationships such as those between directors and shareholders, trustees and beneficiaries, and asset managers and clients.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:corporate-governance",
+      "label": "Corporate Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:legal-framework",
+        "label": "Legal Framework"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ethics",
+        "label": "Ethics"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:ethics",
+        "label": "Ethics"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:cellular-network",
+  "title": "Cellular Network",
+  "slug": "cellular-network",
+  "public": true,
+  "classIri": "urn:ngm:class:cellular-network",
+  "domain": "infrastructure",
+  "definition": "A cellular network is a wireless communication system in which a geographic area is divided into cells, each served by a base station, enabling mobile devices to connect and maintain service while moving. Frequency reuse across cells and handover between base stations allow large numbers of users to share limited radio spectrum. Successive generations such as 4G LTE and 5G have progressively increased capacity, throughput and latency performance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:telecommunications-infrastructure",
+      "label": "Telecommunications Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:radio-transceiver",
+        "label": "Radio Transceiver"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:radio-access-network",
+        "label": "Radio Access Network"
+      },
+      {
+        "id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:wireless-connectivity",
+        "label": "Wireless Connectivity"
+      },
+      {
+        "id": "urn:ngm:class:mesh-networking",
+        "label": "Mesh Networking"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:wireless-radio",
+        "label": "Wireless Radio"
+      },
+      {
+        "id": "urn:ngm:class:network-transport",
+        "label": "Network Transport"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mobile-device",
+        "label": "Mobile Device"
+      },
+      {
+        "id": "urn:ngm:class:low-latency-networking",
+        "label": "Low-Latency Networking"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:telecommunications-infrastructure",
+        "label": "Telecommunications Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:networking-infrastructure",
+        "label": "Networking Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

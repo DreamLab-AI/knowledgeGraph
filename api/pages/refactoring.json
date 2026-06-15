@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:refactoring",
+  "title": "Refactoring",
+  "slug": "refactoring",
+  "public": true,
+  "classIri": "urn:ngm:class:refactoring",
+  "domain": "infrastructure",
+  "definition": "Refactoring is the disciplined practice of restructuring existing source code to improve its internal design\u2014readability, modularity, and maintainability\u2014without changing its external behaviour. It proceeds through small, behaviour-preserving transformations, typically guarded by automated tests that confirm functionality remains intact. Refactoring is a core technique for managing technical debt and sustaining the long-term evolvability of software systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:web-application",
+        "label": "Web Application"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:design-pattern",
+        "label": "Design Pattern"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:design-pattern",
+        "label": "Design Pattern"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

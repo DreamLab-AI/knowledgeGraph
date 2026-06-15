@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:paged-attention",
+  "title": "Paged Attention",
+  "slug": "paged-attention",
+  "public": true,
+  "classIri": "urn:ngm:class:paged-attention",
+  "domain": "artificial-intelligence",
+  "definition": "Paged attention is a memory management technique for large language model inference that partitions the key-value cache into fixed-size blocks managed like virtual memory pages. By decoupling logical token positions from physical memory layout it eliminates fragmentation, enables near-zero waste in cache allocation and allows sharing of cached prefixes across requests. Introduced in the vLLM serving system, it substantially increases throughput for high-concurrency inference.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:kv-cache",
+      "label": "KV Cache"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-memory",
+        "label": "GPU Memory"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:continuous-batching",
+        "label": "Continuous Batching"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:model-optimisation-and-performance",
+        "label": "Model Optimisation and Performance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ]
+}

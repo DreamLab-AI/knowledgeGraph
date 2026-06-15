@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:airdrop",
+  "title": "Airdrop",
+  "slug": "airdrop",
+  "public": true,
+  "classIri": "urn:ngm:class:airdrop",
+  "domain": "blockchain",
+  "definition": "An Airdrop is a token distribution mechanism in which a blockchain project allocates free tokens to a set of wallet addresses, typically to bootstrap a community, reward early users or decentralise ownership. Eligibility may be based on prior on-chain activity, holdings of another asset or completion of tasks. Airdrops are a marketing and governance tool but attract Sybil attacks that the project must mitigate.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:token-distribution",
+      "label": "Token Distribution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:crypto-wallet",
+        "label": "Crypto Wallet"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:token-distribution",
+        "label": "Token Distribution"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-token",
+        "label": "Cryptocurrency Token"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

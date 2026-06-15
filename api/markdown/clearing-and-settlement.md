@@ -1,0 +1,37 @@
+- ### Definition
+  - Clearing and settlement are the post-trade processes that finalise a financial transaction: clearing reconciles, nets and confirms the obligations between counterparties, while settlement effects the actual transfer of securities and funds to discharge those obligations. Central counterparties and securities depositories reduce counterparty risk by interposing themselves and managing margin. The integrity of these processes underpins the stability of payment and securities markets.
+  - Related concepts: [[Financial Infrastructure]] [[Settlement]] [[Payment System]] [[Securities Settlement]] [[Real-Time Gross Settlement]]
+- ### Overview
+  - After a trade is matched, clearing aggregates and nets the resulting obligations, with a central counterparty often novating the trade so that each side faces the clearing house rather than the original counterparty. Margin and default funds collateralise the residual exposure. Settlement then moves securities against payment, increasingly on delivery-versus-payment terms and, in some venues, on a real-time gross or atomic basis that eliminates settlement-cycle risk.
+- ### Key aspects
+  - Trade confirmation, novation and multilateral netting
+  - Central-counterparty risk mutualisation and margining
+  - Delivery-versus-payment and atomic settlement
+  - Securities depository book-entry transfer
+  - Settlement-cycle and finality management
+- ### Applications
+  - Equity and derivatives post-trade processing
+  - Cross-border securities settlement
+  - Real-time gross settlement of large-value payments
+  - On-chain atomic settlement of tokenised assets
+- ### Relationships
+  - subClassOf:: [[Financial Infrastructure]]
+  - hasPart:: [[Settlement]]
+  - hasPart:: [[Payment Settlement]]
+  - hasPart:: [[Securities Settlement]]
+  - requires:: [[Financial Infrastructure]]
+  - requires:: [[Payment System]]
+  - dependsOn:: [[Payment System]]
+  - partOf:: [[Financial Infrastructure]]
+  - uses:: [[Atomic Settlement]]
+  - uses:: [[Real-Time Gross Settlement]]
+  - enables:: [[Cross-Border Settlement]]
+  - implements:: [[Settlement]]
+  - supports:: [[Order Book]]
+  - relatedTo:: [[KYC/AML Compliance]]
+  - relatedTo:: [[Payment Processing]]
+  - standardizedBy:: [[Central Bank]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

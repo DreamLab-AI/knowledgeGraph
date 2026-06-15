@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:sampling-theory",
+  "title": "Sampling Theory",
+  "slug": "sampling-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:sampling-theory",
+  "domain": "data",
+  "definition": "Sampling theory is the body of statistical and signal-processing principles governing how a subset of observations is selected from a larger population or continuous signal so that valid inferences can be drawn about the whole. In statistics it formalises how representative samples are drawn, how estimator variance and bias behave, and how confidence in conclusions scales with sample size. In signal processing it specifies the conditions under which a continuous signal can be reconstructed without loss from discrete samples. The discipline underpins survey design, experimental design, digital signal acquisition, and Monte Carlo estimation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistics",
+      "label": "Statistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-limit-theorem",
+        "label": "Central Limit Theorem"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-limit-theorem",
+        "label": "Central Limit Theorem"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    }
+  ]
+}

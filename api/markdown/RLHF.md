@@ -125,7 +125,7 @@ public:: true
         "label": "Reward Hacking"
       },
       {
-        "@id": "urn:ngm:class:policy-gradient",
+        "@id": "urn:ngm:class:policy-gradient-methods",
         "label": "Policy Gradient"
       },
       {

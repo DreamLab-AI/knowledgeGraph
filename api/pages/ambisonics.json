@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:ambisonics",
+  "title": "Ambisonics",
+  "slug": "ambisonics",
+  "public": true,
+  "classIri": "urn:ngm:class:ambisonics",
+  "domain": "spatial-computing",
+  "definition": "Ambisonics is a full-sphere surround sound technique that represents a sound field independently of any specific loudspeaker layout by encoding it into spherical harmonic components. A captured or synthesised scene is stored as B-format channels and later decoded to an arbitrary speaker array or to binaural headphones, allowing the same recording to be rendered for many playback configurations. It is widely used for immersive and head-tracked audio in virtual and augmented reality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-audio",
+      "label": "Spatial Audio"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:spherical-harmonics",
+        "label": "Spherical Harmonics"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:immersive-audio",
+        "label": "Immersive Audio"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:audio-spatialization",
+        "label": "Audio Spatialization"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      },
+      {
+        "id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

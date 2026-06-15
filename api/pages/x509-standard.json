@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:x509-standard",
+  "title": "X509 Standard",
+  "slug": "x509-standard",
+  "public": true,
+  "classIri": "urn:ngm:class:x509-standard",
+  "domain": "security",
+  "definition": "The X.509 standard defines the format of public-key certificates that bind a public key to an identity, together with the structures for certificate paths and revocation lists used in public-key infrastructure. An X.509 certificate carries fields such as subject, issuer, validity period, public key and extensions, and is signed by a certificate authority so that relying parties can verify it by tracing a chain to a trusted root. It is the foundational certificate format underlying TLS, secure email and many authentication systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-certificate",
+      "label": "Digital Certificate"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:digital-certificate",
+        "label": "Digital Certificate"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:certificate-authority",
+        "label": "Certificate Authority"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:trust-infrastructure",
+        "label": "Trust Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

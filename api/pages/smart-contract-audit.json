@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:smart-contract-audit",
+  "title": "Smart Contract Audit",
+  "slug": "smart-contract-audit",
+  "public": true,
+  "classIri": "urn:ngm:class:smart-contract-audit",
+  "domain": "blockchain",
+  "definition": "A smart contract audit is a structured security review of on-chain contract code that seeks to identify vulnerabilities, logic errors and economic flaws before deployment to an immutable ledger. Auditors combine manual code review with static analysis, automated scanners and, where warranted, formal verification to assess correctness against the intended specification. Because deployed contracts often custody substantial value and cannot easily be patched, auditing is a critical control in the blockchain and decentralised finance lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security-audit",
+      "label": "Security Audit"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      },
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      },
+      {
+        "id": "urn:ngm:class:reentrancy-attack",
+        "label": "Reentrancy Attack"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "verification",
+      "label": "VERIFICATION"
+    }
+  ]
+}

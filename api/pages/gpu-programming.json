@@ -1,0 +1,132 @@
+{
+  "id": "urn:visionflow:page:gpu-programming",
+  "title": "Gpu Programming",
+  "slug": "gpu-programming",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu-programming",
+  "domain": "spatial-computing",
+  "definition": "GPU programming is the practice of writing software that exploits the massively parallel architecture of graphics processing units to accelerate computation across thousands of concurrent threads. It encompasses both graphics pipelines, expressed through shaders, and general-purpose compute expressed through frameworks such as CUDA, OpenCL, and Vulkan compute. Effective GPU programming requires reasoning about memory hierarchies, thread divergence, and data parallelism to achieve high throughput on suitable workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:high-performance-computing",
+      "label": "High Performance Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:neural-rendering",
+        "label": "Neural Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "id": "urn:ngm:class:fragment-shader",
+        "label": "Fragment Shader"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:opencl",
+        "label": "OpenCL"
+      },
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:simd",
+        "label": "SIMD"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "vertex-shader",
+      "label": "Vertex Shader"
+    }
+  ]
+}

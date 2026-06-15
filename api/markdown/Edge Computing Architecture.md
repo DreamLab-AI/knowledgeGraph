@@ -98,7 +98,7 @@ public:: true
         "label": "Real-Time Data Processing"
       },
       {
-        "@id": "urn:ngm:class:latency-management",
+        "@id": "urn:ngm:class:latency-management-protocol",
         "label": "Latency Management"
       }
     ],

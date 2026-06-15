@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:web-application",
+  "title": "Web Application",
+  "slug": "web-application",
+  "public": true,
+  "classIri": "urn:ngm:class:web-application",
+  "domain": "infrastructure",
+  "definition": "A web application is interactive software delivered over the web and executed primarily within a browser, combining client-side code with server-side services accessed over HTTP. It renders user interfaces, manages state, and communicates with back-end APIs to provide functionality comparable to native applications without installation. Web applications rely on open web standards for portability across devices and platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ecmascript",
+        "label": "Ecmascript"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:css",
+        "label": "CSS"
+      },
+      {
+        "id": "urn:ngm:class:html",
+        "label": "HTML"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "id": "urn:ngm:class:user-interface-standard",
+        "label": "User Interface Standard"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:digital-collectible",
+  "title": "Digital Collectible",
+  "slug": "digital-collectible",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-collectible",
+  "domain": "blockchain",
+  "definition": "A digital collectible is a uniquely identifiable digital item whose scarcity, ownership and authenticity are recorded on a blockchain, allowing it to be owned, displayed and traded much like a physical collectible. Typically issued as a non-fungible token or an inscription, each collectible carries provenance and metadata that distinguish it from copies of the same media. Digital collectibles span art, trading cards, in-game items and membership artefacts, and they form a core consumer use case for blockchain-based digital assets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:non-fungible-token",
+      "label": "Non-Fungible Token"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:nft-marketplace",
+        "label": "NFT Marketplace"
+      },
+      {
+        "id": "urn:ngm:class:utility-token",
+        "label": "Utility Token"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:inscription",
+        "label": "Inscription"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
+      },
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:ordinals",
+        "label": "Ordinals"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

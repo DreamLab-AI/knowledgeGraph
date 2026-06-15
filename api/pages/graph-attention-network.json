@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:graph-attention-network",
+  "title": "Graph Attention Network",
+  "slug": "graph-attention-network",
+  "public": true,
+  "classIri": "urn:ngm:class:graph-attention-network",
+  "domain": "machine-learning",
+  "definition": "A graph attention network is a graph neural network architecture that aggregates information from a node's neighbours using learned attention coefficients, allowing the model to weight each neighbour's contribution according to its relevance. By replacing fixed or degree-normalised aggregation with attention, it adapts to local structure without requiring knowledge of the full graph in advance. Multi-head attention stabilises learning and lets the model capture several relational patterns simultaneously.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graph-neural-network",
+      "label": "Graph Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:node-classification",
+        "label": "Node Classification"
+      },
+      {
+        "id": "urn:ngm:class:link-prediction",
+        "label": "Link Prediction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:graph-convolutional-network",
+        "label": "Graph Convolutional Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self-Attention"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:node-classification",
+        "label": "Node Classification"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:graph-convolutional-network",
+        "label": "Graph Convolutional Network"
+      },
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self-Attention"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

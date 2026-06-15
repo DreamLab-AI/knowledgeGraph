@@ -1,0 +1,40 @@
+- ### Definition
+	- [[Data Labelling]] is the process of annotating raw data with the target outputs a supervised model must predict, producing the [[Ground Truth]] used for training.
+	- It is a form of [[Data Annotation]] that requires [[Human In The Loop]] judgment and structured guidelines.
+	- High-quality labelling enables [[Supervised Learning]] and underpins [[Model Training]].
+- ### Overview
+	- Supervised machine learning learns a mapping from inputs to outputs by example, and labelling provides those examples by attaching correct answers to raw data.
+	- Labelling spans classification tags, bounding boxes and segmentation masks for images, named-entity and sentiment spans for text, transcription for audio, and event markers for sensor streams.
+	- Annotation quality is governed by clear guidelines, annotator training, inter-annotator agreement metrics and adjudication of disagreements.
+	- Modern pipelines combine human labelling with model pre-labelling and active learning, where the model selects the most informative samples for human review.
+- ### Mechanisms
+	- Guideline definition specifying the label schema and edge-case rules.
+	- Annotation tooling for efficient, consistent capture of labels.
+	- Quality control via gold-standard checks and consensus.
+	- Model-assisted pre-labelling to reduce human effort.
+	- Active learning to prioritise high-value samples.
+- ### Applications
+	- Building training sets for computer vision and natural language models.
+	- Creating evaluation benchmarks and held-out test data.
+	- Reinforcement learning from human feedback preference data.
+	- Domain-specific datasets for medical, legal and industrial models.
+- ### Relationships
+	- requires:: [[Human In The Loop]]
+	- requires:: [[Training Data]]
+	- hasPart:: [[Ground Truth]]
+	- hasPart:: [[Dataset Curation]]
+	- dependsOn:: [[Data Quality]]
+	- enables:: [[Supervised Learning]]
+	- enables:: [[Model Training]]
+	- supports:: [[Active Learning]]
+	- supports:: [[Supervised Learning]]
+	- uses:: [[Human In The Loop]]
+	- partOf:: [[Training Data]]
+	- contrastsWith:: [[Active Learning]]
+	- bridgesTo:: [[Dataset Curation]]
+	- relatedTo:: [[Data Quality]]
+	- relatedTo:: [[Ground Truth]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:secure-channel",
+  "title": "Secure Channel",
+  "slug": "secure-channel",
+  "public": true,
+  "classIri": "urn:ngm:class:secure-channel",
+  "domain": "security",
+  "definition": "A Secure Channel is a communication path between two parties that protects the confidentiality, integrity and authenticity of exchanged data against eavesdropping and tampering. It is typically established by a key-exchange and authentication handshake that derives session keys, then protects subsequent traffic with authenticated encryption. Secure channels underpin protocols such as TLS and are foundational to trustworthy communication over untrusted networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:secure-communication",
+      "label": "Secure Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:data-confidentiality",
+        "label": "Data Confidentiality"
+      },
+      {
+        "id": "urn:ngm:class:end-to-end-encryption",
+        "label": "End-to-End Encryption"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-protocol",
+        "label": "Cryptographic Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:authenticated-encryption",
+        "label": "Authenticated Encryption"
+      },
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:forward-secrecy",
+        "label": "Forward Secrecy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:secure-communication",
+        "label": "Secure Communication"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:diffie-hellman-key-exchange",
+        "label": "Diffie-Hellman Key Exchange"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

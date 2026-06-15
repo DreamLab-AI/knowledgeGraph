@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:power-usage-effectiveness",
+  "title": "Power Usage Effectiveness",
+  "slug": "power-usage-effectiveness",
+  "public": true,
+  "classIri": "urn:ngm:class:power-usage-effectiveness",
+  "domain": "infrastructure",
+  "definition": "Power usage effectiveness (PUE) is a metric used to assess the energy efficiency of a data centre, defined as the ratio of total facility energy to the energy delivered to IT equipment. A PUE of 1.0 represents perfect efficiency where all energy reaches computing hardware, while higher values reflect overhead from cooling, power conversion and lighting. It is a widely used benchmark for sustainability and operational efficiency in data centres.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:energy-efficiency",
+      "label": "Energy Efficiency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cooling-system",
+        "label": "Cooling System"
+      },
+      {
+        "id": "urn:ngm:class:power-supply",
+        "label": "Power Supply"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:operational-efficiency",
+        "label": "Operational Efficiency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:power-distribution-unit",
+        "label": "Power Distribution Unit"
+      },
+      {
+        "id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      },
+      {
+        "id": "urn:ngm:class:electricity-consumption",
+        "label": "Electricity Consumption"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:carbon-footprint-measurement",
+        "label": "Carbon Footprint Measurement"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "SustainabilityReporting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:immersion-cooling",
+        "label": "Immersion Cooling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:crowdfunding",
+  "title": "Crowdfunding",
+  "slug": "crowdfunding",
+  "public": true,
+  "classIri": "urn:ngm:class:crowdfunding",
+  "domain": "blockchain",
+  "definition": "Crowdfunding is a financing model in which a project or venture raises capital from a large number of contributors, each providing a relatively small amount, typically through an online platform. Models range from donation and reward-based campaigns to equity and debt offerings, and blockchain variants use token sales to distribute ownership or utility rights. The approach broadens access to early-stage capital while distributing risk across many backers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralised-finance",
+      "label": "Decentralised Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:token-distribution",
+        "label": "Token Distribution"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ico",
+        "label": "ICO"
+      },
+      {
+        "id": "urn:ngm:class:initial-coin-offering",
+        "label": "Initial Coin Offering"
+      },
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:token-distribution",
+        "label": "Token Distribution"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "id": "urn:ngm:class:ico",
+        "label": "ICO"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

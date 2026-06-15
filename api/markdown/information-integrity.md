@@ -1,0 +1,37 @@
+- ### Definition
+  - [[Information Integrity]] safeguards the accuracy and authenticity of information across its lifecycle, relying on [[Content Provenance]], [[Digital Watermarking]] and [[Trust and Safety]] to resist [[Disinformation]].
+- ### Overview
+  - Information integrity treats trustworthiness as a property to be established, preserved and verified rather than assumed.
+  - It combines technical assurances (provenance metadata, watermarks, signatures) with institutional and editorial practices.
+  - The rise of synthetic media has sharpened the need for verifiable content authenticity at scale.
+  - It is a governance objective that intersects data integrity, security and public-interest media policy.
+- ### Key aspects
+  - Provenance and authenticity metadata attached to media at creation.
+  - Cryptographic signing and verifiable credentials for source attestation.
+  - Digital and invisible watermarking to detect tampering and synthesis.
+  - Fact-checking, labelling and platform trust-and-safety workflows.
+  - Resilience against coordinated misinformation and disinformation campaigns.
+- ### Applications
+  - Newsroom and platform content-authenticity pipelines.
+  - Election-integrity and public-health information programmes.
+  - Provenance disclosure for AI-generated media.
+  - Enterprise governance of document and record authenticity.
+- ### Relationships
+  - dependsOn:: [[Content Provenance]]
+  - dependsOn:: [[Data Integrity]]
+  - uses:: [[Digital Watermarking]]
+  - uses:: [[Content Authenticity]]
+  - supports:: [[Trust]]
+  - supports:: [[Trust and Safety]]
+  - enables:: [[Fact-Checking]]
+  - enables:: [[Media Literacy]]
+  - requires:: [[Authentication]]
+  - requires:: [[Verifiable Credentials]]
+  - contrastsWith:: [[Misinformation]]
+  - contrastsWith:: [[Disinformation]]
+  - bridgesTo:: [[Provenance]]
+  - relatedTo:: [[Epistemic Security]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - quality:: 0.62

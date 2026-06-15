@@ -1,0 +1,35 @@
+- ### Definition
+  - An embedding layer maps discrete tokens to dense vectors inside a [[Neural Network]].
+  - It is a learned lookup table that realises an [[Embedding]] of a [[Vocabulary]].
+  - It depends on [[Tokenization]] and is trained via [[Backpropagation]].
+- ### Overview
+  - Each vocabulary index selects a row of a learned weight matrix.
+  - Embeddings place semantically similar tokens near each other in vector space.
+  - The layer is typically the first stage of language and sequence models, feeding an encoder.
+- ### Mechanisms
+  - Lookup-table parameterisation of size vocabulary by embedding dimension.
+  - Gradient updates only to the rows of tokens seen in a batch.
+  - Optional weight tying with output projection in language models.
+  - Combination with positional encodings to inject order information.
+- ### Applications
+  - Word and subword embeddings in language models.
+  - User and item embeddings in recommender systems.
+  - Categorical feature encoding in tabular deep learning.
+  - Graph and entity embeddings in knowledge models.
+- ### Relationships
+  - partOf:: [[Neural Network]]
+  - partOf:: [[Transformer]]
+  - requires:: [[Vocabulary]]
+  - requires:: [[Tokenization]]
+  - uses:: [[One Hot Encoding]]
+  - uses:: [[Backpropagation]]
+  - enables:: [[Representation Learning]]
+  - enables:: [[Word Embedding]]
+  - implements:: [[Embedding]]
+  - supports:: [[Natural Language Processing]]
+  - relatedTo:: [[Encoder]]
+  - relatedTo:: [[Positional Encoding]]
+  - dependsOn:: [[Machine Learning]]
+  - contrastsWith:: [[One Hot Encoding]]
+- ### Provenance
+  - updated:: 2026-06-15

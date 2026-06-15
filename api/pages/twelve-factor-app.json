@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:twelve-factor-app",
+  "title": "Twelve Factor App",
+  "slug": "twelve-factor-app",
+  "public": true,
+  "classIri": "urn:ngm:class:twelve-factor-app",
+  "domain": "infrastructure",
+  "definition": "The Twelve-Factor App is a methodology for building software-as-a-service applications that are portable, resilient, and suitable for deployment on modern cloud platforms. It defines twelve guidelines covering codebase management, declared dependencies, configuration in the environment, backing services, build-release-run separation, stateless processes, port binding, concurrency, disposability, dev/prod parity, logs as event streams, and admin tasks. Adherence yields applications that scale horizontally, deploy continuously, and integrate cleanly with containerised and orchestrated infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cloud-native-applications",
+      "label": "Cloud-Native Applications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:configuration-management",
+        "label": "Configuration Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud-Native"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud-Native"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

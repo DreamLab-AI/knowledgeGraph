@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:fundamental-rights-impact-assessment",
+  "title": "Fundamental Rights Impact Assessment",
+  "slug": "fundamental-rights-impact-assessment",
+  "public": true,
+  "classIri": "urn:ngm:class:fundamental-rights-impact-assessment",
+  "domain": "governance",
+  "definition": "A fundamental rights impact assessment is a structured process for evaluating, before and during deployment, how a system, policy, or AI application may affect people's fundamental rights such as dignity, non-discrimination, privacy, and freedom of expression. It documents the context of use, identifies affected groups and potential harms, assesses risks, and defines mitigation and oversight measures. It has become a governance instrument for high-risk AI, complementing data protection impact assessments and broader risk assessment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:impact-assessment",
+      "label": "Impact Assessment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-protection-impact-assessment",
+        "label": "Data Protection Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:human-rights",
+        "label": "Human Rights"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethics",
+        "label": "Ethics"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "human-rights",
+      "label": "Human Rights"
+    }
+  ]
+}

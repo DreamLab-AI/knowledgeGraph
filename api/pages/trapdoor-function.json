@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:trapdoor-function",
+  "title": "Trapdoor Function",
+  "slug": "trapdoor-function",
+  "public": true,
+  "classIri": "urn:ngm:class:trapdoor-function",
+  "domain": "security",
+  "definition": "A trapdoor function is a one-way function that is easy to compute in the forward direction but computationally infeasible to invert, except for a party holding a secret piece of information called the trapdoor. This asymmetry between forward computation and inversion underpins public-key cryptography, where the public key enables encryption or verification and the private trapdoor enables decryption or signing. Candidate trapdoor functions rest on conjectured hard problems such as integer factorisation and the discrete logarithm.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:key-generation",
+        "label": "Key Generation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rsa",
+        "label": "RSA"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:asymmetric-encryption",
+        "label": "Asymmetric Encryption"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

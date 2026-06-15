@@ -1,0 +1,34 @@
+- ### Definition
+  - Public goods are non-excludable and non-rival, a concept from [[Economics]].
+  - They tend to be under-provided, the concern of [[Welfare Economics]].
+  - Their funding is a problem of [[Collective Action]] and [[Governance]].
+- ### Overview
+  - Non-excludability means access cannot be cheaply restricted to payers.
+  - Non-rivalry means consumption by one does not reduce supply to others.
+  - Under-provision arises because rational individuals free-ride on others' contributions.
+- ### Key aspects
+  - Non-excludability and non-rivalry as defining properties.
+  - The free-rider problem and resulting market failure.
+  - Provision through taxation, collective action, or novel funding mechanisms.
+  - Digital public goods such as open knowledge and open-source software.
+- ### Applications
+  - National defence, clean air, and public infrastructure.
+  - Open-source software and shared digital commons.
+  - Quadratic-funding mechanisms for public-goods financing.
+  - Public-policy design and welfare economics.
+- ### Relationships
+  - partOf:: [[Economics]]
+  - partOf:: [[Welfare Economics]]
+  - relatedTo:: [[Collective Action]]
+  - relatedTo:: [[Digital Commons]]
+  - relatedTo:: [[Governance]]
+  - relatedTo:: [[Stakeholder]]
+  - enables:: [[Collective Action]]
+  - requires:: [[Welfare Economics]]
+  - supports:: [[Digital Commons]]
+  - supports:: [[Governance]]
+  - dependsOn:: [[Economics]]
+  - bridgesTo:: [[Quadratic Funding]]
+  - uses:: [[Quadratic Funding]]
+- ### Provenance
+  - updated:: 2026-06-15

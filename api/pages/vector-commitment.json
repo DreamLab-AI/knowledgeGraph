@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:vector-commitment",
+  "title": "Vector Commitment",
+  "slug": "vector-commitment",
+  "public": true,
+  "classIri": "urn:ngm:class:vector-commitment",
+  "domain": "security",
+  "definition": "A vector commitment is a cryptographic primitive that produces a short, binding commitment to an ordered sequence of values such that the committer can later open any individual position with a compact proof of its value. It is position-binding, meaning one cannot produce valid openings of two different values at the same index, and it supports succinct membership and update proofs. Vector commitments generalise Merkle trees and underpin verifiable databases, stateless blockchains and proof systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:commitment-scheme",
+      "label": "Commitment Scheme"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:zero-knowledge",
+        "label": "Zero Knowledge"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:commitment-scheme",
+        "label": "Commitment Scheme"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-commitment",
+        "label": "Cryptographic Commitment"
+      },
+      {
+        "id": "urn:ngm:class:kzg-commitment",
+        "label": "KZG Commitment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      },
+      {
+        "id": "urn:ngm:class:polynomial-commitment",
+        "label": "Polynomial Commitment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

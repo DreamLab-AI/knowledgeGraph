@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:issb",
+  "title": "Issb",
+  "slug": "issb",
+  "public": true,
+  "classIri": "urn:ngm:class:issb",
+  "domain": "governance",
+  "definition": "The International Sustainability Standards Board (ISSB) is a standard-setting body established under the IFRS Foundation to develop a global baseline of sustainability-related financial disclosure standards. Its inaugural standards, IFRS S1 and IFRS S2, set out general sustainability and climate-specific disclosure requirements for capital markets. The ISSB consolidated earlier voluntary frameworks to reduce fragmentation and improve the comparability of corporate sustainability information.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability-reporting",
+      "label": "Sustainability Reporting"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:materiality-assessment",
+        "label": "Materiality Assessment"
+      },
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:disclosure",
+        "label": "Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:financial-materiality",
+        "label": "Financial Materiality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      },
+      {
+        "id": "urn:ngm:class:climate-scenario-analysis",
+        "label": "Climate Scenario Analysis"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-finance",
+        "label": "Sustainable Finance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:disclosure",
+        "label": "Disclosure"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    }
+  ]
+}

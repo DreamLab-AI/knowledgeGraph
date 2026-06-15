@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:computational-model",
+  "title": "Computational Model",
+  "slug": "computational-model",
+  "public": true,
+  "classIri": "urn:ngm:class:computational-model",
+  "domain": "spatial-computing",
+  "definition": "A computational model is a mathematical and algorithmic representation of a system that uses computing resources to simulate, predict, or analyse the system's behaviour under varying conditions. It encodes the entities, state variables, and governing rules of a phenomenon into executable form so that experiments can be run in silico rather than physically. Computational models underpin scientific simulation, engineering design, and the predictive components of spatial and physical computing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:computational-geometry",
+        "label": "Computational Geometry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle-testing",
+        "label": "Autonomous Vehicle Testing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

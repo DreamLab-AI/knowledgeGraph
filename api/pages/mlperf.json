@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:mlperf",
+  "title": "Mlperf",
+  "slug": "mlperf",
+  "public": true,
+  "classIri": "urn:ngm:class:mlperf",
+  "domain": "ai",
+  "definition": "MLPerf is a suite of standardised benchmarks, governed by the MLCommons consortium, that measures the performance of machine learning hardware, software and systems for both training and inference. It defines fixed reference models, datasets, quality targets and submission rules so that results from different vendors are reproducible and directly comparable. MLPerf has become an industry reference for evaluating accelerators, frameworks and end-to-end systems on representative deep learning workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:performance-benchmarks",
+      "label": "Performance Benchmarks"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "id": "urn:ngm:class:benchmark",
+        "label": "Benchmark"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:mlcommons",
+        "label": "MLCommons"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

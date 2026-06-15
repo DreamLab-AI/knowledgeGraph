@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:ecma-international",
+  "title": "Ecma International",
+  "slug": "ecma-international",
+  "public": true,
+  "classIri": "urn:ngm:class:ecma-international",
+  "domain": "infrastructure",
+  "definition": "Ecma International is an industry standards organisation that develops and maintains specifications for information and communication technology, most notably the ECMAScript language standard (ECMA-262). It operates through technical committees that produce royalty-free, openly published standards adopted across the software industry. Ecma collaborates with bodies such as ISO and IEC to give its specifications wider international standing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ecmascript",
+        "label": "Ecmascript"
+      },
+      {
+        "id": "urn:ngm:class:web-standards",
+        "label": "Web Standards"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:user-interface-standard",
+        "label": "User Interface Standard"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:standards-documentation",
+        "label": "Standards Documentation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:web-application",
+        "label": "Web Application"
+      },
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ecmascript",
+        "label": "Ecmascript"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso",
+        "label": "ISO"
+      },
+      {
+        "id": "urn:ngm:class:w3c",
+        "label": "W3C"
+      },
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

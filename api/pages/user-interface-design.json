@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:user-interface-design",
+  "title": "User Interface Design",
+  "slug": "user-interface-design",
+  "public": true,
+  "classIri": "urn:ngm:class:user-interface-design",
+  "domain": "spatial-computing",
+  "definition": "User interface design is the discipline of shaping the visual and interactive surfaces through which people operate digital products, determining layout, controls, typography, colour and feedback. It translates user goals and information structure into coherent, learnable and aesthetically consistent screens and interactions. As a sibling of interaction design and a contributor to overall user experience, it balances usability, accessibility and brand expression.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interface-design",
+      "label": "Interface Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:visual-design",
+        "label": "Visual Design"
+      },
+      {
+        "id": "urn:ngm:class:design-system",
+        "label": "Design System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:graphical-user-interface",
+        "label": "Graphical User Interface"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-centred-design",
+        "label": "Human Centred Design"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prototyping",
+        "label": "Prototyping"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "trust-in-automation",
+      "label": "Trust in Automation"
+    }
+  ]
+}

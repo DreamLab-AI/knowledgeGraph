@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:gamification",
+  "title": "Gamification",
+  "slug": "gamification",
+  "public": true,
+  "classIri": "urn:ngm:class:gamification",
+  "domain": "spatial-computing",
+  "definition": "Gamification is the application of game-design elements and play mechanics to non-game contexts in order to increase motivation, engagement, and desired behaviours. Typical elements include points, badges, leaderboards, levels, challenges, and progress feedback, often grounded in theories of intrinsic and extrinsic motivation. When well designed it leverages goal-setting, immediate feedback, and a sense of progression; when poorly designed it can produce superficial extrinsic incentives that erode lasting engagement. It is applied across learning, health, productivity, and immersive experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interaction-design",
+      "label": "Interaction Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

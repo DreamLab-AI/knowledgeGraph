@@ -114,10 +114,6 @@ public:: true
       {
         "@id": "urn:ngm:class:standards",
         "label": "Standards"
-      },
-      {
-        "@id": "urn:ngm:class:enforcement",
-        "label": "Enforcement"
       }
     ],
     "supports": [

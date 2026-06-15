@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:parametric-insurance",
+  "title": "Parametric Insurance",
+  "slug": "parametric-insurance",
+  "public": true,
+  "classIri": "urn:ngm:class:parametric-insurance",
+  "domain": "blockchain",
+  "definition": "Parametric insurance is a form of coverage that pays a predetermined amount when a measurable trigger event crosses a defined threshold, rather than indemnifying assessed losses. Because payouts depend on objective parameters such as rainfall, wind speed, earthquake magnitude, or flight delay, claims can be settled automatically without loss adjustment. On blockchains, parametric insurance is implemented through smart contracts that consume oracle data to verify triggers and disburse funds, enabling fast, transparent, and trust-minimised settlement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-finance",
+      "label": "Decentralized Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:arbitrage",
+        "label": "Arbitrage"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:insurance",
+        "label": "Insurance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blockchain-oracle",
+        "label": "Blockchain Oracle"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:defi",
+        "label": "DeFi"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      },
+      {
+        "id": "urn:ngm:class:insurance",
+        "label": "Insurance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:token-economics",
+        "label": "Token Economics"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-pool",
+        "label": "Liquidity Pool"
+      },
+      {
+        "id": "urn:ngm:class:defi",
+        "label": "DeFi"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    }
+  ]
+}

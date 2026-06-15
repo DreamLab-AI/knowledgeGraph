@@ -1,0 +1,35 @@
+- ### Definition
+  - A [[Network Interface]] is the connection point between a device and a network, implemented as a [[Hardware Component]] or as a software endpoint.
+  - It mediates frame transmission and reception, carrying a unique address and binding to the [[Network Protocol]] stack.
+  - It bridges the physical and data-link layers up to the [[Network Layer]] in the [[OSI Model]].
+- ### Overview
+  - In hardware the interface is a network interface controller, with a burned-in MAC address identifying it on a local segment.
+  - The operating system exposes each interface as a named, configurable object that protocols bind to.
+  - The interface abstracts the transmission medium, so higher layers send packets without knowing whether the link is Ethernet, wireless or virtual.
+  - Virtual interfaces extend the concept to containers, virtual machines and overlay networks.
+- ### Key aspects
+  - Addressing: a hardware MAC address at the link layer and one or more IP addresses at the network layer.
+  - Driver mediation: the operating system driver translates between the controller and the protocol stack.
+  - Layering: the interface sits across physical, data-link and network layers, presenting a uniform send/receive abstraction.
+  - Configuration: speed, duplex, MTU and addressing parameters govern its behaviour.
+- ### Applications
+  - Connecting servers, workstations and embedded devices to wired and wireless networks.
+  - Virtual networking for containers and virtual machines via software interfaces.
+  - High-throughput data-centre links and network function virtualisation.
+  - Multi-homing and link aggregation for redundancy and bandwidth.
+- ### Relationships
+  - partOf:: [[Hardware Component]]
+  - hasPart:: [[Network Layer]]
+  - requires:: [[Operating System]]
+  - requires:: [[Network Protocol]]
+  - uses:: [[Ethernet]]
+  - uses:: [[TCP]]
+  - enables:: [[Packet Switching]]
+  - implements:: [[OSI Model]]
+  - dependsOn:: [[Operating System]]
+  - relatedTo:: [[Ethernet]]
+  - bridgesTo:: [[Network Layer]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

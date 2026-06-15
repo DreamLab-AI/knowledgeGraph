@@ -60,7 +60,7 @@ public:: true
         "label": "Internet of Things"
       },
       {
-        "@id": "urn:ngm:class:wireless-sensor-network",
+        "@id": "urn:ngm:class:io-t-sensor-network",
         "label": "Wireless Sensor Network"
       },
       {

@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:financial-market-infrastructure",
+  "title": "Financial Market Infrastructure",
+  "slug": "financial-market-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:financial-market-infrastructure",
+  "domain": "finance",
+  "definition": "Financial market infrastructure refers to the multilateral systems that record, clear and settle payments, securities, derivatives and other financial transactions among participating institutions. It encompasses payment systems, central counterparties, central securities depositories, securities settlement systems and trade repositories. By concentrating and standardising the plumbing of financial markets, these systems underpin market stability while concentrating operational and systemic risk that must be carefully governed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-system",
+      "label": "Financial System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:clearing-house",
+        "label": "Clearing House"
+      },
+      {
+        "id": "urn:ngm:class:central-securities-depository",
+        "label": "Central Securities Depository"
+      },
+      {
+        "id": "urn:ngm:class:real-time-gross-settlement",
+        "label": "Real Time Gross Settlement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:securities-settlement",
+        "label": "Securities Settlement"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:swift-messaging",
+        "label": "SWIFT Messaging"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      },
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    }
+  ]
+}

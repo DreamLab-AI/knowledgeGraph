@@ -1,0 +1,40 @@
+- ### Definition
+  - Anonymity is the property of an actor being unidentifiable within a set of potential actors, so that actions cannot be linked to a real-world identity. It is a core privacy goal achieved through techniques that obscure identifying attributes, network paths and metadata. Anonymity contrasts with pseudonymity, where a persistent but non-identifying handle is retained.
+  - Related: [[Privacy]] [[Pseudonymity]] [[Encryption]] [[Onion Routing]]
+- ### Overview
+  - Anonymity depends on an anonymity set: the larger the set of indistinguishable actors, the stronger the protection. Systems such as Tor and mix networks achieve it by routing and re-encrypting traffic so that no single observer can correlate sender and receiver.
+- ### Key aspects
+  - Anonymity set size as a measure of protection strength
+  - Unlinkability of actions to a persistent identity
+  - Metadata minimisation alongside content protection
+  - Trade-offs with accountability and abuse prevention
+  - Distinction from pseudonymity and confidentiality
+- ### Applications
+  - Privacy-preserving communication and browsing
+  - Whistleblowing and journalistic source protection
+  - Anonymous credentials and zero-knowledge authentication
+  - De-identified data publishing under differential privacy
+- ### Relationships
+  - subClassOf:: [[Privacy]]
+  - contrastsWith:: [[Pseudonymity]]
+  - contrastsWith:: [[Identity]]
+  - contrastsWith:: [[Surveillance]]
+  - enables:: [[Privacy]]
+  - enables:: [[Data Protection]]
+  - uses:: [[Encryption]]
+  - uses:: [[Onion Routing]]
+  - uses:: [[Anonymisation]]
+  - requires:: [[Cryptography]]
+  - partOf:: [[Privacy]]
+  - supports:: [[Zero-Knowledge Proof]]
+  - implements:: [[Differential Privacy]]
+  - relatedTo:: [[Tor]]
+  - relatedTo:: [[VPN]]
+  - relatedTo:: [[Metadata]]
+  - relatedTo:: [[Authentication]]
+  - bridgesTo:: [[Security]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

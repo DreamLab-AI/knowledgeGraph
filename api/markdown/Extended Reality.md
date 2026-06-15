@@ -103,7 +103,7 @@ alias:: ExtendedReality
         "label": "OpenXR"
       },
       {
-        "@id": "urn:ngm:class:webxr-device-api",
+        "@id": "urn:ngm:class:w-3-c-web-xr-device-api",
         "label": "WebXR Device API"
       }
     ],

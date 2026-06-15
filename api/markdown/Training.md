@@ -122,7 +122,7 @@ public:: true
         "label": "Backward Pass"
       },
       {
-        "@id": "urn:ngm:class:validation",
+        "@id": "urn:ngm:class:validation-process",
         "label": "Validation"
       },
       {

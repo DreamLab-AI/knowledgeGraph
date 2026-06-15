@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:ssl-termination",
+  "title": "Ssl Termination",
+  "slug": "ssl-termination",
+  "public": true,
+  "classIri": "urn:ngm:class:ssl-termination",
+  "domain": "infrastructure",
+  "definition": "SSL termination is the practice of decrypting inbound TLS-encrypted traffic at a dedicated network endpoint, typically a reverse proxy or load balancer, before forwarding the now-plaintext requests to backend servers. By centralising the cryptographic handshake and certificate management at the edge, it offloads CPU-intensive encryption work from application servers and simplifies certificate lifecycle administration. The terminating node holds the private keys and performs the handshake, then routes traffic over the internal network. It is a foundational pattern in modern web infrastructure, often paired with re-encryption to backends for end-to-end security.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reverse-proxy",
+      "label": "Reverse Proxy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:https",
+        "label": "HTTPS"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transport-layer-security",
+        "label": "Transport Layer Security"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      },
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

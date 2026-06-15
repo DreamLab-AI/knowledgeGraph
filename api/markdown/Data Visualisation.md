@@ -69,7 +69,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:dashboard",
+        "@id": "urn:ngm:class:monitoring-dashboard",
         "label": "Dashboard"
       }
     ],

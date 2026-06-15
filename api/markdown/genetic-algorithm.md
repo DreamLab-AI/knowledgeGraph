@@ -1,0 +1,38 @@
+- ### Definition
+	- A [[Genetic Algorithm]] is a population-based [[Evolutionary Algorithm]] for optimisation and search inspired by natural selection.
+	- Candidate solutions are encoded as chromosomes and evolved through [[Selection]], [[Crossover]], and [[Mutation]].
+	- A [[Fitness Function]] ranks individuals so fitter solutions propagate, without needing gradient information.
+- ### Overview
+	- Genetic algorithms maintain a population of encoded candidate solutions and iterate a generational loop: evaluate fitness, select parents, recombine them via crossover, perturb offspring via mutation, and form the next generation.
+	- Because they treat the objective as a black box, they apply to problems where gradients are unavailable, the landscape is rugged or discontinuous, or the search space is combinatorial. The diversity maintained by the population helps avoid premature convergence to local optima.
+	- Design choices, encoding scheme, selection pressure, crossover and mutation operators and rates, elitism, and population size, govern the balance between exploration and exploitation.
+- ### Mechanisms
+	- Selection: tournament, roulette-wheel, or rank-based choice of parents weighted by fitness.
+	- Crossover: recombination of parental chromosomes to form offspring.
+	- Mutation: random perturbation that injects diversity and enables escape from local optima.
+	- Elitism: preservation of the best individuals across generations.
+- ### Applications
+	- Combinatorial optimisation such as scheduling, routing, and packing.
+	- Neural architecture search and [[Hyperparameter Optimisation]].
+	- Engineering design and parameter tuning for simulations.
+	- Feature selection and symbolic regression.
+- ### Relationships
+	- hasPart:: [[Crossover]]
+	- hasPart:: [[Mutation]]
+	- hasPart:: [[Selection]]
+	- hasPart:: [[Fitness Function]]
+	- partOf:: [[Evolutionary Algorithm]]
+	- implements:: [[Search Algorithm]]
+	- implements:: [[Optimisation Algorithm]]
+	- uses:: [[Population]]
+	- uses:: [[Fitness Function]]
+	- uses:: [[Sampling]]
+	- enables:: [[Hyperparameter Optimisation]]
+	- relatedTo:: [[Swarm Intelligence]]
+	- relatedTo:: [[Simulated Annealing]]
+	- contrastsWith:: [[Gradient Descent]]
+	- contrastsWith:: [[Simulated Annealing]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

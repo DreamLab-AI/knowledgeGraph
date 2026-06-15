@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:relying-party",
+  "title": "Relying Party",
+  "slug": "relying-party",
+  "public": true,
+  "classIri": "urn:ngm:class:relying-party",
+  "domain": "security",
+  "definition": "A relying party is an application or service that depends on an external identity provider or credential issuer to authenticate users and assert their attributes, rather than managing credentials itself. It consumes and validates assertions, tokens or verifiable credentials to make access-control decisions. As a core role in federated and decentralised identity, the relying party trusts issuers within a defined trust framework and enforces the resulting authorisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identity-management",
+      "label": "Identity Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      },
+      {
+        "id": "urn:ngm:class:trust-framework",
+        "label": "Trust Framework"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authentication-protocol",
+        "label": "Authentication Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:saml",
+        "label": "SAML"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign On"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:federated-identity",
+        "label": "Federated Identity"
+      },
+      {
+        "id": "urn:ngm:class:digital-trust",
+        "label": "Digital Trust"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ]
+}

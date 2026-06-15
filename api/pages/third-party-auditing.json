@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:third-party-auditing",
+  "title": "Third Party Auditing",
+  "slug": "third-party-auditing",
+  "public": true,
+  "classIri": "urn:ngm:class:third-party-auditing",
+  "domain": "governance",
+  "definition": "Third-party auditing is the independent examination of an organisation's systems, processes, controls, or claims by an external party that has no stake in the outcome, in order to provide credible assurance to stakeholders. By separating the auditor from the audited, it strengthens trust, accountability, and regulatory compliance beyond what self-assessment can offer. In technology and AI governance it covers security audits, conformity assessment, and verification of model or supply-chain claims.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:audit",
+      "label": "Audit"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:certification",
+        "label": "Certification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      },
+      {
+        "id": "urn:ngm:class:verification",
+        "label": "Verification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      },
+      {
+        "id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    }
+  ]
+}

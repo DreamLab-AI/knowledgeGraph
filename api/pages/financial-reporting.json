@@ -1,0 +1,116 @@
+{
+  "id": "urn:visionflow:page:financial-reporting",
+  "title": "Financial Reporting",
+  "slug": "financial-reporting",
+  "public": true,
+  "classIri": "urn:ngm:class:financial-reporting",
+  "domain": "blockchain",
+  "definition": "Financial reporting is the structured disclosure of an organisation's financial position, performance, and cash flows to stakeholders through standardised statements and supporting notes. It rests on recognised accounting frameworks and audit assurance to provide a faithful, comparable, and verifiable view of economic activity. In blockchain and decentralised contexts, financial reporting extends to on-chain transparency, proof-of-reserves attestations, and the accounting treatment of digital assets and tokenised value.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:disclosure",
+        "label": "Disclosure"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof Of Reserves"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-reserves",
+        "label": "Proof Of Reserves"
+      },
+      {
+        "id": "urn:ngm:class:disclosure",
+        "label": "Disclosure"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:taxation",
+        "label": "Taxation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:photorealism",
+  "title": "Photorealism",
+  "slug": "photorealism",
+  "public": true,
+  "classIri": "urn:ngm:class:photorealism",
+  "domain": "spatial-computing",
+  "definition": "Photorealism is the goal and quality of producing synthetic imagery that is visually indistinguishable from a photograph of a real scene. In computer graphics it is pursued through physically based rendering, accurate light transport such as global illumination and ray tracing, high-fidelity material models, and careful post-processing including tone mapping and colour grading. Achieving photorealism requires faithful simulation of how light interacts with surfaces, volumes, and the camera, and it underpins applications from visual effects and architectural visualisation to immersive virtual environments and synthetic training data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering",
+      "label": "Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:hdr",
+        "label": "HDR"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:colour-grading",
+        "label": "Colour Grading"
+      },
+      {
+        "id": "urn:ngm:class:post-processing",
+        "label": "Post Processing"
+      },
+      {
+        "id": "urn:ngm:class:tone-mapping",
+        "label": "Tone Mapping"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

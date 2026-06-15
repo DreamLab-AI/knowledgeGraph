@@ -1,0 +1,36 @@
+- ### Definition
+	- **Q Learning** is a model-free, off-policy [[Reinforcement Learning]] algorithm that learns an action-value function estimating the long-run return of each action in each state. Its update rule implements the [[Bellman Equation]] as a bootstrapped target over a [[Markov Decision Process]].
+	- Because it learns the optimal [[Value Function]] independently of the behaviour policy, Q-learning converges to optimal control without a model of environment dynamics, and it scales to perception-heavy tasks through [[Deep Reinforcement Learning]].
+- ### Overview
+	- Introduced by Watkins in 1989, Q-learning maintains an estimate Q(s, a) of the expected discounted return for taking action a in state s and acting optimally thereafter. After each transition it nudges the estimate towards the observed reward plus the discounted maximum Q-value of the next state.
+	- The "off-policy" property means the agent can explore using one policy (for example epsilon-greedy) while learning the value of the greedy optimal policy. Under suitable conditions on the learning rate and exploration, tabular Q-learning is proven to converge to the optimal action-value function.
+	- For large or continuous state spaces, the table is replaced by a function approximator. Deep Q-networks combine Q-learning with neural networks, experience replay, and target networks to achieve stability, enabling agents to learn directly from raw sensory input.
+- ### Mechanisms
+	- Maintains an action-value estimate Q(s, a) updated by temporal-difference error.
+	- Uses a bootstrapped [[Bellman Equation]] target with a discount factor.
+	- Learns off-policy, decoupling exploration from the policy being evaluated.
+	- Balances exploration and exploitation, commonly via epsilon-greedy action selection.
+	- Scales through function approximation in [[Deep Reinforcement Learning]] with replay and target networks.
+- ### Applications
+	- Game-playing agents and control of simulated and physical robots.
+	- Resource scheduling, routing, and energy-management decision problems.
+	- Recommendation and bidding systems framed as sequential decisions.
+	- Foundation for deep Q-network variants in high-dimensional perception tasks.
+- ### Relationships
+	- relatedTo:: [[Reinforcement Learning]]
+	- relatedTo:: [[Value Function]]
+	- relatedTo:: [[Agent]]
+	- relatedTo:: [[Dynamic Programming]]
+	- implements:: [[Bellman Equation]]
+	- hasPart:: [[Value Function]]
+	- uses:: [[Reward Function]]
+	- uses:: [[Neural Network]]
+	- partOf:: [[Reinforcement Learning]]
+	- dependsOn:: [[Markov Decision Process]]
+	- enables:: [[Deep Reinforcement Learning]]
+	- supports:: [[Policy]]
+	- bridgesTo:: [[Deep Reinforcement Learning]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

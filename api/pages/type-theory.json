@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:type-theory",
+  "title": "Type Theory",
+  "slug": "type-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:type-theory",
+  "domain": "artificial-intelligence",
+  "definition": "Type theory is a branch of mathematical logic and theoretical computer science in which every term has an associated type, and well-formedness is governed by typing rules rather than by raw set membership. It serves both as a foundation for mathematics and as the formal basis for type systems in programming languages, where types constrain valid expressions. Through the propositions-as-types correspondence, proofs become programs and types become specifications, linking logic, computation and formal verification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:mathematical-logic",
+      "label": "Mathematical Logic"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:formal-methods",
+        "label": "Formal Methods"
+      },
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

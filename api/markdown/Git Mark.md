@@ -78,7 +78,7 @@ alias:: Git-mark, git-mark, Gitmark
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:timestamping",
+        "@id": "urn:ngm:class:trusted-timestamping",
         "label": "Timestamping"
       }
     ],

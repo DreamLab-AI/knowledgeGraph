@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:voxel",
+  "title": "Voxel",
+  "slug": "voxel",
+  "public": true,
+  "classIri": "urn:ngm:class:voxel",
+  "domain": "spatial-computing",
+  "definition": "A voxel is the volumetric analogue of a pixel: a discrete unit of value located on a regular three-dimensional grid that represents a sample of space, encoding attributes such as density, colour, opacity, or material. Voxels underpin volumetric data structures used in medical imaging, scientific simulation, terrain and procedural modelling, and game engines, and they can be stored efficiently in sparse structures such as octrees to skip empty space. Unlike polygon meshes that describe only surfaces, voxels represent the full interior of objects, enabling destructible geometry, fluid simulation, and direct volume rendering.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:volume-rendering",
+      "label": "Volume Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sparse-voxel-octree",
+        "label": "Sparse Voxel Octree"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:volume-rendering",
+        "label": "Volume Rendering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:volume-rendering",
+        "label": "Volume Rendering"
+      },
+      {
+        "id": "urn:ngm:class:volumetric-rendering",
+        "label": "Volumetric Rendering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

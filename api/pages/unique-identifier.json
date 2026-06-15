@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:unique-identifier",
+  "title": "Unique Identifier",
+  "slug": "unique-identifier",
+  "public": true,
+  "classIri": "urn:ngm:class:unique-identifier",
+  "domain": "supply-chain",
+  "definition": "A unique identifier is a value assigned to an object, entity, or record so that it can be distinguished unambiguously from all others within a defined scope. Identifiers may be globally unique, such as universally unique identifiers, or unique within a namespace, such as a serial number combined with an issuer prefix. In supply chains, unique identifiers underpin serialisation, traceability, and data exchange across organisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:identification",
+      "label": "Identification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:serialisation",
+        "label": "Serialisation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:namespace",
+        "label": "Namespace"
+      },
+      {
+        "id": "urn:ngm:class:identification",
+        "label": "Identification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      },
+      {
+        "id": "urn:ngm:class:tracking",
+        "label": "Tracking"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:identification",
+        "label": "Identification"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:serialisation",
+        "label": "Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "crdt",
+      "label": "CRDT"
+    }
+  ]
+}

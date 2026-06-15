@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:compute-cluster",
+  "title": "Compute Cluster",
+  "slug": "compute-cluster",
+  "public": true,
+  "classIri": "urn:ngm:class:compute-cluster",
+  "domain": "artificial-intelligence",
+  "definition": "A compute cluster is a collection of interconnected computers that work together as a single system to execute large or parallel workloads. Nodes are coordinated by a scheduler that allocates jobs across processors, accelerators, and memory, sharing high-speed networking and often a common storage fabric. Clusters underpin large-scale model training, simulation, and data processing where a single machine cannot supply enough compute.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:high-performance-computing",
+      "label": "High-Performance Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:scheduler",
+        "label": "Scheduler"
+      },
+      {
+        "id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-center",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-center",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    }
+  ]
+}

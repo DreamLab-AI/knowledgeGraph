@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:polygon-zkevm",
+  "title": "Polygon Zkevm",
+  "slug": "polygon-zkevm",
+  "public": true,
+  "classIri": "urn:ngm:class:polygon-zkevm",
+  "domain": "blockchain",
+  "definition": "Polygon zkEVM is an Ethereum Layer 2 scaling solution built as a zero-knowledge rollup that is bytecode-equivalent with the Ethereum Virtual Machine. It batches transactions off-chain and posts validity proofs to Ethereum, inheriting Layer 1 security while reducing gas fees and increasing throughput. Developers can deploy existing EVM smart contracts with minimal changes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:zk-rollup",
+      "label": "zk-Rollup"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:transaction-throughput",
+        "label": "Transaction Throughput"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:zk-rollup",
+        "label": "zk-Rollup"
+      },
+      {
+        "id": "urn:ngm:class:evm",
+        "label": "EVM"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer-2 Scaling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

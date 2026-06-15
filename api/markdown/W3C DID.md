@@ -134,7 +134,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:eu-digital-identity-wallet",
+        "@id": "urn:ngm:class:digital-identity-wallet",
         "label": "EU Digital Identity Wallet"
       },
       {

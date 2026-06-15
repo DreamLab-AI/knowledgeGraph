@@ -65,12 +65,7 @@
         "label": "Post-Quantum Cryptography"
       }
     ],
-    "standardizedBy": [
-      {
-        "id": "urn:ngm:class:protocol-labs",
-        "label": "Protocol Labs"
-      }
-    ],
+    "standardizedBy": [],
     "partOf": [
       {
         "id": "urn:ngm:class:multiformats",

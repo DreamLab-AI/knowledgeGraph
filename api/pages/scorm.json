@@ -1,0 +1,77 @@
+{
+  "id": "urn:visionflow:page:scorm",
+  "title": "Scorm",
+  "slug": "scorm",
+  "public": true,
+  "classIri": "urn:ngm:class:scorm",
+  "domain": "spatial-computing",
+  "definition": "SCORM (Sharable Content Object Reference Model) is a set of technical standards for packaging and exchanging e-learning content so that courses run consistently across compliant learning management systems. It defines content packaging, run-time communication and sequencing so that a course can report completion, scores and time to the host platform. SCORM established interoperability for digital learning content and is a predecessor to xAPI.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:education-technology",
+      "label": "Education Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-interoperability",
+        "label": "Data Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

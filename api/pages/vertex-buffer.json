@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:vertex-buffer",
+  "title": "Vertex Buffer",
+  "slug": "vertex-buffer",
+  "public": true,
+  "classIri": "urn:ngm:class:vertex-buffer",
+  "domain": "spatial-computing",
+  "definition": "A vertex buffer is a region of GPU-accessible memory that stores the attributes of a mesh's vertices, such as positions, normals, texture coordinates and colours, in a contiguous layout for the graphics pipeline to consume. By uploading geometry once and referencing it across many draw calls, vertex buffers minimise CPU-to-GPU transfer and enable high-throughput rendering. They are bound to the input-assembler stage and described by a vertex layout that maps buffer bytes to shader inputs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ]
+}

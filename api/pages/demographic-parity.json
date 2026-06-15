@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:demographic-parity",
+  "title": "Demographic Parity",
+  "slug": "demographic-parity",
+  "public": true,
+  "classIri": "urn:ngm:class:demographic-parity",
+  "domain": "artificial-intelligence",
+  "definition": "Demographic parity is a group-fairness criterion requiring that a model's positive prediction rate be equal across protected groups, independent of the true label. Also called statistical parity, it is satisfied when the probability of a favourable decision does not depend on membership of a protected attribute such as gender or ethnicity. It is one of several formal, often mutually incompatible, definitions of algorithmic fairness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:algorithmic-fairness",
+      "label": "Algorithmic Fairness"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:accuracy",
+        "label": "Accuracy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:disparate-impact",
+        "label": "Disparate Impact"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:disparate-impact",
+        "label": "Disparate Impact"
+      },
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

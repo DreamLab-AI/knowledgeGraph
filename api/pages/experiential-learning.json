@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:experiential-learning",
+  "title": "Experiential Learning",
+  "slug": "experiential-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:experiential-learning",
+  "domain": "spatial-computing",
+  "definition": "Experiential learning is an approach in which knowledge and skills are acquired through direct activity and reflection on concrete experience rather than passive instruction. In spatial computing it is realised through immersive simulations where learners act, observe outcomes and iterate. The cycle of acting, reflecting and conceptualising makes it well suited to embodied, situated training.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:immersive-learning",
+      "label": "Immersive Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embodied-cognition",
+        "label": "Embodied Cognition"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embodied-cognition",
+        "label": "Embodied Cognition"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:immersive-learning",
+        "label": "Immersive Learning"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

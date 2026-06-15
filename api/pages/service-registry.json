@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:service-registry",
+  "title": "Service Registry",
+  "slug": "service-registry",
+  "public": true,
+  "classIri": "urn:ngm:class:service-registry",
+  "domain": "distributed-systems",
+  "definition": "A Service Registry is a database of available service instances and their network locations that underpins dynamic service discovery in distributed and microservice architectures. Instances register on startup and deregister on shutdown, while clients or load balancers query the registry to resolve a logical service name to a healthy endpoint. Health checks expire stale entries, keeping the registry an accurate view of live topology in elastic, frequently changing deployments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:service-discovery",
+      "label": "Service Discovery"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    }
+  ]
+}

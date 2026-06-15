@@ -1,0 +1,38 @@
+- ### Definition
+	- Ergodic theory studies the long-run statistical behaviour of measure-preserving [[Dynamical Systems]].
+	- Its central theorem relates time averages along a trajectory to space averages over the state distribution.
+	- It draws on [[Probability Theory]] and the analysis of a [[Stochastic Process]].
+- ### Overview
+	- A transformation is ergodic when invariant sets are trivial, so the system cannot be split into independent sub-behaviours.
+	- For ergodic systems the average of an observable over time converges to its expectation under the invariant measure.
+	- This justifies estimating distribution properties by following one long simulated path.
+	- Mixing strengthens ergodicity by requiring that correlations between distant times decay.
+- ### Key aspects
+	- The Birkhoff ergodic theorem establishes almost-sure convergence of time averages.
+	- Invariant measures characterise the equilibrium statistics a system settles into.
+	- A [[Markov Chain]] is ergodic when it is irreducible and aperiodic, converging to a unique stationary distribution.
+	- Entropy quantifies the rate at which a system produces new information along its orbit.
+- ### Applications
+	- Justifying [[Markov Chain Monte Carlo]] so that chain samples approximate a target distribution.
+	- Underpinning [[Monte Carlo Method]] estimators that average over simulated trajectories.
+	- Validating [[Sampling]] schemes used in [[Statistical Inference]] and Bayesian computation.
+	- Supporting analysis of mixing time for [[Probabilistic Programming]] systems.
+- ### Relationships
+	- subClassOf:: [[Dynamical Systems]]
+	- uses:: [[Probability Theory]]
+	- uses:: [[Stochastic Process]]
+	- uses:: [[Markov Chain]]
+	- enables:: [[Markov Chain Monte Carlo]]
+	- enables:: [[Monte Carlo Method]]
+	- enables:: [[Sampling]]
+	- supports:: [[Statistical Inference]]
+	- supports:: [[Probabilistic Model]]
+	- relatedTo:: [[Entropy]]
+	- relatedTo:: [[Density Estimation]]
+	- relatedTo:: [[Probabilistic Programming]]
+	- bridgesTo:: [[Machine Learning]]
+	- dependsOn:: [[Probability Theory]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

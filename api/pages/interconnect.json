@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:interconnect",
+  "title": "Interconnect",
+  "slug": "interconnect",
+  "public": true,
+  "classIri": "urn:ngm:class:interconnect",
+  "domain": "infrastructure",
+  "definition": "An interconnect is the network fabric that links compute nodes, processors, accelerators and memory within or across systems, providing the high-bandwidth, low-latency communication paths required for parallel and distributed workloads. In high-performance computing and data centres, interconnects determine how efficiently many processors can exchange data and synchronise. Examples include on-chip buses, PCIe links between devices, and cluster fabrics such as InfiniBand or high-speed Ethernet.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:networking",
+        "label": "Networking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:networking",
+        "label": "Networking"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ethernet",
+        "label": "Ethernet"
+      },
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

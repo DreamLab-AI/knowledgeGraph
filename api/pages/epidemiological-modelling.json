@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:epidemiological-modelling",
+  "title": "Epidemiological Modelling",
+  "slug": "epidemiological-modelling",
+  "public": true,
+  "classIri": "urn:ngm:class:epidemiological-modelling",
+  "domain": "artificial-intelligence",
+  "definition": "Epidemiological modelling is the use of mathematical and computational models to describe how infectious diseases spread through populations over time. Compartmental models partition a population into states such as susceptible, infected, and recovered, and use differential equations to govern transitions between them, while network and agent-based models capture heterogeneous contact structures. These models inform forecasting, intervention design, and public-health policy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computational-modelling",
+      "label": "Computational Modelling"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:differential-equation",
+        "label": "Differential Equation"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:public-health",
+        "label": "Public Health"
+      },
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:public-health",
+        "label": "Public Health"
+      },
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:differential-equation",
+        "label": "Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:public-health",
+        "label": "Public Health"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    }
+  ]
+}

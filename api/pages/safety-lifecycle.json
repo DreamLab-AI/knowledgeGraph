@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:safety-lifecycle",
+  "title": "Safety Lifecycle",
+  "slug": "safety-lifecycle",
+  "public": true,
+  "classIri": "urn:ngm:class:safety-lifecycle",
+  "domain": "standards",
+  "definition": "The safety lifecycle is a structured, end-to-end process defined by functional-safety standards for managing safety from concept through decommissioning. It organises activities such as hazard and risk analysis, safety requirement allocation, design, implementation, verification, validation, operation, and modification into defined phases with documented inputs, outputs, and review gates. Standards such as IEC 61508, IEC 62061, and ISO 26262 prescribe safety lifecycles to ensure that safety-related systems achieve and sustain their required integrity levels.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:functional-safety",
+      "label": "Functional Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:failure-mode-and-effects-analysis",
+        "label": "Failure Mode And Effects Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fmea",
+        "label": "FMEA"
+      },
+      {
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:safety-instrumented-system",
+        "label": "Safety Instrumented System"
+      },
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:safety-case",
+        "label": "Safety Case"
+      },
+      {
+        "id": "urn:ngm:class:hazop",
+        "label": "HAZOP"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

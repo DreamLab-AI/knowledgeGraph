@@ -1,0 +1,38 @@
+- ### Definition
+	- [[Change Data Capture]] is a [[Data Integration]] technique that captures row-level changes from a source [[Database]] and propagates them downstream.
+	- The log-based variant turns committed mutations into an ordered stream feeding [[Event Streaming]] and [[Stream Processing]].
+	- It keeps analytical stores and [[Microservices]] consistent with operational systems in near real time.
+- ### Overview
+	- Traditional batch ETL re-reads whole tables on a schedule, which is slow, stale, and heavy on the source. CDC instead emits only what changed, as it changes.
+	- Log-based CDC tails the database's write-ahead or binary log, reconstructing each insert, update, and delete with before and after images and preserving commit order.
+	- Trigger-based and query-based variants exist but impose overhead or miss intermediate states; log-based capture is the preferred low-impact method.
+	- Captured changes are typically published to a durable log such as Apache Kafka, where many consumers can replay and process them independently.
+- ### Mechanisms
+	- Read the transaction log to obtain an ordered, lossless change stream.
+	- Serialise each change with metadata (operation type, source table, transaction, timestamp).
+	- Publish to a streaming platform for fan-out to multiple sinks.
+	- Apply exactly-once or idempotent delivery semantics to keep targets consistent.
+- ### Applications
+	- Real-time [[Data Replication]] from operational databases to a [[Data Warehouse]] or [[Data Lake]].
+	- Cache and search-index invalidation driven by source changes.
+	- [[Event Sourcing]] and inter-service communication in [[Microservices]] architectures.
+	- Feeding streaming analytics and fraud-detection pipelines.
+- ### Relationships
+	- partOf:: [[Data Integration]]
+	- hasPart:: [[Event Streaming]]
+	- uses:: [[Database]]
+	- uses:: [[Event Streaming]]
+	- uses:: [[Apache Kafka]]
+	- enables:: [[Data Replication]]
+	- enables:: [[Stream Processing]]
+	- enables:: [[Event Sourcing]]
+	- supports:: [[Data Pipeline]]
+	- supports:: [[Microservices]]
+	- dependsOn:: [[Database]]
+	- relatedTo:: [[Data Warehouse]]
+	- relatedTo:: [[Data Lake]]
+	- bridgesTo:: [[Stream Processing]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

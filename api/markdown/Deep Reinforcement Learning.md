@@ -48,7 +48,7 @@ public:: true
         "label": "Neural Network"
       },
       {
-        "@id": "urn:ngm:class:policy-gradient",
+        "@id": "urn:ngm:class:policy-gradient-methods",
         "label": "Policy Gradient"
       },
       {
@@ -66,7 +66,7 @@ public:: true
         "label": "Agentic AI"
       },
       {
-        "@id": "urn:ngm:class:autonomous-robotics",
+        "@id": "urn:ngm:class:robotics",
         "label": "Autonomous Robotics"
       },
       {

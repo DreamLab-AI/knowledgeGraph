@@ -138,10 +138,6 @@ public:: true
       {
         "@id": "urn:ngm:class:optimization-algorithm",
         "label": "Optimization Algorithm"
-      },
-      {
-        "@id": "urn:ngm:class:domain-knowledge",
-        "label": "Domain Knowledge"
       }
     ],
     "supports": [

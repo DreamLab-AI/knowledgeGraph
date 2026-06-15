@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:proof-of-reserve",
+  "title": "Proof Of Reserve",
+  "slug": "proof-of-reserve",
+  "public": true,
+  "classIri": "urn:ngm:class:proof-of-reserve",
+  "domain": "blockchain",
+  "definition": "Proof of reserve is a verification practice in which a custodian or exchange demonstrates that it holds assets sufficient to cover its customer liabilities. It typically combines an on-chain attestation of owned assets with a Merkle-tree commitment to the liability set, allowing users to verify inclusion of their balance without revealing others. Robust schemes also prove liabilities to establish solvency, often with auditor or zero-knowledge support.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:custodian",
+        "label": "Custodian"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:random-forest",
+  "title": "Random Forest",
+  "slug": "random-forest",
+  "public": true,
+  "classIri": "urn:ngm:class:random-forest",
+  "domain": "machine-learning",
+  "definition": "A random forest is an ensemble learning method that constructs many decision trees and aggregates their predictions, typically by majority vote for classification or averaging for regression. Each tree is trained on a bootstrap sample of the data and considers a random subset of features at each split, which decorrelates the trees and reduces variance. The resulting model is robust, resistant to overfitting, and provides built-in estimates of feature importance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decision-tree",
+      "label": "Decision Tree"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross Validation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:boosting",
+        "label": "Boosting"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:bagging",
+        "label": "Bagging"
+      },
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:decision-tree",
+        "label": "Decision Tree"
+      },
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross Validation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ensemble-methods",
+      "label": "Ensemble Methods"
+    }
+  ]
+}

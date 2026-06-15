@@ -1,0 +1,48 @@
+- ### Definition
+	- An [[Nvidia Gpu]] is a [[Graphics Processing Unit]] produced by NVIDIA that delivers massively parallel computation for [[Deep Learning]] and scientific workloads.
+	- It pairs thousands of cores with tensor units and is programmed primarily via [[CUDA]].
+	- NVIDIA GPUs are the dominant accelerator in [[Data Center]] and [[High-Performance Computing]] environments.
+- ### Overview
+	- NVIDIA GPUs originated as graphics accelerators but evolved into general-purpose parallel processors after the introduction of the CUDA programming model.
+	- Their architecture excels at the dense linear algebra that underpins neural network training and inference, making them the de facto standard for modern machine learning.
+	- Successive generations have added specialised tensor cores, higher-bandwidth memory, and faster interconnects to keep pace with growing model sizes.
+	- They are deployed at scale in cloud and on-premises clusters, where many devices are linked to train large models in parallel.
+- ### Key aspects
+	- Massive parallelism: thousands of cores process many operations simultaneously.
+	- Tensor cores: dedicated units accelerate the mixed-precision matrix multiplications central to deep learning.
+	- High memory bandwidth: large, fast on-device memory feeds the compute units without starving them.
+	- CUDA ecosystem: a mature software stack of libraries, compilers, and frameworks targets the hardware.
+	- Scalable interconnect: high-speed links allow GPUs to be combined into large training clusters.
+- ### Mechanisms
+	- Single-instruction, multiple-thread execution schedules thousands of threads across streaming multiprocessors.
+	- Mixed-precision arithmetic trades numerical precision for throughput while preserving model accuracy.
+	- Memory hierarchies and asynchronous data movement overlap computation with transfer to maximise utilisation.
+- ### Applications
+	- Training and serving large [[Deep Learning]] models for language, vision, and multimodal tasks.
+	- Accelerating [[Computer Vision]] and other compute-intensive [[Inference]] workloads.
+	- Powering [[High-Performance Computing]] simulations and scientific workloads.
+	- Underpinning [[Model Serving]] infrastructure in production AI systems.
+- ### Relationships
+	- subClassOf:: [[Graphics Processing Unit]]
+	- partOf:: [[Data Center]]
+	- partOf:: [[High-Performance Computing]]
+	- enables:: [[Deep Learning]]
+	- enables:: [[Hardware Acceleration]]
+	- enables:: [[Model Training]]
+	- uses:: [[CUDA]]
+	- uses:: [[Parallel Computing]]
+	- supports:: [[Training]]
+	- supports:: [[Inference]]
+	- supports:: [[Model Serving]]
+	- supports:: [[Computer Vision]]
+	- requires:: [[Energy Consumption]]
+	- implements:: [[Hardware Acceleration]]
+	- relatedTo:: [[GPU]]
+	- relatedTo:: [[GPU Computing]]
+	- relatedTo:: [[Tensor]]
+	- contrastsWith:: [[ASIC]]
+	- contrastsWith:: [[FPGA]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

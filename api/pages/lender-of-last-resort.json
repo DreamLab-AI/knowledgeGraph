@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:lender-of-last-resort",
+  "title": "Lender Of Last Resort",
+  "slug": "lender-of-last-resort",
+  "public": true,
+  "classIri": "urn:ngm:class:lender-of-last-resort",
+  "domain": "finance",
+  "definition": "A lender of last resort is an institution, typically a central bank, that provides liquidity to solvent but illiquid financial institutions during a crisis when no other source of funding is available. By standing ready to lend freely against good collateral at a penalty rate, it aims to halt bank runs and contagion and to preserve financial stability. The role embodies Bagehot's principle of lending to solvent firms to stem systemic panic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:central-bank",
+      "label": "Central Bank"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:commercial-bank",
+        "label": "Commercial Bank"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

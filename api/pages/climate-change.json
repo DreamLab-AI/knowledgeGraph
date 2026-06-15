@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:climate-change",
+  "title": "Climate Change",
+  "slug": "climate-change",
+  "public": true,
+  "classIri": "urn:ngm:class:climate-change",
+  "domain": "governance",
+  "definition": "Climate change refers to long-term shifts in temperatures and weather patterns, driven predominantly since the industrial era by human emissions of greenhouse gases that trap heat in the atmosphere. Its impacts include rising sea levels, more frequent extreme weather, ecosystem disruption and threats to food, water and economic systems. Responses span mitigation (reducing emissions) and adaptation (managing unavoidable impacts), coordinated through policy frameworks such as the Paris Agreement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability",
+      "label": "Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:climate-action",
+        "label": "Climate Action"
+      },
+      {
+        "id": "urn:ngm:class:decarbonisation",
+        "label": "Decarbonisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:greenhouse-gas-emissions",
+        "label": "Greenhouse Gas Emissions"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:carbon-offsetting",
+        "label": "Carbon Offsetting"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:paris-agreement",
+        "label": "Paris Agreement"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:environmental-sustainability",
+        "label": "Environmental Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "global-inequality",
+      "label": "Global Inequality"
+    }
+  ]
+}

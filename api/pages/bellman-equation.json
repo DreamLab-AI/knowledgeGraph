@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:bellman-equation",
+  "title": "Bellman Equation",
+  "slug": "bellman-equation",
+  "public": true,
+  "classIri": "urn:ngm:class:bellman-equation",
+  "domain": "machine-learning",
+  "definition": "The Bellman equation is a recursive relationship that expresses the value of a state as the immediate reward plus the discounted value of successor states under a given policy. It is the mathematical foundation of dynamic programming and reinforcement learning, characterising optimal behaviour through the principle of optimality. Solving or approximating the Bellman equation yields value functions and optimal policies for sequential decision problems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dynamic-programming",
+      "label": "Dynamic Programming"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:q-learning",
+        "label": "Q Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:q-learning",
+        "label": "Q Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

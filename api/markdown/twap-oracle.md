@@ -1,0 +1,42 @@
+- ### Definition
+  - A TWAP oracle is a kind of [[Price Oracle]] supplying manipulation-resistant feeds to [[Decentralized Finance]].
+  - It derives prices from [[Automated Market Maker]] reserves and [[Liquidity Pool]] state via [[On-Chain Data]].
+  - It is exposed through [[Smart Contract]] interfaces and relates to [[Uniswap]], [[DEX]], and [[Arbitrage]].
+- ### Overview
+  - A TWAP oracle resists manipulation because moving the average meaningfully requires sustaining a distorted price across many blocks, which arbitrageurs counteract and which incurs large capital cost.
+  - It is typically computed from a cumulative price accumulator stored by an automated market maker, sampled at the start and end of the averaging window.
+  - The choice of window length trades responsiveness for robustness: longer windows resist manipulation but lag genuine price moves.
+- ### Mechanisms
+  - Cumulative price accumulator that records price multiplied by elapsed time each block.
+  - Window-based sampling: difference of two accumulator readings divided by the time delta.
+  - Manipulation resistance derived from the capital cost of sustaining off-market prices.
+  - Integration with smart contracts that consume the averaged price for collateral valuation.
+- ### Applications
+  - Collateral valuation and liquidation thresholds in DeFi lending protocols.
+  - Settlement and mark pricing for on-chain derivatives.
+  - Reference pricing for automated market makers and decentralised exchanges resistant to flash-loan attacks.
+- ### Relationships
+  - hasPart:: [[Liquidity Pool]]
+  - hasPart:: [[On-Chain Data]]
+  - partOf:: [[Price Oracle]]
+  - requires:: [[Automated Market Maker]]
+  - requires:: [[On-Chain Data]]
+  - enables:: [[Decentralized Finance]]
+  - enables:: [[Decentralized Finance]]
+  - uses:: [[Automated Market Maker]]
+  - uses:: [[Liquidity Pool]]
+  - uses:: [[Smart Contract]]
+  - supports:: [[Decentralized Finance]]
+  - supports:: [[DEX]]
+  - dependsOn:: [[On-Chain Data]]
+  - contrastsWith:: [[Chainlink]]
+  - contrastsWith:: [[Oracle]]
+  - relatedTo:: [[Price Oracle]]
+  - relatedTo:: [[Uniswap]]
+  - relatedTo:: [[Arbitrage]]
+  - bridgesTo:: [[Automated Market Maker]]
+  - subClassOf:: [[Price Oracle]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

@@ -16,12 +16,7 @@
   "qualityScore": 0.62,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:enforcement",
-        "label": "Enforcement"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:decision-making",

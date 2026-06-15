@@ -1,0 +1,45 @@
+- ### Definition
+	- [[Type Theory]] is a formal system in which terms carry types and typing rules determine which expressions are well formed.
+	- It is a branch of [[Mathematical Logic]] that also provides the theoretical foundation for the [[Type System]] of programming languages.
+	- Through the propositions-as-types view it connects logic, computation, [[Formal Verification]] and [[Formal Methods]].
+- ### Overview
+	- Type theory arose partly to avoid paradoxes in naive set theory by stratifying mathematical objects into types.
+	- Simply typed and polymorphic lambda calculi, intuitionistic type theory and dependent type theory form a progression of increasingly expressive systems.
+	- The Curry-Howard correspondence equates propositions with types and proofs with programs, so a type checker can act as a proof checker.
+	- Modern dependently typed languages and proof assistants exploit this to mechanise mathematics and verify software against rich specifications.
+- ### Key aspects
+	- Terms, types and the judgements that relate them.
+	- Typing rules and the inference of types for expressions.
+	- Polymorphism, abstraction and parametricity.
+	- Dependent types where types may depend on values.
+	- The correspondence between logical propositions and types.
+- ### Mechanisms
+	- Type-checking algorithms that validate or reject expressions.
+	- Type inference reconstructing omitted type annotations.
+	- Reduction and normalisation of typed terms.
+	- Encoding of logical connectives as type constructors.
+	- Elaboration of high-level surface syntax into core typed terms.
+- ### Applications
+	- Foundations of statically typed programming languages.
+	- Proof assistants and mechanised mathematics.
+	- Verified compilers and safety-critical software.
+	- Specification and formal verification of algorithms and protocols.
+	- Reasoning about program correctness and security properties.
+- ### Relationships
+	- subClassOf:: [[Mathematical Logic]]
+	- implements:: [[Type System]]
+	- uses:: [[Mathematical Logic]]
+	- enables:: [[Formal Verification]]
+	- enables:: [[Formal Methods]]
+	- contrastsWith:: [[Static Analysis]]
+	- supports:: [[Compiler]]
+	- hasPart:: [[Type System]]
+	- requires:: [[Mathematical Logic]]
+	- bridgesTo:: [[Formal Verification]]
+	- relatedTo:: [[Formal Methods]]
+	- relatedTo:: [[Compiler]]
+	- relatedTo:: [[Static Analysis]]
+- ### Provenance
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation
+	- updated:: 2026-06-15

@@ -146,7 +146,7 @@ alias:: Chain of Thought Reasoning
         "label": "Reasoning"
       },
       {
-        "@id": "urn:ngm:class:inference-time-compute",
+        "@id": "urn:ngm:class:inference-compute",
         "label": "Inference-Time Compute"
       },
       {

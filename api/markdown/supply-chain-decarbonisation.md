@@ -1,0 +1,38 @@
+- ### Definition
+- [[Supply Chain Decarbonisation]] is the systematic reduction of greenhouse gas emissions across an organisation's upstream and downstream value chain, dominated by indirect [[Scope 3 Emissions]].
+- It applies [[Life Cycle Assessment]] and [[Carbon Footprint]] accounting to identify and abate emissions hotspots beyond a firm's direct operations.
+- As an operational lever within [[Climate Governance]], it supports [[Net Zero]] commitments and connects directly to the [[Supply Chain]].
+- ### Overview
+- For most organisations, value-chain emissions far exceed direct operational emissions, making Scope 3 the decisive battleground for credible climate action.
+- Because these emissions sit with suppliers and customers, decarbonisation hinges on collaboration, data sharing and contractual incentives across many supplier tiers.
+- Levers include low-carbon procurement, logistics and transport optimisation, materials substitution, supplier capacity-building and product redesign.
+- Robust measurement under the Greenhouse Gas Protocol underpins target-setting, prioritisation and verification of progress.
+- ### Key aspects
+- Scope 3 emissions accounting and supplier-level data collection.
+- Supplier engagement programmes and emissions-linked procurement criteria.
+- Life-cycle assessment to inform materials and design choices.
+- Alignment with science-based targets and net-zero transition plans.
+- ### Applications
+- Reducing embodied carbon in manufactured goods and infrastructure.
+- Greening logistics, freight and last-mile distribution networks.
+- Embedding climate criteria into supplier selection and contracts.
+- Reporting value-chain emissions for ESG and regulatory disclosure.
+- ### Relationships
+- requires:: [[Scope 3 Emissions]]
+- requires:: [[Greenhouse Gas Protocol]]
+- uses:: [[Life Cycle Assessment]]
+- uses:: [[Carbon Footprint]]
+- supports:: [[Net Zero]]
+- supports:: [[Sustainability Reporting]]
+- implements:: [[Decarbonisation Strategy]]
+- enables:: [[Net Zero]]
+- dependsOn:: [[ESG Reporting System]]
+- partOf:: [[Climate Governance]]
+- relatedTo:: [[Circular Economy]]
+- relatedTo:: [[Renewable Energy]]
+- bridgesTo:: [[Supply Chain]]
+- bridgesTo:: [[Climate Governance]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

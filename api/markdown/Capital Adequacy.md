@@ -62,10 +62,6 @@ public:: true
         "label": "Risk-Weighted Assets"
       },
       {
-        "@id": "urn:ngm:class:capital-adequacy-ratio",
-        "label": "Capital Adequacy Ratio"
-      },
-      {
         "@id": "urn:ngm:class:stress-testing",
         "label": "Stress Testing"
       }
@@ -80,7 +76,7 @@ public:: true
         "label": "Financial Stability"
       },
       {
-        "@id": "urn:ngm:class:systemic-risk-mitigation",
+        "@id": "urn:ngm:class:systemic-risk",
         "label": "Systemic Risk Mitigation"
       }
     ],

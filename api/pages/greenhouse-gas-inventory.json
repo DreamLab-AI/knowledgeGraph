@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:greenhouse-gas-inventory",
+  "title": "Greenhouse Gas Inventory",
+  "slug": "greenhouse-gas-inventory",
+  "public": true,
+  "classIri": "urn:ngm:class:greenhouse-gas-inventory",
+  "domain": "governance",
+  "definition": "A greenhouse gas inventory is a systematic, periodic accounting of the greenhouse gas emissions and removals attributable to an organisation, activity or jurisdiction over a defined period, expressed in carbon-dioxide-equivalent units. It categorises emissions by source and by scope, applies emission factors to activity data, and forms the quantitative basis for target-setting, reporting and reduction strategies. Inventories underpin compliance, disclosure and progress toward net-zero commitments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:carbon-accounting",
+      "label": "Carbon Accounting"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scope-3-emissions",
+        "label": "Scope 3 Emissions"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:life-cycle-assessment",
+        "label": "Life Cycle Assessment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:immutable-storage",
+  "title": "Immutable Storage",
+  "slug": "immutable-storage",
+  "public": true,
+  "classIri": "urn:ngm:class:immutable-storage",
+  "domain": "infrastructure",
+  "definition": "Immutable storage is a data persistence model in which written records cannot be modified or deleted for a defined period, preserving their integrity against tampering and accidental loss. It is realised through write-once-read-many policies, append-only logs, content addressing, and cryptographic hashing, and underpins audit trails, regulatory retention, and ransomware resilience. Immutability provides verifiable evidence that data has not changed since it was committed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-storage",
+      "label": "Data Storage"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:append-only-log",
+        "label": "Append-Only Log"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:compliance-audit-trail",
+        "label": "Compliance Audit Trail"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:append-only-log",
+        "label": "Append-Only Log"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      },
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    }
+  ]
+}

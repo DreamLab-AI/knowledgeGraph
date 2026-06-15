@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:texture-atlas",
+  "title": "Texture Atlas",
+  "slug": "texture-atlas",
+  "public": true,
+  "classIri": "urn:ngm:class:texture-atlas",
+  "domain": "spatial-computing",
+  "definition": "A texture atlas is a single large image that packs many smaller textures or sprites into one bitmap, accompanied by coordinate metadata mapping each sub-image to a region of the atlas. By consolidating textures, it lets a renderer draw many objects that share one bound texture, reducing state changes and draw calls and improving GPU efficiency in real-time graphics. UV coordinates of meshes are remapped to address sub-regions within the atlas. It is widely used in game engines, 2D sprite rendering, and font glyph caching to optimise throughput on the graphics pipeline.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:real-time-rendering",
+      "label": "Real-Time Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:batching",
+        "label": "Batching"
+      },
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:batching",
+        "label": "Batching"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

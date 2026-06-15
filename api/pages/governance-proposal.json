@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:governance-proposal",
+  "title": "Governance Proposal",
+  "slug": "governance-proposal",
+  "public": true,
+  "classIri": "urn:ngm:class:governance-proposal",
+  "domain": "blockchain",
+  "definition": "A governance proposal is a formally submitted, votable item that requests a change to a decentralised protocol, treasury allocation or organisational parameter, typically within a DAO. It encapsulates a description, an executable payload or off-chain intent, and voting parameters such as quorum and threshold. Token holders or delegates vote on the proposal, and on approval it may be executed automatically by smart contracts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:on-chain-governance",
+      "label": "On-Chain Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:voting",
+        "label": "Voting"
+      },
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      },
+      {
+        "id": "urn:ngm:class:delegation",
+        "label": "Delegation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:voting",
+        "label": "Voting"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

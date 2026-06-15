@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:scheduler",
+  "title": "Scheduler",
+  "slug": "scheduler",
+  "public": true,
+  "classIri": "urn:ngm:class:scheduler",
+  "domain": "infrastructure",
+  "definition": "A scheduler is a system component that decides which units of work run, where they run and in what order, allocating finite computing resources among competing tasks over time. Schedulers exist at many layers, from operating-system process and thread scheduling to cluster and container orchestration that places workloads across machines. Their policies trade off throughput, latency, fairness and resource utilisation according to the goals of the platform.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:resource-management",
+      "label": "Resource Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:priority-queue",
+        "label": "Priority Queue"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:autoscaling",
+        "label": "Autoscaling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:resource-allocation",
+        "label": "Resource Allocation"
+      },
+      {
+        "id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    }
+  ]
+}

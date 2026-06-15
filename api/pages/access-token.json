@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:access-token",
+  "title": "Access Token",
+  "slug": "access-token",
+  "public": true,
+  "classIri": "urn:ngm:class:access-token",
+  "domain": "security",
+  "definition": "An access token is a credential that a client presents to a resource server to access protected resources within a granted scope and lifetime. Typically short-lived and often a bearer token, it carries or references the authorisation decision so the resource server need not re-check with the authorisation server on every request. Access tokens are the workhorse credential of OAuth 2.0 and API authorisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:oauth-2-0",
+      "label": "OAuth 2.0"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:refresh-token",
+        "label": "Refresh Token"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:identity-provider",
+        "label": "Identity Provider"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:bearer-token",
+        "label": "Bearer Token"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:single-sign-on",
+        "label": "Single Sign-On"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:authorization",
+        "label": "Authorization"
+      },
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

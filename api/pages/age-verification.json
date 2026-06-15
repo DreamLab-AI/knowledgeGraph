@@ -43,12 +43,7 @@
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [
-      {
-        "id": "urn:ngm:class:anonymous-access",
-        "label": "Anonymous Access"
-      }
-    ],
+    "contrastsWith": [],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:decentralised-identity",

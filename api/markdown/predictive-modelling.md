@@ -1,0 +1,35 @@
+- ### Definition
+  - Building [[Machine Learning]] models to estimate unknown or future outcomes.
+  - Relies on [[Feature Engineering]] and [[Model Training]].
+  - Evaluated by generalisation through validation.
+- ### Overview
+  - Encompasses supervised methods such as [[Regression]] and [[Classification]].
+  - Performance depends on data quality, features and disciplined evaluation.
+  - Deployed for forecasting and decision support across sectors.
+- ### Key aspects
+  - Feature engineering shapes the predictive signal available to a model.
+  - Training fits parameters to historical data.
+  - Validation guards against overfitting and estimates real-world error.
+  - Calibration and monitoring sustain accuracy after deployment.
+- ### Applications
+  - Demand and time-series forecasting.
+  - Risk scoring and anomaly detection.
+  - Classification of outcomes from feature data.
+- ### Relationships
+  - subClassOf:: [[Machine Learning]]
+  - partOf:: [[Machine Learning]]
+  - uses:: [[Feature Engineering]]
+  - uses:: [[Supervised Learning]]
+  - requires:: [[Model Training]]
+  - enables:: [[Predictive Analytics]]
+  - enables:: [[Demand Forecasting]]
+  - enables:: [[Risk Assessment]]
+  - dependsOn:: [[Regression]]
+  - dependsOn:: [[Classification]]
+  - supports:: [[Anomaly Detection]]
+  - relatedTo:: [[Predictive Analytics]]
+  - relatedTo:: [[Machine Learning]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - generatedBy:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

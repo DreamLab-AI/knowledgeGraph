@@ -1,0 +1,42 @@
+- ### Definition
+  - [[Camera]]
+  - [[Sensor]]
+  - [[Point Cloud]]
+  - [[Computer Vision]]
+  - [[SLAM]]
+- ### Overview
+  - Adds the missing third dimension to imaging, recovering scene geometry directly.
+  - Realised through several competing principles, each with distinct range, accuracy, and lighting trade-offs.
+  - Serves as the front-end sensor for a wide range of spatial-computing perception pipelines.
+- ### Key aspects
+  - Structured-light projection of known patterns to triangulate surface depth.
+  - Time-of-flight measurement of light round-trip time per pixel.
+  - Passive and active stereo recovering depth from disparity between views.
+  - RGB-D alignment registering colour and depth into a single coordinate frame.
+  - Calibration and noise handling that determine usable range and accuracy.
+- ### Applications
+  - Real-time SLAM and mapping for robots and AR/VR headsets.
+  - 3D scene reconstruction and spatial mapping of environments.
+  - Gesture, body-pose, and hand tracking for natural interaction.
+  - Object detection, bin-picking, and manipulation in robotics.
+- ### Relationships
+  - partOf:: [[Perception]]
+  - implements:: [[Sensor]]
+  - uses:: [[Structured Light]]
+  - uses:: [[Stereo Vision]]
+  - enables:: [[Depth Sensing]]
+  - enables:: [[Spatial Mapping]]
+  - enables:: [[Point Cloud]]
+  - supports:: [[SLAM]]
+  - supports:: [[Augmented Reality]]
+  - supports:: [[Gesture Recognition]]
+  - requires:: [[Calibration]]
+  - contrastsWith:: [[LiDAR]]
+  - bridgesTo:: [[Computer Vision]]
+  - relatedTo:: [[Mapping]]
+  - relatedTo:: [[Object Detection]]
+  - relatedTo:: [[Photogrammetry]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

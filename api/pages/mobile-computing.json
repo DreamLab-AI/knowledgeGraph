@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:mobile-computing",
+  "title": "Mobile Computing",
+  "slug": "mobile-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:mobile-computing",
+  "domain": "machine-learning",
+  "definition": "Mobile computing is the discipline of delivering computation, data, and connectivity to portable devices such as smartphones, tablets, and wearables that operate while in motion. It contends with constraints on battery, memory, bandwidth, and intermittent connectivity, and increasingly hosts machine-learning inference directly on-device. Mobile computing bridges cloud back-ends and edge devices, enabling responsive, context-aware applications wherever the user goes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:edge-computing",
+      "label": "Edge Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:on-device-inference",
+        "label": "On-Device Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "patent",
+      "label": "Patent"
+    }
+  ]
+}

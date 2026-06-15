@@ -663,7 +663,7 @@ alias:: BC-0453-ethical-sourcing
         "label": "Supply Chain Transparency"
       },
       {
-        "@id": "urn:ngm:class:third-party-audit",
+        "@id": "urn:ngm:class:third-party-verification",
         "label": "Third-Party Audit"
       },
       {

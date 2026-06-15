@@ -113,10 +113,6 @@ public:: true
       {
         "@id": "urn:ngm:class:stakeholder-trust",
         "label": "Stakeholder Trust"
-      },
-      {
-        "@id": "urn:ngm:class:investor-confidence",
-        "label": "Investor Confidence"
       }
     ],
     "dependsOn": [

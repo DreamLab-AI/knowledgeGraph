@@ -1,0 +1,42 @@
+- ### Definition
+  - A high-bandwidth interconnect moves large data volumes between compute devices at low latency.
+  - It is critical infrastructure for [[Machine Learning]] [[Distributed Training]].
+  - It carries [[Collective Communication]] traffic for [[Model Parallelism]].
+  - It is realised by technologies such as [[NVLink]], [[Infiniband]], and [[RDMA]].
+- ### Overview
+  - High-bandwidth interconnects determine how efficiently computation scales across devices.
+  - In distributed training, communication of gradients and parameters can dominate runtime.
+  - Both intra-node links (NVLink) and inter-node fabrics (InfiniBand) matter for scaling.
+  - Bandwidth and latency together bound achievable parallel speed-up.
+- ### Key aspects
+  - Aggregate bandwidth sets the ceiling on collective-communication throughput.
+  - Low latency keeps synchronisation overhead small as device counts grow.
+  - Topology (e.g. fat-tree, mesh) shapes bisection bandwidth and contention.
+  - RDMA and kernel-bypass reduce CPU overhead on the critical communication path.
+- ### Applications
+  - Scaling large-language-model training across many GPUs and nodes.
+  - All-reduce gradient synchronisation in data-parallel training.
+  - Tensor and pipeline exchange in model-parallel training.
+  - Tightly-coupled HPC simulations needing fast inter-node messaging.
+- ### Relationships
+  - requires:: [[Compute Infrastructure]]
+  - requires:: [[Data Centre]]
+  - dependsOn:: [[Network Fabric]]
+  - dependsOn:: [[Memory Bandwidth]]
+  - enables:: [[Distributed Training]]
+  - enables:: [[Model Parallelism]]
+  - enables:: [[Data Parallelism]]
+  - uses:: [[NVLink]]
+  - uses:: [[RDMA]]
+  - uses:: [[Infiniband]]
+  - supports:: [[Collective Communication]]
+  - supports:: [[Parallel Processing]]
+  - supports:: [[Checkpoints]]
+  - relatedTo:: [[Throughput]]
+  - relatedTo:: [[Latency]]
+  - relatedTo:: [[GPU]]
+  - bridgesTo:: [[High-Performance Computing]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

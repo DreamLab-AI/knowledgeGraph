@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:pas-2060",
+  "title": "Pas 2060",
+  "slug": "pas-2060",
+  "public": true,
+  "classIri": "urn:ngm:class:pas-2060",
+  "domain": "governance",
+  "definition": "PAS 2060 is a publicly available specification published by the British Standards Institution that defines the requirements for demonstrating and substantiating carbon neutrality for an organisation, product or activity. It sets out a four-stage process of quantification, reduction, offsetting and documentation, requiring a qualifying explanatory statement and credible offsets for residual emissions. The specification is widely used as a recognised benchmark for verifiable carbon-neutrality claims.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:carbon-neutrality",
+      "label": "Carbon Neutrality"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:greenhouse-gas-inventory",
+        "label": "Greenhouse Gas Inventory"
+      },
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:carbon-offset",
+        "label": "Carbon Offset"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:net-zero",
+        "label": "Net Zero"
+      },
+      {
+        "id": "urn:ngm:class:ghg-protocol",
+        "label": "GHG Protocol"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    }
+  ]
+}

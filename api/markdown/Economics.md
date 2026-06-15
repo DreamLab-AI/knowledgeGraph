@@ -654,10 +654,6 @@ public:: true
       {
         "@id": "urn:ngm:class:hm-treasury",
         "label": "UK HM Treasury"
-      },
-      {
-        "@id": "urn:ngm:class:world-bank",
-        "label": "World Bank"
       }
     ]
   },

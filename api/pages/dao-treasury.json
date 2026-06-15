@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:dao-treasury",
+  "title": "Dao Treasury",
+  "slug": "dao-treasury",
+  "public": true,
+  "classIri": "urn:ngm:class:dao-treasury",
+  "domain": "blockchain",
+  "definition": "A DAO treasury is the pool of on-chain assets collectively owned and governed by a decentralised autonomous organisation, typically held in smart contracts and controlled through member governance. It funds operations, grants and incentives, with disbursements authorised by token-weighted votes and executed by multisignature or programmatic controls. Treasury management balances runway, diversification and accountability without a central custodian.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dao",
+      "label": "DAO"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:multisig",
+        "label": "Multisig"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:treasury-management",
+        "label": "Treasury Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-governance",
+        "label": "Decentralized Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:tokenomics",
+        "label": "Tokenomics"
+      },
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    }
+  ]
+}

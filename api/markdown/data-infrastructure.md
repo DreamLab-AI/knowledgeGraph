@@ -1,0 +1,39 @@
+- ### Definition
+- Data infrastructure is the [[Infrastructure]] layer that ingests, stores, processes, and serves data across an organisation. It binds together a [[Data Warehouse]], a [[Data Lake]], and [[Data Pipeline]] systems on top of [[Cloud Computing]] and [[Database]] technologies to deliver reliable, governed data at scale.
+- ### Overview
+- The discipline organises raw and refined data into storage tiers, moves it through ingestion and transformation pipelines, and exposes it through serving layers for analytics and applications.
+- Modern data infrastructure is typically cloud-native and elastic, separating storage from compute so that workloads scale independently and cost tracks usage.
+- Governance, lineage, cataloguing, and observability are woven through the stack so that data is trustworthy, discoverable, and auditable rather than merely available.
+- ### Key aspects
+- Layered storage spanning warehouses, lakes, and lakehouses.
+- Ingestion and transformation pipelines for batch and streaming data.
+- Compute fabric decoupled from storage for elastic scaling.
+- Cataloguing, lineage, and observability for trust and discoverability.
+- Governance and access control enforced across the stack.
+- ### Applications
+- Powering [[Business Intelligence]] dashboards and reporting.
+- Feeding feature stores and training data for [[Machine Learning]].
+- Supporting operational analytics and real-time decisioning.
+- Underpinning regulated workloads requiring [[Data Governance]].
+- ### Relationships
+- subClassOf:: [[Infrastructure]]
+- hasPart:: [[Data Warehouse]]
+- hasPart:: [[Data Lake]]
+- hasPart:: [[Data Pipeline]]
+- uses:: [[Cloud Computing]]
+- uses:: [[Database]]
+- requires:: [[Data Engineering]]
+- requires:: [[Data Integration]]
+- supports:: [[Business Intelligence]]
+- supports:: [[Machine Learning]]
+- enables:: [[Data Architecture]]
+- dependsOn:: [[Networking]]
+- dependsOn:: [[Scalability]]
+- bridgesTo:: [[Data Governance]]
+- bridgesTo:: [[Observability]]
+- relatedTo:: [[Data Catalog]]
+- relatedTo:: [[Reliability]]
+- ### Provenance
+- updated:: 2026-06-15
+- generatedBy:: GapMaterialisation
+- attributedTo:: did:nostr:ontology-mesh

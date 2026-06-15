@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:potential-field-method",
+  "title": "Potential Field Method",
+  "slug": "potential-field-method",
+  "public": true,
+  "classIri": "urn:ngm:class:potential-field-method",
+  "domain": "robotics",
+  "definition": "The Potential Field Method is a reactive robot navigation technique that models the goal as an attractive potential and obstacles as repulsive potentials, steering the robot along the negative gradient of the summed field. It produces smooth, real-time motion commands directly from sensor readings without explicit global search. Its principal weakness is susceptibility to local minima, where attractive and repulsive forces cancel and the robot stalls short of the goal.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:path-planning",
+      "label": "Path Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mobile-robot",
+        "label": "Mobile Robot"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:navigation",
+        "label": "Navigation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

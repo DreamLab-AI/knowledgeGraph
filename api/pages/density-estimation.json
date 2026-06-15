@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:density-estimation",
+  "title": "Density Estimation",
+  "slug": "density-estimation",
+  "public": true,
+  "classIri": "urn:ngm:class:density-estimation",
+  "domain": "machine-learning",
+  "definition": "Density estimation is the statistical problem of inferring the underlying probability density function of a random variable from a finite set of observed samples. Parametric approaches assume a fixed functional form whose parameters are fitted by maximum likelihood, while non-parametric approaches such as kernel density estimation and histograms make minimal distributional assumptions. Modern deep density estimation uses normalizing flows, autoregressive models, and variational methods to model complex high-dimensional distributions, making it foundational to generative modelling, anomaly detection, and unsupervised learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistics",
+      "label": "Statistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:kernel-density-estimation",
+        "label": "Kernel Density Estimation"
+      },
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:outlier-detection",
+        "label": "Outlier Detection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gaussian-mixture-model",
+        "label": "Gaussian Mixture Model"
+      },
+      {
+        "id": "urn:ngm:class:normalizing-flow",
+        "label": "Normalizing Flow"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

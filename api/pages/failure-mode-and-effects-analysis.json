@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:failure-mode-and-effects-analysis",
+  "title": "Failure Mode And Effects Analysis",
+  "slug": "failure-mode-and-effects-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:failure-mode-and-effects-analysis",
+  "domain": "standards",
+  "definition": "Failure Mode and Effects Analysis (FMEA) is a systematic, bottom-up technique for identifying potential failure modes of a system, product, or process, assessing their causes and effects, and prioritising corrective action. Each failure mode is rated for severity, occurrence, and detectability, often combined into a risk priority number that ranks issues for mitigation. FMEA is widely used in safety, reliability, and quality engineering, and is a core analysis within functional-safety lifecycles defined by standards such as IEC 61508 and ISO 26262.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reliability-engineering",
+      "label": "Reliability Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fault-tree-analysis",
+        "label": "Fault Tree Analysis"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:safety-lifecycle",
+        "label": "Safety Lifecycle"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      },
+      {
+        "id": "urn:ngm:class:iso-26262",
+        "label": "ISO 26262"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hazop",
+        "label": "HAZOP"
+      },
+      {
+        "id": "urn:ngm:class:safety-instrumented-system",
+        "label": "Safety Instrumented System"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

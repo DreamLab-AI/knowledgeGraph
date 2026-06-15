@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:phishing-resistant-authentication",
+  "title": "Phishing Resistant Authentication",
+  "slug": "phishing-resistant-authentication",
+  "public": true,
+  "classIri": "urn:ngm:class:phishing-resistant-authentication",
+  "domain": "security",
+  "definition": "Phishing-resistant authentication is a class of authentication methods designed so that credentials cannot be captured and replayed by an attacker who tricks a user into interacting with a fraudulent site or relay. It achieves this primarily through public-key cryptography combined with origin binding, so that a credential is cryptographically tied to the legitimate service's domain and will not authenticate to an impostor. FIDO2/WebAuthn passkeys and hardware security keys are the canonical implementations, replacing shared secrets such as passwords and one-time codes that remain vulnerable to interception.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:key-generation",
+        "label": "Key Generation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:passwordless-authentication",
+        "label": "Passwordless Authentication"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fido2",
+        "label": "FIDO2"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fido-alliance",
+        "label": "FIDO Alliance"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -404,7 +404,7 @@ public:: true
         "label": "PKI X.509"
       },
       {
-        "@id": "urn:ngm:class:private-key-management",
+        "@id": "urn:ngm:class:key-management",
         "label": "Private Key Management"
       },
       {

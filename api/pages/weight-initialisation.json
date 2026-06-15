@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:weight-initialisation",
+  "title": "Weight Initialisation",
+  "slug": "weight-initialisation",
+  "public": true,
+  "classIri": "urn:ngm:class:weight-initialisation",
+  "domain": "machine-learning",
+  "definition": "Weight initialisation is the procedure of assigning starting values to the trainable parameters of a neural network before training commences. The choice of initialisation scheme affects gradient flow, convergence speed, and the avoidance of vanishing or exploding activations across deep layers. Common schemes such as Xavier (Glorot) and He initialisation scale the variance of initial weights according to layer fan-in and fan-out.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network-training",
+      "label": "Neural Network Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+- ### Definition
+  - A bipartite [[Graphical Model]] linking variables to the factors that constrain them.
+  - Factorises a joint function for efficient [[Bayesian Inference]].
+  - The standard formulation for [[SLAM]] and [[Sensor Fusion]] in robotics.
+- ### Overview
+  - Variable nodes hold unknown states; factor nodes encode measurements and priors.
+  - Belief propagation and nonlinear least-squares exploit the sparse structure.
+  - Generalises Bayesian networks and Markov random fields for inference.
+- ### Mechanisms
+  - Factorisation exposes conditional independence and sparsity.
+  - Message passing propagates beliefs between variables and factors.
+  - Maximum-a-posteriori estimation solves a sparse nonlinear optimisation.
+  - Incremental smoothing reuses computation as new measurements arrive.
+- ### Applications
+  - Pose-graph and landmark-based SLAM.
+  - Multi-sensor fusion for localisation.
+  - Calibration and trajectory estimation.
+- ### Relationships
+  - subClassOf:: [[Graphical Model]]
+  - partOf:: [[Graphical Model]]
+  - hasPart:: [[Probability Distribution]]
+  - uses:: [[Bayesian Inference]]
+  - uses:: [[Linear Algebra]]
+  - enables:: [[SLAM]]
+  - enables:: [[Sensor Fusion]]
+  - supports:: [[Pose Estimation]]
+  - dependsOn:: [[Bayesian Inference]]
+  - relatedTo:: [[Bayes Filter]]
+  - relatedTo:: [[Kalman Filter]]
+  - relatedTo:: [[Graphical Model]]
+  - relatedTo:: [[Sensor Fusion]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - generatedBy:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

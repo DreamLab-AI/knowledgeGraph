@@ -1,0 +1,35 @@
+- ### Definition
+  - Computability theory, also known as recursion theory, is the branch of mathematical logic and theoretical computer science that studies which problems can be solved algorithmically in principle, independent of resource constraints. It defines models of computation such as the Turing machine, establishes the existence of undecidable problems like the halting problem, and characterises the limits of effective procedures via the Church-Turing thesis. It contrasts with complexity theory, which asks how efficiently solvable problems can be solved.
+  - Related concepts: [[Computational Complexity Theory]], [[Mathematical Logic]], [[Automata Theory]], [[Formal Language]], [[Algorithm]].
+- ### Overview
+  - Computability theory delineates the boundary between problems that admit an algorithm and those that provably do not.
+  - It establishes foundational results such as the undecidability of the halting problem and the Church-Turing thesis.
+  - It contrasts with [[Computational Complexity Theory]], which studies efficiency rather than mere solvability.
+- ### Key aspects
+  - Models of computation: Turing machines, lambda calculus, and recursive functions.
+  - Decidability: classifying problems as decidable, semi-decidable, or undecidable.
+  - The halting problem and reductions between undecidable problems.
+  - The Church-Turing thesis equating effective computability with Turing computability.
+  - Connections to [[Automata Theory]] and [[Formal Language]] hierarchies.
+- ### Applications
+  - Establishing fundamental limits of [[Algorithm]] design.
+  - Foundations of programming-language theory and verification.
+  - Underpinning assumptions in [[Cryptography]] and security proofs.
+  - Theoretical limits relevant to [[Artificial Intelligence]] and automated reasoning.
+- ### Relationships
+  - dependsOn:: [[Mathematical Logic]]
+  - dependsOn:: [[Set Theory]]
+  - contrastsWith:: [[Computational Complexity Theory]]
+  - hasPart:: [[Automata Theory]]
+  - hasPart:: [[Formal Language]]
+  - partOf:: [[Computational Complexity Theory]]
+  - relatedTo:: [[Algorithm]]
+  - relatedTo:: [[Cryptography]]
+  - relatedTo:: [[Formal Language]]
+  - enables:: [[Automata Theory]]
+  - requires:: [[Mathematical Logic]]
+  - bridgesTo:: [[Artificial Intelligence]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - generatedBy:: GapMaterialisation
+  - quality:: 0.62

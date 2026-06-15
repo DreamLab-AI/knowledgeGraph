@@ -1,0 +1,33 @@
+- ### Definition
+- SSL (Secure Sockets Layer) is a deprecated [[Cryptographic Protocol]] for encrypted, authenticated connections, whose name is still used colloquially for its successor [[TLS]]. It relies on [[Cryptography]], [[Encryption]] and a [[Certificate Authority]] to provide [[Secure Communication]].
+- ### Overview
+- SSL pioneered the handshake-based model now standard in transport security: negotiate parameters, authenticate, then encrypt.
+- Every SSL version (1.0, 2.0, 3.0) has known weaknesses and is no longer considered safe to use.
+- It has been fully superseded by [[Transport Layer Security]], though the SSL label survives in certificate and product terminology.
+- ### Mechanisms
+- Handshake: peers agree a cipher suite and exchange certificates to authenticate.
+- Key exchange: [[Asymmetric Encryption]] establishes a shared secret used to derive symmetric session keys.
+- Record protection: [[Symmetric Encryption]] secures bulk application data, providing confidentiality and integrity.
+- ### Key aspects
+- Certificate-based authentication anchored in a [[Certificate Authority]] and validated via [[Digital Signature]].
+- Forward migration: all secure deployments use TLS while reusing SSL-era vocabulary.
+- Known vulnerabilities in legacy versions drive deprecation across the industry.
+- ### Applications
+- Historic basis for HTTPS and other secured application protocols.
+- Certificates still labelled "SSL certificates" in common usage.
+- Conceptual foundation for understanding modern [[Network Security]] and [[TLS]].
+- ### Relationships
+- contrastsWith:: [[TLS]]
+- uses:: [[Symmetric Encryption]]
+- uses:: [[Asymmetric Encryption]]
+- enables:: [[Secure Communication]]
+- requires:: [[Certificate Authority]]
+- dependsOn:: [[Cryptography]]
+- dependsOn:: [[Encryption]]
+- supports:: [[Authentication]]
+- implements:: [[Encryption]]
+- standardizedBy:: [[Transport Layer Security]]
+- bridgesTo:: [[Network Security]]
+- relatedTo:: [[Digital Signature]]
+- ### Provenance
+- updated:: 2026-06-15

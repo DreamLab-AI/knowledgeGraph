@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:cooperative-game-theory",
+  "title": "Cooperative Game Theory",
+  "slug": "cooperative-game-theory",
+  "public": true,
+  "classIri": "urn:ngm:class:cooperative-game-theory",
+  "domain": "ai",
+  "definition": "Cooperative game theory is the branch of game theory that studies how groups of agents can form coalitions and how the value they jointly create should be divided among members. Rather than focusing on individual strategies, it analyses solution concepts such as the core and the Shapley value that capture fair or stable allocations of collective payoff. Its allocation principles underpin applications from economics and mechanism design to feature attribution in explainable machine learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:game-theory",
+      "label": "Game Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:shapley-value",
+        "label": "Shapley Value"
+      },
+      {
+        "id": "urn:ngm:class:utility-function",
+        "label": "Utility Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:utility-function",
+        "label": "Utility Function"
+      },
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:shap",
+        "label": "SHAP"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:nash-equilibrium",
+        "label": "Nash Equilibrium"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shapley-value",
+        "label": "Shapley Value"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

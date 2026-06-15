@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:arcore",
+  "title": "Arcore",
+  "slug": "arcore",
+  "public": true,
+  "classIri": "urn:ngm:class:arcore",
+  "domain": "spatial-computing",
+  "definition": "ARCore is Google's software development kit for building augmented-reality applications on Android and, via web standards, the browser. It provides motion tracking, environmental understanding and light estimation by fusing camera frames with inertial sensors to anchor virtual content in the physical world. ARCore is the principal counterpart to Apple's ARKit in the mobile-AR ecosystem.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:augmented-reality",
+      "label": "Augmented Reality"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:visual-slam",
+        "label": "Visual SLAM"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:visual-slam",
+        "label": "Visual SLAM"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:spatial-anchors",
+        "label": "Spatial Anchors"
+      },
+      {
+        "id": "urn:ngm:class:spatial-anchor",
+        "label": "Spatial Anchor"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:spatial-anchors",
+        "label": "Spatial Anchors"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    }
+  ]
+}

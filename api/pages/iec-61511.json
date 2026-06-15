@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:iec-61511",
+  "title": "Iec 61511",
+  "slug": "iec-61511",
+  "public": true,
+  "classIri": "urn:ngm:class:iec-61511",
+  "domain": "standards",
+  "definition": "IEC 61511 is an international standard for the functional safety of safety instrumented systems in the process industry sector. It applies the generic principles of IEC 61508 to end users and integrators, defining a safety lifecycle that spans hazard and risk assessment, allocation of safety functions to protection layers, and verification against target safety integrity levels. It is the dominant reference for emergency shutdown and high-integrity protection systems on process plant.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:functional-safety",
+      "label": "Functional Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hazard-analysis",
+        "label": "Hazard Analysis"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iec-62443",
+        "label": "IEC 62443"
+      },
+      {
+        "id": "urn:ngm:class:safety-standard",
+        "label": "Safety Standard"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:scada",
+        "label": "SCADA"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:process-control",
+        "label": "Process Control"
+      },
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iec-61508",
+        "label": "IEC 61508"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iec-62061",
+        "label": "IEC 62061"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:safety-integrity-level",
+        "label": "Safety Integrity Level"
+      },
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    }
+  ]
+}

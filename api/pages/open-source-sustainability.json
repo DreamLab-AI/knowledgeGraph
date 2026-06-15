@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:open-source-sustainability",
+  "title": "Open Source Sustainability",
+  "slug": "open-source-sustainability",
+  "public": true,
+  "classIri": "urn:ngm:class:open-source-sustainability",
+  "domain": "blockchain",
+  "definition": "Open source sustainability concerns the long-term viability of freely available software projects, addressing how maintainers are funded, how contributor effort is sustained, and how critical dependencies are kept secure and maintained. It examines the mismatch between the widespread reliance on open source infrastructure and the scarce, often volunteer, resources behind it. Funding mechanisms such as grants, quadratic funding, and retroactive public-goods funding attempt to close this gap.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:open-source-software",
+      "label": "Open Source Software"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:quadratic-funding",
+        "label": "Quadratic Funding"
+      },
+      {
+        "id": "urn:ngm:class:retroactive-public-goods-funding",
+        "label": "Retroactive Public Goods Funding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

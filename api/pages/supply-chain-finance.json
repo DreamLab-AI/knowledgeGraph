@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:supply-chain-finance",
+  "title": "Supply Chain Finance",
+  "slug": "supply-chain-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-finance",
+  "domain": "blockchain",
+  "definition": "Supply chain finance is a set of financing and risk-mitigation techniques that optimise working capital and liquidity across the parties in a supply chain. It typically allows suppliers to receive early payment on approved invoices while buyers extend their payment terms, using the buyer's stronger credit standing to lower financing costs. Blockchain and distributed-ledger implementations add shared visibility, automated settlement and tamper-evident provenance to these flows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trade-finance",
+      "label": "Trade Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supply-chain-transparency",
+        "label": "Supply Chain Transparency"
+      },
+      {
+        "id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:trade-finance",
+        "label": "Trade Finance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-ledger-technology",
+        "label": "Distributed Ledger Technology"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:trade-finance-automation",
+        "label": "Trade Finance Automation"
+      },
+      {
+        "id": "urn:ngm:class:procurement",
+        "label": "Procurement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

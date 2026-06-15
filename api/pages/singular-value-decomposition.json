@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:singular-value-decomposition",
+  "title": "Singular Value Decomposition",
+  "slug": "singular-value-decomposition",
+  "public": true,
+  "classIri": "urn:ngm:class:singular-value-decomposition",
+  "domain": "machine-learning",
+  "definition": "Singular value decomposition (SVD) is a matrix factorisation that expresses any real or complex matrix as the product of two orthogonal (or unitary) matrices and a diagonal matrix of non-negative singular values. It generalises eigenvalue decomposition to arbitrary, non-square matrices and reveals the rank, range, and dominant directions of variation in data. SVD is foundational across machine learning and numerical linear algebra, underpinning dimensionality reduction, low-rank approximation, recommender systems, and the principal component analysis used to compress and denoise high-dimensional data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:principal-component-analysis",
+        "label": "Principal Component Analysis"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    }
+  ]
+}

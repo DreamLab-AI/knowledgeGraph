@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:obj-format",
+  "title": "Obj Format",
+  "slug": "obj-format",
+  "public": true,
+  "classIri": "urn:ngm:class:obj-format",
+  "domain": "spatial-computing",
+  "definition": "The OBJ format (Wavefront .obj) is a simple, text-based 3D geometry interchange format that stores polygon mesh data as lists of vertices, texture coordinates, normals and faces. It is openly documented and almost universally supported, with material properties carried in a companion .mtl file. Valued for its readability and portability rather than efficiency, OBJ remains a common lowest-common-denominator format for exchanging static 3D models between modelling tools and pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:polygon-mesh",
+      "label": "Polygon Mesh"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fbx",
+        "label": "FBX"
+      },
+      {
+        "id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:gl-tf",
+        "label": "glTF"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mesh-data",
+        "label": "Mesh Data"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:3-d-asset",
+        "label": "3D Asset"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fbx",
+        "label": "FBX"
+      },
+      {
+        "id": "urn:ngm:class:3-d-model",
+        "label": "3D Model"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

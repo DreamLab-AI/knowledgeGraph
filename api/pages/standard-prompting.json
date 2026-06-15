@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:standard-prompting",
+  "title": "Standard Prompting",
+  "slug": "standard-prompting",
+  "public": true,
+  "classIri": "urn:ngm:class:standard-prompting",
+  "domain": "artificial-intelligence",
+  "definition": "Standard prompting is the baseline method of querying a large language model by providing an instruction or question, optionally with input-output examples, and expecting an answer without an elicited reasoning process. It establishes the reference behaviour against which more elaborate strategies such as chain-of-thought, self-consistency and tool-augmented prompting are compared. Standard prompting subsumes zero-shot and few-shot formulations that map directly from prompt to answer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:zero-shot-prompting",
+        "label": "Zero-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:direct-answer-prompting",
+        "label": "Direct Answer Prompting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:prompt-template",
+        "label": "Prompt Template"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:prompt-template",
+        "label": "Prompt Template"
+      },
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:radio-frequency-spectrum",
+  "title": "Radio Frequency Spectrum",
+  "slug": "radio-frequency-spectrum",
+  "public": true,
+  "classIri": "urn:ngm:class:radio-frequency-spectrum",
+  "domain": "infrastructure",
+  "definition": "The radio frequency spectrum is the range of electromagnetic frequencies used to transmit information wirelessly, conventionally spanning roughly three kilohertz to three hundred gigahertz. It is a finite, shared natural resource divided into bands that are allocated and licensed by regulators to services such as broadcasting, mobile telephony, and wireless data, with propagation characteristics and capacity varying systematically with frequency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:wireless-communication",
+      "label": "Wireless Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:wi-fi",
+        "label": "Wi-Fi"
+      },
+      {
+        "id": "urn:ngm:class:cellular-network",
+        "label": "Cellular Network"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:wireless-communication",
+        "label": "Wireless Communication"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:spectrum-management",
+        "label": "Spectrum Management"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:spectrum-management",
+        "label": "Spectrum Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

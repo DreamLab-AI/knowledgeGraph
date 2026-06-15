@@ -101,10 +101,6 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:legislation",
-        "label": "Legislation"
-      },
-      {
         "@id": "urn:ngm:class:regulatory-guidance",
         "label": "Regulatory Guidance"
       }

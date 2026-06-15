@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:data-drift",
+  "title": "Data Drift",
+  "slug": "data-drift",
+  "public": true,
+  "classIri": "urn:ngm:class:data-drift",
+  "domain": "artificial-intelligence",
+  "definition": "Data drift is the change over time in the statistical distribution of the input data fed to a deployed machine learning model relative to the distribution it was trained on. Unlike concept drift, which alters the relationship between inputs and targets, data drift (also called covariate or feature drift) shifts the marginal distribution of the features themselves and can silently degrade model accuracy even when the learned mapping remains valid. Detecting and responding to data drift is a central concern of model monitoring and MLOps, typically driving alerts, scheduled retraining, or fallback policies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:concept-drift",
+      "label": "Concept Drift"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:retraining",
+        "label": "Retraining"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:feature-distribution",
+        "label": "Feature Distribution"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:concept-drift",
+        "label": "Concept Drift"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:density-estimation",
+        "label": "Density Estimation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:covariate-shift",
+        "label": "Covariate Shift"
+      },
+      {
+        "id": "urn:ngm:class:distribution-shift",
+        "label": "Distribution Shift"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    }
+  ]
+}

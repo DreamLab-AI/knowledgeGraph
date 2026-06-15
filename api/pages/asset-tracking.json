@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:asset-tracking",
+  "title": "Asset Tracking",
+  "slug": "asset-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-tracking",
+  "domain": "infrastructure",
+  "definition": "Asset tracking is the continuous identification and localisation of physical objects, such as inventory, equipment, and vehicles, across their lifecycle and movement. It combines identification technologies like RFID and BLE beacons with positioning systems and connectivity to give organisations real-time visibility of where assets are and in what condition. Asset tracking underpins supply-chain transparency, loss prevention, and operational efficiency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:internet-of-things",
+      "label": "Internet of Things"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mesh-networking",
+        "label": "Mesh Networking"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      },
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "GPS"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-visibility",
+        "label": "Supply Chain Visibility"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

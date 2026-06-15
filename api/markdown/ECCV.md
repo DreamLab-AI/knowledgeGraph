@@ -30,12 +30,6 @@ public:: true
     }
   ],
   "relations": {
-    "hasPart": [
-      {
-        "@id": "urn:ngm:class:tutorial",
-        "label": "Tutorial"
-      }
-    ],
     "partOf": [
       {
         "@id": "urn:ngm:class:academic-conference",

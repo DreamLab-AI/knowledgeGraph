@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:real-analysis",
+  "title": "Real Analysis",
+  "slug": "real-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:real-analysis",
+  "domain": "machine-learning",
+  "definition": "Real Analysis is the branch of mathematics that rigorously studies the real numbers, sequences, series, limits, continuity, differentiation and integration. It provides the formal foundations underlying calculus, establishing theorems on convergence and the structure of the real line. Real analysis underpins measure theory, functional analysis and the probabilistic and optimisation theory used in machine learning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:calculus",
+      "label": "Calculus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:topology",
+        "label": "Topology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      },
+      {
+        "id": "urn:ngm:class:measure-theory",
+        "label": "Measure Theory"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sigma-algebra",
+        "label": "Sigma Algebra"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "measure-theory",
+      "label": "Measure Theory"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ]
+}

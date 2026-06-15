@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:deregulation",
+  "title": "Deregulation",
+  "slug": "deregulation",
+  "public": true,
+  "classIri": "urn:ngm:class:deregulation",
+  "domain": "governance",
+  "definition": "Deregulation is the process of removing, reducing, or simplifying government rules and controls that constrain how firms operate in a market, typically to increase competition, lower barriers to entry, and improve economic efficiency. It is the deliberate counterpart to regulation and is often pursued in sectors such as telecommunications, finance, energy, and transport. Deregulation does not mean the absence of oversight but rather a shift toward lighter-touch or market-based governance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulation",
+      "label": "Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:internet-governance",
+        "label": "Internet Governance"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-regulation",
+        "label": "Digital Regulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:net-neutrality",
+        "label": "Net Neutrality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

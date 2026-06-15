@@ -1,0 +1,43 @@
+- ### Definition
+- Cognitive load is the demand a task places on [[Working Memory]], shaping how readily a person can perceive, decide, and act within a [[User Experience]].
+- It is studied through [[Human-Computer Interaction]] and reduced through deliberate [[Interaction Design]] that respects the limits of [[Attention]].
+- Designers measure and manage it to protect [[Usability]] and to help users form accurate [[Mental Model]] representations.
+- ### Overview
+- Cognitive load theory originates in educational psychology and has been widely adopted in interface and spatial-computing design.
+- Working memory holds only a few items at once, so any interface that forces users to remember state, track scattered information, or decode ambiguous controls increases load.
+- The three classic components are intrinsic load (task complexity that cannot be removed), extraneous load (avoidable burden from layout, jargon, or distraction), and germane load (productive effort that consolidates learning).
+- Good design minimises extraneous load, paces intrinsic load, and channels remaining capacity toward germane schema-building.
+- In immersive and spatial computing, depth, motion, and field-of-view introduce additional perceptual load that compounds the cognitive demand of the underlying task.
+- ### Key aspects
+- Intrinsic load — irreducible difficulty arising from the task itself and the user's prior knowledge.
+- Extraneous load — burden added by presentation choices such as clutter, inconsistent layout, or unnecessary steps.
+- Germane load — effort that builds transferable understanding and durable schemas.
+- Chunking and progressive disclosure reduce the number of items held in [[Working Memory]] at once.
+- Signalling and consistency reduce the search effort users spend locating controls and information.
+- Measurement methods include subjective rating scales, dual-task probes, and physiological indicators such as pupil dilation.
+- ### Applications
+- Form and dialogue design that breaks long workflows into manageable steps.
+- Information architecture and navigation that keep choices within comfortable limits.
+- Onboarding and tutorials that pace intrinsic difficulty while building schemas.
+- Immersive AR/VR interfaces where perceptual demand must be balanced against task demand.
+- Accessibility work that lowers load for users with differing attentional or memory capacities.
+- ### Relationships
+- partOf:: [[User Experience]]
+- dependsOn:: [[Working Memory]]
+- dependsOn:: [[Attention]]
+- relatedTo:: [[Mental Model]]
+- relatedTo:: [[Usability]]
+- relatedTo:: [[Human-Computer Interaction]]
+- affects:: [[Interaction Design]]
+- supports:: [[Usability]]
+- enables:: [[User Research]]
+- requires:: [[Attention]]
+- uses:: [[Mental Model]]
+- contrastsWith:: [[Affordance]]
+- bridgesTo:: [[Ergonomics]]
+- supportedBy:: [[Cognitive Walkthrough]]
+- informedBy:: [[User Research]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

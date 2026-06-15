@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:semantic-mapping",
+  "title": "Semantic Mapping",
+  "slug": "semantic-mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:semantic-mapping",
+  "domain": "ai",
+  "definition": "Semantic mapping is the process of establishing correspondences between concepts, terms, or schema elements across different knowledge representations so that their meanings align. It links source vocabularies to target ontologies, enabling data expressed under one model to be interpreted consistently under another. Semantic mapping underpins interoperability across heterogeneous knowledge graphs, databases, and linked-data sources.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:knowledge-representation",
+      "label": "Knowledge Representation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-integration",
+        "label": "Data Integration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:vector-embedding",
+        "label": "Vector Embedding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:entity-resolution",
+        "label": "Entity Resolution"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    }
+  ]
+}

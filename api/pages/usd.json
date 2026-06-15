@@ -41,12 +41,7 @@
         "label": "Stablecoin"
       }
     ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:federal-reserve",
-        "label": "Federal Reserve"
-      }
-    ],
+    "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
@@ -93,12 +88,7 @@
         "label": "ISO 4217"
       }
     ],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:bretton-woods-system",
-        "label": "Bretton Woods System"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:money",

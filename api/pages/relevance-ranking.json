@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:relevance-ranking",
+  "title": "Relevance Ranking",
+  "slug": "relevance-ranking",
+  "public": true,
+  "classIri": "urn:ngm:class:relevance-ranking",
+  "domain": "ai",
+  "definition": "Relevance Ranking is the process of ordering a set of candidate documents, passages or items by their estimated usefulness to a given query or context. It combines lexical, semantic and behavioural signals into a score that determines the sequence in which results are presented. Ranking quality directly governs the perceived effectiveness of search, recommendation and retrieval-augmented generation systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:search-engine",
+        "label": "Search Engine"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:discovery-layer",
+        "label": "Discovery Layer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
+      },
+      {
+        "id": "urn:ngm:class:vector-search",
+        "label": "Vector Search"
+      },
+      {
+        "id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reranker",
+        "label": "Reranker"
+      },
+      {
+        "id": "urn:ngm:class:context-engineering",
+        "label": "Context Engineering"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

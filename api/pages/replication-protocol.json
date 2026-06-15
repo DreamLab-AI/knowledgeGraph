@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:replication-protocol",
+  "title": "Replication Protocol",
+  "slug": "replication-protocol",
+  "public": true,
+  "classIri": "urn:ngm:class:replication-protocol",
+  "domain": "distributed-systems",
+  "definition": "A replication protocol is the set of rules and message exchanges by which a distributed system maintains multiple copies of data across nodes so that they remain consistent according to a chosen consistency model despite failures and concurrency. It governs how updates are propagated, ordered, and acknowledged, balancing availability, latency, and durability. Replication protocols range from synchronous primary-backup and quorum schemes to asynchronous gossip and conflict-free replicated approaches.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-data-structure",
+      "label": "Distributed Data Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:log-replication",
+        "label": "Log Replication"
+      },
+      {
+        "id": "urn:ngm:class:leader-election",
+        "label": "Leader Election"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:data-replication",
+        "label": "Data Replication"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consistency-model",
+        "label": "Consistency Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:state-machine-replication",
+        "label": "State Machine Replication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:partition-tolerance",
+        "label": "Partition Tolerance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:quorum",
+        "label": "Quorum"
+      },
+      {
+        "id": "urn:ngm:class:gossip-protocol",
+        "label": "Gossip Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:strong-consistency",
+        "label": "Strong Consistency"
+      },
+      {
+        "id": "urn:ngm:class:eventual-consistency",
+        "label": "Eventual Consistency"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-data-structure",
+        "label": "Distributed Data Structure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:raft",
+        "label": "Raft"
+      },
+      {
+        "id": "urn:ngm:class:paxos",
+        "label": "Paxos"
+      },
+      {
+        "id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    }
+  ]
+}

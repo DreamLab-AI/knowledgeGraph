@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:initialization-vector",
+  "title": "Initialization Vector",
+  "slug": "initialization-vector",
+  "public": true,
+  "classIri": "urn:ngm:class:initialization-vector",
+  "domain": "security",
+  "definition": "An initialization vector (IV) is a fixed-size input to a symmetric encryption mode of operation that randomises the encryption process so that identical plaintexts produce different ciphertexts under the same key. By introducing fresh, unpredictable variation for each message, it prevents an attacker from detecting repetition and defeats certain chosen-plaintext attacks. Depending on the mode, an IV must be unpredictable, unique, or both, and is typically transmitted in the clear alongside the ciphertext because its secrecy is not required, only its non-repetition. Misusing an IV, such as reusing it, can catastrophically undermine the security of an otherwise sound cipher.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:symmetric-encryption",
+      "label": "Symmetric Encryption"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:entropy",
+        "label": "Entropy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:salt",
+        "label": "Salt"
+      },
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-key",
+        "label": "Cryptographic Key"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:message-authentication-code",
+        "label": "Message Authentication Code"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    }
+  ]
+}

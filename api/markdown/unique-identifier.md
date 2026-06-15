@@ -1,0 +1,37 @@
+- ### Definition
+  - A unique identifier is a value assigned to an object, entity, or record so that it can be distinguished unambiguously from all others within a defined scope. Identifiers may be globally unique, such as universally unique identifiers, or unique within a namespace, such as a serial number combined with an issuer prefix. In supply chains, unique identifiers underpin serialisation, traceability, and data exchange across organisations.
+  - Related: [[Identification]] [[Namespace]] [[Serialisation]] [[Traceability]] [[GS1]]
+- ### Overview
+  - Uniqueness is always defined relative to a scope and an issuing authority. Centralised schemes assign identifiers from a managed registry to guarantee non-collision, whereas decentralised schemes such as universally unique identifiers rely on sufficiently large random or structured value spaces to make collisions negligible. In supply-chain settings, standards bodies such as GS1 allocate company prefixes that combine with item references and serial numbers to form globally unique product identifiers carried by barcodes and RFID tags.
+- ### Key aspects
+  - Uniqueness is scoped to a namespace or issuing authority.
+  - Centralised allocation guarantees non-collision via a registry.
+  - Random or structured value spaces enable decentralised uniqueness.
+  - Serialisation extends class-level codes to individual instances.
+  - Identifiers may be opaque or carry embedded structure.
+- ### Applications
+  - Item-level serialisation and product authentication.
+  - End-to-end traceability across supply-chain partners.
+  - Database primary keys and record linkage.
+  - Asset tracking and inventory management.
+  - Cross-organisation data exchange and interoperability.
+- ### Relationships
+  - requires:: [[Namespace]]
+  - requires:: [[Identification]]
+  - hasPart:: [[Serialisation]]
+  - partOf:: [[Data Model]]
+  - implements:: [[Identification]]
+  - enables:: [[Traceability]]
+  - enables:: [[Tracking]]
+  - enables:: [[Supply Chain Provenance]]
+  - uses:: [[Barcode]]
+  - uses:: [[RFID]]
+  - standardizedBy:: [[GS1]]
+  - supports:: [[Traceability]]
+  - relatedTo:: [[Serialisation]]
+  - relatedTo:: [[Data Model]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

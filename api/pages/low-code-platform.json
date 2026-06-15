@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:low-code-platform",
+  "title": "Low Code Platform",
+  "slug": "low-code-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:low-code-platform",
+  "domain": "artificial-intelligence",
+  "definition": "A low-code platform is a software development environment that lets users build applications primarily through visual, model-driven interfaces such as drag-and-drop component composition, declarative configuration, and pre-built connectors, while still permitting hand-written code for custom logic. It abstracts away much boilerplate of conventional programming, accelerating delivery and broadening who can build software to include semi-technical citizen developers. Modern platforms increasingly embed AI assistance for component suggestion, data-model inference, and automated workflow generation, positioning them as a core layer in enterprise hyperautomation strategies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:application-development",
+      "label": "Application Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hyperautomation",
+        "label": "Hyperautomation"
+      },
+      {
+        "id": "urn:ngm:class:application-development",
+        "label": "Application Development"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:hyperautomation",
+        "label": "Hyperautomation"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

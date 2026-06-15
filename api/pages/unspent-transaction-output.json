@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:unspent-transaction-output",
+  "title": "Unspent Transaction Output",
+  "slug": "unspent-transaction-output",
+  "public": true,
+  "classIri": "urn:ngm:class:unspent-transaction-output",
+  "domain": "blockchain",
+  "definition": "An Unspent Transaction Output (UTXO) is a discrete amount of cryptocurrency that has been received by an address and not yet spent, forming the fundamental accounting unit in UTXO-based blockchains such as Bitcoin. Each transaction consumes one or more existing UTXOs as inputs and creates new UTXOs as outputs, with the global set of all UTXOs representing the current ledger state. Validating a transaction requires confirming that its referenced inputs exist in the UTXO set and have not already been spent, which is central to preventing double spending.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-transaction",
+      "label": "Blockchain Transaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:account-model",
+        "label": "Account Model"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      },
+      {
+        "id": "urn:ngm:class:merkle-tree",
+        "label": "Merkle Tree"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:ledger",
+        "label": "Ledger"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      },
+      {
+        "id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      },
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:randomised-controlled-trial",
+  "title": "Randomised Controlled Trial",
+  "slug": "randomised-controlled-trial",
+  "public": true,
+  "classIri": "urn:ngm:class:randomised-controlled-trial",
+  "domain": "governance",
+  "definition": "A randomised controlled trial (RCT) is an experimental study design in which participants are randomly assigned to an intervention or a control group to estimate the causal effect of the intervention while minimising bias and confounding. Randomisation balances known and unknown covariates across groups, and the controlled comparison isolates the treatment effect from background trends. RCTs are widely regarded as the methodological gold standard for causal inference in medicine and policy evaluation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      },
+      {
+        "id": "urn:ngm:class:causal-inference",
+        "label": "Causal Inference"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:statistical-inference",
+        "label": "Statistical Inference"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:evidence-based-medicine",
+        "label": "Evidence-Based Medicine"
+      },
+      {
+        "id": "urn:ngm:class:precision-medicine",
+        "label": "Precision Medicine"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fda",
+        "label": "FDA"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

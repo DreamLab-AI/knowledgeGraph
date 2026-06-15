@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:process-mining",
+  "title": "Process Mining",
+  "slug": "process-mining",
+  "public": true,
+  "classIri": "urn:ngm:class:process-mining",
+  "domain": "ai",
+  "definition": "Process mining is a family of data-driven techniques that reconstruct, analyse, and improve real business processes by extracting knowledge from event logs recorded in enterprise information systems. It encompasses process discovery, which infers a process model from observed event sequences; conformance checking, which compares the discovered behaviour against a reference model; and enhancement, which enriches models with performance and frequency data. By grounding analysis in actual recorded execution rather than idealised documentation, it reveals bottlenecks, deviations, and automation opportunities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:business-process-management",
+      "label": "Business Process Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:event-log",
+        "label": "Event Log"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:hyperautomation",
+        "label": "Hyperautomation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:event-log",
+        "label": "Event Log"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:event-log",
+        "label": "Event Log"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:business-process-management",
+        "label": "Business Process Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:banking",
+  "title": "Banking",
+  "slug": "banking",
+  "public": true,
+  "classIri": "urn:ngm:class:banking",
+  "domain": "finance",
+  "definition": "Banking is the system of financial intermediation through which licensed institutions accept deposits, extend credit, and provide payment and related services to individuals, businesses, and governments. Banks transform short-term deposits into longer-term loans, manage liquidity and risk, and operate the payment rails that move money through the economy. As a regulated, systemically important sector, banking sits at the centre of monetary policy transmission and financial stability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-services",
+      "label": "Financial Services"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:clearing",
+        "label": "Clearing"
+      },
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fintech",
+        "label": "Fintech"
+      },
+      {
+        "id": "urn:ngm:class:open-banking",
+        "label": "Open Banking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-services",
+        "label": "Financial Services"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

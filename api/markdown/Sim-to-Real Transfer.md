@@ -124,7 +124,7 @@ alias:: Sim to Real Transfer
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:policy-gradient",
+        "@id": "urn:ngm:class:policy-gradient-methods",
         "label": "Policy Gradient"
       },
       {

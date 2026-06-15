@@ -70,7 +70,7 @@ public:: true
         "label": "Texture Mapping"
       },
       {
-        "@id": "urn:ngm:class:shader-programming",
+        "@id": "urn:ngm:class:shader",
         "label": "Shader Programming"
       },
       {

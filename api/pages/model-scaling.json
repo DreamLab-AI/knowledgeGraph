@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:model-scaling",
+  "title": "Model Scaling",
+  "slug": "model-scaling",
+  "public": true,
+  "classIri": "urn:ngm:class:model-scaling",
+  "domain": "artificial-intelligence",
+  "definition": "Model scaling is the practice of systematically increasing the size of a machine learning model, the volume of training data, and the compute budget to improve performance in line with empirical scaling laws. Predictable power-law relationships link these resources to reductions in loss, guiding decisions about parameter counts and data allocation. Scaling has been a primary driver behind the capabilities of modern foundation models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scaling-laws",
+      "label": "Scaling Laws"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:parameter-count",
+        "label": "Parameter Count"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

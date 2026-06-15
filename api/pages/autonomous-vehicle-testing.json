@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:autonomous-vehicle-testing",
+  "title": "Autonomous Vehicle Testing",
+  "slug": "autonomous-vehicle-testing",
+  "public": true,
+  "classIri": "urn:ngm:class:autonomous-vehicle-testing",
+  "domain": "spatial-computing",
+  "definition": "Autonomous vehicle testing is the discipline of validating the safety, reliability, and performance of self-driving systems through simulation, closed-course trials, and supervised public-road operation. It exercises the perception, planning, and control stack against a vast space of driving scenarios, including rare and hazardous edge cases that are impractical to encounter physically. Simulation-based testing has become central because it enables scalable, repeatable, and safe exploration of these scenarios before real-world deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:computational-model",
+        "label": "Computational Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-driving-car",
+        "label": "Self-Driving Car"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:computational-model",
+        "label": "Computational Model"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:self-driving-car",
+        "label": "Self-Driving Car"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:texture-compression",
+  "title": "Texture Compression",
+  "slug": "texture-compression",
+  "public": true,
+  "classIri": "urn:ngm:class:texture-compression",
+  "domain": "spatial-computing",
+  "definition": "Texture compression is a set of techniques that store image textures in compact, GPU-decodable formats to reduce memory footprint and bandwidth during real-time rendering. Unlike general image compression, these formats support fast random access and fixed-rate block decoding directly in hardware, trading some image quality for large savings in storage and runtime cost. Common schemes include block-based formats such as BCn, ETC and ASTC.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:mipmap",
+        "label": "Mipmap"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:level-of-detail",
+        "label": "Level of Detail"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu-memory",
+        "label": "GPU Memory"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

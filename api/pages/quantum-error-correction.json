@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:quantum-error-correction",
+  "title": "Quantum Error Correction",
+  "slug": "quantum-error-correction",
+  "public": true,
+  "classIri": "urn:ngm:class:quantum-error-correction",
+  "domain": "infrastructure",
+  "definition": "Quantum error correction is the set of techniques that protect quantum information against decoherence and operational noise by encoding a logical qubit redundantly across many physical qubits. Stabiliser measurements detect errors without collapsing the encoded state, allowing the system to diagnose and reverse bit-flip and phase-flip faults. It is the central prerequisite for fault-tolerant quantum computation, where logical error rates can be driven arbitrarily low provided physical error rates fall below a threshold.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quantum-computation-paradigm",
+      "label": "Quantum Computation Paradigm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      },
+      {
+        "id": "urn:ngm:class:quantum-gate",
+        "label": "Quantum Gate"
+      },
+      {
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      },
+      {
+        "id": "urn:ngm:class:quantum-cryptography",
+        "label": "Quantum Cryptography"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:qubit",
+        "label": "Qubit"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:quantum-gate",
+        "label": "Quantum Gate"
+      },
+      {
+        "id": "urn:ngm:class:error-correction",
+        "label": "Error Correction"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

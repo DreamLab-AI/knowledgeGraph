@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:cryptoasset-regulation",
+  "title": "Cryptoasset Regulation",
+  "slug": "cryptoasset-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptoasset-regulation",
+  "domain": "finance",
+  "definition": "Cryptoasset regulation is the body of laws, supervisory rules, and policy frameworks governing the issuance, custody, trading, and use of digital assets such as cryptocurrencies, stablecoins, and tokenised securities. It applies traditional financial-services objectives, consumer protection, market integrity, financial stability, and the prevention of money laundering and terrorist financing, to crypto-native business models. Landmark regimes include the EU Markets in Crypto-Assets regulation and the UK's phased approach led by the Financial Conduct Authority and HM Treasury, alongside global standards from the Financial Action Task Force such as the travel rule.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulation",
+      "label": "Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:kyc",
+        "label": "Know Your Customer"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:markets-in-crypto-assets",
+        "label": "Markets in Crypto-Assets"
+      },
+      {
+        "id": "urn:ngm:class:travel-rule",
+        "label": "Travel Rule"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      },
+      {
+        "id": "urn:ngm:class:institutional-trust",
+        "label": "Institutional Trust"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

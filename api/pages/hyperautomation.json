@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:hyperautomation",
+  "title": "Hyperautomation",
+  "slug": "hyperautomation",
+  "public": true,
+  "classIri": "urn:ngm:class:hyperautomation",
+  "domain": "artificial-intelligence",
+  "definition": "Hyperautomation is a disciplined approach to automating as many business and IT processes as possible by orchestrating a coordinated set of technologies including robotic process automation, machine learning, process mining and low-code platforms. Rather than automating tasks in isolation, it discovers, designs and integrates end-to-end automated workflows with intelligence layered in. The goal is scalable, adaptive automation that augments human work across the enterprise.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:intelligent-automation",
+      "label": "Intelligent Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:low-code-platform",
+        "label": "Low Code Platform"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:process-mining",
+        "label": "Process Mining"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:intelligent-automation",
+        "label": "Intelligent Automation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

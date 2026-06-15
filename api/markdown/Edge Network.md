@@ -146,7 +146,7 @@ public:: true
         "label": "Distributed Processing"
       },
       {
-        "@id": "urn:ngm:class:latency-reduction",
+        "@id": "urn:ngm:class:latency",
         "label": "Latency Reduction"
       }
     ]

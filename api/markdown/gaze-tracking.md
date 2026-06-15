@@ -1,0 +1,33 @@
+- ### Definition
+  - [[Gaze Tracking]] estimates the point of regard of the eyes to provide a hands-free, attention-aware input for [[Spatial Computing]]. A specialisation of [[Eye Tracking]] within [[Human-Computer Interaction]], it feeds [[Foveated Rendering]] and intent inference in head-mounted displays.
+- ### Overview
+  - By locating the pupil centre and corneal reflections under controlled illumination, gaze trackers compute the line of sight and intersect it with the display or scene to yield a gaze point. This turns the eyes into a fast, low-effort pointing device.
+  - Beyond pointing, gaze is a rich attention signal. Systems can infer interest, intent, and cognitive state, enabling interfaces that pre-load content the user is about to engage and accessibility modes for users who cannot use their hands.
+- ### Mechanisms
+  - Infrared illumination produces stable corneal glints for robust eye localisation.
+  - Pupil-corneal reflection geometry maps eye images to gaze direction.
+  - Per-user calibration corrects for individual eye anatomy and headset fit.
+  - Machine-learning estimators improve accuracy and tolerance to slippage and lighting.
+- ### Applications
+  - [[Foveated Rendering]] concentrating GPU effort where the user is looking.
+  - Gaze-and-dwell or gaze-and-pinch selection in [[Immersive Interface]] designs.
+  - [[Accessibility]] input for users with limited mobility.
+  - Attention analytics and intent prediction in [[Virtual Reality]] experiences.
+- ### Relationships
+  - partOf:: [[Eye Tracking]]
+  - partOf:: [[Human-Computer Interaction]]
+  - hasPart:: [[Perception System]]
+  - requires:: [[Perception System]]
+  - requires:: [[Computational Model]]
+  - enables:: [[Foveated Rendering]]
+  - enables:: [[Immersive Interface]]
+  - uses:: [[Machine Learning]]
+  - supports:: [[Spatial Interaction]]
+  - supports:: [[Accessibility]]
+  - implements:: [[User Interface]]
+  - relatedTo:: [[Hand Tracking]]
+  - relatedTo:: [[Gesture Recognition]]
+  - relatedTo:: [[Virtual Reality]]
+  - bridgesTo:: [[Spatial Computing]]
+- ### Provenance
+  - updated:: 2026-06-15

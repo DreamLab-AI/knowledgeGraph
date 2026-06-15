@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:mesh-networking",
+  "title": "Mesh Networking",
+  "slug": "mesh-networking",
+  "public": true,
+  "classIri": "urn:ngm:class:mesh-networking",
+  "domain": "infrastructure",
+  "definition": "Mesh networking is a network topology in which nodes connect directly, dynamically, and non-hierarchically, relaying data on behalf of one another to reach destinations. Each node cooperates in routing, so the network can self-organise and self-heal around failed or moved nodes without central infrastructure. Mesh topologies are widely used in wireless sensor networks, smart-home protocols, and resilient community networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-topology",
+      "label": "Network Topology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      },
+      {
+        "id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "id": "urn:ngm:class:thread-protocol",
+        "label": "Thread Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-topology",
+        "label": "Network Topology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:routing-protocol",
+        "label": "Routing Protocol"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

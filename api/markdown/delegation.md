@@ -1,0 +1,34 @@
+- ### Definition
+- Delegation is the assignment of stake or voting power to another participant who acts on the delegator's behalf, without surrendering ownership. It is a participation mechanism within [[Proof of Stake]] and on-chain [[Governance]].
+- It rests on [[Trust]] in the chosen [[Validator]] or representative and shares both rewards and risks.
+- ### Overview
+- In proof-of-stake consensus, holders who lack the resources or expertise to run a validator delegate their stake to one that does, earning a share of rewards while remaining exposed to penalties such as slashing.
+- In governance, delegation lets a holder hand their vote to a trusted representative, optionally re-delegating onward, the recursive pattern known as [[Liquid Democracy]].
+- Delegation broadens participation but tends to concentrate influence in a smaller set of operators, a recurring centralisation tension.
+- ### Mechanisms
+- Stake delegation to validators with proportional [[Reward Distribution]].
+- Shared exposure to [[Slashing]] for validator misbehaviour.
+- Vote delegation and transitive re-delegation in governance.
+- Delegate registration and selection in [[Delegated Proof of Stake]] systems.
+- ### Applications
+- Securing proof-of-stake networks via delegated staking.
+- Treasury and protocol decisions in a [[DAO]].
+- Representative voting in protocol governance.
+- Liquid-democracy experiments combining direct and delegated votes.
+- ### Relationships
+- subClassOf:: [[Proof of Stake]]
+- hasPart:: [[Staking]]
+- hasPart:: [[Reward Distribution]]
+- enables:: [[On-Chain Governance]]
+- enables:: [[Liquid Democracy]]
+- dependsOn:: [[Validator]]
+- dependsOn:: [[Trust]]
+- requires:: [[Staking]]
+- uses:: [[Proof of Stake]]
+- supports:: [[DAO]]
+- supports:: [[Consensus]]
+- implements:: [[Delegated Proof of Stake]]
+- contrastsWith:: [[Slashing]]
+- relatedTo:: [[Governance]]
+- ### Provenance
+- updated:: 2026-06-15

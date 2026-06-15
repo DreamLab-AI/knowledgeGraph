@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:barcode",
+  "title": "Barcode",
+  "slug": "barcode",
+  "public": true,
+  "classIri": "urn:ngm:class:barcode",
+  "domain": "standards",
+  "definition": "A barcode is a machine-readable optical representation of data that encodes information in the widths and spacings of parallel lines (one-dimensional) or in patterns of dots, squares and other geometric shapes (two-dimensional). Barcodes are scanned by optical readers or cameras to retrieve an identifier that links a physical item to a record in an information system. They underpin automatic identification and data capture in retail, logistics and inventory control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:product-identification",
+        "label": "Product Identification"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      },
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      },
+      {
+        "id": "urn:ngm:class:nfc",
+        "label": "NFC"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:supply-chain-traceability",
+        "label": "Supply Chain Traceability"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:qr-code",
+        "label": "QR Code"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:gs1-standards",
+        "label": "GS1 Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:qr-code",
+        "label": "QR Code"
+      },
+      {
+        "id": "urn:ngm:class:epcis",
+        "label": "EPCIS"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:organisational-resilience",
+  "title": "Organisational Resilience",
+  "slug": "organisational-resilience",
+  "public": true,
+  "classIri": "urn:ngm:class:organisational-resilience",
+  "domain": "governance",
+  "definition": "Organisational resilience is the capacity of an organisation to anticipate, prepare for, respond to and adapt to incremental change and sudden disruptions in order to survive and prosper. It integrates risk management, business continuity, crisis response and adaptive capacity into a coherent governance posture. Unlike narrow continuity planning, it emphasises learning, flexibility and the ability to emerge stronger from adversity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:resilience",
+      "label": "Resilience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:business-continuity",
+        "label": "Business Continuity"
+      },
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:change-management",
+        "label": "Change Management"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

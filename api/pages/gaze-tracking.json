@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:gaze-tracking",
+  "title": "Gaze Tracking",
+  "slug": "gaze-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:gaze-tracking",
+  "domain": "spatial-computing",
+  "definition": "Gaze tracking is the measurement of where a person is looking by estimating the direction and point of regard of the eyes, typically using cameras and infrared illumination to locate pupil and corneal reflections. In spatial computing it provides a hands-free input modality and a signal for attention, enabling interfaces that respond to where the user looks. Gaze tracking is foundational to foveated rendering, intent inference, and accessible interaction in head-mounted displays and immersive systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:eye-tracking",
+      "label": "Eye Tracking"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:computational-model",
+        "label": "Computational Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:foveated-rendering",
+        "label": "Foveated Rendering"
+      },
+      {
+        "id": "urn:ngm:class:immersive-interface",
+        "label": "Immersive Interface"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:spatial-interaction",
+        "label": "Spatial Interaction"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-user-interface",
+      "label": "3D User Interface"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

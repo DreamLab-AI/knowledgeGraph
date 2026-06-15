@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:quasi-monte-carlo",
+  "title": "Quasi Monte Carlo",
+  "slug": "quasi-monte-carlo",
+  "public": true,
+  "classIri": "urn:ngm:class:quasi-monte-carlo",
+  "domain": "artificial-intelligence",
+  "definition": "Quasi-Monte Carlo (QMC) is a family of numerical integration and sampling methods that replace the pseudo-random points of classical Monte Carlo with deterministic low-discrepancy sequences. By spreading sample points more evenly across the integration domain, QMC achieves faster asymptotic convergence than standard Monte Carlo for many smooth, moderate-dimensional integrals. It is widely used in computational finance, computer graphics, and uncertainty quantification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monte-carlo-integration",
+      "label": "Monte Carlo Integration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:variance-reduction",
+        "label": "Variance Reduction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monte-carlo-integration",
+        "label": "Monte Carlo Integration"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:importance-sampling",
+        "label": "Importance Sampling"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    }
+  ]
+}

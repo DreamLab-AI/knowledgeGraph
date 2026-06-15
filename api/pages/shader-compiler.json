@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:shader-compiler",
+  "title": "Shader Compiler",
+  "slug": "shader-compiler",
+  "public": true,
+  "classIri": "urn:ngm:class:shader-compiler",
+  "domain": "spatial-computing",
+  "definition": "A shader compiler is the toolchain component that translates high-level shading-language source code, such as GLSL or HLSL, into an intermediate representation or the native instruction set executed by a GPU. It performs parsing, optimisation, register allocation, and code generation so that programmable graphics and compute stages run efficiently on diverse hardware. Shader compilation may occur ahead of time or just in time, and its results are frequently cached to avoid costly recompilation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compiler",
+      "label": "Compiler"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:spir-v",
+        "label": "SPIR-V"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:spir-v",
+        "label": "SPIR-V"
+      },
+      {
+        "id": "urn:ngm:class:glsl",
+        "label": "GLSL"
+      },
+      {
+        "id": "urn:ngm:class:hlsl",
+        "label": "HLSL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    }
+  ]
+}

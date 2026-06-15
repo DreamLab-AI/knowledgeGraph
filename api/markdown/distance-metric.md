@@ -1,0 +1,34 @@
+- ### Definition
+  - A distance metric is a function that quantifies how dissimilar two data points are, satisfying non-negativity, identity, symmetry and the triangle inequality.
+  - In machine learning it defines the geometry of a feature space and thereby governs nearest-neighbour search, clustering and similarity-based retrieval.
+  - Choosing or learning an appropriate metric is often as important as the model itself for tasks driven by proximity.
+  - Related core concepts: [[Machine Learning]] [[Nearest Neighbor Search]] [[Vector Embedding]] [[Cosine Similarity]]
+- ### Overview
+  - A metric induces a topology on the feature space that determines which points count as close.
+  - Common metrics include Euclidean, Manhattan, Mahalanobis and cosine-derived distances.
+  - Metric learning adapts the distance to data so that semantically similar items become near.
+- ### Key aspects
+  - Formal axioms: identity of indiscernibles, symmetry and triangle inequality.
+  - Curse of dimensionality eroding contrast between near and far in high dimensions.
+  - Learned Mahalanobis and deep metric embeddings for task-specific geometry.
+  - Indexing structures that exploit the triangle inequality for fast search.
+- ### Applications
+  - k-nearest-neighbour classification and retrieval.
+  - Clustering and anomaly detection.
+  - Vector databases and semantic similarity search.
+- ### Relationships
+  - requires:: [[Statistics]]
+  - requires:: [[Vector Embedding]]
+  - hasPart:: [[Cosine Similarity]]
+  - enables:: [[Nearest Neighbor Search]]
+  - enables:: [[Clustering]]
+  - supports:: [[Vector Embedding]]
+  - uses:: [[Vector Embedding]]
+  - relatedTo:: [[Cosine Similarity]]
+  - relatedTo:: [[Clustering]]
+  - partOf:: [[Machine Learning]]
+  - contrastsWith:: [[Cosine Similarity]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:noise-function",
+  "title": "Noise Function",
+  "slug": "noise-function",
+  "public": true,
+  "classIri": "urn:ngm:class:noise-function",
+  "domain": "spatial-computing",
+  "definition": "A Noise Function is a deterministic pseudo-random function that maps spatial coordinates to smoothly varying scalar values, providing the controllable randomness behind procedural content. Gradient-based variants such as Perlin and Simplex noise produce coherent, band-limited fields that can be layered into fractal octaves to synthesise terrain, clouds, and textures. Because output depends only on input coordinates and a seed, noise functions are reproducible and efficiently evaluable on the GPU.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:procedural-generation",
+      "label": "Procedural Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      },
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      },
+      {
+        "id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:procedural-generation",
+        "label": "Procedural Generation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "procedural-texture",
+      "label": "Procedural Texture"
+    }
+  ]
+}

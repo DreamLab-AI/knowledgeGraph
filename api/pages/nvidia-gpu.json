@@ -1,0 +1,114 @@
+{
+  "id": "urn:visionflow:page:nvidia-gpu",
+  "title": "Nvidia Gpu",
+  "slug": "nvidia-gpu",
+  "public": true,
+  "classIri": "urn:ngm:class:nvidia-gpu",
+  "domain": "machine-learning",
+  "definition": "An NVIDIA GPU is a graphics processing unit designed and manufactured by NVIDIA, providing massively parallel computation that has become the dominant hardware substrate for machine learning training and inference. These devices expose thousands of cores together with specialised tensor units optimised for the dense matrix multiplications central to deep learning. They are programmed predominantly through the CUDA platform and serve as the primary accelerator in modern data centres and high-performance computing systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-center",
+        "label": "Data Center"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

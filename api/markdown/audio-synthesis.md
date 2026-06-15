@@ -1,0 +1,38 @@
+- ### Definition
+  - [[Audio Synthesis]] generates speech, music and sound from latent or textual input using [[Diffusion Models]], [[Deep Learning]] and neural vocoders, a modality of [[Generative AI]] enabling [[Text-to-Speech]].
+- ### Overview
+  - Audio synthesis produces sound waveforms from higher-level specifications. The pipeline often separates content modelling (predicting an intermediate representation such as a mel-spectrogram) from waveform generation (a vocoder converting that representation into samples).
+  - Generative models including autoregressive networks, generative adversarial networks, and [[Diffusion Models]] have driven dramatic gains in naturalness and controllability across speech, music, and effects.
+- ### Key aspects
+  - Spectrogram prediction followed by neural vocoding.
+  - Autoregressive, GAN-based, and diffusion-based generation families.
+  - Controllability: prosody, timbre, style, and speaker conditioning.
+  - Real-time versus offline synthesis trade-offs.
+  - Evaluation by mean opinion score and objective fidelity metrics.
+- ### Mechanisms
+  - Neural vocoders mapping spectral features to raw [[Audio Processing]] waveforms.
+  - Latent diffusion over compressed audio representations.
+  - Conditioning on text via [[Natural Language Processing]] encoders.
+  - Adversarial training with [[GAN]] discriminators for perceptual quality.
+- ### Applications
+  - [[Text-to-Speech]] assistants and accessibility tools.
+  - [[Music Generation]] and adaptive game soundtracks.
+  - Sound design and foley for media production.
+  - Voice cloning and dubbing, with associated ethical safeguards.
+- ### Relationships
+  - enables:: [[Text-to-Speech]]
+  - enables:: [[SpeechSynthesis]]
+  - enables:: [[Music Generation]]
+  - partOf:: [[Generative AI]]
+  - uses:: [[Diffusion Models]]
+  - uses:: [[Deep Learning]]
+  - uses:: [[Neural Network]]
+  - relatedTo:: [[Audio Processing]]
+  - relatedTo:: [[GAN]]
+  - requires:: [[Model Evaluation]]
+  - supports:: [[Content Generation]]
+  - dependsOn:: [[Transformer]]
+  - bridgesTo:: [[Natural Language Processing]]
+- ### Provenance
+  - source:: GapMaterialisation
+  - updated:: 2026-06-15

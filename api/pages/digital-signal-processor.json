@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:digital-signal-processor",
+  "title": "Digital Signal Processor",
+  "slug": "digital-signal-processor",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-signal-processor",
+  "domain": "spatial-computing",
+  "definition": "A digital signal processor (DSP) is a specialised microprocessor architecture optimised for the high-throughput numerical operations of digital signal processing, such as multiply-accumulate, filtering and fast transforms. DSPs feature hardware support for fixed and floating-point arithmetic, parallel datapaths and efficient memory access to process audio, sensor and communication signals in real time at low power. They are a core building block of audio systems, embedded devices and spatial computing hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:audio-system",
+      "label": "Audio System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:microphone-array",
+        "label": "Microphone Array"
+      },
+      {
+        "id": "urn:ngm:class:head-related-transfer-function",
+        "label": "Head Related Transfer Function"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:binaural-audio",
+        "label": "Binaural Audio"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

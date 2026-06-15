@@ -1,0 +1,40 @@
+- ### Definition
+  - Advanced manufacturing applies digital and automated technologies to physical production.
+  - It encompasses [[Additive Manufacturing]], [[Industrial Automation]], and [[Precision Manufacturing]].
+  - It is enabled by [[Digital Twin]] models and [[Industry 4.0]] cyber-physical integration.
+  - It supports national [[Economic Development]] and [[Uk Industrial Strategy]] objectives.
+- ### Overview
+  - Advanced manufacturing fuses computational design, sensing, and adaptive control on the factory floor.
+  - It shifts production toward smaller batches, mass customisation, and rapid reconfiguration.
+  - Digital twins mirror physical lines, enabling simulation-driven optimisation before committing material.
+  - It depends on skilled labour and robust supply chains as much as on the underlying technology.
+- ### Key aspects
+  - Robotics and automation raise throughput while improving repeatability and worker safety.
+  - Additive manufacturing enables geometries impossible with subtractive methods and reduces waste.
+  - Closed-loop process control uses sensor data to correct defects in real time.
+  - Digital threads connect design, production, and maintenance data across the asset lifecycle.
+- ### Applications
+  - Aerospace and automotive component production with tight tolerances and lightweighting.
+  - Medical device and implant fabrication using patient-specific additive geometries.
+  - Reshoring of strategic manufacturing capacity within regional innovation corridors.
+  - High-mix low-volume electronics assembly with flexible automated cells.
+- ### Relationships
+  - enables:: [[Precision Manufacturing]]
+  - enables:: [[Additive Manufacturing]]
+  - enables:: [[Economic Development]]
+  - supports:: [[Uk Industrial Strategy]]
+  - supports:: [[Supply Chain]]
+  - supports:: [[Logistics]]
+  - uses:: [[Industrial Automation]]
+  - uses:: [[Automation]]
+  - uses:: [[Digital Twin]]
+  - dependsOn:: [[Compute Infrastructure]]
+  - dependsOn:: [[Supply Chain]]
+  - implements:: [[Industry 4.0]]
+  - relatedTo:: [[IoT]]
+  - relatedTo:: [[Digital Twin]]
+  - partOf:: [[Infrastructure]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

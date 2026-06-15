@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:music-generation",
+  "title": "Music Generation",
+  "slug": "music-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:music-generation",
+  "domain": "ai",
+  "definition": "Music generation is the use of artificial intelligence to compose, arrange or synthesise musical content, producing either symbolic scores or raw audio waveforms. It applies generative models such as transformers, diffusion models and autoregressive audio networks trained on large music corpora. Outputs range from melodic and harmonic structure to full instrumental and vocal renderings conditioned on text, style or reference material.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:music-information-retrieval",
+        "label": "Music Information Retrieval"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:music-information-retrieval",
+        "label": "Music Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    }
+  ]
+}

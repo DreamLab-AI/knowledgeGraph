@@ -1,0 +1,125 @@
+{
+  "id": "urn:visionflow:page:scene-geometry",
+  "title": "Scene Geometry",
+  "slug": "scene-geometry",
+  "public": true,
+  "classIri": "urn:ngm:class:scene-geometry",
+  "domain": "spatial-computing",
+  "definition": "Scene geometry is the structured description of the spatial shape, surfaces, and arrangement of objects within a three-dimensional environment. It captures positions, depths, surface orientations, and connectivity needed to render, simulate, or reason about a scene. Accurate scene geometry underpins realistic lighting, occlusion, collision, and interaction in spatial computing and computer graphics applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scene-representation",
+      "label": "Scene Representation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:geometry",
+        "label": "Geometry"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:scene-representation",
+        "label": "Scene Representation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:geometry",
+        "label": "Geometry"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    }
+  ]
+}

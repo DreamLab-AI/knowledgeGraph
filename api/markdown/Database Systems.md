@@ -67,7 +67,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:relational-databases",
+        "@id": "urn:ngm:class:relational-database",
         "label": "Relational Databases"
       },
       {

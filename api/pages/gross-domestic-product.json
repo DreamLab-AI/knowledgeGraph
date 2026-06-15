@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:gross-domestic-product",
+  "title": "Gross Domestic Product",
+  "slug": "gross-domestic-product",
+  "public": true,
+  "classIri": "urn:ngm:class:gross-domestic-product",
+  "domain": "finance",
+  "definition": "Gross domestic product (GDP) is the total monetary value of all final goods and services produced within a country's borders over a given period. It is the principal aggregate measure of economic activity, computed via the production, income, or expenditure approaches, and is reported in nominal and real (inflation-adjusted) terms. GDP underpins growth measurement, fiscal and monetary policy, and cross-country comparison.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:macroeconomics",
+      "label": "Macroeconomics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:national-income",
+        "label": "National Income"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:balance-of-payments",
+        "label": "Balance of Payments"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:national-income",
+        "label": "National Income"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fiscal-policy",
+        "label": "Fiscal Policy"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:national-income",
+        "label": "National Income"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:macroeconomics",
+        "label": "Macroeconomics"
+      },
+      {
+        "id": "urn:ngm:class:economic-growth",
+        "label": "Economic Growth"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

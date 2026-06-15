@@ -1,0 +1,43 @@
+- ### Definition
+  - GPU programming is a branch of [[High Performance Computing]] and [[Parallel Computing]] targeting the [[GPU]].
+  - It expresses work through [[Shader]] and [[Compute Shader]] code using [[CUDA]], [[OpenCL]], and [[Vulkan]].
+  - It powers [[Real-time Rendering]], [[Ray Tracing]], [[Neural Rendering]], and [[Machine Learning]].
+- ### Overview
+  - GPU programming maps data-parallel problems onto a SIMT (single instruction, multiple thread) execution model where warps of threads execute in lockstep.
+  - Performance hinges on coalesced memory access, minimising divergence, and overlapping computation with data transfer across the host-device boundary.
+  - Modern toolchains expose both fixed-function graphics stages and fully programmable compute kernels, blurring the line between rendering and general computation.
+- ### Mechanisms
+  - Kernel launch configuration: organising work into grids, blocks, and threads matched to the device.
+  - Memory hierarchy management across global, shared, constant, and register memory to maximise bandwidth.
+  - Synchronisation primitives and atomics for safe cooperation within thread blocks.
+  - Asynchronous streams and pipelining to hide host-device transfer latency.
+- ### Applications
+  - Real-time graphics rendering and shading in games and immersive applications.
+  - Training and inference of deep neural networks across machine learning workloads.
+  - Scientific simulation, ray tracing, and neural rendering for spatial computing.
+- ### Relationships
+  - hasPart:: [[Shader]]
+  - hasPart:: [[Compute Shader]]
+  - partOf:: [[High Performance Computing]]
+  - requires:: [[Parallel Computing]]
+  - requires:: [[Memory Management]]
+  - enables:: [[Real-time Rendering]]
+  - enables:: [[Neural Rendering]]
+  - enables:: [[Ray Tracing]]
+  - uses:: [[CUDA]]
+  - uses:: [[OpenCL]]
+  - uses:: [[Vulkan]]
+  - uses:: [[SIMD]]
+  - implements:: [[Graphics Pipeline]]
+  - implements:: [[Rasterization]]
+  - supports:: [[Machine Learning]]
+  - supports:: [[Rendering]]
+  - relatedTo:: [[GPU]]
+  - relatedTo:: [[Parallel Computing]]
+  - bridgesTo:: [[Vertex Shader]]
+  - bridgesTo:: [[Fragment Shader]]
+  - subClassOf:: [[High Performance Computing]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

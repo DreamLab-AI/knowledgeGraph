@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:flat-panel-display",
+  "title": "Flat Panel Display",
+  "slug": "flat-panel-display",
+  "public": true,
+  "classIri": "urn:ngm:class:flat-panel-display",
+  "domain": "spatial-computing",
+  "definition": "A flat panel display is a thin, lightweight electronic display that produces images on a flat surface using technologies such as liquid crystal, organic light-emitting diode or micro-LED panels. It contrasts with bulky cathode-ray-tube displays and forms the dominant display category for monitors, mobile devices and near-eye optics in head-mounted hardware. Key characteristics include resolution, refresh rate, contrast and pixel density.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:display-technology",
+      "label": "Display Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

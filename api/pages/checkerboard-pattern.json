@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:checkerboard-pattern",
+  "title": "Checkerboard Pattern",
+  "slug": "checkerboard-pattern",
+  "public": true,
+  "classIri": "urn:ngm:class:checkerboard-pattern",
+  "domain": "spatial-computing",
+  "definition": "A checkerboard pattern is a planar grid of alternating black and white squares used as a calibration target in computer vision. Its regularly spaced corners are easy to detect with sub-pixel accuracy and have precisely known relative positions, providing reliable correspondences for estimating camera parameters. The checkerboard is the most common target for intrinsic calibration, distortion correction, and stereo rig alignment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:optical-calibration-target",
+      "label": "Optical Calibration Target"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:lens-distortion-correction",
+        "label": "Lens Distortion Correction"
+      },
+      {
+        "id": "urn:ngm:class:camera-intrinsics",
+        "label": "Camera Intrinsics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:fiducial-marker",
+        "label": "Fiducial Marker"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:feature-detection",
+        "label": "Feature Detection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:optical-calibration-target",
+        "label": "Optical Calibration Target"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:homography",
+        "label": "Homography"
+      },
+      {
+        "id": "urn:ngm:class:fiducial-marker",
+        "label": "Fiducial Marker"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

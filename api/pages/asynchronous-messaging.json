@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:asynchronous-messaging",
+  "title": "Asynchronous Messaging",
+  "slug": "asynchronous-messaging",
+  "public": true,
+  "classIri": "urn:ngm:class:asynchronous-messaging",
+  "domain": "infrastructure",
+  "definition": "Asynchronous Messaging is a communication pattern in which a sender dispatches a message to an intermediary and continues processing without waiting for the receiver to respond. Messages are buffered in queues or brokers and consumed when downstream services are ready, decoupling producers from consumers in time and load. This pattern improves resilience, scalability and fault tolerance in distributed and event-driven architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:message-queue",
+      "label": "Message Queue"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rabbitmq",
+        "label": "Rabbitmq"
+      },
+      {
+        "id": "urn:ngm:class:apache-kafka",
+        "label": "Apache Kafka"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:synchronous-communication",
+        "label": "Synchronous Communication"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:message-broker",
+        "label": "Message Broker"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:webhook",
+        "label": "Webhook"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:amqp",
+        "label": "AMQP"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

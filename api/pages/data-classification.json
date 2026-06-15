@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:data-classification",
+  "title": "Data Classification",
+  "slug": "data-classification",
+  "public": true,
+  "classIri": "urn:ngm:class:data-classification",
+  "domain": "governance",
+  "definition": "Data classification is the process of organising data into categories based on its sensitivity, value and regulatory obligations, so that appropriate handling, protection and access controls can be applied consistently. Typical schemes assign labels such as public, internal, confidential and restricted, which then drive encryption, retention, sharing and disposal rules. It is a foundational activity in data governance and information security, enabling organisations to prioritise protection of their most sensitive information and to demonstrate regulatory compliance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:data-lifecycle",
+        "label": "Data Lifecycle"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:data-loss-prevention",
+        "label": "Data Loss Prevention"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-stewardship",
+        "label": "Data Stewardship"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-governance-framework",
+        "label": "Data Governance Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-lifecycle",
+        "label": "Data Lifecycle"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    }
+  ]
+}

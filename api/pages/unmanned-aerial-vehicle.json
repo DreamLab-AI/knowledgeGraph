@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:unmanned-aerial-vehicle",
+  "title": "Unmanned Aerial Vehicle",
+  "slug": "unmanned-aerial-vehicle",
+  "public": true,
+  "classIri": "urn:ngm:class:unmanned-aerial-vehicle",
+  "domain": "robotics",
+  "definition": "An Unmanned Aerial Vehicle (UAV), commonly called a drone, is an aircraft that operates without an onboard human pilot, controlled either remotely or autonomously by onboard flight software. UAVs integrate flight control, navigation, sensing and communication subsystems to perform tasks ranging from aerial imaging to delivery and inspection. They span scales from small quadcopters to fixed-wing platforms and increasingly rely on autonomy for navigation and obstacle avoidance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:remote-sensing",
+        "label": "Remote Sensing"
+      },
+      {
+        "id": "urn:ngm:class:precision-agriculture",
+        "label": "Precision Agriculture"
+      },
+      {
+        "id": "urn:ngm:class:surveillance",
+        "label": "Surveillance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robot",
+        "label": "Robot"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "Gps"
+      },
+      {
+        "id": "urn:ngm:class:lidar",
+        "label": "Lidar"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:mapping",
+        "label": "Mapping"
+      },
+      {
+        "id": "urn:ngm:class:obstacle-avoidance",
+        "label": "Obstacle Avoidance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quadcopter",
+        "label": "Quadcopter"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

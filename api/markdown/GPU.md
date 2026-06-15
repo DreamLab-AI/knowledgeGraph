@@ -105,7 +105,7 @@ public:: true
         "label": "Ray Tracing"
       },
       {
-        "@id": "urn:ngm:class:deep-learning-training",
+        "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning Training"
       },
       {

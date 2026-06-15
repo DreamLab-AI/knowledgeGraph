@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:grid-search",
+  "title": "Grid Search",
+  "slug": "grid-search",
+  "public": true,
+  "classIri": "urn:ngm:class:grid-search",
+  "domain": "machine-learning",
+  "definition": "Grid search is a hyperparameter-optimisation method that exhaustively evaluates every combination of values drawn from a predefined discrete grid over the hyperparameter space. Each candidate configuration is trained and scored, typically using cross-validation, and the best-performing combination is selected. Grid search is simple and fully parallelisable but scales exponentially with the number of hyperparameters.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hyperparameter-optimisation",
+      "label": "Hyperparameter Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:search-space",
+        "label": "Search Space"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:random-search",
+        "label": "Random Search"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross Validation"
+      },
+      {
+        "id": "urn:ngm:class:search-space",
+        "label": "Search Space"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:random-search",
+        "label": "Random Search"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

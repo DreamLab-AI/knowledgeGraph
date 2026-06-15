@@ -119,10 +119,6 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:alphabet-inc",
-        "label": "Alphabet Inc"
-      },
-      {
         "@id": "urn:ngm:class:ai-ecosystem",
         "label": "Google AI Ecosystem"
       }

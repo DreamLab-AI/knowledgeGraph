@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:holographic-rendering",
+  "title": "Holographic Rendering",
+  "slug": "holographic-rendering",
+  "public": true,
+  "classIri": "urn:ngm:class:holographic-rendering",
+  "domain": "metaverse",
+  "definition": "Holographic rendering is the process of computing and displaying imagery that reconstructs a light field so that virtual content appears with genuine depth, parallax, and view-dependent shading. Unlike conventional flat-screen rendering, it produces multiple correct perspectives across a viewing volume, allowing observers to perceive three-dimensional structure without stereoscopic eyewear or with depth cues that match natural accommodation. It combines light-field computation, display technology, and real-time graphics pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:holography",
+      "label": "Holography"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:light-field",
+        "label": "Light Field"
+      },
+      {
+        "id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:immersive-experience",
+        "label": "Immersive Experience"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:light-field-display",
+        "label": "Light-Field Display"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    }
+  ]
+}

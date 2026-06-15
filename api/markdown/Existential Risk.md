@@ -98,10 +98,6 @@ public:: true
       {
         "@id": "urn:ngm:class:regulation",
         "label": "Biosafety Regulation"
-      },
-      {
-        "@id": "urn:ngm:class:international-coordination",
-        "label": "International Coordination"
       }
     ],
     "bridgesTo": [

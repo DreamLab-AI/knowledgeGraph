@@ -157,7 +157,7 @@ public:: true
         "label": "CLIP"
       },
       {
-        "@id": "urn:ngm:class:model-hub",
+        "@id": "urn:ngm:class:hugging-face-model-hub",
         "label": "Model Hub"
       }
     ],

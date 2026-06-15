@@ -1,0 +1,39 @@
+- ### Definition
+- A cybersecurity policy is a [[Policy]] instrument that governs how systems, data, and networks are protected from threats. It encodes [[Risk Management]] decisions and legal duties into rules spanning [[Access Control]], [[Incident Response]], and acceptable use, and is a building block of [[Digital Governance]].
+- ### Overview
+- Organisational cybersecurity policy sets the standards, responsibilities, and controls that operationalise an entity's risk posture and align it with frameworks and regulation.
+- National cybersecurity policy and strategy define how a jurisdiction protects critical infrastructure, coordinates response, and regulates the security obligations of operators and providers.
+- Effective policy is living: it is reviewed against evolving threats, audited for [[Compliance]], and refined through lessons learned from incidents and assessments.
+- ### Key aspects
+- Defined roles, responsibilities, and accountability for security.
+- Control objectives for access, data protection, and acceptable use.
+- Alignment with a recognised governance framework and regulation.
+- Incident handling, reporting, and escalation procedures.
+- Periodic review against risk assessments and threat intelligence.
+- ### Applications
+- Codifying [[Access Control]] and data-handling standards across an organisation.
+- Guiding [[Incident Response]] and breach-notification obligations.
+- Demonstrating [[Regulatory Compliance]] to auditors and regulators.
+- Shaping national strategy protecting critical infrastructure and [[National Security]].
+- ### Relationships
+- subClassOf:: [[Policy]]
+- hasPart:: [[Security Policy]]
+- hasPart:: [[Access Control]]
+- enables:: [[Compliance]]
+- enables:: [[Regulatory Compliance]]
+- requires:: [[Risk Management]]
+- requires:: [[Threat Modelling]]
+- supports:: [[Incident Response]]
+- supports:: [[Vulnerability Management]]
+- uses:: [[Encryption]]
+- implements:: [[Governance Framework]]
+- bridgesTo:: [[Digital Governance]]
+- bridgesTo:: [[Regulation]]
+- dependsOn:: [[Cybersecurity]]
+- relatedTo:: [[National Security]]
+- relatedTo:: [[Privacy]]
+- relatedTo:: [[Network Security]]
+- ### Provenance
+- updated:: 2026-06-15
+- generatedBy:: GapMaterialisation
+- attributedTo:: did:nostr:ontology-mesh

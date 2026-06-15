@@ -1,0 +1,33 @@
+- ### Definition
+- ACID transactions provide atomicity, consistency, isolation and durability guarantees over a unit of [[Database]] work, implementing [[Data Integrity]] in a [[Database Management System]].
+- They are the reliability foundation of [[Relational Database]] systems.
+- ### Overview
+- A transaction groups multiple operations so they take effect as an indivisible whole; if any part fails, the entire transaction is rolled back to its prior state.
+- Isolation levels govern how concurrent transactions observe one another, trading strictness against throughput, while durability is secured through techniques such as write-ahead logging.
+- These guarantees free application developers from reasoning about partial failures and races in shared data.
+- ### Key aspects
+- Atomicity: all-or-nothing execution with rollback on failure.
+- Consistency: transitions only between valid database states.
+- Isolation: concurrent transactions appear to run serially.
+- Durability: committed effects persist through crashes.
+- ### Mechanisms
+- Logging and recovery (write-ahead logs), concurrency control (locking or multiversioning), and commit protocols such as two-phase commit for distributed cases.
+- ### Applications
+- Financial ledgers and payment processing requiring exactness.
+- Inventory and order management with concurrent updates.
+- Any [[SQL]]-driven system needing reliable multi-step updates.
+- Distributed transactions coordinated via [[Two-Phase Commit]].
+- ### Relationships
+- implements:: [[Data Integrity]]
+- uses:: [[Two-Phase Commit]]
+- uses:: [[Write-Ahead Logging]]
+- dependsOn:: [[Database Management System]]
+- dependsOn:: [[Write-Ahead Logging]]
+- requires:: [[Database]]
+- hasPart:: [[Two-Phase Commit]]
+- enables:: [[Relational Database]]
+- supports:: [[SQL]]
+- relatedTo:: [[Centralised Database]]
+- relatedTo:: [[Data]]
+- ### Provenance
+- updated:: 2026-06-15

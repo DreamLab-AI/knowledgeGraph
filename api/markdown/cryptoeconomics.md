@@ -1,0 +1,39 @@
+- ### Definition
+- [[Cryptoeconomics]] fuses [[Cryptography]] with economic incentives to secure decentralised systems whose participants act in self-interest.
+- It applies [[Mechanism Design]] and [[Game Theory]] to make honest behaviour the rational choice.
+- The field underpins [[Consensus Mechanism]] design and [[Token Economics]] in blockchain networks.
+- ### Overview
+- Cryptoeconomics treats a decentralised protocol as a game in which anonymous, profit-seeking participants choose strategies. By aligning rewards and penalties with desirable behaviour, it makes following the protocol more profitable than attacking it, even when no central authority polices conduct.
+- Cryptography provides the enforcement primitives, such as signatures, hashing, and commitment schemes, that make rules tamper-evident and identities accountable. Economic mechanisms then supply the motivation, using staking, slashing, block rewards, and fees to reward honest validation and punish deviation.
+- The discipline gives protocol designers tools to reason about security in terms of cost-of-attack and economic guarantees rather than purely cryptographic hardness. It explains why proof-of-stake validators behave honestly, how Sybil resistance is bought with scarce resources, and how token economies sustain network participation.
+- ### Mechanisms
+- Incentive alignment: structuring rewards so the dominant strategy is honest participation.
+- Penalty and slashing: imposing economic losses on provable misbehaviour to deter attacks.
+- Sybil resistance: requiring scarce resources such as stake or work to gain influence.
+- Cost-of-attack analysis: quantifying the economic price of subverting consensus.
+- Token-based coordination: using tokens to fund security and reward useful contributions.
+- ### Applications
+- Securing [[Proof of Stake]] networks through [[Staking]] and slashing incentives.
+- Designing [[Consensus Mechanism]] rules that achieve [[Sybil Resistance]].
+- Structuring incentives for [[Decentralised Finance]] protocols and [[Smart Contract]] systems.
+- Informing [[Blockchain Governance]] and [[DAO]] reward and voting design.
+- ### Relationships
+- dependsOn:: [[Mechanism Design]]
+- dependsOn:: [[Game Theory]]
+- dependsOn:: [[Cryptography]]
+- bridgesTo:: [[Game Theory]]
+- bridgesTo:: [[Economic Security]]
+- uses:: [[Token Economics]]
+- uses:: [[Tokenomics]]
+- enables:: [[Consensus Mechanism]]
+- enables:: [[Sybil Resistance]]
+- enables:: [[Proof of Stake]]
+- supports:: [[Decentralised Finance]]
+- supports:: [[Blockchain Governance]]
+- requires:: [[Mechanism Design]]
+- relatedTo:: [[Smart Contract]]
+- relatedTo:: [[Staking]]
+- relatedTo:: [[DAO]]
+- partOf:: [[Blockchain]]
+- ### Provenance
+- updated:: 2026-06-15

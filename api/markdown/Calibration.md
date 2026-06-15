@@ -63,7 +63,7 @@ public:: true
         "label": "Reference Standard"
       },
       {
-        "@id": "urn:ngm:class:ground-truth",
+        "@id": "urn:ngm:class:ground-truth-labels",
         "label": "Ground Truth"
       }
     ],
@@ -129,7 +129,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:validation",
+        "@id": "urn:ngm:class:validation-process",
         "label": "Validation"
       },
       {

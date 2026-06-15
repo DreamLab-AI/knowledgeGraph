@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:statistical-process-control",
+  "title": "Statistical Process Control",
+  "slug": "statistical-process-control",
+  "public": true,
+  "classIri": "urn:ngm:class:statistical-process-control",
+  "domain": "infrastructure",
+  "definition": "Statistical Process Control (SPC) is a quality-control methodology that applies statistical methods to monitor and control a manufacturing or service process. By tracking process variation over time against statistically derived control limits, SPC distinguishes ordinary common-cause variation from assignable special-cause variation, enabling operators to intervene only when a process is genuinely out of control. It underpins continuous improvement and defect prevention in industrial production.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quality-control",
+      "label": "Quality Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:industrial-inspection",
+        "label": "Industrial Inspection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:process-control",
+        "label": "Process Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
+      },
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

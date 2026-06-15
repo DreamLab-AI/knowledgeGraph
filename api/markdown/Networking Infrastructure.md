@@ -144,7 +144,7 @@ public:: true
         "label": "IETF"
       },
       {
-        "@id": "urn:ngm:class:ieee-802",
+        "@id": "urn:ngm:class:ieee-802-x",
         "label": "IEEE 802"
       },
       {

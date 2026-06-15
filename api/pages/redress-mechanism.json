@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:redress-mechanism",
+  "title": "Redress Mechanism",
+  "slug": "redress-mechanism",
+  "public": true,
+  "classIri": "urn:ngm:class:redress-mechanism",
+  "domain": "artificial-intelligence",
+  "definition": "A redress mechanism is a structured process that lets individuals affected by an automated or algorithmic decision contest it, seek an explanation, and obtain correction or remedy when harm or error has occurred. It operationalises accountability in AI governance by combining channels for complaint, human review of contested outcomes, and remediation such as reversal, compensation, or model adjustment. Effective redress requires transparency about how decisions are made, due process for the affected person, and feedback loops that surface systemic problems for harm mitigation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:accountability",
+      "label": "Accountability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

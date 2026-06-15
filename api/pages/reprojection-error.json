@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:reprojection-error",
+  "title": "Reprojection Error",
+  "slug": "reprojection-error",
+  "public": true,
+  "classIri": "urn:ngm:class:reprojection-error",
+  "domain": "spatial-computing",
+  "definition": "Reprojection error is the geometric distance, in image pixels, between an observed feature point and the position predicted by projecting its estimated three-dimensional point back through the estimated camera model. It serves as the primary residual minimised in camera calibration, pose estimation and bundle adjustment, where the sum of squared reprojection errors quantifies how well the reconstructed geometry explains the measurements. Low reprojection error indicates a consistent, well-calibrated reconstruction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:camera-calibration",
+      "label": "Camera Calibration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure From Motion"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:bundle-adjustment",
+        "label": "Bundle Adjustment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:sensor-calibration",
+        "label": "Sensor Calibration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    }
+  ]
+}

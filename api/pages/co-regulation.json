@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:co-regulation",
+  "title": "Co Regulation",
+  "slug": "co-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:co-regulation",
+  "domain": "governance",
+  "definition": "Co-regulation is a governance model in which statutory authorities and industry actors jointly develop and enforce rules, blending the legitimacy and backstop powers of the state with the technical expertise and agility of the regulated sector. It sits between command-and-control regulation and pure self-regulation: codes of practice drafted by industry are approved and overseen by a public regulator that retains enforcement powers. The approach is common in online safety, broadcasting and data protection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-framework",
+      "label": "Regulatory Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:centralised-finance",
+        "label": "Centralised Finance"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:transparency-reporting",
+        "label": "Transparency Reporting"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ofcom",
+        "label": "Ofcom"
+      },
+      {
+        "id": "urn:ngm:class:uk-online-safety-act",
+        "label": "UK Online Safety Act"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    }
+  ]
+}

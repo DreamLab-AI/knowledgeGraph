@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:origin-server",
+  "title": "Origin Server",
+  "slug": "origin-server",
+  "public": true,
+  "classIri": "urn:ngm:class:origin-server",
+  "domain": "infrastructure",
+  "definition": "An origin server is the authoritative source of truth for web content, hosting the original, canonical version of resources that a content delivery network and its edge caches replicate and serve to end users. When an edge node lacks a requested resource or its cached copy has expired, it fetches the content from the origin server. By concentrating authoritative content and offloading repeat delivery to caches, the origin-edge model improves performance, scalability, and resilience.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cdn",
+      "label": "CDN"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      },
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:edge-server",
+        "label": "Edge Server"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "CDN"
+      },
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cdn",
+        "label": "CDN"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reverse-proxy",
+        "label": "Reverse Proxy"
+      },
+      {
+        "id": "urn:ngm:class:edge-server",
+        "label": "Edge Server"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "content-delivery-network-cdn",
+      "label": "Content Delivery Network (CDN)"
+    }
+  ]
+}

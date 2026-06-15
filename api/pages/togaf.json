@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:togaf",
+  "title": "Togaf",
+  "slug": "togaf",
+  "public": true,
+  "classIri": "urn:ngm:class:togaf",
+  "domain": "governance",
+  "definition": "TOGAF, The Open Group Architecture Framework, is a widely adopted methodology and framework for designing, planning, implementing and governing enterprise information architecture. Its core is the Architecture Development Method, an iterative cycle covering business, data, application and technology architecture. TOGAF provides a common vocabulary, reference models and governance structures that align IT strategy with business objectives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:enterprise-integration",
+        "label": "Enterprise Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:enterprise-integration",
+        "label": "Enterprise Integration"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:enterprise-integration",
+        "label": "Enterprise Integration"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:specification",
+        "label": "Specification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:strategic-planning",
+        "label": "Strategic Planning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards-documentation",
+        "label": "Standards Documentation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:strategic-planning",
+        "label": "Strategic Planning"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-conformance",
+        "label": "Regulatory Conformance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

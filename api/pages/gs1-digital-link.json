@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:gs1-digital-link",
+  "title": "Gs1 Digital Link",
+  "slug": "gs1-digital-link",
+  "public": true,
+  "classIri": "urn:ngm:class:gs1-digital-link",
+  "domain": "standards",
+  "definition": "GS1 Digital Link is a standard that expresses GS1 identifiers, such as the Global Trade Item Number, as web URIs so that a single QR code or data carrier can connect a physical product to multiple online resources. A resolver service interprets the URI and routes requests to information such as product details, instructions, provenance, or recycling guidance. It bridges traditional barcodes with the web and semantic data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gs1",
+      "label": "GS1"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:uri",
+        "label": "URI"
+      },
+      {
+        "id": "urn:ngm:class:resolver",
+        "label": "Resolver"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      },
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-provenance",
+        "label": "Supply Chain Provenance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:qr-code",
+        "label": "QR Code"
+      },
+      {
+        "id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "id": "urn:ngm:class:uri",
+        "label": "URI"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:gs1",
+        "label": "GS1"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:resolver",
+        "label": "Resolver"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    }
+  ]
+}

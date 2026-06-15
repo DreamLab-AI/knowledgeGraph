@@ -1,0 +1,37 @@
+- ### Definition
+  - Hybrid work is a working model that combines on-site presence with remote work, allowing employees to split their time between a central workplace and distributed locations. It blends synchronous in-person collaboration with asynchronous and video-mediated coordination, and depends on digital collaboration tooling to keep co-located and remote participants on equal footing. Hybrid work has become a default operating model for many knowledge organisations seeking flexibility without abandoning physical workspace.
+  - [[Remote Work]] [[Distributed Collaboration]] [[Video Conferencing]] [[Asynchronous Communication]]
+- ### Overview
+  - Hybrid work distributes an organisation's time and attention across two modes: scheduled or ad-hoc presence in a shared workplace, and remote work from home or other locations. The model seeks the strengths of each, reserving in-person time for high-bandwidth activities such as workshops, onboarding and relationship-building while using asynchronous communication and video conferencing for routine coordination. Its central design challenge is meeting equity, ensuring remote participants are not disadvantaged relative to those in the room. Success depends on documented decisions, shared digital artefacts, clear norms about which interactions happen synchronously, and tooling that treats every participant as a first-class contributor regardless of location.
+- ### Key aspects
+  - Splits work between a central workplace and remote locations.
+  - Reserves in-person time for high-bandwidth collaborative activities.
+  - Relies on asynchronous communication for routine coordination across time zones.
+  - Requires deliberate meeting equity so remote staff are not disadvantaged.
+  - Depends on shared digital artefacts and clear synchronous-versus-async norms.
+- ### Applications
+  - Knowledge-work organisations balancing flexibility and culture.
+  - Distributed engineering teams using agile ceremonies across locations.
+  - Cross-time-zone product and design collaboration.
+  - Onboarding and workshops anchored by occasional in-person gatherings.
+- ### Relationships
+  - subClassOf:: [[Remote Work]]
+  - partOf:: [[Distributed Collaboration]]
+  - relatedTo:: [[Remote Work]]
+  - relatedTo:: [[Distributed Team Collaboration]]
+  - relatedTo:: [[Collaboration]]
+  - relatedTo:: [[Project Management]]
+  - enables:: [[Asynchronous Communication]]
+  - requires:: [[Video Conferencing]]
+  - uses:: [[Collaborative Whiteboard]]
+  - uses:: [[Slack]]
+  - uses:: [[Microsoft Teams]]
+  - supports:: [[Agile Software Development]]
+  - supports:: [[Collaboration]]
+  - bridgesTo:: [[Distributed Team Collaboration]]
+  - bridgesTo:: [[Distributed Collaboration]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

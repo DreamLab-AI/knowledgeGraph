@@ -69,7 +69,7 @@ alias:: HardwareAbstractionLayer
         "label": "Operating System"
       },
       {
-        "@id": "urn:ngm:class:software-portability",
+        "@id": "urn:ngm:class:portability",
         "label": "Software Portability"
       },
       {

@@ -517,7 +517,7 @@ alias:: MixedReality
         "label": "Inside-Out Tracking"
       },
       {
-        "@id": "urn:ngm:class:scene-reconstruction",
+        "@id": "urn:ngm:class:3-d-scene-reconstruction",
         "label": "Scene Reconstruction"
       },
       {

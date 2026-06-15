@@ -78,7 +78,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:software-portability",
+        "@id": "urn:ngm:class:portability",
         "label": "Software Portability"
       },
       {

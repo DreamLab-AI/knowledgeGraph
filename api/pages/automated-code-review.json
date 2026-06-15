@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:automated-code-review",
+  "title": "Automated Code Review",
+  "slug": "automated-code-review",
+  "public": true,
+  "classIri": "urn:ngm:class:automated-code-review",
+  "domain": "artificial-intelligence",
+  "definition": "Automated code review is the use of software tools, static analysis and, increasingly, large language models to inspect source code for defects, style violations, security weaknesses and maintainability issues without requiring manual reading of every change. It augments or partially replaces human review by surfacing actionable findings directly in pull requests and continuous integration pipelines. Modern systems combine rule-based linters with learned models that reason about code intent and propose fixes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:code-review",
+      "label": "Code Review"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:code-review",
+        "label": "Code Review"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:technical-debt",
+        "label": "Technical Debt"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    }
+  ]
+}

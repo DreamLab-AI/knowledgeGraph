@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:energy-storage",
+  "title": "Energy Storage",
+  "slug": "energy-storage",
+  "public": true,
+  "classIri": "urn:ngm:class:energy-storage",
+  "domain": "infrastructure",
+  "definition": "Energy storage is the capture of energy produced at one time for use at a later time, balancing supply and demand across electrical, mechanical, thermal, and chemical media. In power systems it smooths the variability of renewable generation, provides grid services such as frequency regulation, and improves resilience. Technologies range from electrochemical batteries and pumped hydro to thermal and hydrogen storage.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:power-systems",
+      "label": "Power Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      },
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:electric-vehicle",
+        "label": "Electric Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:power-grid",
+        "label": "Power Grid"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    }
+  ]
+}

@@ -162,7 +162,7 @@ public:: true
         "label": "Data Drift"
       },
       {
-        "@id": "urn:ngm:class:ab-testing",
+        "@id": "urn:ngm:class:a-b-testing",
         "label": "A/B Testing"
       },
       {

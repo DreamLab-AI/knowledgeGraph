@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:self-service-analytics",
+  "title": "Self Service Analytics",
+  "slug": "self-service-analytics",
+  "public": true,
+  "classIri": "urn:ngm:class:self-service-analytics",
+  "domain": "data",
+  "definition": "Self-service analytics is an approach that empowers business users to explore data, build reports, and answer their own questions through governed, accessible tools without depending on specialist data teams for every request. It combines intuitive interfaces, curated and trustworthy data sources, and embedded governance so that broad access does not compromise consistency or security. The aim is to accelerate decision-making and foster data literacy across an organisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-analytics",
+      "label": "Data Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decision-support",
+        "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
+      },
+      {
+        "id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:sql",
+        "label": "SQL"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      },
+      {
+        "id": "urn:ngm:class:olap",
+        "label": "Olap"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-fabric-architecture",
+      "label": "Data Fabric Architecture"
+    }
+  ]
+}

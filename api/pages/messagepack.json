@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:messagepack",
+  "title": "Messagepack",
+  "slug": "messagepack",
+  "public": true,
+  "classIri": "urn:ngm:class:messagepack",
+  "domain": "infrastructure",
+  "definition": "MessagePack is a binary data serialisation format that encodes structured data compactly while preserving a data model compatible with JSON, allowing maps, arrays, strings, integers, and floats to be transmitted in far fewer bytes than their textual equivalents. It uses a type-prefixed encoding that minimises overhead, making it well-suited to high-throughput messaging, caching, and inter-service communication. MessagePack trades human readability for speed and compactness, sitting between verbose JSON and schema-bound formats like Protocol Buffers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-serialization",
+      "label": "Data Serialization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON Data Interchange Format"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffer",
+        "label": "Protocol Buffer"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:binary-encoding",
+        "label": "Binary Encoding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:json-data-interchange-format",
+        "label": "JSON Data Interchange Format"
+      },
+      {
+        "id": "urn:ngm:class:cbor",
+        "label": "CBOR"
+      },
+      {
+        "id": "urn:ngm:class:protocol-buffer",
+        "label": "Protocol Buffer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

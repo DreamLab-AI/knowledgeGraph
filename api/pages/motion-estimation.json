@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:motion-estimation",
+  "title": "Motion Estimation",
+  "slug": "motion-estimation",
+  "public": true,
+  "classIri": "urn:ngm:class:motion-estimation",
+  "domain": "infrastructure",
+  "definition": "Motion estimation is the process of determining motion vectors that describe how regions of one video frame map to corresponding regions in another, capturing the apparent movement of objects and the camera between frames. It is the computational heart of inter-frame video compression, where predicting a block from a previously coded frame removes temporal redundancy. The same techniques underpin optical-flow analysis and frame interpolation in computer vision.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:video-compression",
+      "label": "Video Compression"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      },
+      {
+        "id": "urn:ngm:class:bitrate",
+        "label": "Bitrate"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:lossy-compression",
+        "label": "Lossy Compression"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:image-compression",
+        "label": "Image Compression"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:video-codec",
+        "label": "Video Codec"
+      },
+      {
+        "id": "urn:ngm:class:hevc",
+        "label": "HEVC"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:video-compression",
+        "label": "Video Compression"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:codec",
+        "label": "Codec"
+      },
+      {
+        "id": "urn:ngm:class:entropy-coding",
+        "label": "Entropy Coding"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

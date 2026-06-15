@@ -1,0 +1,40 @@
+- ### Definition
+- Kernel fusion merges multiple consecutive accelerator operations into a single [[CUDA]] kernel, removing redundant reads and writes to global memory. It operates over a [[Computation Graph]] and is a core form of [[Operator Fusion]] used to raise effective [[Throughput]] on GPUs.
+- By keeping intermediate values in registers or shared memory rather than spilling to slow device memory, fusion directly attacks the [[Memory Bandwidth]] bottleneck that dominates many deep-learning workloads.
+- ### Overview
+- Modern neural networks express computation as graphs of small operators such as adds, multiplies, activations and normalisations. Executed naively, each operator launches its own kernel and round-trips data through global memory.
+- A fusion pass identifies chains of compatible operators and emits one kernel that performs them in sequence, so each element is loaded once, transformed entirely, and written once.
+- Fusion is implemented in deep-learning compilers and runtimes that lower a high-level [[Computation Graph]] into optimised device code.
+- The payoff is largest for memory-bound elementwise and reduction sequences, where launch overhead and bandwidth, not floating-point throughput, are the limiting factors.
+- ### Mechanisms
+- Graph analysis: the compiler partitions the operator graph into fusible regions based on data-dependency and hardware constraints.
+- Code generation: a single kernel is synthesised that streams inputs through the fused operator chain.
+- Memory locality: intermediates remain in registers or shared memory, avoiding [[Memory Bandwidth]]-limited global traffic.
+- Launch reduction: fewer kernel launches cut driver and scheduling overhead, lowering [[Latency]].
+- Hardware mapping: fused kernels can be tuned to exploit [[Tensor Core]] units and warp-level parallelism.
+- ### Applications
+- Accelerating [[Transformer Architecture]] attention and feed-forward blocks via fused softmax, matmul and normalisation.
+- Speeding up [[Inference Optimisation]] pipelines for low-latency serving.
+- Reducing energy per inference by minimising data movement.
+- Improving training step time on bandwidth-bound layers.
+- ### Relationships
+- subClassOf:: [[GPU Acceleration]]
+- uses:: [[CUDA]]
+- uses:: [[Computation Graph]]
+- implements:: [[Operator Fusion]]
+- enables:: [[Inference Optimisation]]
+- requires:: [[Computation Graph]]
+- dependsOn:: [[Memory Bandwidth]]
+- supports:: [[Inference Optimisation]]
+- partOf:: [[GPU Acceleration]]
+- uses:: [[Tensor Core]]
+- contrastsWith:: [[Pruning]]
+- bridgesTo:: [[Parallel Computing]]
+- relatedTo:: [[Tensor Core]]
+- relatedTo:: [[Throughput]]
+- relatedTo:: [[Latency]]
+- relatedTo:: [[Transformer Architecture]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

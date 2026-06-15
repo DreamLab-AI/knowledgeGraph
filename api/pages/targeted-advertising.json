@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:targeted-advertising",
+  "title": "Targeted Advertising",
+  "slug": "targeted-advertising",
+  "public": true,
+  "classIri": "urn:ngm:class:targeted-advertising",
+  "domain": "governance",
+  "definition": "Targeted advertising is the practice of delivering advertisements to specific individuals or audience segments selected on the basis of inferred characteristics, behaviour, or context. It relies on collecting and analysing personal data to predict which users are most likely to respond, and on automated systems that match adverts to audiences in real time. Because it depends on extensive data collection and profiling, targeted advertising sits at the centre of debates about privacy, consent, and the governance of digital platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:advertising",
+      "label": "Advertising"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:programmatic-advertising",
+        "label": "Programmatic Advertising"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:surveillance-capitalism",
+        "label": "Surveillance Capitalism"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-society-surveillance",
+      "label": "Digital Society Surveillance"
+    }
+  ]
+}

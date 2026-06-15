@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:foreign-exchange-market",
+  "title": "Foreign Exchange Market",
+  "slug": "foreign-exchange-market",
+  "public": true,
+  "classIri": "urn:ngm:class:foreign-exchange-market",
+  "domain": "finance",
+  "definition": "The foreign exchange market is the global, decentralised marketplace in which national currencies are bought, sold and exchanged at floating or managed rates. It is the largest and most liquid financial market in the world, operating continuously across major trading centres and enabling international trade, investment and the conversion of one fiat currency into another. Exchange rates set in this market influence cross-border payments, monetary policy transmission and international price competitiveness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monetary-system",
+      "label": "Monetary System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:payment-settlement",
+        "label": "Payment Settlement"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      },
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      },
+      {
+        "id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:liquidity-provision",
+        "label": "Liquidity Provision"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy-transmission",
+        "label": "Monetary Policy Transmission"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:exchange-mechanism",
+        "label": "Exchange Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:financial-trading",
+        "label": "Financial Trading"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

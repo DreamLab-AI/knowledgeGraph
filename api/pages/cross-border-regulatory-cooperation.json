@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:cross-border-regulatory-cooperation",
+  "title": "Cross Border Regulatory Cooperation",
+  "slug": "cross-border-regulatory-cooperation",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-border-regulatory-cooperation",
+  "domain": "finance",
+  "definition": "Cross-border regulatory cooperation is the coordination of financial supervision, rule-making and enforcement across national jurisdictions to manage activities and risks that span borders. It operates through memoranda of understanding, supervisory colleges, information-sharing arrangements, mutual recognition and common standards set by international bodies. By aligning approaches to systemic risk, anti-money-laundering and cross-border payments, it reduces regulatory arbitrage and supports consistent oversight of globally active firms and markets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:standards-organization",
+        "label": "Standards Organization"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:fsb",
+        "label": "FSB"
+      },
+      {
+        "id": "urn:ngm:class:g20",
+        "label": "G20"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fsb",
+        "label": "FSB"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

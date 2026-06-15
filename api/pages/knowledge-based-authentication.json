@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:knowledge-based-authentication",
+  "title": "Knowledge Based Authentication",
+  "slug": "knowledge-based-authentication",
+  "public": true,
+  "classIri": "urn:ngm:class:knowledge-based-authentication",
+  "domain": "security",
+  "definition": "Knowledge-Based Authentication (KBA) verifies identity by challenging a user to supply information presumed known only to them, such as a password, PIN, or answers to security questions. Static KBA uses pre-registered secrets, while dynamic KBA generates questions from third-party records at challenge time. Because the underlying secrets can be guessed, phished, or harvested through social engineering, KBA is increasingly supplemented or replaced by possession- and biometric-based factors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multi-factor-authentication",
+      "label": "Multi-Factor Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:password-authentication",
+        "label": "Password Authentication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:password-authentication",
+        "label": "Password Authentication"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust",
+        "label": "Zero Trust"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:identity-verification",
+        "label": "Identity Verification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:social-engineering",
+        "label": "Social Engineering"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    }
+  ]
+}

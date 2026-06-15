@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:priority-queue",
+  "title": "Priority Queue",
+  "slug": "priority-queue",
+  "public": true,
+  "classIri": "urn:ngm:class:priority-queue",
+  "domain": "artificial-intelligence",
+  "definition": "A priority queue is an abstract data type in which each element has an associated priority and elements are served in order of priority rather than insertion order. It supports insertion of elements and extraction of the highest- (or lowest-) priority element, and is most commonly implemented with a binary heap. Priority queues underpin many graph and scheduling algorithms where the next item to process is the most urgent one.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dijkstra-algorithm",
+        "label": "Dijkstra Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      },
+      {
+        "id": "urn:ngm:class:priority-scheduling",
+        "label": "Priority Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
+      },
+      {
+        "id": "urn:ngm:class:discrete-event-simulation",
+        "label": "Discrete-Event Simulation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:task-scheduling",
+        "label": "Task Scheduling"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dijkstra-algorithm",
+      "label": "Dijkstra Algorithm"
+    }
+  ]
+}

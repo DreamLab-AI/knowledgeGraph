@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:logical-clock",
+  "title": "Logical Clock",
+  "slug": "logical-clock",
+  "public": true,
+  "classIri": "urn:ngm:class:logical-clock",
+  "domain": "infrastructure",
+  "definition": "A logical clock is a mechanism for ordering events in a distributed system without relying on synchronised physical time. It assigns monotonically increasing counters to events so that causal relationships between them can be inferred, supporting the happened-before relation. Logical clocks underpin consistency, coordination and debugging in systems where no global wall-clock can be trusted.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems-theory",
+      "label": "Distributed Systems Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      },
+      {
+        "id": "urn:ngm:class:time-synchronisation",
+        "label": "Time Synchronisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-systems-theory",
+        "label": "Distributed Systems Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:timestamp",
+        "label": "Timestamp"
+      },
+      {
+        "id": "urn:ngm:class:vector-clock",
+        "label": "Vector Clock"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    }
+  ]
+}

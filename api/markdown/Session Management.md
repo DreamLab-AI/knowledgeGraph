@@ -137,10 +137,6 @@ public:: true
       {
         "@id": "urn:ngm:class:stateless-architecture",
         "label": "Stateless Architecture"
-      },
-      {
-        "@id": "urn:ngm:class:anonymous-access",
-        "label": "Anonymous Access"
       }
     ],
     "relatedTo": [

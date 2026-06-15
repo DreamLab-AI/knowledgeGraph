@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:centralised-control",
+  "title": "Centralised Control",
+  "slug": "centralised-control",
+  "public": true,
+  "classIri": "urn:ngm:class:centralised-control",
+  "domain": "governance",
+  "definition": "Centralised control is a governance arrangement in which decision-making authority, coordination, and enforcement are concentrated in a single entity or hierarchy rather than distributed among participants. It offers clarity of accountability and rapid, consistent decisions but introduces a single point of failure and dependence on the controlling party's competence and intentions. Centralised control is the principal foil against which decentralised and distributed governance models define themselves.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:hierarchical-organisation",
+        "label": "Hierarchical Organisation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:single-point-of-failure",
+        "label": "Single Point Of Failure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-governance",
+        "label": "Distributed Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:hierarchical-organisation",
+        "label": "Hierarchical Organisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

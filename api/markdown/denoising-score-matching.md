@@ -1,0 +1,35 @@
+- ### Definition
+  - [[Denoising Score Matching]] is a training objective that learns the score, the gradient of the log density, of a [[Probability Distribution]].
+  - It perturbs data with Gaussian noise and trains a [[Neural Network]] to predict that noise, sidestepping the intractable normalising constant.
+  - It is the learning principle behind score-based and [[Diffusion Model]] generation.
+- ### Overview
+  - Estimating a probability density directly requires its normalising constant, which is intractable for high-dimensional data.
+  - Score matching circumvents this by learning the score function instead, since the score does not depend on the normaliser.
+  - The denoising variant adds known noise and reduces the objective to a simple regression: predict the added noise.
+  - Sampling then follows the learned score, for example via Langevin dynamics or by reversing a noising process.
+- ### Mechanisms
+  - Noise perturbation: data are corrupted at multiple noise scales to cover the distribution broadly.
+  - Score estimation: the model output relates directly to the gradient of the log density of the perturbed data.
+  - Equivalence: minimising the denoising objective is provably equivalent to matching the perturbed-data score.
+  - Iterative sampling: starting from noise, repeated score-guided steps transport samples back toward the data manifold.
+- ### Applications
+  - High-fidelity image, audio and video synthesis through diffusion models.
+  - Conditional generation such as text-to-image and inpainting.
+  - Inverse problems and scientific data generation where the score guides reconstruction.
+  - Likelihood-free density modelling in energy-based and score-based frameworks.
+- ### Relationships
+  - partOf:: [[Diffusion Model]]
+  - implements:: [[Generative Model]]
+  - uses:: [[Neural Network]]
+  - uses:: [[Gradient Descent]]
+  - requires:: [[Probability Distribution]]
+  - requires:: [[Stochastic Process]]
+  - hasPart:: [[Sampling]]
+  - enables:: [[Diffusion Model]]
+  - dependsOn:: [[Stochastic Differential Equation]]
+  - contrastsWith:: [[Variational Autoencoder]]
+  - relatedTo:: [[Markov Chain]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

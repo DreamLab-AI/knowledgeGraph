@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:quorum-system",
+  "title": "Quorum System",
+  "slug": "quorum-system",
+  "public": true,
+  "classIri": "urn:ngm:class:quorum-system",
+  "domain": "distributed-systems",
+  "definition": "A quorum system is a collection of subsets of a distributed set of replicas, where any two subsets are guaranteed to intersect, used to coordinate read and write operations so that consistency is preserved despite failures. By requiring operations to gather acknowledgements from a quorum rather than every replica, the system tolerates a bounded number of faulty or unreachable nodes while still ensuring that conflicting operations observe one another. Quorum systems are foundational to distributed consensus, replicated databases, and Byzantine fault-tolerant protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-consensus",
+      "label": "Distributed Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerant-system",
+        "label": "Byzantine Fault Tolerant System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:pbft",
+        "label": "PBFT"
+      },
+      {
+        "id": "urn:ngm:class:raft-consensus",
+        "label": "Raft Consensus"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:distributed-consensus",
+        "label": "Distributed Consensus"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

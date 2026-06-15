@@ -1,0 +1,34 @@
+- ### Definition
+  - Complex adaptive systems are systems composed of many interacting agents whose collective behaviour emerges from local interactions and adaptation rather than central control.
+  - The agents adjust their behaviour in response to one another and to their environment, producing non-linear dynamics, self-organisation and emergent order.
+  - Studied across biology, economics and artificial intelligence, they provide a lens for understanding resilience, learning and unpredictability in distributed populations.
+  - Related core concepts: [[Complexity Science]] [[Emergence]] [[Systems Theory]] [[Cybernetics]]
+- ### Overview
+  - Macro-level patterns arise bottom-up from many adaptive micro-level agents.
+  - Feedback loops and non-linearity make the whole more than the sum of its parts.
+  - Adaptation lets the system reorganise in response to perturbation, conferring resilience.
+- ### Key aspects
+  - Emergence of global structure from local rules.
+  - Self-organisation without central coordination.
+  - Non-linear feedback and sensitivity to initial conditions.
+  - Co-evolution and adaptation among heterogeneous agents.
+- ### Applications
+  - Modelling ecosystems, markets and social networks.
+  - Agent-based simulation and swarm intelligence.
+  - Designing resilient distributed and multi-agent AI systems.
+- ### Relationships
+  - relatedTo:: [[Cybernetics]]
+  - relatedTo:: [[Systems Theory]]
+  - relatedTo:: [[Chaos Theory]]
+  - partOf:: [[Complexity Science]]
+  - implements:: [[Feedback Loop]]
+  - hasPart:: [[Emergence]]
+  - hasPart:: [[Feedback Loop]]
+  - requires:: [[Systems Theory]]
+  - enables:: [[Emergence]]
+  - bridgesTo:: [[Control Theory]]
+  - uses:: [[Feedback Loop]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

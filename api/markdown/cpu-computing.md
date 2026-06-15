@@ -1,0 +1,41 @@
+- ### Definition
+  - [[CPU Computing]] is the execution of computational workloads on a general-purpose [[Central Processing Unit]], performing instructions across a small number of high-clock cores optimised for low latency and complex control flow.
+  - It contrasts with [[GPU Computing]], which trades single-thread latency for massive [[Parallel Computing]] throughput.
+  - CPUs implement a stored-program model defined by an [[Instruction Set Architecture]].
+- ### Overview
+  - The CPU is the principal sequential processor of a computer system, responsible for fetching, decoding, and executing instructions and coordinating the rest of the [[Computer Architecture]].
+  - Modern CPUs use deep cache hierarchies, branch prediction, speculative and out-of-order execution, and superscalar pipelines to extract instruction-level parallelism from serial code.
+  - Workloads dominated by branching, pointer chasing, and irregular memory access run best on CPUs, whereas data-parallel kernels are offloaded to accelerators.
+- ### Key aspects
+  - Low-latency, high-clock cores tuned for serial and control-heavy code.
+  - Rich [[Instruction Set Architecture]] with general-purpose, SIMD, and system instructions.
+  - Multi-level cache hierarchy mitigating the memory wall.
+  - Out-of-order and speculative execution for instruction-level parallelism.
+  - A small core count relative to a [[GPU]], emphasising per-thread performance.
+- ### Mechanisms
+  - Instruction fetch, decode, dispatch, execute, and retire stages within a pipeline.
+  - Branch prediction and speculative execution to hide control-flow stalls.
+  - Cache coherence protocols across cores for shared-memory consistency.
+  - Hardware threading (SMT) to overlap latency across logical cores.
+- ### Applications
+  - Operating systems, databases, compilers, and general application logic.
+  - Orchestration and host control for [[Hardware Acceleration]] devices.
+  - Latency-sensitive transaction processing and serial scientific code.
+  - Driving and feeding [[Compute Shader]] and [[GPU Computing]] pipelines.
+- ### Relationships
+  - contrastsWith:: [[GPU Computing]]
+  - partOf:: [[Hardware]]
+  - uses:: [[Central Processing Unit]]
+  - uses:: [[Instruction Set Architecture]]
+  - hasPart:: [[CPU]]
+  - requires:: [[Semiconductor]]
+  - enables:: [[Hardware Acceleration]]
+  - relatedTo:: [[Parallel Computing]]
+  - relatedTo:: [[Graphics Processing Unit]]
+  - supports:: [[Compute Shader]]
+  - dependsOn:: [[Integrated Circuit]]
+  - bridgesTo:: [[GPU]]
+- ### Provenance
+  - inferenceRule:: GapMaterialisation
+  - attributedTo:: did:nostr:ontology-mesh
+  - updated:: 2026-06-15

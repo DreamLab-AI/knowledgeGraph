@@ -1,0 +1,39 @@
+- ### Definition
+	- [[Sequence To Sequence Learning]] maps an input sequence to an output sequence of possibly different length using an encoder-decoder neural architecture.
+	- It is a form of [[Supervised Learning]] that implements the [[Encoder Decoder]] pattern, often augmented with an [[Attention Mechanism]].
+	- It enables [[Machine Translation]] and broad [[Natural Language Processing]] transduction tasks.
+- ### Overview
+	- The framework addresses problems where input and output are both variable-length sequences, such as translating a sentence or summarising a document.
+	- An encoder reads the input and produces a context representation; a decoder consumes that context and emits the output one token at a time, conditioning each step on previously generated tokens.
+	- Early models used recurrent networks and LSTMs, which struggled with long dependencies because the entire input was compressed into a single fixed vector.
+	- The attention mechanism removed this bottleneck by letting the decoder attend to all encoder states, and the transformer generalised attention into the dominant architecture for modern sequence models.
+- ### Mechanisms
+	- Encoding: transforming the input sequence into hidden representations.
+	- Context formation: summarising or attending over encoder states.
+	- Autoregressive decoding: generating output tokens conditioned on prior outputs.
+	- Teacher forcing during training and beam search at inference.
+	- Attention weighting to align output positions with relevant input.
+- ### Applications
+	- Machine translation between languages.
+	- Abstractive text summarisation.
+	- Speech recognition and text-to-speech.
+	- Code generation and structured-output transduction.
+- ### Relationships
+	- enables:: [[Machine Translation]]
+	- enables:: [[Natural Language Processing]]
+	- implements:: [[Encoder Decoder]]
+	- uses:: [[Attention Mechanism]]
+	- uses:: [[Recurrent Neural Network]]
+	- dependsOn:: [[Neural Network]]
+	- dependsOn:: [[LSTM]]
+	- requires:: [[Training Data]]
+	- hasPart:: [[Encoder Decoder]]
+	- supports:: [[Machine Translation]]
+	- bridgesTo:: [[Transformer]]
+	- contrastsWith:: [[Recurrent Neural Network]]
+	- relatedTo:: [[Transformer]]
+	- relatedTo:: [[Deep Learning]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

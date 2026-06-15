@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:finite-field",
+  "title": "Finite Field",
+  "slug": "finite-field",
+  "public": true,
+  "classIri": "urn:ngm:class:finite-field",
+  "domain": "security",
+  "definition": "A finite field, also called a Galois field, is an algebraic structure containing a finite number of elements on which addition, subtraction, multiplication, and division (excluding by zero) are defined and obey the field axioms. Every finite field has a number of elements equal to a prime power, and fields of a given size are unique up to isomorphism. Finite fields are central to cryptography, error-correcting codes, and many computational algorithms because they support exact arithmetic over bounded sets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:modular-arithmetic",
+      "label": "Modular Arithmetic"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:modular-arithmetic",
+        "label": "Modular Arithmetic"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:number-theory",
+        "label": "Number Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

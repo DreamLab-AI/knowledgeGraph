@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:contact-mechanics",
+  "title": "Contact Mechanics",
+  "slug": "contact-mechanics",
+  "public": true,
+  "classIri": "urn:ngm:class:contact-mechanics",
+  "domain": "robotics",
+  "definition": "Contact mechanics is the study of the forces, deformations, and motions that arise when solid bodies touch and interact at their surfaces. It models phenomena such as normal contact forces, friction, adhesion, and local deformation, and provides the constitutive laws that govern how bodies push against, stick to, and slide over one another. In robotics it is essential for grasping, manipulation, locomotion, and physical simulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:physics-simulation",
+      "label": "Physics Simulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:friction",
+        "label": "Friction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:grasping",
+        "label": "Grasping"
+      },
+      {
+        "id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "id": "urn:ngm:class:physics-engine",
+        "label": "Physics Engine"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:friction",
+        "label": "Friction"
+      },
+      {
+        "id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    }
+  ]
+}

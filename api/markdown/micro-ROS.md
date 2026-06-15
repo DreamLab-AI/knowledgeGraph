@@ -113,7 +113,7 @@ public:: true
         "label": "ROS 2"
       },
       {
-        "@id": "urn:ngm:class:publish-subscribe-messaging",
+        "@id": "urn:ngm:class:publish-subscribe-pattern",
         "label": "Publish-Subscribe Messaging"
       }
     ],

@@ -125,7 +125,7 @@ public:: true
         "label": "Batch Normalisation"
       },
       {
-        "@id": "urn:ngm:class:dropout-regularisation",
+        "@id": "urn:ngm:class:dropout",
         "label": "Dropout Regularisation"
       },
       {

@@ -95,7 +95,7 @@ alias:: BC-0214-environmental-sustainability
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:data-centre-infrastructure",
+        "@id": "urn:ngm:class:data-centre",
         "label": "Data Centre Infrastructure"
       },
       {

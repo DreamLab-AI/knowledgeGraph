@@ -61,7 +61,7 @@ alias:: Proof-of-Publication, Proof Of Publication
         "label": "Merkle Tree"
       },
       {
-        "@id": "urn:ngm:class:timestamping",
+        "@id": "urn:ngm:class:trusted-timestamping",
         "label": "Timestamping"
       }
     ],

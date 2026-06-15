@@ -67,7 +67,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:block-finality",
+        "@id": "urn:ngm:class:finality",
         "label": "Block Finality"
       },
       {

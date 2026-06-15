@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:algorithmic-complexity",
+  "title": "Algorithmic Complexity",
+  "slug": "algorithmic-complexity",
+  "public": true,
+  "classIri": "urn:ngm:class:algorithmic-complexity",
+  "domain": "machine-learning",
+  "definition": "Algorithmic complexity is the study of how the computational resources required by an algorithm, principally time and memory, grow as a function of input size. It is expressed using asymptotic notation that abstracts away constant factors to characterise scaling behaviour. In machine learning it governs the feasibility of training and inference, shaping choices of model architecture, optimisation and data structures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:learning-theory",
+        "label": "Learning Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sample-complexity",
+        "label": "Sample Complexity"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:inference-optimisation",
+        "label": "Inference Optimisation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sample-complexity",
+        "label": "Sample Complexity"
+      },
+      {
+        "id": "urn:ngm:class:vc-dimension",
+        "label": "VC Dimension"
+      },
+      {
+        "id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      },
+      {
+        "id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

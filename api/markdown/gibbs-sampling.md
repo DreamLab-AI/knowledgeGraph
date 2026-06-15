@@ -1,0 +1,34 @@
+- ### Definition
+  - Gibbs sampling is a Markov chain Monte Carlo algorithm that draws samples from a multivariate distribution by iteratively sampling each variable from its full conditional distribution given the current values of all others. It is a special case of Metropolis-Hastings in which every proposal is accepted, and it requires the conditionals to be tractable. Gibbs sampling is widely used for posterior inference in hierarchical and graphical models.
+  - [[Markov Chain Monte Carlo]] [[Markov Chain]] [[Graphical Model]] [[Bayesian Inference]]
+- ### Overview
+  - Gibbs sampling decomposes a hard joint sampling problem into a sequence of easier conditional samples.
+  - It is especially natural for graphical and hierarchical models where conditional distributions have closed forms.
+  - Strong correlations between variables can slow mixing, motivating blocked or collapsed Gibbs variants.
+- ### Mechanisms
+  - Each iteration updates one variable (or block) by drawing from its full conditional distribution.
+  - Because every conditional draw is exact, the implicit Metropolis-Hastings acceptance probability is one.
+  - The sequence of states forms a Markov chain whose stationary distribution is the target joint distribution.
+  - Burn-in is discarded and thinning may reduce autocorrelation between retained samples.
+- ### Applications
+  - Posterior inference in Bayesian hierarchical and mixture models.
+  - Topic modelling, such as collapsed Gibbs sampling for latent Dirichlet allocation.
+  - Inference in Markov random fields and other undirected graphical models.
+- ### Relationships
+  - partOf:: [[Markov Chain Monte Carlo]]
+  - implements:: [[Markov Chain Monte Carlo]]
+  - uses:: [[Markov Chain]]
+  - uses:: [[Probability Distribution]]
+  - requires:: [[Probabilistic Model]]
+  - requires:: [[Graphical Model]]
+  - enables:: [[Bayesian Inference]]
+  - enables:: [[Sampling]]
+  - supports:: [[Posterior Distribution]]
+  - supports:: [[Inference]]
+  - contrastsWith:: [[Variational Inference]]
+  - relatedTo:: [[Convergence]]
+  - relatedTo:: [[Stochastic Process]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

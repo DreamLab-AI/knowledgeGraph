@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:log-aggregation",
+  "title": "Log Aggregation",
+  "slug": "log-aggregation",
+  "public": true,
+  "classIri": "urn:ngm:class:log-aggregation",
+  "domain": "infrastructure",
+  "definition": "Log aggregation is the practice of collecting log events from many distributed sources into a centralised, searchable store so they can be parsed, indexed, correlated, and analysed as a unified stream. It is a foundational component of observability and monitoring pipelines, enabling operators to debug incidents, detect anomalies, and satisfy audit requirements across services that would otherwise emit logs in isolation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:observability",
+      "label": "Observability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:logging",
+        "label": "Logging"
+      },
+      {
+        "id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:indexing",
+        "label": "Indexing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:logging",
+        "label": "Logging"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:full-text-search",
+        "label": "Full-Text Search"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metrics-collection",
+        "label": "Metrics Collection"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

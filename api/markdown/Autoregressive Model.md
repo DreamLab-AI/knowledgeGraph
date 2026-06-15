@@ -109,7 +109,7 @@ public:: true
         "label": "Cross-Entropy Loss"
       },
       {
-        "@id": "urn:ngm:class:softmax",
+        "@id": "urn:ngm:class:softmax-function",
         "label": "Softmax"
       }
     ],

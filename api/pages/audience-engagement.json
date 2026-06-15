@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:audience-engagement",
+  "title": "Audience Engagement",
+  "slug": "audience-engagement",
+  "public": true,
+  "classIri": "urn:ngm:class:audience-engagement",
+  "domain": "ai",
+  "definition": "Audience engagement is the set of strategies and interactive mechanisms by which creators and platforms capture, sustain and deepen the attention and participation of viewers. It spans techniques such as live polls, question-and-answer sessions, gamification, reactions and personalised content, measured through metrics like watch time, interaction rate and retention. Strong audience engagement drives community growth, loyalty and monetisation across live and on-demand media.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-engagement",
+      "label": "User Engagement"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:live-polls-and-qanda",
+        "label": "Live Polls and QandA"
+      },
+      {
+        "id": "urn:ngm:class:gamification",
+        "label": "Gamification"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:live-streaming",
+        "label": "Live Streaming"
+      },
+      {
+        "id": "urn:ngm:class:virtual-event",
+        "label": "Virtual Event"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-engagement",
+        "label": "User Engagement"
+      },
+      {
+        "id": "urn:ngm:class:content-distribution",
+        "label": "Content Distribution"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

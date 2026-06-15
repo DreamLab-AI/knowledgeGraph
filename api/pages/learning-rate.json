@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:learning-rate",
+  "title": "Learning Rate",
+  "slug": "learning-rate",
+  "public": true,
+  "classIri": "urn:ngm:class:learning-rate",
+  "domain": "machine-learning",
+  "definition": "The learning rate is a hyperparameter in gradient-based optimisation that scales the size of each parameter update applied in the direction of the negative gradient. It governs the trade-off between the speed of convergence and the stability of training: too large a value can cause divergence or oscillation, while too small a value leads to slow progress or stalling in poor regions. It is one of the most consequential settings when training neural networks and is often varied over the course of training by a schedule or adapted per parameter.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hyperparameter",
+      "label": "Hyperparameter"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -161,12 +161,6 @@ public:: true
         "@id": "urn:ngm:class:gain-tuning",
         "label": "Gain Tuning"
       }
-    ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:faster-convergence",
-        "label": "Faster Convergence"
-      }
     ]
   },
   "quality": 0.5,

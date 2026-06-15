@@ -1,0 +1,41 @@
+- ### Definition
+  - [[Propositional Logic]] reasons over whole propositions joined by truth-functional connectives.
+  - It is the simplest layer of [[Logic]] and the substrate beneath [[Predicate Logic]] and [[First-Order Logic]].
+  - Its decidable [[Logical Inference]] underpins [[Constraint Satisfaction]] and [[Automated Reasoning]].
+- ### Overview
+  - Atomic propositions are assigned truth values, and connectives define how the truth of compounds depends on their parts.
+  - Truth tables give a complete, mechanical method for evaluating any propositional formula.
+  - The satisfiability problem (SAT) — deciding whether an assignment makes a formula true — is the canonical NP-complete problem.
+  - Normal forms such as conjunctive and disjunctive normal form provide canonical representations for reasoning and solving.
+- ### Key aspects
+  - Connectives — conjunction, disjunction, negation, implication, and biconditional define truth-functional composition.
+  - Truth tables — exhaustive enumeration of truth values establishes validity, satisfiability, and entailment.
+  - Decidability — propositional validity is decidable, unlike full first-order logic.
+  - Normal forms — CNF and DNF support resolution and DPLL-style search.
+  - Entailment and proof — natural deduction and resolution derive consequences from premises.
+- ### Applications
+  - Digital circuit design and Boolean function minimisation.
+  - SAT and SMT solvers for verification, planning, and configuration.
+  - Rule evaluation in business logic and policy engines.
+  - Teaching the foundations of formal reasoning and proof.
+- ### Relationships
+  - Propositional logic sits under [[Logic]] and contrasts with the richer expressivity of predicate logic.
+  - partOf:: [[Logic]]
+  - hasPart:: [[Logical Inference]]
+  - requires:: [[Formal Language]]
+  - enables:: [[Constraint Satisfaction]]
+  - enables:: [[Automated Reasoning]]
+  - uses:: [[Logical Inference]]
+  - supports:: [[Theorem Proving]]
+  - supports:: [[Formal Verification]]
+  - contrastsWith:: [[Predicate Logic]]
+  - relatedTo:: [[Reasoning]]
+  - relatedTo:: [[First-Order Logic]]
+  - relatedTo:: [[Constraint Satisfaction]]
+  - bridgesTo:: [[Knowledge Representation]]
+  - dependsOn:: [[Formal Language]]
+  - implements:: [[Logic]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation inference over the narrativegoldmine ontology mesh
+  - attributedTo:: did:nostr:ontology-mesh

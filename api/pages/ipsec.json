@@ -1,0 +1,122 @@
+{
+  "id": "urn:visionflow:page:ipsec",
+  "title": "Ipsec",
+  "slug": "ipsec",
+  "public": true,
+  "classIri": "urn:ngm:class:ipsec",
+  "domain": "security",
+  "definition": "IPsec (Internet Protocol Security) is a suite of protocols that secures IP communications by authenticating and encrypting each packet at the network layer. It provides confidentiality, integrity and origin authentication through the Authentication Header and Encapsulating Security Payload protocols, with keys negotiated via the Internet Key Exchange. IPsec is the foundational technology for site-to-site and remote-access virtual private networks operating transparently beneath application protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-security",
+      "label": "Network Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vpn",
+        "label": "VPN"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:vpn",
+        "label": "VPN"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vpn",
+        "label": "VPN"
+      },
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:internet-protocol",
+        "label": "Internet Protocol"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:vpn",
+        "label": "VPN"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

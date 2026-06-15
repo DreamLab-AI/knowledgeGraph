@@ -1,0 +1,30 @@
+- ### Definition
+- Linearizability is the strongest single-object [[Consistency Model]], requiring each operation to appear atomic and consistent with real-time order. It is what robust [[Distributed Consensus]] protocols such as [[Raft]] and [[Paxos]] provide, and it stands in tension with availability as framed by the [[CAP Theorem]].
+- ### Overview
+- A linearizable system behaves as if there were a single up-to-date copy of the data, even though it is replicated across many machines.
+- Each operation seems to occur instantaneously at some moment between its call and return, and these moments respect the wall-clock order of non-overlapping operations.
+- Because it is a local property, composing linearizable objects yields a linearizable system, which simplifies reasoning.
+- ### Key aspects
+- Real-time ordering: non-overlapping operations preserve their observed order.
+- Atomic visibility: a completed write is immediately visible to all later reads.
+- Compositionality: per-object linearizability implies system-wide linearizability.
+- ### Applications
+- Strongly consistent key-value stores and coordination services.
+- Leader-based [[State Machine Replication]] for configuration and locks.
+- Distributed databases prioritising correctness over latency.
+- ### Relationships
+- enables:: [[State Machine Replication]]
+- enables:: [[Fault Tolerance]]
+- relatedTo:: [[Consensus Algorithm]]
+- relatedTo:: [[Distributed Consensus]]
+- relatedTo:: [[Concurrency Control]]
+- relatedTo:: [[Replication]]
+- contrastsWith:: [[CAP Theorem]]
+- requires:: [[Consensus Algorithm]]
+- requires:: [[Quorum]]
+- dependsOn:: [[Distributed Consensus]]
+- uses:: [[Raft]]
+- uses:: [[Paxos]]
+- supports:: [[Distributed Systems]]
+- ### Provenance
+- updated:: 2026-06-15

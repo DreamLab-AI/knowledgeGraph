@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:open-container-initiative",
+  "title": "Open Container Initiative",
+  "slug": "open-container-initiative",
+  "public": true,
+  "classIri": "urn:ngm:class:open-container-initiative",
+  "domain": "infrastructure",
+  "definition": "The Open Container Initiative (OCI) is an open governance structure under the Linux Foundation that produces vendor-neutral specifications for container formats and runtimes. Its core deliverables are the image specification, the runtime specification, and the distribution specification, which together standardise how container images are built, distributed, and executed. By defining these contracts, the OCI guarantees interoperability and portability across the container ecosystem.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:portability",
+        "label": "Portability"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cncf",
+        "label": "Cloud Native Computing Foundation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:container",
+        "label": "Container"
+      },
+      {
+        "id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -45,7 +45,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:real-time-data-streaming",
+        "@id": "urn:ngm:class:real-time-streaming",
         "label": "Real-Time Data Streaming"
       },
       {
@@ -94,10 +94,6 @@ public:: true
       }
     ],
     "standardizedBy": [
-      {
-        "@id": "urn:ngm:class:whatwg",
-        "label": "WHATWG"
-      },
       {
         "@id": "urn:ngm:class:w3-c",
         "label": "W3C"

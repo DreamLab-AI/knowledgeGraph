@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:affordance",
+  "title": "Affordance",
+  "slug": "affordance",
+  "public": true,
+  "classIri": "urn:ngm:class:affordance",
+  "domain": "spatial-computing",
+  "definition": "An affordance is a property of an object or environment that signals the actions it makes possible to a perceiving agent, mediating the relationship between the agent's capabilities and the world. Originating in ecological psychology, the concept was adapted to design to describe how the perceptible features of an interface or physical artefact suggest how it can be used. In spatial and interactive computing, affordances guide users towards available actions, and perceived affordances are deliberately engineered so that controls and gestures feel discoverable and natural.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interaction-design",
+      "label": "Interaction Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:user-centred-design",
+        "label": "User-Centred Design"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-load",
+        "label": "Cognitive Load"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    }
+  ]
+}

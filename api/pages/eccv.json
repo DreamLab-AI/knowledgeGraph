@@ -16,12 +16,7 @@
   "qualityScore": 0.8,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:tutorial",
-        "label": "Tutorial"
-      }
-    ],
+    "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:image-recognition",

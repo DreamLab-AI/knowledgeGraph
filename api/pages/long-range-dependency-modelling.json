@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:long-range-dependency-modelling",
+  "title": "Long Range Dependency Modelling",
+  "slug": "long-range-dependency-modelling",
+  "public": true,
+  "classIri": "urn:ngm:class:long-range-dependency-modelling",
+  "domain": "machine-learning",
+  "definition": "Long range dependency modelling is the capability of a sequence model to capture relationships between elements that are far apart in a sequence, such as tokens separated by thousands of positions. Recurrent architectures struggle with this because gradients vanish over long horizons, whereas attention mechanisms and structured state-space models provide direct or efficient paths between distant elements. Effective long range modelling is essential for tasks where context far from the current position determines the output.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:attention-mechanism",
+      "label": "Attention Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self-Attention"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:state-space-model",
+        "label": "State Space Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

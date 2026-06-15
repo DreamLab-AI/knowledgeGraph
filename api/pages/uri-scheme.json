@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:uri-scheme",
+  "title": "Uri Scheme",
+  "slug": "uri-scheme",
+  "public": true,
+  "classIri": "urn:ngm:class:uri-scheme",
+  "domain": "security",
+  "definition": "A URI scheme is the leading component of a Uniform Resource Identifier that names the namespace, protocol, or resolution mechanism by which the remainder of the identifier is to be interpreted, appearing before the colon delimiter (for example http, https, mailto, did, urn, or ipfs). Schemes are registered with IANA under provisional or permanent status and define the syntax and semantics of the scheme-specific part. Custom and decentralised schemes such as did: and ipfs: extend the URI model to identity and content-addressed systems, making the scheme a foundational element of how distributed resources are addressed and trusted.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:protocol",
+      "label": "Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:naming-scheme",
+        "label": "Naming Scheme"
+      },
+      {
+        "id": "urn:ngm:class:protocol",
+        "label": "Protocol"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:identifier",
+        "label": "Identifier"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:did",
+        "label": "DID"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:web",
+        "label": "Web"
+      },
+      {
+        "id": "urn:ngm:class:naming-scheme",
+        "label": "Naming Scheme"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    }
+  ]
+}

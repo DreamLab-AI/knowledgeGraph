@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:risk-analysis",
+  "title": "Risk Analysis",
+  "slug": "risk-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:risk-analysis",
+  "domain": "governance",
+  "definition": "Risk analysis is the systematic process of identifying, characterising and estimating the likelihood and impact of events that could threaten objectives, in order to inform decisions about how to treat them. It combines qualitative judgement with quantitative techniques such as scenario modelling and probabilistic simulation to express uncertainty in actionable terms. As a core component of risk management, it produces the evidence base for prioritising controls, allocating capital and setting tolerances.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scenario-analysis",
+        "label": "Scenario Analysis"
+      },
+      {
+        "id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:scenario-analysis",
+        "label": "Scenario Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      },
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

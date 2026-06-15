@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:continuous-batching",
+  "title": "Continuous Batching",
+  "slug": "continuous-batching",
+  "public": true,
+  "classIri": "urn:ngm:class:continuous-batching",
+  "domain": "artificial-intelligence",
+  "definition": "Continuous batching is a large language model serving technique in which the inference scheduler admits and evicts requests at the granularity of individual decoding steps rather than running a whole batch to completion before starting the next. As soon as any sequence in the batch finishes generating, its slot is freed and a queued request takes its place, keeping the GPU saturated and dramatically improving throughput and latency under heterogeneous request lengths. It is a defining feature of modern inference engines such as vLLM and is typically combined with paged attention and a shared key-value cache.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inference-optimisation",
+      "label": "Inference Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:request-scheduling",
+        "label": "Request Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "id": "urn:ngm:class:gpu-utilisation",
+        "label": "GPU Utilisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:paged-attention",
+        "label": "Paged Attention"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "id": "urn:ngm:class:autoregressive-decoding",
+        "label": "Autoregressive Decoding"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vllm",
+        "label": "vLLM"
+      },
+      {
+        "id": "urn:ngm:class:token-generation",
+        "label": "Token Generation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+- ### Definition
+	- A [[Relying Party]] is a service that depends on an external [[Identity Provider]] or issuer to authenticate users and assert their attributes.
+	- It consumes and validates tokens, assertions or credentials to make [[Access Control]] decisions.
+	- It operates within a [[Trust Framework]] and enforces the resulting [[Authorization]].
+- ### Overview
+	- In federated identity, applications delegate authentication to a trusted identity provider rather than holding user credentials themselves.
+	- The relying party receives a security token or assertion describing the authenticated subject and their attributes, validates it, and grants access accordingly.
+	- This separation reduces credential sprawl, centralises authentication strength, and enables single sign-on across many services.
+	- In decentralised identity the relying party becomes a verifier of holder-presented verifiable credentials anchored to trusted issuers.
+- ### Key aspects
+	- Delegation of authentication to an external issuer or provider.
+	- Validation of tokens, assertions or credentials.
+	- Trust relationships defined within a governing framework.
+	- Mapping of asserted attributes to access decisions.
+	- Session establishment and token lifecycle handling.
+- ### Mechanisms
+	- Protocol flows such as OAuth, OpenID Connect and SAML.
+	- Signature and issuer verification of received tokens.
+	- Audience and scope checks binding tokens to the service.
+	- Claims-to-permission mapping for authorisation.
+	- Verifiable-credential presentation and proof checking.
+- ### Applications
+	- Web and mobile applications using social or enterprise login.
+	- Single sign-on across organisational service portfolios.
+	- B2B federation between partner organisations.
+	- Decentralised applications verifying user credentials.
+	- Regulated services accepting cross-border authenticated identity.
+- ### Relationships
+	- subClassOf:: [[Identity Management]]
+	- requires:: [[Identity Provider]]
+	- requires:: [[Trust Framework]]
+	- hasPart:: [[Access Control]]
+	- implements:: [[Authentication Protocol]]
+	- uses:: [[OAuth]]
+	- uses:: [[SAML]]
+	- dependsOn:: [[Authentication]]
+	- supports:: [[Single Sign On]]
+	- enables:: [[Authorization]]
+	- contrastsWith:: [[Identity Provider]]
+	- bridgesTo:: [[Verifiable Credentials]]
+	- relatedTo:: [[Federated Identity]]
+	- relatedTo:: [[Digital Trust]]
+- ### Provenance
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation
+	- updated:: 2026-06-15

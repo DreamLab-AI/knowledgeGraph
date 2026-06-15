@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:attestation",
+  "title": "Attestation",
+  "slug": "attestation",
+  "public": true,
+  "classIri": "urn:ngm:class:attestation",
+  "domain": "blockchain",
+  "definition": "Attestation is the act of producing verifiable, signed evidence that a claim, state, or property is true, allowing a relying party to trust it without re-deriving it. In blockchain proof-of-stake consensus, validators broadcast attestations voting on the head of the chain and on checkpoints, and the aggregate of these signed votes drives finalisation. More broadly, remote attestation lets a trusted execution environment cryptographically prove its identity and integrity to a remote verifier. Attestations are typically cryptographic signatures over structured claims, and they underpin trust, accountability, and slashing-based security.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-proof",
+      "label": "Cryptographic Proof"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:economic-finality",
+        "label": "Economic Finality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "id": "urn:ngm:class:remote-attestation",
+        "label": "Remote Attestation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

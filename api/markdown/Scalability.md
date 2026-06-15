@@ -130,10 +130,6 @@ public:: true
         "label": "Resilience"
       },
       {
-        "@id": "urn:ngm:class:availability",
-        "label": "Availability"
-      },
-      {
         "@id": "urn:ngm:class:distributed-architecture",
         "label": "Distributed Architecture"
       }

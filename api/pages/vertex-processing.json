@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:vertex-processing",
+  "title": "Vertex Processing",
+  "slug": "vertex-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:vertex-processing",
+  "domain": "spatial-computing",
+  "definition": "Vertex processing is the stage of the graphics pipeline that operates on each vertex of geometry, transforming its position from model space through world, view, and clip space, and computing or passing per-vertex attributes such as normals, texture coordinates, and colours. Executed largely by programmable vertex shaders on the GPU, it prepares primitives for clipping, perspective division, and rasterisation, and may feed subsequent geometry, tessellation, and fragment stages. As a foundational step in real-time rendering it determines screen-space placement and the interpolated inputs available to downstream shading.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graphics-pipeline",
+      "label": "Graphics Pipeline"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:fragment-shading",
+        "label": "Fragment Shading"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:geometry-processing",
+        "label": "Geometry Processing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:gpu-pipeline",
+        "label": "GPU Pipeline"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:vertex-shader",
+        "label": "Vertex Shader"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:geometry-processing",
+        "label": "Geometry Processing"
+      },
+      {
+        "id": "urn:ngm:class:fragment-shading",
+        "label": "Fragment Shading"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering-pipeline",
+        "label": "Real-Time Rendering Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time-rendering-pipeline",
+      "label": "Real-Time Rendering Pipeline"
+    }
+  ]
+}

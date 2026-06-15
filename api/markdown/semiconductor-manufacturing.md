@@ -1,0 +1,41 @@
+- ### Definition
+  - [[Semiconductor Manufacturing]] fabricates [[Integrated Circuit]]s on silicon wafers through repeated deposition, lithography, etching, and doping in cleanroom fabs.
+  - It turns electronic designs into physical [[Semiconductor]] devices at nanometre scale.
+  - It is the industrial foundation that enables [[CPU Computing]] and all modern compute [[Hardware]].
+- ### Overview
+  - Front-end-of-line processing builds transistors directly in the silicon; back-end-of-line forms the metal interconnect stack.
+  - Photolithography projects circuit patterns onto photoresist, which is developed and etched to define features.
+  - The process is iterative across hundreds of steps, each adding or patterning a thin material layer with extreme precision.
+- ### Key aspects
+  - Cleanroom fabrication with sub-nanometre defect control.
+  - Photolithography (including EUV) defining ever-smaller feature sizes.
+  - Iterative deposition, etch, implant, and planarisation cycles.
+  - A capital-intensive, globally distributed [[Supply Chain]].
+- ### Mechanisms
+  - Thin-film deposition (CVD, ALD, sputtering) building material layers.
+  - Photoresist coating, exposure, and development to transfer patterns.
+  - Plasma and wet etching to remove unmasked material.
+  - Ion implantation and annealing to set dopant profiles.
+- ### Applications
+  - Producing the processors behind [[CPU Computing]] and [[GPU Computing]].
+  - Memory, sensors, power, and RF devices across electronics.
+  - Custom accelerators supporting [[Hardware Acceleration]].
+  - The hardware substrate for entire [[Computer Architecture]] roadmaps.
+- ### Relationships
+  - hasPart:: [[Integrated Circuit]]
+  - hasPart:: [[Wafer Fabrication]]
+  - enables:: [[CPU Computing]]
+  - enables:: [[Hardware Acceleration]]
+  - requires:: [[Semiconductor]]
+  - requires:: [[Nanotechnology]]
+  - dependsOn:: [[Supply Chain]]
+  - bridgesTo:: [[Computer Architecture]]
+  - uses:: [[Foundry]]
+  - uses:: [[Chip]]
+  - supports:: [[GPU Computing]]
+  - relatedTo:: [[Hardware]]
+  - partOf:: [[Supply Chain]]
+- ### Provenance
+  - inferenceRule:: GapMaterialisation
+  - attributedTo:: did:nostr:ontology-mesh
+  - updated:: 2026-06-15

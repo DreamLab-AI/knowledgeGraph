@@ -1,0 +1,31 @@
+- ### Definition
+  - [[Safety Monitoring]] continuously observes a [[Robotics]] system through [[Sensor Fusion]] and [[Perception]], using [[Anomaly Detection]] and [[Real-Time Monitoring]] to keep operation within safe bounds and trigger [[Collision Avoidance]].
+- ### Overview
+  - Safety monitoring is the continuous supervision of a robotic or automated system to detect hazardous states, degradation or human proximity and to invoke protective responses.
+  - It combines sensing, state estimation and decision logic to enforce safety constraints independently of nominal task control.
+  - Effective monitoring is integral to certified human-robot collaboration and to autonomous operation in shared workspaces.
+- ### Mechanisms
+  - Fusion of proprioceptive and exteroceptive sensor streams.
+  - Anomaly and limit detection against safety envelopes.
+  - Watchdog and heartbeat checks on control integrity.
+  - Graded protective stops and speed-and-separation enforcement.
+- ### Applications
+  - Collaborative robot cells with speed and separation monitoring.
+  - Autonomous mobile robot fleets in occupied environments.
+  - Condition monitoring of actuators to pre-empt failures.
+- ### Relationships
+  - hasPart:: [[Anomaly Detection]]
+  - hasPart:: [[Real-Time Monitoring]]
+  - requires:: [[Sensor Fusion]]
+  - requires:: [[Perception]]
+  - requires:: [[Telemetry]]
+  - supports:: [[Robot Safety]]
+  - supports:: [[Human-Robot Collaboration]]
+  - supports:: [[Collision Avoidance]]
+  - enables:: [[Observability]]
+  - uses:: [[Anomaly Detection]]
+  - relatedTo:: [[Risk Assessment]]
+  - relatedTo:: [[Control System]]
+  - partOf:: [[Robotics]]
+- ### Provenance
+  - updated:: 2026-06-15

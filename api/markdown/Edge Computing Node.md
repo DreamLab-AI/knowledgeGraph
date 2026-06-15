@@ -149,10 +149,6 @@ alias:: EdgeComputingNode
       {
         "@id": "urn:ngm:class:network-interface",
         "label": "Network Interface"
-      },
-      {
-        "@id": "urn:ngm:class:processor",
-        "label": "Processor"
       }
     ],
     "requires": [

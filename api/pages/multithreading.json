@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:multithreading",
+  "title": "Multithreading",
+  "slug": "multithreading",
+  "public": true,
+  "classIri": "urn:ngm:class:multithreading",
+  "domain": "infrastructure",
+  "definition": "Multithreading is a programming and execution model in which a single process contains multiple threads of execution that share the process's memory and resources while running concurrently. It enables responsiveness and parallel use of multiple CPU cores, but introduces the need for synchronisation to avoid race conditions and deadlocks. The operating system scheduler interleaves or parallelises threads, and shared mutable state must be coordinated with locks or other primitives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:concurrency",
+      "label": "Concurrency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:scheduler",
+        "label": "Scheduler"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      },
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "id": "urn:ngm:class:scheduler",
+        "label": "Scheduler"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:shared-memory",
+        "label": "Shared Memory"
+      },
+      {
+        "id": "urn:ngm:class:process",
+        "label": "Process"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

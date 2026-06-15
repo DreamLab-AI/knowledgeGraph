@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:interest-rate-policy",
+  "title": "Interest Rate Policy",
+  "slug": "interest-rate-policy",
+  "public": true,
+  "classIri": "urn:ngm:class:interest-rate-policy",
+  "domain": "finance",
+  "definition": "Interest rate policy is the use of a central bank's control over short-term policy interest rates to steer borrowing costs, credit demand and inflation. By raising or lowering its target rate, the central bank influences money-market rates, lending, investment and consumption throughout the economy. It is the primary monetary-policy instrument in most modern economies, transmitted through the financial system to output and prices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monetary-policy",
+      "label": "Monetary Policy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-banking",
+        "label": "Central Banking"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reserve-requirements",
+        "label": "Reserve Requirements"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-market-operations",
+        "label": "Open Market Operations"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

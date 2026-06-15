@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:metrics",
+  "title": "Metrics",
+  "slug": "metrics",
+  "public": true,
+  "classIri": "urn:ngm:class:metrics",
+  "domain": "infrastructure",
+  "definition": "Metrics are numeric, time-series measurements that quantify the state and behaviour of systems, services and infrastructure over time. As one of the three pillars of observability alongside logs and traces, they are typically aggregated counters, gauges and histograms scraped or pushed at regular intervals. Metrics enable efficient trend analysis, alerting and capacity planning at scale because they compress system behaviour into compact, queryable numeric series.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:observability",
+      "label": "Observability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:performance-monitoring",
+        "label": "Performance Monitoring"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "id": "urn:ngm:class:performance-monitoring",
+        "label": "Performance Monitoring"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:performance-monitoring",
+        "label": "Performance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

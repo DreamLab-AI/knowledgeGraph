@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:wearable-robotics",
+  "title": "Wearable Robotics",
+  "slug": "wearable-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:wearable-robotics",
+  "domain": "robotics",
+  "definition": "Wearable robotics encompasses powered mechanical systems worn on or attached to the human body to augment, assist or restore physical capability. These devices, including exoskeletons and powered orthoses, sense the wearer's intent and motion and deliver coordinated actuation in real time to support movement, reduce effort or rehabilitate impaired function. The field integrates biomechanics, control engineering, sensing and human-robot interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:force-sensor",
+        "label": "Force Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:biomechanics",
+        "label": "Biomechanics"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:prosthetics",
+        "label": "Prosthetics"
+      },
+      {
+        "id": "urn:ngm:class:soft-robotics",
+        "label": "Soft Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:haptics",
+        "label": "Haptics"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      },
+      {
+        "id": "urn:ngm:class:robo-human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "exoskeleton-robot",
+      "label": "Exoskeleton Robot"
+    }
+  ]
+}

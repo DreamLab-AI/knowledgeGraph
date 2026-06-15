@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:negotiation",
+  "title": "Negotiation",
+  "slug": "negotiation",
+  "public": true,
+  "classIri": "urn:ngm:class:negotiation",
+  "domain": "governance",
+  "definition": "Negotiation is the structured interactive process by which two or more parties with partially conflicting interests communicate proposals and concessions to reach a mutually acceptable agreement without recourse to coercion or third-party adjudication. It draws on principled bargaining, interest analysis, and reservation-value reasoning to expand and divide the zone of possible agreement. In decentralised and automated governance contexts, negotiation increasingly manifests as protocol-mediated bargaining among software agents, stakeholders, and on-chain coalitions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:conflict-resolution",
+      "label": "Conflict Resolution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dispute-resolution",
+        "label": "Dispute Resolution"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:mediation",
+        "label": "Mediation"
+      },
+      {
+        "id": "urn:ngm:class:dispute-resolution",
+        "label": "Dispute Resolution"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "id": "urn:ngm:class:negotiation-protocol",
+        "label": "Negotiation Protocol"
+      },
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

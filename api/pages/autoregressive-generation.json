@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:autoregressive-generation",
+  "title": "Autoregressive Generation",
+  "slug": "autoregressive-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:autoregressive-generation",
+  "domain": "artificial-intelligence",
+  "definition": "Autoregressive generation is a sequence-modelling approach in which each output element is produced conditioned on all previously generated elements, factorising the joint probability of a sequence into a product of conditional next-element distributions. In language models it manifests as repeated next-token prediction, where the model samples or selects a token, appends it to the context, and repeats. This left-to-right dependency is the dominant decoding paradigm for large language models and underlies generative text, code, and other ordered outputs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:token",
+        "label": "Token"
+      },
+      {
+        "id": "urn:ngm:class:decoder",
+        "label": "Decoder"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -35,12 +35,7 @@
         "label": "Gain Tuning"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:faster-convergence",
-        "label": "Faster Convergence"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

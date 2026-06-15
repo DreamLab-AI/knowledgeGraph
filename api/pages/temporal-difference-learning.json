@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:temporal-difference-learning",
+  "title": "Temporal Difference Learning",
+  "slug": "temporal-difference-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:temporal-difference-learning",
+  "domain": "machine-learning",
+  "definition": "Temporal difference (TD) learning is a class of model-free reinforcement learning methods that estimate value functions by bootstrapping: each value estimate is updated towards a target composed of the immediate reward plus the discounted estimate of the successor state, rather than waiting for a full episode return. The TD error, the difference between the bootstrapped target and the current estimate, drives incremental updates and underpins algorithms such as TD(0), TD(lambda), SARSA, and Q-learning. By combining the sampling of Monte Carlo methods with the bootstrapping of dynamic programming, TD learning enables online, incremental learning from incomplete sequences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "id": "urn:ngm:class:reward-signal",
+        "label": "Reward Signal"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:policy-gradient",
+        "label": "Policy Gradient"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:reward-signal",
+        "label": "Reward Signal"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:q-learning",
+        "label": "Q-Learning"
+      },
+      {
+        "id": "urn:ngm:class:sarsa",
+        "label": "SARSA"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monte-carlo-method",
+        "label": "Monte Carlo Method"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bellman-equation",
+        "label": "Bellman Equation"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monte-carlo-method",
+        "label": "Monte Carlo Method"
+      },
+      {
+        "id": "urn:ngm:class:bellman-equation",
+        "label": "Bellman Equation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

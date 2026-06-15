@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:superchain",
+  "title": "Superchain",
+  "slug": "superchain",
+  "public": true,
+  "classIri": "urn:ngm:class:superchain",
+  "domain": "blockchain",
+  "definition": "A superchain is a network of independent Layer-2 blockchains that share a common technical standard, security model, and communication layer so they interoperate as a unified system rather than isolated silos. Pioneered by the OP Stack ecosystem around Optimism, superchains let many rollups inherit the same upgrade path, governance, and eventually a shared sequencer, enabling low-latency cross-chain messaging and a consistent developer experience. The model addresses blockchain fragmentation by treating horizontal scaling as a coordinated mesh of homogeneous chains that settle to a common Layer 1.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rollup",
+      "label": "Rollup"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:base",
+        "label": "Base"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-scalability",
+        "label": "Blockchain Scalability"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "id": "urn:ngm:class:bridge",
+        "label": "Bridge"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:op-stack",
+        "label": "OP Stack"
+      },
+      {
+        "id": "urn:ngm:class:optimism",
+        "label": "Optimism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "id": "urn:ngm:class:modular-blockchain",
+        "label": "Modular Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    }
+  ]
+}

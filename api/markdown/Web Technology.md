@@ -140,10 +140,6 @@ public:: true
       {
         "@id": "urn:ngm:class:ietf",
         "label": "IETF"
-      },
-      {
-        "@id": "urn:ngm:class:whatwg",
-        "label": "WHATWG"
       }
     ],
     "bridgesTo": [

@@ -1,0 +1,42 @@
+- ### Definition
+  - [[Open Government]] is part of [[Digital Governance]].
+  - It rests on [[Transparency]] and [[Open Data]].
+  - It strengthens [[Accountability]].
+  - It advances [[Digital Democracy]].
+- ### Overview
+  - Open government treats public information and decisions as accessible by default.
+  - Transparency, participation, and accountability are its core pillars.
+  - Open data and freedom of information are key instruments.
+  - Digital tools widen access and enable public scrutiny.
+- ### Key aspects
+  - Proactive publication of government information.
+  - Open data for reuse and oversight.
+  - Participatory and consultative decision-making.
+  - Freedom-of-information rights and processes.
+  - Accountability for the use of public resources.
+- ### Applications
+  - National open-data portals and dashboards.
+  - Participatory budgeting and consultation platforms.
+  - Transparency in procurement and spending.
+  - Civic technology enabling public engagement.
+- ### Relationships
+  - partOf:: [[Digital Governance]]
+  - partOf:: [[Governance]]
+  - enables:: [[Accountability]]
+  - enables:: [[Transparency]]
+  - supports:: [[Transparency]]
+  - supports:: [[Stakeholder Engagement]]
+  - uses:: [[Open Data]]
+  - uses:: [[Data Sharing]]
+  - requires:: [[Transparency]]
+  - requires:: [[Open Data]]
+  - relatedTo:: [[Digital Democracy]]
+  - relatedTo:: [[Open Source]]
+  - relatedTo:: [[Digital Governance]]
+  - relatedTo:: [[Accountability]]
+  - bridgesTo:: [[Digital Democracy]]
+  - dependsOn:: [[Open Data]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

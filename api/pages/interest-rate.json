@@ -71,10 +71,6 @@
         "label": "Inflation"
       },
       {
-        "id": "urn:ngm:class:federal-reserve",
-        "label": "Federal Reserve"
-      },
-      {
         "id": "urn:ngm:class:quantitative-easing",
         "label": "Quantitative Easing"
       },

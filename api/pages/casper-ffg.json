@@ -1,0 +1,107 @@
+{
+  "id": "urn:visionflow:page:casper-ffg",
+  "title": "Casper Ffg",
+  "slug": "casper-ffg",
+  "public": true,
+  "classIri": "urn:ngm:class:casper-ffg",
+  "domain": "blockchain",
+  "definition": "Casper FFG (the Friendly Finality Gadget) is a proof-of-stake finality mechanism that overlays a checkpoint-based voting protocol on an underlying block proposal chain. Validators stake deposits and vote in two rounds to justify and then finalise checkpoints, after which reverting them would require destroying at least one third of the total stake. It introduces economic finality with slashing penalties for equivocation, providing strong accountability without requiring a full consensus overhaul.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:finality-gadget",
+      "label": "Finality Gadget"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:validator",
+        "label": "Validator"
+      },
+      {
+        "id": "urn:ngm:class:staking",
+        "label": "Staking"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof of Stake"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:byzantine-fault-tolerance",
+        "label": "Byzantine Fault Tolerance"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      },
+      {
+        "id": "urn:ngm:class:validator-set",
+        "label": "Validator Set"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:pos-consensus",
+        "label": "Proof-of-Stake Consensus"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:finality",
+        "label": "Finality"
+      },
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:slashing",
+        "label": "Slashing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    }
+  ]
+}

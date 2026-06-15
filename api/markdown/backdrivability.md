@@ -1,0 +1,39 @@
+- ### Definition
+  - [[Actuator]]
+  - [[Series Elastic Actuator]]
+  - [[Impedance Control]]
+  - [[Force Control]]
+  - [[Compliance]]
+- ### Overview
+  - Describes how transparently force and motion propagate from a robot's output back to its drive.
+  - Determines whether a joint can feel and yield to contact without dedicated force sensors.
+  - Trades raw positioning stiffness and gear reduction for compliance and safety.
+- ### Key aspects
+  - Low reflected inertia, achieved through low gear ratios or direct drive, improves backdrivability.
+  - Friction and stiction in transmissions are the principal degraders of backdrivability.
+  - Series elasticity decouples motor inertia and adds intrinsic compliance.
+  - Backdrivable joints support sensorless force estimation from motor current.
+  - There is a fundamental trade-off between transparency and positioning stiffness.
+- ### Applications
+  - Collaborative robots that share workspace safely with humans.
+  - Force-controlled manipulation, polishing, and assembly tasks.
+  - Rehabilitation and exoskeleton robots that must yield to the wearer.
+  - Haptic and teleoperation devices requiring transparent force reflection.
+- ### Relationships
+  - partOf:: [[Series Elastic Actuator]]
+  - enables:: [[Impedance Control]]
+  - enables:: [[Admittance Control]]
+  - supports:: [[Force Control]]
+  - supports:: [[Torque Control]]
+  - supports:: [[Compliance]]
+  - requires:: [[Torque]]
+  - uses:: [[Transparency]]
+  - contrastsWith:: [[Rigid Body]]
+  - bridgesTo:: [[Safety]]
+  - relatedTo:: [[Actuator]]
+  - relatedTo:: [[Manipulator]]
+  - relatedTo:: [[Robotics]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

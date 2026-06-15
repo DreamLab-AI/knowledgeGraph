@@ -1,0 +1,42 @@
+- ### Definition
+  - [[Lossless Compression]] reduces data size while guaranteeing exact, bit-for-bit reconstruction of the original.
+  - It is a form of [[Data Compression]] that contrasts with [[Lossy Compression]], which sacrifices fidelity for higher ratios.
+  - It relies on [[Entropy Coding]] and dictionary methods to remove statistical redundancy.
+- ### Overview
+  - Lossless schemes model the probability distribution of symbols and assign shorter codes to more frequent ones, approaching the Shannon entropy limit.
+  - Dictionary methods replace repeated substrings with references to earlier occurrences, the basis of the LZ family used by DEFLATE, gzip, and zstd.
+  - Because no information is discarded, the same algorithm both compresses and exactly restores the source.
+- ### Key aspects
+  - Exact reconstruction guarantee, with no perceptual or numerical loss.
+  - Lower achievable ratios than lossy methods on natural media.
+  - Reversible transforms such as Burrows-Wheeler followed by [[Entropy Coding]].
+  - Wide use in general-purpose archive [[Codec]] and [[File Format]] designs.
+- ### Mechanisms
+  - Huffman and arithmetic/range coding for near-optimal symbol coding.
+  - Dictionary substitution (LZ77/LZ78/LZW) for repeated sequences.
+  - Run-length encoding for long constant runs.
+  - Predictive and context modelling to sharpen symbol distributions.
+- ### Applications
+  - Compressing text, source code, and executables where corruption is unacceptable.
+  - Archival storage and backups feeding a [[Data Warehouse]].
+  - PNG and FLAC media containers requiring exact pixels or samples.
+  - General-purpose archive formats (ZIP, gzip, zstd).
+- ### Relationships
+  - contrastsWith:: [[Lossy Compression]]
+  - partOf:: [[Data Compression]]
+  - uses:: [[Entropy Coding]]
+  - uses:: [[Information Theory]]
+  - hasPart:: [[Codec]]
+  - enables:: [[File Format]]
+  - enables:: [[Backup]]
+  - supports:: [[Data Warehouse]]
+  - supports:: [[Data Storage]]
+  - requires:: [[Data Quality]]
+  - relatedTo:: [[Image Compression]]
+  - relatedTo:: [[Video Compression]]
+  - implements:: [[Data Compression]]
+  - dependsOn:: [[Information Theory]]
+- ### Provenance
+  - inferenceRule:: GapMaterialisation
+  - attributedTo:: did:nostr:ontology-mesh
+  - updated:: 2026-06-15

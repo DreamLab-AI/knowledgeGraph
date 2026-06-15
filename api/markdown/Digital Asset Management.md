@@ -138,7 +138,7 @@ public:: true
         "label": "Regulatory Framework"
       },
       {
-        "@id": "urn:ngm:class:market-liquidity",
+        "@id": "urn:ngm:class:liquidity",
         "label": "Market Liquidity"
       }
     ],

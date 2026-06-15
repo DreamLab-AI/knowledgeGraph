@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:settlement-finality",
+  "title": "Settlement Finality",
+  "slug": "settlement-finality",
+  "public": true,
+  "classIri": "urn:ngm:class:settlement-finality",
+  "domain": "blockchain",
+  "definition": "Settlement finality is the point at which a transfer of value or assets becomes irrevocable and unconditional, such that it can no longer be reversed, unwound, or repudiated even in the event of a participant's insolvency. In traditional finance it is defined by legal frameworks governing payment and securities systems, while in blockchain systems it emerges from consensus guarantees that may be deterministic or probabilistic. Finality is essential to systemic stability because it eliminates settlement risk once the defined threshold is reached.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:settlement",
+      "label": "Settlement"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transaction-finality",
+        "label": "Transaction Finality"
+      },
+      {
+        "id": "urn:ngm:class:economic-finality",
+        "label": "Economic Finality"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:immutability",
+        "label": "Immutability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      },
+      {
+        "id": "urn:ngm:class:delivery-versus-payment",
+        "label": "Delivery Versus Payment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:probabilistic-finality",
+        "label": "Probabilistic Finality"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-securities-depository",
+        "label": "Central Securities Depository"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-market-infrastructure",
+        "label": "Financial Market Infrastructure"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:clearing-and-settlement",
+        "label": "Clearing And Settlement"
+      },
+      {
+        "id": "urn:ngm:class:netting",
+        "label": "Netting"
+      },
+      {
+        "id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

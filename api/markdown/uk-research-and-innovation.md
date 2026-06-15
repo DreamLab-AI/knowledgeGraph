@@ -1,0 +1,37 @@
+- ### Definition
+  - UK Research and Innovation (UKRI) is the United Kingdom's national funding agency for research and innovation, established in 2018 as a non-departmental public body bringing together the seven research councils, Innovate UK, and Research England. It allocates public funding across the disciplines, supports universities and businesses, and shapes national research strategy, including substantial investment in artificial intelligence and data science. UKRI underpins much of the UK's academic research and innovation ecosystem.
+  - Related concepts: [[Research and Development]], [[Academic Research]], [[University of Edinburgh]], [[Alan Turing Institute]], [[Artificial Intelligence]].
+- ### Overview
+  - UKRI coordinates UK public investment in [[Research and Development]] across the research councils, Innovate UK, and Research England.
+  - It funds [[Academic Research]] at institutions such as the [[University of Edinburgh]] and partners like the [[Alan Turing Institute]].
+  - Its strategy prioritises high-impact areas including [[Artificial Intelligence]] and data-driven innovation.
+- ### Key aspects
+  - Constituent bodies: seven discipline-specific research councils plus Innovate UK and Research England.
+  - Grant funding: competitive allocation across fellowships, projects, and infrastructure.
+  - Innovation support: bridging academia and industry through Innovate UK.
+  - Strategy and policy: setting national research priorities and missions.
+  - Impact assessment and accountability for public funds.
+- ### Applications
+  - Funding doctoral training, fellowships, and large research programmes.
+  - Supporting national AI and data-science capability.
+  - Catalysing university-industry collaboration and commercialisation.
+  - Investing in research infrastructure and skills.
+- ### Relationships
+  - dependsOn:: [[Research and Development]]
+  - dependsOn:: [[Academic Research]]
+  - relatedTo:: [[Academic Research]]
+  - relatedTo:: [[University of Edinburgh]]
+  - relatedTo:: [[Alan Turing Institute]]
+  - supports:: [[Artificial Intelligence]]
+  - supports:: [[Academic Research]]
+  - supports:: [[University of Edinburgh]]
+  - enables:: [[Artificial Intelligence]]
+  - enables:: [[Alan Turing Institute]]
+  - partOf:: [[Research and Development]]
+  - bridgesTo:: [[Alan Turing Institute]]
+  - uses:: [[Impact Assessment]]
+  - requires:: [[Research and Development]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - generatedBy:: GapMaterialisation
+  - quality:: 0.62

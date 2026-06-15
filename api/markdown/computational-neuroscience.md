@@ -1,0 +1,30 @@
+- ### Definition
+- Computational neuroscience models the nervous system mathematically to explain how neurons and circuits represent and compute information. It draws on [[Cognitive Science]] and shares methods with [[Machine Learning]], and its theories of biological computation inform [[Neuromorphic Computing]] and [[Neural Network|artificial neural networks]].
+- ### Overview
+- The field builds quantitative models at multiple scales, from the electrochemical dynamics of single neurons to the collective behaviour of large populations and whole systems.
+- It aims both to explain how brains process sensory input, store memories, and produce behaviour, and to extract general principles of efficient computation.
+- These principles cross-fertilise artificial intelligence, providing biologically grounded ideas about coding, learning, and architecture.
+- ### Key aspects
+- Biophysical neuron models describe membrane dynamics and the generation of action potentials.
+- Network models capture how connectivity and dynamics give rise to representations and computations.
+- Theories of neural coding explain how information is encoded in spike timing and population activity.
+- Models of synaptic plasticity and learning connect experience to lasting changes in circuits.
+- ### Applications
+- Interpreting electrophysiological and imaging data from experiments.
+- Designing brain-inspired and neuromorphic hardware and algorithms.
+- Informing brain-computer interfaces and neural prosthetics.
+- Generating and testing hypotheses about perception, cognition, and disease.
+- ### Relationships
+- relatedTo:: [[Neural Network]]
+- relatedTo:: [[Cognitive Science]]
+- relatedTo:: [[Machine Learning]]
+- enables:: [[Neuromorphic Computing]]
+- uses:: [[Machine Learning]]
+- uses:: [[Reinforcement Learning]]
+- bridgesTo:: [[Deep Learning]]
+- supports:: [[Cognitive Architecture]]
+- dependsOn:: [[Neural Network]]
+- implements:: [[Cognitive Science]]
+- contrastsWith:: [[Deep Learning]]
+- ### Provenance
+- updated:: 2026-06-15

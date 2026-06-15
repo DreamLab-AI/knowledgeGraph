@@ -1,0 +1,39 @@
+- ### Definition
+- Cross-border regulatory cooperation coordinates [[Financial Regulation]] across jurisdictions to oversee activities that span national boundaries.
+- It enables [[Financial Stability]] and orderly [[Cross-Border Payments]] while supporting [[Anti-Money Laundering]] enforcement.
+- It is anchored by international standards from the [[FSB]] and political mandates from the [[G20]].
+- ### Overview
+- Global banks, payment networks and capital markets do not respect national borders, so isolated national supervision leaves gaps that firms can exploit through regulatory arbitrage. Cross-border cooperation closes those gaps by aligning rules and sharing intelligence.
+- Mechanisms range from soft coordination — common principles and peer review — to harder commitments such as supervisory colleges for individual global firms and mutual recognition of each other's regimes.
+- Effective cooperation depends on trust, legal gateways for information sharing and a shared analytical view of [[Systemic Risk]].
+- ### Mechanisms
+- Memoranda of understanding and bilateral or multilateral information-sharing agreements.
+- Supervisory colleges and joint examinations of globally active institutions.
+- Common standards set by the Basel Committee, FSB and other bodies.
+- Mutual recognition, substituted compliance and equivalence determinations.
+- Coordinated enforcement against cross-border financial crime.
+- ### Applications
+- Oversight of internationally active banks and market infrastructures.
+- Anti-money-laundering and sanctions coordination across regulators.
+- Resolution of cross-border firms without disorderly spillovers.
+- ### Relationships
+- uses:: [[Standards Organization]]
+- enables:: [[Financial Stability]]
+- enables:: [[Cross-Border Payments]]
+- supports:: [[Anti-Money Laundering]]
+- supports:: [[Regulatory Compliance]]
+- requires:: [[Financial Regulation]]
+- dependsOn:: [[Financial Stability]]
+- implements:: [[Financial Regulation]]
+- standardizedBy:: [[FSB]]
+- standardizedBy:: [[G20]]
+- partOf:: [[Financial Regulation]]
+- bridgesTo:: [[Basel Committee]]
+- contrastsWith:: [[Prudential Regulation]]
+- relatedTo:: [[FSB]]
+- relatedTo:: [[Compliance]]
+- relatedTo:: [[Central Bank]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

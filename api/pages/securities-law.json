@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:securities-law",
+  "title": "Securities Law",
+  "slug": "securities-law",
+  "public": true,
+  "classIri": "urn:ngm:class:securities-law",
+  "domain": "blockchain",
+  "definition": "Securities law is the body of statutory and regulatory rules governing the issuance, sale, and trading of financial instruments classified as securities, with the aim of protecting investors and ensuring fair, transparent markets. It defines disclosure obligations, registration requirements, and anti-fraud provisions, and applies tests to determine when an instrument such as a token constitutes a security. In the digital-asset context it shapes whether token offerings must register and comply with investor-protection regimes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:kyc-aml",
+        "label": "KYC/AML"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      },
+      {
+        "id": "urn:ngm:class:ico",
+        "label": "ICO"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:howey-test",
+        "label": "Howey Test"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:sec",
+        "label": "SEC"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:ico",
+        "label": "ICO"
+      },
+      {
+        "id": "urn:ngm:class:security-token-offering",
+        "label": "Security Token Offering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "virtual-securities-offering-vso",
+      "label": "Virtual Securities Offering (VSO)"
+    }
+  ]
+}

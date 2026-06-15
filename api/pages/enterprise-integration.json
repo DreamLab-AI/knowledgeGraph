@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:enterprise-integration",
+  "title": "Enterprise Integration",
+  "slug": "enterprise-integration",
+  "public": true,
+  "classIri": "urn:ngm:class:enterprise-integration",
+  "domain": "infrastructure",
+  "definition": "Enterprise integration is the discipline of connecting an organisation's disparate applications, data stores and processes so they operate as a coherent whole, exchanging information and coordinating workflows across system and organisational boundaries. It employs patterns such as messaging, APIs, service buses and event-driven architectures to overcome heterogeneity in technology, format and ownership. It underpins enterprise architecture, automation and end-to-end business processes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      },
+      {
+        "id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      },
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:service-oriented-architecture",
+        "label": "Service-Oriented Architecture"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "id": "urn:ngm:class:middleware",
+        "label": "Middleware"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      },
+      {
+        "id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:enterprise-architecture",
+        "label": "Enterprise Architecture"
+      },
+      {
+        "id": "urn:ngm:class:system-integration",
+        "label": "System Integration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

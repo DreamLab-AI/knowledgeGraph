@@ -1,0 +1,39 @@
+- ### Definition
+  - A shading model describes how a surface responds to light, producing the final colour at each point. It is built on the [[BRDF]] and a [[Material System]], evaluated by a [[Shader]], and increasingly follows [[Physically Based Rendering]] principles within the [[Graphics Pipeline]].
+- ### Overview
+  - Shading models answer the central rendering question: given the lights, the surface and the camera, what colour reaches the eye? They formalise reflection, scattering and emission as functions of material parameters and geometry.
+  - Classic empirical models such as Lambert and Phong are computationally cheap but only loosely physical. Physically based shading models instead enforce energy conservation and reciprocity, yielding more consistent, realistic results across lighting conditions.
+  - The chosen model defines the meaning of material authoring parameters like base colour, roughness and metalness, which is why interchange formats standardise on a small number of well-defined shading models.
+- ### Key aspects
+  - Reflectance function: a BRDF maps incoming to outgoing radiance per direction.
+  - Parameterisation: albedo, roughness, metalness and normals drive appearance.
+  - Energy conservation: physically based models never reflect more light than received.
+  - Specular and diffuse terms: surfaces combine sharp highlights with broad scattering.
+  - Real-time vs offline: trade-offs in fidelity against per-pixel cost.
+- ### Mechanisms
+  - Microfacet BRDF evaluation in fragment or compute shaders.
+  - Texture sampling to vary material parameters across a surface.
+  - Image-based lighting and global illumination to supply incident radiance.
+  - Tone mapping to fit high-dynamic-range shading output to displays.
+- ### Applications
+  - Real-time rendering in game and XR engines.
+  - Offline rendering for film and product visualisation.
+  - Material authoring and interchange across content pipelines.
+- ### Relationships
+  - hasPart:: [[BRDF]]
+  - hasPart:: [[Material System]]
+  - uses:: [[Shader]]
+  - uses:: [[Texture Mapping]]
+  - implements:: [[Physically Based Rendering]]
+  - enables:: [[Real-Time Rendering]]
+  - enables:: [[Global Illumination]]
+  - partOf:: [[Graphics Pipeline]]
+  - supports:: [[GPU Rendering]]
+  - dependsOn:: [[BRDF]]
+  - relatedTo:: [[Rendering Technique]]
+  - relatedTo:: [[Material System]]
+  - relatedTo:: [[Physically Based Rendering]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

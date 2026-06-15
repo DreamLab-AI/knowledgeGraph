@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:non-volatile-memory",
+  "title": "Non Volatile Memory",
+  "slug": "non-volatile-memory",
+  "public": true,
+  "classIri": "urn:ngm:class:non-volatile-memory",
+  "domain": "infrastructure",
+  "definition": "Non-volatile memory (NVM) is computer storage that retains its data after power is removed, in contrast to volatile memory such as DRAM and SRAM. It encompasses technologies including NAND and NOR flash, EEPROM, and emerging persistent-memory devices that combine byte-addressability with durability. NVM is fundamental to firmware storage, embedded systems, solid-state drives, and the bootstrapping of computing platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:power-management",
+        "label": "Power Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:firmware",
+        "label": "Firmware"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:hardware",
+        "label": "Hardware"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sram",
+        "label": "SRAM"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:microcontroller",
+        "label": "Microcontroller"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:memory",
+        "label": "Memory"
+      },
+      {
+        "id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      },
+      {
+        "id": "urn:ngm:class:iot",
+        "label": "IoT"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

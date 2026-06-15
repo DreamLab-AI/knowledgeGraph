@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:welfare-economics",
+  "title": "Welfare Economics",
+  "slug": "welfare-economics",
+  "public": true,
+  "classIri": "urn:ngm:class:welfare-economics",
+  "domain": "blockchain",
+  "definition": "Welfare economics is the branch of economics that evaluates the allocation of resources and the distribution of outcomes in terms of aggregate social well-being. It formalises notions of efficiency, principally Pareto efficiency, alongside frameworks for comparing distributions through social welfare functions, and provides the normative basis for assessing market outcomes, market failures, and policy interventions. In tokenised and blockchain economies it informs mechanism design, public-goods funding, and the analysis of incentive structures that determine whether decentralised systems produce socially desirable equilibria.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:microeconomics",
+      "label": "Microeconomics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:microeconomics",
+        "label": "Microeconomics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:mechanism-design",
+        "label": "Mechanism Design"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      },
+      {
+        "id": "urn:ngm:class:public-goods",
+        "label": "Public Goods"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ]
+}

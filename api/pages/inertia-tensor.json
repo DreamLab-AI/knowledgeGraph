@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:inertia-tensor",
+  "title": "Inertia Tensor",
+  "slug": "inertia-tensor",
+  "public": true,
+  "classIri": "urn:ngm:class:inertia-tensor",
+  "domain": "robotics",
+  "definition": "The inertia tensor is a 3x3 symmetric matrix that characterises how a rigid body's mass is distributed about a reference point, relating the body's angular velocity to its angular momentum. Its diagonal entries are the moments of inertia about the coordinate axes and its off-diagonal entries are the products of inertia. It is a foundational quantity in rigid-body dynamics, enabling computation of rotational acceleration under applied torques.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-dynamics",
+      "label": "Robot Dynamics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rigid-body",
+        "label": "Rigid Body"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:dynamics",
+        "label": "Dynamics"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:torque",
+        "label": "Torque"
+      },
+      {
+        "id": "urn:ngm:class:velocity",
+        "label": "Velocity"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rigid-body-dynamics",
+        "label": "Rigid Body Dynamics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:robot-dynamics",
+        "label": "Robot Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:forward-kinematics",
+        "label": "Forward Kinematics"
+      },
+      {
+        "id": "urn:ngm:class:inverse-kinematics",
+        "label": "Inverse Kinematics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    }
+  ]
+}

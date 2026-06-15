@@ -16,12 +16,7 @@
   "qualityScore": 0.73,
   "maturity": "established",
   "relationships": {
-    "hasPart": [
-      {
-        "id": "urn:ngm:class:tutorial",
-        "label": "Tutorial"
-      }
-    ],
+    "hasPart": [],
     "requires": [],
     "enables": [
       {

@@ -122,10 +122,6 @@ alias:: FeatureEngineering
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:domain-knowledge",
-        "label": "Domain Knowledge"
-      },
-      {
         "@id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
       }

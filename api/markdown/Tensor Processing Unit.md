@@ -94,7 +94,7 @@ public:: true
         "label": "Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:deep-learning-training",
+        "@id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning Training"
       },
       {

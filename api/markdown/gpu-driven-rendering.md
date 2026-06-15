@@ -1,0 +1,39 @@
+- ### Definition
+- GPU-driven rendering is a [[Real-Time Rendering]] architecture where the [[GPU]] decides and issues its own draw commands.
+- It implements an advanced form of [[GPU Rendering]].
+- It uses the [[Compute Shader]] and [[GPU Compute]] for culling and command generation.
+- It enables scalable [[Level of Detail]] and [[Frustum Culling]] on device.
+- ### Overview
+- Traditional rendering relies on the CPU to traverse the scene and submit each draw, which becomes a bottleneck at high object counts.
+- GPU-driven rendering shifts visibility determination and command building onto the GPU using compute and indirect-draw mechanisms.
+- This minimises CPU overhead, reduces draw-call cost, and keeps the GPU saturated, allowing far larger and more detailed scenes.
+- It depends on modern graphics APIs and compiled shaders that support indirect, multi-draw execution.
+- ### Mechanisms
+- Compute-shader culling computing visible instances on the GPU.
+- Indirect and multi-draw commands generated without CPU per-object submission.
+- On-device level-of-detail selection and instance compaction.
+- Persistent GPU buffers holding scene and draw metadata.
+- ### Applications
+- Open-world and large-scene real-time engines.
+- High-instance-count vegetation, crowds, and debris.
+- Virtual and augmented reality demanding high throughput.
+- Pipelines targeting modern explicit graphics APIs.
+- ### Relationships
+- partOf:: [[Rendering Pipeline]]
+- partOf:: [[Real-Time Rendering]]
+- implements:: [[GPU Rendering]]
+- enables:: [[Level of Detail]]
+- enables:: [[Frustum Culling]]
+- uses:: [[Compute Shader]]
+- uses:: [[GPU Compute]]
+- uses:: [[Graphics API]]
+- requires:: [[GPU]]
+- requires:: [[Shader Compiler]]
+- requires:: [[Parallel Computing]]
+- supports:: [[Rasterization]]
+- relatedTo:: [[Vulkan]]
+- relatedTo:: [[Graphics Pipeline]]
+- relatedTo:: [[Computer Graphics]]
+- dependsOn:: [[GPU]]
+- ### Provenance
+- updated:: 2026-06-15

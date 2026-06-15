@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:cognitive-load",
+  "title": "Cognitive Load",
+  "slug": "cognitive-load",
+  "public": true,
+  "classIri": "urn:ngm:class:cognitive-load",
+  "domain": "spatial-computing",
+  "definition": "Cognitive load is the total amount of working-memory resource demanded by a task, interface, or learning activity at a given moment. It is commonly decomposed into intrinsic load (inherent task difficulty), extraneous load (imposed by poor presentation), and germane load (effort devoted to building durable mental schemas). Managing cognitive load is a central goal of user-experience and interaction design, since exceeding a user's capacity degrades comprehension, accuracy, and satisfaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-experience",
+      "label": "User Experience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
+      },
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

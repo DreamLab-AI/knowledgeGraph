@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:health-check",
+  "title": "Health Check",
+  "slug": "health-check",
+  "public": true,
+  "classIri": "urn:ngm:class:health-check",
+  "domain": "distributed-systems",
+  "definition": "A health check is a periodic probe that determines whether a service instance is functioning correctly and able to handle requests. Health checks distinguish between liveness, whether a process is running and should be restarted if not, and readiness, whether it is prepared to receive traffic. Load balancers, orchestrators, and service meshes use health checks to route around failed instances, trigger restarts, and gate traffic, making them a foundational primitive for high availability and self-healing distributed systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:high-availability",
+      "label": "High Availability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:liveness",
+        "label": "Liveness"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:auto-scaling",
+        "label": "Auto Scaling"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:graceful-degradation",
+        "label": "Graceful Degradation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:circuit-breaker",
+        "label": "Circuit Breaker"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:heartbeat-mechanism",
+        "label": "Heartbeat Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:load-balancer",
+        "label": "Load Balancer"
+      },
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:uptime",
+        "label": "Uptime"
+      },
+      {
+        "id": "urn:ngm:class:service-level-agreement",
+        "label": "Service Level Agreement"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

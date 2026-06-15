@@ -1,0 +1,40 @@
+- ### Definition
+  - [[International Trade]] is the cross-border exchange of goods, services, and capital between national economies.
+  - It lets countries specialise by comparative advantage and reach markets and resources beyond their borders.
+  - It is studied within [[Macroeconomics]] and recorded in the [[Balance of Payments]].
+- ### Overview
+  - Trade arises because countries differ in endowments, technology, and costs, so exchange raises aggregate welfare relative to autarky.
+  - Flows are shaped by tariffs, quotas, exchange rates, and agreements, and are overseen multilaterally by the [[World Trade Organization]].
+  - Exports and imports feed directly into national accounts and the [[Balance of Payments]].
+- ### Key aspects
+  - Comparative advantage as the core gains-from-trade principle.
+  - Exports, imports, and the resulting trade balance.
+  - Tariffs, trade agreements, and customs procedures.
+  - Deep linkage to global [[Supply Chain]] networks.
+- ### Mechanisms
+  - Bilateral and multilateral trade agreements lowering barriers.
+  - Customs valuation, classification, and clearance via [[Customs]].
+  - Exchange-rate adjustment affecting competitiveness.
+  - Dispute settlement under the [[World Trade Organization]].
+- ### Applications
+  - Driving [[Economic Growth]] through market access and specialisation.
+  - Coordinating cross-border [[Supply Chain]] sourcing.
+  - Informing trade and industrial policy.
+  - Contributing net exports to [[Gross Domestic Product]].
+- ### Relationships
+  - enables:: [[Economic Growth]]
+  - hasPart:: [[Global Trade]]
+  - hasPart:: [[Customs]]
+  - supports:: [[Supply Chain]]
+  - uses:: [[Balance of Payments]]
+  - standardizedBy:: [[World Trade Organization]]
+  - requires:: [[Customs]]
+  - relatedTo:: [[Macroeconomics]]
+  - relatedTo:: [[Gross Domestic Product]]
+  - relatedTo:: [[Global Trade]]
+  - dependsOn:: [[Supply Chain]]
+  - partOf:: [[Macroeconomics]]
+- ### Provenance
+  - inferenceRule:: GapMaterialisation
+  - attributedTo:: did:nostr:ontology-mesh
+  - updated:: 2026-06-15

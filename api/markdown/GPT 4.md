@@ -149,7 +149,7 @@ public:: true
         "label": "AI Alignment"
       },
       {
-        "@id": "urn:ngm:class:neural-scaling-laws",
+        "@id": "urn:ngm:class:scaling-laws",
         "label": "Neural Scaling Laws"
       },
       {

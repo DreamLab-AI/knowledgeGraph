@@ -238,7 +238,7 @@ public:: true
         "label": "GDPR"
       },
       {
-        "@id": "urn:ngm:class:environmental-impact-assessment",
+        "@id": "urn:ngm:class:environmental-assessment",
         "label": "Environmental Impact Assessment"
       }
     ],

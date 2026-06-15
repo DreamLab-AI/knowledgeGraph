@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:jedec",
+  "title": "Jedec",
+  "slug": "jedec",
+  "public": true,
+  "classIri": "urn:ngm:class:jedec",
+  "domain": "infrastructure",
+  "definition": "JEDEC (the JEDEC Solid State Technology Association) is the global standards body that develops open specifications for semiconductor memory and packaging. It defines the electrical, mechanical and timing standards for technologies such as DRAM, DDR5, HBM and NAND flash, ensuring components from different manufacturers interoperate. JEDEC standards underpin the memory subsystems of virtually all modern computing infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:standardisation",
+        "label": "Standardisation"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:protocol-standard",
+        "label": "Protocol Standard"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:hardware-design",
+        "label": "Hardware Design"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:hardware-component",
+        "label": "Hardware Component"
+      },
+      {
+        "id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-standards",
+        "label": "IEEE Standards"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:network-architecture",
+        "label": "Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:semiconductor-manufacturing",
+        "label": "Semiconductor Manufacturing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

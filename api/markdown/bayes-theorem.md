@@ -1,0 +1,34 @@
+- ### Definition
+  - Bayes' theorem updates a hypothesis given evidence within [[Probability Theory]].
+  - It is the core mechanism of [[Bayesian Inference]] and [[Statistical Inference]].
+  - It underpins probabilistic [[Reasoning]] using a [[Probabilistic Model]].
+- ### Overview
+  - Posterior is proportional to prior times likelihood, normalised by evidence.
+  - Provides a principled rule for belief revision under uncertainty.
+  - Generalises from single hypotheses to full Bayesian networks and models.
+- ### Key aspects
+  - Prior, likelihood, evidence, and posterior components.
+  - Sequential updating as new data arrives.
+  - Conjugate priors for tractable closed-form updates.
+  - Foundation of naive Bayes classifiers and Bayesian networks.
+- ### Applications
+  - Spam filtering and probabilistic classification.
+  - Medical diagnosis and risk assessment.
+  - Sensor fusion and robotic localisation.
+  - Bayesian machine learning and uncertainty quantification.
+- ### Relationships
+  - partOf:: [[Probability Theory]]
+  - implements:: [[Bayesian Inference]]
+  - enables:: [[Bayesian Inference]]
+  - enables:: [[Statistical Inference]]
+  - dependsOn:: [[Probability Theory]]
+  - dependsOn:: [[Probabilistic Model]]
+  - supports:: [[Inference]]
+  - supports:: [[Reasoning]]
+  - uses:: [[Probabilistic Model]]
+  - relatedTo:: [[Statistical Inference]]
+  - relatedTo:: [[Inference]]
+  - relatedTo:: [[Artificial Intelligence]]
+  - bridgesTo:: [[Machine Learning]]
+- ### Provenance
+  - updated:: 2026-06-15

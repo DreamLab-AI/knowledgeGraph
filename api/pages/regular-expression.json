@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:regular-expression",
+  "title": "Regular Expression",
+  "slug": "regular-expression",
+  "public": true,
+  "classIri": "urn:ngm:class:regular-expression",
+  "domain": "standards",
+  "definition": "A regular expression is a formal notation for describing sets of strings using a concise pattern language built from literals, character classes, quantifiers, and grouping. Regular expressions describe exactly the class of regular languages and are typically implemented by compiling the pattern into a finite-state machine for efficient matching. They are a foundational tool for searching, validating, and transforming text.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:formal-language",
+      "label": "Formal Language"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:posix",
+        "label": "POSIX"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:algorithm",
+        "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:data-validation",
+        "label": "Data Validation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "state-machine",
+      "label": "State Machine"
+    }
+  ]
+}

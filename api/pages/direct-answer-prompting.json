@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:direct-answer-prompting",
+  "title": "Direct Answer Prompting",
+  "slug": "direct-answer-prompting",
+  "public": true,
+  "classIri": "urn:ngm:class:direct-answer-prompting",
+  "domain": "artificial-intelligence",
+  "definition": "Direct answer prompting is a prompting strategy in which a large language model is instructed to produce a final answer immediately, without showing intermediate reasoning steps. It contrasts with chain-of-thought approaches by optimising for brevity, latency and cost on tasks where extended reasoning offers little benefit. The technique is used when an answer is expected to be retrievable or shallow, trading interpretability and complex-reasoning accuracy for efficiency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:standard-prompting",
+        "label": "Standard Prompting"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:prompt-template",
+        "label": "Prompt Template"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-shot-prompting",
+        "label": "Zero-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:prompt-template",
+        "label": "Prompt Template"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

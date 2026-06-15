@@ -1,0 +1,33 @@
+- ### Definition
+  - [[Geometry Processing]] manipulates geometric models such as the [[Polygon Mesh]] and [[Point Cloud]] using [[Computational Geometry]] and [[Linear Algebra]], feeding the [[Real-Time Rendering Pipeline]].
+- ### Overview
+  - Acquires, represents and transforms geometric data, chiefly meshes and point clouds.
+  - Includes smoothing, simplification, parameterisation, remeshing and reconstruction.
+  - Bridges raw captured geometry to clean, renderable and simulatable models.
+- ### Key aspects
+  - Mesh data structures and connectivity representations.
+  - Surface parameterisation and texture coordinate generation.
+  - Mesh simplification and level-of-detail generation.
+  - Surface reconstruction from point clouds and noisy scans.
+- ### Applications
+  - 3D content creation and asset optimisation.
+  - Real-time rendering and game engine pipelines.
+  - Digital twins and simulation geometry preparation.
+  - 3D scanning and reverse engineering workflows.
+- ### Relationships
+  - uses:: [[Computational Geometry]]
+  - uses:: [[Linear Algebra]]
+  - hasPart:: [[Triangulation]]
+  - hasPart:: [[Texture Mapping]]
+  - relatedTo:: [[Polygon Mesh]]
+  - relatedTo:: [[Point Cloud]]
+  - enables:: [[Real-Time Rendering Pipeline]]
+  - enables:: [[Level of Detail]]
+  - partOf:: [[3D Modelling]]
+  - supports:: [[Collision Detection]]
+  - supports:: [[Physics Simulation]]
+  - requires:: [[Polygon Mesh]]
+  - bridgesTo:: [[Digital Twin]]
+  - dependsOn:: [[Computational Geometry]]
+- ### Provenance
+  - updated:: 2026-06-15

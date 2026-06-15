@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:competency-based-education",
+  "title": "Competency Based Education",
+  "slug": "competency-based-education",
+  "public": true,
+  "classIri": "urn:ngm:class:competency-based-education",
+  "domain": "artificial-intelligence",
+  "definition": "Competency-Based Education is an instructional model that grants progression and credentials based on demonstrated mastery of defined competencies rather than time spent in instruction. Learners advance when they can prove they have met explicit, measurable outcomes, often supported by personalised pacing and frequent assessment. The approach relies on learning analytics and educational technology to track and verify competency attainment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:education-technology",
+      "label": "Education Technology"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

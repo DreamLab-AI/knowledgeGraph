@@ -1,0 +1,42 @@
+- ### Definition
+  - [[Token]]
+  - [[Smart Contract]]
+  - [[Transaction]]
+  - [[ERC-20]]
+  - [[Ledger]]
+- ### Overview
+  - Expresses value movement as a deterministic, atomic state transition on the ledger.
+  - Inherits the security and finality guarantees of the underlying consensus mechanism.
+  - Standardised interfaces make transfers composable across wallets, exchanges, and protocols.
+- ### Mechanisms
+  - Balance bookkeeping: a contract decrements the sender and increments the recipient.
+  - Allowance and approval flows enabling third-party transfers on a holder's behalf.
+  - Event emission so off-chain indexers and applications can observe transfers.
+  - Gas accounting that meters and prices the computation and storage involved.
+  - Atomicity ensuring a transfer either fully succeeds or reverts with no partial state.
+- ### Applications
+  - Peer-to-peer payments and remittances in cryptocurrency.
+  - Order settlement on decentralised exchanges and automated market makers.
+  - Collateral movement and liquidations in DeFi lending protocols.
+  - Distribution of governance and reward tokens to participants.
+- ### Relationships
+  - partOf:: [[Smart Contract Execution]]
+  - dependsOn:: [[Smart Contract]]
+  - dependsOn:: [[Gas]]
+  - uses:: [[Token Standard]]
+  - uses:: [[ERC-20]]
+  - uses:: [[Wallet]]
+  - enables:: [[Decentralised Finance]]
+  - enables:: [[Tokenisation]]
+  - supports:: [[Token Economics]]
+  - supports:: [[Cryptocurrency]]
+  - requires:: [[Consensus]]
+  - implements:: [[Token]]
+  - relatedTo:: [[Ledger]]
+  - relatedTo:: [[Fungible Token]]
+  - relatedTo:: [[Event Log]]
+  - relatedTo:: [[Non-Fungible Token]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

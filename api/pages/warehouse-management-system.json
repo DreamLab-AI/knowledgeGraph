@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:warehouse-management-system",
+  "title": "Warehouse Management System",
+  "slug": "warehouse-management-system",
+  "public": true,
+  "classIri": "urn:ngm:class:warehouse-management-system",
+  "domain": "robotics",
+  "definition": "A warehouse management system (WMS) is the software platform that orchestrates and optimises the day-to-day operations of a warehouse or distribution centre, controlling receiving, putaway, storage location, inventory tracking, order picking, packing, and despatch. It maintains a real-time digital model of stock and locations, directs labour and equipment via task assignment, and integrates with enterprise resource planning, transport, and automation layers. As the control plane for intralogistics, the WMS underpins inventory accuracy, fulfilment throughput, and coordination with robotic warehouse automation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:inventory-management",
+      "label": "Inventory Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:logistics-management",
+        "label": "Logistics Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:enterprise-resource-planning",
+        "label": "Enterprise Resource Planning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:fleet-management",
+        "label": "Robot Fleet Management"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:barcode",
+        "label": "Barcode"
+      },
+      {
+        "id": "urn:ngm:class:rfid",
+        "label": "RFID"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-management",
+        "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    }
+  ]
+}

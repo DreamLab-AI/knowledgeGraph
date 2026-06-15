@@ -1,0 +1,49 @@
+- ### Definition
+  - Computational Linguistics is the interdisciplinary study of language from a computational perspective, developing formal models and algorithms that enable computers to analyse, generate and understand human language.
+  - Related concepts: [[Natural Language Processing]] [[Machine Learning]] [[Language Model]] [[Linguistics]] [[Information Retrieval]]
+- ### Overview
+  - Computational Linguistics is the interdisciplinary study of language from a computational perspective, developing formal models and algorithms that enable computers to analyse, generate and understand human language.
+  - It draws on theoretical linguistics, computer science and statistics to model phenomena such as syntax, semantics and discourse.
+  - The field underpins practical natural language processing systems and provides the scientific grounding for language technologies.
+  - It is modelled as a subclass of [[Natural Language Processing]] within the machine-learning domain.
+- ### Key aspects
+  - [[Tokenization]] is a constituent or mechanism relevant to Computational Linguistics.
+  - [[Named Entity Recognition]] is a constituent or mechanism relevant to Computational Linguistics.
+  - [[Language Model]] is a constituent or mechanism relevant to Computational Linguistics.
+  - [[Word Embedding]] is a constituent or mechanism relevant to Computational Linguistics.
+  - [[Transformer]] is a constituent or mechanism relevant to Computational Linguistics.
+- ### Mechanisms
+  - Computational Linguistics enables [[Machine Translation]].
+  - Computational Linguistics enables [[Sentiment Analysis]].
+  - Computational Linguistics enables [[Question Answering]].
+  - Computational Linguistics supports [[Speech Recognition]].
+  - Computational Linguistics supports [[Text Mining]].
+- ### Applications
+  - Applied in contexts involving [[Machine Translation]].
+  - Applied in contexts involving [[Sentiment Analysis]].
+  - Applied in contexts involving [[Question Answering]].
+  - Applied in contexts involving [[Speech Recognition]].
+  - Applied in contexts involving [[Text Mining]].
+  - Applied in contexts involving [[Large Language Model]].
+- ### Relationships
+  - subClassOf:: [[Natural Language Processing]]
+  - partOf:: [[Natural Language Processing]]
+  - bridgesTo:: [[Machine Learning]]
+  - bridgesTo:: [[Information Retrieval]]
+  - hasPart:: [[Tokenization]]
+  - hasPart:: [[Named Entity Recognition]]
+  - uses:: [[Language Model]]
+  - uses:: [[Word Embedding]]
+  - uses:: [[Transformer]]
+  - enables:: [[Machine Translation]]
+  - enables:: [[Sentiment Analysis]]
+  - enables:: [[Question Answering]]
+  - supports:: [[Speech Recognition]]
+  - supports:: [[Text Mining]]
+  - relatedTo:: [[Large Language Model]]
+  - relatedTo:: [[Artificial Intelligence]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

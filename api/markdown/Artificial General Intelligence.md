@@ -568,7 +568,7 @@ public:: true
         "label": "Chain-of-Thought Reasoning"
       },
       {
-        "@id": "urn:ngm:class:inference-time-compute",
+        "@id": "urn:ngm:class:inference-compute",
         "label": "Inference-Time Compute"
       },
       {

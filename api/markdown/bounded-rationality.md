@@ -1,0 +1,36 @@
+- ### Definition
+  - Bounded rationality is the principle that decision-makers are constrained by limited information, finite cognitive resources and time pressure, and therefore seek satisfactory rather than optimal outcomes. It contrasts with the idealised fully rational agent of classical economics and informs models of human and artificial decision behaviour. The concept grounds heuristics, satisficing and resource-rational approaches to reasoning.
+  - Related: [[Decision Making]] [[Behavioural Economics]] [[Cognitive Science]] [[Reasoning]]
+- ### Overview
+  - Bounded rationality reframes rationality as adaptive use of limited cognitive resources. Rather than computing globally optimal solutions, agents apply heuristics that perform well under realistic constraints, accepting outcomes that are good enough.
+- ### Key aspects
+  - Cognitive and computational limits on information processing
+  - Satisficing: accepting options above an aspiration threshold
+  - Heuristics that trade accuracy for tractability
+  - Sensitivity to how choices are framed and presented
+  - Influence of incomplete and asymmetric information
+- ### Applications
+  - Behavioural economics models of consumer and market behaviour
+  - Design of decision-support and recommendation systems
+  - Resource-rational models in cognitive science and AI
+  - Agent-based simulations of markets and organisations
+- ### Relationships
+  - subClassOf:: [[Decision Making]]
+  - contrastsWith:: [[Optimisation]]
+  - supports:: [[Behavioural Economics]]
+  - supports:: [[Decision Support]]
+  - requires:: [[Reasoning]]
+  - hasPart:: [[Information Asymmetry]]
+  - partOf:: [[Decision Making]]
+  - enables:: [[Agent-Based Modelling]]
+  - uses:: [[Reasoning]]
+  - uses:: [[Game Theory]]
+  - relatedTo:: [[Cognitive Science]]
+  - relatedTo:: [[Economics]]
+  - relatedTo:: [[Artificial Intelligence]]
+  - bridgesTo:: [[Behavioural Economics]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

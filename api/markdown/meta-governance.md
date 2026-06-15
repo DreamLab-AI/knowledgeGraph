@@ -1,0 +1,34 @@
+- ### Definition
+  - [[Meta Governance]] is the governance of governance itself — the meta-level rules that decide how a [[Decentralized Governance]] system allocates voting power, sets parameters, and amends its own [[Voting System]]. In DeFi it also denotes one protocol controlling the [[Governance Token]] votes of another.
+- ### Overview
+  - Every governance system rests on choices about who can propose, who can vote, what thresholds apply, and how those rules change. Meta governance makes these second-order choices explicit and contestable rather than fixed, allowing communities to evolve their constitution.
+  - In composable DeFi, meta governance also arises mechanically: a protocol that accumulates the governance tokens of integrated protocols gains influence over them, creating layered, sometimes recursive, decision structures across the ecosystem.
+- ### Key aspects
+  - Parameter governance controls quorum, thresholds, timelocks, and delegation rules.
+  - Constitutional amendment defines how the governance rules themselves can be revised.
+  - Vote aggregation across protocols concentrates or distributes meta-level influence.
+  - Escalation and emergency mechanisms balance agility against capture resistance.
+- ### Applications
+  - DeFi protocols holding and directing the governance tokens of partner protocols.
+  - DAO frameworks parameterising voting, delegation, and proposal lifecycles.
+  - [[Polycentric Governance]] arrangements coordinating multiple decision centres.
+  - Treasury and incentive committees operating under amendable mandates.
+- ### Relationships
+  - partOf:: [[Decentralized Governance]]
+  - partOf:: [[On-Chain Governance]]
+  - hasPart:: [[Voting System]]
+  - hasPart:: [[Governance Token]]
+  - enables:: [[Polycentric Governance]]
+  - enables:: [[DAO Governance]]
+  - supports:: [[DAO]]
+  - supports:: [[Treasury Management]]
+  - uses:: [[Governance Token]]
+  - uses:: [[Voting Mechanism]]
+  - requires:: [[On-Chain Governance]]
+  - implements:: [[Decentralized Governance]]
+  - contrastsWith:: [[Polycentric Governance]]
+  - relatedTo:: [[DAO]]
+  - relatedTo:: [[Polycentric Governance]]
+  - bridgesTo:: [[Blockchain]]
+- ### Provenance
+  - updated:: 2026-06-15

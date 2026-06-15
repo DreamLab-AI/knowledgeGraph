@@ -1,0 +1,36 @@
+- ### Definition
+- Biodiversity conservation protects and restores the variety of life as a core component of [[Environmental Sustainability]].
+- It is informed by [[Environmental Monitoring]] of species and habitats and contributes to [[Climate Change Mitigation]] through intact ecosystems.
+- It increasingly intersects with [[ESG]] reporting and [[Climate Finance]] through biodiversity and nature-related markets.
+- ### Overview
+- Conservation spans genetic, species and ecosystem diversity, recognising that ecological function and resilience depend on maintaining variety at every level. Strategies range from strict protection to sustainable use that aligns human livelihoods with healthy ecosystems.
+- The field has shifted from isolated reserve management toward landscape-scale, data-driven approaches that integrate monitoring, community stewardship and economic incentives.
+- International frameworks set targets for habitat protection and restoration, while finance mechanisms attempt to value nature so that conservation competes with extractive land use.
+- ### Key aspects
+- Establishment and effective management of protected and conserved areas.
+- Species recovery, reintroduction and anti-poaching programmes.
+- Habitat restoration and ecological connectivity across landscapes.
+- Monitoring via field surveys, remote sensing and bioacoustic sensors.
+- Policy instruments, payments for ecosystem services and biodiversity credits.
+- ### Applications
+- National and transboundary protected-area networks.
+- Corporate nature and biodiversity disclosures under ESG frameworks.
+- Nature-based solutions that jointly deliver carbon and biodiversity outcomes.
+- ### Relationships
+- partOf:: [[Environmental Sustainability]]
+- uses:: [[Environmental Monitoring]]
+- enables:: [[Climate Change Mitigation]]
+- supports:: [[Environmental Sustainability]]
+- supports:: [[ESG]]
+- requires:: [[Environmental Monitoring]]
+- dependsOn:: [[Climate Change Mitigation]]
+- implements:: [[Environmental Sustainability]]
+- bridgesTo:: [[Carbon Credits]]
+- contrastsWith:: [[Carbon Offset]]
+- relatedTo:: [[ESG]]
+- relatedTo:: [[Climate Finance]]
+- relatedTo:: [[Environmental Monitoring]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

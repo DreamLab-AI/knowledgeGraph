@@ -1,0 +1,36 @@
+- ### Definition
+  - A [[Power Distribution Unit]] manages [[Energy and Power]] delivery within a [[Data Centre]], drawing from a [[Power Supply]] and supporting [[Redundancy]] and [[High Availability]].
+- ### Overview
+  - A PDU sits between an upstream power source and the equipment it feeds, providing a controlled set of outlets at the rack level.
+  - Basic PDUs simply split a circuit, while intelligent (metered, monitored or switched) PDUs report consumption and allow remote control.
+  - PDUs are a core element of data-centre power architecture, contributing to availability targets and to power-usage-effectiveness measurement.
+- ### Key aspects
+  - Outlet density, form factor (vertical/horizontal) and supported voltage/current ratings.
+  - Metering granularity (inlet, branch or per-outlet) for capacity planning and billing.
+  - Remote switching for staged power-up, load shedding and recovery automation.
+  - Environmental sensing (temperature, humidity) integrated for thermal management.
+- ### Applications
+  - Rack-level power delivery in enterprise and colocation data centres.
+  - Per-outlet metering for chargeback and energy-efficiency reporting.
+  - Remote reboot of unresponsive equipment without on-site staff.
+  - Capacity and redundancy planning across A/B power feeds.
+- ### Relationships
+  - partOf:: [[Data Centre]]
+  - partOf:: [[Computing Infrastructure]]
+  - hasPart:: [[Power Supply]]
+  - hasPart:: [[Monitoring]]
+  - dependsOn:: [[Energy and Power]]
+  - dependsOn:: [[Power Supply]]
+  - requires:: [[Redundancy]]
+  - requires:: [[High Availability]]
+  - supports:: [[Data Centre]]
+  - supports:: [[High Availability]]
+  - supports:: [[Energy Efficiency]]
+  - enables:: [[Observability]]
+  - enables:: [[Fault Tolerance]]
+  - contrastsWith:: [[Power Supply]]
+  - relatedTo:: [[Cooling System]]
+  - relatedTo:: [[Sustainability]]
+- ### Provenance
+  - This class was materialised to resolve existing inbound references in the knowledge graph.
+  - updated:: 2026-06-15

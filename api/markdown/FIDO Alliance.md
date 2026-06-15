@@ -143,7 +143,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:password-based-authentication",
+        "@id": "urn:ngm:class:password-authentication",
         "label": "Password-Based Authentication"
       },
       {

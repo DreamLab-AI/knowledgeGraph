@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:mining-node",
+  "title": "Mining Node",
+  "slug": "mining-node",
+  "public": true,
+  "classIri": "urn:ngm:class:mining-node",
+  "domain": "blockchain",
+  "definition": "A mining node is a blockchain participant that not only validates and relays transactions but also competes to produce new blocks by performing proof-of-work computation. It assembles pending transactions into candidate blocks and searches for a valid solution that allows the block to be added to the chain. Mining nodes secure proof-of-work networks and are rewarded for the blocks they successfully add.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:full-node",
+      "label": "Full Node"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:proof-of-work",
+        "label": "Proof Of Work"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:validator-node",
+        "label": "Validator Node"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      },
+      {
+        "id": "urn:ngm:class:block-validation",
+        "label": "Block Validation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-network",
+        "label": "Blockchain Network"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mining",
+        "label": "Mining"
+      },
+      {
+        "id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    }
+  ]
+}

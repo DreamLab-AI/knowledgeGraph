@@ -1,0 +1,39 @@
+- ### Definition
+  - [[Risk Assessment]]
+  - [[Safety]]
+  - [[Functional Safety]]
+  - [[Hazard Analysis]]
+  - [[ISO 13482]]
+- ### Overview
+  - Establishes the foundational inventory of harms that every later risk decision references.
+  - Combines structured techniques with operational and historical evidence to avoid blind spots.
+  - Is iterative: new hazards surface as designs, environments, and use cases evolve.
+- ### Mechanisms
+  - Checklist, HAZOP, and what-if reviews to provoke systematic discovery of hazards.
+  - Fault-tree and FMEA decomposition to trace causes and failure modes.
+  - Task and use-case analysis covering foreseeable misuse and human-robot contact.
+  - Severity and exposure tagging to feed quantitative risk evaluation.
+  - Traceability linking each hazard to required mitigations and verification evidence.
+- ### Applications
+  - Compliance assessment for personal-care and collaborative robots under ISO 13482.
+  - Machinery and industrial automation safety reviews.
+  - Process-safety studies in chemical and energy plants.
+  - Pre-deployment safety cases for autonomous and mobile systems.
+- ### Relationships
+  - partOf:: [[Risk Assessment]]
+  - hasPart:: [[Hazard Analysis]]
+  - hasPart:: [[Fault Tree Analysis]]
+  - hasPart:: [[Failure Mode and Effects Analysis]]
+  - enables:: [[Risk Mitigation]]
+  - requires:: [[Safety Engineering]]
+  - supports:: [[Functional Safety]]
+  - supports:: [[Safety Case]]
+  - standardizedBy:: [[ISO 13482]]
+  - uses:: [[Collision Avoidance]]
+  - relatedTo:: [[Safety]]
+  - relatedTo:: [[Risk Management]]
+  - relatedTo:: [[Reliability]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

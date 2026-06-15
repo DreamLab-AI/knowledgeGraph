@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:random-search",
+  "title": "Random Search",
+  "slug": "random-search",
+  "public": true,
+  "classIri": "urn:ngm:class:random-search",
+  "domain": "machine-learning",
+  "definition": "Random search is a hyperparameter-optimisation method that samples hyperparameter configurations at random from specified distributions over the search space, rather than evaluating a fixed grid. For a given evaluation budget it often outperforms grid search because it explores more distinct values of the most influential hyperparameters. It is simple, parallelisable, and a strong baseline for automated tuning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hyperparameter-optimisation",
+      "label": "Hyperparameter Optimisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:search-space",
+        "label": "Search Space"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:grid-search",
+        "label": "Grid Search"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:search-space",
+        "label": "Search Space"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:stochastic-optimisation",
+        "label": "Stochastic Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-method",
+        "label": "Monte Carlo Method"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

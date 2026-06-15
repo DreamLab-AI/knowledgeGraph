@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:predicate-logic",
+  "title": "Predicate Logic",
+  "slug": "predicate-logic",
+  "public": true,
+  "classIri": "urn:ngm:class:predicate-logic",
+  "domain": "artificial-intelligence",
+  "definition": "Predicate logic, also called first-order predicate calculus, is a formal system that extends propositional logic with quantifiers and predicates over individual variables, allowing statements about the properties of and relations between objects in a domain of discourse. It introduces the universal and existential quantifiers, enabling expressions such as 'for all x, P(x)' and 'there exists an x such that P(x)'. Predicate logic provides the semantic and syntactic backbone for much of automated reasoning, formal specification, and knowledge representation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:logic",
+      "label": "Logic"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:logical-inference",
+        "label": "Logical Inference"
+      },
+      {
+        "id": "urn:ngm:class:propositional-logic",
+        "label": "Propositional Logic"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:propositional-logic",
+        "label": "Propositional Logic"
+      },
+      {
+        "id": "urn:ngm:class:formal-language",
+        "label": "Formal Language"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:first-order-logic",
+        "label": "First-Order Logic"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:propositional-logic",
+        "label": "Propositional Logic"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:logical-inference",
+        "label": "Logical Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:semantic-reasoning",
+        "label": "Semantic Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

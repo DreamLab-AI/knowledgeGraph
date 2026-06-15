@@ -137,7 +137,7 @@ public:: true
         "label": "Atomic Swap"
       },
       {
-        "@id": "urn:ngm:class:layer-2-rollup",
+        "@id": "urn:ngm:class:rollup",
         "label": "Layer 2 Rollup"
       }
     ],

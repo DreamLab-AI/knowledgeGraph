@@ -1,0 +1,38 @@
+- ### Definition
+  - [[Document Summarisation]] condenses source text into faithful, concise summaries using [[Large Language Models]] and [[Transformer]] architectures, a core [[Natural Language Processing]] task related to [[Text Summarisation]].
+- ### Overview
+  - Document summarisation reduces a document, or a collection of documents, to its essential content while preserving meaning. Extractive methods rank and select existing sentences; abstractive methods generate fresh text that may rephrase, compress, or fuse information across passages.
+  - The contemporary state of the art uses pretrained sequence-to-sequence and decoder-only [[Large Language Models]], which excel at fluent abstractive output but require careful evaluation for factual consistency and hallucination.
+- ### Key aspects
+  - Extractive versus abstractive paradigms and hybrid approaches.
+  - Single-document versus multi-document summarisation.
+  - Query-focused and aspect-based summarisation.
+  - Faithfulness and hallucination as central quality concerns.
+  - Evaluation via ROUGE, BERTScore, and factual-consistency metrics.
+- ### Mechanisms
+  - Sequence-to-sequence generation with attention over the source.
+  - Long-context handling through sparse attention or retrieval.
+  - Reinforcement and instruction tuning to align summaries with human preferences.
+  - Chunking and map-reduce strategies for very long documents.
+- ### Applications
+  - Executive briefs and report digests in [[Knowledge Management]].
+  - Search result snippets and [[Information Retrieval]] previews.
+  - Meeting and conversation summaries.
+  - Literature review and legal document review acceleration.
+- ### Relationships
+  - enables:: [[Knowledge Management]]
+  - enables:: [[Information Retrieval]]
+  - supports:: [[Question Answering]]
+  - supports:: [[Semantic Search]]
+  - partOf:: [[Natural Language Processing]]
+  - uses:: [[Large Language Models]]
+  - uses:: [[Transformer]]
+  - uses:: [[Text Summarisation]]
+  - requires:: [[Model Evaluation]]
+  - relatedTo:: [[Content Generation]]
+  - relatedTo:: [[Document Processing]]
+  - relatedTo:: [[Generative AI]]
+  - bridgesTo:: [[Knowledge Management]]
+- ### Provenance
+  - source:: GapMaterialisation
+  - updated:: 2026-06-15

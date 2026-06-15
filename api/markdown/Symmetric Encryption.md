@@ -112,7 +112,7 @@ public:: true
         "label": "Random Number Generation"
       },
       {
-        "@id": "urn:ngm:class:secure-key-exchange",
+        "@id": "urn:ngm:class:key-exchange",
         "label": "Secure Key Exchange"
       }
     ],

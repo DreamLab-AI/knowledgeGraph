@@ -1,0 +1,85 @@
+{
+  "id": "urn:visionflow:page:smart-metering",
+  "title": "Smart Metering",
+  "slug": "smart-metering",
+  "public": true,
+  "classIri": "urn:ngm:class:smart-metering",
+  "domain": "infrastructure",
+  "definition": "Smart Metering is the deployment of digital utility meters that record consumption of electricity, gas, water or heat at fine time resolution and communicate readings automatically to the utility and consumer. It replaces manual periodic readings with two-way communication, enabling near real-time monitoring, remote configuration and dynamic tariffs. Smart meters are a foundational component of advanced metering infrastructure and the broader smart grid.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:energy-management",
+      "label": "Energy Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-network",
+        "label": "Sensor Network"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      },
+      {
+        "id": "urn:ngm:class:advanced-metering-infrastructure",
+        "label": "Advanced Metering Infrastructure"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:sensor-network",
+        "label": "Sensor Network"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:advanced-metering-infrastructure",
+        "label": "Advanced Metering Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:energy-management",
+        "label": "Energy Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      },
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

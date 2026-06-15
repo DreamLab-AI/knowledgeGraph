@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:oblivious-transfer",
+  "title": "Oblivious Transfer",
+  "slug": "oblivious-transfer",
+  "public": true,
+  "classIri": "urn:ngm:class:oblivious-transfer",
+  "domain": "security",
+  "definition": "Oblivious transfer is a foundational cryptographic protocol in which a sender transmits one of several pieces of information to a receiver, but remains oblivious to which piece was received, while the receiver learns nothing about the other pieces. The canonical 1-out-of-2 variant lets a receiver choose one of two sender messages without revealing the choice and without learning the unchosen message. Oblivious transfer is complete for secure two-party computation and underpins protocols such as garbled circuits and private set intersection.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:secure-multi-party-computation",
+      "label": "Secure Multi-Party Computation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public-Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      },
+      {
+        "id": "urn:ngm:class:secure-aggregation",
+        "label": "Secure Aggregation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:secure-multi-party-computation",
+        "label": "Secure Multi-Party Computation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

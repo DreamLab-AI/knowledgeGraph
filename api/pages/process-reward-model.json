@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:process-reward-model",
+  "title": "Process Reward Model",
+  "slug": "process-reward-model",
+  "public": true,
+  "classIri": "urn:ngm:class:process-reward-model",
+  "domain": "artificial-intelligence",
+  "definition": "A process reward model is a reward model that scores the individual intermediate steps of a model's reasoning trajectory rather than only its final answer. By supervising each step of a chain of thought, it provides dense, step-level feedback that guides search and reinforcement learning toward sound reasoning processes. Process reward models contrast with outcome reward models, which assign a single reward based solely on the final result.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reward-model",
+      "label": "Reward Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain Of Thought"
+      },
+      {
+        "id": "urn:ngm:class:reward-modelling",
+        "label": "Reward Modelling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning From Human Feedback"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain Of Thought"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    }
+  ]
+}

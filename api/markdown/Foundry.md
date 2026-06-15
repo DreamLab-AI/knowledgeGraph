@@ -133,7 +133,7 @@ public:: true
         "label": "NFT"
       },
       {
-        "@id": "urn:ngm:class:evm-compatible-chain",
+        "@id": "urn:ngm:class:evm-compatible-blockchain",
         "label": "EVM-Compatible Chain"
       }
     ],

@@ -62,7 +62,7 @@ alias:: Chain-of-Thought
         "label": "Prompt Engineering"
       },
       {
-        "@id": "urn:ngm:class:autoregressive-language-model",
+        "@id": "urn:ngm:class:autoregressive-model",
         "label": "Autoregressive Language Model"
       }
     ],

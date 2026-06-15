@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:noise-mechanisms",
+  "title": "Noise Mechanisms",
+  "slug": "noise-mechanisms",
+  "public": true,
+  "classIri": "urn:ngm:class:noise-mechanisms",
+  "domain": "security",
+  "definition": "Noise mechanisms are the algorithmic primitives in differential privacy that add calibrated random perturbation to query results or data so that the contribution of any single individual is statistically masked. The amount of noise is calibrated to the query's sensitivity and the desired privacy budget, balancing privacy protection against the accuracy of released statistics. The principal mechanisms are the Laplace, Gaussian, and exponential mechanisms, each suited to particular query types and privacy definitions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:differential-privacy",
+      "label": "Differential Privacy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:laplace-mechanism",
+        "label": "Laplace Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-mechanism",
+        "label": "Gaussian Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:privacy-budget",
+        "label": "Privacy Budget"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-technology",
+        "label": "Privacy Preserving Technology"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:privacy-budget",
+        "label": "Privacy Budget"
+      },
+      {
+        "id": "urn:ngm:class:sensitivity",
+        "label": "Sensitivity"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:laplace-mechanism",
+        "label": "Laplace Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-mechanism",
+        "label": "Gaussian Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-anonymization",
+        "label": "Data Anonymization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:epsilon-differential-privacy",
+        "label": "Epsilon Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:noise-injection",
+        "label": "Noise Injection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

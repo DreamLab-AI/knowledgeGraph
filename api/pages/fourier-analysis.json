@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:fourier-analysis",
+  "title": "Fourier Analysis",
+  "slug": "fourier-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:fourier-analysis",
+  "domain": "machine-learning",
+  "definition": "Fourier analysis is the branch of mathematics that decomposes functions or signals into sums of sinusoidal components, representing them in terms of frequency rather than time or space. Its central tool, the Fourier transform, maps a signal to its spectrum, revealing periodicities and enabling operations such as filtering and convolution to be performed efficiently in the frequency domain. It is foundational to signal processing, communications, and many numerical and learning methods.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:fast-fourier-transform",
+        "label": "Fast Fourier Transform"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    }
+  ]
+}

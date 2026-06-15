@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:debugging",
+  "title": "Debugging",
+  "slug": "debugging",
+  "public": true,
+  "classIri": "urn:ngm:class:debugging",
+  "domain": "infrastructure",
+  "definition": "Debugging is the systematic process of locating, diagnosing and resolving defects in software so that it behaves as intended. It typically involves reproducing the fault, observing program state through breakpoints, logging and runtime inspection, forming hypotheses about the cause, and verifying a fix. Debugging spans interactive use of debuggers, analysis of stack traces and logs, and reasoning about concurrency and integration boundaries. It is a core software development activity complementary to, but distinct from, automated testing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:testing",
+        "label": "Testing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "interpretability",
+      "label": "Interpretability"
+    }
+  ]
+}

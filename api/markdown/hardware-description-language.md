@@ -1,0 +1,35 @@
+- ### Definition
+- A [[Hardware Description Language]] (HDL) is a specialised language for describing the structure and behaviour of digital circuits, sitting between abstract logic and physical [[FPGA]] or [[ASIC]] implementations.
+- HDLs capture concurrency and timing, distinguishing them from sequential software languages, and feed into synthesis flows that target reconfigurable or fixed silicon.
+- They underpin the entire digital design pipeline, from specification through simulation to fabrication, supporting [[Embedded Systems]] and [[Hardware Accelerator]] development.
+- ### Overview
+- HDLs emerged to manage the growing complexity of integrated circuits, replacing manual schematic capture with text-based, version-controllable descriptions.
+- The two predominant languages are Verilog and VHDL; both express designs at the register-transfer level, where data movement between registers and the combinational logic between them is specified explicitly.
+- Synthesis tools compile HDL into gate-level netlists, after which place-and-route maps the design onto a device. For FPGAs the result is a bitstream; for ASICs it is a mask set.
+- Simulation and formal verification operate directly on HDL, allowing functional correctness and timing to be validated long before silicon exists.
+- ### Mechanisms
+- Behavioural modelling describes what a circuit does using procedural constructs, while structural modelling instantiates and wires together components.
+- Register-transfer-level (RTL) descriptions are the synthesisable subset most designers target, balancing expressiveness with predictable hardware mapping.
+- Concurrency is intrinsic: every described block executes in parallel, mirroring physical hardware rather than a single instruction stream.
+- Testbenches, themselves written in HDL, drive stimuli and check responses during simulation.
+- ### Applications
+- Configuring [[FPGA]] devices for low-latency AI inference, signal processing and prototyping.
+- Designing [[ASIC]] and [[System-on-Chip]] products for high-volume, power-efficient deployment.
+- Building custom [[Hardware Accelerator]] datapaths for cryptography, networking and machine learning.
+- Developing [[Embedded Systems]] control logic where deterministic timing is required.
+- ### Relationships
+- enables:: [[FPGA]]
+- enables:: [[ASIC]]
+- enables:: [[System-on-Chip]]
+- supports:: [[Hardware Accelerator]]
+- supports:: [[Embedded Systems]]
+- uses:: [[Digital Logic]]
+- partOf:: [[Infrastructure]]
+- relatedTo:: [[GPU]]
+- relatedTo:: [[Inference Hardware]]
+- contrastsWith:: [[GPU]]
+- bridgesTo:: [[Embedded Systems]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

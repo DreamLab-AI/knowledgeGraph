@@ -1,0 +1,119 @@
+{
+  "id": "urn:visionflow:page:edge-deployment",
+  "title": "Edge Deployment",
+  "slug": "edge-deployment",
+  "public": true,
+  "classIri": "urn:ngm:class:edge-deployment",
+  "domain": "artificial-intelligence",
+  "definition": "Edge deployment is the practice of running machine learning models on or near the devices where data is generated, rather than in a centralised cloud. It reduces inference latency, preserves bandwidth, improves privacy by keeping data local and enables operation under intermittent connectivity. Edge deployment usually depends on model compression and hardware-aware optimisation to fit models within the compute, memory and power budgets of edge hardware.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-deployment",
+      "label": "Model Deployment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      },
+      {
+        "id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      },
+      {
+        "id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:on-device-ai",
+        "label": "On-Device AI"
+      },
+      {
+        "id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
+      },
+      {
+        "id": "urn:ngm:class:ultra-low-latency",
+        "label": "Ultra-Low Latency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:mobile-edge-computing",
+        "label": "Mobile Edge Computing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:iot",
+        "label": "Internet of Things"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:tinyml",
+        "label": "TinyML"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:mobile-computing",
+        "label": "Mobile Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    }
+  ]
+}

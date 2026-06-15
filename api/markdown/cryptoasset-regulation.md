@@ -1,0 +1,38 @@
+- ### Definition
+	- [[Cryptoasset Regulation]] is the body of [[Regulation]] governing the issuance, custody, trading, and use of [[Digital Asset|digital assets]].
+	- It applies financial-services objectives, consumer protection, market integrity, and financial-crime prevention, to crypto-native models.
+	- Leading regimes include [[Markets in Crypto-Assets]] in the EU and the UK approach led by the [[Financial Conduct Authority]].
+- ### Overview
+	- Cryptoassets challenge legacy regulation because they are bearer-like, programmable, cross-border, and often issued without a traditional intermediary. Regulators have responded by extending existing perimeters and, increasingly, by creating bespoke regimes.
+	- The EU's Markets in Crypto-Assets (MiCA) regulation provides a comprehensive, passportable framework covering issuers, stablecoins (e-money and asset-referenced tokens), and crypto-asset service providers. The UK is implementing a phased model that brings stablecoins and broader cryptoasset activities into the regulated perimeter under FCA supervision.
+	- Globally, the Financial Action Task Force sets anti-money-laundering standards, most notably the travel rule, which requires originator and beneficiary information to accompany crypto transfers above thresholds.
+- ### Key aspects
+	- Authorisation and conduct rules for exchanges and custodians.
+	- Stablecoin reserve, redemption, and disclosure requirements.
+	- [[Anti-Money Laundering]] and [[Know Your Customer]] obligations.
+	- Market-abuse and consumer-protection provisions.
+	- Cross-border coordination and regulatory arbitrage concerns.
+- ### Applications
+	- Licensing crypto-asset service providers.
+	- Supervising stablecoin issuers for [[Financial Stability]].
+	- Enforcing the [[Travel Rule]] across virtual-asset service providers.
+	- Defining tokenised-securities treatment within existing markets law.
+- ### Relationships
+	- governs:: [[Stablecoin]]
+	- governs:: [[Digital Asset]]
+	- implements:: [[Markets in Crypto-Assets]]
+	- implements:: [[Travel Rule]]
+	- requires:: [[Anti-Money Laundering]]
+	- requires:: [[Know Your Customer]]
+	- enforcedBy:: [[Financial Conduct Authority]]
+	- supports:: [[Financial Stability]]
+	- supports:: [[Risk Management]]
+	- uses:: [[Governance]]
+	- relatedTo:: [[Central Bank]]
+	- relatedTo:: [[Institutional Trust]]
+	- bridgesTo:: [[Blockchain]]
+	- contrastsWith:: [[Monetary Policy]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

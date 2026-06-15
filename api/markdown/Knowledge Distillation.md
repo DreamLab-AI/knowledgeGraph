@@ -110,7 +110,7 @@ public:: true
         "label": "On-Device Inference"
       },
       {
-        "@id": "urn:ngm:class:efficient-inference",
+        "@id": "urn:ngm:class:ai-inference",
         "label": "Efficient Inference"
       }
     ],

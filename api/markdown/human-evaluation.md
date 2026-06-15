@@ -1,0 +1,41 @@
+- ### Definition
+  - [[Human Evaluation]] is the rating of model outputs by people against quality criteria such as helpfulness, fluency, and factuality.
+  - It complements automatic [[Evaluation Metric]]s, capturing subjective judgements that proxy scores miss.
+  - It is a method within [[Model Evaluation]] and underpins [[Reinforcement Learning from Human Feedback]].
+- ### Overview
+  - Human raters score, rank, or express pairwise preferences over system outputs, often via [[Crowdsourcing]] or expert panels.
+  - Protocols control for rater bias, fatigue, and ambiguity, and aggregate judgements with [[Inter-Annotator Agreement]] measures.
+  - It is the gold standard for evaluating generative and conversational systems where reference-based metrics correlate poorly with quality.
+- ### Key aspects
+  - Direct assessment scales or pairwise preference comparisons.
+  - Clear rubrics defining each quality dimension.
+  - Agreement and reliability tracking via [[Inter-Annotator Agreement]].
+  - Higher cost and latency than automatic [[Evaluation Metric]]s.
+- ### Mechanisms
+  - Task design, rubric authoring, and rater calibration.
+  - Sampling outputs and randomising presentation to limit bias.
+  - Collecting absolute ratings or A/B preferences.
+  - Aggregating with majority vote, Elo, or Bradley-Terry models.
+- ### Applications
+  - Comparing large language models in [[Model Comparison]] leaderboards.
+  - Generating preference data for [[Reinforcement Learning from Human Feedback]].
+  - Validating safety, helpfulness, and factuality of generative output.
+  - Auditing [[Benchmark]] results where automatic metrics are unreliable.
+- ### Relationships
+  - contrastsWith:: [[Evaluation Metric]]
+  - partOf:: [[Model Evaluation]]
+  - uses:: [[Crowdsourcing]]
+  - uses:: [[Inter-Annotator Agreement]]
+  - uses:: [[A/B Testing]]
+  - dependsOn:: [[Inter-Annotator Agreement]]
+  - supports:: [[Model Comparison]]
+  - supports:: [[Preference Learning]]
+  - enables:: [[Reinforcement Learning from Human Feedback]]
+  - requires:: [[Benchmark]]
+  - relatedTo:: [[Large Language Model]]
+  - relatedTo:: [[Conversational AI]]
+  - implements:: [[Model Comparison]]
+- ### Provenance
+  - inferenceRule:: GapMaterialisation
+  - attributedTo:: did:nostr:ontology-mesh
+  - updated:: 2026-06-15

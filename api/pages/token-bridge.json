@@ -1,0 +1,81 @@
+{
+  "id": "urn:visionflow:page:token-bridge",
+  "title": "Token Bridge",
+  "slug": "token-bridge",
+  "public": true,
+  "classIri": "urn:ngm:class:token-bridge",
+  "domain": "blockchain",
+  "definition": "A Token Bridge is a protocol that enables the transfer of token value or representation between two distinct blockchain networks that cannot natively communicate. It commonly locks or burns tokens on the source chain and mints or releases an equivalent representation on the destination chain, coordinated by validators, relayers or light-client proofs. Token bridges are a core mechanism for cross-chain liquidity but historically a significant locus of security risk.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:blockchain-interoperability",
+        "label": "Blockchain Interoperability"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:decentralised-exchange",
+        "label": "Decentralised Exchange"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      },
+      {
+        "id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "id": "urn:ngm:class:cross-chain-communication",
+        "label": "Cross-Chain Communication"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

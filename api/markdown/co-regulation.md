@@ -1,0 +1,41 @@
+- ### Definition
+  - Co-regulation is a [[Regulatory Framework]] combining state oversight with industry rule-making.
+  - It contrasts with [[Self-Regulation]] by retaining statutory enforcement.
+  - Bodies such as [[Ofcom]] approve industry codes under regimes like the [[UK Online Safety Act]].
+- ### Overview
+  - Under co-regulation, industry drafts detailed codes of practice that a public regulator scrutinises, approves and ultimately enforces.
+  - The model leverages sector expertise and adaptability while preserving democratic legitimacy and a statutory backstop.
+  - It is widely used where technology evolves faster than primary legislation can be amended.
+- ### Key aspects
+  - Industry-authored codes ratified by a statutory regulator.
+  - Retained public enforcement and sanctioning powers.
+  - Shared standard-setting between regulator and regulated.
+  - Periodic review and accountability mechanisms.
+- ### Applications
+  - Online safety codes overseen by national communications regulators.
+  - Broadcasting and advertising standards governance.
+  - Data-protection codes endorsed by privacy authorities.
+- ### Trade-offs
+  - Faster adaptation than pure statute, with retained legitimacy.
+  - Risk of regulatory capture if oversight is weak.
+  - Dependence on credible enforcement to deter non-compliance.
+- ### Relationships
+  - partOf:: [[Regulatory Framework]]
+  - implements:: [[Policy Framework]]
+  - implements:: [[Regulation]]
+  - contrastsWith:: [[Self-Regulation]]
+  - contrastsWith:: [[Centralised Finance]]
+  - requires:: [[Accountability]]
+  - requires:: [[Compliance]]
+  - uses:: [[Audit]]
+  - uses:: [[Transparency Reporting]]
+  - supports:: [[Platform Governance]]
+  - supports:: [[Governance]]
+  - relatedTo:: [[Ofcom]]
+  - relatedTo:: [[UK Online Safety Act]]
+  - relatedTo:: [[Content Moderation]]
+  - enables:: [[Data Governance]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - quality:: 0.62

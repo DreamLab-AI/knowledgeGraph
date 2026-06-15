@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:event-loop",
+  "title": "Event Loop",
+  "slug": "event-loop",
+  "public": true,
+  "classIri": "urn:ngm:class:event-loop",
+  "domain": "infrastructure",
+  "definition": "An event loop is a programming construct that waits for and dispatches events or messages within a single-threaded execution model, repeatedly polling a queue of pending tasks and invoking their associated handlers. It is the engine of asynchronous, non-blocking programming, allowing a program to perform I/O and respond to many concurrent events without spawning a thread per operation. Event loops underpin runtime environments, user-interface frameworks, and high-concurrency network servers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:concurrency",
+      "label": "Concurrency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asynchronous-programming",
+        "label": "Asynchronous Programming"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:asynchronous-programming",
+        "label": "Asynchronous Programming"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      },
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:asynchronous-programming",
+        "label": "Asynchronous Programming"
+      },
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

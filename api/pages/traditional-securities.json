@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:traditional-securities",
+  "title": "Traditional Securities",
+  "slug": "traditional-securities",
+  "public": true,
+  "classIri": "urn:ngm:class:traditional-securities",
+  "domain": "blockchain",
+  "definition": "Traditional Securities are conventional financial instruments such as equities, bonds and fund units that are issued, held and transferred through established centralised market infrastructure including exchanges, central securities depositories and custodians. They represent legal claims on assets or income and are governed by long-standing securities regulation. In blockchain discourse they form the baseline against which tokenised and on-chain security tokens are compared.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-conformance",
+        "label": "Regulatory Conformance"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security-token",
+        "label": "Security Token"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:regulatory-conformance",
+        "label": "Regulatory Conformance"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:capital-markets",
+        "label": "Capital Markets"
+      },
+      {
+        "id": "urn:ngm:class:centralised-exchange",
+        "label": "Centralised Exchange"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

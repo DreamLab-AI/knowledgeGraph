@@ -1,0 +1,35 @@
+- ### Definition
+	- **Integer Programming** is mathematical optimisation in which decision variables are restricted to integer values, usually over a linear objective and linear constraints. It is a central technique within [[Combinatorial Optimisation]] and builds directly on the theory of [[Linear Programming]].
+	- The integrality requirement lets it model discrete choices — selection, assignment, sequencing — exactly, at the cost of NP-hardness, and it overlaps closely with [[Constraint Satisfaction]] and [[Operations Research]].
+- ### Overview
+	- A linear program with the added stipulation that some variables be integers becomes a mixed-integer program; if all variables are integer it is a pure integer program. This small change transforms a polynomially solvable continuous problem into one that is NP-hard, because the feasible region is a discrete lattice rather than a smooth polytope.
+	- Practical solvers do not enumerate the lattice. They solve the linear-programming relaxation, then systematically branch on fractional variables and prune sub-problems whose relaxed bound cannot beat the best known solution. Cutting planes tighten the relaxation by adding valid inequalities that exclude fractional points.
+	- Binary (0/1) variables are especially expressive, encoding yes/no decisions, logical implications, and disjunctions, which is why integer programming is a workhorse for planning and scheduling across industry.
+- ### Mechanisms
+	- Restricts variables to integers while keeping a linear objective and constraints.
+	- Solves the continuous [[Linear Programming]] relaxation to obtain bounds.
+	- Applies branch-and-bound search to enforce integrality and prune the tree.
+	- Strengthens relaxations with cutting planes and problem-specific valid inequalities.
+	- Encodes logical conditions through binary variables, linking it to [[Constraint Satisfaction]].
+- ### Applications
+	- Vehicle routing, crew scheduling, and timetabling in [[Operations Research]].
+	- Facility location, network design, and capital budgeting decisions.
+	- Production planning, lot-sizing, and supply-chain optimisation.
+	- Combinatorial subproblems within larger AI planning and verification systems.
+- ### Relationships
+	- uses:: [[Linear Programming]]
+	- uses:: [[Constraint Satisfaction]]
+	- relatedTo:: [[Convex Optimisation]]
+	- relatedTo:: [[Operations Research]]
+	- relatedTo:: [[Algorithm]]
+	- requires:: [[Algorithm]]
+	- partOf:: [[Combinatorial Optimisation]]
+	- implements:: [[Linear Programming]]
+	- enables:: [[Operations Research]]
+	- supports:: [[Operations Research]]
+	- dependsOn:: [[Linear Programming]]
+	- contrastsWith:: [[Convex Optimisation]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

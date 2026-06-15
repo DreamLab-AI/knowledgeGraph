@@ -1,0 +1,96 @@
+{
+  "id": "urn:visionflow:page:complex-event-processing",
+  "title": "Complex Event Processing",
+  "slug": "complex-event-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:complex-event-processing",
+  "domain": "infrastructure",
+  "definition": "Complex event processing is a paradigm that continuously analyses streams of discrete events to detect meaningful patterns, correlations and derived higher-level events in near real time. Rather than querying stored data after the fact, it evaluates standing pattern queries over moving event streams, recognising temporal sequences, aggregates over windows and absence-of-event conditions. It enables systems to react to situations as they emerge rather than discovering them in later batch analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stream-processing",
+      "label": "Stream Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:real-time-analytics",
+        "label": "Real Time Analytics"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
+      },
+      {
+        "id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-analytics",
+        "label": "Real Time Analytics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:real-time-analytics",
+        "label": "Real Time Analytics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "event",
+      "label": "Event"
+    }
+  ]
+}

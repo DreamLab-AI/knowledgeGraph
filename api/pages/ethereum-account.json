@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:ethereum-account",
+  "title": "Ethereum Account",
+  "slug": "ethereum-account",
+  "public": true,
+  "classIri": "urn:ngm:class:ethereum-account",
+  "domain": "blockchain",
+  "definition": "An Ethereum account is a state entity on the Ethereum blockchain identified by a 20-byte address and holding a balance, nonce, and optionally code and storage. There are two kinds: externally owned accounts controlled by a private key, and contract accounts controlled by their deployed smart-contract code. Accounts are the unit against which transactions are debited, gas is charged, and state transitions are applied.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ethereum",
+      "label": "Ethereum"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nonce",
+        "label": "Nonce"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:private-key",
+        "label": "Private Key"
+      },
+      {
+        "id": "urn:ngm:class:address",
+        "label": "Address"
+      },
+      {
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:account-abstraction",
+        "label": "Account Abstraction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:ledger",
+        "label": "Ledger"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency",
+        "label": "Cryptocurrency"
+      },
+      {
+        "id": "urn:ngm:class:proof-of-stake",
+        "label": "Proof Of Stake"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,37 @@
+- ### Definition
+	- [[Data Drift]] is the change over time in the statistical distribution of the inputs a deployed model receives, relative to its training data.
+	- It is a specific form of [[Concept Drift]] affecting the marginal [[Feature Distribution]] rather than the input-output relationship.
+	- It is a primary signal tracked by [[Model Monitoring]] and a core concern of [[MLOps]].
+- ### Overview
+	- A model learns patterns from a snapshot of the world; once deployed, the world keeps moving. When the live feature distribution diverges from the training distribution, the model is asked to extrapolate beyond its support, and predictions become unreliable.
+	- Data drift is distinguished from concept drift: data drift moves the distribution of X while leaving P(Y|X) intact, whereas concept drift moves P(Y|X) itself. In practice both can co-occur and both degrade live performance.
+	- Drift can be gradual (slow demographic change), sudden (a new data source or sensor), or seasonal (recurring cyclical patterns). Each profile calls for different detection windows and response policies.
+- ### Mechanisms
+	- Statistical distance tests such as Kolmogorov-Smirnov, Population Stability Index, and Jensen-Shannon divergence compare reference and live windows.
+	- Density-based monitoring uses [[Density Estimation]] to score the likelihood of incoming samples under the training distribution.
+	- Embedding and reconstruction methods flag drift in high-dimensional or unstructured data where univariate tests fail.
+	- Alerting and automated [[Retraining]] pipelines close the loop when drift exceeds thresholds.
+- ### Applications
+	- Production monitoring of credit, fraud, and recommendation models.
+	- Triggering scheduled or event-driven model retraining.
+	- Data-quality gating in feature stores and ingestion pipelines.
+	- Root-cause analysis when live metrics degrade.
+- ### Relationships
+	- partOf:: [[Model Monitoring]]
+	- dependsOn:: [[Probability Distribution]]
+	- dependsOn:: [[Feature Distribution]]
+	- causes:: [[Model Degradation]]
+	- detectedBy:: [[Model Monitoring]]
+	- detectedBy:: [[Observability]]
+	- requires:: [[Retraining]]
+	- uses:: [[Statistics]]
+	- uses:: [[Density Estimation]]
+	- relatedTo:: [[Covariate Shift]]
+	- relatedTo:: [[Distribution Shift]]
+	- relatedTo:: [[Anomaly Detection]]
+	- bridgesTo:: [[MLOps]]
+	- contrastsWith:: [[Concept Drift]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

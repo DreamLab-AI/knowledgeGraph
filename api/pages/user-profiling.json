@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:user-profiling",
+  "title": "User Profiling",
+  "slug": "user-profiling",
+  "public": true,
+  "classIri": "urn:ngm:class:user-profiling",
+  "domain": "artificial-intelligence",
+  "definition": "User profiling is the construction of a structured model of an individual or segment from observed attributes, behaviours and interaction history, used to predict preferences, intent or risk. Profiles aggregate explicit data such as stated preferences with implicit signals such as clicks, dwell time and purchases, and may be updated continuously as new behaviour is observed. Because profiles concern people, their construction raises consent, fairness and privacy obligations that constrain what may be collected and inferred.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:behavioural-analytics",
+      "label": "Behavioural Analytics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

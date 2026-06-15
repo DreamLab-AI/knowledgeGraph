@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:net-neutrality",
+  "title": "Net Neutrality",
+  "slug": "net-neutrality",
+  "public": true,
+  "classIri": "urn:ngm:class:net-neutrality",
+  "domain": "governance",
+  "definition": "Net neutrality is the principle that internet service providers should treat all data traversing their networks equally, without discriminating, blocking, throttling, or charging differentially based on the source, destination, application, or content of that traffic. It aims to preserve an open internet where users and content providers compete on merit rather than on access deals. Net neutrality is enforced or challenged through telecommunications regulation and is a recurring subject of internet-governance policy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:internet-governance",
+      "label": "Internet Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:telecommunications",
+        "label": "Telecommunications"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deregulation",
+        "label": "Deregulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:internet-governance",
+        "label": "Internet Governance"
+      },
+      {
+        "id": "urn:ngm:class:digital-governance",
+        "label": "Digital Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-regulation",
+        "label": "Digital Regulation"
+      },
+      {
+        "id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery",
+        "label": "Content Delivery"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:smart-contract-security",
+  "title": "Smart Contract Security",
+  "slug": "smart-contract-security",
+  "public": true,
+  "classIri": "urn:ngm:class:smart-contract-security",
+  "domain": "blockchain",
+  "definition": "Smart contract security is the discipline of designing, reviewing, and verifying on-chain programs so they behave correctly and resist exploitation despite handling irreversible value transfers. Because deployed contracts are typically immutable and publicly visible, vulnerabilities such as reentrancy, access-control flaws, and arithmetic errors can lead to permanent loss of funds. The field combines secure coding patterns, automated analysis, formal verification, audits, and economic safeguards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security-audit",
+      "label": "Security Audit"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:evm-compatibility",
+        "label": "EVM Compatibility"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gas-optimization",
+        "label": "Gas Optimization"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "id": "urn:ngm:class:defi",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:slippage",
+        "label": "Slippage"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    }
+  ]
+}

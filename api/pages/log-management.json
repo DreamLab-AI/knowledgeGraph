@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:log-management",
+  "title": "Log Management",
+  "slug": "log-management",
+  "public": true,
+  "classIri": "urn:ngm:class:log-management",
+  "domain": "infrastructure",
+  "definition": "Log management is the discipline of collecting, aggregating, storing, indexing and analysing the event records emitted by applications, services and infrastructure. It provides a centralised, searchable record of system behaviour that underpins debugging, performance analysis, security investigation and compliance auditing. Pipelines typically ingest structured and unstructured logs, normalise them, enforce retention policies and expose them through query and alerting interfaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:observability",
+      "label": "Observability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:audit-log",
+        "label": "Audit Log"
+      },
+      {
+        "id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data",
+        "label": "Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root Cause Analysis"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-monitoring",
+        "label": "Real-Time Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      },
+      {
+        "id": "urn:ngm:class:security-information-and-event-management",
+        "label": "Security Information and Event Management"
+      },
+      {
+        "id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

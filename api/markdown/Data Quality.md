@@ -122,7 +122,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:decision-support-systems",
+        "@id": "urn:ngm:class:decision-support",
         "label": "Decision Support Systems"
       },
       {

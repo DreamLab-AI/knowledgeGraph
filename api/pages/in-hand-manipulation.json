@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:in-hand-manipulation",
+  "title": "In Hand Manipulation",
+  "slug": "in-hand-manipulation",
+  "public": true,
+  "classIri": "urn:ngm:class:in-hand-manipulation",
+  "domain": "robotics",
+  "definition": "In-hand manipulation is the robotic skill of repositioning or reorienting a grasped object using the fingers and palm of a hand, without placing it down or relying on the arm to reposition it. It demands coordinated finger control, tactile sensing and contact modelling to maintain stable grasps while controlled slip and finger gaiting move the object. It is a core capability of dexterous manipulation in multi-fingered robotic hands.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dexterous-manipulation",
+      "label": "Dexterous Manipulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:finger-gaiting",
+        "label": "Finger Gaiting"
+      },
+      {
+        "id": "urn:ngm:class:object-reorientation",
+        "label": "Object Reorientation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tactile-sensing",
+        "label": "Tactile Sensing"
+      },
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-manipulation",
+        "label": "Autonomous Manipulation"
+      },
+      {
+        "id": "urn:ngm:class:dexterity",
+        "label": "Dexterity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:grasping",
+        "label": "Grasping"
+      },
+      {
+        "id": "urn:ngm:class:sensorimotor-control",
+        "label": "Sensorimotor Control"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:compliant-manipulation",
+        "label": "Compliant Manipulation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:robot-hand",
+        "label": "Robot Hand"
+      },
+      {
+        "id": "urn:ngm:class:proprioception",
+        "label": "Proprioception"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:manipulation-planning",
+        "label": "Manipulation Planning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:dexterous-manipulation",
+        "label": "Dexterous Manipulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multi-fingered-hand",
+        "label": "Multi-Fingered Hand"
+      },
+      {
+        "id": "urn:ngm:class:tactile-feedback",
+        "label": "Tactile Feedback"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -98,7 +98,7 @@ public:: true
         "label": "Access Control"
       },
       {
-        "@id": "urn:ngm:class:timestamping",
+        "@id": "urn:ngm:class:trusted-timestamping",
         "label": "Timestamping"
       }
     ],

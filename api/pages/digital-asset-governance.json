@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:digital-asset-governance",
+  "title": "Digital Asset Governance",
+  "slug": "digital-asset-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-asset-governance",
+  "domain": "blockchain",
+  "definition": "Digital asset governance is the set of rules, processes, and authority structures by which tokenised assets and the protocols managing them are controlled, upgraded, and held accountable across their lifecycle. It spans on-chain governance via governance tokens and DAOs, custody and key-management policy, token-standard conformance, and alignment with external regulatory and compliance regimes. By defining who may change parameters, mint or burn supply, and adjudicate disputes, it determines the legitimacy, security, and resilience of digital-asset systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralized-governance",
+      "label": "Decentralized Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "id": "urn:ngm:class:custody",
+        "label": "Custody"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:token-standard",
+        "label": "Token Standard"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:token-governance",
+        "label": "Token Governance"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:asset-management",
+        "label": "Asset Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:crypto-asset",
+        "label": "Crypto Asset"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

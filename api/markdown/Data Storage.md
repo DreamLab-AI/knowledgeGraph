@@ -94,7 +94,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:data-centre-infrastructure",
+        "@id": "urn:ngm:class:data-centre",
         "label": "Data Centre Infrastructure"
       }
     ],

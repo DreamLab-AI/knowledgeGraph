@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:data-breach-notification",
+  "title": "Data Breach Notification",
+  "slug": "data-breach-notification",
+  "public": true,
+  "classIri": "urn:ngm:class:data-breach-notification",
+  "domain": "governance",
+  "definition": "Data breach notification is the legal and operational obligation to inform supervisory authorities and, where there is a high risk, affected individuals after a breach of personal data. Frameworks such as the UK and EU GDPR require controllers to report qualifying breaches to the regulator without undue delay, typically within seventy-two hours of becoming aware, and to document the breach regardless of whether it is reportable. The duty turns an internal security incident into a regulated disclosure event, with timing, content and assessment of risk all prescribed by law.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-protection-law",
+      "label": "Data Protection Law"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-protection-law",
+        "label": "Data Protection Law"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity",
+        "label": "Cybersecurity"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

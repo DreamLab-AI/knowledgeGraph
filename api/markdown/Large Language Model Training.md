@@ -134,7 +134,7 @@ public:: true
         "label": "High-Performance Computing"
       },
       {
-        "@id": "urn:ngm:class:data-centre-infrastructure",
+        "@id": "urn:ngm:class:data-centre",
         "label": "Data Centre Infrastructure"
       }
     ],

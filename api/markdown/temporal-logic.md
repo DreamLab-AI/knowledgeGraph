@@ -1,0 +1,41 @@
+- ### Definition
+  - [[Logic]]
+  - [[Model Checking]]
+  - [[Formal Verification]]
+  - [[Formal Methods]]
+  - Temporal Logic is defined within the [[Logic]] area of the artificial-intelligence domain.
+- ### Overview
+  - Temporal logic gives engineers a precise vocabulary for properties that unfold over execution rather than holding at a single instant — for example that a request is always eventually served, or that a critical section is never entered by two processes simultaneously. Linear temporal logic reasons over individual execution paths, while branching-time logics such as computation tree logic quantify over the tree of possible futures. These logics are the specification half of the model-checking pipeline, paired with a state-space model to be checked.
+- ### Key aspects
+  - Temporal operators including next, eventually, always and until for ordering and timing.
+  - Linear-time logic that interprets formulae over single execution paths.
+  - Branching-time logic that quantifies over the tree of possible future states.
+  - Safety properties ('nothing bad happens') versus liveness properties ('something good eventually happens').
+  - Semantics defined over transition systems and infinite execution traces.
+- ### Applications
+  - Specifying correctness properties for model checking of hardware and software.
+  - Expressing liveness and safety requirements for concurrent and distributed systems.
+  - Runtime verification and monitoring of execution traces against temporal specifications.
+  - Reasoning about plans and goals in artificial intelligence and robotics.
+- ### Relationships
+  - subClassOf:: [[Logic]]
+  - partOf:: [[Logic]]
+  - partOf:: [[Formal Methods]]
+  - requires:: [[Logic]]
+  - uses:: [[Logic]]
+  - uses:: [[State Space]]
+  - hasPart:: [[State Space]]
+  - enables:: [[Model Checking]]
+  - enables:: [[Formal Verification]]
+  - supports:: [[Model Checking]]
+  - supports:: [[Concurrency]]
+  - implements:: [[Formal Methods]]
+  - dependsOn:: [[Logic]]
+  - relatedTo:: [[Formal Verification]]
+  - relatedTo:: [[Formal Methods]]
+  - contrastsWith:: [[State Space]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

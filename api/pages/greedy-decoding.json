@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:greedy-decoding",
+  "title": "Greedy Decoding",
+  "slug": "greedy-decoding",
+  "public": true,
+  "classIri": "urn:ngm:class:greedy-decoding",
+  "domain": "artificial-intelligence",
+  "definition": "Greedy Decoding is a sequence generation strategy that, at each step of an autoregressive model, selects the single token with the highest predicted probability. It is the simplest decoding method, fully deterministic and computationally cheap, but it can be myopic and miss globally higher-probability sequences. It serves as the baseline against which beam search and sampling-based strategies are compared.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:text-generation",
+      "label": "Text Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

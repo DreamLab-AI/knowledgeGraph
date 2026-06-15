@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:semantic-parsing",
+  "title": "Semantic Parsing",
+  "slug": "semantic-parsing",
+  "public": true,
+  "classIri": "urn:ngm:class:semantic-parsing",
+  "domain": "artificial-intelligence",
+  "definition": "Semantic parsing is the task of mapping natural-language utterances onto structured, machine-interpretable meaning representations such as logical forms, executable queries or programs. It converts ambiguous human language into precise formalisms that can be reasoned over or executed against a database or knowledge graph. Applications include question answering, text-to-SQL and instruction-to-code translation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:labelled-data",
+        "label": "Labelled Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sequence-labelling",
+        "label": "Sequence Labelling"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sequence-to-sequence",
+        "label": "Sequence-to-Sequence"
+      },
+      {
+        "id": "urn:ngm:class:transformer-model",
+        "label": "Transformer Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logical-form",
+        "label": "Logical Form"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

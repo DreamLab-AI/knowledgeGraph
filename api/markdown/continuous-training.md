@@ -1,0 +1,40 @@
+- ### Definition
+  - Relates to [[MLOps]]
+  - Relates to [[Model Training]]
+  - Relates to [[Data Drift]]
+  - Relates to [[Model Monitoring]]
+  - Relates to [[Model Deployment]]
+- ### Overview
+  - Continuous training closes the loop between deployed models, monitoring signals and automated retraining.
+  - Triggers may be scheduled, data-volume based, or driven by detected drift in inputs or predictions.
+  - Retrained candidates are validated against held-out data and quality gates before promotion.
+  - The practice keeps models aligned with shifting real-world distributions.
+- ### Key aspects
+  - **Retraining triggers** — Schedules, new-data thresholds and drift alerts decide when a fresh training run is launched.
+  - **Validation gates** — Automated evaluation compares candidate models against incumbents and minimum quality thresholds.
+  - **Pipeline automation** — Orchestrated steps fetch data, train, evaluate, register and deploy without manual intervention.
+  - **Drift response** — Monitoring of data and concept drift links degradation in production to retraining decisions.
+- ### Applications
+  - Recommendation and ranking systems that adapt to evolving user behaviour.
+  - Fraud and anomaly detection where adversaries shift tactics.
+  - Demand forecasting under changing market conditions.
+  - Any production model exposed to non-stationary data distributions.
+- ### Relationships
+  - subClassOf:: [[MLOps]]
+  - enables:: [[Model Deployment]]
+  - enables:: [[Model Serving]]
+  - partOf:: [[MLOps]]
+  - partOf:: [[Model Training Pipeline]]
+  - dependsOn:: [[Data Drift]]
+  - dependsOn:: [[Model Monitoring]]
+  - uses:: [[Model Training]]
+  - uses:: [[CI-CD Automation]]
+  - requires:: [[Feature Store]]
+  - requires:: [[Model Registry]]
+  - supports:: [[Continuous Deployment]]
+  - relatedTo:: [[Continuous Integration]]
+  - relatedTo:: [[Model Governance]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

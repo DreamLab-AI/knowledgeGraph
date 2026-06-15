@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:sampling-based-planning",
+  "title": "Sampling Based Planning",
+  "slug": "sampling-based-planning",
+  "public": true,
+  "classIri": "urn:ngm:class:sampling-based-planning",
+  "domain": "robotics",
+  "definition": "Sampling-based planning is a family of motion-planning methods that find feasible paths by randomly sampling the configuration space and connecting collision-free samples into a graph or tree, rather than constructing an explicit representation of the free space. By trading completeness for probabilistic completeness, these methods scale to the high-dimensional spaces typical of articulated robots. Representative algorithms include the Probabilistic Roadmap and the Rapidly Exploring Random Tree.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:motion-planning",
+      "label": "Motion Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rapidly-exploring-random-tree",
+        "label": "Rapidly Exploring Random Tree"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:configuration-space",
+        "label": "Configuration Space"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

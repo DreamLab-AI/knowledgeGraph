@@ -179,7 +179,7 @@ alias:: TELE-051-3d-gaussian-splatting
         "label": "Virtual Reality Telepresence"
       },
       {
-        "@id": "urn:ngm:class:scene-reconstruction",
+        "@id": "urn:ngm:class:3-d-scene-reconstruction",
         "label": "Scene Reconstruction"
       }
     ]

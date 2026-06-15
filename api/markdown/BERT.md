@@ -142,7 +142,7 @@ public:: true
         "label": "GPT"
       },
       {
-        "@id": "urn:ngm:class:autoregressive-language-model",
+        "@id": "urn:ngm:class:autoregressive-model",
         "label": "Autoregressive Language Model"
       }
     ],

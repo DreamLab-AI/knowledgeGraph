@@ -71,7 +71,7 @@ public:: true
         "label": "Reinforcement Learning"
       },
       {
-        "@id": "urn:ngm:class:shader-programming",
+        "@id": "urn:ngm:class:shader",
         "label": "Shader Programming"
       },
       {

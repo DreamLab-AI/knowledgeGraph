@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:data-acquisition",
+  "title": "Data Acquisition",
+  "slug": "data-acquisition",
+  "public": true,
+  "classIri": "urn:ngm:class:data-acquisition",
+  "domain": "robotics",
+  "definition": "Data acquisition is the process of gathering raw signals and measurements from sensors and the environment, then conditioning and recording them for downstream use in perception, learning, and control. In robotics it spans sampling sensor streams, time-synchronising heterogeneous sources, and logging structured datasets for training and analysis. High-quality acquisition is foundational because the fidelity of perception and learned policies depends on the data captured.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-collection",
+      "label": "Data Collection"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:teleoperation",
+        "label": "Teleoperation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:lidar-sensor",
+        "label": "LiDAR Sensor"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

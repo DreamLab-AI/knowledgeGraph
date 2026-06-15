@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:hybrid-cloud",
+  "title": "Hybrid Cloud",
+  "slug": "hybrid-cloud",
+  "public": true,
+  "classIri": "urn:ngm:class:hybrid-cloud",
+  "domain": "infrastructure",
+  "definition": "Hybrid cloud is a computing architecture that combines on-premises or private-cloud infrastructure with one or more public clouds, orchestrated so that workloads and data can move between them. It lets organisations keep sensitive systems in controlled environments while bursting to public capacity for scale or specialised services. Hybrid cloud emphasises interoperability, unified management and consistent identity and networking across environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cloud-computing",
+      "label": "Cloud Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:private-cloud",
+        "label": "Private Cloud"
+      },
+      {
+        "id": "urn:ngm:class:public-cloud",
+        "label": "Public Cloud"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-migration",
+        "label": "Cloud Migration"
+      },
+      {
+        "id": "urn:ngm:class:elasticity",
+        "label": "Elasticity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:multi-cloud",
+        "label": "Multi-Cloud"
+      },
+      {
+        "id": "urn:ngm:class:vendor-lock-in",
+        "label": "Vendor Lock-In"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:on-premises",
+        "label": "On-Premises"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:data-sovereignty",
+        "label": "Data Sovereignty"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

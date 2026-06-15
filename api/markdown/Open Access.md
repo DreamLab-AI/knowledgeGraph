@@ -75,13 +75,13 @@ public:: true
     ],
     "dependsOn": [
       {
-        "@id": "urn:ngm:class:intellectual-property",
+        "@id": "urn:ngm:class:intellectual-property-rights",
         "label": "Intellectual Property"
       }
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:intellectual-property",
+        "@id": "urn:ngm:class:intellectual-property-rights",
         "label": "Intellectual Property"
       }
     ],

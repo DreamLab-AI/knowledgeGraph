@@ -184,7 +184,7 @@ public:: true
         "label": "Extrinsic Parameters"
       },
       {
-        "@id": "urn:ngm:class:ground-truth",
+        "@id": "urn:ngm:class:ground-truth-labels",
         "label": "Ground Truth"
       }
     ],

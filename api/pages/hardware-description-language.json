@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:hardware-description-language",
+  "title": "Hardware Description Language",
+  "slug": "hardware-description-language",
+  "public": true,
+  "classIri": "urn:ngm:class:hardware-description-language",
+  "domain": "infrastructure",
+  "definition": "A hardware description language (HDL) is a specialised programming language used to describe the structure, behaviour and timing of digital electronic circuits at varying levels of abstraction. HDLs allow engineers to specify logic at the register-transfer level, which synthesis tools then translate into gate-level netlists for fabrication or for configuring reconfigurable devices such as FPGAs. The two dominant HDLs are Verilog and VHDL, complemented by higher-level and verification-oriented variants. By capturing concurrency and precise timing semantics, HDLs make digital designs simulatable, verifiable and reproducible before any silicon is committed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-logic",
+        "label": "Digital Logic"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:waterfall-model",
+  "title": "Waterfall Model",
+  "slug": "waterfall-model",
+  "public": true,
+  "classIri": "urn:ngm:class:waterfall-model",
+  "domain": "governance",
+  "definition": "The waterfall model is a sequential software development methodology in which progress flows downward through distinct phases such as requirements, design, implementation, verification, and maintenance. Each phase is completed and signed off before the next begins, producing extensive documentation at every gate. It offers predictability and clear milestones but assumes requirements are stable and discovered early, which limits its ability to absorb change.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:project-management",
+      "label": "Project Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:requirements-engineering",
+        "label": "Requirements Engineering"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:agile-methodology",
+        "label": "Agile Methodology"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      },
+      {
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

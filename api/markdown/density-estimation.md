@@ -1,0 +1,39 @@
+- ### Definition
+	- [[Density Estimation]] is the [[Statistics|statistical]] problem of inferring an underlying [[Probability Distribution|probability density function]] from observed samples.
+	- It spans parametric methods fitted by [[Maximum Likelihood Estimation]] and non-parametric methods such as [[Kernel Density Estimation]].
+	- It is a core task within [[Unsupervised Learning]] and a building block of [[Generative Model|generative modelling]].
+- ### Overview
+	- Given a dataset assumed to be drawn independently from some unknown distribution, density estimation seeks a function that assigns plausible probability mass or density to any point in the input space. The estimate can then be sampled, evaluated, or compared against new observations.
+	- Parametric estimation chooses a family (Gaussian, exponential, mixture) and fits parameters, typically by maximising likelihood. It is data-efficient when the assumed form is correct but biased when it is not.
+	- Non-parametric estimation, including histograms and kernel density estimation, lets the data dictate the shape, trading model bias for higher variance and sensitivity to bandwidth or bin width.
+	- Deep density estimation extends these ideas to high dimensions using normalizing flows (exact likelihoods via invertible transforms), autoregressive models, and variational autoencoders (which provide a lower bound on the likelihood).
+- ### Key aspects
+	- Bias-variance trade-off governed by smoothing parameters such as kernel bandwidth.
+	- The curse of dimensionality, which makes naive non-parametric estimation impractical in high dimensions.
+	- Likelihood evaluation versus sampling: some models give tractable likelihoods, others only easy sampling.
+	- Connections to [[Entropy]] and [[Information Theory]] for measuring distributional divergence.
+- ### Applications
+	- Generative modelling of images, audio, and text.
+	- [[Anomaly Detection]] and [[Outlier Detection]] by flagging low-density regions.
+	- Density-based clustering and mode discovery.
+	- Importance sampling and Monte Carlo integration.
+	- Distribution comparison for drift and calibration analysis.
+- ### Relationships
+	- hasPart:: [[Kernel Density Estimation]]
+	- hasPart:: [[Maximum Likelihood Estimation]]
+	- partOf:: [[Unsupervised Learning]]
+	- uses:: [[Probability Distribution]]
+	- uses:: [[Sampling]]
+	- enables:: [[Generative Model]]
+	- enables:: [[Anomaly Detection]]
+	- enables:: [[Outlier Detection]]
+	- implements:: [[Gaussian Mixture Model]]
+	- implements:: [[Normalizing Flow]]
+	- relatedTo:: [[Variational Autoencoder]]
+	- relatedTo:: [[Information Theory]]
+	- relatedTo:: [[Entropy]]
+	- contrastsWith:: [[Supervised Learning]]
+- ### Provenance
+	- updated:: 2026-06-15
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation

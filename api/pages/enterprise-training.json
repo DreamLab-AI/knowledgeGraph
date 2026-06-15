@@ -1,0 +1,108 @@
+{
+  "id": "urn:visionflow:page:enterprise-training",
+  "title": "Enterprise Training",
+  "slug": "enterprise-training",
+  "public": true,
+  "classIri": "urn:ngm:class:enterprise-training",
+  "domain": "spatial-computing",
+  "definition": "Enterprise Training in spatial computing is the use of immersive virtual and augmented reality experiences to upskill, certify and onboard a workforce at organisational scale. It places learners in realistic, interactive simulations of equipment, procedures and hazardous scenarios that would be costly or dangerous to reproduce physically. By combining experiential learning with analytics and learning-management integration, it improves retention, standardises competency and reduces training risk.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:immersive-experiences",
+      "label": "Immersive Experiences"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:workforce-development",
+        "label": "Workforce Development"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:workforce-development",
+        "label": "Workforce Development"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:workforce-development",
+        "label": "Workforce Development"
+      },
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:immersive-experiences",
+        "label": "Immersive Experiences"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

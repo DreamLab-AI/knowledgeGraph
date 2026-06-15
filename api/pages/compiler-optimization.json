@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:compiler-optimization",
+  "title": "Compiler Optimization",
+  "slug": "compiler-optimization",
+  "public": true,
+  "classIri": "urn:ngm:class:compiler-optimization",
+  "domain": "artificial-intelligence",
+  "definition": "Compiler optimisation is the set of program transformations a compiler applies to make generated code faster, smaller or more energy-efficient while preserving its observable behaviour. It operates over intermediate representations using analyses such as data-flow and dependence analysis to enable transformations like inlining, loop optimisation and dead-code elimination. Optimisation is central to extracting performance from modern hardware without burdening the programmer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compiler",
+      "label": "Compiler"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:profiling",
+        "label": "Profiling"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:ngm:class:optimization-algorithm",
+        "label": "Optimization Algorithm"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:static-analysis",
+        "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:bytecode",
+        "label": "Bytecode"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:just-in-time-compilation",
+        "label": "Just-In-Time Compilation"
+      },
+      {
+        "id": "urn:ngm:class:profiling",
+        "label": "Profiling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      },
+      {
+        "id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:just-in-time-compilation",
+        "label": "Just-In-Time Compilation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "programming-language",
+      "label": "Programming Language"
+    }
+  ]
+}

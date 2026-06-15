@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:purchasing-power",
+  "title": "Purchasing Power",
+  "slug": "purchasing-power",
+  "public": true,
+  "classIri": "urn:ngm:class:purchasing-power",
+  "domain": "finance",
+  "definition": "Purchasing power is the quantity of goods and services that a unit of currency can buy at a given point in time. It declines as prices rise, so it is inversely related to inflation and is commonly tracked through price indices such as the consumer price index. Real purchasing power, adjusted for price changes, is central to comparing incomes, wages and asset values across time and between economies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:finance",
+      "label": "Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:money",
+        "label": "Money"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consumer-price-index",
+        "label": "Consumer Price Index"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "id": "urn:ngm:class:financial-system",
+        "label": "Financial System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      },
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "id": "urn:ngm:class:money",
+        "label": "Money"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

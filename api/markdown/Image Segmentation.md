@@ -336,7 +336,7 @@ public:: true
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:labelled-training-data",
+        "@id": "urn:ngm:class:annotated-training-data",
         "label": "Labelled Training Data"
       },
       {

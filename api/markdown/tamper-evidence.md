@@ -1,0 +1,38 @@
+- ### Definition
+  - Tamper evidence ensures that any modification to a protected record is detectable through verifiable traces.
+  - It builds on [[Cryptographic Hash]] functions and [[Digital Signature]] schemes to bind content to a verifiable fingerprint.
+  - Unlike full prevention, it provides [[Integrity Verification]] after the fact via an [[Audit Trail]].
+  - Closely related to [[Immutability]] and [[Tamper Resistance]] in trustworthy systems.
+- ### Overview
+  - Tamper evidence focuses on detectability rather than prevention: alterations may be possible but never silent.
+  - Common implementations append cryptographic checksums or signatures that fail validation when content changes.
+  - In distributed ledgers, hash-chaining makes any retroactive edit invalidate every subsequent block.
+  - Physical analogues include security seals and holographic labels that visibly degrade when broken.
+- ### Key aspects
+  - Hash-chaining links each record to its predecessor so a single change cascades into detectable mismatches.
+  - Digital signatures bind a record to a signer, exposing both content tampering and forged provenance.
+  - Append-only logs prevent in-place edits, forcing all changes to be visible additions.
+  - Verification is reproducible: any party with the public material can independently confirm integrity.
+- ### Applications
+  - Notarisation and timestamping services that prove a document existed unchanged at a point in time.
+  - Supply-chain records where provenance must survive multiple custodians without silent alteration.
+  - Audit logging in regulated systems where after-the-fact review must detect manipulation.
+  - Digital asset registries that prove an asset has not been swapped or modified.
+- ### Relationships
+  - enables:: [[Integrity Verification]]
+  - enables:: [[Audit Trail]]
+  - enables:: [[Provenance Tracking]]
+  - requires:: [[Cryptographic Hash]]
+  - requires:: [[Digital Signature]]
+  - uses:: [[Timestamp]]
+  - uses:: [[Blockchain Anchoring]]
+  - supports:: [[Immutability]]
+  - supports:: [[Supply Chain Traceability]]
+  - relatedTo:: [[Tamper Resistance]]
+  - relatedTo:: [[NFT]]
+  - bridgesTo:: [[Blockchain]]
+  - contrastsWith:: [[Tamper Resistance]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

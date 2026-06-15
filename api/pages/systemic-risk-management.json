@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:systemic-risk-management",
+  "title": "Systemic Risk Management",
+  "slug": "systemic-risk-management",
+  "public": true,
+  "classIri": "urn:ngm:class:systemic-risk-management",
+  "domain": "finance",
+  "definition": "Systemic risk management is the set of practices, institutions and policy tools aimed at identifying, monitoring and mitigating risks that could destabilise an entire financial system rather than a single firm. It combines macroprudential regulation, stress testing, capital and liquidity buffers, and resolution regimes to limit contagion across interconnected institutions and markets. Coordinated by bodies such as the Financial Stability Board and central banks, it seeks to preserve financial stability and prevent crises from cascading through the economy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-stability",
+      "label": "Financial Stability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:macroprudential-policy",
+        "label": "Macroprudential Policy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:stress-testing",
+        "label": "Stress Testing"
+      },
+      {
+        "id": "urn:ngm:class:macroprudential-policy",
+        "label": "Macroprudential Policy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      },
+      {
+        "id": "urn:ngm:class:prudential-regulation",
+        "label": "Prudential Regulation"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:basel-iii",
+        "label": "Basel III"
+      },
+      {
+        "id": "urn:ngm:class:fsb",
+        "label": "FSB"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:systemic-risk",
+        "label": "Systemic Risk"
+      },
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      },
+      {
+        "id": "urn:ngm:class:basel-committee",
+        "label": "Basel Committee"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

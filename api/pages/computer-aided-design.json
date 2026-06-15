@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:computer-aided-design",
+  "title": "Computer Aided Design",
+  "slug": "computer-aided-design",
+  "public": true,
+  "classIri": "urn:ngm:class:computer-aided-design",
+  "domain": "robotics",
+  "definition": "Computer Aided Design is the use of software to create, modify, analyse and document precise two- and three-dimensional geometric models of physical products and structures. CAD systems support parametric and direct modelling, assemblies, drafting and engineering analysis, forming the digital foundation for manufacturing and robotics. They produce the geometry and tolerances that downstream simulation, fabrication and inspection processes consume.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rapid-prototyping",
+        "label": "Rapid Prototyping"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modelling"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:specification",
+        "label": "Specification"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:advanced-manufacturing",
+        "label": "Advanced Manufacturing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:3d-modelling",
+        "label": "3D Modelling"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rapid-prototyping",
+        "label": "Rapid Prototyping"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:advanced-manufacturing",
+        "label": "Advanced Manufacturing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

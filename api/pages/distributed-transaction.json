@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:distributed-transaction",
+  "title": "Distributed Transaction",
+  "slug": "distributed-transaction",
+  "public": true,
+  "classIri": "urn:ngm:class:distributed-transaction",
+  "domain": "distributed-systems",
+  "definition": "A distributed transaction is a unit of work whose operations span two or more independent data stores, services or network nodes, yet must complete with all-or-nothing atomicity across every participant. Coordinating such a transaction requires protocols that agree on a single outcome despite partial failures, network partitions and concurrent activity at each site. Classical coordination uses atomic commit protocols, while modern systems often relax strict atomicity for availability using compensating workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transaction-processing",
+      "label": "Transaction Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two Phase Commit"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:saga-pattern",
+        "label": "Saga Pattern"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:two-phase-commit",
+        "label": "Two Phase Commit"
+      },
+      {
+        "id": "urn:ngm:class:saga-pattern",
+        "label": "Saga Pattern"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transaction-processing",
+        "label": "Transaction Processing"
+      },
+      {
+        "id": "urn:ngm:class:atomic-settlement",
+        "label": "Atomic Settlement"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

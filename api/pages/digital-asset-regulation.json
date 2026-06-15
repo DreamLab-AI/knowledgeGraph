@@ -1,0 +1,92 @@
+{
+  "id": "urn:visionflow:page:digital-asset-regulation",
+  "title": "Digital Asset Regulation",
+  "slug": "digital-asset-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-asset-regulation",
+  "domain": "blockchain",
+  "definition": "Digital asset regulation is the body of legal and supervisory rules governing the issuance, trading, custody, and use of cryptographic assets such as cryptocurrencies, tokens, and stablecoins. It spans securities law, anti-money-laundering requirements, consumer and investor protection, and bespoke frameworks tailored to blockchain-based instruments. Because asset classifications and jurisdictional approaches differ widely, the field is characterised by evolving guidance, enforcement actions, and efforts toward harmonised cross-border standards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:financial-regulation",
+      "label": "Financial Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      },
+      {
+        "id": "urn:ngm:class:securities-law",
+        "label": "Securities Law"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-securities",
+        "label": "Digital Securities"
+      },
+      {
+        "id": "urn:ngm:class:asset-tokenization",
+        "label": "Asset Tokenization"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:howey-test",
+        "label": "Howey Test"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:investor-protection",
+        "label": "Investor Protection"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-regulation",
+        "label": "Cryptocurrency Regulation"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      },
+      {
+        "id": "urn:ngm:class:stablecoin",
+        "label": "Stablecoin"
+      },
+      {
+        "id": "urn:ngm:class:crypto-asset",
+        "label": "Crypto Asset"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,38 @@
+- ### Definition
+  - ECMAScript is the standardised specification underlying JavaScript.
+  - It is a [[Programming Language]] standardised by [[Ecma International]].
+  - It is the foundation of client-side [[Web Application]] development.
+  - It is implemented against [[Web Standards]] and conventions like [[JSON]].
+- ### Overview
+  - ECMAScript defines the language contract that JavaScript engines implement.
+  - It evolves through the TC39 committee and annual versioned editions.
+  - Standardisation lets multiple independent runtimes interoperate predictably.
+  - It is the lingua franca of the browser and a major server-side runtime language.
+- ### Key aspects
+  - A formal specification (ECMA-262) defines syntax, semantics, and built-in objects.
+  - The TC39 staged proposal process governs how features mature into the standard.
+  - Versioned annual editions provide a predictable upgrade cadence.
+  - Conformance test suites verify that engine implementations match the specification.
+- ### Applications
+  - Client-side logic for interactive web applications.
+  - Server-side runtimes for back-end services and tooling.
+  - Build and automation scripting across the developer toolchain.
+  - Cross-platform application frameworks targeting multiple runtimes.
+- ### Relationships
+  - dependsOn:: [[Programming Language]]
+  - standardizedBy:: [[Ecma International]]
+  - standardizedBy:: [[ISO]]
+  - implements:: [[Web Standards]]
+  - enables:: [[Web Application]]
+  - enables:: [[REST API]]
+  - uses:: [[Web Standards]]
+  - supports:: [[User Interface]]
+  - supports:: [[HTML]]
+  - relatedTo:: [[CSS]]
+  - relatedTo:: [[W3C]]
+  - relatedTo:: [[API]]
+  - bridgesTo:: [[DevOps]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

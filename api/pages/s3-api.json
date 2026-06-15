@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:s3-api",
+  "title": "S3 Api",
+  "slug": "s3-api",
+  "public": true,
+  "classIri": "urn:ngm:class:s3-api",
+  "domain": "infrastructure",
+  "definition": "The S3 API is a RESTful, HTTP-based application programming interface for object storage that exposes buckets and objects through operations such as PUT, GET, DELETE and LIST. Originating with Amazon Simple Storage Service, it has become a de facto standard implemented by many cloud and on-premises storage systems, enabling portable, vendor-neutral object access. Clients authenticate with signed requests and address resources by bucket and key, allowing scalable, durable storage of unstructured data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:object-storage",
+      "label": "Object Storage"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-storage",
+        "label": "Data Storage"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:storage-infrastructure",
+        "label": "Storage Infrastructure"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cloud-storage",
+        "label": "Cloud Storage"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-ingestion",
+        "label": "Data Ingestion"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    }
+  ]
+}

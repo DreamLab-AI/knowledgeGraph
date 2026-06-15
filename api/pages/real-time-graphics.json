@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:real-time-graphics",
+  "title": "Real Time Graphics",
+  "slug": "real-time-graphics",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-graphics",
+  "domain": "spatial-computing",
+  "definition": "Real-time graphics is the field of computer graphics concerned with generating and displaying images fast enough to produce interactive, continuously updating visuals, typically at frame rates of sixty frames per second or higher. It prioritises low and predictable latency over photorealistic fidelity, relying on hardware acceleration and approximate rendering techniques. It is the foundation for games, simulations and immersive spatial computing experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:graphics-processing-unit",
+        "label": "Graphics Processing Unit"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:interactive-rendering",
+        "label": "Interactive Rendering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "virtual-production-vp",
+      "label": "Virtual Production (VP)"
+    }
+  ]
+}

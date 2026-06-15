@@ -85,7 +85,7 @@ public:: true
         "label": "Asset Tokenisation"
       },
       {
-        "@id": "urn:ngm:class:market-liquidity",
+        "@id": "urn:ngm:class:liquidity",
         "label": "Market Liquidity"
       },
       {

@@ -1,0 +1,128 @@
+{
+  "id": "urn:visionflow:page:stealth-address",
+  "title": "Stealth Address",
+  "slug": "stealth-address",
+  "public": true,
+  "classIri": "urn:ngm:class:stealth-address",
+  "domain": "blockchain",
+  "definition": "A stealth address is a privacy-enhancing technique that lets a recipient publish a single static address while every payment is sent to a unique, unlinkable one-time address derived on-chain. The sender combines the recipient's public scan and spend keys with ephemeral randomness, using elliptic-curve Diffie-Hellman to compute a destination only the recipient can detect and spend. Stealth addresses break the public linkage between a recipient's identity and their incoming transactions without requiring interaction or a shared secret beforehand.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:unlinkability",
+        "label": "Unlinkability"
+      },
+      {
+        "id": "urn:ngm:class:anonymity",
+        "label": "Anonymity"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ring-signature",
+        "label": "Ring Signature"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero Knowledge Proof"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:wallet",
+        "label": "Wallet"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:elliptic-curve-cryptography",
+        "label": "Elliptic Curve Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:key-exchange",
+        "label": "Key Exchange"
+      },
+      {
+        "id": "urn:ngm:class:public-key-cryptography",
+        "label": "Public Key Cryptography"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:anonymity",
+        "label": "Anonymity"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monero",
+        "label": "Monero"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:unlinkability",
+        "label": "Unlinkability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    }
+  ]
+}

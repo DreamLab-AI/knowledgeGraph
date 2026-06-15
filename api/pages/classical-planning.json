@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:classical-planning",
+  "title": "Classical Planning",
+  "slug": "classical-planning",
+  "public": true,
+  "classIri": "urn:ngm:class:classical-planning",
+  "domain": "artificial-intelligence",
+  "definition": "Classical planning is a branch of automated planning that computes a sequence of deterministic actions transforming a fully observable initial state into a state satisfying a goal condition. It assumes a single agent, discrete states, instantaneous actions with deterministic effects, and complete knowledge of the world. Problems are typically expressed in formalisms such as STRIPS or PDDL and solved by heuristic state-space search.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automated-planning",
+      "label": "Automated Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:state-space-search",
+        "label": "State Space Search"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:game-playing",
+        "label": "Game Playing"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:automated-planning",
+        "label": "Automated Planning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:pathfinding",
+        "label": "Pathfinding"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

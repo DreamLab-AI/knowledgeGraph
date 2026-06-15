@@ -91,10 +91,6 @@ public:: true
       {
         "@id": "urn:ngm:class:distributed-systems",
         "label": "Distributed Systems"
-      },
-      {
-        "@id": "urn:ngm:class:availability",
-        "label": "Availability"
       }
     ],
     "standardizedBy": [

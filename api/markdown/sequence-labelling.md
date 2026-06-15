@@ -1,0 +1,36 @@
+- ### Definition
+  - [[Sequence Labelling]] assigns a label to every token in a sequence, powering [[Named Entity Recognition]], [[Slot Filling]] and [[Part-of-Speech Tagging]] within [[Natural Language Processing]].
+- ### Overview
+  - Unlike whole-sequence classification, sequence labelling produces one decision per position while respecting transition constraints between labels.
+  - Tag schemes such as BIO (Begin, Inside, Outside) encode span boundaries for multi-token entities.
+  - Structured prediction models capture label dependencies so that, for example, an Inside tag cannot follow an Outside tag of a different type.
+  - Neural encoders followed by a CRF decoding layer remain a strong baseline for many labelling tasks.
+- ### Mechanisms
+  - Hidden Markov models modelling emission and transition probabilities.
+  - Conditional random fields performing global normalisation over label sequences.
+  - BiLSTM and Transformer encoders producing contextual token representations.
+  - Viterbi decoding to find the highest-scoring label path.
+  - Subword tokenisation feeding contextual embeddings into the labelling head.
+- ### Applications
+  - Named-entity recognition extracting people, places and organisations from text.
+  - Slot filling for task-oriented dialogue and voice assistants.
+  - Part-of-speech tagging for downstream parsing and information extraction.
+  - Chunking and shallow parsing in document-processing pipelines.
+- ### Relationships
+  - requires:: [[Labelled Data]]
+  - requires:: [[Supervised Learning]]
+  - uses:: [[Conditional Random Field]]
+  - uses:: [[Hidden Markov Model]]
+  - uses:: [[Recurrent Neural Network]]
+  - enables:: [[Named Entity Recognition]]
+  - enables:: [[Slot Filling]]
+  - enables:: [[Information Extraction]]
+  - partOf:: [[Natural Language Processing]]
+  - supports:: [[Natural Language Understanding]]
+  - contrastsWith:: [[Text Classification]]
+  - relatedTo:: [[Part-of-Speech Tagging]]
+  - relatedTo:: [[Semantic Role Labelling]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation
+  - quality:: 0.62

@@ -69,10 +69,6 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:availability",
-        "label": "Availability"
-      },
-      {
         "@id": "urn:ngm:class:partition-tolerance",
         "label": "Partition Tolerance"
       }

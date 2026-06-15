@@ -42,7 +42,7 @@ public:: true
         "label": "Few-Shot Prompting"
       },
       {
-        "@id": "urn:ngm:class:autoregressive-language-model",
+        "@id": "urn:ngm:class:autoregressive-model",
         "label": "Autoregressive Language Model"
       },
       {

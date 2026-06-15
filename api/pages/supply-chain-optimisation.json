@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:supply-chain-optimisation",
+  "title": "Supply Chain Optimisation",
+  "slug": "supply-chain-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-optimisation",
+  "domain": "artificial-intelligence",
+  "definition": "Supply chain optimisation is the application of analytical and machine-learning techniques to plan and operate the flow of goods, information, and funds across sourcing, production, inventory, and distribution so as to minimise cost and risk while meeting service targets. It combines demand forecasting, inventory and network design, and routing decisions, often formulated as mathematical programmes or learned policies. AI-driven approaches increasingly use predictive analytics and digital twins to make these decisions adaptive to real-time conditions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-management",
+      "label": "Supply Chain Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:linear-programming",
+        "label": "Linear Programming"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

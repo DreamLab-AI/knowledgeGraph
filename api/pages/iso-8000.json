@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:iso-8000",
+  "title": "Iso 8000",
+  "slug": "iso-8000",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-8000",
+  "domain": "governance",
+  "definition": "ISO 8000 is the international standard for data quality and enterprise master data, defining requirements for representing, exchanging, and measuring the quality of data so it can be trusted across organisational boundaries. It specifies how data should be portable, syntactically and semantically defined, and provenance-bearing, and it provides a framework for assessing characteristics such as completeness, accuracy, and conformance. The standard underpins master data management and data governance programmes that need an objective, verifiable basis for data quality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-standards",
+      "label": "Data Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iso-9001",
+        "label": "ISO 9001"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      },
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standardization",
+        "label": "Standardization"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-standards",
+        "label": "Data Standards"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:iso-9001",
+        "label": "ISO 9001"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:open-market-operations",
+  "title": "Open Market Operations",
+  "slug": "open-market-operations",
+  "public": true,
+  "classIri": "urn:ngm:class:open-market-operations",
+  "domain": "finance",
+  "definition": "Open market operations (OMO) are the purchase and sale of government securities and other eligible assets by a central bank in the open market to steer short-term interest rates and the supply of reserves in the banking system. By adding or draining reserves, OMO move the policy rate toward its target and transmit monetary policy to the wider economy. They are the principal day-to-day tool of monetary-policy implementation in most advanced economies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:monetary-policy-implementation",
+      "label": "Monetary Policy Implementation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
+      },
+      {
+        "id": "urn:ngm:class:reserve-asset",
+        "label": "Reserve Asset"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:monetary-policy-transmission",
+        "label": "Monetary Policy Transmission"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reserve-asset",
+        "label": "Reserve Asset"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:financial-infrastructure",
+        "label": "Financial Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      },
+      {
+        "id": "urn:ngm:class:inflation-targeting",
+        "label": "Inflation Targeting"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:monetary-policy-implementation",
+        "label": "Monetary Policy Implementation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:monetary-system",
+        "label": "Monetary System"
+      },
+      {
+        "id": "urn:ngm:class:liquidity-management",
+        "label": "Liquidity Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

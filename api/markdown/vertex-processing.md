@@ -1,0 +1,53 @@
+- ### Definition
+  - [[Vertex Processing]] is the stage of the [[Graphics Pipeline]] that operates on each vertex of geometry, transforming its position through model, world, view, and clip space and computing per-vertex attributes.
+  - It is executed largely by programmable [[Vertex Shader]]s on the [[GPU]] and prepares primitives for clipping, perspective division, and [[Rasterization]].
+  - As a foundational step in the [[Real-Time Rendering Pipeline]] it determines screen-space placement and the interpolated inputs available to [[Fragment Shading]].
+
+- ### Overview
+  - Vertex processing converts object-space geometry into clip-space positions ready for the fixed-function clipping and rasterisation stages.
+  - The transform chain composes model, view, and projection matrices, after which the GPU performs clipping and perspective division to reach normalised device coordinates.
+  - Per-vertex outputs such as transformed normals, texture coordinates, and varying values are interpolated across primitives to drive downstream [[Fragment Shading]].
+  - Modern pipelines may extend vertex processing with tessellation and geometry stages, or replace the classic path entirely with mesh shaders that amplify and cull geometry on-GPU.
+
+- ### Mechanisms
+  - #### Coordinate transforms
+    - Model-to-world, world-to-view (camera), and view-to-clip (projection) matrix multiplications applied per vertex.
+    - Normal transformation by the inverse-transpose of the model-view matrix to preserve correct lighting directions.
+  - #### Programmable vertex shader
+    - The [[Vertex Shader]] executes user code per vertex on the [[GPU]], enabling skinning, morphing, procedural deformation, and instancing.
+    - Outputs a clip-space position plus arbitrary varyings consumed later in the pipeline.
+  - #### Attribute fetch and assembly
+    - Vertex attributes are read from buffers per the input layout and assembled before shading.
+    - Instancing reuses vertex data across many draw instances with per-instance attributes.
+  - #### Hand-off to rasterisation
+    - After clipping and perspective division, primitives pass to [[Rasterization]], which generates fragments and interpolates varyings.
+
+- ### Applications
+  - #### Real-time 3D rendering
+    - Core of games, simulations, and visualisation engines feeding the [[Real-Time Rendering Pipeline]].
+  - #### Character and procedural animation
+    - GPU skinning, blend-shape morphing, and vertex displacement driven in the vertex stage.
+  - #### Large-scene throughput
+    - Instancing and GPU-driven culling reduce CPU overhead, with [[Geometry Processing]] and mesh shaders scaling vertex counts.
+
+- ### Relationships
+  - subClassOf:: [[Graphics Pipeline]]
+  - partOf:: [[Rendering Pipeline]]
+  - hasPart:: [[Vertex Shader]]
+  - uses:: [[Vertex Shader]]
+  - uses:: [[GPU]]
+  - requires:: [[GPU]]
+  - enables:: [[Rasterization]]
+  - enables:: [[Fragment Shading]]
+  - implements:: [[Geometry Processing]]
+  - supports:: [[Real-Time Rendering Pipeline]]
+  - dependsOn:: [[Shader]]
+  - bridgesTo:: [[Rasterization]]
+  - bridgesTo:: [[GPU Pipeline]]
+  - relatedTo:: [[Geometry Processing]]
+  - relatedTo:: [[Fragment Shading]]
+  - relatedTo:: [[Real-Time Rendering Pipeline]]
+
+- ### Provenance
+  - sources::
+  - updated:: 2026-06-15

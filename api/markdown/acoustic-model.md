@@ -1,0 +1,30 @@
+- ### Definition
+  - The component of a speech recogniser that maps audio features to probabilities over phonetic units, learned from transcribed audio and paired with a language model.
+  - Related: [[Speech Recognition]] [[Feature Extraction]] [[Neural Network]] [[Language Model]]
+- ### Overview
+  - An acoustic model estimates how likely a stretch of audio corresponds to particular speech sounds.
+  - It is trained on transcribed audio to learn the mapping from acoustic features to phonetic units.
+  - Classical models used hidden Markov models with Gaussian mixtures; modern systems use deep neural networks.
+  - It operates alongside a language model and decoder to produce the final word sequence.
+- ### Mechanisms
+  - Feature extraction such as mel-frequency cepstral coefficients or filterbank energies.
+  - Modelling of sub-word units like phones, triphones or senones.
+  - Sequence modelling via HMMs, recurrent networks or transformer encoders.
+  - End-to-end architectures that jointly learn acoustic and linguistic structure.
+  - Acoustic adaptation to speaker, channel and noise conditions.
+- ### Applications
+  - Voice assistants and dictation systems that transcribe speech.
+  - Telephony and call-centre speech analytics.
+  - Real-time captioning and accessibility tooling.
+  - Voice control for embedded and automotive interfaces.
+- ### Relationships
+  - partOf:: [[Speech Recognition]]
+  - requires:: [[Feature Extraction]]
+  - hasPart:: [[Neural Network]]
+  - uses:: [[Deep Learning]]
+  - enables:: [[Automatic Speech Recognition]]
+  - relatedTo:: [[Language Model]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

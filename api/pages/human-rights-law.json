@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:human-rights-law",
+  "title": "Human Rights Law",
+  "slug": "human-rights-law",
+  "public": true,
+  "classIri": "urn:ngm:class:human-rights-law",
+  "domain": "artificial-intelligence",
+  "definition": "Human rights law is the body of international and domestic legal instruments that define and protect the fundamental freedoms and entitlements owed to all individuals. It encompasses treaties, conventions, and constitutional provisions covering rights such as privacy, non-discrimination, freedom of expression, and due process. In the context of artificial intelligence, human rights law increasingly shapes obligations around algorithmic fairness, surveillance, and the protection of personal data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance",
+      "label": "Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:fundamental-rights",
+        "label": "Fundamental Rights"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:surveillance",
+        "label": "Surveillance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:bias-mitigation-techniques",
+        "label": "Bias Mitigation Techniques"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:fundamental-rights",
+        "label": "Fundamental Rights"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:privacy-law",
+        "label": "Privacy Law"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

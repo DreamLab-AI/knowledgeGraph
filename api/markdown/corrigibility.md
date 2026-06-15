@@ -1,0 +1,38 @@
+- ### Definition
+  - [[Corrigibility]] keeps an agent open to [[Human-in-the-Loop]] correction, depending on [[AI Alignment]] and [[Value Alignment]] while contrasting with [[Reward Hacking]].
+- ### Overview
+  - A corrigible agent permits its operators to adjust or halt its behaviour without trying to prevent or undermine the intervention.
+  - The challenge is that a goal-directed agent may, by default, resist shutdown because being switched off prevents it achieving its goal.
+  - Corrigibility research seeks objective formulations that make cooperation with oversight stable rather than incidental.
+- ### Key aspects
+  - Non-resistance to authorised shutdown and modification.
+  - Avoidance of deception or manipulation of overseers.
+  - Preservation of human ability to intervene as capability grows.
+  - Stability of the corrigible disposition under self-improvement.
+- ### Applications
+  - Safe interruptibility of reinforcement-learning agents.
+  - Human oversight of autonomous and agentic systems.
+  - Failsafe and shutdown design for high-stakes deployments.
+  - Governance frameworks requiring demonstrable human control.
+- ### Relationships
+  - partOf:: [[AI Safety]]
+  - partOf:: [[Value Alignment]]
+  - hasPart:: [[Human-in-the-Loop]]
+  - enables:: [[Human-in-the-Loop]]
+  - enables:: [[Accountability]]
+  - requires:: [[Transparency]]
+  - requires:: [[Interpretability]]
+  - dependsOn:: [[AI Alignment]]
+  - dependsOn:: [[Value Alignment]]
+  - supports:: [[AI Safety]]
+  - supports:: [[Robustness]]
+  - bridgesTo:: [[AI Alignment]]
+  - bridgesTo:: [[Governance]]
+  - contrastsWith:: [[Reward Hacking]]
+  - relatedTo:: [[AI Alignment]]
+  - relatedTo:: [[Reward Hacking]]
+  - relatedTo:: [[Existential Risk]]
+  - relatedTo:: [[Responsible AI]]
+- ### Provenance
+  - This class was materialised to resolve existing inbound references in the knowledge graph.
+  - updated:: 2026-06-15

@@ -1,0 +1,40 @@
+- ### Definition
+  - Photorealism is a key concept in the spatial computing domain. Related concepts include [[Rendering]] [[Ray Tracing]] [[Global Illumination]] [[Physically Based Rendering]].
+  - Photorealism is the goal and quality of producing synthetic imagery that is visually indistinguishable from a photograph of a real scene. In computer graphics it is pursued through physically based rendering, accurate light transport such as global illumination and ray tracing, high-fidelity material models, and careful post-processing including tone mapping and colour grading. Achieving photorealism requires faithful simulation of how light interacts with surfaces, volumes, and the camera, and it underpins applications from visual effects and architectural visualisation to immersive virtual environments and synthetic training data.
+- ### Overview
+  - Photorealism sits within the broader category of [[Rendering]], which it specialises.
+  - It connects to a network of 14 related classes across the knowledge graph, anchoring edges that previously pointed to an undefined node.
+- ### Key aspects
+  - uses: [[Texture Mapping]]
+  - uses: [[Shader]]
+  - uses: [[HDR]]
+  - requires: [[Global Illumination]]
+  - requires: [[Physically Based Rendering]]
+  - requires: [[Ray Tracing]]
+- ### Mechanisms
+  - Photorealism operates through its constituent parts and dependencies, integrating with adjacent systems to deliver its function within spatial computing.
+  - Depends on [[GPU Rendering]] for correct operation.
+- ### Applications
+  - Applied to advance [[Visual Effects]].
+  - Applied to advance [[Virtual Production]].
+  - Applied to advance [[Film Production]].
+- ### Relationships
+  - subClassOf:: [[Rendering]]
+  - requires:: [[Global Illumination]]
+  - requires:: [[Physically Based Rendering]]
+  - requires:: [[Ray Tracing]]
+  - uses:: [[Texture Mapping]]
+  - uses:: [[Shader]]
+  - uses:: [[HDR]]
+  - enables:: [[Visual Effects]]
+  - enables:: [[Virtual Production]]
+  - partOf:: [[Computer Graphics]]
+  - supports:: [[Film Production]]
+  - dependsOn:: [[GPU Rendering]]
+  - relatedTo:: [[Colour Grading]]
+  - relatedTo:: [[Post Processing]]
+  - relatedTo:: [[Tone Mapping]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

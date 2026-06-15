@@ -1,0 +1,36 @@
+- ### Definition
+  - A geometric mapping from 3D scene points to 2D image points used throughout [[Computer Vision]].
+  - Encodes intrinsic optics and extrinsic [[Pose Estimation]] of the device.
+  - The basis for [[Camera Calibration]] and metric 3D reconstruction.
+- ### Overview
+  - The pinhole model is the canonical formulation, extended with distortion terms for real lenses.
+  - Intrinsic parameters fix focal length and principal point; extrinsics fix rotation and translation.
+  - Accurate models are prerequisites for [[Structure From Motion]] and [[Stereo Vision]].
+- ### Mechanisms
+  - Projection composes extrinsic transform, perspective division and intrinsic scaling.
+  - Radial and tangential distortion correct deviations from the ideal pinhole.
+  - Calibration estimates parameters from known targets or scene constraints.
+  - Reprojection error quantifies how well the model fits observed features.
+- ### Applications
+  - Camera calibration for measurement and augmented reality alignment.
+  - Depth recovery via stereo and multi-view geometry.
+  - Pose tracking for [[SLAM]] and robotics navigation.
+- ### Relationships
+  - subClassOf:: [[Computer Vision]]
+  - partOf:: [[Computer Vision]]
+  - requires:: [[Camera Calibration]]
+  - requires:: [[Linear Algebra]]
+  - enables:: [[Pose Estimation]]
+  - enables:: [[Structure From Motion]]
+  - enables:: [[Depth Estimation]]
+  - uses:: [[Photogrammetry]]
+  - supports:: [[SLAM]]
+  - supports:: [[Augmented Reality]]
+  - dependsOn:: [[Linear Algebra]]
+  - relatedTo:: [[Stereo Vision]]
+  - relatedTo:: [[Computer Vision]]
+  - relatedTo:: [[Photogrammetry]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - generatedBy:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

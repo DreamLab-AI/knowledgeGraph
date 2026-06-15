@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:gpu-memory",
+  "title": "Gpu Memory",
+  "slug": "gpu-memory",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu-memory",
+  "domain": "machine-learning",
+  "definition": "GPU memory is the high-bandwidth memory resident on or tightly coupled to a graphics processing unit that stores model weights, activations, gradients, and intermediate buffers during computation. Its capacity and bandwidth are frequently the binding constraint on the size of models that can be trained or served, motivating techniques such as quantisation, gradient checkpointing, and model parallelism. Efficient use of GPU memory directly determines achievable throughput and batch size.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gpu",
+      "label": "GPU"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:high-bandwidth-memory",
+        "label": "High Bandwidth Memory"
+      },
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:batch-size",
+        "label": "Batch Size"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      },
+      {
+        "id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

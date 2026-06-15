@@ -96,10 +96,6 @@ public:: true
       {
         "@id": "urn:ngm:class:bank-of-england",
         "label": "Bank of England"
-      },
-      {
-        "@id": "urn:ngm:class:federal-reserve",
-        "label": "Federal Reserve"
       }
     ]
   },

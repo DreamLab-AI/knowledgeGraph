@@ -1,0 +1,32 @@
+- ### Definition
+  - A [[Database Schema]] is the formal [[Data Model]] of a [[Relational Database]], defining tables, columns, types and constraints that a [[Database Management System]] enforces and that [[SQL]] and [[Database Query]] operate over.
+- ### Overview
+  - A database schema is the formal description of the structure of a database, specifying tables, fields, data types, relationships and integrity constraints.
+  - It separates the logical organisation of data from its physical storage and from the applications that consume it.
+  - Schemas evolve over time through controlled migrations as application requirements change.
+- ### Key aspects
+  - Table and column definitions with typed attributes.
+  - Primary and foreign key constraints enforcing referential integrity.
+  - Indexes and views supporting query performance and abstraction.
+  - Versioned migrations governing schema evolution.
+- ### Applications
+  - Transactional application back ends with normalised relational schemas.
+  - Analytical [[Data Warehouse]] schemas optimised for reporting.
+  - Schema mapping for [[Data Integration]] across heterogeneous systems.
+- ### Relationships
+  - partOf:: [[Relational Database]]
+  - partOf:: [[Database]]
+  - uses:: [[SQL]]
+  - uses:: [[Data Model]]
+  - requires:: [[Database Management System]]
+  - contrastsWith:: [[Ontology]]
+  - contrastsWith:: [[Knowledge Representation]]
+  - bridgesTo:: [[OWL Class Hierarchy]]
+  - bridgesTo:: [[Database Query]]
+  - supports:: [[Data Integration]]
+  - supports:: [[Data Governance]]
+  - relatedTo:: [[Metadata]]
+  - relatedTo:: [[Data Warehouse]]
+  - enables:: [[Data Interoperability]]
+- ### Provenance
+  - updated:: 2026-06-15

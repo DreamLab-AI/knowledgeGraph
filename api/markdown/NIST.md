@@ -129,7 +129,7 @@ alias:: NIST (National Institute of Standards and Technology)
         "label": "Responsible AI"
       },
       {
-        "@id": "urn:ngm:class:ai-auditing",
+        "@id": "urn:ngm:class:algorithmic-auditing",
         "label": "AI Auditing"
       },
       {

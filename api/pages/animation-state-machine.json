@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:animation-state-machine",
+  "title": "Animation State Machine",
+  "slug": "animation-state-machine",
+  "public": true,
+  "classIri": "urn:ngm:class:animation-state-machine",
+  "domain": "spatial-computing",
+  "definition": "An animation state machine is a graph of discrete animation states and the transitions between them, used in real-time engines to drive a character or object's motion based on game logic, input and parameters. Each state references a clip or blend tree, and transitions carry conditions, blend durations and interruption rules that govern how one motion flows into another. It separates high-level behaviour authoring from low-level pose evaluation, making locomotion and action systems tractable to build and tune.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:state-machine",
+      "label": "State Machine"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:blend-tree",
+        "label": "Blend Tree"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:open-governance",
+  "title": "Open Governance",
+  "slug": "open-governance",
+  "public": true,
+  "classIri": "urn:ngm:class:open-governance",
+  "domain": "standards",
+  "definition": "Open governance is a model of decision-making for projects, standards and organisations in which processes are transparent, participation is open and authority is distributed among stakeholders. It emphasises published rules, accountable roles and consensus-driven decisions rather than closed or unilateral control. It is common in open-source communities, standards bodies and multi-stakeholder institutions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:open-source-governance",
+      "label": "Open Source Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:transparent-decision-making",
+        "label": "Transparent Decision Making"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:collective-governance",
+        "label": "Collective Governance"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-standards",
+        "label": "Open Standards"
+      },
+      {
+        "id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-source-governance",
+        "label": "Open Source Governance"
+      },
+      {
+        "id": "urn:ngm:class:multi-stakeholder-governance",
+        "label": "Multi-Stakeholder Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

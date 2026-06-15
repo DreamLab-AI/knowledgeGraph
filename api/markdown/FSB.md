@@ -73,10 +73,6 @@ public:: true
         "label": "Financial Regulation"
       },
       {
-        "@id": "urn:ngm:class:international-coordination",
-        "label": "International Coordination"
-      },
-      {
         "@id": "urn:ngm:class:g20",
         "label": "G20"
       }

@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:class-imbalance",
+  "title": "Class Imbalance",
+  "slug": "class-imbalance",
+  "public": true,
+  "classIri": "urn:ngm:class:class-imbalance",
+  "domain": "machine-learning",
+  "definition": "Class imbalance is the condition in a classification dataset where the number of examples in one class greatly exceeds that of another, causing learning algorithms to favour the majority class. It is common in problems such as fraud detection, medical diagnosis, and anomaly detection, where the events of interest are rare. Class imbalance undermines naive accuracy as an evaluation metric and motivates remedies such as resampling, cost-sensitive learning, and the use of precision-recall-oriented metrics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:classification",
+      "label": "Classification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:resampling",
+        "label": "Resampling"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:model-performance",
+        "label": "Model Performance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:precision-recall-curve",
+        "label": "Precision-Recall Curve"
+      },
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      },
+      {
+        "id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "id": "urn:ngm:class:recall",
+        "label": "Recall"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -51,7 +51,7 @@ public:: true
         "label": "Capability Evaluation"
       },
       {
-        "@id": "urn:ngm:class:third-party-audit",
+        "@id": "urn:ngm:class:third-party-verification",
         "label": "Third-Party Audit"
       }
     ],

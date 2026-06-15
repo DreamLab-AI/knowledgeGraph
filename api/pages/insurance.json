@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:insurance",
+  "title": "Insurance",
+  "slug": "insurance",
+  "public": true,
+  "classIri": "urn:ngm:class:insurance",
+  "domain": "governance",
+  "definition": "Insurance is a financial arrangement in which a party pays a premium to transfer the risk of an uncertain future loss to an insurer, which pools premiums from many policyholders and pays valid claims out of that pool. It relies on the law of large numbers and actuarial estimation to price risk so that aggregate premiums cover expected losses, expenses and a margin. Insurance underpins economic resilience by smoothing the financial impact of accidents, illness, property damage and other contingencies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:risk-management",
+      "label": "Risk Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:parametric-insurance",
+        "label": "Parametric Insurance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:parametric-insurance",
+        "label": "Parametric Insurance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:parametric-insurance",
+        "label": "Parametric Insurance"
+      },
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    }
+  ]
+}

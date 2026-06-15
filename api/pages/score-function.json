@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:score-function",
+  "title": "Score Function",
+  "slug": "score-function",
+  "public": true,
+  "classIri": "urn:ngm:class:score-function",
+  "domain": "artificial-intelligence",
+  "definition": "In score-based generative modelling, the Score Function is the gradient of the log probability density of the data with respect to the input, indicating the direction of increasing data likelihood. Diffusion models learn to estimate this score across noise levels, then use it to iteratively denoise samples drawn from a simple prior. The score function connects diffusion models to Langevin-style sampling and energy-based formulations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:diffusion-model",
+      "label": "Diffusion Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:noise-schedule",
+        "label": "Noise Schedule"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      },
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+- ### Definition
+  - Operational Risk is a key concept in the finance domain.
+  - Related foundational concepts: [[Risk Management]] [[Enterprise Risk Management]] [[Operational Resilience]] [[Compliance]] [[Basel III]].
+  - Operational risk is the risk of loss resulting from inadequate or failed internal processes, people and systems, or from external events. It encompasses fraud, human error, system failures, legal and compliance breaches, and disruptions such as cyber-attacks or natural disasters, but excludes strategic and reputational risk in its narrow Basel definition. Managing it relies on controls, monitoring, capital allocation and resilience planning.
+- ### Overview
+  - Operational risk gained formal prominence with Basel II's capital treatment and remains central to financial-institution governance. Firms quantify it through loss-event data, scenario analysis and key risk indicators, and mitigate it through internal controls, segregation of duties, business continuity and resilience programmes. It increasingly overlaps with cyber and third-party risk.
+- ### Key aspects
+  - Loss categories: process, people, systems and external events.
+  - Quantification via loss data, scenarios and key risk indicators.
+  - Internal controls, segregation of duties and audit.
+  - Regulatory capital treatment under Basel frameworks.
+  - Operational resilience and business continuity planning.
+- ### Applications
+  - Regulatory capital and risk reporting in banks.
+  - Control design and assurance across business processes.
+  - Cyber, fraud and third-party risk management.
+  - Resilience and continuity planning for critical services.
+- ### Relationships
+  - subClassOf:: [[Risk Management]]
+  - partOf:: [[Enterprise Risk Management]]
+  - dependsOn:: [[Operational Resilience]]
+  - dependsOn:: [[Business Continuity]]
+  - relatedTo:: [[Market Risk]]
+  - relatedTo:: [[Credit Risk]]
+  - relatedTo:: [[Supply Chain Risk Management]]
+  - supports:: [[Capital Adequacy]]
+  - supports:: [[Compliance]]
+  - requires:: [[Audit]]
+  - requires:: [[Fraud Detection]]
+  - standardizedBy:: [[Basel III]]
+  - enables:: [[Operational Resilience]]
+  - bridgesTo:: [[Governance Risk Compliance]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

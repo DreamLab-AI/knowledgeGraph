@@ -156,7 +156,7 @@ public:: true
         "label": "Fine Tuning"
       },
       {
-        "@id": "urn:ngm:class:neural-scaling-laws",
+        "@id": "urn:ngm:class:scaling-laws",
         "label": "Neural Scaling Laws"
       }
     ],

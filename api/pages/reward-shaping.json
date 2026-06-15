@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:reward-shaping",
+  "title": "Reward Shaping",
+  "slug": "reward-shaping",
+  "public": true,
+  "classIri": "urn:ngm:class:reward-shaping",
+  "domain": "machine-learning",
+  "definition": "Reward shaping is a reinforcement-learning technique that augments an environment's native reward signal with additional intermediate rewards to guide and accelerate learning. Potential-based reward shaping provides theoretical guarantees that the optimal policy is preserved, avoiding the introduction of unintended behaviours. It is commonly used to address sparse-reward problems where useful feedback is rare.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agent-training",
+        "label": "Agent Training"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:potential-based-reward-shaping",
+        "label": "Potential-Based Reward Shaping"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "id": "urn:ngm:class:sparse-reward",
+        "label": "Sparse Reward"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reward-engineering",
+        "label": "Reward Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:inverse-reinforcement-learning",
+        "label": "Inverse Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:exploration-exploitation",
+        "label": "Exploration-Exploitation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    }
+  ]
+}

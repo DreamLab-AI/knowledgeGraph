@@ -1,0 +1,47 @@
+- ### Definition
+	- [[Cross Border Authentication]] establishes trusted identity assurance that holds across jurisdictions, so a credential proven in one country is honoured in another.
+	- It is a specialised form of [[Authentication]] built atop interoperable [[Trust Framework]] and [[Federated Identity]] arrangements.
+	- It increasingly draws on [[Verifiable Credentials]] and [[Decentralized Identity]] to reduce dependence on bilateral integrations.
+- ### Overview
+	- National identity systems historically operate in isolation, forcing individuals and businesses to re-prove identity whenever they cross a border.
+	- Cross border authentication reconciles divergent legal definitions, assurance levels and technical protocols so that an authenticated identity can travel with its holder.
+	- Schemes such as the European eIDAS regulation establish mutual recognition of electronic identification across member states, while emerging decentralised approaches let holders present portable credentials directly.
+	- Success hinges on agreeing assurance-level mappings, governance and liability allocation between participating authorities.
+- ### Key aspects
+	- Mutual recognition of identity credentials between jurisdictions.
+	- Mapping of differing levels of assurance to a common baseline.
+	- Interoperable protocols and credential formats.
+	- Governance and liability frameworks spanning multiple legal regimes.
+	- Privacy and data-protection compliance across borders.
+- ### Mechanisms
+	- Federation and brokering of identity providers across countries.
+	- Issuance and presentation of standards-based verifiable credentials.
+	- Trust registries listing recognised issuers and assurance levels.
+	- Cryptographic proof of credential authenticity and holder binding.
+	- Policy mapping engines reconciling jurisdictional requirements.
+- ### Applications
+	- Cross-border access to public e-government services.
+	- International banking onboarding and regulated financial transactions.
+	- Travel and border-control digital identity schemes.
+	- Multinational enterprise access to shared systems.
+	- Recognition of professional and educational credentials abroad.
+- ### Relationships
+	- subClassOf:: [[Authentication]]
+	- enables:: [[Interoperability]]
+	- enables:: [[Financial Inclusion]]
+	- requires:: [[Trust Framework]]
+	- requires:: [[Identity Verification]]
+	- dependsOn:: [[Digital Trust]]
+	- uses:: [[Verifiable Credentials]]
+	- uses:: [[Federated Identity]]
+	- implements:: [[Authentication Protocol]]
+	- supports:: [[Decentralized Identity]]
+	- partOf:: [[Identity Management]]
+	- bridgesTo:: [[Self Sovereign Identity]]
+	- relatedTo:: [[Single Sign On]]
+	- relatedTo:: [[Digital Identity]]
+	- relatedTo:: [[Regulatory Compliance]]
+- ### Provenance
+	- attributedTo:: did:nostr:ontology-mesh
+	- inferenceRule:: GapMaterialisation
+	- updated:: 2026-06-15

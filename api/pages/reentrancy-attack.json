@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:reentrancy-attack",
+  "title": "Reentrancy Attack",
+  "slug": "reentrancy-attack",
+  "public": true,
+  "classIri": "urn:ngm:class:reentrancy-attack",
+  "domain": "blockchain",
+  "definition": "A reentrancy attack is a smart-contract exploit in which a malicious contract repeatedly re-enters a vulnerable function before its state is updated, draining funds or corrupting state. It arises when a contract makes an external call before completing its own bookkeeping, allowing the callee to recursively invoke the caller. The class of bug was made notorious by the DAO incident and is mitigated by the checks-effects-interactions pattern and reentrancy guards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-security",
+      "label": "Blockchain Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:attack-vector",
+        "label": "Attack Vector"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:state-change",
+        "label": "State Change"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vulnerability",
+        "label": "Vulnerability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-security",
+        "label": "Blockchain Security"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      },
+      {
+        "id": "urn:ngm:class:gas",
+        "label": "Gas"
+      },
+      {
+        "id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      },
+      {
+        "id": "urn:ngm:class:state-change",
+        "label": "State Change"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

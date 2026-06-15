@@ -1,0 +1,39 @@
+- ### Definition
+  - Greedy Decoding is a sequence generation strategy that, at each step of an autoregressive model, selects the single token with the highest predicted probability. It is the simplest decoding method, fully deterministic and computationally cheap, but it can be myopic and miss globally higher-probability sequences. It serves as the baseline against which beam search and sampling-based strategies are compared.
+  - Related concepts: [[Text Generation]] [[Beam Search]] [[Sampling]] [[Language Model]]
+- ### Overview
+  - Greedy decoding generates a sequence by repeatedly committing to the locally most probable next token. Because it never reconsiders earlier choices, it is fast and reproducible but prone to suboptimal or repetitive output. It contrasts with beam search, which maintains several candidate hypotheses, and with stochastic sampling methods that trade determinism for diversity. Greedy decoding is often used when exactness and speed matter more than variety.
+- ### Key aspects
+  - Deterministic selection of the argmax token per step
+  - Lowest computational and memory overhead among strategies
+  - Susceptibility to local optima and repetition
+  - No diversity or sampling temperature control
+  - Common default for tasks needing reproducible output
+- ### Mechanisms
+  - Deterministic selection of the argmax token per step
+  - Lowest computational and memory overhead among strategies
+  - Susceptibility to local optima and repetition
+- ### Applications
+  - Deterministic inference for evaluation and testing
+  - Latency-sensitive generation pipelines
+  - Baseline comparison for decoding research
+  - Structured output where variety is undesirable
+  - Speculative decoding draft-token verification baselines
+- ### Relationships
+  - subClassOf:: [[Text Generation]]
+  - partOf:: [[Text Generation]]
+  - contrastsWith:: [[Beam Search]]
+  - contrastsWith:: [[Sampling]]
+  - contrastsWith:: [[Speculative Decoding]]
+  - uses:: [[Language Model]]
+  - dependsOn:: [[Transformer]]
+  - enables:: [[Text Generation]]
+  - supports:: [[Foundation Model]]
+  - relatedTo:: [[KV Cache]]
+  - relatedTo:: [[Language Model]]
+  - bridgesTo:: [[Text Generation]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

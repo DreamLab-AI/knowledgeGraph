@@ -1,0 +1,33 @@
+- ### Definition
+  - [[Clearing]] is the post-trade process bridging [[Trade Execution]] and [[Settlement]], performed by the [[Clearing House]] and underpinning [[Financial Market Infrastructure]] and [[Risk Management]].
+- ### Overview
+  - Post-trade confirmation, matching and obligation management.
+  - A clearing house often novates trades and nets exposures.
+  - Manages counterparty credit risk via margin and default funds.
+- ### Mechanisms
+  - Trade matching and confirmation after execution.
+  - Novation and central counterparty interposition.
+  - Multilateral netting of obligations.
+  - Margining, collateral and default management.
+- ### Applications
+  - Securities and derivatives post-trade processing.
+  - Payment and interbank clearing systems.
+  - Central counterparty risk mutualisation.
+  - Reduction of settlement and systemic risk.
+- ### Relationships
+  - hasPart:: [[Trade Execution]]
+  - requires:: [[Clearing House]]
+  - requires:: [[Risk Management]]
+  - contrastsWith:: [[Settlement]]
+  - partOf:: [[Financial Market Infrastructure]]
+  - uses:: [[Clearing House]]
+  - enables:: [[Settlement]]
+  - enables:: [[Trade Execution]]
+  - supports:: [[Payment Processing]]
+  - supports:: [[Capital Markets]]
+  - relatedTo:: [[Custody]]
+  - relatedTo:: [[Payment System]]
+  - dependsOn:: [[Clearing House]]
+  - bridgesTo:: [[Financial Infrastructure]]
+- ### Provenance
+  - updated:: 2026-06-15

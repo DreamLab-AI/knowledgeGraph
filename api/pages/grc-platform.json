@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:grc-platform",
+  "title": "Grc Platform",
+  "slug": "grc-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:grc-platform",
+  "domain": "governance",
+  "definition": "A GRC platform is an integrated software system that unifies governance, risk management and compliance activities across an organisation. It maintains a common library of controls, policies and risks, maps them to regulatory frameworks, and automates assessment, evidence collection and reporting. By consolidating these functions it gives leadership a consistent view of risk posture and control effectiveness while reducing duplicated manual effort.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:control-framework",
+        "label": "Control Framework"
+      },
+      {
+        "id": "urn:ngm:class:policy-management",
+        "label": "Policy Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:continuous-monitoring",
+        "label": "Continuous Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:audit-management",
+        "label": "Audit Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:compliance-control",
+        "label": "Compliance Control"
+      },
+      {
+        "id": "urn:ngm:class:compliance-automation",
+        "label": "Compliance Automation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      },
+      {
+        "id": "urn:ngm:class:policy-as-code",
+        "label": "Policy As Code"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:governance-risk-compliance",
+        "label": "Governance Risk Compliance"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    }
+  ]
+}

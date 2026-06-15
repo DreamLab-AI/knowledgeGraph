@@ -186,7 +186,7 @@ public:: true
         "label": "Data Lineage Tracking"
       },
       {
-        "@id": "urn:ngm:class:scientific-reproducibility",
+        "@id": "urn:ngm:class:reproducibility",
         "label": "Scientific Reproducibility"
       }
     ],

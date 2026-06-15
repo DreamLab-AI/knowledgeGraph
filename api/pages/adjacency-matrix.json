@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:adjacency-matrix",
+  "title": "Adjacency Matrix",
+  "slug": "adjacency-matrix",
+  "public": true,
+  "classIri": "urn:ngm:class:adjacency-matrix",
+  "domain": "data",
+  "definition": "An adjacency matrix is a square matrix representation of a graph in which the entry at row i and column j records whether, or how strongly, vertex i is connected to vertex j. For a graph of n vertices it is an n-by-n matrix, symmetric for undirected graphs and potentially weighted to encode edge costs. It is a foundational data structure for graph algorithms, spectral analysis and graph neural networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graph-representation",
+      "label": "Graph Representation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:graph-representation",
+        "label": "Graph Representation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:sparse-matrix",
+        "label": "Sparse Matrix"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:matrix",
+        "label": "Matrix"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:pagerank",
+        "label": "PageRank"
+      },
+      {
+        "id": "urn:ngm:class:shortest-path",
+        "label": "Shortest Path"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sparse-matrix",
+        "label": "Sparse Matrix"
+      },
+      {
+        "id": "urn:ngm:class:network-analysis",
+        "label": "Network Analysis"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

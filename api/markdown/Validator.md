@@ -85,7 +85,7 @@ public:: true
         "label": "Consensus Mechanism"
       },
       {
-        "@id": "urn:ngm:class:block-finality",
+        "@id": "urn:ngm:class:finality",
         "label": "Block Finality"
       },
       {

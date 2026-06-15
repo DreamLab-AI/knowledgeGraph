@@ -1,0 +1,35 @@
+- ### Definition
+- A data management platform is a centralised [[Data]] system for aggregating, segmenting, and activating multi-source data.
+- It is part of broader [[Data Integration]] architecture.
+- It contrasts with the [[Customer Data Platform]], which centres on persistent individual profiles.
+- It commonly enables [[Programmatic Advertising]] and supports [[Data Governance]].
+- ### Overview
+- The platform ingests data from many sources, normalises it, and organises it into segments usable downstream.
+- In advertising it has historically aggregated and anonymised audience signals to drive campaign targeting.
+- Enterprise interpretations emphasise unified pipelines, storage, governance, and activation across an organisation.
+- It is distinguished from a data warehouse by its emphasis on activation and segmentation rather than analytical storage alone.
+- ### Key aspects
+- Ingestion and normalisation from diverse first- and third-party sources.
+- Audience or entity segmentation for targeting and analysis.
+- Activation interfaces feeding downstream systems and campaigns.
+- Governance and consent controls over collected data.
+- ### Applications
+- Audience segmentation for programmatic advertising.
+- Unifying marketing and analytics data across channels.
+- Feeding personalisation and recommendation systems.
+- Supporting data governance and consent enforcement at scale.
+- ### Relationships
+- partOf:: [[Data Integration]]
+- hasPart:: [[Data Pipeline]]
+- hasPart:: [[Data Warehouse]]
+- contrastsWith:: [[Customer Data Platform]]
+- uses:: [[Data Integration]]
+- enables:: [[Programmatic Advertising]]
+- supports:: [[Data Governance]]
+- supports:: [[Advertising]]
+- requires:: [[Consent Management]]
+- relatedTo:: [[Synthetic Data Generator]]
+- relatedTo:: [[Data Warehouse]]
+- dependsOn:: [[Data]]
+- ### Provenance
+- updated:: 2026-06-15

@@ -126,7 +126,7 @@ alias:: Structure from Motion
         "label": "Gaussian Splatting"
       },
       {
-        "@id": "urn:ngm:class:scene-reconstruction",
+        "@id": "urn:ngm:class:3-d-scene-reconstruction",
         "label": "Scene Reconstruction"
       },
       {

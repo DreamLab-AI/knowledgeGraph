@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:backdrivability",
+  "title": "Backdrivability",
+  "slug": "backdrivability",
+  "public": true,
+  "classIri": "urn:ngm:class:backdrivability",
+  "domain": "robotics",
+  "definition": "Backdrivability is the property of a mechanical actuator or transmission that allows external forces applied at the output to drive the input in reverse, so motion and force pass freely in both directions. A highly backdrivable joint exhibits low reflected inertia and friction, enabling it to comply with and sense external contact. It is a key enabler of safe, compliant physical human-robot interaction and force-controlled robots.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:actuator",
+      "label": "Actuator"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:torque",
+        "label": "Torque"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:impedance-control",
+        "label": "Impedance Control"
+      },
+      {
+        "id": "urn:ngm:class:admittance-control",
+        "label": "Admittance Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rigid-body",
+        "label": "Rigid Body"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:safety",
+        "label": "Safety"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:torque-control",
+        "label": "Torque Control"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:series-elastic-actuator",
+        "label": "Series Elastic Actuator"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      },
+      {
+        "id": "urn:ngm:class:manipulator",
+        "label": "Manipulator"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    }
+  ]
+}

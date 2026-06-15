@@ -86,7 +86,7 @@ public:: true
     ],
     "hasPart": [
       {
-        "@id": "urn:ngm:class:signature-verification",
+        "@id": "urn:ngm:class:digital-signature-verification",
         "label": "Signature Verification"
       },
       {

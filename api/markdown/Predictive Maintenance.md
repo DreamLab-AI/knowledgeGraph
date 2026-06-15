@@ -432,7 +432,7 @@ public:: true
         "label": "Convolutional Neural Network"
       },
       {
-        "@id": "urn:ngm:class:gradient-boosting",
+        "@id": "urn:ngm:class:boosting",
         "label": "Gradient Boosting"
       },
       {

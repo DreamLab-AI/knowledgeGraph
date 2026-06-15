@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:parameter-estimation",
+  "title": "Parameter Estimation",
+  "slug": "parameter-estimation",
+  "public": true,
+  "classIri": "urn:ngm:class:parameter-estimation",
+  "domain": "robotics",
+  "definition": "Parameter estimation is the process of inferring the unknown parameters of a mathematical or statistical model from observed data. In robotics and control it is central to fitting dynamic models, calibrating sensors, and identifying physical constants from measurements, typically by optimising a likelihood or least-squares criterion. It provides the model coefficients that downstream estimation, control, and prediction algorithms rely upon.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:system-identification",
+      "label": "System Identification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:system-identification",
+        "label": "System Identification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    }
+  ]
+}

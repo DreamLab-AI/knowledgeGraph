@@ -1,0 +1,91 @@
+{
+  "id": "urn:visionflow:page:data-stewardship",
+  "title": "Data Stewardship",
+  "slug": "data-stewardship",
+  "public": true,
+  "classIri": "urn:ngm:class:data-stewardship",
+  "domain": "governance",
+  "definition": "Data stewardship is the operational accountability for managing an organisation's data assets across their lifecycle, ensuring they are accurate, well-documented, secure, and used in line with policy. Data stewards act as the human layer of data governance, owning definitions, resolving quality issues, and curating metadata and lineage. It bridges governance policy and day-to-day data practice, enabling trustworthy, reusable data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-steward",
+        "label": "Data Steward"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:metadata-management",
+        "label": "Metadata Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-catalog",
+        "label": "Data Catalog"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:master-data-management",
+        "label": "Master Data Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-management",
+        "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:framebuffer",
+  "title": "Framebuffer",
+  "slug": "framebuffer",
+  "public": true,
+  "classIri": "urn:ngm:class:framebuffer",
+  "domain": "spatial-computing",
+  "definition": "A framebuffer is a region of memory that holds the pixel data representing a complete frame to be displayed or further processed, typically organised as colour, depth, and stencil buffers. In a graphics pipeline, rendering operations write their results into a framebuffer, which the display hardware then scans out to a screen or which subsequent passes read as input. Framebuffers are central to double buffering, post-processing, off-screen rendering, and the multi-pass techniques that underpin modern real-time graphics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering-pipeline",
+      "label": "Rendering Pipeline"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "id": "urn:ngm:class:render-target",
+        "label": "Render Target"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:render-target",
+        "label": "Render Target"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vulkan",
+        "label": "Vulkan"
+      },
+      {
+        "id": "urn:ngm:class:direct3d",
+        "label": "Direct3D"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rendering-pipeline",
+        "label": "Rendering Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rasterization",
+        "label": "Rasterization"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

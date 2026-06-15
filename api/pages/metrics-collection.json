@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:metrics-collection",
+  "title": "Metrics Collection",
+  "slug": "metrics-collection",
+  "public": true,
+  "classIri": "urn:ngm:class:metrics-collection",
+  "domain": "infrastructure",
+  "definition": "Metrics collection is the practice of instrumenting software and infrastructure to gather quantitative measurements of system behaviour, such as request rates, latencies, error counts and resource utilisation, and forwarding them to a store for analysis. Collected metrics are typically aggregated as time series and queried to drive dashboards, alerting and capacity planning. It is a foundational pillar of observability alongside logging and tracing, enabling teams to detect, diagnose and prevent operational problems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:observability",
+      "label": "Observability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:instrumentation",
+        "label": "Instrumentation"
+      },
+      {
+        "id": "urn:ngm:class:time-series-database",
+        "label": "Time-Series Database"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:time-series-database",
+        "label": "Time-Series Database"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:alerting",
+        "label": "Alerting"
+      },
+      {
+        "id": "urn:ngm:class:performance-monitoring",
+        "label": "Performance Monitoring"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:instrumentation",
+        "label": "Instrumentation"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prometheus",
+        "label": "Prometheus"
+      },
+      {
+        "id": "urn:ngm:class:telemetry",
+        "label": "Telemetry"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:logging",
+        "label": "Logging"
+      },
+      {
+        "id": "urn:ngm:class:distributed-tracing",
+        "label": "Distributed Tracing"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

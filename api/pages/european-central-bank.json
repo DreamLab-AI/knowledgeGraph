@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:european-central-bank",
+  "title": "European Central Bank",
+  "slug": "european-central-bank",
+  "public": true,
+  "classIri": "urn:ngm:class:european-central-bank",
+  "domain": "finance",
+  "definition": "The European Central Bank (ECB) is the central bank for the euro and the monetary authority of the euro area, responsible for setting monetary policy with a primary mandate of price stability. It administers the single currency, supervises significant banks under the Single Supervisory Mechanism, and manages the Eurosystem alongside national central banks. The ECB is also developing a potential digital euro as a central bank digital currency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:central-bank",
+      "label": "Central Bank"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:open-market-operations",
+        "label": "Open Market Operations"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-euro",
+        "label": "Digital Euro"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:monetary-policy",
+        "label": "Monetary Policy"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bank-of-england",
+        "label": "Bank of England"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-euro",
+        "label": "Digital Euro"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:interest-rate",
+        "label": "Interest Rate"
+      },
+      {
+        "id": "urn:ngm:class:quantitative-easing",
+        "label": "Quantitative Easing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:price-stability",
+        "label": "Price Stability"
+      },
+      {
+        "id": "urn:ngm:class:financial-stability",
+        "label": "Financial Stability"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:financial-regulation",
+        "label": "Financial Regulation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:central-bank",
+        "label": "Central Bank"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fiat-currency",
+        "label": "Fiat Currency"
+      },
+      {
+        "id": "urn:ngm:class:inflation",
+        "label": "Inflation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    }
+  ]
+}

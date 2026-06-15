@@ -1,0 +1,41 @@
+- ### Definition
+  - [[Monocular Depth Estimation]] is a form of [[Depth Estimation]].
+  - It contrasts with [[Stereo Vision]] and [[LiDAR]].
+  - It commonly uses a [[Convolutional Neural Network]].
+  - It enables [[Scene Understanding]].
+- ### Overview
+  - Depth is estimated from a single view rather than disparity between cameras.
+  - The single-view problem is geometrically ill-posed and resolved with learned priors.
+  - Networks exploit monocular cues like texture, occlusion, and perspective.
+  - Self-supervised training uses view synthesis as a learning signal.
+- ### Mechanisms
+  - Encoder-decoder networks regress per-pixel depth.
+  - Scale ambiguity is intrinsic to monocular cues.
+  - Self-supervision exploits photometric reprojection between frames.
+  - Edge-aware losses sharpen depth discontinuities.
+  - Evaluation uses error metrics against ground-truth depth.
+- ### Applications
+  - Augmented reality on single-camera devices.
+  - Obstacle awareness for low-cost robots and drones.
+  - Scene reconstruction from ordinary photographs.
+  - Driver-assistance perception where stereo is unavailable.
+- ### Relationships
+  - partOf:: [[Depth Estimation]]
+  - partOf:: [[Computer Vision]]
+  - contrastsWith:: [[Stereo Vision]]
+  - contrastsWith:: [[LiDAR]]
+  - uses:: [[Convolutional Neural Network]]
+  - uses:: [[Self-Supervised Learning]]
+  - requires:: [[Convolutional Neural Network]]
+  - enables:: [[Scene Understanding]]
+  - supports:: [[Scene Understanding]]
+  - supports:: [[Augmented Reality]]
+  - relatedTo:: [[Depth Sensing]]
+  - relatedTo:: [[Structure From Motion]]
+  - relatedTo:: [[Point Cloud]]
+  - relatedTo:: [[SLAM]]
+  - bridgesTo:: [[Augmented Reality]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

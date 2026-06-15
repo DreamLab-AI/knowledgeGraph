@@ -1,0 +1,40 @@
+- ### Definition
+  - InfiniBand is a switched-fabric interconnect for [[High-Performance Computing]] and AI clusters.
+  - It delivers low [[Latency]] and high [[Throughput]] via kernel-bypass [[RDMA]].
+  - It underpins [[Distributed Training]] by accelerating [[Collective Communication]].
+  - It contrasts with conventional Ethernet [[Network Fabric]] in latency-sensitive workloads.
+- ### Overview
+  - InfiniBand uses a credit-based flow-control fabric that avoids packet loss under congestion.
+  - RDMA lets one node read or write another node's memory directly, removing CPU and kernel overhead.
+  - It is a dominant interconnect for GPU supercomputers training large neural networks.
+  - Topologies such as fat-tree provide non-blocking bisection bandwidth across thousands of nodes.
+- ### Key aspects
+  - Kernel-bypass RDMA moves data without CPU involvement, freeing compute for the workload.
+  - Hardware offload of transport and congestion control keeps tail latency low at scale.
+  - Adaptive routing and lossless flow control sustain throughput during all-reduce collectives.
+  - GPUDirect integration allows direct GPU-to-GPU transfers across the fabric.
+- ### Applications
+  - Backbone fabric for large-language-model training clusters spanning thousands of GPUs.
+  - Scientific HPC simulations requiring tightly-coupled message passing.
+  - Distributed storage fabrics needing low-latency block and file access.
+  - Parameter and gradient exchange in data- and model-parallel training.
+- ### Relationships
+  - uses:: [[RDMA]]
+  - uses:: [[Network Fabric]]
+  - enables:: [[Distributed Training]]
+  - enables:: [[Collective Communication]]
+  - enables:: [[Model Parallelism]]
+  - supports:: [[High-Performance Computing]]
+  - supports:: [[Compute Infrastructure]]
+  - supports:: [[Data Centre]]
+  - requires:: [[GPU]]
+  - contrastsWith:: [[NVLink]]
+  - relatedTo:: [[Data Parallelism]]
+  - relatedTo:: [[Parallel Processing]]
+  - relatedTo:: [[Throughput]]
+  - relatedTo:: [[Latency]]
+  - bridgesTo:: [[Checkpoints]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - updated:: 2026-06-15

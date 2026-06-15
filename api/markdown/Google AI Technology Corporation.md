@@ -75,12 +75,6 @@ elevatedFrom:: [[Google]]
         "label": "Vertex AI"
       }
     ],
-    "partOf": [
-      {
-        "@id": "urn:ngm:class:alphabet-inc",
-        "label": "Alphabet Inc"
-      }
-    ],
     "requires": [
       {
         "@id": "urn:ngm:class:tensor-processing-unit",

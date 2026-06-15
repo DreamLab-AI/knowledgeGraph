@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:molecular-dynamics",
+  "title": "Molecular Dynamics",
+  "slug": "molecular-dynamics",
+  "public": true,
+  "classIri": "urn:ngm:class:molecular-dynamics",
+  "domain": "artificial-intelligence",
+  "definition": "Molecular dynamics is a computational simulation method that models the physical movement of atoms and molecules by numerically integrating Newton's equations of motion under an interatomic force field. It produces time-resolved trajectories from which thermodynamic and kinetic properties are derived. The method bridges physics-based simulation and machine learning in computational biology and chemistry.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:computational-biology",
+        "label": "Computational Biology"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

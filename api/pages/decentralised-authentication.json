@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:decentralised-authentication",
+  "title": "Decentralised Authentication",
+  "slug": "decentralised-authentication",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralised-authentication",
+  "domain": "security",
+  "definition": "Decentralised authentication verifies the identity of a party without relying on a single central identity provider, instead using cryptographic keys, decentralised identifiers and verifiable credentials controlled by the user. The holder proves control of an identifier and presents credentials that a verifier checks against a distributed trust registry rather than a federated login service. This shifts control of identity from platforms to individuals while preserving cryptographic assurance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication-protocol",
+      "label": "Authentication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:did-document",
+        "label": "DID Document"
+      },
+      {
+        "id": "urn:ngm:class:trust-anchor",
+        "label": "Trust Anchor"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-sovereign-identity-ssi",
+        "label": "Self-Sovereign Identity (SSI)"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:authentication-protocol",
+        "label": "Authentication Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:centralised-identity",
+        "label": "Centralised Identity"
+      },
+      {
+        "id": "urn:ngm:class:user-authentication",
+        "label": "User Authentication"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:decentralised-identifiers",
+        "label": "Decentralised Identifiers"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:did-method",
+        "label": "DID Method"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:multi-factor-authentication",
+        "label": "Multi-Factor Authentication"
+      },
+      {
+        "id": "urn:ngm:class:web-authn",
+        "label": "WebAuthn"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-identity",
+        "label": "Blockchain Identity"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

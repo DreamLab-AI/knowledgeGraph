@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:retrospective",
+  "title": "Retrospective",
+  "slug": "retrospective",
+  "public": true,
+  "classIri": "urn:ngm:class:retrospective",
+  "domain": "distributed-collaboration",
+  "definition": "A retrospective is a recurring, facilitated meeting in which a team reflects on a recent period of work to identify what went well, what did not, and concrete improvements to try next. It is a cornerstone agile practice that institutionalises continuous improvement by turning shared experience into actionable changes to process, tooling and collaboration. Retrospectives are increasingly run on collaborative whiteboards so distributed teams can participate equally.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agile-software-development",
+      "label": "Agile Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:sticky-notes",
+        "label": "Sticky Notes"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:velocity",
+        "label": "Velocity"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:collaborative-whiteboard",
+        "label": "Collaborative Whiteboard"
+      },
+      {
+        "id": "urn:ngm:class:sticky-notes",
+        "label": "Sticky Notes"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sprint-planning",
+        "label": "Sprint Planning"
+      },
+      {
+        "id": "urn:ngm:class:project-management",
+        "label": "Project Management"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:kanban-board",
+        "label": "Kanban Board"
+      },
+      {
+        "id": "urn:ngm:class:distributed-team-collaboration",
+        "label": "Distributed Team Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    }
+  ]
+}

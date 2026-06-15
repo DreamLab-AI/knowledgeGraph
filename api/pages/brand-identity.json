@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:brand-identity",
+  "title": "Brand Identity",
+  "slug": "brand-identity",
+  "public": true,
+  "classIri": "urn:ngm:class:brand-identity",
+  "domain": "data",
+  "definition": "Brand identity is the collection of visible and conceptual elements through which an organisation presents itself and is recognised, including its name, logo, colour palette, typography, voice, and the values it communicates. It is the deliberately constructed expression of a brand that aims to shape how audiences perceive and remember it, distinguishing it from competitors. A coherent brand identity aligns visual design, messaging, and behaviour so that experiences across channels reinforce a consistent and trusted impression.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-marketing",
+      "label": "Digital Marketing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:storytelling",
+        "label": "Storytelling"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:storytelling",
+        "label": "Storytelling"
+      },
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:storytelling",
+        "label": "Storytelling"
+      },
+      {
+        "id": "urn:ngm:class:digital-marketing",
+        "label": "Digital Marketing"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    }
+  ]
+}

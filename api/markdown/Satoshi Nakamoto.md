@@ -87,7 +87,7 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:decentralised-consensus",
+        "@id": "urn:ngm:class:consensus",
         "label": "Decentralised Consensus"
       }
     ],

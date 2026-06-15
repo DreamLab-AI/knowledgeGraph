@@ -63,50 +63,125 @@ public:: true
   },
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:forward-pass", "label": "Forward Pass"},
-      {"@id": "urn:ngm:class:backward-pass", "label": "Backward Pass"},
-      {"@id": "urn:ngm:class:chain-rule", "label": "Chain Rule"}
+      {
+        "@id": "urn:ngm:class:forward-pass",
+        "label": "Forward Pass"
+      },
+      {
+        "@id": "urn:ngm:class:backward-pass",
+        "label": "Backward Pass"
+      },
+      {
+        "@id": "urn:ngm:class:chain-rule",
+        "label": "Chain Rule"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:neural-network-training", "label": "Neural Network Training"}
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:differentiable-function", "label": "Differentiable Function"},
-      {"@id": "urn:ngm:class:computation-graph", "label": "Computation Graph"}
+      {
+        "@id": "urn:ngm:class:differentiable-function",
+        "label": "Differentiable Function"
+      },
+      {
+        "@id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:weight-update", "label": "Weight Update"}
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:weight-update",
+        "label": "Weight Update"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
-      {"@id": "urn:ngm:class:activation-function", "label": "Activation Function"}
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "@id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:automatic-differentiation", "label": "Automatic Differentiation"},
-      {"@id": "urn:ngm:class:stochastic-gradient-descent", "label": "Stochastic Gradient Descent"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:forward-mode-differentiation", "label": "Forward Mode Differentiation"},
-      {"@id": "urn:ngm:class:genetic-algorithm", "label": "Genetic Algorithm"}
+      {
+        "@id": "urn:ngm:class:forward-mode-differentiation",
+        "label": "Forward Mode Differentiation"
+      },
+      {
+        "@id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:vanishing-gradient-problem", "label": "Vanishing Gradient Problem"},
-      {"@id": "urn:ngm:class:batch-normalisation", "label": "Batch Normalisation"},
-      {"@id": "urn:ngm:class:dropout-regularisation", "label": "Dropout Regularisation"},
-      {"@id": "urn:ngm:class:recurrent-neural-network", "label": "Recurrent Neural Network"}
+      {
+        "@id": "urn:ngm:class:vanishing-gradient-problem",
+        "label": "Vanishing Gradient Problem"
+      },
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      },
+      {
+        "@id": "urn:ngm:class:dropout",
+        "label": "Dropout Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:neuromorphic-computing", "label": "Neuromorphic Computing"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:reverse-mode-automatic-differentiation", "label": "Reverse Mode Automatic Differentiation"},
-    {"@id": "urn:ngm:class:reverse-accumulation", "label": "Reverse Accumulation"}
+    {
+      "@id": "urn:ngm:class:reverse-mode-automatic-differentiation",
+      "label": "Reverse Mode Automatic Differentiation"
+    },
+    {
+      "@id": "urn:ngm:class:reverse-accumulation",
+      "label": "Reverse Accumulation"
+    }
   ],
   "quality": 0.72,
   "provenance": {

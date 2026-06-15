@@ -259,7 +259,7 @@ alias:: DecentralizedStorage
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:centralised-cloud-storage",
+        "@id": "urn:ngm:class:cloud-storage",
         "label": "Centralised Cloud Storage"
       }
     ],

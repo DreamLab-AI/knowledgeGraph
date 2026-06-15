@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:lifecycle-assessment",
+  "title": "Lifecycle Assessment",
+  "slug": "lifecycle-assessment",
+  "public": true,
+  "classIri": "urn:ngm:class:lifecycle-assessment",
+  "domain": "governance",
+  "definition": "Lifecycle assessment is a systematic method for evaluating the environmental impacts of a product, process or service across its entire life, from raw-material extraction through manufacture, distribution, use and end-of-life disposal or recycling. By accounting for inputs and outputs such as energy, materials, emissions and waste at every stage, it identifies where the greatest impacts occur and prevents burden-shifting between life-cycle phases. It underpins eco-design, carbon accounting and credible sustainability claims, and is governed by international standards to ensure comparability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:environmental-sustainability",
+      "label": "Environmental Sustainability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:circular-economy",
+        "label": "Circular Economy"
+      },
+      {
+        "id": "urn:ngm:class:green-computing",
+        "label": "Green Computing"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:carbon-footprint",
+        "label": "Carbon Footprint"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:sustainable-development",
+        "label": "Sustainable Development"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:climate-action",
+        "label": "Climate Action"
+      },
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:carbon-neutrality",
+        "label": "Carbon Neutrality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    }
+  ]
+}

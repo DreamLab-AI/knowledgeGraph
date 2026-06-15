@@ -113,7 +113,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:finite-element-method",
+        "@id": "urn:ngm:class:finite-element-analysis",
         "label": "Finite Element Method"
       },
       {

@@ -1,0 +1,97 @@
+{
+  "id": "urn:visionflow:page:policy-as-code",
+  "title": "Policy As Code",
+  "slug": "policy-as-code",
+  "public": true,
+  "classIri": "urn:ngm:class:policy-as-code",
+  "domain": "data",
+  "definition": "Policy as code is the practice of expressing governance, security, and compliance rules in a machine-readable, version-controlled language so that they can be automatically evaluated and enforced. By treating policy as a software artefact, organisations gain testability, auditability, and consistent enforcement across infrastructure, data, and application pipelines. Decisions are computed by policy engines at admission or runtime, replacing manual review with deterministic, repeatable checks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-governance",
+      "label": "Data Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compliance-automation",
+        "label": "Compliance Automation"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:policy-engine",
+        "label": "Policy Engine"
+      },
+      {
+        "id": "urn:ngm:class:open-policy-agent",
+        "label": "Open Policy Agent"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    }
+  ]
+}

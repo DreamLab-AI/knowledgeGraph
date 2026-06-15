@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:autonomous-decision-making",
+  "title": "Autonomous Decision Making",
+  "slug": "autonomous-decision-making",
+  "public": true,
+  "classIri": "urn:ngm:class:autonomous-decision-making",
+  "domain": "artificial-intelligence",
+  "definition": "Autonomous decision making is the capacity of an artificial agent to select and commit to actions in pursuit of goals without requiring human authorisation for each choice. It combines perception of the environment, internal reasoning or learned policies, evaluation of expected outcomes, and action selection under uncertainty. Drawing on decision theory, planning, and reinforcement learning, it lets agents operate in dynamic settings where human supervision is impractical or too slow. Autonomous decision making is foundational to autonomous vehicles, robotic systems, and multi-agent coordination, and raises governance questions about accountability and human oversight.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decision-making",
+      "label": "Decision Making"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "id": "urn:ngm:class:goal",
+        "label": "Goal"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:situational-awareness",
+        "label": "Situational Awareness"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:control-system",
+        "label": "Control System"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    }
+  ]
+}

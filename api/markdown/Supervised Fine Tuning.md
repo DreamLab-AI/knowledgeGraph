@@ -62,7 +62,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:rlhf-pipeline",
+        "@id": "urn:ngm:class:rlhf",
         "label": "RLHF Pipeline"
       }
     ],

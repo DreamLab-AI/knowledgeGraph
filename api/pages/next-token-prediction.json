@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:next-token-prediction",
+  "title": "Next Token Prediction",
+  "slug": "next-token-prediction",
+  "public": true,
+  "classIri": "urn:ngm:class:next-token-prediction",
+  "domain": "machine-learning",
+  "definition": "Next token prediction is the autoregressive language-modelling objective in which a model predicts the next token in a sequence given all preceding tokens. Trained by maximising the likelihood of each token conditioned on its left context, it requires no explicit labels and scales to vast text corpora. It is the core pre-training objective behind generative transformer language models such as the GPT family.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:pre-training",
+      "label": "Pre Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross Entropy Loss"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self Supervised Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:masked-language-modelling",
+        "label": "Masked Language Modelling"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self Supervised Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:gpt",
+        "label": "GPT"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre Training"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

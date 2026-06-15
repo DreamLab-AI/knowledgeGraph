@@ -1,0 +1,113 @@
+{
+  "id": "urn:visionflow:page:rdf-xml",
+  "title": "Rdf Xml",
+  "slug": "rdf-xml",
+  "public": true,
+  "classIri": "urn:ngm:class:rdf-xml",
+  "domain": "data",
+  "definition": "RDF/XML is the original World Wide Web Consortium serialisation format for the Resource Description Framework, expressing RDF triples as XML documents. It encodes subjects, predicates, and objects using XML elements and attributes, making RDF data parseable by generic XML tooling. Although verbose and historically awkward to read, it remains a standardised interchange format alongside more concise alternatives such as Turtle and JSON-LD.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rdf",
+      "label": "RDF"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:turtle",
+        "label": "Turtle"
+      },
+      {
+        "id": "urn:ngm:class:n-triples",
+        "label": "N-Triples"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:structured-data",
+        "label": "Structured Data"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:xml",
+        "label": "XML"
+      },
+      {
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:rdf",
+        "label": "RDF"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

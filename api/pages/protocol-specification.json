@@ -1,0 +1,102 @@
+{
+  "id": "urn:visionflow:page:protocol-specification",
+  "title": "Protocol Specification",
+  "slug": "protocol-specification",
+  "public": true,
+  "classIri": "urn:ngm:class:protocol-specification",
+  "domain": "infrastructure",
+  "definition": "A protocol specification is a precise, unambiguous document that defines how independent systems must exchange messages to interoperate, covering message formats, encodings, sequencing, state machines, error handling and timing. It serves as the authoritative contract that implementers follow so that conforming systems built by different parties can communicate reliably. Well-formed specifications separate the wire format and behaviour from any particular implementation, and they are typically published and maintained by standards bodies to ensure long-term interoperability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:communication-protocol",
+      "label": "Communication Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:message-format",
+        "label": "Message Format"
+      },
+      {
+        "id": "urn:ngm:class:protocol-stack",
+        "label": "Protocol Stack"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:message-format",
+        "label": "Message Format"
+      },
+      {
+        "id": "urn:ngm:class:protocol-design",
+        "label": "Protocol Design"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reference-implementation",
+        "label": "Reference Implementation"
+      },
+      {
+        "id": "urn:ngm:class:transport-protocol",
+        "label": "Transport Protocol"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:interoperability-standard",
+        "label": "Interoperability Standard"
+      },
+      {
+        "id": "urn:ngm:class:reference-implementation",
+        "label": "Reference Implementation"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ietf",
+        "label": "IETF"
+      },
+      {
+        "id": "urn:ngm:class:standards-body",
+        "label": "Standards Body"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:interoperability-protocol",
+        "label": "Interoperability Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      },
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

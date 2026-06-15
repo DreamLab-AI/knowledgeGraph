@@ -1,0 +1,31 @@
+- ### Definition
+- Network congestion is the state in which demand for capacity exceeds available throughput, queuing transactions and pushing up fees. On a [[Blockchain]] it manifests as a saturated [[Mempool]] and rising [[Gas Fee]] and [[Transaction Fee]] driven by the [[Fee Market]].
+- ### Overview
+- Blocks have finite space, and a network can only finalise a bounded number of transactions per unit of [[Block Time]]. When submissions exceed that rate, the backlog grows.
+- Users compete for inclusion by raising fees, so congestion translates directly into higher costs and slower confirmations.
+- Persistent congestion is the clearest signal that a network has hit its [[Scalability]] ceiling.
+- ### Mechanisms
+- Mempool accumulation: unconfirmed transactions accumulate while block producers select the highest-fee ones first.
+- Fee escalation: the [[Fee Market]] clears excess demand by pricing block space dynamically.
+- Backpressure: congestion propagates to dependent applications, causing failed or stuck transactions.
+- ### Key aspects
+- Throughput limits set by block size and [[Block Time]] determine the onset of congestion.
+- Fee volatility is a direct consequence, harming user experience and predictability.
+- Mitigations include scaling the base layer, batching, and offloading to layer-2 systems.
+- ### Applications
+- Fee estimation and transaction scheduling in wallets.
+- Capacity planning and protocol upgrades targeting [[Scalability]].
+- Triggering migration of activity to rollups and other off-chain execution.
+- ### Relationships
+- dependsOn:: [[Scalability]]
+- dependsOn:: [[Block Time]]
+- enables:: [[Fee Market]]
+- partOf:: [[Blockchain]]
+- requires:: [[Scalability]]
+- uses:: [[Mempool]]
+- supports:: [[Transaction Fee]]
+- bridgesTo:: [[Gas Fee]]
+- relatedTo:: [[Transaction]]
+- contrastsWith:: [[Scalability]]
+- ### Provenance
+- updated:: 2026-06-15

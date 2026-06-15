@@ -1,0 +1,111 @@
+{
+  "id": "urn:visionflow:page:surface-normal",
+  "title": "Surface Normal",
+  "slug": "surface-normal",
+  "public": true,
+  "classIri": "urn:ngm:class:surface-normal",
+  "domain": "spatial-computing",
+  "definition": "A surface normal is a vector perpendicular to a surface at a given point, indicating the orientation of that surface in space. Normals are fundamental to lighting and shading calculations, because the angle between a normal and a light direction governs how much illumination a surface receives. In computer graphics and 3D reconstruction, surface normals drive realistic shading, normal mapping, and the recovery of fine geometric detail.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scene-geometry",
+      "label": "Scene Geometry"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:normal-mapping",
+        "label": "Normal Mapping"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:scene-geometry",
+        "label": "Scene Geometry"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:scene-geometry",
+        "label": "Scene Geometry"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:normal-mapping",
+        "label": "Normal Mapping"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:normal-mapping",
+        "label": "Normal Mapping"
+      },
+      {
+        "id": "urn:ngm:class:photogrammetry",
+        "label": "Photogrammetry"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:scene-geometry",
+        "label": "Scene Geometry"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:ambient-occlusion",
+        "label": "Ambient Occlusion"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

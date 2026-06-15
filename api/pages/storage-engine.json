@@ -1,0 +1,105 @@
+{
+  "id": "urn:visionflow:page:storage-engine",
+  "title": "Storage Engine",
+  "slug": "storage-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:storage-engine",
+  "domain": "infrastructure",
+  "definition": "A storage engine is the component of a database system responsible for how data is physically laid out, written, indexed and retrieved on durable media. It implements the on-disk data structures, transaction and concurrency control, write-ahead logging and recovery that guarantee durability and consistency. Different engines, such as B-tree and log-structured merge-tree designs, optimise for different read, write and space trade-offs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-persistence",
+      "label": "Data Persistence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      },
+      {
+        "id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      },
+      {
+        "id": "urn:ngm:class:write-ahead-logging",
+        "label": "Write-Ahead Logging"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
+      },
+      {
+        "id": "urn:ngm:class:nosql-database",
+        "label": "NoSQL Database"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-persistence",
+        "label": "Data Persistence"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-storage-layer",
+        "label": "Data Storage Layer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:database-management-system",
+        "label": "Database Management System"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:database-system",
+        "label": "Database System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-database",
+        "label": "Graph Database"
+      },
+      {
+        "id": "urn:ngm:class:postgre-sql",
+        "label": "PostgreSQL"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

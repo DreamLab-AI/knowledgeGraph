@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:facial-animation",
+  "title": "Facial Animation",
+  "slug": "facial-animation",
+  "public": true,
+  "classIri": "urn:ngm:class:facial-animation",
+  "domain": "spatial-computing",
+  "definition": "Facial animation is the discipline of generating expressive, lifelike movement of a digital character's face, including lip synchronisation, eye motion, and emotional expression. It commonly combines blend-shape (morph-target) deformation, facial rigs, and performance-capture data to drive realistic results. Facial animation is essential for believable avatars, virtual humans, and immersive experiences in spatial computing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:character-animation",
+      "label": "Character Animation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "id": "urn:ngm:class:skeletal-animation",
+        "label": "Skeletal Animation"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "urn:visionflow:page:microphone-array",
+  "title": "Microphone Array",
+  "slug": "microphone-array",
+  "public": true,
+  "classIri": "urn:ngm:class:microphone-array",
+  "domain": "spatial-computing",
+  "definition": "A microphone array is an arrangement of multiple microphone elements at known spatial positions whose signals are combined to infer or shape the directional properties of captured sound. By exploiting the time and phase differences between elements, an array supports beamforming, source localisation and spatial noise suppression that a single microphone cannot achieve. Microphone arrays underpin far-field voice capture, conferencing systems and spatial-audio acquisition.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:audio-system",
+      "label": "Audio System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:microphone",
+        "label": "Microphone"
+      },
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:digital-signal-processor",
+        "label": "Digital Signal Processor"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-signal-processing",
+        "label": "Digital Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:immersive-audio",
+        "label": "Immersive Audio"
+      },
+      {
+        "id": "urn:ngm:class:ambisonics",
+        "label": "Ambisonics"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:binaural-audio",
+        "label": "Binaural Audio"
+      },
+      {
+        "id": "urn:ngm:class:head-related-transfer-function",
+        "label": "Head Related Transfer Function"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    }
+  ]
+}

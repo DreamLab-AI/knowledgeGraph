@@ -1,0 +1,33 @@
+- ### Definition
+  - [[Inter Process Communication]] is an [[Infrastructure]] capability of the [[Operating System]] letting separate [[Process]]es exchange data via [[Message Passing]], [[Shared Memory]] and [[Remote Procedure Call]].
+- ### Overview
+  - Because processes are isolated for safety, the OS must supply explicit channels for them to cooperate; these channels are collectively called IPC.
+  - The choice of mechanism shapes performance and coupling: shared memory is fast but unstructured, while message queues and RPC add structure across machines.
+- ### Mechanisms
+  - Pipes and message queues: ordered byte or message streams between processes.
+  - Shared memory: a common region mapped into multiple processes for low-latency exchange.
+  - Sockets and RPC: networked communication enabling distributed and microservice systems.
+- ### Applications
+  - Microservice and modular architectures composed of cooperating processes.
+  - Operating-system services, daemons and client-server desktop software.
+  - Distributed systems and middleware bridging processes across hosts.
+- ### Relationships
+  - supports:: [[Microservices]]
+  - supports:: [[Distributed Systems]]
+  - relatedTo:: [[Message Passing]]
+  - relatedTo:: [[Shared Memory]]
+  - relatedTo:: [[Process]]
+  - dependsOn:: [[Operating System]]
+  - dependsOn:: [[Scheduler]]
+  - implements:: [[Message Passing]]
+  - partOf:: [[Operating System]]
+  - uses:: [[Shared Memory]]
+  - uses:: [[Remote Procedure Call]]
+  - enables:: [[Microservices]]
+  - enables:: [[Middleware]]
+  - requires:: [[Operating System]]
+  - contrastsWith:: [[Multithreading]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - generated-by:: did:nostr:ontology-mesh
+  - inference-rule:: GapMaterialisation

@@ -1,0 +1,104 @@
+{
+  "id": "urn:visionflow:page:cross-modal-retrieval",
+  "title": "Cross Modal Retrieval",
+  "slug": "cross-modal-retrieval",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-modal-retrieval",
+  "domain": "artificial-intelligence",
+  "definition": "Cross-modal retrieval is the task of retrieving items in one modality (such as images) using a query expressed in a different modality (such as text), and vice versa. It relies on learning a shared embedding space in which semantically corresponding items across modalities lie close together, so that similarity search can bridge the modality gap. Contrastive vision-language models are the dominant approach, enabling text-to-image search, image captioning retrieval and multimodal recommendation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text To Image"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:vector-search",
+        "label": "Vector Search"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:vision-language-model",
+        "label": "Vision Language Model"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:vision-language-model",
+        "label": "Vision Language Model"
+      },
+      {
+        "id": "urn:ngm:class:vector-search",
+        "label": "Vector Search"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

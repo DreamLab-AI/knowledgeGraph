@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:http2",
+  "title": "Http2",
+  "slug": "http2",
+  "public": true,
+  "classIri": "urn:ngm:class:http2",
+  "domain": "infrastructure",
+  "definition": "HTTP/2 is a major revision of the Hypertext Transfer Protocol that introduces a binary framing layer, multiplexed streams over a single TCP connection, header compression and server push. It reduces latency and head-of-line blocking at the application layer compared with HTTP/1.1 while preserving the protocol's semantics. It is standardised in RFC 7540 (later RFC 9113) and is widely deployed across the modern web.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:http",
+      "label": "HTTP"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:tcp",
+        "label": "TCP"
+      },
+      {
+        "id": "urn:ngm:class:tls",
+        "label": "TLS"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      },
+      {
+        "id": "urn:ngm:class:tls-handshake",
+        "label": "TLS Handshake"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      },
+      {
+        "id": "urn:ngm:class:websocket",
+        "label": "WebSocket"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multiplexing",
+        "label": "Multiplexing"
+      },
+      {
+        "id": "urn:ngm:class:server-push",
+        "label": "Server Push"
+      },
+      {
+        "id": "urn:ngm:class:transport-layer",
+        "label": "Transport Layer"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "id": "urn:ngm:class:application-layer",
+        "label": "Application Layer"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

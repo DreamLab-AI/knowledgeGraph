@@ -46,11 +46,11 @@
         "label": "Edge Computing"
       },
       {
-        "id": "urn:ngm:class:efficient-inference",
+        "id": "urn:ngm:class:ai-inference",
         "label": "Efficient Inference"
       },
       {
-        "id": "urn:ngm:class:latency-reduction",
+        "id": "urn:ngm:class:latency",
         "label": "Latency Reduction"
       }
     ],

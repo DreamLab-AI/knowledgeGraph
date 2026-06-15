@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:volumetric-rendering",
+  "title": "Volumetric Rendering",
+  "slug": "volumetric-rendering",
+  "public": true,
+  "classIri": "urn:ngm:class:volumetric-rendering",
+  "domain": "spatial-computing",
+  "definition": "Volumetric rendering is the process of producing images of three-dimensional density fields where light is absorbed, emitted, and scattered as it travels through a participating medium. Rather than rendering surfaces, it integrates radiance along rays passing through a volume, capturing effects such as smoke, clouds, fog, and translucent materials. The technique underlies medical visualisation, visual effects, and neural scene representations that store the world as a continuous volumetric function.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:rendering",
+      "label": "Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ray-marching",
+        "label": "Ray Marching"
+      },
+      {
+        "id": "urn:ngm:class:voxel",
+        "label": "Voxel"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "id": "urn:ngm:class:cloud-rendering",
+        "label": "Cloud Rendering"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gaussian-splatting",
+        "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:neural-radiance-fields",
+        "label": "Neural Radiance Fields"
+      },
+      {
+        "id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

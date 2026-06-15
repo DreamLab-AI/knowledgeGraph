@@ -94,7 +94,7 @@ public:: true
         "label": "Edge Inference"
       },
       {
-        "@id": "urn:ngm:class:on-device-machine-learning",
+        "@id": "urn:ngm:class:on-device-learning",
         "label": "On-Device Machine Learning"
       },
       {

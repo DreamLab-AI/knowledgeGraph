@@ -1,0 +1,89 @@
+{
+  "id": "urn:visionflow:page:asynchronous-programming",
+  "title": "Asynchronous Programming",
+  "slug": "asynchronous-programming",
+  "public": true,
+  "classIri": "urn:ngm:class:asynchronous-programming",
+  "domain": "infrastructure",
+  "definition": "Asynchronous programming is a concurrency model in which operations that would otherwise block \u2014 such as input/output, network calls or timers \u2014 are initiated without halting the executing thread, allowing other work to proceed until results become available. It uses constructs such as callbacks, promises, futures and async/await to express continuations cleanly. The approach improves responsiveness and throughput for input/output-bound workloads without the overhead of one thread per task.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:concurrency",
+      "label": "Concurrency"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "id": "urn:ngm:class:multithreading",
+        "label": "Multithreading"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:concurrency",
+        "label": "Concurrency"
+      },
+      {
+        "id": "urn:ngm:class:multithreading",
+        "label": "Multithreading"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

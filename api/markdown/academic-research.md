@@ -1,0 +1,32 @@
+- ### Definition
+- Academic research is disciplined inquiry within scholarly institutions that generates and validates knowledge through the [[Scientific Method]], [[Peer Review]], and norms of [[Reproducibility]]. Its outputs feed [[Open Access]] dissemination and structured [[Knowledge Graph]] representations.
+- ### Overview
+- Academic research is the engine of cumulative knowledge, where claims are tested, contested, and refined across communities of practice.
+- It is organised around disciplines, each with characteristic methods, evidentiary standards, and venues, yet shares cross-cutting commitments to transparency and integrity.
+- Funding, institutional governance, and publishing infrastructure shape what is studied and how results circulate.
+- ### Key aspects
+- Question formulation grounded in a literature review establishing the state of the art.
+- Study design and execution governed by the [[Scientific Method]].
+- Validation through [[Peer Review]] and independent [[Reproducibility]].
+- Dissemination via journals, preprints, and increasingly [[Open Access]] channels.
+- ### Applications
+- Advancing fundamental understanding across the sciences and humanities.
+- Producing evidence that informs policy and [[Governance]].
+- Training new researchers within [[Academia]].
+- Populating machine-readable [[Knowledge Graph]] resources for discovery.
+- ### Relationships
+- bridgesTo:: [[Knowledge Graph]]
+- bridgesTo:: [[Open Access]]
+- relatedTo:: [[Academia]]
+- relatedTo:: [[Scientific Method]]
+- relatedTo:: [[Reproducibility]]
+- enables:: [[Open Access]]
+- enables:: [[Knowledge Graph]]
+- uses:: [[Scientific Method]]
+- uses:: [[Peer Review]]
+- hasPart:: [[Peer Review]]
+- hasPart:: [[Reproducibility]]
+- requires:: [[Scientific Method]]
+- supports:: [[Governance]]
+- ### Provenance
+- updated:: 2026-06-15

@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:transparency-reporting",
+  "title": "Transparency Reporting",
+  "slug": "transparency-reporting",
+  "public": true,
+  "classIri": "urn:ngm:class:transparency-reporting",
+  "domain": "governance",
+  "definition": "Transparency reporting is the periodic, structured disclosure by an organisation of metrics about its handling of user data, content moderation actions, government requests and enforcement decisions. It is a core accountability mechanism in platform governance, enabling regulators, researchers and the public to scrutinise how power is exercised over information and users. Reports typically quantify takedowns, account actions, legal demands and appeal outcomes over a defined period.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:accountability",
+      "label": "Accountability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:platform-governance",
+        "label": "Platform Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ofcom",
+        "label": "Ofcom"
+      },
+      {
+        "id": "urn:ngm:class:uk-online-safety-act",
+        "label": "UK Online Safety Act"
+      },
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    }
+  ]
+}

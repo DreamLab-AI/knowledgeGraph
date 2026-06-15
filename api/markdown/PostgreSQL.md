@@ -100,7 +100,7 @@ public:: true
         "label": "B-Tree Index"
       },
       {
-        "@id": "urn:ngm:class:write-ahead-log",
+        "@id": "urn:ngm:class:write-ahead-logging",
         "label": "Write-Ahead Log"
       }
     ],

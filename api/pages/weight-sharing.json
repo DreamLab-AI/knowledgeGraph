@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:weight-sharing",
+  "title": "Weight Sharing",
+  "slug": "weight-sharing",
+  "public": true,
+  "classIri": "urn:ngm:class:weight-sharing",
+  "domain": "machine-learning",
+  "definition": "Weight sharing is a neural-network design technique in which the same set of learnable parameters is reused across multiple positions, time steps, or model components rather than learning independent parameters for each. By tying parameters together it dramatically reduces model size, encodes structural priors such as translation invariance, and improves data efficiency and generalisation. It is the defining mechanism of convolutional layers, which apply one filter across all spatial locations, and of recurrent networks, which reuse the same transition weights across every time step. Weight sharing also appears in Siamese architectures, in neural architecture search, and in parameter-efficient model designs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:parameter",
+        "label": "Parameter"
+      },
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:parameter",
+        "label": "Parameter"
+      },
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

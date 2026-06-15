@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:liquidation-engine",
+  "title": "Liquidation Engine",
+  "slug": "liquidation-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:liquidation-engine",
+  "domain": "blockchain",
+  "definition": "A liquidation engine is the component of a decentralised lending or derivatives protocol that detects under-collateralised positions and forcibly closes or partially repays them to keep the system solvent. It continuously evaluates position health against collateral values supplied by price oracles, and when a position breaches its maintenance threshold it triggers liquidation, typically auctioning or selling collateral and rewarding external liquidators or keepers who execute the transaction. By enforcing collateralisation guarantees on-chain, the liquidation engine is central to risk management in DeFi lending, perpetual-futures, and collateralised-debt systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:lending-protocol",
+      "label": "Lending Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:collateral",
+        "label": "Collateral"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:lending-protocol",
+        "label": "Lending Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:automated-market-maker",
+        "label": "Automated Market Maker"
+      },
+      {
+        "id": "urn:ngm:class:perpetual-futures",
+        "label": "Perpetual Futures"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:oracle",
+        "label": "Oracle"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:perpetual-futures",
+        "label": "Perpetual Futures"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:decentralized-finance",
+        "label": "Decentralized Finance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:defi",
+        "label": "DeFi"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    }
+  ]
+}

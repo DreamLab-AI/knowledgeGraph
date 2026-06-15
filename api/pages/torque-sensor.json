@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:torque-sensor",
+  "title": "Torque Sensor",
+  "slug": "torque-sensor",
+  "public": true,
+  "classIri": "urn:ngm:class:torque-sensor",
+  "domain": "robotics",
+  "definition": "A torque sensor is a transducer that measures the rotational force, or torque, applied about an axis, commonly at a robot joint or drive shaft. By reporting the load a joint experiences, it enables force control, compliance, collision detection, and safe physical interaction between robots and humans. Torque sensors typically use strain gauges bonded to a deformable element whose deflection is proportional to the applied moment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-sensor",
+      "label": "Robot Sensor"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:strain-gauge_note",
+        "label": "Sensor"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:force-control",
+        "label": "Force Control"
+      },
+      {
+        "id": "urn:ngm:class:feedback-control",
+        "label": "Feedback Control"
+      },
+      {
+        "id": "urn:ngm:class:safety-system",
+        "label": "Safety System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:proprioceptive-sensing",
+        "label": "Proprioceptive Sensing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:sensor",
+        "label": "Sensor"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:manipulation",
+        "label": "Manipulation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:robot-joint",
+        "label": "Robot Joint"
+      },
+      {
+        "id": "urn:ngm:class:robot-sensor",
+        "label": "Robot Sensor"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:force-feedback",
+        "label": "Force Feedback"
+      },
+      {
+        "id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "id": "urn:ngm:class:kinematics",
+        "label": "Kinematics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:amd-sev",
+  "title": "Amd Sev",
+  "slug": "amd-sev",
+  "public": true,
+  "classIri": "urn:ngm:class:amd-sev",
+  "domain": "security",
+  "definition": "AMD SEV (Secure Encrypted Virtualisation) is a hardware security technology that encrypts the memory of individual virtual machines using per-VM keys managed by an on-chip security processor, isolating guest memory from the hypervisor and other VMs. Extensions add register-state encryption and integrity protection with attestation, enabling confidential virtual machines whose contents are protected even from a privileged host. It is a leading approach to confidential computing in cloud environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:confidential-computing",
+      "label": "Confidential Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:hardware-security",
+        "label": "Hardware Security"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:memory-encryption",
+        "label": "Memory Encryption"
+      },
+      {
+        "id": "urn:ngm:class:hardware-security",
+        "label": "Hardware Security"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:intel-sgx",
+        "label": "Intel SGX"
+      },
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:memory-encryption",
+        "label": "Memory Encryption"
+      },
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      },
+      {
+        "id": "urn:ngm:class:virtualisation",
+        "label": "Virtualisation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:confidential-computing",
+        "label": "Confidential Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:secure-enclave",
+        "label": "Secure Enclave"
+      },
+      {
+        "id": "urn:ngm:class:attestation",
+        "label": "Attestation"
+      },
+      {
+        "id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "confidential-computing",
+      "label": "Confidential Computing"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

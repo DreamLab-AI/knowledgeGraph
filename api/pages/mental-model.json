@@ -1,0 +1,94 @@
+{
+  "id": "urn:visionflow:page:mental-model",
+  "title": "Mental Model",
+  "slug": "mental-model",
+  "public": true,
+  "classIri": "urn:ngm:class:mental-model",
+  "domain": "spatial-computing",
+  "definition": "A mental model is an internal cognitive representation that a person holds of how a system, interface, or environment works and behaves. In interaction design it explains how users predict outcomes, form expectations, and interpret feedback, so designs that match users' existing mental models are easier to learn and less error-prone. Mismatches between the designer's conceptual model and the user's mental model are a primary source of usability problems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      },
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

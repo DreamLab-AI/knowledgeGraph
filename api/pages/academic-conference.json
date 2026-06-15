@@ -76,10 +76,6 @@
       {
         "id": "urn:ngm:class:cvpr",
         "label": "CVPR"
-      },
-      {
-        "id": "urn:ngm:class:publication",
-        "label": "Publication"
       }
     ]
   },

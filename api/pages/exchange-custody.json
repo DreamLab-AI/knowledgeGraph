@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:exchange-custody",
+  "title": "Exchange Custody",
+  "slug": "exchange-custody",
+  "public": true,
+  "classIri": "urn:ngm:class:exchange-custody",
+  "domain": "blockchain",
+  "definition": "Exchange custody is the model in which a cryptocurrency exchange or platform holds and controls the private keys to users' digital assets on their behalf, rather than users self-custodying their own keys. The custodian operates wallets, manages security and reconciles internal ledgers crediting customers' balances. This arrangement simplifies user experience and trading but concentrates risk, since users rely on the exchange's solvency, controls and honesty rather than holding their keys directly.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:institutional-custody",
+      "label": "Institutional Custody"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:key-management",
+        "label": "Key Management"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-custody",
+        "label": "Self Custody"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:hot-wallet",
+        "label": "Hot Wallet"
+      },
+      {
+        "id": "urn:ngm:class:cold-storage",
+        "label": "Cold Storage"
+      },
+      {
+        "id": "urn:ngm:class:multi-signature-wallet",
+        "label": "Multi-Signature Wallet"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:institutional-custody",
+        "label": "Institutional Custody"
+      },
+      {
+        "id": "urn:ngm:class:cryptocurrency-exchange",
+        "label": "Cryptocurrency Exchange"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

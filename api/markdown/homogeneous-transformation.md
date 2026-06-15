@@ -1,0 +1,32 @@
+- ### Definition
+  - A [[Homogeneous Transformation]] encodes rotation and [[Translation]] in one matrix, a form of [[Coordinate Transformation]] requiring [[Linear Algebra]] and enabling [[Forward Kinematics]].
+- ### Overview
+  - Represents rigid-body rotation and translation in a single 4x4 matrix.
+  - Composes via matrix multiplication to chain coordinate frames.
+  - Foundational for kinematics, pose and frame relationships.
+- ### Mechanisms
+  - Homogeneous coordinates extending 3D points to four components.
+  - Block structure combining a rotation matrix and translation vector.
+  - Composition and inversion of transformation chains.
+  - Denavit-Hartenberg parameterisation of link frames.
+- ### Applications
+  - Forward and inverse kinematics of manipulators.
+  - Pose representation and frame transforms in robotics.
+  - Camera and sensor extrinsic calibration.
+  - 3D graphics and scene-graph transforms.
+- ### Relationships
+  - requires:: [[Linear Algebra]]
+  - hasPart:: [[Translation]]
+  - relatedTo:: [[Coordinate Transformation]]
+  - relatedTo:: [[Pose Estimation]]
+  - enables:: [[Forward Kinematics]]
+  - enables:: [[Inverse Kinematics]]
+  - partOf:: [[Kinematics]]
+  - uses:: [[Linear Algebra]]
+  - supports:: [[Kinematics Model]]
+  - supports:: [[Robot Control]]
+  - dependsOn:: [[Coordinate Transformation]]
+  - implements:: [[Coordinate Transformation]]
+  - bridgesTo:: [[Pose Estimation]]
+- ### Provenance
+  - updated:: 2026-06-15

@@ -1,0 +1,41 @@
+- ### Definition
+  - [[Flow State]] is a deep form of [[Immersion]] marked by total absorption.
+  - It arises when [[Interaction Design]] balances challenge and skill within a tight [[Feedback Loop]].
+  - In immersive systems it amplifies [[Presence]] and [[Embodiment]].
+- ### Overview
+  - Flow, described by Mihaly Csikszentmihalyi, occurs when challenge and skill are both high and in balance, producing effortless concentration.
+  - Clear goals and immediate feedback let the participant adjust continuously without conscious deliberation.
+  - Time perception distorts and self-monitoring fades, leaving an autotelic, intrinsically rewarding experience.
+  - Spatial-computing designers engineer feedback, pacing, and difficulty to draw users into and sustain flow.
+- ### Key aspects
+  - Challenge-skill balance — matching task difficulty to ability to avoid both boredom and anxiety.
+  - Clear goals and immediate feedback — enabling continuous, unconscious correction of action.
+  - Concentration and merged action-awareness — total focus on the present task.
+  - Altered time perception — minutes feeling like seconds or hours during deep engagement.
+  - Autotelic reward — the activity becomes intrinsically motivating rather than means to an end.
+- ### Applications
+  - Immersive learning experiences that sustain attention and retention.
+  - Game and interaction design tuning difficulty curves for engagement.
+  - Therapeutic and rehabilitation environments using absorption to aid practice.
+  - Productivity and creative tools that minimise interruption to preserve focus.
+- ### Relationships
+  - Flow state is the deepest band of immersion and contrasts with overload from excessive cognitive load.
+  - partOf:: [[Immersion]]
+  - enables:: [[Gamification]]
+  - enables:: [[Presence]]
+  - requires:: [[Cognitive Load]]
+  - requires:: [[Feedback Loop]]
+  - dependsOn:: [[Immersion]]
+  - supports:: [[Presence]]
+  - supports:: [[Embodiment]]
+  - uses:: [[Interaction Design]]
+  - relatedTo:: [[Telepresence]]
+  - relatedTo:: [[User Experience]]
+  - relatedTo:: [[Gamification]]
+  - bridgesTo:: [[Spatial Computing]]
+  - contrastsWith:: [[Cognitive Load]]
+  - implements:: [[Immersion]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - source:: GapMaterialisation inference over the narrativegoldmine ontology mesh
+  - attributedTo:: did:nostr:ontology-mesh

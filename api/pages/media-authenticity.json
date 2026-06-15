@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:media-authenticity",
+  "title": "Media Authenticity",
+  "slug": "media-authenticity",
+  "public": true,
+  "classIri": "urn:ngm:class:media-authenticity",
+  "domain": "ai",
+  "definition": "Media authenticity is the property and practice of establishing that a piece of digital media is genuine, unaltered, and accurately attributed to its source. It combines cryptographic provenance metadata, watermarking, and forensic analysis to distinguish authentic recordings from synthetic or manipulated content. As generative models make convincing synthetic media inexpensive, media authenticity has become central to combating disinformation and preserving trust in visual and audio evidence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-authenticity",
+      "label": "Content Authenticity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "id": "urn:ngm:class:c2pa",
+        "label": "C2PA"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-authenticity",
+        "label": "Content Authenticity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:disinformation",
+        "label": "Disinformation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:content-provenance",
+        "label": "Content Provenance"
+      },
+      {
+        "id": "urn:ngm:class:media-forensics",
+        "label": "Media Forensics"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:media-forensics",
+        "label": "Media Forensics"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:c2pa",
+        "label": "C2PA"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:content-authenticity",
+        "label": "Content Authenticity"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature",
+        "label": "Digital Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -66,7 +66,7 @@ public:: true
         "label": "Model Selection"
       },
       {
-        "@id": "urn:ngm:class:ai-safety-evaluation",
+        "@id": "urn:ngm:class:safety-evaluation",
         "label": "AI Safety Evaluation"
       },
       {
@@ -80,7 +80,7 @@ public:: true
         "label": "Labelled Data"
       },
       {
-        "@id": "urn:ngm:class:ground-truth",
+        "@id": "urn:ngm:class:ground-truth-labels",
         "label": "Ground Truth"
       },
       {

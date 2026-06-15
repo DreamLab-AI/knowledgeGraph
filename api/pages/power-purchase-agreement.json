@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:power-purchase-agreement",
+  "title": "Power Purchase Agreement",
+  "slug": "power-purchase-agreement",
+  "public": true,
+  "classIri": "urn:ngm:class:power-purchase-agreement",
+  "domain": "infrastructure",
+  "definition": "A Power Purchase Agreement (PPA) is a long-term contract between an electricity generator and a buyer that fixes the price, volume and delivery terms for electrical energy over a defined period. PPAs underpin the financing of generation assets, particularly renewable plants, by guaranteeing a stable revenue stream that de-risks capital investment. They allocate market, volume and curtailment risk between producer and offtaker and may be physical or virtual (financial).",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:power-systems",
+      "label": "Power Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:sustainability",
+        "label": "Sustainability"
+      },
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:power-systems",
+        "label": "Power Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    }
+  ]
+}

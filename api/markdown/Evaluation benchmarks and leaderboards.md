@@ -520,7 +520,7 @@ public:: true
         "label": "Reference Model"
       },
       {
-        "@id": "urn:ngm:class:statistical-significance-testing",
+        "@id": "urn:ngm:class:statistical-testing",
         "label": "Statistical Significance Testing"
       },
       {

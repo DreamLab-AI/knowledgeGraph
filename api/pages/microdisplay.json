@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:microdisplay",
+  "title": "Microdisplay",
+  "slug": "microdisplay",
+  "public": true,
+  "classIri": "urn:ngm:class:microdisplay",
+  "domain": "spatial-computing",
+  "definition": "A microdisplay is a miniature display panel, typically under an inch diagonal, with very high pixel density, used in near-eye optical systems such as headsets, viewfinders and projectors. Built on technologies including micro-OLED, liquid-crystal-on-silicon (LCoS) and microLED, it produces a small bright image that magnifying or waveguide optics expand into a large virtual image for the eye. Microdisplays are a critical enabling component for augmented and virtual reality head-mounted displays, where size, brightness, resolution and power efficiency are paramount.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:display-hardware",
+      "label": "Display Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:display-technology",
+        "label": "Display Technology"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:head-mounted-display",
+        "label": "Head-Mounted Display"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:graceful-degradation",
+  "title": "Graceful Degradation",
+  "slug": "graceful-degradation",
+  "public": true,
+  "classIri": "urn:ngm:class:graceful-degradation",
+  "domain": "infrastructure",
+  "definition": "Graceful degradation is a design property whereby a system continues to provide reduced but acceptable functionality when some of its components fail or operate under stress, rather than failing completely. It prioritises essential services, sheds non-critical load, and offers fallback behaviours so that partial failure does not cascade into total outage. It is a cornerstone of resilient, fault-tolerant infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reliability-engineering",
+      "label": "Reliability Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:bandwidth-adaptation",
+        "label": "Bandwidth Adaptation"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:circuit-breaker",
+        "label": "Circuit Breaker"
+      },
+      {
+        "id": "urn:ngm:class:failover",
+        "label": "Failover"
+      },
+      {
+        "id": "urn:ngm:class:redundancy",
+        "label": "Redundancy"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:quality-of-service",
+        "label": "Quality Of Service"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reliability-engineering",
+        "label": "Reliability Engineering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:chaos-engineering",
+        "label": "Chaos Engineering"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    }
+  ]
+}

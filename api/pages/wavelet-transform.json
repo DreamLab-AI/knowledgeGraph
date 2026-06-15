@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:wavelet-transform",
+  "title": "Wavelet Transform",
+  "slug": "wavelet-transform",
+  "public": true,
+  "classIri": "urn:ngm:class:wavelet-transform",
+  "domain": "machine-learning",
+  "definition": "The wavelet transform is a signal-processing technique that represents a signal as a sum of scaled and translated copies of a localised oscillating basis function called a wavelet. Unlike the Fourier transform, which trades all time resolution for frequency resolution, the wavelet transform provides simultaneous time and frequency localisation through multiresolution analysis. It is widely used for compression, denoising and feature extraction in machine-learning pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:data-compression",
+        "label": "Data Compression"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:convolution",
+        "label": "Convolution"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

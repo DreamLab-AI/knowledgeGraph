@@ -1,0 +1,32 @@
+- ### Definition
+  - [[Spaced Repetition]] is a memory-optimisation technique that schedules reviews at expanding intervals to counter forgetting, central to flashcard tools and the retention layer of [[Adaptive Learning]]. It draws on [[Cognitive Science]] and increasingly on [[Machine Learning]] to personalise scheduling.
+- ### Overview
+  - The technique operationalises the spacing effect: information reviewed at distributed intervals is retained far longer than information crammed in a single session. By reviewing each item just as recall begins to fade, learners maximise retention per unit of study time.
+  - Scheduling algorithms model each item's memory strength and project a review date. Correct, effortful recalls lengthen the interval, while failures shorten it, concentrating effort precisely where forgetting is imminent.
+- ### Mechanisms
+  - The forgetting curve models memory decay over time as the basis for interval selection.
+  - Interval-growth algorithms such as SM-2 expand spacing after each successful recall.
+  - Recall-difficulty feedback adjusts an item's ease and future intervals.
+  - Modern schedulers fit memory models to large datasets to predict optimal review timing.
+- ### Applications
+  - Flashcard applications for language vocabulary and factual recall.
+  - Medical and professional examination preparation requiring durable retention.
+  - Memory-management modules within [[Personalised Learning]] platforms.
+  - Reinforcement of skills surfaced as at-risk by [[Intelligent Tutoring System]] diagnostics.
+- ### Relationships
+  - partOf:: [[Adaptive Learning]]
+  - partOf:: [[Educational Technology]]
+  - uses:: [[Machine Learning]]
+  - implements:: [[Adaptive Learning]]
+  - enables:: [[Personalised Learning]]
+  - requires:: [[Educational Technology]]
+  - requires:: [[Cognitive Science]]
+  - supports:: [[Personalised Learning]]
+  - supports:: [[Intelligent Tutoring System]]
+  - contrastsWith:: [[Bayesian Knowledge Tracing]]
+  - relatedTo:: [[Cognitive Science]]
+  - relatedTo:: [[Item Response Theory]]
+  - relatedTo:: [[Bayesian Knowledge Tracing]]
+  - bridgesTo:: [[Artificial Intelligence]]
+- ### Provenance
+  - updated:: 2026-06-15

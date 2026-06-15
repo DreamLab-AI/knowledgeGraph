@@ -48,10 +48,6 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:kernel",
-        "label": "Kernel"
-      },
-      {
         "@id": "urn:ngm:class:fast-fourier-transform",
         "label": "Fast Fourier Transform"
       }

@@ -1,0 +1,117 @@
+{
+  "id": "urn:visionflow:page:voice-input",
+  "title": "Voice Input",
+  "slug": "voice-input",
+  "public": true,
+  "classIri": "urn:ngm:class:voice-input",
+  "domain": "spatial-computing",
+  "definition": "Voice input is an interaction modality in which spoken language is captured, recognised, and interpreted as commands or content, allowing users to control systems and enter data hands-free. It combines microphone capture, speech recognition, and natural-language understanding to map utterances onto actions or text. In spatial computing, voice input is a primary modality for immersive and accessible interfaces where conventional keyboards and pointers are impractical.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multimodal-interaction",
+      "label": "Multimodal Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:immersive-interface",
+        "label": "Immersive Interface"
+      },
+      {
+        "id": "urn:ngm:class:spatial-interaction",
+        "label": "Spatial Interaction"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:gaze-tracking",
+        "label": "Gaze Tracking"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-user-interface",
+      "label": "3D User Interface"
+    }
+  ]
+}

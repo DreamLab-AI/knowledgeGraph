@@ -1,0 +1,34 @@
+- ### Definition
+- Risk scoring assigns a calibrated numerical value expressing the probability and severity of an adverse outcome, drawing on [[Machine Learning]], [[Predictive Analytics]] and [[Feature Engineering]] applied to historical and behavioural [[Data]].
+- It operationalises [[Risk Management]] by turning qualitative judgement into reproducible, auditable scores.
+- ### Overview
+- A risk score condenses many predictive signals into a single ordinal or probabilistic value, enabling consistent ranking and threshold-based decisions across large populations.
+- Models range from interpretable scorecards and [[Decision Tree]] ensembles to deep networks, balancing predictive power against the explainability demanded by [[Regulatory Compliance]].
+- Scores are continuously recalibrated against realised outcomes to control drift and maintain accuracy.
+- ### Key aspects
+- Feature selection and engineering that capture predictive behaviour without introducing prohibited or biased attributes.
+- Model calibration so that scores map faithfully to observed probabilities.
+- Threshold setting that trades off false positives against missed risk in line with appetite.
+- Explainability and reason codes required for adverse-action notices and audit.
+- Monitoring for population drift, fairness and stability over time.
+- ### Applications
+- Credit decisioning, lending and underwriting.
+- Transaction monitoring for [[Fraud Detection]] and [[Anti-Money Laundering]].
+- Customer due diligence and [[KYC]] tiering.
+- Insurance pricing and claims triage.
+- ### Relationships
+- uses:: [[Machine Learning]]
+- uses:: [[Predictive Analytics]]
+- uses:: [[Feature Engineering]]
+- requires:: [[Risk Assessment]]
+- requires:: [[Anomaly Detection]]
+- hasPart:: [[Decision Tree]]
+- enables:: [[Fraud Detection]]
+- enables:: [[KYC]]
+- supports:: [[Anti-Money Laundering]]
+- implements:: [[Risk Management]]
+- relatedTo:: [[Compliance]]
+- relatedTo:: [[Regulatory Compliance]]
+- dependsOn:: [[Data]]
+- ### Provenance
+- updated:: 2026-06-15

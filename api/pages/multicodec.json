@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:multicodec",
+  "title": "Multicodec",
+  "slug": "multicodec",
+  "public": true,
+  "classIri": "urn:ngm:class:multicodec",
+  "domain": "infrastructure",
+  "definition": "Multicodec is a self-describing data encoding scheme, part of the Multiformats family, that prefixes a binary value with a compact varint code identifying the codec used to interpret the bytes that follow. By making the encoding explicit and machine-readable, multicodec lets systems handle many data formats and hash algorithms without out-of-band agreement, supporting future-proof, agile interoperability across content-addressed systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      },
+      {
+        "id": "urn:ngm:class:cid",
+        "label": "CID"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-serialization",
+        "label": "Data Serialisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      },
+      {
+        "id": "urn:ngm:class:cid",
+        "label": "CID"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:identifier",
+        "label": "Identifier"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:cid",
+        "label": "CID"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:multihash",
+        "label": "Multihash"
+      },
+      {
+        "id": "urn:ngm:class:content-addressing",
+        "label": "Content Addressing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multiformats",
+        "label": "Multiformats"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:multiformats",
+        "label": "Multiformats"
+      },
+      {
+        "id": "urn:ngm:class:ipfs",
+        "label": "IPFS"
+      },
+      {
+        "id": "urn:ngm:class:libp2p",
+        "label": "libp2p"
+      },
+      {
+        "id": "urn:ngm:class:filecoin",
+        "label": "Filecoin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    }
+  ]
+}

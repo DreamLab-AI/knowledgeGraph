@@ -1,0 +1,101 @@
+{
+  "id": "urn:visionflow:page:eu-digital-single-market",
+  "title": "Eu Digital Single Market",
+  "slug": "eu-digital-single-market",
+  "public": true,
+  "classIri": "urn:ngm:class:eu-digital-single-market",
+  "domain": "governance",
+  "definition": "The EU Digital Single Market is a European Union policy strategy aimed at removing regulatory and technical barriers so that digital goods, services, and data can move freely across member states under a harmonised set of rules. It seeks to extend the principles of the single market to the online economy, covering areas such as e-commerce, data portability, telecommunications, copyright, and cross-border digital services. The strategy underpins later legislative instruments including data-protection, platform-governance, and data-sharing frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-framework",
+      "label": "Governance Framework"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-portability",
+        "label": "Data Portability"
+      }
+    ],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      },
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance-framework",
+        "label": "Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:digital-economy",
+        "label": "Digital Economy"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:digital-services-act",
+        "label": "Digital Services Act"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

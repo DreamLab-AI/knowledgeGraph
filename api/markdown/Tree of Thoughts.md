@@ -49,7 +49,7 @@ public:: true
   "relations": {
     "partOf": [
       {
-        "@id": "urn:ngm:class:inference-time-compute",
+        "@id": "urn:ngm:class:inference-compute",
         "label": "Inference-Time Compute"
       },
       {

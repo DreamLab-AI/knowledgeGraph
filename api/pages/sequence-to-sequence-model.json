@@ -1,0 +1,106 @@
+{
+  "id": "urn:visionflow:page:sequence-to-sequence-model",
+  "title": "Sequence To Sequence Model",
+  "slug": "sequence-to-sequence-model",
+  "public": true,
+  "classIri": "urn:ngm:class:sequence-to-sequence-model",
+  "domain": "artificial-intelligence",
+  "definition": "A sequence-to-sequence model is a neural architecture that maps an input sequence of arbitrary length to an output sequence of arbitrary length, classically using an encoder to compress the input into a context representation and a decoder to generate the output one element at a time. Originally built from recurrent networks such as LSTMs and GRUs and later augmented with attention to overcome the fixed-context bottleneck, the paradigm became the foundation for the transformer. Sequence-to-sequence models power machine translation, text summarisation, speech recognition, and other tasks where input and output structures differ.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:text-summarisation",
+        "label": "Text Summarisation"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder-Decoder"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lstm",
+        "label": "LSTM"
+      },
+      {
+        "id": "urn:ngm:class:gru",
+        "label": "GRU"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sequence-model",
+        "label": "Sequence Model"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ]
+}

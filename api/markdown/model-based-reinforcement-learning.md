@@ -1,0 +1,33 @@
+- ### Definition
+  - [[Model Based Reinforcement Learning]] is a [[Robotics]] and [[Reinforcement Learning]] approach where an [[Agent]] learns a [[World Model]] of a [[Markov Decision Process]] to enable [[Planning]].
+- ### Overview
+  - Instead of learning a policy purely from trial and error, a model-based agent first builds a predictive model of transitions and rewards, then exploits it to plan ahead or to imagine training data.
+  - This dramatically improves sample efficiency, which is decisive in robotics where real-world interaction is slow and costly.
+- ### Mechanisms
+  - Dynamics learning: fitting a transition and reward model from collected experience.
+  - Planning: rolling the model forward to evaluate action sequences, as in model predictive control.
+  - Dyna-style integration: mixing real and model-generated experience to update a policy or value function.
+- ### Applications
+  - Sample-efficient robotic manipulation and locomotion control.
+  - World-model agents that learn behaviour largely in imagination.
+  - Model predictive control of physical systems with learned dynamics.
+- ### Relationships
+  - relatedTo:: [[Reinforcement Learning]]
+  - relatedTo:: [[World Model]]
+  - relatedTo:: [[Markov Decision Process]]
+  - implements:: [[Reinforcement Learning]]
+  - implements:: [[Planning]]
+  - contrastsWith:: [[Q-Learning]]
+  - uses:: [[World Model]]
+  - uses:: [[Planning]]
+  - uses:: [[Model Predictive Control]]
+  - requires:: [[Markov Decision Process]]
+  - enables:: [[Sample Efficiency]]
+  - enables:: [[Planning]]
+  - supports:: [[Robotics]]
+  - supports:: [[Agent]]
+  - dependsOn:: [[World Model]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - generated-by:: did:nostr:ontology-mesh
+  - inference-rule:: GapMaterialisation

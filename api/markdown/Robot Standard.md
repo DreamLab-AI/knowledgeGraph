@@ -600,7 +600,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:force-torque-sensing",
+        "@id": "urn:ngm:class:force-torque-sensor",
         "label": "Force Torque Sensing"
       },
       {

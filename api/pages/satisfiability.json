@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:satisfiability",
+  "title": "Satisfiability",
+  "slug": "satisfiability",
+  "public": true,
+  "classIri": "urn:ngm:class:satisfiability",
+  "domain": "artificial-intelligence",
+  "definition": "Satisfiability is the problem of determining whether there exists an assignment of values to variables that makes a logical formula true, most prominently the Boolean satisfiability problem (SAT). SAT is the canonical NP-complete problem, and modern SAT solvers can decide formulas with millions of variables despite this worst-case hardness. Satisfiability provides a unifying computational substrate for verification, planning, scheduling and many forms of automated reasoning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:logic",
+      "label": "Logic"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:theorem-proving",
+        "label": "Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:logic",
+        "label": "Logic"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

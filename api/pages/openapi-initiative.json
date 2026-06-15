@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:openapi-initiative",
+  "title": "Openapi Initiative",
+  "slug": "openapi-initiative",
+  "public": true,
+  "classIri": "urn:ngm:class:openapi-initiative",
+  "domain": "infrastructure",
+  "definition": "The OpenAPI Initiative (OAI) is an open-governance consortium under the Linux Foundation that maintains the OpenAPI Specification, a vendor-neutral, machine-readable format for describing HTTP APIs. It evolved from the donated Swagger specification and provides a standard contract that both humans and tools can use to understand, document, generate and test RESTful interfaces. By standardising API descriptions it promotes interoperability across the API tooling ecosystem, including documentation generators, client SDK generators and gateways. The initiative governs the specification's stewardship and version evolution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:standards",
+      "label": "Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:web-standard",
+        "label": "Web Standard"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:api-gateway",
+        "label": "API Gateway"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:openapi",
+        "label": "OpenAPI"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:api-design",
+        "label": "API Design"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:linux-foundation",
+        "label": "Linux Foundation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "id": "urn:ngm:class:api-management",
+        "label": "API Management"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

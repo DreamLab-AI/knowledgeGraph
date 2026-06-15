@@ -48,7 +48,7 @@ public:: true
         "label": "Domain Driven Design"
       },
       {
-        "@id": "urn:ngm:class:write-ahead-log",
+        "@id": "urn:ngm:class:write-ahead-logging",
         "label": "Write Ahead Log"
       }
     ],

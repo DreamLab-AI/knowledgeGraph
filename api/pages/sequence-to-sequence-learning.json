@@ -1,0 +1,109 @@
+{
+  "id": "urn:visionflow:page:sequence-to-sequence-learning",
+  "title": "Sequence To Sequence Learning",
+  "slug": "sequence-to-sequence-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:sequence-to-sequence-learning",
+  "domain": "machine-learning",
+  "definition": "Sequence-to-sequence learning is a neural modelling framework that maps an input sequence to an output sequence of possibly different length, using an encoder to compress the input into a context representation and a decoder to generate the output token by token. Originally built on recurrent networks, it now predominantly uses the attention-based transformer architecture. It is the dominant paradigm for machine translation, summarisation and other transduction tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supervised-learning",
+      "label": "Supervised Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder Decoder"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:lstm",
+        "label": "LSTM"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder Decoder"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

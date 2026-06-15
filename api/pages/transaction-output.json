@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:transaction-output",
+  "title": "Transaction Output",
+  "slug": "transaction-output",
+  "public": true,
+  "classIri": "urn:ngm:class:transaction-output",
+  "domain": "blockchain",
+  "definition": "A transaction output is a component of a blockchain transaction that specifies an amount of value and the conditions under which it can later be spent. In UTXO-based systems each output records a value and a locking script that defines who may consume it, and an unspent output becomes the input to a future transaction. Transaction outputs are the fundamental units of ownership and value transfer in such ledgers, and the set of all unspent outputs constitutes the current state of holdings.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain-transaction",
+      "label": "Blockchain Transaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:script",
+        "label": "Script"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:unspent-transaction-output",
+        "label": "Unspent Transaction Output"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:script",
+        "label": "Script"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:utxo",
+        "label": "UTXO"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:blockchain-transaction",
+        "label": "Blockchain Transaction"
+      },
+      {
+        "id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:unspent-transaction-output",
+        "label": "Unspent Transaction Output"
+      },
+      {
+        "id": "urn:ngm:class:double-spending",
+        "label": "Double Spending"
+      },
+      {
+        "id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

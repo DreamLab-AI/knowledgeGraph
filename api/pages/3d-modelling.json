@@ -1,0 +1,110 @@
+{
+  "id": "urn:visionflow:page:3d-modelling",
+  "title": "3D Modelling",
+  "slug": "3d-modelling",
+  "public": true,
+  "classIri": "urn:ngm:class:3d-modelling",
+  "domain": "spatial-computing",
+  "definition": "3D modelling is the creation of a mathematical representation of a three-dimensional surface or volume using specialised software. Models are commonly built from polygon meshes, parametric surfaces or volumetric data and define the geometry that is later textured, rigged, animated and rendered. It is the foundational discipline for games, film, visualisation, product design and spatial computing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-graphics",
+      "label": "Computer Graphics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:polygon-mesh",
+        "label": "Polygon Mesh"
+      },
+      {
+        "id": "urn:ngm:class:geometry-processing",
+        "label": "Geometry Processing"
+      },
+      {
+        "id": "urn:ngm:class:topology",
+        "label": "Topology"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:design-software",
+        "label": "Design Software"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "id": "urn:ngm:class:character-model",
+        "label": "Character Model"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:computer-aided-design",
+        "label": "Computer-Aided Design"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      },
+      {
+        "id": "urn:ngm:class:computer-aided-design",
+        "label": "Computer-Aided Design"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      },
+      {
+        "id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:fbx",
+        "label": "FBX"
+      },
+      {
+        "id": "urn:ngm:class:character-rigging",
+        "label": "Character Rigging"
+      },
+      {
+        "id": "urn:ngm:class:skinning",
+        "label": "Skinning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

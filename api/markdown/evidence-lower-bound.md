@@ -1,0 +1,36 @@
+- ### Definition
+  - The evidence lower bound (ELBO) is a tractable lower bound on the log marginal likelihood of observed data under a probabilistic model with latent variables. Maximising the ELBO is equivalent to minimising the divergence between an approximate posterior and the true posterior, making intractable inference tractable. It is the training objective of variational autoencoders and a cornerstone of variational inference.
+  - Related: [[Variational Inference]] [[Variational Autoencoder]] [[Probabilistic Model]] [[Bayesian Inference]]
+- ### Overview
+  - The ELBO decomposes into an expected reconstruction term and a regularising divergence between the approximate and prior distributions. Because the gap between the ELBO and the true log-evidence is exactly the divergence from the true posterior, tightening the bound improves the variational approximation.
+- ### Mechanisms
+  - A lower bound on the intractable log marginal likelihood
+  - Decomposition into reconstruction and divergence terms
+  - Equivalence between maximising ELBO and minimising posterior divergence
+  - Optimisation by stochastic gradient ascent
+  - Use of the reparameterisation trick for low-variance gradients
+- ### Applications
+  - Training objective for variational autoencoders
+  - Scalable approximate Bayesian inference
+  - Model selection via comparison of bounds
+  - Latent-variable modelling of complex data
+- ### Relationships
+  - subClassOf:: [[Variational Inference]]
+  - uses:: [[Posterior Distribution]]
+  - uses:: [[Bayesian Inference]]
+  - implements:: [[Variational Inference]]
+  - requires:: [[Probabilistic Model]]
+  - requires:: [[Objective Function]]
+  - partOf:: [[Variational Inference]]
+  - enables:: [[Variational Autoencoder]]
+  - supports:: [[Variational Autoencoder]]
+  - contrastsWith:: [[Expectation Maximisation]]
+  - relatedTo:: [[Loss Function]]
+  - relatedTo:: [[Gradient Descent]]
+  - relatedTo:: [[Stochastic Gradient Descent]]
+  - bridgesTo:: [[Bayesian Inference]]
+- ### Provenance
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
+  - quality:: 0.62
+  - updated:: 2026-06-15

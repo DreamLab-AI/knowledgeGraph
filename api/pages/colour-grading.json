@@ -1,0 +1,93 @@
+{
+  "id": "urn:visionflow:page:colour-grading",
+  "title": "Colour Grading",
+  "slug": "colour-grading",
+  "public": true,
+  "classIri": "urn:ngm:class:colour-grading",
+  "domain": "spatial-computing",
+  "definition": "Colour grading is the post-production process of altering and enhancing the colour, contrast, and tonal qualities of a moving image or rendered frame to establish a consistent look and convey mood. It builds on basic colour correction \u2014 which neutralises exposure and white-balance errors \u2014 by applying creative adjustments such as curves, lift-gamma-gain controls, and secondary qualifiers that isolate specific hues or regions. In real-time rendering and virtual production the grade is frequently applied as a post-processing pass using look-up tables and tone-mapping operators so interactive scenes match the intended cinematic aesthetic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:post-processing",
+      "label": "Post Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tone-mapping",
+        "label": "Tone Mapping"
+      },
+      {
+        "id": "urn:ngm:class:colour-correction",
+        "label": "Colour Correction"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      },
+      {
+        "id": "urn:ngm:class:gpu-rendering",
+        "label": "GPU Rendering"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:photorealism",
+        "label": "Photorealism"
+      },
+      {
+        "id": "urn:ngm:class:visual-effects",
+        "label": "Visual Effects"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:shader",
+        "label": "Shader"
+      },
+      {
+        "id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:hdr",
+        "label": "HDR"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:post-processing",
+        "label": "Post Processing"
+      },
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      },
+      {
+        "id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

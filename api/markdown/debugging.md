@@ -1,0 +1,34 @@
+- ### Definition
+- Debugging is the systematic process of locating, diagnosing and resolving software defects. As part of [[Software Development]] and [[Software Engineering]] it draws on the [[Runtime Environment]] and [[Observability]] and complements [[Testing]] and [[Software Testing]].
+- ### Overview
+- Debugging closes the gap between observed and intended behaviour by working from a symptom back to a root cause.
+- It blends interactive techniques (breakpoints, watches, step execution) with after-the-fact analysis of logs and stack traces.
+- Effective debugging is iterative: reproduce, narrow, hypothesise, test, and confirm.
+- ### Mechanisms
+- Reproduction: establishing a reliable way to trigger the fault, ideally minimised to the smallest failing case.
+- Inspection: pausing execution in the [[Runtime Environment]] to read variables, the call stack and memory.
+- Instrumentation: adding logging and using [[Observability]] signals to expose otherwise hidden state.
+- Bisection: using [[Version Control]] history to isolate the change that introduced a regression.
+- ### Key aspects
+- Distinguishing the fault (defect in code) from the failure (observable wrong behaviour).
+- Handling non-deterministic bugs arising from concurrency, timing or environment differences.
+- Verifying that a fix resolves the defect without introducing new ones.
+- ### Applications
+- Resolving crashes, incorrect output and performance anomalies.
+- Diagnosing integration failures across services and dependencies.
+- Post-incident analysis feeding back into [[Reliability]] and [[DevOps]] practices.
+- ### Relationships
+- supports:: [[Reliability]]
+- supports:: [[Software Engineering]]
+- contrastsWith:: [[Testing]]
+- enables:: [[Fault Tolerance]]
+- uses:: [[Runtime Environment]]
+- uses:: [[Observability]]
+- requires:: [[Runtime Environment]]
+- dependsOn:: [[Observability]]
+- partOf:: [[Software Engineering]]
+- implements:: [[Software Testing]]
+- bridgesTo:: [[DevOps]]
+- relatedTo:: [[Version Control]]
+- ### Provenance
+- updated:: 2026-06-15

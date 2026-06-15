@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:homography",
+  "title": "Homography",
+  "slug": "homography",
+  "public": true,
+  "classIri": "urn:ngm:class:homography",
+  "domain": "spatial-computing",
+  "definition": "A homography is a projective transformation, represented by a 3x3 matrix, that maps points from one plane to another in homogeneous coordinates, preserving straight lines but not parallelism or angles. In computer vision it relates two images of the same planar surface or two views taken from the same camera centre, enabling tasks such as image rectification, perspective correction, and mosaicking. Homographies are estimated from corresponding feature points, often robustly via methods that reject outlier matches.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:projective-geometry",
+      "label": "Projective Geometry"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:feature-matching",
+        "label": "Feature Matching"
+      },
+      {
+        "id": "urn:ngm:class:ransac",
+        "label": "RANSAC"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:structure-from-motion",
+        "label": "Structure From Motion"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:projective-geometry",
+        "label": "Projective Geometry"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:epipolar-geometry",
+        "label": "Epipolar Geometry"
+      },
+      {
+        "id": "urn:ngm:class:camera-calibration",
+        "label": "Camera Calibration"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    }
+  ]
+}

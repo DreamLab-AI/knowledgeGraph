@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:scikit-learn",
+  "title": "Scikit Learn",
+  "slug": "scikit-learn",
+  "public": true,
+  "classIri": "urn:ngm:class:scikit-learn",
+  "domain": "artificial-intelligence",
+  "definition": "Scikit-learn is an open-source Python library providing a unified, consistent API for classical machine learning algorithms covering classification, regression, clustering, dimensionality reduction and model selection. Built on NumPy and SciPy, it emphasises clean estimator interfaces, reproducible pipelines and rigorous evaluation tooling rather than deep learning. It is one of the most widely used libraries for non-neural machine learning, data science education and rapid prototyping.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:keras",
+        "label": "Keras"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    }
+  ]
+}

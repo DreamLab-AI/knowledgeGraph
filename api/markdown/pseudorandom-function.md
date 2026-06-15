@@ -1,0 +1,36 @@
+- ### Definition
+- A [[Pseudorandom Function]] (PRF) is a keyed function family whose outputs are computationally indistinguishable from a truly random function without knowledge of the key.
+- PRFs are a core building block for the [[Message Authentication Code]] and the [[Key Derivation Function]], and they relate closely to the [[Cryptographic Hash Function]].
+- They provide deterministic-yet-unpredictable behaviour that depends on [[Entropy]] in the secret key, supporting [[Authentication]] and confidentiality.
+- ### Overview
+- The PRF abstraction formalises the intuition that a well-keyed cryptographic primitive should leak nothing about its key from its outputs.
+- Security is defined through an indistinguishability game: an adversary with oracle access cannot reliably tell a PRF apart from a random function within feasible computation.
+- PRFs are typically instantiated from block ciphers or keyed hash constructions, and their security reduces to the hardness assumptions of those primitives.
+- A pseudorandom permutation strengthens the PRF to be invertible, which is the formal model for a block cipher.
+- ### Mechanisms
+- A PRF takes a secret key and a variable input and produces a fixed-length output that appears random to anyone without the key.
+- HMAC realises a PRF by nesting a [[Cryptographic Hash Function]] with the key, yielding a keyed primitive suitable for authentication.
+- Key derivation functions use PRFs to stretch and diversify a master secret into multiple subkeys with independent security.
+- The strength of a PRF rests on adequate key length and the absence of structural weaknesses in its construction.
+- ### Applications
+- Authenticating messages and verifying integrity through HMAC and other MAC schemes.
+- Deriving session and subkeys within key derivation functions and key schedules.
+- Generating deterministic but unpredictable values for nonces, tokens and challenge-response protocols.
+- Underpinning symmetric encryption modes and stream generators.
+- ### Relationships
+- enables:: [[Message Authentication Code]]
+- enables:: [[Key Derivation Function]]
+- implements:: [[HMAC]]
+- uses:: [[Cryptographic Hash Function]]
+- uses:: [[Random Number Generation]]
+- supports:: [[Symmetric Encryption]]
+- supports:: [[Authentication]]
+- requires:: [[Entropy]]
+- partOf:: [[Security]]
+- relatedTo:: [[Zero-Knowledge Proof]]
+- contrastsWith:: [[Cryptographic Hash Function]]
+- bridgesTo:: [[Key Derivation Function]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

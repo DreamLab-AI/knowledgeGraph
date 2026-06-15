@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:materiality-assessment",
+  "title": "Materiality Assessment",
+  "slug": "materiality-assessment",
+  "public": true,
+  "classIri": "urn:ngm:class:materiality-assessment",
+  "domain": "governance",
+  "definition": "Materiality assessment is the structured process by which an organisation identifies and prioritises the environmental, social and governance topics that are significant enough to influence its decisions or the decisions of its stakeholders. It establishes which sustainability matters warrant disclosure, management attention and resource allocation. Double materiality extends the concept to consider both financial impact on the firm and the firm's impact on society and the environment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sustainability-reporting",
+      "label": "Sustainability Reporting"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:double-materiality",
+        "label": "Double Materiality"
+      },
+      {
+        "id": "urn:ngm:class:financial-materiality",
+        "label": "Financial Materiality"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      },
+      {
+        "id": "urn:ngm:class:disclosure",
+        "label": "Disclosure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:esg-reporting",
+        "label": "ESG Reporting"
+      },
+      {
+        "id": "urn:ngm:class:disclosure",
+        "label": "Disclosure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:climate-risk",
+        "label": "Climate Risk"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:climate-scenario-analysis",
+        "label": "Climate Scenario Analysis"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:corporate-governance",
+        "label": "Corporate Governance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:issb",
+        "label": "ISSB"
+      },
+      {
+        "id": "urn:ngm:class:tcfd",
+        "label": "TCFD"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:sustainability-reporting",
+        "label": "Sustainability Reporting"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:esg",
+        "label": "ESG"
+      },
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    }
+  ]
+}

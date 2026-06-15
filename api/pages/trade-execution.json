@@ -1,0 +1,90 @@
+{
+  "id": "urn:visionflow:page:trade-execution",
+  "title": "Trade Execution",
+  "slug": "trade-execution",
+  "public": true,
+  "classIri": "urn:ngm:class:trade-execution",
+  "domain": "finance",
+  "definition": "Trade execution is the process of converting an investment decision into a completed transaction in a market, encompassing how, when, and where an order is routed and filled. It seeks the best achievable outcome for the trader by managing factors such as price, speed, market impact, and slippage against the order book. Execution quality is a core determinant of realised returns and is governed by best-execution obligations in many jurisdictions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:market-microstructure",
+      "label": "Market Microstructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      },
+      {
+        "id": "urn:ngm:class:settlement",
+        "label": "Settlement"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:high-frequency-trading",
+        "label": "High-Frequency Trading"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      },
+      {
+        "id": "urn:ngm:class:market-maker",
+        "label": "Market Maker"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:clearing",
+        "label": "Clearing"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:slippage",
+        "label": "Slippage"
+      },
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      },
+      {
+        "id": "urn:ngm:class:finance",
+        "label": "Finance"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

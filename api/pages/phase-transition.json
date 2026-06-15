@@ -1,0 +1,112 @@
+{
+  "id": "urn:visionflow:page:phase-transition",
+  "title": "Phase Transition",
+  "slug": "phase-transition",
+  "public": true,
+  "classIri": "urn:ngm:class:phase-transition",
+  "domain": "infrastructure",
+  "definition": "A phase transition is a qualitative, often abrupt, change in the macroscopic behaviour of a system as a control parameter crosses a critical threshold. Originating in statistical physics to describe transformations such as freezing or magnetisation, the concept is now applied to complex and learning systems where a small change in scale, data, or connectivity produces a discontinuous jump in capability. It is closely associated with emergence and critical phenomena.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:complex-systems",
+      "label": "Complex Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.62,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:thermodynamics",
+        "label": "Thermodynamics"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chaos-theory",
+        "label": "Chaos Theory"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      },
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:complex-systems",
+        "label": "Complex Systems"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:emergent-capabilities",
+        "label": "Emergent Capabilities"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:self-organisation",
+        "label": "Self-Organisation"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:emergence",
+        "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+- ### Definition
+  - Yield Aggregator is a key concept in the blockchain domain. Related concepts include [[Decentralised Finance]] [[Yield Farming]] [[ERC-4626]] [[Liquidity Pool]].
+  - A yield aggregator is a decentralised-finance protocol that automatically routes deposited assets across multiple yield-bearing strategies — such as lending markets, liquidity pools, and staking — to maximise returns while compounding rewards on the user's behalf. By pooling capital and automating strategy selection, reward harvesting, and reinvestment, aggregators reduce gas costs and operational complexity for individual depositors. Modern aggregators frequently expose tokenised vault shares conforming to standards such as ERC-4626, making positions composable with the wider DeFi ecosystem.
+- ### Overview
+  - Yield Aggregator sits within the broader category of [[Decentralised Finance]], which it specialises.
+  - It connects to a network of 15 related classes across the knowledge graph, anchoring edges that previously pointed to an undefined node.
+- ### Key aspects
+  - hasPart: [[Vault]]
+  - hasPart: [[Liquidity Pool]]
+  - uses: [[Smart Contract]]
+  - uses: [[Automated Market Maker]]
+  - uses: [[Lending Protocol]]
+  - uses: [[Staking]]
+  - implements: [[ERC-4626]]
+- ### Mechanisms
+  - Yield Aggregator operates through its constituent parts and dependencies, integrating with adjacent systems to deliver its function within blockchain.
+  - Depends on [[Liquidity Mining]] for correct operation.
+- ### Applications
+  - Applied to advance [[Yield Optimisation]].
+  - Applied to advance [[Yield Farming]].
+  - Applied to advance [[Composability]].
+- ### Relationships
+  - subClassOf:: [[Decentralised Finance]]
+  - enables:: [[Yield Optimisation]]
+  - enables:: [[Yield Farming]]
+  - hasPart:: [[Vault]]
+  - hasPart:: [[Liquidity Pool]]
+  - uses:: [[Smart Contract]]
+  - uses:: [[Automated Market Maker]]
+  - uses:: [[Lending Protocol]]
+  - uses:: [[Staking]]
+  - implements:: [[ERC-4626]]
+  - partOf:: [[Decentralised Finance]]
+  - partOf:: [[DeFi]]
+  - dependsOn:: [[Liquidity Mining]]
+  - supports:: [[Composability]]
+  - relatedTo:: [[Governance Token]]
+  - relatedTo:: [[Total Value Locked]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation

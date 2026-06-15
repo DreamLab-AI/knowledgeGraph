@@ -136,10 +136,6 @@ public:: true
         "label": "Quadratic Voting"
       },
       {
-        "@id": "urn:ngm:class:protocol-labs",
-        "label": "Protocol Labs"
-      },
-      {
         "@id": "urn:ngm:class:retroactive-public-goods-funding",
         "label": "Optimism Retroactive Public Goods Funding"
       }

@@ -124,10 +124,6 @@ public:: true
       {
         "@id": "urn:ngm:class:european-central-bank",
         "label": "European Central Bank"
-      },
-      {
-        "@id": "urn:ngm:class:federal-reserve",
-        "label": "Federal Reserve"
       }
     ],
     "bridgesTo": [

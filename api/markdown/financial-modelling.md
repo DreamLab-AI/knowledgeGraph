@@ -1,0 +1,40 @@
+- ### Definition
+- Financial modelling builds structured numerical representations of an entity's economics to forecast performance and value, drawing on [[Statistics]], [[Quantitative Finance]] and [[Scenario Analysis]].
+- It underpins [[Decision Making]] and [[Risk Management]] across corporate, investment and project contexts.
+- ### Overview
+- A financial model translates business logic into linked calculations, usually projecting income, balance sheet and cash-flow statements across a forecast horizon.
+- Models are driven by assumptions about revenue growth, costs, capital structure and macroeconomic conditions, which can be flexed to explore alternative futures.
+- The discipline spans simple budgeting spreadsheets through to elaborate valuation and probabilistic simulation engines.
+- ### Key aspects
+- Three-statement integration linking income, balance sheet and cash flow for internal consistency.
+- Driver-based assumptions that separate inputs from calculated outputs for transparency.
+- Discounted cash-flow valuation translating projected flows into present value.
+- Scenario and sensitivity testing to expose how outputs respond to key variables.
+- Auditability and version control to keep complex models trustworthy.
+- ### Mechanisms
+- Historical data is normalised and used to calibrate forward drivers.
+- Accounting identities enforce balance and prevent inconsistent projections.
+- [[Monte Carlo Simulation]] introduces probabilistic ranges where deterministic point estimates are insufficient.
+- [[Sensitivity Analysis]] isolates the impact of individual assumptions on headline results.
+- ### Applications
+- Corporate budgeting, forecasting and strategic planning.
+- Mergers, acquisitions and equity valuation.
+- Project finance and infrastructure investment appraisal.
+- Credit analysis and capital allocation decisions.
+- ### Relationships
+- subClassOf:: [[Quantitative Finance]]
+- uses:: [[Statistics]]
+- uses:: [[Monte Carlo Simulation]]
+- uses:: [[Sensitivity Analysis]]
+- supports:: [[Decision Making]]
+- supports:: [[Risk Management]]
+- requires:: [[Data]]
+- enables:: [[Scenario Analysis]]
+- bridgesTo:: [[Quantitative Finance]]
+- bridgesTo:: [[Finance]]
+- dependsOn:: [[Statistics]]
+- relatedTo:: [[Risk Management]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

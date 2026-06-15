@@ -109,7 +109,7 @@ public:: true
         "label": "Bitcoin Proof-of-Work Protocol"
       },
       {
-        "@id": "urn:ngm:class:decentralised-consensus",
+        "@id": "urn:ngm:class:consensus",
         "label": "Decentralised Consensus"
       },
       {

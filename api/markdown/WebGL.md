@@ -106,7 +106,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:shader-programming",
+        "@id": "urn:ngm:class:shader",
         "label": "Shader Programming"
       },
       {

@@ -1,0 +1,30 @@
+- ### Definition
+  - Arithmetic over a finite (Galois) field where operations stay closed under modular reduction, foundational to error-correcting codes and cryptography.
+  - Related: [[Modular Arithmetic]] [[Number Theory]] [[Elliptic Curve Cryptography]] [[Reed-Solomon Codes]]
+- ### Overview
+  - Finite field arithmetic operates on a fixed, finite set of elements where the four arithmetic operations remain closed.
+  - Prime fields GF(p) use integers modulo a prime; extension fields GF(p^n) use polynomials modulo an irreducible polynomial.
+  - Every non-zero element has a unique multiplicative inverse, enabling division within the field.
+  - Efficient implementations exploit lookup tables, fast multiplication and reduction to meet performance needs.
+- ### Mechanisms
+  - Modular reduction by a prime modulus or irreducible polynomial keeps results within the field.
+  - Multiplicative inversion via the extended Euclidean algorithm or Fermat's little theorem.
+  - Polynomial basis and normal basis representations for extension fields such as GF(2^m).
+  - Bit-level operations that make binary fields efficient on digital hardware.
+  - Generator elements that produce the cyclic multiplicative group of the field.
+- ### Applications
+  - Reed-Solomon and BCH error-correcting codes used in storage and transmission.
+  - Elliptic-curve and RSA-adjacent cryptographic operations.
+  - Advanced Encryption Standard byte substitution and mix-columns steps.
+  - Hashing, secret sharing and coding-theory constructions.
+- ### Relationships
+  - partOf:: [[Modular Arithmetic]]
+  - uses:: [[Number Theory]]
+  - enables:: [[Reed-Solomon Codes]]
+  - supports:: [[Cryptography]]
+  - relatedTo:: [[Public Key Cryptography]]
+  - bridgesTo:: [[Elliptic Curve Cryptography]]
+- ### Provenance
+  - updated:: 2026-06-15
+  - attributedTo:: did:nostr:ontology-mesh
+  - inferenceRule:: GapMaterialisation
