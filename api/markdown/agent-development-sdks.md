@@ -9,17 +9,17 @@
   - implemented-in-layer:: [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Agent Harness]], [[Agent Frameworks]]
-  - has-part:: [[Claude Agent SDK]], [[Google ADK]], [[Strands Agents]], [[OpenAI Agents SDK]], [[Pydantic AI]], [[Mastra]], [[Composio]], [[SWE-agent]], [[Tool Registry]], [[Memory Store]], [[Agent Runtime]]
-  - requires:: [[Large Language Model]], [[Model Context Protocol]], [[Tool Use]], [[Function Calling]], [[Persistence Layer]], [[Context Window]]
-  - enables:: [[Autonomous Coding]], [[Browser Automation]], [[Computer Use]], [[Workflow Automation]], [[Human-in-the-Loop]], [[Retrieval-Augmented Generation]], [[AI Safety]]
-  - implements:: [[ReAct Pattern]], [[Plan-and-Execute Pattern]], [[A2A Protocol]], [[Agent Communication Protocol]], [[Structured Output]], [[Chain-of-Thought]]
-  - depends-on:: [[Agent Harness]], [[Internal AI Harness]], [[External AI Harness]], [[Agent Execution Sandboxes]]
-  - supports:: [[Agent Evaluation Benchmarks]], [[Multi-Agent Orchestration Frameworks]], [[Observability Stack]]
-  - uses:: [[Tool Calling API]], [[Structured Output]], [[Prompt Template]], [[Model Context Protocol]], [[Agent-to-Agent Protocol]]
-  - contrasts-with:: [[Multi-Agent Orchestration Frameworks]], [[LangGraph]]
-  - related-to:: [[Agentic AI]], [[Agent Execution Sandboxes]], [[Agent Evaluation Benchmarks]], [[AI Agent Payments]]
-  - standardized-by:: [[Model Context Protocol]], [[A2A Protocol]], [[Agent Communication Protocol]]
+  - is-subclass-of:: [[Agent Harness]], [[Agent Frameworks]], [[LLM Orchestration]]
+  - has-part:: [[Claude Agent SDK]], [[Google ADK]], [[Strands Agents]], [[OpenAI Agents SDK]], [[Pydantic AI]], [[Mastra]], [[Composio]], [[SWE-agent]], [[Tool Registry]], [[Memory Store]], [[Agent Runtime]], [[Observability Stack]]
+  - requires:: [[Large Language Model]], [[Model Context Protocol]], [[Tool Use]], [[Function Calling]], [[Persistence Layer]], [[Context Window]], [[Agent Execution Sandboxes]], [[Tool Calling API]]
+  - enables:: [[Autonomous Coding]], [[Browser Automation]], [[Computer Use]], [[Workflow Automation]], [[Human-in-the-Loop]], [[Retrieval-Augmented Generation]], [[AI Safety]], [[Agentic AI]], [[Multi-Agent Orchestration Frameworks]]
+  - implements:: [[ReAct Pattern]], [[Plan-and-Execute Pattern]], [[A2A Protocol]], [[Agent Communication Protocol]], [[Structured Output]], [[Chain-of-Thought]], [[Agent-to-Agent Protocol]]
+  - depends-on:: [[Agent Harness]], [[Internal AI Harness]], [[External AI Harness]], [[Agent Execution Sandboxes]], [[Large Language Model]], [[Model Context Protocol]]
+  - supports:: [[Agent Evaluation Benchmarks]], [[Multi-Agent Orchestration Frameworks]], [[Observability Stack]], [[AI Safety]], [[AI Agent Payments]], [[Agentic AI]]
+  - uses:: [[Tool Calling API]], [[Structured Output]], [[Prompt Template]], [[Model Context Protocol]], [[Agent-to-Agent Protocol]], [[Function Calling]], [[Persistence Layer]]
+  - contrasts-with:: [[Multi-Agent Orchestration Frameworks]], [[LangGraph]], [[Agent Frameworks]]
+  - related-to:: [[Agentic AI]], [[Agent Execution Sandboxes]], [[Agent Evaluation Benchmarks]], [[AI Agent Payments]], [[Autonomous AI Agents]], [[Agent Orchestrator]]
+  - standardized-by:: [[Model Context Protocol]], [[A2A Protocol]], [[Agent Communication Protocol]], [[Linux Foundation]]
 
 - ### Content
   ## Compositional Relationships (Components)
@@ -89,6 +89,26 @@
         ObjectSomeValuesFrom(ai:reducesTo ai:AgentFrameworks))
       SubClassOf(ai:AgentDevelopmentSDKs
         ObjectSomeValuesFrom(ai:reducesTo ai:LLMOrchestration))
+      SubClassOf(ai:AgentDevelopmentSDKs
+        ObjectSomeValuesFrom(ai:reducesTo ai:AgentHarness))
+
+  ## Support Relationships
+      SubClassOf(ai:AgentDevelopmentSDKs
+        ObjectSomeValuesFrom(ai:supports ai:AgentEvaluationBenchmarks))
+      SubClassOf(ai:AgentDevelopmentSDKs
+        ObjectSomeValuesFrom(ai:supports ai:MultiAgentOrchestrationFrameworks))
+      SubClassOf(ai:AgentDevelopmentSDKs
+        ObjectSomeValuesFrom(ai:supports ai:ObservabilityStack))
+      SubClassOf(ai:AgentDevelopmentSDKs
+        ObjectSomeValuesFrom(ai:supports ai:AISafety))
+      SubClassOf(ai:AgentDevelopmentSDKs
+        ObjectSomeValuesFrom(ai:supports ai:AIAgentPayments))
+
+  ## Contrasting Relationships
+      SubClassOf(ai:AgentDevelopmentSDKs
+        ObjectSomeValuesFrom(ai:contrastsWith ai:MultiAgentOrchestrationFrameworks))
+      SubClassOf(ai:AgentDevelopmentSDKs
+        ObjectSomeValuesFrom(ai:contrastsWith ai:LangGraph))
 
   ## About
 
@@ -334,6 +354,77 @@
   26. TechPlained (2026). Claude Agent SDK: Build Custom AI Agents. https://www.techplained.com/claude-agent-sdk
   27. Wang, X. et al. (2025). The 2025 AI Agent Index: Documenting Technical and Safety Features of Deployed Agentic AI Systems. *arXiv 2602.17753*. https://arxiv.org/abs/2602.17753
   28. AWS Builder Center (2026). Strands Agents and AgentCore: Two Pieces of the Same Puzzle. https://builder.aws.com/content/3CJ46VRteYg1vg0FIqbvcQBrGt8/strands-agents-and-agentcore-two-pieces-of-the-same-puzzle
+
+  ## Protocol Integration Deep Dive
+
+  The two standardised protocols that underpin all major Agent Development SDKs — [[Model Context Protocol]] and [[A2A Protocol]] — deserve detailed examination because understanding their design and relationship illuminates the architectural choices each SDK makes.
+
+  ### [[Model Context Protocol]] (MCP) Architecture
+
+  MCP defines a client-server protocol where an MCP client (running inside the agent) connects to one or more MCP servers (running as separate processes or remote services) to discover and invoke tools. The protocol uses JSON-RPC 2.0 over stdio (for local subprocess servers), HTTP with Server-Sent Events (for remote servers), or WebSockets (for bidirectional streaming). The protocol lifecycle is:
+
+  **Server initialisation**
+  - Client connects to server via transport (stdio, HTTP, WebSocket)
+  - Client sends `initialize` request with protocol version and capabilities
+  - Server responds with its capabilities, protocol version, and server info
+  - Client sends `initialized` notification to complete handshake
+
+  **Tool discovery**
+  - Client sends `tools/list` request
+  - Server responds with array of tool definitions: each tool has a name, description (used by the model to understand when to invoke it), and JSON Schema input specification
+  - Client registers discovered tools with the model's function-calling schema translator
+
+  **Tool invocation**
+  - Model emits a tool-call with tool name and argument values matching the schema
+  - SDK's MCP client sends `tools/call` request to the appropriate server
+  - Server executes the tool and returns structured result (text, image, embedded resource, or error)
+  - SDK formats the result as a tool-result message and reinserts it into the conversation context
+
+  **Resource access (optional)**
+  - Servers can expose resources (files, database rows, API responses) that tools can read
+  - `resources/list` and `resources/read` requests enable agents to browse and read structured data without wrapping it in a tool call
+
+  MCP's key design decisions: the tool description string is the primary interface between tool authors and models, so good MCP server quality depends on clear, concise, example-rich descriptions that help the model decide when and how to use each tool. The JSON Schema input specification provides type safety and enables the model to reason about valid argument combinations. The transport-agnostic design enables both local development (stdio subprocess) and production deployment (remote HTTPS server) without SDK code changes.
+
+  ### [[A2A Protocol]] Architecture
+
+  A2A (Agent-to-Agent) extends MCP's tool-calling pattern to cover the case where the "tool" being called is itself another agent. The protocol introduces:
+
+  **Agent Cards**
+  - JSON manifest files describing an agent's capabilities, input/output schema, supported task types, communication address, and authentication requirements
+  - Published to an agent directory or discoverable via well-known URL
+  - Consumed by orchestrators to determine which agents to route specific tasks to
+  - Google ADK makes Agent Cards a first-class concept with tooling to generate and validate them
+
+  **Task protocol**
+  - Orchestrator sends task message to agent via A2A transport (HTTP/SSE or WebSocket)
+  - Task message includes: task description, context (conversation history, relevant documents), required output schema, and callback address for async results
+  - Agent accepts, processes, and returns structured result conforming to the requested schema
+  - Streaming updates (progress, intermediate results) supported via SSE
+
+  **Authentication and trust**
+  - A2A defines OAuth 2.0 and API key authentication patterns for agent-to-agent communication
+  - Enterprise deployments combine A2A authentication with service-mesh mTLS for additional security
+  - The Linux Foundation Agentic AI Foundation (LAAF) is developing trust-level specifications for A2A communication in regulated contexts
+
+  **Cross-SDK interoperability**
+  - An orchestrator built on [[Strands Agents]] can discover and call an agent built on [[Google ADK]] via A2A, as long as both correctly implement the A2A Agent Card and task protocol
+  - This is the key promise of standardised protocols: SDK competition on implementation quality, not lock-in via proprietary communication formats
+  - As of mid-2026, A2A interoperability between [[Strands Agents]], [[Google ADK]], and [[Claude Agent SDK]] is in production use at several enterprise deployments
+
+  ### MCP Statistics and Ecosystem Scale (Mid-2026)
+
+  The growth of the MCP ecosystem provides concrete evidence of the network effects that standardised protocols enable:
+
+  - Monthly SDK downloads: 97 million (March 2026), up from ~100,000 in November 2024 (970x growth in 16 months)
+  - Official MCP Registry: 9,652 latest server records as of May 24, 2026
+  - Active public MCP servers: over 10,000 (Anthropic December 2025 count); 17,468 indexed by Nerq in Q1 2026
+  - Enterprise adoption: 41% of surveyed software organisations with MCP servers in limited or broad production
+  - Remote MCP server growth: 4x since May 2025, indicating shift from experimentation to deployment
+  - Tool use distribution shift: action tools (MCP calls, file ops, API requests) grew from 27% to 65% of total tool uses (November 2024 to February 2026)
+  - AI-assisted server creation: 62% of new MCP servers created with AI assistance by February 2026 (up from 6% in January 2025), dominated by Claude Code
+
+  These numbers establish MCP as the fastest-adopted developer protocol in AI infrastructure history, faster than REST, GraphQL, or gRPC at equivalent adoption milestones. For [[Agent Development SDKs]], the implication is that any SDK without strong MCP integration is effectively locked out of the standard tool ecosystem — a structural constraint that ensures continued convergence on MCP as the tool-layer standard.
 
   ## SDK Feature Comparison Matrix (Mid-2026)
 

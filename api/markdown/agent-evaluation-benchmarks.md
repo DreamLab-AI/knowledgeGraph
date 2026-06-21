@@ -9,17 +9,17 @@
   - implemented-in-layer:: [[ApplicationLayer]]
 
 - ### Relationships
-  - is-subclass-of:: [[Agent Harness]], [[LLM Evaluation]]
-  - has-part:: [[SWE-bench]], [[WebArena]], [[GAIA Benchmark]], [[OSWorld]], [[AgentBench]], [[VitaBench]], [[METR HCAST]], [[TAU-bench]], [[Terminal-Bench]], [[inspect_ai]]
-  - requires:: [[Agent Execution Sandboxes]], [[Large Language Model]], [[Tool Use]], [[ReAct Pattern]], [[Foundation Models]]
-  - enables:: [[AI Safety]], [[Human-in-the-Loop]], [[Autonomous Coding]], [[Computer Use]], [[Browser Automation]]
-  - implements:: [[LLM Evaluation]], [[Reinforcement Learning]], [[Plan-and-Execute Pattern]]
-  - depends-on:: [[Agent Harness]], [[Internal AI Harness]], [[External AI Harness]]
-  - supports:: [[Agentic AI]], [[Multi-Agent Orchestration Frameworks]], [[Agent Development SDKs]], [[Agent Frameworks]]
-  - uses:: [[Model Context Protocol]], [[ReAct Pattern]], [[Agent Execution Sandboxes]], [[Chain-of-Thought]]
-  - contrasts-with:: [[Reward Hacking]]
-  - related-to:: [[Evaluation Harness]], [[Agent Development SDKs]], [[Multi-Agent Orchestration Frameworks]]
-  - standardized-by:: [[inspect_ai]], [[METR HCAST]]
+  - is-subclass-of:: [[Agent Harness]], [[LLM Evaluation]], [[Evaluation Harness]]
+  - has-part:: [[SWE-bench]], [[WebArena]], [[GAIA Benchmark]], [[OSWorld]], [[AgentBench]], [[VitaBench]], [[METR HCAST]], [[TAU-bench]], [[Terminal-Bench]], [[inspect_ai]], [[ARC-AGI]]
+  - requires:: [[Agent Execution Sandboxes]], [[Large Language Model]], [[Tool Use]], [[ReAct Pattern]], [[Foundation Models]], [[Agent Harness]], [[Chain-of-Thought]]
+  - enables:: [[AI Safety]], [[Human-in-the-Loop]], [[Autonomous Coding]], [[Computer Use]], [[Browser Automation]], [[Agentic AI]], [[Responsible Scaling Policy]]
+  - implements:: [[LLM Evaluation]], [[Reinforcement Learning]], [[Plan-and-Execute Pattern]], [[Functional Verification]], [[Safety Assessment]]
+  - depends-on:: [[Agent Harness]], [[Internal AI Harness]], [[External AI Harness]], [[Agent Execution Sandboxes]], [[Large Language Model]]
+  - supports:: [[Agentic AI]], [[Multi-Agent Orchestration Frameworks]], [[Agent Development SDKs]], [[Agent Frameworks]], [[AI Safety]], [[Regulatory Compliance]]
+  - uses:: [[Model Context Protocol]], [[ReAct Pattern]], [[Agent Execution Sandboxes]], [[Chain-of-Thought]], [[Reinforcement Learning]], [[Docker]]
+  - contrasts-with:: [[Reward Hacking]], [[Static NLP Benchmarks]], [[LLM Evaluation]]
+  - related-to:: [[Evaluation Harness]], [[Agent Development SDKs]], [[Multi-Agent Orchestration Frameworks]], [[AI Agent System]], [[Autonomous Agent]], [[Agent Frameworks]]
+  - standardized-by:: [[inspect_ai]], [[METR HCAST]], [[AI Safety Institute]]
 
 - ### Content
   ## Compositional Relationships (Components)
@@ -87,6 +87,28 @@
         ObjectSomeValuesFrom(ai:reducesTo ai:LLMEvaluation))
       SubClassOf(ai:AgentEvaluationBenchmarks
         ObjectSomeValuesFrom(ai:reducesTo ai:SoftwareEngineeringBenchmark))
+      SubClassOf(ai:AgentEvaluationBenchmarks
+        ObjectSomeValuesFrom(ai:reducesTo ai:TaskCompletionMetric))
+
+  ## Support Relationships
+      SubClassOf(ai:AgentEvaluationBenchmarks
+        ObjectSomeValuesFrom(ai:supports ai:AgenticAI))
+      SubClassOf(ai:AgentEvaluationBenchmarks
+        ObjectSomeValuesFrom(ai:supports ai:MultiAgentOrchestrationFrameworks))
+      SubClassOf(ai:AgentEvaluationBenchmarks
+        ObjectSomeValuesFrom(ai:supports ai:AgentDevelopmentSDKs))
+      SubClassOf(ai:AgentEvaluationBenchmarks
+        ObjectSomeValuesFrom(ai:supports ai:AgentFrameworks))
+      SubClassOf(ai:AgentEvaluationBenchmarks
+        ObjectSomeValuesFrom(ai:supports ai:ResponsibleScalingPolicy))
+      SubClassOf(ai:AgentEvaluationBenchmarks
+        ObjectSomeValuesFrom(ai:supports ai:RegulatoryConformityAssessment))
+
+  ## Contrasting Relationships
+      SubClassOf(ai:AgentEvaluationBenchmarks
+        ObjectSomeValuesFrom(ai:contrastsWith ai:RewardHacking))
+      SubClassOf(ai:AgentEvaluationBenchmarks
+        ObjectSomeValuesFrom(ai:contrastsWith ai:StaticNLPBenchmark))
 
   ## About
 
@@ -306,6 +328,35 @@
   - **Regulatory standardisation**: NIST AI RMF updates and EU AI Act implementing acts expected 2026 to 2027 are anticipated to mandate specific benchmark coverage for high-risk agentic deployments, creating a new class of compliance-driven evaluation requirements
   - **Economic and societal impact measurement**: moving beyond task success rates to measure the actual economic value delivered by agents in real deployments, providing a bridge between laboratory evaluation and business case assessment
 
+  ## Benchmark Saturation Dynamics and Evolution
+
+  The rapid capability improvement documented from 2024 to 2026 has forced the benchmark community to confront a structural challenge: benchmarks saturate. Once SOTA exceeds approximately 80-85% on a benchmark, the remaining tasks tend to be those where the evaluation mechanism itself is flawed (tests that pass even without fixing the bug, reference answers that accept multiple valid phrasings, tasks with ambiguous ground truth), rather than tasks that genuinely probe the next frontier of capability. This saturation dynamic creates a predictable lifecycle for each benchmark:
+
+  **Phase 1: Introduction and initial adoption (months 1-12 after publication)**
+  - Benchmark is published with SOTA typically in the 10-30% range
+  - Community validates the benchmark design; identifies and fixes scoring bugs
+  - Multiple teams independently replicate published baselines
+  - SOTA improves rapidly as teams apply better scaffolding and more capable base models
+
+  **Phase 2: Active competition and differentiation (months 12-30)**
+  - SOTA reaches 40-70% range; the benchmark effectively differentiates frontier models
+  - Multiple leaderboards emerge; independent evaluation organisations begin including it in assessment suites
+  - Benchmark design flaws become apparent at the tail: tasks where the scoring mechanism can be gamed, tasks with scoring ambiguity, tasks where contamination is detectable
+  - Original benchmark authors publish fixes, curated subsets, or verification protocols (SWE-bench → SWE-bench Verified)
+
+  **Phase 3: Approaching saturation (months 30-48)**
+  - SOTA reaches 75-85%
+  - Remaining gap is increasingly attributable to evaluation mechanism flaws rather than agent capability gaps
+  - Community begins planning next-generation benchmark; ARC-AGI-1 → ARC-AGI-2 → ARC-AGI-3 is the clearest example
+  - Benchmark remains useful for certifying model quality (any model scoring below 60% is clearly not frontier) but loses differentiating power at the top
+
+  **Phase 4: Retirement or supplement**
+  - New benchmark launched that probes the next capability frontier
+  - Old benchmark retained for historical comparison and baseline certification
+  - Community consensus shifts to new benchmark as the primary competitive signal
+
+  Understanding this lifecycle is important for interpreting leaderboard scores: a model that scores 87.6% on SWE-bench Verified in mid-2026 is not necessarily 87.6% "good" at software engineering in absolute terms — it means it performs well on the specific tasks and scoring mechanism of SWE-bench Verified, a benchmark that is approaching Phase 3 saturation and is likely to be supplemented or replaced within the next 12-18 months.
+
   ## Key Terminology
 
   - **Pass@k**: the probability that at least one of k independent agent rollouts on a task succeeds; used to separate capability from reliability in evaluation
@@ -411,6 +462,31 @@
   **Scaffold contamination**: the agent scaffold (prompt templates, few-shot examples, retry logic) is optimised specifically for the benchmark, inflating scores above what would be achieved with a general-purpose scaffold
   - This is the most difficult contamination form to detect or prevent, as it is always present to some degree
   - METR's approach: evaluate with a standardised scaffold to enable fair comparison; require detailed scaffold disclosure in submitted results
+
+  ## Benchmark Design Principles and Anti-Patterns
+
+  The agent evaluation benchmark community has accumulated substantial empirical knowledge about what makes a good benchmark and what design choices lead to inflated, misleading, or rapidly saturated results. The following principles represent the current consensus:
+
+  **Principle 1: Ground truth must be computationally verifiable without human judgment wherever possible**
+  Test-suite pass/fail (SWE-bench) and application state inspection (WebArena, OSWorld) are more reliable than LLM-judged correctness or human-rated quality. This is not because human judgment is inherently less valid but because automated verification enables (1) large-scale evaluation without prohibitive human annotation costs, (2) complete reproducibility across time and teams, and (3) resistance to adversarial prompting of the judge. The exception is rubric-based evaluation for qualities like policy adherence and communication style (TAU-bench, VitaBench) where no computable ground truth exists — but even here, the rubric should be designed to minimise inter-rater disagreement, and inter-rater agreement should be measured and published.
+
+  **Principle 2: Tasks must probe the intended capability, not surface-level correlates**
+  A common anti-pattern is designing tasks that are nominally about complex reasoning but can actually be solved by simple pattern matching against training data. HumanEval's saturation (>99% SOTA) is partly attributable to this: many of its function signatures, docstrings, and test cases appear verbatim or near-verbatim in code corpora that frontier models train on. SWE-bench was designed to be more resistant to this by using real GitHub issues whose exact resolution requires understanding of the specific codebase context, not just generic code completion. Benchmark designers should regularly audit their task set against current pretraining corpora to estimate contamination exposure.
+
+  **Principle 3: The task distribution must match the target deployment distribution**
+  Benchmarks optimised for a different task distribution than the deployment setting will produce misleading results. AgentBench's eight heterogeneous environments were designed specifically to test generalisation across diverse task types, revealing that models that perform well in one environment often fail in others. VitaBench was designed around three specific real-world service domains (food delivery, in-store consumption, online travel) rather than abstract academic tasks, precisely to ensure the task distribution reflects what service-interaction agents will actually face. Enterprise teams should construct internal benchmarks that sample from their actual task distribution rather than relying solely on public benchmarks.
+
+  **Principle 4: Evaluation must measure the target deployment configuration, not a purpose-optimised scaffold**
+  The scaffold specificity problem means that reported benchmark scores always reflect a specific (model + scaffold) pair, never the model alone. The honest practice is to report the scaffold configuration alongside the score and to test multiple scaffold configurations to quantify the scaffold's contribution to the score differential. METR addresses this by mandating a standardised reference scaffold for HCAST evaluations, enabling fair comparison across models while acknowledging that real deployments use custom scaffolds.
+
+  **Principle 5: Safety and capability evaluation must be integrated, not treated as orthogonal**
+  A model that achieves high scores on capability benchmarks but scores poorly on safety benchmarks (adversarial prompt resistance, policy adherence, refusal quality) is not ready for unrestricted deployment. The OWASP Agentic Application Top 10 evaluation suite, the METR sabotage evaluation (CTRL-ALT-DECEIT, arXiv 2511.09904), and the Apollo Research deceptive alignment evaluations are specifically designed to test safety properties that standard capability benchmarks do not probe. Responsible deployment requires passing both capability and safety evaluation thresholds, a principle now encoded in the responsible scaling policies of major frontier labs.
+
+  **Anti-pattern: Optimising scaffold specifically for a benchmark without disclosure**
+  The most common integrity failure in agent benchmarking is optimising the scaffold — prompt templates, tool descriptions, retry logic, context management — specifically for benchmark tasks while presenting the resulting score as a measure of general capability. This creates inflated leaderboard numbers that do not generalise to real deployments. The mitigation is transparency: publish the complete scaffold configuration with each submission, enable independent replication, and require evaluation organisers to run a standardised reference scaffold on submitted models to provide an apples-to-apples comparison.
+
+  **Anti-pattern: Single-attempt metrics for reliability-sensitive use cases**
+  Reporting only pass@1 for applications where the agent will be deployed with multiple attempt opportunities (automated software patching with human review, research hypothesis generation) understates capability. Reporting only pass@k for applications requiring single-attempt reliability (customer service, medical information retrieval) overstates reliability. The correct practice is to match the evaluation protocol to the deployment setting.
 
   ## Benchmark Performance Table (Mid-2026 SOTA)
 

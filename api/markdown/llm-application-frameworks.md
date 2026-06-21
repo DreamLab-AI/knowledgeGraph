@@ -10,16 +10,17 @@
 
 - ### Relationships
   - is-subclass-of:: [[Agent Harness]], [[Workflow Automation]]
-  - has-part:: [[Retrieval-Augmented Generation]], [[Tool Call Loop]], [[Agent Memory]], [[Agent Loop]], [[Prompt Engineering]]
-  - requires:: [[Large Language Models]], [[Foundation Models]], [[Function Calling]], [[Vector Database]], [[Context Window]]
-  - enables:: [[Agentic Workflow]], [[Agentic RAG]], [[Multi-Agent Systems]], [[Autonomous Coding]], [[Autonomous Agent]], [[GraphRAG]], [[Document Retrieval]]
-  - implements:: [[Model Context Protocol]], [[ReAct Pattern]], [[Chain of Thought]], [[Tool Use]]
-  - depends-on:: [[API Integration]], [[Foundation Models]], [[Function Calling]], [[Orchestration]]
-  - supports:: [[Human-in-the-Loop]], [[AI Safety]], [[Agent Evaluation Benchmarks]], [[Prompt Injection]] (detection)
-  - uses:: [[Chain of Thought]], [[Prompt Engineering]], [[Reasoning]], [[Dense Retrieval]], [[Hybrid Retrieval]], [[MCP Server]], [[Information Retrieval]]
-  - contrasts-with:: [[Internal AI Harness]], [[ComfyUI Workflows]]
-  - related-to:: [[Agent Development SDKs]], [[Multi-Agent Orchestration Frameworks]], [[Agent Execution Sandboxes]], [[Terminal Coding Agents]], [[Microservices Architecture]], [[SWE-bench]], [[Agentic RAG]]
+  - has-part:: [[Retrieval-Augmented Generation]], [[Tool Call Loop]], [[Agent Memory]], [[Agent Loop]], [[Prompt Engineering]], [[Information Retrieval]]
+  - requires:: [[Large Language Models]], [[Foundation Models]], [[Function Calling]], [[Vector Database]], [[Context Window]], [[API Integration]]
+  - enables:: [[Agentic Workflow]], [[Agentic RAG]], [[Multi-Agent Systems]], [[Autonomous Coding]], [[Autonomous Agent]], [[GraphRAG]], [[Document Retrieval]], [[Natural Language Processing]], [[Reasoning]]
+  - implements:: [[Model Context Protocol]], [[ReAct Pattern]], [[Chain of Thought]], [[Tool Use]], [[MCP Server]], [[Function Calling]]
+  - depends-on:: [[API Integration]], [[Foundation Models]], [[Function Calling]], [[Orchestration]], [[Vector Database]], [[Large Language Models]]
+  - supports:: [[Human-in-the-Loop]], [[AI Safety]], [[Agent Evaluation Benchmarks]], [[Prompt Injection]] (detection), [[SWE-bench]]
+  - uses:: [[Chain of Thought]], [[Prompt Engineering]], [[Reasoning]], [[Dense Retrieval]], [[Hybrid Retrieval]], [[MCP Server]], [[Information Retrieval]], [[Agent Memory]], [[Context Window]]
+  - contrasts-with:: [[Internal AI Harness]], [[ComfyUI Workflows]], [[Workflow Automation]]
+  - related-to:: [[Agent Development SDKs]], [[Multi-Agent Orchestration Frameworks]], [[Agent Execution Sandboxes]], [[Terminal Coding Agents]], [[Microservices Architecture]], [[SWE-bench]], [[Agentic RAG]], [[External AI Harness]], [[Agentic AI]], [[GraphRAG]]
   - standardized-by:: [[Model Context Protocol]], [[EU AI Act]]
+  - bridges-to:: [[Human-in-the-Loop]], [[AI Safety]], [[Prompt Injection]], [[Agent Execution Sandboxes]]
 
 - ### Content
   ## Compositional Relationships (Components)
@@ -162,6 +163,20 @@
 
   **Evaluation** — RAG pipeline quality is assessed on four metrics: faithfulness (does the response derive only from retrieved context?), answer relevance (does the response address the query?), context precision (are the retrieved chunks relevant to the query?), context recall (do the retrieved chunks contain the information needed to answer the query?). RAGAS (Es et al., 2023) implements all four metrics without requiring ground-truth labels, using the model itself as an evaluator — an approach that is both scalable and imperfect (model self-evaluation is biased toward the model's own outputs). Human evaluation remains the gold standard for high-stakes production systems.
 
+  ## Production Integration Patterns
+
+  LLM application frameworks integrate with surrounding enterprise infrastructure through several canonical patterns that have emerged from production deployment experience in 2024–2026:
+
+  **Framework-as-data-layer** — LlamaIndex or a similar retrieval-specialised framework serves as the data access layer for one or more orchestration frameworks. The data layer handles document ingestion, chunking, embedding, [[Vector Database]] indexing, retrieval, and reranking; the orchestration layer (LangGraph, Mastra, Microsoft Agent Framework) handles multi-step reasoning, [[Tool Use]], and state management. The interface between the two layers is a typed retrieval tool: the orchestration framework invokes the retrieval tool with a query and receives a list of ranked, scored documents. This separation of concerns (data management vs agent logic) enables independent evolution of retrieval strategies without affecting agent orchestration logic.
+
+  **Framework-as-MCP-server** — workflow builders (Langflow, n8n) expose their composed workflows as [[MCP Server]] endpoints, making them callable by higher-level orchestration agents. A Langflow workflow that retrieves information from a RAG index and summarises it becomes a callable tool for a LangGraph orchestrator agent. This pattern enables hierarchical composition: high-level strategy agents invoke mid-level tool agents (implemented as workflow MCP servers) that invoke low-level tool calls (API integrations, database queries). The composition hierarchy can be as deep as required without any single framework needing to implement all levels.
+
+  **Framework-plus-sandbox integration** — [[Agent Execution Sandboxes]] are integrated into framework tool registries through the [[Model Context Protocol]] gateway pattern, enabling the orchestration framework to invoke isolated code execution as a first-class tool alongside other tools (web search, database query, API call). LangGraph provides a native E2B integration module; Mastra integrates with Daytona via MCP; Claude's agent SDK integrates with [[VisionClaw Agentic Container]] sandboxes. This pattern ensures that framework-orchestrated agents can execute AI-generated code safely without the orchestration framework needing to implement sandbox management.
+
+  **Streaming and real-time integration** — production LLM application deployments frequently require streaming responses (delivering tokens to users as they are generated rather than buffering the complete response). LCEL's streaming-aware composition, LangGraph's streaming events API, and Mastra's streaming response handlers all support streaming propagation from the model inference layer through the framework composition layer to the client. Integration with message queue systems (Kafka, RabbitMQ, AWS SQS) enables asynchronous agentic pipelines where individual steps are decoupled by queues and can be scaled independently.
+
+  **Evaluation-in-production pattern** — rather than evaluating agent quality only in offline test suites, production deployments shadow a percentage of real production queries against reference configurations, compare results using automated RAGAS-style evaluation, and surface regressions to engineering teams through observability dashboards. LangSmith's evaluation tracing and Langfuse's production evaluation features support this pattern. The statistical challenge is that production query distributions differ from evaluation test suite distributions, so offline evaluation scores are systematically overestimates of production quality.
+
   ## Relationship to Adjacent Paradigms
 
   **Versus [[Agent Development SDKs]]** — agent development SDKs are model-vendor-specific libraries provided by model providers (Anthropic Claude Agent SDK, Google ADK, OpenAI Agents SDK) that offer native integration with their respective models, first-party tool integrations, and deployment infrastructure. LLM application frameworks are model-agnostic: they abstract over multiple model providers and prioritise portability and ecosystem breadth over deep native integration. The two categories are converging as vendor SDKs add multi-model support and frameworks add vendor-specific optimisations, but the distinction remains meaningful for teams with multi-cloud or multi-vendor strategies.
@@ -276,6 +291,31 @@
   **LCEL** — LangChain Expression Language; declarative pipeline composition operator (`|`) enabling synchronous, asynchronous, batch, and streaming execution of the same chain definition.
   **Handoff** — in the OpenAI Agents SDK, the mechanism for transferring control between agents while preserving conversational context; analogous to function-calling between specialist sub-agents.
   **MCP Tool** — a [[Tool Use]] capability exposed through the [[Model Context Protocol]] [[MCP Server]] interface; discoverable by any MCP-compatible framework through the standardised protocol.
+  **Embedding** — a numerical vector representation of text capturing semantic meaning in a high-dimensional space; the foundation of [[Dense Retrieval]] and [[Vector Database]] indexing in RAG pipelines.
+  **Chunk** — a segment of a document split at a semantically meaningful boundary (sentence, paragraph, section) and sized for retrieval relevance; the atomic unit of [[Retrieval-Augmented Generation]] indexing.
+  **Reranker** — a cross-encoder model that jointly scores query-chunk pairs for precision; used as a second-stage filter after initial [[Dense Retrieval]] or [[Hybrid Retrieval]] to improve context relevance.
+  **Guardrail** — a safety or policy enforcement layer within a framework deployment that validates model inputs or outputs against harm, hallucination, and policy-violation criteria before reaching downstream systems.
+  **LangSmith** — LangChain's production observability product; provides distributed tracing, evaluation pipelines, prompt version management, and production trace replay for LangGraph deployments; the most widely deployed LLM framework observability tool as of 2026.
+  **RAG Fusion** — a retrieval technique that issues multiple query variants, retrieves results for each, and fuses results using Reciprocal Rank Fusion (RRF); improves recall by expanding the query representation space beyond a single embedding.
+  **Parent-child chunking** — LlamaIndex's retrieval innovation storing large "parent" chunks for context and small "child" chunks for retrieval precision; retrieves the parent chunk when a child chunk matches, providing both precision and contextual completeness.
+  **Structured output** — a model response format (JSON, Pydantic model, TypeScript type) enforced by the framework at the output parsing layer, enabling downstream code to consume model outputs as typed data structures rather than unstructured text strings. Pydantic-AI and LangChain's structured output parsers implement this pattern.
+  **Context compression** — techniques for reducing the token volume of accumulated agent context (conversation history, tool outputs, retrieved documents) without losing task-critical information; includes LLMLingua-based compression, recursive summarisation, and selective context eviction. Essential for long-running [[Agentic Workflow]] pipelines that would otherwise exceed the model's [[Context Window]].
+  **Semantic caching** — caching of LLM responses keyed not by exact query string but by semantic similarity of the query to previously answered queries; implemented by GPTCache and LangChain's SemanticCache; can reduce token costs by 20–60% on query distributions with high semantic redundancy.
+  **Checkpoint** — in LangGraph, a saved snapshot of the complete agent state at a specific graph node; enables rollback to any prior state, [[Human-in-the-Loop]] interruption and resumption, and fault-tolerant long-horizon agent execution.
+
+  ## Evaluation and Benchmarking
+
+  Evaluating LLM application framework quality requires assessment across multiple dimensions that cannot be captured by any single benchmark. The following evaluation methodology reflects 2025–2026 production practice:
+
+  **RAG pipeline quality** — assessed using the RAGAS framework (Es et al., 2023) on a domain-representative evaluation dataset. The four RAGAS metrics (faithfulness, answer relevance, context precision, context recall) provide reference-free quality estimates that can be computed continuously in production. Teams running production RAG systems should maintain a "golden set" of 100–500 representative query/answer pairs with human-assessed ground truth for calibrating RAGAS scores and detecting evaluation metric drift as the model or framework configuration changes.
+
+  **Agentic task completion** — assessed using domain-specific task suites executed end-to-end against the full agent pipeline. General-purpose benchmarks ([[SWE-bench]] for coding agents, GAIA for general assistant tasks, τ-bench for policy-adherent multi-turn tasks) provide standardised comparison points. Production teams additionally maintain internal task suites drawn from real production failures and edge cases encountered in deployment — these "adversarial production suites" typically reveal 20–40% lower success rates than general-purpose benchmark scores.
+
+  **Latency and cost profiling** — [[Agent Evaluation Benchmarks]] should include end-to-end latency distributions (P50, P95, P99) and token cost per task, measured across the full agent pipeline rather than just model inference time. Tool call latency (retrieval, API calls, sandbox execution) frequently dominates total latency in multi-step agentic tasks. Cost optimisation experiments (model routing, caching, context compression) should be evaluated against latency-quality trade-off curves rather than single-metric optimisation.
+
+  **[[AI Safety]] and policy adherence** — evaluated using prompt injection test suites (Rebuff, AgentDojo scenarios), refusal rate on harmful request test suites (curated by safety teams), and policy adherence checks (does the agent follow business rules specified in the system prompt?). τ-bench's policy adherence evaluation is the most rigorous published benchmark for the latter. Production teams should red-team their framework-deployed agents with injection attempts targeting the specific tools and data sources in their deployment.
+
+  **Framework reliability** — assessed through chaos engineering experiments: how does the agent pipeline degrade when individual tools fail, when the [[Vector Database]] returns empty results, when model API rate limits are exceeded, or when the [[Agent Execution Sandboxes]] are unavailable? Graceful degradation (returning partial results with explicit uncertainty rather than crashing) is a key reliability property that is not captured by happy-path evaluation suites.
 
   ## Standards Context
 
@@ -290,6 +330,24 @@
   **NIST AI 600-1 (Generative AI Profile, 2024)** — the NIST Generative AI Profile identifies hallucination, harmful content generation, data provenance, and harmful actions as key risk categories for generative AI applications. LLM application frameworks are responsible for implementing the technical controls (citation extraction, content filtering, retrieval provenance tracking, tool call auditing) that enable applications to demonstrate compliance with NIST AI 600-1's recommended mitigations.
 
   **ISO/IEC JTC 1/SC 42** — the international AI standards committee is developing standards for AI system documentation, testing, bias measurement, and governance that will apply to LLM applications deployed through frameworks. ISO/IEC 42001 (AI Management System) and forthcoming standards on AI trustworthiness and AI system testing will shape how enterprises document, test, and audit their LLM application framework deployments.
+
+  ## Framework Selection Guide
+
+  Selecting an LLM application framework for a new production deployment involves trade-offs across team language ecosystem, application complexity, deployment target, and operational requirements. The following decision logic reflects 2026 production practice:
+
+  **For Python teams building complex stateful agents with strict audit requirements:** LangGraph is the production standard. Its directed state graph model with typed state schemas, conditional branching, checkpointing, and LangSmith observability provides the strongest production reliability and debuggability story. The 34.5M monthly PyPI download figure and Alice Labs production ranking (#1 for complex stateful workflows) validate the community consensus.
+
+  **For Python teams building RAG-heavy document pipelines:** LlamaIndex is the primary choice, complemented by LangGraph for orchestration. LlamaIndex's 35% retrieval accuracy improvement in 2025 and depth of RAG pipeline tooling (parent-child chunking, CRAG integration, reranking, RAGAS evaluation) make it the specialist leader for document-heavy applications.
+
+  **For TypeScript/JavaScript teams:** Mastra (v1.0 GA January 2026, 1.77M monthly NPM downloads) is the definitive choice. It provides TypeScript-first types for agent state, tools, and workflow steps, with first-class support for edge deployment targets (Cloudflare Workers, Vercel Edge Functions) and [[Model Context Protocol]] integration.
+
+  **For enterprises on Microsoft Azure with .NET or Python stacks:** Microsoft Agent Framework 1.0 (GA April 2026, merging Semantic Kernel and AutoGen) is the vendor-native choice, with native Azure Monitor observability, Entra ID authentication, and LTS API stability commitment. The 12,000+ production organisations and 1B+ monthly interactions validate enterprise production readiness.
+
+  **For non-engineering teams needing visual workflow authoring:** Dify for the richest visual interface with conditional branching and loop support; n8n for the widest integration catalogue (400+ native integrations) and strongest [[Workflow Automation]] heritage; Langflow for deployable-as-MCP-server workflow composition.
+
+  **For teams prioritising cost minimisation:** n8n's self-hosted option has no per-call fees; Agno and LlamaIndex have thin dependencies that minimise abstraction overhead on API token costs; direct API usage with manual tool calling is the minimum-overhead option for simple single-step applications.
+
+  **For multi-cloud or multi-model portability:** LangGraph (supports OpenAI, Anthropic, Google, AWS Bedrock, Azure, local models through LangChain model integrations) or Mastra (similar multi-provider support in TypeScript). Avoid deep vendor SDK dependence if multi-provider portability is a priority.
 
   ## Key Institutions and Ecosystem Actors
 
