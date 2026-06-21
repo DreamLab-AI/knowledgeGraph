@@ -74,5 +74,10 @@
       "label": "Object Detection"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    }
+  ]
 }

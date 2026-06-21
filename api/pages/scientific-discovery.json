@@ -55,6 +55,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
     },

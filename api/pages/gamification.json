@@ -85,5 +85,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "audience-engagement",
+      "label": "Audience Engagement"
+    }
+  ]
 }

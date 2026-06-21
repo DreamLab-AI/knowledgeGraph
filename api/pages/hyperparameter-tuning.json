@@ -136,8 +136,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
       "slug": "algorithmic-bias-and-variance",
       "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
+      "slug": "architecture",
+      "label": "Architecture"
     },
     {
       "slug": "deep-learning",

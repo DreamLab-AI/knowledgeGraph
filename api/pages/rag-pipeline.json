@@ -58,6 +58,10 @@
       "label": "Agent Frameworks"
     },
     {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "lang-chain",
       "label": "LangChain"
     }

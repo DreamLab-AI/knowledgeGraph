@@ -126,6 +126,7 @@ elevatedFrom:: [[Seals]]
       end
       Client->>Client: Validate updated JSON files
       Note over Client: End of processing
+  ```
 
 - ### Provenance
   - sources::

@@ -71,6 +71,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
     },

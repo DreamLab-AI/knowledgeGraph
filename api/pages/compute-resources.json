@@ -129,6 +129,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
     },

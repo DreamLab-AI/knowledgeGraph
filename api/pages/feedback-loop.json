@@ -658,6 +658,22 @@
   ],
   "backlinks": [
     {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
       "slug": "complex-systems",
       "label": "Complex Systems"
     },

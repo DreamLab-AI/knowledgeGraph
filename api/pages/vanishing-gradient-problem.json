@@ -94,6 +94,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
       "slug": "recurrent-neural-network",
       "label": "Recurrent Neural Network"
     },

@@ -122,7 +122,8 @@
   - [10G ethernet testing of Jetson AGX Orin Developer Kit
 		- Jetson & Embedded Systems / Jetson AGX Orin
 		- NVIDIA Developer Forums](https://forums.developer.nvidia.com/t/10g-ethernet-testing-of-jetson-agx-orin-developer-kit/227166)
-  - ```mermaid sequenceDiagram
+  - ```mermaid
+    sequenceDiagram
 	      participant Capture
 	      participant Ingest
 	      participant Segment
@@ -141,14 +142,15 @@
 	      Gaze_Discrimination->>Synthesis: NVLink
 	      Face_Processing->>Synthesis: NVLink
 	      Synthesis->>Output_Build: Combine Data
-	      Output_Build->>Streaming: 10G Fiber UDP ```
+	      Output_Build->>Streaming: 10G Fiber UDP
+	      ```
 	  - # Face Swap project (sub-project)
 	  - [[Face Swap]]
 	  - [[Segmentation and Identification]]
 	  - [ChatGPT
 	  - CodeHelper (openai.com)](https://chat.openai.com/g/g-YWd3Sg9X3-codehelper/c/4685d4fe-2ad7-475e-9a15-5fb9c4820990)
 	  - Make a mermaid Gantt chart for this project, based on the code, identifying and scoping work packages
-	  - ```import cv2
+	  - ```python
 	   import cv2
 	   import threading
 	   import queue
@@ -292,6 +294,7 @@
 	   # Example usage
 	   play_rtsp_stream('rtsp://example.com/stream', ['path_to_tensorrt_model_gpu1', 'path_to_tensorrt_model_gpu2'],
 	                    ['path_to_swapper_model_gpu1', 'path_to_swapper_model_gpu2'])
+	   ```
 
   - ## Summary
 		- ## Public Description - 🌟 Introducing KnoWhere's Attention Tracking Technology for revolutionizing creative spaces! This cutting-edge technology uses AI and computer vision to track visitor attention and emotion in real time, providing actionable insights for a more engaging exhibition experience. No wearables or intrusive cameras needed! 🚀 Join us in this creative industry revolution with KnoWhere! 🚀
@@ -306,7 +309,6 @@
   - ## Pitch Deck
   - ## Funding
   - ## Sequence Diagram
-	   ```
   - [iperov/DeepFaceLive: Real-time face swap for PC streaming or video calls (github.com)](https://github.com/iperov/DeepFaceLive)
   - ![image.png](../assets/image_1706624390895_0.png){:height 493, :width 1219}
   - ![image.png](../assets/image_1706626142618_0.png)

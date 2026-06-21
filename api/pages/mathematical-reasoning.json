@@ -121,6 +121,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
       "slug": "reasoning",
       "label": "Reasoning"
     }

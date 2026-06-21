@@ -470,6 +470,10 @@
       "label": "AI Search"
     },
     {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "asynchronous-video",
       "label": "Asynchronous Video"
     },

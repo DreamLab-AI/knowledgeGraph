@@ -134,6 +134,18 @@
   ],
   "backlinks": [
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
+    },
+    {
       "slug": "algorithmic-layer",
       "label": "Algorithmic Layer"
     },

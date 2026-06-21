@@ -4,20 +4,58 @@
   "slug": "3-d-generation",
   "public": true,
   "classIri": "urn:ngm:class:3-d-generation",
-  "domain": "ai",
-  "definition": "3D Generation refers to the automated or semi-automated creation of three-dimensional geometry, appearance, and scene representations using machine learning models, procedural algorithms, or hybrid approaches. Techniques include text-to-3D, image-to-3D, and scene-level generation via neural radiance fields, Gaussian splatting, diffusion models, and large multi-modal networks. The field aims to dramatically reduce the time and skill threshold required to produce photorealistic or stylised 3D content.",
+  "domain": "artificial-intelligence",
+  "definition": "3D Generation refers to the automated or semi-automated creation of three-dimensional geometry, appearance, and scene representations using machine learning models, procedural algorithms, or hybrid approaches. Techniques include text-to-3D, image-to-3D, and scene-level generation via neural radiance fields, Gaussian splatting, diffusion models, and large multi-modal networks. The field aims to dramatically reduce the time and skill threshold required to produce photorealistic or stylised 3D content for gaming, film, spatial computing, e-commerce, digital twins, and robotics simulation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:3-d-content-generation",
       "label": "3D Content Generation"
+    },
+    {
+      "id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.88,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:text-to-3-d",
+        "label": "Text-to-3D"
+      },
+      {
+        "id": "urn:ngm:class:neural-3-d-generation",
+        "label": "Neural 3D Generation"
+      },
+      {
+        "id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:mesh-generation",
+        "label": "Mesh Generation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:objaverse",
+        "label": "Objaverse"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:3-d-content-creation",
@@ -30,6 +68,14 @@
       {
         "id": "urn:ngm:class:game-asset-generation",
         "label": "Game Asset Generation"
+      },
+      {
+        "id": "urn:ngm:class:scene-generation",
+        "label": "Scene Generation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "dependsOn": [],
@@ -48,6 +94,22 @@
       {
         "id": "urn:ngm:class:gaussian-splatting",
         "label": "Gaussian Splatting"
+      },
+      {
+        "id": "urn:ngm:class:score-distillation-sampling",
+        "label": "Score Distillation Sampling"
+      },
+      {
+        "id": "urn:ngm:class:implicit-neural-representation",
+        "label": "Implicit Neural Representation"
+      },
+      {
+        "id": "urn:ngm:class:triplane",
+        "label": "Triplane"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
       }
     ],
     "supports": [],
@@ -55,20 +117,213 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:text-to-3-d",
-        "label": "Text-to-3D"
-      },
-      {
-        "id": "urn:ngm:class:neural-3-d-generation",
-        "label": "Neural 3D Generation"
-      },
-      {
         "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "ne-rf",
+      "label": "NeRF"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "text-to-3-d",
+      "label": "Text-to-3D"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "3-d-content-creation",
+      "label": "3D Content Creation"
+    },
+    {
+      "slug": "digital-twin-generation",
+      "label": "Digital Twin Generation"
+    },
+    {
+      "slug": "game-asset-generation",
+      "label": "Game Asset Generation"
+    },
+    {
+      "slug": "score-distillation-sampling",
+      "label": "Score Distillation Sampling"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "implicit-neural-representation",
+      "label": "Implicit Neural Representation"
+    },
+    {
+      "slug": "point-cloud",
+      "label": "Point Cloud"
+    },
+    {
+      "slug": "mesh-generation",
+      "label": "Mesh Generation"
+    },
+    {
+      "slug": "novel-view-synthesis",
+      "label": "Novel View Synthesis"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "latent-diffusion-model",
+      "label": "Latent Diffusion Model"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "objaverse",
+      "label": "Objaverse"
+    },
+    {
+      "slug": "instant-ngp",
+      "label": "Instant-NGP"
+    },
+    {
+      "slug": "triplane",
+      "label": "Triplane"
+    },
+    {
+      "slug": "signed-distance-function",
+      "label": "Signed Distance Function"
+    },
+    {
+      "slug": "occupancy-network",
+      "label": "Occupancy Network"
+    },
+    {
+      "slug": "texture-synthesis",
+      "label": "Texture Synthesis"
+    },
+    {
+      "slug": "scene-generation",
+      "label": "Scene Generation"
+    },
+    {
+      "slug": "3-d-content-generation",
+      "label": "3D Content Generation"
+    },
+    {
+      "slug": "differentiable-rendering",
+      "label": "Differentiable Rendering"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-Commerce"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    }
+  ],
   "backlinks": [
     {
       "slug": "comfy-ui-client",

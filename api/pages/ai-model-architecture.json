@@ -87,8 +87,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
       "slug": "ai-video",
       "label": "AI Video"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
     },
     {
       "slug": "comfy-ui-client",

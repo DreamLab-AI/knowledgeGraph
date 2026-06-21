@@ -17,7 +17,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.88,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -32,6 +32,14 @@
       {
         "id": "urn:ngm:class:transparency-notice",
         "label": "Transparency Notice"
+      },
+      {
+        "id": "urn:ngm:class:digital-watermarking",
+        "label": "Digital Watermarking"
+      },
+      {
+        "id": "urn:ngm:class:content-labeling-metadata",
+        "label": "Content Labeling Metadata"
       }
     ],
     "requires": [
@@ -46,6 +54,10 @@
       {
         "id": "urn:ngm:class:provenance-tracking",
         "label": "Provenance Tracking"
+      },
+      {
+        "id": "urn:ngm:class:c2-pa-standard",
+        "label": "C2PA Standard"
       }
     ],
     "enables": [
@@ -64,9 +76,26 @@
       {
         "id": "urn:ngm:class:user-awareness",
         "label": "User Awareness"
+      },
+      {
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -79,7 +108,20 @@
         "label": "Ai Transparency Framework"
       }
     ],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:deepfakes",
+        "label": "Deepfakes"
+      },
+      {
+        "id": "urn:ngm:class:misinformation",
+        "label": "Misinformation"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -101,6 +143,34 @@
     {
       "slug": "trust-building",
       "label": "Trust Building"
+    },
+    {
+      "slug": "digital-watermarking",
+      "label": "Digital Watermarking"
+    },
+    {
+      "slug": "steganographic-marking",
+      "label": "Steganographic Marking"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
+    },
+    {
+      "slug": "synthetic-media-policy",
+      "label": "Synthetic Media Policy"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "online-safety-act",
+      "label": "Online Safety Act"
     },
     {
       "slug": "ai-agent-system",
@@ -153,6 +223,62 @@
     {
       "slug": "user-awareness",
       "label": "User Awareness"
+    },
+    {
+      "slug": "deepfake-detection",
+      "label": "Deepfake Detection"
+    },
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "digital-rights-management",
+      "label": "Digital Rights Management"
+    },
+    {
+      "slug": "misinformation",
+      "label": "Misinformation"
+    },
+    {
+      "slug": "blockchain-provenance",
+      "label": "Blockchain Provenance"
+    },
+    {
+      "slug": "watermarking-service",
+      "label": "Watermarking Service"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "algorithmic-transparency",
+      "label": "Algorithmic Transparency"
+    },
+    {
+      "slug": "documentation-standards",
+      "label": "Documentation Standards"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
     }
   ],
   "backlinks": []

@@ -126,6 +126,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
       "slug": "regulatory-compliance",
       "label": "Regulatory Compliance"
     }

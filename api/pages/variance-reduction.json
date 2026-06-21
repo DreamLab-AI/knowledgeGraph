@@ -88,6 +88,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
       "slug": "active-learning",
       "label": "Active Learning"
     }

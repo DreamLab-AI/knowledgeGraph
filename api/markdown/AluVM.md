@@ -29,7 +29,7 @@ public:: true
       {"@id": "urn:ngm:class:rgb-protocol", "label": "RGB Protocol"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script", "label": "Bitcoin Script"},
+      {"@id": "urn:ngm:class:bitcoin-script", "label": "Bitcoin Script"},
       {"@id": "urn:ngm:class:taproot", "label": "Taproot"}
     ],
     "relatedTo": [

@@ -151,6 +151,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
       "slug": "language-modeling",
       "label": "Language Modeling"
     },

@@ -96,6 +96,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
       "slug": "tc-0002-collaborative-document-editing",
       "label": "tc 0002 collaborative document editing"
     }

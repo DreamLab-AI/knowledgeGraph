@@ -145,6 +145,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
       "slug": "chatbots",
       "label": "Chatbots"
     },

@@ -119,6 +119,22 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
     },

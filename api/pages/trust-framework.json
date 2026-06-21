@@ -538,6 +538,18 @@
   ],
   "backlinks": [
     {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "agent2-agent-protocol-google-2025",
+      "label": "Agent2Agent Protocol (Google 2025)"
+    },
+    {
       "slug": "data-provenance",
       "label": "Data Provenance"
     },

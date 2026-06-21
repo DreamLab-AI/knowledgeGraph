@@ -71,6 +71,10 @@
   ],
   "backlinks": [
     {
+      "slug": "accessibility-tree",
+      "label": "Accessibility Tree"
+    },
+    {
       "slug": "accessibility",
       "label": "Accessibility"
     },

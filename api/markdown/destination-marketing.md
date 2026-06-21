@@ -1,8 +1,6 @@
 - ### Definition
   - The strategic promotion of physical or virtual locations using immersive technologies, AR/VR experiences, and digital twin representations to attract visitors, investors, and residents by showcasing destinations through interactive 3D visualizations and metaverse presence.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DestinationMarketing
   - owl-role:: Concept

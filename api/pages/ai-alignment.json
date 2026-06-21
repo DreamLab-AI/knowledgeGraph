@@ -138,6 +138,34 @@
   ],
   "backlinks": [
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
       "slug": "ai-risks",
       "label": "AI Risks"
     },
@@ -146,12 +174,48 @@
       "label": "AI Safety Institute"
     },
     {
+      "slug": "ai-safety-research",
+      "label": "ai safety research"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
     },
     {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
+    },
+    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
     },
     {
       "slug": "bias-in-large-language-models",

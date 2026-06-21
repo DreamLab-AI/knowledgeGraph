@@ -1,0 +1,2 @@
+- ### Definition
+  - Electronic data logically associated with a document to authenticate the signatory's intent, ranging from simple typed names to cryptographically assured qualified digital signatures with legal standing under frameworks like eIDAS.

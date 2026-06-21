@@ -133,6 +133,10 @@
       "label": "Agents"
     },
     {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
+    },
+    {
       "slug": "prompt-engineering",
       "label": "Prompt Engineering"
     },

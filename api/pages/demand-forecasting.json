@@ -107,6 +107,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
       "slug": "energy-and-power",
       "label": "Energy and Power"
     },

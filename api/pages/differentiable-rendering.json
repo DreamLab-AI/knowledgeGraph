@@ -122,6 +122,14 @@
       "label": "3D Gaussian Splatting"
     },
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
       "slug": "gaussian-splatting",
       "label": "Gaussian Splatting"
     },

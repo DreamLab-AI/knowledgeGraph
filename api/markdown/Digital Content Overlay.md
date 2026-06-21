@@ -183,8 +183,6 @@ public:: true
 - ### Definition
   - The real-time integration and superimposition of digital information, graphics, 3D models, and interactive elements onto a user's view of the physical world through augmented reality displays, achieving a blended experience that enriches perception of reality.
 
-bridges-to:: [[Sensor Input]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalContentOverlay
   - owl-role:: Concept
@@ -194,6 +192,7 @@ bridges-to:: [[Sensor Input]]
   - is-subclass-of:: [[Augmented Reality]]
   - requires:: [[Camera Systems]], [[SLAM Technology]], [[Display Hardware]]
   - enables:: [[Information Display]], [[Spatial Annotation]], [[Interactive Guidance]]
+  - bridges-to:: [[Sensor Input]]
 
 - ### Content
 
@@ -208,10 +207,10 @@ bridges-to:: [[Sensor Input]]
 		- Computer vision for environment understanding
 		- Depth sensing and occlusion handling
 		- Real-time rendering engines
-  - **2024 Hardware**:
-		- Apple Vision Pro spatial computing headset
-		- Meta Orion AR glasses prototype
-		- Smartphone AR with 81% UK user penetration
+  - **Current Hardware (as of 2026)**:
+		- Apple Vision Pro spatial computing headset (repositioned for enterprise after weak consumer demand; production scaled back in late 2025)
+		- Meta Orion AR glasses (developer programme expanding in 2026; consumer product "Artemis" targeting 2027 release)
+		- Smartphone AR remains the dominant delivery mechanism given mass smartphone penetration
   - **Performance Metrics**: 25% reduction in product returns for AR retail, 20% increase in conversion rates
   - ## Applications
   - Retail virtual try-on experiences

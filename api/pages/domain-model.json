@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
       "slug": "data-layer",
       "label": "Data Layer"
     },

@@ -104,6 +104,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
       "slug": "ai-generated-content-disclosure",
       "label": "AI-Generated Content Disclosure"
     }

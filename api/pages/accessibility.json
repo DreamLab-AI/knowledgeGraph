@@ -562,12 +562,24 @@
       "label": "AI User"
     },
     {
+      "slug": "accessibility-tree",
+      "label": "Accessibility Tree"
+    },
+    {
       "slug": "adoption-of-convergent-technologies",
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "assistive-technology",
       "label": "Assistive Technology"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
     },
     {
       "slug": "brain-computer-interfaces",

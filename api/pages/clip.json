@@ -136,12 +136,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
       "slug": "ai-upscaling-and-super-resolution",
       "label": "AI Upscaling and Super-Resolution"
     },
     {
       "slug": "ai-video",
       "label": "AI Video"
+    },
+    {
+      "slug": "automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
     },
     {
       "slug": "comfy-ui-workflows",

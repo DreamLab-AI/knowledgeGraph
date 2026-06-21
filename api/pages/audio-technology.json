@@ -69,6 +69,14 @@
   ],
   "backlinks": [
     {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
       "slug": "immersive-audio-system",
       "label": "Immersive Audio System"
     },

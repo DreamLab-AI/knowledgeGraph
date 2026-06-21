@@ -144,6 +144,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
       "slug": "ccpa",
       "label": "CCPA"
     },

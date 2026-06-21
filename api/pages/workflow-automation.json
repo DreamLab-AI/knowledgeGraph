@@ -137,12 +137,40 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
     },
     {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
     },
     {
       "slug": "business-process-automation",

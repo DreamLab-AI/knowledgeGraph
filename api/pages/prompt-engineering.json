@@ -605,8 +605,24 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
       "slug": "ai-diagram-tools",
       "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
     },
     {
       "slug": "ai-search",
@@ -617,8 +633,32 @@
       "label": "AI Upscaling and Super-Resolution"
     },
     {
+      "slug": "automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
     },
     {
       "slug": "cli-multi-agent-systems",

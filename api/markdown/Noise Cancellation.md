@@ -24,7 +24,7 @@ public:: true
   "definition": "Noise cancellation is the process of reducing or eliminating unwanted audio signals from a primary audio stream using signal processing techniques. Active noise cancellation generates an anti-phase signal to destructively interfere with the noise, while passive methods use physical barriers. The technique is applied in audio hardware, telecommunications, and AI-driven speech enhancement systems to improve clarity and intelligibility.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai", "label": "Artificial Intelligence"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:signal-processing", "label": "Signal Processing"},

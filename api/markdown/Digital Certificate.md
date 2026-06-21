@@ -296,8 +296,6 @@ alias:: DigitalCertificate
 - ### Definition
   - A cryptographic credential issued by a Certificate Authority that validates the identity of entities, authenticates users, and secures transactions within virtual environments, metaverse platforms, and blockchain networks through public key infrastructure and verifiable attestations.
 
-bridges-to:: [[DID Nostr Identity]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalCertificate
   - owl-role:: Concept
@@ -307,6 +305,7 @@ bridges-to:: [[DID Nostr Identity]]
   - is-subclass-of:: [[Digital Security]]
   - requires:: [[Public Key Infrastructure]], [[Certificate Authority]], [[Cryptographic Keys]]
   - enables:: [[Identity Verification]], [[Secure Communication]], [[Trust Establishment]]
+  - bridges-to:: [[DID Nostr Identity]]
 
 - ### Content
 
@@ -321,7 +320,7 @@ bridges-to:: [[DID Nostr Identity]]
 		- Cross-platform user authentication
 		- NFT provenance and ownership verification
 		- Secure avatar identity across virtual worlds
-  - **2024 Developments**:
+  - **Recent Developments**:
 		- Blockchain-based certificate authorities for decentralized trust
 		- Mutual authentication frameworks for metaverse users
 		- Professional certifications for metaverse expertise emerging

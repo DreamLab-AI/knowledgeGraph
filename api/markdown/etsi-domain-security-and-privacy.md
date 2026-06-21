@@ -5,30 +5,12 @@
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - **hasPart**: [[Post-Quantum Cryptography]], [[Privacy Impact Assessment]], [[Threat Surface Map]], [[Security Layer]]
-  - **requires**: [[Zero-Trust Architecture (ZTA)]], [[Privacy-Enhancing Computation (PEC)]]
-  - **relatedTo**: [[ETSI Domain Identity and Trust]], [[Digital Evidence Chain of Custody]]
+  - has-part:: [[Post-Quantum Cryptography]], [[Privacy Impact Assessment]], [[Threat Surface Map]], [[Security Layer]]
+  - requires:: [[Zero-Trust Architecture (ZTA)]], [[Privacy-Enhancing Computation (PEC)]]
+  - related-to:: [[ETSI Domain Identity and Trust]], [[Digital Evidence Chain of Custody]]
 - ### Content
   - The ETSI Security and Privacy domain protects metaverse ecosystems through comprehensive security controls, cryptographic mechanisms, access governance, and privacy safeguards ensuring secure, trustworthy user experiences across distributed virtual environments.
-  - ### Original Content
-		- ```
-  # ETSI Domain: Security & Privacy
-		  ## Properties
-		  ## Terms in this Domain
-		  - [[Cross-Border Data Transfer Rule]]
-		  - [[Digital Evidence Chain of Custody]]
-		  - [[Metaverse Psychology Profile]]
-		  - [[Post-Quantum Cryptography]]
-		  - [[Privacy Impact Assessment (PIA)]]
-		  - [[Privacy-Enhancing Computation (PEC)]]
-		  - [[Security Layer]]
-		  - [[Threat Surface Map]]
-		  - [[Token Custody Service]]
-		  - [[Zero-Trust Architecture (ZTA)]]
-		  ## Query All Terms
-		  ```
-  # ETSI Domain Security & Privacy: Updated Ontology Entry
-  ## Academic Context
+  - #### Academic Context
   - ETSI's approach to domain security and privacy represents a comprehensive framework addressing interconnected digital ecosystems
   - Encompasses telecommunications, Internet of Things (IoT), digital twins, and metaverse environments[1][4]
   - Recognises the sociotechnical complexity inherent in immersive and distributed systems
@@ -36,7 +18,7 @@
   - The field has matured significantly, moving beyond isolated security domains towards holistic ecosystem protection
   - Service-Based Architecture (SBA) security now focuses on secure communication between Network Functions in 5G Core Networks[1]
   - Recognition that security and privacy are intertwined rather than separable concerns
-  ## Current Landscape (2025)
+  - #### Current Landscape (2025)
   - Industry adoption and implementations
   - ETSI standardisation efforts span multiple sectors: telecommunications, smart cities, smart factories, and connected autonomous mobility[4]
   - The term "citiverse" has emerged to describe metaverse applications for urban environments
@@ -49,7 +31,7 @@
   - ITU-T Question 6/17 addresses security for telecommunications, IoT, digital twins, and metaverse services, with 27 active recommendations (X.1101 through X.1362 as of September 2024)[4]
   - ETSI GR PDL 030 V1.1.1 (May 2025) provides detailed guidance on security domains in 3GPP 5G networks[1]
   - ETSI GR MEC-DEC 050 v4.0.4 (October 2025) establishes integration frameworks for edge and IoT deployments[6]
-  ## Research & Literature
+  - #### Research & Literature
   - Key academic papers and sources
   - Rahartomo, A., Merino, L., & Ghafari, M. (2024). "Metaverse Security and Privacy Research: A Systematic Review." *arXiv preprint arXiv:2507.14985v1*. Systematic analysis of 114 papers (2013–2024) revealing sharp research acceleration in the past five years, with authentication and unobservability as predominant focus areas[3]
   - ETSI GR PDL 030 V1.1.1 (2025-05). *Service-Based Architecture (SBA) Domain Security*. European Telecommunications Standards Institute. Addresses secure communication between Network Functions in 5G Core Networks[1]
@@ -58,7 +40,7 @@
   - Quantum-resistant cryptography integration (MLKEM-ECIES protocols for Connected, Cooperative and Automated Mobility)[5]
   - Federated learning support within MEC and oneM2M frameworks[6]
   - Interdisciplinary approaches bridging technical security with human factors and accessibility considerations[3]
-  ## UK Context
+  - #### UK Context
   - British contributions and implementations
   - ETSI maintains significant standardisation influence through UK-based organisations participating in telecommunications and IoT security working groups
   - The Metaverse Standards Forum's Network Requirements and Capabilities Working Group (producing technical reports on network compute requirements for metaverse services) includes UK academic and industry participation[2]
@@ -67,7 +49,7 @@
   - Sheffield's advanced manufacturing sector represents a natural application domain for digital twin security frameworks, particularly relevant to ETSI's industrial digital twin use cases[6]
   - Regional case studies
   - UK participation in ETSI working groups ensures alignment with North England's digital infrastructure investments, though dedicated regional case studies in security and privacy documentation remain limited as of November 2025
-  ## Future Directions
+  - #### Future Directions
   - Emerging trends and developments
   - Comprehensive security solutions for digital twin and metaverse applications are becoming critical for innovation acceleration[4]
   - Integration of edge computing, cloud infrastructure, and AI-driven security mechanisms represents the next frontier
@@ -80,14 +62,14 @@
   - Formal validation and proof-of-concept implementations for hybrid quantum-resistant protocols
   - Large-scale field testing and pilot projects for ecosystem adoption
   - Interdisciplinary research integrating cybersecurity, human factors, and sociotechnical systems design
-  ## References
+  - #### References
   1. ETSI (2025-05). *ETSI GR PDL 030 V1.1.1: Service-Based Architecture (SBA) Domain Security*. European Telecommunications Standards Institute.
   2. Metaverse Standards Forum (2025). *Domain Working Group Charter Version 2.0: Network Requirements and Capabilities*. Available at: portal.metaverse-standards.org
   3. Rahartomo, A., Merino, L., & Ghafari, M. (2024). Metaverse Security and Privacy Research: A Systematic Review. *arXiv preprint arXiv:2507.14985v1*.
   4. ITU-T (2024-09). *Question 6/17 – Security for telecommunication services, Internet of Things (IoT), digital twin, and metaverse*. International Telecommunication Union, Study Group 17.
   5. ETSI (2025-10). MLKEM-ECIES Hybrid Key Exchange Protocol for Connected, Cooperative and Automated Mobility. Presented at ETSI Security Conference 2025, Sophia Antipolis, France, 6–9 October 2025.
   6. ETSI (2025-10). *ETSI GR MEC-DEC 050 v4.0.4: Multi-access Edge Computing and oneM2M Integration Framework*. European Telecommunications Standards Institute.
-  ## Metadata
+  - #### Metadata
   - **Last Updated**: 2025-11-11
   - **Review Status**: Comprehensive editorial review
   - **Verification**: Academic sources verified

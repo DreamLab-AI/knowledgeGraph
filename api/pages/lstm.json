@@ -125,6 +125,18 @@
   ],
   "backlinks": [
     {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
       "slug": "predictive-maintenance",
       "label": "Predictive Maintenance"
     },

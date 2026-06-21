@@ -190,6 +190,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
       "slug": "computer-vision",
       "label": "Computer Vision"
     },

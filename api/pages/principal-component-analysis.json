@@ -83,6 +83,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
       "slug": "linear-algebra",
       "label": "Linear Algebra"
     }

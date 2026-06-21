@@ -105,6 +105,10 @@
   ],
   "backlinks": [
     {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     }

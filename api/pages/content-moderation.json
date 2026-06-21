@@ -165,6 +165,10 @@
       "label": "AI companions"
     },
     {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
       "slug": "autonomous-agent",
       "label": "Autonomous Agent"
     },

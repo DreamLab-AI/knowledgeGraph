@@ -217,6 +217,14 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "ai safety research"
+    },
+    {
       "slug": "aiethics",
       "label": "AIEthics"
     },

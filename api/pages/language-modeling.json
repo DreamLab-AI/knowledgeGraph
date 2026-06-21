@@ -216,6 +216,10 @@
   ],
   "backlinks": [
     {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
+    },
+    {
       "slug": "recurrent-neural-network",
       "label": "Recurrent Neural Network"
     },

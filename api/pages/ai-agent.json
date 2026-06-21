@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.89,
   "maturity": "growing",
   "relationships": {
     "hasPart": [],
@@ -141,12 +141,256 @@
     {
       "slug": "autonomous-agent",
       "label": "Autonomous Agent"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "re-act-pattern",
+      "label": "ReAct Pattern"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "memory-management",
+      "label": "Memory Management"
+    },
+    {
+      "slug": "reasoning-engine",
+      "label": "Reasoning Engine"
+    },
+    {
+      "slug": "task-automation",
+      "label": "Task Automation"
+    },
+    {
+      "slug": "workflow-orchestration",
+      "label": "Workflow Orchestration"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "belief-desire-intention",
+      "label": "Belief-Desire-Intention"
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "perception",
+      "label": "Perception"
+    },
+    {
+      "slug": "sandboxing",
+      "label": "Sandboxing"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "reflexion-pattern",
+      "label": "Reflexion Pattern"
+    },
+    {
+      "slug": "tree-of-thoughts",
+      "label": "Tree of Thoughts"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based Systems"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "agent-loop",
+      "label": "Agent Loop"
+    },
+    {
+      "slug": "tool-registry",
+      "label": "Tool Registry"
+    },
+    {
+      "slug": "orchestration",
+      "label": "Orchestration"
+    },
+    {
+      "slug": "ai-application",
+      "label": "AI Application"
+    },
+    {
+      "slug": "yao-et-al-2023-re-act",
+      "label": "Yao et al 2023 ReAct"
+    },
+    {
+      "slug": "shinn-et-al-2023-reflexion",
+      "label": "Shinn et al 2023 Reflexion"
+    },
+    {
+      "slug": "jimenez-et-al-2024-swe-bench",
+      "label": "Jimenez et al 2024 SWE-bench"
+    },
+    {
+      "slug": "wooldridge-jennings-1995-intelligent-agents",
+      "label": "Wooldridge & Jennings 1995 Intelligent Agents"
+    },
+    {
+      "slug": "russell-norvig-aima",
+      "label": "Russell & Norvig AIMA"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
+      "slug": "software-engineering-automation",
+      "label": "Software Engineering Automation"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "computer-use",
+      "label": "Computer Use"
+    },
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "decentralised-autonomous-organisations",
+      "label": "Decentralised Autonomous Organisations"
+    },
+    {
+      "slug": "multi-agent-reinforcement-learning",
+      "label": "Multi-Agent Reinforcement Learning"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents"
+    },
+    {
+      "slug": "ai-technique",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "ai-research-area",
+      "label": "ComputationAndIntelligenceDomain"
     }
   ],
   "backlinks": [
     {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
       "slug": "agent-memory",
       "label": "Agent Memory"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
     },
     {
       "slug": "auto-gpt",

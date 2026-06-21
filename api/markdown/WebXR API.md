@@ -114,7 +114,7 @@ public:: true
 
 
 - ### Definition
-  - A W3C web standard providing browser-native interfaces for rendering stereoscopic 3D content and handling spatial input from XR headsets and controllers, enabling AR/VR experiences without native application installation. WebXR supersedes the earlier WebVR specification and is implemented across Chromium-based browsers and Firefox.
+  - A W3C web standard providing browser-native interfaces for rendering stereoscopic 3D content and handling spatial input from XR headsets and controllers, enabling AR/VR experiences without native application installation. WebXR supersedes the earlier WebVR specification and is implemented in Chromium-based browsers (Chrome 79+, Edge 79+, Samsung Internet 12+), the Meta Quest Browser, and Safari on visionOS 2.0; Firefox and iOS Safari do not support it as of 2026, though WebXR is a focus area of the Interop 2026 initiative targeting broader cross-browser alignment.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:WebXRAPI
@@ -129,23 +129,6 @@ public:: true
 
 - ### Content
   - web interface enabling rendering and input for AR/VR experiences in browsers.
-  - ### Original Content
-		- ```
-  # WebXR API
-
-		  ## Core Properties
-
-		  ## Classification
-
-		  ## Ontological Relationships
-
-		  ## Terminology
-
-  #### References
-  additional-sources:: W3C WebXR · EWG/MSF Taxonomy · ETSI GR ARF 010
-
-		  ## Notes
-		  Defines communication rules and exchange methods between digital systems to ensure interoperability.
 
 - ### Provenance
   - sources:: [[EWG/MSF taxonomy]]

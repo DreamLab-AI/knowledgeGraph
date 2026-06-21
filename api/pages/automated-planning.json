@@ -152,6 +152,18 @@
       "label": "AI Agent"
     },
     {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
       "slug": "constraint-satisfaction",
       "label": "Constraint Satisfaction"
     },

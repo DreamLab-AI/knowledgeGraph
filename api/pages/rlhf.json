@@ -126,8 +126,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-evaluation",
+      "label": "AI Evaluation"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
       "slug": "ai-companions",
       "label": "AI companions"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
     },
     {
       "slug": "artificial-general-intelligence",

@@ -195,8 +195,16 @@
       "label": "AI Development"
     },
     {
+      "slug": "ai-evaluation",
+      "label": "AI Evaluation"
+    },
+    {
       "slug": "ai-monitoring",
       "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
     },
     {
       "slug": "ai-user",

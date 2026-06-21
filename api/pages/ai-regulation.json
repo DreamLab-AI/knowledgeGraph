@@ -149,8 +149,60 @@
       "label": "AI Adoption"
     },
     {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "ai safety research"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
       "slug": "aisi",
       "label": "AISI"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "affective-computing-system",
+      "label": "Affective Computing System"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
     },
     {
       "slug": "california-ai-bill",

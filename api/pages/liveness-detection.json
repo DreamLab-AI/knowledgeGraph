@@ -91,6 +91,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
       "slug": "identity-verification",
       "label": "Identity Verification"
     }

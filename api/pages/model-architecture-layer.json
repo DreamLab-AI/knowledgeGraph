@@ -75,6 +75,10 @@
       "label": "AI Search"
     },
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
       "slug": "algorithmic-layer",
       "label": "Algorithmic Layer"
     },

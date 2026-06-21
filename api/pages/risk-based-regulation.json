@@ -121,6 +121,10 @@
       "label": "AI Risks"
     },
     {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
       "slug": "california-ai-bill",
       "label": "California AI bill"
     }

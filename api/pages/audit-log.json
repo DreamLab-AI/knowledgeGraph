@@ -143,6 +143,10 @@
       "label": "Access Control System"
     },
     {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
       "slug": "digital-evidence-chain-of-custody",
       "label": "Digital Evidence Chain of Custody"
     },

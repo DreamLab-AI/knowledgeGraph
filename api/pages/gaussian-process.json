@@ -104,6 +104,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },

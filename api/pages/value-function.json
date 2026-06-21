@@ -47,6 +47,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
     },

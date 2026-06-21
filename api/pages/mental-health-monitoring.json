@@ -46,6 +46,14 @@
   ],
   "backlinks": [
     {
+      "slug": "affective-computing-system",
+      "label": "Affective Computing System"
+    },
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
       "slug": "emotional-analytics-engine",
       "label": "Emotional Analytics Engine"
     },

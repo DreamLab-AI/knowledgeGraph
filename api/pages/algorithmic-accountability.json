@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.93,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -185,16 +185,184 @@
     {
       "slug": "smart-contract",
       "label": "Smart Contract"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "ai-fairness",
+      "label": "AI Fairness"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "fairness",
+      "label": "Fairness"
+    },
+    {
+      "slug": "audit-mechanism",
+      "label": "Audit Mechanism"
+    },
+    {
+      "slug": "redress-mechanism",
+      "label": "Redress Mechanism"
+    },
+    {
+      "slug": "impact-assessment",
+      "label": "Impact Assessment"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "ai-risk-management",
+      "label": "AI Risk Management"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "black-box-model",
+      "label": "Black-Box Model"
+    },
+    {
+      "slug": "automated-decision-making",
+      "label": "Automated Decision-Making"
+    },
+    {
+      "slug": "model-documentation",
+      "label": "Model Documentation"
+    },
+    {
+      "slug": "algorithmic-auditing",
+      "label": "Algorithmic Auditing"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "risk-based-regulation",
+      "label": "Risk-Based Regulation"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
+    },
+    {
+      "slug": "counterfactual-explanation",
+      "label": "Counterfactual Explanation"
+    },
+    {
+      "slug": "bias-detection",
+      "label": "Bias Detection"
+    },
+    {
+      "slug": "public-sector-ai",
+      "label": "Public Sector AI"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO/IEC 42001"
     }
   ],
   "backlinks": [
+    {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
     {
       "slug": "ai-liability",
       "label": "AI Liability"
     },
     {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
       "slug": "ai-transparency-framework",
       "label": "Ai Transparency Framework"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
     },
     {
       "slug": "asia-pacific-regulation",

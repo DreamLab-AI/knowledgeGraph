@@ -73,6 +73,10 @@
   ],
   "backlinks": [
     {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
       "slug": "recurrent-neural-network",
       "label": "Recurrent Neural Network"
     },

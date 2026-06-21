@@ -144,8 +144,60 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "ai safety research"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
       "slug": "algorithmic-bias-and-variance",
       "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
     },
     {
       "slug": "bias-in-large-language-models",

@@ -177,8 +177,24 @@
   ],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
       "slug": "3-d-reconstruction",
       "label": "3D Reconstruction"
+    },
+    {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
     },
     {
       "slug": "ai-search",
@@ -193,12 +209,32 @@
       "label": "AR Frame"
     },
     {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
       "slug": "adoption-of-convergent-technologies",
       "label": "Adoption of Convergent Technologies"
     },
     {
       "slug": "adversarial-testing",
       "label": "Adversarial Testing"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
     },
     {
       "slug": "algorithmic-framework",
@@ -209,8 +245,16 @@
       "label": "Artificial Intelligence"
     },
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "augmented-reality",
       "label": "Augmented Reality"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
     },
     {
       "slug": "blockchain-entity",

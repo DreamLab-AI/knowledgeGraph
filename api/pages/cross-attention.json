@@ -175,6 +175,14 @@
       "label": "AI Video"
     },
     {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

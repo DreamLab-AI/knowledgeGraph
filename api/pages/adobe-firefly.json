@@ -13,13 +13,25 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.87,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:generative-fill",
         "label": "Generative Fill"
+      },
+      {
+        "id": "urn:ngm:class:text-effects-generation",
+        "label": "Text Effects Generation"
+      },
+      {
+        "id": "urn:ngm:class:firefly-video-model",
+        "label": "Firefly Video Model"
+      },
+      {
+        "id": "urn:ngm:class:firefly-custom-models",
+        "label": "Firefly Custom Models"
       }
     ],
     "requires": [
@@ -30,6 +42,10 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Licensed Training Data"
+      },
+      {
+        "id": "urn:ngm:class:cloud-platform",
+        "label": "Cloud Platform"
       }
     ],
     "enables": [
@@ -42,12 +58,20 @@
         "label": "Image Editing"
       },
       {
-        "id": "urn:ngm:class:asset-management",
+        "id": "urn:ngm:class:brand-management",
         "label": "Brand Asset Management"
       },
       {
         "id": "urn:ngm:class:video-generation",
         "label": "AI Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:creative-workflow-automation",
+        "label": "Creative Workflow Automation"
       }
     ],
     "dependsOn": [],
@@ -69,12 +93,20 @@
       {
         "id": "urn:ngm:class:midjourney-text-to-image-service",
         "label": "Midjourney"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
       }
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:creative-industries",
+        "label": "Creative Industries"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise AI"
       }
     ],
     "uses": [
@@ -89,12 +121,28 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "Enterprise AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
       }
     ],
     "standardizedBy": [],
@@ -114,12 +162,185 @@
         "label": "Generative AI API"
       },
       {
-        "id": "urn:ngm:class:workflow-automation",
-        "label": "Creative Workflow Automation"
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "id": "urn:ngm:class:substance-3d",
+        "label": "Substance 3D"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "adobe-creative-cloud",
+      "label": "Adobe Creative Cloud"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "image-editing",
+      "label": "Image Editing"
+    },
+    {
+      "slug": "video-generation",
+      "label": "AI Video Generation"
+    },
+    {
+      "slug": "content-credentials",
+      "label": "Content Credentials"
+    },
+    {
+      "slug": "c2pa",
+      "label": "C2PA"
+    },
+    {
+      "slug": "digital-content-provenance-marking",
+      "label": "Digital Content Provenance Marking"
+    },
+    {
+      "slug": "stable-diffusion-image-model",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "midjourney-text-to-image-service",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "Creative Tools"
+    },
+    {
+      "slug": "generative-ai-api",
+      "label": "Generative AI API"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Creative Workflow Automation"
+    },
+    {
+      "slug": "content-licensing",
+      "label": "Content Licensing"
+    },
+    {
+      "slug": "training-data",
+      "label": "Licensed Training Data"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "enterprise-ai",
+      "label": "Enterprise AI"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "vector-graphics",
+      "label": "Vector Graphics"
+    },
+    {
+      "slug": "brand-management",
+      "label": "Brand Asset Management"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "generative-fill",
+      "label": "Generative Fill"
+    },
+    {
+      "slug": "text-effects",
+      "label": "Text Effects Generation"
+    },
+    {
+      "slug": "substance-3d",
+      "label": "Substance 3D"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "cloud-platform",
+      "label": "Cloud Platform"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    }
+  ],
   "backlinks": [
     {
       "slug": "comfy-ui-for-fashion-and-brands",

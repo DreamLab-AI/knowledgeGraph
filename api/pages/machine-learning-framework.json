@@ -152,6 +152,14 @@
   ],
   "backlinks": [
     {
+      "slug": "answer-ai",
+      "label": "Answer AI"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
       "slug": "synthetic-data-generator",
       "label": "Synthetic Data Generator"
     },

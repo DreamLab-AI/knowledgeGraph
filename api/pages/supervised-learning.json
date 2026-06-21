@@ -170,6 +170,18 @@
       "label": "Algorithmic Bias and Variance"
     },
     {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
       "slug": "classification",
       "label": "Classification"
     },

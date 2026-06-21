@@ -124,6 +124,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
       "slug": "humanity-attestation",
       "label": "Humanity Attestation"
     },

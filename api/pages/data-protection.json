@@ -229,6 +229,14 @@
       "label": "Access Control"
     },
     {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
       "slug": "ccpa",
       "label": "CCPA"
     },

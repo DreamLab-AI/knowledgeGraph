@@ -94,6 +94,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
     }

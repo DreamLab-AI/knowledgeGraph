@@ -82,8 +82,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
+      "slug": "ai-evaluation",
+      "label": "AI Evaluation"
     },
     {
       "slug": "ai-model-card",
@@ -116,6 +132,10 @@
     {
       "slug": "algorithmic-transparency-index",
       "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
     },
     {
       "slug": "artificial-general-intelligence",

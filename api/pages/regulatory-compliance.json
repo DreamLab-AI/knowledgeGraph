@@ -152,6 +152,18 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
       "slug": "ai-governance-framework",
       "label": "AI Governance Framework"
     },
@@ -162,6 +174,18 @@
     {
       "slug": "ai-model-card",
       "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
     },
     {
       "slug": "ai-generated-content-disclosure",
@@ -186,6 +210,18 @@
     {
       "slug": "accessible-design",
       "label": "Accessible Design"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
     },
     {
       "slug": "ai-transparency-framework",

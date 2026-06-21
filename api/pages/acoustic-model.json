@@ -20,6 +20,14 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder",
+        "label": "Encoder-Decoder"
+      },
+      {
+        "id": "urn:ngm:class:sequence-model",
+        "label": "Sequence Model"
       }
     ],
     "requires": [
@@ -30,12 +38,28 @@
       {
         "id": "urn:ngm:class:signal-processing",
         "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:mel-frequency-cepstral-coefficients",
+        "label": "Mel-Frequency Cepstral Coefficients"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:automatic-speech-recognition",
         "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:voice-user-interface",
+        "label": "Voice User Interface"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-interaction",
+        "label": "Multimodal Interaction"
       }
     ],
     "dependsOn": [
@@ -46,6 +70,10 @@
       {
         "id": "urn:ngm:class:speech-processing",
         "label": "Speech Processing"
+      },
+      {
+        "id": "urn:ngm:class:hidden-markov-model",
+        "label": "Hidden Markov Model"
       }
     ],
     "implements": [],
@@ -53,6 +81,10 @@
       {
         "id": "urn:ngm:class:language-model",
         "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:pronunciation-model",
+        "label": "Pronunciation Model"
       }
     ],
     "bridgesTo": [],
@@ -64,12 +96,36 @@
       {
         "id": "urn:ngm:class:pattern-recognition",
         "label": "Pattern Recognition"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:connectionist-temporal-classification",
+        "label": "Connectionist Temporal Classification"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:automatic-speech-recognition",
         "label": "Automatic Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:accessibility-technology",
+        "label": "Accessibility Technology"
       }
     ],
     "standardizedBy": [],
@@ -91,9 +147,191 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
+      },
+      {
+        "id": "urn:ngm:class:speaker-diarisation",
+        "label": "Speaker Diarisation"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
       }
     ]
   },
-  "wikilinks": [],
-  "backlinks": []
+  "wikilinks": [
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "pattern-recognition",
+      "label": "Pattern Recognition"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "speech-processing",
+      "label": "Speech Processing"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "hidden-markov-model",
+      "label": "Hidden Markov Model"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "connectionist-temporal-classification",
+      "label": "Connectionist Temporal Classification"
+    },
+    {
+      "slug": "speaker-diarisation",
+      "label": "Speaker Diarisation"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "slug": "mel-frequency-cepstral-coefficients",
+      "label": "Mel-Frequency Cepstral Coefficients"
+    },
+    {
+      "slug": "sequence-model",
+      "label": "Sequence Model"
+    },
+    {
+      "slug": "model-compression",
+      "label": "Model Compression"
+    },
+    {
+      "slug": "voice-user-interface",
+      "label": "Voice User Interface"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "encoder-decoder",
+      "label": "Encoder-Decoder"
+    },
+    {
+      "slug": "end-to-end-learning",
+      "label": "End-to-End Learning"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "speaker-adaptation",
+      "label": "Speaker Adaptation"
+    },
+    {
+      "slug": "noise-robustness",
+      "label": "Noise Robustness"
+    },
+    {
+      "slug": "pronunciation-model",
+      "label": "Pronunciation Model"
+    },
+    {
+      "slug": "expectation-maximisation",
+      "label": "Expectation Maximisation"
+    },
+    {
+      "slug": "graphical-model",
+      "label": "Graphical Model"
+    },
+    {
+      "slug": "accessibility-technology",
+      "label": "Accessibility Technology"
+    },
+    {
+      "slug": "multimodal-interaction",
+      "label": "Multimodal Interaction"
+    },
+    {
+      "slug": "representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
+      "slug": "quantisation",
+      "label": "Quantisation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
+    }
+  ]
 }

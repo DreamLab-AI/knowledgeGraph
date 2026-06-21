@@ -90,5 +90,18 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-group-formation",
+      "label": "AI Group Formation"
+    },
+    {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    }
+  ]
 }

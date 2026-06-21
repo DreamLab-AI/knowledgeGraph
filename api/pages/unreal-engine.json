@@ -148,6 +148,10 @@
       "label": "AI Development"
     },
     {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
       "slug": "ai-in-games",
       "label": "AI in Games"
     },

@@ -118,6 +118,18 @@
       "label": "AI Risks"
     },
     {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
       "slug": "asia-pacific-regulation",
       "label": "Asia Pacific Regulation"
     },

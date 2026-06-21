@@ -157,6 +157,14 @@
   ],
   "backlinks": [
     {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
       "slug": "community-detection",
       "label": "Community Detection"
     },

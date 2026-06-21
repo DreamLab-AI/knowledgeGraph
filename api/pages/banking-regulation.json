@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:ngm-banking-regulation",
+  "title": "Banking Regulation",
+  "slug": "banking-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:banking-regulation",
+  "domain": "infrastructure",
+  "definition": "Banking Regulation encompasses the body of laws, rules, and supervisory frameworks that govern the formation, operation, and dissolution of banks and other deposit-taking institutions. Its primary purposes are to ensure systemic financial stability, protect depositors, prevent money laundering, and enforce prudential capital and liquidity requirements. Key regulatory regimes include Basel III, the EU's CRD/CRR framework, and the US Dodd-Frank Act.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:electronic-signature",
+        "label": "Electronic Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

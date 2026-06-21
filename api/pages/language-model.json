@@ -159,12 +159,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "answer-ai",
+      "label": "Answer AI"
+    },
+    {
       "slug": "auto-gpt",
       "label": "AutoGPT"
     },
     {
       "slug": "auto-gen",
       "label": "AutoGen"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
     },
     {
       "slug": "autoregressive-model",

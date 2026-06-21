@@ -7,7 +7,10 @@
   - belongs-to-domain:: [[AIDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - has-part:: [[Encoder]], [[Decoder]]
+  - related-to:: [[Generative Adversarial Network]], [[Diffusion Models]], [[Autoencoder]]
+  - uses:: [[Variational Inference]], [[Neural Network]]
+  - enables:: [[Generative AI]]
 
 - ### Content
   - A variational autoencoder is a type of generative model that combines the concepts of autoencoders and variational inference. This page is a bit maths heavy.
@@ -343,7 +346,7 @@
 
   - Applications in [[Audio Generation]], [[Video Compression]], and [[Image Synthesis]]
 
-  - Forms the basis for [[DALL-E]] (GPT-3 variant for images) and [[DALL-E 2]]
+  - Forms the conceptual basis for [[DALL-E]] (which used a discrete VAE architecture for image tokenisation combined with a transformer) and [[DALL-E 2]]
 
   - ### Adversarial VAE
 
@@ -916,8 +919,8 @@
   - Quantum parallelism for sampling
   - Quantum entanglement for correlations
 
-  - **Current limitations** [Updated 2025]:
-  - [[Noisy Intermediate-Scale Quantum]] (NISQ) devices have limited qubits (~100-1000)
+  - **Current limitations** [Updated 2026]:
+  - [[Noisy Intermediate-Scale Quantum]] (NISQ) devices are advancing rapidly in qubit count — QuantWare announced its VIO-40K architecture in December 2025, targeting 10,000-qubit processors with first shipments planned for 2028 — but lack full error correction; logical qubit quality rather than raw qubit count is the 2026 benchmark
   - High error rates require [[Quantum Error Correction]]
   - Classical simulation still outperforms for most tasks
 

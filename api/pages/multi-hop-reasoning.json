@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     },

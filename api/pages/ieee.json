@@ -138,6 +138,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
       "slug": "camera",
       "label": "Camera"
     },

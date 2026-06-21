@@ -151,6 +151,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     },

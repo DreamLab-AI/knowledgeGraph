@@ -130,8 +130,28 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
       "slug": "ai-risks",
       "label": "AI Risks"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
     },
     {
       "slug": "competition-in-ai",

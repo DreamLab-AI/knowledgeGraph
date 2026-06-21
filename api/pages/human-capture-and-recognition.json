@@ -169,6 +169,10 @@
   ],
   "backlinks": [
     {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
       "slug": "etsi-domain-reality-capture",
       "label": "ETSI_Domain_Reality_Capture"
     },

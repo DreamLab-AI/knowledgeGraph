@@ -96,6 +96,26 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    },
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
       "slug": "pose-estimation",
       "label": "Pose Estimation"
     }

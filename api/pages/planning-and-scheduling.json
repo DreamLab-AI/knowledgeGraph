@@ -159,6 +159,30 @@
   ],
   "backlinks": [
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
       "slug": "automated-planning",
       "label": "Automated Planning"
     },

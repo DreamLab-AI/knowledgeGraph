@@ -72,6 +72,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

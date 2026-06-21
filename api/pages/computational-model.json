@@ -93,6 +93,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
       "slug": "state-machine",
       "label": "State Machine"
     }

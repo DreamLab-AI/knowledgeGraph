@@ -150,6 +150,10 @@
   ],
   "backlinks": [
     {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
     },

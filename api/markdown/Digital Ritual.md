@@ -378,8 +378,6 @@ public:: true
 - ### Definition
   - A structured virtual ceremonial process that recreates, adapts, or innovates traditional ritual practices in metaverse environments, enabling communities to perform symbolic cultural, religious, or social ceremonies through coordinated digital performances, shared virtual spaces, and meaningful participant interactions.
 
-bridges-to:: [[Telecollaboration]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalRitual
   - owl-role:: Process
@@ -393,6 +391,7 @@ bridges-to:: [[Telecollaboration]]
   - requires:: [[Virtual World Platform]], [[Avatar System]], [[Synchronization Protocol]], [[Symbolic Object Library]], [[Audio-Visual Environment]]
   - enables:: [[Virtual Wedding]], [[Memorial Service]], [[Religious Ceremony]], [[Cultural Festival]], [[Initiation Rite]], [[Commemoration Event]]
   - depends-on:: [[Community Governance]], [[Cultural Protocol]], [[Event Orchestration]], [[Participant Authentication]]
+  - bridges-to:: [[Telecollaboration]]
 
 - ### Content
   Digital Ritual — content pending enrichment.

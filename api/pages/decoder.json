@@ -133,6 +133,10 @@
   ],
   "backlinks": [
     {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
       "slug": "translation",
       "label": "Translation"
     },

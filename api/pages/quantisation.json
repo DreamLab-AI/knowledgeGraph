@@ -133,6 +133,30 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "answer-ai",
+      "label": "Answer AI"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
+    },
+    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },

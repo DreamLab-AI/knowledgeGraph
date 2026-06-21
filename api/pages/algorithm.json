@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.75,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -153,9 +153,193 @@
     {
       "slug": "blockchain",
       "label": "Blockchain"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "computational-complexity",
+      "label": "Computational Complexity"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "heuristic-methods",
+      "label": "Heuristic Methods"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "sorting-algorithm",
+      "label": "Sorting Algorithm"
+    },
+    {
+      "slug": "graph-algorithm",
+      "label": "Graph Algorithm"
+    },
+    {
+      "slug": "dynamic-programming",
+      "label": "Dynamic Programming"
+    },
+    {
+      "slug": "divide-and-conquer",
+      "label": "Divide and Conquer"
+    },
+    {
+      "slug": "greedy-algorithm",
+      "label": "Greedy Algorithm"
+    },
+    {
+      "slug": "turing-machine",
+      "label": "Turing Machine"
+    },
+    {
+      "slug": "inference",
+      "label": "Inference"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
+    },
+    {
+      "slug": "mathematical-logic",
+      "label": "Mathematical Logic"
+    },
+    {
+      "slug": "formal-language",
+      "label": "Formal Language"
+    },
+    {
+      "slug": "automation",
+      "label": "Automation"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "ieee",
+      "label": "IEEE"
+    },
+    {
+      "slug": "software-system",
+      "label": "Software System"
+    },
+    {
+      "slug": "computational-model",
+      "label": "Computational Model"
+    },
+    {
+      "slug": "ai-technique",
+      "label": "AI Technique"
+    },
+    {
+      "slug": "recursive-algorithm",
+      "label": "Recursive Algorithm"
+    },
+    {
+      "slug": "probabilistic-algorithm",
+      "label": "Probabilistic Algorithm"
+    },
+    {
+      "slug": "approximation-algorithm",
+      "label": "Approximation Algorithm"
+    },
+    {
+      "slug": "parallel-algorithm",
+      "label": "Parallel Algorithm"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
     }
   ],
   "backlinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
     {
       "slug": "computational-complexity-theory",
       "label": "Computational Complexity Theory"

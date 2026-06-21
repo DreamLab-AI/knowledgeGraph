@@ -45,6 +45,14 @@
       "label": "Agent Frameworks"
     },
     {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
       "slug": "function-calling",
       "label": "Function Calling"
     }

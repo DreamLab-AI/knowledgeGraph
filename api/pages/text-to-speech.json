@@ -125,8 +125,28 @@
   ],
   "backlinks": [
     {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
     },
     {
       "slug": "call-centres",

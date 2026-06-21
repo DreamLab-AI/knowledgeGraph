@@ -1,0 +1,2 @@
+- ### Definition
+  - A structured, purpose-gathered collection of data records with a shared schema, characterised by modality, provenance, licensing, and quality attributes that determine its fitness for AI and analytical use.

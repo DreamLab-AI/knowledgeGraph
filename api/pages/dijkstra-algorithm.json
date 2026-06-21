@@ -133,5 +133,10 @@
       "label": "Spatial Computing"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    }
+  ]
 }

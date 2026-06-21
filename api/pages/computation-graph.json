@@ -97,5 +97,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    }
+  ]
 }

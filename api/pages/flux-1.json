@@ -86,6 +86,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
     },

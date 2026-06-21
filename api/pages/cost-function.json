@@ -129,6 +129,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

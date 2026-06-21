@@ -562,7 +562,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A Graph Neural Network (GNN) is a deep learning architecture that operates directly on graph-structured data by iteratively propagating and aggregating feature information across node neighbourhoods. GNNs generalise convolutional and attention mechanisms to non-Euclidean domains, learning node, edge, and graph-level representations suitable for tasks including node classification, link prediction, and graph classification across domains such as knowledge graphs, social networks, molecular modelling, and recommendation systems.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:GraphNeuralNetwork
@@ -578,49 +578,7 @@ public:: true
   - relatedTo [[Semantic Web Linked Data Standard]]
 
 - ### Content
-  - ### Primary Definition
   A **Graph Neural Network (GNN)** is a neural network architecture designed to process graph-structured data by propagating and aggregating information across graph nodes and edges. GNNs learn node and edge representations by iteratively updating feature vectors based on neighbourhood structure.
-  - ### Original Content
-		- ```
-  # Graph Neural Network
-
-  #### Related Concepts
-  - **Knowledge Graph**: Common application domain for GNNs
-		  - **Social Network Analysis**: GNNs model social connections
-		  - **Molecular Modelling**: GNNs represent molecular structures
-		  - **Relational Learning**: GNNs learn from relational data
-
-		  ## Formal Ontology
-
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Machine learning model architectures
-
-		  ### NIST AI RMF
-		  - **Function**: MEASURE (Performance on graph-structured data)
-
-		  ## Related Terms
-		  - **Neural Network**: Parent category
-		  - **Convolutional Neural Network** (AI-0032): Conceptual predecessor (convolution)
-		  - **Knowledge Graph**: Application domain for GNNs
-		  - **Relational Learning**: GNN capability
-
-  #### References
-  1. Scarselli et al. - "The Graph Neural Network Model" - IEEE Transactions on Neural Networks, 2009
-		  2. Kipf & Welling - "Semi-Supervised Classification with Graph Convolutional Networks" - ICLR, 2017
-		  3. NIST AI 100-3 - Emerging architectures
-
-		  ---
-
-		  **Authority Score**: 0.88 | **Standards Compliance**: ✓ NIST
-
-		  ```
 
   - # Misc
   - [Taking RAG apps from POC to Production, Fast - YouTube](https://www.youtube.com/watch?v=WQsN0_eVaEs)
@@ -686,69 +644,6 @@ public:: true
 			- youtube [Publish graph to github (youtube.com)](https://www.youtube.com/watch?v=nf9MyWRratI)
   - ![image.png](assets/image_1706089902931_0.png){:height 812, :width 400}
 
-  - # Misc
-  - [Taking RAG apps from POC to Production, Fast - YouTube](https://www.youtube.com/watch?v=WQsN0_eVaEs)
-  - [AI-Powered Search: Embedding-Based Retrieval and Retrieval-Augmented Generation (RAG) | by Daniel Tunkelang | Apr, 2024 | Medium](https://dtunkelang.medium.com/ai-powered-search-embedding-based-retrieval-and-retrieval-augmented-generation-rag-cabeaba26a8b)
-  - [AutoRAG documentation (marker-inc-korea.github.io)](https://marker-inc-korea.github.io/AutoRAG/index.html)
-  - [llmware-ai/llmware: Providing enterprise-grade LLM-based development framework, tools, and fine-tuned models. (github.com)](https://github.com/llmware-ai/llmware) [[Large Language Models]] [[Infrastructure]] [[Knowledge Graphing]]
-  - [turbopuffer](https://turbopuffer.com/) [[Knowledge Graphing]] serverless vector database
-  - Using [[agents]] over [[Knowledge Graphing]] [Forget RAG: Embrace agent design for a more intelligent grounded ChatGPT! | by James Nguyen | Nov, 2023 | Medium](https://james-tn.medium.com/forget-rag-embrace-agent-design-for-a-more-intelligent-grounded-chatgpt-6c562d903c61)
-  - [[Instruction-Following Conversational AI System]] threatens the [[Knowledge Graphing]] model with better capabilities [Chat GPT 4 Turbo for Tech Leaders | Medium](https://medium.com/@sivaad/openai-devday-for-executives-will-gpt-4-turbo-kill-traditional-rag-c82748c8feb9)
-  - [CLI tool](https://www.reddit.com/r/ChatGPTCoding/comments/183qetc/made_a_small_cli_tool_to_create_openai_assistants/) to deploy a [[GPT]] model from a directory of data [[Knowledge Graphing]]
-  - [VECTORDB](http://vectordb.com) open source [[Knowledge Graphing]] database
-  - https://nux.ai/guides/chaining-rag-systems [[Knowledge Graphing]]
-  - Instant RAG from directory agent builder for openai [openai instant assistant](https://github.com/davidgonmar/openai_instant_assistant)
-  - [[Training and fine tuning]] tiny 1500 line trainer for 8b [[Meta Llama Model Family]] [rombodawg/test_dataset_Codellama-3-8B · Hugging Face](https://huggingface.co/rombodawg/test_dataset_Codellama-3-8B)
-  - [[Large Language Models]] memory calculator [LLM RAM Calculator by Ray Fernando](https://llm-calc.rayfernando.ai/)
-  - [[Evaluation benchmarks and leaderboards]] [Ayumi LLM Evaluation (m8geil.de)](https://ayumi.m8geil.de/)
-  - [VRAM Calculator (asmirnov.xyz)](https://vram.asmirnov.xyz/)
-  - [Local Multi-Agent RAG Superbot using GraphRAG, AutoGen, Ollama, and Chainlit. | by Karthik Rajan | AI Advances (gopubby.com)](https://ai.gopubby.com/microsofts-graphrag-autogen-ollama-chainlit-fully-local-free-multi-agent-rag-superbot-61ad3759f06f) [[Knowledge Graphing]] [[Knowledge Graphing]] [[Autogen]] [[Ollama]]
-  - [[Knowledge Graphing]] [Knowledge Graphs - Build, scale, and manage user-facing Retrieval-Augmented Generation applications. (sciphi.ai)](https://r2r-docs.sciphi.ai/cookbooks/knowledge-graph)
-		- [SOTA Triples Extraction (sciphi.ai)](https://kg.sciphi.ai/)
-		- [SciPhi/Triplex · Hugging Face](https://huggingface.co/SciPhi/Triplex)
-  - [win4r/GraphRAG4OpenWebUI: GraphRAG4OpenWebUI integrates Microsoft's GraphRAG technology into Open WebUI, providing a versatile information retrieval API. It combines local, global, and web searches for advanced Q&A systems and search engines. This tool simplifies graph-based retrieval integration in open web environments. (github.com)](https://github.com/win4r/GraphRAG4OpenWebUI) [[Open Webui and Pipelines]] [[Knowledge Graphing]] [[Knowledge Graphing]]
-  - Elicit search around [[Knowledge Graphing]]
-		- [https://elicit.com/notebook/c4b29508-b134-429d-bda3-88a3b947375f](https://elicit.com/notebook/c4b29508-b134-429d-bda3-88a3b947375f)
-		- For instance, this old and simple system
-		- [https://elicit.com/notebook/c4b29508-b134-429d-bda3-88a3b947375f#17e74118b78497a92f941b07a460dd99](https://elicit.com/notebook/c4b29508-b134-429d-bda3-88a3b947375f#17e74118b78497a92f941b07a460dd99)
-		- gives the following DOI
-		- [https://doi.org/10.1145/2381716.2381847](https://doi.org/10.1145/2381716.2381847)
-		- which can then go into connected papers
-		- [https://www.connectedpapers.com/](https://www.connectedpapers.com/)
-		  [https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizing-semantic-web/graph](https://www.connectedpapers.com/main/995a155fee9afdfacba009c007c884a665ad3055/Visualizing-semantic-web/graph)
-		- Which immediately reveals a connection to the [[Semantic Web Linked Data Standard]] , [[AI-Assisted Ontology Elicitation Method]] , and OWL, which I am already using.
-		- ![KNOWLEDGE EXTRACTION.pdf](assets/KNOWLEDGE_EXTRACTION_1721153960585_0.pdf) [[Knowledge Graphing]]
-  - [Music Galaxy (spotifytrack.net)](https://galaxy.spotifytrack.net/) [[Music and Audio]] [[Knowledge Graphing]]
-  - [[Knowledge Graphing]] [[Metaverse Ontology]] [[Multi-Layer Agentic Governance Framework]] [[Decentralised Creative Metaverse Framework]] [[Domain Expert Contact Index]] [[Tom Smoker]] [[Multi-Agent RAG Architecture Compendium]]
-  - [A New Way to Store Knowledge (breckyunits.com)](https://breckyunits.com/scrollsets.html) [[Knowledge Graphing]] [[Knowledge Graphing]] [[Decentralised Web]] [[Epistemic Modality Marker]]
-  - [[Knowledge Graphing]] [GraphRAG: Unlocking LLM discovery on narrative private data - Microsoft Research](https://www.microsoft.com/en-us/research/blog/graphrag-unlocking-llm-discovery-on-narrative-private-data/) [[Knowledge Graphing]]
-  - [topoteretes/cognee: Deterministic LLMs Outputs for AI Applications and AI Agents (github.com)](https://github.com/topoteretes/cognee) [[Knowledge Graphing]] [[Knowledge Graphing]] [[Large Language Models]] also similar [Microsoft Graph RAG paper](https://arxiv.org/pdf/2404.16130) looks like this could work for
-  - Day planner with voice input [intellisay](https://www.intellisay.xyz/) [[Knowledge Graphing]]
-  - the [[GPTs and Custom Assistants]] API from [[OpenAI Research Organisation]] now accepts huge numbers of documents and can form the basis for checking my [[Logseq]] [[Knowledge Graphing]] work against papers. [[RFC 2119 SHOULD Normative Keyword]]
-  - https://github.com/yoheinakajima/MindGraph [[Knowledge Graphing]] [[Agents]]
-		- {{twitter https://twitter.com/yoheinakajima/status/1769019899245158648}}
-  - [Introducing Elicit Notebooks! (youtube.com)](https://www.youtube.com/watch?v=DmK-cLdbkvQ) [[Knowledge Graphing]]
-  - [roboflow/supervision: We write your reusable computer vision tools. 💜 (github.com)](https://github.com/roboflow/supervision) [[Knowledge Graphing]] [[Machine Vision]]
-  - [2305.16582.pdf (arxiv.org)](https://arxiv.org/pdf/2305.16582.pdf) [[Knowledge Graphing]]
-  - [🦜🕸️LangGraph | 🦜️🔗 Langchain](https://python.langchain.com/docs/langgraph) [[Knowledge Graphing]]
-  - Sync [[Notion]] with [[Logseq]] for better [[Knowledge Graphing]] [b-yp/logseq-notion-sync: Sync Logseq content to Notion (github.com)](https://github.com/b-yp/logseq-notion-sync)
-  - [[Knowledge Graphing]] meets [[Large Language Models]]
-		- [[2401.16960] Two Heads Are Better Than One: Integrating Knowledge from Knowledge Graphs and Large Language Models for Entity Alignment (arxiv.org)](https://arxiv.org/abs/2401.16960) [[Knowledge Graphing]] [[Epistemic Modality Marker]]
-		- [Answering Questions with Knowledge Graph Embeddings - VectorHub (superlinked.com)](https://hub.superlinked.com/answering-questions-with-knowledge-graph-embeddings)
-  - [Gephi - The Open Graph Viz Platform](https://gephi.org/) [[Knowledge Graphing]]
-  - [terraphim/terraphim-ai: This is monorepo for Terraphim AI assistant, no submodules anymore (github.com)](https://github.com/terraphim/terraphim-ai) Private knowledge graph AI search which might support [[Knowledge Graphing]]
-		- [AtomicData.dev (github.com)](https://github.com/atomicdata-dev)
-  - Add a tagging system to [[Knowledge Graphing]]
-		- **Status Tags**: #[[fleeting 🪴]], #🌱growing, #[[Active Research Projects Registry]], #🌲evergreen
-		- **Action Tags**: #🌹NeedsImprovement, #🍂SunsetSoon
-		- **Context Tags**: #PEOPLE, #📖read/learn
-  - [[Diagrams as Code]] page added for the new plugin for [[Knowledge Graphing]]
-  - There's a lot of [[Knowledge Graphing]] tools like gallery and stuff in [cannibalox/logtools: Logtools: utilities for Logseq (kanban, image gallery, priority matrix, ...) (github.com)](https://github.com/cannibalox/logtools)
-  - Publishing graphs from [[Knowledge Graphing]]
-		- [Publishing (Desktop App Only) (logseq.com)](https://docs.logseq.com/?ref=blog.logseq.com#/page/publishing%20(desktop%20app%20only))
-		- [[Knowledge Graphing]] [[github]] action to push a graph out as a single web page including whiteboards [logseq/publish-spa: A github action and CLI to publish logseq graphs as a SPA app](https://github.com/logseq/publish-spa)
-			- youtube [Publish graph to github (youtube.com)](https://www.youtube.com/watch?v=nf9MyWRratI)
-  - ![image.png](assets/image_1706089902931_0.png){:height 812, :width 400}
 
   - ### [Scrapegraph-ai](https://github.com/VinciGit00/Scrapegraph-ai)
   - [2408.08435v1.pdf (arxiv.org)](https://arxiv.org/pdf/2408.08435)
@@ -758,10 +653,6 @@ public:: true
   - They power [some stuff](https://github.com/jjohare/logseqSpringThing/tree/feature-branch) that is more [[Immersive]] which will be ready soon, probably.
   - <iframe src="https://narrativegoldmine.com/#/graph" style="width: 800px; height: 600px"></iframe>
 
-  - ### These pages, this graph
-  - This is the raw "shoot from the hip" LogSeq graph. There is a manually version where we inject the key topics back in to create edges, and there's a [[Knowledge Graphing]] using [[Microsoft]] [[GraphRAG]]
-  - They power [some stuff](https://github.com/jjohare/logseqSpringThing/tree/feature-branch) that is more [[Immersive]] which will be ready soon, probably.
-  - <iframe src="https://narrativegoldmine.com/#/graph" style="width: 800px; height: 600px"></iframe>
   ## Academic Context
 
   - Brief contextual overview

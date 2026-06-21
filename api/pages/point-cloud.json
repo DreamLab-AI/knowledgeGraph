@@ -133,6 +133,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
       "slug": "3-d-reconstruction",
       "label": "3D Reconstruction"
     },

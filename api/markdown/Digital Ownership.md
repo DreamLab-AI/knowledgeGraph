@@ -290,8 +290,6 @@ alias:: DigitalOwnership
 - ### Definition
   - The cryptographically verified right to possess, control, and transfer digital assets including NFTs, virtual real estate, in-game items, and tokenised content, established through blockchain technology and smart contracts that provide immutable proof of authenticity and provenance within metaverse economies.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalOwnership
   - owl-role:: Concept
@@ -315,11 +313,12 @@ bridges-to:: [[Blockchain]]
 		- Virtual real estate and land parcels
 		- In-game items, avatars, and accessories
 		- Tokenized real-world assets (RWAs)
-  - **2024-2025 Developments**:
-		- December 2024: $877M NFT sales (fifth-best month of year)
-		- RWA NFTs enabling fractional real estate ownership
+  - **2025–2026 Developments**:
+		- Global NFT market valued at approximately $43 billion in 2025, projected to reach $61 billion in 2026
+		- Daily NFT trading volume around $13 million; over 12,000 NFT sales per day
+		- RWA NFTs enabling fractional real estate ownership, with tokenised RWAs a growing institutional focus
 		- Industrial digital twins minted as NFTs for lifecycle tracking
-		- Cross-platform asset interoperability improving
+		- Cross-platform asset interoperability progressing via ERC-7802 cross-chain token standard (2025–2026)
   - **Legal Considerations**: NFT ownership does not inherently grant copyright or IP rights over associated content
   - ## Applications
   - Metaverse virtual property ownership

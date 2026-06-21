@@ -158,6 +158,10 @@
   ],
   "backlinks": [
     {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
       "slug": "metadata-management",
       "label": "Metadata Management"
     }

@@ -63,6 +63,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
     },

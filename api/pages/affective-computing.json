@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.91,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:annotated-training-data",
         "label": "Annotated Dataset"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-fusion",
+        "label": "Multimodal Fusion"
       }
     ],
     "enables": [
@@ -41,12 +45,20 @@
         "label": "Cognitive Feedback Interface"
       },
       {
-        "id": "urn:ngm:class:adaptive-learning",
+        "id": "urn:ngm:class:adaptive-learning-system",
         "label": "Adaptive Learning System"
       },
       {
         "id": "urn:ngm:class:mental-health-monitoring",
         "label": "Mental Health Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:driver-monitoring-system",
+        "label": "Driver Monitoring System"
       }
     ],
     "dependsOn": [
@@ -57,6 +69,14 @@
       {
         "id": "urn:ngm:class:data-labelling",
         "label": "Data Labelling"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ],
     "implements": [],
@@ -82,6 +102,14 @@
       {
         "id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicle"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
       }
     ],
     "uses": [
@@ -112,6 +140,14 @@
       {
         "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "supports": [],
@@ -133,14 +169,227 @@
       {
         "id": "urn:ngm:class:wearable-computing",
         "label": "Wearable Computing"
+      },
+      {
+        "id": "urn:ngm:class:biometric-sensing",
+        "label": "Biometric Sensing"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "emotional-intelligence",
+      "label": "Emotional Intelligence"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "physiological-signal-processing",
+      "label": "Physiological Signal Processing"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "multimodal-fusion",
+      "label": "Multimodal Fusion"
+    },
+    {
+      "slug": "emotion-recognition",
+      "label": "Emotion Recognition"
+    },
+    {
+      "slug": "annotated-dataset",
+      "label": "Annotated Dataset"
+    },
+    {
+      "slug": "emotion-aware-interaction",
+      "label": "Emotion Aware Interaction"
+    },
+    {
+      "slug": "emotional-analytics-engine",
+      "label": "Emotional Analytics Engine"
+    },
+    {
+      "slug": "cognitive-feedback-interface",
+      "label": "Cognitive Feedback Interface"
+    },
+    {
+      "slug": "adaptive-learning-system",
+      "label": "Adaptive Learning System"
+    },
+    {
+      "slug": "mental-health-monitoring",
+      "label": "Mental Health Monitoring"
+    },
+    {
+      "slug": "wearable-computing",
+      "label": "Wearable Computing"
+    },
+    {
+      "slug": "biometric-sensing",
+      "label": "Biometric Sensing"
+    },
+    {
+      "slug": "rational-agent",
+      "label": "Rational Agent"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "digital-health",
+      "label": "Digital Health"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "data-labelling",
+      "label": "Data Labelling"
+    },
+    {
+      "slug": "user-experience-design",
+      "label": "User Experience Design"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
+      "slug": "privacy-preserving-machine-learning",
+      "label": "Privacy-Preserving Machine Learning"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "eeg",
+      "label": "EEG"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "intelligent-tutoring-system",
+      "label": "Intelligent Tutoring System"
+    },
+    {
+      "slug": "social-robotics",
+      "label": "Social Robotics"
+    },
+    {
+      "slug": "driver-monitoring-system",
+      "label": "Driver Monitoring System"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-companions",
       "label": "AI companions"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "affective-computing-system",
+      "label": "Affective Computing System"
     },
     {
       "slug": "behavioural-feedback-loop",

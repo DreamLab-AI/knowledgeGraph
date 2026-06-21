@@ -69,6 +69,10 @@
   ],
   "backlinks": [
     {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
     },

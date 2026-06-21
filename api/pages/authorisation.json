@@ -173,6 +173,10 @@
       "label": "Access Controls"
     },
     {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
     },

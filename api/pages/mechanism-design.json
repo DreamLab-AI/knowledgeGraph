@@ -140,6 +140,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
       "slug": "conviction-voting",
       "label": "Conviction Voting"
     },

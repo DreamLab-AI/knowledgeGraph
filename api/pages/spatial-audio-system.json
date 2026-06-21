@@ -54,6 +54,10 @@
   ],
   "backlinks": [
     {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
       "slug": "cultural-heritage-xr-experience",
       "label": "Cultural Heritage XR Experience"
     },

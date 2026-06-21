@@ -122,6 +122,10 @@
       "label": "Algorithmic Bias and Variance"
     },
     {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
     }

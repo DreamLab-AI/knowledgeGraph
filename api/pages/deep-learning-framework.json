@@ -163,6 +163,14 @@
       "label": "AI Framework"
     },
     {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "answer-ai",
+      "label": "Answer AI"
+    },
+    {
       "slug": "image-and-video-restoration",
       "label": "Image and Video Restoration"
     },

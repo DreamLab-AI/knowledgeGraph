@@ -1,12 +1,12 @@
 - ### Definition
   - A natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity.
-bridges-to:: [[Autonomous Robot]]
+
 - ### Semantic Classification
   - owl-class:: spatial-computing:Deployer
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - **uses**: AI Agent System, Autonomous Robot (the AI systems a deployer puts into service)
+  - **uses**: AI Agent System, [[Autonomous Robot]] (the AI systems a deployer puts into service)
   - **dependsOn**: AI Governance, Digital Infrastructure (oversight frameworks and technical infrastructure the deployer relies on)
   - **supports**: AI Regulation (deployer compliance operationalises regulatory requirements)
   - **relatedTo**: AI Governance and Ethics (ethical obligations that shape deployer conduct)
@@ -188,17 +188,15 @@ bridges-to:: [[Autonomous Robot]]
 		  - EU AI Act Article 26 (Obligations of Deployers of High-Risk AI Systems)
 		  - Article 27 (Fundamental Rights Impact Assessment for High-Risk AI Systems)
 		  - Article 28 (Obligations of Deployers of High-Risk AI Systems That Are Public Authorities)
-		  - Commission Deployer Guidance (expected 2026)
-		  ```
-  - public-access:: true
-  - definition:: A natural or legal person, public authority, agency or other body using an AI system under its authority except where the AI system is used in the course of a personal non-professional activity.
+		  - Commission Code of Practice on AI-generated content (first draft Dec 2025; second draft March 2026; final expected late June 2026) — includes deployer obligations for deepfake labelling under Article 50
+		  - Commission transparency guidelines under Article 50 (first draft May 2026)
   ## Academic Context
   - The concept of a "deployer" in AI governance originates from regulatory frameworks such as the EU Artificial Intelligence Act (AI Act), which distinguishes deployers from providers based on their role in the AI lifecycle.
   - Deployers are defined as natural or legal persons, public authorities, agencies, or other bodies that use an AI system under their authority, excluding personal, non-professional use.
   - This distinction is critical for assigning regulatory obligations, ensuring accountability for AI use beyond development or marketing.
   - The academic foundation for this role stems from legal and ethical scholarship on AI accountability, risk management, and human-centric AI governance.
   - Key discussions focus on how deployers influence AI system outcomes through operational use, thus bearing responsibility for compliance with safety, transparency, and fairness standards.
-  ## Current Landscape (2025)
+  ## Current Landscape (2026)
   - Industry adoption of the deployer role is widespread, especially in sectors with high AI integration such as healthcare, finance, and public administration.
   - Notable organisations include multinational corporations, healthcare providers, and government agencies that deploy AI systems for decision-making, operational efficiency, or service delivery.
   - In the UK, and particularly in North England cities like Manchester, Leeds, Newcastle, and Sheffield, AI deployment is prominent in smart city initiatives, healthcare innovation, and manufacturing automation.

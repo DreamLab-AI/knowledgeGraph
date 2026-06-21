@@ -99,6 +99,26 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
     }

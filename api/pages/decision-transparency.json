@@ -111,5 +111,10 @@
       "label": "Digital Twin"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    }
+  ]
 }

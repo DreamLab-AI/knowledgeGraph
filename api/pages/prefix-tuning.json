@@ -65,6 +65,10 @@
   ],
   "backlinks": [
     {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
+    },
+    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
     },

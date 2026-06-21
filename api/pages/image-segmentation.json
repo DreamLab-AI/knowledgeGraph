@@ -421,6 +421,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
       "slug": "image-and-video-restoration",
       "label": "Image and Video Restoration"
     },

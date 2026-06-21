@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:automatic-speech-recognition",
   "domain": "ai",
-  "definition": "Automatic Speech Recognition (ASR) is the technology that converts spoken language into written text by jointly modelling acoustic signals \u2014 frame-level spectral features derived from raw audio waveforms \u2014 and linguistic context, using neural sequence-to-sequence architectures trained on large corpora of paired audio and transcripts. Modern ASR systems built on transformer and conformer encoder-decoder designs achieve near-human word error rates on clean speech benchmarks and have been extended to multilingual and low-resource settings through large-scale self-supervised pre-training on unlabelled audio. ASR serves as a foundational component for voice assistants, real-time transcription services, accessibility tooling, and spoken language understanding pipelines, and underpins multimodal AI systems that must bridge the speech and text modalities.",
+  "definition": "Automatic Speech Recognition (ASR) is the technology that converts spoken language into written text by jointly modelling acoustic signals \u2014 frame-level spectral features derived from raw audio waveforms \u2014 and linguistic context, using neural sequence-to-sequence architectures trained on large corpora of paired audio and transcripts. Modern ASR systems built on transformer and conformer encoder-decoder designs achieve near-human word error rates on clean speech benchmarks (Whisper Large-v3 at 2.7% WER on LibriSpeech test-clean) and have been extended to multilingual and low-resource settings through large-scale self-supervised pre-training on unlabelled audio. ASR serves as a foundational component for voice assistants, real-time transcription services, accessibility tooling, and spoken language understanding pipelines, and underpins multimodal AI systems that must bridge the speech and text modalities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:speech-processing",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.89,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
@@ -28,6 +28,18 @@
       {
         "id": "urn:ngm:class:feature-extraction",
         "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:connectionist-temporal-classification",
+        "label": "Connectionist Temporal Classification"
+      },
+      {
+        "id": "urn:ngm:class:rnn-transducer",
+        "label": "RNN Transducer"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
       }
     ],
     "requires": [
@@ -38,6 +50,10 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Accelerated Computing"
       }
     ],
     "enables": [
@@ -60,6 +76,10 @@
       {
         "id": "urn:ngm:class:machine-translation",
         "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ],
     "dependsOn": [],
@@ -104,6 +124,14 @@
       {
         "id": "urn:ngm:class:recurrent-neural-network",
         "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ],
     "supports": [
@@ -117,7 +145,11 @@
       },
       {
         "id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human Computer Interaction"
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ],
     "standardizedBy": [],
@@ -138,14 +170,203 @@
       {
         "id": "urn:ngm:class:word-error-rate",
         "label": "Word Error Rate"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "connectionist-temporal-classification",
+      "label": "Connectionist Temporal Classification"
+    },
+    {
+      "slug": "speaker-diarisation",
+      "label": "Speaker Diarisation"
+    },
+    {
+      "slug": "speaker-recognition",
+      "label": "Speaker Recognition"
+    },
+    {
+      "slug": "word-error-rate",
+      "label": "Word Error Rate"
+    },
+    {
+      "slug": "keyword-spotting",
+      "label": "Keyword Spotting"
+    },
+    {
+      "slug": "spoken-language-understanding",
+      "label": "Spoken Language Understanding"
+    },
+    {
+      "slug": "real-time-captioning",
+      "label": "Real-Time Captioning"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    },
+    {
+      "slug": "distributed-collaboration",
+      "label": "Distributed Collaboration"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "whisper-openai",
+      "label": "Whisper OpenAI"
+    },
+    {
+      "slug": "wav2vec",
+      "label": "wav2vec 2.0"
+    },
+    {
+      "slug": "hubert",
+      "label": "HuBERT"
+    },
+    {
+      "slug": "conformer",
+      "label": "Conformer"
+    },
+    {
+      "slug": "rnn-transducer",
+      "label": "RNN Transducer"
+    },
+    {
+      "slug": "positional-encoding",
+      "label": "Positional Encoding"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "quantisation",
+      "label": "Quantisation"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "model-compression",
+      "label": "Model Compression"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "multimodal-ai-architecture-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "voice-interaction",
+      "label": "Voice Interaction"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
     {
       "slug": "asynchronous-video",
       "label": "Asynchronous Video"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
     },
     {
       "slug": "automated-podcasting",

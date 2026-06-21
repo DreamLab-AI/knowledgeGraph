@@ -106,6 +106,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
       "slug": "exteroceptive-sensor",
       "label": "Exteroceptive Sensor"
     }

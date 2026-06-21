@@ -17,7 +17,7 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
+  "@id": "urn:ngm:class:bitcoin-script",
   "@type": "Class",
   "label": "Bitcoin Script",
   "definition": "Bitcoin Script is a non-Turing-complete, stack-based scripting language embedded in every Bitcoin transaction that defines the conditions under which unspent transaction outputs (UTXOs) may be spent. It consists of a constrained set of opcodes operating on a last-in-first-out (LIFO) stack, deliberately designed without loops or unbounded recursion to ensure guaranteed termination and predictable resource consumption. Script programs are expressed as paired locking scripts (scriptPubKey) and unlocking scripts (scriptSig or SegWit witness data) that encode spending conditions including digital signature verification, multisignature requirements, hash pre-image revelation, and time locks. Standard output templates — P2PKH, P2SH, P2WPKH, P2WSH, and P2TR — formalise the most common spending patterns used across the Bitcoin network.",

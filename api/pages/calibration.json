@@ -133,6 +133,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-evaluation",
+      "label": "AI Evaluation"
+    },
+    {
       "slug": "exteroceptive-sensor",
       "label": "Exteroceptive Sensor"
     },

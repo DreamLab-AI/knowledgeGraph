@@ -177,6 +177,10 @@
   ],
   "backlinks": [
     {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
     },

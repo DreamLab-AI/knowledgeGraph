@@ -18,8 +18,7 @@
   - [(2) SUPIR v2 nodes from Kijai are available on manager, and they look brilliant! : comfyui (reddit.com)](https://www.reddit.com/r/comfyui/comments/1bh07ke/supir_v2_nodes_from_kijai_are_available_on/)
   - https://medium.com/@yushantripleseven/supir-image-restoration-cd4f409ccd34#3b78
   - [OpenModelDB](https://openmodeldb.info/)
-  - [Civitai's Guide to Image Upscaling!
-		- Civitai Education](https://education.civitai.com/civitais-guide-to-image-upscaling/
+  - [Civitai's Guide to Image Upscaling! - Civitai Education](https://education.civitai.com/civitais-guide-to-image-upscaling/)
 
   - ## Overview and History
 
@@ -528,19 +527,16 @@
 
   - **NVIDIA DLSS (Deep Learning Super Sampling)**:
   - [[Tensor Core]]-based real-time upscaling for RTX GPUs
-  - DLSS 3.5 (2024): Quality mode (1080p→4K), Balanced, Performance, Ultra Performance
-  - Frame Generation: Synthesizes intermediate frames (doubles FPS)
+  - DLSS 4 (2025): Transformer-based Super Resolution, up to 4X Multi Frame Generation; available in 250+ games
+  - DLSS 4.5 (announced CES 2026): 2nd-generation transformer Super Resolution model across all RTX GPUs; 6X Dynamic Multi Frame Generation for 240+ FPS at 4K; 400+ supported games
   - Latency: Nvidia Reflex reduces input lag to <50ms
-  - Games: Cyberpunk 2077, Hogwarts Legacy, 300+ supported titles
   - Performance: 2x-3x FPS increase with minimal quality loss
 
   - **AMD FSR (FidelityFX Super Resolution)**:
-  - Open-source spatial upscaling (FSR 1.0/2.0) and temporal (FSR 3.0)
-  - Works on any GPU (NVIDIA, AMD, Intel)
-  - FSR 2.0: Temporal accumulation similar to DLSS
-  - FSR 3.0: Frame generation on RDNA 3 (Radeon RX 7000)
+  - FSR 4 (2025): Machine-learning upscaling initially restricted to RDNA 4 (RX 9000-series) hardware using FP8
+  - FSR 4.1 (mid-2026): ML-powered upscaling extended to RDNA 3 (RX 7000-series) via INT8 model; RDNA 2 support planned 2027
+  - FSR 4.1 supports 300+ games with improved detail retention on thin lines, reduced blurring and smearing
   - Quality modes: Ultra Quality (1.3x), Quality (1.5x), Balanced (1.7x), Performance (2x)
-  - Slightly lower quality than DLSS but broader compatibility
 
   - **Intel XeSS (Xe Super Sampling)**:
   - AI-accelerated upscaling for Intel Arc GPUs

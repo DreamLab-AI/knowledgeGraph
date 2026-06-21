@@ -99,6 +99,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
       "slug": "attention",
       "label": "Attention"
     }

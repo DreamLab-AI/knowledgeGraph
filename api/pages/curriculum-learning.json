@@ -157,8 +157,28 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    },
+    {
       "slug": "ai-in-games",
       "label": "AI in Games"
+    },
+    {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
     },
     {
       "slug": "learning-algorithm",

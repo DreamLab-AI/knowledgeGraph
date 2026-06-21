@@ -1,8 +1,6 @@
 - ### Definition
   - Integrated capture of body, facial, and voice data for real-time animation of digital characters in virtual environments.
 
-bridges-to:: [[Computer Vision]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalPerformanceCapture
   - owl-role:: Process

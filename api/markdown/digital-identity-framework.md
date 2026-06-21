@@ -1,8 +1,6 @@
 - ### Definition
   - Coordinated set of policies and standards governing creation, management, and use of digital identities in metaverse environments.
 
-bridges-to:: [[DID Nostr Identity]]
-
 - ### Semantic Classification
   - owl-class:: infrastructure:DigitalIdentityFramework
   - owl-role:: Object
@@ -13,6 +11,7 @@ bridges-to:: [[DID Nostr Identity]]
 - ### Relationships
   - has-part:: [[Identity Policies]], [[Authentication Standards]], [[Privacy Controls]], [[Trust Mechanisms]]
   - is-part-of:: [[Trust Architecture]], [[Governance Framework]]
+  - bridges-to:: [[DID Nostr Identity]]
   - requires:: [[Cryptographic Systems]], [[Policy Frameworks]], [[Standardization Bodies]]
   - enables:: [[Digital Identity Management]], [[Secure Authentication]], [[Privacy Protection]], [[Cross-Platform Identity]]
 

@@ -153,6 +153,18 @@
   ],
   "backlinks": [
     {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    },
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
       "slug": "behavioral-learning",
       "label": "Behavioral Learning"
     },

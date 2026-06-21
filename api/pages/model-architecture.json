@@ -164,6 +164,14 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },

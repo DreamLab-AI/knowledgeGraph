@@ -211,7 +211,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - Gradient Descent is an iterative first-order optimisation algorithm that minimises a differentiable loss function by repeatedly updating model parameters in the direction of the negative gradient. It is the foundational optimisation strategy for training machine learning models, with variants including batch, stochastic, and mini-batch gradient descent, as well as adaptive-rate methods such as Adam and RMSProp.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:GradientDescent
@@ -226,59 +226,13 @@ public:: true
   - uses:: [[Hyperparameter]]
 
 - ### Content
-  - ### Primary Definition
   **Gradient Descent** is an iterative optimisation algorithm that minimises a loss function by repeatedly updating parameters in the direction of the negative gradient. It is the fundamental optimisation approach for training machine learning models.
-  - ### Original Content
-		- ```
-  # Gradient Descent
-
-  #### Related Concepts
-  - **Backpropagation** (AI-0043): Computes gradients for gradient descent
-		  - **Optimiser** (AI-0046): Advanced gradient descent variants
-		  - **Learning Rate**: Critical hyperparameter for gradient descent
-		  - **Loss Function** (AI-0047): Function minimised by gradient descent
-		  - **Training** (AI-0041): Process using gradient descent
-
-		  ## Formal Ontology
-
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Optimisation and training
-
-		  ### NIST AI RMF
-		  - **Function**: MAP (Understanding training optimisation)
-
-		  ## Related Terms
-		  - **Stochastic Gradient Descent** (AI-0045): Variant of gradient descent
-		  - **Backpropagation** (AI-0043): Provides gradients
-		  - **Optimiser** (AI-0046): Advanced gradient descent methods
-		  - **Loss Function** (AI-0047): Objective function minimised
-
-  #### References
-  1. ISO/IEC 22989:2022 - Training and optimisation
-		  2. NIST AI 100-3 - Technical terminology
-
-		  ---
-
-		  **Authority Score**: 0.95 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-
-		  ```
 
   - ## Gradient Descent and Loss Landscapes
   - **Concept:** Imagine a vast multi-dimensional space representing all the possible configurations of the AI system. Every point in this space has a corresponding loss value. Gradient descent is the process of navigating this landscape, gradually finding our way down to the lowest possible loss, where the AI's performance is optimized.
   - **Complexity:** The process of gradient descent can be complex, involving various strategies for navigating this vast landscape. Researchers have been developing and refining these strategies for years, leading to a wide range of approaches.
   - **Core Requirements:** However, two things are essential for gradient descent: a differentiable loss function, allowing us to calculate the direction of improvement, and a backpropagation algorithm, providing the mechanism to adjust the system's parameters.
 
-  - ## Gradient Descent and Loss Landscapes
-  - **Concept:** Imagine a vast multi-dimensional space representing all the possible configurations of the AI system. Every point in this space has a corresponding loss value. Gradient descent is the process of navigating this landscape, gradually finding our way down to the lowest possible loss, where the AI's performance is optimized.
-  - **Complexity:** The process of gradient descent can be complex, involving various strategies for navigating this vast landscape. Researchers have been developing and refining these strategies for years, leading to a wide range of approaches.
-  - **Core Requirements:** However, two things are essential for gradient descent: a differentiable loss function, allowing us to calculate the direction of improvement, and a backpropagation algorithm, providing the mechanism to adjust the system's parameters.
   # Gradient Descent Ontology Entry – Updated 2025
 
   ## Academic Context

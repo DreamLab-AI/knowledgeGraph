@@ -120,6 +120,10 @@
   ],
   "backlinks": [
     {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
       "slug": "domain-ontology",
       "label": "Domain Ontology"
     },

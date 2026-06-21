@@ -758,12 +758,20 @@
       "label": "3D File Format"
     },
     {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
     },
     {
       "slug": "api",
       "label": "API"
+    },
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
     },
     {
       "slug": "allo-protocol",

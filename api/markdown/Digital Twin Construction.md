@@ -187,8 +187,6 @@ public:: true
 - ### Definition
   - The application of digital twin technology within the architecture, engineering, and construction (AEC) industry, extending BIM capabilities through real-time sensor integration and IoT connectivity to create dynamic virtual replicas of buildings and infrastructure throughout their lifecycle.
 
-bridges-to:: [[Computer Vision]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalTwinConstruction
   - owl-role:: Concept

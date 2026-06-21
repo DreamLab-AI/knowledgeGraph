@@ -132,12 +132,32 @@
   ],
   "backlinks": [
     {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "ai safety research"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
       "slug": "accessibility",
       "label": "Accessibility"
     },
     {
       "slug": "adaptive-control",
       "label": "Adaptive Control"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
     },
     {
       "slug": "optimality",

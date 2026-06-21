@@ -140,6 +140,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.91,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -139,8 +139,177 @@
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "inference-runtime",
+      "label": "Inference Runtime"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "ai-risk-assessment",
+      "label": "AI Risk Assessment"
+    },
+    {
+      "slug": "autonomous-decision-making",
+      "label": "Autonomous Decision-Making"
+    },
+    {
+      "slug": "intelligent-automation",
+      "label": "Intelligent Automation"
+    },
+    {
+      "slug": "edge-ai-system",
+      "label": "Edge AI System"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "ai-system-eu-definition",
+      "label": "AI System (EU Definition)"
+    },
+    {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based System"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "digital-infrastructure",
+      "label": "Digital Infrastructure"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO IEC 42001"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Machine Learning Algorithm"
+    },
+    {
+      "slug": "sociotechnical-system",
+      "label": "Sociotechnical System"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "monitoring",
+      "label": "Monitoring Instrumentation"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "llmops",
+      "label": "LLMOps"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
+    },
+    {
+      "slug": "compound-ai-system",
+      "label": "Compound AI System"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
     {
       "slug": "autonomous-agent",
       "label": "Autonomous Agent"

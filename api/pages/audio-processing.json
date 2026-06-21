@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -164,8 +164,193 @@
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "digital-signal-processing",
+      "label": "Digital Signal Processing"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "fourier-analysis",
+      "label": "Fourier Analysis"
+    },
+    {
+      "slug": "fast-fourier-transform",
+      "label": "Fast Fourier Transform"
+    },
+    {
+      "slug": "nyquist-shannon-sampling-theorem",
+      "label": "Nyquist-Shannon Sampling Theorem"
+    },
+    {
+      "slug": "audio-codec",
+      "label": "Audio Codec"
+    },
+    {
+      "slug": "noise-cancellation",
+      "label": "Noise Cancellation"
+    },
+    {
+      "slug": "audio-feature-extraction",
+      "label": "Audio Feature Extraction"
+    },
+    {
+      "slug": "analogue-to-digital-conversion",
+      "label": "Analogue-to-Digital Conversion"
+    },
+    {
+      "slug": "spectrogram",
+      "label": "Spectrogram"
+    },
+    {
+      "slug": "psychoacoustics",
+      "label": "Psychoacoustics"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "music-generation",
+      "label": "Music Generation"
+    },
+    {
+      "slug": "voice-activity-detection",
+      "label": "Voice Activity Detection"
+    },
+    {
+      "slug": "spatial-audio-system",
+      "label": "Spatial Audio System"
+    },
+    {
+      "slug": "immersive-audio-system",
+      "label": "Immersive Audio System"
+    },
+    {
+      "slug": "audio-spatialisation",
+      "label": "Audio Spatialisation"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "music-information-retrieval",
+      "label": "Music Information Retrieval"
+    },
+    {
+      "slug": "multimedia-processing",
+      "label": "Multimedia Processing"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "telecommunications",
+      "label": "Telecommunications"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "audio-parameters",
+      "label": "Audio Parameters"
+    },
+    {
+      "slug": "mpeg-h-audio",
+      "label": "MPEG-H Audio"
+    },
+    {
+      "slug": "opus-codec",
+      "label": "Opus Codec"
+    },
+    {
+      "slug": "image-processing",
+      "label": "Image Processing"
+    },
+    {
+      "slug": "analogue-signal-processing",
+      "label": "Analogue Signal Processing"
+    },
+    {
+      "slug": "audio-processing-system",
+      "label": "Audio Processing System"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "source-separation",
+      "label": "Source Separation"
+    },
+    {
+      "slug": "residual-vector-quantisation",
+      "label": "Residual Vector Quantisation"
+    },
+    {
+      "slug": "waveform",
+      "label": "Waveform"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
     {
       "slug": "deepfakes",
       "label": "Deepfakes"

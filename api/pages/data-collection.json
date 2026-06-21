@@ -140,6 +140,10 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
       "slug": "behavioral-learning",
       "label": "Behavioral Learning"
     },

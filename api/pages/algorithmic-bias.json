@@ -17,7 +17,16 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:bias-mitigation-techniques",
@@ -26,6 +35,10 @@
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
       }
     ],
     "dependsOn": [],
@@ -49,10 +62,23 @@
       {
         "id": "urn:ngm:class:fairness-metrics",
         "label": "Fairness Metrics"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -78,6 +104,18 @@
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-fairness",
+        "label": "Algorithmic Fairness"
+      },
+      {
+        "id": "urn:ngm:class:automated-decision-making",
+        "label": "Automated Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
       }
     ]
   },
@@ -105,6 +143,78 @@
     {
       "slug": "smart-contract",
       "label": "Smart Contract"
+    },
+    {
+      "slug": "ai-fairness",
+      "label": "AI Fairness"
+    },
+    {
+      "slug": "algorithmic-fairness",
+      "label": "Algorithmic Fairness"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "bias-mitigation-techniques",
+      "label": "Bias Mitigation Techniques"
+    },
+    {
+      "slug": "algorithmic-auditing",
+      "label": "Algorithmic Auditing"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "automated-decision-making",
+      "label": "Automated Decision-Making"
+    },
+    {
+      "slug": "fairness-constraints",
+      "label": "Fairness Constraints"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
     }
   ],
   "backlinks": [
@@ -119,6 +229,26 @@
     {
       "slug": "ai-risks",
       "label": "AI Risks"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
     },
     {
       "slug": "bias-in-large-language-models",

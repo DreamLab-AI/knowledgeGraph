@@ -103,5 +103,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    }
+  ]
 }

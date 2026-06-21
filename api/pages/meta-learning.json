@@ -119,8 +119,16 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
       "slug": "auto-ml",
       "label": "AutoML"
+    },
+    {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
     },
     {
       "slug": "few-shot-learning",

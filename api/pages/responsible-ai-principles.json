@@ -103,6 +103,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     }

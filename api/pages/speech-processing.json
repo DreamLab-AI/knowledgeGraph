@@ -63,6 +63,10 @@
   ],
   "backlinks": [
     {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
       "slug": "emotional-analytics-engine",
       "label": "Emotional Analytics Engine"
     },

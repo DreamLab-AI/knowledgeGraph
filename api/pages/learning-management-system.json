@@ -122,6 +122,18 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-group-formation",
+      "label": "AI Group Formation"
+    },
+    {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
       "slug": "breakout-room",
       "label": "Breakout Room"
     },

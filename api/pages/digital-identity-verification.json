@@ -144,6 +144,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
       "slug": "blockchain-as-a-service",
       "label": "Blockchain As A Service"
     },

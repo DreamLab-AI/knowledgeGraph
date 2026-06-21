@@ -357,8 +357,6 @@ public:: true
 - ### Definition
   - A legally recognized framework defining the boundaries of authority, regulatory control, and legal enforcement within virtual spaces, establishing which laws apply to activities, transactions, and disputes occurring in digital environments.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalJurisdiction
   - owl-role:: Object

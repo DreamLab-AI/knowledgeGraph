@@ -139,8 +139,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
       "slug": "auto-ml",
       "label": "AutoML"
+    },
+    {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
     },
     {
       "slug": "probabilistic-model",

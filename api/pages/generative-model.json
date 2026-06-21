@@ -152,6 +152,22 @@
   ],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
       "slug": "autoregressive-model",
       "label": "Autoregressive Model"
     },

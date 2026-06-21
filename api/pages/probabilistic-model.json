@@ -537,6 +537,10 @@
   ],
   "backlinks": [
     {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
       "slug": "autoregressive-model",
       "label": "Autoregressive Model"
     },

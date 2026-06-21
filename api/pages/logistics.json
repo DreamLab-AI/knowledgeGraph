@@ -46,6 +46,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
       "slug": "cold-chain-monitoring",
       "label": "Cold Chain Monitoring"
     }

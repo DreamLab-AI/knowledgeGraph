@@ -1,8 +1,6 @@
 - ### Definition
   - Technology systems and protocols that control access to, distribution of, and usage rights for digital content including media, software, and virtual assets, increasingly leveraging blockchain and smart contracts for transparent, decentralised rights enforcement and automated royalty distribution.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalRightsManagement
   - owl-role:: Concept
@@ -12,6 +10,7 @@ bridges-to:: [[Blockchain]]
   - is-subclass-of:: [[Content Protection]]
   - requires:: [[Encryption]], [[Smart Contracts]], [[License Management]]
   - enables:: [[Access Control]], [[Royalty Distribution]], [[Piracy Prevention]]
+  - bridges-to:: [[Blockchain]]
 
 - ### Content
 
@@ -26,10 +25,10 @@ bridges-to:: [[Blockchain]]
 		- Transparent: Clear ownership records
 		- Immutable: Tamper-proof rights registry
 		- Automated: Smart contract royalty payments
-  - **Market Growth (2024)**:
-		- Blockchain DRM: $0.16B (53.6% CAGR)
-		- Projected: $1.42B by 2029 (54.2% CAGR)
-  - **2024 Developments**: Elastos Elacity DRM for Web3 video, NFT-based content licensing, music industry blockchain adoption
+  - **Market Growth**:
+		- Blockchain DRM market: $0.25B (2025) growing to $0.39B (2026) at 54.2% CAGR
+		- Projected: $1.7B by 2030 at 44.9% CAGR
+  - **Recent Developments**: Elastos Elacity DRM launched full global rollout (2026) with cinema-grade adaptive streaming and decentralised access control; NFT-based content licensing and music industry blockchain adoption continuing
   - ## Applications
   - Music streaming royalty distribution
   - Video content protection

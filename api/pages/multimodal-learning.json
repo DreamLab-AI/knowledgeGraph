@@ -116,8 +116,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
     },
     {
       "slug": "transformers",

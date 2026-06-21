@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:ngm-hard-fork",
+  "title": "Hard Fork",
+  "slug": "hard-fork",
+  "public": true,
+  "classIri": "urn:ngm:class:hard-fork",
+  "domain": "blockchain",
+  "definition": "A Hard Fork is a backward-incompatible change to a blockchain protocol's consensus rules that permanently diverges the chain into two distinct networks if not universally adopted by all nodes. Because old software versions reject blocks produced under the new rules, a hard fork requires coordinated network-wide consensus to proceed without a chain split. Historical hard forks include the Ethereum/Ethereum Classic split in 2016 and the Bitcoin/Bitcoin Cash split in 2017.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cryptocurrency-mining",
+        "label": "Cryptocurrency Mining"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

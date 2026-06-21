@@ -75,6 +75,10 @@
       "label": "AI Search"
     },
     {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },

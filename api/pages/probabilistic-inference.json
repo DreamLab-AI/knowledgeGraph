@@ -159,6 +159,10 @@
   ],
   "backlinks": [
     {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
       "slug": "bayesian-deep-learning",
       "label": "Bayesian Deep Learning"
     },

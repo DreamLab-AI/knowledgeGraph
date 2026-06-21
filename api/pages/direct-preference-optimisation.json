@@ -150,8 +150,24 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
       "slug": "ai-companions",
       "label": "AI companions"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "answer-ai",
+      "label": "Answer AI"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
     },
     {
       "slug": "safety-and-alignment",

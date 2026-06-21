@@ -139,6 +139,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
     },

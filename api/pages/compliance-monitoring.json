@@ -822,6 +822,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
       "slug": "asset-registry",
       "label": "Asset Registry"
     },

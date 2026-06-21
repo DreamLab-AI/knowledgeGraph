@@ -112,8 +112,6 @@ public:: true
 - ### Definition
   - Digital Technology refers to electronic tools, systems, and platforms that generate, store, or process information in binary or digital form. It encompasses computing hardware, software, networks, and embedded systems that collectively enable the creation, transformation, and distribution of digital content and services, forming the foundational layer of the modern digital economy.
 
-bridges-to:: [[Computer Vision]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalTechnology
   - owl-role:: concept

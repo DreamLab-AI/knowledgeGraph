@@ -1,0 +1,2 @@
+- ### Definition
+  - Inference Optimisation refers to the set of techniques used to reduce the latency, memory usage, and computational cost of running trained AI models in production environments.

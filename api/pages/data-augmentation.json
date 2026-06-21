@@ -125,6 +125,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
     },

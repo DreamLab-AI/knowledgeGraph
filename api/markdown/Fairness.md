@@ -279,35 +279,6 @@ public:: true
 - ### Content
   - The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ethical principles.
 
-		- ### **1. Cooperation**
-			- Respectful cooperation between standards organizations, whereby each respects the autonomy, integrity, processes, and intellectual property rules of the others.
-				- **Due process.** Decisions are made with equity and fairness among participants. No one party dominates or guides standards development. Standards processes are transparent and opportunities exist to appeal decisions. Processes for periodic standards review and updating are well defined.
-				- **Broad consensus.** Processes allow for all views to be considered and addressed, such that agreement can be found across a range of interests.
-				- **Openness.** Standards processes are open to all interested and informed parties.
-
-  ## Formal Specification
-
-  ```yaml
-  term: Fairness
-  definition: "Equitable treatment and outcomes across groups and individuals in AI systems"
-  domain: AI Ethics
-  type: Quality Attribute
-  dimensions:
-  - individual_fairness
-  - group_fairness
-  - procedural_fairness
-  - distributive_fairness
-  metrics:
-  - demographic_parity
-  - equalized_odds
-  - equal_opportunity
-  - calibration
-  - individual_fairness_metrics
-  protected_attributes: [race, gender, age, disability, religion, nationality]
-  ```
-
-  ## Formal Ontology
-
   #### Key Characteristics
   ### Types of Fairness
 
@@ -706,12 +677,6 @@ public:: true
 
 		  *This definition reflects the multifaceted and context-dependent nature of fairness in AI systems, acknowledging both mathematical formalizations and ethical considerations.*
 
-		  ```
-
-  - public-access:: true
-  - definition:: The property of an AI system whereby it produces equitable outcomes and avoids creating or reinforcing unjustifiable disparities across different demographic groups or individuals, measured through various mathematical definitions and ethical principles.
-
-
   # Updated Ontology Entry: Fairness
 
   ## Academic Context
@@ -734,7 +699,7 @@ public:: true
 
   - High-stakes deployment contexts drive urgency
   - Predictive policing, employment screening, and credit scoring represent domains where algorithmic decisions profoundly affect individuals[3]
-  - AI healthcare market valued at $20.9 billion in 2024, forecast to reach $148.4 billion by 2029, necessitating robust fairness frameworks[4]
+  - AI healthcare market valued at approximately $26 billion in 2024 and projected to exceed $500 billion by 2032 (CAGR ~44%), necessitating robust fairness frameworks[4]
   - Medical diagnostics increasingly employ AI-assisted systems where fairness considerations intersect with clinical accuracy requirements[4]
 
   - Technical measurement approaches
@@ -819,36 +784,6 @@ public:: true
 
   [7] UNESCO. "Ethics of Artificial Intelligence—Recommendation on the Ethics of Artificial Intelligence." Global standard established November 2021. Available at: https://www.unesco.org/en/artificial-intelligence/recommendation-ethics
 
-
-  ## Metadata
-
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
-
-  ## Formal Specification
-
-  ```yaml
-  term: Fairness
-  definition: "Equitable treatment and outcomes across groups and individuals in AI systems"
-  domain: AI Ethics
-  type: Quality Attribute
-  dimensions:
-  - individual_fairness
-  - group_fairness
-  - procedural_fairness
-  - distributive_fairness
-  metrics:
-  - demographic_parity
-  - equalized_odds
-  - equal_opportunity
-  - calibration
-  - individual_fairness_metrics
-  protected_attributes: [race, gender, age, disability, religion, nationality]
-  ```
-
-  ## Formal Ontology
 
   #### References
   ### Primary Sources

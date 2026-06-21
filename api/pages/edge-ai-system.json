@@ -119,6 +119,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     }

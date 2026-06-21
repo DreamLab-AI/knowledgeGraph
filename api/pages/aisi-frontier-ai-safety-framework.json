@@ -63,6 +63,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     },

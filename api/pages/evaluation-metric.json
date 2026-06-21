@@ -151,8 +151,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
+      "slug": "ai-evaluation",
+      "label": "AI Evaluation"
+    },
+    {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    },
+    {
       "slug": "active-learning",
       "label": "Active Learning"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
     },
     {
       "slug": "auto-ml",

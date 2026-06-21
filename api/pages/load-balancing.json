@@ -131,6 +131,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
       "slug": "bitcoin-mining",
       "label": "Bitcoin Mining"
     },

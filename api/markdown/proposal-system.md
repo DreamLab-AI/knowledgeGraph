@@ -145,6 +145,7 @@
   - **Deploy v3 on Optimism** (June 2021): First L2 deployment, 42M UNI voted, passed 99.3%
   - **Deploy v3 on Polygon** (December 2021): Second L2 deployment, 45M UNI voted, passed 99.4%
   - **Uniswap Foundation Funding** (June 2022): $74M UNI to foundation, 52M UNI voted, passed 84.3%
+  - **UNIfication Proposal** (December 2025): Passed with 99.9% support (125M+ UNI); burned 100M UNI (~$596M) from treasury, activated protocol fee switch redirecting trading fees to UNI burn, removed Uniswap Labs interface fees, approved 20M UNI annual growth budget
 
   **MakerDAO Dual Governance System:**
 
@@ -172,7 +173,7 @@
   - **Collateral Onboarding**: 100+ new collateral types approved (USDC, wBTC, stETH, RWAs)
   - **Stability Fee Adjustments**: 500+ parameter changes responding to market conditions
   - **DAI Savings Rate Changes**: 200+ DSR adjustments balancing DAI demand
-  - **Sky Protocol Transition** (2024): Controversial restructuring into Sky Ecosystem with NewStable (NST) and NewGovToken (NGT)
+  - **Sky Protocol Transition** (2024–2025): Restructuring into Sky Ecosystem; MKR token retired, SKY governance token launched September 2025; USDS replaced DAI as primary stablecoin
 
   **Compound Autonomous Proposals:**
 
@@ -418,7 +419,7 @@
 
   **AI-Assisted Proposal Creation**: Natural language interfaces enabling non-technical community members to generate executable proposals via AI translation of intent to smart contract code.
 
-  **Futarchy and Prediction Markets**: Proposal evaluation via prediction markets assessing expected protocol impact rather than direct voting (proposed by Robin Hanson, minimal real-world adoption as of 2025).
+  **Futarchy and Prediction Markets**: Proposal evaluation via prediction markets assessing expected protocol impact rather than direct voting (proposed by Robin Hanson). Early real-world adoption emerged 2025-2026: Optimism conducted a 21-day futarchy experiment in March 2025 distributing 500K OP tokens, MetaDAO's launchpad enables new DAOs to launch as futarchies from inception, and DeSci DAO research explores policy-binding conditional prediction markets anchored to KPIs.
 
   **Cross-Chain Proposal Execution**: Unified governance systems enabling single proposal to execute across Ethereum, Arbitrum, Optimism, Polygon simultaneously via cross-chain messaging.
 
@@ -440,10 +441,6 @@
   - [[Snapshot Off-Chain Voting]]
   - [[Tally Governance]]
 
-  ### Original Content
-  - ```
-
-	  ```
 
 - ### Provenance
   - sources::

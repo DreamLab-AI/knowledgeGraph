@@ -143,6 +143,10 @@
   ],
   "backlinks": [
     {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
       "slug": "brain-computer-interfaces",
       "label": "Brain Computer Interfaces"
     },

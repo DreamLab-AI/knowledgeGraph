@@ -12,29 +12,6 @@
 - ### Content
   - The extent to which an AI system's decision-making processes, outputs, and behaviors can be understood and articulated in human-comprehensible terms, enabling stakeholders to grasp how and why specific outcomes were produced.
 
-  ## Formal Specification
-
-  ```yaml
-  term: Explainability
-  definition: "Capability to provide understandable justifications for AI system decisions and behaviors"
-  domain: AI Interpretability
-  type: Quality Attribute
-  approaches:
-  - model_intrinsic
-  - post_hoc
-  - example_based
-  - counterfactual
-  audiences:
-  - end_users
-  - domain_experts
-  - regulators
-  - developers
-  levels:
-  - local_explanations
-  - global_explanations
-  - model_behaviour
-  ```
-
   #### Key Characteristics
   ### Types of Explanations
 
@@ -386,13 +363,6 @@
 
 		  *This definition reflects current best practices in AI explainability and aligns with international regulatory requirements.*
 
-		  ```
-
-  - public-access:: true
-  - definition:: The extent to which an AI system's decision-making processes, outputs, and behaviors can be understood and articulated in human-comprehensible terms, enabling stakeholders to grasp how and why specific outcomes were produced.
-
-
-
   # Explainability Ontology Entry – Updated Content
 
   ## Academic Context
@@ -492,36 +462,6 @@
 
   **Note:** This entry reflects the current state of explainability discourse as of November 2025. The field remains actively evolving, particularly regarding regulatory implementation and technical standardisation. Organisations should treat explainability as foundational to responsible AI deployment rather than compliance checkbox—though admittedly, regulatory pressure does concentrate minds wonderfully.
 
-
-  ## Metadata
-
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
-
-  ## Formal Specification
-
-  ```yaml
-  term: Explainability
-  definition: "Capability to provide understandable justifications for AI system decisions and behaviors"
-  domain: AI Interpretability
-  type: Quality Attribute
-  approaches:
-  - model_intrinsic
-  - post_hoc
-  - example_based
-  - counterfactual
-  audiences:
-  - end_users
-  - domain_experts
-  - regulators
-  - developers
-  levels:
-  - local_explanations
-  - global_explanations
-  - model_behaviour
-  ```
 
   #### References
   ### Primary Sources

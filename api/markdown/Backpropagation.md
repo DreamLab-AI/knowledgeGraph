@@ -251,54 +251,7 @@ public:: true
 - ### Content
   - ### Primary Definition
   **Backpropagation** is an algorithm for training neural networks that computes gradients of the loss function with respect to network weights by propagating error signals backward through the network layers. It enables efficient calculation of gradients needed for gradient descent optimisation.
-  - ### Original Content
-		- ```
-  # Backpropagation
 
-  #### Related Concepts
-  - **Gradient Descent** (AI-0044): Uses backprop gradients for parameter updates
-		  - **Training** (AI-0041): Backprop is a core training mechanism
-		  - **Neural Network**: Backprop trains neural architectures
-		  - **Chain Rule**: Mathematical foundation of backprop
-		  - **Vanishing Gradient**: Problem in deep network backpropagation
-
-		  ## Formal Ontology
-
-		  <details>
-		  <parameter name="summary">Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Training algorithms
-
-		  ### NIST AI RMF
-		  - **Function**: MAP (Understanding model training)
-
-		  ## Related Terms
-		  - **Gradient Descent** (AI-0044): Optimisation using backprop gradients
-		  - **Training** (AI-0041): Process using backpropagation
-		  - **Neural Network**: Architecture trained via backprop
-		  - **Optimiser** (AI-0046): Uses gradients from backprop
-
-  #### References
-  1. Rumelhart, Hinton, Williams - "Learning Representations by Back-Propagating Errors" - Nature, 1986
-		  2. ISO/IEC 22989:2022 - Training concepts
-
-		  ---
-
-		  **Authority Score**: 0.94 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-
-		  ```
-
-  - ### Hypothetical Technical Reasons
-		- CrowdStrike provided detailed workaround steps to mitigate the issue:
-			- **Workaround Steps**: Instructions included rebooting hosts, deleting problematic files, and rolling back to previous snapshots ([CrowdStrike Blog](https://www.crowdstrike.com/blog/statement-on-falcon-content-update-for-windows-hosts/)).
-			- **AWS and Azure Environments**: Specific guidance was provided for these environments to address the issue effectively ([CrowdStrike Blog](https://www.crowdstrike.com/blog/statement-on-falcon-content-update-for-windows-hosts/)).
-
-  - ## The Challenge of Predictability
   # Backpropagation Ontology Entry – Updated 2025
 
   ## Academic Context

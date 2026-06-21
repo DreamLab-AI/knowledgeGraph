@@ -654,6 +654,14 @@
       "label": "AI Energy Optimisation"
     },
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
       "slug": "aiops",
       "label": "AIOps"
     },
@@ -674,12 +682,24 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "affective-computing-system",
+      "label": "Affective Computing System"
+    },
+    {
       "slug": "architecture",
       "label": "Architecture"
     },
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "asynchronous-execution",
       "label": "Asynchronous Execution"
+    },
+    {
+      "slug": "audience-engagement",
+      "label": "Audience Engagement"
     },
     {
       "slug": "bandwidth-adaptation",

@@ -101,6 +101,10 @@
   ],
   "backlinks": [
     {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
       "slug": "generative-design-tool",
       "label": "Generative Design Tool"
     }

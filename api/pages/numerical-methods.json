@@ -145,8 +145,16 @@
   ],
   "backlinks": [
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
       "slug": "applied-mathematics",
       "label": "Applied Mathematics"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
     },
     {
       "slug": "collision-detection",

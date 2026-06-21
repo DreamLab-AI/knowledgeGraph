@@ -37,8 +37,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
       "slug": "ai-companies",
       "label": "AI Companies"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
     },
     {
       "slug": "agentic-internet",

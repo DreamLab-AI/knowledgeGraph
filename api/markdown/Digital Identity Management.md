@@ -328,8 +328,6 @@ public:: true
 - ### Definition
   - The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform authentication.
 
-bridges-to:: [[DID Nostr Identity]]
-
 - ### Semantic Classification
   - owl-class:: infrastructure:DigitalIdentityManagement
   - owl-role:: Concept
@@ -339,6 +337,7 @@ bridges-to:: [[DID Nostr Identity]]
   - is-subclass-of:: [[Identity Systems]]
   - requires:: [[Cryptographic Keys]], [[Identity Providers]], [[Credential Storage]]
   - enables:: [[User Authentication]], [[Cross-Platform Identity]], [[Privacy Control]]
+  - bridges-to:: [[DID Nostr Identity]]
 
 - ### Content
 
@@ -352,11 +351,11 @@ bridges-to:: [[DID Nostr Identity]]
 		- Representation: Avatars and visual presence
 		- Data: Behaviors, preferences, actions
 		- Identification: Authentication credentials
-  - **2024 Developments**:
+  - **Recent Developments**:
 		- Tech Mahindra + EarthID SSI metaverse platform
 		- US DHS contracts for privacy-enhanced digital wallets
-		- EU eIDAS 2.0 preparation for 2025 launch
-		- Market growth: $2.17B to $101B by 2031 (73.12% CAGR)
+		- EU eIDAS 2.0 (Regulation (EU) 2024/1183) in force since May 2024; member states must deliver compliant EUDI Wallets to citizens by December 2026
+		- Self-sovereign identity market valued at approximately $3.49B in 2025, forecast to reach $1,153B by 2034 (CAGR ~90%)
   - **Standards**: W3C DID Core 1.0, Verifiable Credentials, ISO identity assurance
   - ## Applications
   - Metaverse authentication

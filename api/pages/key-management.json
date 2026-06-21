@@ -132,6 +132,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
       "slug": "bit-go",
       "label": "BitGo"
     },

@@ -64,7 +64,7 @@
 
   **2020s**: [[COVID-19]] acceleration, [[XR Collaboration]] platforms, [[NeRF]]/[[Gaussian Splatting]] breakthroughs, [[AI Avatars]], [[Blockchain Employment]]
 
-  **2025 State**: [[Apple Vision Pro]] mainstreaming, [[Meta Quest 3]] mass adoption, [[AI-Generated Avatars]], [[Real-Time Neural Rendering]], [[Lightning Network]] payroll integration
+  **2025–2026 State**: [[Meta Quest 3]] mass adoption, [[AI-Generated Avatars]], [[Real-Time Neural Rendering]], [[Lightning Network]] payroll integration; [[Apple Vision Pro]] development halted by Apple in April 2026 after weak sales (~600,000 units shipped since 2024 launch), with the M5 refresh the final iteration; Apple redirecting to AI-powered smart glasses targeting 2027
 
   ## XR (Extended Reality) Integration
 
@@ -80,14 +80,14 @@
   - Resolution: 2064×2208 per eye, [[Pancake Lenses]] for comfort
   - Price: $499 (128GB), democratizing VR collaboration
 
-  **[[Apple Vision Pro]]** (2024-present):
+  **[[Apple Vision Pro]]** (2024–2026, development discontinued):
   - [[Spatial Computing Paradigm]] paradigm, [[visionOS]] platform
   - [[EyeSight]]: External display showing user's eyes for social presence
   - [[Personas]]: [[Machine Learning Discipline]]-generated 3D avatars
   - [[SharePlay]]: Multi-user AR/VR experiences
   - Resolution: 23M pixels (3680×3140 per eye)
-  - [[M2]]/[[R1]] chips for <12ms motion-to-photon latency
-  - Price: $3,499 (enterprise/professional segment)
+  - [[M2]]/[[R1]] chips for <12ms motion-to-photon latency; M5 refresh (Oct 2025) was final iteration
+  - Price: $3,499 (enterprise/professional segment); ~600,000 units sold total before Apple halted development (April 2026) due to weak demand and high return rates
 
   **[[HTC Vive XR Elite]]** (2023-present):
   - Modular design: Standalone or PC-tethered

@@ -157,12 +157,52 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "affective-computing-system",
+      "label": "Affective Computing System"
+    },
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "asynchronous-video",
       "label": "Asynchronous Video"
     },
     {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
       "slug": "attention",
       "label": "Attention"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
     },
     {
       "slug": "automated-podcasting",

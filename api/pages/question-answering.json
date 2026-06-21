@@ -144,6 +144,10 @@
   ],
   "backlinks": [
     {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "dialogue-system",
       "label": "Dialogue System"
     },

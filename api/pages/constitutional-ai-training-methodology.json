@@ -134,5 +134,14 @@
       "label": "MetaverseDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
+    }
+  ]
 }

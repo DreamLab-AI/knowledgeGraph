@@ -99,5 +99,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    }
+  ]
 }

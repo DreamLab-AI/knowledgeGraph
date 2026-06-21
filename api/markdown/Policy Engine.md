@@ -250,24 +250,7 @@ public:: true
   - relatedTo [[Content Moderation]]
 
 - ### Content
-  - automated component that applies governance or access-control rules within a metaverse system.
-  - ### Original Content
-		- ```
-  # Policy Engine
-
-		  ## Core Properties
-
-		  ## Classification
-
-		  ## Ontological Relationships
-
-		  ## Terminology
-
-  #### References
-  additional-sources:: ETSI GR ARF 010 · OMA3 WG · ISO 37301
-
-		  ## Notes
-		  Relates to oversight and decision mechanisms for standards and user conduct within metaverse ecosystems.
+  - A Policy Engine is an automated software component that evaluates, enforces, and logs governance, access-control, and behavioural rules within a metaverse or spatial computing system. It interprets declarative policy specifications (e.g., XACML, OPA Rego, or bespoke ontology-derived rules) and applies them at runtime to user actions, asset transactions, and inter-platform communications, enabling consistent compliance across distributed, multi-stakeholder virtual environments.
 
 - ### Provenance
   - sources:: [[ETSI + OMA3]]

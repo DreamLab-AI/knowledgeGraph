@@ -153,6 +153,30 @@
   ],
   "backlinks": [
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-evaluation",
+      "label": "AI Evaluation"
+    },
+    {
       "slug": "ai-fairness",
       "label": "AI Fairness"
     },
@@ -165,6 +189,10 @@
       "label": "AI Liability"
     },
     {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
       "slug": "ai-risk",
       "label": "AI Risk"
     },
@@ -173,8 +201,52 @@
       "label": "AI Risks"
     },
     {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
       "slug": "algorithmic-bias-and-variance",
       "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
     },
     {
       "slug": "bias-in-large-language-models",

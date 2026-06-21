@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.88,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,6 +21,14 @@
       {
         "id": "urn:ngm:class:content-creation",
         "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:digital-content",
+        "label": "Digital Content"
+      },
+      {
+        "id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
       }
     ],
     "enables": [
@@ -31,18 +39,38 @@
       {
         "id": "urn:ngm:class:creator-economy",
         "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
+      },
+      {
+        "id": "urn:ngm:class:community-building",
+        "label": "Community Building"
+      },
+      {
+        "id": "urn:ngm:class:loyalty-programs",
+        "label": "Loyalty Programs"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:content-creation",
         "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:gamification",
         "label": "Gamification"
+      },
+      {
+        "id": "urn:ngm:class:natural-interaction",
+        "label": "Natural Interaction"
       }
     ],
     "contrastsWith": [],
@@ -50,6 +78,10 @@
       {
         "id": "urn:ngm:class:creator-economy",
         "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-content-pipeline",
+        "label": "Metaverse Content Pipeline"
       }
     ],
     "uses": [
@@ -60,6 +92,22 @@
       {
         "id": "urn:ngm:class:gamification",
         "label": "Gamification"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:data-analytics",
+        "label": "Data Analytics"
       }
     ],
     "supports": [
@@ -70,6 +118,10 @@
       {
         "id": "urn:ngm:class:virtual-event",
         "label": "Virtual Event"
+      },
+      {
+        "id": "urn:ngm:class:social-platform",
+        "label": "Social Platform"
       }
     ],
     "standardizedBy": [],
@@ -77,6 +129,10 @@
       {
         "id": "urn:ngm:class:content-creation",
         "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
       }
     ],
     "relatedTo": [
@@ -87,9 +143,214 @@
       {
         "id": "urn:ngm:class:content-distribution",
         "label": "Content Distribution"
+      },
+      {
+        "id": "urn:ngm:class:advertising-technology",
+        "label": "Advertising Technology"
+      },
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "id": "urn:ngm:class:subscription-model",
+        "label": "Subscription Model"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "user-engagement",
+      "label": "User Engagement"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "live-streaming",
+      "label": "Live Streaming"
+    },
+    {
+      "slug": "gamification",
+      "label": "Gamification"
+    },
+    {
+      "slug": "live-polls-and-qanda",
+      "label": "Live Polls and QandA"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "content-distribution",
+      "label": "Content Distribution"
+    },
+    {
+      "slug": "virtual-event",
+      "label": "Virtual Event"
+    },
+    {
+      "slug": "recommendation-systems",
+      "label": "Recommendation Systems"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "social-platform",
+      "label": "Social Platform"
+    },
+    {
+      "slug": "digital-content",
+      "label": "Digital Content"
+    },
+    {
+      "slug": "natural-interaction",
+      "label": "Natural Interaction"
+    },
+    {
+      "slug": "reward-function",
+      "label": "Reward Function"
+    },
+    {
+      "slug": "user-interface",
+      "label": "User Interface"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "loyalty-programs",
+      "label": "Loyalty Programs"
+    },
+    {
+      "slug": "video-streaming",
+      "label": "Video Streaming"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "real-time-communication",
+      "label": "Real-Time Communication"
+    },
+    {
+      "slug": "digital-marketplace",
+      "label": "Digital Marketplace"
+    },
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "data-analytics",
+      "label": "Data Analytics"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "community-building",
+      "label": "Community Building"
+    },
+    {
+      "slug": "moderation",
+      "label": "Moderation"
+    },
+    {
+      "slug": "advertising-technology",
+      "label": "Advertising Technology"
+    },
+    {
+      "slug": "subscription-model",
+      "label": "Subscription Model"
+    },
+    {
+      "slug": "content-monetisation",
+      "label": "Content Monetisation"
+    },
+    {
+      "slug": "token-economy",
+      "label": "Token Economy"
+    },
+    {
+      "slug": "creator-royalty-token",
+      "label": "Creator Royalty Token"
+    },
+    {
+      "slug": "parasocial-relationship",
+      "label": "Parasocial Relationship"
+    },
+    {
+      "slug": "watch-time",
+      "label": "Watch Time"
+    },
+    {
+      "slug": "interaction-rate",
+      "label": "Interaction Rate"
+    },
+    {
+      "slug": "network-effects",
+      "label": "Network Effects"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "virtual-reality",
+      "label": "Virtual Reality"
+    },
+    {
+      "slug": "online-safety-act",
+      "label": "Online Safety Act"
+    },
+    {
+      "slug": "digital-services-act",
+      "label": "Digital Services Act"
+    },
+    {
+      "slug": "creator-economy-platform",
+      "label": "Creator Economy Platform"
+    },
+    {
+      "slug": "short-form-video",
+      "label": "Short-Form Video"
+    },
+    {
+      "slug": "esports",
+      "label": "Esports"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    }
+  ],
   "backlinks": []
 }

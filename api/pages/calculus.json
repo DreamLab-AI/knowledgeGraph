@@ -90,6 +90,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     }

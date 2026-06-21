@@ -1,8 +1,6 @@
 - ### Definition
   - The automated or semi-automated process of creating digital twin models using AI, machine learning, and advanced 3D capture technologies, enabling rapid production of virtual replicas with reduced manual effort and accelerated deployment timelines for industrial and enterprise applications.
 
-bridges-to:: [[Computer Vision]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalTwinGeneration
   - owl-role:: Concept
@@ -12,6 +10,7 @@ bridges-to:: [[Computer Vision]]
   - is-subclass-of:: [[Automated Modeling]]
   - requires:: [[Generative AI]], [[3D Capture]], [[Machine Learning Discipline]]
   - enables:: [[Rapid Prototyping]], [[Mass Digitization]], [[AI Training]]
+  - bridges-to:: [[Computer Vision]]
 
 - ### Content
 

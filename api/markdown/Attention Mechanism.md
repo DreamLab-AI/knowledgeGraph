@@ -254,49 +254,6 @@ public:: true
   - relatedTo:: [[Explainable AI]]
 
 - ### Content
-  - ### Primary Definition
-  An **Attention Mechanism** is a neural network component that enables models to dynamically focus on different parts of the input when producing each element of the output. Attention computes weighted combinations of input representations, where weights indicate the relative importance of each input element.
-  - ### Original Content
-		- ```
-  # Attention Mechanism
-
-  #### Related Concepts
-  - **Transformer**: Architecture built entirely on attention mechanisms
-		  - **Sequence-to-Sequence**: Early application domain for attention
-		  - **Interpretability**: Attention weights aid model interpretation
-		  - **Large Language Model**: Relies on multi-head self-attention
-
-		  ## Formal Ontology
-
-		  <details>
-		  <parameter name="summary">Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Neural network components
-
-		  ### NIST AI RMF
-		  - **Function**: MEASURE (Interpretability through attention visualisation)
-
-		  ## Related Terms
-		  - **Transformer** (AI-0037): Architecture using attention as core mechanism
-		  - **Large Language Model**: Uses multi-head attention extensively
-		  - **Interpretability**: Attention weights provide some explainability
-		  - **Recurrent Neural Network** (AI-0033): Attention originally added to RNNs
-
-  #### References
-  1. Bahdanau et al. - "Neural Machine Translation by Jointly Learning to Align and Translate" - ICLR, 2015
-		  2. Vaswani et al. - "Attention Is All You Need" - NeurIPS, 2017
-		  3. NIST AI 100-3 - Technical terminology
-
-		  ---
-
-		  **Authority Score**: 0.93 | **Standards Compliance**: ✓ NIST
-
-		  ```
   ## Academic Context
 
   - Attention mechanisms in machine learning are techniques that enable models to dynamically focus on the most relevant parts of input data when making predictions.
@@ -307,7 +264,7 @@ public:: true
   - Multi-head attention extends this by attending to multiple representation subspaces simultaneously, enhancing contextual understanding.
   - Attention mechanisms underpin state-of-the-art architectures such as Transformers and models like BERT, revolutionising natural language processing (NLP), computer vision, and speech processing.
 
-  ## Current Landscape (2025)
+  ## Current Landscape (2026)
 
   - Industry adoption is widespread across AI applications including language translation, text summarisation, image captioning, and speech recognition.
   - Leading technology companies and platforms integrate attention-based models to improve accuracy and efficiency.
@@ -315,8 +272,11 @@ public:: true
   - Manchester and Leeds host AI startups leveraging attention for NLP and computer vision applications.
   - Newcastle and Sheffield contribute through academic research and collaborations with industry.
   - Technical capabilities include improved handling of long sequences, enhanced interpretability by highlighting influential input segments, and adaptability across modalities.
-  - Limitations remain in computational cost, especially for very large models, and challenges in fully understanding attention weights as explanations.
-  - Standards and frameworks continue evolving, with open-source libraries (e.g., Hugging Face Transformers) providing accessible implementations and fostering community development.
+  - Flash Attention 4 (March 2026) achieves approximately 1,605 TFLOPs/s on NVIDIA B200 GPUs with 71% hardware utilisation, providing exact (non-approximate) attention at substantially reduced cost.
+  - State Space Models (SSMs) such as Mamba are emerging as alternatives offering linear scaling; hybrid architectures blending transformer attention with SSM efficiency are an active 2026 research direction.
+  - Rotary Positional Embeddings (RoPE) now enable context windows exceeding one million tokens in production models.
+  - Limitations remain in quadratic scaling of standard attention with sequence length, and challenges in fully understanding attention weights as explanations.
+  - Standards and frameworks continue evolving, with open-source libraries (e.g., Hugging Face Transformers, now hosting over 2 million models across 50,000+ organisations) providing accessible implementations and fostering community development.
 
   ## Research & Literature
 

@@ -106,6 +106,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
       "slug": "economics",
       "label": "Economics"
     },

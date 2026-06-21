@@ -128,6 +128,30 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "agent2-agent-protocol-google-2025",
+      "label": "Agent2Agent Protocol (Google 2025)"
+    },
+    {
       "slug": "communication-layer",
       "label": "Communication Layer"
     },

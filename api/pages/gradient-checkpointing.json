@@ -143,6 +143,14 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
     },

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:ngm-dataset",
+  "title": "Dataset",
+  "slug": "dataset",
+  "public": true,
+  "classIri": "urn:ngm:class:dataset",
+  "domain": "artificial-intelligence",
+  "definition": "A Dataset is a structured collection of data records sharing a common schema, gathered for a specific purpose such as training machine learning models, conducting research, or supporting analytics. Datasets are characterised by their size, modality (text, image, tabular, etc.), provenance, and licensing terms, all of which affect their fitness for use. Data quality, curation methodology, and bias documentation are critical attributes that determine the reliability of downstream AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

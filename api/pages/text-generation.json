@@ -285,6 +285,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
     },

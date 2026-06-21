@@ -10,10 +10,14 @@
     {
       "id": "urn:ngm:class:simulation",
       "label": "Simulation"
+    },
+    {
+      "id": "urn:ngm:class:complex-systems-science",
+      "label": "Complex Systems Science"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.87,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -28,6 +32,14 @@
       {
         "id": "urn:ngm:class:emergence",
         "label": "Emergence"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
       }
     ],
     "requires": [
@@ -38,6 +50,10 @@
       {
         "id": "urn:ngm:class:discrete-event-simulation",
         "label": "Discrete Event Simulation"
+      },
+      {
+        "id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
       }
     ],
     "enables": [
@@ -56,6 +72,18 @@
       {
         "id": "urn:ngm:class:supply-chain-optimisation",
         "label": "Supply Chain Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:policy-simulation",
+        "label": "Policy Simulation"
+      },
+      {
+        "id": "urn:ngm:class:collective-intelligence",
+        "label": "Collective Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
       }
     ],
     "dependsOn": [
@@ -66,18 +94,30 @@
       {
         "id": "urn:ngm:class:stochastic-process",
         "label": "Stochastic Process"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-modelling",
+        "label": "Behavioural Modelling"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:complex-adaptive-systems",
         "label": "Complex Adaptive Systems"
+      },
+      {
+        "id": "urn:ngm:class:artificial-life",
+        "label": "Artificial Life"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:system-dynamics",
         "label": "System Dynamics"
+      },
+      {
+        "id": "urn:ngm:class:equation-based-modelling",
+        "label": "Equation-Based Modelling"
       }
     ],
     "bridgesTo": [
@@ -92,6 +132,10 @@
       {
         "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
       }
     ],
     "uses": [
@@ -106,6 +150,18 @@
       {
         "id": "urn:ngm:class:monte-carlo-simulation",
         "label": "Monte Carlo Simulation"
+      },
+      {
+        "id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      },
+      {
+        "id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
       }
     ],
     "supports": [
@@ -116,13 +172,25 @@
       {
         "id": "urn:ngm:class:policy-simulation",
         "label": "Policy Simulation"
+      },
+      {
+        "id": "urn:ngm:class:social-simulation",
+        "label": "Social Simulation"
+      },
+      {
+        "id": "urn:ngm:class:urban-computing",
+        "label": "Urban Computing"
       }
     ],
     "standardizedBy": [],
     "partOf": [
       {
-        "id": "urn:ngm:class:complex-systems",
+        "id": "urn:ngm:class:complex-systems-science",
         "label": "Complex Systems Science"
+      },
+      {
+        "id": "urn:ngm:class:computational-social-science",
+        "label": "Computational Social Science"
       }
     ],
     "relatedTo": [
@@ -135,8 +203,12 @@
         "label": "Network Science"
       },
       {
-        "id": "urn:ngm:class:social-simulation",
-        "label": "Social Simulation"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ]
   },
@@ -156,9 +228,165 @@
     {
       "slug": "multi-agent-systems",
       "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "cellular-automata",
+      "label": "Cellular Automata"
+    },
+    {
+      "slug": "monte-carlo-simulation",
+      "label": "Monte Carlo Simulation"
+    },
+    {
+      "slug": "epidemiological-modelling",
+      "label": "Epidemiological Modelling"
+    },
+    {
+      "slug": "crowd-simulation",
+      "label": "Crowd Simulation"
+    },
+    {
+      "slug": "supply-chain-optimisation",
+      "label": "Supply Chain Optimisation"
+    },
+    {
+      "slug": "policy-simulation",
+      "label": "Policy Simulation"
+    },
+    {
+      "slug": "system-dynamics",
+      "label": "System Dynamics"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "network-science",
+      "label": "Network Science"
+    },
+    {
+      "slug": "social-simulation",
+      "label": "Social Simulation"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "discrete-event-simulation",
+      "label": "Discrete Event Simulation"
+    },
+    {
+      "slug": "complex-systems-science",
+      "label": "Complex Systems Science"
+    },
+    {
+      "slug": "environment-model",
+      "label": "Environment Model"
+    },
+    {
+      "slug": "equation-based-modelling",
+      "label": "Equation-Based Modelling"
+    },
+    {
+      "slug": "sensitivity-analysis",
+      "label": "Sensitivity Analysis"
+    },
+    {
+      "slug": "multi-agent-reinforcement-learning",
+      "label": "Multi-Agent Reinforcement Learning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "genetic-algorithm",
+      "label": "Genetic Algorithm"
+    },
+    {
+      "slug": "urban-computing",
+      "label": "Urban Computing"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
+      "slug": "computational-social-science",
+      "label": "Computational Social Science"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    },
+    {
+      "slug": "scientific-computing",
+      "label": "Scientific Computing"
+    },
+    {
+      "slug": "collective-intelligence",
+      "label": "Collective Intelligence"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "behavioural-modelling",
+      "label": "Behavioural Modelling"
+    },
+    {
+      "slug": "artificial-life",
+      "label": "Artificial Life"
+    },
+    {
+      "slug": "parallel-computing",
+      "label": "Parallel Computing"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
     }
   ],
   "backlinks": [
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
     {
       "slug": "economic-model",
       "label": "Economic Model"

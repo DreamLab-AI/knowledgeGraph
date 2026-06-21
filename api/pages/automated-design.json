@@ -5,18 +5,39 @@
   "public": true,
   "classIri": "urn:ngm:class:automated-design",
   "domain": "ai",
-  "definition": "The application of computational algorithms, machine learning, and optimisation techniques to generate, evaluate, and refine design artefacts with minimal or no manual intervention. Automated design spans domains from electronic circuit layout and architectural floor planning to product geometry synthesis and material specification, dramatically compressing design cycles whilst exploring solution spaces too large for human enumeration.",
+  "definition": "Automated Design is the application of computational algorithms, machine learning, and optimisation techniques \u2014 spanning combinatorial search, gradient-based topology optimisation, evolutionary algorithms, reinforcement learning, and deep generative modelling \u2014 to generate, evaluate, and iteratively refine design artefacts with minimal or no step-by-step human direction. The field encompasses electronic design automation (EDA) for integrated circuits and printed circuit boards, neural architecture search (NAS) for machine-learning model topologies, topology optimisation for structural engineering, generative architectural layout synthesis, and LLM-assisted hardware description language generation. The unifying abstraction is the design space traversal guided by evaluation functions encoding physical, functional, economic, or aesthetic criteria: the algorithm explores candidate designs, evaluates each against the specified criteria, and updates its search strategy to navigate toward regions of the space satisfying design objectives. Commercial impact has been transformative across semiconductor, aerospace, automotive, and construction sectors, where design cycles have been compressed from months to days whilst exploring solution spaces too large for human enumeration.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:generative-design",
       "label": "Generative Design"
+    },
+    {
+      "id": "urn:ngm:class:optimisation",
+      "label": "Optimisation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "emerging",
+  "qualityScore": 0.88,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:topology-optimisation",
+        "label": "Topology Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:electronic-design-automation",
+        "label": "Electronic Design Automation"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -24,12 +45,34 @@
         "label": "Generative Design Tool"
       },
       {
-        "id": "urn:ngm:class:hyperparameter-optimisation",
-        "label": "Hyperparameter Optimisation"
+        "id": "urn:ngm:class:smart-manufacturing",
+        "label": "Smart Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:automl",
+        "label": "AutoML"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:parametric-design-methodology",
+        "label": "Parametric Design Methodology"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
@@ -44,6 +87,26 @@
       {
         "id": "urn:ngm:class:simulation",
         "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-algorithm",
+        "label": "Evolutionary Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
       }
     ],
     "supports": [],
@@ -61,10 +124,167 @@
       {
         "id": "urn:ngm:class:constraint-based-design",
         "label": "Constraint Based Design"
+      },
+      {
+        "id": "urn:ngm:class:additive-manufacturing",
+        "label": "Additive Manufacturing"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "generative-design",
+      "label": "Generative Design"
+    },
+    {
+      "slug": "generative-design-tool",
+      "label": "Generative Design Tool"
+    },
+    {
+      "slug": "hyperparameter-optimisation",
+      "label": "Hyperparameter Optimisation"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "cad-software",
+      "label": "CAD Software"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "neural-architecture-search",
+      "label": "Neural Architecture Search"
+    },
+    {
+      "slug": "topology-optimisation",
+      "label": "Topology Optimisation"
+    },
+    {
+      "slug": "electronic-design-automation",
+      "label": "Electronic Design Automation"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "evolutionary-algorithm",
+      "label": "Evolutionary Algorithm"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "smart-manufacturing",
+      "label": "Smart Manufacturing"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "parametric-design-methodology",
+      "label": "Parametric Design Methodology"
+    },
+    {
+      "slug": "automl",
+      "label": "AutoML"
+    },
+    {
+      "slug": "additive-manufacturing",
+      "label": "Additive Manufacturing"
+    },
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "surrogate-model",
+      "label": "Surrogate Model"
+    },
+    {
+      "slug": "multi-objective-optimisation",
+      "label": "Multi-Objective Optimisation"
+    },
+    {
+      "slug": "hardware-description-language",
+      "label": "Hardware Description Language"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "parametric-modeling",
+      "label": "Parametric Modeling"
+    }
+  ],
   "backlinks": [
     {
       "slug": "generative-ai",

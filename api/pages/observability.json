@@ -168,6 +168,18 @@
   ],
   "backlinks": [
     {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
       "slug": "site-reliability-engineering",
       "label": "Site Reliability Engineering"
     },

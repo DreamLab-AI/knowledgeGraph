@@ -135,12 +135,28 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
     },
     {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
     },
     {
       "slug": "inworld-ai",

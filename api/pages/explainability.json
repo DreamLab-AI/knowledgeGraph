@@ -173,12 +173,48 @@
   ],
   "backlinks": [
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
       "slug": "ai-development",
       "label": "AI Development"
     },
     {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
       "slug": "ai-user",
       "label": "AI User"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
     },
     {
       "slug": "human-oversight",

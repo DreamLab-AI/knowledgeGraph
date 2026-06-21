@@ -119,6 +119,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
+    },
+    {
       "slug": "reasoning",
       "label": "Reasoning"
     },

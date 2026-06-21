@@ -123,6 +123,10 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "accessibility-tree",
+      "label": "Accessibility Tree"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
     },

@@ -307,8 +307,40 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
       "slug": "attention",
       "label": "Attention"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
     },
     {
       "slug": "drug-discovery-ai",

@@ -5,40 +5,364 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-group-formation",
   "domain": "ai",
-  "definition": "AI Group Formation is the automated assignment of participants into subgroups using models that optimize for criteria such as skill balance, topic affinity, social diversity, or learning objectives. In collaborative and meeting platforms it drives features like intelligent breakout-room allocation, replacing manual or random grouping. The technique combines clustering, optimization, and sometimes reinforcement learning over participant attributes and interaction signals.",
+  "definition": "AI Group Formation is the automated assignment of participants into subgroups using models that optimise for criteria such as skill balance, topic affinity, social diversity, or learning objectives. In collaborative and meeting platforms it drives features like intelligent breakout-room allocation, replacing manual or random grouping. The technique combines clustering, optimisation, and sometimes reinforcement learning over participant attributes and interaction signals.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
+    },
+    {
+      "id": "urn:ngm:class:combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.87,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:participant-profiling",
+        "label": "Participant Profiling"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
+      },
+      {
+        "id": "urn:ngm:class:diversity-optimisation",
+        "label": "Diversity Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:skill-matching",
+        "label": "Skill Matching"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:distance-metric",
+        "label": "Distance Metric"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "id": "urn:ngm:class:participation-equity",
+        "label": "Participation Equity"
+      },
       {
         "id": "urn:ngm:class:breakout-room",
         "label": "Breakout Room"
       },
       {
+        "id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      },
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manual-room-assignment",
+        "label": "Manual Room Assignment"
+      },
+      {
+        "id": "urn:ngm:class:automatic-grouping",
+        "label": "Automatic Grouping (random)"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "id": "urn:ngm:class:genetic-algorithm",
+        "label": "Genetic Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:recommender-system",
+        "label": "Recommender System"
+      }
+    ],
+    "supports": [
+      {
         "id": "urn:ngm:class:educational-technology",
         "label": "Educational Technology"
+      },
+      {
+        "id": "urn:ngm:class:corporate-training",
+        "label": "Corporate Training"
+      },
+      {
+        "id": "urn:ngm:class:remote-education",
+        "label": "Remote Education"
+      },
+      {
+        "id": "urn:ngm:class:conference-facilitation",
+        "label": "Conference Facilitation"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-network-analysis",
+        "label": "Social Network Analysis"
+      },
+      {
+        "id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "breakout-room",
+      "label": "Breakout Room"
+    },
+    {
+      "slug": "educational-technology",
+      "label": "Educational Technology"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "unsupervised-learning",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "collaborative-learning",
+      "label": "Collaborative Learning"
+    },
+    {
+      "slug": "team-formation",
+      "label": "Team Formation"
+    },
+    {
+      "slug": "participant-profiling",
+      "label": "Participant Profiling"
+    },
+    {
+      "slug": "cooperative-learning",
+      "label": "Cooperative Learning"
+    },
+    {
+      "slug": "learning-management-system",
+      "label": "Learning Management System"
+    },
+    {
+      "slug": "learning-analytics",
+      "label": "Learning Analytics"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "genetic-algorithm",
+      "label": "Genetic Algorithm"
+    },
+    {
+      "slug": "k-means-clustering",
+      "label": "K-Means Clustering"
+    },
+    {
+      "slug": "embedding",
+      "label": "Embedding"
+    },
+    {
+      "slug": "recommender-system",
+      "label": "Recommender System"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "diversity-optimisation",
+      "label": "Diversity Optimisation"
+    },
+    {
+      "slug": "skill-matching",
+      "label": "Skill Matching"
+    },
+    {
+      "slug": "social-network-analysis",
+      "label": "Social Network Analysis"
+    },
+    {
+      "slug": "videoconferencing-platform",
+      "label": "Videoconferencing Platform"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "peer-learning",
+      "label": "Peer Learning"
+    },
+    {
+      "slug": "team-communication-platform",
+      "label": "Team Communication Platform"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "corporate-training",
+      "label": "Corporate Training"
+    },
+    {
+      "slug": "remote-education",
+      "label": "Remote Education"
+    },
+    {
+      "slug": "participation-equity",
+      "label": "Participation Equity"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "multi-objective-optimisation",
+      "label": "Multi-Objective Optimisation"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "manual-room-assignment",
+      "label": "Manual Room Assignment"
+    },
+    {
+      "slug": "personalised-learning",
+      "label": "Personalised Learning"
+    },
+    {
+      "slug": "automatic-grouping",
+      "label": "Automatic Grouping"
+    },
+    {
+      "slug": "ai-application",
+      "label": "AI Application"
+    },
+    {
+      "slug": "conference-facilitation",
+      "label": "Conference Facilitation"
+    },
+    {
+      "slug": "distributed-team-collaboration",
+      "label": "Distributed Team Collaboration"
+    },
+    {
+      "slug": "graph-analytics",
+      "label": "Graph Analytics"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
+      "slug": "distance-metric",
+      "label": "Distance Metric"
+    },
+    {
+      "slug": "group-facilitation-tools",
+      "label": "Group Facilitation Tools"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "virtual-workshop",
+      "label": "Virtual Workshop"
+    },
+    {
+      "slug": "scaled-workshop-facilitation",
+      "label": "Scaled Workshop Facilitation"
+    },
+    {
+      "slug": "problem-based-learning",
+      "label": "Problem-Based Learning"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    }
+  ],
   "backlinks": [
     {
       "slug": "breakout-room",

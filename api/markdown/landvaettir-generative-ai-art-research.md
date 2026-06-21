@@ -13,7 +13,7 @@
   - Papers with Umran [[Domain Expert Contact Index]]
   - email [(5236) Inbox | j.j.ohare@pm.me | Proton Mail](https://mail.proton.me/u/0/inbox/yUHPd88XhnweoU7GbEodghvsulG2Jys8TEkRAt1CxhKo_ZNKR65UQtfAcMEsRWEOY3IHyeharqgDolETkeubEg==)
   - [Access denied (google.com)](https://drive.google.com/drive/folders/1rUP6RYERNF7QlDJihM85t_tIWzy93zSR?usp=drive_link)
-  - ```- Keywords: A.I, GAN, Landscape, Virtual, Digital Art, Virtual worlds, games, design, GenAI```
+  - Keywords: A.I, GAN, Landscape, Virtual, Digital Art, Virtual worlds, games, design, GenAI
   - Landvættir is a portfolio journey across these bootstrapping years of GenAI and AGI
 		- Colin
 		- The Scenism manifesto refers to a set of principles and ideas that revolve around the concept of scenism in the context of art and entertainment. Scenism places a strong emphasis on the power of creating immersive and visually captivating experiences for its audience. It aims to go beyond merely presenting a piece of art or storytelling, and instead seeks to transport the audience into a vivid and engaging world. At the core of the Scenism manifesto is the belief that the environment or setting plays a crucial role in shaping the overall experience. Scenists believe that by creating intricate and detailed environments, they can enhance the emotional impact of the art form. This goes beyond simply designing a visually pleasing backdrop; it involves creating a multi-sensory experience that allows the audience to feel fully immersed in the world being presented.

@@ -231,28 +231,6 @@ public:: true
   - requires:: [[Validation (AI-0095)]], [[Testing]], [[Monitoring]]
 - ### Content
   - The degree to which an AI system performs its intended function consistently and accurately over time and across repeated operations, producing predictable and dependable results under specified conditions.
-  - ### Models
-		- **[GPT-5](https://yourgpt.ai/gpt-5)**: Expected in summer 2025, with enhanced reasoning and reliability.
-		- **Reasoning Models (o1, o3, o4-mini, o3-pro):** A new series of models designed for complex, analytical tasks.
-		- **[Sora](https://openai.com/sora):** A text-to-video model that can generate high-resolution videos from text prompts.
-  - ### Models
-		- **[GPT-5](https://yourgpt.ai/gpt-5)**: Expected in summer 2025, with enhanced reasoning and reliability.
-		- **Reasoning Models (o1, o3, o4-mini, o3-pro):** A new series of models designed for complex, analytical tasks.
-		- **[Sora](https://openai.com/sora):** A text-to-video model that can generate high-resolution videos from text prompts.
-  - ### Models
-		- **[GPT-5](https://yourgpt.ai/gpt-5)**: Expected in summer 2025, with enhanced reasoning and reliability.
-		- **Reasoning Models (o1, o3, o4-mini, o3-pro):** A new series of models designed for complex, analytical tasks.
-		- **[Sora](https://openai.com/sora):** A text-to-video model that can generate high-resolution videos from text prompts.
-  - ## Technical Implementation
-  - Backend infrastructure includes multiple high-performance computers running stable diffusion servers for image generation
-  - ChatGPT 3.5 and 4 models are used for text generation, with the ability to request specific models for different parts of the system
-  - Text-to-speech services are run locally to ensure reliability and reduce dependence on cloud services
-  - TouchDesigner is used to create the three-panel projection mural, with slight parallax movement for a mesmerizing effect
-  - ## Technical Implementation
-  - Backend infrastructure includes multiple high-performance computers running stable diffusion servers for image generation
-  - ChatGPT 3.5 and 4 models are used for text generation, with the ability to request specific models for different parts of the system
-  - Text-to-speech services are run locally to ensure reliability and reduce dependence on cloud services
-  - TouchDesigner is used to create the three-panel projection mural, with slight parallax movement for a mesmerizing effect
   ## Formal Specification
   ```yaml
   term: Reliability
@@ -297,24 +275,6 @@ public:: true
 		  - **Error handling**: Appropriate responses to errors
 		  - **Recovery**: Return to normal operation
 		  **Example**: Autonomous vehicle enters safe mode if sensor fails
-  ## Formal Specification
-  ```yaml
-  term: Reliability
-  definition: "Consistent and accurate performance over time and repeated operations"
-  domain: AI System Quality
-  type: Quality Attribute
-  dimensions:
-  - consistency
-  - accuracy
-  - predictability
-  - dependability
-  - repeatability
-  measures:
-  - error_rate
-  - uptime
-  - mean_time_between_failures
-  - performance_variance
-  ```
   #### Related Concepts
   ### Reliability vs. Robustness
 		  | Reliability | Robustness |
@@ -637,7 +597,7 @@ public:: true
   ### Continuous Monitoring Imperatives
   AI reliability in 2024-2025 required **real-time performance tracking**, automated alerting on degradation, and comprehensive dashboards. Unlike traditional software where reliability remains relatively stable post-deployment, AI systems exhibited **data drift** and **concept drift** requiring continuous validation throughout operational lifecycles.
   ### EU AI Act Article 15 Accuracy Requirements
-  The **EU AI Act** Article 15 mandated that high-risk systems achieve **appropriate levels of accuracy** throughout their lifecycle, with systematic testing and validation required. This established reliability as a continuous obligation rather than one-time pre-deployment criterion, with ongoing monitoring and periodic revalidation mandatory.
+  The **EU AI Act** Article 15 requires that high-risk systems achieve **appropriate levels of accuracy** throughout their lifecycle, with systematic testing and validation required. Enforcement of the full high-risk AI system obligations under Article 15 takes effect on 2 August 2026, establishing reliability as a continuous obligation rather than a one-time pre-deployment criterion, with ongoing monitoring and periodic revalidation mandatory. Accuracy metrics must be declared in instructions for use; non-compliance is sanctionable up to €15M or 3% of global annual turnover.
   ### TrustLLM Benchmark Dimensions
   The **TrustLLM benchmark** incorporated truthfulness as a core dimension alongside safety, fairness, robustness, privacy, and machine ethics, providing systematic evaluation of reliability across over 30 datasets. This framework enabled quantitative reliability assessment comparable to traditional software reliability metrics.
   ### Data-Centric Reliability Engineering
@@ -659,10 +619,6 @@ public:: true
 		  - **1.0** (2025-10-27): Initial definition based on NIST AI RMF and ISO/IEC 25010:2023
 		  ---
 		  *This definition emphasizes reliability as consistent, accurate, and dependable performance—a cornerstone of trustworthy AI systems.*
-		  ```
-  - public-access:: true
-  - definition:: The degree to which an AI system performs its intended function consistently and accurately over time and across repeated operations, producing predictable and dependable results under specified conditions.
-  # Reliability.md - Updated Ontology Entry
   ## Academic Context
   - Foundational definition and evolution
   - AI reliability encompasses consistent, correct performance from systems over time and across different conditions
@@ -673,7 +629,7 @@ public:: true
   - Recognition that reliable AI begins with reliable data—a somewhat obvious but frequently overlooked principle[3]
   - Shift from isolated model evaluation toward continuous monitoring and observability in production environments
   - Growing emphasis on model drift detection and performance degradation across real-world deployment scenarios
-  ## Current Landscape (2025)
+  ## Current Landscape (2025–2026)
   - Industry adoption and implementations
   - Widespread integration across professional services, financial analysis and legal technology sectors
   - Thomson Reuters Institute data indicates 80% of professionals anticipate AI will have high or transformational influence within five years[4]
@@ -694,7 +650,7 @@ public:: true
   - Monte Carlo Data (2024). "The AI Reliability Guide: How To Build Reliable AI Models." Emphasises data quality, diversity and continuous updates as foundational to reliability; advocates thorough data cleaning and validation pipelines[3]
   - Thomson Reuters Institute (2024). "Accurate and Reliable AI: Five Key Ingredients." Identifies high-quality data, domain expertise, security, ethics and human-in-the-loop approaches as essential components[4]
   - Lark (2025). "AI Reliability." Defines reliability as consistent delivery of expected outcomes regardless of operational conditions; emphasises role in business operations and competitive advantage[5]
-  - Stanford HAI (2025). "Artificial Intelligence Index Report 2025." Comprehensive analysis of AI landscape including performance metrics, reasoning limitations and responsible AI ecosystem development[6]
+  - Stanford HAI (2025). "Artificial Intelligence Index Report 2025." Comprehensive analysis of AI landscape including performance metrics, reasoning limitations and responsible AI ecosystem development[6]. The 2026 edition (hai.stanford.edu/ai-index/2026-ai-index-report) has since been published, tracking continued advances including models matching or exceeding human performance on PhD-level science questions and competition mathematics.
   - Ongoing research directions
   - Development of more robust evaluation methodologies for complex reasoning tasks
   - Investigation of model drift detection and mitigation in long-running production systems
@@ -736,10 +692,10 @@ public:: true
   [3] Monte Carlo Data (2024). "The AI Reliability Guide: How To Build Reliable AI Models That Don't Fail." Available at: https://www.montecarlodata.com/blog-ai-reliability/
   [4] Thomson Reuters Institute (2024). "Accurate and Reliable AI: Five Key Ingredients." *Thomson Reuters Legal Blog*. Available at: https://legal.thomsonreuters.com/blog/key-ingredients-to-accurate-and-reliable-ai/
   [5] Lark (2025). "AI Reliability." *Lark Topics*. Available at: https://www.larksuite.com/en_us/topics/generative-ai-in-the-workplace/ai-reliability
-  [6] Stanford Human-Centered Artificial Intelligence (2025). "Artificial Intelligence Index Report 2025." *HAI Stanford*. Available at: https://hai.stanford.edu/ai-index-2025
+  [6] Stanford Human-Centered Artificial Intelligence (2025). "Artificial Intelligence Index Report 2025." *HAI Stanford*. Available at: https://hai.stanford.edu/ai-index-2025. See also the 2026 edition: https://hai.stanford.edu/ai-index/2026-ai-index-report
   [7] National Institute of Standards and Technology (2024). "Artificial Intelligence." *NIST*. Available at: https://www.nist.gov/artificial-intelligence
   ## Metadata
-  - **Last Updated**: 2025-11-11
+  - **Last Updated**: 2026-06-20
   - **Review Status**: Comprehensive editorial review
   - **Verification**: Academic sources verified
   - **Regional Context**: UK/North England where applicable

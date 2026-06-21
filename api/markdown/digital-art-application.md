@@ -1,8 +1,6 @@
 - ### Definition
   - Software platforms and tools enabling artists to create, manipulate, and distribute visual art using digital technologies, including generative AI systems, 3D modeling software, and NFT minting platforms that facilitate artistic expression and commerce in virtual environments.
 
-bridges-to:: [[Computer Vision]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalArtApplication
   - owl-role:: Concept
@@ -26,12 +24,12 @@ bridges-to:: [[Computer Vision]]
 		- Brush engines with pressure sensitivity
 		- Real-time collaboration capabilities
 		- Direct NFT minting integration
-  - **2024 AI Integration**:
+  - **AI Integration**:
 		- Text-to-image generation
 		- Style transfer and artistic filters
 		- Automated background removal and enhancement
 		- AI-assisted composition suggestions
-  - **Distribution Platforms**: OpenSea, Foundation, SuperRare, ArtStation
+  - **Distribution Platforms**: OpenSea, SuperRare, ArtStation (Note: Foundation went offline April 2026 and is no longer operational as an NFT marketplace)
   - ## Applications
   - Professional illustration and concept art
   - NFT art creation and sales

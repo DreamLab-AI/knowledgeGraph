@@ -379,8 +379,6 @@ public:: true
 - ### Definition
   - Tokenised virtual land parcels and property within metaverse worlds that can be owned, developed, monetised, and traded as digital assets.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalRealEstate
   - owl-role:: Object
@@ -394,6 +392,7 @@ bridges-to:: [[Blockchain]]
   - requires:: [[Blockchain Infrastructure]], [[Smart Contracts]], [[Spatial Computing Paradigm]], [[Digital Wallet]]
   - enables:: [[Virtual Commerce]], [[Property Development]], [[Event Hosting]], [[Advertising Space]], [[Community Building]]
   - depends-on:: [[NFT Standards]], [[Land Registry]], [[Metaverse Platform]]
+  - bridges-to:: [[Blockchain]]
 
 - ### Content
   Digital Real Estate — content pending enrichment.

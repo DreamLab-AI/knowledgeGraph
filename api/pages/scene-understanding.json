@@ -153,6 +153,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
       "slug": "depth-estimation",
       "label": "Depth Estimation"
     },

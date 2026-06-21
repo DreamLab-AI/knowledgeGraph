@@ -182,12 +182,52 @@
       "label": "AI Adoption"
     },
     {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
       "slug": "ai-ethics-checklist",
       "label": "AI Ethics Checklist"
     },
     {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
       "slug": "algorithmic-transparency-index",
       "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
     },
     {
       "slug": "governance-model",

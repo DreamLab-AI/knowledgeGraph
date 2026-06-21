@@ -270,6 +270,14 @@
   ],
   "backlinks": [
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
       "slug": "blockchain-as-a-service",
       "label": "Blockchain As A Service"
     },

@@ -149,12 +149,32 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
       "slug": "ai-development-tools",
       "label": "AI Development Tools"
     },
     {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
       "slug": "ai-model-inference-engine",
       "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "architecture",
+      "label": "Architecture"
     },
     {
       "slug": "etsi-domain-data-management-ai",

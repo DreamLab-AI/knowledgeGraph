@@ -1,7 +1,5 @@
 - ### Definition
-  An Underwater Robot is a robotic platform designed to operate in aquatic environments, encompassing Remotely Operated Vehicles (ROVs) tethered for real-time control and Autonomous Underwater Vehicles (AUVs) executing pre-programmed or AI-guided missions. Applications include deep-sea scientific survey, offshore infrastructure inspection, marine conservation, and defence, with platforms rated from hundreds to thousands of metres depth.
-
-  - ### Primary Definition
+  - An Underwater Robot is a robotic platform designed to operate in aquatic environments, encompassing Remotely Operated Vehicles (ROVs) tethered for real-time control and Autonomous Underwater Vehicles (AUVs) executing pre-programmed or AI-guided missions. Applications include deep-sea scientific survey, offshore infrastructure inspection, marine conservation, and defence, with platforms rated from hundreds to thousands of metres depth.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0011underwaterrobot
@@ -14,49 +12,6 @@
   - **relatedTo**: Robotic System, Robotics Platform
 
 - ### Content
-  - ### Primary Definition
-  **Underwater Robot** - Underwater Robot in robotics systems
-  - ### Original Content
-		- ```
-  # RB-0011: Underwater Robot
-
-  #### Key Characteristics
-  1. Core property of robotics systems
-		  2. Standardised definition across implementations
-		  3. Measurable and verifiable attributes
-		  4. Essential for safety and performance
-		  5. Industry-wide recognition and adoption
-
-		  ## Formal Ontology (OWL Functional Syntax)
-
-
-		  ## Relationships
-
-		  ### Parent Classes
-		  - `MobileRobot`: Primary classification
-
-  #### Future Directions
-  ### Emerging Trends
-		  1. AI and machine learning integration
-		  2. Advanced sensing capabilities
-		  3. Improved safety systems
-		  4. Enhanced human-robot collaboration
-		  5. Standardisation advancements
-
-		  ---
-
-		  **Version History**
-		  - 1.0.0 (2025-10-28): Initial foundational definition
-
-		  **Contributors**: Robotics Ontology Working Group
-		  **License**: CC BY 4.0
-		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0011`
-
-		  ```
-
-
-  # Updated Ontology Entry: RB-0011 Underwater Robot
-
   ## Academic Context
 
   - Underwater robotics represents a critical intersection of marine science, engineering, and autonomous systems
@@ -81,7 +36,7 @@
 
   ### UK and North England Context
 
-  - The Netherlands-based NIOZ research vessel Anna Weber-van Bosse will deploy an advanced 3-metre, 4.5-tonne ROV from mid-2026, establishing a new Robotics Centre with trained pilots—a model potentially relevant to UK marine research infrastructure planning
+  - The Netherlands-based NIOZ research vessel Anna Weber-van Bosse was christened by Queen Máxima in March 2026 and became operational in mid-2026, deploying an advanced ROV as part of a new Marine Robotics Centre—a model increasingly relevant to UK marine research infrastructure planning
   - UK marine research institutions increasingly adopt ROV technology for deep-sea surveys, though specific North England innovation hubs remain underdeveloped in current literature
   - Opportunities exist for Manchester, Leeds, and Newcastle universities to establish underwater robotics research clusters, particularly given proximity to offshore wind and marine energy sectors
 
@@ -152,70 +107,6 @@
   - **Review Status**: Comprehensive editorial review
   - **Verification**: Academic sources verified
   - **Regional Context**: UK/North England where applicable
-
-  #### Standards and References
-  ### Primary Standards
-		  1. **ISO 19901:2017**: Primary reference standard
-		  2. **ISO 8373:2021**: Robotics vocabulary
-		  3. **Related IEEE standards**: Implementation guidelines
-
-		  ## Validation Criteria
-
-		  ### Conformance Requirements
-		  1. ✓ Meets ISO 19901:2017 requirements
-		  2. ✓ Documented implementation
-		  3. ✓ Verifiable performance metrics
-		  4. ✓ Safety compliance demonstrated
-		  5. ✓ Industry best practices followed
-
-		  ## Implementation Notes
-
-		  ### Design Considerations
-		  - System integration requirements
-		  - Performance specifications
-		  - Safety considerations
-		  - Maintenance procedures
-
-		  ### Common Patterns
-		  ```yaml
-		  implementation:
-		    standards_compliance: true
-		    verification_method: standardised_testing
-		    documentation_level: comprehensive
-		  ```
-
-  #### Related Concepts
-  - Related robotics concepts and systems
-		  - Cross-references to other ontology terms
-		  - Integration with metaverse ontology
-
-		  ## Use Cases
-
-		  ### Industrial Applications
-		  1. Manufacturing automation
-		  2. Quality control systems
-		  3. Process optimization
-
-		  ### Service Applications
-		  1. Healthcare robotics
-		  2. Logistics and warehousing
-		  3. Consumer robotics
-
-		  ### Research Applications
-		  1. Academic research platforms
-		  2. Algorithm development
-		  3. System integration studies
-
-  #### References
-  ### Metaverse Ontology Integration
-		  - Virtual representation systems
-		  - Digital twin integration
-		  - Simulation environments
-
-		  ### Domain Ontologies
-		  - Manufacturing systems
-		  - Control systems
-		  - Safety systems
 
 - ### Provenance
   - sources::

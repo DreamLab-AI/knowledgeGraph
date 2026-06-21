@@ -376,6 +376,10 @@
       "label": "Attack Vector"
     },
     {
+      "slug": "audience-engagement",
+      "label": "Audience Engagement"
+    },
+    {
       "slug": "audit-trail",
       "label": "Audit Trail"
     },

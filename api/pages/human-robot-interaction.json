@@ -239,6 +239,14 @@
   ],
   "backlinks": [
     {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
       "slug": "biosensing-interface",
       "label": "Biosensing Interface"
     },

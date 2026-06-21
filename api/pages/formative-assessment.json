@@ -118,5 +118,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    }
+  ]
 }

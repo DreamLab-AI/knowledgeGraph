@@ -56,14 +56,7 @@
 			- The debate has intensified as AI capabilities have rapidly advanced
 			- Concerns about AI safety and risks have grown alongside excitement about AI's potential benefits
 			- Roots in long-running philosophical discussions about the risks and benefits of technological progress
-			- ```text
-			  California legislators, under the influence of Effective Altruism activists, are trying to sneak through a disastrous bill for open-source AI and the technology industry generally.
-			  SB 1047 creates an unaccountable Frontier Model Division that will be staffed by EAs with police powers, and which can throw model developers in jail for the thoughtcrime of doing AI research. It’s being fast-tracked through the state Senate. Since many cloud and AI companies are headquartered in California, this will have worldwide impact.
-
-  - ## Bitcoin as a culture war foil
-		- ## Self reinforcing monocultures
-		- ## Effective Altruists vs Effective Accelerationists
-			  ```
+			- California legislators, under the influence of Effective Altruism activists, attempted to pass a disastrous bill for open-source AI and the technology industry generally. SB 1047 would have created an unaccountable Frontier Model Division staffed by EAs with police powers, and would have allowed model developers to be jailed for the thoughtcrime of doing AI research. The bill was vetoed by Governor Newsom in September 2024.
 			- [Call-To-Action on SB 1047 | Alliance for the Future (affuture.org)](https://www.affuture.org/post/9-context/) [[California AI bill]]
 			- [Vinod Khosla on X: "Open source is good for VC's and innovation. Open Source SOTA models is really bad for national security" / X (twitter.com)](https://twitter.com/vkhosla/status/1789345720706961838?t=_vgHHgmdky1nU5X5C0SQpg&s=19)
 			- {{twitter https://twitter.com/vkhosla/status/1789345720706961838?t=_vgHHgmdky1nU5X5C0SQpg&s=19}}
@@ -75,6 +68,7 @@
 			- Recent appointment of "AI doomer" Paul Christiano to head US AI safety institute seen as a win for this camp
 				- [Feds appoint “AI doomer” to run AI safety at US institute | Ars Technica](https://arstechnica.com/tech-policy/2024/04/feds-appoint-ai-doomer-to-run-us-ai-safety-institute/) [[AI Governance Law and Privacy]]
 				- [AI Safety Is Dead, and Chuck Schumer Faces Risks - Bloomberg](https://www.bloomberg.com/opinion/articles/2024-05-21/ai-safety-is-dead-and-chuck-schumer-faces-risks) [[Safety and alignment]]
+				- Note: The US AI Safety Institute was subsequently restructured by the Trump administration in early 2025 and renamed the Center for AI Standards and Innovation (CAISI), with a shift in focus away from safety regulation toward national security and competitiveness.
 		- ### Effective Accelerationists (EAcc) / AI Risk Sceptics
 			- Emphasise the potential benefits of rapid AI progress
 			- Tend to be more sceptical of AI safety concerns as blocking human advancement

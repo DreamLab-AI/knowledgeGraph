@@ -228,6 +228,10 @@
       "label": "AI Lifecycle"
     },
     {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
       "slug": "ai-monitoring",
       "label": "AI Monitoring"
     },

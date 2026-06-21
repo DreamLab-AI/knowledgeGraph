@@ -149,6 +149,10 @@
       "label": "Active Learning"
     },
     {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
       "slug": "algorithmic-bias-and-variance",
       "label": "Algorithmic Bias and Variance"
     },

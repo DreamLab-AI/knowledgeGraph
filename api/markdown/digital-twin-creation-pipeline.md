@@ -1,8 +1,6 @@
 - ### Definition
   - The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems.
 
-bridges-to:: [[Computer Vision]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalTwinCreationPipeline
   - owl-role:: Concept
@@ -12,6 +10,7 @@ bridges-to:: [[Computer Vision]]
   - is-subclass-of:: [[3D Content Pipeline]]
   - requires:: [[3D Scanning]], [[Photogrammetry]], [[Point Cloud Processing]]
   - enables:: [[Asset Digitization]], [[Virtual Replica Creation]], [[Real-Time Monitoring]]
+  - bridges-to:: [[Computer Vision]]
 
 - ### Content
 

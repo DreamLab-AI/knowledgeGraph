@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
     },

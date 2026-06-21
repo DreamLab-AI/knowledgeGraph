@@ -176,12 +176,24 @@
   ],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
       "slug": "apple-mixed-reality-headset",
       "label": "Apple Mixed Reality Headset"
     },
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "asynchronous-video",
       "label": "Asynchronous Video"
+    },
+    {
+      "slug": "audience-engagement",
+      "label": "Audience Engagement"
     },
     {
       "slug": "augmented-reality-collaboration",

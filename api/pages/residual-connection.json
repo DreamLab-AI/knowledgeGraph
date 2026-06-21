@@ -65,6 +65,10 @@
   ],
   "backlinks": [
     {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

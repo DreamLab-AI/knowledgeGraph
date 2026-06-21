@@ -60,6 +60,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
     },

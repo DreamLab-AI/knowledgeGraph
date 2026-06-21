@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:risk-appetite",
+        "label": "Risk Appetite"
       }
     ],
     "requires": [
@@ -42,6 +50,14 @@
       {
         "id": "urn:ngm:class:accountability",
         "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
       }
     ],
     "enables": [
@@ -56,13 +72,51 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-23894",
+        "label": "ISO/IEC 23894:2023"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-auditing",
+        "label": "Algorithmic Auditing"
+      },
+      {
+        "id": "urn:ngm:class:continuous-monitoring",
+        "label": "Continuous Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:bias-detection-methods",
+        "label": "Bias Detection"
+      }
+    ],
     "supports": [
       {
         "id": "urn:ngm:class:ai-governance-framework",
@@ -71,6 +125,10 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
       }
     ],
     "standardizedBy": [],
@@ -91,6 +149,18 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-risk-management",
+        "label": "Enterprise Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:model-drift",
+        "label": "Model Drift"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
       }
     ]
   },
@@ -118,6 +188,134 @@
     {
       "slug": "smart-contract",
       "label": "Smart Contract"
+    },
+    {
+      "slug": "ai-risk-management",
+      "label": "AI Risk Management"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "fairness",
+      "label": "Fairness"
+    },
+    {
+      "slug": "bias",
+      "label": "Bias"
+    },
+    {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "model-drift",
+      "label": "Model Drift"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "incident-response",
+      "label": "Incident Response"
+    },
+    {
+      "slug": "threat-modelling",
+      "label": "Threat Modelling"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "slug": "algorithmic-auditing",
+      "label": "Algorithmic Auditing"
+    },
+    {
+      "slug": "continuous-monitoring",
+      "label": "Continuous Monitoring"
+    },
+    {
+      "slug": "risk-appetite",
+      "label": "Risk Appetite"
+    },
+    {
+      "slug": "impact-assessment",
+      "label": "Impact Assessment"
+    },
+    {
+      "slug": "enterprise-risk-management",
+      "label": "Enterprise Risk Management"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "model-governance",
+      "label": "Model Governance"
+    },
+    {
+      "slug": "bias-detection-methods",
+      "label": "Bias Detection"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "iso-42001",
+      "label": "ISO/IEC 42001"
     }
   ],
   "backlinks": [

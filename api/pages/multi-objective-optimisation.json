@@ -90,5 +90,18 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-group-formation",
+      "label": "AI Group Formation"
+    },
+    {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    }
+  ]
 }

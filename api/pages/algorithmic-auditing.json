@@ -137,12 +137,32 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
       "slug": "ai-liability",
       "label": "AI Liability"
     },
     {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
       "slug": "ai-risks",
       "label": "AI Risks"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
     },
     {
       "slug": "algorithmic-transparency-index",

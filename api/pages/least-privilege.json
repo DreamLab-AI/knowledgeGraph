@@ -94,6 +94,10 @@
     {
       "slug": "access-control-system",
       "label": "Access Control System"
+    },
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
     }
   ]
 }

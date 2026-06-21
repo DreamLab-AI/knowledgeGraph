@@ -47,6 +47,10 @@
     {
       "slug": "accessibility",
       "label": "Accessibility"
+    },
+    {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
     }
   ]
 }

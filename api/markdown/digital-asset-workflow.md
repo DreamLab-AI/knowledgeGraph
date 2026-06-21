@@ -1,8 +1,6 @@
 - ### Definition
   - Controlled process governing the creation, approval, distribution, and lifecycle management of digital content assets in virtual environments.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalAssetWorkflow
   - owl-role:: Process

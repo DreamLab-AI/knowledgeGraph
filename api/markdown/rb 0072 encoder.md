@@ -130,44 +130,6 @@ public:: true
   - relatedTo:: rb 0034 repeatability, rb 0035 accuracy, rb 0026 robot joint
 
 - ### Content
-  - ### Original Content
-		- ```
-  # RB-0072: Encoder
-
-  #### Key Characteristics
-  1. Core property of robotics systems
-		  2. Standardised definition across implementations
-		  3. Measurable and verifiable attributes
-		  4. Essential for safety and performance
-		  5. Industry-wide recognition and adoption
-
-		  ## Formal Ontology (OWL Functional Syntax)
-
-
-		  ## Relationships
-
-		  ### Parent Classes
-		  - `Robot`: Primary classification
-
-  #### Future Directions
-  ### Emerging Trends
-		  1. AI and machine learning integration
-		  2. Advanced sensing capabilities
-		  3. Improved safety systems
-		  4. Enhanced human-robot collaboration
-		  5. Standardisation advancements
-
-		  ---
-
-		  **Version History**
-		  - 1.0.0 (2025-10-28): Initial foundational definition
-
-		  **Contributors**: Robotics Ontology Working Group
-		  **License**: CC BY 4.0
-		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0072`
-
-		  ```
-
 
   ## Academic Context
 
@@ -176,13 +138,13 @@ public:: true
   - Academic foundations lie in electromechanical transduction, signal processing, and control systems engineering.
   - Key developments include improvements in resolution, noise reduction, and integration with digital communication protocols.
 
-  ## Current Landscape (2025)
+  ## Current Landscape (2026)
 
   - Industry adoption of rb 0072 encoders spans robotics, manufacturing automation, and aerospace sectors.
   - Notable implementations include integration in robotic arms and automated guided vehicles (AGVs) requiring high precision.
   - UK companies, particularly in North England (Manchester, Leeds, Newcastle, Sheffield), utilise these encoders in advanced manufacturing and robotics research centres.
   - Technical capabilities:
-  - Typically feature high resolution (up to 12-14 bits), robust noise immunity, and compatibility with standard industrial interfaces such as CANopen or EtherCAT.
+  - Modern industrial absolute encoders now commonly feature 20-22 bit resolution (the Netzer DL-66 reaches 22 bits), with robust noise immunity, and compatibility with standard industrial interfaces such as CANopen or EtherCAT.
   - Limitations include sensitivity to environmental factors like vibration and electromagnetic interference, which are mitigated by improved shielding and signal processing.
   - Standards and frameworks:
   - Compliance with IEC 61800-7 for encoder interfaces and ISO 9283 for robot performance measurement is common.
@@ -226,82 +188,15 @@ public:: true
   4. ROBOTIS. (2025). MX-106T/R Encoder Specifications. Retrieved from https://emanual.robotis.com/docs/en/dxl/mx/mx-106/
   5. ABB. (2024). Smarter Solutions for Building and Home Automation. Retrieved from https://search.abb.com/library/Download.aspx?DocumentID=9AKK107492A3188
 
-  *No dated news or announcements included, and all technical details reflect the state of knowledge as of late 2025. The tone is precise, cordial, and technically rigorous, with a dash of dry wit tucked away for those who look closely.*
+  *All technical details reflect the state of knowledge as of mid-2026. The tone is precise, cordial, and technically rigorous, with a dash of dry wit tucked away for those who look closely.*
 
 
   ## Metadata
 
-  - **Last Updated**: 2025-11-11
+  - **Last Updated**: 2026-06-20
   - **Review Status**: Comprehensive editorial review
   - **Verification**: Academic sources verified
   - **Regional Context**: UK/North England where applicable
-
-  ### Relationships
-  - is-subclass-of:: [[Robotics]]
-
-  #### Standards and References
-  ### Primary Standards
-		  1. **ISO 8373:2021**: Primary reference standard
-		  2. **ISO 8373:2021**: Robotics vocabulary
-		  3. **Related IEEE standards**: Implementation guidelines
-
-		  ## Validation Criteria
-
-		  ### Conformance Requirements
-		  1. ✓ Meets ISO 8373:2021 requirements
-		  2. ✓ Documented implementation
-		  3. ✓ Verifiable performance metrics
-		  4. ✓ Safety compliance demonstrated
-		  5. ✓ Industry best practices followed
-
-		  ## Implementation Notes
-
-		  ### Design Considerations
-		  - System integration requirements
-		  - Performance specifications
-		  - Safety considerations
-		  - Maintenance procedures
-
-		  ### Common Patterns
-		  ```yaml
-		  implementation:
-		    standards_compliance: true
-		    verification_method: standardised_testing
-		    documentation_level: comprehensive
-		  ```
-
-  #### Related Concepts
-  - Related robotics concepts and systems
-		  - Cross-references to other ontology terms
-		  - Integration with metaverse ontology
-
-		  ## Use Cases
-
-		  ### Industrial Applications
-		  1. Manufacturing automation
-		  2. Quality control systems
-		  3. Process optimization
-
-		  ### Service Applications
-		  1. Healthcare robotics
-		  2. Logistics and warehousing
-		  3. Consumer robotics
-
-		  ### Research Applications
-		  1. Academic research platforms
-		  2. Algorithm development
-		  3. System integration studies
-
-  #### References
-  ### Metaverse Ontology Integration
-		  - Virtual representation systems
-		  - Digital twin integration
-		  - Simulation environments
-
-		  ### Domain Ontologies
-		  - Manufacturing systems
-		  - Control systems
-		  - Safety systems
 
 - ### Provenance
   - sources::

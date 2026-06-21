@@ -99,6 +99,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     }

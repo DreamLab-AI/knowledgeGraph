@@ -62,5 +62,14 @@
       "label": "owl:Thing"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
+    }
+  ]
 }

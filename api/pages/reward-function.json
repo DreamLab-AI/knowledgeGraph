@@ -147,6 +147,14 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "audience-engagement",
+      "label": "Audience Engagement"
+    },
+    {
       "slug": "offline-reinforcement-learning",
       "label": "Offline Reinforcement Learning"
     }

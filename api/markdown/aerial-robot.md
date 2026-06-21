@@ -13,45 +13,6 @@
   - enables:: [[Infrastructure Inspection]], [[Environmental Monitoring]], [[Automated Delivery]]
 
 - ### Content
-  - ### Original Content
-		- ```
-  # RB-0010: Aerial Robot
-
-  #### Key Characteristics
-  1. Core property of robotics systems
-		  2. Standardised definition across implementations
-		  3. Measurable and verifiable attributes
-		  4. Essential for safety and performance
-		  5. Industry-wide recognition and adoption
-
-		  ## Formal Ontology (OWL Functional Syntax)
-
-
-		  ## Relationships
-
-		  ### Parent Classes
-		  - `MobileRobot`: Primary classification
-
-  #### Future Directions
-  ### Emerging Trends
-		  1. AI and machine learning integration
-		  2. Advanced sensing capabilities
-		  3. Improved safety systems
-		  4. Enhanced human-robot collaboration
-		  5. Standardisation advancements
-
-		  ---
-
-		  **Version History**
-		  - 1.0.0 (2025-10-28): Initial foundational definition
-
-		  **Contributors**: Robotics Ontology Working Group
-		  **License**: CC BY 4.0
-		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0010`
-
-		  ```
-
-
   ## Academic Context
 
   - Brief contextual overview
@@ -73,12 +34,12 @@
   - Commercial platforms include DJI, Skydio, and Parrot, with increasing use of open-source frameworks like PX4 and ArduPilot.
 
   - Notable organisations and platforms
-  - DJI remains a global leader in consumer and professional drones.
-  - Skydio specialises in autonomous inspection and security applications.
+  - DJI holds over 70% of the global commercial drone market outside the US, though US regulatory restrictions (NDAA exclusions and FCC covered-list additions) have effectively barred new DJI products from the US market as of 2026.
+  - Skydio, the leading US drone manufacturer, shifted in 2023 to focus exclusively on enterprise, public safety, and defence customers; in 2026 it raised $110M Series F at a $4.4B valuation and announced $3.5B in US manufacturing expansion.
   - Parrot offers solutions for agriculture and environmental monitoring.
 
   - UK and North England examples where relevant
-  - In the UK, companies such as Percepto and Altitude Angel are advancing autonomous drone operations and airspace management.
+  - In the UK, Percepto provides automated drone-in-a-box inspection solutions. Altitude Angel, formerly a key provider of unified traffic management (UTM) infrastructure, entered administration in October 2025 and its assets were subsequently acquired by Indra Group in early 2026, creating uncertainty in UK UTM provision.
   - North England has seen growth in drone applications for infrastructure inspection, particularly in Manchester and Leeds, where local councils and universities collaborate on smart city initiatives.
   - Newcastle and Sheffield have active research groups exploring drone-based environmental monitoring and urban logistics.
 
@@ -89,7 +50,7 @@
 
   - Standards and frameworks
   - Industry standards include ASTM F38 (Unmanned Aircraft Systems) and ISO 21384 (Unmanned Aircraft Systems).
-  - The UK Civil Aviation Authority (CAA) regulates drone operations, with specific guidelines for commercial and research use.
+  - The UK Civil Aviation Authority (CAA) regulates drone operations. Major rule changes effective January 2026 introduced UK class marks (UK0–UK6), mandatory Remote ID broadcasting on all new drones, and mandatory Flyer ID theory tests for all outdoor pilots.
 
   ## Research & Literature
 
@@ -136,7 +97,7 @@
 
   1. Ramsey, C. W., Kingston, Z., Thomason, W., & Kavraki, L. E. (2024). Collision-Affording Point Trees: SIMD-Amenable Nearest Neighbors for Fast Collision Checking. Robotics: Science and Systems. DOI: 10.15607/RSS.2024.XX.038. URL: https://roboticsconference.org/2024/program/papers/38/
   2. Kavraki, L. E. (2025). Scaling Long-Horizon Online POMDP Planning via Rapid State Space Sampling. In Robotics Research. International Symposium of Robotics Research.
-  3. UK Civil Aviation Authority. (2025). Drone Code and Regulations. URL: https://www.caa.co.uk/drones
+  3. UK Civil Aviation Authority. (2026). UK Drone Regulations 2026: Class Marks, Remote ID and Flyer ID. URL: https://www.caa.co.uk/drones
   4. ASTM International. (2025). ASTM F38: Unmanned Aircraft Systems. URL: https://www.astm.org/COMMITTEE/F38.htm
   5. ISO. (2025). ISO 21384: Unmanned Aircraft Systems. URL: https://www.iso.org/standard/71423.html
   6. Manchester City Council. (2025). Urban Drone Initiative. URL: https://www.manchester.gov.uk
@@ -151,70 +112,6 @@
   - **Review Status**: Comprehensive editorial review
   - **Verification**: Academic sources verified
   - **Regional Context**: UK/North England where applicable
-
-  #### Standards and References
-  ### Primary Standards
-		  1. **ISO 21384-1:2019**: Primary reference standard
-		  2. **ISO 8373:2021**: Robotics vocabulary
-		  3. **Related IEEE standards**: Implementation guidelines
-
-		  ## Validation Criteria
-
-		  ### Conformance Requirements
-		  1. ✓ Meets ISO 21384-1:2019 requirements
-		  2. ✓ Documented implementation
-		  3. ✓ Verifiable performance metrics
-		  4. ✓ Safety compliance demonstrated
-		  5. ✓ Industry best practices followed
-
-		  ## Implementation Notes
-
-		  ### Design Considerations
-		  - System integration requirements
-		  - Performance specifications
-		  - Safety considerations
-		  - Maintenance procedures
-
-		  ### Common Patterns
-		  ```yaml
-		  implementation:
-		    standards_compliance: true
-		    verification_method: standardised_testing
-		    documentation_level: comprehensive
-		  ```
-
-  #### Related Concepts
-  - Related robotics concepts and systems
-		  - Cross-references to other ontology terms
-		  - Integration with metaverse ontology
-
-		  ## Use Cases
-
-		  ### Industrial Applications
-		  1. Manufacturing automation
-		  2. Quality control systems
-		  3. Process optimization
-
-		  ### Service Applications
-		  1. Healthcare robotics
-		  2. Logistics and warehousing
-		  3. Consumer robotics
-
-		  ### Research Applications
-		  1. Academic research platforms
-		  2. Algorithm development
-		  3. System integration studies
-
-  #### References
-  ### Metaverse Ontology Integration
-		  - Virtual representation systems
-		  - Digital twin integration
-		  - Simulation environments
-
-		  ### Domain Ontologies
-		  - Manufacturing systems
-		  - Control systems
-		  - Safety systems
 
 - ### Provenance
   - sources:: [[ISO 21384]], [[ISO 21384-1:2019]], [[ISO 21384:]], [[ISO 8373:2021]]

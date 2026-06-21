@@ -157,24 +157,144 @@
   ],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
       "slug": "ai-companies",
       "label": "AI Companies"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
     },
     {
       "slug": "ai-search",
       "label": "AI Search"
     },
     {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
+      "slug": "adam-optimizer",
+      "label": "Adam Optimizer"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "affective-computing-system",
+      "label": "Affective Computing System"
+    },
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
+    },
+    {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
+      "slug": "architecture",
+      "label": "Architecture"
     },
     {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     },
     {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
     },
     {
       "slug": "bandwidth-adaptation",

@@ -144,6 +144,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
+    },
+    {
       "slug": "california-ai-bill",
       "label": "California AI bill"
     },

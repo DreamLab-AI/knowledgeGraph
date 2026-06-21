@@ -292,6 +292,18 @@
       "label": "3D and 4D"
     },
     {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
       "slug": "ai-adoption",
       "label": "AI Adoption"
     },
@@ -316,6 +328,10 @@
       "label": "AI Fairness"
     },
     {
+      "slug": "ai-group-formation",
+      "label": "AI Group Formation"
+    },
+    {
       "slug": "ai-hardware",
       "label": "AI Hardware"
     },
@@ -326,6 +342,10 @@
     {
       "slug": "ai-liability",
       "label": "AI Liability"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
     },
     {
       "slug": "ai-risk-management",
@@ -376,12 +396,20 @@
       "label": "AISystem"
     },
     {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
       "slug": "activation-function",
       "label": "Activation Function"
     },
     {
       "slug": "adoption-of-convergent-technologies",
       "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
     },
     {
       "slug": "agents",
@@ -396,6 +424,10 @@
       "label": "Alan Turing Institute"
     },
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
       "slug": "algorithm",
       "label": "Algorithm"
     },
@@ -406,6 +438,14 @@
     {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
     },
     {
       "slug": "artificial-superintelligence-theory",
@@ -430,6 +470,10 @@
     {
       "slug": "attention-weight",
       "label": "Attention Weight"
+    },
+    {
+      "slug": "audience-engagement",
+      "label": "Audience Engagement"
     },
     {
       "slug": "automated-summarization",

@@ -109,5 +109,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    }
+  ]
 }

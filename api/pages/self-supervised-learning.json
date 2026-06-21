@@ -133,6 +133,34 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

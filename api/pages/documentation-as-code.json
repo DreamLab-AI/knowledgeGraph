@@ -37,6 +37,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     }

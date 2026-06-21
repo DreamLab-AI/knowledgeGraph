@@ -150,6 +150,18 @@
   ],
   "backlinks": [
     {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
     },

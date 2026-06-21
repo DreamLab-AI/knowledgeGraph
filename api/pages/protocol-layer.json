@@ -37,6 +37,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
       "slug": "account-abstraction",
       "label": "Account Abstraction"
     },

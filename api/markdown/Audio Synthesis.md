@@ -11,7 +11,60 @@ public:: true
   "vc:slug": "audio-synthesis",
   "vc:public": true,
   "vc:schemaVersion": 2,
-  "vc:outboundWikilinks": []
+  "vc:outboundWikilinks": [
+    { "@id": "urn:visionflow:linked:generative-ai", "vc:label": "Generative AI" },
+    { "@id": "urn:visionflow:linked:diffusion-model", "vc:label": "Diffusion Model" },
+    { "@id": "urn:visionflow:linked:diffusion-models", "vc:label": "Diffusion Models" },
+    { "@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning" },
+    { "@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network" },
+    { "@id": "urn:visionflow:linked:text-to-speech", "vc:label": "Text-to-Speech" },
+    { "@id": "urn:visionflow:linked:speech-synthesis", "vc:label": "Speech Synthesis" },
+    { "@id": "urn:visionflow:linked:music-generation", "vc:label": "Music Generation" },
+    { "@id": "urn:visionflow:linked:audio-processing", "vc:label": "Audio Processing" },
+    { "@id": "urn:visionflow:linked:gan", "vc:label": "GAN" },
+    { "@id": "urn:visionflow:linked:model-evaluation", "vc:label": "Model Evaluation" },
+    { "@id": "urn:visionflow:linked:content-generation", "vc:label": "Content Generation" },
+    { "@id": "urn:visionflow:linked:transformer", "vc:label": "Transformer" },
+    { "@id": "urn:visionflow:linked:natural-language-processing", "vc:label": "Natural Language Processing" },
+    { "@id": "urn:visionflow:linked:audio-signal-processing", "vc:label": "Audio Signal Processing" },
+    { "@id": "urn:visionflow:linked:neural-audio-codec", "vc:label": "Neural Audio Codec" },
+    { "@id": "urn:visionflow:linked:variational-autoencoder", "vc:label": "Variational Autoencoder" },
+    { "@id": "urn:visionflow:linked:mel-spectrogram", "vc:label": "Mel-Spectrogram" },
+    { "@id": "urn:visionflow:linked:autoregressive-model", "vc:label": "Autoregressive Model" },
+    { "@id": "urn:visionflow:linked:flow-matching", "vc:label": "Flow Matching" },
+    { "@id": "urn:visionflow:linked:recurrent-neural-network", "vc:label": "Recurrent Neural Network" },
+    { "@id": "urn:visionflow:linked:convolutional-neural-network", "vc:label": "Convolutional Neural Network" },
+    { "@id": "urn:visionflow:linked:speaker-verification", "vc:label": "Speaker Verification" },
+    { "@id": "urn:visionflow:linked:voice-cloning", "vc:label": "Voice Cloning" },
+    { "@id": "urn:visionflow:linked:audio-codec", "vc:label": "Audio Codec" },
+    { "@id": "urn:visionflow:linked:source-separation", "vc:label": "Source Separation" },
+    { "@id": "urn:visionflow:linked:feature-extraction", "vc:label": "Feature Extraction" },
+    { "@id": "urn:visionflow:linked:audio-generation", "vc:label": "Audio Generation" },
+    { "@id": "urn:visionflow:linked:generative-adversarial-network", "vc:label": "Generative Adversarial Network" },
+    { "@id": "urn:visionflow:linked:latent-diffusion", "vc:label": "Latent Diffusion" },
+    { "@id": "urn:visionflow:linked:deep-generative-model", "vc:label": "Deep Generative Model" },
+    { "@id": "urn:visionflow:linked:score-based-model", "vc:label": "Score-Based Model" },
+    { "@id": "urn:visionflow:linked:multimodal-ai", "vc:label": "Multimodal AI" },
+    { "@id": "urn:visionflow:linked:adaptive-music", "vc:label": "Adaptive Music" },
+    { "@id": "urn:visionflow:linked:audio-technology", "vc:label": "Audio Technology" },
+    { "@id": "urn:visionflow:linked:zero-shot-learning", "vc:label": "Zero-Shot Learning" },
+    { "@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback" },
+    { "@id": "urn:visionflow:linked:audio-deepfake", "vc:label": "Audio Deepfake" },
+    { "@id": "urn:visionflow:linked:mean-opinion-score", "vc:label": "Mean Opinion Score" },
+    { "@id": "urn:visionflow:linked:binaural-audio", "vc:label": "Binaural Audio" },
+    { "@id": "urn:visionflow:linked:spatial-audio", "vc:label": "Spatial Audio" },
+    { "@id": "urn:visionflow:linked:content-delivery", "vc:label": "Content Delivery" },
+    { "@id": "urn:visionflow:linked:gpu-acceleration", "vc:label": "GPU Acceleration" },
+    { "@id": "urn:visionflow:linked:large-language-model", "vc:label": "Large Language Model" },
+    { "@id": "urn:visionflow:linked:noise-schedule", "vc:label": "Noise Schedule" },
+    { "@id": "urn:visionflow:linked:psychoacoustics", "vc:label": "Psychoacoustics" },
+    { "@id": "urn:visionflow:linked:audio-spatialization", "vc:label": "Audio Spatialization" },
+    { "@id": "urn:visionflow:linked:explainable-ai", "vc:label": "Explainable AI" },
+    { "@id": "urn:visionflow:linked:audio-system", "vc:label": "Audio System" },
+    { "@id": "urn:visionflow:linked:training-data", "vc:label": "Training Data" },
+    { "@id": "urn:visionflow:owl:class:ai-grounded-domain", "vc:label": "AI-GroundedDomain" },
+    { "@id": "urn:visionflow:owl:class:algorithm-layer", "vc:label": "AlgorithmLayer" }
+  ]
 }
 ```
 
@@ -43,6 +96,14 @@ public:: true
       {
         "@id": "urn:ngm:class:music-generation",
         "label": "Music Generation"
+      },
+      {
+        "@id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "@id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
       }
     ],
     "partOf": [
@@ -63,6 +124,14 @@ public:: true
       {
         "@id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:mel-spectrogram",
+        "label": "Mel-Spectrogram"
+      },
+      {
+        "@id": "urn:ngm:class:neural-audio-codec",
+        "label": "Neural Audio Codec"
       }
     ],
     "relatedTo": [
@@ -73,78 +142,326 @@ public:: true
       {
         "@id": "urn:ngm:class:gan",
         "label": "GAN"
+      },
+      {
+        "@id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "@id": "urn:ngm:class:audio-deepfake",
+        "label": "Audio Deepfake"
       }
     ],
     "requires": [
       {
         "@id": "urn:ngm:class:model-evaluation",
         "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
       }
     ],
     "supports": [
       {
         "@id": "urn:ngm:class:content-generation",
         "label": "Content Generation"
+      },
+      {
+        "@id": "urn:ngm:class:adaptive-music",
+        "label": "Adaptive Music"
       }
     ],
     "dependsOn": [
       {
         "@id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "@id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
       }
     ],
     "bridgesTo": [
       {
         "@id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
       }
     ]
   },
   "sameAs": [],
-  "quality": 0.62,
+  "quality": 0.91,
   "provenance": {
-    "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-06-15T00:00:00Z",
-    "inferenceRule": "GapMaterialisation"
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-20T00:00:00Z",
+    "inferenceRule": "RelationEnrichment"
   }
 }
 ```
 
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:audio-synthesis:b4c72d19f953",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:audio-synthesis"
+  },
+  "vc:resolutions": [
+    { "raw": "[[Generative AI]]", "resolved": "urn:visionflow:linked:generative-ai", "kind": "ResolvedLink" },
+    { "raw": "[[Diffusion Model]]", "resolved": "urn:visionflow:linked:diffusion-model", "kind": "ResolvedLink" },
+    { "raw": "[[Diffusion Models]]", "resolved": "urn:visionflow:linked:diffusion-models", "kind": "ResolvedLink" },
+    { "raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink" },
+    { "raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink" },
+    { "raw": "[[Text-to-Speech]]", "resolved": "urn:visionflow:linked:text-to-speech", "kind": "StubLink" },
+    { "raw": "[[Speech Synthesis]]", "resolved": "urn:visionflow:linked:speech-synthesis", "kind": "StubLink" },
+    { "raw": "[[Music Generation]]", "resolved": "urn:visionflow:linked:music-generation", "kind": "StubLink" },
+    { "raw": "[[Audio Processing]]", "resolved": "urn:visionflow:linked:audio-processing", "kind": "ResolvedLink" },
+    { "raw": "[[GAN]]", "resolved": "urn:visionflow:linked:gan", "kind": "ResolvedLink" },
+    { "raw": "[[Model Evaluation]]", "resolved": "urn:visionflow:linked:model-evaluation", "kind": "StubLink" },
+    { "raw": "[[Content Generation]]", "resolved": "urn:visionflow:linked:content-generation", "kind": "StubLink" },
+    { "raw": "[[Transformer]]", "resolved": "urn:visionflow:linked:transformer", "kind": "ResolvedLink" },
+    { "raw": "[[Natural Language Processing]]", "resolved": "urn:visionflow:linked:natural-language-processing", "kind": "ResolvedLink" },
+    { "raw": "[[Audio Signal Processing]]", "resolved": "urn:visionflow:linked:audio-signal-processing", "kind": "ResolvedLink" },
+    { "raw": "[[Neural Audio Codec]]", "resolved": "urn:visionflow:linked:neural-audio-codec", "kind": "StubLink" },
+    { "raw": "[[Variational Autoencoder]]", "resolved": "urn:visionflow:linked:variational-autoencoder", "kind": "StubLink" },
+    { "raw": "[[Mel-Spectrogram]]", "resolved": "urn:visionflow:linked:mel-spectrogram", "kind": "StubLink" },
+    { "raw": "[[Autoregressive Model]]", "resolved": "urn:visionflow:linked:autoregressive-model", "kind": "StubLink" },
+    { "raw": "[[Flow Matching]]", "resolved": "urn:visionflow:linked:flow-matching", "kind": "StubLink" },
+    { "raw": "[[Recurrent Neural Network]]", "resolved": "urn:visionflow:linked:recurrent-neural-network", "kind": "ResolvedLink" },
+    { "raw": "[[Convolutional Neural Network]]", "resolved": "urn:visionflow:linked:convolutional-neural-network", "kind": "ResolvedLink" },
+    { "raw": "[[Speaker Verification]]", "resolved": "urn:visionflow:linked:speaker-verification", "kind": "StubLink" },
+    { "raw": "[[Voice Cloning]]", "resolved": "urn:visionflow:linked:voice-cloning", "kind": "StubLink" },
+    { "raw": "[[Audio Codec]]", "resolved": "urn:visionflow:linked:audio-codec", "kind": "ResolvedLink" },
+    { "raw": "[[Source Separation]]", "resolved": "urn:visionflow:linked:source-separation", "kind": "StubLink" },
+    { "raw": "[[Feature Extraction]]", "resolved": "urn:visionflow:linked:feature-extraction", "kind": "StubLink" },
+    { "raw": "[[Audio Generation]]", "resolved": "urn:visionflow:linked:audio-generation", "kind": "ResolvedLink" },
+    { "raw": "[[Generative Adversarial Network]]", "resolved": "urn:visionflow:linked:generative-adversarial-network", "kind": "ResolvedLink" },
+    { "raw": "[[Latent Diffusion]]", "resolved": "urn:visionflow:linked:latent-diffusion", "kind": "StubLink" },
+    { "raw": "[[Deep Generative Model]]", "resolved": "urn:visionflow:linked:deep-generative-model", "kind": "ResolvedLink" },
+    { "raw": "[[Score-Based Model]]", "resolved": "urn:visionflow:linked:score-based-model", "kind": "StubLink" },
+    { "raw": "[[Multimodal AI]]", "resolved": "urn:visionflow:linked:multimodal-ai", "kind": "StubLink" },
+    { "raw": "[[Adaptive Music]]", "resolved": "urn:visionflow:linked:adaptive-music", "kind": "ResolvedLink" },
+    { "raw": "[[Audio Technology]]", "resolved": "urn:visionflow:linked:audio-technology", "kind": "ResolvedLink" },
+    { "raw": "[[Zero-Shot Learning]]", "resolved": "urn:visionflow:linked:zero-shot-learning", "kind": "StubLink" },
+    { "raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "StubLink" },
+    { "raw": "[[Audio Deepfake]]", "resolved": "urn:visionflow:linked:audio-deepfake", "kind": "StubLink" },
+    { "raw": "[[Mean Opinion Score]]", "resolved": "urn:visionflow:linked:mean-opinion-score", "kind": "StubLink" },
+    { "raw": "[[Binaural Audio]]", "resolved": "urn:visionflow:linked:binaural-audio", "kind": "ResolvedLink" },
+    { "raw": "[[Spatial Audio]]", "resolved": "urn:visionflow:linked:spatial-audio", "kind": "StubLink" },
+    { "raw": "[[GPU Acceleration]]", "resolved": "urn:visionflow:linked:gpu-acceleration", "kind": "StubLink" },
+    { "raw": "[[Large Language Model]]", "resolved": "urn:visionflow:linked:large-language-model", "kind": "ResolvedLink" },
+    { "raw": "[[Noise Schedule]]", "resolved": "urn:visionflow:linked:noise-schedule", "kind": "StubLink" },
+    { "raw": "[[Psychoacoustics]]", "resolved": "urn:visionflow:linked:psychoacoustics", "kind": "StubLink" },
+    { "raw": "[[Audio Spatialization]]", "resolved": "urn:visionflow:linked:audio-spatialization", "kind": "ResolvedLink" },
+    { "raw": "[[Explainable AI]]", "resolved": "urn:visionflow:linked:explainable-ai", "kind": "StubLink" },
+    { "raw": "[[Training Data]]", "resolved": "urn:visionflow:linked:training-data", "kind": "StubLink" },
+    { "raw": "[[Audio System]]", "resolved": "urn:visionflow:linked:audio-system", "kind": "ResolvedLink" },
+    { "raw": "[[AI-GroundedDomain]]", "resolved": "urn:visionflow:owl:class:ai-grounded-domain", "kind": "StubLink" },
+    { "raw": "[[AlgorithmLayer]]", "resolved": "urn:visionflow:owl:class:algorithm-layer", "kind": "StubLink" }
+  ]
+}
+```
+
 - ### Definition
-  - [[Audio Synthesis]] generates speech, music and sound from latent or textual input using [[Diffusion Models]], [[Deep Learning]] and neural vocoders, a modality of [[Generative AI]] enabling [[Text-to-Speech]].
-- ### Overview
-  - Audio synthesis produces sound waveforms from higher-level specifications. The pipeline often separates content modelling (predicting an intermediate representation such as a mel-spectrogram) from waveform generation (a vocoder converting that representation into samples).
-  - Generative models including autoregressive networks, generative adversarial networks, and [[Diffusion Models]] have driven dramatic gains in naturalness and controllability across speech, music, and effects.
-- ### Key aspects
-  - Spectrogram prediction followed by neural vocoding.
-  - Autoregressive, GAN-based, and diffusion-based generation families.
-  - Controllability: prosody, timbre, style, and speaker conditioning.
-  - Real-time versus offline synthesis trade-offs.
-  - Evaluation by mean opinion score and objective fidelity metrics.
-- ### Mechanisms
-  - Neural vocoders mapping spectral features to raw [[Audio Processing]] waveforms.
-  - Latent diffusion over compressed audio representations.
-  - Conditioning on text via [[Natural Language Processing]] encoders.
-  - Adversarial training with [[GAN]] discriminators for perceptual quality.
-- ### Applications
-  - [[Text-to-Speech]] assistants and accessibility tools.
-  - [[Music Generation]] and adaptive game soundtracks.
-  - Sound design and foley for media production.
-  - Voice cloning and dubbing, with associated ethical safeguards.
+  - [[Audio Synthesis]] is the computational generation of acoustic waveforms — encompassing speech, music, environmental sounds, and sound effects — from symbolic, textual, semantic, or latent representations using [[Deep Learning]]-based [[Generative AI]] architectures. Unlike [[Audio Signal Processing]], which transforms existing recorded signals, audio synthesis creates novel acoustic content from learned distributions over acoustic data. The pipeline typically separates two concerns: a content model that predicts an intermediate acoustic representation such as a [[Mel-Spectrogram]] or discrete [[Neural Audio Codec]] token sequence from a conditioning input, and a waveform synthesiser (neural vocoder) that converts the intermediate representation to raw PCM audio at 22.05-48 kHz. Generative model families employed include [[Autoregressive Model]]s (WaveNet, SampleRNN, AudioLM), [[Generative Adversarial Network]]s (MelGAN, HiFi-GAN, BigVGAN), [[Diffusion Models]] (DiffWave, AudioLDM 2, Stable Audio), [[Variational Autoencoder]]s, and [[Flow Matching]] approaches. The conditioning signal may be a phoneme or text sequence for [[Text-to-Speech]], a natural language description for text-to-audio generation, a musical score or style token for [[Music Generation]], or a speaker embedding for [[Voice Cloning]]. Quality is assessed through subjective [[Mean Opinion Score]] (MOS) tests and objective metrics including Fréchet Audio Distance (FAD), Kullback-Leibler divergence on acoustic features, and CLAP (Contrastive Language-Audio Pre-training) score. [[Audio Synthesis]] bridges [[Natural Language Processing]], [[Audio Processing]], and [[Generative AI]], and its rapid maturation since 2016 has displaced rule-based and statistical parametric synthesis across virtually all commercial applications, while simultaneously creating novel risks around [[Audio Deepfake]]s and [[Voice Cloning]] that are now subject to regulatory attention.
+
+- ### Semantic Classification
+  - owl-class:: ai:AudioSynthesis
+  - owl-role:: Concept | GenerativeParadigm | ApplicationDomain
+  - owl-inferred:: ai:GenerativeAI, ai:DeepGenerativeModel, ai:AudioProcessing
+  - belongs-to-domain:: [[AI-GroundedDomain]]
+  - implemented-in-layer:: [[AlgorithmLayer]]
+
 - ### Relationships
-  - enables:: [[Text-to-Speech]]
-  - enables:: [[SpeechSynthesis]]
-  - enables:: [[Music Generation]]
-  - partOf:: [[Generative AI]]
-  - uses:: [[Diffusion Models]]
-  - uses:: [[Deep Learning]]
-  - uses:: [[Neural Network]]
-  - relatedTo:: [[Audio Processing]]
-  - relatedTo:: [[GAN]]
-  - requires:: [[Model Evaluation]]
-  - supports:: [[Content Generation]]
-  - dependsOn:: [[Transformer]]
-  - bridgesTo:: [[Natural Language Processing]]
+  - is-subclass-of:: [[Generative AI]], [[Deep Generative Model]], [[Audio Generation]]
+  - has-part:: [[Mel-Spectrogram]], [[Neural Audio Codec]], [[Autoregressive Model]], [[Flow Matching]], [[Noise Schedule]]
+  - requires:: [[Training Data]], [[GPU Acceleration]], [[Model Evaluation]], [[Psychoacoustics]]
+  - enables:: [[Text-to-Speech]], [[Speech Synthesis]], [[Music Generation]], [[Voice Cloning]], [[Audio Generation]], [[Adaptive Music]], [[Audio Spatialization]], [[Binaural Audio]], [[Spatial Audio]]
+  - implements:: [[Diffusion Models]], [[GAN]], [[Variational Autoencoder]], [[Score-Based Model]], [[Latent Diffusion]]
+  - depends-on:: [[Transformer]], [[Autoregressive Model]], [[Recurrent Neural Network]], [[Convolutional Neural Network]], [[Deep Learning]]
+  - supports:: [[Content Generation]], [[Audio System]], [[Audio Technology]]
+  - uses:: [[Neural Network]], [[Feature Extraction]], [[Audio Codec]], [[Large Language Model]], [[Zero-Shot Learning]], [[Reinforcement Learning from Human Feedback]]
+  - contrasts-with:: [[Audio Signal Processing]], [[Source Separation]]
+  - related-to:: [[Audio Processing]], [[GAN]], [[Audio Deepfake]], [[Explainable AI]], [[Multimodal AI]], [[Speaker Verification]]
+  - standardized-by:: [[Mean Opinion Score]]
+
+- ### Content
+  - ## Compositional Relationships (Components)
+    ```
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:hasPart ai:MelSpectrogram))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:hasPart ai:NeuralAudioCodec))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:hasPart ai:AutoregressiveModel))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:hasPart ai:FlowMatching))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:hasPart ai:NoiseSchedule))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:hasPart ai:NeuralVocoder))
+    ```
+  - ## Dependency Relationships
+    ```
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:requires ai:TrainingData))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:requires ai:GPUAcceleration))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:requires ai:ModelEvaluation))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:dependsOn ai:Transformer))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:dependsOn ai:AutoregressiveModel))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:dependsOn ai:DeepLearning))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:dependsOn ai:ConvolutionalNeuralNetwork))
+    ```
+  - ## Capability Relationships
+    ```
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:enables ai:TextToSpeech))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:enables ai:SpeechSynthesis))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:enables ai:MusicGeneration))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:enables ai:VoiceCloning))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:enables ai:AudioGeneration))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:enables ai:AdaptiveMusic))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:enables ai:AudioSpatialization))
+    ```
+  - ## Implementation Relationships
+    ```
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:implements ai:DiffusionModels))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:implements ai:GenerativeAdversarialNetwork))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:implements ai:VariationalAutoencoder))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:implements ai:ScoreBasedModel))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:implements ai:LatentDiffusion))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:uses ai:NeuralNetwork))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:uses ai:LargeLanguageModel))
+    ```
+  - ## Reduction Relationships
+    ```
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:reducesTo ai:GenerativeAI))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:reducesTo ai:AudioGeneration))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:reducesTo ai:DeepGenerativeModel))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:supports ai:ContentGeneration))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:supports ai:AdaptiveMusic))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:bridgesTo ai:NaturalLanguageProcessing))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:bridgesTo ai:MultimodalAI))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:relatedTo ai:AudioSignalProcessing))
+    SubClassOf(ai:AudioSynthesis
+      ObjectSomeValuesFrom(ai:relatedTo ai:AudioDeepfake))
+    ```
+
+  - ## About
+    - [[Audio Synthesis]] emerged from classical electronic music engineering and telecommunications research. The foundational paradigms include: additive synthesis (summing sinusoidal partials with individually specified amplitude envelopes, as implemented in the Hammond organ and early digital synthesisers); subtractive synthesis (filtering spectrally rich waveforms — sawtooth, square, noise — with resonant filters to sculpt the timbre, the basis of the Moog synthesiser, 1964, and the Roland TR-808 drum machine, 1980, whose electronically synthesised drum sounds became a defining sonic element of hip-hop and electronic dance music); frequency modulation (FM) synthesis (modulating the frequency of a carrier oscillator with a modulator oscillator, producing complex harmonic spectra from simple sine waves, commercialised by Yamaha in the DX7 synthesiser, 1983, which sold 200,000 units and produced the defining piano, electric piano, and brass sounds of 1980s pop music); and physical modelling synthesis (digital waveguide models of acoustic resonators — string, tube, membrane — developed at Stanford CCRMA by Julius O. Smith III in the 1980s, later commercialised in the Yamaha VL1 and Korg OASYS). Each paradigm embodies a different mathematical model of sound production: additive synthesis implements Fourier series reconstruction; FM synthesis exploits Bessel function spectral relationships; physical modelling implements discretised wave equations on branched waveguide networks. These classical approaches remain active in music production and instrument design, but have been largely supplanted by statistical and neural generative models for high-naturalness [[Text-to-Speech]] and open-vocabulary [[Audio Generation]].
+    - Concatenative synthesis and unit selection synthesis dominated commercial [[Text-to-Speech]] systems from the late 1980s through the 2010s. Unit selection (Festival TTS, Nuance Vocalizer, AT&T Natural Voices) concatenates pre-recorded speech fragments (diphones, half-phones, or longer units) selected from a corpus of typically 30 minutes to 2 hours of recorded speech to minimise target cost (how well the unit matches the target specification) and join cost (acoustic discontinuity between adjacent units). Quality is high for in-domain text but degrades severely on out-of-vocabulary words, unusual prosodic patterns, or text styles not represented in the corpus. Statistical Parametric Synthesis using Hidden Markov Models (HMM-TTS), pioneered by Tokuda, Yoshimura and colleagues at the Nagoya Institute of Technology through the HTS system (1999-2012), modelled mel-cepstral and fundamental frequency trajectories using decision tree-clustered HMM states. Maximum Likelihood Parameter Generation (MLPG) with dynamic constraints produced smooth, maximally likely trajectories but exhibited characteristic over-smoothing that gave HMM synthesis its 'buzzy' or 'nasal' quality — a consequence of variance averaging across states. Nevertheless, HMM-TTS required only 30-60 minutes of training data per speaker and enabled speaker adaptation with as little as 5 minutes of target speaker data, making it widely deployed in assistive technology and multilingual TTS systems.
+    - The deep learning era began with WaveNet (van den Oord et al., DeepMind, 2016), a dilated causal [[Convolutional Neural Network]] with gated activation units that models the raw audio waveform at the level of individual samples (24 kHz, 16-bit μ-law companded), using an [[Autoregressive Model]] that predicts each sample conditioned on all previous samples via masked convolutions. With 30 layers of dilated causal convolutions, the receptive field spans several hundred milliseconds of audio context. WaveNet conditioned on mel-spectrograms achieved [[Mean Opinion Score]] ratings of 4.21 on a 5-point scale, statistically indistinguishable from human natural speech in blind listening tests — a landmark result that demonstrated the feasibility of raw waveform generative models. However, WaveNet's sequential sample-by-sample generation ran at approximately 0.02× real time (50 seconds of inference to synthesise 1 second of audio) on a GPU, making it impractical for production [[Text-to-Speech]]. Distillation strategies (Parallel WaveNet, 2017) and compact recurrent architectures (WaveRNN, 2018; LPCNet, 2019) reduced inference to real-time and sub-real-time on modest hardware. Flow-based generative models (WaveGlow, 2018; Glow-TTS, 2020) enabled parallel generation by inverting a normalising flow, achieving 25× real-time on a V100 GPU. The Tacotron architecture (Wang et al., Google Brain, 2017) introduced end-to-end TTS directly from character sequences to mel-spectrograms using a sequence-to-sequence model with attention, trained on 24 hours of single-speaker speech; Tacotron 2 (2018) paired an LSTM acoustic model with a WaveNet vocoder, producing a landmark end-to-end TTS pipeline.
+    - The subsequent transition to non-autoregressive architectures based on [[Generative Adversarial Network]]s revolutionised neural vocoder inference speed. MelGAN (Kumar et al., 2019) replaced WaveNet's sequential generation with a fully convolutional GAN conditioned on [[Mel-Spectrogram]]s, achieving 512× real-time generation with comparable MOS. HiFi-GAN (Kong et al., 2020) improved quality through multi-period and multi-scale discriminator architectures and multi-resolution STFT loss, achieving MOS surpassing WaveNet at 167× real-time on CPU. BigVGAN (Lee et al., 2022) scaled HiFi-GAN to 112M parameters using periodic activation functions (snake activations), achieving universal vocoder performance with strong generalisation to unseen speakers and styles. GAN-based vocoders trained in two to four hours on a single GPU remain the practical production choice for real-time, resource-constrained [[Text-to-Speech]] deployment in edge devices and web applications.
+    - The [[Diffusion Models]] paradigm, pioneered for images by Ho et al. (DDPM, 2020) and extended to continuous score matching by Song et al. (Score-SDE, 2020), translated rapidly to audio. DiffWave (Kong et al., 2020) and WaveGrad (Chen et al., 2020) applied score-based diffusion directly to raw waveforms at 22.05 kHz, achieving competitive MOS with WaveNet while enabling parallel generation via 6-50 denoising iterations. [[Latent Diffusion]] — operating in a compressed latent space encoded by a [[Variational Autoencoder]] or [[Neural Audio Codec]] rather than on high-dimensional raw waveforms — dramatically reduced the computational cost of the denoising process. AudioLDM (Liu et al., 2023) applied [[Latent Diffusion]] to text-conditioned audio generation using CLAP audio-text embeddings as conditioning signals, enabling generation of diverse sound effects from natural language prompts. AudioLDM 2 (Liu et al., 2024) extended the paradigm with a unified latent representation ("language of audio", AudioMAE self-supervised features) covering speech, music, and environmental sounds, achieving competitive Fréchet Audio Distance (FAD) scores across all three audio domains from a single model. Stable Audio Open (Evans et al., ICASSP 2025) uses a latent diffusion [[Transformer]] conditioned on CLAP embeddings, demonstrating competitive MusicCaps FAD scores comparable to MusicGen-Large while being trained on entirely Creative Commons-licensed data. The [[Noise Schedule]] — the variance-preserving forward diffusion process parameterisation — critically affects both training stability and the number of sampling steps required for high-quality generation; cosine schedules (Nichol & Dhariwal, 2021) and flow matching formulations (Lipman et al., 2022) have largely replaced the original linear schedule.
+    - The most transformative architectural shift from 2022 onward has been the codec language model paradigm, which reconceptualises [[Audio Synthesis]] as a sequence modelling problem over discrete acoustic tokens. [[Neural Audio Codec]]s (EnCodec, SoundStream, Descript Audio Codec) compress audio at 24 kHz to a sequence of RVQ codebook indices at 75 Hz (SoundStream at 3 kbps: 75 × 8 codebook indices per second = 600 tokens/second), enabling audio to be modelled by the same [[Large Language Model]] architectures that drove the NLP revolution. AudioLM (Borsos et al., Google Research, 2022) demonstrated that a hierarchical [Autoregressive Model]] — first predicting semantic tokens from w2v-BERT, then acoustic tokens from SoundStream conditioned on semantic tokens — could generate temporally coherent long-form piano music and speech continuations that are perceptually indistinguishable from real recordings in a forced-choice listening test. MusicLM (Agostinelli et al., 2023) extended AudioLM to text-conditioned music generation using MuLan music-text joint embeddings as conditioning signals, achieving MusicCaps FAD of 4.0 compared to 36.7 for the baseline. VALL-E (Wang et al., Microsoft, 2023) fine-tuned a codec language model on 60,000 hours of English speech (LibriLight), achieving zero-shot voice cloning from 3-second prompts with speaker similarity metrics of 0.93 (human: 0.96) on SECS evaluation, effectively demonstrating that high-quality [[Voice Cloning]] requires only seconds of reference audio from an unseen speaker. These results raised substantial ethical concerns about audio identity fraud and accelerated regulatory responses in the UK, EU, and USA regarding synthetic voice consent and disclosure.
+
+  - ## Components / Architecture
+    - **Content Model (front-end)**: Processes the conditioning input and predicts an intermediate acoustic representation. For [[Text-to-Speech]], a grapheme-to-phoneme (G2P) module converts text to phoneme or BPE token sequences; the acoustic model then predicts a [[Mel-Spectrogram]] (80-128 mel bins at 22.05 kHz, hop size 256 samples, ~85 frame/second) or discrete [[Neural Audio Codec]] token sequence. Classical two-stage TTS (Tacotron → WaveNet, FastSpeech 2 → HiFi-GAN) separates phoneme-to-spectrogram prediction from spectrogram-to-waveform generation; modern end-to-end architectures (VITS, Matcha-TTS, Kokoro-82M) jointly model acoustic and linguistic features in a single network using [[Flow Matching]] (continuous normalising flows) or variational inference with adversarial training, removing the two-stage information bottleneck. Non-autoregressive duration predictors (FastSpeech 2, JETS) enable parallel acoustic model inference, achieving 50-200× real-time content model throughput. For text-to-audio and [[Music Generation]], CLAP text encoder or T5 / FLAN-T5 [[Large Language Model]] encoder maps text prompts to conditioning embeddings that modulate the generative model via cross-attention or classifier-free guidance.
+    - **Neural Vocoder (back-end)**: Converts intermediate [[Mel-Spectrogram]] representation to time-domain PCM waveform at the target sample rate (typically 22.05 kHz or 24 kHz). GAN vocoders (HiFi-GAN V1, V2; BigVGAN; Vocos) use multi-period discriminators (MPD, operating on subsampled audio at periods [2,3,5,7,11]) and multi-resolution STFT losses as training objectives, achieving real-time factors >100× on consumer CPUs and >500× on single-thread ARM. Vocos (2023) operates entirely in the frequency domain, predicting STFT magnitudes and phases from [[Mel-Spectrogram]]s and achieving competitive quality with HiFi-GAN while running at 3× faster inference. Diffusion vocoders (DiffWave-based, PriorGrad) achieve MUSHRA scores 1-2 points higher than HiFi-GAN in controlled quality benchmarks at the cost of 6-50 DDIM denoising steps (~5-20 ms on GPU vs 1 ms for HiFi-GAN). Ultra-lightweight neural differential DSP vocoders combine differentiable sinusoidal oscillator banks with small [[Neural Network]] filter controllers, targeting <1 million parameter deployments on microcontrollers.
+    - **Codec Language Model (unified architecture)**: An [[Autoregressive Model]] — typically a [[Transformer]] decoder with causal self-attention — trained on RVQ token streams from a [[Neural Audio Codec]] models audio as next-token prediction over interleaved codebook indices. At 75 Hz with 8 codebooks, EnCodec produces 600 tokens per second of audio; at a generation rate of 400 tokens per second on a GPU, codec LM [[Audio Synthesis]] achieves ~0.67× real-time before KV-caching and speculative decoding optimisations. Hierarchical modelling separates coarse semantic tokens (first codebook, modelled autoregressively) — which carry pitch, rhythm, and phonetic content — from fine acoustic tokens (remaining codebooks, modelled conditionally in parallel or with shallow autoregression) which carry timbral and textural detail. [[Transformer]] architectures with Flash Attention and grouped-query attention reduce KV-cache memory to enable streaming generation with sub-300 ms first-chunk latency. The VALL-E architecture uses an [[Autoregressive Model]] for the first codebook and a non-autoregressive model for the remaining codebooks, generating high-quality speech continuations in two inference passes.
+    - **Conditioning and Guidance Mechanisms**: CLAP (Contrastive Language-Audio Pre-training, Elizalde et al., 2023) embeds text prompts and audio excerpts in a shared 512-dimensional space via contrastive training on 630,000 audio-text pairs, enabling zero-shot text conditioning without per-task fine-tuning. Classifier-free guidance (CFG) — training with a 10-20% probability of dropping the conditioning signal, then at inference scaling the conditional logit by guidance scale w ∈ [1.5, 7.5] — trades diversity for fidelity/adherence to the text prompt, producing more prompt-adherent generation at higher guidance scales. Speaker embeddings for [[Voice Cloning]] are extracted by speaker encoders (d-vector, x-vector, ECAPA-TDNN achieving equal error rate 0.5-1.5% on VoxCeleb1); the 256-512 dimensional embedding conditions the acoustic model via feature-wise linear modulation (FiLM) or cross-attention. Prosody conditioning is handled by separate pitch/energy/duration extractors in FastSpeech 2, or implicitly through speaker/style embeddings in end-to-end systems. Emotion conditioning uses emotion classifier embeddings or text emotion annotation, enabling controllable affective [[Speech Synthesis]].
+    - **Evaluation Pipeline**: Subjective evaluation follows ITU-T P.800 [[Mean Opinion Score]] (MOS) methodology: participants rate naturalness on a 1-5 scale across typically 50-200 utterances in a double-blind listening test. Mean MOS for high-quality synthesis systems (WaveNet, HiFi-GAN) reaches 4.0-4.4 on LJSpeech; the MOS ceiling for professional recordings is approximately 4.5-4.7 (not 5.0, due to listener variance). For [[Model Evaluation]] at scale, UTMOS (Unified TTS MOS Prediction, Saeki et al., 2022) provides a trained MOS predictor with Pearson correlation ~0.96 with human MOS across standard benchmarks, enabling rapid evaluation without listening studies. For [[Music Generation]] and sound effect synthesis, objective metrics include: Fréchet Audio Distance (FAD) computed over VGGish or CLAP embeddings of generated vs reference audio (lower is better, reference FAD = 0.0); CLAP cosine similarity between text prompt and generated audio (higher is better); Kullback-Leibler divergence between marginal distributions of acoustic features. For [[Voice Cloning]], SECS (Speaker Embedding Cosine Similarity) and speaker verification equal error rate measure identity preservation. For speech enhancement and vocoding, SI-SDR (scale-invariant signal-to-distortion ratio), PESQ (Perceptual Evaluation of Speech Quality), and STOI (Short-Time Objective Intelligibility) are standard signal-level metrics. Automatic MOS predictors are deployed in large-scale offline evaluation pipelines at companies developing [[Text-to-Speech]] and [[Music Generation]] systems.
+
+  - ## Use Cases / Major Families
+    - **Text-to-Speech (TTS) and Assistive Technology**: Industrial TTS services generate hundreds of millions of synthetic speech segments daily. Google Cloud TTS (WaveNet-based, 380+ voices across 50+ languages), Microsoft Azure Neural Voice (VALL-E derived, 400+ neural voices), Amazon Polly (long-form neural TTS, deployed in Alexa ecosystem), and ElevenLabs (voice cloning API, 50,000+ developer accounts) represent the principal commercial deployment vectors. Application domains include: screen reading for visual impairment (JAWS, NVDA, macOS VoiceOver using on-device neural TTS models); navigation assistant voice output (Google Maps, Waze, automotive navigation systems); audiobook production from text manuscripts (Audible's AI narration tier, Apple Books synthetic narration); Interactive Voice Response (IVR) systems replacing pre-recorded prompts with real-time synthesis; and real-time conversational AI agents requiring low-latency streaming [[Speech Synthesis]] (OpenAI GPT-4o's Real-Time API, Google Gemini Live, Claude Voice). As of 2026, streaming TTS with 150 ms first-chunk latency (CosyVoice2-0.5B, IndexTTS-2) is viable for real-time turn-taking in voice assistants. The accessibility imperative remains central: the UK Equality Act 2010 and the European Accessibility Act 2025 impose [[Text-to-Speech]] requirements across public digital services, driving deployment of multi-accent, multi-dialect synthesis models supporting British English, Scottish English, Welsh English, and Northern English accent variants.
+    - **Music Generation and Composition**: The commercial [[Music Generation]] ecosystem underwent a phase transition in 2024-2025. Consumer platforms Suno (12 million registered users as of early 2026, v4 model released late 2025) and Udio generate studio-quality songs from 200-character text prompts, with Suno v4 achieving audio quality indistinguishable from professional recordings in independent blind listening tests at its quality tier. Billboard and Spotify documented AI-generated tracks charting in genre-specific charts, prompting new content labelling policies. Meta's MusicGen (AudioCraft framework, 2023) — trained on 20,000 hours of licensed music and 390,000 hours of music + audio — produces 12-second stereo clips from text at 32 kHz; it demonstrated state-of-the-art FAD of 3.8 on MusicCaps benchmark. Stable Audio Open (ICASSP 2025) achieves competitive MusicCaps FAD comparable to MusicGen-Large while using exclusively Creative Commons-licensed training data, demonstrating that high-quality music generation does not require unlicensed copyrighted material. Research systems (MusicLM, Jukebox, MusicVAE, MuseCoco) span generative approaches from VAE-based style interpolation to codec language models, enabling melodic continuation, style transfer, and accompaniment generation. Professional-grade tools (AIVA, Soundful, Amper Music, Beatoven.ai) target adaptive scoring for film, games, and corporate video production, generating royalty-free background music aligned to scene descriptions and emotional cues.
+    - **Sound Design, Foley, and Environmental Audio**: Text-to-audio models trained on AudioSet (AudioGen, Make-An-Audio, Tango 2, AudioX) generate realistic sound effects and environmental soundscapes from natural language descriptions such as "rain on a tin roof with distant thunder" or "electric motor spinning up with gear clunk." Film post-production pipelines use these systems for automated foley and background ambience generation, replacing costly library searches and recording sessions. Game audio designers generate procedural environment sounds (crowd ambience, wind variations, machinery noise textures) conditioned on semantic game state labels. AudioX (2025) — a unified diffusion [[Transformer]] conditioned on video, image, motion capture, and IMU data in addition to text — enables video-to-audio synthesis (generating synchronised sound effects from silent video) and motion-to-sound mapping (generating foley from character animation). VR experience designers generate 3D spatial soundscapes from scene descriptions combined with spatial metadata, processed through [[Audio Spatialization]] pipelines for [[Binaural Audio]] delivery.
+    - **Voice Cloning, Speaker Adaptation, and Media Localisation**: Zero-shot [[Voice Cloning]] represents both the most commercially impactful and ethically fraught capability of contemporary [[Audio Synthesis]]. VALL-E (3-second prompt, 60,000 hours of training data) achieves SECS of 0.93 (human ceiling 0.96), meaning synthesised speech is nearly speaker-identical to the reference. OpenVoice V2 (MIT, 2024) enables cross-lingual [[Voice Cloning]] — synthesising in a target speaker's voice in a language they have never spoken — used for media localisation and dubbing at scale. Papercup (London, UK) deploys neural dubbing for broadcasters, cloning presenter voices for automatic multi-language dubbing of documentary and news content; Resemble AI provides voice cloning APIs with built-in consent management and watermarking. The [[Audio Deepfake]] threat has driven development of audio watermarking (AudioSeal, Meta, 2024: real-time imperceptible watermark with 0.6 dB PESQ impact, 99.8% detection rate), C2PA audio content credential provenance standards, and anti-spoofing [[Speaker Verification]] models (AASIST, RawBoost) deployed in financial authentication systems. The UK Digital Media and Voice Integrity Act (2025) requires explicit consent before synthesising any individual's voice for commercial distribution; EU AI Regulation similarly imposes disclosure requirements for synthetic voice in broadcast media.
+    - **Adaptive and Interactive Music Systems**: Procedural and [[Adaptive Music]] systems dynamically respond to real-time game state, player behaviour, or physiological signals to modify musical texture, tempo, and instrumentation. iMUSE (Lucas Arts, 1991) was the first widely deployed system; modern adaptive music engines (FMOD Studio Adaptive Music System, Wwise with dynamic mixing, Unity Audio Engine) trigger and blend pre-composed music cues. AI-native [[Adaptive Music]] systems (Djinn, Endel — 10 million subscribers, Apple partnership) use generative models conditioned on time of day, heart rate, activity, and location to synthesise continuous personalised soundscapes without pre-composed material, adapting in real time to sustain focus, relaxation, or movement states. Game soundtrack composers increasingly use [[Audio Synthesis]] tools to generate variations and transitions procedurally: AIVA's composition engine generates orchestral accompaniments; Beatoven generates contextually matched original tracks from scene descriptions; Jukedeck-style systems (now integrated into TikTok's music creation tools) generated 170 million pieces of music between 2015-2019. Real-time [[Audio Spatialization]] synthesis in XR game engines (Unreal Audio, Unity's Resonance Audio) renders 3D spatial audio objects using HRTF convolution computed on [[GPU Acceleration]], integrating with physical room acoustics simulation for fully immersive sound environments.
+    - **Scientific, Medical, and Accessibility Applications**: Personalised voice restoration for patients with laryngeal cancer post-laryngectomy uses custom neural [[Speech Synthesis]] models fine-tuned on pre-surgical voice recordings, enabling patients to retain their individual voice characteristics after losing their natural voice — deployed clinically in a small number of UK hospitals with ethics board approval. Dysarthric speech synthesis (generating intelligible speech from highly disordered dysarthric input using voice conversion) addresses communication needs of people with cerebral palsy, ALS, and other motor speech disorders. Audio augmentation for audiological research generates controlled acoustic environments with precisely specified signal-to-noise ratios, spatial configurations, and reverberation conditions, enabling reproducible studies of hearing loss impact without the logistical constraints of recording in real acoustic environments. The BBC's AI audio restoration project (2024-2026) uses diffusion model-based bandwidth extension and denoising to restore archive recordings from the 1920s-1950s, applying [[Audio Synthesis]] techniques to reconstruct high-frequency content and remove noise from historically significant broadcast material. Drug discovery applications model protein binding site acoustics for audio-domain machine learning on molecular simulation data — an emerging interdisciplinary application at the boundary of signal processing and computational biology.
+
+  - ## Academic Context
+    - The foundational WaveNet paper (van den Oord et al., 2016, DeepMind) established the paradigm of raw waveform autoregressive generation and catalysed an explosion of subsequent work. The Tacotron series (Wang et al., Google, 2017; Shen et al., Google, 2018) demonstrated end-to-end TTS from characters to spectrograms using sequence-to-sequence models with attention. The GAN vocoder lineage (Kumar et al. MelGAN 2019; Kong et al. HiFi-GAN 2020; Lee et al. BigVGAN 2022) established the practical production paradigm. The diffusion paradigm for audio (DiffWave, WaveGrad, 2020) and its latent extension (AudioLDM, 2023; Stable Audio, 2024) form the dominant research frontier for generative audio quality.
+    - Key academic conferences: INTERSPEECH (speech and language), ICASSP (signal processing), ISMIR (music information retrieval), NeurIPS, ICML, ICLR (machine learning). Benchmark datasets: LJSpeech (22.05 kHz single-speaker TTS), VCTK (multi-speaker), LibriTTS (multi-speaker clean), AudioSet (632 audio event classes, 2 million clips), MusicCaps (5521 music clips with text descriptions for music generation evaluation), FSD50k (50k sound clips for sound event classification). The review of deep learning audio generation by Borsos et al. (2023, A Survey of Deep Learning Audio Generation Methods) provides comprehensive coverage of the pre-LLM era.
+    - Queen Mary University of London (C4DM) and Edinburgh CSTR contribute to academic research on differentiable synthesis, neural vocoders, and statistical parametric synthesis. The DMRN workshop at QMUL covers music technology research including synthesis methods. Carnegie Mellon University, MIT CSAIL, and Stanford CCRMA remain important US centres.
+
+  - ## Current Landscape (2026)
+    - The dominant paradigm as of mid-2026 is the codec language model: a [[Neural Audio Codec]] tokenises audio into discrete RVQ streams, and a [[Large Language Model]]-style [[Transformer]] autoregressively predicts these tokens conditioned on text. This approach unifies [[Text-to-Speech]], [[Music Generation]], and environmental audio under a single framework. AudioX (arXiv, 2025) demonstrated a diffusion [[Transformer]] for anything-to-audio generation conditioned on video, images, motion, text, or IMU data. Felle (2025) introduced token-wise coarse-to-fine [[Flow Matching]] for autoregressive [[Speech Synthesis]] with high naturalness.
+    - Fish Speech V1.5 leads open-source multilingual TTS with industry-leading accuracy across 13 languages. IndexTTS-2 provides zero-shot capability with emotion and duration control. CosyVoice2-0.5B achieves 150 ms streaming latency for real-time deployment. These open-weight models are reshaping the competitive landscape for commercial TTS APIs.
+    - Legal and regulatory tensions are acute. The Recording Industry Association of America (RIAA) and affiliated majors filed US\$500 million lawsuits against Suno and Udio in mid-2024 over unlicensed [[Training Data]]. As of early 2026, both companies are in settlement discussions involving licensing frameworks. German collecting society GEMA and Danish society Koda have filed suit against Suno and OpenAI respectively in European jurisdictions. In the UK, the Council of Music Makers demands creator consent before any music is used in AI training; the Digital Media and Voice Integrity Act (2025) mandates consent for training on voice datasets and disclosure when synthetic voices appear in broadcast contexts. The EU AI Regulation (AIR) requires user consent for voice cloning storage and dissemination. C2PA audio content credentials and watermarking standards (AudioSeal, Stable Signature for audio) are being adopted as provenance mechanisms.
+    - Investigative reporting on [[Audio Deepfake]] fraud documented sharp increases in synthetic voice attacks targeting financial services in 2025 (Deepfake-as-a-Service report, darknet.org.uk, 2025). Detection models (audio deepfake detection leaderboards, ASVspoof 2024 Challenge) are advancing, but the arms race between generation and detection is ongoing. [[Speaker Verification]] systems suffer measurable false-acceptance rate increases against zero-shot voice-cloned attacks.
+
+  - ## UK Context
+    - The UK has significant academic and industry presence in [[Audio Synthesis]]. **Queen Mary University of London (QMUL)** Centre for Digital Music (C4DM) contributed the DDSP review (Hayes et al., 2023) and hosts expertise in differentiable synthesis, neural vocoders, and music generation evaluation. The Sound and Music Computing MSc at QMUL trains specialists in audio synthesis techniques. The London Interdisciplinary Music Research Initiative (LIMRI), formally launched at DMRN+20 in December 2025, includes researchers from Goldsmiths (music technology), King's College London, and Kingston University.
+    - **The University of Edinburgh** Centre for Speech Technology Research (CSTR) is historically important: it produced the Festival speech synthesis system (Black and Taylor, 1994), the first widely deployed open-source TTS system, and subsequently contributed to HMM-based synthesis (HTS). Current research includes neural vocoder development, speaker adaptation, and prosody modelling. Edinburgh's School of Informatics has deep connections to language model research that intersects with codec language model TTS.
+    - **Cambridge University** Engineering Department has historic contributions to speech synthesis and statistical speech models. Spinouts from Cambridge Phonetics include Speechworks and Nuance's UK operation. **Speechmatics**, a Cambridge-based company, develops ASR and increasingly synthesis capabilities. **DeepMind** (London, now Google DeepMind) published WaveNet (2016) and Tacotron-WaveNet, two of the most influential contributions to [[Audio Synthesis]] in the deep learning era. **AI companies with London/UK headquarters** active in audio synthesis include ElevenLabs (registered UK entity), Resemble AI, and Papercup (AI dubbing for media).
+    - **Northern England context**: Sheffield's electronic music heritage (Warp Records, Aphex Twin's early material, the Autechre–MIDI synthesis lineage) represents significant creative context in which digital synthesis tools evolved. The University of Sheffield Music Technology programme has produced practitioners working in audio synthesis and DSP. Nottingham and Leeds have active music technology communities, with Leeds-based artists contributing to algorithmic composition traditions that inform contemporary generative audio research. The BBC Philharmonic Orchestra based in Salford, Manchester, collaborates with academic partners on immersive audio and spatial synthesis research relevant to future broadcasting applications.
+
+  - ## Future Directions (2026-2030)
+    - **Real-time streaming synthesis at minimal latency**: CosyVoice2's 150 ms latency target will shrink toward 50 ms, enabling fully interactive conversational agents with natural turn-taking. Streaming [[Flow Matching]] and streaming [[Diffusion Models]] with early exit mechanisms are active research directions.
+    - **Multimodal conditioning**: [[Multimodal AI]] models conditioning [[Audio Synthesis]] on video frames, motion capture data, tactile signals, and physiological data will enable fully embodied virtual agents and film post-production automation. AudioX (2025) establishes the unified cross-modal synthesis paradigm; its successors will expand the conditioning modality space.
+    - **Personalised and adaptive synthesis**: On-device adaptation of TTS models to individual user voices with minutes of data (few-shot voice cloning) will become standard in personal assistants. [[Adaptive Music]] systems will synthesise entire scores personalised to listener psychophysiology and environmental context, using [[Reinforcement Learning from Human Feedback]] to optimise for engagement and mood.
+    - **Physically grounded synthesis**: Combining [[Audio Synthesis]] with physical simulation (finite element method room acoustics, rigid body sound synthesis) and differentiable DSP will enable synthesis of acoustic environments that are physically plausible and compositionally controllable, relevant to XR applications and [[Binaural Audio]] rendering.
+    - **Ethical and regulatory maturation**: Copyright licensing frameworks for [[Training Data]] will be established in UK and EU jurisdictions by 2027-2028, modelled on music synchronisation licensing. C2PA audio provenance standards will be widely adopted in broadcasting and social media platforms. [[Audio Deepfake]] detection will be integrated into phone carrier infrastructure and financial fraud prevention systems. [[Explainable AI]] methods will be applied to synthesis models to enable interpretable control of voice characteristics and emotional prosody.
+    - **Benchmark convergence**: As quality approaches human parity on standard benchmarks (MOS, FAD), evaluation will shift toward finer-grained perceptual quality metrics, long-form coherence measures, and task-specific downstream utility, requiring new evaluation frameworks beyond [[Mean Opinion Score]].
+
+  - ## Research & Literature
+    - 1. van den Oord, A., et al. (2016). "WaveNet: A generative model for raw audio." *arXiv*:1609.03499. [DeepMind]
+    - 2. Wang, Y., et al. (2017). "Tacotron: Towards end-to-end speech synthesis." *INTERSPEECH 2017*, 4006-4010.
+    - 3. Shen, J., et al. (2018). "Natural TTS synthesis by conditioning WaveNet on mel spectrogram predictions." *ICASSP 2018*.
+    - 4. Oord, A., et al. (2018). "Parallel WaveNet: Fast high-fidelity speech synthesis." *ICML 2018*, 3918-3926.
+    - 5. Kumar, K., et al. (2019). "MelGAN: Generative adversarial networks for conditional waveform synthesis." *NeurIPS 2019*, 14910-14921.
+    - 6. Kong, J., Kim, J., & Bae, J. (2020). "HiFi-GAN: Generative adversarial networks for efficient and high fidelity speech synthesis." *NeurIPS 2020*, 17022-17033.
+    - 7. Kong, Z., et al. (2020). "DiffWave: A versatile diffusion model for audio synthesis." *ICLR 2021*. arXiv:2009.09761.
+    - 8. Ho, J., Jain, A., & Abbeel, P. (2020). "Denoising diffusion probabilistic models." *NeurIPS 2020*, 6840-6851.
+    - 9. Liu, H., et al. (2023). "AudioLDM: Text-to-audio generation with latent diffusion models." *ICML 2023*. arXiv:2301.12503.
+    - 10. Liu, H., et al. (2024). "AudioLDM 2: Learning holistic audio generation with self-supervised pretraining." *IEEE/ACM TASLP*, 32, 2871-2883.
+    - 11. Evans, Z., et al. (2024). "Stable Audio Open." *arXiv*:2407.14358. [ICASSP 2025]
+    - 12. Borsos, Z., et al. (2023). "AudioLM: A language modeling approach to audio generation." *IEEE/ACM TASLP*, 31, 2523-2533. [Google]
+    - 13. Agostinelli, A., et al. (2023). "MusicLM: Generating music from text." *arXiv*:2301.11325. [Google]
+    - 14. Wang, C., et al. (2023). "VALL-E: Neural codec language models are zero-shot text to speech synthesizers." *arXiv*:2301.02111. [Microsoft]
+    - 15. Défossez, A., et al. (2022). "High Fidelity Neural Audio Compression." *TMLR* 2023. [EnCodec, Meta]
+    - 16. Zeghidour, N., et al. (2021). "SoundStream: An end-to-end neural audio codec." *IEEE/ACM TASLP*, 30, 495-507. [Google]
+    - 17. Copet, J., et al. (2023). "Simple and controllable music generation." *NeurIPS 2023*. [MusicGen, Meta AudioCraft]
+    - 18. Lee, S.-G., et al. (2022). "BigVGAN: A universal neural vocoder with large-scale training." *ICLR 2023*. arXiv:2206.04658.
+    - 19. Kim, J., et al. (2021). "Conditional variational autoencoder with adversarial learning for end-to-end text-to-speech." *ICML 2021*. [VITS]
+    - 20. Chen, N., et al. (2020). "WaveGrad: Estimating gradients for waveform generation." *ICLR 2021*.
+    - 21. Guo, Z., et al. (2024). "Survey of deep learning audio generation methods." *arXiv*:2406.00146.
+    - 22. Hayes, B., et al. (2023). "A review of differentiable digital signal processing for music and speech synthesis." *Frontiers in Signal Processing*, 3, 1284100. [QMUL C4DM]
+    - 23. Borsos, Z., et al. (2024). "Voicebox: Text-guided multilingual universal speech generation at scale." *NeurIPS 2023*. [Meta]
+    - 24. Mehta, S., et al. (2024). "Matcha-TTS: A fast TTS architecture with conditional flow matching." *ICASSP 2024*.
+    - 25. Le Viet Tung, et al. (2025). "AudioX: A unified framework for anything-to-audio generation." *arXiv*:2503.10522.
+    - 26. Soundverse AI (2026). "Voice Cloning Consent Laws by Country: Understanding Global Voice Rights." Technical Report.
+    - 27. Billboard (2025). "The 10 Biggest AI Music Stories of 2025: Suno & Udio Settlements, AI on the Charts & More." *Billboard*.
+    - 28. Gray Group International (2026). "AI-Generated Music and Copyright: What Creators Need to Know in 2026." Policy Analysis.
+
 - ### Provenance
-  - source:: GapMaterialisation
-  - updated:: 2026-06-15
+  - sources:: https://arxiv.org/pdf/2406.00146, https://arxiv.org/pdf/2407.14358, https://arxiv.org/pdf/2503.10522, https://www.billboard.com/lists/biggest-ai-music-stories-2025-suno-udio-charts-more/, https://www.graygroupintl.com/blog/ai-generated-music-copyright-2026/, https://arxiv.org/html/2308.05734v3, https://comma.eecs.qmul.ac.uk/assets/pdf/Hayes_DDSP_Review.pdf, https://arxiv.org/pdf/2301.02111
+  - migration-date:: 2026-06-20T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

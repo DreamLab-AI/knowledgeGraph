@@ -375,10 +375,6 @@ public:: true
   }
   ```
 
-  ## Definition
-
-  Programmable GPU kernel independent of the traditional graphics pipeline that executes arbitrary parallel computations, enabling general-purpose GPU programming (GPGPU) for physics simulation, procedural generation, image processing, and data-parallel algorithms.
-
   #### Related Concepts
   - [[Vertex Shader]]
   - [[Pixel Shader]]
@@ -439,9 +435,6 @@ public:: true
   - Sanders, J. & Kandrot, E. (2010). *CUDA by Example*
   - Fatahalian, K. & Bryant, R. (2009). "Programming Massively Parallel Processors"
   - Harris, M. (2007). "Optimizing Parallel Reduction in CUDA"
-
-  ### Relationships
-  - is-subclass-of:: [[Metaverse]]
 
 - ### Provenance
   - sources::

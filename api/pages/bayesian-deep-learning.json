@@ -120,6 +120,14 @@
   ],
   "backlinks": [
     {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
       "slug": "perception-system",
       "label": "Perception System"
     },

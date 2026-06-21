@@ -93,6 +93,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
       "slug": "education-and-ai",
       "label": "Education and AI"
     }

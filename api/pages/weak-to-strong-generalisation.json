@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
     }

@@ -155,6 +155,18 @@
   ],
   "backlinks": [
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    },
+    {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
       "slug": "environmental-impact-metric",
       "label": "Environmental Impact Metric"
     }

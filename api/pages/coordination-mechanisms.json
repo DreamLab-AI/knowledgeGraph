@@ -136,6 +136,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
       "slug": "distributed-decision-making",
       "label": "Distributed Decision Making"
     },

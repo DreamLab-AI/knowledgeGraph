@@ -132,6 +132,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "chatbots",
       "label": "Chatbots"
     },

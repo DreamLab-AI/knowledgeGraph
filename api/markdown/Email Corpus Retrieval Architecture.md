@@ -91,246 +91,171 @@ elevatedFrom:: [[email search]]
 
 
 - ### Definition
-  - email search is a concept within the ngm domain.
+  - A self-sovereign email corpus retrieval architecture is the set of techniques, data structures, and tooling used to index, query, and retrieve relevant messages from large email corpora locally. Modern stacks combine traditional full-text indexing (BM25-based engines such as Tantivy or Xapian) with dense vector embeddings and hybrid retrieval strategies to support semantic and keyword queries at scale. LLM-based reranking and optional graph-database layers for entity-relationship queries extend precision and recall beyond keyword matching, enabling systems to handle corpora of hundreds of thousands of messages with sub-second latency.
 
 - ### Semantic Classification
-  - owl-class:: infrastructure:EmailSearch
+  - owl-class:: infrastructure:EmailCorpusRetrievalArchitecture
   - owl-role:: Concept
 
 - ### Relationships
   - <!-- No relationships defined -->
 
 - ### Content
-  # Self-Sovereign Email Search Stack: A Comprehensive Report
-  For searching 300k emails (multi-GB corpus) locally with LLM-enhanced fuzzy search capabilities, the optimal approach combines multiple layers:
-  1. **Traditional full-text search** (Elasticsearch/Tantivy) for fast keyword matching
-  2. **Vector embeddings** for semantic similarity search
-  3. **Hybrid retrieval** combining BM25 and dense vectors
-  4. **Local LLM reranking** for precision
-  5. **Optional GraphRAG** for relationship-aware search
-  **Technology Options:**
-  - **Tantivy** (Rust-based, used by Meilisearch)
-  - Extremely fast, memory-efficient
-  - BM25 scoring, fuzzy matching
-  - Faceted search support
-  - **Apache Lucene/Elasticsearch** (self-hosted)
-  - Most mature, extensive features
-  - Higher resource consumption
-  - **Xapian**
-  - Lightweight, good for email specifically
-  - Probabilistic ranking
-	  **Implementation:**
-	  ```
-  **Embedding Models (Local):**
-  - **Sentence-Transformers** (all-MiniLM-L6-v2)
-  - 384 dimensions, fast, good quality
-  - ~80MB model size
-  - **E5-small/base/large**
-  - Better multilingual support
-  - Scales from 384 to 1024 dimensions
-  - **BGE-small/base/large**
-  - State-of-the-art quality
-  - Optimized for retrieval
-	  **Vector Databases:**
-  - **Qdrant** (Rust, highly efficient)
-  ```
-  - **Weaviate** (Go, good hybrid search)
-  - **ChromaDB** (Python, easy integration)
-  - **FAISS** (Facebook, CPU/GPU optimized)
-  **Approach:** Combine BM25 (sparse) + Dense vectors
-  **Options:**
-  1. **Custom Pipeline:**
-   ```
-  2. **Vespa.ai** (Yahoo's open source)
-  - Native hybrid search
-  - Tensor support
-  - Complex ranking expressions
-	  3. **Weaviate with Hybrid mode**
-  - Built-in BM25 + vector fusion
-  - Configurable alpha parameter
-  **Local LLM Options:**
-  - **Llama 3.2 1B/3B** - Fast, good for reranking
-  - **Mistral 7B** - Better quality, slower
-  - **Phi-3-mini** - Microsoft's efficient model
-  **Implementation Patterns:**
-  1. **Query Expansion:**
-   ```
-  2. **Reranking:**
-   ```
-  3. **Extractive QA:**
-   ```
-  **When to Use:** For relationship-heavy queries (who emailed whom about what)
-  **Architecture:**
-  1. **Entity Extraction:**
-  - Use spaCy/Stanza for NER
-  - Extract people, organizations, topics
-	  2. **Graph Database:**
-  - **Neo4j** (most mature)
-  - **ArangoDB** (multi-model)
-  - **DGraph** (high performance)
-	  3. **Graph Embeddings:**
-  - Node2Vec for entity embeddings
-  - GraphSAGE for inductive learning
-  ```
-  1. **Indexing Phase:**
-   ```
-  2. **Search Phase:**
-   ```
-  - Split long emails into overlapping chunks (512 tokens)
-  - Index chunks separately with email ID reference
-  - Aggregate scores at retrieval time
-  - Use ONNX Runtime for 2-3x speedup
-  - Batch processing during indexing
-  - Cache frequently accessed embeddings
-  - Shard by date for time-based queries
-  - Separate indices for attachments vs body text
-  ```
-  - Generate token-level embeddings
-  - Enables fine-grained matching
-  - Tools: RAGatouille, ColBERT-AI
-  - SPLADE models for better term expansion
-  - Combines benefits of sparse and dense
-  - BGE-M3 supports multiple embedding types
-  - Lexical, dense, and sparse in one model
-  - Use email thread context
-  - Temporal proximity scoring
-  - Social graph weighting
-  1. **Encryption at Rest:**
-  - LUKS for full-disk encryption
-  - Transparent encryption for indices
-	  2. **Access Control:**
-  - Linux user permissions
-  - Application-level ACLs
-	  3. **Audit Logging:**
-  - Track all search queries
-  - Monitor model inputs/outputs
-  ```
-  ```
-  For your 300k email corpus, I recommend starting with the hybrid approach (Tantivy + Qdrant) with BGE-small embeddings and Llama 3.2 3B for reranking. This provides an excellent balance of speed, accuracy, and resource usage. Add GraphRAG only if you have significant relationship-based query needs.
-  The modular architecture allows you to start simple and add layers as needed. Begin with traditional search, add vectors for semantic capabilities, then layer in LLM reranking for precision.
-  - Haystack Framework: https://haystack.deepset.ai/
-  - LangChain RAG modules: https://python.langchain.com/
-  - DSPy for optimizing pipelines: https://github.com/stanfordnlp/dspy
-  - MTEB Leaderboard for embedding models: https://huggingface.co/spaces/mteb/leaderboard
+  - #### Executive Summary
+    - For searching large email corpora (e.g. 300k messages) locally with LLM-enhanced fuzzy search capabilities, the optimal approach combines multiple layers: traditional full-text search (Elasticsearch/Tantivy) for fast keyword matching; vector embeddings for semantic similarity search; hybrid retrieval combining BM25 and dense vectors; local LLM reranking for precision; and optional GraphRAG for relationship-aware search.
+  - #### Layer 1: Traditional Full-Text Search (Foundation)
+    - **Tantivy** (Rust-based, used by Meilisearch) — extremely fast, memory-efficient, BM25 scoring, fuzzy matching, faceted search support
+    - **Apache Lucene/Elasticsearch** (self-hosted) — most mature, extensive features, higher resource consumption
+    - **Xapian** — lightweight, good for email specifically, probabilistic ranking
+    - Example deployment:
+      ```bash
+      # Example with Tantivy-based Meilisearch
+      docker run -p 7700:7700 -v $(pwd)/data:/data.ms getmeili/meilisearch:latest
+      ```
+  - #### Layer 2: Vector Embeddings (Semantic Search)
+    - **Embedding Models (Local)**
+      - Sentence-Transformers (all-MiniLM-L6-v2) — 384 dimensions, fast, good quality, ~80MB model size
+      - E5-small/base/large — better multilingual support, scales from 384 to 1024 dimensions
+      - BGE-small/base/large — state-of-the-art quality, optimised for retrieval
+    - **Vector Databases**
+      - Qdrant (Rust, highly efficient)
+      - Weaviate (Go, good hybrid search)
+      - ChromaDB (Python, easy integration)
+      - FAISS (Facebook, CPU/GPU optimised)
+    - Example deployment:
+      ```bash
+      docker run -p 6333:6333 qdrant/qdrant
+      ```
+  - #### Layer 3: Hybrid Retrieval Systems
+    - Combine BM25 (sparse) and dense vectors via reciprocal rank fusion
+    - Options: custom pipeline, Vespa.ai (native hybrid search, tensor support, complex ranking expressions), or Weaviate with Hybrid mode (built-in BM25 + vector fusion, configurable alpha parameter)
+    - Example pseudo-code:
+      ```python
+      # Pseudo-code
+      bm25_results = tantivy_search(query, k=100)
+      vector_results = qdrant_search(embed(query), k=100)
+      combined = reciprocal_rank_fusion(bm25_results, vector_results)
+      ```
+  - #### Layer 4: LLM Enhancement Strategies
+    - **Local LLM Options**
+      - Llama 3.2 1B/3B — fast, good for reranking
+      - Mistral 7B — better quality, slower
+      - Phi-3-mini — Microsoft's efficient model
+    - **Implementation Patterns**
+      - Query Expansion: use LLM to expand synonyms and related terms
+      - Reranking: score top-k results with LLM relevance scoring
+      - Extractive QA: extract specific answers from retrieved emails
+    - Example pseudo-code:
+      ```python
+      # Query expansion
+      expanded_query = llm.generate(f"Synonyms and related terms for: {query}")
 
-  - ## Executive Summary
-  - ## Layered Search Architecture
-  - ### Layer 1: Traditional Full-Text Search (Foundation)
-	  ```bash
-	  # Example with Tantivy-based Meilisearch
-	  docker run -p 7700:7700 -v $(pwd)/data:/data.ms getmeili/meilisearch:latest
-  - ### Layer 2: Vector Embeddings (Semantic Search)
-  ```bash
-  docker run -p 6333:6333 qdrant/qdrant
-  - ### Layer 3: Hybrid Retrieval Systems
-   ```python
-   # Pseudo-code
-   bm25_results = tantivy_search(query, k=100)
-   vector_results = qdrant_search(embed(query), k=100)
-   combined = reciprocal_rank_fusion(bm25_results, vector_results)
-  - ### Layer 4: LLM Enhancement Strategies
-   ```python
-   # Use LLM to expand query
-   expanded_query = llm.generate(f"Synonyms and related terms for: {query}")
-   ```python
-   # Score top-k results with LLM
-   for result in top_100_results:
-       score = llm.score_relevance(query, result)
-   ```python
-   # Extract specific answers from retrieved emails
-   answer = llm.extract(question, relevant_emails)
-  - ### Layer 5: GraphRAG Implementation
-  - ## Recommended Stack for 300k Emails
-  - ### Optimal Configuration:
-  ```yaml
-  Primary Stack:
-  Full-Text: Tantivy (via Meilisearch or raw)
-  Vectors: Qdrant + BGE-small embeddings
-  Hybrid: Custom reciprocal rank fusion
-  LLM: Llama 3.2 3B (quantized)
+      # Reranking
+      for result in top_100_results:
+          score = llm.score_relevance(query, result)
 
-  Optional Additions:
-  GraphDB: Neo4j Community Edition
-  Entity Extraction: spaCy
-  - ### Implementation Pipeline:
-   ```python
-   # Pseudo-code
-   for email in emails:
-       # Extract metadata
-       metadata = parse_email(email)
+      # Extractive QA
+      answer = llm.extract(question, relevant_emails)
+      ```
+  - #### Layer 5: GraphRAG Implementation
+    - **When to Use**: for relationship-heavy queries (who emailed whom about what)
+    - **Entity Extraction**: use spaCy/Stanza for NER — extract people, organisations, topics
+    - **Graph Databases**
+      - Neo4j (most mature)
+      - ArangoDB (multi-model)
+      - DGraph (high performance)
+    - **Graph Embeddings**: Node2Vec for entity embeddings, GraphSAGE for inductive learning
+  - #### Recommended Stack for 300k Emails
+    - Optimal Configuration:
+      ```yaml
+      Primary Stack:
+        Full-Text: Tantivy (via Meilisearch or raw)
+        Vectors: Qdrant + BGE-small embeddings
+        Hybrid: Custom reciprocal rank fusion
+        LLM: Llama 3.2 3B (quantized)
 
-       # Full-text index
-       tantivy.index(email.content, metadata)
+      Optional Additions:
+        GraphDB: Neo4j Community Edition
+        Entity Extraction: spaCy
+      ```
+    - Implementation Pipeline:
+      ```python
+      # Indexing phase (pseudo-code)
+      for email in emails:
+          metadata = parse_email(email)
+          tantivy.index(email.content, metadata)
+          embedding = model.encode(email.content)
+          qdrant.upsert(embedding, metadata)
+          entities = spacy_nlp(email.content)
+          neo4j.create_nodes(entities)
 
-       # Generate embeddings
-       embedding = model.encode(email.content)
-       qdrant.upsert(embedding, metadata)
+      # Search phase
+      def search(query, k=20):
+          bm25_results = tantivy.search(query, k=100)
+          vector_results = qdrant.search(embed(query), k=100)
+          candidates = reciprocal_rank_fusion(bm25_results, vector_results)[:50]
+          reranked = llm_rerank(query, candidates)[:k]
+          return reranked
+      ```
+  - #### Performance Optimization Strategies
+    - **Chunking Strategy**: split long emails into overlapping chunks (512 tokens), index chunks separately with email ID reference, aggregate scores at retrieval time
+    - **Embedding Optimization**: use ONNX Runtime for 2-3x speedup, batch processing during indexing, cache frequently accessed embeddings
+    - **Index Sharding**: shard by date for time-based queries, separate indices for attachments vs body text
+    - **Resource Requirements**:
+      ```yaml
+      Minimal Setup (Quantized):
+        RAM: 16GB
+        Storage: 50GB (including indices)
+        GPU: Optional (CPU viable with quantization)
 
-       # Extract entities (optional)
-       entities = spacy_nlp(email.content)
-       neo4j.create_nodes(entities)
-   ```python
-   def search(query, k=20):
-       # Step 1: Parallel retrieval
-       bm25_results = tantivy.search(query, k=100)
-       vector_results = qdrant.search(embed(query), k=100)
+      Optimal Setup:
+        RAM: 32GB
+        Storage: 100GB (with redundancy)
+        GPU: 8GB VRAM (for faster inference)
+      ```
+  - #### Advanced Techniques
+    - **ColBERT-style Late Interaction**: generate token-level embeddings for fine-grained matching; tools: RAGatouille, ColBERT-AI
+    - **Learned Sparse Representations**: SPLADE models for better term expansion, combines benefits of sparse and dense
+    - **Multi-Vector Representations**: BGE-M3 supports lexical, dense, and sparse in one model
+    - **Contextual Reranking**: use email thread context, temporal proximity scoring, social graph weighting
+  - #### Privacy & Security Considerations
+    - Encryption at rest: LUKS for full-disk encryption, transparent encryption for indices
+    - Access control: Linux user permissions, application-level ACLs
+    - Audit logging: track all search queries, monitor model inputs/outputs
+  - #### Monitoring & Maintenance
+    - Key metrics to track:
+      ```python
+      metrics = {
+        'search_latency': 'p50, p95, p99',
+        'index_size': 'bytes per document',
+        'memory_usage': 'peak and average',
+        'relevance': 'click-through rate, dwell time'
+      }
+      ```
+  - #### Getting Started Commands
+    - ```bash
+      # 1. Install base dependencies
+      sudo apt-get install python3-pip docker.io git
 
-       # Step 2: Fusion
-       candidates = reciprocal_rank_fusion(bm25_results, vector_results)[:50]
+      # 2. Set up Qdrant
+      docker run -p 6333:6333 -v $(pwd)/qdrant:/qdrant/storage qdrant/qdrant
 
-       # Step 3: LLM rerank
-       reranked = llm_rerank(query, candidates)[:k]
+      # 3. Install Python packages
+      pip install sentence-transformers qdrant-client tantivy spacy
 
-       return reranked
-  - ## Performance Optimization Strategies
-  - ### 1. **Chunking Strategy:**
-  - ### 2. **Embedding Optimization:**
-  - ### 3. **Index Sharding:**
-  - ### 4. **Resource Requirements:**
-  ```yaml
-  Minimal Setup (Quantized):
-  RAM: 16GB
-  Storage: 50GB (including indices)
-  GPU: Optional (CPU viable with quantization)
+      # 4. Download models
+      python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('BAAI/bge-small-en-v1.5')"
 
-  Optimal Setup:
-  RAM: 32GB
-  Storage: 100GB (with redundancy)
-  GPU: 8GB VRAM (for faster inference)
-  - ## Advanced Techniques
-  - ### 1. **ColBERT-style Late Interaction:**
-  - ### 2. **Learned Sparse Representations:**
-  - ### 3. **Multi-Vector Representations:**
-  - ### 4. **Contextual Reranking:**
-  - ## Privacy & Security Considerations
-  - ## Monitoring & Maintenance
-  ```python
-  # Key metrics to track
-  metrics = {
-    'search_latency': 'p50, p95, p99',
-    'index_size': 'bytes per document',
-    'memory_usage': 'peak and average',
-    'relevance': 'click-through rate, dwell time'
-  }
-  - ## Getting Started Commands
-  ```bash
-  # 1. Install base dependencies
-  sudo apt-get install python3-pip docker.io git
-
-  # 2. Set up Qdrant
-  docker run -p 6333:6333 -v $(pwd)/qdrant:/qdrant/storage qdrant/qdrant
-
-  # 3. Install Python packages
-  pip install sentence-transformers qdrant-client tantivy spacy
-
-  # 4. Download models
-  python -c "from sentence_transformers import SentenceTransformer; SentenceTransformer('BAAI/bge-small-en-v1.5')"
-
-  # 5. Install local LLM runtime
-  pip install llama-cpp-python
-  # Download quantized Llama 3.2 3B model
-  - ## Conclusion
-  - ## Additional Resources
+      # 5. Install local LLM runtime
+      pip install llama-cpp-python
+      ```
+  - #### Conclusion
+    - For a 300k email corpus, the recommended starting point is the hybrid approach (Tantivy + Qdrant) with BGE-small embeddings and Llama 3.2 3B for reranking. This provides an excellent balance of speed, accuracy, and resource usage. GraphRAG should be added only if significant relationship-based query needs exist. The modular architecture allows starting simple and adding layers as needed.
+  - #### Additional Resources
+    - Haystack Framework: https://haystack.deepset.ai/
+    - LangChain RAG modules: https://python.langchain.com/
+    - DSPy for optimizing pipelines: https://github.com/stanfordnlp/dspy
+    - MTEB Leaderboard for embedding models: https://huggingface.co/spaces/mteb/leaderboard
 
 - ### Provenance
   - sources::

@@ -16,12 +16,6 @@
 - ### Content
   - A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable, treating all errors equally regardless of direction, and being less sensitive to outliers than squared error metrics.
 
-  - ### Open Source
-		- The Openstand principles are a great starting place for what an open metaverse might mean. [They are](https://open-stand.org/about-us/principles/)
-
-  - ### Open Source
-		- The Openstand principles are a great starting place for what an open metaverse might mean. [They are](https://open-stand.org/about-us/principles/)
-
   ## Mathematical Definition
 
   $$\text{MAE} = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|$$
@@ -177,54 +171,6 @@
 		  - [[Outlier]]: MAE less sensitive than RMSE
 		  - [[Model Evaluation]]: Process using MAE
 		  - [[Error Analysis]]: Examination of prediction errors
-
-  ## Mathematical Definition
-
-  $$\text{MAE} = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|$$
-
-  Where:
-  - **n**: Number of instances
-  - **yᵢ**: Actual value for instance i
-  - **ŷᵢ**: Predicted value for instance i
-  - **|·|**: Absolute value function
-
-  ## Context and Significance
-
-  MAE provides a straightforward interpretation: "On average, how far off are the predictions?" with the answer in the same units as the target variable (e.g., dollars, years, metres). Unlike squared error metrics (MSE, RMSE), MAE treats all errors equally, making it robust to outliers—a large prediction error contributes proportionally rather than quadratically to the overall metric.
-
-  This equal weighting has implications: MAE is appropriate when all errors have similar consequences, but may be less suitable when large errors are disproportionately costly. The choice between MAE and RMSE often reflects whether errors should be penalised linearly (MAE) or quadratically (RMSE), which depends on the application's cost function for prediction errors.
-
-  #### References
-  1. Willmott, C.J. & Matsuura, K., *Advantages of the Mean Absolute Error (MAE) over the Root Mean Square Error (RMSE) in Assessing Average Model Performance*, Climate Research (2005)
-		  2. Chai, T. & Draxler, R.R., *Root Mean Square Error (RMSE) or Mean Absolute Error (MAE)? Arguments Against Avoiding RMSE in the Literature*, Geoscientific Model Development (2014)
-		  3. ISO/IEC 25059, *Software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Quality model for AI systems*
-
-		  ## Formal Ontology
-
-		  <details>
-		  <summary>OWL Functional Syntax</summary>
-
-
-		  </details>
-
-		  ## See Also
-
-		  - [[Model Performance]]
-		  - [[Root Mean Square Error]]
-		  - [[Mean Squared Error]]
-		  - [[MAPE]]
-		  - [[Regression]]
-		  - [[Model Evaluation]]
-		  - [[Error Analysis]]
-		  - [[Median Absolute Error]]
-
-		  ```
-
-    - measures:: [[MAPE]], [[Regression]], [[Model Evaluation]]
-
-  - public-access:: true
-  - definition:: A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same units as the target variable, treating all errors equally regardless of direction, and being less sensitive to outliers than squared error metrics.
-
 
   ## Academic Context
 

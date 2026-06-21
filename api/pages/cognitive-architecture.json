@@ -131,8 +131,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
       "slug": "ai-concept",
       "label": "AI Concept"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
     },
     {
       "slug": "agents",

@@ -382,24 +382,6 @@ alias:: BC-0029-permissioned-blockchain, BC-0429-permissioned-blockchain, Permis
 
 - ### Content
   - Restricted-access distributed ledgers controlled by known participants implementing access control at multiple layers—node permissioning restricting participant organisations, account permissioning controlling transaction submission, and [[PrivateChannels]] enabling confidential transaction subsets. Permissioned blockchains maintain blockchain's immutability, transparency, and [[SmartContract]] capabilities whilst enabling regulatory compliance and business confidentiality unsuitable for public networks, deployed across enterprise contexts including [[HyperledgerFabric]], [[QuorumBlockchain]], and [[R3Corda]] supporting supply chain, trade finance, healthcare, and financial services.
-  - ### Original Content
-		- ```
-  # BC-0429: Permissioned Blockchain
-
-  #### Related Concepts
-  - [[BC-0426-hyperledger-fabric]]
-		  - [[BC-0427-hyperledger-besu]]
-		  - [[BC-0428-enterprise-blockchain-architecture]]
-		  - [[BC-0430-private-channels]]
-
-		  ## See Also
-		  - [[BC-0001-blockchain]]
-		  - [[BC-0120-consensus-mechanism]]
-		  - [[BC-0245-proof-of-authority]]
-
-		  ```
-
-    - requires:: [[BC-0120-consensus-mechanism]]
 
 - ### Provenance
   - sources::

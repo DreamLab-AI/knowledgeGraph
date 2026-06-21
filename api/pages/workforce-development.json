@@ -64,6 +64,14 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
       "slug": "virtual-training",
       "label": "Virtual Training"
     }

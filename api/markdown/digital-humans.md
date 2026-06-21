@@ -1,15 +1,13 @@
 - ### Definition
   - [Generated from Gartner emerging tech analysis]
 
-bridges-to:: [[DID Nostr Identity]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalHumans
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - bridges-to:: [[DID Nostr Identity]]
 
 - ### Content
 

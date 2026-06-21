@@ -121,6 +121,22 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
     },

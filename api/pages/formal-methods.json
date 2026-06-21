@@ -91,6 +91,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
       "slug": "cyber-security-and-cryptography",
       "label": "Cyber Security and Cryptography"
     }

@@ -5,15 +5,19 @@
   "public": true,
   "classIri": "urn:ngm:class:automatic-1111-web-ui",
   "domain": "ai",
-  "definition": "AUTOMATIC1111 WebUI is an open-source browser interface for running Stable Diffusion image models locally. It exposes generation, image-to-image, inpainting and extension features through a web front end.",
+  "definition": "AUTOMATIC1111 WebUI (also referred to as sd-webui or A1111) is an open-source, community-maintained browser-based graphical interface for running Stable Diffusion latent diffusion models locally on consumer and professional GPU hardware. Built in Python with a Gradio front end, it wraps the core Stable Diffusion inference pipeline in an accessible point-and-click UI that exposes text-to-image generation, image-to-image transformation, inpainting, outpainting, upscaling, model training tabs, and an extensible plugin architecture. Since its first public release in August 2022, it has accumulated over 160,000 GitHub stars, making it one of the most-starred open-source AI repositories in history and the dominant entry point for local Stable Diffusion experimentation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:stable-diffusion-image-model",
-      "label": "Stable Diffusion Image Model"
+      "id": "urn:ngm:class:open-generative-ai-tools",
+      "label": "Open Generative AI Tools"
+    },
+    {
+      "id": "urn:ngm:class:image-generation",
+      "label": "Image Generation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.85,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,6 +25,18 @@
       {
         "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion Image Model"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "id": "urn:ngm:class:gradio",
+        "label": "Gradio"
       }
     ],
     "enables": [
@@ -31,17 +47,84 @@
       {
         "id": "urn:ngm:class:inpainting",
         "label": "Inpainting"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:outpainting",
+        "label": "Outpainting"
+      },
+      {
+        "id": "urn:ngm:class:upscaling",
+        "label": "Upscaling"
+      },
+      {
+        "id": "urn:ngm:class:dreambooth",
+        "label": "DreamBooth"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:invoke-ai",
+        "label": "InvokeAI"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:textual-inversion",
+        "label": "Textual Inversion"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion-xl",
+        "label": "Stable Diffusion XL"
+      },
+      {
+        "id": "urn:ngm:class:civitai",
+        "label": "CivitAI"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face",
+        "label": "Hugging Face"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -59,6 +142,150 @@
     {
       "slug": "image-generation",
       "label": "Image Generation"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "latent-diffusion-model",
+      "label": "Latent Diffusion Model"
+    },
+    {
+      "slug": "open-source-software",
+      "label": "Open-Source Software"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "lora",
+      "label": "LoRA"
+    },
+    {
+      "slug": "textual-inversion",
+      "label": "Textual Inversion"
+    },
+    {
+      "slug": "upscaling",
+      "label": "Upscaling"
+    },
+    {
+      "slug": "sampler",
+      "label": "Sampler"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "stable-diffusion-xl",
+      "label": "Stable Diffusion XL"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "civitai",
+      "label": "CivitAI"
+    },
+    {
+      "slug": "hugging-face",
+      "label": "Hugging Face"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "gradio",
+      "label": "Gradio"
+    },
+    {
+      "slug": "outpainting",
+      "label": "Outpainting"
+    },
+    {
+      "slug": "dreambooth",
+      "label": "DreamBooth"
+    },
+    {
+      "slug": "hypernetwork",
+      "label": "Hypernetwork"
+    },
+    {
+      "slug": "stable-diffusion-image-model",
+      "label": "Stable Diffusion Image Model"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "aesth-score",
+      "label": "Aesthetic Score"
+    },
+    {
+      "slug": "local-ai",
+      "label": "Local AI"
+    },
+    {
+      "slug": "stable-video-diffusion",
+      "label": "Stable Video Diffusion"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "invoke-ai",
+      "label": "InvokeAI"
+    },
+    {
+      "slug": "dreambooth-training",
+      "label": "DreamBooth Training"
     }
   ],
   "backlinks": []

@@ -115,8 +115,6 @@ public:: true
 - ### Definition
   - Digital Security encompasses the technical controls, protocols, and governance frameworks protecting digital systems, data, and identities from unauthorised access, tampering, and exploitation. It integrates cryptographic mechanisms, access management policies, threat detection, and incident response to ensure confidentiality, integrity, and availability of digital assets and infrastructure across networked environments.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalSecurity
   - owl-role:: concept

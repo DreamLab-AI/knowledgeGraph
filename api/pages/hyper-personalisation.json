@@ -514,6 +514,10 @@
       "label": "AI User"
     },
     {
+      "slug": "audience-engagement",
+      "label": "Audience Engagement"
+    },
+    {
       "slug": "knowledge-distillation",
       "label": "Knowledge Distillation"
     },

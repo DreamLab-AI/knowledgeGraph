@@ -121,6 +121,7 @@ elevatedFrom:: [[Plotting a graph using matplotlib python library]]
 	  png = 'data:image/png;base64,'+base64.b64encode(buf.read()).decode('UTF-8')
 	  buf.close()
 	  png
+	  ```
 
 - ### Provenance
   - sources::

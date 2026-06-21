@@ -268,8 +268,16 @@
       "label": "Aleo"
     },
     {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
       "slug": "anoma",
       "label": "Anoma"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
     },
     {
       "slug": "authentication-protocol",

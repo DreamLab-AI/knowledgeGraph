@@ -197,6 +197,10 @@
       "label": "AI Metadata"
     },
     {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
       "slug": "algorithmic-transparency-index",
       "label": "Algorithmic Transparency Index"
     },

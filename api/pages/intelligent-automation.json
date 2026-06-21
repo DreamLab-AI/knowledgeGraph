@@ -41,6 +41,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
     }

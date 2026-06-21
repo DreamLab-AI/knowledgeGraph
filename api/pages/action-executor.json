@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.88,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:function-calling",
         "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      },
+      {
+        "id": "urn:ngm:class:tool-schema",
+        "label": "Tool Schema"
       }
     ],
     "enables": [
@@ -35,6 +43,14 @@
       {
         "id": "urn:ngm:class:automated-planning",
         "label": "Automated Planning"
+      },
+      {
+        "id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:code-execution",
+        "label": "Code Execution"
       }
     ],
     "dependsOn": [],
@@ -43,12 +59,20 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:runtime-environment",
-        "label": "Runtime Environment"
-      },
-      {
         "id": "urn:ngm:class:orchestration",
         "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:sandbox-environment",
+        "label": "Sandbox Environment"
+      },
+      {
+        "id": "urn:ngm:class:error-handling",
+        "label": "Error Handling"
+      },
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
       }
     ],
     "supports": [],
@@ -62,10 +86,219 @@
       {
         "id": "urn:ngm:class:task-planning",
         "label": "Task Planning"
+      },
+      {
+        "id": "urn:ngm:class:re-act-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "orchestration",
+      "label": "Orchestration"
+    },
+    {
+      "slug": "orchestration-layer",
+      "label": "Orchestration Layer"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "runtime-environment",
+      "label": "Runtime Environment"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "re-act-pattern",
+      "label": "ReAct Pattern"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "multi-agent-orchestration",
+      "label": "Multi-Agent Orchestration"
+    },
+    {
+      "slug": "observability",
+      "label": "Observability"
+    },
+    {
+      "slug": "sandbox-environment",
+      "label": "Sandbox Environment"
+    },
+    {
+      "slug": "security-architecture",
+      "label": "Security Architecture"
+    },
+    {
+      "slug": "error-handling",
+      "label": "Error Handling"
+    },
+    {
+      "slug": "behaviour-tree",
+      "label": "Behaviour Tree"
+    },
+    {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "memory-management",
+      "label": "Memory Management"
+    },
+    {
+      "slug": "tool-schema",
+      "label": "Tool Schema"
+    },
+    {
+      "slug": "json-schema",
+      "label": "JSON Schema"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "multi-step-reasoning",
+      "label": "Multi-Step Reasoning"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "digital-infrastructure",
+      "label": "Digital Infrastructure"
+    },
+    {
+      "slug": "cloud-native",
+      "label": "Cloud Native Computing"
+    },
+    {
+      "slug": "containerisation",
+      "label": "Containerisation"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "openai",
+      "label": "OpenAI"
+    },
+    {
+      "slug": "microsoft",
+      "label": "Microsoft"
+    },
+    {
+      "slug": "aws-bedrock",
+      "label": "AWS Bedrock"
+    },
+    {
+      "slug": "google-vertex-ai",
+      "label": "Google Vertex AI"
+    },
+    {
+      "slug": "langgraph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "crewai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "autogen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "agent-loop",
+      "label": "Agent Loop"
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "ai-application",
+      "label": "AgenticSystemsDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-agent-system",

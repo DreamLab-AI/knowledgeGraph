@@ -193,8 +193,6 @@ public:: true
 - ### Definition
   - The comprehensive network of interconnected technologies, platforms, and stakeholders that enable digital twin deployment, including IoT sensors, edge computing, cloud platforms, AI analytics, and visualisation systems working together to create, maintain, and derive value from virtual replicas of physical systems.
 
-bridges-to:: [[Computer Vision]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalTwinEcosystem
   - owl-role:: Concept
@@ -204,6 +202,7 @@ bridges-to:: [[Computer Vision]]
   - is-subclass-of:: [[Technology Ecosystem]]
   - requires:: [[IoT Infrastructure]], [[Cloud Platform]], [[Data Standards]]
   - enables:: [[System Integration]], [[Cross-Platform Analytics]], [[Enterprise Digital Twins]]
+  - bridges-to:: [[Computer Vision]]
 
 - ### Content
 

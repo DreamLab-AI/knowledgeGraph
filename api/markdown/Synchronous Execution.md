@@ -187,29 +187,23 @@ public:: true
 
 - ### Content
 
-  ### SKOS Conceptual Structure
-
   ## Execution Patterns
 
   ### Basic Synchronous Call
-  ```
+
   Caller → [Call Function] → (Wait) → [Return Result] → Continue
-  ```
 
   ### Chained Synchronous Operations
-  ```
+
   Op1() → (block) → Op2() → (block) → Op3() → (block) → Result
-  ```
 
   ### Synchronous Request-Response
-  ```
+
   Client → [HTTP Request] → (Wait) → [HTTP Response] → Process Response
-  ```
 
   ### Synchronous Transaction
-  ```
+
   BEGIN → Op1 → Op2 → Op3 → COMMIT → (all or nothing)
-  ```
 
   ## Implementation Considerations
 
@@ -321,37 +315,6 @@ public:: true
   mustComplete: true
   ```
 
-  ## Query Patterns
-
-  ### SPARQL Query: Find Blocking Operations
-  ```sparql
-  PREFIX dt: <http://example.org/digital-twin/>
-
-  SELECT ?execution ?blockedThread ?duration
-  WHERE {
-  ?execution a dt:SynchronousExecution ;
-    dt:blocks ?blockedThread ;
-    dt:hasDuration ?duration .
-
-  FILTER (?duration > "PT0.1S"^^xsd:duration)
-  }
-  ORDER BY DESC(?duration)
-  ```
-
-  ### SPARQL Query: Synchronous vs Asynchronous Comparison
-  ```sparql
-  PREFIX dt: <http://example.org/digital-twin/>
-
-  SELECT ?syncExec ?asyncExec ?operation
-  WHERE {
-  ?syncExec a dt:SynchronousExecution ;
-    dt:performsOperation ?operation .
-
-  ?asyncExec a dt:AsynchronousExecution ;
-    dt:performsOperation ?operation .
-  }
-  ```
-
   ## Related Standards & Frameworks
 
   ### Programming Models
@@ -406,25 +369,6 @@ public:: true
   - Oracle Java Concurrency documentation
   - Microsoft Async/Await patterns
 
-  ### Additional Relationships
-  - is-subclass-of:: [[Execution Model]]
-  - relatedTo:: [[Asynchronous Execution]]
-  - relatedTo:: [[Blocking Operation]]
-  - relatedTo:: [[Transaction Processing]]
-  - contrastedWith:: [[Asynchronous Execution]]
-  - hasApplication:: [[Database Operations]]
-  - hasApplication:: [[API Request-Response]]
-  - dependsOn:: [[Thread Management]]
-
-  ## Maintenance Notes
-  - **Last Updated**: 2025-12-29
-  - **Review Cycle**: Quarterly
-  - **Stakeholders**: System Architects, Performance Engineers
-  - **Change Log**: Updated status from stub to active, enriched relationships
-
-  ---
-
-  **Tags**: #temporal-concept #execution-model #synchronous #blocking #concurrency #cross-domain #DT-1004
 
 - ### Provenance
   - sources::

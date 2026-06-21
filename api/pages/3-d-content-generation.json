@@ -165,6 +165,10 @@
   ],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
       "slug": "gaussian-splatting",
       "label": "Gaussian Splatting"
     },

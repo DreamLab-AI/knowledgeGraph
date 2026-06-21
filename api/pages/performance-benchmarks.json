@@ -144,6 +144,10 @@
   ],
   "backlinks": [
     {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
       "slug": "ai-model-card",
       "label": "AI Model Card"
     }

@@ -130,5 +130,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
+    }
+  ]
 }

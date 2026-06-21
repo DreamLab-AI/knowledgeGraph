@@ -130,6 +130,22 @@
       "label": "AI Companies"
     },
     {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
+      "slug": "adam-optimizer",
+      "label": "Adam Optimizer"
+    },
+    {
+      "slug": "answer-ai",
+      "label": "Answer AI"
+    },
+    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },

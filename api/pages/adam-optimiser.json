@@ -13,13 +13,21 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.91,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:learning-rate-schedule",
         "label": "Learning Rate Schedule"
+      },
+      {
+        "id": "urn:ngm:class:exponential-moving-average",
+        "label": "Exponential Moving Average"
+      },
+      {
+        "id": "urn:ngm:class:bias-correction",
+        "label": "Bias Correction"
       }
     ],
     "requires": [
@@ -34,6 +42,10 @@
       {
         "id": "urn:ngm:class:stochastic-gradient-descent",
         "label": "Stochastic Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:automatic-differentiation",
+        "label": "Automatic Differentiation"
       }
     ],
     "enables": [
@@ -56,6 +68,10 @@
       {
         "id": "urn:ngm:class:hyperparameter-optimisation",
         "label": "Hyperparameter Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:convergence",
+        "label": "Convergence"
       }
     ],
     "dependsOn": [],
@@ -63,6 +79,10 @@
       {
         "id": "urn:ngm:class:adaptive-learning-rate",
         "label": "Adaptive Learning Rate"
+      },
+      {
+        "id": "urn:ngm:class:momentum-optimisation",
+        "label": "Momentum Optimisation"
       }
     ],
     "contrastsWith": [
@@ -71,8 +91,16 @@
         "label": "RMSProp"
       },
       {
-        "id": "urn:ngm:class:optimiser",
+        "id": "urn:ngm:class:sgd-with-momentum",
+        "label": "SGD with Momentum"
+      },
+      {
+        "id": "urn:ngm:class:lion-optimiser",
         "label": "Lion Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:muon-optimiser",
+        "label": "Muon Optimiser"
       }
     ],
     "bridgesTo": [
@@ -83,6 +111,10 @@
       {
         "id": "urn:ngm:class:federated-learning",
         "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
       }
     ],
     "uses": [
@@ -91,8 +123,8 @@
         "label": "Mini-Batch Gradient"
       },
       {
-        "id": "urn:ngm:class:exponential-moving-average",
-        "label": "Exponential Moving Average"
+        "id": "urn:ngm:class:gradient-clipping",
+        "label": "Gradient Clipping"
       }
     ],
     "supports": [],
@@ -112,16 +144,213 @@
         "label": "Weight Decay"
       },
       {
-        "id": "urn:ngm:class:gradient-clipping",
-        "label": "Gradient Clipping"
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:adamw",
+        "label": "AdamW"
+      },
+      {
+        "id": "urn:ngm:class:adafactor",
+        "label": "AdaFactor"
+      },
+      {
+        "id": "urn:ngm:class:amsgrad",
+        "label": "AMSGrad"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "rmsprop",
+      "label": "RMSProp"
+    },
+    {
+      "slug": "adagrad",
+      "label": "Adagrad"
+    },
+    {
+      "slug": "adamw",
+      "label": "AdamW"
+    },
+    {
+      "slug": "adafactor",
+      "label": "AdaFactor"
+    },
+    {
+      "slug": "weight-decay",
+      "label": "Weight Decay"
+    },
+    {
+      "slug": "gradient-clipping",
+      "label": "Gradient Clipping"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "hyperparameter-optimisation",
+      "label": "Hyperparameter Optimisation"
+    },
+    {
+      "slug": "learning-rate-schedule",
+      "label": "Learning Rate Schedule"
+    },
+    {
+      "slug": "adaptive-learning-rate",
+      "label": "Adaptive Learning Rate"
+    },
+    {
+      "slug": "exponential-moving-average",
+      "label": "Exponential Moving Average"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    },
+    {
+      "slug": "vanishing-gradient-problem",
+      "label": "Vanishing Gradient Problem"
+    },
+    {
+      "slug": "batch-normalisation",
+      "label": "Batch Normalisation"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
+      "slug": "optimisation-algorithm",
+      "label": "Optimisation Algorithm"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "sgd-with-momentum",
+      "label": "SGD with Momentum"
+    },
+    {
+      "slug": "lion-optimiser",
+      "label": "Lion Optimiser"
+    },
+    {
+      "slug": "distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "slug": "gradient-accumulation",
+      "label": "Gradient Accumulation"
+    },
+    {
+      "slug": "muon-optimiser",
+      "label": "Muon Optimiser"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "generalisation",
+      "label": "Generalisation"
+    },
+    {
+      "slug": "regularisation",
+      "label": "Regularisation"
+    },
+    {
+      "slug": "numerical-stability",
+      "label": "Numerical Stability"
+    },
+    {
+      "slug": "mixed-precision-training",
+      "label": "Mixed Precision Training"
+    },
+    {
+      "slug": "policy-gradient-methods",
+      "label": "Policy Gradient Methods"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "amsgrad",
+      "label": "AMSGrad"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-video",
       "label": "AI Video"
+    },
+    {
+      "slug": "adam-optimizer",
+      "label": "Adam Optimizer"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
     },
     {
       "slug": "direct-preference-optimization",

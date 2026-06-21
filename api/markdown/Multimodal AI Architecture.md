@@ -145,12 +145,11 @@ elevatedFrom:: [[multimodal]]
   - relatedTo [[Speech Recognition]]
 
 - ### Content
-  - #Public page automatically published
   - # OpenAI ChatGPT-4o (omni)
-  - Free to use, for everyone! Not private by default.
+  - Originally released May 2024 as the first truly multimodal model available on the free tier; retired from ChatGPT on February 13, 2026, superseded by GPT-5 (August 2025) and subsequent models including GPT-5.2 and GPT-5.4.
   - True multi modality across video, images, and audio.
   - The first of the true publicly accessible models trained without compromise for multi-modality.
-  - Multi-lingual across 50 languages, supporting image input and output, real time video input, text to 3D.
+  - Multi-lingual across 50 languages, supporting image input and output, real time video input, and 3D reconstruction from generated images.
   - Empathetic voice to voice with very low latency.
   - [Min Choi on X: "I used GPT-4o to create STL file for 3D model in ~ 20 seconds on my phone. Pretty remarkable what you can generate with AI and simple prompt now. https://t.co/2fbObrpPol" / X (twitter.com)](https://twitter.com/minchoi/status/1790396782200987662)
   - {{twitter https://twitter.com/minchoi/status/1790396782200987662}}
@@ -191,9 +190,8 @@ elevatedFrom:: [[multimodal]]
   E --> D
   D -->|Next Token Prediction| F[Generated Sequence]
   F -->|Decoded| G[Output Image & Text]
-
-  - ### Multi-Modal Large Language Models (LLMs)
   ```
+  - ### Multi-Modal Large Language Models (LLMs)
   - Some random links
   - Apple Ferret is a [[Multimodal]] [[Large Language Models]] from [[Apple Inc Technology Corporation]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
   - [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)

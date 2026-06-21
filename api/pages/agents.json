@@ -726,6 +726,10 @@
       "label": "AI User"
     },
     {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
+    },
+    {
       "slug": "autonomous-vehicle",
       "label": "Autonomous Vehicle"
     },

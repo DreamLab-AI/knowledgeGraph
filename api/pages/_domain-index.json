@@ -3688,6 +3688,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "cryptocurrency-mining",
+      "title": "Cryptocurrency Mining",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "cryptocurrency-storage",
       "title": "Cryptocurrency Storage",
       "qualityScore": 0.0
@@ -4916,6 +4921,11 @@
       "slug": "halving",
       "title": "Halving",
       "qualityScore": 0.0
+    },
+    {
+      "slug": "hard-fork",
+      "title": "Hard Fork",
+      "qualityScore": 0.7
     },
     {
       "slug": "hard-money",
@@ -7446,6 +7456,11 @@
       "slug": "token-metadata",
       "title": "Token Metadata",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "token-sale",
+      "title": "Token Sale",
+      "qualityScore": 0.7
     },
     {
       "slug": "token-standard",
@@ -14072,6 +14087,11 @@
       "qualityScore": 0.35
     },
     {
+      "slug": "positional-tracking",
+      "title": "Positional Tracking",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "post-processing",
       "title": "Post Processing",
       "qualityScore": 0.74
@@ -14382,6 +14402,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "rendering",
+      "title": "Rendering",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "reprojection-error",
       "title": "Reprojection Error",
       "qualityScore": 0.62
@@ -14529,6 +14554,11 @@
     {
       "slug": "scene-optimization",
       "title": "Scene Optimization",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "scene-representation",
+      "title": "Scene Representation",
       "qualityScore": 0.7
     },
     {
@@ -16019,9 +16049,14 @@
       "qualityScore": 0.68
     },
     {
+      "slug": "3-d-generation",
+      "title": "3D Generation",
+      "qualityScore": 0.88
+    },
+    {
       "slug": "a-star-algorithm",
       "title": "A Star Algorithm",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "ai-adoption",
@@ -16036,7 +16071,7 @@
     {
       "slug": "ai-agents",
       "title": "AI Agents",
-      "qualityScore": 0.74
+      "qualityScore": 0.91
     },
     {
       "slug": "ai-alignment",
@@ -16046,7 +16081,7 @@
     {
       "slug": "ai-applications",
       "title": "AI Applications",
-      "qualityScore": 0.35
+      "qualityScore": 0.88
     },
     {
       "slug": "ai-audit",
@@ -16106,12 +16141,12 @@
     {
       "slug": "ai-documentation-standards",
       "title": "AI Documentation Standards",
-      "qualityScore": 0.35
+      "qualityScore": 0.92
     },
     {
       "slug": "ai-energy-optimisation",
       "title": "AI Energy Optimisation",
-      "qualityScore": 0.72
+      "qualityScore": 0.87
     },
     {
       "slug": "ai-ethics-board",
@@ -16121,7 +16156,7 @@
     {
       "slug": "ai-ethics-checklist",
       "title": "AI Ethics Checklist",
-      "qualityScore": 0.35
+      "qualityScore": 0.88
     },
     {
       "slug": "ai-fairness",
@@ -16141,7 +16176,7 @@
     {
       "slug": "ai-game-agent",
       "title": "AI Game Agent",
-      "qualityScore": 0.35
+      "qualityScore": 0.91
     },
     {
       "slug": "ai-governance-framework",
@@ -16181,7 +16216,7 @@
     {
       "slug": "ai-model-card",
       "title": "AI Model Card",
-      "qualityScore": 0.91
+      "qualityScore": 0.93
     },
     {
       "slug": "ai-monitoring",
@@ -16201,7 +16236,7 @@
     {
       "slug": "ai-policy",
       "title": "AI Policy",
-      "qualityScore": 0.74
+      "qualityScore": 0.93
     },
     {
       "slug": "ai-provider",
@@ -16231,12 +16266,12 @@
     {
       "slug": "ai-safety-research",
       "title": "AI Safety Research",
-      "qualityScore": 0.74
+      "qualityScore": 0.88
     },
     {
       "slug": "ai-safety",
       "title": "AI Safety",
-      "qualityScore": 0.72
+      "qualityScore": 0.91
     },
     {
       "slug": "ai-scrapers",
@@ -16316,7 +16351,7 @@
     {
       "slug": "ai-generated-content-disclosure",
       "title": "AI-Generated Content Disclosure",
-      "qualityScore": 0.35
+      "qualityScore": 0.88
     },
     {
       "slug": "aiapplications",
@@ -16381,7 +16416,7 @@
     {
       "slug": "adam-optimiser",
       "title": "Adam Optimiser",
-      "qualityScore": 0.74
+      "qualityScore": 0.91
     },
     {
       "slug": "adapter-modules",
@@ -16416,7 +16451,7 @@
     {
       "slug": "agent-communication-protocol",
       "title": "Agent Communication Protocol",
-      "qualityScore": 0.72
+      "qualityScore": 0.91
     },
     {
       "slug": "agent-event-stream",
@@ -16431,22 +16466,22 @@
     {
       "slug": "agent-identity",
       "title": "Agent Identity",
-      "qualityScore": 0.62
+      "qualityScore": 0.88
     },
     {
       "slug": "agent-memory",
       "title": "Agent Memory",
-      "qualityScore": 0.6
+      "qualityScore": 0.88
     },
     {
       "slug": "agent-based-modelling",
       "title": "Agent-Based Modelling",
-      "qualityScore": 0.72
+      "qualityScore": 0.87
     },
     {
       "slug": "agent-to-agent-protocol",
       "title": "Agent-to-Agent Protocol",
-      "qualityScore": 0.75
+      "qualityScore": 0.92
     },
     {
       "slug": "agent",
@@ -16461,7 +16496,7 @@
     {
       "slug": "agentic-ai",
       "title": "Agentic AI",
-      "qualityScore": 0.74
+      "qualityScore": 0.92
     },
     {
       "slug": "agentic-internet",
@@ -16480,8 +16515,8 @@
     },
     {
       "slug": "ai-governance-principle",
-      "title": "Ai Governance Principle",
-      "qualityScore": 0.7
+      "title": "AI Governance Principle",
+      "qualityScore": 0.91
     },
     {
       "slug": "ai-machine-learning",
@@ -16501,17 +16536,17 @@
     {
       "slug": "alan-turing-institute",
       "title": "Alan Turing Institute",
-      "qualityScore": 0.72
+      "qualityScore": 0.88
     },
     {
       "slug": "algorithm",
       "title": "Algorithm",
-      "qualityScore": 0.75
+      "qualityScore": 0.92
     },
     {
       "slug": "algorithmic-accountability",
       "title": "Algorithmic Accountability",
-      "qualityScore": 0.8
+      "qualityScore": 0.93
     },
     {
       "slug": "algorithmic-bias-and-variance",
@@ -16541,12 +16576,12 @@
     {
       "slug": "anomaly-detection",
       "title": "Anomaly Detection",
-      "qualityScore": 0.74
+      "qualityScore": 0.92
     },
     {
       "slug": "anthropic",
       "title": "Anthropic",
-      "qualityScore": 0.74
+      "qualityScore": 0.9
     },
     {
       "slug": "architecture",
@@ -16601,7 +16636,7 @@
     {
       "slug": "attention-weight",
       "title": "Attention Weight",
-      "qualityScore": 0.8
+      "qualityScore": 0.88
     },
     {
       "slug": "attention",
@@ -16611,7 +16646,7 @@
     {
       "slug": "audio-synthesis",
       "title": "Audio Synthesis",
-      "qualityScore": 0.62
+      "qualityScore": 0.91
     },
     {
       "slug": "audit-trail",
@@ -16626,7 +16661,7 @@
     {
       "slug": "auto-gen",
       "title": "AutoGen",
-      "qualityScore": 0.6
+      "qualityScore": 0.87
     },
     {
       "slug": "auto-ml",
@@ -17029,6 +17064,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "computational-modelling",
+      "title": "Computational Modelling",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "computational-neuroscience",
       "title": "Computational Neuroscience",
       "qualityScore": 0.62
@@ -17067,6 +17107,11 @@
       "slug": "computer-vision",
       "title": "Computer Vision",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "concept-drift",
+      "title": "Concept Drift",
+      "qualityScore": 0.7
     },
     {
       "slug": "conditional-random-field",
@@ -17277,6 +17322,11 @@
       "slug": "database-schema",
       "title": "Database Schema",
       "qualityScore": 0.62
+    },
+    {
+      "slug": "dataset",
+      "title": "Dataset",
+      "qualityScore": 0.7
     },
     {
       "slug": "death-of-the-internet",
@@ -18264,6 +18314,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "inference-optimisation",
+      "title": "Inference Optimisation",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "inference-runtime",
       "title": "Inference Runtime",
       "qualityScore": 0.62
@@ -18602,6 +18657,11 @@
       "slug": "mathematical-logic",
       "title": "Mathematical Logic",
       "qualityScore": 0.62
+    },
+    {
+      "slug": "mathematical-optimisation",
+      "title": "Mathematical Optimisation",
+      "qualityScore": 0.7
     },
     {
       "slug": "mathematical-reasoning",
@@ -20661,6 +20721,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "api-specification",
+      "title": "API Specification",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "api-standard",
       "title": "API Standard",
       "qualityScore": 0.72
@@ -20934,6 +20999,11 @@
       "slug": "bandwidth",
       "title": "Bandwidth",
       "qualityScore": 0.6
+    },
+    {
+      "slug": "banking-regulation",
+      "title": "Banking Regulation",
+      "qualityScore": 0.7
     },
     {
       "slug": "batch-processing",
@@ -22141,6 +22211,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "electronic-signature",
+      "title": "Electronic Signature",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "email-corpus-retrieval-architecture",
       "title": "Email Corpus Retrieval Architecture",
       "qualityScore": 0.7
@@ -22691,6 +22766,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "identification",
+      "title": "Identification",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "identity-federation",
       "title": "Identity Federation",
       "qualityScore": 0.35
@@ -22799,6 +22879,11 @@
       "slug": "industry-4-0",
       "title": "Industry 4.0",
       "qualityScore": 0.72
+    },
+    {
+      "slug": "information-governance",
+      "title": "Information Governance",
+      "qualityScore": 0.7
     },
     {
       "slug": "infrastructure-architecture",
@@ -24201,6 +24286,11 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "proof-system",
+      "title": "Proof System",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "propagation-delay",
       "title": "Propagation Delay",
       "qualityScore": 0.62
@@ -24626,6 +24716,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "routing",
+      "title": "Routing",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "rule-of-law",
       "title": "Rule of Law",
       "qualityScore": 0.0
@@ -24994,6 +25089,11 @@
       "slug": "software-library",
       "title": "Software Library",
       "qualityScore": 0.35
+    },
+    {
+      "slug": "software-licence",
+      "title": "Software Licence",
+      "qualityScore": 0.7
     },
     {
       "slug": "software-supply-chain",
@@ -25456,6 +25556,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "ubiquitous-computing",
+      "title": "Ubiquitous Computing",
+      "qualityScore": 0.7
+    },
+    {
       "slug": "uk-industrial-strategy",
       "title": "Uk Industrial Strategy",
       "qualityScore": 0.62
@@ -25604,6 +25709,11 @@
       "slug": "web-dev-and-consumer-tooling",
       "title": "Web Dev and Consumer Tooling",
       "qualityScore": 0.35
+    },
+    {
+      "slug": "web-services",
+      "title": "Web Services",
+      "qualityScore": 0.62
     },
     {
       "slug": "web-technology",
@@ -25786,121 +25896,1048 @@
       "qualityScore": 0.35
     }
   ],
-  "ai": [
+  "standards": [
     {
-      "slug": "3-d-generation",
-      "title": "3D Generation",
+      "slug": "3-gpp",
+      "title": "3GPP",
+      "qualityScore": 0.72
+    },
+    {
+      "slug": "acm",
+      "title": "ACM",
+      "qualityScore": 0.75
+    },
+    {
+      "slug": "accessibility-captioning",
+      "title": "Accessibility Captioning",
       "qualityScore": 0.8
     },
     {
+      "slug": "accessibility-standard",
+      "title": "Accessibility Standard",
+      "qualityScore": 0.68
+    },
+    {
+      "slug": "archival-standards",
+      "title": "Archival Standards",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "assistive-technology",
+      "title": "Assistive Technology",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "bip-341-taproot",
+      "title": "BIP-341 Taproot",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "bip-342-tapscript",
+      "title": "BIP-342 Tapscript",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "barcode",
+      "title": "Barcode",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "benchmark-standard",
+      "title": "Benchmark Standard",
+      "qualityScore": 0.72
+    },
+    {
+      "slug": "c2-pa",
+      "title": "C2PA",
+      "qualityScore": 0.74
+    },
+    {
+      "slug": "cen-cenelec",
+      "title": "Cen Cenelec",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "consensus-process",
+      "title": "Consensus Process",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "do-178-c",
+      "title": "DO-178C",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "data-format-standard",
+      "title": "Data Format Standard",
+      "qualityScore": 0.7
+    },
+    {
+      "slug": "documentation-standards",
+      "title": "Documentation Standards",
+      "qualityScore": 0.68
+    },
+    {
+      "slug": "eip-1271",
+      "title": "EIP-1271",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "eip-2981",
+      "title": "EIP-2981",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "eip-4337",
+      "title": "EIP-4337",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "eip-7702",
+      "title": "EIP-7702",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "erc-20-tokens",
+      "title": "ERC-20 Tokens",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "erc-20-votes",
+      "title": "ERC-20 Votes",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "erc-2612-permit",
+      "title": "ERC-2612 Permit",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "erc-3475",
+      "title": "ERC-3475",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "erc-3525",
+      "title": "ERC-3525",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "erc-4337-account-abstraction",
+      "title": "ERC-4337 Account Abstraction",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "erc-7540",
+      "title": "ERC-7540",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "erc-7683",
+      "title": "ERC-7683",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "etsi-eni-008",
+      "title": "ETSI ENI 008",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "etsi-gr-arf-007",
+      "title": "ETSI GR ARF 007",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "etsi-gs-mec-003",
+      "title": "ETSI GS MEC 003",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "etsi",
+      "title": "ETSI",
+      "qualityScore": 0.74
+    },
+    {
+      "slug": "fips-140-3",
+      "title": "FIPS 140-3",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "fips-186-5",
+      "title": "FIPS 186-5",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "failure-mode-and-effects-analysis",
+      "title": "Failure Mode And Effects Analysis",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "frand-licensing",
+      "title": "Frand Licensing",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "gs-1-standards",
+      "title": "GS1 Standards",
+      "qualityScore": 0.76
+    },
+    {
+      "slug": "gs1",
+      "title": "GS1",
+      "qualityScore": 0.72
+    },
+    {
+      "slug": "gs1-digital-link",
+      "title": "Gs1 Digital Link",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "iec-61508",
+      "title": "IEC 61508",
+      "qualityScore": 0.74
+    },
+    {
+      "slug": "iec-61800-adjustable-speed-electrical-power-drive-systems",
+      "title": "IEC 61800 Adjustable Speed Electrical Power Drive Systems",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iec-62061",
+      "title": "IEC 62061",
+      "qualityScore": 0.73
+    },
+    {
+      "slug": "ieee-1451",
+      "title": "IEEE 1451",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "ieee-1588-ptp",
+      "title": "IEEE 1588 PTP",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "ieee-1872",
+      "title": "IEEE 1872",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "ieee-7000-model-process",
+      "title": "IEEE 7000 Model Process",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "ieee-802-11",
+      "title": "IEEE 802.11",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "ieee-802-3",
+      "title": "IEEE 802.3",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "ieee-p-2048-9",
+      "title": "IEEE P2048-9",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "ieee-p-2048",
+      "title": "IEEE P2048",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "ieee-p-7000",
+      "title": "IEEE P7000",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "ieee-p-7009",
+      "title": "IEEE P7009",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "ieee-standards-association",
+      "title": "IEEE Standards Association",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "ietf",
+      "title": "IETF",
+      "qualityScore": 0.74
+    },
+    {
+      "slug": "iso-10218-robot-safety",
+      "title": "ISO 10218 Robot Safety",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-10218-1",
+      "title": "ISO 10218-1",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-11179",
+      "title": "ISO 11179",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-13849",
+      "title": "ISO 13849",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-14040",
+      "title": "ISO 14040",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-21448",
+      "title": "ISO 21448",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-22144",
+      "title": "ISO 22144",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-22166",
+      "title": "ISO 22166",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-23247",
+      "title": "ISO 23247",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-26000",
+      "title": "ISO 26000",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-26262",
+      "title": "ISO 26262",
+      "qualityScore": 0.76
+    },
+    {
+      "slug": "iso-27701",
+      "title": "ISO 27701",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-28000",
+      "title": "ISO 28000",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-29100",
+      "title": "ISO 29100",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-29134",
+      "title": "ISO 29134",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-29184",
+      "title": "ISO 29184",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-31000-risk-management",
+      "title": "ISO 31000 Risk Management",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-31000",
+      "title": "ISO 31000",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-3691-4",
+      "title": "ISO 3691-4",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-37301-2021",
+      "title": "ISO 37301 2021",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-42001",
+      "title": "ISO 42001",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-4217",
+      "title": "ISO 4217",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-639-language-codes",
+      "title": "ISO 639 Language Codes",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-8373-2021",
+      "title": "ISO 8373 2021",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-8373-robotics-vocabulary",
+      "title": "ISO 8373 Robotics Vocabulary",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-8373",
+      "title": "ISO 8373",
+      "qualityScore": 0.72
+    },
+    {
+      "slug": "iso-9241-112",
+      "title": "ISO 9241-112",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-9241-940",
+      "title": "ISO 9241-940",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-9241-960",
+      "title": "ISO 9241-960",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-9283-manipulating-industrial-robots-performance-criteria",
+      "title": "ISO 9283 Manipulating Industrial Robots Performance Criteria",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-42001-ai-management-system",
+      "title": "ISO IEC 42001 AI Management System",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-tc-307-blockchain-standards",
+      "title": "ISO TC 307 Blockchain Standards",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-14888",
+      "title": "ISO-IEC 14888",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-17820",
+      "title": "ISO-IEC 17820",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-18013-5-m-dl",
+      "title": "ISO-IEC 18013-5 mDL",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-18033",
+      "title": "ISO-IEC 18033",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-18039",
+      "title": "ISO-IEC 18039",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-22989-2022",
+      "title": "ISO-IEC 22989 2022",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-23053-2022",
+      "title": "ISO-IEC 23053 2022",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-23053",
+      "title": "ISO-IEC 23053",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-23090-3",
+      "title": "ISO-IEC 23090-3",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-23247",
+      "title": "ISO-IEC 23247",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-23257-2021",
+      "title": "ISO-IEC 23257 2021",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-23894-2023",
+      "title": "ISO-IEC 23894 2023",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-23894",
+      "title": "ISO-IEC 23894",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-24760",
+      "title": "ISO-IEC 24760",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-25010",
+      "title": "ISO-IEC 25010",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-25024",
+      "title": "ISO-IEC 25024",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-25059",
+      "title": "ISO-IEC 25059",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-27001-2022",
+      "title": "ISO-IEC 27001 2022",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-27701",
+      "title": "ISO-IEC 27701",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-30170",
+      "title": "ISO-IEC 30170",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-38500",
+      "title": "ISO-IEC 38500",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "title": "ISO-IEC 42001 2023",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-5338-2023",
+      "title": "ISO-IEC 5338 2023",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-jtc-1-sc-24",
+      "title": "ISO-IEC JTC 1-SC 24",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-tr-24027",
+      "title": "ISO-IEC TR 24027",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "iso-iec-tr-24029-1-2021",
+      "title": "ISO-IEC TR 24029-1 2021",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "itu-t",
+      "title": "ITU-T",
+      "qualityScore": 0.72
+    },
+    {
+      "slug": "iec-61511",
+      "title": "Iec 61511",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "interoperability-standards",
+      "title": "Interoperability Standards",
+      "qualityScore": 0.74
+    },
+    {
+      "slug": "json-schema",
+      "title": "JSON Schema",
+      "qualityScore": 0.72
+    },
+    {
+      "slug": "khronos-group",
+      "title": "Khronos Group",
+      "qualityScore": 0.74
+    },
+    {
+      "slug": "linked-data-platform",
+      "title": "Linked Data Platform",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "metadata-standards",
+      "title": "Metadata Standards",
+      "qualityScore": 0.72
+    },
+    {
+      "slug": "metaverse-standards-forum",
+      "title": "Metaverse Standards Forum",
+      "qualityScore": 0.74
+    },
+    {
+      "slug": "nist-800-63",
+      "title": "NIST 800-63",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-ai-standards",
+      "title": "NIST AI Standards",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-blockchain-technology-overview",
+      "title": "NIST Blockchain Technology Overview",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-cryptographic-standards",
+      "title": "NIST Cryptographic Standards",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-fips-186",
+      "title": "NIST FIPS 186",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-fips-205-slh-dsa-sphincs",
+      "title": "NIST FIPS 205 SLH-DSA SPHINCS+",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-fips-205",
+      "title": "NIST FIPS 205",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-nistir",
+      "title": "NIST NISTIR",
+      "qualityScore": 0.72
+    },
+    {
+      "slug": "nist-post-quantum-cryptography",
+      "title": "NIST Post-Quantum Cryptography",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-privacy-framework",
+      "title": "NIST Privacy Framework",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-sp-1270",
+      "title": "NIST SP 1270",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-sp-800-207",
+      "title": "NIST SP 800-207",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-sp-800-53",
+      "title": "NIST SP 800-53",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-sp-800-63-4",
+      "title": "NIST SP 800-63-4",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "nist-sp-800-63",
+      "title": "NIST SP 800-63",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "oasis",
+      "title": "OASIS",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "owl-2-web-ontology-language",
+      "title": "OWL 2 Web Ontology Language",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "owl",
+      "title": "OWL",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "open-governance",
+      "title": "Open Governance",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "open-standard",
+      "title": "Open Standard",
+      "qualityScore": 0.72
+    },
+    {
+      "slug": "open-standards",
+      "title": "Open Standards",
+      "qualityScore": 0.75
+    },
+    {
+      "slug": "proprietary-format",
+      "title": "Proprietary Format",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "proprietary-protocol",
+      "title": "Proprietary Protocol",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "proprietary-specification",
+      "title": "Proprietary Specification",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "protocol",
+      "title": "Protocol",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "rdf-schema",
+      "title": "RDF Schema",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "rfc-8785-canonical-json",
+      "title": "RFC 8785 Canonical JSON",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "rfc-8785",
+      "title": "RFC 8785",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "records-management",
+      "title": "Records Management",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "reference-implementation",
+      "title": "Reference Implementation",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "regular-expression",
+      "title": "Regular Expression",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "request-for-comments",
+      "title": "Request For Comments",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "rough-consensus",
+      "title": "Rough Consensus",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "sae-j-3016",
+      "title": "SAE J3016",
+      "qualityScore": 0.75
+    },
+    {
+      "slug": "smpte-st-2128",
+      "title": "SMPTE ST 2128",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "safety-lifecycle",
+      "title": "Safety Lifecycle",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "schema-validation",
+      "title": "Schema Validation",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "schema-org",
+      "title": "Schema.org",
+      "qualityScore": 0.8
+    },
+    {
+      "slug": "security-protocol",
+      "title": "Security Protocol",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "standards",
+      "title": "Standards",
+      "qualityScore": 0.72
+    },
+    {
+      "slug": "technical-committee",
+      "title": "Technical Committee",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "technical-standard",
+      "title": "Technical Standard",
+      "qualityScore": 0.72
+    },
+    {
+      "slug": "technical-standards",
+      "title": "Technical Standards",
+      "qualityScore": 0.65
+    },
+    {
+      "slug": "universal-design",
+      "title": "Universal Design",
+      "qualityScore": 0.75
+    },
+    {
+      "slug": "vendor-lock-in",
+      "title": "Vendor Lock-in",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "vendor-neutrality",
+      "title": "Vendor Neutrality",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "w-3-c-2022-did-core-1-0-recommendation",
+      "title": "W3C 2022 DID Core 1.0 Recommendation",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-cognitive-ai-community-group",
+      "title": "W3C Cognitive AI Community Group",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-did-core-1-0",
+      "title": "W3C DID Core 1.0",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-did-core-specification",
+      "title": "W3C DID Core Specification",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-did-working-group",
+      "title": "W3C DID Working Group",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-linked-data-platform",
+      "title": "W3C Linked Data Platform",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-owl-2",
+      "title": "W3C OWL 2",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-prov-o",
+      "title": "W3C PROV-O",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-rdf-1-1",
+      "title": "W3C RDF 1.1",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-sparql-1-1",
+      "title": "W3C SPARQL 1.1",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-standard",
+      "title": "W3C Standard",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-standards",
+      "title": "W3C Standards",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-verifiable-credentials-2-0",
+      "title": "W3C Verifiable Credentials 2.0",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-verifiable-credentials-data-model-2-0",
+      "title": "W3C Verifiable Credentials Data Model 2.0",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-verifiable-credentials-data-model-v-2-0",
+      "title": "W3C Verifiable Credentials Data Model v2.0",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-vocabulary",
+      "title": "W3C Vocabulary",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-web-xr-device-api",
+      "title": "W3C WebXR Device API",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "w-3-c-web-xr",
+      "title": "W3C WebXR",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "web-standard",
+      "title": "Web Standard",
+      "qualityScore": 0.72
+    },
+    {
+      "slug": "web-rtc-w-3-c-specification",
+      "title": "WebRTC W3C Specification",
+      "qualityScore": 0.6
+    },
+    {
+      "slug": "working-group",
+      "title": "Working Group",
+      "qualityScore": 0.62
+    },
+    {
+      "slug": "supports",
+      "title": "supports",
+      "qualityScore": 0.6
+    }
+  ],
+  "ai": [
+    {
       "slug": "a2-a-protocol",
       "title": "A2A Protocol",
-      "qualityScore": 0.8
+      "qualityScore": 0.88
     },
     {
       "slug": "aaai",
       "title": "AAAI",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "ade20-k",
       "title": "ADE20K",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "agi-timelines",
       "title": "AGI Timelines",
-      "qualityScore": 0.7
+      "qualityScore": 0.88
     },
     {
       "slug": "ai-accountability",
       "title": "AI Accountability",
-      "qualityScore": 0.8
+      "qualityScore": 0.87
     },
     {
       "slug": "ai-agent-coordination",
       "title": "AI Agent Coordination",
-      "qualityScore": 0.72
+      "qualityScore": 0.85
     },
     {
       "slug": "ai-agent",
       "title": "AI Agent",
-      "qualityScore": 0.72
+      "qualityScore": 0.89
     },
     {
       "slug": "ai-art-generation",
       "title": "AI Art Generation",
-      "qualityScore": 0.72
+      "qualityScore": 0.89
     },
     {
       "slug": "ai-ecosystem",
       "title": "AI Ecosystem",
-      "qualityScore": 0.8
+      "qualityScore": 0.93
     },
     {
       "slug": "ai-evaluation",
       "title": "AI Evaluation",
-      "qualityScore": 0.72
+      "qualityScore": 0.91
     },
     {
       "slug": "ai-group-formation",
       "title": "AI Group Formation",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "ai-investment",
-      "title": "AI Investment",
-      "qualityScore": 0.72
+      "qualityScore": 0.87
     },
     {
       "slug": "ai-model-development",
       "title": "AI Model Development",
-      "qualityScore": 0.8
+      "qualityScore": 0.92
     },
     {
       "slug": "ai-model",
       "title": "AI Model",
-      "qualityScore": 0.8
+      "qualityScore": 0.93
     },
     {
       "slug": "ai-system",
       "title": "AI System",
-      "qualityScore": 0.8
+      "qualityScore": 0.91
     },
     {
       "slug": "ai-talent-war",
       "title": "AI Talent War",
-      "qualityScore": 0.8
+      "qualityScore": 0.88
     },
     {
       "slug": "ai-talent",
       "title": "AI Talent",
-      "qualityScore": 0.8
+      "qualityScore": 0.88
     },
     {
       "slug": "arc-agi",
       "title": "ARC-AGI",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "automatic-1111-web-ui",
       "title": "AUTOMATIC1111 WebUI",
-      "qualityScore": 0.6
+      "qualityScore": 0.85
     },
     {
       "slug": "academic-conference",
       "title": "Academic Conference",
-      "qualityScore": 0.62
+      "qualityScore": 0.87
     },
     {
       "slug": "accessibility-tree",
       "title": "Accessibility Tree",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "accountability-ai-0068",
-      "title": "Accountability (AI-0068)",
-      "qualityScore": 0.8
+      "qualityScore": 0.92
     },
     {
       "slug": "acquisition-function",
@@ -25910,42 +26947,42 @@
     {
       "slug": "action-executor",
       "title": "Action Executor",
-      "qualityScore": 0.8
+      "qualityScore": 0.88
     },
     {
       "slug": "action-recognition",
       "title": "Action Recognition",
-      "qualityScore": 0.72
+      "qualityScore": 0.88
     },
     {
       "slug": "action-space",
       "title": "Action Space",
-      "qualityScore": 0.8
+      "qualityScore": 0.87
     },
     {
       "slug": "activity-data",
       "title": "Activity Data",
-      "qualityScore": 0.8
+      "qualityScore": 0.87
     },
     {
       "slug": "adaptive-behaviour",
       "title": "Adaptive Behaviour",
-      "qualityScore": 0.8
+      "qualityScore": 0.91
     },
     {
       "slug": "adobe-firefly",
       "title": "Adobe Firefly",
-      "qualityScore": 0.8
+      "qualityScore": 0.87
     },
     {
       "slug": "affective-computing-system",
       "title": "Affective Computing System",
-      "qualityScore": 0.8
+      "qualityScore": 0.87
     },
     {
       "slug": "affective-computing",
       "title": "Affective Computing",
-      "qualityScore": 0.72
+      "qualityScore": 0.91
     },
     {
       "slug": "agent-layer",
@@ -25955,22 +26992,22 @@
     {
       "slug": "agent-orchestrator",
       "title": "Agent Orchestrator",
-      "qualityScore": 0.8
+      "qualityScore": 0.91
     },
     {
       "slug": "agent-runtime",
       "title": "Agent Runtime",
-      "qualityScore": 0.8
+      "qualityScore": 0.91
     },
     {
       "slug": "agent-based-models",
       "title": "Agent-Based Models",
-      "qualityScore": 0.8
+      "qualityScore": 0.87
     },
     {
       "slug": "agent2-agent-protocol-google-2025",
       "title": "Agent2Agent Protocol (Google 2025)",
-      "qualityScore": 0.8
+      "qualityScore": 0.93
     },
     {
       "slug": "agent2-agent-protocol",
@@ -25980,67 +27017,67 @@
     {
       "slug": "agentic-rag",
       "title": "Agentic RAG",
-      "qualityScore": 0.72
+      "qualityScore": 0.91
     },
     {
       "slug": "agentic-workflow",
       "title": "Agentic Workflow",
-      "qualityScore": 0.74
+      "qualityScore": 0.91
     },
     {
       "slug": "alignment",
       "title": "Alignment",
-      "qualityScore": 0.8
+      "qualityScore": 0.92
     },
     {
       "slug": "answer-ai",
       "title": "Answer AI",
-      "qualityScore": 0.72
+      "qualityScore": 0.82
     },
     {
       "slug": "applied-machine-learning",
       "title": "Applied Machine Learning",
-      "qualityScore": 0.72
+      "qualityScore": 0.92
     },
     {
       "slug": "arc-face",
       "title": "ArcFace",
-      "qualityScore": 0.8
+      "qualityScore": 0.92
     },
     {
       "slug": "artificial-intelligence-core",
       "title": "Artificial Intelligence Core",
-      "qualityScore": 0.72
+      "qualityScore": 0.91
     },
     {
       "slug": "artificial-intelligence-research",
       "title": "Artificial Intelligence Research",
-      "qualityScore": 0.62
+      "qualityScore": 0.91
     },
     {
       "slug": "assistive-technology-integration",
       "title": "Assistive Technology Integration",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "audience-engagement",
       "title": "Audience Engagement",
-      "qualityScore": 0.62
+      "qualityScore": 0.88
     },
     {
       "slug": "audio-processing",
       "title": "Audio Processing",
-      "qualityScore": 0.74
+      "qualityScore": 0.92
     },
     {
       "slug": "audio-signal-processing",
       "title": "Audio Signal Processing",
-      "qualityScore": 0.8
+      "qualityScore": 0.92
     },
     {
       "slug": "automated-design",
       "title": "Automated Design",
-      "qualityScore": 0.8
+      "qualityScore": 0.88
     },
     {
       "slug": "automated-planning",
@@ -26050,17 +27087,17 @@
     {
       "slug": "automated-reasoning",
       "title": "Automated Reasoning",
-      "qualityScore": 0.75
+      "qualityScore": 0.91
     },
     {
       "slug": "automatic-prompt-optimisation",
       "title": "Automatic Prompt Optimisation",
-      "qualityScore": 0.72
+      "qualityScore": 0.87
     },
     {
       "slug": "automatic-speech-recognition",
       "title": "Automatic Speech Recognition",
-      "qualityScore": 0.74
+      "qualityScore": 0.89
     },
     {
       "slug": "automatic1111",
@@ -28176,948 +29213,6 @@
       "slug": "continuous-improvement",
       "title": "continuous improvement",
       "qualityScore": 0.8
-    }
-  ],
-  "standards": [
-    {
-      "slug": "3-gpp",
-      "title": "3GPP",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "acm",
-      "title": "ACM",
-      "qualityScore": 0.75
-    },
-    {
-      "slug": "accessibility-captioning",
-      "title": "Accessibility Captioning",
-      "qualityScore": 0.8
-    },
-    {
-      "slug": "accessibility-standard",
-      "title": "Accessibility Standard",
-      "qualityScore": 0.68
-    },
-    {
-      "slug": "archival-standards",
-      "title": "Archival Standards",
-      "qualityScore": 0.7
-    },
-    {
-      "slug": "assistive-technology",
-      "title": "Assistive Technology",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "bip-341-taproot",
-      "title": "BIP-341 Taproot",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "bip-342-tapscript",
-      "title": "BIP-342 Tapscript",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "barcode",
-      "title": "Barcode",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "benchmark-standard",
-      "title": "Benchmark Standard",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "c2-pa",
-      "title": "C2PA",
-      "qualityScore": 0.74
-    },
-    {
-      "slug": "cen-cenelec",
-      "title": "Cen Cenelec",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "consensus-process",
-      "title": "Consensus Process",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "do-178-c",
-      "title": "DO-178C",
-      "qualityScore": 0.8
-    },
-    {
-      "slug": "data-format-standard",
-      "title": "Data Format Standard",
-      "qualityScore": 0.7
-    },
-    {
-      "slug": "documentation-standards",
-      "title": "Documentation Standards",
-      "qualityScore": 0.68
-    },
-    {
-      "slug": "eip-1271",
-      "title": "EIP-1271",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "eip-2981",
-      "title": "EIP-2981",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "eip-4337",
-      "title": "EIP-4337",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "eip-7702",
-      "title": "EIP-7702",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "erc-20-tokens",
-      "title": "ERC-20 Tokens",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "erc-20-votes",
-      "title": "ERC-20 Votes",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "erc-2612-permit",
-      "title": "ERC-2612 Permit",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "erc-3475",
-      "title": "ERC-3475",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "erc-3525",
-      "title": "ERC-3525",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "erc-4337-account-abstraction",
-      "title": "ERC-4337 Account Abstraction",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "erc-7540",
-      "title": "ERC-7540",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "erc-7683",
-      "title": "ERC-7683",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "etsi-eni-008",
-      "title": "ETSI ENI 008",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "etsi-gr-arf-007",
-      "title": "ETSI GR ARF 007",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "etsi-gs-mec-003",
-      "title": "ETSI GS MEC 003",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "etsi",
-      "title": "ETSI",
-      "qualityScore": 0.74
-    },
-    {
-      "slug": "fips-140-3",
-      "title": "FIPS 140-3",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "fips-186-5",
-      "title": "FIPS 186-5",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "failure-mode-and-effects-analysis",
-      "title": "Failure Mode And Effects Analysis",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "frand-licensing",
-      "title": "Frand Licensing",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "gs-1-standards",
-      "title": "GS1 Standards",
-      "qualityScore": 0.76
-    },
-    {
-      "slug": "gs1",
-      "title": "GS1",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "gs1-digital-link",
-      "title": "Gs1 Digital Link",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "iec-61508",
-      "title": "IEC 61508",
-      "qualityScore": 0.74
-    },
-    {
-      "slug": "iec-61800-adjustable-speed-electrical-power-drive-systems",
-      "title": "IEC 61800 Adjustable Speed Electrical Power Drive Systems",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iec-62061",
-      "title": "IEC 62061",
-      "qualityScore": 0.73
-    },
-    {
-      "slug": "ieee-1451",
-      "title": "IEEE 1451",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "ieee-1588-ptp",
-      "title": "IEEE 1588 PTP",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "ieee-1872",
-      "title": "IEEE 1872",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "ieee-7000-model-process",
-      "title": "IEEE 7000 Model Process",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "ieee-802-11",
-      "title": "IEEE 802.11",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "ieee-802-3",
-      "title": "IEEE 802.3",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "ieee-p-2048-9",
-      "title": "IEEE P2048-9",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "ieee-p-2048",
-      "title": "IEEE P2048",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "ieee-p-7000",
-      "title": "IEEE P7000",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "ieee-p-7009",
-      "title": "IEEE P7009",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "ieee-standards-association",
-      "title": "IEEE Standards Association",
-      "qualityScore": 0.8
-    },
-    {
-      "slug": "ietf",
-      "title": "IETF",
-      "qualityScore": 0.74
-    },
-    {
-      "slug": "iso-10218-robot-safety",
-      "title": "ISO 10218 Robot Safety",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-10218-1",
-      "title": "ISO 10218-1",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-11179",
-      "title": "ISO 11179",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-13849",
-      "title": "ISO 13849",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-14040",
-      "title": "ISO 14040",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-21448",
-      "title": "ISO 21448",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-22144",
-      "title": "ISO 22144",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-22166",
-      "title": "ISO 22166",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-23247",
-      "title": "ISO 23247",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-26000",
-      "title": "ISO 26000",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-26262",
-      "title": "ISO 26262",
-      "qualityScore": 0.76
-    },
-    {
-      "slug": "iso-27701",
-      "title": "ISO 27701",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-28000",
-      "title": "ISO 28000",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-29100",
-      "title": "ISO 29100",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-29134",
-      "title": "ISO 29134",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-29184",
-      "title": "ISO 29184",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-31000-risk-management",
-      "title": "ISO 31000 Risk Management",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-31000",
-      "title": "ISO 31000",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-3691-4",
-      "title": "ISO 3691-4",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-37301-2021",
-      "title": "ISO 37301 2021",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-42001",
-      "title": "ISO 42001",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-4217",
-      "title": "ISO 4217",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-639-language-codes",
-      "title": "ISO 639 Language Codes",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-8373-2021",
-      "title": "ISO 8373 2021",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-8373-robotics-vocabulary",
-      "title": "ISO 8373 Robotics Vocabulary",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-8373",
-      "title": "ISO 8373",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "iso-9241-112",
-      "title": "ISO 9241-112",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-9241-940",
-      "title": "ISO 9241-940",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-9241-960",
-      "title": "ISO 9241-960",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-9283-manipulating-industrial-robots-performance-criteria",
-      "title": "ISO 9283 Manipulating Industrial Robots Performance Criteria",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-42001-ai-management-system",
-      "title": "ISO IEC 42001 AI Management System",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-tc-307-blockchain-standards",
-      "title": "ISO TC 307 Blockchain Standards",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-14888",
-      "title": "ISO-IEC 14888",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-17820",
-      "title": "ISO-IEC 17820",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-18013-5-m-dl",
-      "title": "ISO-IEC 18013-5 mDL",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-18033",
-      "title": "ISO-IEC 18033",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-18039",
-      "title": "ISO-IEC 18039",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-22989-2022",
-      "title": "ISO-IEC 22989 2022",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-23053-2022",
-      "title": "ISO-IEC 23053 2022",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-23053",
-      "title": "ISO-IEC 23053",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-23090-3",
-      "title": "ISO-IEC 23090-3",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-23247",
-      "title": "ISO-IEC 23247",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-23257-2021",
-      "title": "ISO-IEC 23257 2021",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-23894-2023",
-      "title": "ISO-IEC 23894 2023",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-23894",
-      "title": "ISO-IEC 23894",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-24760",
-      "title": "ISO-IEC 24760",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-25010",
-      "title": "ISO-IEC 25010",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-25024",
-      "title": "ISO-IEC 25024",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-25059",
-      "title": "ISO-IEC 25059",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-27001-2022",
-      "title": "ISO-IEC 27001 2022",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-27701",
-      "title": "ISO-IEC 27701",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-30170",
-      "title": "ISO-IEC 30170",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-38500",
-      "title": "ISO-IEC 38500",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-42001-2023",
-      "title": "ISO-IEC 42001 2023",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-5338-2023",
-      "title": "ISO-IEC 5338 2023",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-jtc-1-sc-24",
-      "title": "ISO-IEC JTC 1-SC 24",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-tr-24027",
-      "title": "ISO-IEC TR 24027",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "iso-iec-tr-24029-1-2021",
-      "title": "ISO-IEC TR 24029-1 2021",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "itu-t",
-      "title": "ITU-T",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "iec-61511",
-      "title": "Iec 61511",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "interoperability-standards",
-      "title": "Interoperability Standards",
-      "qualityScore": 0.74
-    },
-    {
-      "slug": "json-schema",
-      "title": "JSON Schema",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "khronos-group",
-      "title": "Khronos Group",
-      "qualityScore": 0.74
-    },
-    {
-      "slug": "linked-data-platform",
-      "title": "Linked Data Platform",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "metadata-standards",
-      "title": "Metadata Standards",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "metaverse-standards-forum",
-      "title": "Metaverse Standards Forum",
-      "qualityScore": 0.74
-    },
-    {
-      "slug": "nist-800-63",
-      "title": "NIST 800-63",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-ai-standards",
-      "title": "NIST AI Standards",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-blockchain-technology-overview",
-      "title": "NIST Blockchain Technology Overview",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-cryptographic-standards",
-      "title": "NIST Cryptographic Standards",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-fips-186",
-      "title": "NIST FIPS 186",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-fips-205-slh-dsa-sphincs",
-      "title": "NIST FIPS 205 SLH-DSA SPHINCS+",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-fips-205",
-      "title": "NIST FIPS 205",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-nistir",
-      "title": "NIST NISTIR",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "nist-post-quantum-cryptography",
-      "title": "NIST Post-Quantum Cryptography",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-privacy-framework",
-      "title": "NIST Privacy Framework",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-sp-1270",
-      "title": "NIST SP 1270",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-sp-800-207",
-      "title": "NIST SP 800-207",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-sp-800-53",
-      "title": "NIST SP 800-53",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-sp-800-63-4",
-      "title": "NIST SP 800-63-4",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "nist-sp-800-63",
-      "title": "NIST SP 800-63",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "oasis",
-      "title": "OASIS",
-      "qualityScore": 0.8
-    },
-    {
-      "slug": "owl-2-web-ontology-language",
-      "title": "OWL 2 Web Ontology Language",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "owl",
-      "title": "OWL",
-      "qualityScore": 0.8
-    },
-    {
-      "slug": "open-governance",
-      "title": "Open Governance",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "open-standard",
-      "title": "Open Standard",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "open-standards",
-      "title": "Open Standards",
-      "qualityScore": 0.75
-    },
-    {
-      "slug": "proprietary-format",
-      "title": "Proprietary Format",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "proprietary-protocol",
-      "title": "Proprietary Protocol",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "proprietary-specification",
-      "title": "Proprietary Specification",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "protocol",
-      "title": "Protocol",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "rdf-schema",
-      "title": "RDF Schema",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "rfc-8785-canonical-json",
-      "title": "RFC 8785 Canonical JSON",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "rfc-8785",
-      "title": "RFC 8785",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "records-management",
-      "title": "Records Management",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "reference-implementation",
-      "title": "Reference Implementation",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "regular-expression",
-      "title": "Regular Expression",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "request-for-comments",
-      "title": "Request For Comments",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "rough-consensus",
-      "title": "Rough Consensus",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "sae-j-3016",
-      "title": "SAE J3016",
-      "qualityScore": 0.75
-    },
-    {
-      "slug": "smpte-st-2128",
-      "title": "SMPTE ST 2128",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "safety-lifecycle",
-      "title": "Safety Lifecycle",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "schema-validation",
-      "title": "Schema Validation",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "schema-org",
-      "title": "Schema.org",
-      "qualityScore": 0.8
-    },
-    {
-      "slug": "security-protocol",
-      "title": "Security Protocol",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "standards",
-      "title": "Standards",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "technical-committee",
-      "title": "Technical Committee",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "technical-standard",
-      "title": "Technical Standard",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "technical-standards",
-      "title": "Technical Standards",
-      "qualityScore": 0.65
-    },
-    {
-      "slug": "universal-design",
-      "title": "Universal Design",
-      "qualityScore": 0.75
-    },
-    {
-      "slug": "vendor-lock-in",
-      "title": "Vendor Lock-in",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "vendor-neutrality",
-      "title": "Vendor Neutrality",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "w-3-c-2022-did-core-1-0-recommendation",
-      "title": "W3C 2022 DID Core 1.0 Recommendation",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-cognitive-ai-community-group",
-      "title": "W3C Cognitive AI Community Group",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-did-core-1-0",
-      "title": "W3C DID Core 1.0",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-did-core-specification",
-      "title": "W3C DID Core Specification",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-did-working-group",
-      "title": "W3C DID Working Group",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-linked-data-platform",
-      "title": "W3C Linked Data Platform",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-owl-2",
-      "title": "W3C OWL 2",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-prov-o",
-      "title": "W3C PROV-O",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-rdf-1-1",
-      "title": "W3C RDF 1.1",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-sparql-1-1",
-      "title": "W3C SPARQL 1.1",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-standard",
-      "title": "W3C Standard",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-standards",
-      "title": "W3C Standards",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-verifiable-credentials-2-0",
-      "title": "W3C Verifiable Credentials 2.0",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-verifiable-credentials-data-model-2-0",
-      "title": "W3C Verifiable Credentials Data Model 2.0",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-verifiable-credentials-data-model-v-2-0",
-      "title": "W3C Verifiable Credentials Data Model v2.0",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-vocabulary",
-      "title": "W3C Vocabulary",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-web-xr-device-api",
-      "title": "W3C WebXR Device API",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "w-3-c-web-xr",
-      "title": "W3C WebXR",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "web-standard",
-      "title": "Web Standard",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "web-rtc-w-3-c-specification",
-      "title": "WebRTC W3C Specification",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "working-group",
-      "title": "Working Group",
-      "qualityScore": 0.62
-    },
-    {
-      "slug": "supports",
-      "title": "supports",
-      "qualityScore": 0.6
     }
   ],
   "distributed-systems": [
@@ -33417,12 +33512,12 @@
     {
       "slug": "ai-inference",
       "title": "AI Inference",
-      "qualityScore": 0.75
+      "qualityScore": 0.91
     },
     {
       "slug": "ai-model-inference-engine",
       "title": "AI Model Inference Engine",
-      "qualityScore": 0.6
+      "qualityScore": 0.92
     },
     {
       "slug": "activation-function",
@@ -33432,12 +33527,12 @@
     {
       "slug": "adam-optimizer",
       "title": "Adam Optimizer",
-      "qualityScore": 0.6
+      "qualityScore": 0.88
     },
     {
       "slug": "adaptive-learning",
       "title": "Adaptive Learning",
-      "qualityScore": 0.72
+      "qualityScore": 0.91
     },
     {
       "slug": "adversarial-robustness",
@@ -33447,7 +33542,7 @@
     {
       "slug": "algorithm-layer",
       "title": "Algorithm Layer",
-      "qualityScore": 0.6
+      "qualityScore": 0.88
     },
     {
       "slug": "algorithmic-complexity",
@@ -33462,17 +33557,17 @@
     {
       "slug": "applied-mathematics",
       "title": "Applied Mathematics",
-      "qualityScore": 0.6
+      "qualityScore": 0.92
     },
     {
       "slug": "attention-mechanisms",
       "title": "Attention Mechanisms",
-      "qualityScore": 0.6
+      "qualityScore": 0.93
     },
     {
       "slug": "audio-generation",
       "title": "Audio Generation",
-      "qualityScore": 0.62
+      "qualityScore": 0.91
     },
     {
       "slug": "autoencoder",
@@ -33487,7 +33582,7 @@
     {
       "slug": "automatic-differentiation",
       "title": "Automatic Differentiation",
-      "qualityScore": 0.72
+      "qualityScore": 0.92
     },
     {
       "slug": "autoregressive-model",
@@ -35140,6 +35235,13 @@
       "qualityScore": 0.72
     }
   ],
+  "economics": [
+    {
+      "slug": "ai-investment",
+      "title": "AI Investment",
+      "qualityScore": 0.88
+    }
+  ],
   "data": [
     {
       "slug": "a-b-testing",
@@ -36100,6 +36202,13 @@
       "slug": "xml-schema-definition",
       "title": "Xml Schema Definition",
       "qualityScore": 0.62
+    }
+  ],
+  "ai-governance": [
+    {
+      "slug": "accountability-ai-0068",
+      "title": "Accountability (AI-0068)",
+      "qualityScore": 0.93
     }
   ],
   "metaverse": [

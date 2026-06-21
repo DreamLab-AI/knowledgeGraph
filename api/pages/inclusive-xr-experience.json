@@ -60,6 +60,10 @@
     {
       "slug": "accessibility-standard",
       "label": "Accessibility Standard"
+    },
+    {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
     }
   ]
 }

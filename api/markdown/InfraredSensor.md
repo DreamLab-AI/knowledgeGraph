@@ -630,7 +630,7 @@ alias:: Infrared Sensor
   #### UK Context
   - United Kingdom has established leadership in robotics sensing research, with particular strengths in nuclear, agricultural, and healthcare robotics leveraging IR technologies
   - **National Centre for Nuclear Robotics (NCNR)**: £42 million EPSRC investment (2017-2027) across Universities of Birmingham, Manchester, Leeds, Lancaster, and West Cumbria; deployed thermal-IR fusion systems for Sellafield decommissioning robots detecting hotspots through 50 cm concrete walls[21]
-  - **Innovate UK Agri-Tech Catalyst**: £90 million funding program (2013-2023) supported IR-equipped agricultural robots; Small Robot Company (Hampshire) developed "Tom" weed-scouting robot with multispectral (RGB+NIR+thermal) sensing achieving 95% weed identification accuracy[22]
+  - **Innovate UK Agri-Tech Catalyst**: £90 million funding program (2013-2023) supported IR-equipped agricultural robots; Small Robot Company (Salisbury, founded 2017) developed "Tom" weed-scouting robot with multispectral (RGB+NIR+thermal) sensing achieving 95% weed identification accuracy before entering liquidation in 2025[22]
   - **EPSRC UK Robotics and Autonomous Systems Network (UK-RAS)**: White papers on sensor technologies emphasize IR's role in resilient perception for autonomous systems operating in GPS-denied, low-light, or visually degraded environments[23]
 
   ### North England Innovation Ecosystem

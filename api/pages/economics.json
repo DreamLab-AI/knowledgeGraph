@@ -633,6 +633,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
       "slug": "auction-theory",
       "label": "Auction Theory"
     },

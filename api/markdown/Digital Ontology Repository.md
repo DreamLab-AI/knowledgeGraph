@@ -356,8 +356,6 @@ public:: true
 - ### Definition
   - A structured collection system that stores, versions, and manages formal ontologies and semantic models to enable interoperability and shared understanding across metaverse domains.
 
-bridges-to:: [[Computer Vision]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalOntologyRepository
   - owl-role:: Object

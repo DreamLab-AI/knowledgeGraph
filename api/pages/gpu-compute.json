@@ -141,6 +141,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
       "slug": "ai-companies",
       "label": "AI Companies"
     },
@@ -149,8 +161,32 @@
       "label": "AI Video"
     },
     {
+      "slug": "automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
       "slug": "attention",
       "label": "Attention"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
     },
     {
       "slug": "comfy-ui-workflows",

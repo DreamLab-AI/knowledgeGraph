@@ -132,6 +132,10 @@
       "label": "AI Video"
     },
     {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     },

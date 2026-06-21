@@ -147,12 +147,40 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
       "slug": "agent-based-modelling",
       "label": "Agent-Based Modelling"
     },
     {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
     },
     {
       "slug": "auto-gen",

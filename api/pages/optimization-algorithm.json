@@ -149,8 +149,16 @@
   ],
   "backlinks": [
     {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
       "slug": "adam-optimizer",
       "label": "Adam Optimizer"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
     },
     {
       "slug": "camera-parameters",

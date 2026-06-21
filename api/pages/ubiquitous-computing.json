@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:ngm-ubiquitous-computing",
+  "title": "Ubiquitous Computing",
+  "slug": "ubiquitous-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:ubiquitous-computing",
+  "domain": "infrastructure",
+  "definition": "Ubiquitous Computing is a paradigm in which computational capability is embedded pervasively throughout the physical environment, making computers effectively invisible by integrating them into everyday objects and spaces. Coined by Mark Weiser, the concept encompasses smart devices, ambient intelligence, and the Internet of Things, aiming for seamless and context-aware interaction between people and technology. It contrasts with desktop computing by distributing computation across many heterogeneous, networked devices that operate without demanding explicit user attention.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

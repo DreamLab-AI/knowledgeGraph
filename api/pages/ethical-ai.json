@@ -191,6 +191,14 @@
   ],
   "backlinks": [
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },

@@ -1,8 +1,6 @@
 - ### Definition
   - The process of developing virtual replicas of physical entities that dynamically reflect real-time conditions through continuous data linkage, enabling simulation, monitoring, and optimisation across the asset's entire lifecycle from design through decommissioning.
 
-bridges-to:: [[Computer Vision]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalTwinCreation
   - owl-role:: Concept
@@ -12,13 +10,14 @@ bridges-to:: [[Computer Vision]]
   - is-subclass-of:: [[Digital Modeling]]
   - requires:: [[3D Modeling]], [[IoT Integration]], [[Sensor Data]]
   - enables:: [[Real-Time Monitoring]], [[Predictive Analytics]], [[Lifecycle Management]]
+  - bridges-to:: [[Computer Vision]]
 
 - ### Content
 
   - ## Technical Details
   - **Market Growth**:
 		- Global market: ~60% annual growth over next five years
-		- Projected $73.5B by 2027 (McKinsey analysis)
+		- Projected $73.5B by 2027 (MarketsandMarkets, 2022 forecast)
 		- Current market: $3.1B (2020) to $48.2B by 2026
   - **Creation Process**:
 		- 3D scanning of existing assets (LiDAR, structured-light)

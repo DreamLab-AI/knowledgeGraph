@@ -86,5 +86,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    }
+  ]
 }

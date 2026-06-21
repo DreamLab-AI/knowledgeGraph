@@ -150,6 +150,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
       "slug": "image-segmentation",
       "label": "Image Segmentation"
     },

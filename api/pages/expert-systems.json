@@ -144,6 +144,14 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
       "slug": "chatbots",
       "label": "Chatbots"
     },

@@ -1,8 +1,6 @@
 - ### Definition
   - The mathematical and computational techniques for representing, transforming, and manipulating signals in digital form, enabling real-time audio processing, video enhancement, spatial audio for VR/AR, and sensor data analysis critical for immersive metaverse experiences.
 
-bridges-to:: [[Sensor Input]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalSignalProcessing
   - owl-role:: Concept
@@ -26,11 +24,11 @@ bridges-to:: [[Sensor Input]]
 		- Real-time voice processing
 		- Motion tracking signal analysis
 		- Haptic feedback generation
-  - **Market Size (2024)**:
-		- Global DSP market: $25.7B (projected $59.3B by 2035)
+  - **Market Size (2025)**:
+		- Global DSP processor market: ~$11-12B (estimates vary by scope; projected to reach ~$22B by 2034, CAGR ~8%)
 		- Professional DSP market: $580M (CAGR 4.1%)
 		- Audio processing: 58% market share
-  - **2024 Trends**: AI/ML integration, immersive audio adoption, 5G requirements, edge processing
+  - **Current Trends**: AI/ML integration, immersive audio adoption, 5G and edge processing requirements, neural DSP acceleration
   - ## Applications
   - VR/AR spatial audio
   - Voice recognition systems

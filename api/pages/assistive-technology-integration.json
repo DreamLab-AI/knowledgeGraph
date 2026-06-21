@@ -13,11 +13,24 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:accessibility-tree",
+        "label": "Accessibility Tree"
+      },
+      {
+        "id": "urn:ngm:class:user-centred-design",
+        "label": "User Centred Design"
+      },
+      {
+        "id": "urn:ngm:class:participatory-design",
+        "label": "Participatory Design"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:accessible-experience",
@@ -26,10 +39,27 @@
       {
         "id": "urn:ngm:class:inclusive-xr-experience",
         "label": "Inclusive Xr Experience"
+      },
+      {
+        "id": "urn:ngm:class:equitable-access",
+        "label": "Equitable Access"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-participation",
+        "label": "Inclusive Participation"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:wcag",
+        "label": "WCAG"
+      },
+      {
+        "id": "urn:ngm:class:aria",
+        "label": "ARIA"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
@@ -44,6 +74,18 @@
       {
         "id": "urn:ngm:class:accessibility-audit-tool",
         "label": "Accessibility Audit Tool"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "supports": [],
@@ -61,10 +103,211 @@
       {
         "id": "urn:ngm:class:human-computer-interaction",
         "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:digital-equity",
+        "label": "Digital Equity"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "accessibility-standard",
+      "label": "Accessibility Standard"
+    },
+    {
+      "slug": "accessibility-audit-tool",
+      "label": "Accessibility Audit Tool"
+    },
+    {
+      "slug": "accessibility-tree",
+      "label": "Accessibility Tree"
+    },
+    {
+      "slug": "accessibility-captioning",
+      "label": "Accessibility Captioning"
+    },
+    {
+      "slug": "haptic-feedback",
+      "label": "Haptic Feedback"
+    },
+    {
+      "slug": "gesture-recognition",
+      "label": "Gesture Recognition"
+    },
+    {
+      "slug": "inclusive-design",
+      "label": "Inclusive Design"
+    },
+    {
+      "slug": "inclusive-xr-experience",
+      "label": "Inclusive Xr Experience"
+    },
+    {
+      "slug": "inclusive-xr-design",
+      "label": "Inclusive Xr Design"
+    },
+    {
+      "slug": "inclusive-participation",
+      "label": "Inclusive Participation"
+    },
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human Computer Interaction"
+    },
+    {
+      "slug": "universal-design",
+      "label": "Universal Design"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "multimodal-interaction",
+      "label": "Multimodal Interaction"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality (XR)"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality (AR)"
+    },
+    {
+      "slug": "neural-xr-interfaces",
+      "label": "Neural XR Interfaces"
+    },
+    {
+      "slug": "user-centred-design",
+      "label": "User Centred Design"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "interaction-design",
+      "label": "Interaction Design"
+    },
+    {
+      "slug": "participatory-design",
+      "label": "Participatory Design"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "digital-equity",
+      "label": "Digital Equity"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "khronos-openxr",
+      "label": "Khronos OpenXR"
+    },
+    {
+      "slug": "openxr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "augmented-connected-workforce",
+      "label": "Augmented Connected Workforce"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "cognitive-accessibility",
+      "label": "Cognitive Accessibility"
+    },
+    {
+      "slug": "captions",
+      "label": "Captions"
+    },
+    {
+      "slug": "audio-description",
+      "label": "Audio Description"
+    },
+    {
+      "slug": "alternative-text",
+      "label": "Alternative Text"
+    },
+    {
+      "slug": "colour-contrast",
+      "label": "Colour Contrast"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "equitable-access",
+      "label": "Equitable Access"
+    },
+    {
+      "slug": "bias-mitigation",
+      "label": "Bias Mitigation"
+    },
+    {
+      "slug": "wearable-computing",
+      "label": "Wearable Computing"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real Time Processing"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
   "backlinks": [
     {
       "slug": "accessibility-standards",

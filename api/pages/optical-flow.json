@@ -122,6 +122,10 @@
       "label": "AI Video"
     },
     {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
       "slug": "depth-estimation",
       "label": "Depth Estimation"
     },

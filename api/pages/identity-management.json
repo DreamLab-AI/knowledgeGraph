@@ -164,6 +164,10 @@
       "label": "Access Controls"
     },
     {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
       "slug": "attribute-sharing",
       "label": "Attribute Sharing"
     },

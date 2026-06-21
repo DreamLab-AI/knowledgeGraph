@@ -79,6 +79,10 @@
   ],
   "backlinks": [
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
       "slug": "auto-ml",
       "label": "AutoML"
     },

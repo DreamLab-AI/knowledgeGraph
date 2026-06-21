@@ -15,19 +15,6 @@
   - **uses** [[Point Cloud]] — point clouds are the canonical intermediate representation in reality capture
 - ### Content
   - The ETSI Reality Capture domain encompasses technologies and standards for digitising physical environments and objects into semantic digital representations, enabling accurate creation of digital twins and immersive content for metaverse applications.
-  - ### Original Content
-		- ```
-  # ETSI Domain: Reality Capture
-		  ## Properties
-		  ## Terms in this Domain
-		  - [[Digital Twin]]
-		  - [[Human Capture & Recognition]]
-		  - [[Motion Capture Rig]]
-		  - [[Photogrammetry]]
-		  - [[Reality Capture System]]
-		  ## Query All Terms
-		  ```
-  # ETSI_Domain_Reality_Capture.md - Updated Content
   ## Academic Context
   - Reality Capture represents the technological domain concerned with digitising physical environments and objects into three-dimensional digital representations[1][7]
   - Encompasses depth sensing, mesh reconstruction, and real-time spatial data acquisition

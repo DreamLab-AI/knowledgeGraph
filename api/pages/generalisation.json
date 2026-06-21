@@ -78,5 +78,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    }
+  ]
 }

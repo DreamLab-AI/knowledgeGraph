@@ -90,8 +90,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-safety-research",
+      "label": "ai safety research"
+    },
+    {
       "slug": "active-learning",
       "label": "Active Learning"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
     },
     {
       "slug": "bayes-filter",

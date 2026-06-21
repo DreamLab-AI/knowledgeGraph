@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - An Activation Function is a non-linear mathematical transformation applied to a neuron's weighted input sum, enabling neural networks to learn complex, non-linear mappings. Common variants include Sigmoid, Tanh, ReLU, Leaky ReLU, and GELU; the choice of activation function critically affects gradient flow, convergence speed, and model expressivity.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:ActivationFunction
@@ -14,66 +14,8 @@
   - Related to [[Neural Network Layer]] as the structural unit in which activations reside
 
 - ### Content
-  - ### Primary Definition
-  An **Activation Function** is a function applied to the weighted combination of all inputs to a neuron. Activation functions allow neural networks to learn complicated features in the data. They are typically non-linear.
-  - ### Original Content
-		- ```
-  # Activation Function
+  - An **Activation Function** is a function applied to the weighted combination of all inputs to a neuron. Activation functions allow neural networks to learn complicated features in the data. They are typically non-linear.
 
-  #### Related Concepts
-  - **Neuron**: Contains activation function
-		  - **Neural Network**: Composed of neurons with activations
-		  - **Backpropagation** (AI-0043): Requires differentiable activations
-		  - **Nonlinearity**: Activation functions introduce nonlinearity
-
-		  ## Formal Ontology
-
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Clause 3.1.2 (Activation functions)
-
-		  ### NIST AI RMF
-		  - **Function**: MAP (Neural network components)
-
-		  ## Related Terms
-		  - **Neural Network**: Uses activation functions
-		  - **Feedforward Neural Network** (AI-0031): Contains activation functions
-		  - **Backpropagation** (AI-0043): Computes activation derivatives
-		  - **Neuron**: Applies activation function
-
-  #### References
-  1. ISO/IEC 22989:2022 - Clause 3.1.2
-		  2. NIST AI 100-3 - Technical terminology
-		  3. Goodfellow et al. - "Deep Learning" - MIT Press, 2016 (Chapter 6)
-
-		  ---
-
-		  **Authority Score**: 0.95 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-
-		  ```
-
-  - #### Trust Beyond Misinformation
-		- **Primary Trust Issue**: Expectations from institutions about their function and responsiveness, not just misinformation.
-		- **Media Trust**: Questions around media trust and social media's role are secondary to larger institutional trust issues.
-
-  - #### Trust Beyond Misinformation
-		- **Primary Trust Issue**: Expectations from institutions about their function and responsiveness, not just misinformation.
-		- **Media Trust**: Questions around media trust and social media's role are secondary to larger institutional trust issues.
-
-  - # Business Functions
-  - collapsed:: true
-		- [Perplexity](https://www.perplexity.ai/)
-		- Deep research.
-
-  - #### Trust Beyond Misinformation
-		- **Primary Trust Issue**: Expectations from institutions about their function and responsiveness, not just misinformation.
-		- **Media Trust**: Questions around media trust and social media's role are secondary to larger institutional trust issues.
   ## Academic Context
 
   - Activation functions are mathematical functions applied to the output of individual neurons in artificial neural networks.

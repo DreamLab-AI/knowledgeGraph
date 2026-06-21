@@ -83,5 +83,10 @@
       "label": "Artificial Intelligence"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    }
+  ]
 }

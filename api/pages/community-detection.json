@@ -120,6 +120,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-group-formation",
+      "label": "AI Group Formation"
+    },
+    {
       "slug": "data-aggregation",
       "label": "Data Aggregation"
     },

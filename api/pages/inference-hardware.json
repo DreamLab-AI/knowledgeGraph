@@ -147,6 +147,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
       "slug": "fpga",
       "label": "FPGA"
     },

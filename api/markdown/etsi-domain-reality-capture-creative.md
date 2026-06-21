@@ -10,14 +10,6 @@
   - **relatedTo**: Augmented Reality, Extended Reality, Digital Twin — reality capture feeds AR/XR experiences and digital twin creation pipelines
 - ### Content
   - The ETSI Reality Capture Creative domain enables performers and creators to digitally capture expressive movements, facial animations, and embodied interactions for metaverse avatars through motion capture and real-time performance processing.
-  - ### Original Content
-		- ```
-  # ETSI Domain: Reality Capture / Creative
-		  ## Properties
-		  ## Terms in this Domain
-		  - [[Digital Performance Capture]]
-		  ## Query All Terms
-		  ```
   ## Academic Context
   - Reality capture is a foundational technology within the metaverse ecosystem, enabling the digital reconstruction of physical environments through 3D scanning, photogrammetry, and sensor fusion.
   - Key developments include real-time mesh generation, semantic labelling of captured objects, and integration with augmented and mixed reality systems.

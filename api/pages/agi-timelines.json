@@ -5,20 +5,37 @@
   "public": true,
   "classIri": "urn:ngm:class:agi-timelines",
   "domain": "ai",
-  "definition": "AGI timelines are structured forecasts estimating when artificial general intelligence \u2014 AI matching or exceeding human cognitive ability across most economically valuable tasks \u2014 might be achieved. Such forecasts aggregate expert surveys, compute-scaling extrapolations, benchmark-progress curves, and Bayesian models of research milestones to produce probability distributions over future dates. Timelines are inherently uncertain and contested, and they materially influence research prioritisation, safety investment, and public policy. They are a distinct object of study within AI forecasting rather than a single predicted date.",
+  "definition": "AGI timelines are structured probabilistic forecasts estimating when artificial general intelligence \u2014 AI matching or exceeding human cognitive ability across most economically valuable tasks \u2014 might be achieved. Such forecasts aggregate expert surveys (AI Impacts ESPAI 2022/2023), compute-scaling extrapolations (biological anchors model, Cotra 2020/2022), benchmark-progress curves (Metaculus, Manifold Markets), and Bayesian models of research milestones to produce probability distributions over future dates. As of mid-2026, median estimates cluster in the 2030\u20132047 range depending on methodology. Timelines are inherently uncertain and contested, and they materially influence AI safety research prioritisation, alignment investment, compute governance thresholds, and public policy.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:time-series-forecasting",
-      "label": "Time Series Forecasting"
+      "label": "Time-Series Forecasting"
+    },
+    {
+      "id": "urn:ngm:class:capability-forecasting",
+      "label": "Capability Forecasting"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.88,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -27,9 +44,34 @@
       {
         "id": "urn:ngm:class:performance-benchmarks",
         "label": "Performance Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:expert-elicitation",
+        "label": "Expert Elicitation"
+      },
+      {
+        "id": "urn:ngm:class:prediction-markets",
+        "label": "Prediction Markets"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -40,10 +82,199 @@
       {
         "id": "urn:ngm:class:gartner-prediction",
         "label": "Gartner Prediction"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "id": "urn:ngm:class:existential-risk",
+        "label": "Existential Risk"
+      },
+      {
+        "id": "urn:ngm:class:alignment",
+        "label": "Alignment"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "capability-forecasting",
+      "label": "Capability Forecasting"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    },
+    {
+      "slug": "scaling-laws",
+      "label": "Scaling Laws"
+    },
+    {
+      "slug": "performance-benchmarks",
+      "label": "Performance Benchmarks"
+    },
+    {
+      "slug": "gartner-prediction",
+      "label": "Gartner Prediction"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time-Series Forecasting"
+    },
+    {
+      "slug": "compute-governance",
+      "label": "Compute Governance"
+    },
+    {
+      "slug": "compute-resources",
+      "label": "Compute Resources"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation Benchmarks and Leaderboards"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-safety-institute",
+      "label": "AI Safety Institute"
+    },
+    {
+      "slug": "aisi-frontier-ai-safety-framework",
+      "label": "AISI Frontier AI Safety Framework"
+    },
+    {
+      "slug": "autonomous-agents",
+      "label": "Autonomous Agents"
+    },
+    {
+      "slug": "autonomous-reasoning",
+      "label": "Autonomous Reasoning"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "expert-elicitation",
+      "label": "Expert Elicitation"
+    },
+    {
+      "slug": "prediction-markets",
+      "label": "Prediction Markets"
+    },
+    {
+      "slug": "superforecasting",
+      "label": "Superforecasting"
+    },
+    {
+      "slug": "transformative-ai",
+      "label": "Transformative AI"
+    },
+    {
+      "slug": "frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "slug": "compute-cluster",
+      "label": "Compute Cluster"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "AI Policy"
+    },
+    {
+      "slug": "existential-risk",
+      "label": "Existential Risk"
+    },
+    {
+      "slug": "emergent-behaviour",
+      "label": "Emergent Behaviour"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "robustness",
+      "label": "Robustness"
+    },
+    {
+      "slug": "alignment-research",
+      "label": "Alignment Research"
+    },
+    {
+      "slug": "alignment-techniques",
+      "label": "Alignment Techniques"
+    },
+    {
+      "slug": "economic-impact-of-ai",
+      "label": "Economic Impact of AI"
+    },
+    {
+      "slug": "labour-market-disruption",
+      "label": "Labour Market Disruption"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    }
+  ],
   "backlinks": [
     {
       "slug": "singularity",

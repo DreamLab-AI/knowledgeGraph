@@ -37,6 +37,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     }

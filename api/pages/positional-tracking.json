@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:ngm-positional-tracking",
+  "title": "Positional Tracking",
+  "slug": "positional-tracking",
+  "public": true,
+  "classIri": "urn:ngm:class:positional-tracking",
+  "domain": "spatial-computing",
+  "definition": "Positional Tracking is the real-time determination of the position and orientation of a device, body part, or object in three-dimensional space, typically using sensors such as IMUs, cameras, or external emitters. It is a foundational capability for spatial computing systems including virtual reality, augmented reality, and robotics, enabling accurate alignment of digital content with the physical world. Techniques range from inside-out camera-based tracking to outside-in lighthouse systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Spatial Computing Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

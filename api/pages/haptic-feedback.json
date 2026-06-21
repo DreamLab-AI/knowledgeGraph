@@ -228,6 +228,10 @@
       "label": "3D User Interface"
     },
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "collision-detection",
       "label": "Collision Detection"
     },

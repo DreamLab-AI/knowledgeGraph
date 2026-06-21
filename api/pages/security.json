@@ -210,6 +210,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
       "slug": "api-gateway",
       "label": "API Gateway"
     },

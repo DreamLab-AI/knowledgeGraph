@@ -361,10 +361,6 @@ public:: true
   }
   ```
 
-  ## Definition
-
-  Programmable GPU stage that determines the final color and depth of each pixel fragment by processing interpolated vertex data, sampling textures, executing lighting models, and applying material properties through complex mathematical operations.
-
   #### Related Concepts
   - [[Vertex Shader]]
   - [[Compute Shader]]
@@ -420,9 +416,6 @@ public:: true
   - Hoffman, N. & Barczak, J. (2016). "Rendering Techniques in Battlefield 1"
   - Karis, B. (2013). "Real Shading in Unreal Engine 4"
   - Rost, R. et al. (2009). *OpenGL Shading Language*, 3rd ed.
-
-  ### Relationships
-  - is-subclass-of:: [[Metaverse]]
 
 - ### Provenance
   - sources::

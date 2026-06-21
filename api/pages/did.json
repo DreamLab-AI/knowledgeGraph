@@ -166,6 +166,10 @@
   ],
   "backlinks": [
     {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
       "slug": "bitcoin-related-links",
       "label": "Bitcoin related links"
     },

@@ -139,8 +139,28 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
       "slug": "auto-ml",
       "label": "AutoML"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
     },
     {
       "slug": "hardware-and-edge",

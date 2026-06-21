@@ -834,6 +834,10 @@
   ],
   "backlinks": [
     {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
       "slug": "asset-registry",
       "label": "Asset Registry"
     },

@@ -156,8 +156,20 @@
   ],
   "backlinks": [
     {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
       "slug": "active-learning",
       "label": "Active Learning"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
     },
     {
       "slug": "attention",

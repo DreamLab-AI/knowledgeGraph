@@ -709,8 +709,16 @@
       "label": "1inch"
     },
     {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
     },
     {
       "slug": "ai-applications",
@@ -787,6 +795,10 @@
     {
       "slug": "accountable-party",
       "label": "Accountable Party"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
     },
     {
       "slug": "algorithmic-accountability",

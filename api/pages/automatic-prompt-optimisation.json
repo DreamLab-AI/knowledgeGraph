@@ -5,22 +5,131 @@
   "public": true,
   "classIri": "urn:ngm:class:automatic-prompt-optimisation",
   "domain": "ai",
-  "definition": "Automatic prompt optimisation is a set of techniques that algorithmically search for or refine the prompts given to a large language model to maximise task performance, rather than relying on manual prompt crafting. Methods include gradient-free search, reinforcement learning, evolutionary algorithms, and LLM-driven self-improvement loops that score candidate prompts against an evaluation metric. It reduces the brittleness and labour of hand-tuned prompting and is a core component of mature prompt-engineering workflows.",
+  "definition": "Automatic Prompt Optimisation (APO) is the family of algorithmic techniques that search for, refine, or generate the most effective natural-language or soft-token instructions for a large language model, replacing manual prompt crafting with automated search processes guided by an objective function. Methods span gradient-free discrete search (APE, OPRO, ProTeGi), evolutionary self-improvement loops (PromptBreeder, GEPA), LLM-as-optimiser meta-prompting, textual back-propagation (TextGrad), and compiler-based programmatic optimisation (DSPy), each scoring candidate prompts against a held-out evaluation metric and iteratively retaining the highest-performing variants. APO addresses the brittleness and labour cost of hand-tuned prompting and has become a core component of production LLM pipelines, enabling measurable, reproducible performance gains without requiring access to model weights.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
+    },
+    {
+      "id": "urn:ngm:class:prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "id": "urn:ngm:class:model-optimisation",
+      "label": "Model Optimisation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.87,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ape",
+        "label": "Automatic Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:dspy",
+        "label": "DSPy"
+      },
+      {
+        "id": "urn:ngm:class:opro",
+        "label": "OPRO"
+      },
+      {
+        "id": "urn:ngm:class:protegi",
+        "label": "ProTeGi"
+      },
+      {
+        "id": "urn:ngm:class:textgrad",
+        "label": "TextGrad"
+      },
+      {
+        "id": "urn:ngm:class:prompt-breeder",
+        "label": "PromptBreeder"
+      },
+      {
+        "id": "urn:ngm:class:soft-prompt-tuning",
+        "label": "Soft Prompt Tuning"
+      },
+      {
+        "id": "urn:ngm:class:prefix-tuning",
+        "label": "Prefix Tuning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:ngm:class:instruction-following",
+        "label": "Instruction Following"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:structured-output",
+        "label": "Structured Output"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:evolutionary-algorithms",
+        "label": "Evolutionary Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
@@ -29,12 +138,205 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:prompt-engineering",
-        "label": "Prompt Engineering"
+        "id": "urn:ngm:class:training-and-fine-tuning",
+        "label": "Training and Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:hallucination",
+        "label": "Hallucination"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "nlp-domain",
+      "label": "NLPDomain"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "in-context-learning",
+      "label": "In-Context Learning"
+    },
+    {
+      "slug": "few-shot-prompting",
+      "label": "Few-Shot Prompting"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation Benchmarks and Leaderboards"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and Fine Tuning"
+    },
+    {
+      "slug": "instruction-following",
+      "label": "Instruction Following"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "zhou-et-al-2022-ape",
+      "label": "Zhou et al. 2022 APE"
+    },
+    {
+      "slug": "khattab-et-al-2024-dspy",
+      "label": "Khattab et al. 2024 DSPy"
+    },
+    {
+      "slug": "yang-et-al-2024-opro",
+      "label": "Yang et al. 2024 OPRO"
+    },
+    {
+      "slug": "fernando-et-al-2023-prompt-breeder",
+      "label": "Fernando et al. 2023 PromptBreeder"
+    },
+    {
+      "slug": "pryzant-et-al-2023-protegi",
+      "label": "Pryzant et al. 2023 ProTeGi"
+    },
+    {
+      "slug": "yuksekgonul-et-al-2024-textgrad",
+      "label": "Yuksekgonul et al. 2024 TextGrad"
+    },
+    {
+      "slug": "soft-prompt-tuning",
+      "label": "Soft Prompt Tuning"
+    },
+    {
+      "slug": "prefix-tuning",
+      "label": "Prefix Tuning"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "evolutionary-algorithms",
+      "label": "Evolutionary Algorithms"
+    },
+    {
+      "slug": "meta-learning",
+      "label": "Meta-Learning"
+    },
+    {
+      "slug": "zero-shot-prompting",
+      "label": "Zero-Shot Prompting"
+    },
+    {
+      "slug": "self-consistency",
+      "label": "Self-Consistency"
+    },
+    {
+      "slug": "tree-of-thoughts",
+      "label": "Tree of Thoughts"
+    },
+    {
+      "slug": "re-act",
+      "label": "ReAct"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "structured-output",
+      "label": "Structured Output"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    }
+  ],
   "backlinks": [
     {
       "slug": "prompt-engineering",

@@ -158,6 +158,10 @@
       "label": "AI User"
     },
     {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
       "slug": "cryptographic-protocol",
       "label": "Cryptographic Protocol"
     },

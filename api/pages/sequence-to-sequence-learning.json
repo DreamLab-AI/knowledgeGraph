@@ -98,6 +98,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
       "slug": "real-time-translation",
       "label": "Real-time Translation"
     },

@@ -198,9 +198,6 @@
   - Hoppe, H. (1996). "Progressive Meshes"
   - Cebenoyan, C. (2004). "Effective LOD Management"
 
-  ### Relationships
-  - is-subclass-of:: [[Metaverse]]
-
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

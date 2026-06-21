@@ -86,5 +86,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    }
+  ]
 }

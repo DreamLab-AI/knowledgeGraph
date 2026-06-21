@@ -6,27 +6,28 @@
   - owl-role:: Concept
 
 - ### Relationships
-  - **enables**: Code Generation, Documentation Generation
-  - **uses**: Prompt Engineering
-  - **relatedTo**: Knowledge Management, Knowledge Management System
+  - enables:: [[Code Generation]], [[Documentation Generation]]
+  - uses:: [[Prompt Engineering]]
+  - relatedTo:: [[Knowledge Management]], [[Knowledge Management System]]
 
 - ### Content
-  ```
-		- {{evalparent}}
-	  ```
-		- {{evalparent}}
-
-  #### Basic Python code block
-	  ```python
-	  def sayhello():
-	    return "Hello World"
-	  sayhello()
-  - #### Basic Javascript  block
-	  ```javascript
-	  function sayHello() {
-	      return "Hello World"
-	  }
-	  return sayHello()
+  - #### Evalparent template
+    ```
+    - {{evalparent}}
+    ```
+  - #### Basic Python code block
+    ```python
+    def sayhello():
+      return "Hello World"
+    sayhello()
+    ```
+  - #### Basic Javascript block
+    ```javascript
+    function sayHello() {
+        return "Hello World"
+    }
+    return sayHello()
+    ```
 
 - ### Provenance
   - sources::

@@ -186,6 +186,10 @@
       "label": "AI Lifecycle"
     },
     {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
       "slug": "ai-monitoring",
       "label": "AI Monitoring"
     },
@@ -200,6 +204,14 @@
     {
       "slug": "ai-risk-management",
       "label": "AI Risk Management"
+    },
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "ai safety research"
     },
     {
       "slug": "ai-search",
@@ -220,6 +232,10 @@
     {
       "slug": "ai-user",
       "label": "AI User"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
     },
     {
       "slug": "algorithmic-transparency-index",

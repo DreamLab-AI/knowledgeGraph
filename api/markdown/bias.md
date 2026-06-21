@@ -81,72 +81,6 @@
 			- [I. From GPT-4 to AGI: Counting the OOMs - SITUATIONAL AWARENESS (situational-awareness.ai)](https://situational-awareness.ai/from-gpt-4-to-agi/)
 			- ![photo_2024-06-05_08-47-39.jpg](assets/photo_2024-06-05_08-47-39_1717573793476_0.jpg){:width 600}
 
-		- ## Predictive Surveillance
-			- AI systems at the Olympics will also employ predictive surveillance techniques:
-				- **Event Prediction:** Based on collected data, AI can predict potential security threats or incidents. However, these predictions can be problematic due to inherent biases and inaccuracies in the data.
-				- **Bias and Discrimination:** Predictive analytics can lead to discriminatory practices, particularly against individuals based on race, gender, or socio-economic status. The accuracy of these systems is often lower for individuals with darker skin tones, raising concerns about fairness and justice.
-
-		- ## Reliability and Bias
-
-  - # Algorithmic Bias and Variance
-  - In machine learning, bias and variance represent a trade-off in a model's ability to generalize.
-
-  - ### Bias and Fairness
-		- AI systems are trained on data, and if that data reflects existing societal biases, the AI can perpetuate and even amplify those biases.
-
-  - # Bias in Large Language Models (LLMs)
-  - Bias in Large Language Models (LLMs) takes on a critical dimension beyond the traditional machine learning concept of bias. These models aren't just fitting curves; they're processing the complexities and prejudices within massive amounts of human language data. Even a statistically "accurate" LLM can reflect the worst of human biases hidden within our own messy, real-world language.
-
-  - ### Economic Exclusion
-		- The nexus where payments, search, and AI converge marks a transformative period for the internet. The traditional model of free data access and ad-supported revenue is being challenged by AI capabilities necessitating paid data agreements and enhanced monetisation strategies. This evolution impacts everything from user behaviour and regulatory frameworks to financial viability and market competition, signalling a profound shift in the digital ecosystem.
-		- AI-driven search engines are changing the fundamental economics of the web. [Search GPT](https://www.brookings.edu/articles/algorithmic-bias-detection-and-mitigation-best-practices-and-policies-to-reduce-consumer-harms/), developed by OpenAI, demonstrates this shift, relying less on traditional web crawling and more on curated, formalised partnerships with publishers to avoid legal issues over scraping. The new AI economy is increasingly creating a "two-tier" web, where access to valuable data and knowledge is controlled by those with the capital to enter into such partnerships, as noted by the [Brookings Institution](https://www.brookings.edu/articles/algorithmic-bias-detection-and-mitigation-best-practices-and-policies-to-reduce-consumer-harms/).
-			- **Global Accessibility**
-				- Meanwhile, [the International Telecommunication Union](https://www.itu.int/hub/publication/d-ind-idi-2021-01/) has pointed out that these AI tools are inaccessible to regions with weaker infrastructure, worsening digital divides. The burden of high costs and heavy energy use has disproportionately negative effects on developing nations, making AI-powered search a privilege of the wealthy and connected.
-				- [The impact of artificial intelligence on human society and bioethics - PMC (nih.gov)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7605294/)
-			- **Cost and Accessibility Barriers**:
-				- The high energy costs associated with GENAI data centers are passed on to users, making these services less accessible to those in lower-income regions or with limited internet infrastructure.
-				- The economic burden of GENAI adoption can further exacerbate existing digital divides, excluding those who cannot afford the necessary infrastructure or energy costs.
-			- **Alternative Approaches**:
-				- Researchers suggest that more specialized, less carbon-intensive models could be used for specific tasks, [reducing energy consumption](https://www.techtarget.com/sustainability/feature/Generative-AIs-sustainability-problems-explained) and making these tools more accessible to a broader audience.
-				- The only other option is a phase transition to a new internet paradigm, with higher signal to noise, through aligned incentives and cryptographically assured end points.
-
-  - ### Bias and Safety
-		- Meta has taken active steps to assess and mitigate potential biases and harmful outputs. This is usually "undone" by the community at some stage for performance gains, raising important questions.
-
-
-  - What used to be called bias whet I was doing postgrad Machine Learning (2020) is now called [[Safety and alignment]].
-  - Bias
-		- [[2309.17012] Benchmarking Cognitive Biases in Large Language Models as Evaluators (arxiv.org)](https://arxiv.org/abs/2309.17012)
-		- [[confusion matrices]](https://en.wikipedia.org/wiki/Confusion_matrix)
-		- [Responsible Capability Scaling \ Anthropic](https://www.anthropic.com/uk-government-internal-ai-safety-policy-response/responsible-capability-scaling)
-  - This is potentially [existentially important](https://intelligence.org/2022/06/10/agi-ruin/?)
-
-		- ### Ethical Considerations
-	 - **Bias and Discrimination:** Discusses how AI can inherit and amplify human biases, leading to discriminatory outcomes in areas like hiring, law enforcement, and lending. Explores the ethical implications and the need for fair and transparent algorithms. He's more cautious about opensource AI than I am.
-	 - **First-Order Effects:** Details the direct impacts of AI, such as job displacement and privacy concerns, emphasizing the immediate ethical and societal challenges they present.
-	 - **Second-Order Effects:** Societal and institutional changes. Explores how AI's integration into every facet of life might alter human relationships, governance, and cultural values. Discusses the potential for AI to reshape societal hierarchies, influence global power dynamics, and challenge our notions of autonomy and agency.
-
-  - #### The SOON Phase
-		- **Digital Literacy, Data Privacy, and Algorithmic Bias** (sorting the data)
-			- Understanding AI and digital technologies for information and service access.
-			- Ensuring privacy and mitigating biases in AI algorithms.
-			- 2-5 years of integration with business processes.
-			- Models start to distribute across cloud and devices to find their correct scale **fit**.
-
-  - ## Humans are horrible at forecasting.
-		- These are the same biases identified in [Confusion Of Confusions 1688 : Joseph de la Vega](https://archive.org/details/confusion-of-confusions-1688). We are just awful at it.
-			- Authority bias
-			- Recency bias
-			- Impatience and "do something syndrome"
-		- ```With so much changing so quickly, we need to take predictions with a grain of salt, but that doesn’t mean we can’t say anything useful about the coming year in AI. To ground ourselves, we can start with two quotes that should inform any estimates about the future. The first is Amara’s Law “We tend to overestimate the effect of a technology in the short run and underestimate the effect in the long run.” Social change is slower than technological change. We should not expect to see immediate global effects of AI in a major way, no matter how fast its adoption (and it is remarkably fast), yet we certainly will see it sooner than many people think.```
-			- - from [Signs and Portent by Ethan Mollick
-				- [One Useful Thing](https://www.oneusefulthing.org/p/signs-and-portents)
-		- [[Knowledge Artefact Update Cycle]] reminder to update this page!
-			- [Roy Amara Oxford Reference](https://www.oxfordreference.com/display/10.1093/acref/9780191826719.001.0001/q-oro-ed4-00018679)
-			- [AI Index Report 2024 – Artificial Intelligence Index (stanford.edu)](https://aiindex.stanford.edu/report/)
-			- [I. From GPT-4 to AGI: Counting the OOMs - SITUATIONAL AWARENESS (situational-awareness.ai)](https://situational-awareness.ai/from-gpt-4-to-agi/)
-			- ![photo_2024-06-05_08-47-39.jpg](assets/photo_2024-06-05_08-47-39_1717573793476_0.jpg){:width 600}
-
   - ### Bias and Fairness
 		- AI systems are trained on data, and if that data reflects existing societal biases, the AI can perpetuate and even amplify those biases.
 
@@ -195,33 +129,6 @@
 		- AI systems are trained on data, and if that data reflects existing societal biases, the AI can perpetuate and even amplify those biases.
 		- **The increasing integration of AI into our daily lives.**
   - [[Large Language Models]]
-
-  - ## Bias in images
-  - Bias is really hard, and the current tools are blunt.
-  - [twitter link to the render loading below](https://twitter.com/bindureddy/status/1760343060985340368)
-	  {{twitter https://twitter.com/bindureddy/status/1760343060985340368}}
-  - [twitter link to the render loading below](https://twitter.com/IMAO_/status/1760093853430710557)
-	  {{twitter https://twitter.com/IMAO_/status/1760093853430710557}}
-
-  - ## Addressing the problem
-  - **It's not about elimination:** Creating perfectly unbiased language models is unlikely. The focus is on:
-  - **Identifying bias:** Thorough testing across diverse demographics is crucial.
-  - **Mitigation:** De-biasing techniques, more representative training data, etc., can reduce harmful outputs.
-  - **Responsible use:** Recognizing the potential for bias means we, as users, must stay critical, especially in sensitive areas.
-
-  - ## Consequences of LLM bias
-  - **Perpetuation of stereotypes:** When biased language is generated, it amplifies harmful misconceptions that already exist in society, harming marginalized groups.
-  - **Algorithmic decision-making:** If LLMs are used in areas like hiring or risk assessment, bias can translate into real-world discrimination.
-
-  - ## See Also
-  - [[AI Risks]]
-  - [[Bias in Large Language Models]]
-  - [[Large Language Models]]
-  - [[Machine Learning Discipline]]
-  - [[Deep Learning]]
-
-  - ## Bias and Discrimination
-  - AI systems can perpetuate and even amplify existing societal biases present in their training data. This can lead to discriminatory outcomes in areas like hiring, loan applications, and criminal justice. This is a huge and potentially unsolvable problem at scale. You can actually revert to using bias and very quickly get to a terrifying outcome if you simply cast AI as a near ubiquitous data helper, that carries racism and sexism very deep inside. This already is an existential risk to people suffering wrongful prosecution.
 
   - ## Bias in images
   - Bias is really hard, and the current tools are blunt.
@@ -702,11 +609,6 @@
 
 		  *This definition provides a comprehensive framework for understanding the multifaceted nature of bias in AI systems and approaches to address it.*
 
-		  ```
-
-  - public-access:: true
-  - definition:: Systematic deviation from fairness, objectivity, or expected outcomes in an AI system that leads to prejudiced results favouring or disfavouring particular groups, individuals, or outcomes, arising from data, algorithms, or deployment contexts.
-
 
   ## Academic Context
 
@@ -726,7 +628,7 @@
   - Many organisations now have dedicated AI ethics teams and bias mitigation protocols
   - Notable organisations and platforms
     - Google, Microsoft, and IBM have developed open-source tools for bias detection and mitigation, such as AI Fairness 360 and Fairlearn
-    - UK-based companies like Faculty and BenevolentAI are integrating bias audits into their AI development pipelines
+    - UK-based companies like Faculty (acquired by Accenture in January 2026) and BenevolentAI have integrated bias audits into their AI development pipelines
   - UK and North England examples where relevant
     - In Manchester, the Alan Turing Institute has partnered with local authorities to audit AI systems used in public services
     - Leeds City Council has piloted AI-driven recruitment tools with built-in bias detection, aiming to improve diversity in hiring
@@ -736,7 +638,7 @@
   - Modern AI systems can detect and mitigate some forms of bias, but challenges remain in identifying subtle or intersectional biases
   - Techniques such as adversarial debiasing and fairness-aware machine learning are increasingly used, but their effectiveness varies by context
   - Standards and frameworks
-  - The UK’s Centre for Data Ethics and Innovation (CDEI) has published guidelines for AI bias mitigation
+  - The UK’s Centre for Data Ethics and Innovation (CDEI) has published guidelines for AI bias mitigation (note: the CDEI’s advisory board was dissolved in September 2023; the body continues as an expert unit within DSIT)
   - The European Union’s AI Act includes provisions for bias assessment and transparency
   - Industry standards such as ISO/IEC 23894 provide frameworks for AI risk management, including bias
 
@@ -755,7 +657,7 @@
   ## UK Context
 
   - British contributions and implementations
-  - The UK has been a leader in AI ethics, with the CDEI and the Alan Turing Institute playing key roles in shaping national policy
+  - The UK has been a leader in AI ethics, with the Alan Turing Institute and DSIT's AI Safety Institute playing key roles in shaping national policy; the CDEI advisory board was dissolved in 2023 but its functions continue within government
   - British researchers have contributed to the development of bias detection tools and fairness metrics
   - North England innovation hubs (if relevant)
   - Manchester’s AI for Social Good initiative has focused on reducing bias in public sector AI applications
@@ -795,56 +697,6 @@
   - **Review Status**: Comprehensive editorial review
   - **Verification**: Academic sources verified
   - **Regional Context**: UK/North England where applicable
-
-  ## Formal Specification
-
-  ```yaml
-  term: Bias
-  definition: "Systematic deviation from fairness or expected outcomes in AI systems"
-  domain: AI Ethics and Quality
-  type: System Property (undesirable)
-  categories:
-  - data_bias
-  - algorithmic_bias
-  - interaction_bias
-  - systemic_bias
-  sources:
-  - historical_data
-  - measurement_error
-  - sampling_issues
-  - proxy_variables
-  - feedback_loops
-  impact: [unfairness, discrimination, reduced_accuracy, harm]
-  ```
-
-  ## Formal Ontology
-
-  #### References
-  ### Primary Sources
-
-		  1. **ISO/IEC TR 24027:2021** - Information technology — Artificial intelligence (AI) — Bias in AI systems and AI aided decision making
-		     - Comprehensive framework for understanding and addressing bias
-		     - Section 4: "Sources of bias"
-		     - Source: ISO/IEC JTC 1/SC 42
-
-		  2. **NIST AI Risk Management Framework (AI RMF 1.0)**, January 2023
-		     - Section 2.3: "AI risks and bias"
-		     - "Bias in AI systems can emerge from...data, algorithms, or implementation"
-		     - Source: National Institute of Standards and Technology
-
-		  3. **EU AI Act** (Regulation 2024/1689), June 2024
-		     - Article 10(2): Requirements to minimize bias
-		     - Recital 44: Bias mitigation obligations
-		     - Source: European Parliament and Council
-
-		  ### Supporting Standards
-
-		  4. **ISO/IEC 23894:2023** - Guidance on risk management
-		     - Section 7.5.2: "Bias as AI risk"
-
-		  5. **Mehrabi, N., et al. (2021)** - "A Survey on Bias and Fairness in Machine Learning"
-		     - *ACM Computing Surveys*, 54(6), 1-35
-		     - Comprehensive taxonomy of bias types
 
 - ### Provenance
   - sources:: [[EU AI Act Regulatory Instrument]], [[GDPR (General Data Protection Regulation)]], [[IEEE (Institute of Electrical and Electronics Engineers)]], [[ISO (International Organization for Standardization)]], [[NIST (National Institute of Standards and Technology)]]

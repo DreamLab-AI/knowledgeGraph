@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     }

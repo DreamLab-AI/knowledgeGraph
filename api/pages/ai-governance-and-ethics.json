@@ -106,8 +106,20 @@
       "label": "AI Model Card"
     },
     {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
       "slug": "ai-risk-register",
       "label": "AI Risk Register"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "ai safety research"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
     },
     {
       "slug": "ai-trustworthiness-dimensions",
@@ -126,8 +138,16 @@
       "label": "Accessibility Standard"
     },
     {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
       "slug": "accountable-party",
       "label": "Accountable Party"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
     },
     {
       "slug": "algorithmic-accountability",

@@ -648,12 +648,24 @@
       "label": "AI Governance Law and Privacy"
     },
     {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
       "slug": "ai-user",
       "label": "AI User"
     },
     {
       "slug": "adversarial-testing",
       "label": "Adversarial Testing"
+    },
+    {
+      "slug": "answer-ai",
+      "label": "Answer AI"
     },
     {
       "slug": "artificial-intelligence",

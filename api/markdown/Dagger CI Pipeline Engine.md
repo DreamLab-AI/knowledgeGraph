@@ -122,16 +122,10 @@ elevatedFrom:: [[Dagger]]
   *   **Dagger:** Your pipeline is written in Go, Python, TypeScript, etc. It runs identically on Linux, macOS, and Windows. The only dependency is the Dagger CLI and a container runtime. The logic is self-contained and not dependent on shell nuances.
   *   **Your Dockerfile:** You're using `DOCKER_BUILDKIT=1` and `--mount=type=cache`, which is great! This gives you layer caching and apt/pip cache mounts. However, if you change a line in the middle of a `RUN` command, that entire layer and all subsequent layers are invalidated.
   *   **Dagger:** Dagger caches the result of **every single function call**.
-  Let's look at this part of your `Dockerfile`:
-  ```
-  If you decide to add `scikit-learn` to STEP 3, the entire `RUN` command for STEP 3 is re-executed.
-  In Dagger, this would be a chain of `.WithExec()` calls.
-  ```
+  Let's look at this part of your `Dockerfile`. If you decide to add `scikit-learn` to STEP 3, the entire `RUN` command for STEP 3 is re-executed. In Dagger, this would be a chain of `.WithExec()` calls.
   If you add `.WithExec([]string{..., "scikit-learn"})` to the chain, Dagger knows the results of the previous `WithExec` calls are cached and reuses them instantly. It only executes the new command. This fine-grained caching saves enormous amounts of time during development.
   *   **Your Dockerfile:** It's a single, monolithic file. What if you wanted to create a slightly different environment that has the Rust part but not the Python ML stack? You'd have to copy-paste sections of the Dockerfile.
-  *   **Dagger:** You can break down your `Dockerfile` into discrete functions.
-  ```
-  You compose your environment using functions, just like any other software. This makes it incredibly easy to reuse logic and avoid duplication. You can even publish these functions as reusable modules on Daggerverse.
+  *   **Dagger:** You can break down your `Dockerfile` into discrete functions. You compose your environment using functions, just like any other software. This makes it incredibly easy to reuse logic and avoid duplication. You can even publish these functions as reusable modules on Daggerverse.
   *   **Your Script:** To run this in CI (like GitHub Actions), you'd need a runner that has Docker, checkout your code, and then run `./powerdev.sh build`. The `start` command wouldn't make sense, you'd do something else. You have to maintain two sets of logic: local (`powerdev.sh`) and CI (`.github/workflows/main.yml`).
   *   **Dagger:** You run the exact same command: `dagger call power-dev test`. Dagger abstracts away the execution environment. It works the same on your laptop as it does in a GitHub Actions runner. This eliminates an entire class of "it works on my machine" issues.
   *   **Your Script:** How do you know what commands are available? You have to `cat powerdev.sh` or run the `help` command.
@@ -139,9 +133,7 @@ elevatedFrom:: [[Dagger]]
   ---
   This is the biggest one.
   *   **Your Script:** The mental model is clear: you are managing a **persistent, named container** (`swarm_container`) on your host. You start it, exec into it, and stop it.
-  *   **Dagger:** The primary artifact is a **pipeline definition that produces an output**. The container definition is immutable. You don't "start" a Dagger container in the same way. Instead, you call a function and get a result. For an interactive shell, you'd run:
-    ```
-    This executes the pipeline and drops you into a shell in the *resulting* container. When you exit, it's gone. State is managed via Dagger's cache or by explicitly mounting host directories, not by a persistent named container. This can take some getting used to.
+  *   **Dagger:** The primary artifact is a **pipeline definition that produces an output**. The container definition is immutable. You don't "start" a Dagger container in the same way. Instead, you call a function and get a result. For an interactive shell, you'd run `dagger call power-dev terminal`. This executes the pipeline and drops you into a shell in the *resulting* container. When you exit, it's gone. State is managed via Dagger's cache or by explicitly mounting host directories, not by a persistent named container. This can take some getting used to.
   A simple `RUN` command in a Dockerfile can feel more concise than its Dagger equivalent.
   *   **Dockerfile:** `RUN command -v max >/dev/null`
   *   **Dagger (Go):** `container.WithExec([]string{"sh", "-c", "command -v max >/dev/null"})`
@@ -175,6 +167,7 @@ elevatedFrom:: [[Dagger]]
   - ### Advantages of Dagger
   - #### 1. Portability & Language
   - #### 2. Unmatched Caching
+  - **Dockerfile example:**
   ```dockerfile
   # STEP 2: Install the core, heavy ML frameworks.
   RUN /opt/venv312/bin/pip install --no-cache-dir \
@@ -185,11 +178,14 @@ elevatedFrom:: [[Dagger]]
   # STEP 3: Install other common data science libraries.
   RUN /opt/venv312/bin/pip install --no-cache-dir \
     h2o xgboost
+  ```
+  - **Dagger equivalent (Go):**
   ```go
   // Simplified Dagger Go example
   mlStack := base.
     WithExec([]string{"/opt/venv312/bin/pip", "install", "tensorflow", "torch", ...}).
     WithExec([]string{"/opt/venv312/bin/pip", "install", "h2o", "xgboost"})
+  ```
   - #### 3. Modularity & Reusability
   ```go
   // In your Dagger module
@@ -218,12 +214,11 @@ elevatedFrom:: [[Dagger]]
   func (m *MyModule) RustDev(ctx context.Context) *dagger.Container {
     return m.WithRust(ctx, m.WithBase(ctx))
   }
+  ```
   - #### 4. CI/Local Parity
   - #### 5. Discoverability & Type Safety
   - ### Disadvantages & Considerations
   - #### 1. Mindset Shift & Learning Curve
-    ```bash
-    dagger call power-dev terminal
   - #### 2. Verbosity for Simple Commands
   - #### 3. Host Device Integration (like GPUs)
   - ### How Your `powerdev` would look in Dagger (Conceptual)

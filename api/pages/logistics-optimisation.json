@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
       "slug": "customs-trade-facilitation",
       "label": "Customs Trade Facilitation"
     }

@@ -45,6 +45,10 @@
       "label": "Ai Machine Learning"
     },
     {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
       "slug": "ai-core-concepts",
       "label": "ai core concepts"
     }

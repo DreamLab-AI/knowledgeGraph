@@ -649,18 +649,16 @@ alias:: BC-0488-licensing-requirements
 - ### Definition
   - Licensing Requirements are the regulatory authorisation mandates imposed on virtual asset service providers by national or supranational regulators, ranging from state-level money transmitter licences in the United States to jurisdiction-specific crypto licences under EU MiCA, UK FCA, Singapore MAS, and Dubai VARA regimes. Compliance demands operational standards, minimum capital, custody controls, KYC procedures, AML programmes, and ongoing regulatory reporting, with global coverage costing major platforms tens to hundreds of millions of pounds. Licensing fragmentation creates cost barriers—a global [[ExchangePlatform|exchange]] requires permits across 50+ jurisdictions—incentivising geographic focus and limiting competitive entry. Harmonisation efforts (EU MiCA, Singapore MAS frameworks) reduce complexity whilst regulatory clarity attracts institutional capital.
 
-- ### Relationships
-  - requires:: [[Anti-Money Laundering]], [[Regulatory Framework]]
-  - partOf:: [[Governance and Regulation]], [[Blockchain Domain]]
-  - dependsOn:: [[Blockchain]], [[Digital Asset]]
-  - relatedTo:: [[Decentralised Finance]], [[Smart Contract]]
-
 - ### Semantic Classification
   - owl-class:: blockchain:LicensingRequirements
   - owl-role:: Concept
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
+  - requires:: [[Anti-Money Laundering]], [[Regulatory Framework]]
+  - partOf:: [[Governance and Regulation]], [[Blockchain Domain]]
+  - dependsOn:: [[Blockchain]], [[Digital Asset]]
+  - relatedTo:: [[Decentralised Finance]], [[Smart Contract]]
   - imposed-by:: [[RegulatoryFramework]] (domain: blockchain→compliance, type: governance)
   - affects:: [[CryptocurrencyExchange]] (domain: blockchain, type: compliance)
 
@@ -713,8 +711,8 @@ alias:: BC-0488-licensing-requirements
 					- Inability to demonstrate adequate capitalization
 			- **Timeline**: 12-24 months for approval; FCA introduced "pools" system prioritising complete applications
 			- **Cost**: £500,000-£2 million total including legal, compliance infrastructure, and personnel
-			- **Notable Approvals**: [[Coinbase]], [[Gemini Multimodal Language Model]], [[eToro]], [[Revolut]], [[Blockchain.com]], [[Copper.co]]
-			- **Rejections/Withdrawals**: [[Binance]] (rejected 2021), [[Kraken]] (withdrew 2020, re-applied 2022), [[Luno]] (initially rejected, later approved)
+			- **Notable Approvals**: [[Coinbase]], [[Gemini Multimodal Language Model]], [[eToro]], [[Revolut]], [[Blockchain.com]], [[Copper.co]], [[Crypto.com]] (cryptoasset registration August 2022; EMI authorisation December 2023), [[Kraken]] (cryptoasset registered; EMI authorisation March 2025)
+			- **Rejections/Withdrawals**: [[Binance]] (rejected 2021), [[Luno]] (initially rejected, later approved)
 		- #### Singapore - MAS Licensing
 			- **Monetary Authority of Singapore ([[MAS]]) Payment Services Act**: Covers digital payment token services under 2020 Payment Services Act
 			- **Licence Types**:
@@ -735,9 +733,9 @@ alias:: BC-0488-licensing-requirements
 			- **Notable Approvals**: [[Coinbase]], [[Crypto.com]], [[Gemini Multimodal Language Model]], [[Independent Reserve]], [[Coinhako]]
 			- **Rejections**: MAS rejected several unnamed applicants for inadequate AML controls and governance
 		- #### European Union - MiCA CASP Authorisation
-			- **Markets in Crypto-Assets Regulation ([[BC-0484-markets-in-crypto-assets]])**: Creates harmonized EU-wide licensing effective December 2024
+			- **Markets in Crypto-Assets Regulation ([[BC-0484-markets-in-crypto-assets]])**: Creates harmonised EU-wide licensing; CASP provisions fully applicable from 30 December 2024, with transitional periods for existing firms running to 1 July 2026 in most member states (some member states, e.g., Netherlands, applied shorter transitions ending July 2025); after 1 July 2026, operating without CASP authorisation for EU clients constitutes a breach of EU law
 			- **Crypto-Asset Service Provider (CASP) Authorisation**:
-				- **Application**: Submit to home member state regulator; authorisation valid across all 27 EU member states (passporting rights)
+				- **Application**: Submit to home member state regulator; authorisation valid across all 27 EU member states (passporting rights); as of mid-2026, over 40 full CASP authorisations granted, including Kraken (Luxembourg CSSF), Binance (first full CASP secured 2025), and Bitpanda (Austria FMA)
 				- **Capital Requirements**: Vary by service type:
 					- Exchange/trading platform: €150,000 minimum
 					- Custody services: €150,000 minimum
@@ -748,9 +746,9 @@ alias:: BC-0488-licensing-requirements
 					- Governance standards including independent risk and compliance functions
 					- Conflict of interest policies, client asset segregation, business continuity plans
 					- Technical standards for cybersecurity, data protection, operational resilience
-			- **Timeline**: 6-12 months expected approval timeframe once regulations fully operational
+			- **Timeline**: 6-12 months expected approval timeframe; full enforcement deadline for most member states 1 July 2026
 			- **Cost**: €1-5 million for comprehensive CASP authorisation including legal, compliance, capital, and ongoing operational costs
-			- **Transitional Provisions**: Firms with existing national licences (e.g., German BaFin licence) have 18-month transition period to apply for MiCA CASP authorisation
+			- **Transitional Provisions**: Firms with existing national licences (e.g., German BaFin licence) have an 18-month transition period to apply for CASP authorisation; member states adopting the full 18-month period (ending July 2026) include France, Malta, Luxembourg, and Estonia
 			- **Expected Impact**: Consolidation of 27 national regimes into single framework, reducing compliance costs for EU-wide operations by 30-50% versus current multi-jurisdiction licensing
 		- #### Other Significant Jurisdictions
 			- **Japan - Payment Services Act (PSA)**: Crypto exchanges must register with [[FSA]] (Financial Services Agency)
@@ -905,7 +903,7 @@ alias:: BC-0488-licensing-requirements
 		- #### Ongoing Compliance Burden
 			- **Regulatory Changes**: Licences require continuous adaptation to new rules
 				- [[BC-0485-travel-rule]] implementation (2020-2023) required $1-5M infrastructure upgrades for most platforms
-				- MiCA (2024-2025) forcing relicensing for 1,000+ EU crypto firms
+				- MiCA (fully applicable December 2024, transitional period ending July 2026) forcing relicensing for 1,000+ EU crypto firms
 				- Ongoing regulatory costs often exceed initial licensing costs over 5-year periods
 			- **Staff Retention**: Compliance expertise scarce and expensive
 				- Compliance officers with crypto experience command $150,000-$300,000 salaries (senior roles $250,000-$500,000)
@@ -926,7 +924,7 @@ alias:: BC-0488-licensing-requirements
 				- However, faced regulatory action in 2023 regarding [[Earn programme]] (unregistered securities), showing compliance complexity
 			- **Crypto.com**: Rapid global expansion through licensing
 				- Obtained licences in 15+ major jurisdictions (2020-2024)
-				- Singapore MAS (2022), Dubai VARA licence (2022), UK FCA registration (withdrawn 2021, re-applied 2024)
+				- Singapore MAS (2022), Dubai VARA licence (2022), UK FCA cryptoasset registration (August 2022), UK FCA Electronic Money Institution (EMI) authorisation (December 2023)
 				- Aggressive marketing and sponsorship spending ($100M+ annually) funded partly by international licensing enabling market access
 		- #### Challenge Cases
 			- **Binance**: Faced regulatory scrutiny due to initial resistance to licensing
@@ -942,7 +940,7 @@ alias:: BC-0488-licensing-requirements
 				- Subsequent investigations revealed Bahamian regulators lacked resources and expertise to supervise complex operations
 			- **Kraken**: Selective licensing strategy created tensions with regulators
 				- Chose not to pursue BitLicense, blocking New York customers (ongoing)
-				- Withdrew UK FCA application (2020), re-applied (2022), approved (2024) after multi-year process
+				- Withdrew UK FCA application (2020), re-applied (2022), received FCA Electronic Money Institution (EMI) authorisation (March 2025) after multi-year process; also listed on FCA cryptoasset register
 				- Settled with SEC over staking services (2023, $30M), highlighting compliance gaps despite state licences
 				- Demonstrates even partially licensed platforms face enforcement risk
   - ### Best Practices for Licensing Success
@@ -1041,10 +1039,6 @@ alias:: BC-0488-licensing-requirements
 		- [[FCA]] - UK Financial Conduct Authority
 		- [[MAS]] - Monetary Authority of Singapore
 		- [[Money Transmitter Licence]] - US state licensing requirements
-  - ### Original Content
-		- ```
-
-		  ```
 
 - ### Provenance
   - sources::

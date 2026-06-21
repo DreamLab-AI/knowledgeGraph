@@ -99,6 +99,10 @@
   ],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
       "slug": "human-capture-and-recognition",
       "label": "Human Capture & Recognition"
     },

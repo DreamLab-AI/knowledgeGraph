@@ -138,6 +138,10 @@
     {
       "slug": "ai-companies",
       "label": "AI Companies"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
     }
   ]
 }

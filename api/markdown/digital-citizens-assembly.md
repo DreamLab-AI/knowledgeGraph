@@ -1,8 +1,6 @@
 - ### Definition
   - Structured deliberation process using XR spaces for policy co-creation through multi-agent democratic decision-making.
 
-bridges-to:: [[Sensor Input]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalCitizensAssembly
   - owl-role:: Agent
@@ -16,6 +14,7 @@ bridges-to:: [[Sensor Input]]
   - requires:: [[Identity Verification]], [[Secure Communication]], [[Consensus Protocol]], [[Decision Recording System]]
   - enables:: [[Participatory Policy Making]], [[Collective Decision-Making]], [[Democratic Deliberation]], [[Transparent Governance]]
   - depends-on:: [[Virtual World Platform]], [[Multi-Agent Coordination]], [[Distributed Voting]]
+  - bridges-to:: [[Sensor Input]]
 
 - ### Content
   Digital Citizens' Assembly — content pending enrichment.

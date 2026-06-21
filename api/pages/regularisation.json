@@ -127,8 +127,28 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
+      "slug": "adam-optimizer",
+      "label": "Adam Optimizer"
+    },
+    {
       "slug": "algorithmic-bias-and-variance",
       "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
     }
   ]
 }

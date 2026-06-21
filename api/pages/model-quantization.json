@@ -93,5 +93,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    }
+  ]
 }

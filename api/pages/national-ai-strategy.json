@@ -100,6 +100,14 @@
       "label": "AI Companies"
     },
     {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
       "slug": "asia-pacific-regulation",
       "label": "Asia Pacific Regulation"
     }

@@ -104,6 +104,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
     },

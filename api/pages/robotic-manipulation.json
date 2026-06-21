@@ -96,6 +96,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
       "slug": "dc-servo-motor",
       "label": "DC Servo Motor"
     },

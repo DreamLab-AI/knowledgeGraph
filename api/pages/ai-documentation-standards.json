@@ -10,15 +10,66 @@
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
       "label": "AI Governance and Ethics"
+    },
+    {
+      "id": "urn:ngm:class:documentation-standards",
+      "label": "Documentation Standards"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      },
+      {
+        "id": "urn:ngm:class:datasheets-for-datasets",
+        "label": "Datasheets for Datasets"
+      },
+      {
+        "id": "urn:ngm:class:system-cards",
+        "label": "System Cards"
+      },
+      {
+        "id": "urn:ngm:class:factsheets",
+        "label": "FactSheets"
+      },
+      {
+        "id": "urn:ngm:class:data-cards",
+        "label": "Data Cards"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
+      },
+      {
+        "id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-auditing",
+        "label": "AI Auditing"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
+      }
+    ],
     "dependsOn": [],
     "implements": [
       {
@@ -29,10 +80,32 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:documentation-standards",
+        "label": "Documentation Standards"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance-framework",
+        "label": "AI Governance Framework"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -62,7 +135,164 @@
     {
       "slug": "smart-contract",
       "label": "Smart Contract"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ieee-7001",
+      "label": "IEEE 7001"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO/IEC 42001"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "system-cards",
+      "label": "System Cards"
+    },
+    {
+      "slug": "factsheets-ibm",
+      "label": "FactSheets (IBM)"
+    },
+    {
+      "slug": "data-cards",
+      "label": "Data Cards"
+    },
+    {
+      "slug": "algorithmic-transparency",
+      "label": "Algorithmic Transparency"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "ai-risk-management",
+      "label": "AI Risk Management"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "ai-auditing",
+      "label": "AI Auditing"
+    },
+    {
+      "slug": "bias-analysis",
+      "label": "Bias Analysis"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "ai-lifecycle",
+      "label": "AI Lifecycle"
+    },
+    {
+      "slug": "documentation-as-code",
+      "label": "Documentation As Code"
+    },
+    {
+      "slug": "ai-transparency-framework",
+      "label": "Ai Transparency Framework"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "ai-governance-maturity-model",
+      "label": "AI Governance Maturity Model"
+    },
+    {
+      "slug": "documentation-generation",
+      "label": "Documentation Generation"
+    },
+    {
+      "slug": "documentation-standards",
+      "label": "Documentation Standards"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "algorithmic-transparency-reports",
+      "label": "Algorithmic Transparency Reports"
+    },
+    {
+      "slug": "ai-ethics-board",
+      "label": "AI Ethics Board"
+    },
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "ai-governance-law-and-privacy",
+      "label": "AI Governance Law and Privacy"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "AI Policy"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    }
+  ]
 }

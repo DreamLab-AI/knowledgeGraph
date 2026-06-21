@@ -54,6 +54,14 @@
       "label": "Application Layer"
     },
     {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
       "slug": "experience-layer",
       "label": "Experience Layer"
     },

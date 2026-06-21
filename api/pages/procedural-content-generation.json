@@ -161,6 +161,10 @@
       "label": "AI in Games"
     },
     {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
+    },
+    {
       "slug": "game-engine",
       "label": "Game Engine"
     },

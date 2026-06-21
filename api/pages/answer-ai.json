@@ -5,25 +5,93 @@
   "public": true,
   "classIri": "urn:ngm:class:answer-ai",
   "domain": "ai",
-  "definition": "Answer.AI is an applied AI research and development lab founded by Jeremy Howard and Eric Ries, focused on producing practical, openly shared tools and techniques that make modern machine learning accessible and useful. It continues the fast.ai tradition of pragmatic, education-oriented research, releasing open-source libraries and methods aimed at real-world deployment rather than purely academic benchmarks. Its work emphasizes efficient fine-tuning, reproducibility, and lowering the barrier to building with foundation models.",
+  "definition": "Answer.AI is an applied artificial intelligence research and development laboratory co-founded in December 2023 by Jeremy Howard and Eric Ries, whose mission is to build practical, openly shared tools and techniques that make modern machine learning accessible and useful to the widest possible audience. Distinct from capability-frontier laboratories, Answer.AI explicitly does not develop new foundation models or pursue artificial general intelligence; instead it focuses on taking existing models and determining what maximally practical applications can be built with them, continuing the fast.ai tradition of pragmatic, accessibility-first research. The lab operates as a small, fully remote team of deep-technology generalists and releases open-source libraries, frameworks, and educational resources covering efficient fine-tuning, parameter-efficient adaptation, distributed training on consumer hardware, and developer ergonomics for building AI-powered applications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
+    },
+    {
+      "id": "urn:ngm:class:applied-machine-learning",
+      "label": "Applied Machine Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.82,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:fast-ai",
+        "label": "fast.ai"
+      },
+      {
+        "id": "urn:ngm:class:fasthtml",
+        "label": "FastHTML"
+      },
+      {
+        "id": "urn:ngm:class:fsdp-qlora",
+        "label": "FSDP QLoRA"
+      },
+      {
+        "id": "urn:ngm:class:solveit",
+        "label": "Solveit"
+      }
+    ],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:openai-research-organisation",
+        "label": "OpenAI Research Organisation"
+      },
+      {
+        "id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:python-programming-language",
+        "label": "Python Programming Language"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:lora-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -31,10 +99,147 @@
       {
         "id": "urn:ngm:class:fast-ai",
         "label": "fast.ai"
+      },
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    },
+    {
+      "slug": "jeremy-howard",
+      "label": "Jeremy Howard"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "slug": "lora-fine-tuning",
+      "label": "LoRA Fine-Tuning"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open-Source AI"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "slug": "python-programming-language",
+      "label": "Python Programming Language"
+    },
+    {
+      "slug": "machine-learning-framework",
+      "label": "Machine Learning Framework"
+    },
+    {
+      "slug": "instruction-tuning",
+      "label": "Instruction Tuning"
+    },
+    {
+      "slug": "quantisation",
+      "label": "Quantisation"
+    },
+    {
+      "slug": "ai-research",
+      "label": "AI Research"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "openai-research-organisation",
+      "label": "OpenAI Research Organisation"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "slug": "machine-learning-infrastructure",
+      "label": "Machine Learning Infrastructure"
+    },
+    {
+      "slug": "machine-learning-accelerator",
+      "label": "Machine Learning Accelerator"
+    },
+    {
+      "slug": "direct-preference-optimisation",
+      "label": "Direct Preference Optimisation"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    }
+  ],
   "backlinks": [
     {
       "slug": "fast-ai",

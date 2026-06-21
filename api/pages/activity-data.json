@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.87,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:event-record",
+        "label": "Event Record"
+      },
+      {
+        "id": "urn:ngm:class:clickstream",
+        "label": "Clickstream"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,9 +39,30 @@
       {
         "id": "urn:ngm:class:audit-log",
         "label": "Audit Log"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-analytics",
+        "label": "Behavioural Analytics"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      },
+      {
+        "id": "urn:ngm:class:data-lake",
+        "label": "Data Lake"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -40,12 +74,28 @@
       {
         "id": "urn:ngm:class:telemetry-and-analytics",
         "label": "Telemetry & Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:stream-processing",
+        "label": "Stream Processing"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
       }
     ],
     "standardizedBy": [],
@@ -58,11 +108,184 @@
       {
         "id": "urn:ngm:class:compliance",
         "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "data-collection",
+      "label": "Data Collection"
+    },
+    {
+      "slug": "tracking-system",
+      "label": "Tracking System"
+    },
+    {
+      "slug": "telemetry-and-analytics",
+      "label": "Telemetry & Analytics"
+    },
+    {
+      "slug": "analytics-engine",
+      "label": "Analytics Engine"
+    },
+    {
+      "slug": "audit-log",
+      "label": "Audit Log"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "stream-processing",
+      "label": "Stream Processing"
+    },
+    {
+      "slug": "data-lake",
+      "label": "Data Lake"
+    },
+    {
+      "slug": "machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
+    },
+    {
+      "slug": "recommendation-system",
+      "label": "Recommendation System"
+    },
+    {
+      "slug": "personalisation",
+      "label": "Personalisation"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "general-data-protection-regulation",
+      "label": "General Data Protection Regulation"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "event-driven-architecture",
+      "label": "Event-Driven Architecture"
+    },
+    {
+      "slug": "behavioural-analytics",
+      "label": "Behavioural Analytics"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "Synthetic Data"
+    },
+    {
+      "slug": "fraud-detection",
+      "label": "Fraud Detection"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "learning-management-system",
+      "label": "Learning Management System"
+    },
+    {
+      "slug": "xapi",
+      "label": "xAPI"
+    },
+    {
+      "slug": "observability",
+      "label": "Observability"
+    },
+    {
+      "slug": "opentelemetry",
+      "label": "OpenTelemetry"
+    },
+    {
+      "slug": "data-minimisation",
+      "label": "Data Minimisation"
+    },
+    {
+      "slug": "purpose-limitation",
+      "label": "Purpose Limitation"
+    },
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "time-series-analysis",
+      "label": "Time-Series Analysis"
+    },
+    {
+      "slug": "session-recording",
+      "label": "Session Recording"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "event-sourcing",
+      "label": "Event Sourcing"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
     {
       "slug": "carbon-calculator",
       "label": "Carbon Calculator"

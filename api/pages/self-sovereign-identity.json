@@ -718,6 +718,10 @@
       "label": "Access Control System"
     },
     {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
       "slug": "cashu",
       "label": "Cashu"
     },

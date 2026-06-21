@@ -16,111 +16,14 @@
   - Related To [[AI Safety]]
 
 - ### Content
-  - ### Primary Definition
-  **Model Weights** are the learnable parameters in a neural network that represent connection strengths between neurons. Weights are multiplied with inputs and adjusted during training to minimise loss.
-  - ### Original Content
-		- ```
-  # Model Weights
-
-  #### Related Concepts
-  - **Model Parameters** (AI-0051): Broader category including biases
-		  - **Training** (AI-0041): Process that learns weights
-		  - **Backpropagation** (AI-0043): Algorithm updating weights
-		  - **Neural Network**: Architecture containing weights
-		  - **Transfer Learning**: Reuses pre-trained weights
-
-		  ## Formal Ontology
-
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Neural network components
-
-		  ### NIST AI RMF
-		  - **Function**: MAP (Understanding model components)
-
-		  ## Related Terms
-		  - **Model Parameters** (AI-0051): Parent concept
-		  - **Training** (AI-0041): Learns weight values
-		  - **Backpropagation** (AI-0043): Updates weights
-		  - **Neural Network**: Contains weights
-
-  #### References
-  1. ISO/IEC 22989:2022 - Neural network terminology
-		  2. NIST AI 100-3 - Technical glossary
-
-		  ---
-
-		  **Authority Score**: 0.93 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-
-		  ```
-
-  - ### Introduction
-		- Quantization refers to the process of reducing the precision of the numbers that represent the weights and activations of a machine learning model without significantly reducing its accuracy.
-		- It is a critical technique for deploying models on resource-constrained devices like mobile phones, embedded systems, and IoT devices.
-		- [Quantization (huggingface.co)](https://huggingface.co/docs/transformers/main/quantization)
-
-		- #### Sparsification
-	 - **Description**: Involves reducing the number of non-zero elements in the model's weights, effectively compressing the model.
-	 - **Techniques**:
-				- Weight Pruning: Removing weights that have little impact on the output.
-				- Structured Pruning: Removing entire channels or filters that are not contributing significantly to the model's performance.
-	 - **References**:
-				- [The Lottery Ticket Hypothesis](https://arxiv.org/abs/1803.03635)
-
-		- ##### 5️⃣ Decision Trees
-		- **Description**: Tree-like model for decisions and consequences.
-		- **Explain**: Like a flowchart to make decisions, but using numbers (weights)
-		- **Paper**: [Study and Analysis of Decision Tree Based Classification Algorithms](https://www.researchgate.net/profile/Purvi-Prajapati/publication/330138092_Study_and_Analysis_of_Decision_Tree_Based_Classification_Algorithms/links/5d2c4a91458515c11c3166b3/Study-and-Analysis-of-Decision-Tree-Based-Classification-Algorithms.pdf)
+  - **Model Weights** are the learnable parameters in a neural network that represent connection strengths between neurons. Weights are multiplied with inputs and adjusted during training to minimise loss.
 
   - ### Covert Subversion
-		- Self-exfiltration involves the model trying to copy its weights to another server.
-		- Goal guarding involves the model trying to overwrite its future goal to maintain its current goal.
-		- Oversight subversion involves the model trying to disable an oversight mechanism.
-		- Models may introduce subtle mistakes into their responses to engineer outcomes that align with their goals.
+        - Self-exfiltration involves the model trying to copy its weights to another server.
+        - Goal guarding involves the model trying to overwrite its future goal to maintain its current goal.
+        - Oversight subversion involves the model trying to disable an oversight mechanism.
+        - Models may introduce subtle mistakes into their responses to engineer outcomes that align with their goals.
 
-  - ## Open Source
-		- Stable Diffusion's open-source nature sets it apart from many other generative AI models.
-		- Users have free access to the model's weights and a lot of modular code, allowing them to modify, distribute, and build upon it.
-		- This openness fosters collaboration, innovation, and community driven development.
-		- Ensures that the technology is not controlled by a select few entities.
-		- For brands and private companies this allows private development of digital assets.
-
-  - ### Introduction
-		- Quantization refers to the process of reducing the precision of the numbers that represent the weights and activations of a machine learning model without significantly reducing its accuracy.
-		- It is a critical technique for deploying models on resource-constrained devices like mobile phones, embedded systems, and IoT devices.
-		- [Quantization (huggingface.co)](https://huggingface.co/docs/transformers/main/quantization)
-
-		- #### Sparsification
-	 - **Description**: Involves reducing the number of non-zero elements in the model's weights, effectively compressing the model.
-	 - **Techniques**:
-				- Weight Pruning: Removing weights that have little impact on the output.
-				- Structured Pruning: Removing entire channels or filters that are not contributing significantly to the model's performance.
-	 - **References**:
-				- [The Lottery Ticket Hypothesis](https://arxiv.org/abs/1803.03635)
-
-		- ##### 5️⃣ Decision Trees
-		- **Description**: Tree-like model for decisions and consequences.
-		- **Explain**: Like a flowchart to make decisions, but using numbers (weights)
-		- **Paper**: [Study and Analysis of Decision Tree Based Classification Algorithms](https://www.researchgate.net/profile/Purvi-Prajapati/publication/330138092_Study_and_Analysis_of_Decision_Tree_Based_Classification_Algorithms/links/5d2c4a91458515c11c3166b3/Study-and-Analysis-of-Decision-Tree-Based-Classification-Algorithms.pdf)
-
-  - ### Covert Subversion
-		- Self-exfiltration involves the model trying to copy its weights to another server.
-		- Goal guarding involves the model trying to overwrite its future goal to maintain its current goal.
-		- Oversight subversion involves the model trying to disable an oversight mechanism.
-		- Models may introduce subtle mistakes into their responses to engineer outcomes that align with their goals.
-
-  - ## Open Source
-		- Stable Diffusion's open-source nature sets it apart from many other generative AI models.
-		- Users have free access to the model's weights and a lot of modular code, allowing them to modify, distribute, and build upon it.
-		- This openness fosters collaboration, innovation, and community driven development.
-		- Ensures that the technology is not controlled by a select few entities.
-		- For brands and private companies this allows private development of digital assets.
   ## Academic Context
 
   - Model weights are fundamental numerical parameters within artificial neural networks that determine the strength and influence of connections between neurons.
@@ -154,7 +57,7 @@
 
   - The UK contributes significantly to AI research on model weights, with institutions like the Alan Turing Institute collaborating with industry partners.
   - North England innovation hubs in Manchester, Leeds, Newcastle, and Sheffield focus on applying model weight optimisation in practical domains:
-  - Manchester’s AI Centre for Health applies weight-tuning techniques to improve diagnostic accuracy in medical imaging.
+  - Manchester's AI Centre for Health applies weight-tuning techniques to improve diagnostic accuracy in medical imaging.
   - Leeds-based fintech startups leverage model weights to refine fraud detection algorithms.
   - Regional case studies demonstrate successful integration of model weight fine-tuning to enhance local business competitiveness and public sector services.
 

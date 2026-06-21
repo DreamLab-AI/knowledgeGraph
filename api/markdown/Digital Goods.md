@@ -324,8 +324,6 @@ alias:: DigitalGoods
 - ### Definition
   - Virtual items and assets that can be owned, transferred, traded, or used within metaverse environments, typically with provable scarcity and ownership.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalGoods
   - owl-role:: Object
@@ -339,6 +337,7 @@ bridges-to:: [[Blockchain]]
   - requires:: [[Blockchain Infrastructure]], [[Smart Contracts]], [[Digital Wallet]]
   - enables:: [[Virtual Commerce]], [[Asset Trading]], [[User Ownership]], [[Creator Monetization]]
   - depends-on:: [[NFT Standards]], [[Asset Registry]], [[Digital Rights Management]]
+  - bridges-to:: [[Blockchain]]
 
 - ### Content
   Digital Goods — content pending enrichment.

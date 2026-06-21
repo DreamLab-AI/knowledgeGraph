@@ -119,6 +119,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
     },

@@ -89,6 +89,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
       "slug": "x402-and-l402-payment-protocols",
       "label": "x402 and l402 payment protocols"
     }

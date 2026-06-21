@@ -144,6 +144,18 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-group-formation",
+      "label": "AI Group Formation"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

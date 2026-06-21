@@ -140,6 +140,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
       "slug": "cyber-security-and-cryptography",
       "label": "Cyber Security and Cryptography"
     },

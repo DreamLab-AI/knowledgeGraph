@@ -111,12 +111,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
       "slug": "asynchronous-video",
       "label": "Asynchronous Video"
     },
     {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
     },
     {
       "slug": "meeting-ai-assistant",

@@ -174,7 +174,6 @@
 	  TransitiveObjectProperty(blockchain:dependsOn)
 	  FunctionalDataProperty(blockchain:originYear)
 	  FunctionalDataProperty(blockchain:typicalAlphaRange)
-	  ```
 
   - ## About Conviction Voting
   - **Conviction Voting** is the canonical *continuous-time* alternative to discrete, deadline-bound DAO governance, conceived as a mechanism-design response to four pathologies that empirically plague token-weighted snapshot voting: (i) **quorum deadlock**, in which proposals fail not for lack of support but for lack of turnout, encouraging artificially low quorums that in turn enable plutocratic capture; (ii) **last-minute swing attacks**, in which whales observe vote tallies near deadline and tip outcomes with capital they need not commit beyond the instant of voting; (iii) **governance fatigue**, the documented decline in participation across DAOs whose members cannot sustain attention across dozens of weekly proposals; and (iv) **artificial coordination windows**, in which good ideas wait weeks for the next "epoch" while urgent matters are jammed into ballot stuffing.
@@ -373,7 +372,7 @@
 
 	  Conviction voting occupies a specific niche in the broader DAO governance design space. The most informative comparisons are:
 
-	  **vs. [[Snapshot]] Off-Chain Voting**: Snapshot is the dominant gasless off-chain voting platform, hosting governance for ~25,000 DAOs by 2024 (Aave, Uniswap, Curve, ENS, etc.). Snapshot operates discrete-time ballot votes with configurable strategies (simple token-weight, quadratic, delegate, vote-locked). Conviction voting is continuous, Snapshot is discrete; Snapshot is dramatically more scalable (no on-chain gas per vote), conviction voting requires per-stake on-chain state. They are complementary: a DAO might use Snapshot for binary protocol-parameter decisions and conviction voting for treasury allocation.
+	  **vs. [[Snapshot]] Off-Chain Voting**: Snapshot is the dominant gasless off-chain voting platform, hosting governance for 35,000+ decentralised communities by 2026 (Aave, Uniswap, Curve, ENS, etc.). Snapshot operates discrete-time ballot votes with configurable strategies (simple token-weight, quadratic, delegate, vote-locked). Conviction voting is continuous, Snapshot is discrete; Snapshot is dramatically more scalable (no on-chain gas per vote), conviction voting requires per-stake on-chain state. They are complementary: a DAO might use Snapshot for binary protocol-parameter decisions and conviction voting for treasury allocation.
 
 	  **vs. [[Tally]] / [[Compound Governor Bravo]]**: Tally is a front-end for the Compound-style on-chain governance contracts that dominate Ethereum mainnet DeFi (Compound, Uniswap, ENS, Optimism Token House). These mechanisms use **token-weighted on-chain voting** with explicit quorums (4% typical) and voting periods (5-7 days). Conviction voting differs fundamentally: no quorum, no fixed period, continuous accumulation. Token-weighted voting is suited to *binary* protocol upgrades; conviction voting is suited to *continuous treasury allocation*.
 
@@ -383,7 +382,7 @@
 
 	  **vs. [[Futarchy]] (Hanson 2003)**: Futarchy uses prediction markets to drive governance decisions: "vote on values, bet on beliefs." Implemented experimentally in [[Augur]]-derived systems and recently in [[Polymarket]]-style protocols. Futarchy is mechanism-design elegant but practically rare. Conviction voting requires no prediction market; futarchy requires no continuous staking.
 
-	  **vs. [[Optimism RetroPGF]] (Retroactive Public Goods Funding)**: RetroPGF is a *retrospective* allocation mechanism in which a Citizens' House votes on retroactive rewards for already-delivered public goods. It uses ranked or weighted voting in discrete epochs (Rounds 1-5 from 2022-2024, distributing ~$120M cumulatively). Conviction voting is *prospective* (funds work yet to be done) and continuous; RetroPGF is retrospective and epoch-based. They address different funding pathologies.
+	  **vs. [[Optimism RetroPGF]] (Retroactive Public Goods Funding)**: RetroPGF is a *retrospective* allocation mechanism in which a Citizens' House votes on retroactive rewards for already-delivered public goods. It uses ranked or weighted voting in discrete epochs (through Round 6 by 2025, with over 60M OP tokens distributed cumulatively and the programme evolving toward a more continuous evaluation model). Conviction voting is *prospective* (funds work yet to be done) and continuous; RetroPGF is retrospective and epoch-based. They address different funding pathologies.
 
 	  **vs. [[Polkadot OpenGov]] (2023+)**: OpenGov is Polkadot's successor to Polkadot v1 Governance, introducing multi-track on-chain referenda with adaptive quorum and per-track conviction multipliers (a feature confusingly also called "conviction voting" but operating very differently — Polkadot conviction multiplies vote weight by a factor that increases with lock duration, but it is still a *discrete* time-bound referendum, not a continuous EMA). Polkadot OpenGov is *referenda-based discrete-time conviction*; the Block-Science / 1Hive mechanism is *continuous-time EMA conviction*. The two are easily confused; the genealogy is distinct.
 
@@ -465,9 +464,9 @@
 
 	  **Ecosystem Position**:
 	  Conviction voting did **not** become the dominant DAO governance mechanism. By 2026 the production landscape is dominated by:
-	  - **Snapshot off-chain voting** (~30,000+ DAOs, Aave-Curve-Uniswap-ENS level scale)
+	  - **Snapshot off-chain voting** (35,000+ decentralised communities, Aave-Curve-Uniswap-ENS level scale)
 	  - **Tally / Compound Governor Bravo** on-chain (Uniswap, Compound, Aave, Optimism Token House)
-	  - **Optimism RetroPGF** for retrospective public-goods funding (~$120M+ cumulative)
+	  - **Optimism RetroPGF** for retrospective public-goods funding (60M+ OP distributed cumulatively through Round 6 by 2025, evolving toward continuous evaluation)
 	  - **Polkadot OpenGov** for substrate-chain governance
 	  - **Discrete-time quadratic funding rounds** (Gitcoin Grants, Octant, Drips)
 

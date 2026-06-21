@@ -1,8 +1,6 @@
 - ### Definition
   - A digital representation of an entity encompassing personally identifiable information, behavioral data, credentials, and authentication attributes that enables individuals and organizations to establish presence, ownership, and trust within virtual environments, blockchain networks, and metaverse platforms.
 
-bridges-to:: [[DID Nostr Identity]]
-
 - ### Semantic Classification
   - owl-class:: infrastructure:DigitalIdentity
   - owl-role:: Concept
@@ -12,6 +10,7 @@ bridges-to:: [[DID Nostr Identity]]
   - is-subclass-of:: [[Identity]]
   - requires:: [[Identity Verification]], [[Credential Storage]], [[Privacy Controls]]
   - enables:: [[Authentication]], [[Authorization]], [[Digital Presence]]
+  - bridges-to:: [[DID Nostr Identity]]
 
 - ### Content
 
@@ -30,7 +29,7 @@ bridges-to:: [[DID Nostr Identity]]
 		- User-controlled with selective disclosure
 		- Cryptographically verifiable
 		- Persistent across sessions
-  - **2024 Trends**: Integration with physical identity, regulatory frameworks emerging, interoperability focus
+  - **Current Trends**: Integration with physical identity, expanding regulatory frameworks (EU AI Act, eIDAS 2.0), interoperability focus across platforms
   - ## Applications
   - Metaverse user profiles
   - NFT and asset ownership

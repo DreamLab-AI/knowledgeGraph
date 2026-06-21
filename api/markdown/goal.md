@@ -605,17 +605,6 @@
 
   ### Universal Goal Structure
 
-  ## Relationships
-
-  - is-subclass-of:: [[Artificial Intelligence]]
-  ### Parent Concepts
-  - [[Agent Concept]] - Goals are agent-related concepts
-
-  ### Sibling Concepts
-  - [[Objective]] (DT-1011) - More specific, measurable targets derived from goals
-  - [[Plan]] - Sequences of actions to achieve goals
-  - [[Task]] - Concrete work items aligned with goals
-
   #### Future Directions
   1. **Natural Language Goal Specification**: Directly specify goals in plain language
   2. **Goal Learning from Demonstration**: Infer goals by observing human behavior

@@ -165,6 +165,10 @@
       "label": "Authoring Tool"
     },
     {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
       "slug": "neural-3-d-generation",
       "label": "Neural 3D Generation"
     }

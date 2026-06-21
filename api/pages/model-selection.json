@@ -101,6 +101,10 @@
     {
       "slug": "algorithmic-bias-and-variance",
       "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
     }
   ]
 }

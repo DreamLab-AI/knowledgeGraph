@@ -146,6 +146,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
       "slug": "dijkstra-algorithm",
       "label": "Dijkstra Algorithm"
     },

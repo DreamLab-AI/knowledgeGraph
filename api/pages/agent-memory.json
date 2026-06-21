@@ -5,15 +5,19 @@
   "public": true,
   "classIri": "urn:ngm:class:agent-memory",
   "domain": "artificial-intelligence",
-  "definition": "Agent memory is the mechanism by which an autonomous agent stores and retrieves information across steps and sessions. It allows an agent to recall past observations, decisions and facts beyond the immediate context window.",
+  "definition": "Agent memory is the structured ensemble of mechanisms by which an autonomous AI agent stores, indexes, consolidates, retrieves, and forgets information across steps, sessions, and lifetimes \u2014 enabling coherent, personalised, and long-horizon behaviour that transcends the hard limit of any single context window. It encompasses four functionally distinct tiers: working memory (active context window); episodic memory (timestamped records of prior observations, actions, and outcomes); semantic memory (declarative facts, entity relationships, and world knowledge); and procedural memory (skill programs, tool-use patterns, and reusable plan templates).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-agent",
       "label": "AI Agent"
+    },
+    {
+      "id": "urn:ngm:class:cognitive-architecture",
+      "label": "Cognitive Architecture"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.88,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -25,12 +29,32 @@
       {
         "id": "urn:ngm:class:embeddings",
         "label": "Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:agentic-workflow",
         "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:long-horizon-task-execution",
+        "label": "Long-Horizon Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
       }
     ],
     "dependsOn": [],
@@ -67,12 +91,224 @@
     {
       "slug": "ai-agent",
       "label": "AI Agent"
+    },
+    {
+      "slug": "episodic-memory",
+      "label": "Episodic Memory"
+    },
+    {
+      "slug": "semantic-memory",
+      "label": "Semantic Memory"
+    },
+    {
+      "slug": "procedural-memory",
+      "label": "Procedural Memory"
+    },
+    {
+      "slug": "working-memory",
+      "label": "Working Memory"
+    },
+    {
+      "slug": "long-term-memory",
+      "label": "Long-Term Memory"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "agent-loop",
+      "label": "Agent Loop"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "react-pattern",
+      "label": "ReAct Pattern"
+    },
+    {
+      "slug": "reflexion-pattern",
+      "label": "Reflexion Pattern"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "personalisation",
+      "label": "Personalisation"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "memory-management",
+      "label": "Memory Management"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "reasoning-engine",
+      "label": "Reasoning Engine"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "temporal-reasoning",
+      "label": "Temporal Reasoning"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "pinecone",
+      "label": "Pinecone"
+    },
+    {
+      "slug": "pgvector",
+      "label": "pgvector"
+    },
+    {
+      "slug": "weaviate",
+      "label": "Weaviate"
+    },
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "in-context-learning",
+      "label": "In-Context Learning"
+    },
+    {
+      "slug": "self-reflection",
+      "label": "Self-Reflection"
+    },
+    {
+      "slug": "task-automation",
+      "label": "Task Automation"
+    },
+    {
+      "slug": "compression",
+      "label": "Compression"
+    },
+    {
+      "slug": "forgetting",
+      "label": "Forgetting"
+    },
+    {
+      "slug": "consolidation",
+      "label": "Consolidation"
+    },
+    {
+      "slug": "act-r",
+      "label": "ACT-R"
+    },
+    {
+      "slug": "coala",
+      "label": "CoALA"
     }
   ],
   "backlinks": [
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
       "slug": "adapter-slot",
       "label": "Adapter Slot"
+    },
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
     },
     {
       "slug": "agents",
@@ -81,6 +317,10 @@
     {
       "slug": "auto-gpt",
       "label": "AutoGPT"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
     }
   ]
 }

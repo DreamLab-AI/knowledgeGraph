@@ -637,10 +637,6 @@ public:: true
 
   **See Also**: [[Agent]], [[Goal]], [[Objective]], [[BDI Model]], [[Human in the Loop]], [[Trust]], [[Safety]]
 
-  ### Relationships
-  - is-subclass-of:: [[Blockchain]]
-  - bridges-to:: [[AI Agent System]]
-
 - ### Provenance
   - sources:: [[EU AI Act Regulatory Instrument]], [[ISO 21448]]
   - migration-date:: 2026-04-26T00:00:00Z

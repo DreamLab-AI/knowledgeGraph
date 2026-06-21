@@ -139,8 +139,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
       "slug": "algorithmic-transparency-index",
       "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
     },
     {
       "slug": "discovery-layer",

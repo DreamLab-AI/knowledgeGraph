@@ -92,6 +92,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
       "slug": "model-based-control",
       "label": "Model Based Control"
     },

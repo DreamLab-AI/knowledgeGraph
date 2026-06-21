@@ -13,25 +13,64 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.88,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:softmax-function",
+        "label": "Softmax Function"
+      },
+      {
+        "id": "urn:ngm:class:query-key-value",
+        "label": "Query Key Value"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:transformer",
-        "label": "Transformer"
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "supports": [],
@@ -60,12 +99,12 @@
         "label": "Cross Attention"
       },
       {
-        "id": "urn:ngm:class:query-key-value",
-        "label": "Query Key Value"
-      },
-      {
         "id": "urn:ngm:class:positional-encoding",
         "label": "Positional Encoding"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ]
   },
@@ -77,9 +116,205 @@
     {
       "slug": "telecollaboration",
       "label": "Telecollaboration"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "multi-head-attention",
+      "label": "Multi-Head Attention"
+    },
+    {
+      "slug": "cross-attention",
+      "label": "Cross Attention"
+    },
+    {
+      "slug": "query-key-value",
+      "label": "Query Key Value"
+    },
+    {
+      "slug": "softmax-function",
+      "label": "Softmax Function"
+    },
+    {
+      "slug": "positional-encoding",
+      "label": "Positional Encoding"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "embedding",
+      "label": "Embedding"
+    },
+    {
+      "slug": "matrix-multiplication",
+      "label": "Matrix Multiplication"
+    },
+    {
+      "slug": "layer-normalisation",
+      "label": "Layer Normalisation"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "long-short-term-memory",
+      "label": "Long Short Term Memory"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "gpt",
+      "label": "GPT"
+    },
+    {
+      "slug": "multimodal-ai-architecture-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "image-captioning",
+      "label": "Image Captioning"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "sequence-to-sequence-learning",
+      "label": "Sequence-to-Sequence Learning"
+    },
+    {
+      "slug": "state-space-model",
+      "label": "State Space Model"
+    },
+    {
+      "slug": "mixture-of-experts-architecture",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
+      "slug": "encoder-decoder-architecture",
+      "label": "Encoder Decoder Architecture"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "dropout",
+      "label": "Dropout"
+    },
+    {
+      "slug": "batch-normalisation",
+      "label": "Batch Normalisation"
+    },
+    {
+      "slug": "masked-language-modelling",
+      "label": "Masked Language Modelling"
+    },
+    {
+      "slug": "causal-language-modelling",
+      "label": "Causal Language Modelling"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    },
+    {
+      "slug": "alphafold",
+      "label": "AlphaFold"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
+      "slug": "gpu-computing",
+      "label": "GPU Computing"
+    },
+    {
+      "slug": "protein-structure-prediction",
+      "label": "Protein Structure Prediction"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "scaled-dot-product-attention",
+      "label": "Scaled Dot-Product Attention"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
     }
   ],
   "backlinks": [
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
     {
       "slug": "attention",
       "label": "Attention"

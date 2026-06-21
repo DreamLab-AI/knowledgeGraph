@@ -197,6 +197,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
       "slug": "etsi-domain-virtual-society",
       "label": "ETSI_Domain_Virtual_Society"
     },

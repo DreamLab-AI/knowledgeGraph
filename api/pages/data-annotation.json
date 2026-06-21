@@ -154,6 +154,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
       "slug": "human-in-the-loop-learning",
       "label": "Human-in-the- Loop Learning"
     }

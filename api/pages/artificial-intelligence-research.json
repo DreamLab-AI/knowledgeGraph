@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:artificial-intelligence-research",
   "domain": "ai",
-  "definition": "Artificial intelligence research is the scientific and engineering discipline concerned with understanding and building systems that exhibit intelligent behaviour, including perception, reasoning, learning, planning and language. It spans theoretical foundations, algorithmic innovation and empirical evaluation, and feeds discoveries into subfields such as machine learning, computer vision and natural language processing. The field advances through publication, benchmarking and reproducible experimentation.",
+  "definition": "Artificial intelligence research is the scientific and engineering discipline concerned with understanding and building systems that exhibit intelligent behaviour, including perception, reasoning, learning, planning, and language. It spans theoretical foundations, algorithmic innovation, and empirical evaluation, and feeds discoveries into subfields such as machine learning, computer vision, and natural language processing. The field advances through hypothesis-driven inquiry using the scientific method, publication and peer review, standardised benchmarking, and reproducible experimentation, generating knowledge that flows into applied AI systems and deployed products across industry and government.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:research-and-development",
@@ -13,10 +13,35 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.91,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:empirical-evaluation",
+        "label": "Empirical Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      },
+      {
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      },
+      {
+        "id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,24 +51,48 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:research-and-development",
         "label": "Research and Development"
+      },
+      {
+        "id": "urn:ngm:class:dataset-curation",
+        "label": "Dataset Curation"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:scientific-method",
         "label": "Scientific Method"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
       }
     ],
     "bridgesTo": [
@@ -54,12 +103,36 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:scientific-method",
         "label": "Scientific Method"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:preprint-culture",
+        "label": "Preprint Culture"
       }
     ],
     "supports": [
@@ -70,6 +143,18 @@
       {
         "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
       }
     ],
     "standardizedBy": [],
@@ -87,9 +172,263 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
       }
     ]
   },
-  "wikilinks": [],
-  "backlinks": []
+  "wikilinks": [
+    {
+      "slug": "research-and-development",
+      "label": "Research and Development"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "scientific-method",
+      "label": "Scientific Method"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "knowledge-discovery",
+      "label": "Knowledge Discovery"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "alignment-research",
+      "label": "Alignment Research"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "academic-research",
+      "label": "Academic Research"
+    },
+    {
+      "slug": "peer-review",
+      "label": "Peer Review"
+    },
+    {
+      "slug": "empirical-evaluation",
+      "label": "Empirical Evaluation"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "benchmarks",
+      "label": "Benchmarks"
+    },
+    {
+      "slug": "hypothesis-testing",
+      "label": "Hypothesis Testing"
+    },
+    {
+      "slug": "experimental-design",
+      "label": "Experimental Design"
+    },
+    {
+      "slug": "preprint-culture",
+      "label": "Preprint Culture"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "dataset-curation",
+      "label": "Dataset Curation"
+    },
+    {
+      "slug": "evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "AI Policy"
+    },
+    {
+      "slug": "neural-symbolic-ai",
+      "label": "Neural-Symbolic AI"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "turing-1950-computing-machinery",
+      "label": "Turing 1950 Computing Machinery and Intelligence"
+    },
+    {
+      "slug": "vaswani-2017-attention",
+      "label": "Vaswani et al 2017 Attention Is All You Need"
+    },
+    {
+      "slug": "bommasani-2021-foundation-models",
+      "label": "Bommasani et al 2021 Foundation Models"
+    },
+    {
+      "slug": "stanford-ai-index-2026",
+      "label": "Stanford AI Index 2026"
+    },
+    {
+      "slug": "bengio-2025-international-ai-safety-report",
+      "label": "Bengio et al 2025 International AI Safety Report"
+    },
+    {
+      "slug": "adversarial-machine-learning",
+      "label": "Adversarial Machine Learning"
+    },
+    {
+      "slug": "bayesian-deep-learning",
+      "label": "Bayesian Deep Learning"
+    },
+    {
+      "slug": "contrastive-learning",
+      "label": "Contrastive Learning"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "curriculum-learning",
+      "label": "Curriculum Learning"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "ai-research",
+      "label": "AI Research"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    }
+  ]
 }

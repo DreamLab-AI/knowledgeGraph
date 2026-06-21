@@ -91,5 +91,10 @@
       "label": "Generative Ai"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    }
+  ]
 }

@@ -37,6 +37,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     }

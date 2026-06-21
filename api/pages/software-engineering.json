@@ -167,6 +167,10 @@
       "label": "Agile Software Development"
     },
     {
+      "slug": "auto-gen",
+      "label": "AutoGen"
+    },
+    {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
     },

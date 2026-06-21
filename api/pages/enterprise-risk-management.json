@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
       "slug": "compliance-control",
       "label": "Compliance Control"
     }

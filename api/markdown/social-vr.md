@@ -1,5 +1,5 @@
 - ### Definition
-  - Social VR encompasses immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces, leveraging avatar-based presence and synchronised communication. Platforms like [[MetaHorizonWorlds|Meta Horizon Worlds]], [[VRChat]], and [[AltspaceVR]] enable diverse social activities from casual hangouts and professional meetings to educational workshops and entertainment events, with spatial audio and gesture recognition enhancing social presence. Integration with [[DecentralizedIdentity|blockchain-based identity]], [[NFT|NFT avatars]], and [[VirtualEconomy|virtual economies]] creates interoperable social metaverses where users maintain control over digital identities and virtual assets across platforms.
+  - Social VR encompasses immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces, leveraging avatar-based presence and synchronised communication. Platforms like [[MetaHorizonWorlds|Meta Horizon Worlds]] and [[VRChat]] enable diverse social activities from casual hangouts and professional meetings to educational workshops and entertainment events, with spatial audio and gesture recognition enhancing social presence. (Note: [[AltspaceVR]] was permanently shut down by Microsoft on 10 March 2023, replaced by Microsoft Mesh.) Integration with [[DecentralizedIdentity|blockchain-based identity]], [[NFT|NFT avatars]], and [[VirtualEconomy|virtual economies]] creates interoperable social metaverses where users maintain control over digital identities and virtual assets across platforms.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:SocialVR
@@ -15,71 +15,7 @@
   - relatedTo [[Collaboration]]
 
 - ### Content
-  - Immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces using avatar-based presence and synchronised communication. Platforms like [[MetaHorizonWorlds|Meta Horizon Worlds]], [[VRChat]], and [[AltspaceVR]] enable social activities from casual hangouts to professional meetings and educational workshops, enhanced by spatial audio and gesture recognition. Integration with [[DecentralisedIdentity|blockchain-based identity]], [[NFT|NFT avatars]], and [[VirtualEconomy|virtual economies]] enables interoperable social metaverses where users maintain control over digital identities and virtual assets across platforms.
-  - ### Original Content
-		- ```
-  - # Ontology Block
-		    - **Class:** SocialVR
-		    - **IRI:** https://metaverse-ontology.org/SocialVR
-		    - **SubClassOf:** VirtualReality
-		    - **Source Domain:** metaverse
-		    - **Source File:** metaverse-ontology-combined-refactored.ttl
-		    - **Integration Date:** 2025-10-28
-		    - **TRL:** 7
-		    - **Quality Score:** 0.95
-		    - ```turtle
-		      spatial-computing:SocialVR rdf:type owl:Class ;
-		          rdfs:label "Social VR"@en ;
-		          rdfs:comment "Virtual reality experiences designed for social interaction and collaboration among multiple users in shared virtual spaces."@en ;
-		          rdfs:subClassOf spatial-computing:VirtualReality ;
-		          meta:sourceOntology "spatial-computing:" ;
-		          meta:technologyDomain "metaverse" ;
-		          meta:disruptiveTechCategory "virtual-immersive-systems" ;
-		          meta:technologyReadinessLevel "7"^^xsd:integer ;
-		          meta:qualityScore "0.95"^^xsd:float .
-		      ```
-
-		  - ## Description
-		    - Multi-user VR experiences focused on social interaction
-		    - Enables real-time communication and collaboration
-		    - Supports avatar-based presence and expressions
-		    - Provides shared virtual spaces for gatherings
-		    - Facilitates both casual and professional interactions
-
-		  - ## Properties
-		    - Object properties
-		      - [[hostsSession]] - Active social VR sessions
-		      - [[enablesInteraction]] - Types of social interactions
-		      - [[providesSpace]] - Virtual spaces for gathering
-		      - [[supportsActivity]] - Supported social activities
-		    - Data properties
-		      - maxParticipants - Maximum concurrent users
-		      - communicationLatency - Voice/data transmission delay
-		      - presenceFidelity - Sense of presence quality
-		      - accessibilityFeatures - Inclusive design features
-
-		  - ## Cross-Domain Relationships
-		    - [[dt:authenticatedBy]] → [[DecentralizedID]] - User identity verification
-		    - [[dt:governedBy]] → [[CommunityDAO]] - Community governance
-		    - [[dt:enhancedBy]] → [[SpatialAudio]] - Immersive audio
-		    - [[dt:monetizedVia]] → [[VirtualCurrency]] - In-platform economy
-		    - [[dt:recordedOn]] → [[BlockchainLedger]] - Event logging
-
-		  - ## Related Concepts
-		    - [[VirtualMeeting]]
-		    - [[CollaborativeSpace]]
-		    - [[AvatarInteraction]]
-		    - [[VoiceChat]]
-		    - [[GestureRecognition]]
-
-		  - ## Use Cases
-		    - Virtual conferences and meetups
-		    - Remote team collaboration
-		    - Virtual social hangouts
-		    - Educational workshops
-		    - Networking events
-
-		  ```
+  - Immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces using avatar-based presence and synchronised communication. Platforms like [[MetaHorizonWorlds|Meta Horizon Worlds]] and [[VRChat]] enable social activities from casual hangouts to professional meetings and educational workshops, enhanced by spatial audio and gesture recognition. ([[AltspaceVR]] was shut down by Microsoft in March 2023 and replaced by Microsoft Mesh.) Integration with [[DecentralisedIdentity|blockchain-based identity]], [[NFT|NFT avatars]], and [[VirtualEconomy|virtual economies]] enables interoperable social metaverses where users maintain control over digital identities and virtual assets across platforms.
 
   #### Current Landscape
   - SocialVR has evolved from niche VR chatrooms to more sophisticated platforms integrated within the metaverse ecosystem.

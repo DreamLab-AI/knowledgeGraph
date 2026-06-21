@@ -111,8 +111,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
       "slug": "attention-mechanisms",
       "label": "Attention Mechanisms"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
     },
     {
       "slug": "attention",

@@ -366,12 +366,24 @@
   ],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
       "slug": "ai-literacy-training-for-designers",
       "label": "AI Literacy Training for Designers"
     },
     {
       "slug": "automatic-1111-web-ui",
       "label": "AUTOMATIC1111 WebUI"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
     },
     {
       "slug": "comfy-ui-client",

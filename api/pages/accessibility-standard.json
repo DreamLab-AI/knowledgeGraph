@@ -202,6 +202,10 @@
       "label": "Accessible Experience"
     },
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "etsi-domain-virtual-society",
       "label": "ETSI_Domain_Virtual_Society"
     },

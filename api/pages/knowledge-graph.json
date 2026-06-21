@@ -197,8 +197,36 @@
       "label": "AI Search"
     },
     {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "asynchronous-collaboration",
       "label": "Asynchronous Collaboration"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
     },
     {
       "slug": "data-aggregation",

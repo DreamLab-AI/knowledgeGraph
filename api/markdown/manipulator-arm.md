@@ -18,70 +18,6 @@
 
 - ### Content
   - Multi-jointed mechanical or virtual robotic arm integrated with avatars enabling precise object manipulation and physical interaction within virtual or mixed reality environments. Manipulator arms combine robotics hardware (mechanical joints, actuators, end-effectors), computer vision guidance, and AI-driven control enabling naturalistic manipulation through inverse kinematics algorithms and haptic feedback. Deployed in surgical robotics, laboratory automation, pick-and-place operations, and immersive training addressing latency, haptic fidelity, and standardised physical-virtual interaction interfaces.
-  - ### Original Content
-		- ```
-  - # Ontology Block
-		    - **Class:** RoboticManipulator
-		    - **IRI:** http://metaverse-ontology.org/robotics#RoboticManipulator
-		    - **SubClassOf:** RoboticActuator
-		    - **Source Domain:** robotics
-		    - **Source File:** robotics-ontology-unified.ttl
-		    - **Integration Date:** 2025-10-28
-		    - **TRL:** 6
-		    - **Quality Score:** 0.89
-		    - ```turtle
-		      spatial-computing:RoboticManipulator rdf:type owl:Class ;
-		          rdfs:label "Robotic Manipulator"@en ;
-		          rdfs:comment "Robotic arm with multiple joints and end-effector for grasping, moving, and manipulating objects with precision."@en ;
-		          rdfs:subClassOf spatial-computing:RoboticActuator ;
-		          meta:sourceOntology "spatial-computing:" ;
-		          meta:technologyDomain "robotics" ;
-		          meta:disruptiveTechCategory "autonomous-robotic-systems" ;
-		          meta:technologyReadinessLevel "6"^^xsd:integer ;
-		          meta:qualityScore "0.89"^^xsd:float .
-		      ```
-
-		  - ## Description
-		    - Multi-jointed mechanical arm for object manipulation
-		    - Programmable for precise movements and tasks
-		    - Equipped with end-effector (gripper, tool, etc.)
-		    - Supports various degrees of freedom (DOF)
-		    - Used in manufacturing, assembly, and research
-
-		  - ## Properties
-		    - Object properties
-		      - [[hasJoint]] - Joints in the manipulator
-		      - [[hasEndEffector]] - End-effector type (gripper, tool)
-		      - [[executesMotion]] - Motion planning and execution
-		      - [[controlledBy]] - Control system (inverse kinematics, etc.)
-		    - Data properties
-		      - degreesOfFreedom - Number of DOF
-		      - reachRadius - Maximum reach distance
-		      - payloadCapacity - Maximum lifting capacity
-		      - positionAccuracy - Positioning precision
-
-		  - ## Cross-Domain Relationships
-		    - [[dt:trainedBy]] → [[ReinforcementLearning]] - AI-based manipulation learning
-		    - [[dt:guidedBy]] → [[ComputerVision]] - Vision-guided grasping
-		    - [[dt:simulatedIn]] → [[VirtualEnvironment]] - Virtual training simulation
-		    - [[dt:optimizedBy]] → [[MachineLearning]] - Motion optimization
-		    - [[dt:trackedOn]] → [[BlockchainLedger]] - Manufacturing provenance
-
-		  - ## Related Concepts
-		    - [[InverseKinematics]]
-		    - [[GraspPlanning]]
-		    - [[MotionControl]]
-		    - [[CollisionAvoidance]]
-		    - [[ForceControl]]
-
-		  - ## Use Cases
-		    - Assembly line automation
-		    - Pick and place operations
-		    - Surgical robotics
-		    - Laboratory automation
-		    - Welding and painting
-
-		  ```
 
   #### Current Landscape
   - Industry adoption of ManipulatorArms is growing, particularly in XR platforms where physical interaction with virtual or hybrid objects is essential.
@@ -108,12 +44,13 @@
 
   #### Research & Literature
   - Key academic papers:
-  - Villani, A., Cortigiani, G., Brogi, B., D’Aurizio, N., Lisini Baldi, T., & Prattichizzo, D. (2024). *Avatarm: an Avatar With Manipulation Capabilities for the Physical Metaverse*. IEEE Robotics and Automation Letters. DOI: 10.1109/LRA.2024.XXXXXXX[1].
-  - Recent studies on MR–SPM systems integrating mixed reality with physical instrumentation highlight the potential for ManipulatorArms in scientific collaboration and experimentation[4].
+  - Villani, A., Cortigiani, G., Brogi, B., D’Aurizio, N., Lisini Baldi, T., & Prattichizzo, D. (2023). *Avatarm: an Avatar With Manipulation Capabilities for the Physical Metaverse*. IEEE ICRA 2023. arXiv:2303.15187.
+  - Brogi, B., Cortigiani, G., Villani, A., D’Aurizio, N., Prattichizzo, D., & Lisini Baldi, T. (2024). *The Avatarm: Interacting in the Physical Metaverse via Robotics, Diminished Reality, and Haptics*. IEEE Access. DOI: 10.1109/ACCESS.2024.3420717.
   - Ongoing research focuses on improving the seamlessness of physical-virtual interaction, reducing latency, enhancing haptic feedback, and developing adaptive AI control systems to anticipate user intent.
 
   #### References
-  1. Villani, A., Cortigiani, G., Brogi, B., D’Aurizio, N., Lisini Baldi, T., & Prattichizzo, D. (2024). Avatarm: an Avatar With Manipulation Capabilities for the Physical Metaverse. *IEEE Robotics and Automation Letters*. DOI: 10.1109/LRA.2024.XXXXXXX
+  1. Villani, A. et al. (2023). Avatarm: an Avatar With Manipulation Capabilities for the Physical Metaverse. *IEEE ICRA 2023*. arXiv:2303.15187.
+  2. Brogi, B. et al. (2024). The Avatarm: Interacting in the Physical Metaverse via Robotics, Diminished Reality, and Haptics. *IEEE Access*. DOI: 10.1109/ACCESS.2024.3420717.
 
   2. [Additional references to UK-based XR and robotics research papers and reports would be listed here as available.]
 

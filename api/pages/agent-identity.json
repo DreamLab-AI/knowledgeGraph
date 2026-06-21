@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.88,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:capability-token",
+        "label": "Capability Token"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
       }
     ],
     "requires": [
@@ -38,6 +46,14 @@
       {
         "id": "urn:ngm:class:key-management",
         "label": "Key Management"
+      },
+      {
+        "id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      },
+      {
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
@@ -52,6 +68,18 @@
       {
         "id": "urn:ngm:class:tool-use",
         "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:delegation",
+        "label": "Delegation"
+      },
+      {
+        "id": "urn:ngm:class:authorisation",
+        "label": "Authorisation"
+      },
+      {
+        "id": "urn:ngm:class:non-repudiation",
+        "label": "Non-Repudiation"
       }
     ],
     "dependsOn": [
@@ -76,6 +104,18 @@
       {
         "id": "urn:ngm:class:decentralized-identity",
         "label": "Decentralized Identity"
+      },
+      {
+        "id": "urn:ngm:class:oauth",
+        "label": "OAuth"
+      },
+      {
+        "id": "urn:ngm:class:open-id-connect",
+        "label": "OpenID Connect"
+      },
+      {
+        "id": "urn:ngm:class:spiffe",
+        "label": "SPIFFE"
       }
     ],
     "supports": [
@@ -86,6 +126,14 @@
       {
         "id": "urn:ngm:class:ai-safety",
         "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust",
+        "label": "Zero Trust"
       }
     ],
     "standardizedBy": [],
@@ -111,11 +159,248 @@
       {
         "id": "urn:ngm:class:single-sign-on",
         "label": "Single Sign-On"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "did",
+      "label": "DID"
+    },
+    {
+      "slug": "key-management",
+      "label": "Key Management"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "trust",
+      "label": "Trust"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "decentralized-identity",
+      "label": "Decentralized Identity"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
+      "slug": "single-sign-on",
+      "label": "Single Sign-On"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "oauth",
+      "label": "OAuth"
+    },
+    {
+      "slug": "open-id-connect",
+      "label": "OpenID Connect"
+    },
+    {
+      "slug": "public-key-infrastructure",
+      "label": "Public Key Infrastructure"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "delegation",
+      "label": "Delegation"
+    },
+    {
+      "slug": "authorisation",
+      "label": "Authorisation"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "zero-trust",
+      "label": "Zero Trust"
+    },
+    {
+      "slug": "cryptographic-proof",
+      "label": "Cryptographic Proof"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "spiffe",
+      "label": "SPIFFE"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "microsoft-entra",
+      "label": "Microsoft Entra"
+    },
+    {
+      "slug": "amazon-bedrock",
+      "label": "Amazon Bedrock"
+    },
+    {
+      "slug": "sandboxing",
+      "label": "Sandboxing"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "decentralised-identifiers",
+      "label": "Decentralised Identifiers"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self-Sovereign Identity"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "capability-token",
+      "label": "Capability Token"
+    },
+    {
+      "slug": "agent-loop",
+      "label": "Agent Loop"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "w3c",
+      "label": "W3C"
+    },
+    {
+      "slug": "ietf",
+      "label": "IETF"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
+      "slug": "least-privilege",
+      "label": "Least Privilege"
+    },
+    {
+      "slug": "credential-revocation",
+      "label": "Credential Revocation"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "agent2-agent-protocol-google-2025",
+      "label": "Agent2Agent Protocol (Google 2025)"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
     {
       "slug": "agentic-internet",
       "label": "Agentic Internet"

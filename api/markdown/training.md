@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - Training is the supervised or self-supervised process of iteratively adjusting the parameters of a machine learning model to minimise a loss function over a labelled or unlabelled dataset, encompassing forward passes, backpropagation, gradient descent optimisation, and regularisation techniques.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Training
@@ -15,54 +15,7 @@
   - uses [[Regularisation]]
 
 - ### Content
-  - ### Primary Definition
-  **Training** is the process of using a training dataset to cause a model to be created or updated. Training involves iterative adjustment of model parameters to minimise error or maximise performance on the training task.
-  - ### Original Content
-		- ```
-  # Training
-
-  #### Related Concepts
-  - **Training Data** (AI-0051): Input dataset for training
-		  - **Backpropagation** (AI-0043): Algorithm for neural network training
-		  - **Gradient Descent** (AI-0044): Optimisation method used in training
-		  - **Validation**: Evaluates model during training
-		  - **Overfitting** (AI-0054): Risk during training process
-
-		  ## Formal Ontology
-
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Clause 3.3.7 (Training)
-		  - **ISO/IEC 23894:2023**: Training data quality requirements
-
-		  ### NIST AI RMF
-		  - **Function**: MAP (Understanding training data and processes)
-
-		  ### EU AI Act
-		  - **Article 10**: Training data requirements for high-risk AI
-
-		  ## Related Terms
-		  - **Training Data** (AI-0051): Dataset used for training
-		  - **Inference** (AI-0042): Contrasting process (using trained model)
-		  - **Backpropagation** (AI-0043): Common training algorithm
-		  - **Model** (AI-0004): Output of training process
-
-  #### References
-  1. ISO/IEC 22989:2022 - Clause 3.3.7
-		  2. NIST AI 100-3 - Glossary
-		  3. EU AI Act - Article 10 (Training data requirements)
-
-		  ---
-
-		  **Authority Score**: 0.95 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST ✓ EU AI Act
-
-		  ```
+  - **Training** is the process of using a training dataset to cause a model to be created or updated. Training involves iterative adjustment of model parameters to minimise error or maximise performance on the training task.
   ## Academic Context
 
   - Training is a structured, goal-oriented process designed to build specific skills or knowledge for defined purposes, distinct from broader, self-directed learning which emphasises critical thinking and adaptability[1].

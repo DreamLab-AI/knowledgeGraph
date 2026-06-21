@@ -177,6 +177,14 @@
   ],
   "backlinks": [
     {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
       "slug": "content-provenance",
       "label": "Content Provenance"
     },

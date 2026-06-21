@@ -75,8 +75,20 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
     },
     {
       "slug": "agentic-internet",

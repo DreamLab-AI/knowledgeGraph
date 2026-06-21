@@ -91,6 +91,10 @@
     {
       "slug": "api-gateway",
       "label": "API Gateway"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
     }
   ]
 }

@@ -139,8 +139,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
       "slug": "auto-ml",
       "label": "AutoML"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
     },
     {
       "slug": "model-optimisation-and-performance",

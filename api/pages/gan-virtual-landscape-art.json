@@ -53,5 +53,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    }
+  ]
 }

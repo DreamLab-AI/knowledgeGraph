@@ -90,6 +90,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "auto-gen",
+      "label": "AutoGen"
+    },
+    {
       "slug": "distributed-computing",
       "label": "Distributed Computing"
     },

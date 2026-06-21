@@ -120,6 +120,10 @@
       "label": "AI in Games"
     },
     {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
       "slug": "behaviour-trees",
       "label": "Behaviour Trees"
     },

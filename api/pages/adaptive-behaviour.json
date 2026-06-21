@@ -10,14 +10,35 @@
     {
       "id": "urn:ngm:class:agent",
       "label": "Agent"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.91,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
+      },
+      {
+        "id": "urn:ngm:class:exploration-exploitation-tradeoff",
+        "label": "Exploration-Exploitation Tradeoff"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:embodied-ai",
@@ -26,11 +47,62 @@
       {
         "id": "urn:ngm:class:adaptive-control",
         "label": "Adaptive Control"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:robotic-manipulation",
+        "label": "Robotic Manipulation"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:policy-gradient-methods",
+        "label": "Policy Gradient Methods"
+      },
+      {
+        "id": "urn:ngm:class:temporal-difference-learning",
+        "label": "Temporal Difference Learning"
+      },
+      {
+        "id": "urn:ngm:class:hierarchical-reinforcement-learning",
+        "label": "Hierarchical Reinforcement Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:static-policy",
+        "label": "Static Policy"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -40,6 +112,18 @@
       {
         "id": "urn:ngm:class:policy-optimisation",
         "label": "Policy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reward-signal",
+        "label": "Reward Signal"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
       }
     ],
     "supports": [],
@@ -53,11 +137,252 @@
       {
         "id": "urn:ngm:class:agent-based-models",
         "label": "Agent-Based Models"
+      },
+      {
+        "id": "urn:ngm:class:swarm-intelligence",
+        "label": "Swarm Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:cybernetics",
+        "label": "Cybernetics"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-learning",
+        "label": "Adaptive Learning"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
+      "slug": "policy-optimisation",
+      "label": "Policy Optimisation"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "reward-signal",
+      "label": "Reward Signal"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "policy-gradient-methods",
+      "label": "Policy Gradient Methods"
+    },
+    {
+      "slug": "q-learning",
+      "label": "Q-Learning"
+    },
+    {
+      "slug": "temporal-difference-learning",
+      "label": "Temporal Difference Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "sim-to-real-transfer",
+      "label": "Sim-to-Real Transfer"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "robotic-manipulation",
+      "label": "Robotic Manipulation"
+    },
+    {
+      "slug": "meta-learning",
+      "label": "Meta-Learning"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "hierarchical-reinforcement-learning",
+      "label": "Hierarchical Reinforcement Learning"
+    },
+    {
+      "slug": "world-model",
+      "label": "World Model"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "game-ai",
+      "label": "Game AI"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
+    },
+    {
+      "slug": "self-organising-systems",
+      "label": "Self-Organising Systems"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "simulation-environment",
+      "label": "Simulation Environment"
+    },
+    {
+      "slug": "experience-replay",
+      "label": "Experience Replay"
+    },
+    {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration-Exploitation Tradeoff"
+    },
+    {
+      "slug": "safe-ai",
+      "label": "Safe AI"
+    },
+    {
+      "slug": "distribution-shift",
+      "label": "Distribution Shift"
+    },
+    {
+      "slug": "causal-inference",
+      "label": "Causal Inference"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "model-based-reinforcement-learning",
+      "label": "Model-Based Reinforcement Learning"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "value-function",
+      "label": "Value Function"
+    },
+    {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "test-time-adaptation",
+      "label": "Test-Time Adaptation"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
     {
       "slug": "control-system",
       "label": "Control System"

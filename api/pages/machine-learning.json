@@ -161,6 +161,14 @@
       "label": "3D and 4D"
     },
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
       "slug": "ai-adoption",
       "label": "AI Adoption"
     },
@@ -173,6 +181,14 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
       "slug": "ai-concept",
       "label": "AI Concept"
     },
@@ -181,20 +197,68 @@
       "label": "AI Development"
     },
     {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-group-formation",
+      "label": "AI Group Formation"
+    },
+    {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
       "slug": "ai-risks",
       "label": "AI Risks"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "ai safety research"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
     },
     {
       "slug": "ai-upscaling-and-super-resolution",
       "label": "AI Upscaling and Super-Resolution"
     },
     {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
       "slug": "accuracy",
       "label": "Accuracy"
     },
     {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
       "slug": "active-learning",
       "label": "Active Learning"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
     },
     {
       "slug": "adaptive-control",
@@ -205,16 +269,64 @@
       "label": "Adaptive Virtual Experience"
     },
     {
+      "slug": "affective-computing-system",
+      "label": "Affective Computing System"
+    },
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
       "slug": "alan-turing-institute",
       "label": "Alan Turing Institute"
     },
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
     },
     {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
     },
     {
       "slug": "bayesian-decision-theory",

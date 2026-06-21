@@ -152,6 +152,18 @@
       "label": "Agent-Based Modelling"
     },
     {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
       "slug": "complex-systems",
       "label": "Complex Systems"
     },

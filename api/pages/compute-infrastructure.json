@@ -989,12 +989,28 @@
       "label": "AI Adoption"
     },
     {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
       "slug": "ai-risks",
       "label": "AI Risks"
     },
     {
       "slug": "ai-scrapers",
       "label": "AI Scrapers"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
     },
     {
       "slug": "authoring-tool",

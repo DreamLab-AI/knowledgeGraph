@@ -50,6 +50,10 @@
   ],
   "backlinks": [
     {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
       "slug": "post-quantum-cryptography",
       "label": "Post-Quantum Cryptography"
     }

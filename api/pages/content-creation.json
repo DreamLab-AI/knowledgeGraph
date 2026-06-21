@@ -136,6 +136,22 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "audience-engagement",
+      "label": "Audience Engagement"
+    },
+    {
       "slug": "authoring-tool",
       "label": "Authoring Tool"
     },

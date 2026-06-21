@@ -162,6 +162,10 @@
       "label": "3D and 4D"
     },
     {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
       "slug": "business-process-automation",
       "label": "Business Process Automation"
     },

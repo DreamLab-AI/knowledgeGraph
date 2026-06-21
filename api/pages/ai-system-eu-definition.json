@@ -74,5 +74,10 @@
       "label": "MetaverseDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    }
+  ]
 }

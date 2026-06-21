@@ -130,5 +130,10 @@
       "label": "Digital Twin"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    }
+  ]
 }

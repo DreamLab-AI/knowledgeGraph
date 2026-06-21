@@ -104,6 +104,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
       "slug": "task-planning",
       "label": "Task Planning"
     }

@@ -87,8 +87,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
       "slug": "ai-game-agent",
       "label": "AI Game Agent"
+    },
+    {
+      "slug": "ai-group-formation",
+      "label": "AI Group Formation"
+    },
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
     },
     {
       "slug": "adapter-slot",

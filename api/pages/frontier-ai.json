@@ -145,6 +145,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
       "slug": "ai-liability",
       "label": "AI Liability"
     },
@@ -153,12 +157,40 @@
       "label": "AI Safety Institute"
     },
     {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
       "slug": "aisi",
       "label": "AISI"
     },
     {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "answer-ai",
+      "label": "Answer AI"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
+    },
+    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
     },
     {
       "slug": "evaluation-benchmarks-and-leaderboards",

@@ -45,6 +45,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
       "slug": "bayes-filter",
       "label": "Bayes Filter"
     },

@@ -53,5 +53,14 @@
       "label": "Large Language Models"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-evaluation",
+      "label": "AI Evaluation"
+    },
+    {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    }
+  ]
 }

@@ -116,6 +116,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
       "slug": "computer-vision",
       "label": "Computer Vision"
     }

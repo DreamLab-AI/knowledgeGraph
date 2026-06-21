@@ -120,6 +120,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
       "slug": "blockchain-entity",
       "label": "Blockchain Entity"
     },

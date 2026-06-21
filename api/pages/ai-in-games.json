@@ -588,5 +588,10 @@
       "label": "Unreal Engine"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-game-agent",
+      "label": "AI Game Agent"
+    }
+  ]
 }

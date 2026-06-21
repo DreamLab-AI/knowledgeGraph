@@ -16,47 +16,7 @@
 - ### Content
   - ### Primary Definition
   **Batch Size** is the number of training examples processed together before updating model parameters. It is a critical hyperparameter affecting training speed, memory usage, and model convergence behaviour.
-  - ### Original Content
-		- ```
-  # Batch Size
 
-  #### Related Concepts
-  - **Stochastic Gradient Descent** (AI-0045): Uses batch size parameter
-		  - **Training** (AI-0041): Batch size affects training
-		  - **Epoch** (AI-0049): Epochs comprise multiple batches
-		  - **Memory Requirements**: Constrained by batch size
-		  - **Convergence**: Batch size affects optimisation
-
-		  ## Formal Ontology
-
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Training configuration
-
-		  ### NIST AI RMF
-		  - **Function**: MAP (Training parameters)
-
-		  ## Related Terms
-		  - **Hyperparameter** (AI-0048): Batch size is a hyperparameter
-		  - **Stochastic Gradient Descent** (AI-0045): Uses batches
-		  - **Epoch** (AI-0049): Divided into batches
-		  - **Training** (AI-0041): Configured by batch size
-
-  #### References
-  1. ISO/IEC 22989:2022 - Training concepts
-		  2. Masters & Luschi - "Revisiting Small Batch Training for Deep Neural Networks" - arXiv, 2018
-
-		  ---
-
-		  **Authority Score**: 0.92 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-
-		  ```
   ## Academic Context
 
   - Batch size represents a fundamental operational parameter in manufacturing and production management

@@ -606,6 +606,10 @@
   ],
   "backlinks": [
     {
+      "slug": "automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
       "slug": "image-generation",
       "label": "Image Generation"
     },

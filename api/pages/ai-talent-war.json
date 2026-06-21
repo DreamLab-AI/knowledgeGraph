@@ -10,24 +10,61 @@
     {
       "id": "urn:ngm:class:competition-in-ai",
       "label": "Competition in AI"
+    },
+    {
+      "id": "urn:ngm:class:technology-race",
+      "label": "Technology Race"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.88,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:acqui-hire",
+        "label": "Acqui-hire"
+      },
+      {
+        "id": "urn:ngm:class:talent-concentration",
+        "label": "Talent Concentration"
+      },
+      {
+        "id": "urn:ngm:class:immigration-policy",
+        "label": "Immigration Policy"
+      },
+      {
+        "id": "urn:ngm:class:compensation-escalation",
+        "label": "Compensation Escalation"
+      }
+    ],
     "requires": [],
     "enables": [
       {
         "id": "urn:ngm:class:frontier-model-training",
         "label": "Frontier Model Training"
+      },
+      {
+        "id": "urn:ngm:class:technological-leadership",
+        "label": "Technological Leadership"
+      },
+      {
+        "id": "urn:ngm:class:national-security-advantage",
+        "label": "National Security Advantage"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:education-and-ai",
         "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-investment",
+        "label": "AI Investment"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
       }
     ],
     "implements": [],
@@ -35,6 +72,10 @@
       {
         "id": "urn:ngm:class:ai-governance-framework",
         "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:ai-cooperation",
+        "label": "AI Cooperation"
       }
     ],
     "bridgesTo": [],
@@ -50,10 +91,159 @@
       {
         "id": "urn:ngm:class:frontier-ai",
         "label": "Frontier AI"
+      },
+      {
+        "id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "slug": "frontier-model-training",
+      "label": "Frontier Model Training"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "geopolitics",
+      "label": "Geopolitics"
+    },
+    {
+      "slug": "national-ai-strategies",
+      "label": "National AI Strategies"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "export-controls",
+      "label": "Export Controls"
+    },
+    {
+      "slug": "talent-concentration",
+      "label": "Talent Concentration"
+    },
+    {
+      "slug": "innovation-ecosystems",
+      "label": "Innovation Ecosystems"
+    },
+    {
+      "slug": "workforce-development",
+      "label": "Workforce Development"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "AI Policy"
+    },
+    {
+      "slug": "economic-competitiveness",
+      "label": "Economic Competitiveness"
+    },
+    {
+      "slug": "technological-leadership",
+      "label": "Technological Leadership"
+    },
+    {
+      "slug": "national-security-advantage",
+      "label": "National Security Advantage"
+    },
+    {
+      "slug": "ai-sovereignty",
+      "label": "AI Sovereignty"
+    },
+    {
+      "slug": "gpu-supply-chain",
+      "label": "GPU Supply Chain"
+    },
+    {
+      "slug": "acqui-hire",
+      "label": "Acqui-hire"
+    },
+    {
+      "slug": "immigration-policy",
+      "label": "Immigration Policy"
+    },
+    {
+      "slug": "ai-cooperation",
+      "label": "AI Cooperation"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "technology-race",
+      "label": "Technology Race"
+    },
+    {
+      "slug": "ai-research-talent",
+      "label": "AI Research Talent"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI Research Organisation"
+    },
+    {
+      "slug": "meta-ai",
+      "label": "Meta AI"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-adoption",
@@ -62,6 +252,10 @@
     {
       "slug": "ai-companies",
       "label": "AI Companies"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
     }
   ]
 }

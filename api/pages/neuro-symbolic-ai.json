@@ -96,6 +96,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
       "slug": "reasoning",
       "label": "Reasoning"
     }

@@ -201,6 +201,10 @@
       "label": "Accessible Design"
     },
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "inclusive-xr-experience",
       "label": "Inclusive Xr Experience"
     }

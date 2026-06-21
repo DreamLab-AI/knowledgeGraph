@@ -1,8 +1,6 @@
 - ### Definition
   - An automated virtual system that calculates, reports, and ensures tax compliance for digital transactions across multiple jurisdictions in real-time.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:DigitalTaxComplianceNode
   - owl-role:: Object
@@ -16,6 +14,7 @@ bridges-to:: [[Blockchain]]
   - requires:: [[Transaction Ledger]], [[Identity Verification System]], [[Regulatory Database]]
   - enables:: [[Automated Tax Filing]], [[Real-time Compliance]], [[Cross-border Tax Settlement]], [[Audit Trail Generation]]
   - depends-on:: [[Smart Contract]], [[Digital Payment System]], [[Blockchain Network]]
+  - bridges-to:: [[Blockchain]]
 
 - ### Content
   Digital Tax Compliance Node — content pending enrichment.

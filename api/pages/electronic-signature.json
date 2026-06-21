@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:ngm-electronic-signature",
+  "title": "Electronic Signature",
+  "slug": "electronic-signature",
+  "public": true,
+  "classIri": "urn:ngm:class:electronic-signature",
+  "domain": "infrastructure",
+  "definition": "An Electronic Signature is any electronic data that is logically associated with a document and used to indicate the signatory's acceptance or authentication of its content, spanning simple typed names through to qualified digital signatures backed by cryptographic certificates. Legal frameworks such as eIDAS in the EU and ESIGN/UETA in the US establish the legal equivalence of electronic signatures to handwritten ones under defined conditions. Advanced forms rely on public-key infrastructure to provide non-repudiation and integrity assurances.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:identification",
+        "label": "Identification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    }
+  ]
+}

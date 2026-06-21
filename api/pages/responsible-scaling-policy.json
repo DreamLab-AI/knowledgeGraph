@@ -108,6 +108,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "anthropic",
+      "label": "anthropic"
+    },
+    {
       "slug": "competition-in-ai",
       "label": "Competition in AI"
     },

@@ -135,6 +135,14 @@
       "label": "Adversarial Testing"
     },
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
       "slug": "attack-vector",
       "label": "Attack Vector"
     },

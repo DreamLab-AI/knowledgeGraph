@@ -4331,14 +4331,6 @@ public:: true
   - <!-- No relationships defined -->
 
 - ### Content
-  - it's easy to miss the detail here, but this is google, enabling crypto payments on the coinbase protocol layer
-  - https://cloud.google.com/blog/products/ai-machine-learning/announcing-agents-to-payments-ap2-protocol?
-  - https://github.com/google-agentic-commerce/AP2
-  - https://github.com/google-agentic-commerce/a2a-x402/blob/main/v0.1/spec.md
-  - https://x402.gitbook.io/x402/core-concepts/wallet
-  - https://vercel.com/blog/introducing-x402-mcp-open-protocol-payments-for-mcp-tools
-  - https://arxiv.org/abs/2507.19550v1
-  - I am working with L402 which is more elegant for bitcoin, but just so you know, the thing I have been saying for years, is now a google thing, officially.
   # X402 and L402 Payment Protocols
 
   ## Overview: The Payment Protocol Revolution

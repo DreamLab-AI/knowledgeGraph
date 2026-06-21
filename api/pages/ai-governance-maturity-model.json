@@ -62,6 +62,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
       "slug": "governance-structure",
       "label": "Governance Structure"
     }

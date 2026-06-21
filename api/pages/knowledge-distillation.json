@@ -141,6 +141,18 @@
       "label": "AI Energy Optimisation"
     },
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
+    },
+    {
       "slug": "data-compression",
       "label": "Data Compression"
     },

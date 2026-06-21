@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - Feature Extraction is the process of transforming raw data into a reduced set of meaningful representations that capture task-relevant information for machine learning models. Deep learning architectures perform hierarchical feature extraction automatically through successive layers, whilst classical techniques such as PCA or wavelet transforms require manual engineering. Feature extraction reduces dimensionality, improves computational efficiency, and determines the quality of downstream model predictions.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:FeatureExtraction
@@ -15,50 +15,8 @@
   - relatedTo:: [[Embedding Model]]
 
 - ### Content
-  - ### Primary Definition
-  **Feature Extraction** is the process of transforming raw data into a reduced set of meaningful features that capture essential information for machine learning tasks. Deep learning models automatically perform hierarchical feature extraction through multiple layers.
-  - ### Original Content
-		- ```
-  # Feature Extraction
+  - **Feature Extraction** is the process of transforming raw data into a reduced set of meaningful features that capture essential information for machine learning tasks. Deep learning models automatically perform hierarchical feature extraction through multiple layers.
 
-  #### Related Concepts
-  - **Convolutional Neural Network** (AI-0032): Automatically extracts visual features
-		  - **Autoencoder** (AI-0036): Learns compressed feature representations
-		  - **Deep Learning**: Enables automatic feature extraction
-		  - **Feature Engineering**: Manual feature creation process
-		  - **Representation Learning**: Learning useful data representations
-
-		  ## Formal Ontology
-
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Data processing and representation learning
-
-		  ### NIST AI RMF
-		  - **Function**: MAP (Data processing for ML)
-
-		  ## Related Terms
-		  - **Convolutional Neural Network** (AI-0032): Automatic visual feature extraction
-		  - **Autoencoder** (AI-0036): Unsupervised feature learning
-		  - **Deep Learning**: Hierarchical feature extraction
-		  - **Representation Learning**: Related concept
-
-  #### References
-  1. ISO/IEC 22989:2022 - Data processing context
-		  2. Bengio et al. - "Representation Learning: A Review and New Perspectives" - IEEE PAMI, 2013
-		  3. NIST AI 100-3 - Glossary
-
-		  ---
-
-		  **Authority Score**: 0.93 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-
-		  ```
   ## Academic Context
 
   - Feature extraction is a fundamental process in machine learning and data analysis that involves transforming raw, often unstructured data into a set of meaningful, informative features suitable for model training and analysis.
@@ -66,7 +24,7 @@
   - The academic foundations of feature extraction span signal processing, statistics, and computer vision, with methods evolving from manual feature crafting to automated extraction via deep learning architectures.
   - Key developments include classical techniques such as Principal Component Analysis (PCA), wavelet transforms, and more recent advances in automated feature extraction through convolutional neural networks (CNNs) and transformer models.
 
-  ## Current Landscape (2025)
+  ## Current Landscape
 
   - Feature extraction remains a critical step in machine learning pipelines, especially for domains with complex data such as images, speech, and text.
   - Industry adoption is widespread across sectors including finance (credit risk modelling), healthcare (early disease detection), and e-commerce (customer behaviour prediction).

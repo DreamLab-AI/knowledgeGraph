@@ -60,6 +60,10 @@
       "label": "AI Scrapers"
     },
     {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
       "slug": "creator-economy",
       "label": "Creator Economy"
     },

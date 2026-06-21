@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-ethics-checklist",
   "domain": "artificial-intelligence",
-  "definition": "Structured verification process evaluating fairness, accountability, transparency, and ical compliance of AI systems against established governance frameworks.",
+  "definition": "Structured verification process evaluating fairness, accountability, transparency, and ethical compliance of AI systems against established governance frameworks including IEEE 7000, OECD AI Principles, UNESCO AI Ethics Recommendations, the EU AI Act, NIST AI RMF, and ISO/IEC 42001.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -17,7 +17,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.88,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -36,6 +36,14 @@
       {
         "id": "urn:ngm:class:transparency-metrics",
         "label": "Transparency Metrics"
+      },
+      {
+        "id": "urn:ngm:class:fundamental-rights-impact-assessment",
+        "label": "Fundamental Rights Impact Assessment"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
       }
     ],
     "requires": [
@@ -46,6 +54,14 @@
       {
         "id": "urn:ngm:class:ethical-framework",
         "label": "Ethical Guidelines"
+      },
+      {
+        "id": "urn:ngm:class:assessment-methodology",
+        "label": "Assessment Methodology"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
     "enables": [
@@ -64,9 +80,34 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:ieee-7000",
+        "label": "IEEE 7000 Standard"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001",
+        "label": "ISO/IEC 42001"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -161,9 +202,73 @@
     {
       "slug": "ai-governance-and-ethics",
       "label": "TrustAndGovernanceDomain"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO/IEC 42001"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
+    },
+    {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "privacy-by-design",
+      "label": "Privacy by Design"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "fundamental-rights-impact-assessment",
+      "label": "Fundamental Rights Impact Assessment"
+    },
+    {
+      "slug": "conformity-assessment",
+      "label": "Conformity Assessment"
+    },
+    {
+      "slug": "ai-incident-reporting",
+      "label": "AI Incident Reporting"
+    },
+    {
+      "slug": "algorithmic-impact-assessment",
+      "label": "Algorithmic Impact Assessment"
     }
   ],
   "backlinks": [
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
     {
       "slug": "ai-governance-framework",
       "label": "AI Governance Framework"

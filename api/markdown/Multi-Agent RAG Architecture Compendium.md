@@ -165,10 +165,6 @@ elevatedFrom:: [[Multi Agent RAG scrapbook]]
 		- Context: Location, time, event, shared activities
 		- Social Signals: Proximity, eye contact, tone of voice, facial expressions
   - Define properties and attributes to describe these concepts in detail
-  ```
-  ```
-  ```
-  ```
   - Establish clear guidelines for data collection, storage, and usage
   - Ensure user privacy and agency
   - Address potential biases in data sources, models, and algorithms
@@ -217,6 +213,7 @@ elevatedFrom:: [[Multi Agent RAG scrapbook]]
               E2 --> C
           end
       end
+  ```
   - ### Knowledge Graph Construction Flow
   ```mermaid
   graph TB
@@ -238,6 +235,7 @@ elevatedFrom:: [[Multi Agent RAG scrapbook]]
           I --> J[Graph Updates]
           J --> G
       end
+  ```
   - ## Constrained Multi-Modal Retrieval Augmented Generation
   - ### Retrieval Augmented Generation Flow
   ```mermaid
@@ -253,6 +251,7 @@ elevatedFrom:: [[Multi Agent RAG scrapbook]]
           F --> G["Response Validation<br>(Fact-Checking APIs, Rules)"]
           G --> H[User Interface<br>(Immersive Environment)]
       end
+  ```
   - ## Applications and Ethical Considerations
   - ### Applications Overview
   ```mermaid
@@ -273,6 +272,7 @@ elevatedFrom:: [[Multi Agent RAG scrapbook]]
           I3["Online<br>Communities"] --> B
           I4["Virtual<br>Labs"] --> D
       end
+  ```
   - ### Ethical Design and Deployment
   - ## Challenges and Research Directions
   - ## Conclusion

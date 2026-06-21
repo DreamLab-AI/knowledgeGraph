@@ -106,6 +106,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
     }

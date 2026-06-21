@@ -137,6 +137,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
       "slug": "distributed-ledger-technology-dlt",
       "label": "Distributed Ledger Technology (DLT)"
     },

@@ -169,6 +169,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
       "slug": "camera",
       "label": "Camera"
     },

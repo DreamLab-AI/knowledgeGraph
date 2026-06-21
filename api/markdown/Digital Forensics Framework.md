@@ -198,8 +198,6 @@ public:: true
 - ### Definition
   - A structured methodology and toolset for identifying, preserving, analysing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalForensicsFramework
   - owl-role:: Concept
@@ -226,9 +224,9 @@ bridges-to:: [[Blockchain]]
 		- Digital Forensics + Incident Response combined
 		- Real-time threat mitigation with evidence preservation
 		- Common tools: EDR, SIEM, forensic imaging
-  - **2024 Developments**:
+  - **Recent Developments (2025–2026)**:
 		- AI/ML for pattern recognition in evidence analysis
-		- Market growth to $35.81B by 2032 (15.1% CAGR)
+		- Market size estimated at $10–16B in 2026; forecasts to 2032 range from $17–27B at 9–12% CAGR depending on methodology
 		- Metaverse-specific forensic methodologies emerging
   - ## Applications
   - Cybercrime investigation

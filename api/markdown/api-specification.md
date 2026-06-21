@@ -1,0 +1,2 @@
+- ### Definition
+  - A formal document describing an API's interface contract — endpoints, schemas, authentication, and error codes — enabling automated tooling, code generation, and documentation.

@@ -138,5 +138,10 @@
       "label": "Creative Media Domain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    }
+  ]
 }

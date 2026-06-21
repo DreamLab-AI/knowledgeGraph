@@ -17,21 +17,6 @@
   - [Agentic Alliance - Advancing Agent Frameworks](https://agenticalliance.com/)
   - [agenticalliance/agenticalliance.com: Agentic Alliance](https://github.com/agenticalliance/agenticalliance.com)
   - # Initial chats with AI
-  - ```
-	  make me a mermaid diagram as code showing an open agentic framework which incorporates nostr relays, bitcoin lightning, synthetic stablecoin dollars, anthropic model context protocol for open data connectors, distributed git, the solid protocol and anything else you think necessary
-			  graph TD;
-			    A[Agents] -->|exchange requests| B[Nostr Relays];
-			    A -->|make payments| C[Bitcoin Lightning Network];
-			    A -->|manage stablecoins| D[Synthetic Stablecoin System];
-			    A -->|enhance AI context| E[Anthropic Model Context Protocol];
-			    A -->|store/code management| F[Distributed Git Repositories];
-			    A -->|access user data| G[Solid Pods];
-			    A -->|verify identities| H[Identity Management];
-			    A -->|communicate via| I[API Gateways];
-			    A -->|reach consensus| J[Consensus Mechanisms];
-			    A -->|log activities| K[Logging System];
-			    L[Coordinator Agent] -.-> A;
-			  ---
 			- ```mermaid
 			  sequenceDiagram
 			    participant Agent
@@ -70,7 +55,6 @@
 			- The architecture is designed to be open, interoperable, and resistant to centralization, with multiple paths for data flow, computation, and economic exchange.
 
   - #### **3. User Data Access Sequence**
-			  ```
 		- #### **Key Implementation Notes**
 			- **Error Handling**:
 				- Ensure fallback mechanisms for failed payments or data access.

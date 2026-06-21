@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -24,12 +24,20 @@
       {
         "id": "urn:ngm:class:computation-graph",
         "label": "Computation Graph"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:chain-rule",
         "label": "Chain Rule"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-function",
+        "label": "Differentiable Function"
       }
     ],
     "enables": [
@@ -52,6 +60,14 @@
       {
         "id": "urn:ngm:class:neural-ordinary-differential-equation",
         "label": "Neural Ordinary Differential Equation"
+      },
+      {
+        "id": "urn:ngm:class:scientific-machine-learning",
+        "label": "Scientific Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-programming",
+        "label": "Probabilistic Programming"
       }
     ],
     "dependsOn": [],
@@ -73,8 +89,12 @@
         "label": "Neural Network"
       },
       {
-        "id": "urn:ngm:class:machine-learning-discipline-framework",
+        "id": "urn:ngm:class:machine-learning-framework",
         "label": "Machine Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
       }
     ],
     "supports": [
@@ -89,6 +109,10 @@
       {
         "id": "urn:ngm:class:physics-simulation",
         "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:differentiable-rendering",
+        "label": "Differentiable Rendering"
       }
     ],
     "standardizedBy": [],
@@ -113,11 +137,144 @@
       {
         "id": "urn:ngm:class:numerical-methods",
         "label": "Numerical Method"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "jax",
+      "label": "JAX"
+    },
+    {
+      "slug": "differentiable-rendering",
+      "label": "Differentiable Rendering"
+    },
+    {
+      "slug": "differentiable-architecture",
+      "label": "Differentiable Architecture"
+    },
+    {
+      "slug": "just-in-time-compilation",
+      "label": "Just-In-Time Compilation"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Method"
+    },
+    {
+      "slug": "probabilistic-programming",
+      "label": "Probabilistic Programming"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    },
+    {
+      "slug": "scientific-machine-learning",
+      "label": "Scientific Machine Learning"
+    },
+    {
+      "slug": "machine-learning-framework",
+      "label": "Machine Learning Framework"
+    },
+    {
+      "slug": "forward-mode-differentiation",
+      "label": "Forward Mode Differentiation"
+    },
+    {
+      "slug": "computation-graph",
+      "label": "Computation Graph"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "Adam Optimiser"
+    },
+    {
+      "slug": "batch-normalisation",
+      "label": "Batch Normalisation"
+    },
+    {
+      "slug": "activation-function",
+      "label": "Activation Function"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "gradient-checkpointing",
+      "label": "Gradient Checkpointing"
+    },
+    {
+      "slug": "gradient-clipping",
+      "label": "Gradient Clipping"
+    },
+    {
+      "slug": "gradient-accumulation",
+      "label": "Gradient Accumulation"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
     {
       "slug": "deep-learning-framework",
       "label": "Deep Learning Framework"

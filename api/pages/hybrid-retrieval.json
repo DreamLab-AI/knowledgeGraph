@@ -46,6 +46,10 @@
       "label": "AI Search"
     },
     {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "semantic-search",
       "label": "Semantic Search"
     }

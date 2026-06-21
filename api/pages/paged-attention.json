@@ -97,6 +97,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
     }

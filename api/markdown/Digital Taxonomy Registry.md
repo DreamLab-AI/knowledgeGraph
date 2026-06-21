@@ -356,8 +356,6 @@ public:: true
 - ### Definition
   - An authoritative registry that assigns unique identifiers to digital asset categories and classification schemes, supporting compliance, analytics, and standardised categorisation across platforms.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalTaxonomyRegistry
   - owl-role:: Object

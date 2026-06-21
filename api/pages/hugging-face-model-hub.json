@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
       "slug": "fooocus",
       "label": "Fooocus"
     }

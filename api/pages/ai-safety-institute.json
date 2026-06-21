@@ -137,6 +137,18 @@
   ],
   "backlinks": [
     {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
+    },
+    {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
     },

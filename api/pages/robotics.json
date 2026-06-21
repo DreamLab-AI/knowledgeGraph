@@ -184,6 +184,10 @@
       "label": "2D LiDAR"
     },
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
       "slug": "3-d-li-dar",
       "label": "3D LiDAR"
     },
@@ -192,16 +196,44 @@
       "label": "3D and 4D"
     },
     {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
     },
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
       "slug": "accelerometer",
       "label": "Accelerometer"
     },
     {
       "slug": "accelerometer",
       "label": "Accelerometer"
+    },
+    {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
     },
     {
       "slug": "adaptive-control",
@@ -220,12 +252,32 @@
       "label": "Aerial Robot"
     },
     {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
       "slug": "agricultural-robot",
       "label": "Agricultural Robot"
     },
     {
       "slug": "agricultural-robot",
       "label": "Agricultural Robot"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
     },
     {
       "slug": "artificial-intelligence",

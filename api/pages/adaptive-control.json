@@ -188,6 +188,10 @@
   ],
   "backlinks": [
     {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

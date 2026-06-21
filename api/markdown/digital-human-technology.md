@@ -1,16 +1,15 @@
 - ### Definition
   - A class of technologies for creating photorealistic or stylised computer-generated human representations, encompassing 3D body and face modelling, motion capture-driven animation, procedural skin and cloth simulation, and real-time rendering pipelines. Digital human technology enables believable avatars, virtual actors, and AI-driven conversational agents in spatial computing, entertainment, and training applications.
 
-bridges-to:: [[DID Nostr Identity]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalHumanTechnology
   - owl-role:: concept
 
 - ### Relationships
-  - Has part [[Digital Humans]], [[Motion Capture]], [[Animation Software]]
-  - Uses [[Avatar Creation]], [[Character Model]]
-  - Requires [[Rendering Engine]], [[Computer Graphics]]
+  - has-part:: [[Digital Humans]], [[Motion Capture]], [[Animation Software]]
+  - uses:: [[Avatar Creation]], [[Character Model]]
+  - requires:: [[Rendering Engine]], [[Computer Graphics]]
+  - bridges-to:: [[DID Nostr Identity]]
 
 - ### Content
 

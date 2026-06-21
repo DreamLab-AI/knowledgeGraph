@@ -13,10 +13,19 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.87,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:discrete-action",
+        "label": "Discrete Action"
+      },
+      {
+        "id": "urn:ngm:class:continuous-action",
+        "label": "Continuous Action"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,12 +35,24 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-algorithm",
         "label": "Reinforcement Learning Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:safe-reinforcement-learning",
+        "label": "Safe Reinforcement Learning"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:environment-model",
         "label": "Environment Model"
+      },
+      {
+        "id": "urn:ngm:class:simulation-environment",
+        "label": "Simulation Environment"
       }
     ],
     "implements": [],
@@ -41,6 +62,10 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-for-robotics",
         "label": "Reinforcement Learning for Robotics"
+      },
+      {
+        "id": "urn:ngm:class:policy-gradient-methods",
+        "label": "Policy Gradient Methods"
       }
     ],
     "supports": [],
@@ -54,14 +79,199 @@
       {
         "id": "urn:ngm:class:reward-function",
         "label": "Reward Function"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:exploration-exploitation",
+        "label": "Exploration-Exploitation"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "state-space",
+      "label": "State Space"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "reward-function",
+      "label": "Reward Function"
+    },
+    {
+      "slug": "policy-optimisation",
+      "label": "Policy Optimisation"
+    },
+    {
+      "slug": "reinforcement-learning-algorithm",
+      "label": "Reinforcement Learning Algorithm"
+    },
+    {
+      "slug": "environment-model",
+      "label": "Environment Model"
+    },
+    {
+      "slug": "reinforcement-learning-for-robotics",
+      "label": "Reinforcement Learning for Robotics"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
+      "slug": "policy-gradient-methods",
+      "label": "Policy Gradient Methods"
+    },
+    {
+      "slug": "proximal-policy-optimisation",
+      "label": "Proximal Policy Optimisation"
+    },
+    {
+      "slug": "value-function",
+      "label": "Value Function"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "multi-agent-reinforcement-learning",
+      "label": "Multi-Agent Reinforcement Learning"
+    },
+    {
+      "slug": "simulation-environment",
+      "label": "Simulation Environment"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "game-ai",
+      "label": "Game AI"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "exploration-exploitation",
+      "label": "Exploration-Exploitation"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "hierarchical-reinforcement-learning",
+      "label": "Hierarchical Reinforcement Learning"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "domain-randomisation",
+      "label": "Domain Randomisation"
+    },
+    {
+      "slug": "gpu-acceleration",
+      "label": "GPU Acceleration"
+    },
+    {
+      "slug": "sample-efficiency",
+      "label": "Sample Efficiency"
+    },
+    {
+      "slug": "reward-shaping",
+      "label": "Reward Shaping"
+    },
+    {
+      "slug": "curriculum-learning",
+      "label": "Curriculum Learning"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "temporal-difference",
+      "label": "Temporal Difference"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "model-based-reinforcement-learning",
+      "label": "Model-Based Reinforcement Learning"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "inverse-reinforcement-learning",
+      "label": "Inverse Reinforcement Learning"
+    },
+    {
+      "slug": "safe-reinforcement-learning",
+      "label": "Safe Reinforcement Learning"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
     },
     {
       "slug": "imitation-learning",

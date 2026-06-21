@@ -134,6 +134,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
       "slug": "ai-upscaling-and-super-resolution",
       "label": "AI Upscaling and Super-Resolution"
     },

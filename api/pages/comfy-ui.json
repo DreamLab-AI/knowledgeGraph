@@ -104,6 +104,10 @@
       "label": "AI Upscaling and Super-Resolution"
     },
     {
+      "slug": "automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
     },

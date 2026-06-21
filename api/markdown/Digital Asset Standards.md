@@ -106,8 +106,6 @@ public:: true
 - ### Definition
   - Digital Asset Standards is a concept within the metaverse domain. Further enrichment pending.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalAssetStandards
   - owl-role:: concept
@@ -116,13 +114,10 @@ bridges-to:: [[Blockchain]]
   - <!-- No relationships defined -->
 
 - ### Content
-
-  ## Overview
-
-  Digital Asset Standards represents an abstract concept in the metaverse ontology hierarchy.
-
-  #### Related Concepts
-  - [[owl:Thing]]
+  - ## Overview
+    - Digital Asset Standards represents an abstract concept in the metaverse ontology hierarchy.
+  - #### Related Concepts
+    - [[owl:Thing]]
 
 - ### Provenance
   - sources::

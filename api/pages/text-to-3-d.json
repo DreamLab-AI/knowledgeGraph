@@ -105,6 +105,10 @@
   ],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
       "slug": "virtual-production",
       "label": "Virtual Production"
     }

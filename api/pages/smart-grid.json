@@ -141,6 +141,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
       "slug": "energy-and-power",
       "label": "Energy and Power"
     },

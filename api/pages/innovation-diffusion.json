@@ -71,6 +71,10 @@
       "label": "Agent-Based Modelling"
     },
     {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
       "slug": "technology-adoption",
       "label": "Technology Adoption"
     }

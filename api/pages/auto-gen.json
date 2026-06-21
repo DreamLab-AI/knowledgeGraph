@@ -5,18 +5,35 @@
   "public": true,
   "classIri": "urn:ngm:class:auto-gen",
   "domain": "artificial-intelligence",
-  "definition": "AutoGen is an open-source framework from Microsoft for building applications with multiple cooperating language model agents. It defines conversable agents that exchange messages to complete tasks.",
+  "definition": "AutoGen is an open-source multi-agent conversation framework originating from Microsoft Research that defines conversable agents \u2014 autonomous entities backed by large language models, tools, or human inputs \u2014 which coordinate through structured message exchange to decompose and complete complex tasks. The framework introduced the conversable-agent abstraction as a unified primitive supporting LLM-powered reasoning, code execution, and adaptive human participation within a single coherent programming model. Forked in 2025 as the community-governed AG2 project and simultaneously merged by Microsoft into the broader Microsoft Agent Framework combining AutoGen agent abstractions with Semantic Kernel enterprise features.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:multi-agent-systems",
       "label": "Multi-Agent Systems"
+    },
+    {
+      "id": "urn:ngm:class:agent-frameworks",
+      "label": "Agent Frameworks"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
-  "maturity": "emerging",
+  "qualityScore": 0.87,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:conversable-agent",
+        "label": "Conversable Agent"
+      },
+      {
+        "id": "urn:ngm:class:group-chat",
+        "label": "Group Chat"
+      },
+      {
+        "id": "urn:ngm:class:code-executor",
+        "label": "Code Executor"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:language-model",
@@ -25,6 +42,10 @@
       {
         "id": "urn:ngm:class:tool-use",
         "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
       }
     ],
     "enables": [
@@ -35,17 +56,43 @@
       {
         "id": "urn:ngm:class:agentic-workflow",
         "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      },
+      {
+        "id": "urn:ngm:class:task-planning",
+        "label": "Task Planning"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:langgraph",
+        "label": "LangGraph"
+      },
+      {
+        "id": "urn:ngm:class:crewai",
+        "label": "CrewAI"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:semantic-kernel",
+        "label": "Semantic Kernel"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -75,9 +122,145 @@
     {
       "slug": "multi-agent-systems",
       "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "orchestration",
+      "label": "Orchestration"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "crewai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "langgraph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "openai-agents-sdk",
+      "label": "OpenAI Agents SDK"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "autonomous-coding",
+      "label": "Autonomous Coding"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "semantic-kernel",
+      "label": "Semantic Kernel"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "swe-bench",
+      "label": "SWE-bench"
+    },
+    {
+      "slug": "metagpt",
+      "label": "MetaGPT"
+    },
+    {
+      "slug": "single-agent-systems",
+      "label": "Single-Agent Systems"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "api-integration",
+      "label": "API Integration"
+    },
+    {
+      "slug": "microsoft-azure",
+      "label": "Microsoft Azure"
+    },
+    {
+      "slug": "re-act-pattern",
+      "label": "ReAct Pattern"
+    },
+    {
+      "slug": "actor-model",
+      "label": "Actor Model"
     }
   ],
   "backlinks": [
+    {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
     {
       "slug": "agentic-internet",
       "label": "Agentic Internet"

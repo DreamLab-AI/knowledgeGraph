@@ -46,6 +46,22 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
       "slug": "competition-in-ai",
       "label": "Competition in AI"
     }

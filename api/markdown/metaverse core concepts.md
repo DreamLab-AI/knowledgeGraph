@@ -294,7 +294,7 @@ public:: true
 
 
 - ### Definition
-  - A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies ([[Augmented Reality]], [[Spatial Computing Paradigm]], [[Haptic Feedback]]), virtual environments ([[Virtual World]], [[Social VR]], [[Digital Twin]]), digital identity and assets ([[Digital Avatar]], [[Virtual Asset]], [[Virtual Economy]]), and cross-domain integration with AI (intelligent NPCs, content generation), blockchain (NFT ownership, decentralised governance), and robotics (physical-virtual interfaces), with standards development through the Metaverse Standards Forum and implementation by major technology firms (Meta Horizon Worlds, Microsoft Mesh, NVIDIA Omniverse) and blockchain platforms ([[Decentraland]], [[The Sandbox]]) addressing interoperability, scalability, and user-centric design challenges.
+  - A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies ([[Augmented Reality]], [[Spatial Computing Paradigm]], [[Haptic Feedback]]), virtual environments ([[Virtual World]], [[Social VR]], [[Digital Twin]]), digital identity and assets ([[Digital Avatar]], [[Virtual Asset]], [[Virtual Economy]]), and cross-domain integration with AI (intelligent NPCs, content generation), blockchain (NFT ownership, decentralised governance), and robotics (physical-virtual interfaces), with standards development through the Metaverse Standards Forum and implementation by major technology firms (NVIDIA Omniverse, and historically Meta Horizon Worlds and Microsoft Mesh, both of which were wound down or pivoted in 2025–2026) and blockchain platforms ([[Decentraland]], [[The Sandbox]]) addressing interoperability, scalability, and user-centric design challenges.
 - ### Semantic Classification
   - owl-class:: spatial-computing:metaversecoreconcepts
   - owl-role:: Concept
@@ -303,45 +303,7 @@ public:: true
   - <!-- No relationships defined -->
 - ### Content
   - Metaverse core concepts integrate immersive technologies, virtual environments, digital identity, blockchain infrastructure, and AI enabling persistent, user-owned shared spaces with interoperability, decentralised governance, and sustainable economic models.
-  - ### Original Content
-		- ```
-  - # Metaverse - Core Concepts Index
-		  - ## Overview
-		    - This index page provides links to key Metaverse ontology classes
-		    - Domain: **Metaverse**
-		    - Total Classes Documented: 10
-		    - Technology Readiness Level: 7
-		    - Quality Score: 0.95
-		  - ## Immersive Technologies
-		    - [[AugmentedReality]] - AR overlays and mixed reality
-		    - [[SpatialComputing]] - Physical-digital space integration
-		    - [[HapticFeedback]] - Tactile sensory feedback systems
-		  - ## Virtual Environments
-		    - [[VirtualWorld]] - Persistent shared 3D environments
-		    - [[SocialVR]] - Social virtual reality experiences
-		    - [[DigitalTwin]] - Virtual replicas of physical entities
-		  - ## Digital Identity & Assets
-		    - [[DigitalAvatar]] - Virtual user representations
-		    - [[VirtualAsset]] - Digital items with economic value
-		    - [[VirtualEconomy]] - Economic systems in virtual worlds
-		  - ## Platform Integration
-		    - [[Interoperability]] - Cross-platform asset and identity portability
-		  - ## Cross-Domain Integration
-		    - Metaverse integrates with:
-		      - **AI**: Intelligent NPCs, content generation, behavior modeling
-		      - **Blockchain**: Asset ownership (NFTs), virtual economies, decentralized governance
-		      - **Robotics**: Physical-virtual interfaces, robot avatars, teleoperation
-		  - ## Related Resources
-		    - Source File: `metaverse-ontology-combined-refactored.ttl`
-		    - Integration Date: 2025-10-28
-		    - Namespace: `spatial-computing:` (https://metaverse-ontology.org/)
-		  - ## Key Applications
-		    - Virtual conferences and collaboration
-		    - Gaming and entertainment
-		    - Digital fashion and collectibles
-		    - Virtual real estate
-		    - Immersive education and training
-		  ```
+
   ## Academic Context
   - Brief contextual overview
   - The metaverse is widely understood as a collective virtual shared space, created by the convergence of virtually enhanced physical reality and persistent virtual environments, including the sum of all virtual worlds, augmented reality, and the internet
@@ -355,12 +317,15 @@ public:: true
   - Contemporary research explores the integration of AI, immersive interfaces, and decentralised protocols to enable scalable, user-centric virtual environments
   ## Current Landscape (2025)
   - Industry adoption and implementations
-  - Major technology firms (Meta, Microsoft, NVIDIA) continue to invest in metaverse platforms, focusing on immersive experiences, digital ownership, and interoperability
+  - Major technology firms (Meta, Microsoft, NVIDIA) continue to invest in metaverse and spatial computing platforms, though with significant strategic pivots since 2025
+  - Meta shut down VR access to Horizon Worlds in June 2026, reducing it to a mobile-only platform after accumulating roughly $70 billion in cumulative operating losses in its Reality Labs division since 2021; the company has pivoted to prioritise artificial intelligence over the metaverse
+  - Microsoft retired its Mesh mixed-reality platform on December 1, 2025, replacing it with "immersive events" inside Microsoft Teams
+  - NVIDIA Omniverse continues as an active platform for industrial digital twin and spatial computing use cases
   - Blockchain-based platforms (Decentraland, The Sandbox) have matured, supporting user-generated content, digital asset trading, and decentralised governance
   - UK-based companies and startups are increasingly active, with notable contributions from Manchester’s digital innovation hubs and Leeds’ immersive technology clusters
   - Notable organisations and platforms
-  - Meta (Horizon Worlds)
-  - Microsoft (Mesh for Teams)
+  - Meta (Horizon Worlds — mobile only from June 2026; VR access discontinued)
+  - Microsoft (Teams Immersive Events — replaced Mesh for Teams, retired December 2025)
   - NVIDIA (Omniverse)
   - Decentraland
   - The Sandbox

@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.88,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -71,9 +71,157 @@
     {
       "slug": "ieee-institute-of-electrical-and-electronics-engineers",
       "label": "IEEE (Institute of Electrical and Electronics Engineers)"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "model-architecture-layer",
+      "label": "Model Architecture Layer"
+    },
+    {
+      "slug": "model-layer",
+      "label": "Model Layer"
+    },
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "sorting-algorithm",
+      "label": "Sorting Algorithm"
+    },
+    {
+      "slug": "graph-algorithms",
+      "label": "Graph Algorithms"
+    },
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "cryptographic-algorithm",
+      "label": "Cryptographic Algorithm"
+    },
+    {
+      "slug": "neural-architecture-search",
+      "label": "Neural Architecture Search"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "algorithmic-complexity",
+      "label": "Algorithmic Complexity"
+    },
+    {
+      "slug": "mathematical-logic",
+      "label": "Mathematical Logic"
+    },
+    {
+      "slug": "turing-machine",
+      "label": "Turing Machine"
+    },
+    {
+      "slug": "algorithmic-layer",
+      "label": "Algorithmic Layer"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "dynamic-programming",
+      "label": "Dynamic Programming"
+    },
+    {
+      "slug": "evolutionary-algorithm",
+      "label": "Evolutionary Algorithm"
+    },
+    {
+      "slug": "monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
+      "slug": "probabilistic-programming",
+      "label": "Probabilistic Programming"
+    },
+    {
+      "slug": "training-layer",
+      "label": "Training Layer"
+    },
+    {
+      "slug": "nist",
+      "label": "NIST"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "inference-algorithm",
+      "label": "Inference Algorithm"
+    },
+    {
+      "slug": "algorithmic-fairness",
+      "label": "Algorithmic Fairness"
     }
   ],
   "backlinks": [
+    {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
     {
       "slug": "ai-video",
       "label": "AI Video"
@@ -83,16 +231,56 @@
       "label": "AI in Games"
     },
     {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
       "slug": "active-learning",
       "label": "Active Learning"
+    },
+    {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
     },
     {
       "slug": "algorithmic-bias-and-variance",
       "label": "Algorithmic Bias and Variance"
     },
     {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
       "slug": "attention",
       "label": "Attention"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
     },
     {
       "slug": "bayes-filter",

@@ -15,9 +15,6 @@
 
 - ### Content
 
-  ### Definition
-  Stacking (Stacked Generalization) is a hierarchical ensemble method that combines multiple base models (level-0) through a meta-model (level-1) that learns how to best combine their predictions. Unlike simple voting or averaging, stacking trains a second-level model on the outputs of base models, potentially capturing complex patterns in how different models complement each other to achieve superior performance.
-
   ### Architecture
   **Level 0 (Base Models):**
   - Diverse learning algorithms

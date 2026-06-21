@@ -1,0 +1,2 @@
+- ### Definition
+  - Information Governance is the organisational framework of policies and processes that ensures information assets are managed, protected, and used in compliance with regulatory and business requirements throughout their lifecycle.

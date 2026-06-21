@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:anthropic",
   "domain": "artificial-intelligence",
-  "definition": "Anthropic is a frontier AI safety company founded in 2021 by Dario Amodei, Daniela Amodei, and colleagues formerly at OpenAI, whose primary mission is the responsible development and maintenance of advanced AI for the long-term benefit of humanity. The company develops and deploys the Claude family of large language models, distinguished by a Constitutional AI training methodology that uses AI self-critique and revision against explicit principles to systematically reduce harmful outputs. Anthropic's research agenda spans mechanistic interpretability, scalable oversight, red-teaming, and the Responsible Scaling Policy \u2014 a formal commitment tying capability advancement to mandatory safety evaluations at defined dangerous-capability thresholds. As a public-benefit corporation, Anthropic occupies a distinctive position among frontier AI laboratories by integrating commercial model deployment with open publication of alignment and interpretability research.",
+  "definition": "Anthropic is a frontier AI safety company and public-benefit corporation founded in 2021 by Dario Amodei, Daniela Amodei, and colleagues formerly at OpenAI, whose primary mission is the responsible development and maintenance of advanced AI for the long-term benefit of humanity. The company develops and deploys the Claude family of large language models, distinguished by a Constitutional AI training methodology that uses AI self-critique and revision against explicit principles to systematically reduce harmful outputs. Anthropic's research agenda spans mechanistic interpretability, scalable oversight, red-teaming, and the Responsible Scaling Policy \u2014 a formal commitment tying capability advancement to mandatory safety evaluations at defined dangerous-capability thresholds. By mid-2026 Anthropic had reached a valuation of approximately $965 billion, filed confidential IPO documentation, and maintained partnerships with Amazon Web Services, Google, Microsoft, and Nvidia. As a public-benefit corporation, Anthropic occupies a distinctive position among frontier AI laboratories by integrating commercial model deployment with open publication of alignment and interpretability research.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-safety-research",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:mechanistic-interpretability",
         "label": "Mechanistic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
       }
     ],
     "requires": [],
@@ -37,12 +41,12 @@
         "label": "Claude Model Family"
       },
       {
-        "id": "urn:ngm:class:api",
-        "label": "Model API"
-      },
-      {
         "id": "urn:ngm:class:agentic-ai",
         "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:frontier-model-evaluation",
+        "label": "Frontier Model Evaluation"
       }
     ],
     "dependsOn": [],
@@ -50,10 +54,10 @@
     "contrastsWith": [
       {
         "id": "urn:ngm:class:openai-research-organisation",
-        "label": "OpenAI"
+        "label": "OpenAI Research Organisation"
       },
       {
-        "id": "urn:ngm:class:google-ai-technology-corporation-deep-mind",
+        "id": "urn:ngm:class:google-deepmind",
         "label": "Google DeepMind"
       },
       {
@@ -67,8 +71,12 @@
         "label": "AI Regulation"
       },
       {
-        "id": "urn:ngm:class:model-cards",
-        "label": "Model Cards"
+        "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
+        "label": "EU AI Act Regulatory Instrument"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-institute",
+        "label": "AI Safety Institute"
       }
     ],
     "uses": [
@@ -87,6 +95,10 @@
       {
         "id": "urn:ngm:class:red-teaming",
         "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
       }
     ],
     "supports": [
@@ -101,6 +113,10 @@
       {
         "id": "urn:ngm:class:ai-governance",
         "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:language-model-alignment",
+        "label": "Language Model Alignment"
       }
     ],
     "standardizedBy": [],
@@ -111,24 +127,169 @@
         "label": "Interpretability"
       },
       {
-        "id": "urn:ngm:class:superposition-hypothesis",
-        "label": "Superposition Hypothesis"
-      },
-      {
-        "id": "urn:ngm:class:safety-evaluation",
-        "label": "AI Safety Evaluation"
-      },
-      {
         "id": "urn:ngm:class:frontier-ai",
         "label": "Frontier AI"
       },
       {
-        "id": "urn:ngm:class:ai-governance-and-ethics",
-        "label": "AI Governance and Ethics"
+        "id": "urn:ngm:class:frontier-model-forum",
+        "label": "Frontier Model Forum"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "id": "urn:ngm:class:frontier-model-training",
+        "label": "Frontier Model Training"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "claude-model-family",
+      "label": "Claude Model Family"
+    },
+    {
+      "slug": "constitutional-ai-training-methodology",
+      "label": "Constitutional AI Training Methodology"
+    },
+    {
+      "slug": "mechanistic-interpretability",
+      "label": "Mechanistic Interpretability"
+    },
+    {
+      "slug": "responsible-scaling-policy",
+      "label": "Responsible Scaling Policy"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "scalable-oversight",
+      "label": "Scalable Oversight"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "openai-research-organisation",
+      "label": "OpenAI Research Organisation"
+    },
+    {
+      "slug": "google-deepmind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "meta-ai",
+      "label": "Meta AI"
+    },
+    {
+      "slug": "interpretability",
+      "label": "Interpretability"
+    },
+    {
+      "slug": "frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "frontier-model-forum",
+      "label": "Frontier Model Forum"
+    },
+    {
+      "slug": "frontier-model-evaluation",
+      "label": "Frontier Model Evaluation"
+    },
+    {
+      "slug": "ai-safety-institute",
+      "label": "AI Safety Institute"
+    },
+    {
+      "slug": "eu-ai-act-regulatory-instrument",
+      "label": "EU AI Act Regulatory Instrument"
+    },
+    {
+      "slug": "direct-preference-optimisation",
+      "label": "Direct Preference Optimisation"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "language-model-alignment",
+      "label": "Language Model Alignment"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "frontier-models",
+      "label": "Frontier Models"
+    },
+    {
+      "slug": "frontier-model-training",
+      "label": "Frontier Model Training"
+    },
+    {
+      "slug": "compute-governance",
+      "label": "Compute Governance"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "instruction-tuning",
+      "label": "Instruction Tuning"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-agent-system",
@@ -139,8 +300,28 @@
       "label": "AI Companies"
     },
     {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
+    },
+    {
+      "slug": "answer-ai",
+      "label": "Answer AI"
     },
     {
       "slug": "california-ai-bill",

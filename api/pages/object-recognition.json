@@ -131,6 +131,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
       "slug": "augmented-reality-ar",
       "label": "Augmented Reality (AR)"
     },

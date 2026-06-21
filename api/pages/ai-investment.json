@@ -4,27 +4,133 @@
   "slug": "ai-investment",
   "public": true,
   "classIri": "urn:ngm:class:ai-investment",
-  "domain": "ai",
-  "definition": "AI Investment is the allocation of capital toward artificial-intelligence research, talent, compute infrastructure, startups, and data assets in pursuit of strategic or financial returns. It spans venture funding, corporate capital expenditure on data centres and chips, sovereign funds, and public research grants. The scale and concentration of this capital is a primary driver of competitive dynamics among firms and nations.",
+  "domain": "economics",
+  "definition": "AI Investment is the allocation of capital toward artificial-intelligence research, talent, compute infrastructure, startups, and data assets in pursuit of strategic or financial returns. It spans venture funding, corporate capital expenditure on data centres and chips, sovereign wealth funds, public research grants, and hyperscaler balance-sheet commitments. The scale and concentration of this capital is a primary driver of competitive dynamics among firms and nations, with global AI corporate investment reaching $581 billion in 2025 and Q1 2026 venture activity alone surpassing that figure. Investment categories include frontier-model lab funding, compute infrastructure build-out, application-layer enterprise AI, and sovereign compute programmes. Returns are gated by access to scarce inputs \u2014 advanced semiconductor capacity, high-bandwidth memory, and specialised research talent \u2014 creating oligopolistic supply-side dynamics that shape long-run market structure.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:economics",
       "label": "Economics"
+    },
+    {
+      "id": "urn:ngm:class:capital-markets",
+      "label": "Capital Markets"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.88,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:venture-capital",
+        "label": "Venture Capital"
+      },
+      {
+        "id": "urn:ngm:class:corporate-capital-expenditure",
+        "label": "Corporate Capital Expenditure"
+      },
+      {
+        "id": "urn:ngm:class:sovereign-wealth-fund",
+        "label": "Sovereign Wealth Fund"
+      },
+      {
+        "id": "urn:ngm:class:public-research-grants",
+        "label": "Public Research Grants"
+      },
+      {
+        "id": "urn:ngm:class:mega-round-financing",
+        "label": "Mega-Round Financing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ai-chips",
+        "label": "AI Chips"
+      },
+      {
+        "id": "urn:ngm:class:gpu-supply-chain",
+        "label": "GPU Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-talent",
+        "label": "AI Research Talent"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:frontier-models",
+        "label": "Frontier Models"
+      },
+      {
+        "id": "urn:ngm:class:economic-competitiveness",
+        "label": "Economic Competitiveness"
+      },
+      {
+        "id": "urn:ngm:class:ai-sovereignty",
+        "label": "AI Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:innovation-ecosystems",
+        "label": "Innovation Ecosystems"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-ai-adoption",
+        "label": "Enterprise AI Adoption"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:semiconductor-industry",
+        "label": "Semiconductor Industry"
+      },
+      {
+        "id": "urn:ngm:class:geopolitics",
+        "label": "Geopolitics"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-frameworks",
+        "label": "Regulatory Frameworks"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:national-ai-strategies",
+        "label": "National AI Strategies"
+      },
+      {
+        "id": "urn:ngm:class:industrial-strategy",
+        "label": "Industrial Strategy"
+      },
+      {
+        "id": "urn:ngm:class:export-controls",
+        "label": "Export Controls"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      },
+      {
+        "id": "urn:ngm:class:ai-research-talent",
+        "label": "AI Research Talent"
+      },
+      {
+        "id": "urn:ngm:class:compute-access",
+        "label": "Compute Access"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -35,11 +141,276 @@
       {
         "id": "urn:ngm:class:ai-chips",
         "label": "AI Chips"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open Source AI"
+      },
+      {
+        "id": "urn:ngm:class:talent-concentration",
+        "label": "Talent Concentration"
+      },
+      {
+        "id": "urn:ngm:class:market-concentration",
+        "label": "Market Concentration"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "ai-chips",
+      "label": "AI Chips"
+    },
+    {
+      "slug": "ai-cooperation",
+      "label": "AI Cooperation"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "AI Policy"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "ai-research-talent",
+      "label": "AI Research Talent"
+    },
+    {
+      "slug": "ai-sovereignty",
+      "label": "AI Sovereignty"
+    },
+    {
+      "slug": "ai-startups",
+      "label": "AI Startups"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "antitrust-oversight",
+      "label": "Antitrust Oversight"
+    },
+    {
+      "slug": "capital-markets",
+      "label": "Capital Markets"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "compute-access",
+      "label": "Compute Access"
+    },
+    {
+      "slug": "compute-governance",
+      "label": "Compute Governance"
+    },
+    {
+      "slug": "corporate-capital-expenditure",
+      "label": "Corporate Capital Expenditure"
+    },
+    {
+      "slug": "data-centre-infrastructure",
+      "label": "Data Centre Infrastructure"
+    },
+    {
+      "slug": "deepseek",
+      "label": "DeepSeek"
+    },
+    {
+      "slug": "economic-competitiveness",
+      "label": "Economic Competitiveness"
+    },
+    {
+      "slug": "enterprise-ai-adoption",
+      "label": "Enterprise AI Adoption"
+    },
+    {
+      "slug": "export-controls",
+      "label": "Export Controls"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "frontier-models",
+      "label": "Frontier Models"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "geopolitics",
+      "label": "Geopolitics"
+    },
+    {
+      "slug": "gpu-supply-chain",
+      "label": "GPU Supply Chain"
+    },
+    {
+      "slug": "hyperscaler",
+      "label": "Hyperscaler"
+    },
+    {
+      "slug": "industrial-strategy",
+      "label": "Industrial Strategy"
+    },
+    {
+      "slug": "inference-optimisation",
+      "label": "Inference Optimisation"
+    },
+    {
+      "slug": "innovation-ecosystems",
+      "label": "Innovation Ecosystems"
+    },
+    {
+      "slug": "isambard-ai",
+      "label": "Isambard-AI"
+    },
+    {
+      "slug": "market-concentration",
+      "label": "Market Concentration"
+    },
+    {
+      "slug": "mega-round-financing",
+      "label": "Mega-Round Financing"
+    },
+    {
+      "slug": "meta-ai",
+      "label": "Meta AI"
+    },
+    {
+      "slug": "national-ai-strategies",
+      "label": "National AI Strategies"
+    },
+    {
+      "slug": "openai",
+      "label": "OpenAI Research Organisation"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    },
+    {
+      "slug": "productivity-gains",
+      "label": "Productivity Gains"
+    },
+    {
+      "slug": "public-research-grants",
+      "label": "Public Research Grants"
+    },
+    {
+      "slug": "return-on-investment",
+      "label": "Return on Investment"
+    },
+    {
+      "slug": "semiconductor-industry",
+      "label": "Semiconductor Industry"
+    },
+    {
+      "slug": "sovereign-wealth-fund",
+      "label": "Sovereign Wealth Fund"
+    },
+    {
+      "slug": "talent-concentration",
+      "label": "Talent Concentration"
+    },
+    {
+      "slug": "technology-race",
+      "label": "Technology Race"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "uk-ai-sector",
+      "label": "UK AI Sector"
+    },
+    {
+      "slug": "venture-capital",
+      "label": "Venture Capital"
+    },
+    {
+      "slug": "xai",
+      "label": "xAI"
+    },
+    {
+      "slug": "ai-technique",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act Regulatory Instrument"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Large-Scale Pretrained Foundation Model"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI Research Organisation"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "industrial-organization-domain",
+      "label": "IndustrialOrganizationDomain"
+    },
+    {
+      "slug": "market-layer",
+      "label": "MarketLayer"
+    },
+    {
+      "slug": "institutional-layer",
+      "label": "InstitutionalLayer"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
     {
       "slug": "competition-in-ai",
       "label": "Competition in AI"

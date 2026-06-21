@@ -1,8 +1,6 @@
 - ### Definition
   - The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications.
 
-bridges-to:: [[DID Nostr Identity]]
-
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:DigitalActorCreation
   - owl-role:: Concept
@@ -12,6 +10,7 @@ bridges-to:: [[DID Nostr Identity]]
   - is-subclass-of:: [[Digital Human Technology]]
   - requires:: [[Motion Capture]], [[3D Modeling]], [[AI Synthesis]]
   - enables:: [[Virtual Performances]], [[Digital Twins]], [[Synthetic Media]]
+  - bridges-to:: [[DID Nostr Identity]]
 
 - ### Content
 

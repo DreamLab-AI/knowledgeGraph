@@ -55,6 +55,14 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
       "slug": "chatbots",
       "label": "Chatbots"
     }

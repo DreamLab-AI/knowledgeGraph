@@ -1297,7 +1297,6 @@ public:: true
 	  TransitiveObjectProperty(ai:dependsOn)
 	  FunctionalDataProperty(ai:emergenceYear)
 	  FunctionalDataProperty(ai:typicalLatencyMs)
-	  ```
 
   - ## About AI Diagram Tools
   - **AI Diagram Tools** are the product category that emerged in 2023 once large language models became fluent in declarative diagram grammars. They compress the long-standing gap between two previously disconnected worlds: the informal whiteboard or napkin sketch that captures an architect's thinking in seconds, and the formal diagram-as-code source (Mermaid, PlantUML, Graphviz, D2, Structurizr) that supports version control, code review, and automated rendering but takes 30-60 minutes of manual authoring per non-trivial diagram. The LLM sits between the two as a compiler: prose in, declarative grammar out, deterministic rendering downstream.
@@ -1377,7 +1376,7 @@ public:: true
 
 	  - **Lucidchart AI** (lucid.app): Lucid Software, founded 2010 in South Jordan Utah, public 2021 (NASDAQ: LCID? — note Lucid Software is private, distinct from Lucid Motors). Released "Lucidchart AI" GA February 2024 across its 70M+ user base. Features: auto-diagram from text, AI visual activities, AI prompt flow generation, summarise-and-diagram for meetings. Enterprise pricing from $20/user/month. Distinctive for tight Atlassian Confluence/Jira integration.
 
-	  - **Miro AI** (miro.com): Miro, Andrey Khusid 2011, $17.5B private valuation 2022. AI features launched July 2023 GA, expanded April 2024. Generates mind maps, diagrams, sticky-note clusters, summaries from selection. 60M+ users globally; AI features in all paid tiers from $10/user/month.
+	  - **Miro AI** (miro.com): Miro, Andrey Khusid 2011, $17.5B private valuation 2022. AI features launched July 2023 GA, expanded April 2024. Generates mind maps, diagrams, sticky-note clusters, summaries from selection. 90M+ users globally as of 2026, approximately $500M ARR; AI features in all paid tiers from $10/user/month.
 
 	  - **Napkin AI** (napkin.ai): Founded 2023 by Pramod Sharma (ex-Osmo) and Jerome Scholler. Launched private beta March 2024, public Q3 2024. Distinctive editorial aesthetic — generates "visuals from your text" in newsletter/Medium-essay style rather than software architecture. Raised $10M seed from Accel October 2024. Free during beta, paid tiers TBC.
 
@@ -1519,7 +1518,7 @@ public:: true
 
 	  As of January 2026 the AI diagram tools category is maturing rapidly, with three distinct competitive tiers and a clear technology direction.
 
-	  **Tier 1 — Incumbent platforms with AI layers**: Lucidchart AI (70M+ users), Miro AI (60M+ users), draw.io (30M+ users), Atlassian Rovo (250K+ Atlassian customers). These compete on distribution, not AI quality, and integrate AI into existing workflows.
+	  **Tier 1 — Incumbent platforms with AI layers**: Lucidchart AI (70M+ users), Miro AI (90M+ users as of 2026), draw.io (30M+ users), Atlassian Rovo (5M+ monthly active users as of Q2 FY26). These compete on distribution, not AI quality, and integrate AI into existing workflows.
 
 	  **Tier 2 — LLM-native challengers**: Eraser DiagramGPT (80K paying users), Whimsical AI (5M+ users), Mermaid Chart (1.2M+ users), Napkin AI (200K+ private beta), Excalidraw AI (500K+ paying). Built post-2022 with AI as the primary value proposition. Eraser remains the engineering-focused leader; Napkin the editorial leader.
 
@@ -1550,10 +1549,10 @@ public:: true
 	  - OMG SysML v2 (October 2024) provides UML-like grammar for systems engineering — AI tools beginning to target it
 
 	  **Competitive dynamics (January 2026)**:
-	  - Eraser, Whimsical and Napkin each raised additional funding in 2024-2025 indicating sustained investor confidence. Eraser closed a $12M Series B in November 2025 led by Index Ventures. Whimsical at $80M ARR is approaching IPO scale though has filed no S-1. Napkin AI extended its seed in March 2025 with a $25M Series A from Lightspeed.
+	  - Eraser, Whimsical and Napkin each raised additional funding in 2024-2025 indicating sustained investor confidence. Eraser closed a $12M Series B in November 2025 led by Index Ventures. Whimsical at $80M ARR is approaching IPO scale though has filed no S-1. Napkin AI has raised approximately $19.5M in total disclosed funding as of early 2026.
 	  - Lucid Software publicly disclosed at its 2024 Q4 earnings call that 38% of new enterprise expansion was AI-attributable
-	  - Atlassian Rovo crossed 100K activated paid users by September 2025 per the Atlassian Q2 FY26 letter to shareholders
-	  - Notion AI usage (which includes diagram blocks) reached 4M+ paid seats in October 2025
+	  - Atlassian Rovo reached 5M+ monthly active users as of Q2 FY26 (ending March 2025), reflecting the broad enterprise rollout across Atlassian Cloud customers
+	  - Notion AI was bundled into Business and Enterprise tiers from May 2025, removing the standalone add-on for new users; prior add-on base reached 4M+ paid seats
 
 	  **Open-source ecosystem health**:
 	  - Mermaid.js v11 has 70K+ stars, 700+ contributors, 12.5M weekly npm downloads, monthly minor releases

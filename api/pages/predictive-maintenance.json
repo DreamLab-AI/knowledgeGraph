@@ -477,6 +477,10 @@
   ],
   "backlinks": [
     {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
       "slug": "cold-chain-monitoring",
       "label": "Cold Chain Monitoring"
     },

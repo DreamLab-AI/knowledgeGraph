@@ -45,6 +45,10 @@
       "label": "AI Companies"
     },
     {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
     }

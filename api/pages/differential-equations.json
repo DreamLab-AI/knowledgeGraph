@@ -140,6 +140,10 @@
   ],
   "backlinks": [
     {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

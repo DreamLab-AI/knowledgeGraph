@@ -155,6 +155,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
     },

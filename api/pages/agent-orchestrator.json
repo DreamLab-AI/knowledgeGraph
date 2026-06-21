@@ -5,19 +5,61 @@
   "public": true,
   "classIri": "urn:ngm:class:agent-orchestrator",
   "domain": "ai",
-  "definition": "An Agent Orchestrator is a control component within a multi-agent system responsible for decomposing high-level goals into sub-tasks, assigning those tasks to appropriate specialised agents, monitoring execution progress, handling failures and retries, and assembling partial results into coherent outputs. It acts as the coordination hub that transforms a pool of individual autonomous agents into a collaborative system capable of accomplishing complex, multi-step objectives.",
+  "definition": "An Agent Orchestrator is the directive control component of a multi-agent architecture that decomposes high-level goals into directed acyclic graphs of sub-tasks, selects and dispatches those tasks to specialised sub-agents via a structured Agent Communication Protocol, monitors execution state, resolves inter-task data dependencies, handles timeouts and failures through retry or fallback logic, and assembles partial results into coherent outputs \u2014 operating atop an Agent Runtime that manages the lifecycle of individual agents and providing the coordination hub that transforms a pool of autonomous agents into a collaborative system capable of accomplishing complex, long-horizon objectives.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "id": "urn:ngm:class:intelligent-system",
+      "label": "Intelligent System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.91,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:task-decomposition",
+        "label": "Task Decomposition"
+      },
+      {
+        "id": "urn:ngm:class:goal-planner",
+        "label": "Goal Planner"
+      },
+      {
+        "id": "urn:ngm:class:result-validation",
+        "label": "Result Validation"
+      },
+      {
+        "id": "urn:ngm:class:error-recovery",
+        "label": "Error Recovery"
+      },
+      {
+        "id": "urn:ngm:class:scheduling",
+        "label": "Scheduling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:agentic-workflow",
@@ -26,11 +68,41 @@
       {
         "id": "urn:ngm:class:autonomous-task-execution",
         "label": "Autonomous Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:plan-and-execute-pattern",
+        "label": "Plan-and-Execute Pattern"
+      },
+      {
+        "id": "urn:ngm:class:react-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:single-agent-system",
+        "label": "Single-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:workflow-engine",
+        "label": "Classical Workflow Engine"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -44,23 +116,361 @@
       {
         "id": "urn:ngm:class:agent-runtime",
         "label": "Agent Runtime"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:coordination-mechanisms",
         "label": "Coordination Mechanisms"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:workflow-engine",
+        "label": "Workflow Engine"
+      },
+      {
+        "id": "urn:ngm:class:bdi-architecture",
+        "label": "BDI Architecture"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "coordination-mechanisms",
+      "label": "Coordination Mechanisms"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain-of-Thought"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "lang-graph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "autogen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "openai-agents-sdk",
+      "label": "OpenAI Agents SDK"
+    },
+    {
+      "slug": "task-decomposition",
+      "label": "Task Decomposition"
+    },
+    {
+      "slug": "directed-acyclic-graph",
+      "label": "Directed Acyclic Graph"
+    },
+    {
+      "slug": "error-recovery",
+      "label": "Error Recovery"
+    },
+    {
+      "slug": "plan-and-execute-pattern",
+      "label": "Plan-and-Execute Pattern"
+    },
+    {
+      "slug": "react-pattern",
+      "label": "ReAct Pattern"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "workflow-engine",
+      "label": "Workflow Engine"
+    },
+    {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
+    },
+    {
+      "slug": "contract-net-protocol",
+      "label": "Contract Net Protocol"
+    },
+    {
+      "slug": "aws-bedrock-agents",
+      "label": "AWS Bedrock Agents"
+    },
+    {
+      "slug": "google-vertex-ai",
+      "label": "Google Vertex AI"
+    },
+    {
+      "slug": "azure-ai-studio",
+      "label": "Azure AI Studio"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "result-validation",
+      "label": "Result Validation"
+    },
+    {
+      "slug": "scheduling",
+      "label": "Scheduling"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "capability-advertisement",
+      "label": "Capability Advertisement"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "research-agent",
+      "label": "Research Agent"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
+      "slug": "software-development-automation",
+      "label": "Software Development Automation"
+    },
+    {
+      "slug": "planning-algorithm",
+      "label": "Planning Algorithm"
+    },
+    {
+      "slug": "reasoning-model",
+      "label": "Reasoning Model"
+    },
+    {
+      "slug": "goal-planner",
+      "label": "Goal Planner"
+    },
+    {
+      "slug": "message-passing",
+      "label": "Message Passing"
+    },
+    {
+      "slug": "structured-output",
+      "label": "Structured Output"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
+      "slug": "bdi-architecture",
+      "label": "BDI Architecture"
+    },
+    {
+      "slug": "orchester-ai",
+      "label": "OrchestralAI"
+    },
+    {
+      "slug": "agentorchestra",
+      "label": "AgentOrchestra"
+    },
+    {
+      "slug": "polaris-framework",
+      "label": "POLARIS Framework"
+    },
+    {
+      "slug": "software-engineering-automation",
+      "label": "Software Engineering Automation"
+    },
+    {
+      "slug": "it-operations",
+      "label": "IT Operations"
+    },
+    {
+      "slug": "agent-layer",
+      "label": "AgentLayer"
+    },
+    {
+      "slug": "autonomous-coding",
+      "label": "Autonomous Coding"
+    },
+    {
+      "slug": "evaluation",
+      "label": "Evaluation"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "intelligent-system",
+      "label": "Intelligent System"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "AgentLayer"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "agent2-agent-protocol-google-2025",
+      "label": "Agent2Agent Protocol (Google 2025)"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
     {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
     },
     {
       "slug": "cli-multi-agent-systems",

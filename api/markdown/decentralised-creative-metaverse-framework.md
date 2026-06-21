@@ -16,7 +16,6 @@
   - bridges-to:: [[Digital Twin]]
 
 - ### Content
-  - #Public page automatically published
   - ```mermaid
   sequenceDiagram
       participant User
@@ -68,6 +67,7 @@
       NosDAV->>+AIAgent: Confirm data storage
       AIAgent->>+Nostr: Publish interaction confirmation
       Nostr->>+User: Deliver interaction confirmation
+  ```
 
 - ### Provenance
   - sources::

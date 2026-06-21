@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:ngm-identification",
+  "title": "Identification",
+  "slug": "identification",
+  "public": true,
+  "classIri": "urn:ngm:class:identification",
+  "domain": "infrastructure",
+  "definition": "Identification is the process of establishing the claimed identity of an entity \u2014 person, device, or service \u2014 by associating it with a unique identifier and supporting evidence such as credentials, biometrics, or cryptographic proofs. It is a prerequisite step to authentication and authorisation in any access-control or trust framework. Identification schemes range from simple username\u2013password pairs to government-issued digital identity documents and decentralised self-sovereign identity systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:electronic-signature",
+        "label": "Electronic Signature"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -625,6 +625,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
       "slug": "pre-training",
       "label": "Pre Training"
     },

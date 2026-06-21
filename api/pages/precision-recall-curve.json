@@ -150,6 +150,10 @@
       "label": "AUC"
     },
     {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
       "slug": "f1-score",
       "label": "F1 Score"
     },

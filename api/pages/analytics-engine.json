@@ -63,6 +63,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
       "slug": "compliance-dashboard",
       "label": "Compliance Dashboard"
     },

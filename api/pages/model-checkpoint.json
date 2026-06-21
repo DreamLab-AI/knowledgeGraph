@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
       "slug": "comfy-ui-workflows",
       "label": "ComfyUI Workflows"
     }

@@ -132,12 +132,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
       "slug": "ai-video",
       "label": "AI Video"
     },
     {
       "slug": "ai-companions",
       "label": "AI companions"
+    },
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
     },
     {
       "slug": "deepfakes-and-fraudulent-content",

@@ -257,8 +257,28 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-group-formation",
+      "label": "AI Group Formation"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
       "slug": "ai-system-component",
       "label": "AI System Component"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
     },
     {
       "slug": "data-engineering",

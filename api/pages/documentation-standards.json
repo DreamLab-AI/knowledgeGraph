@@ -177,8 +177,16 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
       "slug": "ai-model-card",
       "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
     },
     {
       "slug": "ai-transparency-framework",

@@ -63,6 +63,10 @@
   ],
   "backlinks": [
     {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
       "slug": "blockchain-oracle",
       "label": "Blockchain Oracle"
     },

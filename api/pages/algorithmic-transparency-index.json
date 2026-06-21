@@ -205,6 +205,14 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
       "slug": "ai-governance-framework",
       "label": "AI Governance Framework"
     },

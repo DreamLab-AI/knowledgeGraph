@@ -45,6 +45,7 @@
       VirtualEconomy *-- ComputerNetwork : lightningNetwork
       MetaverseScene *-- anyURI : omniverseNucleusUrl
       MetaverseScene *-- anyURI : usdFile
+  ```
   - Mermaid version with some remaining OWL expressiveness:
   - ```mermaid
 	  classDiagram
@@ -118,6 +119,7 @@
 	      DigitalAsset "1" *-- "1" MetaverseAgent : hasOwner
 	      VirtualEconomy "1" *-- "0..*" EconomicPolicy : regulatedBy
 	      VirtualEconomy "1" *-- "0..*" Marketplace : hasMarketplace
+  ```
 
 - ### Provenance
   - sources::

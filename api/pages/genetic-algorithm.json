@@ -99,6 +99,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-group-formation",
+      "label": "AI Group Formation"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"
     }

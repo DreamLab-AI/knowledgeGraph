@@ -4,32 +4,99 @@
   "slug": "accountability-ai-0068",
   "public": true,
   "classIri": "urn:ngm:class:accountability-ai-0068",
-  "domain": "ai",
-  "definition": "Accountability (AI-0068) is the principle\u2014as codified in AI governance frameworks bearing that reference identifier\u2014that organisations deploying AI systems must be able to demonstrate responsibility for the systems' decisions, provide redress mechanisms when harm occurs, and maintain identifiable human oversight over automated processes. It imposes obligations on developers, deployers, and operators to document, audit, and accept liability for AI-driven outcomes, distinguishing it from the broader ethical principle of accountability by its grounding in specific regulatory or standards-based obligations.",
+  "domain": "ai-governance",
+  "definition": "Accountability (AI-0068) is the principle \u2014 codified under ontology reference identifier AI-0068 in structured AI ethics and governance frameworks \u2014 requiring that organisations developing, deploying, or operating AI systems must be able to demonstrate traceable, enforceable responsibility for the systems' decisions and impacts, provide redress mechanisms when harm occurs, maintain identifiable human oversight over automated processes, and document the entire lifecycle of AI systems through auditable artefacts. It grounds the ethical aspiration of accountability in specific technical and organisational obligations, distinguishing it from aspirational guidelines by imposing concrete requirements for AI audit trails, explainability outputs, model documentation, incident response procedures, and designated role assignments for liability.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:accountability",
       "label": "Accountability"
+    },
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.93,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:ai-audit",
         "label": "AI Audit"
       },
       {
-        "id": "urn:ngm:class:explainable-ai",
-        "label": "Explainable AI"
+        "id": "urn:ngm:class:model-card",
+        "label": "Model Card"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:ai-impact-assessment",
+        "label": "AI Impact Assessment"
       }
     ],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      },
+      {
+        "id": "urn:ngm:class:ai-documentation",
+        "label": "AI Documentation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:trust",
+        "label": "Trust"
+      },
+      {
+        "id": "urn:ngm:class:contestability",
+        "label": "Contestability"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-risk-management-framework",
+        "label": "NIST AI Risk Management Framework"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-42001-2023",
+        "label": "ISO/IEC 42001:2023"
+      },
+      {
+        "id": "urn:ngm:class:oecd-ai-principles",
+        "label": "OECD AI Principles"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
@@ -41,6 +108,10 @@
       {
         "id": "urn:ngm:class:transparency",
         "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
       }
     ],
     "standardizedBy": [],
@@ -57,10 +128,191 @@
       {
         "id": "urn:ngm:class:algorithmic-accountability",
         "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:fairness-ai",
+        "label": "Fairness (AI)"
+      },
+      {
+        "id": "urn:ngm:class:liability",
+        "label": "Liability"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-documentation",
+      "label": "AI Documentation"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
+      "slug": "ai-monitoring",
+      "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "ai-risk-management",
+      "label": "AI Risk Management"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "bias-mitigation",
+      "label": "Bias Mitigation"
+    },
+    {
+      "slug": "conformity-assessment",
+      "label": "Conformity Assessment"
+    },
+    {
+      "slug": "contestability",
+      "label": "Contestability"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "fairness-ai",
+      "label": "Fairness (AI)"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "incident-response",
+      "label": "Incident Response"
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "label": "ISO/IEC 42001:2023"
+    },
+    {
+      "slug": "iso-iec-42005",
+      "label": "ISO/IEC 42005"
+    },
+    {
+      "slug": "liability",
+      "label": "Liability"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "oecd-ai-principles",
+      "label": "OECD AI Principles"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "third-party-certification",
+      "label": "Third-Party Certification"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "trust",
+      "label": "Trust"
+    },
+    {
+      "slug": "uk-ai-strategy",
+      "label": "UK AI Strategy"
+    },
+    {
+      "slug": "ai-governance-and-ethics",
+      "label": "AIEthicsDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "ethical-framework",
+      "label": "EthicalFramework"
+    },
+    {
+      "slug": "governance-framework",
+      "label": "GovernanceFramework"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "RegulatoryCompliance"
+    },
+    {
+      "slug": "trust-and-governance-domain",
+      "label": "TrustAndGovernanceDomain"
+    }
+  ],
   "backlinks": [
     {
       "slug": "explainability",

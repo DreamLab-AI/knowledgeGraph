@@ -344,8 +344,6 @@ public:: true
 - ### Definition
   - Forensic procedure preserving integrity and authenticity of digital evidence through cryptographic sealing and immutable logging from capture to legal presentation.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalEvidenceChain
   - owl-role:: Process
@@ -356,6 +354,7 @@ bridges-to:: [[Blockchain]]
 - ### Relationships
   - has-part:: [[Cryptographic Hash]], [[Timestamp Authority]], [[Access Control]], [[Audit Log]], [[Digital Signature]]
   - is-part-of:: [[Digital Forensics Framework]]
+  - bridges-to:: [[Blockchain]]
   - requires:: [[Blockchain Ledger]], [[Identity Verification]], [[Secure Storage]], [[Tamper Detection]]
   - enables:: [[Forensic Investigation]], [[Legal Admissibility]], [[Evidence Integrity Verification]], [[Non-Repudiation]]
   - depends-on:: [[Public Key Infrastructure]], [[Evidence Collection Protocol]], [[Legal Framework]]

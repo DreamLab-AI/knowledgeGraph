@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:applied-machine-learning",
   "domain": "ai",
-  "definition": "Applied Machine Learning is the practice of using machine-learning methods to solve concrete real-world problems, emphasizing data preparation, feature engineering, model selection, validation, and deployment over novel algorithm research. It bridges theory and production by adapting established models to domain constraints such as latency, cost, and reliability. Disciplined evaluation through techniques like cross-validation is central to its workflow.",
+  "definition": "Applied Machine Learning is the deployment-focused discipline of adapting and operationalising machine-learning methods to solve concrete real-world problems under domain constraints of latency, cost, reliability, and compliance. It spans the full lifecycle from problem framing and data acquisition through feature engineering, model selection, rigorous evaluation using cross-validation and holdout sets, and sustained production monitoring via MLOps practices. Unlike theoretical ML research, which focuses on novel algorithmic contributions, Applied ML prioritises practical impact: models must generalise reliably to unseen data, behave predictably under distribution shift, and be maintainable by engineering teams across months or years of operation.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:machine-learning-discipline",
@@ -13,13 +13,85 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metrics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:logistics-optimisation",
+        "label": "Logistics Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:applied-mathematics",
+        "label": "Applied Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -29,17 +101,230 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:cross-validation",
-        "label": "Cross-Validation"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:logistics-optimization",
-        "label": "Logistics Optimization"
+        "id": "urn:ngm:class:automl",
+        "label": "AutoML"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:fairness-in-machine-learning",
+        "label": "Fairness in Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "logistics-optimisation",
+      "label": "Logistics Optimisation"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "model-selection",
+      "label": "Model Selection"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "data-preprocessing",
+      "label": "Data Preprocessing"
+    },
+    {
+      "slug": "hyperparameter-optimisation",
+      "label": "Hyperparameter Optimisation"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "automl",
+      "label": "AutoML"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "unsupervised-learning",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "demand-forecasting",
+      "label": "Demand Forecasting"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "regularisation",
+      "label": "Regularisation"
+    },
+    {
+      "slug": "ensemble-methods",
+      "label": "Ensemble Methods"
+    },
+    {
+      "slug": "feature-selection",
+      "label": "Feature Selection"
+    },
+    {
+      "slug": "random-forest",
+      "label": "Random Forest"
+    },
+    {
+      "slug": "gradient-boosting",
+      "label": "Gradient Boosting"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "fairness-in-machine-learning",
+      "label": "Fairness in Machine Learning"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "performance-metrics",
+      "label": "Performance Metrics"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "imbalanced-learning",
+      "label": "Imbalanced Learning"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "mathematical-foundations",
+      "label": "Mathematical Foundations"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "adversarial-machine-learning",
+      "label": "Adversarial Machine Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "time-series-analysis",
+      "label": "Time Series Analysis"
+    },
+    {
+      "slug": "recommendation-system",
+      "label": "Recommendation System"
+    },
+    {
+      "slug": "feature-store",
+      "label": "Feature Store"
+    },
+    {
+      "slug": "model-compression",
+      "label": "Model Compression"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "answer-ai",
+      "label": "Answer AI"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
     {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"

@@ -19,21 +19,6 @@
 - ### Content
   - The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.
 
-  ## Formal Specification
-
-  ```yaml
-  term: Adversarial Robustness
-  definition: "Resistance to intentionally crafted perturbations designed to cause failures"
-  domain: AI Security
-  type: Quality Attribute
-  threat_model:
-  - white_box: attacker has full model access
-  - black_box: attacker has query access only
-  - gray_box: partial knowledge
-  attack_types: [evasion, poisoning, model_extraction]
-  defense_approaches: [adversarial_training, certified_defenses, detection]
-  ```
-
   #### Key Characteristics
   ### Adversarial Examples
 
@@ -110,15 +95,6 @@
 
 		  *Adversarial robustness is critical for deploying AI in adversarial environments where attackers may attempt to deceive systems.*
 
-		  ```
-
-  - public-access:: true
-  - definition:: The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.
-
-
-
-  # Adversarial Robustness Ontology Entry – Updated 2025
-
   ## Academic Context
 
   - Adversarial robustness represents a fundamental challenge in machine learning security
@@ -147,7 +123,7 @@
   - Standards and regulatory frameworks
   - NIST AI 100-2e2025 (March 2025): comprehensive taxonomy and terminology for adversarial machine learning, establishing standardised risk management approaches
   - NIST AI Risk Management Framework: mandates systematic vulnerability testing prior to deployment
-  - United States Congress: No Adversarial AI Act (2025) addresses foreign adversary AI threats in government applications, requiring comprehensive risk inventories and federal procurement exclusion procedures
+  - United States Congress: No Adversarial AI Act (introduced June 2025, not yet enacted as of mid-2026) proposes to prohibit federal agencies from using AI technologies controlled by foreign adversaries (China, Russia, North Korea, Iran), requiring the Federal Acquisition Security Council to publish and maintain a restricted AI list
   - Monetary Authority of Singapore: published guidance on cyber risks associated with generative AI and deepfakes for financial institutions
   - Healthcare regulators: developing specialised frameworks requiring adversarial robustness testing for AI diagnostic systems
   - Aviation authorities: establishing certification requirements for safety-critical AI applications
@@ -221,37 +197,6 @@
   - **Review Status**: Comprehensive editorial review
   - **Verification**: Academic sources verified
   - **Regional Context**: UK/North England where applicable
-
-  ## Formal Specification
-
-  ```yaml
-  term: Adversarial Robustness
-  definition: "Resistance to intentionally crafted perturbations designed to cause failures"
-  domain: AI Security
-  type: Quality Attribute
-  threat_model:
-  - white_box: attacker has full model access
-  - black_box: attacker has query access only
-  - gray_box: partial knowledge
-  attack_types: [evasion, poisoning, model_extraction]
-  defense_approaches: [adversarial_training, certified_defenses, detection]
-  ```
-
-  #### References
-  ### Primary Sources
-
-		  1. **ISO/IEC TR 24029-1:2021** - Assessment of the robustness of neural networks
-		     - Section 4.5: "Adversarial robustness"
-		     - Testing methodologies
-		     - Source: ISO/IEC JTC 1/SC 42
-
-		  2. **Goodfellow, I.J., Shlens, J., & Szegedy, C. (2015)** - "Explaining and Harnessing Adversarial Examples"
-		     - Foundational paper on adversarial robustness
-		     - *ICLR 2015*
-
-		  3. **Madry, A., et al. (2018)** - "Towards Deep Learning Models Resistant to Adversarial Attacks"
-		     - PGD adversarial training
-		     - *ICLR 2018*
 
 - ### Provenance
   - sources:: [[FCA]], [[ISO/IEC TR 24029-1:2021]]

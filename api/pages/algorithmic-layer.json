@@ -71,6 +71,10 @@
   ],
   "backlinks": [
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

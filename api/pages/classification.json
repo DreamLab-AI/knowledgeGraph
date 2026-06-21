@@ -152,6 +152,10 @@
       "label": "AUC"
     },
     {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
       "slug": "pattern-recognition",
       "label": "Pattern Recognition"
     },

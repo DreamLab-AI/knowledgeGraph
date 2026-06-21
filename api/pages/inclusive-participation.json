@@ -83,6 +83,10 @@
       "label": "Accessible Experience"
     },
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "collaborative-whiteboard",
       "label": "Collaborative Whiteboard"
     }

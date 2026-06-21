@@ -101,6 +101,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     }

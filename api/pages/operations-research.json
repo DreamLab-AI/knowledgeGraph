@@ -139,6 +139,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
       "slug": "control-theory",
       "label": "Control Theory"
     },

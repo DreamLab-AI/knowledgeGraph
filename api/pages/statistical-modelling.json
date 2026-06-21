@@ -96,6 +96,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
       "slug": "time-series-forecasting",
       "label": "Time Series Forecasting"
     }

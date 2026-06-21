@@ -5,19 +5,32 @@
   "public": true,
   "classIri": "urn:ngm:class:ade20-k",
   "domain": "ai",
-  "definition": "ADE20K is a large-scale image segmentation dataset containing over 25,000 images annotated with 150 semantic categories covering both indoor and outdoor scenes, released by MIT's Computer Science and Artificial Intelligence Laboratory (CSAIL) in 2017. It provides pixel-level semantic, instance, and part-level annotations that enable training and benchmarking of scene parsing and semantic segmentation models. ADE20K serves as the foundational benchmark for the ImageNet Scene Parsing Challenge and has driven significant advances in dense prediction architectures.",
+  "definition": "ADE20K is a large-scale image segmentation dataset containing over 27,000 images annotated with 150 semantic categories covering both indoor and outdoor scenes, released by MIT CSAIL in 2017. It provides pixel-level semantic, instance, and part-level annotations enabling training and benchmarking of scene parsing and semantic segmentation models. ADE20K serves as the foundational benchmark for the ImageNet Scene Parsing Challenge and has driven significant advances in dense prediction architectures, with state-of-the-art models achieving 62.8 mIoU by 2022 (BEiT-3).",
   "subClassOf": [
     {
       "id": "urn:ngm:class:benchmarks",
       "label": "Benchmarks"
+    },
+    {
+      "id": "urn:ngm:class:benchmark-dataset",
+      "label": "Benchmark Dataset"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.9,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-curation",
+        "label": "Data Curation"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:semantic-segmentation",
@@ -30,6 +43,18 @@
       {
         "id": "urn:ngm:class:instance-segmentation",
         "label": "Instance Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:dense-prediction",
+        "label": "Dense Prediction"
+      },
+      {
+        "id": "urn:ngm:class:open-vocabulary-segmentation",
+        "label": "Open Vocabulary Segmentation"
       }
     ],
     "dependsOn": [],
@@ -44,6 +69,14 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth",
+        "label": "Ground Truth"
+      },
+      {
+        "id": "urn:ngm:class:crowdsourcing",
+        "label": "Crowdsourcing"
       }
     ],
     "supports": [],
@@ -57,10 +90,191 @@
       {
         "id": "urn:ngm:class:image-segmentation",
         "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "panoptic-segmentation",
+      "label": "Panoptic Segmentation"
+    },
+    {
+      "slug": "instance-segmentation",
+      "label": "Instance Segmentation"
+    },
+    {
+      "slug": "data-annotation",
+      "label": "Data Annotation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "coco-dataset",
+      "label": "COCO Dataset"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "benchmarks",
+      "label": "Benchmarks"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "image-classification",
+      "label": "Image Classification"
+    },
+    {
+      "slug": "data-curation",
+      "label": "Data Curation"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "autonomous-vehicle-navigation",
+      "label": "Autonomous Vehicle Navigation"
+    },
+    {
+      "slug": "robotics-perception",
+      "label": "Robotics Perception"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "slug": "ground-truth",
+      "label": "Ground Truth"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "vision-transformers",
+      "label": "Vision Transformers"
+    },
+    {
+      "slug": "image-processing",
+      "label": "Image Processing"
+    },
+    {
+      "slug": "object-recognition",
+      "label": "Object Recognition"
+    },
+    {
+      "slug": "scene-graph",
+      "label": "Scene Graph"
+    },
+    {
+      "slug": "dense-prediction",
+      "label": "Dense Prediction"
+    },
+    {
+      "slug": "open-vocabulary-segmentation",
+      "label": "Open Vocabulary Segmentation"
+    },
+    {
+      "slug": "weakly-supervised-learning",
+      "label": "Weakly Supervised Learning"
+    },
+    {
+      "slug": "semi-supervised-learning",
+      "label": "Semi-Supervised Learning"
+    },
+    {
+      "slug": "visual-grounding",
+      "label": "Visual Grounding"
+    },
+    {
+      "slug": "image-captioning",
+      "label": "Image Captioning"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical Imaging"
+    },
+    {
+      "slug": "places-dataset",
+      "label": "Places Dataset"
+    },
+    {
+      "slug": "sun-database",
+      "label": "SUN Database"
+    },
+    {
+      "slug": "zero-shot-learning",
+      "label": "Zero-Shot Learning"
+    },
+    {
+      "slug": "crowdsourcing",
+      "label": "Crowdsourcing"
+    }
+  ],
   "backlinks": [
     {
       "slug": "image-segmentation",

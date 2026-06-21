@@ -145,8 +145,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
       "slug": "access-control-system",
       "label": "Access Control System"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
     },
     {
       "slug": "ncsc",

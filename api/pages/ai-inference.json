@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.75,
+  "qualityScore": 0.91,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:continuous-batching",
         "label": "Continuous Batching"
+      },
+      {
+        "id": "urn:ngm:class:prefix-caching",
+        "label": "Prefix Caching"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
       }
     ],
     "requires": [
@@ -142,11 +150,228 @@
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:inference-optimisation",
+        "label": "Inference Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:inference-compute",
+        "label": "Inference Compute"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "gpu-acceleration",
+      "label": "GPU Acceleration"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
+      "slug": "tensor-parallelism",
+      "label": "Tensor Parallelism"
+    },
+    {
+      "slug": "quantisation",
+      "label": "Quantisation"
+    },
+    {
+      "slug": "real-time-ai-inference",
+      "label": "Real-Time AI Inference"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "autonomous-agents",
+      "label": "Autonomous Agents"
+    },
+    {
+      "slug": "model-weights",
+      "label": "Model Weights"
+    },
+    {
+      "slug": "inference-runtime",
+      "label": "Inference Runtime"
+    },
+    {
+      "slug": "hardware-accelerator",
+      "label": "Hardware Accelerator"
+    },
+    {
+      "slug": "kv-cache",
+      "label": "KV Cache"
+    },
+    {
+      "slug": "speculative-decoding",
+      "label": "Speculative Decoding"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
+      "slug": "prefix-caching",
+      "label": "Prefix Caching"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "on-device-ai",
+      "label": "On-Device AI"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "flash-attention",
+      "label": "Flash Attention"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain-of-Thought"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "data",
+      "label": "Data"
+    },
+    {
+      "slug": "inference-optimisation",
+      "label": "Inference Optimisation"
+    },
+    {
+      "slug": "model-compression",
+      "label": "Model Compression"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "onnx",
+      "label": "ONNX"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture-of-Experts"
+    },
+    {
+      "slug": "inference-compute",
+      "label": "Inference Compute"
+    },
+    {
+      "slug": "inference-hardware",
+      "label": "Inference Hardware"
+    },
+    {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    },
+    {
+      "slug": "edge-inference",
+      "label": "Edge Inference"
+    },
+    {
+      "slug": "distributed-inference",
+      "label": "Distributed Inference"
+    },
+    {
+      "slug": "model-inference",
+      "label": "Model Inference"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
     {
       "slug": "compute-layer",
       "label": "Compute Layer"

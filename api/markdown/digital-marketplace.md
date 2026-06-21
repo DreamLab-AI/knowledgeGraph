@@ -1,8 +1,6 @@
 - ### Definition
   - A virtual platform enabling the discovery, purchase, sale, and exchange of digital assets, NFTs, virtual goods, and services within metaverse environments, utilising blockchain technology for transparent transactions, ownership verification, and decentralised commerce.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalMarketplace
   - owl-role:: Concept
@@ -12,6 +10,7 @@ bridges-to:: [[Blockchain]]
   - is-subclass-of:: [[E-Commerce]]
   - requires:: [[Blockchain Infrastructure]], [[Smart Contracts]], [[Digital Wallets]]
   - enables:: [[NFT Trading]], [[Virtual Asset Exchange]], [[Creator Economy]]
+  - bridges-to:: [[Blockchain]]
 
 - ### Content
 
@@ -26,10 +25,10 @@ bridges-to:: [[Blockchain]]
 		- Virtual real estate: Decentraland, The Sandbox
 		- Gaming assets: Play-to-earn platforms
 		- Creator economies: Direct artist-to-buyer sales
-  - **Market Size (2024)**:
-		- Metaverse market: $61.8B growing to $426.9B by 2027
+  - **Market Size (2025)**:
+		- Metaverse market: estimated $142–189B in 2025 across major analyst estimates (Fortune Business Insights, IMARC, Precedence Research)
 		- 300+ operational metaverse projects
-		- 47.2% CAGR projected growth
+		- CAGR projections range from 22–46% through 2032–2034 depending on scope definition
   - **Key Benefits**: Decentralization, provable ownership, global access, reduced intermediaries
   - ## Applications
   - NFT art galleries and auctions

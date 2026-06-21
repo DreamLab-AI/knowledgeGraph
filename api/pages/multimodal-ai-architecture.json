@@ -82,5 +82,10 @@
       "label": "Variational Autoencoders"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    }
+  ]
 }

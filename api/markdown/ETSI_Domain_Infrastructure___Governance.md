@@ -116,18 +116,6 @@ public:: true
 
 - ### Content
   - The ETSI Infrastructure Governance domain establishes mechanisms and policies for managing distributed network infrastructure through autonomic management, trust domain separation, and policy enforcement enabling secure, scalable system coordination.
-  - ### Original Content
-		- ```
-  # ETSI Domain: Infrastructure / Governance
-
-		  ## Properties
-
-		  ## Terms in this Domain
-
-		  - [[Resilience Metric]]
-
-		  ## Query All Terms
-		  ```
   ## Academic Context
 
   - The ETSI Domain Infrastructure Governance refers to the governance framework and mechanisms that oversee the infrastructure domains within digital ecosystems, including metaverse environments.

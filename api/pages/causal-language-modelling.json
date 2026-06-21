@@ -63,6 +63,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     },

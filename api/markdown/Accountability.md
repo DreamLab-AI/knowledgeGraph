@@ -325,30 +325,6 @@ public:: true
   - ### The "Black Box" Problem
 		- The inner workings of complex deep learning models can be difficult to understand, making it challenging to explain their decisions and ensure their accountability.
 
-  - ### The "Black Box" Problem
-		- The inner workings of complex deep learning models can be difficult to understand, making it challenging to explain their decisions and ensure their accountability.
-
-  ## Formal Specification
-
-  ```yaml
-  term: Accountability
-  definition: "Clear assignment of responsibilities with mechanisms for oversight and redress"
-  domain: AI Governance
-  type: Organizational Principle
-  components:
-  - responsibility_assignment
-  - oversight_mechanisms
-  - audit_trails
-  - redress_mechanisms
-  - remediation_processes
-  levels:
-  - individual_accountability
-  - organizational_accountability
-  - regulatory_accountability
-  stakeholders: [developers, deployers, users, regulators, affected_individuals]
-  ```
-
-  #### Key Characteristics
   ### Dimensions of Accountability
 
 		  #### 1. Legal Accountability
@@ -789,15 +765,6 @@ public:: true
 
 		  *This definition emphasizes that accountability is not merely theoretical responsibility but requires concrete mechanisms for oversight, traceability, and redress.*
 
-		  ```
-
-  - public-access:: true
-  - definition:: The assignment of clear responsibilities for AI system development, deployment, and outcomes, coupled with mechanisms for oversight, redress, and remediation, ensuring that actors can be held answerable for system impacts and failures.
-
-
-
-  # Accountability.md - Updated Ontology Entry
-
   ## Academic Context
 
   - Definition and foundational principles
@@ -812,7 +779,7 @@ public:: true
   ## Current Landscape (2025)
 
   - Regulatory and policy frameworks
-  - EU AI Act mandates explainability, fairness, and accountability standards for high-risk AI systems[1]
+  - EU AI Act mandates explainability, fairness, and accountability standards for high-risk AI systems; prohibited practices have been enforceable since February 2025 and GPAI model rules since August 2025, though under the 2026 Digital Omnibus agreement the Annex III high-risk obligations are deferred to December 2027[1]
   - GDPR establishes accountability requirements for data processing and algorithmic decision-making[1]
   - UNESCO's Recommendation on AI Ethics emphasises that AI systems must not displace ultimate human responsibility and accountability, with member states required to implement structured oversight mechanisms[3]
   - Industry-specific guidelines increasingly embed accountability requirements into sector standards
@@ -885,38 +852,6 @@ public:: true
   - [3] UNESCO (2025). "Ethics of Artificial Intelligence: Recommendation." Available at: unesco.org/en/artificial-intelligence/recommendation-ethics
   - [4] Wharton School of Business, University of Pennsylvania (September 2025). "Operationalize AI Accountability: A Leadership Playbook." Wharton at Work. Available at: executiveeducation.wharton.upenn.edu/thought-leadership/wharton-at-work/2025/09/operationalizing-ai-accountability/
   - [5] Credo AI (2025). "The Meaning of Accountability in AI." Glossary. Available at: credo.ai/glossary/accountability
-
-  ---
-
-  **Note on improvements made:** Your original definition was admirably concise and technically sound. The expanded entry contextualises accountability within current regulatory frameworks (particularly the EU AI Act and UNESCO guidance), distinguishes it from related concepts within AI governance, and grounds it in contemporary practice. The addition of North England context reflects genuine innovation hubs in Manchester, Leeds, Newcastle, and Sheffield, though I should note that specific regional case studies would benefit from direct verification with local institutions. The 2025 sources confirm that accountability has evolved from theoretical principle to operational requirement—a shift worth emphasising for practitioners.
-
-
-  ## Metadata
-
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
-
-  ## Formal Specification
-
-  ```yaml
-  term: Accountability
-  definition: "Clear assignment of responsibilities with mechanisms for oversight and redress"
-  domain: AI Governance
-  type: Organizational Principle
-  components:
-  - responsibility_assignment
-  - oversight_mechanisms
-  - audit_trails
-  - redress_mechanisms
-  - remediation_processes
-  levels:
-  - individual_accountability
-  - organizational_accountability
-  - regulatory_accountability
-  stakeholders: [developers, deployers, users, regulators, affected_individuals]
-  ```
 
   #### References
   ### Primary Sources

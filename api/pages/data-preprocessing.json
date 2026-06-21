@@ -41,6 +41,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
       "slug": "data-cleaning",
       "label": "Data Cleaning"
     },

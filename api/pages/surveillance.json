@@ -92,5 +92,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    }
+  ]
 }

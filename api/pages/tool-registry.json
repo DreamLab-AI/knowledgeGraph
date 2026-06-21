@@ -41,8 +41,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
     },
     {
       "slug": "agentic-internet",

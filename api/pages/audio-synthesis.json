@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.91,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -21,6 +21,14 @@
       {
         "id": "urn:ngm:class:model-evaluation",
         "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
       }
     ],
     "enables": [
@@ -35,12 +43,24 @@
       {
         "id": "urn:ngm:class:music-generation",
         "label": "Music Generation"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      },
+      {
+        "id": "urn:ngm:class:voice-cloning",
+        "label": "Voice Cloning"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
       }
     ],
     "implements": [],
@@ -49,6 +69,10 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
       }
     ],
     "uses": [
@@ -63,12 +87,24 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:mel-spectrogram",
+        "label": "Mel-Spectrogram"
+      },
+      {
+        "id": "urn:ngm:class:neural-audio-codec",
+        "label": "Neural Audio Codec"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:content-generation",
         "label": "Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-music",
+        "label": "Adaptive Music"
       }
     ],
     "standardizedBy": [],
@@ -86,11 +122,232 @@
       {
         "id": "urn:ngm:class:gan",
         "label": "GAN"
+      },
+      {
+        "id": "urn:ngm:class:audio-signal-processing",
+        "label": "Audio Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:audio-deepfake",
+        "label": "Audio Deepfake"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "speech-synthesis",
+      "label": "Speech Synthesis"
+    },
+    {
+      "slug": "music-generation",
+      "label": "Music Generation"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "gan",
+      "label": "GAN"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "neural-audio-codec",
+      "label": "Neural Audio Codec"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "mel-spectrogram",
+      "label": "Mel-Spectrogram"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "flow-matching",
+      "label": "Flow Matching"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "speaker-verification",
+      "label": "Speaker Verification"
+    },
+    {
+      "slug": "voice-cloning",
+      "label": "Voice Cloning"
+    },
+    {
+      "slug": "audio-codec",
+      "label": "Audio Codec"
+    },
+    {
+      "slug": "source-separation",
+      "label": "Source Separation"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
+      "slug": "score-based-model",
+      "label": "Score-Based Model"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "adaptive-music",
+      "label": "Adaptive Music"
+    },
+    {
+      "slug": "audio-technology",
+      "label": "Audio Technology"
+    },
+    {
+      "slug": "zero-shot-learning",
+      "label": "Zero-Shot Learning"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "audio-deepfake",
+      "label": "Audio Deepfake"
+    },
+    {
+      "slug": "mean-opinion-score",
+      "label": "Mean Opinion Score"
+    },
+    {
+      "slug": "binaural-audio",
+      "label": "Binaural Audio"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    },
+    {
+      "slug": "content-delivery",
+      "label": "Content Delivery"
+    },
+    {
+      "slug": "gpu-acceleration",
+      "label": "GPU Acceleration"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "noise-schedule",
+      "label": "Noise Schedule"
+    },
+    {
+      "slug": "psychoacoustics",
+      "label": "Psychoacoustics"
+    },
+    {
+      "slug": "audio-spatialization",
+      "label": "Audio Spatialization"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "audio-system",
+      "label": "Audio System"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
     {
       "slug": "diffusion-models",
       "label": "Diffusion Models"

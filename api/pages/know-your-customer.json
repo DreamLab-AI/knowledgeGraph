@@ -140,6 +140,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
       "slug": "bc-0480-kyc-requirements",
       "label": "BC-0480-kyc-requirements"
     },

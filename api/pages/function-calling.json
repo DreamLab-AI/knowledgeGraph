@@ -605,16 +605,52 @@
   ],
   "backlinks": [
     {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
       "slug": "ai-search",
       "label": "AI Search"
+    },
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
     },
     {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
     },
     {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
     },
     {
       "slug": "agents",

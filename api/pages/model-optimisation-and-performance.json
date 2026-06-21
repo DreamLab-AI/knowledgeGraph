@@ -530,6 +530,10 @@
   ],
   "backlinks": [
     {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
+    },
+    {
       "slug": "fine-tuning",
       "label": "Fine Tuning"
     },

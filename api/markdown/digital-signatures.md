@@ -1,8 +1,6 @@
 - ### Definition
   - Cryptographic seals that confirm the authenticity and integrity of digital data using public-key cryptography, enabling transaction authorisation on blockchain networks, document authentication, and non-repudiation in metaverse and decentralised systems.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalSignatures
   - owl-role:: Concept
@@ -12,6 +10,7 @@ bridges-to:: [[Blockchain]]
   - is-subclass-of:: [[Cryptography]]
   - requires:: [[Private Key]], [[Hash Function]], [[Signature Algorithm]]
   - enables:: [[Authentication]], [[Data Integrity]], [[Non-Repudiation]]
+  - bridges-to:: [[Blockchain]]
 
 - ### Content
 

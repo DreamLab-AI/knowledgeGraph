@@ -124,6 +124,14 @@
   ],
   "backlinks": [
     {
+      "slug": "answer-ai",
+      "label": "Answer AI"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
+    },
+    {
       "slug": "function-calling",
       "label": "Function Calling"
     },

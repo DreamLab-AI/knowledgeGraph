@@ -87,6 +87,10 @@
   ],
   "backlinks": [
     {
+      "slug": "attention-mechanisms",
+      "label": "Attention Mechanisms"
+    },
+    {
       "slug": "cognitive-feedback-interface",
       "label": "Cognitive Feedback Interface"
     }

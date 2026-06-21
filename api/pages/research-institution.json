@@ -8,8 +8,8 @@
   "definition": "A research institution is an organisation whose primary mission is the systematic production of new knowledge through investigation, experimentation and scholarship. It encompasses universities, dedicated research laboratories, government agencies and independent institutes that employ researchers, secure funding, and disseminate findings via peer-reviewed publication. Research institutions provide the infrastructure, governance and intellectual community within which scientific and technical advances are pursued and validated.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:research-university",
-      "label": "Research University"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
@@ -92,6 +92,10 @@
   },
   "wikilinks": [],
   "backlinks": [
+    {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
     {
       "slug": "patent",
       "label": "Patent"

@@ -293,6 +293,18 @@
       "label": "Accessibility"
     },
     {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
       "slug": "aleo",
       "label": "Aleo"
     },

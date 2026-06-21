@@ -90,5 +90,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    }
+  ]
 }

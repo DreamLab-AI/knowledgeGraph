@@ -152,6 +152,10 @@
       "label": "Agents"
     },
     {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
+    },
+    {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
     },

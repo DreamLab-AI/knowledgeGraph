@@ -148,12 +148,24 @@
   ],
   "backlinks": [
     {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
       "slug": "adam-optimizer",
       "label": "Adam Optimizer"
     },
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
       "slug": "attention",
       "label": "Attention"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
     },
     {
       "slug": "diffusion-models",

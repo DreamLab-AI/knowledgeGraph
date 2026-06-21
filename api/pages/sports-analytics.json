@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
       "slug": "motion-capture",
       "label": "Motion Capture"
     },

@@ -342,8 +342,6 @@ public:: true
 - ### Definition
   - A comprehensive virtual system for protecting, licensing, and enforcing usage rights for digital content through encryption, access control, and automated rights enforcement mechanisms.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalRightsManagementExtended
   - owl-role:: Object
@@ -357,6 +355,7 @@ bridges-to:: [[Blockchain]]
   - requires:: [[Identity Verification System]], [[Cryptographic Key Management]], [[Payment Gateway]]
   - enables:: [[Content Licensing]], [[Piracy Prevention]], [[Usage Rights Enforcement]], [[Revenue Distribution]]
   - depends-on:: [[Smart Contract]], [[Blockchain Network]], [[Content Delivery Network]]
+  - bridges-to:: [[Virtual Economy]]
 
 - ### Content
   Digital Rights Management (Extended) — content pending enrichment.

@@ -146,6 +146,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
     },

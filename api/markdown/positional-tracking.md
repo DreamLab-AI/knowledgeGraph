@@ -1,0 +1,2 @@
+- ### Definition
+  - Positional Tracking is the real-time sensing and computation of a device or body's position and orientation in 3D space, enabling spatial computing systems to align virtual content accurately with the physical environment.

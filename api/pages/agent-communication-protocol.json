@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.91,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -21,6 +21,10 @@
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:trust-management",
+        "label": "Trust Management"
       }
     ],
     "enables": [
@@ -43,9 +47,30 @@
       {
         "id": "urn:ngm:class:task-delegation",
         "label": "Task Delegation"
+      },
+      {
+        "id": "urn:ngm:class:negotiation",
+        "label": "Negotiation"
+      },
+      {
+        "id": "urn:ngm:class:capability-advertisement",
+        "label": "Capability Advertisement"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:concurrent-programming",
+        "label": "Concurrent Programming"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:fipa-acl",
@@ -54,12 +79,20 @@
       {
         "id": "urn:ngm:class:contract-net-protocol",
         "label": "Contract Net Protocol"
+      },
+      {
+        "id": "urn:ngm:class:kqml",
+        "label": "KQML"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:remote-procedure-call",
         "label": "Remote Procedure Call"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
       }
     ],
     "bridgesTo": [
@@ -70,6 +103,10 @@
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
       }
     ],
     "uses": [
@@ -88,6 +125,14 @@
       {
         "id": "urn:ngm:class:websocket",
         "label": "WebSocket"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "id": "urn:ngm:class:json-rpc-2-0",
+        "label": "JSON-RPC 2.0"
       }
     ],
     "supports": [
@@ -102,6 +147,18 @@
       {
         "id": "urn:ngm:class:negotiation",
         "label": "Negotiation"
+      },
+      {
+        "id": "urn:ngm:class:warehouse-automation",
+        "label": "Warehouse Automation"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:smart-grid",
+        "label": "Smart Grid"
       }
     ],
     "standardizedBy": [],
@@ -122,14 +179,255 @@
       {
         "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:bdi-architecture",
+        "label": "BDI Architecture"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "slug": "inter-agent-communication",
+      "label": "Inter-Agent Communication"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "task-delegation",
+      "label": "Task Delegation"
+    },
+    {
+      "slug": "message-passing",
+      "label": "Message Passing"
+    },
+    {
+      "slug": "speech-act-theory",
+      "label": "Speech Act Theory"
+    },
+    {
+      "slug": "json-ld",
+      "label": "JSON-LD"
+    },
+    {
+      "slug": "websocket",
+      "label": "WebSocket"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
+    },
+    {
+      "slug": "contract-net-protocol",
+      "label": "Contract Net Protocol"
+    },
+    {
+      "slug": "capability-advertisement",
+      "label": "Capability Advertisement"
+    },
+    {
+      "slug": "error-handling",
+      "label": "Error Handling"
+    },
+    {
+      "slug": "negotiation",
+      "label": "Negotiation"
+    },
+    {
+      "slug": "remote-procedure-call",
+      "label": "Remote Procedure Call"
+    },
+    {
+      "slug": "distributed-collaboration",
+      "label": "Distributed Collaboration"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "kqml",
+      "label": "KQML"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "coordination-protocol",
+      "label": "Coordination Protocol"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "http-protocol",
+      "label": "HTTP Protocol"
+    },
+    {
+      "slug": "json-rpc-2-0",
+      "label": "JSON-RPC 2.0"
+    },
+    {
+      "slug": "agent-network-protocol",
+      "label": "Agent Network Protocol"
+    },
+    {
+      "slug": "agent-communication-protocol-acp",
+      "label": "ACP (IBM)"
+    },
+    {
+      "slug": "linux-foundation",
+      "label": "Linux Foundation"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "multi-agent-reinforcement-learning",
+      "label": "Multi-Agent Reinforcement Learning"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "bdi-architecture",
+      "label": "BDI Architecture"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "trust-management",
+      "label": "Trust Management"
+    },
+    {
+      "slug": "oauth-2-0",
+      "label": "OAuth 2.0"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "event-driven-architecture",
+      "label": "Event-Driven Architecture"
+    },
+    {
+      "slug": "warehouse-automation",
+      "label": "Warehouse Automation"
+    },
+    {
+      "slug": "algorithmic-trading",
+      "label": "Algorithmic Trading"
+    },
+    {
+      "slug": "smart-grid",
+      "label": "Smart Grid"
+    },
+    {
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
+    },
+    {
+      "slug": "open-agent-standard",
+      "label": "OpenAgent Standard"
+    },
+    {
+      "slug": "concurrent-programming",
+      "label": "Concurrent Programming"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
     {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "agent2-agent-protocol-google-2025",
+      "label": "Agent2Agent Protocol (Google 2025)"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
     },
     {
       "slug": "model-context-protocol",

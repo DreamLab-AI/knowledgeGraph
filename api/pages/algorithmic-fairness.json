@@ -96,6 +96,18 @@
       "label": "AI Ethics"
     },
     {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
       "slug": "privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
     }

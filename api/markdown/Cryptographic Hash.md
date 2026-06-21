@@ -373,92 +373,13 @@ alias:: CryptographicHash
   - bridges-to:: [[AI Agent System]] (ai)
 - ### Content
   - A deterministic mathematical transformation converting arbitrary input data into fixed-length output values with collision-resistance properties that ensure [[Data Integrity]] and [[Tamper Detection]]. [[Cryptographic Hash Functions]] underpin [[Digital Signatures]], [[Merkle Trees]], [[Blockchain Validation]], and cryptographic security protocols.
-  - ### Original Content
-		- ```
-  # Cryptographic Hash
-
-		  ## Definition
-		  A deterministic mathematical function that transforms arbitrary-sized input data into a fixed-size output (digest) with properties of collision resistance, pre-image resistance, and avalanche effect.
-
-		  ## OWL Functional Syntax
-
-
-		  ## Properties
-
-		  ### Object Properties
-		  - **hasProperty**: CryptographicHash → CryptographicProperty (required, multiple)
-		  - **producesOutput**: CryptographicHash → FixedSizeDigest (required)
-		  - **usedIn**: CryptographicHash → BlockchainComponent (0..*)
-		  - **basedOnConstruction**: CryptographicHash → HashConstruction (functional)
-		  - **vulnerableTo**: CryptographicHash → CryptographicAttack (0..*)
-
-		  ### Data Properties
-		  - **outputSize**: xsd:integer (bits, 128-512)
-		  - **deterministic**: xsd:boolean (always true)
-		  - **computationalComplexity**: xsd:string (e.g., "O(n)")
-		  - **blockSize**: xsd:integer (bits)
-		  - **rounds**: xsd:integer (> 0)
-		  - **securityLevel**: xsd:integer (bits)
-		  - **standardized**: xsd:boolean
-
-		  ## Axioms
-
-
-		  ## Subclass Hierarchy
-
-
-		  ## Inference Rules
-
-		  ```sparql
-		  # Rule: Hash used in Bitcoin must be SHA-256
-		  [BitcoinHashInference:
-		    (?h rdf:type :CryptographicHash)
-		    (?h :usedIn :BitcoinBlockchain)
-		    ->
-		    (?h rdf:type :SHA256)
-		  ]
-
-		  # Rule: Hash used in Ethereum must be Keccak-256
-		  [EthereumHashInference:
-		    (?h rdf:type :CryptographicHash)
-		    (?h :usedIn :EthereumBlockchain)
-		    ->
-		    (?h rdf:type :Keccak256)
-		  ]
-
-		  # Rule: Weak hash with small output size
-		  [WeakHashInference:
-		    (?h rdf:type :CryptographicHash)
-		    (?h :outputSize ?size)
-		    lessThan(?size, 256)
-		    ->
-		    (?h :securityLevel :Weak)
-		  ]
-		  ```
-
-		  ## Examples
-		  - SHA-256 (Bitcoin)
-		  - Keccak-256 (Ethereum)
-		  - BLAKE2b (Zcash)
-		  - SHA3-256 (Various)
-		  - RIPEMD-160 (Bitcoin addresses)
-
-		  ## Related Terms
-		  - HashFunction
-		  - MerkleTree
-		  - DigitalSignature
-		  - ProofOfWork
-		  - BlockHash
-		  - TransactionHash
-
-		  ```
   ## Academic Context
 
   - Cryptographic hash functions are fundamental algorithms in computer science and cryptography, producing fixed-size outputs (hashes) from arbitrary input data.
   - They ensure data integrity, authentication, and underpin blockchain technologies by providing unique digital fingerprints.
   - The academic foundation lies in complexity theory and information security, with seminal works dating back to the 1970s and 1980s, including the development of MD5, SHA families, and collision resistance principles.
 
-  ## Current Landscape (2025)
+  ## Current Landscape (2026)
 
   - Cryptographic hashes remain critical in securing digital assets, including those in metaverse ecosystems, blockchain platforms, and digital identity systems.
   - They enable verification of transactions, digital signatures, and the immutability of distributed ledgers.
@@ -514,13 +435,6 @@ alias:: CryptographicHash
   2. National Institute of Standards and Technology. (2015). SHA-3 Standard: Permutation-Based Hash and Extendable-Output Functions. FIPS PUB 202. https://doi.org/10.6028/NIST.FIPS.202  
   3. Bernstein, D. J., Lange, T., & Peters, C. (2017). Attacking and defending the SHA-3 finalists. Journal of Cryptology, 30(3), 641-671. https://doi.org/10.1007/s00145-016-9230-5
 
-
-  ## Metadata
-
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
   - sources:: [[NIST FIPS PUB 202]], [[RFC 1321]], [[NCSC]]

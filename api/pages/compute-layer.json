@@ -201,6 +201,14 @@
       "label": "AI Game Agent"
     },
     {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
       "slug": "algorithm-layer",
       "label": "Algorithm Layer"
     },

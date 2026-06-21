@@ -37,6 +37,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
       "slug": "ai-audit",
       "label": "AI Audit"
     },
@@ -67,6 +71,10 @@
     {
       "slug": "ai-risks",
       "label": "AI Risks"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
     },
     {
       "slug": "accountability-oecd",

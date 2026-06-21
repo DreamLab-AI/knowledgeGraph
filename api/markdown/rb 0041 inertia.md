@@ -107,7 +107,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - **Inertia** (RB-0041) is the resistance of a robot's links and payload to changes in motion, quantified by the inertia tensor for rotational dynamics and mass for translational dynamics. Accurate inertia modelling is essential for dynamic control, trajectory planning, and compliance with power-and-force-limiting safety requirements, because high inertia directly increases the impact forces during unintended contact.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0041inertia
@@ -115,112 +115,14 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: rb 0022 robot dynamics, rb 0043 torque, rb 0045 acceleration
+  - dependsOn:: rb 0033 payload
+  - supports:: rb 0064 computed torque control, rb 0094 power and force limiting
 
 - ### Content
-  - ### Primary Definition
-  **Inertia** - Resistance to changes in motion state
-  - ### Original Content
-		- ```
-  # RB-0041: Inertia
+  - Inertia is the central dynamic parameter in robot motion: the mass-inertia matrix M(q) appears as the dominant term in the manipulator equation of motion τ = M(q)q̈ + C(q,q̇)q̇ + g(q). Robots with high link inertia require larger actuator torques for the same acceleration profile and exhibit greater contact forces during unintended collisions, making inertia minimisation a key design objective for collaborative arms.
 
-  #### Key Characteristics
-  1. Core property of robotics systems
-		  2. Standardised definition across implementations
-		  3. Measurable and verifiable attributes
-		  4. Essential for safety and performance
-		  5. Industry-wide recognition and adoption
-
-		  ## Formal Ontology (OWL Functional Syntax)
-
-
-		  ## Relationships
-
-		  ### Parent Classes
-		  - `Robot`: Primary classification
-
-  #### Future Directions
-  ### Emerging Trends
-		  1. AI and machine learning integration
-		  2. Advanced sensing capabilities
-		  3. Improved safety systems
-		  4. Enhanced human-robot collaboration
-		  5. Standardisation advancements
-
-		  ---
-
-		  **Version History**
-		  - 1.0.0 (2025-10-28): Initial foundational definition
-
-		  **Contributors**: Robotics Ontology Working Group
-		  **License**: CC BY 4.0
-		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0041`
-
-		  ```
-
-  #### Standards and References
-  ### Primary Standards
-		  1. **ISO 8373:2021**: Primary reference standard
-		  2. **ISO 8373:2021**: Robotics vocabulary
-		  3. **Related IEEE standards**: Implementation guidelines
-
-		  ## Validation Criteria
-
-		  ### Conformance Requirements
-		  1. ✓ Meets ISO 8373:2021 requirements
-		  2. ✓ Documented implementation
-		  3. ✓ Verifiable performance metrics
-		  4. ✓ Safety compliance demonstrated
-		  5. ✓ Industry best practices followed
-
-		  ## Implementation Notes
-
-		  ### Design Considerations
-		  - System integration requirements
-		  - Performance specifications
-		  - Safety considerations
-		  - Maintenance procedures
-
-		  ### Common Patterns
-		  ```yaml
-		  implementation:
-		    standards_compliance: true
-		    verification_method: standardised_testing
-		    documentation_level: comprehensive
-		  ```
-
-  #### Related Concepts
-  - Related robotics concepts and systems
-		  - Cross-references to other ontology terms
-		  - Integration with metaverse ontology
-
-		  ## Use Cases
-
-		  ### Industrial Applications
-		  1. Manufacturing automation
-		  2. Quality control systems
-		  3. Process optimization
-
-		  ### Service Applications
-		  1. Healthcare robotics
-		  2. Logistics and warehousing
-		  3. Consumer robotics
-
-		  ### Research Applications
-		  1. Academic research platforms
-		  2. Algorithm development
-		  3. System integration studies
-
-  #### References
-  ### Metaverse Ontology Integration
-		  - Virtual representation systems
-		  - Digital twin integration
-		  - Simulation environments
-
-		  ### Domain Ontologies
-		  - Manufacturing systems
-		  - Control systems
-		  - Safety systems
+  Inertia varies with robot configuration (pose-dependent) because the relative positions of link centres of mass change as the robot moves. This configuration-dependence must be accounted for in real-time model-based controllers (computed-torque control, model-predictive control) and in trajectory optimisers. Payload inertia — the rotational inertia of the grasped object — is an additional term that must be estimated or measured for precise control. Many modern collaborative robots use built-in torque sensors to estimate payload inertia automatically.
 
 - ### Provenance
   - sources::

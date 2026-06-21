@@ -90,6 +90,14 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
       "slug": "ai-companies",
       "label": "AI Companies"
     },
@@ -100,6 +108,10 @@
     {
       "slug": "ai-game-agent",
       "label": "AI Game Agent"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
     },
     {
       "slug": "ai-liability",
@@ -150,8 +162,16 @@
       "label": "Agents"
     },
     {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
       "slug": "algorithmic-bias-and-variance",
       "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
     },
     {
       "slug": "artificial-general-intelligence",

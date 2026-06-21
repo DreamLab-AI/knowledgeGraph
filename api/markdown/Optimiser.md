@@ -133,7 +133,6 @@ public:: true
 - ### Definition
   - An Optimiser is an algorithm that adjusts model parameters during training to minimise a loss function. Modern optimisers such as Adam and RMSProp extend stochastic gradient descent with adaptive learning rates and momentum, enabling faster and more stable convergence of deep neural networks.
 
-- ### Primary Definition
 - ### Semantic Classification
   - owl-class:: spatial-computing:Optimiser
   - owl-role:: Concept
@@ -147,36 +146,6 @@ public:: true
   - relatedTo [[Hyperparameter]]
   - relatedTo [[Backpropagation]]
 - ### Content
-  - ### Primary Definition
-  An **Optimiser** is an algorithm that adjusts model parameters during training to minimise the loss function. Modern optimisers are advanced variants of gradient descent with adaptive learning rates, momentum, and other techniques for improved convergence.
-  - ### Original Content
-		- ```
-  # Optimiser
-  #### Related Concepts
-  - **Gradient Descent** (AI-0044): Basic optimisation approach
-		  - **Learning Rate**: Key optimiser hyperparameter
-		  - **Training** (AI-0041): Process using optimisers
-		  - **Convergence**: Optimisers aim for faster convergence
-		  ## Formal Ontology
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-		  </details>
-		  ## Standards Alignment
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Training and optimisation
-		  ### NIST AI RMF
-		  - **Function**: MAP (Training optimisation)
-		  ## Related Terms
-		  - **Gradient Descent** (AI-0044): Basic optimisation method
-		  - **Stochastic Gradient Descent** (AI-0045): Foundation for many optimisers
-		  - **Training** (AI-0041): Process using optimisers
-		  - **Hyperparameter** (AI-0048): Optimiser parameters
-  #### References
-  1. Kingma & Ba - "Adam: A Method for Stochastic Optimization" - ICLR, 2015
-		  2. ISO/IEC 22989:2022 - Training concepts
-		  ---
-		  **Authority Score**: 0.92 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-		  ```
   ## Academic Context
   - Brief contextual overview
   - The term "optimiser" broadly refers to a system, algorithm, or process designed to improve the efficiency, performance, or resource usage of a given target, whether software, hardware, or business workflow
@@ -250,11 +219,7 @@ public:: true
   8. iolo. (2025). The Future of PC Optimization: Trends to Watch in 2025. https://www.iolo.com/resources/articles/future-of-pc-optimization-trends-2025/
   9. Kissflow. (2025). Business Process Optimization: The Ultimate Guide for 2025. https://kissflow.com/workflow/bpm/business-process-optimization/
   10. Wikipedia. (2025). Program optimization. https://en.wikipedia.org/wiki/Program_optimization
-  ## Metadata
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
+
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

@@ -101,6 +101,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
       "slug": "blockchain-governance",
       "label": "Blockchain Governance"
     },

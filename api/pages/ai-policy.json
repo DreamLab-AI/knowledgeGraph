@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.93,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -29,6 +29,14 @@
       {
         "id": "urn:ngm:class:stakeholder-consultation",
         "label": "Stakeholder Consultation"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
       }
     ],
     "enables": [
@@ -43,6 +51,14 @@
       {
         "id": "urn:ngm:class:ai-audit",
         "label": "AI Audit"
+      },
+      {
+        "id": "urn:ngm:class:compute-governance",
+        "label": "Compute Governance"
+      },
+      {
+        "id": "urn:ngm:class:conformity-assessment",
+        "label": "Conformity Assessment"
       }
     ],
     "dependsOn": [],
@@ -65,6 +81,14 @@
       {
         "id": "urn:ngm:class:human-rights-law",
         "label": "Human Rights Law"
+      },
+      {
+        "id": "urn:ngm:class:national-security",
+        "label": "National Security"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
       }
     ],
     "uses": [],
@@ -84,6 +108,10 @@
       {
         "id": "urn:ngm:class:digital-sovereignty",
         "label": "Digital Sovereignty"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
       }
     ],
     "standardizedBy": [
@@ -98,6 +126,10 @@
       {
         "id": "urn:ngm:class:eu-ai-act-regulatory-instrument",
         "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
       }
     ],
     "partOf": [],
@@ -117,18 +149,255 @@
       {
         "id": "urn:ngm:class:intellectual-property-rights-framework",
         "label": "Intellectual Property"
+      },
+      {
+        "id": "urn:ngm:class:competition-policy",
+        "label": "Competition Policy"
+      },
+      {
+        "id": "urn:ngm:class:technology-policy",
+        "label": "Technology Policy"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "digital-sovereignty",
+      "label": "Digital Sovereignty"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "ai-audit",
+      "label": "AI Audit"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "impact-assessment",
+      "label": "Impact Assessment"
+    },
+    {
+      "slug": "stakeholder-consultation",
+      "label": "Stakeholder Consultation"
+    },
+    {
+      "slug": "oecd-ai-principles",
+      "label": "OECD AI Principles"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO IEC 42001"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "self-regulation",
+      "label": "Self-Regulation"
+    },
+    {
+      "slug": "cybersecurity-policy",
+      "label": "Cybersecurity Policy"
+    },
+    {
+      "slug": "semiconductor-export-controls",
+      "label": "Semiconductor Export Controls"
+    },
+    {
+      "slug": "human-rights-law",
+      "label": "Human Rights Law"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "technology-policy",
+      "label": "Technology Policy"
+    },
+    {
+      "slug": "competition-policy",
+      "label": "Competition Policy"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "compute-governance",
+      "label": "Compute Governance"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "ai-research",
+      "label": "AI Research"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "transparency",
+      "label": "Transparency"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "slug": "national-security",
+      "label": "National Security"
+    },
+    {
+      "slug": "bias-mitigation",
+      "label": "Bias Mitigation"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
+      "slug": "supply-chain-security",
+      "label": "Supply Chain Security"
+    },
+    {
+      "slug": "ai-chips",
+      "label": "AI Chips"
+    },
+    {
+      "slug": "conformity-assessment",
+      "label": "Conformity Assessment"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "copyright-law",
+      "label": "Copyright Law"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "ai-safety-institute",
+      "label": "AI Safety Institute"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
     {
       "slug": "ai-risks",
       "label": "AI Risks"
     },
     {
+      "slug": "ai-safety-research",
+      "label": "ai safety research"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
     },
     {
       "slug": "competition-in-ai",

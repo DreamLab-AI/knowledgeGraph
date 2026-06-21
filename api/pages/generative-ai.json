@@ -317,8 +317,48 @@
       "label": "3D Content Generation"
     },
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
       "slug": "ai-adoption",
       "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
     },
     {
       "slug": "ai-scrapers",
@@ -345,16 +385,48 @@
       "label": "AI in Games"
     },
     {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
       "slug": "adaptive-virtual-world",
       "label": "Adaptive Virtual World"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
     },
     {
       "slug": "adoption-of-convergent-technologies",
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
     },
     {
       "slug": "automated-podcasting",

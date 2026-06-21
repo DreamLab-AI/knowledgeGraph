@@ -24,7 +24,7 @@ public:: true
   "definition": "The automated identification or verification of a person's identity based on characteristics of their voice derived from acoustic speech signals. Speaker recognition encompasses two sub-tasks: speaker verification (confirming a claimed identity) and speaker identification (determining who among a set of known speakers produced a given utterance). Systems extract speaker-discriminative features such as MFCCs, i-vectors, or x-vectors from audio, then compare these against enrolled speaker models using distance metrics or neural classifiers. It is distinct from speech recognition, which transcribes words rather than identifies speakers.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai", "label": "AI"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
   "relations": {
     "contrastsWith": [
       {"@id": "urn:ngm:class:speech-recognition", "label": "Speech Recognition"},

@@ -193,8 +193,6 @@ public:: true
 - ### Definition
   - A managed storage and access system for digital objects, assets, and metadata designed to ensure long-term preservation, discoverability, and integrity of digital content through standardised ingest, storage, and retrieval processes supporting metaverse archives and institutional collections.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalRepository
   - owl-role:: Concept
@@ -204,6 +202,7 @@ bridges-to:: [[Blockchain]]
   - is-subclass-of:: [[Data Management]]
   - requires:: [[Storage Infrastructure]], [[Metadata Standards]], [[Access Controls]]
   - enables:: [[Digital Preservation]], [[Content Access]], [[Metadata Management]]
+  - bridges-to:: [[Blockchain]]
 
 - ### Content
 
@@ -222,7 +221,7 @@ bridges-to:: [[Blockchain]]
   - **TRUST Principles**:
 		- Transparency, Responsibility, User focus
 		- Sustainability, Technology
-  - **2024 Developments**: Harvard DRS Futures project, AI-assisted cataloging, decentralized storage integration
+  - **Recent Developments**: Harvard DRS Futures project (Spring 2026 launch of LIBSAFE-based replacement system), AI-assisted cataloging, decentralized storage integration
   - ## Applications
   - Academic research archives
   - Cultural heritage preservation

@@ -64,6 +64,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
       "slug": "dao-analytics",
       "label": "DAO Analytics"
     },

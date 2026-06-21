@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.88,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -129,16 +129,176 @@
     {
       "slug": "entity",
       "label": "Entity"
+    },
+    {
+      "slug": "data-science",
+      "label": "Data Science"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "uk-research-and-innovation",
+      "label": "UK Research and Innovation"
+    },
+    {
+      "slug": "defence-and-security",
+      "label": "Defence and Security"
+    },
+    {
+      "slug": "digital-health",
+      "label": "Digital Health"
+    },
+    {
+      "slug": "open-data",
+      "label": "Open Data"
+    },
+    {
+      "slug": "reproducible-research",
+      "label": "Reproducible Research"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "probabilistic-programming",
+      "label": "Probabilistic Programming"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "research-institute",
+      "label": "Research Institute"
+    },
+    {
+      "slug": "alan-turing",
+      "label": "Alan Turing"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "slug": "open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "slug": "climate-science",
+      "label": "Climate Science"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "national-security",
+      "label": "National Security"
+    },
+    {
+      "slug": "public-sector-ai",
+      "label": "Public Sector AI"
+    },
+    {
+      "slug": "algorithmic-fairness",
+      "label": "Algorithmic Fairness"
+    },
+    {
+      "slug": "privacy-preserving-machine-learning",
+      "label": "Privacy-Preserving Machine Learning"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "uk-national-ai-strategy",
+      "label": "UK National AI Strategy"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "weather-prediction",
+      "label": "Weather Prediction"
     }
   ],
   "backlinks": [
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
     {
       "slug": "api-gateway",
       "label": "API Gateway"
     },
     {
+      "slug": "agent2-agent-protocol-google-2025",
+      "label": "Agent2Agent Protocol (Google 2025)"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
     },
     {
       "slug": "asia-pacific-regulation",

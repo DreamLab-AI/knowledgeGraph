@@ -97,6 +97,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
       "slug": "machine-learning-models",
       "label": "Machine Learning Models"
     }

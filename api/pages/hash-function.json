@@ -597,6 +597,10 @@
   ],
   "backlinks": [
     {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
       "slug": "asset-registry",
       "label": "Asset Registry"
     },

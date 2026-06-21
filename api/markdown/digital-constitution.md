@@ -1,8 +1,6 @@
 - ### Definition
   - A foundational governance document establishing the core principles, rights, responsibilities, governance structures, and amendment procedures for a virtual society, serving as the supreme law and social contract for metaverse communities and digital platforms.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalConstitution
   - owl-role:: Object
@@ -16,6 +14,7 @@ bridges-to:: [[Blockchain]]
   - requires:: [[Smart Contract]], [[Blockchain Infrastructure]], [[Legal Framework]], [[Identity Management]]
   - enables:: [[Rule of Law]], [[Democratic Governance]], [[Rights Protection]], [[Legitimate Authority]], [[Social Contract]]
   - depends-on:: [[Community Governance Model]], [[Consensus Mechanism]], [[Dispute Resolution Process]]
+  - bridges-to:: [[Blockchain]]
 
 - ### Content
   Digital Constitution — content pending enrichment.

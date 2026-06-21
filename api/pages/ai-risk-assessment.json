@@ -127,8 +127,20 @@
       "label": "AI Governance Framework"
     },
     {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
       "slug": "ai-risk",
       "label": "AI Risk"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
     }
   ]
 }

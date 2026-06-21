@@ -119,8 +119,24 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
       "slug": "ai-companies",
       "label": "AI Companies"
+    },
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
     },
     {
       "slug": "ai-governance-framework",
@@ -135,12 +151,36 @@
       "label": "AI Model Card"
     },
     {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
       "slug": "ai-risks",
       "label": "AI Risks"
     },
     {
+      "slug": "ai-safety-research",
+      "label": "ai safety research"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
       "slug": "accountable-party",
       "label": "Accountable Party"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
     },
     {
       "slug": "artificial-general-intelligence",

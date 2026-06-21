@@ -115,17 +115,15 @@ public:: true
 - ### Definition
   - Digital Gaming encompasses interactive software experiences delivered across platforms including PCs, consoles, and mobile devices, encompassing game design, virtual economies, player interaction systems, and increasingly blockchain-based asset ownership. It represents a convergence of entertainment, spatial computing, and digital economy mechanisms within persistent or session-based virtual environments.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalGaming
   - owl-role:: concept
 
 - ### Relationships
-  - **relatedTo**: [[Blockchain Gaming]], [[Immersive Gaming]]
-  - **uses**: [[Game Engine]], [[NFT]]
-  - **enables**: [[Digital Ownership]], [[Immersive Experience]]
-  - **bridgesTo**: [[Blockchain]]
+  - related-to:: [[Blockchain Gaming]], [[Immersive Gaming]]
+  - uses:: [[Game Engine]], [[NFT]]
+  - enables:: [[Digital Ownership]], [[Immersive Experience]]
+  - bridges-to:: [[Blockchain]]
 
 - ### Content
 

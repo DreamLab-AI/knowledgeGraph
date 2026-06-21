@@ -54,6 +54,10 @@
   ],
   "backlinks": [
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "xr-accessibility-guideline",
       "label": "XR Accessibility Guideline"
     }

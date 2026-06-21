@@ -97,6 +97,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
       "slug": "cyber-security-and-cryptography",
       "label": "Cyber Security and Cryptography"
     }

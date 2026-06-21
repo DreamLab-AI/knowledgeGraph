@@ -112,6 +112,14 @@
       "label": "Accelerometer"
     },
     {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "education-metaverse",
       "label": "Education Metaverse"
     },

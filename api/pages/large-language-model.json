@@ -160,12 +160,36 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
       "slug": "ai-diagram-tools",
       "label": "AI Diagram Tools"
     },
     {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
       "slug": "ai-search",
       "label": "AI Search"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
     },
     {
       "slug": "ai-companions",
@@ -176,8 +200,44 @@
       "label": "API Gateway"
     },
     {
+      "slug": "accessibility-tree",
+      "label": "Accessibility Tree"
+    },
+    {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
+      "slug": "adam-optimizer",
+      "label": "Adam Optimizer"
+    },
+    {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "agent2-agent-protocol-google-2025",
+      "label": "Agent2Agent Protocol (Google 2025)"
     },
     {
       "slug": "agentic-internet",
@@ -188,8 +248,16 @@
       "label": "Agents"
     },
     {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
       "slug": "attention",
       "label": "Attention"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
     },
     {
       "slug": "bias-in-large-language-models",

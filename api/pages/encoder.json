@@ -168,6 +168,10 @@
   ],
   "backlinks": [
     {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
       "slug": "linear-encoder",
       "label": "Linear Encoder"
     },

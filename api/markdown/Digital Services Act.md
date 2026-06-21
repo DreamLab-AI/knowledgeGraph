@@ -267,8 +267,6 @@ public:: true
 - ### Definition
   - A comprehensive EU regulation establishing legal framework for digital services accountability, content moderation requirements, platform transparency obligations, and user protection measures across online intermediaries, marketplaces, and social platforms, with implications for metaverse and virtual world governance.
 
-bridges-to:: [[Telecollaboration]]
-
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:DigitalServicesAct
   - owl-role:: Concept
@@ -278,6 +276,7 @@ bridges-to:: [[Telecollaboration]]
   - is-subclass-of:: [[Digital Regulation]]
   - requires:: [[Compliance Systems]], [[Moderation Infrastructure]], [[Reporting Mechanisms]]
   - enables:: [[Platform Accountability]], [[User Protection]], [[Content Transparency]]
+  - bridges-to:: [[Telecollaboration]]
 
 - ### Content
 
@@ -295,7 +294,8 @@ bridges-to:: [[Telecollaboration]]
   - **Timeline**:
 		- Entered force: 2022
 		- Bulk obligations effective: February 17, 2024
-		- VLOP designations: Shein, Temu (April-May 2024)
+		- VLOP designations: Shein (April 2024), Temu (May 2024)
+		- Active enforcement: Temu preliminarily found in breach (July 2025), Shein under formal proceedings (February 2026), X fined (December 2025)
   - **Metaverse Implications**: Most metaverse products in scope; content-specific regulations still developing
   - ## Applications
   - Platform content moderation

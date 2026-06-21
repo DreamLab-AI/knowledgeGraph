@@ -97,6 +97,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
       "slug": "ai-risks",
       "label": "AI Risks"
     }

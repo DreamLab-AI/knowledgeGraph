@@ -131,6 +131,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     },

@@ -165,6 +165,18 @@
   ],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
       "slug": "ai-companies",
       "label": "AI Companies"
     },
@@ -221,6 +233,10 @@
       "label": "Accessibility Audit Tool"
     },
     {
+      "slug": "accessibility-tree",
+      "label": "Accessibility Tree"
+    },
+    {
       "slug": "accessibility",
       "label": "Accessibility"
     },
@@ -231,6 +247,10 @@
     {
       "slug": "active-learning",
       "label": "Active Learning"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
     },
     {
       "slug": "admittance-control",
@@ -261,6 +281,10 @@
       "label": "Artificial General Intelligence"
     },
     {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
       "slug": "asset-registry",
       "label": "Asset Registry"
     },
@@ -271,6 +295,14 @@
     {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
+    },
+    {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
     },
     {
       "slug": "btc-layer-3",

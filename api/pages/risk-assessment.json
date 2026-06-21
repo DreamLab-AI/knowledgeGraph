@@ -518,6 +518,14 @@
       "label": "AI Ethics Checklist"
     },
     {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
       "slug": "access-control-system",
       "label": "Access Control System"
     },

@@ -152,6 +152,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
       "slug": "discreet-log-contracts",
       "label": "Discreet Log Contracts"
     },

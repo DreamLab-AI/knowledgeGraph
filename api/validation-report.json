@@ -1,19 +1,44 @@
 {
-  "total_pages": 7424,
-  "pages_with_ontology": 7424,
-  "public_pages": 7410,
-  "total_issues": 861,
+  "total_pages": 7445,
+  "pages_with_ontology": 7445,
+  "public_pages": 7431,
+  "total_issues": 898,
   "errors": 0,
-  "warnings": 861,
+  "warnings": 898,
   "by_code": {
-    "MULTI_PARENT": 861
+    "MULTI_PARENT": 896,
+    "INVALID_DOMAIN": 2
   },
   "issues": [
+    {
+      "path": "3D Generation.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (3): 3D Content Generation, Generative Model, Computer Vision"
+    },
     {
       "path": "3D Graphics Standard.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Display and Rendering, Content and Assets"
+    },
+    {
+      "path": "A Star Algorithm.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (3): Search Algorithm, Informed Search, Graph Search"
+    },
+    {
+      "path": "A2A Protocol.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Agent Communication Protocol, Agent-to-Agent Protocol"
+    },
+    {
+      "path": "AAAI.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Academic Conference, AI Research Area"
     },
     {
       "path": "ADAS.md",
@@ -22,10 +47,34 @@
       "message": "Multiple parents (2): Robot Type, Autonomous Vehicle"
     },
     {
+      "path": "ADE20K.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Benchmarks, Benchmark Dataset"
+    },
+    {
+      "path": "AGI Timelines.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Time-Series Forecasting, Capability Forecasting"
+    },
+    {
       "path": "AI Agent System.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Application, Artificial Intelligence Core"
+    },
+    {
+      "path": "AI Art Generation.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Generative AI, Creative AI"
+    },
+    {
+      "path": "AI Documentation Standards.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Governance and Ethics, Documentation Standards"
     },
     {
       "path": "AI Ethics Board.md",
@@ -52,10 +101,28 @@
       "message": "Multiple parents (2): AI Application, AI Agent System"
     },
     {
+      "path": "AI Group Formation.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Application, Combinatorial Optimisation"
+    },
+    {
       "path": "AI Incident.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Governance and Ethics, AI Risk"
+    },
+    {
+      "path": "AI Investment.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "AI Investment.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Economics, Capital Markets"
     },
     {
       "path": "AI Liability.md",
@@ -80,6 +147,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Application, Natural Language Processing, Retrieval-Augmented Generation"
+    },
+    {
+      "path": "AI Talent War.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Competition in AI, Technology Race"
+    },
+    {
+      "path": "AI Talent.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Workforce Development, Human Capital"
     },
     {
       "path": "AI Upscaling and Super-Resolution.md",
@@ -136,10 +215,28 @@
       "message": "Multiple parents (2): Interaction Technology, Spatial Tracking"
     },
     {
+      "path": "ARC-AGI.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Benchmarks, Benchmark Standard"
+    },
+    {
+      "path": "AUTOMATIC1111 WebUI.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Open Generative AI Tools, Image Generation"
+    },
+    {
       "path": "Access Control System.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Security and Identity, Security and Identity, Security and Identity"
+    },
+    {
+      "path": "Accessibility Tree.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Human Computer Interaction, User Interface Model"
     },
     {
       "path": "Accessible Experience.md",
@@ -160,6 +257,18 @@
       "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, Distributed Data Structure"
     },
     {
+      "path": "Accountability (AI-0068).md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'ai-governance' not in valid set"
+    },
+    {
+      "path": "Accountability (AI-0068).md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Accountability, AI Governance and Ethics"
+    },
+    {
       "path": "Accountability (OECD).md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -172,6 +281,12 @@
       "message": "Multiple parents (2): AI Governance and Ethics, Ai Governance Principle"
     },
     {
+      "path": "Action Recognition.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Computer Vision, Video Understanding"
+    },
+    {
       "path": "Active Learning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -182,6 +297,24 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Software Engineering, Resource Management"
+    },
+    {
+      "path": "Adam Optimizer.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Optimization Algorithm, Gradient Descent"
+    },
+    {
+      "path": "Adaptive Behaviour.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Agent, AI Research Area"
+    },
+    {
+      "path": "Adaptive Learning.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Education Technology, Personalised Learning"
     },
     {
       "path": "Adaptive Virtual Experience.md",
@@ -220,10 +353,52 @@
       "message": "Multiple parents (2): Robot Type, Mobile Robot"
     },
     {
+      "path": "Affective Computing System.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Affective Computing, Human-Computer Interaction"
+    },
+    {
+      "path": "Agent Memory.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Agent, Cognitive Architecture"
+    },
+    {
+      "path": "Agent Orchestrator.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Agent System, Intelligent System"
+    },
+    {
+      "path": "Agent Runtime.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Agent System, Intelligent System"
+    },
+    {
+      "path": "Agent-Based Modelling.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Simulation, Complex Systems Science"
+    },
+    {
+      "path": "Agent-Based Models.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Computational Intelligence, Simulation"
+    },
+    {
       "path": "Agentic Internet.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Research Area, AI Agent System"
+    },
+    {
+      "path": "Agentic RAG.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Information Retrieval, Retrieval-Augmented Generation"
     },
     {
       "path": "Agreement Protocol.md",
@@ -256,10 +431,22 @@
       "message": "Multiple parents (2): AI Governance and Ethics, AI Ethics"
     },
     {
+      "path": "Answer AI.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Research Area, Applied Machine Learning"
+    },
+    {
       "path": "Anti Counterfeiting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Network Component, Supply Chain Blockchain"
+    },
+    {
+      "path": "Applied Mathematics.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Research Area, Mathematical Science"
     },
     {
       "path": "Ar Display Device.md",
@@ -280,10 +467,22 @@
       "message": "Multiple parents (2): Display and Rendering, Platform and Environment"
     },
     {
+      "path": "ArcFace.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Facial Recognition, Loss Function"
+    },
+    {
       "path": "Archaeological Site Reconstruction.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Content and Assets, Digital Heritage"
+    },
+    {
+      "path": "Architecture.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Model Architecture, Neural Network Architecture"
     },
     {
       "path": "Archival Node.md",
@@ -334,6 +533,12 @@
       "message": "Multiple parents (2): AI Application, Human Computer Interaction"
     },
     {
+      "path": "Attention Mechanisms.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Attention Mechanism, Neural Network Component"
+    },
+    {
       "path": "Attention.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -370,6 +575,18 @@
       "message": "Multiple parents (2): Content and Assets, Digital Content Creation"
     },
     {
+      "path": "AutoGen.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Multi-Agent Systems, Agent Frameworks"
+    },
+    {
+      "path": "Automated Design.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Generative Design, Optimisation"
+    },
+    {
       "path": "Automated Podcasting.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -380,6 +597,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Application, Natural Language Processing"
+    },
+    {
+      "path": "Automatic Prompt Optimisation.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (3): AI Technique, Prompt Engineering, Model Optimisation"
     },
     {
       "path": "Autonomous AI Agents.md",

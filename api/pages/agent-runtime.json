@@ -5,28 +5,104 @@
   "public": true,
   "classIri": "urn:ngm:class:agent-runtime",
   "domain": "ai",
-  "definition": "An Agent Runtime is the execution environment that manages the lifecycle, resource allocation, tool access, memory state, and communication channels of one or more autonomous AI agents. It provides the foundational services \u2014 process isolation, context persistence, tool-call dispatch, and inter-agent messaging \u2014 upon which agent application logic is built, analogous to how an operating system runtime supports application processes.",
+  "definition": "An Agent Runtime is the infrastructure execution layer that manages the complete lifecycle, resource allocation, tool access, memory state, and communication channels of one or more autonomous AI agents \u2014 providing process isolation, context window management, stateful execution with durable checkpointing, sandboxed tool-call dispatch, inter-agent messaging, credential management, rate limiting, and structured observability, analogous to how an operating system runtime supports application processes, and forming the foundational services upon which Agent Orchestrator control logic and Agentic Workflow execution patterns are built.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "id": "urn:ngm:class:intelligent-system",
+      "label": "Intelligent System"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.91,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:tool-registry",
+        "label": "Tool Registry"
+      },
+      {
+        "id": "urn:ngm:class:state-persistence",
+        "label": "State Persistence"
+      },
+      {
+        "id": "urn:ngm:class:session-management",
+        "label": "Session Management"
+      },
+      {
+        "id": "urn:ngm:class:process-isolation",
+        "label": "Process Isolation"
+      },
+      {
+        "id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "id": "urn:ngm:class:credential-management",
+        "label": "Credential Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "id": "urn:ngm:class:authentication-system",
+        "label": "Authentication System"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:autonomous-task-execution",
         "label": "Autonomous Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:durable-execution",
+        "label": "Durable Execution"
+      },
+      {
+        "id": "urn:ngm:class:multi-tenancy",
+        "label": "Multi-Tenancy"
+      },
+      {
+        "id": "urn:ngm:class:sandboxed-code-execution",
+        "label": "Sandboxed Code Execution"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:execution-model",
+        "label": "Execution Model"
+      },
+      {
+        "id": "urn:ngm:class:checkpointing",
+        "label": "Checkpointing"
+      },
+      {
+        "id": "urn:ngm:class:rate-limiting",
+        "label": "Rate Limiting"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:workflow-engine",
+        "label": "Classical Workflow Engine"
+      },
+      {
+        "id": "urn:ngm:class:serverless-function",
+        "label": "Serverless Function"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -36,6 +112,18 @@
       {
         "id": "urn:ngm:class:model-context-protocol",
         "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:opentelemetry",
+        "label": "OpenTelemetry"
       }
     ],
     "supports": [
@@ -54,14 +142,319 @@
       {
         "id": "urn:ngm:class:execution-model",
         "label": "Execution Model"
+      },
+      {
+        "id": "urn:ngm:class:workflow-engine",
+        "label": "Workflow Engine"
+      },
+      {
+        "id": "urn:ngm:class:agent-frameworks",
+        "label": "Agent Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-system",
+        "label": "Multi-Agent System"
+      },
+      {
+        "id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:ros-robotic-operating-system",
+        "label": "ROS (Robotic Operating System)"
       }
     ]
   },
-  "wikilinks": [],
-  "backlinks": [
+  "wikilinks": [
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "execution-model",
+      "label": "Execution Model"
+    },
+    {
+      "slug": "inter-agent-communication",
+      "label": "Inter-Agent Communication"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "durable-execution",
+      "label": "Durable Execution"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "lang-graph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "autogen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "temporal",
+      "label": "Temporal"
+    },
+    {
+      "slug": "aws-bedrock-agentcore",
+      "label": "AWS Bedrock AgentCore"
+    },
+    {
+      "slug": "google-vertex-ai",
+      "label": "Google Vertex AI"
+    },
+    {
+      "slug": "azure-ai-studio",
+      "label": "Azure AI Studio"
+    },
+    {
+      "slug": "process-isolation",
+      "label": "Process Isolation"
+    },
+    {
+      "slug": "webassembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "container-isolation",
+      "label": "Container Isolation"
+    },
+    {
+      "slug": "micro-vm",
+      "label": "MicroVM"
+    },
+    {
+      "slug": "sandboxed-code-execution",
+      "label": "Sandboxed Code Execution"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "rate-limiting",
+      "label": "Rate Limiting"
+    },
+    {
+      "slug": "credential-management",
+      "label": "Credential Management"
+    },
+    {
+      "slug": "observability",
+      "label": "Observability"
+    },
+    {
+      "slug": "langsmith",
+      "label": "LangSmith"
+    },
+    {
+      "slug": "arize-phoenix",
+      "label": "Arize Phoenix"
+    },
+    {
+      "slug": "opentelemetry",
+      "label": "OpenTelemetry"
+    },
+    {
+      "slug": "streaming-response",
+      "label": "Streaming Response"
+    },
+    {
+      "slug": "cost-tracking",
+      "label": "Cost Tracking"
+    },
+    {
+      "slug": "multi-tenancy",
+      "label": "Multi-Tenancy"
+    },
+    {
+      "slug": "ros-robotic-operating-system",
+      "label": "ROS (Robotic Operating System)"
+    },
+    {
+      "slug": "dapr-agents",
+      "label": "Dapr Agents"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
     {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "slug": "tool-registry",
+      "label": "Tool Registry"
+    },
+    {
+      "slug": "checkpointing",
+      "label": "Checkpointing"
+    },
+    {
+      "slug": "state-persistence",
+      "label": "State Persistence"
+    },
+    {
+      "slug": "session-management",
+      "label": "Session Management"
+    },
+    {
+      "slug": "api-integration",
+      "label": "API Integration"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
+      "slug": "file-system-access",
+      "label": "File System Access"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
+      "slug": "authentication-system",
+      "label": "Authentication System"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "workflow-engine",
+      "label": "Workflow Engine"
+    },
+    {
+      "slug": "firecracker",
+      "label": "Firecracker"
+    },
+    {
+      "slug": "gvisor",
+      "label": "gVisor"
+    },
+    {
+      "slug": "open-telemetry-gen-ai",
+      "label": "OpenTelemetry GenAI Spec"
+    },
+    {
+      "slug": "llama-index",
+      "label": "LlamaIndex"
+    },
+    {
+      "slug": "agent-layer",
+      "label": "AgentLayer"
+    },
+    {
+      "slug": "intelligent-system",
+      "label": "Intelligent System"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "AgentLayer"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "agent2-agent-protocol-google-2025",
+      "label": "Agent2Agent Protocol (Google 2025)"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
     },
     {
       "slug": "agentic-internet",

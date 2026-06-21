@@ -180,9 +180,7 @@ elevatedFrom:: [[Player Two code]]
     src --> router
     src --> stores
     src --> views
-
-  ## Current system
-	  ```
+  ```
   - ## Group file encryption
   - Brief from Kalila
 		- No keys are traded on our server. (trustless)
@@ -198,40 +196,6 @@ elevatedFrom:: [[Player Two code]]
 		- A public key is created from that.
 		- The public key is used as part of a webjson token to auth with a payment server, and the public key is added as hex to the whitelist for the server side
 		- The client can then communicate with "middleware" server which contains the whitelist.
-  - Diagrams from VSCode
-  - ```mermaid
-  graph TB
-    Root["Root"]
-    Root --> README["README.md"]
-    Root --> packageJson["package.json"]
-    Root --> tsconfig["tsconfig.json"]
-    Root --> viteConfig["vite.config.ts"]
-    Root --> playertwoConfig["playertwo.config.ts"]
-    Root --> indexHtml["index.html"]
-    Root --> keys["keys"]
-    keys --> firebaseExample["firebase_example.json"]
-    Root --> src["src"]
-    src --> AppVue["App.vue"]
-    src --> mainTs["main.ts"]
-    src --> themeTs["theme.ts"]
-    src --> assets["assets"]
-    assets --> animations
-    assets --> backgrounds
-    assets --> characters
-    assets --> fonts
-    src --> components["components"]
-    components --> BannerVue["Banner.vue"]
-    components --> apps
-    components --> auth
-    components --> buttons
-    components --> cards
-    src --> css
-    src --> modules
-    src --> router
-    src --> stores
-    src --> views
-  ```
-
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

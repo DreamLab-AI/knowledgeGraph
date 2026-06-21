@@ -128,6 +128,7 @@ elevatedFrom:: [[Python to list nodes]]
       return result
   # Execute the main function
   main()
+  ```
 
 - ### Provenance
   - sources::

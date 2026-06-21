@@ -60,6 +60,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
       "slug": "mechanical-component",
       "label": "Mechanical Component"
     },

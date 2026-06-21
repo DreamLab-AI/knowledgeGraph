@@ -119,6 +119,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

@@ -24,7 +24,7 @@ public:: true
   "definition": "The automated process of classifying audio frames as containing human speech or non-speech (silence, background noise, music) in order to segment an audio stream before downstream processing. Voice activity detection (VAD) reduces computational load on speech-sensitive systems by forwarding only speech-active segments to recognition, enhancement, or analysis modules. Modern VAD systems use neural classifiers trained on diverse acoustic conditions to achieve robust detection under noise, reverberation, and overlapping sounds. It is a foundational pre-processing stage in speech pipelines.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai", "label": "AI"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}],
   "relations": {
     "contrastsWith": [
       {"@id": "urn:ngm:class:speaker-recognition", "label": "Speaker Recognition"},

@@ -132,6 +132,14 @@
   ],
   "backlinks": [
     {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
       "slug": "data-provenance",
       "label": "Data Provenance"
     },

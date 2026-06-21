@@ -7,12 +7,6 @@
 - ### Relationships
   - <!-- No relationships defined -->
 - ### Content
-  - A classification performance metric representing the proportion of actual positive instances that an artificial intelligence model correctly identifies, calculated as the ratio of true positives to all actual positives (true positives plus false negatives), measuring the model's completeness in detecting positive cases, particularly critical in applications where missing positive instances (false negatives) carries significant cost or consequences.
-		- ### Wallet Interface Setup
-			- Add basic HTML to create buttons for sending and receiving ecash.
-			- Example:
-			  <button id="sendBtn">Send eCash</button>
-			- Example API call: `fetch('https://cashew-mint.example/api/keysets').then(response => response.json())`
   ## Mathematical Definition
   $$\text{Recall} = \frac{TP}{TP + FN} = \frac{TP}{\text{All Actual Positives}}$$
   Where:
@@ -138,39 +132,6 @@
 		  - [[Sensitivity]]: Synonym for recall
 		  - [[True Positive Rate]]: Synonym for recall
 		  - [[False Negative]]: Missed positives affecting recall
-  ## Mathematical Definition
-  $$\text{Recall} = \frac{TP}{TP + FN} = \frac{TP}{\text{All Actual Positives}}$$
-  Where:
-  - **TP** (True Positives): Correctly identified positive instances
-  - **FN** (False Negatives): Missed positive instances (Type II errors)
-  Also known as **Sensitivity**, **True Positive Rate (TPR)**, or **Hit Rate**.
-  ## Context and Significance
-  Recall answers the question: "Out of all actual positive cases, how many did the model find?" This metric is essential in scenarios where missing positive cases is particularly costly or dangerous—such as disease screening (missing cancer cases), security threat detection (missing threats), or quality control (missing defects). High recall ensures comprehensive detection of positive instances, though it says nothing about how many negative instances are incorrectly flagged (that's related to precision and specificity).
-  Recall trades off with precision: achieving 100% recall is trivial (predict every instance as positive) but results in terrible precision. The challenge lies in maintaining high recall whilst managing false positive rates, with application-specific requirements determining the appropriate balance.
-  #### References
-  1. Powers, D.M.W., *Evaluation: From Precision, Recall and F-Measure to ROC, Informedness, Markedness & Correlation* (2011)
-		  2. Davis, J. & Goadrich, M., *The Relationship Between Precision-Recall and ROC Curves*, ICML (2006)
-		  3. ISO/IEC 25059, *Software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — Quality model for AI systems*
-		  4. Saito, T. & Rehmsmeier, M., *The Precision-Recall Plot Is More Informative than the ROC Plot When Evaluating Binary Classifiers on Imbalanced Datasets*, PLOS ONE (2015)
-		  ## Formal Ontology
-		  <details>
-		  <summary>OWL Functional Syntax</summary>
-		  </details>
-		  ## See Also
-		  - [[Model Performance]]
-		  - [[Precision]]
-		  - [[F1 Score]]
-		  - [[Accuracy]]
-		  - [[Confusion Matrix]]
-		  - [[Precision-Recall Curve]]
-		  - [[ROC Curve]]
-		  - [[Sensitivity]]
-		  - [[Specificity]]
-		  - [[True Positive Rate]]
-		  ```
-    - measures:: [[Sensitivity]], [[Specificity]], [[True Positive Rate]]
-  - public-access:: true
-  - definition:: A classification performance metric representing the proportion of actual positive instances that an artificial intelligence model correctly identifies, calculated as the ratio of true positives to all actual positives (true positives plus false negatives), measuring the model's completeness in detecting positive cases, particularly critical in applications where missing positive instances (false negatives) carries significant cost or consequences.
   ## Academic Context
   - Brief contextual overview
   - Recall, also known as sensitivity or true positive rate, is a foundational metric in classification tasks, measuring the proportion of actual positive instances that a model correctly identifies
@@ -185,9 +146,9 @@
   - Recall is widely used in sectors such as healthcare, finance, and cybersecurity, where the cost of missing positive instances is high
   - Notable organisations and platforms
 		- Google Cloud AI and Amazon SageMaker incorporate recall as a standard metric in their model evaluation suites
-		- UK-based companies like Babylon Health and Revolut use recall to optimise their diagnostic and fraud detection systems
+		- UK-based companies like eMed Healthcare UK (formerly Babylon Health, which collapsed in 2023) and Revolut use recall to optimise their diagnostic and fraud detection systems
   - UK and North England examples where relevant
-		- In Manchester, the NHS Digital Innovation Hub employs recall to evaluate AI-driven diagnostic tools for early disease detection
+		- In Manchester, NHS England's digital teams (formerly NHS Digital, which merged into NHS England in 2023) employ recall to evaluate AI-driven diagnostic tools for early disease detection
 		- Leeds City Council uses recall metrics in its smart city initiatives to identify and respond to public safety incidents
 		- Newcastle University’s Institute for Data Science applies recall in research on predictive maintenance for industrial systems
 		- Sheffield’s Advanced Manufacturing Research Centre (AMRC) leverages recall to ensure the reliability of AI models in manufacturing quality control
@@ -238,11 +199,6 @@
   8. Google Developers. (2025). Classification: Accuracy, recall, precision, and related metrics. https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall
   9. GeeksforGeeks. (2025). Precision and Recall in Machine Learning. https://www.geeksforgeeks.org/machine-learning/precision-and-recall-in-machine-learning/
   10. Ultralytics. (2025). What is Accuracy vs. Precision vs. Recall in Machine Learning. https://www.ultralytics.com/blog/accuracy-precision-recall
-  ## Metadata
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

@@ -502,6 +502,10 @@
   ],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
       "slug": "early-stopping",
       "label": "Early Stopping"
     },

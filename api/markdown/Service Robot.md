@@ -105,8 +105,6 @@ public:: true
 - ### Definition
   - A Service Robot is an autonomous or semi-autonomous machine designed to perform tasks for humans outside industrial settings — in healthcare, logistics, hospitality, and domestic environments. It relies on sensor fusion, computer vision, motion planning, and human-robot interaction capabilities to operate safely in dynamic, unstructured spaces.
 
-  - ### Primary Definition
-
 - ### Semantic Classification
   - owl-class:: robotics:rb0006servicerobot
   - owl-role:: Concept
@@ -121,74 +119,6 @@ public:: true
   - relatedTo [[Robot Control]]
 
 - ### Content
-  - ### Primary Definition
-  **Service Robot** - Service Robot in robotics systems
-  - ### Original Content
-		- ```
-  # RB-0006: Service Robot
-
-  #### Key Characteristics
-  1. Core property of robotics systems
-		  2. Standardised definition across implementations
-		  3. Measurable and verifiable attributes
-		  4. Essential for safety and performance
-		  5. Industry-wide recognition and adoption
-
-		  ## Formal Ontology (OWL Functional Syntax)
-
-
-		  ## Relationships
-
-		  ### Parent Classes
-		  - `Robot`: Primary classification
-
-  #### Future Directions
-  ### Emerging Trends
-		  1. AI and machine learning integration
-		  2. Advanced sensing capabilities
-		  3. Improved safety systems
-		  4. Enhanced human-robot collaboration
-		  5. Standardisation advancements
-
-		  ---
-
-		  **Version History**
-		  - 1.0.0 (2025-10-28): Initial foundational definition
-
-		  **Contributors**: Robotics Ontology Working Group
-		  **License**: CC BY 4.0
-		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0006`
-
-		  ```
-
-		- #### Events and Panels
-		- **AI & Access to Justice Initiative**
-		- [Discusses generative AI in new service and business models for legal problems](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4582745)[2](https://justiceinnovation.law.stanford.edu/projects/ai-access-to-justice/).
-		- **American Academy Event on AI & Equitable Access to Legal Services**
-		- [Panelist at a national event discussing AI’s implications for equitable legal services](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4582745)[3](https://justiceinnovation.law.stanford.edu/american-academy-event-on-ai-equitable-access-to-legal-services/).
-
-		   For more detailed information on her research and publications, you can visit her [Stanford Law School profile](https://law.stanford.edu/margaret-hagan/) and the [Legal Design Lab website](https://justiceinnovation.law.stanford.edu/american-academy-event-on-ai-equitable-access-to-legal-services/). Her work continues to push the boundaries of how AI can be leveraged to enhance the accessibility and effectiveness of legal services.
-
-  - # New submission for Creative Catalyst?
-  - [Creative Catalyst 2024
-		- GOV-UK Find a grant (find-government-grants.service.gov.uk)](https://find-government-grants.service.gov.uk/grants/creative-catalyst-2024-1)
-
-		- #### Events and Panels
-		- **AI & Access to Justice Initiative**
-		- [Discusses generative AI in new service and business models for legal problems](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4582745)[2](https://justiceinnovation.law.stanford.edu/projects/ai-access-to-justice/).
-		- **American Academy Event on AI & Equitable Access to Legal Services**
-		- [Panelist at a national event discussing AI’s implications for equitable legal services](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4582745)[3](https://justiceinnovation.law.stanford.edu/american-academy-event-on-ai-equitable-access-to-legal-services/).
-
-		   For more detailed information on her research and publications, you can visit her [Stanford Law School profile](https://law.stanford.edu/margaret-hagan/) and the [Legal Design Lab website](https://justiceinnovation.law.stanford.edu/american-academy-event-on-ai-equitable-access-to-legal-services/). Her work continues to push the boundaries of how AI can be leveraged to enhance the accessibility and effectiveness of legal services.
-
-  - # New submission for Creative Catalyst?
-  - [Creative Catalyst 2024
-		- GOV-UK Find a grant (find-government-grants.service.gov.uk)](https://find-government-grants.service.gov.uk/grants/creative-catalyst-2024-1)
-
-  - # New submission for Creative Catalyst?
-  - [Creative Catalyst 2024
-		- GOV-UK Find a grant (find-government-grants.service.gov.uk)](https://find-government-grants.service.gov.uk/grants/creative-catalyst-2024-1)
-
 
   ## Academic Context
 
@@ -196,33 +126,33 @@ public:: true
   - Service robots are autonomous or semi-autonomous machines designed to perform useful tasks for humans, distinct from industrial robots which are typically fixed and task-specific
   - The field draws from robotics, artificial intelligence, human-computer interaction, and automation engineering
   - Key developments and current state
-		- Service robotics has expanded rapidly due to advances in AI, machine learning, and sensor technologies, enabling robots to operate in dynamic, unstructured environments
-		- The sector now encompasses a wide range of applications, from healthcare and logistics to domestic assistance and public services
+    - Service robotics has expanded rapidly due to advances in AI, machine learning, and sensor technologies, enabling robots to operate in dynamic, unstructured environments
+    - The sector now encompasses a wide range of applications, from healthcare and logistics to domestic assistance and public services
   - Academic foundations
-		- Rooted in cybernetics, control theory, and cognitive science, with ongoing research into autonomy, human-robot collaboration, and ethical design
+    - Rooted in cybernetics, control theory, and cognitive science, with ongoing research into autonomy, human-robot collaboration, and ethical design
 
   ## Current Landscape (2025)
 
   - Industry adoption and implementations
   - Service robots are increasingly deployed in healthcare, logistics, hospitality, retail, and agriculture
   - Notable organisations and platforms
-		- Intuitive Surgical (medical robotics)
-		- ABB (industrial and service robotics)
-		- iRobot (consumer robotics)
-		- Accenture Alpha Automation (data-driven robotics integration)
+    - Intuitive Surgical (medical robotics)
+    - ABB (industrial and service robotics)
+    - iRobot (consumer robotics; acquired by China-based Picea Robotics in January 2026 following bankruptcy)
+    - Accenture Alpha Automation (data-driven robotics integration)
   - UK and North England examples where relevant
-		- Manchester: Robotics research at the University of Manchester and Manchester Metropolitan University, focusing on healthcare and logistics applications
-		- Leeds: Leeds Robotics Lab at the University of Leeds, specialising in assistive and rehabilitation robotics
-		- Newcastle: Newcastle University’s School of Computing, with projects in social robotics and human-robot interaction
-		- Sheffield: Advanced Manufacturing Research Centre (AMRC) at the University of Sheffield, integrating robotics into manufacturing and logistics
+    - Manchester: Robotics research at the University of Manchester and Manchester Metropolitan University, focusing on healthcare and logistics applications
+    - Leeds: Leeds Robotics Lab at the University of Leeds, specialising in assistive and rehabilitation robotics
+    - Newcastle: Newcastle University's School of Computing, with projects in social robotics and human-robot interaction
+    - Sheffield: Advanced Manufacturing Research Centre (AMRC) at the University of Sheffield, integrating robotics into manufacturing and logistics
   - Technical capabilities and limitations
   - Capabilities
-		- Advanced navigation and manipulation in complex environments
-		- Real-time data processing and decision-making
-		- Seamless human-robot collaboration through cobots and collaborative robots
+    - Advanced navigation and manipulation in complex environments
+    - Real-time data processing and decision-making
+    - Seamless human-robot collaboration through cobots and collaborative robots
   - Limitations
-		- Challenges in robustness, adaptability, and ethical considerations
-		- High initial costs and maintenance requirements
+    - Challenges in robustness, adaptability, and ethical considerations
+    - High initial costs and maintenance requirements
   - Standards and frameworks
   - ISO 8373:2012 (Robots and robotic devices — Vocabulary)
   - ISO 13482:2014 (Safety requirements for personal care robots)
@@ -248,7 +178,7 @@ public:: true
   - North England innovation hubs (if relevant)
   - Manchester: Home to the Manchester Robotics Lab and the National Graphene Institute, fostering interdisciplinary robotics research
   - Leeds: Leeds Robotics Lab and the Leeds Institute for Data Analytics, focusing on assistive and rehabilitation robotics
-  - Newcastle: Newcastle University’s School of Computing, with a strong focus on social robotics and human-robot interaction
+  - Newcastle: Newcastle University's School of Computing, with a strong focus on social robotics and human-robot interaction
   - Sheffield: AMRC and the Sheffield Robotics group, integrating robotics into advanced manufacturing and logistics
   - Regional case studies
   - Manchester: Deployment of service robots in healthcare settings, such as automated patient transport and telepresence robots
@@ -295,70 +225,6 @@ public:: true
   - **Review Status**: Comprehensive editorial review
   - **Verification**: Academic sources verified
   - **Regional Context**: UK/North England where applicable
-
-  #### Standards and References
-  ### Primary Standards
-		  1. **ISO 13482:2014**: Primary reference standard
-		  2. **ISO 8373:2021**: Robotics vocabulary
-		  3. **Related IEEE standards**: Implementation guidelines
-
-		  ## Validation Criteria
-
-		  ### Conformance Requirements
-		  1. ✓ Meets ISO 13482:2014 requirements
-		  2. ✓ Documented implementation
-		  3. ✓ Verifiable performance metrics
-		  4. ✓ Safety compliance demonstrated
-		  5. ✓ Industry best practices followed
-
-		  ## Implementation Notes
-
-		  ### Design Considerations
-		  - System integration requirements
-		  - Performance specifications
-		  - Safety considerations
-		  - Maintenance procedures
-
-		  ### Common Patterns
-		  ```yaml
-		  implementation:
-		    standards_compliance: true
-		    verification_method: standardised_testing
-		    documentation_level: comprehensive
-		  ```
-
-  #### Related Concepts
-  - Related robotics concepts and systems
-		  - Cross-references to other ontology terms
-		  - Integration with metaverse ontology
-
-		  ## Use Cases
-
-		  ### Industrial Applications
-		  1. Manufacturing automation
-		  2. Quality control systems
-		  3. Process optimization
-
-		  ### Service Applications
-		  1. Healthcare robotics
-		  2. Logistics and warehousing
-		  3. Consumer robotics
-
-		  ### Research Applications
-		  1. Academic research platforms
-		  2. Algorithm development
-		  3. System integration studies
-
-  #### References
-  ### Metaverse Ontology Integration
-		  - Virtual representation systems
-		  - Digital twin integration
-		  - Simulation environments
-
-		  ### Domain Ontologies
-		  - Manufacturing systems
-		  - Control systems
-		  - Safety systems
 
 - ### Provenance
   - sources::

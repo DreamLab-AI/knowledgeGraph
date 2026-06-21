@@ -101,8 +101,20 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
     },
     {
       "slug": "compute-infrastructure",

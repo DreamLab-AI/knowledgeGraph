@@ -137,6 +137,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
     },

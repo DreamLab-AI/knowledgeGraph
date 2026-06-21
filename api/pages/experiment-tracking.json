@@ -168,6 +168,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },

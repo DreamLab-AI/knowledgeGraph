@@ -5,33 +5,81 @@
   "public": true,
   "classIri": "urn:ngm:class:a-star-algorithm",
   "domain": "artificial-intelligence",
-  "definition": "The A Star algorithm is an informed graph-search method that finds a least-cost path between nodes by combining the accumulated cost from the start with a heuristic estimate of the remaining cost to the goal. By expanding the node with the lowest combined estimate, it guarantees an optimal path when the heuristic is admissible. A Star generalises Dijkstra's algorithm by adding goal-directed guidance.",
+  "definition": "The A* algorithm is an informed best-first graph-search method that finds a least-cost path from a start node to a goal node by evaluating each candidate node n with the function f(n) = g(n) + h(n), where g(n) is the exact cost accumulated from the start node to n and h(n) is an admissible heuristic estimating the remaining cost from n to the goal. By always expanding the open-list node with the lowest f-value, A* is guaranteed to find the optimal path when h is admissible (never overestimates) and is also consistent (satisfies the triangle inequality h(n) \u2264 c(n,n') + h(n') for every edge (n,n')). A* generalises Dijkstra's algorithm by adding goal-directed heuristic guidance, and subsumes greedy best-first search as the special case g(n)=0. First described by Peter Hart, Nils Nilsson, and Bertram Raphael at the Stanford Research Institute in 1968, A* remains the most widely deployed optimal graph-search algorithm in artificial intelligence, robotics, game development, and logistics.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:search-algorithm",
       "label": "Search Algorithm"
+    },
+    {
+      "id": "urn:ngm:class:informed-search",
+      "label": "Informed Search"
+    },
+    {
+      "id": "urn:ngm:class:graph-search",
+      "label": "Graph Search"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:cost-function",
         "label": "Cost Function"
+      },
+      {
+        "id": "urn:ngm:class:priority-queue",
+        "label": "Priority Queue"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:admissibility",
+        "label": "Admissibility"
+      },
+      {
+        "id": "urn:ngm:class:consistency",
+        "label": "Consistency"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:graph-search",
-        "label": "Graph Search"
+        "id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      },
+      {
+        "id": "urn:ngm:class:graph-representation",
+        "label": "Graph Representation"
+      },
+      {
+        "id": "urn:ngm:class:weighted-graph",
+        "label": "Weighted Graph"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:pathfinding",
         "label": "Pathfinding"
+      },
+      {
+        "id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:shortest-path",
+        "label": "Shortest Path"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
       }
     ],
     "dependsOn": [],
@@ -43,12 +91,24 @@
       {
         "id": "urn:ngm:class:graph-search",
         "label": "Graph Search"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:dijkstra-algorithm",
         "label": "Dijkstra Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:rrt-algorithm",
+        "label": "RRT Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
       }
     ],
     "bridgesTo": [],
@@ -60,30 +120,21 @@
       {
         "id": "urn:ngm:class:graph-search",
         "label": "Graph Search"
+      },
+      {
+        "id": "urn:ngm:class:priority-queue",
+        "label": "Priority Queue"
+      },
+      {
+        "id": "urn:ngm:class:weighted-graph",
+        "label": "Weighted Graph"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:pathfinding",
-        "label": "Pathfinding"
-      },
-      {
-        "id": "urn:ngm:class:autonomous-navigation",
-        "label": "Autonomous Navigation"
-      }
-    ],
-    "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:search-algorithm",
-        "label": "Search Algorithm"
-      }
-    ],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:optimisation",
-        "label": "Optimisation"
-      },
       {
         "id": "urn:ngm:class:robotics",
         "label": "Robotics"
@@ -93,12 +144,225 @@
         "label": "Game AI"
       },
       {
-        "id": "urn:ngm:class:dijkstra-algorithm",
-        "label": "Dijkstra Algorithm"
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:network-routing",
+        "label": "Network Routing"
+      },
+      {
+        "id": "urn:ngm:class:gps-systems",
+        "label": "GPS Systems"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:optimisation",
+        "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:ida-star",
+        "label": "IDA*"
+      },
+      {
+        "id": "urn:ngm:class:jump-point-search",
+        "label": "Jump Point Search"
+      },
+      {
+        "id": "urn:ngm:class:theta-star",
+        "label": "Theta*"
+      },
+      {
+        "id": "urn:ngm:class:d-star",
+        "label": "D*"
+      },
+      {
+        "id": "urn:ngm:class:bidirectional-search",
+        "label": "Bidirectional Search"
+      },
+      {
+        "id": "urn:ngm:class:occupancy-grid",
+        "label": "Occupancy Grid"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "pathfinding",
+      "label": "Pathfinding"
+    },
+    {
+      "slug": "dijkstra-algorithm",
+      "label": "Dijkstra Algorithm"
+    },
+    {
+      "slug": "cost-function",
+      "label": "Cost Function"
+    },
+    {
+      "slug": "graph-search",
+      "label": "Graph Search"
+    },
+    {
+      "slug": "informed-search",
+      "label": "Informed Search"
+    },
+    {
+      "slug": "heuristic-methods",
+      "label": "Heuristic Methods"
+    },
+    {
+      "slug": "priority-queue",
+      "label": "Priority Queue"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "game-ai",
+      "label": "Game AI"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "state-space",
+      "label": "State Space"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "weighted-graph",
+      "label": "Weighted Graph"
+    },
+    {
+      "slug": "shortest-path",
+      "label": "Shortest Path"
+    },
+    {
+      "slug": "dynamic-programming",
+      "label": "Dynamic Programming"
+    },
+    {
+      "slug": "ida-star",
+      "label": "IDA*"
+    },
+    {
+      "slug": "jump-point-search",
+      "label": "Jump Point Search"
+    },
+    {
+      "slug": "theta-star",
+      "label": "Theta*"
+    },
+    {
+      "slug": "d-star",
+      "label": "D*"
+    },
+    {
+      "slug": "bidirectional-search",
+      "label": "Bidirectional Search"
+    },
+    {
+      "slug": "monte-carlo-tree-search",
+      "label": "Monte Carlo Tree Search"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "logistics",
+      "label": "Logistics"
+    },
+    {
+      "slug": "network-routing",
+      "label": "Network Routing"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "graph-representation",
+      "label": "Graph Representation"
+    },
+    {
+      "slug": "admissibility",
+      "label": "Admissibility"
+    },
+    {
+      "slug": "consistency",
+      "label": "Consistency"
+    },
+    {
+      "slug": "completeness",
+      "label": "Completeness"
+    },
+    {
+      "slug": "optimality",
+      "label": "Optimality"
+    },
+    {
+      "slug": "occupancy-grid",
+      "label": "Occupancy Grid"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "rrt-algorithm",
+      "label": "RRT Algorithm"
+    },
+    {
+      "slug": "gps-systems",
+      "label": "GPS Systems"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    }
+  ],
   "backlinks": [
     {
       "slug": "dijkstra-algorithm",

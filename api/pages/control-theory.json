@@ -689,6 +689,14 @@
       "label": "Access Control System"
     },
     {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
       "slug": "adaptive-control",
       "label": "Adaptive Control"
     },
@@ -699,6 +707,10 @@
     {
       "slug": "admittance-control",
       "label": "Admittance Control"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
     },
     {
       "slug": "closed-loop-control",

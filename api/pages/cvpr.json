@@ -130,6 +130,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
       "slug": "attention",
       "label": "Attention"
     },

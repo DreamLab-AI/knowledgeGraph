@@ -1,0 +1,2 @@
+- ### Definition
+  - The use of mathematical formalisms implemented in software to simulate real-world system behaviour, enabling hypothesis testing, prediction, and sensitivity analysis at scale.

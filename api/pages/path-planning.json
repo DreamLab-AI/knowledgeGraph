@@ -216,6 +216,10 @@
   ],
   "backlinks": [
     {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
       "slug": "autonomous-navigation",
       "label": "Autonomous Navigation"
     },

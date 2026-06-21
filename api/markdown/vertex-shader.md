@@ -149,9 +149,6 @@
   - Luna, F. (2016). *Introduction to 3D Game Programming with DirectX 12*
   - Rost, R. et al. (2009). *OpenGL Shading Language*, 3rd ed.
 
-  ### Relationships
-  - is-subclass-of:: [[Metaverse]]
-
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

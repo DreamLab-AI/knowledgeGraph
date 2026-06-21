@@ -50,6 +50,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
     },

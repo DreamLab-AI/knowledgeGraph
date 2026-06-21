@@ -198,48 +198,19 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - Regularisation comprises techniques that constrain or penalise model complexity during training to prevent overfitting and improve generalisation. Common methods include L1/L2 penalties, dropout, and early stopping.
 - ### Semantic Classification
   - owl-class:: spatial-computing:Regularisation
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
 - ### Relationships
-  - Supports: [[Model Training]]
-  - Requires: [[Loss Function]]
-  - Enables: [[Deep Learning]]
-  - Contrasts With: [[Overfitting]]
-  - Related To: [[Dropout]], [[Training]]
+  - supports:: [[Model Training]]
+  - requires:: [[Loss Function]]
+  - enables:: [[Deep Learning]]
+  - contrastsWith:: [[Overfitting]]
+  - relatedTo:: [[Dropout]], [[Training]]
 - ### Content
-  - ### Primary Definition
-  **Regularisation** comprises techniques that constrain or penalise model complexity during training to prevent overfitting and improve generalisation. Common methods include L1/L2 penalties, dropout, and early stopping.
-  - ### Original Content
-		- ```
-  # Regularisation
-  #### Related Concepts
-  - **Overfitting** (AI-0054): Problem regularisation addresses
-		  - **Generalisation**: Regularisation improves generalisation
-		  - **Model Capacity** (AI-0053): Regularisation controls effective capacity
-		  - **Training** (AI-0041): Regularisation applied during training
-		  ## Formal Ontology
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-		  </details>
-		  ## Standards Alignment
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Training techniques
-		  ### NIST AI RMF
-		  - **Function**: MAP (Training best practices)
-		  ## Related Terms
-		  - **Overfitting** (AI-0054): Prevented by regularisation
-		  - **Dropout** (AI-0057): Specific regularisation technique
-		  - **Generalisation**: Improved by regularisation
-		  - **Training** (AI-0041): Applies regularisation
-  #### References
-  1. ISO/IEC 22989:2022 - Training methods
-		  2. Goodfellow et al. - "Deep Learning" - MIT Press, 2016 (Chapter 7)
-		  ---
-		  **Authority Score**: 0.93 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-		  ```
+  - **Regularisation** comprises techniques that constrain or penalise model complexity during training to prevent overfitting and improve generalisation. Common methods include L1/L2 penalties, dropout, and early stopping.
   ## Academic Context
   - Regularisation is a fundamental technique in machine learning and statistics aimed at preventing overfitting by adding a penalty term to the model’s loss function.
   - This penalty discourages overly complex models that fit noise rather than underlying patterns, thereby improving generalisation to unseen data.
@@ -287,11 +258,6 @@ public:: true
   6. IBM. (2025). What Is Regularization? IBM Think Blog.  
   7. C3 AI. (2025). What is Regularization in Machine Learning Models?  
   *If regularisation were a person, it would be the sensible friend who insists on wearing a seatbelt — preventing crashes (overfitting) without spoiling the fun of the ride (model complexity).*
-  ## Metadata
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

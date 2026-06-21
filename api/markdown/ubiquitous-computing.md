@@ -1,0 +1,2 @@
+- ### Definition
+  - Ubiquitous Computing is a computing paradigm in which processing and connectivity are embedded throughout the physical environment in everyday objects, enabling seamless, context-aware human-computer interaction without explicit user engagement.

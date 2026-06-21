@@ -100,9 +100,6 @@
   ### Historical Note
   Introduced by Leo Breiman in 1994, bagging laid the foundation for Random Forests and demonstrated that model diversity through randomization could significantly improve generalization.
 
-  ### Definition
-  Bagging (Bootstrap Aggregating) is a parallel ensemble learning technique that trains multiple models independently on different random subsets of the training data created through bootstrap sampling (sampling with replacement). By averaging predictions from diverse models, bagging reduces variance and prevents overfitting, making it particularly effective with high-variance, low-bias models like decision trees.
-
   ### Algorithm Overview
   1. **Bootstrap Sampling:**
    - Create B bootstrap samples from training set

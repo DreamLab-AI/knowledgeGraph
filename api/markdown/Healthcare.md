@@ -24,7 +24,7 @@ public:: true
   "definition": "Healthcare is the organised provision of medical services, preventive care, diagnostics, treatment, and rehabilitation to individuals and populations. It encompasses clinical practice, health informatics, medical devices, pharmaceutical supply chains, and public health systems. As an application domain for AI and spatial computing, healthcare is distinguished by stringent regulatory requirements, sensitivity of patient data, and direct impact on human wellbeing.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:ai", "label": "Artificial Intelligence"}],
+  "subClassOf": [{"@id": "urn:ngm:class:ai-application", "label": "AI Application"}],
   "relations": {
     "supports": [
       {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},

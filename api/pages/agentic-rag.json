@@ -5,41 +5,372 @@
   "public": true,
   "classIri": "urn:ngm:class:agentic-rag",
   "domain": "ai",
-  "definition": "Agentic RAG is an architecture that augments retrieval-augmented generation with an autonomous agent loop, letting a language model plan, decide when and what to retrieve, issue multiple queries, and verify results before answering. Unlike single-shot RAG, it can route between sources, reformulate queries, and iterate retrieval and reasoning steps until a confidence threshold is met. This improves accuracy on multi-hop and ambiguous questions at the cost of higher latency and orchestration complexity.",
+  "definition": "Agentic RAG is an architecture that augments retrieval-augmented generation with an autonomous agent loop, letting a language model plan, decide when and what to retrieve, issue multiple queries across heterogeneous sources, reflect on retrieved evidence quality, reformulate queries, and verify results before generating a final response. Unlike the single-pass retrieve-then-read pipeline of naive RAG, Agentic RAG treats retrieval as a first-class action in a multi-step reasoning cycle, enabling resolution of multi-hop questions, adaptive source selection, self-correction, and iterative evidence accumulation under agent-controlled stopping criteria.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:information-retrieval",
       "label": "Information Retrieval"
+    },
+    {
+      "id": "urn:ngm:class:retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.91,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:query-rewriting",
+        "label": "Query Rewriting"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-grader",
+        "label": "Retrieval Grader"
+      },
+      {
+        "id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      },
+      {
+        "id": "urn:ngm:class:self-rag",
+        "label": "Self-RAG"
+      },
+      {
+        "id": "urn:ngm:class:corrective-rag",
+        "label": "Corrective RAG"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-hop-reasoning",
+        "label": "Multi-Hop Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:hallucination-mitigation",
+        "label": "Hallucination Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-grounding",
+        "label": "Knowledge Grounding"
+      },
+      {
+        "id": "urn:ngm:class:source-attribution",
+        "label": "Source Attribution"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:rag-pipeline",
+        "label": "RAG Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:reranking",
+        "label": "Reranking"
+      },
+      {
+        "id": "urn:ngm:class:hybrid-retrieval",
+        "label": "Hybrid Retrieval"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:retrieval-augmented-generation-rag",
-        "label": "Retrieval Augmented Generation - RAG"
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       },
       {
         "id": "urn:ngm:class:rag-pipeline",
         "label": "RAG Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:graph-rag",
+        "label": "GraphRAG"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-search",
+        "label": "Enterprise Search"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "rag-pipeline",
+      "label": "RAG Pipeline"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "agent-loop",
+      "label": "Agent Loop"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "embedding-model",
+      "label": "Embedding Model"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "query-rewriting",
+      "label": "Query Rewriting"
+    },
+    {
+      "slug": "hallucination-mitigation",
+      "label": "Hallucination Mitigation"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "dense-retrieval",
+      "label": "Dense Retrieval"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "orchestration",
+      "label": "Orchestration"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "context-window-management",
+      "label": "Context Window Management"
+    },
+    {
+      "slug": "knowledge-base",
+      "label": "Knowledge Base"
+    },
+    {
+      "slug": "source-attribution",
+      "label": "Source Attribution"
+    },
+    {
+      "slug": "document-chunking",
+      "label": "Document Chunking"
+    },
+    {
+      "slug": "approximate-nearest-neighbour-search",
+      "label": "Approximate Nearest Neighbour Search"
+    },
+    {
+      "slug": "reranking",
+      "label": "Reranking"
+    },
+    {
+      "slug": "graph-rag",
+      "label": "GraphRAG"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "knowledge-grounding",
+      "label": "Knowledge Grounding"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "self-rag",
+      "label": "Self-RAG"
+    },
+    {
+      "slug": "corrective-rag",
+      "label": "Corrective RAG"
+    },
+    {
+      "slug": "enterprise-search",
+      "label": "Enterprise Search"
+    },
+    {
+      "slug": "multi-hop-reasoning",
+      "label": "Multi-Hop Reasoning"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "embedding-search",
+      "label": "Embedding Search"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "hybrid-retrieval",
+      "label": "Hybrid Retrieval"
+    },
+    {
+      "slug": "streaming-rag",
+      "label": "Streaming RAG"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
     {
       "slug": "retrieval-augmented-generation-rag",
       "label": "Retrieval Augmented Generation - RAG"

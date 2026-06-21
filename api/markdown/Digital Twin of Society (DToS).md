@@ -369,8 +369,6 @@ public:: true
 - ### Definition
   - A large-scale simulation of social, economic, and behavioural systems integrating city infrastructure, population dynamics, and environmental data to model and optimise societal outcomes.
 
-bridges-to:: [[Autonomous Robot]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalTwinOfSociety
   - owl-role:: Object

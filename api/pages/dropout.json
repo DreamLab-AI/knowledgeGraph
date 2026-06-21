@@ -162,6 +162,18 @@
       "label": "Algorithmic Bias and Variance"
     },
     {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

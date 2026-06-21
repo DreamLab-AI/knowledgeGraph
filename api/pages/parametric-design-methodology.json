@@ -66,5 +66,10 @@
       "label": "NVIDIA Omniverse"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    }
+  ]
 }

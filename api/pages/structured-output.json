@@ -137,6 +137,14 @@
       "label": "Agent Frameworks"
     },
     {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
+    },
+    {
       "slug": "prompt-engineering",
       "label": "Prompt Engineering"
     }

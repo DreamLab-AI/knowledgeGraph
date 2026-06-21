@@ -162,12 +162,32 @@
   ],
   "backlinks": [
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
       "slug": "ai-concept",
       "label": "AI Concept"
     },
     {
       "slug": "ai-diagram-tools",
       "label": "AI Diagram Tools"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
     },
     {
       "slug": "cognitive-ai",

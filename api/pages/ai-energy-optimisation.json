@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.87,
   "maturity": "growing",
   "relationships": {
     "hasPart": [
@@ -138,12 +138,132 @@
     {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "model-pruning",
+      "label": "Model Pruning"
+    },
+    {
+      "slug": "neural-network-quantisation",
+      "label": "Model Quantisation"
+    },
+    {
+      "slug": "neural-architecture-search",
+      "label": "Neural Architecture Search"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "gpu-computing",
+      "label": "GPU Computing"
+    },
+    {
+      "slug": "carbon-aware-computing",
+      "label": "Carbon-Aware Computing"
+    },
+    {
+      "slug": "mixed-precision-training",
+      "label": "Mixed Precision Training"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "high-performance-computing",
+      "label": "High-Performance Computing"
+    },
+    {
+      "slug": "data-centre",
+      "label": "Data Centre"
+    },
+    {
+      "slug": "renewable-energy",
+      "label": "Renewable Energy"
+    },
+    {
+      "slug": "environmental-sustainability",
+      "label": "Environmental Sustainability"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "efficient-transformers",
+      "label": "Efficient Transformers"
+    },
+    {
+      "slug": "sparse-attention",
+      "label": "Sparse Attention"
+    },
+    {
+      "slug": "gradient-checkpointing",
+      "label": "Gradient Checkpointing"
+    },
+    {
+      "slug": "power-usage-effectiveness",
+      "label": "Power Usage Effectiveness"
+    },
+    {
+      "slug": "neuromorphic-computing",
+      "label": "Neuromorphic Computing"
+    },
+    {
+      "slug": "on-device-inference",
+      "label": "On-Device Inference"
+    },
+    {
+      "slug": "model-compression",
+      "label": "Model Compression"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "green-ai",
+      "label": "Green AI"
+    },
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
+      "slug": "workload-scheduling",
+      "label": "Workload Scheduling"
+    },
+    {
+      "slug": "flash-attention",
+      "label": "Flash Attention"
+    },
+    {
+      "slug": "speculative-decoding",
+      "label": "Speculative Decoding"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
     }
   ],
   "backlinks": [
     {
       "slug": "51-attack",
       "label": "51% Attack"
+    },
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
     },
     {
       "slug": "archival-node",

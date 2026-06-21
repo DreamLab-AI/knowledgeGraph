@@ -300,9 +300,6 @@
   - **TC**: Multi-agent planning, Coordination protocols
   ## Tags
   #agent #autonomy #cross-domain #ai-agents #dao #robotics #metaverse #trusted-collaboration #bdi-model #multi-agent-systems #autonomous-systems #perception #reasoning #action #goals #intelligent-agents
-  ### Relationships
-  - is-subclass-of:: [[Blockchain]]
-  - bridges-to:: [[AI Agent System]]
 - ### Provenance
   - sources::
   - migration-date:: 2026-04-26T00:00:00Z

@@ -112,6 +112,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
     },

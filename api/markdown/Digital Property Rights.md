@@ -115,8 +115,6 @@ public:: true
 - ### Definition
   - Digital Property Rights are the legally and technically enforceable claims governing ownership, transfer, and use of digital assets and virtual content. They encompass intellectual property protections, on-chain ownership assertions via non-fungible tokens, licensing frameworks, and governance rules that determine who can access, modify, or commercialise digital objects within virtual and mixed-reality environments.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalPropertyRights
   - owl-role:: concept

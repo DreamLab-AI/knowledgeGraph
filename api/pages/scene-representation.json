@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:ngm-scene-representation",
+  "title": "Scene Representation",
+  "slug": "scene-representation",
+  "public": true,
+  "classIri": "urn:ngm:class:scene-representation",
+  "domain": "spatial-computing",
+  "definition": "Scene Representation is the set of data structures and mathematical models used to encode the geometry, appearance, and spatial relationships of objects within a 3D environment. Representations include polygonal meshes, voxel grids, point clouds, implicit surfaces, and neural radiance fields, each with different trade-offs in accuracy, compactness, and rendering speed. The choice of scene representation directly influences the quality and performance of spatial computing and computer vision systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Spatial Computing Content and Assets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:rendering",
+        "label": "Rendering"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

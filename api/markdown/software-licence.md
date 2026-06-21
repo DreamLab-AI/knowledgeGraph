@@ -1,0 +1,2 @@
+- ### Definition
+  - A Software Licence is a legal agreement specifying the permissions, restrictions, and obligations under which software may be used, modified, and redistributed, ranging from permissive open-source to proprietary terms.

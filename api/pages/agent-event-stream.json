@@ -189,6 +189,10 @@
   ],
   "backlinks": [
     {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
       "slug": "adapter-slot",
       "label": "Adapter Slot"
     },

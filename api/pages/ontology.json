@@ -124,6 +124,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
       "slug": "complete-ontology-index",
       "label": "COMPLETE ONTOLOGY INDEX"
     },

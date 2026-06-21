@@ -13,55 +13,6 @@
 
 - ### Content
   - Blockchain core concepts encompass distributed ledger fundamentals including consensus mechanisms, cryptographic primitives, data structures, transactions, smart contracts, and governance frameworks enabling DeFi, NFTs, and metaverse economies with scalability and regulatory considerations.
-  - ### Original Content
-		- ```
-  - # Blockchain - Core Concepts Index
-
-		  - ## Overview
-		    - This index page provides links to key Blockchain ontology classes
-		    - Domain: **Blockchain**
-		    - Total Classes Documented: 10
-		    - Technology Readiness Level: 8
-		    - Quality Score: 0.93
-
-		  - ## Smart Contracts & Execution
-		    - [[SmartContract]] - Self-executing blockchain programs
-		    - [[DAO]] - Decentralized autonomous organizations
-
-		  - ## Consensus & Security
-		    - [[ConsensusAlgorithm]] - Byzantine fault tolerant consensus
-		    - [[ZeroKnowledge]] - Privacy-preserving cryptographic proofs
-
-		  - ## Digital Assets
-		    - [[NFT]] - Non-fungible tokens for unique assets
-		    - [[Cryptocurrency]] - Digital currencies and tokens
-
-		  - ## Infrastructure & Scaling
-		    - [[Layer2Scaling]] - Scalability solutions (rollups, channels)
-		    - [[DecentralizedStorage]] - Distributed file storage systems
-		    - [[Blockchain Oracle]] - External data bridges for smart contracts
-		    - [[CrossChainBridge]] - Inter-blockchain asset transfers
-
-		  - ## Cross-Domain Integration
-		    - Blockchain integrates with:
-		      - **AI**: Federated learning, AI governance, model provenance
-		      - **Metaverse**: NFT-based assets, virtual economies, land ownership
-		      - **Robotics**: Robot identity, swarm coordination, provenance tracking
-
-		  - ## Related Resources
-		    - Source File: `metaverse-ontology-combined-refactored.ttl`
-		    - Integration Date: 2025-10-28
-		    - Namespace: `bc:` (http://metaverse-ontology.org/blockchain#)
-
-		  - ## Key Applications
-		    - Decentralized finance (DeFi)
-		    - Digital asset ownership
-		    - Supply chain tracking
-		    - Decentralized governance
-		    - Privacy-preserving transactions
-
-		  ```
-
   ## Academic Context
 
   - Brief contextual overview
@@ -73,7 +24,7 @@
   - The technology is now widely recognised for its potential to reduce reliance on centralised authorities and enhance trust in digital interactions
   - Recent advances include the maturation of consensus mechanisms beyond proof-of-work, such as proof-of-stake and hybrid models, and the integration of smart contracts for automated logic execution
 
-  ## Current Landscape (2025)
+  ## Current Landscape (2026)
 
   - Industry adoption and implementations
   - Blockchain is increasingly adopted in sectors such as finance, healthcare, logistics, and public services
@@ -89,7 +40,7 @@
   - Interoperability between different blockchain networks remains an active area of development
 
   - Standards and frameworks
-  - Industry standards such as ISO/TC 307 and the European Blockchain Services Infrastructure (EBSI) are shaping best practices
+  - ISO/TC 307 continues to publish blockchain standards, including ISO/TS 23516:2026 (Interoperability Framework) published in 2026; the European Blockchain Services Infrastructure (EBSI) is transitioning to a new governance entity (Europeum-EDIC) to support production-scale deployment, with a regulatory sandbox running 2023–2026 supporting 20 projects annually
   - Open-source frameworks like Hyperledger Fabric and Ethereum are widely used for enterprise and research applications
 
   ## Research & Literature
@@ -110,7 +61,7 @@
 
   - British contributions and implementations
   - The UK has been a leader in blockchain research and policy, with institutions such as the Alan Turing Institute and the Centre for Digital Innovation (CDI) driving innovation
-  - Government initiatives include the Digital Economy Act and the Financial Conduct Authority’s regulatory sandbox for blockchain-based financial services
+  - Government initiatives include the Property (Digital Assets etc) Act 2025 (which granted digital assets recognised property status under UK law, receiving Royal Assent December 2025) and the Financial Conduct Authority’s cryptoasset authorisation regime (application gateway opening September 2026, regime live October 2027); the FCA’s regulatory sandbox continues to support innovation, including a stablecoin cohort launched in early 2026
 
   - North England innovation hubs
   - Manchester’s Blockchain Lab at the University of Manchester focuses on distributed systems and smart contract security
@@ -161,7 +112,7 @@
 
   ## Metadata
 
-  - **Last Updated**: 2025-11-11
+  - **Last Updated**: 2026-06-20
   - **Review Status**: Comprehensive editorial review
   - **Verification**: Academic sources verified
   - **Regional Context**: UK/North England where applicable

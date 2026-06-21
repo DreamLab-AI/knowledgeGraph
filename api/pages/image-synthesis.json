@@ -171,6 +171,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

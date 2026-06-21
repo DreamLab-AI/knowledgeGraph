@@ -136,6 +136,10 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "autonomous-agent",
       "label": "Autonomous Agent"
     },

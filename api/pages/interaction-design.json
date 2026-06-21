@@ -131,6 +131,10 @@
       "label": "3D User Interface"
     },
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "etsi-domain-human-interface",
       "label": "ETSI_Domain_Human_Interface"
     },

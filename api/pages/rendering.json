@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:ngm-rendering",
+  "title": "Rendering",
+  "slug": "rendering",
+  "public": true,
+  "classIri": "urn:ngm:class:rendering",
+  "domain": "spatial-computing",
+  "definition": "Rendering is the computational process of generating a two-dimensional image or display output from a scene description, encompassing geometry, materials, lighting, and camera parameters. Techniques range from real-time rasterisation on GPUs to offline ray tracing and neural rendering methods used in film and spatial computing applications. High-quality, low-latency rendering is critical for immersive virtual and augmented reality experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:scene-representation",
+        "label": "Scene Representation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    }
+  ]
+}

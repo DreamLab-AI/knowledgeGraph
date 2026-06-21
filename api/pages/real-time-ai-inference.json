@@ -67,6 +67,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
       "slug": "edge-computing",
       "label": "Edge Computing"
     },

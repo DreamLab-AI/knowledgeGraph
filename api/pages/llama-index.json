@@ -145,6 +145,10 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
     },

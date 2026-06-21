@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.91,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:neural-vocoder",
+        "label": "Neural Vocoder"
+      },
+      {
+        "id": "urn:ngm:class:audio-codec",
+        "label": "Audio Codec"
+      },
+      {
+        "id": "urn:ngm:class:spectrogram",
+        "label": "Spectrogram"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -30,6 +43,10 @@
       {
         "id": "urn:ngm:class:voice-cloning",
         "label": "Voice Cloning"
+      },
+      {
+        "id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
       }
     ],
     "dependsOn": [
@@ -40,6 +57,10 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
       }
     ],
     "implements": [
@@ -51,8 +72,12 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:ethical-ai",
+        "label": "Ethical AI"
       }
     ],
     "uses": [
@@ -67,12 +92,28 @@
       {
         "id": "urn:ngm:class:autoregressive-model",
         "label": "Autoregressive Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:neural-vocoder",
+        "label": "Neural Vocoder"
       }
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:speech-synthesis",
-        "label": "Speech Synthesis"
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
       }
     ],
     "standardizedBy": [],
@@ -83,13 +124,182 @@
         "label": "Latent Diffusion"
       },
       {
-        "id": "urn:ngm:class:generative-adversarial-network",
-        "label": "Generative Adversarial Network"
+        "id": "urn:ngm:class:music-information-retrieval",
+        "label": "Music Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:psychoacoustics",
+        "label": "Psychoacoustics"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "speech-synthesis",
+      "label": "Speech Synthesis"
+    },
+    {
+      "slug": "voice-cloning",
+      "label": "Voice Cloning"
+    },
+    {
+      "slug": "music-generation",
+      "label": "Music Generation"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "neural-vocoder",
+      "label": "Neural Vocoder"
+    },
+    {
+      "slug": "spectrogram",
+      "label": "Spectrogram"
+    },
+    {
+      "slug": "audio-codec",
+      "label": "Audio Codec"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "flow-matching",
+      "label": "Flow Matching"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "audio-feature-extraction",
+      "label": "Audio Feature Extraction"
+    },
+    {
+      "slug": "psychoacoustics",
+      "label": "Psychoacoustics"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    },
+    {
+      "slug": "music-information-retrieval",
+      "label": "Music Information Retrieval"
+    },
+    {
+      "slug": "residual-vector-quantisation",
+      "label": "Residual Vector Quantisation"
+    },
+    {
+      "slug": "score-based-generative-model",
+      "label": "Score-Based Generative Model"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
+    },
+    {
+      "slug": "watermarking",
+      "label": "Watermarking"
+    },
+    {
+      "slug": "real-time-inference",
+      "label": "Real-Time Inference"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
     {
       "slug": "generative-ai",
       "label": "Generative AI"

@@ -124,5 +124,10 @@
       "label": "Smart Contract"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    }
+  ]
 }

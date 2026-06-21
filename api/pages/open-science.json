@@ -103,6 +103,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
       "slug": "bio-terror",
       "label": "Bio Terror"
     }

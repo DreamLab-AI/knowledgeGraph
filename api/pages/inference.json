@@ -146,6 +146,14 @@
   ],
   "backlinks": [
     {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
+    },
+    {
       "slug": "knowledge-graphs",
       "label": "Knowledge Graphs"
     }

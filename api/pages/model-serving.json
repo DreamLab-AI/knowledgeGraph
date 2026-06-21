@@ -168,12 +168,20 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
       "slug": "ai-model-inference-engine",
       "label": "AI Model Inference Engine"
     },
     {
       "slug": "ai-system-component",
       "label": "AI System Component"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
     },
     {
       "slug": "checkpoints",

@@ -106,6 +106,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
       "slug": "etsi-domain-data-management-ai",
       "label": "ETSI Domain: Data Management + AI"
     },

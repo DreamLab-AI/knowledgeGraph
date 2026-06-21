@@ -144,6 +144,10 @@
       "label": "AI Companies"
     },
     {
+      "slug": "automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },

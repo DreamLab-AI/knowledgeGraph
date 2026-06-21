@@ -155,6 +155,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
       "slug": "can-bus",
       "label": "CAN Bus"
     },

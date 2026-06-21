@@ -57,5 +57,10 @@
     "relatedTo": []
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    }
+  ]
 }

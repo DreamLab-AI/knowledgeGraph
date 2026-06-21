@@ -118,6 +118,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
     },

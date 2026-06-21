@@ -68,7 +68,7 @@ public:: true
   "qualityScore": 0.7,
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:bitcoin-proof-of-work-protocol-script",
+      "@id": "urn:ngm:class:bitcoin-script",
       "label": "Bitcoin Script"
     }
   ],

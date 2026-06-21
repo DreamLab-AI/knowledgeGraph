@@ -583,5 +583,22 @@
       "label": "Training Data"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
+    }
+  ]
 }

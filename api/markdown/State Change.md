@@ -119,27 +119,16 @@ public:: true
 
 - ### Content
 
-  ### SKOS Conceptual Structure
-
   ## Design Patterns
 
   ### State Machine Pattern
-  ```
-  [State A] --[event]--> [Transition Logic] --[state change]--> [State B]
-  ```
+  - `[State A] --[event]--> [Transition Logic] --[state change]--> [State B]`
 
   ### Observer Pattern for State Changes
-  ```
-  StateManager
-  ├─ notifyObservers(stateChange)
-  ├─ registerObserver(observer)
-  └─ unregisterObserver(observer)
-  ```
+  - StateManager notifies observers on state change, supporting registerObserver and unregisterObserver operations.
 
   ### Event Sourcing
-  ```
-  Event Stream → State Projection → Current State
-  ```
+  - `Event Stream → State Projection → Current State`
 
   ## Implementation Considerations
 

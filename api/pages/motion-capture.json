@@ -517,6 +517,10 @@
       "label": "AI Video"
     },
     {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
       "slug": "digital-actor-creation",
       "label": "Digital Actor Creation"
     },

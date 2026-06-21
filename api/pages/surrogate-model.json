@@ -90,5 +90,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    }
+  ]
 }

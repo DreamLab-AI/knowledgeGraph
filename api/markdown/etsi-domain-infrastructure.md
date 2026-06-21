@@ -1,5 +1,7 @@
 - ### Definition
   - An [[ETSI]] governance domain governing foundational systems, networks, and computational resources enabling [[Metaverse]] platforms at scale. This domain encompasses [[NetworkInfrastructure]], [[CloudComputing]], [[EdgeComputing]], [[DataCenter|data centers]], [[NetworkSecurity]], and [[SystemResilience]] to provide reliable, performant, secure technical foundations.
+
+- ### Semantic Classification
   - owl-class:: infrastructure:ETSI_Domain_Infrastructure
   - owl-role:: Concept
   - belongs-to-domain:: [[MetaverseDomain]]
@@ -11,39 +13,7 @@
 
 - ### Content
   - The ETSI Infrastructure domain governs foundational systems and computational resources enabling metaverse platforms through networks, cloud infrastructure, and security.
-  - ### Original Content
-		- ```
-  # ETSI Domain: Infrastructure
 
-		  ## Properties
-
-		  ## Terms in this Domain
-
-		  - [[6G Network Slice]]
-		  - [[Cloud Rendering Service]]
-		  - [[Compute Layer]]
-		  - [[Content Delivery Network (CDN)]]
-		  - [[Context Awareness]]
-		  - [[Distributed Ledger Technology (DLT)]]
-		  - [[Edge Computing Node]]
-		  - [[Edge Mesh Network]]
-		  - [[Edge Network]]
-		  - [[Edge Orchestration]]
-		  - [[Hardware Abstraction Layer (HAL)]]
-		  - [[Infrastructure Layer]]
-		  - [[Latency]]
-		  - [[Latency Management Protocol]]
-		  - [[Metaverse Architecture Stack]]
-		  - [[Middleware]]
-		  - [[Network Infrastructure]]
-		  - [[Networking Layer]]
-		  - [[Physics Engine]]
-		  - [[Spatial Computing Paradigm]]
-		  - [[Spatial Computing Layer]]
-		  - [[Visualization Layer]]
-
-		  ## Query All Terms
-		  ```
   ## Academic Context
 
   - The ETSI Domain Infrastructure represents a foundational component within the broader metaverse ecosystem, focusing on the underlying network, compute, and connectivity frameworks that enable immersive virtual environments.
@@ -62,7 +32,7 @@
   - Limitations remain in fully standardising cross-platform interoperability and achieving ubiquitous ultra-low latency, especially in mobile contexts.
   - Standards and frameworks:
   - ETSI’s MEC (Multi-access Edge Computing) specifications provide APIs for network information exposure.
-  - The Metaverse Standards Forum’s Domain Working Group focuses on network compute requirements and quality of experience metrics, with deliverables expected in 2025.
+  - The Metaverse Standards Forum’s Domain Working Group focuses on network compute requirements and quality of experience metrics.
   - ITU-T’s Focus Group on Metaverse (FG-MV) addresses infrastructure and interoperability aspects internationally.
 
   ## Research & Literature

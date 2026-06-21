@@ -115,6 +115,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
       "slug": "data-engineering",
       "label": "Data Engineering"
     },

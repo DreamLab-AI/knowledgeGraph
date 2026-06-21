@@ -160,6 +160,10 @@
   ],
   "backlinks": [
     {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },

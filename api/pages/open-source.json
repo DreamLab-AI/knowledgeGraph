@@ -151,6 +151,10 @@
       "label": "3D and 4D"
     },
     {
+      "slug": "a2-a-protocol",
+      "label": "A2A Protocol"
+    },
+    {
       "slug": "experiment-tracking",
       "label": "Experiment Tracking"
     },

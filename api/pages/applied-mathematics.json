@@ -5,18 +5,71 @@
   "public": true,
   "classIri": "urn:ngm:class:applied-mathematics",
   "domain": "machine-learning",
-  "definition": "Applied mathematics is the use of mathematical methods to solve problems in science, engineering, economics and industry. It includes areas such as modelling, numerical analysis and optimisation.",
+  "definition": "Applied Mathematics is the systematic use of mathematical structures, methods, and reasoning to model, analyse, and solve problems arising in science, engineering, economics, computing, and industry. Distinct from pure mathematics by its orientation toward practical effectiveness, Applied Mathematics encompasses numerical analysis, mathematical modelling, optimisation, probability and statistics, differential equations, control theory, fluid dynamics, information theory, and scientific computing. It provides the formal substrate on which machine learning training dynamics, signal processing algorithms, control systems, financial derivatives pricing, and physical simulation all rest. The discipline demands both rigorous theoretical grounding \u2014 convergence proofs, stability analysis, error bounds \u2014 and pragmatic accommodation of real constraints such as floating-point arithmetic, computational cost, and measurement noise.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-science",
+      "label": "Mathematical Science"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:calculus",
+        "label": "Calculus"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-optimisation",
+        "label": "Mathematical Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:functional-analysis",
+        "label": "Functional Analysis"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-processes",
+        "label": "Stochastic Processes"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:fourier-analysis",
+        "label": "Fourier Analysis"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,6 +79,26 @@
       {
         "id": "urn:ngm:class:numerical-methods",
         "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
       }
     ],
     "dependsOn": [],
@@ -33,10 +106,56 @@
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:applied-machine-learning",
+        "label": "Applied Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:mathematical-foundations",
+        "label": "Mathematical Foundations"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-reasoning",
+        "label": "Mathematical Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-hard-problems",
+        "label": "Mathematical Hard Problems"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "label": "Quantum Computation Paradigm"
+      },
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -54,9 +173,181 @@
     {
       "slug": "owl-thing",
       "label": "owl:Thing"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "calculus",
+      "label": "Calculus"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "differential-equations",
+      "label": "Differential Equations"
+    },
+    {
+      "slug": "mathematical-optimisation",
+      "label": "Mathematical Optimisation"
+    },
+    {
+      "slug": "mathematical-foundations",
+      "label": "Mathematical Foundations"
+    },
+    {
+      "slug": "mathematical-science",
+      "label": "Mathematical Science"
+    },
+    {
+      "slug": "numerical-integration",
+      "label": "Numerical Integration"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "stochastic-processes",
+      "label": "Stochastic Processes"
+    },
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "operations-research",
+      "label": "Operations Research"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "bayesian-deep-learning",
+      "label": "Bayesian Deep Learning"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "principal-component-analysis",
+      "label": "Principal Component Analysis"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "regularisation",
+      "label": "Regularisation"
+    },
+    {
+      "slug": "monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "fourier-analysis",
+      "label": "Fourier Analysis"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "mathematical-logic",
+      "label": "Mathematical Logic"
+    },
+    {
+      "slug": "mathematical-reasoning",
+      "label": "Mathematical Reasoning"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "optimisation-algorithm",
+      "label": "Optimisation Algorithm"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
+      "slug": "mathematical-hard-problems",
+      "label": "Mathematical Hard Problems"
+    },
+    {
+      "slug": "tensor-decomposition",
+      "label": "Tensor Decomposition"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "scientific-computing",
+      "label": "Scientific Computing"
+    },
+    {
+      "slug": "quantum-computation-paradigm",
+      "label": "Quantum Computation Paradigm"
+    },
+    {
+      "slug": "epsrc",
+      "label": "EPSRC"
     }
   ],
   "backlinks": [
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
     {
       "slug": "control-theory",
       "label": "Control Theory"

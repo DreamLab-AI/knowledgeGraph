@@ -1,19 +1,20 @@
 - ### Definition
   - The process of authoring, editing, and producing digital assets—including 3D models, textures, audio, video, and interactive experiences—using software toolchains. In spatial computing and metaverse contexts, digital content creation encompasses generative AI assistance, physically-based material authoring, and export pipelines targeting real-time rendering engines.
 
-bridges-to:: [[Computer Vision]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalContentCreation
   - owl-role:: concept
 
 - ### Relationships
-  - Uses [[Generative AI]]
-  - Uses [[Rendering Technology]]
-  - Part Of [[Content Production Workflow]]
-  - Enables [[Digital Content]]
-  - Enables [[Metaverse Content Pipeline]]
-  - Related To [[Digital Content Layer]]
+  - uses:: [[Generative AI]], [[Rendering Technology]], [[Physically Based Rendering]], [[Computer Vision]]
+  - is-part-of:: [[Content Production Workflow]]
+  - has-part:: [[3D Modelling]], [[Texture Authoring]]
+  - enables:: [[Digital Content]], [[Metaverse Content Pipeline]], [[Immersive Experience]], [[Interactive Media]]
+  - requires:: [[Digital Asset Management]], [[Content Delivery Network]]
+  - depends-on:: [[Graphics Processing Unit]], [[Cloud Computing]]
+  - supports:: [[Extended Reality]], [[Virtual World]]
+  - bridges-to:: [[Non-Fungible Token]], [[Distributed Storage]], [[Computer Vision]]
+  - related-to:: [[Digital Content Layer]], [[OpenUSD]], [[Real-Time Rendering]]
 
 - ### Content
 

@@ -120,7 +120,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - Underfitting occurs when a machine learning model is insufficiently complex or inadequately trained to capture the underlying structure of its training data, resulting in high bias, low variance, and poor predictive performance on both training and unseen datasets.
 - ### Semantic Classification
   - owl-class:: spatial-computing:Underfitting
   - owl-role:: Concept
@@ -132,37 +132,7 @@ public:: true
   - Related To [[Regularisation]]
   - Related To [[Loss Function]]
 - ### Content
-  - ### Primary Definition
-  **Underfitting** occurs when a model is too simple to capture the underlying patterns in the training data, resulting in poor performance on both training and test data. Underfitted models have insufficient capacity or training.
-  - ### Original Content
-		- ```
-  # Underfitting
-  #### Related Concepts
-  - **Overfitting** (AI-0054): Opposite problem
-		  - **Model Capacity** (AI-0053): Insufficient capacity causes underfitting
-		  - **Training** (AI-0041): Insufficient training may cause underfitting
-		  - **Bias-Variance Tradeoff**: Underfitting is high-bias scenario
-		  ## Formal Ontology
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-		  </details>
-		  ## Standards Alignment
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Model quality issues
-		  - **ISO/IEC 23894:2023**: Algorithm performance risks
-		  ### NIST AI RMF
-		  - **Function**: MEASURE (Model performance evaluation)
-		  ## Related Terms
-		  - **Overfitting** (AI-0054): Contrasting problem
-		  - **Model Capacity** (AI-0053): Insufficient capacity symptom
-		  - **Training** (AI-0041): May require more training
-		  - **Model Complexity**: Needs increase when underfitting
-  #### References
-  1. ISO/IEC 22989:2022 - Model quality
-		  2. Goodfellow et al. - "Deep Learning" - MIT Press, 2016
-		  ---
-		  **Authority Score**: 0.93 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-		  ```
+  - **Underfitting** occurs when a model is too simple to capture the underlying patterns in the training data, resulting in poor performance on both training and test data. Underfitted models have insufficient capacity or training.
   ## Academic Context
   - Brief contextual overview
   - Underfitting refers to a situation in machine learning where a model is too simplistic to capture the underlying patterns in the data, resulting in poor predictive performance on both training and test datasets
@@ -179,7 +149,7 @@ public:: true
   - Underfitting is routinely addressed in industry through model complexity tuning, feature engineering, and ensemble methods
   - Major platforms such as AWS SageMaker, Google Cloud AI, and Azure Machine Learning provide tools for diagnosing and mitigating underfitting
   - Notable organisations and platforms
-  - UK-based companies like BenevolentAI (London), Faculty (London), and Peak (Manchester) incorporate underfitting diagnostics into their machine learning workflows
+  - UK-based companies like Faculty (London) and Peak (Manchester) incorporate underfitting diagnostics into their machine learning workflows; BenevolentAI, formerly prominent in London's AI scene, was acquired by Osaka Holdings in March 2025
   - North England innovation hubs, including the Manchester AI Foundry and the Leeds Institute for Data Analytics, actively research and apply best practices for model fitting
   - Technical capabilities and limitations
   - Automated hyperparameter tuning and feature selection have reduced the incidence of underfitting, but domain expertise remains crucial for effective model design

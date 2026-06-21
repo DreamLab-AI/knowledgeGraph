@@ -71,6 +71,10 @@
   ],
   "backlinks": [
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
       "slug": "algorithmic-layer",
       "label": "Algorithmic Layer"
     },

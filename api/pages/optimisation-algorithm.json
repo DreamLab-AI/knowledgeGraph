@@ -98,5 +98,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "adam-optimiser",
+      "label": "adam optimiser"
+    },
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    }
+  ]
 }

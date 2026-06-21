@@ -185,7 +185,7 @@
     },
     {
       "slug": "stable-diffusion",
-      "label": "Stable Diffusion"
+      "label": "Stable Diffusion Image Model"
     },
     {
       "slug": "update-cycle",
@@ -202,8 +202,16 @@
       "label": "AR Frame"
     },
     {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
       "slug": "admittance-control",
       "label": "Admittance Control"
+    },
+    {
+      "slug": "affective-computing-system",
+      "label": "Affective Computing System"
     },
     {
       "slug": "autonomous-robot",

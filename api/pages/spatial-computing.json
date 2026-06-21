@@ -138,6 +138,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
       "slug": "ar-frame",
       "label": "AR Frame"
     },
@@ -154,12 +162,24 @@
       "label": "Ar Display Device"
     },
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
       "slug": "augmented-reality-ar",
       "label": "Augmented Reality (AR)"
     },
     {
       "slug": "augmented-reality-collaboration",
       "label": "Augmented Reality Collaboration"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
     },
     {
       "slug": "bandwidth-adaptation",

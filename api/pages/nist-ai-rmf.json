@@ -127,8 +127,32 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-ethics-checklist",
+      "label": "AI Ethics Checklist"
+    },
+    {
       "slug": "ai-office",
       "label": "AI Office"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
     },
     {
       "slug": "ai-risk",
@@ -137,6 +161,10 @@
     {
       "slug": "ai-risks",
       "label": "AI Risks"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
     },
     {
       "slug": "auc",
@@ -155,6 +183,22 @@
       "label": "Activation Function"
     },
     {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
     },
@@ -165,6 +209,10 @@
     {
       "slug": "attention-mechanism",
       "label": "Attention Mechanism"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
     },
     {
       "slug": "autoencoder",

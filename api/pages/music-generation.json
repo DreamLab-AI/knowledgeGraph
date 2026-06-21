@@ -90,6 +90,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
     }

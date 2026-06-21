@@ -877,6 +877,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-agent-coordination",
+      "label": "AI Agent Coordination"
+    },
+    {
       "slug": "ai-alignment",
       "label": "AI Alignment"
     },
@@ -1021,12 +1025,36 @@
       "label": "Agent Frameworks"
     },
     {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
       "slug": "agent",
       "label": "Agent"
     },
     {
       "slug": "agentic-ai-practitioner-training-programme",
       "label": "Agentic AI Practitioner Training Programme"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
     },
     {
       "slug": "autonomy-level",

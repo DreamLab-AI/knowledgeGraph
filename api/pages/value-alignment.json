@@ -194,6 +194,18 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
       "slug": "etsi-domain-governance-and-ethics",
       "label": "ETSI Domain: Governance & Ethics"
     },

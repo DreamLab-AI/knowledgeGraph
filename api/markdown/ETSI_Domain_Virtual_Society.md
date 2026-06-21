@@ -1291,9 +1291,10 @@ public:: true
 
   - ## Industry Standards and Technical Specifications [Updated 2025]
   - **ETSI Standards**:
-		- **[[ETSI GR ARF 007 V1.1.1]] (2025)**: Focuses on interoperability protocols for virtual worlds, including identity, social interaction, and asset portability. [Reference](https://www.etsi.org/deliver/etsi_gr/ARF/001_099/007/01.01.01_60/gr_arf007v010101p.pdf)
-		- **[[ETSI GR ARF 010 V1.1.1]] (2025)**: Details interoperability standards, working groups, and standards development organizations for virtual society technologies. [Reference](https://www.etsi.org/deliver/etsi_gr/ARF/001_099/010/01.01.01_60/gr_arf010v010101p.pdf)
-		- **[[ETSI Work Programme 2024-2025]]**: Prioritizes XRM enhancement, metaverse interoperability, secure digital identity, AI-enhanced AR/VR, and 5G/6G integration for immersive applications
+		- **[[ETSI GR ARF 007 V1.1.1]] (2025-03)**: Focuses on interoperability protocols for virtual worlds, including identity, social interaction, and asset portability. [Reference](https://www.etsi.org/deliver/etsi_gr/ARF/001_099/007/01.01.01_60/gr_arf007v010101p.pdf)
+		- **[[ETSI GR ARF 010 V1.1.1]] (2025-05)**: Details interoperability standards, working groups, and standards development organizations for virtual society technologies. [Reference](https://www.etsi.org/deliver/etsi_gr/ARF/001_099/010/01.01.01_60/gr_arf010v010101p.pdf)
+		- **ETSI GR ARF 012 V1.1.1 (2025-11)**: Executive summary covering 912 standards and 354 technical reports across eight Virtual Worlds domains, providing the most comprehensive mapping of the virtual society standardisation landscape to date. [Reference](https://www.etsi.org/deliver/etsi_gr/ARF/001_099/012/01.01.01_60/gr_ARF012v010101p.pdf)
+		- **[[ETSI Work Programme 2024-2025]]**: Prioritises XRM enhancement, metaverse interoperability, secure digital identity, AI-enhanced AR/VR, and 5G/6G integration for immersive applications
   - **Related International Standards**:
 		- **[[ITU-T Focus Group on Metaverse (FG-MV)]]**: Addresses technical requirements for metaverse interoperability, security, and privacy. [Reference](https://www.itu.int/en/ITU-T/focusgroups/mv/Pages/FG-MV-structure-and-workplan.aspx)
 		- **[[Metaverse Standards Forum (MSF)]]**: Non-profit consortium promoting interoperability between various SDOs, fostering collaboration on virtual society standards, and accelerating open standards development

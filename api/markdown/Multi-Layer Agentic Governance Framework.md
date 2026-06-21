@@ -561,7 +561,6 @@ elevatedFrom:: [[Agentic Mycelia]]
   - ## Standards
   - ## Toward an agentic mycelium for emergent digital spaces
   - ### Methodology
-		  ```
   - This was the final prompt to [[Constitutional AI Language Model Family]] 3 Opus, which merged in the previously developed [[Metaverse Ontology]] was lightly shaped into the output below.
 		- ```text
 		  this is the Linked-JSON ontology we made for the instance that is now called Omniverse digital twin. 
@@ -576,7 +575,6 @@ elevatedFrom:: [[Agentic Mycelia]]
 		- ## Key Components
 			- ### Metaverse Instances
 					- #### Omniverse Digital Twin
-							  ```
 							- ```json
 							  {
 							    "@id": "narrativegoldmine:participatesIn",
@@ -600,7 +598,6 @@ elevatedFrom:: [[Agentic Mycelia]]
 					- #### Feminist Global Advocacy and Support Metaverse
 				- ### Scene Agents
 						- #### AI Governance
-								  ```
 								- ```json
 								  {
 								    "@id": "narrativegoldmine:governedBy",
@@ -619,7 +616,6 @@ elevatedFrom:: [[Agentic Mycelia]]
 								    ]
 								  }
 						- #### Reputation Management
-								  ```
 						- #### Environmental Conditions
 							- Controlling weather, lighting, and other environmental factors.
 							- Utilizing the EnvironmentalConditions entity from the ontology.
@@ -644,7 +640,6 @@ elevatedFrom:: [[Agentic Mycelia]]
 								    ]
 								  }
 						- #### Virtual Economy
-								  ```
 								- ```json
 								  {
 								    "@id": "narrativegoldmine:regulatedBy",
@@ -666,7 +661,6 @@ elevatedFrom:: [[Agentic Mycelia]]
 						- ### Machine-Machine Translation
 						- ### Value Translation
 						- ### Digital Object Variations
-								  ```
 						- ### Safeguarding
 							- Implementing security measures and user protection mechanisms.
 						- ### Law Enforcement Handshake
@@ -762,6 +756,7 @@ elevatedFrom:: [[Agentic Mycelia]]
       NosDAV->>+AIAgent: Confirm data storage
       AIAgent->>+Nostr: Publish interaction confirmation
       Nostr->>+User: Deliver interaction confirmation
+  ```
 
 - ### Provenance
   - sources::

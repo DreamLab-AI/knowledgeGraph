@@ -5,22 +5,71 @@
   "public": true,
   "classIri": "urn:ngm:class:attention-mechanisms",
   "domain": "machine-learning",
-  "definition": "Attention mechanisms let a neural network weight different parts of its input when computing a representation, focusing on the most relevant elements. They are the core component of transformer architectures.",
+  "definition": "Attention mechanisms are a family of neural network components that compute context-dependent weighted combinations of value representations by scoring the relevance of query vectors against key vectors, enabling each output position to draw selectively from any position in an input sequence \u2014 overcoming the fixed-length bottleneck of recurrent encoders. Originally introduced as additive (Bahdanau) attention for neural machine translation in 2015, they were generalised to scaled dot-product attention and multi-head attention in the 2017 Transformer architecture, where they became the sole sequence-modelling primitive, replacing recurrence entirely. Attention mechanisms now underpin virtually all frontier deep learning systems across language, vision, speech, biology, and multimodal reasoning.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:attention-mechanism",
       "label": "Attention Mechanism"
+    },
+    {
+      "id": "urn:ngm:class:neural-network-component",
+      "label": "Neural Network Component"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.93,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:self-attention",
+        "label": "Self Attention"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross Attention"
+      },
+      {
+        "id": "urn:ngm:class:causal-attention",
+        "label": "Causal Attention"
+      },
+      {
+        "id": "urn:ngm:class:multi-head-attention",
+        "label": "Multi-Head Attention"
+      },
+      {
+        "id": "urn:ngm:class:scaled-dot-product-attention",
+        "label": "Scaled Dot Product Attention"
+      },
+      {
+        "id": "urn:ngm:class:attention-weight",
+        "label": "Attention Weight"
+      },
+      {
+        "id": "urn:ngm:class:attention-mask",
+        "label": "Attention Mask"
+      },
+      {
+        "id": "urn:ngm:class:query-key-value",
+        "label": "Query Key Value"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:softmax-function",
+        "label": "Softmax Function"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       }
     ],
     "enables": [
@@ -29,21 +78,88 @@
         "label": "Transformer"
       },
       {
-        "id": "urn:ngm:class:multi-head-attention",
-        "label": "Multi-Head Attention"
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai-architecture",
+        "label": "Multimodal AI Architecture"
+      },
+      {
+        "id": "urn:ngm:class:graph-attention-network",
+        "label": "Graph Attention Network"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-transformer",
+        "label": "Diffusion Transformer"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:positional-encoding",
+        "label": "Positional Encoding"
+      },
+      {
+        "id": "urn:ngm:class:feed-forward-network",
+        "label": "Feed Forward Network"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:ai-model-architecture",
+        "label": "AI Model Architecture"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:grouped-query-attention",
+        "label": "Grouped Query Attention"
+      },
+      {
+        "id": "urn:ngm:class:paged-attention",
+        "label": "Paged Attention"
+      },
+      {
+        "id": "urn:ngm:class:mixture-of-experts",
+        "label": "Mixture of Experts"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
+    ]
   },
   "wikilinks": [
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
     {
       "slug": "neural-network",
       "label": "Neural Network"
@@ -53,20 +169,172 @@
       "label": "Transformer"
     },
     {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
       "slug": "multi-head-attention",
       "label": "Multi-Head Attention"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "cross-attention",
+      "label": "Cross Attention"
+    },
+    {
+      "slug": "causal-attention",
+      "label": "Causal Attention"
+    },
+    {
+      "slug": "flash-attention",
+      "label": "Flash Attention"
+    },
+    {
+      "slug": "scaled-dot-product-attention",
+      "label": "Scaled Dot Product Attention"
+    },
+    {
+      "slug": "grouped-query-attention",
+      "label": "Grouped Query Attention"
+    },
+    {
+      "slug": "attention-head",
+      "label": "Attention Head"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
+      "slug": "attention-mask",
+      "label": "Attention Mask"
     },
     {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },
     {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
       "slug": "vision-transformer",
       "label": "Vision Transformer"
     },
     {
-      "slug": "attention-mechanism",
-      "label": "Attention Mechanism"
+      "slug": "diffusion-transformer",
+      "label": "Diffusion Transformer"
+    },
+    {
+      "slug": "graph-attention-network",
+      "label": "Graph Attention Network"
+    },
+    {
+      "slug": "lstm",
+      "label": "LSTM"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "multimodal-ai-architecture",
+      "label": "Multimodal AI Architecture"
+    },
+    {
+      "slug": "multimodal-learning",
+      "label": "Multimodal Learning"
+    },
+    {
+      "slug": "multimodal-understanding",
+      "label": "Multimodal Understanding"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "positional-encoding",
+      "label": "Positional Encoding"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "softmax-function",
+      "label": "Softmax Function"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "speculative-decoding",
+      "label": "Speculative Decoding"
+    },
+    {
+      "slug": "paged-attention",
+      "label": "Paged Attention"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "neural-network-component",
+      "label": "Neural Network Component"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "query-key-value",
+      "label": "Query Key Value"
+    },
+    {
+      "slug": "ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
+      "slug": "gemini-multimodal-language-model",
+      "label": "Gemini Multimodal Language Model"
+    },
+    {
+      "slug": "multimodal-reasoning",
+      "label": "Multimodal Reasoning"
+    },
+    {
+      "slug": "attention-aware-interaction",
+      "label": "Attention Aware Interaction"
     }
   ],
   "backlinks": [

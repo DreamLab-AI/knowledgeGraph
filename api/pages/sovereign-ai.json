@@ -54,6 +54,14 @@
       "label": "AI Companies"
     },
     {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
     }

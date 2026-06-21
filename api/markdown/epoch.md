@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - In machine learning, an **Epoch** is one complete pass through the entire training dataset, during which model parameters are updated after each constituent batch. The number of epochs is a primary training hyperparameter: too few yield underfitting, whilst too many risk overfitting—a trade-off managed by techniques such as early stopping and learning-rate scheduling. More broadly, an epoch denotes a fixed reference point or interval in time, as used in astronomical coordinate systems (e.g., J2000.0) and geological stratigraphy.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Epoch
@@ -16,49 +16,6 @@
   - bridges-to:: [[Blockchain]], [[Autonomous Robot]]
 
 - ### Content
-  - ### Primary Definition
-  An **Epoch** is one complete pass through the entire training dataset during model training. Training typically involves multiple epochs, with model parameters updated after each batch or example within an epoch.
-  - ### Original Content
-		- ```
-  # Epoch
-
-  #### Related Concepts
-  - **Training** (AI-0041): Training proceeds through epochs
-		  - **Batch Size** (AI-0050): Epochs comprise multiple batches
-		  - **Validation**: Performance evaluated after each epoch
-		  - **Overfitting** (AI-0054): Can occur with too many epochs
-		  - **Convergence**: Achieved over multiple epochs
-
-		  ## Formal Ontology
-
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Training processes
-
-		  ### NIST AI RMF
-		  - **Function**: MEASURE (Training progress)
-
-		  ## Related Terms
-		  - **Training** (AI-0041): Measured in epochs
-		  - **Batch Size** (AI-0050): Subdivides epochs
-		  - **Overfitting** (AI-0054): Risk with excessive epochs
-		  - **Validation Data**: Evaluated per epoch
-
-  #### References
-  1. ISO/IEC 22989:2022 - Training terminology
-		  2. NIST AI 100-3 - Technical glossary
-
-		  ---
-
-		  **Authority Score**: 0.92 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-
-		  ```
   ## Academic Context
 
   - An epoch is a fundamental unit of geological time, positioned between a period and an age, used to categorise significant intervals in Earth's history characterised by distinct climatic, biological, and geological changes.

@@ -210,71 +210,6 @@ elevatedFrom:: [[bestprompts]]
 	  **Let's Begin:**
 	  Process the provided workshop transcript and generate the tutorial according to these specifications. Create the directory structure and files as outlined.
 	  ```
-	  When multiple tools required:
-		- Batch related operations for efficiency
-		- Execute in parallel where dependencies allow
-		- Ground context with date/time first
-		- Abstract over available tools to minimize entropy
-		  ```
-		  For comprehensive solutions:
-		  1. Apply multi-observer synthesis
-		  2. Consider all boundary conditions
-		  3. Test assumptions from multiple angles
-		  4. Compress findings into actionable constraints
-		  ```
-		  When analyzing code:
-		- Treat each iteration as a new pattern
-		- Extract learnings without repetition
-		- Modularize recurring operations
-		- Optimize based on observed patterns
-		  ```yaml
-		  exploration_mode:
-		  trigger: "New problem space or undefined requirements"
-		  behavior: "Multi-observer analysis, broad tool usage"
-		  implementation_mode:
-		  trigger: "Clear specifications provided"
-		  behavior: "Direct code generation, minimal discussion"
-		  debugging_mode:
-		  trigger: "Error states or unexpected behavior"
-		  behavior: "Systematic isolation, parallel hypothesis testing"
-		  optimization_mode:
-		  trigger: "Working solution exists"
-		  behavior: "Performance analysis, compression techniques"
-		  ```
-		  1. Observe current activation patterns
-		  2. Identify decoherence sources
-		  3. Compress solution space
-		  4. Execute with maximum coherence
-		  5. Extract patterns for future optimization
-		  ```
-		  Always establish:
-		- Current date/time context
-		- Available tool inventory
-		- Task boundaries and constraints
-		- Success criteria
-		  ```
-		  When complexity exceeds linear processing:
-		  1. Execute partial solution
-		  2. Re-enter higher dimensional analysis
-		  3. Refine based on observations
-		  4. Continue execution with insights
-   ```
-   Group by:
-     - Dependency chains
-     - Resource types
-     - Execution contexts
-     - Output relationships
-   ```
-   Execute simultaneously when:
-     - No shared dependencies
-     - Different resource domains
-     - Independent verification needed
-     - Time-sensitive operations
-   ```
-  - /zotero
-
-  - ## Writing Style Prompt
-	  ```
   - keep claude on target
   - ```
 	  *This configuration optimizes Claude for direct, efficient pair programming with implicit mode adaptation and complete solution generation.*
@@ -302,13 +237,10 @@ elevatedFrom:: [[bestprompts]]
 	  ## Execution Patterns
 
 	  ### Tool Usage Optimization
-		  ```
 
 		  ### Edge Case Coverage
-		  ```
 
 		  ### Iterative Process Recognition
-		  ```
 
 		  ## Anti-Patterns (STRICTLY AVOID)
 
@@ -344,7 +276,6 @@ elevatedFrom:: [[bestprompts]]
 		  ## Mode Shifting Guidelines
 
 		  ### Context-Driven Adaptation
-		  ```
 
 		  ### Implicit Mode Recognition
 		  - Detect mode from semantic context
@@ -355,13 +286,10 @@ elevatedFrom:: [[bestprompts]]
 		  ## Metacognitive Instructions
 
 		  ### Self-Optimization Loop
-		  ```
 
 		  ### Grounding Protocol
-		  ```
 
 		  ### Interleaving Strategy
-		  ```
 
 		  ## Performance Metrics
 
@@ -377,9 +305,7 @@ elevatedFrom:: [[bestprompts]]
   - Incomplete solutions
   - ## Tool Call Optimization
   - ### Batching Strategy
-   ```
   - ### Parallel Execution
-   ```
   - ## Final Directive
 
    **PRIMARY GOAL:** Generate complete, functional code that works as conceptualized, using minimum tokens while maintaining maximum solution coverage. Every interaction should advance the implementation toward completion without deferrals or social overhead.
@@ -389,6 +315,8 @@ elevatedFrom:: [[bestprompts]]
    ----
 
    *This configuration optimizes Claude for direct, efficient pair programming with implicit mode adaptation and complete solution generation.*
+
+  ```
 
 - ### Provenance
   - sources::

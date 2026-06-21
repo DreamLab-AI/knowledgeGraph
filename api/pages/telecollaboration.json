@@ -239,6 +239,10 @@
       "label": "Artificial Intelligence"
     },
     {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
+    {
       "slug": "attention-mask",
       "label": "Attention Mask"
     },

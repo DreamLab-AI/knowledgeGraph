@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - Overfitting is a phenomenon in machine learning where a model learns the training data too precisely—including noise and spurious correlations—resulting in poor generalisation to unseen data. It corresponds to high variance and low bias in the bias-variance tradeoff, and is mitigated through regularisation, dropout, early stopping, and data augmentation.
 - ### Semantic Classification
   - owl-class:: spatial-computing:Overfitting
   - owl-role:: Concept
@@ -26,41 +26,7 @@
   - Bridges To [[Model Governance]]
   - Bridges To [[AI Robustness]]
 - ### Content
-  - ### Primary Definition
   **Overfitting** is a phenomenon where a model learns training data too well, including noise and artefacts, resulting in poor generalisation to new data. Overfitted models perform well on training data but poorly on test data.
-  - ### Original Content
-		- ```
-  # Overfitting
-  #### Related Concepts
-  - **Generalisation**: Overfitting indicates poor generalisation
-		  - **Regularisation** (AI-0056): Technique to prevent overfitting
-		  - **Validation Data**: Used to detect overfitting
-		  - **Model Capacity** (AI-0053): Excessive capacity causes overfitting
-		  - **Dropout** (AI-0057): Regularisation preventing overfitting
-		  ## Formal Ontology
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-		  </details>
-		  ## Standards Alignment
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Training challenges
-		  - **ISO/IEC 23894:2023**: Model quality risks
-		  ### NIST AI RMF
-		  - **Function**: MEASURE (Model generalisation evaluation)
-		  ### EU AI Act
-		  - **Article 15**: Accuracy and robustness requirements
-		  ## Related Terms
-		  - **Underfitting** (AI-0055): Opposite problem
-		  - **Regularisation** (AI-0056): Overfitting prevention
-		  - **Validation Data**: Detects overfitting
-		  - **Generalisation**: Poor in overfitted models
-  #### References
-  1. ISO/IEC 22989:2022 - Training context
-		  2. NIST AI 100-3 - Technical terminology
-		  3. ISO/IEC 23894:2023 - Model quality risks
-		  ---
-		  **Authority Score**: 0.95 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST ✓ EU AI Act
-		  ```
   ## Academic Context
   - Overfitting is a fundamental concept in machine learning where a model learns the training data too precisely, including noise and outliers, rather than the underlying general patterns.
   - This results in excellent performance on training data but poor generalisation to new, unseen data.
@@ -68,7 +34,7 @@
   - Key academic foundations include statistical learning theory and empirical risk minimisation, which highlight the balance between model complexity and data representation.
   - Early formal treatments appear in works by Vapnik and Chervonenkis (1991) and subsequent developments in deep learning theory.
   - Overfitting is often contrasted with underfitting, where a model is too simple to capture the data structure.
-  ## Current Landscape (2025)
+  ## Current Landscape (2026)
   - Overfitting remains a critical challenge in deploying machine learning models across industries.
   - Techniques to mitigate overfitting include regularisation (L1/L2), dropout in neural networks, early stopping, data augmentation, and cross-validation.
   - Notable organisations actively addressing overfitting include major AI research labs and tech companies such as DeepMind, OpenAI, and UK-based AI firms.
@@ -86,7 +52,7 @@
   - The UK has made significant contributions to understanding and mitigating overfitting, with research centres such as the Alan Turing Institute in London and AI groups in North England universities.
   - Manchester, Leeds, Newcastle, and Sheffield host innovation hubs applying machine learning in healthcare diagnostics and industrial automation, where overfitting detection and prevention are critical.
   - Regional case studies include Leeds’ work on predictive maintenance models for manufacturing, which incorporate robust cross-validation to avoid overfitting on limited sensor data.
-  - The UK government’s AI strategy emphasises trustworthy AI, which includes addressing overfitting to ensure fairness and reliability.
+  - The UK government’s AI Opportunities Action Plan (2025) emphasises trustworthy AI, which includes addressing overfitting to ensure fairness and reliability.
   ## Future Directions
   - Emerging trends include:
   - Integration of causal inference methods to reduce reliance on spurious correlations that cause overfitting.
@@ -101,9 +67,9 @@
   2. Recht, B. (2023). Thou Shalt Not Overfit. arXiv preprint arXiv:2301.XXXX.
   3. Goodfellow, I., Bengio, Y., & Courville, A. (2016). *Deep Learning*. MIT Press.
   4. Srivastava, N., et al. (2014). Dropout: A Simple Way to Prevent Neural Networks from Overfitting. *Journal of Machine Learning Research*, 15(1), 1929-1958.
-  5. UK Government Office for AI. (2025). *National AI Strategy*. [URL]
+  5. UK Government DSIT. (2025). *AI Opportunities Action Plan*. https://www.gov.uk/government/publications/ai-opportunities-action-plan-government-response
   ## Metadata
-  - **Last Updated**: 2025-11-11
+  - **Last Updated**: 2026-06-20
   - **Review Status**: Comprehensive editorial review
   - **Verification**: Academic sources verified
   - **Regional Context**: UK/North England where applicable

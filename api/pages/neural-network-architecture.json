@@ -116,5 +116,14 @@
       "label": "ModelArchitecture"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
+      "slug": "architecture",
+      "label": "Architecture"
+    }
+  ]
 }

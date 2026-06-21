@@ -51,5 +51,14 @@
       "label": "Smart Contract"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    }
+  ]
 }

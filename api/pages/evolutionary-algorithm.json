@@ -99,6 +99,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "algorithm-layer",
+      "label": "Algorithm Layer"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
       "slug": "swarm-robotics",
       "label": "Swarm Robotics"
     }

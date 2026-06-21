@@ -134,6 +134,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
+    {
+      "slug": "ai-energy-optimisation",
+      "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
       "slug": "collision-detection",
       "label": "Collision Detection"
     },

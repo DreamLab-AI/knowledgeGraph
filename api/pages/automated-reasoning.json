@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.75,
+  "qualityScore": 0.91,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -125,8 +125,129 @@
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "symbolic-reasoning",
+      "label": "Symbolic Reasoning"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "logic-programming",
+      "label": "Logic Programming"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "automated-theorem-proving",
+      "label": "Automated Theorem Proving"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "neuro-symbolic-ai",
+      "label": "Neuro Symbolic Ai"
+    },
+    {
+      "slug": "probabilistic-reasoning",
+      "label": "Probabilistic Reasoning"
+    },
+    {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
+      "slug": "sat-solving",
+      "label": "SAT Solving"
+    },
+    {
+      "slug": "model-checking",
+      "label": "Model Checking"
+    },
+    {
+      "slug": "first-order-logic",
+      "label": "First-Order Logic"
+    },
+    {
+      "slug": "program-synthesis",
+      "label": "Program Synthesis"
+    },
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "slug": "formal-methods",
+      "label": "Formal Methods"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web Linked Data Standard"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
     {
       "slug": "domain-ontology",
       "label": "Domain Ontology"

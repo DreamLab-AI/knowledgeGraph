@@ -152,6 +152,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
       "slug": "bayes-filter",
       "label": "Bayes Filter"
     },

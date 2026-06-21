@@ -166,8 +166,36 @@
       "label": "AI Development Tools"
     },
     {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-model-inference-engine",
+      "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
       "slug": "ai-system-component",
       "label": "AI System Component"
+    },
+    {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
     },
     {
       "slug": "checkpoints",

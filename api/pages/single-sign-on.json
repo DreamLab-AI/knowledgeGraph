@@ -144,6 +144,10 @@
       "label": "Access Control System"
     },
     {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
       "slug": "authentication-service",
       "label": "Authentication Service"
     },

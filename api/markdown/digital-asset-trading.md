@@ -1,8 +1,6 @@
 - ### Definition
   - The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralised exchanges, decentralised protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalAssetTrading
   - owl-role:: Concept
@@ -26,11 +24,11 @@ bridges-to:: [[Blockchain]]
 		- Limit orders: Execution at specified price or better
 		- Stop orders: Triggered execution at threshold
 		- TWAP/VWAP: Time/volume-weighted execution
-  - **2024 Market Structure**:
-		- Daily spot volume: $50-100+ billion globally
-		- Derivatives volume exceeding spot markets
-		- DEX share growing (10-15% of volume)
-		- Institutional trading infrastructure maturing
+  - **Market Structure (2025–2026)**:
+		- Global crypto spot trading volumes remain substantial; DEX processed $4.9 trillion in spot volume during 2025
+		- Derivatives volume continues to exceed spot markets
+		- DEX share reached 12.6% of total market in 2025, with a peak of 21.2% DEX-to-CEX ratio in November 2025; Solana DEXs captured 30.6% of all DEX volume in Q1 2026
+		- Institutional trading infrastructure maturing with regulated venues and custody solutions
   - **Key Exchanges**: Binance, Coinbase, Kraken, Uniswap, dYdX
   - ## Applications
   - Retail cryptocurrency investing

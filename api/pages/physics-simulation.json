@@ -133,6 +133,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
       "slug": "collision-detection",
       "label": "Collision Detection"
     },

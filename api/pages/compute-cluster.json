@@ -99,6 +99,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
       "slug": "ai-companies",
       "label": "AI Companies"
     }

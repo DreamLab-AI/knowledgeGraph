@@ -177,6 +177,10 @@
   ],
   "backlinks": [
     {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
       "slug": "explainable-ai",
       "label": "Explainable AI"
     },

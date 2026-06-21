@@ -38,6 +38,7 @@
       return result
   # Execute the main function
   main()
+  ```
 
 - ### Provenance
   - sources::

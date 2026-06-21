@@ -60,6 +60,10 @@
       "label": "AI companions"
     },
     {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "agents",
       "label": "Agents"
     }

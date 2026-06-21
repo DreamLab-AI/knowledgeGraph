@@ -63,6 +63,10 @@
       "label": "Attention"
     },
     {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

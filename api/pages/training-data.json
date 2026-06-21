@@ -506,12 +506,36 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
       "slug": "ai-companies",
       "label": "AI Companies"
     },
     {
       "slug": "ai-development",
       "label": "AI Development"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
     },
     {
       "slug": "ai-risks",
@@ -522,16 +546,36 @@
       "label": "AI Scrapers"
     },
     {
+      "slug": "ai-system",
+      "label": "AI System"
+    },
+    {
       "slug": "access-control-system",
       "label": "Access Control System"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
     },
     {
       "slug": "ai-machine-learning",
       "label": "Ai Machine Learning"
     },
     {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
     },
     {
       "slug": "chatbots",

@@ -1,0 +1,2 @@
+- ### Definition
+  - Rendering is the process of synthesising a visual image from a 3D scene description by computing the interaction of light with geometry and materials, forming the core of real-time graphics and spatial computing display pipelines.

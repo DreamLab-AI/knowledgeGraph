@@ -75,6 +75,10 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
       "slug": "humanity-attestation",
       "label": "Humanity Attestation"
     },

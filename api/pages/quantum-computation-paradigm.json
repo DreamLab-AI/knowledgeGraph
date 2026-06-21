@@ -127,5 +127,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    }
+  ]
 }

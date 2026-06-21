@@ -225,6 +225,18 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    },
+    {
       "slug": "ai-upscaling-and-super-resolution",
       "label": "AI Upscaling and Super-Resolution"
     },
@@ -233,12 +245,24 @@
       "label": "AI Video"
     },
     {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
       "slug": "attention-mechanisms",
       "label": "Attention Mechanisms"
     },
     {
       "slug": "attention",
       "label": "Attention"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
     },
     {
       "slug": "autoregressive-model",

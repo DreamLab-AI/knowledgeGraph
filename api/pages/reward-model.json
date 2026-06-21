@@ -145,6 +145,14 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-evaluation",
+      "label": "AI Evaluation"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     },

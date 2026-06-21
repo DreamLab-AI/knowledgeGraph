@@ -116,7 +116,6 @@ elevatedFrom:: [[Agentic Metaverse for Global Creatives]]
   - bridges-to:: [[Digital Twin]]
 
 - ### Content
-  - #Public page automatically published
   - ```mermaid
   sequenceDiagram
       participant User
@@ -168,6 +167,7 @@ elevatedFrom:: [[Agentic Metaverse for Global Creatives]]
       NosDAV->>+AIAgent: Confirm data storage
       AIAgent->>+Nostr: Publish interaction confirmation
       Nostr->>+User: Deliver interaction confirmation
+  ```
 
 - ### Provenance
   - sources::

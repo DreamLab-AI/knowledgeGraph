@@ -121,8 +121,6 @@ elevatedFrom:: [[Delivery Planning]]
   - **enables**: Development Platform (delivery planning is the governance layer that makes platform development tractable)
   - **dependsOn**: Collaboration (cross-team coordination is a prerequisite for effective delivery)
 
-  - bridges-to:: [[Blockchain]] or [[AI Agent System]]
-
 - ### Content
   - Creating a Gantt chart for a 10-month program to build out an Omniverse with various components requires breaking down the project into manageable tasks and assigning them to the right personnel. Given the broad scope of your project, we'll focus on major milestones and deliverables, aligning them with the team members based on their roles. Here's how we can conceptualize it:
   - **Pete**: Leads Omniverse pieces
@@ -206,10 +204,9 @@ elevatedFrom:: [[Delivery Planning]]
       Testing & Optimization :john, pete, after john, 15d
       Milestone 6
 	 - Project Completion : milestone, 2024-12-15, 0d
-
+  ```
   - ### Key Personnel and Their Roles:
   - ### Project Phases and Tasks:
-  ```
 
 - ### Provenance
   - sources::

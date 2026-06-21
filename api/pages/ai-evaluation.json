@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-evaluation",
   "domain": "ai",
-  "definition": "AI Evaluation is the systematic measurement of model capabilities, reliability, safety, and alignment using benchmarks, held-out tasks, human preference judgments, and automated graders. It produces quantitative metrics and qualitative findings that guide model selection, release decisions, and risk assessment. Robust evaluation must guard against benchmark contamination, distribution shift, and over-optimization toward narrow scores.",
+  "definition": "AI Evaluation is the systematic, multi-dimensional measurement of AI model capabilities, reliability, safety, alignment, and societal impact using benchmarks, held-out task suites, human preference judgments, automated graders, and adversarial probing. It encompasses the full lifecycle of rigorous assessment from pre-deployment capability elicitation through post-deployment monitoring, producing quantitative metrics and qualitative findings that guide model selection, release decisions, regulatory compliance, and ongoing risk assessment. Credible evaluation must guard against benchmark contamination, distribution shift, Goodhart pressures, and over-optimisation toward narrow scores, while ensuring elicitation methods are sufficient to reveal the true capability ceiling of the system under test.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-research-area",
@@ -13,15 +13,75 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.91,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation Benchmarks and Leaderboards"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:llm-as-judge",
+        "label": "LLM-as-Judge"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red-Teaming"
+      },
+      {
+        "id": "urn:ngm:class:capability-elicitation",
+        "label": "Capability Elicitation"
+      },
+      {
+        "id": "urn:ngm:class:safety-evaluation",
+        "label": "Safety Evaluation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:held-out-test-set",
+        "label": "Held-Out Test Set"
+      },
+      {
+        "id": "urn:ngm:class:human-oracle",
+        "label": "Human Oracle"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-card",
+        "label": "Model Card"
+      },
+      {
+        "id": "urn:ngm:class:scalable-oversight",
+        "label": "Scalable Oversight"
+      },
+      {
+        "id": "urn:ngm:class:alignment-evaluation",
+        "label": "Alignment Evaluation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:benchmark-contamination",
+        "label": "Benchmark Contamination"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-saturation",
+        "label": "Benchmark Saturation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
@@ -29,16 +89,225 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
-        "label": "Evaluation benchmarks and leaderboards"
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       },
       {
-        "id": "urn:ngm:class:evaluation-metric",
-        "label": "Evaluation Metric"
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-benchmark-epistemological-critique",
+        "label": "AI Benchmark Epistemological Critique"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation Benchmarks and Leaderboards"
+    },
+    {
+      "slug": "evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "slug": "benchmark-contamination",
+      "label": "Benchmark Contamination"
+    },
+    {
+      "slug": "benchmark-saturation",
+      "label": "Benchmark Saturation"
+    },
+    {
+      "slug": "human-preference-evaluation",
+      "label": "Human Preference Evaluation"
+    },
+    {
+      "slug": "llm-as-judge",
+      "label": "LLM-as-Judge"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red-Teaming"
+    },
+    {
+      "slug": "capability-elicitation",
+      "label": "Capability Elicitation"
+    },
+    {
+      "slug": "dynamic-evaluation",
+      "label": "Dynamic Evaluation"
+    },
+    {
+      "slug": "mmlu",
+      "label": "MMLU"
+    },
+    {
+      "slug": "helm",
+      "label": "HELM"
+    },
+    {
+      "slug": "humanitys-last-exam",
+      "label": "Humanity's Last Exam"
+    },
+    {
+      "slug": "livecodebench",
+      "label": "LiveCodeBench"
+    },
+    {
+      "slug": "chatbot-arena",
+      "label": "Chatbot Arena"
+    },
+    {
+      "slug": "mt-bench",
+      "label": "MT-Bench"
+    },
+    {
+      "slug": "arena-hard",
+      "label": "Arena-Hard"
+    },
+    {
+      "slug": "goodharts-law",
+      "label": "Goodhart's Law"
+    },
+    {
+      "slug": "distribution-shift",
+      "label": "Distribution Shift"
+    },
+    {
+      "slug": "safety-evaluation",
+      "label": "Safety Evaluation"
+    },
+    {
+      "slug": "alignment-evaluation",
+      "label": "Alignment Evaluation"
+    },
+    {
+      "slug": "reward-model",
+      "label": "Reward Model"
+    },
+    {
+      "slug": "scalable-oversight",
+      "label": "Scalable Oversight"
+    },
+    {
+      "slug": "eval-factsheet",
+      "label": "Eval Factsheet"
+    },
+    {
+      "slug": "gaia-benchmark",
+      "label": "GAIA Benchmark"
+    },
+    {
+      "slug": "gpqa",
+      "label": "GPQA"
+    },
+    {
+      "slug": "aime",
+      "label": "AIME"
+    },
+    {
+      "slug": "swe-bench",
+      "label": "SWE-Bench"
+    },
+    {
+      "slug": "elo-rating",
+      "label": "ELO Rating"
+    },
+    {
+      "slug": "bradley-terry-model",
+      "label": "Bradley-Terry Model"
+    },
+    {
+      "slug": "prompt-sensitivity",
+      "label": "Prompt Sensitivity"
+    },
+    {
+      "slug": "automated-playtesting",
+      "label": "Automated Playtesting"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "model-card",
+      "label": "Model Card"
+    },
+    {
+      "slug": "sandbagging",
+      "label": "Sandbagging"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
+      "slug": "bias",
+      "label": "Bias"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-benchmark-epistemological-critique",
+      "label": "AI Benchmark Epistemological Critique"
+    },
+    {
+      "slug": "frontier-model",
+      "label": "Frontier Model"
+    },
+    {
+      "slug": "held-out-test-set",
+      "label": "Held-Out Test Set"
+    },
+    {
+      "slug": "calibration",
+      "label": "Calibration"
+    },
+    {
+      "slug": "uk-ai-security-institute",
+      "label": "UK AI Security Institute"
+    },
+    {
+      "slug": "inspect-framework",
+      "label": "Inspect Framework"
+    },
+    {
+      "slug": "eleutherai-lm-evaluation-harness",
+      "label": "EleutherAI LM Evaluation Harness"
+    },
+    {
+      "slug": "task-complexity",
+      "label": "Task Complexity"
+    },
+    {
+      "slug": "adversarial-evaluation",
+      "label": "Adversarial Evaluation"
+    },
+    {
+      "slug": "human-oracle",
+      "label": "Human Oracle"
+    }
+  ],
   "backlinks": [
     {
       "slug": "evaluation-benchmarks-and-leaderboards",

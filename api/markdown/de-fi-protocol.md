@@ -11,128 +11,23 @@
 
 - ### Content
   - A [[Smart Contract]]-based financial application enabling decentralised financial services including [[Lending]], [[Borrowing]], [[Trading]], and [[Asset Swaps]] without intermediaries. DeFi protocols leverage [[Blockchain Infrastructure]], [[Automated Market Makers]], and [[Governance Tokens]] to provide transparent, composable financial primitives.
-  - ### Original Content
-		- ```
-  # DeFi Protocol
-
-		  ## Definition
-		  Decentralized Finance protocol - a blockchain-based financial application that eliminates intermediaries by using smart contracts to provide financial services such as lending, borrowing, trading, and yield generation.
-
-		  ## OWL Functional Syntax
-
-
-		  ## Properties
-
-		  ### Object Properties
-		  - **implementedAs**: DeFiProtocol → SmartContract (required, multiple)
-		  - **providesService**: DeFiProtocol → FinancialService (required, at least 1)
-		  - **governedBy**: DeFiProtocol → GovernanceMechanism (required)
-		  - **hasTokenEconomics**: DeFiProtocol → TokenomicsModel (required)
-		  - **hasLiquidity**: DeFiProtocol → LiquidityPool (0..*)
-		  - **hasGovernanceToken**: DeFiProtocol → GovernanceToken (0..1)
-		  - **integratesWith**: DeFiProtocol → DeFiProtocol (0..*)
-		  - **auditedBy**: DeFiProtocol → SecurityAuditor (0..*)
-		  - **vulnerableTo**: DeFiProtocol → DeFiRisk (0..*)
-
-		  ### Data Properties
-		  - **totalValueLocked**: xsd:decimal (USD, ≥ 0)
-		  - **annualPercentageYield**: xsd:decimal (percentage, ≥ 0)
-		  - **decentralized**: xsd:boolean (always true)
-		  - **intermediaryFree**: xsd:boolean (always true)
-		  - **launchDate**: xsd:dateTime
-		  - **auditStatus**: xsd:string
-		  - **userCount**: xsd:integer (≥ 0)
-		  - **transactionVolume**: xsd:decimal (≥ 0)
-
-		  ## Axioms
-
-
-		  ## Subclass Hierarchy
-
-
-		  ## DeFi Services
-
-
-		  ## Inference Rules
-
-		  ```sparql
-		  # Rule: Protocol with liquidity pools is DEX
-		  [DEXInference:
-		    (?p rdf:type :DeFiProtocol)
-		    (?p :hasLiquidity ?pool)
-		    (?p :providesService :TradingService)
-		    ->
-		    (?p rdf:type :DecentralizedExchange)
-		  ]
-
-		  # Rule: AMM uses constant product formula
-		  [AMMInference:
-		    (?dex rdf:type :DecentralizedExchange)
-		    (?dex :usesMechanism ?amm)
-		    (?amm :formula "x*y=k"^^xsd:string)
-		    ->
-		    (?dex rdf:type :AutomatedMarketMaker)
-		  ]
-
-		  # Rule: High yield implies high risk
-		  [YieldRiskInference:
-		    (?yp rdf:type :YieldProtocol)
-		    (?yp :annualPercentageYield ?apy)
-		    greaterThan(?apy, 100) # > 100% APY
-		    ->
-		    (?yp :riskLevel :High)
-		  ]
-
-		  # Rule: Lending protocol with over-collateralization
-		  [OverCollateralizationInference:
-		    (?lp rdf:type :LendingProtocol)
-		    (?lp :collateralRatio ?cr)
-		    greaterThan(?cr, 1.5) # 150%
-		    ->
-		    (?lp :hasMechanism :OverCollateralization)
-		  ]
-		  ```
-
-		  ## DeFi Risks
-
-
-		  ## Examples
-		  - Uniswap (AMM DEX)
-		  - Aave (Lending Protocol)
-		  - Compound (Lending Protocol)
-		  - MakerDAO (Stablecoin Protocol)
-		  - Curve Finance (Stablecoin DEX)
-		  - Yearn Finance (Yield Aggregator)
-		  - SushiSwap (AMM DEX)
-
-		  ## Related Terms
-		  - SmartContract
-		  - LiquidityPool
-		  - AutomatedMarketMaker
-		  - GovernanceToken
-		  - Stablecoin
-		  - YieldFarming
-		  - TotalValueLocked
-		  - SecurityAudit
-
-		  ```
   ## Academic Context
 
   - Decentralized Finance (DeFi) protocols are software standards, codes, and procedures that govern financial applications operating on public blockchains without central intermediaries.
   - These protocols enable peer-to-peer financial activities such as trading, lending, borrowing, staking, and yield farming through smart contracts.
   - The academic foundation of DeFi lies in blockchain technology, cryptographic security, and distributed consensus mechanisms, drawing from fields including computer science, finance, and economics.
 
-  ## Current Landscape (2025)
+  ## Current Landscape (2026)
 
-  - DeFi protocols have matured from experimental projects to live systems handling billions in daily transaction volume globally.
-  - Prominent protocols include UniSwap, Compound, Curve Finance, MakerDAO, and emerging platforms like SaucerSwap on the Hedera network.
+  - DeFi protocols have matured from experimental projects to live systems handling billions in daily transaction volume globally, with total DeFi TVL ranging from $86–120 billion across 2026 (DeFiLlama data; peaked near $120B in early 2026 before dropping to ~$86B following the April 2026 KelpDAO bridge exploit).
+  - Prominent protocols include Uniswap, Aave, Curve Finance, MakerDAO (now rebranded as Sky), and EigenLayer among the largest by TVL.
   - These protocols rely heavily on liquidity pools, where users stake cryptocurrency to fund loans or swaps, often receiving liquidity provider (LP) tokens in return.
   - Technical capabilities:
   - DeFi protocols operate in permissionless environments, allowing users to retain full custody of assets and interact directly without institutional gatekeepers.
-  - Limitations include smart contract vulnerabilities, scalability challenges, and unsettled tax and regulatory frameworks.
+  - Limitations include smart contract vulnerabilities, scalability challenges, and evolving tax and regulatory frameworks.
   - Standards and frameworks:
   - Protocols must adhere to strict rules to ensure interoperability and security.
-  - Regulatory frameworks such as the EU’s MiCA (Markets in Crypto-Assets) and PSCA (Pilot Regime for DLT Market Infrastructures) are beginning to shape compliance requirements.
+  - The EU’s MiCA (Markets in Crypto-Assets, Regulation (EU) 2023/1114) is fully in force as of 30 December 2024, with all crypto-asset service providers required to be authorised. Stablecoin provisions applied from 30 June 2024. Fully decentralised protocols with no identifiable operator may be exempt, but the European Commission is mandated to report on DeFi-specific regulation by end of 2025. The UK’s Financial Conduct Authority is developing its own Digital Asset framework post-Brexit.
 
   ## Research & Literature
 

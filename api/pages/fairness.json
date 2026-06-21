@@ -175,6 +175,10 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
       "slug": "ai-development",
       "label": "AI Development"
     },
@@ -187,8 +191,20 @@
       "label": "AI Monitoring"
     },
     {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
       "slug": "ai-user",
       "label": "AI User"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
     },
     {
       "slug": "ethical-ai",

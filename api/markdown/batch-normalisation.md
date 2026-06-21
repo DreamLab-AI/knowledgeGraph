@@ -18,46 +18,7 @@
 - ### Content
   - ### Primary Definition
   **Batch Normalisation** is a technique that normalises layer inputs within a mini-batch to have zero mean and unit variance, stabilising training, enabling higher learning rates, and acting as a form of regularisation.
-  - ### Original Content
-		- ```
-  # Batch Normalisation
 
-  #### Related Concepts
-  - **Training** (AI-0041): Batch norm stabilises training
-		  - **Convergence**: Batch norm accelerates convergence
-		  - **Neural Network**: Batch norm layers in deep networks
-		  - **Regularisation** (AI-0056): Batch norm has regularising effect
-
-		  ## Formal Ontology
-
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Training and normalisation techniques
-
-		  ### NIST AI RMF
-		  - **Function**: MAP (Training optimisation)
-
-		  ## Related Terms
-		  - **Training** (AI-0041): Uses batch normalisation
-		  - **Neural Network**: Contains batch norm layers
-		  - **Regularisation** (AI-0056): Side effect of batch norm
-		  - **Convergence**: Improved by batch normalisation
-
-  #### References
-  1. Ioffe & Szegedy - "Batch Normalization: Accelerating Deep Network Training" - ICML, 2015
-		  2. ISO/IEC 22989:2022 - Training techniques
-
-		  ---
-
-		  **Authority Score**: 0.92 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-
-		  ```
   ## Academic Context
 
   - Brief contextual overview
@@ -79,7 +40,7 @@
   - Many leading tech companies, including Google, Meta, and DeepMind, routinely employ batch normalisation in their models.
 
   - Notable organisations and platforms
-  - UK-based AI startups and research labs, such as Graphcore (Bristol) and Faculty (London), integrate batch normalisation into their deep learning pipelines.
+  - UK-based AI research labs integrate batch normalisation into their deep learning pipelines; Graphcore (Bristol), now a SoftBank subsidiary following a 2024 acquisition, and Faculty (London), acquired by Accenture in January 2026, are notable examples of UK AI firms that built on these techniques.
   - In North England, organisations like the Alan Turing Institute’s regional hubs (Manchester, Leeds) and the Digital Catapult (Newcastle) leverage batch normalisation in projects spanning healthcare, finance, and smart cities.
 
   - Technical capabilities and limitations

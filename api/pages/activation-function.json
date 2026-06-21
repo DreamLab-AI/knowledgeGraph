@@ -143,6 +143,14 @@
   ],
   "backlinks": [
     {
+      "slug": "architecture",
+      "label": "Architecture"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

@@ -369,8 +369,6 @@ public:: true
 - ### Definition
   - Standardised API and communication framework enabling exchange of state, simulation data, and behaviour models between heterogeneous digital twin systems across platforms.
 
-bridges-to:: [[Autonomous Robot]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalTwinInteropProtocol
   - owl-role:: Process

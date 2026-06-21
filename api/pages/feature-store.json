@@ -155,6 +155,10 @@
   ],
   "backlinks": [
     {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
       "slug": "etsi-domain-data-management-ai",
       "label": "ETSI Domain: Data Management + AI"
     },

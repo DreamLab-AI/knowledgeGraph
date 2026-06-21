@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:agent2-agent-protocol-google-2025",
   "domain": "ai",
-  "definition": "The Agent2Agent Protocol (A2A), released by Google as an open specification in April 2025, is a JSON-RPC over HTTP(S) protocol that enables AI agents to discover one another via standardised agent cards, delegate tasks through a defined task lifecycle, and stream results back to requesting agents, regardless of the underlying model or framework used to implement the agents. It is designed as a complementary peer-to-peer layer alongside Anthropic's Model Context Protocol.",
+  "definition": "The Agent2Agent Protocol (A2A), released by Google as an open specification in April 2025 and transferred to the Linux Foundation in June 2025, is a JSON-RPC 2.0 over HTTP(S) protocol \u2014 extended with Server-Sent Events for streaming \u2014 that enables AI agents to discover one another via standardised, cryptographically signed agent cards hosted at well-known URIs, delegate tasks through a six-state task lifecycle, stream results back to requesting agents, and operate regardless of the underlying model or framework used to implement the agents. Reaching version 1.2 by March 2026 with over 150 supporting organisations, it is designed as a complementary peer-to-peer layer alongside Anthropic's Model Context Protocol, together forming the emerging two-protocol stack for the agentic internet.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:agent-to-agent-protocol",
@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "emerging",
+  "qualityScore": 0.93,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:agent-card",
+        "label": "Agent Card"
+      },
+      {
+        "id": "urn:ngm:class:task-lifecycle",
+        "label": "Task Lifecycle"
+      },
+      {
+        "id": "urn:ngm:class:push-notification",
+        "label": "Push Notification"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:mutual-authentication",
+        "label": "Mutual Authentication"
+      },
+      {
+        "id": "urn:ngm:class:agent-identity",
+        "label": "Agent Identity"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:inter-agent-communication",
@@ -26,12 +52,50 @@
       {
         "id": "urn:ngm:class:agentic-workflow",
         "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:task-delegation",
+        "label": "Task Delegation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      },
+      {
+        "id": "urn:ngm:class:openai-swarm",
+        "label": "OpenAI Swarm"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      },
+      {
+        "id": "urn:ngm:class:enterprise-ai",
+        "label": "Enterprise AI"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-automation",
+        "label": "Supply Chain Automation"
+      }
+    ],
     "uses": [
       {
         "id": "urn:ngm:class:service-discovery",
@@ -40,6 +104,30 @@
       {
         "id": "urn:ngm:class:message-passing",
         "label": "Message Passing"
+      },
+      {
+        "id": "urn:ngm:class:json-rpc-2-0",
+        "label": "JSON-RPC 2.0"
+      },
+      {
+        "id": "urn:ngm:class:server-sent-events",
+        "label": "Server-Sent Events"
+      },
+      {
+        "id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      },
+      {
+        "id": "urn:ngm:class:oauth-2-0",
+        "label": "OAuth 2.0"
+      },
+      {
+        "id": "urn:ngm:class:json-web-signature",
+        "label": "JSON Web Signature"
+      },
+      {
+        "id": "urn:ngm:class:json-schema",
+        "label": "JSON Schema"
       }
     ],
     "supports": [],
@@ -53,11 +141,280 @@
       {
         "id": "urn:ngm:class:agent-communication-protocol",
         "label": "Agent Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:agent-network-protocol",
+        "label": "Agent Network Protocol"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-orchestration",
+        "label": "Multi-Agent Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "inter-agent-communication",
+      "label": "Inter-Agent Communication"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "service-discovery",
+      "label": "Service Discovery"
+    },
+    {
+      "slug": "message-passing",
+      "label": "Message Passing"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "slug": "agent-card",
+      "label": "Agent Card"
+    },
+    {
+      "slug": "task-lifecycle",
+      "label": "Task Lifecycle"
+    },
+    {
+      "slug": "server-sent-events",
+      "label": "Server-Sent Events"
+    },
+    {
+      "slug": "json-rpc-2-0",
+      "label": "JSON-RPC 2.0"
+    },
+    {
+      "slug": "http-protocol",
+      "label": "HTTP Protocol"
+    },
+    {
+      "slug": "oauth-2-0",
+      "label": "OAuth 2.0"
+    },
+    {
+      "slug": "json-web-signature",
+      "label": "JSON Web Signature"
+    },
+    {
+      "slug": "json-schema",
+      "label": "JSON Schema"
+    },
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "multi-agent-orchestration",
+      "label": "Multi-Agent Orchestration"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "vertex-ai",
+      "label": "Vertex AI"
+    },
+    {
+      "slug": "linux-foundation",
+      "label": "Linux Foundation"
+    },
+    {
+      "slug": "lang-chain-agent-framework",
+      "label": "LangChain Agent Framework"
+    },
+    {
+      "slug": "autogen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "crewai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "task-delegation",
+      "label": "Task Delegation"
+    },
+    {
+      "slug": "capability-advertisement",
+      "label": "Capability Advertisement"
+    },
+    {
+      "slug": "mutual-authentication",
+      "label": "Mutual Authentication"
+    },
+    {
+      "slug": "enterprise-ai",
+      "label": "Enterprise AI"
+    },
+    {
+      "slug": "supply-chain-automation",
+      "label": "Supply Chain Automation"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "webhook",
+      "label": "Webhook"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "rate-limiting",
+      "label": "Rate Limiting"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "agent-network-protocol",
+      "label": "Agent Network Protocol"
+    },
+    {
+      "slug": "agent-communication-protocol-ibm",
+      "label": "Agent Communication Protocol (IBM ACP)"
+    },
+    {
+      "slug": "decentralised-identifier",
+      "label": "Decentralised Identifier"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "agent-payments-protocol",
+      "label": "Agent Payments Protocol"
+    },
+    {
+      "slug": "microservices-architecture",
+      "label": "Microservices Architecture"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "state-management",
+      "label": "State Management"
+    },
+    {
+      "slug": "error-handling",
+      "label": "Error Handling"
+    },
+    {
+      "slug": "negotiation",
+      "label": "Negotiation"
+    },
+    {
+      "slug": "coordination-protocol",
+      "label": "Coordination Protocol"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "openai-swarm",
+      "label": "OpenAI Swarm"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "push-notification",
+      "label": "Push Notification"
+    },
+    {
+      "slug": "well-known-uri",
+      "label": "Well-Known URI"
+    },
+    {
+      "slug": "json-canonicalization-scheme",
+      "label": "JSON Canonicalization Scheme"
+    },
+    {
+      "slug": "gemini-model",
+      "label": "Gemini Model"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "remote-procedure-call",
+      "label": "Remote Procedure Call"
+    },
+    {
+      "slug": "web-of-things",
+      "label": "Web of Things"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
     {
       "slug": "agents",
       "label": "Agents"

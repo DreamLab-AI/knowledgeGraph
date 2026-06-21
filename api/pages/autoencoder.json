@@ -141,6 +141,10 @@
   ],
   "backlinks": [
     {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
       "slug": "deepfakes-and-fraudulent-content",
       "label": "Deepfakes and fraudulent content"
     },

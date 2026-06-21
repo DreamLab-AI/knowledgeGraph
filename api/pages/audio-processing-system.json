@@ -142,6 +142,14 @@
   ],
   "backlinks": [
     {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
       "slug": "spatial-audio-processor",
       "label": "Spatial Audio Processor"
     }

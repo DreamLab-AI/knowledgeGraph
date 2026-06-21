@@ -140,6 +140,10 @@
   ],
   "backlinks": [
     {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
       "slug": "computer-vision",
       "label": "Computer Vision"
     },

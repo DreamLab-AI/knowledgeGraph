@@ -1993,76 +1993,6 @@ public:: true
 
 - ### Content
 
-  ## Class Declaration
-        Declaration(Class(dt:ValueTransfer))
-
-        ## Classification
-        SubClassOf(dt:ValueTransfer dt:ConceptualEntity)
-        SubClassOf(dt:ValueTransfer dt:Process)
-        SubClassOf(dt:ValueTransfer dt:ConceptualProcess)
-
-        ## Cross-Domain Bridges
-        SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:implementedInDomain bc:BlockchainDomain))
-
-        SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:implementedInDomain distributed-collaboration:MetaverseDomain))
-
-        SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:implementedInDomain ai:AIGroundedDomain))
-
-        SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:implementedInDomain rb:RoboticsDomain))
-
-        ## Components
-        SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:hasPart dt:Money))
-
-        SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:hasPart bc:Token))
-
-        SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:hasPart dt:DigitalCurrency))
-
-        ## Implementation Mechanisms
-        SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:implementedBy bc:Transaction))
-
-        SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:implementedBy bc:SmartContract))
-
-        ## Requirements
-        SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:requires dt:TrustMechanism))
-
-        SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:requires dt:ValueRepresentation))
-
-        ## Enablement
-        SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:enables dt:EconomicExchange))
-
-        ## Data Properties
-        DataPropertyAssertion(dt:hasIdentifier dt:ValueTransfer "DT-0001"^^xsd:string)
-        DataPropertyAssertion(dt:isCrossDomain dt:ValueTransfer "true"^^xsd:boolean)
-        DataPropertyAssertion(dt:isFoundational dt:ValueTransfer "true"^^xsd:boolean)
-
-        ## Annotations
-        AnnotationAssertion(rdfs:label dt:ValueTransfer "Value Transfer"@en)
-        AnnotationAssertion(rdfs:comment dt:ValueTransfer
-          "Cross-domain mechanism for exchanging economic value across physical, digital, and virtual domains"@en)
-      )
-
-  # Property characteristics
-  AsymmetricObjectProperty(dt:isenabledby)
-
-  # Property characteristics
-  AsymmetricObjectProperty(dt:enables)
-
-  # Property characteristics
-  AsymmetricObjectProperty(dt:requires)
-  ```
-
   - ## About Value Transfer
 
   - **Value Transfer** is a fundamental cross-domain concept representing the mechanisms by which economic value, rights, or utility move between parties in modern technological systems. It transcends traditional notions of monetary exchange to encompass blockchain transactions, virtual economy transfers, AI agent commerce, and robotic resource allocation.
@@ -2219,12 +2149,12 @@ public:: true
     - [[Blockchain]] - Distributed ledger technology
   - ## Current Landscape (2025)
 
-    ### Global Payment Volume [Updated 2025]
-    - **Stablecoin Ecosystem**: $305B total supply (September 2025), with payment-specific transaction volumes reaching $5.7T annually
-    - **Market Leaders**: [[USDT]] (Tether) dominates with $120B, [[USDC]] (Circle) at $35B, [[DAI]] at $5.2B
+    ### Global Payment Volume [Updated 2026]
+    - **Stablecoin Ecosystem**: ~$322B total supply (May 2026 record), with payment-specific transaction volumes reaching $5.7T annually
+    - **Market Leaders**: [[USDT]] (Tether) dominates at ~$140B (58% market share), [[USDC]] (Circle) at ~$75B (up ~72% year-on-year), [[DAI]] remains a smaller algorithmic stablecoin
     - **Enterprise Adoption**: [[PayPal]] PYUSD stablecoin integrated into merchant payments, [[Visa]] launches settlements on [[Base]] L2
-    - **Transaction Growth**: 847% increase in stablecoin payment volume since 2021, signaling mainstream adoption
-    - **Geographic Distribution**: 62% Asia-Pacific, 24% Americas, 14% EMEA [Updated 2025]
+    - **Transaction Growth**: Stablecoin circulation projected to exceed $1T by late 2026, driven by institutional adoption
+    - **Geographic Distribution**: 62% Asia-Pacific, 24% Americas, 14% EMEA
 
     ### Blockchain Settlement Performance [Updated 2025]
     - **Speed Advantage**: Blockchain settlements complete in 3 minutes vs. 3-5 days for traditional [[SWIFT]] transfers
@@ -2234,15 +2164,15 @@ public:: true
     - **Finality Guarantees**: [[Bitcoin Proof-of-Work Protocol]] 6-block confirmation (60 min), [[Ethereum Smart Contract Platform]] single-slot finality (12 sec post-Merge)
     - **Enterprise Throughput**: [[Ripple]] XRP Ledger 1,500 TPS, [[Solana]] 65,000 TPS theoretical (2,500 actual)
 
-    ### Central Bank Digital Currencies (CBDCs) [Updated 2025]
+    ### Central Bank Digital Currencies (CBDCs) [Updated 2026]
     - **Global Exploration**: 130+ countries (98% of global GDP) actively researching CBDCs
     - **Launched CBDCs**:
       - China [[e-CNY]] (Digital Yuan): 260M wallets, $250B transaction volume since 2020 pilot
       - Bahamas [[Sand Dollar]]: First fully launched retail CBDC (October 2020)
-      - Nigeria [[eNaira]]: 13M wallets, struggling with 0.5% adoption rate
+      - Nigeria [[eNaira]]: 13M wallets, struggling with 98.5% of wallets remaining unused
       - Jamaica [[JAM-DEX]]: Eastern Caribbean pilot expanding
     - **Advanced Pilots**:
-      - European Central Bank [[Digital Euro]]: Preparation phase (2025-2026), launch targeted 2028
+      - European Central Bank [[Digital Euro]]: Preparation phase ongoing; legal framework adoption targeted 2026, pilot 2027, first issuance readiness targeted 2029 (not 2028 as originally planned)
       - Bank of England [[Digital Pound]]: Public consultation concluded, design phase active
       - Federal Reserve [[Digital Dollar]]: Project Hamilton technical research ongoing
     - **Wholesale CBDCs**: [[Project Jura]] (Switzerland-France), [[Project Dunbar]] (BIS Innovation Hub multi-CBDC platform)
@@ -2278,9 +2208,9 @@ public:: true
       - [[HSBC]]: Tokenized gold and deposit products
     - **Corporate Treasury**: [[Tesla]], [[MicroStrategy]], [[Block]] holding combined $8B+ in [[Bitcoin Proof-of-Work Protocol]]
 
-    ### Regulatory Landscape [Updated 2025]
+    ### Regulatory Landscape [Updated 2026]
     - **European Union**: [[MiCA]] (Markets in Crypto-Assets) fully enacted, creating licensing framework for stablecoins and exchanges
-    - **United States**: [[CLARITY Act]] establishing SEC/CFTC jurisdiction split, stablecoin legislation pending
+    - **United States**: [[GENIUS Act]] (Guiding and Establishing National Innovation for US Stablecoins Act) signed into law July 18, 2025, establishing the first federal stablecoin regulatory framework with reserve and disclosure requirements
     - **United Kingdom**: [[Financial Services and Markets Act 2023]] bringing stablecoins into payment regulation, [[FCA]] crypto asset regime
     - **Asia-Pacific**:
       - Singapore: [[Payment Services Act]] licensing 200+ crypto firms
@@ -2563,7 +2493,7 @@ public:: true
     - **Project Background**:
       - Public consultation concluded (June 2023), 50,000+ responses
       - Design phase active (2024-2026), technical architecture being finalized
-      - Launch timeline: Earliest 2028, pending parliamentary legislation
+      - Launch timeline: Earliest 2029, pending parliamentary legislation
     - **Technical Architecture**:
       - **Two-Tier Model**: BoE issues digital pound, private sector provides wallets/interfaces
       - **Privacy Design**: BoE cannot see individual transactions, only aggregated data
@@ -2749,7 +2679,7 @@ public:: true
     - European Union (2023). *Markets in Crypto-Assets Regulation (MiCA)*. [[EU Official Journal]]
     - United Kingdom (2023). *Financial Services and Markets Act 2023*. [[UK Legislation]]
     - Financial Action Task Force (2023). "Updated Guidance for a Risk-Based Approach to Virtual Assets and VASPs." [[FATF]]
-    - US Congress (2024). "Clarity for Payment Stablecoins Act of 2024." [[Congress.gov]]
+    - US Congress (2025). "Guiding and Establishing National Innovation for US Stablecoins (GENIUS) Act." Signed into law July 18, 2025. [[Congress.gov]]
 
     ### Data Sources
     - [[DeFi Llama]]: Total Value Locked (TVL) tracking across DeFi protocols
@@ -2760,10 +2690,10 @@ public:: true
 
   - ## Metadata
 
-    - **Last Updated**: 2025-11-15
-    - **Review Status**: Comprehensive editorial review with 2025 market data
+    - **Last Updated**: 2026-06-20
+    - **Review Status**: Comprehensive editorial review with 2026 market data
     - **Quality Score**: 0.94
-    - **Verification**: Academic sources verified, market data current as of November 2025
+    - **Verification**: Academic sources verified, market data current as of June 2026
     - **Regional Context**: UK/North England focus with global coverage
     - **Cross-Domain Coverage**: AI, Blockchain, Robotics, Metaverse, Traditional Finance
     - **Technical Depth**: Implementation examples, code snippets, protocol specifications

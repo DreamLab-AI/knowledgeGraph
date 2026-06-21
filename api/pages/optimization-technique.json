@@ -57,5 +57,10 @@
     "relatedTo": []
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "algorithmic-framework",
+      "label": "Algorithmic Framework"
+    }
+  ]
 }

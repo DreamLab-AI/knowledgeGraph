@@ -1,8 +1,6 @@
 - ### Definition
   - The foundational technology stack comprising blockchain networks, node infrastructure, custody systems, key management solutions, and integration APIs that enable secure creation, storage, transfer, and management of digital assets across institutional and retail applications.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: infrastructure:DigitalAssetInfrastructure
   - owl-role:: Concept
@@ -10,6 +8,7 @@ bridges-to:: [[Blockchain]]
 
 - ### Relationships
   - is-subclass-of:: [[Digital Infrastructure]]
+  - bridges-to:: [[Blockchain]]
   - requires:: [[Node Network]], [[Cryptographic Systems]], [[Storage Solutions]]
   - enables:: [[Asset Custody]], [[Transaction Processing]], [[Key Management]]
 
@@ -31,7 +30,7 @@ bridges-to:: [[Blockchain]]
 		- EIP standards for Ethereum integration
 		- CCSS for cryptocurrency security
 		- SOC 2 compliance for service providers
-  - **2024 Trends**: Institutional-grade custody expansion, regulated infrastructure providers, insurance coverage growth
+  - **2026 Trends**: Tokenized real-world asset (RWA) AUM crossed $20B by early 2026; BitGo completed its IPO in January 2026 (first by a crypto custodian) and received an OCC national trust bank charter; regulatory frameworks (GENIUS Act, MiCA, UK FSMA) establishing clear standards for custody, reserve backing, and issuer transparency; cryptographic proof-of-reserves now a compliance norm
   - ## Applications
   - Institutional custody services
   - Exchange backend systems

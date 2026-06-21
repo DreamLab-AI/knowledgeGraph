@@ -171,6 +171,22 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    },
+    {
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
+    },
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
       "slug": "ai-governance",
       "label": "AI Governance"
     },
@@ -181,6 +197,10 @@
     {
       "slug": "ai-monitoring",
       "label": "AI Monitoring"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
     },
     {
       "slug": "ai-provider",
@@ -207,12 +227,24 @@
       "label": "AML KYC Compliance"
     },
     {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
       "slug": "accountability",
       "label": "Accountability"
     },
     {
       "slug": "adoption-of-convergent-technologies",
       "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
     },
     {
       "slug": "artificial-intelligence",

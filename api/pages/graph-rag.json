@@ -72,6 +72,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "graph-database",
       "label": "Graph Database"
     },

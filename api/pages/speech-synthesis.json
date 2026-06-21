@@ -75,6 +75,18 @@
       "label": "AI companions"
     },
     {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
     },

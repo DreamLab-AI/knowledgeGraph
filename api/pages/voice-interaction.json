@@ -159,5 +159,10 @@
       "label": "Text-to-Speech"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
+    }
+  ]
 }

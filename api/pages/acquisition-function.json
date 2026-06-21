@@ -17,7 +17,16 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:bayesian-optimisation",
@@ -30,11 +39,36 @@
       {
         "id": "urn:ngm:class:neural-architecture-search",
         "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi-Objective Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:experimental-design",
+        "label": "Experimental Design"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:grid-search",
+        "label": "Grid Search"
+      },
+      {
+        "id": "urn:ngm:class:random-search",
+        "label": "Random Search"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -44,9 +78,34 @@
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo",
+        "label": "Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:kernel-function",
+        "label": "Kernel Function"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
+      },
+      {
+        "id": "urn:ngm:class:materials-science",
+        "label": "Materials Science"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -57,10 +116,187 @@
       {
         "id": "urn:ngm:class:machine-learning-discipline",
         "label": "Machine Learning Discipline"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:exploration-exploitation-trade-off",
+        "label": "Exploration-Exploitation Trade-off"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "hyperparameter-tuning",
+      "label": "Hyperparameter Tuning"
+    },
+    {
+      "slug": "neural-architecture-search",
+      "label": "Neural Architecture Search"
+    },
+    {
+      "slug": "hyperparameter",
+      "label": "Hyperparameter"
+    },
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "slug": "gaussian-process",
+      "label": "Gaussian Process"
+    },
+    {
+      "slug": "surrogate-model",
+      "label": "Surrogate Model"
+    },
+    {
+      "slug": "optimization-algorithm",
+      "label": "Optimization Algorithm"
+    },
+    {
+      "slug": "expected-improvement",
+      "label": "Expected Improvement"
+    },
+    {
+      "slug": "exploration-exploitation-trade-off",
+      "label": "Exploration-Exploitation Trade-off"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "kernel-function",
+      "label": "Kernel Function"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "materials-science",
+      "label": "Materials Science"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "multi-objective-optimisation",
+      "label": "Multi-Objective Optimisation"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "grid-search",
+      "label": "Grid Search"
+    },
+    {
+      "slug": "random-search",
+      "label": "Random Search"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
+    },
+    {
+      "slug": "monte-carlo",
+      "label": "Monte Carlo"
+    },
+    {
+      "slug": "experimental-design",
+      "label": "Experimental Design"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "thompson-sampling",
+      "label": "Thompson Sampling"
+    },
+    {
+      "slug": "upper-confidence-bound",
+      "label": "Upper Confidence Bound"
+    },
+    {
+      "slug": "bandit-algorithm",
+      "label": "Bandit Algorithm"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "regret-minimisation",
+      "label": "Regret Minimisation"
+    },
+    {
+      "slug": "trust-region-method",
+      "label": "Trust Region Method"
+    },
+    {
+      "slug": "black-box-optimisation",
+      "label": "Black-Box Optimisation"
+    },
+    {
+      "slug": "pareto-optimality",
+      "label": "Pareto Optimality"
+    },
+    {
+      "slug": "protein-engineering",
+      "label": "Protein Engineering"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "deep-kernel-learning",
+      "label": "Deep Kernel Learning"
+    },
+    {
+      "slug": "variance-reduction",
+      "label": "Variance Reduction"
+    }
+  ],
   "backlinks": [
     {
       "slug": "active-learning",

@@ -97,6 +97,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
       "slug": "imitation-learning",
       "label": "Imitation Learning"
     }

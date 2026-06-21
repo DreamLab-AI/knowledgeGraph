@@ -136,6 +136,10 @@
   ],
   "backlinks": [
     {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
       "slug": "bagging",
       "label": "Bagging"
     },

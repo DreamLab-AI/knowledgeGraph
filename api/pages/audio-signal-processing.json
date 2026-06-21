@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.92,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
@@ -108,11 +108,248 @@
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "digital-signal-processing",
+      "label": "Digital Signal Processing"
+    },
+    {
+      "slug": "fast-fourier-transform",
+      "label": "Fast Fourier Transform"
+    },
+    {
+      "slug": "digital-filter",
+      "label": "Digital Filter"
+    },
+    {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "audio-parameters",
+      "label": "Audio Parameters"
+    },
+    {
+      "slug": "pulse-code-modulation",
+      "label": "Pulse-Code Modulation"
+    },
+    {
+      "slug": "spatial-audio",
+      "label": "Spatial Audio"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "speech-synthesis",
+      "label": "Speech Synthesis"
+    },
+    {
+      "slug": "audio-compression",
+      "label": "Audio Compression"
+    },
+    {
+      "slug": "noise-suppression",
+      "label": "Noise Suppression"
+    },
+    {
+      "slug": "real-time-computing",
+      "label": "Real-Time Computing"
+    },
+    {
+      "slug": "telecommunications",
+      "label": "Telecommunications"
+    },
+    {
+      "slug": "audio-engine",
+      "label": "Audio Engine"
+    },
+    {
+      "slug": "audio-processing-system",
+      "label": "Audio Processing System"
+    },
+    {
+      "slug": "neural-audio-codec",
+      "label": "Neural Audio Codec"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "psychoacoustics",
+      "label": "Psychoacoustics"
+    },
+    {
+      "slug": "mfcc",
+      "label": "MFCC"
+    },
+    {
+      "slug": "mel-spectrogram",
+      "label": "Mel-Spectrogram"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
+      "slug": "audio-codec",
+      "label": "Audio Codec"
+    },
+    {
+      "slug": "source-separation",
+      "label": "Source Separation"
+    },
+    {
+      "slug": "beamforming",
+      "label": "Beamforming"
+    },
+    {
+      "slug": "echo-cancellation",
+      "label": "Echo Cancellation"
+    },
+    {
+      "slug": "noise-cancellation",
+      "label": "Noise Cancellation"
+    },
+    {
+      "slug": "equalisation",
+      "label": "Equalisation"
+    },
+    {
+      "slug": "dynamic-range-compression",
+      "label": "Dynamic Range Compression"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "fourier-transform",
+      "label": "Fourier Transform"
+    },
+    {
+      "slug": "fourier-analysis",
+      "label": "Fourier Analysis"
+    },
+    {
+      "slug": "gpu-acceleration",
+      "label": "GPU Acceleration"
+    },
+    {
+      "slug": "embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "slug": "hearing-aids",
+      "label": "Hearing Aids"
+    },
+    {
+      "slug": "binaural-audio",
+      "label": "Binaural Audio"
+    },
+    {
+      "slug": "music-information-retrieval",
+      "label": "Music Information Retrieval"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "digital-signal-processor",
+      "label": "Digital Signal Processor"
+    },
+    {
+      "slug": "webrtc",
+      "label": "WebRTC"
+    },
+    {
+      "slug": "content-delivery",
+      "label": "Content Delivery"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "audio-spatialization",
+      "label": "Audio Spatialization"
+    },
+    {
+      "slug": "audio-technology",
+      "label": "Audio Technology"
+    },
+    {
+      "slug": "adaptive-music",
+      "label": "Adaptive Music"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "audio-system",
+      "label": "Audio System"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "acoustic-model",
+      "label": "Acoustic Model"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
     {
       "slug": "automated-podcasting",
       "label": "Automated Podcasting"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
     },
     {
       "slug": "music-and-audio",

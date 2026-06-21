@@ -208,8 +208,20 @@
       "label": "AI Monitoring"
     },
     {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
+    {
       "slug": "ai-provider",
       "label": "AI Provider"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
+      "slug": "activity-data",
+      "label": "Activity Data"
     },
     {
       "slug": "human-oversight",

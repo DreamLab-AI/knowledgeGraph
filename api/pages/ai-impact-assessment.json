@@ -228,16 +228,44 @@
   ],
   "backlinks": [
     {
+      "slug": "ai-accountability",
+      "label": "AI Accountability"
+    },
+    {
       "slug": "ai-audit",
       "label": "AI Audit"
+    },
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
     },
     {
       "slug": "ai-lifecycle",
       "label": "AI Lifecycle"
     },
     {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
       "slug": "ai-provider",
       "label": "AI Provider"
+    },
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    },
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
     },
     {
       "slug": "ethical-ai",

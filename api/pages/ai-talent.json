@@ -10,13 +10,38 @@
     {
       "id": "urn:ngm:class:workforce-development",
       "label": "Workforce Development"
+    },
+    {
+      "id": "urn:ngm:class:human-capital",
+      "label": "Human Capital"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.88,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ai-research-talent",
+        "label": "AI Research Talent"
+      },
+      {
+        "id": "urn:ngm:class:ml-engineering",
+        "label": "ML Engineering"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "id": "urn:ngm:class:alignment-research",
+        "label": "Alignment Research"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,9 +51,30 @@
       {
         "id": "urn:ngm:class:ai-safety-research",
         "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:frontier-ai",
+        "label": "Frontier AI"
+      },
+      {
+        "id": "urn:ngm:class:technological-leadership",
+        "label": "Technological Leadership"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:education-and-ai",
+        "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:ai-investment",
+        "label": "AI Investment"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
@@ -37,6 +83,14 @@
       {
         "id": "urn:ngm:class:ai-governance-framework",
         "label": "AI Governance Framework"
+      },
+      {
+        "id": "urn:ngm:class:innovation-ecosystems",
+        "label": "Innovation Ecosystems"
+      },
+      {
+        "id": "urn:ngm:class:economic-competitiveness",
+        "label": "Economic Competitiveness"
       }
     ],
     "standardizedBy": [],
@@ -49,14 +103,171 @@
       {
         "id": "urn:ngm:class:education-and-ai",
         "label": "Education and AI"
+      },
+      {
+        "id": "urn:ngm:class:talent-concentration",
+        "label": "Talent Concentration"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "workforce-development",
+      "label": "Workforce Development"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "data-science",
+      "label": "Data Science"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "ai-research-talent",
+      "label": "AI Research Talent"
+    },
+    {
+      "slug": "talent-concentration",
+      "label": "Talent Concentration"
+    },
+    {
+      "slug": "innovation-ecosystems",
+      "label": "Innovation Ecosystems"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
+    },
+    {
+      "slug": "national-ai-strategies",
+      "label": "National AI Strategies"
+    },
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "geopolitics",
+      "label": "Geopolitics"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "AI Policy"
+    },
+    {
+      "slug": "immigration-policy",
+      "label": "Immigration Policy"
+    },
+    {
+      "slug": "economic-competitiveness",
+      "label": "Economic Competitiveness"
+    },
+    {
+      "slug": "technological-leadership",
+      "label": "Technological Leadership"
+    },
+    {
+      "slug": "alignment-research",
+      "label": "Alignment Research"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "bias-and-fairness",
+      "label": "Bias and Fairness"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "open-ai",
+      "label": "OpenAI Research Organisation"
+    },
+    {
+      "slug": "meta-ai",
+      "label": "Meta AI"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-adoption",
       "label": "AI Adoption"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
     },
     {
       "slug": "adoption-of-convergent-technologies",

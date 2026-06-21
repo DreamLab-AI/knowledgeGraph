@@ -1,8 +1,6 @@
 - ### Definition
   - An Autoencoder is a neural network trained to reconstruct its input by learning a compressed latent representation. The encoder maps input to a lower-dimensional latent space; the decoder reconstructs the original from this representation. Variants including VAEs, denoising autoencoders, and convolutional autoencoders extend this to generative modelling, anomaly detection, and feature extraction.
 
-  - ### Primary Definition
-
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:Autoencoder
   - owl-role:: Concept
@@ -19,48 +17,6 @@
   - relatedTo [[Feature Extraction]]
 
 - ### Content
-  - ### Primary Definition
-  An **Autoencoder** is a neural network trained to reconstruct its input by learning a compressed latent representation. It consists of an encoder that maps input to a lower-dimensional space and a decoder that reconstructs the original input from this representation.
-  - ### Original Content
-		- ```
-  # Autoencoder
-
-  #### Related Concepts
-  - **Dimensionality Reduction**: Primary use case for autoencoders
-		  - **Feature Extraction**: Autoencoders learn useful feature representations
-		  - **Generative AI**: VAEs used for synthetic data generation
-		  - **Anomaly Detection**: Reconstruction error used to detect outliers
-
-		  ## Formal Ontology
-
-		  <details>
-		  <parameter name="summary">Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Machine learning model architectures
-
-		  ### NIST AI RMF
-		  - **Function**: MEASURE (Unsupervised learning evaluation)
-
-		  ## Related Terms
-		  - **Generative Adversarial Network** (AI-0035): Alternative generative model
-		  - **Dimensionality Reduction**: Key application of autoencoders
-		  - **Feature Extraction** (AI-0060): Autoencoder use case
-		  - **Unsupervised Learning**: Training paradigm for autoencoders
-
-  #### References
-  1. Hinton & Salakhutdinov - "Reducing the Dimensionality of Data with Neural Networks" - Science, 2006
-		  2. ISO/IEC 22989:2022 - ML model architectures
-
-		  ---
-
-		  **Authority Score**: 0.90 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-
-		  ```
   ## Academic Context
 
   - Autoencoders are a class of artificial neural networks designed for unsupervised learning by encoding input data into a compressed latent representation and then decoding it to reconstruct the original input.
@@ -70,7 +26,7 @@
   - Historically, autoencoders generalise principal component analysis (PCA) to nonlinear transformations, with foundational work dating back to the early 1990s (Kramer, 1991).
   - Variants include sparse, denoising, contractive, convolutional, and variational autoencoders (VAEs), each introducing constraints or probabilistic modelling to enhance representation learning or generative capabilities.
 
-  ## Current Landscape (2025)
+  ## Current Landscape (2026)
 
   - Autoencoders are widely adopted across industries for tasks including anomaly detection, image reconstruction, feature extraction, and generative modelling.
   - They underpin advances in computer vision, natural language processing, and signal processing.

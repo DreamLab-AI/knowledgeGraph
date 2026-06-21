@@ -67,6 +67,10 @@
   ],
   "backlinks": [
     {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
       "slug": "ai-in-games",
       "label": "AI in Games"
     },

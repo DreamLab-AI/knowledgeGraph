@@ -13,8 +13,6 @@
 
 - ### Content
   - A computational model comprising interconnected layers of artificial neurons that learn to approximate functions by adjusting weighted connections through exposure to training data. Neural networks form the foundational substrate of modern deep learning, encompassing convolutional networks for spatial data, recurrent networks for sequential data, and transformer architectures for parallel sequence processing. The learning process involves forward propagation of inputs through layered neuron activations, loss computation against target outputs, and backward propagation of error gradients to update synaptic weights via gradient descent.
-  - ### Original Content
-		- Legacy content removed during ai: prefix remediation (2025-01-23)
 
   #### Current Landscape
   - Neural networks are integral to the metaverse ecosystem, powering AI capabilities that enhance immersion, interactivity, and content generation.

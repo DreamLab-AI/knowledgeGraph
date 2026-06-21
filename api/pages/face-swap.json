@@ -621,6 +621,10 @@
   ],
   "backlinks": [
     {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
       "slug": "deepfakes-and-fraudulent-content",
       "label": "Deepfakes and fraudulent content"
     },

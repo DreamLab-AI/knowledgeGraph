@@ -71,5 +71,10 @@
       "label": "MetaverseDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    }
+  ]
 }

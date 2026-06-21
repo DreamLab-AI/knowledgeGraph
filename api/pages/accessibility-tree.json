@@ -5,22 +5,82 @@
   "public": true,
   "classIri": "urn:ngm:class:accessibility-tree",
   "domain": "ai",
-  "definition": "The Accessibility Tree is a structured representation of a user interface that exposes each element's role, name, state, and value to assistive technologies and automation agents. Browsers derive it from the DOM, filtering out presentational nodes and computing accessible names so that screen readers and programmatic clients can understand and operate the page. It provides a stable semantic model that AI browser agents use to locate and interact with controls without parsing raw pixels.",
+  "definition": "The Accessibility Tree is a structured, platform-independent semantic representation of a user interface that browsers and native application runtimes construct in parallel with the visual render tree, exposing each element's role, name, description, state, and value to platform accessibility APIs and programmatic automation clients. Derived from the Document Object Model by filtering out presentational and layout-only nodes, it is the authoritative conduit through which screen readers, braille displays, switch-access devices, voice-control systems, and AI browser agents perceive and interact with software interfaces without parsing raw pixels.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction"
+    },
+    {
+      "id": "urn:ngm:class:user-interface-model",
+      "label": "User Interface Model"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aria-role",
+        "label": "ARIA Role"
+      },
+      {
+        "id": "urn:ngm:class:accessible-name",
+        "label": "Accessible Name"
+      },
+      {
+        "id": "urn:ngm:class:aria-state",
+        "label": "ARIA State"
+      },
+      {
+        "id": "urn:ngm:class:focus-management",
+        "label": "Focus Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:document-object-model",
+        "label": "Document Object Model"
+      },
+      {
+        "id": "urn:ngm:class:wai-aria",
+        "label": "WAI-ARIA"
+      },
+      {
+        "id": "urn:ngm:class:semantic-html",
+        "label": "Semantic HTML"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:assistive-technology",
+        "label": "Assistive Technology"
+      },
+      {
+        "id": "urn:ngm:class:computer-use-and-browser-agents",
+        "label": "Computer Use and Browser Agents"
+      },
+      {
+        "id": "urn:ngm:class:browser-automation",
+        "label": "Browser Automation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:core-accessibility-api-mappings",
+        "label": "Core Accessibility API Mappings"
+      },
+      {
+        "id": "urn:ngm:class:wcag-2-2",
+        "label": "WCAG 2.2"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
@@ -31,11 +91,200 @@
       {
         "id": "urn:ngm:class:computer-use-and-browser-agents",
         "label": "Computer Use and Browser Agents"
+      },
+      {
+        "id": "urn:ngm:class:platform-accessibility-api",
+        "label": "Platform Accessibility API"
+      },
+      {
+        "id": "urn:ngm:class:chrome-devtools-protocol",
+        "label": "Chrome DevTools Protocol"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "accessible-name-computation",
+      "label": "Accessible Name Computation"
+    },
+    {
+      "slug": "alternative-text",
+      "label": "Alternative Text"
+    },
+    {
+      "slug": "aria-role",
+      "label": "ARIA Role"
+    },
+    {
+      "slug": "aria-state",
+      "label": "ARIA State"
+    },
+    {
+      "slug": "assistive-technology",
+      "label": "Assistive Technology"
+    },
+    {
+      "slug": "assistive-technology-compatibility",
+      "label": "Assistive Technology Compatibility"
+    },
+    {
+      "slug": "axe-core",
+      "label": "axe-core"
+    },
+    {
+      "slug": "browser-automation",
+      "label": "Browser Automation"
+    },
+    {
+      "slug": "chrome-devtools-protocol",
+      "label": "Chrome DevTools Protocol"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "content-layer",
+      "label": "ContentLayer"
+    },
+    {
+      "slug": "core-accessibility-api-mappings",
+      "label": "Core Accessibility API Mappings"
+    },
+    {
+      "slug": "document-object-model",
+      "label": "Document Object Model"
+    },
+    {
+      "slug": "focus-management",
+      "label": "Focus Management"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human Computer Interaction"
+    },
+    {
+      "slug": "html-accessibility-api-mappings",
+      "label": "HTML Accessibility API Mappings"
+    },
+    {
+      "slug": "inclusive-design",
+      "label": "Inclusive Design"
+    },
+    {
+      "slug": "jaws-screen-reader",
+      "label": "JAWS Screen Reader"
+    },
+    {
+      "slug": "keyboard-navigation",
+      "label": "Keyboard Navigation"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "msaa-iaccessible2",
+      "label": "MSAA/IAccessible2"
+    },
+    {
+      "slug": "nvda-screen-reader",
+      "label": "NVDA Screen Reader"
+    },
+    {
+      "slug": "playwright-mcp",
+      "label": "Playwright MCP"
+    },
+    {
+      "slug": "semantic-html",
+      "label": "Semantic HTML"
+    },
+    {
+      "slug": "user-interface-standard",
+      "label": "User Interface Standard"
+    },
+    {
+      "slug": "universal-design",
+      "label": "Universal Design"
+    },
+    {
+      "slug": "voiceover",
+      "label": "VoiceOver"
+    },
+    {
+      "slug": "wai-aria",
+      "label": "WAI-ARIA"
+    },
+    {
+      "slug": "wcag-2-2",
+      "label": "WCAG 2.2"
+    },
+    {
+      "slug": "web-accessibility-initiative",
+      "label": "Web Accessibility Initiative"
+    },
+    {
+      "slug": "web-agent",
+      "label": "Web Agent"
+    },
+    {
+      "slug": "webdriver-bidi",
+      "label": "WebDriver BiDi"
+    },
+    {
+      "slug": "windows-ui-automation",
+      "label": "Windows UI Automation"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human Computer Interaction"
+    },
+    {
+      "slug": "platform-accessibility-api",
+      "label": "Platform Accessibility API"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "talkback",
+      "label": "TalkBack"
+    },
+    {
+      "slug": "ui-element",
+      "label": "UI Element"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    },
     {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"

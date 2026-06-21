@@ -32,9 +32,34 @@
       {
         "id": "urn:ngm:class:learning-algorithm",
         "label": "Learning Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:search-algorithm",
+        "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
       }
     ],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-complexity-theory",
+        "label": "Computational Complexity"
+      },
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structure"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:procedural-content-generation",
@@ -47,11 +72,32 @@
       {
         "id": "urn:ngm:class:inference",
         "label": "Inference"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:game-ai",
+        "label": "Game AI"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:heuristic-methods",
+        "label": "Heuristic Methods"
+      },
+      {
+        "id": "urn:ngm:class:brute-force-search",
+        "label": "Brute Force Search"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:digital-twin",
@@ -62,7 +108,24 @@
         "label": "AI Framework"
       }
     ],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-methods",
+        "label": "Monte Carlo Methods"
+      },
+      {
+        "id": "urn:ngm:class:evolutionary-algorithms",
+        "label": "Evolutionary Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -82,6 +145,10 @@
       {
         "id": "urn:ngm:class:optimization-technique",
         "label": "Optimization Technique"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-complexity",
+        "label": "Algorithmic Complexity"
       }
     ]
   },
@@ -93,9 +160,105 @@
     {
       "slug": "digital-twin",
       "label": "Digital Twin"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "optimization-algorithm",
+      "label": "Optimization Algorithm"
+    },
+    {
+      "slug": "graph-algorithms",
+      "label": "Graph Algorithms"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "inference",
+      "label": "Inference"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "optimization-technique",
+      "label": "Optimization Technique"
+    },
+    {
+      "slug": "dynamic-programming",
+      "label": "Dynamic Programming"
+    },
+    {
+      "slug": "monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    },
+    {
+      "slug": "evolutionary-algorithms",
+      "label": "Evolutionary Algorithms"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity"
+    },
+    {
+      "slug": "heuristic-methods",
+      "label": "Heuristic Methods"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "ai-technique",
+      "label": "AI Technique"
+    },
+    {
+      "slug": "algorithmic-complexity",
+      "label": "Algorithmic Complexity"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "game-ai",
+      "label": "Game AI"
     }
   ],
   "backlinks": [
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
     {
       "slug": "procedural-content-generation",
       "label": "Procedural Content Generation"

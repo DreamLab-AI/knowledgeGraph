@@ -67,6 +67,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
       "slug": "digital-fabrication",
       "label": "Digital Fabrication"
     },

@@ -10,14 +10,27 @@
     {
       "id": "urn:ngm:class:benchmarks",
       "label": "Benchmarks"
+    },
+    {
+      "id": "urn:ngm:class:benchmark-standard",
+      "label": "Benchmark Standard"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.9,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:reasoning",
@@ -26,11 +39,28 @@
       {
         "id": "urn:ngm:class:pattern-recognition",
         "label": "Pattern Recognition"
+      },
+      {
+        "id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -40,6 +70,14 @@
       {
         "id": "urn:ngm:class:cognitive-science",
         "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
       }
     ],
     "supports": [],
@@ -57,11 +95,168 @@
       {
         "id": "urn:ngm:class:ai-safety-research",
         "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:ai-benchmark-epistemological-critique",
+        "label": "AI Benchmark Epistemological Critique"
+      },
+      {
+        "id": "urn:ngm:class:neurosymbolic-ai",
+        "label": "Neurosymbolic AI"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "programme-synthesis",
+      "label": "Programme Synthesis"
+    },
+    {
+      "slug": "domain-specific-language",
+      "label": "Domain-Specific Language"
+    },
+    {
+      "slug": "fluid-intelligence",
+      "label": "Fluid Intelligence"
+    },
+    {
+      "slug": "test-time-training",
+      "label": "Test-Time Training"
+    },
+    {
+      "slug": "test-time-compute",
+      "label": "Test-Time Compute"
+    },
+    {
+      "slug": "inductive-logic-programming",
+      "label": "Inductive Logic Programming"
+    },
+    {
+      "slug": "visual-reasoning",
+      "label": "Visual Reasoning"
+    },
+    {
+      "slug": "few-shot-generalisation",
+      "label": "Few-Shot Generalisation"
+    },
+    {
+      "slug": "core-knowledge-priors",
+      "label": "Core Knowledge Priors"
+    },
+    {
+      "slug": "grid-based-tasks",
+      "label": "Grid-Based Tasks"
+    },
+    {
+      "slug": "agentic-intelligence",
+      "label": "Agentic Intelligence"
+    },
+    {
+      "slug": "arc-prize",
+      "label": "ARC Prize"
+    },
+    {
+      "slug": "arc-agi-2",
+      "label": "ARC-AGI-2"
+    },
+    {
+      "slug": "arc-agi-3",
+      "label": "ARC-AGI-3"
+    },
+    {
+      "slug": "evaluation-leaderboard",
+      "label": "Evaluation Leaderboard"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "pattern-recognition",
+      "label": "Pattern Recognition"
+    },
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "benchmark-standard",
+      "label": "Benchmark Standard"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "benchmarks",
+      "label": "Benchmarks"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "neurosymbolic-ai",
+      "label": "Neurosymbolic AI"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
+      "slug": "generalisation",
+      "label": "Generalisation"
+    },
+    {
+      "slug": "evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "slug": "ai-benchmark-epistemological-critique",
+      "label": "AI Benchmark Epistemological Critique"
+    },
+    {
+      "slug": "chain-of-thought-reasoning",
+      "label": "Chain-of-Thought Reasoning"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
     {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"

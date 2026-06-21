@@ -153,6 +153,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "anomaly-detection",
+      "label": "anomaly detection"
+    },
+    {
       "slug": "bitcoin-centralisation-risks",
       "label": "Bitcoin Centralisation Risks"
     },

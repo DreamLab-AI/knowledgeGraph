@@ -140,6 +140,14 @@
       "label": "Agent Frameworks"
     },
     {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },

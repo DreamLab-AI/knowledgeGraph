@@ -152,6 +152,18 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
       "slug": "path-planning",
       "label": "Path Planning"
     }

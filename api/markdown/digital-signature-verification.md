@@ -1,8 +1,6 @@
 - ### Definition
   - The cryptographic process of validating the authenticity and integrity of digitally signed data by applying the signer's public key to confirm that the signature was created by the corresponding private key and that the signed content has not been modified.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalSignatureVerification
   - owl-role:: Concept
@@ -12,6 +10,7 @@ bridges-to:: [[Blockchain]]
   - is-subclass-of:: [[Cryptographic Verification]]
   - requires:: [[Public Key]], [[Hash Algorithm]], [[Signature Algorithm]]
   - enables:: [[Transaction Authentication]], [[Document Integrity]], [[Non-Repudiation]]
+  - bridges-to:: [[Blockchain]]
 
 - ### Content
 
@@ -31,7 +30,7 @@ bridges-to:: [[Blockchain]]
 		- Smart contract execution authentication
 		- Node identity confirmation
 		- Consensus mechanism participation
-  - **Post-Quantum Developments (2024)**: ML-DSA and Mayo algorithms showing ECDSA-competitive performance
+  - **Post-Quantum Standards**: ML-DSA (formerly CRYSTALS-Dilithium) standardised as NIST FIPS 204 in August 2024, providing general-purpose quantum-resistant signatures with performance on par with classical ECDSA; NIST guidance targets migration from RSA/ECC to ML-DSA by 2030, mandatory for US government by 2035
   - ## Applications
   - Blockchain transaction validation
   - Document authenticity confirmation

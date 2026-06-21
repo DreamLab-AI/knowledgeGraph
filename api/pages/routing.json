@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:ngm-routing",
+  "title": "Routing",
+  "slug": "routing",
+  "public": true,
+  "classIri": "urn:ngm:class:routing",
+  "domain": "infrastructure",
+  "definition": "Routing is the process of selecting paths in a network along which data packets or messages are forwarded from source to destination. Routing algorithms and protocols such as BGP, OSPF, and segment routing determine optimal or policy-compliant paths based on metrics including latency, bandwidth, and cost. It is a foundational function of IP networks, software-defined networking, and overlay networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    }
+  ]
+}

@@ -1,8 +1,6 @@
 - ### Definition
   - The emergent social order in which digital networks, platforms, and data systems become primary mediators of economic activity, civic participation, cultural expression, and interpersonal relationships. Digital society encompasses the institutions, norms, rights, and governance mechanisms needed to ensure equitable, secure, and rights-respecting participation in digital environments including the metaverse.
 
-bridges-to:: [[Telecollaboration]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalSociety
   - owl-role:: concept

@@ -62,6 +62,10 @@
     {
       "slug": "ar-frame",
       "label": "AR Frame"
+    },
+    {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
     }
   ]
 }

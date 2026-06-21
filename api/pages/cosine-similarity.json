@@ -124,6 +124,10 @@
       "label": "AI Search"
     },
     {
+      "slug": "arc-face",
+      "label": "ArcFace"
+    },
+    {
       "slug": "semantic-search",
       "label": "Semantic Search"
     }

@@ -310,30 +310,16 @@ alias:: DecentralizedAutonomousOrganization
   - belongs-to-domain:: [[BlockchainDomain]]
 
 - ### Relationships
-  - bridges-to:: [[AI Agent System]] or [[Virtual Economy]]
-  - requires [[Smart Contracts]]
-  - requires [[Governance Token]]
-  - uses [[Consensus Mechanism]]
-  - uses [[Blockchain Governance]]
-  - enables [[Virtual Economy]]
+  - is-subclass-of:: [[Governance and Regulation]]
+  - requires:: [[Smart Contracts]], [[Governance Token]], [[Blockchain Infrastructure]]
+  - has-part:: [[On Chain Voting]], [[Treasury Management]], [[Proposal System]]
+  - uses:: [[Consensus Mechanism]], [[Blockchain Governance]]
+  - enables:: [[Virtual Economy]], [[Distributed Governance]]
+  - bridges-to:: [[AI Agent System]]
+  - bridges-to:: [[Collective Intelligence]]
 
 - ### Content
   - Decentralised Autonomous Organisations operate through smart contracts and community governance without centralised authority, enabling transparent resource allocation, democratic decision-making, and distributed treasury management at global scale.
-  - ### Original Content
-		- ```
-  # BC-0461: Decentralized Autonomous Organization (DAO)
-
-  #### Related Concepts
-  - [[BC-0462-on-chain-voting]]
-		  - [[BC-0463-governance-token]]
-		  - [[BC-0464-treasury-management]]
-		  - [[BC-0465-proposal-system]]
-
-		  ## See Also
-		  - [[BC-0142-smart-contract]]
-		  - [[BC-0201-decentralization]]
-
-		  ```
 
 - ### Provenance
   - sources::

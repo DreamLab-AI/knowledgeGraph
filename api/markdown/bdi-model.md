@@ -833,7 +833,6 @@
 
   ## Relationships
 
-  - is-subclass-of:: [[Artificial Intelligence]]
   ### Parent Concepts
   - [[Agent Architecture]] - BDI is a type of agent architecture
 

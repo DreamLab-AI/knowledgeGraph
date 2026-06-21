@@ -293,8 +293,6 @@ public:: true
 - ### Definition
   - A systematic collection and preservation system for digital assets, cultural artifacts, documents, and media using distributed storage, metadata standards, and immersive access technologies to ensure long-term accessibility and discovery within virtual environments and knowledge management systems.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalArchive
   - owl-role:: Concept
@@ -304,6 +302,7 @@ bridges-to:: [[Blockchain]]
   - is-subclass-of:: [[Digital Preservation]]
   - requires:: [[Metadata Standards]], [[Storage Infrastructure]], [[Access Control]]
   - enables:: [[Cultural Heritage Access]], [[Knowledge Preservation]], [[Historical Research]]
+  - bridges-to:: [[Blockchain]]
 
 - ### Content
 

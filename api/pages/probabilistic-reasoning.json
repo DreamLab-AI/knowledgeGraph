@@ -102,6 +102,10 @@
     {
       "slug": "ai-in-games",
       "label": "AI in Games"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
     }
   ]
 }

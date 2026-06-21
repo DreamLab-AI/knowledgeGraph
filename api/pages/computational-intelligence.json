@@ -56,6 +56,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

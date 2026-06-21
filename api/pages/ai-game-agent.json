@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:ai-game-agent",
   "domain": "artificial-intelligence",
-  "definition": "An intelligent autonomous entity within a video game or virtual environment that exhibits goal-directed behavior, adapts to player actions, and creates engaging interactive experiences through AI techniques including behavior trees, reinforcement learning, and procedural generation.",
+  "definition": "An AI Game Agent is an intelligent autonomous entity embedded within a video game or interactive virtual environment that perceives its local Game State through sensory abstraction, reasons over a structured decision framework, and executes goal-directed actions to create engaging, adaptive, and believable interactive experiences. Contemporary AI Game Agents synthesise classical symbolic control techniques \u2014 Finite State Machines, Behavior Trees, Goal-Oriented Action Planning, Hierarchical Task Networks \u2014 with data-driven methods including deep Reinforcement Learning, Imitation Learning from expert demonstrations, and Markov Decision Process formulations over Partially Observable environments. The most capable agents further incorporate Large Language Models as an 'inner monologue' for context-aware dialogue and high-level planning, while a learned Reinforcement Learning policy serves as the low-level action executor under Real-Time Constraints. The archetype spans NPC characters in narrative games, competitive game-playing agents trained through Self-Play such as AlphaGo and OpenAI Five, procedurally adaptive companions that model player behaviour through Player Modelling, and scripted simulation agents used in Automated Playtesting and Game Analytics pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
@@ -17,7 +17,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.91,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -36,6 +36,18 @@
       {
         "id": "urn:ngm:class:state-machine",
         "label": "State Machine"
+      },
+      {
+        "id": "urn:ngm:class:finite-state-machine",
+        "label": "Finite State Machine"
+      },
+      {
+        "id": "urn:ngm:class:influence-map",
+        "label": "Influence Map"
+      },
+      {
+        "id": "urn:ngm:class:npc-dialogue-system",
+        "label": "NPC Dialogue System"
       }
     ],
     "requires": [
@@ -46,6 +58,18 @@
       {
         "id": "urn:ngm:class:game-engine",
         "label": "Game Engine"
+      },
+      {
+        "id": "urn:ngm:class:game-state",
+        "label": "Game State"
+      },
+      {
+        "id": "urn:ngm:class:real-time-constraints",
+        "label": "Real-Time Constraints"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
       }
     ],
     "enables": [
@@ -56,6 +80,18 @@
       {
         "id": "urn:ngm:class:player-engagement",
         "label": "Player Engagement"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-difficulty-adjustment",
+        "label": "Dynamic Difficulty Adjustment"
+      },
+      {
+        "id": "urn:ngm:class:emergent-gameplay",
+        "label": "Emergent Gameplay"
+      },
+      {
+        "id": "urn:ngm:class:automated-playtesting",
+        "label": "Automated Playtesting"
       }
     ],
     "dependsOn": [],
@@ -63,6 +99,34 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:procedural-behavior",
+        "label": "Procedural Behavior"
+      },
+      {
+        "id": "urn:ngm:class:adaptive-difficulty",
+        "label": "Adaptive Difficulty"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "id": "urn:ngm:class:utility-ai",
+        "label": "Utility AI"
+      },
+      {
+        "id": "urn:ngm:class:goap",
+        "label": "GOAP"
+      },
+      {
+        "id": "urn:ngm:class:htn-planning",
+        "label": "HTN Planning"
       }
     ],
     "contrastsWith": [],
@@ -70,13 +134,80 @@
       {
         "id": "urn:ngm:class:intelligent-virtual-entity",
         "label": "Intelligent Virtual Entity"
+      },
+      {
+        "id": "urn:ngm:class:ai-in-games",
+        "label": "AI in Games"
       }
     ],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:proximal-policy-optimization",
+        "label": "Proximal Policy Optimization"
+      },
+      {
+        "id": "urn:ngm:class:reward-shaping",
+        "label": "Reward Shaping"
+      },
+      {
+        "id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      },
+      {
+        "id": "urn:ngm:class:domain-randomization",
+        "label": "Domain Randomization"
+      },
+      {
+        "id": "urn:ngm:class:self-play",
+        "label": "Self-Play"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:inworld-ai",
+        "label": "Inworld AI"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-ace",
+        "label": "NVIDIA ACE"
+      },
+      {
+        "id": "urn:ngm:class:unity",
+        "label": "Unity ML-Agents"
+      },
+      {
+        "id": "urn:ngm:class:unreal-engine",
+        "label": "Unreal Engine"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:player-modelling",
+        "label": "Player Modelling"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:spatial-reasoning",
+        "label": "Spatial Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:generative-agents",
+        "label": "Generative Agents"
+      },
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -178,6 +309,158 @@
     {
       "slug": "state-machine",
       "label": "State Machine"
+    },
+    {
+      "slug": "finite-state-machine",
+      "label": "Finite State Machine"
+    },
+    {
+      "slug": "monte-carlo-tree-search",
+      "label": "Monte Carlo Tree Search"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "self-play",
+      "label": "Self-Play"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "partially-observable-mdp",
+      "label": "Partially Observable MDP"
+    },
+    {
+      "slug": "proximal-policy-optimization",
+      "label": "Proximal Policy Optimization"
+    },
+    {
+      "slug": "reward-shaping",
+      "label": "Reward Shaping"
+    },
+    {
+      "slug": "curriculum-learning",
+      "label": "Curriculum Learning"
+    },
+    {
+      "slug": "domain-randomization",
+      "label": "Domain Randomization"
+    },
+    {
+      "slug": "utility-ai",
+      "label": "Utility AI"
+    },
+    {
+      "slug": "goap",
+      "label": "GOAP"
+    },
+    {
+      "slug": "htn-planning",
+      "label": "HTN Planning"
+    },
+    {
+      "slug": "influence-map",
+      "label": "Influence Map"
+    },
+    {
+      "slug": "npc-dialogue-system",
+      "label": "NPC Dialogue System"
+    },
+    {
+      "slug": "player-modelling",
+      "label": "Player Modelling"
+    },
+    {
+      "slug": "dynamic-difficulty-adjustment",
+      "label": "Dynamic Difficulty Adjustment"
+    },
+    {
+      "slug": "emergent-gameplay",
+      "label": "Emergent Gameplay"
+    },
+    {
+      "slug": "alpha-go",
+      "label": "AlphaGo"
+    },
+    {
+      "slug": "alpha-zero",
+      "label": "AlphaZero"
+    },
+    {
+      "slug": "mu-zero",
+      "label": "MuZero"
+    },
+    {
+      "slug": "dreamer-v3",
+      "label": "DreamerV3"
+    },
+    {
+      "slug": "inworld-ai",
+      "label": "Inworld AI"
+    },
+    {
+      "slug": "nvidia-ace",
+      "label": "NVIDIA ACE"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "generative-agents",
+      "label": "Generative Agents"
+    },
+    {
+      "slug": "spatial-reasoning",
+      "label": "Spatial Reasoning"
+    },
+    {
+      "slug": "real-time-constraints",
+      "label": "Real-Time Constraints"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "monte-carlo-tree-search",
+      "label": "Monte Carlo Tree Search"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "curriculum-learning",
+      "label": "Curriculum Learning"
+    },
+    {
+      "slug": "unreal-engine",
+      "label": "Unreal Engine"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "automated-playtesting",
+      "label": "Automated Playtesting"
+    },
+    {
+      "slug": "game-analytics",
+      "label": "Game Analytics"
+    },
+    {
+      "slug": "open-endedness",
+      "label": "Open-Endedness"
     }
   ],
   "backlinks": []

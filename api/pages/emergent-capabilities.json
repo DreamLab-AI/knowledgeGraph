@@ -119,6 +119,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     }

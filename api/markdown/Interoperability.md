@@ -1618,205 +1618,6 @@ public:: true
 
   - The capability of distinct systems, applications, or organizational entities to exchange information, interpret shared data correctly, and utilize exchanged information for coordinated operations. Interoperability encompasses technical protocol compatibility, semantic data alignment, and organizational process integration across heterogeneous environments, including blockchain networks, cross-chain protocols, and decentralized systems.
 
-  ---
-  - ### Original Content
-		- ```
-  # Interoperability
-		  **Term ID**: 20321
-		  **Classification**: VirtualProcess (cross-system integration capability)
-		  **Domain**: InfrastructureDomain
-		  **Layer**: MiddlewareLayer
-  ---
-
-		  ## Definition
-
-		  The capability of distinct systems, applications, or organizational entities to exchange information, interpret shared data correctly, and utilize exchanged information for coordinated operations. Interoperability encompasses technical protocol compatibility, semantic data alignment, and organizational process integration across heterogeneous environments.
-
-		  ---
-
-		  ## Semantics
-
-  ---
-
-		  ## Definition
-
-		  The capability of distinct systems, applications, or organizational entities to exchange information, interpret shared data correctly, and utilize exchanged information for coordinated operations. Interoperability encompasses technical protocol compatibility, semantic data alignment, and organizational process integration across heterogeneous environments.
-
-		  ---
-
-		  ## Semantics
-		  ### Superclasses
-		  - `VirtualProcess` — active integration and coordination process
-		  - `InfrastructureDomain` — foundational system capability
-		  - `MiddlewareLayer` — operates between application and infrastructure
-		  - `IntegrationCapability` — enables cross-system communication
-		  - `SystemProperty` — measurable quality of distributed systems
-		  ### Properties
-		  - **enablesDataExchange**: Facilitates information transfer between systems
-		  - **providesProtocolCompatibility**: Supports multiple communication standards
-		  - **performsSemanticMapping**: Translates data models across contexts
-		  - **requiresStandardCompliance**: Depends on shared specifications
-		  - **coordinatesCrossPlatform**: Orchestrates multi-system workflows
-
-  #### Related Concepts
-  - `HardwarePlatformAgnostic` — complementary platform independence principle
-		  - `StandardProtocol` — technical foundation for interoperability
-		  - `DataIntegration` — process of combining heterogeneous data
-		  - `APIGateway` — implementation pattern for system integration
-		  - `SemanticWeb` — knowledge representation enabling machine interoperability
-  ---
-
-		  ## Usage Examples
-
-  ---
-
-		  ## Usage Examples
-		  1. **Cross-Platform Asset Exchange**: OMA3 standards enabling NFT transfer between Ethereum, Polygon, and Solana ecosystems
-		  2. **Federated Identity**: SAML/OAuth2 allowing single sign-on across enterprise applications and cloud services
-		  3. **Healthcare Data Sharing**: FHIR (Fast Healthcare Interoperability Resources) enabling patient record exchange between hospitals
-		  4. **Multi-Chain Bridges**: Blockchain interoperability protocols facilitating asset transfers across incompatible networks
-		  5. **IoT Device Integration**: Matter standard enabling smart home devices from different manufacturers to communicate
-		  6. **API Ecosystems**: RESTful APIs and GraphQL enabling third-party integration with platform services
-  ---
-
-		  ## Technical Specifications
-
-  ---
-
-		  ## Technical Specifications
-		  ### Standards & Protocols
-		  - **OMA3** (Open Metaverse Alliance): Cross-platform virtual world interoperability
-		  - **W3C Standards**: Web interoperability (HTML5, CSS, JavaScript APIs)
-		  - **REST/GraphQL**: API design patterns for system integration
-		  - **FHIR**: Healthcare information exchange standard
-		  - **OAuth2/SAML**: Federated identity and authentication protocols
-		  - **IBC** (Inter-Blockchain Communication): Cross-chain protocol standard
-		  ### Implementation Requirements
-		  - Protocol translation and adaptation mechanisms
-		  - Semantic mapping and ontology alignment
-		  - API versioning and backward compatibility
-		  - Error handling across system boundaries
-		  - Transaction coordination for distributed operations
-		  ### Performance Considerations
-		  - Latency introduced by protocol translation layers
-		  - Throughput limitations of cross-system communication
-		  - Data transformation overhead for semantic mapping
-		  - Network reliability and fault tolerance requirements
-		  - Scalability of integration middleware
-  ---
-
-		  ## Relationships
-
-  ---
-
-		  ## Relationships
-		  ### Implements
-		  - `ProtocolNegotiation` — dynamic compatibility establishment
-		  - `DataTransformation` — format and semantic conversion
-		  - `InterfaceAdaptation` — system-to-system bridging
-		  ### Enables
-		  - `CrossPlatformIntegration` — multi-system coordination
-		  - `DataPortability` — information mobility across contexts
-		  - `FederatedServices` — distributed capability composition
-		  ### Requires
-		  - `StandardCompliance` — adherence to shared specifications
-		  - `SemanticAgreement` — common understanding of data meaning
-		  - `ProtocolSupport` — implementation of communication standards
-		  ### Depends On
-		  - `NetworkConnectivity` — physical communication infrastructure
-		  - `IdentityManagement` — cross-system authentication/authorization
-		  - `DataGovernance` — rules for information exchange
-  ---
-
-		  <details>
-		  <summary><strong>OntologyBlock: Formal Axiomatization</strong></summary>
-
-		  ;; OWL Functional Syntax (Interoperability Axioms)
-
-		  ;; Class Declaration
-		  (Declaration (Class :Interoperability))
-		  ;; Equivalence Axiom
-		  (EquivalentClasses
-		    :Interoperability
-		    (ObjectIntersectionOf
-		      :VirtualProcess
-		      :IntegrationCapability
-		      (ObjectSomeValuesFrom :enablesDataExchange :CrossSystemCommunication)
-		      (ObjectSomeValuesFrom :providesProtocolCompatibility :StandardProtocol)))
-		  ;; Subclass Axioms (PROCESS: 14 axioms for comprehensive coverage)
-		  (SubClassOf :Interoperability :VirtualProcess)
-		  (SubClassOf :Interoperability :InfrastructureDomain)
-		  (SubClassOf :Interoperability :MiddlewareLayer)
-		  (SubClassOf :Interoperability :IntegrationCapability)
-		  (SubClassOf :Interoperability :SystemProperty)
-		  (SubClassOf :Interoperability
-		    (ObjectSomeValuesFrom :enablesDataExchange :InformationTransfer))
-		  (SubClassOf :Interoperability
-		    (ObjectSomeValuesFrom :providesProtocolCompatibility :MultiProtocolSupport))
-		  (SubClassOf :Interoperability
-		    (ObjectSomeValuesFrom :performsSemanticMapping :DataModelTranslation))
-		  (SubClassOf :Interoperability
-		    (ObjectSomeValuesFrom :requiresStandardCompliance :SharedSpecification))
-		  (SubClassOf :Interoperability
-		    (ObjectSomeValuesFrom :coordinatesCrossPlatform :MultiSystemWorkflow))
-		  (SubClassOf :Interoperability
-		    (ObjectSomeValuesFrom :implementsProtocolNegotiation :DynamicCompatibility))
-		  (SubClassOf :Interoperability
-		    (ObjectSomeValuesFrom :performsDataTransformation :FormatConversion))
-		  (SubClassOf :Interoperability
-		    (ObjectSomeValuesFrom :providesInterfaceAdaptation :SystemBridging))
-		  (SubClassOf :Interoperability
-		    (ObjectSomeValuesFrom :enablesFederatedServices :DistributedCapability))
-  ;; Disjointness Constraints
-		  (DisjointClasses :Interoperability :SystemIsolation)
-		  (DisjointClasses :Interoperability :ProprietaryIntegration)
-
-  ;; Disjointness Constraints
-		  (DisjointClasses :Interoperability :SystemIsolation)
-		  (DisjointClasses :Interoperability :ProprietaryIntegration)
-		  ;; Property Axioms
-		  (FunctionalObjectProperty :performsSemanticMapping)
-		  (ObjectPropertyDomain :enablesDataExchange :Interoperability)
-		  (ObjectPropertyRange :providesProtocolCompatibility :CommunicationStandard)
-  ;; Property Characteristics
-		  (TransitiveObjectProperty :coordinatesCrossPlatform)
-		  (SymmetricObjectProperty :sharesIntegrationProtocol)
-
-  ;; Property Characteristics
-		  (TransitiveObjectProperty :coordinatesCrossPlatform)
-		  (SymmetricObjectProperty :sharesIntegrationProtocol)
-		  ;; Cardinality Constraints
-		  (SubClassOf :Interoperability
-		    (ObjectMinCardinality 2 :providesProtocolCompatibility :StandardProtocol))
-		  (SubClassOf :Interoperability
-		    (ObjectMinCardinality 1 :performsSemanticMapping :OntologyAlignment))
-		  ;; Complex Relationships
-		  (SubClassOf :Interoperability
-		    (ObjectIntersectionOf
-		      (ObjectSomeValuesFrom :requires :StandardCompliance)
-		      (ObjectSomeValuesFrom :enables :DataPortability)
-		      (ObjectAllValuesFrom :dependsOn :NetworkConnectivity)))
-		  ;; Data Properties
-		  (DataPropertyAssertion :integrationLatency :Interoperability "10-100ms"^^xsd:string)
-		  (DataPropertyAssertion :supportedProtocols :Interoperability "REST,GraphQL,gRPC,SOAP"^^xsd:string)
-		  (DataPropertyAssertion :standardsCompliance :Interoperability "W3C,OMA3,FHIR,IBC"^^xsd:string)
-		  ```
-  </details>
-
-		  ---
-
-  </details>
-
-		  ---
-		  ## See Also
-		  - [Hardware-Platform-Agnostic](./Hardware-Platform-Agnostic.md) — Platform independence principle
-		  - [StandardProtocol](./StandardProtocol.md) — Technical foundation for interoperability
-		  - [DataIntegration](./DataIntegration.md) — Heterogeneous data combination
-		  - [APIGateway](./APIGateway.md) — Integration implementation pattern
-		  - [SemanticMapping](./SemanticMapping.md) — Cross-context data translation
-  ```
-
-  ```
 
 
 
@@ -1872,9 +1673,9 @@ public:: true
   - General Message Passing (GMP) enables cross-chain smart contract calls.
   - Integrates with 55+ chains including [[Cosmos]], [[Avalanche]], [[Ethereum Smart Contract Platform]], [[Polkadot]].
   - Used by [[Squid Router]] for cross-chain swaps and [[Satellite]] bridge interface.
-  - **[[Stargate Finance]]**: Unified liquidity protocol built on LayerZero
+  - **[[Stargate Finance]]**: Unified liquidity protocol built on LayerZero (acquired by LayerZero Labs for $110M in 2025)
   - Delta Algorithm ensures instant guaranteed finality for cross-chain swaps.
-  - $400M+ TVL across [[Ethereum Smart Contract Platform]], [[Arbitrum]], [[Optimism]], [[Polygon]], [[BNB Chain]] (2025).
+  - ~$166M TVL (Jan 2026, down significantly from peak), facing increased competition from intent-based bridges.
   - Native asset transfers (no wrapped tokens) with single-transaction UX.
   - **[[Hop Protocol]]**: Optimistic rollup bridge specializing in [[Layer 2]] transfers
   - Automated Market Maker (AMM) model with liquidity providers earning fees.
@@ -1883,9 +1684,9 @@ public:: true
 
   ### Blockchain Interoperability Standards
   - **[[Cosmos IBC]]** (Inter-Blockchain Communication): Protocol-level cross-chain transfers
-  - Requires IBC-compatible chains with finality guarantees and light client support.
+  - Requires IBC-compatible chains with finality guarantees and light client support; IBC Eureka upgrade (2026) extends connectivity to Ethereum mainnet.
   - Powers [[Cosmos Hub]], [[Osmosis]], [[Injective]], [[dYdX]] v4, [[Celestia]] data availability.
-  - 50+ connected chains with $1.2B+ in IBC transfer volume (Jan 2025).
+  - 115+ connected chains (2026); Osmosis saw $241M daily IBC volume on peak days (May 2026).
   - **[[Polkadot]] XCM** (Cross-Consensus Message Format): Parachain communication standard
   - Enables asset transfers, remote contract calls, and governance messages across [[Polkadot]] parachains.
   - Used by [[Acala]], [[Moonbeam]], [[Astar]], [[Parallel Finance]] for cross-parachain DeFi.
@@ -1899,14 +1700,14 @@ public:: true
 
   ### Wrapped Bitcoin Solutions
   - **[[Wrapped Bitcoin]] ([[WBTC]])**: Largest BTC representation on [[Ethereum Smart Contract Platform]]
-  - $9.8B market cap (Jan 2025), minted 1:1 with BTC held by [[BitGo]] custodian.
+  - ~$7–8B market cap (mid-2026, down from $9.8B in Jan 2025), minted 1:1 with BTC held by [[BitGo]] custodian.
   - 50+ merchant signers (e.g., [[Kyber Network]], [[Ren]], [[Loopring]]) participate in governance.
   - [[ERC-20]] standard enables DeFi integration with [[Aave]], [[Compound]], [[Uniswap]], [[Curve Finance]].
   - Concerns: Centralization risk, regulatory vulnerability, custodian insolvency exposure.
   - **[[tBTC]]**: Decentralized Bitcoin bridge by [[Threshold Network]]
   - Replaces centralized custody with threshold ECDSA signatures (t-of-n multisig).
-  - $140M TVL (2025), requires 51% of randomly selected signers for redemptions.
-  - [[Ethereum Smart Contract Platform]] and [[Polygon]] deployments with [[Base]] expansion planned.
+  - ~$424M TVL (Q1 2026), surpassed $1B cumulative volume via Wormhole (Feb 2026); supply at 5.9k BTC in DeFi with 7k BTC total.
+  - Deployed on [[Ethereum Smart Contract Platform]], [[Polygon]], [[Base]], Sui, and integrations with Aave.
   - **[[renBTC]]**: Algorithmic cross-chain BTC (deprecated 2025)
   - Previously used [[RenVM]] darknodes for decentralized custody.
   - Shut down after [[Alameda Research]] collapse eliminated development funding.
@@ -1918,7 +1719,7 @@ public:: true
   ### Lightning Network Interoperability
   - **[[Lightning Network]]**: Bitcoin's Layer 2 payment channel network
   - Enables off-chain microtransactions with instant finality and near-zero fees.
-  - 16,000+ public nodes, 60,000+ channels, $200M+ capacity (Jan 2025).
+  - ~15,000+ public nodes, 50,000+ channels, 5,600+ BTC (~$350M) public capacity (early 2026); total estimated capacity including private channels exceeds 12,000 BTC.
   - Cross-chain swaps via submarine swaps (on-chain BTC ↔ Lightning BTC).
   - Integrations: [[Strike]] (USD↔BTC Lightning), [[Cash App]], [[Wallet of Satoshi]].
   - **Lightning-EVM Bridges**: Emerging protocols connecting Lightning to smart contract platforms
@@ -1937,8 +1738,8 @@ public:: true
   - Compatible with Lightning Network for scalable programmable payments.
   - **[[Stacks]]**: Bitcoin L2 with smart contracts and [[Clarity]] programming language
   - Proof-of-Transfer (PoX) consensus settles to Bitcoin for security inheritance.
-  - [[sBTC]]: Decentralized peg enabling BTC usage in Stacks DeFi (launching 2025).
-  - Powers [[Alex]] DEX, [[Arkadiko]] stablecoin, Bitcoin-native DeFi ecosystem.
+  - [[sBTC]]: Live on mainnet since Dec 2024 (deposits), full withdrawal support since Apr 2025; deposit cap removed Q1 2026; peaked at $545M TVL in Q1 2026 ($437M by quarter end).
+  - Powers [[Alex]] DEX, [[Arkadiko]] stablecoin, Bitcoin-native DeFi ecosystem; institutional integrations with Circle, BitGo, Wormhole live in 2026.
   - **[[Rootstock]] (RSK)**: EVM-compatible Bitcoin sidechain
   - Merge-mined with Bitcoin, 70% of Bitcoin hashrate secures network.
   - [[RBTC]]: Pegged 1:1 with BTC via Powpeg (hybrid custody model).
@@ -1996,10 +1797,10 @@ public:: true
   - Trustless but expensive (requires submitting block headers on-chain).
   - Best for chains with fast finality and affordable verification costs.
 
-  ### Total Value Locked & Risk (2025)
-  - $2.1B+ stolen from bridges (2021-2025), representing 50%+ of all DeFi exploits.
-  - Current bridge TVL: $25B across all protocols (down from $60B peak in 2021).
-  - Security improvements: Multi-client verification, economic security bonds, automated circuit breakers.
+  ### Total Value Locked & Risk (2026)
+  - $2.1B+ stolen from bridges (2021–2025), representing 50%+ of all DeFi exploits by value.
+  - L2 bridge value secured: $33.6B+ (June 2025–June 2026 period); intent-based bridges like Across operate near-zero TVL by design, while custodial bridges (Wormhole, Hyperlane) maintain pools.
+  - Security improvements: Multi-client verification, economic security bonds, automated circuit breakers; shift toward intent-based architectures reduces custodial attack surface.
   - Insurance protocols: [[Nexus Mutual]], [[Unslashed Finance]] offer bridge coverage (premiums 2-5% APR).
 
   ## Token Standards & Cross-Chain Interoperability

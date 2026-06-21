@@ -227,62 +227,6 @@ public:: true
 - ### Content
   - ### Primary Definition
   A **Hyperparameter** is a configuration variable set before training that controls the learning process but is not learned from data. Examples include learning rate, batch size, and number of layers. Hyperparameters are tuned through experimentation.
-  - ### Original Content
-		- ```
-  # Hyperparameter
-  #### Related Concepts
-  - **Training** (AI-0041): Hyperparameters control training
-		  - **Model Parameters** (AI-0051): Contrasting concept (learned vs configured)
-		  - **Learning Rate**: Common hyperparameter
-		  - **Batch Size** (AI-0050): Training hyperparameter
-		  - **Validation Data**: Used for hyperparameter tuning
-		  ## Formal Ontology
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-		  </details>
-		  ## Standards Alignment
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Training and model configuration
-		  ### NIST AI RMF
-		  - **Function**: MAP (Understanding model configuration)
-		  ### EU AI Act
-		  - **Article 11**: Technical documentation includes hyperparameter choices
-		  ## Related Terms
-		  - **Model Parameters** (AI-0051): Contrasting concept (learned parameters)
-		  - **Training** (AI-0041): Hyperparameters guide training
-		  - **Validation Data**: Used to tune hyperparameters
-		  - **Learning Rate**: Example hyperparameter
-  #### References
-  1. ISO/IEC 22989:2022 - Training context
-		  2. NIST AI 100-3 - Technical terminology
-		  3. EU AI Act - Article 11 (Technical documentation)
-		  ---
-		  **Authority Score**: 0.93 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST ✓ EU AI Act
-		  ```
-  - ### Hyperparameter Tuning
-		- **Grid Search:** An exhaustive search over a specified parameter grid.
-			- [GridSearchCV in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html)
-		- **Random Search:** A search over a specified parameter distribution.
-			- [RandomizedSearchCV in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html)
-  - # The Golden Key: AI-Guided Emergent Narratives for Hyper-Personalized Location-Based Events
-  - # Enabling Hyper-Personalised Experiences
-  - ### Hyperparameter Tuning
-		- **Grid Search:** An exhaustive search over a specified parameter grid.
-			- [GridSearchCV in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.GridSearchCV.html)
-		- **Random Search:** A search over a specified parameter distribution.
-			- [RandomizedSearchCV in scikit-learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.RandomizedSearchCV.html)
-  - # The Golden Key: AI-Guided Emergent Narratives for Hyper-Personalized Location-Based Events
-  - # Enabling Hyper-Personalised Experiences
-  - # The Golden Key: AI-Guided Emergent Narratives for Hyper-Personalized Location-Based Events
-  - # Enabling Hyper-Personalised Experiences
-  - source-domain:: ai
-  - status:: active
-    - public-access:: true
-  - definition:: A configuration variable set before training that controls the learning process but is not learned from data. Examples include learning rate, batch size, and number of layers.
-  - maturity:: established
-  - owl:class:: ai:Hyperparameter
-  - owl:role:: Concept
-  - belongsToDomain:: [[MachineLearningDomain]]
   ## Academic Context
   - Brief contextual overview
   - Hyperparameters are foundational to machine learning, controlling how models learn without being learned themselves from training data
@@ -292,11 +236,11 @@ public:: true
   - Formal definition established in ISO/IEC 22989:2022 for AI terminology
   - Extensively studied in optimisation theory and statistical learning frameworks
   - Research spans automated hyperparameter tuning, neural architecture search, and meta-learning
-  ## Current Landscape (2025)
+  ## Current Landscape (2026)
   - Industry adoption and implementations
   - Universal across all machine learning frameworks including TensorFlow, PyTorch, scikit-learn, and JAX
   - Automated tuning tools widely adopted: Optuna, Ray Tune, Weights & Biases Sweeps
-  - UK companies like DeepMind and Faculty AI pioneering efficient hyperparameter optimisation
+  - UK companies like DeepMind (Google subsidiary) and Faculty (acquired by Accenture in January 2026) have pioneered efficient hyperparameter optimisation
   - Technical capabilities and limitations
   - Common hyperparameters include learning rate, batch size, number of layers, dropout rate, regularisation strength
   - Manual tuning remains time-consuming and computationally expensive
@@ -318,12 +262,12 @@ public:: true
   - British contributions and implementations
   - DeepMind's research on automated hyperparameter tuning for reinforcement learning systems
   - University of Oxford's work on Bayesian optimisation for hyperparameter search
-  - UK-based Faculty AI develops enterprise AutoML platforms with sophisticated tuning
+  - Faculty (acquired by Accenture in January 2026) developed enterprise AutoML platforms with sophisticated tuning
   - North England innovation hubs
   - University of Manchester's machine learning research group explores efficient tuning methods
   - Leeds Institute for Data Analytics investigates hyperparameter optimisation for healthcare AI
   - Regional case studies
-  - Manchester-based Peak AI applies automated hyperparameter tuning to retail forecasting models
+  - Manchester-based Peak (acquired by UiPath in March 2025) applies automated hyperparameter tuning to retail forecasting and inventory optimisation
   - Newcastle University's digital health projects optimise medical imaging models via principled hyperparameter search
   ## Future Directions
   - Emerging trends and developments

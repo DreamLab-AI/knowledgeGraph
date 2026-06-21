@@ -77,6 +77,10 @@
   ],
   "backlinks": [
     {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

@@ -1,7 +1,5 @@
 - ### Definition
-  - [Generated from Gartner emerging tech analysis]
-
-bridges-to:: [[DID Nostr Identity]]
+  - A dynamic virtual replica that mirrors an individual customer's behaviours, preferences, interactions, and decision-making patterns within a spatially-aware digital environment, enabling real-time simulation and predictive analysis of customer journeys. Integrates IoT telemetry, AI-driven behavioural modelling, and immersive 3D visualisations to create a continuously updated model reflecting how customers engage with products, services, and physical or digital spaces.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalTwinoftheCustomer

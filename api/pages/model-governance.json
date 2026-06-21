@@ -106,5 +106,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-risk-register",
+      "label": "AI Risk Register"
+    }
+  ]
 }

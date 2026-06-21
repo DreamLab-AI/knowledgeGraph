@@ -140,6 +140,10 @@
   ],
   "backlinks": [
     {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
     },

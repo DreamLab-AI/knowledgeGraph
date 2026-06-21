@@ -219,6 +219,10 @@
     {
       "slug": "ai-risks",
       "label": "AI Risks"
+    },
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
     }
   ]
 }

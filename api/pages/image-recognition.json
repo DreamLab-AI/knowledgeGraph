@@ -97,5 +97,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-applications",
+      "label": "AI Applications"
+    }
+  ]
 }

@@ -1,8 +1,6 @@
 - ### Definition
   - The interconnected network of platforms, protocols, services, and participants that collectively enable the creation, storage, exchange, and utilization of blockchain-based digital assets including cryptocurrencies, tokens, NFTs, and tokenized real-world assets across decentralized and centralized infrastructure.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalAssetEcosystem
   - owl-role:: Concept
@@ -26,12 +24,12 @@ bridges-to:: [[Blockchain]]
 		- Decentralized exchanges (DEX): Uniswap, Curve, dYdX
 		- Custody solutions: institutional and self-custody
 		- Analytics and data providers
-  - **2024 Market Developments**:
-		- Bitcoin ETF approvals driving institutional adoption
-		- Real-world asset (RWA) tokenization growth
-		- Regulatory frameworks emerging globally
-		- Cross-chain interoperability improvements
-  - **Market Size (2024)**: Total crypto market cap exceeding $2 trillion
+  - **Market Developments (2025–2026)**:
+		- Bitcoin spot ETF AUM surpassed $120 billion by end-2025, with BlackRock IBIT approaching $100 billion
+		- Real-world asset (RWA) tokenization growth accelerating across institutional platforms
+		- EU MiCA fully applicable from December 2024; transitional periods concluding through July 2026
+		- Cross-chain interoperability improvements; Solana DEXs capturing 30%+ of DEX spot volume in Q1 2026
+  - **Market Size**: Total crypto market cap reached an all-time high of $4.27 trillion in October 2025 before correcting to approximately $2.2 trillion by mid-2026
   - ## Applications
   - Cryptocurrency trading and investment
   - NFT marketplaces and collectibles

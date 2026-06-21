@@ -160,6 +160,14 @@
       "label": "AI Video"
     },
     {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

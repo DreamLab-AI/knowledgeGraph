@@ -153,17 +153,6 @@
   // Parameters: staticFriction, dynamicFriction, restitution
   ```
 
-  ## Definition
-
-  Data structure and parameters defining the physical interaction properties of surfaces and objects within a physics simulation, governing friction, restitution, density, drag, and collision response behavior critical for realistic metaverse interactions.
-
-  #### Related Concepts
-  - [[Collision Detection]]
-  - [[Rigid Body Dynamics]]
-  - [[Physically-Based Rendering]]
-  - [[Physics Simulation]]
-  - [[Material System]]
-
   ## Applications
 
   ### Metaverse Interactions
@@ -239,9 +228,6 @@
   - Hecker, C. (1997). "Physics, Part 3: Collision Response"
   - Erin Catto (2005-2023). *Box2D Documentation*
   - Millington, I. & Funge, J. (2009). *Artificial Intelligence for Games*, 2nd ed.
-
-  ### Relationships
-  - is-subclass-of:: [[Metaverse]]
 
 - ### Provenance
   - sources::

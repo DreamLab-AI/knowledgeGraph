@@ -207,7 +207,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - A Loss Function is a mathematical function that quantifies the discrepancy between a model's predicted outputs and true target values, producing a scalar error measure that serves as the objective for optimisation algorithms during training.
 
 - ### Semantic Classification
   - owl-class:: artificial-intelligence:LossFunction
@@ -218,57 +218,7 @@ public:: true
   - <!-- No relationships defined -->
 
 - ### Content
-  - ### Primary Definition
-  A **Loss Function** is a mathematical function that quantifies the difference between predicted outputs and true values, providing a scalar measure of model error. Training algorithms minimise the loss function to improve model performance.
-  - ### Original Content
-		- ```
-  # Loss Function
-
-  #### Related Concepts
-  - **Training** (AI-0041): Minimises loss function
-		  - **Gradient Descent** (AI-0044): Optimises loss function
-		  - **Backpropagation** (AI-0043): Computes loss gradients
-		  - **Overfitting** (AI-0054): Low training loss but poor generalisation
-
-		  ## Formal Ontology
-
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Training and evaluation
-
-		  ### NIST AI RMF
-		  - **Function**: MEASURE (Model performance evaluation)
-
-		  ## Related Terms
-		  - **Training** (AI-0041): Minimises loss function
-		  - **Gradient Descent** (AI-0044): Optimisation using loss
-		  - **Overfitting** (AI-0054): Related to loss behaviour
-		  - **Accuracy** (AI-0220): Performance metric beyond loss
-
-  #### References
-  1. ISO/IEC 22989:2022 - Training concepts
-		  2. NIST AI 100-3 - Technical terminology
-
-		  ---
-
-		  **Authority Score**: 0.94 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-
-		  ```
-
-		- ### My flossverse stuff from 2022
-			- {{tweet https://twitter.com/flossverse/status/1629601804521537537}}
-
-		- ### My flossverse stuff from 2022
-			- {{tweet https://twitter.com/flossverse/status/1629601804521537537}}
-
-		- ### My flossverse stuff from 2022
-			- {{tweet https://twitter.com/flossverse/status/1629601804521537537}}
+  - A **Loss Function** is a mathematical function that quantifies the difference between predicted outputs and true values, providing a scalar measure of model error. Training algorithms minimise the loss function to improve model performance.
 
   - ## Learning and Loss Functions
   - **Concept:** So how do these AI systems learn to perform these tasks? The key lies in the concept of the "loss function". This function serves as a judge, scoring the AI's performance on its task.
@@ -277,12 +227,7 @@ public:: true
   - **Backpropagation:** This score is then used in a process called "backpropagation". Here, the system works backward through all the layers, adjusting the values within the matrices. Imagine each number in the matrix as a tiny knob – backpropagation asks "Do I need to tweak this knob up or down to make the overall score a little better?" This adjustment is based on the chain rule of calculus.
   - **Iteration:** This entire process of scoring and adjusting (backpropagation) is repeated in a loop called "gradient descent". It's like a guided search, slowly tweaking the AI's parameters to find a configuration that minimizes the loss function.
 
-  - ## Learning and Loss Functions
-  - **Concept:** So how do these AI systems learn to perform these tasks? The key lies in the concept of the "loss function". This function serves as a judge, scoring the AI's performance on its task.
-  - **Initial Stage:** At the beginning of the training process, the numbers within the AI's matrices are typically assigned randomly. Think of it like a scrambled puzzle, where the pieces are initially in the wrong places. This leads to what we call "garbage in, garbage out" – the AI's initial predictions are often wildly inaccurate.
-  - **Scoring:** The loss function comes into play by comparing the AI's output with the correct answer. It then calculates a score, essentially telling the AI how far off it is from the desired outcome.
-  - **Backpropagation:** This score is then used in a process called "backpropagation". Here, the system works backward through all the layers, adjusting the values within the matrices. Imagine each number in the matrix as a tiny knob – backpropagation asks "Do I need to tweak this knob up or down to make the overall score a little better?" This adjustment is based on the chain rule of calculus.
-  - **Iteration:** This entire process of scoring and adjusting (backpropagation) is repeated in a loop called "gradient descent". It's like a guided search, slowly tweaking the AI's parameters to find a configuration that minimizes the loss function.
+
   ## Academic Context
 
   - Loss functions are fundamental mathematical constructs in machine learning and AI that quantify the discrepancy between predicted outputs and true values, producing a scalar error measure.

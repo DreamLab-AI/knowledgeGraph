@@ -139,12 +139,20 @@
       "label": "Accessibility Audit Tool"
     },
     {
+      "slug": "accessibility-tree",
+      "label": "Accessibility Tree"
+    },
+    {
       "slug": "accessibility",
       "label": "Accessibility"
     },
     {
       "slug": "accessible-design",
       "label": "Accessible Design"
+    },
+    {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
     },
     {
       "slug": "etsi-domain-human-interface",

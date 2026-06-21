@@ -134,6 +134,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
       "slug": "collision-detection",
       "label": "Collision Detection"
     },

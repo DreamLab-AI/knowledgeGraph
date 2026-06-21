@@ -82,6 +82,10 @@
   ],
   "backlinks": [
     {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
       "slug": "model-ops",
       "label": "ModelOps"
     }

@@ -14,44 +14,6 @@
   - enables:: [[Safe Operation Certification]], [[Liability Mitigation]], [[Human-Robot Safety]]
 
 - ### Content
-  - ### Original Content
-		- ```
-  # RB-0102: Functional Safety
-
-  #### Key Characteristics
-  1. Core property of robotics systems
-		  2. Standardised definition across implementations
-		  3. Measurable and verifiable attributes
-		  4. Essential for safety and performance
-		  5. Industry-wide recognition and adoption
-
-		  ## Formal Ontology (OWL Functional Syntax)
-
-
-		  ## Relationships
-
-		  ### Parent Classes
-		  - `Robot`: Primary classification
-
-  #### Future Directions
-  ### Emerging Trends
-		  1. AI and machine learning integration
-		  2. Advanced sensing capabilities
-		  3. Improved safety systems
-		  4. Enhanced human-robot collaboration
-		  5. Standardisation advancements
-
-		  ---
-
-		  **Version History**
-		  - 1.0.0 (2025-10-28): Initial foundational definition
-
-		  **Contributors**: Robotics Ontology Working Group
-		  **License**: CC BY 4.0
-		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0102`
-
-		  ```
-
 
   ## Academic Context
 
@@ -66,9 +28,9 @@
   - Industry adoption of functional safety standards is widespread across automotive, manufacturing, process industries, and increasingly in AI-enabled systems.
   - Notable organisations include MISRA (UK automotive), BSI (British Standards Institution), and international bodies like ISO and IEC.
   - The UK automotive industry, centred in North England hubs such as Manchester and Sheffield, actively contributes to ISO 26262 and emerging AI safety standards.
-  - Functional safety standards now address challenges posed by AI, with ISO/PAS 8800 emerging as a key specification for AI in road vehicles, reflecting the shift from deterministic to risk-based safety assurance.
+  - Functional safety standards now address challenges posed by AI, with ISO/PAS 8800:2024 (published 2024, actively adopted from 2025) serving as the key specification for AI in road vehicles, reflecting the shift from deterministic to risk-based safety assurance.
   - Technical capabilities include safety instrumented systems (SIS), alarm management, and software quality metrics; limitations arise in handling non-deterministic AI systems within traditional frameworks.
-  - The UK Product Regulation and Metrology Act 2025 establishes a legal framework harmonising product safety standards post-Brexit, including requirements for UKCA marking, impacting safety compliance across sectors.
+  - The UK Product Regulation and Metrology Act 2025 establishes a legal framework harmonising product safety standards post-Brexit; as of 2026, CE marking continues to be accepted alongside UKCA marking for the Great Britain market, with UKCA marking now required directly on products rather than packaging from January 2026.
 
   ## Research & Literature
 
@@ -89,7 +51,7 @@
   - BSI nominates UK experts to ISO working groups, ensuring British perspectives influence global standards.
   - North England hosts innovation hubs in Manchester, Leeds, Sheffield, and Newcastle, where automotive and manufacturing sectors integrate functional safety practices.
   - Regional case studies include automotive software development centres in Manchester and safety-critical manufacturing plants in Sheffield, both adopting ISO 26262 and IEC 61508 standards.
-  - The UK government’s Product Regulation and Metrology Act 2025 underpins safety compliance, with increased enforcement on product safety and UKCA marking replacing CE marking post-Brexit.
+  - The UK government’s Product Regulation and Metrology Act 2025 underpins safety compliance, with increased enforcement on product safety; as of 2026, both UKCA and CE markings are accepted in Great Britain, with UKCA required on-product rather than packaging from January 2026.
   - Health and Safety Executive (HSE) guidance supports functional safety in process industries, emphasising competence management and risk assessment.
 
   ## Future Directions
@@ -115,7 +77,7 @@
   4. Perforce & Automotive IQ. (2025). *State of Automotive Software Development Report*. Available at Perforce resources.  
   5. UK Product Regulation and Metrology Act 2025, c. 20. Enacted July 21, 2025.  
   6. Health and Safety Executive (HSE). Functional Safety Guidance and Standards.  
-  7. ISO/PAS 8800:2025. Functional Safety for AI in Road Vehicles.  
+  7. ISO/PAS 8800:2024. Safety of AI in Road Vehicles. Published 2024; actively adopted in industry from 2025.  
   8. British Standards Institution (BSI). UK participation in ISO/TC22/SC32/WG8.
 
 
@@ -125,73 +87,6 @@
   - **Review Status**: Comprehensive editorial review
   - **Verification**: Academic sources verified
   - **Regional Context**: UK/North England where applicable
-
-  ### Relationships
-  - is-subclass-of:: [[Robotics]]
-
-  #### Standards and References
-  ### Primary Standards
-		  1. **ISO 8373:2021**: Primary reference standard
-		  2. **ISO 8373:2021**: Robotics vocabulary
-		  3. **Related IEEE standards**: Implementation guidelines
-
-		  ## Validation Criteria
-
-		  ### Conformance Requirements
-		  1. ✓ Meets ISO 8373:2021 requirements
-		  2. ✓ Documented implementation
-		  3. ✓ Verifiable performance metrics
-		  4. ✓ Safety compliance demonstrated
-		  5. ✓ Industry best practices followed
-
-		  ## Implementation Notes
-
-		  ### Design Considerations
-		  - System integration requirements
-		  - Performance specifications
-		  - Safety considerations
-		  - Maintenance procedures
-
-		  ### Common Patterns
-		  ```yaml
-		  implementation:
-		    standards_compliance: true
-		    verification_method: standardised_testing
-		    documentation_level: comprehensive
-		  ```
-
-  #### Related Concepts
-  - Related robotics concepts and systems
-		  - Cross-references to other ontology terms
-		  - Integration with metaverse ontology
-
-		  ## Use Cases
-
-		  ### Industrial Applications
-		  1. Manufacturing automation
-		  2. Quality control systems
-		  3. Process optimization
-
-		  ### Service Applications
-		  1. Healthcare robotics
-		  2. Logistics and warehousing
-		  3. Consumer robotics
-
-		  ### Research Applications
-		  1. Academic research platforms
-		  2. Algorithm development
-		  3. System integration studies
-
-  #### References
-  ### Metaverse Ontology Integration
-		  - Virtual representation systems
-		  - Digital twin integration
-		  - Simulation environments
-
-		  ### Domain Ontologies
-		  - Manufacturing systems
-		  - Control systems
-		  - Safety systems
 
 - ### Provenance
   - sources::

@@ -362,8 +362,6 @@ public:: true
 - ### Definition
   - Integrated system for organising, preserving, managing, and providing long-term access to digital cultural artifacts, collections, and heritage materials in metaverse environments.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalCurationPlatform
   - owl-role:: Object

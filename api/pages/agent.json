@@ -195,6 +195,10 @@
   ],
   "backlinks": [
     {
+      "slug": "adaptive-behaviour",
+      "label": "Adaptive Behaviour"
+    },
+    {
       "slug": "autonomy-level",
       "label": "Autonomy Level"
     },

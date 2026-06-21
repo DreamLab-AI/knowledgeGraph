@@ -13,14 +13,39 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:point-anomaly-detection",
+        "label": "Point Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:contextual-anomaly-detection",
+        "label": "Contextual Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:collective-anomaly-detection",
+        "label": "Collective Anomaly Detection"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:statistical-modelling",
         "label": "Statistical Modelling"
+      },
+      {
+        "id": "urn:ngm:class:threshold-calibration",
+        "label": "Threshold Calibration"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
       }
     ],
     "enables": [
@@ -75,7 +100,7 @@
     "uses": [
       {
         "id": "urn:ngm:class:machine-learning-discipline",
-        "label": "Machine Learning Discipline"
+        "label": "Machine Learning"
       },
       {
         "id": "urn:ngm:class:pattern-recognition",
@@ -88,6 +113,14 @@
       {
         "id": "urn:ngm:class:autoencoder",
         "label": "Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-networks",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "supports": [],
@@ -105,14 +138,195 @@
       {
         "id": "urn:ngm:class:model-monitoring",
         "label": "Model Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:outlier-detection",
+        "label": "Outlier Detection"
+      },
+      {
+        "id": "urn:ngm:class:change-point-detection",
+        "label": "Change Point Detection"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "statistical-modelling",
+      "label": "Statistical Modelling"
+    },
+    {
+      "slug": "pattern-recognition",
+      "label": "Pattern Recognition"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "autoencoder",
+      "label": "Autoencoder"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "data-preprocessing",
+      "label": "Data Preprocessing"
+    },
+    {
+      "slug": "fraud-detection",
+      "label": "Fraud Detection"
+    },
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "intrusion-detection-system",
+      "label": "Intrusion Detection System"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "model-monitoring",
+      "label": "Model Monitoring"
+    },
+    {
+      "slug": "graph-neural-networks",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "lstm",
+      "label": "LSTM"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "data-mining",
+      "label": "Data Mining"
+    },
+    {
+      "slug": "network-security",
+      "label": "Network Security"
+    },
+    {
+      "slug": "isolation-forest",
+      "label": "Isolation Forest"
+    },
+    {
+      "slug": "local-outlier-factor",
+      "label": "Local Outlier Factor"
+    },
+    {
+      "slug": "gaussian-mixture-model",
+      "label": "Gaussian Mixture Model"
+    },
+    {
+      "slug": "dbscan",
+      "label": "DBSCAN"
+    },
+    {
+      "slug": "normalising-flows",
+      "label": "Normalising Flows"
+    },
+    {
+      "slug": "one-class-svm",
+      "label": "One-Class SVM"
+    },
+    {
+      "slug": "change-point-detection",
+      "label": "Change Point Detection"
+    },
+    {
+      "slug": "outlier-detection",
+      "label": "Outlier Detection"
+    },
+    {
+      "slug": "precision-recall-curve",
+      "label": "Precision-Recall Curve"
+    },
+    {
+      "slug": "shap-values",
+      "label": "SHAP Values"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "iot-sensor-data",
+      "label": "IoT Sensor Data"
+    },
+    {
+      "slug": "threshold-calibration",
+      "label": "Threshold Calibration"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "time-series",
+      "label": "Time Series"
+    },
+    {
+      "slug": "point-anomaly-detection",
+      "label": "Point Anomaly Detection"
+    },
+    {
+      "slug": "contextual-anomaly-detection",
+      "label": "Contextual Anomaly Detection"
+    },
+    {
+      "slug": "collective-anomaly-detection",
+      "label": "Collective Anomaly Detection"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "activity-data",
+      "label": "Activity Data"
+    },
     {
       "slug": "agent-event-stream",
       "label": "Agent Event Stream"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "arc-face",
+      "label": "ArcFace"
     },
     {
       "slug": "compliance-monitoring",

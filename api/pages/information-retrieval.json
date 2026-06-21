@@ -141,6 +141,14 @@
       "label": "AI Search"
     },
     {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
       "slug": "context-engineering",
       "label": "Context Engineering"
     },

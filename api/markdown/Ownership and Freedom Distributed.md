@@ -129,20 +129,6 @@ public:: true
 
 - ### Content
   - principle of distributing control and governance of assets or data rather than centralising it in a single authority.
-  - ### Original Content
-		- ```
-  # Ownership & Freedom (distributed)
-
-		  ## Core Properties
-
-		  ## Classification
-
-		  ## Ontological Relationships
-
-		  ## Terminology
-
-  #### References
-  additional-sources:: Metaverse 101 Glossary · DAO Research Collective
 
 - ### Provenance
   - sources:: [[Metaverse 101]]

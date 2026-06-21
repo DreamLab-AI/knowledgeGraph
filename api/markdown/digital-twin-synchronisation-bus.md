@@ -1,8 +1,6 @@
 - ### Definition
   - Middleware infrastructure maintaining real-time state coherence and bidirectional synchronisation among distributed digital twin instances through event streaming and conflict resolution.
 
-bridges-to:: [[Autonomous Robot]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalTwinSynchronisationBus
   - owl-role:: Object

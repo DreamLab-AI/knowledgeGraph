@@ -102,5 +102,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    }
+  ]
 }

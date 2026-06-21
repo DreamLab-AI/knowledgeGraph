@@ -160,8 +160,6 @@ public:: true
 - ### Definition
   - Digital Dualism is a concept within the mv domain.
 
-bridges-to:: [[Telecollaboration]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalDualism
   - owl-role:: Concept
@@ -260,10 +258,6 @@ bridges-to:: [[Telecollaboration]]
   - Materiality takes multiple forms
   - Authenticity not determined by medium
 
-  ## Definition
-
-  Conceptual framework that posits a fundamental separation between digital/virtual and physical/offline experiences, treating them as distinct, hierarchical domains rather than recognizing their increasing integration and mutual constitution in contemporary life.
-
   #### Related Concepts
   - [[Augmented Reality]]
   - [[Blended Reality]]
@@ -327,9 +321,6 @@ bridges-to:: [[Telecollaboration]]
   - Jurgenson, N. (2012). "When Atoms Meet Bits: Social Media, the Mobile Web and Augmented Revolution"
   - Boellstorff, T. (2008). *Coming of Age in Second Life*
   - Ito, M. et al. (2009). *Hanging Out, Messing Around, and Geeking Out*
-
-  ### Relationships
-  - is-subclass-of:: [[Metaverse]]
 
 - ### Provenance
   - sources::

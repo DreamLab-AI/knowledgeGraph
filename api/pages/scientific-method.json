@@ -95,6 +95,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     },

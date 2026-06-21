@@ -384,8 +384,6 @@ public:: true
 - ### Definition
   - A framework defining the rights, responsibilities, and civic participation mechanisms for individuals within virtual societies, metaverse communities, and digital platforms, establishing the basis for membership and belonging in virtual spaces.
 
-bridges-to:: [[Telecollaboration]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalCitizenship
   - owl-role:: Object
@@ -399,6 +397,7 @@ bridges-to:: [[Telecollaboration]]
   - requires:: [[Identity Management]], [[Reputation System]], [[Governance Token]]
   - enables:: [[Civic Participation]], [[Community Voting]], [[Access to Services]], [[Social Interaction]]
   - depends-on:: [[Community Governance Model]], [[Legal Framework]], [[Privacy Protection]]
+  - bridges-to:: [[Telecollaboration]]
 
 - ### Content
   Digital Citizenship — content pending enrichment.

@@ -1,8 +1,6 @@
 - ### Definition
   - Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalPayments
   - owl-role:: Concept
@@ -26,10 +24,10 @@ bridges-to:: [[Blockchain]]
 		- In-game currency exchanges
 		- NFT marketplace payments
 		- Subscription-based services
-  - **Key Trends (2024)**:
-		- AI-powered fraud detection
-		- Personalized payment recommendations
-		- Stablecoin adoption for stability
+  - **Key Trends (2025–2026)**:
+		- AI-powered fraud detection and agentic commerce payments
+		- Embedded payments within platform workflows
+		- Stablecoin and CBDC adoption for stability and compliance
 		- Cross-chain payment interoperability
   - **Challenges**: Cryptocurrency volatility, regulatory compliance, user adoption, security concerns
   - ## Applications

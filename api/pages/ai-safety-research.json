@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.88,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -29,6 +29,10 @@
       {
         "id": "urn:ngm:class:robustness",
         "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -47,6 +51,10 @@
       {
         "id": "urn:ngm:class:corrigibility",
         "label": "Corrigibility"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ],
     "dependsOn": [],
@@ -65,12 +73,20 @@
       {
         "id": "urn:ngm:class:cognitive-science",
         "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:mechanistic-interpretability",
+        "label": "Mechanistic Interpretability"
       },
       {
         "id": "urn:ngm:class:red-teaming",
@@ -87,6 +103,18 @@
       {
         "id": "urn:ngm:class:uncertainty-quantification",
         "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-machine-learning",
+        "label": "Adversarial Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:value-learning",
+        "label": "Value Learning"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
       }
     ],
     "supports": [
@@ -101,6 +129,14 @@
       {
         "id": "urn:ngm:class:model-evaluation",
         "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ],
     "standardizedBy": [],
@@ -123,20 +159,241 @@
         "label": "Scalable Oversight"
       },
       {
-        "id": "urn:ngm:class:mechanistic-interpretability",
-        "label": "Mechanistic Interpretability"
+        "id": "urn:ngm:class:reward-hacking",
+        "label": "Reward Hacking"
+      },
+      {
+        "id": "urn:ngm:class:specification-gaming",
+        "label": "Specification Gaming"
+      },
+      {
+        "id": "urn:ngm:class:prompt-injection",
+        "label": "Prompt Injection"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "ai-systems",
+      "label": "AI Systems"
+    },
+    {
+      "slug": "robustness",
+      "label": "Robustness"
+    },
+    {
+      "slug": "scalable-oversight",
+      "label": "Scalable Oversight"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "mechanistic-interpretability",
+      "label": "Mechanistic Interpretability"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "interpretability",
+      "label": "Interpretability"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-risk",
+      "label": "AI Risk"
+    },
+    {
+      "slug": "existential-risk",
+      "label": "Existential Risk"
+    },
+    {
+      "slug": "fairness-in-machine-learning",
+      "label": "Fairness in Machine Learning"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "AI Policy"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "ai-capabilities-research",
+      "label": "AI Capabilities Research"
+    },
+    {
+      "slug": "ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "adversarial-machine-learning",
+      "label": "Adversarial Machine Learning"
+    },
+    {
+      "slug": "value-learning",
+      "label": "Value Learning"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
+      "slug": "iso-iec-42001",
+      "label": "ISO/IEC 42001"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "ai-risk-management",
+      "label": "AI Risk Management"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "adversarial-examples",
+      "label": "Adversarial Examples"
+    },
+    {
+      "slug": "reward-hacking",
+      "label": "Reward Hacking"
+    },
+    {
+      "slug": "specification-gaming",
+      "label": "Specification Gaming"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
+      "slug": "ai-ecosystem",
+      "label": "AI Ecosystem"
+    },
     {
       "slug": "ai-risks",
       "label": "AI Risks"
     },
     {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    },
+    {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    },
+    {
+      "slug": "alan-turing-institute",
+      "label": "Alan Turing Institute"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "anthropic",
+      "label": "anthropic"
+    },
+    {
       "slug": "artificial-general-intelligence",
       "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
     },
     {
       "slug": "history-and-path-to-agi",

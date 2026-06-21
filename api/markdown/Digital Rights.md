@@ -311,8 +311,6 @@ public:: true
 - ### Definition
   - The human rights and freedoms applicable to digital contexts including privacy, data protection, freedom of expression, access to information, and digital ownership within virtual environments, metaverse platforms, and online spaces, increasingly codified through international frameworks and national legislation.
 
-bridges-to:: [[Blockchain]]
-
 - ### Semantic Classification
   - owl-class:: spatial-computing:DigitalRights
   - owl-role:: Concept
@@ -322,6 +320,7 @@ bridges-to:: [[Blockchain]]
   - is-subclass-of:: [[Human Rights]]
   - requires:: [[Legal Framework]], [[Technical Safeguards]], [[Enforcement Mechanisms]]
   - enables:: [[Privacy Protection]], [[Data Sovereignty]], [[Digital Freedom]]
+  - bridges-to:: [[Blockchain]]
 
 - ### Content
 

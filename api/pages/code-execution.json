@@ -41,6 +41,18 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
+    },
+    {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
     }

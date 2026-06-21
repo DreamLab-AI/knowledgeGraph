@@ -68,6 +68,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "3-d-generation",
+      "label": "3D Generation"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

@@ -1,0 +1,2 @@
+- ### Definition
+  - A Proof System is a cryptographic or formal framework that allows a prover to demonstrate the truth of a statement to a verifier with mathematical soundness guarantees, often without disclosing the underlying private information.

@@ -1,0 +1,2 @@
+- ### Definition
+  - The phenomenon where the statistical properties of a model's prediction target shift over time, degrading performance and requiring drift detection and adaptive retraining strategies.

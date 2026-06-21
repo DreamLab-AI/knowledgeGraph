@@ -51,6 +51,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "ai-evaluation",
+      "label": "AI Evaluation"
+    },
+    {
       "slug": "california-ai-bill",
       "label": "California AI bill"
     },

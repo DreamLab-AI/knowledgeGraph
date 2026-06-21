@@ -211,7 +211,6 @@
 		- ### Strengths and Weaknesses (Can Mamba Learn How to Learn?)
   - ## Mixture of Experts (MoE) Architectures
 		- ## Climate Science?
-			  ```
 			- # Mamba2: A Deep Dive into Enhanced Efficiency and Scalability
 				- [Mamba2](https://arxiv.org/abs/2405.21060) represents a significant advancement in the realm of structured state space models (SSMs), cleverly marrying theoretical elegance with practical efficiency. Building upon the foundation laid by its predecessor, Mamba, this architecture tackles the inherent computational challenges of sequence modelling, particularly for long sequences, by introducing a series of innovations that leverage the power of modern hardware. This section delves into the technical intricacies of Mamba2, guided by the insights from the paper "Transformers are SSMs: Generalised Models and Efficient Algorithms Through Structured State Space Duality".
 				- ## Bridging the Gap: SSMs, Attention, and Structured Matrices
@@ -286,7 +285,10 @@
 			   G --> H[Ontology Alignment]
 			   G --> I[Knowledge Graph Completion]
 			   G --> J[Semantic Similarity]
+			   ```
   - ## Implementations
+  - ## 2026 Ecosystem Update
+  - As of mid-2026, SSMs have moved from research curiosity to practical production option. Mamba-3 was released in March 2026 by researchers from CMU, Princeton, Cartesia AI, and Together AI, designed specifically for real-world deployment efficiency rather than training throughput. The Jamba family (AI21 Labs) of hybrid SSM-Transformer models also matured significantly. For workloads with long context windows (64K–128K tokens), SSMs can achieve superior GPU economics compared to equivalent-scale transformers. Non-transformer architectures have reached parity with Transformers on key language benchmarks, and in some domains have surpassed them. The note that Mamba papers were arriving "every 1-2 days" accurately described early 2024; by 2026 the research pace has settled but deepened into applications including PDE solving (Mamba neural operators) and production deployment on GPU clouds.
 
 - ### Provenance
   - sources::

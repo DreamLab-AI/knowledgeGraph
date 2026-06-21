@@ -155,5 +155,10 @@
       "label": "XR Accessibility Standards"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    }
+  ]
 }

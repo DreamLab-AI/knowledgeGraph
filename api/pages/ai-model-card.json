@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.91,
+  "qualityScore": 0.93,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -99,8 +99,20 @@
       "label": "AI Ethics Guidelines"
     },
     {
+      "slug": "ai-impact-assessment",
+      "label": "AI Impact Assessment"
+    },
+    {
       "slug": "ai-model",
       "label": "AI Model"
+    },
+    {
+      "slug": "ai-safety-evaluation",
+      "label": "AI Safety Evaluation"
+    },
+    {
+      "slug": "algorithmic-auditing",
+      "label": "Algorithmic Auditing"
     },
     {
       "slug": "bias-analysis",
@@ -119,6 +131,10 @@
       "label": "Compliance Documentation"
     },
     {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
       "slug": "demographic-performance-analysis",
       "label": "Demographic Performance Analysis"
     },
@@ -127,8 +143,24 @@
       "label": "Ethical Considerations"
     },
     {
+      "slug": "explainability",
+      "label": "Explainability"
+    },
+    {
+      "slug": "foundation-model-transparency-index",
+      "label": "Foundation Model Transparency Index"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
       "slug": "google-model-cards-for-model-reporting",
       "label": "Google Model Cards for Model Reporting"
+    },
+    {
+      "slug": "hugging-face-model-hub",
+      "label": "Hugging Face Model Hub"
     },
     {
       "slug": "industry-best-practices",
@@ -141,6 +173,10 @@
     {
       "slug": "iso-iec-42001",
       "label": "ISO/IEC 42001"
+    },
+    {
+      "slug": "iso-iec-42005",
+      "label": "ISO/IEC 42005"
     },
     {
       "slug": "limitations-section",
@@ -163,20 +199,28 @@
       "label": "Model Testing Protocols"
     },
     {
+      "slug": "nist-ai-risk-management-framework",
+      "label": "NIST AI Risk Management Framework"
+    },
+    {
       "slug": "oecd",
       "label": "OECD"
+    },
+    {
+      "slug": "open-source-ai",
+      "label": "Open Source AI"
     },
     {
       "slug": "procurement-due-diligence",
       "label": "Procurement Due Diligence"
     },
     {
-      "slug": "regulatory-requirements",
-      "label": "Regulatory Requirements"
+      "slug": "red-teaming",
+      "label": "Red Teaming"
     },
     {
-      "slug": "responsible-ai-deployment",
-      "label": "Responsible AI Deployment"
+      "slug": "regulatory-requirements",
+      "label": "Regulatory Requirements"
     },
     {
       "slug": "responsible-ai-deployment",
@@ -203,12 +247,20 @@
       "label": "Training Data Information"
     },
     {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
       "slug": "use-case",
       "label": "Use Case"
     },
     {
       "slug": "use-case-descriptions",
       "label": "Use Case Descriptions"
+    },
+    {
+      "slug": "watermarking",
+      "label": "Watermarking"
     },
     {
       "slug": "ai-risk-management",
@@ -236,7 +288,7 @@
     },
     {
       "slug": "eu-ai-act",
-      "label": "EU AI Act"
+      "label": "EU AI Act Regulatory Instrument"
     },
     {
       "slug": "fairness-metrics",
@@ -276,6 +328,22 @@
     }
   ],
   "backlinks": [
+    {
+      "slug": "ai-documentation-standards",
+      "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "ai-model-development",
+      "label": "AI Model Development"
+    },
+    {
+      "slug": "ai-model",
+      "label": "AI Model"
+    },
+    {
+      "slug": "ai-policy",
+      "label": "ai policy"
+    },
     {
       "slug": "ms-phi-models",
       "label": "MS Phi models"

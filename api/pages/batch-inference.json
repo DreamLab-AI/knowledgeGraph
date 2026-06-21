@@ -103,5 +103,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ai-inference",
+      "label": "AI Inference"
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - A **Safety-Rated Monitored Stop** (SRMS) is a robot stopping function in which the robot halts motion while the control system continuously monitors joint positions to verify the robot remains stationary, without removing power to the actuators. Unlike an emergency stop, SRMS allows rapid resumption of operation when the hazardous condition clears, and is a core collaborative application mode defined in ISO 10218-1:2025 and ISO 10218-2:2025 (which superseded the earlier ISO/TS 15066:2016).
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0091safetyratedmonitoredstop
@@ -7,112 +7,15 @@
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - relatedTo:: [[rb 0090 emergency stop]], [[rb 0092 protective stop]], [[rb 0093 speed limitation]]
+  - requires:: [[rb 0089 risk assessment]], [[rb 0054 position control]]
+  - standardizedBy:: ISO 10218-1:2025, ISO 10218-2:2025
+  - supports:: [[rb 0096 safeguarding]]
 
 - ### Content
-  - ### Primary Definition
-  **Safety-Rated Monitored Stop** - Safety-Rated Monitored Stop in robotics systems
-  - ### Original Content
-		- ```
-  # RB-0091: Safety-Rated Monitored Stop
+  - **Safety-Rated Monitored Stop** (RB-0091) is one of the four collaborative application modes now consolidated in ISO 10218-2:2025 (alongside hand guiding, speed limitation, and speed-and-separation monitoring). The 2025 revision of ISO 10218 absorbed the content formerly published as ISO/TS 15066:2016, so all collaborative robot safety requirements are now expressed in a single standard family. SRMS allows a robot to pause in a standby state — drives energised, position held — while a human performs a task within the collaborative workspace. Once the human exits the zone, full-speed operation can resume without a full system reset.
 
-  #### Key Characteristics
-  1. Core property of robotics systems
-		  2. Standardised definition across implementations
-		  3. Measurable and verifiable attributes
-		  4. Essential for safety and performance
-		  5. Industry-wide recognition and adoption
-
-		  ## Formal Ontology (OWL Functional Syntax)
-
-
-		  ## Relationships
-
-		  ### Parent Classes
-		  - `Robot`: Primary classification
-
-  #### Future Directions
-  ### Emerging Trends
-		  1. AI and machine learning integration
-		  2. Advanced sensing capabilities
-		  3. Improved safety systems
-		  4. Enhanced human-robot collaboration
-		  5. Standardisation advancements
-
-		  ---
-
-		  **Version History**
-		  - 1.0.0 (2025-10-28): Initial foundational definition
-
-		  **Contributors**: Robotics Ontology Working Group
-		  **License**: CC BY 4.0
-		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0091`
-
-		  ```
-
-  #### Standards and References
-  ### Primary Standards
-		  1. **ISO 8373:2021**: Primary reference standard
-		  2. **ISO 8373:2021**: Robotics vocabulary
-		  3. **Related IEEE standards**: Implementation guidelines
-
-		  ## Validation Criteria
-
-		  ### Conformance Requirements
-		  1. ✓ Meets ISO 8373:2021 requirements
-		  2. ✓ Documented implementation
-		  3. ✓ Verifiable performance metrics
-		  4. ✓ Safety compliance demonstrated
-		  5. ✓ Industry best practices followed
-
-		  ## Implementation Notes
-
-		  ### Design Considerations
-		  - System integration requirements
-		  - Performance specifications
-		  - Safety considerations
-		  - Maintenance procedures
-
-		  ### Common Patterns
-		  ```yaml
-		  implementation:
-		    standards_compliance: true
-		    verification_method: standardised_testing
-		    documentation_level: comprehensive
-		  ```
-
-  #### Related Concepts
-  - Related robotics concepts and systems
-		  - Cross-references to other ontology terms
-		  - Integration with metaverse ontology
-
-		  ## Use Cases
-
-		  ### Industrial Applications
-		  1. Manufacturing automation
-		  2. Quality control systems
-		  3. Process optimization
-
-		  ### Service Applications
-		  1. Healthcare robotics
-		  2. Logistics and warehousing
-		  3. Consumer robotics
-
-		  ### Research Applications
-		  1. Academic research platforms
-		  2. Algorithm development
-		  3. System integration studies
-
-  #### References
-  ### Metaverse Ontology Integration
-		  - Virtual representation systems
-		  - Digital twin integration
-		  - Simulation environments
-
-		  ### Domain Ontologies
-		  - Manufacturing systems
-		  - Control systems
-		  - Safety systems
+  SRMS is distinct from an emergency stop (Category 0 or 1 per IEC 60204-1) because it does not de-energise the drive system. This enables faster cycle resumption and is therefore preferred in collaborative cell designs where intermittent human access is required. The monitoring function must achieve a suitable safety integrity level (SIL 2 or PLd per ISO 13849-1) to be compliant with ISO 10218-1:2025.
 
 - ### Provenance
   - sources::

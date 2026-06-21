@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.92,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:constitutional-ai-training-methodology",
         "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:value-alignment",
+        "label": "Value Alignment"
+      },
+      {
+        "id": "urn:ngm:class:corrigibility",
+        "label": "Corrigibility"
       }
     ],
     "requires": [
@@ -38,6 +46,10 @@
       {
         "id": "urn:ngm:class:interpretability",
         "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       }
     ],
     "enables": [
@@ -50,8 +62,8 @@
         "label": "Trustworthy AI"
       },
       {
-        "id": "urn:ngm:class:safe-deployment",
-        "label": "Safe Deployment"
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
       }
     ],
     "dependsOn": [
@@ -62,6 +74,10 @@
       {
         "id": "urn:ngm:class:mechanistic-interpretability",
         "label": "Mechanistic Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "implements": [],
@@ -69,6 +85,10 @@
       {
         "id": "urn:ngm:class:reward-hacking",
         "label": "Reward Hacking"
+      },
+      {
+        "id": "urn:ngm:class:mesa-optimisation",
+        "label": "Mesa-Optimisation"
       }
     ],
     "bridgesTo": [
@@ -87,12 +107,12 @@
         "label": "Model Evaluation"
       },
       {
-        "id": "urn:ngm:class:debate",
-        "label": "Debate"
+        "id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
       },
       {
-        "id": "urn:ngm:class:intelligence-amplification",
-        "label": "Amplification"
+        "id": "urn:ngm:class:sparse-autoencoder",
+        "label": "Sparse Autoencoder"
       }
     ],
     "supports": [
@@ -124,11 +144,204 @@
       {
         "id": "urn:ngm:class:existential-risk",
         "label": "Existential Risk"
+      },
+      {
+        "id": "urn:ngm:class:distributional-shift",
+        "label": "Distributional Shift"
+      },
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "constitutional-ai-training-methodology",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "scalable-oversight",
+      "label": "Scalable Oversight"
+    },
+    {
+      "slug": "reward-modelling",
+      "label": "Reward Modelling"
+    },
+    {
+      "slug": "interpretability",
+      "label": "Interpretability"
+    },
+    {
+      "slug": "mechanistic-interpretability",
+      "label": "Mechanistic Interpretability"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "reward-hacking",
+      "label": "Reward Hacking"
+    },
+    {
+      "slug": "frontier-ai",
+      "label": "Frontier AI"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "existential-risk",
+      "label": "Existential Risk"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "slug": "value-alignment",
+      "label": "Value Alignment"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "mesa-optimisation",
+      "label": "Mesa-Optimisation"
+    },
+    {
+      "slug": "direct-preference-optimisation",
+      "label": "Direct Preference Optimisation"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "sparse-autoencoder",
+      "label": "Sparse Autoencoder"
+    },
+    {
+      "slug": "distributional-shift",
+      "label": "Distributional Shift"
+    },
+    {
+      "slug": "robustness",
+      "label": "Robustness"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "human-feedback",
+      "label": "Human Feedback"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "aisi-frontier-ai-safety-framework",
+      "label": "AISI Frontier AI Safety Framework"
+    },
+    {
+      "slug": "bletchley-declaration",
+      "label": "Bletchley Declaration"
+    },
+    {
+      "slug": "apollo-research",
+      "label": "Apollo Research"
+    },
+    {
+      "slug": "redwood-research",
+      "label": "Redwood Research"
+    },
+    {
+      "slug": "alignment-faking",
+      "label": "Alignment Faking"
+    },
+    {
+      "slug": "inverse-reinforcement-learning",
+      "label": "Inverse Reinforcement Learning"
+    },
+    {
+      "slug": "debate",
+      "label": "Debate"
+    },
+    {
+      "slug": "iterated-amplification",
+      "label": "Iterated Amplification"
+    },
+    {
+      "slug": "weak-to-strong-generalisation",
+      "label": "Weak-to-Strong Generalisation"
+    },
+    {
+      "slug": "preference-learning",
+      "label": "Preference Learning"
+    },
+    {
+      "slug": "reward-model",
+      "label": "Reward Model"
+    },
+    {
+      "slug": "sycophancy",
+      "label": "Sycophancy"
+    },
+    {
+      "slug": "agentic-misalignment",
+      "label": "Agentic Misalignment"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
     {
       "slug": "autonomy-level",
       "label": "Autonomy Level"

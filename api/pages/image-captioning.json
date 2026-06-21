@@ -108,5 +108,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    },
+    {
+      "slug": "attention-weight",
+      "label": "Attention Weight"
+    }
+  ]
 }

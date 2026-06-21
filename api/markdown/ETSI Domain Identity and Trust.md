@@ -215,9 +215,6 @@ public:: true
 - ### Definition
   - An [[ETSI]] governance domain establishing identity management, authentication, and trust infrastructure for [[VirtualEnvironment|virtual environments]]. This domain integrates [[DigitalIdentity]], [[VerifiableCredentials]], [[ZeroTrustArchitecture]], [[BiometricAuthentication]], and [[DecentralisedIdentity]] to enable secure, privacy-respecting identity assurance across distributed metaverse platforms.
 
-- ### Bridge-To
-  - bridges-to:: [[DID Nostr Identity]] (ngm)
-
 - ### Semantic Classification
   - owl-class:: infrastructure:ETSIDomainIdentityTrust
   - owl-role:: Concept
@@ -228,56 +225,10 @@ public:: true
   - **requires**: [[Digital Identity]], [[Zero Trust Architecture]]
   - **enables**: [[Digital Identity Framework]], [[Digital Identity Wallet]]
   - **relatedTo**: [[ETSI Domain Security and Privacy]]
+  - bridges-to:: [[DID Nostr Identity]]
 
 - ### Content
   - The ETSI Identity and Trust domain establishes identity management, authentication, and trust infrastructure for virtual environments enabling secure, privacy-respecting identity assurance.
-  - ### Original Content
-		- ```
-  # ETSI_Domain_Identity_&_Trust
-
-		  **ID:** 20358
-		  **Classification:** VirtualObject
-		  **Stage:** Defined
-		  **Domain:** InfrastructureDomain
-		  **Layer:** ApplicationLayer
-
-		  ## Overview
-
-		  ETSI Domain categorization for Identity and Trust management in metaverse infrastructure, representing identity verification, trust frameworks, and credential management systems.
-
-		  ## Formal Characteristics
-
-		  ### SubClassOf Axioms
-
-		  1. **SubClassOf**: VirtualObject
-		  2. **SubClassOf**: hasDomain some InfrastructureDomain
-		  3. **SubClassOf**: operatesInLayer some ApplicationLayer
-		  4. **SubClassOf**: hasETSIScope value "ETSI_GR_MEC_032"
-		  5. **SubClassOf**: supportsDomainCategory value "Identity_Trust"
-		  6. **SubClassOf**: implementsIdentityManagement some IdentityVerificationFramework
-		  7. **SubClassOf**: providesTrustServices some TrustManagementService
-		  8. **SubClassOf**: hasStandardsReference value "ISO_IEC_24760"
-		  9. **SubClassOf**: enablesCrossoverWith some (SecurityDomain or GovernanceDomain)
-
-		  ## Domain Context
-
-		  - **Primary Domain**: Identity & Trust domain marker
-		  - **Standards Alignment**: ETSI GR MEC 032, ISO/IEC 24760
-		  - **Functional Role**: Identity verification and trust management
-		  - **Cross-Domain Integration**: Security, Privacy, Governance
-
-  #### Related Concepts
-  - ETSI_Domain_Security
-		  - ETSI_Domain_Privacy
-		  - ETSI_Domain_Blockchain
-		  - IdentityVerificationFramework
-
-  #### References
-  - ETSI GR MEC 032 (Metaverse Architectural Framework)
-		  - ISO/IEC 24760 (Identity Management Framework)
-		  - ETSI GS MEC (Multi-access Edge Computing)
-
-		  ```
 
   ## Academic Context
 
@@ -290,7 +241,7 @@ public:: true
 
   - Industry adoption increasingly embraces decentralized identity and trust frameworks, leveraging blockchain and ledger technologies to enable secure, privacy-preserving identity verification.
   - Notable organisations include ETSI itself, European Blockchain Services Infrastructure (EBSI), and various Qualified Trust Service Providers (QTSPs) under the eIDAS framework.
-  - Digital Identity Wallets compliant with eIDAS 2.0 standards are emerging, supporting qualified attestations of attributes and interoperable verifiable credentials.
+  - Digital Identity Wallets compliant with eIDAS 2.0 (Regulation (EU) 2024/1183, ratified March 2024, in force May 2024) are in large-scale pilot deployment, with EU member states mandated to deliver at least one EUDI Wallet to citizens by December 2026, supporting qualified attestations of attributes and interoperable verifiable credentials.
   - UK and North England examples:
     - Manchester and Leeds are active in digital identity innovation, with local tech hubs collaborating on pilot projects integrating decentralized identity with public services.
     - Sheffield’s academic institutions contribute research on trust models and identity interoperability.

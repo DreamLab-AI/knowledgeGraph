@@ -75,6 +75,10 @@
   ],
   "backlinks": [
     {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
       "slug": "agentic-internet",
       "label": "Agentic Internet"
     },

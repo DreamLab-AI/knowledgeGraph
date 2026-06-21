@@ -37,6 +37,10 @@
   ],
   "backlinks": [
     {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
       "slug": "activation-function",
       "label": "Activation Function"
     },

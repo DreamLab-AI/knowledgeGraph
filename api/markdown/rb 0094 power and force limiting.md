@@ -111,7 +111,7 @@ public:: true
 
 
 - ### Definition
-  - ### Primary Definition
+  - **Power and Force Limiting** (PFL) is a collaborative application safety mode in which the robot's mechanical power, force, and momentum are continuously constrained so that any contact with a human remains below biomechanical injury thresholds. It is now defined in ISO 10218-2:2025, which superseded and consolidated ISO/TS 15066:2016. Unlike speed-and-separation monitoring, PFL allows direct physical contact by ensuring that contact forces can never exceed prescribed quasi-static and transient limits.
 
 - ### Semantic Classification
   - owl-class:: robotics:rb0094powerandforcelimiting
@@ -119,120 +119,15 @@ public:: true
   - belongs-to-domain:: [[RoboticsDomain]]
 
 - ### Relationships
-  - <!-- No relationships defined -->
+  - standardizedBy:: ISO 10218-1:2025, ISO 10218-2:2025
+  - relatedTo:: [[rb 0091 safety rated monitored stop]], [[rb 0092 protective stop]], [[rb 0093 speed limitation]], [[rb 0089 risk assessment]]
+  - requires:: [[rb 0067 force torque sensor]]
+  - supports:: [[rb 0057 admittance control]]
 
 - ### Content
-  - ### Primary Definition
-  **Power and Force Limiting** - Power and Force Limiting in robotics systems
-  - ### Original Content
-		- ```
-  # RB-0094: Power and Force Limiting
+  - **Power and Force Limiting** (RB-0094) enables a cobot to operate in direct contact with humans by ensuring all contact forces remain within the biomechanical limits now tabulated in ISO 10218-2:2025 (formerly ISO/TS 15066:2016 Annex A). The limits distinguish between quasi-static contact (sustained pressing) and transient contact (brief impact), with different thresholds for different body regions. Typical limit values are in the range of 65–160 N for transient contact depending on body part.
 
-  #### Key Characteristics
-  1. Core property of robotics systems
-		  2. Standardised definition across implementations
-		  3. Measurable and verifiable attributes
-		  4. Essential for safety and performance
-		  5. Industry-wide recognition and adoption
-
-		  ## Formal Ontology (OWL Functional Syntax)
-
-
-		  ## Relationships
-
-		  ### Parent Classes
-		  - `Robot`: Primary classification
-
-  #### Future Directions
-  ### Emerging Trends
-		  1. AI and machine learning integration
-		  2. Advanced sensing capabilities
-		  3. Improved safety systems
-		  4. Enhanced human-robot collaboration
-		  5. Standardisation advancements
-
-		  ---
-
-		  **Version History**
-		  - 1.0.0 (2025-10-28): Initial foundational definition
-
-		  **Contributors**: Robotics Ontology Working Group
-		  **License**: CC BY 4.0
-		  **Namespace**: `https://metaverse-ontology.org/robotics/RB-0094`
-
-		  ```
-
-  - ### [swift-ocr-llm-powered-pdf-to-markdown](https://github.com/yigitkonur/swift-ocr-llm-powered-pdf-to-markdown)
-
-  - ## AI as soft power
-
-  - ## AI as soft power
-
-  - ## AI as soft power
-
-  #### Standards and References
-  ### Primary Standards
-		  1. **ISO 8373:2021**: Primary reference standard
-		  2. **ISO 8373:2021**: Robotics vocabulary
-		  3. **Related IEEE standards**: Implementation guidelines
-
-		  ## Validation Criteria
-
-		  ### Conformance Requirements
-		  1. ✓ Meets ISO 8373:2021 requirements
-		  2. ✓ Documented implementation
-		  3. ✓ Verifiable performance metrics
-		  4. ✓ Safety compliance demonstrated
-		  5. ✓ Industry best practices followed
-
-		  ## Implementation Notes
-
-		  ### Design Considerations
-		  - System integration requirements
-		  - Performance specifications
-		  - Safety considerations
-		  - Maintenance procedures
-
-		  ### Common Patterns
-		  ```yaml
-		  implementation:
-		    standards_compliance: true
-		    verification_method: standardised_testing
-		    documentation_level: comprehensive
-		  ```
-
-  #### Related Concepts
-  - Related robotics concepts and systems
-		  - Cross-references to other ontology terms
-		  - Integration with metaverse ontology
-
-		  ## Use Cases
-
-		  ### Industrial Applications
-		  1. Manufacturing automation
-		  2. Quality control systems
-		  3. Process optimization
-
-		  ### Service Applications
-		  1. Healthcare robotics
-		  2. Logistics and warehousing
-		  3. Consumer robotics
-
-		  ### Research Applications
-		  1. Academic research platforms
-		  2. Algorithm development
-		  3. System integration studies
-
-  #### References
-  ### Metaverse Ontology Integration
-		  - Virtual representation systems
-		  - Digital twin integration
-		  - Simulation environments
-
-		  ### Domain Ontologies
-		  - Manufacturing systems
-		  - Control systems
-		  - Safety systems
+  PFL is implemented via a combination of torque-sensing (often integrated into each joint), real-time force estimation from motor currents, and compliant mechanical design. Robots certified for PFL operation include the Universal Robots UR series, KUKA LBR iiwa, and FANUC CR series, all of which carry ISO 10218-1 conformance declarations. Force-torque sensors at the wrist provide redundant verification. PFL cobots are widely deployed in automotive assembly, electronics manufacturing, and laboratory automation where direct human collaboration is required.
 
 - ### Provenance
   - sources::

@@ -295,6 +295,10 @@
       "label": "AI Framework"
     },
     {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
       "slug": "gazebo-simulator",
       "label": "Gazebo Simulator"
     },

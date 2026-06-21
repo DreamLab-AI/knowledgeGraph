@@ -1,5 +1,5 @@
 - ### Definition
-  - ### Primary Definition
+  - Stochastic Gradient Descent (SGD) is an iterative optimisation algorithm that updates model parameters by computing gradients from randomly sampled mini-batches rather than the full training dataset, trading gradient accuracy for computational efficiency and the ability to escape shallow local minima. SGD and its adaptive variants (Adam, RMSprop, AdaGrad) are the primary training algorithms for deep neural networks across vision, language, and reinforcement learning domains.
 
 - ### Semantic Classification
   - owl-class:: spatial-computing:StochasticGradientDescent
@@ -14,49 +14,7 @@
   - relatedTo [[Transfer Learning]]
 
 - ### Content
-  - ### Primary Definition
-  **Stochastic Gradient Descent (SGD)** is a variant of gradient descent that updates model parameters using the gradient computed from a single training example (or small batch) rather than the entire dataset. This introduces randomness but enables faster iterations and can escape local minima.
-  - ### Original Content
-		- ```
-  # Stochastic Gradient Descent
-
-  #### Related Concepts
-  - **Batch Size** (AI-0050): Hyperparameter for SGD variants
-		  - **Optimiser** (AI-0046): Advanced SGD variants (Adam, RMSprop)
-		  - **Training** (AI-0041): SGD is a common training method
-		  - **Convergence**: SGD convergence differs from batch gradient descent
-
-		  ## Formal Ontology
-
-		  <details>
-		  <summary>Click to expand OntologyBlock</summary>
-
-		  </details>
-
-		  ## Standards Alignment
-
-		  ### ISO/IEC Standards
-		  - **ISO/IEC 22989:2022**: Optimisation algorithms
-
-		  ### NIST AI RMF
-		  - **Function**: MAP (Training processes)
-
-		  ## Related Terms
-		  - **Gradient Descent** (AI-0044): Parent algorithm
-		  - **Batch Size** (AI-0050): Key SGD hyperparameter
-		  - **Optimiser** (AI-0046): Advanced SGD-based methods
-		  - **Training** (AI-0041): Process using SGD
-
-  #### References
-  1. Bottou - "Large-Scale Machine Learning with Stochastic Gradient Descent" - COMPSTAT, 2010
-		  2. ISO/IEC 22989:2022 - Optimisation methods
-
-		  ---
-
-		  **Authority Score**: 0.93 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-
-		  ```
-  # Stochastic Gradient Descent: Updated Ontology Entry
+  - **Stochastic Gradient Descent (SGD)** is a variant of gradient descent that updates model parameters using the gradient computed from a single training example (or small batch) rather than the entire dataset. This introduces randomness but enables faster iterations and can escape local minima.
 
   ## Academic Context
 
@@ -66,7 +24,7 @@
   - Distinguishes itself from batch gradient descent through its use of individual or mini-batch samples rather than entire datasets
   - Computational efficiency gains come at the cost of introducing stochastic noise into the optimisation trajectory
 
-  ## Current Landscape (2025)
+  ## Current Landscape (2025–2026)
 
   - **Industry adoption and implementations**
   - SGD and its variants form the backbone of modern deep learning frameworks (PyTorch, TensorFlow, JAX)
@@ -130,18 +88,6 @@
   - Convergence guarantees under realistic (non-convex, non-smooth) conditions
   - Adaptive methods that automatically adjust to problem geometry without manual tuning
   - Theoretical foundations for understanding why SGD generalises better than full-batch gradient descent
-
-  ---
-
-  **Note:** This entry reflects the state of SGD research as of November 2025. The field remains active, with particular momentum in theoretical understanding of high-dimensional dynamics and practical applications in distributed systems and scientific computing.
-
-
-  ## Metadata
-
-  - **Last Updated**: 2025-11-11
-  - **Review Status**: Comprehensive editorial review
-  - **Verification**: Academic sources verified
-  - **Regional Context**: UK/North England where applicable
 
 - ### Provenance
   - sources::

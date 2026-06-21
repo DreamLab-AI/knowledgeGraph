@@ -93,6 +93,10 @@
     {
       "slug": "ai-search",
       "label": "AI Search"
+    },
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
     }
   ]
 }

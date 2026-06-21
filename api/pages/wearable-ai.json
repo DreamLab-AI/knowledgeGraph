@@ -67,6 +67,10 @@
       "label": "AR Frame"
     },
     {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
     }
