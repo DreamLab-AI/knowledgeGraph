@@ -108,6 +108,10 @@
     {
       "slug": "empathetic-ai",
       "label": "Empathetic AI"
+    },
+    {
+      "slug": "facial-action-coding-system",
+      "label": "Facial Action Coding System"
     }
   ]
 }

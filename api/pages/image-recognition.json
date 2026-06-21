@@ -105,6 +105,10 @@
     {
       "slug": "classification",
       "label": "Classification"
+    },
+    {
+      "slug": "feature-map",
+      "label": "Feature Map"
     }
   ]
 }

@@ -171,6 +171,10 @@
       "label": "Discovery Layer"
     },
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
       "slug": "graph-database",
       "label": "Graph Database"
     },

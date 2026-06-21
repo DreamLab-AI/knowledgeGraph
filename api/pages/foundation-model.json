@@ -317,6 +317,10 @@
       "label": "Deep Generative Model"
     },
     {
+      "slug": "fsdp",
+      "label": "FSDP"
+    },
+    {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },

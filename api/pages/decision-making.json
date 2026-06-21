@@ -366,6 +366,10 @@
       "label": "Decision Theory"
     },
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
       "slug": "machine-learning-discipline",
       "label": "Machine Learning Discipline"
     },

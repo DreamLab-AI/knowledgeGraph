@@ -330,6 +330,10 @@
       "label": "Evaluation benchmarks and leaderboards"
     },
     {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },

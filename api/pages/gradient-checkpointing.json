@@ -151,6 +151,10 @@
       "label": "Automatic Differentiation"
     },
     {
+      "slug": "fsdp",
+      "label": "FSDP"
+    },
+    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
     },

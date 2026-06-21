@@ -326,6 +326,10 @@
       "label": "DVC"
     },
     {
+      "slug": "fsdp",
+      "label": "FSDP"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

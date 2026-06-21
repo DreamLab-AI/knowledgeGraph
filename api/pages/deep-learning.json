@@ -838,6 +838,22 @@
       "label": "External AI Harness"
     },
     {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    },
+    {
+      "slug": "facial-action-coding-system",
+      "label": "Facial Action Coding System"
+    },
+    {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
+      "slug": "feature-map",
+      "label": "Feature Map"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

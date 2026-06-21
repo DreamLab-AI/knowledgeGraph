@@ -211,6 +211,10 @@
       "label": "Dimensionality Reduction"
     },
     {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
     },

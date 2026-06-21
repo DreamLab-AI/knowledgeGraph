@@ -234,6 +234,10 @@
       "label": "Deep Reinforcement Learning"
     },
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
       "slug": "imitation-learning",
       "label": "Imitation Learning"
     },

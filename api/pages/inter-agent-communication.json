@@ -178,6 +178,10 @@
     {
       "slug": "decentralized-swarm-control",
       "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
     }
   ]
 }

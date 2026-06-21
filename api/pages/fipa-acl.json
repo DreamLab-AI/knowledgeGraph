@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.88,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:performative",
+        "label": "Performative"
+      },
+      {
+        "id": "urn:ngm:class:message-envelope",
+        "label": "Message Envelope"
+      },
+      {
+        "id": "urn:ngm:class:interaction-protocol",
+        "label": "Interaction Protocol"
+      },
+      {
+        "id": "urn:ngm:class:content-language",
+        "label": "Content Language"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,6 +43,14 @@
       {
         "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:distributed-decision-making",
+        "label": "Distributed Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:contract-net-protocol",
+        "label": "Contract Net Protocol"
       }
     ],
     "dependsOn": [],
@@ -37,9 +62,22 @@
       {
         "id": "urn:ngm:class:inter-agent-communication",
         "label": "Inter-Agent Communication"
+      },
+      {
+        "id": "urn:ngm:class:speech-act-theory",
+        "label": "Speech Act Theory"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:kqml",
+        "label": "KQML"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -49,6 +87,14 @@
       {
         "id": "urn:ngm:class:agent-to-agent-protocol",
         "label": "Agent-to-Agent Protocol"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-interchange-format",
+        "label": "Knowledge Interchange Format"
+      },
+      {
+        "id": "urn:ngm:class:message-passing",
+        "label": "Message Passing"
       }
     ],
     "supports": [
@@ -59,12 +105,20 @@
       {
         "id": "urn:ngm:class:agent",
         "label": "Agent"
+      },
+      {
+        "id": "urn:ngm:class:agent-platform",
+        "label": "Agent Platform"
       }
     ],
     "standardizedBy": [
       {
         "id": "urn:ngm:class:standards",
         "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
       }
     ],
     "partOf": [
@@ -81,10 +135,107 @@
       {
         "id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocol"
+      },
+      {
+        "id": "urn:ngm:class:semantic-web",
+        "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:agent2agent-protocol",
+        "label": "Agent2Agent Protocol"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      },
+      {
+        "id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "agent-communication-language",
+      "label": "Agent Communication Language"
+    },
+    {
+      "slug": "inter-agent-communication",
+      "label": "Inter-Agent Communication"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "speech-act-theory",
+      "label": "Speech Act Theory"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "kqml",
+      "label": "KQML"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "contract-net-protocol",
+      "label": "Contract Net Protocol"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "agent-platform",
+      "label": "Agent Platform"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "message-passing",
+      "label": "Message Passing"
+    },
+    {
+      "slug": "knowledge-interchange-format",
+      "label": "Knowledge Interchange Format"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "agent2agent-protocol",
+      "label": "Agent2Agent Protocol"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    }
+  ],
   "backlinks": [
     {
       "slug": "a2-a-protocol",

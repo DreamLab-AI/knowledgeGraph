@@ -121,6 +121,10 @@
     {
       "slug": "agents",
       "label": "Agents"
+    },
+    {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
     }
   ]
 }

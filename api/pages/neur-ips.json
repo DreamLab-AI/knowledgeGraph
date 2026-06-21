@@ -167,6 +167,10 @@
       "label": "Direct Preference Optimization"
     },
     {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

@@ -313,6 +313,10 @@
       "label": "Decision Theory"
     },
     {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
+    },
+    {
       "slug": "llm-application-frameworks",
       "label": "LLM Application Frameworks"
     },

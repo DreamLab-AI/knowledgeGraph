@@ -625,6 +625,10 @@
       "label": "Diffusion Models"
     },
     {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },

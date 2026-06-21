@@ -217,6 +217,10 @@
       "label": "Exteroceptive Sensor"
     },
     {
+      "slug": "feature-map",
+      "label": "Feature Map"
+    },
+    {
       "slug": "hand-tracking",
       "label": "Hand Tracking"
     },

@@ -475,6 +475,10 @@
       "label": "External AI Harness"
     },
     {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
+    },
+    {
       "slug": "function-calling",
       "label": "Function Calling"
     },

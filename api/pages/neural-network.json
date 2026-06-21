@@ -469,8 +469,20 @@
       "label": "Diffusion Models"
     },
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
       "slug": "external-ai-harness",
       "label": "External AI Harness"
+    },
+    {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    },
+    {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
     },
     {
       "slug": "feed-forward-network",

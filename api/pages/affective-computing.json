@@ -412,6 +412,10 @@
       "label": "Empathetic AI"
     },
     {
+      "slug": "facial-action-coding-system",
+      "label": "Facial Action Coding System"
+    },
+    {
       "slug": "mental-health-monitoring",
       "label": "Mental Health Monitoring"
     },

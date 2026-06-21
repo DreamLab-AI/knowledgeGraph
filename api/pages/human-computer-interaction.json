@@ -269,6 +269,10 @@
       "label": "Extended Reality (XR)"
     },
     {
+      "slug": "facial-action-coding-system",
+      "label": "Facial Action Coding System"
+    },
+    {
       "slug": "hand-tracking",
       "label": "Hand Tracking"
     },

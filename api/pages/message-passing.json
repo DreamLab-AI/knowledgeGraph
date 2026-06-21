@@ -160,6 +160,10 @@
       "label": "Distributed Computing"
     },
     {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
+    },
+    {
       "slug": "graph-neural-networks",
       "label": "Graph Neural Networks"
     },

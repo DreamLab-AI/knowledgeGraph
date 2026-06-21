@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.91,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -24,6 +24,14 @@
       {
         "id": "urn:ngm:class:receptive-field",
         "label": "Receptive Field"
+      },
+      {
+        "id": "urn:ngm:class:channel",
+        "label": "Channel"
+      },
+      {
+        "id": "urn:ngm:class:spatial-activation",
+        "label": "Spatial Activation"
       }
     ],
     "requires": [],
@@ -35,12 +43,24 @@
       {
         "id": "urn:ngm:class:feature-detection",
         "label": "Feature Detection"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:backpropagation",
         "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "implements": [],
@@ -48,6 +68,10 @@
       {
         "id": "urn:ngm:class:pooling-layer",
         "label": "Pooling Layer"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "bridgesTo": [],
@@ -59,6 +83,10 @@
       {
         "id": "urn:ngm:class:activation-function",
         "label": "Activation Function"
+      },
+      {
+        "id": "urn:ngm:class:tensor",
+        "label": "Tensor"
       }
     ],
     "supports": [
@@ -69,6 +97,14 @@
       {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "standardizedBy": [],
@@ -76,6 +112,10 @@
       {
         "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
       }
     ],
     "relatedTo": [
@@ -86,9 +126,82 @@
       {
         "id": "urn:ngm:class:spatial-hierarchy",
         "label": "Spatial Hierarchy"
+      },
+      {
+        "id": "urn:ngm:class:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      },
+      {
+        "id": "urn:ngm:class:grad-cam",
+        "label": "Grad-CAM"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "filter-kernel",
+      "label": "Filter Kernel"
+    },
+    {
+      "slug": "receptive-field",
+      "label": "Receptive Field"
+    },
+    {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "activation-function",
+      "label": "Activation Function"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "pooling-layer",
+      "label": "Pooling Layer"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "image-recognition",
+      "label": "Image Recognition"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "feature-pyramid-network",
+      "label": "Feature Pyramid Network"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "tensor",
+      "label": "Tensor"
+    }
+  ],
   "backlinks": []
 }

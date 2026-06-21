@@ -4,27 +4,171 @@
   "slug": "fsdp",
   "public": true,
   "classIri": "urn:ngm:class:fsdp",
-  "domain": "ai",
-  "definition": "Fully Sharded Data Parallel (FSDP) is a distributed training technique that shards a model's parameters, gradients, and optimizer states across multiple GPUs to train models too large for a single device's memory. Each worker holds only a fraction of the state and gathers parameters on demand during the forward and backward passes. FSDP underpins memory-efficient training and checkpointing of large neural networks.",
+  "domain": "machine-learning",
+  "definition": "Fully Sharded Data Parallel (FSDP) is a distributed training technique implemented natively in PyTorch that shards a model's parameters, gradients, and optimizer states across multiple GPUs or nodes, enabling training of models too large for a single device's memory. Each worker holds only a fraction of every parameter tensor and gathers the full tensor on demand via all-gather collective operations before each layer's forward computation, immediately discarding the assembled tensor after use so that only the local shard is persistently stored. FSDP implements the ZeRO Stage 3 memory partitioning algorithm as a first-class PyTorch primitive, and integrates with sharded Distributed Checkpointing (DCP) so that each rank writes and reads its own parameter shard independently, enabling checkpoint resharding across different cluster topologies at load time.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-infrastructure",
+      "id": "urn:ngm:class:distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
       "label": "AI Infrastructure"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.89,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:all-gather-collective",
+        "label": "All-Gather Collective"
+      },
+      {
+        "id": "urn:ngm:class:reduce-scatter-collective",
+        "label": "Reduce-Scatter Collective"
+      },
+      {
+        "id": "urn:ngm:class:sharded-parameter",
+        "label": "Sharded Parameter"
+      },
+      {
+        "id": "urn:ngm:class:sharded-optimiser-state",
+        "label": "Sharded Optimiser State"
+      },
+      {
+        "id": "urn:ngm:class:sharded-gradient",
+        "label": "Sharded Gradient"
+      },
+      {
+        "id": "urn:ngm:class:distributed-checkpointing",
+        "label": "Distributed Checkpointing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      },
+      {
+        "id": "urn:ngm:class:gradient-synchronisation",
+        "label": "Gradient Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:large-language-model-training",
+        "label": "Large Language Model Training"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:model-scaling",
+        "label": "Model Scaling"
+      },
+      {
+        "id": "urn:ngm:class:checkpoint-resharding",
+        "label": "Checkpoint Resharding"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:nvidia-nccl",
+        "label": "NVIDIA NCCL"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:zero-stage-3",
+        "label": "ZeRO Stage 3"
+      },
+      {
+        "id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-checkpointing",
+        "label": "Distributed Checkpointing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:deep-speed",
+        "label": "DeepSpeed"
+      },
+      {
+        "id": "urn:ngm:class:megatron-lm",
+        "label": "Megatron-LM"
+      },
+      {
+        "id": "urn:ngm:class:distributed-data-parallel",
+        "label": "Distributed Data Parallel"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:python-pytorch-deep-learning-stack",
+        "label": "PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:gradient-checkpointing",
+        "label": "Gradient Checkpointing"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-tuning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -35,10 +179,119 @@
       {
         "id": "urn:ngm:class:distributed-computing",
         "label": "Distributed Computing"
+      },
+      {
+        "id": "urn:ngm:class:zero-redundancy-optimiser",
+        "label": "ZeRO Redundancy Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:torchtitan",
+        "label": "TorchTitan"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-accelerate",
+        "label": "Hugging Face Accelerate"
+      },
+      {
+        "id": "urn:ngm:class:pipeline-parallelism",
+        "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:model-parallelism",
+        "label": "Model Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "data-parallelism",
+      "label": "Data Parallelism"
+    },
+    {
+      "slug": "model-parallelism",
+      "label": "Model Parallelism"
+    },
+    {
+      "slug": "zero-redundancy-optimiser",
+      "label": "ZeRO Redundancy Optimiser"
+    },
+    {
+      "slug": "deep-speed",
+      "label": "DeepSpeed"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "collective-communication",
+      "label": "Collective Communication"
+    },
+    {
+      "slug": "gradient-checkpointing",
+      "label": "Gradient Checkpointing"
+    },
+    {
+      "slug": "mixed-precision-training",
+      "label": "Mixed Precision Training"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "pytorch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "megatron-lm",
+      "label": "Megatron-LM"
+    },
+    {
+      "slug": "pipeline-parallelism",
+      "label": "Pipeline Parallelism"
+    },
+    {
+      "slug": "tensor-parallelism",
+      "label": "Tensor Parallelism"
+    },
+    {
+      "slug": "gradient-synchronisation",
+      "label": "Gradient Synchronisation"
+    },
+    {
+      "slug": "nvidia-nccl",
+      "label": "NVIDIA NCCL"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-tuning"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "torchtitan",
+      "label": "TorchTitan"
+    }
+  ],
   "backlinks": [
     {
       "slug": "checkpoints",

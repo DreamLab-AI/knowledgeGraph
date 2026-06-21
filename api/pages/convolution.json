@@ -245,6 +245,10 @@
       "label": "Audio Signal Processing"
     },
     {
+      "slug": "feature-map",
+      "label": "Feature Map"
+    },
+    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
     },

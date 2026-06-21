@@ -673,6 +673,10 @@
       "label": "Explainable AI"
     },
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
       "slug": "feature-attribution",
       "label": "Feature Attribution"
     },

@@ -17836,17 +17836,32 @@
     {
       "slug": "exploration-exploitation-tradeoff",
       "title": "Exploration Exploitation Tradeoff",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
+    },
+    {
+      "slug": "fid-benchmark-protocol",
+      "title": "FID Benchmark Protocol",
+      "qualityScore": 0.9
     },
     {
       "slug": "fipa-acl",
       "title": "FIPA ACL",
-      "qualityScore": 0.62
+      "qualityScore": 0.88
+    },
+    {
+      "slug": "face-recognition",
+      "title": "Face Recognition",
+      "qualityScore": 0.92
     },
     {
       "slug": "face-swap",
       "title": "Face Swap",
       "qualityScore": 0.52
+    },
+    {
+      "slug": "facial-action-coding-system",
+      "title": "Facial Action Coding System",
+      "qualityScore": 0.92
     },
     {
       "slug": "fairness-oecd",
@@ -17881,7 +17896,7 @@
     {
       "slug": "feature-attribution",
       "title": "Feature Attribution",
-      "qualityScore": 0.6
+      "qualityScore": 0.91
     },
     {
       "slug": "feature-importance",
@@ -27640,26 +27655,6 @@
       "qualityScore": 0.9
     },
     {
-      "slug": "fid-benchmark-protocol",
-      "title": "FID Benchmark Protocol",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "fsdp",
-      "title": "FSDP",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "face-recognition",
-      "title": "Face Recognition",
-      "qualityScore": 0.6
-    },
-    {
-      "slug": "facial-action-coding-system",
-      "title": "Facial Action Coding System",
-      "qualityScore": 0.72
-    },
-    {
       "slug": "facial-recognition",
       "title": "Facial Recognition",
       "qualityScore": 0.74
@@ -34040,6 +34035,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "fsdp",
+      "title": "FSDP",
+      "qualityScore": 0.89
+    },
+    {
       "slug": "false-negative",
       "title": "False Negative",
       "qualityScore": 0.62
@@ -34062,7 +34062,7 @@
     {
       "slug": "feature-map",
       "title": "Feature Map",
-      "qualityScore": 0.62
+      "qualityScore": 0.91
     },
     {
       "slug": "feature-selection",

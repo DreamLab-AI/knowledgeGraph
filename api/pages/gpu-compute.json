@@ -269,6 +269,10 @@
       "label": "Direct Preference Optimization"
     },
     {
+      "slug": "fsdp",
+      "label": "FSDP"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },

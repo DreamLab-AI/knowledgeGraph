@@ -201,6 +201,10 @@
       "label": "Depth Estimation"
     },
     {
+      "slug": "feature-map",
+      "label": "Feature Map"
+    },
+    {
       "slug": "image-segmentation",
       "label": "Image Segmentation"
     },

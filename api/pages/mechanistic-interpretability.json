@@ -146,6 +146,10 @@
       "label": "Corrigibility"
     },
     {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
     }

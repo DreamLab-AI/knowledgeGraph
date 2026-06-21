@@ -196,6 +196,10 @@
       "label": "Control Theory"
     },
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
       "slug": "ground-robot",
       "label": "Ground Robot"
     },

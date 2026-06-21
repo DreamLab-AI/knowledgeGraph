@@ -4,40 +4,158 @@
   "slug": "face-recognition",
   "public": true,
   "classIri": "urn:ngm:class:face-recognition",
-  "domain": "ai",
-  "definition": "A biometric technique that identifies or verifies a person from an image or video of their face by comparing facial features against stored templates. It is a subfield of computer vision and biometrics.",
+  "domain": "artificial-intelligence",
+  "definition": "Face recognition is a biometric identification and verification technology that locates human faces in images or video frames, extracts a compact numerical embedding of facial geometry and texture, and compares that embedding against one or more enrolled templates to establish identity. It is a specialised subfield of Computer Vision and Biometric Authentication that combines deep convolutional feature learning with metric-learning loss functions such as ArcFace and AdaFace to achieve sub-second, high-accuracy identification at scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:biometric-authentication",
       "label": "Biometric Authentication"
+    },
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:face-detection",
+        "label": "Face Detection"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:face-alignment",
+        "label": "Face Alignment"
+      },
+      {
+        "id": "urn:ngm:class:embedding-generation",
+        "label": "Embedding Generation"
+      },
+      {
+        "id": "urn:ngm:class:presentation-attack-detection",
+        "label": "Presentation Attack Detection"
+      }
+    ],
     "requires": [
       {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:metric-learning",
+        "label": "Metric Learning"
+      },
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:pattern-recognition",
+        "label": "Pattern Recognition"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:identity-verification",
         "label": "Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:digital-identity-verification",
+        "label": "Digital Identity Verification"
+      },
+      {
+        "id": "urn:ngm:class:surveillance-systems",
+        "label": "Surveillance Systems"
+      },
+      {
+        "id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       }
     ],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:annotated-dataset",
+        "label": "Annotated Dataset"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:arcface",
+        "label": "ArcFace"
+      },
+      {
+        "id": "urn:ngm:class:adaface",
+        "label": "AdaFace"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:iris-recognition",
+        "label": "Iris Recognition"
+      },
+      {
+        "id": "urn:ngm:class:fingerprint-recognition",
+        "label": "Fingerprint Recognition"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:biometric-authentication",
+        "label": "Biometric Authentication"
+      },
+      {
+        "id": "urn:ngm:class:facial-action-coding-system",
+        "label": "Facial Action Coding System"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:facial-action-coding-system",
+        "label": "Facial Action Coding System"
+      },
+      {
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -65,6 +183,10 @@
     {
       "slug": "face-swap",
       "label": "Face Swap"
+    },
+    {
+      "slug": "facial-action-coding-system",
+      "label": "Facial Action Coding System"
     },
     {
       "slug": "jumio",

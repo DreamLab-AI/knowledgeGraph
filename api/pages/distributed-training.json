@@ -166,6 +166,10 @@
       "label": "Deep Learning Framework"
     },
     {
+      "slug": "fsdp",
+      "label": "FSDP"
+    },
+    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     },

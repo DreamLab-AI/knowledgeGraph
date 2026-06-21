@@ -85,6 +85,10 @@
     {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
+    },
+    {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
     }
   ]
 }

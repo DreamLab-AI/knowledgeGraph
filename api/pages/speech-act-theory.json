@@ -98,6 +98,10 @@
     {
       "slug": "agent-to-agent-protocol",
       "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
     }
   ]
 }

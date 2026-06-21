@@ -132,6 +132,10 @@
       "label": "Explainable AI"
     },
     {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
       "slug": "local-explanation",
       "label": "Local Explanation"
     },

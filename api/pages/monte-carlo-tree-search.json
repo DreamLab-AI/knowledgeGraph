@@ -122,6 +122,10 @@
       "label": "Deep Reinforcement Learning"
     },
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },

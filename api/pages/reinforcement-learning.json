@@ -566,6 +566,10 @@
       "label": "Environment"
     },
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

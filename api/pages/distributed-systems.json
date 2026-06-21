@@ -318,6 +318,10 @@
       "label": "External AI Harness"
     },
     {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
+    },
+    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     },

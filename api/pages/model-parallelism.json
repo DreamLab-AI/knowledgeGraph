@@ -131,6 +131,10 @@
     {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "fsdp",
+      "label": "FSDP"
     }
   ]
 }

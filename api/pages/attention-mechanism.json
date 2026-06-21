@@ -332,6 +332,14 @@
       "label": "Deep Learning"
     },
     {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
+      "slug": "feature-map",
+      "label": "Feature Map"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

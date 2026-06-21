@@ -4,28 +4,148 @@
   "slug": "fid-benchmark-protocol",
   "public": true,
   "classIri": "urn:ngm:class:fid-benchmark-protocol",
-  "domain": "ai",
+  "domain": "artificial-intelligence",
   "definition": "The FID benchmark protocol is the standardised methodology for evaluating generative image models using the Fr\u00e9chet Inception Distance, which compares the distribution of generated images with that of real images in the feature space of a pretrained Inception network. The protocol fixes the feature extractor, the number of samples, and preprocessing so that scores are comparable across models; lower FID indicates greater similarity to real data. It is the de facto standard for benchmarking GANs and diffusion models.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:evaluation-metric",
       "label": "Evaluation Metric"
+    },
+    {
+      "id": "urn:ngm:class:benchmark",
+      "label": "Benchmark"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inception-v3",
+        "label": "Inception v3"
+      },
+      {
+        "id": "urn:ngm:class:frechet-distance",
+        "label": "Fr\u00e9chet Distance"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:clean-fid",
+        "label": "Clean-FID"
+      },
+      {
+        "id": "urn:ngm:class:precision-recall",
+        "label": "Precision-Recall"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:inception-v3",
+        "label": "Inception v3"
+      },
+      {
+        "id": "urn:ngm:class:image-net",
+        "label": "ImageNet"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-networks",
+        "label": "Convolutional Neural Networks"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:image-synthesis",
+        "label": "Image Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data-generation",
+        "label": "Synthetic Data Generation"
+      },
+      {
+        "id": "urn:ngm:class:medical-image-synthesis",
+        "label": "Medical Image Synthesis"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:frechet-distance",
+        "label": "Fr\u00e9chet Distance"
+      },
+      {
+        "id": "urn:ngm:class:wasserstein-distance",
+        "label": "Wasserstein Distance"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:inception-score",
+        "label": "Inception Score"
+      },
+      {
+        "id": "urn:ngm:class:cmmd",
+        "label": "CMMD"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:inception-v3",
+        "label": "Inception v3"
+      },
+      {
+        "id": "urn:ngm:class:clip-encoder",
+        "label": "CLIP Encoder"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-networks",
+        "label": "Generative Adversarial Networks"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:cvpr",
+        "label": "CVPR"
+      },
+      {
+        "id": "urn:ngm:class:neur-ips",
+        "label": "NeurIPS"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -35,10 +155,159 @@
       {
         "id": "urn:ngm:class:generative-adversarial-networks",
         "label": "Generative Adversarial Networks"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:frechet-audio-distance",
+        "label": "Fr\u00e9chet Audio Distance"
+      },
+      {
+        "id": "urn:ngm:class:frechet-video-distance",
+        "label": "Fr\u00e9chet Video Distance"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "slug": "inception-v3",
+      "label": "Inception v3"
+    },
+    {
+      "slug": "frechet-distance",
+      "label": "Fr\u00e9chet Distance"
+    },
+    {
+      "slug": "image-synthesis",
+      "label": "Image Synthesis"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "inception-score",
+      "label": "Inception Score"
+    },
+    {
+      "slug": "clip-encoder",
+      "label": "CLIP Encoder"
+    },
+    {
+      "slug": "clean-fid",
+      "label": "Clean-FID"
+    },
+    {
+      "slug": "precision-recall",
+      "label": "Precision-Recall"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "image-net",
+      "label": "ImageNet"
+    },
+    {
+      "slug": "cifar-10",
+      "label": "CIFAR-10"
+    },
+    {
+      "slug": "frechet-audio-distance",
+      "label": "Fr\u00e9chet Audio Distance"
+    },
+    {
+      "slug": "frechet-video-distance",
+      "label": "Fr\u00e9chet Video Distance"
+    },
+    {
+      "slug": "cmmd",
+      "label": "CMMD"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "wasserstein-distance",
+      "label": "Wasserstein Distance"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "benchmark",
+      "label": "Benchmark"
+    },
+    {
+      "slug": "synthetic-data-generation",
+      "label": "Synthetic Data Generation"
+    },
+    {
+      "slug": "medical-image-synthesis",
+      "label": "Medical Image Synthesis"
+    },
+    {
+      "slug": "ai-technique",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "cvpr",
+      "label": "CVPR"
+    },
+    {
+      "slug": "neur-ips",
+      "label": "NeurIPS"
+    }
+  ],
   "backlinks": [
     {
       "slug": "diffusion-models",

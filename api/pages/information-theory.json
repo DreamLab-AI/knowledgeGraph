@@ -256,6 +256,10 @@
       "label": "Entropy"
     },
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     },

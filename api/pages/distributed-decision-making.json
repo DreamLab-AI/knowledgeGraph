@@ -428,5 +428,10 @@
       "label": "Smart Contracts"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
+    }
+  ]
 }

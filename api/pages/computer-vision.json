@@ -944,12 +944,20 @@
       "label": "Exteroceptive Sensor"
     },
     {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    },
+    {
       "slug": "face-recognition",
       "label": "Face Recognition"
     },
     {
       "slug": "face-swap",
       "label": "Face Swap"
+    },
+    {
+      "slug": "facial-action-coding-system",
+      "label": "Facial Action Coding System"
     },
     {
       "slug": "fashion",

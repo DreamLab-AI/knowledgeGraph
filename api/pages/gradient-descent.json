@@ -254,6 +254,10 @@
       "label": "Deep Learning"
     },
     {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

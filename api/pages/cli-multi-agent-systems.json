@@ -478,6 +478,10 @@
       "label": "Economics"
     },
     {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
+    },
+    {
       "slug": "gpt-engineer",
       "label": "GPT Engineer"
     },

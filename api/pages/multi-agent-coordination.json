@@ -179,6 +179,10 @@
       "label": "Digital Citizens' Assembly"
     },
     {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
+    },
+    {
       "slug": "lang-graph",
       "label": "LangGraph"
     },

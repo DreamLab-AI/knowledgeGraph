@@ -826,6 +826,10 @@
       "label": "ETSI_Domain_Virtual_Society"
     },
     {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
+    },
+    {
       "slug": "federation",
       "label": "Federation"
     },

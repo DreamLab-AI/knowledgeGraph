@@ -400,6 +400,10 @@
       "label": "DSPy"
     },
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     },

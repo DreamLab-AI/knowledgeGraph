@@ -167,6 +167,10 @@
       "label": "Decision Making"
     },
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
       "slug": "offline-reinforcement-learning",
       "label": "Offline Reinforcement Learning"
     }

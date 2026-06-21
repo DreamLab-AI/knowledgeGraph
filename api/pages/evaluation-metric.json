@@ -191,6 +191,10 @@
       "label": "Decision Tree"
     },
     {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    },
+    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
     },

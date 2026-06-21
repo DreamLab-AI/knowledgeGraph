@@ -200,6 +200,10 @@
       "label": "Embodied Minds"
     },
     {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    },
+    {
       "slug": "gan",
       "label": "GAN"
     },

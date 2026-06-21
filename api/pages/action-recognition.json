@@ -270,6 +270,10 @@
       "label": "DWPose"
     },
     {
+      "slug": "facial-action-coding-system",
+      "label": "Facial Action Coding System"
+    },
+    {
       "slug": "pose-estimation",
       "label": "Pose Estimation"
     }

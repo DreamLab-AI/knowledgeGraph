@@ -152,6 +152,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
       "slug": "feedback-loop",
       "label": "Feedback Loop"
     },

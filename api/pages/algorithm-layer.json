@@ -391,6 +391,14 @@
       "label": "Embodied Minds"
     },
     {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },

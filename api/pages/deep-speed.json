@@ -128,6 +128,10 @@
       "label": "Compute Infrastructure"
     },
     {
+      "slug": "fsdp",
+      "label": "FSDP"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     }

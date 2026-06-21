@@ -189,6 +189,10 @@
       "label": "Explainable AI"
     },
     {
+      "slug": "feature-attribution",
+      "label": "Feature Attribution"
+    },
+    {
       "slug": "feature-importance",
       "label": "Feature Importance"
     },

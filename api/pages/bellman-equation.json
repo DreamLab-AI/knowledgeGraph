@@ -94,6 +94,10 @@
     {
       "slug": "deep-reinforcement-learning",
       "label": "Deep Reinforcement Learning"
+    },
+    {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
     }
   ]
 }

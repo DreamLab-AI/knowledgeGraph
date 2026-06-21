@@ -4,30 +4,149 @@
   "slug": "facial-action-coding-system",
   "public": true,
   "classIri": "urn:ngm:class:facial-action-coding-system",
-  "domain": "ai",
-  "definition": "The Facial Action Coding System (FACS) is a comprehensive taxonomy for describing visible facial movements by decomposing expressions into discrete Action Units, each corresponding to the activation of one or more facial muscles. Developed by Ekman and Friesen, it provides an objective, anatomically grounded vocabulary that maps muscle activity to coded units independent of emotional interpretation. FACS is widely used in affective computing, animation, and behavioural research to detect and synthesise facial expressions.",
+  "domain": "artificial-intelligence",
+  "definition": "The Facial Action Coding System (FACS) is a comprehensive, anatomically grounded taxonomy for objectively describing and encoding visible facial movements by decomposing expressions into discrete Action Units (AUs), each corresponding to the contraction of one or more specific facial muscles. Developed originally by Swedish anatomist Carl-Herman Hjortsj\u00f6 and systematised by psychologists Paul Ekman and Wallace V. Friesen in 1978, FACS provides a muscle-based, observer-independent vocabulary for facial behaviour that separates objective biomechanical measurement from subjective emotional interpretation. It is the foundational measurement framework for automated Emotion Recognition, avatar facial animation, clinical pain and depression assessment, and affective computing research.",
   "subClassOf": [
+    {
+      "id": "urn:ngm:class:affective-computing",
+      "label": "Affective Computing"
+    },
     {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:action-unit",
+        "label": "Action Unit"
+      },
+      {
+        "id": "urn:ngm:class:au-intensity-coding",
+        "label": "AU Intensity Coding"
+      },
+      {
+        "id": "urn:ngm:class:au-occurrence-detection",
+        "label": "AU Occurrence Detection"
+      },
+      {
+        "id": "urn:ngm:class:facial-landmark-detection",
+        "label": "Facial Landmark Detection"
+      },
+      {
+        "id": "urn:ngm:class:facs-annotated-dataset",
+        "label": "FACS Annotated Dataset"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      },
+      {
+        "id": "urn:ngm:class:facial-landmark-detection",
+        "label": "Facial Landmark Detection"
+      },
+      {
+        "id": "urn:ngm:class:feature-extraction",
+        "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:annotated-dataset",
+        "label": "Annotated Dataset"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
+      {
+        "id": "urn:ngm:class:empathetic-ai",
+        "label": "Empathetic AI"
+      },
+      {
+        "id": "urn:ngm:class:affective-computing",
+        "label": "Affective Computing"
+      },
+      {
+        "id": "urn:ngm:class:pain-assessment",
+        "label": "Pain Assessment"
+      },
+      {
+        "id": "urn:ngm:class:avatar-animation",
+        "label": "Avatar Animation"
+      },
+      {
+        "id": "urn:ngm:class:mental-health-monitoring",
+        "label": "Mental Health Monitoring"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:face-recognition",
+        "label": "Face Recognition"
+      },
+      {
+        "id": "urn:ngm:class:annotated-dataset",
+        "label": "Annotated Dataset"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:action-recognition",
+        "label": "Action Recognition"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:categorical-emotion-model",
+        "label": "Categorical Emotion Model"
+      },
+      {
+        "id": "urn:ngm:class:dimensional-emotion-model",
+        "label": "Dimensional Emotion Model"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:social-robotics",
+        "label": "Social Robotics"
+      },
+      {
+        "id": "urn:ngm:class:driver-monitoring-system",
+        "label": "Driver Monitoring System"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
+      {
+        "id": "urn:ngm:class:emotion-recognition",
+        "label": "Emotion Recognition"
+      },
       {
         "id": "urn:ngm:class:empathetic-ai",
         "label": "Empathetic AI"
@@ -35,10 +154,59 @@
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "emotion-recognition",
+      "label": "Emotion Recognition"
+    },
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "face-recognition",
+      "label": "Face Recognition"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    }
+  ],
   "backlinks": [
     {
       "slug": "affective-computing-system",

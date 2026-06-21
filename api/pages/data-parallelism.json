@@ -172,5 +172,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "fsdp",
+      "label": "FSDP"
+    }
+  ]
 }

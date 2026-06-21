@@ -153,6 +153,10 @@
       "label": "Domain Ontology"
     },
     {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
+    },
+    {
       "slug": "graph-database",
       "label": "Graph Database"
     },

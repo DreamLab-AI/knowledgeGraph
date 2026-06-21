@@ -661,6 +661,10 @@
       "label": "Depth Estimation"
     },
     {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    },
+    {
       "slug": "fashion",
       "label": "Fashion"
     },

@@ -200,6 +200,10 @@
       "label": "Diffusion Models"
     },
     {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    },
+    {
       "slug": "image-generation",
       "label": "Image Generation"
     },

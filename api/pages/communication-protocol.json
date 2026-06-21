@@ -253,6 +253,10 @@
       "label": "EMC Standard"
     },
     {
+      "slug": "fipa-acl",
+      "label": "FIPA ACL"
+    },
+    {
       "slug": "federation",
       "label": "Federation"
     },
