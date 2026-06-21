@@ -10,13 +10,38 @@
     {
       "id": "urn:ngm:class:agile-software-development",
       "label": "Agile Software Development"
+    },
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    },
+    {
+      "id": "urn:ngm:class:cybersecurity",
+      "label": "Cybersecurity"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.95,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:security-testing",
+        "label": "Security Testing"
+      },
+      {
+        "id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "id": "urn:ngm:class:continuous-monitoring",
+        "label": "Continuous Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:policy-as-code",
+        "label": "Policy as Code"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:ci-cd-automation",
@@ -25,23 +50,35 @@
       {
         "id": "urn:ngm:class:vulnerability-scanner",
         "label": "Vulnerability Scanner"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:cloud-security",
+        "label": "Cloud Security"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:security-testing",
-        "label": "Security Testing"
-      },
-      {
-        "id": "urn:ngm:class:penetration-testing",
-        "label": "Penetration Testing"
-      }
-    ],
+    "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -53,6 +90,14 @@
       {
         "id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
+      },
+      {
+        "id": "urn:ngm:class:ai-security",
+        "label": "AI Security"
+      },
+      {
+        "id": "urn:ngm:class:cybersecurity-risk-management",
+        "label": "Cybersecurity Risk Management"
       }
     ]
   },

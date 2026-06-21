@@ -17521,7 +17521,7 @@
     {
       "slug": "drug-discovery",
       "title": "Drug Discovery",
-      "qualityScore": 0.72
+      "qualityScore": 0.92
     },
     {
       "slug": "dynamic-programming",
@@ -27502,12 +27502,12 @@
     {
       "slug": "dev-sec-ops",
       "title": "DevSecOps",
-      "qualityScore": 0.8
+      "qualityScore": 0.95
     },
     {
       "slug": "di-lo-co",
       "title": "DiLoCo",
-      "qualityScore": 0.72
+      "qualityScore": 0.95
     },
     {
       "slug": "dialogue-management",
@@ -27537,7 +27537,7 @@
     {
       "slug": "dynamic-batching",
       "title": "Dynamic Batching",
-      "qualityScore": 0.62
+      "qualityScore": 0.91
     },
     {
       "slug": "dynamic-model",
@@ -27612,7 +27612,7 @@
     {
       "slug": "evaluation-harness",
       "title": "Evaluation Harness",
-      "qualityScore": 0.8
+      "qualityScore": 0.88
     },
     {
       "slug": "evaluation-layer",
@@ -34012,7 +34012,7 @@
     {
       "slug": "euclidean-distance",
       "title": "Euclidean Distance",
-      "qualityScore": 0.62
+      "qualityScore": 0.88
     },
     {
       "slug": "evidence-lower-bound",

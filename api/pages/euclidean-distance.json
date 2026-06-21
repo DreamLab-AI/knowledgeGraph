@@ -13,13 +13,17 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.88,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:statistical-analysis",
         "label": "Statistical Analysis"
+      },
+      {
+        "id": "urn:ngm:class:l2-norm",
+        "label": "L2 Norm"
       }
     ],
     "requires": [
@@ -38,30 +42,54 @@
         "label": "Machine Learning"
       },
       {
-        "id": "urn:ngm:class:data-modelling",
-        "label": "Data Modelling"
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      },
+      {
+        "id": "urn:ngm:class:nearest-neighbor-search",
+        "label": "Nearest Neighbor Search"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:tensor",
         "label": "Tensor"
+      },
+      {
+        "id": "urn:ngm:class:feature-normalisation",
+        "label": "Feature Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:numerical-methods",
         "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:minkowski-distance",
+        "label": "Minkowski Distance"
       }
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:fourier-transform",
-        "label": "Fourier Transform"
+        "id": "urn:ngm:class:cosine-similarity",
+        "label": "Cosine Similarity"
       },
       {
-        "id": "urn:ngm:class:distance-metric",
-        "label": "Distance Metric"
+        "id": "urn:ngm:class:manhattan-distance",
+        "label": "Manhattan Distance"
+      },
+      {
+        "id": "urn:ngm:class:mahalanobis-distance",
+        "label": "Mahalanobis Distance"
       }
     ],
     "bridgesTo": [
@@ -84,6 +112,14 @@
       {
         "id": "urn:ngm:class:data-management",
         "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
       }
     ],
     "standardizedBy": [],
@@ -96,6 +132,14 @@
       {
         "id": "urn:ngm:class:ultra-wideband",
         "label": "Ultra Wideband"
+      },
+      {
+        "id": "urn:ngm:class:k-means",
+        "label": "K-Means"
+      },
+      {
+        "id": "urn:ngm:class:faiss",
+        "label": "FAISS"
       }
     ]
   },

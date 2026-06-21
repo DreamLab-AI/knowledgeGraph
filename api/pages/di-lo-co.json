@@ -10,15 +10,62 @@
     {
       "id": "urn:ngm:class:distributed-computing",
       "label": "Distributed Computing"
+    },
+    {
+      "id": "urn:ngm:class:distributed-ai-training",
+      "label": "Distributed AI Training"
+    },
+    {
+      "id": "urn:ngm:class:federated-learning",
+      "label": "Federated Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
-  "maturity": "experimental",
+  "qualityScore": 0.95,
+  "maturity": "active-research",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:local-sgd",
+        "label": "Local SGD"
+      },
+      {
+        "id": "urn:ngm:class:pseudo-gradient-aggregation",
+        "label": "Pseudo-Gradient Aggregation"
+      },
+      {
+        "id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      },
+      {
+        "id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      },
+      {
+        "id": "urn:ngm:class:checkpoint-recovery",
+        "label": "Checkpoint Recovery"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralised-ai",
+        "label": "Decentralised AI"
+      },
+      {
+        "id": "urn:ngm:class:compute-democratisation",
+        "label": "Compute Democratisation"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-model-ownership",
+        "label": "Collaborative Model Ownership"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -35,6 +82,14 @@
       {
         "id": "urn:ngm:class:distributed-ai-training",
         "label": "Distributed AI Training"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:bittensor",
+        "label": "Bittensor"
       }
     ]
   },

@@ -2,11 +2,11 @@
   "total_pages": 7458,
   "pages_with_ontology": 7458,
   "public_pages": 7444,
-  "total_issues": 954,
+  "total_issues": 956,
   "errors": 0,
-  "warnings": 954,
+  "warnings": 956,
   "by_code": {
-    "MULTI_PARENT": 951,
+    "MULTI_PARENT": 953,
     "INVALID_DOMAIN": 3
   },
   "issues": [
@@ -1743,6 +1743,18 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Actuation and Control, Actuation and Control, Actuation and Control"
+    },
+    {
+      "path": "DevSecOps.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (3): Agile Software Development, Software Engineering, Cybersecurity"
+    },
+    {
+      "path": "DiLoCo.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (3): Distributed Computing, Distributed AI Training, Federated Learning"
     },
     {
       "path": "Diagrams as Code.md",
