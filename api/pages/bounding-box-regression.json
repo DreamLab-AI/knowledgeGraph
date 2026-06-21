@@ -24,6 +24,18 @@
       {
         "id": "urn:ngm:class:heatmap-regression",
         "label": "Heatmap Regression"
+      },
+      {
+        "id": "urn:ngm:class:feature-pyramid-network",
+        "label": "Feature Pyramid Network"
+      },
+      {
+        "id": "urn:ngm:class:anchor-box",
+        "label": "Anchor Box"
+      },
+      {
+        "id": "urn:ngm:class:iou-loss",
+        "label": "IoU Loss"
       }
     ],
     "requires": [
@@ -34,6 +46,14 @@
       {
         "id": "urn:ngm:class:regression",
         "label": "Regression"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
       }
     ],
     "enables": [
@@ -44,6 +64,18 @@
       {
         "id": "urn:ngm:class:computer-vision-system",
         "label": "Computer Vision System"
+      },
+      {
+        "id": "urn:ngm:class:instance-segmentation",
+        "label": "Instance Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
       }
     ],
     "dependsOn": [
@@ -54,13 +86,34 @@
       {
         "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:object-detection",
+        "label": "Object Detection"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:regression-testing",
         "label": "Regression Testing"
+      },
+      {
+        "id": "urn:ngm:class:heatmap-regression",
+        "label": "Heatmap Regression"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
       }
     ],
     "bridgesTo": [],
@@ -72,6 +125,14 @@
       {
         "id": "urn:ngm:class:computer-vision-task",
         "label": "Computer Vision Task"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       }
     ],
     "supports": [
@@ -82,6 +143,14 @@
       {
         "id": "urn:ngm:class:real-time-ai",
         "label": "Real-Time AI"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:medical-image-analysis",
+        "label": "Medical Image Analysis"
       }
     ],
     "standardizedBy": [],
@@ -98,6 +167,14 @@
       {
         "id": "urn:ngm:class:gaussian-process-regression",
         "label": "Gaussian Process Regression"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
       }
     ]
   },

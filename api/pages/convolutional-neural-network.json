@@ -232,6 +232,18 @@
       "label": "Audio Synthesis"
     },
     {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
       "slug": "computer-vision",
       "label": "Computer Vision"
     },

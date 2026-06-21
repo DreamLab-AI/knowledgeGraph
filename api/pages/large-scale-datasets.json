@@ -45,6 +45,10 @@
       "label": "AI Art Generation"
     },
     {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
     },

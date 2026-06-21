@@ -478,6 +478,18 @@
       "label": "Asynchronous Video"
     },
     {
+      "slug": "beir-benchmark",
+      "label": "BEIR Benchmark"
+    },
+    {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
+      "slug": "chunking",
+      "label": "Chunking"
+    },
+    {
       "slug": "cohere",
       "label": "Cohere"
     },

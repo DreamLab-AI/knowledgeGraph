@@ -156,6 +156,14 @@
       "label": "Architecture"
     },
     {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

@@ -528,6 +528,10 @@
       "label": "Automated Podcasting"
     },
     {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
       "slug": "death-of-the-internet",
       "label": "Death of the Internet"
     },

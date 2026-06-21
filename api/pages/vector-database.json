@@ -171,8 +171,20 @@
       "label": "Agents"
     },
     {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "chunking",
+      "label": "Chunking"
     },
     {
       "slug": "data-layer",

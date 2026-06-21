@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },

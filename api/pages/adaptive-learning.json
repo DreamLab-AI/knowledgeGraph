@@ -429,6 +429,10 @@
       "label": "Affective Computing System"
     },
     {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
       "slug": "education-and-ai",
       "label": "Education and AI"
     },

@@ -50,6 +50,10 @@
       "label": "Agentic RAG"
     },
     {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
       "slug": "semantic-search",
       "label": "Semantic Search"
     }

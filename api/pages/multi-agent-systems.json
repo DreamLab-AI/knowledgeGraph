@@ -187,6 +187,10 @@
       "label": "AutoGen"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
     },

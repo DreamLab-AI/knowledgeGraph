@@ -116,6 +116,18 @@
     {
       "slug": "attention-weight",
       "label": "Attention Weight"
+    },
+    {
+      "slug": "blip-2-captioner",
+      "label": "BLIP-2 Captioner"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
     }
   ]
 }

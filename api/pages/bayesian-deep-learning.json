@@ -128,6 +128,10 @@
       "label": "Artificial Intelligence Research"
     },
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
       "slug": "perception-system",
       "label": "Perception System"
     },

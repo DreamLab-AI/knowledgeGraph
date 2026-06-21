@@ -102,6 +102,10 @@
     {
       "slug": "artificial-intelligence-research",
       "label": "Artificial Intelligence Research"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
     }
   ]
 }

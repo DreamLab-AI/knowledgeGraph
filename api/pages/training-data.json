@@ -578,6 +578,18 @@
       "label": "automatic speech recognition"
     },
     {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
       "slug": "chatbots",
       "label": "Chatbots"
     },

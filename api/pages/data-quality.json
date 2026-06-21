@@ -143,6 +143,14 @@
       "label": "AI Adoption"
     },
     {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
       "slug": "data-pipeline",
       "label": "Data Pipeline"
     },

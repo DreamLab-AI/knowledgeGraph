@@ -95,6 +95,10 @@
     {
       "slug": "ai-energy-optimisation",
       "label": "AI Energy Optimisation"
+    },
+    {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
     }
   ]
 }

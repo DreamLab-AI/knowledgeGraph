@@ -114,6 +114,10 @@
       "label": "AI in Games"
     },
     {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },

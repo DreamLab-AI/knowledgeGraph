@@ -187,6 +187,10 @@
       "label": "Automated Planning"
     },
     {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "search-algorithms",
       "label": "Search Algorithms"
     }

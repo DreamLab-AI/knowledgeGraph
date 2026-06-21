@@ -372,6 +372,10 @@
       "label": "agentic ai"
     },
     {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
       "slug": "retrieval-augmented-generation-rag",
       "label": "Retrieval Augmented Generation - RAG"
     }

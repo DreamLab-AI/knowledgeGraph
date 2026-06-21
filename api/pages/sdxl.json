@@ -72,6 +72,10 @@
       "label": "AI Upscaling and Super-Resolution"
     },
     {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
     },

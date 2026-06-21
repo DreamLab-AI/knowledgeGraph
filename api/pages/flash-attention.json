@@ -161,6 +161,10 @@
       "label": "Attention Mechanisms"
     },
     {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    },
+    {
       "slug": "kohya-dreambooth-and-similar",
       "label": "KOHYA Dreambooth and similar"
     },

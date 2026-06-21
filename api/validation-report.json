@@ -2,11 +2,11 @@
   "total_pages": 7445,
   "pages_with_ontology": 7445,
   "public_pages": 7431,
-  "total_issues": 898,
+  "total_issues": 906,
   "errors": 0,
-  "warnings": 898,
+  "warnings": 906,
   "by_code": {
-    "MULTI_PARENT": 896,
+    "MULTI_PARENT": 904,
     "INVALID_DOMAIN": 2
   },
   "issues": [
@@ -623,6 +623,12 @@
       "message": "Multiple parents (2): Content and Assets, Interaction Technology"
     },
     {
+      "path": "BEIR Benchmark.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Information Retrieval, Evaluation Benchmark"
+    },
+    {
       "path": "BIM Software.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -635,10 +641,28 @@
       "message": "Multiple parents (3): Cryptographic Primitive, Blockchain Entity, Cryptographic Primitive"
     },
     {
+      "path": "BLIP-2 Captioner.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Computer Vision, Multimodal AI Architecture"
+    },
+    {
+      "path": "BM25.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Search Algorithm, Information Retrieval"
+    },
+    {
       "path": "BTC Layer 3.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Protocol and Consensus, Network Component, Network Component"
+    },
+    {
+      "path": "Back-Translation.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Natural Language Processing, Data Augmentation"
     },
     {
       "path": "Backlash.md",
@@ -657,6 +681,30 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, Economic Mechanism"
+    },
+    {
+      "path": "Batch Inference.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Machine Learning, Model Serving"
+    },
+    {
+      "path": "Bayesian Decision Theory.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Statistics, Decision Theory"
+    },
+    {
+      "path": "Bayesian Knowledge Tracing.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (3): Adaptive Learning, Probabilistic Model, Learner Model"
+    },
+    {
+      "path": "Bayesian Optimisation.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Optimisation, Probabilistic Model"
     },
     {
       "path": "Behavior Analysis.md",

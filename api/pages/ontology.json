@@ -136,6 +136,10 @@
       "label": "COMPLETE ONTOLOGY INDEX"
     },
     {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
+    },
+    {
       "slug": "description-logic",
       "label": "Description Logic"
     },

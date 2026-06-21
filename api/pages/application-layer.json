@@ -313,6 +313,10 @@
       "label": "Bandwidth Adaptation"
     },
     {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
       "slug": "bias-in-large-language-models",
       "label": "Bias in Large Language Models"
     },

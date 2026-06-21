@@ -465,6 +465,22 @@
       "label": "Automated Design"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
       "slug": "california-ai-bill",
       "label": "California AI bill"
     },

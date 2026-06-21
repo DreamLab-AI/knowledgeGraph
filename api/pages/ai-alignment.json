@@ -218,6 +218,18 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
       "slug": "bias-in-large-language-models",
       "label": "Bias in Large Language Models"
     },

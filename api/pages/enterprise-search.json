@@ -136,6 +136,10 @@
       "label": "Agentic RAG"
     },
     {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
       "slug": "chatbots",
       "label": "Chatbots"
     },

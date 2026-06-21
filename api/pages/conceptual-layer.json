@@ -116,6 +116,10 @@
       "label": "Bias Mitigation Techniques"
     },
     {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
       "slug": "block-header",
       "label": "Block Header"
     },

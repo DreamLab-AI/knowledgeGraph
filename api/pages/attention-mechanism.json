@@ -220,6 +220,26 @@
       "label": "automatic speech recognition"
     },
     {
+      "slug": "blip-2-captioner",
+      "label": "BLIP-2 Captioner"
+    },
+    {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
       "slug": "comfy-ui-for-fashion-and-brands",
       "label": "comfy-ui-for-fashion-and-brands"
     },

@@ -218,8 +218,20 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "beir-benchmark",
+      "label": "BEIR Benchmark"
+    },
+    {
       "slug": "chatbots",
       "label": "Chatbots"
+    },
+    {
+      "slug": "chunking",
+      "label": "Chunking"
     },
     {
       "slug": "cohere",

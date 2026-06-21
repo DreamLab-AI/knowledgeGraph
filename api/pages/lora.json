@@ -94,6 +94,10 @@
     {
       "slug": "automatic-1111-web-ui",
       "label": "AUTOMATIC1111 WebUI"
+    },
+    {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
     }
   ]
 }

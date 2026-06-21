@@ -187,8 +187,20 @@
       "label": "A Star Algorithm"
     },
     {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
       "slug": "autonomous-robot",
       "label": "Autonomous Robot"
+    },
+    {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
     },
     {
       "slug": "collision-detection",

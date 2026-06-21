@@ -17,14 +17,52 @@
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:reference-translation",
+        "label": "Reference Translation"
+      },
+      {
+        "id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-evaluation",
+        "label": "Automated Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      },
+      {
+        "id": "urn:ngm:class:regression-testing",
+        "label": "Regression Testing"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:evaluation-harness",
         "label": "Evaluation Harness"
+      },
+      {
+        "id": "urn:ngm:class:comet-metric",
+        "label": "COMET Metric"
+      },
+      {
+        "id": "urn:ngm:class:bert-score",
+        "label": "BERTScore"
+      },
+      {
+        "id": "urn:ngm:class:human-evaluation",
+        "label": "Human Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:meteor-metric",
+        "label": "METEOR"
       }
     ],
     "bridgesTo": [],
@@ -36,9 +74,30 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:n-gram-overlap",
+        "label": "N-Gram Overlap"
+      },
+      {
+        "id": "urn:ngm:class:geometric-mean",
+        "label": "Geometric Mean"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:text-summarisation",
+        "label": "Text Summarisation"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -53,11 +112,39 @@
       {
         "id": "urn:ngm:class:language-model",
         "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:sacrebleu",
+        "label": "SacreBLEU"
+      },
+      {
+        "id": "urn:ngm:class:meteor-metric",
+        "label": "METEOR"
+      },
+      {
+        "id": "urn:ngm:class:rouge-metric",
+        "label": "ROUGE"
+      },
+      {
+        "id": "urn:ngm:class:comet-metric",
+        "label": "COMET Metric"
+      },
+      {
+        "id": "urn:ngm:class:bert-score",
+        "label": "BERTScore"
+      },
+      {
+        "id": "urn:ngm:class:wmt-benchmark",
+        "label": "WMT Benchmark"
       }
     ]
   },
   "wikilinks": [],
   "backlinks": [
+    {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
     {
       "slug": "real-time-translation",
       "label": "Real-time Translation"

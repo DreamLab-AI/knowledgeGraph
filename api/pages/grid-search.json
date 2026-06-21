@@ -90,6 +90,10 @@
     {
       "slug": "acquisition-function",
       "label": "Acquisition Function"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
     }
   ]
 }

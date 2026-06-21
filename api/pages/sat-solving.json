@@ -108,6 +108,10 @@
       "label": "Automated Reasoning"
     },
     {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "task-planning",
       "label": "Task Planning"
     }

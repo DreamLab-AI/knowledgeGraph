@@ -214,6 +214,18 @@
       "label": "Affective Computing System"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
       "slug": "autonomous-robot",
       "label": "Autonomous Robot"
     },
@@ -224,6 +236,10 @@
     {
       "slug": "bayes-filter",
       "label": "Bayes Filter"
+    },
+    {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
     },
     {
       "slug": "context-awareness",

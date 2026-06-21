@@ -525,6 +525,14 @@
       "label": "AutoGen"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
       "slug": "collaborative-operation",
       "label": "Collaborative Operation"
     },

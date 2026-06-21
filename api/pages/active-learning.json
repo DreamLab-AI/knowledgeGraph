@@ -357,6 +357,18 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
       "slug": "breakout-room",
       "label": "Breakout Room"
     },

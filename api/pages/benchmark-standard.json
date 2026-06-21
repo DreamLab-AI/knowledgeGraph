@@ -167,6 +167,14 @@
       "label": "Academic Conference"
     },
     {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
       "slug": "environmental-impact-metric",
       "label": "Environmental Impact Metric"
     }

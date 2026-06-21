@@ -630,6 +630,10 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
     },

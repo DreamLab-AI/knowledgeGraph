@@ -165,6 +165,18 @@
       "label": "Algorithmic Framework"
     },
     {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "constraint-satisfaction",
       "label": "Constraint Satisfaction"
     },

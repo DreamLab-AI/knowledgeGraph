@@ -164,6 +164,14 @@
       "label": "Adaptive Behaviour"
     },
     {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "imitation-learning",
       "label": "Imitation Learning"
     },

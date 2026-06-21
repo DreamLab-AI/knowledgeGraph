@@ -47,6 +47,14 @@
     {
       "slug": "asia-pacific-regulation",
       "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
     }
   ]
 }

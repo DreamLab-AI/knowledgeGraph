@@ -148,6 +148,10 @@
       "label": "Audio Synthesis"
     },
     {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
       "slug": "comfy-ui-for-fashion-and-brands",
       "label": "comfy-ui-for-fashion-and-brands"
     },

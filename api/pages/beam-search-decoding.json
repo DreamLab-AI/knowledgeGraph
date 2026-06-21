@@ -13,11 +13,41 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.95,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:length-normalisation",
+        "label": "Length Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:coverage-penalty",
+        "label": "Coverage Penalty"
+      },
+      {
+        "id": "urn:ngm:class:diverse-beam-search",
+        "label": "Diverse Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:constrained-decoding",
+        "label": "Constrained Decoding"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      },
+      {
+        "id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:vocabulary",
+        "label": "Vocabulary"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:machine-translation",
@@ -26,11 +56,65 @@
       {
         "id": "urn:ngm:class:text-generation",
         "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-summarisation",
+        "label": "Text Summarisation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:greedy-decoding",
+        "label": "Greedy Decoding"
+      },
+      {
+        "id": "urn:ngm:class:nucleus-sampling",
+        "label": "Nucleus Sampling"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -40,6 +124,26 @@
       {
         "id": "urn:ngm:class:encoder-decoder-architecture",
         "label": "Encoder Decoder Architecture"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV-Cache"
+      },
+      {
+        "id": "urn:ngm:class:log-probability",
+        "label": "Log-Probability"
+      },
+      {
+        "id": "urn:ngm:class:length-normalisation",
+        "label": "Length Normalisation"
       }
     ],
     "supports": [],
@@ -53,11 +157,176 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:exposure-bias",
+        "label": "Exposure Bias"
+      },
+      {
+        "id": "urn:ngm:class:inference-time-compute",
+        "label": "Inference-Time Compute"
+      },
+      {
+        "id": "urn:ngm:class:process-reward-model",
+        "label": "Process Reward Model"
+      },
+      {
+        "id": "urn:ngm:class:constrained-decoding",
+        "label": "Constrained Decoding"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "encoder-decoder-architecture",
+      "label": "Encoder Decoder Architecture"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "greedy-decoding",
+      "label": "Greedy Decoding"
+    },
+    {
+      "slug": "nucleus-sampling",
+      "label": "Nucleus Sampling"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "sequence-to-sequence-learning",
+      "label": "Sequence-to-Sequence Learning"
+    },
+    {
+      "slug": "speculative-decoding",
+      "label": "Speculative Decoding"
+    },
+    {
+      "slug": "constrained-decoding",
+      "label": "Constrained Decoding"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "natural-language-generation",
+      "label": "Natural Language Generation"
+    },
+    {
+      "slug": "log-probability",
+      "label": "Log-Probability"
+    },
+    {
+      "slug": "length-normalisation",
+      "label": "Length Normalisation"
+    },
+    {
+      "slug": "inference-time-compute",
+      "label": "Inference-Time Compute"
+    },
+    {
+      "slug": "process-reward-model",
+      "label": "Process Reward Model"
+    },
+    {
+      "slug": "kv-cache",
+      "label": "KV-Cache"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "coverage-penalty",
+      "label": "Coverage Penalty"
+    },
+    {
+      "slug": "diverse-beam-search",
+      "label": "Diverse Beam Search"
+    },
+    {
+      "slug": "exposure-bias",
+      "label": "Exposure Bias"
+    },
+    {
+      "slug": "image-captioning",
+      "label": "Image Captioning"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "probability-distribution",
+      "label": "Probability Distribution"
+    },
+    {
+      "slug": "vocabulary",
+      "label": "Vocabulary"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
     {
       "slug": "real-time-translation",
       "label": "Real-time Translation"

@@ -121,6 +121,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
+    },
+    {
       "slug": "description-logic",
       "label": "Description Logic"
     },

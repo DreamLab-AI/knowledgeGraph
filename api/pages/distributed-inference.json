@@ -98,6 +98,10 @@
     {
       "slug": "ai-inference",
       "label": "AI Inference"
+    },
+    {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
     }
   ]
 }

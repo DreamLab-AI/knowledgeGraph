@@ -198,6 +198,10 @@
       "label": "Applied Machine Learning"
     },
     {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    },
+    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },

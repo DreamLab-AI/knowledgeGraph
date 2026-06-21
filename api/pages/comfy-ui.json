@@ -112,6 +112,10 @@
       "label": "Artificial Intelligence"
     },
     {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
       "slug": "comfy-ui-workflows",
       "label": "ComfyUI Workflows"
     },

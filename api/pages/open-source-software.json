@@ -158,6 +158,10 @@
       "label": "Alan Turing Institute"
     },
     {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
       "slug": "bitcoin-technical-overview",
       "label": "Bitcoin Technical Overview"
     },

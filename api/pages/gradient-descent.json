@@ -210,6 +210,10 @@
       "label": "Automatic Differentiation"
     },
     {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

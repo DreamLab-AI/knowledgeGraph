@@ -45,6 +45,10 @@
       "label": "Autonomous Agent"
     },
     {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     }

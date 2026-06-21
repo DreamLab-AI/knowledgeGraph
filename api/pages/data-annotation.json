@@ -158,6 +158,14 @@
       "label": "ADE20K"
     },
     {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
       "slug": "human-in-the-loop-learning",
       "label": "Human-in-the- Loop Learning"
     }

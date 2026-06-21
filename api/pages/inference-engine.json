@@ -153,6 +153,10 @@
       "label": "Chatbots"
     },
     {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     },

@@ -261,6 +261,10 @@
       "label": "Applied Machine Learning"
     },
     {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },

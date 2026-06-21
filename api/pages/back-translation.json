@@ -10,31 +10,329 @@
     {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
+    },
+    {
+      "id": "urn:ngm:class:data-augmentation",
+      "label": "Data Augmentation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:monolingual-data",
+        "label": "Monolingual Data"
+      },
+      {
+        "id": "urn:ngm:class:parallel-corpus",
+        "label": "Parallel Corpus"
+      },
+      {
+        "id": "urn:ngm:class:quality-estimation",
+        "label": "Quality Estimation"
+      },
+      {
+        "id": "urn:ngm:class:noise-injection",
+        "label": "Noise Injection"
+      },
+      {
+        "id": "urn:ngm:class:iterative-training",
+        "label": "Iterative Training"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:neural-machine-translation",
+        "label": "Neural Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:monolingual-data",
+        "label": "Monolingual Data"
+      },
+      {
+        "id": "urn:ngm:class:sequence-to-sequence-model",
+        "label": "Sequence-to-Sequence Model"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:low-resource-language",
+        "label": "Low-Resource Language"
+      },
+      {
+        "id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:multilingual-model",
+        "label": "Multilingual Model"
+      },
       {
         "id": "urn:ngm:class:translation",
         "label": "Translation"
       }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:neural-machine-translation",
+        "label": "Neural Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder Decoder Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:semi-supervised-learning",
+        "label": "Semi-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-training",
+        "label": "Self-Training"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:forward-translation",
+        "label": "Forward Translation"
+      },
+      {
+        "id": "urn:ngm:class:round-trip-translation",
+        "label": "Round-Trip Translation"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:bleu-score",
+        "label": "BLEU Score"
+      },
+      {
+        "id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:cross-entropy-loss",
+        "label": "Cross-Entropy Loss"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:quality-estimation",
+        "label": "Quality Estimation"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:curriculum-learning",
+        "label": "Curriculum Learning"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:wmt-benchmark",
+        "label": "WMT Benchmark"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:parallel-corpus",
+        "label": "Parallel Corpus"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation-strategies",
+        "label": "Data Augmentation Strategies"
+      },
+      {
+        "id": "urn:ngm:class:multilingual-model",
+        "label": "Multilingual Model"
+      }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "neural-machine-translation",
+      "label": "Neural Machine Translation"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "low-resource-language",
+      "label": "Low-Resource Language"
+    },
+    {
+      "slug": "parallel-corpus",
+      "label": "Parallel Corpus"
+    },
+    {
+      "slug": "monolingual-data",
+      "label": "Monolingual Data"
+    },
+    {
+      "slug": "bleu-score",
+      "label": "BLEU Score"
+    },
+    {
+      "slug": "sequence-to-sequence-model",
+      "label": "Sequence-to-Sequence Model"
+    },
+    {
+      "slug": "encoder-decoder-architecture",
+      "label": "Encoder Decoder Architecture"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "quality-estimation",
+      "label": "Quality Estimation"
+    },
+    {
+      "slug": "semi-supervised-learning",
+      "label": "Semi-Supervised Learning"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "Synthetic Data"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "domain-adaptation",
+      "label": "Domain Adaptation"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "multilingual-model",
+      "label": "Multilingual Model"
+    },
+    {
+      "slug": "noise-injection",
+      "label": "Noise Injection"
+    },
+    {
+      "slug": "iterative-training",
+      "label": "Iterative Training"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
+      "slug": "curriculum-learning",
+      "label": "Curriculum Learning"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "self-training",
+      "label": "Self-Training"
+    },
+    {
+      "slug": "round-trip-translation",
+      "label": "Round-Trip Translation"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "nlp-layer",
+      "label": "NLPLayer"
+    },
+    {
+      "slug": "data-augmentation-strategies",
+      "label": "Data Augmentation Strategies"
+    }
+  ],
   "backlinks": [
     {
       "slug": "translation",

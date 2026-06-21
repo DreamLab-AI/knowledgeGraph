@@ -103,6 +103,10 @@
     {
       "slug": "acoustic-model",
       "label": "Acoustic Model"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
     }
   ]
 }

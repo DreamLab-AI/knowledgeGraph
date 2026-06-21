@@ -629,6 +629,10 @@
       "label": "AI Art Generation"
     },
     {
+      "slug": "blip-2-captioner",
+      "label": "BLIP-2 Captioner"
+    },
+    {
       "slug": "pre-training",
       "label": "Pre Training"
     },

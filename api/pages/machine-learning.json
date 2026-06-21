@@ -329,8 +329,24 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    },
+    {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
       "slug": "bayesian-decision-theory",
       "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
     },
     {
       "slug": "behavior-analysis",
@@ -351,6 +367,18 @@
     {
       "slug": "behavioural-feedback-loop",
       "label": "Behavioural Feedback Loop"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
     },
     {
       "slug": "bias",

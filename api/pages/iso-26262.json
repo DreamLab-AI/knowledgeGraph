@@ -131,6 +131,10 @@
       "label": "ADAS"
     },
     {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
       "slug": "autonomous-vehicle",
       "label": "Autonomous Vehicle"
     },

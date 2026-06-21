@@ -219,6 +219,14 @@
       "label": "Autoencoder"
     },
     {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
       "slug": "bias-in-large-language-models",
       "label": "Bias in Large Language Models"
     },

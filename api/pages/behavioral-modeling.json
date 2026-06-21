@@ -145,6 +145,10 @@
     {
       "slug": "affective-computing-system",
       "label": "Affective Computing System"
+    },
+    {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
     }
   ]
 }

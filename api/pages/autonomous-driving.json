@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.73,
+  "qualityScore": 0.88,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [],
@@ -37,6 +37,14 @@
       {
         "id": "urn:ngm:class:object-detection",
         "label": "Object Detection"
+      },
+      {
+        "id": "urn:ngm:class:hd-maps",
+        "label": "HD Maps"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-driving-perception",
+        "label": "Autonomous Driving Perception"
       }
     ],
     "enables": [
@@ -51,6 +59,10 @@
       {
         "id": "urn:ngm:class:last-mile-delivery",
         "label": "Last-Mile Delivery"
+      },
+      {
+        "id": "urn:ngm:class:smart-city-infrastructure",
+        "label": "Smart City Infrastructure"
       }
     ],
     "dependsOn": [
@@ -65,6 +77,10 @@
       {
         "id": "urn:ngm:class:gnss",
         "label": "GNSS"
+      },
+      {
+        "id": "urn:ngm:class:functional-safety",
+        "label": "Functional Safety"
       }
     ],
     "implements": [],
@@ -90,6 +106,10 @@
       {
         "id": "urn:ngm:class:5-g-network",
         "label": "5G Networks"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "uses": [
@@ -116,6 +136,10 @@
       {
         "id": "urn:ngm:class:transformer-architecture",
         "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
       }
     ],
     "supports": [],
@@ -132,28 +156,149 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:motion-planning",
-        "label": "Motion Planning"
-      },
-      {
         "id": "urn:ngm:class:safety-critical-systems",
         "label": "Safety-Critical Systems"
       },
       {
         "id": "urn:ngm:class:functional-safety",
         "label": "Functional Safety"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "lidar",
+      "label": "Lidar"
+    },
+    {
+      "slug": "simultaneous-localisation-and-mapping",
+      "label": "Simultaneous Localisation and Mapping"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "path-planning",
+      "label": "Path Planning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    },
+    {
+      "slug": "robotaxi",
+      "label": "Robotaxi"
+    },
+    {
+      "slug": "last-mile-delivery",
+      "label": "Last-Mile Delivery"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "v2x-communication",
+      "label": "V2X Communication"
+    },
+    {
+      "slug": "gnss",
+      "label": "GNSS"
+    },
+    {
+      "slug": "sae-j-3016",
+      "label": "SAE J3016"
+    },
+    {
+      "slug": "iso-26262",
+      "label": "ISO 26262"
+    },
+    {
+      "slug": "advanced-driver-assistance-systems",
+      "label": "Advanced Driver Assistance Systems"
+    },
+    {
+      "slug": "teleoperation",
+      "label": "Teleoperation"
+    },
+    {
+      "slug": "smart-city-infrastructure",
+      "label": "Smart City Infrastructure"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "5-g-network",
+      "label": "5G Networks"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "safety-critical-systems",
+      "label": "Safety-Critical Systems"
+    },
+    {
+      "slug": "functional-safety",
+      "label": "Functional Safety"
+    },
+    {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
+      "slug": "hd-maps",
+      "label": "HD Maps"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-applications",
       "label": "AI Applications"
+    },
+    {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
     },
     {
       "slug": "bayes-filter",

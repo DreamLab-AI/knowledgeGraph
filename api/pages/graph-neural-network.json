@@ -343,6 +343,10 @@
       "label": "Automated Design"
     },
     {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
       "slug": "drug-discovery-ai",
       "label": "Drug Discovery AI"
     },

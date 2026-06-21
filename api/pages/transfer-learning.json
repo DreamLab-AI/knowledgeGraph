@@ -236,6 +236,26 @@
       "label": "automatic speech recognition"
     },
     {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },

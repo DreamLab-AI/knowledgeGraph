@@ -156,6 +156,10 @@
       "label": "Chatbots"
     },
     {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

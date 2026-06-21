@@ -148,6 +148,10 @@
       "label": "Answer AI"
     },
     {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    },
+    {
       "slug": "generative-design-tool",
       "label": "Generative Design Tool"
     },

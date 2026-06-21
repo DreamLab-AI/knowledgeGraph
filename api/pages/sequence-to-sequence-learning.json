@@ -102,6 +102,14 @@
       "label": "Attention Weight"
     },
     {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
       "slug": "real-time-translation",
       "label": "Real-time Translation"
     },

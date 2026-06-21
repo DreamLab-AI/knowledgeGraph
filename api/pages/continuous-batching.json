@@ -103,6 +103,10 @@
       "label": "AI Model Inference Engine"
     },
     {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    },
+    {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
     }

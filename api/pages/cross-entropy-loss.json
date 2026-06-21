@@ -67,6 +67,10 @@
       "label": "ArcFace"
     },
     {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
     },

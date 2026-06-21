@@ -120,6 +120,10 @@
       "label": "agentic ai"
     },
     {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     }

@@ -215,6 +215,14 @@
       "label": "Automated Design"
     },
     {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
+      "slug": "blip-2-captioner",
+      "label": "BLIP-2 Captioner"
+    },
+    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
     },

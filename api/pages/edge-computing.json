@@ -702,6 +702,14 @@
       "label": "Audience Engagement"
     },
     {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
       "slug": "bandwidth-adaptation",
       "label": "Bandwidth Adaptation"
     },

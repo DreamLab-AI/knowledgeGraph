@@ -131,6 +131,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
       "slug": "gaussian-distribution",
       "label": "Gaussian Distribution"
     },

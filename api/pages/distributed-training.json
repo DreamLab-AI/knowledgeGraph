@@ -146,6 +146,10 @@
       "label": "Answer AI"
     },
     {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    },
+    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },

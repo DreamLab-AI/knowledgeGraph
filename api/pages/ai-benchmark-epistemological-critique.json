@@ -61,6 +61,14 @@
     {
       "slug": "arc-agi",
       "label": "ARC-AGI"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
     }
   ]
 }

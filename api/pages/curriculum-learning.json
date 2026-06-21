@@ -181,6 +181,14 @@
       "label": "Artificial Intelligence Research"
     },
     {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
     },

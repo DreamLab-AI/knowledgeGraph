@@ -45,6 +45,10 @@
       "label": "Applied Machine Learning"
     },
     {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "customs-trade-facilitation",
       "label": "Customs Trade Facilitation"
     }

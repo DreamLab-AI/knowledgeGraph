@@ -116,6 +116,10 @@
       "label": "Appearance Translation"
     },
     {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
     },

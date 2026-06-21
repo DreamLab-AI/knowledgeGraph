@@ -65,6 +65,10 @@
     {
       "slug": "chatbots",
       "label": "Chatbots"
+    },
+    {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
     }
   ]
 }

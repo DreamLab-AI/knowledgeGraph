@@ -699,6 +699,10 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
       "slug": "autonomous-vehicle",
       "label": "Autonomous Vehicle"
     },

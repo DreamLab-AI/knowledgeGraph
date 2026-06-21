@@ -149,6 +149,18 @@
       "label": "Agentic RAG"
     },
     {
+      "slug": "beir-benchmark",
+      "label": "BEIR Benchmark"
+    },
+    {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
+      "slug": "chunking",
+      "label": "Chunking"
+    },
+    {
       "slug": "context-engineering",
       "label": "Context Engineering"
     },

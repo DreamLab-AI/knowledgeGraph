@@ -269,6 +269,14 @@
       "label": "AutoGen"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
       "slug": "cbdcs",
       "label": "CBDCs"
     },

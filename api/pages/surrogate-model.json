@@ -98,6 +98,10 @@
     {
       "slug": "automated-design",
       "label": "Automated Design"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
     }
   ]
 }

@@ -183,6 +183,18 @@
       "label": "Autoregressive Model"
     },
     {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
       "slug": "cohere",
       "label": "Cohere"
     },

@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.75,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:embedding-layer",
+        "label": "Embedding Layer"
+      },
+      {
+        "id": "urn:ngm:class:decoder-stack",
+        "label": "Decoder Stack"
+      },
+      {
+        "id": "urn:ngm:class:language-model-head",
+        "label": "Language Model Head"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:probabilistic-model",
@@ -25,6 +38,10 @@
       {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:chain-rule-of-probability",
+        "label": "Chain Rule of Probability"
       }
     ],
     "enables": [
@@ -39,9 +56,30 @@
       {
         "id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:neural-audio-synthesis",
+        "label": "Neural Audio Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
     "implements": [
       {
         "id": "urn:ngm:class:maximum-likelihood-estimation",
@@ -50,6 +88,10 @@
       {
         "id": "urn:ngm:class:teacher-forcing",
         "label": "Teacher Forcing"
+      },
+      {
+        "id": "urn:ngm:class:next-token-prediction",
+        "label": "Next-Token Prediction"
       }
     ],
     "contrastsWith": [
@@ -68,6 +110,10 @@
       {
         "id": "urn:ngm:class:flow-based-model",
         "label": "Flow-Based Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
       }
     ],
     "bridgesTo": [
@@ -78,6 +124,10 @@
       {
         "id": "urn:ngm:class:multimodal-ai-architecture-ai",
         "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
       }
     ],
     "uses": [
@@ -96,9 +146,30 @@
       {
         "id": "urn:ngm:class:softmax-function",
         "label": "Softmax"
+      },
+      {
+        "id": "urn:ngm:class:key-value-cache",
+        "label": "Key-Value Cache"
+      },
+      {
+        "id": "urn:ngm:class:byte-pair-encoding",
+        "label": "Byte-Pair Encoding"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-reasoning",
+        "label": "Chain-of-Thought Reasoning"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -117,6 +188,18 @@
       {
         "id": "urn:ngm:class:speculative-decoding",
         "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:hallucination",
+        "label": "Hallucination"
+      },
+      {
+        "id": "urn:ngm:class:time-series-forecasting",
+        "label": "Time Series Forecasting"
       }
     ]
   },
@@ -146,6 +229,14 @@
     {
       "slug": "audio-synthesis",
       "label": "Audio Synthesis"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
     },
     {
       "slug": "diffusion-models",

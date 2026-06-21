@@ -176,6 +176,14 @@
       "label": "Automatic Differentiation"
     },
     {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

@@ -150,6 +150,10 @@
   ],
   "backlinks": [
     {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
+    },
+    {
       "slug": "domain-ontology",
       "label": "Domain Ontology"
     },

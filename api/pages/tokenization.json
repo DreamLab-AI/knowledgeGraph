@@ -214,6 +214,10 @@
       "label": "Asset Management"
     },
     {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
       "slug": "blockchain-network",
       "label": "Blockchain Network"
     },

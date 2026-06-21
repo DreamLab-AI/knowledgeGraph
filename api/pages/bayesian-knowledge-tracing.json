@@ -10,17 +10,42 @@
     {
       "id": "urn:ngm:class:adaptive-learning",
       "label": "Adaptive Learning"
+    },
+    {
+      "id": "urn:ngm:class:probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "id": "urn:ngm:class:learner-model",
+      "label": "Learner Model"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.91,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:hidden-markov-model",
+        "label": "Hidden Markov Model"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-component-model",
+        "label": "Knowledge Component Model"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:educational-technology",
         "label": "Educational Technology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-component-model",
+        "label": "Knowledge Component Model"
       }
     ],
     "enables": [
@@ -31,6 +56,22 @@
       {
         "id": "urn:ngm:class:intelligent-tutoring-system",
         "label": "Intelligent Tutoring System"
+      },
+      {
+        "id": "urn:ngm:class:mastery-learning",
+        "label": "Mastery Learning"
+      },
+      {
+        "id": "urn:ngm:class:formative-assessment",
+        "label": "Formative Assessment"
+      },
+      {
+        "id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      },
+      {
+        "id": "urn:ngm:class:computerised-adaptive-testing",
+        "label": "Computerised Adaptive Testing"
       }
     ],
     "dependsOn": [],
@@ -38,30 +79,66 @@
       {
         "id": "urn:ngm:class:adaptive-learning",
         "label": "Adaptive Learning"
+      },
+      {
+        "id": "urn:ngm:class:mastery-learning",
+        "label": "Mastery Learning"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:item-response-theory",
         "label": "Item Response Theory"
+      },
+      {
+        "id": "urn:ngm:class:deep-knowledge-tracing",
+        "label": "Deep Knowledge Tracing"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:deep-knowledge-tracing",
+        "label": "Deep Knowledge Tracing"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation-Maximisation"
+      },
+      {
+        "id": "urn:ngm:class:hidden-markov-model",
+        "label": "Hidden Markov Model"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:personalised-learning",
         "label": "Personalised Learning"
+      },
+      {
+        "id": "urn:ngm:class:computerised-adaptive-testing",
+        "label": "Computerised Adaptive Testing"
+      },
+      {
+        "id": "urn:ngm:class:learner-model",
+        "label": "Learner Model"
       }
     ],
     "standardizedBy": [],
@@ -87,10 +164,203 @@
       {
         "id": "urn:ngm:class:cognitive-science",
         "label": "Cognitive Science"
+      },
+      {
+        "id": "urn:ngm:class:psychometrics",
+        "label": "Psychometrics"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "intelligent-tutoring-system",
+      "label": "Intelligent Tutoring System"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "personalised-learning",
+      "label": "Personalised Learning"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "hidden-markov-model",
+      "label": "Hidden Markov Model"
+    },
+    {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "educational-technology",
+      "label": "Educational Technology"
+    },
+    {
+      "slug": "item-response-theory",
+      "label": "Item Response Theory"
+    },
+    {
+      "slug": "spaced-repetition",
+      "label": "Spaced Repetition"
+    },
+    {
+      "slug": "deep-knowledge-tracing",
+      "label": "Deep Knowledge Tracing"
+    },
+    {
+      "slug": "knowledge-component-model",
+      "label": "Knowledge Component Model"
+    },
+    {
+      "slug": "mastery-learning",
+      "label": "Mastery Learning"
+    },
+    {
+      "slug": "formative-assessment",
+      "label": "Formative Assessment"
+    },
+    {
+      "slug": "learner-model",
+      "label": "Learner Model"
+    },
+    {
+      "slug": "expectation-maximisation",
+      "label": "Expectation-Maximisation"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "computerised-adaptive-testing",
+      "label": "Computerised Adaptive Testing"
+    },
+    {
+      "slug": "learning-analytics",
+      "label": "Learning Analytics"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "data-privacy",
+      "label": "Data Privacy"
+    },
+    {
+      "slug": "psychometrics",
+      "label": "Psychometrics"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "two-sigma-problem",
+      "label": "Two-Sigma Problem"
+    },
+    {
+      "slug": "open-learner-model",
+      "label": "Open Learner Model"
+    },
+    {
+      "slug": "affective-computing",
+      "label": "Affective Computing"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "curriculum-learning",
+      "label": "Curriculum Learning"
+    },
+    {
+      "slug": "domain-model",
+      "label": "Domain Model"
+    },
+    {
+      "slug": "content-repository",
+      "label": "Content Repository"
+    },
+    {
+      "slug": "gamification",
+      "label": "Gamification"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    }
+  ],
   "backlinks": [
     {
       "slug": "adaptive-learning",

@@ -211,6 +211,14 @@
       "label": "AI User"
     },
     {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
       "slug": "boosting",
       "label": "Boosting"
     }

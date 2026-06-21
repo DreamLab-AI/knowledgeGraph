@@ -143,6 +143,10 @@
       "label": "Applied Mathematics"
     },
     {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
       "slug": "control-theory",
       "label": "Control Theory"
     },

@@ -166,6 +166,10 @@
       "label": "anthropic"
     },
     {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
+    },
+    {
       "slug": "feature-attribution",
       "label": "Feature Attribution"
     },

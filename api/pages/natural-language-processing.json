@@ -361,6 +361,38 @@
       "label": "automatic speech recognition"
     },
     {
+      "slug": "beir-benchmark",
+      "label": "BEIR Benchmark"
+    },
+    {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
       "slug": "bias-in-large-language-models",
       "label": "Bias in Large Language Models"
     },
@@ -379,6 +411,14 @@
     {
       "slug": "chatbots",
       "label": "Chatbots"
+    },
+    {
+      "slug": "chunking",
+      "label": "Chunking"
+    },
+    {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
     },
     {
       "slug": "cohere",

@@ -674,6 +674,10 @@
       "label": "Agent-Based Models"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
       "slug": "complex-systems",
       "label": "Complex Systems"
     },

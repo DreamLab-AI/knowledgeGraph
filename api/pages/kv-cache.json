@@ -145,6 +145,14 @@
       "label": "Attention"
     },
     {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
     },

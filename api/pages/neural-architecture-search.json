@@ -163,6 +163,10 @@
       "label": "Automated Design"
     },
     {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
     },

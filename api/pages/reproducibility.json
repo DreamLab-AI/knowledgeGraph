@@ -140,6 +140,14 @@
       "label": "Artificial Intelligence Research"
     },
     {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
       "slug": "data-provenance",
       "label": "Data Provenance"
     },

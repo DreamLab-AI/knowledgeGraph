@@ -505,6 +505,14 @@
   ],
   "backlinks": [
     {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
       "slug": "feedback-loop",
       "label": "Feedback Loop"
     }

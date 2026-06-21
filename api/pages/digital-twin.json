@@ -257,6 +257,18 @@
       "label": "Automated Design"
     },
     {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
       "slug": "blockchain-entity",
       "label": "Blockchain Entity"
     },

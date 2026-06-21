@@ -194,6 +194,10 @@
       "label": "ADE20K"
     },
     {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
       "slug": "computer-vision",
       "label": "Computer Vision"
     },

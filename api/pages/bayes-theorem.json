@@ -16,7 +16,24 @@
   "qualityScore": 0.62,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:prior-distribution",
+        "label": "Prior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:likelihood-function",
+        "label": "Likelihood Function"
+      },
+      {
+        "id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      },
+      {
+        "id": "urn:ngm:class:marginal-likelihood",
+        "label": "Marginal Likelihood"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,12 +43,40 @@
       {
         "id": "urn:ngm:class:statistical-inference",
         "label": "Statistical Inference"
+      },
+      {
+        "id": "urn:ngm:class:naive-bayes-classifier",
+        "label": "Naive Bayes Classifier"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-network",
+        "label": "Bayesian Network"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:conditional-probability",
+        "label": "Conditional Probability"
       },
       {
         "id": "urn:ngm:class:probabilistic-model",
@@ -44,17 +89,38 @@
         "label": "Bayesian Inference"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:frequentist-statistics",
+        "label": "Frequentist Statistics"
+      },
+      {
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:probabilistic-model",
         "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:conjugate-prior",
+        "label": "Conjugate Prior"
       }
     ],
     "supports": [
@@ -65,6 +131,14 @@
       {
         "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "standardizedBy": [],
@@ -80,8 +154,20 @@
         "label": "Statistical Inference"
       },
       {
-        "id": "urn:ngm:class:inference",
-        "label": "Inference"
+        "id": "urn:ngm:class:maximum-likelihood-estimation",
+        "label": "Maximum Likelihood Estimation"
+      },
+      {
+        "id": "urn:ngm:class:expectation-maximisation",
+        "label": "Expectation Maximisation"
+      },
+      {
+        "id": "urn:ngm:class:markov-chain-monte-carlo",
+        "label": "Markov Chain Monte Carlo"
+      },
+      {
+        "id": "urn:ngm:class:variational-inference",
+        "label": "Variational Inference"
       },
       {
         "id": "urn:ngm:class:artificial-intelligence",
@@ -89,8 +175,165 @@
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "statistical-inference",
+      "label": "Statistical Inference"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "prior-distribution",
+      "label": "Prior Distribution"
+    },
+    {
+      "slug": "posterior-distribution",
+      "label": "Posterior Distribution"
+    },
+    {
+      "slug": "likelihood-function",
+      "label": "Likelihood Function"
+    },
+    {
+      "slug": "conditional-probability",
+      "label": "Conditional Probability"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "naive-bayes-classifier",
+      "label": "Naive Bayes Classifier"
+    },
+    {
+      "slug": "bayesian-network",
+      "label": "Bayesian Network"
+    },
+    {
+      "slug": "gaussian-process",
+      "label": "Gaussian Process"
+    },
+    {
+      "slug": "markov-chain-monte-carlo",
+      "label": "Markov Chain Monte Carlo"
+    },
+    {
+      "slug": "variational-inference",
+      "label": "Variational Inference"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "bayesian-deep-learning",
+      "label": "Bayesian Deep Learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "spam-filtering",
+      "label": "Spam Filtering"
+    },
+    {
+      "slug": "medical-diagnosis",
+      "label": "Medical Diagnosis"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "model-selection",
+      "label": "Model Selection"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "frequentist-statistics",
+      "label": "Frequentist Statistics"
+    },
+    {
+      "slug": "maximum-likelihood-estimation",
+      "label": "Maximum Likelihood Estimation"
+    },
+    {
+      "slug": "expectation-maximisation",
+      "label": "Expectation Maximisation"
+    },
+    {
+      "slug": "conjugate-prior",
+      "label": "Conjugate Prior"
+    },
+    {
+      "slug": "marginal-likelihood",
+      "label": "Marginal Likelihood"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "inference",
+      "label": "Inference"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "probabilistic-reasoning-layer",
+      "label": "ProbabilisticReasoningLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
     {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"

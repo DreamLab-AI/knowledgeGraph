@@ -147,6 +147,14 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
       "slug": "gpt-engineer",
       "label": "GPT Engineer"
     },

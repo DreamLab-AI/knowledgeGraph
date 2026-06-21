@@ -473,6 +473,10 @@
   ],
   "backlinks": [
     {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },

@@ -144,8 +144,16 @@
       "label": "Bagging"
     },
     {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
       "slug": "boosting",
       "label": "Boosting"
+    },
+    {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
     },
     {
       "slug": "jailbreaking",

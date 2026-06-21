@@ -49,6 +49,14 @@
       "label": "Bayes Filter"
     },
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     }

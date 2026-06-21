@@ -94,6 +94,10 @@
       "label": "Applied Machine Learning"
     },
     {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
       "slug": "dimensionality-reduction",
       "label": "Dimensionality Reduction"
     },

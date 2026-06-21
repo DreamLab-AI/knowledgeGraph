@@ -150,6 +150,10 @@
       "label": "Artificial Intelligence Research"
     },
     {
+      "slug": "blip-2-captioner",
+      "label": "BLIP-2 Captioner"
+    },
+    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
     },

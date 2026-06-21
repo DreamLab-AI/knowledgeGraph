@@ -501,12 +501,36 @@
       "label": "automatic speech recognition"
     },
     {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
       "slug": "autonomous-robot",
       "label": "Autonomous Robot"
     },
     {
       "slug": "bayesian-deep-learning",
       "label": "Bayesian Deep Learning"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
     },
     {
       "slug": "bias",

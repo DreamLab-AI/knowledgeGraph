@@ -168,6 +168,10 @@
       "label": "Audio Synthesis"
     },
     {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
     },

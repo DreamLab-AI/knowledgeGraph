@@ -127,6 +127,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
       "slug": "kinematics-model",
       "label": "Kinematics Model"
     },

@@ -131,6 +131,10 @@
       "label": "AUTOMATIC1111 WebUI"
     },
     {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

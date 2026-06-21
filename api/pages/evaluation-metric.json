@@ -175,6 +175,14 @@
       "label": "AutoML"
     },
     {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
     },

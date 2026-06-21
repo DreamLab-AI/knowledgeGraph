@@ -61,6 +61,10 @@
   ],
   "backlinks": [
     {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "planning-and-scheduling",
       "label": "Planning and Scheduling"
     },

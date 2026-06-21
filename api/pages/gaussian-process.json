@@ -108,6 +108,18 @@
       "label": "Acquisition Function"
     },
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },

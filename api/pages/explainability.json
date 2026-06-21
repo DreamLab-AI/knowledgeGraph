@@ -217,6 +217,10 @@
       "label": "Automated Design"
     },
     {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
+    },
+    {
       "slug": "human-oversight",
       "label": "Human Oversight"
     },

@@ -10,10 +10,14 @@
     {
       "id": "urn:ngm:class:search-algorithm",
       "label": "Search Algorithm"
+    },
+    {
+      "id": "urn:ngm:class:information-retrieval",
+      "label": "Information Retrieval"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.93,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,6 +25,14 @@
       {
         "id": "urn:ngm:class:tokenization",
         "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      },
+      {
+        "id": "urn:ngm:class:document-corpus",
+        "label": "Document Corpus"
       }
     ],
     "enables": [
@@ -35,6 +47,18 @@
       {
         "id": "urn:ngm:class:hybrid-retrieval",
         "label": "Hybrid Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:keyword-search",
+        "label": "Keyword Search"
+      },
+      {
+        "id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      },
+      {
+        "id": "urn:ngm:class:ai-search",
+        "label": "AI Search"
       }
     ],
     "dependsOn": [],
@@ -43,6 +67,14 @@
       {
         "id": "urn:ngm:class:dense-retrieval",
         "label": "Dense Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:dense-passage-retrieval",
+        "label": "Dense Passage Retrieval"
       }
     ],
     "bridgesTo": [
@@ -61,8 +93,12 @@
         "label": "Natural Language Processing"
       },
       {
-        "id": "urn:ngm:class:embeddings",
-        "label": "Embeddings"
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenisation"
+      },
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
       }
     ],
     "supports": [
@@ -73,6 +109,14 @@
       {
         "id": "urn:ngm:class:reciprocal-rank-fusion",
         "label": "Reciprocal Rank Fusion"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:cross-encoder-reranking",
+        "label": "Cross-Encoder Reranking"
       }
     ],
     "standardizedBy": [],
@@ -97,14 +141,127 @@
       {
         "id": "urn:ngm:class:tf-idf",
         "label": "TF-IDF"
+      },
+      {
+        "id": "urn:ngm:class:cross-encoder-reranking",
+        "label": "Cross-Encoder Reranking"
+      },
+      {
+        "id": "urn:ngm:class:splade",
+        "label": "SPLADE"
+      },
+      {
+        "id": "urn:ngm:class:dense-passage-retrieval",
+        "label": "Dense Passage Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:document-retrieval",
+        "label": "Document Retrieval"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "inverted-index",
+      "label": "Inverted Index"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "dense-retrieval",
+      "label": "Dense Retrieval"
+    },
+    {
+      "slug": "hybrid-retrieval",
+      "label": "Hybrid Retrieval"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "enterprise-search",
+      "label": "Enterprise Search"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "keyword-search",
+      "label": "Keyword Search"
+    },
+    {
+      "slug": "reciprocal-rank-fusion",
+      "label": "Reciprocal Rank Fusion"
+    },
+    {
+      "slug": "tf-idf",
+      "label": "TF-IDF"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "embeddings",
+      "label": "Embeddings"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "knowledge-retrieval",
+      "label": "Knowledge Retrieval"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "document-retrieval",
+      "label": "Document Retrieval"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "dense-passage-retrieval",
+      "label": "Dense Passage Retrieval"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-search",
       "label": "AI Search"
+    },
+    {
+      "slug": "beir-benchmark",
+      "label": "BEIR Benchmark"
     },
     {
       "slug": "gpts-and-custom-assistants",

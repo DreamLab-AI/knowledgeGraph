@@ -28,12 +28,24 @@
       {
         "id": "urn:ngm:class:underfitting",
         "label": "Underfitting"
+      },
+      {
+        "id": "urn:ngm:class:generalisation-error",
+        "label": "Generalisation Error"
+      },
+      {
+        "id": "urn:ngm:class:irreducible-error",
+        "label": "Irreducible Error"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:cross-validation",
         "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
       }
     ],
     "enables": [
@@ -44,6 +56,14 @@
       {
         "id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:model-selection",
+        "label": "Model Selection"
+      },
+      {
+        "id": "urn:ngm:class:learning-curve-analysis",
+        "label": "Learning Curve Analysis"
       }
     ],
     "dependsOn": [
@@ -54,6 +74,14 @@
       {
         "id": "urn:ngm:class:supervised-learning",
         "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       }
     ],
     "implements": [],
@@ -65,6 +93,10 @@
       {
         "id": "urn:ngm:class:underfitting",
         "label": "Underfitting"
+      },
+      {
+        "id": "urn:ngm:class:double-descent",
+        "label": "Double Descent"
       }
     ],
     "bridgesTo": [],
@@ -72,6 +104,14 @@
       {
         "id": "urn:ngm:class:regularisation",
         "label": "Regularization"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
       }
     ],
     "supports": [
@@ -82,6 +122,14 @@
       {
         "id": "urn:ngm:class:ensemble-learning",
         "label": "Ensemble Learning"
+      },
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
       }
     ],
     "standardizedBy": [],
@@ -98,10 +146,175 @@
       {
         "id": "urn:ngm:class:hyperparameter-tuning",
         "label": "Hyperparameter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:pac-learning",
+        "label": "PAC Learning"
+      },
+      {
+        "id": "urn:ngm:class:vc-dimension",
+        "label": "VC Dimension"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "overfitting",
+      "label": "Overfitting"
+    },
+    {
+      "slug": "underfitting",
+      "label": "Underfitting"
+    },
+    {
+      "slug": "model-complexity",
+      "label": "Model Complexity"
+    },
+    {
+      "slug": "regularization",
+      "label": "Regularization"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "ensemble-methods",
+      "label": "Ensemble Methods"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "hyperparameter-tuning",
+      "label": "Hyperparameter Tuning"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "random-forest",
+      "label": "Random Forest"
+    },
+    {
+      "slug": "gradient-boosting",
+      "label": "Gradient Boosting"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "double-descent",
+      "label": "Double Descent"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "generalisation-error",
+      "label": "Generalisation Error"
+    },
+    {
+      "slug": "model-selection",
+      "label": "Model Selection"
+    },
+    {
+      "slug": "learning-curve",
+      "label": "Learning Curve"
+    },
+    {
+      "slug": "bagging",
+      "label": "Bagging"
+    },
+    {
+      "slug": "boosting",
+      "label": "Boosting"
+    },
+    {
+      "slug": "dropout",
+      "label": "Dropout"
+    },
+    {
+      "slug": "l1-regularization",
+      "label": "L1 Regularization"
+    },
+    {
+      "slug": "l2-regularization",
+      "label": "L2 Regularization"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
+      "slug": "kernel-methods",
+      "label": "Kernel Methods"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "feature-selection",
+      "label": "Feature Selection"
+    },
+    {
+      "slug": "dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "vc-dimension",
+      "label": "VC Dimension"
+    },
+    {
+      "slug": "pac-learning",
+      "label": "PAC Learning"
+    },
+    {
+      "slug": "early-stopping",
+      "label": "Early Stopping"
+    },
+    {
+      "slug": "interpolation-threshold",
+      "label": "Interpolation Threshold"
+    },
+    {
+      "slug": "ml-grounded-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    }
+  ],
   "backlinks": [
     {
       "slug": "applied-machine-learning",

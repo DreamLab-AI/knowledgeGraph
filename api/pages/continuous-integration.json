@@ -159,6 +159,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     },

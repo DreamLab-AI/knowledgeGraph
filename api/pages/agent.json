@@ -207,6 +207,10 @@
       "label": "BDI Model"
     },
     {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "goal",
       "label": "Goal"
     }

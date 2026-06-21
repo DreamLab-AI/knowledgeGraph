@@ -95,6 +95,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
     },

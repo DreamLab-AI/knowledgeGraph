@@ -154,6 +154,10 @@
       "label": "Algorithmic Framework"
     },
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
       "slug": "knowledge-graphs",
       "label": "Knowledge Graphs"
     }

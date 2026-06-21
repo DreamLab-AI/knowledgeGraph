@@ -54,6 +54,10 @@
       "label": "ADE20K"
     },
     {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
     },

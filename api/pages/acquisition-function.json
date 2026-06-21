@@ -303,6 +303,10 @@
       "label": "Active Learning"
     },
     {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
     },

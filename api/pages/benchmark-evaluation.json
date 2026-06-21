@@ -17,11 +17,50 @@
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "id": "urn:ngm:class:leaderboard",
+        "label": "Leaderboard"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:human-evaluation",
+        "label": "Human Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-evaluation",
+        "label": "Heuristic Evaluation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -31,6 +70,22 @@
       {
         "id": "urn:ngm:class:performance-benchmarks",
         "label": "Performance Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Harness"
+      },
+      {
+        "id": "urn:ngm:class:statistical-hypothesis-testing",
+        "label": "Statistical Hypothesis Testing"
+      },
+      {
+        "id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
       }
     ],
     "supports": [],
@@ -40,10 +95,195 @@
       {
         "id": "urn:ngm:class:evaluation-harness",
         "label": "Evaluation Harness"
+      },
+      {
+        "id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "id": "urn:ngm:class:ai-benchmark-epistemological-critique",
+        "label": "AI Benchmark Epistemological Critique"
+      },
+      {
+        "id": "urn:ngm:class:frontier-model-evaluation",
+        "label": "Frontier Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "slug": "evaluation-harness",
+      "label": "Evaluation Harness"
+    },
+    {
+      "slug": "performance-benchmarks",
+      "label": "Performance Benchmarks"
+    },
+    {
+      "slug": "leaderboard",
+      "label": "Leaderboard"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "benchmarking",
+      "label": "Benchmarking"
+    },
+    {
+      "slug": "model-evaluation-results",
+      "label": "Model Evaluation Results"
+    },
+    {
+      "slug": "benchmark-standard",
+      "label": "Benchmark Standard"
+    },
+    {
+      "slug": "ai-benchmark-epistemological-critique",
+      "label": "AI Benchmark Epistemological Critique"
+    },
+    {
+      "slug": "frontier-model-evaluation",
+      "label": "Frontier Model Evaluation"
+    },
+    {
+      "slug": "capability-evaluation",
+      "label": "Capability Evaluation"
+    },
+    {
+      "slug": "human-evaluation",
+      "label": "Human Evaluation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "ground-truth-labels",
+      "label": "Ground Truth Labels"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "data-annotation",
+      "label": "Data Annotation"
+    },
+    {
+      "slug": "overfitting",
+      "label": "Overfitting"
+    },
+    {
+      "slug": "bias",
+      "label": "Bias"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "statistical-hypothesis-testing",
+      "label": "Statistical Hypothesis Testing"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "mlcommons",
+      "label": "MLCommons"
+    },
+    {
+      "slug": "beir-benchmark",
+      "label": "BEIR Benchmark"
+    },
+    {
+      "slug": "mteb-benchmark",
+      "label": "MTEB Benchmark"
+    },
+    {
+      "slug": "heuristic-evaluation",
+      "label": "Heuristic Evaluation"
+    },
+    {
+      "slug": "continuous-integration",
+      "label": "Continuous Integration"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "confounding",
+      "label": "Confounding"
+    },
+    {
+      "slug": "data-quality",
+      "label": "Data Quality"
+    },
+    {
+      "slug": "safety-evaluation",
+      "label": "Safety Evaluation"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-model",
@@ -60,6 +300,10 @@
     {
       "slug": "artificial-intelligence-research",
       "label": "Artificial Intelligence Research"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
     },
     {
       "slug": "competition-in-ai",

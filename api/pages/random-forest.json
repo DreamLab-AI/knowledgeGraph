@@ -105,6 +105,10 @@
       "label": "Applied Machine Learning"
     },
     {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
       "slug": "ensemble-methods",
       "label": "Ensemble Methods"
     }

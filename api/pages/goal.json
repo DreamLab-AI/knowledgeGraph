@@ -117,6 +117,10 @@
       "label": "Agent"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
       "slug": "autonomy-level",
       "label": "Autonomy Level"
     },

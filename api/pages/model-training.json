@@ -749,6 +749,10 @@
       "label": "Architecture"
     },
     {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
+    {
       "slug": "common-crawl",
       "label": "Common Crawl"
     },

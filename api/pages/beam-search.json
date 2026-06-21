@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.95,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:length-normalisation",
+        "label": "Length Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:diverse-beam-search",
+        "label": "Diverse Beam Search"
+      },
+      {
+        "id": "urn:ngm:class:constrained-decoding",
+        "label": "Constrained Decoding"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:probability-distribution",
@@ -25,6 +38,10 @@
       {
         "id": "urn:ngm:class:sequence-model",
         "label": "Sequence Model"
+      },
+      {
+        "id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
       }
     ],
     "enables": [
@@ -46,7 +63,23 @@
       },
       {
         "id": "urn:ngm:class:text-summarisation",
-        "label": "Automatic Summarisation"
+        "label": "Text Summarisation"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
       }
     ],
     "dependsOn": [],
@@ -58,6 +91,10 @@
       {
         "id": "urn:ngm:class:breadth-first-search",
         "label": "Breadth-First Search"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
       }
     ],
     "contrastsWith": [
@@ -72,6 +109,10 @@
       {
         "id": "urn:ngm:class:monte-carlo-tree-search",
         "label": "Monte Carlo Tree Search"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
       }
     ],
     "bridgesTo": [
@@ -96,6 +137,14 @@
       {
         "id": "urn:ngm:class:encoder-decoder-architecture",
         "label": "Encoder-Decoder Architecture"
+      },
+      {
+        "id": "urn:ngm:class:log-probability",
+        "label": "Log-Probability"
+      },
+      {
+        "id": "urn:ngm:class:length-normalisation",
+        "label": "Length Normalisation"
       }
     ],
     "supports": [],
@@ -113,10 +162,187 @@
       {
         "id": "urn:ngm:class:speculative-decoding",
         "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:viterbi-algorithm",
+        "label": "Viterbi Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:exposure-bias",
+        "label": "Exposure Bias"
+      },
+      {
+        "id": "urn:ngm:class:inference-time-compute",
+        "label": "Inference-Time Compute"
+      },
+      {
+        "id": "urn:ngm:class:process-reward-model",
+        "label": "Process Reward Model"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "greedy-decoding",
+      "label": "Greedy Decoding"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "encoder-decoder-architecture",
+      "label": "Encoder Decoder Architecture"
+    },
+    {
+      "slug": "sequence-to-sequence-learning",
+      "label": "Sequence-to-Sequence Learning"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "heuristic-methods",
+      "label": "Heuristic Methods"
+    },
+    {
+      "slug": "probability-distribution",
+      "label": "Probability Distribution"
+    },
+    {
+      "slug": "sequence-model",
+      "label": "Sequence Model"
+    },
+    {
+      "slug": "nucleus-sampling",
+      "label": "Nucleus Sampling"
+    },
+    {
+      "slug": "monte-carlo-tree-search",
+      "label": "Monte Carlo Tree Search"
+    },
+    {
+      "slug": "breadth-first-search",
+      "label": "Breadth-First Search"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "constrained-decoding",
+      "label": "Constrained Decoding"
+    },
+    {
+      "slug": "speculative-decoding",
+      "label": "Speculative Decoding"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "length-normalisation",
+      "label": "Length Normalisation"
+    },
+    {
+      "slug": "log-probability",
+      "label": "Log-Probability"
+    },
+    {
+      "slug": "diverse-beam-search",
+      "label": "Diverse Beam Search"
+    },
+    {
+      "slug": "exposure-bias",
+      "label": "Exposure Bias"
+    },
+    {
+      "slug": "natural-language-generation",
+      "label": "Natural Language Generation"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "image-captioning",
+      "label": "Image Captioning"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "process-reward-model",
+      "label": "Process Reward Model"
+    },
+    {
+      "slug": "viterbi-algorithm",
+      "label": "Viterbi Algorithm"
+    },
+    {
+      "slug": "dynamic-programming",
+      "label": "Dynamic Programming"
+    },
+    {
+      "slug": "inference-time-compute",
+      "label": "Inference-Time Compute"
+    },
+    {
+      "slug": "open-ended-generation",
+      "label": "Open-Ended Generation"
+    }
+  ],
   "backlinks": [
     {
       "slug": "acoustic-model",
@@ -125,6 +351,14 @@
     {
       "slug": "automatic-speech-recognition",
       "label": "automatic speech recognition"
+    },
+    {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
     },
     {
       "slug": "reasoning",

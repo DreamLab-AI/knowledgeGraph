@@ -171,6 +171,10 @@
       "label": "3D Graphics Standard"
     },
     {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    },
+    {
       "slug": "graphics-api",
       "label": "Graphics API"
     },

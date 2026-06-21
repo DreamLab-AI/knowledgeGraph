@@ -160,6 +160,10 @@
       "label": "Artificial Intelligence Core"
     },
     {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     },

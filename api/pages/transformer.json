@@ -269,6 +269,10 @@
       "label": "Autoregressive Model"
     },
     {
+      "slug": "beir-benchmark",
+      "label": "BEIR Benchmark"
+    },
+    {
       "slug": "cohere",
       "label": "Cohere"
     },

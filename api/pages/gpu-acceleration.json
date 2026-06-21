@@ -181,6 +181,10 @@
       "label": "Audio Synthesis"
     },
     {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
       "slug": "edge-computing",
       "label": "Edge Computing"
     },

@@ -71,6 +71,10 @@
       "label": "Attention"
     },
     {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
       "slug": "checkpoints",
       "label": "Checkpoints"
     },

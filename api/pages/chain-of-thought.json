@@ -196,6 +196,10 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
     },

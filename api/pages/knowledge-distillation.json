@@ -153,6 +153,10 @@
       "label": "automatic speech recognition"
     },
     {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
       "slug": "data-compression",
       "label": "Data Compression"
     },

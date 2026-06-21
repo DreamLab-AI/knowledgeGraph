@@ -69,6 +69,10 @@
   ],
   "backlinks": [
     {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
       "slug": "rdf-schema",
       "label": "RDF Schema"
     }

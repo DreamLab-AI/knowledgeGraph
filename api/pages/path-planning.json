@@ -220,6 +220,10 @@
       "label": "A Star Algorithm"
     },
     {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
       "slug": "autonomous-navigation",
       "label": "Autonomous Navigation"
     },

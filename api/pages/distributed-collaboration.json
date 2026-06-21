@@ -157,6 +157,10 @@
       "label": "automatic speech recognition"
     },
     {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
       "slug": "bandwidth-adaptation",
       "label": "Bandwidth Adaptation"
     },

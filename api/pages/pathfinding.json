@@ -75,6 +75,10 @@
       "label": "AI in Games"
     },
     {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "computational-geometry",
       "label": "Computational Geometry"
     },

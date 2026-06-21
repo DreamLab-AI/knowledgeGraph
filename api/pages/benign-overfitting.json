@@ -18,10 +18,45 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      },
+      {
+        "id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:implicit-bias",
+        "label": "Implicit Bias"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:overparameterisation",
+        "label": "Overparameterisation"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:early-stopping",
+        "label": "Early Stopping"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
@@ -35,6 +70,30 @@
       {
         "id": "urn:ngm:class:cross-validation",
         "label": "Cross-Validation"
+      },
+      {
+        "id": "urn:ngm:class:double-descent",
+        "label": "Double Descent"
+      },
+      {
+        "id": "urn:ngm:class:overparameterisation",
+        "label": "Overparameterisation"
+      },
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:grokking",
+        "label": "Grokking"
       }
     ]
   },

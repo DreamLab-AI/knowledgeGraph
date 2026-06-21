@@ -10,13 +10,42 @@
     {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
+    },
+    {
+      "id": "urn:ngm:class:model-serving",
+      "label": "Model Serving"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.93,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:continuous-batching",
+        "label": "Continuous Batching"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "id": "urn:ngm:class:inference-pipeline",
+        "label": "Inference Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:throughput-optimisation",
+        "label": "Throughput Optimisation"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:gpu-computing",
@@ -25,6 +54,10 @@
       {
         "id": "urn:ngm:class:tensor-processing",
         "label": "Tensor Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-infrastructure",
+        "label": "Machine Learning Infrastructure"
       }
     ],
     "enables": [
@@ -39,18 +72,42 @@
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:cost-optimisation",
+        "label": "Cost Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:throughput-optimisation",
+        "label": "Throughput Optimisation"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:machine-learning-infrastructure",
         "label": "Machine Learning Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:inference-pipeline",
         "label": "Inference Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
       }
     ],
     "contrastsWith": [
@@ -61,6 +118,14 @@
       {
         "id": "urn:ngm:class:streaming-inference",
         "label": "Streaming Inference"
+      },
+      {
+        "id": "urn:ngm:class:edge-inference",
+        "label": "Edge Inference"
+      },
+      {
+        "id": "urn:ngm:class:distributed-inference",
+        "label": "Distributed Inference"
       }
     ],
     "bridgesTo": [],
@@ -72,12 +137,36 @@
       {
         "id": "urn:ngm:class:deep-learning-framework",
         "label": "Deep Learning Framework"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      },
+      {
+        "id": "urn:ngm:class:gpu-architecture",
+        "label": "GPU Architecture"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:scalability",
         "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
       }
     ],
     "standardizedBy": [],
@@ -99,10 +188,155 @@
       {
         "id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-quantisation",
+        "label": "Neural Network Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:tensor-parallelism",
+        "label": "Tensor Parallelism"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "gpu-computing",
+      "label": "GPU Computing"
+    },
+    {
+      "slug": "tensor-processing",
+      "label": "Tensor Processing"
+    },
+    {
+      "slug": "embedding-generation",
+      "label": "Embedding Generation"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "online-inference",
+      "label": "Online Inference"
+    },
+    {
+      "slug": "streaming-inference",
+      "label": "Streaming Inference"
+    },
+    {
+      "slug": "throughput-optimisation",
+      "label": "Throughput Optimisation"
+    },
+    {
+      "slug": "model-quantisation",
+      "label": "Model Quantisation"
+    },
+    {
+      "slug": "distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "slug": "machine-learning-infrastructure",
+      "label": "Machine Learning Infrastructure"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "inference-pipeline",
+      "label": "Inference Pipeline"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
+      "slug": "distributed-inference",
+      "label": "Distributed Inference"
+    },
+    {
+      "slug": "flash-attention",
+      "label": "Flash Attention"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "neural-network-quantisation",
+      "label": "Neural Network Quantisation"
+    },
+    {
+      "slug": "edge-inference",
+      "label": "Edge Inference"
+    },
+    {
+      "slug": "gpu-architecture",
+      "label": "GPU Architecture"
+    },
+    {
+      "slug": "tensor-parallelism",
+      "label": "Tensor Parallelism"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "slug": "kv-cache",
+      "label": "KV Cache"
+    },
+    {
+      "slug": "speculative-decoding",
+      "label": "Speculative Decoding"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
+      "slug": "cost-optimisation",
+      "label": "Cost Optimisation"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "machine-learning-infrastructure-layer",
+      "label": "MachineLearningInfrastructureLayer"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-inference",

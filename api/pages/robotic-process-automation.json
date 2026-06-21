@@ -151,6 +151,14 @@
       "label": "Automation"
     },
     {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
       "slug": "business-process-automation",
       "label": "Business Process Automation"
     },

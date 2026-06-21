@@ -141,6 +141,10 @@
       "label": "Algorithm Layer"
     },
     {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    },
+    {
       "slug": "blockchain-technology-laboratory",
       "label": "Blockchain Technology Laboratory"
     },

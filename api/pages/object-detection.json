@@ -169,6 +169,18 @@
       "label": "Ar Scene Graph"
     },
     {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
       "slug": "camera",
       "label": "Camera"
     },

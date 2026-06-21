@@ -20,32 +20,85 @@
       {
         "id": "urn:ngm:class:information-asymmetry",
         "label": "Information Asymmetry"
+      },
+      {
+        "id": "urn:ngm:class:heuristics",
+        "label": "Heuristics"
+      },
+      {
+        "id": "urn:ngm:class:satisficing",
+        "label": "Satisficing"
+      },
+      {
+        "id": "urn:ngm:class:aspiration-level",
+        "label": "Aspiration Level"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:agent-based-modelling",
         "label": "Agent-Based Modelling"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "id": "urn:ngm:class:llm-alignment",
+        "label": "LLM Alignment"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:cognitive-constraints",
+        "label": "Cognitive Constraints"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:optimisation",
         "label": "Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:expected-utility-theory",
+        "label": "Expected Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:rational-choice-theory",
+        "label": "Rational Choice Theory"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:behavioural-economics",
         "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ],
     "uses": [
@@ -56,6 +109,10 @@
       {
         "id": "urn:ngm:class:game-theory",
         "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
       }
     ],
     "supports": [
@@ -66,6 +123,14 @@
       {
         "id": "urn:ngm:class:decision-support",
         "label": "Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "standardizedBy": [],
@@ -73,6 +138,10 @@
       {
         "id": "urn:ngm:class:decision-making",
         "label": "Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
       }
     ],
     "relatedTo": [
@@ -87,6 +156,18 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "id": "urn:ngm:class:prospect-theory",
+        "label": "Prospect Theory"
+      },
+      {
+        "id": "urn:ngm:class:dual-process-theory",
+        "label": "Dual-Process Theory"
       }
     ]
   },

@@ -113,5 +113,10 @@
       "label": "Edge Computing"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    }
+  ]
 }

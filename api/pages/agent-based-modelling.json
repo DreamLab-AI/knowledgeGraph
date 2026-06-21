@@ -388,6 +388,10 @@
       "label": "agentic ai"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
       "slug": "economic-model",
       "label": "Economic Model"
     },

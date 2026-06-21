@@ -199,6 +199,18 @@
       "label": "automatic speech recognition"
     },
     {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
       "slug": "natural-language-processing",
       "label": "Natural Language Processing"
     },

@@ -10,13 +10,46 @@
     {
       "id": "urn:ngm:class:information-retrieval",
       "label": "Information Retrieval"
+    },
+    {
+      "id": "urn:ngm:class:evaluation-benchmark",
+      "label": "Evaluation Benchmark"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:ms-marco",
+        "label": "MS MARCO"
+      },
+      {
+        "id": "urn:ngm:class:trec-covid",
+        "label": "TREC-COVID"
+      },
+      {
+        "id": "urn:ngm:class:nfcorpus",
+        "label": "NFCorpus"
+      },
+      {
+        "id": "urn:ngm:class:fiqa",
+        "label": "FiQA-2018"
+      },
+      {
+        "id": "urn:ngm:class:arguana",
+        "label": "ArguAna"
+      },
+      {
+        "id": "urn:ngm:class:scifact",
+        "label": "SciFact"
+      },
+      {
+        "id": "urn:ngm:class:hotpotqa",
+        "label": "HotpotQA"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -26,11 +59,32 @@
       {
         "id": "urn:ngm:class:dense-passage-retrieval",
         "label": "Dense Passage Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:zero-shot-generalisation",
+        "label": "Zero-Shot Generalisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ms-marco-benchmark",
+        "label": "MS MARCO Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:glue-benchmark",
+        "label": "GLUE Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:squad",
+        "label": "SQuAD"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -40,6 +94,22 @@
       {
         "id": "urn:ngm:class:bm25",
         "label": "BM25"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:ndcg-metric",
+        "label": "nDCG@10"
+      },
+      {
+        "id": "urn:ngm:class:recall-metric",
+        "label": "Recall@100"
+      },
+      {
+        "id": "urn:ngm:class:faiss",
+        "label": "FAISS"
       }
     ],
     "supports": [],
@@ -53,11 +123,68 @@
       {
         "id": "urn:ngm:class:cross-encoder-reranking",
         "label": "Cross-Encoder Reranking"
+      },
+      {
+        "id": "urn:ngm:class:mteb",
+        "label": "MTEB Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:colbert",
+        "label": "ColBERT"
+      },
+      {
+        "id": "urn:ngm:class:splade",
+        "label": "SPLADE"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "embedding-model",
+      "label": "Embedding Model"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "dense-passage-retrieval",
+      "label": "Dense Passage Retrieval"
+    },
+    {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
+    },
     {
       "slug": "retrieval-augmented-generation-rag",
       "label": "Retrieval Augmented Generation - RAG"

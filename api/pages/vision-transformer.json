@@ -135,6 +135,10 @@
       "label": "Attention"
     },
     {
+      "slug": "blip-2-captioner",
+      "label": "BLIP-2 Captioner"
+    },
+    {
       "slug": "transformers",
       "label": "Transformers"
     },

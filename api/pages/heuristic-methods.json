@@ -146,6 +146,10 @@
       "label": "Algorithmic Framework"
     },
     {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
       "slug": "search-algorithm",
       "label": "Search Algorithm"
     }

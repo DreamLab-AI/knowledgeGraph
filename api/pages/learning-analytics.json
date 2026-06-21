@@ -62,6 +62,10 @@
       "label": "Adaptive Learning"
     },
     {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
       "slug": "education-metaverse",
       "label": "Education Metaverse"
     },

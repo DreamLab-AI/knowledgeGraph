@@ -1,132 +1,329 @@
 - ### Definition
-  - [[Bayesian Optimisation]] is a probabilistic, sample-efficient global optimisation strategy that fits a surrogate model — typically a [[Gaussian Process]] grounded in [[Bayesian Inference]] — to a costly black-box objective function, then selects each successive query point via an [[Acquisition Function]] that balances exploration of uncertain regions with exploitation of known promising areas. It is the method of choice for [[Hyperparameter Tuning]], [[Neural Architecture Search]], and [[Automated Experiment Design]] across [[Machine Learning]] and the physical sciences, offering near-optimal solutions with a fraction of the evaluations required by [[Grid Search]] or [[Random Search]].
+  - [[Bayesian Optimisation]] is a probabilistic, sample-efficient global [[Optimisation]] strategy that constructs a [[Surrogate Model]] — typically a [[Gaussian Process]] grounded in [[Bayesian Inference]] — over the landscape of an expensive black-box objective function, then at each iteration selects the next query point by maximising an [[Acquisition Function]] that quantifies the trade-off between exploring uncertain regions of the input space and exploiting currently known promising areas, formalised as the [[Exploration-Exploitation Trade-off]]. After each evaluation the surrogate's posterior is updated via [[Probabilistic Inference]], incorporating the new observation and refining [[Uncertainty Quantification]] over the entire input domain. This iterative loop — fit surrogate, maximise acquisition function, evaluate objective, update posterior — continues until an evaluation budget is exhausted, at which point the best observed or predicted point is returned as the solution. The approach is uniquely valuable when each function evaluation is computationally or experimentally costly: training a [[Deep Learning]] model for hours on GPU, conducting a laboratory synthesis, running a computational fluid dynamics simulation, or administering a clinical trial dosing experiment. In such settings Bayesian Optimisation achieves near-optimal solutions with 10–100× fewer evaluations than [[Grid Search]], [[Random Search]], or [[Evolutionary Algorithm|evolutionary approaches]], because it does not treat evaluations as independent samples but instead builds and exploits a global probabilistic model of objective function structure. The [[Gaussian Process]] surrogate — characterised by a [[Kernel Function]] encoding prior beliefs about function smoothness and length-scale — provides not just a point estimate of the objective but a full posterior predictive distribution at every candidate input point, enabling the [[Acquisition Function]] to reason explicitly about uncertainty. [[Expected Improvement]] (EI), Upper Confidence Bound (UCB), Thompson Sampling, and Knowledge Gradient are the principal acquisition functions, each embodying a different policy for the [[Exploration-Exploitation Trade-off]]. Bayesian Optimisation has become the method of choice for [[Hyperparameter Tuning]] and [[Neural Architecture Search]] in [[Machine Learning]] pipelines — deployed in Google Vizier, AWS SageMaker Automatic Model Tuning, Microsoft Azure Hyperdrive, and open-source toolkits including BoTorch, Ax, Optuna (GP multi-objective support added in v4.4, 2025), and SMAC — and is finding rapidly expanding application in autonomous chemical and materials discovery, where robotic [[Self-Driving Laboratory|self-driving laboratories]] integrate Bayesian Optimisation loops with physical experimentation to accelerate [[Drug Discovery]] and [[Materials Science]] research at scales previously unachievable by human-guided design. The method bridges [[Kriging]]-based geostatistics (its historical root), Bayesian statistics (its theoretical foundation), and [[Active Learning]] (its information-theoretic interpretation) while connecting to [[Reinforcement Learning]] through the bandit regret-bound theory underlying UCB acquisition. [[Large Language Model]]-guided Bayesian Optimisation (2025–2026) represents the current frontier, using LLM knowledge priors and in-context learning to warm-start surrogate models and propose structured candidates in discrete and combinatorial search spaces.
 
-- ### Overview
-  - Bayesian Optimisation addresses a fundamental problem in applied science and engineering: how to find the optimum of a function that is expensive to evaluate, has no known gradient, and may be noisy. Each evaluation might represent hours of GPU training, a laboratory synthesis, or a clinical experiment.
-  - The method exploits two key ideas: (1) a [[Surrogate Model]] — typically a [[Gaussian Process]] — which gives a cheap-to-query probabilistic approximation of the true objective, and (2) an [[Acquisition Function]] that uses the surrogate's predictive mean and uncertainty to decide where to evaluate next.
-  - After each evaluation, the surrogate is updated using Bayes' theorem via [[Probabilistic Inference]], incorporating the new data point into the posterior. This iterative loop continues until a budget of evaluations is exhausted.
-  - The result is a principled [[Exploration-Exploitation Trade-off]]: the algorithm tries points that look promising (exploitation) whilst also probing uncertain regions where the true function might be better than expected (exploration).
-  - Compared to [[Evolutionary Algorithm|evolutionary algorithms]] and random search, Bayesian Optimisation typically reaches good solutions in 10–100× fewer evaluations, making it invaluable when compute or experimental capacity is constrained.
-
-- ### Key Components
-  - #### Surrogate Model
-    - The [[Surrogate Model]] provides a tractable approximation of the objective function.
-    - **[[Gaussian Process]]** (GP): the classical and most widely used surrogate. A GP defines a distribution over functions characterised by a mean function and a covariance ([[Kernel Function]]). It provides both a predictive mean (best guess) and a predictive variance (uncertainty), both updated analytically after each observation.
-    - **Random Forests**: used in SMAC and similar tools for high-dimensional, mixed-type (continuous + categorical) search spaces common in algorithm configuration.
-    - **Bayesian Neural Networks**: scale to higher dimensions but require approximate inference; used in tools like DNGO and BOHAMIANN.
-    - **Tree Parzen Estimators (TPE)**: used by [[Hyperparameter Tuning]] library Optuna; model the distribution of good and bad configurations separately rather than fitting the objective directly.
-  - #### Acquisition Function
-    - The [[Acquisition Function]] translates the surrogate's posterior into a utility score for each candidate point, guiding the next evaluation.
-    - **[[Expected Improvement]] (EI)**: queries the point with the highest expected gain over the current best observation. Analytically tractable for GPs; the most widely used acquisition function.
-    - **Upper Confidence Bound (UCB)**: selects points where `mean + κ·std` is highest; κ controls the exploration weight. Connects to [[Reinforcement Learning]] regret bounds.
-    - **Thompson Sampling**: draws a sample function from the GP posterior and maximises it; naturally probabilistic and parallelisable.
-    - **Probability of Improvement (PI)**: earliest acquisition function; biased towards exploitation in practice, largely superseded by EI.
-    - **Knowledge Gradient (KG)**: one-step optimal acquisition that considers the value of information; more computationally expensive.
-  - #### Kernel Function
-    - The [[Kernel Function]] defines the covariance structure of the [[Gaussian Process]] and encodes prior assumptions about function smoothness and length-scale.
-    - **Radial Basis Function (RBF) / Squared Exponential**: infinitely differentiable; assumes very smooth objectives.
-    - **Matérn kernels** (ν = 1/2, 3/2, 5/2): allow less smooth functions; ν=5/2 is common in practice.
-    - **Automatic Relevance Determination (ARD)**: per-dimension length-scales; effectively learns which input dimensions matter.
-    - Kernel choice encodes inductive bias; mismatched kernels degrade performance on discontinuous or multi-modal objectives.
-  - #### Optimisation Inner Loop
-    - Maximising the [[Acquisition Function]] over the input space is itself an optimisation problem, but typically cheap (no expensive evaluations needed).
-    - Standard approach: multi-start gradient ascent with random initialisations, or evolutionary search.
-    - In high-dimensional spaces this inner optimisation becomes a bottleneck, motivating methods like trust-region Bayesian Optimisation (TuRBO).
-
-- ### Mechanisms and Algorithm
-  - **Initialisation**: sample a small number of points (typically 5–20) via Latin hypercube sampling or random search to seed the surrogate.
-  - **Surrogate Fitting**: fit the GP (or alternative surrogate) to all observed (x, y) pairs using maximum likelihood estimation of hyperparameters (e.g. kernel length-scale, noise variance) via optimisation of the marginal log-likelihood.
-  - **Acquisition Maximisation**: find the candidate x* that maximises the acquisition function α(x; surrogate).
-  - **Objective Evaluation**: evaluate the true (expensive) objective f(x*).
-  - **Update**: add (x*, f(x*)) to the dataset; re-fit surrogate hyperparameters.
-  - **Termination**: repeat until budget (number of evaluations) is exhausted, then return the best observed point.
-  - Computational complexity of GP fitting is O(n³) in the number of observations n, which limits vanilla GPs to a few hundred evaluations before approximations are required.
-
-- ### Scalability and Variants
-  - **Sparse GPs**: use inducing points to reduce complexity to O(nm²) where m << n; implemented in GPflow and GPyTorch.
-  - **High-Dimensional BO**: random embeddings (REMBO), additive GPs (Add-GP-UCB), and coordinate descent approaches extend BO to hundreds of dimensions.
-  - **Parallel / Batch BO**: evaluate multiple points simultaneously using fantasised observations, enabling use on multi-GPU clusters; implemented in BoTorch via the qEI (joint expected improvement) family.
-  - **Multi-Task BO**: share information across related tasks (e.g. tuning the same model on different datasets) using multi-output GPs.
-  - **Multi-Fidelity BO**: combine cheap low-fidelity evaluations (e.g. short training runs) with expensive high-fidelity ones; BOHB and Hyperband-BO hybrids exploit this.
-  - **Trust Region BO (TuRBO)**: maintains local trust regions to scale to high dimensions and avoid the over-exploration problem of global GPs.
-  - **[[Multi-Objective Optimisation]]**: EHVI (Expected Hypervolume Improvement) and NSGA-II hybrid approaches discover Pareto fronts across competing objectives.
-
-- ### Applications and Use Cases
-  - #### Machine Learning and AI
-    - **[[Hyperparameter Tuning]]**: tuning learning rate, weight decay, batch size, network width/depth for [[Deep Learning]] models. Used by Google Vizier, AWS SageMaker AMT, Azure Hyperdrive, and open-source tools GPyOpt, Ax, Optuna, BoTorch.
-    - **[[Neural Architecture Search]]**: efficiently exploring architecture spaces (number of layers, filter sizes, skip connections) as part of [[AutoML]] pipelines. NASNet, DARTS-BO, and EfficientNet search used variants.
-    - **Prompt Optimisation**: treating prompt templates as discrete/continuous variables and optimising them for LLM performance with limited evaluation budgets.
-    - **Adapter and Fine-Tuning Schedules**: optimising LoRA rank, learning-rate schedules, and data mixing ratios for foundation model adaptation.
-  - #### Physical and Life Sciences
-    - **[[Drug Discovery]]**: guiding molecular synthesis and screening pipelines where each experimental assay is expensive. Platforms like Evariste and Chemify integrate Bayesian Optimisation with robotic chemistry.
-    - **[[Materials Science]]**: accelerating discovery of new alloys, polymers, and catalysts with autonomous laboratory platforms (e.g. Ada, CAMD). Combined with density functional theory (DFT) calculations as surrogates.
-    - **Clinical Trial Design**: optimising dosing regimens and treatment parameters under tight patient-number constraints.
-    - **Protein Engineering**: optimising protein fitness landscapes with directed evolution guided by GP surrogates.
-  - #### Engineering and Robotics
-    - **[[Robotics]]**: controller parameter tuning for locomotion, manipulation, and sim-to-real transfer. RoBO (Robust Bayesian Optimisation) is designed for noisy robotic feedback.
-    - **Aerodynamic Design**: optimising aerofoil shapes and CFD parameters for aircraft and wind turbines.
-    - **Integrated Circuit Design**: timing closure and power optimisation in EDA workflows.
-  - #### Business and Technology
-    - **A/B Testing and Experimentation**: multi-armed bandit / BO hybrids for website optimisation with limited traffic capacity.
-    - **Recommendation System Tuning**: optimising ranking model hyperparameters and business-logic parameters.
-    - **Network Configuration**: tuning load balancers, CDN parameters, and database query planner settings.
+- ### Semantic Classification
+  - owl-class:: machine-learning:BayesianOptimisation
+  - owl-role:: OptimisationStrategy | ProbabilisticModel | SampleEfficientSearch
+  - owl-inferred:: ai:GaussianProcess, ai:SurrogateModel, ai:SequentialExperimentDesign, ai:AcquisitionFunction
+  - belongs-to-domain:: [[AI-GroundedDomain]], [[MachineLearningDomain]], [[ComputationAndIntelligenceDomain]]
+  - implemented-in-layer:: [[AlgorithmLayer]]
 
 - ### Relationships
-  - uses:: [[Gaussian Process]]
-  - uses:: [[Acquisition Function]]
-  - uses:: [[Surrogate Model]]
-  - uses:: [[Bayesian Inference]]
-  - uses:: [[Probabilistic Model]]
-  - uses:: [[Kernel Function]]
-  - enables:: [[Hyperparameter Tuning]]
-  - enables:: [[Neural Architecture Search]]
-  - enables:: [[AutoML]]
-  - enables:: [[Automated Experiment Design]]
-  - enables:: [[Multi-Objective Optimisation]]
-  - requires:: [[Probabilistic Inference]]
-  - supports:: [[Machine Learning]]
-  - supports:: [[Deep Learning]]
-  - supports:: [[Drug Discovery]]
-  - supports:: [[Materials Science]]
-  - contrastsWith:: [[Grid Search]]
-  - contrastsWith:: [[Random Search]]
-  - contrastsWith:: [[Evolutionary Algorithm]]
-  - contrastsWith:: [[Gradient Descent]]
-  - relatedTo:: [[Exploration-Exploitation Trade-off]]
-  - relatedTo:: [[Active Learning]]
-  - relatedTo:: [[Reinforcement Learning]]
-  - relatedTo:: [[Kriging]]
-  - relatedTo:: [[Expected Improvement]]
-  - bridges-to:: [[Robotics]]
-  - bridges-to:: [[Experimental Design]]
+  - is-subclass-of:: [[Optimisation]], [[Probabilistic Model]], [[Machine Learning]], [[Bayesian Inference]]
+  - has-part:: [[Gaussian Process]], [[Acquisition Function]], [[Surrogate Model]], [[Kernel Function]], [[Expected Improvement]], [[Exploration-Exploitation Trade-off]], [[Uncertainty Quantification]], [[Marginal Likelihood]]
+  - requires:: [[Probabilistic Inference]], [[Kernel Function]], [[Surrogate Model]], [[Bayesian Inference]], [[Uncertainty Quantification]], [[Gaussian Process]]
+  - enables:: [[Hyperparameter Tuning]], [[Neural Architecture Search]], [[AutoML]], [[Automated Experiment Design]], [[Multi-Objective Optimisation]], [[Self-Driving Laboratory]], [[Drug Discovery]], [[Materials Science]], [[Protein Engineering]], [[Hyperparameter Optimisation]]
+  - implements:: [[Bayesian Inference]], [[Experimental Design]], [[Active Learning]], [[Exploration-Exploitation Trade-off]], [[Uncertainty Quantification]]
+  - depends-on:: [[Gaussian Process]], [[Kernel Function]], [[Probabilistic Inference]], [[Surrogate Model]], [[Marginal Likelihood]], [[Gaussian Process Regression]]
+  - supports:: [[Machine Learning]], [[Deep Learning]], [[Drug Discovery]], [[Materials Science]], [[Robotics]], [[Hyperparameter Tuning]], [[AutoML]], [[Model Predictive Control]]
+  - uses:: [[Gaussian Process]], [[Acquisition Function]], [[Surrogate Model]], [[Bayesian Inference]], [[Probabilistic Model]], [[Kernel Function]], [[Expected Improvement]], [[Variational Inference]], [[Sparse Gaussian Process]]
+  - contrasts-with:: [[Grid Search]], [[Random Search]], [[Evolutionary Algorithm]], [[Gradient Descent]]
+  - related-to:: [[Exploration-Exploitation Trade-off]], [[Active Learning]], [[Reinforcement Learning]], [[Kriging]], [[Expected Improvement]], [[Uncertainty Quantification]], [[Transfer Learning]], [[Multi-Fidelity Optimisation]], [[Gaussian Process Regression]], [[Hyperparameter Optimisation]], [[Variational Inference]], [[Sparse Gaussian Process]]
+  - bridges-to:: [[Robotics]], [[Experimental Design]], [[Large Language Model]], [[Self-Driving Laboratory]], [[Model Predictive Control]], [[Protein Engineering]]
+  - standardized-by:: [[NeurIPS Black-Box Optimisation Competition]], [[HPOBench]]
 
-- ### Historical Context
-  - Bayesian Optimisation has roots in geostatistics. **[[Kriging]]** — a Gaussian-process interpolation technique developed by Danie Krige in the 1950s and formalised by Georges Matheron — served as the foundational surrogate model long before modern machine learning.
-  - Jonas Mockus adapted the framework for global optimisation in the 1970s, introducing the concept of an acquisition function to guide sampling.
-  - The method entered the machine learning mainstream through Brochu, Cora, and de Freitas's 2010 tutorial, followed by Snoek, Larochelle, and Adams's 2012 paper applying it systematically to neural network hyperparameter tuning.
-  - The release of open-source libraries — Spearmint (2012), GPyOpt (2014), Ax/BoTorch (Facebook, 2019), Optuna (Preferred Networks, 2019) — democratised the technique.
-  - Multi-fidelity approaches (Hyperband, BOHB) and neural architecture search integrations in the 2018–2022 period further expanded the method's reach.
-  - Current frontiers (2025–2026) include large-scale parallel BO on GPU clusters, integration with foundation models for in-context surrogate learning, and autonomous laboratory platforms combining BO with robotic experimentation.
+- ### Content
 
-- ### Software Ecosystem
-  - **BoTorch** (Meta/PyTorch Foundation): high-performance, GPU-accelerated BO library with composable acquisition functions; underpins the Ax platform.
-  - **Ax** (Meta): experiment management platform built on BoTorch; supports multi-objective, multi-fidelity, and bandit experiments.
-  - **Optuna** (Preferred Networks): production-grade hyperparameter optimisation framework using TPE and CMA-ES; widely used in industry.
-  - **GPyOpt** (Sheffield ML Group): GP-based BO library; foundational but less actively maintained.
-  - **GPflow / GPyTorch**: flexible GP libraries enabling custom surrogate construction within BO loops.
-  - **SMAC** (AutoML Freiburg): BO with random forest surrogates; strength in mixed-type and algorithm configuration spaces.
-  - **Dragonfly**: supports high-dimensional and multi-fidelity BO with additive GP models.
-  - **Emukit** (Amazon): modular BO, multi-fidelity, and experimental design toolkit.
-  - **RoBO**: Bayesian Optimisation with a focus on robotics and noisy observations.
+  ## Compositional Relationships (Components)
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:GaussianProcess))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:AcquisitionFunction))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:KernelFunction))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:SurrogateModel))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:ExplorationExploitationTradeOff))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:PosteriorPredictiveDistribution))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:hasPart ai:MarginalLikelihood))
 
-- ### Standards and Context
-  - No single formal standards body governs Bayesian Optimisation, but several benchmark suites and best-practice frameworks have emerged:
-    - **HPOBench** and **YAHPO**: standardised hyperparameter optimisation benchmarks for fair method comparison.
-    - **NeurIPS Black-Box Optimisation Competition**: recurring benchmark driving algorithmic advances.
-    - **MFPML (Multi-Fidelity and Physics-based ML)**: community standards for multi-fidelity surrogates in engineering design.
-  - Bayesian Optimisation is listed as a component methodology in the **DARPA Accelerated Materials Design and Manufacturing** programme and the **European AI Act**'s annexe on automated decision-making tools for scientific research.
-  - Integration with **MLflow** and **W&B** logging standards ensures reproducibility of BO-driven experiments in production [[Machine Learning]] pipelines.
+  ## Dependency Relationships
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:requires ai:ProbabilisticInference))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:requires ai:KernelFunction))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:requires ai:SurrogateModel))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:dependsOn ai:GaussianProcess))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:dependsOn ai:BayesianInference))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:dependsOn ai:UncertaintyQuantification))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:dependsOn ai:MarginalLikelihood))
+
+  ## Capability Relationships
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:enables ai:HyperparameterTuning))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:enables ai:NeuralArchitectureSearch))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:enables ai:AutoML))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:enables ai:AutomatedExperimentDesign))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:enables ai:MultiObjectiveOptimisation))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:enables ai:SelfDrivingLaboratory))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:supports ai:DrugDiscovery))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:supports ai:MaterialsScience))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:supports ai:ModelPredictiveControl))
+
+  ## Implementation Relationships
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:implements ai:BayesianInference))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:implements ai:ExperimentalDesign))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:implements ai:ActiveLearning))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:uses ai:GaussianProcess))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:uses ai:AcquisitionFunction))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:uses ai:KernelFunction))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:uses ai:SparseGaussianProcess))
+
+  ## Reduction Relationships
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:reducesTo ai:SequentialExperimentDesign))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:relatedTo ai:ActiveLearning))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:relatedTo ai:ReinforcementLearning))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:relatedTo ai:Kriging))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:relatedTo ai:MultiFidelityOptimisation))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:bridgesTo ai:SelfDrivingLaboratory))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:bridgesTo ai:LargeLanguageModel))
+      SubClassOf(ai:BayesianOptimisation
+        ObjectSomeValuesFrom(ai:bridgesTo ai:ProteinEngineering))
+
+  ## About
+  Bayesian Optimisation addresses one of the most fundamental tensions in applied science and engineering: how to find the optimum of a function when each evaluation is expensive, the gradient is unknown, the function may be noisy, and the evaluation budget is tightly constrained. Unlike [[Gradient Descent]]-based methods — which require differentiability and gradient access — or [[Evolutionary Algorithm|evolutionary algorithms]] — which require many parallel evaluations to build population diversity — Bayesian Optimisation builds and maintains an explicit probabilistic model of the entire objective function landscape, using past evaluations not merely as individual data points toward a local optimum but as evidence for the function's global structure. The result is a principled, sequential decision-making process in which each evaluation is selected to maximally reduce uncertainty about the location of the global optimum, weighted by the probability that the candidate point actually achieves a better value than the current best — a clean application of [[Bayesian Inference]] to [[Experimental Design]].
+
+  The historical roots lie in geostatistics. Danie Krige, a South African mining engineer, developed what became [[Kriging]] in the 1950s as an interpolation technique for estimating ore grade distributions from sparse borehole measurements — in essence, fitting a [[Gaussian Process]] to spatial data and using the posterior predictive distribution to guide further sampling. Georges Matheron formalised Krige's approach in the 1960s, and the connection between Kriging and [[Gaussian Process Regression]] was made explicit by the machine learning community. Jonas Mockus adapted the framework for global [[Optimisation]] in the 1970s, introducing the acquisition function — a utility criterion derived from the GP posterior determining where to evaluate next. The method entered the [[Machine Learning]] mainstream through Brochu, Cora, and de Freitas's 2010 tutorial (arXiv:1012.2599) and was definitively established for hyperparameter optimisation by Snoek, Larochelle, and Adams's 2012 NeurIPS paper "Practical Bayesian Optimization of Machine Learning Algorithms," which demonstrated that Bayesian Optimisation systematically outperforms [[Grid Search]] and [[Random Search]] for tuning [[Deep Learning]] models. The release of Spearmint (2012), GPyOpt (Sheffield, 2014), Ax and BoTorch (Meta, 2019), Optuna (Preferred Networks, 2019), and the 2023 Garnett textbook completed the transition from specialised research tool to ubiquitous component of MLOps infrastructure. By 2026, Bayesian Optimisation is deployed across industrial ML pipelines at Google, Amazon, and Microsoft; is the core algorithm in autonomous chemistry and materials platforms including Chemify, the Atlas self-driving laboratory architecture (RSC Digital Discovery, 2025), and SDL 2.0 (Materials Horizons, 2026); and is itself being transformed by [[Large Language Model]]-guided acquisition frameworks (BOLT, ICLR 2025; arXiv:2603.28959, 2026) that use LLM knowledge priors to warm-start and guide the optimisation loop.
+
+  ## Formal Algorithm
+  The canonical Bayesian Optimisation loop operates as follows. Let f: X → R be the expensive black-box objective function over a compact input domain X ⊆ R^d. The algorithm maintains a dataset D_t = {(x₁,y₁), …, (x_t, y_t)} of t observations where y_i = f(x_i) + ε_i with noise ε_i ∼ N(0, σ²). A [[Gaussian Process]] prior GP(m(x), k(x,x')) is placed over f, with mean function m(x) and [[Kernel Function]] k(x,x'). Given D_t the GP posterior predictive distribution at test point x* is:
+
+  p(f(x*) | D_t) = N(μ_t(x*), σ²_t(x*))
+
+  with closed-form expressions for μ_t(x*) = k(x*, X)(K + σ²I)⁻¹ y and σ²_t(x*) = k(x*,x*) − k(x*,X)(K + σ²I)⁻¹ k(X,x*), where K is the kernel matrix. The [[Marginal Likelihood]] p(y|X, θ) = N(y; m(X), K + σ²I) is maximised with respect to kernel hyperparameters θ (length-scale, signal variance, noise variance) via L-BFGS. The [[Acquisition Function]] α_t: X → R is then computed from the posterior (μ_t, σ_t). [[Expected Improvement]] — the most widely used acquisition function — is EI_t(x) = E[max(f(x) − f*, 0)] = (μ_t(x) − f*)Φ(Z) + σ_t(x)φ(Z) where Z = (μ_t(x) − f*)/σ_t(x), φ and Φ denote the standard normal PDF and CDF, and f* = max_{i≤t} y_i is the current best observation. The next evaluation point is x_{t+1} = argmax_{x∈X} α_t(x), found via multi-start gradient ascent or evolutionary inner optimisation. The loop terminates after T evaluations, returning x* = argmax_{i≤T} y_i.
+
+  Computational complexity of exact [[Gaussian Process]] inference is O(t³) in time and O(t²) in memory, limiting vanilla BO to a few hundred evaluations before approximations ([[Sparse Gaussian Process]] via inducing points, [[Variational Inference]]) become necessary.
+
+  ## Components / Architecture
+
+  ### Surrogate Model
+  The [[Surrogate Model]] provides a probabilistic approximation of the objective function cheap to query. The [[Gaussian Process]] is the canonical choice — analytically tractable posterior updates, calibrated uncertainty, direct support for the [[Acquisition Function]] formulas. Alternatives:
+  - **Random Forest**: used in SMAC and BOHB for mixed-type (continuous + categorical) hyperparameter spaces; uncertainty estimated via ensemble variance.
+  - **Bayesian Neural Networks (BNNs)**: DNGO (deep neural network with Gaussian output) and BOHAMIANN scale to higher dimensions but require approximate inference (MCMC or [[Variational Inference]]).
+  - **Tree Parzen Estimators (TPE)**: used by Optuna and Hyperopt; model p(x|y < y*) and p(x|y ≥ y*) as separate kernel density estimates rather than fitting the objective directly.
+  - **[[Large Language Model]] in-context surrogate**: BOLT and ChemBOMAS frameworks use an LLM as surrogate by conditioning on past (x, y) observations formatted as text; competitive with GP surrogates on structured and discrete spaces without kernel specification.
+
+  ### Acquisition Function
+  The [[Acquisition Function]] translates the surrogate posterior into a query utility:
+  - **[[Expected Improvement]] (EI)**: highest expected gain over f*; analytically tractable for GPs; the dominant choice in practice.
+  - **Upper Confidence Bound (UCB)**: selects x with highest μ(x) + κσ(x); κ controls the [[Exploration-Exploitation Trade-off]]; connects to [[Reinforcement Learning]] bandit regret bounds.
+  - **Thompson Sampling**: samples a function from GP posterior and maximises it; naturally parallelisable, no κ hyperparameter.
+  - **Knowledge Gradient (KG)**: one-step optimal acquisition considering downstream value of information; computationally intensive but asymptotically optimal.
+  - **Joint Expected Improvement (qEI)**: batch extension selecting q simultaneous points via fantasised observations; implemented in BoTorch for parallel evaluation on multi-GPU clusters.
+  - **Expected Hypervolume Improvement (EHVI)**: for [[Multi-Objective Optimisation]]; maximises the expected improvement in hypervolume dominated by the current Pareto front.
+
+  ### Kernel Function
+  The [[Kernel Function]] k(x,x') encodes prior assumptions about objective function structure:
+  - **Matérn ν=5/2**: standard in hyperparameter optimisation; twice differentiable, balances flexibility and regularity.
+  - **Squared Exponential (RBF)**: infinitely differentiable; over-smooth for discontinuous or multi-modal functions.
+  - **Automatic Relevance Determination (ARD)**: per-dimension length-scales enable the GP to identify informative input dimensions.
+  - **Spectral Mixture**: learns a mixture of cosine components from data; very expressive for complex multimodal objectives.
+  - Kernels compose by addition (sum of independent processes) and multiplication (interaction effects), enabling structured kernel discovery for interpretable surrogate decompositions.
+
+  ### Scalability Variants
+  - **Sparse GPs (SVGP)**: M inducing points reduce cost from O(t³) to O(tM²); enable mini-batch training and GPU parallelism; implemented in GPflow and GPyTorch. Foundational: Titsias (2009) sparse GP with [[Variational Inference]]; Hensman et al. (2013) SVGP enabling stochastic optimisation.
+  - **Trust-Region BO (TuRBO)**: maintains local trust regions to scale to high dimensions and avoid the over-exploration inherent in global GP models. The canonical solution for d > 20 dimensional hyperparameter spaces.
+  - **Multi-Fidelity BO (BOHB, MF-GP-UCB)**: [[Multi-Fidelity Optimisation]] using cheap low-fidelity evaluations (short training runs, coarse simulations) alongside expensive high-fidelity ones; fidelity as an additional input dimension in the [[Gaussian Process]]; BOHB (Falkner et al., 2018) combines Hyperband early-stopping with BO for efficient neural architecture search.
+  - **Multi-Task BO**: share surrogate across related tasks using multi-output [[Gaussian Process]]es; enables warm-starting from prior experiments; used in drug discovery for target-specific variant generation.
+  - **Batch/Parallel BO**: qEI and qUCB acquire q ≥ 2 points simultaneously via fantasised observations; BoTorch implements GPU-accelerated batch acquisitions for 10–100 parallel evaluations.
+  - **LLM-guided BO**: BOLT (ICLR 2025) fine-tunes an LLM on BO trajectories and uses it as in-context surrogate; multi-agent LLM teams propose and debate acquisitions (arXiv:2603.28959, 2026); ChemBOMAS extracts reaction parameter relationships from literature via LLM to guide chemical BO.
+
+  ## Use Cases
+
+  ### Machine Learning and AI
+  - **[[Hyperparameter Tuning]]**: tuning learning rate, weight decay, batch size, architecture depth, dropout for [[Deep Learning]] models. Google Vizier runs tens of millions of BO trials per day internally. AWS SageMaker Automatic Model Tuning, Azure ML Hyperdrive, and open-source tools Ax/BoTorch, Optuna (v4.4+ with GP multi-objective), SMAC are deployed widely. A/B validated 20–40% reduction in compute cost to reach target accuracy vs. [[Random Search]].
+  - **LoRA and PEFT hyperparameter search (2025)**: arXiv:2602.11171 demonstrates LLM-aided Bayesian Optimisation for LoRA fine-tuning hyperparameter search (rank, alpha, learning rate), achieving 20–30% downstream task performance improvement vs. [[Random Search]] with equal evaluation budget. Critical for parameter-efficient fine-tuning of foundation models.
+  - **[[Neural Architecture Search]]**: NASNet, DARTS-BO, EfficientNet search used BO variants; BOHB reduced NAS cost 10–100× vs. [[Random Search]] by combining Hyperband early-stopping with BO acquisition, enabling NAS on researcher-accessible hardware.
+  - **Data mixture optimisation for LLMs**: multi-scale multi-fidelity BO for [[Large Language Model]] pre-training data curation (OpenReview 2025) achieves 2.6× sample-efficiency improvement over standard BO baselines by modelling scale and training-step as fidelity dimensions.
+  - **Prompt and alignment optimisation**: treating prompt template variables as combinatorial inputs to BO loops for optimising [[Large Language Model]] output quality metrics with limited API call budgets; used in production at several NLP platform companies.
+
+  ### Physical and Life Sciences
+  - **[[Drug Discovery]]**: guiding molecular synthesis and screening where each experimental assay costs significant time and reagents. ACS Central Science (2024) demonstrated multi-fidelity BO over experimental fidelities for drug molecule discovery, combining cheap virtual screening with expensive wet-lab synthesis in iterative campaigns. Chemify and Evariste Systems integrate BO with robotic chemistry for autonomous lead generation.
+  - **[[Materials Science]] and self-driving laboratories**: Royal Society Open Science (2026) reviews autonomous self-driving labs incorporating BO as the core decision engine. RSC Digital Discovery (2025) describes the Atlas architecture using BO for fully autonomous chemistry platforms. Ada (palladium thin films) uses BO with density functional theory surrogates for closed-loop alloy discovery. SDL 2.0 (Materials Horizons, 2026) envisions collaborative autonomous discovery networks in which BO loops across multiple robotic platforms share surrogate information in real time.
+  - **Bioprocess engineering**: multi-fidelity BO for fermentation, cell culture, and downstream processing optimisation (Biotechnology and Bioengineering, 2025) replacing traditional design-of-experiments in pharmaceutical bioproduction. AstraZeneca and GSK have published adoption of BO for lead compound screening and gene therapy delivery vector optimisation.
+  - **[[Protein Engineering]]**: optimising protein fitness landscapes using GP surrogates over sequence or structural embeddings, with [[Expected Improvement]] or multi-objective EHVI acquisition for simultaneous optimisation of stability, activity, and immunogenicity. Connects to [[Active Learning]] workflows for directed evolution guidance.
+  - **Clinical trial design**: optimising dosing regimens and treatment parameters under tight patient-number constraints using BO as a [[Bayesian Inference]]-grounded dose-escalation decision tool, balancing efficacy measurement against safety constraints.
+
+  ### Engineering and Robotics
+  - **[[Robotics]] controller tuning**: optimising locomotion gait parameters, manipulation controller gains, and sim-to-real transfer policies where hardware trials are slow or risky. RoBO (Robust Bayesian Optimisation) handles heteroscedastic noise in robotic feedback. Connects to [[Model Predictive Control]] via [[Gaussian Process]] dynamics models (PILCO, Deisenroth & Rasmussen 2011).
+  - **Aerodynamic and structural design**: optimising aerofoil geometry, composite layup schedules, and thermal barrier coating architectures with CFD/FEA simulators as [[Surrogate Model]] training sources. Advanced Manufacturing Research Centre (AMRC, Sheffield) uses BO for titanium and Inconel cutting parameter optimisation in aerospace component manufacture.
+  - **Laser processing and semiconductor EDA**: multiple 2024–2025 USPTO patents for BO applied to laser material processing parameter optimisation; BO guides placement and routing parameter selection in IC design flows for timing closure and power/performance/area (PPA) optimisation.
+
+  ## Historical Context
+  Three converging intellectual traditions produced Bayesian Optimisation. The geostatistics lineage — Krige (1950s), Matheron (1963) — provided [[Kriging]] / [[Gaussian Process Regression]] as the probabilistic interpolation framework. Decision theory — von Neumann & Morgenstern utility theory, Raiffa & Schlaifer (1961) Bayesian decision analysis — provided the framework for sequential decision-making under uncertainty justifying acquisition functions as expected utility. The global optimisation lineage — Mockus (1974, 1975), Mockus, Tiesis & Zilinskas (1978) — synthesised these into an algorithm for sequential global optimisation. The 2010 Brochu et al. tutorial made the framework accessible to the ML community. Snoek et al. (2012) demonstrated systematic application to neural network [[Hyperparameter Tuning]], releasing Spearmint and establishing BO as an ML standard. Garnett's 2023 Cambridge textbook "Bayesian Optimization" completed the pedagogical infrastructure. The 2018–2022 period brought multi-fidelity (BOHB), scalable (TuRBO), batch (BoTorch qEI), and multi-objective (EHVI) extensions. 2025–2026 marks LLM-guided acquisition and autonomous laboratory deployment as the leading research frontiers.
+
+  ## Software Ecosystem
+  - **BoTorch** (Meta/PyTorch Foundation): GPU-accelerated, composable acquisition functions, batch/parallel BO, multi-objective EHVI, multi-fidelity; underpins the Ax platform. The canonical library for research-grade BO.
+  - **Ax** (Meta): experiment management platform on BoTorch; supports adaptive experimentation, multi-objective, multi-fidelity, and bandit experiments with high-level API.
+  - **Optuna** (Preferred Networks): production-grade framework with TPE and CMA-ES samplers; GP-based Bayesian multi-objective optimisation added in v4.4 (2025); OptunaHub (2025) community platform for custom samplers. Dominant in industry for ease of integration.
+  - **GPyOpt** (Sheffield ML Group): foundational GP-based BO library; less actively maintained but widely cited as a reference implementation.
+  - **GPflow / GPyTorch**: flexible GP libraries for custom surrogate construction; GPyTorch provides Deep Kernel Learning and KeOps-accelerated large-scale [[Gaussian Process]] inference.
+  - **SMAC** (AutoML Freiburg): BO with random forest surrogates for mixed-type and algorithm configuration spaces; combined algorithm selection and hyperparameter optimisation (CASH).
+  - **Emukit** (Amazon): modular toolkit for BO, [[Experimental Design]], and sensitivity analysis using GP surrogates; integrates with multi-fidelity workflows.
+  - **Dragonfly**: high-dimensional and [[Multi-Fidelity Optimisation]] BO with additive GP models and neural network surrogates.
+
+  ## Standards and Benchmarks
+  - **HPOBench**: standardised hyperparameter optimisation benchmarks for reproducible comparison; covers NAS, algorithm configuration, and classical ML hyperparameter spaces.
+  - **YAHPO (Yet Another HPO Benchmark)**: meta-surrogate benchmark for fast multi-fidelity BO evaluation without expensive re-training.
+  - **NeurIPS Black-Box Optimisation Competition**: recurring benchmark driving algorithmic advances; evaluates on real-world and synthetic expensive problems with strict query budgets.
+  - **GECCO 2025 BO Tutorial** (Branke, Warwick): contributed to standardising connections between BO and evolutionary computation.
+  - Integration with **MLflow**, **Weights & Biases**, and **Neptune** tracking ensures reproducibility of BO-driven [[Hyperparameter Tuning]] in production [[Machine Learning]] pipelines.
+
+  ## Academic Context
+  The BO research community is centred around NeurIPS, ICML, and ICLR for ML aspects, and Bayesian Analysis, AISTATS, and RSC Digital Discovery for theoretical foundations and physical science applications. Seminal theoretical results: Srinivas et al. (2010) GP-UCB sub-linear regret bounds establishing BO's sample-efficiency guarantees; Bull (2011) convergence rates for EI; Frazier & Powell (2012) knowledge gradient for discrete problems; Wang & Jegelka (2017) max-value entropy search; Daulton et al. (2020) differentiable EHVI for multi-objective parallelisable BO. Applied BO papers in ACS Central Science, Nature Chemistry, and RSC Digital Discovery show growing physical science community adoption from 2022.
+
+  ## Current Landscape (2026)
+  By 2026, Bayesian Optimisation is widely deployed in industrial ML pipelines and actively transforming physical science through autonomous laboratory integration:
+  - **LLM-guided acquisition**: BOLT (ICLR 2025, Amazon Science) demonstrated LLM in-context surrogate competitive with GP-based BO on standard benchmarks while handling discrete and structured spaces more naturally. Multi-Agent LLMs for Adaptive Acquisition (arXiv:2603.28959, 2026) shows LLM agent teams proposing and debating acquisitions, achieving better performance on noisy high-dimensional benchmarks than single-surrogate BO.
+  - **LoRA/PEFT hyperparameter search**: arXiv:2602.11171 (2025) demonstrates LLM-aided BO for LoRA hyperparameter search; 20–30% performance improvement vs. [[Random Search]] with equal budget.
+  - **Data mixture BO for LLM pre-training**: multi-scale multi-fidelity BO (OpenReview 2025) achieves 2.6× sample-efficiency; opens new BO application domain in the LLM era.
+  - **Autonomous laboratory deployment at scale**: RSC Digital Discovery (2025–2026) documents deployed self-driving laboratory systems completing >10,000 BO-guided experiments per year for thermoresponsive polymers, drug molecules, and catalysis with minimal human oversight.
+  - **Optuna v4.4 GP multi-objective**: 2025 release of GP-based Bayesian multi-objective support in Optuna significantly expanded GP-based BO adoption in the ML engineering community where Optuna's simpler API is preferred over BoTorch's research interface.
+  - **Industrial bioprocess adoption**: BO entering pharmaceutical bioproduction (Biotechnology and Bioengineering, 2025) replacing traditional design-of-experiments; AstraZeneca and GSK deploying BO-guided fermentation and downstream processing optimisation.
+  - **UK Warwick EPSRC CDT research**: active BO research at Warwick University under EPSRC Mathematics of Systems CDT, including BO with preference exploration via monotonic neural network ensembles (arXiv:2501.18792, 2025) and connections to multi-objective evolutionary computation.
+
+  ## UK Context
+  - **University of Warwick**: Professor Jürgen Branke (Warwick Business School, Operational Research and Systems) leads European research on surrogate-assisted evolutionary computation and Bayesian Optimisation, including multi-objective BO and connections to evolutionary algorithms. Warwick's EPSRC Mathematics of Systems II CDT funds BO research including preference exploration (arXiv:2501.18792, 2025). Branke contributed to the GECCO 2025 BO tutorial, helping standardise connections between BO and evolutionary computation communities.
+  - **University of Sheffield**: long tradition in [[Gaussian Process]] research through the ML group (GPyOpt; Gaussian Process Summer School — GPSS held annually). Neil Lawrence and collaborators contributed fundamentally to sparse GP inference (SVGP inducing-point methods) and the GPy library underpinning modern BO software. Sheffield's GPSS trains hundreds of researchers annually in GP and BO methods.
+  - **University of Cambridge**: Professor Neil Lawrence (Cambridge/Amazon) continues to contribute to GP theory and data-centric AI. Cambridge's ML group works on BO for scientific applications including [[Protein Engineering]] and [[Materials Science]].
+  - **Imperial College London**: the iGEM 2025 Imperial team implemented BO for biological model parameter identification. The Department of Chemical Engineering hosts research on BO for process design and reaction optimisation, connecting the [[Machine Learning]] and chemical engineering communities.
+  - **AstraZeneca and GSK (Cambridge / Stevenage / London)**: both major UK pharmaceutical companies have adopted BO for drug candidate screening and lead optimisation; AstraZeneca's collaboration with the Wellcome Sanger Institute uses BO for gene therapy delivery vector optimisation; GSK's AI/ML platform integrates BO with robotic high-throughput screening at their Stevenage research site.
+  - **The Alan Turing Institute (London)**: national data science and AI institute hosts active programmes in probabilistic [[Machine Learning]] including [[Gaussian Process]]es and Bayesian [[Experimental Design]], with workshops connecting BO to scientific discovery, materials informatics, and environmental monitoring.
+  - **Advanced Manufacturing Research Centre (AMRC, Sheffield)**: uses BO for cutting parameter optimisation for titanium and Inconel aerospace component manufacture, replacing lengthy design-of-experiments campaigns with adaptive Bayesian search — directly supporting Northern England's aerospace supply chain.
+  - **Rolls-Royce (Derby) and BAE Systems**: both companies participate in UKRI-funded programmes applying BO to aerodynamic design, turbine blade cooling optimisation, and composite structure layup scheduling — BO providing significant cost and time savings over classical DoE approaches in high-value manufacturing.
+
+  ## Future Directions (2026–2030)
+  - **Foundation model surrogates**: replacing [[Gaussian Process]] surrogates with pre-trained [[Large Language Model]]-based or diffusion model surrogates that leverage in-context learning over libraries of past experiments, enabling zero-shot [[Transfer Learning]] to new optimisation tasks without GP fitting overhead.
+  - **Persistent cross-experiment meta-learning**: BO platforms accumulating knowledge across thousands of past campaigns — [[Hyperparameter Tuning]] runs, laboratory experiments — using meta-learning to warm-start surrogates and acquisition strategies, dramatically reducing cold-start inefficiency.
+  - **Real-time adaptive BO for streaming objectives**: BO for objectives that change over time (concept drift), relevant for online recommendation system tuning, dynamic pricing, and adaptive clinical trial designs where the population and efficacy landscape shift during the experiment.
+  - **Certified and safe BO**: safety-constrained BO (SafeOpt, StageOpt) with formal guarantees that no unsafe configurations are evaluated — critical for [[Robotics]], clinical dose optimisation, and nuclear materials design where constraint violation carries physical harm.
+  - **Quantum-enhanced BO**: hybrid quantum-classical BO frameworks using quantum annealing or variational quantum eigensolvers for acquisition function maximisation, with IBM and Cambridge Quantum exploring quantum advantage in this inner-loop optimisation.
+  - **Fully autonomous self-driving laboratories at scale**: integration of BO with robotic chemistry, autonomous characterisation, and predictive physics models enabling 24/7 autonomous [[Materials Science]] and [[Drug Discovery]] campaigns targeting entire chemical design spaces.
+
+  ## Multi-Objective Bayesian Optimisation
+  The extension of Bayesian Optimisation to [[Multi-Objective Optimisation]] — finding the Pareto front of non-dominated solutions when optimising multiple competing objectives simultaneously — represents one of the most active research fronts in the field, driven by the prevalence of genuine multi-objective trade-offs in real-world applications: drug efficacy vs. toxicity, materials strength vs. weight vs. cost, model accuracy vs. latency vs. energy consumption, and ML model performance vs. fairness. Single-objective BO extensions to multi-objective settings require replacing the scalar [[Acquisition Function]] with a multi-objective analogue that selects points providing the most informative addition to the Pareto front estimate.
+
+  The dominant approach is **Expected Hypervolume Improvement (EHVI)**, introduced by Emmerich et al. (2006) and extended to parallel/batch computation by Daulton et al. (NeurIPS 2020). EHVI selects the point x that maximises the expected improvement in the hypervolume dominated by the current Pareto front approximation — a natural generalisation of [[Expected Improvement]] to the multi-objective setting that reduces to EI when there is a single objective. The hypervolume metric is the volume of the dominated space between the Pareto front and a reference point, providing a scalar summary of Pareto front quality. Computation of exact EHVI is exponential in the number of objectives in general, but analytical expressions are available for 2–3 objectives, and Monte Carlo EHVI (MC-EHVI) approximations with reparameterisation gradients enable gradient-based acquisition maximisation via BoTorch's qEHVI implementation. For 4+ objectives, the hypervolume computation itself becomes the bottleneck (O(N^{m/2}) in the number of Pareto front points N and number of objectives m), motivating approximate methods like ParEGO (scalarisation with random weight vectors) and Random Scalarisation GP UCB.
+
+  In [[Drug Discovery]], multi-objective BO simultaneously optimises multiple biochemical properties: binding affinity (IC50), selectivity ratio, ADMET profile (absorption, distribution, metabolism, excretion, toxicity), synthetic accessibility score (SAS), and molecular weight constraints. The resulting Pareto front gives medicinal chemists a structured view of the fundamental trade-offs in the design space — for example, discovering that selectivity gains require sacrificing synthetic accessibility — enabling informed human decisions about which Pareto-optimal candidates to advance to expensive cell-based assays. In [[Materials Science]], EHVI-based BO platforms simultaneously optimise competing properties such as yield strength, ductility, thermal conductivity, and corrosion resistance across alloy composition and processing parameter spaces, discovering materials that achieve better trade-offs than any previously known composition in the design database. In [[Machine Learning]] model development, multi-objective BO over accuracy, inference latency, memory footprint, and fairness metrics enables systematic discovery of Pareto-optimal model architectures and training procedures for deployment on specific hardware and regulatory constraints.
+
+  The integration of multi-objective BO with self-driving laboratory platforms represents the current frontier: autonomous discovery campaigns that simultaneously optimise multiple molecular or materials properties through iterative synthesis, characterisation, and Bayesian acquisition selection, enabled by platforms such as Atlas (RSC Digital Discovery, 2025) and the SDL 2.0 framework (Materials Horizons, 2026) that combine robotic chemistry, automated analytical instruments, and multi-objective BO decision engines into end-to-end autonomous discovery systems operating 24/7 without human intervention between experimental cycles.
+
+  ## Bayesian Optimisation in the LLM Era (2024–2026)
+  The emergence of [[Large Language Model]]s as universal interfaces for knowledge and computation has created a new paradigm for Bayesian Optimisation that is transforming both its capabilities and its applications. The relationship between LLMs and BO operates in three distinct modes: LLMs as optimisation targets, LLMs as optimisation tools (surrogates and acquisition strategies), and LLMs as domain knowledge sources for initialising Bayesian search.
+
+  In the first mode — LLMs as targets — Bayesian Optimisation has become the preferred strategy for hyperparameter spaces of foundation model fine-tuning where individual training runs are expensive. LoRA fine-tuning (arXiv:2602.11171, 2025) involves joint optimisation of rank r, scaling factor α, learning rate η, warmup schedule, data mixing ratios, and sometimes adapter layer placement — a 5–10 dimensional continuous and discrete mixed search space where each evaluation requires training for several GPU-hours. BO with GP surrogates over continuous dimensions and Random Forest surrogates over discrete choices achieves 20–30% better downstream task performance vs. manual or [[Random Search]] baselines within the same compute budget. Data mixture optimisation for LLM pre-training (OpenReview 2025) extends this to the high-dimensional problem of selecting mixing weights across hundreds of data source categories, using multi-scale multi-fidelity BO where cheap small-scale training runs provide low-fidelity evaluations of data mixture quality and expensive full-scale runs provide high-fidelity validation.
+
+  In the second mode — LLMs as BO tools — two approaches have emerged. The first uses the LLM as an in-context surrogate: given a serialised dataset D_t = {(x₁,y₁), ..., (x_t,y_t)} formatted as text, the LLM predicts the value of f at a new point x_{t+1} by in-context reasoning about patterns in the observed data, without any GP fitting or kernel specification. BOLT (Amazon Science, ICLR 2025) demonstrated this achieves competitive performance with standard GP-BO on mathematical benchmarks while outperforming it on structured discrete spaces (algorithm configuration, molecular design) where the LLM's pre-trained knowledge about the domain provides useful inductive bias. The second approach uses multi-agent LLM teams for adaptive acquisition selection: multiple LLM agents specialised in different acquisition strategies (exploration-focused, exploitation-focused, diverse sampling) debate and vote on the next evaluation point, with the consensus acquisition strategy adapting dynamically to the current stage of the optimisation campaign (arXiv:2603.28959, 2026).
+
+  In the third mode — LLMs as domain knowledge sources — ChemBOMAS and related frameworks use LLMs to extract domain knowledge from scientific literature before the BO campaign begins, constructing structured prior beliefs about which regions of the search space are likely to contain the optimum based on published structure-activity relationships, reaction mechanism understanding, and materials science principles. This knowledge is formalised as informative GP priors or search space decompositions that focus BO exploration on chemically meaningful parameter combinations, dramatically reducing cold-start inefficiency in domains with rich prior literature. The integration with retrieval-augmented generation (RAG) from scientific literature databases enables the LLM knowledge extraction to stay current with recent publications, allowing BO campaigns to benefit from the most recent experimental findings even when they postdate the LLM's training cutoff.
+
+  ## Research and Literature
+  1. Mockus, J. (1975). On Bayesian methods for seeking the extremum. *Optimization Techniques IFIP Technical Conference* (pp. 400–404). Springer.
+  2. Mockus, J., Tiesis, V., & Zilinskas, A. (1978). The application of Bayesian methods for seeking the extremum. *Towards Global Optimisation 2* (pp. 117–129). North-Holland.
+  3. Brochu, E., Cora, V.M., & de Freitas, N. (2010). A Tutorial on Bayesian Optimization of Expensive Cost Functions. *arXiv:1012.2599*.
+  4. Snoek, J., Larochelle, H., & Adams, R.P. (2012). Practical Bayesian Optimization of Machine Learning Algorithms. *NeurIPS 2012*.
+  5. Srinivas, N., Krause, A., Kakade, S.M., & Seeger, M. (2010). Gaussian Process Optimization in the Bandit Setting: No Regret and Experimental Design. *ICML 2010*.
+  6. Rasmussen, C.E. & Williams, C.K.I. (2006). *Gaussian Processes for Machine Learning*. MIT Press.
+  7. Frazier, P.I. (2018). A Tutorial on Bayesian Optimization. *arXiv:1807.02811*.
+  8. Garnett, R. (2023). *Bayesian Optimization*. Cambridge University Press.
+  9. Falkner, S., Klein, A., & Hutter, F. (2018). BOHB: Robust and Efficient Hyperparameter Optimization at Scale. *ICML 2018*.
+  10. Eriksson, D. et al. (2019). Scalable Global Optimization via Local Bayesian Optimization (TuRBO). *NeurIPS 2019*.
+  11. Balandat, M. et al. (2020). BoTorch: A Framework for Efficient Monte-Carlo Bayesian Optimization. *NeurIPS 2020*.
+  12. Akiba, T. et al. (2019). Optuna: A Next-generation Hyperparameter Optimization Framework. *KDD 2019*.
+  13. Daulton, S. et al. (2020). Differentiable Expected Hypervolume Improvement for Parallel Multi-Objective Bayesian Optimization. *NeurIPS 2020*.
+  14. Wang, Z. & Jegelka, S. (2017). Max-value Entropy Search for Efficient Bayesian Optimization. *ICML 2017*.
+  15. Titsias, M. (2009). Variational Learning of Inducing Variables in Sparse Gaussian Processes. *AISTATS 2009*.
+  16. Hensman, J., Fusi, N., & Lawrence, N.D. (2013). Gaussian Processes for Big Data. *UAI 2013*.
+  17. Deisenroth, M. & Rasmussen, C.E. (2011). PILCO: A Model-Based and Data-Efficient Approach to Policy Search. *ICML 2011*.
+  18. Bull, A.D. (2011). Convergence rates of efficient global optimization algorithms. *JMLR*, 12, 2879–2904.
+  19. Jensen, K.F. et al. (2024). Bayesian Optimization over Multiple Experimental Fidelities Accelerates Drug Molecule Discovery. *ACS Central Science*.
+  20. Anonymous (2024). Race to the bottom: Bayesian optimisation for chemical problems. *RSC Digital Discovery*. doi:10.1039/D3DD00234A.
+  21. Anonymous (2025). Atlas: a brain for self-driving laboratories. *RSC Digital Discovery*. doi:10.1039/D4DD00115J.
+  22. Anonymous (2026). Toward self-driving laboratory 2.0 for chemistry and materials discovery. *Materials Horizons*. doi:10.1039/D5MH01984B.
+  23. Anonymous (2025). Autonomous 'self-driving' laboratories: a review of technology and policy implications. *Royal Society Open Science*, 12(7). doi:10.1098/rsos.250646.
+  24. Anonymous (2025). Best Practices for Multi-Fidelity Bayesian Optimization in Materials and Molecular Research. *arXiv:2410.00544*.
+  25. Anonymous (2025). Efficient Hyper-Parameter Search for LoRA via Language-aided Bayesian Optimization. *arXiv:2602.11171*.
+  26. Anonymous (2026). Multi-Agent LLMs for Adaptive Acquisition in Bayesian Optimization. *arXiv:2603.28959*.
+  27. Anonymous (2025). Searching for Optimal Solutions with LLMs via Bayesian Optimization. *ICLR 2025*. Amazon Science.
+  28. Anonymous (2025). Bayesian Optimization with Preference Exploration using a Monotonic Neural Network Ensemble. *arXiv:2501.18792*.
+
+  ## Relationship to Related Methods and Theoretical Connections
+  Understanding Bayesian Optimisation requires situating it relative to the broader landscape of [[Optimisation]], [[Probabilistic Inference]], and sequential decision-making methods that share conceptual foundations. The most direct theoretical relationship is to [[Active Learning]], the paradigm in which a learner selects which examples to request labels for in order to maximise learning speed with minimum labelled data. Bayesian Optimisation can be viewed as [[Active Learning]] for regression under the goal of finding the maximum rather than learning the entire function — at each step it queries the most informative input not to minimise prediction error globally but to most efficiently locate the optimum. The GP posterior uncertainty serves the same role in BO as the expected model change or query-by-committee disagreement measure in [[Active Learning]], and the [[Exploration-Exploitation Trade-off]] encoded in the [[Acquisition Function]] exactly parallels the exploration-exploitation structure of [[Active Learning]] with an external objective.
+
+  The connection to [[Reinforcement Learning]] is deep and multifaceted. UCB acquisition functions are directly inspired by the Upper Confidence Bound bandit algorithm of Auer et al. (2002), and Srinivas et al. (2010) established sub-linear cumulative regret bounds for GP-UCB Bayesian Optimisation that mirror those of the UCB bandit — establishing BO as a principled bandit algorithm over a continuous action space. Thompson Sampling acquisition mirrors the Thompson Sampling bandit policy. More broadly, Bayesian Optimisation can be viewed as a [[Reinforcement Learning]] problem where the state is the current dataset D_t, the action is the next query point x_{t+1}, and the reward is the observed f(x_{t+1}), with the GP posterior providing the agent's model of the unknown environment. Conversely, [[Reinforcement Learning]] uses BO extensively for controller hyperparameter tuning and reward shaping, and model-based RL (PILCO, Deisenroth & Rasmussen 2011) uses [[Gaussian Process]] dynamics models in a loop structurally identical to BO's surrogate loop — identifying the next policy improvement as the action that maximises expected return under GP uncertainty.
+
+  The relationship between Bayesian Optimisation and [[Evolutionary Algorithm|evolutionary computation]] is complementary rather than competitive. Evolutionary algorithms — Genetic Algorithms, Covariance Matrix Adaptation Evolution Strategy (CMA-ES), Differential Evolution — explore population diversity but treat each evaluation independently, lacking the surrogate model that allows BO to exploit global structure. Surrogate-assisted evolutionary computation (SAE) bridges the approaches by embedding GP or polynomial surrogate models within evolutionary selection pressure, enabling evolutionary diversity to pair with GP extrapolation. SMAC's Random Forest surrogate and BO's GP surrogate represent different points in this design space. Professor Branke at Warwick University has contributed significantly to this bridging literature, with the GECCO 2025 BO tutorial explicitly covering surrogate-assisted evolutionary computation connections. CMA-ES is available as a sampler in Optuna, and joint CMA-BO hybrids outperform either alone on certain benchmark problems.
+
+  The mathematical relationship to [[Kriging]] in geostatistics is exact: [[Gaussian Process Regression]] (GPR) and Kriging are the same algorithm under different names and historical contexts. Ordinary Kriging assumes a constant mean; Universal Kriging allows polynomial trend functions; GPR in the ML tradition parameterises the mean flexibly and estimates kernel hyperparameters via [[Marginal Likelihood]] maximisation rather than restricted maximum likelihood (REML) as in geostatistics. The cross-fertilisation has been productive: geostatistics contributed sequential sampling designs (space-filling designs, Latin hypercube sampling) as initialisation strategies for BO; ML contributed [[Acquisition Function]] theory and multi-objective extensions that geostatistics lacked. The parallel development of computer experiment methodology (Sacks et al., 1989; Santner et al., 2003) in engineering statistics, which uses GPs as design-space emulators for expensive computer simulations, converged with ML-oriented BO in the 2010s to produce the modern autonomous laboratory paradigm in which both traditions — engineering emulation and ML sequential optimisation — contribute methodology.
+
+  Information-theoretic perspectives provide another connection: max-value Entropy Search (MES, Wang & Jegelka, 2017) and Predictive Entropy Search (PES) select the next query point to maximally reduce entropy about the location of the global maximum, rather than maximising expected gain over the current best observation as EI does. These entropy-based acquisitions provide a cleaner information-theoretic interpretation of BO as a sequential entropy reduction process, connect naturally to [[Uncertainty Quantification]] as a primary objective, and generalise more naturally to multi-objective and multi-task settings where the "maximum" is a Pareto front rather than a scalar. The relationship between entropy-based acquisition and mutual information maximisation in [[Active Learning]] is direct: PES selects the query point that most reduces mutual information between the input point and the unknown optimal input location, exactly the active learning criterion for finding the optimum.
+
+  ## Computational Complexity and Scaling Considerations
+  The computational profile of Bayesian Optimisation creates a characteristic regime of applicability that explains both its strengths and its limitations in practice. The three primary computational operations are: (1) [[Gaussian Process]] surrogate fitting — O(t³) time and O(t²) memory for t observations, dominated by the Cholesky factorisation of the n×n kernel matrix, which also yields the log [[Marginal Likelihood]] and its gradient needed for kernel hyperparameter learning; (2) acquisition function maximisation — O(k·d·t) per gradient evaluation for k restarts and d-dimensional inputs, with k = 20–100 restarts typical in practice, using L-BFGS or Adam optimisation with [[Gaussian Process]] posterior evaluations at O(t) cost each; (3) acquisition function evaluation — O(t) at each candidate point for exact GP posterior computation.
+
+  The breakeven point where GP fitting cost becomes prohibitive is approximately t ≈ 500–1,000 observations with exact inference on modern hardware (a single A100 GPU can Cholesky-factor a 1,000×1,000 kernel matrix in milliseconds). Beyond this scale, [[Sparse Gaussian Process]] approximations become necessary: SVGP with M inducing points reduces fitting cost to O(tM²) and allows M to be chosen to balance approximation quality against computational budget. For hyperparameter tuning workloads where evaluations take minutes to hours and budgets are measured in tens to hundreds of evaluations, exact GP inference is almost always tractable. For autonomous laboratory campaigns targeting thousands of experiments per year, sparse approximations or alternative surrogates (Tree Parzen Estimators, Random Forests) are preferred.
+
+  The inner-loop acquisition maximisation is often the practical bottleneck in high-dimensional settings (d > 20). The acquisition landscape may be multimodal with many local optima, requiring many random restarts for reliable global maximisation. Multi-start gradient ascent with 20–100 random initialisations is standard, but even this can fail in very high dimensions. TuRBO addresses this by restricting acquisition maximisation to a local trust region where the GP model is reliable, using a d-dimensional hypercube of side length L around the current best observation, adjusted dynamically based on success/failure rates. This converts a d-dimensional global optimisation problem into a series of local ones, at the cost of potentially missing distant optima — an explicit trade-off favourable when the global optimum is near the current best (exploitation-heavy regime).
+
+  ## Challenges and Open Problems
+  Despite its maturity and widespread deployment, Bayesian Optimisation faces several well-documented challenges that motivate active research in 2026. **High dimensionality** is the most persistent: standard [[Gaussian Process]] surrogates suffer from the curse of dimensionality beyond d ≈ 20 input dimensions because the volume of the search space grows exponentially while the GP posterior becomes approximately uniform (uniformly uncertain) — providing no useful guidance. TuRBO's trust-region decomposition, REMBO's random embeddings, Add-GP-UCB's additive structure, and coordinate-descent approaches each address this differently; none generalises perfectly across problem types. **Scalable GP inference** is the second major bottleneck: fitting a [[Gaussian Process]] to t observations requires O(t³) computation and O(t²) memory for the kernel matrix inversion, becoming prohibitive beyond a few hundred observations with exact inference. [[Sparse Gaussian Process]] (SVGP) methods with M inducing points reduce cost to O(tM²) and enable GPU-accelerated mini-batch training via [[Variational Inference]], implemented in GPflow and GPyTorch, but introduce approximation error in the posterior that can degrade [[Acquisition Function]] quality for low-noise objectives. **Acquisition function maximisation** in the inner loop is itself an optimisation problem that must be solved with gradient methods or evolutionary search; in high dimensions this inner problem becomes a bottleneck, and approximate solutions that miss the global maximum of the acquisition function can cause BO to query uninformative points. **Handling constraints** is the fourth challenge: many real-world objectives have expensive-to-evaluate or hard-to-characterise constraints (safety limits, physical feasibility, latency budgets); constrained BO extensions (Gelbart et al., 2014; Gardner et al., 2014) model constraints as additional GPs and modify acquisition functions accordingly, but the interaction between surrogate uncertainty about constraints and uncertainty about the objective complicates the [[Exploration-Exploitation Trade-off]] and convergence theory. **Non-stationarity** in real-world objectives — where function behaviour changes qualitatively across the input space — is poorly handled by stationary kernels like RBF or Matérn; deep kernel learning (passing inputs through a [[Neural Network]] encoder before the [[Kernel Function]]) and non-stationary kernel families (Gibbs kernel, deep GP priors) address this at the cost of additional model complexity.
+
+  ## Empirical Performance and Benchmarking
+  The performance advantages of Bayesian Optimisation over [[Grid Search]] and [[Random Search]] have been extensively validated on standardised hyperparameter optimisation benchmarks. The HPOBench suite provides reproducible baselines across diverse problem types including SVM, random forest, and [[Deep Learning]] hyperparameter spaces, finding that Bayesian Optimisation typically matches or exceeds [[Random Search]] performance within 20–30% of the total budget. Bergstra and Bengio's foundational comparison (JMLR 2012) showed that [[Random Search]] with an equal budget to exhaustive grid search substantially outperforms grid search; Bayesian Optimisation then outperforms [[Random Search]] by a further 30–50% in convergence speed on moderately expensive objectives where the evaluation budget is between 20 and 200 function calls.
+
+  The NeurIPS Black-Box Optimisation Competition provides the clearest multi-method comparison under realistic conditions. Results across 2019–2023 consistently show Bayesian Optimisation-based methods (Ax, SMAC, Optuna-BO, CMA-ES-BO hybrids) dominating the leaderboard for objectives with evaluation budgets in the 50–500 range, while evolutionary methods and [[Random Search]] remain competitive for very large budgets (>1,000 evaluations) where GP fitting overhead outweighs surrogate guidance quality. YAHPO benchmark (Pfisterer et al., 2022) provides surrogate-based meta-benchmarking enabling fast evaluation across 10,000+ hyperparameter configurations, finding that SMAC3 (Random Forest surrogate) and Optuna (TPE) achieve competitive performance with BoTorch (GP surrogate) on categorical and mixed-type spaces while BoTorch dominates on purely continuous spaces — confirming that surrogate choice matters and the [[Gaussian Process]] advantage is most pronounced when the input space structure matches GP inductive biases.
+
+  In the autonomous laboratory domain, Jensen et al. (ACS Central Science, 2024) demonstrated that multi-fidelity Bayesian Optimisation for drug molecule discovery reduced the experimental cost of finding a histone deacetylase inhibitor hit by 3.6× compared to high-throughput screening of the same compound library, by intelligently combining cheap computational docking scores with expensive wet-lab assays as a two-fidelity [[Surrogate Model]]. Materials science applications consistently report 2–5× reduction in experimental iterations to reach target performance thresholds compared to random screening baselines, across applications including battery electrolyte discovery, polymer thermoresponsiveness tuning, and heterogeneous catalyst composition optimisation.
+
+  For [[Hyperparameter Tuning]] in production ML workflows, BoTorch with qEI acquisition consistently outperforms Optuna's TPE sampler on continuous multi-dimensional search spaces by 15–30% in terms of best validation loss achieved at equal evaluation count, while Optuna's TPE is preferred in mixed categorical-continuous spaces (model architecture + training hyperparameters) where GP kernel specification for categorical inputs is non-trivial. The Optuna v4.4 GP-based multi-objective sampler (2025) narrows this gap by providing GP surrogates in Optuna's simpler API, making GP-based BO accessible to practitioners who previously used TPE by default.
+
+  ## Ethical and Governance Dimensions
+  Bayesian Optimisation raises governance questions as it moves from academic tool to infrastructure for consequential decisions in pharmaceutical development, clinical trials, and autonomous experimentation at scale. In [[Drug Discovery]] contexts where BO guides molecular synthesis campaigns, the algorithm's decisions implicitly prioritise certain chemical scaffolds, synthesis pathways, or optimisation objectives over others — choices with downstream effects on which patient populations are served and which drug targets receive research investment. Multi-objective BO with Pareto front discovery can make these trade-offs explicit and auditable, but the choice of objectives encoded in the [[Acquisition Function]] remains a values-laden decision that requires human oversight. In clinical dose-optimisation settings (where BO is applied to adaptive dose-escalation trial design), regulatory frameworks (FDA Adaptive Trial Design guidance, EMA Reflection Paper on Adaptive Design) require pre-specification of the optimisation objective, stopping rules, and decision criteria in the trial protocol — a form of prospective transparency that constrains the algorithmic flexibility BO would otherwise provide. In autonomous laboratory settings, questions of intellectual property ownership for discoveries made by BO-guided robotic systems without direct human creative input are legally unresolved across UK, EU, and US jurisdictions, with the UK Intellectual Property Office publishing guidance in 2024 affirming that AI-generated inventions require a human inventor to be patentable — motivating hybrid human-in-the-loop BO architectures that preserve demonstrable human creative contribution to each discovery.
+
+  ## Key Terminology
+  - **Black-box objective function**: an objective f: X → R for which no gradient information is available and each evaluation requires significant computational or experimental effort; the defining characteristic motivating Bayesian Optimisation over gradient-based methods.
+  - **Surrogate model**: a cheap-to-evaluate probabilistic approximation of the true objective; the [[Gaussian Process]] is the canonical surrogate, but random forests, Bayesian neural networks, and [[Large Language Model]] in-context learners serve as alternatives for different problem structures.
+  - **Acquisition function**: a utility score α(x; D_t) that combines the surrogate's predictive mean and uncertainty to rank candidate next evaluation points; the mechanism implementing the [[Exploration-Exploitation Trade-off]] in BO.
+  - **[[Expected Improvement]] (EI)**: E[max(f(x) − f*, 0)] — the most widely used acquisition function; analytically tractable for [[Gaussian Process]] surrogates, naturally balances exploitation of high-mean regions and exploration of high-uncertainty regions.
+  - **Regret**: the gap between the optimal value f(x*) and the best value found after T evaluations; sub-linear regret growth in T is the key theoretical property establishing BO's sample efficiency (proved for UCB by Srinivas et al., 2010).
+  - **Inducing points**: a set of M ≪ t pseudo-input locations used in [[Sparse Gaussian Process]] (SVGP) approximations to reduce kernel matrix computation from O(t³) to O(tM²); learnt jointly with the GP kernel hyperparameters via [[Variational Inference]].
+  - **[[Marginal Likelihood]]**: p(y|X, θ) — the probability of the observed targets under the GP prior with kernel hyperparameters θ; maximising this provides an automatic Occam's Razor penalty against unnecessarily complex kernels without a held-out validation set.
+  - **Trust region**: a local subspace of the input domain maintained in TuRBO within which the GP surrogate is reliable; expanded or contracted based on success/failure of recent acquisitions; enables BO to operate effectively in high-dimensional spaces where global GPs over-explore.
+  - **Pareto front**: the set of solutions in [[Multi-Objective Optimisation]] that are not dominated by any other solution across all objectives simultaneously; BO-based Pareto front discovery using EHVI acquisition enables [[Drug Discovery]] and [[Materials Science]] campaigns to characterise the fundamental trade-offs between competing design objectives.
+  - **Warm starting**: initialising a BO campaign's surrogate with knowledge from prior related optimisation runs, either via meta-learning, transfer of fitted GP hyperparameters, or [[Large Language Model]] knowledge extraction — the primary mechanism for reducing cold-start inefficiency in repeated tuning workflows.
 
 - ### Provenance
-  - sources:: Mockus (1975) "On Bayesian Methods for Seeking the Extremum"; Snoek, Larochelle & Adams (2012) "Practical Bayesian Optimization of Machine Learning Algorithms"; Frazier (2018) "A Tutorial on Bayesian Optimization"; Garnett (2023) "Bayesian Optimization" (Cambridge University Press)
-  - updated:: 2026-06-13
+  - sources:: Mockus (1975) IFIP; Snoek et al. (2012) NeurIPS; Frazier (2018) arXiv:1807.02811; Garnett (2023) Cambridge UP; Brochu et al. (2010) arXiv:1012.2599; Balandat et al. (2020) BoTorch NeurIPS; Akiba et al. (2019) Optuna KDD; arXiv:2602.11171 LoRA BO 2025; arXiv:2603.28959 Multi-Agent LLM BO 2026; RSC Digital Discovery d4dd00115j Atlas SDL 2025; Materials Horizons d5mh01984b SDL2.0 2026; Royal Society Open Science rsos.250646 SDLs 2025; ACS Central Science drug discovery multi-fidelity 2024; arXiv:2410.00544 multi-fidelity best practices; Warwick EPSRC MathSys CDT arXiv:2501.18792; GECCO 2025 BO tutorial gecco-2025.sigevo.org; Optuna v4.4 GP multi-objective release notes; OptunaHub 2025 announcement; optuna.org; emergentmind.com LLM-guided BO
+  - migration-date:: 2026-06-21T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

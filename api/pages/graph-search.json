@@ -150,6 +150,10 @@
       "label": "A Star Algorithm"
     },
     {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "dijkstra-algorithm",
       "label": "Dijkstra Algorithm"
     },

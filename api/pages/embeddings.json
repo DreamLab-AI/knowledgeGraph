@@ -144,6 +144,10 @@
       "label": "Agentic Internet"
     },
     {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
       "slug": "cohere",
       "label": "Cohere"
     },

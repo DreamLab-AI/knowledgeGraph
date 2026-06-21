@@ -95,6 +95,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    },
+    {
       "slug": "machine-translation",
       "label": "Machine Translation"
     },

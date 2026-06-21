@@ -214,6 +214,10 @@
       "label": "Affective Computing"
     },
     {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
       "slug": "optical-sensor-array",
       "label": "Optical Sensor Array"
     },

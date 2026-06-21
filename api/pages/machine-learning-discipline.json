@@ -212,6 +212,10 @@
     {
       "slug": "automated-design",
       "label": "Automated Design"
+    },
+    {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
     }
   ]
 }

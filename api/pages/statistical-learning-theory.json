@@ -157,6 +157,10 @@
       "label": "Algorithmic Bias and Variance"
     },
     {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
       "slug": "classification",
       "label": "Classification"
     },

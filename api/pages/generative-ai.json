@@ -433,6 +433,10 @@
       "label": "Automated Podcasting"
     },
     {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
       "slug": "co-training",
       "label": "Co Training"
     },

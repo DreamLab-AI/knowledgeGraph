@@ -67,5 +67,10 @@
       "label": "MetaverseDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "back-translation",
+      "label": "Back-Translation"
+    }
+  ]
 }

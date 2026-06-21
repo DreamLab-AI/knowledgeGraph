@@ -189,6 +189,10 @@
   ],
   "backlinks": [
     {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

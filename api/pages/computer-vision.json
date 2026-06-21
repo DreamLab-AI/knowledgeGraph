@@ -484,12 +484,32 @@
       "label": "Automated Modeling"
     },
     {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
       "slug": "autonomous-robot",
       "label": "Autonomous Robot"
     },
     {
       "slug": "autonomous-robot",
       "label": "Autonomous Robot"
+    },
+    {
+      "slug": "blip-2-captioner",
+      "label": "BLIP-2 Captioner"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "benchmark-evaluation",
+      "label": "Benchmark Evaluation"
     },
     {
       "slug": "camera-parameters",

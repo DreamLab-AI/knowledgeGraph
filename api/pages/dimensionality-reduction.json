@@ -154,6 +154,10 @@
   ],
   "backlinks": [
     {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
       "slug": "feature-importance",
       "label": "Feature Importance"
     },

@@ -16706,7 +16706,7 @@
     {
       "slug": "autonomous-driving",
       "title": "Autonomous Driving",
-      "qualityScore": 0.73
+      "qualityScore": 0.88
     },
     {
       "slug": "autoregressive-decoding",
@@ -16766,7 +16766,7 @@
     {
       "slug": "bayesian-knowledge-tracing",
       "title": "Bayesian Knowledge Tracing",
-      "qualityScore": 0.62
+      "qualityScore": 0.91
     },
     {
       "slug": "behavior-analysis",
@@ -16911,7 +16911,7 @@
     {
       "slug": "classical-planning",
       "title": "Classical Planning",
-      "qualityScore": 0.62
+      "qualityScore": 0.92
     },
     {
       "slug": "classification-threshold",
@@ -27102,32 +27102,32 @@
     {
       "slug": "automatic1111",
       "title": "Automatic1111",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "autonomous-behavior",
       "title": "Autonomous Behavior",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "autonomous-driving-perception",
       "title": "Autonomous Driving Perception",
-      "qualityScore": 0.8
+      "qualityScore": 0.85
     },
     {
       "slug": "autonomous-operation",
       "title": "Autonomous Operation",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "autonomous-task-execution",
       "title": "Autonomous Task Execution",
-      "qualityScore": 0.72
+      "qualityScore": 0.92
     },
     {
       "slug": "beir-benchmark",
       "title": "BEIR Benchmark",
-      "qualityScore": 0.8
+      "qualityScore": 0.92
     },
     {
       "slug": "bert",
@@ -27142,22 +27142,22 @@
     {
       "slug": "blip-2-captioner",
       "title": "BLIP-2 Captioner",
-      "qualityScore": 0.72
+      "qualityScore": 0.93
     },
     {
       "slug": "back-translation",
       "title": "Back-Translation",
-      "qualityScore": 0.72
+      "qualityScore": 0.92
     },
     {
       "slug": "beam-search-decoding",
       "title": "Beam Search Decoding",
-      "qualityScore": 0.8
+      "qualityScore": 0.95
     },
     {
       "slug": "beam-search",
       "title": "Beam Search",
-      "qualityScore": 0.8
+      "qualityScore": 0.95
     },
     {
       "slug": "behaviour-tree",
@@ -27252,7 +27252,7 @@
     {
       "slug": "classification-rules",
       "title": "Classification Rules",
-      "qualityScore": 0.8
+      "qualityScore": 0.92
     },
     {
       "slug": "claude",
@@ -33587,12 +33587,12 @@
     {
       "slug": "autoregressive-model",
       "title": "Autoregressive Model",
-      "qualityScore": 0.75
+      "qualityScore": 0.92
     },
     {
       "slug": "bm25",
       "title": "BM25",
-      "qualityScore": 0.72
+      "qualityScore": 0.93
     },
     {
       "slug": "backpropagation",
@@ -33602,7 +33602,7 @@
     {
       "slug": "batch-inference",
       "title": "Batch Inference",
-      "qualityScore": 0.62
+      "qualityScore": 0.93
     },
     {
       "slug": "batch-normalisation",
@@ -33622,7 +33622,7 @@
     {
       "slug": "bayesian-optimisation",
       "title": "Bayesian Optimisation",
-      "qualityScore": 0.74
+      "qualityScore": 0.93
     },
     {
       "slug": "bellman-equation",

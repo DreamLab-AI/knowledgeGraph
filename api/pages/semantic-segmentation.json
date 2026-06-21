@@ -173,6 +173,10 @@
       "label": "ADE20K"
     },
     {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
       "slug": "camera",
       "label": "Camera"
     },

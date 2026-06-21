@@ -163,6 +163,10 @@
       "label": "Automated Reasoning"
     },
     {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "model-based-control",
       "label": "Model Based Control"
     },

@@ -10,20 +10,137 @@
     {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
+    },
+    {
+      "id": "urn:ngm:class:multimodal-ai-architecture",
+      "label": "Multimodal AI Architecture"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.93,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:q-former",
+        "label": "Q-Former"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:linear-projection-layer",
+        "label": "Linear Projection Layer"
+      },
+      {
+        "id": "urn:ngm:class:learnable-query-tokens",
+        "label": "Learnable Query Tokens"
+      },
+      {
+        "id": "urn:ngm:class:image-text-contrastive-loss",
+        "label": "Image-Text Contrastive Loss"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:frozen-image-encoder",
+        "label": "Frozen Image Encoder"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:image-text-paired-corpus",
+        "label": "Image-Text Paired Corpus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-captioning",
+        "label": "Image Captioning"
+      },
+      {
+        "id": "urn:ngm:class:visual-question-answering",
+        "label": "Visual Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "id": "urn:ngm:class:zero-shot-learning",
+        "label": "Zero-Shot Learning"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-reasoning",
+        "label": "Multimodal Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:cross-modal-retrieval",
+        "label": "Cross Modal Retrieval"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:flamingo",
+        "label": "Flamingo"
+      },
+      {
+        "id": "urn:ngm:class:minigpt-4",
+        "label": "MiniGPT-4"
+      },
+      {
+        "id": "urn:ngm:class:llava",
+        "label": "LLaVA"
+      },
+      {
+        "id": "urn:ngm:class:full-fine-tuning",
+        "label": "Full Fine Tuning"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:clip-encoder",
+        "label": "CLIP Encoder"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      },
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:causal-language-modelling",
+        "label": "Causal Language Modelling"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -31,10 +148,147 @@
       {
         "id": "urn:ngm:class:kohya-dreambooth-and-similar",
         "label": "KOHYA Dreambooth and similar"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:lora-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:instruct-blip",
+        "label": "InstructBLIP"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-understanding",
+        "label": "Multimodal Understanding"
+      },
+      {
+        "id": "urn:ngm:class:gemini-multimodal-language-model",
+        "label": "Gemini Multimodal Language Model"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "multimodal-ai-architecture",
+      "label": "Multimodal AI Architecture"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    },
+    {
+      "slug": "clip-encoder",
+      "label": "CLIP Encoder"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "image-captioning",
+      "label": "Image Captioning"
+    },
+    {
+      "slug": "visual-question-answering",
+      "label": "Visual Question Answering"
+    },
+    {
+      "slug": "contrastive-learning",
+      "label": "Contrastive Learning"
+    },
+    {
+      "slug": "lora-fine-tuning",
+      "label": "LoRA Fine-Tuning"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "lora-dora-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "multimodal-learning",
+      "label": "Multimodal Learning"
+    },
+    {
+      "slug": "zero-shot-learning",
+      "label": "Zero-Shot Learning"
+    },
+    {
+      "slug": "causal-language-modelling",
+      "label": "Causal Language Modelling"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "full-fine-tuning",
+      "label": "Full Fine Tuning"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "diffusion-transformer",
+      "label": "Diffusion Transformer"
+    },
+    {
+      "slug": "multimodal-reasoning",
+      "label": "Multimodal Reasoning"
+    },
+    {
+      "slug": "gemini-multimodal-language-model",
+      "label": "Gemini Multimodal Language Model"
+    },
+    {
+      "slug": "multimodal-understanding",
+      "label": "Multimodal Understanding"
+    },
+    {
+      "slug": "cross-modal-retrieval",
+      "label": "Cross Modal Retrieval"
+    }
+  ],
   "backlinks": [
     {
       "slug": "kohya-dreambooth-and-similar",

@@ -190,6 +190,18 @@
       "label": "Automated Reasoning"
     },
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     },

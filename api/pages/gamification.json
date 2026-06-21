@@ -93,6 +93,10 @@
     {
       "slug": "audience-engagement",
       "label": "Audience Engagement"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
     }
   ]
 }

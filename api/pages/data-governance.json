@@ -197,6 +197,10 @@
       "label": "Algorithmic Bias"
     },
     {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
       "slug": "compliance-control",
       "label": "Compliance Control"
     },

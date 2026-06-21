@@ -105,6 +105,14 @@
     {
       "slug": "applied-machine-learning",
       "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
     }
   ]
 }

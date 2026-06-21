@@ -518,6 +518,14 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },

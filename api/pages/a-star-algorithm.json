@@ -365,6 +365,10 @@
   ],
   "backlinks": [
     {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "dijkstra-algorithm",
       "label": "Dijkstra Algorithm"
     },

@@ -141,6 +141,10 @@
       "label": "3D Reconstruction"
     },
     {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
       "slug": "depth-estimation",
       "label": "Depth Estimation"
     },

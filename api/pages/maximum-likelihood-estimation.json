@@ -88,6 +88,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
     },

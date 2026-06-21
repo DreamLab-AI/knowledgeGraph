@@ -136,8 +136,16 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
       "slug": "bandwidth-adaptation",
       "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
     },
     {
       "slug": "control-algorithm",

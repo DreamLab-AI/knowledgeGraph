@@ -137,6 +137,10 @@
       "label": "Automated Reasoning"
     },
     {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
     },

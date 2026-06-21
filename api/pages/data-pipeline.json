@@ -281,6 +281,10 @@
       "label": "Applied Machine Learning"
     },
     {
+      "slug": "batch-inference",
+      "label": "Batch Inference"
+    },
+    {
       "slug": "data-engineering",
       "label": "Data Engineering"
     },

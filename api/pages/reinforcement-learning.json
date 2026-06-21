@@ -354,8 +354,40 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
       "slug": "bandwidth-adaptation",
       "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
     },
     {
       "slug": "cli-multi-agent-systems",
@@ -364,6 +396,10 @@
     {
       "slug": "checkpoints",
       "label": "Checkpoints"
+    },
+    {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
     },
     {
       "slug": "cognitive-ai",

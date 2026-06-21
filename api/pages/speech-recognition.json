@@ -209,6 +209,18 @@
       "label": "Automated Podcasting"
     },
     {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
       "slug": "call-centres",
       "label": "Call Centres"
     },

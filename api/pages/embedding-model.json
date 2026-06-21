@@ -148,6 +148,14 @@
       "label": "Agentic RAG"
     },
     {
+      "slug": "beir-benchmark",
+      "label": "BEIR Benchmark"
+    },
+    {
+      "slug": "chunking",
+      "label": "Chunking"
+    },
+    {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },

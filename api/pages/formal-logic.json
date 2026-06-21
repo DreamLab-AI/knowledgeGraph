@@ -88,6 +88,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
+    },
+    {
       "slug": "reasoning",
       "label": "Reasoning"
     },

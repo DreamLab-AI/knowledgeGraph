@@ -292,8 +292,16 @@
       "label": "Automation"
     },
     {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    },
+    {
       "slug": "autonomous-robot",
       "label": "Autonomous Robot"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
     },
     {
       "slug": "backlash",
@@ -308,6 +316,18 @@
       "label": "Bayes Filter"
     },
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
       "slug": "camera",
       "label": "Camera"
     },
@@ -318,6 +338,10 @@
     {
       "slug": "centralized-swarm-control",
       "label": "Centralized Swarm Control"
+    },
+    {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
     },
     {
       "slug": "closed-loop-control",

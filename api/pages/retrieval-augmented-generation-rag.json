@@ -577,6 +577,10 @@
       "label": "AI Literacy Training for Designers"
     },
     {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },

@@ -500,6 +500,10 @@
       "label": "Batch Size"
     },
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
       "slug": "behavior-analysis",
       "label": "Behavior Analysis"
     },
@@ -526,6 +530,14 @@
     {
       "slug": "circular-economy",
       "label": "Circular Economy"
+    },
+    {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
+      "slug": "classification-rules",
+      "label": "Classification Rules"
     },
     {
       "slug": "co-training",

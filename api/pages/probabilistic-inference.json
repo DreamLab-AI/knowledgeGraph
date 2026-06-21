@@ -167,6 +167,14 @@
       "label": "Bayesian Deep Learning"
     },
     {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     },

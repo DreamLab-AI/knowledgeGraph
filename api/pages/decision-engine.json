@@ -73,6 +73,10 @@
     {
       "slug": "autonomous-agent",
       "label": "Autonomous Agent"
+    },
+    {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
     }
   ]
 }

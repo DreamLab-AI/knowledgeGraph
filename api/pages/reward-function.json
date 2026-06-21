@@ -155,6 +155,10 @@
       "label": "Audience Engagement"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
       "slug": "offline-reinforcement-learning",
       "label": "Offline Reinforcement Learning"
     }

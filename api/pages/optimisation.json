@@ -168,6 +168,14 @@
       "label": "Automatic Differentiation"
     },
     {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

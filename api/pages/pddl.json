@@ -37,6 +37,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "task-planning",
       "label": "Task Planning"
     }

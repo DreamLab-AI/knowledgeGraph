@@ -71,6 +71,10 @@
       "label": "ADE20K"
     },
     {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
       "slug": "image-segmentation",
       "label": "Image Segmentation"
     },

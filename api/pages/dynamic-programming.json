@@ -96,6 +96,10 @@
       "label": "Algorithmic Framework"
     },
     {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    },
+    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
     }

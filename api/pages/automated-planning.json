@@ -164,6 +164,14 @@
       "label": "Automated Reasoning"
     },
     {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "constraint-satisfaction",
       "label": "Constraint Satisfaction"
     },

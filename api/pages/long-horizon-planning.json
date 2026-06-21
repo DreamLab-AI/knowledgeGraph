@@ -67,6 +67,10 @@
       "label": "Artificial General Intelligence"
     },
     {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
       "slug": "context-engineering",
       "label": "Context Engineering"
     }

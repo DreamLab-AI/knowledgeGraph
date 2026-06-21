@@ -149,6 +149,14 @@
       "label": "Agents"
     },
     {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
       "slug": "model-context-protocol",
       "label": "Model Context Protocol"
     }

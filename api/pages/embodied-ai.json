@@ -147,6 +147,10 @@
       "label": "Agents"
     },
     {
+      "slug": "autonomous-behavior",
+      "label": "Autonomous Behavior"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     },

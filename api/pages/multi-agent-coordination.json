@@ -171,6 +171,10 @@
       "label": "AutoGen"
     },
     {
+      "slug": "classical-planning",
+      "label": "Classical Planning"
+    },
+    {
       "slug": "digital-citizens-assembly",
       "label": "Digital Citizens' Assembly"
     },

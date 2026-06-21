@@ -91,6 +91,14 @@
       "label": "ai safety research"
     },
     {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
     }

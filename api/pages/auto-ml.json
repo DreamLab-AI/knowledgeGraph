@@ -299,6 +299,10 @@
       "label": "Acquisition Function"
     },
     {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
       "slug": "gazebo-simulator",
       "label": "Gazebo Simulator"
     },
