@@ -68,5 +68,10 @@
       "label": "ArtificialIntelligenceDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    }
+  ]
 }

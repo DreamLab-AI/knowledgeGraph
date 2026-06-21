@@ -293,6 +293,30 @@
       "label": "Continuous Training"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
       "slug": "distributed-computing",
       "label": "Distributed Computing"
     },

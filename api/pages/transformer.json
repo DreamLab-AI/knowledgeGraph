@@ -289,6 +289,30 @@
       "label": "Computational Linguistics"
     },
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },

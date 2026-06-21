@@ -135,6 +135,10 @@
       "label": "Configuration Management"
     },
     {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     },

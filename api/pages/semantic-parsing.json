@@ -90,6 +90,10 @@
     {
       "slug": "computational-linguistics",
       "label": "Computational Linguistics"
+    },
+    {
+      "slug": "coreference-resolution",
+      "label": "Coreference Resolution"
     }
   ]
 }

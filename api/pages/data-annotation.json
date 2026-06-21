@@ -166,6 +166,10 @@
       "label": "Benchmark Evaluation"
     },
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "human-in-the-loop-learning",
       "label": "Human-in-the- Loop Learning"
     }

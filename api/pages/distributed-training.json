@@ -162,6 +162,10 @@
       "label": "Computer Hardware"
     },
     {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     },

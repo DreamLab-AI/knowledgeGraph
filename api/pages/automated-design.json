@@ -287,6 +287,14 @@
   ],
   "backlinks": [
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
     },

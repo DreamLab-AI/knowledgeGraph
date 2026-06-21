@@ -666,6 +666,10 @@
       "label": "Cortex Agent"
     },
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
       "slug": "creator-royalty-token",
       "label": "Creator Royalty Token"
     },
@@ -692,6 +696,10 @@
     {
       "slug": "data-storage-layer",
       "label": "Data Storage Layer"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
     },
     {
       "slug": "deep-learning",

@@ -132,6 +132,10 @@
       "label": "anthropic"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "cohere",
       "label": "Cohere"
     },

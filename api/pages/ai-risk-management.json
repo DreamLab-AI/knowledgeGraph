@@ -192,6 +192,10 @@
       "label": "Algorithmic Accountability"
     },
     {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
       "slug": "responsible-ai",
       "label": "Responsible AI"
     }

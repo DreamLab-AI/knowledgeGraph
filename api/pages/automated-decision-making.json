@@ -105,6 +105,14 @@
       "label": "Algorithmic Bias"
     },
     {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
       "slug": "machine-learning-models",
       "label": "Machine Learning Models"
     }

@@ -5,34 +5,180 @@
   "public": true,
   "classIri": "urn:ngm:class:customer-experience-management",
   "domain": "ai",
-  "definition": "Customer experience management is the practice of designing and coordinating customer interactions across channels to improve satisfaction and retention.",
+  "definition": "Customer Experience Management (CEM or CXM) is the systematic discipline of designing, orchestrating, measuring, and continuously improving every interaction a customer has with an organisation across the full lifecycle \u2014 from initial brand awareness through purchase, onboarding, ongoing service, and eventual advocacy or churn. It encompasses the tools, processes, data infrastructure, and organisational culture required to engineer experience quality at scale, relying on journey mapping to document touchpoint sequences, voice-of-customer programmes to capture perception signals, omnichannel platforms to unify channel delivery, and analytics engines to translate interaction data into actionable improvement priorities.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:crm",
       "label": "CRM"
+    },
+    {
+      "id": "urn:ngm:class:enterprise-software-platform",
+      "label": "Enterprise Software Platform"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:predictive-personalization",
+        "label": "Predictive Personalization"
+      },
+      {
+        "id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "id": "urn:ngm:class:real-time-decisioning",
+        "label": "Real-Time Decisioning"
+      },
+      {
+        "id": "urn:ngm:class:service-design",
+        "label": "Service Design"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:crm",
         "label": "CRM"
+      },
+      {
+        "id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
+      },
+      {
+        "id": "urn:ngm:class:journey-mapping",
+        "label": "Journey Mapping"
+      },
+      {
+        "id": "urn:ngm:class:voice-of-customer",
+        "label": "Voice of Customer"
+      },
+      {
+        "id": "urn:ngm:class:first-party-data",
+        "label": "First-Party Data"
+      },
+      {
+        "id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:customer-retention",
+        "label": "Customer Retention"
+      },
+      {
+        "id": "urn:ngm:class:customer-lifetime-value",
+        "label": "Customer Lifetime Value"
+      },
+      {
+        "id": "urn:ngm:class:hyper-personalisation",
+        "label": "Hyper personalisation"
+      },
+      {
+        "id": "urn:ngm:class:loyalty-programs",
+        "label": "Loyalty Programs"
+      },
+      {
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:crm",
+        "label": "CRM"
+      },
+      {
+        "id": "urn:ngm:class:customer-support",
+        "label": "Customer Support"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
-    "supports": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:behavioral-analytics",
+        "label": "Behavioral Analytics"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:business-intelligence",
+        "label": "Business Intelligence"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel"
+      },
+      {
+        "id": "urn:ngm:class:e-commerce",
+        "label": "E-Commerce"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-of-the-customer",
+        "label": "Digital Twin of the Customer"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:service-blueprint",
+        "label": "Service Blueprint"
+      },
+      {
+        "id": "urn:ngm:class:next-best-action",
+        "label": "Next Best Action"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -42,9 +188,169 @@
     {
       "slug": "e-commerce",
       "label": "E-Commerce"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
+      "slug": "customer-data-platform",
+      "label": "Customer Data Platform"
+    },
+    {
+      "slug": "omnichannel",
+      "label": "Omnichannel"
+    },
+    {
+      "slug": "journey-mapping",
+      "label": "Journey Mapping"
+    },
+    {
+      "slug": "voice-of-customer",
+      "label": "Voice of Customer"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "predictive-personalization",
+      "label": "Predictive Personalization"
+    },
+    {
+      "slug": "behavioral-analytics",
+      "label": "Behavioral Analytics"
+    },
+    {
+      "slug": "customer-retention",
+      "label": "Customer Retention"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "digital-twin-of-the-customer",
+      "label": "Digital Twin of the Customer"
+    },
+    {
+      "slug": "loyalty-programs",
+      "label": "Loyalty Programs"
+    },
+    {
+      "slug": "service-design",
+      "label": "Service Design"
+    },
+    {
+      "slug": "data-privacy",
+      "label": "Data Privacy"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "net-promoter-score",
+      "label": "Net Promoter Score"
+    },
+    {
+      "slug": "customer-effort-score",
+      "label": "Customer Effort Score"
+    },
+    {
+      "slug": "personalisation",
+      "label": "Personalisation"
+    },
+    {
+      "slug": "omnichannel-routing",
+      "label": "Omnichannel Routing"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "Customer Service Automation"
+    },
+    {
+      "slug": "real-time-decisioning",
+      "label": "Real-Time Decisioning"
+    },
+    {
+      "slug": "identity-resolution",
+      "label": "Identity Resolution"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "enterprise-software-platform",
+      "label": "Enterprise Software Platform"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "business-intelligence",
+      "label": "Business Intelligence"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "next-best-action",
+      "label": "Next Best Action"
+    },
+    {
+      "slug": "customer-lifetime-value",
+      "label": "Customer Lifetime Value"
+    },
+    {
+      "slug": "service-blueprint",
+      "label": "Service Blueprint"
+    },
+    {
+      "slug": "first-party-data",
+      "label": "First-Party Data"
+    },
+    {
+      "slug": "unified-customer-profile",
+      "label": "Unified Customer Profile"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
     }
   ],
   "backlinks": [
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
     {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"

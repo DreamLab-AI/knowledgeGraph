@@ -188,6 +188,18 @@
       "label": "Attention Weight"
     },
     {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
       "slug": "language-modeling",
       "label": "Language Modeling"
     },

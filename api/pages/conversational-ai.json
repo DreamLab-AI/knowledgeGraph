@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.75,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -157,6 +157,70 @@
     {
       "slug": "natural-language-processing",
       "label": "Natural Language Processing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "intent-recognition",
+      "label": "Intent Recognition"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "natural-language-understanding",
+      "label": "Natural Language Understanding"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "virtual-assistant",
+      "label": "Virtual Assistant"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
     }
   ],
   "backlinks": [
@@ -189,12 +253,32 @@
       "label": "Chatbots"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "commonsense-reasoning",
       "label": "Commonsense Reasoning"
     },
     {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
+    {
       "slug": "customer-support-automation",
       "label": "Customer Support Automation"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
     },
     {
       "slug": "dialogue-state-tracking",

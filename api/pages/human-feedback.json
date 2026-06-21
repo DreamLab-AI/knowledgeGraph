@@ -138,6 +138,10 @@
       "label": "Alignment"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
     },

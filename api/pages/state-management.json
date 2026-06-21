@@ -140,6 +140,10 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
       "slug": "feedback-mechanism",
       "label": "Feedback Mechanism"
     },

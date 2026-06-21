@@ -402,6 +402,10 @@
       "label": "Common Sense Reasoning"
     },
     {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
     },

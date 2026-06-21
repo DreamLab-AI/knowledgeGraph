@@ -497,6 +497,10 @@
       "label": "Cultural Heritage XR Experience"
     },
     {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
       "slug": "custody-layer",
       "label": "Custody Layer"
     },
@@ -517,8 +521,20 @@
       "label": "DAO Tooling"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "dns",
       "label": "DNS"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
     },
     {
       "slug": "data-layer",
@@ -547,6 +563,10 @@
     {
       "slug": "decentralized-identifiers",
       "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
     },
     {
       "slug": "deepfakes-and-fraudulent-content",

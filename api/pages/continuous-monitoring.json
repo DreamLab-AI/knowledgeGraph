@@ -114,6 +114,14 @@
     {
       "slug": "ai-risk-register",
       "label": "AI Risk Register"
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
     }
   ]
 }

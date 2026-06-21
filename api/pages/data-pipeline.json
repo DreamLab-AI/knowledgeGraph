@@ -305,8 +305,20 @@
       "label": "Continuous Training"
     },
     {
+      "slug": "dvc",
+      "label": "DVC"
+    },
+    {
       "slug": "data-engineering",
       "label": "Data Engineering"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
     },
     {
       "slug": "model-training",

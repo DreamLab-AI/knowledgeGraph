@@ -645,6 +645,10 @@
       "label": "ControlNet and Similar Spatial Conditioning Systems"
     },
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
       "slug": "data-poisoning",
       "label": "Data Poisoning"
     },

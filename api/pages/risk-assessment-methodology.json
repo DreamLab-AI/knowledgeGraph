@@ -131,6 +131,10 @@
       "label": "AI Risks"
     },
     {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
       "slug": "privacy-impact-assessment-pia",
       "label": "Privacy Impact Assessment (PIA)"
     }

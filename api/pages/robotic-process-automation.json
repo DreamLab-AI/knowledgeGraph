@@ -175,6 +175,14 @@
       "label": "Computer Use and Browser Agents"
     },
     {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
       "slug": "function-calling",
       "label": "Function Calling"
     },

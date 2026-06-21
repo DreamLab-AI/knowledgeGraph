@@ -101,6 +101,14 @@
       "label": "BM25"
     },
     {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
       "slug": "llm-application-frameworks",
       "label": "LLM Application Frameworks"
     },

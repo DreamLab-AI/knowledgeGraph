@@ -162,6 +162,10 @@
       "label": "Activity Data"
     },
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "metadata-management",
       "label": "Metadata Management"
     }

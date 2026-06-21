@@ -5,15 +5,19 @@
   "public": true,
   "classIri": "urn:ngm:class:customer-support-automation",
   "domain": "ai",
-  "definition": "Customer support automation is the use of software, including chatbots and virtual agents, to handle customer enquiries with reduced human intervention. It aims to resolve common requests quickly and at scale.",
+  "definition": "Customer Support Automation (CSA-Support) is the application of artificial intelligence, natural language processing, and workflow orchestration to the technical and post-sale support domain, automatically handling customer enquiries, diagnosing faults, routing and resolving service tickets, and delivering self-service resolution pathways through chatbots, virtual agents, and agentic AI systems. It specialises the broader Customer Service Automation domain toward helpdesk operations, IT service management, and product support contexts, integrating with ticketing platforms, knowledge bases, diagnostic APIs, and CRM systems to achieve autonomous first-line resolution of technical and product queries at scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:conversational-ai",
       "label": "Conversational AI"
+    },
+    {
+      "id": "urn:ngm:class:customer-service-automation",
+      "label": "Customer Service Automation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -25,18 +29,102 @@
       {
         "id": "urn:ngm:class:chatbot",
         "label": "Chatbot"
+      },
+      {
+        "id": "urn:ngm:class:intent-classification",
+        "label": "Intent Classification"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
       }
     ],
-    "enables": [],
-    "dependsOn": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:self-service-portal",
+        "label": "Self-Service Portal"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-ticket-routing",
+        "label": "Intelligent Ticket Routing"
+      },
+      {
+        "id": "urn:ngm:class:omnichannel",
+        "label": "Omnichannel Support"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      },
+      {
+        "id": "urn:ngm:class:business-process-automation",
+        "label": "Business Process Automation"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -54,9 +142,129 @@
     {
       "slug": "conversational-ai",
       "label": "Conversational AI"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "Customer Service Automation"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "intent-classification",
+      "label": "Intent Classification"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "knowledge-base",
+      "label": "Knowledge Base"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "virtual-agent",
+      "label": "Virtual Agent"
+    },
+    {
+      "slug": "dialogue-management",
+      "label": "Dialogue Management"
+    },
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "natural-language-understanding",
+      "label": "Natural Language Understanding"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "multi-turn-dialogue",
+      "label": "Multi-Turn Dialogue"
+    },
+    {
+      "slug": "task-oriented-dialogue",
+      "label": "Task-Oriented Dialogue"
+    },
+    {
+      "slug": "slot-filling",
+      "label": "Slot Filling"
+    },
+    {
+      "slug": "omnichannel",
+      "label": "Omnichannel"
+    },
+    {
+      "slug": "escalation-management",
+      "label": "Escalation Management"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "business-process-automation",
+      "label": "Business Process Automation"
+    },
+    {
+      "slug": "omnichannel-routing",
+      "label": "Omnichannel Routing"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "dialogue-state-tracking",
+      "label": "Dialogue State Tracking"
     }
   ],
   "backlinks": [
+    {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
     {
       "slug": "dialogue-systems",
       "label": "Dialogue Systems"

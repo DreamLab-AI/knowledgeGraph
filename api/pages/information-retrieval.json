@@ -193,6 +193,22 @@
       "label": "Controlled Vocabularies"
     },
     {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
       "slug": "data-storage",
       "label": "Data Storage"
     },

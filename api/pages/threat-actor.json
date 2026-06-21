@@ -97,6 +97,10 @@
       "label": "Attack Vector"
     },
     {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
       "slug": "vulnerability",
       "label": "Vulnerability"
     }

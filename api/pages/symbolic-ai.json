@@ -214,6 +214,14 @@
       "label": "Constraint Solver"
     },
     {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
     },

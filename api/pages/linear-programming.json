@@ -113,6 +113,10 @@
       "label": "Constraint"
     },
     {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"
     }

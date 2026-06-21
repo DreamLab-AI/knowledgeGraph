@@ -640,6 +640,10 @@
       "label": "Cortex Agent"
     },
     {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     },

@@ -129,6 +129,10 @@
       "label": "Data Engineering"
     },
     {
+      "slug": "database-schema",
+      "label": "Database Schema"
+    },
+    {
       "slug": "metadata-management",
       "label": "Metadata Management"
     }

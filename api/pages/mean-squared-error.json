@@ -136,6 +136,14 @@
       "label": "Algorithmic Bias and Variance"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
       "slug": "kalman-filter",
       "label": "Kalman Filter"
     },

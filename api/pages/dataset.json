@@ -5,40 +5,421 @@
   "public": true,
   "classIri": "urn:ngm:class:dataset",
   "domain": "artificial-intelligence",
-  "definition": "A Dataset is a structured collection of data records sharing a common schema, gathered for a specific purpose such as training machine learning models, conducting research, or supporting analytics. Datasets are characterised by their size, modality (text, image, tabular, etc.), provenance, and licensing terms, all of which affect their fitness for use. Data quality, curation methodology, and bias documentation are critical attributes that determine the reliability of downstream AI systems.",
+  "definition": "A Dataset is a structured collection of data records sharing a common schema, gathered for a specific purpose such as training machine learning models, conducting research, or supporting analytics. Datasets are characterised by their size, modality (text, image, tabular, audio, video, graph, etc.), provenance, and licensing terms, all of which affect their fitness for use. Data quality, curation methodology, and bias documentation are critical attributes that determine the reliability of downstream AI systems. The movement from model-centric to data-centric AI has elevated dataset engineering to a first-class research and engineering discipline, with dataset documentation frameworks such as Datasheets for Datasets, Dataset Nutrition Labels, and the Croissant machine-readable format formalising the metadata contract between dataset creators and downstream consumers.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cat-ai-infrastructure",
       "label": "AI Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:data-architecture",
+      "label": "Data Architecture"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-record",
+        "label": "Data Record"
+      },
+      {
+        "id": "urn:ngm:class:schema",
+        "label": "Schema"
+      },
+      {
+        "id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      },
+      {
+        "id": "urn:ngm:class:metadata",
+        "label": "Metadata"
+      },
+      {
+        "id": "urn:ngm:class:data-split",
+        "label": "Data Split"
+      },
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-collection",
+        "label": "Data Collection"
+      },
+      {
+        "id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      },
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:data-labelling",
+        "label": "Data Labelling"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      },
+      {
+        "id": "urn:ngm:class:data-analysis",
+        "label": "Data Analysis"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:computational-modelling",
         "label": "Computational Modelling"
+      },
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:bias",
+        "label": "Bias"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "data-quality",
+      "label": "Data Quality"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "data-curation",
+      "label": "Data Curation"
+    },
+    {
+      "slug": "data-annotation",
+      "label": "Data Annotation"
+    },
+    {
+      "slug": "data-labelling",
+      "label": "Data Labelling"
+    },
+    {
+      "slug": "benchmark-dataset",
+      "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "unsupervised-learning",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "data-lineage",
+      "label": "Data Lineage"
+    },
+    {
+      "slug": "data-catalogue",
+      "label": "Data Catalogue"
+    },
+    {
+      "slug": "data-collection",
+      "label": "Data Collection"
+    },
+    {
+      "slug": "data-cleaning",
+      "label": "Data Cleaning"
+    },
+    {
+      "slug": "bias",
+      "label": "Bias"
+    },
+    {
+      "slug": "fairness",
+      "label": "Fairness"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "overfitting",
+      "label": "Overfitting"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "data-augmentation-strategies",
+      "label": "Data Augmentation Strategies"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "data-governance-framework",
+      "label": "Data Governance Framework"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "Synthetic Data"
+    },
+    {
+      "slug": "data-architecture",
+      "label": "Data Architecture"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
+      "slug": "evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "slug": "ground-truth-labels",
+      "label": "Ground Truth Labels"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "benchmarking",
+      "label": "Benchmarking"
+    },
+    {
+      "slug": "data-lake",
+      "label": "Data Lake"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "data-analysis",
+      "label": "Data Analysis"
+    },
+    {
+      "slug": "ai-infrastructure",
+      "label": "AI Infrastructure"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "slug": "data-management-system",
+      "label": "Data Management System"
+    },
+    {
+      "slug": "metadata",
+      "label": "Metadata"
+    },
+    {
+      "slug": "data-schema",
+      "label": "Data Schema"
+    },
+    {
+      "slug": "data-split",
+      "label": "Data Split"
+    },
+    {
+      "slug": "imbalanced-data",
+      "label": "Imbalanced Data"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "ai-act",
+      "label": "AI Act"
+    },
+    {
+      "slug": "data-provenance",
+      "label": "Data Provenance"
+    },
+    {
+      "slug": "open-data",
+      "label": "Open Data"
+    },
+    {
+      "slug": "data-ethics",
+      "label": "Data Ethics"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "data-centric-ai",
+      "label": "Data-Centric AI"
+    },
+    {
+      "slug": "ai-technique",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    }
+  ],
   "backlinks": [
     {
       "slug": "benchmark-dataset",
       "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "dicom",
+      "label": "DICOM"
     },
     {
       "slug": "training-data",

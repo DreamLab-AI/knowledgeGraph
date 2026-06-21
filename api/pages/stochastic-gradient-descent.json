@@ -176,6 +176,30 @@
       "label": "Computational Intelligence"
     },
     {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

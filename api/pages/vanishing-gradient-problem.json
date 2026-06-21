@@ -98,6 +98,10 @@
       "label": "adam optimiser"
     },
     {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
       "slug": "recurrent-neural-network",
       "label": "Recurrent Neural Network"
     },

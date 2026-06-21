@@ -828,6 +828,10 @@
       "label": "Data Integration Interface"
     },
     {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "digital-goods-registry",
       "label": "Digital Goods Registry"
     },

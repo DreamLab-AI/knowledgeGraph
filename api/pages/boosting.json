@@ -95,6 +95,10 @@
     {
       "slug": "bias-variance-tradeoff",
       "label": "Bias-Variance Tradeoff"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
     }
   ]
 }

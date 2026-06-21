@@ -79,6 +79,14 @@
       "label": "comfy-ui-for-fashion-and-brands"
     },
     {
+      "slug": "dvc",
+      "label": "DVC"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
     }

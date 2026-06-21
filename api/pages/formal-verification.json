@@ -141,6 +141,10 @@
       "label": "Beam Search Decoding"
     },
     {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
     },
@@ -167,6 +171,10 @@
     {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
     },
     {
       "slug": "cryptography-security-and-privacy",

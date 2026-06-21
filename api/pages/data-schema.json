@@ -148,6 +148,10 @@
       "label": "Data Integration Interface"
     },
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "user-consent-token",
       "label": "User Consent Token"
     }

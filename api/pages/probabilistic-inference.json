@@ -187,6 +187,10 @@
       "label": "Constraint Satisfaction"
     },
     {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     }

@@ -156,6 +156,10 @@
     {
       "slug": "bim-software",
       "label": "BIM Software"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
     }
   ]
 }

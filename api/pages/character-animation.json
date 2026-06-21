@@ -133,6 +133,10 @@
     {
       "slug": "character-rigging",
       "label": "Character Rigging"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
     }
   ]
 }

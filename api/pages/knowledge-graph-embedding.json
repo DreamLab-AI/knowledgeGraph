@@ -106,6 +106,10 @@
     {
       "slug": "community-detection",
       "label": "Community Detection"
+    },
+    {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
     }
   ]
 }

@@ -176,6 +176,26 @@
       "label": "controlnet"
     },
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

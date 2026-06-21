@@ -146,6 +146,10 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
       "slug": "comfy-ui",
       "label": "Comfy Ui"
     },
@@ -156,6 +160,10 @@
     {
       "slug": "comfy-ui-manager",
       "label": "comfyui manager"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
     },
     {
       "slug": "gpt-engineer",

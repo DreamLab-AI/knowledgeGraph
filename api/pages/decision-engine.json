@@ -5,18 +5,47 @@
   "public": true,
   "classIri": "urn:ngm:class:decision-engine",
   "domain": "ai",
-  "definition": "A decision engine is a software component that encapsulates decision logic\u2014rules, models, policies, or heuristics\u2014and evaluates inputs against that logic to produce actionable outputs such as approvals, classifications, recommendations, or routing choices. Decision engines decouple business logic from application code, enabling non-developers to modify decision policies without code deployments, and support auditability by providing traceable reasoning paths for each decision. They range from rule-based expert systems to ML model inference services to hybrid architectures combining both.",
+  "definition": "A decision engine is a software component that encapsulates decision logic\u2014rules, models, policies, or heuristics\u2014and evaluates inputs against that logic to produce actionable outputs such as approvals, classifications, recommendations, or routing choices. Decision engines decouple business logic from application code, enabling non-developers to modify decision policies without code deployments, and support auditability by providing traceable reasoning paths for each decision. They range from rule-based expert systems to ML model inference services to hybrid architectures combining both. The emergence of large language model reasoning cores has extended the decision engine concept to unstructured input spaces, enabling complex multi-step decisioning with natural language explanation traces.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:inference-engine",
       "label": "Inference Engine"
+    },
+    {
+      "id": "urn:ngm:class:automated-reasoning",
+      "label": "Automated Reasoning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:rule-evaluator",
+        "label": "Rule Evaluator"
+      },
+      {
+        "id": "urn:ngm:class:model-scorer",
+        "label": "Model Scorer"
+      },
+      {
+        "id": "urn:ngm:class:explanation-module",
+        "label": "Explanation Module"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:decision-model-notation",
+        "label": "Decision Model Notation"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering-pipeline",
+        "label": "Feature Engineering Pipeline"
+      }
+    ],
     "requires": [],
     "enables": [
       {
@@ -30,6 +59,22 @@
       {
         "id": "urn:ngm:class:informed-decision-making",
         "label": "Informed decision-making"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:automated-decision-making",
+        "label": "Automated Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:credit-scoring",
+        "label": "Credit Scoring"
       }
     ],
     "dependsOn": [],
@@ -44,6 +89,22 @@
       {
         "id": "urn:ngm:class:automated-reasoning",
         "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-reasoning",
+        "label": "Probabilistic Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain of Thought"
       }
     ],
     "supports": [],
@@ -57,10 +118,231 @@
       {
         "id": "urn:ngm:class:orchestration",
         "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:regulation",
+        "label": "Regulation"
+      },
+      {
+        "id": "urn:ngm:class:fairness",
+        "label": "Fairness"
+      },
+      {
+        "id": "urn:ngm:class:model-risk-management",
+        "label": "Model Risk Management"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "policy-engine",
+      "label": "Policy Engine"
+    },
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "slug": "decision-support",
+      "label": "Decision Support"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "informed-decision-making",
+      "label": "Informed decision-making"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
+      "slug": "orchestration",
+      "label": "Orchestration"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "business-rules",
+      "label": "Business Rules"
+    },
+    {
+      "slug": "automated-decision-making",
+      "label": "Automated Decision Making"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "risk-scoring",
+      "label": "Risk Scoring"
+    },
+    {
+      "slug": "recommendation-engine",
+      "label": "Recommendation Engine"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "regulation",
+      "label": "Regulation"
+    },
+    {
+      "slug": "probabilistic-reasoning",
+      "label": "Probabilistic Reasoning"
+    },
+    {
+      "slug": "decision-model-notation",
+      "label": "Decision Model Notation"
+    },
+    {
+      "slug": "neuro-symbolic-ai",
+      "label": "Neuro Symbolic AI"
+    },
+    {
+      "slug": "model-serving-runtime",
+      "label": "Model Serving Runtime"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "credit-scoring",
+      "label": "Credit Scoring"
+    },
+    {
+      "slug": "fraud-detection",
+      "label": "Fraud Detection"
+    },
+    {
+      "slug": "adaptive-systems",
+      "label": "Adaptive Systems"
+    },
+    {
+      "slug": "model-monitoring",
+      "label": "Model Monitoring"
+    },
+    {
+      "slug": "causal-reasoning",
+      "label": "Causal Reasoning"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "decision-intelligence",
+      "label": "Decision Intelligence"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "first-order-logic",
+      "label": "First-Order Logic"
+    },
+    {
+      "slug": "formal-methods",
+      "label": "Formal Methods"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "model-risk-management",
+      "label": "Model Risk Management"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "fairness",
+      "label": "Fairness"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "ai-technique",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-agent-system",

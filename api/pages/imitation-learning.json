@@ -637,6 +637,10 @@
       "label": "Adaptive Behaviour"
     },
     {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
     },

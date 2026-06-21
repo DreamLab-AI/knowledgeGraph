@@ -221,16 +221,16 @@ public:: true
   - implemented-in-layer:: [[Inference Orchestration System]]
 
 - ### Relationships
-  - is-subclass-of:: [[ComfyUI Workflows]], [[REST API]]
-  - has-part:: [[WebSocket Protocol]], [[Workflow JSON Format]], [[Workflow Node]], [[Node Link]], [[Directed Acyclic Graph Execution]]
-  - requires:: [[ComfyUI]], [[GPU Compute]], [[Python Runtime]], [[aiohttp]], [[PyTorch]]
-  - enables:: [[Content Creation Pipeline]], [[Agentic Workflow]], [[Batch Image Processing]], [[Inference Orchestration System]], [[ComfyUI for Fashion and Brands]], [[Image Generation]], [[Text-to-Image Generation]], [[Image-to-Image Generation]], [[Video Generation]], [[Inpainting]]
-  - implements:: [[Directed Acyclic Graph Execution]], [[Workflow JSON Format]], [[Workflow Serialisation]]
-  - depends-on:: [[ComfyUI]], [[Diffusion Model]], [[Stable Diffusion]], [[Model Checkpoint]]
-  - supports:: [[ControlNet]], [[LoRA]], [[IP-Adapter]], [[SDXL]], [[Flux.1]], [[AnimateDiff]], [[VAE]], [[CLIP]], [[KSampler]], [[CheckpointLoader]], [[Latent Diffusion Pipeline]], [[Latent Tensor]]
-  - uses:: [[JSON Serialisation]], [[WebSocket Protocol]], [[REST API]], [[aiohttp]], [[PNG Metadata Embedding]]
+  - is-subclass-of:: [[ComfyUI Workflows]], [[REST API]], [[Workflow Automation]], [[Inference Orchestration System]]
+  - has-part:: [[WebSocket Protocol]], [[Workflow JSON Format]], [[Workflow Node]], [[Node Link]], [[Directed Acyclic Graph Execution]], [[Queue Management API]], [[History Endpoint]], [[File Upload Endpoint]], [[Object Info Endpoint]]
+  - requires:: [[ComfyUI]], [[GPU Compute]], [[Python Runtime]], [[aiohttp]], [[PyTorch]], [[Diffusion Model]], [[Model Checkpoint]]
+  - enables:: [[Content Creation Pipeline]], [[Agentic Workflow]], [[Batch Image Processing]], [[Inference Orchestration System]], [[ComfyUI for Fashion and Brands]], [[Image Generation]], [[Text-to-Image Generation]], [[Image-to-Image Generation]], [[Video Generation]], [[Inpainting]], [[Digital Asset Workflow]], [[Workflow Serialisation]]
+  - implements:: [[Directed Acyclic Graph Execution]], [[Workflow JSON Format]], [[Workflow Serialisation]], [[REST API]], [[WebSocket Protocol]], [[Node-Based Visual Programming]]
+  - depends-on:: [[ComfyUI]], [[Diffusion Model]], [[Stable Diffusion]], [[Model Checkpoint]], [[Latent Diffusion Pipeline]]
+  - supports:: [[ControlNet]], [[LoRA]], [[IP-Adapter]], [[SDXL]], [[Flux.1]], [[AnimateDiff]], [[VAE]], [[CLIP]], [[KSampler]], [[CheckpointLoader]], [[Latent Diffusion Pipeline]], [[Latent Tensor]], [[Generative AI]]
+  - uses:: [[JSON Serialisation]], [[WebSocket Protocol]], [[REST API]], [[aiohttp]], [[PNG Metadata Embedding]], [[PyTorch]], [[Python Runtime]]
   - contrasts-with:: [[InvokeAI]], [[AUTOMATIC1111 WebUI]]
-  - related-to:: [[ComfyUI Manager]], [[ComfyUI Client]], [[Agentic Workflow]], [[Hugging Face Hub]], [[OpenArt Workflow Registry]], [[Civitai Workflow Sharing]], [[Node-Based Visual Programming]]
+  - related-to:: [[ComfyUI Manager]], [[ComfyUI Client]], [[Agentic Workflow]], [[Hugging Face Hub]], [[OpenArt Workflow Registry]], [[Civitai Workflow Sharing]], [[Node-Based Visual Programming]], [[Machine Learning]], [[Generative AI]], [[Open Source Software]], [[Content Production Workflow]], [[Comfy-Org 2024 Workflow JSON Spec]]
   - standardized-by:: [[Comfy-Org GitHub Organisation]]
 
 - ### Content
@@ -518,6 +518,11 @@ public:: true
     The **Stability AI REST API** (and equivalents from Replicate, Leonardo.AI, Scenario.gg) exposes hosted inference behind simple JSON endpoints with no graph model at all: the pipeline is fixed server-side, and clients specify only content parameters (prompt, negative prompt, dimensions, seed, steps). These hosted APIs are maximally accessible but minimally composable; they represent the opposite end of the flexibility-simplicity spectrum from ComfyUI. ComfyUI's prompt API bridges this spectrum by exposing a full graph model while remaining accessible via simple HTTP JSON submission.
 
     The **Diffusers `DiffusionPipeline.from_pretrained()` Python API** exposes [[Diffusion Model]] inference as a [[Python]] object hierarchy rather than an HTTP service. ComfyUI wraps the Diffusers library (or its own parallel PyTorch implementations of the same models) in the HTTP/WebSocket API, converting Python method calls to network-accessible node invocations. The Diffusers API is more compositional at the Python level but requires in-process Python execution; ComfyUI's API enables language-agnostic and remote invocation.
+
+  - ## Formal Analysis — DAG Execution Protocol
+    The ComfyUI API Specification is formally an implementation of the typed [[Directed Acyclic Graph Execution]] pattern over a [[JSON Serialisation]] interchange format. The prompt API format encodes a DAG as an adjacency dictionary: each node object specifies its `class_type` (a string key into the node registry exposed at `/object_info`), its `inputs` (a mixed dictionary of either literal values or `[source_node_id, output_slot_index]` connection references), and optional positional metadata. The DAG is implicitly defined by the connection references: any node ID appearing in an `inputs` field is an ancestor of the referring node, and the transitive closure of this ancestor relation must be acyclic for a valid prompt — a constraint the ComfyUI scheduler enforces with a topological sort before execution begins. Cycles that would produce infinite loops — impossible in the flat-node model — are the primary semantic constraint the DAG schema enforces. The `/object_info` endpoint functions as the type system: each node type's input schema specifies which data types are acceptable at each input slot, and clients can validate that every connection reference connects a source output of the correct type to a destination input expecting that type, providing client-side correctness checking before round-tripping to the server.
+
+    The [[WebSocket Protocol]] execution event sequence constitutes a formal observable: `execution_start` → zero or more (`execution_cached` | (`executing` → zero or more `progress`) | `b64_json`) → (`executed` | `execution_error`) → `executing`(null). The null-valued `executing` event is the canonical end-of-prompt sentinel; the `executed` event is a side-effect notification for terminal output nodes and is absent for purely internal computation nodes. Well-typed clients distinguish these two signals: `executed` delivers output file references; `executing`(null) terminates the execution loop. This two-signal design supports the common case where multiple terminal nodes (e.g., a SaveImage node and a PreviewImage node in the same workflow) each emit `executed` events; the final `executing`(null) marks the definitive end. The `/history/{prompt_id}` endpoint provides an idempotent retrieval path for clients that process outputs after rather than during execution, enabling stateless pull-based integration patterns alongside the stateful WebSocket push pattern.
 
   - ## Research & Literature
 

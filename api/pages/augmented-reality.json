@@ -220,6 +220,18 @@
       "label": "Computational Photography"
     },
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
       "slug": "digital-content-overlay",
       "label": "Digital Content Overlay"
     },

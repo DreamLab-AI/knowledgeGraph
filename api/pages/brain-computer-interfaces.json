@@ -631,6 +631,10 @@
       "label": "Cortex Agent"
     },
     {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
       "slug": "digital-society-surveillance",
       "label": "Digital Society Surveillance"
     },

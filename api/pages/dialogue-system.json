@@ -170,6 +170,18 @@
   ],
   "backlinks": [
     {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
       "slug": "dialogue-state-tracking",
       "label": "Dialogue State Tracking"
     },

@@ -110,6 +110,10 @@
       "label": "Closed World Assumption"
     },
     {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "domain-ontology",
       "label": "Domain Ontology"
     },

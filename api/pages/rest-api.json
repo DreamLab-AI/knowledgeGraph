@@ -152,6 +152,10 @@
       "label": "ComfyUI Workflows"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "digital-twin-interop-protocol",
       "label": "Digital Twin Interop Protocol"
     },

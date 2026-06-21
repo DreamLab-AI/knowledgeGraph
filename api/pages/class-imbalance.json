@@ -102,6 +102,10 @@
     {
       "slug": "classification",
       "label": "Classification"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
     }
   ]
 }

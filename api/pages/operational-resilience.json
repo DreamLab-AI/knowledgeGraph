@@ -127,6 +127,10 @@
       "label": "Compliance Monitoring"
     },
     {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
       "slug": "regulatory-reporting",
       "label": "Regulatory Reporting"
     },

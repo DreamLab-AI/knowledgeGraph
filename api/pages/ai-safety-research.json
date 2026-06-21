@@ -396,6 +396,18 @@
       "label": "Artificial Intelligence Research"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     }

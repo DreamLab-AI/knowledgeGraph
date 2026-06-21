@@ -206,6 +206,26 @@
       "label": "controlnet"
     },
     {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
       "slug": "deepfakes",
       "label": "Deepfakes"
     },

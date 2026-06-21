@@ -184,6 +184,10 @@
       "label": "Brain Computer Interfaces"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
       "slug": "cognitive-science",
       "label": "Cognitive Science"
     },
@@ -212,8 +216,16 @@
       "label": "Conformal Prediction"
     },
     {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
     },
     {
       "slug": "decentralised-web",

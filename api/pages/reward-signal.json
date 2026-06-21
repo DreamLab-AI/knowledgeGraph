@@ -98,6 +98,10 @@
     {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
     }
   ]
 }

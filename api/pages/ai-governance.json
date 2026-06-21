@@ -342,6 +342,10 @@
       "label": "classifier-free guidance"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "competition-in-ai",
       "label": "Competition in AI"
     },
@@ -368,6 +372,26 @@
     {
       "slug": "content-provenance",
       "label": "Content Provenance"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
     },
     {
       "slug": "eu-hleg-ai",

@@ -162,6 +162,10 @@
       "label": "Cryptography Security and Privacy"
     },
     {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
       "slug": "digital-forensics-framework",
       "label": "Digital Forensics Framework"
     },

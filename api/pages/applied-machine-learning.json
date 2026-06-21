@@ -330,6 +330,10 @@
       "label": "Computational Intelligence"
     },
     {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"
     }

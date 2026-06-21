@@ -240,6 +240,18 @@
       "label": "Corporate Governance"
     },
     {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
       "slug": "esg",
       "label": "ESG"
     },

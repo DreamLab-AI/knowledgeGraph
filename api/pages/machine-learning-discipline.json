@@ -236,6 +236,10 @@
     {
       "slug": "content-discovery",
       "label": "Content Discovery"
+    },
+    {
+      "slug": "dvc",
+      "label": "DVC"
     }
   ]
 }

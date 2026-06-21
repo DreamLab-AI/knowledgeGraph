@@ -49,6 +49,14 @@
       "label": "Chatbots"
     },
     {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
       "slug": "semantic-search",
       "label": "Semantic Search"
     }

@@ -152,6 +152,10 @@
       "label": "Artificial General Intelligence"
     },
     {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
       "slug": "existential-ai-risk",
       "label": "Existential AI Risk"
     },

@@ -155,5 +155,14 @@
       "label": "Machine Learning"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    }
+  ]
 }

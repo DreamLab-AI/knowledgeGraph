@@ -202,6 +202,10 @@
       "label": "Conversion Pipeline"
     },
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
     },

@@ -104,6 +104,10 @@
     {
       "slug": "control-net",
       "label": "controlnet"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
     }
   ]
 }

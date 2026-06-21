@@ -187,6 +187,10 @@
       "label": "Computational Intelligence"
     },
     {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
       "slug": "robot-control",
       "label": "Robot Control"
     },

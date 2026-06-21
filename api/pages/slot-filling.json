@@ -132,6 +132,18 @@
       "label": "Chatbots"
     },
     {
+      "slug": "coreference-resolution",
+      "label": "Coreference Resolution"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
       "slug": "meeting-ai-assistant",
       "label": "Meeting AI Assistant"
     }

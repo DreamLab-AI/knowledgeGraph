@@ -160,6 +160,14 @@
       "label": "Container"
     },
     {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "llm-application-frameworks",
       "label": "LLM Application Frameworks"
     },

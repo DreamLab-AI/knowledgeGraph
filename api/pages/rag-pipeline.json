@@ -66,6 +66,10 @@
       "label": "Chunking"
     },
     {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
       "slug": "lang-chain",
       "label": "LangChain"
     }

@@ -798,6 +798,10 @@
       "label": "Cross-Chain Bridge"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "data-integration-interface",
       "label": "Data Integration Interface"
     },

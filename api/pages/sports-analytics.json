@@ -45,6 +45,10 @@
       "label": "Action Recognition"
     },
     {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
       "slug": "motion-capture",
       "label": "Motion Capture"
     },

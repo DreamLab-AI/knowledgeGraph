@@ -134,6 +134,14 @@
       "label": "Conformal Prediction"
     },
     {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
       "slug": "medical-ai",
       "label": "Medical AI"
     },

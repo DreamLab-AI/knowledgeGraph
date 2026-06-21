@@ -385,6 +385,22 @@
       "label": "Conformal Prediction"
     },
     {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "exteroceptive-sensor",
       "label": "Exteroceptive Sensor"
     },

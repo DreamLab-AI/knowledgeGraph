@@ -438,8 +438,36 @@
       "label": "controlnet"
     },
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
       "slug": "dall-e-3",
       "label": "DALL-E 3"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
     },
     {
       "slug": "gan",

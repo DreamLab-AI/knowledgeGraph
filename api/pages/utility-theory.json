@@ -99,5 +99,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    }
+  ]
 }

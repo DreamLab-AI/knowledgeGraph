@@ -68,6 +68,14 @@
       "label": "Audience Engagement"
     },
     {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
       "slug": "customer-rewards",
       "label": "Customer Rewards"
     }

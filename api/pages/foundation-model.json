@@ -257,6 +257,10 @@
       "label": "Attention"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "commonsense-reasoning",
       "label": "Commonsense Reasoning"
     },
@@ -275,6 +279,42 @@
     {
       "slug": "control-net",
       "label": "controlnet"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
     },
     {
       "slug": "gpts-and-custom-assistants",

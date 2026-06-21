@@ -98,6 +98,10 @@
       "label": "Bias-Variance Tradeoff"
     },
     {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
       "slug": "dimensionality-reduction",
       "label": "Dimensionality Reduction"
     },

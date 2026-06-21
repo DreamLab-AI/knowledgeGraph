@@ -159,6 +159,14 @@
       "label": "Autonomous Behavior"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
       "slug": "offline-reinforcement-learning",
       "label": "Offline Reinforcement Learning"
     }

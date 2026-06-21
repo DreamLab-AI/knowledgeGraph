@@ -125,6 +125,10 @@
       "label": "Continuous Training"
     },
     {
+      "slug": "dvc",
+      "label": "DVC"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     },

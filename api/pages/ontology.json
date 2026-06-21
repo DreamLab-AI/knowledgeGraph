@@ -164,6 +164,10 @@
       "label": "Constraint"
     },
     {
+      "slug": "database-schema",
+      "label": "Database Schema"
+    },
+    {
       "slug": "description-logic",
       "label": "Description Logic"
     },

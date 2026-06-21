@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
-  "maturity": "emerging",
+  "qualityScore": 0.9,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -34,7 +34,132 @@
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "ai-agent-systems",
+      "label": "AI Agent Systems"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "sandboxed-code-execution",
+      "label": "Sandboxed Code Execution"
+    },
+    {
+      "slug": "firecracker",
+      "label": "Firecracker"
+    },
+    {
+      "slug": "docker",
+      "label": "Docker"
+    },
+    {
+      "slug": "gvisor",
+      "label": "gVisor"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "bash",
+      "label": "Bash"
+    },
+    {
+      "slug": "codeact",
+      "label": "CodeAct"
+    },
+    {
+      "slug": "react",
+      "label": "ReAct"
+    },
+    {
+      "slug": "openhands",
+      "label": "OpenHands"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "e2b",
+      "label": "E2B"
+    },
+    {
+      "slug": "modal",
+      "label": "Modal"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "llm-agents",
+      "label": "LLM Agents"
+    },
+    {
+      "slug": "git",
+      "label": "Git"
+    },
+    {
+      "slug": "opentelemetry",
+      "label": "OpenTelemetry"
+    },
+    {
+      "slug": "swe-agent",
+      "label": "SWE-agent"
+    },
+    {
+      "slug": "autogen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "langgraph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "infrastructure-as-code",
+      "label": "Infrastructure as Code"
+    },
+    {
+      "slug": "state-management",
+      "label": "State Management"
+    },
+    {
+      "slug": "static-analysis",
+      "label": "Static Analysis"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-agent-system",
@@ -59,6 +184,10 @@
     {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
     },
     {
       "slug": "multi-agent-orchestration-frameworks",

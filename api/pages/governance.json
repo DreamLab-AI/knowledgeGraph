@@ -169,8 +169,16 @@
       "label": "Consortium Blockchain"
     },
     {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
       "slug": "cross-border-compliance",
       "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
     },
     {
       "slug": "dao-analytics",
@@ -191,6 +199,14 @@
     {
       "slug": "decentralized-governance",
       "label": "Decentralized Governance"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
     },
     {
       "slug": "digital-society-harms",

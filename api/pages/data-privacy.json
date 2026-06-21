@@ -172,6 +172,14 @@
       "label": "Consent Management"
     },
     {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
       "slug": "data-protection-law",
       "label": "Data Protection Law"
     },

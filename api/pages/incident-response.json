@@ -161,6 +161,14 @@
       "label": "Configuration Management"
     },
     {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
       "slug": "ncsc",
       "label": "NCSC"
     },

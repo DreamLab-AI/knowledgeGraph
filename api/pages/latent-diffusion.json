@@ -176,6 +176,14 @@
       "label": "controlnet"
     },
     {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
       "slug": "music-and-audio",
       "label": "Music and Audio"
     },

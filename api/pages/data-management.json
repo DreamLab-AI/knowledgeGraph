@@ -176,6 +176,14 @@
       "label": "Data Quality"
     },
     {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

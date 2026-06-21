@@ -125,6 +125,14 @@
       "label": "Action Executor"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "function-calling",
       "label": "Function Calling"
     },

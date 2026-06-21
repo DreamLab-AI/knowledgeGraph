@@ -737,6 +737,22 @@
       "label": "Control Layer"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
       "slug": "dynamical-systems",
       "label": "Dynamical Systems"
     },

@@ -102,6 +102,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
       "slug": "code-generation",
       "label": "Code Generation"
     },

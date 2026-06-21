@@ -158,6 +158,10 @@
       "label": "Bayes Filter"
     },
     {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
       "slug": "gaussian-splatting",
       "label": "Gaussian Splatting"
     },

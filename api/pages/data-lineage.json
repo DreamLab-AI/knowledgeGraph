@@ -131,6 +131,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "dvc",
+      "label": "DVC"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "metadata-management",
       "label": "Metadata Management"
     }

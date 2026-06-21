@@ -149,6 +149,10 @@
       "label": "anthropic"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
     },

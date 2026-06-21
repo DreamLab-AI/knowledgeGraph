@@ -93,5 +93,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "coreference-resolution",
+      "label": "Coreference Resolution"
+    }
+  ]
 }

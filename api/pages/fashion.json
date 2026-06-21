@@ -526,6 +526,14 @@
   ],
   "backlinks": [
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
       "slug": "fine-tuning",
       "label": "Fine Tuning"
     },

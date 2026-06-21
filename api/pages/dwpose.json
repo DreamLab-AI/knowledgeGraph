@@ -4,41 +4,331 @@
   "slug": "dwpose",
   "public": true,
   "classIri": "urn:ngm:class:dwpose",
-  "domain": "ai",
-  "definition": "DWPose is a whole-body 2D human pose estimation model that detects body, hand, face, and foot keypoints with high accuracy using a two-stage distillation approach. It is widely used to generate skeletal conditioning maps for controllable image and video generation. In generative pipelines DWPose output drives spatial-conditioning systems such as ControlNet to constrain pose and gesture.",
+  "domain": "artificial-intelligence",
+  "definition": "DWPose is a whole-body 2D human pose estimation model developed by IDEA-Research that detects 133 keypoints spanning body, hands, face, and feet using a two-stage teacher-student knowledge distillation scheme. Its skeletal conditioning maps are widely used to drive spatial-conditioning systems such as ControlNet in diffusion-based image and video generation pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
+    },
+    {
+      "id": "urn:ngm:class:pose-estimation",
+      "label": "Pose Estimation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
-  "maturity": "emerging",
+  "qualityScore": 0.9,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:keypoint-detection",
+        "label": "Keypoint Detection"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:skeleton-map",
+        "label": "Skeleton Map"
+      },
+      {
+        "id": "urn:ngm:class:human-body-model",
+        "label": "Human Body Model"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:rtmpose",
+        "label": "RTMPose"
+      },
+      {
+        "id": "urn:ngm:class:mmpose",
+        "label": "MMPose"
+      },
+      {
+        "id": "urn:ngm:class:coco-wholebody",
+        "label": "COCO WholeBody"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
+        "label": "ControlNet and Similar Spatial Conditioning Systems"
+      },
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:character-animation",
+        "label": "Character Animation"
+      },
+      {
+        "id": "urn:ngm:class:gesture-recognition",
+        "label": "Gesture Recognition"
+      },
+      {
+        "id": "urn:ngm:class:action-recognition",
+        "label": "Action Recognition"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "implements": [
       {
         "id": "urn:ngm:class:pose-estimation",
         "label": "Pose Estimation"
       },
       {
-        "id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
-        "label": "ControlNet and Similar Spatial Conditioning Systems"
+        "id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:onnx",
+        "label": "ONNX"
+      },
+      {
+        "id": "urn:ngm:class:mmpose",
+        "label": "MMPose"
+      },
+      {
+        "id": "urn:ngm:class:coco-wholebody",
+        "label": "COCO WholeBody"
+      },
+      {
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:openpose",
+        "label": "OpenPose"
+      },
+      {
+        "id": "urn:ngm:class:vitpose",
+        "label": "ViTPose"
+      },
+      {
+        "id": "urn:ngm:class:mediapipe",
+        "label": "MediaPipe"
+      },
+      {
+        "id": "urn:ngm:class:sdpose",
+        "label": "SDPose"
+      },
+      {
+        "id": "urn:ngm:class:rtmpose",
+        "label": "RTMPose"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:digital-human-technology",
+        "label": "Digital Human Technology"
+      },
+      {
+        "id": "urn:ngm:class:motion-capture",
+        "label": "Motion Capture"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "openpose",
+      "label": "OpenPose"
+    },
+    {
+      "slug": "rtmpose",
+      "label": "RTMPose"
+    },
+    {
+      "slug": "mmpose",
+      "label": "MMPose"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "coco-wholebody",
+      "label": "COCO WholeBody"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "human-body-model",
+      "label": "Human Body Model"
+    },
+    {
+      "slug": "keypoint-detection",
+      "label": "Keypoint Detection"
+    },
+    {
+      "slug": "skeleton-map",
+      "label": "Skeleton Map"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "character-animation",
+      "label": "Character Animation"
+    },
+    {
+      "slug": "gesture-recognition",
+      "label": "Gesture Recognition"
+    },
+    {
+      "slug": "digital-human-technology",
+      "label": "Digital Human Technology"
+    },
+    {
+      "slug": "controlnet-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "animate-anyone",
+      "label": "AnimateAnyone"
+    },
+    {
+      "slug": "comfyui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
+      "slug": "onnx",
+      "label": "ONNX"
+    },
+    {
+      "slug": "vitpose",
+      "label": "ViTPose"
+    },
+    {
+      "slug": "mediapipe",
+      "label": "MediaPipe"
+    },
+    {
+      "slug": "action-recognition",
+      "label": "Action Recognition"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "sports-analytics",
+      "label": "Sports Analytics"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "diffusion-transformer",
+      "label": "Diffusion Transformer"
+    },
+    {
+      "slug": "sdpose",
+      "label": "SDPose"
+    },
+    {
+      "slug": "ai-perception-domain",
+      "label": "AIPerceptionDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "hugging-face-hub",
+      "label": "Hugging Face Hub"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "edge-detection",
+      "label": "Edge Detection"
+    },
+    {
+      "slug": "smpl",
+      "label": "SMPL"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    }
+  ],
   "backlinks": [
     {
       "slug": "control-net-conditioning",

@@ -149,8 +149,20 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
       "slug": "context-engineering",
       "label": "Context Engineering"
+    },
+    {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
     }
   ]
 }

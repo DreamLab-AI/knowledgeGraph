@@ -152,6 +152,14 @@
       "label": "Carbon Accounting"
     },
     {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "social-impact-assessment-sia",
       "label": "Social Impact Assessment (SIA)"
     }

@@ -185,6 +185,14 @@
   ],
   "backlinks": [
     {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
       "slug": "etsi-domain-data-management-ethics",
       "label": "ETSI Domain: Data Management + Ethics"
     },

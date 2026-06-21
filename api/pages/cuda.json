@@ -141,6 +141,10 @@
       "label": "Continuous Batching"
     },
     {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
       "slug": "gaussian-splatting",
       "label": "Gaussian Splatting"
     },

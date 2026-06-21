@@ -47,6 +47,10 @@
     {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "dvc",
+      "label": "DVC"
     }
   ]
 }

@@ -63,6 +63,10 @@
       "label": "DAO Analytics"
     },
     {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
       "slug": "global-inequality",
       "label": "Global Inequality"
     }

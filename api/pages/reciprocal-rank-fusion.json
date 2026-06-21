@@ -49,6 +49,10 @@
       "label": "BM25"
     },
     {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
       "slug": "semantic-search",
       "label": "Semantic Search"
     }

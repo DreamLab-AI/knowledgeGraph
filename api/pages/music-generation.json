@@ -106,6 +106,18 @@
       "label": "Computational Creativity"
     },
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
     }

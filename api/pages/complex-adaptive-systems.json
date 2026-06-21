@@ -364,6 +364,10 @@
     {
       "slug": "agent-based-models",
       "label": "Agent-Based Models"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
     }
   ]
 }

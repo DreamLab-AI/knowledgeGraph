@@ -146,12 +146,20 @@
       "label": "Artificial General Intelligence"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "cohere",
       "label": "Cohere"
     },
     {
       "slug": "common-sense-reasoning",
       "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "cost-function",
+      "label": "cost function"
     },
     {
       "slug": "direct-preference-optimization",

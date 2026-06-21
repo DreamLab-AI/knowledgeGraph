@@ -149,6 +149,34 @@
       "label": "Computational Linguistics"
     },
     {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "coreference-resolution",
+      "label": "Coreference Resolution"
+    },
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
       "slug": "dao-analytics",
       "label": "DAO Analytics"
     },

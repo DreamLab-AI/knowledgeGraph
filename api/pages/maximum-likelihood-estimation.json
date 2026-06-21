@@ -92,6 +92,18 @@
       "label": "Bayes Theorem"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
     },

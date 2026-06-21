@@ -164,6 +164,10 @@
       "label": "Agent-Based Models"
     },
     {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
       "slug": "path-planning",
       "label": "Path Planning"
     }

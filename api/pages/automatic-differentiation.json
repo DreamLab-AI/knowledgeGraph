@@ -276,6 +276,10 @@
       "label": "Automated Reasoning"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
       "slug": "deep-learning-framework",
       "label": "Deep Learning Framework"
     },

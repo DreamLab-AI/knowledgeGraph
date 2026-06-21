@@ -144,6 +144,10 @@
       "label": "Continual Learning"
     },
     {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },

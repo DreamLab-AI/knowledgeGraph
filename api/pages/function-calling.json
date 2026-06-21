@@ -681,6 +681,14 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
     },
@@ -691,6 +699,10 @@
     {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
     },
     {
       "slug": "gpts-and-custom-assistants",

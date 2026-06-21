@@ -189,6 +189,14 @@
       "label": "Content Generation"
     },
     {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
       "slug": "empathetic-ai",
       "label": "Empathetic AI"
     },

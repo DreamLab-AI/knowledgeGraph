@@ -148,6 +148,14 @@
       "label": "Compute Infrastructure"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     },

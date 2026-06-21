@@ -152,6 +152,10 @@
       "label": "Conviction Voting"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },

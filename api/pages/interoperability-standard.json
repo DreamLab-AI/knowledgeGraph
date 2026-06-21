@@ -156,6 +156,10 @@
       "label": "CBDC Frameworks"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "multiverse",
       "label": "Multiverse"
     }

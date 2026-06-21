@@ -161,6 +161,22 @@
     {
       "slug": "continual-learning",
       "label": "Continual Learning"
+    },
+    {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
     }
   ]
 }

@@ -124,6 +124,10 @@
       "label": "Complex Adaptive Systems"
     },
     {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
       "slug": "distributed-decision-making",
       "label": "Distributed Decision Making"
     }

@@ -196,6 +196,10 @@
       "label": "DID Nostr Identity"
     },
     {
+      "slug": "dvc",
+      "label": "DVC"
+    },
+    {
       "slug": "distributed-ledger-technology-dlt",
       "label": "Distributed Ledger Technology (DLT)"
     },

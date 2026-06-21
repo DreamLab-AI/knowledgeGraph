@@ -157,6 +157,10 @@
       "label": "Continuous Batching"
     },
     {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
       "slug": "internal-ai-harness",
       "label": "Internal AI Harness"
     },

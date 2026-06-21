@@ -421,6 +421,14 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
       "slug": "comfy-ui",
       "label": "Comfy Ui"
     },
@@ -431,6 +439,18 @@
     {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
     },
     {
       "slug": "llm-application-frameworks",

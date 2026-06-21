@@ -93,5 +93,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    }
+  ]
 }

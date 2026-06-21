@@ -142,6 +142,14 @@
       "label": "Content Creation"
     },
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
       "slug": "virtual-world-creation",
       "label": "Virtual World Creation"
     }

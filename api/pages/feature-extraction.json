@@ -162,6 +162,18 @@
       "label": "Computer Vision"
     },
     {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
       "slug": "lens-and-camera-calibration",
       "label": "Lens and Camera Calibration"
     },

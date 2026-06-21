@@ -176,15 +176,17 @@ public:: true
   - implemented-in-layer:: [[Model Monitoring]]
 
 - ### Relationships
-  - is-subclass-of:: [[AI Technique]], [[Machine Learning]]
-  - has-part:: [[Drift Detection Method]], [[ADWIN]], [[Page-Hinkley Test]]
-  - requires:: [[Model Monitoring]], [[Statistics]], [[Probability Distribution]]
-  - enables:: [[Retraining]], [[Continual Learning]], [[Online Learning]], [[Domain Adaptation]]
-  - depends-on:: [[Streaming Data]], [[Data Quality]], [[Observability]]
-  - supports:: [[AI Governance]], [[MLOps]], [[AI Lifecycle]]
-  - uses:: [[Information Theory]], [[Bayesian Inference]], [[Ensemble Methods]], [[Anomaly Detection]]
-  - contrasts-with:: [[Data Drift]], [[Covariate Shift]], [[Catastrophic Forgetting]]
-  - related-to:: [[Distribution Shift]], [[Online Learning]], [[Transfer Learning]], [[Federated Learning]], [[Active Learning]], [[Deep Learning]], [[Neural Networks]], [[Time Series]], [[Reinforcement Learning]], [[Natural Language Processing]], [[Large Language Models]], [[Feature Store]], [[Model Registry]], [[Inference]], [[Data Pipeline]], [[Feature Engineering]], [[Knowledge Distillation]], [[Model Degradation]], [[Feedback Loop]]
+  - is-subclass-of:: [[AI Technique]], [[Machine Learning]], [[Machine Learning Technique]], [[Distribution Shift]]
+  - has-part:: [[Drift Detection Method]], [[ADWIN]], [[Page-Hinkley Test]], [[Model Monitoring]], [[Statistical Process Control]], [[Population Stability Index]], [[Kolmogorov-Smirnov Test]]
+  - requires:: [[Model Monitoring]], [[Statistics]], [[Probability Distribution]], [[Data Quality]], [[Observability]], [[Streaming Data]], [[Data Pipeline]], [[Feature Engineering]]
+  - enables:: [[Retraining]], [[Continual Learning]], [[Online Learning]], [[Domain Adaptation]], [[Active Learning]], [[AI Governance]], [[MLOps]], [[Feedback Loop]], [[Model Training]]
+  - implements:: [[Bayesian Inference]], [[Ensemble Methods]], [[Anomaly Detection]], [[Transfer Learning]], [[Knowledge Distillation]], [[Information Theory]], [[Statistical Hypothesis Testing]]
+  - depends-on:: [[Streaming Data]], [[Data Quality]], [[Observability]], [[Feature Store]], [[Model Registry]], [[Machine Learning Pipeline]], [[Data Annotation]]
+  - supports:: [[AI Governance]], [[MLOps]], [[AI Lifecycle]], [[Machine Learning Operations]], [[Machine Learning Infrastructure]], [[Model Training Pipeline]]
+  - uses:: [[Information Theory]], [[Bayesian Inference]], [[Ensemble Methods]], [[Anomaly Detection]], [[Feature Store]], [[Model Registry]], [[Machine Learning Framework]], [[Bayesian Deep Learning]]
+  - contrasts-with:: [[Data Drift]], [[Covariate Shift]], [[Catastrophic Forgetting]], [[Catastrophic Risk Assessment]]
+  - related-to:: [[Distribution Shift]], [[Online Learning]], [[Transfer Learning]], [[Federated Learning]], [[Active Learning]], [[Deep Learning]], [[Neural Networks]], [[Time Series]], [[Reinforcement Learning]], [[Natural Language Processing]], [[Large Language Models]], [[Feature Store]], [[Model Registry]], [[Inference]], [[Data Pipeline]], [[Feature Engineering]], [[Knowledge Distillation]], [[Model Degradation]], [[Feedback Loop]], [[Federated Edge Learning]], [[Machine Learning Accelerator]], [[Bayesian Optimisation]], [[Machine Learning Discipline]]
+  - standardized-by:: [[Machine Learning Techniques Survey]], [[Machine Learning.md]]
 
 - ### Content
 
@@ -286,6 +288,35 @@ public:: true
     ObjectSomeValuesFrom(ai:reducesTo ai:CovariateShift))
   SubClassOf(ai:ConceptDrift
     ObjectSomeValuesFrom(ai:reducesTo ai:DataDrift))
+  ```
+  ## Extended Relationship Axioms (Uses / Supports / ContrastsWith)
+  ```
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:uses ai:FeatureStore))
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:uses ai:ModelRegistry))
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:uses ai:MachineLearningFramework))
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:uses ai:BayesianDeepLearning))
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:supports ai:MachineLearningOperations))
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:supports ai:MachineLearningInfrastructure))
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:supports ai:ModelTrainingPipeline))
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:contrastsWith ai:CatastrophicRiskAssessment))
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:dependsOn ai:MachineLearningPipeline))
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:dependsOn ai:DataAnnotation))
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:relatedTo ai:FederatedEdgeLearning))
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:relatedTo ai:MachineLearningAccelerator))
+  SubClassOf(ai:ConceptDrift
+    ObjectSomeValuesFrom(ai:relatedTo ai:BayesianOptimisation))
   ```
 
   ## About
@@ -391,6 +422,48 @@ public:: true
   - **Autonomous drift threshold determination**: Research in 2025 (Arxiv 2511.09953) is exploring self-calibrating thresholds that adapt to the noise level and drift velocity of the specific deployment, reducing the parameter tuning burden currently imposed on practitioners.
   - **Multimodal drift**: As production systems incorporate vision, audio, and text jointly, multivariate and cross-modal drift detection methods are needed that go beyond per-feature univariate tests.
   - **Regulatory standardisation**: Ongoing work in ISO/IEC JTC 1/SC 42 and the EU AI Office to define quantitative drift monitoring requirements, reference datasets for detector evaluation, and reporting formats for regulatory submissions.
+
+  ## Adversarial Concept Drift
+
+  A significant and practically important sub-category of concept drift is *adversarial drift* — concept drift deliberately induced by an intelligent adversary with the goal of degrading a deployed machine learning system. This distinguishes it from natural drift, which arises from organic changes in the data-generating process without intentional manipulation.
+
+  Adversarial drift is endemic in security-critical applications. Spam filters face adversarial drift continuously: as filters improve at classifying known spam patterns, spammers adapt their messaging to evade detection — changing wording, structure, sender patterns, and payload encoding. The detection algorithm's training distribution is therefore permanently under adversarial pressure to shift. The result is an arms race in which the concept being approximated (spam versus not-spam) is unstable not because of natural world change but because the adversary is deliberately exploring the classifier's decision boundary and shifting content to the other side.
+
+  Network intrusion detection systems (IDS) face analogous adversarial drift. Attackers probe detection classifiers to discover which traffic patterns trigger alerts, then modify attack patterns to fall within the classifier's false-negative region. This is a form of real concept drift: the true conditional P(malicious|features) is unchanged, but the empirical distribution of malicious traffic features shifts as attackers adapt. [[Anomaly Detection]] approaches that monitor the feature distribution rather than targeting specific known-attack signatures are more robust to adversarial drift than signature-based classifiers, but they in turn are vulnerable to adversaries who can generate sufficient "normal-looking" malicious traffic to shift the anomaly detector's baseline.
+
+  Adversarial concept drift under *poisoning attacks* is a distinct threat model: rather than adapting the inputs to evade detection, the adversary injects carefully crafted training examples into the model's retraining dataset, causing the retrained model to have a corrupted decision boundary. In a system that automates retraining on production data (the canonical [[MLOps]] feedback loop), poisoning attacks target the data collection and labelling stages: by creating or labelling examples that are misclassified in a targeted way, an adversary can cause the model to drift toward their preferred decision boundary over successive retraining cycles. Defences against poisoning-based concept drift include training data provenance checks, robust statistics-based outlier rejection during retraining, and rate-limiting the fraction of new data incorporated per retraining cycle.
+
+  The [[Federated Learning]] context is particularly vulnerable to adversarial drift through Byzantine client behaviour: a small number of malicious clients can submit poisoned gradient updates that shift the global model's behaviour, mimicking the effect of concept drift on a subset of the population without any global distributional shift. The [[Federated Byzantine Fault Tolerance]] literature addresses defences against such attacks.
+
+  In the [[Natural Language Processing]] and [[Large Language Models]] context, adversarial concept drift manifests as prompt injection and jailbreaking: users discover input patterns that elicit unintended model behaviours, exploiting the gap between the model's training distribution and the distribution of adversarially constructed inputs. Monitoring for adversarial NLP drift requires tracking not just the aggregate statistical properties of inputs but the semantic distribution of inputs in embedding space — detecting when inputs cluster in regions of embedding space that were absent from the training distribution.
+
+  Research on adversarial concept drift detection (Suárez-Cetrulo et al., 2023; García et al., 2024) has explored the use of [[Ensemble Methods]] as robustness mechanisms: an ensemble of drift detectors, each trained on different feature subspaces or different time windows, is harder for an adversary to simultaneously fool than a single detector. The adversary would need to evade all detectors simultaneously, which increases the cost of adversarial adaptation.
+
+  ## Concept Drift in Regulated AI Deployment
+
+  The [[AI Governance]] dimensions of concept drift are becoming increasingly important as regulatory frameworks mature. The central insight is that the performance guarantees established during model validation are time-bound: they hold under the data distribution present at validation time, which may differ from the distribution encountered in production. Regulators are beginning to require that organisations explicitly model and manage this temporal validity horizon.
+
+  The EU AI Act's Article 9 requires that high-risk AI systems maintain a risk management system that identifies and analyses risks including those arising from "changes in the operational or technical performance of the AI system." Article 72 mandates post-market monitoring and requires that providers collect and analyse data on serious incidents and system performance. Together these provisions effectively mandate concept drift monitoring for all high-risk AI systems deployed in the EU — including systems in education, employment, critical infrastructure, biometric identification, law enforcement, and migration management.
+
+  The UK's approach, influenced by the AISI's (AI Safety Institute, established 2023) evaluation methodologies, emphasises capability evaluations that assess performance across diverse conditions, including distribution shifts. While the UK has not yet enacted AI Act-equivalent legislation as of June 2026, the government's AI Regulation White Paper (March 2023) articulated a "pro-innovation" framework that nonetheless requires sector-specific regulators (FCA, CMA, MHRA, ICO) to address AI safety within their existing powers — which in practice means concept drift management falls under model risk governance in finance and healthcare.
+
+  The PRA's (Prudential Regulation Authority) Supervisory Statement SS3/23 on AI and machine learning (2023) explicitly requires that firms monitor whether model outputs remain appropriate as conditions change, and that retraining decisions are documented with appropriate governance oversight. This is a direct regulatory driver for systematic concept drift detection in UK financial institutions.
+
+  Medical device software under the MHRA (UK) and FDA (US) frameworks is subject to the most rigorous drift management requirements. The FDA's predetermined change control plan (PCCP) framework requires manufacturers to specify in advance what types of distributional changes in input data or patient population will trigger revalidation — effectively requiring a formal concept drift taxonomy and response protocol as part of the pre-market submission for AI-enabled medical devices.
+
+  ## Concept Drift in the Context of Foundation Models
+
+  The emergence of [[Large Language Models]] and other foundation models as the substrate of enterprise AI applications has introduced a qualitatively new class of concept drift challenge that does not fit neatly within the classical tabular-data framework.
+
+  Foundation model deployments typically involve multiple layers where drift can occur independently: (1) the base model's weights, updated by the provider (e.g., OpenAI, Anthropic, Google) in ways that may not be fully disclosed; (2) the fine-tuning dataset, which may itself change over time as new examples are added; (3) the retrieval index in RAG (Retrieval-Augmented Generation) architectures, which updates as new documents are ingested; (4) the user query distribution, which evolves as the user population changes and as users learn to interact with the system more effectively; and (5) the evaluation criteria, which may shift as organisational priorities or product requirements evolve.
+
+  Classical concept drift detection frameworks address a single model with a fixed architecture receiving observations from a single data stream. Foundation model deployments face drift in five simultaneous dimensions, with complex interactions: an upstream model update may partially compensate for user distribution drift in some capabilities while introducing regression in others. Detecting and attributing drift across these dimensions requires a monitoring architecture that is substantially more complex than PSI or KS tests on a tabular feature matrix.
+
+  Practical approaches emerging in 2025 include: LLM evaluation frameworks (RAGAS, DeepEval) that continuously evaluate model outputs against a reference test set and flag performance changes; embedding-space monitoring that tracks the distribution of input and output embeddings over time using MMD or classifier-based tests; golden-dataset regression testing that detects capability regressions from upstream model updates; and A/B testing frameworks that run candidate model versions in parallel with the incumbent to detect distributional differences in outputs before committing to a version update.
+
+  The *ground-truth lag problem* is especially severe for generative AI systems: for a generative task such as question answering or code generation, there is often no reliable automated ground-truth signal. Human evaluation is expensive and slow; automated metrics (BLEU, ROUGE, perplexity) are known to be poor proxies for human judgment on generative tasks. This creates a fundamental observability gap: the system may be drifting significantly, but the monitoring system cannot detect it without human evaluation, which is too slow and expensive to perform continuously. Research in 2024–2025 on LLM-as-judge evaluation frameworks (GPT-4 used as an automated evaluator of other LLM outputs) partially addresses this gap but introduces a dependency on the evaluator model's own stability — an evaluator that itself drifts introduces correlated noise into the drift detection signal.
+
+  The [[Knowledge Distillation]] approach to managing foundation model drift involves maintaining a smaller, cheaper distilled model as an approximation of the current production model's behaviour. When the production model is updated by the provider, the distilled model can be compared against the updated version to rapidly characterise the extent of behavioural change before full A/B testing, providing an early warning signal that guides the scope of regression testing required.
 
   ## Quantified Industry Impact
 

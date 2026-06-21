@@ -264,6 +264,14 @@
       "label": "BEIR Benchmark"
     },
     {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },

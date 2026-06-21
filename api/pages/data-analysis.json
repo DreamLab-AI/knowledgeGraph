@@ -54,6 +54,10 @@
       "label": "Data Cleaning"
     },
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
     }

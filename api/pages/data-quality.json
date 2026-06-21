@@ -159,6 +159,10 @@
       "label": "Data Pipeline"
     },
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "entity-resolution",
       "label": "Entity Resolution"
     },

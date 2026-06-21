@@ -127,6 +127,14 @@
       "label": "Data Provenance"
     },
     {
+      "slug": "database-schema",
+      "label": "Database Schema"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "digital-goods",
       "label": "Digital Goods"
     },

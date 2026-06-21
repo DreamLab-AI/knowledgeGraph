@@ -243,6 +243,14 @@
       "label": "classifier-free guidance"
     },
     {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

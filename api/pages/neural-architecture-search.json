@@ -171,6 +171,14 @@
       "label": "Combinatorial Optimisation"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
     },

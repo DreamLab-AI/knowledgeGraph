@@ -135,6 +135,26 @@
       "label": "Bias-Variance Tradeoff"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
       "slug": "statistical-learning-theory",
       "label": "Statistical Learning Theory"
     }

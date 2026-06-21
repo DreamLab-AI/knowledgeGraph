@@ -4,41 +4,352 @@
   "slug": "creative-industries",
   "public": true,
   "classIri": "urn:ngm:class:creative-industries",
-  "domain": "ai",
-  "definition": "The creative industries are the economic sectors that generate value primarily from individual creativity, skill, and intellectual property, spanning design, fashion, film, music, gaming, advertising, and publishing. They combine cultural production with commercial distribution and are increasingly reshaped by generative AI tooling. As an economic domain they are a significant employer and exporter of cultural goods.",
+  "domain": "economics",
+  "definition": "The creative industries are the economic sectors that generate value primarily from individual creativity, skill, and intellectual property, spanning design, fashion, film, music, gaming, advertising, architecture, and publishing. They combine cultural production with commercial distribution and are increasingly reshaped by generative AI tooling. As an economic domain they constitute a significant employer and exporter of cultural goods \u2014 contributing \u00a3124 billion in gross value added to the UK economy in 2023 \u2014 while simultaneously representing the sector most affected by unresolved questions of copyright, training data use, and AI-enabled labour displacement.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:economics",
       "label": "Economics"
+    },
+    {
+      "id": "urn:ngm:class:knowledge-economy",
+      "label": "Knowledge Economy"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "hasPart": [
       {
         "id": "urn:ngm:class:fashion",
         "label": "Fashion"
       },
       {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "id": "urn:ngm:class:game-development",
+        "label": "Game Development"
+      },
+      {
+        "id": "urn:ngm:class:music-generation",
+        "label": "Music Generation"
+      },
+      {
+        "id": "urn:ngm:class:design",
+        "label": "Design"
+      },
+      {
+        "id": "urn:ngm:class:advertising",
+        "label": "Advertising"
+      },
+      {
+        "id": "urn:ngm:class:publishing",
+        "label": "Publishing"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "id": "urn:ngm:class:intellectual-property-rights-framework",
+        "label": "Intellectual Property Rights Framework"
+      },
+      {
+        "id": "urn:ngm:class:licensing",
+        "label": "Licensing"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:cultural-heritage",
+        "label": "Cultural Heritage"
+      },
+      {
+        "id": "urn:ngm:class:platform-economy",
+        "label": "Platform Economy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:creative-software",
+        "label": "Creative Software"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-economy",
+        "label": "Knowledge Economy"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
         "id": "urn:ngm:class:ai-companies",
         "label": "AI Companies"
+      },
+      {
+        "id": "urn:ngm:class:human-ai-collaboration",
+        "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:nft",
+        "label": "NFT"
+      },
+      {
+        "id": "urn:ngm:class:freelance-economy",
+        "label": "Freelance Economy"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "copyright",
+      "label": "Copyright"
+    },
+    {
+      "slug": "intellectual-property-rights-framework",
+      "label": "Intellectual Property Rights Framework"
+    },
+    {
+      "slug": "film-production",
+      "label": "Film Production"
+    },
+    {
+      "slug": "game-development",
+      "label": "Game Development"
+    },
+    {
+      "slug": "music-generation",
+      "label": "Music Generation"
+    },
+    {
+      "slug": "digital-content-creation",
+      "label": "Digital Content Creation"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "human-ai-collaboration",
+      "label": "Human-AI Collaboration"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "advertising",
+      "label": "Advertising"
+    },
+    {
+      "slug": "publishing",
+      "label": "Publishing"
+    },
+    {
+      "slug": "design",
+      "label": "Design"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "platform-economy",
+      "label": "Platform Economy"
+    },
+    {
+      "slug": "knowledge-economy",
+      "label": "Knowledge Economy"
+    },
+    {
+      "slug": "cultural-heritage",
+      "label": "Cultural Heritage"
+    },
+    {
+      "slug": "ai-regulation",
+      "label": "AI Regulation"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
+      "slug": "ai-art",
+      "label": "AI Art"
+    },
+    {
+      "slug": "film-vfx",
+      "label": "Film VFX"
+    },
+    {
+      "slug": "creative-software",
+      "label": "Creative Software"
+    },
+    {
+      "slug": "freelance-economy",
+      "label": "Freelance Economy"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "comfyui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "digital-fashion",
+      "label": "Digital Fashion"
+    },
+    {
+      "slug": "licensing",
+      "label": "Licensing"
+    },
+    {
+      "slug": "ai-application",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "ai-technique",
+      "label": "AI-GroundedDomain"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-art-generation",
@@ -55,6 +366,10 @@
     {
       "slug": "computational-creativity",
       "label": "Computational Creativity"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
     },
     {
       "slug": "fashion",

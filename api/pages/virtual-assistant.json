@@ -97,6 +97,10 @@
     {
       "slug": "ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
     }
   ]
 }

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:coreference-resolution",
   "domain": "artificial-intelligence",
-  "definition": "Coreference resolution is the natural language processing task of identifying all expressions in a text that refer to the same real-world entity. It groups noun phrases, pronouns, and other referring expressions into coreference clusters, so that a system can recognise, for example, that a name, a later pronoun, and a definite description all denote one person. Resolving these links is a prerequisite for coherent document-level understanding.",
+  "definition": "Coreference resolution is the natural language processing task of identifying all expressions in a text that refer to the same real-world entity, grouping noun phrases, pronouns, definite descriptions, and other referring expressions into coreference clusters so that downstream systems can maintain coherent entity representations across sentences and documents. It is a foundational subtask of information extraction, question answering, summarisation, and knowledge graph population, enabling models to track entities without re-identifying them from scratch at each mention.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:natural-language-processing",
@@ -13,13 +13,25 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.91,
   "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:named-entity-recognition",
-        "label": "Named Entity Recognition"
+        "id": "urn:ngm:class:mention-detection",
+        "label": "Mention Detection"
+      },
+      {
+        "id": "urn:ngm:class:antecedent-scoring",
+        "label": "Antecedent Scoring"
+      },
+      {
+        "id": "urn:ngm:class:mention-clustering",
+        "label": "Mention Clustering"
+      },
+      {
+        "id": "urn:ngm:class:anaphora-resolution",
+        "label": "Anaphora Resolution"
       }
     ],
     "requires": [
@@ -30,6 +42,14 @@
       {
         "id": "urn:ngm:class:semantic-parsing",
         "label": "Semantic Parsing"
+      },
+      {
+        "id": "urn:ngm:class:dependency-parsing",
+        "label": "Dependency Parsing"
+      },
+      {
+        "id": "urn:ngm:class:span-representation",
+        "label": "Span Representation"
       }
     ],
     "enables": [
@@ -42,16 +62,32 @@
         "label": "Question Answering"
       },
       {
-        "id": "urn:ngm:class:knowledge-graph",
-        "label": "Knowledge Graph"
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      },
+      {
+        "id": "urn:ngm:class:document-summarisation",
+        "label": "Document Summarisation"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:named-entity-recognition",
+        "label": "Named Entity Recognition"
+      },
+      {
         "id": "urn:ngm:class:text-mining",
         "label": "Text Mining"
+      },
+      {
+        "id": "urn:ngm:class:entity-linking",
+        "label": "Entity Linking"
       }
     ],
     "bridgesTo": [],
@@ -63,6 +99,14 @@
       {
         "id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:bert",
+        "label": "BERT"
+      },
+      {
+        "id": "urn:ngm:class:word-embeddings",
+        "label": "Word Embeddings"
       }
     ],
     "supports": [
@@ -73,6 +117,14 @@
       {
         "id": "urn:ngm:class:machine-translation",
         "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:sentiment-analysis",
+        "label": "Sentiment Analysis"
+      },
+      {
+        "id": "urn:ngm:class:slot-filling",
+        "label": "Slot Filling"
       }
     ],
     "standardizedBy": [],
@@ -80,6 +132,10 @@
       {
         "id": "urn:ngm:class:natural-language-understanding",
         "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:information-extraction",
+        "label": "Information Extraction"
       }
     ],
     "relatedTo": [
@@ -90,10 +146,123 @@
       {
         "id": "urn:ngm:class:natural-language-understanding",
         "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:relation-extraction",
+        "label": "Relation Extraction"
+      },
+      {
+        "id": "urn:ngm:class:part-of-speech-tagging",
+        "label": "Part-of-Speech Tagging"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "natural-language-understanding",
+      "label": "Natural Language Understanding"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "information-extraction",
+      "label": "Information Extraction"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "entity-resolution",
+      "label": "Entity Resolution"
+    },
+    {
+      "slug": "semantic-parsing",
+      "label": "Semantic Parsing"
+    },
+    {
+      "slug": "text-mining",
+      "label": "Text Mining"
+    },
+    {
+      "slug": "relation-extraction",
+      "label": "Relation Extraction"
+    },
+    {
+      "slug": "document-summarisation",
+      "label": "Document Summarisation"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "anaphora-resolution",
+      "label": "Anaphora Resolution"
+    },
+    {
+      "slug": "word-embeddings",
+      "label": "Word Embeddings"
+    },
+    {
+      "slug": "mention-detection",
+      "label": "Mention Detection"
+    },
+    {
+      "slug": "span-representation",
+      "label": "Span Representation"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "slot-filling",
+      "label": "Slot Filling"
+    },
+    {
+      "slug": "dependency-parsing",
+      "label": "Dependency Parsing"
+    },
+    {
+      "slug": "part-of-speech-tagging",
+      "label": "Part-of-Speech Tagging"
+    },
+    {
+      "slug": "entity-linking",
+      "label": "Entity Linking"
+    },
+    {
+      "slug": "knowledge-graph-construction",
+      "label": "Knowledge Graph Construction"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    }
+  ],
   "backlinks": [
     {
       "slug": "computational-linguistics",

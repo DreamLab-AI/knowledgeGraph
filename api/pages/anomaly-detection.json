@@ -353,6 +353,10 @@
       "label": "Conformal Prediction"
     },
     {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
     },

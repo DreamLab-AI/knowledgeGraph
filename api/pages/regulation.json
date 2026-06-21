@@ -172,6 +172,14 @@
       "label": "Cross Border Compliance"
     },
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "economics",
       "label": "Economics"
     },

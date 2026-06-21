@@ -69,6 +69,10 @@
       "label": "AutoGen"
     },
     {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
       "slug": "function-calling",
       "label": "Function Calling"
     },

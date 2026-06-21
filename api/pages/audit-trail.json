@@ -273,12 +273,24 @@
       "label": "Cross-Platform Compliance Hub"
     },
     {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
       "slug": "data-pipeline",
       "label": "Data Pipeline"
     },
     {
       "slug": "data-provenance",
       "label": "Data Provenance"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
     },
     {
       "slug": "governance-structure",

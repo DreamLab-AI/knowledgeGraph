@@ -105,6 +105,10 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "health-metaverse-application",
       "label": "Health Metaverse Application"
     }

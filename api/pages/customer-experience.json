@@ -13,13 +13,29 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:omnichannel-orchestration",
         "label": "Omnichannel Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:journey-mapping",
+        "label": "Journey Mapping"
+      },
+      {
+        "id": "urn:ngm:class:voice-of-customer",
+        "label": "Voice of Customer"
+      },
+      {
+        "id": "urn:ngm:class:service-design",
+        "label": "Service Design"
+      },
+      {
+        "id": "urn:ngm:class:service-blueprint",
+        "label": "Service Blueprint"
       }
     ],
     "requires": [
@@ -30,6 +46,18 @@
       {
         "id": "urn:ngm:class:unified-customer-profile",
         "label": "Unified Customer Profile"
+      },
+      {
+        "id": "urn:ngm:class:consent-management",
+        "label": "Consent Management"
+      },
+      {
+        "id": "urn:ngm:class:identity-resolution",
+        "label": "Identity Resolution"
+      },
+      {
+        "id": "urn:ngm:class:customer-data-platform",
+        "label": "Customer Data Platform"
       }
     ],
     "enables": [
@@ -48,6 +76,14 @@
       {
         "id": "urn:ngm:class:customer-retention",
         "label": "Customer Retention"
+      },
+      {
+        "id": "urn:ngm:class:customer-lifetime-value",
+        "label": "Customer Lifetime Value"
+      },
+      {
+        "id": "urn:ngm:class:next-best-action",
+        "label": "Next Best Action"
       }
     ],
     "dependsOn": [],
@@ -61,6 +97,10 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
       }
     ],
     "uses": [
@@ -83,6 +123,26 @@
       {
         "id": "urn:ngm:class:journey-mapping",
         "label": "Journey Mapping"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:voice-of-customer",
+        "label": "Voice of Customer"
+      },
+      {
+        "id": "urn:ngm:class:real-time-decisioning",
+        "label": "Real-Time Decisioning"
       }
     ],
     "supports": [],
@@ -104,14 +164,195 @@
       {
         "id": "urn:ngm:class:data-privacy",
         "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:customer-rewards",
+        "label": "Customer Rewards"
+      },
+      {
+        "id": "urn:ngm:class:crm",
+        "label": "CRM"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "behavioral-analytics",
+      "label": "Behavioral Analytics"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "predictive-personalization",
+      "label": "Predictive Personalization"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "Customer Service Automation"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "loyalty-programs",
+      "label": "Loyalty Programs"
+    },
+    {
+      "slug": "customer-retention",
+      "label": "Customer Retention"
+    },
+    {
+      "slug": "digital-twin-of-the-customer",
+      "label": "Digital Twin of the Customer"
+    },
+    {
+      "slug": "omnichannel",
+      "label": "Omnichannel"
+    },
+    {
+      "slug": "omnichannel-orchestration",
+      "label": "Omnichannel Orchestration"
+    },
+    {
+      "slug": "first-party-data",
+      "label": "First-Party Data"
+    },
+    {
+      "slug": "unified-customer-profile",
+      "label": "Unified Customer Profile"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
+      "slug": "service-design",
+      "label": "Service Design"
+    },
+    {
+      "slug": "data-privacy",
+      "label": "Data Privacy"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "crm",
+      "label": "CRM"
+    },
+    {
+      "slug": "customer-data-platform",
+      "label": "Customer Data Platform"
+    },
+    {
+      "slug": "journey-mapping",
+      "label": "Journey Mapping"
+    },
+    {
+      "slug": "voice-of-customer",
+      "label": "Voice of Customer"
+    },
+    {
+      "slug": "net-promoter-score",
+      "label": "Net Promoter Score"
+    },
+    {
+      "slug": "customer-effort-score",
+      "label": "Customer Effort Score"
+    },
+    {
+      "slug": "personalisation",
+      "label": "Personalisation"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "real-time-decisioning",
+      "label": "Real-Time Decisioning"
+    },
+    {
+      "slug": "next-best-action",
+      "label": "Next Best Action"
+    },
+    {
+      "slug": "customer-lifetime-value",
+      "label": "Customer Lifetime Value"
+    },
+    {
+      "slug": "e-commerce",
+      "label": "E-Commerce"
+    },
+    {
+      "slug": "identity-resolution",
+      "label": "Identity Resolution"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "service-blueprint",
+      "label": "Service Blueprint"
+    },
+    {
+      "slug": "personalised-learning",
+      "label": "Personalised Learning"
+    },
+    {
+      "slug": "customer-rewards",
+      "label": "Customer Rewards"
+    }
+  ],
   "backlinks": [
     {
       "slug": "call-centres",
       "label": "Call Centres"
+    },
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
     },
     {
       "slug": "digital-transformation",

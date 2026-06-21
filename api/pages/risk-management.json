@@ -260,12 +260,36 @@
       "label": "Corporate Governance"
     },
     {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
       "slug": "cyber-security-and-cryptography",
       "label": "Cyber Security and Cryptography"
     },
     {
       "slug": "cyber-security-and-cryptography",
       "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
     },
     {
       "slug": "digital-asset-management",

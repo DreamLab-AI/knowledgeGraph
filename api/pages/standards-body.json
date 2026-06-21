@@ -146,6 +146,10 @@
       "label": "Credential Format Standard"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "data-format-standard",
       "label": "Data Format Standard"
     },

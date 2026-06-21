@@ -1,6 +1,3 @@
-- ### Mathematical Framework
-  - Formally, a combinatorial optimisation problem is specified as a triple (S, f, C) where: S is the ground set of elements (e.g., edges, routes, assignments), f: 2^S → ℝ is the objective function mapping each candidate solution — a subset or arrangement of S — to a real-valued cost or value, and C ⊆ 2^S is the set of feasible solutions satisfying the problem constraints. The goal is to find x* ∈ C such that f(x*) ≤ f(x) for all x ∈ C (minimisation) or f(x*) ≥ f(x) for all x ∈ C (maximisation). The mathematical richness of the field arises from the combinatorial explosion of |C|: for a simple binary decision over n elements, |C| = 2^n (the power set), which for n = 100 exceeds 10^30 — more candidate solutions than atoms in the observable universe, making exhaustive enumeration impossible. For permutation-structured problems like [[Travelling Salesman Problem]], |C| = n! grows even faster: for n = 20 cities, 20! ≈ 2.4 × 10^18. The interplay between the combinatorial size of the feasible set and the structural properties of the objective function (submodularity, supermodularity, polymatroid structure, total unimodularity) determines which algorithmic approaches are tractable. Total unimodularity of the constraint matrix (as in [[Linear Programming]] formulations of bipartite matching and network flow) guarantees that LP relaxations have integer optimal solutions — making the corresponding combinatorial problems polynomially solvable despite their combinatorial feasible sets. The absence of such structure, as in [[Integer Programming]] formulations of [[Travelling Salesman Problem]] and [[Vehicle Routing Problem]], leads to the NP-hardness that motivates the field's algorithmic diversity.
-
 - ### Definition
   - Combinatorial optimisation is a subfield of [[Optimisation]] and [[Mathematical Optimisation]] concerned with finding a provably or practically best element from a finite but astronomically large set of discrete candidate solutions, where the solution space is defined over combinatorial structures such as graphs, permutations, subsets, and integer assignments rather than continuous domains. The discipline inherits its theoretical backbone from [[Graph Theory]], [[Algorithm]] design, and [[Computational Complexity]], with the central challenge posed by [[NP-Hardness]]: the most practically important problem classes — the [[Travelling Salesman Problem]], the [[Knapsack Problem]], the [[Vehicle Routing Problem]], [[Graph Colouring]], bin packing, and job-shop [[Scheduling]] — admit no known polynomial-time exact solver, yet must be solved routinely in industry and government. To bridge the gap between theoretical intractability and practical necessity, three complementary methodological families have evolved: exact methods that guarantee optimality at the cost of exponential worst-case time (such as [[Branch and Bound]], cutting-plane procedures, and [[Dynamic Programming]]); [[Approximation Algorithm]]s that run in polynomial time and deliver solutions within a provable factor of optimal (the Christofides algorithm for metric TSP achieves a 3/2-approximation, only recently improved by Karlin et al., 2021 to 3/2 + ε); and [[Metaheuristic]] frameworks that trade guarantee for empirical scalability, including [[Simulated Annealing]], [[Tabu Search]], [[Genetic Algorithm]]s, and [[Swarm Intelligence]] methods. Studied centrally within [[Operations Research]], combinatorial optimisation underpins global [[Logistics]], [[Supply Chain]] management, [[Network Design]], [[Planning and Scheduling]], and increasingly [[Machine Learning]] pipelines through [[Hyperparameter Optimisation]] and [[Neural Architecture Search]], while [[Reinforcement Learning]] and [[Graph Neural Network]] methods are reshaping how classical combinatorial solvers are augmented and replaced. The field interacts with, but is structurally distinct from, [[Convex Optimisation]], which benefits from smooth feasible regions where every local optimum is global.
 
@@ -112,8 +109,15 @@
       SubClassOf(ai:CombinatorialOptimisation
         ObjectSomeValuesFrom(ai:relatedTo ai:MultiObjectiveOptimisation))
       ```
-  - ## About
-    - Combinatorial optimisation sits at the intersection of [[Mathematical Optimisation]], [[Algorithm]] design, and [[Computational Complexity]] theory. Its central subject is the class of problems in which a best object must be selected from a set that is implicitly defined — often as exponentially large as 2^n or n! — over discrete mathematical structures such as graphs, sequences, binary vectors, and integer lattices. The defining characteristic differentiating combinatorial from [[Convex Optimisation]] is the absence of useful local structure: the neighbourhood of a solution gives no gradient pointing reliably towards global optimum, and the feasible set is typically non-convex and disconnected in any embedding into real space. A continuous optimisation problem such as minimising a smooth bowl-shaped function can be solved by following the gradient downhill until reaching the bottom; in a combinatorial problem the landscape may look like a jagged mountain range with no gradient to follow and millions of local valleys, each indistinguishable from the global minimum without exhaustive search. This structural gulf means that the powerful machinery of calculus-based [[Optimisation]] — gradient descent, Newton methods, interior-point algorithms — cannot be applied directly, and fundamentally different algorithmic paradigms are needed. The problem instances encountered in practice span an enormous range of scales and structures: a logistics company routing ten delivery vehicles through fifty locations deals with an instance small enough for exact methods to handle in seconds; the same company routing a thousand vehicles through ten thousand locations faces an instance where even identifying a feasible schedule, let alone an optimal one, requires expert modelling and hours of solver time.
+  ## Mathematical Framework
+
+  Formally, a combinatorial optimisation problem is specified as a triple (S, f, C) where: S is the ground set of elements (e.g., edges, routes, assignments), f: 2^S → ℝ is the objective function mapping each candidate solution — a subset or arrangement of S — to a real-valued cost or value, and C ⊆ 2^S is the set of feasible solutions satisfying the problem constraints. The goal is to find x* ∈ C such that f(x*) ≤ f(x) for all x ∈ C (minimisation) or f(x*) ≥ f(x) for all x ∈ C (maximisation). The mathematical richness of the field arises from the combinatorial explosion of |C|: for a simple binary decision over n elements, |C| = 2^n (the power set), which for n = 100 exceeds 10^30 — more candidate solutions than atoms in the observable universe, making exhaustive enumeration impossible. For permutation-structured problems like [[Travelling Salesman Problem]], |C| = n! grows even faster: for n = 20 cities, 20! ≈ 2.4 × 10^18. The interplay between the combinatorial size of the feasible set and the structural properties of the objective function (submodularity, supermodularity, polymatroid structure, total unimodularity) determines which algorithmic approaches are tractable. Total unimodularity of the constraint matrix (as in [[Linear Programming]] formulations of bipartite matching and network flow) guarantees that LP relaxations have integer optimal solutions — making the corresponding combinatorial problems polynomially solvable despite their combinatorial feasible sets. The absence of such structure, as in [[Integer Programming]] formulations of [[Travelling Salesman Problem]] and [[Vehicle Routing Problem]], leads to the NP-hardness that motivates the field's algorithmic diversity.
+
+  Key structural properties that determine tractability include: **submodularity** — where the objective function exhibits diminishing returns (f(A ∪ {e}) − f(A) ≥ f(B ∪ {e}) − f(B) whenever A ⊆ B), enabling greedy algorithms to achieve (1 − 1/e)-approximation guarantees (Nemhauser et al., 1978); **polymatroid structure** — where feasible sets form a matroid and greedy algorithms return exact optima; **total unimodularity** — a combinatorial property of constraint matrices guaranteeing that every vertex of the LP feasible polytope is integral; and **supermodularity** — arising in coverage, influence maximisation, and certain welfare maximisation problems, enabling complementary algorithmic approaches. The problem of maximising a submodular function subject to cardinality constraints — the "feature selection" structure — admits the celebrated (1 − 1/e) ≈ 0.632 approximation ratio that is known to be tight under P ≠ NP, making it one of the most elegant results in approximation theory. Understanding which structural property a problem instance possesses — or whether it can be reformulated to possess one — is the central modelling challenge of combinatorial optimisation practice.
+
+  ## About
+
+  Combinatorial optimisation sits at the intersection of [[Mathematical Optimisation]], [[Algorithm]] design, and [[Computational Complexity]] theory. Its central subject is the class of problems in which a best object must be selected from a set that is implicitly defined — often as exponentially large as 2^n or n! — over discrete mathematical structures such as graphs, sequences, binary vectors, and integer lattices. The defining characteristic differentiating combinatorial from [[Convex Optimisation]] is the absence of useful local structure: the neighbourhood of a solution gives no gradient pointing reliably towards global optimum, and the feasible set is typically non-convex and disconnected in any embedding into real space. A continuous optimisation problem such as minimising a smooth bowl-shaped function can be solved by following the gradient downhill until reaching the bottom; in a combinatorial problem the landscape may look like a jagged mountain range with no gradient to follow and millions of local valleys, each indistinguishable from the global minimum without exhaustive search. This structural gulf means that the powerful machinery of calculus-based [[Optimisation]] — gradient descent, Newton methods, interior-point algorithms — cannot be applied directly, and fundamentally different algorithmic paradigms are needed. The problem instances encountered in practice span an enormous range of scales and structures: a logistics company routing ten delivery vehicles through fifty locations deals with an instance small enough for exact methods to handle in seconds; the same company routing a thousand vehicles through ten thousand locations faces an instance where even identifying a feasible schedule, let alone an optimal one, requires expert modelling and hours of solver time.
     - The formal study of these problems was catalysed by the NP-completeness theory of Cook (1971) and Karp (1972), who established that dozens of practically vital problems — including satisfiability, [[Graph Colouring]], the [[Knapsack Problem]], the [[Travelling Salesman Problem]], and job-shop [[Scheduling]] — share the property that any polynomial-time algorithm for one would imply polynomial-time algorithms for all (P = NP). Since this equivalence is widely believed to be false, the field has developed along three productive lines. First, exact solvers — [[Branch and Bound]], branch-and-cut, cutting-plane algorithms, and [[Dynamic Programming]] — that guarantee optimality but face worst-case exponential running time. Modern commercial solvers such as Gurobi and CPLEX, and open-source tools such as Google OR-Tools CP-SAT, achieve remarkable practical performance on structured instances by combining LP relaxation tightening with sophisticated branching heuristics. These solvers embed decades of mathematical research: Gomory cutting planes (1958), Dantzig–Fulkerson–Johnson TSP cutting planes (1954), Benders decomposition, Lagrangian relaxation, and more recently machine-learning-guided variable selection. The empirical success of these tools means that in many application domains — airline crew scheduling, chip design, electricity market clearing — exact MIP solvers regularly find provably optimal solutions for instances that would have been unsolvable a decade ago. Second, [[Approximation Algorithm]]s provide polynomial-time procedures with provable worst-case quality guarantees: the Christofides (1976) 3/2-approximation for metric [[Travelling Salesman Problem]] held as the best known for 45 years before being improved by Karlin, Klein, and Gharan (2021, STOC) to 3/2 − ε for an unspecified but positive ε. PTAS (polynomial-time approximation scheme) and FPTAS results exist for many knapsack variants and bin-packing sub-problems. Third, [[Metaheuristic]] and population-based methods — including [[Simulated Annealing]], [[Tabu Search]], [[Genetic Algorithm]]s, and [[Swarm Intelligence]] — sacrifice guarantees for empirical scalability to very large instances. These are the workhorses of industrial combinatorial optimisation: major logistics and manufacturing firms run proprietary tabu search and evolutionary algorithm implementations on instances with hundreds of thousands of variables where exact methods are computationally infeasible.
     - Since roughly 2019 a fourth strand has emerged: machine learning–augmented solvers that blur the boundary between [[Machine Learning]] and classical combinatorial optimisation. [[Reinforcement Learning]] methods trained on distributions of problem instances learn policies for branching decisions, variable ordering, and neighbourhood selection within exact and heuristic solvers; [[Graph Neural Network]]s represent problem structure as graphs and predict solution quality, feasibility, or partial assignments; and end-to-end learned heuristics — based on Pointer Networks (Vinyals et al., 2015), the Attention Model (Kool et al., 2019), and subsequent architectures — can construct near-optimal tours for [[Travelling Salesman Problem]] instances without any classical algorithmic component. At NeurIPS 2024, the EURO–NeurIPS Vehicle Routing Challenge was won by a combinatorial-optimisation-enriched machine learning approach (Baty et al., 2024), demonstrating that neural methods can achieve state-of-the-art performance when carefully integrated with classical constraints. However, the FrontierCO benchmark (2025), the first large-scale evaluation of ML solvers on real-world problem instances rather than synthetic benchmarks, showed that for large, heterogeneous industrial instances of [[Vehicle Routing Problem]] and scheduling, well-tuned Gurobi and OR-Tools configurations still outperform learned solvers, highlighting that generalisation across instance distributions remains a central challenge for the field. A fifth, still nascent, strand involves quantum-inspired and hybrid quantum-classical approaches: problems reformulated as Quadratic Unconstrained Binary Optimisation (QUBO) instances have been submitted to D-Wave quantum annealers and QAOA circuits on IBM and Google hardware; as of early 2026, these approaches are competitive with classical heuristics only for problem sizes of tens to a few hundred binary variables, and the fundamental question of whether quantum hardware will provide practical combinatorial optimisation advantage remains open. Large language models have also entered the picture, with preliminary work (arXiv, 2025) showing that LLMs can generate problem-specific heuristic code and assist in problem formulation, though they are not yet competitive solvers for hard NP instances in the way that specialised exact or heuristic software is.
   - ## Components / Architecture
@@ -175,6 +179,208 @@
     - [[Bayesian Optimisation]] provides a bridge between probabilistic [[Machine Learning]] and combinatorial optimisation: it models the objective function as a Gaussian process surrogate and selects the next point to evaluate using an acquisition function that trades off exploitation (evaluating near the current best) and exploration (evaluating in uncertain regions). For [[Hyperparameter Optimisation]], Bayesian optimisation over mixed-integer search spaces (using appropriate kernels for discrete variables) has become the dominant approach for expensive black-box objectives such as neural network training, where each evaluation may take hours. The Optuna, Ray Tune, and SMAC frameworks implement Bayesian optimisation over mixed-integer hyperparameter spaces.
     - [[Multi Objective Optimisation]] extends single-objective combinatorial optimisation to settings with multiple competing objectives — for example, minimising both cost and carbon emissions in vehicle routing, or maximising both throughput and fairness in resource allocation. The Pareto front (the set of solutions not dominated by any other feasible solution on all objectives simultaneously) is the solution concept, and algorithms such as NSGA-II ([[Genetic Algorithm]]-based multi-objective evolutionary algorithm), MOEA/D (decomposition-based multi-objective evolutionary algorithm), and scalarised MIP approaches (weighted sum, epsilon-constraint) are used to approximate or exactly compute the Pareto front.
 
+  ## Problem Taxonomy and Complexity Classes
+
+  Combinatorial optimisation problems can be systematically classified along four dimensions: their feasibility structure (what makes a solution feasible), their objective structure (what is being optimised), their complexity class (how hard the problem is in the worst case), and their instance structure (what properties typical instances have that enable efficient solution in practice).
+
+  **By feasibility structure:**
+  - **Subset problems**: the solution is a subset S* ⊆ E of a ground set E. Examples: [[Knapsack Problem]] (select subset of items satisfying weight constraint); Set Cover (select minimum-cost subset of sets covering all elements); maximum independent set (largest subset of graph vertices with no two adjacent). Most interesting subset problems are NP-hard.
+  - **Permutation problems**: the solution is a permutation π* of a set of objects. Examples: [[Travelling Salesman Problem]] (permutation of cities minimising total tour distance); sequencing (permutation of jobs on a machine minimising weighted completion time); linear arrangement. Permutation problems have n! candidate solutions, making exact enumeration intractable even for n = 20.
+  - **Graph problems**: the solution is a subgraph (set of vertices and/or edges) satisfying a structural property. Examples: [[Graph Colouring]] (assign colours to vertices so adjacent vertices differ); minimum spanning tree (polynomially solvable by Kruskal/Prim); Steiner tree (NP-hard); maximum clique (NP-hard); vertex cover.
+  - **Integer assignment problems**: the solution assigns integer values x_i ∈ Z to decision variables. Examples: [[Integer Programming]] problems in general; bin packing; cutting stock; crew scheduling. These are the most general formulation and subsume all other types.
+  - **Routing and flow problems**: the solution specifies flows, paths, or routes in a network. Network flow and bipartite matching are polynomially solvable; [[Vehicle Routing Problem]] with capacity constraints is NP-hard; the Steiner forest problem is NP-hard. The distinction between solvable routing problems (flow, matching) and NP-hard ones (VRP, Steiner) is determined by the presence or absence of capacity or coupling constraints.
+
+  **By complexity class:**
+  - **P (polynomial time)**: minimum spanning tree (Kruskal/Prim, O(E log V)); bipartite matching (Hungarian algorithm, O(V³)); network flow (Edmonds-Karp, O(VE²)); shortest path without negative cycles (Dijkstra); linear programming (polynomial via ellipsoid and interior-point methods). These problems have known efficient exact algorithms and do not require heuristics.
+  - **NP-complete** (decision versions): satisfiability (SAT); graph 3-colouring; Hamiltonian cycle; partition problem; bin packing decision; TSP decision. Whether P = NP remains the central open question; if P = NP, all these admit polynomial algorithms.
+  - **NP-hard** (optimisation versions): [[Travelling Salesman Problem]] (minimise tour length); [[Vehicle Routing Problem]]; [[Knapsack Problem]] (maximise value); maximum independent set; [[Graph Colouring]] (minimise colours). NP-hard optimisation problems do not have known polynomial exact algorithms, motivating exact methods with exponential worst-case time, [[Approximation Algorithm]]s, and [[Metaheuristic]]s.
+  - **APX-hard**: problems not in PTAS (no polynomial-time approximation scheme) unless P = NP. Maximum independent set in degree-bounded graphs; shortest superstring; max-3-SAT. For these, even a constant-factor approximation is the best achievable in polynomial time unless P = NP.
+  - **#P-hard** (counting problems): counting the number of satisfying assignments of a Boolean formula; counting perfect matchings in a general graph (Valiant, 1979). These are harder than NP-hard optimisation problems in a precise formal sense.
+
+  **By instance structure (where exact methods succeed in practice):**
+  - **Highly structured instances** (total unimodularity, network structure, tree structure): LP relaxation has integer optimal solutions; exact polynomial algorithms exist.
+  - **Instances with tight LP relaxations** (small integrality gap): [[Branch and Bound]] terminates quickly because the LP bound is very close to the integer optimum; few branch-and-cut nodes are needed. Modern MIP solvers excel on these instances.
+  - **Random instances** (no structure): typically harder than structured instances; exact solvers may be slower, but [[Metaheuristic]]s are often competitive.
+  - **Real-world instances** (heterogeneous structure, multiple constraints): often easier than worst-case theory suggests because domain structure aids pruning; the FrontierCO benchmark (Huang et al., 2025) showed that Gurobi and OR-Tools significantly outperform neural solvers on real-world VRP and scheduling instances.
+
+  ## Solver Selection Guide
+
+  Practitioners selecting a solver for a combinatorial optimisation problem face a complex technology landscape. The following decision framework (derived from the operations research literature and practitioner experience) provides a structured guide:
+
+  **Step 1: Problem classification**
+  - Is the problem a standard problem class (TSP, VRP, scheduling, knapsack, assignment)? If so, use a dedicated solver or modelling framework for that class (OR-Tools Routing for VRP, CP-SAT for scheduling).
+  - Is it a custom problem? Model it as a [[Constraint Satisfaction]] problem (CP) or [[Integer Programming]] (MIP) depending on constraint structure.
+  - Is the feasible set structured (network flow, matching)? Use polynomial algorithms (scipy.optimize.linear_sum_assignment for assignment; networkx for network flow).
+
+  **Step 2: Scale assessment**
+  - Small instances (< 1,000 binary variables, < 1,000 constraints): commercial MIP solver (Gurobi, CPLEX) or academic solver (HiGHS, SCIP) will typically solve to optimality within seconds. Use exact methods.
+  - Medium instances (1,000–100,000 variables): MIP solvers are effective with good modelling; CP-SAT competitive for scheduling/configuration; [[Metaheuristic]]s useful when time budget is limited.
+  - Large instances (> 100,000 variables): [[Metaheuristic]]s or neural solvers typically required; MIP solver with time limit and warm-start from heuristic solution; Lagrangian relaxation or [[Approximate Algorithm]]s.
+
+  **Step 3: Time budget**
+  - Real-time (< 1 second): learned policy (RL-trained for specific distribution); fast [[Local Search]] neighbourhood exploration; precomputed lookup for small instances.
+  - Near-real-time (1–60 seconds): fast [[Metaheuristic]] (greedy construction + [[Simulated Annealing]] or [[Tabu Search]]); OR-Tools CP-SAT with time limit.
+  - Offline (minutes to hours): commercial MIP solver; branch-and-cut with problem-specific cuts; population-based [[Genetic Algorithm]]; column generation for structured problems.
+
+  **Step 4: Solution quality requirement**
+  - Provably optimal (with certificate): [[Branch and Bound]] with MIP solver; column generation; [[Dynamic Programming]] for small instances.
+  - Bounded suboptimality (with approximation guarantee): [[Approximation Algorithm]] with known ratio; LP relaxation bound for certificate of distance from optimal.
+  - Best-effort empirical quality (no guarantee): [[Metaheuristic]] with restart; neural heuristic; ensemble of multiple solver approaches.
+
+  **Step 5: Open-source vs commercial**
+  - Free for research and small commercial use: HiGHS (LP/MIP), SCIP (MIP), Google OR-Tools (routing, scheduling, CP-SAT), CBC (LP/MIP), Cbc, Clp.
+  - Commercial licences (academic licences often free): Gurobi (industry-leading MIP performance, free academic licence), CPLEX (IBM, free for academia), MOSEK (conic programming).
+  - Python ecosystem: `scipy.optimize` (LP/NLP, uses HiGHS for LP), `PuLP` (LP/MIP modelling, multiple solvers), `Pyomo` (modelling language), `gurobipy` (Gurobi Python API), `ortools` (Google OR-Tools Python).
+
+  ## Classic Benchmark Problem Instances
+
+  The combinatorial optimisation community maintains a set of canonical benchmark problem instances and libraries that serve as standardised evaluation platforms across solver generations. These benchmarks are essential for tracking progress and comparing competing approaches:
+
+  **Travelling Salesman Problem benchmarks:**
+  - TSPLIB (Reinelt, 1991): the oldest and most widely used TSP benchmark library, containing real-world and random instances ranging from 14 to 85,900 cities. The TSP benchmark records include: optimal tour for eil51 (51 cities, optimal = 426); optimal tour for berlin52 (52 cities, optimal = 7,542); optimal tour for d15112 (15,112 cities, Germany; solved by Concorde in 2001); optimal tour for pla85900 (85,900 cities; solved by Applegate, Bixby, Chvátal, Cook in 2006 using Concorde solver with 136 CPU-years). The Concorde solver (Applegate et al., 2006) remains the gold standard exact TSP solver.
+  - Large-scale neural TSP benchmarks: random uniform instances with 100, 500, 1,000, 10,000 cities are standard in the neural combinatorial optimisation literature; optimal or near-optimal solutions for up to 1,000 cities are obtainable by Concorde.
+
+  **Vehicle Routing Problem benchmarks:**
+  - Solomon benchmark (Solomon, 1987): 56 instances with 100 customers, time windows, and a single depot; still widely used as a standard evaluation set for VRPTW algorithms.
+  - Gehring-Homberger benchmark (Gehring & Homberger, 1999): larger instances with 200–1,000 customers; the standard large-scale VRPTW benchmark.
+  - EURO-NeurIPS 2024 Vehicle Routing Challenge: dynamic VRP with time windows; won by Baty et al. (2024) with a hybrid neural-classical approach.
+
+  **Scheduling benchmarks:**
+  - OR-Library scheduling instances (Beasley, 1990): classic job-shop, flow-shop, and open-shop scheduling instances with up to 100 jobs and 10 machines; many instances remain open (best known solution not proven optimal).
+  - JSP (job-shop scheduling problem) benchmark set: the "ft10" instance (10 machines, 10 jobs) was open for 26 years before being optimally solved by Carlier and Pinson (1989); "ft20" remains a challenge.
+
+  **Mixed Integer Programming benchmarks:**
+  - MIPLIB (Koch et al., 2011–2021): the standard MIP benchmark library, maintained collaboratively by the mathematical programming community. MIPLIB 2017 contains 1,065 instances across hundreds of problem types; instances range from trivially easy to computationally intractable. Gurobi, CPLEX, SCIP, and HiGHS publish regular performance comparisons on MIPLIB.
+  - Mittelmann benchmarks (Hans Mittelmann, Arizona State): independent, regularly updated LP and MIP solver benchmarks widely used for comparing commercial and open-source solvers.
+
+  **Quantum and QUBO benchmarks:**
+  - MAX-CUT Gset benchmark (Goemans & Williamson, 1995): 54 graph instances for the maximum cut problem, the prototypical QUBO problem; best-known solutions serve as comparison points for quantum annealers and classical QUBO solvers.
+  - D-Wave performance comparisons: NPJ Quantum Information benchmark (Kittichaikoonkij et al., 2025) compares D-Wave quantum annealing against Gurobi and Fixstars classical solvers on QUBO instances of sizes 111–663; Fixstars demonstrates highest accuracy while D-Wave provides lower execution time on hardware-embeddable instances.
+
+  ## Computational Tools and Software Ecosystem
+
+  The combinatorial optimisation software ecosystem in 2026 is mature and diverse, spanning commercial solvers, open-source tools, modelling languages, and Python libraries:
+
+  **Commercial MIP solvers:**
+  - Gurobi Optimizer v11 (2024): consistently top-ranked commercial MIP solver; incorporates ML-guided branching, MILP, MIQP, MIQCP, MINLP capabilities; free academic licence; Python API (gurobipy) and cloud API. Benchmarks show Gurobi is typically 2–10x faster than open-source alternatives on medium-to-large structured instances.
+  - IBM CPLEX 22.1: mature commercial solver with comprehensive LP, QP, and MIP capabilities; strong in constraint programming via IBM CP Optimizer; free academic programme. IBM's Concert Technology C++ API and Python DOcplex are primary interfaces.
+  - COPT (Cardinal Optimizer, 2020): newer commercial solver from Cardinal Operations, strong LP performance; outperforms Gurobi on LP benchmarks according to Mittelmann comparisons.
+
+  **Open-source MIP and LP solvers:**
+  - HiGHS (University of Edinburgh, Julian Hall et al.): default LP/MIP solver in SciPy (Python), JuMP (Julia), and numerous frameworks. Competitive with older commercial solvers on LP; weaker on large MIP. Key contribution: world-class LP simplex and interior-point implementations freely available.
+  - SCIP 9 (Zuse Institute Berlin): leading academic non-commercial MIP solver; implements branch-and-cut-and-price; handles non-linear constraints; used widely in academic research for its transparency and extensibility.
+  - CBC (COIN-OR Branch and Cut): mature open-source MIP solver; default backend for PuLP and other modelling tools.
+  - Clp (COIN-OR LP): companion LP solver to CBC.
+
+  **Constraint programming and routing:**
+  - Google OR-Tools (Perron & Furnon, 2023): CP-SAT for constraint optimisation; Routing Library for VRP variants; provides Python, C++, Java, C# APIs; competitive with or superior to commercial MIP on many scheduling instances; open-source (Apache 2.0).
+  - Choco Solver (IMT Atlantique): Java CP solver; strong on CSP and scheduling problems.
+  - MiniZinc/Gecode: modelling language (MiniZinc) + CP solver (Gecode); widely used in constraint programming education and research.
+
+  **Python modelling frameworks:**
+  - PuLP (Python LP/MIP modelling): simple API for LP and MIP; calls CBC, Gurobi, CPLEX as back-end solvers. Best for teaching and small problems.
+  - Pyomo (Python Optimisation Modelling Objects): powerful modelling framework supporting LP, MIP, NLP, stochastic programming; calls multiple solvers via NEOS or local installation.
+  - CVXPY: convex optimisation modelling framework; handles LP, SOCP, SDP; calls MOSEK, ECOS, SCS as solvers. Bridges [[Convex Optimisation]] and combinatorial relaxations.
+  - ortools.sat.python.cp_model: OR-Tools CP-SAT Python API; expressive constraint modelling for scheduling, rostering, VRP variants.
+
+  **Neural combinatorial optimisation frameworks:**
+  - PyTorch Geometric (PyG): [[Graph Neural Network]] framework widely used for neural solver implementation.
+  - RL4CO (Reinforcement Learning for Combinatorial Optimisation): emerging framework standardising neural CO implementations.
+  - Attention model (Kool et al., 2019) reference implementation: widely forked baseline for [[Vehicle Routing Problem]] neural solvers.
+
+  ## Connections to Broader AI Research
+
+  Combinatorial optimisation intersects several active AI research frontiers beyond the [[Machine Learning]] / [[Graph Neural Network]] intersection described above:
+
+  **Automated reasoning and constraint propagation**: [[Constraint Satisfaction]] solvers use arc consistency, path consistency, and domain filtering techniques from automated reasoning to prune the search space before backtracking search. The integration of satisfiability modulo theories (SMT) solvers with combinatorial optimisation — as in MaxSMT and optimisation modulo theories (OMT) — enables solving combinatorial problems with rich logical structure including arithmetic, bitvectors, and uninterpreted functions. These approaches are used in formal verification, hardware design, and automated planning.
+
+  **Automated planning**: classical AI planning (STRIPS, PDDL) is a form of combinatorial optimisation over plan space; the cost-optimal planning problem is PSPACE-complete in general. Modern planners (Fast Downward, Lama) use A*-based search with admissible heuristics derived from problem relaxations, connecting directly to [[Heuristic Search]] methodology. The International Planning Competition (IPC) tracks state-of-the-art planning performance; optimal planning benchmarks include all classical combinatorial challenge problems represented as planning instances.
+
+  **Stochastic and robust optimisation**: when problem parameters are uncertain — as is common in supply chain, scheduling, and network design applications — deterministic combinatorial models must be extended to stochastic programming (two-stage and multi-stage models with recourse) or robust optimisation (min-max or regret-based models over uncertainty sets). Two-stage stochastic integer programmes, where first-stage decisions are made before uncertainty is revealed and second-stage recourse is available, are among the most challenging problem classes in the field, requiring scenario-based decomposition (Benders, L-shaped method) or sample-average approximation.
+
+  **Game-theoretic formulations**: many real-world combinatorial problems involve multiple agents with potentially conflicting objectives — toll-setting in road networks, pricing in energy markets, spectrum auction design, combinatorial procurement auctions. These are modelled as combinatorial mechanism design or algorithmic game theory problems, requiring the computation of Nash equilibria, the design of incentive-compatible auction mechanisms, or the analysis of price-of-anarchy bounds that quantify the social cost of strategic behaviour relative to coordinated optimisation.
+
+  ## Approximability Landscape
+
+  The approximability landscape of NP-hard combinatorial problems — the question of which approximation ratios are achievable in polynomial time — has been largely mapped by the PCP theorem and its applications, providing a rigorous theoretical framework for understanding which problems are tractable to approximate and which are hard even to approximate:
+
+  **FPTAS problems** (arbitrary precision in polynomial time):
+  - [[Knapsack Problem]] (standard binary variant): FPTAS with O(n/ε²) time, achieving (1−ε)-optimality for any ε > 0 by scaling and rounding profits.
+  - Makespan minimisation on identical parallel machines (preemptive): FPTAS.
+  - Subset sum: FPTAS via scaling.
+
+  **PTAS problems** (constant-factor precision, fixed ε):
+  - [[Travelling Salesman Problem]] in Euclidean space: Arora (1998) PTAS, O(n(log n)^O(1/ε)) time; Mitchell (1999) independent PTAS. These results apply only to geometric Euclidean instances, not general metric TSP.
+  - Many geometric and planar graph problems: Baker's PTAS framework for planar graphs (1994) gives PTAS for independent set, vertex cover, dominating set on planar graphs.
+  - Maximum knapsack with multiple dimensions: PTAS for constant dimension.
+
+  **Constant-factor approximation problems** (provably cannot do better in polynomial time under PCP):
+  - Metric [[Travelling Salesman Problem]]: Christofides (1976) 3/2-approximation; Karlin-Klein-Gharan (2021) 3/2−ε. Inapproximability: no polynomial approximation ratio < 1 + ε for general (non-metric) TSP unless P = NP.
+  - Vertex Cover: best known is 2-approximation (trivially by LP rounding); known to be APX-hard; assuming the Unique Games Conjecture (Khot, 2002), even 2−ε is hard for any ε > 0.
+  - Set Cover: O(log n)-approximation by greedy; inapproximable to within (1−ε) log n under P ≠ NP (Feige, 1998).
+  - Maximum independent set: O(n^(1−ε))-hard to approximate for any ε > 0 (Hastad, 1996); polynomial algorithms achieve only O(n/log n) approximation.
+  - [[Graph Colouring]]: χ(G)-colouring (minimum colours) has no polynomial O(n^(1−ε))-approximation for any ε > 0 unless ZPP = NP; Wigderson's greedy achieves O(sqrt(n)) colours.
+
+  **Problems with no poly-time approximation** (unless P = NP):
+  - Exact cover (no relaxation possible by NP-hardness of feasibility).
+  - Longest path problem: cannot even determine if a path of length k exists in polynomial time for arbitrary k.
+
+  ## Polyhedral Combinatorics
+
+  The polyhedral approach to combinatorial optimisation — studying the facial structure of integer feasible sets viewed as polytopes in continuous space — is among the most powerful theoretical tools in the field, providing both algorithmic insights (tight LP relaxations) and structural understanding (which problems are "easy" vs "hard" at the level of linear programming geometry):
+
+  The **integer hull** of a combinatorial problem is the convex hull of all feasible integer solutions: conv({x ∈ {0,1}^n | x feasible}). If we could formulate the integer hull with a compact set of inequalities, LP optimisation over it would solve the integer problem exactly in polynomial time. The fundamental challenge is that integer hulls typically require exponentially many facet-defining inequalities to describe compactly, making such complete descriptions impractical for NP-hard problems. However, partial descriptions — particularly tight families of valid inequalities — dramatically improve LP relaxation bounds and accelerate [[Branch and Bound]].
+
+  Key polyhedral results by problem:
+  - **Perfect matching polytope** (Edmonds, 1965): the convex hull of perfect matchings in a graph is described by a polynomial-size system (degree constraints + odd-set constraints), proving bipartite matching and general matching are polynomially solvable as LP problems and enabling the polynomial Blossom algorithm.
+  - **Spanning tree polytope** (Edmonds, 1970): described by a compact LP with exponential-size constraints that can be separated in polynomial time via max-flow; enables polynomial exact algorithms for minimum spanning tree and its relatives.
+  - **Travelling Salesman polytope**: exponentially many facets (subtour-elimination, comb inequalities, clique tree inequalities, ...); no compact LP description unless P = NP. The ongoing TSP polytope project (Applegate et al.; Naddef and Rinaldi) catalogues known facet families used in the Concorde solver.
+  - **Matroid polytope** (Edmonds, 1970): uniform integer hull description via rank function inequalities; underpins the greedy algorithm's optimality for matroid optimisation.
+
+  Understanding the polytope structure of a problem directly informs the choice of cutting-plane families in [[Branch and Bound]] implementations and the design of valid inequalities for MIP formulations.
+
+  The practical consequence of polyhedral theory for MIP solver performance is direct and substantial. Modern solvers (Gurobi, CPLEX, SCIP) automatically detect problem structure at solve time and select appropriate cut families: Gomory cuts for general MIP, clique cuts for covering problems, flow cover cuts for network flow problems, and problem-specific cuts (subtour-elimination for routing sub-problems detected in the formulation). This automated cut selection — developed over decades of theoretical and computational research — is a large part of why modern MIP solvers can solve instances that were intractable a decade ago. The improvement rate of MIP solver performance has historically exceeded hardware improvement: while hardware speed has increased approximately 2x every 18 months (Moore's Law, now slowing), MIP solver algorithmic improvements contributed an additional 10,000x improvement in effective solve rate between 1990 and 2010 (Bixby, 2012), and have continued at a high rate since. This algorithmic progress, rooted in polyhedral combinatorics, is the primary driver of expanded practical applicability across logistics, manufacturing, energy, and finance domains.
+
+  ## Teaching and Training Resources
+
+  The UK and international combinatorial optimisation educational infrastructure is well-developed and internationally regarded:
+
+  **UK NATCOR (National Taught Course Centre for Operational Research)**:
+  - Residential courses at rotating host universities (Southampton, Warwick, Lancaster, Edinburgh, Leeds, Nottingham)
+  - Courses on: heuristic and metaheuristic methods; integer programming and combinatorial optimisation; stochastic optimisation; supply chain and logistics; scheduling
+  - Attended by hundreds of UK doctoral students annually; internationally regarded as a model for national postgraduate training coordination
+  - All course materials available to registered PhD students; some made publicly available
+  - Course schedule: spring, summer, and autumn residential blocks
+
+  **University courses:**
+  - Oxford Department of Computer Science: Combinatorial Optimisation (BT8/MT9), graduate course covering exact algorithms, polyhedral theory, and approximation
+  - UCL: Combinatorial Optimisation module in the MSc Operations Research
+  - Warwick Business School: Integer Programming and Combinatorial Optimisation (WBS module)
+  - University of Edinburgh: Optimisation and Operational Research MSc programme
+
+  **Online resources and MOOCs:**
+  - Google OR-Tools documentation and examples: comprehensive tutorials on routing, scheduling, and constraint programming; widely used for self-study
+  - Coursera: Discrete Optimisation (University of Melbourne, Pascal Van Hentenryck): one of the most-enrolled optimisation MOOCs; covers LP, IP, CP, [[Local Search]], and metaheuristics
+  - OR-Library (Beasley): benchmark instance library freely available online with problem descriptions and best-known solution tables
+
+  **Key textbooks:**
+  - Nemhauser & Wolsey (1988), *Integer and Combinatorial Optimization*: the classical graduate text; comprehensive coverage of polyhedral combinatorics, [[Branch and Bound]], and cutting-plane theory
+  - Papadimitriou & Steiglitz (1982), *Combinatorial Optimization: Algorithms and Complexity*: foundational treatment of complexity and algorithms
+  - Traub & Vygen (2022), *Approximation Algorithms for Traveling Salesman Problems*: definitive modern treatment of TSP approximation theory, incorporating the Karlin-Klein-Gharan breakthrough
+  - Schrijver (2003), *Combinatorial Optimization: Polyhedra and Efficiency* (3 volumes): encyclopaedic treatment of polyhedral combinatorics; the definitive reference for theoretical researchers
+
+  **Journals and conferences:**
+  - Mathematical Programming (MPS journal): premier venue for exact and approximation algorithms
+  - INFORMS Journal on Computing: algorithms and computational results
+  - European Journal of Operational Research (EJOR): applications and methodology
+  - Journal of the Operational Research Society (JORS): UK flagship OR journal, published since 1950
+  - STOC, FOCS, SODA: theoretical complexity and algorithms
+  - IPCO (Integer Programming and Combinatorial Optimization conference): dedicated biennial venue
+  - NeurIPS, ICLR ML4CO workshops: neural combinatorial optimisation
+  - EURO (European Conference on Operational Research): largest OR conference in Europe; EURO-NeurIPS VRC Challenge 2024 drew over 100 competing teams
+  - INFORMS Annual Meeting: primary North American OR conference; co-organises several combinatorial optimisation tracks
+  - Combinatorial Optimization conference series (CO2024, Southampton): focused European academic venue with 22nd edition in 2024
+
   - ## Research & Literature
     - 1. Cook, S. A. (1971). The complexity of theorem-proving procedures. *STOC 1971*, pp. 151–158. https://doi.org/10.1145/800157.805047
     - 2. Karp, R. M. (1972). Reducibility among combinatorial problems. In Miller & Thatcher (Eds.), *Complexity of Computer Computations*, Plenum Press, pp. 85–103.
@@ -206,6 +412,6 @@
     - 28. Universität Southampton (2024). Proceedings of CO2024: 22nd Combinatorial Optimisation Conference. https://generic.wordpress.soton.ac.uk/co2024/
 
 - ### Provenance
-  - sources:: https://developers.google.com/optimization, https://www.gurobi.com, https://generic.wordpress.soton.ac.uk/co2024/, https://arxiv.org/abs/2505.16952, https://arxiv.org/abs/2601.10583, https://doi.org/10.1145/3406325.3451009, https://www.natcor.ac.uk/courses/, https://www.cs.ox.ac.uk/teaching/courses/2024-2025/co/
+  - sources:: https://developers.google.com/optimization; https://www.gurobi.com; https://generic.wordpress.soton.ac.uk/co2024/; https://arxiv.org/abs/2505.16952; https://arxiv.org/abs/2601.10583; https://doi.org/10.1145/3406325.3451009; https://www.natcor.ac.uk/courses/; https://www.cs.ox.ac.uk/teaching/courses/2024-2025/co/; https://ieeexplore.ieee.org/document/11100821/; https://www.nature.com/articles/s41534-025-01020-1; https://arxiv.org/pdf/2602.20730; https://arxiv.org/pdf/2410.09693; https://arxiv.org/pdf/2412.10163; https://highs.dev/; https://github.com/Thinklab-SJTU/awesome-ml4co
   - migration-date:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

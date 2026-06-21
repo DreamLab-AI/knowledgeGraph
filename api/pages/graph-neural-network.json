@@ -379,6 +379,10 @@
       "label": "Content Discovery"
     },
     {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
       "slug": "drug-discovery-ai",
       "label": "Drug Discovery AI"
     },

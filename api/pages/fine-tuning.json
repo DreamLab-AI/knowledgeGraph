@@ -310,6 +310,22 @@
       "label": "controlnet"
     },
     {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
+      "slug": "dvc",
+      "label": "DVC"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

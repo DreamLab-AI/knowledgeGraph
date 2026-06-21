@@ -140,6 +140,14 @@
       "label": "Chatbots"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
       "slug": "speech-and-voice",
       "label": "Speech and Voice"
     }

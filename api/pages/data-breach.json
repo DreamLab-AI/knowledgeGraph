@@ -17,10 +17,39 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.0,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:external-attack",
+        "label": "External Attack"
+      },
+      {
+        "id": "urn:ngm:class:insider-threat",
+        "label": "Insider Threat"
+      },
+      {
+        "id": "urn:ngm:class:accidental-exposure",
+        "label": "Accidental Exposure"
+      },
+      {
+        "id": "urn:ngm:class:model-inversion",
+        "label": "Model Inversion"
+      },
+      {
+        "id": "urn:ngm:class:membership-inference",
+        "label": "Membership Inference"
+      },
+      {
+        "id": "urn:ngm:class:ransomware",
+        "label": "Ransomware"
+      },
+      {
+        "id": "urn:ngm:class:data-exfiltration",
+        "label": "Data Exfiltration"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:security",
@@ -29,12 +58,24 @@
       {
         "id": "urn:ngm:class:vulnerability",
         "label": "Vulnerability"
+      },
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:privacy",
         "label": "Privacy"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
       }
     ],
     "dependsOn": [],
@@ -49,6 +90,18 @@
       {
         "id": "urn:ngm:class:model-inversion",
         "label": "Model Inversion"
+      },
+      {
+        "id": "urn:ngm:class:adversarial-attack",
+        "label": "Adversarial Attack"
+      },
+      {
+        "id": "urn:ngm:class:data-poisoning",
+        "label": "Data Poisoning"
+      },
+      {
+        "id": "urn:ngm:class:model-extraction",
+        "label": "Model Extraction"
       }
     ],
     "supports": [
@@ -59,6 +112,10 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:threat-intelligence",
+        "label": "Threat Intelligence"
       }
     ],
     "standardizedBy": [],
@@ -85,8 +142,24 @@
         "label": "Privacy Preserving Data Mining"
       },
       {
-        "id": "urn:ngm:class:access-control",
-        "label": "Access Control"
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:differential-privacy",
+        "label": "Differential Privacy"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
       }
     ]
   },
@@ -98,6 +171,126 @@
     {
       "slug": "risk",
       "label": "Risk"
+    },
+    {
+      "slug": "cybersecurity",
+      "label": "Cybersecurity"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "membership-inference",
+      "label": "Membership Inference"
+    },
+    {
+      "slug": "model-inversion",
+      "label": "Model Inversion"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "threat-intelligence",
+      "label": "Threat Intelligence"
+    },
+    {
+      "slug": "incident-response",
+      "label": "Incident Response"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "differential-privacy",
+      "label": "Differential Privacy"
+    },
+    {
+      "slug": "adversarial-attack",
+      "label": "Adversarial Attack"
+    },
+    {
+      "slug": "ransomware",
+      "label": "Ransomware"
+    },
+    {
+      "slug": "ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
+      "slug": "data-poisoning",
+      "label": "Data Poisoning"
+    },
+    {
+      "slug": "model-extraction",
+      "label": "Model Extraction"
+    },
+    {
+      "slug": "privacy-preserving-machine-learning",
+      "label": "Privacy-Preserving Machine Learning"
+    },
+    {
+      "slug": "insider-threat",
+      "label": "Insider Threat"
+    },
+    {
+      "slug": "vulnerability",
+      "label": "Vulnerability"
+    },
+    {
+      "slug": "zero-trust-architecture",
+      "label": "Zero Trust Architecture"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "healthcare-ai",
+      "label": "Healthcare AI"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    },
+    {
+      "slug": "privacy-preserving-data-mining",
+      "label": "Privacy Preserving Data Mining"
     }
   ],
   "backlinks": []

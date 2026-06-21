@@ -95,6 +95,10 @@
   ],
   "backlinks": [
     {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
       "slug": "loyalty-token",
       "label": "Loyalty Token"
     }

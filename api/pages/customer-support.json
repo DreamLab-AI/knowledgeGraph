@@ -5,19 +5,36 @@
   "public": true,
   "classIri": "urn:ngm:class:customer-support",
   "domain": "ai",
-  "definition": "Customer Support is the organisational function and set of processes by which a company provides assistance, guidance, and resolution of problems to its customers before, during, and after the purchase or use of a product or service. It encompasses multiple channels\u2014telephone, email, live chat, self-service portals, and increasingly AI-powered interfaces\u2014and spans activities from answering product questions and processing returns to resolving technical failures and managing complaints. Modern customer support operations integrate customer relationship management systems, knowledge bases, ticketing workflows, and sentiment analytics to optimise resolution efficiency and customer satisfaction.",
+  "definition": "Customer Support is the structured operational function and set of AI-augmented processes through which organisations resolve customer queries, technical faults, billing disputes, and product complaints across telephone, email, live chat, self-service portals, and social messaging channels, increasingly powered by Large Language Models, Retrieval-Augmented Generation architectures, and autonomous Agentic Workflow systems that automate first-contact resolution while escalating complex edge cases to human agents with full conversational context.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:customer-service-automation",
       "label": "Customer Service Automation"
+    },
+    {
+      "id": "urn:ngm:class:enterprise-workflow",
+      "label": "Enterprise Workflow"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
-    "requires": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:crm-integration",
+        "label": "CRM Integration"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:dialogue-management",
+        "label": "Dialogue Management"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:workflow-automation",
@@ -26,6 +43,10 @@
       {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
       }
     ],
     "dependsOn": [],
@@ -44,6 +65,26 @@
       {
         "id": "urn:ngm:class:information-retrieval",
         "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:crm",
+        "label": "CRM"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:intent-recognition",
+        "label": "Intent Recognition"
       }
     ],
     "supports": [],
@@ -61,10 +102,139 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "crm",
+      "label": "CRM"
+    },
+    {
+      "slug": "crm-integration",
+      "label": "CRM Integration"
+    },
+    {
+      "slug": "crm-systems",
+      "label": "CRM Systems"
+    },
+    {
+      "slug": "intent-recognition",
+      "label": "Intent Recognition"
+    },
+    {
+      "slug": "dialogue-management",
+      "label": "Dialogue Management"
+    },
+    {
+      "slug": "dialogue-state-tracking",
+      "label": "Dialogue State Tracking"
+    },
+    {
+      "slug": "multi-turn-dialogue",
+      "label": "Multi-Turn Dialogue"
+    },
+    {
+      "slug": "knowledge-retrieval",
+      "label": "Knowledge Retrieval"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "enterprise-workflow",
+      "label": "Enterprise Workflow"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human Computer Interaction"
+    },
+    {
+      "slug": "text-classification",
+      "label": "Text Classification"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "document-retrieval",
+      "label": "Document Retrieval"
+    },
+    {
+      "slug": "hybrid-retrieval",
+      "label": "Hybrid Retrieval"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-agent-system",
@@ -77,6 +247,14 @@
     {
       "slug": "agent-orchestrator",
       "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
     },
     {
       "slug": "gpts-and-custom-assistants",

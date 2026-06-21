@@ -229,12 +229,6 @@
   **Semantic-Aware CFG:**
   Exploits cross-[[Attention Mechanism]] and self-attention maps within the diffusion backbone to segment latents into semantic regions and redistribute guidance strength spatially, yielding more uniform prompt adherence across complex scenes with multiple objects. These [[Attention Mechanism]] maps, when thresholded, provide token-to-region correspondence that can be used to apply per-region guidance scales, enabling precise control over multi-object scenes without requiring explicit [[Image Segmentation]] masks.
 
-  **Semantic-Aware CFG:**
-  Exploits cross-attention and self-attention maps within the diffusion backbone to segment latents into semantic regions and redistribute guidance strength spatially, yielding more uniform prompt adherence across complex scenes with multiple objects.
-
-  **ControlNet Integration:**
-  [[ControlNet]] (Zhang et al., 2023) adds spatially conditioned control (depth maps, edge maps, pose skeletons, semantic segmentation) as an additional conditioning branch layered over the CFG-conditioned backbone. The two conditioning signals — text via CFG and spatial via ControlNet — are compositionally compatible and together provide the most flexible and widely adopted generation control paradigm.
-
   ## Use Cases / Major Families
 
   **Text-to-Image Generation:**

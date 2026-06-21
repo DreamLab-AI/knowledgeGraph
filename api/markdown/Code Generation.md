@@ -520,13 +520,73 @@ public:: true
       "raw": "[[Zero-Shot Learning]]",
       "resolved": "urn:visionflow:linked:zero-shot-learning",
       "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Formal Verification]]",
+      "resolved": "urn:visionflow:linked:formal-verification",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Human-in-the-Loop Learning]]",
+      "resolved": "urn:visionflow:linked:human-in-the-loop-learning",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Foundation Models]]",
+      "resolved": "urn:visionflow:linked:foundation-models",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[BigCode Project]]",
+      "resolved": "urn:visionflow:linked:bigcode-project",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[ReAct]]",
+      "resolved": "urn:visionflow:linked:react",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Code Execution]]",
+      "resolved": "urn:visionflow:linked:code-execution",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[CLI Multi-Agent Systems]]",
+      "resolved": "urn:visionflow:linked:cli-multi-agent-systems",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Symbolic AI]]",
+      "resolved": "urn:visionflow:linked:symbolic-ai",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Distributed Training]]",
+      "resolved": "urn:visionflow:linked:distributed-training",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Automated Testing]]",
+      "resolved": "urn:visionflow:linked:automated-testing",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[LLM Agents]]",
+      "resolved": "urn:visionflow:linked:llm-agents",
+      "kind": "ResolvedLink"
+    },
+    {
+      "raw": "[[Repository-Scale Refactoring]]",
+      "resolved": "urn:visionflow:linked:repository-scale-refactoring",
+      "kind": "ResolvedLink"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:enrichment-swarm"
   },
   "prov:generatedAtTime": {
-    "@value": "2026-06-20T00:00:00Z",
+    "@value": "2026-06-21T00:00:00Z",
     "@type": "xsd:dateTime"
   }
 }
@@ -662,6 +722,18 @@ public:: true
 
   The theoretical underpinnings of neural code generation are firmly grounded in probabilistic language modelling. A code generation model defines a conditional probability distribution P(code | context) over sequences of tokens drawn from a code-aware vocabulary V. The generation process is autoregressive: given a context sequence (specification, partial code, surrounding file contents), the model samples or maximises the next token from P(t_i | t_1, ..., t_{i-1}, context), repeating until a stopping criterion is met (EOS token, length limit, or syntactic completion). The quality of the distribution P is determined by the training procedure: maximum likelihood estimation over a corpus of (context, code) pairs minimises the cross-entropy loss L = -E[log P(code | context)], while post-training RLHF refines P toward a target distribution preferred by human evaluators (correct, idiomatic, safe, documented). The FIM training objective shuffles the decomposition of code sequences into prefix-middle-suffix triplets, training P(middle | prefix, suffix) alongside the standard left-to-right objective, enabling bidirectional completion without separate fine-tuning. Inference-time techniques including beam search, sampling with temperature/top-p filtering, and speculative decoding (using a small draft model to propose tokens that are verified by the full model) balance generation quality, diversity, and latency.
 
+  ## Formal Analysis
+
+  The theoretical foundation of neural code generation can be stated precisely as a conditional language modelling problem over a bipartite space. Define a specification language S (natural language, partial code, type signatures, test cases, or formal requirements) and a target program language P (Python, TypeScript, SQL, Rust, or any other programming language). A code generation model defines a conditional probability distribution θ: P(c | s) over programs c ∈ P given specification s ∈ S. The generation process is autoregressive over the tokenisation of c: given s and previously generated tokens c₁, …, c_{i-1}, the model produces a distribution over the next token c_i drawn from a code-aware vocabulary V (typically 32,000-100,000 tokens). Quality is measured by functional correctness — whether the generated program c satisfies a set of input-output tests T: i.e., ∀(x, y) ∈ T, eval(c, x) = y — which defines the pass@k metric as the probability that at least one of k independently sampled programs passes all tests in T.
+
+  The FIM (Fill-in-the-Middle) training objective extends this formalism to bidirectional completion. A code sequence c = (c_prefix, c_middle, c_suffix) is decomposed and the model is trained to predict c_middle given (c_prefix, c_suffix), defining a distribution P_FIM(c_middle | c_prefix, c_suffix). This enables IDE autocomplete scenarios where the surrounding code context (cursor position flanked by prefix and suffix) conditions the generated insertion, directly addressing the most common production deployment pattern. The FIM objective (Bavarian et al., 2022) was adopted simultaneously by Codex, StarCoder, and all subsequent production code models, becoming a de facto standard.
+
+  The repository-level generation problem introduces an additional complexity dimension. Let R = {f₁, f₂, …, f_n} be a repository of n files. The ideal code generation model would condition on the entire repository R alongside the specification, defining P(c | s, R). However, for large repositories (n files, each potentially 1,000+ lines), the joint context |s| + |R| far exceeds the context window limit W (typically 128K-1M tokens) of any current model. Retrieval-augmented generation (RAG) for code addresses this by approximating P(c | s, R) ≈ P(c | s, Retrieve(s, R, k)) where Retrieve selects the k most relevant file fragments from R — using BM25 lexical retrieval, [[Embedding]]-based semantic retrieval, or AST-aware structural retrieval — reducing |Retrieve(s, R, k)| to fit within W while maximising the relevance of the selected context. The quality of this approximation depends on the coverage and precision of the retrieval function, which remains an active research problem at the frontier of repository-level code generation.
+
+  The relationship between code generation quality and model scale is empirically described by a power law: pass@1 ≈ A × N^β where N is the model parameter count and β is an empirically estimated scaling exponent. For code generation specifically, Codex established β ≈ 0.08 for pass@1 on HumanEval in the 300M-12B parameter range, with GPT-4 class models (100B+ effective parameters) showing continued gains. However, this simple scaling law breaks down at the frontier: post-training [[Reinforcement Learning from Human Feedback]] alignment, the FIM objective, instruction tuning on high-quality code, and execution-guided refinement all contribute quality improvements orthogonal to raw parameter count, explaining why smaller but better-trained models (e.g., StarCoder2-15B vs early GPT-4 class models) can outperform much larger models on specific code generation tasks. This motivates the emergence of specialised smaller models for domain-specific code generation tasks.
+
+  The hallucination problem in code generation has a precise formal characterisation distinct from factual hallucination in natural language: a hallucination in code generation is a token sequence c such that P(c | s; θ) is high (the model assigns it high probability given the specification) but the program c fails to satisfy the functional correctness predicate: ∃(x, y) ∈ T, eval(c, x) ≠ y. The causes of code hallucination fall into three categories: (1) training distribution mismatch — the specification s is dissimilar from training examples, causing the model to interpolate poorly; (2) spurious correlation — the model has learned to predict syntactically plausible continuations that match surface-level patterns in training data without learning the underlying semantic invariants; (3) API hallucination — the model generates calls to functions, methods, or classes that do not exist in the target library, because it has seen similar API patterns in training data but the specific API was either fictional or deprecated. [[Code Execution]] feedback loops directly address all three: by executing generated code and returning error messages, the model can detect hallucinations empirically without requiring a separate formal verification pass.
+
   ## Components / Architecture
 
   - **Pre-training corpus**: The Stack v2 (StarCoder2, ~900B tokens), GitHub Code (Codex/Copilot), internal proprietary corpora; covering 619+ programming languages with deduplication and quality filters
@@ -711,11 +783,11 @@ public:: true
 
   By mid-2026, code generation has become the highest-ROI application of frontier AI, with adoption patterns, market dynamics, and benchmark performance evolving rapidly across multiple competitive dimensions.
 
-  **Market Scale and Adoption:** The AI coding assistant market reached $7.37 billion in 2025, up from $4.91 billion in 2024, and is projected to reach $26 billion by 2030 (approximately 50% CAGR). GitHub Copilot reached 4.7 million paid subscribers by January 2026 (75% year-over-year growth), with 50,000+ organisations using the product and 90% of Fortune 100 companies reporting adoption. Developer adoption reached 84% using or planning to use AI coding tools in 2026, with AI-generated code comprising an estimated 46% of code written by AI-tool users. However, trust has declined: only 29% of developers fully trust AI-generated code without review (down from 40% in 2024), reflecting growing awareness of hallucination patterns and security risks that require skilled human oversight.
+  **Market Scale and Adoption:** The AI coding tools market generated $12.8 billion in revenue in 2026, more than doubling the $5.1 billion recorded in 2024 — a 150% increase in two years, driven by enterprise adoption at scale and the emergence of autonomous agentic software engineering products. GitHub Copilot reached 4.7 million paid subscribers by January 2026 (75% year-over-year growth), with 50,000+ organisations and 90% of Fortune 100 companies reporting adoption. Developer adoption reached 84% using or planning to use AI coding tools in 2026, with AI-generated code comprising an estimated 46% of code written by AI-tool users. However, trust has declined: only 29% of developers fully trust AI-generated code without review (down from 40% in 2024), reflecting growing awareness of hallucination patterns, security risks, and [[Formal Verification]] limitations that require skilled [[Human-in-the-Loop Learning]] oversight.
 
-  **Platform Competition:** Three platforms dominate as of mid-2026. GitHub Copilot (Microsoft/GitHub) remains the market leader by user count but has seen market share erosion from 67% to 51% year-on-year (Stack Overflow Developer Survey 2026) amid perceptions of quality stagnation and price increases. Cursor (Anysphere) achieved $2 billion ARR by February 2026, the fastest B2B SaaS company to reach that milestone, driven by its Agent mode offering autonomous multi-file editing and a highly responsive code completion experience. Claude Code (Anthropic) grew from 3% to 18% developer share in nine months (JetBrains Developer Ecosystem Survey 2026), overtaking GitHub Copilot and Cursor in benchmark performance while establishing a strong position among enterprise customers. Emerging specialised entrants include Devin (Cognition AI, $2.1 billion valuation), which provides a web-interface-accessible software engineering agent; SWE-agent (Princeton, open-source); and Aider (open-source, terminal-first, supporting any OpenAI-compatible model endpoint), which targets the developer segment that prefers open-weight models and local deployment.
+  **Platform Competition:** Three platforms dominate as of mid-2026. GitHub Copilot (Microsoft/GitHub) remains the market leader by user count (4.7 million paid subscribers, 90% Fortune 100 adoption) but has seen market share erosion from 67% to 29% developer usage year-on-year (JetBrains Developer Ecosystem Survey January 2026) amid perceptions of quality stagnation and price increases. Cursor (Anysphere) achieved $2.0 billion annualised revenue by February 2026, the fastest application-layer B2B SaaS company in history to reach that milestone — having crossed $100M ARR in January 2025, $500M by June, $1B by November, and $2B by February 2026 — and raised $2.3 billion Series D at a $29.3 billion post-money valuation in November 2025. Cursor reported 18% developer share in the January 2026 JetBrains survey, with enterprise customers including Stripe, Shopify, OpenAI, Mercedes-Benz, Samsung, Johnson & Johnson, and reportedly more than half of the Fortune 500. Claude Code (Anthropic) also holds 18% developer share in the same survey, overtaking GitHub Copilot in benchmark performance. The NCSC issued specific "vibe coding" guidance in 2026, warning that the rise of AI-assisted software development is introducing new cybersecurity risks and that AI-generated code has already led to exploitable vulnerabilities in deployed applications. Emerging specialised entrants include Devin (Cognition AI, $2.1 billion valuation), which provides a web-interface-accessible software engineering agent; SWE-agent (Princeton, open-source); and Aider (open-source, terminal-first, supporting any [[Foundation Models]] endpoint), which targets the developer segment that prefers open-weight models and local deployment.
 
-  **Benchmark Frontier (mid-2026):** HumanEval is effectively saturated, with multiple systems exceeding 90% pass@1. The informative benchmarks are those targeting harder, more realistic tasks. SWE-bench Verified reached 80.8% (Claude Code + Claude Opus 4.6) and 93.9% provisionally (Claude Mythos) — compared to 13% baseline scores in 2023 and 30% in late 2023. SWE-bench Pro (November 2025), requiring complex multi-file changes, sees Claude Opus 4.8 at 69.2%. LiveCodeBench (contamination-resistant) shows leading models at 55-70%. ProdCodeBench (April 2026), introducing non-functional requirements (performance targets, security constraints, maintainability scores) alongside functional correctness, reveals that models still struggle substantially with production-quality constraints — achieving functional correctness but failing security or performance requirements at rates of 30-40% for complex tasks. DeepSeek-Coder-V2 achieved 81.1% pass@1 on HumanEval, Yi-Coder approximately 85.4%, and frontier proprietary models approximately 92%+.
+  **Benchmark Frontier (mid-2026):** HumanEval is effectively saturated — multiple systems exceed 90% pass@1, with GLM-4.7 achieving 94.2% and several frontier proprietary models scoring 91-95%, rendering the benchmark unable to discriminate between top systems. The informative benchmarks are those targeting harder, more realistic tasks. SWE-bench Verified reached 80.8% (Claude Code + Claude Opus 4.6), 87.6% (Claude Opus 4.7), and 93.9% provisionally (Claude Mythos) — compared to 13% baseline scores in 2023 and 30% in late 2023. Claude Opus 4.7 leads the SWE-bench Verified leaderboard as of mid-2026 at 87.6%. SWE-bench Pro (November 2025), requiring complex multi-file changes and architectural understanding, sees Claude Opus 4.8 at 69.2%. LiveCodeBench (contamination-resistant, refreshed from live competitive programming contests) shows leading models at 55-70%. DeepSeek V4 Pro (Max) achieves 75.9 on verified coding score, leading all open-weight entries. ProdCodeBench (April 2026), introducing non-functional requirements (performance targets, security constraints, maintainability scores) alongside functional correctness, reveals that models still struggle substantially with production-quality constraints — achieving functional correctness but failing security or performance requirements at rates of 30-40% for complex tasks. The [[BigCode Project]] LiveBench and CodeSOTA leaderboards provide independent continuous tracking of coding model performance across all major benchmarks. DeepSeek-Coder-V2 achieved 81.1% pass@1 on HumanEval, Yi-Coder approximately 85.4%, and frontier proprietary models approximately 92%+.
 
   **Model Diversity and Open-Source Health:** The open-source code generation ecosystem is healthy and competitive with proprietary systems on standard benchmarks. DeepSeek-Coder-V2 (236B MoE), Qwen2.5-Coder (72B), Mistral Codestral (22B), StarCoder2 (15B), and Code Llama (70B) define the open-weight tier, with all supporting local deployment on consumer or professional GPU hardware. Proprietary systems (GPT-5, Claude Opus 4.8, Gemini 2 Ultra) lead on the hardest tasks — SWE-bench Pro, ResearchCodeBench, ProdCodeBench — while the gap to open-weight models continues to narrow.
 
@@ -796,6 +868,6 @@ public:: true
   28. Springer Applied Intelligence (2026). "Code generation with large language models: a survey from neural program synthesis to autonomous software development." https://link.springer.com/article/10.1007/s10489-026-07230-0
 
 - ### Provenance
-  - sources:: https://arxiv.org/abs/2107.03374, https://doi.org/10.1126/science.abq1158, https://arxiv.org/abs/2310.06770, https://arxiv.org/abs/2402.19173, https://arxiv.org/abs/2406.11931, https://arxiv.org/abs/2407.16741, https://www.getpanto.ai/blog/ai-coding-assistant-statistics, https://www.quantumrun.com/consulting/github-copilot-statistics/, https://link.springer.com/article/10.1007/s10489-026-07230-0, https://futurescot.com/codeclan-launches-applied-agentic-ai-programme-in-uk-first/
-  - migration-date:: 2026-06-20T00:00:00Z
+  - sources:: https://arxiv.org/abs/2107.03374, https://doi.org/10.1126/science.abq1158, https://arxiv.org/abs/2310.06770, https://arxiv.org/abs/2402.19173, https://arxiv.org/abs/2406.11931, https://arxiv.org/abs/2407.16741, https://www.getpanto.ai/blog/ai-coding-assistant-statistics, https://www.getpanto.ai/blog/cursor-ai-statistics, https://www.cnbc.com/2025/11/13/cursor-ai-startup-funding-round-valuation.html, https://devgraphiq.com/cursor-statistics/, https://oecd.ai/en/incidents/2026-03-24-51a2, https://www.codesota.com/llm/coding-benchmarks, https://link.springer.com/article/10.1007/s10489-026-07230-0, https://futurescot.com/codeclan-launches-applied-agentic-ai-programme-in-uk-first/
+  - migration-date:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

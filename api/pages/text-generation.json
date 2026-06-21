@@ -305,6 +305,10 @@
       "label": "Cohere"
     },
     {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
     },

@@ -410,6 +410,10 @@
       "label": "Classification"
     },
     {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
     },
@@ -498,12 +502,56 @@
       "label": "Control Theory"
     },
     {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "decision-making",
       "label": "Decision Making"
     },
     {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
     },
     {
       "slug": "deep-mind",

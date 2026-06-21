@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -32,6 +32,14 @@
       {
         "id": "urn:ngm:class:multi-criteria-decision-analysis",
         "label": "Multi-Criteria Decision Analysis"
+      },
+      {
+        "id": "urn:ngm:class:heuristics",
+        "label": "Heuristics"
+      },
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
       }
     ],
     "requires": [
@@ -46,6 +54,10 @@
       {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
       }
     ],
     "enables": [
@@ -60,6 +72,10 @@
       {
         "id": "urn:ngm:class:policy-optimisation",
         "label": "Policy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "dependsOn": [
@@ -74,6 +90,10 @@
       {
         "id": "urn:ngm:class:game-theory",
         "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:decision-theory",
+        "label": "Decision Theory"
       }
     ],
     "implements": [],
@@ -89,16 +109,12 @@
     ],
     "bridgesTo": [
       {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
-      },
-      {
-        "id": "urn:ngm:class:ai-ethics",
-        "label": "AI Ethics"
-      },
-      {
         "id": "urn:ngm:class:supply-chain-management",
         "label": "Supply Chain Management"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
       }
     ],
     "uses": [
@@ -109,9 +125,30 @@
       {
         "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-research",
+        "label": "AI Safety Research"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -124,8 +161,16 @@
         "label": "Control Theory"
       },
       {
-        "id": "urn:ngm:class:risk-assessment",
-        "label": "Risk Assessment"
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ]
   },
@@ -141,6 +186,146 @@
     {
       "slug": "owl-thing",
       "label": "owl:Thing"
+    },
+    {
+      "slug": "utility-theory",
+      "label": "Utility Theory"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "multi-criteria-decision-analysis",
+      "label": "Multi-Criteria Decision Analysis"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    },
+    {
+      "slug": "objective-function",
+      "label": "Objective Function"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning"
+    },
+    {
+      "slug": "policy-optimisation",
+      "label": "Policy Optimisation"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "bounded-rationality",
+      "label": "Bounded Rationality"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "supply-chain-management",
+      "label": "Supply Chain Management"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
+      "slug": "heuristics",
+      "label": "Heuristics"
+    },
+    {
+      "slug": "operations-research",
+      "label": "Operations Research"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "value-function",
+      "label": "Value Function"
+    },
+    {
+      "slug": "reward-function",
+      "label": "Reward Function"
+    },
+    {
+      "slug": "choice-theory",
+      "label": "Choice Theory"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
     }
   ],
   "backlinks": [
@@ -175,6 +360,10 @@
     {
       "slug": "constraint-solver",
       "label": "Constraint Solver"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
     },
     {
       "slug": "machine-learning-discipline",

@@ -154,6 +154,10 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "domain-ontology",
       "label": "Domain Ontology"
     },

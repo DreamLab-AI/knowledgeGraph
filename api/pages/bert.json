@@ -159,6 +159,14 @@
       "label": "Common Crawl"
     },
     {
+      "slug": "coreference-resolution",
+      "label": "Coreference Resolution"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
       "slug": "language-modeling",
       "label": "Language Modeling"
     },

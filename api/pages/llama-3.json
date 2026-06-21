@@ -139,6 +139,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     },

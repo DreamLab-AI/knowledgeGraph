@@ -447,12 +447,28 @@
       "label": "Chatbots"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
     },
     {
       "slug": "context-engineering",
       "label": "Context Engineering"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "cursor",
+      "label": "Cursor"
     },
     {
       "slug": "external-ai-harness",

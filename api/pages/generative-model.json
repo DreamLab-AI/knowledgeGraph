@@ -188,6 +188,14 @@
       "label": "ControlNet Conditioning"
     },
     {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
     },

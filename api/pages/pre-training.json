@@ -339,6 +339,10 @@
   ],
   "backlinks": [
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "common-crawl",
       "label": "Common Crawl"
     },

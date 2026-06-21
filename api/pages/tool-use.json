@@ -249,12 +249,28 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
       "slug": "cohere",
       "label": "Cohere"
     },
     {
       "slug": "context-engineering",
       "label": "Context Engineering"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
     },
     {
       "slug": "embodied-minds",

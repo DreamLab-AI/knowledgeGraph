@@ -139,6 +139,14 @@
       "label": "BLIP-2 Captioner"
     },
     {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
       "slug": "transformers",
       "label": "Transformers"
     },

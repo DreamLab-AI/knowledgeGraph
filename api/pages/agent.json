@@ -211,6 +211,10 @@
       "label": "Classical Planning"
     },
     {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
       "slug": "goal",
       "label": "Goal"
     }

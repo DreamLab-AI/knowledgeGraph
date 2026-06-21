@@ -234,6 +234,10 @@
       "label": "Bias in Large Language Models"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "cognitive-architecture",
       "label": "Cognitive Architecture"
     },
@@ -248,6 +252,18 @@
     {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
     },
     {
       "slug": "existential-ai-risk",

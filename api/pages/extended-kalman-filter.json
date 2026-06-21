@@ -127,6 +127,10 @@
   ],
   "backlinks": [
     {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
       "slug": "exteroceptive-sensor",
       "label": "Exteroceptive Sensor"
     },

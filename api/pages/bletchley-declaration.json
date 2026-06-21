@@ -134,6 +134,10 @@
       "label": "Asia Pacific Regulation"
     },
     {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
     }

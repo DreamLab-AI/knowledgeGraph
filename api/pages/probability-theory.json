@@ -172,6 +172,10 @@
       "label": "Bayesian Decision Theory"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
       "slug": "conformal-prediction",
       "label": "Conformal Prediction"
     },
@@ -182,6 +186,14 @@
     {
       "slug": "control-theory",
       "label": "Control Theory"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
     },
     {
       "slug": "diffusion-models",

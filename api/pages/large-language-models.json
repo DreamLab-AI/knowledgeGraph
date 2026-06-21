@@ -649,12 +649,20 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "closed-world-assumption",
       "label": "Closed World Assumption"
     },
     {
       "slug": "co-training",
       "label": "Co Training"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
     },
     {
       "slug": "code-generation",
@@ -729,8 +737,64 @@
       "label": "Continuous Batching"
     },
     {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "death-of-the-internet",
       "label": "Death of the Internet"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
     },
     {
       "slug": "domain-expert-contact-index",

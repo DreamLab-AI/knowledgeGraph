@@ -110,6 +110,10 @@
     {
       "slug": "cognitive-science",
       "label": "Cognitive Science"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
     }
   ]
 }

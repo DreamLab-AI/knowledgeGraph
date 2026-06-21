@@ -167,6 +167,10 @@
       "label": "Compute Infrastructure"
     },
     {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
       "slug": "model-deployment",
       "label": "Model Deployment"
     },

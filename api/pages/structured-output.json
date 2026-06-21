@@ -149,6 +149,10 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "harness-configuration-packs",
       "label": "Harness Configuration Packs"
     },

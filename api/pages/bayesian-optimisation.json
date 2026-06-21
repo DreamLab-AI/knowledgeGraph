@@ -392,6 +392,14 @@
       "label": "Combinatorial Optimisation"
     },
     {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     },

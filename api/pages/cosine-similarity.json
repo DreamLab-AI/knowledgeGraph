@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
@@ -117,7 +117,104 @@
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "embedding",
+      "label": "Embedding"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "nearest-neighbour-search",
+      "label": "Nearest Neighbour Search"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "bi-encoder",
+      "label": "Bi-Encoder"
+    },
+    {
+      "slug": "euclidean-distance",
+      "label": "Euclidean Distance"
+    },
+    {
+      "slug": "dot-product",
+      "label": "Dot Product"
+    },
+    {
+      "slug": "tf-idf",
+      "label": "TF-IDF"
+    },
+    {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
+      "slug": "representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "slug": "knowledge-graph-embedding",
+      "label": "Knowledge Graph Embedding"
+    },
+    {
+      "slug": "recommendation-system",
+      "label": "Recommendation System"
+    },
+    {
+      "slug": "sentence-bert",
+      "label": "Sentence-BERT"
+    },
+    {
+      "slug": "faiss",
+      "label": "FAISS"
+    },
+    {
+      "slug": "approximate-nearest-neighbour",
+      "label": "Approximate Nearest Neighbour"
+    },
+    {
+      "slug": "dense-retrieval",
+      "label": "Dense Retrieval"
+    },
+    {
+      "slug": "hybrid-search",
+      "label": "Hybrid Search"
+    },
+    {
+      "slug": "matryoshka-representation-learning",
+      "label": "Matryoshka Representation Learning"
+    },
+    {
+      "slug": "contrastive-learning",
+      "label": "Contrastive Learning"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-search",
@@ -126,6 +223,10 @@
     {
       "slug": "arc-face",
       "label": "ArcFace"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
     },
     {
       "slug": "semantic-search",

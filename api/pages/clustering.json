@@ -317,6 +317,70 @@
     {
       "slug": "machine-learning",
       "label": "Machine Learning"
+    },
+    {
+      "slug": "hdbscan",
+      "label": "HDBSCAN"
+    },
+    {
+      "slug": "expectation-maximisation",
+      "label": "Expectation-Maximisation"
+    },
+    {
+      "slug": "statistical-learning",
+      "label": "Statistical Learning"
+    },
+    {
+      "slug": "similarity-function",
+      "label": "Similarity Function"
+    },
+    {
+      "slug": "cell-type-identification",
+      "label": "Cell Type Identification"
+    },
+    {
+      "slug": "image-retrieval",
+      "label": "Image Retrieval"
+    },
+    {
+      "slug": "document-organisation",
+      "label": "Document Organisation"
+    },
+    {
+      "slug": "graph-laplacian",
+      "label": "Graph Laplacian"
+    },
+    {
+      "slug": "manifold-hypothesis",
+      "label": "Manifold Hypothesis"
+    },
+    {
+      "slug": "data-preprocessing",
+      "label": "Data Preprocessing"
+    },
+    {
+      "slug": "semi-supervised-learning",
+      "label": "Semi-Supervised Learning"
+    },
+    {
+      "slug": "bayesian-nonparametrics",
+      "label": "Bayesian Nonparametrics"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
     }
   ],
   "backlinks": [

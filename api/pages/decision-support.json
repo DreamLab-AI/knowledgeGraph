@@ -136,6 +136,10 @@
       "label": "Computational Intelligence"
     },
     {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "expert-systems",
       "label": "Expert Systems"
     },

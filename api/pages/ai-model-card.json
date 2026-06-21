@@ -345,6 +345,10 @@
       "label": "ai policy"
     },
     {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     }

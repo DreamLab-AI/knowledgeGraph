@@ -229,6 +229,10 @@
       "label": "Constraint"
     },
     {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
       "slug": "human-oversight",
       "label": "Human Oversight"
     },

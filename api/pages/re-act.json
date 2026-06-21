@@ -164,6 +164,10 @@
       "label": "Computer Use and Browser Agents"
     },
     {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "prompt-engineering",
       "label": "Prompt Engineering"
     },

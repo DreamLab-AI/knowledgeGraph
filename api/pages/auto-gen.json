@@ -270,6 +270,10 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
     }

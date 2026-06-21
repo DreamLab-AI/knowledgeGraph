@@ -94,6 +94,18 @@
     {
       "slug": "classification",
       "label": "Classification"
+    },
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
     }
   ]
 }

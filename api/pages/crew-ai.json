@@ -5,25 +5,51 @@
   "public": true,
   "classIri": "urn:ngm:class:crew-ai",
   "domain": "ai",
-  "definition": "CrewAI is an open-source Python framework for orchestrating teams of autonomous LLM-powered agents that collaborate on tasks through defined roles, goals, and processes. It models a crew of specialised agents that delegate, share context, and execute sequential or hierarchical workflows. It is widely used to build multi-agent automation and tool-using assistants.",
+  "definition": "CrewAI is an open-source Python framework for orchestrating teams of autonomous LLM-powered agents that collaborate on complex tasks through defined roles, backstories, goals, and structured processes. It models a crew of specialised agents\u2014each with distinct capabilities and a designated toolset\u2014that delegate work, share context through a shared memory system, and execute sequential, parallel, or hierarchical workflows toward a common objective. With 47,800+ GitHub stars, 27 million downloads, and adoption by 63% of the Fortune 500 as of mid-2026, CrewAI has become one of the fastest-growing multi-agent orchestration frameworks in the agentic AI ecosystem.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
+    },
+    {
+      "id": "urn:ngm:class:multi-agent-systems",
+      "label": "Multi-Agent Systems"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
-  "maturity": "emerging",
+  "qualityScore": 0.9,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:multi-agent-coordination",
+        "label": "Multi-Agent Coordination"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -31,10 +57,143 @@
       {
         "id": "urn:ngm:class:cli-multi-agent-systems",
         "label": "CLI Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:auto-gen",
+        "label": "AutoGen"
+      },
+      {
+        "id": "urn:ngm:class:langgraph",
+        "label": "LangGraph"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "orchestration",
+      "label": "Orchestration"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "langgraph",
+      "label": "LangGraph"
+    },
+    {
+      "slug": "openai-agents-sdk",
+      "label": "OpenAI Agents SDK"
+    },
+    {
+      "slug": "re-act-pattern",
+      "label": "ReAct Pattern"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "metagpt",
+      "label": "MetaGPT"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "api-integration",
+      "label": "API Integration"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-agent-coordination",

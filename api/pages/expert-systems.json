@@ -172,6 +172,10 @@
       "label": "Control Algorithm"
     },
     {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     },

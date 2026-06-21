@@ -230,6 +230,10 @@
       "label": "Data Anonymization Pipeline"
     },
     {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
       "slug": "data-fabric-architecture",
       "label": "Data Fabric Architecture"
     },
@@ -244,6 +248,10 @@
     {
       "slug": "decentralized-identity-did",
       "label": "Decentralized Identity (DID)"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
     },
     {
       "slug": "deepfakes",

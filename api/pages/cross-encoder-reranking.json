@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -43,6 +43,14 @@
       {
         "id": "urn:ngm:class:document-retrieval",
         "label": "Document Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-retrieval",
+        "label": "Knowledge Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
       }
     ],
     "dependsOn": [
@@ -53,6 +61,14 @@
       {
         "id": "urn:ngm:class:gpu-inference",
         "label": "GPU Inference"
+      },
+      {
+        "id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:dense-passage-retrieval",
+        "label": "Dense Passage Retrieval"
       }
     ],
     "implements": [],
@@ -68,6 +84,10 @@
       {
         "id": "urn:ngm:class:bm25",
         "label": "BM25"
+      },
+      {
+        "id": "urn:ngm:class:colbert",
+        "label": "ColBERT"
       }
     ],
     "bridgesTo": [
@@ -88,6 +108,14 @@
       {
         "id": "urn:ngm:class:self-attention",
         "label": "Self-Attention"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
       }
     ],
     "supports": [
@@ -110,10 +138,131 @@
       {
         "id": "urn:ngm:class:knowledge-distillation",
         "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:reciprocal-rank-fusion",
+        "label": "Reciprocal Rank Fusion"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "embedding-model",
+      "label": "Embedding Model"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "rag-pipeline",
+      "label": "RAG Pipeline"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "bm25",
+      "label": "BM25"
+    },
+    {
+      "slug": "dense-retrieval",
+      "label": "Dense Retrieval"
+    },
+    {
+      "slug": "hybrid-retrieval",
+      "label": "Hybrid Retrieval"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "document-retrieval",
+      "label": "Document Retrieval"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self-Attention"
+    },
+    {
+      "slug": "approximate-nearest-neighbour-search",
+      "label": "Approximate Nearest Neighbour Search"
+    },
+    {
+      "slug": "dense-passage-retrieval",
+      "label": "Dense Passage Retrieval"
+    },
+    {
+      "slug": "enterprise-search",
+      "label": "Enterprise Search"
+    },
+    {
+      "slug": "neural-information-retrieval",
+      "label": "Neural Information Retrieval"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "colbert",
+      "label": "ColBERT"
+    },
+    {
+      "slug": "reciprocal-rank-fusion",
+      "label": "Reciprocal Rank Fusion"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "contrastive-learning",
+      "label": "Contrastive Learning"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "knowledge-retrieval",
+      "label": "Knowledge Retrieval"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-search",
@@ -122,6 +271,10 @@
     {
       "slug": "bm25",
       "label": "BM25"
+    },
+    {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
     },
     {
       "slug": "semantic-search",

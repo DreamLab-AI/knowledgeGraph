@@ -166,6 +166,10 @@
       "label": "Computer Vision"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "medical-ai",
       "label": "Medical AI"
     },

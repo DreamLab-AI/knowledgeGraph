@@ -211,6 +211,14 @@
       "label": "Constraint"
     },
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "ethical-ai",
       "label": "Ethical AI"
     },

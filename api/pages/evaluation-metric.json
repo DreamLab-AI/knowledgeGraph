@@ -183,6 +183,14 @@
       "label": "Benchmark Evaluation"
     },
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
     },

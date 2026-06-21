@@ -103,6 +103,10 @@
       "label": "Computational Linguistics"
     },
     {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
       "slug": "machine-translation",
       "label": "Machine Translation"
     },

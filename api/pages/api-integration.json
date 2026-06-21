@@ -184,6 +184,10 @@
       "label": "ComfyUI Client"
     },
     {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
       "slug": "cross-platform-digital-twins",
       "label": "Cross Platform Digital Twins"
     },

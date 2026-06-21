@@ -5,21 +5,29 @@
   "public": true,
   "classIri": "urn:ngm:class:data-augmentation",
   "domain": "machine-learning",
-  "definition": "Data augmentation is a machine learning technique that expands a training dataset by applying label-preserving transformations or synthesising new examples from existing data. Typical methods include geometric and photometric image transforms, noise injection, and generative model sampling such as GAN-produced samples. It improves model generalisation and robustness, mitigating overfitting when labelled data is scarce.",
+  "definition": "Data augmentation is a machine learning technique that expands a training dataset by applying label-preserving transformations or synthesising new examples from existing data. Typical methods include geometric and photometric image transforms, noise injection, and generative model sampling such as GAN-produced samples, diffusion-model synthesis, and mixing-based strategies such as Mixup and CutMix. It improves model generalisation and robustness, mitigating overfitting when labelled data is scarce. Modern automated augmentation pipelines such as AutoAugment and RandAugment use reinforcement learning or random search to discover optimal policies, while 2024-2026 diffusion-based approaches such as DiffuseMix enable label-preserving generation of high-fidelity training examples that improve performance on imbalanced and low-resource benchmarks.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:machine-learning-discipline-technique",
       "label": "Machine Learning Technique"
+    },
+    {
+      "id": "urn:ngm:class:regularisation",
+      "label": "Regularisation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:coordinate-transformation",
+        "id": "urn:ngm:class:geometric-transformation",
         "label": "Geometric Transformation"
+      },
+      {
+        "id": "urn:ngm:class:photometric-transformation",
+        "label": "Photometric Transformation"
       },
       {
         "id": "urn:ngm:class:noise-injection",
@@ -28,12 +36,36 @@
       {
         "id": "urn:ngm:class:mixup",
         "label": "Mixup Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:cutmix",
+        "label": "CutMix"
+      },
+      {
+        "id": "urn:ngm:class:autoaugment",
+        "label": "AutoAugment"
+      },
+      {
+        "id": "urn:ngm:class:randaugment",
+        "label": "RandAugment"
+      },
+      {
+        "id": "urn:ngm:class:feature-space-augmentation",
+        "label": "Feature-Space Augmentation"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:training-dataset",
         "label": "Training Dataset"
+      },
+      {
+        "id": "urn:ngm:class:training-pipeline",
+        "label": "Training Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-preprocessing",
+        "label": "Data Preprocessing"
       }
     ],
     "enables": [
@@ -44,18 +76,17 @@
       {
         "id": "urn:ngm:class:overfitting-prevention",
         "label": "Overfitting Prevention"
-      }
-    ],
-    "dependsOn": [
-      {
-        "id": "urn:ngm:class:training-pipeline",
-        "label": "Training Pipeline"
       },
       {
-        "id": "urn:ngm:class:data-preprocessing",
-        "label": "Data Preprocessing"
+        "id": "urn:ngm:class:model-robustness",
+        "label": "Model Robustness"
+      },
+      {
+        "id": "urn:ngm:class:class-imbalance-mitigation",
+        "label": "Class Imbalance Mitigation"
       }
     ],
+    "dependsOn": [],
     "implements": [],
     "contrastsWith": [
       {
@@ -67,21 +98,8 @@
         "label": "Active Learning"
       }
     ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:computer-vision",
-        "label": "Computer Vision"
-      },
-      {
-        "id": "urn:ngm:class:natural-language-processing",
-        "label": "Natural Language Processing"
-      }
-    ],
+    "bridgesTo": [],
     "uses": [
-      {
-        "id": "urn:ngm:class:synthetic-data-generator",
-        "label": "Synthetic Data Generator"
-      },
       {
         "id": "urn:ngm:class:generative-adversarial-networks",
         "label": "Generative Adversarial Networks"
@@ -93,6 +111,14 @@
       {
         "id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data-generator",
+        "label": "Synthetic Data Generator"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
       }
     ],
     "supports": [
@@ -107,6 +133,14 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
       }
     ],
     "standardizedBy": [],
@@ -117,12 +151,169 @@
         "label": "Regularisation"
       },
       {
-        "id": "urn:ngm:class:few-shot-learning",
-        "label": "Few-Shot Learning"
+        "id": "urn:ngm:class:dropout",
+        "label": "Dropout"
+      },
+      {
+        "id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:class-imbalance",
+        "label": "Class Imbalance"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "regularisation",
+      "label": "Regularisation"
+    },
+    {
+      "slug": "overfitting",
+      "label": "Overfitting"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "semi-supervised-learning",
+      "label": "Semi-Supervised Learning"
+    },
+    {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
+      "slug": "convolutional-neural-networks",
+      "label": "Convolutional Neural Networks"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "image-classification",
+      "label": "Image Classification"
+    },
+    {
+      "slug": "training-pipeline",
+      "label": "Training Pipeline"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "Synthetic Data"
+    },
+    {
+      "slug": "noise-injection",
+      "label": "Noise Injection"
+    },
+    {
+      "slug": "batch-normalisation",
+      "label": "Batch Normalisation"
+    },
+    {
+      "slug": "dropout",
+      "label": "Dropout"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "neural-architecture-search",
+      "label": "Neural Architecture Search"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical Imaging"
+    },
+    {
+      "slug": "class-imbalance",
+      "label": "Class Imbalance"
+    },
+    {
+      "slug": "model-robustness",
+      "label": "Model Robustness"
+    },
+    {
+      "slug": "data-collection",
+      "label": "Data Collection"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "hyperparameter-tuning",
+      "label": "Hyperparameter Tuning"
+    },
+    {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    }
+  ],
   "backlinks": [
     {
       "slug": "acoustic-model",
@@ -139,6 +330,18 @@
     {
       "slug": "control-net",
       "label": "controlnet"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
     },
     {
       "slug": "generative-adversarial-networks",

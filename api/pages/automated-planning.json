@@ -180,6 +180,10 @@
       "label": "Constraint Solver"
     },
     {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "planning",
       "label": "Planning"
     },

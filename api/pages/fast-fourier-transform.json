@@ -94,6 +94,10 @@
     {
       "slug": "audio-signal-processing",
       "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "convolution",
+      "label": "Convolution"
     }
   ]
 }

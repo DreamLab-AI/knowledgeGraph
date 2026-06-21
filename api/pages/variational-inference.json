@@ -134,6 +134,10 @@
       "label": "Bayesian Optimisation"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

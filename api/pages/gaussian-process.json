@@ -124,6 +124,10 @@
       "label": "Conformal Prediction"
     },
     {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },

@@ -227,6 +227,14 @@
       "label": "Data Anonymization Pipeline"
     },
     {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "digital-archive",
       "label": "Digital Archive"
     },

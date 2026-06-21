@@ -105,5 +105,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "database-schema",
+      "label": "Database Schema"
+    }
+  ]
 }

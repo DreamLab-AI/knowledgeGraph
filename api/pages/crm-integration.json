@@ -43,6 +43,10 @@
     {
       "slug": "call-centres",
       "label": "Call Centres"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
     }
   ]
 }

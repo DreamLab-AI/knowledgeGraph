@@ -160,6 +160,10 @@
       "label": "Alignment"
     },
     {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
       "slug": "optimality",
       "label": "Optimality"
     },

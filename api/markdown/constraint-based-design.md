@@ -9,17 +9,22 @@
   - implemented-in-layer:: [[Symbolic AI]], [[Simulation Engine]]
 
 - ### Relationships
-  - is-subclass-of:: [[Constraint Satisfaction]], [[AI System Component]]
-  - has-part:: [[Constraint Solver]], [[Constraint Propagation]], [[Geometric Constraint]], [[Functional Requirements]], [[Feasibility]], [[Design Space Exploration]]
-  - requires:: [[Constraint Satisfaction]], [[Optimization Algorithm]], [[Knowledge Representation]], [[Simulation]]
-  - enables:: [[Generative Design Tool]], [[Formal Verification]], [[Product Design]], [[Topology Optimization]], [[Motion Planning]], [[Co-Design]]
-  - implements:: [[Symbolic AI]], [[Systems Engineering]], [[Model Based Systems Engineering]]
-  - depends-on:: [[Parametric Modeling]], [[Computer Aided Design]], [[Structural Analysis]]
-  - supports:: [[Safety Engineering]], [[Additive Manufacturing]], [[Configuration Management]], [[Requirements Engineering]]
-  - uses:: [[SAT Solver]], [[Evolutionary Algorithm]], [[Gradient Descent]], [[Integer Programming]], [[Linear Programming]], [[Finite Element Analysis]], [[Neural Network]]
-  - contrasts-with:: [[Generative Design Tool]], [[Reinforcement Learning]]
-  - related-to:: [[Digital Twin]], [[Autonomous Robot]], [[Cyber Physical Systems]], [[Concurrent Engineering]], [[Combinatorial Optimisation]], [[Machine Learning]]
-  - bridges-to:: [[Robotics]], [[Simulation Engine]], [[AI System Component]]
+  - is-subclass-of:: [[Constraint Satisfaction]], [[AI System Component]], [[Symbolic AI]]
+  - has-part:: [[Constraint Solver]], [[Constraint Propagation]], [[Geometric Constraint]], [[Functional Requirements]], [[Feasibility]], [[Design Space Exploration]], [[Optimization Algorithm]]
+  - requires:: [[Constraint Satisfaction]], [[Optimization Algorithm]], [[Knowledge Representation]], [[Simulation]], [[Finite Element Analysis]]
+  - enables:: [[Generative Design Tool]], [[Formal Verification]], [[Product Design]], [[Topology Optimization]], [[Motion Planning]], [[Co-Design]], [[Additive Manufacturing]], [[Multi-Objective Optimization]]
+  - implements:: [[Symbolic AI]], [[Systems Engineering]], [[Model Based Systems Engineering]], [[Neuro-Symbolic AI]]
+  - depends-on:: [[Parametric Modeling]], [[Computer Aided Design]], [[Structural Analysis]], [[Constraint Satisfaction]]
+  - supports:: [[Safety Engineering]], [[Additive Manufacturing]], [[Configuration Management]], [[Requirements Engineering]], [[Digital Twin]], [[Cyber Physical Systems]]
+  - uses:: [[SAT Solver]], [[Evolutionary Algorithm]], [[Gradient Descent]], [[Integer Programming]], [[Linear Programming]], [[Finite Element Analysis]], [[Neural Network]], [[Reinforcement Learning]], [[Graph Neural Network]]
+  - contrasts-with:: [[Generative Design Tool]], [[Reinforcement Learning]], [[Rule Based System]]
+  - related-to:: [[Digital Twin]], [[Autonomous Robot]], [[Cyber Physical Systems]], [[Concurrent Engineering]], [[Combinatorial Optimisation]], [[Machine Learning]], [[Operations Research]], [[Automated Planning]], [[Neuro-Symbolic AI]]
+  - bridges-to:: [[Robotics]], [[Simulation Engine]], [[AI System Component]], [[Constraint Satisfaction]]
+  - standardized-by:: [[SysML v2]], [[MiniZinc]]
+  - connected-to:: [[Constraint Logic Programming]], [[Answer Set Programming]], [[Topology Optimisation]], [[Co-Design]], [[Backtracking Search]], [[Variable Ordering Heuristic]]
+  - underpins:: [[Generative Design Tool]], [[Topology Optimization]], [[Model Based Systems Engineering]], [[Digital Twin]]
+  - formalises:: [[Requirements Engineering]], [[Functional Requirements]], [[Safety Engineering]], [[Concurrent Engineering]]
+  - enables-via-surrogate:: [[Deep Learning]], [[Graph Neural Network]]
 
 - ### Content
   ## Compositional Relationships (Components)
@@ -109,15 +114,29 @@
         ObjectSomeValuesFrom(ai:uses ai:ReinforcementLearning))
       SubClassOf(ai:ConstraintBasedDesign
         ObjectSomeValuesFrom(ai:uses ai:MultiObjectiveOptimization))
+      SubClassOf(ai:ConstraintBasedDesign
+        ObjectSomeValuesFrom(ai:uses ai:GraphNeuralNetwork))
+      SubClassOf(ai:ConstraintBasedDesign
+        ObjectSomeValuesFrom(ai:implements ai:NeuroSymbolicAI))
+      SubClassOf(ai:ConstraintBasedDesign
+        ObjectSomeValuesFrom(ai:supports ai:DigitalTwin))
+      SubClassOf(ai:ConstraintBasedDesign
+        ObjectSomeValuesFrom(ai:supports ai:CyberPhysicalSystems))
+      SubClassOf(ai:ConstraintBasedDesign
+        ObjectSomeValuesFrom(ai:relatedTo ai:OperationsResearch))
+      SubClassOf(ai:ConstraintBasedDesign
+        ObjectSomeValuesFrom(ai:standardizedBy ai:SysMLv2))
+      SubClassOf(ai:ConstraintBasedDesign
+        ObjectSomeValuesFrom(ai:standardizedBy ai:MiniZinc))
 
   ## About
     Constraint based design encodes domain knowledge as a formal [[Constraint]] system rather than explicit design recipes or fixed parameterised templates. Its declarative nature cleanly separates problem specification from solver strategy: the designer asserts what is required, and the computational substrate discovers or verifies what is possible. This separation has profound engineering advantages — changing a requirement updates the constraint system, and the solver immediately re-computes the valid design space, without requiring the designer to manually trace through a procedural construction sequence. The approach belongs to the broader family of [[Symbolic AI]] techniques, where explicit logical and mathematical representations of domain knowledge power inference and reasoning, and it has sustained relevance through multiple waves of AI development precisely because its formal guarantees — validity, completeness, and optimality — cannot be replicated by purely statistical or learned approaches alone.
 
-    The intellectual roots of constraint based design lie in two converging traditions. From artificial intelligence came [[Constraint Satisfaction]] (CSP/COP) formalisms, developed in the 1970s through scene-labelling and picture-interpretation work (Waltz, 1975; Mackworth, 1977) and mature by the 1990s with full backtracking search + [[Constraint Propagation]] engines. From engineering and [[Computer Aided Design]] came geometric constraint solving — the problem of placing and sizing 2D or 3D geometric entities (lines, circles, arcs, planes) subject to dimensional and relational constraints (parallelism, tangency, concentricity) — which is the foundational technology of all modern parametric CAD systems. Kramer (1992) and Owen (1991) formalised the algebraic geometry of constraint solving; Hoffmann and colleagues at Purdue published extensively on degrees-of-freedom analysis and under/over-constrained detection through the 1990s and 2000s. The two traditions converged as AI research embraced engineering domains and as CAD tools incorporated AI planning and optimisation capabilities.
+    The intellectual roots of constraint based design lie in two converging traditions. From artificial intelligence came [[Constraint Satisfaction]] (CSP/COP) formalisms, developed in the 1970s through scene-labelling and picture-interpretation work (Waltz, 1975; Mackworth, 1977) and mature by the 1990s with full [[Backtracking Search]] + [[Constraint Propagation]] engines. From engineering and [[Computer Aided Design]] came geometric constraint solving — the problem of placing and sizing 2D or 3D geometric entities (lines, circles, arcs, planes) subject to dimensional and relational constraints (parallelism, tangency, concentricity) — which is the foundational technology of all modern parametric CAD systems. Kramer (1992) and Owen (1991) formalised the algebraic geometry of constraint solving; Hoffmann and colleagues at Purdue published extensively on degrees-of-freedom analysis and under/over-constrained detection through the 1990s and 2000s. The two traditions converged as AI research embraced engineering domains and as CAD tools incorporated AI planning and optimisation capabilities.
 
     In engineering practice, constraint based design manifests at multiple levels of abstraction: at the geometry level (parametric CAD sketches with dimensional constraints); at the topology level ([[Topology Optimization]] — finding optimal material distributions subject to load, support, and manufacturing constraints); at the system level (MBSE — model-based systems engineering, where SysML requirement diagrams declare constraints over system architecture); and at the behavioural level ([[Motion Planning]] for robots, where kinematic, collision-avoidance, torque, and joint-limit constraints define the valid trajectory space). The transition from physics-simulation-driven topology optimisation toward requirement-to-geometry AI pipelines (identified in 2025 patent analysis) signals that [[Machine Learning]] is beginning to replace traditional FEA-in-the-loop optimisation with learned surrogate models.
 
-    By 2024, the McKinsey Global Survey found that 65% of organisations regularly use generative AI, nearly double the rate of a year earlier. Within engineering, this manifests as AI-assisted [[Generative Design Tool]] platforms — Autodesk Fusion Generative Design, Siemens NX Topology Optimisation, Ansys Discovery, and startup tools like Neural Concept Shape — that use constraint based design as their formal backbone, with deep learning models (graph neural networks for aerodynamic property prediction, convolutional networks for structural load prediction) serving as fast surrogate simulators that dramatically accelerate feasibility evaluation within the constrained design space. The combination of formal constraint satisfaction guarantees with the data-driven pattern recognition of neural networks represents the frontier of AI-assisted engineering design in 2026.
+    By 2024, the McKinsey Global Survey found that 65% of organisations regularly use generative AI, nearly double the rate of a year earlier. Within engineering, this manifests as AI-assisted [[Generative Design Tool]] platforms — Autodesk Fusion Generative Design, Siemens NX Topology Optimisation, Ansys Discovery, and startup tools like Neural Concept Shape — that use constraint based design as their formal backbone, with deep learning models (graph neural networks for aerodynamic property prediction, convolutional networks for structural load prediction) serving as fast surrogate simulators that dramatically accelerate feasibility evaluation within the constrained design space. The combination of formal [[Constraint Satisfaction]] guarantees with the data-driven pattern recognition of [[Neural Network]]s represents the frontier of AI-assisted engineering design in 2026. Constraint based design increasingly integrates with [[Neuro-Symbolic AI]] research — where neural networks and symbolic reasoning are combined — and with [[Automated Planning]] for multi-step design processes that must satisfy sequentially imposed constraints as design decisions are made.
 
   ## Formal Framework
 
@@ -228,6 +247,14 @@
 
     **Differentiable and end-to-end constraint satisfaction:**
     A growing research direction makes constraint solving differentiable, enabling gradient-based learning to flow through the constraint satisfaction layer. Differentiable optimisation layers (OptNet, CvxPyLayers) embed quadratic programming or linear programming as differentiable modules within neural networks, enabling end-to-end training of systems that must produce feasible outputs. For robotics, differentiable trajectory optimisation (DiffTaichi, Drake) enables [[Reinforcement Learning]] agents to learn task objectives while maintaining kinematic feasibility through differentiable constraint layers. For materials design and molecular generation, differentiable constraint satisfaction layers ensure that generated molecular structures satisfy valence and ring-closure constraints.
+
+  ## Reinforcement Learning for Topology Optimisation
+
+    A 2025 paper published in *MethodsX* and indexed in PMC (PMC12355488) introduces a reinforcement learning-based approach to topology optimisation for generative design of lightweight structures. The method integrates [[Reinforcement Learning]] — specifically the Proximal Policy Optimisation (PPO) algorithm — with topology optimisation to learn policies for material layout within constraint-defined design domains. Rather than solving the SIMP optimisation to convergence at each design iteration, the RL policy predicts density distributions that satisfy load, support, and volume fraction constraints, guided by compliance reward signals. Results show that the RL-based approach achieves comparable structural performance to traditional SIMP solutions while generating structurally diverse design alternatives not reachable by gradient-based SIMP alone — an important advantage for [[Multi-Objective Optimization]] and design space exploration under manufacturing constraints. The method encodes manufacturing constraints (minimum feature size, overhang angle for [[Additive Manufacturing]]) as penalty terms in the reward function, enabling the RL policy to learn constraint-aware design heuristics that implicitly satisfy manufacturing requirements. This work exemplifies the trajectory toward neural-augmented constraint based design where deep learning replaces or supplements the optimisation loops within the constraint-defined feasible space. Complementary work from Narnia Labs (2025 EP patent) maps generated designs into a low-dimensional parametric space where topology optimisation can be applied analytically, creating a differentiable bridge between [[Neural Network]] generative models and physics-consistent constraint satisfaction. The integration of [[Reinforcement Learning]] with constraint based design creates a hybrid paradigm that combines the exploration diversity of policy-gradient methods with the formal feasibility guarantees of [[Constraint Satisfaction]], addressing a fundamental limitation of standalone RL for engineering design — the inability to provide hard constraint certificates.
+
+  ## Constraint Hypergraph Framework for Design Twins
+
+    A 2025 arXiv paper (arXiv:2507.05494) proposes constraint hypergraphs as a unifying formal framework for [[Digital Twin]] models. This development directly extends [[Constraint Satisfaction]] theory into the live [[Digital Twin]] domain, proposing that the consistency requirement between a physical asset and its computational twin is precisely a CSP: variables represent the twin's state parameters (sensor readings, material properties, structural dimensions), and constraints encode physical laws, sensor calibration relationships, and design specifications. The constraint hypergraph formalism naturally captures multi-domain engineering twins — combining structural, thermal, electrical, and fluid domains — where variables from different physics regimes are coupled through interface constraints. In the context of constraint based design, this framework enables continuous verification: as a manufactured component ages and sensor data updates, the constraint hypergraph is incrementally re-solved to check whether the current component state still lies within the feasible design space defined at design time. Violations of feasibility constraints signal degradation, damage, or manufacturing deviations, triggering re-design or maintenance actions. This represents a fundamental shift from one-time constraint-based design to continuous constraint-based lifecycle management, connecting the [[Design Space Exploration]] done during product development to the real-time operational validation done by [[Cyber Physical Systems]] monitoring infrastructure. The framework has direct application in aerospace maintenance (constraint-based validation of aircraft structural health), advanced manufacturing (constraint-based process monitoring for [[Additive Manufacturing]]), and energy systems (constraint-based grid configuration validation), and is supported by the SysML v2 formal constraint block API (2024) which provides a standardised mechanism for exporting constraint models from design tools into runtime monitoring systems.
 
   ## Comparison with Related Paradigms
 
@@ -380,6 +407,6 @@
     28. OR-Tools CP-SAT Solver. Google. (2024). https://developers.google.com/optimization/reference/python/sat/python/cp_model
 
 - ### Provenance
-  - sources:: Dechter "Constraint Processing" (2003); Russell & Norvig "Artificial Intelligence: A Modern Approach" 4th ed. (2021) Ch.6; Apt "Principles of Constraint Programming" (2003); Mackworth (1977) Arc Consistency; Bendsøe & Kikuchi (1988) Topology Optimisation; LaValle "Planning Algorithms" (2006); Autodesk Research constraint generation (2025); Edinburgh concurrent co-design (2024); Ansys 2025 R1 CAD Integration; PatSnap generative design 2026; ARC Advisory Group (2025); OR-Tools documentation; SysML v2 (2024); CoLab generative design guide (2026)
+  - sources:: Dechter "Constraint Processing" (2003); Russell & Norvig "Artificial Intelligence: A Modern Approach" 4th ed. (2021) Ch.6; Apt "Principles of Constraint Programming" (2003); Mackworth (1977) Arc Consistency; Bendsøe & Kikuchi (1988) Topology Optimisation; LaValle "Planning Algorithms" (2006); Autodesk Research constraint generation (2025); Edinburgh concurrent co-design (2024); Ansys 2025 R1 CAD Integration; PatSnap generative design 2026; ARC Advisory Group (2025); OR-Tools documentation; SysML v2 (2024); CoLab generative design guide (2026); RL topology optimisation PMC12355488 (2025); Constraint hypergraph digital twins arXiv:2507.05494 (2025); MiniZinc Challenge 2025 results CP2025 Glasgow
   - migration-date:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

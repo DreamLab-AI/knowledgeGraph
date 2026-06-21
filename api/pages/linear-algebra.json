@@ -164,6 +164,10 @@
       "label": "Attention"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
       "slug": "collision-detection",
       "label": "Collision Detection"
     },
@@ -182,6 +186,14 @@
     {
       "slug": "control-theory",
       "label": "Control Theory"
+    },
+    {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
     },
     {
       "slug": "differential-equations",

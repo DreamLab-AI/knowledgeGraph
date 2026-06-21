@@ -206,6 +206,10 @@
       "label": "Alignment"
     },
     {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
       "slug": "etsi-domain-governance-and-ethics",
       "label": "ETSI Domain: Governance & Ethics"
     },

@@ -43,6 +43,10 @@
     {
       "slug": "blockchain-as-a-service",
       "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
     }
   ]
 }

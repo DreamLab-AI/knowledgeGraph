@@ -220,6 +220,10 @@
       "label": "automatic speech recognition"
     },
     {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
       "slug": "recurrent-neural-network",
       "label": "Recurrent Neural Network"
     },

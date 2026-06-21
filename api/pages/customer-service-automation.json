@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -28,6 +28,10 @@
       {
         "id": "urn:ngm:class:virtual-agent",
         "label": "Virtual Agent"
+      },
+      {
+        "id": "urn:ngm:class:escalation-management",
+        "label": "Escalation Management"
       }
     ],
     "requires": [],
@@ -35,6 +39,14 @@
       {
         "id": "urn:ngm:class:omnichannel",
         "label": "Omnichannel Support"
+      },
+      {
+        "id": "urn:ngm:class:self-service-portal",
+        "label": "Self-Service Portal"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-ticket-routing",
+        "label": "Intelligent Ticket Routing"
       }
     ],
     "dependsOn": [
@@ -53,6 +65,10 @@
       {
         "id": "urn:ngm:class:dialogue-management",
         "label": "Dialogue Management"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
       }
     ],
     "implements": [],
@@ -60,6 +76,10 @@
       {
         "id": "urn:ngm:class:automation",
         "label": "Rule-Based Automation"
+      },
+      {
+        "id": "urn:ngm:class:human-agent-assistance",
+        "label": "Human Agent Assistance"
       }
     ],
     "bridgesTo": [
@@ -92,6 +112,26 @@
       {
         "id": "urn:ngm:class:named-entity-recognition",
         "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      },
+      {
+        "id": "urn:ngm:class:active-learning",
+        "label": "Active Learning"
+      },
+      {
+        "id": "urn:ngm:class:speech-recognition",
+        "label": "Speech Recognition"
+      },
+      {
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
       }
     ],
     "supports": [],
@@ -109,10 +149,151 @@
       {
         "id": "urn:ngm:class:ai-agent",
         "label": "AI Agent"
+      },
+      {
+        "id": "urn:ngm:class:customer-support-automation",
+        "label": "Customer Support Automation"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "intent-classification",
+      "label": "Intent Classification"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "knowledge-base",
+      "label": "Knowledge Base"
+    },
+    {
+      "slug": "chatbot",
+      "label": "Chatbot"
+    },
+    {
+      "slug": "virtual-agent",
+      "label": "Virtual Agent"
+    },
+    {
+      "slug": "dialogue-management",
+      "label": "Dialogue Management"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "interactive-voice-response",
+      "label": "Interactive Voice Response"
+    },
+    {
+      "slug": "robotic-process-automation",
+      "label": "Robotic Process Automation"
+    },
+    {
+      "slug": "omnichannel",
+      "label": "Omnichannel"
+    },
+    {
+      "slug": "customer-relationship-management",
+      "label": "Customer Relationship Management"
+    },
+    {
+      "slug": "escalation-management",
+      "label": "Escalation Management"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "business-process-automation",
+      "label": "Business Process Automation"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "natural-language-understanding",
+      "label": "Natural Language Understanding"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
+      "slug": "multi-turn-dialogue",
+      "label": "Multi-Turn Dialogue"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "omnichannel-routing",
+      "label": "Omnichannel Routing"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "task-oriented-dialogue",
+      "label": "Task-Oriented Dialogue"
+    },
+    {
+      "slug": "slot-filling",
+      "label": "Slot Filling"
+    },
+    {
+      "slug": "dialogue-system",
+      "label": "Dialogue System"
+    }
+  ],
   "backlinks": [
     {
       "slug": "agentic-internet",
@@ -133,6 +314,18 @@
     {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
     },
     {
       "slug": "speech-and-voice",

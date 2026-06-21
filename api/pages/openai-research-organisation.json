@@ -150,6 +150,10 @@
     {
       "slug": "anthropic",
       "label": "anthropic"
+    },
+    {
+      "slug": "claude",
+      "label": "Claude"
     }
   ]
 }

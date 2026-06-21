@@ -113,6 +113,10 @@
     {
       "slug": "bias-variance-tradeoff",
       "label": "Bias-Variance Tradeoff"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
     }
   ]
 }

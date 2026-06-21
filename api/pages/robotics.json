@@ -448,12 +448,24 @@
       "label": "Control Theory"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
       "slug": "current-sensor",
       "label": "Current Sensor"
     },
     {
       "slug": "current-sensor",
       "label": "Current Sensor"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
     },
     {
       "slug": "cybersecurity-standard",
@@ -474,6 +486,10 @@
     {
       "slug": "decentralized-swarm-control",
       "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
     },
     {
       "slug": "delta-robot",

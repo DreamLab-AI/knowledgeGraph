@@ -210,8 +210,36 @@
       "label": "Convergence"
     },
     {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
       "slug": "cylindrical-robot",
       "label": "Cylindrical Robot"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
     },
     {
       "slug": "differential-drive-robot",

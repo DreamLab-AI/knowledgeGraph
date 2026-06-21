@@ -689,6 +689,10 @@
       "label": "controlnet"
     },
     {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
       "slug": "hand-tracking",
       "label": "Hand Tracking"
     },

@@ -169,6 +169,10 @@
       "label": "Computer Vision"
     },
     {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
       "slug": "holography",
       "label": "Holography"
     },

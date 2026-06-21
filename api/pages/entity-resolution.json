@@ -136,6 +136,10 @@
   ],
   "backlinks": [
     {
+      "slug": "coreference-resolution",
+      "label": "Coreference Resolution"
+    },
+    {
       "slug": "knowledge-graph",
       "label": "Knowledge Graph"
     },

@@ -53,6 +53,14 @@
       "label": "Content Discovery"
     },
     {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
       "slug": "llm-application-frameworks",
       "label": "LLM Application Frameworks"
     },

@@ -55,6 +55,14 @@
   ],
   "backlinks": [
     {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "lang-chain",
       "label": "LangChain"
     }

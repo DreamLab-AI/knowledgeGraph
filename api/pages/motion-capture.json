@@ -521,6 +521,10 @@
       "label": "Action Recognition"
     },
     {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
       "slug": "digital-actor-creation",
       "label": "Digital Actor Creation"
     },

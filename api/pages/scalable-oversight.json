@@ -111,6 +111,14 @@
       "label": "anthropic"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
       "slug": "safety-and-alignment",
       "label": "Safety and alignment"
     }

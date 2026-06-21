@@ -39,6 +39,18 @@
     {
       "slug": "chatbots",
       "label": "Chatbots"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
     }
   ]
 }

@@ -161,6 +161,10 @@
       "label": "Data Fabric Architecture"
     },
     {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "ethics-and-law-layer",
       "label": "Ethics & Law Layer"
     },

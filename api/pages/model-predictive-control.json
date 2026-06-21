@@ -160,6 +160,10 @@
       "label": "Control Theory"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
       "slug": "derivative-control",
       "label": "Derivative Control"
     },

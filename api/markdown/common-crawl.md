@@ -17,6 +17,7 @@
   - supports:: [[Deep Learning]], [[BERT]], [[GPT]], [[GPT-3]], [[Llama]], [[FineWeb]], [[C4 Dataset]], [[RedPajama]], [[Dolma]], [[OLMo]], [[DataComp-LM]], [[RefinedWeb]]
   - depends-on:: [[Amazon S3]], [[Cloud Computing]], [[Apache Nutch]], [[Trafilatura]], [[fastText]]
   - related-to:: [[Bias in Large Language Models]], [[Copyright]], [[Data Governance]], [[EU AI Act]], [[Machine Learning Discipline]], [[Multimodal AI]], [[Robotics]], [[Language Model]], [[GPT]], [[Synthetic Data]]
+  - uses:: [[Apache Nutch]], [[Trafilatura]], [[Amazon S3]], [[fastText]], [[CDX Protocol]]
   - contrasts-with:: [[Synthetic Data]], [[Curated Datasets]], [[Proprietary Web Index]]
   - standardized-by:: [[ISO 28500]], [[AWS Open Data Sponsorship Programme]]
 

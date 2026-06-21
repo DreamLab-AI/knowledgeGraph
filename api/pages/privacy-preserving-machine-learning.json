@@ -102,6 +102,14 @@
     {
       "slug": "cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
     }
   ]
 }

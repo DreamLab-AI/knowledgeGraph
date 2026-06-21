@@ -314,6 +314,10 @@
     {
       "slug": "computational-intelligence",
       "label": "Computational Intelligence"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
     }
   ]
 }

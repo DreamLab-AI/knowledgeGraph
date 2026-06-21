@@ -91,6 +91,10 @@
       "label": "Clustering"
     },
     {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
       "slug": "linear-algebra",
       "label": "Linear Algebra"
     }

@@ -633,6 +633,10 @@
       "label": "ControlNet Conditioning"
     },
     {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
       "slug": "fine-tuning",
       "label": "Fine Tuning"
     },

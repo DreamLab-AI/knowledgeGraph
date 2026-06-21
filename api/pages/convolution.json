@@ -13,14 +13,14 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.75,
-  "maturity": "mature",
+  "qualityScore": 0.92,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:matrix-multiplication",
-        "label": "Matrix Multiplication"
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
       },
       {
         "id": "urn:ngm:class:gpu-acceleration",
@@ -43,6 +43,10 @@
       {
         "id": "urn:ngm:class:image-segmentation",
         "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:audio-processing",
+        "label": "Audio Processing"
       }
     ],
     "dependsOn": [
@@ -80,6 +84,10 @@
       {
         "id": "urn:ngm:class:fast-fourier-transform",
         "label": "Fast Fourier Transform"
+      },
+      {
+        "id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
       }
     ],
     "supports": [
@@ -88,12 +96,12 @@
         "label": "Deep Learning"
       },
       {
-        "id": "urn:ngm:class:audio-processing",
-        "label": "Audio Processing"
-      },
-      {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
       }
     ],
     "standardizedBy": [],
@@ -106,10 +114,127 @@
       {
         "id": "urn:ngm:class:batch-normalisation",
         "label": "Batch Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "image-processing",
+      "label": "Image Processing"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "fourier-analysis",
+      "label": "Fourier Analysis"
+    },
+    {
+      "slug": "fast-fourier-transform",
+      "label": "Fast Fourier Transform"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "matrix-multiplication",
+      "label": "Matrix Multiplication"
+    },
+    {
+      "slug": "gpu-acceleration",
+      "label": "GPU Acceleration"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "self-attention",
+      "label": "Self Attention"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "batch-normalisation",
+      "label": "Batch Normalisation"
+    },
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "pooling-layer",
+      "label": "Pooling Layer"
+    },
+    {
+      "slug": "activation-function",
+      "label": "Activation Function"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-video",

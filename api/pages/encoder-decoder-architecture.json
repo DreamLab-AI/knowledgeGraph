@@ -176,6 +176,14 @@
       "label": "Beam Search"
     },
     {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },

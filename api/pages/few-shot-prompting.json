@@ -132,6 +132,10 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "prompt-engineering",
       "label": "Prompt Engineering"
     }

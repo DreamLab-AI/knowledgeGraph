@@ -13,8 +13,8 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
-  "maturity": "emerging",
+  "qualityScore": 0.9,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
@@ -45,7 +45,7 @@
         "label": "Music Generation"
       },
       {
-        "id": "urn:ngm:class:asset-creation",
+        "id": "urn:ngm:class:3d-asset-creation",
         "label": "3D Asset Creation"
       },
       {
@@ -102,7 +102,7 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:multimodal-ai-architecture-models",
+        "id": "urn:ngm:class:multimodal-model",
         "label": "Multimodal Model"
       },
       {
@@ -114,6 +114,10 @@
       {
         "id": "urn:ngm:class:human-computer-interaction",
         "label": "Human Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:creative-economy",
+        "label": "Creative Economy"
       }
     ],
     "standardizedBy": [],
@@ -134,10 +138,151 @@
       {
         "id": "urn:ngm:class:human-ai-collaboration",
         "label": "Human-AI Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:c2pa",
+        "label": "C2PA"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "multimodal-model",
+      "label": "Multimodal Model"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "api-endpoint",
+      "label": "API Endpoint"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "video-synthesis",
+      "label": "Video Synthesis"
+    },
+    {
+      "slug": "music-generation",
+      "label": "Music Generation"
+    },
+    {
+      "slug": "3d-asset-creation",
+      "label": "3D Asset Creation"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "content-provenance",
+      "label": "Content Provenance"
+    },
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "human-ai-collaboration",
+      "label": "Human-AI Collaboration"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "metaverse-content",
+      "label": "Metaverse Content"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "ai-application",
+      "label": "AI Application"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "c2pa",
+      "label": "C2PA"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "creative-economy",
+      "label": "Creative Economy"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "design-software",
+      "label": "Traditional Design Software"
+    },
+    {
+      "slug": "procedural-generation",
+      "label": "Rule-Based Procedural Generation"
+    }
+  ],
   "backlinks": [
     {
       "slug": "adobe-firefly",
@@ -146,6 +291,10 @@
     {
       "slug": "content-creation",
       "label": "Content Creation"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
     },
     {
       "slug": "diffusion-models",

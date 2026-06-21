@@ -239,6 +239,10 @@
       "label": "Classification"
     },
     {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
       "slug": "f1-score",
       "label": "F1 Score"
     },

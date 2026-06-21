@@ -230,8 +230,16 @@
       "label": "Continuous Training"
     },
     {
+      "slug": "dvc",
+      "label": "DVC"
+    },
+    {
       "slug": "data-versioning",
       "label": "Data Versioning"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
     },
     {
       "slug": "experiment-tracking",

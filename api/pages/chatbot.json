@@ -162,6 +162,14 @@
       "label": "Computer Use and Browser Agents"
     },
     {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
+    {
       "slug": "customer-support-automation",
       "label": "Customer Support Automation"
     },

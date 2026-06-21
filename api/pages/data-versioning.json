@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-versioning",
   "domain": "artificial-intelligence",
-  "definition": "Data Versioning is the systematic practice of tracking, storing, and managing changes to datasets and machine learning models over time, ensuring reproducibility of experiments and auditability of data lineage. Tools such as DVC (Data Version Control) apply version control semantics to large binary assets, linking dataset snapshots to the code and configurations that produced them, enabling rollback, comparison, and collaborative data science workflows.",
+  "definition": "Data Versioning is the systematic practice of tracking, storing, and managing changes to datasets, model artefacts, and derived data products over time, providing reproducibility of experiments, auditability of data lineage, and governance of the full ML data supply chain. It applies software version-control semantics \u2014 branching, tagging, diffing, commit history, and rollback \u2014 to the large binary assets that underpin machine learning: raw datasets, processed feature stores, trained model weights, and pipeline configuration. Tools such as DVC (Data Version Control), lakeFS, and Apache Iceberg implement data versioning at different granularities, from file-level pointers through table-level snapshots to full environment branching over petabyte-scale data lakes. Data Versioning is a required foundation for reproducible science, regulatory compliance under frameworks such as the EU AI Act, and the operationalisation of mature MLOps practice.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-infrastructure",
@@ -14,17 +14,38 @@
     {
       "id": "urn:ngm:class:machine-learning-discipline-pipeline",
       "label": "Machine Learning Pipeline"
+    },
+    {
+      "id": "urn:ngm:class:data-management",
+      "label": "Data Management"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.75,
-  "maturity": "emerging",
+  "qualityScore": 0.9,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:artifact-metadata",
+        "label": "Artifact Metadata"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      },
+      {
+        "id": "urn:ngm:class:dvc",
+        "label": "DVC"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:artifact-metadata",
         "label": "Artifact Metadata"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ],
     "enables": [
@@ -39,11 +60,28 @@
       {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "id": "urn:ngm:class:continuous-training",
+        "label": "Continuous Training"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:static-dataset",
+        "label": "Static Dataset"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -53,9 +91,30 @@
       {
         "id": "urn:ngm:class:data-pipeline",
         "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:object-storage",
+        "label": "Object Storage"
+      },
+      {
+        "id": "urn:ngm:class:workflow-automation",
+        "label": "Workflow Automation"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [
       {
@@ -65,6 +124,10 @@
       {
         "id": "urn:ngm:class:data-management",
         "label": "Data Management"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ],
     "relatedTo": [
@@ -75,6 +138,18 @@
       {
         "id": "urn:ngm:class:workflow-automation",
         "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
       }
     ]
   },
@@ -102,6 +177,62 @@
     {
       "slug": "blockchain",
       "label": "Blockchain"
+    },
+    {
+      "slug": "machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
+    },
+    {
+      "slug": "experiment-tracking",
+      "label": "Experiment Tracking"
+    },
+    {
+      "slug": "feature-store",
+      "label": "Feature Store"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "data-management",
+      "label": "Data Management"
+    },
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "artifact-metadata",
+      "label": "Artifact Metadata"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "data-lineage",
+      "label": "Data Lineage"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
     }
   ],
   "backlinks": [
@@ -116,6 +247,14 @@
     {
       "slug": "continuous-training",
       "label": "Continuous Training"
+    },
+    {
+      "slug": "dvc",
+      "label": "DVC"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
     },
     {
       "slug": "etsi-domain-data-management-ai",

@@ -322,6 +322,22 @@
       "label": "Beam Search"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "gpt-engineer",
       "label": "GPT Engineer"
     },

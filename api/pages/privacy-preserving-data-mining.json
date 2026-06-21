@@ -112,6 +112,10 @@
     {
       "slug": "collaborative-filtering",
       "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
     }
   ]
 }

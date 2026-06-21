@@ -91,6 +91,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
       "slug": "training-data",
       "label": "Training Data"
     }

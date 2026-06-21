@@ -246,6 +246,10 @@
       "label": "Chunking"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "closed-world-assumption",
       "label": "Closed World Assumption"
     },
@@ -282,8 +286,52 @@
       "label": "Continuous Batching"
     },
     {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "coreference-resolution",
+      "label": "Coreference Resolution"
+    },
+    {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
+    },
+    {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
+      "slug": "dspy",
+      "label": "DSPy"
     },
     {
       "slug": "data-layer",

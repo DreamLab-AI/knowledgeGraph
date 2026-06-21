@@ -227,6 +227,10 @@
       "label": "Control System"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
       "slug": "cybersecurity-standard",
       "label": "Cybersecurity Standard"
     },

@@ -98,6 +98,14 @@
     {
       "slug": "alignment",
       "label": "Alignment"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "cost-function",
+      "label": "cost function"
     }
   ]
 }

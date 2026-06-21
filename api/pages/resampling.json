@@ -98,6 +98,10 @@
     {
       "slug": "bayes-filter",
       "label": "Bayes Filter"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
     }
   ]
 }

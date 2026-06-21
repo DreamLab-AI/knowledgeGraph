@@ -98,6 +98,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
     }

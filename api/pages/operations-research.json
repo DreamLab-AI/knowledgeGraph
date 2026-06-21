@@ -163,6 +163,18 @@
       "label": "Control Theory"
     },
     {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"
     },

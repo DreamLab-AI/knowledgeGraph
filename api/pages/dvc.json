@@ -4,37 +4,323 @@
   "slug": "dvc",
   "public": true,
   "classIri": "urn:ngm:class:dvc",
-  "domain": "ai",
-  "definition": "DVC (Data Version Control) is an open-source tool that brings Git-style versioning to machine-learning datasets, models, and pipelines. It stores large binary artefacts in external object storage while keeping lightweight metadata pointers in Git, enabling reproducible experiments and shareable data lineage. DVC also defines pipeline stages and tracks model checkpoints so that experiments can be rerun and compared deterministically.",
+  "domain": "artificial-intelligence",
+  "definition": "DVC (Data Version Control) is an open-source, Git-integrated data and model versioning tool that applies version control semantics to machine learning datasets, trained model artefacts, and reproducible ML pipelines. It stores large binary artefacts in external object storage while committing hash-based pointer files to Git, enabling deterministic experiment replay, collaborative data science, and automated CI/CD-driven ML pipelines.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-infrastructure",
       "label": "AI Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:mlops",
+      "label": "MLOps"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "id": "urn:ngm:class:artifact-metadata",
+        "label": "Artifact Metadata"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      },
+      {
+        "id": "urn:ngm:class:remote-storage",
+        "label": "Remote Storage"
+      },
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:model-versioning",
+        "label": "Model Versioning"
+      },
+      {
+        "id": "urn:ngm:class:checkpoints",
+        "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:ci-cd-pipeline",
+        "label": "CI/CD Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:data-lineage",
+        "label": "Data Lineage"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:amazon-s3",
+        "label": "Amazon S3"
+      },
+      {
+        "id": "urn:ngm:class:google-cloud-storage",
+        "label": "Google Cloud Storage"
+      },
+      {
+        "id": "urn:ngm:class:azure-blob-storage",
+        "label": "Azure Blob Storage"
+      },
+      {
+        "id": "urn:ngm:class:git",
+        "label": "Git"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
+        "id": "urn:ngm:class:mlflow",
+        "label": "MLflow"
+      },
+      {
+        "id": "urn:ngm:class:weights-and-biases",
+        "label": "Weights and Biases"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
         "id": "urn:ngm:class:checkpoints",
         "label": "Checkpoints"
+      },
+      {
+        "id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "id": "urn:ngm:class:pachyderm",
+        "label": "Pachyderm"
+      },
+      {
+        "id": "urn:ngm:class:kubeflow",
+        "label": "Kubeflow"
+      },
+      {
+        "id": "urn:ngm:class:lakeFS",
+        "label": "lakeFS"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "experiment-tracking",
+      "label": "Experiment Tracking"
+    },
+    {
+      "slug": "ml-flow",
+      "label": "MLflow"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
+    },
+    {
+      "slug": "git",
+      "label": "Git"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "continuous-integration",
+      "label": "Continuous Integration"
+    },
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "slug": "ai-infrastructure",
+      "label": "AI Infrastructure"
+    },
+    {
+      "slug": "weights-and-biases",
+      "label": "Weights and Biases"
+    },
+    {
+      "slug": "model-versioning",
+      "label": "Model Versioning"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "artifact-metadata",
+      "label": "Artifact Metadata"
+    },
+    {
+      "slug": "amazon-s3",
+      "label": "Amazon S3"
+    },
+    {
+      "slug": "google-cloud-storage",
+      "label": "Google Cloud Storage"
+    },
+    {
+      "slug": "azure-blob-storage",
+      "label": "Azure Blob Storage"
+    },
+    {
+      "slug": "hyperparameter-tuning",
+      "label": "Hyperparameter Tuning"
+    },
+    {
+      "slug": "ci-cd-pipeline",
+      "label": "CI/CD Pipeline"
+    },
+    {
+      "slug": "feature-store",
+      "label": "Feature Store"
+    },
+    {
+      "slug": "data-lineage",
+      "label": "Data Lineage"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "lakeFS",
+      "label": "lakeFS"
+    },
+    {
+      "slug": "pachyderm",
+      "label": "Pachyderm"
+    },
+    {
+      "slug": "kubeflow",
+      "label": "Kubeflow"
+    },
+    {
+      "slug": "airflow",
+      "label": "Apache Airflow"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "docker",
+      "label": "Docker"
+    },
+    {
+      "slug": "jupyter",
+      "label": "Jupyter"
+    },
+    {
+      "slug": "neptune-ai",
+      "label": "Neptune.ai"
+    },
+    {
+      "slug": "comet-ml",
+      "label": "Comet ML"
+    },
+    {
+      "slug": "github-actions",
+      "label": "GitHub Actions"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "hugging-face-hub",
+      "label": "Hugging Face Hub"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-tuning"
+    },
+    {
+      "slug": "machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "mlops-domain",
+      "label": "MLOpsDomain"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "InfrastructureLayer"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    }
+  ],
   "backlinks": [
     {
       "slug": "checkpoints",

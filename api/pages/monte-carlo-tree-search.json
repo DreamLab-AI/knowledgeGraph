@@ -118,6 +118,10 @@
       "label": "Beam Search"
     },
     {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },

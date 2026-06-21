@@ -99,6 +99,10 @@
     {
       "slug": "attention-weight",
       "label": "Attention Weight"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
     }
   ]
 }

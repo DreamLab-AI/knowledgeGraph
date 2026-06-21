@@ -297,6 +297,10 @@
       "label": "Content Generation"
     },
     {
+      "slug": "coreference-resolution",
+      "label": "Coreference Resolution"
+    },
+    {
       "slug": "data-aggregation",
       "label": "Data Aggregation"
     },
@@ -307,6 +311,14 @@
     {
       "slug": "data-layer",
       "label": "Data Layer"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
     },
     {
       "slug": "description-logic",

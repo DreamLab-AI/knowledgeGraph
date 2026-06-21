@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "database-schema",
+      "label": "Database Schema"
+    },
+    {
       "slug": "metadata-standard",
       "label": "Metadata Standard"
     }

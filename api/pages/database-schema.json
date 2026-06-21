@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:database-schema",
   "domain": "artificial-intelligence",
-  "definition": "A database schema is the formal description of the structure of a database, specifying its tables, fields, data types, relationships and integrity constraints. It separates the logical organisation of data from physical storage and from consuming applications, and is enforced by the database management system. Schemas evolve through controlled migrations and contrast with ontologies in being prescriptive structures for storage rather than shared conceptual models for reasoning.",
+  "definition": "A database schema is the formal, declarative description of the logical structure of a database, specifying its tables, columns, data types, primary and foreign keys, integrity constraints, views, indexes, and relationships. It constitutes the logical layer of a three-level ANSI/SPARC architecture that separates the conceptual organisation of data from physical storage details and from application-level views, and is enforced at runtime by the Database Management System. Schemas evolve through controlled migration scripts \u2014 governed by tools such as Flyway and Liquibase \u2014 and contrast with ontologies in being prescriptive, closed-world storage structures rather than open, inference-supporting conceptual models for reasoning.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:data-model",
@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:normalisation",
+        "label": "Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:referential-integrity",
+        "label": "Referential Integrity"
+      },
+      {
+        "id": "urn:ngm:class:index",
+        "label": "Index"
+      },
+      {
+        "id": "urn:ngm:class:view",
+        "label": "Database View"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:database-management-system",
@@ -27,10 +44,23 @@
       {
         "id": "urn:ngm:class:data-interoperability",
         "label": "Data Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:database-query",
+        "label": "Database Query"
+      },
+      {
+        "id": "urn:ngm:class:acid-transactions",
+        "label": "ACID Transactions"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:data-model",
+        "label": "Data Model"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:ontology",
@@ -39,6 +69,10 @@
       {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:nosql-database",
+        "label": "NoSQL Database"
       }
     ],
     "bridgesTo": [
@@ -47,8 +81,8 @@
         "label": "OWL Class Hierarchy"
       },
       {
-        "id": "urn:ngm:class:database-query",
-        "label": "Database Query"
+        "id": "urn:ngm:class:object-relational-mapping",
+        "label": "Object-Relational Mapping"
       }
     ],
     "uses": [
@@ -59,6 +93,10 @@
       {
         "id": "urn:ngm:class:data-model",
         "label": "Data Model"
+      },
+      {
+        "id": "urn:ngm:class:relational-algebra",
+        "label": "Relational Algebra"
       }
     ],
     "supports": [
@@ -69,6 +107,10 @@
       {
         "id": "urn:ngm:class:data-governance",
         "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:data-warehouse",
+        "label": "Data Warehouse"
       }
     ],
     "standardizedBy": [],
@@ -88,11 +130,92 @@
         "label": "Metadata"
       },
       {
-        "id": "urn:ngm:class:data-warehouse",
-        "label": "Data Warehouse"
+        "id": "urn:ngm:class:data-migration",
+        "label": "Data Migration"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "data-model",
+      "label": "Data Model"
+    },
+    {
+      "slug": "relational-database",
+      "label": "Relational Database"
+    },
+    {
+      "slug": "database-management-system",
+      "label": "Database Management System"
+    },
+    {
+      "slug": "sql",
+      "label": "SQL"
+    },
+    {
+      "slug": "database-query",
+      "label": "Database Query"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "owl-class-hierarchy",
+      "label": "OWL Class Hierarchy"
+    },
+    {
+      "slug": "data-integration",
+      "label": "Data Integration"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "metadata",
+      "label": "Metadata"
+    },
+    {
+      "slug": "data-warehouse",
+      "label": "Data Warehouse"
+    },
+    {
+      "slug": "data-interoperability",
+      "label": "Data Interoperability"
+    },
+    {
+      "slug": "nosql-database",
+      "label": "NoSQL Database"
+    },
+    {
+      "slug": "object-relational-mapping",
+      "label": "Object-Relational Mapping"
+    },
+    {
+      "slug": "data-migration",
+      "label": "Data Migration"
+    },
+    {
+      "slug": "normalisation",
+      "label": "Normalisation"
+    },
+    {
+      "slug": "referential-integrity",
+      "label": "Referential Integrity"
+    },
+    {
+      "slug": "relational-algebra",
+      "label": "Relational Algebra"
+    },
+    {
+      "slug": "acid-transactions",
+      "label": "ACID Transactions"
+    }
+  ],
   "backlinks": []
 }

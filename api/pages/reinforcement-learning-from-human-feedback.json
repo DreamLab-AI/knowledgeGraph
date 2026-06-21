@@ -225,6 +225,10 @@
       "label": "classifier-free guidance"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "code-generation",
       "label": "Code Generation"
     },
@@ -243,6 +247,34 @@
     {
       "slug": "content-moderation",
       "label": "Content Moderation"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
     },
     {
       "slug": "direct-preference-optimization",

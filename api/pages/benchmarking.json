@@ -101,6 +101,10 @@
     {
       "slug": "commonsense-reasoning",
       "label": "Commonsense Reasoning"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
     }
   ]
 }

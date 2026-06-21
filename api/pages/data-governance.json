@@ -225,6 +225,30 @@
       "label": "Content Discovery"
     },
     {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "data-anonymization-pipeline",
       "label": "Data Anonymization Pipeline"
     },
@@ -239,6 +263,26 @@
     {
       "slug": "data-quality",
       "label": "Data Quality"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "database-schema",
+      "label": "Database Schema"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
     },
     {
       "slug": "governance-structure",

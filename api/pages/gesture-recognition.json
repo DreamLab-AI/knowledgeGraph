@@ -120,6 +120,10 @@
       "label": "Assistive Technology Integration"
     },
     {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
       "slug": "education-metaverse",
       "label": "Education Metaverse"
     },

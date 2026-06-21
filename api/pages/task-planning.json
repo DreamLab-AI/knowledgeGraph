@@ -537,6 +537,10 @@
       "label": "Collaborative Operation"
     },
     {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
       "slug": "robotics-platform",
       "label": "Robotics Platform"
     },

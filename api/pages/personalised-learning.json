@@ -143,6 +143,10 @@
       "label": "Competency Based Education"
     },
     {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
       "slug": "education-and-ai",
       "label": "Education and AI"
     },

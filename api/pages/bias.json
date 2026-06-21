@@ -221,6 +221,10 @@
     {
       "slug": "boosting",
       "label": "Boosting"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
     }
   ]
 }

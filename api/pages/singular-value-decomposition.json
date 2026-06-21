@@ -75,6 +75,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
       "slug": "lens-and-camera-calibration",
       "label": "Lens and Camera Calibration"
     },

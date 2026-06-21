@@ -180,6 +180,18 @@
       "label": "Computational Linguistics"
     },
     {
+      "slug": "coreference-resolution",
+      "label": "Coreference Resolution"
+    },
+    {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
       "slug": "dialogue-system",
       "label": "Dialogue System"
     },

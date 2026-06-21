@@ -202,6 +202,10 @@
       "label": "Computer Vision"
     },
     {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

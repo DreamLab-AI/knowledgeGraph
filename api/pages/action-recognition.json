@@ -266,6 +266,10 @@
       "label": "Computer Vision Video Analysis"
     },
     {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
       "slug": "pose-estimation",
       "label": "Pose Estimation"
     }

@@ -63,6 +63,14 @@
     {
       "slug": "classification",
       "label": "Classification"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
     }
   ]
 }

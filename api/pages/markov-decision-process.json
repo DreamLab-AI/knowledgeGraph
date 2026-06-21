@@ -176,6 +176,18 @@
       "label": "Constraint"
     },
     {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
       "slug": "imitation-learning",
       "label": "Imitation Learning"
     },

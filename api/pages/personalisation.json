@@ -126,6 +126,14 @@
     {
       "slug": "content-generation",
       "label": "Content Generation"
+    },
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
     }
   ]
 }

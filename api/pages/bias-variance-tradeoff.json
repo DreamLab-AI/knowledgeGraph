@@ -319,6 +319,18 @@
     {
       "slug": "applied-machine-learning",
       "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
     }
   ]
 }

@@ -154,6 +154,10 @@
       "label": "AI Diagram Tools"
     },
     {
+      "slug": "coreference-resolution",
+      "label": "Coreference Resolution"
+    },
+    {
       "slug": "metaverse-ontology-schema",
       "label": "Metaverse Ontology Schema"
     }

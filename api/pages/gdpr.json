@@ -327,6 +327,10 @@
       "label": "Data Annotation"
     },
     {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
       "slug": "data-protection-law",
       "label": "Data Protection Law"
     },
@@ -341,6 +345,10 @@
     {
       "slug": "decentralized-identifiers",
       "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
     },
     {
       "slug": "digital-citizenship",

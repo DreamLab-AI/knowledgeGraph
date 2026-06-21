@@ -143,6 +143,18 @@
       "label": "Cortex Agent"
     },
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
       "slug": "creator-royalty-token",
       "label": "Creator Royalty Token"
     },

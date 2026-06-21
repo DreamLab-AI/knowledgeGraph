@@ -119,6 +119,14 @@
     {
       "slug": "customer-experience-management",
       "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
     }
   ]
 }

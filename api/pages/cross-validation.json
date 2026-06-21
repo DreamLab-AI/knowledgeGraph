@@ -13,13 +13,25 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
-  "maturity": "mature",
+  "qualityScore": 0.9,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:sampling",
         "label": "Stratified Sampling"
+      },
+      {
+        "id": "urn:ngm:class:k-fold",
+        "label": "K-Fold Split"
+      },
+      {
+        "id": "urn:ngm:class:leave-one-out",
+        "label": "Leave-One-Out"
+      },
+      {
+        "id": "urn:ngm:class:nested-cv",
+        "label": "Nested Cross-Validation"
       }
     ],
     "requires": [
@@ -30,6 +42,10 @@
       {
         "id": "urn:ngm:class:resampling",
         "label": "Resampling"
+      },
+      {
+        "id": "urn:ngm:class:performance-metrics",
+        "label": "Performance Metric"
       }
     ],
     "enables": [
@@ -40,12 +56,24 @@
       {
         "id": "urn:ngm:class:bias-variance-tradeoff",
         "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      },
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:statistical-estimation",
         "label": "Statistical Estimation"
+      },
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
       }
     ],
     "implements": [],
@@ -53,6 +81,10 @@
       {
         "id": "urn:ngm:class:annotated-training-data",
         "label": "Annotated Training Data"
+      },
+      {
+        "id": "urn:ngm:class:holdout-validation",
+        "label": "Holdout Validation"
       }
     ],
     "bridgesTo": [
@@ -71,8 +103,8 @@
         "label": "Performance Metric"
       },
       {
-        "id": "urn:ngm:class:convolutional-neural-network",
-        "label": "Convolutional Neural Network"
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       }
     ],
     "supports": [
@@ -87,6 +119,10 @@
       {
         "id": "urn:ngm:class:overfitting-prevention",
         "label": "Overfitting Prevention"
+      },
+      {
+        "id": "urn:ngm:class:automl",
+        "label": "AutoML"
       }
     ],
     "standardizedBy": [],
@@ -112,10 +148,147 @@
       {
         "id": "urn:ngm:class:ensemble-methods",
         "label": "Ensemble Learning"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "machine-learning",
+      "label": "AI Machine Learning"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "model-selection",
+      "label": "Model Selection"
+    },
+    {
+      "slug": "bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff"
+    },
+    {
+      "slug": "overfitting",
+      "label": "Overfitting"
+    },
+    {
+      "slug": "hyperparameter-tuning",
+      "label": "Hyperparameter Tuning"
+    },
+    {
+      "slug": "regularisation",
+      "label": "Regularisation"
+    },
+    {
+      "slug": "ensemble-methods",
+      "label": "Ensemble Methods"
+    },
+    {
+      "slug": "statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "applied-machine-learning",
+      "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "benign-overfitting",
+      "label": "Benign Overfitting"
+    },
+    {
+      "slug": "annotated-training-data",
+      "label": "Annotated Training Data"
+    },
+    {
+      "slug": "statistical-inference",
+      "label": "Statistical Inference"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "resampling",
+      "label": "Resampling"
+    },
+    {
+      "slug": "performance-metrics",
+      "label": "Performance Metric"
+    },
+    {
+      "slug": "gradient-boosting",
+      "label": "Gradient Boosting"
+    },
+    {
+      "slug": "random-forest",
+      "label": "Random Forest"
+    },
+    {
+      "slug": "generalisation-error",
+      "label": "Generalisation Error"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "automl",
+      "label": "AutoML"
+    },
+    {
+      "slug": "feature-selection",
+      "label": "Feature Selection"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
+      "slug": "support-vector-machine",
+      "label": "Support Vector Machine"
+    },
+    {
+      "slug": "machine-learning-grounded-domain",
+      "label": "MachineLearningDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    }
+  ],
   "backlinks": [
     {
       "slug": "algorithmic-bias-and-variance",
@@ -144,6 +317,14 @@
     {
       "slug": "conformal-prediction",
       "label": "Conformal Prediction"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
     },
     {
       "slug": "evaluation-benchmarks-and-leaderboards",

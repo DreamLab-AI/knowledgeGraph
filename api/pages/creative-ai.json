@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -25,6 +25,14 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:large-scale-datasets",
+        "label": "Large-Scale Datasets"
       }
     ],
     "enables": [
@@ -51,6 +59,22 @@
       {
         "id": "urn:ngm:class:procedural-content-generation",
         "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:automated-design",
+        "label": "Automated Design"
+      },
+      {
+        "id": "urn:ngm:class:ai-art",
+        "label": "AI Art"
       }
     ],
     "dependsOn": [],
@@ -59,12 +83,16 @@
       {
         "id": "urn:ngm:class:rule-based-systems",
         "label": "Rule-Based Systems"
+      },
+      {
+        "id": "urn:ngm:class:discriminative-ai",
+        "label": "Discriminative AI"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:digital-twin",
-        "label": "Digital Twins"
+        "label": "Digital Twin"
       },
       {
         "id": "urn:ngm:class:metaverse",
@@ -99,40 +127,261 @@
       {
         "id": "urn:ngm:class:style-transfer",
         "label": "Neural Style Transfer"
+      },
+      {
+        "id": "urn:ngm:class:clip-model",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:game-development",
         "label": "Game Development"
+      },
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "id": "urn:ngm:class:fashion",
+        "label": "Fashion"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:creative-software",
-        "label": "Creative Software"
+        "id": "urn:ngm:class:creative-industries",
+        "label": "Creative Industries"
       },
       {
-        "id": "urn:ngm:class:ai-art-categorization",
-        "label": "Ai Art Categorization"
-      },
-      {
-        "id": "urn:ngm:class:ai-application",
-        "label": "AI Application"
+        "id": "urn:ngm:class:computational-creativity",
+        "label": "Computational Creativity"
       },
       {
         "id": "urn:ngm:class:human-ai-collaboration",
         "label": "Human-AI Collaboration"
       },
       {
-        "id": "urn:ngm:class:intellectual-property-rights-framework",
-        "label": "Intellectual Property"
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "neural-style-transfer",
+      "label": "Neural Style Transfer"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "digital-content-creation",
+      "label": "Digital Content Creation"
+    },
+    {
+      "slug": "music-generation",
+      "label": "Music Generation"
+    },
+    {
+      "slug": "text-to-speech",
+      "label": "Text-to-Speech"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "human-ai-collaboration",
+      "label": "Human-AI Collaboration"
+    },
+    {
+      "slug": "copyright",
+      "label": "Copyright"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "game-development",
+      "label": "Game Development"
+    },
+    {
+      "slug": "film-production",
+      "label": "Film Production"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "multimodal-model",
+      "label": "Multimodal Model"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "discriminative-ai",
+      "label": "Discriminative AI"
+    },
+    {
+      "slug": "rule-based-systems",
+      "label": "Rule-Based Systems"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "metaverse",
+      "label": "Metaverse"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "ai-technique",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-application",
+      "label": "CreativeMediaDomain"
+    },
+    {
+      "slug": "ai-research-area",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "ComputeLayer"
+    },
+    {
+      "slug": "data-layer",
+      "label": "DataLayer"
+    },
+    {
+      "slug": "latent-space",
+      "label": "Latent Space"
+    },
+    {
+      "slug": "clip-model",
+      "label": "CLIP"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "automated-design",
+      "label": "Automated Design"
+    },
+    {
+      "slug": "ai-art",
+      "label": "AI Art"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-art-generation",
@@ -161,6 +410,10 @@
     {
       "slug": "content-generation",
       "label": "Content Generation"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
     },
     {
       "slug": "generative-ai",

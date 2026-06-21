@@ -148,6 +148,10 @@
       "label": "Cyber Security and Cryptography"
     },
     {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
       "slug": "remote-pair-programming",
       "label": "Remote Pair Programming"
     }

@@ -328,6 +328,10 @@
       "label": "California AI bill"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "cohere",
       "label": "Cohere"
     },

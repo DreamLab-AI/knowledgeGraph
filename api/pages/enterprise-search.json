@@ -144,6 +144,10 @@
       "label": "Chatbots"
     },
     {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
       "slug": "digital-workplace-platform",
       "label": "Digital Workplace Platform"
     },

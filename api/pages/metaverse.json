@@ -833,6 +833,14 @@
       "label": "Controlled Vocabulary"
     },
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    },
+    {
       "slug": "credential-format-standard",
       "label": "Credential Format Standard"
     },

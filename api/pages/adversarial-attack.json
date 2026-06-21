@@ -126,5 +126,10 @@
       "label": "MetaverseDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    }
+  ]
 }

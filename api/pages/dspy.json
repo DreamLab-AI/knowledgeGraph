@@ -10,11 +10,15 @@
     {
       "id": "urn:ngm:class:llm-application-framework",
       "label": "LLM Application Framework"
+    },
+    {
+      "id": "urn:ngm:class:automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
-  "maturity": "emerging",
+  "qualityScore": 0.9,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
@@ -22,16 +26,53 @@
       {
         "id": "urn:ngm:class:llm-orchestration",
         "label": "LLM Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:multi-step-reasoning",
+        "label": "Multi-Step Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:ai-agents",
+        "label": "AI Agents"
+      },
+      {
+        "id": "urn:ngm:class:structured-output",
+        "label": "Structured Output"
       }
     ],
     "dependsOn": [],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:automatic-prompt-optimisation",
+        "label": "Automatic Prompt Optimisation"
+      }
+    ],
     "contrastsWith": [],
     "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:prompt-engineering",
         "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:few-shot-prompting",
+        "label": "Few-Shot Prompting"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:in-context-learning",
+        "label": "In-Context Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ],
     "supports": [],
@@ -45,10 +86,171 @@
       {
         "id": "urn:ngm:class:chain-of-thought-prompting",
         "label": "Chain-of-Thought Prompting"
+      },
+      {
+        "id": "urn:ngm:class:langchain",
+        "label": "LangChain"
+      },
+      {
+        "id": "urn:ngm:class:hallucination",
+        "label": "Hallucination"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "llm-application-framework",
+      "label": "LLM Application Framework"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation"
+    },
+    {
+      "slug": "llm-orchestration",
+      "label": "LLM Orchestration"
+    },
+    {
+      "slug": "chain-of-thought-prompting",
+      "label": "Chain-of-Thought Prompting"
+    },
+    {
+      "slug": "llm-agents",
+      "label": "LLM Agents"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval Augmented Generation"
+    },
+    {
+      "slug": "few-shot-prompting",
+      "label": "Few-Shot Prompting"
+    },
+    {
+      "slug": "in-context-learning",
+      "label": "In-Context Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and Fine Tuning"
+    },
+    {
+      "slug": "instruction-following",
+      "label": "Instruction Following"
+    },
+    {
+      "slug": "model-optimisation",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
+      "slug": "evaluation-benchmarks",
+      "label": "Evaluation Benchmarks and Leaderboards"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents"
+    },
+    {
+      "slug": "langchain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "zero-shot-prompting",
+      "label": "Zero-Shot Prompting"
+    },
+    {
+      "slug": "multi-step-reasoning",
+      "label": "Multi-Step Reasoning"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "structured-output",
+      "label": "Structured Output"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "stanford-nlp-group",
+      "label": "Stanford NLP Group"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "ai-framework",
+      "label": "AI Framework"
+    },
+    {
+      "slug": "meta-learning",
+      "label": "Meta-Learning"
+    },
+    {
+      "slug": "self-consistency",
+      "label": "Self-Consistency"
+    },
+    {
+      "slug": "re-act",
+      "label": "ReAct"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    }
+  ],
   "backlinks": [
     {
       "slug": "automatic-prompt-optimisation",

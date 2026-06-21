@@ -144,6 +144,10 @@
       "label": "Adaptive Behaviour"
     },
     {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
       "slug": "nvidia-isaac-sim",
       "label": "NVIDIA Isaac Sim"
     },

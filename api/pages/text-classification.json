@@ -113,6 +113,10 @@
       "label": "Computational Linguistics"
     },
     {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
       "slug": "sentiment-analysis",
       "label": "Sentiment Analysis"
     }

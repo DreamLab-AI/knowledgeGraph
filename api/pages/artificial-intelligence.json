@@ -652,8 +652,28 @@
       "label": "Convolutional Neural Network"
     },
     {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
+    {
       "slug": "cyber-security-and-cryptography",
       "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "dicom",
+      "label": "DICOM"
     },
     {
       "slug": "data-breach",
@@ -676,12 +696,20 @@
       "label": "Data Versioning"
     },
     {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
       "slug": "decision-transparency",
       "label": "Decision Transparency"
     },
     {
       "slug": "deep-learning",
       "label": "Deep Learning"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
     },
     {
       "slug": "deep-mind",

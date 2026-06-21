@@ -664,6 +664,10 @@
       "label": "Conversion Pipeline"
     },
     {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
       "slug": "coordinate-system",
       "label": "Coordinate System"
     },
@@ -678,6 +682,10 @@
     {
       "slug": "cross-platform-digital-twins",
       "label": "Cross Platform Digital Twins"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
     },
     {
       "slug": "cultural-heritage-xr-experience",
@@ -696,12 +704,28 @@
       "label": "Cut Mix"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
       "slug": "data-analytics",
       "label": "Data Analytics"
     },
     {
       "slug": "data-augmentation-strategies",
       "label": "Data Augmentation Strategies"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
     },
     {
       "slug": "data-format-standard",
@@ -730,6 +754,10 @@
     {
       "slug": "data-visualisation",
       "label": "Data Visualisation"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
     },
     {
       "slug": "de-ber-ta",

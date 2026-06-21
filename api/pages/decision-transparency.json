@@ -29,6 +29,14 @@
       {
         "id": "urn:ngm:class:audit-trail",
         "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      },
+      {
+        "id": "urn:ngm:class:post-hoc-explanation",
+        "label": "Post Hoc Explanation"
       }
     ],
     "enables": [
@@ -43,6 +51,14 @@
       {
         "id": "urn:ngm:class:ai-trustworthiness",
         "label": "AI Trustworthiness"
+      },
+      {
+        "id": "urn:ngm:class:contestability",
+        "label": "Contestability"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
       }
     ],
     "dependsOn": [],
@@ -62,6 +78,14 @@
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
       }
     ],
     "standardizedBy": [],
@@ -74,10 +98,6 @@
       {
         "id": "urn:ngm:class:ai-fairness",
         "label": "AI Fairness"
-      },
-      {
-        "id": "urn:ngm:class:human-oversight",
-        "label": "Human Oversight"
       },
       {
         "id": "urn:ngm:class:model-interpretability",
@@ -94,6 +114,22 @@
       {
         "id": "urn:ngm:class:stakeholder-engagement-in-ai",
         "label": "Stakeholder Engagement in AI"
+      },
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      },
+      {
+        "id": "urn:ngm:class:gdpr",
+        "label": "GDPR"
+      },
+      {
+        "id": "urn:ngm:class:automated-decision-making",
+        "label": "Automated Decision-Making"
+      },
+      {
+        "id": "urn:ngm:class:counterfactual-explanation",
+        "label": "Counterfactual Explanation"
       }
     ]
   },
@@ -109,12 +145,144 @@
     {
       "slug": "digital-twin",
       "label": "Digital Twin"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "interpretability",
+      "label": "Interpretability"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "ai-trustworthiness",
+      "label": "AI Trustworthiness"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "ai-fairness",
+      "label": "AI Fairness"
+    },
+    {
+      "slug": "human-oversight",
+      "label": "Human Oversight"
+    },
+    {
+      "slug": "model-interpretability",
+      "label": "Model Interpretability"
+    },
+    {
+      "slug": "algorithmic-transparency-index",
+      "label": "Algorithmic Transparency Index"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "stakeholder-engagement-in-ai",
+      "label": "Stakeholder Engagement in AI"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    },
+    {
+      "slug": "lime",
+      "label": "LIME"
+    },
+    {
+      "slug": "post-hoc-explanation",
+      "label": "Post Hoc Explanation"
+    },
+    {
+      "slug": "ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
+      "slug": "contestability",
+      "label": "Contestability"
+    },
+    {
+      "slug": "counterfactual-explanation",
+      "label": "Counterfactual Explanation"
+    },
+    {
+      "slug": "feature-importance",
+      "label": "Feature Importance"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "automated-decision-making",
+      "label": "Automated Decision-Making"
     }
   ],
   "backlinks": [
     {
       "slug": "ai-documentation-standards",
       "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
     }
   ]
 }

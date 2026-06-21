@@ -189,6 +189,10 @@
       "label": "Business Process Automation"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "comfy-ui",
       "label": "Comfy Ui"
     },
@@ -211,6 +215,30 @@
     {
       "slug": "context-engineering",
       "label": "Context Engineering"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "customer-service-automation",
+      "label": "customer service automation"
+    },
+    {
+      "slug": "customer-support-automation",
+      "label": "Customer Support Automation"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
     },
     {
       "slug": "enterprise-workflow",

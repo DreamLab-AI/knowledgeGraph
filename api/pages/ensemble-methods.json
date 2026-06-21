@@ -164,6 +164,14 @@
       "label": "Conformal Prediction"
     },
     {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
     },

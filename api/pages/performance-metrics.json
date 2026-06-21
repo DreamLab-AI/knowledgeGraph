@@ -157,6 +157,10 @@
       "label": "Applied Machine Learning"
     },
     {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
       "slug": "human-factors",
       "label": "Human Factors"
     },

@@ -135,6 +135,10 @@
       "label": "Common Crawl"
     },
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "solid",
       "label": "Solid"
     }

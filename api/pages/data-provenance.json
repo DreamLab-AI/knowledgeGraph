@@ -213,6 +213,10 @@
       "label": "Compliance Audit Trail"
     },
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "provenance",
       "label": "Provenance"
     },

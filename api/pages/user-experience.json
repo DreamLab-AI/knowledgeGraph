@@ -202,6 +202,14 @@
       "label": "Cross-Platform Identity"
     },
     {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
       "slug": "etsi-domain-human-interface",
       "label": "ETSI_Domain_Human_Interface"
     },

@@ -13,14 +13,43 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "mature",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:utility-theory",
+        "label": "Utility Theory"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      },
+      {
+        "id": "urn:ngm:class:heuristics",
+        "label": "Heuristics"
+      },
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:probability-theory",
         "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:uncertainty-quantification",
+        "label": "Uncertainty Quantification"
+      },
+      {
+        "id": "urn:ngm:class:objective-function",
+        "label": "Objective Function"
       }
     ],
     "enables": [
@@ -31,6 +60,18 @@
       {
         "id": "urn:ngm:class:markov-decision-process",
         "label": "Markov Decision Process"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "id": "urn:ngm:class:policy-optimisation",
+        "label": "Policy Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:rational-agent",
+        "label": "Rational Agent"
       }
     ],
     "dependsOn": [],
@@ -39,6 +80,14 @@
       {
         "id": "urn:ngm:class:game-theory",
         "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "id": "urn:ngm:class:bounded-rationality",
+        "label": "Bounded Rationality"
       }
     ],
     "bridgesTo": [
@@ -49,12 +98,20 @@
       {
         "id": "urn:ngm:class:operations-research",
         "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:causal-reasoning",
+        "label": "Causal Reasoning"
       }
     ],
     "supports": [
@@ -69,6 +126,14 @@
       {
         "id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "standardizedBy": [],
@@ -81,10 +146,143 @@
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "utility-theory",
+      "label": "Utility Theory"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "operations-research",
+      "label": "Operations Research"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "ai-safety-research",
+      "label": "AI Safety Research"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "behavioural-economics",
+      "label": "Behavioural Economics"
+    },
+    {
+      "slug": "bounded-rationality",
+      "label": "Bounded Rationality"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "rational-agent",
+      "label": "Rational Agent"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "objective-function",
+      "label": "Objective Function"
+    },
+    {
+      "slug": "causal-reasoning",
+      "label": "Causal Reasoning"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "policy-optimisation",
+      "label": "Policy Optimisation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "heuristics",
+      "label": "Heuristics"
+    },
+    {
+      "slug": "value-function",
+      "label": "Value Function"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-safety-research",
@@ -97,6 +295,10 @@
     {
       "slug": "bayesian-decision-theory",
       "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
     },
     {
       "slug": "safety-and-alignment",

@@ -66,6 +66,10 @@
     {
       "slug": "collaborative-filtering",
       "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
     }
   ]
 }

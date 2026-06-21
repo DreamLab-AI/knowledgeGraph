@@ -55,6 +55,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
       "slug": "feedback-loop",
       "label": "Feedback Loop"
     }

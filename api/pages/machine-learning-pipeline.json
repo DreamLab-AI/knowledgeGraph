@@ -183,8 +183,16 @@
       "label": "Component"
     },
     {
+      "slug": "dvc",
+      "label": "DVC"
+    },
+    {
       "slug": "data-annotation",
       "label": "Data Annotation"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
     }
   ]
 }

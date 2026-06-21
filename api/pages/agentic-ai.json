@@ -518,6 +518,10 @@
       "label": "Autonomous Task Execution"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "code-generation",
       "label": "Code Generation"
     },
@@ -546,8 +550,32 @@
       "label": "Context Engineering"
     },
     {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
     },
     {
       "slug": "external-ai-harness",

@@ -88,5 +88,10 @@
       "label": "MetaverseDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    }
+  ]
 }

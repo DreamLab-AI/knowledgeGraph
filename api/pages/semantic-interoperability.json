@@ -135,6 +135,10 @@
       "label": "Controlled Vocabularies"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "digital-ontology-repository",
       "label": "Digital Ontology Repository"
     },

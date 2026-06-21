@@ -267,21 +267,20 @@ public:: true
   - implemented-in-layer:: [[Machine Learning]]
 
 - ### Relationships
-  - is-subclass-of:: [[Natural Language Processing]], [[Artificial Intelligence]]
-  - has-part:: [[Tokenization]], [[Named Entity Recognition]], [[Dependency Parsing]], [[Semantic Parsing]], [[Coreference Resolution]], [[Part-of-Speech Tagging]], [[Word Sense Disambiguation]], [[Discourse Analysis]], [[Relation Extraction]]
-  - requires:: [[Grammar]], [[Corpus Linguistics]], [[Statistical Language Model]], [[Linguistics]]
-  - enables:: [[Machine Translation]], [[Neural Machine Translation]], [[Sentiment Analysis]], [[Question Answering]], [[Natural Language Understanding]], [[Natural Language Generation]], [[Text Classification]], [[Knowledge Graph]]
-  - implements:: [[Syntax]], [[Semantics]], [[Morphology]], [[Phonology]], [[Pragmatics]]
-  - depends-on:: [[Word Embedding]], [[Transformer]], [[Attention Mechanism]], [[Pre Trained Language Model]], [[Deep Learning]]
-  - supports:: [[Speech Recognition]], [[Automatic Speech Recognition]], [[Text Mining]], [[Information Retrieval]], [[Sequence-to-Sequence Model]]
-  - uses:: [[Language Model]], [[Large Language Model]], [[Transfer Learning]], [[Fine-Tuning]], [[Statistical Language Model]]
-  - contrasts-with:: [[Psycholinguistics]]
-  - related-to:: [[Machine Learning]], [[Information Retrieval]], [[Knowledge Graph]], [[Corpus Linguistics]], [[Psycholinguistics]]
-  - standardized-by:: [[Association for Computational Linguistics]]
+  - is-subclass-of:: [[Natural Language Processing]], [[Artificial Intelligence]], [[Machine Learning]]
+  - has-part:: [[Tokenization]], [[Named Entity Recognition]], [[Dependency Parsing]], [[Semantic Parsing]], [[Coreference Resolution]], [[Part-of-Speech Tagging]], [[Word Sense Disambiguation]], [[Discourse Analysis]], [[Relation Extraction]], [[Semantic Role Labelling]], [[Text Classification]]
+  - requires:: [[Grammar]], [[Corpus Linguistics]], [[Statistical Language Model]], [[Linguistics]], [[Word Embedding]], [[Attention Mechanism]]
+  - enables:: [[Machine Translation]], [[Neural Machine Translation]], [[Sentiment Analysis]], [[Question Answering]], [[Natural Language Understanding]], [[Natural Language Generation]], [[Text Classification]], [[Knowledge Graph]], [[Dialogue Systems]], [[Summarisation]]
+  - implements:: [[Syntax]], [[Semantics]], [[Morphology]], [[Phonology]], [[Pragmatics]], [[Discourse Analysis]], [[Cross-Lingual Transfer]]
+  - depends-on:: [[Word Embedding]], [[Transformer]], [[Attention Mechanism]], [[Pre Trained Language Model]], [[Deep Learning]], [[Statistical Language Model]], [[Corpus Linguistics]]
+  - supports:: [[Speech Recognition]], [[Automatic Speech Recognition]], [[Text Mining]], [[Information Retrieval]], [[Sequence-to-Sequence Model]], [[Knowledge Graph]], [[Uncertainty Quantification]]
+  - uses:: [[Language Model]], [[Large Language Model]], [[Transfer Learning]], [[Fine-Tuning]], [[Statistical Language Model]], [[Transformer]], [[Pre Trained Language Model]]
+  - contrasts-with:: [[Psycholinguistics]], [[Symbolic AI]]
+  - related-to:: [[Machine Learning]], [[Information Retrieval]], [[Knowledge Graph]], [[Corpus Linguistics]], [[Psycholinguistics]], [[Deep Learning]], [[Representation Learning]], [[Cognitive Science]]
+  - standardized-by:: [[Association for Computational Linguistics]], [[Universal Dependencies]]
 
 - ### Content
-  - ## Compositional Relationships (Components)
-    - ```
+  ## Compositional Relationships (Components)
       SubClassOf(nlp:ComputationalLinguistics
         ObjectSomeValuesFrom(ai:hasPart nlp:Tokenization))
       SubClassOf(nlp:ComputationalLinguistics
@@ -298,9 +297,7 @@ public:: true
         ObjectSomeValuesFrom(ai:hasPart nlp:WordSenseDisambiguation))
       SubClassOf(nlp:ComputationalLinguistics
         ObjectSomeValuesFrom(ai:hasPart nlp:RelationExtraction))
-      ```
-  - ## Dependency Relationships
-    - ```
+  ## Dependency Relationships
       SubClassOf(nlp:ComputationalLinguistics
         ObjectSomeValuesFrom(ai:requires nlp:Grammar))
       SubClassOf(nlp:ComputationalLinguistics
@@ -313,9 +310,7 @@ public:: true
         ObjectSomeValuesFrom(ai:requires ai:Transformer))
       SubClassOf(nlp:ComputationalLinguistics
         ObjectSomeValuesFrom(ai:requires ai:AttentionMechanism))
-      ```
-  - ## Capability Relationships
-    - ```
+  ## Capability Relationships
       SubClassOf(nlp:ComputationalLinguistics
         ObjectSomeValuesFrom(ai:enables nlp:MachineTranslation))
       SubClassOf(nlp:ComputationalLinguistics
@@ -330,9 +325,7 @@ public:: true
         ObjectSomeValuesFrom(ai:enables ai:KnowledgeGraph))
       SubClassOf(nlp:ComputationalLinguistics
         ObjectSomeValuesFrom(ai:enables nlp:TextClassification))
-      ```
-  - ## Implementation Relationships
-    - ```
+  ## Implementation Relationships
       SubClassOf(nlp:ComputationalLinguistics
         ObjectSomeValuesFrom(ai:implements nlp:Syntax))
       SubClassOf(nlp:ComputationalLinguistics
@@ -343,9 +336,7 @@ public:: true
         ObjectSomeValuesFrom(ai:implements nlp:Phonology))
       SubClassOf(nlp:ComputationalLinguistics
         ObjectSomeValuesFrom(ai:implements nlp:Pragmatics))
-      ```
-  - ## Reduction Relationships
-    - ```
+  ## Reduction Relationships
       SubClassOf(nlp:ComputationalLinguistics
         ObjectSomeValuesFrom(ai:reducesTo nlp:NaturalLanguageProcessing))
       SubClassOf(nlp:ComputationalLinguistics
@@ -356,9 +347,7 @@ public:: true
         ObjectSomeValuesFrom(ai:reducesTo nlp:CorpusLinguistics))
       SubClassOf(nlp:ComputationalLinguistics
         ObjectSomeValuesFrom(ai:reducesTo nlp:ProbabilisticGrammar))
-      ```
-  - ## Support Relationships
-    - ```
+  ## Support Relationships
       SubClassOf(nlp:ComputationalLinguistics
         ObjectSomeValuesFrom(ai:supports nlp:SpeechRecognition))
       SubClassOf(nlp:ComputationalLinguistics
@@ -371,7 +360,6 @@ public:: true
         ObjectSomeValuesFrom(ai:supports nlp:SequenceToSequenceModel))
       SubClassOf(nlp:ComputationalLinguistics
         ObjectSomeValuesFrom(ai:supports ai:KnowledgeGraph))
-      ```
   - ## Formal Foundations and Theoretical Contributions
     - Computational Linguistics rests on a mathematical foundation that spans formal language theory, probability theory, information theory, and logic. The Chomsky hierarchy — with regular grammars (Type 3) recognised by finite automata, context-free grammars (Type 2) recognised by pushdown automata, context-sensitive grammars (Type 1) requiring linear bounded automata, and recursively enumerable languages (Type 0) requiring Turing machines — provides the complexity-theoretic framework for classifying natural language phenomena. Natural language [[Syntax]] is broadly context-free in its phrase-structure properties (efficiently parseable with CYK in O(n³) time) but requires mild context-sensitivity for cross-serial dependencies in languages like Dutch and Swiss German (Shieber 1985), motivating the development of mildly context-sensitive grammar formalisms: Tree-Adjoining Grammar (TAG; Joshi 1985), Combinatory Categorial Grammar (CCG; Steedman 2000), and Linear Context-Free Rewriting Systems (LCFRS) that can handle these dependencies while remaining polynomially parseable. These formalisms are still used as the basis of high-precision syntactic analysers for computational linguistic theory testing, and CCG in particular has been applied to wide-coverage [[Semantic Parsing]] (CCGBank; Hockenmaier & Steedman 2007).
     - Formal [[Semantics]] in Computational Linguistics is rooted in model-theoretic semantics following Montague (1970), who demonstrated that natural language could be given a rigorous compositional semantics using typed lambda calculus and intensional logic, mapping syntactic derivations to logical formula denotations via a principle of compositionality: the meaning of an expression is determined by the meanings of its parts and the rules combining them. Montague semantics underpins semantic parsing systems that map natural language to executable logical forms — SQL, SPARQL, or lambda calculus expressions — enabling natural language interfaces to databases and [[Knowledge Graph]] systems. Abstract Meaning Representation (AMR; Banarescu et al. 2013) provides a broad-coverage practical [[Semantics]] formalism representing sentence meanings as directed acyclic graphs, abstracting away from [[Syntax]] to capture propositional content. Frame [[Semantics]] (FrameNet; Fillmore 1976–2001) represents meaning in terms of conceptual frames and the semantic roles of participants, providing the theoretical grounding for [[Semantic Role Labelling]] systems that identify who did what to whom, when, where, and how.
@@ -499,6 +487,14 @@ public:: true
     - **Evaluation and benchmarking saturation** — Many standard Computational Linguistics benchmarks (GLUE, SuperGLUE, SQuAD) have been saturated by [[Large Language Model]]s that achieve scores above estimated human performance, yet these systems fail on simple linguistic variations and novel challenge sets. Developing robust, meaningful evaluation suites that genuinely test linguistic competence rather than surface pattern matching is one of the most pressing methodological challenges in Computational Linguistics.
     - **Hallucination and factuality** — [[Large Language Model]]s generate fluent, [[Grammar]]-correct text that is factually false at a rate unacceptable for high-stakes applications. Reducing hallucination requires integrating [[Knowledge Graph]] factual grounding, [[Relation Extraction]] for claim verification, and calibrated [[Uncertainty Quantification]] for model confidence — all within the Computational Linguistics tradition of grounding language in formal [[Semantics]] and world knowledge.
     - **Privacy and data ethics** — Training Computational Linguistics systems on web-scale corpora raises questions about consent, copyright, and memorisation of personal information. [[Text Mining]] of clinical records and social media at scale involves sensitive data requiring anonymisation via [[Named Entity Recognition]] and [[Coreference Resolution]] de-identification pipelines. The UK Information Commissioner's Office (ICO) and GDPR create compliance obligations for organisations deploying Clinical NLP systems.
+  - ## Formal Analysis
+    - Computational Linguistics is unique among the sub-disciplines of [[Artificial Intelligence]] in having a formal theoretical tradition — rooted in mathematical linguistics, formal language theory, and model-theoretic [[Semantics]] — that predates and remains independent of [[Machine Learning]]. This formal heritage provides precise complexity characterisations of linguistic phenomena, expressive power distinctions between grammar formalisms, and formal semantic compositionality principles that ground empirical NLP systems.
+    - **Formal language theory and the Chomsky hierarchy** — The Chomsky hierarchy classifies [[Grammar]] formalisms by the class of languages they generate and the computational devices that recognise them: Type 3 (regular, recognised by finite automata), Type 2 (context-free, recognised by pushdown automata), Type 1 (context-sensitive, recognised by linear bounded automata), and Type 0 (recursively enumerable, recognised by Turing machines). Natural language [[Syntax]] is demonstrably not regular — cross-serial dependencies and centre-embedding require at minimum context-free power. Shieber (1985) proved that Swiss German cross-serial dependencies are not context-free, establishing that natural language is mildly context-sensitive. Mildly context-sensitive grammar formalisms — Tree-Adjoining Grammar (TAG; Joshi 1985), Combinatory Categorial Grammar (CCG; Steedman 2000), and Multiple Context-Free Grammar (MCFG; Seki et al. 1991) — generate exactly the string languages that can be parsed in polynomial time (specifically O(n^6) for TAG) while handling all attested natural language dependencies. These results place natural language [[Syntax]] at a precisely characterised level of the computational hierarchy, between context-free and context-sensitive: a fundamental theoretical result motivating efficient parsing algorithms for real-world NLP pipelines.
+    - **Model-theoretic [[Semantics]] and compositionality** — Formal [[Semantics]] in the Montague tradition treats natural language sentences as denoting model-theoretic objects: truth values, sets of possible worlds, functions from entities to truth values (for verb phrases), and functions from such functions to truth values (for determiners). The principle of compositionality — that the meaning of a complex expression is determined by the meanings of its parts and the rules combining them — provides the formal basis for [[Semantic Parsing]] systems that map natural language to executable logical forms. Categorical grammar (Ajdukiewicz 1935; Bar-Hillel 1953) provides a particularly transparent compositional [[Semantics]]: each word is assigned a syntactic category (a function type), and the meaning of a phrase is the functional application of its head's semantic value to its argument's semantic value. This compositional apparatus is directly implemented in CCG-based [[Semantic Parsing]] systems (Lewis & Steedman 2013; Xu et al. 2020) that map sentences to SQL or SPARQL queries compositionally, enabling systematic generalisation to novel query forms not seen in training.
+    - **Expressivity of [[Statistical Language Model]]s** — Information-theoretic analysis characterises the relationship between language model perplexity and the entropy of natural language. Shannon (1948) estimated English entropy at 1.3 bits per character through human prediction experiments; modern [[Large Language Model]]s achieve perplexity of ~3–5 on clean English text (corresponding to 1.6–2.3 bits per token under BPE tokenisation), approaching but not yet reaching the Shannon entropy bound. The PAC-learning (Probably Approximately Correct) framework applies to certain Computational Linguistics tasks: [[Part-of-Speech Tagging]] with CRF models is PAC-learnable from polynomial training data given access to a polynomial-time labelling oracle. However, [[Semantic Parsing]] compositional generalisation — learning to map novel compositional inputs to executable logical forms — remains provably difficult for purely distribution-matching neural models: Hahn et al. (2020) prove that transformer architectures with positional encodings cannot solve certain sequence-to-sequence compositional generalisation tasks that formal grammar-based systems solve trivially, providing a formal separation result that motivates neurosymbolic hybrid Computational Linguistics architectures.
+    - **Algorithmic complexity of Computational Linguistics tasks** — The complexity of Computational Linguistics algorithms is precisely characterised: constituency parsing with a PCFG is O(n^3) using CYK (Younger 1967; Kasami 1965); [[Dependency Parsing]] with an arc-standard transition system is O(n) in sentence length (Nivre 2003); optimal 1-Endpoint Crossing (1EC) [[Dependency Parsing]] — handling the cross-lingual non-projective dependency structures found in Czech, Finnish, and Hindi — is O(n^2) (Pitler et al. 2013); unconstrained optimal dependency parsing with arbitrary non-projective edges is NP-hard (McDonald & Pereira 2006), motivating maximum spanning tree approximations (Eisner 1996; McDonald et al. 2005) that achieve O(n^2) with provably good solutions for the most common dependency structures. [[Named Entity Recognition]] with a linear-chain CRF is O(nL^2) where L is the label set size, enabling real-time NER in streaming text processing pipelines. These complexity characterisations govern system design: O(n) [[Dependency Parsing]] enables real-time processing of social media streams at millions of tokens per second; O(n^3) constituency parsing is feasible for documents but requires batching strategies for sub-second latency. The formal complexity landscape informs trade-offs between linguistic coverage (handling all linguistic phenomena) and practical deployability (processing text within latency constraints).
+    - **Structural probing and mechanistic interpretability** — Structural probing (Hewitt & Manning 2019) provides a formal statistical test for whether [[Transformer]] representations encode syntactic structure: a linear transformation is fit to map contextualised embeddings to a vector space where L2 distances approximate parse tree distances between words. The probe's performance — measured by UUAS (Unlabelled Undirected Attachment Score) — quantifies how linearly decodable syntactic tree structure is from a given model layer. This methodology provides a formal bridge between the implicit representations learned by neural [[Language Model]]s and the explicit structural annotations of [[Dependency Parsing]] treebanks, grounding interpretability claims in precisely specified statistical tests rather than informal inspection. Causal intervention experiments (path patching; Wang et al. 2023) extend this to causal claims: by interventionally ablating specific attention heads and measuring task performance, researchers identify which components are causally responsible for specific linguistic generalisations — providing mechanistic accounts of how [[Transformer]] models implement [[Syntax]]-sensitive computations.
+
   - ## Research & Literature
     - 1. Shannon, C. E. (1948). "A Mathematical Theory of Communication." Bell System Technical Journal, 27(3), 379–423. [Information-theoretic foundation of language modelling]
     - 2. Chomsky, N. (1957). Syntactic Structures. Mouton, The Hague. [Formal [[Grammar]] and generative linguistics]

@@ -5,15 +5,19 @@
   "public": true,
   "classIri": "urn:ngm:class:deep-reinforcement-learning",
   "domain": "machine-learning",
-  "definition": "Deep Reinforcement Learning (DRL) is a machine learning paradigm that combines deep neural networks with reinforcement learning, enabling agents to learn optimal policies for sequential decision-making tasks by interacting with an environment, receiving scalar reward signals, and updating neural network parameters through gradient-based optimisation. It has produced superhuman performance in games, robotics control, and language model alignment.",
+  "definition": "Deep Reinforcement Learning (DRL) is a machine learning paradigm that combines deep neural networks with reinforcement learning, enabling agents to learn optimal policies for sequential decision-making tasks by interacting with an environment, receiving scalar reward signals, and updating neural network parameters through gradient-based optimisation. Grounded in the Markov Decision Process framework, DRL applies the Bellman equation recursively to approximate value functions or directly optimise policies using methods such as DQN, PPO, SAC, and MuZero, achieving superhuman performance in games, robotics control, chip design, and language model alignment.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:deep-learning",
       "label": "Deep Learning"
+    },
+    {
+      "id": "urn:ngm:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -29,6 +33,10 @@
       {
         "id": "urn:ngm:class:experience-replay",
         "label": "Experience Replay"
+      },
+      {
+        "id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
       }
     ],
     "enables": [
@@ -47,6 +55,10 @@
       {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-reinforcement-learning",
+        "label": "Multi-Agent Reinforcement Learning"
       }
     ],
     "dependsOn": [],
@@ -58,6 +70,10 @@
       {
         "id": "urn:ngm:class:temporal-difference-learning",
         "label": "Temporal Difference Learning"
+      },
+      {
+        "id": "urn:ngm:class:proximal-policy-optimisation",
+        "label": "Proximal Policy Optimisation"
       }
     ],
     "contrastsWith": [
@@ -70,17 +86,12 @@
         "label": "Imitation Learning"
       }
     ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:robotics",
-        "label": "Robotics"
-      },
-      {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
-      }
-    ],
+    "bridgesTo": [],
     "uses": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
       {
         "id": "urn:ngm:class:action-space",
         "label": "Action Space"
@@ -94,19 +105,40 @@
         "label": "GPU Acceleration"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
-      },
-      {
         "id": "urn:ngm:class:policy-gradient-methods",
-        "label": "Policy Gradient"
+        "label": "Policy Gradient Methods"
       },
       {
         "id": "urn:ngm:class:reward-signal",
         "label": "Reward Signal"
+      },
+      {
+        "id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "id": "urn:ngm:class:bellman-equation",
+        "label": "Bellman Equation"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-tree-search",
+        "label": "Monte Carlo Tree Search"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:safe-ai",
+        "label": "Safe AI"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -120,11 +152,172 @@
       },
       {
         "id": "urn:ngm:class:model-based-reinforcement-learning",
-        "label": "Model-Based Reinforcement Learning"
+        "label": "Model Based Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:offline-reinforcement-learning",
+        "label": "Offline Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-policy",
+        "label": "Diffusion Policy"
+      },
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "markov-decision-process",
+      "label": "Markov Decision Process"
+    },
+    {
+      "slug": "bellman-equation",
+      "label": "Bellman Equation"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "policy-gradient-methods",
+      "label": "Policy Gradient Methods"
+    },
+    {
+      "slug": "q-learning",
+      "label": "Q-Learning"
+    },
+    {
+      "slug": "temporal-difference-learning",
+      "label": "Temporal Difference Learning"
+    },
+    {
+      "slug": "proximal-policy-optimisation",
+      "label": "Proximal Policy Optimisation"
+    },
+    {
+      "slug": "reward-signal",
+      "label": "Reward Signal"
+    },
+    {
+      "slug": "value-function",
+      "label": "Value Function"
+    },
+    {
+      "slug": "action-space",
+      "label": "Action Space"
+    },
+    {
+      "slug": "environment-model",
+      "label": "Environment Model"
+    },
+    {
+      "slug": "simulation-environment",
+      "label": "Simulation Environment"
+    },
+    {
+      "slug": "experience-replay",
+      "label": "Experience Replay"
+    },
+    {
+      "slug": "gpu-acceleration",
+      "label": "GPU Acceleration"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "agent",
+      "label": "Agent"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "model-based-reinforcement-learning",
+      "label": "Model Based Reinforcement Learning"
+    },
+    {
+      "slug": "offline-reinforcement-learning",
+      "label": "Offline Reinforcement Learning"
+    },
+    {
+      "slug": "multi-agent-reinforcement-learning",
+      "label": "Multi-Agent Reinforcement Learning"
+    },
+    {
+      "slug": "exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "monte-carlo-tree-search",
+      "label": "Monte Carlo Tree Search"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "diffusion-policy",
+      "label": "Diffusion Policy"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "safe-ai",
+      "label": "Safe AI"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-agent",

@@ -152,6 +152,10 @@
       "label": "AI Diagram Tools"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "common-sense-reasoning",
       "label": "Common Sense Reasoning"
     },

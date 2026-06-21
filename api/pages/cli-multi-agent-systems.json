@@ -462,8 +462,16 @@
   ],
   "backlinks": [
     {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
     },
     {
       "slug": "economics",

@@ -191,6 +191,22 @@
       "label": "Data Pipeline"
     },
     {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
       "slug": "dimensionality-reduction",
       "label": "Dimensionality Reduction"
     },

@@ -158,6 +158,14 @@
       "label": "Code Generation"
     },
     {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },

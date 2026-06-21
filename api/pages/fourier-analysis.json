@@ -101,6 +101,10 @@
       "label": "Audio Signal Processing"
     },
     {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
       "slug": "light-field",
       "label": "Light field"
     }

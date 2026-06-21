@@ -246,6 +246,10 @@
       "label": "Context Awareness"
     },
     {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
       "slug": "exoskeleton",
       "label": "Exoskeleton"
     },

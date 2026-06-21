@@ -293,6 +293,10 @@
       "label": "Benchmark Evaluation"
     },
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "pose-estimation",
       "label": "Pose Estimation"
     }

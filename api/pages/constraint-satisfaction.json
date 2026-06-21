@@ -395,6 +395,10 @@
       "label": "Constraint Solver"
     },
     {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "model-based-control",
       "label": "Model Based Control"
     },

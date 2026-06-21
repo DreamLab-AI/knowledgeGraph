@@ -141,6 +141,14 @@
       "label": "Cyber Security and Cryptography"
     },
     {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
       "slug": "digital-workplace-platform",
       "label": "Digital Workplace Platform"
     },

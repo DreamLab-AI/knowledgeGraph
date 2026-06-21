@@ -197,6 +197,10 @@
       "label": "Control Algorithm"
     },
     {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
       "slug": "derivative-control",
       "label": "Derivative Control"
     },

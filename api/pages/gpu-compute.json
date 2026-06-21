@@ -245,6 +245,14 @@
       "label": "controlnet"
     },
     {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

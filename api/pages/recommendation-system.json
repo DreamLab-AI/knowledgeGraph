@@ -163,6 +163,10 @@
       "label": "Collaborative Filtering"
     },
     {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
+    },
+    {
       "slug": "discovery-layer",
       "label": "Discovery Layer"
     },

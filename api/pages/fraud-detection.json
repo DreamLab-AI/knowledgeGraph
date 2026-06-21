@@ -147,6 +147,10 @@
       "label": "Compliance Monitoring"
     },
     {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "graph-database",
       "label": "Graph Database"
     },

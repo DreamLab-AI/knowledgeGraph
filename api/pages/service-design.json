@@ -94,6 +94,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    },
+    {
       "slug": "product-design",
       "label": "Product Design"
     }

@@ -160,6 +160,14 @@
       "label": "Clustering"
     },
     {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

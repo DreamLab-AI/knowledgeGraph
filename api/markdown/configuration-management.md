@@ -10,15 +10,15 @@
 
 - ### Relationships
   - is-subclass-of:: [[Software Engineering]], [[Automation]]
-  - has-part:: [[Version Control]], [[Change Management]], [[Idempotency]], [[Audit]], [[Baseline]]
+  - has-part:: [[Version Control]], [[Change Management]], [[Idempotency]], [[Audit]], [[Baseline]], [[Policy as Code]], [[SBOM]]
   - requires:: [[Version Control]], [[Idempotency]], [[Audit]], [[Build Automation]]
-  - enables:: [[Continuous Integration]], [[Continuous Delivery]], [[Continuous Deployment]], [[DevOps]], [[Reproducibility]], [[Disaster Recovery]], [[GitOps]], [[Infrastructure as Code]]
-  - implements:: [[Change Management]], [[Immutable Infrastructure]], [[Policy as Code]]
+  - enables:: [[Continuous Integration]], [[Continuous Delivery]], [[Continuous Deployment]], [[DevOps]], [[Reproducibility]], [[Disaster Recovery]], [[GitOps]], [[Infrastructure as Code]], [[Supply Chain Security]]
+  - implements:: [[Change Management]], [[Immutable Infrastructure]], [[Policy as Code]], [[SLSA]], [[SBOM]]
   - depends-on:: [[Software Engineering]], [[Automation]], [[Agile Software Development]]
-  - supports:: [[DevOps]], [[Quality Assurance]], [[Compliance]], [[MLOps]], [[Site Reliability Engineering]], [[Security Scanning]], [[Testing]], [[Observability]]
-  - uses:: [[Version Control]], [[Ansible]], [[Terraform]], [[GitOps]], [[Docker]], [[Kubernetes]]
+  - supports:: [[DevOps]], [[Quality Assurance]], [[Compliance]], [[MLOps]], [[Site Reliability Engineering]], [[Security Scanning]], [[Testing]], [[Observability]], [[DevSecOps]]
+  - uses:: [[Version Control]], [[Ansible]], [[Terraform]], [[GitOps]], [[Docker]], [[Kubernetes]], [[OpenTofu]], [[Pulumi]], [[Argo CD]], [[Flux CD]], [[HashiCorp Vault]], [[Open Policy Agent]], [[Sigstore]], [[Chef]], [[Puppet]], [[Jenkins]]
   - contrasts-with:: [[Manual Administration]]
-  - related-to:: [[Continuous Integration]], [[Testing]], [[Audit]], [[Site Reliability Engineering]], [[DevSecOps]], [[Platform Engineering]], [[Microservices]], [[Cloud Native]], [[Containerisation]], [[Cloud Computing]], [[Software Delivery Lifecycle]], [[Data Versioning]], [[Automated Testing]], [[Incident Response]]
+  - related-to:: [[Continuous Integration]], [[Testing]], [[Audit]], [[Site Reliability Engineering]], [[DevSecOps]], [[Platform Engineering]], [[Microservices]], [[Cloud Native]], [[Containerisation]], [[Cloud Computing]], [[Software Delivery Lifecycle]], [[Data Versioning]], [[Automated Testing]], [[Incident Response]], [[Supply Chain Security]], [[SBOM]]
   - bridges-to:: [[DevOps]], [[Infrastructure as Code]]
 
 - ### Content
@@ -124,7 +124,7 @@
 
   The transition to modern practice began in the 1990s with the proliferation of version control tools. Walter Tichy's RCS (Revision Control System, 1982) and the concurrent development of CVS made source code configuration management tractable for ordinary development teams. The distributed revision control revolution of the 2000s — Git (Linus Torvalds, 2005) — transformed [[Version Control]] into the indispensable backbone of virtually all software configuration management. Git's model of committing the full project tree as an immutable object graph, with cryptographically-linked history, solved the baseline and audit trail requirements of classical CM within a developer-native workflow.
 
-  The application of configuration management to entire system environments — not just source code — gave rise to Infrastructure as Code. Puppet (2005), CFEngine (1993, precursor to modern IaC), Chef (2009), and Ansible (2012) brought desired-state configuration to server management: instead of applying changes manually over SSH, administrators wrote declarative resource definitions that tools applied convergently. Terraform (2014) extended this to cloud infrastructure provisioning, and [[GitOps]] formalised the pattern of using a Git repository as the single source of truth for cluster state, with automated operators (Flux CD, Argo CD) continuously reconciling live state to the declared desired state.
+  The application of configuration management to entire system environments — not just source code — gave rise to [[Infrastructure as Code]]. [[Puppet]] (2005), CFEngine (1993, precursor to modern IaC), [[Chef]] (2009), and [[Ansible]] (2012) brought desired-state configuration to server management: instead of applying changes manually over SSH, administrators wrote declarative resource definitions that tools applied convergently. [[Terraform]] (2014) extended this to cloud infrastructure provisioning, and [[GitOps]] formalised the pattern of using a Git repository as the single source of truth for cluster state, with automated operators ([[Flux CD]], [[Argo CD]]) continuously reconciling live state to the declared desired state.
 
   In the [[MLOps]] context, configuration management encompasses both the DevOps tooling layer (environment definitions for training and serving) and specialised ML artefacts: experiment configurations (hyperparameters, random seeds, dataset splits), model training job specifications, serving endpoint definitions, and A/B testing configurations. [[Data Versioning]] tools such as DVC and LakeFS extend configuration management principles to datasets, treating dataset snapshots as versioned, addressable objects linked to the model versions trained on them.
 
@@ -135,9 +135,9 @@
   - **Source code modules** — application code, library dependencies (pinned via lock files), pipeline definitions
   - **Environment specifications** — OS images, container base images (Dockerfile), package manifests (requirements.txt, go.mod)
   - **Infrastructure definitions** — Terraform modules defining VPC, subnets, load balancers, databases; Kubernetes manifests defining deployments, services, config maps
-  - **Configuration files and secrets** — application configuration, environment variables (managed via HashiCorp Vault, AWS Parameter Store, or Sealed Secrets); these are distinct from secrets, which must not be committed to [[Version Control]] in plaintext
-  - **Pipeline definitions** — CI/CD YAML files (GitHub Actions workflows, Tekton pipelines, Jenkins declarative pipelines)
-  - **Policy definitions** — OPA (Open Policy Agent) Rego rules, Conftest policies, AWS Service Control Policies — these constitute [[Policy as Code]]
+  - **Configuration files and secrets** — application configuration, environment variables (managed via [[HashiCorp Vault]], AWS Parameter Store, or Sealed Secrets); these are distinct from secrets, which must not be committed to [[Version Control]] in plaintext
+  - **Pipeline definitions** — CI/CD YAML files (GitHub Actions workflows, Tekton pipelines, [[Jenkins]] declarative pipelines)
+  - **Policy definitions** — [[Open Policy Agent]] Rego rules, Conftest policies, AWS Service Control Policies — these constitute [[Policy as Code]]
 
   ### Baseline Types
   - **Functional baseline**: the approved functional requirements specification; gates entry to design
@@ -156,9 +156,9 @@
   ### Drift Detection and Remediation
   Configuration drift — the silent divergence of actual system state from the declared desired state — is the primary operational failure mode that configuration management prevents. Detection mechanisms include:
   - **Scheduled compliance scans**: tools run the CM tool in dry-run mode and report any difference between actual and desired state
-  - **Continuous reconciliation** (GitOps): operators such as Argo CD run every 3 minutes by default and apply corrective patches immediately when drift is detected
-  - **Immutable infrastructure**: drift is prevented architecturally by never patching running systems; all changes flow through image rebuild and redeployment
-  - **Chef InSpec / AWS Config Rules / Azure Policy**: continuous compliance frameworks that evaluate live resources against policy baselines in real time
+  - **Continuous reconciliation** ([[GitOps]]): operators such as [[Argo CD]] run every 3 minutes by default and apply corrective patches immediately when drift is detected
+  - **Immutable infrastructure**: drift is prevented architecturally by never patching running systems; all changes flow through image rebuild and redeployment via [[Immutable Infrastructure]] principles
+  - **Chef InSpec / AWS Config Rules / Azure Policy**: continuous compliance frameworks that evaluate live resources against [[Policy as Code|policy baselines]] in real time
 
   ## Tool Families
 
@@ -169,14 +169,14 @@
   - **SaltStack / Salt Project** (2011–): event-driven, fast minion-based execution; now maintained as open source after VMware Tanzu acquisition; strong in large-scale, real-time configuration at HPC scale
 
   ### Infrastructure Provisioning (IaC)
-  - **[[Terraform]]** (HashiCorp, 2014–): declarative HCL; multi-cloud resource provisioning; the de facto multi-cloud IaC standard; OpenTofu fork (CNCF, 2023) provides a fully open-source alternative, with reports suggesting roughly 20% of new projects in 2025 starting on OpenTofu rather than Terraform
-  - **[[OpenTofu]]** (CNCF, 2023–): community-maintained Terraform fork under MPL licence; API-compatible; growing adoption in regulated and public-sector environments
-  - **Pulumi** (2018–): infrastructure defined in real programming languages (TypeScript, Python, Go, .NET); appeals to development teams uncomfortable with HCL; growing adoption in 2025 for complex multi-cloud topologies
-  - **AWS CloudFormation / CDK**: AWS-native IaC; CDK allows infrastructure definition in TypeScript/Python with synthesis to CloudFormation templates
+  - **[[Terraform]]** (HashiCorp, 2014–): declarative HCL; multi-cloud resource provisioning; the de facto multi-cloud IaC standard; by April 2026 Terraform commands ~33–62% market share depending on measurement methodology
+  - **[[OpenTofu]]** (CNCF, 2023–): community-maintained Terraform fork under MPL licence; API-compatible; approximately 12% adoption among IaC practitioners in 2026, with 27% of teams planning to evaluate or expand its use; ships state encryption (v1.7), early variable evaluation (v1.8), and OCI registry support (v1.10) ahead of the Terraform open binary
+  - **[[Pulumi]]** (2018–): infrastructure defined in real programming languages (TypeScript, Python, Go, .NET); appeals to development teams uncomfortable with HCL; growing adoption in 2025–2026 for complex multi-cloud topologies
+  - **AWS CloudFormation / CDK**: AWS-native IaC; CDK allows infrastructure definition in TypeScript/Python with synthesis to CloudFormation templates; tight integration with [[Cloud Computing|AWS cloud services]]
 
   ### GitOps Operators
-  - **Argo CD**: declarative GitOps continuous delivery for [[Kubernetes]]; syncs cluster state to Git repositories; most widely adopted GitOps tool as of 2025
-  - **Flux CD**: CNCF graduated; pull-based GitOps; strong multi-tenancy model; native Helm and Kustomize support
+  - **[[Argo CD]]**: declarative [[GitOps]] continuous delivery for [[Kubernetes]]; syncs cluster state to Git repositories; most widely adopted GitOps tool as of 2025; CNCF's 2023 GitOps microsurvey found 91% of respondents already using GitOps
+  - **[[Flux CD]]**: CNCF graduated; pull-based GitOps; strong multi-tenancy model; native Helm and Kustomize support; complements [[Kubernetes]] in multi-cluster [[Platform Engineering]] platforms
 
   ### Configuration Management Databases (CMDB)
   - ITIL defines a CMDB as the authoritative repository of all CIs and their relationships; modern ITSM platforms (ServiceNow, BMC Helix) provide CMDBs integrated with discovery, [[Change Management]], and incident management workflows
@@ -222,8 +222,8 @@
 
   The dominant trends shaping the 2025–2026 landscape are:
   - **[[OpenTofu]] and Terraform fragmentation**: HashiCorp's 2023 re-licensing of Terraform from MPL to BSL triggered the OpenTofu fork under CNCF governance. By 2025, roughly 20% of new IaC projects were starting on OpenTofu rather than Terraform, particularly in public-sector and open-source-first organisations.
-  - **AI-assisted configuration generation**: LLM-based tools (GitHub Copilot for infrastructure, Pulumi AI, TerraFormer) are automating the generation of Terraform and Ansible configurations from natural language descriptions. TerraFormer (2025, arXiv:2601.08734) demonstrated fine-tuning LLMs with policy-guided verifier feedback to produce valid, secure IaC.
-  - **[[Policy as Code]] and DevSecOps integration**: OPA (Open Policy Agent) with Rego, Checkov, and Terrascan are embedded into CI/CD pipelines as pre-apply policy gates, ensuring that no configuration change can be applied without passing security and compliance checks. This closes the configuration management and [[Security Scanning]] disciplines.
+  - **AI-assisted configuration generation**: [[Large Language Models|LLM]]-based tools (GitHub Copilot for infrastructure, Pulumi AI, TerraFormer) are automating the generation of [[Terraform]] and [[Ansible]] configurations from natural language descriptions. TerraFormer (2025, arXiv:2601.08734) demonstrated fine-tuning LLMs with policy-guided verifier feedback to produce valid, secure IaC. As of 2026, AI is writing IaC faster than teams can review it — making automated policy gates more critical than ever.
+  - **[[Policy as Code]] and [[DevSecOps]] integration**: [[Open Policy Agent]] (OPA) with Rego, Checkov, and Terrascan are embedded into [[Continuous Integration|CI/CD]] pipelines as pre-apply policy gates, ensuring that no configuration change can be applied without passing security and compliance checks. This closes the configuration management and [[Security Scanning]] disciplines.
   - **Immutable infrastructure dominance**: Immutable infrastructure (replace rather than patch) held over 60% market share in 2024, reflecting the near-universal adoption of container-based deployments where [[Containerisation]] makes the image the configuration artefact.
   - **GitOps maturity**: Argo CD and Flux CD are CNCF graduated projects with broad enterprise adoption; [[GitOps]] is now the default operating model for [[Kubernetes]] environments rather than an experimental pattern.
 
@@ -242,8 +242,8 @@
   ## Future Directions (2026–2030)
 
   - **LLM-native configuration management**: AI assistants will generate, review, and validate configuration definitions with integrated policy checking, dramatically lowering the barrier to IaC adoption for teams without deep platform engineering expertise. Human review will focus on intent and security boundaries rather than syntactic correctness.
-  - **Configuration management for AI systems**: As organisations deploy AI agents and autonomous systems, configuration management must extend to model weights, prompt templates, retrieval index configurations, and agent behaviour policies — domains where existing CM tooling (Git, Terraform) provides only partial coverage. New tooling categories will emerge.
-  - **Security-first configuration management**: Integration of configuration management with supply chain security frameworks (SLSA, SBOM, Sigstore) will make cryptographic provenance attestation a standard part of the configuration item lifecycle, countering software supply chain attacks.
+  - **Configuration management for AI systems**: As organisations deploy AI agents and [[Autonomous Systems|autonomous systems]], configuration management must extend to model weights, prompt templates, retrieval index configurations, and agent behaviour policies — domains where existing CM tooling (Git, [[Terraform]]) provides only partial coverage. [[MLOps]] platforms (MLflow, Kubeflow) are adding CM-native features for model versioning and deployment configuration. New tooling categories will emerge to manage [[Large Language Models|LLM]] prompt configurations, [[Retrieval Augmented Generation|RAG index]] definitions, and agent tool definitions as first-class configuration artefacts.
+  - **Security-first configuration management**: Integration of configuration management with supply chain security frameworks ([[SLSA]], [[SBOM]], [[Sigstore]]) will make cryptographic provenance attestation a standard part of the configuration item lifecycle, countering software [[Supply Chain Security|supply chain attacks]]. The EU Cyber Resilience Act (CRA, passed 2024, applying from 2027) will require SBOM generation and vulnerability management as mandatory CM activities for CE-marked software products in the European market.
   - **Autonomous configuration remediation**: Self-healing infrastructure agents will detect configuration drift and apply remediation automatically without human approval for low-risk changes, reserving human review for high-risk changes. This extends [[GitOps]] reconciliation from infrastructure to application configuration.
   - **Quantum-resistant configuration stores**: As post-quantum cryptography standards (NIST PQC, 2024) are adopted, the hash functions and digital signatures underpinning Git's integrity model will require migration — a configuration management challenge in itself.
   - **Edge and IoT configuration management**: Managing configuration at billions of edge devices and embedded systems requires lightweight, bandwidth-efficient CM protocols distinct from cloud-native GitOps; expect new OTA (over-the-air) update frameworks with CM properties built in.
@@ -253,14 +253,15 @@
   Configuration management is the foundational layer on which [[DevSecOps]] — the integration of security into [[DevOps]] workflows — is built. The reason is structural: security posture is itself a configuration property. Whether a service runs with least-privilege permissions, whether TLS is enforced, whether a database is exposed to the public internet, whether encryption at rest is enabled — all of these are configuration decisions that must be defined, version-controlled, and automatically verified.
 
   **[[Policy as Code]] tooling** makes security a first-class configuration management concern:
-  - **Open Policy Agent (OPA)**: A general-purpose policy engine whose Rego language expresses security policies as code. Terraform plans are evaluated against OPA policies before application; only plans that pass all policies are allowed to proceed. This prevents misconfigured resources from reaching production.
-  - **Checkov**: An open-source static analysis tool for IaC (Terraform, CloudFormation, Kubernetes YAML, Dockerfile) that checks configurations against 1,000+ built-in security and compliance checks before deployment.
-  - **Terrascan**: Similar to Checkov; integrates with CI pipelines to block deployment of insecure configurations.
+  - **[[Open Policy Agent]] (OPA)**: A general-purpose policy engine whose Rego language expresses security policies as code. [[Terraform]] plans are evaluated against OPA policies before application; only plans that pass all policies are allowed to proceed. This prevents misconfigured resources from reaching production.
+  - **Checkov**: An open-source static analysis tool for IaC ([[Terraform]], CloudFormation, [[Kubernetes]] YAML, Dockerfile) that checks configurations against 1,000+ built-in security and [[Compliance]] checks before deployment.
+  - **Terrascan**: Similar to Checkov; integrates with [[Continuous Integration|CI]] pipelines to block deployment of insecure configurations.
   - **Chef InSpec**: A compliance-as-code framework that tests live systems against security baselines (CIS Benchmarks, STIG, PCI DSS controls), generating [[Audit]] evidence suitable for regulatory reporting.
-  - **SLSA (Supply Chain Levels for Software Artefacts)**: A Google-originated framework (now under OpenSSF) that defines levels of provenance assurance for build artefacts. Configuration management of the build pipeline itself is a prerequisite for SLSA Level 2 and above.
-  - **Sigstore and Cosign**: Cryptographic signing of container images and IaC artefacts; when combined with configuration management, every deployed artefact carries a verifiable chain of custody from source commit to running workload.
+  - **[[SLSA]] (Supply Chain Levels for Software Artefacts)**: A Google-originated framework (now under OpenSSF) that defines levels of provenance assurance for build artefacts. Configuration management of the build pipeline itself is a prerequisite for SLSA Level 2 and above.
+  - **[[Sigstore]] and Cosign**: Cryptographic signing of container images and IaC artefacts; when combined with configuration management, every deployed artefact carries a verifiable chain of custody from source commit to running workload.
+  - **[[SBOM]] (Software Bill of Materials)**: Machine-readable inventories of all software components and their versions; SBOM generation is increasingly mandated (US Executive Order 14028; EU Cyber Resilience Act) and is a configuration management artefact, tracking the exact component configuration of each software release.
 
-  The convergence of configuration management and security has produced the concept of **shift-left compliance**: rather than auditing compliance after deployment, compliance checks are embedded into the pull request review workflow. A developer submitting a Terraform change that would open a security group to 0.0.0.0/0 receives an immediate policy violation notification in the CI pipeline, before any human reviewer needs to catch it.
+  The convergence of configuration management and security has produced the concept of **shift-left compliance**: rather than auditing [[Compliance|compliance]] after deployment, compliance checks are embedded into the pull request review workflow. A developer submitting a [[Terraform]] change that would open a security group to 0.0.0.0/0 receives an immediate policy violation notification in the [[Continuous Integration|CI]] pipeline, before any human reviewer needs to catch it. The UK Cyber Security and Resilience Bill (introduced to Parliament November 2025, expected Royal Assent 2026) extends [[Compliance|compliance]] obligations to supply chain security, reinforcing the importance of IaC-tracked configuration management for operators of network and information systems infrastructure.
 
   ## Configuration Management in the ITIL 4 / ITSM Context
 
@@ -346,12 +347,12 @@
   Secrets management is a specialised branch of configuration management with heightened security requirements. Credentials (API keys, database passwords, TLS certificates, SSH private keys) are configuration items, but they must not be stored in plaintext in [[Version Control]] — the catastrophic failure mode of accidental credential commit is one of the most common causes of security breaches.
 
   The canonical patterns for secrets CM:
-  - **External secrets stores**: HashiCorp Vault, AWS Secrets Manager, Azure Key Vault, GCP Secret Manager. Secrets are stored and accessed via API at runtime; IaC references the secret's path rather than its value; applications authenticate to the secrets store using workload identity (AWS IAM role, GCP Workload Identity).
-  - **Sealed Secrets (Kubernetes)**: A Kubernetes-native pattern (Bitnami Sealed Secrets) that encrypts secrets with a cluster-specific public key, allowing the encrypted secret to be committed to git; only the cluster's controller can decrypt it.
-  - **External Secrets Operator (ESO)**: An open-source Kubernetes operator that reads from external secrets stores (Vault, AWS Secrets Manager, etc.) and synchronises values into Kubernetes Secrets at runtime, with automatic rotation.
-  - **SOPS (Secrets OPerationS)**: A CLI tool that encrypts specific values within YAML/JSON files using AWS KMS, GCP KMS, or PGP, allowing secret-containing configuration files to be committed to git in encrypted form.
+  - **External secrets stores**: [[HashiCorp Vault]], AWS Secrets Manager, Azure Key Vault, GCP Secret Manager. Secrets are stored and accessed via API at runtime; IaC references the secret's path rather than its value; applications authenticate to the secrets store using workload identity (AWS IAM role, GCP Workload Identity).
+  - **Sealed Secrets ([[Kubernetes]])**: A Kubernetes-native pattern (Bitnami Sealed Secrets) that encrypts secrets with a cluster-specific public key, allowing the encrypted secret to be committed to git; only the cluster's controller can decrypt it.
+  - **External Secrets Operator (ESO)**: An open-source [[Kubernetes]] operator that reads from external secrets stores (Vault, AWS Secrets Manager, etc.) and synchronises values into Kubernetes Secrets at runtime, with automatic rotation.
+  - **SOPS (Secrets OPerationS)**: A CLI tool that encrypts specific values within YAML/JSON files using AWS KMS, GCP KMS, or PGP, allowing secret-containing configuration files to be committed to git in encrypted form; integrates natively with [[GitOps]] workflows using [[Argo CD]] or [[Flux CD]].
 
-  The intersection of secrets management and configuration management is a key concern for [[DevSecOps]]: the secrets CM process must be subject to the same change control, audit, and rotation policies as infrastructure configuration, but with additional access control and encryption requirements.
+  The intersection of secrets management and configuration management is a key concern for [[DevSecOps]]: the secrets CM process must be subject to the same change control, [[Audit|audit]], and rotation policies as infrastructure configuration, but with additional access control and encryption requirements. [[Supply Chain Security]] frameworks ([[SLSA]], [[Sigstore]]) extend this to the entire software supply chain, verifying the provenance of every artefact from source commit to deployed workload.
 
   ## Configuration Management in Regulated and Safety-Critical Domains
 

@@ -257,8 +257,16 @@
       "label": "Consumer Protection"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "data-anonymization-pipeline",
       "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
     },
     {
       "slug": "data-protection-law",

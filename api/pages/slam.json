@@ -266,6 +266,10 @@
       "label": "Camera"
     },
     {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
       "slug": "depth-estimation",
       "label": "Depth Estimation"
     },

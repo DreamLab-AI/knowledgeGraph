@@ -233,6 +233,10 @@
       "label": "Control Theory"
     },
     {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
       "slug": "extended-kalman-filter",
       "label": "Extended Kalman Filter"
     },

@@ -550,6 +550,10 @@
       "label": "Constraint"
     },
     {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "llm-application-frameworks",
       "label": "LLM Application Frameworks"
     },

@@ -101,6 +101,10 @@
     {
       "slug": "automatic-differentiation",
       "label": "Automatic Differentiation"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
     }
   ]
 }

@@ -630,8 +630,28 @@
       "label": "controlnet"
     },
     {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
       "slug": "data-annotation",
       "label": "Data Annotation"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
     },
     {
       "slug": "deep-learning",

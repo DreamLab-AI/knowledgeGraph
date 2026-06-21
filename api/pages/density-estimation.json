@@ -101,6 +101,10 @@
     {
       "slug": "clustering",
       "label": "Clustering"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
     }
   ]
 }

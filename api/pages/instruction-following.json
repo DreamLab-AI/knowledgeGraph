@@ -143,6 +143,10 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
     },

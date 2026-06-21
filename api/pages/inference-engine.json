@@ -173,6 +173,10 @@
       "label": "Constraint Satisfaction"
     },
     {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "edge-inference",
       "label": "Edge Inference"
     },

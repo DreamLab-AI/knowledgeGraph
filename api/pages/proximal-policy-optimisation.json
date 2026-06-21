@@ -73,6 +73,10 @@
       "label": "Action Space"
     },
     {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
       "slug": "training-and-fine-tuning",
       "label": "Training and fine tuning"
     }

@@ -549,6 +549,10 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "fine-tuning",
       "label": "Fine Tuning"
     },

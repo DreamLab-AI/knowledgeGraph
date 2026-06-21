@@ -709,6 +709,10 @@
       "label": "controlnet"
     },
     {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
       "slug": "depth-estimation",
       "label": "Depth Estimation"
     },

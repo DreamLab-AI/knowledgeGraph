@@ -131,6 +131,10 @@
       "label": "Code Generation"
     },
     {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "function-calling",
       "label": "Function Calling"
     },

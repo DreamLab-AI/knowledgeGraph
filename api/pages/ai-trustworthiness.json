@@ -186,6 +186,10 @@
       "label": "Cross Border Compliance"
     },
     {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
       "slug": "policy-enforcement",
       "label": "Policy Enforcement"
     }

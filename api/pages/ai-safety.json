@@ -505,6 +505,10 @@
       "label": "California AI bill"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "cognitive-architecture",
       "label": "Cognitive Architecture"
     },
@@ -535,6 +539,18 @@
     {
       "slug": "content-moderation",
       "label": "Content Moderation"
+    },
+    {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
     },
     {
       "slug": "evaluation-benchmarks-and-leaderboards",

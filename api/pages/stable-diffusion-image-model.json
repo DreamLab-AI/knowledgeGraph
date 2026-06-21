@@ -107,6 +107,14 @@
     {
       "slug": "control-net",
       "label": "controlnet"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
     }
   ]
 }

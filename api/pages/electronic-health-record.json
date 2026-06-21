@@ -106,6 +106,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "variational-autoencoders",
       "label": "Variational Autoencoders"
     }

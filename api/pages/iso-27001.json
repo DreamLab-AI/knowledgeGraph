@@ -149,6 +149,10 @@
       "label": "Cyber Security and Military"
     },
     {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
       "slug": "digital-identity-management",
       "label": "Digital Identity Management"
     },

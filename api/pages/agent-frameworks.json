@@ -702,6 +702,10 @@
       "label": "Cortex Agent"
     },
     {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
       "slug": "decentralized-finance-de-fi",
       "label": "Decentralized Finance (DeFi)"
     },

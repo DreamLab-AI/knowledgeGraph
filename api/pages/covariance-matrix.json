@@ -5,22 +5,47 @@
   "public": true,
   "classIri": "urn:ngm:class:covariance-matrix",
   "domain": "machine-learning",
-  "definition": "A covariance matrix is a square symmetric matrix whose entries are the pairwise covariances between the components of a random vector, with variances on its diagonal. It summarises the second-order statistics and linear dependence structure of multivariate data. Positive semi-definite by construction, it is central to multivariate statistics, dimensionality reduction and probabilistic estimation.",
+  "definition": "A covariance matrix is a square symmetric positive semi-definite matrix whose (i,j) entry is the covariance between the i-th and j-th components of a multivariate random variable, with variances on the main diagonal. It completely characterises the second-order statistics and linear dependence structure of a multivariate distribution, and \u2014 together with the mean vector \u2014 fully specifies a multivariate Gaussian. The covariance matrix is central to multivariate statistics, machine learning, state estimation, signal processing, and finance, serving as the fundamental data structure for representing and propagating uncertainty in high-dimensional systems.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:linear-algebra",
       "label": "Linear Algebra"
+    },
+    {
+      "id": "urn:ngm:class:multivariate-statistics",
+      "label": "Multivariate Statistics"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
-  "maturity": "mature",
+  "qualityScore": 0.9,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:variance",
+        "label": "Variance"
+      },
+      {
+        "id": "urn:ngm:class:correlation-matrix",
+        "label": "Correlation Matrix"
+      },
+      {
+        "id": "urn:ngm:class:eigendecomposition",
+        "label": "Eigendecomposition"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:linear-algebra",
         "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:multivariate-data",
+        "label": "Multivariate Data"
       }
     ],
     "enables": [
@@ -31,18 +56,55 @@
       {
         "id": "urn:ngm:class:dimensionality-reduction",
         "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:mahalanobis-distance",
+        "label": "Mahalanobis Distance"
+      },
+      {
+        "id": "urn:ngm:class:whitening",
+        "label": "Whitening"
+      },
+      {
+        "id": "urn:ngm:class:factor-analysis",
+        "label": "Factor Analysis"
+      },
+      {
+        "id": "urn:ngm:class:portfolio-optimisation",
+        "label": "Portfolio Optimisation"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:gaussian-distribution",
         "label": "Gaussian Distribution"
+      },
+      {
+        "id": "urn:ngm:class:random-variable",
+        "label": "Random Variable"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:correlation-matrix",
+        "label": "Correlation Matrix"
+      },
+      {
+        "id": "urn:ngm:class:precision-matrix",
+        "label": "Precision Matrix"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
+      {
+        "id": "urn:ngm:class:eigendecomposition",
+        "label": "Eigendecomposition"
+      },
+      {
+        "id": "urn:ngm:class:singular-value-decomposition",
+        "label": "Singular Value Decomposition"
+      },
       {
         "id": "urn:ngm:class:feature-extraction",
         "label": "Feature Extraction"
@@ -60,6 +122,18 @@
       {
         "id": "urn:ngm:class:bayesian-inference",
         "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:state-estimation",
+        "label": "State Estimation"
       }
     ],
     "standardizedBy": [],
@@ -67,6 +141,10 @@
       {
         "id": "urn:ngm:class:probability-distribution",
         "label": "Probability Distribution"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-distribution",
+        "label": "Gaussian Distribution"
       }
     ],
     "relatedTo": [
@@ -81,9 +159,187 @@
       {
         "id": "urn:ngm:class:feature-extraction",
         "label": "Feature Extraction"
+      },
+      {
+        "id": "urn:ngm:class:random-matrix-theory",
+        "label": "Random Matrix Theory"
+      },
+      {
+        "id": "urn:ngm:class:cost-function",
+        "label": "Cost Function"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
       }
     ]
   },
-  "wikilinks": [],
-  "backlinks": []
+  "wikilinks": [
+    {
+      "slug": "probability-distribution",
+      "label": "Probability Distribution"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "gaussian-distribution",
+      "label": "Gaussian Distribution"
+    },
+    {
+      "slug": "principal-component-analysis",
+      "label": "Principal Component Analysis"
+    },
+    {
+      "slug": "dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    },
+    {
+      "slug": "kalman-filter",
+      "label": "Kalman Filter"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "feature-extraction",
+      "label": "Feature Extraction"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "multivariate-statistics",
+      "label": "Multivariate Statistics"
+    },
+    {
+      "slug": "eigendecomposition",
+      "label": "Eigendecomposition"
+    },
+    {
+      "slug": "singular-value-decomposition",
+      "label": "Singular Value Decomposition"
+    },
+    {
+      "slug": "regularisation",
+      "label": "Regularisation"
+    },
+    {
+      "slug": "mahalanobis-distance",
+      "label": "Mahalanobis Distance"
+    },
+    {
+      "slug": "gaussian-process",
+      "label": "Gaussian Process"
+    },
+    {
+      "slug": "state-estimation",
+      "label": "State Estimation"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "portfolio-optimisation",
+      "label": "Portfolio Optimisation"
+    },
+    {
+      "slug": "random-matrix-theory",
+      "label": "Random Matrix Theory"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "cost-function",
+      "label": "Cost Function"
+    },
+    {
+      "slug": "extended-kalman-filter",
+      "label": "Extended Kalman Filter"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "correlation-matrix",
+      "label": "Correlation Matrix"
+    },
+    {
+      "slug": "precision-matrix",
+      "label": "Precision Matrix"
+    },
+    {
+      "slug": "maximum-likelihood-estimation",
+      "label": "Maximum Likelihood Estimation"
+    },
+    {
+      "slug": "expectation-maximisation",
+      "label": "Expectation-Maximisation"
+    },
+    {
+      "slug": "normal-distribution",
+      "label": "Normal Distribution"
+    },
+    {
+      "slug": "whitening",
+      "label": "Whitening"
+    },
+    {
+      "slug": "factor-analysis",
+      "label": "Factor Analysis"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "data-preprocessing",
+      "label": "Data Preprocessing"
+    },
+    {
+      "slug": "unsupervised-learning",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "cost-function",
+      "label": "cost function"
+    }
+  ]
 }

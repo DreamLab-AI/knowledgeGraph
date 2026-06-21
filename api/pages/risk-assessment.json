@@ -558,12 +558,24 @@
       "label": "Cross Border Compliance"
     },
     {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
       "slug": "data-anonymization-pipeline",
       "label": "Data Anonymization Pipeline"
     },
     {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
       "slug": "data-protection",
       "label": "Data Protection"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
     },
     {
       "slug": "digital-society-harms",

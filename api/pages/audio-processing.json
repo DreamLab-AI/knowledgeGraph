@@ -352,6 +352,10 @@
       "label": "Audio Synthesis"
     },
     {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
       "slug": "deepfakes",
       "label": "Deepfakes"
     },

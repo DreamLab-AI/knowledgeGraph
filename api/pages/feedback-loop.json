@@ -706,6 +706,10 @@
       "label": "Cortex Agent"
     },
     {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
       "slug": "dynamical-systems-theory",
       "label": "Dynamical Systems Theory"
     },

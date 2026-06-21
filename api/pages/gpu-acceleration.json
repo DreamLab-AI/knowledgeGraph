@@ -189,6 +189,14 @@
       "label": "Computational Modelling"
     },
     {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
       "slug": "edge-computing",
       "label": "Edge Computing"
     },

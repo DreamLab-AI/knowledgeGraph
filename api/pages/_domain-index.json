@@ -16961,7 +16961,7 @@
     {
       "slug": "collective-intelligence-system",
       "title": "Collective Intelligence System",
-      "qualityScore": 0.35
+      "qualityScore": 0.9
     },
     {
       "slug": "collective-learning",
@@ -17211,17 +17211,17 @@
     {
       "slug": "conversational-ai",
       "title": "Conversational AI",
-      "qualityScore": 0.75
+      "qualityScore": 0.9
     },
     {
       "slug": "coreference-resolution",
       "title": "Coreference Resolution",
-      "qualityScore": 0.62
+      "qualityScore": 0.91
     },
     {
       "slug": "corrigibility",
       "title": "Corrigibility",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "cortex-agent",
@@ -17239,34 +17239,49 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "cross-modal-conditioning",
+      "title": "Cross-Modal Conditioning",
+      "qualityScore": 0.9
+    },
+    {
       "slug": "cross-platform-compliance-hub",
       "title": "Cross-Platform Compliance Hub",
-      "qualityScore": 0.35
+      "qualityScore": 0.9
     },
     {
       "slug": "cursor",
       "title": "Cursor",
-      "qualityScore": 0.6
+      "qualityScore": 0.9
     },
     {
       "slug": "customer-service-automation",
       "title": "Customer Service Automation",
-      "qualityScore": 0.74
+      "qualityScore": 0.9
     },
     {
       "slug": "cybernetics",
       "title": "Cybernetics",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "cybersecurity-risk-management",
       "title": "Cybersecurity Risk Management",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "dicom",
       "title": "DICOM",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
+    },
+    {
+      "slug": "dvc",
+      "title": "DVC",
+      "qualityScore": 0.9
+    },
+    {
+      "slug": "dwpose",
+      "title": "DWPose",
+      "qualityScore": 0.9
     },
     {
       "slug": "data-augmentation-strategies",
@@ -17276,7 +17291,7 @@
     {
       "slug": "data-breach",
       "title": "Data Breach",
-      "qualityScore": 0.0
+      "qualityScore": 0.9
     },
     {
       "slug": "data-cleaning",
@@ -17311,17 +17326,17 @@
     {
       "slug": "data-versioning",
       "title": "Data Versioning",
-      "qualityScore": 0.75
+      "qualityScore": 0.9
     },
     {
       "slug": "database-schema",
       "title": "Database Schema",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "dataset",
       "title": "Dataset",
-      "qualityScore": 0.7
+      "qualityScore": 0.9
     },
     {
       "slug": "death-of-the-internet",
@@ -17341,7 +17356,7 @@
     {
       "slug": "decision-theory",
       "title": "Decision Theory",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "decision-transparency",
@@ -17356,7 +17371,7 @@
     {
       "slug": "deep-learning",
       "title": "Deep Learning",
-      "qualityScore": 0.91
+      "qualityScore": 0.9
     },
     {
       "slug": "deep-neural-network",
@@ -27277,12 +27292,12 @@
     {
       "slug": "claude",
       "title": "Claude",
-      "qualityScore": 0.74
+      "qualityScore": 0.9
     },
     {
       "slug": "code-execution",
       "title": "Code Execution",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "code-former",
@@ -27392,87 +27407,67 @@
     {
       "slug": "creative-ai",
       "title": "Creative AI",
-      "qualityScore": 0.74
-    },
-    {
-      "slug": "creative-industries",
-      "title": "Creative Industries",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "creative-tools",
       "title": "Creative Tools",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "crew-ai",
       "title": "CrewAI",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "cross-entropy-loss",
       "title": "Cross-Entropy Loss",
-      "qualityScore": 0.8
-    },
-    {
-      "slug": "cross-modal-conditioning",
-      "title": "Cross-Modal Conditioning",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "customer-experience-management",
       "title": "Customer Experience Management",
-      "qualityScore": 0.6
+      "qualityScore": 0.9
     },
     {
       "slug": "customer-experience",
       "title": "Customer Experience",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "customer-support-automation",
       "title": "Customer Support Automation",
-      "qualityScore": 0.6
+      "qualityScore": 0.9
     },
     {
       "slug": "customer-support",
       "title": "Customer Support",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "dall-e-3",
       "title": "DALL-E 3",
-      "qualityScore": 0.6
+      "qualityScore": 0.9
     },
     {
       "slug": "dspy",
       "title": "DSPy",
-      "qualityScore": 0.8
-    },
-    {
-      "slug": "dvc",
-      "title": "DVC",
-      "qualityScore": 0.72
-    },
-    {
-      "slug": "dwpose",
-      "title": "DWPose",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "data-preprocessing",
       "title": "Data Preprocessing",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "decision-engine",
       "title": "Decision Engine",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "decision-making",
       "title": "Decision Making",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "decision-support",
@@ -33802,12 +33797,12 @@
     {
       "slug": "convex-optimisation",
       "title": "Convex Optimisation",
-      "qualityScore": 0.75
+      "qualityScore": 0.9
     },
     {
       "slug": "convolution",
       "title": "Convolution",
-      "qualityScore": 0.75
+      "qualityScore": 0.92
     },
     {
       "slug": "convolutional-neural-network",
@@ -33817,27 +33812,27 @@
     {
       "slug": "cosine-similarity",
       "title": "Cosine Similarity",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "cost-function",
       "title": "Cost Function",
-      "qualityScore": 0.73
+      "qualityScore": 0.9
     },
     {
       "slug": "covariance-matrix",
       "title": "Covariance Matrix",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "cross-encoder-reranking",
       "title": "Cross-Encoder Reranking",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "cross-validation",
       "title": "Cross-Validation",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "crowdsourcing",
@@ -33857,7 +33852,7 @@
     {
       "slug": "data-augmentation",
       "title": "Data Augmentation",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "data-labelling",
@@ -33867,32 +33862,32 @@
     {
       "slug": "data-parallelism",
       "title": "Data Parallelism",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "decision-tree",
       "title": "Decision Tree",
-      "qualityScore": 0.62
+      "qualityScore": 0.0
     },
     {
       "slug": "decoder-network",
       "title": "Decoder Network",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "deep-generative-model",
       "title": "Deep Generative Model",
-      "qualityScore": 0.74
+      "qualityScore": 0.9
     },
     {
       "slug": "deep-learning-framework",
       "title": "Deep Learning Framework",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "deep-reinforcement-learning",
       "title": "Deep Reinforcement Learning",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "deep-speed",
@@ -35305,6 +35300,11 @@
       "slug": "ai-investment",
       "title": "AI Investment",
       "qualityScore": 0.88
+    },
+    {
+      "slug": "creative-industries",
+      "title": "Creative Industries",
+      "qualityScore": 0.9
     }
   ],
   "data": [

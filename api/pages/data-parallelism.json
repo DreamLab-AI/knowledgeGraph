@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -28,6 +28,14 @@
       {
         "id": "urn:ngm:class:mini-batch",
         "label": "Mini-Batch"
+      },
+      {
+        "id": "urn:ngm:class:ring-all-reduce",
+        "label": "Ring All-Reduce"
+      },
+      {
+        "id": "urn:ngm:class:gradient-compression",
+        "label": "Gradient Compression"
       }
     ],
     "requires": [
@@ -38,6 +46,18 @@
       {
         "id": "urn:ngm:class:gpu-cluster",
         "label": "GPU Cluster"
+      },
+      {
+        "id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      },
+      {
+        "id": "urn:ngm:class:network-bandwidth",
+        "label": "Network Bandwidth"
+      },
+      {
+        "id": "urn:ngm:class:nccl",
+        "label": "NCCL"
       }
     ],
     "enables": [
@@ -48,16 +68,24 @@
       {
         "id": "urn:ngm:class:throughput-scaling",
         "label": "Throughput Scaling"
+      },
+      {
+        "id": "urn:ngm:class:llm-pretraining",
+        "label": "LLM Pre-training"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:synchronisation",
-        "label": "Synchronisation"
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:network-bandwidth",
-        "label": "Network Bandwidth"
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       }
     ],
     "implements": [],
@@ -69,12 +97,20 @@
       {
         "id": "urn:ngm:class:pipeline-parallelism",
         "label": "Pipeline Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:tensor-parallelism",
         "label": "Tensor Parallelism"
+      },
+      {
+        "id": "urn:ngm:class:expert-parallelism",
+        "label": "Expert Parallelism"
       }
     ],
     "uses": [
@@ -85,6 +121,10 @@
       {
         "id": "urn:ngm:class:parameter-server",
         "label": "Parameter Server"
+      },
+      {
+        "id": "urn:ngm:class:mixed-precision-training",
+        "label": "Mixed Precision Training"
       }
     ],
     "supports": [
@@ -95,6 +135,10 @@
       {
         "id": "urn:ngm:class:neural-network-training",
         "label": "Neural Network Training"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "standardizedBy": [],
@@ -102,6 +146,10 @@
       {
         "id": "urn:ngm:class:distributed-training",
         "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:3d-parallelism",
+        "label": "3D Parallelism"
       }
     ],
     "relatedTo": [
@@ -112,6 +160,14 @@
       {
         "id": "urn:ngm:class:high-performance-computing",
         "label": "High-Performance Computing"
+      },
+      {
+        "id": "urn:ngm:class:zero-optimizer",
+        "label": "ZeRO Optimizer"
+      },
+      {
+        "id": "urn:ngm:class:deepspeed",
+        "label": "DeepSpeed"
       }
     ]
   },

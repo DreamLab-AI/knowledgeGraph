@@ -45,6 +45,10 @@
       "label": "Affective Computing System"
     },
     {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
       "slug": "segmentation-and-identification",
       "label": "Segmentation and Identification"
     }

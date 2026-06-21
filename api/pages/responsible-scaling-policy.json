@@ -112,6 +112,10 @@
       "label": "anthropic"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "competition-in-ai",
       "label": "Competition in AI"
     },

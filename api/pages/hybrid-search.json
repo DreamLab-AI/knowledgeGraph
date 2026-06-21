@@ -140,6 +140,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
+    },
+    {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },

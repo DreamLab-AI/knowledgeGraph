@@ -149,6 +149,10 @@
       "label": "Compatibility Process"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
       "slug": "data-integration-interface",
       "label": "Data Integration Interface"
     },

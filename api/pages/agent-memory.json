@@ -339,6 +339,10 @@
       "label": "Cognitive Architecture"
     },
     {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
       "slug": "internal-ai-harness",
       "label": "Internal AI Harness"
     },

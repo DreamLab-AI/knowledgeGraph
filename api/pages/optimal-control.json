@@ -181,6 +181,14 @@
       "label": "Control Algorithm"
     },
     {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
       "slug": "force-control",
       "label": "Force Control"
     },

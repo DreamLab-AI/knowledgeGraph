@@ -10,11 +10,15 @@
     {
       "id": "urn:ngm:class:deep-learning",
       "label": "Deep Learning"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-software",
+      "label": "Machine Learning Software"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
-  "maturity": "mature",
+  "qualityScore": 0.9,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
@@ -32,6 +36,18 @@
       {
         "id": "urn:ngm:class:computation-graph",
         "label": "Computation Graph"
+      },
+      {
+        "id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
       }
     ],
     "requires": [
@@ -42,6 +58,14 @@
       {
         "id": "urn:ngm:class:hardware-acceleration",
         "label": "Hardware Acceleration"
+      },
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "id": "urn:ngm:class:cuda",
+        "label": "CUDA"
       }
     ],
     "enables": [
@@ -60,16 +84,24 @@
       {
         "id": "urn:ngm:class:transfer-learning",
         "label": "Transfer Learning"
+      },
+      {
+        "id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:gpu-computing",
-        "label": "GPU Computing"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:cuda",
-        "label": "CUDA"
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
       }
     ],
     "implements": [
@@ -80,6 +112,14 @@
       {
         "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
       }
     ],
     "contrastsWith": [
@@ -102,6 +142,10 @@
       {
         "id": "urn:ngm:class:python",
         "label": "Python"
+      },
+      {
+        "id": "urn:ngm:class:computation-graph",
+        "label": "Computation Graph"
       }
     ],
     "supports": [
@@ -112,6 +156,10 @@
       {
         "id": "urn:ngm:class:mixed-precision-training",
         "label": "Mixed Precision Training"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
     "standardizedBy": [],
@@ -128,6 +176,10 @@
       {
         "id": "urn:ngm:class:jax",
         "label": "JAX"
+      },
+      {
+        "id": "urn:ngm:class:mlx",
+        "label": "MLX"
       }
     ]
   },
@@ -151,6 +203,122 @@
     {
       "slug": "deep-learning",
       "label": "Deep Learning Domain"
+    },
+    {
+      "slug": "tensorflow",
+      "label": "TensorFlow"
+    },
+    {
+      "slug": "jax",
+      "label": "JAX"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "computation-graph",
+      "label": "Computation Graph"
+    },
+    {
+      "slug": "tensor-operation",
+      "label": "Tensor Operation"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "model-inference",
+      "label": "Model Inference"
+    },
+    {
+      "slug": "mixed-precision-training",
+      "label": "Mixed Precision Training"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "cuda",
+      "label": "CUDA"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "activation-function",
+      "label": "Activation Function"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "model-architecture",
+      "label": "Model Architecture"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "edge-inference",
+      "label": "Edge Inference"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "mlx",
+      "label": "MLX"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
     }
   ],
   "backlinks": [
@@ -173,6 +341,10 @@
     {
       "slug": "batch-inference",
       "label": "Batch Inference"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
     },
     {
       "slug": "image-and-video-restoration",

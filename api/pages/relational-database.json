@@ -93,6 +93,10 @@
       "label": "Closed World Assumption"
     },
     {
+      "slug": "database-schema",
+      "label": "Database Schema"
+    },
+    {
       "slug": "graph-database",
       "label": "Graph Database"
     },

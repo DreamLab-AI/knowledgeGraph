@@ -169,6 +169,14 @@
       "label": "Continual Learning"
     },
     {
+      "slug": "cross-encoder-reranking",
+      "label": "Cross-Encoder Reranking"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
       "slug": "data-compression",
       "label": "Data Compression"
     },

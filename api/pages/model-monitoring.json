@@ -111,6 +111,10 @@
     {
       "slug": "continuous-training",
       "label": "Continuous Training"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
     }
   ]
 }

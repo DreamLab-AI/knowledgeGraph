@@ -151,8 +151,16 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
       "slug": "comfy-ui-manager",
       "label": "comfyui manager"
+    },
+    {
+      "slug": "dvc",
+      "label": "DVC"
     },
     {
       "slug": "diagrams-as-code",

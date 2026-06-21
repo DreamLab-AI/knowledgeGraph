@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.75,
+  "qualityScore": 0.9,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
@@ -167,6 +167,70 @@
     {
       "slug": "functional-analysis",
       "label": "Functional Analysis"
+    },
+    {
+      "slug": "linear-programming",
+      "label": "Linear Programming"
+    },
+    {
+      "slug": "quadratic-programming",
+      "label": "Quadratic Programming"
+    },
+    {
+      "slug": "semidefinite-programming",
+      "label": "Semidefinite Programming"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "support-vector-machine",
+      "label": "Support Vector Machine"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "duality-theory",
+      "label": "Duality Theory"
+    },
+    {
+      "slug": "kkt-conditions",
+      "label": "KKT Conditions"
+    },
+    {
+      "slug": "lasso-regression",
+      "label": "LASSO Regression"
+    },
+    {
+      "slug": "portfolio-optimisation",
+      "label": "Portfolio Optimisation"
+    },
+    {
+      "slug": "compressed-sensing",
+      "label": "Compressed Sensing"
+    },
+    {
+      "slug": "operations-research",
+      "label": "Operations Research"
+    },
+    {
+      "slug": "stochastic-optimisation",
+      "label": "Stochastic Optimisation"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
     }
   ],
   "backlinks": [
@@ -185,6 +249,10 @@
     {
       "slug": "control-theory",
       "label": "Control Theory"
+    },
+    {
+      "slug": "cost-function",
+      "label": "cost function"
     },
     {
       "slug": "functional-analysis",

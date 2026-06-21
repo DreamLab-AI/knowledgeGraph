@@ -149,6 +149,10 @@
       "label": "Clustering"
     },
     {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
       "slug": "deepfakes-and-fraudulent-content",
       "label": "Deepfakes and fraudulent content"
     },

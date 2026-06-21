@@ -89,6 +89,10 @@
       "label": "AI Risks"
     },
     {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
       "slug": "model-extraction",
       "label": "Model Extraction"
     }

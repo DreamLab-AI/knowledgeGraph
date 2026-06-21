@@ -156,8 +156,20 @@
       "label": "Container"
     },
     {
+      "slug": "dvc",
+      "label": "DVC"
+    },
+    {
       "slug": "data-provenance",
       "label": "Data Provenance"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
     },
     {
       "slug": "evaluation-benchmarks-and-leaderboards",

@@ -103,5 +103,10 @@
       "label": "EU AI Act"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    }
+  ]
 }

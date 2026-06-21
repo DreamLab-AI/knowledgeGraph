@@ -286,6 +286,18 @@
       "label": "Content Moderation"
     },
     {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
       "slug": "etsi-domain-ethics-and-law",
       "label": "ETSI Domain: Ethics & Law"
     },

@@ -61,6 +61,10 @@
   ],
   "backlinks": [
     {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
       "slug": "fast-ai",
       "label": "fast.ai"
     }

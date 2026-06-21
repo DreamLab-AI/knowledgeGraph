@@ -940,6 +940,22 @@
       "label": "Brain Computer Interfaces"
     },
     {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
+      "slug": "deep-learning-framework",
+      "label": "Deep Learning Framework"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

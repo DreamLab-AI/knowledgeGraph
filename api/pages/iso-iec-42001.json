@@ -195,6 +195,10 @@
       "label": "Compliance Audit Trail"
     },
     {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
     },

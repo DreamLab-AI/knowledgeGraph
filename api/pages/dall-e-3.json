@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -25,12 +25,32 @@
       {
         "id": "urn:ngm:class:language-model",
         "label": "Language Model"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:clip-encoder",
+        "label": "CLIP Encoder"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:creative-tools",
+        "label": "Creative Tools"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai-engineering",
+        "label": "Generative AI Engineering"
       }
     ],
     "dependsOn": [],
@@ -67,6 +87,62 @@
     {
       "slug": "text-to-image-generation",
       "label": "Text-to-Image Generation"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    },
+    {
+      "slug": "contrastive-learning",
+      "label": "Contrastive Learning"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "stable-diffusion-image-model",
+      "label": "Stable Diffusion Image Model"
+    },
+    {
+      "slug": "midjourney-text-to-image-service",
+      "label": "Midjourney Text-to-Image Service"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "clip-encoder",
+      "label": "CLIP Encoder"
+    },
+    {
+      "slug": "latent-diffusion-model-training",
+      "label": "Latent Diffusion Model Training"
+    },
+    {
+      "slug": "generative-ai-engineering",
+      "label": "Generative AI Engineering"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "Creative Tools"
     }
   ],
   "backlinks": [

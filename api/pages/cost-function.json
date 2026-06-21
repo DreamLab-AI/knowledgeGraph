@@ -13,13 +13,21 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.73,
-  "maturity": "mature",
+  "qualityScore": 0.9,
+  "maturity": "established",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:regularisation",
         "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:penalty-term",
+        "label": "Penalty Term"
+      },
+      {
+        "id": "urn:ngm:class:data-fidelity-term",
+        "label": "Data-Fidelity Term"
       }
     ],
     "requires": [
@@ -30,6 +38,10 @@
       {
         "id": "urn:ngm:class:differentiability",
         "label": "Differentiability"
+      },
+      {
+        "id": "urn:ngm:class:parametric-model",
+        "label": "Parametric Model"
       }
     ],
     "enables": [
@@ -48,6 +60,14 @@
       {
         "id": "urn:ngm:class:model-training",
         "label": "Model Training"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
+      },
+      {
+        "id": "urn:ngm:class:inverse-reinforcement-learning",
+        "label": "Inverse Reinforcement Learning"
       }
     ],
     "dependsOn": [
@@ -56,7 +76,7 @@
         "label": "Loss Landscape"
       },
       {
-        "id": "urn:ngm:class:parametric-design-methodology-modeling",
+        "id": "urn:ngm:class:parametric-model",
         "label": "Parametric Model"
       }
     ],
@@ -123,10 +143,235 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:covariance-matrix",
+        "label": "Covariance Matrix"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "objective-function",
+      "label": "Objective Function"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "regularisation",
+      "label": "Regularisation"
+    },
+    {
+      "slug": "supervised-learning",
+      "label": "Supervised Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "mean-squared-error",
+      "label": "Mean Squared Error"
+    },
+    {
+      "slug": "cross-entropy-loss",
+      "label": "Cross-Entropy Loss"
+    },
+    {
+      "slug": "maximum-likelihood-estimation",
+      "label": "Maximum Likelihood Estimation"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "overfitting",
+      "label": "Overfitting"
+    },
+    {
+      "slug": "reward-function",
+      "label": "Reward Function"
+    },
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    },
+    {
+      "slug": "loss-landscape",
+      "label": "Loss Landscape"
+    },
+    {
+      "slug": "kullback-leibler-divergence",
+      "label": "Kullback-Leibler Divergence"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "model-predictive-control",
+      "label": "Model Predictive Control"
+    },
+    {
+      "slug": "inverse-reinforcement-learning",
+      "label": "Inverse Reinforcement Learning"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "huber-loss",
+      "label": "Huber Loss"
+    },
+    {
+      "slug": "hinge-loss",
+      "label": "Hinge Loss"
+    },
+    {
+      "slug": "wasserstein-distance",
+      "label": "Wasserstein Distance"
+    },
+    {
+      "slug": "pytorch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "tensorflow",
+      "label": "TensorFlow"
+    },
+    {
+      "slug": "jax",
+      "label": "JAX"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "linear-quadratic-regulator",
+      "label": "Linear-Quadratic Regulator"
+    },
+    {
+      "slug": "hyperparameter-tuning",
+      "label": "Hyperparameter Tuning"
+    },
+    {
+      "slug": "neural-architecture-search",
+      "label": "Neural Architecture Search"
+    },
+    {
+      "slug": "reward-hacking",
+      "label": "Reward Hacking"
+    },
+    {
+      "slug": "focal-loss",
+      "label": "Focal Loss"
+    },
+    {
+      "slug": "contrastive-loss",
+      "label": "Contrastive Loss"
+    },
+    {
+      "slug": "utility-function",
+      "label": "Utility Function"
+    },
+    {
+      "slug": "mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "slug": "activation-function",
+      "label": "Activation Function"
+    },
+    {
+      "slug": "batch-normalisation",
+      "label": "Batch Normalisation"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "variational-inference",
+      "label": "Variational Inference"
+    },
+    {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
+      "slug": "penalty-term",
+      "label": "Penalty Term"
+    },
+    {
+      "slug": "softmax",
+      "label": "Softmax"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    }
+  ],
   "backlinks": [
     {
       "slug": "a-star-algorithm",
@@ -139,6 +384,10 @@
     {
       "slug": "control-theory",
       "label": "Control Theory"
+    },
+    {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
     },
     {
       "slug": "model-based-control",

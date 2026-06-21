@@ -2,12 +2,12 @@
   "total_pages": 7458,
   "pages_with_ontology": 7458,
   "public_pages": 7444,
-  "total_issues": 935,
+  "total_issues": 954,
   "errors": 0,
-  "warnings": 935,
+  "warnings": 954,
   "by_code": {
-    "MULTI_PARENT": 933,
-    "INVALID_DOMAIN": 2
+    "MULTI_PARENT": 951,
+    "INVALID_DOMAIN": 3
   },
   "issues": [
     {
@@ -1349,10 +1349,34 @@
       "message": "Multiple parents (3): AI Application, Agentic Internet, Agents"
     },
     {
+      "path": "Covariance Matrix.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Linear Algebra, Multivariate Statistics"
+    },
+    {
+      "path": "Creative Industries.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
+    },
+    {
+      "path": "Creative Industries.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Economics, Knowledge Economy"
+    },
+    {
       "path": "Creator Royalty Token.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Token and Asset, Virtual Economy"
+    },
+    {
+      "path": "CrewAI.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Agent System, Multi-Agent Systems"
     },
     {
       "path": "Cross Border Compliance.md",
@@ -1391,10 +1415,40 @@
       "message": "Multiple parents (2): Security and Identity, Computer Science"
     },
     {
+      "path": "Cursor.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Software Development, Generative AI"
+    },
+    {
+      "path": "Customer Experience Management.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): CRM, Enterprise Software Platform"
+    },
+    {
       "path": "Customer Rewards.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Platform and Environment, Loyalty Programs"
+    },
+    {
+      "path": "Customer Support Automation.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Conversational AI, Customer Service Automation"
+    },
+    {
+      "path": "Customer Support.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Customer Service Automation, Enterprise Workflow"
+    },
+    {
+      "path": "Cybernetics.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Control Theory, Systems Theory"
     },
     {
       "path": "Cybersecurity Standard.md",
@@ -1427,6 +1481,24 @@
       "message": "Multiple parents (2): Network Component, Distributed Identity"
     },
     {
+      "path": "DSPy.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): LLM Application Framework, Automatic Prompt Optimisation"
+    },
+    {
+      "path": "DVC.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Infrastructure, MLOps"
+    },
+    {
+      "path": "DWPose.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Computer Vision, Pose Estimation"
+    },
+    {
       "path": "Data Anonymization Pipeline.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1437,6 +1509,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, Machine Learning Discipline"
+    },
+    {
+      "path": "Data Augmentation.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Machine Learning Technique, Regularisation"
     },
     {
       "path": "Data Breach.md",
@@ -1502,13 +1580,19 @@
       "path": "Data Versioning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): AI Infrastructure, Machine Learning Pipeline"
+      "message": "Multiple parents (3): AI Infrastructure, Machine Learning Pipeline, Data Management"
     },
     {
       "path": "Data Virtualization.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Data Management, Data Integration"
+    },
+    {
+      "path": "Dataset.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Infrastructure, Data Architecture"
     },
     {
       "path": "De Fi Services.md",
@@ -1565,10 +1649,40 @@
       "message": "Multiple parents (2): Robot Type, Swarm Robotics"
     },
     {
+      "path": "Decision Engine.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Inference Engine, Automated Reasoning"
+    },
+    {
+      "path": "Decoder Network.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Neural Network, Encoder-Decoder Architecture"
+    },
+    {
+      "path": "Deep Generative Model.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Generative AI, Deep Learning"
+    },
+    {
+      "path": "Deep Learning Framework.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Deep Learning, Machine Learning Software"
+    },
+    {
       "path": "Deep Learning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Technique, Machine Learning Discipline"
+    },
+    {
+      "path": "Deep Reinforcement Learning.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Deep Learning, Reinforcement Learning"
     },
     {
       "path": "Deepfakes and fraudulent content.md",

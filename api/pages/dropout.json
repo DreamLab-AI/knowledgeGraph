@@ -182,6 +182,14 @@
       "label": "classifier-free guidance"
     },
     {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

@@ -105,6 +105,10 @@
       "label": "Alignment"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
       "slug": "imitation-learning",
       "label": "Imitation Learning"
     }

@@ -257,6 +257,10 @@
       "label": "Brain Computer Interfaces"
     },
     {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
       "slug": "force-control",
       "label": "Force Control"
     },

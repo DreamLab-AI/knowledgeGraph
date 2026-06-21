@@ -274,6 +274,10 @@
       "label": "Adaptive Behaviour"
     },
     {
+      "slug": "deep-reinforcement-learning",
+      "label": "Deep Reinforcement Learning"
+    },
+    {
       "slug": "imitation-learning",
       "label": "Imitation Learning"
     }

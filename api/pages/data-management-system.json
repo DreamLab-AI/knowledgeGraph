@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "graph-database",
       "label": "Graph Database"
     },

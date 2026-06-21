@@ -113,6 +113,14 @@
       "label": "Classification"
     },
     {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
       "slug": "ensemble-methods",
       "label": "Ensemble Methods"
     }

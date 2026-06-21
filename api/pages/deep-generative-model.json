@@ -10,10 +10,14 @@
     {
       "id": "urn:ngm:class:generative-ai",
       "label": "Generative AI"
+    },
+    {
+      "id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -36,6 +40,14 @@
       {
         "id": "urn:ngm:class:autoregressive-model",
         "label": "Autoregressive Model"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion-model",
+        "label": "Latent Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
       }
     ],
     "requires": [
@@ -54,6 +66,10 @@
       {
         "id": "urn:ngm:class:probabilistic-inference",
         "label": "Probabilistic Inference"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "enables": [
@@ -76,6 +92,22 @@
       {
         "id": "urn:ngm:class:drug-discovery",
         "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "id": "urn:ngm:class:model-based-reinforcement-learning",
+        "label": "Model-Based Reinforcement Learning"
       }
     ],
     "dependsOn": [],
@@ -98,6 +130,10 @@
       {
         "id": "urn:ngm:class:privacy-preserving-machine-learning",
         "label": "Privacy-Preserving Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
       }
     ],
     "uses": [
@@ -115,7 +151,27 @@
       },
       {
         "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
+        "label": "Encoder-Decoder Architecture"
+      },
+      {
+        "id": "urn:ngm:class:decoder-network",
+        "label": "Decoder Network"
+      },
+      {
+        "id": "urn:ngm:class:reparameterisation-trick",
+        "label": "Reparameterisation Trick"
+      },
+      {
+        "id": "urn:ngm:class:evidence-lower-bound",
+        "label": "Evidence Lower Bound"
+      },
+      {
+        "id": "urn:ngm:class:vision-transformer",
+        "label": "Vision Transformer"
+      },
+      {
+        "id": "urn:ngm:class:score-matching",
+        "label": "Score Matching"
       }
     ],
     "supports": [],
@@ -150,10 +206,211 @@
       {
         "id": "urn:ngm:class:large-language-model",
         "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:flow-matching",
+        "label": "Flow Matching"
+      },
+      {
+        "id": "urn:ngm:class:consistency-distillation",
+        "label": "Consistency Distillation"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "normalising-flow",
+      "label": "Normalising Flow"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "latent-space",
+      "label": "Latent Space"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "Synthetic Data"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "stochastic-gradient-descent",
+      "label": "Stochastic Gradient Descent"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "encoder-decoder-architecture",
+      "label": "Encoder-Decoder Architecture"
+    },
+    {
+      "slug": "discriminative-model",
+      "label": "Discriminative Model"
+    },
+    {
+      "slug": "classifier",
+      "label": "Classifier"
+    },
+    {
+      "slug": "representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "slug": "density-estimation",
+      "label": "Density Estimation"
+    },
+    {
+      "slug": "score-matching",
+      "label": "Score Matching"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "privacy-preserving-machine-learning",
+      "label": "Privacy-Preserving Machine Learning"
+    },
+    {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
+      "slug": "flow-matching",
+      "label": "Flow Matching"
+    },
+    {
+      "slug": "consistency-distillation",
+      "label": "Consistency Distillation"
+    },
+    {
+      "slug": "latent-diffusion-model",
+      "label": "Latent Diffusion Model"
+    },
+    {
+      "slug": "vision-transformer",
+      "label": "Vision Transformer"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
+      "slug": "natural-language-generation",
+      "label": "Natural Language Generation"
+    },
+    {
+      "slug": "model-based-reinforcement-learning",
+      "label": "Model-Based Reinforcement Learning"
+    },
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "reparameterisation-trick",
+      "label": "Reparameterisation Trick"
+    },
+    {
+      "slug": "evidence-lower-bound",
+      "label": "Evidence Lower Bound"
+    },
+    {
+      "slug": "mode-collapse",
+      "label": "Mode Collapse"
+    },
+    {
+      "slug": "frechet-inception-distance",
+      "label": "Fr\u00e9chet Inception Distance"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-video",
@@ -174,6 +431,14 @@
     {
       "slug": "computational-creativity",
       "label": "Computational Creativity"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
     },
     {
       "slug": "diffusion-models",

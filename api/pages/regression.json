@@ -79,6 +79,10 @@
       "label": "Conformal Prediction"
     },
     {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
       "slug": "mean-absolute-error",
       "label": "Mean Absolute Error"
     },

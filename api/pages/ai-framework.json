@@ -97,6 +97,10 @@
       "label": "Component"
     },
     {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "intelligent-virtual-entity",
       "label": "Intelligent Virtual Entity"
     }

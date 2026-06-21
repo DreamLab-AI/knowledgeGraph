@@ -75,6 +75,10 @@
       "label": "Control Theory"
     },
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
       "slug": "optimal-control",
       "label": "Optimal Control"
     }

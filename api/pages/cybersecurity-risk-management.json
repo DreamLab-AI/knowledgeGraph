@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -39,12 +39,28 @@
       {
         "id": "urn:ngm:class:compliance-monitoring",
         "label": "Compliance Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:cyber-resilience",
+        "label": "Cyber Resilience"
+      },
+      {
+        "id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:security-operations",
         "label": "Security Operations"
+      },
+      {
+        "id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "id": "urn:ngm:class:security-operations-centre",
+        "label": "Security Operations Centre"
       }
     ],
     "implements": [
@@ -76,6 +92,22 @@
       {
         "id": "urn:ngm:class:risk-assessment",
         "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "id": "urn:ngm:class:soar",
+        "label": "SOAR"
+      },
+      {
+        "id": "urn:ngm:class:risk-register",
+        "label": "Risk Register"
+      },
+      {
+        "id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
       }
     ],
     "supports": [
@@ -111,9 +143,146 @@
       {
         "id": "urn:ngm:class:penetration-testing",
         "label": "Penetration Testing"
+      },
+      {
+        "id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "governance",
+      "label": "Governance"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "information-security-management",
+      "label": "Information Security Management"
+    },
+    {
+      "slug": "threat-modelling",
+      "label": "Threat Modelling"
+    },
+    {
+      "slug": "vulnerability-assessment",
+      "label": "Vulnerability Assessment"
+    },
+    {
+      "slug": "continuous-monitoring",
+      "label": "Continuous Monitoring"
+    },
+    {
+      "slug": "security-framework",
+      "label": "Security Framework"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "incident-response",
+      "label": "Incident Response"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "supply-chain-security",
+      "label": "Supply Chain Security"
+    },
+    {
+      "slug": "penetration-testing",
+      "label": "Penetration Testing"
+    },
+    {
+      "slug": "nist-cybersecurity-framework",
+      "label": "NIST Cybersecurity Framework"
+    },
+    {
+      "slug": "iso-27001",
+      "label": "ISO 27001"
+    },
+    {
+      "slug": "resilience",
+      "label": "Resilience"
+    },
+    {
+      "slug": "accountability",
+      "label": "Accountability"
+    },
+    {
+      "slug": "security-operations",
+      "label": "Security Operations"
+    },
+    {
+      "slug": "zero-trust-architecture",
+      "label": "Zero Trust Architecture"
+    },
+    {
+      "slug": "risk-register",
+      "label": "Risk Register"
+    },
+    {
+      "slug": "siem",
+      "label": "SIEM"
+    },
+    {
+      "slug": "soar",
+      "label": "SOAR"
+    },
+    {
+      "slug": "ai-risk-management",
+      "label": "AI Risk Management"
+    },
+    {
+      "slug": "cyber-resilience",
+      "label": "Cyber Resilience"
+    },
+    {
+      "slug": "threat-actor",
+      "label": "Threat Actor"
+    },
+    {
+      "slug": "threat-detection",
+      "label": "Threat Detection"
+    },
+    {
+      "slug": "security-operations-centre",
+      "label": "Security Operations Centre"
+    },
+    {
+      "slug": "compliance-framework",
+      "label": "Compliance Framework"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "operational-resilience",
+      "label": "Operational Resilience"
+    },
+    {
+      "slug": "risk-assessment-methodology",
+      "label": "Risk Assessment Methodology"
+    }
+  ],
   "backlinks": []
 }

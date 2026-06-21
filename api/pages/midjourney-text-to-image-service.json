@@ -146,6 +146,10 @@
     {
       "slug": "concept-art",
       "label": "Concept Art"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
     }
   ]
 }

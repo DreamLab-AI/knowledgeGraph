@@ -365,6 +365,14 @@
       "label": "Customer Data Platform"
     },
     {
+      "slug": "dicom",
+      "label": "DICOM"
+    },
+    {
+      "slug": "data-breach",
+      "label": "Data Breach"
+    },
+    {
       "slug": "data-confidentiality",
       "label": "Data Confidentiality"
     },
@@ -373,8 +381,16 @@
       "label": "Data Protection Law"
     },
     {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
       "slug": "david-chaum",
       "label": "David Chaum"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
     },
     {
       "slug": "digital-divide",

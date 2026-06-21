@@ -162,6 +162,10 @@
       "label": "Clustering"
     },
     {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    },
+    {
       "slug": "feature-importance",
       "label": "Feature Importance"
     },

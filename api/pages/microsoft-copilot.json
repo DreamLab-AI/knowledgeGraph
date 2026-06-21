@@ -137,6 +137,10 @@
       "label": "AI-Assisted Developer Tooling"
     },
     {
+      "slug": "cursor",
+      "label": "Cursor"
+    },
+    {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },

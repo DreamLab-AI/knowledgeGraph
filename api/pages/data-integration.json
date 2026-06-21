@@ -165,6 +165,10 @@
       "label": "Data Virtualization"
     },
     {
+      "slug": "database-schema",
+      "label": "Database Schema"
+    },
+    {
       "slug": "domain-ontology",
       "label": "Domain Ontology"
     },

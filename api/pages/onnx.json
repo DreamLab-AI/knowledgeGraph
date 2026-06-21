@@ -132,6 +132,10 @@
       "label": "Checkpoints"
     },
     {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
       "slug": "internal-ai-harness",
       "label": "Internal AI Harness"
     },

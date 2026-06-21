@@ -5,35 +5,81 @@
   "public": true,
   "classIri": "urn:ngm:class:cursor",
   "domain": "artificial-intelligence",
-  "definition": "Cursor is a code editor built on Visual Studio Code that integrates large language models for code completion, editing, and chat-based assistance. It is developed by Anysphere.",
+  "definition": "Cursor is an AI-native code editor developed by Anysphere, built on a Visual Studio Code foundation and deeply integrated with large language models to provide inline code completion, multi-file agentic editing, natural-language chat over the codebase, and autonomous background agents. As of 2026, Cursor is the leading independent AI coding assistant by revenue, having reached $2 billion ARR and a $29.3 billion Series D valuation, and is used by over 64% of Fortune 500 companies.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:software-development",
       "label": "Software Development"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:gpt",
-        "label": "GPT"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:software-development",
         "label": "Software Development"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:microsoft-copilot",
+        "label": "Microsoft Copilot"
+      },
+      {
+        "id": "urn:ngm:class:claude-code",
+        "label": "Claude Code"
+      }
+    ],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:gpt-4o",
+        "label": "GPT-4o"
+      },
+      {
+        "id": "urn:ngm:class:claude-sonnet",
+        "label": "Claude Sonnet"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -53,12 +99,68 @@
       "label": "Generative AI"
     },
     {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "llm-agents",
+      "label": "LLM Agents"
+    },
+    {
+      "slug": "llm-application-framework",
+      "label": "LLM Application Framework"
+    },
+    {
+      "slug": "tool-augmented-llm",
+      "label": "Tool-Augmented LLM"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
       "slug": "https-cursor-com",
       "label": "https://cursor.com"
     },
     {
       "slug": "https-docs-cursor-com",
       "label": "https://docs.cursor.com"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
     }
   ],
   "backlinks": [

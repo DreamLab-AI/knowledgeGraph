@@ -255,6 +255,14 @@
       "label": "Convolutional Neural Network"
     },
     {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "cross-platform-compliance-hub",
+      "label": "Cross-Platform Compliance Hub"
+    },
+    {
       "slug": "dropout",
       "label": "Dropout"
     },

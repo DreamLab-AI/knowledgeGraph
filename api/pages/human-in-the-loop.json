@@ -285,6 +285,18 @@
       "label": "Autonomy Level"
     },
     {
+      "slug": "corrigibility",
+      "label": "Corrigibility"
+    },
+    {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "human-oversight",
       "label": "Human Oversight"
     },

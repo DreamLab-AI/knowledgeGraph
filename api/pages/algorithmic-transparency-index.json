@@ -219,6 +219,10 @@
     {
       "slug": "audit-trail",
       "label": "Audit Trail"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
     }
   ]
 }

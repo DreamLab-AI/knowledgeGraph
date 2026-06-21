@@ -8,24 +8,52 @@
   "definition": "A decoder network is the component of an encoder-decoder architecture that maps a compact latent representation back to a target output such as a reconstructed input, an image or a sequence of tokens. It learns to invert the compression performed by the encoder, reconstructing high-dimensional structure from low-dimensional codes. Decoders are central to autoencoders, variational autoencoders, sequence-to-sequence models and generative systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:autoencoder",
-      "label": "Autoencoder"
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "id": "urn:ngm:class:encoder-decoder-architecture",
+      "label": "Encoder-Decoder Architecture"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:upsampling",
+        "label": "Upsampling"
+      },
+      {
+        "id": "urn:ngm:class:transposed-convolution",
+        "label": "Transposed Convolution"
+      },
+      {
+        "id": "urn:ngm:class:skip-connection",
+        "label": "Skip Connection"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:representation-learning",
         "label": "Representation Learning"
+      },
+      {
+        "id": "urn:ngm:class:latent-space",
+        "label": "Latent Space"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
       }
     ],
     "enables": [
@@ -36,6 +64,30 @@
       {
         "id": "urn:ngm:class:image-generation",
         "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "id": "urn:ngm:class:audio-synthesis",
+        "label": "Audio Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
       }
     ],
     "dependsOn": [],
@@ -43,6 +95,10 @@
       {
         "id": "urn:ngm:class:generative-model",
         "label": "Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
       }
     ],
     "contrastsWith": [
@@ -60,14 +116,25 @@
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
-      }
-    ],
-    "supports": [
+      },
       {
-        "id": "urn:ngm:class:variational-autoencoder",
-        "label": "Variational Autoencoder"
+        "id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:cross-attention",
+        "label": "Cross-Attention"
+      },
+      {
+        "id": "urn:ngm:class:pixel-shuffle",
+        "label": "Pixel Shuffle"
+      },
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV-Cache"
       }
     ],
+    "supports": [],
     "standardizedBy": [],
     "partOf": [
       {
@@ -77,6 +144,14 @@
       {
         "id": "urn:ngm:class:variational-autoencoder",
         "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:encoder-decoder-architecture",
+        "label": "Encoder-Decoder Architecture"
+      },
+      {
+        "id": "urn:ngm:class:sequence-to-sequence-model",
+        "label": "Sequence-to-Sequence Model"
       }
     ],
     "relatedTo": [
@@ -89,11 +164,205 @@
         "label": "Generative Adversarial Network"
       },
       {
-        "id": "urn:ngm:class:encoder",
-        "label": "Encoder"
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      },
+      {
+        "id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
       }
     ]
   },
-  "wikilinks": [],
-  "backlinks": []
+  "wikilinks": [
+    {
+      "slug": "autoencoder",
+      "label": "Autoencoder"
+    },
+    {
+      "slug": "encoder",
+      "label": "Encoder"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "latent-space",
+      "label": "Latent Space"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "sequence-to-sequence-model",
+      "label": "Sequence-to-Sequence Model"
+    },
+    {
+      "slug": "cross-attention",
+      "label": "Cross-Attention"
+    },
+    {
+      "slug": "upsampling",
+      "label": "Upsampling"
+    },
+    {
+      "slug": "transposed-convolution",
+      "label": "Transposed Convolution"
+    },
+    {
+      "slug": "skip-connection",
+      "label": "Skip Connection"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
+      "slug": "normalising-flow",
+      "label": "Normalising Flow"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "object-detection",
+      "label": "Object Detection"
+    },
+    {
+      "slug": "audio-synthesis",
+      "label": "Audio Synthesis"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "encoder-decoder-architecture",
+      "label": "Encoder-Decoder Architecture"
+    },
+    {
+      "slug": "pixel-shuffle",
+      "label": "Pixel Shuffle"
+    },
+    {
+      "slug": "kv-cache",
+      "label": "KV-Cache"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "algorithm-layer",
+      "label": "AlgorithmLayer"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    }
+  ]
 }

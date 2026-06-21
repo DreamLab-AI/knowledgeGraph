@@ -546,6 +546,10 @@
   ],
   "backlinks": [
     {
+      "slug": "dvc",
+      "label": "DVC"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     },

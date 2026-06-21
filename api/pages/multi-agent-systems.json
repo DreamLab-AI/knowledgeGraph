@@ -211,6 +211,14 @@
       "label": "Complex Adaptive Systems"
     },
     {
+      "slug": "crew-ai",
+      "label": "CrewAI"
+    },
+    {
+      "slug": "cybernetics",
+      "label": "Cybernetics"
+    },
+    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },

@@ -172,6 +172,10 @@
       "label": "Architecture"
     },
     {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
       "slug": "linear-encoder",
       "label": "Linear Encoder"
     },

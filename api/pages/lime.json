@@ -124,6 +124,10 @@
   ],
   "backlinks": [
     {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
       "slug": "explainable-ai",
       "label": "Explainable AI"
     },

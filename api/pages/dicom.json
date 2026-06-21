@@ -13,14 +13,22 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
-  "maturity": "mature",
+  "qualityScore": 0.9,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [
       {
         "id": "urn:ngm:class:interoperability",
         "label": "Interoperability"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
       }
     ],
     "enables": [
@@ -31,6 +39,18 @@
       {
         "id": "urn:ngm:class:medical-imaging-ai",
         "label": "Medical Imaging AI"
+      },
+      {
+        "id": "urn:ngm:class:clinical-decision-support",
+        "label": "Clinical Decision Support"
+      },
+      {
+        "id": "urn:ngm:class:telehealth",
+        "label": "Telehealth"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ],
     "dependsOn": [],
@@ -38,14 +58,26 @@
     "contrastsWith": [],
     "bridgesTo": [
       {
+        "id": "urn:ngm:class:hl7-fhir",
+        "label": "HL7 FHIR"
+      },
+      {
+        "id": "urn:ngm:class:electronic-health-record",
+        "label": "Electronic Health Record"
+      },
+      {
         "id": "urn:ngm:class:interoperability-framework",
         "label": "Interoperability Framework"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:data-protection",
-        "label": "Data Protection"
+        "id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      },
+      {
+        "id": "urn:ngm:class:semantic-interoperability",
+        "label": "Semantic Interoperability"
       }
     ],
     "supports": [
@@ -56,6 +88,14 @@
       {
         "id": "urn:ngm:class:deep-learning",
         "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:healthcare-ai",
+        "label": "Healthcare AI"
+      },
+      {
+        "id": "urn:ngm:class:image-segmentation",
+        "label": "Image Segmentation"
       }
     ],
     "standardizedBy": [
@@ -80,12 +120,157 @@
         "label": "Computer Vision"
       },
       {
-        "id": "urn:ngm:class:interoperability",
-        "label": "Interoperability"
+        "id": "urn:ngm:class:digital-health",
+        "label": "Digital Health"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "interoperability-standard",
+      "label": "Interoperability Standard"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical Imaging"
+    },
+    {
+      "slug": "medical-imaging-ai",
+      "label": "Medical Imaging AI"
+    },
+    {
+      "slug": "healthcare-ai",
+      "label": "Healthcare AI"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "interoperability-framework",
+      "label": "Interoperability Framework"
+    },
+    {
+      "slug": "hl7-fhir",
+      "label": "HL7 FHIR"
+    },
+    {
+      "slug": "digital-health",
+      "label": "Digital Health"
+    },
+    {
+      "slug": "electronic-health-record",
+      "label": "Electronic Health Record"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "standards-body",
+      "label": "Standards Body"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "rest-api",
+      "label": "REST API"
+    },
+    {
+      "slug": "clinical-decision-support",
+      "label": "Clinical Decision Support"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "security",
+      "label": "Security"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "annotation",
+      "label": "Annotation"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "semantic-interoperability",
+      "label": "Semantic Interoperability"
+    },
+    {
+      "slug": "telehealth",
+      "label": "Telehealth"
+    },
+    {
+      "slug": "picture-archiving-and-communication-system",
+      "label": "Picture Archiving and Communication System"
+    },
+    {
+      "slug": "snomed-ct",
+      "label": "SNOMED CT"
+    },
+    {
+      "slug": "transfer-syntax",
+      "label": "Transfer Syntax"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    }
+  ],
   "backlinks": [
     {
       "slug": "health-metaverse-application",

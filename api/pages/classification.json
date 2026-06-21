@@ -448,6 +448,10 @@
       "label": "Conformal Prediction"
     },
     {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
       "slug": "pattern-recognition",
       "label": "Pattern Recognition"
     },

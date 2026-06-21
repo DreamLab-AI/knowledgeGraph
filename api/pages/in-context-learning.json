@@ -139,6 +139,10 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "dspy",
+      "label": "DSPy"
+    },
+    {
       "slug": "few-shot-learning",
       "label": "Few-Shot Learning"
     },

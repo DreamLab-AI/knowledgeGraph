@@ -304,6 +304,10 @@
     {
       "slug": "cognitive-science",
       "label": "Cognitive Science"
+    },
+    {
+      "slug": "dataset",
+      "label": "Dataset"
     }
   ]
 }

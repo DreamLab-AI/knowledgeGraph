@@ -262,6 +262,22 @@
       "label": "Context Awareness"
     },
     {
+      "slug": "database-schema",
+      "label": "Database Schema"
+    },
+    {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "decision-theory",
+      "label": "Decision Theory"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     },

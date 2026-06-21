@@ -131,6 +131,10 @@
       "label": "classifier-free guidance"
     },
     {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

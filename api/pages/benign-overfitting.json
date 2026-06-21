@@ -102,6 +102,10 @@
     {
       "slug": "algorithmic-bias-and-variance",
       "label": "Algorithmic Bias and Variance"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross-Validation"
     }
   ]
 }

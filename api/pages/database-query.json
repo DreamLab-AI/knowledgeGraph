@@ -160,6 +160,10 @@
   ],
   "backlinks": [
     {
+      "slug": "database-schema",
+      "label": "Database Schema"
+    },
+    {
       "slug": "spatial-queries",
       "label": "Spatial Queries"
     }

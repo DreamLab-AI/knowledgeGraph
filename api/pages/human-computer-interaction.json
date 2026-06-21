@@ -241,6 +241,14 @@
       "label": "Computer Use and Browser Agents"
     },
     {
+      "slug": "creative-tools",
+      "label": "creative tools"
+    },
+    {
+      "slug": "customer-support",
+      "label": "Customer Support"
+    },
+    {
       "slug": "education-and-ai",
       "label": "Education and AI"
     },

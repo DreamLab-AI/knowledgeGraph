@@ -197,6 +197,18 @@
       "label": "Computer Vision"
     },
     {
+      "slug": "convolution",
+      "label": "Convolution"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

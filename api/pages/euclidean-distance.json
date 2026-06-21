@@ -100,5 +100,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "cosine-similarity",
+      "label": "Cosine Similarity"
+    }
+  ]
 }

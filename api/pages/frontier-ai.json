@@ -193,6 +193,10 @@
       "label": "Artificial Intelligence Research"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
     }

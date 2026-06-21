@@ -13,12 +13,67 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:data-cleaning",
+        "label": "Data Cleaning"
+      },
+      {
+        "id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:normalisation",
+        "label": "Normalisation"
+      },
+      {
+        "id": "urn:ngm:class:missing-value-imputation",
+        "label": "Missing Value Imputation"
+      },
+      {
+        "id": "urn:ngm:class:outlier-detection",
+        "label": "Outlier Detection"
+      },
+      {
+        "id": "urn:ngm:class:categorical-encoding",
+        "label": "Categorical Encoding"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:feature-selection",
+        "label": "Feature Selection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "id": "urn:ngm:class:train-test-split",
+        "label": "Train-Test Split"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:model-accuracy",
+        "label": "Model Accuracy"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
@@ -35,6 +90,14 @@
       {
         "id": "urn:ngm:class:data-cleaning",
         "label": "Data Cleaning"
+      },
+      {
+        "id": "urn:ngm:class:automl",
+        "label": "AutoML"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ]
   },
@@ -47,6 +110,14 @@
     {
       "slug": "applied-machine-learning",
       "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
     },
     {
       "slug": "data-cleaning",

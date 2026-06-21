@@ -62,6 +62,14 @@
       "label": "Classification"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
     },

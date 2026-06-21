@@ -80,6 +80,10 @@
       "label": "Arbitrator Expertise"
     },
     {
+      "slug": "decision-engine",
+      "label": "Decision Engine"
+    },
+    {
       "slug": "transparency-oecd",
       "label": "Transparency (OECD)"
     }

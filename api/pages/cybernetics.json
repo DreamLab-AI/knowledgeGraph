@@ -10,10 +10,14 @@
     {
       "id": "urn:ngm:class:control-theory",
       "label": "Control Theory"
+    },
+    {
+      "id": "urn:ngm:class:systems-theory",
+      "label": "Systems Theory"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -60,6 +64,10 @@
       {
         "id": "urn:ngm:class:self-organisation",
         "label": "Self Organisation"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
       }
     ],
     "dependsOn": [],
@@ -70,20 +78,7 @@
         "label": "Open Loop Control"
       }
     ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:cognitive-science",
-        "label": "Cognitive Science"
-      },
-      {
-        "id": "urn:ngm:class:governance",
-        "label": "Governance"
-      },
-      {
-        "id": "urn:ngm:class:distributed-systems",
-        "label": "Distributed Systems"
-      }
-    ],
+    "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:feedback-loop",
@@ -108,7 +103,7 @@
         "label": "AI Alignment"
       },
       {
-        "id": "urn:ngm:class:autonomous-system",
+        "id": "urn:ngm:class:autonomous-systems",
         "label": "Autonomous Systems"
       },
       {
@@ -137,7 +132,128 @@
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "adaptive-control",
+      "label": "Adaptive Control"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "systems-theory",
+      "label": "Systems Theory"
+    },
+    {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "self-organisation",
+      "label": "Self-Organisation"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "self-organised-criticality",
+      "label": "Self-Organised Criticality"
+    },
+    {
+      "slug": "homeostasis",
+      "label": "Homeostasis"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "evolutionary-computation",
+      "label": "Evolutionary Computation"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
+    },
+    {
+      "slug": "chaos-theory",
+      "label": "Chaos Theory"
+    },
+    {
+      "slug": "dynamical-systems-theory",
+      "label": "Dynamical Systems Theory"
+    },
+    {
+      "slug": "statistical-mechanics",
+      "label": "Statistical Mechanics"
+    },
+    {
+      "slug": "collective-intelligence",
+      "label": "Collective Intelligence"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    }
+  ],
   "backlinks": [
     {
       "slug": "adaptive-behaviour",

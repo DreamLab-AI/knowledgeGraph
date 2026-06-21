@@ -152,6 +152,10 @@
       "label": "Audit Trail"
     },
     {
+      "slug": "cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management"
+    },
+    {
       "slug": "data-anonymization-pipeline",
       "label": "Data Anonymization Pipeline"
     },

@@ -114,6 +114,10 @@
     {
       "slug": "control-net",
       "label": "controlnet"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
     }
   ]
 }

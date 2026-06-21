@@ -9,8 +9,55 @@ public:: true
   "vc:slug": "claude",
   "title": "Claude",
   "vc:public": true,
-  "vc:outboundWikilinks": [],
-  "vc:schemaVersion": 2
+  "vc:outboundWikilinks": [
+    {"@id": "urn:visionflow:linked:anthropic", "vc:label": "Anthropic"},
+    {"@id": "urn:visionflow:linked:large-language-models", "vc:label": "Large Language Models"},
+    {"@id": "urn:visionflow:linked:constitutional-ai-training-methodology", "vc:label": "Constitutional AI Training Methodology"},
+    {"@id": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "vc:label": "Reinforcement Learning from Human Feedback"},
+    {"@id": "urn:visionflow:linked:ai-safety", "vc:label": "AI Safety"},
+    {"@id": "urn:visionflow:linked:foundation-model", "vc:label": "Foundation Model"},
+    {"@id": "urn:visionflow:linked:model-context-protocol", "vc:label": "Model Context Protocol"},
+    {"@id": "urn:visionflow:linked:agentic-workflow", "vc:label": "Agentic Workflow"},
+    {"@id": "urn:visionflow:linked:agentic-ai", "vc:label": "Agentic AI"},
+    {"@id": "urn:visionflow:linked:pre-training", "vc:label": "Pre Training"},
+    {"@id": "urn:visionflow:linked:instruction-tuning", "vc:label": "Instruction Tuning"},
+    {"@id": "urn:visionflow:linked:direct-preference-optimisation", "vc:label": "Direct Preference Optimisation"},
+    {"@id": "urn:visionflow:linked:rlhf", "vc:label": "RLHF"},
+    {"@id": "urn:visionflow:linked:red-teaming", "vc:label": "Red Teaming"},
+    {"@id": "urn:visionflow:linked:mechanistic-interpretability", "vc:label": "Mechanistic Interpretability"},
+    {"@id": "urn:visionflow:linked:scalable-oversight", "vc:label": "Scalable Oversight"},
+    {"@id": "urn:visionflow:linked:responsible-scaling-policy", "vc:label": "Responsible Scaling Policy"},
+    {"@id": "urn:visionflow:linked:transformer-architecture", "vc:label": "Transformer Architecture"},
+    {"@id": "urn:visionflow:linked:tool-use", "vc:label": "Tool Use"},
+    {"@id": "urn:visionflow:linked:conversational-ai", "vc:label": "Conversational AI"},
+    {"@id": "urn:visionflow:linked:function-calling", "vc:label": "Function Calling"},
+    {"@id": "urn:visionflow:linked:code-generation", "vc:label": "Code Generation"},
+    {"@id": "urn:visionflow:linked:retrieval-augmented-generation", "vc:label": "Retrieval-Augmented Generation"},
+    {"@id": "urn:visionflow:linked:multi-step-reasoning", "vc:label": "Multi-Step Reasoning"},
+    {"@id": "urn:visionflow:linked:workflow-automation", "vc:label": "Workflow Automation"},
+    {"@id": "urn:visionflow:linked:ai-alignment", "vc:label": "AI Alignment"},
+    {"@id": "urn:visionflow:linked:ai-safety-research", "vc:label": "AI Safety Research"},
+    {"@id": "urn:visionflow:linked:enterprise-ai-adoption", "vc:label": "Enterprise AI Adoption"},
+    {"@id": "urn:visionflow:linked:frontier-ai", "vc:label": "Frontier AI"},
+    {"@id": "urn:visionflow:linked:ai-governance", "vc:label": "AI Governance"},
+    {"@id": "urn:visionflow:linked:ai-safety-institute", "vc:label": "AI Safety Institute"},
+    {"@id": "urn:visionflow:linked:gpt-4", "vc:label": "GPT 4"},
+    {"@id": "urn:visionflow:linked:gemini-multimodal-language-model", "vc:label": "Gemini Multimodal Language Model"},
+    {"@id": "urn:visionflow:linked:llama-3", "vc:label": "Llama 3"},
+    {"@id": "urn:visionflow:linked:openai-research-organisation", "vc:label": "OpenAI Research Organisation"},
+    {"@id": "urn:visionflow:linked:human-feedback", "vc:label": "Human Feedback"},
+    {"@id": "urn:visionflow:linked:amazon-bedrock", "vc:label": "Amazon Bedrock"},
+    {"@id": "urn:visionflow:linked:google-deepmind", "vc:label": "Google DeepMind"},
+    {"@id": "urn:visionflow:linked:eu-ai-act-regulatory-instrument", "vc:label": "EU AI Act Regulatory Instrument"}
+  ],
+  "vc:schemaVersion": 2,
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:enrichment-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-06-21T00:00:00Z",
+    "@type": "xsd:dateTime"
+  }
 }
 ```
 
@@ -151,11 +198,70 @@ public:: true
       "label": "Anthropic Claude"
     }
   ],
-  "quality": 0.74,
+  "quality": 0.90,
   "provenance": {
-    "attributedTo": "did:nostr:ontology-mesh",
-    "generatedAt": "2026-06-13T00:00:00Z",
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-21T00:00:00Z",
     "inferenceRule": "ManualEnrichment"
+  }
+}
+```
+
+```json-ld
+{
+  "@context": "https://narrativegoldmine.com/context/v1.jsonld",
+  "@id": "urn:visionflow:annotation:link-resolutions:claude:b9f3e8a21c50",
+  "@type": "vc:LinkResolutionsAnnotation",
+  "vc:appliesTo": {
+    "@id": "urn:visionflow:page:claude"
+  },
+  "vc:resolutions": [
+    {"raw": "[[Anthropic]]", "resolved": "urn:visionflow:linked:anthropic", "kind": "ResolvedLink"},
+    {"raw": "[[Large Language Models]]", "resolved": "urn:visionflow:linked:large-language-models", "kind": "ResolvedLink"},
+    {"raw": "[[Constitutional AI Training Methodology]]", "resolved": "urn:visionflow:linked:constitutional-ai-training-methodology", "kind": "ResolvedLink"},
+    {"raw": "[[Reinforcement Learning from Human Feedback]]", "resolved": "urn:visionflow:linked:reinforcement-learning-from-human-feedback", "kind": "ResolvedLink"},
+    {"raw": "[[AI Safety]]", "resolved": "urn:visionflow:linked:ai-safety", "kind": "ResolvedLink"},
+    {"raw": "[[Foundation Model]]", "resolved": "urn:visionflow:linked:foundation-model", "kind": "ResolvedLink"},
+    {"raw": "[[Model Context Protocol]]", "resolved": "urn:visionflow:linked:model-context-protocol", "kind": "ResolvedLink"},
+    {"raw": "[[Agentic Workflow]]", "resolved": "urn:visionflow:linked:agentic-workflow", "kind": "ResolvedLink"},
+    {"raw": "[[Agentic AI]]", "resolved": "urn:visionflow:linked:agentic-ai", "kind": "ResolvedLink"},
+    {"raw": "[[Pre Training]]", "resolved": "urn:visionflow:linked:pre-training", "kind": "ResolvedLink"},
+    {"raw": "[[Instruction Tuning]]", "resolved": "urn:visionflow:linked:instruction-tuning", "kind": "ResolvedLink"},
+    {"raw": "[[Direct Preference Optimisation]]", "resolved": "urn:visionflow:linked:direct-preference-optimisation", "kind": "ResolvedLink"},
+    {"raw": "[[RLHF]]", "resolved": "urn:visionflow:linked:rlhf", "kind": "ResolvedLink"},
+    {"raw": "[[Red Teaming]]", "resolved": "urn:visionflow:linked:red-teaming", "kind": "ResolvedLink"},
+    {"raw": "[[Mechanistic Interpretability]]", "resolved": "urn:visionflow:linked:mechanistic-interpretability", "kind": "ResolvedLink"},
+    {"raw": "[[Scalable Oversight]]", "resolved": "urn:visionflow:linked:scalable-oversight", "kind": "ResolvedLink"},
+    {"raw": "[[Responsible Scaling Policy]]", "resolved": "urn:visionflow:linked:responsible-scaling-policy", "kind": "ResolvedLink"},
+    {"raw": "[[Transformer Architecture]]", "resolved": "urn:visionflow:linked:transformer-architecture", "kind": "ResolvedLink"},
+    {"raw": "[[Tool Use]]", "resolved": "urn:visionflow:linked:tool-use", "kind": "ResolvedLink"},
+    {"raw": "[[Conversational AI]]", "resolved": "urn:visionflow:linked:conversational-ai", "kind": "ResolvedLink"},
+    {"raw": "[[Function Calling]]", "resolved": "urn:visionflow:linked:function-calling", "kind": "ResolvedLink"},
+    {"raw": "[[Code Generation]]", "resolved": "urn:visionflow:linked:code-generation", "kind": "ResolvedLink"},
+    {"raw": "[[Retrieval-Augmented Generation]]", "resolved": "urn:visionflow:linked:retrieval-augmented-generation", "kind": "ResolvedLink"},
+    {"raw": "[[Multi-Step Reasoning]]", "resolved": "urn:visionflow:linked:multi-step-reasoning", "kind": "ResolvedLink"},
+    {"raw": "[[Workflow Automation]]", "resolved": "urn:visionflow:linked:workflow-automation", "kind": "ResolvedLink"},
+    {"raw": "[[AI Alignment]]", "resolved": "urn:visionflow:linked:ai-alignment", "kind": "ResolvedLink"},
+    {"raw": "[[AI Safety Research]]", "resolved": "urn:visionflow:linked:ai-safety-research", "kind": "ResolvedLink"},
+    {"raw": "[[Enterprise AI Adoption]]", "resolved": "urn:visionflow:linked:enterprise-ai-adoption", "kind": "ResolvedLink"},
+    {"raw": "[[Frontier AI]]", "resolved": "urn:visionflow:linked:frontier-ai", "kind": "ResolvedLink"},
+    {"raw": "[[AI Governance]]", "resolved": "urn:visionflow:linked:ai-governance", "kind": "ResolvedLink"},
+    {"raw": "[[AI Safety Institute]]", "resolved": "urn:visionflow:linked:ai-safety-institute", "kind": "ResolvedLink"},
+    {"raw": "[[GPT 4]]", "resolved": "urn:visionflow:linked:gpt-4", "kind": "ResolvedLink"},
+    {"raw": "[[Gemini Multimodal Language Model]]", "resolved": "urn:visionflow:linked:gemini-multimodal-language-model", "kind": "ResolvedLink"},
+    {"raw": "[[Llama 3]]", "resolved": "urn:visionflow:linked:llama-3", "kind": "ResolvedLink"},
+    {"raw": "[[OpenAI Research Organisation]]", "resolved": "urn:visionflow:linked:openai-research-organisation", "kind": "ResolvedLink"},
+    {"raw": "[[Human Feedback]]", "resolved": "urn:visionflow:linked:human-feedback", "kind": "ResolvedLink"},
+    {"raw": "[[Amazon Bedrock]]", "resolved": "urn:visionflow:linked:amazon-bedrock", "kind": "ResolvedLink"},
+    {"raw": "[[Google DeepMind]]", "resolved": "urn:visionflow:linked:google-deepmind", "kind": "ResolvedLink"},
+    {"raw": "[[EU AI Act Regulatory Instrument]]", "resolved": "urn:visionflow:linked:eu-ai-act-regulatory-instrument", "kind": "ResolvedLink"}
+  ],
+  "prov:wasAttributedTo": {
+    "@id": "did:nostr:enrichment-swarm"
+  },
+  "prov:generatedAtTime": {
+    "@value": "2026-06-21T00:00:00Z",
+    "@type": "xsd:dateTime"
   }
 }
 ```

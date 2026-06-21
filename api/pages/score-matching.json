@@ -71,6 +71,10 @@
       "label": "AI Upscaling and Super-Resolution"
     },
     {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     },

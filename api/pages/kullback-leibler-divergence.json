@@ -104,6 +104,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "cost-function",
+      "label": "cost function"
+    },
+    {
       "slug": "sampling",
       "label": "Sampling"
     },

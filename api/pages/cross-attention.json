@@ -183,6 +183,14 @@
       "label": "Attention Weight"
     },
     {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
+    },
+    {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

@@ -49,6 +49,10 @@
       "label": "AI Investment"
     },
     {
+      "slug": "claude",
+      "label": "Claude"
+    },
+    {
       "slug": "machine-learning-platform",
       "label": "Machine Learning Platform"
     }
