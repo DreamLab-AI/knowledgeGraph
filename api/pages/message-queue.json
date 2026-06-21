@@ -145,6 +145,10 @@
       "label": "Distributed Computing"
     },
     {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
       "slug": "integration-layer",
       "label": "Integration Layer"
     },

@@ -5,19 +5,57 @@
   "public": true,
   "classIri": "urn:ngm:class:common-sense-reasoning",
   "domain": "ai",
-  "definition": "The capacity of an AI system to draw inferences that humans consider obvious from general background knowledge about the physical world, social norms, causality, and everyday object behaviour \u2014 without explicit instruction. It encompasses na\u00efve physics, na\u00efve psychology, temporal reasoning, and spatial reasoning grounded in embodied human experience.",
+  "definition": "The capacity of an AI system to draw inferences that humans consider obvious from general background knowledge about the physical world, social norms, causality, and everyday object behaviour \u2014 without explicit instruction. It encompasses naive physics, naive psychology, temporal reasoning, spatial reasoning, and social cognition grounded in embodied human experience, and is tested against benchmarks including CommonsenseQA, HellaSwag, WinoGrande, and PIQA.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:natural-language-understanding",
       "label": "Natural Language Understanding"
+    },
+    {
+      "id": "urn:ngm:class:reasoning",
+      "label": "Reasoning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.9,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:naive-physics",
+        "label": "Naive Physics"
+      },
+      {
+        "id": "urn:ngm:class:theory-of-mind",
+        "label": "Theory of Mind"
+      },
+      {
+        "id": "urn:ngm:class:causal-reasoning",
+        "label": "Causal Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:temporal-reasoning",
+        "label": "Temporal Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-reasoning",
+        "label": "Spatial Reasoning"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:grounding",
+        "label": "Grounding"
+      },
+      {
+        "id": "urn:ngm:class:world-model",
+        "label": "World Model"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:ai-agents",
@@ -26,21 +64,79 @@
       {
         "id": "urn:ngm:class:natural-language-understanding",
         "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:ai-core-concepts",
-        "label": "ai core concepts"
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
       }
     ],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:neurosymbolic-ai",
+        "label": "Neurosymbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
+      },
+      {
+        "id": "urn:ngm:class:constitutional-ai",
+        "label": "Constitutional AI"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought Prompting"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
+      },
+      {
+        "id": "urn:ngm:class:formal-reasoning",
+        "label": "Formal Reasoning"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "supports": [],
@@ -54,10 +150,175 @@
       {
         "id": "urn:ngm:class:ai-alignment",
         "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:hallucination",
+        "label": "Hallucination"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "natural-language-understanding",
+      "label": "Natural Language Understanding"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "AI Agents"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "collective-intelligence",
+      "label": "Collective Intelligence"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "neurosymbolic-ai",
+      "label": "Neurosymbolic AI"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "causal-reasoning",
+      "label": "Causal Reasoning"
+    },
+    {
+      "slug": "temporal-reasoning",
+      "label": "Temporal Reasoning"
+    },
+    {
+      "slug": "spatial-reasoning",
+      "label": "Spatial Reasoning"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
+      "slug": "concept-net",
+      "label": "ConceptNet"
+    },
+    {
+      "slug": "word-net",
+      "label": "WordNet"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "grounding",
+      "label": "Grounding"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "evaluation-benchmarks",
+      "label": "Evaluation Benchmarks"
+    },
+    {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain-of-Thought Prompting"
+    },
+    {
+      "slug": "world-model",
+      "label": "World Model"
+    },
+    {
+      "slug": "theory-of-mind",
+      "label": "Theory of Mind"
+    },
+    {
+      "slug": "naive-physics",
+      "label": "Naive Physics"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "gpt-4",
+      "label": "GPT-4"
+    },
+    {
+      "slug": "constitutional-ai",
+      "label": "Constitutional AI"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "logic-programming",
+      "label": "Logic Programming"
+    },
+    {
+      "slug": "commonsense-qa",
+      "label": "CommonsenseQA"
+    },
+    {
+      "slug": "winogrande",
+      "label": "WinoGrande"
+    },
+    {
+      "slug": "hellaswag",
+      "label": "HellaSwag"
+    }
+  ],
   "backlinks": [
     {
       "slug": "cognitive-ai",

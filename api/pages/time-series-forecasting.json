@@ -457,6 +457,14 @@
       "label": "anomaly detection"
     },
     {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "transformers",
       "label": "Transformers"
     }

@@ -45,6 +45,10 @@
       "label": "AI Video"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
       "slug": "proprietary-ai-video",
       "label": "Proprietary AI Video"
     }

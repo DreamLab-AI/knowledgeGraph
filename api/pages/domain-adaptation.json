@@ -120,6 +120,14 @@
       "label": "Back-Translation"
     },
     {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
     },

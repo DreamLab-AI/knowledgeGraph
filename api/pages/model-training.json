@@ -757,6 +757,14 @@
       "label": "Common Crawl"
     },
     {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    },
+    {
       "slug": "experiment-tracking",
       "label": "Experiment Tracking"
     },

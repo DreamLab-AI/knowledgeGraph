@@ -207,6 +207,18 @@
       "label": "Collision Detection"
     },
     {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

@@ -41,6 +41,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
       "slug": "model-context-protocol",
       "label": "Model Context Protocol"
     },

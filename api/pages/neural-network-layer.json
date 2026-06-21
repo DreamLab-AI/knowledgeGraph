@@ -137,5 +137,10 @@
       "label": "owl:Thing"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "component",
+      "label": "Component"
+    }
+  ]
 }

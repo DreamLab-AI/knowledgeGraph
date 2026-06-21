@@ -144,8 +144,16 @@
       "label": "AI Search"
     },
     {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
       "slug": "collective-memory-archive",
       "label": "Collective Memory Archive"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
     },
     {
       "slug": "discovery-layer",

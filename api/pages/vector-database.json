@@ -139,8 +139,16 @@
       "label": "AI Search"
     },
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
     },
     {
       "slug": "agent-memory",
@@ -187,6 +195,26 @@
       "label": "Chunking"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
       "slug": "data-layer",
       "label": "Data Layer"
     },
@@ -199,6 +227,10 @@
       "label": "Graph Database"
     },
     {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
       "slug": "lang-chain",
       "label": "LangChain"
     },
@@ -207,8 +239,16 @@
       "label": "Meeting AI Assistant"
     },
     {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
+    },
+    {
       "slug": "pinecone",
       "label": "Pinecone"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
     },
     {
       "slug": "retrieval-augmented-generation-rag",

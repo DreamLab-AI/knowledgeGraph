@@ -117,6 +117,10 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
       "slug": "asia-pacific-regulation",
       "label": "Asia Pacific Regulation"
     }

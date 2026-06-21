@@ -131,6 +131,10 @@
       "label": "Alan Turing Institute"
     },
     {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
       "slug": "solid",
       "label": "Solid"
     }

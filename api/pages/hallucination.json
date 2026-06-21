@@ -140,6 +140,10 @@
       "label": "AI Risks"
     },
     {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
       "slug": "agent-memory",
       "label": "Agent Memory"
     },
@@ -154,6 +158,22 @@
     {
       "slug": "bias-in-large-language-models",
       "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
     },
     {
       "slug": "reasoning",

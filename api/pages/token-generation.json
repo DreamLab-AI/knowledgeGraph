@@ -105,5 +105,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    }
+  ]
 }

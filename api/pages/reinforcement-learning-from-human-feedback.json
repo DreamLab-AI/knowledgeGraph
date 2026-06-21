@@ -221,12 +221,28 @@
       "label": "Chatbots"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
       "slug": "competition-in-ai",
       "label": "Competition in AI"
     },
     {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
     },
     {
       "slug": "direct-preference-optimization",

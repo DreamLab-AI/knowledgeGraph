@@ -45,8 +45,16 @@
   ],
   "backlinks": [
     {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
       "slug": "continual-learning",
       "label": "Continual Learning"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
     }
   ]
 }

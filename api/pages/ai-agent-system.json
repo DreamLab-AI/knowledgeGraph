@@ -1109,6 +1109,10 @@
       "label": "Communication Protocol"
     },
     {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
+    },
+    {
       "slug": "consensus-rule",
       "label": "Consensus Rule"
     },
@@ -1269,8 +1273,20 @@
       "label": "Hydraulic Actuator"
     },
     {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
       "slug": "perception-system",
       "label": "Perception System"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
     },
     {
       "slug": "selfish-mining",

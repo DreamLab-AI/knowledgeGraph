@@ -167,6 +167,26 @@
       "label": "Applied Machine Learning"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    },
+    {
       "slug": "data-pipeline",
       "label": "Data Pipeline"
     },

@@ -513,6 +513,10 @@
       "label": "Beam Search Decoding"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
       "slug": "feedback-loop",
       "label": "Feedback Loop"
     }

@@ -91,6 +91,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    },
+    {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
     }

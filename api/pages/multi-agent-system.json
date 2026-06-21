@@ -195,6 +195,10 @@
       "label": "Agent Identity"
     },
     {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
       "slug": "agent-memory",
       "label": "Agent Memory"
     },
@@ -249,6 +253,10 @@
     {
       "slug": "consensus-algorithm",
       "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
     },
     {
       "slug": "situational-awareness",

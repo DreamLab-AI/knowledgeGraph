@@ -261,6 +261,14 @@
       "label": "Bias in Large Language Models"
     },
     {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
       "slug": "death-of-the-internet",
       "label": "Death of the Internet"
     },

@@ -140,6 +140,22 @@
       "label": "Audience Engagement"
     },
     {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
       "slug": "death-of-the-internet",
       "label": "Death of the Internet"
     },

@@ -216,6 +216,22 @@
       "label": "Bias-Variance Tradeoff"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    },
+    {
       "slug": "mean-absolute-error",
       "label": "Mean Absolute Error"
     },

@@ -47,6 +47,10 @@
     {
       "slug": "blip-2-captioner",
       "label": "BLIP-2 Captioner"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
     }
   ]
 }

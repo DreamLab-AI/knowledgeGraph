@@ -165,6 +165,14 @@
       "label": "Camera Parameters"
     },
     {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
       "slug": "generative-design-tool",
       "label": "Generative Design Tool"
     },

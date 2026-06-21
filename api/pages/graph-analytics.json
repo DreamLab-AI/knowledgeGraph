@@ -133,6 +133,10 @@
       "label": "AI Group Formation"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
     },

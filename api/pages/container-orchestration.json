@@ -104,12 +104,20 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
       "slug": "blockchain-as-a-service",
       "label": "Blockchain As A Service"
     },
     {
       "slug": "compute-layer",
       "label": "Compute Layer"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
     }
   ]
 }

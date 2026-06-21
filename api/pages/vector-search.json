@@ -150,6 +150,10 @@
   ],
   "backlinks": [
     {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
       "slug": "context-engineering",
       "label": "Context Engineering"
     },

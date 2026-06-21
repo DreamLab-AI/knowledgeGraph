@@ -381,6 +381,10 @@
       "label": "AI Model"
     },
     {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
       "slug": "agent-identity",
       "label": "Agent Identity"
     },
@@ -393,10 +397,6 @@
       "label": "Attention Weight"
     },
     {
-      "slug": "auto-gpt",
-      "label": "AutoGPT"
-    },
-    {
       "slug": "auto-gen",
       "label": "AutoGen"
     },
@@ -407,6 +407,10 @@
     {
       "slug": "cbdcs",
       "label": "CBDCs"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
     },
     {
       "slug": "enterprise-workflow",

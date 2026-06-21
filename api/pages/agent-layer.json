@@ -115,8 +115,16 @@
       "label": "Model Context Protocol"
     },
     {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
       "slug": "perception-layer",
       "label": "Perception Layer"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
     }
   ]
 }

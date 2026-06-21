@@ -889,8 +889,16 @@
       "label": "Citi Token Services"
     },
     {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
       "slug": "community-governance-model",
       "label": "Community Governance Model"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
     },
     {
       "slug": "consen-sys",
@@ -899,6 +907,10 @@
     {
       "slug": "consortium-blockchain",
       "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
     },
     {
       "slug": "corda",

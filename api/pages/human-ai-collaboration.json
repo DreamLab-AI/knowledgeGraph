@@ -114,6 +114,10 @@
       "label": "AI Safety"
     },
     {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
       "slug": "human-computer-interaction",
       "label": "Human Computer Interaction"
     }

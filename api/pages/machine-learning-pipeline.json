@@ -179,6 +179,10 @@
       "label": "AutoML"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
       "slug": "data-annotation",
       "label": "Data Annotation"
     }

@@ -149,6 +149,18 @@
     {
       "slug": "applied-mathematics",
       "label": "Applied Mathematics"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
     }
   ]
 }

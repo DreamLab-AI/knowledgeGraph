@@ -95,6 +95,10 @@
     {
       "slug": "collision-detection",
       "label": "Collision Detection"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
     }
   ]
 }

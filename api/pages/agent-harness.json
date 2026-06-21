@@ -1,0 +1,340 @@
+{
+  "id": "urn:visionflow:page:agent-harness",
+  "title": "Agent Harness",
+  "slug": "agent-harness",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-harness",
+  "domain": "ai",
+  "definition": "A runtime framework that turns model inference into agent action by managing the tool-call loop, approval gates, context routing, execution lifecycle, and failure recovery \u2014 the model thinks, the harness decides what that thinking is allowed to touch.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.91,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:function-calling",
+        "label": "Function Calling"
+      },
+      {
+        "id": "urn:ngm:class:agent-loop",
+        "label": "Agent Loop"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:workflow-orchestration",
+        "label": "Workflow Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:software-engineering-automation",
+        "label": "Software Engineering Automation"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:react-pattern",
+        "label": "ReAct Pattern"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      },
+      {
+        "id": "urn:ngm:class:checkpointing",
+        "label": "Checkpointing"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:terminal-coding-agents",
+        "label": "Terminal Coding Agents"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+        "label": "Multi-Agent Orchestration Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:agent-evaluation-benchmarks",
+        "label": "Agent Evaluation Benchmarks"
+      },
+      {
+        "id": "urn:ngm:class:agent-runtime",
+        "label": "Agent Runtime"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-infrastructure",
+      "label": "AI Infrastructure"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "agent-loop",
+      "label": "Agent Loop"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "sandboxed-code-execution",
+      "label": "Sandboxed Code Execution"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "state-persistence",
+      "label": "State Persistence"
+    },
+    {
+      "slug": "observability",
+      "label": "Observability"
+    },
+    {
+      "slug": "credential-management",
+      "label": "Credential Management"
+    },
+    {
+      "slug": "rate-limiting",
+      "label": "Rate Limiting"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "evaluation-harness",
+      "label": "Evaluation Harness"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "tool-registry",
+      "label": "Tool Registry"
+    },
+    {
+      "slug": "checkpointing",
+      "label": "Checkpointing"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "workflow-orchestration",
+      "label": "Workflow Orchestration"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "react-pattern",
+      "label": "ReAct Pattern"
+    },
+    {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "opentelemetry",
+      "label": "OpenTelemetry"
+    },
+    {
+      "slug": "software-engineering-automation",
+      "label": "Software Engineering Automation"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "ai-technique",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "compute-layer",
+      "label": "AgentLayer"
+    },
+    {
+      "slug": "ai-research-area",
+      "label": "ComputationAndIntelligenceDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
+    }
+  ]
+}

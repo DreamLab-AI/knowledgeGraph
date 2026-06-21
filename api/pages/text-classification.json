@@ -101,6 +101,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
       "slug": "sentiment-analysis",
       "label": "Sentiment Analysis"
     }

@@ -161,6 +161,10 @@
       "label": "Collaborative Whiteboard"
     },
     {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
       "slug": "content-delivery",
       "label": "Content Delivery"
     },

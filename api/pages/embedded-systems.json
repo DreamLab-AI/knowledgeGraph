@@ -163,6 +163,10 @@
       "label": "CAN Bus"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

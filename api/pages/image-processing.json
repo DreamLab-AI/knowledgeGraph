@@ -157,6 +157,10 @@
       "label": "Audio Processing"
     },
     {
+      "slug": "code-former",
+      "label": "CodeFormer"
+    },
+    {
       "slug": "computational-photography",
       "label": "Computational Photography"
     },

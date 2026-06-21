@@ -234,6 +234,14 @@
       "label": "Bias in Large Language Models"
     },
     {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
       "slug": "competition-in-ai",
       "label": "Competition in AI"
     },

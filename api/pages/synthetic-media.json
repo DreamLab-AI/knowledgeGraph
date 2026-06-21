@@ -148,6 +148,22 @@
       "label": "AI-Generated Content Disclosure"
     },
     {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
       "slug": "deepfakes-and-fraudulent-content",
       "label": "Deepfakes and fraudulent content"
     },

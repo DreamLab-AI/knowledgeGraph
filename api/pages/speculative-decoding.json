@@ -149,6 +149,10 @@
       "label": "Beam Search"
     },
     {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
     },

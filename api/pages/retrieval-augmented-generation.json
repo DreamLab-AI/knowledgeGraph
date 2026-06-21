@@ -162,8 +162,20 @@
       "label": "Action Executor"
     },
     {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
     },
     {
       "slug": "agent-memory",
@@ -234,12 +246,40 @@
       "label": "Chunking"
     },
     {
+      "slug": "closed-world-assumption",
+      "label": "Closed World Assumption"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
       "slug": "cohere",
       "label": "Cohere"
     },
     {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
       "slug": "context-engineering",
       "label": "Context Engineering"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
     },
     {
       "slug": "cortex-agent",
@@ -250,6 +290,10 @@
       "label": "Data Layer"
     },
     {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
       "slug": "function-calling",
       "label": "Function Calling"
     },
@@ -258,12 +302,24 @@
       "label": "GPTs and Custom Assistants"
     },
     {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     },
     {
       "slug": "llm-application-framework",
       "label": "LLM Application Framework"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
     },
     {
       "slug": "llm-orchestration",
@@ -282,8 +338,20 @@
       "label": "Mistral"
     },
     {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
+    },
+    {
       "slug": "pinecone",
       "label": "Pinecone"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
     },
     {
       "slug": "prompt-engineering",
@@ -300,6 +368,10 @@
     {
       "slug": "telecollaboration-and-telepresence",
       "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
     },
     {
       "slug": "transformers",

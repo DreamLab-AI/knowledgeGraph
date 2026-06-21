@@ -406,6 +406,10 @@
       "label": "Action Executor"
     },
     {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
     },
@@ -430,8 +434,16 @@
       "label": "agentic ai"
     },
     {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
       "slug": "model-context-protocol",
       "label": "Model Context Protocol"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
     }
   ]
 }

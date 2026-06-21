@@ -277,6 +277,18 @@
       "label": "Cohere"
     },
     {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },

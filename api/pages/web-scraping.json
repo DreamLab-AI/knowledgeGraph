@@ -71,6 +71,10 @@
       "label": "AI Scrapers"
     },
     {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
     },

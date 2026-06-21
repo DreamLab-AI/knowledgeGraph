@@ -168,6 +168,14 @@
       "label": "Automated Design"
     },
     {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

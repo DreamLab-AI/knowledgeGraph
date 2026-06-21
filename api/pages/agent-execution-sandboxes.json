@@ -1,0 +1,322 @@
+{
+  "id": "urn:visionflow:page:agent-execution-sandboxes",
+  "title": "Agent Execution Sandboxes",
+  "slug": "agent-execution-sandboxes",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-execution-sandboxes",
+  "domain": "infrastructure",
+  "definition": "Isolated execution environments providing secure, ephemeral containers and virtual machines for AI-generated code execution, tool use, and autonomous agent operation \u2014 including E2B, Daytona, Docker MCP Gateway, Cloudflare Sandboxes, Modal, Vercel Sandbox, and Fly Machines \u2014 with hardware-level isolation via Firecracker microVMs, gVisor syscall interception, or Kata Containers to prevent escape to host infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.9,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      },
+      {
+        "id": "urn:ngm:class:mcp-server",
+        "label": "MCP Server"
+      },
+      {
+        "id": "urn:ngm:class:code-execution",
+        "label": "Code Execution"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      },
+      {
+        "id": "urn:ngm:class:terminal-coding-agents",
+        "label": "Terminal Coding Agents"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:internal-ai-harness",
+        "label": "Internal AI Harness"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:human-in-the-loop",
+        "label": "Human-in-the-Loop"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-development-sdks",
+        "label": "Agent Development SDKs"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+        "label": "Multi-Agent Orchestration Frameworks"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
+    },
+    {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "containerisation",
+      "label": "Containerisation"
+    },
+    {
+      "slug": "container-runtime",
+      "label": "Container Runtime"
+    },
+    {
+      "slug": "docker-containerisation-platform",
+      "label": "Docker Containerisation Platform"
+    },
+    {
+      "slug": "container-orchestration",
+      "label": "Container Orchestration"
+    },
+    {
+      "slug": "open-container-initiative",
+      "label": "Open Container Initiative"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "mcp-server",
+      "label": "MCP Server"
+    },
+    {
+      "slug": "mcp-client",
+      "label": "MCP Client"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
+      "slug": "autonomous-coding",
+      "label": "Autonomous Coding"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "prompt-injection",
+      "label": "Prompt Injection"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "microservices-architecture",
+      "label": "Microservices Architecture"
+    },
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "tool-call-loop",
+      "label": "Tool Call Loop"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "ai-infrastructure",
+      "label": "AI Infrastructure"
+    },
+    {
+      "slug": "regulatory-sandbox",
+      "label": "Regulatory Sandbox"
+    },
+    {
+      "slug": "open-container-initiative",
+      "label": "Open Container Initiative"
+    },
+    {
+      "slug": "visionclaw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    },
+    {
+      "slug": "decentralised-agentic-infrastructure-stack",
+      "label": "Decentralised Agentic Infrastructure Stack"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "serverless-computing",
+      "label": "Serverless Computing"
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "slug": "swe-bench",
+      "label": "SWE-bench"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
+    }
+  ]
+}

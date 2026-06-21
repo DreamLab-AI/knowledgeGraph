@@ -99,6 +99,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
       "slug": "social-robotics",
       "label": "Social Robotics"
     }

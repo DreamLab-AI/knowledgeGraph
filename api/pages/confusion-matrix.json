@@ -235,6 +235,10 @@
       "label": "Accuracy"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
       "slug": "f1-score",
       "label": "F1 Score"
     },

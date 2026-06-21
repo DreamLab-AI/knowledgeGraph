@@ -82,6 +82,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
       "slug": "tc-0003-telepresence-robot",
       "label": "tc 0003 telepresence robot"
     }

@@ -155,6 +155,14 @@
       "label": "Cognitive AI"
     },
     {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
     },

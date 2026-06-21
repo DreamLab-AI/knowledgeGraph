@@ -111,6 +111,14 @@
       "label": "BLIP-2 Captioner"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     }

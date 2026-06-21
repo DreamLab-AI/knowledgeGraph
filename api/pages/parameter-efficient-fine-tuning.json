@@ -183,6 +183,10 @@
       "label": "BLIP-2 Captioner"
     },
     {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
       "slug": "kohya-dreambooth-and-similar",
       "label": "KOHYA Dreambooth and similar"
     },

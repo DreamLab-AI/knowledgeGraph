@@ -109,6 +109,10 @@
       "label": "Bias-Variance Tradeoff"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
       "slug": "ensemble-methods",
       "label": "Ensemble Methods"
     }

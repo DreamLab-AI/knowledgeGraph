@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
       "slug": "reliability",
       "label": "Reliability"
     }

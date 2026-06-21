@@ -163,6 +163,10 @@
       "label": "Bayesian Optimisation"
     },
     {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
       "slug": "model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
     }

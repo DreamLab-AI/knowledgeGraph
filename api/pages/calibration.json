@@ -137,6 +137,10 @@
       "label": "AI Evaluation"
     },
     {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "exteroceptive-sensor",
       "label": "Exteroceptive Sensor"
     },

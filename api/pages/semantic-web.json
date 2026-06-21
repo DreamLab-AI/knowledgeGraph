@@ -137,6 +137,10 @@
       "label": "Automated Reasoning"
     },
     {
+      "slug": "closed-world-assumption",
+      "label": "Closed World Assumption"
+    },
+    {
       "slug": "decentralised-web",
       "label": "Decentralised Web"
     },

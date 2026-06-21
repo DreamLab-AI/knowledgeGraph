@@ -53,6 +53,10 @@
       "label": "Calculation Parameters"
     },
     {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
       "slug": "privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
     }

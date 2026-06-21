@@ -117,6 +117,10 @@
       "label": "Agent-Based Models"
     },
     {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
       "slug": "risk-assessment",
       "label": "Risk Assessment"
     }

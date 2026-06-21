@@ -13,11 +13,37 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:collaborative-filtering",
+        "label": "Collaborative Filtering"
+      },
+      {
+        "id": "urn:ngm:class:content-based-filtering",
+        "label": "Content-Based Filtering"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:dense-retrieval",
+        "label": "Dense Retrieval"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:digital-curation-platform",
@@ -26,11 +52,32 @@
       {
         "id": "urn:ngm:class:discovery-layer",
         "label": "Discovery Layer"
+      },
+      {
+        "id": "urn:ngm:class:audience-engagement",
+        "label": "Audience Engagement"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -44,6 +91,26 @@
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
       }
     ],
     "supports": [],
@@ -55,17 +122,202 @@
         "label": "Search Engine"
       },
       {
-        "id": "urn:ngm:class:semantic-search",
-        "label": "Semantic Search"
-      },
-      {
         "id": "urn:ngm:class:algorithmic-bias",
         "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:filter-bubble",
+        "label": "Filter Bubble"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:content-creation",
+        "label": "Content Creation"
+      },
+      {
+        "id": "urn:ngm:class:engagement-maximisation",
+        "label": "Engagement Maximisation"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-transparency",
+        "label": "Algorithmic Transparency"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "recommendation-systems",
+      "label": "Recommendation Systems"
+    },
+    {
+      "slug": "search-engine",
+      "label": "Search Engine"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "slug": "algorithmic-bias",
+      "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "algorithmic-transparency",
+      "label": "Algorithmic Transparency"
+    },
+    {
+      "slug": "digital-curation-platform",
+      "label": "Digital Curation Platform"
+    },
+    {
+      "slug": "discovery-layer",
+      "label": "Discovery Layer"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "personalisation",
+      "label": "Personalisation"
+    },
+    {
+      "slug": "filter-bubble",
+      "label": "Filter Bubble"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "content-based-filtering",
+      "label": "Content-Based Filtering"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "dense-retrieval",
+      "label": "Dense Retrieval"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "knowledge-management",
+      "label": "Knowledge Management"
+    },
+    {
+      "slug": "social-media-platform-infrastructure",
+      "label": "Social Media Platform Infrastructure"
+    },
+    {
+      "slug": "digital-services-act",
+      "label": "Digital Services Act"
+    },
+    {
+      "slug": "online-safety-act",
+      "label": "Online Safety Act"
+    },
+    {
+      "slug": "decentralised-content-network",
+      "label": "Decentralised Content Network"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "federated-social-web",
+      "label": "Federated Social Web"
+    },
+    {
+      "slug": "engagement-maximisation",
+      "label": "Engagement Maximisation"
+    },
+    {
+      "slug": "user-generated-content",
+      "label": "User-Generated Content"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "digital-marketing",
+      "label": "Digital Marketing"
+    },
+    {
+      "slug": "audience-engagement",
+      "label": "Audience Engagement"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "natural-language-generation",
+      "label": "Natural Language Generation"
+    },
+    {
+      "slug": "search-engine-optimisation",
+      "label": "Search Engine Optimisation"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
     {
       "slug": "controlled-vocabulary",
       "label": "Controlled Vocabulary"

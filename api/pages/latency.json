@@ -209,6 +209,10 @@
       "label": "Batch Inference"
     },
     {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
       "slug": "etsi-domain-infrastructure",
       "label": "ETSI_Domain_Infrastructure"
     },

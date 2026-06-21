@@ -287,8 +287,20 @@
       "label": "Adapter Slot"
     },
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
       "slug": "agent-identity",
       "label": "Agent Identity"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
     },
     {
       "slug": "agent-orchestrator",
@@ -315,16 +327,28 @@
       "label": "Agents"
     },
     {
-      "slug": "auto-gpt",
-      "label": "AutoGPT"
-    },
-    {
       "slug": "auto-gen",
       "label": "AutoGen"
     },
     {
       "slug": "autonomous-task-execution",
       "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
     }
   ]
 }

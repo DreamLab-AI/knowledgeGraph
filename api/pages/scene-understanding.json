@@ -157,6 +157,10 @@
       "label": "ADE20K"
     },
     {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
       "slug": "depth-estimation",
       "label": "Depth Estimation"
     },

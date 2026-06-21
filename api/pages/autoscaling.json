@@ -112,5 +112,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    }
+  ]
 }

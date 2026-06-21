@@ -180,6 +180,14 @@
       "label": "AI Model Inference Engine"
     },
     {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
       "slug": "edge-computing-node",
       "label": "Edge Computing Node"
     },

@@ -57,6 +57,10 @@
       "label": "Autoencoder"
     },
     {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
       "slug": "convolutional-neural-network",
       "label": "Convolutional Neural Network"
     },

@@ -80,6 +80,10 @@
       "label": "Autonomy Level"
     },
     {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
       "slug": "goal",
       "label": "Goal"
     }

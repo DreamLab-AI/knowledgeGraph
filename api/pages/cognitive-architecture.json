@@ -13,13 +13,25 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:working-memory",
         "label": "Working Memory"
+      },
+      {
+        "id": "urn:ngm:class:long-term-memory",
+        "label": "Long-Term Memory"
+      },
+      {
+        "id": "urn:ngm:class:declarative-memory",
+        "label": "Declarative Memory"
+      },
+      {
+        "id": "urn:ngm:class:procedural-memory",
+        "label": "Procedural Memory"
       },
       {
         "id": "urn:ngm:class:reasoning",
@@ -32,6 +44,14 @@
       {
         "id": "urn:ngm:class:perception",
         "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:action-selection",
+        "label": "Action Selection"
+      },
+      {
+        "id": "urn:ngm:class:meta-cognition",
+        "label": "Meta-Cognition"
       }
     ],
     "requires": [
@@ -46,6 +66,10 @@
       {
         "id": "urn:ngm:class:machine-learning",
         "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:production-rules",
+        "label": "Production Rules"
       }
     ],
     "enables": [
@@ -58,12 +82,20 @@
         "label": "Symbolic Reasoning"
       },
       {
-        "id": "urn:ngm:class:autonomous-agent",
+        "id": "urn:ngm:class:autonomous-agents",
         "label": "Autonomous Agents"
       },
       {
         "id": "urn:ngm:class:human-computer-interaction",
-        "label": "Human Computer Interaction"
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-systems",
+        "label": "Intelligent Tutoring Systems"
+      },
+      {
+        "id": "urn:ngm:class:cognitive-modelling",
+        "label": "Cognitive Modelling"
       }
     ],
     "dependsOn": [],
@@ -76,6 +108,10 @@
       {
         "id": "urn:ngm:class:task-specific-model",
         "label": "Task-Specific Model"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
       }
     ],
     "bridgesTo": [
@@ -84,17 +120,17 @@
         "label": "Robotics"
       },
       {
-        "id": "urn:ngm:class:brain-computer-interfaces",
+        "id": "urn:ngm:class:brain-computer-interface",
         "label": "Brain-Computer Interface"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
       }
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:production-rules",
-        "label": "Production Rules"
-      },
-      {
-        "id": "urn:ngm:class:neural-network",
+        "id": "urn:ngm:class:neural-networks",
         "label": "Neural Networks"
       },
       {
@@ -104,6 +140,10 @@
       {
         "id": "urn:ngm:class:reinforcement-learning",
         "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-graphical-models",
+        "label": "Probabilistic Graphical Models"
       }
     ],
     "supports": [],
@@ -111,7 +151,7 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:artificial-general-intelligence",
+        "id": "urn:ngm:class:general-intelligence",
         "label": "General Intelligence"
       },
       {
@@ -123,12 +163,249 @@
         "label": "Cognitive Science"
       },
       {
+        "id": "urn:ngm:class:cognitive-psychology",
+        "label": "Cognitive Psychology"
+      },
+      {
         "id": "urn:ngm:class:large-language-models",
         "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neuro-Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:global-workspace-theory",
+        "label": "Global Workspace Theory"
+      },
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "working-memory",
+      "label": "Working Memory"
+    },
+    {
+      "slug": "long-term-memory",
+      "label": "Long-Term Memory"
+    },
+    {
+      "slug": "declarative-memory",
+      "label": "Declarative Memory"
+    },
+    {
+      "slug": "procedural-memory",
+      "label": "Procedural Memory"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "perception",
+      "label": "Perception"
+    },
+    {
+      "slug": "action-selection",
+      "label": "Action Selection"
+    },
+    {
+      "slug": "symbolic-reasoning",
+      "label": "Symbolic Reasoning"
+    },
+    {
+      "slug": "autonomous-agents",
+      "label": "Autonomous Agents"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "production-rules",
+      "label": "Production Rules"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "computational-neuroscience",
+      "label": "Computational Neuroscience"
+    },
+    {
+      "slug": "general-intelligence",
+      "label": "General Intelligence"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "brain-computer-interface",
+      "label": "Brain-Computer Interface"
+    },
+    {
+      "slug": "human-computer-interaction",
+      "label": "Human-Computer Interaction"
+    },
+    {
+      "slug": "neuro-symbolic-ai",
+      "label": "Neuro-Symbolic AI"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "global-workspace-theory",
+      "label": "Global Workspace Theory"
+    },
+    {
+      "slug": "intelligent-tutoring-systems",
+      "label": "Intelligent Tutoring Systems"
+    },
+    {
+      "slug": "agent-loop",
+      "label": "Agent Loop"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain of Thought"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "narrow-ai",
+      "label": "Narrow AI"
+    },
+    {
+      "slug": "task-specific-model",
+      "label": "Task-Specific Model"
+    },
+    {
+      "slug": "probabilistic-graphical-models",
+      "label": "Probabilistic Graphical Models"
+    },
+    {
+      "slug": "meta-cognition",
+      "label": "Meta-Cognition"
+    },
+    {
+      "slug": "goal-directed-behaviour",
+      "label": "Goal-Directed Behaviour"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "multi-agent-systems",
+      "label": "Multi-Agent Systems"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "cognitive-modelling",
+      "label": "Cognitive Modelling"
+    },
+    {
+      "slug": "intelligent-agent",
+      "label": "Intelligent Agent"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-alignment",
+      "label": "AI Alignment"
+    },
+    {
+      "slug": "react-pattern",
+      "label": "ReAct Pattern"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-agent",
@@ -141,6 +418,10 @@
     {
       "slug": "ai-concept",
       "label": "AI Concept"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
     },
     {
       "slug": "agent-memory",
@@ -167,8 +448,24 @@
       "label": "Cognitive AI"
     },
     {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
     }
   ]
 }

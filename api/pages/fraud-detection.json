@@ -135,6 +135,14 @@
       "label": "ArcFace"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
     },

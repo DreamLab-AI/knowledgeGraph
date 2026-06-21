@@ -136,6 +136,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
       "slug": "agent-memory",
       "label": "Agent Memory"
     },
@@ -152,6 +156,14 @@
       "label": "Cohere"
     },
     {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },
@@ -162,6 +174,10 @@
     {
       "slug": "pinecone",
       "label": "Pinecone"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
     },
     {
       "slug": "vector-databases",

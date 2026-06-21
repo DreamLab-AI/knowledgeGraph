@@ -94,6 +94,10 @@
     {
       "slug": "calculation-parameters",
       "label": "Calculation Parameters"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
     }
   ]
 }

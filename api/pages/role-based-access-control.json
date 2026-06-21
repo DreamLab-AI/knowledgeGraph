@@ -139,6 +139,10 @@
     {
       "slug": "hyperledger-iroha",
       "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
     }
   ]
 }

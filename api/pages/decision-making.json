@@ -157,8 +157,24 @@
       "label": "Autonomous Behavior"
     },
     {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
       "slug": "cognitive-psychology",
       "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
     },
     {
       "slug": "machine-learning-discipline",

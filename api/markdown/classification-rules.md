@@ -87,6 +87,24 @@
         ObjectSomeValuesFrom(ai:reducesTo ai:ProductionRules))
       SubClassOf(ai:ClassificationRules
         ObjectSomeValuesFrom(ai:reducesTo ai:DecisionTree))
+      SubClassOf(ai:ClassificationRules
+        ObjectSomeValuesFrom(ai:reducesTo ai:HornClause))
+  ## Contrast Relationships
+      SubClassOf(ai:ClassificationRules
+        ObjectAllValuesFrom(ai:contrastsWith ai:NeuralNetwork))
+      SubClassOf(ai:ClassificationRules
+        ObjectAllValuesFrom(ai:contrastsWith ai:EnsembleMethods))
+      SubClassOf(ai:ClassificationRules
+        ObjectAllValuesFrom(ai:contrastsWith ai:LargeLanguageModels))
+  ## Instantiation Relationships
+      SubClassOf(ai:ClassificationRules
+        ObjectSomeValuesFrom(ai:instantiatedBy ai:SWRLRule))
+      SubClassOf(ai:ClassificationRules
+        ObjectSomeValuesFrom(ai:instantiatedBy ai:OWLClassAxiom))
+      SubClassOf(ai:ClassificationRules
+        ObjectSomeValuesFrom(ai:instantiatedBy ai:DRLRule))
+      SubClassOf(ai:ClassificationRules
+        ObjectSomeValuesFrom(ai:instantiatedBy ai:PrologClause))
 
   ## About
     The study of classification rules as a systematic knowledge representation mechanism emerged from the earliest symbolic AI systems of the 1960s. Newell and Simon's Production System architecture (1972) established the general form of condition-action pairs — what computer science came to call production rules — as the basis for cognitive modelling and expert system construction. The MYCIN system (Shortliffe, 1976) demonstrated that a knowledge base of approximately 500 classification rules could match the diagnostic accuracy of specialist physicians for bacterial infections, establishing clinical AI as a viable domain. DENDRAL (Feigenbaum et al., 1969) applied rules to spectral mass classification in organic chemistry. The subsequent "AI Winter" of the late 1980s was precipitated partly by the brittleness of hand-crafted rule systems outside narrow domains and the prohibitive cost of knowledge acquisition from experts — the so-called knowledge acquisition bottleneck.
@@ -359,6 +377,162 @@
     **Interpretability**: the degree to which a human domain expert can understand and verify the decision logic of a classifier; classification rules score highest among ML model families on interpretability measures, unlike neural networks whose internals are opaque.
 
     **Rule coverage completeness**: a rule set is complete if every possible instance is covered by at least one rule; ensured in practice by appending a default rule assigning the majority class to all uncovered instances.
+
+    **Production rule system**: a rule-based architecture in which knowledge is encoded as (condition, action) pairs called productions; the inference engine cycles through match-select-execute phases; forward chaining production systems include OPS5, CLIPS, and Drools.
+
+    **Confidence threshold**: the minimum accuracy (precision) a candidate rule must achieve to be added to the rule set during inductive learning; setting a high confidence threshold produces fewer, more precise rules at the cost of lower coverage; balance governed by the precision-recall trade-off.
+
+    **Rule pruning**: post-processing of learned rules to remove conditions that do not improve accuracy on a held-out validation set; prevents overfitting in inductive rule learners; RIPPER performs two pruning passes — one during rule construction and one during global rule set optimisation.
+
+    **Description Logic (DL) classification**: the process by which a description logic reasoner (Pellet, HermiT, ELK) places named classes in the subsumption hierarchy by testing whether each class is subsumed by every other class according to stated axioms; the result is a complete taxonomy that implicitly defines classification rules for every named concept.
+
+    **ILP (Inductive Logic Programming)**: the field of learning first-order Horn clauses from relational examples and background knowledge; enables classification rules with variables and relational structure (e.g., grandparent(X,Z) :- parent(X,Y), parent(Y,Z)) that propositional rule learners cannot express; key systems include FOIL, Progol, Aleph, and Metagol.
+
+    **Association rule vs. classification rule**: association rules (IF A THEN B) describe co-occurrence patterns with no designated target attribute; classification rules (IF conditions THEN class) specifically predict a designated class label; Classification Based on Associations (CBA) algorithm bridges the two by mining association rules and selecting those predicting class labels.
+
+    **Neuro-symbolic rule extraction**: the process of training a neural network to approximate classification behaviour and then distilling its learned representations into interpretable symbolic rules (C4.5rules, TREPAN, RuleFit, Neural DNF-MT); addresses the accuracy-interpretability trade-off by achieving neural accuracy with rule-based transparency.
+
+    **Default logic**: a non-monotonic logic framework (Reiter 1980) that allows rules of the form "if A is consistent with believing B, then believe B"; enables exception-handling in classification rules (e.g., "normally classify X as benign unless contrary evidence") without requiring explicit enumeration of all exceptions.
+
+    **Rule set ordering (ordered vs. unordered)**: an ordered rule set is applied as a decision list — the first matching rule fires, and subsequent rules are not evaluated; an unordered rule set allows all matching rules to fire, requiring conflict resolution; C4.5rules produces ordered lists; RIPPER by default produces ordered sets; OWL reasoning is inherently unordered.
+
+    **Specificity principle (most-specific-rule-wins)**: the conflict resolution heuristic preferring the rule with the most conditions (most specific antecedent) when multiple rules match; provides intuitive exception handling — a general rule can be overridden by adding a more specific rule without deleting the general one.
+
+    **Laplace correction**: the smoothed accuracy estimate (p+1)/(n+k) where p is correct predictions, n is total rule coverage, and k is the number of classes; preferred over raw accuracy during rule evaluation to avoid overestimating precision on rules with small coverage.
+
+    **Rule set compression**: post-processing step removing redundant rules (rules whose removal does not change the classification of any training example) and merging rules with identical consequents; reduces deployment overhead without accuracy loss; applied in Drools rule optimisation preprocessing.
+
+  ## Relationship to Adjacent Paradigms
+
+    Classification rules interact with and are distinguished from several adjacent machine learning and knowledge engineering paradigms:
+
+    **Classification Rules vs. [[Decision Tree]]**
+    A [[Decision Tree]] induces a recursive partitioning of the feature space, with each root-to-leaf path forming an implicit classification rule. The distinctions are (1) structure: decision trees enforce a tree topology with each condition tested at most once per path, while classification rules have arbitrary antecedent structures; (2) overlap: decision tree paths are mutually exclusive (one leaf per instance), while classification rule sets may have overlapping antecedents requiring conflict resolution; (3) extractability: rules extracted from trees (C4.5rules) may undergo simplification that produces shorter rules than the original tree paths; (4) instability: single decision trees are known to be sensitive to small training set changes, while sequential covering rule learners such as RIPPER are empirically more stable due to pruning.
+
+    **Classification Rules vs. [[Neural Network]]**
+    [[Neural Network]] classifiers achieve high predictive accuracy through distributed real-valued weight matrices that are opaque to human inspection. Classification rules are the antithesis of neural networks in the interpretability-accuracy trade-off: rules are fully human-readable but traditionally less accurate than deep models on complex perceptual inputs. The neurosymbolic AI programme aims to bridge this gap through rule extraction from neural networks (Neural DNF-MT, TREPAN, RuleFit) and through neuro-symbolic architectures that combine neural front-ends with rule-based back-ends. The EU AI Act's transparency requirements for high-risk AI specifically motivate this convergence.
+
+    **Classification Rules vs. [[Expert Systems]]**
+    [[Expert Systems]] are the parent paradigm of classification rules: the knowledge base of an expert system is precisely a set of production rules (IF-THEN statements), and the inference engine applies forward or backward chaining to derive conclusions. Classification rules are the core cognitive mechanism inside expert systems. The distinction is one of scope and construction method: expert systems organise classification rules into comprehensive reasoning architectures with explanation facilities, uncertainty handling, and knowledge base management; the term "classification rules" emphasises the logical form and learning method rather than the system architecture. Modern systems combine the rule-learning capability of machine learning (automatically deriving rules from data) with the execution infrastructure of expert systems (rule engine, conflict resolution, explanation).
+
+    **Classification Rules vs. [[Large Language Models]]**
+    [[Large Language Models]] perform classification by generating class labels from textual or multimodal prompts without explicit symbolic rules. LLMs achieve near-human accuracy on many classification tasks but cannot provide the kind of auditable, computable rationale that classification rules expose. Research in 2024–2026 uses LLMs to bootstrap classification rule creation — generating candidate rules from policy text for human review — and to translate natural language classification criteria into formal rule antecedents, but the generated rules must be validated for correctness and completeness before deployment in regulated systems. LLMs also serve as fallback classifiers for instances not covered by the symbolic rule set in hybrid architectures.
+
+    **Classification Rules and [[Ontology]] Reasoning**
+    [[Ontology]] reasoners perform a form of classification rule application at scale: OWL class axioms (SubClassOf, EquivalentClasses) are effectively classification rules applied by the reasoner to determine class membership of individuals. The distinction is one of representation language and inference mechanism: OWL axioms are existential and universal restrictions in description logic, not simple Horn clauses; reasoners apply tableau algorithms rather than RETE; the semantics are open-world rather than closed-world. SWRL rules bridge the two worlds by adding explicit if-then rules over OWL individuals, enabling RETE-style rule firing within the OWL knowledge base.
+
+    **Classification Rules and [[Knowledge Graph]] Enrichment**
+    In [[Knowledge Graph]] construction and maintenance, classification rules serve as entity typing and relationship classification mechanisms. AMIE-derived relational rules classify entity pairs as having specific relationships based on observed graph path patterns. SPARQL CONSTRUCT rules classify entity types from property value combinations. The resulting type assertions improve downstream graph query precision, embedding quality, and downstream ML model training data quality. Large knowledge graphs (Wikidata, DBpedia, SNOMED CT) rely on classification rule pipelines to maintain type coherence at scale, with rule sets curated by ontology engineering teams and validated against constraint reports.
+
+  ## Practical Rule Engine Systems (2026 Reference)
+
+    **Apache KIE / Drools** (formerly JBoss Drools; Apache Software Foundation since 2024): The dominant open-source Java rule engine; implements RETE and PHREAK (an improved RETE variant with lazy evaluation); supports DRL (Drools Rule Language), DMN (Decision Model and Notation), and BPMN2 process integration; deployed in NHS, banking, and insurance classification rule execution at scale. GitHub: https://github.com/apache/incubator-kie-drools
+
+    **IBM Operational Decision Manager (ODM)**: Enterprise commercial rule engine with business user-oriented rule authoring (Rule Designer, Decision Center); used in major financial institutions for credit classification and AML rule execution; integrates with IBM Watson for hybrid neurosymbolic architectures.
+
+    **FICO Blaze Advisor**: Specialist financial services rule engine used for credit scoring and insurance underwriting classification; integrates with FICO's explainable AI platform; key differentiator is audit trail generation satisfying UK GDPR and US FCRA requirements.
+
+    **CLIPS** (C Language Integrated Production System): NASA-developed open-source production rule system; forward chaining with RETE; used in aerospace and defence classification rule applications; embeds easily in C/C++ systems for embedded deployment on spacecraft and UAV platforms.
+
+    **Pellet OWL Reasoner**: Open-source Java OWL DL reasoner supporting SWRL rule classification; implements SHOIQ(D) tableau algorithm; used for biomedical ontology classification and Semantic Web rule application; maintained by Clark & Parsia / Stardog.
+
+    **HermiT**: Open-source OWL 2 DL reasoner (University of Oxford, Boris Motik); implements hyperltableau calculus for SROIQ(D); best-in-class for OWL 2 Full classification correctness; used in Protégé ontology editor for real-time class hierarchy computation.
+
+    **ELK Reasoner**: Highly scalable OWL EL reasoner (University of Ulm, Yevgeny Kazakov); polynomial-time classification through consequence-based algorithm; classifies SNOMED CT in under 60 seconds; used in NHS terminology service and biomedical knowledge graph pipelines.
+
+    **DecisionRules.io**: Cloud-native API-first rule management platform (2025); low-code rule authoring, REST deployment, versioning, and A/B testing; targets mid-market firms transitioning from on-premises Drools; supports JSON-based rule tables alongside decision trees and scoring card rule formats.
+
+    **SpamAssassin**: Open-source email classification rule system using weighted scoring across 1,000+ rules (header analysis, content patterns, DNS blacklists, Bayesian scoring); demonstrates large-scale production classification rule deployment in cybersecurity.
+
+  ## Explainability, Fairness, and Regulatory Alignment
+
+    Classification rules occupy a privileged position in the regulatory and ethical AI landscape because their decision rationale is inherently symbolic, human-readable, and auditable — properties that black-box models cannot achieve without post-hoc explanation methods that may themselves be inaccurate. The regulatory alignment of classification rules operates across three primary dimensions:
+
+    **EU AI Act Compliance (2024–2026 Implementation)**
+    The EU AI Act (Regulation EU 2024/1689), applying fully from 2 August 2026 to high-risk AI systems, mandates under Article 13 that AI systems are transparent to the extent necessary to allow users to interpret the system's outputs and use them appropriately. For Annex III high-risk categories (credit scoring, employment screening, law enforcement, healthcare diagnosis, educational assessment), this creates a de facto requirement for decision logic that can be inspected by human supervisors. Classification rules satisfy Article 13 by design: each classification decision maps to a specific fired rule whose antecedent conditions are directly inspectable. Research (arXiv:2603.28558, 2026) formalises the Act's own risk classification schema as a set of conjunctive classification rules, illustrating the reflexive application of the paradigm.
+
+    **UK GDPR and Automated Decision-Making**
+    Article 22 of the UK GDPR (Data Protection Act 2018, retained law) grants data subjects the right not to be subject to solely automated decisions that produce significant legal effects, with a right to explanation of the logic involved. The Court of Justice guidance (now interpreted under UK law post-Brexit) requires meaningful information about the logic of profiling — a requirement that opaque neural classifiers struggle to satisfy. Classification rules provide an explicit, shareable explanation: "Your credit application was declined because: income < £25,000 AND employment_status = self_employed AND months_at_address < 6". The FCA has reinforced this in its supervisory guidance on algorithmic trading and lending decisions.
+
+    **UK Online Safety Act 2023**
+    Content classification rules for illegal and harmful content detection must be auditable under the Online Safety Act 2023, which requires platforms to publish information about their content moderation systems. Classification rule sets — unlike neural moderation models — can be included in transparency reports, enabling regulatory scrutiny by Ofcom and NGO auditors. The Act's illegal content duties (priority illegal content determination) are themselves structured as classification rule logic applicable to content characteristics and account context.
+
+    **NHS Clinical Governance**
+    Clinical decision support classification rules in NHS settings require validation under NICE's Evidence Standards Framework for Digital Health Technologies (2023 update) and NHS Digital's Data Security and Protection Toolkit (DSPT). Decision support classification rules must be evidence-based (derived from NICE guidelines or clinical trials), auditable (traceable to source clinical evidence), and technically validated (tested against gold-standard clinical datasets). The NHS Clinical Decision Support Governance Framework (2024) specifies that classification rules triggering clinical actions must be reviewed and approved by qualified clinical leads, updated when guideline evidence changes, and monitored for drift via ongoing accuracy auditing.
+
+    **Fairness Constraints and Protected Characteristics**
+    Under the UK Equality Act 2010 and equivalent EU Anti-Discrimination Directives, classification rules must not produce disparate impact on protected characteristic groups (race, gender, age, disability, religion, etc.) unless justified by an objective legitimate aim (the Griggs doctrine of indirect discrimination). Classification rule fairness analysis applies group fairness metrics — demographic parity, equalised odds, calibration — to rule set outputs, and may require adding fairness-constraint conditions to rule antecedents (e.g., excluding protected characteristics from rule conditions) or post-processing rule outputs. The COMPAS recidivism classification rule controversy demonstrated that even ostensibly race-neutral classification rules can encode racial disparities through correlates (neighbourhood, prior arrest history), driving systematic fairness auditing requirements for rule-based criminal justice classification in the US and influencing UK policy discussions under the Law Commission AI review.
+
+  ## Historical Timeline
+
+    A chronological summary of the key milestones in classification rule development:
+
+    - **1957–1965**: Newell and Simon develop the General Problem Solver and Production System architecture; symbolic condition-action rules are the computational model of cognition
+    - **1969**: Feigenbaum, Buchanan, Lederberg — DENDRAL mass spectrometry classification rules; first applied expert rule system
+    - **1969**: Michalski — AQ algorithm; learning classification rules from examples using a version space framework
+    - **1976**: Shortliffe — MYCIN; 500 certainty-factor production rules for bacterial infection diagnosis achieving specialist-level accuracy
+    - **1979**: Forgy — OPS5 production rule system with RETE algorithm (published 1982); highly efficient forward chaining rule execution
+    - **1982**: Forgy — RETE algorithm paper; foundational for all subsequent rule engine implementations
+    - **1986**: Quinlan — ID3 decision tree algorithm; indirect classification rule induction via tree paths
+    - **1987**: Mingers — CN2 algorithm (Clark and Niblett 1989 publication); direct rule induction via sequential covering
+    - **1989**: Pednault — ADL extensions including conditional effects, enabling richer action classification in planning rules
+    - **1993**: Quinlan — C4.5 and C4.5rules; canonical rule extraction algorithm; book widely used in ML education
+    - **1995**: Cohen — RIPPER algorithm; fast, pruned sequential covering; state of the art for two decades
+    - **1998**: W3C — RDF and early OWL work; foundation for ontology-based classification rules on the Semantic Web
+    - **2002**: Galárraga — AMIE algorithm (2013 paper); relational classification rules from knowledge graphs
+    - **2004**: Horrocks et al. — SWRL W3C submission; declarative rule language for OWL ontology classification
+    - **2004**: W3C — OWL 1 recommendation; description logic classification at web scale
+    - **2005**: Letham et al. — Bayesian Rule Lists (2015 paper); probabilistic classification rules with calibrated confidence
+    - **2009**: W3C — OWL 2 recommendation with EL, RL, QL, DL profiles; tractable classification at biomedical ontology scale
+    - **2014**: Kazakov et al. — ELK reasoner; polynomial-time OWL EL classification of SNOMED CT
+    - **2019**: EU — Algorithmic transparency requirements under GDPR Article 22 interpretive guidance
+    - **2024**: EU AI Act passed; high-risk AI classification rule explainability mandated
+    - **2024**: Drools → Apache KIE; open-source rule engine governance transition
+    - **2025**: Neural DNF-MT (Dong et al.); neuro-symbolic rule extraction achieving neural accuracy with symbolic interpretability
+    - **2025**: IJCAI survey — neuro-symbolic AI identifies rule extraction as flagship capability
+    - **2026**: T-norm operators for EU AI Act compliance classification (arXiv:2603.28558); reflexive application of classification rules to regulatory compliance
+    - **2026**: Visual Perceptual to Conceptual First-Order Rule Learning (arXiv:2604.07897); classification rules learned directly from perceptual inputs, extending symbolic rule paradigm to image and sensor domains
+    - **2026**: Full EU AI Act applicability from 2 August 2026 for general-purpose AI system providers and high-risk AI system deployers; classification rule explainability mandates enter enforcement phase across EU and via UK AI Regulation Act alignment discussions
+    - **2026**: SHACL-SPARQL hybrid validation rules standardised as W3C recommendation update; enables classification rules combining inference (SWRL) and validation (SHACL) in a unified semantic web rule framework, with OWL reasoners and SPARQL engines jointly enforcing type constraints over [[Knowledge Graph]] populations
+    - **2026**: LLM-bootstrapped classification rule generation becomes mainstream in enterprise compliance teams; Deloitte, KPMG, and PwC deploy LLM-to-rule pipelines for IFRS 17 and Solvency II insurance classification rule authoring, with human expert review gates replacing manual rule creation from policy documents
+
+  ## Classification Rule Learning: A Worked Example
+
+    To make the technical description concrete, consider learning classification rules for credit risk assessment from a dataset of 10,000 loan applications with features: income, employment_status, months_at_current_address, credit_score, loan_amount, and outcome (approved / declined).
+
+    **Step 1 — Data Preparation**: Numeric features are discretised into ordinal bands (income: low / medium / high / very_high; credit_score: poor / fair / good / excellent). Employment status is already categorical. The class distribution is 62% approved, 38% declined — moderately imbalanced, so RIPPER learns declined rules first (minority class) to prevent the majority class dominating.
+
+    **Step 2 — Rule 1 Learning (RIPPER beam search)**:
+    - Start with all declined examples as positives, all approved as negatives
+    - Candidate conditions evaluated by FOIL gain: credit_score = poor achieves FOIL gain 0.41 (highest); add condition
+    - Refine: credit_score = poor AND income = low achieves FOIL gain 0.38 given credit_score = poor as context; add condition
+    - Refine: credit_score = poor AND income = low AND loan_amount = very_high achieves FOIL gain 0.12; add condition
+    - Rule 1 (pre-pruning): IF credit_score = poor AND income = low AND loan_amount = very_high THEN declined
+    - Pruning: removing loan_amount = very_high increases accuracy on prune set by 2%; prune it
+    - Final Rule 1: IF credit_score = poor AND income = low THEN declined (coverage: 842 examples, accuracy: 94.3%)
+
+    **Step 3 — Remove covered positives**: Remove the 842 declined examples covered by Rule 1; continue on remaining 3,958 − 842 = 3,158 declined examples.
+
+    **Step 4 — Subsequent rules** continue this pattern, learning 3–6 additional rules covering different sub-populations of declined applicants (e.g., Rule 2: employment_status = unemployed AND loan_amount = very_high; Rule 3: months_at_current_address < 3 AND credit_score IN {poor, fair}).
+
+    **Step 5 — Optimisation pass**: After learning all rules, RIPPER performs a global optimisation — for each rule, considers replacing it with a new rule, or deleting it, and accepts the change if it reduces the minimum description length (MDL) criterion.
+
+    **Step 6 — Default rule**: After all declined rules are learned, the default rule IF true THEN approved is appended (the majority class).
+
+    **Step 7 — Deployment and audit**: Each rule is stored with its coverage, accuracy, FOIL gain, and the training dataset version used for learning. Every credit decision records which rule fired, enabling regulatory audit trail production for UK GDPR Article 22 subject access requests within the required one-month response window.
+
+    This worked example illustrates how the RIPPER algorithm's sequential covering approach produces a small set of interpretable, auditable rules that can be directly inspected by compliance officers and regulators — a property that neural network credit scorers cannot match without post-hoc explanation methods of uncertain faithfulness.
+
+  ## Summary of Quality Metrics
+
+    The following metrics characterise a well-formed classification rule system suitable for production deployment and regulatory audit:
+
+    - Rule count: typically 10–200 rules for manually-maintained expert systems; 50–2,000 rules for large production rule engines; millions of triggered instances per second with RETE execution
+    - Rule accuracy (precision): 85–99% on held-out validation sets for high-stakes applications (clinical, financial); lower thresholds accepted in email filtering and content moderation where volume mitigates individual errors
+    - Rule coverage completeness: 100% (every instance classified by at least the default rule); gaps in coverage are a critical audit finding in regulated deployments
+    - Rule explanation length: 1–8 conditions per rule antecedent for human-interpretable rules; NICE and NHS governance guidelines recommend 3–5 conditions maximum for clinical decision support rules
+    - Reasoning latency: sub-millisecond for RETE-based engines on typical fact bases; milliseconds for OWL EL classification per query; seconds for OWL DL tableau reasoning on large ontologies
+    - Audit trail completeness: every classification decision must record which rule fired, with full antecedent evaluation trace and timestamp, for regulatory compliance
 
 - ### Provenance
   - sources:: https://www.w3.org/submissions/SWRL/, https://arxiv.org/abs/2501.03888, https://arxiv.org/abs/2603.28558, https://arxiv.org/abs/2507.10546, https://arxiv.org/abs/2604.07897, https://arxiv.org/abs/2510.11079, https://dl.acm.org/doi/10.24963/ijcai.2025/1157, https://docs.drools.org/latest/drools-docs/drools/rule-engine/index.html, https://github.com/apache/incubator-kie-drools, https://www.sciencedirect.com/science/article/pii/S2212473X25001191

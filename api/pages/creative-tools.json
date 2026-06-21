@@ -144,6 +144,10 @@
       "label": "Adobe Firefly"
     },
     {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

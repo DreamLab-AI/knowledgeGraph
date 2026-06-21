@@ -267,12 +267,24 @@
       "label": "Asia Pacific Regulation"
     },
     {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
     },
     {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
       "slug": "human-in-the-loop",
       "label": "Human in the Loop"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
     },
     {
       "slug": "responsible-ai",

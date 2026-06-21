@@ -85,5 +85,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    }
+  ]
 }

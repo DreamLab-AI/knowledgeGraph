@@ -79,6 +79,10 @@
       "label": "AI Model Inference Engine"
     },
     {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     }

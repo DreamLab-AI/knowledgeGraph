@@ -168,6 +168,14 @@
       "label": "Automatic Differentiation"
     },
     {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

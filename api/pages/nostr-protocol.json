@@ -306,6 +306,10 @@
       "label": "CRDT"
     },
     {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
       "slug": "did-nostr-identity",
       "label": "DID Nostr Identity"
     },

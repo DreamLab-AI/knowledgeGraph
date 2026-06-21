@@ -285,6 +285,26 @@
       "label": "Batch Inference"
     },
     {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    },
+    {
       "slug": "data-engineering",
       "label": "Data Engineering"
     },

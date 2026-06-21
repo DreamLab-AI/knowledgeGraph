@@ -49,6 +49,14 @@
       "label": "BM25"
     },
     {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
       "slug": "semantic-search",
       "label": "Semantic Search"
     }

@@ -181,8 +181,20 @@
       "label": "Camera"
     },
     {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
       "slug": "computer-vision",
       "label": "Computer Vision"
+    },
+    {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
+      "slug": "control-net",
+      "label": "controlnet"
     },
     {
       "slug": "depth-estimation",

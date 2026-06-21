@@ -146,6 +146,10 @@
       "label": "Bitcoin related links"
     },
     {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
       "slug": "corporate-governance",
       "label": "Corporate Governance"
     },

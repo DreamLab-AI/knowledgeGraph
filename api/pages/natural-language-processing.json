@@ -421,16 +421,108 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
       "slug": "cohere",
       "label": "Cohere"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
     },
     {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
     },
     {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
       "slug": "context-aware-response",
       "label": "Context Aware Response"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
     },
     {
       "slug": "conversational-ai",
@@ -517,6 +609,10 @@
       "label": "Knowledge Graphing"
     },
     {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
       "slug": "language-modeling",
       "label": "Language Modeling"
     },
@@ -557,6 +653,10 @@
       "label": "Model Parameters"
     },
     {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
       "slug": "named-entity-recognition",
       "label": "Named Entity Recognition"
     },
@@ -575,6 +675,10 @@
     {
       "slug": "patent",
       "label": "Patent"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
     },
     {
       "slug": "pre-training",

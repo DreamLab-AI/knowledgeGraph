@@ -90,6 +90,10 @@
     {
       "slug": "anomaly-detection",
       "label": "anomaly detection"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
     }
   ]
 }

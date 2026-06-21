@@ -172,8 +172,32 @@
       "label": "Automatic1111"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "control-net",
+      "label": "controlnet"
     },
     {
       "slug": "diffusion-models",

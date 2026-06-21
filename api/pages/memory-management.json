@@ -110,6 +110,10 @@
       "label": "agentic ai"
     },
     {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
       "slug": "graph-database",
       "label": "Graph Database"
     },

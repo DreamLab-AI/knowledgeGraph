@@ -98,6 +98,22 @@
     {
       "slug": "automatic1111",
       "label": "Automatic1111"
+    },
+    {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
+      "slug": "control-net",
+      "label": "controlnet"
     }
   ]
 }

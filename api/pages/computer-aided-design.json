@@ -82,5 +82,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    }
+  ]
 }

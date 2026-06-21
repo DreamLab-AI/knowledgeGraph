@@ -165,6 +165,10 @@
       "label": "Authoring Tool"
     },
     {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    },
+    {
       "slug": "conversion-pipeline",
       "label": "Conversion Pipeline"
     },

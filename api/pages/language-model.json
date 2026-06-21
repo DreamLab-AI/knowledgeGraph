@@ -167,10 +167,6 @@
       "label": "Answer AI"
     },
     {
-      "slug": "auto-gpt",
-      "label": "AutoGPT"
-    },
-    {
       "slug": "auto-gen",
       "label": "AutoGen"
     },
@@ -197,6 +193,14 @@
     {
       "slug": "cohere",
       "label": "Cohere"
+    },
+    {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
     },
     {
       "slug": "dall-e-3",

@@ -95,6 +95,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
       "slug": "product-design",
       "label": "Product Design"
     }

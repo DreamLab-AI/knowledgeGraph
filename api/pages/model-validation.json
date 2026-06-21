@@ -91,6 +91,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    },
+    {
       "slug": "interpretability",
       "label": "Interpretability"
     }

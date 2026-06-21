@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -24,12 +24,32 @@
       {
         "id": "urn:ngm:class:change-management",
         "label": "Change Management"
+      },
+      {
+        "id": "urn:ngm:class:configuration-management-database",
+        "label": "Configuration Management Database"
+      },
+      {
+        "id": "urn:ngm:class:configuration-item",
+        "label": "Configuration Item"
+      },
+      {
+        "id": "urn:ngm:class:baseline",
+        "label": "Baseline"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:version-control",
         "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      },
+      {
+        "id": "urn:ngm:class:audit",
+        "label": "Audit"
       }
     ],
     "enables": [
@@ -40,31 +60,76 @@
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "id": "urn:ngm:class:continuous-delivery",
+        "label": "Continuous Delivery"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:software-engineering",
         "label": "Software Engineering"
+      },
+      {
+        "id": "urn:ngm:class:automation",
+        "label": "Automation"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:change-management",
         "label": "Change Management"
+      },
+      {
+        "id": "urn:ngm:class:policy-as-code",
+        "label": "Policy as Code"
+      },
+      {
+        "id": "urn:ngm:class:immutable-infrastructure",
+        "label": "Immutable Infrastructure"
       }
     ],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:manual-administration",
+        "label": "Manual Administration"
+      }
+    ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:version-control",
         "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:ansible",
+        "label": "Ansible"
+      },
+      {
+        "id": "urn:ngm:class:terraform",
+        "label": "Terraform"
+      },
+      {
+        "id": "urn:ngm:class:gitops",
+        "label": "GitOps"
       }
     ],
     "supports": [
@@ -75,6 +140,14 @@
       {
         "id": "urn:ngm:class:quality-assurance",
         "label": "Quality Assurance"
+      },
+      {
+        "id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      },
+      {
+        "id": "urn:ngm:class:mlops",
+        "label": "MLOps"
       }
     ],
     "standardizedBy": [],
@@ -91,11 +164,188 @@
       {
         "id": "urn:ngm:class:audit",
         "label": "Audit"
+      },
+      {
+        "id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      },
+      {
+        "id": "urn:ngm:class:devsecops",
+        "label": "DevSecOps"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "software-engineering",
+      "label": "Software Engineering"
+    },
+    {
+      "slug": "version-control",
+      "label": "Version Control"
+    },
+    {
+      "slug": "change-management",
+      "label": "Change Management"
+    },
+    {
+      "slug": "devops",
+      "label": "DevOps"
+    },
+    {
+      "slug": "continuous-integration",
+      "label": "Continuous Integration"
+    },
+    {
+      "slug": "infrastructure-as-code",
+      "label": "Infrastructure as Code"
+    },
+    {
+      "slug": "quality-assurance",
+      "label": "Quality Assurance"
+    },
+    {
+      "slug": "audit",
+      "label": "Audit"
+    },
+    {
+      "slug": "testing",
+      "label": "Testing"
+    },
+    {
+      "slug": "gitops",
+      "label": "GitOps"
+    },
+    {
+      "slug": "terraform",
+      "label": "Terraform"
+    },
+    {
+      "slug": "ansible",
+      "label": "Ansible"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "continuous-delivery",
+      "label": "Continuous Delivery"
+    },
+    {
+      "slug": "continuous-deployment",
+      "label": "Continuous Deployment"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "immutable-infrastructure",
+      "label": "Immutable Infrastructure"
+    },
+    {
+      "slug": "idempotency",
+      "label": "Idempotency"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "containerisation",
+      "label": "Containerisation"
+    },
+    {
+      "slug": "platform-engineering",
+      "label": "Platform Engineering"
+    },
+    {
+      "slug": "site-reliability-engineering",
+      "label": "Site Reliability Engineering"
+    },
+    {
+      "slug": "security-scanning",
+      "label": "Security Scanning"
+    },
+    {
+      "slug": "compliance",
+      "label": "Compliance"
+    },
+    {
+      "slug": "build-automation",
+      "label": "Build Automation"
+    },
+    {
+      "slug": "automated-testing",
+      "label": "Automated Testing"
+    },
+    {
+      "slug": "incident-response",
+      "label": "Incident Response"
+    },
+    {
+      "slug": "observability",
+      "label": "Observability"
+    },
+    {
+      "slug": "agile-software-development",
+      "label": "Agile Software Development"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "cloud-native",
+      "label": "Cloud Native"
+    },
+    {
+      "slug": "devsecops",
+      "label": "DevSecOps"
+    },
+    {
+      "slug": "docker",
+      "label": "Docker"
+    },
+    {
+      "slug": "software-delivery-lifecycle",
+      "label": "Software Delivery Lifecycle"
+    },
+    {
+      "slug": "disaster-recovery",
+      "label": "Disaster Recovery"
+    },
+    {
+      "slug": "automation",
+      "label": "Automation"
+    },
+    {
+      "slug": "policy-as-code",
+      "label": "Policy as Code"
+    },
+    {
+      "slug": "open-tofu",
+      "label": "OpenTofu"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
     {
       "slug": "networkcomponent",
       "label": "Networkcomponent"

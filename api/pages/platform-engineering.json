@@ -95,5 +95,14 @@
       "label": "MetaverseDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
+    }
+  ]
 }

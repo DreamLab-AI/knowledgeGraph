@@ -163,12 +163,20 @@
       "label": "Agent Communication Protocol"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
       "slug": "digital-twin-synchronisation-bus",
       "label": "Digital Twin Synchronisation Bus"
     },
     {
       "slug": "event",
       "label": "Event"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
     },
     {
       "slug": "real-time-processing",

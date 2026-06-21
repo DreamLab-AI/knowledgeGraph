@@ -153,6 +153,10 @@
       "label": "Cloud Infrastructure"
     },
     {
+      "slug": "container",
+      "label": "Container"
+    },
+    {
       "slug": "decentralized-swarm-control",
       "label": "Decentralized Swarm Control"
     },

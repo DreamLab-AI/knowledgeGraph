@@ -225,12 +225,24 @@
       "label": "Agent Communication Protocol"
     },
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
       "slug": "agent-identity",
       "label": "Agent Identity"
     },
     {
       "slug": "agent-layer",
       "label": "Agent Layer"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
     },
     {
       "slug": "agent-memory",
@@ -261,10 +273,6 @@
       "label": "Agentic Workflow"
     },
     {
-      "slug": "auto-gpt",
-      "label": "AutoGPT"
-    },
-    {
       "slug": "auto-gen",
       "label": "AutoGen"
     },
@@ -281,12 +289,28 @@
       "label": "CBDCs"
     },
     {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
       "slug": "particle-filter",
       "label": "Particle Filter"
     },
     {
       "slug": "planning",
       "label": "Planning"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
     },
     {
       "slug": "rgb-and-client-side-validation",
@@ -307,6 +331,10 @@
     {
       "slug": "swarm-control",
       "label": "Swarm Control"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
     }
   ]
 }

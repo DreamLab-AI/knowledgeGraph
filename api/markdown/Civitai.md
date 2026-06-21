@@ -195,17 +195,41 @@ public:: true
 
   ## Use Cases / Major Families
 
-    **Photorealistic Portrait and Style Models**: The largest model family on Civitai covers photorealistic human portraiture and cinematographic style. Models such as Realistic Vision, epiCRealism, and CyberRealistic have accumulated millions of downloads, enabling photographers and digital artists to produce studio-quality portraits without physical production infrastructure. These models are commonly used in advertising concept visualisation, social media content production, and indie game character design.
+    **Photorealistic Portrait and Style Models**: The largest model family covers photorealistic human portraiture and cinematographic style.
+    - Representative models: Realistic Vision, epiCRealism, CyberRealistic (each with millions of downloads)
+    - Applications: advertising concept visualisation, social media content production, indie game character design, virtual photography
+    - Common workflow: base model checkpoint (SDXL or Flux) + photorealism LoRA + face detail LoRA + ControlNet pose conditioning
+    - Infrastructure: typically executed locally via ComfyUI or Automatic1111 with 12–24 GB VRAM GPU
 
-    **Anime and Illustration Aesthetics**: The second major family covers anime, manga, and 2D illustration aesthetics. Models fine-tuned on specific animation studios' visual languages (Ghibli-adjacent styles, specific game franchise aesthetics) are among the most downloaded, serving character concept artists, webtoon creators, and fan art communities. These models accelerate production pipelines for 2D content creators who previously required expensive illustration outsourcing.
+    **Anime and Illustration Aesthetics**: Anime, manga, and 2D illustration fine-tunes are the second largest family.
+    - Applications: character concept art, webtoon/comic production, fan art, game asset creation
+    - Style coverage: shounen, shoujo, moe, realistic anime, chibi, traditional Japanese print aesthetics
+    - Workflow: anime-base checkpoint + character LoRA + style LoRA + ControlNet line-art or pose conditioning
+    - Community dynamic: specific fictional character LoRAs are among the most contested IP terrain on the platform
 
-    **Architectural and Product Visualisation**: Commercial applications in architecture, interior design, and industrial product design exploit fine-tuned models that understand rendering styles — photorealistic render, pencil sketch, blueprint — and domain-specific spatial grammar. Firms use Civitai-sourced models as plug-in style layers within ComfyUI pipelines connecting to existing CAD data via ControlNet depth and edge conditioning.
+    **Architectural and Product Visualisation**: Commercial applications in architecture, interior design, and industrial product design.
+    - Rendering styles: photorealistic, pencil sketch, watercolour, technical blueprint, materials library visualisation
+    - Workflow integration: CAD exports converted to depth maps or edge maps via ControlNet conditioning
+    - Clients: architecture firms, property developers, furniture manufacturers, product design agencies
+    - Key advantage over commercial APIs: custom style consistency matching an existing brand design language
 
-    **Video Diffusion Derivatives**: From 2024 onward Civitai catalogued derivatives of open-source video diffusion architectures including Wan2.1, CogVideoX, and Hunyuan Video. LoRA adaptors for video models enable style transfer and character consistency across video sequences, extending the generative toolkit from static image to motion. Video generation is available on-site via Vidu integration at 600 Buzz per generation.
+    **Video Diffusion Derivatives**: From 2024 onward, community fine-tunes of open video diffusion architectures.
+    - Base architectures: Wan2.1 (2025), Hunyuan Video (2025), CogVideoX, AnimateDiff for SD 1.5/SDXL
+    - LoRA adaptors for video enable style transfer and character consistency across video sequences
+    - On-site generation: Vidu integration at 600 Buzz per generation (T2V, I2V, R2V modes)
+    - VRAM requirements: 12–24 GB for quality video generation; on-site compute removes local hardware barrier
 
-    **Training and Research Workflows**: Researchers use Civitai's API as a model discovery layer when evaluating community adaptations of new architectures. The volume and type of fine-tunes on the platform serve as a proxy for community endorsement of specific base model releases, informing architecture decisions at model developers.
+    **Training and Research Workflows**: Researchers and platform developers use Civitai's API programmatically.
+    - Architecture adoption proxy: volume of community fine-tunes within 48 hours of base model release indicates practitioner interest
+    - Model card mining: aggregate trigger words, recommended parameters, and failure mode documentation from thousands of model cards
+    - Benchmark stimulus: academic studies on human-AI co-creation and aesthetic preference use Civitai-sourced models as experimental stimuli
+    - API integration: ComfyUI Manager, Automatic1111 CivitAI Helper extension, A1111-to-API bridges
 
-    **Commercial Content Production Pipelines**: Agencies and independent creators use Civitai-sourced models in commercial workflows for social media content, e-commerce product imagery, and book cover illustration. The scale of the platform's model catalogue enables niche style matching impossible through commercial API providers whose model offerings are limited to a handful of curated options.
+    **Commercial Content Production Pipelines**: Agencies and creators use Civitai-sourced models in commercial workflows.
+    - Social media content: brand-consistent style packs for Instagram, TikTok, YouTube thumbnail production
+    - E-commerce: product photography on virtual models or backgrounds without studio costs
+    - Book and media: cover illustration, concept art, storyboarding for films and games
+    - Key legal caveat: commercial use licence varies per model; many use CC BY-NC (non-commercial only), requiring due diligence
 
   ## Key Terminology
 
@@ -229,6 +253,59 @@ public:: true
 
     The convergence of open-weight model distribution and community fine-tuning has also attracted attention from human-computer interaction researchers studying [[Creative AI]] adoption. Studies examining how practitioners integrate Civitai-sourced models into creative workflows document a distinctive pattern of "remixing" that differs from both traditional artistic practice and conventional software development — creators sample, modify, and recombine model artefacts in ways that blur authorship boundaries and challenge existing intellectual property frameworks.
 
+  ## Base Architecture Timeline on Civitai
+
+    The platform's model catalogue reflects the successive waves of open-source base model releases:
+
+    **Wave 1 – Stable Diffusion 1.x (November 2022 – mid 2023)**
+    - SD 1.4 / 1.5: 512×512 base resolution, U-Net architecture, CLIP ViT-L text encoder
+    - Community fine-tunes: thousands of checkpoint merges, DreamBooth subjects, textual inversion embeddings
+    - Dominant ecosystem: Automatic1111, DiffusionBee, InvokeAI
+    - Peak download period: 2022-Q4 through 2023-Q2; still used for lightweight LoRA training
+
+    **Wave 2 – Stable Diffusion XL (July 2023 – mid 2024)**
+    - SDXL base: 1024×1024 base resolution, dual CLIP text encoders (OpenCLIP ViT-G + CLIP ViT-L)
+    - SDXL-Turbo and Lightning acceleration variants: 4-step inference
+    - Community output: Pony Diffusion XL, RealVisXL, Juggernaut XL — among the highest-downloaded checkpoints
+    - Dominant ecosystem: ComfyUI (SDXL workflow optimisation), Automatic1111 SDXL support
+
+    **Wave 3 – Stable Diffusion 3.x and Alternatives (2024)**
+    - SD3 / SD3.5: flow matching architecture with MultiModal Diffusion Transformer (MMDiT)
+    - Stability AI AUP restrictions (July 2025) limited SD3 on-site generation use on Civitai
+    - Flux.1 (Black Forest Labs, August 2024): superseded SD3 as quality benchmark; two variants: Flux.1 [dev] and Flux.1 [schnell]
+    - Community output: Flux fine-tunes rapidly became the dominant high-quality LoRA category by late 2024
+
+    **Wave 4 – Video and Multi-Modal (2024–2026)**
+    - AnimateDiff: motion LoRAs for SD 1.5-based video generation; early video category on Civitai
+    - Stable Video Diffusion (SVD): image-to-video fine-tunes
+    - Wan2.1 (January 2025): open-weight video generation; LoRA fine-tunes for style transfer
+    - Hunyuan Video (December 2024): high-quality open video model; community derivatives
+    - CogVideoX (2024): text-to-video, community fine-tunes for specific aesthetics
+    - On-site video generation via Vidu integration: 600 Buzz per generation (T2V, I2V, R2V)
+
+  ## API Reference Summary
+
+    The Civitai REST API (v1 endpoint: `https://civitai.com/api/v1/`) supports the following key operations:
+
+    **Model Discovery**
+    - `GET /models`: Search models by name, type, tag, base model, NSFW status, sort order, period
+    - `GET /models/{modelId}`: Retrieve full model metadata, versions, and download URLs
+    - `GET /models/{modelId}/versions`: List all versions of a specific model
+    - `GET /model-versions/{versionId}`: Retrieve specific version metadata including file hashes
+
+    **Image Discovery**
+    - `GET /images`: Browse publicly shared community generations with filter support
+    - Filter by model version, username, NSFW level, sort (Most Reactions, Most Comments, Newest)
+
+    **Creator and Community**
+    - `GET /creators`: List creators with stats (model count, download count, follower count)
+    - `GET /tags`: Browse the taxonomy of content tags used for model categorisation
+
+    **Authentication**
+    - Bearer token authentication for API key holders (required for download URL resolution on gated models)
+    - Token obtained from user settings under API Keys section
+    - Rate limiting applies; terms prohibit bulk scraping
+
   ## Current Landscape (2026)
 
     As of mid-2026, Civitai remains the dominant open-source AI model repository for image and video generation, hosting hundreds of thousands of model artefacts with millions of registered users and tens of millions of monthly visits. Several structural developments characterise the 2025–2026 period:
@@ -245,11 +322,75 @@ public:: true
 
     **Competitive Landscape**: HuggingFace's Hub remains the primary platform for research-grade model weights and maintains a complementary positioning to Civitai focused on model cards, evaluation pipelines, and institutional model releases. SeaArt and other emerging platforms offer Civitai-adjacent social features with differing content policies and geographic reach. Civitai's community scale and LoRA catalogue depth remain its primary differentiators.
 
+  ## Community Quality Signals and Informal Benchmark
+
+    Civitai generates large-scale community signals that function as informal benchmarks for evaluating model quality:
+
+    - **Download Count**: The primary engagement metric visible on every model and version. Models with millions of downloads have achieved broad practitioner endorsement. Download counts are publicly visible via the API, enabling quantitative analysis of adoption patterns.
+    - **Rating System**: Star ratings (1–5) with separate quality axes for image quality and model quality. Aggregate ratings and distribution histograms are displayed prominently on model cards. Community reviews provide qualitative explanations of strengths, limitations, and recommended workflows.
+    - **Trending Algorithm**: Surfaces recently uploaded models gaining rapid download velocity, functioning as a community-driven relevance signal equivalent to citation velocity in academic publishing. New architecture releases produce characteristic spikes in trending metrics as the community rapidly produces and evaluates fine-tunes.
+    - **Resource Metrics**: The platform tracks unique image generation counts, tip volume, and follower counts per creator as composite reputation signals. Creators with sustained high quality across multiple model releases accumulate reputational capital that influences community trust in new releases.
+    - **Bounty Fulfillment**: The bounty market reveals demand-supply gaps — model types with many open bounties indicate practitioner demand not yet met by the creator community, providing forward-looking signal about needed model development.
+
+    External benchmarks that draw on Civitai's model ecosystem include:
+    - **Pick-a-pic** (Kirstain et al., NeurIPS 2023): Collected human preference data on text-to-image generations from Civitai-downloaded models, published for preference-tuning research.
+    - **HPSv2 (Human Preference Score v2)**: Benchmarked aesthetic quality across models sourced from Civitai's catalogue, providing a quantitative counterpart to community ratings.
+    - **ImageReward**: A reward model trained on human ratings of text-to-image outputs, with Civitai-sourced model outputs included in evaluation data.
+
+  ## Governance and Moderation Architecture
+
+    Civitai's content governance evolved iteratively in response to community growth, payment processor requirements, and regulatory pressure:
+
+    **Content Classification System**
+    - Tier 1 (Safe-for-Work / General): Accessible to all users without age verification. No explicit content.
+    - Tier 2 (Sensitive): Accessible to logged-in users. Includes suggestive but non-explicit content, violence, and disturbing imagery.
+    - Tier 3 (Adult / Explicit): Accessible only to age-verified accounts who have opted in to adult content in account settings. Geo-restricted in jurisdictions where AI-generated adult content is subject to age verification requirements.
+
+    **Moderation Mechanisms**
+    - Automated content classifiers screen uploaded images and flag potential policy violations for human review.
+    - User reporting tools allow community members to flag models, images, or comments for moderator review.
+    - Creator strike system applies graduated penalties (content removal, temporary suspension, permanent ban) for policy violations.
+    - DMCA takedown process handles copyright claims from artists and rights holders asserting that their work was used without consent in training data.
+    - Real-person likeness policy (introduced April 2025): prohibits uploads of models trained to generate likenesses of identifiable real individuals, including both public figures and private persons.
+
+    **Regulatory Compliance Timeline**
+    - 2023: Introduction of metadata requirements for adult content and mandatory age gating.
+    - April 2025: Ban on specific content subcategories, mandatory NSFW metadata, real-person likeness removal.
+    - May 2025: Credit card payment removal following Visa and Mastercard withdrawal; pivot to cryptocurrency payments.
+    - October 2025: Buzz currency restructuring into three tiers.
+    - 2025–2026: SafeForWork domain launch, geo-restriction tiers for UK users.
+
   ## Benchmark Datasets and Community Metrics
 
-    Civitai does not publish formal benchmark datasets in the academic sense, but the platform generates large-scale community signals that serve analogous functions. Download counts (publicly visible per model and version) serve as a proxy for practitioner endorsement. Rating distributions (1–5 stars, with separate axes for image quality and model quality) provide qualitative signal. The platform's trending algorithm surfaces recently uploaded models gaining rapid download velocity, functioning as a community-driven relevance signal equivalent to citation velocity in academic publishing.
+  ## Content Policy Detail: Permitted and Prohibited Content
 
-    External benchmarks for evaluating the quality of community fine-tuned models have been developed by researchers using Civitai's public API: Pick-a-pic (Kirstain et al., 2023, NeurIPS) collected human preference data on text-to-image generations, including from Civitai-downloaded models, and published the resulting dataset for preference-tuning research. HPSv2 (Human Preference Score) benchmarked aesthetic quality across models, providing a quantitative counterpart to the platform's community ratings. The Civitai API has been used in multiple research papers as a source for studying model diversity, community adoption patterns, and the relationship between fine-tuning data and generation quality.
+    As of mid-2026, Civitai's content policy is structured around content tiers and explicit prohibition lists:
+
+    **Permitted (with appropriate tier tagging)**
+    - Photorealistic imagery of fictional humans, AI characters, and non-real persons
+    - Fantasy violence and gore (horror genre) with Mature content tag
+    - Explicit adult content of fictional adults (age-verified tier only)
+    - Anime and illustration styles including adult variants (age-verified tier only)
+    - Drug use depiction in fictional contexts (Mature tag)
+    - Weapons and military hardware in non-promotional fictional contexts
+
+    **Prohibited (all tiers)**
+    - CSAM (Child Sexual Abuse Material): any sexualised content involving minors, whether photorealistic or illustrated
+    - Real-person likeness: models trained to generate likenesses of identifiable real individuals (policy change April 2025)
+    - Non-consensual intimate imagery (deepfakes of real people)
+    - Incest content (added April 2025)
+    - Self-harm content presented as instructional or promotional
+    - Diaper fetish and specific enumerated bodily excretion categories (added April 2025)
+
+    **Geo-Restricted Content**
+    - Explicit adult content: blocked for UK users linked to Online Safety Act provisions
+    - Some explicit categories blocked for EU users under AI Act implementation
+    - Platform maintains a jurisdiction-mapping layer that applies content restrictions based on user-declared or inferred location
+
+    **Model Upload Requirements (Post-April 2025)**
+    - All NSFW uploads must include structured metadata: content tier, subject matter categories, relevant content warnings
+    - Model cards must indicate base model, training data source category (not specific dataset), and known failure modes
+    - Commercial licence declaration is mandatory for all uploads
 
   ## UK Context
 
@@ -259,19 +400,163 @@ public:: true
 
     The UK's intellectual property landscape adds a distinctive dimension to Civitai's UK operations. The UK Intellectual Property Office (IPO) published guidance in 2023 on AI and intellectual property that attempted to create a text-and-data mining exception broader than the EU's, though this was subsequently delayed. This regulatory indeterminacy creates particular uncertainty for UK-based artists whose work appears in training datasets for models distributed on Civitai without their consent, and for UK-based commercial users of Civitai-sourced models whose IP liability in commercial applications remains legally ambiguous. The Artists' Coalition UK and similar organisations have engaged with this debate, calling for mandatory opt-in training data consent mechanisms and creator compensation frameworks that would directly affect platforms like Civitai.
 
+    **Key UK Stakeholder Groups and Interests**
+    - *UKIE (UK Interactive Entertainment Association)*: representing games studios using Civitai-sourced models in production; advocating for clarity on commercial use IP liability
+    - *Designers and Art Directors Association (D&AD)*: engaging with questions of authorship and design credit when AI-generated imagery is used in commercial work
+    - *The Illustration Association*: opposing unconsented use of illustrators' work in training data; supporting opt-out registries
+    - *Screen Producers UK*: examining use of generative AI in TV and film production, including Civitai-sourced storyboard and concept art models
+    - *Creative Industries Policy and Evidence Centre (PEC)*: economic research on generative AI's impact on creative labour, drawing on platform usage data from Civitai and similar services
+    - *DCMS (Department for Culture, Media and Sport)*: policy engagement with creative industries on AI regulation; the Creative Industries Sector Vision (2023) acknowledged AI's dual role as opportunity and risk for UK creatives
+    - *CDEI (Centre for Data Ethics and Innovation)*: publishing guidance on responsible AI use in creative sectors intersecting with platform-hosted model governance
+
+  ## Platform Competitive Positioning
+
+    Civitai occupies a distinct niche in the generative AI platform landscape, competing and complementing across several dimensions:
+
+    **vs. Hugging Face Model Hub**
+    - Hugging Face: research-grade model cards, evaluation suites, enterprise API, institutional model releases
+    - Civitai: community practitioner-oriented, image-first discovery, LoRA/fine-tune focus, creator economy
+    - Complementary flow: new architectures announced on Hugging Face → community fine-tunes appear on Civitai within 48–72 hours
+    - Key difference: Hugging Face models typically carry permissive research licences; Civitai models carry varied community licences including non-commercial restrictions
+
+    **vs. Midjourney / DALL-E (Commercial APIs)**
+    - Commercial APIs offer consistency, safety, and ease of use but limited style control and per-generation pricing
+    - Civitai enables complete creative control, local execution (privacy), and access to thousands of niche fine-tuned styles unavailable commercially
+    - Commercial APIs prohibit or restrict adult content; Civitai supports adult content tiers with age verification
+    - Quality gap: Civitai-sourced Flux and SDXL fine-tunes typically exceed commercial API quality for specific aesthetic domains
+
+    **vs. SeaArt / Tensor.Art / Other Civitai Alternatives**
+    - Emerging platforms (SeaArt 3.0, Tensor.Art) offer Civitai-adjacent social features with varying content policies
+    - Civitai's primary differentiator: scale (tens of millions of registered users), LoRA catalogue depth, established creator reputation system
+    - Geographic differences: some alternatives have stronger presence in Asian markets; Civitai is dominant in Western practitioner communities
+
   ## Future Directions (2026-2030)
 
     Several trajectories are shaping Civitai's evolution through the end of the decade:
 
-    **Model Governance Formalisation**: Pressure from regulators and payment processors is pushing the platform towards more structured provenance metadata — training data disclosure, consent documentation, and machine-readable licensing. Formats such as the C2PA content credential standard and emerging model card schemas from MLCommons may become mandatory fields for model uploads, transforming Civitai from an informal community sharing site into a governed model provenance registry.
+    **Model Governance Formalisation**
+    - Training data disclosure: metadata fields for dataset provenance and consent documentation
+    - C2PA content credential integration: machine-readable provenance surviving downstream derivatives
+    - MLCommons model card schema adoption: standardised performance and safety fields
+    - DMCA-equivalent automated opt-out: integration with Have I Been Trained? and similar opt-out registries
 
-    **Multi-Modal Expansion**: Still-image dominance will likely yield to multi-modal artefacts: video generation LoRAs, audio-visual style packs, and 3D asset generation adaptations are already appearing. The platform is positioned to become the community layer for the full open-source multi-modal generative stack as base architectures for 3D, audio, and video mature.
+    **Multi-Modal Expansion**
+    - Video generation LoRAs for Wan2.1, Hunyuan Video, and future video architectures
+    - Audio synthesis model artefacts (music LoRAs, voice LoRAs for Bark/VALL-E derivatives)
+    - 3D asset generation adaptations for Triplane, Zero-1-to-3, and successor architectures
+    - Multimodal style packs combining image + video + audio aesthetic signatures
 
-    **On-Site Training Economy**: The on-site LoRA trainer is a strategic move towards vertical integration. If the compute economics improve through advances in quantised training and LoRA rank reduction, on-site training may displace local-hardware training as the dominant workflow for the majority of creators who lack access to 24+ GB VRAM GPUs.
+    **On-Site Training Economy**
+    - LoRA training cost reduction through quantised training (INT8/INT4 LoRA gradients)
+    - Serverless burst compute enabling training at sub-minute latency for small datasets
+    - Community training bounties: Buzz-funded collaborative training jobs
+    - Model merging tools integrated into the on-site UI for checkpoint arithmetic without local hardware
 
-    **Decentralised Model Provenance**: Blockchain-anchored or IPFS-distributed model provenance systems are in early development in the broader AI governance community. Civitai may adopt content credential standards to enable creator attribution to survive model derivatives and merges, addressing the persistent challenge of attribution loss when community fine-tunes are merged into new checkpoints.
+    **Decentralised Model Provenance**
+    - Blockchain-anchored model hashes enabling attribution verification across derivative merges
+    - IPFS-distributed model hosting as backup against content takedown risk
+    - On-chain creator reputation systems decoupling creator identity from platform control
+    - Interoperability with future open model provenance standards
 
-    **Regulatory Compliance as Differentiator**: As the EU AI Act, UK Online Safety Act, and US-state deepfake laws create compliance requirements for platforms hosting AI-generated content, Civitai's investment in content controls and age verification may become a competitive differentiator relative to less-moderated alternatives, though at the cost of community friction.
+    **Regulatory Compliance as Differentiator**
+    - EU AI Act compliance: high-risk AI system documentation for models used in professional contexts
+    - UK Online Safety Act: ongoing geo-restriction and age verification evolution
+    - US state deepfake laws (California, Texas, Florida) affecting model type permissibility
+    - ISO/IEC AI management system standards affecting platform governance requirements
+
+    **Technical Infrastructure**
+    - Inference API: moving from download-only to hosted inference for all model types at Buzz pricing
+    - Fine-tune marketplace: commissioned fine-tunes with quality guarantees and IP indemnity
+    - Model compression: automatic GGUF quantisation of uploaded checkpoints for CPU inference accessibility
+    - Mobile generation: Buzz-funded on-device generation for compatible model architectures
+
+  ## Model Production Workflow on Civitai
+
+    A typical model production and publication workflow on Civitai proceeds as follows:
+
+    **Training Phase**
+    - Select a base model architecture (SD 1.5, SDXL, or Flux) compatible with the target aesthetic
+    - Curate a training dataset: typically 20–200 high-quality images for LoRA; 1,000–10,000 for full fine-tune
+    - Caption each image with natural language descriptions using BLIP-2, WD14 tagger, or manual annotation
+    - Configure training: learning rate (1e-4 to 1e-6), rank (4–128 for LoRA), network dimensions, number of steps
+    - Training frameworks: kohya_ss (the dominant community training framework), sd-scripts, SimpleTuner (Flux-native)
+    - On-site alternative: Civitai's on-site LoRA trainer abstracts these parameters with guided presets
+
+    **Evaluation Phase**
+    - Generate sample images at multiple strength settings and prompt configurations
+    - Test trigger word activation: verify the trained concept responds correctly to documented trigger words
+    - Cross-model testing: verify LoRA compatibility across multiple base model checkpoints
+    - Compare against baseline (base model without LoRA) to confirm value addition
+    - Identify failure modes: overfitting symptoms (inability to deviate from training poses), edge cases, style bleed
+
+    **Publication Phase**
+    - Select model type from taxonomy (checkpoint, LoRA, LyCORIS, embedding, VAE, ControlNet)
+    - Write model card: description, trigger words, recommended generation parameters, known limitations
+    - Upload sample images: typically 8–20 diverse examples covering the model's range
+    - Set licence: choose from Creative ML OpenRAIL-M, CC BY-NC, CC BY, or custom licence terms
+    - Configure NSFW tier and metadata tags for content classification compliance
+    - Set pricing: free download, Buzz tip, early access, or time-gated release
+
+    **Post-Publication**
+    - Respond to community questions in model comment threads
+    - Publish updated versions incorporating community feedback and training improvements
+    - Track download trajectory and rating distribution as quality signals
+    - Post to relevant community bounties if the upload fulfils existing requests
+
+  ## Ecosystem Integration
+
+    Civitai integrates with the broader open-source generative AI toolchain:
+
+    **ComfyUI Integration**
+    - ComfyUI Manager can automatically download and install models from Civitai by URL or model hash
+    - Custom node packs provide direct in-workflow model browsing and download
+    - Model metadata from Civitai cards is parsed into workflow parameter suggestions
+
+    **Automatic1111 / SD WebUI Integration**
+    - CivitAI Helper extension enables in-browser model search, download, and model card display
+    - Model hash verification confirms downloaded weights match published checksums
+    - Trigger word auto-injection from model card metadata
+
+    **API Consumers**
+    - Cloud generation services (Mage.space, Tensor.Art) source community models via the Civitai API
+    - Automation tools (n8n workflows, Python scripts) use the API for model pipeline discovery
+    - Research tooling for studying community model adoption patterns
+
+    **Base Model Providers**
+    - Stability AI (Stable Diffusion family): primary historical relationship; affected by Stability AI AUP changes in 2025
+    - Black Forest Labs (Flux architecture): now the dominant quality-benchmark base model for new fine-tunes
+    - Community mergers (Pony Diffusion, LEOSAM's variants): independent merge projects published back to Civitai
+
+  ## Research Landscape: Key Themes
+
+    Academic research directly relevant to Civitai clusters around several themes:
+
+    **Generative Model Architectures (Foundation)**
+    - Denoising diffusion probabilistic models (Ho et al., 2020): core generation mechanism
+    - Latent diffusion models (Rombach et al., 2022): the efficiency innovation enabling SD on consumer hardware
+    - Flow matching (Black Forest Labs, 2024): the mathematical framework underlying Flux architecture
+    - Score-based generative models (Song & Ermon, 2019): theoretical unification of diffusion and score matching
+
+    **Parameter-Efficient Fine-Tuning**
+    - LoRA (Hu et al., 2022): the dominant fine-tuning method on Civitai
+    - DreamBooth (Ruiz et al., 2023): subject-driven fine-tuning enabling character and object LoRAs
+    - Textual Inversion (Gal et al., 2022): concept encoding in embedding space
+    - LyCORIS community extensions: LoHa, LoKr, DyLoRA — practitioner-developed variants
+
+    **Structural Conditioning**
+    - ControlNet (Zhang et al., 2023): the structural conditioning paradigm for depth, pose, edge inputs
+    - T2I-Adapter (Mou et al., 2023): lightweight adapter alternative to ControlNet
+
+    **AI Governance and Copyright**
+    - Data memorisation in diffusion models (Somepalli et al., 2023): copyright implications
+    - Deepfake risk and regulation (Chesney and Citron, 2019): policy context for platform governance
+    - AI Act (EU, 2024): regulatory framework shaping content obligations
+    - Online Safety Act (UK, 2023): jurisdiction-specific content restrictions
+
+    **Human-AI Creative Collaboration**
+    - Art and generative AI authorship (Epstein et al., 2023): philosophical and legal dimensions
+    - Human preference in text-to-image (Pick-a-pic, Kirstain et al., 2023): quantitative quality assessment
+    - Artist response to AI generators (Heikkila, 2023): sociological dimensions
 
   ## Research & Literature
 
@@ -302,8 +587,14 @@ public:: true
     25. UK Government (2023). "Online Safety Act 2023." HMSO. The UK regulatory instrument driving Civitai's adult-content geo-restriction for UK users.
     26. Civitai (2025). "Policy & Content Adjustments." civitai.com/articles/13632. Platform's own documentation of April 2025 content policy changes.
     27. Civitai (2025). "What's New: Next-Gen Video, Payment Processor Pivot." newsletter.civitai.com. Newsletter documenting May 2025 cryptocurrency payment pivot and Vidu video integration.
+    28. Stability AI (2025). "Update on Stability AI Acceptable Use Policy Change." civitai.com/articles/17499. The AUP update that led Civitai to restrict SD3/SD3.5 on-site generation in July 2025.
+    29. Schmidt, G., & Loper, M. (2024). "Model Cards for Model Reporting: A Field Guide." MLCommons Working Group. Emerging model card standards relevant to Civitai's documentation obligations.
+    30. Hertz, A., Mokady, R., Tenenbaum, J., Aberman, K., Pritch, Y., & Cohen-Or, D. (2022). "Prompt-to-prompt image editing with cross attention control." *ICLR 2023*. Attention-based editing technique implemented by community tools using Civitai-distributed models.
+    31. Wu, B., Chen, J., Zhao, C., & Ma, S. (2024). "SDXL-Turbo: Adversarial diffusion distillation." Stability AI Technical Report. Turbo distillation enabling 1-step high quality generation; Civitai hosts SDXL-Turbo fine-tunes.
+    32. Civitai (2024). "Guide to Buzz — the Civitai On-Site Currency." education.civitai.com. Platform education documentation on the Buzz economy, creator program, and bounty system.
 
 - ### Provenance
-  - sources:: https://civitai.com/, https://aitoolscoop.com/tool/civitai/, https://skywork.ai/blog/civitai-ai-review-2025-features-policies-workflow/, https://www.somake.ai/blog/civitai-review, https://newsletter.civitai.com/p/what-s-new-on-civitai-next-gen-video-payment-processor-pivot-spend-your-memecoins-win-big-with-vidu, https://civitai.com/articles/13632/policy-and-content-adjustments, https://www.unite.ai/civitai-tightens-deepfake-rules-under-pressure-from-mastercard-and-visa/, https://education.civitai.com/civitais-guide-to-on-site-currency-buzz-%E2%9A%A1/, https://flowith.io/blog/civitai-building-most-powerful-open-community-ai-art/
+  - sources:: https://civitai.com/, https://aitoolscoop.com/tool/civitai/, https://skywork.ai/blog/civitai-ai-review-2025-features-policies-workflow/, https://www.somake.ai/blog/civitai-review, https://newsletter.civitai.com/p/what-s-new-on-civitai-next-gen-video-payment-processor-pivot-spend-your-memecoins-win-big-with-vidu, https://civitai.com/articles/13632/policy-and-content-adjustments, https://www.unite.ai/civitai-tightens-deepfake-rules-under-pressure-from-mastercard-and-visa/, https://education.civitai.com/civitais-guide-to-on-site-currency-buzz-%E2%9A%A1/, https://flowith.io/blog/civitai-building-most-powerful-open-community-ai-art/, https://skywork.ai/blog/civitai-review-2025-safety-monetization-model-discovery/, https://flowith.io/blog/civitai-faq-nsfw-policies-commercial-license-lora-upload-api/
   - migration-date:: 2026-06-21T00:00:00Z
+  - last-reviewed:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

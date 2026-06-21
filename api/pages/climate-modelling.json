@@ -98,6 +98,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
     },

@@ -113,8 +113,24 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "closed-world-assumption",
+      "label": "Closed World Assumption"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
     }
   ]
 }

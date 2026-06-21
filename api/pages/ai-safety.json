@@ -401,8 +401,28 @@
       "label": "AISI"
     },
     {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
       "slug": "agent-identity",
       "label": "Agent Identity"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
     },
     {
       "slug": "agent-memory",
@@ -485,12 +505,36 @@
       "label": "California AI bill"
     },
     {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
       "slug": "competition-in-ai",
       "label": "Competition in AI"
     },
     {
+      "slug": "computability-theory",
+      "label": "Computability Theory"
+    },
+    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
     },
     {
       "slug": "evaluation-benchmarks-and-leaderboards",
@@ -505,16 +549,28 @@
       "label": "Existential AI Risk"
     },
     {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
       "slug": "ground-robot",
       "label": "Ground Robot"
     },
     {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
     },
     {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
     },
     {
       "slug": "mitre-atlas",
@@ -533,6 +589,10 @@
       "label": "Product Liability Directive"
     },
     {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
+    },
+    {
       "slug": "proprietary-ai-video",
       "label": "Proprietary AI Video"
     },
@@ -547,6 +607,10 @@
     {
       "slug": "sociotechnical-risk",
       "label": "Sociotechnical Risk"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
     },
     {
       "slug": "training-data",

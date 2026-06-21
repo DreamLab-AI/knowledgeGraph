@@ -145,6 +145,10 @@
       "label": "Compliance Layer"
     },
     {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
       "slug": "corporate-governance",
       "label": "Corporate Governance"
     },

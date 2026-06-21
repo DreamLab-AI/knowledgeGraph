@@ -80,6 +80,10 @@
   ],
   "backlinks": [
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
       "slug": "clinical-decision-support",
       "label": "Clinical Decision Support"
     },

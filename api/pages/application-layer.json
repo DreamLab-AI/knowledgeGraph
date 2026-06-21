@@ -257,6 +257,14 @@
       "label": "Admittance Control"
     },
     {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
     },

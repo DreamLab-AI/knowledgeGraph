@@ -5,23 +5,96 @@
   "public": true,
   "classIri": "urn:ngm:class:content-generation",
   "domain": "ai",
-  "definition": "Content generation is the use of generative models to automatically produce media such as text, images, code, audio, or video from prompts or structured inputs. It relies on models that learn the distribution of training data and sample novel, coherent outputs from it. It is a core application domain of generative AI across publishing, marketing, software, and entertainment.",
+  "definition": "Content Generation is the application domain within [[Generative AI]] and [[AI Machine Learning]] concerned with automatically synthesising novel media artefacts \u2014 including text, images, code, audio, video, and mixed-modality outputs \u2014 from structured or natural-language inputs, using probabilistic generative models that have learned the distribution of training corpora. It encompasses [[Large Language Model]]-based text and code generation, [[Diffusion Model]]-based image and video synthesis, multimodal fusion pipelines, and the wider infrastructure for deployment, evaluation, and governance of such systems at scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:generative-ai",
       "label": "Generative AI"
+    },
+    {
+      "id": "urn:ngm:class:ai-application-domain",
+      "label": "AI Application Domain"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:text-to-video",
+        "label": "Text-to-Video"
+      },
+      {
+        "id": "urn:ngm:class:code-synthesis",
+        "label": "Code Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:audio-generation",
+        "label": "Audio Generation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:discriminative-model",
+        "label": "Discriminative Model"
+      },
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
@@ -29,16 +102,185 @@
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
       },
       {
-        "id": "urn:ngm:class:ai-machine-learning",
-        "label": "Ai Machine Learning"
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "ai-machine-learning",
+      "label": "AI Machine Learning"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "natural-language-generation",
+      "label": "Natural Language Generation"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "text-to-video",
+      "label": "Text-to-Video"
+    },
+    {
+      "slug": "code-synthesis",
+      "label": "Code Synthesis"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
+      "slug": "grounding",
+      "label": "Grounding"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "embeddings",
+      "label": "Embeddings"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "watermarking",
+      "label": "Watermarking"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "personalisation",
+      "label": "Personalisation"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-machine-learning",
@@ -47,6 +289,14 @@
     {
       "slug": "audio-synthesis",
       "label": "Audio Synthesis"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
     },
     {
       "slug": "ai-core-concepts",

@@ -105,6 +105,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"
     }

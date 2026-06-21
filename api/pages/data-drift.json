@@ -87,6 +87,14 @@
       "label": "AI Monitoring"
     },
     {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    },
+    {
       "slug": "model-performance",
       "label": "Model Performance"
     }

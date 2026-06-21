@@ -123,6 +123,10 @@
       "label": "Alan Turing Institute"
     },
     {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
       "slug": "data-engineering",
       "label": "Data Engineering"
     },

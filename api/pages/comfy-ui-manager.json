@@ -10,13 +10,34 @@
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
+    },
+    {
+      "id": "urn:ngm:class:package-manager",
+      "label": "Package Manager"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:custom-node-registry",
+        "label": "Custom Node Registry"
+      },
+      {
+        "id": "urn:ngm:class:missing-node-detection",
+        "label": "Missing Node Detection"
+      },
+      {
+        "id": "urn:ngm:class:model-downloader",
+        "label": "Model Downloader"
+      },
+      {
+        "id": "urn:ngm:class:snapshot-management",
+        "label": "Snapshot Management"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:comfy-ui",
@@ -25,9 +46,26 @@
       {
         "id": "urn:ngm:class:git",
         "label": "Git"
+      },
+      {
+        "id": "urn:ngm:class:python-package-management",
+        "label": "Python Package Management"
       }
     ],
-    "enables": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:workflow-portability",
+        "label": "Workflow Portability"
+      },
+      {
+        "id": "urn:ngm:class:reproducible-ml-pipelines",
+        "label": "Reproducible ML Pipelines"
+      },
+      {
+        "id": "urn:ngm:class:community-extension-ecosystem",
+        "label": "Community Extension Ecosystem"
+      }
+    ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:diffusion-models",
@@ -40,13 +78,25 @@
       {
         "id": "urn:ngm:class:hugging-face",
         "label": "Hugging Face"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:py-torch",
+        "label": "PyTorch"
       }
     ],
     "implements": [],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:automatic1111",
+        "id": "urn:ngm:class:automatic1111-web-ui",
         "label": "AUTOMATIC1111 Stable Diffusion WebUI"
+      },
+      {
+        "id": "urn:ngm:class:pip",
+        "label": "pip"
       }
     ],
     "bridgesTo": [],
@@ -58,6 +108,14 @@
       {
         "id": "urn:ngm:class:workflow-automation",
         "label": "Workflow Automation"
+      },
+      {
+        "id": "urn:ngm:class:civit-ai",
+        "label": "CivitAI"
+      },
+      {
+        "id": "urn:ngm:class:hugging-face-hub",
+        "label": "Hugging Face Hub"
       }
     ],
     "supports": [
@@ -74,8 +132,24 @@
         "label": "ControlNet"
       },
       {
-        "id": "urn:ngm:class:lora",
+        "id": "urn:ngm:class:lo-ra",
         "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:ngm:class:image-upscaling",
+        "label": "Image Upscaling"
+      },
+      {
+        "id": "urn:ngm:class:face-restoration",
+        "label": "Face Restoration"
       }
     ],
     "standardizedBy": [],
@@ -101,11 +175,256 @@
       {
         "id": "urn:ngm:class:ip-adapter",
         "label": "IP-Adapter"
+      },
+      {
+        "id": "urn:ngm:class:comfy-ui-api-specification",
+        "label": "ComfyUI API Specification"
+      },
+      {
+        "id": "urn:ngm:class:comfy-node-registry",
+        "label": "Comfy Node Registry"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "git",
+      "label": "Git"
+    },
+    {
+      "slug": "hugging-face",
+      "label": "Hugging Face"
+    },
+    {
+      "slug": "hugging-face-hub",
+      "label": "Hugging Face Hub"
+    },
+    {
+      "slug": "civit-ai",
+      "label": "CivitAI"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "LoRA"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "sdxl",
+      "label": "SDXL"
+    },
+    {
+      "slug": "automatic1111-web-ui",
+      "label": "AUTOMATIC1111 Stable Diffusion WebUI"
+    },
+    {
+      "slug": "node-based-visual-programming",
+      "label": "Node-Based Programming"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "python-package-management",
+      "label": "Python Package Management"
+    },
+    {
+      "slug": "reproducible-ml-pipelines",
+      "label": "Reproducible ML Pipelines"
+    },
+    {
+      "slug": "workflow-portability",
+      "label": "Workflow Portability"
+    },
+    {
+      "slug": "custom-node-registry",
+      "label": "Custom Node Registry"
+    },
+    {
+      "slug": "missing-node-detection",
+      "label": "Missing Node Detection"
+    },
+    {
+      "slug": "model-downloader",
+      "label": "Model Downloader"
+    },
+    {
+      "slug": "community-extension-ecosystem",
+      "label": "Community Extension Ecosystem"
+    },
+    {
+      "slug": "snapshot-management",
+      "label": "Snapshot Management"
+    },
+    {
+      "slug": "open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "slug": "package-manager",
+      "label": "Package Manager"
+    },
+    {
+      "slug": "ai-application",
+      "label": "AI Application"
+    },
+    {
+      "slug": "model-checkpoint",
+      "label": "Model Checkpoint"
+    },
+    {
+      "slug": "vae",
+      "label": "VAE"
+    },
+    {
+      "slug": "comfy-node-registry",
+      "label": "Comfy Node Registry"
+    },
+    {
+      "slug": "comfy-org-git-hub-organisation",
+      "label": "Comfy-Org GitHub Organisation"
+    },
+    {
+      "slug": "ltdrdata-2023-comfy-ui-manager",
+      "label": "ltdrdata 2023 ComfyUI-Manager"
+    },
+    {
+      "slug": "openart-workflow-registry",
+      "label": "OpenArt Workflow Registry"
+    },
+    {
+      "slug": "civitai-workflow-sharing",
+      "label": "Civitai Workflow Sharing"
+    },
+    {
+      "slug": "generative-ai-tooling",
+      "label": "Generative AI Tooling"
+    },
+    {
+      "slug": "pip",
+      "label": "pip"
+    },
+    {
+      "slug": "uv-package-manager",
+      "label": "uv Package Manager"
+    },
+    {
+      "slug": "comfy-cli",
+      "label": "comfy-cli"
+    },
+    {
+      "slug": "was-node-suite",
+      "label": "WAS Node Suite"
+    },
+    {
+      "slug": "comfy-ui-ipadapter-plus",
+      "label": "ComfyUI-IPAdapter-Plus"
+    },
+    {
+      "slug": "animate-diff-evolved",
+      "label": "ComfyUI-AnimateDiff-Evolved"
+    },
+    {
+      "slug": "tech-crunch-2026-comfy-ui-500-m-valuation",
+      "label": "TechCrunch 2026 ComfyUI $500M Valuation"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "text-to-image-generation",
+      "label": "Text-to-Image Generation"
+    },
+    {
+      "slug": "esrgan-upscaling",
+      "label": "ESRGAN Upscaling"
+    },
+    {
+      "slug": "face-restoration",
+      "label": "Face Restoration"
+    },
+    {
+      "slug": "image-upscaling",
+      "label": "Image Upscaling"
+    },
+    {
+      "slug": "cve-2025-67303",
+      "label": "CVE-2025-67303"
+    },
+    {
+      "slug": "content-creation-pipeline",
+      "label": "Content Creation Pipeline"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
     {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"

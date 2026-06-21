@@ -123,6 +123,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "closed-world-assumption",
+      "label": "Closed World Assumption"
+    },
+    {
       "slug": "data-layer",
       "label": "Data Layer"
     }

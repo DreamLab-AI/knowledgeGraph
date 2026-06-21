@@ -246,6 +246,10 @@
       "label": "Cyber Security and Military"
     },
     {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
       "slug": "identity-management-system",
       "label": "Identity Management System"
     },
@@ -256,6 +260,10 @@
     {
       "slug": "identity-verification",
       "label": "Identity Verification"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
     },
     {
       "slug": "non-repudiation",

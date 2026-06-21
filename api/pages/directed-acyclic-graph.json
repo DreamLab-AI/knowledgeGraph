@@ -85,6 +85,10 @@
     {
       "slug": "agent-orchestrator",
       "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
     }
   ]
 }

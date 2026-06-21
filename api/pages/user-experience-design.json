@@ -113,6 +113,10 @@
       "label": "Affective Computing"
     },
     {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
       "slug": "human-computer-interaction",
       "label": "Human Computer Interaction"
     }

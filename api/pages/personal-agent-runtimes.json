@@ -1,0 +1,281 @@
+{
+  "id": "urn:visionflow:page:personal-agent-runtimes",
+  "title": "Personal Agent Runtimes",
+  "slug": "personal-agent-runtimes",
+  "public": true,
+  "classIri": "urn:ngm:class:personal-agent-runtimes",
+  "domain": "ai",
+  "definition": "Always-on self-hosted agent daemons that operate across chat platforms as persistent personal assistants with event loops, memory, and self-improving capabilities \u2014 includes OpenClaw, Hermes, Khoj, Eliza, Agent Zero, OpenHarness, and AIlice.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.9,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:agent-memory-layers",
+        "label": "Agent Memory Layers"
+      },
+      {
+        "id": "urn:ngm:class:event-loop",
+        "label": "Event Loop"
+      },
+      {
+        "id": "urn:ngm:class:permission-governance",
+        "label": "Permission Governance"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      },
+      {
+        "id": "urn:ngm:class:agent-identity",
+        "label": "Agent Identity"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:agent-execution-sandboxes",
+        "label": "Agent Execution Sandboxes"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-operation",
+        "label": "Autonomous Operation"
+      },
+      {
+        "id": "urn:ngm:class:self-improvement",
+        "label": "Self-Improvement"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-ai",
+        "label": "Privacy-Preserving AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:model-context-protocol",
+        "label": "Model Context Protocol"
+      }
+    ],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-memory-layers",
+        "label": "Agent Memory Layers"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-orchestration-frameworks",
+        "label": "Multi-Agent Orchestration Frameworks"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "local-language-model",
+      "label": "Local Language Model"
+    },
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
+      "slug": "browser-automation",
+      "label": "Browser Automation"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
+      "slug": "knowledge-base",
+      "label": "Knowledge Base"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "docker-container",
+      "label": "Docker Container"
+    },
+    {
+      "slug": "privacy-preserving-ai",
+      "label": "Privacy-Preserving AI"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "slug": "ai-infrastructure",
+      "label": "AI Infrastructure"
+    },
+    {
+      "slug": "event-loop",
+      "label": "Event Loop"
+    },
+    {
+      "slug": "self-improvement",
+      "label": "Self-Improvement"
+    },
+    {
+      "slug": "permission-governance",
+      "label": "Permission Governance"
+    },
+    {
+      "slug": "multi-agent-coordination",
+      "label": "Multi-Agent Coordination"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "llm-inference",
+      "label": "LLM Inference"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "computation-and-intelligence-domain",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "agent-layer",
+      "label": "AgentLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
+    }
+  ]
+}

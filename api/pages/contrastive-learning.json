@@ -154,6 +154,10 @@
       "label": "BLIP-2 Captioner"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
     },

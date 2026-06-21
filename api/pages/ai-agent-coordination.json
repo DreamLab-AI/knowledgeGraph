@@ -335,6 +335,22 @@
   ],
   "backlinks": [
     {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
     }

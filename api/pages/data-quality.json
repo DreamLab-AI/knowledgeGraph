@@ -151,6 +151,10 @@
       "label": "Benchmark Evaluation"
     },
     {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
       "slug": "data-pipeline",
       "label": "Data Pipeline"
     },

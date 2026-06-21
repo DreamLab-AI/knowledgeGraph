@@ -201,6 +201,10 @@
       "label": "AI Game Agent"
     },
     {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
       "slug": "agent-orchestrator",
       "label": "Agent Orchestrator"
     },
@@ -363,6 +367,10 @@
     {
       "slug": "spatial-audio-scene-description",
       "label": "Spatial Audio Scene Description"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
     },
     {
       "slug": "training-layer",

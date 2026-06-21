@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -120,7 +120,196 @@
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "score-function",
+      "label": "Score Function"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "text-to-video-generation",
+      "label": "Text-to-Video Generation"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    },
+    {
+      "slug": "denoising-diffusion-probabilistic-model",
+      "label": "Denoising Diffusion Probabilistic Model"
+    },
+    {
+      "slug": "conditioning-signal",
+      "label": "Conditioning Signal"
+    },
+    {
+      "slug": "score-based-generative-model",
+      "label": "Score-Based Generative Model"
+    },
+    {
+      "slug": "dropout",
+      "label": "Dropout"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "controlnet",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "reward-model",
+      "label": "Reward Model"
+    },
+    {
+      "slug": "classifier-guidance",
+      "label": "Classifier Guidance"
+    },
+    {
+      "slug": "unconditional-generation",
+      "label": "Unconditional Generation"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "flow-matching",
+      "label": "Flow Matching"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "stochastic-differential-equation",
+      "label": "Stochastic Differential Equation"
+    },
+    {
+      "slug": "markov-chain",
+      "label": "Markov Chain"
+    },
+    {
+      "slug": "diffusion-transformer",
+      "label": "Diffusion Transformer"
+    },
+    {
+      "slug": "dall-e-3",
+      "label": "DALL-E 3"
+    },
+    {
+      "slug": "guidance-scale",
+      "label": "Guidance Scale"
+    },
+    {
+      "slug": "null-conditioning",
+      "label": "Null Conditioning"
+    },
+    {
+      "slug": "noise-schedule",
+      "label": "Noise Schedule"
+    },
+    {
+      "slug": "negative-prompting",
+      "label": "Negative Prompting"
+    },
+    {
+      "slug": "conditional-generation",
+      "label": "Conditional Generation"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "score-distillation-sampling",
+      "label": "Score Distillation Sampling"
+    },
+    {
+      "slug": "neural-radiance-field",
+      "label": "Neural Radiance Field"
+    },
+    {
+      "slug": "multimodal-learning",
+      "label": "Multimodal Learning"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "energy-based-model",
+      "label": "Energy-Based Model"
+    },
+    {
+      "slug": "image-editing",
+      "label": "Image Editing"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "content-authentication",
+      "label": "Content Authentication"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-video",
@@ -133,6 +322,14 @@
     {
       "slug": "automatic1111",
       "label": "Automatic1111"
+    },
+    {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
+      "slug": "control-net",
+      "label": "controlnet"
     },
     {
       "slug": "diffusion-models",

@@ -96,6 +96,10 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "closed-world-assumption",
+      "label": "Closed World Assumption"
+    },
+    {
       "slug": "reasoning",
       "label": "Reasoning"
     },

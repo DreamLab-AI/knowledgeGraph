@@ -153,6 +153,10 @@
       "label": "Compute Shader"
     },
     {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
       "slug": "humanoid-robot",
       "label": "Humanoid Robot"
     },

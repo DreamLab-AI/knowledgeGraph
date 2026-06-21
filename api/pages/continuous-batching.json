@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.91,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -24,12 +24,28 @@
       {
         "id": "urn:ngm:class:kv-cache",
         "label": "KV Cache"
+      },
+      {
+        "id": "urn:ngm:class:chunked-prefill",
+        "label": "Chunked Prefill"
+      },
+      {
+        "id": "urn:ngm:class:slot-management",
+        "label": "Slot Management"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:gpu-compute",
         "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:gpu-memory",
+        "label": "GPU Memory"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
       }
     ],
     "enables": [
@@ -40,11 +56,45 @@
       {
         "id": "urn:ngm:class:gpu-utilisation",
         "label": "GPU Utilisation"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:multi-tenant-inference",
+        "label": "Multi-Tenant Inference"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:paged-attention",
+        "label": "Paged Attention"
+      },
+      {
+        "id": "urn:ngm:class:autoregressive-decoding",
+        "label": "Autoregressive Decoding"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:static-batching",
+        "label": "Static Batching"
+      },
+      {
+        "id": "urn:ngm:class:batch-processing",
+        "label": "Batch Processing"
+      },
+      {
+        "id": "urn:ngm:class:triton-inference-server",
+        "label": "Triton Inference Server"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -58,12 +108,28 @@
       {
         "id": "urn:ngm:class:autoregressive-decoding",
         "label": "Autoregressive Decoding"
+      },
+      {
+        "id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      },
+      {
+        "id": "urn:ngm:class:gpu",
+        "label": "GPU"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:v-llm",
         "label": "vLLM"
+      },
+      {
+        "id": "urn:ngm:class:sglang",
+        "label": "SGLang"
+      },
+      {
+        "id": "urn:ngm:class:tensorrt-llm",
+        "label": "TensorRT-LLM"
       },
       {
         "id": "urn:ngm:class:token-generation",
@@ -75,24 +141,181 @@
       {
         "id": "urn:ngm:class:model-serving",
         "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:inference-serving",
+        "label": "Inference Serving"
       }
     ],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:batch-processing",
-        "label": "Batch Processing"
+        "id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      },
+      {
+        "id": "urn:ngm:class:prefill-decode-disaggregation",
+        "label": "Prefill-Decode Disaggregation"
       },
       {
         "id": "urn:ngm:class:tensor-parallelism",
         "label": "Tensor Parallelism"
       },
       {
-        "id": "urn:ngm:class:transformer-architecture",
-        "label": "Transformer Architecture"
+        "id": "urn:ngm:class:flash-attention",
+        "label": "Flash Attention"
+      },
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "inference-optimisation",
+      "label": "Inference Optimisation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "kv-cache",
+      "label": "KV Cache"
+    },
+    {
+      "slug": "paged-attention",
+      "label": "Paged Attention"
+    },
+    {
+      "slug": "v-llm",
+      "label": "vLLM"
+    },
+    {
+      "slug": "autoregressive-decoding",
+      "label": "Autoregressive Decoding"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "gpu-memory",
+      "label": "GPU Memory"
+    },
+    {
+      "slug": "throughput",
+      "label": "Throughput"
+    },
+    {
+      "slug": "latency",
+      "label": "Latency"
+    },
+    {
+      "slug": "token-generation",
+      "label": "Token Generation"
+    },
+    {
+      "slug": "request-scheduling",
+      "label": "Request Scheduling"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "speculative-decoding",
+      "label": "Speculative Decoding"
+    },
+    {
+      "slug": "tensor-parallelism",
+      "label": "Tensor Parallelism"
+    },
+    {
+      "slug": "flash-attention",
+      "label": "Flash Attention"
+    },
+    {
+      "slug": "quantisation",
+      "label": "Quantisation"
+    },
+    {
+      "slug": "batch-processing",
+      "label": "Batch Processing"
+    },
+    {
+      "slug": "memory-management",
+      "label": "Memory Management"
+    },
+    {
+      "slug": "sglang",
+      "label": "SGLang"
+    },
+    {
+      "slug": "tensorrt-llm",
+      "label": "TensorRT-LLM"
+    },
+    {
+      "slug": "chunked-prefill",
+      "label": "Chunked Prefill"
+    },
+    {
+      "slug": "prefill-decode-disaggregation",
+      "label": "Prefill-Decode Disaggregation"
+    },
+    {
+      "slug": "gpu",
+      "label": "GPU"
+    },
+    {
+      "slug": "cuda",
+      "label": "CUDA"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "inference",
+      "label": "Inference"
+    },
+    {
+      "slug": "inference-serving",
+      "label": "Inference Serving"
+    },
+    {
+      "slug": "triton-inference-server",
+      "label": "Triton Inference Server"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "pipeline-parallelism",
+      "label": "Pipeline Parallelism"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-inference",

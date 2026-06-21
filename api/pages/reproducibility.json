@@ -148,6 +148,14 @@
       "label": "Benchmark Evaluation"
     },
     {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
+    },
+    {
       "slug": "data-provenance",
       "label": "Data Provenance"
     },

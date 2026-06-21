@@ -250,6 +250,10 @@
       "label": "Adobe Firefly"
     },
     {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
       "slug": "agent-memory",
       "label": "Agent Memory"
     },
@@ -266,12 +270,44 @@
       "label": "Checkpoints"
     },
     {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
       "slug": "context-engineering",
       "label": "Context Engineering"
     },
     {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "control-net",
+      "label": "controlnet"
     },
     {
       "slug": "feed-forward-network",
@@ -292,6 +328,10 @@
     {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
     },
     {
       "slug": "retrieval-augmented-generation-rag",

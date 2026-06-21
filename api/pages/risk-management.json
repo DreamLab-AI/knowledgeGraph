@@ -240,6 +240,10 @@
       "label": "BlackRock"
     },
     {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
       "slug": "compliance-control",
       "label": "Compliance Control"
     },

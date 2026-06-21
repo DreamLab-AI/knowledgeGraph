@@ -102,6 +102,14 @@
     {
       "slug": "classical-planning",
       "label": "Classical Planning"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
     }
   ]
 }

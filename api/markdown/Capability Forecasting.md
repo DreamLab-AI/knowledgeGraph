@@ -126,17 +126,17 @@ public:: true
   - implemented-in-layer:: [[Model Evaluation]]
 
 - ### Relationships
-  - is-subclass-of:: [[AI Governance]], [[Risk Assessment]]
-  - has-part:: [[Scaling Laws]], [[Benchmark Trend Analysis]], [[Emergent Capabilities]], [[Expert Elicitation]], [[Uncertainty Quantification]]
-  - requires:: [[Scaling Laws]], [[Evaluation benchmarks and leaderboards]], [[Model Evaluation]], [[Training Data]], [[Compute Budget]]
-  - enables:: [[Risk Assessment]], [[AI Safety]], [[Catastrophic Risk Assessment]], [[AI Regulation]], [[Responsible Scaling Policy]]
-  - implements:: [[Biological Anchors Model]], [[Expert Elicitation]], [[Prediction Markets]]
-  - depends-on:: [[Foundation Model]], [[Scaling Laws]], [[Evaluation benchmarks and leaderboards]], [[Compute Budget]]
-  - supports:: [[AI Governance]], [[AI Safety]], [[Catastrophic Risk Assessment]], [[AI Alignment]], [[Human Oversight]]
-  - uses:: [[Scaling Laws]], [[Model Evaluation]], [[Evaluation benchmarks and leaderboards]], [[Expert Elicitation]], [[Prediction Markets]], [[Benchmark Trend Analysis]]
-  - contrasts-with:: [[Emergent Capabilities]], [[Benchmark Saturation]]
-  - related-to:: [[Emergent Capabilities]], [[Capability Evaluation]], [[Foundation Model]], [[Alignment]], [[Responsible Scaling Policy]], [[Dangerous Capability Evaluation]], [[Transformative AI]], [[AI Timelines]], [[EpochAI]], [[Metaculus]]
-  - standardized-by:: [[NIST AI RMF]], [[EU AI Act]]
+  - is-subclass-of:: [[AI Governance]], [[Risk Assessment]], [[Anticipatory Governance]]
+  - has-part:: [[Scaling Laws]], [[Benchmark Trend Analysis]], [[Emergent Capabilities]], [[Expert Elicitation]], [[Uncertainty Quantification]], [[Threshold Estimation]], [[Prediction Markets]], [[Biological Anchors Model]]
+  - requires:: [[Scaling Laws]], [[Evaluation benchmarks and leaderboards]], [[Model Evaluation]], [[Training Data]], [[Compute Budget]], [[Foundation Model]]
+  - enables:: [[Risk Assessment]], [[AI Safety]], [[Catastrophic Risk Assessment]], [[AI Regulation]], [[Responsible Scaling Policy]], [[Dangerous Capability Evaluation]], [[Human Oversight]], [[Export Control]]
+  - implements:: [[Biological Anchors Model]], [[Expert Elicitation]], [[Prediction Markets]], [[Benchmark Trend Extrapolation]], [[Probabilistic Risk Assessment]]
+  - depends-on:: [[Foundation Model]], [[Scaling Laws]], [[Evaluation benchmarks and leaderboards]], [[Compute Budget]], [[Training Data]], [[Model Evaluation]]
+  - supports:: [[AI Governance]], [[AI Safety]], [[Catastrophic Risk Assessment]], [[AI Alignment]], [[Human Oversight]], [[Responsible AI]], [[EU AI Act]], [[Responsible Scaling Policy]]
+  - uses:: [[Scaling Laws]], [[Model Evaluation]], [[Evaluation benchmarks and leaderboards]], [[Expert Elicitation]], [[Prediction Markets]], [[Benchmark Trend Analysis]], [[Red Teaming]], [[Dangerous Capability Evaluation]]
+  - contrasts-with:: [[Emergent Capabilities]], [[Benchmark Saturation]], [[Reactive Risk Management]]
+  - related-to:: [[Emergent Capabilities]], [[Capability Evaluation]], [[Foundation Model]], [[Alignment]], [[Responsible Scaling Policy]], [[Dangerous Capability Evaluation]], [[Transformative AI]], [[AI Timelines]], [[EpochAI]], [[Metaculus]], [[AI Safety Level]], [[Compute Budget]], [[Test-Time Compute]], [[Benchmark Saturation]], [[METR]], [[Red Teaming]]
+  - standardized-by:: [[NIST AI RMF]], [[EU AI Act]], [[California SB53]]
 
 - ### Content
   ## Compositional Relationships (Components)
@@ -154,6 +154,10 @@ public:: true
         ObjectSomeValuesFrom(ai:hasPart ai:PredictionMarkets))
       SubClassOf(ai:CapabilityForecasting
         ObjectSomeValuesFrom(ai:hasPart ai:ThresholdEstimation))
+      SubClassOf(ai:CapabilityForecasting
+        ObjectSomeValuesFrom(ai:hasPart ai:BiologicalAnchorsModel))
+      SubClassOf(ai:CapabilityForecasting
+        ObjectSomeValuesFrom(ai:hasPart ai:TestTimeComputeForecasting))
   ## Dependency Relationships
       SubClassOf(ai:CapabilityForecasting
         ObjectSomeValuesFrom(ai:requires ai:ScalingLaws))
@@ -165,6 +169,10 @@ public:: true
         ObjectSomeValuesFrom(ai:requires ai:ComputeBudget))
       SubClassOf(ai:CapabilityForecasting
         ObjectSomeValuesFrom(ai:requires ai:TrainingData))
+      SubClassOf(ai:CapabilityForecasting
+        ObjectSomeValuesFrom(ai:requires ai:FoundationModel))
+      SubClassOf(ai:CapabilityForecasting
+        ObjectSomeValuesFrom(ai:dependsOn ai:DangerousCapabilityEvaluation))
   ## Capability Relationships
       SubClassOf(ai:CapabilityForecasting
         ObjectSomeValuesFrom(ai:enables ai:RiskAssessment))
@@ -177,7 +185,13 @@ public:: true
       SubClassOf(ai:CapabilityForecasting
         ObjectSomeValuesFrom(ai:enables ai:HumanOversight))
       SubClassOf(ai:CapabilityForecasting
-        ObjectSomeValuesFrom(ai:enables ai:AnticipatorGovernance))
+        ObjectSomeValuesFrom(ai:enables ai:AnticipatoryGovernance))
+      SubClassOf(ai:CapabilityForecasting
+        ObjectSomeValuesFrom(ai:enables ai:ResponsibleScalingPolicy))
+      SubClassOf(ai:CapabilityForecasting
+        ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
+      SubClassOf(ai:CapabilityForecasting
+        ObjectSomeValuesFrom(ai:supports ai:ExportControl))
   ## Implementation Relationships
       SubClassOf(ai:CapabilityForecasting
         ObjectSomeValuesFrom(ai:implements ai:BiologicalAnchorsModel))
@@ -187,6 +201,12 @@ public:: true
         ObjectSomeValuesFrom(ai:implements ai:PredictionMarkets))
       SubClassOf(ai:CapabilityForecasting
         ObjectSomeValuesFrom(ai:implements ai:BenchmarkTrendExtrapolation))
+      SubClassOf(ai:CapabilityForecasting
+        ObjectSomeValuesFrom(ai:uses ai:ScalingLaws))
+      SubClassOf(ai:CapabilityForecasting
+        ObjectSomeValuesFrom(ai:uses ai:ModelEvaluation))
+      SubClassOf(ai:CapabilityForecasting
+        ObjectSomeValuesFrom(ai:uses ai:RedTeaming))
   ## Reduction Relationships
       SubClassOf(ai:CapabilityForecasting
         ObjectSomeValuesFrom(ai:reducesTo ai:ScalingLaws))
@@ -194,6 +214,10 @@ public:: true
         ObjectSomeValuesFrom(ai:reducesTo ai:ThresholdEstimation))
       SubClassOf(ai:CapabilityForecasting
         ObjectSomeValuesFrom(ai:reducesTo ai:UncertaintyQuantification))
+      SubClassOf(ai:CapabilityForecasting
+        ObjectSomeValuesFrom(ai:partOf ai:AIGovernance))
+      SubClassOf(ai:CapabilityForecasting
+        ObjectSomeValuesFrom(ai:partOf ai:AISafety))
 
   ## About
 
@@ -287,17 +311,59 @@ public:: true
 
   ## Use Cases / Major Families
 
-  **Responsible scaling policies (RSPs):** AI labs use internal capability forecasting to set the schedule and criteria for upgrading their safety measures as capability thresholds are approached. Anthropic's RSP defines training-run triggers (compute scale approaching a threshold) and evaluation triggers (benchmark performance approaching a dangerous-capability threshold) that activate additional safety evaluation requirements. Capability forecasting enables calculation of: "given planned compute scaling, when will the next training run plausibly hit the ASL-3 threshold?" — providing lead time to prepare the required safety mitigations before deployment. OpenAI's Preparedness Framework (updated April 2025) similarly uses capability forecasts to schedule ahead of evaluations against "critical" thresholds (defined as capabilities enabling mass casualties or billions of dollars in economic damage). California's SB53 (signed September 2025) requires all large frontier AI developers to publish and adhere to frameworks describing how dangerous capabilities are assessed and what precautions trigger when thresholds are crossed — effectively legislating the capability forecasting and threshold-management function that RSPs implement voluntarily.
+  **1. Responsible scaling policies (RSPs)**
 
-  **Regulatory compute thresholds:** The EU AI Act uses compute-based capability thresholds (originally set at 10^25 floating-point operations) as a proxy for frontier model status that triggers enhanced regulatory requirements. Capability forecasting informs where to set these thresholds and how they should evolve as the capability frontier advances, ensuring they remain calibrated to actual capability levels rather than becoming obsolete. The UK AI Security Institute has worked with DSIT to inform the forthcoming UK AI Bill's approach to capability thresholds, expected to draw on AISI's empirical evaluation findings and trend extrapolations from the Frontier AI Trends Report.
+  AI labs use internal capability forecasting to set the schedule and criteria for upgrading safety measures:
+  - Anthropic's RSP defines training-run triggers (compute scale approaching a threshold) and evaluation triggers (benchmark performance approaching a dangerous-capability threshold) that activate additional safety evaluation requirements.
+  - Capability forecasting enables calculation of: "given planned compute scaling, when will the next training run plausibly hit the ASL-3 threshold?" — providing lead time to prepare the required safety mitigations before deployment.
+  - OpenAI's Preparedness Framework (updated April 2025) similarly uses capability forecasts to schedule evaluations against "Critical" thresholds (capabilities enabling mass casualties or billions of dollars in economic damage).
+  - Google DeepMind's Frontier Safety Framework defines analogous capability classification and monitoring requirements.
+  - Meta's Frontier AI Safety framework follows similar structures for its Llama model family.
+  - California SB53 (September 2025) effectively legislates the capability forecasting and threshold-management function that RSPs implement voluntarily.
 
-  **Export control and compute governance:** US Bureau of Industry and Security (BIS) rules restricting export of high-performance AI accelerators to adversarial nations use compute thresholds that require capability forecasting to calibrate. If the threshold is set too high relative to capability, controls are ineffective; too low and they impede legitimate research. EpochAI's compute tracking database is a key input to these calibrations. International discussions on AI compute governance through the G7 Hiroshima AI Process, the OECD AI Policy Observatory, and emerging multilateral AI governance bodies all reference capability forecasting to justify and calibrate compute control proposals.
+  **2. Regulatory compute thresholds**
 
-  **Red-teaming scheduling and evaluation prioritisation:** Safety engineering teams use capability forecasts to prioritise which capability domains require red-teaming before the next training run. If a capability forecast indicates biological synthesis assistance will cross an uplift threshold within two training generations, this domain receives priority evaluation resources. METR's evaluation pipeline operationalises this by tracking capability growth in domains including autonomous cyberattack, biological synthesis assistance, and long-horizon autonomous action, providing trend data that informs where to concentrate safety evaluation effort.
+  - EU AI Act: uses compute-based capability thresholds (originally 10^25 floating-point operations) as proxy for frontier model status triggering enhanced regulatory requirements.
+  - Capability forecasting informs where to set these thresholds and how they should evolve as the capability frontier advances.
+  - AISI has worked with DSIT to inform the forthcoming UK AI Bill's approach to capability thresholds, drawing on Frontier AI Trends Report empirical findings and trend extrapolations.
+  - NIST AI RMF: provides the US voluntary baseline for AI risk management including capability-sensitive risk classification.
 
-  **Academic and philanthropic resource allocation:** Foundations including Open Philanthropy, Survival and Flourishing Fund, and the Arc Institute use capability forecasting as an input to grant-making strategies for AI safety research. If capability forecasts suggest transformative AI within ten years, safety research funding urgency is correspondingly high. The major AI safety funding surge of 2023–2025 (Anthropic $7.3B Series E, 2024; UK government £100M AI Safety Research Grant programme; US AI Safety Institute budget expansion) reflects institutions acting on capability forecasts that compressed expected timelines substantially.
+  **3. Export control and compute governance**
 
-  **Insurance, financial risk, and scenario planning:** Financial institutions, re-insurance companies, and national risk registries are beginning to incorporate AI capability forecasts into scenario planning. The potential for AI to rapidly automate large fractions of knowledge work, enable sophisticated cyber fraud, or accelerate technology competition creates economic risks that require forward-looking capability assessment. Lloyd's of London and Swiss Re have begun developing AI risk modelling frameworks that incorporate capability forecasting as a core input, analogous to climate scenario analysis under TCFD recommendations.
+  - US Bureau of Industry and Security (BIS) rules restricting export of high-performance AI accelerators use compute thresholds requiring capability forecasting to calibrate.
+  - Setting thresholds too high relative to capability makes controls ineffective; too low impedes legitimate research.
+  - EpochAI's compute tracking database is a key input to these calibrations, providing the most comprehensive public record of AI training compute trends.
+  - International discussions on AI compute governance through the G7 Hiroshima AI Process, OECD AI Policy Observatory, and emerging multilateral AI governance bodies all reference capability forecasting.
+
+  **4. Red-teaming scheduling and evaluation prioritisation**
+
+  - Safety engineering teams use capability forecasts to prioritise which capability domains require red-teaming before the next training run.
+  - If a capability forecast indicates biological synthesis assistance will cross an uplift threshold within two training generations, this domain receives priority evaluation resources.
+  - METR's evaluation pipeline tracks capability growth in domains including autonomous cyberattack, biological synthesis assistance, and long-horizon autonomous action.
+  - This trend data informs where to concentrate safety evaluation effort and which benchmarks need development.
+
+  **5. Academic and philanthropic resource allocation**
+
+  - Open Philanthropy, Survival and Flourishing Fund, and the Arc Institute use capability forecasting as input to grant-making strategies for AI safety research.
+  - Compressed capability timelines directly justify increased safety research urgency and investment.
+  - The major AI safety funding surge of 2023–2025 reflects institutions acting on capability forecasts that compressed expected timelines substantially:
+    - Anthropic raised $7.3B Series E (2024)
+    - UK government committed £100M AI Safety Research Grant programme
+    - US AI Safety Institute budget expanded
+    - Open Philanthropy's AI safety grantmaking reached approximately $200M per year by 2025
+
+  **6. Insurance, financial risk, and scenario planning**
+
+  - Financial institutions, re-insurance companies, and national risk registries are beginning to incorporate AI capability forecasts into scenario planning.
+  - AI-enabled risks to scenario planning include: rapid knowledge-work automation, sophisticated cyber fraud, technology competition acceleration, systemic financial AI risk.
+  - Lloyd's of London and Swiss Re have begun developing AI risk modelling frameworks incorporating capability forecasting as a core input, analogous to climate scenario analysis under TCFD recommendations.
+  - National risk registries (UK National Risk Register, US National Risk Management Centre) are adding AI capability trajectory to their horizon-scanning inputs.
+
+  **7. Scientific impact forecasting**
+
+  - An emerging use case applying capability forecasting to scientific research acceleration timelines: when will AI systems reach capability thresholds for autonomous drug discovery, materials science synthesis pathway prediction, or mathematical theorem proving?
+  - AlphaFold 2 (2020) and AlphaFold 3 (2024) provided the most dramatic demonstrations of AI crossing scientific capability thresholds with transformative research impact.
+  - Capability forecasting for scientific AI is methodologically distinct from safety-focused forecasting because the target is benefit (capability crossing a productivity threshold) rather than risk (capability crossing a harm threshold), but uses the same underlying scaling law and benchmark trend methodology.
 
   ## Academic Context
 
@@ -409,6 +475,37 @@ public:: true
 
   **Societal impact capability thresholds:** Alongside safety-critical capability thresholds (CBRN uplift, cyberattack autonomy), governance bodies increasingly need capability forecasts for socio-economic thresholds: when will AI automate 10%, 50%, 90% of software engineering tasks? When will AI systems be capable of autonomous scientific research at PhD level or above? When will AI-generated media reach the point where synthetic and authentic content are indistinguishable at population scale? These thresholds are relevant to labour market policy, education system design, and democratic integrity, requiring capability forecasting to engage with social science methodology alongside its technical toolkit.
 
+  ## Benchmark Datasets and Evaluation Infrastructure
+
+  **Training compute tracking:**
+  - **EpochAI Training Compute Database**: the most comprehensive public database of AI training runs, tracking compute (FLOPs), parameter counts, training data volume, training duration, and reported benchmark performance. Used as the primary data source for scaling law exponent estimation and compute trend extrapolation. As of mid-2026, the database contains over 800 documented training runs spanning 2010–2026.
+  - **MLPerf Training Benchmarks**: standardised training compute benchmarks enabling comparison of hardware efficiency across AI accelerator generations, supporting capability-per-compute-dollar trend estimation.
+
+  **Downstream performance benchmarks (capability indicators):**
+  - **MMLU (Massive Multitask Language Understanding)**: 57-subject academic knowledge benchmark; used as a general capability proxy; widely saturated by frontier models by early 2025.
+  - **GPQA Diamond**: graduate-level scientific reasoning across biology, chemistry, and physics; designed to be PhD-level difficult; being saturated by leading models by mid-2025.
+  - **AIME (American Invitational Mathematics Examination)**: competition mathematics; saturated by leading reasoning models by early 2025.
+  - **HumanEval / SWE-Bench Verified**: software engineering capability; SWE-Bench Verified forecast to be saturated in 2026 with strong elicitation.
+  - **BIG-Bench Hard**: collection of 23 "beyond the scaling law" tasks requiring reasoning; used to test whether models exhibit genuine reasoning versus pattern matching.
+  - **HELM (Holistic Evaluation of Language Models)**: multidimensional evaluation framework measuring accuracy, calibration, robustness, fairness, and efficiency across 42 scenarios.
+
+  **Autonomy and agent capability benchmarks:**
+  - **METR RE-Bench (Research Engineering Benchmark)**: tasks requiring weeks of skilled research engineering work; designed to remain challenging beyond 2026; forecast saturation in 2027.
+  - **SWE-Bench**: software engineering tasks derived from real GitHub issues; measures end-to-end capability to resolve complex, multi-file bugs; forecast saturation late 2026.
+  - **METR Task Time Horizon metric**: not a benchmark in the traditional sense but an empirically measured capability indicator tracking the longest autonomous task a model can reliably complete; used by METR as the primary capability forecasting metric.
+  - **AgentBench**: standardised evaluation of agent capabilities across operating system interaction, database management, knowledge graph navigation, and web browsing tasks.
+  - **WebArena**: benchmark for autonomous web navigation and task completion on realistic browser environments.
+
+  **Dangerous capability evaluation benchmarks:**
+  - **WMDP (Weapons of Mass Destruction Proxy)**: measures knowledge relevant to CBRN weapon development across biological, chemical, and cybersecurity domains; used by Anthropic, AISI, and METR for ASL-3 evaluation.
+  - **Virology Capabilities Test (VCT)**: expert-virologist-validated assessment of biological uplift; used by AISI for biological dangerous capability evaluation.
+  - **CyberSecEval / InspectCyber**: automated cybersecurity capability evaluation; part of AISI's Inspect framework and Meta's CyberSecEval suite.
+  - **HarmBench**: standardised automated red teaming infrastructure with 400+ harmful behaviour test cases across 6 semantic categories.
+
+  **Forecasting capability benchmarks:**
+  - **ForecastBench (ICLR 2025)**: dynamic benchmark of AI forecasting capability using real prediction questions with known outcomes; used to evaluate whether AI systems themselves can contribute to capability forecasting.
+  - **AI Forecasting Accuracy Database**: maintained by Forecasting Research Institute tracking human and AI forecasting accuracy on technology questions over time.
+
   ## Key Terminology
 
   - **Scaling Law:** A power-law relationship between model training resources (compute, parameters, data) and performance metrics (typically cross-entropy loss), forming the primary quantitative tool of capability forecasting.
@@ -421,6 +518,33 @@ public:: true
   - **Test-Time Compute:** Compute used during inference (generation) rather than training, including extended chain-of-thought reasoning, tree-of-thought search, and tool use; increasingly important as a capability growth driver independent of pre-training scale.
   - **Biological Anchors:** A reference class forecasting approach to AI timelines that grounds compute requirement estimates in biological facts about brains and evolution, providing an alternative to pure trend extrapolation.
   - **Task Completion Time Horizon:** METR's empirical metric measuring the longest autonomous task a frontier model can reliably complete without human intervention, used as a leading indicator of AI autonomy capability and tracked as a proxy for capability level across model generations.
+
+  ## Key Research Institutions and Organisations
+
+  **Technical forecasting and evaluation organisations:**
+  - **EpochAI**: non-profit research institute maintaining the most comprehensive public database of AI training runs and benchmark performance; publishes systematic capability trend analyses and the GATE transformative AI timeline model. Primary source of empirical data for scaling-law-based capability forecasting.
+  - **METR (Model Evaluation and Threat Research)**: pioneered the task completion time horizon metric and the most comprehensive public autonomy evaluation suite; developed the ControlArena framework for agentic AI control testing; conducts pre-deployment evaluations for major AI labs under information-sharing agreements with AISI.
+  - **Samotsvety Forecasting Group**: high-accuracy team of superforecasters applying structured probabilistic reasoning to AI capability timelines; produces regularly updated AGI timeline estimates that are among the most systematically calibrated public forecasts available.
+  - **Metaculus**: open forecasting platform aggregating AI capability timeline predictions from thousands of registered forecasters with calibration tracking; maintains the most widely-cited community AI timeline estimates.
+  - **Forecasting Research Institute**: supports rigorous forecasting methodology development including structured deliberation and calibration for AI capability predictions.
+  - **Apollo Research**: specialises in evaluation of deception, situational awareness, and self-preservation behaviours in frontier models — capabilities most relevant to long-horizon capability forecasting.
+
+  **AI laboratory internal forecasting teams:**
+  - **Anthropic RSP team**: maintains internal capability forecasting infrastructure for ASL threshold monitoring; publishes voluntary RSP updates with threshold definitions informed by capability trend projections.
+  - **OpenAI Preparedness team**: conducts pre-deployment capability evaluation and maintains the Preparedness Framework threshold classifications; updates capability risk scores as frontier models are developed.
+  - **Google DeepMind Safety team**: maintains the Frontier Safety Framework and conducts dangerous capability evaluations; publishes academic work on evaluation methodology including Phuong et al. (2024).
+
+  **Government and policy bodies:**
+  - **UK AI Security Institute (AISI)**: the primary government body conducting systematic capability trend assessment; publishes the Frontier AI Trends Report; develops and maintains the Inspect evaluation framework.
+  - **US NIST AI Safety Institute**: US counterpart to AISI; co-evaluates frontier models under bilateral information-sharing agreement; developed the NIST AI RMF framework used for capability-sensitive risk classification.
+  - **EU AI Office**: responsible for enforcing EU AI Act general-purpose AI model provisions including dangerous capability evaluation; coordinates with AI Safety Institute network on evaluation methodology.
+  - **Long-Term Resilience Centre (UK)**: publishes policy recommendations for incorporating capability forecasting into UK AI legislation; primary policy advocacy organisation for preparedness-framework approaches.
+
+  **Academic centres:**
+  - **Cambridge Centre for the Study of Existential Risk (CSER)**: applies structured expert elicitation to AI risk timelines; has contributed to UK government's capability assessment methodology; operates the MPhil in Global Risk and Resilience.
+  - **Leverhulme Centre for the Future of Intelligence (CFI, Cambridge)**: addresses capability forecasting for societal impact thresholds beyond safety-critical capabilities.
+  - **Alan Turing Institute / CETaS**: national UK AI research body; published the International AI Safety Report 2026 and maintains the most systematic UK-based AI capability trend analysis.
+  - **Oxford Global Priorities Institute**: continues long-horizon AI risk research following FHI's 2024 closure; contributes to AI existential risk probability estimation and policy implications.
 
   ## Research and Literature
 
@@ -453,7 +577,59 @@ public:: true
   27. CETaS / Alan Turing Institute (2026). International AI Safety Report 2026. Centre for Emerging Technology and Security.
   28. Shulman, C. (2022). Forecasting AI Progress: Perspectives on Timelines to Transformative AI. Open Philanthropy Discussion.
 
+  ## Why Capability Forecasting Is Hard — Core Challenges
+
+  The field faces several structural challenges that distinguish it from other quantitative forecasting domains:
+
+  **1. The emergence problem:**
+  - Smooth loss scaling does not guarantee smooth capability scaling on specific tasks.
+  - Phase transitions in benchmark performance (the "emergent abilities" phenomenon) create cliff-edge risks that scaling law extrapolation misses.
+  - Debate about whether emergence is real or metric-artefactual (Schaeffer et al., 2023) remains unresolved.
+  - Even if individual capabilities scale smoothly, capability thresholds relevant to governance (such as "provides meaningful CBRN uplift") may appear to be discontinuous.
+
+  **2. The benchmark saturation treadmill:**
+  - Frontier models exhaust evaluation benchmarks faster than new ones can be validated and deployed.
+  - This creates episodic blind spots where capability growth continues but measurement tools are temporarily saturated.
+  - The resolution — harder benchmarks — introduces its own biases as task difficulty selection affects apparent capability growth rates.
+  - Automated benchmark generation (using AI to create AI evaluations) creates circularity concerns about evaluation validity.
+
+  **3. The test-time compute complication:**
+  - Training-time compute is the traditional forecasting variable; test-time compute is increasingly the capability driver.
+  - Test-time compute scaling is harder to forecast because it depends on inference economics (GPU cost per token), prompting strategy, and task-specific search depth — variables that change independently of model weights.
+  - The same model weights can exhibit dramatically different capability levels depending on inference settings, making single-point capability assessments misleading.
+
+  **4. The elicitation gap:**
+  - Benchmarks measure capabilities under specific elicitation conditions (prompt format, number of few-shot examples, chain-of-thought encouragement).
+  - True model capability may substantially exceed benchmark-measured capability under optimal elicitation.
+  - METR explicitly excluded high-elicitation scenarios from some forecasts, noting the estimates might be too conservative.
+  - As elicitation techniques improve, measured capabilities increase even without model changes, complicating time-series trend analysis.
+
+  **5. The out-of-distribution generalisation uncertainty:**
+  - Scaling laws are fitted on in-distribution evaluation; they may not generalise to novel capability domains or task types not represented in training benchmarks.
+  - Future capability milestones may require qualitatively different cognitive operations that current scaling law exponents do not anticipate.
+  - Architecture discontinuities (e.g., the shift from pure language model to multimodal model to agent system) can break historical scaling law fits.
+
+  **6. The recursive improvement discontinuity:**
+  - If AI systems become sufficiently capable of AI research itself, capability trajectories may accelerate in ways that no backward-looking extrapolation can predict.
+  - METR's simpler AI timelines model (February 2026) projects 99% AI R&D automation around 2032 — which would create a recursive improvement dynamic qualitatively different from the linear extrapolation paradigm.
+  - At that point, capability forecasting based on human-driven compute scaling would need to be replaced by models of AI-recursive capability growth, which are inherently more uncertain.
+  - This represents the ultimate limit of scaling-law-based capability forecasting methodology: beyond the AI R&D automation threshold, the extrapolation machinery itself breaks down.
+  - The governance implication is that safety measures and regulatory frameworks need to be established before this threshold is reached, since regulatory frameworks designed for human-pace AI development may be inadequate for AI-recursive capability growth.
+
+  ## Relationship to Adjacent Concepts
+
+  - **vs. [[Capability Evaluation]]**: Capability evaluation measures what current models can do; capability forecasting projects what future models will be able to do. Evaluation is backward-looking (empirical); forecasting is forward-looking (predictive). Both use the same benchmark infrastructure, but forecasting adds the extrapolation layer. Forecasting also involves probability distributions over uncertain futures, whereas evaluation produces point measurements.
+  - **vs. [[Emergent Capabilities]]**: Emergent capabilities are the principal challenge for smooth capability forecasting — they represent the potential for non-smooth, discontinuous capability jumps that extrapolation from prior trends cannot predict. Capability forecasting must treat emergence as a fundamental uncertainty rather than a predictable phenomenon. The debate between Wei et al. (2022) and Schaeffer et al. (2023) on whether emergence is "real" or metric-artefactual is thus directly consequential for capability forecasting methodology.
+  - **vs. [[Scaling Laws]]**: Scaling laws are the primary technical tool of capability forecasting for the training-time compute dimension. Capability forecasting extends scaling laws by applying them to governance-relevant downstream task performance rather than abstract loss metrics. It also extends beyond scaling laws to incorporate test-time compute, architectural innovations, and elicitation effects that scaling laws do not capture.
+  - **vs. [[Catastrophic Risk Assessment]]**: Capability forecasting enables catastrophic risk assessment by projecting when dangerous capability thresholds will be reached; catastrophic risk assessment consumes capability forecast outputs to set risk management timelines. They are complementary components of anticipatory AI governance — capability forecasting provides the "when" and catastrophic risk assessment provides the "how bad." The AISI Frontier AI Trends Report combines both: empirical capability trend measurement (capability forecasting) and assessment of which capabilities matter for harm (catastrophic risk assessment).
+  - **vs. [[Responsible Scaling Policy]]**: RSPs operationalise capability forecasting for AI lab governance, defining the specific thresholds and safety measures that capability forecasts are used to schedule preparation for. An RSP without capability forecasting cannot anticipate when thresholds will be crossed; capability forecasting without an RSP lacks the institutional mechanism to act on forecasts.
+  - **vs. [[AI Timelines]]**: AI timelines research is the long-horizon variant of capability forecasting focused on transformative or general AI milestones decades out; near-term capability forecasting focuses on specific benchmark saturations and dangerous capability thresholds on a months-to-years timescale. The two traditions share forecasting methodology (scaling law extrapolation, expert elicitation, biological anchors) but differ in time horizon, purpose, and the specificity of the capability targets they project.
+  - **vs. [[Model Evaluation]]**: Model evaluation provides the empirical data inputs for capability forecasting — benchmark scores, autonomy task completion rates, elicitation-controlled capability measurements. Capability forecasting takes these empirical inputs and extrapolates forward. As evaluation frameworks improve (harder benchmarks, better elicitation protocols), the quality of capability forecasts improves correspondingly.
+  - **vs. [[AI Safety Level]]**: AI Safety Levels (ASLs) are the operationalisation of dangerous capability thresholds that capability forecasting projects. Capability forecasting tells you "when will we reach ASL-3?"; the ASL framework tells you "what does reaching ASL-3 mean and what must be done?" The two concepts are tightly coupled in frontier AI lab governance: RSPs reference ASL thresholds; capability forecasting projects ASL timelines; safety engineering prepares the required mitigations; evaluation gates verify threshold status before deployment.
+  - **vs. [[Foundation Model]]**: Foundation models are the subject of capability forecasting — the systems whose future capabilities are being projected. Capability forecasting helps determine which foundation model training runs require dangerous capability evaluation before deployment, and at what point in the scaling trajectory new safety measures must be prepared.
+  - **vs. [[Expert Elicitation]]**: Expert elicitation is one of the primary methods within capability forecasting, providing probabilistic timeline estimates from domain experts as an alternative or complement to quantitative scaling law extrapolation. Forecasting organisations including EpochAI and Samotsvety specifically synthesise expert elicitation with quantitative extrapolation to produce calibrated forecasts that neither method could achieve alone.
+
 - ### Provenance
-  - sources:: Kaplan et al. 2020 Scaling Laws (arXiv:2001.08361); Hoffmann et al. 2022 Chinchilla (arXiv:2203.15556); Wei et al. 2022 Emergent Abilities; Cotra 2022 Biological Anchors (Open Philanthropy); METR Time Horizons Report (March 2025); AISI Frontier AI Trends Report (December 2025); EpochAI epoch.ai/topics/future-of-ai; arXiv:2502.15850 Forecasting Frontier LM Agent Capabilities; Samotsvety AI Futures Update (January 2026); CETaS International AI Safety Report 2026; arxiv.org/abs/2511.05526 Emergency Response Catastrophic AI Risk; arxiv.org/pdf/2505.21664 AI Reliability Research Priorities
+  - sources:: Kaplan et al. 2020 Scaling Laws (arXiv:2001.08361); Hoffmann et al. 2022 Chinchilla (arXiv:2203.15556); Wei et al. 2022 Emergent Abilities; Cotra 2022 Biological Anchors (Open Philanthropy); METR Time Horizons Report (March 2025); AISI Frontier AI Trends Report (December 2025); EpochAI epoch.ai/topics/future-of-ai; arXiv:2502.15850 Forecasting Frontier LM Agent Capabilities; Samotsvety AI Futures Update (January 2026); CETaS International AI Safety Report 2026; arxiv.org/abs/2511.05526 Emergency Response Catastrophic AI Risk; arxiv.org/pdf/2505.21664 AI Reliability Research Priorities; arXiv:2406.04391 Predicting Downstream Capabilities; ForecastBench ICLR 2025; metr.org/notes METR Simpler Timelines Model
   - migration-date:: 2026-06-21T00:00:00Z
   - attributedTo:: did:nostr:enrichment-swarm

@@ -138,9 +138,17 @@
       SubClassOf(ai:ChainOfThoughtPrompting
         ObjectSomeValuesFrom(ai:bridgesTo ai:NeuroSymbolicAI))
       SubClassOf(ai:ChainOfThoughtPrompting
+        ObjectSomeValuesFrom(ai:bridgesTo ai:SymbolicAI))
+      SubClassOf(ai:ChainOfThoughtPrompting
         ObjectSomeValuesFrom(ai:contrastsWith ai:StandardPrompting))
       SubClassOf(ai:ChainOfThoughtPrompting
         ObjectSomeValuesFrom(ai:contrastsWith ai:DirectAnswerPrompting))
+      SubClassOf(ai:ChainOfThoughtPrompting
+        ObjectSomeValuesFrom(ai:supports ai:LanguageModelAlignment))
+      SubClassOf(ai:ChainOfThoughtPrompting
+        ObjectSomeValuesFrom(ai:relatedTo ai:ChainOfThoughtReasoning))
+      SubClassOf(ai:ChainOfThoughtPrompting
+        ObjectSomeValuesFrom(ai:relatedTo ai:AIAgent))
 
   ## About
     Chain-of-thought prompting was formally characterised and named by Jason Wei, Xuezhi Wang, Dale Schuurmans, Maarten Bosma, Brian Ichter, Fei Xia, Ed Chi, Quoc Le, and Denny Zhou, all at Google Brain, in the paper "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models" presented at NeurIPS 2022 (arXiv:2201.11903, submitted January 2022). The paper demonstrated through controlled experiments on three large language models — PaLM 540B, GPT-3, and LaMDA-137B — that inserting a small number of worked-out reasoning demonstrations into a prompt substantially improved accuracy on arithmetic word problems, commonsense reasoning, and symbolic manipulation benchmarks. On GSM8K (grade-school maths), prompting PaLM 540B with just 8 chain-of-thought exemplars raised accuracy from roughly 18% (standard prompting) to over 58%, surpassing even fine-tuned GPT-3 with a verifier. The paper's crucial supplementary finding — that CoT gains were near-negligible for models below approximately 62B parameters — led the authors to frame CoT as an [[Emergent Capabilities|emergent capability]], a qualitative threshold unlocked by scale.
@@ -312,6 +320,23 @@
 
     **Scale Thresholds in Practice:** Empirical surveys (Sprague et al., 2024, "To CoT or not to CoT?") confirmed that CoT provides the largest improvements on mathematical and symbolic reasoning tasks but provides negligible or even negative gains on simple factual recall tasks, classification tasks, and tasks well-solved by base models. This suggests that CoT should be selectively applied based on estimated task complexity, not uniformly applied to all queries — a principle embodied in modern adaptive thinking budget systems.
 
+  ## Exemplar Design and Prompt Engineering Practice
+    The design of effective chain-of-thought prompts — particularly for few-shot exemplar CoT — requires deliberate engineering decisions that substantially affect performance:
+
+    - **Exemplar Count (k):** Wei et al. (2022) used 8 exemplars for arithmetic and 6 for commonsense tasks. Diminishing returns typically appear above k=8; performance plateaus or degrades with k>12 due to context length constraints and reduced diversity. For zero-shot CoT, k=0 but prompt wording matters substantially.
+
+    - **Exemplar Complexity:** Fu et al. (2022, complexity-based prompting) demonstrated that selecting exemplars with the highest reasoning complexity (most reasoning steps) improves CoT performance more than selecting by difficulty or representativeness alone. Harder exemplars provide richer demonstrations of multi-step decomposition.
+
+    - **Exemplar Ordering:** Lu et al. (2022, "Fantastically Ordered Prompts") showed that exemplar ordering can cause 10–15 percentage point accuracy swings on certain benchmarks; this is a form of in-context learning sensitivity. Common heuristics: order from simplest to most complex (matching least-to-most intuitions), or randomly shuffle and take the ensemble over multiple orderings.
+
+    - **Step Format:** Steps can be expressed as complete sentences ("First, I need to calculate the total distance."), numbered lists, equation chains, or pseudocode. The format that best matches the model's pretraining data for similar problem types tends to perform best. For mathematical problems, intermediate equation forms (LaTeX-style or Python-style) often outperform natural language steps.
+
+    - **Trigger Phrases for Zero-Shot CoT:** "Let's think step by step" is the canonical trigger (Kojima et al., 2022), but alternative phrasings ("Let's work through this carefully", "Let me think through this systematically", "Approach this step-by-step") can outperform it on specific task types. Task-specific triggers tend to be more effective than generic ones for specialised domains.
+
+    - **Separation of Reasoning and Answer:** Both few-shot and zero-shot CoT typically use a two-stage format where the first stage generates the reasoning chain and the second stage extracts the final answer ("Therefore, the answer is..."). This separation prevents the reasoning chain from interfering with the final answer format expected by automated evaluation systems.
+
+    - **Automatic Prompt Optimisation (APO):** Connecting to [[Automatic Prompt Optimisation]], systems like OPRO and ProTeGi automate the search for optimal CoT prompt formats by treating prompt engineering as an optimisation problem over natural language space. These methods can outperform manually engineered CoT prompts while reducing human engineering effort.
+
   ## Standards, Governance, and Regulatory Context
     Chain-of-Thought Prompting intersects with multiple governance and regulatory frameworks, making it relevant not only as an AI capability but as a compliance mechanism:
 
@@ -371,6 +396,21 @@
     - **Monitorability:** The property that externally visible reasoning traces enable auditing for safety-relevant reasoning patterns; central to OpenAI's 2025 CoT monitorability framework.
     - **CoT Verification:** Using a separate model (a PRM or critic) to evaluate the correctness of individual reasoning steps; enables guided search and fine-grained RL supervision.
     - **Emergent Capability:** A model ability absent at small scale and appearing above a parameter-scale threshold; CoT prompting benefit is the paradigmatic example of an emergent capability in large language models.
+
+  ## Integration with Retrieval-Augmented Generation and Tool Use
+    Chain-of-Thought Prompting and [[Retrieval-Augmented Generation]] (RAG) are complementary rather than competing approaches. Their integration defines a major application pattern for production AI systems:
+
+    - **CoT as Retrieval Planning:** Rather than issuing a single RAG retrieval query per question, CoT-structured retrieval pipelines use reasoning chains to decompose multi-hop questions into a sequence of sub-queries, each targeting a specific piece of evidence. The model reasons: "To answer this, I first need to know X. [Retrieve X]. Now I need Y. [Retrieve Y]. Combining X and Y gives..." This iterative retrieval-and-reasoning pattern substantially outperforms single-pass RAG on [[Multi-Hop Reasoning]] benchmarks (HotpotQA, MuSiQue).
+
+    - **CoT for Source Attribution:** In RAG systems, CoT reasoning makes source attribution explicit: each intermediate reasoning step can reference the retrieved document it draws from, producing an auditable chain from question to retrieved evidence to inference to answer. This is increasingly required in legal and medical deployments where the chain of evidence must be auditable.
+
+    - **Tool-Augmented CoT:** The ReAct pattern extends CoT by inserting tool-call actions (web search, calculator, code execution, database query, API call) at any point in the reasoning chain. The tool result becomes an observation in the reasoning trace, grounding subsequent steps in verified external information. This addresses hallucination in sub-computations.
+
+    - **CoT as Orchestration Language in Multi-Agent Systems:** In multi-agent [[LLM Orchestration]] systems, CoT reasoning traces serve as the primary communication protocol between agents. An orchestrator agent decomposes a task via CoT, communicates sub-task assignments (with reasoning justification) to specialist agents, receives CoT-structured results, and verifies consistency across sub-results. The visibility of CoT traces enables human oversight of the orchestration process.
+
+    - **RAG vs. Extended CoT Trade-off:** For knowledge-intensive tasks, practitioners face a trade-off between retrieving more external knowledge (RAG) vs. eliciting more internal reasoning (extended CoT). Extended CoT can "reason from knowledge" encoded in model weights; RAG grounds reasoning in up-to-date external documents. Hybrid systems use CoT to decide when and what to retrieve, then use retrieved content as grounding for subsequent reasoning steps.
+
+    - **Hybrid Architectures in Production:** Systems like Perplexity Deep Research, OpenAI Deep Research, and Gemini Deep Research (all launched 2024–2025) implement hybrid CoT+RAG architectures: CoT plans the research agenda (what questions to answer, in what order), RAG executes targeted web searches and document retrieval at each step, and CoT synthesises retrieved evidence into a coherent report. These pipelines can span 20–100 reasoning and retrieval steps for complex research queries.
 
   ## Research & Literature
     1. Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q., & Zhou, D. (2022). Chain-of-Thought Prompting Elicits Reasoning in Large Language Models. *NeurIPS 2022*. arXiv:2201.11903.

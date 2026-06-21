@@ -148,6 +148,14 @@
       "label": "Common Crawl"
     },
     {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "control-net",
+      "label": "controlnet"
+    },
+    {
       "slug": "nvidia-isaac-sim",
       "label": "NVIDIA Isaac Sim"
     },

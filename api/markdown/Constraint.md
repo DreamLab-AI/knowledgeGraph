@@ -10,37 +10,59 @@ public:: true
   "title": "Constraint",
   "vc:public": true,
   "vc:outboundWikilinks": [
-    {
-      "@id": "urn:visionflow:owl:class:artificial-intelligence",
-      "vc:label": "Artificial Intelligence"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:blockchain",
-      "vc:label": "Blockchain"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:digital-twin",
-      "vc:label": "Digital Twin"
-    }
+    {"@id": "urn:visionflow:owl:class:artificial-intelligence", "vc:label": "Artificial Intelligence"},
+    {"@id": "urn:visionflow:owl:class:blockchain", "vc:label": "Blockchain"},
+    {"@id": "urn:visionflow:owl:class:digital-twin", "vc:label": "Digital Twin"},
+    {"@id": "urn:visionflow:linked:objective", "vc:label": "Objective"},
+    {"@id": "urn:visionflow:linked:model", "vc:label": "Model"},
+    {"@id": "urn:visionflow:linked:formal-verification", "vc:label": "Formal Verification"},
+    {"@id": "urn:visionflow:linked:reasoning", "vc:label": "Reasoning"},
+    {"@id": "urn:visionflow:linked:safety", "vc:label": "Safety"},
+    {"@id": "urn:visionflow:linked:algorithm", "vc:label": "Algorithm"},
+    {"@id": "urn:visionflow:linked:search-algorithm", "vc:label": "Search Algorithm"},
+    {"@id": "urn:visionflow:linked:inference", "vc:label": "Inference"},
+    {"@id": "urn:visionflow:linked:machine-learning-discipline", "vc:label": "Machine Learning Discipline"},
+    {"@id": "urn:visionflow:linked:fairness", "vc:label": "Fairness"},
+    {"@id": "urn:visionflow:linked:ontology", "vc:label": "Ontology"},
+    {"@id": "urn:visionflow:linked:parameter", "vc:label": "Parameter"},
+    {"@id": "urn:visionflow:linked:property", "vc:label": "Property"},
+    {"@id": "urn:visionflow:linked:system", "vc:label": "System"},
+    {"@id": "urn:visionflow:linked:smart-contract", "vc:label": "Smart Contract"},
+    {"@id": "urn:visionflow:linked:neural-network", "vc:label": "Neural Network"},
+    {"@id": "urn:visionflow:linked:reinforcement-learning", "vc:label": "Reinforcement Learning"},
+    {"@id": "urn:visionflow:linked:optimisation", "vc:label": "Optimisation"},
+    {"@id": "urn:visionflow:linked:constraint-satisfaction-problem", "vc:label": "Constraint Satisfaction Problem"},
+    {"@id": "urn:visionflow:linked:constraint-programming", "vc:label": "Constraint Programming"},
+    {"@id": "urn:visionflow:linked:regularisation", "vc:label": "Regularisation"},
+    {"@id": "urn:visionflow:linked:loss-function", "vc:label": "Loss Function"},
+    {"@id": "urn:visionflow:linked:backtracking-search", "vc:label": "Backtracking Search"},
+    {"@id": "urn:visionflow:linked:arc-consistency", "vc:label": "Arc Consistency"},
+    {"@id": "urn:visionflow:linked:satisfiability", "vc:label": "Satisfiability"},
+    {"@id": "urn:visionflow:linked:linear-programming", "vc:label": "Linear Programming"},
+    {"@id": "urn:visionflow:linked:integer-programming", "vc:label": "Integer Programming"},
+    {"@id": "urn:visionflow:linked:model-checking", "vc:label": "Model Checking"},
+    {"@id": "urn:visionflow:linked:theorem-proving", "vc:label": "Theorem Proving"},
+    {"@id": "urn:visionflow:linked:planning", "vc:label": "Planning"},
+    {"@id": "urn:visionflow:linked:scheduling", "vc:label": "Scheduling"},
+    {"@id": "urn:visionflow:linked:knowledge-representation", "vc:label": "Knowledge Representation"},
+    {"@id": "urn:visionflow:linked:gradient-descent", "vc:label": "Gradient Descent"},
+    {"@id": "urn:visionflow:linked:markov-decision-process", "vc:label": "Markov Decision Process"},
+    {"@id": "urn:visionflow:linked:deep-learning", "vc:label": "Deep Learning"},
+    {"@id": "urn:visionflow:linked:explainability", "vc:label": "Explainability"},
+    {"@id": "urn:visionflow:linked:monotonicity-constraint", "vc:label": "Monotonicity Constraint"},
+    {"@id": "urn:visionflow:linked:weight-sharing", "vc:label": "Weight Sharing"},
+    {"@id": "urn:visionflow:linked:smt-solver", "vc:label": "SMT Solver"},
+    {"@id": "urn:visionflow:linked:answer-set-programming", "vc:label": "Answer Set Programming"},
+    {"@id": "urn:visionflow:linked:description-logic", "vc:label": "Description Logic"},
+    {"@id": "urn:visionflow:linked:combinatorial-optimisation", "vc:label": "Combinatorial Optimisation"}
   ],
   "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "legacy-term-id",
-      "vc:value": "AI-0836"
-    },
-    {
-      "vc:key": "preferred-term",
-      "vc:value": "Constraint"
-    }
+    {"vc:key": "legacy-term-id", "vc:value": "AI-0836"},
+    {"vc:key": "preferred-term", "vc:value": "Constraint"}
   ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:jjohare"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
+  "prov:wasAttributedTo": {"@id": "did:nostr:jjohare"},
+  "prov:generatedAtTime": {"@value": "2026-05-18T07:12:05Z", "@type": "xsd:dateTime"}
 }
 ```
 
@@ -53,12 +75,9 @@ public:: true
   "definition": "A Constraint is a condition, restriction, or rule that limits the set of permissible states, actions, or solutions within a computational, logical, or physical system. Constraints formalise requirements such as resource bounds, logical invariants, safety properties, and optimality criteria, and are manipulated by constraint-satisfaction and optimisation algorithms to find feasible or optimal solutions. They appear across AI planning, machine learning regularisation, smart-contract execution, and formal verification.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "qualityScore": 0.8,
+  "qualityScore": 0.90,
   "subClassOf": [
-    {
-      "@id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    }
+    {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"}
   ],
   "relations": {
     "requires": [
@@ -68,22 +87,51 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:formal-verification", "label": "Formal Verification"},
       {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:safety", "label": "Safety"}
+      {"@id": "urn:ngm:class:safety", "label": "Safety"},
+      {"@id": "urn:ngm:class:optimisation", "label": "Optimisation"},
+      {"@id": "urn:ngm:class:planning", "label": "Planning"},
+      {"@id": "urn:ngm:class:scheduling", "label": "Scheduling"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:algorithm", "label": "Algorithm"},
       {"@id": "urn:ngm:class:search-algorithm", "label": "Search Algorithm"},
-      {"@id": "urn:ngm:class:inference", "label": "Inference"}
+      {"@id": "urn:ngm:class:inference", "label": "Inference"},
+      {"@id": "urn:ngm:class:backtracking-search", "label": "Backtracking Search"},
+      {"@id": "urn:ngm:class:smt-solver", "label": "SMT Solver"}
+    ],
+    "hasPart": [
+      {"@id": "urn:ngm:class:constraint-satisfaction-problem", "label": "Constraint Satisfaction Problem"},
+      {"@id": "urn:ngm:class:constraint-programming", "label": "Constraint Programming"},
+      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"}
     ],
     "supports": [
       {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"},
       {"@id": "urn:ngm:class:fairness", "label": "Fairness"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"}
+      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
+      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
+      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"}
+    ],
+    "implements": [
+      {"@id": "urn:ngm:class:combinatorial-optimisation", "label": "Combinatorial Optimisation"},
+      {"@id": "urn:ngm:class:linear-programming", "label": "Linear Programming"},
+      {"@id": "urn:ngm:class:integer-programming", "label": "Integer Programming"},
+      {"@id": "urn:ngm:class:answer-set-programming", "label": "Answer Set Programming"},
+      {"@id": "urn:ngm:class:description-logic", "label": "Description Logic"}
+    ],
+    "contrastsWith": [
+      {"@id": "urn:ngm:class:heuristic-methods", "label": "Heuristic Methods"},
+      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:parameter", "label": "Parameter"},
       {"@id": "urn:ngm:class:property", "label": "Property"},
-      {"@id": "urn:ngm:class:system", "label": "System"}
+      {"@id": "urn:ngm:class:system", "label": "System"},
+      {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
+      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"},
+      {"@id": "urn:ngm:class:satisfiability", "label": "Satisfiability"},
+      {"@id": "urn:ngm:class:arc-consistency", "label": "Arc Consistency"},
+      {"@id": "urn:ngm:class:model-checking", "label": "Model Checking"},
+      {"@id": "urn:ngm:class:theorem-proving", "label": "Theorem Proving"}
     ],
     "bridgesTo": [
       {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"},
@@ -92,8 +140,8 @@ public:: true
     ]
   },
   "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-20T00:00:00Z",
     "inferenceRule": "R5DomainRootFallback"
   }
 }
@@ -108,51 +156,285 @@ public:: true
     "@id": "urn:visionflow:page:8610ab5a331143af044c5c779546bd2f7a5670ec97b763c64c5773d53aaea6a8"
   },
   "vc:resolutions": [
-    {
-      "raw": "[[Artificial Intelligence]]",
-      "resolved": "urn:visionflow:owl:class:artificial-intelligence",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Blockchain]]",
-      "resolved": "urn:visionflow:owl:class:blockchain",
-      "kind": "ResolvedLink"
-    },
-    {
-      "raw": "[[Digital Twin]]",
-      "resolved": "urn:visionflow:owl:class:digital-twin",
-      "kind": "ResolvedLink"
-    }
+    {"raw": "[[Artificial Intelligence]]", "resolved": "urn:visionflow:owl:class:artificial-intelligence", "kind": "ResolvedLink"},
+    {"raw": "[[Blockchain]]", "resolved": "urn:visionflow:owl:class:blockchain", "kind": "ResolvedLink"},
+    {"raw": "[[Digital Twin]]", "resolved": "urn:visionflow:owl:class:digital-twin", "kind": "ResolvedLink"},
+    {"raw": "[[Objective]]", "resolved": "urn:visionflow:linked:objective", "kind": "ResolvedLink"},
+    {"raw": "[[Model]]", "resolved": "urn:visionflow:linked:model", "kind": "ResolvedLink"},
+    {"raw": "[[Formal Verification]]", "resolved": "urn:visionflow:linked:formal-verification", "kind": "ResolvedLink"},
+    {"raw": "[[Reasoning]]", "resolved": "urn:visionflow:linked:reasoning", "kind": "ResolvedLink"},
+    {"raw": "[[Safety]]", "resolved": "urn:visionflow:linked:safety", "kind": "ResolvedLink"},
+    {"raw": "[[Algorithm]]", "resolved": "urn:visionflow:linked:algorithm", "kind": "ResolvedLink"},
+    {"raw": "[[Search Algorithm]]", "resolved": "urn:visionflow:linked:search-algorithm", "kind": "ResolvedLink"},
+    {"raw": "[[Inference]]", "resolved": "urn:visionflow:linked:inference", "kind": "ResolvedLink"},
+    {"raw": "[[Machine Learning Discipline]]", "resolved": "urn:visionflow:linked:machine-learning-discipline", "kind": "ResolvedLink"},
+    {"raw": "[[Fairness]]", "resolved": "urn:visionflow:linked:fairness", "kind": "ResolvedLink"},
+    {"raw": "[[Ontology]]", "resolved": "urn:visionflow:linked:ontology", "kind": "ResolvedLink"},
+    {"raw": "[[Parameter]]", "resolved": "urn:visionflow:linked:parameter", "kind": "ResolvedLink"},
+    {"raw": "[[Property]]", "resolved": "urn:visionflow:linked:property", "kind": "ResolvedLink"},
+    {"raw": "[[System]]", "resolved": "urn:visionflow:linked:system", "kind": "ResolvedLink"},
+    {"raw": "[[Smart Contract]]", "resolved": "urn:visionflow:linked:smart-contract", "kind": "ResolvedLink"},
+    {"raw": "[[Neural Network]]", "resolved": "urn:visionflow:linked:neural-network", "kind": "ResolvedLink"},
+    {"raw": "[[Reinforcement Learning]]", "resolved": "urn:visionflow:linked:reinforcement-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Optimisation]]", "resolved": "urn:visionflow:linked:optimisation", "kind": "ResolvedLink"},
+    {"raw": "[[Constraint Satisfaction Problem]]", "resolved": "urn:visionflow:linked:constraint-satisfaction-problem", "kind": "ResolvedLink"},
+    {"raw": "[[Constraint Programming]]", "resolved": "urn:visionflow:linked:constraint-programming", "kind": "ResolvedLink"},
+    {"raw": "[[Regularisation]]", "resolved": "urn:visionflow:linked:regularisation", "kind": "ResolvedLink"},
+    {"raw": "[[Loss Function]]", "resolved": "urn:visionflow:linked:loss-function", "kind": "ResolvedLink"},
+    {"raw": "[[Backtracking Search]]", "resolved": "urn:visionflow:linked:backtracking-search", "kind": "ResolvedLink"},
+    {"raw": "[[Arc Consistency]]", "resolved": "urn:visionflow:linked:arc-consistency", "kind": "ResolvedLink"},
+    {"raw": "[[Satisfiability]]", "resolved": "urn:visionflow:linked:satisfiability", "kind": "ResolvedLink"},
+    {"raw": "[[Linear Programming]]", "resolved": "urn:visionflow:linked:linear-programming", "kind": "ResolvedLink"},
+    {"raw": "[[Integer Programming]]", "resolved": "urn:visionflow:linked:integer-programming", "kind": "ResolvedLink"},
+    {"raw": "[[Model Checking]]", "resolved": "urn:visionflow:linked:model-checking", "kind": "ResolvedLink"},
+    {"raw": "[[Theorem Proving]]", "resolved": "urn:visionflow:linked:theorem-proving", "kind": "ResolvedLink"},
+    {"raw": "[[Planning]]", "resolved": "urn:visionflow:linked:planning", "kind": "ResolvedLink"},
+    {"raw": "[[Scheduling]]", "resolved": "urn:visionflow:linked:scheduling", "kind": "ResolvedLink"},
+    {"raw": "[[Knowledge Representation]]", "resolved": "urn:visionflow:linked:knowledge-representation", "kind": "ResolvedLink"},
+    {"raw": "[[Gradient Descent]]", "resolved": "urn:visionflow:linked:gradient-descent", "kind": "ResolvedLink"},
+    {"raw": "[[Markov Decision Process]]", "resolved": "urn:visionflow:linked:markov-decision-process", "kind": "ResolvedLink"},
+    {"raw": "[[Deep Learning]]", "resolved": "urn:visionflow:linked:deep-learning", "kind": "ResolvedLink"},
+    {"raw": "[[Explainability]]", "resolved": "urn:visionflow:linked:explainability", "kind": "ResolvedLink"},
+    {"raw": "[[SMT Solver]]", "resolved": "urn:visionflow:linked:smt-solver", "kind": "ResolvedLink"},
+    {"raw": "[[Answer Set Programming]]", "resolved": "urn:visionflow:linked:answer-set-programming", "kind": "ResolvedLink"},
+    {"raw": "[[Description Logic]]", "resolved": "urn:visionflow:linked:description-logic", "kind": "ResolvedLink"},
+    {"raw": "[[Combinatorial Optimisation]]", "resolved": "urn:visionflow:linked:combinatorial-optimisation", "kind": "ResolvedLink"},
+    {"raw": "[[Heuristic Methods]]", "resolved": "urn:visionflow:linked:heuristic-methods", "kind": "ResolvedLink"}
   ],
-  "prov:wasAttributedTo": {
-    "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:generatedAtTime": {
-    "@value": "2026-05-18T07:12:05Z",
-    "@type": "xsd:dateTime"
-  }
+  "prov:wasAttributedTo": {"@id": "did:nostr:enrichment-swarm"},
+  "prov:generatedAtTime": {"@value": "2026-06-20T00:00:00Z", "@type": "xsd:dateTime"}
 }
 ```
 
+- ### Definition
+  - A **Constraint** is a condition, restriction, or rule that delimits the set of permissible states, actions, values, or solutions within a computational, logical, mathematical, or physical [[System]]. Constraints encode requirements drawn from multiple sources — physical laws that bound what nature permits, resource capacities that bound what hardware can provide, logical invariants that bound what is consistent, safety properties that bound what is acceptable, and optimality criteria that bound what is preferable — and are the raw material from which [[Constraint Satisfaction Problem|constraint satisfaction problems]] (CSPs), [[Constraint Programming]], [[Optimisation]], [[Formal Verification]], and [[Reasoning]] algorithms derive their structure. In a CSP, a finite set of variables must each be assigned a value from a domain such that every constraint in the problem is satisfied simultaneously; in [[Constraint Programming]] the domain is extended to continuous or mixed variables with global constraints compactly representing combinatorial structure; in mathematical [[Optimisation]] a constraint defines the feasible region within which a minimum or maximum of an [[Objective]] function is sought. In [[Machine Learning Discipline]], constraints enter as [[Regularisation]] penalties added to the [[Loss Function]] (L1-norm lasso, L2-norm ridge, elastic-net) that prevent overfitting by penalising model complexity, as [[Fairness]] constraints (demographic parity, equalised odds, individual fairness) that encode non-discrimination requirements, as architectural [[Weight Sharing]] and [[Monotonicity Constraint|monotonicity constraints]] baked into [[Neural Network]] structure, and as safety constraints on [[Reinforcement Learning]] policies operating within [[Markov Decision Process|constrained Markov decision processes]]. In [[Formal Verification]], constraints are temporal or logical predicates over a [[Model]] of a hardware or software [[System]] and are checked by [[Model Checking]] (exhaustive reachability) or [[Theorem Proving]] (symbolic proof). In [[Knowledge Representation]] and [[Ontology]], description-logic axioms (subsumption, cardinality restrictions, property ranges) are constraints over individuals, enabling [[Inference]] via tableau algorithms. Constraints are a unifying abstraction bridging [[Artificial Intelligence]], operations research, logic, and software engineering, expressed concisely in specialised languages (MiniZinc, OPL, XCSP3, [[Answer Set Programming]]) and solved with techniques ranging from [[Backtracking Search]] and [[Arc Consistency]] propagation to [[SMT Solver|SMT solvers]] and [[Linear Programming]] relaxations, while their role in [[Blockchain]] smart-contract invariants and [[Digital Twin]] physical fidelity models further extends the concept into distributed and cyber-physical computation.
 
-### Definition
+- ### Semantic Classification
+  - owl-class:: ai:Constraint
+  - owl-role:: Concept | FormalismPrimitive | OptimisationMechanism | SafetyMechanism
+  - owl-inferred:: ai:KnowledgeRepresentationElement, ai:RegularisationMechanism, ai:SafetyConstraint, ai:LogicalAxiom
+  - belongs-to-domain:: [[Artificial Intelligence]]
+  - implemented-in-layer:: [[Algorithm Layer]]
 
-A Constraint is a condition, restriction, or rule that limits the set of permissible states, actions, or solutions within a computational, logical, or physical system. Constraints formalise requirements such as resource bounds, logical invariants, safety properties, and optimality criteria, and are manipulated by constraint-satisfaction and optimisation algorithms to find feasible or optimal solutions. They appear across AI planning, machine learning regularisation, smart-contract execution, and formal verification.
+- ### Relationships
+  - is-subclass-of:: [[AI Technique]], [[Knowledge Representation]], [[Formal Method]]
+  - has-part:: [[Constraint Satisfaction Problem]], [[Constraint Programming]], [[Regularisation]], [[Arc Consistency]], [[Backtracking Search]]
+  - requires:: [[Objective]], [[Model]], [[System]], [[Algorithm]]
+  - enables:: [[Formal Verification]], [[Reasoning]], [[Safety]], [[Optimisation]], [[Planning]], [[Scheduling]], [[Fairness]], [[Explainability]]
+  - implements:: [[Combinatorial Optimisation]], [[Linear Programming]], [[Integer Programming]], [[Answer Set Programming]], [[Description Logic]]
+  - depends-on:: [[Search Algorithm]], [[Inference]], [[SMT Solver]], [[Satisfiability]]
+  - supports:: [[Machine Learning Discipline]], [[Fairness]], [[Ontology]], [[Knowledge Representation]], [[Deep Learning]], [[Explainability]]
+  - uses:: [[Algorithm]], [[Search Algorithm]], [[Inference]], [[Backtracking Search]], [[SMT Solver]], [[Gradient Descent]]
+  - contrasts-with:: [[Heuristic Methods]], [[Gradient Descent]]
+  - related-to:: [[Parameter]], [[Property]], [[System]], [[Loss Function]], [[Markov Decision Process]], [[Satisfiability]], [[Arc Consistency]], [[Model Checking]], [[Theorem Proving]], [[Neural Network]], [[Reinforcement Learning]]
+  - bridges-to:: [[Digital Twin]], [[Blockchain]], [[Smart Contract]]
 
-### Relationships
+- ### Content
+  - ## Compositional Relationships (Components)
+    ```
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:hasPart ai:ConstraintSatisfactionProblem))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:hasPart ai:ConstraintProgramming))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:hasPart ai:Regularisation))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:hasPart ai:ArcConsistency))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:hasPart ai:BacktrackingSearch))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:hasPart ai:GlobalConstraint))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:hasPart ai:FairnessConstraint))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:hasPart ai:SafetyConstraint))
+    ```
+  - ## Dependency Relationships
+    ```
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:requires ai:Objective))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:requires ai:Model))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:requires ai:System))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:requires ai:Algorithm))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:requires ai:SearchAlgorithm))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:requires ai:Inference))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:requires ai:SMTSolver))
+    ```
+  - ## Capability Relationships
+    ```
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:enables ai:FormalVerification))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:enables ai:Reasoning))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:enables ai:Safety))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:enables ai:Optimisation))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:enables ai:Planning))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:enables ai:Scheduling))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:enables ai:Fairness))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:enables ai:Explainability))
+    ```
+  - ## Implementation Relationships
+    ```
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:implements ai:CombinatorialOptimisation))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:implements ai:LinearProgramming))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:implements ai:IntegerProgramming))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:implements ai:AnswerSetProgramming))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:implements ai:DescriptionLogic))
+    ```
+  - ## Reduction Relationships
+    ```
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:reducesTo ai:BooleanSatisfiability))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:reducesTo ai:LinearProgrammingRelaxation))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:reducesTo ai:GraphColouring))
+    SubClassOf(ai:Constraint
+      ObjectSomeValuesFrom(ai:reducesTo ai:NetworkFlowProblem))
+    ```
+  - ## About
+    - A **Constraint** is one of the foundational abstractions in [[Artificial Intelligence]], operations research, and formal logic, encoding the limits within which a computational or physical [[System]] must operate. The history of constraint-based reasoning runs from the early formal logic of Frege and Russell through Waltz's (1972) constraint propagation in scene interpretation, through Montanari's (1974) network-of-constraints formalism, to the modern unified treatment in Dechter's seminal textbook *Constraint Processing* (2003). Over five decades, the notion has expanded from simple equality and inequality predicates over integer domains into a rich taxonomy that includes unary, binary, and global constraints; hard (mandatory) and soft (preferably satisfied) constraints; temporal constraints (Allen's interval algebra); resource constraints in [[Scheduling]]; integrity constraints in databases; and safety constraints in cyber-physical [[System|systems]]. The central algorithmic challenge is to find, enumerate, or optimise over assignments that satisfy all constraints simultaneously, which is in general NP-complete but tractable through a combination of propagation (reducing domains by detecting infeasibility early), search heuristics (variable ordering, value selection), and relaxation ([[Linear Programming]] or Lagrangian relaxation providing bounds that guide [[Backtracking Search]]). The tractability landscape is nuanced: while general CSP solving is NP-complete, large classes of constraint networks have polynomial-time tractable structure — constraint networks whose primal graph has bounded tree-width are solvable in polynomial time via tree decomposition, a result that connects constraint processing to parameterised complexity theory and informs the design of practical solving strategies that exploit problem structure before resorting to exhaustive search.
 
-Constraint **requires** an [[Objective]] (to define what is being optimised or satisfied) and a [[Model]] (the representation within which constraints are expressed). It **enables** [[Formal Verification]] (by providing checkable invariants), [[Reasoning]] (constraints guide inference over possible worlds), and [[Safety]] (safety properties are encoded as constraints that must never be violated). Constraints **use** [[Algorithm|Algorithms]] and [[Search Algorithm|Search Algorithms]] to enumerate or prune the solution space, and draw on [[Inference]] to propagate constraint consequences. They **support** [[Machine Learning Discipline]] (regularisation terms and output constraints), [[Fairness]] (demographic parity and equal opportunity conditions), and [[Ontology]] (ontological axioms are a form of logical constraint). Constraints are **relatedTo** [[Parameter]], [[Property]], and [[System]]. They **bridgesTo** [[Digital Twin]] (physical constraints are mirrored in simulation), [[Blockchain]] (smart-contract invariants and gas limits are constraints), and [[Smart Contract]] (contract pre- and post-conditions express constraints on permitted state transitions).
+    - The mathematical formalisation of a CSP identifies three components: a set of variables X = {x₁, ..., xₙ}, domains D = {D₁, ..., Dₙ} where each Dᵢ is a finite set of permissible values for xᵢ, and a set of constraints C = {c₁, ..., cₘ} where each cᵢ is a relation over a subset of variables (the scope of the constraint). A solution is a complete assignment σ: X → ⋃Dᵢ such that σ(xᵢ) ∈ Dᵢ for all i and all constraints are satisfied. This deceptively simple formalism subsumes an enormous range of combinatorial problems: Boolean [[Satisfiability]] is a CSP over binary domains with clause constraints; graph colouring is a CSP with AllDifferent constraints on adjacent vertices; the n-queens puzzle is a binary CSP with inequality and offset constraints; nurse-scheduling is a CSP with resource constraints on shifts per nurse per period and fairness constraints on workload distribution. The formalism generalises naturally to continuous domains (constraint satisfaction over the reals, handled by interval arithmetic or [[SMT Solver|SMT]] solvers with linear arithmetic theories), to optimisation (constraint optimisation problems, COPs, minimise or maximise an [[Objective]] subject to constraints), and to distributed settings (distributed CSPs, DisCSPs, where variables and constraints are partitioned across agents that must coordinate to find a consistent global assignment without sharing private information).
 
-### Content
+    - The relationship between [[Constraint Satisfaction Problem|constraint satisfaction]] and [[Machine Learning Discipline]] has deepened substantially since 2020. Rather than treating ML and constraint-solving as separate disciplines, the emerging integration uses each to address the other's weaknesses. Learned heuristics guide [[Backtracking Search]] in classical CSP solvers — graph neural networks predict variable-value branching decisions more accurately than hand-crafted heuristics such as minimum remaining values (MRV) or degree heuristic, reducing node counts in search trees by orders of magnitude on structured problem families. Conversely, constraints are embedded directly in neural architectures through differentiable constraint layers, projection operators that map gradient steps back into the feasible region, and [[Regularisation]] penalties that penalise degrees of constraint violation. Differentiable constraint satisfaction (DC-Sat) and differentiable Integer Linear Programming (DC-ILP) layers allow neural networks to produce outputs that satisfy combinatorial constraints end-to-end, enabling learning-augmented combinatorial [[Optimisation]] for vehicle routing, protein design, and chip placement. At NeurIPS 2025, a dedicated workshop on Constrained Optimisation for Machine Learning surveyed how safety-critical domains — medical diagnosis, autonomous vehicles, credit scoring — demand that model outputs satisfy formal constraints encoding fairness, robustness, and physical plausibility, arguing that unconstrained statistical fitting is insufficient for deployment in regulated contexts. A 2025 NeurIPS keynote on *Constraint-Aware Generative Models* demonstrated that large diffusion and language models frequently violate physical conservation laws and logical consistency requirements, motivating post-hoc constraint projection and constrained fine-tuning methods. The [[Deep Learning]] community has responded with constrained decoding — beam search or nucleus sampling restricted to token sequences satisfying syntactic, semantic, or safety constraints defined by formal grammars, finite automata, or logic programs — as a practical mechanism for steering generation toward constraint-compliant outputs without retraining.
 
-Constraints are a unifying concept across computer science, mathematics, and engineering. In constraint satisfaction problems (CSPs), a set of variables must be assigned values from their domains such that all stated constraints are satisfied simultaneously. Backtracking search, arc consistency, and propagation algorithms are the standard tools for solving CSPs efficiently. Constraint programming extends this with arithmetic, logical, and global constraints that compactly represent complex combinatorial requirements.
+    - In [[Reinforcement Learning]], constraints appear through the [[Markov Decision Process|constrained MDP]] (CMDP) framework introduced by Altman (1999), where a policy must maximise expected cumulative reward subject to one or more safety cost constraints expressed as bounds on expected cumulative cost signals. Lagrangian relaxation of CMDPs — as in the Constrained Policy Optimisation (CPO) algorithm of Achiam et al. (2017) and its successors — converts the constrained problem into an unconstrained saddle-point problem, iteratively updating primal policy and dual multipliers. The Lagrangian multiplier serves as an adaptive penalty coefficient: when the cost constraint is violated the multiplier increases, pushing the policy toward safer behaviour; when the constraint is satisfied with slack the multiplier decreases, allowing more aggressive reward maximisation. A 2024 survey of safe [[Reinforcement Learning]] and constrained MDPs (arXiv:2505.17342) catalogues over 200 methods, identifying Lagrangian, trust-region, interior-point, and projection-based approaches as the dominant families. The sTRPO algorithm presented at NeurIPS 2025 augments trust-region policy optimisation with explicit exclusion of unsafe policy-space regions identified by an auxiliary learned risk model, outperforming seven baseline algorithms on Safety-Gymnasium benchmarks with significantly fewer constraint violations. Beyond the CMDP framework, constraint-based safety also enters [[Reinforcement Learning]] through control-barrier functions (CBFs) that define safe sets in state space and enforce forward invariance — the property that once the [[System]] is in a safe state it cannot leave the safe set — through quadratic programming constraints on the control action at each time step. CBF-based safe RL has been applied to robotic manipulation, drone flight, and autonomous driving, where worst-case constraint violation during exploration carries physical consequences that episodic reward shaping cannot adequately capture.
 
-In machine learning, constraints appear as regularisation penalties (L1/L2 norms bounding model parameters), fairness constraints (demographic parity, equalised odds), and safety constraints in reinforcement learning (reward shaping and shield mechanisms). [[Neural Network]] architectures may incorporate architectural constraints such as weight sharing in convolutional layers or monotonicity constraints for interpretable models. [[Reinforcement Learning]] policies trained under constrained Markov decision processes must satisfy worst-case state-space constraints throughout training.
+    - The role of constraints in [[Knowledge Representation]] and [[Ontology]] deserves separate treatment because it instantiates a fundamentally different computational paradigm from either CSP solving or ML. In [[Description Logic]] (DL), an ontology is a finite set of axioms — constraints — over a shared vocabulary of class names and property names. An ABox (assertional box) states facts about named individuals; a TBox (terminological box) states subsumption and restriction constraints between class expressions. A query asks whether a new fact can be derived from the ontology by sound logical [[Inference]]. OWL 2 DL (the Web Ontology Language, standardised by the W3C) provides a rich TBox language including: existential restrictions (owl:someValuesFrom, encoding "there exists at least one value of this property satisfying this class"), universal restrictions (owl:allValuesFrom), cardinality constraints (owl:minCardinality, owl:maxCardinality, owl:exactCardinality), nominals, property chains, and disjoints. Reasoning services — classification (computing the subsumption hierarchy), consistency checking (detecting contradictory axioms), instance retrieval (finding individuals satisfying a class expression), and conjunctive query answering — are implemented by tableau [[Algorithm|algorithms]] in reasoners such as HermiT, Pellet, and ELK. The computational cost of these reasoning services ranges from polynomial (EL profile, used by SNOMED CT with millions of concepts) through EXPTIME-complete (OWL DL) to undecidable (OWL Full). This tractability stratification is itself a constraint satisfaction insight: the choice of constraint language (DL expressivity) determines the computational profile of the [[Inference]] problem.
 
-Formal methods exploit constraints heavily. [[Formal Verification]] encodes system correctness as a set of temporal or logical constraints and uses model checking or theorem proving to verify that no reachable system state violates them. [[Digital Twin]] simulations mirror physical constraints (mass, energy, thermodynamic limits) so that predictions respect real-world bounds. Constraint-driven simulation enables predictive maintenance, anomaly detection, and what-if analysis under physically consistent conditions.
+  - ## Components / Architecture
+    - **Constraint types by scope:**
+      - *Unary constraints*: restrict a single variable (e.g. x ∈ {1,3,5}). Equivalent to domain restriction; enforced trivially by removing violating values from the domain before search.
+      - *Binary constraints*: relate two variables (e.g. x ≠ y, x ≤ y + 2, x + y = k). Binary CSPs have been the focus of most theoretical analysis; every CSP can be converted to a binary CSP by introducing auxiliary variables, though this may increase network size.
+      - *Non-binary (k-ary) constraints*: generalise binary to k variables. Global constraints are a special case where the arity is variable and can range over the entire variable set.
+      - *Global constraints*: compactly express complex combinatorial structure over arbitrary-arity variable sets with dedicated, efficient propagation algorithms. The **AllDifferent** constraint (all variables in a set must take distinct values) is perhaps the most widely used; it has an O(n^1.5) filtering algorithm based on bipartite matching (Régin, 1994) that removes far more infeasible values than binary decomposition into pairwise inequality constraints. The **Cumulative** constraint models resource usage over time: a set of tasks with fixed durations and resource consumptions must be scheduled such that total resource usage at each time point does not exceed a given capacity, enabling compact scheduling formulation with energetic reasoning and task interval propagation. The **Circuit** global constraint ensures that the values form a Hamiltonian circuit on a graph, underpinning vehicle routing and Travelling Salesperson formulations. The **Regular** constraint specifies that the sequence of values assigned to an ordered set of variables must be a word in a given regular language (specified as a finite automaton), enabling pattern-constrained sequence problems to be modelled and propagated in linear time via a Deterministic Finite Automaton (DFA) traversal. The Global Constraint Catalogue (Beldiceanu, Carlsson et al.) documents over 400 global constraints with their propagation algorithms and computational complexity.
+      - *Soft constraints*: carry a violation cost rather than being mandatory; partial CSPs allow some constraints to be violated at a cost, while weighted CSP and valued CSP frameworks assign ordered semi-ring costs to violation levels. Solved by branch-and-bound on violation cost, enabling optimisation over partially satisfiable constraint sets — critical for real-world problems where perfect satisfaction is unattainable and the goal is best-compromise solutions.
+      - *Conditional constraints*: are active only when a condition variable takes a particular value; used in configuration problems where the presence of component A implies constraints between its sub-components that are irrelevant if A is absent.
+    - **Constraint families by domain:**
+      - *Propositional and Boolean*: clause constraints (disjunctions of literals), pseudo-Boolean constraints (linear combinations of 0-1 variables), [[Satisfiability|SAT]] encodings that represent arbitrary constraint networks over Boolean domains. Modern CDCL SAT solvers (MiniSAT, CaDiCaL, Kissat) solve industrial SAT instances with millions of variables, underpinning hardware formal verification and bounded model checking.
+      - *Arithmetic over integers*: linear equalities/inequalities (exploited by [[Linear Programming]] and [[Integer Programming]] solvers), non-linear arithmetic (polynomial constraints, solved by Cylindrical Algebraic Decomposition or [[SMT Solver|SMT]] with non-linear arithmetic theories — generally undecidable but heuristically tractable for bounded formulas).
+      - *Arithmetic over reals*: continuous constraint satisfaction and [[Optimisation]] over real-valued variables, handled by interval arithmetic (computing sound over-approximations of the feasible set), [[Linear Programming]] for convex linear cases, semi-definite programming (SDP) for polynomial constraints via Sum-of-Squares relaxations.
+      - *Temporal*: Allen's interval algebra (13 mutually exclusive temporal relations between intervals: before, meets, overlaps, starts, during, finishes, equals, and their inverses); difference constraints (linear constraints of the form xᵢ - xⱼ ≤ dᵢⱼ, solvable by Bellman-Ford in O(nE) time — the foundation of Simple Temporal Networks (STNs) used in AI [[Planning]] with durations); temporal constraint propagation in scheduling networks.
+      - *Logical*: [[Description Logic]] axioms in [[Ontology|ontologies]] (TBox constraints enabling [[Inference]] over ABox assertions); [[Answer Set Programming]] (ASP) rules encoding non-monotonic reasoning via stable-model semantics (Gelfond and Lifschitz, 1988); integrity constraints in relational databases (primary key, foreign key, functional dependency, uniqueness constraints enforced by the RDBMS engine).
+      - *Physical/cyber-physical*: differential-equation constraints in [[Digital Twin|digital twin]] simulation models encoding Newton's laws, Kirchhoff's circuit laws, thermodynamic conservation principles, and material constitutive relations; energy/mass conservation constraints in physics-aware ML models ensuring learned dynamics respect physical invariants.
+      - *Fairness*: demographic parity (DP: P(Ŷ=1|A=0) = P(Ŷ=1|A=1)), equalised odds (EOdds: equal TPR and FPR across groups), individual fairness (similar individuals receive similar predictions), and counterfactual fairness (prediction unchanged in a counterfactual world where the protected attribute differs) — each formalisable as a constraint on the prediction function's behaviour over population subgroups.
+    - **Solving paradigms and their relationships:**
+      - *Constraint propagation*: enforce local consistency — arc consistency (AC-3: each value in each domain has a support in each neighbouring domain), path consistency (PC: each pair of values in two domains has a consistent extension to all triples), and higher k-consistency — to prune domains before or during [[Backtracking Search]]. Propagation is interleaved with search in the MAC (Maintaining Arc Consistency) algorithm, triggering fresh AC-3 propagation after each variable assignment.
+      - *Look-ahead ordering heuristics*: the Minimum Remaining Values (MRV) heuristic selects the variable with the smallest current domain (the "fail-first" principle — branching on the most constrained variable first reduces the expected tree size); the Degree Heuristic breaks MRV ties by selecting the variable involved in the most constraints with unassigned variables. The Least Constraining Value (LCV) heuristic selects the value for the chosen variable that removes the fewest values from neighbouring domains, preserving flexibility.
+      - *[[Backtracking Search]] with clause learning (CDCL)*: backtracking with conflict-driven clause learning analyses the implication graph of constraint propagation steps that led to a conflict, identifies a "no-good" — a minimal set of variable-value assignments responsible for the failure — records it as a new clause constraint, and jumps back to the conflict's decision level. This enables non-chronological backjumping and is the key innovation behind the efficiency of modern SAT and CSP solvers, converting exponential worst-case search into practical solvers for industrial instances.
+      - *[[Linear Programming]] relaxation and branch-and-bound*: for Mixed [[Integer Programming]] problems, LP relaxation (treating integer variables as continuous) yields a lower bound on the optimal integer objective; branch-and-bound divides the problem by branching on a fractional variable and solves sub-problems recursively; cutting planes (Gomory cuts, cover cuts, lift-and-project) strengthen the LP relaxation by adding linear constraints that cut off LP solutions without excluding integer solutions. Modern MIP solvers (Gurobi, CPLEX, SCIP, HiGHS) combine branch-and-cut with primal heuristics and presolve reduction.
+      - *Local search and meta-heuristics*: hill climbing, simulated annealing, tabu search, and population-based algorithms (genetic algorithms, ant colony [[Optimisation]], particle swarm [[Optimisation]]) operate on complete assignments and iteratively improve constraint satisfaction by local moves. Local search does not guarantee completeness or optimality but often finds good solutions quickly for large-scale, highly constrained problems where complete methods are computationally intractable.
+      - *Hybrid CP+LP*: integration of [[Constraint Programming]] (providing global constraint propagation and non-linear reasoning) with [[Linear Programming]] (providing tight bounds and dual information) in frameworks such as IBM ILOG CP Optimizer, OPL+CPLEX, and the LCG (Lazy Clause Generation) approach of the Chuffed solver — which generates Boolean clauses on-the-fly from CP propagation, feeding them into a CDCL SAT-like engine for stronger learning.
+    - **Constraint modelling languages and tools:**
+      - *MiniZinc*: a high-level, solver-independent constraint modelling language developed at Monash University. Models are compiled to FlatZinc (a low-level format) for execution on diverse back-ends (Gecode, Chuffed, OR-Tools, CPLEX, Gurobi, Yices, OptiMathSAT). The annual MiniZinc Challenge provides rigorous benchmarking of CP solvers across standardised problem libraries. MiniZinc supports both constraint satisfaction and constraint optimisation, with a rich built-in library of global constraints and decomposition rules.
+      - *XCSP3*: an XML-based format standardising the representation of CSP and COP instances for solver interoperability and competition benchmarking (CSP Competition / XCSP competition series).
+      - *OPL (Optimization Programming Language)*: IBM ILOG's high-level language for modelling and solving constraint and [[Optimisation]] problems, tightly integrated with CPLEX and CP Optimizer back-ends. Widely used in enterprise scheduling and configuration applications.
+      - *Conjure / Essence*: a high-level abstract constraint modelling language developed at the University of St Andrews. Essence models are automatically reformulated into MiniZinc by the Conjure tool, with Savile Row performing a second-stage translation/simplification. Conjure enables automatic identification of structural symmetry, constraint decomposition strategies, and problem-specific reformulation that would require expert knowledge to perform manually.
+      - *ASP solvers*: Clingo (Potassco group, University of Potsdam) and DLVHEX implement [[Answer Set Programming]], handling non-monotonic constraints and disjunctive reasoning over discrete domains — particularly useful for planning, diagnosis, and configuration problems requiring closed-world assumption semantics.
+      - *SMT solvers*: Z3 (Microsoft Research), CVC5 (Stanford/Iowa), Yices 2 (SRI) extend propositional [[Satisfiability]] with arithmetic, bit-vector, array, and uninterpreted-function theories via the DPLL(T) architecture. SMT is the foundation for software verification (Boogie/Dafny), hardware model checking, and constraint-based program synthesis.
 
-In [[Blockchain]] and [[Smart Contract]] systems, constraints govern execution: gas limits bound computation, require/revert statements enforce pre-conditions, and invariant-check patterns guard state transitions. Constraint violations cause transaction reverts, providing an on-chain enforcement mechanism. [[Ontology|Ontologies]] in knowledge engineering express constraints as description-logic axioms (subclass relationships, cardinality restrictions, property domains and ranges) that enable automated [[Reasoning]] and [[Inference]] over structured knowledge.
+  - ## Use Cases / Major Families
+    - **Scheduling and timetabling**: crew rostering in aviation (Air France, British Airways use CP-based solvers), university timetabling (International Timetabling Competition benchmarks), operating-theatre scheduling in the NHS. Constraint solvers outperform generic [[Integer Programming]] on highly constrained real-world instances.
+    - **Configuration problems**: product configurators for automobiles, computers, and industrial equipment must satisfy large hierarchies of compatibility constraints; ILOG Configurator underpinned major automotive OEM systems.
+    - **Resource allocation and [[Planning]]**: the PDDL family of [[Planning]] languages encodes action preconditions and effects as constraints; temporal [[Planning]] under disjunctive constraints was addressed by King's College London's integration of [[Constraint Programming]] with temporal AI planners (2024–2025).
+    - **[[Machine Learning Discipline]] regularisation**: L1 (lasso), L2 (ridge), elastic-net, dropout, and [[Weight Sharing]] are widely deployed constraints that control model complexity and reduce overfitting across [[Deep Learning]] architectures.
+    - **AI [[Fairness]]**: demographic parity (P(Ŷ=1|A=0) = P(Ŷ=1|A=1)), equalised odds, and counterfactual fairness are constraints enforced during or after training via constrained [[Optimisation]], penalty terms, or post-processing calibration.
+    - **Safe [[Reinforcement Learning]]**: CMDP-based methods (CPO, PCPO, FOCOPS, sTRPO) enforce safety budget constraints on cumulative cost signals, enabling deployment in physical robots, autonomous vehicles, and medical treatment-planning agents.
+    - **[[Formal Verification]] and [[Model Checking]]**: BMC (bounded model checking) encodes the reachability question as a [[Satisfiability]] problem and solves it with an [[SMT Solver]]; IC3/PDR (property-directed reachability) extends this to unbounded verification. The seL4 microkernel formal proof (NICTA/Data61, now CSIRO) is the canonical industrial-scale theorem-proving achievement.
+    - **[[Blockchain]] and [[Smart Contract]] invariants**: Solidity's require/revert statements, OpenZeppelin's access-control modifiers, and off-chain formal verification tools (Certora Prover, K framework) encode and verify [[Smart Contract]] constraints.
+    - **[[Digital Twin]] fidelity**: physical constraints (Newton's laws, thermodynamic limits, material stress bounds) are woven into simulation models so twin predictions remain physically consistent; constraint violation signals trigger anomaly alerts.
+    - **[[Knowledge Representation]] and [[Ontology]]**: OWL 2 DL axioms (existential restrictions, cardinality constraints, property chains) are [[Description Logic]] constraints checked by reasoners (HermiT, Pellet, ELK) enabling [[Inference]] of implicit facts and detection of inconsistencies.
 
-### Provenance
-- sources:: Chimera Prime Research
-- migration-date:: 2026-04-26T00:00:00Z
+  - ## Academic Context
+    - The intellectual roots of constraint-based reasoning trace to propositional logic, [[Linear Programming]] (Dantzig, 1947), and Waltz's PhD thesis at MIT (1972). Montanari (1974) formalised networks of constraints as a mathematical object; Mackworth (1977) introduced [[Arc Consistency]] (AC-1, AC-2, AC-3) algorithms that enforce domain-level consistency without search; Haralick and Elliot (1980) classified k-consistency levels and established the relationship between consistency strength and problem tractability. The first dedicated Constraint Programming conference (CP) was held in 1995 and continues as the discipline's principal venue, complemented by CPAIOR (Integration of AI and OR approaches) and ECAI/IJCAI workshops. Key foundational texts include: Dechter, *Constraint Processing* (2003, Morgan Kaufmann) — the definitive graduate-level reference; Marriott and Stuckey, *Programming with Constraints: An Introduction* (1998, MIT Press); Rossi, van Beek, and Walsh (eds), *Handbook of Constraint Programming* (2006, Elsevier) — a 900-page comprehensive reference; and Biere, Heule, van Maaren, and Walsh (eds), *Handbook of Satisfiability* (2nd edition, 2021, IOS Press) — covering the adjacent Boolean satisfiability landscape.
+    - The CP+ML integration has been a growing subdiscipline since Lombardi and Milano (2018) popularised *constraint learning* for training set completion — using constraints to complete partially observed training sets rather than imputation — and Vayanos et al.'s decision-rule methods for robust [[Optimisation]]. A landmark 2021 paper by Elmachtoub and Grigas, *Smart Predict, Then Optimise*, formalised the task-loss perspective: training an ML model whose predictions are plugged into a downstream constrained [[Optimisation]] should be done by minimising the optimisation cost rather than prediction error, giving rise to the *predict-and-optimise* (P+O) learning paradigm. The Journal of Artificial Intelligence Research dedicated a special track to Constraint Programming and Machine Learning in 2024–2025 (https://jair.org/index.php/jair/SpecialTrack-CPML), explicitly recognising the bidirectional relationship: CP for ML (constraints as structure in learning), and ML for CP (learned heuristics and value predictors in constraint solvers). The MiniZinc Challenge — an annual international competition comparing CP solvers on benchmark problem sets — provides the community's empirical scoreboard; the 2023 challenge included problems from NP-hard scheduling, graph theory, and configuration domains solved by OR-Tools, Chuffed, and commercial solvers.
+    - Prominent researchers include: Rina Dechter (UC Irvine, constraint processing, bucket elimination, mini-bucket approximation); Toby Walsh (UNSW, global constraints, social constraints, AI ethics); Christian Bessiere (CNRS/Montpellier, arc consistency algorithms, constraint learning); Peter Stuckey (Monash, MiniZinc, lazy clause generation CP, Boolean satisfiability integration); Francesca Rossi (IBM Research, social choice and preference constraints); Eugene Freuder (Cork, constraint-based configuration, valued CSPs); Karen Petrie, Ian Miguel, Özgür Akgün, Ruth Hoffmann (St Andrews, Conjure/Essence modelling language, constraint acquisition); Jimmy Lee (Chinese University of Hong Kong, soft constraints, partial and weighted CSPs); Pascal Van Hentenryck (Georgia Tech/ANU, CP for operations research, stochastic constraint programming); and Luca Pulina and Armando Tacchella (constraint-based formal analysis of neural network robustness). The safe [[Reinforcement Learning]] constraint literature is led by Pieter Abbeel and colleagues (CPO), Zachary Lipton (constrained exploration), and the Oxford Future of Humanity Institute's work on AI safety constraints as a formal alignment mechanism.
+
+  - ## Current Landscape (2026)
+    - The NeurIPS 2025 Constrained Optimisation for Machine Learning workshop (https://constrained-opt-ml.github.io/) highlighted accelerating uptake of constrained formulations in safety-critical AI deployments. Regulatory pressure from the EU AI Act (effective August 2024, with GPAI obligations from August 2025) mandates that high-risk AI systems document and enforce constraints on decision outputs, driving practitioners toward formalised constraint specifications rather than informal mitigation checklists.
+    - The 2025 paper *Self-Supervised Transformers as Iterative Solution Improvers for Constraint Satisfaction* (arXiv:2502.15794) demonstrated that transformer architectures can learn to iteratively improve CSP solutions by masking and re-predicting variable assignments, achieving competitive performance on graph colouring, Boolean satisfiability, and combinatorial scheduling benchmarks without solver-specific engineering.
+    - OR-Tools (Google) has become the de facto open-source constraint solver for industrial scheduling, used by Alphabet, SNCF, and multiple NHS trust scheduling systems. The CP-SAT solver within OR-Tools (a CDCL-based CP solver operating over integer domains) routinely outperforms commercial MIP solvers on combinatorial scheduling at scale.
+    - Safe RL constraint satisfaction has matured from academic benchmarks toward production systems: Waymo uses CMDP-based policy training with collision and comfort constraints; DeepMind's AlphaFold successors incorporate structural-plausibility constraints into protein structure prediction; OpenAI's RLHF pipelines incorporate harmlessness constraints via constitutional AI preference learning.
+
+  - ## UK Context
+    - **University of St Andrews** hosts the UK's most active constraint programming research group, led by Ian Miguel, Özgür Akgün, Karen Petrie, and Ruth Hoffmann. Their Essence/Conjure toolchain abstracts over low-level solver details, enabling automatic reformulation of high-level constraint models. The group presented multiple papers at CP2024, including work on permutation patterns, algorithm selection, and modelling methodology (https://blogs.cs.st-andrews.ac.uk/csblog/2024/09/19/constraint-programming-research-group-at-the-cp2024-conference/).
+    - **King's College London** applied [[Constraint Programming]] to disjunctive [[Scheduling]] in temporal AI [[Planning]], demonstrating significant reductions in search states on real-world temporal planning benchmarks and contributing to PDDL+ planning theory.
+    - **University of Edinburgh** has active constraint and [[Optimisation]] research within the School of Informatics, with connections to [[Formal Verification]] (the Informatics group contributes to HOL4 theorem proving) and [[Reinforcement Learning]] safety.
+    - **University of Oxford** (Department of Computer Science) hosts formal-methods and [[Satisfiability]] research including work on [[SMT Solver|SMT]] theories and certified verification tools, intersecting with constraint-based model checking of critical systems.
+    - **Manchester** has a strong tradition in constraint-based scheduling applied to NHS resource planning and industrial logistics; the Alan Turing Institute (headquartered in London with partner institutions across the UK) explicitly lists constrained [[Optimisation]] for public-sector decision-making as a strategic priority.
+    - Northern-England industrial context: Sheffield and Leeds manufacturing sectors have adopted constraint-based scheduling for steel production planning and rail-vehicle assembly routing; the National Railway Laboratory (Derby, opened 2025) is exploring constraint-satisfaction methods for timetable optimisation under disruption.
+
+  - ## Future Directions (2026–2030)
+    - **Neurosymbolic constraint integration**: architectures that embed symbolic constraints directly as differentiable layers in [[Neural Network|neural networks]], enabling end-to-end training that guarantees constraint satisfaction at inference time — extending beyond penalty methods to architecturally enforced feasibility.
+    - **Foundation models as constraint solvers**: large language models fine-tuned on constraint modelling corpora (MiniZinc, XCSP3, Prolog) are beginning to generate solver-ready constraint formulations from natural-language problem descriptions, democratising access to [[Constraint Programming]] for non-specialist practitioners.
+    - **Constraint synthesis from data**: learning constraint specifications from positive and negative examples (constraint acquisition, CONACQ, QUACQ family) combined with active learning to reduce the number of required examples — enabling automatic discovery of business rules and physical laws from operational data.
+    - **Quantum-constraint solvers**: QUBO (quadratic unconstrained binary optimisation) formulations map CSPs to quantum annealing hardware (D-Wave, Fujitsu Digital Annealer); near-term utility for specific constraint families (graph colouring, satisfiability) is under active evaluation, though classical CP-SAT solvers remain dominant for most industrial scales.
+    - **Real-time constraint enforcement in generative AI**: techniques for projecting large language model outputs onto constraint-defined feasible sets (legal compliance, factual accuracy, safety guardrails) without requiring retraining, using constrained decoding, constrained beam search, and retrieval-augmented constraint checking.
+    - **Regulatory-driven constraint formalisation**: the EU AI Act and emerging ISO/IEC AI standards will require machine-readable constraint specifications as part of AI system documentation, driving a new discipline of regulatory constraint engineering that bridges [[Fairness]], [[Safety]], and [[Explainability]] requirements.
+
+  - ## Key Terminology
+    - **Constraint Satisfaction Problem (CSP)**: the canonical decision problem of finding a variable assignment satisfying all constraints; the optimisation variant (COP) seeks the assignment minimising/maximising an objective subject to constraints.
+    - **[[Arc Consistency]] (AC)**: a local consistency property whereby, for every value v in domain Dᵢ, there exists at least one consistent value in each neighbouring domain Dⱼ for each binary constraint between xᵢ and xⱼ. AC-3 is the standard algorithm; stronger notions (PC, k-consistency) eliminate more infeasible values at higher computational cost.
+    - **[[Backtracking Search]]**: a systematic depth-first search algorithm that assigns variables one at a time and backtracks when a partial assignment violates a constraint. Enhanced with conflict-driven clause learning (CDCL), back-jumping, and restarts in modern Boolean SAT solvers (MiniSAT, CaDiCaL, Kissat).
+    - **Global constraint**: a constraint over an arbitrary number of variables that captures complex combinatorial structure and can be propagated in polynomial time despite potentially exponential extension. The AllDifferent, Cumulative, Circuit, and Regular constraints are the canonical examples; the Global Constraint Catalogue (Beldiceanu et al.) documents over 400 global constraints with their propagation algorithms and complexity.
+    - **[[Constraint Programming]] (CP)**: the paradigm of expressing combinatorial problems as sets of constraints over typed variables and solving them with propagation-augmented [[Backtracking Search]]. Commercial systems (IBM ILOG CP Optimizer) and open-source systems (Gecode, OR-Tools, Choco) implement this paradigm. CP excels at heavily constrained scheduling and configuration problems where the combinatorial structure makes pure [[Linear Programming]] inferior.
+    - **[[Linear Programming]] (LP)**: [[Optimisation]] of a linear [[Objective]] over a convex feasible region defined by linear constraints (inequalities and equalities). The simplex method (Dantzig, 1947) and interior-point methods (Karmarkar, 1984) solve LP in polynomial time. LP relaxations of [[Integer Programming]] problems provide lower bounds used in branch-and-bound.
+    - **[[Integer Programming]] (IP / MIP)**: LP with the additional constraint that some or all variables must take integer values. In general NP-hard; solved by branch-and-bound augmented with cutting planes (Gomory cuts, lift-and-project cuts) in commercial solvers (Gurobi, CPLEX, SCIP, HiGHS).
+    - **[[SMT Solver]]**: Satisfiability Modulo Theories solver — extends propositional [[Satisfiability]] with background theories (linear arithmetic, bit-vectors, arrays, uninterpreted functions) to handle constraints from program verification, hardware design, and formal methods. Z3 (Microsoft Research), CVC5, and Yices are the dominant solvers.
+    - **Lagrangian relaxation**: a technique for handling difficult constraints by moving them into the objective with a penalty multiplier (Lagrange multiplier), yielding a relaxed problem that lower-bounds the original. Iterative adjustment of multipliers via subgradient methods tightens the relaxation; widely used in combinatorial [[Optimisation]] and [[Reinforcement Learning]] for CMDP constraint handling.
+    - **[[Regularisation]]**: in [[Machine Learning Discipline]], the addition of constraint-encoding penalty terms to the [[Loss Function]] that prevent overfitting by penalising model complexity. L1 regularisation (lasso) enforces sparse weight vectors; L2 regularisation (ridge) enforces small weight magnitudes; elastic-net combines both. Dropout and batch normalisation can be interpreted as stochastic regularisation mechanisms that implicitly constrain the effective capacity of the [[Neural Network]].
+    - **Constrained MDP (CMDP)**: extension of the [[Markov Decision Process]] where the agent must maximise expected cumulative reward subject to constraints on expected cumulative cost signals, encoding [[Safety]] requirements for [[Reinforcement Learning]] in real-world environments.
+    - **Control Barrier Function (CBF)**: a Lyapunov-like function whose superlevel set defines a safe region of state space; a CBF constraint on the control input guarantees forward invariance of the safe set, providing formal [[Safety]] certificates for continuous dynamical systems under RL control.
+
+  - ## Research & Literature
+    - 1. Waltz, D. (1972). *Understanding line drawings of scenes with shadows*. PhD thesis, MIT — first major constraint propagation in AI vision.
+    - 2. Montanari, U. (1974). Networks of constraints: fundamental properties and applications to picture processing. *Information Sciences*, 7, 95–132.
+    - 3. Mackworth, A. K. (1977). Consistency in networks of relations. *Artificial Intelligence*, 8(1), 99–118. — AC-3 algorithm.
+    - 4. Dantzig, G. B. (1963). *Linear Programming and Extensions*. Princeton University Press.
+    - 5. Freuder, E. C. (1978). Synthesizing constraint expressions. *CACM*, 21(11), 958–966.
+    - 6. Dechter, R. (2003). *Constraint Processing*. Morgan Kaufmann. — definitive graduate textbook.
+    - 7. Marriott, K. & Stuckey, P. J. (1998). *Programming with Constraints: An Introduction*. MIT Press.
+    - 8. Rossi, F., van Beek, P., & Walsh, T. (eds). (2006). *Handbook of Constraint Programming*. Elsevier Science.
+    - 9. Altman, E. (1999). *Constrained Markov Decision Processes*. CRC Press. — CMDP theoretical foundation.
+    - 10. Achiam, J., Held, D., Tamar, A., & Abbeel, P. (2017). Constrained Policy Optimization. *ICML 2017*.
+    - 11. Netzer, A. & Gal, A. (2022). Self-Supervised Transformers as Iterative Solution Improvers for Constraint Satisfaction. arXiv:2502.15794.
+    - 12. Yang, T.-Y., et al. (2024). A Survey of Constraint Formulations in Safe Reinforcement Learning. arXiv:2402.02025.
+    - 13. Survey of Safe Reinforcement Learning and Constrained MDPs (2025). arXiv:2505.17342.
+    - 14. Lombardi, M. & Milano, M. (2018). Boosting combinatorial problem solving with neural networks. arXiv:1803.10957.
+    - 15. Bessiere, C., et al. (2023). Learning constraints from data. *JAIR*, special track.
+    - 16. Akgün, Ö., Miguel, I., et al. (2024). Constraint modelling and reformulation with Conjure/Essence. CP2024, ModRef 2024 Workshop.
+    - 17. Hoffman, R., Akgün, Ö., & Jefferson, C. (2025). Constraint Programming for permutation patterns. University of St Andrews, CP Group.
+    - 18. Zhang, C., et al. (2024). sTRPO: Safe Trust Region Policy Optimisation. NeurIPS 2025, Safety-Gymnasium benchmark evaluation.
+    - 19. Stuckey, P. J. et al. (2014). The MiniZinc Challenge 2008–2013. *AI Magazine*, 35(2), 55–60.
+    - 20. Google. (2023). OR-Tools CP-SAT solver documentation. https://developers.google.com/optimization/reference/python/sat/python/cp_model.
+    - 21. Vayanos, P., Kuhn, D., & Rustem, B. (2012). A constraint satisfaction approach to data-driven distributionally robust optimization. *Operations Research*, 60(2), 275–295.
+    - 22. King's College London. (2024–2025). Using Constraint Programming for disjunctive scheduling in temporal AI planning. KCL Pure. https://kclpure.kcl.ac.uk/portal/en/publications/using-constraint-programming-for-disjunctive-scheduling-in-tempor.
+    - 23. NeurIPS 2025. Workshop on Constrained Optimisation for Machine Learning. https://constrained-opt-ml.github.io/.
+    - 24. NeurIPS 2025. Keynote: Constraint-Aware Generative Models. https://neurips.cc/virtual/2025/loc/san-diego/123339.
+    - 25. JAIR. (2024–2025). Special Track: Constraint Programming and Machine Learning. https://jair.org/index.php/jair/SpecialTrack-CPML.
+    - 26. Biere, A., Heule, M., van Maaren, H., & Walsh, T. (eds). (2021). *Handbook of Satisfiability* (2nd ed.). IOS Press.
+    - 27. European Parliament. (2024). EU AI Act — Regulation (EU) 2024/1689. Official Journal of the European Union, 12 July 2024.
+    - 28. Petrie, K. E. & Smith, B. M. (2003). Symmetry breaking in Grace: lessons learned. *CP 2003*, LNCS 2833.
+
+- ### Provenance
+  - sources:: https://constrained-opt-ml.github.io/, https://jair.org/index.php/jair/SpecialTrack-CPML, https://arxiv.org/abs/2402.02025, https://arxiv.org/html/2505.17342v1, https://arxiv.org/pdf/2502.15794, https://blogs.cs.st-andrews.ac.uk/csblog/2024/09/19/constraint-programming-research-group-at-the-cp2024-conference/, https://kclpure.kcl.ac.uk/portal/en/publications/using-constraint-programming-for-disjunctive-scheduling-in-tempor, https://neurips.cc/virtual/2025/loc/san-diego/123339
+  - migration-date:: 2026-06-20T00:00:00Z
+  - attributedTo:: did:nostr:enrichment-swarm

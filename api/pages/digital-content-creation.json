@@ -138,6 +138,10 @@
   ],
   "backlinks": [
     {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
       "slug": "virtual-world-creation",
       "label": "Virtual World Creation"
     }

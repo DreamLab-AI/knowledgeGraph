@@ -517,6 +517,10 @@
       "label": "Circular Economy"
     },
     {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
       "slug": "object-detection-and-tracking",
       "label": "Object Detection and Tracking"
     },

@@ -75,6 +75,10 @@
   ],
   "backlinks": [
     {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
       "slug": "agent-memory",
       "label": "Agent Memory"
     },

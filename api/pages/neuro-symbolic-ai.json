@@ -100,6 +100,18 @@
       "label": "Automated Reasoning"
     },
     {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
       "slug": "reasoning",
       "label": "Reasoning"
     }

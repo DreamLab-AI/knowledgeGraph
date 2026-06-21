@@ -276,6 +276,10 @@
       "label": "Carbon Accounting"
     },
     {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
       "slug": "compliance-control",
       "label": "Compliance Control"
     },

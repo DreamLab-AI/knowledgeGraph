@@ -142,6 +142,10 @@
       "label": "Compute Infrastructure"
     },
     {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     }

@@ -98,6 +98,10 @@
     {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
     }
   ]
 }

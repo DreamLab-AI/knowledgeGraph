@@ -109,6 +109,10 @@
     {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
     }
   ]
 }

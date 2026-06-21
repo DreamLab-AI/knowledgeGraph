@@ -154,6 +154,10 @@
       "label": "anomaly detection"
     },
     {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
     },

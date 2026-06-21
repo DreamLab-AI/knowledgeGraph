@@ -5,26 +5,140 @@
   "public": true,
   "classIri": "urn:ngm:class:concept-art",
   "domain": "ai",
-  "definition": "Concept art is a form of visual development used to explore and communicate the look, mood, and design of characters, environments, and objects before production. It serves as a pre-production reference that aligns creative direction across games, film, and animation teams. Generative image models have become a common tool for rapidly iterating concept art ideation.",
+  "definition": "Concept art is a discipline of visual development practice in which illustrators, designers, and increasingly AI-assisted workflows produce preliminary visual representations of characters, environments, vehicles, creatures, and props to establish the aesthetic, mood, and functional parameters of an intended creative production before commitment to the labour-intensive downstream stages of 3D modelling, animation, and rendering. It functions as the design language and communication medium between creative direction and production teams across games, film, animation, and extended reality.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-application",
       "label": "AI Application"
+    },
+    {
+      "id": "urn:ngm:class:visual-development",
+      "label": "Visual Development"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:character-design",
+        "label": "Character Design"
+      },
+      {
+        "id": "urn:ngm:class:environment-design",
+        "label": "Environment Design"
+      },
+      {
+        "id": "urn:ngm:class:prop-design",
+        "label": "Prop Design"
+      },
+      {
+        "id": "urn:ngm:class:silhouette-design",
+        "label": "Silhouette Design"
+      },
+      {
+        "id": "urn:ngm:class:colour-palette",
+        "label": "Colour Palette"
+      },
+      {
+        "id": "urn:ngm:class:moodboard",
+        "label": "Moodboard"
+      },
+      {
+        "id": "urn:ngm:class:storyboard",
+        "label": "Storyboard"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:pre-production",
+        "label": "Pre-Production"
+      },
+      {
+        "id": "urn:ngm:class:art-direction",
+        "label": "Art Direction"
+      },
+      {
+        "id": "urn:ngm:class:visual-narrative",
+        "label": "Visual Narrative"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:3d-modeling",
+        "label": "3D Modeling"
+      },
+      {
+        "id": "urn:ngm:class:animation",
+        "label": "Animation"
+      },
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "id": "urn:ngm:class:game-asset-generation",
+        "label": "Game Asset Generation"
+      },
+      {
+        "id": "urn:ngm:class:film-vfx",
+        "label": "Film VFX"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image-generation",
+        "label": "Text-to-Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:style-transfer",
+        "label": "Style Transfer"
+      },
+      {
+        "id": "urn:ngm:class:fine-tuning",
+        "label": "Fine-Tuning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:final-production-art",
+        "label": "Final Production Art"
+      },
+      {
+        "id": "urn:ngm:class:technical-illustration",
+        "label": "Technical Illustration"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:intellectual-property",
+        "label": "Intellectual Property"
+      },
+      {
+        "id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
+      },
+      {
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -33,12 +147,225 @@
         "label": "Midjourney Text-to-Image Service"
       },
       {
-        "id": "urn:ngm:class:proprietary-image-generation",
-        "label": "Proprietary Image Generation"
+        "id": "urn:ngm:class:stable-diffusion",
+        "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:adobe-firefly",
+        "label": "Adobe Firefly"
+      },
+      {
+        "id": "urn:ngm:class:controlnet",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
+      },
+      {
+        "id": "urn:ngm:class:procedural-content-generation",
+        "label": "Procedural Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:generative-design",
+        "label": "Generative Design"
+      },
+      {
+        "id": "urn:ngm:class:ai-art",
+        "label": "AI Art"
+      },
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production-workflow",
+        "label": "Virtual Production Workflow"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "midjourney-text-to-image-service",
+      "label": "Midjourney Text-to-Image Service"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "text-to-image-generation",
+      "label": "Text-to-Image Generation"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "film-production",
+      "label": "Film Production"
+    },
+    {
+      "slug": "game-asset-generation",
+      "label": "Game Asset Generation"
+    },
+    {
+      "slug": "visual-development",
+      "label": "Visual Development"
+    },
+    {
+      "slug": "character-design",
+      "label": "Character Design"
+    },
+    {
+      "slug": "environment-design",
+      "label": "Environment Design"
+    },
+    {
+      "slug": "pre-production",
+      "label": "Pre-Production"
+    },
+    {
+      "slug": "art-direction",
+      "label": "Art Direction"
+    },
+    {
+      "slug": "colour-palette",
+      "label": "Colour Palette"
+    },
+    {
+      "slug": "3d-modeling",
+      "label": "3D Modeling"
+    },
+    {
+      "slug": "animation",
+      "label": "Animation"
+    },
+    {
+      "slug": "game-engine",
+      "label": "Game Engine"
+    },
+    {
+      "slug": "intellectual-property",
+      "label": "Intellectual Property"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "ai-art",
+      "label": "AI Art"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "film-vfx",
+      "label": "Film VFX"
+    },
+    {
+      "slug": "asset-pipeline",
+      "label": "Asset Pipeline"
+    },
+    {
+      "slug": "storyboard",
+      "label": "Storyboard"
+    },
+    {
+      "slug": "moodboard",
+      "label": "Moodboard"
+    },
+    {
+      "slug": "procedural-content-generation",
+      "label": "Procedural Content Generation"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "style-transfer",
+      "label": "Style Transfer"
+    },
+    {
+      "slug": "lora",
+      "label": "LoRA"
+    },
+    {
+      "slug": "controlnet",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "content-production-workflow",
+      "label": "Content Production Workflow"
+    },
+    {
+      "slug": "virtual-production-workflow",
+      "label": "Virtual Production Workflow"
+    },
+    {
+      "slug": "ai-application",
+      "label": "AI Application"
+    },
+    {
+      "slug": "generative-design",
+      "label": "Generative Design"
+    },
+    {
+      "slug": "adobe-firefly",
+      "label": "Adobe Firefly"
+    },
+    {
+      "slug": "copyright",
+      "label": "Copyright"
+    },
+    {
+      "slug": "creative-media-domain",
+      "label": "Creative Media Domain"
+    },
+    {
+      "slug": "visual-narrative",
+      "label": "Visual Narrative"
+    },
+    {
+      "slug": "prop-design",
+      "label": "Prop Design"
+    },
+    {
+      "slug": "silhouette-design",
+      "label": "Silhouette Design"
+    }
+  ],
   "backlinks": [
     {
       "slug": "midjourney-text-to-image-service",

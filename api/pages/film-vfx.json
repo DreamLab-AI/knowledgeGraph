@@ -71,6 +71,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "code-former",
+      "label": "CodeFormer"
+    },
+    {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    },
+    {
       "slug": "face-swap",
       "label": "Face Swap"
     },

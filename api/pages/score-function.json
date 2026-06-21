@@ -75,6 +75,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
       "slug": "sampling",
       "label": "Sampling"
     }

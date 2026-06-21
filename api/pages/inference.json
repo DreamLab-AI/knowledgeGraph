@@ -158,6 +158,22 @@
       "label": "Bayes Theorem"
     },
     {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
       "slug": "knowledge-graphs",
       "label": "Knowledge Graphs"
     }

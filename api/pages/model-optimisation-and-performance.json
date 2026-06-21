@@ -534,6 +534,10 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
       "slug": "fine-tuning",
       "label": "Fine Tuning"
     },

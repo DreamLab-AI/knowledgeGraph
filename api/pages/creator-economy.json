@@ -196,6 +196,14 @@
       "label": "Automated Podcasting"
     },
     {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
       "slug": "creator-royalty-token",
       "label": "Creator Royalty Token"
     },

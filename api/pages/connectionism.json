@@ -96,6 +96,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     }

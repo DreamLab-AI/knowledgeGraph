@@ -103,6 +103,10 @@
     {
       "slug": "api-gateway",
       "label": "API Gateway"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
     }
   ]
 }

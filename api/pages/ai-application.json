@@ -123,6 +123,14 @@
       "label": "Collective Memory Archive"
     },
     {
+      "slug": "comfy-ui-manager",
+      "label": "comfyui manager"
+    },
+    {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    },
+    {
       "slug": "content-addressing",
       "label": "Content Addressing"
     },

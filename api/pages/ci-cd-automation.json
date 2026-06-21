@@ -48,6 +48,10 @@
     {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
     }
   ]
 }

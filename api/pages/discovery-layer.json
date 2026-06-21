@@ -141,6 +141,10 @@
   ],
   "backlinks": [
     {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
       "slug": "etsi-domain-interoperability",
       "label": "ETSI_Domain_Interoperability"
     }

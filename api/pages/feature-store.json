@@ -159,6 +159,14 @@
       "label": "Applied Machine Learning"
     },
     {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    },
+    {
       "slug": "etsi-domain-data-management-ai",
       "label": "ETSI Domain: Data Management + AI"
     },

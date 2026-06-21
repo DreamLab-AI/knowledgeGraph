@@ -159,6 +159,10 @@
       "label": "Applied Machine Learning"
     },
     {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
       "slug": "discovery-layer",
       "label": "Discovery Layer"
     },

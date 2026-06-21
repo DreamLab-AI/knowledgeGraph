@@ -157,6 +157,10 @@
   ],
   "backlinks": [
     {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
+    },
+    {
       "slug": "creator-economy",
       "label": "Creator Economy"
     }

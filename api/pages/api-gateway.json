@@ -792,6 +792,10 @@
       "label": "Access Control System"
     },
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
       "slug": "agent-to-agent-protocol",
       "label": "Agent-to-Agent Protocol"
     },
@@ -830,6 +834,10 @@
     {
       "slug": "digital-workplace-platform",
       "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
     },
     {
       "slug": "identity-management-system",

@@ -10,35 +10,431 @@
     {
       "id": "urn:ngm:class:generative-model",
       "label": "Generative Model"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
+      "id": "urn:ngm:class:adapter-tuning",
+      "label": "Adapter Tuning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
-  "maturity": "emerging",
+  "qualityScore": 0.9,
+  "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "hasPart": [
       {
-        "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
+        "id": "urn:ngm:class:zero-convolution",
+        "label": "Zero Convolution"
+      },
+      {
+        "id": "urn:ngm:class:u-net-encoder-copy",
+        "label": "Trainable Encoder Copy"
+      },
+      {
+        "id": "urn:ngm:class:conditioning-signal",
+        "label": "Conditioning Signal"
+      },
+      {
+        "id": "urn:ngm:class:skip-connection-injection",
+        "label": "Skip Connection Injection"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Pretrained Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data Pairs"
+      },
+      {
+        "id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "id": "urn:ngm:class:conditional-image-generation",
+        "label": "Conditional Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:pose-guided-image-generation",
+        "label": "Pose-Guided Image Generation"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:adapter-tuning",
+        "label": "Adapter Fine-tuning"
+      },
+      {
+        "id": "urn:ngm:class:spatial-conditioning",
+        "label": "Spatial Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:ip-adapter",
+        "label": "IP-Adapter"
+      },
+      {
+        "id": "urn:ngm:class:textual-inversion",
+        "label": "Textual Inversion"
+      },
+      {
+        "id": "urn:ngm:class:t2i-adapter",
+        "label": "T2I-Adapter"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:u-net",
+        "label": "U-Net"
+      },
+      {
+        "id": "urn:ngm:class:zero-convolution",
+        "label": "Zero Convolution"
+      },
+      {
+        "id": "urn:ngm:class:classifier-free-guidance",
+        "label": "Classifier-Free Guidance"
+      },
+      {
+        "id": "urn:ngm:class:openpose",
+        "label": "OpenPose"
+      },
+      {
+        "id": "urn:ngm:class:dwpose",
+        "label": "DWPose"
+      },
+      {
+        "id": "urn:ngm:class:midas",
+        "label": "MiDaS Depth Estimation"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:comfyui-workflows",
         "label": "ComfyUI Workflows"
+      },
+      {
+        "id": "urn:ngm:class:automatic1111",
+        "label": "Automatic1111"
+      },
+      {
+        "id": "urn:ngm:class:architectural-visualisation",
+        "label": "Architectural Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:image-to-image",
+        "label": "Image-to-Image"
       },
       {
         "id": "urn:ngm:class:fooocus",
         "label": "Fooocus"
       }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:control-net",
+        "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
+        "label": "ControlNet and Similar Spatial Conditioning Systems"
+      },
+      {
+        "id": "urn:ngm:class:edge-detection",
+        "label": "Edge Detection"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:pose-estimation",
+        "label": "Pose Estimation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:animatediff",
+        "label": "AnimateDiff"
+      },
+      {
+        "id": "urn:ngm:class:flux-1",
+        "label": "Flux.1"
+      },
+      {
+        "id": "urn:ngm:class:controlnet-plus-plus",
+        "label": "ControlNet++"
+      },
+      {
+        "id": "urn:ngm:class:controlnet-xs",
+        "label": "ControlNet-XS"
+      }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "zero-convolution",
+      "label": "Zero Convolution"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "controlnet",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "spatial-conditioning",
+      "label": "Spatial Conditioning"
+    },
+    {
+      "slug": "conditioning-signal",
+      "label": "Conditioning Signal"
+    },
+    {
+      "slug": "edge-detection",
+      "label": "Edge Detection"
+    },
+    {
+      "slug": "canny-edge-detection",
+      "label": "Canny Edge Detection"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "conditional-image-generation",
+      "label": "Conditional Image Generation"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "adapter-tuning",
+      "label": "Adapter Tuning"
+    },
+    {
+      "slug": "lora",
+      "label": "LoRA"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "textual-inversion",
+      "label": "Textual Inversion"
+    },
+    {
+      "slug": "t2i-adapter",
+      "label": "T2I-Adapter"
+    },
+    {
+      "slug": "comfyui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "node-based-diffusion-pipeline-interface",
+      "label": "Node-Based Diffusion Pipeline Interface"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "automatic1111",
+      "label": "Automatic1111"
+    },
+    {
+      "slug": "hugging-face-diffusers",
+      "label": "Hugging Face Diffusers"
+    },
+    {
+      "slug": "openpose",
+      "label": "OpenPose"
+    },
+    {
+      "slug": "dwpose",
+      "label": "DWPose"
+    },
+    {
+      "slug": "midas-depth-estimation",
+      "label": "MiDaS Depth Estimation"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "neural-network-architecture",
+      "label": "Neural Network Architecture"
+    },
+    {
+      "slug": "backpropagation",
+      "label": "Backpropagation"
+    },
+    {
+      "slug": "image-synthesis",
+      "label": "Conditional Image Synthesis"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "animatediff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "image-to-image",
+      "label": "Image-to-Image"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "sdxl",
+      "label": "SDXL"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "controlnet-plus-plus",
+      "label": "ControlNet++"
+    },
+    {
+      "slug": "controlnet-xs",
+      "label": "ControlNet-XS"
+    },
+    {
+      "slug": "skip-connection-injection",
+      "label": "Skip Connection Injection"
+    },
+    {
+      "slug": "architectural-visualisation",
+      "label": "Architectural Visualisation"
+    },
+    {
+      "slug": "pose-guided-image-generation",
+      "label": "Pose-Guided Image Generation"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    }
+  ],
   "backlinks": [
     {
       "slug": "comfy-ui-workflows",

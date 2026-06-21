@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:commonsense-reasoning",
   "domain": "artificial-intelligence",
-  "definition": "Commonsense reasoning is the ability of an artificial system to make plausible inferences about everyday situations using broad background knowledge that humans take for granted. It covers naive physics, folk psychology, and typical cause-and-effect expectations that are rarely stated explicitly. It remains a long-standing challenge because such knowledge is vast, tacit, and context-dependent.",
+  "definition": "Commonsense reasoning is the ability of an artificial system to make plausible inferences about everyday situations using broad background knowledge that humans take for granted. It covers naive physics, folk psychology, temporal causality, social norms, and typical cause-and-effect expectations that are rarely stated explicitly in text. It remains a long-standing challenge because such knowledge is vast, tacit, and context-dependent, requiring both large-scale knowledge resources and flexible defeasible inference mechanisms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:reasoning",
@@ -13,10 +13,23 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:non-monotonic-reasoning",
+        "label": "Non-Monotonic Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:default-logic",
+        "label": "Default Logic"
+      },
+      {
+        "id": "urn:ngm:class:frame-semantics",
+        "label": "Frame Semantics"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:knowledge-base",
@@ -25,18 +38,42 @@
       {
         "id": "urn:ngm:class:world-model",
         "label": "World Model"
+      },
+      {
+        "id": "urn:ngm:class:inference",
+        "label": "Inference"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:natural-language-understanding",
         "label": "Natural Language Understanding"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:planning",
+        "label": "Planning"
+      },
+      {
+        "id": "urn:ngm:class:conversational-ai",
+        "label": "Conversational AI"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-network",
+        "label": "Semantic Network"
       }
     ],
     "implements": [],
@@ -44,12 +81,20 @@
       {
         "id": "urn:ngm:class:symbolic-reasoning",
         "label": "Symbolic Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:world-model",
         "label": "World Model"
+      },
+      {
+        "id": "urn:ngm:class:embodied-ai",
+        "label": "Embodied AI"
       }
     ],
     "uses": [
@@ -58,14 +103,30 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:inference",
-        "label": "Inference"
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:neural-symbolic-integration",
+        "label": "Neural-Symbolic Integration"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought",
+        "label": "Chain-of-Thought Prompting"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:natural-language-processing",
         "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
       }
     ],
     "standardizedBy": [],
@@ -83,9 +144,186 @@
       {
         "id": "urn:ngm:class:automated-reasoning",
         "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:hallucination",
+        "label": "Hallucination"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:visual-question-answering",
+        "label": "Visual Question Answering"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "symbolic-reasoning",
+      "label": "Symbolic Reasoning"
+    },
+    {
+      "slug": "knowledge-base",
+      "label": "Knowledge Base"
+    },
+    {
+      "slug": "world-model",
+      "label": "World Model"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "inference",
+      "label": "Inference"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "natural-language-understanding",
+      "label": "Natural Language Understanding"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "conceptnet",
+      "label": "ConceptNet"
+    },
+    {
+      "slug": "neural-symbolic-integration",
+      "label": "Neural-Symbolic Integration"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "planning",
+      "label": "Planning"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "frame-semantics",
+      "label": "Frame Semantics"
+    },
+    {
+      "slug": "semantic-network",
+      "label": "Semantic Network"
+    },
+    {
+      "slug": "default-logic",
+      "label": "Default Logic"
+    },
+    {
+      "slug": "non-monotonic-reasoning",
+      "label": "Non-Monotonic Reasoning"
+    },
+    {
+      "slug": "conversational-ai",
+      "label": "Conversational AI"
+    },
+    {
+      "slug": "visual-question-answering",
+      "label": "Visual Question Answering"
+    },
+    {
+      "slug": "embodied-ai",
+      "label": "Embodied AI"
+    },
+    {
+      "slug": "expert-systems",
+      "label": "Expert Systems"
+    },
+    {
+      "slug": "grounding",
+      "label": "Grounding"
+    },
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "benchmarking",
+      "label": "Benchmarking"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "slug": "multi-modal-learning",
+      "label": "Multi-Modal Learning"
+    },
+    {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain-of-Thought Prompting"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    }
+  ],
   "backlinks": []
 }

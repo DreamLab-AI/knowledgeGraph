@@ -132,6 +132,18 @@
       "label": "Chatbots"
     },
     {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },

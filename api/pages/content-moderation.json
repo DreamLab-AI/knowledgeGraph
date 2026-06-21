@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:content-moderation",
   "domain": "artificial-intelligence",
-  "definition": "A systematic process or system for reviewing, filtering, and managing user-generated content to enforce community standards, legal requirements, and platform policies while balancing freedom of expression with safety and compliance.",
+  "definition": "Content Moderation is a systematic sociotechnical process for reviewing, classifying, filtering, and actioning user-generated and AI-generated media to enforce community standards, legal requirements, and platform policies, combining [[Machine Learning Models]], [[Natural Language Processing]], computer vision classifiers, and [[Human Moderators]] in hybrid pipelines that balance [[Harmful Content Prevention]] with [[Regulatory Compliance]] and freedom of expression, operating at scale under obligations imposed by frameworks including the [[EU AI Act]], the EU Digital Services Act, and the UK Online Safety Act.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-governance-and-ethics",
@@ -17,45 +17,115 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:policy-engine",
+        "id": "urn:ngm:class:policy-enforcement-engine",
         "label": "Policy Enforcement Engine"
+      },
+      {
+        "id": "urn:ngm:class:automated-filtering",
+        "label": "Automated Filtering"
+      },
+      {
+        "id": "urn:ngm:class:human-review-workflow",
+        "label": "Human Review Workflow"
+      },
+      {
+        "id": "urn:ngm:class:appeal-process",
+        "label": "Appeal Process"
+      },
+      {
+        "id": "urn:ngm:class:content-classification-system",
+        "label": "Content Classification System"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:community-standards",
         "label": "Community Standards"
+      },
+      {
+        "id": "urn:ngm:class:moderation-policy",
+        "label": "Moderation Policy"
+      },
+      {
+        "id": "urn:ngm:class:content-analysis-tools",
+        "label": "Content Analysis Tools"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-models",
+        "label": "Machine Learning Models"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:regulatory-compliance",
         "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:safe-user-experience",
+        "label": "Safe User Experience"
+      },
+      {
+        "id": "urn:ngm:class:harmful-content-prevention",
+        "label": "Harmful Content Prevention"
+      },
+      {
+        "id": "urn:ngm:class:community-guidelines-enforcement",
+        "label": "Community Guidelines Enforcement"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:content-generation",
+        "label": "Content Generation"
+      },
+      {
+        "id": "urn:ngm:class:freedom-of-expression",
+        "label": "Freedom of Expression"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [
+    "partOf": [],
+    "relatedTo": [
       {
-        "id": "urn:ngm:class:platform-governance",
-        "label": "Platform Governance System"
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
       },
       {
-        "id": "urn:ngm:class:trust-and-safety",
-        "label": "Trust and Safety Infrastructure"
+        "id": "urn:ngm:class:bias-in-ai",
+        "label": "Bias in AI"
+      },
+      {
+        "id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-media",
+        "label": "Synthetic Media"
       }
-    ],
-    "relatedTo": []
+    ]
   },
   "wikilinks": [
     {
@@ -157,6 +227,74 @@
     {
       "slug": "virtual-society",
       "label": "VirtualSocietyDomain"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "ai-ethics",
+      "label": "AI Ethics"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "bias-in-ai",
+      "label": "Bias in AI"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "dsa-transparency-database",
+      "label": "DSA Transparency Database"
+    },
+    {
+      "slug": "online-safety-act",
+      "label": "Online Safety Act"
+    },
+    {
+      "slug": "watermarking",
+      "label": "Watermarking"
     }
   ],
   "backlinks": [
@@ -175,6 +313,18 @@
     {
       "slug": "community-standards",
       "label": "Community Standards"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
     },
     {
       "slug": "digital-society-harms",

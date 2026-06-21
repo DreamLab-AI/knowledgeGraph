@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:classification",
   "domain": "machine-learning",
-  "definition": "Classification is a supervised machine learning task in which a model learns a mapping from input features to a discrete set of predefined category labels, using labelled training examples to optimise decision boundaries. At inference time the model assigns each unseen input to one or more categories by applying a learned discriminant function or probabilistic scoring rule. The task encompasses binary, multi-class, and multi-label variants, and underpins applications ranging from image recognition and natural language understanding to medical diagnosis and fraud detection. Performance is evaluated with metrics such as accuracy, precision, recall, F1-score, and the area under the receiver-operating-characteristic curve, selected according to class imbalance and the relative cost of false positives versus false negatives.",
+  "definition": "Classification is a supervised machine learning task in which a model learns a mapping from input features to a discrete set of predefined category labels, using labelled training examples to optimise decision boundaries or probabilistic scoring rules. At inference time the model assigns each unseen input to one or more categories by applying a learned discriminant function or probabilistic scoring rule. The task encompasses binary, multi-class, and multi-label variants, and underpins applications ranging from image recognition and natural language understanding to medical diagnosis and fraud detection. Performance is evaluated with metrics such as accuracy, precision, recall, F1-score, and the area under the receiver-operating-characteristic curve, selected according to class imbalance and the relative cost of false positives versus false negatives.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:supervised-learning",
@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.75,
+  "qualityScore": 0.9,
   "maturity": "mature",
   "relationships": {
     "hasPart": [],
@@ -140,6 +140,290 @@
     {
       "slug": "statistical-learning-theory",
       "label": "Statistical Learning Theory"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "pattern-recognition",
+      "label": "Pattern Recognition"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "regression",
+      "label": "Regression"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "support-vector-machine",
+      "label": "Support Vector Machine"
+    },
+    {
+      "slug": "decision-tree",
+      "label": "Decision Tree"
+    },
+    {
+      "slug": "random-forest",
+      "label": "Random Forest"
+    },
+    {
+      "slug": "gradient-boosted-trees",
+      "label": "Gradient Boosted Trees"
+    },
+    {
+      "slug": "logistic-regression",
+      "label": "Logistic Regression"
+    },
+    {
+      "slug": "naive-bayes",
+      "label": "Naive Bayes"
+    },
+    {
+      "slug": "k-nearest-neighbours",
+      "label": "K-Nearest Neighbours"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "labelled-dataset",
+      "label": "Labelled Dataset"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross Validation"
+    },
+    {
+      "slug": "hyperparameter-tuning",
+      "label": "Hyperparameter Tuning"
+    },
+    {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
+    },
+    {
+      "slug": "pac-learning",
+      "label": "PAC Learning"
+    },
+    {
+      "slug": "statistical-decision-theory",
+      "label": "Statistical Decision Theory"
+    },
+    {
+      "slug": "empirical-risk-minimisation",
+      "label": "Empirical Risk Minimisation"
+    },
+    {
+      "slug": "representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "slug": "meta-learning",
+      "label": "Meta-Learning"
+    },
+    {
+      "slug": "zero-shot-learning",
+      "label": "Zero-Shot Learning"
+    },
+    {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
+      "slug": "class-imbalance",
+      "label": "Class Imbalance"
+    },
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "roc-curve",
+      "label": "ROC Curve"
+    },
+    {
+      "slug": "classification-threshold",
+      "label": "Classification Threshold"
+    },
+    {
+      "slug": "probability-calibration",
+      "label": "Probability Calibration"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "binary-classification",
+      "label": "Binary Classification"
+    },
+    {
+      "slug": "multi-class-classification",
+      "label": "Multi-Class Classification"
+    },
+    {
+      "slug": "multi-label-classification",
+      "label": "Multi-Label Classification"
+    },
+    {
+      "slug": "hierarchical-classification",
+      "label": "Hierarchical Classification"
+    },
+    {
+      "slug": "ordinal-classification",
+      "label": "Ordinal Classification"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "image-recognition",
+      "label": "Image Recognition"
+    },
+    {
+      "slug": "spam-filtering",
+      "label": "Spam Filtering"
+    },
+    {
+      "slug": "fraud-detection",
+      "label": "Fraud Detection"
+    },
+    {
+      "slug": "medical-diagnosis-ai",
+      "label": "Medical Diagnosis AI"
+    },
+    {
+      "slug": "robotic-perception",
+      "label": "Robotic Perception"
+    },
+    {
+      "slug": "text-classification",
+      "label": "Text Classification"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "intent-detection",
+      "label": "Intent Detection"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "bioinformatics",
+      "label": "Bioinformatics"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "ai-fairness",
+      "label": "AI Fairness"
+    },
+    {
+      "slug": "ai-governance",
+      "label": "AI Governance"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "nist-ai-rmf",
+      "label": "NIST AI RMF"
+    },
+    {
+      "slug": "precision-recall-curve",
+      "label": "Precision-Recall Curve"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "semi-supervised-learning",
+      "label": "Semi-Supervised Learning"
+    },
+    {
+      "slug": "ensemble-method",
+      "label": "Ensemble Method"
+    },
+    {
+      "slug": "automl",
+      "label": "AutoML"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
     }
   ],
   "backlinks": [
@@ -154,6 +438,14 @@
     {
       "slug": "anomaly-detection",
       "label": "anomaly detection"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
     },
     {
       "slug": "pattern-recognition",

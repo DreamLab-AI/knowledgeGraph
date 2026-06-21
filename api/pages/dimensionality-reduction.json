@@ -158,6 +158,10 @@
       "label": "Bias-Variance Tradeoff"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
       "slug": "feature-importance",
       "label": "Feature Importance"
     },

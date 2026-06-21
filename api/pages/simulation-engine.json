@@ -145,6 +145,10 @@
       "label": "Compute Layer"
     },
     {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
       "slug": "digital-twin",
       "label": "Digital Twin"
     }

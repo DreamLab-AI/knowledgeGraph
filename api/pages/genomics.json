@@ -89,6 +89,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
       "slug": "precision-medicine",
       "label": "Precision Medicine"
     },

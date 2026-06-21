@@ -141,6 +141,18 @@
       "label": "Bayesian Decision Theory"
     },
     {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
       "slug": "economics",
       "label": "Economics"
     },

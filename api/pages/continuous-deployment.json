@@ -99,5 +99,14 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    }
+  ]
 }

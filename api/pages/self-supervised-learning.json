@@ -161,6 +161,26 @@
       "label": "automatic speech recognition"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "code-former",
+      "label": "CodeFormer"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

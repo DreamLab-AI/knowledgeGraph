@@ -164,6 +164,10 @@
       "label": "Bias-Variance Tradeoff"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

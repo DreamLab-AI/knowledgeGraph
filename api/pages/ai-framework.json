@@ -93,6 +93,10 @@
       "label": "Autonomous Agent"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
       "slug": "intelligent-virtual-entity",
       "label": "Intelligent Virtual Entity"
     }

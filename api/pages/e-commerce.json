@@ -131,6 +131,10 @@
       "label": "Chatbots"
     },
     {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
       "slug": "customer-experience-management",
       "label": "Customer Experience Management"
     },

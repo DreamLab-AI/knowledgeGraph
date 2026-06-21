@@ -156,6 +156,14 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
     },

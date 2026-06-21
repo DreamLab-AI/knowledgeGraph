@@ -136,6 +136,10 @@
   ],
   "backlinks": [
     {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
       "slug": "differential-equations",
       "label": "Differential Equations"
     },

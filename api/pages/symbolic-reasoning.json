@@ -87,6 +87,14 @@
     {
       "slug": "automated-reasoning",
       "label": "Automated Reasoning"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
     }
   ]
 }

@@ -211,6 +211,10 @@
       "label": "Beam Search"
     },
     {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
       "slug": "natural-language-processing",
       "label": "Natural Language Processing"
     },

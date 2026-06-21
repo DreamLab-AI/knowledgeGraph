@@ -13,13 +13,21 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:zero-convolution",
         "label": "Zero Convolution"
+      },
+      {
+        "id": "urn:ngm:class:u-net",
+        "label": "Trainable Encoder Copy"
+      },
+      {
+        "id": "urn:ngm:class:image-conditioning",
+        "label": "Control Preprocessor"
       }
     ],
     "requires": [
@@ -33,7 +41,15 @@
       },
       {
         "id": "urn:ngm:class:fine-tuning",
-        "label": "Fine Tuning"
+        "label": "Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
       }
     ],
     "enables": [
@@ -48,6 +64,18 @@
       {
         "id": "urn:ngm:class:image-synthesis",
         "label": "Conditional Image Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:data-augmentation",
+        "label": "Data Augmentation"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging Synthesis"
       }
     ],
     "dependsOn": [
@@ -58,6 +86,10 @@
       {
         "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
       }
     ],
     "implements": [],
@@ -73,6 +105,10 @@
       {
         "id": "urn:ngm:class:textual-inversion",
         "label": "Textual Inversion"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
       }
     ],
     "bridgesTo": [
@@ -83,6 +119,14 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
       }
     ],
     "uses": [
@@ -109,6 +153,10 @@
       {
         "id": "urn:ngm:class:stable-diffusion-image-model",
         "label": "Stable Diffusion"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
       }
     ],
     "supports": [],
@@ -134,10 +182,191 @@
       {
         "id": "urn:ngm:class:adapter-tuning",
         "label": "Adapter Tuning"
+      },
+      {
+        "id": "urn:ngm:class:noise-schedule",
+        "label": "Noise Schedule"
+      },
+      {
+        "id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-model",
+        "label": "Multimodal Model"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "u-net",
+      "label": "U-Net"
+    },
+    {
+      "slug": "zero-convolution",
+      "label": "Zero Convolution"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "Classifier-Free Guidance"
+    },
+    {
+      "slug": "stable-diffusion-image-model",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text-to-Image"
+    },
+    {
+      "slug": "image-synthesis",
+      "label": "Conditional Image Synthesis"
+    },
+    {
+      "slug": "neural-network-architecture",
+      "label": "Neural Network Architecture"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "lora",
+      "label": "LoRA"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "textual-inversion",
+      "label": "Textual Inversion"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "edge-detection",
+      "label": "Edge Detection"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "adapter-tuning",
+      "label": "Adapter Tuning"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "data-augmentation",
+      "label": "Data Augmentation"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "image-conditioning",
+      "label": "Image Conditioning"
+    },
+    {
+      "slug": "denoising-diffusion",
+      "label": "Denoising Diffusion"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "comfyui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "synthetic-data",
+      "label": "Synthetic Data"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical Imaging"
+    },
+    {
+      "slug": "noise-schedule",
+      "label": "Noise Schedule"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "multimodal-model",
+      "label": "Multimodal Model"
+    },
+    {
+      "slug": "ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-upscaling-and-super-resolution",
@@ -152,8 +381,16 @@
       "label": "AUTOMATIC1111 WebUI"
     },
     {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-manager",
+      "label": "comfyui manager"
     },
     {
       "slug": "comfy-ui-workflows",

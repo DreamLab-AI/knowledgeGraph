@@ -46,6 +46,10 @@
       "label": "Camera"
     },
     {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
       "slug": "eye-tracking",
       "label": "Eye Tracking"
     }

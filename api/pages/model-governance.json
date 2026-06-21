@@ -110,6 +110,10 @@
     {
       "slug": "ai-risk-register",
       "label": "AI Risk Register"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
     }
   ]
 }

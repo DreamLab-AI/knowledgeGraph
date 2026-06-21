@@ -1,0 +1,328 @@
+{
+  "id": "urn:visionflow:page:agent-memory-layers",
+  "title": "Agent Memory Layers",
+  "slug": "agent-memory-layers",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-memory-layers",
+  "domain": "ai",
+  "definition": "Persistent memory systems for AI agents providing contextual recall across sessions through vector retrieval, automatic summarisation, and state management \u2014 includes Mem0, letta, claude-mem, and agentlog.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:episodic-memory",
+        "label": "Episodic Memory"
+      },
+      {
+        "id": "urn:ngm:class:semantic-memory",
+        "label": "Semantic Memory"
+      },
+      {
+        "id": "urn:ngm:class:procedural-memory",
+        "label": "Procedural Memory"
+      },
+      {
+        "id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:embeddings",
+        "label": "Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:context-window",
+        "label": "Context Window"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:personalisation",
+        "label": "Personalisation"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:personal-agent-runtimes",
+        "label": "Personal Agent Runtimes"
+      },
+      {
+        "id": "urn:ngm:class:progressive-disclosure-harnesses",
+        "label": "Progressive Disclosure Harnesses"
+      },
+      {
+        "id": "urn:ngm:class:agent-memory",
+        "label": "Agent Memory"
+      },
+      {
+        "id": "urn:ngm:class:agentic-rag",
+        "label": "Agentic RAG"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "embeddings",
+      "label": "Embeddings"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "context-window",
+      "label": "Context Window"
+    },
+    {
+      "slug": "episodic-memory",
+      "label": "Episodic Memory"
+    },
+    {
+      "slug": "semantic-memory",
+      "label": "Semantic Memory"
+    },
+    {
+      "slug": "procedural-memory",
+      "label": "Procedural Memory"
+    },
+    {
+      "slug": "working-memory",
+      "label": "Working Memory"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "agent-loop",
+      "label": "Agent Loop"
+    },
+    {
+      "slug": "multi-agent-system",
+      "label": "Multi-Agent System"
+    },
+    {
+      "slug": "personalisation",
+      "label": "Personalisation"
+    },
+    {
+      "slug": "consolidation",
+      "label": "Consolidation"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "pgvector",
+      "label": "pgvector"
+    },
+    {
+      "slug": "weaviate",
+      "label": "Weaviate"
+    },
+    {
+      "slug": "pinecone",
+      "label": "Pinecone"
+    },
+    {
+      "slug": "privacy",
+      "label": "Privacy"
+    },
+    {
+      "slug": "gdpr",
+      "label": "GDPR"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "task-automation",
+      "label": "Task Automation"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "ai-infrastructure",
+      "label": "AI Infrastructure"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
+      "slug": "temporal-reasoning",
+      "label": "Temporal Reasoning"
+    },
+    {
+      "slug": "forgetting",
+      "label": "Forgetting"
+    },
+    {
+      "slug": "hallucination",
+      "label": "Hallucination"
+    },
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "coala",
+      "label": "CoALA"
+    },
+    {
+      "slug": "reflexion-pattern",
+      "label": "Reflexion Pattern"
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "foundation-model",
+      "label": "Foundation Model"
+    },
+    {
+      "slug": "in-context-learning",
+      "label": "In-Context Learning"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "self-reflection",
+      "label": "Self-Reflection"
+    },
+    {
+      "slug": "compression",
+      "label": "Compression"
+    },
+    {
+      "slug": "act-r",
+      "label": "ACT-R"
+    },
+    {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
+    }
+  ]
+}

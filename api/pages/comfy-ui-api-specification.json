@@ -10,14 +10,48 @@
     {
       "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
       "label": "ComfyUI Workflows"
+    },
+    {
+      "id": "urn:ngm:class:rest-api",
+      "label": "REST API"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.9,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:prompt-endpoint",
+        "label": "Prompt Endpoint"
+      },
+      {
+        "id": "urn:ngm:class:web-socket-protocol",
+        "label": "WebSocket Protocol"
+      },
+      {
+        "id": "urn:ngm:class:queue-management-api",
+        "label": "Queue Management API"
+      },
+      {
+        "id": "urn:ngm:class:object-info-endpoint",
+        "label": "Object Info Endpoint"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:comfy-ui",
+        "label": "ComfyUI"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:python-runtime",
+        "label": "Python Runtime"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:content-creation-pipeline",
@@ -26,11 +60,41 @@
       {
         "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-for-fashion-and-brands",
         "label": "ComfyUI for Fashion and Brands"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:batch-image-processing",
+        "label": "Batch Image Processing"
+      },
+      {
+        "id": "urn:ngm:class:inference-orchestration-system",
+        "label": "Inference Orchestration System"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:directed-acyclic-graph-execution",
+        "label": "Directed Acyclic Graph Execution"
+      },
+      {
+        "id": "urn:ngm:class:workflow-json-format",
+        "label": "Workflow JSON Format"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:invoke-ai",
+        "label": "InvokeAI"
+      },
+      {
+        "id": "urn:ngm:class:automatic1111-web-ui",
+        "label": "AUTOMATIC1111 WebUI"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -40,10 +104,23 @@
       {
         "id": "urn:ngm:class:node-based-diffusion-pipeline-interface-client",
         "label": "ComfyUI Client"
+      },
+      {
+        "id": "urn:ngm:class:json-serialisation",
+        "label": "JSON Serialisation"
+      },
+      {
+        "id": "urn:ngm:class:aiohttp",
+        "label": "aiohttp"
       }
     ],
     "supports": [],
-    "standardizedBy": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:comfy-org-git-hub-organisation",
+        "label": "Comfy-Org GitHub Organisation"
+      }
+    ],
     "partOf": [],
     "relatedTo": [
       {
@@ -53,14 +130,263 @@
       {
         "id": "urn:ngm:class:agentic-workflow",
         "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:invoke-ai",
+        "label": "InvokeAI"
+      },
+      {
+        "id": "urn:ngm:class:automatic1111-web-ui",
+        "label": "AUTOMATIC1111 WebUI"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-manager",
+      "label": "ComfyUI Manager"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "content-creation-pipeline",
+      "label": "Content Creation Pipeline"
+    },
+    {
+      "slug": "rest-api",
+      "label": "REST API"
+    },
+    {
+      "slug": "web-socket-protocol",
+      "label": "WebSocket Protocol"
+    },
+    {
+      "slug": "json-serialisation",
+      "label": "JSON Serialisation"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "text-to-image-generation",
+      "label": "Text-to-Image Generation"
+    },
+    {
+      "slug": "image-to-image-generation",
+      "label": "Image-to-Image Generation"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "control-net",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "lo-ra",
+      "label": "LoRA"
+    },
+    {
+      "slug": "directed-acyclic-graph-execution",
+      "label": "Directed Acyclic Graph Execution"
+    },
+    {
+      "slug": "workflow-execution-engine",
+      "label": "Workflow Execution Engine"
+    },
+    {
+      "slug": "workflow-json-format",
+      "label": "Workflow JSON Format"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "py-torch",
+      "label": "PyTorch"
+    },
+    {
+      "slug": "python-runtime",
+      "label": "Python Runtime"
+    },
+    {
+      "slug": "aiohttp",
+      "label": "aiohttp"
+    },
+    {
+      "slug": "inference-orchestration-system",
+      "label": "Inference Orchestration System"
+    },
+    {
+      "slug": "latent-diffusion-pipeline",
+      "label": "Latent Diffusion Pipeline"
+    },
+    {
+      "slug": "ksampler",
+      "label": "KSampler"
+    },
+    {
+      "slug": "checkpoint-loader",
+      "label": "CheckpointLoader"
+    },
+    {
+      "slug": "vae",
+      "label": "VAE"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "sdxl",
+      "label": "SDXL"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "model-checkpoint",
+      "label": "Model Checkpoint"
+    },
+    {
+      "slug": "invoke-ai",
+      "label": "InvokeAI"
+    },
+    {
+      "slug": "automatic1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI"
+    },
+    {
+      "slug": "hugging-face-hub",
+      "label": "Hugging Face Hub"
+    },
+    {
+      "slug": "batch-image-processing",
+      "label": "Batch Image Processing"
+    },
+    {
+      "slug": "node-based-visual-programming",
+      "label": "Node-Based Visual Programming"
+    },
+    {
+      "slug": "latent-tensor",
+      "label": "Latent Tensor"
+    },
+    {
+      "slug": "workflow-serialisation",
+      "label": "Workflow Serialisation"
+    },
+    {
+      "slug": "comfy-org-git-hub-organisation",
+      "label": "Comfy-Org GitHub Organisation"
+    },
+    {
+      "slug": "workflow-node",
+      "label": "Workflow Node"
+    },
+    {
+      "slug": "node-link",
+      "label": "Node Link"
+    },
+    {
+      "slug": "png-metadata-embedding",
+      "label": "PNG Metadata Embedding"
+    },
+    {
+      "slug": "comfyanonymous-2023-comfy-ui",
+      "label": "comfyanonymous 2023 ComfyUI"
+    },
+    {
+      "slug": "tech-crunch-2026-comfy-ui-500-m-valuation",
+      "label": "TechCrunch 2026 ComfyUI $500M Valuation"
+    },
+    {
+      "slug": "salad-technologies-2024-comfyui-api",
+      "label": "Salad Technologies 2024 comfyui-api"
+    },
+    {
+      "slug": "view-comfy-2025-production-api-guide",
+      "label": "ViewComfy 2025 Production API Guide"
+    },
+    {
+      "slug": "bento-ml-2025-comfy-pack",
+      "label": "BentoML 2025 comfy-pack"
+    },
+    {
+      "slug": "comfy-org-2024-workflow-json-spec",
+      "label": "Comfy-Org 2024 Workflow JSON Spec"
+    },
+    {
+      "slug": "comfy-org-2025-workflow-templates",
+      "label": "Comfy-Org 2025 Workflow Templates"
+    },
+    {
+      "slug": "run-pod-2024-serverless-comfyui",
+      "label": "RunPod 2024 Serverless ComfyUI"
+    },
+    {
+      "slug": "openart-workflow-registry",
+      "label": "OpenArt Workflow Registry"
+    },
+    {
+      "slug": "civitai-workflow-sharing",
+      "label": "Civitai Workflow Sharing"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "ComfyUI for Fashion and Brands"
+    }
+  ],
   "backlinks": [
     {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-manager",
+      "label": "comfyui manager"
     },
     {
       "slug": "comfy-ui-workflows",

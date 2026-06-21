@@ -140,6 +140,10 @@
     {
       "slug": "collective-learning",
       "label": "Collective Learning"
+    },
+    {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
     }
   ]
 }

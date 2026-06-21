@@ -192,12 +192,32 @@
       "label": "Checkpoints"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
       "slug": "inference-layer",
       "label": "Inference Layer"
     },
     {
       "slug": "inference-serving",
       "label": "Inference Serving"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
     },
     {
       "slug": "model-optimization",

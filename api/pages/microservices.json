@@ -156,6 +156,18 @@
       "label": "Blockchain As A Service"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
+    },
+    {
       "slug": "data-layer",
       "label": "Data Layer"
     },

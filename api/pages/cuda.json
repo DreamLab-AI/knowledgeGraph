@@ -137,6 +137,10 @@
       "label": "Compute Infrastructure"
     },
     {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
       "slug": "gaussian-splatting",
       "label": "Gaussian Splatting"
     },

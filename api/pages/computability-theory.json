@@ -10,10 +10,14 @@
     {
       "id": "urn:ngm:class:computational-complexity-theory",
       "label": "Computational Complexity Theory"
+    },
+    {
+      "id": "urn:ngm:class:mathematical-logic",
+      "label": "Mathematical Logic"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
@@ -24,18 +28,62 @@
       {
         "id": "urn:ngm:class:formal-language",
         "label": "Formal Language"
+      },
+      {
+        "id": "urn:ngm:class:turing-machine",
+        "label": "Turing Machine"
+      },
+      {
+        "id": "urn:ngm:class:lambda-calculus",
+        "label": "Lambda Calculus"
+      },
+      {
+        "id": "urn:ngm:class:recursive-function",
+        "label": "Recursive Function"
+      },
+      {
+        "id": "urn:ngm:class:decidability",
+        "label": "Decidability"
+      },
+      {
+        "id": "urn:ngm:class:turing-degree",
+        "label": "Turing Degree"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:mathematical-logic",
         "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:proof-theory",
+        "label": "Proof Theory"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:automata-theory",
         "label": "Automata Theory"
+      },
+      {
+        "id": "urn:ngm:class:programme-verification",
+        "label": "Programme Verification"
+      },
+      {
+        "id": "urn:ngm:class:automated-theorem-proving",
+        "label": "Automated Theorem Proving"
+      },
+      {
+        "id": "urn:ngm:class:programming-language-theory",
+        "label": "Programming Language Theory"
+      },
+      {
+        "id": "urn:ngm:class:model-checking",
+        "label": "Model Checking"
       }
     ],
     "dependsOn": [
@@ -48,11 +96,24 @@
         "label": "Set Theory"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:church-turing-thesis",
+        "label": "Church-Turing Thesis"
+      },
+      {
+        "id": "urn:ngm:class:reduction",
+        "label": "Reduction"
+      }
+    ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:computational-complexity-theory",
         "label": "Computational Complexity Theory"
+      },
+      {
+        "id": "urn:ngm:class:hypercomputation",
+        "label": "Hypercomputation"
       }
     ],
     "bridgesTo": [
@@ -62,14 +123,22 @@
       }
     ],
     "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [
+    "supports": [
       {
-        "id": "urn:ngm:class:computational-complexity-theory",
-        "label": "Computational Complexity Theory"
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:automated-reasoning",
+        "label": "Automated Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
       }
     ],
+    "standardizedBy": [],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:algorithm",
@@ -82,9 +151,191 @@
       {
         "id": "urn:ngm:class:formal-language",
         "label": "Formal Language"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:kolmogorov-complexity",
+        "label": "Kolmogorov Complexity"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:godel-incompleteness",
+        "label": "G\u00f6del Incompleteness Theorems"
+      },
+      {
+        "id": "urn:ngm:class:type-theory",
+        "label": "Type Theory"
       }
     ]
   },
-  "wikilinks": [],
-  "backlinks": []
+  "wikilinks": [
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "mathematical-logic",
+      "label": "Mathematical Logic"
+    },
+    {
+      "slug": "set-theory",
+      "label": "Set Theory"
+    },
+    {
+      "slug": "automata-theory",
+      "label": "Automata Theory"
+    },
+    {
+      "slug": "formal-language",
+      "label": "Formal Language"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "turing-machine",
+      "label": "Turing Machine"
+    },
+    {
+      "slug": "lambda-calculus",
+      "label": "Lambda Calculus"
+    },
+    {
+      "slug": "recursive-function",
+      "label": "Recursive Function"
+    },
+    {
+      "slug": "halting-problem",
+      "label": "Halting Problem"
+    },
+    {
+      "slug": "church-turing-thesis",
+      "label": "Church-Turing Thesis"
+    },
+    {
+      "slug": "decidability",
+      "label": "Decidability"
+    },
+    {
+      "slug": "undecidability",
+      "label": "Undecidability"
+    },
+    {
+      "slug": "oracle-computation",
+      "label": "Oracle Computation"
+    },
+    {
+      "slug": "turing-degree",
+      "label": "Turing Degree"
+    },
+    {
+      "slug": "rice-theorem",
+      "label": "Rice's Theorem"
+    },
+    {
+      "slug": "post-correspondence-problem",
+      "label": "Post Correspondence Problem"
+    },
+    {
+      "slug": "kolmogorov-complexity",
+      "label": "Kolmogorov Complexity"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "proof-theory",
+      "label": "Proof Theory"
+    },
+    {
+      "slug": "type-theory",
+      "label": "Type Theory"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "hypercomputation",
+      "label": "Hypercomputation"
+    },
+    {
+      "slug": "programme-verification",
+      "label": "Programme Verification"
+    },
+    {
+      "slug": "automated-theorem-proving",
+      "label": "Automated Theorem Proving"
+    },
+    {
+      "slug": "model-checking",
+      "label": "Model Checking"
+    },
+    {
+      "slug": "programming-language-theory",
+      "label": "Programming Language Theory"
+    },
+    {
+      "slug": "descriptive-complexity",
+      "label": "Descriptive Complexity"
+    },
+    {
+      "slug": "reverse-mathematics",
+      "label": "Reverse Mathematics"
+    },
+    {
+      "slug": "godel-incompleteness",
+      "label": "G\u00f6del Incompleteness Theorems"
+    },
+    {
+      "slug": "reduction",
+      "label": "Reduction"
+    },
+    {
+      "slug": "enumeration",
+      "label": "Enumeration"
+    },
+    {
+      "slug": "semi-decidability",
+      "label": "Semi-Decidability"
+    },
+    {
+      "slug": "fixed-point-theorem",
+      "label": "Fixed-Point Theorem"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    }
+  ]
 }

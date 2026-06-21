@@ -550,6 +550,10 @@
       "label": "Compliance Control"
     },
     {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "cross-border-compliance",
       "label": "Cross Border Compliance"
     },

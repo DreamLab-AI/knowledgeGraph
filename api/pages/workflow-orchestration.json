@@ -45,8 +45,16 @@
       "label": "AI Agent"
     },
     {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
       "slug": "function-calling",
       "label": "Function Calling"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
     }
   ]
 }

@@ -99,6 +99,10 @@
       "label": "Back-Translation"
     },
     {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
       "slug": "machine-translation",
       "label": "Machine Translation"
     },

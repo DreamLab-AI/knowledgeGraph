@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
     },

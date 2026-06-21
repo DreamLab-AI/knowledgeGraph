@@ -119,6 +119,10 @@
   ],
   "backlinks": [
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
       "slug": "markov-decision-process",
       "label": "Markov Decision Process"
     },

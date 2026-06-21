@@ -157,6 +157,10 @@
       "label": "Accountability (AI-0068)"
     },
     {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
       "slug": "ncsc",
       "label": "NCSC"
     },

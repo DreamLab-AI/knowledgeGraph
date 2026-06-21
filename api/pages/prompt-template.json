@@ -76,12 +76,24 @@
       "label": "AI Diagram Tools"
     },
     {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
     },
     {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
     },
     {
       "slug": "retrieval-augmented-generation-rag",

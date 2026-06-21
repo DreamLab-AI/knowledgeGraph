@@ -89,6 +89,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "closed-world-assumption",
+      "label": "Closed World Assumption"
+    },
+    {
       "slug": "graph-database",
       "label": "Graph Database"
     },

@@ -164,6 +164,14 @@
       "label": "ADR-012"
     },
     {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
       "slug": "middleware",
       "label": "Middleware"
     },

@@ -216,6 +216,26 @@
     {
       "slug": "classification-rules",
       "label": "Classification Rules"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
     }
   ]
 }

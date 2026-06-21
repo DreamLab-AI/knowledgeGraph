@@ -102,6 +102,14 @@
     {
       "slug": "ai-inference",
       "label": "AI Inference"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
     }
   ]
 }

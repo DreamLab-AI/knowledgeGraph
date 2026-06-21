@@ -176,6 +176,22 @@
       "label": "Classical Planning"
     },
     {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

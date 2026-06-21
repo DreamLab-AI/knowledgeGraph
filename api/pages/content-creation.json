@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -25,6 +25,10 @@
       {
         "id": "urn:ngm:class:digital-asset-management",
         "label": "Digital Asset Management"
+      },
+      {
+        "id": "urn:ngm:class:editorial-workflow",
+        "label": "Editorial Workflow"
       }
     ],
     "enables": [
@@ -62,16 +66,15 @@
     "implements": [],
     "contrastsWith": [
       {
+        "id": "urn:ngm:class:content-curation",
+        "label": "Content Curation"
+      },
+      {
         "id": "urn:ngm:class:user-generated-content",
         "label": "User-Generated Content"
       }
     ],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:nft",
-        "label": "NFT"
-      }
-    ],
+    "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:generative-ai",
@@ -94,8 +97,20 @@
         "label": "Natural Language Generation"
       },
       {
-        "id": "urn:ngm:class:text-to-image",
+        "id": "urn:ngm:class:text-to-image-model",
         "label": "Text-to-Image Model"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:multimodal-ai",
+        "label": "Multimodal AI"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
       }
     ],
     "supports": [
@@ -106,6 +121,10 @@
       {
         "id": "urn:ngm:class:brand-identity",
         "label": "Brand Identity"
+      },
+      {
+        "id": "urn:ngm:class:search-engine-optimisation",
+        "label": "Search Engine Optimisation"
       }
     ],
     "standardizedBy": [],
@@ -130,10 +149,183 @@
       {
         "id": "urn:ngm:class:content-strategy",
         "label": "Content Strategy"
+      },
+      {
+        "id": "urn:ngm:class:content-discovery",
+        "label": "Content Discovery"
+      },
+      {
+        "id": "urn:ngm:class:recommendation-systems",
+        "label": "Recommendation Systems"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "natural-language-generation",
+      "label": "Natural Language Generation"
+    },
+    {
+      "slug": "text-to-image-model",
+      "label": "Text-to-Image Model"
+    },
+    {
+      "slug": "synthetic-media",
+      "label": "Synthetic Media"
+    },
+    {
+      "slug": "creator-economy",
+      "label": "Creator Economy"
+    },
+    {
+      "slug": "digital-asset-management",
+      "label": "Digital Asset Management"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
+      "slug": "digital-marketing",
+      "label": "Digital Marketing"
+    },
+    {
+      "slug": "content-strategy",
+      "label": "Content Strategy"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
+      "slug": "editorial-workflow",
+      "label": "Editorial Workflow"
+    },
+    {
+      "slug": "brand-identity",
+      "label": "Brand Identity"
+    },
+    {
+      "slug": "audience-engagement",
+      "label": "Audience Engagement"
+    },
+    {
+      "slug": "search-engine-optimisation",
+      "label": "Search Engine Optimisation"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "content-delivery-network",
+      "label": "Content Delivery Network"
+    },
+    {
+      "slug": "knowledge-management",
+      "label": "Knowledge Management"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "social-media-platform-infrastructure",
+      "label": "Social Media Platform Infrastructure"
+    },
+    {
+      "slug": "content-curation",
+      "label": "Content Curation"
+    },
+    {
+      "slug": "user-generated-content",
+      "label": "User-Generated Content"
+    },
+    {
+      "slug": "media-production",
+      "label": "Media Production"
+    },
+    {
+      "slug": "nft",
+      "label": "NFT"
+    },
+    {
+      "slug": "spatial-content",
+      "label": "Spatial Content"
+    },
+    {
+      "slug": "data-storytelling",
+      "label": "Data Storytelling"
+    },
+    {
+      "slug": "digital-content-creation",
+      "label": "Digital Content Creation"
+    },
+    {
+      "slug": "etsi-domain-creative-media",
+      "label": "ETSI Domain: Creative Media"
+    },
+    {
+      "slug": "creative-tools",
+      "label": "Creative Tools"
+    },
+    {
+      "slug": "recommendation-systems",
+      "label": "Recommendation Systems"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "digital-content",
+      "label": "Digital Content"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "generative-content",
+      "label": "Generative Content"
+    },
+    {
+      "slug": "audio-generation",
+      "label": "Audio Generation"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-applications",
@@ -154,6 +346,10 @@
     {
       "slug": "authoring-tool",
       "label": "Authoring Tool"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
     },
     {
       "slug": "deepfakes",

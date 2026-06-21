@@ -102,6 +102,14 @@
       "label": "Attention"
     },
     {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
       "slug": "transformers",
       "label": "Transformers"
     }

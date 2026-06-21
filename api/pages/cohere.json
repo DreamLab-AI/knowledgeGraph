@@ -5,18 +5,47 @@
   "public": true,
   "classIri": "urn:ngm:class:cohere",
   "domain": "ai",
-  "definition": "Cohere is a company that develops large language models and text embedding models offered through an API, with a focus on enterprise applications. Its products include generation, embedding and reranking models.",
+  "definition": "Cohere is a Canadian-American enterprise AI company founded in 2019 by Aidan Gomez, Nick Frosst, and Ivan Zhang \u2014 all former Google Brain researchers \u2014 that develops and deploys large language models, text embedding models, and reranking models through a cloud API, private cloud, and on-premises deployment model, with a strategic focus on enterprise data security, sovereign AI, and retrieval-augmented generation pipelines. Its model families include the Command series for generative tasks, the Embed series for dense vector representations, the Rerank series for cross-encoder document scoring, and the Aya multilingual research models covering 101 languages. Cohere is distinguished by its early and consistent commitment to private and on-premises deployment options that ensure enterprise data never transits external infrastructure, and by its April 2026 merger with Germany's Aleph Alpha to form a transatlantic sovereign AI entity valued at approximately $20 billion.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:large-language-models",
       "label": "Large Language Models"
+    },
+    {
+      "id": "urn:ngm:class:enterprise-ai",
+      "label": "Enterprise AI"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.91,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:command-r",
+        "label": "Command R"
+      },
+      {
+        "id": "urn:ngm:class:embed-v4",
+        "label": "Embed v4"
+      },
+      {
+        "id": "urn:ngm:class:rerank-4",
+        "label": "Rerank 4"
+      },
+      {
+        "id": "urn:ngm:class:aya-expanse",
+        "label": "Aya Expanse"
+      },
+      {
+        "id": "urn:ngm:class:north-platform",
+        "label": "North Platform"
+      },
+      {
+        "id": "urn:ngm:class:model-vault",
+        "label": "Model Vault"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:transformer",
@@ -25,6 +54,22 @@
       {
         "id": "urn:ngm:class:embeddings",
         "label": "Embeddings"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:instruction-tuning",
+        "label": "Instruction Tuning"
+      },
+      {
+        "id": "urn:ngm:class:rlhf",
+        "label": "RLHF"
       }
     ],
     "enables": [
@@ -35,22 +80,80 @@
       {
         "id": "urn:ngm:class:retrieval-augmented-generation",
         "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:document-understanding",
+        "label": "Document Understanding"
+      },
+      {
+        "id": "urn:ngm:class:text-classification",
+        "label": "Text Classification"
+      },
+      {
+        "id": "urn:ngm:class:question-answering",
+        "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:summarisation",
+        "label": "Summarisation"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:multilingual-nlp",
+        "label": "Multilingual NLP"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:openai-research",
+        "label": "OpenAI Research"
+      },
+      {
+        "id": "urn:ngm:class:anthropic",
+        "label": "Anthropic"
+      },
+      {
+        "id": "urn:ngm:class:google-ai",
+        "label": "Google AI"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:aleph-alpha",
+        "label": "Aleph Alpha"
+      },
+      {
+        "id": "urn:ngm:class:sovereign-ai",
+        "label": "Sovereign AI"
+      },
+      {
+        "id": "urn:ngm:class:data-privacy",
+        "label": "Data Privacy"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ]
   },
   "wikilinks": [
     {
       "slug": "transformer",
       "label": "Transformer"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
     },
     {
       "slug": "embeddings",
@@ -75,6 +178,146 @@
     {
       "slug": "large-language-models",
       "label": "Large Language Models"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "enterprise-ai",
+      "label": "Enterprise AI"
+    },
+    {
+      "slug": "sovereign-ai",
+      "label": "Sovereign AI"
+    },
+    {
+      "slug": "mixture-of-experts",
+      "label": "Mixture of Experts"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "text-classification",
+      "label": "Text Classification"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "document-understanding",
+      "label": "Document Understanding"
+    },
+    {
+      "slug": "reranking",
+      "label": "Reranking"
+    },
+    {
+      "slug": "on-premises-deployment",
+      "label": "On-Premises Deployment"
+    },
+    {
+      "slug": "cloud-ai-platform",
+      "label": "Cloud AI Platform"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "multilingual-nlp",
+      "label": "Multilingual NLP"
+    },
+    {
+      "slug": "model-compression",
+      "label": "Model Compression"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "openai-research",
+      "label": "OpenAI Research"
+    },
+    {
+      "slug": "anthropic",
+      "label": "Anthropic"
+    },
+    {
+      "slug": "google-ai",
+      "label": "Google AI"
+    },
+    {
+      "slug": "amazon-web-services",
+      "label": "Amazon Web Services"
+    },
+    {
+      "slug": "microsoft-azure",
+      "label": "Microsoft Azure"
+    },
+    {
+      "slug": "aleph-alpha",
+      "label": "Aleph Alpha"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "slug": "data-privacy",
+      "label": "Data Privacy"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "summarisation",
+      "label": "Summarisation"
+    },
+    {
+      "slug": "text-generation",
+      "label": "Text Generation"
+    },
+    {
+      "slug": "oracle-cloud",
+      "label": "Oracle Cloud"
+    },
+    {
+      "slug": "vector-search",
+      "label": "Vector Search"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "instruction-tuning",
+      "label": "Instruction Tuning"
+    },
+    {
+      "slug": "rlhf",
+      "label": "RLHF"
     }
   ],
   "backlinks": [

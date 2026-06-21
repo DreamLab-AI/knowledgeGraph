@@ -41,6 +41,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
     },
@@ -55,6 +63,14 @@
     {
       "slug": "function-calling",
       "label": "Function Calling"
+    },
+    {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
     }
   ]
 }

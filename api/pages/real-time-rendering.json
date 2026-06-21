@@ -181,6 +181,10 @@
       "label": "Augmented Reality (AR)"
     },
     {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
       "slug": "compute-layer",
       "label": "Compute Layer"
     },

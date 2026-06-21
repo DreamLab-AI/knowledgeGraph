@@ -183,12 +183,20 @@
       "label": "LangGraph"
     },
     {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
       "slug": "open-ai-agents-sdk",
       "label": "OpenAI Agents SDK"
     },
     {
       "slug": "peer-learning",
       "label": "Peer Learning"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
     }
   ]
 }

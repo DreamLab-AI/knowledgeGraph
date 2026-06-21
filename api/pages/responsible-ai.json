@@ -274,6 +274,18 @@
       "label": "Architecture"
     },
     {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
+    },
+    {
       "slug": "etsi-domain-ethics-and-law",
       "label": "ETSI Domain: Ethics & Law"
     },

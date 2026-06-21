@@ -5,39 +5,196 @@
   "public": true,
   "classIri": "urn:ngm:class:computational-photography",
   "domain": "ai",
-  "definition": "A set of techniques that use digital computation to extend or improve the capabilities of a camera beyond what its optics and sensor alone can capture. It combines multiple exposures, sensor data, and algorithms to form a final image.",
+  "definition": "A discipline that extends or supplants the optical and electromechanical capabilities of a camera system through digital computation, combining multiple sensor readings, learned priors, and algorithmic inference to produce images that no single physical exposure could yield. The field integrates optics, signal processing, machine learning, and human visual perception to reconstruct scene radiance, estimate scene geometry, and synthesise perceptually superior final images.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:image-processing",
       "label": "Image Processing"
+    },
+    {
+      "id": "urn:ngm:class:computational-imaging",
+      "label": "Computational Imaging"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.0,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:multi-frame-fusion",
+        "label": "Multi-Frame Fusion"
+      },
+      {
+        "id": "urn:ngm:class:hdr-imaging",
+        "label": "HDR Imaging"
+      },
+      {
+        "id": "urn:ngm:class:neural-image-signal-processor",
+        "label": "Neural Image Signal Processor"
+      },
+      {
+        "id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-segmentation",
+        "label": "Semantic Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:super-resolution",
+        "label": "Super Resolution"
+      },
+      {
+        "id": "urn:ngm:class:panorama-stitching",
+        "label": "Panorama Stitching"
+      },
+      {
+        "id": "urn:ngm:class:bokeh-simulation",
+        "label": "Bokeh Simulation"
+      },
+      {
+        "id": "urn:ngm:class:night-mode-photography",
+        "label": "Night Mode Photography"
+      },
+      {
+        "id": "urn:ngm:class:exposure-fusion",
+        "label": "Exposure Fusion"
+      },
+      {
+        "id": "urn:ngm:class:tone-mapping",
+        "label": "Tone Mapping"
+      },
+      {
+        "id": "urn:ngm:class:demosaicing",
+        "label": "Demosaicing"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:camera",
         "label": "Camera"
+      },
+      {
+        "id": "urn:ngm:class:image-sensor",
+        "label": "Image Sensor"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:image-formation-model",
+        "label": "Image Formation Model"
+      },
+      {
+        "id": "urn:ngm:class:raw-image-pipeline",
+        "label": "Raw Image Pipeline"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:computer-vision",
         "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:3d-reconstruction",
+        "label": "3D Reconstruction"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:satellite-imagery",
+        "label": "Satellite Imagery"
       }
     ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:convolutional-neural-network",
+        "label": "Convolutional Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      },
+      {
+        "id": "urn:ngm:class:optical-flow",
+        "label": "Optical Flow"
+      },
+      {
+        "id": "urn:ngm:class:colour-science",
+        "label": "Colour Science"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:optics",
+        "label": "Optics"
+      },
+      {
+        "id": "urn:ngm:class:traditional-film-photography",
+        "label": "Traditional Film Photography"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:smartphone",
+        "label": "Smartphone"
+      },
+      {
+        "id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:light-field-camera",
+        "label": "Light Field Camera"
+      },
+      {
+        "id": "urn:ngm:class:plenoptic-camera",
+        "label": "Plenoptic Camera"
+      },
+      {
+        "id": "urn:ngm:class:nerf",
+        "label": "NeRF"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "id": "urn:ngm:class:video-stabilisation",
+        "label": "Video Stabilisation"
+      },
+      {
+        "id": "urn:ngm:class:face-detection",
+        "label": "Face Detection"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -51,6 +208,170 @@
     {
       "slug": "image-processing",
       "label": "Image Processing"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "signal-processing",
+      "label": "Signal Processing"
+    },
+    {
+      "slug": "hdr-imaging",
+      "label": "HDR Imaging"
+    },
+    {
+      "slug": "semantic-segmentation",
+      "label": "Semantic Segmentation"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "multi-frame-fusion",
+      "label": "Multi-Frame Fusion"
+    },
+    {
+      "slug": "image-noise-reduction",
+      "label": "Image Noise Reduction"
+    },
+    {
+      "slug": "optical-flow",
+      "label": "Optical Flow"
+    },
+    {
+      "slug": "light-field-camera",
+      "label": "Light Field Camera"
+    },
+    {
+      "slug": "image-sensor",
+      "label": "Image Sensor"
+    },
+    {
+      "slug": "neural-image-signal-processor",
+      "label": "Neural Image Signal Processor"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "super-resolution",
+      "label": "Super Resolution"
+    },
+    {
+      "slug": "panorama-stitching",
+      "label": "Panorama Stitching"
+    },
+    {
+      "slug": "bokeh-simulation",
+      "label": "Bokeh Simulation"
+    },
+    {
+      "slug": "night-mode-photography",
+      "label": "Night Mode Photography"
+    },
+    {
+      "slug": "smartphone",
+      "label": "Smartphone"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "real-time-rendering",
+      "label": "Real-Time Rendering"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "3d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "nerf",
+      "label": "NeRF"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "colour-science",
+      "label": "Colour Science"
+    },
+    {
+      "slug": "optics",
+      "label": "Optics"
+    },
+    {
+      "slug": "image-formation-model",
+      "label": "Image Formation Model"
+    },
+    {
+      "slug": "exposure-fusion",
+      "label": "Exposure Fusion"
+    },
+    {
+      "slug": "tone-mapping",
+      "label": "Tone Mapping"
+    },
+    {
+      "slug": "augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical Imaging"
+    },
+    {
+      "slug": "satellite-imagery",
+      "label": "Satellite Imagery"
+    },
+    {
+      "slug": "video-stabilisation",
+      "label": "Video Stabilisation"
+    },
+    {
+      "slug": "face-detection",
+      "label": "Face Detection"
+    },
+    {
+      "slug": "scene-understanding",
+      "label": "Scene Understanding"
+    },
+    {
+      "slug": "computational-imaging",
+      "label": "Computational Imaging"
+    },
+    {
+      "slug": "plenoptic-camera",
+      "label": "Plenoptic Camera"
+    },
+    {
+      "slug": "demosaicing",
+      "label": "Demosaicing"
+    },
+    {
+      "slug": "raw-image-pipeline",
+      "label": "Raw Image Pipeline"
     }
   ],
   "backlinks": [

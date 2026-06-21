@@ -213,6 +213,10 @@
       "label": "Blockchain Environmental Impact Assessment"
     },
     {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
       "slug": "distributed-decision-making",
       "label": "Distributed Decision Making"
     },

@@ -146,6 +146,14 @@
       "label": "Artificial General Intelligence"
     },
     {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
       "slug": "direct-preference-optimization",
       "label": "Direct Preference Optimization"
     },

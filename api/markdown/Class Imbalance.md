@@ -238,9 +238,13 @@ public:: true
 
     The theoretical landscape of imbalanced learning connects to several streams of statistical learning theory. Probably Approximately Correct (PAC) learning theory assumes balanced classes in its standard formulations; extensions to class-imbalanced settings require modifying sample complexity bounds to account for the rarity of minority examples. Cost-sensitive learning theory, developed by Elkan (2001) and Domingos (1999), formalises the connection between asymmetric misclassification costs and decision boundary placement, providing a principled basis for practitioners selecting classification thresholds and loss functions. The connection between class imbalance and the precision-recall trade-off was formalised by Davis and Goadrich (2006), who demonstrated that the AUPRC is a more informative metric than AUROC under imbalanced conditions because it is sensitive to the minority class performance in ways that AUROC is not.
 
-    The problem sits at the intersection of three distinct machine learning concerns: statistical learning theory (how does the optimal Bayes error rate relate to the class prior?), optimisation (does gradient descent on standard cross-entropy find useful decision boundaries for rare classes?), and evaluation methodology (which metric meaningfully captures the quality of rare-class prediction?). These concerns do not decompose cleanly — a well-designed data resampling strategy may fail if the evaluation metric does not reward minority class recall, and a theoretically sound loss function may be undermined by feature space geometry that clusters minority and majority examples in ways that prevent any linear boundary from separating them. Practitioners must therefore attend simultaneously to all three concerns.
+    The problem sits at the intersection of three distinct machine learning concerns: statistical learning theory (how does the optimal Bayes error rate relate to the class prior?), optimisation (does gradient descent on standard cross-entropy find useful decision boundaries for rare classes?), and evaluation methodology (which metric meaningfully captures the quality of rare-class prediction?). These concerns do not decompose cleanly — a well-designed data resampling strategy may fail if the evaluation metric does not reward minority class recall, and a theoretically sound [[Loss Function]] may be undermined by feature space geometry that clusters minority and majority examples in ways that prevent any linear boundary from separating them. Practitioners must therefore attend simultaneously to all three concerns, and diagnostic workflow should address all three before concluding that a classification system is performing adequately.
 
-    In the deep learning era, class imbalance manifests differently than in classical supervised learning. Large neural networks trained on sufficient data can in principle learn arbitrarily complex decision boundaries, but the loss surface for imbalanced data tends to guide optimisation towards regions where majority class loss is minimised while minority class loss remains elevated. Focal loss, introduced by Lin et al. (2017) for object detection, addressed this by dynamically re-weighting loss contributions based on the model's current confidence, penalising easy majority examples that the model already classifies correctly. This approach has since propagated into multi-class and multi-label classification contexts and has been shown to outperform static class weighting in several regimes.
+    In the [[Deep Learning]] era, class imbalance manifests differently than in classical supervised learning. Large neural networks trained on sufficient data can in principle learn arbitrarily complex decision boundaries, but the loss surface for imbalanced data tends to guide optimisation towards regions where majority class loss is minimised while minority class loss remains elevated. Focal loss, introduced by Lin et al. (2017) for object detection, addressed this by dynamically re-weighting loss contributions based on the model's current confidence, penalising easy majority examples that the model already classifies correctly. This approach has since propagated into multi-class and multi-label classification contexts and has been shown to outperform static class weighting in several regimes. The interaction between imbalance and batch normalisation, dropout, and other regularisation techniques used in deep networks is an active area of investigation: batch normalisation statistics computed on imbalanced mini-batches may be dominated by majority class examples, subtly distorting the normalised activations seen by minority class examples during both training and inference.
+
+    Multi-class and multi-label imbalance extends the binary problem in several important directions. In multi-class settings with hundreds or thousands of categories following a long-tail distribution (as in ImageNet-scale recognition), the minority class problem is not binary but power-law: a small number of categories have millions of examples while thousands of tail categories have tens or hundreds. Approaches developed for binary imbalance do not trivially extend to this setting, motivating a distinct literature on long-tail recognition centred on logit adjustment, decoupled training, and balanced sampling strategies that maintain head-class performance while improving tail-class recall.
+
+    A closely related but distinct problem is dataset shift under class imbalance — the condition where the class ratio in deployment differs from that in training. A model trained on a 1:10 imbalanced dataset and deployed in a population with 1:100 imbalance will have a prior miscalibrated by an order of magnitude, generating excessive false positives at any fixed threshold. Calibration methods — Platt scaling, isotonic regression, temperature scaling — can correct for this but require knowing the deployment prior, which is frequently unknown in practice. This interaction between [[Concept Drift]] and class imbalance is a significant practical challenge in domains like fraud detection where fraud rates vary seasonally and across deployment contexts.
 
   ## Components / Architecture
 
@@ -281,33 +285,214 @@ public:: true
     - *Matthews Correlation Coefficient (MCC)*: A single metric that accounts for all four confusion matrix cells and is considered one of the most reliable single metrics for imbalanced binary classification.
     - *Stratified K-Fold Cross-Validation*: Ensures that each fold preserves the original class ratio, preventing folds with no minority examples that would produce misleading evaluation results.
 
+  ## Formal Procedure: SMOTE Algorithm
+
+    The SMOTE algorithm for a minority class S_min with |S_min| = N:
+
+    **Inputs**
+    - S_min: the minority class training set
+    - k: number of nearest neighbours to consider (default: 5)
+    - T: the oversampling percentage (e.g., T=200 means generate 2N new examples)
+
+    **Step 1 – Nearest Neighbour Computation**
+    - For each example x_i in S_min:
+      - Compute k nearest neighbours of x_i within S_min (Euclidean distance in feature space)
+      - Store as knn[i] = {x_{i1}, x_{i2}, ..., x_{ik}}
+
+    **Step 2 – Synthetic Sample Generation**
+    - For each x_i and each required synthetic sample:
+      - Select a random neighbour x_{nn} from knn[i]
+      - Generate: x_new = x_i + lambda * (x_{nn} - x_i), where lambda ~ Uniform(0,1)
+      - x_new lies on the line segment between x_i and x_{nn} in feature space
+      - For categorical features: randomly copy from either x_i or x_{nn} (not interpolated)
+
+    **Step 3 – Dataset Augmentation**
+    - Add all generated x_new to S_min
+    - Return augmented S_min union S_maj for classifier training
+
+    **Critical Implementation Notes**
+    - Apply SMOTE only to training data; never to validation or test sets (data leakage risk)
+    - Apply SMOTE after train/test split, not before, to prevent minority examples from test set influencing synthetic generation in training set
+    - Use stratified k-fold when evaluating SMOTE-augmented classifiers to preserve fold class ratios
+    - For mixed (numerical + categorical) features, use SMOTENC variant which handles categorical feature interpolation
+    - Consider cleaning steps (ENN, Tomek Links) after SMOTE to remove noisy synthetic examples near the majority class boundary
+
   ## Use Cases / Major Families
 
-    **Fraud Detection and Financial Crime**: Transaction fraud, insurance claim fraud, and credit card abuse represent extreme imbalance scenarios — legitimate transactions outnumber fraudulent ones at ratios commonly between 500:1 and 10,000:1. Financial institutions deploy cost-sensitive classifiers and SMOTE pipelines to achieve the high recall required to catch most fraud while controlling false positive rates that would block legitimate transactions and generate customer complaints. Gradient boosting methods (XGBoost, LightGBM, CatBoost) with class weighting are dominant in production fraud detection, complemented by threshold calibration to tune the precision-recall trade-off for the specific cost structure of the deployment context.
+    **Fraud Detection and Financial Crime**: Transaction fraud, insurance claim fraud, and credit card abuse represent extreme imbalance scenarios — legitimate transactions outnumber fraudulent ones at ratios commonly between 500:1 and 10,000:1. Financial institutions deploy cost-sensitive classifiers and SMOTE pipelines to achieve the high recall required to catch most fraud while controlling false positive rates that would block legitimate transactions and generate customer complaints. Gradient boosting methods (XGBoost, LightGBM, CatBoost) with class weighting are dominant in production fraud detection.
+    - Key challenge: non-stationary fraud patterns require continuous model retraining as fraudsters adapt
+    - Imbalance ratio: typically 1:500 to 1:10,000 in credit card fraud datasets
+    - Dominant evaluation metric: AUPRC and F1 at operating threshold calibrated to business cost matrix
+    - Common approaches: XGBoost + scale_pos_weight, LightGBM + is_unbalance=True, deep neural networks + focal loss
 
-    **Medical Diagnosis and Clinical Screening**: Disease diagnosis from clinical data — whether tabular lab results, imaging features, or genomic markers — typically involves rare positive cases in screening populations. A 1% disease prevalence means 99:1 imbalance, and the cost asymmetry between missing a diagnosis (potentially fatal) and a false alarm (unnecessary follow-up) is extreme. Cost-sensitive AdaBoost has been shown to achieve strong AUC in medical applications. Multi-sensor and multimodal approaches in medical imaging (CT, MRI, PET fusion) enrich minority class representations through information fusion, addressing data scarcity for rare conditions. NeurIPS 2024 featured EPIC, a prompting approach for imbalanced-class data augmentation in medical contexts.
+    **Medical Diagnosis and Clinical Screening**: Disease diagnosis from clinical data — whether tabular lab results, imaging features, or genomic markers — typically involves rare positive cases in screening populations.
+    - A 1% disease prevalence means 99:1 imbalance; early-stage cancer screening can reach 1:1000 or beyond
+    - Cost asymmetry is asymmetric: missed diagnosis (false negative) is potentially fatal; false alarm results in unnecessary but survivable follow-up
+    - Cost-sensitive AdaBoost achieves strong AUC in medical tabular data applications
+    - Multimodal fusion (CT, MRI, PET) enriches minority class representations for rare condition detection
+    - NeurIPS 2024 featured EPIC, a prompting approach for imbalanced-class data augmentation in medical NLP contexts
+    - PubMed 41902166 (2025) surveys strategies for multi-sensor medical imaging under class imbalance
+    - UK regulatory context: MHRA software-as-medical-device submissions require documentation of training data imbalance handling
 
-    **Network Intrusion and Cybersecurity**: Intrusion detection systems classify network packets or host events as normal or malicious. Attack events are rare relative to benign traffic, and novel attack signatures may fall outside the minority class manifold sampled by SMOTE generation. Streaming and online learning settings add temporal complexity: minority class statistics shift as attack patterns evolve ([[Concept Drift]]), requiring continuous model updating that interacts with imbalance remediation.
+    **Network Intrusion and Cybersecurity**: Intrusion detection systems classify network packets or host events as normal or malicious.
+    - Attack events are rare relative to benign traffic, typically 0.01–1% of network flows
+    - Novel attack signatures may fall outside the minority class manifold sampled by SMOTE generation
+    - Streaming and online learning settings add temporal complexity: minority class statistics shift as attack patterns evolve ([[Concept Drift]])
+    - Graph neural network approaches model network topology; graph-specific SMOTE variants (IGL-Bench) apply
+    - Evaluation requires per-attack-type recall breakdown, not aggregate minority recall
 
-    **Manufacturing Defect and Predictive Maintenance**: Quality control in manufacturing produces predominantly passing units, with failure events that are rare but critical. [[Anomaly Detection]] and binary defect classification from sensor streams must achieve high recall to prevent defective products reaching customers whilst maintaining acceptable false alarm rates that do not halt production lines unnecessarily. Time series [[Anomaly Detection]] methods — including autoencoders and LSTM-based density estimators — are commonly deployed.
+    **Manufacturing Defect and Predictive Maintenance**: Quality control in manufacturing produces predominantly passing units, with failure events that are rare but critical.
+    - Defect rates in automotive and electronics manufacturing typically range 0.1–2% of produced units
+    - High recall requirement: false negatives (missed defects) generate costly recalls and safety incidents
+    - Time series [[Anomaly Detection]] from sensor streams (vibration, temperature, current) — autoencoders and LSTM density estimators
+    - [[Predictive Maintenance]] models for industrial equipment operate at 1:100 to 1:10,000 imbalance
 
-    **Churn, Default, and Rare Event Prediction**: Customer churn modelling in subscription businesses, loan default prediction, and employee attrition prediction all share moderate imbalance (5–30% positive rate) where standard cross-entropy may still fail to learn useful minority class patterns. Research in 2025 (Nature Scientific Reports) demonstrated that ensemble methods with SMOTE improve churn prediction AUC by 8–15% over baseline models trained without imbalance remediation across multiple real-world telecom and banking datasets.
+    **Churn, Default, and Rare Event Prediction**: Customer churn modelling, loan default prediction, and employee attrition prediction.
+    - Moderate imbalance (5–30% positive rate) where standard cross-entropy may still underperform
+    - Research in 2025 (Nature Scientific Reports): SMOTE + ensemble methods improve churn AUC 8–15% over baselines
+    - Threshold calibration is critical: the optimal classification threshold depends on the ratio of revenue-at-risk from churn to cost-to-retain
+    - Feature engineering (recency, frequency, monetary value — RFM) is particularly impactful for minority class representation
 
-    **Long-Tail Visual Recognition**: In large-scale image classification tasks with hundreds or thousands of categories, a power-law distribution of category frequency creates multi-class imbalance. ImageNet-LT, Places-LT, and iNaturalist are benchmark datasets for this setting. Approaches including balanced softmax loss, logit adjustment, and two-stage training (feature extraction then balanced fine-tuning) address long-tail imbalance in deep convolutional and vision transformer architectures.
+    **Long-Tail Visual Recognition**: Large-scale image classification with power-law category frequency distribution.
+    - ImageNet-LT, Places-LT, iNaturalist benchmark datasets for this setting
+    - Head categories (thousands of examples) vs tail categories (tens of examples) in a single dataset
+    - Approaches: balanced softmax loss, logit adjustment, decoupled training (feature extraction then balanced fine-tuning)
+    - Foundation model pre-training significantly reduces tail-class difficulty by providing rich representations before fine-tuning
+
+    **Clinical NLP and Medical Text Classification**: Electronic health record coding, adverse event detection, rare disease mention extraction.
+    - Disease-mention frequency in clinical notes follows extreme power-law distribution
+    - Rare disease NLP: 1:1000 to 1:10,000 positive mention rates in unannotated clinical corpora
+    - LLM-based synthetic data augmentation generates realistic clinical notes for minority conditions without patient privacy risk
+    - Domain-adapted BERT models (BioBERT, ClinicalBERT) with class-weighted fine-tuning are dominant approaches
+
+  ## Key Terminology
+
+    - **Imbalance Ratio (IR)**: N_majority / N_minority. The primary quantitative descriptor of imbalance severity.
+      - IR = 1: perfectly balanced
+      - IR in [1.5, 4]: mild imbalance
+      - IR in [4, 9]: moderate imbalance
+      - IR in [9, 100]: severe imbalance
+      - IR > 100: extreme imbalance (common in fraud detection, rare disease screening)
+    - **Minority Class**: The class with fewer training examples; typically the class of interest in rare-event prediction (fraud, disease, fault, intrusion).
+    - **Majority Class**: The class with more training examples; often the "normal" or "negative" class in the detection framing.
+    - **SMOTE (Synthetic Minority Over-sampling Technique)**: The foundational oversampling algorithm generating synthetic minority examples by interpolating in feature space between minority nearest neighbours.
+    - **AUPRC (Area Under the Precision-Recall Curve)**: The recommended primary evaluation metric for highly imbalanced binary classification.
+      - Preferred over AUROC because it is sensitive to minority class performance even under extreme imbalance
+      - AUROC can be misleadingly high under extreme imbalance because the large majority class dominates the FPR denominator
+    - **Cost Matrix**: A square matrix C[i,j] specifying the penalty for predicting class j when the true class is i.
+      - Enables domain-specific asymmetric cost encoding
+      - C[1,0] (cost of false negative) >> C[0,1] (cost of false positive) in most rare-event applications
+    - **Focal Loss**: FL(p_t) = -(1 - p_t)^gamma * log(p_t). Dynamically down-weights easy, well-classified examples (typically majority class), focusing gradient updates on hard, misclassified examples. gamma=0 reduces to cross-entropy; gamma=2 is the standard setting for imbalanced object detection.
+    - **Class Weight**: A scalar multiplier applied to the loss contribution of each class, proportional to the inverse of class frequency. The simplest algorithm-level imbalance remediation, natively supported in most ML frameworks via `class_weight` parameter.
+    - **Stratified Cross-Validation**: K-fold cross-validation where each fold preserves the original class ratio, preventing folds with no minority examples from distorting evaluation results.
+    - **Zero Rule Baseline**: A trivial classifier that always predicts the majority class. Achieves accuracy equal to the majority class prior. Any useful classifier must exceed its minority class recall beyond this baseline.
+    - **Matthews Correlation Coefficient (MCC)**: MCC = (TP*TN - FP*FN) / sqrt((TP+FP)(TP+FN)(TN+FP)(TN+FN)). A single evaluation metric accounting for all four confusion matrix cells; considered one of the most reliable metrics for binary imbalanced classification.
+    - **Tomek Links**: A pair of examples (x_i, x_j) from different classes where each is the other's nearest neighbour. Removing the majority member from Tomek Links cleans the decision boundary without altering the distribution.
+    - **ADASYN (Adaptive Synthetic Sampling)**: Generates proportionally more synthetic examples for minority instances that are harder to classify, using local density ratio as an adaptivity weight.
+    - **SMOTEBoost**: Hybrid algorithm interleaving SMOTE generation with each AdaBoost boosting iteration, focusing synthetic generation on regions where the current ensemble struggles.
 
   ## Academic Context
 
     Class imbalance research has a well-documented lineage originating in the late 1990s and accelerating through the 2000s with SMOTE and its extensions. The foundational papers are:
 
-    Kubat and Matwin (1997) at ICML introduced the problem in the context of satellite image classification. Chawla et al. (2002) published SMOTE in JAIR, which remains among the most cited machine learning papers over two decades later. Han et al. (2005) introduced Borderline-SMOTE at the Advances in Intelligent Computing conference. He et al. (2008) proposed ADASYN at IJCNN. Chawla et al. (2003) extended SMOTE into ensemble learning with SMOTEBoost at PKDD. Liu et al. (2009) introduced EasyEnsemble and BalanceCascade.
+    Kubat and Matwin (1997) at ICML introduced the problem in the context of satellite image [[Classification]]. Chawla et al. (2002) published SMOTE in JAIR, which remains among the most cited [[Machine Learning]] papers over two decades later. Han et al. (2005) introduced Borderline-SMOTE at the Advances in Intelligent Computing conference. He et al. (2008) proposed ADASYN at IJCNN. Chawla et al. (2003) extended SMOTE into [[Ensemble Methods]] with SMOTEBoost at PKDD. Liu et al. (2009) introduced EasyEnsemble and BalanceCascade.
 
-    The review literature consolidating these developments includes: He and Garcia (2009) "Learning from Imbalanced Data" in IEEE TKDE, which remains the standard taxonomy reference; Fernández et al. (2018) "SMOTE for Learning from Imbalanced Data: Progress and Challenges" in JAIR; Branco et al. (2016) survey in ACM Computing Surveys. The monograph Fernández et al. (2018) "Learning from Imbalanced Data Sets" (Springer) provides the most comprehensive treatment.
+    The review literature consolidating these developments includes: He and Garcia (2009) "Learning from Imbalanced Data" in IEEE TKDE, which remains the standard taxonomy reference; Fernández et al. (2018) "SMOTE for Learning from Imbalanced Data: Progress and Challenges" in JAIR; Branco et al. (2016) survey in ACM Computing Surveys. The monograph Fernández et al. (2018) "Learning from Imbalanced Data Sets" (Springer) provides the most comprehensive treatment. Elkan (2001) "The Foundations of Cost-Sensitive Learning" at IJCAI formalised the theoretical basis for cost-sensitive classifiers. Davis and Goadrich (2006) "The Relationship Between Precision-Recall and ROC Curves" at ICML is the critical evaluation methodology contribution establishing AUPRC's superiority under imbalance.
 
-    Deep learning-specific contributions include Lin et al. (2017) "Focal Loss for Dense Object Detection" at ICCV (RetinaNet), which introduced focal loss and demonstrated its superiority over balanced sampling for object detection. Cui et al. (2019) proposed class-balanced loss weighted by effective sample numbers. Kang et al. (2020) introduced the decoupled training approach (feature learning then balanced classifier learning) for long-tail recognition.
+    Deep learning-specific contributions include Lin et al. (2017) "Focal Loss for Dense Object Detection" at ICCV (RetinaNet), which introduced focal loss and demonstrated its superiority over balanced sampling for object detection. Cui et al. (2019) proposed class-balanced loss weighted by effective sample numbers. Kang et al. (2020) introduced the decoupled training approach (feature learning then balanced [[Classification]] layer learning) for long-tail recognition. Menon et al. (2021) "Long-tail learning via logit adjustment" at ICLR formalised the theoretical basis for logit adjustment under long-tail distributions.
 
-    Recent work at NeurIPS 2024 includes: "Revive: Re-weighting in Imbalanced Learning by Density Ratio Estimation" (NeurIPS 2024, poster 93181), which applies density ratio estimation to weight minority samples without synthetic generation; "EPIC: Effective Prompting for Imbalanced-Class Data" (NeurIPS 2024) applying prompt engineering for data augmentation. The 2025 comprehensive survey at arXiv (2502.08960) provides a consolidated view of state-of-the-art approaches across data, algorithm, and ensemble families.
+    Recent work at NeurIPS 2024 includes: "Revive: Re-weighting in Imbalanced Learning by Density Ratio Estimation" (NeurIPS 2024, poster 93181), which applies density ratio estimation to weight minority samples without synthetic generation; "EPIC: Effective Prompting for Imbalanced-Class Data" (NeurIPS 2024) applying prompt engineering for [[Data Augmentation]]. The 2025 comprehensive survey at arXiv (2502.08960) provides a consolidated view of state-of-the-art approaches across data, algorithm, and [[Ensemble Methods]] families. The arXiv 2601.04149 "A Theoretical and Empirical Taxonomy of Imbalance in Binary Classification" (2025) provides rigorous formal grounding for characterising different imbalance scenarios.
 
-    The `imbalanced-learn` Python library (Lemaître et al., 2017) standardised the implementations of SMOTE, ADASYN, and ensemble methods for scikit-learn users, dramatically lowering the barrier to practitioner adoption and establishing a reproducible benchmark baseline. IGL-Bench (NeurIPS 2022) introduced the first comprehensive benchmark for imbalanced graph learning, integrating 16 diverse datasets and 24 algorithms including graph-specific SMOTE variants.
+    The `imbalanced-learn` Python library (Lemaître et al., 2017) standardised the implementations of SMOTE, ADASYN, and ensemble methods for scikit-learn users, dramatically lowering the barrier to practitioner adoption and establishing a reproducible benchmark baseline. The library's versioned API (current version 0.14.x) provides SMOTE, BorderlineSMOTE, ADASYN, SVMSMOTE, KMeansSMOTE, RandomUnderSampler, TomekLinks, ENN, BalancedBaggingClassifier, EasyEnsemble, and RUSBoostClassifier as sklearn-compatible estimators. IGL-Bench (NeurIPS 2022) introduced the first comprehensive benchmark for imbalanced graph learning, integrating 16 diverse datasets and 24 algorithms including graph-specific SMOTE variants.
+
+  ## Comparative Analysis of Remediation Strategies
+
+    The choice between remediation strategies depends on dataset characteristics, computational budget, and deployment constraints:
+
+    **Data-Level Strategies: Pros and Cons**
+    - *Random Oversampling*
+      - Pro: trivially simple, zero hyperparameter tuning
+      - Con: amplifies specific minority examples, high overfitting risk, model memorises exact minority examples
+      - Use when: dataset is very small and no minority feature space knowledge is available
+    - *SMOTE*
+      - Pro: generates novel examples in minority convex hull, widely validated, library support
+      - Con: may generate synthetic examples in majority class regions (noise), assumes continuous features
+      - Use when: moderate imbalance (IR < 100), numerical features, sufficient minority examples (N_min > k)
+    - *Borderline-SMOTE / ADASYN*
+      - Pro: focuses generation on difficult boundary examples, adaptive density weighting
+      - Con: more sensitive to hyperparameter choices, higher computational cost
+      - Use when: significant class overlap, desire to focus on boundary rather than interior minority generation
+    - *Random Undersampling*
+      - Pro: reduces training time, may improve generalisation on some datasets
+      - Con: discards potentially informative majority examples, information loss
+      - Use when: training dataset is very large and majority class is over-represented relative to discriminative complexity
+    - *SMOTEENN / SMOTETomek (Hybrid)*
+      - Pro: combines oversampling with cleaning to reduce noise
+      - Con: more complex pipeline, additional hyperparameters
+      - Use when: noisy class boundaries after SMOTE generation are a concern
+
+    **Algorithm-Level Strategies: Pros and Cons**
+    - *Class-Weighted Loss*
+      - Pro: simplest intervention, no training data modification, one hyperparameter (weight ratio)
+      - Con: static weights may not optimally address heterogeneous minority class difficulty
+      - Use when: training data cannot be modified, deep learning setting, quick baseline experiment
+    - *Focal Loss*
+      - Pro: dynamic re-weighting based on current model confidence, state-of-the-art in object detection
+      - Con: additional hyperparameter (gamma), less interpretable than class weights
+      - Use when: deep learning, image classification, detection tasks with easy/hard example heterogeneity
+    - *Cost-Sensitive Learning*
+      - Pro: directly encodes domain cost asymmetry, principled decision theory foundation
+      - Con: requires explicit cost matrix specification, which may be unavailable
+      - Use when: domain cost matrix is known (e.g., fraud cost >> false-alarm cost)
+
+    **Ensemble Strategies: Pros and Cons**
+    - *BalancedBaggingClassifier / EasyEnsemble*
+      - Pro: robust, theoretically grounded in bagging variance reduction, state-of-the-art on tabular data
+      - Con: higher computational cost than single classifier, model interpretability reduced
+      - Use when: tabular data, gradient boosting baseline already exhausted
+    - *SMOTEBoost / RUSBoost*
+      - Pro: integrates oversampling with boosting, per-round adaptive focus
+      - Con: increased training time, hyperparameter interaction between boosting rounds and oversampling ratio
+      - Use when: boosting is already the base algorithm of choice
+
+  ## Benchmark Datasets for Imbalanced Learning
+
+    Established benchmark collections used in the imbalanced learning literature:
+
+    **KEEL Imbalanced Datasets Repository**
+    - 66+ datasets covering binary and multi-class imbalance
+    - Imbalance ratios from 1.5:1 to 585:1
+    - Domains: medical, ecology, finance, engineering
+    - Widely used in SMOTE variant comparison studies
+
+    **OpenML-CC18 Imbalanced Subset**
+    - Subset of the OpenML curated benchmark with imbalanced datasets
+    - Standardised splits and evaluation protocols for reproducibility
+
+    **Credit Card Fraud Detection (Kaggle)**
+    - 284,807 transactions, 492 fraud (imbalance ratio 577:1)
+    - Anonymised PCA features, the most widely cited tabular fraud benchmark
+    - Published by Pozzolo et al. (ULB Machine Learning Group)
+
+    **CICIDS 2017 / 2018 (Network Intrusion)**
+    - Network traffic captures with benign and attack flows
+    - Severe class imbalance for most attack categories
+    - Standard benchmark for intrusion detection under imbalance
+
+    **ImageNet-LT / Places-LT / iNaturalist 2018**
+    - Long-tail benchmarks for visual recognition
+    - ImageNet-LT: 1,000 classes, 115,846 images, power-law frequency distribution
+    - iNaturalist 2018: 8,142 species, extreme long-tail distribution
+
+    **MIMIC-III / MIMIC-IV (Clinical)**
+    - Electronic health record data with rare clinical event outcomes (sepsis, mortality)
+    - De-identified, available through PhysioNet with credentialed access
+    - Imbalance ratios vary by outcome: in-hospital mortality ~10%, sepsis onset ~5%, rare diagnoses < 0.1%
+
+    **IGL-Bench (Graph Imbalance)**
+    - NeurIPS 2022: first comprehensive graph imbalance benchmark
+    - 16 diverse graph datasets, 24 state-of-the-art algorithms
+    - Covers node classification, link prediction under graph imbalance
 
   ## Current Landscape (2026)
 
@@ -329,7 +514,45 @@ public:: true
 
     Applied UK research in class imbalance spans NHS clinical decision support — where rare disease detection from electronic health records encounters extreme imbalance — and UK financial services fraud detection. UK banks and payment processors (Barclays, NatWest, Lloyds) deploy ensemble-based imbalanced classifiers in production fraud detection pipelines, with internal research teams publishing occasionally on domain-specific adaptations. The UK government's Centre for Data Ethics and Innovation (CDEI) has highlighted the connection between data imbalance and discriminatory AI outcomes in its guidance on AI bias.
 
-    Northern English industrial contexts — manufacturing defect detection at Siemens Healthineers' Lincoln facility, automotive quality control at Jaguar Land Rover (Coventry), and predictive maintenance at power generation facilities — represent high-value deployment domains where class imbalance between normal operation and fault events is a core engineering challenge. Leeds and Sheffield universities have engaged in industrial machine learning partnerships relevant to these domains, and Newcastle University's Digital Economy group has contributed to imbalanced time-series anomaly detection for industrial IoT applications.
+    Northern English industrial contexts — manufacturing defect detection at Siemens Healthineers' Lincoln facility, automotive quality control at Jaguar Land Rover (Coventry), and predictive maintenance at power generation facilities — represent high-value deployment domains where class imbalance between normal operation and fault events is a core engineering challenge. Leeds and Sheffield universities have engaged in industrial machine learning partnerships relevant to these domains, and Newcastle University's Digital Economy group has contributed to imbalanced time-series [[Anomaly Detection]] for industrial IoT applications. The University of Manchester's Department of Computer Science maintains active research in [[Ensemble Methods]] that has relevance to imbalanced learning, and the Manchester-based National Institute for Data Science and Artificial Intelligence (NIDSA) has published guidance on responsible data practices that intersects with imbalanced dataset curation.
+
+    The NHS Digital programmes — including the National Pathology Imaging Co-operative (NPIC) based in Leeds and the AI diagnostics work of NHS England's Digital Transformation Directorate — encounter severe class imbalance challenges in clinical imaging: cancer screening from mammography, diabetic retinopathy detection from retinal photographs, and sepsis prediction from electronic health records all involve minority class rates well below 5%. UK NICE guidance on AI-derived medical devices increasingly requires explicit documentation of training data imbalance and its handling, connecting regulatory compliance to the technical methodology of imbalanced learning. MHRA's review processes for AI medical devices similarly include evaluation of performance stratified by class and consideration of imbalance in training data as part of software-as-a-medical-device regulatory submissions.
+
+  ## Practical Diagnostic Workflow for Imbalanced Classification
+
+    When encountering a classification problem with suspected class imbalance, practitioners should follow this diagnostic sequence:
+
+    **Step 1 – Measure Imbalance**
+    - Compute imbalance ratio: IR = N_majority / N_minority
+    - Compute class frequency distribution across all classes (for multi-class problems)
+    - Plot class frequency histogram; identify whether distribution is binary, multi-class, or long-tail
+    - Determine if imbalance is natural (domain prevalence) or artificial (sampling bias in data collection)
+
+    **Step 2 – Establish Baseline with Correct Metrics**
+    - Train a default classifier (logistic regression or random forest with default settings)
+    - Evaluate with accuracy AND AUPRC AND confusion matrix AND per-class F1
+    - Compare accuracy to the zero-rule baseline (majority class frequency = zero-rule accuracy)
+    - Determine whether the gap between the model's minority class recall and domain requirements is worth addressing
+
+    **Step 3 – Choose Remediation Strategy**
+    - If IR < 10 and features are well-engineered: try class weighting first (simplest intervention)
+    - If IR in [10, 100] and tabular data: SMOTE or SMOTETomek + class weighting as standard pipeline
+    - If IR > 100 and tabular: EasyEnsemble or BalancedBaggingClassifier
+    - If deep learning: focal loss (gamma=2) or class-weighted cross-entropy
+    - If foundation model available: transfer learning + class-weighted fine-tuning (often outperforms SMOTE)
+    - If data collection is possible: [[Active Learning]] to selectively label the most informative minority examples
+
+    **Step 4 – Tune and Evaluate**
+    - Use stratified k-fold cross-validation (minimum k=5) to preserve class ratios across folds
+    - Optimise AUPRC, not accuracy, as the primary metric
+    - Plot precision-recall curve across threshold range; identify operating threshold aligned with cost matrix
+    - Report per-class recall and precision in confusion matrix decomposition
+    - Validate on held-out test set drawn from the same imbalanced distribution as deployment
+
+    **Step 5 – Monitor in Production**
+    - Track minority class recall and precision in production on a rolling window
+    - Alert on recall degradation indicating [[Concept Drift]] in minority class patterns
+    - Implement scheduled retraining with updated data to maintain calibration
 
   ## Future Directions (2026-2030)
 

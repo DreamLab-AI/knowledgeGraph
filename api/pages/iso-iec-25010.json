@@ -39,6 +39,10 @@
     {
       "slug": "ai-deployment",
       "label": "AI Deployment"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
     }
   ]
 }

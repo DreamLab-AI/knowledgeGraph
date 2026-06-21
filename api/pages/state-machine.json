@@ -490,6 +490,10 @@
       "label": "LangGraph"
     },
     {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
       "slug": "presence-indicator",
       "label": "Presence Indicator"
     }

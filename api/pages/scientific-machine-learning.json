@@ -95,6 +95,14 @@
     {
       "slug": "automatic-differentiation",
       "label": "Automatic Differentiation"
+    },
+    {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
     }
   ]
 }

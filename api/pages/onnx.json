@@ -132,6 +132,10 @@
       "label": "Checkpoints"
     },
     {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
       "slug": "onnx-operator-set",
       "label": "ONNX Operator Set"
     },

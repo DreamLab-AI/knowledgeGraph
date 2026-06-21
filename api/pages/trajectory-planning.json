@@ -164,6 +164,10 @@
   ],
   "backlinks": [
     {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
       "slug": "delta-robot",
       "label": "Delta Robot"
     },

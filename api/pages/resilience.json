@@ -137,6 +137,10 @@
       "label": "Attack Vector"
     },
     {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    },
+    {
       "slug": "edge-computing",
       "label": "Edge Computing"
     },

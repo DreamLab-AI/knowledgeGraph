@@ -106,6 +106,10 @@
     {
       "slug": "automated-reasoning",
       "label": "Automated Reasoning"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
     }
   ]
 }

@@ -102,6 +102,10 @@
       "label": "Audio Synthesis"
     },
     {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
     }

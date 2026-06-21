@@ -156,6 +156,10 @@
       "label": "Artificial Intelligence Core"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
       "slug": "deep-learning",
       "label": "Deep Learning"
     },

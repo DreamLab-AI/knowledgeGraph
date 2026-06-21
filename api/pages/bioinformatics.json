@@ -93,5 +93,22 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    }
+  ]
 }

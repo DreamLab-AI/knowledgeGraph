@@ -172,6 +172,10 @@
       "label": "Bayesian Decision Theory"
     },
     {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

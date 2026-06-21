@@ -176,6 +176,10 @@
       "label": "Constraint Satisfaction"
     },
     {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
       "slug": "planning",
       "label": "Planning"
     },

@@ -166,6 +166,14 @@
       "label": "Computer Hardware"
     },
     {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
+    },
+    {
       "slug": "gpu-architecture",
       "label": "GPU Architecture"
     },

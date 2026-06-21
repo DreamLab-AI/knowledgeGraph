@@ -140,6 +140,14 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
       "slug": "prompt-engineering",
       "label": "Prompt Engineering"
     },

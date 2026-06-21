@@ -169,6 +169,14 @@
       "label": "Behavioral Learning"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
       "slug": "computer-vision",
       "label": "Computer Vision"
     },

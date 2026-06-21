@@ -445,8 +445,20 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
       "slug": "agent-identity",
       "label": "Agent Identity"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
     },
     {
       "slug": "agent-memory",
@@ -637,8 +649,24 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "closed-world-assumption",
+      "label": "Closed World Assumption"
+    },
+    {
       "slug": "co-training",
       "label": "Co Training"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
     },
     {
       "slug": "cohere",
@@ -649,6 +677,18 @@
       "label": "Collaborative Whiteboard"
     },
     {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    },
+    {
       "slug": "compliance-control",
       "label": "Compliance Control"
     },
@@ -657,8 +697,36 @@
       "label": "Compliance Monitoring"
     },
     {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "context-window",
       "label": "Context Window"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
     },
     {
       "slug": "death-of-the-internet",
@@ -679,6 +747,10 @@
     {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
     },
     {
       "slug": "fine-tuning",
@@ -729,6 +801,10 @@
       "label": "Image Generation"
     },
     {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
       "slug": "jailbreaking",
       "label": "Jailbreaking"
     },
@@ -751,6 +827,10 @@
     {
       "slug": "llm-application-framework",
       "label": "LLM Application Framework"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
     },
     {
       "slug": "llm-orchestration",
@@ -829,6 +909,10 @@
       "label": "Privacy"
     },
     {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
+    },
+    {
       "slug": "prompt-engineering",
       "label": "Prompt Engineering"
     },
@@ -883,6 +967,10 @@
     {
       "slug": "tensor-processing-unit",
       "label": "Tensor Processing Unit"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
     },
     {
       "slug": "text-generation",

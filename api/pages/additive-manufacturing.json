@@ -64,6 +64,10 @@
       "label": "Automated Design"
     },
     {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
       "slug": "mechanical-component",
       "label": "Mechanical Component"
     },

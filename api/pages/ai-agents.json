@@ -398,6 +398,10 @@
       "label": "Call Centres"
     },
     {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
       "slug": "lightning-and-similar-l2",
       "label": "Lightning and Similar L2"
     },

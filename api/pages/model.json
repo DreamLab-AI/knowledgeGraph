@@ -90,6 +90,10 @@
   ],
   "backlinks": [
     {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
       "slug": "pretrained-model",
       "label": "Pretrained Model"
     },

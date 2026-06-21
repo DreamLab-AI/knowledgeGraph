@@ -259,6 +259,10 @@
       "label": "Call Centres"
     },
     {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
       "slug": "digital-society-harms",
       "label": "Digital Society Harms"
     },

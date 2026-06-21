@@ -45,6 +45,10 @@
       "label": "Action Executor"
     },
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
       "slug": "agent-runtime",
       "label": "Agent Runtime"
     },
@@ -55,6 +59,18 @@
     {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
     }
   ]
 }

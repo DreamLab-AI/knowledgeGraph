@@ -103,6 +103,14 @@
       "label": "Co Training"
     },
     {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    },
+    {
       "slug": "image-generation",
       "label": "Image Generation"
     },

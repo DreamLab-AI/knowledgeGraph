@@ -172,6 +172,10 @@
       "label": "Algorithmic Transparency Index"
     },
     {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
       "slug": "emotional-analytics-engine",
       "label": "Emotional Analytics Engine"
     },

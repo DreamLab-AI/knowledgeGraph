@@ -120,6 +120,14 @@
   ],
   "backlinks": [
     {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
       "slug": "remote-pair-programming",
       "label": "Remote Pair Programming"
     }

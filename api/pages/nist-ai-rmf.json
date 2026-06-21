@@ -235,6 +235,14 @@
       "label": "California AI bill"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
       "slug": "confusion-matrix",
       "label": "Confusion Matrix"
     },

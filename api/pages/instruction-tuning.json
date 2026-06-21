@@ -132,6 +132,10 @@
       "label": "anthropic"
     },
     {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
       "slug": "function-calling",
       "label": "Function Calling"
     },

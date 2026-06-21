@@ -131,6 +131,10 @@
       "label": "Applied Mathematics"
     },
     {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
     },

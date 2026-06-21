@@ -110,6 +110,14 @@
       "label": "AI Model Development"
     },
     {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    },
+    {
       "slug": "etsi-domain-data-management-ai",
       "label": "ETSI Domain: Data Management + AI"
     },

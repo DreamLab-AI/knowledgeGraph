@@ -425,6 +425,10 @@
       "label": "ADE20K"
     },
     {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
       "slug": "image-and-video-restoration",
       "label": "Image and Video Restoration"
     },

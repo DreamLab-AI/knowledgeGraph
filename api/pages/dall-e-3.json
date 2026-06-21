@@ -71,6 +71,10 @@
   ],
   "backlinks": [
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
       "slug": "fooocus",
       "label": "Fooocus"
     },

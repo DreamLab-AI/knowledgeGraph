@@ -43,6 +43,10 @@
     {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
     }
   ]
 }

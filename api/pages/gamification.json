@@ -97,6 +97,10 @@
     {
       "slug": "bayesian-knowledge-tracing",
       "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
     }
   ]
 }

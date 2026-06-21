@@ -746,8 +746,16 @@
       "label": "Communication Protocol"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
       "slug": "consensus-algorithm",
       "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
     },
     {
       "slug": "cortex-agent",
@@ -780,6 +788,10 @@
     {
       "slug": "edge-mesh-network",
       "label": "Edge Mesh Network"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
     },
     {
       "slug": "flp-impossibility",

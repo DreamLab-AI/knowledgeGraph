@@ -102,5 +102,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    }
+  ]
 }

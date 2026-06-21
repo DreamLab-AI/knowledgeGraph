@@ -102,6 +102,18 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     },

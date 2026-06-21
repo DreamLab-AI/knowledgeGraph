@@ -162,6 +162,10 @@
       "label": "Blockchain As A Service"
     },
     {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
     }

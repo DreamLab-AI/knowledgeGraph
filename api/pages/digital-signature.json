@@ -858,6 +858,10 @@
       "label": "Blockchain Protocol"
     },
     {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
       "slug": "consensus-mechanism",
       "label": "Consensus Mechanism"
     },

@@ -165,5 +165,22 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    }
+  ]
 }

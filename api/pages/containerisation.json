@@ -106,6 +106,18 @@
       "label": "Adapter Slot"
     },
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
       "slug": "edge-computing",
       "label": "Edge Computing"
     }

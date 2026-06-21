@@ -83,6 +83,25 @@
         ObjectSomeValuesFrom(infra:reducesTo infra:TrafficWeightedRouting))
       SubClassOf(infra:CanaryDeployment
         ObjectSomeValuesFrom(infra:reducesTo infra:MetricGatedPromotion))
+      SubClassOf(infra:CanaryDeployment
+        ObjectSomeValuesFrom(infra:reducesTo infra:SequentialHypothesisTest))
+  ## Additional Axioms
+      SubClassOf(infra:CanaryDeployment
+        ObjectSomeValuesFrom(infra:uses infra:Prometheus))
+      SubClassOf(infra:CanaryDeployment
+        ObjectSomeValuesFrom(infra:uses infra:Datadog))
+      SubClassOf(infra:CanaryDeployment
+        ObjectSomeValuesFrom(infra:uses infra:GitOps))
+      SubClassOf(infra:CanaryDeployment
+        ObjectSomeValuesFrom(infra:enables infra:PlatformEngineering))
+      SubClassOf(infra:CanaryDeployment
+        ObjectSomeValuesFrom(infra:supports infra:MLOps))
+      SubClassOf(infra:CanaryDeployment
+        ObjectSomeValuesFrom(infra:supports infra:GitOps))
+      SubClassOf(infra:CanaryDeployment
+        ObjectSomeValuesFrom(infra:contrastsWith infra:BlueGreenDeployment))
+      SubClassOf(infra:CanaryDeployment
+        ObjectSomeValuesFrom(infra:contrastsWith infra:RollingDeployment))
 
   ## About
 
@@ -212,6 +231,125 @@
 
     **Canary deployment for quantum computing services**: As quantum computing services transition from research to production use, the progressive delivery of new quantum circuit implementations or error-correction algorithm updates will require canary deployment patterns adapted to the inherently probabilistic and hardware-dependent nature of quantum computation. The statistical analysis layer will need to account for quantum noise characteristics and gate fidelity distributions rather than classical error rate metrics.
 
+  ## Implementation Examples and Configuration
+
+    Concrete configuration examples illustrate how canary deployment is specified in practice within the dominant toolchain ecosystems:
+
+    **Argo Rollouts Canary Rollout YAML (Kubernetes)**
+    A Rollout custom resource specifying a five-step canary progression from five to one hundred percent traffic, with metric analysis between steps:
+
+    ```yaml
+    apiVersion: argoproj.io/v1alpha1
+    kind: Rollout
+    metadata:
+      name: my-service
+    spec:
+      replicas: 10
+      strategy:
+        canary:
+          steps:
+          - setWeight: 5
+          - pause: {duration: 10m}
+          - analysis:
+              templates:
+              - templateName: error-rate-check
+          - setWeight: 20
+          - pause: {duration: 20m}
+          - analysis:
+              templates:
+              - templateName: error-rate-check
+          - setWeight: 50
+          - pause: {duration: 30m}
+          - analysis:
+              templates:
+              - templateName: error-rate-check
+    ```
+
+    **Argo Rollouts AnalysisTemplate YAML (Prometheus metric gate)**
+    An AnalysisTemplate that fails if the canary error rate exceeds two percent over a five-minute evaluation window, with a minimum sample size of 500 requests:
+
+    ```yaml
+    apiVersion: argoproj.io/v1alpha1
+    kind: AnalysisTemplate
+    metadata:
+      name: error-rate-check
+    spec:
+      metrics:
+      - name: error-rate
+        interval: 5m
+        successCondition: result[0] <= 0.02
+        failureLimit: 1
+        provider:
+          prometheus:
+            address: http://prometheus:9090
+            query: |
+              sum(rate(http_requests_total{
+                deployment="{{args.deployment-name}}",
+                status=~"5.."
+              }[5m])) /
+              sum(rate(http_requests_total{
+                deployment="{{args.deployment-name}}"
+              }[5m]))
+    ```
+
+    **KServe InferenceService Canary Configuration**
+    An InferenceService Kubernetes resource specifying that ten percent of inference traffic is routed to the canary model version v2, with the stable version v1 receiving ninety percent:
+
+    ```yaml
+    apiVersion: serving.kserve.io/v1beta1
+    kind: InferenceService
+    metadata:
+      name: my-model
+    spec:
+      predictor:
+        model:
+          storageUri: gs://my-bucket/models/v1
+      transformer:
+        containers:
+        - name: transformer
+          image: my-transformer:v1
+      canaryTrafficPercent: 10
+      predictor:
+        canary:
+          model:
+            storageUri: gs://my-bucket/models/v2
+    ```
+
+    **Flagger Canary Resource (with Istio)**
+    A Flagger Canary custom resource that progressively shifts traffic from stable to canary in ten-percent steps every five minutes, failing if the request success rate drops below ninety-nine percent:
+
+    ```yaml
+    apiVersion: flagger.app/v1beta1
+    kind: Canary
+    metadata:
+      name: my-service
+    spec:
+      targetRef:
+        apiVersion: apps/v1
+        kind: Deployment
+        name: my-service
+      progressDeadlineSeconds: 3600
+      service:
+        port: 80
+        targetPort: 8080
+      analysis:
+        interval: 5m
+        threshold: 3
+        maxWeight: 100
+        stepWeight: 10
+        metrics:
+        - name: request-success-rate
+          thresholdRange:
+            min: 99
+          interval: 5m
+        - name: request-duration
+          thresholdRange:
+            max: 500
+          interval: 5m
+    ```
+
+    These configuration examples demonstrate the declarative nature of modern canary deployment specifications: the rollout schedule, analysis criteria, and promotion/rollback logic are all expressed as Kubernetes custom resource definitions that are stored in Git, version-controlled, reviewed through pull requests, and applied by controllers without requiring custom automation scripts. This infrastructure-as-code approach is what makes canary deployment scalable across thousands of services in large engineering organisations.
+
   ## Benchmark Datasets and Performance Standards
 
     The empirical performance of canary deployment systems is measured against several reference frameworks and industry benchmarks, rather than against discrete algorithmic datasets in the manner of search algorithms. The primary measurement system is the DORA four-key metrics framework, codified in the annual Accelerate State of DevOps Report (Google / DORA, 2023 and 2024 editions). Elite performers in the 2023 survey deploy on demand (multiple times per day), have lead times for changes under one hour, change failure rates under five percent, and mean time to restore under one hour. These benchmarks serve as the performance standard that canary deployment is designed to enable: high deployment frequency with low change failure rate is achievable precisely because canary deployment bounds failure impact and enables automated recovery.
@@ -326,6 +464,16 @@
     26. Addepto (2026). "Best MLOps Platforms in 2026." https://addepto.com/mlops-platforms-in-2026/.
     27. CircleCI (2024). "Canary vs Blue-Green Deployment to Reduce Downtime." https://circleci.com/blog/canary-vs-blue-green-downtime/.
     28. Kolekar, R. (2026). "MLOps in 2026 — The Definitive Guide." https://rahulkolekar.com/mlops-in-2026-the-definitive-guide-tools-cloud-platforms-architectures-and-a-practical-playbook/.
+
+  ## Deployment Decision Framework
+
+    Selecting between canary deployment and alternative strategies requires a structured decision framework. The following criteria guide strategy selection:
+
+    - **Risk profile of the change**: High-risk changes (new algorithm, model update, schema migration) favour canary over rolling deployment. Low-risk changes (dependency patch, configuration tweak with well-understood behaviour) may accept rolling deployment to avoid canary infrastructure overhead.
+    - **Traffic volume**: Low-traffic services (under 100 requests per minute) cannot accumulate statistically significant canary data quickly. For these services, longer soak periods or higher initial canary weights (20-30%) are required. High-traffic services (over 10,000 requests per second) can run analyses at low weights (1-5%) and accumulate significance within minutes.
+    - **Rollback cost**: Services where rollback is instantaneous (stateless, no data mutations) are ideal candidates for canary deployment. Services with write-side effects (database mutations, message queue emissions) require careful design of idempotent operations to ensure rollback does not leave inconsistent state.
+    - **Dual-version compatibility**: The stable and canary versions may coexist handling requests simultaneously. Any change that introduces backwards-incompatible API changes (breaking changes to request/response schemas, removal of fields, changed serialisation formats) must ensure that both versions remain compatible with all clients during the canary period.
+    - **Infrastructure cost**: Canary deployment requires running both stable and canary versions simultaneously, typically at full-scale for the stable version and at canary-proportion scale for the canary. For small services this overhead is negligible; for large services with hundreds of instances, the additional cost of canary instances must be budgeted.
 
 - ### Provenance
   - sources:: https://sre.google/workbook/canarying-releases/, https://argo-rollouts.readthedocs.io/en/stable/features/canary/, https://www.cncf.io/blog/2024/02/27/flagger-vs-argo-rollouts-vs-service-meshes-a-guide-to-progressive-delivery-in-kubernetes/, https://oneuptime.com/blog/post/2026-01-30-mlops-canary-model-deployment/view, https://oneuptime.com/blog/post/2026-01-07-istio-canary-deployments/view, https://martinfowler.com/bliki/CanaryRelease.html, https://linkerd.io/2-edge/tasks/flagger/, https://www.buoyant.io/blog/flagger-vs-argo-rollouts-for-progressive-delivery-on-linkerd

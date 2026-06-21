@@ -97,6 +97,10 @@
     {
       "slug": "carbon-footprint-indicator",
       "label": "Carbon Footprint Indicator"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
     }
   ]
 }

@@ -151,6 +151,10 @@
       "label": "Applied Mathematics"
     },
     {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
     },

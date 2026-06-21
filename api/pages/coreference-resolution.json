@@ -96,6 +96,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     }

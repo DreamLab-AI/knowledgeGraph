@@ -149,6 +149,14 @@
       "label": "Asynchronous Video"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
       "slug": "entity-resolution",
       "label": "Entity Resolution"
     },

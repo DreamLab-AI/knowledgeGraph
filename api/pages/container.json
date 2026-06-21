@@ -13,13 +13,25 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.0,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
       {
         "id": "urn:ngm:class:deployment-artifact",
         "label": "Deployment Artifact"
+      },
+      {
+        "id": "urn:ngm:class:container-image",
+        "label": "Container Image"
+      },
+      {
+        "id": "urn:ngm:class:container-registry",
+        "label": "Container Registry"
+      },
+      {
+        "id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
       }
     ],
     "requires": [
@@ -30,6 +42,10 @@
       {
         "id": "urn:ngm:class:resource-isolation",
         "label": "Resource Isolation"
+      },
+      {
+        "id": "urn:ngm:class:linux-kernel",
+        "label": "Linux Kernel"
       }
     ],
     "enables": [
@@ -40,32 +56,59 @@
       {
         "id": "urn:ngm:class:model-deployment",
         "label": "Model Deployment"
+      },
+      {
+        "id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "id": "urn:ngm:class:immutable-infrastructure",
+        "label": "Immutable Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:orchestration",
         "label": "Orchestration"
+      },
+      {
+        "id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:resource-isolation",
         "label": "Resource Isolation"
+      },
+      {
+        "id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
       }
     ],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:virtualisation",
         "label": "Virtualization"
-      }
-    ],
-    "bridgesTo": [
+      },
       {
-        "id": "urn:ngm:class:kubernetes",
-        "label": "Kubernetes"
+        "id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      },
+      {
+        "id": "urn:ngm:class:serverless",
+        "label": "Serverless"
       }
     ],
+    "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:cgroups",
@@ -74,6 +117,14 @@
       {
         "id": "urn:ngm:class:namespace",
         "label": "Namespaces"
+      },
+      {
+        "id": "urn:ngm:class:open-container-initiative",
+        "label": "Open Container Initiative"
+      },
+      {
+        "id": "urn:ngm:class:ebpf",
+        "label": "eBPF"
       }
     ],
     "supports": [
@@ -84,6 +135,18 @@
       {
         "id": "urn:ngm:class:ci-cd",
         "label": "CI/CD"
+      },
+      {
+        "id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "id": "urn:ngm:class:gitops",
+        "label": "GitOps"
       }
     ],
     "standardizedBy": [],
@@ -91,6 +154,10 @@
       {
         "id": "urn:ngm:class:cloud-infrastructure",
         "label": "Cloud Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
       }
     ],
     "relatedTo": [
@@ -101,9 +168,210 @@
       {
         "id": "urn:ngm:class:serverless",
         "label": "Serverless"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "id": "urn:ngm:class:container-security",
+        "label": "Container Security"
+      },
+      {
+        "id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "containerization",
+      "label": "Containerization"
+    },
+    {
+      "slug": "control-groups",
+      "label": "Control Groups"
+    },
+    {
+      "slug": "namespaces",
+      "label": "Namespaces"
+    },
+    {
+      "slug": "resource-isolation",
+      "label": "Resource Isolation"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "ci-cd",
+      "label": "CI/CD"
+    },
+    {
+      "slug": "orchestration",
+      "label": "Orchestration"
+    },
+    {
+      "slug": "cloud-infrastructure",
+      "label": "Cloud Infrastructure"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "devops",
+      "label": "DevOps"
+    },
+    {
+      "slug": "serverless",
+      "label": "Serverless"
+    },
+    {
+      "slug": "virtualization",
+      "label": "Virtualization"
+    },
+    {
+      "slug": "deployment-artifact",
+      "label": "Deployment Artifact"
+    },
+    {
+      "slug": "docker-containerisation-platform",
+      "label": "Docker Containerisation Platform"
+    },
+    {
+      "slug": "container-image",
+      "label": "Container Image"
+    },
+    {
+      "slug": "container-registry",
+      "label": "Container Registry"
+    },
+    {
+      "slug": "container-runtime",
+      "label": "Container Runtime"
+    },
+    {
+      "slug": "open-container-initiative",
+      "label": "Open Container Initiative"
+    },
+    {
+      "slug": "linux-kernel",
+      "label": "Linux Kernel"
+    },
+    {
+      "slug": "cloud-native",
+      "label": "Cloud Native"
+    },
+    {
+      "slug": "microservices-architecture",
+      "label": "Microservices Architecture"
+    },
+    {
+      "slug": "service-mesh",
+      "label": "Service Mesh"
+    },
+    {
+      "slug": "gpu-computing",
+      "label": "GPU Computing"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "webassembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "immutable-infrastructure",
+      "label": "Immutable Infrastructure"
+    },
+    {
+      "slug": "gitops",
+      "label": "GitOps"
+    },
+    {
+      "slug": "distributed-system",
+      "label": "Distributed System"
+    },
+    {
+      "slug": "container-security",
+      "label": "Container Security"
+    },
+    {
+      "slug": "software-supply-chain",
+      "label": "Software Supply Chain"
+    },
+    {
+      "slug": "platform-engineering",
+      "label": "Platform Engineering"
+    },
+    {
+      "slug": "infrastructure-as-code",
+      "label": "Infrastructure as Code"
+    },
+    {
+      "slug": "ebpf",
+      "label": "eBPF"
+    },
+    {
+      "slug": "scalability",
+      "label": "Scalability"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "high-availability",
+      "label": "High Availability"
+    },
+    {
+      "slug": "reproducibility",
+      "label": "Reproducibility"
+    },
+    {
+      "slug": "cloud-native-computing-foundation",
+      "label": "Cloud Native Computing Foundation"
+    },
+    {
+      "slug": "vllm",
+      "label": "vLLM"
+    },
+    {
+      "slug": "kubeflow",
+      "label": "Kubeflow"
+    },
+    {
+      "slug": "containerd",
+      "label": "containerd"
+    },
+    {
+      "slug": "cri-o",
+      "label": "CRI-O"
+    }
+  ],
   "backlinks": []
 }

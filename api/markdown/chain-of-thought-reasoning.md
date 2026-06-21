@@ -9,17 +9,17 @@
   - implemented-in-layer:: [[Algorithmic Layer]]
 
 - ### Relationships
-  - is-subclass-of:: [[AI Technique]], [[Emergent Capability]]
-  - has-part:: [[Scratchpad Reasoning]], [[Tree of Thought]], [[Self-Refinement]], [[Self-Consistency]], [[Process Reward Models]]
-  - requires:: [[Large Language Models]], [[Transformer Architecture]], [[In-Context Learning]], [[Model Scaling]]
-  - enables:: [[Mathematical Reasoning]], [[Multi-Step Reasoning]], [[Autonomous Agents]], [[Self-Consistency]], [[Process Reward Models]], [[Inference-Time Compute]], [[Formal Verification]]
-  - implements:: [[Prompt Engineering]], [[Few-Shot Learning]], [[Zero-Shot Prompting]]
-  - depends-on:: [[Attention Mechanism]], [[Model Scaling]], [[Residual Stream]]
-  - supports:: [[Mechanistic Interpretability]], [[AI Alignment]], [[Natural Language Processing]], [[Code Generation]]
-  - uses:: [[Reinforcement Learning from Human Feedback]], [[Reinforcement Learning]], [[Zero-Shot Prompting]], [[Few-Shot Learning]]
-  - contrasts-with:: [[Direct Answer Prompting]], [[Standard Prompting]], [[Symbolic AI]], [[System 1 Thinking]]
-  - related-to:: [[Mechanistic Interpretability]], [[Reasoning]], [[Inference-Time Compute]], [[Natural Language Processing]], [[Automated Theorem Proving]], [[Formal Verification]], [[Backpropagation]]
-  - standardized-by:: [[NeurIPS 2022 Proceedings]], [[OpenAI Technical Reports]], [[Anthropic Research]]
+  - is-subclass-of:: [[AI Technique]], [[Emergent Capability]], [[Inference Protocol]]
+  - has-part:: [[Scratchpad Reasoning]], [[Tree of Thought]], [[Self-Refinement]], [[Self-Consistency]], [[Process Reward Models]], [[Step-Level Verifier]], [[Few-Shot Exemplar]], [[Reasoning Token]]
+  - requires:: [[Large Language Models]], [[Transformer Architecture]], [[In-Context Learning]], [[Model Scaling]], [[Attention Mechanism]]
+  - enables:: [[Mathematical Reasoning]], [[Multi-Step Reasoning]], [[Autonomous Agents]], [[Self-Consistency]], [[Process Reward Models]], [[Inference-Time Compute]], [[Formal Verification]], [[Code Generation]], [[Scientific Reasoning]], [[Educational Tutoring]]
+  - implements:: [[Prompt Engineering]], [[Few-Shot Learning]], [[Zero-Shot Prompting]], [[Inference-Time Scaling]], [[Reinforcement Learning]]
+  - depends-on:: [[Attention Mechanism]], [[Model Scaling]], [[Residual Stream]], [[Transformer Architecture]], [[Backpropagation]]
+  - supports:: [[Mechanistic Interpretability]], [[AI Alignment]], [[Natural Language Processing]], [[Code Generation]], [[Automated Theorem Proving]], [[Legal Reasoning]], [[Medical Reasoning]]
+  - uses:: [[Reinforcement Learning from Human Feedback]], [[Reinforcement Learning]], [[Zero-Shot Prompting]], [[Few-Shot Learning]], [[Direct Preference Optimisation]], [[Process Reward Models]]
+  - contrasts-with:: [[Direct Answer Prompting]], [[Standard Prompting]], [[Symbolic AI]], [[System 1 Thinking]], [[Retrieval Augmented Generation]]
+  - related-to:: [[Mechanistic Interpretability]], [[Reasoning]], [[Inference-Time Compute]], [[Natural Language Processing]], [[Automated Theorem Proving]], [[Formal Verification]], [[Backpropagation]], [[Neural Turing Machine]], [[Agentic AI]], [[Multi-Agent Systems]]
+  - standardized-by:: [[NeurIPS 2022 Proceedings]], [[OpenAI Technical Reports]], [[Anthropic Research]], [[DeepSeek Research]]
 
 - ### Content
   - ## Compositional Relationships (Components)
@@ -94,6 +94,30 @@
       ObjectSomeValuesFrom(ai:contrastsWith ai:DirectAnswerPrompting))
     SubClassOf(ai:ChainOfThoughtReasoning
       ObjectSomeValuesFrom(ai:contrastsWith ai:SymbolicAI))
+    SubClassOf(ai:ChainOfThoughtReasoning
+      ObjectSomeValuesFrom(ai:contrastsWith ai:SystemOneThinking))
+    SubClassOf(ai:ChainOfThoughtReasoning
+      ObjectSomeValuesFrom(ai:contrastsWith ai:RetrievalAugmentedGeneration))
+    SubClassOf(ai:ChainOfThoughtReasoning
+      ObjectSomeValuesFrom(ai:relatedTo ai:AutomatedTheoremProving))
+    SubClassOf(ai:ChainOfThoughtReasoning
+      ObjectSomeValuesFrom(ai:relatedTo ai:FormalVerification))
+    SubClassOf(ai:ChainOfThoughtReasoning
+      ObjectSomeValuesFrom(ai:relatedTo ai:NeuralTuringMachine))
+    SubClassOf(ai:ChainOfThoughtReasoning
+      ObjectSomeValuesFrom(ai:relatedTo ai:Backpropagation))
+    SubClassOf(ai:ChainOfThoughtReasoning
+      ObjectSomeValuesFrom(ai:supports ai:LegalReasoning))
+    SubClassOf(ai:ChainOfThoughtReasoning
+      ObjectSomeValuesFrom(ai:supports ai:MedicalDiagnosis))
+    SubClassOf(ai:ChainOfThoughtReasoning
+      ObjectSomeValuesFrom(ai:supports ai:ScientificHypothesisGeneration))
+    SubClassOf(ai:ChainOfThoughtReasoning
+      ObjectSomeValuesFrom(ai:uses ai:DirectPreferenceOptimisation))
+    SubClassOf(ai:ChainOfThoughtReasoning
+      ObjectSomeValuesFrom(ai:relatedTo ai:MultiAgentSystems))
+    SubClassOf(ai:ChainOfThoughtReasoning
+      ObjectSomeValuesFrom(ai:enables ai:AgenticPlanning))
     ```
 
   - ## About
@@ -251,6 +275,32 @@
     - **Economic Efficiency**: Developing techniques such as chain-of-draft (thinking faster by writing less) and dynamic reasoning budgets that adapt token allocation to problem difficulty, reducing inference costs while preserving reasoning quality.
     - **Self-Improving CoT via RL**: Building on DeepSeek-R1's success to develop models that continually improve reasoning chains through interaction with verifiable environments, potentially achieving superhuman performance on formal domains by 2028–2030.
 
+  - ## CoT and the Broader Inference-Time Compute Paradigm
+    Chain-of-Thought Reasoning is best understood not in isolation but as part of a fundamental shift in how the AI field thinks about allocating computational resources. The historical trajectory of AI progress from 2012 through 2022 was dominated by the training-time compute paradigm: performance improvements came primarily from training larger models on more data, with the scaling laws of Kaplan et al. (2020) and Hoffmann et al. (2022, "Chinchilla") providing empirical guidance on the optimal training compute allocation between model size and dataset size. This paradigm drove the development of GPT-3 (175B parameters), PaLM (540B), and GPT-4.
+
+    The inference-time compute paradigm — of which CoT is the primary mechanism — proposes that reasoning quality can be improved by allocating more computation during inference rather than (or in addition to) scaling training. The key insight, developed empirically through the success of CoT prompting and theoretically through circuit complexity analysis, is that some classes of problems benefit more from additional sequential reasoning steps than from additional model parameters. A model with more parameters has more knowledge and can perform more complex single-step transformations, but a model with longer reasoning traces can perform sequential compositional operations that are fundamentally different in kind.
+
+    This has important practical implications. Inference-time compute can be scaled elastically: the same trained model can be used with short traces for easy problems and long traces for hard problems, without retraining. Training-time compute is fixed at deployment time. For domains with automatic correctness verification (mathematics, code execution, formal proof checking), inference-time compute can be spent on search — generating multiple candidate solutions and selecting the verified correct one — in a way that is not possible with training-time compute alone.
+
+    The economic tradeoffs are complex. OpenAI's o1 model family charges approximately 5–10× more per token for inference than their GPT-4o model, reflecting the cost of long CoT generation. For many high-value applications (legal analysis, medical diagnosis, engineering design, financial modelling), this premium is justified. For high-throughput, latency-sensitive applications (customer service chatbots, recommendation systems, search), the premium is prohibitive and drives interest in efficient reasoning methods.
+
+    The emerging research direction of adaptive inference combines training-time compute efficiency (small, capable base models) with inference-time compute flexibility (variable-length reasoning based on estimated problem difficulty). Models like Snell et al.'s "compute-optimal test-time scaling" and the chain-of-draft approach explore this adaptive frontier, aiming to identify the Pareto-efficient frontier between inference compute and reasoning accuracy.
+
+    The hardware implications are substantial. Long CoT generation requires storing and accessing increasingly long key-value caches across thousands of reasoning tokens, driving demand for high-bandwidth memory (HBM) and large context-window inference accelerators. Speculative decoding — where a small "draft" model proposes reasoning tokens that a large "verifier" model checks in parallel — is one technique for reducing the wall-clock latency of long-CoT generation. Continuous batching and flash attention improvements enable efficient processing of variable-length reasoning traces in production serving stacks.
+
+  - ## CoT in Agentic and Multi-Agent Systems
+    The most expansive application of Chain-of-Thought Reasoning is in agentic systems where an AI model must plan, act, observe, and adapt over extended interaction horizons. In these settings, CoT is not merely a mechanism for answering a single question but a substrate for sustained, multi-step decision-making under uncertainty.
+
+    The ReAct framework (Yao et al. 2022) pioneered the interleaving of reasoning (CoT traces) with action (tool calls): the model generates a reasoning step explaining its current understanding and intended next action, then takes the action (web search, code execution, API call), observes the result, and generates another reasoning step incorporating the new information. This Reasoning + Acting loop allows the model to adapt its plan based on environmental feedback, enabling it to complete tasks that would fail with a single-shot answer.
+
+    Reflexion (Shinn et al. 2023) extends ReAct with an additional self-reflection step: after completing a task (successfully or unsuccessfully), the model generates a verbal reflection on what went wrong or could be improved, storing this in a memory buffer for the next attempt. This creates a form of trial-and-error learning at inference time, where the CoT reasoning trace serves as the medium for error analysis and planning improvement.
+
+    Multi-agent CoT frameworks distribute reasoning across multiple specialised agents. In Society of Mind–style architectures (Park et al. 2023 "Generative Agents"), multiple LLM agents maintain memory streams and reason about their social context, plans, and observations using CoT traces. Coordination between agents is mediated by shared memory or structured communication protocols, with each agent's CoT trace providing the basis for its actions and responses. Frameworks such as AutoGen (Wu et al. 2023) and CrewAI enable orchestrated multi-agent workflows where specialist agents (coder, reviewer, tester, planner) each contribute CoT reasoning to a shared task.
+
+    The combination of agentic CoT with tool use enables AI systems to access and synthesise information from the web, databases, code execution environments, and APIs in a structured, auditable way. The reasoning trace documents the agent's information-gathering strategy, making it possible to audit why specific tools were used and how their results were incorporated into the final output. This is particularly valuable in research assistance, business intelligence, and technical problem-solving contexts where the provenance of conclusions matters.
+
+    However, agentic CoT systems also introduce new failure modes: reasoning traces can be hijacked by adversarial content in retrieved documents (prompt injection), extended tool-use loops can incur significant API costs without converging to a solution, and multi-agent coordination can produce inconsistencies when agents develop divergent reasoning chains. Robust agentic systems require careful design of guard rails, resource limits, and verification mechanisms.
+
   - ## Research and Literature
     1. Wei, J., Wang, X., Schuurmans, D., Bosma, M., Ichter, B., Xia, F., Chi, E., Le, Q., Zhou, D. (2022). "Chain-of-Thought Prompting Elicits Reasoning in Large Language Models." *NeurIPS 2022*, arXiv:2201.11903.
     2. Kojima, T., Gu, S.S., Reid, M., Matsuo, Y., Iwasawa, Y. (2022). "Large Language Models are Zero-Shot Reasoners." *NeurIPS 2022*, arXiv:2205.11916.
@@ -280,6 +330,17 @@
     26. Hendrycks, D., Burns, C., Kadavath, S., Arora, A., Basart, S., Tang, E., Song, D., Steinhardt, J. (2021). "Measuring Mathematical Problem Solving with the MATH Dataset." arXiv:2103.03874.
     27. Srivastava, A., et al. (2022). "Beyond the Imitation Game: Quantifying and Extrapolating the Capabilities of Language Models." arXiv:2206.04615. (BIG-Bench dataset paper.)
     28. arXiv Survey. (2025). "A Survey of Frontiers in LLM Reasoning: Inference Scaling, Learning to Reason, and Agentic Systems." arXiv:2504.09037.
+
+  - ## Detailed Trace Structure: Anatomy of a Chain-of-Thought Response
+    Examining the internal structure of a well-formed [[Chain-of-Thought Reasoning]] response reveals consistent patterns across problem types:
+
+    - **Problem Restating Phase**: The model first paraphrases the problem to confirm understanding, identifying key entities, quantities, and the goal. This step anchors the subsequent reasoning to the problem statement and reduces drift.
+    - **Planning or Strategy Identification**: Before diving into steps, capable models often articulate a high-level strategy: "I'll solve this by converting to a common denominator", or "I'll first identify the relevant formula, then substitute values." This meta-reasoning guides the subsequent computation steps.
+    - **Sequential Computation Steps**: Each numbered or bulleted step performs one atomic operation: applying a formula, performing a substitution, making a logical deduction, or retrieving a fact. Well-formed steps are specific, verifiable, and short.
+    - **Intermediate Result Tracking**: Each step produces an intermediate result that is explicitly stated and carried forward. This explicit state tracking is what allows the model to build on prior computation rather than re-inferring from scratch.
+    - **Verification or Sanity Check**: Many high-quality CoT traces include a verification step: checking that units are consistent, that the result passes a boundary condition, or that the logical derivation is reversible. This self-verification step reduces hallucination in final answers.
+    - **Answer Extraction**: The final step explicitly extracts the answer from the reasoning chain, stating it in the required format (a number, a label, a code snippet, a logical conclusion).
+    - **Uncertainty Acknowledgement** (in advanced models): Extended thinking models may include explicit uncertainty markers: "This step is uncertain — I'm assuming X because Y. If X is false, the answer would be Z instead." This connects CoT to calibrated [[Uncertainty Quantification]] in AI outputs.
 
   - ## Benchmark Datasets and Evaluation Methodology
     Rigorous evaluation of Chain-of-Thought Reasoning requires benchmark suites that test multi-step inference rather than knowledge recall, since direct-answer prompting can sometimes match CoT on knowledge-lookup tasks. The canonical benchmarks are:
@@ -333,6 +394,39 @@
     - **Program-of-Thought (PoT)**: A CoT variant using executable code as the intermediate representation.
     - **Multimodal CoT**: Extension of CoT to vision-language models where reasoning steps interleave text and visual references.
     - **Latent CoT**: Hypothetical internal reasoning representations not surfaced as tokens; a frontier research question.
+
+  - ## Cross-Reference Index: Key Ontology Connections
+    This section documents the primary ontological connections of [[Chain-of-Thought Reasoning]] to other concepts in the knowledge graph, serving as a structured reference for relationship traversal:
+
+    - **Model Architecture Dependencies**: [[Chain-of-Thought Reasoning]] requires [[Transformer Architecture]] as its computational substrate. The [[Attention Mechanism]] within the [[Transformer Architecture]] provides the cross-token routing that makes intermediate tokens computationally useful. [[Residual Stream]] connections between layers are the mechanism by which intermediate tokens contribute to subsequent computations. [[Multi-Head Attention]] enables parallel attention over multiple reasoning contexts simultaneously. [[Positional Encoding]] allows the [[Transformer Architecture]] to distinguish reasoning step order within the generated sequence.
+    - **Training Paradigm Connections**: [[Reinforcement Learning from Human Feedback]] (RLHF) instils reliable CoT behaviour during post-training. [[Direct Preference Optimisation]] (DPO) provides an alternative to RLHF for training CoT quality. [[Process Reward Models]] enable step-level [[Reinforcement Learning]] feedback. [[Supervised Fine-Tuning]] on curated reasoning traces is the most straightforward instillation method. [[Constitutional AI]] (Anthropic) uses CoT in the critique-revision cycle for alignment.
+    - **Prompting Technique Hierarchy**: [[Prompt Engineering]] is the parent concept. [[Few-Shot Learning]] prompting uses worked exemplars. [[Zero-Shot Prompting]] triggers CoT with natural language cues. [[In-Context Learning]] is the mechanism that makes few-shot exemplars effective. [[Instruction Tuning]] prepares models to follow CoT-triggering instructions.
+    - **Inference-Time Scaling Components**: [[Inference-Time Compute]] is the parent paradigm. [[Self-Consistency]] provides ensemble averaging. [[Tree of Thought]] provides tree-structured search. [[Beam Search]] generalises to reasoning-step level. [[Monte Carlo Tree Search]] provides theoretical grounding for tree-based reasoning search.
+    - **Reasoning Output Quality**: [[Mathematical Reasoning]] is the primary benchmark domain. [[Commonsense Reasoning]] tests world-model traversal. [[Causal Reasoning]] tests counterfactual inference. [[Logical Deduction]] tests formal inference. [[Analogical Reasoning]] tests structural mapping. [[Multi-Hop Question Answering]] tests information chaining.
+    - **Downstream Application Enablers**: [[Autonomous Agents]] use CoT as planning substrate. [[Code Generation]] benefits from step-by-step decomposition. [[Automated Theorem Proving]] receives proof sketch assistance. [[Natural Language Processing]] pipelines integrate CoT for complex tasks. [[Information Extraction]] uses CoT for multi-step document parsing.
+    - **Interpretability and Safety Links**: [[Mechanistic Interpretability]] studies how CoT is implemented in model weights. [[AI Alignment]] uses CoT for transparent decision auditing. [[Formal Verification]] can check CoT reasoning steps. [[AI Safety]] research investigates CoT deception risks. [[Explainable AI]] benefits from CoT as a legibility mechanism.
+    - **Contrasting Paradigms**: [[Symbolic AI]] uses explicit rule-based reasoning without neural uncertainty. [[Retrieval Augmented Generation]] retrieves facts rather than reasoning over them. [[Direct Answer Prompting]] omits intermediate steps. [[System 1 Thinking]] (Kahneman) is the fast, intuitive cognition that CoT overcomes. [[Neural-Symbolic Integration]] attempts to combine CoT-style reasoning with formal symbolic systems.
+    - **Historical Precursors**: [[Neural Turing Machine]] (Graves 2014) added external memory for multi-step computation. [[Scratchpad Reasoning]] (Nye et al. 2021) introduced learned intermediate computation. [[Program Synthesis]] provides formal analogues of multi-step reasoning. [[Recurrent Neural Network]] attempted sequential reasoning before [[Transformer Architecture]] superseded it.
+    - **Evaluation Infrastructure**: [[GSM8K]] (grade-school mathematics). [[MATH Dataset]] (competition mathematics). [[BIG-Bench Hard]] (diverse reasoning tasks). [[HumanEval]] (code generation). [[ARC Challenge]] (science reasoning). [[AIME]] and [[IMO Problems]] (frontier mathematics).
+
+  - ## Semantic Classification Detail: OWL Role Assignments
+    - owl-class:: ai:ChainOfThoughtReasoning
+    - owl-inferred:: ai:EmergentLLMCapability
+    - owl-inferred:: ai:InferenceTimeScalingMethod
+    - owl-inferred:: ai:InterpretabilityEnablingCapability
+    - owl-inferred:: ai:AlignmentRelevantMechanism
+    - owl-inferred:: ai:AgenticPlanningSubstrate
+    - owl-inferred:: ai:FormalReasoningBridge
+    - owl-related-standard:: eu:AIAct:TransparencyRequirement
+    - owl-related-standard:: uk:AIRegulationBill:ExplainabilityProvision
+    - owl-domain-tag:: [[Artificial Intelligence]]
+    - owl-domain-tag:: [[Natural Language Processing]]
+    - owl-domain-tag:: [[AI Safety]]
+    - owl-layer-tag:: [[Algorithmic Layer]]
+    - owl-maturity:: Established (2022–2026)
+    - owl-emergence-threshold:: ~100B parameters (PaLM scale, 2022)
+    - owl-production-examples:: [[OpenAI o1]], [[OpenAI o3]], [[DeepSeek-R1]], [[Anthropic Extended Thinking]], [[Google Gemini Thinking]]
+    - owl-key-benchmarks:: [[GSM8K]], [[MATH Dataset]], [[BIG-Bench Hard]], [[HumanEval]], [[AIME]]
 
 - ### Provenance
   - sources:: https://arxiv.org/abs/2201.11903 (Wei et al. 2022); https://proceedings.neurips.cc/paper/2022/hash/9d5609613524ecf4f15af0f7b31abca4-Abstract-Conference.html; https://arxiv.org/abs/2205.11916 (Kojima et al. 2022); https://arxiv.org/abs/2305.20050 (Lightman et al. 2023); https://arxiv.org/abs/2305.10601 (Yao et al. ToT 2023); https://arxiv.org/abs/2501.12948 (DeepSeek-R1 2025); https://arxiv.org/html/2504.09037v4 (Survey 2025); https://bdtechtalks.com/2025/02/12/openai-o3s-chain-of-thought/

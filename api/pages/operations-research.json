@@ -147,6 +147,18 @@
       "label": "Bayesian Decision Theory"
     },
     {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
       "slug": "control-theory",
       "label": "Control Theory"
     },

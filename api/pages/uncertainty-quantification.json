@@ -126,6 +126,14 @@
       "label": "Bayesian Optimisation"
     },
     {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "medical-ai",
       "label": "Medical AI"
     },

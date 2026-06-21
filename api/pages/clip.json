@@ -164,6 +164,18 @@
       "label": "BLIP-2 Captioner"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
+    },
+    {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
       "slug": "comfy-ui-workflows",
       "label": "ComfyUI Workflows"
     },

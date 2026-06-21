@@ -107,6 +107,14 @@
     {
       "slug": "agent-based-models",
       "label": "Agent-Based Models"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
     }
   ]
 }

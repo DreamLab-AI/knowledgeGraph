@@ -186,6 +186,10 @@
       "label": "Compliance Monitoring"
     },
     {
+      "slug": "container",
+      "label": "Container"
+    },
+    {
       "slug": "digital-twin-of-society-dto-s",
       "label": "Digital Twin of Society (DToS)"
     },

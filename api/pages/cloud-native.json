@@ -75,6 +75,14 @@
       "label": "Action Executor"
     },
     {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
+    },
+    {
       "slug": "distributed-computing",
       "label": "Distributed Computing"
     },

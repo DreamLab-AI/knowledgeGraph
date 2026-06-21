@@ -168,6 +168,14 @@
       "label": "Collision Detection"
     },
     {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

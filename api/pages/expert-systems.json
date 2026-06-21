@@ -160,6 +160,14 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

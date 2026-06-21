@@ -63,6 +63,14 @@
       "label": "Checkpoints"
     },
     {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
+      "slug": "comfy-ui-manager",
+      "label": "comfyui manager"
+    },
+    {
       "slug": "comfy-ui-workflows",
       "label": "ComfyUI Workflows"
     },

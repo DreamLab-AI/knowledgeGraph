@@ -301,6 +301,10 @@
       "label": "Beam Search"
     },
     {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
     },

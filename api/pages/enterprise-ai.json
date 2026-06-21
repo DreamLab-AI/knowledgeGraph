@@ -119,6 +119,10 @@
     {
       "slug": "call-centres",
       "label": "Call Centres"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
     }
   ]
 }

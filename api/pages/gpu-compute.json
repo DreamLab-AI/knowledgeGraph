@@ -189,12 +189,60 @@
       "label": "Audio Generation"
     },
     {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "code-former",
+      "label": "CodeFormer"
+    },
+    {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
+    },
+    {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
+      "slug": "comfy-ui-manager",
+      "label": "comfyui manager"
+    },
+    {
       "slug": "comfy-ui-workflows",
       "label": "ComfyUI Workflows"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "control-net",
+      "label": "controlnet"
     },
     {
       "slug": "deep-learning",

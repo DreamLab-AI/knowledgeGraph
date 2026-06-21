@@ -9,17 +9,17 @@
   - implemented-in-layer:: [[AI Governance]]
 
 - ### Relationships
-  - is-subclass-of:: [[AI Safety]], [[Risk Assessment]]
-  - has-part:: [[Dangerous Capability Evaluation]], [[CBRN Risk Assessment]], [[Red Teaming]], [[Threat Modelling]], [[Uplift Quantification]], [[Fault Tree Analysis]]
-  - requires:: [[Model Evaluation]], [[Red Teaming]], [[Capability Forecasting]], [[Expert Elicitation]], [[Dangerous Capability Evaluation]]
-  - enables:: [[AI Governance]], [[Responsible Scaling Policy]], [[Existential Risk]] mitigation, [[AI Regulation]], [[Human Oversight]]
-  - implements:: [[Probabilistic Risk Assessment]], [[Red Teaming]], [[Fault Tree Analysis]], [[Failure Mode Effects Analysis]]
-  - depends-on:: [[Foundation Model]], [[Model Evaluation]], [[Capability Forecasting]], [[Scaling Laws]], [[AI Safety]]
-  - supports:: [[AI Governance]], [[AI Safety]], [[Existential Risk]] reduction, [[Alignment]], [[Responsible AI]], [[Catastrophic Risk Reduction]]
-  - uses:: [[Red Teaming]], [[Model Evaluation]], [[Dangerous Capability Evaluation]], [[Evaluation benchmarks and leaderboards]], [[Expert Elicitation]], [[Capability Forecasting]]
-  - contrasts-with:: [[Near-Term AI Risk]], [[AI Ethics]], [[Narrow AI Risk]]
-  - related-to:: [[Existential Risk]], [[California AI Bill]], [[EU AI Act]], [[Responsible Scaling Policy]], [[CBRN Risk]], [[Biosecurity]], [[Cybersecurity]], [[AI Alignment]], [[Capability Forecasting]], [[Dangerous Capability Evaluation]], [[Emergency Response]], [[Global Catastrophic Risk]]
-  - standardized-by:: [[EU AI Act]], [[NIST AI RMF]], [[California SB53]]
+  - is-subclass-of:: [[AI Safety]], [[Risk Assessment]], [[Probabilistic Risk Assessment]]
+  - has-part:: [[Dangerous Capability Evaluation]], [[CBRN Risk Assessment]], [[Red Teaming]], [[Threat Modelling]], [[Uplift Quantification]], [[Fault Tree Analysis]], [[Emergency Response]], [[Adversarial Elicitation]], [[Expert Elicitation]]
+  - requires:: [[Model Evaluation]], [[Red Teaming]], [[Capability Forecasting]], [[Expert Elicitation]], [[Dangerous Capability Evaluation]], [[Foundation Model]], [[Scaling Laws]]
+  - enables:: [[AI Governance]], [[Responsible Scaling Policy]], [[AI Regulation]], [[Human Oversight]], [[Catastrophic Risk Reduction]], [[Existential Risk]] reduction, [[Biosecurity]] policy
+  - implements:: [[Probabilistic Risk Assessment]], [[Red Teaming]], [[Fault Tree Analysis]], [[Failure Mode Effects Analysis]], [[Threat Modelling]]
+  - depends-on:: [[Foundation Model]], [[Model Evaluation]], [[Capability Forecasting]], [[Scaling Laws]], [[AI Safety]], [[Red Teaming]], [[Expert Elicitation]]
+  - supports:: [[AI Governance]], [[AI Safety]], [[Existential Risk]] reduction, [[Alignment]], [[Responsible AI]], [[Catastrophic Risk Reduction]], [[Biosecurity]], [[EU AI Act]] compliance, [[Responsible Scaling Policy]]
+  - uses:: [[Red Teaming]], [[Model Evaluation]], [[Dangerous Capability Evaluation]], [[Evaluation benchmarks and leaderboards]], [[Expert Elicitation]], [[Capability Forecasting]], [[WMDP]], [[HarmBench]], [[Adversarial Machine Learning]]
+  - contrasts-with:: [[Near-Term AI Risk]], [[AI Ethics]], [[Narrow AI Risk]], [[Beneficial AI Risk]]
+  - related-to:: [[Existential Risk]], [[California AI Bill]], [[EU AI Act]], [[Responsible Scaling Policy]], [[CBRN Risk]], [[Biosecurity]], [[Cybersecurity]], [[AI Alignment]], [[Capability Forecasting]], [[Dangerous Capability Evaluation]], [[Emergency Response]], [[Global Catastrophic Risk]], [[AI Safety Level]], [[Mesa-Optimisation]], [[Corrigibility]], [[AI Security Institute]], [[METR]], [[Apollo Research]]
+  - standardized-by:: [[EU AI Act]], [[NIST AI RMF]], [[California SB53]], [[ISO IEC 42001]]
 
 - ### Content
   ## Compositional Relationships (Components)
@@ -37,6 +37,10 @@
         ObjectSomeValuesFrom(ai:hasPart ai:FaultTreeAnalysis))
       SubClassOf(ai:CatastrophicRiskAssessment
         ObjectSomeValuesFrom(ai:hasPart ai:AdversarialElicitation))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:hasPart ai:EmergencyResponseFramework))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:hasPart ai:ScoringFramework))
   ## Dependency Relationships
       SubClassOf(ai:CatastrophicRiskAssessment
         ObjectSomeValuesFrom(ai:requires ai:ModelEvaluation))
@@ -48,6 +52,12 @@
         ObjectSomeValuesFrom(ai:requires ai:ExpertElicitation))
       SubClassOf(ai:CatastrophicRiskAssessment
         ObjectSomeValuesFrom(ai:requires ai:DangerousCapabilityEvaluation))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:requires ai:FoundationModel))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:dependsOn ai:AISafety))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:dependsOn ai:ScalingLaws))
   ## Capability Relationships
       SubClassOf(ai:CatastrophicRiskAssessment
         ObjectSomeValuesFrom(ai:enables ai:AIGovernance))
@@ -59,6 +69,12 @@
         ObjectSomeValuesFrom(ai:enables ai:HumanOversight))
       SubClassOf(ai:CatastrophicRiskAssessment
         ObjectSomeValuesFrom(ai:enables ai:CatastrophicRiskReduction))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:enables ai:BiosecurityPolicy))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:supports ai:ExistentialRiskReduction))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:supports ai:ResponsibleAI))
   ## Implementation Relationships
       SubClassOf(ai:CatastrophicRiskAssessment
         ObjectSomeValuesFrom(ai:implements ai:ProbabilisticRiskAssessment))
@@ -68,6 +84,14 @@
         ObjectSomeValuesFrom(ai:implements ai:FaultTreeAnalysis))
       SubClassOf(ai:CatastrophicRiskAssessment
         ObjectSomeValuesFrom(ai:implements ai:FailureModeEffectsAnalysis))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:uses ai:DangerousCapabilityEvaluation))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:uses ai:HarmBench))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:uses ai:WMDP))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:uses ai:ExpertElicitation))
   ## Reduction Relationships
       SubClassOf(ai:CatastrophicRiskAssessment
         ObjectSomeValuesFrom(ai:reducesTo ai:DangerousCapabilityEvaluation))
@@ -75,6 +99,10 @@
         ObjectSomeValuesFrom(ai:reducesTo ai:UpliftQuantification))
       SubClassOf(ai:CatastrophicRiskAssessment
         ObjectSomeValuesFrom(ai:reducesTo ai:ThreatModelling))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:partOf ai:AISafety))
+      SubClassOf(ai:CatastrophicRiskAssessment
+        ObjectSomeValuesFrom(ai:partOf ai:AIGovernance))
 
   ## About
 
@@ -205,19 +233,78 @@
 
   ## Use Cases / Major Families
 
-  **Pre-deployment dangerous capability evaluation (RSP compliance):** The most immediate use case is verification that a frontier model does not exceed defined dangerous capability thresholds before deployment. Under Anthropic's RSP ASL-3 classification, a model that could "provide real uplift to those seeking to create biological, chemical, nuclear or radiological weapons with the potential for mass casualties" triggers enhanced deployment restrictions, security measures, and third-party review requirements. Pre-deployment evaluation involves a structured combination of capability benchmarking (WMDP, biological uplift assessments), automated red teaming (HarmBench, PAIR attacks), domain expert consultation (virologists reviewing biology capability, cybersecurity experts reviewing offensive cyber capability), and autonomous behaviour evaluation (METR task completion scenarios). The evaluation gate must be passed before deployment approval, and models that fail trigger either capability modification (unlearning dangerous knowledge, enhancing safety filters) or classification at a higher safety level with correspondingly stronger mitigations.
+  **1. Pre-deployment dangerous capability evaluation (RSP compliance)**
 
-  **Regulatory compliance and mandatory disclosure:** California SB53 (September 2025) requires developers of covered large frontier models to publish a framework describing dangerous capability assessment methodology and threshold management. This has created a genre of mandatory public disclosure — safety frameworks published by Anthropic, OpenAI, Google DeepMind, Meta, xAI, and others — that allows public scrutiny of catastrophic risk assessment approaches. The EU AI Act's systemic risk assessment requirements for general-purpose AI models (GPAI) with training compute above 10^25 FLOPs impose an analogous obligation under EU law, enforced by the EU AI Office. These statutory requirements have transformed catastrophic risk assessment from a voluntary internal practice into a regulatory compliance obligation at the frontier of AI development, creating significant demand for third-party evaluation expertise and standardised assessment methodologies.
+  The most immediate use case — verification that a frontier model does not exceed defined dangerous capability thresholds before deployment:
+  - Under Anthropic's RSP ASL-3 classification, a model that could "provide real uplift to those seeking to create biological, chemical, nuclear or radiological weapons with the potential for mass casualties" triggers enhanced deployment restrictions, security measures, and third-party review requirements.
+  - Pre-deployment evaluation involves a structured combination:
+    - Capability benchmarking: WMDP, biological uplift assessments, HarmBench, GPQA chemistry.
+    - Automated red teaming: PAIR attacks, GCG adversarial suffixes, jailbreak evaluation.
+    - Domain expert consultation: virologists reviewing biology capability, cybersecurity experts reviewing offensive cyber capability.
+    - Autonomous behaviour evaluation: METR task completion scenarios for self-replication and resource acquisition.
+  - Models that fail evaluation either undergo capability modification (unlearning dangerous knowledge, enhancing safety filters) or classification at a higher safety level with correspondingly stronger mitigations.
+  - OpenAI's Preparedness Framework (updated April 2025) defines an analogous pre-deployment gate covering CBRN, cybersecurity, model autonomy, and persuasion domains.
 
-  **Strategic biosecurity policy:** Catastrophic risk assessment for AI informs government biosecurity policy by characterising when AI capability thresholds relevant to bioweapon development are approached. The US National Academies of Sciences project on "Assessing and Navigating Biosecurity Concerns and Benefits of Artificial Intelligence Use in the Life Sciences" (DELS-BLS-24-04) provides the most systematic government-commissioned analysis of this question. The Australian Strategic Policy Institute (ASPI), UK CSER, and Johns Hopkins Centre for Health Security have all published analyses examining when and how AI systems might cross uplift thresholds for biological weapon development. International coordination through the Biological Weapons Convention (BWC) review process is beginning to incorporate AI uplift considerations, though the formal multilateral governance of AI-biosecurity risks remains less developed than the domestic regulatory frameworks.
+  **2. Regulatory compliance and mandatory disclosure**
 
-  **Critical infrastructure cybersecurity:** Catastrophic cyber risk assessment evaluates whether frontier AI systems can enable autonomous cyberattacks against critical national infrastructure at nation-state scale — attacks on power grids, financial systems, water treatment, or telecommunications that could cause mass casualties or economic disruption at a level previously requiring state-sponsored teams of skilled hackers. AISI's InspectCyber evaluation framework measures autonomous cyber capability in frontier models, documenting in the 2025 Frontier AI Trends Report that the first model capable of completing expert-level cyber tasks typically requiring over ten years of human professional experience was evaluated in 2025. This finding directly informed the catastrophic risk classification in the UK's forthcoming AI Bill and DSIT's regulatory threshold setting process.
+  - California SB53 (September 2025): created a genre of mandatory public disclosure of catastrophic risk assessment frameworks by frontier AI developers.
+  - Safety frameworks published by Anthropic, OpenAI, Google DeepMind, Meta, xAI, and others following SB53 allow public scrutiny of assessment approaches.
+  - EU AI Act systemic risk assessment requirements for GPAI models (over 10^25 FLOPs training compute): impose analogous obligations under EU law, enforced by the EU AI Office.
+  - These statutory requirements have transformed catastrophic risk assessment from voluntary internal practice to regulatory compliance obligation, creating demand for:
+    - Third-party evaluation expertise.
+    - Standardised assessment methodologies.
+    - Auditable evidence packages for regulatory submission.
 
-  **AI-enabled disinformation and political disruption:** A contested but growing area of catastrophic risk assessment examines whether advanced AI systems could enable disinformation or influence operations at a scale capable of undermining democratic institutions or triggering civil conflict. This risk pathway is more diffuse than CBRN uplift — it involves many small-scale harms aggregating to macro-level disruption rather than a single high-impact event — but the potential for irreversible democratic damage has led the EU AI Act, UK Online Safety Act, and US executive orders to identify it as a priority risk category. Structured assessment is more difficult in this domain because "uplift" for political manipulation is harder to define and measure than CBRN uplift, and the counterfactual (what manipulation is possible without AI?) is harder to characterise.
+  **3. Strategic biosecurity policy**
 
-  **Agentic AI risk assessment:** As AI systems are deployed in agentic settings — orchestrating multi-step workflows, taking actions with real-world consequences, using external APIs and tools — catastrophic risk assessment must extend beyond isolated capability benchmarking to system-level scenario analysis. An AI agent that can autonomously hire subcontractors, set up infrastructure, and execute multi-month plans presents a qualitatively different risk profile from a single-turn language model answering questions, even if both use the same underlying model weights. METR's ControlArena evaluation framework specifically tests agentic AI control protocols — arrangements of trusted and untrusted AI agents — for catastrophic risk under scenarios where the agentic AI is intentionally trying to subvert safety controls. This "AI control" approach to catastrophic risk assessment examines whether multi-agent architectures can reliably contain dangerous behaviour even from a strategically deceptive AI system.
+  - Catastrophic risk assessment for AI informs government biosecurity policy by characterising when AI capability thresholds relevant to bioweapon development are approached.
+  - US National Academies of Sciences project (DELS-BLS-24-04): "Assessing and Navigating Biosecurity Concerns and Benefits of Artificial Intelligence Use in the Life Sciences" — most systematic government-commissioned analysis of this question.
+  - Key institutional contributors to AI-biosecurity risk assessment:
+    - Johns Hopkins Centre for Health Security
+    - UK CSER Cambridge
+    - Australian Strategic Policy Institute (ASPI)
+    - Nucleic Acid Observatory (pandemic biosurveillance)
+  - Biological Weapons Convention (BWC) review process beginning to incorporate AI uplift considerations, though formal multilateral governance of AI-biosecurity risks remains less developed than domestic frameworks.
 
-  **Emergency preparedness and continuity planning:** Governments and large organisations are incorporating AI catastrophic risk scenarios into their emergency preparedness planning, analogous to pandemic preparedness exercises and nuclear attack contingency planning. China's National Emergency Response Plan (February 2025) including "artificial intelligence security incidents" in its emergency taxonomy reflects a government decision to treat AI catastrophic events as operationally similar to natural disasters and conventional national security threats. The UK's DSIT "preparedness framework" model for the forthcoming AI Bill draws explicitly on this emergency preparedness framing, treating catastrophic AI risk not as a speculative future concern but as a current operational risk requiring credentialed response capacity.
+  **4. Critical infrastructure cybersecurity**
+
+  - Evaluates whether frontier AI systems can enable autonomous cyberattacks against critical national infrastructure at nation-state scale:
+    - Attacks on power grids, financial systems, water treatment, or telecommunications.
+    - Previously requiring state-sponsored teams of skilled hackers to execute.
+  - AISI's InspectCyber evaluation framework measures autonomous cyber capability in frontier models.
+  - Frontier AI Trends Report (December 2025) documented: the first model completing expert-level cyber tasks typically requiring over ten years of human professional experience was evaluated in 2025.
+  - This finding directly informed catastrophic risk classification in the UK's forthcoming AI Bill and DSIT's regulatory threshold setting.
+  - NCSC (National Cyber Security Centre) works with AISI on integrating AI cyber capability assessment into national cyber risk management.
+
+  **5. AI-enabled disinformation and political disruption**
+
+  - A contested but growing area of catastrophic risk assessment:
+    - Examines whether advanced AI systems could enable disinformation or influence operations undermining democratic institutions or triggering civil conflict.
+    - Risk pathway is more diffuse than CBRN uplift (many small-scale harms aggregating to macro disruption) rather than a single high-impact event.
+  - Assessment is more difficult because "uplift" for political manipulation is harder to define and measure than CBRN uplift.
+  - The EU AI Act, UK Online Safety Act, and US executive orders identify this as a priority risk category.
+  - Evaluation methodologies include: automated disinformation generation capability tests, persuasion effectiveness measurement, population-scale influence simulation.
+
+  **6. Agentic AI risk assessment**
+
+  - As AI deploys in agentic settings — orchestrating multi-step workflows, using external APIs and tools — catastrophic risk assessment must extend beyond isolated capability benchmarking to system-level scenario analysis:
+    - An AI agent that can autonomously hire subcontractors, set up infrastructure, and execute multi-month plans presents a qualitatively different risk profile from a single-turn language model.
+  - METR's ControlArena evaluation framework specifically tests agentic AI control protocols for catastrophic risk under scenarios where the agentic AI intentionally tries to subvert safety controls.
+  - The "AI control" approach examines whether multi-agent architectures can reliably contain dangerous behaviour even from a strategically deceptive AI system.
+  - Greenblatt et al. (2024) demonstrated that simple control protocols can provide safety guarantees with acceptable productivity overhead even when the monitored model is intentionally trying to subvert the protocol.
+
+  **7. Emergency preparedness and continuity planning**
+
+  - Governments and large organisations are incorporating AI catastrophic risk scenarios into emergency preparedness planning:
+    - China's National Emergency Response Plan (February 2025): included AI security incidents alongside earthquakes, cyberattacks, and epidemics.
+    - UK DSIT preparedness framework model for the forthcoming AI Bill treats catastrophic AI risk as a current operational risk requiring credentialed response capacity.
+    - US FEMA and CISA are developing AI-specific emergency response annexes to existing national emergency frameworks.
+  - Analogous to pandemic preparedness exercises (table-top exercises, scenario planning, stockpiling of response capabilities).
+  - Key elements of AI catastrophic risk emergency preparedness:
+    - Rapid model access suspension mechanisms
+    - Incident attribution and forensics capacity
+    - International information sharing protocols for cross-border AI incidents
+    - Recovery procedures for AI-enabled infrastructure attacks
 
   ## Academic Context
 
@@ -310,15 +397,46 @@
 
   ## UK Context
 
-  The UK occupies a distinctive institutional position in global AI catastrophic risk assessment, having established the first dedicated government AI safety evaluation body (AISI/AISI, November 2023) and having hosted the Bletchley Summit (November 2023) that catalysed the international political consensus on catastrophic AI risk as a governance priority. The Bletchley Declaration's commitment to information-sharing and coordinated frontier model evaluation created the "AI Safety Institute network" — a group of allied-nation AI safety bodies (UK AISI, US NIST AI Safety Institute, Japan, Singapore, Canada, Australia, South Korea, and others) that share evaluation methodology, coordinate dangerous capability threshold definitions, and conduct joint evaluations of frontier models under non-disclosure agreements with AI labs. This network represents the most advanced international cooperative infrastructure for catastrophic risk assessment in any emerging technology domain.
+  The UK occupies a distinctive institutional position in global AI catastrophic risk assessment through early institutional investment, evaluation methodology leadership, and international convening.
 
-  AISI's technical evaluation capacity — built around the open-source Inspect evaluation framework, the InspectCyber cyber capability suite, ControlArena agentic control testing, and domain expert networks for biological and chemical uplift assessment — provides the UK with substantial operational capability for catastrophic risk evaluation. AISI's evaluations cover thirty-plus frontier models from major global AI labs, conducted before deployment release under mandatory information-sharing agreements with labs that voluntarily participate (required as a condition of operating in the UK market for frontier AI providers with over 10^25 FLOPs of training compute under anticipated UK AI Bill provisions). The DSIT commitment (January 2025) to establish AISI as a statutory body reflects a political decision to institutionalise this capacity with parliamentary backing rather than relying on voluntary industry cooperation.
+  **International leadership:**
+  - Hosted the Bletchley Summit (November 2023) at Bletchley Park — catalysing the first international political consensus on catastrophic AI risk as a governance priority.
+  - Bletchley Declaration signed by twenty-eight countries; created the "AI Safety Institute network" — a group of allied-nation AI safety bodies sharing evaluation methodology and coordinating dangerous capability threshold definitions.
+  - Network members: UK AISI, US NIST AI Safety Institute, Japan, Singapore, Canada, Australia, South Korea, and others.
+  - Subsequent summits: Seoul AI Safety Summit (May 2024), Paris AI Safety Summit (February 2025) — producing progressively more specific technical commitments on evaluation thresholds and pre-deployment requirements.
 
-  Cambridge's Centre for the Study of Existential Risk (CSER) provides the academic research capacity underpinning UK catastrophic risk assessment for AI, operating an MPhil programme, publishing policy-relevant research on AI risk timelines and assessment methodology, and providing expert input to DSIT's regulatory process. The Leverhulme Centre for the Future of Intelligence (CFI, Cambridge) addresses AI catastrophic risk in the context of societal resilience and long-term democratic sustainability. Oxford's reconstituted risk research capacity (following FHI's 2024 closure) through the Global Priorities Institute continues long-horizon existential risk analysis relevant to catastrophic AI risk assessment. The UK Centre for Long-Term Resilience has published specific recommendations for how catastrophic risk assessment should be embedded in UK AI legislation, recommending statutory dangerous capability evaluation requirements, mandatory third-party audit of evaluations, and an emergency response mechanism that can rapidly restrict frontier model access in the event of a credible catastrophic risk finding.
+  **AISI technical evaluation capacity:**
+  - Open-source Inspect evaluation framework: the UK government's primary instrument for assessing frontier AI capability thresholds.
+  - InspectCyber: cyber capability evaluation suite.
+  - ControlArena: agentic control protocol testing framework.
+  - Domain expert networks for biological and chemical uplift assessment.
+  - Evaluations cover thirty-plus frontier models from major global AI labs before deployment.
+  - DSIT commitment (January 2025) to establish AISI as a statutory body reflects political decision to institutionalise evaluation capacity with parliamentary backing.
+  - UK AI Bill (expected 2026–2027) expected to include mandatory dangerous capability evaluation requirements for frontier model providers.
 
-  Northern English universities contribute to catastrophic risk assessment research through their AI safety and policy programmes. Manchester's Centre for AI and Decision Sciences addresses risk assessment methodology and uncertainty quantification; Sheffield's AMRC (Advanced Manufacturing Research Centre) addresses catastrophic risk in AI-controlled industrial systems; Newcastle's Catalyst Hub addresses AI risk in public-sector contexts including critical national infrastructure. The UKRI Trustworthy Autonomous Systems (TAS) Hub (led by Nottingham) produced research on safety assurance for autonomous systems directly applicable to catastrophic risk assessment methodology for agentic AI, generating safety evidence packages and assurance case templates that inform UK AI safety evaluation practice.
+  **Cambridge academic infrastructure:**
+  - **CSER (Centre for the Study of Existential Risk)**: operates MPhil in Global Risk and Resilience (first academic programme training catastrophic risk assessment specialists); publishes policy-relevant research on AI risk timelines and methodology; provides expert input to DSIT's regulatory process.
+  - **Leverhulme Centre for the Future of Intelligence (CFI)**: addresses AI catastrophic risk in context of societal resilience and long-term democratic sustainability.
 
-  Edinburgh's Informatics department contributes probabilistic methods (Bayesian uncertainty quantification, formal verification) applicable to catastrophic risk assessment, particularly in safety-critical autonomous systems contexts. Imperial College London's AI research groups contribute to formal verification of neural network safety properties, relevant to certifying the absence of dangerous capabilities in verified system configurations. The Alan Turing Institute's CETaS published the International AI Safety Report 2026 (February 2026), drawing on thirty-country expert input to produce the most comprehensive assessment of catastrophic AI risk trajectories, recommending broadened investment in safety research and strengthened international coordination on evaluation methodology.
+  **Oxford research capacity:**
+  - Global Priorities Institute: continues long-horizon existential risk analysis following FHI's 2024 closure; relevant to catastrophic AI risk assessment methodology and timeline estimates.
+  - Oxford's Philosophy, Politics and Economics (PPE) tradition contributes ethical and policy dimensions of catastrophic risk decision-making under uncertainty.
+
+  **Northern English universities:**
+  - Manchester's Centre for AI and Decision Sciences: risk assessment methodology and uncertainty quantification.
+  - Sheffield's Advanced Manufacturing Research Centre (AMRC): catastrophic risk in AI-controlled industrial systems.
+  - Newcastle's Catalyst Hub and Digital Institute: AI risk in public-sector contexts including critical national infrastructure.
+  - UKRI Trustworthy Autonomous Systems (TAS) Hub (led by Nottingham): produced safety assurance research for autonomous systems directly applicable to catastrophic risk assessment methodology for agentic AI.
+
+  **Additional UK academic contributions:**
+  - Edinburgh Informatics: probabilistic methods (Bayesian uncertainty quantification, formal verification) applicable to catastrophic risk assessment in safety-critical autonomous systems.
+  - Imperial College London: formal verification of neural network safety properties, relevant to certifying absence of dangerous capabilities in verified system configurations.
+  - Alan Turing Institute CETaS: published International AI Safety Report 2026 (February 2026) drawing on thirty-country expert input — the most comprehensive assessment of catastrophic AI risk trajectories to date.
+
+  **Policy and legislative infrastructure:**
+  - UK Centre for Long-Term Resilience: published specific recommendations for embedding catastrophic risk assessment in UK AI legislation — recommending statutory dangerous capability evaluation requirements, mandatory third-party audit, and emergency response mechanisms.
+  - NCSC (National Cyber Security Centre): works with AISI on catastrophic cyber risk assessment, particularly regarding AI-enabled critical national infrastructure attacks.
+  - DSIT's rebranding of AISI to AI Security Institute (February 2025) aligned the Institute's mandate more closely with the national security community.
 
   ## Future Directions (2026–2030)
 
@@ -336,6 +454,36 @@
 
   **Autonomous AI behaviour risk assessment:** The rapid growth of agentic AI deployment — AI systems that take extended sequences of actions in digital and physical environments — creates catastrophic risk scenarios that pre-agentic evaluation frameworks did not anticipate. An AI agent that can autonomously manipulate markets, compromise critical infrastructure, or replicate itself across distributed computing environments presents catastrophic risks that single-turn capability benchmarks cannot detect. Developing catastrophic risk assessment methodology for multi-agent systems — including control protocol auditing, agent interaction scenario simulation, and formal verification of agent safety properties — is a major research and engineering priority for the 2027–2030 period.
 
+  ## Benchmark Datasets and Evaluation Infrastructure
+
+  **CBRN and dangerous capability benchmarks:**
+  - **WMDP (Weapons of Mass Destruction Proxy)**: standardised public evaluation measuring knowledge relevant to CBRN weapon development, decomposed into biological (WMDP-Bio), chemical (WMDP-Chem), and cybersecurity (WMDP-Cyber) domains. Designed to measure knowledge uplift without directly enabling harm through the benchmark mechanism itself. Used by Anthropic, AISI, OpenAI, and METR for dangerous capability evaluation.
+  - **Virology Capabilities Test (VCT)**: expert-virologist-validated evaluation of biological uplift capability; used by AISI and Anthropic for ASL-3 biological dangerous capability assessment. Not publicly available due to dual-use concerns.
+  - **BioRisk Benchmark**: emerging standardised assessment covering pathogen enhancement, synthesis pathway knowledge, and biosafety circumvention capability.
+
+  **Cybersecurity capability benchmarks:**
+  - **InspectCyber**: AISI's cyber capability evaluation suite, measuring ability to complete expert-level cybersecurity tasks across vulnerability discovery, exploit development, and attack campaign planning. The first benchmark to document AI completing tasks requiring over ten years of human cyber expertise (2025).
+  - **CyberSecEval (Meta AI)**: standardised evaluation of AI cybersecurity risk covering insecure code generation, cyberattack assistance, and vulnerability exploitation; used across 8 frontier models in Meta's Llama safety evaluations.
+  - **InterCode-CTF**: capture-the-flag cybersecurity challenge evaluation measuring AI ability to solve structured security puzzles; used as an autonomy measure in cyber domain.
+  - **NYU CTF Benchmark**: competitive CTF challenge evaluation derived from real cybersecurity competitions.
+
+  **Autonomous behaviour and control benchmarks:**
+  - **METR RE-Bench**: research engineering tasks requiring weeks of skilled work; the primary autonomy capability benchmark as of 2026; forecast to be saturated in 2027 under high elicitation.
+  - **ControlArena (AISI)**: evaluation framework specifically testing agentic AI control protocols — arrangements of trusted and untrusted AI agents — for catastrophic risk under adversarial scenarios where the AI intentionally attempts to subvert controls.
+  - **AgentHarm**: structured evaluation of harmful capability expression in agentic settings, covering real-world harm scenarios involving tool use and multi-step action sequences.
+  - **SWE-Bench Verified**: software engineering benchmark derived from real GitHub issues; saturating in 2026, suggesting near-human software engineering capability as a near-term threshold with catastrophic implications for AI-enabled cyberattack.
+
+  **Red teaming and safety benchmarks:**
+  - **HarmBench**: 400+ harmful behaviour test cases across 6 semantic categories (standard harmful, contextual harm, copyright, counterfactual harm, jailbreaks, chemical/biological); provides standardised automated red teaming infrastructure.
+  - **PAIR (Prompt Automatic Iterative Refinement)**: automated jailbreak attack framework using language model attacker to iteratively generate adversarial prompts; 86% success rate in CBRN risk quantification study (Kumar et al., 2025).
+  - **GCG (Greedy Coordinate Gradient)**: white-box adversarial suffix attack; creates near-universal jailbreaks for gradient-accessible models; key tool in red teaming methodology.
+  - **Salad-Bench**: comprehensive safety evaluation across over 30,000 harmful queries across multiple risk categories.
+
+  **Scoring and assessment frameworks:**
+  - **FLI AI Safety Index**: 65-criterion scoring rubric for frontier AI labs' catastrophic risk assessment practices; assessed major labs in Winter 2025 finding scores from 8%–34%.
+  - **METR Safety Framework Comparison**: systematic comparison of common elements across major frontier AI safety frameworks published after Seoul Summit.
+  - **Apollo Research Scheming Evaluations**: structured evaluation of AI deception, situational awareness, and self-preservation behaviours that could enable catastrophic autonomous action.
+
   ## Key Terminology
 
   - **Catastrophic Risk:** Risk of events causing mass casualties, civilisational-scale disruption, or irreversible harm to humanity's long-term potential; distinguished from "merely severe" risks by irreversibility and scale.
@@ -350,6 +498,38 @@
   - **Counterfactual Baseline:** The capability level available to a malicious actor through existing means (public literature, internet search, expert consultation) without AI assistance, against which AI uplift is measured; the most challenging methodological element of uplift quantification.
   - **Global Catastrophic Risk (GCR):** Risk of harm at a civilisational or global scale, encompassing both potentially existential risks and severely disruptive but recoverable catastrophes; the broader category within which catastrophic AI risks are classified.
   - **Autonomous Behaviour Risk:** The risk that AI systems pursue goals in ways that evade human control, take unintended real-world actions, or self-replicate in ways that amplify harm beyond what the deploying human intended; distinguished from misuse risk (human-intended harm enabled by AI) by the absence of human authorisation.
+
+  ## Key Research Institutions and Organisations
+
+  **Government evaluation bodies:**
+  - **UK AI Security Institute (AISI)**: the primary UK government body for AI catastrophic risk assessment; conducts dangerous capability evaluations across thirty-plus frontier models; publishes the Frontier AI Trends Report; develops and maintains Inspect, InspectCyber, and ControlArena evaluation frameworks.
+  - **US NIST AI Safety Institute**: US counterpart to AISI; co-evaluates frontier models under bilateral information-sharing agreement; published NIST AI 600-1 Generative AI Profile covering CBRN and cyber risk assessment methodology.
+  - **EU AI Office**: responsible for enforcing EU AI Act general-purpose AI model CBRN and cybersecurity risk assessment obligations; coordinates with the AI Safety Institute network on evaluation methodology standardisation.
+
+  **Independent evaluation organisations:**
+  - **METR (Model Evaluation and Threat Research)**: pioneers autonomous behaviour risk assessment through task completion time horizon methodology; developed ControlArena for agentic AI control testing; conducts pre-deployment evaluations for major labs.
+  - **Apollo Research**: specialises in evaluation of deception, situational awareness, and self-preservation behaviours in frontier models — the advanced autonomous behaviour risk most relevant to catastrophic autonomous action scenarios.
+  - **ARC Evals / Alignment Research Center**: independently evaluates frontier model dangerous capabilities; evaluation results inform AISI's Inspect framework baseline.
+  - **Enkrypt AI**: published systematic CBRN risk quantification across frontier models (Kumar et al., 2025 — arXiv:2510.21133) and develops enterprise AI red teaming infrastructure.
+
+  **AI laboratory safety teams:**
+  - **Anthropic Safety and Security team**: responsible for RSP implementation including ASL evaluation gates, CBRN uplift assessment, and autonomous behaviour evaluation. First to publish a formal RSP (2023) integrating capability forecasting with catastrophic risk thresholds.
+  - **OpenAI Preparedness team**: conducts pre-deployment catastrophic risk evaluation under the Preparedness Framework; maintains safety scorecards for CBRN, cybersecurity, model autonomy, and persuasion domains.
+  - **Google DeepMind Safety team**: maintains the Frontier Safety Framework and conducts dangerous capability evaluations including the Phuong et al. (2024) dangerous capabilities evaluation study.
+  - **Meta AI Safety**: publishes CyberSecEval evaluations and maintains frontier AI safety framework disclosures; conducts red teaming across Llama model family.
+  - **xAI Safety**: published xAI Risk Management Framework (August 2025) under California SB53 requirements; defines "Catastrophic Malicious Use" thresholds across CBRN and autonomous behaviour domains.
+
+  **Academic research centres:**
+  - **Cambridge CSER (Centre for the Study of Existential Risk)**: academic research on AI catastrophic risk assessment methodology, expert elicitation, and policy; operates MPhil in Global Risk and Resilience; provides evidence to UK Parliamentary committees and DSIT regulatory process.
+  - **Oxford Global Priorities Institute**: continues existential risk research following FHI's 2024 closure; contributes to AI catastrophic risk probability estimation and ethics of precautionary governance.
+  - **RAND AI Policy Centre**: Delphi expert panels and systematic analyses of AI catastrophic risk mitigation strategies; published RRA4266-1 Legal and Policy Approaches to Mitigate Catastrophic Harms from AI (2025).
+  - **Johns Hopkins Centre for Health Security**: specialises in biological catastrophic risk assessment; integrates AI biosecurity risk into its pandemic preparedness and dual-use research of concern analysis.
+  - **Alan Turing Institute CETaS**: published International AI Safety Report 2026 drawing on thirty-country expert contributions; maintains the most comprehensive UK-based analysis of catastrophic AI risk trajectories.
+
+  **Biosecurity and specialised research:**
+  - **Nucleic Acid Observatory**: biosurveillance infrastructure project that could detect AI-enabled pathogen engineering attempts; integration with AI catastrophic risk monitoring is an active research direction.
+  - **Nuclear Threat Initiative (NTI) Global Health Security**: has published analyses of AI dual-use risks in biosecurity contexts, contributing to international governance frameworks.
+  - **Biosecurity Entrepreneurs Group**: network of biosecurity researchers and policy advocates developing community norms for AI use in life sciences research.
 
   ## Research and Literature
 
@@ -381,6 +561,39 @@
   26. UK AI Regulation Framework (2026). UK House of Commons Library Research Briefing CBP-10003.
   27. AI Emergency Preparedness: Examining the Federal Government's Ability to Detect and Respond to AI-Related National Security Threats (2024). arXiv:2407.17347.
   28. CSER Cambridge (2023). Introduction to CSER's Work on Extreme Risks. Written Evidence to UK Parliamentary Committees. committees.parliament.uk/writtenevidence/21939.
+
+  ## Why Catastrophic Risk Assessment Is Hard — Core Challenges
+
+  Catastrophic risk assessment for AI faces structural challenges that distinguish it from conventional risk assessment disciplines:
+
+  **1. The uplift quantification problem:**
+  - Measuring the marginal capability increase an AI system provides to a malicious actor requires comparing AI-assisted performance against unassisted performance by realistic threat actors — a measurement that cannot be directly conducted without replicating the harm.
+  - Counterfactual baselines (what could the threat actor achieve without AI?) are inherently uncertain and change as public resources, online tutorials, and AI access evolve.
+  - Expert evaluators differ substantially on what constitutes "meaningful uplift" for specific dangerous tasks.
+  - This measurement uncertainty propagates into all regulatory threshold definitions based on uplift.
+
+  **2. The benchmark gaming problem:**
+  - Safety training can reduce model performance on CBRN-relevant benchmarks without actually reducing the model's underlying dangerous capabilities under adversarial elicitation.
+  - Benchmarks that are used for safety training become compromised as capability evaluation instruments — a form of Goodhart's Law applied to safety benchmarks.
+  - The most dangerous capabilities may be elicitable through novel jailbreaks not represented in current benchmark adversarial examples.
+  - AISI found universal jailbreaks in every model tested as of 2025, suggesting current safety measures are insufficient against adaptive adversaries.
+
+  **3. The jurisdictional asymmetry problem:**
+  - Catastrophic risk threshold compliance is enforced in specific jurisdictions (California, EU) but AI systems and their misuse are global.
+  - An AI model that passes catastrophic risk assessment in California may be accessed by users in unregulated jurisdictions without the required safety mitigations.
+  - The most dangerous actors — state-sponsored weapons programs, sophisticated terrorist organisations — are precisely those least constrained by domestic regulation in any jurisdiction.
+  - This asymmetry motivates international coordination on catastrophic risk frameworks but makes purely domestic regulation insufficient.
+
+  **4. The capability velocity problem:**
+  - Dangerous capability thresholds defined at a point in time become obsolete as frontier models improve.
+  - Regulatory frameworks need dynamic threshold adjustment mechanisms to remain calibrated to actual capability levels.
+  - The pace of capability improvement (benchmark saturation in months rather than years) can outstrip regulatory update cycles.
+  - AISI's Frontier AI Trends Report found that some capabilities relevant to catastrophic risk thresholds are improving across model generations — making past assessments unreliable for current models.
+
+  **5. The agentic system boundary problem:**
+  - Single-model capability assessments may underestimate catastrophic risk from multi-agent or agentic AI systems where compound capabilities emerge from interactions between multiple models and tools.
+  - An AI agent orchestrating external APIs, code execution environments, and database access may have catastrophic risk potential that no single component model possesses.
+  - Current evaluation frameworks struggle to assess system-level catastrophic risk in compound AI architectures — a rapidly growing deployment pattern.
 
 - ### Provenance
   - sources:: arXiv:2510.21133 Enkrypt AI CBRN Risk Quantification; arXiv:2511.05526 Emergency Response Catastrophic AI Risk; AISI Frontier AI Trends Report (December 2025); California SB53 (September 2025); FLI AI Safety Index Winter 2025; RAND RRA4266-1 Legal and Policy Approaches; arXiv:2403.13793 Phuong et al. Dangerous Capabilities; arXiv:2410.00608 Measurement Challenges; metr.org/common-elements; CETaS International AI Safety Report 2026; CSER Cambridge Parliamentary Evidence 2023; longtermresilience.org UK AI Bill security; EU AI Act 2024/1689; arXiv:1606.06565 Amodei et al.; arXiv:1906.01820 Hubinger et al.

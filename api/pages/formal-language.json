@@ -93,6 +93,14 @@
     {
       "slug": "algorithm",
       "label": "Algorithm"
+    },
+    {
+      "slug": "computability-theory",
+      "label": "Computability Theory"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
     }
   ]
 }

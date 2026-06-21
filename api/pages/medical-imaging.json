@@ -132,6 +132,18 @@
       "label": "ADE20K"
     },
     {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
+      "slug": "control-net",
+      "label": "controlnet"
+    },
+    {
       "slug": "graphics-api",
       "label": "Graphics API"
     },

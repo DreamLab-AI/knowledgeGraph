@@ -10,10 +10,14 @@
     {
       "id": "urn:ngm:class:unsupervised-learning",
       "label": "Unsupervised Learning"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
@@ -24,6 +28,22 @@
       {
         "id": "urn:ngm:class:hierarchical-clustering",
         "label": "Hierarchical Clustering"
+      },
+      {
+        "id": "urn:ngm:class:k-means",
+        "label": "K-Means"
+      },
+      {
+        "id": "urn:ngm:class:dbscan",
+        "label": "DBSCAN"
+      },
+      {
+        "id": "urn:ngm:class:spectral-clustering",
+        "label": "Spectral Clustering"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-mixture-model",
+        "label": "Gaussian Mixture Model"
       }
     ],
     "requires": [
@@ -34,6 +54,10 @@
       {
         "id": "urn:ngm:class:feature-engineering",
         "label": "Feature Engineering"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
       }
     ],
     "enables": [
@@ -44,6 +68,18 @@
       {
         "id": "urn:ngm:class:community-detection",
         "label": "Community Detection"
+      },
+      {
+        "id": "urn:ngm:class:customer-segmentation",
+        "label": "Customer Segmentation"
+      },
+      {
+        "id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
+      },
+      {
+        "id": "urn:ngm:class:topic-modelling",
+        "label": "Topic Modelling"
       }
     ],
     "dependsOn": [],
@@ -71,6 +107,14 @@
       {
         "id": "urn:ngm:class:gaussian-mixture-model",
         "label": "Gaussian Mixture Model"
+      },
+      {
+        "id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "supports": [
@@ -81,6 +125,10 @@
       {
         "id": "urn:ngm:class:predictive-analytics",
         "label": "Predictive Analytics"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
       }
     ],
     "standardizedBy": [],
@@ -94,14 +142,195 @@
       {
         "id": "urn:ngm:class:graph-analytics",
         "label": "Graph Analytics"
+      },
+      {
+        "id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "unsupervised-learning",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "slug": "distance-metric",
+      "label": "Distance Metric"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "embedding",
+      "label": "Embedding"
+    },
+    {
+      "slug": "embedding-space",
+      "label": "Embedding Space"
+    },
+    {
+      "slug": "gaussian-mixture-model",
+      "label": "Gaussian Mixture Model"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
+      "slug": "dimensionality-reduction",
+      "label": "Dimensionality Reduction"
+    },
+    {
+      "slug": "predictive-analytics",
+      "label": "Predictive Analytics"
+    },
+    {
+      "slug": "hierarchical-clustering",
+      "label": "Hierarchical Clustering"
+    },
+    {
+      "slug": "graph-analytics",
+      "label": "Graph Analytics"
+    },
+    {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "regression",
+      "label": "Regression"
+    },
+    {
+      "slug": "dbscan",
+      "label": "DBSCAN"
+    },
+    {
+      "slug": "k-means",
+      "label": "K-Means"
+    },
+    {
+      "slug": "spectral-clustering",
+      "label": "Spectral Clustering"
+    },
+    {
+      "slug": "silhouette-score",
+      "label": "Silhouette Score"
+    },
+    {
+      "slug": "data-mining",
+      "label": "Data Mining"
+    },
+    {
+      "slug": "exploratory-data-analysis",
+      "label": "Exploratory Data Analysis"
+    },
+    {
+      "slug": "topic-modelling",
+      "label": "Topic Modelling"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "t-sne",
+      "label": "t-SNE"
+    },
+    {
+      "slug": "umap",
+      "label": "UMAP"
+    },
+    {
+      "slug": "principal-component-analysis",
+      "label": "Principal Component Analysis"
+    },
+    {
+      "slug": "bioinformatics",
+      "label": "Bioinformatics"
+    },
+    {
+      "slug": "customer-segmentation",
+      "label": "Customer Segmentation"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "density-estimation",
+      "label": "Density Estimation"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "slug": "contrastive-learning",
+      "label": "Contrastive Learning"
+    },
+    {
+      "slug": "autoencoder",
+      "label": "Autoencoder"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-group-formation",
       "label": "AI Group Formation"
+    },
+    {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
     },
     {
       "slug": "unsupervised-learning",

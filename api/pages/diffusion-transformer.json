@@ -156,6 +156,14 @@
       "label": "BLIP-2 Captioner"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
+      "slug": "code-former",
+      "label": "CodeFormer"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

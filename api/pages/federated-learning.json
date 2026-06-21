@@ -269,8 +269,28 @@
       "label": "Checkpoints"
     },
     {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
+    },
+    {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
     },
     {
       "slug": "distributed-computing",

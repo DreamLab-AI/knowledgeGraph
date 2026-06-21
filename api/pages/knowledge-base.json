@@ -160,6 +160,10 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
       "slug": "gpts-and-custom-assistants",
       "label": "GPTs and Custom Assistants"
     },
@@ -170,6 +174,10 @@
     {
       "slug": "meeting-ai-assistant",
       "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
     },
     {
       "slug": "semantic-search",

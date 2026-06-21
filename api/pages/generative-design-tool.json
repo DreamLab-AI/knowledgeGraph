@@ -169,6 +169,10 @@
       "label": "Automated Design"
     },
     {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
       "slug": "neural-3-d-generation",
       "label": "Neural 3D Generation"
     }

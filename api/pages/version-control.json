@@ -131,6 +131,10 @@
       "label": "Collaboration Tools"
     },
     {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     },

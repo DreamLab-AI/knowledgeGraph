@@ -95,6 +95,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
       "slug": "mechanical-component",
       "label": "Mechanical Component"
     },

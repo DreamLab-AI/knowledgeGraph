@@ -686,6 +686,10 @@
       "label": "Affective Computing System"
     },
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
       "slug": "architecture",
       "label": "Architecture"
     },
@@ -726,12 +730,28 @@
       "label": "Communication Protocol"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
       "slug": "compute-layer",
       "label": "Compute Layer"
     },
     {
+      "slug": "container",
+      "label": "Container"
+    },
+    {
       "slug": "context-awareness",
       "label": "Context Awareness"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
     },
     {
       "slug": "convergence",
@@ -788,6 +808,10 @@
     {
       "slug": "infrastructure-layer",
       "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
     },
     {
       "slug": "internet-infrastructure",

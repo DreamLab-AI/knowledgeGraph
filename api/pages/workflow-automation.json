@@ -149,6 +149,10 @@
       "label": "Adobe Firefly"
     },
     {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
     },
@@ -185,8 +189,16 @@
       "label": "Business Process Automation"
     },
     {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
+    },
+    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-manager",
+      "label": "comfyui manager"
     },
     {
       "slug": "compliance-control",
@@ -209,8 +221,24 @@
       "label": "GPTs and Custom Assistants"
     },
     {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
       "slug": "model-control-protocols-like-mcp",
       "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
     },
     {
       "slug": "service-now",

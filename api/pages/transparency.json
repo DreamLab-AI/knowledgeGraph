@@ -190,6 +190,10 @@
       "label": "Algorithmic Accountability"
     },
     {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
       "slug": "consent-management",
       "label": "Consent Management"
     },

@@ -141,6 +141,10 @@
       "label": "AI-Generated Content Disclosure"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
       "slug": "watermarking-service",
       "label": "Watermarking Service"
     }

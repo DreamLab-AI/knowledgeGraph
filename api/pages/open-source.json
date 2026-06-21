@@ -183,6 +183,10 @@
       "label": "Telecollaboration and Telepresence"
     },
     {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
+    },
+    {
       "slug": "wallet",
       "label": "Wallet"
     },

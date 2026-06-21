@@ -95,6 +95,10 @@
     {
       "slug": "automated-reasoning",
       "label": "Automated Reasoning"
+    },
+    {
+      "slug": "computability-theory",
+      "label": "Computability Theory"
     }
   ]
 }

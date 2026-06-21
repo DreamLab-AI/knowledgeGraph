@@ -85,8 +85,16 @@
       "label": "AI Art Generation"
     },
     {
+      "slug": "code-former",
+      "label": "CodeFormer"
+    },
+    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
+    },
+    {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
     },
     {
       "slug": "diffusion-models",

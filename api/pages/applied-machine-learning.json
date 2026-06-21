@@ -326,6 +326,10 @@
       "label": "Artificial Intelligence Research"
     },
     {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"
     }

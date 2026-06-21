@@ -128,6 +128,22 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "closed-world-assumption",
+      "label": "Closed World Assumption"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
       "slug": "domain-ontology",
       "label": "Domain Ontology"
     },

@@ -54,6 +54,10 @@
       "label": "Automated Design"
     },
     {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
       "slug": "generative-design-tool",
       "label": "Generative Design Tool"
     }

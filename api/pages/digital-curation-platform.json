@@ -187,5 +187,10 @@
       "label": "VirtualSocietyDomain"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    }
+  ]
 }

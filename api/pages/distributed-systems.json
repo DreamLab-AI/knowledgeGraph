@@ -230,6 +230,10 @@
       "label": "Centralised Database"
     },
     {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
       "slug": "consensus-mechanism",
       "label": "Consensus Mechanism"
     },
@@ -248,6 +252,10 @@
     {
       "slug": "content-addressing",
       "label": "Content Addressing"
+    },
+    {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
     },
     {
       "slug": "coordination-layer",
@@ -306,6 +314,10 @@
       "label": "Ethernet"
     },
     {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     },
@@ -320,6 +332,10 @@
     {
       "slug": "hyperledger-indy",
       "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
     },
     {
       "slug": "internet-infrastructure",

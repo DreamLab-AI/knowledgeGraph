@@ -103,6 +103,10 @@
     {
       "slug": "adobe-firefly",
       "label": "Adobe Firefly"
+    },
+    {
+      "slug": "control-net",
+      "label": "controlnet"
     }
   ]
 }

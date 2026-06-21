@@ -96,5 +96,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    }
+  ]
 }

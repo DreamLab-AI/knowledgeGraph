@@ -5,38 +5,119 @@
   "public": true,
   "classIri": "urn:ngm:class:common-crawl",
   "domain": "artificial-intelligence",
-  "definition": "Common Crawl is a non-profit organisation that maintains a large, freely available archive of web page data collected by crawling the internet. The data is widely used to train language models.",
+  "definition": "Common Crawl is a California 501(c)3 non-profit organisation founded in 2008 by Gil Elbaz that maintains a petabyte-scale, freely accessible archive of web crawl data stored on Amazon S3 under the AWS Open Data Sponsorship Programme. The dataset \u2014 distributed as WARC, WAT, and WET files \u2014 underpins virtually every major open pre-training corpus including C4, FineWeb, RedPajama, Dolma, and DCLM, and has been cited by the Mozilla Foundation (2024) as essential to the emergence of modern generative AI.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:synthetic-data",
-      "label": "Synthetic Data"
+      "id": "urn:ngm:class:training-data",
+      "label": "Training Data"
+    },
+    {
+      "id": "urn:ngm:class:open-data",
+      "label": "Open Data"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.6,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:warc-files",
+        "label": "WARC Files"
+      },
+      {
+        "id": "urn:ngm:class:wet-files",
+        "label": "WET Files"
+      },
+      {
+        "id": "urn:ngm:class:wat-files",
+        "label": "WAT Files"
+      },
+      {
+        "id": "urn:ngm:class:url-index",
+        "label": "URL Index"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:deduplication",
+        "label": "Deduplication"
+      },
+      {
+        "id": "urn:ngm:class:data-curation",
+        "label": "Data Curation"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:model-training",
         "label": "Model Training"
       },
       {
-        "id": "urn:ngm:class:gpt",
-        "label": "GPT"
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
+      },
+      {
+        "id": "urn:ngm:class:pre-training",
+        "label": "Pre-training"
       }
     ],
     "dependsOn": [],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      },
+      {
+        "id": "urn:ngm:class:curated-datasets",
+        "label": "Curated Datasets"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:scaling-laws",
+        "label": "Scaling Laws"
+      },
+      {
+        "id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": []
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:information-retrieval",
+        "label": "Information Retrieval"
+      },
+      {
+        "id": "urn:ngm:class:bias-in-large-language-models",
+        "label": "Bias in Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "Copyright"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
   },
   "wikilinks": [
     {
@@ -54,6 +135,130 @@
     {
       "slug": "synthetic-data",
       "label": "Synthetic Data"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "data-curation",
+      "label": "Data Curation"
+    },
+    {
+      "slug": "pre-training",
+      "label": "Pre-training"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "web-scraping",
+      "label": "Web Scraping"
+    },
+    {
+      "slug": "deduplication",
+      "label": "Deduplication"
+    },
+    {
+      "slug": "tokenisation",
+      "label": "Tokenisation"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "bert",
+      "label": "BERT"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "bias-in-large-language-models",
+      "label": "Bias in Large Language Models"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "copyright",
+      "label": "Copyright"
+    },
+    {
+      "slug": "open-data",
+      "label": "Open Data"
+    },
+    {
+      "slug": "scaling-laws",
+      "label": "Scaling Laws"
+    },
+    {
+      "slug": "amazon-s3",
+      "label": "Amazon S3"
+    },
+    {
+      "slug": "cloud-computing",
+      "label": "Cloud Computing"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "multimodal-ai",
+      "label": "Multimodal AI"
+    },
+    {
+      "slug": "gpt-3",
+      "label": "GPT-3"
+    },
+    {
+      "slug": "llama",
+      "label": "Llama"
+    },
+    {
+      "slug": "dolma",
+      "label": "Dolma"
+    },
+    {
+      "slug": "red-pajama",
+      "label": "RedPajama"
+    },
+    {
+      "slug": "fineweb",
+      "label": "FineWeb"
+    },
+    {
+      "slug": "c4-dataset",
+      "label": "C4 Dataset"
     },
     {
       "slug": "https-commoncrawl-org",

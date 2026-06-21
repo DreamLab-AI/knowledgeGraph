@@ -41,6 +41,10 @@
     ObjectSomeValuesFrom(ai:hasPart ai:IncentiveMechanism))
   SubClassOf(ai:Bittensor
     ObjectSomeValuesFrom(ai:hasPart ai:LiquidityPool))
+  SubClassOf(ai:Bittensor
+    ObjectSomeValuesFrom(ai:hasPart ai:Metagraph))
+  SubClassOf(ai:Bittensor
+    ObjectSomeValuesFrom(ai:hasPart ai:EmissionSchedule))
   ```
 
   ## Dependency Relationships
@@ -57,6 +61,10 @@
     ObjectSomeValuesFrom(ai:requires ai:PeerToPeerNetwork))
   SubClassOf(ai:Bittensor
     ObjectSomeValuesFrom(ai:requires ai:DistributedConsensus))
+  SubClassOf(ai:Bittensor
+    ObjectSomeValuesFrom(ai:requires ai:MechanismDesign))
+  SubClassOf(ai:Bittensor
+    ObjectSomeValuesFrom(ai:requires ai:GPU))
   ```
 
   ## Capability Relationships
@@ -71,6 +79,10 @@
     ObjectSomeValuesFrom(ai:enables ai:LargeLanguageModelTraining))
   SubClassOf(ai:Bittensor
     ObjectSomeValuesFrom(ai:enables ai:OpenSourceAI))
+  SubClassOf(ai:Bittensor
+    ObjectSomeValuesFrom(ai:enables ai:FederatedLearning))
+  SubClassOf(ai:Bittensor
+    ObjectSomeValuesFrom(ai:enables ai:DecentralisedGovernance))
   ```
 
   ## Implementation Relationships
@@ -85,6 +97,10 @@
     ObjectSomeValuesFrom(ai:implements ai:SubnetArchitecture))
   SubClassOf(ai:Bittensor
     ObjectSomeValuesFrom(ai:implements ai:PeerToPeerNetwork))
+  SubClassOf(ai:Bittensor
+    ObjectSomeValuesFrom(ai:implements ai:ByzantineFaultTolerance))
+  SubClassOf(ai:Bittensor
+    ObjectSomeValuesFrom(ai:implements ai:ConstantProductAMM))
   ```
 
   ## Reduction Relationships
@@ -97,6 +113,10 @@
     ObjectSomeValuesFrom(ai:reducesTo ai:TokenEconomics))
   SubClassOf(ai:Bittensor
     ObjectSomeValuesFrom(ai:reducesTo ai:DistributedComputing))
+  SubClassOf(ai:Bittensor
+    ObjectSomeValuesFrom(ai:reducesTo ai:MechanismDesign))
+  SubClassOf(ai:Bittensor
+    ObjectSomeValuesFrom(ai:reducesTo ai:FederatedLearning))
   ```
 
   ## About
@@ -207,19 +227,6 @@
   - **Templar / Covenant-72B**: Subnet 3's distributed pre-training protocol and its flagship output — a 72B-parameter LLM trained permissionlessly across 70+ commodity GPU contributors using DiLoCo-style distributed optimisation, achieving 67.1 MMLU (competitive with Llama 2 70B).
   - **Yuma Consensus**: Bittensor's Byzantine-fault-tolerant score aggregation algorithm; computes trust-weighted averages of validator score matrices; detects and down-weights divergent validators.
 
-  ## Components / Architecture
-
-  Bittensor's architecture comprises several interacting layers:
-
-  - **Subtensor Blockchain**: A Substrate-based blockchain (built with Parity's Polkadot SDK) serves as Bittensor's ledger layer, recording neuron registrations, stake allocations, validator scores, emission distributions, and subnet token AMM pools. It provides consensus via nominated proof-of-stake and processes on-chain governance of protocol parameters. The choice of Substrate rather than an Ethereum-compatible chain enables high transaction throughput necessary for frequent score submissions from thousands of active neurons.
-  - **Subnets**: Each subnet is an independently governed task environment defined by an incentive mechanism specification. A subnet creator registers a new subnet by burning TAO, defines the task format (what miners receive as input, what they return as output), designs or selects an automated evaluation mechanism for validator use, and optionally writes custom consensus or scoring logic. As of March 2026, 128 subnets are active, covering text generation, image synthesis, code generation, deepfake detection, financial prediction, protein folding, decentralised storage, speech-to-text, and permissionless LLM pre-training.
-  - **Miners**: Neurons that register within a subnet and produce AI outputs in response to validator queries. Miners pay a registration cost (burned TAO) to join a subnet, which limits Sybil attacks. Their performance is continuously benchmarked, and those scoring consistently low are pruned by the network to make room for higher-performing registrants.
-  - **Validators**: Neurons that hold stake, query miners, assess output quality against a reference standard or model, and broadcast scores to the chain. Validators are economically incentivised to score accurately because the Yuma Consensus algorithm detects and down-weights validators whose scores deviate persistently from the honest consensus, reducing their future emissions.
-  - **Yuma Consensus**: Bittensor's Byzantine-fault-tolerant aggregation algorithm named after Yuma, Arizona. It computes a trust-weighted average of all validator score matrices, identifying and discounting validators whose scoring patterns diverge from the consensus, providing robustness against minority collusion without a trusted third party.
-  - **Dynamic TAO (dTAO) and Alpha Tokens**: Each subnet has its own Alpha token and a TAO/Alpha AMM pool. When a staker deposits TAO into a subnet pool, they receive Alpha tokens; the TAO depth in the pool determines the subnet's emission weight in the global schedule. This makes subnet funding a continuous prediction market: stakers profit if the subnet they back produces more emissions than the market-implied share, and lose if it underperforms.
-  - **TAO Token**: The native utility token with a hard supply cap of 21 million, deliberately mirroring Bitcoin's supply schedule. The first halving occurred in December 2025, reducing daily emissions from approximately 7,200 TAO to 3,600 TAO. TAO is used for staking (to become a validator or delegator), subnet registration fees, governance voting, and as the reserve asset in all Alpha token AMM pools.
-  - **Bittensor Python SDK (bittensor)**: The open-source Python library through which miners and validators interact with the subtensor chain, manage wallets, register neurons, receive queries, and submit scores. It is the primary developer interface for subnet builders.
-
   ## Use Cases / Major Families
 
   **1. Subnet 1 — Text Generation / Decentralised LLM API**
@@ -322,54 +329,227 @@
 
   ## UK Context
 
-  Bittensor does not originate in the UK and has no primary UK institutional affiliation; the Opentensor Foundation is based in Canada, and the project is globally distributed. However, several UK-relevant dynamics are observable:
+  - **Primary affiliation**: Bittensor does not originate in the UK; the Opentensor Foundation is incorporated in Canada and the project is globally distributed. No single country dominates the validator or miner ecosystem.
+  - **Regulatory environment (FCA)**:
+    - UK Financial Conduct Authority (FCA) classifies TAO as an unregulated cryptoasset (as of 2024); UK residents may participate as miners, validators, and stakers without financial services authorisation.
+    - Selling or promoting TAO as an investment product to UK consumers requires FCA registration under the Financial Services and Markets Act 2000 (Financial Promotion) Order 2005 (as amended by the 2023 cryptoasset promotion amendment).
+    - UK AI Opportunities Action Plan (January 2025, Technology Minister Peter Kyle): signalled government ambition to "step up and shape the AI revolution"; aligned philosophically with open AI infrastructure though decentralised AI protocols are not specifically mentioned.
+    - UK AI regulation: sector-specific regulators (Ofcom, FCA, CMA, ICO) oversee AI applications within their domains; no dedicated AI regulatory authority as of 2026, creating a lighter-touch environment compared to EU AI Act.
+  - **Academic interest (UK)**:
+    - Oxford Internet Institute: studies internet governance and platform economics; Bittensor's incentive design for AI quality is a case study in autonomous multi-agent AI market mechanisms.
+    - Imperial College London Centre for Cryptocurrency Research and Engineering (IC3): publishes on blockchain consensus, protocol security, and DeFi mechanism design; structural parallels with Bittensor subnet consensus are studied in course content.
+    - University of Cambridge Computer Lab (now Department of Computer Science and Technology): formal methods and distributed systems groups study Byzantine-fault-tolerant consensus mechanisms related to Yuma Consensus.
+    - King's College London / LSE FinTech groups: token economics and decentralised AI governance policy implications studied in research programmes.
+    - Alan Turing Institute (London / UK national AI institute): has explored decentralised AI governance and incentive mechanisms as policy research questions relevant to UK AI strategy.
+  - **UK operator and developer activity**:
+    - Several UK-based AI startups and cryptocurrency firms have registered subnets or deployed validators, attracted by the UK technical talent pool (deep ML expertise from universities, Google DeepMind, and Arm).
+    - Northern England university HPC clusters (University of Leeds HPC1/HPC2, University of Manchester's CSF4 cluster, University of Sheffield's Stanage/Bessemer) have been explored as commodity compute sources for subnet miners during off-peak academic usage periods.
+    - Edinburgh's ARCHER2 national supercomputer (University of Edinburgh EPCC) and the Hartree Centre (Science and Technology Facilities Council, Daresbury) are potential candidates for future integration with GPU-incentivised Bittensor subnets, though institutional policy barriers to commercial participation would need resolution.
+    - UK fintech sector (London and Edinburgh) has expressed interest in financial prediction subnets (SN8) as a decentralised source of quantitative signals.
+  - **Investment ecosystem (UK)**:
+    - UK venture capital firms with AI and Web3 mandates — including Balderton Capital, Draper Esprit (now Molten Ventures), and multiple family office allocators — have taken positions in TAO as part of decentralised AI infrastructure theses.
+    - Grayscale GTAO Trust (NYSE) is accessible to UK professional investors via US market access accounts.
+    - UK crypto ETF regulatory pathway: the FCA does not currently permit retail crypto ETFs in the UK, so the Safello Staked TAO ETP (SIX Swiss Exchange) is the accessible European institutional product for UK professional investors.
+    - Cointelegraph UK, Decrypt, and The Block UK report on Bittensor developments from the UK perspective.
+  - **UK relevance to scientific computing subnets**:
+    - Bioinformatics and protein folding applications (SN25) are directly relevant to UK pharmaceutical and academic research; potential for NHS computational pathology, UK Biobank, and Genomics England workflows to interface with Bittensor scientific computing subnets in future.
+    - The UK government's £1 billion AI compute programme (2025 National Compute Tender, securing access to frontier-scale AI compute for UK researchers) could complement Bittensor's decentralised compute model for less resource-intensive tasks where incentive-driven quality evaluation adds value.
 
-  **Regulatory context**: The UK Financial Conduct Authority (FCA) classifies TAO as an unregulated cryptoasset, and the UK's evolving cryptoasset regulatory framework (which draws on but diverges from the EU MiCA regulation) creates a relatively permissive environment for participation as a validator or miner. The UK AI Opportunities Action Plan (January 2025) signalled government ambition to position Britain as an AI hub, which aligns philosophically with open AI infrastructure goals though the plan does not specifically address decentralised AI protocols.
+  ## Security Analysis and Risk Factors
 
-  **Academic interest**: UK researchers in AI safety, AI governance, and decentralised systems have begun to engage with Bittensor as a case study for incentive design in multi-agent AI systems. The Oxford Internet Institute and Imperial College London's Centre for Cryptocurrency Research and Engineering (IC3) have studied blockchain-based AI coordination mechanisms that share structural features with Bittensor's subnet model.
-
-  **Operator and developer activity**: Multiple UK-based cryptocurrency firms and AI startups have registered subnets or deployed validators on the network, attracted by the UK's technical talent pool and the regulatory clarity following the FCA's May 2024 cryptoasset registration decisions. Northern England university HPC clusters (Leeds, Manchester, Sheffield) have been explored as commodity compute providers to subnet miners given their spare capacity outside peak academic usage hours.
-
-  **Investment ecosystem**: UK venture capital firms active in the intersection of AI and Web3 — including Founders Fund London, Draper Esprit, and several family office allocators — have taken positions in TAO as part of broader decentralised AI theses, and Grayscale's GTAO trust is accessible to UK professional investors.
+  - **Protocol-level attack surfaces**:
+    - **51% validator attack**: If a single entity or coordinated group accumulates >50% of total network stake, they can manipulate Yuma Consensus output by controlling which miners receive emissions. Mitigation: high TAO price makes controlling >50% of staked supply prohibitively expensive at network scale; stake is distributed across thousands of delegators globally.
+    - **Sybil attacks**: Registering thousands of fake miners to dilute honest miners' emission share. Mitigation: burned-TAO registration fee creates direct and irrecoverable economic cost per registration; fee level set by governance to balance entry friction with access.
+    - **Eclipse attacks**: Disrupting a miner's or validator's view of the Subtensor blockchain by controlling all their network peers. Mitigation: Substrate-based P2P networking includes peer diversity requirements; validators maintain multiple redundant connections to different geographic regions.
+    - **Query injection**: Malicious validators fabricating queries to miners and collecting responses; extracting proprietary model weights through repeated probing. Mitigation: miners are not required to serve queries outside the Bittensor protocol; model weights can be obfuscated (black-box serving) without affecting scoring.
+    - **Smart contract exploits**: Subtensor is not Ethereum-compatible and does not use Solidity; most DeFi-style reentrancy and flash-loan attacks are inapplicable. Alpha token AMM pools use a simple constant-product model with no external oracle dependency, reducing surface area.
+  - **Economic attack vectors**:
+    - **Emission gaming (Goodharting)**: Subnets that evaluate miners using simple, gameable metrics (perplexity on a known test set, cached embedding similarity) incentivise miners to memorise evaluation distributions rather than developing genuinely better models. Identified in arXiv 2603.29751.
+    - **Alpha token pump-and-dump**: Large holders deposit TAO into a low-quality subnet's AMM pool, increasing apparent emission weight and attracting further capital; liquidate Alpha tokens after price rise, leaving remaining stakers with depreciated tokens.
+    - **Validator fee extraction**: Validators can set their take-rate to extract a high percentage of miner emissions as an operator fee; if a validator controls a large share of subnet stake weight, they effectively tax all miner earnings without providing proportional quality improvement in evaluation.
+    - **Front-running Alpha token AMM pools**: On-chain visibility of AMM pool depth changes allows MEV-style front-running of large deposit or withdrawal transactions; Subtensor's block time (~12 seconds) limits but does not eliminate this risk.
+  - **Operational security for participants**:
+    - **Coldkey/hotkey separation**: Bittensor wallet architecture separates the coldkey (high-security key controlling stake and fund transfers, kept offline) from the hotkey (operational key used for query signing and score submissions, exposed online). Loss of a hotkey does not expose staked TAO.
+    - **Node infrastructure resilience**: Validators require high-availability infrastructure; validator downtime causes missed scoring epochs and reduced emissions; professional validators use redundant server pairs with automated failover.
+    - **Data poisoning in distributed training (SN3)**: Anonymous contributors in Templar's distributed training could inject malicious gradient updates. Mitigation: Templar protocol uses gradient clipping, inner-loop loss monitoring, and validator cross-checking of outer-update contributions; statistical outlier gradients are excluded.
+    - **Key management risks**: Theft of a coldkey private key would enable full control of staked TAO and delegation settings; hardware security modules (HSMs) and multi-signature cold storage recommended for large stake holders.
+  - **Regulatory and compliance risks**:
+    - **Token classification uncertainty**: TAO's status as a security vs. utility token vs. commodity is unresolved in most jurisdictions; adverse SEC ruling could constrain US participant activity and exchange listings.
+    - **AI output liability**: Miners and validators producing AI outputs may incur liability for harmful content in jurisdictions with AI Act-equivalent regulations; Bittensor's anonymous participation model provides de facto but not de jure liability shield.
+    - **Sanction compliance**: Permissionless participation means Bittensor networks may include participants from sanctioned countries; exchanges and validators in regulated jurisdictions must implement OFAC/sanctions screening at the TAO on-ramp level.
+    - **Data protection**: Subnets processing personal data (medical AI, financial signals) must comply with GDPR (EU), UK GDPR, and sector-specific data protection requirements; the distributed nature of subnet computation creates complex data-controller-processor attribution questions.
 
   ## Future Directions (2026-2030)
 
-  - **Expansion to 256 subnets**: The network's governance has approved roadmap items to double the active subnet count, which will expand the range of AI tasks incentivised and increase competitive pressure that drives model quality improvements within each task vertical.
-  - **Cross-subnet composability**: Proposed protocol upgrades will allow subnet outputs to be consumed as inputs by other subnets, enabling multi-step AI pipelines where, for example, a retrieval subnet feeds context into a generation subnet, and the quality evaluation propagates through the composition.
-  - **On-chain model provenance and watermarking**: Integration with cryptographic model-fingerprinting schemes (inspired by IMATAG and similar watermarking research) will allow Bittensor to attach verifiable provenance to model outputs, addressing AI attribution regulatory requirements emerging under the EU AI Act and proposed UK AI labelling frameworks.
-  - **Federated privacy-preserving subnets**: Subnets incorporating differential privacy and secure multi-party computation are under development, targeting use cases such as medical AI, financial data analysis, and enterprise data-sensitive workloads that require verifiable privacy guarantees in addition to the network's existing economic integrity guarantees.
-  - **Integration with Polkadot parachain ecosystem**: Substrate compatibility with the Polkadot relay chain could enable Bittensor subnets to interoperate with Polkadot's 100+ parachains, unlocking cross-chain DeFi liquidity, decentralised identity, and supply-chain provenance applications that combine AI inference with blockchain verifiability.
-  - **Frontier-scale multi-subnet training**: The success of Covenant-72B is expected to motivate more ambitious collaborative training runs targeting 200B+ parameter models, exploiting improvements in the DiLoCo outer-optimisation protocol and more sophisticated gradient compression techniques being developed within the Templar subnet community.
+  - **Expansion to 256 subnets**:
+    - Network governance has approved roadmap to double active subnet count from 128 to 256.
+    - Will expand range of AI tasks incentivised and intensify competitive pressure within each task vertical, driving higher model quality.
+    - New subnet categories expected: video generation, speech synthesis, multimodal reasoning, robotics simulation, materials science, and drug discovery tasks.
+  - **Cross-subnet composability (multi-hop AI pipelines)**:
+    - Proposed protocol upgrades will allow subnet outputs to serve as inputs to other subnets, enabling multi-step AI pipelines.
+    - Example: a retrieval subnet fetches relevant documents → context passed to a generation subnet → fact-checking subnet validates output → final quality evaluation propagated back through the composition chain.
+    - Creates emergent compound AI capabilities from simpler task-specific components without centralised orchestration.
+  - **On-chain model provenance and watermarking**:
+    - Integration with cryptographic model-fingerprinting schemes (C2PA content credentials, IMATAG-style watermarks) will allow verifiable provenance to be attached to Bittensor AI outputs.
+    - Addresses AI attribution regulatory requirements emerging under EU AI Act Article 50 (AI-generated content disclosure) and proposed UK AI labelling frameworks.
+    - Enables copyright attribution and training data licensing compliance at the output layer.
+  - **Federated privacy-preserving subnets**:
+    - Subnets incorporating differential privacy (DP-SGD noise injection) and secure multi-party computation (garbled circuits, secret sharing) under development.
+    - Target use cases: medical AI (patient privacy), financial data analysis (trading signals from proprietary data), enterprise workloads (corporate IP protection).
+    - Key research challenge: verifying that miners are applying DP guarantees honestly without defeating the anonymised computation.
+  - **Integration with Polkadot parachain ecosystem**:
+    - Substrate-based Subtensor is technically compatible with Polkadot relay chain as a parachain candidate.
+    - Would enable Bittensor to access Polkadot's cross-chain message passing (XCM) protocol, unlocking DeFi liquidity from Acala, Moonbeam, and other parachains.
+    - Could integrate decentralised identity (Kilt Protocol) for validator reputation and decentralised storage (Crust Network) as a Bittensor storage subnet backend.
+  - **Frontier-scale multi-subnet training (200B+)**:
+    - Covenant-72B success expected to motivate more ambitious collaborative training targeting 200B+ parameter models.
+    - Improvements to DiLoCo outer-optimisation: higher outer-update frequency, compressed gradient communication using TopK sparsification, and adaptive synchronisation schedules.
+    - Multiple subnets contributing different data domains (code, science, multilingual text) could be composed into a unified multi-domain pre-training curriculum.
+  - **Bittensor for AI safety and evaluation**:
+    - Potential future application: subnets specialised in AI safety evaluation, red-teaming, and model capability elicitation — where Bittensor's decentralised incentive structure prevents any single entity from controlling the evaluation methodology.
+    - UK AI Safety Institute (AISI) and similar bodies may engage with decentralised AI evaluation infrastructure as part of frontier model evaluation programmes.
+  - **Real-time AI commodity pricing**:
+    - As dTAO matures, the network of Alpha token prices across 256 subnets will create a real-time, market-derived pricing curve for different types of AI computation and quality.
+    - This "AI commodity market" would be the first market-determined price discovery mechanism for heterogeneous AI capabilities across a globally distributed compute network.
+  - **Regulatory maturation**:
+    - As the SEC processes Grayscale's GTAO ETF S-1 filing and as UK and EU AI regulations mature, Bittensor's regulatory status will clarify and potentially unlock institutional participation at much larger scale.
+    - FCA regulatory sandbox engagement for decentralised AI marketplaces may provide a pathway for UK-regulated financial institutions to participate in Bittensor subnet economies.
+
+  ## Developer Tooling and Subnet Creation Ecosystem
+
+  - **Bittensor Python SDK (bittensor) — core developer interface**:
+    - Open-source Python library (github.com/opentensor/bittensor); pip-installable; actively maintained by Opentensor Foundation.
+    - Key modules: `bittensor.wallet` (coldkey/hotkey management, wallet creation, transaction signing), `bittensor.subtensor` (blockchain interaction, neuron registration, stake queries, metagraph retrieval), `bittensor.axon` (miner server for receiving queries from validators), `bittensor.dendrite` (validator client for querying miner axons), `bittensor.synapse` (data structure defining the query-response schema for a subnet task).
+    - Template subnet repository: `opentensor/bittensor-subnet-template` provides boilerplate for creating a new subnet incentive mechanism; includes validator and miner class structures, unit test scaffolding, and documentation templates.
+    - Wallet security: BIP39 mnemonic-based HD wallet; coldkey and hotkey can be stored separately; Ledger hardware wallet integration planned.
+  - **Subnet development workflow**:
+    - Step 1: Define the task — specify input format (synapse request schema), output format (synapse response schema), and the evaluation criteria validators will use to score miner outputs.
+    - Step 2: Implement the validator — write the scoring function; choose or design reference models for quality evaluation; implement automated scoring logic that is Sybil-resistant and not trivially gameable.
+    - Step 3: Implement the miner — write the task-fulfilling model or system; initially can be simple to validate infrastructure before optimising for quality.
+    - Step 4: Local testnet — run Subtensor locally (Docker-based local chain) to test neuron registration, query-response, and scoring without spending real TAO.
+    - Step 5: Testnet deployment — Bittensor testnet (test.finney.opentensor.ai) allows real protocol testing with test TAO (not economically valuable).
+    - Step 6: Mainnet launch — register subnet by burning TAO (mainnet cost varies by governance; typically 1-10 TAO); validators begin seeding the subnet with initial stake; miners register and begin competing.
+  - **Community tooling ecosystem**:
+    - **Taostats.io**: Real-time metagraph explorer; visualises per-subnet neuron emissions, stake weights, consensus ranks, Alpha token prices, and AMM pool depths; primary monitoring tool for validators and subnet operators.
+    - **Taobot**: Telegram-based bot providing TAO price, stake change alerts, and miner emission notifications for validator operators.
+    - **Bittensor Wallet (browser extension)**: MetaMask-equivalent for Subtensor; enables TAO transfers and stake delegation from browser; useful for non-technical delegators.
+    - **Subtensor Explorer (polkadot.js.org/apps)**: Block explorer for the Subtensor blockchain using the Polkadot.js interface; allows direct inspection of on-chain extrinsics, events, and storage items.
+    - **BTCLI (Bittensor CLI)**: Command-line interface for all wallet and network operations without writing Python; stake, register, query metagraph, manage wallets from terminal.
+  - **Infrastructure requirements by role**:
+    - **Miner (minimal)**: Single NVIDIA RTX 3090 (24 GB VRAM) or A100 40 GB; Python 3.9+; stable 100 Mbps internet; 24/7 uptime; estimated cost: $0.30-2.00/hour cloud GPU.
+    - **Miner (competitive, SN1)**: A100 80 GB or H100 SXM5 for serving Llama 3 70B; high-bandwidth (10 Gbps) connectivity for sub-100 ms query response times; multiple GPUs for high-throughput batching.
+    - **Validator (minimal)**: High-RAM server (256-512 GB system RAM) for reference model inference; A100/H100 for running evaluation models; 1 Gbps internet; substantial TAO stake (minimum ~1,000 TAO for meaningful emissions in competitive subnets).
+    - **Subnet 3 Templar miner (training contributor)**: Multiple GPUs with NVLink or high-bandwidth interconnect for efficient gradient synchronisation; 10+ Gbps internet for outer gradient communication; sustained operation over multi-week training runs.
+
+  ## Benchmark Datasets and Evaluation Standards
+
+  - **MMLU (Massive Multitask Language Understanding, Hendrycks et al., 2020)**: 57-task multiple-choice benchmark covering STEM, humanities, social sciences; widely used as a composite measure of general LLM capability; Covenant-72B scored 67.1 (competitive with Llama 2 70B).
+  - **Bittensor Metagraph**: On-chain data structure recording all registered neuron consensus ranks, emission history, stake weights, and endpoint addresses; the canonical benchmark for miner performance within each subnet; updated per block (~12 seconds).
+  - **Yuma Consensus validation**: Each epoch, the Yuma algorithm produces a weight matrix W where W[i][j] represents validator i's score for miner j; the consensus rank is the eigenvector-centrality-like trust-weighted aggregate of these weights, resistant to minority validator collusion.
+  - **dTAO Alpha token price**: Real-time price discovery mechanism for subnet quality via AMM pool depth; functions as a continuous market-implied benchmark for relative subnet emission value.
+  - **Subnet 8 (Predict) accuracy**: Miner rank derived from historical forecasting accuracy evaluated against realised financial outcomes; empirically verifiable quality benchmark analogous to a live trading signal evaluation.
+  - **Subnet 3 (Templar) evaluation**: Covenant-72B validation against MMLU, HellaSwag, ARC, and WinoGrande benchmarks; training convergence monitored via validation perplexity on held-out token shards not used in training.
+  - **HellaSwag, ARC-Challenge, WinoGrande**: Standard LLM benchmarks used alongside MMLU to assess Covenant-72B's reasoning, commonsense, and world knowledge capabilities; Bittensor Subnet 3 validators use these benchmarks to evaluate miner gradient contributions and guide emission allocation within the training subnet.
+  - **SWE-bench (code generation)**: Emerging evaluation standard for code-generation subnets (Subnet 27); measures ability to resolve real GitHub issues; validators query miners with issue descriptions and score patches against test suites; incentivises miners to maintain and improve code generation model quality on real-world software engineering tasks.
 
   ## Research & Literature
 
-  1. Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. *Bitcoin.org whitepaper*.
-  2. Steeves, J. & Shaabana, A. (2020). Bittensor: A Peer-to-Peer Intelligence Market. *Opentensor Foundation whitepaper*. https://bittensor.com/whitepaper
-  3. Angeris, G. & Chitra, T. (2020). Improved Price Oracles: Constant Function Market Makers. *Proceedings of the 2nd ACM Conference on Advances in Financial Technologies*.
-  4. Dasgupta, P. & Maskin, E. (2000). Efficient Auctions. *Quarterly Journal of Economics*, 115(2), 341-388.
-  5. Myerson, R.B. (1981). Optimal Auction Design. *Mathematics of Operations Research*, 6(1), 58-73.
-  6. Lamport, L., Shostak, R. & Pease, M. (1982). The Byzantine Generals Problem. *ACM Transactions on Programming Languages and Systems*, 4(3), 382-401.
-  7. McMahan, B. et al. (2017). Communication-Efficient Learning of Deep Networks from Decentralized Data. *Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS)*.
-  8. Douillard, A. et al. (2023). DiLoCo: Distributed Low-Communication Training of Language Models. *arXiv*, 2311.08105.
-  9. Lin, Y. et al. (2020). Don't Decay the Learning Rate, Increase the Batch Size. *International Conference on Learning Representations (ICLR)*.
-  10. Goodfellow, I., Bengio, Y. & Courville, A. (2016). *Deep Learning*. MIT Press.
-  11. Wood, G. (2014). Ethereum: A Secure Decentralised Generalised Transaction Ledger. *Ethereum Yellow Paper*.
-  12. Parity Technologies (2021). Substrate: A Framework for Building Blockchains. *Polkadot documentation*.
-  13. Raffel, C. et al. (2020). Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer. *Journal of Machine Learning Research*, 21, 1-67.
-  14. Hendrycks, D. et al. (2020). Measuring Massive Multitask Language Understanding (MMLU). *arXiv*, 2009.03300.
-  15. Meta AI (2023). Llama 2: Open Foundation and Fine-Tuned Chat Models. *arXiv*, 2307.09288.
-  16. Templar Research (2026). Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet. *arXiv*, 2603.08163.
-  17. CoinGecko Research (2025). Top 5 Bittensor Subnets: A Deep Dive into the dTAO Ecosystem. *CoinGecko Learn*, https://www.coingecko.com/learn/top-bittensor-subnets-dtao
-  18. OAK Research (2025). Bittensor (TAO) and Dynamic TAO (dTAO): an upgrade that changes everything? *OAK Research Analyses*, https://oakresearch.io/en/analyses/fundamentals/bittensor-tao-dynamic-tao-dtao-upgrade-changes-everything
-  19. Grayscale Research (2025). Bittensor on the Eve of the First Halving. *Grayscale Research Reports*, https://research.grayscale.com/reports/bittensor-on-the-eve-of-the-first-halving
-  20. CryptoTimes (2026). Bittensor (TAO) 2026 Guide: Decentralized AI Marketplace, Tokenomics, Subnets & How It Works. https://www.cryptotimes.io/learn/bittensor-tao-guide/
-  21. CoinDesk (2026). Bittensor ecosystem tokens' value hits $1.5 billion as TAO rockets 90% in March. *CoinDesk*, https://www.coindesk.com/tech/2026/03/25/bittensor-ecosystem-tokens-value-hit-usd1-5-billion-as-jensen-huang-endorsement-supports-tao-rally
-  22. Cryptonews (2025). Bittensor Subnets Explained: Decentralized AI, Subnet Tokens, and the Role of TAO. *CryptoNews*, https://cryptonews.net/news/altcoins/32669842/
-  23. IBS Validator (2025). IBS Insight — Bittensor (TAO). *Medium*, https://ibsvalidator.medium.com/ibs-insight-bittensor-tao-24209f44cfb2
-  24. Phemex Research (2026). Bittensor Covenant-72B Explained: Why Decentralized AI Training Matters for TAO. https://phemex.com/blogs/bittensor-covenant-72b-decentralized-ai-tao
-  25. arXiv Research (2026). Common Risk Factors in Decentralized AI Subnets. *arXiv*, 2603.29751.
-  26. Yellow.com Research (2026). Bittensor Built A $2.7B Decentralized AI Market Nobody Noticed. https://yellow.com/research/bittensor-decentralized-ai-market-2-7-billion
-  27. Itokenly (2025). Bittensor Explained: Decentralized AI Network and TAO Crypto. https://itokenly.com/articles/bittensor-explained-decentralized-ai-network-tao-crypto
+  1. Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. *Bitcoin.org whitepaper*. [Core intellectual foundation; proof-of-work incentive theory that Bittensor generalises to proof-of-intelligence.]
+  2. Steeves, J. & Shaabana, A. (2020). Bittensor: A Peer-to-Peer Intelligence Market. *Opentensor Foundation whitepaper*. https://bittensor.com/whitepaper [Original Bittensor specification; proposes distributing TAO rewards proportionally to assessed AI quality via peer evaluation.]
+  3. Angeris, G. & Chitra, T. (2020). Improved Price Oracles: Constant Function Market Makers. *Proceedings of the 2nd ACM Conference on Advances in Financial Technologies*. [Theoretical foundations of constant-product AMMs (Uniswap v2 model) applied in Bittensor's dTAO subnet Alpha token pools.]
+  4. Dasgupta, P. & Maskin, E. (2000). Efficient Auctions. *Quarterly Journal of Economics*, 115(2), 341-388. [Mechanism design theory relevant to Yuma Consensus incentive-compatibility; dominant-strategy mechanisms in multi-agent settings.]
+  5. Myerson, R.B. (1981). Optimal Auction Design. *Mathematics of Operations Research*, 6(1), 58-73. [Revenue equivalence theorem; underlying theory for incentive design in Bittensor's peer-evaluation scoring mechanism.]
+  6. Lamport, L., Shostak, R. & Pease, M. (1982). The Byzantine Generals Problem. *ACM Transactions on Programming Languages and Systems*, 4(3), 382-401. [Formal definition of Byzantine fault tolerance; provides the fault model that Yuma Consensus and Subtensor blockchain consensus must satisfy.]
+  7. McMahan, B. et al. (2017). Communication-Efficient Learning of Deep Networks from Decentralized Data. *Proceedings of the 20th International Conference on Artificial Intelligence and Statistics (AISTATS)*. [FedAvg; federated learning precursor to Bittensor's incentivised distributed training subnets; decentralised parameter averaging without a trusted server.]
+  8. Douillard, A. et al. (2023). DiLoCo: Distributed Low-Communication Training of Language Models. *arXiv*, 2311.08105. [DiLoCo; bi-level outer-inner optimisation enabling LLM training across data-centre-separated nodes with infrequent synchronisation; directly implemented in Covenant-72B's Templar protocol.]
+  9. Witkowski, J. & Parkes, D.C. (2012). Peer Prediction without a Common Prior. *Proceedings of the 13th ACM Conference on Electronic Commerce (EC)*. [Peer prediction and information elicitation without verification; theoretical framework for honest reporting incentives in Bittensor's peer-evaluation scoring.]
+  10. Goodfellow, I., Bengio, Y. & Courville, A. (2016). *Deep Learning*. MIT Press. [Foundational textbook for deep learning methods deployed by Bittensor subnet miners; defines the ML architectures (CNNs, RNNs, transformers) that compete for emissions.]
+  11. Wood, G. (2014). Ethereum: A Secure Decentralised Generalised Transaction Ledger. *Ethereum Yellow Paper*. [Ethereum smart contract model; precursor to Bittensor's on-chain incentive logic; Bittensor chose Substrate over Ethereum compatibility for throughput reasons.]
+  12. Parity Technologies (2021). Substrate: A Framework for Building Blockchains. *Polkadot documentation*. [Substrate SDK; the blockchain framework underlying Subtensor; enables Polkadot parachain interoperability as a potential future upgrade path.]
+  13. Raffel, C. et al. (2020). Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer. *Journal of Machine Learning Research*, 21, 1-67. [T5; text-to-text transformer framework; foundational architecture for LLMs deployed on Bittensor text-generation subnets.]
+  14. Hendrycks, D. et al. (2020). Measuring Massive Multitask Language Understanding (MMLU). *arXiv*, 2009.03300. [MMLU benchmark; 57-task composite LLM evaluation; used to assess Covenant-72B (67.1 score, competitive with Llama 2 70B).]
+  15. Meta AI (2023). Llama 2: Open Foundation and Fine-Tuned Chat Models. *arXiv*, 2307.09288. [Llama 2 70B; reference model benchmark against which Covenant-72B's MMLU score of 67.1 is compared; trained by centralised Meta infrastructure at cost of ~$millions.]
+  16. Templar Research (2026). Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet. *arXiv*, 2603.08163. [The definitive technical paper for the largest permissionless decentralised LLM pre-training run; presents Templar protocol, security analysis, and benchmark results on Bittensor Subnet 3.]
+  17. CoinGecko Research (2025). Top 5 Bittensor Subnets: A Deep Dive into the dTAO Ecosystem. *CoinGecko Learn*. https://www.coingecko.com/learn/top-bittensor-subnets-dtao [Industry analysis of leading subnets by TVL, emissions, and Alpha token performance; includes Subnet 1 (text), Subnet 3 (training), Subnet 8 (finance), and others.]
+  18. OAK Research (2025). Bittensor (TAO) and Dynamic TAO (dTAO): an upgrade that changes everything? *OAK Research Analyses*. https://oakresearch.io/en/analyses/fundamentals/bittensor-tao-dynamic-tao-dtao-upgrade-changes-everything [Detailed technical analysis of the dTAO upgrade mechanism, Alpha token AMM design, and implications for subnet emission allocation and validator governance.]
+  19. Grayscale Research (2025). Bittensor on the Eve of the First Halving. *Grayscale Research Reports*. https://research.grayscale.com/reports/bittensor-on-the-eve-of-the-first-halving [Institutional investment analysis; TAO supply dynamics, halving impact, and case for GTAO Trust; Grayscale's due diligence for listing on NYSE.]
+  20. CryptoTimes (2026). Bittensor (TAO) 2026 Guide: Decentralized AI Marketplace, Tokenomics, Subnets & How It Works. https://www.cryptotimes.io/learn/bittensor-tao-guide/ [Comprehensive up-to-date guide to the Bittensor ecosystem; covers 128 subnets, dTAO mechanics, TAO tokenomics, and 2026 market developments.]
+  21. CoinDesk (2026). Bittensor ecosystem tokens' value hits $1.5 billion as TAO rockets 90% in March. *CoinDesk*. https://www.coindesk.com/tech/2026/03/25/bittensor-ecosystem-tokens-value-hit-usd1-5-billion-as-jensen-huang-endorsement-supports-tao-rally [Reports $1.5B combined subnet Alpha token market cap; NVIDIA CEO Jensen Huang endorsement; Q1 2026 market dynamics.]
+  22. Cryptonews (2025). Bittensor Subnets Explained: Decentralized AI, Subnet Tokens, and the Role of TAO. *CryptoNews*. https://cryptonews.net/news/altcoins/32669842/ [Subnet architecture explainer; validator-miner dynamics; role of TAO as reserve asset in Alpha token AMM pools.]
+  23. IBS Validator (2025). IBS Insight — Bittensor (TAO). *Medium*. https://ibsvalidator.medium.com/ibs-insight-bittensor-tao-24209f44cfb2 [Validator operator perspective on Yuma Consensus mechanics, staking incentives, and operational considerations for running a Bittensor validator.]
+  24. Phemex Research (2026). Bittensor Covenant-72B Explained: Why Decentralized AI Training Matters for TAO. https://phemex.com/blogs/bittensor-covenant-72b-decentralized-ai-tao [Accessible explanation of Covenant-72B's significance; contextualises 67.1 MMLU score relative to Llama 2 70B; analyzes implications for TAO token value.]
+  25. arXiv Research (2026). Common Risk Factors in Decentralized AI Subnets. *arXiv*, 2603.29751. [Academic risk analysis; identifies incentive gaming, validator collusion, quality Goodharting, and subnet specialisation races as systematic factor risks in Bittensor-style networks.]
+  26. Yellow.com Research (2026). Bittensor Built A $2.7B Decentralized AI Market Nobody Noticed. https://yellow.com/research/bittensor-decentralized-ai-market-2-7-billion [Market capitalisation and AI usage revenue analysis; $43M+ Q1 2026 subnet revenue; institutional staking figures.]
+  27. Itokenly (2025). Bittensor Explained: Decentralized AI Network and TAO Crypto. https://itokenly.com/articles/bittensor-explained-decentralized-ai-network-tao-crypto [Introductory explainer for the Bittensor protocol covering whitepaper history, founders, subnet structure, and TAO token mechanics.]
+
+  ## Competitive Analysis and Economic Model
+
+  - **Position in the decentralised compute ecosystem**:
+    - Bittensor occupies a distinct niche as the only decentralised AI network with an integrated quality-evaluation and economic incentive layer.
+    - Closest functional competitors and their distinguishing characteristics:
+      - **io.net**: Decentralised GPU cluster marketplace; rents raw compute capacity; no AI quality scoring or incentive mechanism for output quality; effectively a compute exchange.
+      - **Render Network**: GPU rendering and AI inference marketplace; output quality verified through user feedback rather than automated peer evaluation; primarily serves creative media production.
+      - **Akash Network**: Permissionless cloud compute marketplace on Cosmos SDK; rents container capacity; no AI-specific evaluation; targets DevOps/cloud workloads alongside AI inference.
+      - **Commune (comx)**: Community fork of Bittensor's codebase attempting alternative governance models; technically similar but not interoperable; demonstrates appeal of incentive design pattern without Bittensor's market depth.
+    - Key Bittensor differentiator: quality-weighted emissions create selection pressure for genuinely better AI outputs rather than merely more compute.
+    - Unlike federated learning frameworks ([[Federated Learning]], Flower, PySyft, OpenFL): Bittensor uses financial incentives rather than privacy-motivated coordination; requires no trusted parameter server; tolerates participant anonymity.
+  - **Economic model depth**:
+    - Revenue streams for participants:
+      - **Miners**: Earn TAO emissions proportional to Yuma Consensus rank within their subnet.
+      - **Validators**: Earn emissions from stake weight; additionally earn a take-rate (configurable percentage of miner emissions) as operator fee.
+      - **Delegators/Nominators**: Earn a share of validator emissions proportional to delegated stake.
+      - **Subnet owners**: Receive a percentage of subnet Alpha token emissions as subnet creator incentive.
+    - Cost structure for participants:
+      - **Miners**: Registration fee (burned TAO), hardware (commodity GPU), bandwidth, electricity.
+      - **Validators**: Hardware (high-memory GPU or multi-GPU rig for reference model serving), bandwidth, registration fee.
+      - **Subnet creators**: Registration fee (burned TAO, amount set by governance); ongoing validator-seeding costs to bootstrap subnet quality signal.
+    - Emission allocation mechanics:
+      - Pre-dTAO: Global emissions split equally across all registered subnets.
+      - Post-dTAO: Each subnet's share determined by TAO depth in its Alpha token AMM pool, creating a continuous market-based allocation mechanism.
+      - Consequence: Capital allocation (staking) directly determines which AI tasks receive the most emissions and therefore attract the highest miner participation and quality competition.
+    - Tokenomic sustainability analysis:
+      - Bitcoin-mirrored supply schedule (21M cap, halving every ~4 years) creates progressive emission scarcity.
+      - First halving (December 2025): 7,200 → 3,600 TAO/day; second halving projected ~2029.
+      - Deflationary pressure from burned registration fees partially offsets emission-driven dilution.
+      - Real usage revenue ($43M+ Q1 2026) indicates genuine demand for subnet AI outputs, not purely speculative value.
+  - **Incentive design analysis**:
+    - **Positive properties**:
+      - Permissionless entry: any party globally can register as miner or validator without identity verification or permission.
+      - Anti-collusion: Yuma Consensus detects validator score matrices that deviate from emerging consensus and reduces their weight proportionally.
+      - Sybil resistance: burned-TAO registration fee creates direct economic cost per registered neuron.
+      - Quality selection: low-rank miners are pruned and replaced, maintaining quality pressure over time.
+    - **Identified attack vectors and failure modes**:
+      - **Quality Goodharting**: Validators may teach miners to optimise for the evaluation proxy rather than true task quality; especially acute in subnets with simple automated metrics (e.g. perplexity-only evaluation).
+      - **Validator cartel formation**: If a supermajority of stake weight is controlled by colluding validators, Yuma Consensus cannot detect the collusion (it only down-weights divergent minorities).
+      - **Alpha token speculation vs. quality signal**: dTAO pool depth can reflect speculative capital flows rather than genuine assessment of subnet AI quality, distorting emission allocation.
+      - **Data contamination in benchmarks**: Subnets evaluated by performance on public benchmarks risk data contamination (miners training on benchmark questions); SubDivision-style data shielding protocols being developed.
+    - **Academic classification**: Bittensor's incentive mechanism is a form of peer prediction combined with a token-curated registry; closest formal mechanisms are Witkowski-Parkes (2012) peer prediction without a common prior, and Myerson (1981) incentive-compatible mechanism design.
+
+  ## Protocol Governance and Evolution
+
+  - **Governance structure**:
+    - Bittensor Improvement Proposals (BIPs): formal mechanism for proposing, discussing, and ratifying changes to Subtensor blockchain parameters.
+    - On-chain governance: parameter changes (emission rates, registration costs, subnet limits, consensus hyperparameters) approved by validator vote weighted by stake.
+    - Opentensor Foundation (OTF): Canadian non-profit; primary protocol developer; responsible for core client implementation, security audits, and community grants.
+    - Foundation authority limits: OTF cannot unilaterally change consensus rules; major protocol changes require on-chain validator approval.
+  - **Major protocol milestones**:
+    - **2019**: Initial Bittensor whitepaper conceptualisation (Steeves and Shaabana at University of Waterloo).
+    - **2021**: Mainnet launch; single-subnet text-generation network.
+    - **2022**: Multi-subnet architecture introduced; subnet 1 (text), subnet 2 (image), subnet 3 (pretraining) among early launches.
+    - **2023**: 32 active subnets; TAO listed on major centralised exchanges.
+    - **2024**: 64 subnets; Grayscale GTAO Trust filing; dTAO specification published.
+    - **February 2025**: dTAO mainnet upgrade; Alpha token AMM pools activated for all subnets.
+    - **December 2025**: First TAO halving; emissions reduced from 7,200 to 3,600 TAO/day.
+    - **March 2026**: Covenant-72B released by Subnet 3 (Templar); 72B parameters trained by 70+ anonymous contributors; MMLU 67.1.
+    - **128 subnets active as of March 2026**; roadmap approved to expand to 256.
+  - **Fork history and ecosystem fractures**:
+    - **Commune (2022)**: Fork led by community members disagreeing with OTF governance centralisation; implemented alternative subnet governance model; separate token (COMAI); smaller ecosystem but active development.
+    - **Mosaic (2024)**: Second notable fork; focused on scientific computing subnets and academic-institutional partnership model.
+    - Both forks indicate unresolved tensions in the community regarding foundation authority, fee structures, and governance scope.
+  - **Open source ecosystem**:
+    - All Bittensor code: open-source on GitHub under MIT licence.
+    - Subtensor (Rust/Substrate), bittensor Python SDK, Templar (distributed training), and community subnet incentive mechanisms all publicly auditable.
+    - GitHub activity: Subtensor repository has 500+ forks and active community PRs; primary development velocity driven by OTF but with significant external contributions.
 
 - ### Provenance
   - sources:: https://www.cryptotimes.io/learn/bittensor-tao-guide/, https://www.coingecko.com/learn/top-bittensor-subnets-dtao, https://www.coindesk.com/tech/2026/03/25/bittensor-ecosystem-tokens-value-hit-usd1-5-billion-as-jensen-huang-endorsement-supports-tao-rally, https://arxiv.org/pdf/2603.08163, https://research.grayscale.com/reports/bittensor-on-the-eve-of-the-first-halving, https://bittensor.com/whitepaper, https://www.ainvest.com/news/bittensor-tao-gains-institutional-adoption-decentralized-ai-framework-expands-2604/, https://arxiv.org/pdf/2603.29751

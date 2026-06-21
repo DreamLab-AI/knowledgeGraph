@@ -132,6 +132,14 @@
       "label": "Bayes Theorem"
     },
     {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "perception-system",
       "label": "Perception System"
     },

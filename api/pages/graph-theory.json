@@ -165,8 +165,20 @@
       "label": "Applied Mathematics"
     },
     {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
       "slug": "community-detection",
       "label": "Community Detection"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
     },
     {
       "slug": "decentralized-swarm-control",
@@ -195,6 +207,10 @@
     {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
     },
     {
       "slug": "network-theory",

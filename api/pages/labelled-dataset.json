@@ -90,6 +90,10 @@
     {
       "slug": "benchmark-dataset",
       "label": "Benchmark Dataset"
+    },
+    {
+      "slug": "classification",
+      "label": "Classification"
     }
   ]
 }

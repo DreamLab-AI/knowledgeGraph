@@ -111,6 +111,18 @@
       "label": "Bayesian Optimisation"
     },
     {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
       "slug": "swarm-robotics",
       "label": "Swarm Robotics"
     }

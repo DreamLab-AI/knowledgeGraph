@@ -111,6 +111,10 @@
     {
       "slug": "agent-based-models",
       "label": "Agent-Based Models"
+    },
+    {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
     }
   ]
 }

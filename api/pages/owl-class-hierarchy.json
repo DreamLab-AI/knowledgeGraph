@@ -132,6 +132,10 @@
   ],
   "backlinks": [
     {
+      "slug": "closed-world-assumption",
+      "label": "Closed World Assumption"
+    },
+    {
       "slug": "metaverse-ontology-schema",
       "label": "Metaverse Ontology Schema"
     }

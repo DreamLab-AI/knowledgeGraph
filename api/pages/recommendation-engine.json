@@ -62,5 +62,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    }
+  ]
 }

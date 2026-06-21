@@ -44,5 +44,10 @@
       "label": "Artificial Intelligence"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    }
+  ]
 }

@@ -725,6 +725,10 @@
       "label": "Collision Detection"
     },
     {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

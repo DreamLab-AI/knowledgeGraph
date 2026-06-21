@@ -101,6 +101,10 @@
     {
       "slug": "ai-applications",
       "label": "AI Applications"
+    },
+    {
+      "slug": "classification",
+      "label": "Classification"
     }
   ]
 }

@@ -59,6 +59,10 @@
     {
       "slug": "algorithmic-bias",
       "label": "Algorithmic Bias"
+    },
+    {
+      "slug": "classification",
+      "label": "Classification"
     }
   ]
 }

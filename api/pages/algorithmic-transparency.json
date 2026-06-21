@@ -79,6 +79,10 @@
       "label": "Consumer Protection"
     },
     {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
       "slug": "explainable-ai",
       "label": "Explainable AI"
     }

@@ -168,6 +168,14 @@
       "label": "Complex Systems"
     },
     {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

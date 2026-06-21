@@ -189,6 +189,10 @@
       "label": "Chatbots"
     },
     {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
       "slug": "customer-support-automation",
       "label": "Customer Support Automation"
     },

@@ -629,6 +629,10 @@
       "label": "ComfyUI Workflows"
     },
     {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
       "slug": "fine-tuning",
       "label": "Fine Tuning"
     },

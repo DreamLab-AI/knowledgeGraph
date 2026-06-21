@@ -297,6 +297,10 @@
       "label": "Activity Data"
     },
     {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
       "slug": "agent-memory",
       "label": "Agent Memory"
     },
@@ -423,6 +427,10 @@
     {
       "slug": "privacy-filter",
       "label": "Privacy Filter"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
     },
     {
       "slug": "pseudonymity",

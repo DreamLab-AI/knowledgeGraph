@@ -160,6 +160,10 @@
   ],
   "backlinks": [
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
       "slug": "storage-hardware",
       "label": "Storage Hardware"
     }

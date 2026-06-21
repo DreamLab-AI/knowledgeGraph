@@ -127,6 +127,10 @@
       "label": "Audio Synthesis"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

@@ -131,6 +131,14 @@
       "label": "Automatic Prompt Optimisation"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
       "slug": "few-shot-learning",
       "label": "Few-Shot Learning"
     },

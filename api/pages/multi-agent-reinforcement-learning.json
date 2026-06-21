@@ -120,6 +120,10 @@
       "label": "Agent-Based Models"
     },
     {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    },
+    {
       "slug": "distributed-decision-making",
       "label": "Distributed Decision Making"
     }

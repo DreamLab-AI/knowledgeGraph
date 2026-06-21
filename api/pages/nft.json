@@ -165,6 +165,10 @@
       "label": "Blockchain Oracle"
     },
     {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
       "slug": "creator-royalties",
       "label": "Creator Royalties"
     },

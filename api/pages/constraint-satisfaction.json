@@ -10,10 +10,14 @@
     {
       "id": "urn:ngm:class:ai-technique",
       "label": "AI Technique"
+    },
+    {
+      "id": "urn:ngm:class:combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.9,
   "maturity": "mature",
   "relationships": {
     "hasPart": [
@@ -30,14 +34,30 @@
         "label": "Constraint Propagation"
       },
       {
-        "id": "urn:ngm:class:heuristic-methods",
+        "id": "urn:ngm:class:variable-ordering-heuristic",
         "label": "Variable Ordering Heuristic"
+      },
+      {
+        "id": "urn:ngm:class:local-search",
+        "label": "Local Search"
+      },
+      {
+        "id": "urn:ngm:class:branch-and-bound",
+        "label": "Branch and Bound"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:search-algorithm",
         "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:domain-representation",
+        "label": "Domain Representation"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
       }
     ],
     "enables": [
@@ -47,7 +67,7 @@
       },
       {
         "id": "urn:ngm:class:planning-and-scheduling",
-        "label": "Scheduling"
+        "label": "Planning and Scheduling"
       },
       {
         "id": "urn:ngm:class:configuration-management",
@@ -56,6 +76,14 @@
       {
         "id": "urn:ngm:class:resource-allocation",
         "label": "Resource Allocation"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
       }
     ],
     "dependsOn": [
@@ -66,12 +94,20 @@
       {
         "id": "urn:ngm:class:graph-theory",
         "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:propositional-logic",
+        "label": "Propositional Logic"
       }
     ],
     "implements": [
       {
         "id": "urn:ngm:class:symbolic-ai",
         "label": "Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
       }
     ],
     "contrastsWith": [
@@ -82,6 +118,10 @@
       {
         "id": "urn:ngm:class:satisfiability",
         "label": "Satisfiability"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-inference",
+        "label": "Probabilistic Inference"
       }
     ],
     "bridgesTo": [
@@ -90,8 +130,16 @@
         "label": "Supply Chain Optimisation"
       },
       {
-        "id": "urn:ngm:class:task-planning",
+        "id": "urn:ngm:class:robotic-task-planning",
         "label": "Robotic Task Planning"
+      },
+      {
+        "id": "urn:ngm:class:network-configuration",
+        "label": "Network Configuration"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
       }
     ],
     "uses": [
@@ -106,6 +154,10 @@
       {
         "id": "urn:ngm:class:heuristic-methods",
         "label": "Heuristic"
+      },
+      {
+        "id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
       }
     ],
     "supports": [
@@ -116,41 +168,197 @@
       {
         "id": "urn:ngm:class:decision-making",
         "label": "Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neuro-Symbolic AI"
       }
     ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:propositional-logic",
-        "label": "Propositional Logic"
-      },
-      {
         "id": "urn:ngm:class:integer-programming",
         "label": "Integer Programming"
       },
       {
-        "id": "urn:ngm:class:probabilistic-inference",
-        "label": "Probabilistic Inference"
+        "id": "urn:ngm:class:treewidth",
+        "label": "Treewidth"
+      },
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ]
   },
   "wikilinks": [
     {
-      "slug": "search-algorithm",
-      "label": "Search Algorithm"
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
     },
     {
-      "slug": "automated-planning",
-      "label": "Automated Planning"
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
     },
     {
       "slug": "symbolic-ai",
       "label": "Symbolic AI"
     },
     {
-      "slug": "artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "arc-consistency",
+      "label": "Arc Consistency"
+    },
+    {
+      "slug": "backtracking-search",
+      "label": "Backtracking Search"
+    },
+    {
+      "slug": "constraint-propagation",
+      "label": "Constraint Propagation"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "variable-ordering-heuristic",
+      "label": "Variable Ordering Heuristic"
+    },
+    {
+      "slug": "local-search",
+      "label": "Local Search"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "propositional-logic",
+      "label": "Propositional Logic"
+    },
+    {
+      "slug": "satisfiability",
+      "label": "Satisfiability"
+    },
+    {
+      "slug": "integer-programming",
+      "label": "Integer Programming"
+    },
+    {
+      "slug": "linear-programming",
+      "label": "Linear Programming"
+    },
+    {
+      "slug": "probabilistic-inference",
+      "label": "Probabilistic Inference"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
+      "slug": "resource-allocation",
+      "label": "Resource Allocation"
+    },
+    {
+      "slug": "supply-chain-optimisation",
+      "label": "Supply Chain Optimisation"
+    },
+    {
+      "slug": "network-configuration",
+      "label": "Network Configuration"
+    },
+    {
+      "slug": "robotic-task-planning",
+      "label": "Robotic Task Planning"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "slug": "heuristic-methods",
+      "label": "Heuristic"
+    },
+    {
+      "slug": "logic-programming",
+      "label": "Logic Programming"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "neuro-symbolic-ai",
+      "label": "Neuro-Symbolic AI"
+    },
+    {
+      "slug": "operations-research",
+      "label": "Operations Research"
+    },
+    {
+      "slug": "graph-colouring",
+      "label": "Graph Colouring"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "treewidth",
+      "label": "Treewidth"
+    },
+    {
+      "slug": "branch-and-bound",
+      "label": "Branch and Bound"
+    },
+    {
+      "slug": "dynamic-programming",
+      "label": "Dynamic Programming"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "domain-representation",
+      "label": "Domain Representation"
     }
   ],
   "backlinks": [
@@ -165,6 +373,26 @@
     {
       "slug": "classical-planning",
       "label": "Classical Planning"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
     },
     {
       "slug": "model-based-control",

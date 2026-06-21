@@ -101,6 +101,14 @@
       "label": "Brain Computer Interfaces"
     },
     {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     }

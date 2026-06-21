@@ -805,6 +805,10 @@
       "label": "Character Relationship Graph"
     },
     {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
     },

@@ -169,6 +169,10 @@
       "label": "Algorithmic Transparency Index"
     },
     {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
       "slug": "consumer-protection",
       "label": "Consumer Protection"
     }

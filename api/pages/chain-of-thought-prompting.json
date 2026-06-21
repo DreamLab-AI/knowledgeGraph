@@ -127,6 +127,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
       "slug": "function-calling",
       "label": "Function Calling"
     },

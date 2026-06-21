@@ -112,6 +112,10 @@
       "label": "Classical Planning"
     },
     {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
       "slug": "task-planning",
       "label": "Task Planning"
     }

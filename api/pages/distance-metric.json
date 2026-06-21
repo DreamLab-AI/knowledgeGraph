@@ -88,6 +88,10 @@
       "label": "AI Group Formation"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
       "slug": "spatial-index",
       "label": "Spatial Index"
     }

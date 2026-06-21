@@ -155,6 +155,10 @@
       "label": "Attention Weight"
     },
     {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
       "slug": "language-modeling",
       "label": "Language Modeling"
     },

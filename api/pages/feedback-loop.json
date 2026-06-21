@@ -678,8 +678,20 @@
       "label": "Autonomous Behavior"
     },
     {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
+    },
+    {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    },
+    {
       "slug": "complex-systems",
       "label": "Complex Systems"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
     },
     {
       "slug": "control-layer",

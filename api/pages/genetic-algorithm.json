@@ -111,6 +111,14 @@
       "label": "Agent-Based Models"
     },
     {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    },
+    {
       "slug": "logistics-optimization",
       "label": "Logistics Optimization"
     }

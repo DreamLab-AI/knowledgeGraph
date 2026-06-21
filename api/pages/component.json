@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -32,13 +32,69 @@
       {
         "id": "urn:ngm:class:neural-network-layer",
         "label": "Neural Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:software-module",
+        "label": "Software Module"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
       }
     ],
-    "requires": [],
-    "enables": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:interface",
+        "label": "Interface"
+      },
+      {
+        "id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "id": "urn:ngm:class:modularity",
+        "label": "Modularity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reusability",
+        "label": "Reusability"
+      },
+      {
+        "id": "urn:ngm:class:testability",
+        "label": "Testability"
+      },
+      {
+        "id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:separation-of-concerns",
+        "label": "Separation of Concerns"
+      },
+      {
+        "id": "urn:ngm:class:design-pattern",
+        "label": "Design Pattern"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:monolithic-architecture",
+        "label": "Monolithic Architecture"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
     "supports": [],
@@ -69,6 +125,14 @@
       {
         "id": "urn:ngm:class:embedded-systems",
         "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "id": "urn:ngm:class:software-architecture",
+        "label": "Software Architecture"
       }
     ]
   },
@@ -76,6 +140,178 @@
     {
       "slug": "artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "ai-infrastructure",
+      "label": "AI Infrastructure"
+    },
+    {
+      "slug": "hardware-component",
+      "label": "Hardware Component"
+    },
+    {
+      "slug": "software-module",
+      "label": "Software Module"
+    },
+    {
+      "slug": "neural-network-layer",
+      "label": "Neural Network Layer"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "machine-learning-pipeline",
+      "label": "Machine Learning Pipeline"
+    },
+    {
+      "slug": "ai-framework",
+      "label": "AI Framework"
+    },
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "microservices",
+      "label": "Microservices"
+    },
+    {
+      "slug": "containerisation",
+      "label": "Containerisation"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "embedded-systems",
+      "label": "Embedded Systems"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    },
+    {
+      "slug": "modularity",
+      "label": "Modularity"
+    },
+    {
+      "slug": "interface",
+      "label": "Interface"
+    },
+    {
+      "slug": "ai-system-eu-definition",
+      "label": "AI System (EU Definition)"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "digital-infrastructure",
+      "label": "Digital Infrastructure"
+    },
+    {
+      "slug": "distributed-training",
+      "label": "Distributed Training"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "slug": "monitoring",
+      "label": "Monitoring"
+    },
+    {
+      "slug": "data-governance",
+      "label": "Data Governance"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "vector-database",
+      "label": "Vector Database"
+    },
+    {
+      "slug": "iso-iec-25010",
+      "label": "ISO/IEC 25010"
+    },
+    {
+      "slug": "iso-iec-23053",
+      "label": "ISO/IEC 23053"
+    },
+    {
+      "slug": "design-pattern",
+      "label": "Design Pattern"
+    },
+    {
+      "slug": "dependency-injection",
+      "label": "Dependency Injection"
+    },
+    {
+      "slug": "separation-of-concerns",
+      "label": "Separation of Concerns"
+    },
+    {
+      "slug": "reusability",
+      "label": "Reusability"
+    },
+    {
+      "slug": "testability",
+      "label": "Testability"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "service-mesh",
+      "label": "Service Mesh"
+    },
+    {
+      "slug": "event-driven-architecture",
+      "label": "Event-Driven Architecture"
     }
   ],
   "backlinks": [

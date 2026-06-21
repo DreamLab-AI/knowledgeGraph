@@ -540,6 +540,18 @@
       "label": "Chatbots"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "code-former",
+      "label": "CodeFormer"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
       "slug": "collision-avoidance",
       "label": "Collision Avoidance"
     },
@@ -554,6 +566,10 @@
     {
       "slug": "composite-ai",
       "label": "Composite AI"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
     },
     {
       "slug": "computational-photography",
@@ -592,6 +608,10 @@
       "label": "Configuration"
     },
     {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "confusion-matrix",
       "label": "Confusion Matrix"
     },
@@ -616,6 +636,10 @@
       "label": "Context Aware Response"
     },
     {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
       "slug": "continued-pre-training",
       "label": "Continued Pre Training"
     },
@@ -624,8 +648,16 @@
       "label": "Contrastive Learning"
     },
     {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "control-net",
+      "label": "controlnet"
     },
     {
       "slug": "conversion-pipeline",

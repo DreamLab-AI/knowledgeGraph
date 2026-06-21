@@ -329,8 +329,28 @@
       "label": "ArcFace"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
     },
     {
       "slug": "generative-adversarial-networks",

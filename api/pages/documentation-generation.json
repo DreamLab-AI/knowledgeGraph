@@ -95,6 +95,10 @@
     {
       "slug": "ai-documentation-standards",
       "label": "AI Documentation Standards"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
     }
   ]
 }

@@ -352,6 +352,14 @@
       "label": "Cobot Safety Levels"
     },
     {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
       "slug": "collaborative-operation",
       "label": "Collaborative Operation"
     },
@@ -386,14 +394,38 @@
     {
       "slug": "collision-detection",
       "label": "Collision Detection"
+    },
+    {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
     },
     {
       "slug": "communication-protocol",
       "label": "Communication Protocol"
     },
     {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
       "slug": "computer-vision",
       "label": "Computer Vision"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
     },
     {
       "slug": "control-algorithm",

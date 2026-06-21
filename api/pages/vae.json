@@ -130,8 +130,20 @@
       "label": "AI Upscaling and Super-Resolution"
     },
     {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
+    },
+    {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-manager",
+      "label": "comfyui manager"
     },
     {
       "slug": "comfy-ui-workflows",

@@ -1433,6 +1433,10 @@
   ],
   "backlinks": [
     {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
       "slug": "image-generation",
       "label": "Image Generation"
     },

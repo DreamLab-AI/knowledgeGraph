@@ -147,6 +147,14 @@
       "label": "Call Centres"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
       "slug": "digital-twin-creation",
       "label": "Digital Twin Creation"
     },

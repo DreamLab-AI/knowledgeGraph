@@ -142,6 +142,10 @@
       "label": "ComfyUI Client"
     },
     {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
       "slug": "real-time",
       "label": "Real Time"
     },

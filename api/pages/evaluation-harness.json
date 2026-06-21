@@ -63,6 +63,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
       "slug": "benchmark-dataset",
       "label": "Benchmark Dataset"
     },
@@ -77,6 +85,14 @@
     {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
     }
   ]
 }

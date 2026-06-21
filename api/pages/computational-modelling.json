@@ -13,17 +13,93 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.7,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:numerical-methods",
+        "label": "Numerical Methods"
+      },
+      {
+        "id": "urn:ngm:class:finite-element-analysis",
+        "label": "Finite Element Analysis"
+      },
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      },
+      {
+        "id": "urn:ngm:class:monte-carlo-simulation",
+        "label": "Monte Carlo Simulation"
+      },
+      {
+        "id": "urn:ngm:class:sensitivity-analysis",
+        "label": "Sensitivity Analysis"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:differential-equations",
+        "label": "Differential Equations"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "id": "urn:ngm:class:epidemiological-modelling",
+        "label": "Epidemiological Modelling"
+      },
+      {
+        "id": "urn:ngm:class:protein-structure-prediction",
+        "label": "Protein Structure Prediction"
+      }
+    ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:surrogate-model",
+        "label": "Surrogate Model"
+      },
+      {
+        "id": "urn:ngm:class:physics-informed-neural-network",
+        "label": "Physics-Informed Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
@@ -31,14 +107,203 @@
       {
         "id": "urn:ngm:class:mathematical-optimisation",
         "label": "Mathematical Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:scientific-machine-learning",
+        "label": "Scientific Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:probabilistic-modelling",
+        "label": "Probabilistic Modelling"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "mathematical-optimisation",
+      "label": "Mathematical Optimisation"
+    },
+    {
+      "slug": "simulation",
+      "label": "Simulation"
+    },
+    {
+      "slug": "differential-equations",
+      "label": "Differential Equations"
+    },
+    {
+      "slug": "numerical-methods",
+      "label": "Numerical Methods"
+    },
+    {
+      "slug": "finite-element-analysis",
+      "label": "Finite Element Analysis"
+    },
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "climate-modelling",
+      "label": "Climate Modelling"
+    },
+    {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
+      "slug": "digital-twin",
+      "label": "Digital Twin"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "monte-carlo-simulation",
+      "label": "Monte Carlo Simulation"
+    },
+    {
+      "slug": "high-performance-computing",
+      "label": "High-Performance Computing"
+    },
+    {
+      "slug": "gpu-acceleration",
+      "label": "GPU Acceleration"
+    },
+    {
+      "slug": "physics-informed-neural-network",
+      "label": "Physics-Informed Neural Network"
+    },
+    {
+      "slug": "surrogate-model",
+      "label": "Surrogate Model"
+    },
+    {
+      "slug": "sensitivity-analysis",
+      "label": "Sensitivity Analysis"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "system-dynamics",
+      "label": "System Dynamics"
+    },
+    {
+      "slug": "molecular-dynamics",
+      "label": "Molecular Dynamics"
+    },
+    {
+      "slug": "computational-fluid-dynamics",
+      "label": "Computational Fluid Dynamics"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "scientific-machine-learning",
+      "label": "Scientific Machine Learning"
+    },
+    {
+      "slug": "probabilistic-modelling",
+      "label": "Probabilistic Modelling"
+    },
+    {
+      "slug": "data-assimilation",
+      "label": "Data Assimilation"
+    },
+    {
+      "slug": "cellular-automata",
+      "label": "Cellular Automata"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "complex-systems",
+      "label": "Complex Systems"
+    },
+    {
+      "slug": "operator-learning",
+      "label": "Operator Learning"
+    },
+    {
+      "slug": "protein-structure-prediction",
+      "label": "Protein Structure Prediction"
+    },
+    {
+      "slug": "epidemiological-modelling",
+      "label": "Epidemiological Modelling"
+    },
+    {
+      "slug": "fluid-simulation",
+      "label": "Fluid Simulation"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "systems-biology",
+      "label": "Systems Biology"
+    },
+    {
+      "slug": "collaborative-simulation",
+      "label": "Collaborative Simulation"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "discretisation",
+      "label": "Discretisation"
+    }
+  ],
   "backlinks": [
     {
       "slug": "agent-based-modelling",
       "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
     }
   ]
 }

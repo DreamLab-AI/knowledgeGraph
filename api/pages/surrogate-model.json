@@ -102,6 +102,10 @@
     {
       "slug": "bayesian-optimisation",
       "label": "Bayesian Optimisation"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
     }
   ]
 }

@@ -208,6 +208,18 @@
       "label": "Brain Computer Interfaces"
     },
     {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "computational-photography",
+      "label": "Computational Photography"
+    },
+    {
       "slug": "digital-content-overlay",
       "label": "Digital Content Overlay"
     },

@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.91,
   "maturity": "emerging",
   "relationships": {
     "hasPart": [
@@ -22,18 +22,42 @@
         "label": "Experience Replay"
       },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Progressive Neural Networks"
+        "id": "urn:ngm:class:elastic-weight-consolidation",
+        "label": "Elastic Weight Consolidation"
       },
       {
         "id": "urn:ngm:class:knowledge-distillation",
         "label": "Knowledge Distillation"
+      },
+      {
+        "id": "urn:ngm:class:progressive-neural-networks",
+        "label": "Progressive Neural Networks"
+      },
+      {
+        "id": "urn:ngm:class:task-incremental-learning",
+        "label": "Task-Incremental Learning"
+      },
+      {
+        "id": "urn:ngm:class:class-incremental-learning",
+        "label": "Class-Incremental Learning"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:online-learning",
         "label": "Online Learning"
+      },
+      {
+        "id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "id": "urn:ngm:class:neural-networks",
+        "label": "Neural Networks"
       }
     ],
     "enables": [
@@ -46,13 +70,17 @@
         "label": "Few-Shot Learning"
       },
       {
-        "id": "urn:ngm:class:autonomous-agent",
+        "id": "urn:ngm:class:autonomous-agents",
         "label": "Autonomous Agents"
+      },
+      {
+        "id": "urn:ngm:class:machine-unlearning",
+        "label": "Machine Unlearning"
       }
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:neural-network",
+        "id": "urn:ngm:class:neural-networks",
         "label": "Neural Networks"
       },
       {
@@ -60,8 +88,12 @@
         "label": "Gradient Descent"
       },
       {
-        "id": "urn:ngm:class:regularisation",
-        "label": "Regularisation"
+        "id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      },
+      {
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
       }
     ],
     "implements": [],
@@ -72,7 +104,11 @@
       },
       {
         "id": "urn:ngm:class:multi-task-learning",
-        "label": "Multi Task Learning"
+        "label": "Multi-Task Learning"
+      },
+      {
+        "id": "urn:ngm:class:batch-learning",
+        "label": "Batch Learning"
       }
     ],
     "bridgesTo": [
@@ -93,6 +129,14 @@
       {
         "id": "urn:ngm:class:meta-learning",
         "label": "Meta-Learning"
+      },
+      {
+        "id": "urn:ngm:class:lora",
+        "label": "LoRA"
+      },
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
       }
     ],
     "supports": [
@@ -103,6 +147,10 @@
       {
         "id": "urn:ngm:class:edge-computing",
         "label": "Edge Computing"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
       }
     ],
     "standardizedBy": [],
@@ -115,31 +163,195 @@
       {
         "id": "urn:ngm:class:curriculum-learning",
         "label": "Curriculum Learning"
+      },
+      {
+        "id": "urn:ngm:class:neural-plasticity",
+        "label": "Neural Plasticity"
+      },
+      {
+        "id": "urn:ngm:class:foundation-models",
+        "label": "Foundation Models"
       }
     ]
   },
   "wikilinks": [
     {
-      "slug": "online-learning",
-      "label": "Online Learning"
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "catastrophic-forgetting",
+      "label": "Catastrophic Forgetting"
+    },
+    {
+      "slug": "neural-networks",
+      "label": "Neural Networks"
     },
     {
       "slug": "transfer-learning",
       "label": "Transfer Learning"
     },
     {
-      "slug": "machine-learning-domain",
-      "label": "Machine Learning Domain"
+      "slug": "online-learning",
+      "label": "Online Learning"
     },
     {
-      "slug": "machine-learning",
-      "label": "Machine Learning"
+      "slug": "neural-plasticity",
+      "label": "Neural Plasticity"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    },
+    {
+      "slug": "elastic-weight-consolidation",
+      "label": "Elastic Weight Consolidation"
+    },
+    {
+      "slug": "experience-replay",
+      "label": "Experience Replay"
+    },
+    {
+      "slug": "knowledge-distillation",
+      "label": "Knowledge Distillation"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "progressive-neural-networks",
+      "label": "Progressive Neural Networks"
+    },
+    {
+      "slug": "meta-learning",
+      "label": "Meta-Learning"
+    },
+    {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "domain-adaptation",
+      "label": "Domain Adaptation"
+    },
+    {
+      "slug": "curriculum-learning",
+      "label": "Curriculum Learning"
+    },
+    {
+      "slug": "regularisation",
+      "label": "Regularisation"
+    },
+    {
+      "slug": "multi-task-learning",
+      "label": "Multi-Task Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "parameter-efficient-fine-tuning",
+      "label": "Parameter-Efficient Fine-Tuning"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "autonomous-agents",
+      "label": "Autonomous Agents"
+    },
+    {
+      "slug": "representation-learning",
+      "label": "Representation Learning"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "memory-replay",
+      "label": "Memory Replay"
+    },
+    {
+      "slug": "fisher-information",
+      "label": "Fisher Information"
+    },
+    {
+      "slug": "model-compression",
+      "label": "Model Compression"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "machine-unlearning",
+      "label": "Machine Unlearning"
+    },
+    {
+      "slug": "batch-learning",
+      "label": "Batch Learning"
+    },
+    {
+      "slug": "task-incremental-learning",
+      "label": "Task-Incremental Learning"
+    },
+    {
+      "slug": "class-incremental-learning",
+      "label": "Class-Incremental Learning"
+    },
+    {
+      "slug": "lora",
+      "label": "LoRA"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
     }
   ],
   "backlinks": [
     {
       "slug": "adaptive-behaviour",
       "label": "Adaptive Behaviour"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
     },
     {
       "slug": "agent-memory",
@@ -150,8 +362,20 @@
       "label": "Artificial Intelligence Research"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
     },
     {
       "slug": "learning-algorithm",

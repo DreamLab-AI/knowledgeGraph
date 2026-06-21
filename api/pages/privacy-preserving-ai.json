@@ -175,6 +175,10 @@
       "label": "Open Generative AI tools"
     },
     {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
+    },
+    {
       "slug": "privacy-preserving",
       "label": "Privacy-Preserving"
     },

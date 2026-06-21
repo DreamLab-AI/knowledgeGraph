@@ -92,6 +92,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
       "slug": "storage-infrastructure",
       "label": "Storage Infrastructure"
     }

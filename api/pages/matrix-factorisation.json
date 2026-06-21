@@ -41,6 +41,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
       "slug": "hyper-personalisation",
       "label": "Hyper personalisation"
     },

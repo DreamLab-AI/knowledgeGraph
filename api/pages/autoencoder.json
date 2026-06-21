@@ -145,6 +145,10 @@
       "label": "anomaly detection"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
       "slug": "deepfakes-and-fraudulent-content",
       "label": "Deepfakes and fraudulent content"
     },

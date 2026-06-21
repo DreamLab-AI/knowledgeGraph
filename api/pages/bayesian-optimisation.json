@@ -388,6 +388,10 @@
       "label": "Bayesian Decision Theory"
     },
     {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"
     },

@@ -72,6 +72,10 @@
       "label": "AI Talent"
     },
     {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
+    },
+    {
       "slug": "virtual-training",
       "label": "Virtual Training"
     }

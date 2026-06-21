@@ -592,6 +592,10 @@
     {
       "slug": "ai-game-agent",
       "label": "AI Game Agent"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
     }
   ]
 }

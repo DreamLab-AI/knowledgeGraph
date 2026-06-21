@@ -85,6 +85,10 @@
   ],
   "backlinks": [
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
       "slug": "rgb-and-client-side-validation",
       "label": "RGB and Client Side Validation"
     }

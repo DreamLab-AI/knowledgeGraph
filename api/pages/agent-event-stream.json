@@ -197,6 +197,18 @@
       "label": "Adapter Slot"
     },
     {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
+    },
+    {
       "slug": "vision-claw-agentic-container",
       "label": "VisionClaw Agentic Container"
     }

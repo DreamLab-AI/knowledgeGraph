@@ -104,6 +104,10 @@
       "label": "Agent-Based Models"
     },
     {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
       "slug": "time-series-forecasting",
       "label": "Time Series Forecasting"
     }

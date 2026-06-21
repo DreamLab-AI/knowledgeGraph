@@ -183,6 +183,10 @@
       "label": "Computer Science"
     },
     {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     },
@@ -199,8 +203,20 @@
       "label": "GitHub"
     },
     {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
       "slug": "image-generation",
       "label": "Image Generation"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
     },
     {
       "slug": "product-design",

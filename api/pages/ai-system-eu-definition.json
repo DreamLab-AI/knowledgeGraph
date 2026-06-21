@@ -78,6 +78,10 @@
     {
       "slug": "ai-system",
       "label": "AI System"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
     }
   ]
 }

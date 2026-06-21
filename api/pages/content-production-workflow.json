@@ -130,6 +130,14 @@
   ],
   "backlinks": [
     {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
+    },
+    {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    },
+    {
       "slug": "immersive-experience-pipeline",
       "label": "Immersive Experience Pipeline"
     }

@@ -170,6 +170,10 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "feature-attribution",
       "label": "Feature Attribution"
     },

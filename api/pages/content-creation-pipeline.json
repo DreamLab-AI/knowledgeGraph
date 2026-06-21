@@ -128,6 +128,14 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
+      "slug": "comfy-ui-manager",
+      "label": "comfyui manager"
+    },
+    {
       "slug": "digital-asset-workflow",
       "label": "Digital Asset Workflow"
     },

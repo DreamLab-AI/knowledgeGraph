@@ -172,6 +172,10 @@
       "label": "Classical Planning"
     },
     {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
       "slug": "imitation-learning",
       "label": "Imitation Learning"
     },

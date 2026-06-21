@@ -221,6 +221,14 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
       "slug": "human-oversight",
       "label": "Human Oversight"
     },

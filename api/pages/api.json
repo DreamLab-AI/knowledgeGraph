@@ -141,8 +141,20 @@
       "label": "AI Agent"
     },
     {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
+    },
+    {
       "slug": "comfy-ui-client",
       "label": "ComfyUI Client"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
     },
     {
       "slug": "http",

@@ -63,6 +63,10 @@
       "label": "Automatic1111"
     },
     {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
+    },
+    {
       "slug": "fooocus",
       "label": "Fooocus"
     },

@@ -156,6 +156,10 @@
       "label": "Automatic1111"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

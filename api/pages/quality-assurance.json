@@ -177,6 +177,10 @@
       "label": "Collision Detection"
     },
     {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
       "slug": "data-pipeline",
       "label": "Data Pipeline"
     },

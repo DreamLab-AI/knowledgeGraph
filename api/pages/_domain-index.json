@@ -16654,11 +16654,6 @@
       "qualityScore": 0.35
     },
     {
-      "slug": "auto-gpt",
-      "title": "AutoGPT",
-      "qualityScore": 0.6
-    },
-    {
       "slug": "auto-gen",
       "title": "AutoGen",
       "qualityScore": 0.87
@@ -16921,7 +16916,7 @@
     {
       "slug": "classifier-free-guidance",
       "title": "Classifier-Free Guidance",
-      "qualityScore": 0.74
+      "qualityScore": 0.9
     },
     {
       "slug": "clinical-decision-support",
@@ -16931,7 +16926,7 @@
     {
       "slug": "closed-world-assumption",
       "title": "Closed World Assumption",
-      "qualityScore": 0.62
+      "qualityScore": 0.92
     },
     {
       "slug": "co-training",
@@ -16941,7 +16936,7 @@
     {
       "slug": "code-generation",
       "title": "Code Generation",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "cognitive-ai",
@@ -16951,7 +16946,7 @@
     {
       "slug": "cognitive-architecture",
       "title": "Cognitive Architecture",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "cognitive-automation-revolution",
@@ -16961,7 +16956,7 @@
     {
       "slug": "cognitive-science",
       "title": "Cognitive Science",
-      "qualityScore": 0.74
+      "qualityScore": 0.91
     },
     {
       "slug": "collective-intelligence-system",
@@ -16976,12 +16971,12 @@
     {
       "slug": "combinatorial-optimisation",
       "title": "Combinatorial Optimisation",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "comfy-ui",
       "title": "Comfy Ui",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "comfy-ui-client",
@@ -16991,7 +16986,7 @@
     {
       "slug": "comfy-ui-manager",
       "title": "ComfyUI Manager",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "comfy-ui-workflows",
@@ -17001,22 +16996,22 @@
     {
       "slug": "common-crawl",
       "title": "Common Crawl",
-      "qualityScore": 0.6
+      "qualityScore": 0.9
     },
     {
       "slug": "commonsense-reasoning",
       "title": "Commonsense Reasoning",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "community-governance-model",
       "title": "Community Governance Model",
-      "qualityScore": 0.35
+      "qualityScore": 0.9
     },
     {
       "slug": "competency-based-education",
       "title": "Competency Based Education",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "competition-in-ai",
@@ -17031,17 +17026,17 @@
     {
       "slug": "complex-adaptive-systems",
       "title": "Complex Adaptive Systems",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "compliance-audit-trail",
       "title": "Compliance Audit Trail",
-      "qualityScore": 0.35
+      "qualityScore": 0.9
     },
     {
       "slug": "component",
       "title": "Component",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "composite-ai",
@@ -17051,12 +17046,12 @@
     {
       "slug": "computability-theory",
       "title": "Computability Theory",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "computational-complexity-theory",
       "title": "Computational Complexity Theory",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "computational-component",
@@ -17066,7 +17061,7 @@
     {
       "slug": "computational-modelling",
       "title": "Computational Modelling",
-      "qualityScore": 0.7
+      "qualityScore": 0.9
     },
     {
       "slug": "computational-neuroscience",
@@ -17111,7 +17106,7 @@
     {
       "slug": "concept-drift",
       "title": "Concept Drift",
-      "qualityScore": 0.7
+      "qualityScore": 0.9
     },
     {
       "slug": "conditional-random-field",
@@ -17121,7 +17116,7 @@
     {
       "slug": "configuration-management",
       "title": "Configuration Management",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "connectionism",
@@ -17146,12 +17141,12 @@
     {
       "slug": "constraint-based-design",
       "title": "Constraint Based Design",
-      "qualityScore": 0.75
+      "qualityScore": 0.9
     },
     {
       "slug": "constraint-satisfaction",
       "title": "Constraint Satisfaction",
-      "qualityScore": 0.74
+      "qualityScore": 0.9
     },
     {
       "slug": "constraint",
@@ -17161,7 +17156,7 @@
     {
       "slug": "content-moderation",
       "title": "Content Moderation",
-      "qualityScore": 0.35
+      "qualityScore": 0.9
     },
     {
       "slug": "context-engineering",
@@ -17181,12 +17176,12 @@
     {
       "slug": "continuous-batching",
       "title": "Continuous Batching",
-      "qualityScore": 0.62
+      "qualityScore": 0.91
     },
     {
       "slug": "continuous-training",
       "title": "Continuous Training",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "contract-net-protocol",
@@ -17206,7 +17201,7 @@
     {
       "slug": "control-net",
       "title": "ControlNet",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "convergence",
@@ -20824,6 +20819,11 @@
       "slug": "agent-communication-language",
       "title": "Agent Communication Language",
       "qualityScore": 0.62
+    },
+    {
+      "slug": "agent-execution-sandboxes",
+      "title": "Agent Execution Sandboxes",
+      "qualityScore": 0.9
     },
     {
       "slug": "alerting",
@@ -26985,9 +26985,29 @@
       "qualityScore": 0.91
     },
     {
+      "slug": "agent-development-sdks",
+      "title": "Agent Development SDKs",
+      "qualityScore": 0.9
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "title": "Agent Evaluation Benchmarks",
+      "qualityScore": 0.9
+    },
+    {
+      "slug": "agent-harness",
+      "title": "Agent Harness",
+      "qualityScore": 0.91
+    },
+    {
       "slug": "agent-layer",
       "title": "Agent Layer",
       "qualityScore": 0.6
+    },
+    {
+      "slug": "agent-memory-layers",
+      "title": "Agent Memory Layers",
+      "qualityScore": 0.0
     },
     {
       "slug": "agent-orchestrator",
@@ -27267,62 +27287,62 @@
     {
       "slug": "code-former",
       "title": "CodeFormer",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "cognitive-psychology",
       "title": "Cognitive Psychology",
-      "qualityScore": 0.6
+      "qualityScore": 0.88
     },
     {
       "slug": "cohere",
       "title": "Cohere",
-      "qualityScore": 0.6
+      "qualityScore": 0.91
     },
     {
       "slug": "collaborative-filtering",
       "title": "Collaborative Filtering",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "comfy-ui-api-specification",
       "title": "ComfyUI API Specification",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "common-sense-reasoning",
       "title": "Common Sense Reasoning",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "computational-biology",
       "title": "Computational Biology",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "computational-creativity",
       "title": "Computational Creativity",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "computational-intelligence",
       "title": "Computational Intelligence",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "computational-photography",
       "title": "Computational Photography",
-      "qualityScore": 0.6
+      "qualityScore": 0.0
     },
     {
       "slug": "concept-art",
       "title": "Concept Art",
-      "qualityScore": 0.72
+      "qualityScore": 0.0
     },
     {
       "slug": "conformal-prediction",
       "title": "Conformal Prediction",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "constitutional-ai-language-model-family",
@@ -27332,27 +27352,27 @@
     {
       "slug": "constraint-solver",
       "title": "Constraint Solver",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "container",
       "title": "Container",
-      "qualityScore": 0.62
+      "qualityScore": 0.0
     },
     {
       "slug": "content-creation",
       "title": "Content Creation",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "content-discovery",
       "title": "Content Discovery",
-      "qualityScore": 0.8
+      "qualityScore": 0.9
     },
     {
       "slug": "content-generation",
       "title": "Content Generation",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "context-management",
@@ -27362,7 +27382,7 @@
     {
       "slug": "control-net-conditioning",
       "title": "ControlNet Conditioning",
-      "qualityScore": 0.72
+      "qualityScore": 0.9
     },
     {
       "slug": "cooperative-game-theory",
@@ -27620,6 +27640,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "external-ai-harness",
+      "title": "External AI Harness",
+      "qualityScore": 0.9
+    },
+    {
       "slug": "fid-benchmark-protocol",
       "title": "FID Benchmark Protocol",
       "qualityScore": 0.72
@@ -27825,6 +27850,11 @@
       "qualityScore": 0.74
     },
     {
+      "slug": "harness-configuration-packs",
+      "title": "Harness Configuration Packs",
+      "qualityScore": 0.9
+    },
+    {
       "slug": "healthcare",
       "title": "Healthcare",
       "qualityScore": 0.62
@@ -27873,6 +27903,11 @@
       "slug": "iclr",
       "title": "ICLR",
       "qualityScore": 0.75
+    },
+    {
+      "slug": "ide-coding-agents",
+      "title": "IDE Coding Agents",
+      "qualityScore": 0.9
     },
     {
       "slug": "ip-adapter",
@@ -28000,6 +28035,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "internal-ai-harness",
+      "title": "Internal AI Harness",
+      "qualityScore": 0.9
+    },
+    {
       "slug": "internet-of-agents",
       "title": "Internet of Agents",
       "qualityScore": 0.72
@@ -28063,6 +28103,11 @@
       "slug": "llm-application-framework",
       "title": "LLM Application Framework",
       "qualityScore": 0.6
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "title": "LLM Application Frameworks",
+      "qualityScore": 0.9
     },
     {
       "slug": "llm-orchestration",
@@ -28305,6 +28350,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "multi-agent-orchestration-frameworks",
+      "title": "Multi-Agent Orchestration Frameworks",
+      "qualityScore": 0.9
+    },
+    {
       "slug": "multi-agent-reinforcement-learning",
       "title": "Multi-Agent Reinforcement Learning",
       "qualityScore": 0.62
@@ -28540,6 +28590,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "personal-agent-runtimes",
+      "title": "Personal Agent Runtimes",
+      "qualityScore": 0.9
+    },
+    {
       "slug": "personal-assistance",
       "title": "Personal Assistance",
       "qualityScore": 0.72
@@ -28623,6 +28678,11 @@
       "slug": "process-mining",
       "title": "Process Mining",
       "qualityScore": 0.62
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "title": "Progressive Disclosure Harnesses",
+      "qualityScore": 0.0
     },
     {
       "slug": "prompt-template",
@@ -29008,6 +29068,11 @@
       "slug": "temporal-motion-diffusion-adapter",
       "title": "Temporal Motion Diffusion Adapter",
       "qualityScore": 0.8
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "title": "Terminal Coding Agents",
+      "qualityScore": 0.91
     },
     {
       "slug": "text-embeddings",
@@ -33687,12 +33752,12 @@
     {
       "slug": "classification",
       "title": "Classification",
-      "qualityScore": 0.75
+      "qualityScore": 0.9
     },
     {
       "slug": "clustering",
       "title": "Clustering",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "collective-communication",
@@ -33702,7 +33767,7 @@
     {
       "slug": "community-detection",
       "title": "Community Detection",
-      "qualityScore": 0.74
+      "qualityScore": 0.9
     },
     {
       "slug": "computation-graph",
@@ -33717,7 +33782,7 @@
     {
       "slug": "computational-linguistics",
       "title": "Computational Linguistics",
-      "qualityScore": 0.62
+      "qualityScore": 0.9
     },
     {
       "slug": "confusion-matrix",
@@ -33727,7 +33792,7 @@
     {
       "slug": "continual-learning",
       "title": "Continual Learning",
-      "qualityScore": 0.74
+      "qualityScore": 0.91
     },
     {
       "slug": "contrastive-learning",

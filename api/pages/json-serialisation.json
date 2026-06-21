@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
       "slug": "comfy-ui-workflows",
       "label": "ComfyUI Workflows"
     },

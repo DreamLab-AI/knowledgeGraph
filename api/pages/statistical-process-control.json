@@ -107,5 +107,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    }
+  ]
 }

@@ -294,6 +294,24 @@ public:: true
         ObjectSomeValuesFrom(ai:reducesTo ai:ConstraintSatisfaction))
       SubClassOf(ai:ClassicalPlanning
         ObjectSomeValuesFrom(ai:reducesTo ai:BooleanSatisfiability))
+      SubClassOf(ai:ClassicalPlanning
+        ObjectSomeValuesFrom(ai:reducesTo ai:HeuristicSearch))
+  ## Contrast Relationships
+      SubClassOf(ai:ClassicalPlanning
+        ObjectAllValuesFrom(ai:contrastsWith ai:ReinforcementLearning))
+      SubClassOf(ai:ClassicalPlanning
+        ObjectAllValuesFrom(ai:contrastsWith ai:MarkovDecisionProcess))
+      SubClassOf(ai:ClassicalPlanning
+        ObjectAllValuesFrom(ai:contrastsWith ai:ReactivePlanning))
+  ## Extension Relationships
+      SubClassOf(ai:ClassicalPlanning
+        ObjectSomeValuesFrom(ai:extendedBy ai:TemporalPlanning))
+      SubClassOf(ai:ClassicalPlanning
+        ObjectSomeValuesFrom(ai:extendedBy ai:ProbabilisticPlanning))
+      SubClassOf(ai:ClassicalPlanning
+        ObjectSomeValuesFrom(ai:extendedBy ai:NumericPlanning))
+      SubClassOf(ai:ClassicalPlanning
+        ObjectSomeValuesFrom(ai:extendedBy ai:ContingentPlanning))
 
   ## About
     Classical planning occupies a central position in symbolic [[Artificial Intelligence]], formalising the deliberation problem — "what sequence of actions achieves my goal?" — as a combinatorial search over discrete world states. Its intellectual roots trace to the General Problem Solver of Newell and Simon (1957) and the means-ends analysis framework, but the field crystallised with Fikes and Nilsson's [[STRIPS]] system (1971), which introduced the propositional state representation and the precondition/add-list/delete-list operator model that remains the conceptual core of modern planning formalisms. The closed-world assumption inherent in STRIPS — anything not stated is false — dramatically simplifies the state description but also constrains the expressiveness of the model. The 1980s saw extensions including ADL (Action Description Language, Pednault 1989), which added conditional effects and universal quantification, and the emergence of partial-order planning (TWEAK, Chapman 1987; SNLP, McAllester and Rosenblitt 1991) that reasoned directly in plan space rather than state space.
@@ -557,6 +575,136 @@ public:: true
     **Domain-independent heuristic**: a heuristic function automatically constructed from the PDDL problem structure without requiring domain-specific human engineering; distinguishes modern classical planners from the hand-coded heuristics of early AI systems; key examples are h^FF, h^max, h^add, h^LM-cut, merge-and-shrink abstractions, and pattern database (PDB) heuristics.
 
     **International Planning Competition (IPC)**: the biennial benchmark competition for classical planning systems, providing standardised PDDL domains and problems; held since 1998 (AIPS 1998); tracks include satisficing, agile (speed-weighted), and cost-optimal; results drive the field's algorithmic progress; the IPC learning track (since 2023) evaluates systems that learn from provided training plans.
+
+  ## Relationship to Adjacent Paradigms
+
+    Classical planning does not operate in isolation — it is one node in a rich network of adjacent AI paradigms, each addressing different subsets of the general deliberation problem:
+
+    **Classical Planning vs. Reinforcement Learning**
+    [[Reinforcement Learning]] learns a policy through repeated trial-and-error interaction with an environment, accumulating reward signals that shape action selection without requiring an explicit world model. Classical planning, by contrast, reasons from an explicit model (PDDL domain) and computes a plan analytically without any environmental interaction. Reinforcement learning handles stochastic, partially observable, and high-dimensional continuous environments where classical planning fails; classical planning produces provably valid, human-interpretable action sequences in fully modelled discrete domains where reinforcement learning is sample-inefficient. The two paradigms are increasingly combined: model-based [[Reinforcement Learning]] uses learned world models as planning substrates, and [[Deep Reinforcement Learning]] agents trained with classical planning supervision exhibit faster convergence on structured tasks.
+
+    **Classical Planning vs. Markov Decision Processes**
+    The [[Markov Decision Process]] (MDP) framework extends classical planning to handle stochastic action outcomes: each action in state s leads to successor states s' with probability P(s' | s, a). MDPs produce optimal policies (mappings from states to actions) via value iteration or policy iteration, but the state and action spaces must be discretised or the solution is a continuous-space approximate dynamic program. Classical planning is the special case of an MDP where all transition probabilities are 0 or 1 (deterministic), the reward is 1 for goal states and 0 elsewhere, and plan existence implies a shortest-path solution. The distinctions drive different algorithmic families: classical planners operate on symbolic PDDL models, while MDP solvers operate on probabilistic state transition matrices.
+
+    **Classical Planning vs. Hierarchical Task Networks**
+    [[Hierarchical Task Network]] (HTN) planning extends classical planning by adding a task decomposition structure: compound tasks are decomposed into simpler sub-tasks via methods, guiding the search toward plan structures matching domain conventions. HTN planning with the same STRIPS-style primitive operators but richer compound task hierarchy enables dramatically more efficient search on robot task domains but introduces a specification burden (defining the task hierarchy) absent from classical goal-directed planning. HTN planners (SHOP2, HDDL-based systems) can encode domain knowledge about plan structure that classical planners must discover through search, making HTN preferred for robot mission planning where task hierarchies are natural.
+
+    **Classical Planning and [[A Star Algorithm]]**
+    [[A Star Algorithm]] is the theoretical foundation of optimal forward state-space planning. A classical planner using A* with an admissible heuristic is guaranteed to find the cost-optimal plan: the general A* framework from Hart, Nilsson, and Raphael (1968) directly applies to the planning state space where the start node is the initial state, goal nodes are states satisfying G, edges are ground operators, and the heuristic h is computed by delete-relaxation, pattern databases, or merge-and-shrink abstractions. Fast Downward's optimal configurations (A* + h^LM-cut, A* + merge-and-shrink) are specialisations of A* with domain-automatically-derived heuristics.
+
+    **Classical Planning and [[SAT Solving]]**
+    The planning-as-satisfiability approach (Kautz and Selman 1992) encodes plan existence for t time steps as a propositional formula and calls a SAT solver. Each ground operator op, time step i, and state atom p yields Boolean variables; the formula encodes operator preconditions, effects, frame axioms (unchanged atoms persist), and the initial state/goal conditions. For t = 1, 2, 3, ... iteratively doubling: if the SAT formula is satisfiable, extract the plan from the satisfying assignment. Planning-as-SAT benefits from decades of SAT solver engineering (CDCL solvers, clause learning, unit propagation) and scales well to many benchmark domains; it is the approach of choice when plan length is known or bounded, and is also used for plan verification.
+
+    **Classical Planning and [[Knowledge Representation]]**
+    [[Knowledge Representation]] provides the conceptual foundations for classical planning's state and action model: propositional and first-order logic, the closed-world assumption, and the distinction between domain-level and instance-level knowledge. PDDL is a specialised knowledge representation language optimised for planning; [[Ontology]] engineering provides complementary tools for richer concept taxonomies and role hierarchies. Planning in ontological knowledge bases — planning with Description Logic background knowledge — is an active research area connecting the two paradigms for autonomous agent deployment on semantic web knowledge sources.
+
+  ## Practical Planner Systems (2026 Reference)
+
+    The following production-grade and research-grade planner systems are the primary implementations encountered in research and deployment contexts as of 2026:
+
+    **Fast Downward** (Helmert 2006; University of Basel/Saarland): The dominant general-purpose classical planning framework. Implements SAS+ translation, supports A*, greedy best-first search, lazy evaluation strategies, and all major heuristics (h^FF via translate/preprocess/search pipeline, h^LM-cut, merge-and-shrink, pattern databases, potential heuristics). The IPC portfolio configurations (e.g., LAMA-2011 config) are the standard satisficing planner baselines. Source: https://www.fast-downward.org/
+
+    **LAMA** (Richter and Westphal 2010): A Fast Downward configuration using iterative widening with landmark-count and FF heuristics; winner of multiple IPC satisficing tracks; produces successively shorter plans over time (anytime behaviour). Integrated into Fast Downward as a built-in search configuration.
+
+    **FF** (Hoffmann and Nebel 2001): The Fast-Forward planner that introduced h^FF and enforced hill-climbing (EHC) with GBFS fallback. Historically the most influential planner for satisficing planning; still used as a lightweight baseline. Available as a standalone binary.
+
+    **Madagascar** (Rintanen): Planning-as-SAT planner using parallel SAT encoding; competitive on domains with short plans; reference implementation for satisfiability-based planning.
+
+    **OPTIC** (Benton et al.): Temporal and numeric planning; extends COLIN for over-subscription planning with preferences; used in operations research applications.
+
+    **PyPDDLEngine** (2026): Open-source Python PDDL simulation engine exposing planning operations as LLM tool calls via Model Context Protocol (MCP); enables LLM agents to perform step-wise planning with formal state tracking; arXiv:2603.06064.
+
+    **ROSPlan** (Cashmore et al. 2015): ROS-integrated planning framework wrapping Fast Downward for robot mission planning; handles plan dispatch, monitoring, and replanning in the Robot Operating System; used at KCL and affiliated robotics groups.
+
+    **PDDL4J** (Java library): PDDL parsing and planning support for Java applications; used in business process management and industrial planning integrations.
+
+  ## Deep Technical Analysis: Heuristic Families in Classical Planning
+
+    The quality of domain-independent heuristics has been the decisive factor in classical planner performance since the FF breakthrough of 2001. This section provides a technically precise account of the main heuristic families, their derivation, and their practical trade-offs.
+
+    **Delete-Relaxation Heuristics**
+
+    The delete-relaxation abstraction removes all delete effects from operators, producing a relaxed problem P^+ that is always easier to solve than the original P. Because P^+ never has negative interactions between actions (no action makes another action's preconditions false), the relaxed problem can be solved in polynomial time using dynamic programming on the planning graph. Three heuristics are derived:
+
+    - h^max(s) = maximum over all goal facts g of the minimum cost to achieve g in P^+ from s; admissible (never overestimates true cost) but poorly informed because it ignores subgoal interactions
+    - h^add(s) = sum over all goal facts g of the minimum cost to achieve g in P^+ from s; inadmissible but more informative; used as a priority metric within heuristic search
+    - h^FF(s) = length of the relaxed plan extracted by backward chaining from the goal in the planning graph of P^+; inadmissible but empirically informative; the heuristic underlying the FF planner and LAMA
+
+    The planning graph for computing delete-relaxation heuristics is a layered structure alternating proposition layers P_i and action layers A_i. Proposition P_i contains all facts reachable by executing some subset of actions in A_0 ∪ ... ∪ A_{i-1} in the relaxed problem. The first layer P_0 is the current state. An action a is in A_i if all its preconditions are in P_{i-1}. The graph expands until the goal is contained in some P_k (planning succeeds) or no new propositions are added (goal unachievable in relaxed problem, meaning the original problem may be unsolvable). Computing the graph takes O(n × m) time where n is the number of propositions and m is the number of operators.
+
+    **Landmark Heuristics**
+
+    A landmark is a fact that must be true at some point in every solution to a given planning problem. Landmark extraction algorithms (Hoffmann et al. 2004; Richter and Westphal 2010) identify landmarks by analysing the problem structure: if removing a fact f from the planning graph makes the goal unreachable, then f is a landmark. Landmarks are ordered by necessary orderings (L1 must be achieved before L2 in every plan) and can be organised into a landmark graph. The landmark count heuristic h^lm(s) = number of required landmarks not yet achieved provides an admissible lower bound on remaining plan cost. LAMA uses both the landmark-count heuristic and h^FF in a combined priority queue, outperforming either heuristic alone on most IPC domains.
+
+    **Merge-and-Shrink Abstractions**
+
+    Merge-and-shrink (Helmert et al. 2007, 2014) is a framework for constructing admissible heuristics by computing perfect heuristics (h*) on abstract state spaces. The abstraction decomposes the planning problem into multiple factor transition systems (one per state variable in SAS+), computes each factor's h* exactly, and merges factors progressively — merging two factors means computing the product transition system and optionally shrinking it to keep it computationally tractable. The final merged transition system provides an admissible heuristic: h^MS(s) = h*(abstract(s)). Merge-and-shrink heuristics are among the most powerful admissible heuristics for optimal planning but require careful configuration of the merge strategy and shrinking strategy (bisimulation, random shrinking, etc.).
+
+    **Pattern Database (PDB) Heuristics**
+
+    Pattern databases (Culberson and Schaeffer 1998; Edelkamp 2001 for planning) project the full state space onto a subset of state variables (the pattern) and precompute the exact h* for every abstract state in the pattern space. The h^PDB(s) value is the precomputed cost of the projected state; summing over multiple disjoint patterns gives an admissible additive PDB heuristic. PDBs are particularly effective for planning domains with many independent subgoals. The canonical ensemble (CEGAR-derived PDB selection) automates pattern selection via counterexample-guided abstraction refinement.
+
+    **Potential Heuristics**
+
+    Potential heuristics (Pommerening et al. 2015) define h(s) = Σ_{f ∈ s} w_f as a weighted sum of state features, where the weights w_f are learned by solving a linear program to maximise the average heuristic value across sampled states while maintaining admissibility. Potential heuristics are efficiently computed (evaluating them requires only summing feature weights) and achieve admissibility while being substantially more informed than simple delete-relaxation heuristics on several domains.
+
+  ## The LLM-Classical Planning Interface in Detail
+
+    The integration of [[Large Language Models]] with classical planning infrastructure has matured rapidly from proof-of-concept (LLM+P, 2023) to production-relevant hybrid systems (PyPDDLEngine, 2026). Understanding the interface points clarifies where LLMs add value and where classical planning infrastructure remains essential.
+
+    **PDDL Domain Generation from Natural Language**
+
+    LLMs are used to translate informal task domain descriptions into PDDL domain files. The process involves prompting the LLM with a description of the domain (e.g., "a logistics domain with trucks and trains transporting packages between cities"), examples of similar PDDL domains, and a request to generate a syntactically correct PDDL domain file. Research (LLMs as Planning Formalizers survey, arXiv:2503.18971) shows that frontier LLMs (GPT-4o, Claude 3, Gemini 1.5) can generate valid PDDL for standard IPC-like domains in approximately 80% of cases when given good prompts, dropping to 40–60% for novel or complex domains. The generated domains are verified using PDDL parsers (PDDL4J, pyperplan) and validated by running a planner on test instances; errors are fed back to the LLM for iterative correction. This approach reduces expert PDDL authoring time from hours to minutes for standard domains, though novel domains still require expert review.
+
+    **LLM-Generated Heuristic Functions**
+
+    The most surprising result in the 2024–2025 planning literature is that LLMs can generate Python heuristic functions — callable functions taking a state as input and returning a numeric estimate — that outperform established Fast Downward configurations on several IPC domains (Correa et al. 2025, arXiv:2503.18809). The pipeline prompts the LLM to generate n candidate heuristic functions for a given PDDL domain, evaluates each on a set of training instances using Fast Downward's LMcut-based timer comparison, selects the best-performing function, and deploys it as the planning heuristic. The generated heuristics exploit domain-specific structure (e.g., counting unsatisfied subgoals in Logistics, estimating Hamming distance in Gripper-like domains) in ways that generic domain-independent heuristics cannot. This approach suggests a future where LLM-generated domain analysis produces heuristics that retain classical planning's formal guarantees (soundness, completeness) while achieving the efficiency of domain-specific expert heuristics.
+
+    **Agentic Step-Wise Planning**
+
+    PyPDDLEngine (2026, arXiv:2603.06064) exposes PDDL simulation as a set of Model Context Protocol tool calls: apply_action(action_name, args), get_applicable_actions(), get_state(), check_goal(). An LLM acting as a planning agent calls these tools to step through the planning process: it examines the current state, selects an applicable action based on its reasoning about goal proximity, applies it, and iterates. This approach has several advantages over pure LLM planning: formal state tracking prevents hallucinated state transitions, applicable action filtering prevents illegal action choices, and goal checking provides reliable termination detection. The LLM's role is that of a search policy — deciding which action to try at each step — rather than that of a memory-intensive plan generator. On standard IPC domains, this hybrid achieves substantially higher coverage than prompting LLMs to generate complete plans in a single call, and the complete interaction trace provides a plan explanation at each step.
+
+  ## Connections to the Broader AI-GroundedDomain Ontology
+
+    Within the [[AI-GroundedDomain]] ontology in this knowledge graph, Classical Planning occupies a distinctive position at the convergence of symbolic AI and algorithmic search. Its relationships to other ontology nodes are not merely definitional but reflect deep theoretical connections:
+
+    The connection to [[A Star Algorithm]] is foundational: optimal classical planning with an admissible heuristic is exactly A* search on the state-space graph, and the theoretical properties of A* (optimality, completeness, efficiency) transfer directly to classical planning systems. The connection to [[State Space Search]] captures the implementation substrate: all forward-search planners traverse the state space graph, with different heuristics and search strategies selecting which nodes to expand. The connection to [[Knowledge Representation]] captures the encoding layer: PDDL is a specialised knowledge representation language, and the conceptual debt of classical planning to formal logic (first-order logic, closed-world assumption, definite clause grammars for action effects) is direct. The connection to [[Constraint Satisfaction]] captures an alternative solution paradigm: planning-as-CSP and planning-as-SAT compile the planning problem into constraint satisfaction instances, leveraging the advances of the constraint programming and satisfiability communities.
+
+    The contrasting relationship with [[Reinforcement Learning]] and [[Markov Decision Process]] is equally important: these paradigms handle the stochastic, partially observable settings where classical planning's determinism and full observability assumptions break down. Understanding classical planning requires understanding these limitations, as much of the post-2010 planning research has been motivated by bridging the gap — through probabilistic planning, contingent planning, and conformant planning — between the clean classical assumptions and the messy real-world deployment environments that autonomous systems face.
+
+  ## Extensions Beyond Classical Planning
+
+    The core classical model (deterministic, fully observable, single agent, instantaneous actions) is the starting point for a family of extended planning models, each relaxing one or more of the classical assumptions. Understanding these extensions clarifies the scope and limits of classical planning and positions it within the broader automated planning taxonomy.
+
+    **Probabilistic Planning / MDPs**
+    Probabilistic planning extends classical planning to stochastic action outcomes: each action may lead to one of several successor states with defined probabilities. The goal changes from a single goal state to a policy — a mapping from states to actions — that maximises expected reward or minimises expected cost. Stochastic planning is formalised as a [[Markov Decision Process]] (MDP) and solved by value iteration or policy iteration algorithms. The connection to classical planning is preserved when all transition probabilities are 0 or 1. Conformant planning — finding a single plan guaranteed to work despite action uncertainty — occupies a middle ground solvable by classical planning with belief states.
+
+    **Temporal Planning**
+    Temporal planning (PDDL 2.1 durative actions) extends classical planning to include time: actions have non-zero durations and can overlap in execution. The planner must compute a temporally valid schedule, not merely a sequence. PDDL 2.1 encodes temporal conditions (at start, over all, at end) and continuous numeric change (e.g., battery drains at rate r during a movement action). Temporal planners (OPTIC, POPF, COLIN from Edinburgh and KCL) produce parallel plans with makespan as the optimisation criterion, enabling scheduling applications in manufacturing and logistics that classical sequential planning cannot address.
+
+    **Numeric Planning**
+    Numeric planning (PDDL 2.1 numeric fluents) adds continuous or integer-valued state variables subject to arithmetic update by actions. Fuel levels, battery charge, cargo weights, and monetary budgets are naturally numeric. Numeric planning is UNDECIDABLE in general (since numeric fluents can encode Turing machine tape), but bounded planning (restricting the plan length) is decidable and practically tractable for realistic domains. Metric-FF and OPTIC are the main numeric planners; MetricFF extends h^FF to numeric preconditions using discretised relaxed planning.
+
+    **Partial Observability and Contingent Planning**
+    Contingent planning relaxes the full-observability assumption: the agent can make observations (from a defined observation model) but cannot directly observe the complete state. The planner generates a conditional plan — a policy tree where branches correspond to different observation outcomes — rather than a linear action sequence. Belief space planning (operating on distributions over states) and knowledge-based planning (operating on knowledge states) are the two principal frameworks. Complexity increases to EXPTIME-complete for full contingent planning, motivating approximation approaches for practical deployment.
+
+    **Multi-Agent Planning**
+    Multi-agent planning extends classical planning to settings with multiple cooperative or competitive agents. Centralized multi-agent planning treats the joint action space as a single planning problem, exploding in complexity exponentially with the number of agents. Decentralised planning (Dec-POMDPs) is NEXP-complete in general. For cooperative multi-robot systems, factored planning approaches that exploit the near-independence of agents' local tasks achieve practical scalability. PDDL+ and MA-PDDL extensions support multi-agent domains in the IPC framework; the 2023 IPC featured multi-agent planning tracks for the first time.
+
+    **Planning with Learning (the IPC Learning Track)**
+    The IPC Learning Track (established 2023) evaluates systems that learn from demonstrations or previous planning experience. Systems receive training plans for a subset of problem instances and must generalise to test instances. Approaches include learning heuristic functions from state-cost data, learning action model parameters from observation traces, learning control knowledge (macros, precondition rankings) from plans, and deep learning methods that predict action applicability from state features. The learning track bridges classical planning with machine learning and represents the future direction of the field — combining the formal guarantees of classical planning with the adaptability of learned components.
+
+  ## Classical Planning in Agentic AI Architectures (2025–2026)
+
+    The emergence of LLM-based agentic AI systems in 2023–2026 has created substantial commercial and research interest in classical planning as the formal backbone of reliable autonomous agents. Several architectural patterns have emerged:
+
+    **Plan-Then-Execute Architecture**: An LLM generates a PDDL problem specification from the user's natural language goal, a classical planner solves for a plan, and an execution module dispatches the plan's actions to tools or APIs. Verification at each step confirms that actions succeeded and that the plan remains valid. This architecture combines LLM natural language understanding with classical planning's formal soundness guarantee: every action in the plan is provably applicable given the preceding state, and the final state provably satisfies the goal as modelled.
+
+    **ReAct with PDDL Grounding**: The ReAct (Reason + Act) agent loop — alternating reasoning traces and tool calls — is extended with a PDDL state tracker that maintains a formal world state alongside the LLM's linguistic context. The state tracker validates LLM-proposed actions against the PDDL preconditions before execution, preventing the common failure mode of LLMs proposing contextually reasonable but formally invalid action sequences.
+
+    **Task Planning for Tool Orchestration**: In multi-tool LLM agents (systems with file system, web search, code execution, email, and calendar tools), classical task planning provides principled tool sequence selection. The PDDL domain encodes each tool as an action with typed parameters, preconditions (e.g., file_exists(path) must be true before read_file(path)), and effects. The planner produces a sequence of tool calls guaranteed to be valid given the modelled tool semantics. This architecture is deployed in enterprise automation platforms where audit trails and regulatory compliance require provably correct action sequencing.
+
+    **Neurosymbolic Planning Agents**: The most sophisticated current architectures combine neural perception (vision-language models for scene understanding), LLM reasoning (natural language goal interpretation), classical planning (symbolic task sequence generation), and robot execution (physical action dispatch). The PDDL domain is grounded by the perception module — propositions such as On(CupA, Table) are derived by vision inference — and updated after each action. The planner re-plans when the execution module reports unexpected state changes. This architecture enables domestic service robots, warehouse robots, and surgical assistants to operate reliably on complex multi-step tasks in dynamic environments.
 
 - ### Provenance
   - sources:: https://arxiv.org/abs/2503.18809, https://arxiv.org/abs/2507.23589, https://arxiv.org/abs/2603.06064, https://arxiv.org/abs/2304.11477, https://arxiv.org/abs/2511.09378, https://icaps-conference.org/competitions/, https://www.kcl.ac.uk/events/autonomous-service-robot-for-the-home, https://ipc2023-learning.github.io/

@@ -49,6 +49,10 @@
       "label": "AI Lifecycle"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
     }

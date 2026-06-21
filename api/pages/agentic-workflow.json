@@ -349,8 +349,16 @@
       "label": "Agent Communication Protocol"
     },
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
       "slug": "agent-identity",
       "label": "Agent Identity"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
     },
     {
       "slug": "agent-memory",
@@ -397,10 +405,6 @@
       "label": "Artificial Intelligence Core"
     },
     {
-      "slug": "auto-gpt",
-      "label": "AutoGPT"
-    },
-    {
       "slug": "auto-gen",
       "label": "AutoGen"
     },
@@ -417,8 +421,20 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
+    },
+    {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
     },
     {
       "slug": "lang-graph",
@@ -431,6 +447,10 @@
     {
       "slug": "open-ai-agents-sdk",
       "label": "OpenAI Agents SDK"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
     }
   ]
 }

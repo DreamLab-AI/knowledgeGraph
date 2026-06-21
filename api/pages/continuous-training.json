@@ -13,10 +13,27 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:model-training-pipeline",
+        "label": "Model Training Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:drift-detection",
+        "label": "Drift Detection"
+      },
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:feature-store",
@@ -25,6 +42,14 @@
       {
         "id": "urn:ngm:class:model-registry",
         "label": "Model Registry"
+      },
+      {
+        "id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      },
+      {
+        "id": "urn:ngm:class:labelling-pipeline",
+        "label": "Labelling Pipeline"
       }
     ],
     "enables": [
@@ -35,6 +60,10 @@
       {
         "id": "urn:ngm:class:model-serving",
         "label": "Model Serving"
+      },
+      {
+        "id": "urn:ngm:class:production-ml",
+        "label": "Production ML"
       }
     ],
     "dependsOn": [
@@ -45,10 +74,23 @@
       {
         "id": "urn:ngm:class:model-monitoring",
         "label": "Model Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
       }
     ],
     "implements": [],
-    "contrastsWith": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:batch-training",
+        "label": "Batch Training"
+      },
+      {
+        "id": "urn:ngm:class:offline-learning",
+        "label": "Offline Learning"
+      }
+    ],
     "bridgesTo": [],
     "uses": [
       {
@@ -58,12 +100,24 @@
       {
         "id": "urn:ngm:class:ci-cd-automation",
         "label": "CI-CD Automation"
+      },
+      {
+        "id": "urn:ngm:class:experiment-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:continuous-deployment",
         "label": "Continuous Deployment"
+      },
+      {
+        "id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
       }
     ],
     "standardizedBy": [],
@@ -73,8 +127,8 @@
         "label": "MLOps"
       },
       {
-        "id": "urn:ngm:class:model-training-pipeline",
-        "label": "Model Training Pipeline"
+        "id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
       }
     ],
     "relatedTo": [
@@ -83,11 +137,200 @@
         "label": "Continuous Integration"
       },
       {
-        "id": "urn:ngm:class:model-governance",
-        "label": "Model Governance"
+        "id": "urn:ngm:class:online-learning",
+        "label": "Online Learning"
+      },
+      {
+        "id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "mlops",
+      "label": "MLOps"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "data-drift",
+      "label": "Data Drift"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "model-monitoring",
+      "label": "Model Monitoring"
+    },
+    {
+      "slug": "model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "slug": "model-serving",
+      "label": "Model Serving"
+    },
+    {
+      "slug": "model-registry",
+      "label": "Model Registry"
+    },
+    {
+      "slug": "feature-store",
+      "label": "Feature Store"
+    },
+    {
+      "slug": "model-training-pipeline",
+      "label": "Model Training Pipeline"
+    },
+    {
+      "slug": "ci-cd-automation",
+      "label": "CI-CD Automation"
+    },
+    {
+      "slug": "continuous-deployment",
+      "label": "Continuous Deployment"
+    },
+    {
+      "slug": "continuous-integration",
+      "label": "Continuous Integration"
+    },
+    {
+      "slug": "model-governance",
+      "label": "Model Governance"
+    },
+    {
+      "slug": "experiment-tracking",
+      "label": "Experiment Tracking"
+    },
+    {
+      "slug": "data-pipeline",
+      "label": "Data Pipeline"
+    },
+    {
+      "slug": "data-versioning",
+      "label": "Data Versioning"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "kubeflow",
+      "label": "Kubeflow"
+    },
+    {
+      "slug": "mlflow",
+      "label": "MLflow"
+    },
+    {
+      "slug": "apache-airflow",
+      "label": "Apache Airflow"
+    },
+    {
+      "slug": "vertex-ai",
+      "label": "Vertex AI"
+    },
+    {
+      "slug": "sagemaker",
+      "label": "SageMaker"
+    },
+    {
+      "slug": "online-learning",
+      "label": "Online Learning"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "devops",
+      "label": "DevOps"
+    },
+    {
+      "slug": "kubernetes",
+      "label": "Kubernetes"
+    },
+    {
+      "slug": "shadow-mode-deployment",
+      "label": "Shadow Mode Deployment"
+    },
+    {
+      "slug": "canary-deployment",
+      "label": "Canary Deployment"
+    },
+    {
+      "slug": "a-b-testing",
+      "label": "A-B Testing"
+    },
+    {
+      "slug": "model-validation",
+      "label": "Model Validation"
+    },
+    {
+      "slug": "statistical-process-control",
+      "label": "Statistical Process Control"
+    },
+    {
+      "slug": "evidently-ai",
+      "label": "Evidently AI"
+    },
+    {
+      "slug": "seldon-core",
+      "label": "Seldon Core"
+    },
+    {
+      "slug": "ai-lifecycle",
+      "label": "AI Lifecycle"
+    },
+    {
+      "slug": "model-decay",
+      "label": "Model Decay"
+    },
+    {
+      "slug": "production-ml",
+      "label": "Production ML"
+    },
+    {
+      "slug": "feature-engineering",
+      "label": "Feature Engineering"
+    },
+    {
+      "slug": "labelling-pipeline",
+      "label": "Labelling Pipeline"
+    },
+    {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
+      "slug": "model-compression",
+      "label": "Model Compression"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "gradient-descent",
+      "label": "Gradient Descent"
+    }
+  ],
   "backlinks": []
 }

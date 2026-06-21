@@ -39,6 +39,14 @@
     {
       "slug": "applied-mathematics",
       "label": "Applied Mathematics"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
     }
   ]
 }

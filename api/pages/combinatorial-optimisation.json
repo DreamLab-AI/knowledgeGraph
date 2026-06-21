@@ -13,10 +13,31 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:branch-and-bound",
+        "label": "Branch and Bound"
+      },
+      {
+        "id": "urn:ngm:class:approximation-algorithm",
+        "label": "Approximation Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:metaheuristic",
+        "label": "Metaheuristic"
+      },
+      {
+        "id": "urn:ngm:class:local-search",
+        "label": "Local Search"
+      },
+      {
+        "id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:optimisation",
@@ -31,6 +52,18 @@
       {
         "id": "urn:ngm:class:logistics",
         "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain",
+        "label": "Supply Chain"
+      },
+      {
+        "id": "urn:ngm:class:network-design",
+        "label": "Network Design"
       }
     ],
     "dependsOn": [
@@ -41,6 +74,10 @@
       {
         "id": "urn:ngm:class:algorithm",
         "label": "Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:computational-complexity",
+        "label": "Computational Complexity"
       }
     ],
     "implements": [],
@@ -48,6 +85,10 @@
       {
         "id": "urn:ngm:class:convex-optimisation",
         "label": "Convex Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-optimisation",
+        "label": "Bayesian Optimisation"
       }
     ],
     "bridgesTo": [],
@@ -63,12 +104,32 @@
       {
         "id": "urn:ngm:class:genetic-algorithm",
         "label": "Genetic Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:simulated-annealing",
+        "label": "Simulated Annealing"
+      },
+      {
+        "id": "urn:ngm:class:tabu-search",
+        "label": "Tabu Search"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:decision-making",
         "label": "Decision Making"
+      },
+      {
+        "id": "urn:ngm:class:hyperparameter-optimisation",
+        "label": "Hyperparameter Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:neural-architecture-search",
+        "label": "Neural Architecture Search"
       }
     ],
     "standardizedBy": [],
@@ -80,16 +141,193 @@
       {
         "id": "urn:ngm:class:operations-research",
         "label": "Operations Research"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-optimisation",
+        "label": "Mathematical Optimisation"
       }
     ],
     "relatedTo": [
       {
         "id": "urn:ngm:class:mathematical-optimisation",
         "label": "Mathematical Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:multi-objective-optimisation",
+        "label": "Multi Objective Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "mathematical-optimisation",
+      "label": "Mathematical Optimisation"
+    },
+    {
+      "slug": "operations-research",
+      "label": "Operations Research"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "algorithm",
+      "label": "Algorithm"
+    },
+    {
+      "slug": "integer-programming",
+      "label": "Integer Programming"
+    },
+    {
+      "slug": "linear-programming",
+      "label": "Linear Programming"
+    },
+    {
+      "slug": "genetic-algorithm",
+      "label": "Genetic Algorithm"
+    },
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "logistics",
+      "label": "Logistics"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "np-hardness",
+      "label": "NP-Hardness"
+    },
+    {
+      "slug": "computational-complexity",
+      "label": "Computational Complexity"
+    },
+    {
+      "slug": "branch-and-bound",
+      "label": "Branch and Bound"
+    },
+    {
+      "slug": "simulated-annealing",
+      "label": "Simulated Annealing"
+    },
+    {
+      "slug": "local-search",
+      "label": "Local Search"
+    },
+    {
+      "slug": "approximation-algorithm",
+      "label": "Approximation Algorithm"
+    },
+    {
+      "slug": "travelling-salesman-problem",
+      "label": "Travelling Salesman Problem"
+    },
+    {
+      "slug": "vehicle-routing-problem",
+      "label": "Vehicle Routing Problem"
+    },
+    {
+      "slug": "knapsack-problem",
+      "label": "Knapsack Problem"
+    },
+    {
+      "slug": "graph-colouring",
+      "label": "Graph Colouring"
+    },
+    {
+      "slug": "scheduling",
+      "label": "Scheduling"
+    },
+    {
+      "slug": "network-design",
+      "label": "Network Design"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "dynamic-programming",
+      "label": "Dynamic Programming"
+    },
+    {
+      "slug": "heuristic-search",
+      "label": "Heuristic Search"
+    },
+    {
+      "slug": "metaheuristic",
+      "label": "Metaheuristic"
+    },
+    {
+      "slug": "tabu-search",
+      "label": "Tabu Search"
+    },
+    {
+      "slug": "swarm-intelligence",
+      "label": "Swarm Intelligence"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "supply-chain",
+      "label": "Supply Chain"
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "hyperparameter-optimisation",
+      "label": "Hyperparameter Optimisation"
+    },
+    {
+      "slug": "neural-architecture-search",
+      "label": "Neural Architecture Search"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "multi-objective-optimisation",
+      "label": "Multi Objective Optimisation"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-group-formation",
@@ -102,6 +340,22 @@
     {
       "slug": "applied-mathematics",
       "label": "Applied Mathematics"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
     }
   ]
 }

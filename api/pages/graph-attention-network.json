@@ -104,6 +104,10 @@
     {
       "slug": "attention-mechanisms",
       "label": "Attention Mechanisms"
+    },
+    {
+      "slug": "community-detection",
+      "label": "Community Detection"
     }
   ]
 }

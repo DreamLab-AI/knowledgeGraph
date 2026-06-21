@@ -45,6 +45,10 @@
       "label": "AI Art Generation"
     },
     {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
       "slug": "open-world",
       "label": "Open World"
     },

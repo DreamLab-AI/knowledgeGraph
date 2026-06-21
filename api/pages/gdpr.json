@@ -239,6 +239,10 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
       "slug": "agent-memory",
       "label": "Agent Memory"
     },
@@ -281,6 +285,14 @@
     {
       "slug": "circular-economy",
       "label": "Circular Economy"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
     },
     {
       "slug": "compliance-monitoring",
@@ -401,6 +413,10 @@
     {
       "slug": "private-blockchain",
       "label": "Private Blockchain"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
     },
     {
       "slug": "regulatory-compliance",

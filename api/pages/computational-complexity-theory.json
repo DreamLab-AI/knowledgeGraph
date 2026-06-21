@@ -5,18 +5,55 @@
   "public": true,
   "classIri": "urn:ngm:class:computational-complexity-theory",
   "domain": "artificial-intelligence",
-  "definition": "The study of the resources, principally time and memory, required to solve computational problems, and the classification of problems according to their inherent difficulty into complexity classes such as P, NP, PSPACE, and EXPTIME.",
+  "definition": "The mathematical study of the resources \u2014 principally time and memory (space) \u2014 required to solve computational problems, and the classification of problems according to their inherent difficulty into complexity classes such as P, NP, PSPACE, BPP, and EXPTIME. It establishes which problems are tractable (solvable efficiently in polynomial time) and which are intractable, and investigates the relationships between complexity classes, most famously the unresolved P vs NP question.",
   "subClassOf": [
+    {
+      "id": "urn:ngm:class:theoretical-computer-science",
+      "label": "Theoretical Computer Science"
+    },
     {
       "id": "urn:ngm:class:ai-research-area",
       "label": "AI Research Area"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:circuit-complexity",
+        "label": "Circuit Complexity"
+      },
+      {
+        "id": "urn:ngm:class:proof-complexity",
+        "label": "Proof Complexity"
+      },
+      {
+        "id": "urn:ngm:class:parameterised-complexity",
+        "label": "Parameterised Complexity"
+      },
+      {
+        "id": "urn:ngm:class:fine-grained-complexity",
+        "label": "Fine-Grained Complexity"
+      },
+      {
+        "id": "urn:ngm:class:counting-complexity",
+        "label": "Counting Complexity"
+      },
+      {
+        "id": "urn:ngm:class:interactive-proofs",
+        "label": "Interactive Proofs"
+      },
+      {
+        "id": "urn:ngm:class:derandomisation",
+        "label": "Derandomisation"
+      },
+      {
+        "id": "urn:ngm:class:approximation-algorithms",
+        "label": "Approximation Algorithms"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:algorithm",
@@ -33,16 +70,36 @@
       {
         "id": "urn:ngm:class:formal-language",
         "label": "Formal Language"
+      },
+      {
+        "id": "urn:ngm:class:mathematical-logic",
+        "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:automata-theory",
+        "label": "Automata Theory"
       }
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:quantum-computation-paradigm",
+        "id": "urn:ngm:class:quantum-computing",
         "label": "Quantum Computing"
       },
       {
-        "id": "urn:ngm:class:computational-hardness-assumption",
+        "id": "urn:ngm:class:cryptographic-hardness-assumption",
         "label": "Cryptographic Hardness Assumption"
+      },
+      {
+        "id": "urn:ngm:class:sat-solving",
+        "label": "SAT Solving"
+      },
+      {
+        "id": "urn:ngm:class:approximation-algorithms",
+        "label": "Approximation Algorithms"
+      },
+      {
+        "id": "urn:ngm:class:computational-learning-theory",
+        "label": "Computational Learning Theory"
       }
     ],
     "dependsOn": [
@@ -53,6 +110,14 @@
       {
         "id": "urn:ngm:class:mathematical-logic",
         "label": "Mathematical Logic"
+      },
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
       }
     ],
     "implements": [],
@@ -70,6 +135,10 @@
       {
         "id": "urn:ngm:class:quantum-information",
         "label": "Quantum Information"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "uses": [],
@@ -85,6 +154,18 @@
       {
         "id": "urn:ngm:class:ontology",
         "label": "Ontology Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      },
+      {
+        "id": "urn:ngm:class:cryptography",
+        "label": "Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
       }
     ],
     "standardizedBy": [],
@@ -95,8 +176,16 @@
         "label": "Information Theory"
       },
       {
-        "id": "urn:ngm:class:computer-science",
+        "id": "urn:ngm:class:theoretical-computer-science",
         "label": "Theoretical Computer Science"
+      },
+      {
+        "id": "urn:ngm:class:coding-theory",
+        "label": "Coding Theory"
+      },
+      {
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
       }
     ]
   },
@@ -120,6 +209,158 @@
     {
       "slug": "owl-thing",
       "label": "owl:Thing"
+    },
+    {
+      "slug": "computability-theory",
+      "label": "Computability Theory"
+    },
+    {
+      "slug": "mathematical-logic",
+      "label": "Mathematical Logic"
+    },
+    {
+      "slug": "cryptography",
+      "label": "Cryptography"
+    },
+    {
+      "slug": "formal-language",
+      "label": "Formal Language"
+    },
+    {
+      "slug": "turing-machine",
+      "label": "Turing Machine"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "sat-solving",
+      "label": "SAT Solving"
+    },
+    {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
+      "slug": "optimisation",
+      "label": "Optimisation"
+    },
+    {
+      "slug": "graph-algorithm",
+      "label": "Graph Algorithm"
+    },
+    {
+      "slug": "approximation-algorithms",
+      "label": "Approximation Algorithms"
+    },
+    {
+      "slug": "randomised-algorithms",
+      "label": "Randomised Algorithms"
+    },
+    {
+      "slug": "quantum-information",
+      "label": "Quantum Information"
+    },
+    {
+      "slug": "interactive-proofs",
+      "label": "Interactive Proofs"
+    },
+    {
+      "slug": "circuit-complexity",
+      "label": "Circuit Complexity"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "data-structure",
+      "label": "Data Structure"
+    },
+    {
+      "slug": "proof-complexity",
+      "label": "Proof Complexity"
+    },
+    {
+      "slug": "parameterised-complexity",
+      "label": "Parameterised Complexity"
+    },
+    {
+      "slug": "fine-grained-complexity",
+      "label": "Fine-Grained Complexity"
+    },
+    {
+      "slug": "derandomisation",
+      "label": "Derandomisation"
+    },
+    {
+      "slug": "counting-complexity",
+      "label": "Counting Complexity"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "ontology-reasoning",
+      "label": "Ontology Reasoning"
+    },
+    {
+      "slug": "theoretical-computer-science",
+      "label": "Theoretical Computer Science"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "boolean-satisfiability",
+      "label": "Boolean Satisfiability"
+    },
+    {
+      "slug": "graph-isomorphism",
+      "label": "Graph Isomorphism"
+    },
+    {
+      "slug": "automata-theory",
+      "label": "Automata Theory"
+    },
+    {
+      "slug": "coding-theory",
+      "label": "Coding Theory"
+    },
+    {
+      "slug": "cryptographic-hardness-assumption",
+      "label": "Cryptographic Hardness Assumption"
+    },
+    {
+      "slug": "computational-learning-theory",
+      "label": "Computational Learning Theory"
     }
   ],
   "backlinks": [
@@ -134,6 +375,10 @@
     {
       "slug": "algorithmic-layer",
       "label": "Algorithmic Layer"
+    },
+    {
+      "slug": "computability-theory",
+      "label": "Computability Theory"
     },
     {
       "slug": "cyber-security-and-cryptography",

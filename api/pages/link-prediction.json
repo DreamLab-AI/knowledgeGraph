@@ -41,6 +41,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
       "slug": "knowledge-graphing",
       "label": "Knowledge Graphing"
     }

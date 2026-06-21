@@ -89,6 +89,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "computability-theory",
+      "label": "Computability Theory"
+    },
+    {
       "slug": "state-machine",
       "label": "State Machine"
     }

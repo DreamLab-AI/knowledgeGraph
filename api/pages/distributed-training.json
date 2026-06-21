@@ -154,6 +154,10 @@
       "label": "Checkpoints"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
       "slug": "computer-hardware",
       "label": "Computer Hardware"
     },

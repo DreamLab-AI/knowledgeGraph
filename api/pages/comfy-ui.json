@@ -13,18 +13,43 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:comfyui-workflows",
+        "label": "ComfyUI Workflows"
+      },
+      {
+        "id": "urn:ngm:class:comfyui-manager",
+        "label": "ComfyUI Manager"
+      },
+      {
+        "id": "urn:ngm:class:comfyui-api-specification",
+        "label": "ComfyUI API Specification"
+      },
+      {
+        "id": "urn:ngm:class:node-graph",
+        "label": "Node Graph"
+      },
+      {
+        "id": "urn:ngm:class:checkpoint-model",
+        "label": "Checkpoint Model"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:diffusion-model",
         "label": "Diffusion Model"
       },
       {
-        "id": "urn:ngm:class:checkpoint-model",
-        "label": "Checkpoint Model"
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:python",
+        "label": "Python"
       }
     ],
     "enables": [
@@ -35,6 +60,22 @@
       {
         "id": "urn:ngm:class:image-synthesis",
         "label": "Image Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:video-generation",
+        "label": "Video Generation"
+      },
+      {
+        "id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "id": "urn:ngm:class:outpainting",
+        "label": "Outpainting"
+      },
+      {
+        "id": "urn:ngm:class:batch-image-processing",
+        "label": "Batch Image Processing"
       }
     ],
     "dependsOn": [],
@@ -42,19 +83,19 @@
       {
         "id": "urn:ngm:class:workflow-automation",
         "label": "Workflow Automation"
-      }
-    ],
-    "contrastsWith": [],
-    "bridgesTo": [
-      {
-        "id": "urn:ngm:class:user-interface",
-        "label": "User Interface"
       },
       {
-        "id": "urn:ngm:class:open-source-software",
-        "label": "Open Source Software"
+        "id": "urn:ngm:class:content-production-workflow",
+        "label": "Content Production Workflow"
       }
     ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      }
+    ],
+    "bridgesTo": [],
     "uses": [
       {
         "id": "urn:ngm:class:stable-diffusion",
@@ -67,6 +108,22 @@
       {
         "id": "urn:ngm:class:node-graph",
         "label": "Node Graph"
+      },
+      {
+        "id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "id": "urn:ngm:class:vae",
+        "label": "VAE"
+      },
+      {
+        "id": "urn:ngm:class:lora-fine-tuning",
+        "label": "LoRA Fine-Tuning"
+      },
+      {
+        "id": "urn:ngm:class:noise-schedule",
+        "label": "Noise Schedule"
       }
     ],
     "supports": [
@@ -75,8 +132,16 @@
         "label": "Prompt Engineering"
       },
       {
-        "id": "urn:ngm:class:control-net",
+        "id": "urn:ngm:class:controlnet",
         "label": "ControlNet"
+      },
+      {
+        "id": "urn:ngm:class:controlnet-conditioning",
+        "label": "ControlNet Conditioning"
+      },
+      {
+        "id": "urn:ngm:class:upscaling",
+        "label": "Upscaling"
       }
     ],
     "standardizedBy": [],
@@ -84,6 +149,10 @@
       {
         "id": "urn:ngm:class:generative-ai",
         "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
       }
     ],
     "relatedTo": [
@@ -92,12 +161,185 @@
         "label": "Generative Model"
       },
       {
-        "id": "urn:ngm:class:inpainting",
-        "label": "Inpainting"
+        "id": "urn:ngm:class:deep-generative-model",
+        "label": "Deep Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:score-based-generative-model",
+        "label": "Score-Based Generative Model"
+      },
+      {
+        "id": "urn:ngm:class:agentic-workflow",
+        "label": "Agentic Workflow"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset-workflow",
+        "label": "Digital Asset Workflow"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "slug": "node-graph",
+      "label": "Node Graph"
+    },
+    {
+      "slug": "workflow-automation",
+      "label": "Workflow Automation"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "image-synthesis",
+      "label": "Image Synthesis"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "controlnet",
+      "label": "ControlNet"
+    },
+    {
+      "slug": "open-source-software",
+      "label": "Open Source Software"
+    },
+    {
+      "slug": "generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "checkpoint-model",
+      "label": "Checkpoint Model"
+    },
+    {
+      "slug": "user-interface",
+      "label": "User Interface"
+    },
+    {
+      "slug": "lora-fine-tuning",
+      "label": "LoRA Fine-Tuning"
+    },
+    {
+      "slug": "vae",
+      "label": "VAE"
+    },
+    {
+      "slug": "clip",
+      "label": "CLIP"
+    },
+    {
+      "slug": "text-to-image",
+      "label": "Text to Image"
+    },
+    {
+      "slug": "image-to-image",
+      "label": "Image to Image"
+    },
+    {
+      "slug": "video-generation",
+      "label": "Video Generation"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "python",
+      "label": "Python"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "api",
+      "label": "API"
+    },
+    {
+      "slug": "comfyui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfyui-manager",
+      "label": "ComfyUI Manager"
+    },
+    {
+      "slug": "comfyui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
+      "slug": "controlnet-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
+      "slug": "score-based-generative-model",
+      "label": "Score-Based Generative Model"
+    },
+    {
+      "slug": "upscaling",
+      "label": "Upscaling"
+    },
+    {
+      "slug": "batch-image-processing",
+      "label": "Batch Image Processing"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "outpainting",
+      "label": "Outpainting"
+    },
+    {
+      "slug": "content-production-workflow",
+      "label": "Content Production Workflow"
+    },
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "noise-schedule",
+      "label": "Noise Schedule"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    }
+  ],
   "backlinks": [
     {
       "slug": "ai-upscaling-and-super-resolution",
@@ -114,6 +356,14 @@
     {
       "slug": "automatic1111",
       "label": "Automatic1111"
+    },
+    {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
+      "slug": "comfy-ui-manager",
+      "label": "comfyui manager"
     },
     {
       "slug": "comfy-ui-workflows",

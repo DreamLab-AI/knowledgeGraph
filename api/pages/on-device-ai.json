@@ -111,6 +111,10 @@
     {
       "slug": "ai-model-inference-engine",
       "label": "AI Model Inference Engine"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
     }
   ]
 }

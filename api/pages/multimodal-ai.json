@@ -169,8 +169,24 @@
       "label": "Audio Synthesis"
     },
     {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
       "slug": "computer-use-and-browser-agents",
       "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
     },
     {
       "slug": "empathetic-ai",

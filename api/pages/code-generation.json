@@ -10,17 +10,42 @@
     {
       "id": "urn:ngm:class:generative-ai",
       "label": "Generative AI"
+    },
+    {
+      "id": "urn:ngm:class:program-synthesis",
+      "label": "Program Synthesis"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.8,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      },
+      {
+        "id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
+    ],
     "requires": [
       {
         "id": "urn:ngm:class:training-data",
         "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -43,14 +68,13 @@
       {
         "id": "urn:ngm:class:continuous-integration",
         "label": "Continuous Integration"
-      }
-    ],
-    "dependsOn": [
+      },
       {
-        "id": "urn:ngm:class:neural-network",
-        "label": "Neural Network"
+        "id": "urn:ngm:class:ai-augmented-software-engineering",
+        "label": "AI-Augmented Software Engineering"
       }
     ],
+    "dependsOn": [],
     "implements": [
       {
         "id": "urn:ngm:class:program-synthesis",
@@ -79,31 +103,38 @@
         "label": "Large Language Models"
       },
       {
-        "id": "urn:ngm:class:transformer",
-        "label": "Transformer"
-      },
-      {
-        "id": "urn:ngm:class:prompt-engineering",
-        "label": "Prompt Engineering"
-      },
-      {
         "id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
         "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "id": "urn:ngm:class:chain-of-thought-prompting",
+        "label": "Chain-of-Thought Prompting"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:devops",
         "label": "DevOps"
+      },
+      {
+        "id": "urn:ngm:class:agile-software-development",
+        "label": "Agile Software Development"
       }
     ],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:infra-software-engineering",
-        "label": "Software Engineering"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:software-testing",
@@ -116,6 +147,14 @@
       {
         "id": "urn:ngm:class:static-analysis",
         "label": "Static Analysis"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
       }
     ]
   },
@@ -126,7 +165,135 @@
     },
     {
       "slug": "generative-ai",
-      "label": "Generative Ai"
+      "label": "Generative AI"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "transformer-architecture",
+      "label": "Transformer Architecture"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "reinforcement-learning-from-human-feedback",
+      "label": "Reinforcement Learning from Human Feedback"
+    },
+    {
+      "slug": "program-synthesis",
+      "label": "Program Synthesis"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "software-testing",
+      "label": "Software Testing"
+    },
+    {
+      "slug": "static-analysis",
+      "label": "Static Analysis"
+    },
+    {
+      "slug": "devops",
+      "label": "DevOps"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "software-architecture",
+      "label": "Software Architecture"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "embedding",
+      "label": "Embedding"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "continuous-integration",
+      "label": "Continuous Integration"
+    },
+    {
+      "slug": "test-driven-development",
+      "label": "Test-Driven Development"
+    },
+    {
+      "slug": "automated-code-review",
+      "label": "Automated Code Review"
+    },
+    {
+      "slug": "low-code-platform",
+      "label": "Low-Code Platform"
+    },
+    {
+      "slug": "infrastructure-as-code",
+      "label": "Infrastructure as Code"
+    },
+    {
+      "slug": "agile-software-development",
+      "label": "Agile Software Development"
+    },
+    {
+      "slug": "documentation-generation",
+      "label": "Documentation Generation"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    },
+    {
+      "slug": "gpu-compute",
+      "label": "GPU Compute"
+    },
+    {
+      "slug": "model-optimization",
+      "label": "Model Optimization"
+    },
+    {
+      "slug": "few-shot-learning",
+      "label": "Few-Shot Learning"
+    },
+    {
+      "slug": "chain-of-thought-prompting",
+      "label": "Chain-of-Thought Prompting"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "ai-augmented-software-engineering",
+      "label": "AI-Augmented Software Engineering"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "zero-shot-learning",
+      "label": "Zero-Shot Learning"
     }
   ],
   "backlinks": [

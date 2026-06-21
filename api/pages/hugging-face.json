@@ -152,6 +152,10 @@
       "label": "Checkpoints"
     },
     {
+      "slug": "comfy-ui-manager",
+      "label": "comfyui manager"
+    },
+    {
       "slug": "comfy-ui-for-fashion-and-brands",
       "label": "comfy-ui-for-fashion-and-brands"
     },

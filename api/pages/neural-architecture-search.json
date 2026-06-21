@@ -167,6 +167,10 @@
       "label": "Bayesian Optimisation"
     },
     {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
       "slug": "hardware-and-edge",
       "label": "Hardware and Edge"
     },

@@ -156,6 +156,10 @@
       "label": "AI System"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
       "slug": "data-pipeline",
       "label": "Data Pipeline"
     },

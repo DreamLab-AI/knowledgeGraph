@@ -352,5 +352,14 @@
       "label": "Collaborative Filtering"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    }
+  ]
 }

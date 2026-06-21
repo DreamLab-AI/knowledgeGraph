@@ -89,6 +89,14 @@
     {
       "slug": "audio-generation",
       "label": "Audio Generation"
+    },
+    {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
     }
   ]
 }

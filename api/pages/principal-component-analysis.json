@@ -87,6 +87,10 @@
       "label": "Applied Mathematics"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
       "slug": "linear-algebra",
       "label": "Linear Algebra"
     }

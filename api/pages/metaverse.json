@@ -789,6 +789,10 @@
       "label": "Composite AI"
     },
     {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
       "slug": "compute-shader",
       "label": "Compute Shader"
     },

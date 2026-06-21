@@ -377,6 +377,10 @@
       "label": "Call Centres"
     },
     {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
       "slug": "meeting-ai-assistant",
       "label": "Meeting AI Assistant"
     },

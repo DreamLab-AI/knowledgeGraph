@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.74,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -28,12 +28,28 @@
       {
         "id": "urn:ngm:class:spectral-clustering",
         "label": "Spectral Clustering"
+      },
+      {
+        "id": "urn:ngm:class:label-propagation",
+        "label": "Label Propagation"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-block-model",
+        "label": "Stochastic Block Model"
+      },
+      {
+        "id": "urn:ngm:class:modularity-optimisation",
+        "label": "Modularity Optimisation"
       }
     ],
     "requires": [
       {
         "id": "urn:ngm:class:graph-theory",
         "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:linear-algebra",
+        "label": "Linear Algebra"
       }
     ],
     "enables": [
@@ -52,14 +68,35 @@
       {
         "id": "urn:ngm:class:knowledge-graph-embedding",
         "label": "Knowledge Graph Embedding"
+      },
+      {
+        "id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      },
+      {
+        "id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
       }
     ],
-    "dependsOn": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
     "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:hierarchical-clustering",
         "label": "Hierarchical Clustering"
+      },
+      {
+        "id": "urn:ngm:class:graph-partitioning",
+        "label": "Graph Partitioning"
       }
     ],
     "bridgesTo": [
@@ -80,9 +117,30 @@
       {
         "id": "urn:ngm:class:matrix-factorisation",
         "label": "Matrix Factorisation"
+      },
+      {
+        "id": "urn:ngm:class:random-walks",
+        "label": "Random Walks"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      },
+      {
+        "id": "urn:ngm:class:node-embedding",
+        "label": "Node Embedding"
       }
     ],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
@@ -101,6 +159,14 @@
       {
         "id": "urn:ngm:class:network-topology",
         "label": "Network Topology"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
       }
     ]
   },
@@ -116,12 +182,164 @@
     {
       "slug": "network-analysis",
       "label": "Network Analysis"
+    },
+    {
+      "slug": "louvain-algorithm",
+      "label": "Louvain Algorithm"
+    },
+    {
+      "slug": "leiden-algorithm",
+      "label": "Leiden Algorithm"
+    },
+    {
+      "slug": "spectral-clustering",
+      "label": "Spectral Clustering"
+    },
+    {
+      "slug": "label-propagation",
+      "label": "Label Propagation"
+    },
+    {
+      "slug": "stochastic-block-model",
+      "label": "Stochastic Block Model"
+    },
+    {
+      "slug": "graph-neural-networks",
+      "label": "Graph Neural Networks"
+    },
+    {
+      "slug": "matrix-factorisation",
+      "label": "Matrix Factorisation"
+    },
+    {
+      "slug": "random-walks",
+      "label": "Random Walks"
+    },
+    {
+      "slug": "recommendation-systems",
+      "label": "Recommendation Systems"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "knowledge-graph-embedding",
+      "label": "Knowledge Graph Embedding"
+    },
+    {
+      "slug": "social-network-analysis",
+      "label": "Social Network Analysis"
+    },
+    {
+      "slug": "link-prediction",
+      "label": "Link Prediction"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "network-topology",
+      "label": "Network Topology"
+    },
+    {
+      "slug": "distributed-systems",
+      "label": "Distributed Systems"
+    },
+    {
+      "slug": "blockchain-governance",
+      "label": "Blockchain Governance"
+    },
+    {
+      "slug": "hierarchical-clustering",
+      "label": "Hierarchical Clustering"
+    },
+    {
+      "slug": "graph-partitioning",
+      "label": "Graph Partitioning"
+    },
+    {
+      "slug": "modularity-optimisation",
+      "label": "Modularity Optimisation"
+    },
+    {
+      "slug": "node-embedding",
+      "label": "Node Embedding"
+    },
+    {
+      "slug": "self-supervised-learning",
+      "label": "Self-Supervised Learning"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "fraud-detection",
+      "label": "Fraud Detection"
+    },
+    {
+      "slug": "bioinformatics",
+      "label": "Bioinformatics"
+    },
+    {
+      "slug": "linked-data",
+      "label": "Linked Data"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "linear-algebra",
+      "label": "Linear Algebra"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "temporal-graph-networks",
+      "label": "Temporal Graph Networks"
+    },
+    {
+      "slug": "graph-convolutional-network",
+      "label": "Graph Convolutional Network"
+    },
+    {
+      "slug": "graph-attention-network",
+      "label": "Graph Attention Network"
+    },
+    {
+      "slug": "minimum-description-length",
+      "label": "Minimum Description Length"
     }
   ],
   "backlinks": [
     {
       "slug": "ai-group-formation",
       "label": "AI Group Formation"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
     },
     {
       "slug": "data-aggregation",

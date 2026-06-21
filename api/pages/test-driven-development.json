@@ -92,6 +92,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
       "slug": "remote-pair-programming",
       "label": "Remote Pair Programming"
     }

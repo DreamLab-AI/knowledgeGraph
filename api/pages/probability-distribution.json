@@ -103,6 +103,10 @@
       "label": "Beam Search"
     },
     {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
       "slug": "sampling",
       "label": "Sampling"
     },

@@ -111,6 +111,14 @@
     {
       "slug": "applied-machine-learning",
       "label": "Applied Machine Learning"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
     }
   ]
 }

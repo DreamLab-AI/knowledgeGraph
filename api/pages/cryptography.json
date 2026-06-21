@@ -328,6 +328,14 @@
       "label": "Cold Chain Monitoring"
     },
     {
+      "slug": "computability-theory",
+      "label": "Computability Theory"
+    },
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    },
+    {
       "slug": "content-provenance",
       "label": "Content Provenance"
     },

@@ -654,6 +654,14 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
       "slug": "agent-orchestrator",
       "label": "Agent Orchestrator"
     },
@@ -710,6 +718,10 @@
       "label": "Energy and Power"
     },
     {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
       "slug": "fashion",
       "label": "Fashion"
     },
@@ -726,12 +738,24 @@
       "label": "Hardware and Edge"
     },
     {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
       "slug": "history-and-path-to-agi",
       "label": "History and Path to AGI"
     },
     {
       "slug": "humanoid-robot",
       "label": "Humanoid Robot"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
     },
     {
       "slug": "jailbreaking",
@@ -766,12 +790,20 @@
       "label": "Model Training"
     },
     {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
       "slug": "open-generative-ai-tools",
       "label": "Open Generative AI tools"
     },
     {
       "slug": "open-webui-and-pipelines",
       "label": "Open Webui and Pipelines"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
     },
     {
       "slug": "prime-intellect",

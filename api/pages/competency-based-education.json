@@ -10,31 +10,98 @@
     {
       "id": "urn:ngm:class:education-technology",
       "label": "Education Technology"
+    },
+    {
+      "id": "urn:ngm:class:mastery-learning",
+      "label": "Mastery Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:competency-framework",
+        "label": "Competency Framework"
+      },
+      {
+        "id": "urn:ngm:class:formative-assessment",
+        "label": "Formative Assessment"
+      },
+      {
+        "id": "urn:ngm:class:summative-assessment",
+        "label": "Summative Assessment"
+      },
+      {
+        "id": "urn:ngm:class:learner-model",
+        "label": "Learner Model"
+      },
+      {
+        "id": "urn:ngm:class:rubric-based-assessment",
+        "label": "Rubric-Based Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:learning-analytics",
+        "label": "Learning Analytics"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-component-model",
+        "label": "Knowledge Component Model"
+      }
+    ],
     "enables": [
       {
         "id": "urn:ngm:class:adaptive-learning",
         "label": "Adaptive Learning"
+      },
+      {
+        "id": "urn:ngm:class:personalised-learning",
+        "label": "Personalised Learning"
+      },
+      {
+        "id": "urn:ngm:class:lifelong-learning",
+        "label": "Lifelong Learning"
+      },
+      {
+        "id": "urn:ngm:class:workforce-development",
+        "label": "Workforce Development"
       }
     ],
     "dependsOn": [
       {
         "id": "urn:ngm:class:learning-management-system",
         "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
       }
     ],
-    "implements": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:mastery-learning",
+        "label": "Mastery Learning"
+      },
+      {
+        "id": "urn:ngm:class:bloom-taxonomy",
+        "label": "Bloom's Taxonomy"
+      }
+    ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:adaptive-learning",
-        "label": "Adaptive Learning"
+        "id": "urn:ngm:class:time-based-education",
+        "label": "Time-Based Education"
+      },
+      {
+        "id": "urn:ngm:class:apprenticeship",
+        "label": "Apprenticeship"
       }
     ],
     "bridgesTo": [],
@@ -42,28 +109,252 @@
       {
         "id": "urn:ngm:class:learning-management-system",
         "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring System"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-knowledge-tracing",
+        "label": "Bayesian Knowledge Tracing"
+      },
+      {
+        "id": "urn:ngm:class:item-response-theory",
+        "label": "Item Response Theory"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:learning-analytics",
         "label": "Learning Analytics"
+      },
+      {
+        "id": "urn:ngm:class:micro-credential",
+        "label": "Micro-Credential"
+      },
+      {
+        "id": "urn:ngm:class:digital-badge",
+        "label": "Digital Badge"
       }
     ],
     "standardizedBy": [],
-    "partOf": [
-      {
-        "id": "urn:ngm:class:education-technology",
-        "label": "Education Technology"
-      }
-    ],
+    "partOf": [],
     "relatedTo": [
       {
-        "id": "urn:ngm:class:artificial-intelligence",
-        "label": "Artificial Intelligence"
+        "id": "urn:ngm:class:prior-learning-assessment",
+        "label": "Prior Learning Assessment"
+      },
+      {
+        "id": "urn:ngm:class:open-educational-resources",
+        "label": "Open Educational Resources"
+      },
+      {
+        "id": "urn:ngm:class:professional-development",
+        "label": "Professional Development"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "education-technology",
+      "label": "Education Technology"
+    },
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "learning-management-system",
+      "label": "Learning Management System"
+    },
+    {
+      "slug": "learning-analytics",
+      "label": "Learning Analytics"
+    },
+    {
+      "slug": "mastery-learning",
+      "label": "Mastery Learning"
+    },
+    {
+      "slug": "formative-assessment",
+      "label": "Formative Assessment"
+    },
+    {
+      "slug": "summative-assessment",
+      "label": "Summative Assessment"
+    },
+    {
+      "slug": "personalised-learning",
+      "label": "Personalised Learning"
+    },
+    {
+      "slug": "intelligent-tutoring-system",
+      "label": "Intelligent Tutoring System"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "micro-credential",
+      "label": "Micro-Credential"
+    },
+    {
+      "slug": "digital-badge",
+      "label": "Digital Badge"
+    },
+    {
+      "slug": "open-badges",
+      "label": "Open Badges"
+    },
+    {
+      "slug": "credential-framework",
+      "label": "Credential Framework"
+    },
+    {
+      "slug": "prior-learning-assessment",
+      "label": "Prior Learning Assessment"
+    },
+    {
+      "slug": "rubric-based-assessment",
+      "label": "Rubric-Based Assessment"
+    },
+    {
+      "slug": "bloom-taxonomy",
+      "label": "Bloom's Taxonomy"
+    },
+    {
+      "slug": "self-paced-learning",
+      "label": "Self-Paced Learning"
+    },
+    {
+      "slug": "curriculum-design",
+      "label": "Curriculum Design"
+    },
+    {
+      "slug": "competency-framework",
+      "label": "Competency Framework"
+    },
+    {
+      "slug": "skills-gap-analysis",
+      "label": "Skills Gap Analysis"
+    },
+    {
+      "slug": "workforce-development",
+      "label": "Workforce Development"
+    },
+    {
+      "slug": "lifelong-learning",
+      "label": "Lifelong Learning"
+    },
+    {
+      "slug": "open-educational-resources",
+      "label": "Open Educational Resources"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "item-response-theory",
+      "label": "Item Response Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "learner-model",
+      "label": "Learner Model"
+    },
+    {
+      "slug": "open-learner-model",
+      "label": "Open Learner Model"
+    },
+    {
+      "slug": "cognitive-load-theory",
+      "label": "Cognitive Load Theory"
+    },
+    {
+      "slug": "zone-of-proximal-development",
+      "label": "Zone of Proximal Development"
+    },
+    {
+      "slug": "scaffolding",
+      "label": "Scaffolding"
+    },
+    {
+      "slug": "data-privacy",
+      "label": "Data Privacy"
+    },
+    {
+      "slug": "explainable-ai",
+      "label": "Explainable AI"
+    },
+    {
+      "slug": "federated-learning",
+      "label": "Federated Learning"
+    },
+    {
+      "slug": "curriculum-learning",
+      "label": "Curriculum Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "deep-knowledge-tracing",
+      "label": "Deep Knowledge Tracing"
+    },
+    {
+      "slug": "knowledge-component-model",
+      "label": "Knowledge Component Model"
+    },
+    {
+      "slug": "open-edx",
+      "label": "OpenEdX"
+    },
+    {
+      "slug": "gamification",
+      "label": "Gamification"
+    },
+    {
+      "slug": "metacognition",
+      "label": "Metacognition"
+    },
+    {
+      "slug": "differentiated-instruction",
+      "label": "Differentiated Instruction"
+    },
+    {
+      "slug": "time-based-education",
+      "label": "Time-Based Education"
+    },
+    {
+      "slug": "apprenticeship",
+      "label": "Apprenticeship"
+    },
+    {
+      "slug": "higher-education",
+      "label": "Higher Education"
+    },
+    {
+      "slug": "professional-development",
+      "label": "Professional Development"
+    }
+  ],
   "backlinks": []
 }

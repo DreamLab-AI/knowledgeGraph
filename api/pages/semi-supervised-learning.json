@@ -58,6 +58,10 @@
       "label": "Back-Translation"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
       "slug": "learning-algorithm",
       "label": "Learning Algorithm"
     },

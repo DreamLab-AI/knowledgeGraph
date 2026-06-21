@@ -89,5 +89,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    }
+  ]
 }

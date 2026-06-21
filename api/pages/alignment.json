@@ -347,6 +347,10 @@
       "label": "Autonomy Level"
     },
     {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
       "slug": "evaluation-benchmarks-and-leaderboards",
       "label": "Evaluation benchmarks and leaderboards"
     },

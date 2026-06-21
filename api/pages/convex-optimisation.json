@@ -175,6 +175,10 @@
       "label": "Applied Mathematics"
     },
     {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

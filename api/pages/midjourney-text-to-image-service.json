@@ -142,6 +142,10 @@
     {
       "slug": "adobe-firefly",
       "label": "Adobe Firefly"
+    },
+    {
+      "slug": "concept-art",
+      "label": "Concept Art"
     }
   ]
 }

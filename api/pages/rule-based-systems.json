@@ -162,6 +162,14 @@
       "label": "Chatbots"
     },
     {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

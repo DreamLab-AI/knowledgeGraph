@@ -151,6 +151,10 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
+      "slug": "comfy-ui-manager",
+      "label": "comfyui manager"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     },
@@ -161,6 +165,10 @@
     {
       "slug": "hash-function",
       "label": "Hash Function"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
     }
   ]
 }

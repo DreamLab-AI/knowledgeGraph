@@ -150,8 +150,20 @@
       "label": "Admittance Control"
     },
     {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
     },
     {
       "slug": "agentic-internet",
@@ -238,6 +250,10 @@
       "label": "Computer Use and Browser Agents"
     },
     {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
       "slug": "context-engineering",
       "label": "Context Engineering"
     },
@@ -248,6 +264,10 @@
     {
       "slug": "control-net-and-similar-spatial-conditioning-systems",
       "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "control-net",
+      "label": "controlnet"
     },
     {
       "slug": "convergence",
@@ -472,6 +492,10 @@
     {
       "slug": "technology-adoption",
       "label": "Technology Adoption"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
     },
     {
       "slug": "time-series-forecasting",

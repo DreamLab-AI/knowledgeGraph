@@ -43,6 +43,10 @@
     ObjectSomeValuesFrom(bio:hasPart bio:Transcriptomics))
   SubClassOf(bio:Bioinformatics
     ObjectSomeValuesFrom(bio:hasPart bio:Metagenomics))
+  SubClassOf(bio:Bioinformatics
+    ObjectSomeValuesFrom(bio:hasPart bio:SingleCellOmics))
+  SubClassOf(bio:Bioinformatics
+    ObjectSomeValuesFrom(bio:hasPart bio:SpatialTranscriptomics))
   ```
 
   ## Dependency Relationships
@@ -59,6 +63,10 @@
     ObjectSomeValuesFrom(bio:requires bio:Statistics))
   SubClassOf(bio:Bioinformatics
     ObjectSomeValuesFrom(bio:requires bio:HighPerformanceComputing))
+  SubClassOf(bio:Bioinformatics
+    ObjectSomeValuesFrom(bio:requires bio:ReferencePanels))
+  SubClassOf(bio:Bioinformatics
+    ObjectSomeValuesFrom(bio:requires bio:AnnotationOntologies))
   ```
 
   ## Capability Relationships
@@ -75,6 +83,10 @@
     ObjectSomeValuesFrom(bio:enables bio:SyntheticBiology))
   SubClassOf(bio:Bioinformatics
     ObjectSomeValuesFrom(bio:enables bio:EvolutionaryBiology))
+  SubClassOf(bio:Bioinformatics
+    ObjectSomeValuesFrom(bio:enables bio:GenomicSurveillance))
+  SubClassOf(bio:Bioinformatics
+    ObjectSomeValuesFrom(bio:enables bio:ClinicalDiagnostics))
   ```
 
   ## Implementation Relationships
@@ -89,6 +101,10 @@
     ObjectSomeValuesFrom(bio:implements bio:GraphBasedNetworkModel))
   SubClassOf(bio:Bioinformatics
     ObjectSomeValuesFrom(bio:implements bio:DeepLearningFoundationModel))
+  SubClassOf(bio:Bioinformatics
+    ObjectSomeValuesFrom(bio:implements bio:WorkflowManagementSystem))
+  SubClassOf(bio:Bioinformatics
+    ObjectSomeValuesFrom(bio:implements bio:LinearMixedModel))
   ```
 
   ## Reduction Relationships
@@ -101,6 +117,10 @@
     ObjectSomeValuesFrom(bio:reducesTo bio:Statistics))
   SubClassOf(bio:Bioinformatics
     ObjectSomeValuesFrom(bio:reducesTo bio:MachineLearning))
+  SubClassOf(bio:Bioinformatics
+    ObjectSomeValuesFrom(bio:reducesTo bio:Genomics))
+  SubClassOf(bio:Bioinformatics
+    ObjectSomeValuesFrom(bio:reducesTo bio:Proteomics))
   ```
 
   ## About
@@ -380,43 +400,145 @@
 
   ## Future Directions (2026-2030)
 
-  - **Multimodal biological foundation models**: Models integrating sequence, structure, expression, imaging, and clinical phenotype data into unified biological representations — analogous to GPT-4V for molecular biology — will enable cross-modal inference: predicting clinical outcome trajectories from genome sequence alone, or computationally designing molecules to achieve a specified phenotypic intervention. Early systems (ESM-3 from Meta AI, 2024) demonstrate that protein sequence, structure, and function can be jointly modelled in a single latent space, enabling structure-conditioned sequence design and function-conditioned structure generation within a single model.
-  - **Nanopore direct RNA sequencing at clinical scale**: Oxford Nanopore's direct RNA sequencing capability, which reads native RNA molecules without reverse transcription and therefore preserves base modification (m6A, pseudouridine) information, is moving toward clinical deployment for isoform-resolved transcriptomics and epitranscriptomic modification profiling. New bioinformatics models trained on raw ionic current signals (Dorado direct-RNA basecaller, m6Anet for modification detection) are required to realise the clinical potential of this data modality.
-  - **Closed-loop AI-driven synthetic biology**: Integration of de novo protein design (RFdiffusion, ProteinMPNN, ESM-3) with automated high-throughput experimental assay platforms (lab automation robotics, self-driving labs) will create automated bioinformatics-driven design-build-test-learn cycles that iteratively improve biomolecule function, enzyme selectivity, and metabolic pathway efficiency without manual human design decisions at each iteration.
-  - **Federated multi-site genomics under differential privacy**: Privacy-preserving federated learning across NHS Secure Data Environments, BioBank Japan, the Estonian Biobank, and other national genomics data environments — using differential privacy mechanisms (Gaussian noise injection, secure multi-party computation) — will enable large language models and GWAS-style statistical models to be trained on millions of genomes without raw data crossing national boundaries, unlocking statistical power for rare-variant analysis and transancestry polygenic score generalisation.
-  - **Real-time adaptive outbreak genomics**: The integration of portable Oxford Nanopore MinION devices with on-device bioinformatics models (minimap2 for alignment, Kraken2 for taxonomic classification, implemented on ARM-based edge hardware) will enable pathogen identification and phylogenetic placement within 2-4 hours of sample collection in hospital emergency departments, public health field investigations, and resource-limited settings, fundamentally changing the timescale of infectious disease epidemiological response.
-  - **Pan-genome reference graphs**: Moving from single linear reference genomes (GRCh38/hg38) to population-scale pan-genome reference graphs (the Human Pan-Genome Reference Consortium's first draft pan-genome, published in Nature 2023, encompassing 94 diverse human assemblies) will reduce the reference bias in short-read alignment and variant calling that disproportionately affects populations of non-European ancestry, improving the accuracy of [[Genomics]] analysis and polygenic risk scores across diverse populations.
-  - **Quantum bioinformatics**: Near-term quantum computers with 1,000-10,000 logical qubits may enable exact quantum dynamic programming for protein folding energy minimisation and quantum machine learning for high-dimensional molecular property prediction at polynomial rather than exponential cost for specific problem classes, though realistic timelines remain uncertain. Academic groups at Imperial College London, the University of Edinburgh, and the Hartree Centre (Daresbury, Cheshire) are investigating quantum algorithms for sequence analysis and molecular simulation as part of UK quantum computing national programmes.
+  - **Multimodal biological foundation models**:
+    - Integrating sequence, structure, expression, imaging, and clinical phenotype data into unified representations — analogous to GPT-4V for molecular biology.
+    - Enable cross-modal inference: predicting clinical outcomes from genome sequence; designing molecules to match a target phenotype; predicting 3D structure from single-cell transcriptomic context.
+    - Early example: ESM-3 (Meta AI, 2024) jointly models protein sequence, structure, and function in a single latent space, enabling structure-conditioned sequence design.
+    - Full genome-to-phenotype foundation models anticipated within the decade; UK MRC/Wellcome strategic priority.
+  - **Nanopore direct RNA sequencing at clinical scale**:
+    - Oxford Nanopore's direct RNA-seq reads native RNA molecules (no reverse transcription) preserving N6-methyladenosine (m6A), pseudouridine (Ψ), and other epitranscriptomic modifications.
+    - Clinical potential: isoform-resolved transcriptomics, RNA modification profiling, RNA structure probing — data modalities inaccessible to short-read cDNA approaches.
+    - New bioinformatics tools required: Dorado direct-RNA basecaller (nanopore signal to RNA sequence), m6Anet (m6A detection from per-read signal deviation), and ELIGOS (epitranscriptomic variant calling).
+    - Timeline: clinical validation studies underway (2026-2028); regulatory pathway for IVD use unclear.
+  - **Closed-loop AI-driven synthetic biology**:
+    - Integration of de novo protein design (RFdiffusion for backbone generation, ProteinMPNN for sequence design, ESM-3 for joint design) with automated high-throughput experimental assay platforms (lab automation, self-driving labs like Emerald Cloud Lab and Arctoris in Oxford).
+    - Creates automated design-build-test-learn cycles: bioinformatics designs a candidate molecule → robot synthesises and assays it → assay data updates the model → next design is proposed.
+    - Targets: enzyme engineering, antibody optimisation, biosensor development, metabolic pathway tuning.
+    - UK hubs: Emerald Cloud Lab (London), Autoscribe/Darwin AI (Cambridge), SynBiCITE (Imperial College London).
+  - **Federated multi-site genomics under differential privacy**:
+    - Privacy-preserving federated learning (FL + DP-SGD, secure aggregation via multi-party computation) across NHS Secure Data Environments, BioBank Japan, Estonian Biobank, FinnGen, UK Biobank.
+    - Enables models trained on millions of genomes without raw data leaving national jurisdictions.
+    - Unlocks statistical power for rare-variant association (requires >500,000 participants), trans-ancestry polygenic score generalisation, and drug-gene interaction discovery at population scale.
+    - ELIXIR federated genomics taskforce (European) and UK UKRI Trusted Research Environments (TREs) framework are the institutional vehicles for this.
+  - **Real-time adaptive outbreak genomics**:
+    - Portable Oxford Nanopore MinION + on-device bioinformatics models (minimap2, Kraken2, on ARM processors like NVIDIA Jetson or Apple M-series) enable pathogen identification and phylogenetic placement within 2-4 hours of sample collection.
+    - Target settings: hospital emergency departments (rapid sepsis pathogen ID + AMR profile), airport public health screening, food safety field investigations, LMIC resource-limited settings.
+    - WHO global pathogen genomics initiative and COG-UK successor programmes are investing in this capability for pandemic preparedness.
+  - **Pan-genome reference graphs**:
+    - Human Pan-Genome Reference Consortium (HPRC) first draft pan-genome (Nature, 2023): 94 diverse human haplotype assemblies composited into a variation graph representation.
+    - Reduces reference bias in short-read alignment that disproportionately affects populations of non-European ancestry (currently 80%+ of GWAS conducted in European-ancestry cohorts).
+    - New aligners (vg toolkit, Giraffe) align reads directly against variation graphs; bioinformatics pipelines must be retooled for graph-based references.
+    - Equity implications: pan-genome references improve polygenic risk score accuracy for African, East Asian, and South Asian ancestry groups by 10-30%.
+  - **Quantum bioinformatics**:
+    - Near-term quantum computers (1,000-10,000 logical qubits) may enable quantum dynamic programming for protein energy minimisation and quantum principal component analysis for high-dimensional omics data.
+    - Quantum algorithms (VQE, QAOA, quantum amplitude estimation) applicable to molecular simulation and drug-protein binding problems at polynomial rather than exponential cost for specific problem classes.
+    - Timelines: proof-of-concept demonstrations expected 2027-2030; production deployment 2030+.
+    - UK activity: Imperial College London Quantum Technologies group, University of Edinburgh School of Physics, Hartree Centre (Daresbury), and National Quantum Computing Centre (Didcot, Oxfordshire) investigating quantum algorithms for sequence analysis and molecular simulation.
+  - **Clinical polygenic risk scoring at population scale**:
+    - NHS Primary Care genomics programme: polygenic risk scores for cardiovascular disease, Type 2 diabetes, breast and prostate cancer being integrated into GP risk stratification workflows.
+    - Bioinformatics pipelines for PRS calculation in NHS settings must handle ancestry diversity, imputation quality, and calibration across different ethnic groups.
+    - UKBB-derived PRS scores are being prospectively validated in the NHS CHECK programme (100,000 participants) to assess clinical utility of genomic risk stratification in primary prevention.
+  - **AI-augmented rare disease diagnosis**:
+    - Deep phenotype ontologies (HPO, OMIM) combined with patient genotype/phenotype data and knowledge graph reasoning (LIRICAL, PhenIX, Exomiser) increasingly provide differential diagnosis rankings for rare genetic disorders.
+    - Undiagnosed Diseases Network (NIH-sponsored, with UK involvement through NHS patients) and DDD (Deciphering Developmental Disorders, Wellcome Sanger) study have developed reference datasets enabling benchmark-level evaluation of AI rare disease diagnosis tools.
+    - Target: >30% diagnostic yield for undiagnosed rare diseases by 2030 through combined WGS and AI interpretation (currently 25-35% with WGS alone).
+
+  ## Reproducibility and Pipeline Standards
+
+  - **Workflow management systems**: Nextflow (DSL2), Snakemake, WDL/Cromwell, and CWL (Common Workflow Language) are the four dominant frameworks; nf-core community maintains 100+ peer-reviewed Nextflow pipelines.
+  - **Container-based reproducibility**: Docker and Singularity (HPC-compatible) container images ensure software dependency consistency across compute environments; Bioconda and conda-forge package channels provide versioned bioinformatics software.
+  - **Software environments**: Conda environments with pinned dependency versions; lock files (conda-lock, mamba-lock) capture precise software versions for long-term reproducibility of published analyses.
+  - **Data versioning**: DVC (Data Version Control) or iRODS (EMBL-EBI, Wellcome Sanger) for tracking large biological dataset versions alongside code; essential for audit trail in clinical contexts.
+  - **Fair data principles**: FAIR (Findable, Accessible, Interoperable, Reusable) metadata standards for bioinformatics data; Zenodo and Figshare used for code and processed data deposition; raw sequencing data mandated to SRA/ENA.
+  - **Clinical pipeline validation**: FDA 510(k)/PMA submissions for NGS-based diagnostics require analytical validation (accuracy, precision, reproducibility, LOD) and analytical comparator studies; ACMG/AMP variant classification criteria (1-5 star pathogenicity scale) applied uniformly across clinical variant interpretation pipelines.
+  - **Benchmarking frameworks**: GA4GH Benchmarking Task Team standards (hap.py, RTG vcfeval) provide standardised tools for comparing variant calling pipeline performance against truth sets (GIAB HG001-007 reference standards, PrecisionFDA Truth Challenge VCFs).
+  - **Code and pipeline sharing**: GitHub repositories, Zenodo DOIs, and Workflowhub (ELIXIR) for pipeline versioning; Nextflow Tower (Seqera Platform) for cloud-based pipeline execution monitoring and management.
+  - **Collaborative standards**: GA4GH (Global Alliance for Genomics and Health) develops interoperability standards (DRS, WES, TES, Passport/Visa for federated data access) that underpin international bioinformatics collaborations across NHS, Genomics England, EMBL-EBI, and NCBI.
+
+  ## Benchmark Datasets
+
+  - **CASP (Critical Assessment of Protein Structure Prediction)**: Biennial community-wide blind assessment; CASP14 (2020) validated AlphaFold 2; CASP15 (2022) confirmed dominance of deep-learning methods; CASP16 (2024) extended evaluation to biomolecular assemblies.
+  - **CAMEO (Continuous Automated Model EvaluatiOn)**: Real-time rolling evaluation of structure prediction servers against newly deposited PDB structures; provides continuous benchmark complement to biennial CASP.
+  - **ENCODE (Encyclopedia of DNA Elements)**: Validated reference datasets for regulatory element annotation across human and model organism genomes; encompasses DNase-seq, ATAC-seq, ChIP-seq, and RNA-seq across hundreds of cell types.
+  - **UK Biobank**: 500,000-participant longitudinal cohort with genome-wide genotyping (500K variants on UK Biobank Axiom Array, imputed to 93 million variants), exome sequencing (200K participants, 2022), MRI imaging (100,000 participants brain + cardiac + body), metabolomics, and proteomics.
+  - **1000 Genomes Project**: First population-scale catalogue of human genetic variation; 2,504 individuals from 26 populations; still the primary LD reference panel for European-ancestry GWAS imputation.
+  - **gnomAD (Genome Aggregation Database)**: v4 (2023): allele frequencies from 807,162 exome and whole-genome sequences across major global ancestry groups; standard reference for variant pathogenicity classification.
+  - **PrecisionFDA Truth Challenges**: FDA-sponsored benchmarking platform for clinical NGS variant calling; Truth Challenge V2 (2021) established DeepVariant as best-performing SNP/indel caller on Illumina data; current Truth Challenge V3 targets long-read calling.
+  - **Human Cell Atlas (HCA) data portal**: Over 50 million cells; reference atlases for 33+ tissue types; used as training data for Geneformer, scFoundation, and other single-cell foundation models.
+  - **COSMIC (Catalogue of Somatic Mutations in Cancer)**: Curated database of somatic mutations from >1.5 million tumour samples; defines the mutational signature catalogue (SBS, DBS, ID signatures) used by SigProfiler for clinical mutational aetiology inference.
+  - **AlphaFold Protein Structure Database**: Over 200 million predicted protein structures hosted by EMBL-EBI; the world's largest open-access structural biology resource; standard reference for structural bioinformatics and drug discovery.
 
   ## Research & Literature
 
-  1. Needleman, S.B. & Wunsch, C.D. (1970). A general method applicable to the search for similarities in the amino acid sequence of two proteins. *Journal of Molecular Biology*, 48(3), 443-453.
-  2. Smith, T.F. & Waterman, M.S. (1981). Identification of common molecular subsequences. *Journal of Molecular Biology*, 147(1), 195-197.
-  3. Altschul, S.F., Gish, W., Miller, W., Myers, E.W. & Lipman, D.J. (1990). Basic local alignment search tool. *Journal of Molecular Biology*, 215(3), 403-410.
-  4. Lander, E.S. et al. (2001). Initial sequencing and analysis of the human genome. *Nature*, 409, 860-921.
-  5. Venter, J.C. et al. (2001). The sequence of the human genome. *Science*, 291(5507), 1304-1351.
-  6. Li, H. & Durbin, R. (2009). Fast and accurate short read alignment with Burrows-Wheeler Aligner. *Bioinformatics*, 25(14), 1754-1760.
-  7. McKenna, A. et al. (2010). The Genome Analysis Toolkit: A MapReduce framework for analyzing next-generation DNA sequencing data. *Genome Research*, 20(9), 1297-1303.
-  8. Dobin, A. et al. (2013). STAR: ultrafast universal RNA-seq aligner. *Bioinformatics*, 29(1), 15-21.
-  9. Love, M.I., Huber, W. & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology*, 15(12), 550.
-  10. Bolger, A.M., Lohse, M. & Usadel, B. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data. *Bioinformatics*, 30(15), 2114-2120.
-  11. Bray, N.L. et al. (2016). Near-optimal probabilistic RNA-seq quantification. *Nature Biotechnology*, 34(5), 525-527.
-  12. Stuart, T. et al. (2019). Comprehensive integration of single-cell data. *Cell*, 177(7), 1888-1902.
-  13. Poplin, R. et al. (2018). A universal SNP and small-indel variant caller using deep neural networks. *Nature Biotechnology*, 36(10), 983-987.
-  14. Wolf, F.A., Angerer, P. & Theis, F.J. (2018). SCANPY: large-scale single-cell gene expression data analysis. *Genome Biology*, 19(1), 15.
-  15. Eraslan, G. et al. (2019). Deep learning: new computational modelling techniques for genomics. *Nature Reviews Genetics*, 20(7), 389-403.
-  16. Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. *Nature*, 596(7873), 583-589.
-  17. Rives, A. et al. (2021). Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences. *PNAS*, 118(15), e2016239118.
-  18. Theodoris, C.V. et al. (2023). Transfer learning enables predictions in network biology. *Nature*, 618(7965), 616-624.
-  19. Zhou, Z. et al. (2023). DNABERT-2: Efficient foundation model and benchmark for multi-species genome. *arXiv*, 2306.15006.
-  20. Abramson, J. et al. (2024). Accurate structure prediction of biomolecular interactions with AlphaFold 3. *Nature*, 630, 493-500.
-  21. Nguyen, E. et al. (2024). Sequence modeling and design from molecular to genome scale with Evo. *Science*, 386, eado9336.
-  22. COG-UK Consortium (2021). An integrated national scale SARS-CoV-2 genomic surveillance network. *The Lancet Microbe*, 2(3), e99-e100.
-  23. Di Tommaso, P. et al. (2017). Nextflow enables reproducible computational workflows. *Nature Biotechnology*, 35(4), 316-319.
-  24. Ewels, P.A. et al. (2020). The nf-core framework for community-curated bioinformatics pipelines. *Nature Biotechnology*, 38(3), 276-278.
-  25. Heumos, L. et al. (2023). Best practices for single-cell analysis across modalities. *Nature Reviews Genetics*, 24(8), 550-572.
-  26. Yang, G. et al. (2024). scFoundation: Large Scale Foundation Model on Single-Cell Transcriptomics. *Nature Methods*, 21(8), 1481-1491.
-  27. Wu, B. et al. (2025). Foundation models in bioinformatics. *National Science Review*, 12(4), nwaf028.
+  1. Needleman, S.B. & Wunsch, C.D. (1970). A general method applicable to the search for similarities in the amino acid sequence of two proteins. *Journal of Molecular Biology*, 48(3), 443-453. [Foundational dynamic programming alignment algorithm; conceptual basis for all subsequent pairwise alignment methods.]
+  2. Smith, T.F. & Waterman, M.S. (1981). Identification of common molecular subsequences. *Journal of Molecular Biology*, 147(1), 195-197. [Local alignment extension of Needleman-Wunsch; enables discovery of conserved functional domains in divergent proteins.]
+  3. Altschul, S.F., Gish, W., Miller, W., Myers, E.W. & Lipman, D.J. (1990). Basic local alignment search tool. *Journal of Molecular Biology*, 215(3), 403-410. [BLAST; over 100,000 citations; reduces homology search from O(mn) to near-linear using Karlin-Altschul statistics; most widely deployed bioinformatics tool.]
+  4. Lander, E.S. et al. (2001). Initial sequencing and analysis of the human genome. *Nature*, 409, 860-921. [Human Genome Project draft genome; defining moment making bioinformatics indispensable rather than auxiliary.]
+  5. Venter, J.C. et al. (2001). The sequence of the human genome. *Science*, 291(5507), 1304-1351. [Celera Genomics competing draft genome; whole-genome shotgun approach; complementary landmark to HGP paper.]
+  6. Li, H. & Durbin, R. (2009). Fast and accurate short read alignment with Burrows-Wheeler Aligner. *Bioinformatics*, 25(14), 1754-1760. [BWA; FM-index based short-read alignment; dominant germline clinical genomics aligner.]
+  7. McKenna, A. et al. (2010). The Genome Analysis Toolkit: A MapReduce framework for analyzing next-generation DNA sequencing data. *Genome Research*, 20(9), 1297-1303. [GATK; local de Bruijn reassembly for variant calling; FDA reference implementation for clinical NGS.]
+  8. Dobin, A. et al. (2013). STAR: ultrafast universal RNA-seq aligner. *Bioinformatics*, 29(1), 15-21. [Splice-aware RNA-seq alignment using uncompressed suffix array; 500 million reads/hour; dominant RNA-seq aligner at scale.]
+  9. Love, M.I., Huber, W. & Anders, S. (2014). Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2. *Genome Biology*, 15(12), 550. [DESeq2; negative-binomial GLM with dispersion shrinkage; statistical standard for differential expression analysis.]
+  10. Bolger, A.M., Lohse, M. & Usadel, B. (2014). Trimmomatic: a flexible trimmer for Illumina sequence data. *Bioinformatics*, 30(15), 2114-2120. [Adapter trimming and quality filtering; complementary to FastQC in standard QC pipelines.]
+  11. Bray, N.L. et al. (2016). Near-optimal probabilistic RNA-seq quantification. *Nature Biotechnology*, 34(5), 525-527. [Kallisto; pseudo-alignment using de Bruijn equivalence classes; orders-of-magnitude faster than alignment-based quantification.]
+  12. Stuart, T. et al. (2019). Comprehensive integration of single-cell data. *Cell*, 177(7), 1888-1902. [Seurat v3; canonical correlation analysis and anchor-based integration of scRNA-seq datasets; the dominant single-cell integration method.]
+  13. Poplin, R. et al. (2018). A universal SNP and small-indel variant caller using deep neural networks. *Nature Biotechnology*, 36(10), 983-987. [DeepVariant; CNN on pileup images; surpasses GATK on Illumina; FDA-benchmarked in PrecisionFDA Truth Challenges.]
+  14. Wolf, F.A., Angerer, P. & Theis, F.J. (2018). SCANPY: large-scale single-cell gene expression data analysis. *Genome Biology*, 19(1), 15. [Scanpy; Python single-cell analysis framework built on AnnData; the dominant Python-ecosystem tool.]
+  15. Eraslan, G. et al. (2019). Deep learning: new computational modelling techniques for genomics. *Nature Reviews Genetics*, 20(7), 389-403. [Authoritative review of DL applications to genomics; covers sequence models, variant effect prediction, and gene regulation.]
+  16. Jumper, J. et al. (2021). Highly accurate protein structure prediction with AlphaFold. *Nature*, 596(7873), 583-589. [AlphaFold 2; median GDT_TS >92 on CASP14; resolves 50-year protein structure prediction problem; 2024 Nobel Prize in Chemistry.]
+  17. Rives, A. et al. (2021). Biological structure and function emerge from scaling unsupervised learning to 250 million protein sequences. *PNAS*, 118(15), e2016239118. [ESM-1b protein language model; self-supervised pre-training on 250M sequences; enables structure and function prediction via learned representations.]
+  18. Theodoris, C.V. et al. (2023). Transfer learning enables predictions in network biology. *Nature*, 618(7965), 616-624. [Geneformer; 29.9M single-cell transcriptome pre-training; predicts chromatin remodelling and perturbation effects from transcriptomic context.]
+  19. Zhou, Z. et al. (2023). DNABERT-2: Efficient foundation model and benchmark for multi-species genome. *arXiv*, 2306.15006. [DNABERT-2; multi-species genome pre-training; enables zero-shot gene function prediction and regulatory element characterisation.]
+  20. Abramson, J. et al. (2024). Accurate structure prediction of biomolecular interactions with AlphaFold 3. *Nature*, 630, 493-500. [AlphaFold 3; diffusion architecture covering protein-DNA, protein-RNA, and protein-ligand complexes; transforms early-stage drug discovery.]
+  21. Nguyen, E. et al. (2024). Sequence modeling and design from molecular to genome scale with Evo. *Science*, 386, eado9336. [Evo; 7B-parameter genomic language model on 2.7M prokaryotic genomes; zero-shot functional design and de novo phage genome generation.]
+  22. COG-UK Consortium (2021). An integrated national scale SARS-CoV-2 genomic surveillance network. *The Lancet Microbe*, 2(3), e99-e100. [COG-UK; Wellcome Sanger-led; 3 million+ SARS-CoV-2 genomes sequenced; identified Alpha, Delta, Omicron variants; template for future outbreak surveillance.]
+  23. Di Tommaso, P. et al. (2017). Nextflow enables reproducible computational workflows. *Nature Biotechnology*, 35(4), 316-319. [Nextflow; DSL2 pipeline language for HPC/cloud; backbone of nf-core community pipeline library.]
+  24. Ewels, P.A. et al. (2020). The nf-core framework for community-curated bioinformatics pipelines. *Nature Biotechnology*, 38(3), 276-278. [nf-core; community-maintained Nextflow pipeline library; 100+ peer-reviewed pipelines; RNA-seq, ChIP-seq, ATAC-seq, variant calling, metagenomics.]
+  25. Heumos, L. et al. (2023). Best practices for single-cell analysis across modalities. *Nature Reviews Genetics*, 24(8), 550-572. [Definitive best-practice guide for scRNA-seq, scATAC-seq, CITE-seq, and spatial omics analysis; standard reference for the field.]
+  26. Yang, G. et al. (2024). scFoundation: Large Scale Foundation Model on Single-Cell Transcriptomics. *Nature Methods*, 21(8), 1481-1491. [scFoundation; 100M-parameter, 50M-cell pre-trained single-cell foundation model; enables zero-shot cell-type annotation and perturbation prediction.]
+  27. Wu, B. et al. (2025). Foundation models in bioinformatics. *National Science Review*, 12(4), nwaf028. [Comprehensive survey of pre-trained foundation model applications in bioinformatics; covers genomic, transcriptomic, proteomic, and multimodal biological foundation models as of 2025.]
+
+  ## Comparative Landscape: Bioinformatics Methods
+
+  - **Sequence alignment paradigms**:
+    - **Exact dynamic programming (Smith-Waterman/Needleman-Wunsch)**: Guaranteed optimal alignment; O(mn) time and space; used for short critical alignments (primer design, small gene comparison) where exactness justifies cost; not scalable to whole-genome database search.
+    - **Heuristic BLAST-family methods**: Seed-and-extend; near-linear time; the practical standard for homology search in GenBank; statistical significance evaluated via Karlin-Altschul statistics; BLAST+, DIAMOND (protein), minimap2 (long reads) are dominant implementations.
+    - **Profile-based methods (HMMER, PSI-BLAST)**: Hidden Markov Models built from multiple alignments of protein families; dramatically more sensitive than pairwise BLAST for detecting distant homologues; PFAM, TIGRFAM, and InterPro family databases use HMMER profiles.
+    - **Alignment-free methods (Mash, Dashing, Bindash)**: MinHash and HyperLogLog sketching; compare genomes in minutes at planetary scale; useful for taxonomic placement of metagenomes and de-replication of large genomic databases without full alignment.
+  - **Variant calling paradigms**:
+    - **Germline variant calling**: BWA-MEM2 alignment → GATK HaplotypeCaller (local de Bruijn re-assembly, Bayesian genotyping) or DeepVariant (CNN on pileup image tensors); FDA reference standard.
+    - **Somatic variant calling**: Mutect2 (GATK) or Strelka2 for tumour-normal paired analysis; complex because somatic mutations are subclonal (heterogeneous allele fractions) and must be distinguished from germline variants and sequencing artefacts.
+    - **Structural variant detection**: Manta (paired-end read-pair and split-read), LUMPY, PBSV (PacBio long-read); detects deletions, duplications, inversions, translocations; clinically important for cancer gene fusions and rare CNV disorders.
+    - **Long-read phasing**: WhatsHap, HapCUT2; PacBio HiFi or ONT R10.4 reads enable haplotype phasing of distant variants on the same chromosome; critical for imprinting disorders and compound heterozygosity determination.
+  - **Transcriptomics paradigm comparison**:
+    - **Alignment-based RNA-seq quantification**: STAR + RSEM; full alignment to genome; higher accuracy for novel splicing detection; required for fusion gene calling (STAR-Fusion, FusionCatcher).
+    - **Pseudo-alignment (Kallisto/Salmon)**: De Bruijn equivalence classes; 50-100× faster than STAR; accurate for differential expression where novel isoforms are not the primary interest; standard for population-scale RNA-seq.
+    - **Single-cell RNA-seq**: Cell Ranger (10x Genomics, proprietary preprocessing) → Seurat (R) or Scanpy (Python) for clustering, dimensionality reduction (PCA, UMAP), differential expression, trajectory inference (Monocle, RNA velocity).
+    - **Spatial transcriptomics**: 10x Visium (spot-level), Stereo-seq, MERFISH (single-molecule FISH-based, sub-cellular resolution); Squidpy and spatialDE for spatially-aware differential expression accounting for tissue architecture.
+  - **Foundation model integration**:
+    - Bioinformatics pipelines are increasingly incorporating protein language models (ESM-2, ESM-3, SaProt) and genomic language models (Geneformer, Evo, DNABERT-2, Nucleotide Transformer) as sequence embedding steps.
+    - Zero-shot mutation effect prediction (ESM-1v, EVE, GEMME) enables rapid functional annotation without experimental assay.
+    - scFoundation (50M cells, 100M parameters) enables zero-shot cell-type annotation and perturbation response prediction across tissue types not seen during training.
+    - Alpha Missense (Google DeepMind, 2023): predicts clinical pathogenicity for 71 million possible missense variants; trained on evolutionary constraints; reduces the variant of uncertain significance (VUS) problem.
+
+  ## Data Infrastructure and Standards
+
+  - **File formats and standards**:
+    - **FASTQ**: Raw sequencing reads; 4-line-per-read format (header, sequence, separator, quality string); Phred+33 encoding standard (Illumina 1.8+); produced by Illumina bcl2fastq, PacBio lima, ONT Guppy.
+    - **SAM/BAM/CRAM**: Sequence Alignment Map; BAM = binary compressed; CRAM = reference-compressed (40% smaller than BAM); htslib/samtools implementation; mandatory for clinical NGS pipelines.
+    - **VCF/BCF**: Variant Call Format; stores genotype calls, quality scores, filter status, and sample-level information; BCF is binary equivalent; GATK, DeepVariant, Strelka2 output VCF.
+    - **BED/BEDGraph/bigWig**: Genomic interval formats for ChIP-seq peaks, ATAC-seq accessibility, RNA-seq coverage; bigWig compressed for genome browser display.
+    - **GFF3/GTF**: Gene annotation formats; encode transcript models (exons, introns, UTRs, CDS); Ensembl and GENCODE use GTF; NCBI RefSeq uses GFF3.
+    - **AnnData (h5ad)**: HDF5-based single-cell data container; rows = cells, columns = genes; standard for Scanpy and Seurat interoperability; adopted as cross-platform standard by Human Cell Atlas.
+    - **SRA (Sequence Read Archive)**: NCBI format for archiving raw sequencing data; all published sequencing datasets must be deposited (data sharing mandate of Nature, Science, Cell, and major grant funders).
+  - **Database ecosystem**:
+    - **Sequence**: GenBank (NCBI) + EMBL-EBI ENA + DDBJ (Japan): International Nucleotide Sequence Database Collaboration; all three mirror each other daily.
+    - **Protein structure**: RCSB PDB (experimental structures) + AlphaFold DB (predicted structures, 200M+ entries, EMBL-EBI hosted).
+    - **Protein function**: UniProtKB/Swiss-Prot (manually curated, 569K entries) + TrEMBL (computationally annotated, 247M+ entries).
+    - **Genetic variation**: dbSNP (NCBI, >1 billion variants) + gnomAD v4 (807,162 sequenced individuals) + ClinVar (clinical significance classifications).
+    - **Gene expression**: GEO (Gene Expression Omnibus, NCBI) + ArrayExpress (EMBL-EBI); 3M+ biological samples.
+    - **Pathways**: KEGG, Reactome, WikiPathways; used in over-representation and gene set enrichment analyses (GSEA, fgsea).
+    - **UK-specific**: UK Biobank Data Access Portal; Genomics England Research Portal (GeCIP membership required); COG-UK viral genomics data at MRC-CLIMB (Wales).
 
 - ### Provenance
   - sources:: https://alphafold.ebi.ac.uk/, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12652821/, https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1739303/full, https://academic.oup.com/nsr/article/12/4/nwaf028/7979309, https://www.sanger.ac.uk/, https://www.wellcomegenomecampus.com/, https://www.bioinformatics.babraham.ac.uk/, https://biotechnologyjobs.co.uk/career-advice/bioinformatics-jobs-uk-2026

@@ -210,6 +210,10 @@
       "label": "Accuracy"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
       "slug": "confusion-matrix",
       "label": "Confusion Matrix"
     },

@@ -45,6 +45,18 @@
       "label": "Audio Synthesis"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
+    },
+    {
+      "slug": "control-net",
+      "label": "controlnet"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

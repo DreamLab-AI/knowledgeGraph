@@ -301,6 +301,18 @@
       "label": "Audio Synthesis"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    },
+    {
       "slug": "generative-ai",
       "label": "Generative AI"
     },

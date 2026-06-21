@@ -126,8 +126,20 @@
       "label": "API Gateway"
     },
     {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
+      "slug": "container",
+      "label": "Container"
+    },
+    {
       "slug": "distributed-computing",
       "label": "Distributed Computing"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
     }
   ]
 }

@@ -142,6 +142,10 @@
       "label": "Classification Rules"
     },
     {
+      "slug": "closed-world-assumption",
+      "label": "Closed World Assumption"
+    },
+    {
       "slug": "domain-ontology",
       "label": "Domain Ontology"
     },

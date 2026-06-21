@@ -621,6 +621,18 @@
       "label": "Bio Terror"
     },
     {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
       "slug": "cortex-agent",
       "label": "Cortex Agent"
     },

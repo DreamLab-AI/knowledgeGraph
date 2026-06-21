@@ -39,6 +39,10 @@
     {
       "slug": "checkpoints",
       "label": "Checkpoints"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
     }
   ]
 }

@@ -132,6 +132,10 @@
       "label": "Autonomous Agent"
     },
     {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
       "slug": "expert-systems",
       "label": "Expert Systems"
     },

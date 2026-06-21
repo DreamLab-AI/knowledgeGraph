@@ -144,6 +144,14 @@
       "label": "Applied Mathematics"
     },
     {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
       "slug": "control-algorithm",
       "label": "Control Algorithm"
     },

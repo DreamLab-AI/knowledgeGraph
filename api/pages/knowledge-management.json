@@ -132,6 +132,14 @@
       "label": "Collaborative Whiteboard"
     },
     {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
+    },
+    {
       "slug": "digital-workplace-platform",
       "label": "Digital Workplace Platform"
     },

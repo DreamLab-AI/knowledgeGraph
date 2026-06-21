@@ -304,8 +304,40 @@
       "label": "Bayesian Knowledge Tracing"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "cognitive-psychology",
+      "label": "Cognitive Psychology"
+    },
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
+    },
+    {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
+    },
+    {
+      "slug": "content-moderation",
+      "label": "Content Moderation"
     },
     {
       "slug": "feature-attribution",

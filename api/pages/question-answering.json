@@ -164,6 +164,22 @@
       "label": "Benchmark Evaluation"
     },
     {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
+      "slug": "computational-linguistics",
+      "label": "Computational Linguistics"
+    },
+    {
       "slug": "dialogue-system",
       "label": "Dialogue System"
     },

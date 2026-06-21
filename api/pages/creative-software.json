@@ -77,6 +77,10 @@
   ],
   "backlinks": [
     {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
       "slug": "digital-art-application",
       "label": "Digital Art Application"
     }

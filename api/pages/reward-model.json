@@ -153,6 +153,10 @@
       "label": "Alignment"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
       "slug": "model-training",
       "label": "Model Training"
     },

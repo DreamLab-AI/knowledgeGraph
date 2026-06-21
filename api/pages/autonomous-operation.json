@@ -313,6 +313,10 @@
       "label": "Autonomous Task Execution"
     },
     {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
+    },
+    {
       "slug": "robot-hardware",
       "label": "Robot Hardware"
     }

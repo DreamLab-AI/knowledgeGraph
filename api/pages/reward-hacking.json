@@ -92,6 +92,10 @@
       "label": "AI Safety"
     },
     {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
       "slug": "alignment",
       "label": "Alignment"
     }

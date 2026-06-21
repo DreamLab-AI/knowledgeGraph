@@ -161,8 +161,16 @@
       "label": "Checkpoints"
     },
     {
+      "slug": "continuous-batching",
+      "label": "Continuous Batching"
+    },
+    {
       "slug": "inference-layer",
       "label": "Inference Layer"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
     },
     {
       "slug": "lo-ra-do-ra-etc",

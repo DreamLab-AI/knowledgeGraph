@@ -1,12 +1,12 @@
 {
-  "total_pages": 7445,
-  "pages_with_ontology": 7445,
-  "public_pages": 7431,
-  "total_issues": 906,
+  "total_pages": 7458,
+  "pages_with_ontology": 7458,
+  "public_pages": 7444,
+  "total_issues": 935,
   "errors": 0,
-  "warnings": 906,
+  "warnings": 935,
   "by_code": {
-    "MULTI_PARENT": 904,
+    "MULTI_PARENT": 933,
     "INVALID_DOMAIN": 2
   },
   "issues": [
@@ -357,6 +357,24 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Affective Computing, Human-Computer Interaction"
+    },
+    {
+      "path": "Agent Development SDKs.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Agent Harness, Agent Frameworks"
+    },
+    {
+      "path": "Agent Evaluation Benchmarks.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Agent Harness, LLM Evaluation"
+    },
+    {
+      "path": "Agent Execution Sandboxes.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Agent Harness, AI Infrastructure"
     },
     {
       "path": "Agent Memory.md",
@@ -1013,10 +1031,40 @@
       "message": "Multiple parents (2): Actuation and Control, Control System"
     },
     {
+      "path": "Clustering.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Unsupervised Learning, Machine Learning"
+    },
+    {
+      "path": "Code Generation.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Generative AI, Program Synthesis"
+    },
+    {
       "path": "Cognitive AI.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Research Area, AI Research Area, AI Research Area"
+    },
+    {
+      "path": "Cognitive Psychology.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Cognitive Science, Psychology"
+    },
+    {
+      "path": "Cognitive Science.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Artificial Intelligence, Interdisciplinary Science"
+    },
+    {
+      "path": "Cohere.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Large Language Models, Enterprise AI"
     },
     {
       "path": "Coin.md",
@@ -1049,16 +1097,40 @@
       "message": "Multiple parents (2): Cryptographic Primitive, Blockchain Entity"
     },
     {
+      "path": "ComfyUI API Specification.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): ComfyUI Workflows, REST API"
+    },
+    {
       "path": "ComfyUI Client.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): AI Infrastructure, AI Infrastructure, AI Infrastructure"
     },
     {
+      "path": "ComfyUI Manager.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Application, Package Manager"
+    },
+    {
       "path": "ComfyUI for Fashion and Brands.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): AI Application, Node-Based Diffusion Pipeline Interface"
+    },
+    {
+      "path": "Common Crawl.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Training Data, Open Data"
+    },
+    {
+      "path": "Common Sense Reasoning.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Natural Language Understanding, Reasoning"
     },
     {
       "path": "Communication Software.md",
@@ -1091,10 +1163,34 @@
       "message": "Multiple parents (2): Standards and Interoperability, Technical Standards"
     },
     {
+      "path": "Competency Based Education.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Education Technology, Mastery Learning"
+    },
+    {
       "path": "Compliance Control.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Legal and Regulatory, Security and Identity"
+    },
+    {
+      "path": "Computability Theory.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Computational Complexity Theory, Mathematical Logic"
+    },
+    {
+      "path": "Computational Biology.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Data Science, Scientific Computing"
+    },
+    {
+      "path": "Computational Complexity Theory.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Theoretical Computer Science, AI Research Area"
     },
     {
       "path": "Computational Component.md",
@@ -1103,16 +1199,70 @@
       "message": "Multiple parents (2): AI Infrastructure, Component"
     },
     {
+      "path": "Computational Creativity.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Research Area, Artificial Intelligence"
+    },
+    {
+      "path": "Computational Intelligence.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Artificial Intelligence, AI Research Area"
+    },
+    {
+      "path": "Computational Photography.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Image Processing, Computational Imaging"
+    },
+    {
       "path": "Compute Infrastructure.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Computing and Cloud, Computing Infrastructure"
     },
     {
+      "path": "Concept Art.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Application, Visual Development"
+    },
+    {
+      "path": "Concept Drift.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Technique, Machine Learning"
+    },
+    {
+      "path": "Conformal Prediction.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Machine Learning Technique, Uncertainty Quantification"
+    },
+    {
       "path": "Consensus Rule.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (3): Protocol and Consensus, Blockchain Entity, Consensus Protocol"
+    },
+    {
+      "path": "Constraint Based Design.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Technique, Constraint Satisfaction"
+    },
+    {
+      "path": "Constraint Satisfaction.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): AI Technique, Combinatorial Optimisation"
+    },
+    {
+      "path": "Constraint Solver.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Optimization Algorithm, Inference Engine"
     },
     {
       "path": "Construction Digital Twin.md",
@@ -1131,6 +1281,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Network and Communication, Network Infrastructure"
+    },
+    {
+      "path": "Content Generation.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Generative AI, AI Application Domain"
     },
     {
       "path": "Content Moderation.md",
@@ -1161,6 +1317,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Actuation and Control, Control System"
+    },
+    {
+      "path": "ControlNet Conditioning.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (3): Generative Model, AI Technique, Adapter Tuning"
     },
     {
       "path": "ControlNet and Similar Spatial Conditioning Systems.md",
@@ -1961,6 +2123,12 @@
       "message": "Multiple parents (2): Platform and Environment, Immersive Technology"
     },
     {
+      "path": "External AI Harness.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Agent Harness, Evaluation Harness"
+    },
+    {
       "path": "Eye Tracking.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -2505,6 +2673,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): DeFi and Economics, Cryptocurrency"
+    },
+    {
+      "path": "Internal AI Harness.md",
+      "severity": "warning",
+      "code": "MULTI_PARENT",
+      "message": "Multiple parents (2): Agent Harness, Evaluation Harness"
     },
     {
       "path": "Investment Management.md",

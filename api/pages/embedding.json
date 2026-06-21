@@ -150,6 +150,14 @@
       "label": "Attention"
     },
     {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
       "slug": "large-language-models",
       "label": "Large Language Models"
     },

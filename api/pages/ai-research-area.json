@@ -118,8 +118,20 @@
       "label": "Active Learning"
     },
     {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
       "slug": "agent-frameworks",
       "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
     },
     {
       "slug": "agents",
@@ -164,6 +176,14 @@
     {
       "slug": "collective-intelligence-system",
       "label": "Collective Intelligence System"
+    },
+    {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
+      "slug": "computational-intelligence",
+      "label": "Computational Intelligence"
     },
     {
       "slug": "computer-use-and-browser-agents",
@@ -360,6 +380,10 @@
     {
       "slug": "synthetic-data-generator",
       "label": "Synthetic Data Generator"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
     },
     {
       "slug": "training-and-fine-tuning",

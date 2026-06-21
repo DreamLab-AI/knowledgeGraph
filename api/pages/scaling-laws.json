@@ -112,6 +112,10 @@
       "label": "California AI bill"
     },
     {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
       "slug": "emergence",
       "label": "Emergence"
     },

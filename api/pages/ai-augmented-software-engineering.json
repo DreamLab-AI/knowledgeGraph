@@ -84,6 +84,10 @@
   ],
   "backlinks": [
     {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
       "slug": "ms-phi-models",
       "label": "MS Phi models"
     }

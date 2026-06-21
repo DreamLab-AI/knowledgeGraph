@@ -150,6 +150,10 @@
       "label": "Beam Search"
     },
     {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
       "slug": "search-algorithm",
       "label": "Search Algorithm"
     }

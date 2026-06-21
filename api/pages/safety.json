@@ -181,6 +181,10 @@
       "label": "Autonomy Level"
     },
     {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
       "slug": "product-liability",
       "label": "Product Liability"
     },

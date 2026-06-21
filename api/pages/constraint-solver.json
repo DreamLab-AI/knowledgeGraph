@@ -10,10 +10,14 @@
     {
       "id": "urn:ngm:class:optimization-algorithm",
       "label": "Optimization Algorithm"
+    },
+    {
+      "id": "urn:ngm:class:inference-engine",
+      "label": "Inference Engine"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -28,16 +32,32 @@
       {
         "id": "urn:ngm:class:arc-consistency",
         "label": "Arc Consistency"
+      },
+      {
+        "id": "urn:ngm:class:variable-ordering-heuristic",
+        "label": "Variable Ordering Heuristic"
+      },
+      {
+        "id": "urn:ngm:class:branch-and-bound",
+        "label": "Branch and Bound"
+      },
+      {
+        "id": "urn:ngm:class:local-search",
+        "label": "Local Search"
       }
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:constraint",
-        "label": "Constraint"
+        "id": "urn:ngm:class:constraint-satisfaction",
+        "label": "Constraint Satisfaction"
       },
       {
         "id": "urn:ngm:class:search-algorithm",
         "label": "Search Algorithm"
+      },
+      {
+        "id": "urn:ngm:class:propositional-logic",
+        "label": "Propositional Logic"
       }
     ],
     "enables": [
@@ -60,6 +80,14 @@
       {
         "id": "urn:ngm:class:combinatorial-optimisation",
         "label": "Combinatorial Optimisation"
+      },
+      {
+        "id": "urn:ngm:class:physics-simulation",
+        "label": "Physics Simulation"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-optimisation",
+        "label": "Supply Chain Optimisation"
       }
     ],
     "dependsOn": [],
@@ -72,6 +100,10 @@
       {
         "id": "urn:ngm:class:neural-network",
         "label": "Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:local-search",
+        "label": "Local Search"
       }
     ],
     "bridgesTo": [
@@ -82,6 +114,10 @@
       {
         "id": "urn:ngm:class:spatial-computing",
         "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:operations-research",
+        "label": "Operations Research"
       }
     ],
     "uses": [
@@ -90,8 +126,8 @@
         "label": "Logic Programming"
       },
       {
-        "id": "urn:ngm:class:sat-solving",
-        "label": "SAT Solving"
+        "id": "urn:ngm:class:satisfiability",
+        "label": "Satisfiability"
       },
       {
         "id": "urn:ngm:class:smt-solving",
@@ -100,6 +136,14 @@
       {
         "id": "urn:ngm:class:linear-programming",
         "label": "Linear Programming"
+      },
+      {
+        "id": "urn:ngm:class:interval-arithmetic",
+        "label": "Interval Arithmetic"
+      },
+      {
+        "id": "urn:ngm:class:heuristic-search",
+        "label": "Heuristic Search"
       }
     ],
     "supports": [
@@ -110,6 +154,18 @@
       {
         "id": "urn:ngm:class:computer-aided-design",
         "label": "Computer-Aided Design"
+      },
+      {
+        "id": "urn:ngm:class:constraint-based-design",
+        "label": "Constraint Based Design"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
       }
     ],
     "standardizedBy": [],
@@ -126,11 +182,200 @@
       {
         "id": "urn:ngm:class:mixed-integer-programming",
         "label": "Mixed-Integer Programming"
+      },
+      {
+        "id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neuro-Symbolic AI"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      },
+      {
+        "id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-propagation",
+      "label": "Constraint Propagation"
+    },
+    {
+      "slug": "backtracking-search",
+      "label": "Backtracking Search"
+    },
+    {
+      "slug": "arc-consistency",
+      "label": "Arc Consistency"
+    },
+    {
+      "slug": "search-algorithm",
+      "label": "Search Algorithm"
+    },
+    {
+      "slug": "automated-planning",
+      "label": "Automated Planning"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "Motion Planning"
+    },
+    {
+      "slug": "planning-and-scheduling",
+      "label": "Planning and Scheduling"
+    },
+    {
+      "slug": "formal-verification",
+      "label": "Formal Verification"
+    },
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "logic-programming",
+      "label": "Logic Programming"
+    },
+    {
+      "slug": "satisfiability",
+      "label": "Satisfiability"
+    },
+    {
+      "slug": "smt-solving",
+      "label": "SMT Solving"
+    },
+    {
+      "slug": "linear-programming",
+      "label": "Linear Programming"
+    },
+    {
+      "slug": "physics-simulation",
+      "label": "Physics Simulation"
+    },
+    {
+      "slug": "computer-aided-design",
+      "label": "Computer-Aided Design"
+    },
+    {
+      "slug": "heuristic-search",
+      "label": "Heuristic Search"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "trajectory-planning",
+      "label": "Trajectory Planning"
+    },
+    {
+      "slug": "mixed-integer-programming",
+      "label": "Mixed-Integer Programming"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "slug": "symbolic-ai",
+      "label": "Symbolic AI"
+    },
+    {
+      "slug": "branch-and-bound",
+      "label": "Branch and Bound"
+    },
+    {
+      "slug": "operations-research",
+      "label": "Operations Research"
+    },
+    {
+      "slug": "neuro-symbolic-ai",
+      "label": "Neuro-Symbolic AI"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "graph-neural-network",
+      "label": "Graph Neural Network"
+    },
+    {
+      "slug": "quantum-computing",
+      "label": "Quantum Computing"
+    },
+    {
+      "slug": "gpu-computing",
+      "label": "GPU Computing"
+    },
+    {
+      "slug": "propositional-logic",
+      "label": "Propositional Logic"
+    },
+    {
+      "slug": "supply-chain-optimisation",
+      "label": "Supply Chain Optimisation"
+    },
+    {
+      "slug": "decision-making",
+      "label": "Decision Making"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "interval-arithmetic",
+      "label": "Interval Arithmetic"
+    },
+    {
+      "slug": "local-search",
+      "label": "Local Search"
+    },
+    {
+      "slug": "graph-theory",
+      "label": "Graph Theory"
+    },
+    {
+      "slug": "variable-ordering-heuristic",
+      "label": "Variable Ordering Heuristic"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "constraint-based-design",
+      "label": "Constraint Based Design"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
+    },
     {
       "slug": "generative-design-tool",
       "label": "Generative Design Tool"

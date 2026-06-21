@@ -46,6 +46,10 @@
       "label": "CRDT"
     },
     {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
       "slug": "fault-tolerance",
       "label": "Fault Tolerance"
     }

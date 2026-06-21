@@ -105,6 +105,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
       "slug": "data-lake",
       "label": "Data Lake"
     }

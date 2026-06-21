@@ -207,6 +207,10 @@
       "label": "Algorithmic Accountability"
     },
     {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
       "slug": "ethical-ai",
       "label": "Ethical AI"
     },

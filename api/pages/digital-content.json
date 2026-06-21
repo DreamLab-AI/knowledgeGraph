@@ -137,6 +137,10 @@
       "label": "Audience Engagement"
     },
     {
+      "slug": "content-creation",
+      "label": "Content Creation"
+    },
+    {
       "slug": "narrative-content",
       "label": "Narrative Content"
     }

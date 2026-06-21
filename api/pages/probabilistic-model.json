@@ -557,6 +557,10 @@
       "label": "Bayesian Optimisation"
     },
     {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "normalising-flow",
       "label": "Normalising Flow"
     },

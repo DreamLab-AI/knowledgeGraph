@@ -201,12 +201,28 @@
       "label": "Benchmark Dataset"
     },
     {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
       "slug": "compliance-control",
       "label": "Compliance Control"
     },
     {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "component",
+      "label": "Component"
+    },
+    {
+      "slug": "content-discovery",
+      "label": "Content Discovery"
     },
     {
       "slug": "data-anonymization-pipeline",

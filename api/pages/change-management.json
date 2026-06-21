@@ -119,6 +119,14 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
       "slug": "digital-transformation",
       "label": "Digital Transformation"
     },

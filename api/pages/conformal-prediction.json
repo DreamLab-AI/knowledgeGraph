@@ -5,37 +5,324 @@
   "public": true,
   "classIri": "urn:ngm:class:conformal-prediction",
   "domain": "ai",
-  "definition": "Conformal prediction is a distribution-free framework for quantifying predictive uncertainty by producing prediction sets that contain the true outcome with a user-specified probability. Using a held-out calibration set and a nonconformity score, it provides finite-sample, model-agnostic coverage guarantees under the exchangeability assumption. It wraps around any underlying point predictor to deliver statistically valid confidence regions.",
+  "definition": "Conformal prediction is a distribution-free, model-agnostic framework for producing statistically valid prediction sets or intervals that are guaranteed to contain the true outcome with a user-specified probability, using only the mild assumption of exchangeability over the data. A held-out calibration set and a nonconformity score function are sufficient to construct finite-sample marginal coverage guarantees for any base predictor \u2014 ranging from linear models and neural networks to Gaussian processes and large language models. The framework unifies classification (prediction sets), regression (prediction intervals), and sequence generation (conformal risk control), and has become a cornerstone method for trustworthy AI deployment in safety-critical and regulated domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:machine-learning-discipline-technique",
       "label": "Machine Learning Technique"
+    },
+    {
+      "id": "urn:ngm:class:uncertainty-quantification",
+      "label": "Uncertainty Quantification"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.72,
+  "qualityScore": 0.9,
   "maturity": "emerging",
   "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:nonconformity-score",
+        "label": "Nonconformity Score"
+      },
+      {
+        "id": "urn:ngm:class:calibration-set",
+        "label": "Calibration Set"
+      },
+      {
+        "id": "urn:ngm:class:prediction-interval",
+        "label": "Prediction Interval"
+      },
+      {
+        "id": "urn:ngm:class:coverage-guarantee",
+        "label": "Coverage Guarantee"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:exchangeability",
+        "label": "Exchangeability"
+      },
+      {
+        "id": "urn:ngm:class:calibration",
+        "label": "Calibration"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "id": "urn:ngm:class:selective-prediction",
+        "label": "Selective Prediction"
+      }
+    ],
     "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
+    "implements": [
+      {
+        "id": "urn:ngm:class:frequentist-statistics",
+        "label": "Frequentist Statistics"
+      },
+      {
+        "id": "urn:ngm:class:hypothesis-testing",
+        "label": "Hypothesis Testing"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:gaussian-process",
+        "label": "Gaussian Process"
+      }
+    ],
     "bridgesTo": [],
     "uses": [],
-    "supports": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:medical-imaging",
+        "label": "Medical Imaging"
+      },
+      {
+        "id": "urn:ngm:class:drug-discovery",
+        "label": "Drug Discovery"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-systems",
+        "label": "Autonomous Systems"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
     "standardizedBy": [],
     "partOf": [],
     "relatedTo": [
       {
         "id": "urn:ngm:class:probabilistic-model",
         "label": "Probabilistic Model"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "id": "urn:ngm:class:bayesian-deep-learning",
+        "label": "Bayesian Deep Learning"
+      },
+      {
+        "id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "id": "urn:ngm:class:model-calibration",
+        "label": "Model Calibration"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "uncertainty-quantification",
+      "label": "Uncertainty Quantification"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "statistical-learning",
+      "label": "Statistical Learning"
+    },
+    {
+      "slug": "calibration",
+      "label": "Calibration"
+    },
+    {
+      "slug": "nonconformity-score",
+      "label": "Nonconformity Score"
+    },
+    {
+      "slug": "exchangeability",
+      "label": "Exchangeability"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "frequentist-statistics",
+      "label": "Frequentist Statistics"
+    },
+    {
+      "slug": "gaussian-process",
+      "label": "Gaussian Process"
+    },
+    {
+      "slug": "neural-network",
+      "label": "Neural Network"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "regression",
+      "label": "Regression"
+    },
+    {
+      "slug": "prediction-interval",
+      "label": "Prediction Interval"
+    },
+    {
+      "slug": "coverage-guarantee",
+      "label": "Coverage Guarantee"
+    },
+    {
+      "slug": "hypothesis-testing",
+      "label": "Hypothesis Testing"
+    },
+    {
+      "slug": "anomaly-detection",
+      "label": "Anomaly Detection"
+    },
+    {
+      "slug": "drug-discovery",
+      "label": "Drug Discovery"
+    },
+    {
+      "slug": "medical-imaging",
+      "label": "Medical Imaging"
+    },
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "autonomous-systems",
+      "label": "Autonomous Systems"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "model-calibration",
+      "label": "Model Calibration"
+    },
+    {
+      "slug": "ensemble-methods",
+      "label": "Ensemble Methods"
+    },
+    {
+      "slug": "bayesian-deep-learning",
+      "label": "Bayesian Deep Learning"
+    },
+    {
+      "slug": "loss-function",
+      "label": "Loss Function"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "monte-carlo-methods",
+      "label": "Monte Carlo Methods"
+    },
+    {
+      "slug": "active-learning",
+      "label": "Active Learning"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "Computer Vision"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "interpretability",
+      "label": "Interpretability"
+    },
+    {
+      "slug": "model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "slug": "cross-validation",
+      "label": "Cross Validation"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "distribution-shift",
+      "label": "Distribution Shift"
+    },
+    {
+      "slug": "selective-prediction",
+      "label": "Selective Prediction"
+    },
+    {
+      "slug": "fairness-in-machine-learning",
+      "label": "Fairness in Machine Learning"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "classification",
+      "label": "Classification"
+    },
     {
       "slug": "probabilistic-model",
       "label": "Probabilistic Model"

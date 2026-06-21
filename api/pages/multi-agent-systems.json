@@ -163,6 +163,14 @@
       "label": "Adaptive Behaviour"
     },
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
       "slug": "agent-based-modelling",
       "label": "Agent-Based Modelling"
     },
@@ -195,6 +203,14 @@
       "label": "CLI Multi-Agent Systems"
     },
     {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    },
+    {
       "slug": "dao-tooling",
       "label": "DAO Tooling"
     },
@@ -205,6 +221,10 @@
     {
       "slug": "distributed-decision-making",
       "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
     },
     {
       "slug": "multi-agent-coordination",
@@ -221,6 +241,10 @@
     {
       "slug": "task-planning",
       "label": "Task Planning"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
     },
     {
       "slug": "variational-autoencoders",

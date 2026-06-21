@@ -137,5 +137,10 @@
     ]
   },
   "wikilinks": [],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    }
+  ]
 }

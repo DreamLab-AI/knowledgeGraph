@@ -119,6 +119,10 @@
       "label": "API Gateway"
     },
     {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
       "slug": "agent-runtime",
       "label": "Agent Runtime"
     },
@@ -129,6 +133,10 @@
     {
       "slug": "agent2-agent-protocol-google-2025",
       "label": "Agent2Agent Protocol (Google 2025)"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
     },
     {
       "slug": "x402-and-l402-payment-protocols",

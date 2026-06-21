@@ -43,6 +43,10 @@
     {
       "slug": "cli-multi-agent-systems",
       "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
     }
   ]
 }

@@ -518,6 +518,10 @@
       "label": "Audience Engagement"
     },
     {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
       "slug": "knowledge-distillation",
       "label": "Knowledge Distillation"
     },

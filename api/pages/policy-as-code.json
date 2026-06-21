@@ -92,6 +92,10 @@
     {
       "slug": "compliance-monitoring",
       "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
     }
   ]
 }

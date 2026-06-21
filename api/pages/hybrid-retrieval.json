@@ -54,6 +54,10 @@
       "label": "BM25"
     },
     {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
       "slug": "semantic-search",
       "label": "Semantic Search"
     }

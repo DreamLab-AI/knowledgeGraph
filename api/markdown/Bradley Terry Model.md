@@ -207,6 +207,22 @@ public:: true
         ObjectSomeValuesFrom(ai:reducesTo ai:BinaryClassification))
       SubClassOf(ai:BradleyTerryModel
         ObjectSomeValuesFrom(ai:reducesTo ai:EloRatingSystem))
+      SubClassOf(ai:BradleyTerryModel
+        ObjectSomeValuesFrom(ai:reducesTo ai:DiscreteChoiceModel))
+
+  ## Contrastive Relationships
+      SubClassOf(ai:BradleyTerryModel
+        ObjectSomeValuesFrom(ai:contrastsWith ai:ThurstoneModel))
+      SubClassOf(ai:BradleyTerryModel
+        ObjectSomeValuesFrom(ai:contrastsWith ai:KahnemanTverskyOptimisation))
+      SubClassOf(ai:BradleyTerryModel
+        ObjectSomeValuesFrom(ai:contrastsWith ai:IdentityPreferenceOptimisation))
+      SubClassOf(ai:BradleyTerryModel
+        ObjectSomeValuesFrom(ai:contrastsWith ai:PlackettLuceModel))
+      SubClassOf(ai:BradleyTerryModel
+        ObjectSomeValuesFrom(ai:contrastsWith ai:GameTheoreticRanking))
+      SubClassOf(ai:BradleyTerryModel
+        ObjectSomeValuesFrom(ai:contrastsWith ai:TrueSkillModel))
 
   ## About
 
@@ -276,39 +292,109 @@ public:: true
 
   ## Components / Architecture
 
-  **Latent strength parameters (β_i)**: Real-valued per-item scores estimated from data. Scale is not identifiable; typically anchored by setting one score to zero or constraining the sum. The logit differences β_i − β_j are the predictive quantities.
+  **Latent strength parameters (β_i)**
+  - Real-valued per-item scores estimated from comparison data
+  - Scale is not identifiable: only differences β_i − β_j affect predictions
+  - Typically anchored by setting one score to zero, or constraining Σβ_i = 0
+  - The logit differences β_i − β_j are the sole predictive quantities
+  - Range: −∞ to +∞; higher β_i means item i is predicted to win more often
 
-  **Logistic win-probability**: P(i > j | β) = σ(β_i − β_j) = 1 / (1 + exp(−(β_i − β_j))). This is the Bernoulli observation model. Each observed comparison is an independent Bernoulli draw with this success probability.
+  **Logistic win-probability**
+  - P(i > j | β) = σ(β_i − β_j) = 1 / (1 + exp(−(β_i − β_j)))
+  - This is the Bernoulli observation model for each comparison
+  - Each observed comparison is an independent Bernoulli draw with this success probability
+  - The logistic function maps any real difference to a probability in (0,1)
+  - Symmetric: P(i beats j) + P(j beats i) = 1 exactly (no ties in basic model)
 
-  **Comparison graph**: An undirected graph where items are nodes and an edge exists for each observed comparison pair. Connectivity is required for MLE identifiability. Disconnected components cannot be jointly ranked.
+  **Comparison graph**
+  - An undirected graph G = (V, E) where items are nodes
+  - An edge (i,j) exists for each pair that has been compared at least once
+  - Connectivity is required for MLE identifiability (unique finite estimates)
+  - Disconnected components: items in different components cannot be jointly ranked
+  - In LLM alignment: the comparison graph has millions of response-pairs as nodes; typically very sparse
 
-  **Tie extension (Rao-Kupper)**: Introduces a threshold parameter ν such that a tie results when |β_i − β_j| < ν, producing a three-outcome Bernoulli observation model with three possible outcomes: win, loss, draw.
+  **Tie extension (Rao-Kupper 1967)**
+  - Introduces a threshold parameter ν > 0 for the tie region
+  - A tie occurs when |β_i − β_j| < ν; win when β_i − β_j > ν; loss when < −ν
+  - Three-outcome Bernoulli observation model: P(win) + P(tie) + P(loss) = 1
+  - Parameter ν estimated jointly with the β_i scores from tie/win/loss data
+  - Widely used in chess rating systems and association football (where draws are common)
 
-  **Dynamic extension**: Time-varying strengths β_i(t) modelled as random walks or splines, estimated by state-space EM or Kalman filtering. Used for evolving competition contexts (chess ratings over seasons, LLM evaluation across versions).
+  **Dynamic extension**
+  - Time-varying strengths β_i(t) modelled as random walks or cubic splines
+  - State-space model: β_i(t+1) = β_i(t) + ε_t, ε_t ~ N(0, σ^2_drift)
+  - Estimated by state-space EM algorithm or Kalman filtering and smoothing
+  - Used for: chess ratings over seasons, LLM evaluation across model versions, evolving sports team strength
+  - Nonparametric variant (arXiv:2003.00083): kernel-smoothed time-varying BT
 
-  **Covariate extension**: β_i = x_i^T γ where x_i is an item feature vector; enables generalisation to unseen items by learning the mapping γ from features to strength. Used when items have descriptive features and out-of-sample ranking is needed.
+  **Covariate extension**
+  - β_i = x_i^T γ where x_i is an item feature vector, γ is learned coefficient vector
+  - Enables generalisation to unseen items by learning the mapping γ from features to strength
+  - Used when items have descriptive features and out-of-sample ranking is needed
+  - In LLM contexts: response features (length, perplexity, topic) predict reward
+  - Reduces to standard BT when no features are available (γ = item-specific parameters)
 
-  **Bayesian extension**: Priors on β parameters (e.g. Gaussian, Dirichlet) regularise estimation when data is sparse. The posterior mode corresponds to L2-regularised BT MLE. Full Bayesian inference via MCMC or variational methods provides uncertainty quantification.
+  **Bayesian extension**
+  - Priors on β parameters regularise estimation when data is sparse
+  - Gaussian prior: β_i ~ N(μ, σ²_prior); posterior mode = L2-regularised BT MLE
+  - Dirichlet prior on weights w_i = exp(β_i): natural conjugate for Luce's model
+  - Full Bayesian inference via MCMC (Gibbs sampling, Hamiltonian Monte Carlo) provides uncertainty quantification
+  - Posterior predictive interval on P(i beats j) captures annotation noise and estimation uncertainty
 
   ## Major Variants and Extensions
 
-  **Bradley-Terry-Luce (BTL)**: Extends the pairwise model to n-ary choice via Luce's choice axiom; P(choose i from set S) = exp(β_i) / Σ_{j ∈ S} exp(β_j). Equivalent to Plackett-Luce for full rankings.
+  **Bradley-Terry-Luce (BTL)**
+  - Extends the pairwise model to n-ary choice via Luce's choice axiom
+  - P(choose i from set S) = exp(β_i) / Σ_{j ∈ S} exp(β_j)
+  - Equivalent to Plackett-Luce for full rankings via chain rule of choices
+  - Satisfies independence of irrelevant alternatives (IIA): choice probabilities unchanged by adding/removing unchosen alternatives
+  - IIA is both a strength (tractability) and a weakness (violated by real choice behaviour)
 
-  **Rao-Kupper model (1967)**: Adds a tie region; widely used in chess and association football where draws are common.
+  **Rao-Kupper model (1967)**
+  - Adds a tie region parameterised by threshold ν > 0
+  - Three-outcome model: win probability P(i>j) = P(β_i−β_j > ν); draw when |difference| < ν
+  - Widely used in chess and association football where draws are frequent outcomes
+  - Parameter ν estimated jointly with strength parameters β_i from data
 
-  **Davidson model (1970)**: Alternative tie model with explicit tie-affinity parameter δ; P(tie) ∝ δ√(exp(β_i)·exp(β_j)).
+  **Davidson model (1970)**
+  - Alternative tie model with explicit tie-affinity parameter δ ≥ 0
+  - P(tie) ∝ δ√(exp(β_i)·exp(β_j)); larger δ means more ties expected
+  - More flexible tie structure than Rao-Kupper for data with heterogeneous tie rates
 
-  **Dynamic BT**: Time-dependent strengths for evolving competitions; used in online leaderboard systems and season-by-season sports analysis.
+  **Dynamic BT**
+  - Time-dependent strengths β_i(t) for evolving competitions
+  - Random walk model: β_i(t) = β_i(t-1) + N(0,σ²) per time period
+  - Used in online leaderboard systems, season-by-season sports analysis, LLM benchmark tracking
+  - Nonparametric version uses kernel smoothing or spline fitting over time
 
-  **Covariate BT**: Item features predict strength, enabling out-of-sample ranking prediction for items never directly compared.
+  **Covariate BT**
+  - Item features x_i predict strength via β_i = x_i^T γ
+  - Enables out-of-sample ranking prediction for items never directly compared
+  - Useful for ranking new items using only their descriptive features
+  - In LLM contexts: model architecture features predict expected BT strength
 
-  **Bayesian BT**: Priors on β parameters reduce overfit when data is sparse; used in LLM reward modelling with sparse human annotations.
+  **Bayesian BT**
+  - Gaussian or Dirichlet priors on β parameters reduce overfit for sparse data
+  - Posterior mode corresponds to L2-regularised BT MLE; full MCMC gives full posterior
+  - Used in LLM reward modelling with sparse human annotations per response pair
+  - Provides uncertainty estimates: crucial for calibrated reward models
 
-  **Generalised BT**: Replaces logistic link with arbitrary CDFs (probit, Cauchy), capturing non-logistic preference behaviour.
+  **Generalised BT**
+  - Replaces logistic link function with arbitrary CDFs (probit, Cauchy, asymmetric)
+  - Probit variant: P(i>j) = Φ((β_i−β_j)/σ) — equivalent to Thurstone's law of comparative judgement
+  - Asymmetric CDFs can model home-field advantage or systematic annotator biases
 
-  **Plackett-Luce**: Full ranking generalisation; the likelihood factorises into a product of BT terms over successive position choices.
+  **Plackett-Luce**
+  - Full ranking generalisation of BTL: rank n items from best to worst
+  - Likelihood factorises: L(β) = Π_{position k} [exp(β_{i_k}) / Σ_{j ≥ k} exp(β_{i_j})]
+  - Equivalent to sequentially choosing the next best item via Luce's axiom
+  - Used when full rankings (not just pairs) are available from human annotators
 
-  **Preference Matching RLHF (2024)**: Extends BT to provably prevent preference collapse by adding a distribution-matching regularisation term over the joint preference distribution under the Plackett-Luce model.
+  **Preference Matching RLHF (PM-RLHF, 2024)**
+  - Extends BT training to prevent preference collapse
+  - Adds distribution-matching regularisation term to the BT loss
+  - Provably aligns the trained policy with the preference distribution under Plackett-Luce model
+  - Prevents the degenerate outcome where BT loss drives low-quality responses to zero probability
 
   ## Use Cases
 
@@ -322,13 +408,45 @@ public:: true
   The Elo chess rating system is a sequential-update approximation of Bradley-Terry MLE. The English Football Association and FIFA use BT-derived systems; academic analysis of Premier League results routinely estimates Bradley-Terry parameters to quantify team strength trajectories across seasons. The 2024 paper "Alternative Ranking Measures to Predict International Football Results" (arXiv:2405.10247) benchmarks BT against alternative ranking methods for international football. In tennis, BTL models are applied to ATP and WTA rankings.
 
   **4. Academic Journal and Conference Ranking**
-  Bradley-Terry has been applied to rank scientific journals by citation strength (journals that receive more citations from other highly-cited journals rank higher) and to assess peer review quality by modelling reviewer agreement on relative paper quality. NeurIPS and ICML programme committees use BT-based aggregation to convert reviewer rankings into acceptance decisions.
+  Bradley-Terry has been applied to rank scientific journals by citation strength — journals that receive more citations from other highly-cited journals receive higher BT scores, yielding an eigenvector-based ranking analogous to PageRank. BT models have also been used to assess peer review quality by modelling reviewer agreement on relative paper quality: each reviewer comparison of two papers is one BT observation, and the aggregate BT score identifies which papers received consistently higher comparative ratings. NeurIPS and ICML programme committees have used BT-based aggregation to convert reviewer rankings into acceptance decisions, helping resolve disagreements between reviewers who rated papers differently on absolute scales.
 
   **5. Crowdsourcing and Preference Aggregation**
-  Crowdsourcing tasks routinely collect pairwise rather than absolute judgements — pairwise comparison is easier and more reliable for annotators. Bradley-Terry parameters are recovered from crowd votes to produce canonical quality rankings for images, product descriptions, survey items, and restaurant recommendations. The model tolerates missing pairs naturally — workers need not compare all N(N-1)/2 item pairs.
+  Crowdsourcing tasks routinely collect pairwise rather than absolute judgements — pairwise comparison is cognitively easier for workers and produces more reliable annotations than absolute quality ratings. Bradley-Terry parameters are recovered from crowd votes to produce canonical quality rankings for images (Microsoft COCO caption quality), product descriptions (Amazon Mechanical Turk), survey items (political preference research), and restaurant recommendations (Yelp pairwise taste tests). The model tolerates missing pairs naturally — workers need not compare all N(N-1)/2 item pairs, only a connected subsample. Active learning techniques (selecting pairs with maximum Fisher information) can recover near-optimal BT estimates from a fraction of all possible comparisons.
 
   **6. LLM Evaluation and Benchmarking (Chatbot Arena)**
-  Chatbot Arena (LMSYS, 2023–2026) uses Bradley-Terry to rank language models based on user blind preference votes. Users see two anonymous model responses to the same prompt and select their preference. The aggregate BT scores are the de-facto community benchmark for conversational LLM quality, updated in near-real time as votes accumulate. As of 2026 the leaderboard covers 150+ models and processes tens of thousands of daily votes. The paper "Dropping Just a Handful of Preferences Can Change Top LLM Rankings" (arXiv:2508.11847) showed BT rankings are sensitive to small vote perturbations, motivating robust BT estimation.
+  Chatbot Arena (LMSYS, 2023–2026) uses Bradley-Terry to rank language models based on user blind preference votes. Users see two anonymous model responses to the same prompt and select their preference; neither model's identity is revealed until after voting. The aggregate BT scores are the de-facto community benchmark for conversational LLM quality, updated in near-real time as votes accumulate. As of 2026 the leaderboard covers 150+ models and processes tens of thousands of daily votes from a global community of users. The paper "Dropping Just a Handful of Preferences Can Change Top LLM Rankings" (arXiv:2508.11847) showed BT rankings are sensitive to small vote perturbations, motivating robust BT estimation with Huberised likelihoods and randomised response aggregation to prevent gaming.
+
+  **7. Process Reward Models and Step-Level Evaluation**
+  Process Reward Models (PRMs) extend BT-style training from response-level to step-level: each step in a multi-step reasoning chain is evaluated via pairwise comparisons of step quality. DeepSeek-R1 and OpenAI o3 use step-level reward signals derived from BT-trained process reward models to guide chain-of-thought reasoning. Step-level BT models require collecting annotations at the granularity of individual reasoning steps — a significantly more expensive annotation process, motivating synthetic annotation via AI feedback (AI-generated step preference data).
+
+  ## Benchmark Datasets and Evaluation
+
+  The Bradley-Terry model has been evaluated in two distinct domains: classical ranking from competition data (sports, journals, products) and contemporary LLM alignment (preference annotations, Chatbot Arena votes). These domains differ fundamentally in data scale (hundreds of items vs millions) and comparison density (many comparisons per pair vs one or two), requiring different estimation strategies and providing different benchmark conditions.
+
+  **LLM Alignment Preference Datasets**
+  - OpenAI InstructGPT dataset: 33K pairwise preference annotations by paid human annotators on prompt-response pairs from fine-tuned GPT-3 variants; the original RLHF-with-BT benchmark
+  - Anthropic HH-RLHF: 160K pairwise preference annotations on helpfulness and harmlessness dimensions; publicly released and widely used for DPO and reward model research
+  - lmsys/chatbot_arena_conversations: 1M+ user preference votes (Chatbot Arena); the largest naturalistic BT benchmark, covering 150+ models across all types of user queries
+  - OpenAI WebGPT Comparisons: 19K comparisons of web-browsing-assisted QA responses; early BT reward model dataset
+  - Alpaca Farm (2023): 20K simulated human preference annotations using GPT-4 as surrogate annotator; widely used for preference learning method comparison
+
+  **Sports and Competition Datasets (Classical BT Benchmarks)**
+  - FIDE chess game database: billions of games with ELO ratings as BT ground truth; standard for evaluating BT convergence and dynamic BT methods
+  - English Premier League match records: 30+ seasons of home/away/draw outcomes; standard for BT with tie extension and dynamic BT season models
+  - ATP/WTA tennis match records: pairwise outcomes for 1000+ players with covariate features; used for covariate BT evaluation
+  - Formula 1 qualifying lap times: treated as pairwise comparisons for BT ranking of drivers and cars
+
+  **Crowdsourcing and General Ranking Datasets**
+  - OSHA product quality dataset: pairwise image quality comparisons by crowd workers; classic BT benchmark
+  - Microsoft TrueSkill benchmark: human player game records from Xbox Live for BTL and TrueSkill comparison
+  - VisualRank image aesthetics dataset: pairwise aesthetic judgements of photographs for BT quality ranking
+  - ImageNet pairwise quality annotations: crowdsourced pairwise comparisons for evaluating image generation models
+  - RLHF-Blender (2023): synthetic preference datasets combining multiple annotation sources; used for evaluating preference aggregation methods
+
+  **Theoretical Convergence Benchmarks**
+  - Synthetic complete comparison graphs (all N(N-1)/2 pairs observed): classical asymptotic regime; MLE known to achieve Cramér-Rao efficiency bound
+  - Synthetic sparse random graphs (Erdős-Rényi with O(N) edges): high-dimensional sparse regime; BT MLE may diverge; regularised estimators tested
+  - Real-world comparison graphs from sports data: intermediate density, typically 10–50 comparisons per item pair over a season; dynamic BT evaluated against ground-truth Elo ratings
 
   ## Academic Context
 
@@ -390,7 +508,19 @@ public:: true
 
   **Regulatory alignment**: EU AI Act requirements for explainable and auditable alignment methodology may increase demand for well-calibrated, theoretically grounded preference models like BT, as opposed to opaque learned reward functions. Auditing frontier model alignment may require documenting the preference model structure.
 
-  **Convergence with formal social choice**: Researchers are exploring connections between Bradley-Terry and Arrow's impossibility theorem, Condorcet voting, and mechanism design — asking whether preference aggregation via BT satisfies desirable social choice axioms. This may lead to alignment approaches grounded in both statistical and normative foundations.
+  **Convergence with formal social choice**: Researchers are exploring connections between Bradley-Terry and Arrow's impossibility theorem, Condorcet voting, and mechanism design — asking whether preference aggregation via BT satisfies desirable social choice axioms. This may lead to alignment approaches grounded in both statistical and normative foundations. The connection to Condorcet's pairwise majority voting is direct: BT with 50% win-probability threshold is equivalent to majority voting, but the BT MLE provides a consistent global ranking that majority voting cannot (due to Condorcet cycles).
+
+  **Personalised preference models**: Moving beyond a single universal BT model to individual-specific or group-specific models capturing annotator heterogeneity. Different human annotators have systematically different preferences (political views, cultural backgrounds, expertise levels), and a single BT model averages over this heterogeneity. LoRe (Low-Rank Reward Modeling, arXiv:2504.14439, 2025) decomposes the reward model into a shared base plus low-rank individual-specific components, enabling personalised alignment while retaining BT's statistical efficiency.
+
+  **Scalable Bayesian uncertainty in production**: Replacing point-estimate BT reward models with calibrated Bayesian reward models that output uncertainty intervals over response quality. This enables uncertainty-aware decoding (generating responses where the model is confident it will be preferred) and active learning (requesting human annotations for response pairs where reward uncertainty is highest). Approximate inference methods (Laplace approximation, variational inference, scalable MCMC) applied to BT models at billion-parameter scale are an active research area.
+
+  **Cross-domain BT unification**: A theoretical unification of preference learning approaches — BT, DPO, IPO, KTO, and their variants — into a single framework (arXiv:2601.06108, 2026) reveals that all major preference optimisation methods can be understood as maximum likelihood estimation under different choice models or loss functions. This unification enables systematic comparison and hybrid methods that interpolate between BT and non-BT preference representations, potentially leading to preference learning frameworks that inherit BT's tractability while relaxing its most problematic assumptions.
+
+  **Annotation quality and inter-annotator agreement**: As BT models are deployed at scale, the quality and consistency of human annotations becomes critical. Research in 2024–2026 examines inter-annotator agreement rates (typically 70–80% for helpfulness, lower for subjective qualities), annotator demographics and their effect on BT parameter estimates, and methods for detecting and down-weighting low-quality or adversarial annotations. Quality-filtered BT training consistently outperforms unfiltered approaches on held-out human evaluation.
+  - Key metric: Cohen's kappa or Krippendorff's alpha measuring inter-annotator agreement on pairwise labels
+  - Annotation consistency threshold: typically require κ > 0.4 (moderate agreement) before using comparison in BT training
+  - Outlier annotators: identified by fitting BT to each annotator's data independently and comparing score vectors; outliers with extreme scores are down-weighted
+  - Self-consistency checking: some proportion of comparisons presented twice to the same annotator; inconsistencies flagged for quality review
 
   ## Research & Literature
 
@@ -425,23 +555,60 @@ public:: true
 
   ## Key Terminology
 
-  **Bradley-Terry score (β_i)**: Log-odds of item i winning any given comparison; the primary estimated parameter. The difference β_i − β_j is the logit of P(i beats j).
+  **Bradley-Terry score (β_i)**
+  - Log-odds of item i winning any given comparison; the primary estimated parameter
+  - The difference β_i − β_j is the logit of P(i beats j)
+  - Only differences between scores are identifiable; absolute values are arbitrary up to an additive constant
+  - Higher β_i implies higher probability of winning comparisons against items with lower scores
 
-  **Win probability**: σ(β_i − β_j) = 1/(1+exp(β_j−β_i)); the model's predicted P(i > j).
+  **Win probability**
+  - σ(β_i − β_j) = 1/(1+exp(β_j−β_i)); the model's predicted P(i > j)
+  - A logistic function of the score difference: increases smoothly from 0 to 1
+  - P(i beats j) = 0.5 when β_i = β_j (equal strength → coin flip)
+  - P(i beats j) ≈ 0.95 when β_i − β_j ≈ 3 (strong favourite)
 
-  **Identifiability**: BT parameters are unique up to an additive constant; one anchor constraint (e.g. Σβ_i = 0) is needed for unique recovery.
+  **Identifiability**
+  - BT parameters are unique only up to an additive constant (translation invariance)
+  - One anchor constraint is needed for unique recovery: typically Σβ_i = 0 or β_1 = 0
+  - In RLHF: the reward model r_φ is score-free; only reward differences matter for training
 
-  **Comparison graph connectivity**: Necessary and sufficient condition for BT MLE to be finite and unique. If the graph is disconnected, items in different components cannot be jointly ranked.
+  **Comparison graph connectivity**
+  - Necessary and sufficient condition for BT MLE to be finite and unique
+  - Comparison graph G_comp: items are nodes, edge (i,j) if items i and j have been compared at least once
+  - If G_comp is disconnected, items in different components cannot be jointly ranked
+  - In LLM alignment: the comparison graph is very large but typically connected (all responses share prompts from a common domain)
 
-  **Iterative scaling (MM algorithm)**: Bradley-Terry MLE algorithm; each iteration updates all β parameters simultaneously using current win counts and comparison counts. Monotone convergence guaranteed.
+  **Iterative scaling (MM algorithm)**
+  - Bradley-Terry MLE algorithm; iterative, monotone convergence guaranteed
+  - Each iteration updates all β parameters simultaneously using current win counts and comparison counts
+  - Formula: β_i^(t+1) = log(wins_i / Σ_j n_{ij} / (exp(β_i^(t)) + exp(β_j^(t))))
+  - Convergence rate determined by second eigenvalue of comparison graph Laplacian
 
-  **RLHF reward model**: A neural network r_φ trained with BT cross-entropy on human preference pairs, predicting response quality as a scalar. Used as the reward signal in PPO-based RLHF.
+  **RLHF reward model**
+  - A neural network r_φ trained with BT cross-entropy on human preference pairs
+  - Predicts response quality as a scalar given a prompt-response pair (x, y)
+  - Architecture: language model backbone (to compute contextual features) + scalar linear head
+  - Used as the reward signal in PPO-based RLHF fine-tuning of the language model policy
 
-  **DPO (Direct Preference Optimisation)**: A training algorithm that implicitly assumes BT and optimises the language model policy directly on preference pairs without a separate reward model, by reparameterising the BT reward in terms of the policy log-ratio.
+  **DPO (Direct Preference Optimisation)**
+  - A training algorithm that implicitly assumes BT and optimises the language model policy directly on preference pairs
+  - Bypasses the separate reward model by reparameterising the BT reward in terms of the policy log-ratio
+  - Equivalent to supervised fine-tuning with a logistic loss on preference pair log-probability ratios
+  - Hyperparameter β controls the strength of KL divergence from the reference policy
 
-  **Preference collapse**: Pathological behaviour in BT-based training where the model learns extreme reward differences (e.g. when y_w is always correct and y_l always wrong, as in math problems), driving the rejected sequence probability to zero regardless of KL regularisation strength.
+  **Preference collapse**
+  - Pathological behaviour in BT-based training on deterministic preference data (e.g. correct/incorrect math answers)
+  - When y_w is always correct and y_l always wrong, BT loss drives β_w − β_l → ∞
+  - This forces the rejected response probability π_θ(y_l|x) → 0, regardless of KL regularisation
+  - Results in degraded model fluency and over-penalisation of common tokens shared between y_w and y_l
+  - Motivated PM-RLHF and alternative preference optimisation methods
 
-  **IIA (Independence of Irrelevant Alternatives)**: The Luce/BT property that P(i beats j) depends only on β_i and β_j, not on other items. This property is both the model's main strength (tractability) and main criticism (violated in practice by decoy effects and context-dependent preferences).
+  **IIA (Independence of Irrelevant Alternatives)**
+  - The Luce/BT property: P(i beats j) depends only on β_i and β_j, not on other items in any choice set
+  - Main strength: makes the model tractable (parameters estimated independently of irrelevant alternatives)
+  - Main criticism: violated in practice by decoy effects, context-dependent preferences, and set-size effects
+  - Example violation: annotators may rate A > B in isolation but B > A when a "decoy" option C is present
+  - Alternative preference models (beyond BT) relax IIA to capture context-dependent preferences
 
 - ### Provenance
   - sources:: https://arxiv.org/html/2601.14727v2, https://arxiv.org/html/2411.04991v1, https://arxiv.org/html/2601.06108v1, https://arxiv.org/pdf/2405.16455, https://mbrenndoerfer.com/writing/bradley-terry-model-pairwise-preferences-rankings, https://grokipedia.com/page/Bradley%E2%80%93Terry_model, https://openreview.net/pdf?id=bT8Wm4jtJC, https://arxiv.org/pdf/2512.00709, https://arxiv.org/pdf/2602.00931

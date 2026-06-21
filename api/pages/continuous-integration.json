@@ -163,6 +163,18 @@
       "label": "Benchmark Evaluation"
     },
     {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    },
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
+    },
+    {
       "slug": "diagrams-as-code",
       "label": "Diagrams as Code"
     },

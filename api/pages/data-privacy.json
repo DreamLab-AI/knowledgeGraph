@@ -156,6 +156,18 @@
       "label": "CCPA"
     },
     {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
+    },
+    {
       "slug": "consent-management",
       "label": "Consent Management"
     },

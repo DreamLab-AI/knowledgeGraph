@@ -328,6 +328,10 @@
       "label": "California AI bill"
     },
     {
+      "slug": "cohere",
+      "label": "Cohere"
+    },
+    {
       "slug": "competition-in-ai",
       "label": "Competition in AI"
     },

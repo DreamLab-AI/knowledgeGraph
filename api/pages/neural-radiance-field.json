@@ -137,6 +137,10 @@
   ],
   "backlinks": [
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
       "slug": "gaussian-splatting",
       "label": "Gaussian Splatting"
     },

@@ -190,6 +190,10 @@
       "label": "Adoption of Convergent Technologies"
     },
     {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
       "slug": "azure",
       "label": "Azure"
     },
@@ -202,8 +206,20 @@
       "label": "Cold Chain Monitoring"
     },
     {
+      "slug": "common-crawl",
+      "label": "Common Crawl"
+    },
+    {
       "slug": "compute-infrastructure",
       "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "configuration-management",
+      "label": "Configuration Management"
+    },
+    {
+      "slug": "content-creation",
+      "label": "Content Creation"
     },
     {
       "slug": "convergence",

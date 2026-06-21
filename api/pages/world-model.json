@@ -144,6 +144,14 @@
       "label": "Autonomous Behavior"
     },
     {
+      "slug": "common-sense-reasoning",
+      "label": "Common Sense Reasoning"
+    },
+    {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
       "slug": "embodied-minds",
       "label": "Embodied Minds"
     },

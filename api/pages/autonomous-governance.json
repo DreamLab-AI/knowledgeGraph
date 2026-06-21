@@ -43,6 +43,10 @@
     {
       "slug": "blockchain-entity",
       "label": "Blockchain Entity"
+    },
+    {
+      "slug": "community-governance-model",
+      "label": "Community Governance Model"
     }
   ]
 }

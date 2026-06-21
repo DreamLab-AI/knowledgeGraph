@@ -67,6 +67,18 @@
   ],
   "backlinks": [
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
+      "slug": "clustering",
+      "label": "Clustering"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "mean-absolute-error",
       "label": "Mean Absolute Error"
     },

@@ -193,6 +193,10 @@
       "label": "Alignment"
     },
     {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    },
+    {
       "slug": "eu-hleg-ai",
       "label": "EU HLEG AI"
     },

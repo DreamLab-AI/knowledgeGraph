@@ -230,6 +230,14 @@
     {
       "slug": "ai-provider",
       "label": "AI Provider"
+    },
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    },
+    {
+      "slug": "continuous-training",
+      "label": "Continuous Training"
     }
   ]
 }

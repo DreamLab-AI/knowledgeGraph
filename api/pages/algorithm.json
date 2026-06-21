@@ -341,12 +341,28 @@
       "label": "Automated Design"
     },
     {
+      "slug": "combinatorial-optimisation",
+      "label": "Combinatorial Optimisation"
+    },
+    {
+      "slug": "computability-theory",
+      "label": "Computability Theory"
+    },
+    {
+      "slug": "computational-biology",
+      "label": "Computational Biology"
+    },
+    {
       "slug": "computational-complexity-theory",
       "label": "Computational Complexity Theory"
     },
     {
       "slug": "computational-geometry",
       "label": "Computational Geometry"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
     },
     {
       "slug": "distributed-systems-theory",

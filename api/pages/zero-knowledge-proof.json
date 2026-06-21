@@ -186,6 +186,10 @@
       "label": "Blockchain Oracle"
     },
     {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
       "slug": "cryptographic-system",
       "label": "Cryptographic System"
     },

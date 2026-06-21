@@ -136,6 +136,10 @@
   "wikilinks": [],
   "backlinks": [
     {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
       "slug": "graph-database",
       "label": "Graph Database"
     },

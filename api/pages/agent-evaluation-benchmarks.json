@@ -1,0 +1,304 @@
+{
+  "id": "urn:visionflow:page:agent-evaluation-benchmarks",
+  "title": "Agent Evaluation Benchmarks",
+  "slug": "agent-evaluation-benchmarks",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-evaluation-benchmarks",
+  "domain": "ai",
+  "definition": "Standardised benchmark suites and evaluation frameworks for measuring autonomous agent capabilities across software engineering, web navigation, reasoning, and general task completion \u2014 includes SWE-bench, WebArena, ARC-AGI-2, inspect_ai, AgentBench, and VitaBench.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "id": "urn:ngm:class:llm-evaluation",
+      "label": "LLM Evaluation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.9,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:swe-bench",
+        "label": "SWE-bench"
+      },
+      {
+        "id": "urn:ngm:class:web-arena",
+        "label": "WebArena"
+      },
+      {
+        "id": "urn:ngm:class:gaia-benchmark",
+        "label": "GAIA Benchmark"
+      },
+      {
+        "id": "urn:ngm:class:osworld",
+        "label": "OSWorld"
+      },
+      {
+        "id": "urn:ngm:class:agent-bench",
+        "label": "AgentBench"
+      },
+      {
+        "id": "urn:ngm:class:vita-bench",
+        "label": "VitaBench"
+      },
+      {
+        "id": "urn:ngm:class:metr-hcast",
+        "label": "METR HCAST"
+      },
+      {
+        "id": "urn:ngm:class:inspect-ai",
+        "label": "inspect_ai"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:agent-execution-sandboxes",
+        "label": "Agent Execution Sandboxes"
+      },
+      {
+        "id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-coding",
+        "label": "Autonomous Coding"
+      },
+      {
+        "id": "urn:ngm:class:computer-use",
+        "label": "Computer Use"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Harness"
+      },
+      {
+        "id": "urn:ngm:class:agent-development-sdks",
+        "label": "Agent Development SDKs"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "slug": "evaluation-harness",
+      "label": "Evaluation Harness"
+    },
+    {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "swe-bench",
+      "label": "SWE-bench"
+    },
+    {
+      "slug": "web-arena",
+      "label": "WebArena"
+    },
+    {
+      "slug": "arc-agi",
+      "label": "ARC-AGI"
+    },
+    {
+      "slug": "inspect-ai",
+      "label": "inspect_ai"
+    },
+    {
+      "slug": "gaia-benchmark",
+      "label": "GAIA Benchmark"
+    },
+    {
+      "slug": "osworld",
+      "label": "OSWorld"
+    },
+    {
+      "slug": "agent-bench",
+      "label": "AgentBench"
+    },
+    {
+      "slug": "vita-bench",
+      "label": "VitaBench"
+    },
+    {
+      "slug": "metr-hcast",
+      "label": "METR HCAST"
+    },
+    {
+      "slug": "tau-bench",
+      "label": "TAU-bench"
+    },
+    {
+      "slug": "terminal-bench",
+      "label": "Terminal-Bench"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "Agentic AI"
+    },
+    {
+      "slug": "autonomous-coding",
+      "label": "Autonomous Coding"
+    },
+    {
+      "slug": "computer-use",
+      "label": "Computer Use"
+    },
+    {
+      "slug": "browser-automation",
+      "label": "Browser Automation"
+    },
+    {
+      "slug": "llm-evaluation",
+      "label": "LLM Evaluation"
+    },
+    {
+      "slug": "tool-use",
+      "label": "Tool Use"
+    },
+    {
+      "slug": "re-act-pattern",
+      "label": "ReAct Pattern"
+    },
+    {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "internal-ai-harness",
+      "label": "Internal AI Harness"
+    },
+    {
+      "slug": "external-ai-harness",
+      "label": "External AI Harness"
+    },
+    {
+      "slug": "reward-hacking",
+      "label": "Reward Hacking"
+    },
+    {
+      "slug": "human-in-the-loop",
+      "label": "Human-in-the-Loop"
+    },
+    {
+      "slug": "ai-safety",
+      "label": "AI Safety"
+    },
+    {
+      "slug": "reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "chain-of-thought",
+      "label": "Chain-of-Thought"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "plan-and-execute-pattern",
+      "label": "Plan-and-Execute Pattern"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "ai-technique",
+      "label": "AI-GroundedDomain"
+    },
+    {
+      "slug": "ai-research-area",
+      "label": "ComputationAndIntelligenceDomain"
+    },
+    {
+      "slug": "application-layer",
+      "label": "ApplicationLayer"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
+      "slug": "multi-agent-orchestration-frameworks",
+      "label": "Multi-Agent Orchestration Frameworks"
+    },
+    {
+      "slug": "personal-agent-runtimes",
+      "label": "Personal Agent Runtimes"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
+    }
+  ]
+}

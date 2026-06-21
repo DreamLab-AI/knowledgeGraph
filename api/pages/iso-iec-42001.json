@@ -191,6 +191,10 @@
       "label": "California AI bill"
     },
     {
+      "slug": "compliance-audit-trail",
+      "label": "Compliance Audit Trail"
+    },
+    {
       "slug": "proprietary-large-language-models",
       "label": "Proprietary Large Language Models"
     },

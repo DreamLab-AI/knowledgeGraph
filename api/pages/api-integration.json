@@ -188,6 +188,10 @@
       "label": "Cross Platform Digital Twins"
     },
     {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
       "slug": "service-layer",
       "label": "Service Layer"
     }

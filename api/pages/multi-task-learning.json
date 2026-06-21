@@ -65,6 +65,10 @@
   ],
   "backlinks": [
     {
+      "slug": "continual-learning",
+      "label": "Continual Learning"
+    },
+    {
       "slug": "lo-ra-do-ra-etc",
       "label": "LoRA DoRA etc"
     },

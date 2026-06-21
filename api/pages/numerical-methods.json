@@ -161,6 +161,10 @@
       "label": "Collision Detection"
     },
     {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
       "slug": "convex-optimisation",
       "label": "Convex Optimisation"
     },

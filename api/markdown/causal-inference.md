@@ -164,7 +164,13 @@
     Causal methods are being applied to evaluate whether large language model outputs reflect genuine causal understanding or spurious statistical regularities. Causal language model evaluation benchmarks (EconCausal, CausalVLBench, 2025) test models on counterfactual and interventional reasoning tasks. Structural causal models are used to audit whether RLHF-trained models have learned causally appropriate reward responses or are susceptible to reward hacking via spurious correlates. Causal representation learning aims to produce model internals that respect causal structure, improving robustness to distributional shift — directly relevant to [[AI Safety]] and [[Catastrophic Risk Reduction]].
 
     **Causal Reinforcement Learning:**
-    Causal RL embeds causal knowledge into [[Reinforcement Learning]] to address four challenges: spurious correlations in reward attribution, sample inefficiency, poor generalisation across environments, and fairness. By modelling the causal structure of the environment, causal RL agents learn policies that are robust to distributional shifts and can transfer knowledge across tasks more efficiently than purely associative agents. A 2025 IEEE TNNLS survey on causal RL documents rapid growth in this application area.
+    Causal RL embeds causal knowledge into [[Reinforcement Learning]] to address four challenges: spurious correlations in reward attribution, sample inefficiency, poor generalisation across environments, and fairness. By modelling the causal structure of the environment, causal RL agents learn policies that are robust to distributional shifts and can transfer knowledge across tasks more efficiently than purely associative agents. The key insight is that the reward function in standard RL is an associative model: it predicts reward given observed state-action pairs without representing the causal mechanism by which actions produce outcomes. A causal RL agent instead models the interventional distribution P(reward | do(action), state), enabling it to correctly attribute credit for outcomes even in environments with confounded state-action distributions (e.g. when exploration policy induces selection bias in the collected experience). A 2025 IEEE TNNLS survey on causal RL documents rapid growth in this application area. Practical implementations combine structural causal world models (learned from interaction data using causal discovery algorithms) with model-based RL policy optimisation, achieving substantially better sample efficiency and out-of-distribution generalisation than model-free or model-based RL without causal structure.
+
+    **Personalised Medicine and Precision Oncology:**
+    Causal inference for personalised medicine estimates individual-level treatment effects from heterogeneous patient populations, moving beyond population-average effects to identify which subgroups benefit from which treatments. This application is particularly important in oncology, where treatment response varies enormously across molecular subtypes of cancer and the same tumour type may respond to targeted therapy or immunotherapy depending on specific genomic features. Meta-learner approaches (T-learner, X-learner, DR-learner) combined with genomic feature selection enable heterogeneous treatment effect estimation across large cohorts. The fundamental challenge is that no patient receives both treatments (the fundamental problem of causal inference) — valid HTE estimation requires either large randomised trials with adequate subgroup power or causal machine learning methods that can estimate HTEs from observational data under unconfoundedness. UK NHS data infrastructure (NHS Digital, CPRD, OpenSAFELY) provides large-scale observational data for UK-specific causal pharmacoepidemiology research.
+
+    **Education Policy and Programme Evaluation:**
+    Natural experiment designs have transformed education research by enabling causal evaluation of teaching interventions, curriculum changes, and school accountability policies without requiring randomised assignment. Regression discontinuity designs exploit school admission cutoffs, test score thresholds, and age-at-entry cutoffs to estimate the causal effects of education interventions on outcomes including academic achievement, earnings, and health. DiD designs estimate the effects of policy changes (teacher pay, school funding formulae, free school meal eligibility) using variation across local authorities or across time. The Education Endowment Foundation (EEF) in the UK has funded hundreds of randomised trials of educational interventions, and causal meta-analysis methods are used to synthesise effect sizes across diverse contexts and populations.
 
   - ## Academic Context
 
@@ -214,29 +220,122 @@
 
   - ## Current Landscape (2026)
 
-    By mid-2026, causal inference has achieved mainstream status across empirical science and is undergoing rapid integration with large-scale machine learning. Several developments characterise the current landscape:
+    By mid-2026, causal inference has achieved mainstream status across empirical science and is undergoing rapid integration with large-scale machine learning:
 
-    **LLM Causal Evaluation:** New benchmarks — EconCausal (2025), CausalVLBench (2025), and the Causal Methods for LLM Development framework (2025, arXiv:2605.25998) — systematically evaluate whether frontier language models exhibit genuine causal reasoning or associative mimicry. Results are mixed: LLMs show strong performance on verbal causal reasoning tasks that can be addressed through pattern completion, but poor performance on tasks requiring genuine do-calculus manipulation or counterfactual consistency. The finding that "LLMs cannot discover causality" (arXiv:2506.00844, 2025) reflects a broader concern about the limits of purely associative learning for causal tasks.
+    - **LLM Causal Evaluation:**
+      - New benchmarks systematically evaluate whether frontier language models exhibit genuine causal reasoning or associative mimicry.
+      - EconCausal (2025): tests LLMs on economics-style causal questions requiring confounder identification and natural experiment reasoning.
+      - CausalVLBench (2025): visual causal reasoning benchmark for large vision-language models.
+      - Causal Methods for LLM Development framework (2025, arXiv:2605.25998): debiased evaluation of LLM design decisions using causal inference on annotation processes.
+      - Results mixed: strong on verbal tasks addressable via pattern completion; poor on genuine do-calculus manipulation or counterfactual consistency.
+      - Finding (arXiv:2506.00844, 2025): "LLMs cannot discover causality" — reflects fundamental associative architecture limitation.
+      - Chain-of-thought reasoning often fails to be causally responsible for LLM answers: the visible reasoning process may not drive the actual computation.
 
-    **Causal Representation Learning:** The project of learning representations that respect causal structure — disentangling latent causal factors, identifying causal variables from raw data — is a major research frontier. Recent work (arXiv:2509.22553, 2025) on linear causal representation learning by topological ordering, pruning, and disentanglement demonstrates progress toward identifiable causal latent structure. Integration with foundation models aims to produce more robust and interpretable learned representations.
+    - **Causal Representation Learning:**
+      - Project of learning representations that respect causal structure — disentangling latent causal factors, identifying causal variables from raw sensory data.
+      - Linear causal representation learning by topological ordering, pruning, and disentanglement (arXiv:2509.22553, 2025): progress toward identifiable causal latent structure.
+      - Integration with foundation models aims to produce more robust and interpretable learned representations.
+      - Key theoretical result: causal representations are identifiable under weaker assumptions than ICA-based independent component analysis.
+      - Applications to domain generalisation and out-of-distribution robustness: causally-structured representations should generalise better across environment shifts.
 
-    **Causal Methods for LLM Development and Evaluation:** Researchers are applying causal inference to the engineering decisions made during LLM development — training data composition, architecture choices, fine-tuning strategies — to answer counterfactual questions about which design decisions caused observed capability differences. Methods combining large-scale LLM annotations with gold-standard human labels produce debiased estimates with formal statistical guarantees.
+    - **Causal Methods for LLM Development and Evaluation:**
+      - Causal inference applied to engineering decisions during LLM development: training data composition, architecture choices, RLHF implementation.
+      - Counterfactual questions: what would this model's capabilities be had we used different training data? What caused the observed capability difference between model versions?
+      - Methods combining large-scale LLM annotations with gold-standard human labels (Imai & Li, 2025) produce debiased estimates with formal statistical guarantees.
+      - Causal mediation analysis of model internals: which intermediate representations causally mediate safety-relevant input-output relationships?
 
-    **Heterogeneous Treatment Effects in Medicine:** Causal forests and double machine learning are now standard methods in clinical research for HTE estimation. A 2025 systematic review (*International Statistical Review*, Rehill et al.) found causal forests among the most widely adopted HTE methods in applied work, with the grf R package driving adoption. Applications include psychiatry (treatment effect personalisation, *PMC*, 2025), HIV care (tuberculosis preventive therapy, *Scientific Reports*, 2025), and oncology treatment selection.
+    - **Heterogeneous Treatment Effects in Medicine (2025):**
+      - Causal forests and double machine learning now standard in clinical research for HTE estimation.
+      - 2025 systematic review (*International Statistical Review*, Rehill et al.): causal forests among most widely adopted HTE methods; grf R package the dominant implementation.
+      - Psychiatry: causal forests for personalised treatment effect estimation in antidepressant trials (*PMC*, 2025).
+      - HIV care: causal forest DML for TB preventive therapy impact on ART adherence (*Scientific Reports*, 2025).
+      - Oncology: HTE estimation for targeted cancer treatment selection using electronic health record data.
+      - Public health: synthetic control and DiD methods for UK-wide COVID-19 intervention evaluation using NHS administrative data.
 
-    **Causal Reinforcement Learning Integration:** A 2024–2025 IEEE TNNLS survey on causal RL documents the integration of structural causal models with policy gradient, model-based RL, and offline RL algorithms. Causally-Enhanced Reinforcement Policy Optimisation (arXiv:2509.23095, 2025) demonstrates substantial sample efficiency gains over standard RL baselines by incorporating causal world model structure.
+    - **Causal Reinforcement Learning Integration (2025):**
+      - IEEE TNNLS 2025 survey: causal RL integrating structural causal models with policy gradient, model-based RL, and offline RL algorithms.
+      - Causally-Enhanced Reinforcement Policy Optimisation (arXiv:2509.23095, 2025): substantial sample efficiency gains over standard RL by incorporating causal world model structure.
+      - Causal RL addresses: spurious correlations in reward attribution; poor generalisation across environments; sample inefficiency; fairness constraints.
+      - Online platforms (Netflix, Spotify, LinkedIn) deploying causal recommendation systems that model long-term engagement effects rather than naive click prediction.
+      - Causal off-policy evaluation for healthcare decision support: estimating outcomes of counterfactual treatment policies using observational hospital data.
+
+    - **Econometric Policy Evaluation:**
+      - Staggered DiD designs with heterogeneous timing (Callaway & Sant'Anna, 2021; Sun & Abraham, 2021) address problems with conventional TWFE estimators.
+      - Synthetic difference-in-differences (Arkhangelsky et al., 2021): matrix completion for improved synthetic control estimation.
+      - High-dimensional IV estimation using LASSO-based first stages (Chernozhukov et al.) handles settings with many potential instruments.
+      - Real-time policy evaluation using online causal methods: estimating effects of platform algorithmic changes within days rather than months.
 
   - ## UK Context
 
-    The United Kingdom has strong academic traditions in causal inference across multiple disciplines. The Medical Research Council (MRC) has long funded causal epidemiology, and the MRC Integrative Epidemiology Unit at the University of Bristol — led by figures including George Davey Smith and Kate Tilling — is a world-leading centre for Mendelian randomisation, a genetic instrumental variable method for estimating causal effects of biomarkers and environmental exposures on health outcomes. UK Biobank, with over 500,000 participants and linked health records, provides the infrastructure for large-scale causal epidemiology studies and has produced landmark causal attribution analyses examining the effects of smoking and BMI across the landscape of disease incidence (PMC, 2022).
+    The United Kingdom has strong academic traditions in causal inference across multiple disciplines:
 
-    The London School of Hygiene and Tropical Medicine (LSHTM) has contributed extensively to causal inference methodology in epidemiology, particularly time-varying treatments, marginal structural models, and g-estimation. LSHTM researchers have collaborated with Harvard's Hernán group on target trial emulation frameworks, and this work now shapes randomised trial emulation across UK health data infrastructure (NHS Digital, CPRD, SAIL Databank).
+    - **Medical Research Council and Biobank Infrastructure:**
+      - MRC has been a leading funder of causal epidemiology research for over four decades.
+      - MRC Integrative Epidemiology Unit (IEU), University of Bristol: world-leading centre for Mendelian randomisation.
+      - George Davey Smith and colleagues developed Mendelian randomisation as a formal causal inference method in epidemiology.
+      - Kate Tilling contributes to causal longitudinal methods and life-course epidemiology.
+      - UK Biobank: 500,000+ participants with linked health records; foundational infrastructure for large-scale causal epidemiology.
+      - Landmark causal attribution analyses of smoking and BMI effects across disease landscape (PMC, 2022) exemplify UK biobank causal inference capacity.
 
-    In economics, the Centre for Economic Performance at the London School of Economics and the IFS (Institute for Fiscal Studies) apply natural experiment designs to UK-specific policy questions including universal credit evaluation, early years education interventions, and NHS resource allocation. The Edinburgh Causal AI Lab has active research on causal discovery algorithms and their integration with machine learning systems.
+    - **London School of Hygiene and Tropical Medicine (LSHTM):**
+      - Contributed extensively to time-varying treatment causal methodology, marginal structural models, and g-estimation.
+      - Collaborative work with Harvard's Hernán group on target trial emulation frameworks.
+      - Target trial emulation now shapes randomised trial emulation across UK health data infrastructure.
+      - Applied to CPRD (Clinical Practice Research Datalink), SAIL Databank, NHS Digital, and OpenSAFELY.
 
-    Northern English institutions are developing applied causal capability: the University of Leeds has computational epidemiology groups applying DiD and synthetic control methods to public health interventions; the University of Sheffield's School of Health and Related Research (ScHARR) uses causal methods for health technology assessment; and Manchester's Alliance Manchester Business School applies causal econometrics to labour market and regional economic questions.
+    - **Economic Policy Research:**
+      - Centre for Economic Performance (CEP, LSE): applies natural experiment designs to UK labour market, trade, and education policy questions.
+      - Institute for Fiscal Studies (IFS): universal credit evaluation, early years education interventions, NHS resource allocation — all using causal identification strategies.
+      - NBER-style natural experiment tradition in UK economics research: UK as a natural laboratory for policy variation (devolution, Brexit, differential minimum wage implementation).
 
-    The Alan Turing Institute has designated causal inference as a strategic research priority, funding the Data-Centric Engineering programme and intersections with AI safety and fairness. UKRI's AI programme has explicitly included causal reasoning and out-of-distribution robustness as funded research themes, reflecting recognition that associative machine learning alone is insufficient for high-stakes AI applications.
+    - **AI and Causal Inference Intersection:**
+      - Edinburgh Causal AI Lab: causal discovery algorithms, LLM causal reasoning evaluation, causal representation learning.
+      - Alan Turing Institute: causal inference designated as strategic research priority; Data-Centric Engineering programme.
+      - UKRI AI programme: explicitly includes causal reasoning and out-of-distribution robustness as funded themes.
+      - Recognition that associative machine learning alone is insufficient for high-stakes AI applications driving policy-level investment.
+
+    - **Northern England Contributions:**
+      - University of Leeds: computational epidemiology applying DiD and synthetic control methods to public health interventions; regional health inequality causal analysis.
+      - University of Sheffield (ScHARR — School of Health and Related Research): causal methods for health technology assessment; NICE guidance methodology.
+      - University of Manchester (Alliance Manchester Business School): causal econometrics applied to Northern Powerhouse labour market questions; regional economic impact evaluation.
+      - Newcastle University: causal analysis of health determinants in deprived populations; Fuse Centre for Translational Research in Public Health.
+
+    - **UKRI and National Strategy:**
+      - UKRI Strategic Priorities Fund includes causal inference methods for large-scale administrative data.
+      - Connected Health Cities and Trusted Research Environment programmes provide causal analysis infrastructure.
+      - Health Data Research UK (HDRUK): federated causal inference across NHS data systems; privacy-preserving causal estimation.
+
+  - ## Causal Discovery Methods
+
+    Causal discovery — learning causal graph structure from data, rather than estimating effects given a known graph — is a distinct methodological tradition within causal inference:
+
+    - **Constraint-Based Methods:**
+      - PC Algorithm (Spirtes, Glymour & Scheines, 1991): uses conditional independence tests to eliminate edges and orient directed edges in a DAG. Complexity: O(p^d) independence tests for p variables with maximum degree d.
+      - FCI Algorithm (Fast Causal Inference): extends PC to settings with latent variables and selection bias; produces Partial Ancestral Graphs (PAGs) encoding uncertainty about causal directions.
+      - RFCI (Really Fast Causal Inference): computationally efficient approximation for large variable sets.
+      - Key assumption: Faithfulness — observed conditional independencies reflect graph structure, with no "accidental" cancellations.
+
+    - **Score-Based Methods:**
+      - GES (Greedy Equivalence Search, Chickering 2002): searches over equivalence classes of DAGs using a penalised likelihood score (BIC, AIC, MDL); polynomial time under faithfulness.
+      - NOTEARS (Zheng et al., 2018): reformulates DAG structure learning as a continuous optimisation problem with an algebraic acyclicity constraint; gradient descent over the space of weighted adjacency matrices.
+      - DAG-GNN, GraN-DAG, GOLEM: neural network-based score-based methods enabling non-linear causal structure learning.
+
+    - **Functional Causal Model Methods:**
+      - LiNGAM (Linear Non-Gaussian Acyclic Model, Shimizu et al. 2006): exploits non-Gaussianity of noise to identify full causal ordering (not just Markov equivalence class) from observational data; unique identifiability under non-Gaussian noise.
+      - ANM (Additive Noise Models): non-linear generalisations of LiNGAM where each variable is a non-linear function of its parents plus independent noise.
+      - Bivariate causal direction testing (Mooij et al.): tests which of X → Y or Y → X is more plausible using asymmetries in residual distributions.
+
+    - **LLM-Assisted Causal Discovery (2025):**
+      - Evidence Triangulator framework: uses LLMs to extract and synthesise causal evidence across study designs (RCTs, observational studies, mechanism descriptions).
+      - Causal-LLM: unified one-shot framework combining prompt-driven and data-driven causal graph discovery.
+      - Key limitation: LLMs cannot discover novel causality from data (arXiv:2506.00844, 2025); they retrieve and synthesise prior knowledge, not causal patterns.
+      - Hybrid approaches combining LLM knowledge elicitation (graph initialisation) with data-driven refinement show promise.
+      - LLM-elicited causal graphs as priors for Bayesian causal discovery is an emerging research direction.
+
+    - **Time-Series Causal Discovery:**
+      - Granger Causality: X Granger-causes Y if past values of X improve prediction of Y beyond what past Y alone provides. A statistical (not causal) criterion without additional assumptions.
+      - PCMCI (Runge et al., 2019): PC algorithm adapted for time series; discovers lagged and contemporaneous causal links using conditional independence on lagged values.
+      - NeurIPS 2025 benchmark on time-series causal discovery highlights progress and remaining challenges in financial and climate data.
 
   - ## Pearl's Causal Hierarchy and AI Implications
 
@@ -294,6 +393,49 @@
 
     **Causal Forest Algorithm:**
     Wager & Athey's (2018) causal forest builds on random forests with two modifications: (i) honest splitting, where the estimation sample is split into a training half (used to determine splits) and an estimation half (used to compute leaf-level estimates), preventing overfitting; (ii) causal criterion for split quality, which optimises for heterogeneity in treatment effects rather than outcome prediction. Under regularity conditions, the resulting estimator achieves asymptotic normality and pointwise confidence intervals for the conditional average treatment effect τ(x) = E[Y(1) - Y(0) | X=x].
+
+  - ## Cross-Disciplinary Connections
+
+    Causal inference bridges multiple academic disciplines, and each connection enriches the methodological toolkit:
+
+    - **Epidemiology:**
+      - Earliest large-scale application domain for causal methods in health research.
+      - Developed propensity score matching, regression discontinuity, DiD, and Mendelian randomisation methods in population health context.
+      - Contributed target trial emulation framework for rigorous observational study design.
+      - Hill's criteria for causal inference (1965) remain influential: strength, consistency, temporality, biological gradient, plausibility, coherence, experiment, analogy.
+      - Modern epidemiology increasingly uses DAG-based confounding analysis rather than checklist-based approaches.
+
+    - **Econometrics:**
+      - Developed IV, LATE theorem, natural experiment designs, regression discontinuity, and high-dimensional methods.
+      - Nobel Prize 2021 validates causal econometrics as central to the empirical economics discipline.
+      - Structural econometrics tradition (Haavelmo, Cowles Commission) provides the foundational SCM-like framework for macroeconomic causal analysis.
+      - Policy evaluation is the primary application: education, healthcare, labour market, and environmental economics.
+
+    - **Statistics:**
+      - Formal potential outcomes framework; doubly robust estimation; semiparametric efficiency theory.
+      - Exact randomisation tests; Bayesian causal inference; sensitivity analysis for unmeasured confounders.
+      - Targeted Maximum Likelihood Estimation (TMLE): semiparametrically efficient doubly robust estimator with influence function-based variance estimation.
+
+    - **Computer Science / AI:**
+      - Causal discovery algorithms (PC, FCI, GES, LiNGAM, NOTEARS); causal representation learning; causal RL.
+      - Integration of causal methods with LLMs; neural causal models; causal fairness theory.
+      - Causal program synthesis: generating programs that perform specified causal computations from data.
+
+    - **Philosophy of Science:**
+      - Conceptual foundations of causation: manipulationist theories (Woodward), counterfactual theories (Lewis), mechanistic theories.
+      - Causal pluralism: different causal concepts may be appropriate for different scientific domains.
+      - Causal explanation and mechanism: how do we explain why something happened in causal terms?
+      - The interventionist criterion (Woodward, 2003): X causes Y if and only if an ideal intervention on X would change Y.
+
+    - **Political Science:**
+      - Regression discontinuity designs for electoral threshold effects; synthetic control for case study policy evaluation.
+      - Natural experiments in institutional design: federalism as a natural experiment; constitutional change as treatment.
+      - Causal inference for international relations: estimating effects of diplomatic interventions, sanctions, and treaties.
+
+    - **Medicine / Clinical Trials:**
+      - Adaptive clinical trial designs; personalised medicine HTEs; target trial emulation.
+      - Subgroup analysis with multiple testing correction; adaptive enrichment designs based on biomarker response.
+      - Pharmacovigilance signal detection: causal inference methods for post-marketing safety surveillance.
 
   - ## Benchmark Datasets and Evaluation Resources
 
@@ -359,6 +501,38 @@
     26. Oxera. (2021). "Causality and Natural Experiments: The 2021 Nobel Prize in Economic Sciences." oxera.com.
     27. Causal AI Research Group, University of Edinburgh. (2025). "Causal Discovery with LLMs: Unified Frameworks for Evidence Triangulation." Preprint.
     28. MRC Integrative Epidemiology Unit, University of Bristol. (2022). "Causal Attribution Fractions, and the Attribution of Smoking and BMI to the Landscape of Disease Incidence in UK Biobank." *medRxiv* / *PMC9667855*.
+
+  - ## Identification Assumptions and Their Violation
+
+    Every causal inference method rests on identification assumptions that cannot be directly verified from data — they require domain knowledge, theoretical reasoning, or institutional design. Understanding when these assumptions are violated and how violations affect conclusions is a core competency of the field:
+
+    - **Ignorability / Unconfoundedness:**
+      - Violated when unmeasured variables cause both treatment and outcome.
+      - Mendelian randomisation addresses this by using genetic variants (assumed exogenous) as instruments.
+      - Sensitivity analysis using E-values (VanderWeele & Ding, 2017): minimum unmeasured confounding needed to explain away the observed effect.
+      - Diagnostic checks: testing balance of observed covariates between treated and control after adjustment; testing whether propensity score model predicts known non-confounders.
+
+    - **Stable Unit Treatment Value Assumption (SUTVA):**
+      - Violated when treatment of one unit affects outcomes of other units (spillovers, general equilibrium effects).
+      - Example violations: vaccination campaigns (herd immunity creates spillovers); price interventions (market equilibrium effects).
+      - Methods for interference: partial population designs; network causal inference; weighted network estimators.
+
+    - **Exclusion Restriction (IV):**
+      - Violated when the instrument affects the outcome through pathways other than the treatment.
+      - Mendelian randomisation violations: horizontal pleiotropy (genetic variant affects multiple biological pathways).
+      - Tests: MR-Egger test for systematic pleiotropy; weighted median estimator robust to minority IV violations.
+
+    - **Monotonicity (IV):**
+      - Violated when some units are "defiers" — they take treatment if and only if the instrument assigns them to control.
+      - Empirically hard to test; domain knowledge about mechanisms is the primary tool.
+
+    - **Overlap / Positivity:**
+      - Violated when some covariate patterns are observed only in treated or only in control units.
+      - Practical trimming strategies: restrict inference to regions of common support; use doubly robust estimators that are less sensitive to poor propensity score overlap.
+
+    - **Faithfulness:**
+      - In causal discovery: violated when causal effects cancel exactly, creating conditional independencies that do not correspond to graph structure.
+      - Rare in practice but creates theoretical identification failures; addressed by robust PC algorithm variants.
 
 - ### Provenance
   - sources:: https://arxiv.org/pdf/2605.25998, https://arxiv.org/html/2605.25998v1, https://onlinelibrary.wiley.com/doi/full/10.1111/insr.12610, https://imai.fas.harvard.edu/research/LLM.html, https://arxiv.org/pdf/2510.07231, https://arxiv.org/pdf/2506.00844, https://arxiv.org/pdf/2307.01452, https://arxiv.org/pdf/2509.23095, http://www.cs.columbia.edu/~blei/fogm/2025F/readings/Pearl2009a.pdf, https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9667855/, https://www.nobelprize.org/prizes/economic-sciences/2021/imbens/facts/, https://www.oxera.com/insights/agenda/articles/causality-and-natural-experiments-the-2021-nobel-prize-in-economic-sciences/

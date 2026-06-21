@@ -178,6 +178,10 @@
       "label": "Bias-Variance Tradeoff"
     },
     {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
       "slug": "feed-forward-network",
       "label": "Feed Forward Network"
     },

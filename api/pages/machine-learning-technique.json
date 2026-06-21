@@ -98,5 +98,10 @@
       "label": "Machine Learning"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    }
+  ]
 }

@@ -175,8 +175,16 @@
       "label": "Bayesian Optimisation"
     },
     {
+      "slug": "classification",
+      "label": "Classification"
+    },
+    {
       "slug": "cognitive-ai",
       "label": "Cognitive AI"
+    },
+    {
+      "slug": "constraint-satisfaction",
+      "label": "Constraint Satisfaction"
     },
     {
       "slug": "history-and-path-to-agi",

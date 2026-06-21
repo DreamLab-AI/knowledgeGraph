@@ -129,6 +129,14 @@
   ],
   "backlinks": [
     {
+      "slug": "commonsense-reasoning",
+      "label": "Commonsense Reasoning"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
+    },
+    {
       "slug": "heuristic-methods",
       "label": "Heuristic Methods"
     },

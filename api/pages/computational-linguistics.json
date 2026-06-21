@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.9,
   "maturity": "established",
   "relationships": {
     "hasPart": [
@@ -24,6 +24,18 @@
       {
         "id": "urn:ngm:class:named-entity-recognition",
         "label": "Named Entity Recognition"
+      },
+      {
+        "id": "urn:ngm:class:semantic-parsing",
+        "label": "Semantic Parsing"
+      },
+      {
+        "id": "urn:ngm:class:dependency-parsing",
+        "label": "Dependency Parsing"
+      },
+      {
+        "id": "urn:ngm:class:coreference-resolution",
+        "label": "Coreference Resolution"
       }
     ],
     "requires": [],
@@ -39,6 +51,14 @@
       {
         "id": "urn:ngm:class:question-answering",
         "label": "Question Answering"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-generation",
+        "label": "Natural Language Generation"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
       }
     ],
     "dependsOn": [],
@@ -66,6 +86,14 @@
       {
         "id": "urn:ngm:class:transformer",
         "label": "Transformer"
+      },
+      {
+        "id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:statistical-language-model",
+        "label": "Statistical Language Model"
       }
     ],
     "supports": [
@@ -76,6 +104,10 @@
       {
         "id": "urn:ngm:class:text-mining",
         "label": "Text Mining"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
       }
     ],
     "standardizedBy": [],
@@ -93,11 +125,200 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:psycholinguistics",
+        "label": "Psycholinguistics"
+      },
+      {
+        "id": "urn:ngm:class:corpus-linguistics",
+        "label": "Corpus Linguistics"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "natural-language-processing",
+      "label": "Natural Language Processing"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "language-model",
+      "label": "Language Model"
+    },
+    {
+      "slug": "large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "slug": "information-retrieval",
+      "label": "Information Retrieval"
+    },
+    {
+      "slug": "linguistics",
+      "label": "Linguistics"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "named-entity-recognition",
+      "label": "Named Entity Recognition"
+    },
+    {
+      "slug": "word-embedding",
+      "label": "Word Embedding"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    },
+    {
+      "slug": "machine-translation",
+      "label": "Machine Translation"
+    },
+    {
+      "slug": "sentiment-analysis",
+      "label": "Sentiment Analysis"
+    },
+    {
+      "slug": "question-answering",
+      "label": "Question Answering"
+    },
+    {
+      "slug": "speech-recognition",
+      "label": "Speech Recognition"
+    },
+    {
+      "slug": "text-mining",
+      "label": "Text Mining"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "semantic-parsing",
+      "label": "Semantic Parsing"
+    },
+    {
+      "slug": "natural-language-understanding",
+      "label": "Natural Language Understanding"
+    },
+    {
+      "slug": "natural-language-generation",
+      "label": "Natural Language Generation"
+    },
+    {
+      "slug": "dependency-parsing",
+      "label": "Dependency Parsing"
+    },
+    {
+      "slug": "part-of-speech-tagging",
+      "label": "Part-of-Speech Tagging"
+    },
+    {
+      "slug": "coreference-resolution",
+      "label": "Coreference Resolution"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "grammar",
+      "label": "Grammar"
+    },
+    {
+      "slug": "corpus-linguistics",
+      "label": "Corpus Linguistics"
+    },
+    {
+      "slug": "statistical-language-model",
+      "label": "Statistical Language Model"
+    },
+    {
+      "slug": "attention-mechanism",
+      "label": "Attention Mechanism"
+    },
+    {
+      "slug": "pre-trained-language-model",
+      "label": "Pre Trained Language Model"
+    },
+    {
+      "slug": "text-classification",
+      "label": "Text Classification"
+    },
+    {
+      "slug": "relation-extraction",
+      "label": "Relation Extraction"
+    },
+    {
+      "slug": "word-sense-disambiguation",
+      "label": "Word Sense Disambiguation"
+    },
+    {
+      "slug": "discourse-analysis",
+      "label": "Discourse Analysis"
+    },
+    {
+      "slug": "phonology",
+      "label": "Phonology"
+    },
+    {
+      "slug": "morphology",
+      "label": "Morphology"
+    },
+    {
+      "slug": "syntax",
+      "label": "Syntax"
+    },
+    {
+      "slug": "semantics",
+      "label": "Semantics"
+    },
+    {
+      "slug": "pragmatics",
+      "label": "Pragmatics"
+    },
+    {
+      "slug": "neural-machine-translation",
+      "label": "Neural Machine Translation"
+    },
+    {
+      "slug": "transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "slug": "fine-tuning",
+      "label": "Fine-Tuning"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "sequence-to-sequence-model",
+      "label": "Sequence-to-Sequence Model"
+    },
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    },
+    {
+      "slug": "psycholinguistics",
+      "label": "Psycholinguistics"
+    }
+  ],
   "backlinks": [
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
     {
       "slug": "translation",
       "label": "Translation"

@@ -121,6 +121,14 @@
       "label": "AI Agent System"
     },
     {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
       "slug": "remote-pair-programming",
       "label": "Remote Pair Programming"
     }

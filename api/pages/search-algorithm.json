@@ -177,8 +177,20 @@
       "label": "Classical Planning"
     },
     {
+      "slug": "computational-creativity",
+      "label": "Computational Creativity"
+    },
+    {
       "slug": "constraint-satisfaction",
       "label": "Constraint Satisfaction"
+    },
+    {
+      "slug": "constraint-solver",
+      "label": "Constraint Solver"
+    },
+    {
+      "slug": "constraint",
+      "label": "Constraint"
     },
     {
       "slug": "nearest-neighbor-search",

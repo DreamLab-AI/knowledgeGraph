@@ -124,6 +124,10 @@
       "label": "Blockchain Network"
     },
     {
+      "slug": "community-detection",
+      "label": "Community Detection"
+    },
+    {
       "slug": "distributed-architecture",
       "label": "Distributed Architecture"
     },

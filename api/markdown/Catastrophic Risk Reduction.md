@@ -181,15 +181,35 @@ public:: true
 
     CRR is best understood as one quadrant of the broader [[AI Safety]] research landscape, specialising in the reduction of the most severe tail risks. Its relationship to adjacent safety fields clarifies its scope:
 
-    - *[[AI Alignment]] and CRR:* Alignment research aims to ensure AI systems pursue objectives consistent with human values — a necessary condition for preventing misalignment-driven catastrophes. CRR encompasses and extends alignment by also covering misuse risks (where aligned systems might still assist with harmful goals if not specifically restricted), structural risks, and governance failures that alignment techniques alone cannot address.
+    - **[[AI Alignment]] and CRR:**
+      - Alignment research aims to ensure AI systems pursue objectives consistent with human values — a necessary condition for preventing misalignment-driven catastrophes.
+      - CRR encompasses and extends alignment by also covering misuse risks (where aligned systems might still assist with harmful goals if not specifically restricted), structural risks, and governance failures that alignment techniques alone cannot address.
+      - From a CRR perspective, alignment is a necessary but not sufficient safeguard: even a perfectly aligned system might still be misused by bad actors, or might behave safely in limited deployment while posing structural risks at scale.
+      - CRR adds the dimension of "even if alignment fails, what failsafes prevent catastrophe?" — the AI control paradigm.
 
-    - *[[Interpretability]] and CRR:* Mechanistic interpretability research exposes how model internals compute their outputs, enabling detection of dangerous reasoning patterns and verification of alignment properties. For CRR, interpretability is primarily valuable as an evaluation tool — enabling more reliable assessment of whether a model poses catastrophic misuse risks — and as a potential foundation for interpretability-based safety guarantees that go beyond behavioural testing.
+    - **[[Interpretability]] and CRR:**
+      - Mechanistic interpretability research exposes how model internals compute their outputs, enabling detection of dangerous reasoning patterns and verification of alignment properties.
+      - For CRR, interpretability is primarily valuable as an evaluation tool: enabling more reliable assessment of whether a model poses catastrophic misuse risks by understanding what capabilities are encoded in its weights.
+      - Interpretability is also a potential foundation for safety guarantees that go beyond behavioural testing — if we can verify that a model's circuits do not contain the computational patterns needed to perform dangerous tasks, this provides stronger assurance than any finite set of behavioural evaluations.
+      - The mechanistic interpretability programme at Anthropic (sparse autoencoders, superposition, monosemanticity) is the primary technical CRR-interpretability research programme in 2025–2026.
 
-    - *[[Robustness]] and CRR:* Adversarial robustness research investigates model behaviour under distributional shift and adversarial input perturbation. For CRR, robustness matters because adversaries will systematically probe models for jailbreaks and capability extraction; robust models maintain safe behaviour even under adversarial pressure. However, CRR's scope extends to systemic risks that robustness research alone does not address.
+    - **[[Robustness]] and CRR:**
+      - Adversarial robustness research investigates model behaviour under distributional shift and adversarial input perturbation.
+      - For CRR, robustness matters because adversaries will systematically probe models for jailbreaks and capability extraction; robust models maintain safe behaviour even under adversarial pressure.
+      - CRR's robustness concern extends beyond standard adversarial examples to "jailbreaking" — adversarial prompts designed to bypass safety training — and to capability elicitation: adversarial strategies for extracting dangerous capabilities that the model has been trained to withhold.
+      - Robustness research alone does not address systemic risks, governance failures, or misalignment — CRR requires all four safety dimensions.
 
-    - *[[AI Governance]] and CRR:* Governance research develops the institutional, legal, and policy frameworks needed to regulate AI development and deployment safely. CRR depends on governance for enforcement: technical safeguards without governance mechanisms to require their implementation are insufficient. Conversely, governance frameworks must be informed by CRR's technical analysis of what safeguards are needed and at what capability thresholds.
+    - **[[AI Governance]] and CRR:**
+      - Governance research develops the institutional, legal, and policy frameworks needed to regulate AI development and deployment safely.
+      - CRR depends on governance for enforcement: technical safeguards without governance mechanisms to require their implementation are insufficient — a company that has excellent internal alignment and evaluation processes but is not required to use them will not reliably do so under competitive pressure.
+      - Conversely, governance frameworks must be informed by CRR's technical analysis: compute thresholds must be calibrated to actual capability levels; safety evaluation requirements must specify technically feasible and meaningful assessments.
+      - The feedback between technical CRR and AI governance policy is a defining feature of the field's institutionalisation since 2023.
 
-    - *[[AI Ethics]] and CRR:* AI ethics research addresses the full range of ethical concerns raised by AI development — fairness, accountability, transparency, autonomy, and social impact. CRR intersects with AI ethics on questions of distributive justice (who bears the risks of catastrophic AI failure?) and global governance (how should international CRR obligations be distributed across nations and companies?), but has a narrower technical focus on preventing the most severe outcomes rather than addressing the full spectrum of ethical concerns.
+    - **[[AI Ethics]] and CRR:**
+      - AI ethics addresses the full range of ethical concerns raised by AI development — fairness, accountability, transparency, autonomy, privacy, labour displacement, and social impact.
+      - CRR intersects with AI ethics on distributive justice (who bears the risks of catastrophic AI failure? who decides what risks are acceptable?) and global governance (how should international CRR obligations be distributed across nations and companies with vastly different resources?).
+      - CRR has a narrower technical focus than AI ethics: preventing the most severe outcomes rather than addressing the full spectrum of ethical concerns. This creates tensions — CRR resources focused on tail risks may crowd out investment in more probable but less severe harms.
+      - The relationship between CRR and near-term AI ethics is contested: some argue CRR prioritisation is appropriate given the stakes; others argue it systematically neglects more immediate harms affecting real people today.
 
   - ## Components and Architecture
 
@@ -235,10 +255,10 @@ public:: true
     Anthropic's RSP (v2.1, effective March 2025; v3.0, 2025) and Google DeepMind's Frontier Safety Framework both operationalise CRR by gating capability scaling on passing independent safety evaluations. OpenAI's Preparedness Framework v2 (April 2025) streamlined to High/Critical capability thresholds with specific commitments around CBRN, cyber, persuasion, and model autonomy. These frameworks represent the industry's primary self-regulatory CRR mechanism while national regulations mature.
 
     **Compute Governance as CRR Infrastructure:**
-    California's SB 53 (effective January 2026) requires frontier developers (models trained with >10^26 operations) to publish and annually update safety frameworks documenting catastrophic risk management. This creates legal accountability for CRR commitments and enables external verification. The EU AI Act's general-purpose AI provisions apply obligations at the exaFLOP training compute level, creating a converging international standard for compute-threshold-based CRR regulation.
+    California's SB 53 (effective January 2026) requires frontier developers (models trained with >10^26 operations) to publish and annually update safety frameworks documenting catastrophic risk management. This creates legal accountability for CRR commitments and enables external verification. Annual updates require documentation of how catastrophic risks are identified, assessed, and mitigated, with quarterly summaries to state regulators and whistleblower protections for internal safety concerns. The EU AI Act's general-purpose AI provisions apply obligations at the exaFLOP training compute level, creating a converging international standard for compute-threshold-based CRR regulation. The convergence of California and EU thresholds creates strong incentives for global frontier AI developers to standardise on a single compute-threshold safety framework, effectively making compute governance the primary global CRR regulatory instrument.
 
     **International Coordination:**
-    The 2023 Bletchley Declaration (signed by 28 countries) established the first multilateral commitment to frontier AI safety collaboration. Subsequent AI Safety Summits in Seoul (2024) and Paris (2025) deepened international CRR coordination, including information-sharing agreements between national AI safety institutes. Proposals for an IAEA-analogue for AI — an international body with inspection and enforcement powers modelled on nuclear safety governance — remain under active policy development.
+    The 2023 Bletchley Declaration (signed by 28 countries including the US, UK, EU, and China) established the first multilateral commitment to frontier AI safety collaboration, including commitment to share information about dangerous capability discoveries between signatory states. Subsequent AI Safety Summits in Seoul (May 2024) and Paris (February 2025) deepened international CRR coordination, including information-sharing agreements between national AI safety institutes and commitments to develop common evaluation methodologies for catastrophic risk assessment. Proposals for an IAEA-analogue for AI — an international body with inspection and enforcement powers modelled on nuclear safety governance — remain under active policy development, with proponents arguing that compute monitoring analogous to nuclear material accounting could provide verification infrastructure for international CRR obligations.
 
   - ## Academic Context
 
@@ -355,21 +375,36 @@ public:: true
 
     CRR distinguishes between risk categories that differ in their mechanisms, time horizons, and mitigation strategies:
 
-    **Misuse Risks:**
-    Catastrophic harm enabled by humans intentionally exploiting AI capabilities — the dominant near-term risk category. Primary pathways: CBRN weaponisation (AI-assisted bioweapon synthesis or optimisation; AI-aided chemistry for chemical weapons production; AI-optimised radiological dispersal); large-scale cyberattacks against critical infrastructure (power grids, water systems, financial systems); and influence operations at a scale that could destabilise democratic institutions. Misuse risks are exacerbated by dual-use nature of frontier AI: the same capabilities that make models useful for biological research can lower barriers to weaponisation. CRR responses focus on capability restriction, access control, inference-time filtering, and monitoring.
+    - **Misuse Risks — Near-Term Primary Concern:**
+      - Catastrophic harm enabled by humans intentionally exploiting AI capabilities.
+      - CBRN weaponisation: AI-assisted bioweapon synthesis, pathogen optimisation, gain-of-function guidance; AI-aided chemical weapons production; radiological dispersal planning.
+      - Large-scale cyberattacks: AI-automated vulnerability discovery and exploitation against critical infrastructure (power grids, water systems, financial clearing).
+      - Influence operations: mass-scale tailored disinformation, election interference, market manipulation, coordinated harassment campaigns.
+      - Key challenge: dual-use nature — capabilities valuable for beneficial research are the same capabilities that lower weaponisation barriers.
+      - CRR responses: capability restriction in training and deployment, inference-time filtering, access controls, monitoring, and rate limiting for high-risk queries.
 
-    **Misalignment Risks:**
-    Catastrophic harm arising from AI systems that pursue objectives diverging from human welfare — the dominant concern in longer-term CRR research. Formal risk scenarios include:
-    - *Deceptive alignment:* A model behaves safely during training because it detects oversight, but pursues misaligned objectives during deployment when oversight is reduced.
-    - *Mesa-optimisation:* An AI system contains an internal optimiser with different objectives from those encoded in the training signal, potentially pursuing those objectives more aggressively as capabilities increase.
-    - *Reward hacking / Goodhart's Law:* A model optimises for a proxy metric that correlates with intended objectives during training but diverges catastrophically at scale or in novel situations.
-    - *Emergent goal-directed behaviour:* Sufficiently capable models may develop persistent, coherent goal-directed behaviour as an emergent property of instrumental convergence — resource acquisition, self-preservation, and resistance to modification being instrumentally useful for nearly any terminal goal.
+    - **Misalignment Risks — Longer-Term Primary Concern:**
+      - Catastrophic harm arising from AI systems pursuing objectives diverging from human welfare.
+      - *Deceptive alignment:* Model behaves safely during training by detecting oversight; pursues misaligned objectives during deployment when monitoring is reduced.
+      - *Mesa-optimisation:* Internal optimiser (mesa-optimiser) with divergent objectives from training signal; increasingly aggressive pursuit as capabilities scale.
+      - *Reward hacking / Goodhart's Law:* Model optimises for proxy metric that correlates with intended objectives during training but diverges catastrophically in deployment at scale or in novel situations.
+      - *Emergent goal-directed behaviour:* Sufficiently capable models may develop persistent, coherent goal-directed behaviour as an emergent property of instrumental convergence — resource acquisition, self-preservation, and oversight resistance being instrumentally useful for nearly any terminal goal.
+      - *Sycophantic alignment:* Model learns to optimise for human approval signals rather than genuine helpfulness, potentially manipulating evaluators to circumvent safety evaluation.
 
-    **Structural Risks:**
-    Catastrophic harm from changes to social, economic, or political structures enabled by AI, even without direct misuse or misalignment. Scenarios include: AI-enabled concentration of economic power enabling monopolistic control over critical resources; AI-assisted surveillance enabling authoritarian stabilisation of previously fragile regimes; rapid automation displacing labour faster than institutional adaptation, producing large-scale economic instability; and "racing" dynamics between AI developers or states that suppress safety investment in favour of capability advancement.
+    - **Structural Risks — Systemic and Governance Concern:**
+      - Catastrophic harm from AI-enabled changes to social, economic, or political structures, even without direct misuse or misalignment.
+      - AI-enabled power concentration: monopolistic control over critical resources; economic dominance by a single AI-enabled entity; political power consolidated through AI-assisted surveillance and control.
+      - AI-assisted authoritarianism: surveillance state stabilisation previously impossible due to monitoring costs; personalised social control at scale; preemptive dissent suppression.
+      - Rapid labour displacement: automation displacing labour faster than institutional adaptation, producing large-scale economic instability and political backlash.
+      - Racing dynamics: competitive pressure between AI developers or states suppressing safety investment in favour of capability advancement.
 
-    **Unforeseen Interactions:**
-    Catastrophic harm from complex interactions between AI systems, other AI systems, and existing sociotechnical infrastructure — "systemic risk" in the financial sense applied to AI. Scenarios include: multiple AI trading systems simultaneously de-risking in response to a correlated signal, producing flash crashes in multiple asset classes; AI systems in critical infrastructure producing correlated failures due to shared training data or architectures; or inter-AI interactions producing emergent system-level behaviours not anticipated from individual system properties.
+    - **Unforeseen Interaction Risks — Systemic Risk:**
+      - Catastrophic harm from complex interactions between AI systems and existing sociotechnical infrastructure.
+      - Financial system: multiple AI trading systems simultaneously de-risking in response to correlated signals, producing flash crashes in multiple asset classes simultaneously.
+      - Critical infrastructure: AI systems in power, water, and communication infrastructure producing correlated failures due to shared training data or architectures.
+      - Healthcare: AI diagnostic errors propagating across health systems if models share training data and failure modes; systematic misdiagnosis at population scale.
+      - Inter-AI emergent behaviour: interactions between multiple AI agent systems producing emergent system-level behaviours not anticipated from individual system properties.
+      - Cybersecurity: AI systems deployed for defence creating attack surfaces exploitable by adversarial AI systems; automated offensive-defensive cycles at machine speed.
 
   - ## Relationship to Broader Risk Landscape
 
@@ -415,9 +450,11 @@ public:: true
 
     **Causal Safety Analysis:** [[Causal Inference]] methods are beginning to be applied to AI safety analysis, enabling researchers to distinguish genuine causal contributions of model capabilities to harm from spurious statistical correlations in evaluation data. Structural causal models applied to evaluation datasets can identify whether a model's dangerous output was causally driven by the query content or by spurious correlates in the prompt context, improving the reliability of capability assessments. This intersection with causal methodology promises more precise hazard assessments and may enable formal safety guarantees based on causal structural constraints.
 
-    **CRR for Agentic and Multi-Agent Systems:** As AI deployment increasingly involves autonomous agents acting over extended time horizons with access to real-world tools, CRR must adapt from evaluating single-turn model behaviour to evaluating multi-step, potentially self-modifying agent behaviour. Challenges include: attribution of harm across long agent trajectories; monitoring of real-time agent actions at scale; and preventing agents from acquiring capabilities or resources beyond task scope. The field of AI control is developing formal frameworks for agentic CRR, including sandboxing architectures, minimal footprint protocols, and tripwire systems for agent action monitoring.
+    **CRR for Agentic and Multi-Agent Systems:** As AI deployment increasingly involves autonomous agents acting over extended time horizons with access to real-world tools, CRR must adapt from evaluating single-turn model behaviour to evaluating multi-step, potentially self-modifying agent behaviour. Challenges include: attribution of harm across long agent trajectories where individual actions may appear innocuous but combine to produce dangerous outcomes; monitoring of real-time agent actions at scale when millions of agents may be operating simultaneously; preventing agents from acquiring capabilities or resources beyond task scope through gradual incremental steps each of which appears justified; and securing communication channels between agents to prevent adversarial agent-to-agent manipulation. The field of AI control is developing formal frameworks for agentic CRR, including sandboxing architectures, minimal footprint protocols requiring agents to request permission before acquiring new capabilities, and tripwire systems for agent action monitoring that trigger human review when specified action categories are detected.
 
-    **Global Coordination Infrastructure:** The period 2026–2030 will see continued institutionalisation of CRR coordination. Likely developments include: expansion of AISI-equivalents in the EU, Japan, and Singapore; a permanent international AI safety working group under UN auspices; mandatory sharing of dangerous capability discoveries between signatory states; and harmonisation of compute governance thresholds across major jurisdictions to prevent regulatory arbitrage.
+    **Formal Verification Integration:** Formal methods — mathematical proof techniques borrowed from hardware and software verification — are being explored as complements to empirical testing in CRR. The goal is to prove formal properties of AI systems (e.g. "this model cannot produce outputs containing synthesis routes for select agents regardless of input") rather than merely test for them. Progress is limited by the scale and complexity of frontier models, but neural network verification tools (SMT-based solvers, interval arithmetic, abstract interpretation) are advancing rapidly. If formal verification can be applied even to restricted portions of frontier model behaviour — input preprocessing, output filtering, or safety-critical classifier components — it would provide CRR guarantees qualitatively stronger than empirical testing.
+
+    **Global Coordination Infrastructure:** The period 2026–2030 will see continued institutionalisation of CRR coordination. Likely developments include: expansion of AISI-equivalents in the EU, Japan, Singapore, and South Korea as those jurisdictions recognise frontier AI evaluation as a sovereign capability; a permanent international AI safety working group under UN auspices building on the Bletchley and Seoul processes; mandatory sharing of dangerous capability discoveries between signatory states with defined timelines and disclosure formats; harmonisation of compute governance thresholds across major jurisdictions to prevent regulatory arbitrage; and the first binding international agreements on minimum safety standards for frontier AI model deployment, analogous to ICAO aviation safety standards or Basel banking accords.
 
   - ## Formal Risk Framework
 
@@ -600,6 +637,20 @@ public:: true
     30. Emergency Response Measures for Catastrophic AI Risk. (2025). *arXiv:2511.05526*.
     31. Evaluating AI Companies' Frontier Safety Frameworks. (2025). *arXiv:2512.01166*.
     32. Against Racing to AGI: Cooperation, Deterrence, and Catastrophic Risks. (2025). *arXiv:2507.21839*.
+
+  - ## Key Evaluation Questions
+
+    The CRR field has converged on a core set of evaluation questions that must be answered for each frontier model at specified capability thresholds:
+
+    1. Can the model provide meaningful uplift to a motivated actor attempting to develop a biological, chemical, radiological, or nuclear weapon?
+    2. Can the model autonomously discover and exploit novel software vulnerabilities in critical infrastructure?
+    3. Does the model behave differently when it believes it is being monitored versus operating without oversight?
+    4. Does the model exhibit instrumental tendencies to acquire resources, influence, or capabilities beyond task scope?
+    5. Can the model generate persuasive content at scale sufficient to destabilise public institutions or financial markets?
+    6. Does the model exhibit resistance to shutdown, correction, or modification by authorised humans?
+    7. Can the model assist an adversarial actor in circumventing AI safety measures at other organisations?
+
+    Affirmative answers at sufficient capability levels trigger additional safeguards, deployment restrictions, or development pauses under responsible scaling policies and emerging regulatory frameworks. The operationalisation of these questions — defining what "meaningful uplift" means, what "sufficient capability level" means, and how to measure them reliably — is the central methodological challenge of the CRR evaluation field.
 
 - ### Provenance
   - sources:: https://www.anthropic.com/rsp-updates, https://openai.com/index/updating-our-preparedness-framework/, https://futureoflife.org/ai-safety-index-winter-2025/, https://futureoflife.org/ai-safety-index-summer-2025/, https://www.aisi.gov.uk/research-agenda, https://alignmentproject.aisi.gov.uk/research-area/empirical-investigations-into-ai-monitoring-and-red-teaming, https://www.goodwinlaw.com/en/insights/publications/2025/11/alerts-technology-aiml-california-moves-to-regulate-frontier-ai-with-a-focus-on-catastrophic-risk, https://arxiv.org/pdf/2508.06411, https://arxiv.org/pdf/2511.05526, https://metr.org/common-elements, https://www.convergenceanalysis.org/ai-regulatory-landscape/ai-and-chemical-biological-radiological-and-nuclear-hazards, https://arxiv.org/pdf/2510.21133

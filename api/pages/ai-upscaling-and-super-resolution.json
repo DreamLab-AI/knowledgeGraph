@@ -329,6 +329,10 @@
   ],
   "backlinks": [
     {
+      "slug": "code-former",
+      "label": "CodeFormer"
+    },
+    {
       "slug": "comfy-ui-workflows",
       "label": "ComfyUI Workflows"
     }

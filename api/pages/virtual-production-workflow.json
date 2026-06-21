@@ -81,6 +81,10 @@
   ],
   "backlinks": [
     {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    },
+    {
       "slug": "reality-capture-system",
       "label": "Reality Capture System"
     }

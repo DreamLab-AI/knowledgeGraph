@@ -72,6 +72,10 @@
       "label": "3D Generation"
     },
     {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    },
+    {
       "slug": "diffusion-models",
       "label": "Diffusion Models"
     },

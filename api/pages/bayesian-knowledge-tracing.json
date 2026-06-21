@@ -367,6 +367,10 @@
       "label": "Adaptive Learning"
     },
     {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
+    },
+    {
       "slug": "education-and-ai",
       "label": "Education and AI"
     }

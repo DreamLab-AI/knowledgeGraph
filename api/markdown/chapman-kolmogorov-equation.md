@@ -10,16 +10,16 @@
 
 - ### Relationships
   - is-subclass-of:: [[Stochastic Process]], [[Mathematical Identity]], [[Probability Theory]]
-  - has-part:: [[Fokker-Planck Equation]], [[Kolmogorov Backward Equation]], [[Transition Matrix]], [[Transition Kernel]]
-  - requires:: [[Markov Property]], [[Probability Theory]], [[Measure Theory]], [[Linear Algebra]]
-  - enables:: [[Markov Chain Monte Carlo]], [[Bayesian Inference]], [[Hidden Markov Model]], [[Kalman Filter]], [[Diffusion Model]], [[Score-Based Generative Model]], [[Value Function]], [[Reinforcement Learning]]
-  - implements:: [[Markov Chain]], [[Stochastic Differential Equation]], [[Fokker-Planck Equation]]
-  - depends-on:: [[Markov Property]], [[Probability Measure]], [[Sigma Algebra]]
-  - supports:: [[Markov Chain Monte Carlo]], [[Bayesian Inference]], [[Time-Series Analysis]], [[Sequential Decision Making]], [[Probabilistic Programming]]
-  - uses:: [[Probability Theory]], [[Matrix Multiplication]], [[Integral Equation]]
-  - contrasts-with:: [[Non-Markovian Process]], [[Long-Range Memory Process]], [[Fractional Brownian Motion]]
-  - related-to:: [[Stochastic Differential Equation]], [[Time-Series Analysis]], [[Diffusion Model]], [[Reinforcement Learning]], [[Bellman Equation]], [[Gaussian Process]], [[Hidden Markov Model]], [[Markov Decision Process]], [[Brownian Motion]], [[Wiener Process]]
-  - standardized-by:: [[Kolmogorov Axioms]], [[Feller 1949 Semigroup Theory]]
+  - has-part:: [[Fokker-Planck Equation]], [[Kolmogorov Backward Equation]], [[Transition Matrix]], [[Transition Kernel]], [[Markov Semigroup]], [[Stationary Distribution]], [[Spectral Gap]]
+  - requires:: [[Markov Property]], [[Probability Theory]], [[Measure Theory]], [[Linear Algebra]], [[Sigma Algebra]], [[Conditional Probability]]
+  - enables:: [[Markov Chain Monte Carlo]], [[Bayesian Inference]], [[Hidden Markov Model]], [[Kalman Filter]], [[Diffusion Model]], [[Score-Based Generative Model]], [[Value Function]], [[Reinforcement Learning]], [[Uncertainty Quantification]], [[Probabilistic Programming]], [[Optimal Transport]], [[Variational Inference]]
+  - implements:: [[Markov Chain]], [[Stochastic Differential Equation]], [[Fokker-Planck Equation]], [[Forward-Backward Algorithm]], [[Bellman Equation]]
+  - depends-on:: [[Markov Property]], [[Probability Measure]], [[Sigma Algebra]], [[Ergodicity]], [[Detailed Balance]]
+  - supports:: [[Markov Chain Monte Carlo]], [[Bayesian Inference]], [[Time-Series Analysis]], [[Sequential Decision Making]], [[Probabilistic Programming]], [[Molecular Dynamics]], [[Financial Mathematics]], [[Climate Modelling]], [[Epidemiology Modelling]], [[Robotics State Estimation]]
+  - uses:: [[Probability Theory]], [[Matrix Multiplication]], [[Integral Equation]], [[Measure Theory]], [[Semigroup Theory]]
+  - contrasts-with:: [[Non-Markovian Process]], [[Long-Range Memory Process]], [[Fractional Brownian Motion]], [[Path-Dependent Process]], [[Quantum Non-Markovian Process]]
+  - related-to:: [[Stochastic Differential Equation]], [[Time-Series Analysis]], [[Diffusion Model]], [[Reinforcement Learning]], [[Bellman Equation]], [[Gaussian Process]], [[Hidden Markov Model]], [[Markov Decision Process]], [[Brownian Motion]], [[Wiener Process]], [[Entropy Production]], [[Fluctuation Theorem]], [[Mixing Time]], [[Diffusion Map]], [[Schrödinger Bridge]]
+  - standardized-by:: [[Kolmogorov Axioms]], [[Feller 1949 Semigroup Theory]], [[Hille-Yosida Theorem]]
 
 - ### Content
   - ## Compositional Relationships (Components)
@@ -100,6 +100,44 @@
     The importance of the Chapman-Kolmogorov identity for modern machine learning cannot be overstated. It encodes precisely what it means for a random process to have no memory beyond the present state — the Markov property — and provides the composition law for transition kernels that makes all multi-step probabilistic predictions tractable. For a time-homogeneous Markov chain with transition matrix P, the identity is equivalent to the statement that P^(n+m) = P^n · P^m: matrix powers compose correctly. This apparently simple observation has profound algorithmic consequences. It implies that repeated matrix multiplication can be used to compute long-run transition probabilities, that eigenvectors of P correspond to invariant (stationary) distributions, and that the spectral gap of P governs mixing time — the number of steps required before the chain's distribution is indistinguishable from the stationary distribution. Mixing time analysis is directly relevant to the convergence guarantees of [[Markov Chain Monte Carlo]] algorithms.
 
     In continuous state space and continuous time, the Chapman-Kolmogorov framework generates the Fokker-Planck PDE for the evolution of probability densities under drift vector field b(x) and diffusion tensor D(x): ∂_t p(x,t) = -∇·(b(x)p(x,t)) + ∇²·(D(x)p(x,t)). The backward (Kolmogorov) equation governs the evolution of expected values of observables. These PDEs are the continuous limits of the discrete Chapman-Kolmogorov recursion and connect the probabilistic framework to the theory of partial differential equations, enabling the rich toolkit of PDE analysis (maximum principles, energy methods, spectral theory) to be applied to stochastic systems. Physics-informed neural networks (PINNs) now solve these high-dimensional Fokker-Planck equations using deep learning, circumventing the curse of dimensionality that plagues traditional numerical PDE solvers.
+
+  - ## Extended OWL Axioms: Additional Semantic Relationships
+    ```
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:relatedTo math:BrownianMotion))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:relatedTo math:WienerProcess))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:relatedTo math:GaussianProcess))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:relatedTo math:BellmanEquation))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:relatedTo math:MarkovDecisionProcess))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:enables math:ScoreBasedGenerativeModel))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:enables math:VariationalInference))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:enables math:OptimalTransport))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:supports math:MolecularDynamics))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:supports math:FinancialMathematics))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:supports math:ClimateModelling))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:supports math:EpidemiologyModelling))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:relatedTo math:EntropyProduction))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:relatedTo math:FluctuationTheorem))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:contrastsWith math:LongRangeMemoryProcess))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:relatedTo math:SpectralGap))
+    SubClassOf(math:ChapmanKolmogorovEquation
+      ObjectSomeValuesFrom(math:relatedTo math:MixingTime))
+    ```
 
   - ## Formal Statement and Variants
     **Discrete-time, discrete-state (Markov chain):**
@@ -243,14 +281,81 @@
 
     Sydney Chapman himself worked at the University of Manchester (1919–1924) as Beyer Professor of Mathematics before moving to Imperial College London (1924–1953), making the equation's British connection explicit. The Manchester tradition in applied mathematics and physics continues to apply probabilistic and stochastic methods across engineering and physical sciences.
 
+  - ## Quantum and Non-Classical Extensions
+    The classical Chapman-Kolmogorov framework assumes that probabilities are non-negative real numbers and that conditional probabilities multiply in the classical Bayesian way. Quantum mechanics violates both of these assumptions: quantum states are described by density matrices (positive semi-definite complex matrices of trace 1), and quantum conditional probabilities are not simply products of marginal probabilities due to interference and entanglement. This has motivated the development of quantum analogues of the Chapman-Kolmogorov equation.
+
+    For an open quantum system (a quantum system interacting with an environment), the state evolves via a quantum dynamical map Λ_t satisfying Λ_{t+s} = Λ_t ∘ Λ_s — the quantum Chapman-Kolmogorov (semigroup) equation. This is the quantum analogue of the classical Markov semigroup property. When this equation is satisfied (together with complete positivity and trace preservation), the system is Markovian in the quantum sense, and the evolution is governed by the Lindblad master equation:
+    dρ/dt = -i[H,ρ]/ℏ + Σ_k (L_k ρ L_k† - (1/2)(L_k†L_k ρ + ρ L_k†L_k))
+
+    Many real quantum systems are non-Markovian — their evolution depends on memory of past states — which violates the quantum Chapman-Kolmogorov equation. Detecting and quantifying quantum non-Markovianity (Rivas et al. 2014; Breuer et al. 2016) is an active research area, as quantum memory effects can be exploited for quantum computing and quantum communication. The violation of the quantum Chapman-Kolmogorov identity serves as a witness for non-Markovian dynamics, with applications to quantum noise characterisation in quantum processors and quantum error correction protocol design.
+
+    Quantum machine learning (QML) attempts to exploit quantum hardware to accelerate machine learning algorithms. Quantum MCMC (Szegedy 2004; Wocjan & Abeyesinghe 2008) proposes quantum speedups for mixing Markov chains via quantum walks, potentially achieving quadratic speedup in mixing time for certain chain families. The quantum Chapman-Kolmogorov equation is the theoretical underpinning of quantum Markov chain mixing analysis, and quantum algorithms for solving Fokker-Planck equations (Liu et al. 2021) exploit quantum linear systems algorithms to achieve exponential speedup over classical finite difference methods for specific problem classes.
+
+  - ## Numerical Methods and Software Ecosystems
+    The practical application of Chapman-Kolmogorov–based algorithms requires robust numerical methods and software implementations. Several ecosystems have developed around different application domains:
+
+    **Probabilistic Programming Languages (PPLs)**: Stan (Carpenter et al. 2017), PyMC (Salvatier et al. 2016), NumPyro (Bingham et al. 2019), and Pyro (Bingham et al. 2019) provide declarative languages for specifying probabilistic models and automatically applying MCMC or variational inference. The NUTS sampler implemented in Stan and PyMC relies on HMC with automatic step-size and trajectory-length adaptation, with theoretical convergence guarantees resting on the Chapman-Kolmogorov Markov property of HMC transitions. These tools have become standard in Bayesian data analysis across social science, ecology, and medicine.
+
+    **Deep Learning Frameworks for Diffusion Models**: HuggingFace Diffusers, JAX/FLAX implementations, and PyTorch-based libraries (Denoising Diffusion PyTorch, Score SDE PyTorch) provide standardised implementations of DDPM, DDIM, and score-based generative models. The Chapman-Kolmogorov noise schedule computation (closed-form marginals q(x_t | x_0)) is typically implemented as a precomputed lookup table of α_t and σ_t values.
+
+    **Filtering and State Estimation Libraries**: FilterPy (Python), the Julia BayesFilters.jl ecosystem, and MATLAB's Control System Toolbox provide Kalman filter, Extended Kalman Filter, Unscented Kalman Filter, and Particle Filter implementations. These are used in robotics (ROS navigation stack), aerospace (INS/GPS integration), and finance (regime-switching model estimation).
+
+    **Markov State Modelling for Molecular Dynamics**: PyEMMA (Scherer et al. 2015) and MSMBuilder provide tools for constructing, validating, and analysing Markov State Models from molecular dynamics trajectory data. The Chapman-Kolmogorov test — comparing estimated multi-step transition matrices against compositions of one-step matrices — is a standard validation procedure implemented in these libraries. Models that fail the Chapman-Kolmogorov test indicate insufficient lag time (the process is not yet Markovian on the chosen timescale) and require longer lag times or finer state decomposition.
+
+    **Reinforcement Learning Toolkits**: OpenAI Gymnasium (formerly Gym), Stable-Baselines3, and RLlib provide MDP environment interfaces and RL algorithm implementations that implicitly rely on the Markovian structure (transition probability kernel) of the environment for correctness of Q-learning, policy gradient, and actor-critic algorithms.
+
+  - ## Related Equations and Mathematical Hierarchy
+    The Chapman-Kolmogorov equation sits at the centre of a hierarchy of equations in probability theory and stochastic analysis. Understanding the relationships between these equations clarifies the equation's role in the broader mathematical landscape:
+
+    - **Chapman-Kolmogorov equation** (parent): The consistency condition P(n+m) = P(n) · P(m) for all n, m. Holds for any Markov process by definition of the Markov property.
+    - **[[Fokker-Planck Equation]]** (derived): The forward PDE ∂_t p = L*p obtained by differentiating the Chapman-Kolmogorov integral equation with respect to t. Describes density evolution under drift and diffusion.
+    - **Kolmogorov Backward Equation** (derived): The backward PDE ∂_t f = Lf obtained by differentiating with respect to s. Governs expected values of terminal functionals.
+    - **[[Bellman Equation]]** (special case): Discrete-time dynamic programming recursion; a one-step Chapman-Kolmogorov marginalisation for the value function under the reward-augmented transition kernel.
+    - **Hamilton-Jacobi-Bellman (HJB) Equation** (continuous limit): The PDE V_t + L V = -r obtained as the continuous-time limit of the Bellman equation. Central to stochastic optimal control.
+    - **Kolmogorov Forward Equation for Densities on Graphs** (graph generalisation): For Markov chains on finite graphs, the Chapman-Kolmogorov matrix recurrence plus the stationary distribution eigenvector equation π P = π. Used in PageRank, spectral clustering, and graph neural diffusion.
+    - **Quantum Lindblad Master Equation** (quantum generalisation): The open quantum system analogue ρ̇ = -i[H,ρ]/ℏ + D(ρ) where D is the dissipator. Satisfies quantum Chapman-Kolmogorov when the process is Markovian in the quantum sense.
+    - **Boltzmann Equation** (kinetic theory ancestor): The physical precursor studied by Chapman; the Boltzmann equation's collision integral, in the diffusion limit, yields the Fokker-Planck equation via the Chapman-Kolmogorov framework.
+    - **Smoluchowski Equation** (overdamped limit): The Fokker-Planck equation for overdamped Brownian motion in a potential V: ∂_t p = ∇·(∇V p + k_BT ∇p). Foundational to protein dynamics and colloid physics.
+    - **Continuity Equation / Liouville Equation** (zero-diffusion limit): When diffusion vanishes (σ → 0), the Fokker-Planck reduces to the continuity equation ∂_t p = -∇·(b p), governing deterministic density transport. The basis of [[Flow Matching]] generative models.
+
+  - ## Worked Example: Diffusion Model Noise Schedule via Chapman-Kolmogorov
+    A concrete illustration of the Chapman-Kolmogorov equation in modern machine learning is the derivation of the closed-form marginal distribution in [[Diffusion Model]] forward processes. This example demonstrates how the identity enables efficient training of denoising neural networks:
+
+    - **Step 1 — Define the forward one-step kernel**: For Denoising Diffusion Probabilistic Models (DDPM, Ho et al. 2020), the one-step transition is q(x_t | x_{t-1}) = N(x_t; √(1-β_t) x_{t-1}, β_t I) where β_t ∈ (0,1) is the noise schedule.
+    - **Step 2 — Apply Chapman-Kolmogorov recursively**: By the Markov property, the two-step marginal is q(x_2 | x_0) = ∫ q(x_2 | x_1) q(x_1 | x_0) dx_1. Since both kernels are Gaussian and their composition is Gaussian (closed under convolution), this integral can be computed analytically.
+    - **Step 3 — Compute the composition**: q(x_2 | x_0) = N(x_2; √(1-β_2)√(1-β_1) x_0, [β_2 + (1-β_2)β_1] I) = N(x_2; √(ᾱ_2) x_0, (1-ᾱ_2) I) where ᾱ_t = Π_{s=1}^t (1-β_s).
+    - **Step 4 — Generalise to t steps by induction**: The Chapman-Kolmogorov identity guarantees that this composition formula generalises to all t steps: q(x_t | x_0) = N(x_t; √(ᾱ_t) x_0, (1-ᾱ_t) I).
+    - **Training benefit**: This closed form allows training the denoising network ε_θ(x_t, t) directly on (x_0, t) pairs without simulating the full t-step chain. For any x_0 and noise level t, we sample x_t = √(ᾱ_t) x_0 + √(1-ᾱ_t) ε, ε ~ N(0,I) in one operation, then train ε_θ to predict ε.
+    - **Chapman-Kolmogorov as computational shortcut**: Without the Chapman-Kolmogorov identity, training would require sequential simulation of all t steps for each training example, making it computationally prohibitive for large t (typically t = 1000). The identity reduces this to O(1) computation.
+    - **Generalisation to continuous time**: Song et al. (2021) unified this by replacing the discrete recursion with a continuous Itô SDE dX = f(X,t)dt + g(t)dW, for which the Chapman-Kolmogorov identity becomes the Fokker-Planck PDE for marginal densities, enabling arbitrary continuous noise schedules.
+
+  - ## Probabilistic Programming and Software Ecosystem Details
+    The practical impact of the Chapman-Kolmogorov equation in modern data science is mediated primarily through probabilistic programming languages and machine learning libraries that implement its derived algorithms:
+
+    **Stan (2012–present)**: A probabilistic programming language developed at Columbia University (Andrew Gelman, Bob Carpenter et al.). Users write model specifications in the Stan language; Stan automatically differentiates the log-posterior and runs the NUTS sampler. Stan underpins Bayesian data analysis across epidemiology (COVID-19 models), ecology, psychology, and social science. The NUTS convergence guarantee rests on the HMC Chapman-Kolmogorov Markov property.
+
+    **PyMC (formerly PyMC3, 2012–present)**: Python-based probabilistic programming built on Theano (PyMC3) then PyTensor (PyMC v4+). Implements NUTS, Metropolis, ADVI (variational inference), and Gaussian process models. The `pm.sample()` call internally runs the Chapman-Kolmogorov consistent MCMC chain.
+
+    **NumPyro and Pyro (2017–present)**: JAX-based (NumPyro) and PyTorch-based (Pyro) probabilistic programming. Both implement the NUTS sampler and variational inference. NumPyro's JAX backend enables vectorised MCMC chains on GPU/TPU, dramatically accelerating Chapman-Kolmogorov–based inference for large-scale Bayesian models.
+
+    **HuggingFace Diffusers (2022–present)**: The dominant library for [[Diffusion Model]] inference. Implements DDPM, DDIM, Score SDE, LCM (Latent Consistency Model), and flow matching schedulers. All schedulers implement some variant of the Chapman-Kolmogorov noise schedule and reverse denoising process.
+
+    **PyEMMA (2015–present)**: Software for Markov state modelling of molecular dynamics trajectories. Implements MSM construction, the Chapman-Kolmogorov test for validation, spectral analysis for implied timescales, and transition path theory for pathway analysis.
+
+    **FilterPy (2015–present)**: Python library implementing Kalman filter, Extended Kalman Filter, Unscented Kalman Filter, and particle filter. Each filter implements a version of the Chapman-Kolmogorov prediction step for state distribution propagation.
+
+    **RLlib (2017–present) and Stable-Baselines3 (2020–present)**: Reinforcement learning libraries implementing Q-learning, PPO, SAC, TD3, and other algorithms that operate on Markovian MDP environments with Chapman-Kolmogorov transition dynamics.
+
   - ## Future Directions (2026–2030)
-    - **High-Dimensional Fokker-Planck Solvers**: Physics-informed neural networks and neural operator methods are progressively unlocking the ability to solve the Fokker-Planck equation in 100+ dimensional spaces, critical for molecular dynamics, protein folding energy landscapes, and turbulent fluid simulations. Deep learning–based PDE solvers exploit the Chapman-Kolmogorov structure for efficient training signal generation.
-    - **Non-Markovian Generalisations**: Many real systems (financial markets with memory, anomalous diffusion in biological cells, correlated noise in materials) are not strictly Markovian. Generalisations including fractional Brownian motion, rough volatility models, and the path-dependent SDEs of Lyons' rough paths theory are extending the Chapman-Kolmogorov framework to systems where the full path history matters. The Chapman-Kolmogorov test (Scientific Reports, 2025) provides empirical tools to detect memory.
+    - **High-Dimensional Fokker-Planck Solvers**: Physics-informed neural networks and neural operator methods are progressively unlocking the ability to solve the [[Fokker-Planck Equation]] in 100+ dimensional spaces, critical for [[Molecular Dynamics]], protein folding energy landscapes, and turbulent fluid simulations. Deep learning–based PDE solvers exploit the Chapman-Kolmogorov structure for efficient training signal generation.
+    - **Non-Markovian Generalisations**: Many real systems (financial markets with memory, anomalous diffusion in biological cells, correlated noise in materials) are not strictly Markovian. Generalisations including [[Fractional Brownian Motion]], rough volatility models, and the path-dependent SDEs of Terry Lyons' [[Rough Paths Theory]] are extending the Chapman-Kolmogorov framework to systems where the full path history matters. The Chapman-Kolmogorov test (Scientific Reports, 2025) provides empirical tools to detect memory.
     - **Quantum Chapman-Kolmogorov Equations**: Quantum open systems satisfying or violating the quantum Chapman-Kolmogorov identity (Lindblad master equations vs non-Markovian quantum dynamics) are a frontier of quantum machine learning. Developing efficient quantum algorithms for solving quantum Fokker-Planck equations could accelerate molecular simulation.
-    - **Continuous-Time Reinforcement Learning at Scale**: Applying Kolmogorov backward equation–based value function representations to large-scale robotics and autonomous vehicle control, beyond the current discrete-time MDP approximations used in most deep RL systems.
-    - **Diffusion Bridge Models**: The 2025 Bidirectional Diffusion Bridge paper and related work on diffusion bridges (Schrödinger bridge problem) uses the Chapman-Kolmogorov identity to define transport maps between arbitrary distributions, with applications to domain translation (image-to-image, molecule-to-molecule), cell trajectory inference in single-cell genomics, and unpaired data transformation.
-    - **Certified Uncertainty Quantification**: Using Chapman-Kolmogorov–based analysis of Markov chain mixing to provide rigorous statistical guarantees (PAC-Bayes bounds, conformal prediction) on uncertainty estimates from Bayesian deep learning, addressing safety requirements for medical and autonomous driving AI systems.
+    - **Continuous-Time [[Reinforcement Learning]] at Scale**: Applying Kolmogorov backward equation–based value function representations to large-scale robotics and autonomous vehicle control, beyond the current discrete-time MDP approximations used in most deep RL systems.
+    - **Diffusion Bridge Models**: The 2025 Bidirectional Diffusion Bridge paper and related work on [[Schrödinger Bridge]] problems use the Chapman-Kolmogorov identity to define transport maps between arbitrary distributions, with applications to domain translation (image-to-image, molecule-to-molecule), cell trajectory inference in single-cell genomics, and unpaired data transformation.
+    - **Certified [[Uncertainty Quantification]]**: Using Chapman-Kolmogorov–based analysis of [[Markov Chain]] mixing to provide rigorous statistical guarantees (PAC-Bayes bounds, conformal prediction) on uncertainty estimates from [[Bayesian Inference]] deep learning, addressing safety requirements for medical and autonomous driving AI systems.
     - **Learning Transition Kernels from Data**: Neural network–parameterised transition kernels that satisfy the Chapman-Kolmogorov constraint by construction, enabling data-driven stochastic process discovery for dynamical systems modelling without requiring an explicit mechanistic model.
+    - **Flow Matching and Conditional Transport**: The 2022–2025 wave of [[Flow Matching]] models (Lipman et al., Albergo et al., Liu et al.) provides a deterministic-ODE perspective on Chapman-Kolmogorov transport that achieves similar generative quality to [[Diffusion Model]] methods with fewer neural function evaluations, potentially replacing diffusion models in high-throughput generation applications.
+    - **Tensor Network Methods for High-Dimensional Markov Chains**: Tensor train (TT) decompositions and matrix product states (MPS) from quantum physics are being adapted to represent and compute with high-dimensional transition matrices that would be intractable to store densely, enabling Chapman-Kolmogorov recursions in molecular simulation and combinatorial optimisation.
 
   - ## Connections to Deep Learning and Neural Network Theory
     The Chapman-Kolmogorov framework connects to deep learning theory through multiple channels, many of which have become practically important in the design and analysis of modern [[Neural Network]] architectures. The most direct connection is through [[Diffusion Model]]s, as detailed in the Use Cases section, but the framework also influences our understanding of stochastic optimisation, [[Uncertainty Quantification]], and generative modelling more broadly.
@@ -277,6 +382,41 @@
     **Perron-Frobenius Theory**: For finite-state Markov chains with irreducible transition matrix P, the Perron-Frobenius theorem guarantees a unique largest eigenvalue 1 with a strictly positive eigenvector (the stationary distribution). All other eigenvalues have absolute value strictly less than 1 for aperiodic chains, ensuring exponential mixing. Cheeger's inequality relates the spectral gap to geometric properties of the state space graph, enabling mixing time analysis from the structure of the problem rather than direct spectral computation.
 
     **Continuous-State Convergence**: For continuous-state Markov chains (as in [[Diffusion Model]]s and stochastic control), convergence theory requires more sophisticated tools. The Dobrushin contraction coefficient, coupling methods, and Wasserstein metric convergence have all been applied to establish convergence of Markov chains on infinite state spaces. The theory of optimal transport provides geometric tools for measuring distances between probability measures that are compatible with the Chapman-Kolmogorov dynamics.
+
+  - ## The Chapman-Kolmogorov Test for Non-Markovianity
+    A particularly practical application of the Chapman-Kolmogorov equation is as a statistical test for verifying whether a discretised stochastic process is truly Markovian — a prerequisite for correctly applying Markov chain algorithms. The test compares empirically estimated n-step transition matrices against the prediction of the Chapman-Kolmogorov identity: if a process is Markovian, then P̂^(n+m) should equal P̂^n · P̂^m (within sampling error). Systematic deviations indicate either non-Markovian dynamics (memory effects) or insufficient state-space discretisation (the Markovian structure requires finer time or state resolution to manifest).
+
+    In molecular dynamics and Markov State Modelling (MSM), the Chapman-Kolmogorov test is performed as a standard validation step: for a range of lag times τ, one estimates the one-step matrix P̂(τ) and multistep matrices P̂(kτ) directly from trajectory data, then checks whether P̂(kτ) ≈ [P̂(τ)]^k across multiple values of k. If convergence holds for lag times τ ≥ τ_Markov, the process is considered Markovian at that time resolution. PyEMMA and MSMBuilder implement this test as a core validation tool.
+
+    In financial econometrics, Zhao and Qiu (2025) published a generalised Chapman-Kolmogorov test for coupled stochastic processes that estimates memory length — the minimal lag time beyond which the Chapman-Kolmogorov identity holds. Applied to Bitcoin price data and cross-asset correlations, the test revealed non-Markovian memory structures at short timescales (minutes to hours) that dissipate over longer periods (days), informing the appropriate timescale for Markovian models in cryptocurrency market prediction.
+
+    In neuroscience, the Chapman-Kolmogorov test has been used to characterise neuronal spike train statistics: whether the firing of a neuron depends only on its current state (membrane potential) or on the history of recent spikes. Non-Markovian spike train models (refractoriness, adaptation) require extended state representations that absorb the memory into an augmented state space, restoring the Markov property at the cost of higher dimensionality.
+
+    The test's power and sample efficiency have been studied theoretically (Metzner et al. 2009), with recommendations for the number of trajectory observations required to reliably detect violations at a given significance level. Bootstrap resampling methods provide confidence intervals on the Chapman-Kolmogorov test statistics, enabling rigorous inference in finite-sample settings.
+
+  - ## Connections to Information Theory and Thermodynamics
+    The Chapman-Kolmogorov equation connects deeply to information theory and statistical thermodynamics through the theory of entropy production and the arrow of time:
+
+    **Relative Entropy and Markov Chains**: The relative entropy (KL divergence) D_KL(μ || π) between a non-stationary distribution μ and the stationary distribution π of a Markov chain is monotonically non-increasing along the Chapman-Kolmogorov dynamics: D_KL(μ P || π) ≤ D_KL(μ || π). This is a form of the Second Law of Thermodynamics for Markov chains and has deep connections to the Fokker-Planck H-theorem for continuous diffusions. The rate of entropy decrease is governed by the spectral gap.
+
+    **Entropy Production and Non-Equilibrium Markov Processes**: For non-reversible Markov chains (violating detailed balance), the entropy production rate σ = Σ_{i,j} (π_i P_{ij} - π_j P_{ji}) log(π_i P_{ij} / π_j P_{ji}) ≥ 0 quantifies the irreversibility of the process. This connects the Chapman-Kolmogorov framework to non-equilibrium statistical mechanics and fluctuation theorems (Jarzynski equality, Crooks fluctuation theorem). In machine learning, the distinction between reversible and non-reversible Markov chains is relevant for designing faster-mixing MCMC algorithms: non-reversible chains (using skew-detailed balance rather than detailed balance) can exhibit faster convergence while maintaining the correct stationary distribution.
+
+    **Free Energy and Variational Inference**: The variational inference objective — minimising the evidence lower bound (ELBO) — can be reformulated as minimising the KL divergence between the approximate posterior and the true posterior. The Fokker-Planck equation describes the gradient flow of the KL divergence in the Wasserstein metric, connecting variational inference to the Chapman-Kolmogorov dynamics of diffusion processes. This perspective underlies Stein Variational Gradient Descent (Liu and Wang 2016) and other particle-based variational inference methods that transport particles along the Chapman-Kolmogorov dynamics of the variational posterior.
+
+    **Maximum Entropy Markov Models**: The principle of maximum entropy, applied to Markov chains, generates the maximum entropy Markov model (MEMM) — a transition model that satisfies the Chapman-Kolmogorov equation while maximising entropy subject to feature constraints. MEMMs are a precursor to Conditional Random Fields (CRFs) and other structured prediction models used in [[Natural Language Processing]] sequence labelling tasks. The connection between maximum entropy and Markov chains runs through the Donsker-Varadhan theory of large deviations for Markov processes.
+
+  - ## Benchmark Datasets and Evaluation Contexts
+    While the Chapman-Kolmogorov equation is a mathematical identity rather than an empirical claim, its applications are evaluated through benchmark datasets and performance metrics in each application domain:
+
+    **MCMC Benchmarks**: The PosteriorDB database (Magnusson et al. 2022) provides a collection of probabilistic models and reference posterior samples for comparing MCMC algorithms. Benchmarks assess convergence speed (effective sample size per second), mixing quality (R̂ convergence diagnostic), and robustness to poorly conditioned posteriors. The NUTS sampler's efficiency on high-dimensional Bayesian models demonstrates the practical relevance of Chapman-Kolmogorov–based mixing time analysis.
+
+    **Diffusion Model Image Generation**: ImageNet 256×256 and 512×512 FID (Fréchet Inception Distance) benchmarks track the quality of generative models including diffusion models. Progression from DDPM (FID ~3.17 on CIFAR-10 at NeurIPS 2020) through improved score-based models (FID 2.20, Song et al. ICLR 2021) to DiT-based models (FID < 2.0, Peebles & Xie 2022) documents the field's rapid advancement, all building on the Chapman-Kolmogorov diffusion framework.
+
+    **Markov State Model Validation (MD)**: WW domain β-hairpin folding, Alanine dipeptide conformational dynamics, and BPTI (bovine pancreatic trypsin inhibitor) folding have served as benchmark systems for MSM development and validation. The Chapman-Kolmogorov test pass/fail rates at various lag times characterise model quality. The HTMD platform and Folding@home distributed computing project have contributed large trajectory datasets for MSM development.
+
+    **Reinforcement Learning Benchmarks**: Atari 100K (data-efficient), MuJoCo locomotion tasks, DM Control Suite, and NetHack challenge all evaluate RL algorithms whose theoretical foundations rest on the Markovian MDP assumption and Chapman-Kolmogorov transition dynamics. Deviations from Markovian assumptions (partial observability, history-dependent optimal policies) motivate POMDP extensions and memory-augmented RL architectures.
+
+    **HMM-Based Speech Recognition**: The TIMIT phoneme recognition dataset and LibriSpeech (960 hours of English speech) served as historical benchmarks for HMM-based and later HMM-DNN hybrid speech recognisers. Modern end-to-end models (Wav2Vec 2.0, Whisper) supersede classical HMMs, but the fundamental Chapman-Kolmogorov consistency that made HMM training stable remains relevant for understanding the theoretical basis of sequence-to-sequence models.
 
   - ## Research and Literature
     1. Chapman, S. (1928). "On the Brownian Displacements and Thermal Diffusion of Grains Suspended in a Non-Uniform Fluid." *Proceedings of the Royal Society A*, 119(781), 34–54.
@@ -307,6 +447,108 @@
     26. Dhariwal, P., Nichol, A. (2021). "Diffusion Models Beat GANs on Image Synthesis." *NeurIPS 2021*, arXiv:2105.05233.
     27. Karras, T., Laine, S., Aila, T. (2019). "A Style-Based Generator Architecture for Generative Adversarial Networks." *CVPR 2019*. (GAN baseline context for diffusion model advances.)
     28. Lyons, T.J. (1998). "Differential Equations Driven by Rough Signals." *Revista Matematica Iberoamericana*, 14(2), 215–310. (Rough paths foundation, related to non-Markovian extensions.)
+
+  - ## Visualisation and Interpretability of Markov Chain Dynamics
+    Understanding the behaviour of Markov chains described by the Chapman-Kolmogorov equation often requires visualisation tools that can surface the structure of transition dynamics in an interpretable form:
+
+    **Spectral Decomposition Visualisation**: For finite-state chains, the eigenvalues and eigenvectors of the transition matrix P reveal the time scales of different relaxation processes. Slow relaxation processes (eigenvalues close to 1) correspond to long-lived metastable states that are often the most scientifically interesting. In protein folding MSMs, spectral analysis reveals folding pathways and intermediate conformations. The implied timescale t_i = -τ / log(λ_i) converts eigenvalue λ_i at lag time τ into the corresponding relaxation time in physical units.
+
+    **Transition Path Sampling and Committor Functions**: The committor function q(x) gives the probability of reaching state B before state A starting from configuration x, and is a solution to the Kolmogorov backward equation with boundary conditions q(A) = 0, q(B) = 1. Committor functions provide a non-parametric reaction coordinate that is theoretically grounded in the Chapman-Kolmogorov dynamics of the process. Visualising the committor surface reveals the structure of the transition state ensemble and the bottlenecks in rare event pathways.
+
+    **Network Visualisation of Transition Matrices**: For discretised Markov chains, the transition matrix can be represented as a weighted directed graph where edge weight represents transition probability. Network analysis tools (PageRank, community detection algorithms, centrality measures) applied to this graph reveal the kinetic organisation of the state space — metastable communities, hub states, and bottleneck transitions. The Markov State Model framework for molecular dynamics relies extensively on graph-based visualisation of Chapman-Kolmogorov transition networks.
+
+    **Diffusion Maps and Manifold Learning**: The eigenvectors of a diffusion operator (the Markov chain defined by a kernel function on data points) provide a non-linear dimensionality reduction that preserves the geometric structure of the data manifold as defined by the Chapman-Kolmogorov diffusion dynamics. Diffusion maps (Coifman and Lafon 2006) have been applied to single-cell RNA sequencing data (Wishbone, PHATE methods), materials science descriptor learning, and anomaly detection in high-dimensional time series.
+
+    **Wasserstein Distance Tracking**: For distribution-valued processes (particle systems, ensemble forecasting), tracking the evolution of the probability distribution using Wasserstein distances provides a geometrically meaningful measure of how the ensemble changes over time according to Chapman-Kolmogorov dynamics. Wasserstein barycentre computations provide aggregate representations of ensemble uncertainty, visualisable as probability density plots or contour maps.
+
+  - ## Cross-Domain Unification: The Markov Property as Universal Modelling Assumption
+    The Chapman-Kolmogorov equation's ubiquity across seemingly unrelated fields reflects the universality of the Markov property as a modelling assumption. Any dynamical system whose future behaviour depends only on its present state — and not on how it arrived there — is a Markov process, and the Chapman-Kolmogorov identity is the algebraic expression of this memorylessness. This is why the equation appears in such different contexts:
+
+    - In **physics**: molecular collisions in gas theory occur so rapidly that subsequent states depend only on the current velocity and position distribution, not on historical trajectories. Brownian motion arises from the central limit theorem applied to many rapid collisions, and the Chapman-Kolmogorov equation governs the resulting diffusion.
+    - In **biology**: evolutionary substitution in DNA sequences occurs through point mutations where each nucleotide position evolves according to a substitution rate that depends only on its current nucleotide identity, not on ancestral history (under many models). The Chapman-Kolmogorov equation governs how substitution probabilities compose over evolutionary time.
+    - In **economics and finance**: the efficient market hypothesis asserts (in its semi-strong form) that all publicly available information is already incorporated into asset prices, making price changes depend only on new information rather than history — a form of the Markov property for price processes.
+    - In **computer science and operations research**: queuing systems, Markov chains underlying PageRank computation, and Markov decision processes in planning all exploit the Markov property to make multi-step prediction tractable.
+    - In **machine learning**: the Markov property is built into the fundamental assumptions of most sequential decision-making frameworks (MDPs), many generative models (diffusion, autoregressive language models with fixed context windows), and Bayesian filtering algorithms.
+
+    This cross-domain universality makes the Chapman-Kolmogorov equation one of the most important mathematical identities in applied science, comparable in significance to the central limit theorem or Bayes' theorem. Understanding it deeply is prerequisite to rigorous work in probabilistic modelling, stochastic simulation, Bayesian inference, reinforcement learning, and generative AI.
+
+  - ## Cross-Reference Index: Key Ontology Connections
+    This section documents the primary ontological relationships of the [[Chapman-Kolmogorov Equation]] to other concepts in the knowledge graph:
+
+    - **Mathematical Foundations**: The [[Chapman-Kolmogorov Equation]] is grounded in [[Probability Theory]], specifically the [[Markov Property]] and [[Conditional Probability]]. It requires [[Measure Theory]] for rigorous formulation and [[Linear Algebra]] for the discrete matrix form. [[Sigma Algebra]] formalises the event space over which probabilities are defined. [[Real Analysis]] underpins the convergence theory of the semigroup.
+    - **Core Stochastic Process Types Using Chapman-Kolmogorov**:
+      - [[Markov Chain]]: discrete-time, discrete-state; transition matrix P, Chapman-Kolmogorov as P^(n+m) = P^n · P^m.
+      - [[Continuous-Time Markov Chain]]: discrete-state, continuous-time; generator matrix Q.
+      - [[Brownian Motion]] / [[Wiener Process]]: continuous-state, continuous-time; Gaussian transition kernel.
+      - [[Diffusion Process]]: general continuous-state SDE; Chapman-Kolmogorov generates Fokker-Planck.
+      - [[Jump Process]] (Lévy process): continuous-time with discontinuous paths; Feller's generalisation.
+      - [[Hidden Markov Model]]: latent Markov chain with observed emissions; forward-backward algorithm.
+    - **Derived Equations and Algorithms**:
+      - [[Fokker-Planck Equation]] (Kolmogorov forward equation): PDE for probability density evolution.
+      - [[Kolmogorov Backward Equation]]: PDE for expected observables, value functions.
+      - [[Bellman Equation]]: discrete Chapman-Kolmogorov recursion for [[Reinforcement Learning]] value functions.
+      - [[Hamilton-Jacobi-Bellman Equation]]: continuous-time PDE limit of the Bellman equation.
+      - [[Forward-Backward Algorithm]]: dynamic programming on Chapman-Kolmogorov for [[Hidden Markov Model]] inference.
+      - [[Kalman Filter]]: closed-form Chapman-Kolmogorov integration for linear-Gaussian systems.
+    - **Machine Learning Algorithm Dependents**:
+      - [[Markov Chain Monte Carlo]] (MCMC): constructs chains with target stationary distribution.
+      - [[Hamiltonian Monte Carlo]]: long-range MCMC moves via Hamiltonian dynamics.
+      - [[No-U-Turn Sampler]] (NUTS): adaptive trajectory-length HMC; Stan, PyMC.
+      - [[Gibbs Sampling]]: full-conditional sequential updates; a Metropolis-Hastings special case.
+      - [[Particle Filter]] / Sequential Monte Carlo: discrete approximation of Chapman-Kolmogorov integration.
+      - [[Diffusion Model]]: DDPM, DDIM, score-based models; forward/reverse Markov chains.
+      - [[Score-Based Generative Model]]: learns the score function of marginals defined by Chapman-Kolmogorov forward process.
+      - [[Flow Matching]]: deterministic ODE limit of Chapman-Kolmogorov continuous diffusion.
+    - **Domain Application Areas**:
+      - [[Bayesian Inference]]: posterior computation via MCMC.
+      - [[Probabilistic Programming]]: Stan, PyMC, NumPyro use MCMC.
+      - [[Reinforcement Learning]]: MDP transition kernel; Bellman operators.
+      - [[Time-Series Analysis]]: state-space models, HMM.
+      - [[Gaussian Process]]: state-space GP reformulation as Kalman filter.
+      - [[Financial Mathematics]]: Black-Scholes (Kolmogorov backward); credit rating migration.
+      - [[Molecular Dynamics]]: Markov State Models for protein folding.
+      - [[Speech Recognition]]: HMM-based acoustic models.
+      - [[Genomics]]: DNA substitution models; sequence alignment probabilistic models.
+      - [[Epidemiology]]: SIR/SEIR stochastic compartmental models.
+      - [[Robotics]]: SLAM (localisation and mapping); particle filter state estimation.
+    - **Contrasting Mathematical Frameworks**:
+      - [[Non-Markovian Process]]: memory-dependent dynamics violating Chapman-Kolmogorov identity.
+      - [[Fractional Brownian Motion]]: long-range correlated increments; non-Markovian.
+      - [[Rough Paths Theory]] (Lyons): alternative framework for non-Markovian SDEs.
+      - [[Long-Range Memory Process]]: financial and physical systems with power-law correlations.
+      - [[Quantum Non-Markovian Process]]: violates quantum Chapman-Kolmogorov (Lindblad) equation.
+    - **Historical and Theoretical Figures**:
+      - [[Sydney Chapman]]: British mathematician; 1928 diffusion derivation.
+      - [[Andrey Kolmogorov]]: Soviet mathematician; 1931 rigorous derivation + forward/backward equations.
+      - [[William Feller]]: generalisation to jump processes and semigroup theory (1949, 1952).
+      - [[Martin Hairer]]: Fields Medal 2014; regularity structures for stochastic PDEs.
+      - [[Terry Lyons]]: Oxford; rough paths theory extending Chapman-Kolmogorov to non-Markovian SDEs.
+
+  - ## Semantic Classification Detail: OWL Role Assignments
+    - owl-class:: math:ChapmanKolmogorovEquation
+    - owl-inferred:: math:MarkovProcessConsistencyCondition
+    - owl-inferred:: math:StochasticSemigroupIdentity
+    - owl-inferred:: math:GenerativeModelFoundation
+    - owl-inferred:: math:BayesianInferenceSubstrate
+    - owl-inferred:: math:StochasticControlBasis
+    - owl-inferred:: ai:DiffusionModelMathematicalFoundation
+    - owl-inferred:: ai:MCMCTheoreticalBasis
+    - owl-domain-tag:: [[Probability Theory]]
+    - owl-domain-tag:: [[Stochastic Processes]]
+    - owl-domain-tag:: [[Machine Learning]]
+    - owl-domain-tag:: [[Mathematical Analysis]]
+    - owl-layer-tag:: [[Mathematical Foundation Layer]]
+    - owl-maturity:: Mature (1916/1928/1931 originals; continuously extended)
+    - owl-key-contributors:: [[Sydney Chapman]] (1928), [[Andrey Kolmogorov]] (1931), [[William Feller]] (1949), [[Martin Hairer]] (2014), [[Terry Lyons]] (1998)
+    - owl-primary-derived-equations:: [[Fokker-Planck Equation]], [[Kolmogorov Backward Equation]], [[Bellman Equation]], [[Hamilton-Jacobi-Bellman Equation]]
+    - owl-primary-applications:: [[Markov Chain Monte Carlo]], [[Diffusion Model]], [[Kalman Filter]], [[Hidden Markov Model]], [[Reinforcement Learning]], [[Probabilistic Programming]], [[Bayesian Inference]], [[State Estimation]], [[Financial Mathematics]]
+    - owl-modern-relevance:: Foundational to [[Score-Based Generative Model]], [[Flow Matching]], [[Distributional Reinforcement Learning]], [[Gaussian Process]] state-space models, [[Schrödinger Bridge]], [[Optimal Transport]], quantum open systems (Lindblad master equation)
+    - owl-software-ecosystem:: [[Stan]], [[PyMC]], [[NumPyro]], [[HuggingFace Diffusers]], [[PyEMMA]], [[FilterPy]], [[RLlib]], [[Stable-Baselines3]]
+    - owl-key-variants:: discrete-time matrix form, continuous-time generator form, diffusion SDE form, quantum Lindblad form, time-inhomogeneous generalisation, graph Markov chain form
+    - owl-test-method:: Chapman-Kolmogorov test (compare P̂^(n+m) vs P̂^n · P̂^m empirically); used in MSM validation, financial econometrics, neuroscience
+    - owl-violations-indicate:: non-Markovian memory effects; insufficient state-space resolution; quantum entanglement (quantum case)
+    - owl-connects-to-complexity:: The spectral gap of the transition matrix determines mixing time; Cheeger's inequality relates spectral gap to geometric bottlenecks
+    - owl-physical-interpretation:: encodes the Second Law of Thermodynamics for Markov systems (entropy decreases toward stationarity); entropy production rate characterises irreversibility
 
 - ### Provenance
   - sources:: https://en.wikipedia.org/wiki/Chapman%E2%80%93Kolmogorov_equation; https://arxiv.org/abs/2011.13456 (Song et al. 2021 SDE); https://arxiv.org/abs/2006.11239 (Ho et al. 2020 DDPM); https://www.nature.com/articles/s41598-025-92238-8 (Scientific Reports 2025); https://arxiv.org/pdf/2502.09655 (Bidirectional Diffusion Bridge 2025); https://arxiv.org/pdf/2403.14404 (Physics-Informed Diffusion ICLR 2025); https://grokipedia.com/page/Chapman%E2%80%93Kolmogorov_equation; https://handwiki.org/wiki/Kolmogorov_equations

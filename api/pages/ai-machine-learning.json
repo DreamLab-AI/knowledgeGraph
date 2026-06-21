@@ -101,5 +101,10 @@
       "label": "Training Data"
     }
   ],
-  "backlinks": []
+  "backlinks": [
+    {
+      "slug": "content-generation",
+      "label": "Content Generation"
+    }
+  ]
 }

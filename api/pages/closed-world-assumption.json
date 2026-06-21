@@ -13,7 +13,7 @@
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.62,
+  "qualityScore": 0.92,
   "maturity": "established",
   "relationships": {
     "hasPart": [],
@@ -21,12 +21,24 @@
       {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:formal-logic",
+        "label": "Formal Logic"
       }
     ],
     "enables": [
       {
         "id": "urn:ngm:class:reasoning",
         "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:query-answering",
+        "label": "Query Answering"
+      },
+      {
+        "id": "urn:ngm:class:data-integrity-constraint",
+        "label": "Data Integrity Constraint"
       }
     ],
     "dependsOn": [],
@@ -40,24 +52,44 @@
       {
         "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:open-world-assumption",
+        "label": "Open World Assumption"
       }
     ],
     "bridgesTo": [
       {
         "id": "urn:ngm:class:semantic-web",
         "label": "Semantic Web"
+      },
+      {
+        "id": "urn:ngm:class:logic-programming",
+        "label": "Logic Programming"
       }
     ],
     "uses": [
       {
         "id": "urn:ngm:class:inference-engine",
         "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:negation-as-failure",
+        "label": "Negation as Failure"
+      },
+      {
+        "id": "urn:ngm:class:datalog",
+        "label": "Datalog"
       }
     ],
     "supports": [
       {
         "id": "urn:ngm:class:knowledge-representation",
         "label": "Knowledge Representation"
+      },
+      {
+        "id": "urn:ngm:class:relational-database",
+        "label": "Relational Database"
       }
     ],
     "standardizedBy": [],
@@ -65,6 +97,10 @@
       {
         "id": "urn:ngm:class:artificial-intelligence",
         "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:database-theory",
+        "label": "Database Theory"
       }
     ],
     "relatedTo": [
@@ -79,9 +115,142 @@
       {
         "id": "urn:ngm:class:inference-engine",
         "label": "Inference Engine"
+      },
+      {
+        "id": "urn:ngm:class:description-logic",
+        "label": "Description Logic"
+      },
+      {
+        "id": "urn:ngm:class:shacl",
+        "label": "SHACL"
+      },
+      {
+        "id": "urn:ngm:class:sparql",
+        "label": "SPARQL"
       }
     ]
   },
-  "wikilinks": [],
+  "wikilinks": [
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "open-world-assumption",
+      "label": "Open World Assumption"
+    },
+    {
+      "slug": "negation-as-failure",
+      "label": "Negation as Failure"
+    },
+    {
+      "slug": "logic-programming",
+      "label": "Logic Programming"
+    },
+    {
+      "slug": "prolog",
+      "label": "Prolog"
+    },
+    {
+      "slug": "sql",
+      "label": "SQL"
+    },
+    {
+      "slug": "relational-database",
+      "label": "Relational Database"
+    },
+    {
+      "slug": "datalog",
+      "label": "Datalog"
+    },
+    {
+      "slug": "shacl",
+      "label": "SHACL"
+    },
+    {
+      "slug": "ontology",
+      "label": "Ontology"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "owl-class-hierarchy",
+      "label": "OWL Class Hierarchy"
+    },
+    {
+      "slug": "rdf",
+      "label": "RDF"
+    },
+    {
+      "slug": "sparql",
+      "label": "SPARQL"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "inference-engine",
+      "label": "Inference Engine"
+    },
+    {
+      "slug": "formal-logic",
+      "label": "Formal Logic"
+    },
+    {
+      "slug": "description-logic",
+      "label": "Description Logic"
+    },
+    {
+      "slug": "first-order-logic",
+      "label": "First-Order Logic"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "database-theory",
+      "label": "Database Theory"
+    },
+    {
+      "slug": "expert-system",
+      "label": "Expert System"
+    },
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "answer-set-programming",
+      "label": "Answer Set Programming"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "deductive-database",
+      "label": "Deductive Database"
+    },
+    {
+      "slug": "non-monotonic-reasoning",
+      "label": "Non-Monotonic Reasoning"
+    },
+    {
+      "slug": "bayesian-inference",
+      "label": "Bayesian Inference"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
   "backlinks": []
 }

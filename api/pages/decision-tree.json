@@ -101,6 +101,10 @@
     {
       "slug": "classification-rules",
       "label": "Classification Rules"
+    },
+    {
+      "slug": "classification",
+      "label": "Classification"
     }
   ]
 }
