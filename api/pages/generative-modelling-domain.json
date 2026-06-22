@@ -1,0 +1,191 @@
+{
+  "id": "urn:visionflow:page:d5a9ec6cadb71568c102ff75e208cc95b15dc5d861bdf5e777d5cf5604ab2d2d",
+  "title": "Generative Modelling Domain",
+  "slug": "generative-modelling-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:generative-modelling-domain",
+  "domain": "machine-learning",
+  "definition": "The Generative Modelling Domain covers statistical models that learn a data distribution and can sample new instances from it. Its scope includes latent variable models, autoregressive models, diffusion processes and adversarial training. It is a methodological sub-area of the Artificial Intelligence Domain situated within the Machine Learning Domain. The boundary is the modelling of distributions, distinguishing it from the applied Generative AI Domain that deploys such models in products.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:variational-autoencoder",
+        "label": "Variational Autoencoder"
+      },
+      {
+        "id": "urn:ngm:class:generative-adversarial-network",
+        "label": "Generative Adversarial Network"
+      },
+      {
+        "id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      },
+      {
+        "id": "urn:ngm:class:autoregressive-model",
+        "label": "Autoregressive Model"
+      },
+      {
+        "id": "urn:ngm:class:normalising-flow",
+        "label": "Normalising Flow"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-domain",
+        "label": "Machine Learning Domain"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:data-synthesis",
+        "label": "Data Synthesis"
+      },
+      {
+        "id": "urn:ngm:class:density-estimation",
+        "label": "Density Estimation"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai-domain",
+        "label": "Generative AI Domain"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "variational-autoencoder",
+      "label": "Variational Autoencoder"
+    },
+    {
+      "slug": "generative-adversarial-network",
+      "label": "Generative Adversarial Network"
+    },
+    {
+      "slug": "diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "slug": "autoregressive-model",
+      "label": "Autoregressive Model"
+    },
+    {
+      "slug": "normalising-flow",
+      "label": "Normalising Flow"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "information-theory",
+      "label": "Information Theory"
+    },
+    {
+      "slug": "data-synthesis",
+      "label": "Data Synthesis"
+    },
+    {
+      "slug": "density-estimation",
+      "label": "Density Estimation"
+    },
+    {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
+    },
+    {
+      "slug": "creative-ai-domain",
+      "label": "Creative AI Domain"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "creative-ai-domain",
+      "label": "Creative AI Domain"
+    },
+    {
+      "slug": "deep-learning-domain",
+      "label": "Deep Learning Domain"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    }
+  ]
+}

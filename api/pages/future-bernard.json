@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:429c166ad7b9bbbeb3595005e176be13b33d7f3a78aa3e8ecc726caf8359781d",
+  "title": "Future Bernard",
+  "slug": "future-bernard",
+  "public": true,
+  "classIri": "urn:ngm:class:future-bernard",
+  "domain": "infrastructure",
+  "definition": "A proposed multi-viewpoint immersive AI research platform enabling multiple domain experts to collaborate simultaneously in a shared stereoscopic environment, each maintaining their own spatial perspective. Real-time AI observes all communication channels\u2014verbal, gestural, spatial, and conceptual\u2014building a living ontology from emergent expert consensus, with applications in high-stakes planning such as nuclear decommissioning.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "Immersive Technology"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

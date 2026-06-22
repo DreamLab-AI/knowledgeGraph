@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:428b8c2492ddf10af2895951ac2aad0d608fa15c49128a400b4a27b8c3736795",
+  "title": "collaborative",
+  "slug": "collaborative",
+  "public": true,
+  "classIri": "urn:ngm:class:collaborative",
+  "domain": "infrastructure",
+  "definition": "Collaborative describes systems, processes, or modalities in which multiple agents\u2014human or robotic\u2014work together toward shared goals, actively coordinating actions, sharing information, and adapting to one another's contributions. In robotics, 'collaborative' is most precisely applied to human\u2013robot collaboration (HRC) per ISO/TS 15066, where robot and human share a workspace without fixed barriers. In knowledge work and software, it describes tools and practices enabling co-creation, distributed editing, and collective decision-making across asynchronous or real-time channels.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
+      "id": "urn:ngm:class:collaboration",
+      "label": "Collaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:collaborative-operation",
+        "label": "Collaborative Operation"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-learning",
+        "label": "Collaborative Learning"
+      },
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:collective-intelligence-system",
+        "label": "Collective Intelligence System"
+      },
+      {
+        "id": "urn:ngm:class:realtime-collaboration",
+        "label": "Realtime Collaboration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:collaborative-robot",
+        "label": "Collaborative Robot"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "soon-next-later-ai-futurology",
+      "label": "Soon-Next-Later (AI futurology)"
+    }
+  ]
+}

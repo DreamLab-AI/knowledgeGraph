@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:3d89c92d6f8bec6142db8eea5391fb7151c9cd9093db90a66abc4c88da96c978",
+  "title": "devpod",
+  "slug": "devpod",
+  "public": true,
+  "classIri": "urn:ngm:class:devpod",
+  "domain": "infrastructure",
+  "definition": "DevPod is an open-source, provider-agnostic tool for creating reproducible cloud development environments defined by devcontainer specifications. It abstracts over compute providers \u2014 including local Docker, Kubernetes clusters, cloud VMs, and managed container services \u2014 allowing developers to spin up identical, pre-configured workspaces on any infrastructure without vendor lock-in. DevPod acts as a portable alternative to managed cloud IDE products such as GitHub Codespaces or GitPod, enabling teams to self-host development environments on their own Kubernetes or cloud infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cloud-native-applications",
+        "label": "Cloud-Native Applications"
+      },
+      {
+        "id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      },
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

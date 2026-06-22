@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:0147eff340723608d01bc726227612a3cf3682243a0c7dea3cd47249ace8bc9e",
+  "title": "debug linked node",
+  "slug": "debug-linked-node",
+  "public": true,
+  "classIri": "urn:ngm:class:debug-linked-node",
+  "domain": "infrastructure",
+  "definition": "A debug linked node is a diagnostic artefact within a knowledge graph or ontology system \u2014 a placeholder page that is deliberately linked to from another node in order to verify that the wikilink resolution, graph edge creation, and link-traversal mechanisms are functioning correctly. It serves as a test fixture for the ontology pipeline, confirming that bidirectional link references are parsed, stored as edges, and retrievable through graph queries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-construction",
+        "label": "Knowledge Graph Construction"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:software-testing",
+        "label": "Software Testing"
+      },
+      {
+        "id": "urn:ngm:class:node",
+        "label": "Node"
+      },
+      {
+        "id": "urn:ngm:class:linked-data",
+        "label": "Linked Data"
+      },
+      {
+        "id": "urn:ngm:class:lognet",
+        "label": "lognet"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "debug-test-page",
+      "label": "Debug Test Page"
+    }
+  ],
+  "backlinks": []
+}

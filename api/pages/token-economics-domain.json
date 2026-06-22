@@ -1,0 +1,441 @@
+{
+  "id": "urn:visionflow:page:7c40fec1f0cd087d7a077ce12fc30fdcaba1379969a632ce10cc828fdf3077f3",
+  "title": "Token Economics Domain",
+  "slug": "token-economics-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:token-economics-domain",
+  "domain": "blockchain",
+  "definition": "The TokenEconomicsDomain represents a specialized sub-domain within blockchain technology that encompasses economic mechanisms, incentive structures, token systems, and monetary models that govern blockchain ecosystems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "blockchain"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aave",
+      "label": "Aave"
+    },
+    {
+      "slug": "ai-agent-economies",
+      "label": "AI Agent Economies"
+    },
+    {
+      "slug": "ai-driven-market-making",
+      "label": "AI-Driven Market Making"
+    },
+    {
+      "slug": "algorithmic-stablecoin",
+      "label": "Algorithmic Stablecoin"
+    },
+    {
+      "slug": "auction-theory",
+      "label": "Auction Theory"
+    },
+    {
+      "slug": "automated-market-maker-amm",
+      "label": "Automated Market Maker (AMM)"
+    },
+    {
+      "slug": "automated-market-makers",
+      "label": "Automated Market Makers"
+    },
+    {
+      "slug": "bank-of-england",
+      "label": "Bank of England"
+    },
+    {
+      "slug": "basel-committee",
+      "label": "Basel Committee"
+    },
+    {
+      "slug": "carbon-credit-trading",
+      "label": "Carbon Credit Trading"
+    },
+    {
+      "slug": "collateralized-debt-positions",
+      "label": "Collateralized Debt Positions"
+    },
+    {
+      "slug": "community-currencies",
+      "label": "Community Currencies"
+    },
+    {
+      "slug": "constant-product-market-makers",
+      "label": "Constant Product Market Makers"
+    },
+    {
+      "slug": "creator-royalties",
+      "label": "Creator Royalties"
+    },
+    {
+      "slug": "cross-chain-bridges",
+      "label": "Cross-Chain Bridges"
+    },
+    {
+      "slug": "curve-finance",
+      "label": "Curve Finance"
+    },
+    {
+      "slug": "decentralized-physical-infrastructure-networks-de-pin",
+      "label": "Decentralized Physical Infrastructure Networks (DePIN)"
+    },
+    {
+      "slug": "dynamic-nfts",
+      "label": "Dynamic NFTs"
+    },
+    {
+      "slug": "e-mode",
+      "label": "E-Mode"
+    },
+    {
+      "slug": "eip-1559",
+      "label": "EIP-1559"
+    },
+    {
+      "slug": "energy-trading-tokens",
+      "label": "Energy Trading Tokens"
+    },
+    {
+      "slug": "erc-4626",
+      "label": "ERC-4626"
+    },
+    {
+      "slug": "erc-6551",
+      "label": "ERC-6551"
+    },
+    {
+      "slug": "erc-721-c",
+      "label": "ERC-721C"
+    },
+    {
+      "slug": "ethereum-l2-rollups",
+      "label": "Ethereum L2 Rollups"
+    },
+    {
+      "slug": "financial-conduct-authority-fca",
+      "label": "Financial Conduct Authority (FCA)"
+    },
+    {
+      "slug": "flash-loan",
+      "label": "Flash Loan"
+    },
+    {
+      "slug": "fractionalized-nfts",
+      "label": "Fractionalized NFTs"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "gho-stablecoin",
+      "label": "GHO Stablecoin"
+    },
+    {
+      "slug": "hm-treasury",
+      "label": "HM Treasury"
+    },
+    {
+      "slug": "impermanent-loss",
+      "label": "Impermanent Loss"
+    },
+    {
+      "slug": "intent-based-architectures",
+      "label": "Intent-Based Architectures"
+    },
+    {
+      "slug": "isolation-mode",
+      "label": "Isolation Mode"
+    },
+    {
+      "slug": "kyc-aml",
+      "label": "KYC/AML"
+    },
+    {
+      "slug": "lending-protocols",
+      "label": "Lending Protocols"
+    },
+    {
+      "slug": "liquidity-as-a-service-laa-s",
+      "label": "Liquidity-as-a-Service (LaaS)"
+    },
+    {
+      "slug": "liquidity-mining",
+      "label": "Liquidity Mining"
+    },
+    {
+      "slug": "local-economic-tokens",
+      "label": "Local Economic Tokens"
+    },
+    {
+      "slug": "maker-dao",
+      "label": "MakerDAO"
+    },
+    {
+      "slug": "manchester-metropolitan-university",
+      "label": "Manchester Metropolitan University"
+    },
+    {
+      "slug": "markets-in-crypto-assets-regulation-mi-ca",
+      "label": "Markets in Crypto-Assets Regulation (MiCA)"
+    },
+    {
+      "slug": "mechanism-design",
+      "label": "Mechanism Design"
+    },
+    {
+      "slug": "metcalfe-s-law",
+      "label": "Metcalfe's Law"
+    },
+    {
+      "slug": "mev-maximal-extractable-value",
+      "label": "MEV (Maximal Extractable Value)"
+    },
+    {
+      "slug": "monetary-economics",
+      "label": "Monetary Economics"
+    },
+    {
+      "slug": "nft-royalties",
+      "label": "NFT Royalties"
+    },
+    {
+      "slug": "non-fungible-tokens-nfts",
+      "label": "Non-Fungible Tokens (NFTs)"
+    },
+    {
+      "slug": "on-chain-royalty-enforcement",
+      "label": "On-Chain Royalty Enforcement"
+    },
+    {
+      "slug": "real-world-asset-rwa-nfts",
+      "label": "Real-World Asset (RWA) NFTs"
+    },
+    {
+      "slug": "real-world-asset-rwa-tokenization",
+      "label": "Real-World Asset (RWA) Tokenization"
+    },
+    {
+      "slug": "regenerative-finance-re-fi",
+      "label": "Regenerative Finance (ReFi)"
+    },
+    {
+      "slug": "reserve-treasury",
+      "label": "Reserve Treasury"
+    },
+    {
+      "slug": "slippage",
+      "label": "Slippage"
+    },
+    {
+      "slug": "soulbound-tokens-sbts",
+      "label": "Soulbound Tokens (SBTs)"
+    },
+    {
+      "slug": "stablecoins",
+      "label": "Stablecoins"
+    },
+    {
+      "slug": "supply-chain-tokens",
+      "label": "Supply Chain Tokens"
+    },
+    {
+      "slug": "sustainability-tokens",
+      "label": "Sustainability Tokens"
+    },
+    {
+      "slug": "token-standards",
+      "label": "Token Standards"
+    },
+    {
+      "slug": "token-taxonomy-framework-ttf",
+      "label": "Token Taxonomy Framework (TTF)"
+    },
+    {
+      "slug": "tokenized-securities",
+      "label": "Tokenized Securities"
+    },
+    {
+      "slug": "uk-treasury",
+      "label": "UK Treasury"
+    },
+    {
+      "slug": "uniswap-v4",
+      "label": "Uniswap v4"
+    },
+    {
+      "slug": "yield-farming",
+      "label": "Yield Farming"
+    },
+    {
+      "slug": "account-abstraction",
+      "label": "Account Abstraction"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "de-fi-protocol",
+      "label": "DeFi Protocol"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "slug": "predictive-analytics",
+      "label": "Predictive Analytics"
+    },
+    {
+      "slug": "proof-of-stake",
+      "label": "Proof-of-Stake"
+    },
+    {
+      "slug": "real-estate-tokenization",
+      "label": "Real Estate Tokenization"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "supply-chain-traceability",
+      "label": "Supply Chain Traceability"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "base-fee",
+      "label": "Base Fee"
+    },
+    {
+      "slug": "burning-mechanism",
+      "label": "Burning Mechanism"
+    },
+    {
+      "slug": "circulating-supply",
+      "label": "Circulating Supply"
+    },
+    {
+      "slug": "coin",
+      "label": "Coin"
+    },
+    {
+      "slug": "deflationary-token",
+      "label": "Deflationary Token"
+    },
+    {
+      "slug": "economic-security",
+      "label": "Economic Security"
+    },
+    {
+      "slug": "emission-schedule",
+      "label": "Emission Schedule"
+    },
+    {
+      "slug": "fee-market",
+      "label": "Fee Market"
+    },
+    {
+      "slug": "gas-limit",
+      "label": "Gas Limit"
+    },
+    {
+      "slug": "gas-price",
+      "label": "Gas Price"
+    },
+    {
+      "slug": "gas",
+      "label": "Gas"
+    },
+    {
+      "slug": "halving",
+      "label": "Halving"
+    },
+    {
+      "slug": "incentive-alignment",
+      "label": "Incentive Alignment"
+    },
+    {
+      "slug": "inflation",
+      "label": "Inflation"
+    },
+    {
+      "slug": "inflationary-token",
+      "label": "Inflationary Token"
+    },
+    {
+      "slug": "market-capitalization",
+      "label": "Market Capitalization"
+    },
+    {
+      "slug": "minting",
+      "label": "Minting"
+    },
+    {
+      "slug": "native-token",
+      "label": "Native Token"
+    },
+    {
+      "slug": "priority-fee",
+      "label": "Priority Fee"
+    },
+    {
+      "slug": "supply-cap",
+      "label": "Supply Cap"
+    },
+    {
+      "slug": "total-supply",
+      "label": "Total Supply"
+    },
+    {
+      "slug": "transaction-fee",
+      "label": "Transaction Fee"
+    }
+  ]
+}

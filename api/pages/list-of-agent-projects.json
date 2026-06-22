@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:9cab062d8041eda2463b6fdeebc5f0abcdd195f726e3f7f6703b2890d98553a2",
+  "title": "List Of Agent Projects",
+  "slug": "list-of-agent-projects",
+  "public": true,
+  "classIri": "urn:ngm:class:list-of-agent-projects",
+  "domain": "artificial-intelligence",
+  "definition": "A curated catalogue of open-source and commercial autonomous agent frameworks and projects, spanning general-purpose agents (AutoGPT, BabyAGI, CAMEL), coding agents (GPT Engineer, SWE-Agent), productivity agents, research agents, and DIY framework scaffolds (CrewAI, MetaGPT, AutoGen). The list provides practitioners with an entry point into the rapidly expanding agentic AI ecosystem.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:tool-use",
+        "label": "Tool Use"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

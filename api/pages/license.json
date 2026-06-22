@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:7b5543ec3bd2d4e471bee2690f7282159bbd125fd5dc45773a77c8fe7dafaef4",
+  "title": "license",
+  "slug": "license",
+  "public": true,
+  "classIri": "urn:ngm:class:license",
+  "domain": "infrastructure",
+  "definition": "A legal instrument that specifies the permissions, conditions, and restrictions under which intellectual property \u2014 including software, data, and creative works \u2014 may be used, reproduced, modified, and distributed, forming the contractual basis for open-source and open-data ecosystems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-rights",
+        "label": "Digital Rights"
+      },
+      {
+        "id": "urn:ngm:class:digital-rights-management",
+        "label": "Digital Rights Management"
+      },
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:copyright",
+        "label": "copyright"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

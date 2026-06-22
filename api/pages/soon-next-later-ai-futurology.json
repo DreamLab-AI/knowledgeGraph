@@ -1,0 +1,120 @@
+{
+  "id": "urn:visionflow:page:453ff460c978f624a21666a360f8f0a733ea5fc29926d6ce32a2b9e435cb8b79",
+  "title": "Soon-Next-Later (AI futurology)",
+  "slug": "soon-next-later-ai-futurology",
+  "public": true,
+  "classIri": "urn:ngm:class:soon-next-later-ai-futurology",
+  "domain": "artificial-intelligence",
+  "definition": "Soon-Next-Later is a structured futurology framework for categorising AI capability developments across three temporal horizons: Soon (0\u20135 years, capabilities already emerging in products), Next (5\u201310 years, capabilities requiring current research to mature), and Later (10+ years, speculative capabilities dependent on fundamental advances). The framework provides practitioners with a tractable planning scaffold that avoids both near-term over-hype and long-horizon dismissiveness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "id": "urn:ngm:class:ai-policy",
+        "label": "AI Policy"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:sovereign-ai-bid",
+        "label": "Sovereign AI bid"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:ai-risk",
+        "label": "AI Risk"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:sam-hammond",
+        "label": "Sam Hammond"
+      },
+      {
+        "id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:social-contract",
+        "label": "Social Contract"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "collaborative",
+      "label": "collaborative"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "metaverse-and-telecollaboration",
+      "label": "Metaverse and Telecollaboration"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "sam-hammond",
+      "label": "Sam Hammond"
+    },
+    {
+      "slug": "social-contract-and-jobs",
+      "label": "Social contract and jobs"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

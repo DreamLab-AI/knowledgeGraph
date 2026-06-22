@@ -1,0 +1,130 @@
+{
+  "id": "urn:visionflow:page:07877ca03009e1dadc5b8caebecb52a2bab1b7a5ef3c645efe997de1e745fee3",
+  "title": "Cognitive Science Domain",
+  "slug": "cognitive-science-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:cognitive-science-domain",
+  "domain": "ai",
+  "definition": "The Cognitive Science Domain classifies concepts concerning the study of mind and intelligent behaviour across biological and artificial systems. It covers perception, memory, reasoning, language and learning and the models that explain them. As a top-level subject axis it supplies the theory of human cognition that informs interface design and intelligent systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "Ai Research Area"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "id": "urn:ngm:class:memory",
+        "label": "Memory"
+      },
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "id": "urn:ngm:class:attention",
+        "label": "Attention"
+      },
+      {
+        "id": "urn:ngm:class:mental-model",
+        "label": "Mental Model"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:usability-modelling",
+        "label": "Usability Modelling"
+      },
+      {
+        "id": "urn:ngm:class:intelligent-interfaces",
+        "label": "Intelligent Interfaces"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "perception",
+      "label": "Perception"
+    },
+    {
+      "slug": "memory",
+      "label": "Memory"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "mental-model",
+      "label": "Mental Model"
+    },
+    {
+      "slug": "usability-modelling",
+      "label": "Usability Modelling"
+    },
+    {
+      "slug": "intelligent-interfaces",
+      "label": "Intelligent Interfaces"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "Human Computer Interaction Domain"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "human-computer-interaction-domain",
+      "label": "Human Computer Interaction Domain"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    }
+  ]
+}

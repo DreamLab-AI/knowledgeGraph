@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:4e242e874bd60394c100613afdc905c8b507270b28a8c606d0134ac4ebca06cb",
+  "title": "Dagger",
+  "slug": "dagger",
+  "public": true,
+  "classIri": "urn:ngm:class:dagger",
+  "domain": "infrastructure",
+  "definition": "Dagger is a programmable CI/CD engine that unifies pipeline definition and execution within typed, composable functions authored in general-purpose languages such as Go, Python, or TypeScript. Unlike traditional Dockerfile-and-shell-script approaches, Dagger caches the result of every function call at fine granularity, achieves CI/local parity by running identically on developer machines and cloud runners, and exposes pipelines as strongly-typed APIs discoverable via `dagger functions`.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:simulation",
+        "label": "Simulation"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning-pipeline",
+        "label": "Machine Learning Pipeline"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    }
+  ]
+}

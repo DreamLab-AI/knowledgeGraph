@@ -1,0 +1,163 @@
+{
+  "id": "urn:visionflow:page:8fc5e0de6c53ed99ffa8dd7d53fc96daea47062e50b852eec4d9a10b4cc88066",
+  "title": "Financial Markets Domain",
+  "slug": "financial-markets-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:financial-markets-domain",
+  "domain": "finance",
+  "definition": "The Financial Markets Domain covers the structure, instruments and behaviour of markets in which financial assets are traded. Its scope includes asset pricing, trading mechanisms, risk and portfolio management, and market microstructure. It is a top-level subject classification applied to financial technology and analysis. The boundary excludes corporate financial reporting and internal control, which belong to the Corporate Governance Domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "Bc Defi And Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:asset-pricing",
+        "label": "Asset Pricing"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-trading",
+        "label": "Algorithmic Trading"
+      },
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:market-microstructure",
+        "label": "Market Microstructure"
+      },
+      {
+        "id": "urn:ngm:class:portfolio-optimisation",
+        "label": "Portfolio Optimisation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:stochastic-calculus",
+        "label": "Stochastic Calculus"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:quantitative-trading",
+        "label": "Quantitative Trading"
+      },
+      {
+        "id": "urn:ngm:class:derivatives-valuation",
+        "label": "Derivatives Valuation"
+      },
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "asset-pricing",
+      "label": "Asset Pricing"
+    },
+    {
+      "slug": "algorithmic-trading",
+      "label": "Algorithmic Trading"
+    },
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "market-microstructure",
+      "label": "Market Microstructure"
+    },
+    {
+      "slug": "portfolio-optimisation",
+      "label": "Portfolio Optimisation"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "stochastic-calculus",
+      "label": "Stochastic Calculus"
+    },
+    {
+      "slug": "quantitative-trading",
+      "label": "Quantitative Trading"
+    },
+    {
+      "slug": "derivatives-valuation",
+      "label": "Derivatives Valuation"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "regulation-domain",
+      "label": "Regulation Domain"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "corporate-governance-domain",
+      "label": "Corporate Governance Domain"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "environmental-domain",
+      "label": "Environmental Domain"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:1ac92660b801eae66f47090894431ee291b7212fe94a958c4560fca02052d972",
+  "title": "Crypto Legal from DigiSoc",
+  "slug": "crypto-legal-from-digi-soc",
+  "public": true,
+  "classIri": "urn:ngm:class:crypto-legal-from-digi-soc",
+  "domain": "blockchain",
+  "definition": "Crypto Legal from DigiSoc examines the legal, regulatory, and governance landscape surrounding cryptocurrency and digital assets within digital society contexts. It covers UK and EU regulatory positions on crypto-assets as property, stablecoin frameworks, AML/KYC obligations, and the intersection of Web3 economics with metaverse commerce. The field addresses how legacy legal systems must adapt to support low-friction, globally scalable value exchange in virtual social spaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:digital-asset",
+        "label": "Digital Asset"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-commerce",
+        "label": "Digital Commerce"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "backlinks": []
+}

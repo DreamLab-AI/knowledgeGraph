@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:1d88ab0fed5abc4f9f06b67a9c8c222e3c589297290a653d4116fb465f48a294",
+  "title": "Various Links",
+  "slug": "various-links",
+  "public": true,
+  "classIri": "urn:ngm:class:various-links",
+  "domain": "infrastructure",
+  "definition": "A curated collection of external hyperlinks spanning blockchain, cryptocurrency, augmented and virtual reality, AI generative tools, and media production resources, assembled as a research reference page for cross-domain topics relevant to the NarrativeGoldmine knowledge graph.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "perplexity",
+      "label": "perplexity"
+    }
+  ],
+  "backlinks": []
+}

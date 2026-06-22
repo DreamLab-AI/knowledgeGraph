@@ -1,0 +1,17 @@
+- ### Definition
+  - Telethrone is a research concept for a hyper-personal display and telepresence installation that resolves the challenge of rendering a spatially aware, photorealistic metahuman avatar for a single collocated viewer. It combines personalised 3D reconstruction from 2D imagery, gaze-contingent rendering, and situated display technology to achieve high-fidelity presence without requiring the viewer to wear head-mounted displays.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:Telethrone
+  - owl-role:: Concept
+- ### Relationships
+  - uses:: Hyper personalisation, Neural Rendering, Display Hardware
+  - relatedTo:: TELE020virtualrealitytelepresence, TELE 050 neuralrenderingtelepresence, Avatar
+  - enables:: Immersive Experience
+- ### Content
+  - Telethrone metahuman avatar
+  - Hyperpersonal display is solved
+  - Create the 3d from 2d
+  - [[MUST]]
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

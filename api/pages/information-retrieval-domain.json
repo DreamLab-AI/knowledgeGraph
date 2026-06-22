@@ -1,0 +1,171 @@
+{
+  "id": "urn:visionflow:page:64de67fd7c174ddef334f9a8e6d40c06fa5349076880ed2358c88d7cd9ab8dfc",
+  "title": "Information Retrieval Domain",
+  "slug": "information-retrieval-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:information-retrieval-domain",
+  "domain": "ai",
+  "definition": "The Information Retrieval Domain covers the indexing, ranking and retrieval of relevant items from large collections in response to a query. Its scope includes inverted indexes, ranking models, dense vector search and relevance evaluation. It is a sub-area of the Artificial Intelligence Domain closely allied with the Natural Language Processing Domain. The boundary excludes the structured querying of relational databases, which belongs to general data management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:inverted-index",
+        "label": "Inverted Index"
+      },
+      {
+        "id": "urn:ngm:class:ranking-model",
+        "label": "Ranking Model"
+      },
+      {
+        "id": "urn:ngm:class:vector-search",
+        "label": "Vector Search"
+      },
+      {
+        "id": "urn:ngm:class:query-expansion",
+        "label": "Query Expansion"
+      },
+      {
+        "id": "urn:ngm:class:relevance-evaluation",
+        "label": "Relevance Evaluation"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:natural-language-processing-domain",
+        "label": "Natural Language Processing Domain"
+      },
+      {
+        "id": "urn:ngm:class:probability-theory",
+        "label": "Probability Theory"
+      },
+      {
+        "id": "urn:ngm:class:data-structure",
+        "label": "Data Structures"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      },
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:recommendation",
+        "label": "Recommendation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "inverted-index",
+      "label": "Inverted Index"
+    },
+    {
+      "slug": "ranking-model",
+      "label": "Ranking Model"
+    },
+    {
+      "slug": "vector-search",
+      "label": "Vector Search"
+    },
+    {
+      "slug": "query-expansion",
+      "label": "Query Expansion"
+    },
+    {
+      "slug": "relevance-evaluation",
+      "label": "Relevance Evaluation"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "Natural Language Processing Domain"
+    },
+    {
+      "slug": "probability-theory",
+      "label": "Probability Theory"
+    },
+    {
+      "slug": "data-structures",
+      "label": "Data Structures"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "retrieval-augmented-generation",
+      "label": "Retrieval-Augmented Generation"
+    },
+    {
+      "slug": "recommendation",
+      "label": "Recommendation"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI Grounded Domain"
+    },
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
+      "slug": "legal-tech-domain",
+      "label": "Legal Tech Domain"
+    },
+    {
+      "slug": "natural-language-processing-domain",
+      "label": "Natural Language Processing Domain"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "id": "urn:visionflow:page:e4d985ff18118dad1328eee33dee67dd6930892c5e94147456466893cfb64e70",
+  "title": "Security Domain",
+  "slug": "security-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:security-domain",
+  "domain": "security",
+  "definition": "The Security Domain classifies concepts concerning the protection of systems, data and communications against unauthorised access, modification and disruption. It covers the principles of confidentiality, integrity and availability and the controls that enforce them. As a top-level subject axis it applies across all architectural layers, framing how trust is established and threats are countered.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:threat-model",
+        "label": "Threat Model"
+      },
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      },
+      {
+        "id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-domain",
+        "label": "Cryptographic Domain"
+      },
+      {
+        "id": "urn:ngm:class:identity-domain",
+        "label": "Identity Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trusted-computing",
+        "label": "Trusted Computing"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "threat-model",
+      "label": "Threat Model"
+    },
+    {
+      "slug": "authentication",
+      "label": "Authentication"
+    },
+    {
+      "slug": "encryption",
+      "label": "Encryption"
+    },
+    {
+      "slug": "vulnerability-management",
+      "label": "Vulnerability Management"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
+      "slug": "trusted-computing",
+      "label": "Trusted Computing"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
+    },
+    {
+      "slug": "regulatory-domain",
+      "label": "Regulatory Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "iso-iec-27001",
+      "label": "ISO/IEC 27001"
+    },
+    {
+      "slug": "nist-sp-800-53",
+      "label": "NIST SP 800-53"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "bio-terror",
+      "label": "Bio Terror"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "cyber-security-and-military",
+      "label": "Cyber Security and Military"
+    },
+    {
+      "slug": "financial-infrastructure-domain",
+      "label": "Financial Infrastructure Domain"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "policy-enforcement",
+      "label": "Policy Enforcement"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
+    },
+    {
+      "slug": "regulatory-compliance-domain",
+      "label": "Regulatory Compliance Domain"
+    },
+    {
+      "slug": "software-engineering-domain",
+      "label": "Software Engineering Domain"
+    }
+  ]
+}

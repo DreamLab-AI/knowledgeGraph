@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:ace24cd426e0e5dd4c0aecb21704a8dc77f058f17b8ca3c9c1e81899be2e9d58",
+  "title": "Templates",
+  "slug": "templates",
+  "public": true,
+  "classIri": "urn:ngm:class:templates",
+  "domain": "infrastructure",
+  "definition": "Templates are reusable structural scaffolds in software engineering and knowledge management that define a fixed format or pattern into which variable content is inserted. They reduce repetition, enforce consistency, and accelerate authoring across code generation, documentation, and prompt engineering workflows.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      },
+      {
+        "id": "urn:ngm:class:documentation-generation",
+        "label": "Documentation Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:prompt-engineering",
+        "label": "Prompt Engineering"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-management",
+        "label": "Knowledge Management"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-management-system",
+        "label": "Knowledge Management System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

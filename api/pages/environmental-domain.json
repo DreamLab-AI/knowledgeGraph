@@ -1,0 +1,163 @@
+{
+  "id": "urn:visionflow:page:23bcaa114be736dfbeef1be0433c02c5088f17e78a0b872225bdcd0553780f1e",
+  "title": "Environmental Domain",
+  "slug": "environmental-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:environmental-domain",
+  "domain": "governance",
+  "definition": "The Environmental Domain covers the modelling, monitoring and management of natural and built environments and their resources. Its scope includes climate and ecological modelling, environmental sensing, sustainability assessment and resource management. It is a top-level subject classification applied across many technologies. The boundary excludes economic and market analysis of resources, which belongs to the Financial Markets Domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal And Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:climate-modelling",
+        "label": "Climate Modelling"
+      },
+      {
+        "id": "urn:ngm:class:environmental-sensing",
+        "label": "Environmental Sensing"
+      },
+      {
+        "id": "urn:ngm:class:sustainability-assessment",
+        "label": "Sustainability Assessment"
+      },
+      {
+        "id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      },
+      {
+        "id": "urn:ngm:class:ecological-modelling",
+        "label": "Ecological Modelling"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:earth-science",
+        "label": "Earth Science"
+      },
+      {
+        "id": "urn:ngm:class:statistics",
+        "label": "Statistics"
+      },
+      {
+        "id": "urn:ngm:class:sensor-networks",
+        "label": "Sensor Networks"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:environmental-monitoring",
+        "label": "Environmental Monitoring"
+      },
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      },
+      {
+        "id": "urn:ngm:class:conservation-planning",
+        "label": "Conservation Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "climate-modelling",
+      "label": "Climate Modelling"
+    },
+    {
+      "slug": "environmental-sensing",
+      "label": "Environmental Sensing"
+    },
+    {
+      "slug": "sustainability-assessment",
+      "label": "Sustainability Assessment"
+    },
+    {
+      "slug": "resource-management",
+      "label": "Resource Management"
+    },
+    {
+      "slug": "ecological-modelling",
+      "label": "Ecological Modelling"
+    },
+    {
+      "slug": "earth-science",
+      "label": "Earth Science"
+    },
+    {
+      "slug": "statistics",
+      "label": "Statistics"
+    },
+    {
+      "slug": "sensor-networks",
+      "label": "Sensor Networks"
+    },
+    {
+      "slug": "environmental-monitoring",
+      "label": "Environmental Monitoring"
+    },
+    {
+      "slug": "carbon-accounting",
+      "label": "Carbon Accounting"
+    },
+    {
+      "slug": "conservation-planning",
+      "label": "Conservation Planning"
+    },
+    {
+      "slug": "infrastructure-domain",
+      "label": "Infrastructure Domain"
+    },
+    {
+      "slug": "financial-markets-domain",
+      "label": "Financial Markets Domain"
+    },
+    {
+      "slug": "regulation-domain",
+      "label": "Regulation Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "iso-14001-2015",
+      "label": "ISO 14001:2015"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "blockchain-energy-consumption",
+      "label": "Blockchain Energy Consumption"
+    },
+    {
+      "slug": "blockchain-environmental-impact-assessment",
+      "label": "Blockchain Environmental Impact Assessment"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "climate-action-dao",
+      "label": "Climate Action DAO"
+    }
+  ]
+}

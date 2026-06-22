@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:743177ce37d184677f27ae163795d580f2836df5325b1df269656e505e0a9eb1",
+  "title": "new tag for demos",
+  "slug": "new-tag-for-demos",
+  "public": true,
+  "classIri": "urn:ngm:class:new-tag-for-demos",
+  "domain": "infrastructure",
+  "definition": "A placeholder tagging concept used within the knowledge graph to label pages or artefacts intended for demonstration purposes. It serves as a lightweight organisational marker allowing authors to filter, surface, or present selected graph nodes during product demonstrations or stakeholder presentations without altering the underlying ontological structure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:infra-software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "open-ai",
+      "label": "OpenAI"
+    }
+  ],
+  "backlinks": []
+}

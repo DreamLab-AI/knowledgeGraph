@@ -1,0 +1,941 @@
+{
+  "id": "urn:visionflow:page:c0e828439a691898ccbeac0774a9561a86f05a706bc481c71a365f17f3909afb",
+  "title": "Robotics Domain",
+  "slug": "robotics-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:robotics-domain",
+  "domain": "robotics",
+  "definition": "The Robotics Domain is a top-level knowledge domain encompassing the design, construction, operation, and governance of intelligent machines. It provides a formal ontological framework \u2014 anchored in standards such as IEEE 1872 (CORA) \u2014 for representing robot architectures, sensor systems, actuators, motion planning, perception, and human-robot interaction, enabling unambiguous knowledge transfer among humans, robots, and AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technology-domain",
+      "label": "Technology Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:actuation-and-control",
+        "label": "Actuation and Control"
+      },
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:perception-system",
+        "label": "Perception System"
+      },
+      {
+        "id": "urn:ngm:class:autonomous-robot",
+        "label": "Autonomous Robot"
+      },
+      {
+        "id": "urn:ngm:class:industrial-automation",
+        "label": "Industrial Automation"
+      },
+      {
+        "id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      },
+      {
+        "id": "urn:ngm:class:control-systems",
+        "label": "Control Systems"
+      },
+      {
+        "id": "urn:ngm:class:real-time-operating-system",
+        "label": "Real-Time Operating System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:collaborative-robotics",
+        "label": "Collaborative Robotics"
+      },
+      {
+        "id": "urn:ngm:class:robotic-process-automation",
+        "label": "Robotic Process Automation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:mechatronics",
+        "label": "Mechatronics"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:virtual-agent",
+        "label": "Virtual Agent"
+      },
+      {
+        "id": "urn:ngm:class:software-automation",
+        "label": "Software Automation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:spatial-computing",
+        "label": "Spatial Computing"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:simultaneous-localization-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      },
+      {
+        "id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:ieee-1872",
+        "label": "IEEE 1872 CORA Ontology"
+      },
+      {
+        "id": "urn:ngm:class:iso-10218",
+        "label": "ISO 10218 Industrial Robot Safety"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human Robot Interaction"
+      },
+      {
+        "id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "autonomous-robotics",
+      "label": "AutonomousRobotics"
+    },
+    {
+      "slug": "control-systems",
+      "label": "ControlSystems"
+    },
+    {
+      "slug": "embedded-systems",
+      "label": "EmbeddedSystems"
+    },
+    {
+      "slug": "ieee1872",
+      "label": "IEEE1872"
+    },
+    {
+      "slug": "ieee1872-2",
+      "label": "IEEE1872.2"
+    },
+    {
+      "slug": "industrial-automation",
+      "label": "IndustrialAutomation"
+    },
+    {
+      "slug": "robot-perception",
+      "label": "RobotPerception"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "ArtificialIntelligence"
+    },
+    {
+      "slug": "computer-vision",
+      "label": "ComputerVision"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "HumanRobotInteraction"
+    },
+    {
+      "slug": "machine-learning",
+      "label": "MachineLearning"
+    },
+    {
+      "slug": "motion-planning",
+      "label": "MotionPlanning"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "SensorFusion"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "TechnologyDomain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "accelerometer",
+      "label": "Accelerometer"
+    },
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
+      "slug": "agricultural-robot",
+      "label": "Agricultural Robot"
+    },
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    },
+    {
+      "slug": "autonomous-robot",
+      "label": "Autonomous Robot"
+    },
+    {
+      "slug": "autonomous-systems-domain",
+      "label": "Autonomous Systems Domain"
+    },
+    {
+      "slug": "backlash",
+      "label": "Backlash"
+    },
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "centralized-swarm-control",
+      "label": "Centralized Swarm Control"
+    },
+    {
+      "slug": "collaborative-operation",
+      "label": "Collaborative Operation"
+    },
+    {
+      "slug": "collaborative-robot",
+      "label": "Collaborative Robot"
+    },
+    {
+      "slug": "collision-avoidance",
+      "label": "Collision Avoidance"
+    },
+    {
+      "slug": "collision-detection",
+      "label": "Collision Detection"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-systems-domain",
+      "label": "Control Systems Domain"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "current-sensor",
+      "label": "Current Sensor"
+    },
+    {
+      "slug": "cyber-physical-systems-domain",
+      "label": "Cyber Physical Systems Domain"
+    },
+    {
+      "slug": "decentralized-swarm-control",
+      "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "embedded-systems-domain",
+      "label": "Embedded Systems Domain"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "end-effector",
+      "label": "End Effector"
+    },
+    {
+      "slug": "exoskeleton-robot",
+      "label": "Exoskeleton Robot"
+    },
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force Torque Sensor"
+    },
+    {
+      "slug": "friction",
+      "label": "Friction"
+    },
+    {
+      "slug": "functional-safety",
+      "label": "Functional Safety"
+    },
+    {
+      "slug": "gaze-control",
+      "label": "Gaze Control"
+    },
+    {
+      "slug": "gazebo-simulator",
+      "label": "Gazebo Simulator"
+    },
+    {
+      "slug": "gps",
+      "label": "Gps"
+    },
+    {
+      "slug": "gyroscope",
+      "label": "Gyroscope"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "human-robot-collaboration",
+      "label": "Human-Robot Collaboration"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "impedance-control",
+      "label": "Impedance Control"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "inertia",
+      "label": "Inertia"
+    },
+    {
+      "slug": "infrared-sensor",
+      "label": "InfraredSensor"
+    },
+    {
+      "slug": "inspection-robot",
+      "label": "Inspection Robot"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "laser-scanner",
+      "label": "Laser Scanner"
+    },
+    {
+      "slug": "legged-robot",
+      "label": "Legged Robot"
+    },
+    {
+      "slug": "light-curtain",
+      "label": "Light Curtain"
+    },
+    {
+      "slug": "manufacturing-domain",
+      "label": "Manufacturing Domain"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-engineering-domain",
+      "label": "Mechanical Engineering Domain"
+    },
+    {
+      "slug": "medical-robot",
+      "label": "Medical Robot"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "ontology-property-definitions",
+      "label": "Ontology Property Definitions"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    },
+    {
+      "slug": "pressure-sensor",
+      "label": "Pressure Sensor"
+    },
+    {
+      "slug": "probabilistic-robotics",
+      "label": "Probabilistic Robotics"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "proxemics",
+      "label": "Proxemics"
+    },
+    {
+      "slug": "proximity-sensor",
+      "label": "Proximity Sensor"
+    },
+    {
+      "slug": "rescue-robot",
+      "label": "Rescue Robot"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robot-joint",
+      "label": "Robot Joint"
+    },
+    {
+      "slug": "robot-kinematics",
+      "label": "Robot Kinematics"
+    },
+    {
+      "slug": "robot-learning",
+      "label": "Robot Learning"
+    },
+    {
+      "slug": "robot-operating-system",
+      "label": "Robot Operating System"
+    },
+    {
+      "slug": "robot-safety",
+      "label": "Robot Safety"
+    },
+    {
+      "slug": "robot-sensor",
+      "label": "Robot Sensor"
+    },
+    {
+      "slug": "robot-singularity",
+      "label": "Robot Singularity"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "safety-plc",
+      "label": "Safety PLC"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "sensors",
+      "label": "Sensors"
+    },
+    {
+      "slug": "service-robot",
+      "label": "Service Robot"
+    },
+    {
+      "slug": "shape-memory-alloy-actuator",
+      "label": "Shape Memory Alloy Actuator"
+    },
+    {
+      "slug": "situational-awareness",
+      "label": "Situational Awareness"
+    },
+    {
+      "slug": "social-navigation",
+      "label": "Social Navigation"
+    },
+    {
+      "slug": "soft-robotics",
+      "label": "Soft Robotics"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    },
+    {
+      "slug": "stigmergy",
+      "label": "Stigmergy"
+    },
+    {
+      "slug": "subsumption-architecture",
+      "label": "Subsumption Architecture"
+    },
+    {
+      "slug": "surgical-robot",
+      "label": "Surgical Robot"
+    },
+    {
+      "slug": "swarm-control",
+      "label": "Swarm Control"
+    },
+    {
+      "slug": "swarm-robot",
+      "label": "Swarm Robot"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "technology-adoption",
+      "label": "Technology Adoption"
+    },
+    {
+      "slug": "teleoperated-robot",
+      "label": "Teleoperated Robot"
+    },
+    {
+      "slug": "temperature-sensor",
+      "label": "Temperature Sensor"
+    },
+    {
+      "slug": "torque",
+      "label": "Torque"
+    },
+    {
+      "slug": "trajectory-planning",
+      "label": "Trajectory Planning"
+    },
+    {
+      "slug": "ultrasonic-sensor",
+      "label": "Ultrasonic Sensor"
+    },
+    {
+      "slug": "underwater-robot",
+      "label": "Underwater Robot"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    },
+    {
+      "slug": "velocity",
+      "label": "Velocity"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    },
+    {
+      "slug": "wheeled-mobile-robot",
+      "label": "Wheeled Mobile Robot"
+    },
+    {
+      "slug": "rb-0007-collaborative-robot",
+      "label": "rb 0007 collaborative robot"
+    },
+    {
+      "slug": "rb-0008-autonomous-robot",
+      "label": "rb 0008 autonomous robot"
+    },
+    {
+      "slug": "rb-0012-wheeled-mobile-robot",
+      "label": "rb 0012 wheeled mobile robot"
+    },
+    {
+      "slug": "rb-0017-rescue-robot",
+      "label": "rb 0017 rescue robot"
+    },
+    {
+      "slug": "rb-0018-inspection-robot",
+      "label": "rb 0018 inspection robot"
+    },
+    {
+      "slug": "rb-0019-exoskeleton-robot",
+      "label": "rb 0019 exoskeleton robot"
+    },
+    {
+      "slug": "rb-0021-robot-kinematics",
+      "label": "rb 0021 robot kinematics"
+    },
+    {
+      "slug": "rb-0022-robot-dynamics",
+      "label": "rb 0022 robot dynamics"
+    },
+    {
+      "slug": "rb-0023-degrees-of-freedom",
+      "label": "rb 0023 degrees of freedom"
+    },
+    {
+      "slug": "rb-0024-workspace",
+      "label": "rb 0024 workspace"
+    },
+    {
+      "slug": "rb-0026-robot-joint",
+      "label": "rb 0026 robot joint"
+    },
+    {
+      "slug": "rb-0027-robot-link",
+      "label": "rb 0027 robot link"
+    },
+    {
+      "slug": "rb-0028-forward-kinematics",
+      "label": "rb 0028 forward kinematics"
+    },
+    {
+      "slug": "rb-0029-inverse-kinematics",
+      "label": "rb 0029 inverse kinematics"
+    },
+    {
+      "slug": "rb-0030-jacobian-matrix",
+      "label": "rb 0030 jacobian matrix"
+    },
+    {
+      "slug": "rb-0031-singularity",
+      "label": "rb 0031 singularity"
+    },
+    {
+      "slug": "rb-0032-manipulability",
+      "label": "rb 0032 manipulability"
+    },
+    {
+      "slug": "rb-0033-payload",
+      "label": "rb 0033 payload"
+    },
+    {
+      "slug": "rb-0034-repeatability",
+      "label": "rb 0034 repeatability"
+    },
+    {
+      "slug": "rb-0035-accuracy",
+      "label": "rb 0035 accuracy"
+    },
+    {
+      "slug": "rb-0036-resolution",
+      "label": "rb 0036 resolution"
+    },
+    {
+      "slug": "rb-0037-dexterity",
+      "label": "rb 0037 dexterity"
+    },
+    {
+      "slug": "rb-0038-compliance",
+      "label": "rb 0038 compliance"
+    },
+    {
+      "slug": "rb-0039-stiffness",
+      "label": "rb 0039 stiffness"
+    },
+    {
+      "slug": "rb-0040-backlash",
+      "label": "rb 0040 backlash"
+    },
+    {
+      "slug": "rb-0041-inertia",
+      "label": "rb 0041 inertia"
+    },
+    {
+      "slug": "rb-0043-torque",
+      "label": "rb 0043 torque"
+    },
+    {
+      "slug": "rb-0044-velocity",
+      "label": "rb 0044 velocity"
+    },
+    {
+      "slug": "rb-0045-acceleration",
+      "label": "rb 0045 acceleration"
+    },
+    {
+      "slug": "rb-0047-feedback-control",
+      "label": "rb 0047 feedback control"
+    },
+    {
+      "slug": "rb-0048-pid-controller",
+      "label": "rb 0048 pid controller"
+    },
+    {
+      "slug": "rb-0049-motion-planning",
+      "label": "rb 0049 motion planning"
+    },
+    {
+      "slug": "rb-0051-trajectory-planning",
+      "label": "rb 0051 trajectory planning"
+    },
+    {
+      "slug": "rb-0052-collision-avoidance",
+      "label": "rb 0052 collision avoidance"
+    },
+    {
+      "slug": "rb-0053-force-control",
+      "label": "rb 0053 force control"
+    },
+    {
+      "slug": "rb-0054-position-control",
+      "label": "rb 0054 position control"
+    },
+    {
+      "slug": "rb-0055-velocity-control",
+      "label": "rb 0055 velocity control"
+    },
+    {
+      "slug": "rb-0056-impedance-control",
+      "label": "rb 0056 impedance control"
+    },
+    {
+      "slug": "rb-0057-admittance-control",
+      "label": "rb 0057 admittance control"
+    },
+    {
+      "slug": "rb-0060-optimal-control",
+      "label": "rb 0060 optimal control"
+    },
+    {
+      "slug": "rb-0061-nonlinear-control",
+      "label": "rb 0061 nonlinear control"
+    },
+    {
+      "slug": "rb-0062-model-predictive-control",
+      "label": "rb 0062 model predictive control"
+    },
+    {
+      "slug": "rb-0063-sliding-mode-control",
+      "label": "rb 0063 sliding mode control"
+    },
+    {
+      "slug": "rb-0064-computed-torque-control",
+      "label": "rb 0064 computed torque control"
+    },
+    {
+      "slug": "rb-0065-visual-servoing",
+      "label": "rb 0065 visual servoing"
+    },
+    {
+      "slug": "rb-0066-robot-sensor",
+      "label": "rb 0066 robot sensor"
+    },
+    {
+      "slug": "rb-0067-force-torque-sensor",
+      "label": "rb 0067 force torque sensor"
+    },
+    {
+      "slug": "rb-0068-vision-system",
+      "label": "rb 0068 vision system"
+    },
+    {
+      "slug": "rb-0069-lidar",
+      "label": "rb 0069 lidar"
+    },
+    {
+      "slug": "rb-0070-tactile-sensing",
+      "label": "rb 0070 tactile sensing"
+    },
+    {
+      "slug": "rb-0072-encoder",
+      "label": "rb 0072 encoder"
+    },
+    {
+      "slug": "rb-0073-imu",
+      "label": "rb 0073 imu"
+    },
+    {
+      "slug": "rb-0075-range-finder",
+      "label": "rb 0075 range finder"
+    },
+    {
+      "slug": "rb-0077-depth-camera",
+      "label": "rb 0077 depth camera"
+    },
+    {
+      "slug": "rb-0078-infrared-sensor",
+      "label": "rb 0078 infrared sensor"
+    },
+    {
+      "slug": "rb-0080-radar",
+      "label": "rb 0080 radar"
+    },
+    {
+      "slug": "rb-0087-safety-standard",
+      "label": "rb 0087 safety standard"
+    },
+    {
+      "slug": "rb-0088-iso-13482-compliance",
+      "label": "rb 0088 iso 13482 compliance"
+    },
+    {
+      "slug": "rb-0089-risk-assessment",
+      "label": "rb 0089 risk assessment"
+    },
+    {
+      "slug": "rb-0090-emergency-stop",
+      "label": "rb 0090 emergency stop"
+    },
+    {
+      "slug": "rb-0091-safety-rated-monitored-stop",
+      "label": "rb 0091 safety rated monitored stop"
+    },
+    {
+      "slug": "rb-0092-protective-stop",
+      "label": "rb 0092 protective stop"
+    },
+    {
+      "slug": "rb-0093-speed-limitation",
+      "label": "rb 0093 speed limitation"
+    },
+    {
+      "slug": "rb-0094-power-and-force-limiting",
+      "label": "rb 0094 power and force limiting"
+    },
+    {
+      "slug": "rb-0095-safety-zone",
+      "label": "rb 0095 safety zone"
+    },
+    {
+      "slug": "rb-0096-safeguarding",
+      "label": "rb 0096 safeguarding"
+    },
+    {
+      "slug": "rb-0100-safety-integrity-level",
+      "label": "rb 0100 safety integrity level"
+    },
+    {
+      "slug": "rb-0101-performance-level",
+      "label": "rb 0101 performance level"
+    },
+    {
+      "slug": "rb-0103-collaborative-operation",
+      "label": "rb 0103 collaborative operation"
+    },
+    {
+      "slug": "rb-0104-hand-guiding",
+      "label": "rb 0104 hand guiding"
+    },
+    {
+      "slug": "rb-0105-speed-and-separation-monitoring",
+      "label": "rb 0105 speed and separation monitoring"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

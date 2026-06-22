@@ -1,0 +1,191 @@
+{
+  "id": "urn:visionflow:page:e0c15441192767f289195e4f8cfcf1afe3bfb986233876dd3497c2d74693ca3d",
+  "title": "Human Computer Interaction Domain",
+  "slug": "human-computer-interaction-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:human-computer-interaction-domain",
+  "domain": "infrastructure",
+  "definition": "The Human Computer Interaction Domain classifies concepts concerning the design, evaluation and study of interfaces between people and computational systems. It covers how users perceive, reason about and act upon technology, and how systems should present information and accept input. As a top-level subject axis it connects cognitive and behavioural concerns with the engineering of interactive systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Sc Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      },
+      {
+        "id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      },
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      },
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      },
+      {
+        "id": "urn:ngm:class:information-architecture",
+        "label": "Information Architecture"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cognitive-science-domain",
+        "label": "Cognitive Science Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:adoption",
+        "label": "Adoption"
+      },
+      {
+        "id": "urn:ngm:class:task-efficiency",
+        "label": "Task Efficiency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "usability",
+      "label": "Usability"
+    },
+    {
+      "slug": "interaction-design",
+      "label": "Interaction Design"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "user-experience",
+      "label": "User Experience"
+    },
+    {
+      "slug": "information-architecture",
+      "label": "Information Architecture"
+    },
+    {
+      "slug": "cognitive-science-domain",
+      "label": "Cognitive Science Domain"
+    },
+    {
+      "slug": "adoption",
+      "label": "Adoption"
+    },
+    {
+      "slug": "task-efficiency",
+      "label": "Task Efficiency"
+    },
+    {
+      "slug": "accessibility-domain",
+      "label": "Accessibility Domain"
+    },
+    {
+      "slug": "spatial-computing-domain",
+      "label": "Spatial Computing Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "iso-9241-210",
+      "label": "ISO 9241-210"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "brain-computer-interfaces",
+      "label": "Brain Computer Interfaces"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "cognitive-science-domain",
+      "label": "Cognitive Science Domain"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "distributed-collaboration-domain",
+      "label": "Distributed Collaboration Domain"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    },
+    {
+      "slug": "empathetic-ai",
+      "label": "Empathetic AI"
+    },
+    {
+      "slug": "hand-tracking",
+      "label": "Hand Tracking"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "screen-sharing",
+      "label": "Screen Sharing"
+    }
+  ]
+}

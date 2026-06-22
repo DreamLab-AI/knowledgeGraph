@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:13bb3b03cf9e4e55ef1e09b30c00368e29ee54fe197f18907c673ed0ca89de83",
+  "title": "Paper Writing",
+  "slug": "paper-writing",
+  "public": true,
+  "classIri": "urn:ngm:class:paper-writing",
+  "domain": "infrastructure",
+  "definition": "The structured process of composing and submitting scholarly manuscripts, including literature review, argument construction, citation management, and formatting to venue-specific standards. In AI-adjacent contexts, paper writing increasingly involves AI-assisted drafting, ontology-grounded claims, and tool-augmented workflows (LaTeX, reference managers, large language models) that must be balanced against academic integrity requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    }
+  ]
+}

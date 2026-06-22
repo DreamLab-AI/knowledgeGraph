@@ -1,0 +1,66 @@
+{
+  "id": "urn:visionflow:page:6e04c1aa9e6444998868a9a69dcf8729da805604934e54874e87a7fe1c59f75e",
+  "title": "legacy media",
+  "slug": "legacy-media",
+  "public": true,
+  "classIri": "urn:ngm:class:legacy-media",
+  "domain": "infrastructure",
+  "definition": "Legacy media refers to established, traditional forms of mass communication \u2014 including print, broadcast television, and radio \u2014 that preceded the digital internet era. These institutions hold significant cultural authority and are undergoing structural disruption as AI-driven platforms alter content distribution and audience economics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:social-media",
+        "label": "social media"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:digital-transformation",
+        "label": "Digital Transformation"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:media-theory",
+        "label": "Media Theory"
+      },
+      {
+        "id": "urn:ngm:class:media-richness-theory",
+        "label": "Media Richness Theory"
+      },
+      {
+        "id": "urn:ngm:class:digital-content-creation",
+        "label": "Digital Content Creation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "social-impact",
+      "label": "Social Impact"
+    }
+  ]
+}

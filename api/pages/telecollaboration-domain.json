@@ -1,0 +1,213 @@
+{
+  "id": "urn:visionflow:page:9ea88c5816af0820711812fa099d27f554bc669235b90f7b004cc935ada72dd7",
+  "title": "Telecollaboration Domain",
+  "slug": "telecollaboration-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:telecollaboration-domain",
+  "domain": "distributed-collaboration",
+  "definition": "The Telecollaboration Domain is the top-level knowledge domain encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms. It integrates synchronous and asynchronous collaboration modalities, telepresence technologies, and cross-domain bridges to AI, blockchain, metaverse, and robotics to enable effective human cooperation across geographical and temporal boundaries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:asynchronous-collaboration",
+        "label": "Asynchronous Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:collaboration-platform",
+        "label": "Collaboration Platform"
+      },
+      {
+        "id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:dao-governance-for-telecollaboration",
+        "label": "DAO Governance for Telecollaboration"
+      },
+      {
+        "id": "urn:ngm:class:blockchain-collaboration",
+        "label": "Blockchain Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality-collaboration",
+        "label": "Augmented Reality Collaboration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collaboration-technology",
+        "label": "Collaboration Technology"
+      },
+      {
+        "id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:digital-twin-collaboration",
+        "label": "Digital Twin Collaboration"
+      },
+      {
+        "id": "urn:ngm:class:smart-contract-coordination",
+        "label": "Smart Contract Coordination"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:technology-domain",
+        "label": "Technology Domain"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:dao-governance",
+        "label": "DAO Governance"
+      },
+      {
+        "id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "ai-domain",
+      "label": "AI Domain"
+    },
+    {
+      "slug": "bc-domain",
+      "label": "BC Domain"
+    },
+    {
+      "slug": "edge-cloud-collaboration-ai-0436",
+      "label": "Edge-Cloud Collaboration (AI-0436)"
+    },
+    {
+      "slug": "mv-domain",
+      "label": "MV Domain"
+    },
+    {
+      "slug": "rb-domain",
+      "label": "RB Domain"
+    },
+    {
+      "slug": "tele-100-ai-avatars",
+      "label": "TELE-100-ai-avatars"
+    },
+    {
+      "slug": "tele-105-real-time-language-translation",
+      "label": "TELE-105-real-time-language-translation"
+    },
+    {
+      "slug": "tele-200-robotic-telepresence",
+      "label": "TELE-200-robotic-telepresence"
+    },
+    {
+      "slug": "tele-203-haptic-feedback-telepresence",
+      "label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "slug": "tele-250-blockchain-collaboration",
+      "label": "TELE-250-blockchain-collaboration"
+    },
+    {
+      "slug": "tele-251-smart-contract-coordination",
+      "label": "TELE-251-smart-contract-coordination"
+    },
+    {
+      "slug": "tele-252-dao-governance-telecollaboration",
+      "label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
+      "slug": "tele-301-virtual-office-spaces",
+      "label": "TELE-301-virtual-office-spaces"
+    },
+    {
+      "slug": "metaverse-telepresence-bridge",
+      "label": "Metaverse-Telepresence Bridge"
+    },
+    {
+      "slug": "robotics-telepresence-bridge",
+      "label": "Robotics-Telepresence Bridge"
+    },
+    {
+      "slug": "technology-domain",
+      "label": "Technology Domain"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    },
+    {
+      "slug": "nostr-protocol",
+      "label": "Nostr Protocol"
+    },
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    },
+    {
+      "slug": "self-presence",
+      "label": "Self Presence"
+    },
+    {
+      "slug": "social-presence",
+      "label": "Social Presence"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "threaded-messaging",
+      "label": "Threaded Messaging"
+    },
+    {
+      "slug": "video-async",
+      "label": "Video Async"
+    },
+    {
+      "slug": "voice-memo",
+      "label": "Voice Memo"
+    },
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    },
+    {
+      "slug": "web-rtc",
+      "label": "WebRTC"
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    },
+    {
+      "slug": "tc-0003-telepresence-robot",
+      "label": "tc 0003 telepresence robot"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "id": "urn:visionflow:page:4b6f5be8d723493d74c0c26aa5381ea3182677dc2c6ac4f5137194781e21cc24",
+  "title": "AI Governance Domain",
+  "slug": "ai-governance-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-governance-domain",
+  "domain": "governance",
+  "definition": "The AI Governance Domain covers the policies, processes and controls that direct the responsible development and deployment of artificial intelligence. Its scope includes risk management, accountability, transparency, fairness assessment and regulatory alignment. It is a sub-area of the Artificial Intelligence Domain concerned with oversight rather than technique. The boundary excludes the technical mitigation of failure modes, which is treated under the AI Safety Domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:model-documentation",
+        "label": "Model Documentation"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-accountability",
+        "label": "Algorithmic Accountability"
+      },
+      {
+        "id": "urn:ngm:class:fairness-assessment",
+        "label": "Fairness Assessment"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:regulation-domain",
+        "label": "Regulation Domain"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety-domain",
+        "label": "AI Safety Domain"
+      },
+      {
+        "id": "urn:ngm:class:compliance-domain",
+        "label": "Compliance Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:responsible-deployment",
+        "label": "Responsible Deployment"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-conformance",
+        "label": "Regulatory Conformance"
+      },
+      {
+        "id": "urn:ngm:class:stakeholder-trust",
+        "label": "Stakeholder Trust"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:organisational-policy",
+        "label": "Organisational Policy"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:iso-iec-42001-2023",
+        "label": "ISO/IEC 42001:2023"
+      },
+      {
+        "id": "urn:ngm:class:nist-ai-rmf",
+        "label": "NIST AI RMF"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:ai-safety-domain",
+        "label": "AI Safety Domain"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      },
+      {
+        "id": "urn:ngm:class:security-domain",
+        "label": "Security Domain"
+      },
+      {
+        "id": "urn:ngm:class:standards-domain",
+        "label": "Standards Domain"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:eu-ai-act",
+        "label": "EU AI Act"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence-domain",
+        "label": "Artificial Intelligence Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "id": "urn:ngm:class:algorithmic-bias",
+        "label": "Algorithmic Bias"
+      },
+      {
+        "id": "urn:ngm:class:human-oversight",
+        "label": "Human Oversight"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "risk-management",
+      "label": "Risk Management"
+    },
+    {
+      "slug": "model-documentation",
+      "label": "Model Documentation"
+    },
+    {
+      "slug": "algorithmic-accountability",
+      "label": "Algorithmic Accountability"
+    },
+    {
+      "slug": "fairness-assessment",
+      "label": "Fairness Assessment"
+    },
+    {
+      "slug": "audit-trail",
+      "label": "Audit Trail"
+    },
+    {
+      "slug": "regulation-domain",
+      "label": "Regulation Domain"
+    },
+    {
+      "slug": "ai-safety-domain",
+      "label": "AI Safety Domain"
+    },
+    {
+      "slug": "compliance-domain",
+      "label": "Compliance Domain"
+    },
+    {
+      "slug": "responsible-deployment",
+      "label": "Responsible Deployment"
+    },
+    {
+      "slug": "regulatory-conformance",
+      "label": "Regulatory Conformance"
+    },
+    {
+      "slug": "stakeholder-trust",
+      "label": "Stakeholder Trust"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    },
+    {
+      "slug": "iso-iec-42001-2023",
+      "label": "ISO/IEC 42001:2023"
+    },
+    {
+      "slug": "iso-iec-23894-2023",
+      "label": "ISO/IEC 23894:2023"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-safety-domain",
+      "label": "AI Safety Domain"
+    },
+    {
+      "slug": "compliance-domain",
+      "label": "Compliance Domain"
+    },
+    {
+      "slug": "generative-ai-domain",
+      "label": "Generative AI Domain"
+    },
+    {
+      "slug": "regulation-domain",
+      "label": "Regulation Domain"
+    }
+  ]
+}

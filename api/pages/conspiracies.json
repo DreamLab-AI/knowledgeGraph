@@ -1,0 +1,86 @@
+{
+  "id": "urn:visionflow:page:779debe12e7ecd24d26a99a3a152714779076c50263d376190d533b1a3e9a609",
+  "title": "Conspiracies",
+  "slug": "conspiracies",
+  "public": true,
+  "classIri": "urn:ngm:class:conspiracies",
+  "domain": "infrastructure",
+  "definition": "Conspiracies, in the context of technology communities, refers to the recurring pattern of conspiratorial thinking that attaches to emerging technologies such as cryptocurrency and AI. Often rooted in legitimate governance concerns, such thinking can escalate into disinformation ecosystems, creating tensions within technology policy, AI safety debates, and open-source governance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:safety-and-alignment",
+        "label": "Safety and alignment"
+      },
+      {
+        "id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:california-ai-bill",
+        "label": "California AI bill"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:politics-law-privacy",
+        "label": "Politics, Law, Privacy"
+      },
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "martin2022dark",
+      "label": "martin2022dark"
+    },
+    {
+      "slug": "va2010neoconservatism",
+      "label": "va2010neoconservatism"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "politics-law-privacy",
+      "label": "Politics, Law, Privacy"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    }
+  ],
+  "backlinks": []
+}

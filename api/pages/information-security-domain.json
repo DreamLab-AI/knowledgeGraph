@@ -1,0 +1,187 @@
+{
+  "id": "urn:visionflow:page:d3ff4892e81be92719b545065a973244fde3addc80e568c938266365e2a9ccc3",
+  "title": "Information Security Domain",
+  "slug": "information-security-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:information-security-domain",
+  "domain": "security",
+  "definition": "The Information Security Domain classifies concepts concerned with protecting the confidentiality, integrity, and availability of information and the systems that process it. It covers controls, threat models, governance, and the operational practices that defend assets against compromise. As a top-level subject classification, it scopes the practice of securing systems rather than the cryptographic mathematics that some controls rely upon.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security And Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      },
+      {
+        "id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      },
+      {
+        "id": "urn:ngm:class:security-governance",
+        "label": "Security Governance"
+      },
+      {
+        "id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "id": "urn:ngm:class:vulnerability-management",
+        "label": "Vulnerability Management"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-primitive",
+        "label": "Cryptographic Primitive"
+      },
+      {
+        "id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "id": "urn:ngm:class:audit-logging",
+        "label": "Audit Logging"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:risk-reduction",
+        "label": "Risk Reduction"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-operation",
+        "label": "Trustworthy Operation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "access-control",
+      "label": "Access Control"
+    },
+    {
+      "slug": "threat-modelling",
+      "label": "Threat Modelling"
+    },
+    {
+      "slug": "security-governance",
+      "label": "Security Governance"
+    },
+    {
+      "slug": "incident-response",
+      "label": "Incident Response"
+    },
+    {
+      "slug": "vulnerability-management",
+      "label": "Vulnerability Management"
+    },
+    {
+      "slug": "cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
+      "slug": "identity-management",
+      "label": "Identity Management"
+    },
+    {
+      "slug": "audit-logging",
+      "label": "Audit Logging"
+    },
+    {
+      "slug": "risk-reduction",
+      "label": "Risk Reduction"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "trustworthy-operation",
+      "label": "Trustworthy Operation"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
+    },
+    {
+      "slug": "risk-management-domain",
+      "label": "Risk Management Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "iso-iec-27001",
+      "label": "ISO/IEC 27001"
+    },
+    {
+      "slug": "nist-sp-800-53",
+      "label": "NIST SP 800-53"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-physical-systems-domain",
+      "label": "Cyber Physical Systems Domain"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "enterprise-software-domain",
+      "label": "Enterprise Software Domain"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "networking-domain",
+      "label": "Networking Domain"
+    },
+    {
+      "slug": "risk-management-domain",
+      "label": "Risk Management Domain"
+    }
+  ]
+}

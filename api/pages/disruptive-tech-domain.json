@@ -1,0 +1,73 @@
+{
+  "id": "urn:visionflow:page:2fab2c700d0e18c6d0d71f23c9e46089067ec838bb829625b24f148b59dba320",
+  "title": "Disruptive Tech Domain",
+  "slug": "disruptive-tech-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:disruptive-tech-domain",
+  "domain": "infrastructure",
+  "definition": "A cross-cutting classification domain identifying technologies with transformative potential that significantly alter markets, industries, or societal practices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
+      "id": "urn:ngm:class:domain",
+      "label": "Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:aiapplications-domain",
+        "label": "AIApplicationsDomain"
+      }
+    ],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:technology-forecasting",
+        "label": "Technology Forecasting"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "aiapplications-domain",
+      "label": "AIApplicationsDomain"
+    },
+    {
+      "slug": "core-ontology",
+      "label": "CoreOntology"
+    },
+    {
+      "slug": "technology-forecasting",
+      "label": "Technology Forecasting"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "conceptual-layer",
+      "label": "ConceptualLayer"
+    },
+    {
+      "slug": "domain",
+      "label": "Domain"
+    }
+  ],
+  "backlinks": []
+}

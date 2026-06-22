@@ -1,0 +1,673 @@
+{
+  "id": "urn:visionflow:page:144ed9685865351d8d66c083dc191b71fc230e712000f97f4907f0abb81e3e08",
+  "title": "Cryptographic Domain",
+  "slug": "cryptographic-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptographic-domain",
+  "domain": "security",
+  "definition": "The Cryptographic Domain represents a specialised knowledge area encompassing all cryptographic primitives, protocols, and mechanisms used to secure distributed systems. It includes hash functions, digital signature schemes, zero-knowledge proof systems, threshold cryptography, homomorphic encryption, and post-quantum approaches. Cryptography is the foundational layer enabling data integrity, verifiable ownership, and privacy-preserving computation across decentralised and centralised security infrastructures alike.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:zk-snarks",
+        "label": "ZK-SNARKs"
+      },
+      {
+        "id": "urn:ngm:class:zk-starks",
+        "label": "ZK-STARKs"
+      },
+      {
+        "id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
+      },
+      {
+        "id": "urn:ngm:class:sha-256",
+        "label": "SHA-256"
+      },
+      {
+        "id": "urn:ngm:class:threshold-cryptography",
+        "label": "Threshold Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:homomorphic-encryption",
+        "label": "Homomorphic Encryption"
+      },
+      {
+        "id": "urn:ngm:class:digital-signature-scheme",
+        "label": "Digital Signature Scheme"
+      },
+      {
+        "id": "urn:ngm:class:hash-function",
+        "label": "Hash Function"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:computational-hardness-assumptions",
+        "label": "Computational Hardness Assumptions"
+      },
+      {
+        "id": "urn:ngm:class:elliptic-curve-mathematics",
+        "label": "Elliptic Curve Mathematics"
+      },
+      {
+        "id": "urn:ngm:class:secure-random-number-generation",
+        "label": "Secure Random Number Generation"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-credentials",
+        "label": "Verifiable Credentials"
+      },
+      {
+        "id": "urn:ngm:class:decentralized-consensus",
+        "label": "Decentralized Consensus"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-computation",
+        "label": "Verifiable Computation"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-computation",
+        "label": "Privacy-Preserving Computation"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:np-completeness",
+        "label": "NP-Completeness"
+      },
+      {
+        "id": "urn:ngm:class:discrete-logarithm-problem",
+        "label": "Discrete Logarithm Problem"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:symmetric-encryption",
+        "label": "Symmetric Encryption"
+      },
+      {
+        "id": "urn:ngm:class:classical-cryptography",
+        "label": "Classical Cryptography"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:distributed-systems-security",
+        "label": "Distributed Systems Security"
+      },
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph-publication-classifier-key-infrastructure",
+        "label": "Public Key Infrastructure"
+      },
+      {
+        "id": "urn:ngm:class:mpc-multi-party-computation",
+        "label": "MPC (Multi-Party Computation)"
+      },
+      {
+        "id": "urn:ngm:class:verifiable-secret-sharing",
+        "label": "Verifiable Secret Sharing"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:cryptographic-key-management",
+        "label": "Cryptographic Key Management"
+      },
+      {
+        "id": "urn:ngm:class:privacy-preserving-blockchain",
+        "label": "Privacy Preserving Blockchain"
+      },
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:nist-cryptographic-standards",
+        "label": "NIST Cryptographic Standards"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-18033",
+        "label": "ISO/IEC 18033"
+      },
+      {
+        "id": "urn:ngm:class:iso-iec-14888",
+        "label": "ISO/IEC 14888"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "attribute-based-encryption-abe",
+      "label": "Attribute-Based Encryption (ABE)"
+    },
+    {
+      "slug": "aztec-network",
+      "label": "Aztec Network"
+    },
+    {
+      "slug": "bank-of-england",
+      "label": "Bank of England"
+    },
+    {
+      "slug": "bank-of-england-digital-pound",
+      "label": "Bank of England Digital Pound"
+    },
+    {
+      "slug": "bip",
+      "label": "BIP"
+    },
+    {
+      "slug": "bip-bitcoin-improvement-proposals",
+      "label": "BIP (Bitcoin Improvement Proposals)"
+    },
+    {
+      "slug": "bitcoin-multisig",
+      "label": "Bitcoin multisig"
+    },
+    {
+      "slug": "blake2b",
+      "label": "BLAKE2b"
+    },
+    {
+      "slug": "bls-signatures",
+      "label": "BLS signatures"
+    },
+    {
+      "slug": "bulletproofs",
+      "label": "Bulletproofs"
+    },
+    {
+      "slug": "computational-hardness-assumptions",
+      "label": "Computational Hardness Assumptions"
+    },
+    {
+      "slug": "decentralized-consensus",
+      "label": "Decentralized Consensus"
+    },
+    {
+      "slug": "discrete-logarithm-problem",
+      "label": "Discrete Logarithm Problem"
+    },
+    {
+      "slug": "distributed-key-generation-dkg",
+      "label": "Distributed Key Generation (DKG)"
+    },
+    {
+      "slug": "ed25519",
+      "label": "Ed25519"
+    },
+    {
+      "slug": "eip",
+      "label": "EIP"
+    },
+    {
+      "slug": "eip-ethereum-improvement-proposals",
+      "label": "EIP (Ethereum Improvement Proposals)"
+    },
+    {
+      "slug": "elliptic-curve-mathematics",
+      "label": "Elliptic Curve Mathematics"
+    },
+    {
+      "slug": "ethereum-2-0",
+      "label": "Ethereum 2.0"
+    },
+    {
+      "slug": "falcon",
+      "label": "Falcon"
+    },
+    {
+      "slug": "financial-conduct-authority-fca",
+      "label": "Financial Conduct Authority (FCA)"
+    },
+    {
+      "slug": "fips-180",
+      "label": "FIPS 180"
+    },
+    {
+      "slug": "fips-186",
+      "label": "FIPS 186"
+    },
+    {
+      "slug": "fips-202",
+      "label": "FIPS 202"
+    },
+    {
+      "slug": "fully-homomorphic-encryption-fhe",
+      "label": "Fully Homomorphic Encryption (FHE)"
+    },
+    {
+      "slug": "homomorphic-encryption",
+      "label": "Homomorphic Encryption"
+    },
+    {
+      "slug": "identity-based-encryption-ibe",
+      "label": "Identity-Based Encryption (IBE)"
+    },
+    {
+      "slug": "imperial-college-london",
+      "label": "Imperial College London"
+    },
+    {
+      "slug": "iso-iec-14888",
+      "label": "ISO/IEC 14888"
+    },
+    {
+      "slug": "iso-iec-18033",
+      "label": "ISO/IEC 18033"
+    },
+    {
+      "slug": "kes-key-evolving-signature",
+      "label": "KES (Key Evolving Signature)"
+    },
+    {
+      "slug": "leeds-innovation-arc",
+      "label": "Leeds Innovation Arc"
+    },
+    {
+      "slug": "lms",
+      "label": "LMS"
+    },
+    {
+      "slug": "mimblewimble",
+      "label": "Mimblewimble"
+    },
+    {
+      "slug": "mina-protocol",
+      "label": "Mina Protocol"
+    },
+    {
+      "slug": "monero",
+      "label": "Monero"
+    },
+    {
+      "slug": "mpc-multi-party-computation",
+      "label": "MPC (Multi-Party Computation)"
+    },
+    {
+      "slug": "national-cyber-security-centre-ncsc",
+      "label": "National Cyber Security Centre (NCSC)"
+    },
+    {
+      "slug": "ncsc-cryptography-guidance",
+      "label": "NCSC Cryptography Guidance"
+    },
+    {
+      "slug": "nist-cryptographic-standards",
+      "label": "NIST Cryptographic Standards"
+    },
+    {
+      "slug": "np-completeness",
+      "label": "NP-completeness"
+    },
+    {
+      "slug": "polygon-zk-evm",
+      "label": "Polygon zkEVM"
+    },
+    {
+      "slug": "ripemd-160",
+      "label": "RIPEMD-160"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "schnorr-threshold-signatures",
+      "label": "Schnorr threshold signatures"
+    },
+    {
+      "slug": "shamir-secret-sharing",
+      "label": "Shamir Secret Sharing"
+    },
+    {
+      "slug": "shor-s-algorithm",
+      "label": "Shor's Algorithm"
+    },
+    {
+      "slug": "stark-net",
+      "label": "StarkNet"
+    },
+    {
+      "slug": "threshold-cryptography",
+      "label": "Threshold Cryptography"
+    },
+    {
+      "slug": "university-of-cambridge",
+      "label": "University of Cambridge"
+    },
+    {
+      "slug": "university-of-edinburgh",
+      "label": "University of Edinburgh"
+    },
+    {
+      "slug": "university-of-manchester",
+      "label": "University of Manchester"
+    },
+    {
+      "slug": "verifiable-computation",
+      "label": "Verifiable Computation"
+    },
+    {
+      "slug": "verifiable-delay-functions-vdfs",
+      "label": "Verifiable Delay Functions (VDFs)"
+    },
+    {
+      "slug": "verifiable-secret-sharing-vss",
+      "label": "Verifiable Secret Sharing (VSS)"
+    },
+    {
+      "slug": "w3-c-decentralized-identifiers-dids",
+      "label": "W3C Decentralized Identifiers (DIDs)"
+    },
+    {
+      "slug": "w3-c-dids",
+      "label": "W3C DIDs"
+    },
+    {
+      "slug": "xmss",
+      "label": "XMSS"
+    },
+    {
+      "slug": "zcash",
+      "label": "Zcash"
+    },
+    {
+      "slug": "zk-sync",
+      "label": "zkSync"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "cardano",
+      "label": "Cardano"
+    },
+    {
+      "slug": "ecdsa",
+      "label": "ECDSA"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "keccak-256",
+      "label": "Keccak-256"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof-of-Work"
+    },
+    {
+      "slug": "sha-256",
+      "label": "SHA-256"
+    },
+    {
+      "slug": "solana",
+      "label": "Solana"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "zk-snarks",
+      "label": "zk-SNARKs"
+    },
+    {
+      "slug": "zk-starks",
+      "label": "zk-STARKs"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "address",
+      "label": "Address"
+    },
+    {
+      "slug": "archival-node",
+      "label": "Archival Node"
+    },
+    {
+      "slug": "blake2",
+      "label": "BLAKE2"
+    },
+    {
+      "slug": "block-propagation-time",
+      "label": "Block Propagation Time"
+    },
+    {
+      "slug": "blockchain-network",
+      "label": "Blockchain Network"
+    },
+    {
+      "slug": "bootstrap-node",
+      "label": "Bootstrap Node"
+    },
+    {
+      "slug": "censorship-resistance",
+      "label": "Censorship Resistance"
+    },
+    {
+      "slug": "collision-resistance",
+      "label": "Collision Resistance"
+    },
+    {
+      "slug": "cryptographic-commitment",
+      "label": "Cryptographic Commitment"
+    },
+    {
+      "slug": "cryptography-domain",
+      "label": "Cryptography Domain"
+    },
+    {
+      "slug": "difficulty",
+      "label": "Difficulty"
+    },
+    {
+      "slug": "distributed-systems-domain",
+      "label": "Distributed Systems Domain"
+    },
+    {
+      "slug": "double-spending",
+      "label": "Double Spending"
+    },
+    {
+      "slug": "ecdsa",
+      "label": "ECDSA"
+    },
+    {
+      "slug": "eclipse-attack",
+      "label": "Eclipse Attack"
+    },
+    {
+      "slug": "elliptic-curve-cryptography",
+      "label": "Elliptic Curve Cryptography"
+    },
+    {
+      "slug": "finality",
+      "label": "Finality"
+    },
+    {
+      "slug": "formal-methods-domain",
+      "label": "Formal Methods Domain"
+    },
+    {
+      "slug": "full-node",
+      "label": "Full Node"
+    },
+    {
+      "slug": "gossip-protocol",
+      "label": "Gossip Protocol"
+    },
+    {
+      "slug": "hash-collision",
+      "label": "Hash Collision"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
+      "slug": "immutability",
+      "label": "Immutability"
+    },
+    {
+      "slug": "keccak-256",
+      "label": "Keccak-256"
+    },
+    {
+      "slug": "light-node",
+      "label": "Light Node"
+    },
+    {
+      "slug": "merkle-proof",
+      "label": "Merkle Proof"
+    },
+    {
+      "slug": "merkle-root",
+      "label": "Merkle Root"
+    },
+    {
+      "slug": "merkle-tree",
+      "label": "Merkle Tree"
+    },
+    {
+      "slug": "network-latency",
+      "label": "Network Latency"
+    },
+    {
+      "slug": "network-topology",
+      "label": "Network Topology"
+    },
+    {
+      "slug": "node",
+      "label": "Node"
+    },
+    {
+      "slug": "nonce",
+      "label": "Nonce"
+    },
+    {
+      "slug": "partition-attack",
+      "label": "Partition Attack"
+    },
+    {
+      "slug": "peer-discovery",
+      "label": "Peer Discovery"
+    },
+    {
+      "slug": "peer-to-peer-network",
+      "label": "Peer-to-Peer Network"
+    },
+    {
+      "slug": "permissioned-network",
+      "label": "Permissioned Network"
+    },
+    {
+      "slug": "permissionless-network",
+      "label": "Permissionless Network"
+    },
+    {
+      "slug": "preimage-resistance",
+      "label": "Preimage Resistance"
+    },
+    {
+      "slug": "privacy-domain",
+      "label": "Privacy Domain"
+    },
+    {
+      "slug": "private-key",
+      "label": "Private Key"
+    },
+    {
+      "slug": "pruned-node",
+      "label": "Pruned Node"
+    },
+    {
+      "slug": "public-key",
+      "label": "Public Key"
+    },
+    {
+      "slug": "public-key-cryptography",
+      "label": "Public-Key Cryptography"
+    },
+    {
+      "slug": "sha-256",
+      "label": "SHA-256"
+    },
+    {
+      "slug": "salt",
+      "label": "Salt"
+    },
+    {
+      "slug": "satoshi-nakamoto",
+      "label": "Satoshi Nakamoto"
+    },
+    {
+      "slug": "schnorr-signature",
+      "label": "Schnorr Signature"
+    },
+    {
+      "slug": "security-domain",
+      "label": "Security Domain"
+    },
+    {
+      "slug": "selfish-mining",
+      "label": "Selfish Mining"
+    },
+    {
+      "slug": "signature-scheme",
+      "label": "Signature Scheme"
+    },
+    {
+      "slug": "sybil-attack",
+      "label": "Sybil Attack"
+    },
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    },
+    {
+      "slug": "validator-node",
+      "label": "Validator Node"
+    },
+    {
+      "slug": "zero-knowledge-proof",
+      "label": "Zero-Knowledge Proof"
+    }
+  ]
+}

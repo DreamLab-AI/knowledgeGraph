@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:f0b772884468e43b119c00ab276d88d527174035e84bc51fa20552bc6ce4aded",
+  "title": "flossverse",
+  "slug": "flossverse",
+  "public": true,
+  "classIri": "urn:ngm:class:flossverse",
+  "domain": "blockchain",
+  "definition": "The Flossverse is a conceptual and practical framework for building an open-source, trust-minimised social immersive space that combines free/libre open-source software (FLOSS), decentralised value transfer (Bitcoin/Lightning), generative AI tooling, and open XR standards to enable inclusive economic participation in virtual and mixed-reality environments. The project targets B2B, B2C, and creator-to-consumer workflows with a minimum viable product centred on trustless value exchange within a social VR context, with particular emphasis on expanding access for emerging markets and creators currently excluded from media production pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.7,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agentic-metaverse-for-global-creatives",
+        "label": "Agentic Metaverse for Global Creatives"
+      },
+      {
+        "id": "urn:ngm:class:open-standard",
+        "label": "Open Standard"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      },
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:virtual-economy",
+        "label": "Virtual Economy"
+      },
+      {
+        "id": "urn:ngm:class:social-vr",
+        "label": "Social VR"
+      },
+      {
+        "id": "urn:ngm:class:creator-economy",
+        "label": "Creator Economy"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality-xr",
+        "label": "Extended Reality (XR)"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "jones2008trust",
+      "label": "jones2008trust"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    }
+  ]
+}

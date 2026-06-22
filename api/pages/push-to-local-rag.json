@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:19ad8557c018ad97c852e04bb2b5e826cf672fc0cddff4cfa7caca7c022352a2",
+  "title": "Push To Local RAG",
+  "slug": "push-to-local-rag",
+  "public": true,
+  "classIri": "urn:ngm:class:push-to-local-rag",
+  "domain": "artificial-intelligence",
+  "definition": "Push To Local RAG is a data-pipeline operation that extracts, cleans, and concatenates Logseq markdown pages\u2014filtering out short or low-quality documents\u2014then writes the result to a single corpus file consumed by a local Retrieval-Augmented Generation system. The process involves URL stripping, special-character normalisation, whitespace normalisation, and a minimum byte-length threshold, producing a curated text corpus that improves retrieval precision for local LLM inference without sending data to external services.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:retrieval-augmented-generation",
+        "label": "Retrieval-Augmented Generation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-search",
+        "label": "Semantic Search"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:vector-database",
+        "label": "Vector Database"
+      },
+      {
+        "id": "urn:ngm:class:embedding-model",
+        "label": "Embedding Model"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-graph",
+        "label": "Knowledge Graph"
+      },
+      {
+        "id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      },
+      {
+        "id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "untitled",
+      "label": "..."
+    }
+  ],
+  "backlinks": []
+}

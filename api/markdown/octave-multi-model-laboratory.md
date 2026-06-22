@@ -1,0 +1,53 @@
+- ### Definition
+  - A world-class multi-modal immersive research facility at the University of Salford housing advanced display topologies, high-performance compute, and distributed systems for mixed reality, generative AI, and human-scale VR experimentation. The lab supported over 25 years of research including world firsts in collaborative mixed reality, brain scanning in phobia treatment, real-time human reconstruction from cameras, and telepresence, and served hundreds of SMEs through ERDF-funded programmes.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:OctaveMultiModelLaboratory
+  - owl-role:: Concept
+
+- ### Relationships
+  - hasPart: [[Hardware and Edge]], [[Immersive Technology]], [[Mixed Reality]]
+  - enables: [[Telepresence]], [[Digital Twin]], [[Generative AI]]
+  - uses: [[GPU Compute]], [[Distributed Computing]]
+
+- ### Content
+  - #Public page automatically published
+  - # University of Salford (1997-2022)
+  - Over 25 years of expertise in immersive technologies, high performance compute, distributed systems, machine learning, and latterly generative AI.
+		- ![perpectiveViewOctave.png](../assets/perpectiveViewOctave_1749200107440_0.png)
+		- Technical director of multimillion pound multi-model mixed reality lab at the [[National Industrial Centre for Virtual Environments]].
+		- ![OcTave4330Square (1).jpg](../assets/OcTave4330Square_(1)_1749200127170_0.jpg)
+		- ![OcTave4338Square (1).jpg](../assets/OcTave4338Square_(1)_1749200134642_0.jpg)
+		- Primary expertise in novel display topologies and high performance [[Hardware and Edge]].
+		- ![IMG_20110218_152226.jpg](../assets/IMG_20110218_152226_1749200152488_0.jpg)
+		- This is big data running in human scale VR with Prof Rob Aspin in 2019.
+		- ![P1080785.JPG](../assets/photo-cave-vr-knowledge-graph.jpg){:height 499, :width 872}
+		- ![IMG_20160425_145237.jpg](../assets/IMG_20160425_145237_1728029981248_0.jpg)
+		- {{video https://www.youtube.com/watch?v=vlV1vRD4jrY&t=15s}}
+  - Human scale mixed reality experience
+		- Very strong track record and research in immersive systems
+		- 2004 VETS programme R&D engine assembler demo’d at Farnborough Air Show for Euravia Systems
+		- ![image.png](../assets/image_1707994222111_0.png){:width 600}
+  - Multi decade career supporting research and SMEs at UoS
+		- VETS ERDF  (2001-2008: Consultancy, training and immersive product for 100’s of SMEs)
+		- Cyber foundry & AI foundry  (2019-2022: Detailed R&D for SME’s in immersive/AI/cybersec intersection)
+		- One of the Cyber Foundry projects became a book and product.
+			- [Convergence and Disruption in Digital Society -- Money, Secure Communication, Digital Objects and Generative AI in Spatial Mixed Reality (arxiv.org)](https://arxiv.org/abs/2207.09460)
+				- ![image.png](../assets/image_1704196183900_0.png){:height 700, :width 300}
+		- Combining acoustics and vision in my world class multi-modal lab:
+		- Supporting PhDs
+		- world firsts -
+			- Human eye gaze connection in collaborative mixed reality over distance
+		- Brain scanning in proving treatment of fear of heights
+		- Reconstruction of humans in real time from cameras
+		- Nurse training, immersive education, digital twins
+		- Telepresence, including [[Telethrone]]
+		- Wavefield synthesis with immersive vision
+		- 2002 VETS programme Heaton Park refurbishment visualisation rendered in Octave Multi-Modal lab 2013
+		- ![image.png](../assets/image_1707994463743_0.png){:width 600}
+
+  - ## Octave
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

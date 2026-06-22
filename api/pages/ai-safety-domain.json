@@ -1,0 +1,167 @@
+{
+  "id": "urn:visionflow:page:6596885144d984b7a89e52dc14854743e2efa095f4f7b1476c0c3fa31b379b1e",
+  "title": "AI Safety Domain",
+  "slug": "ai-safety-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-safety-domain",
+  "domain": "ai",
+  "definition": "The AI Safety Domain covers the technical study of how to make AI systems behave reliably and in line with intended goals. Its scope includes alignment, robustness, interpretability, evaluation and the control of capable systems. It is a sub-area of the Artificial Intelligence Domain focused on failure prevention through engineering. The boundary excludes organisational policy and oversight, which are treated under the AI Governance Domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:alignment",
+        "label": "Alignment"
+      },
+      {
+        "id": "urn:ngm:class:robustness",
+        "label": "Robustness"
+      },
+      {
+        "id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      },
+      {
+        "id": "urn:ngm:class:oversight",
+        "label": "Oversight"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:machine-learning-discipline-domain",
+        "label": "Machine Learning Domain"
+      },
+      {
+        "id": "urn:ngm:class:formal-methods-domain",
+        "label": "Formal Methods Domain"
+      },
+      {
+        "id": "urn:ngm:class:knowledge-representation-domain",
+        "label": "Knowledge Representation Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:reliable-deployment",
+        "label": "Reliable Deployment"
+      },
+      {
+        "id": "urn:ngm:class:failure-mitigation",
+        "label": "Failure Mitigation"
+      },
+      {
+        "id": "urn:ngm:class:trustworthy-ai",
+        "label": "Trustworthy AI"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "alignment",
+      "label": "Alignment"
+    },
+    {
+      "slug": "robustness",
+      "label": "Robustness"
+    },
+    {
+      "slug": "interpretability",
+      "label": "Interpretability"
+    },
+    {
+      "slug": "red-teaming",
+      "label": "Red Teaming"
+    },
+    {
+      "slug": "oversight",
+      "label": "Oversight"
+    },
+    {
+      "slug": "machine-learning-domain",
+      "label": "Machine Learning Domain"
+    },
+    {
+      "slug": "formal-methods-domain",
+      "label": "Formal Methods Domain"
+    },
+    {
+      "slug": "knowledge-representation-domain",
+      "label": "Knowledge Representation Domain"
+    },
+    {
+      "slug": "reliable-deployment",
+      "label": "Reliable Deployment"
+    },
+    {
+      "slug": "failure-mitigation",
+      "label": "Failure Mitigation"
+    },
+    {
+      "slug": "trustworthy-ai",
+      "label": "Trustworthy AI"
+    },
+    {
+      "slug": "ai-governance-domain",
+      "label": "AI Governance Domain"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI Grounded Domain"
+    },
+    {
+      "slug": "artificial-intelligence-domain",
+      "label": "Artificial Intelligence Domain"
+    },
+    {
+      "slug": "iso-iec-24029-2-2023",
+      "label": "ISO/IEC 24029-2:2023"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "ai-governance-domain",
+      "label": "AI Governance Domain"
+    },
+    {
+      "slug": "ai-grounded-domain",
+      "label": "AI Grounded Domain"
+    },
+    {
+      "slug": "agentic-systems-domain",
+      "label": "Agentic Systems Domain"
+    },
+    {
+      "slug": "formal-methods-domain",
+      "label": "Formal Methods Domain"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    }
+  ]
+}

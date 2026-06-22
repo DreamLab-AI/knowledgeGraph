@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:460ddc29975b00ef4b91206b771920aa2abe017f4a9c97551f4cd538dc47b4e3",
+  "title": "Courses and Training",
+  "slug": "courses-and-training",
+  "public": true,
+  "classIri": "urn:ngm:class:courses-and-training",
+  "domain": "infrastructure",
+  "definition": "Structured educational programmes and skill-development resources covering artificial intelligence, machine learning, blockchain, spatial computing, and related technologies. These include MOOCs, short courses, university programmes, professional certifications, and self-directed learning materials that build practitioner capacity across technical and non-technical audiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-development",
+        "label": "AI Development"
+      },
+      {
+        "id": "urn:ngm:class:software-development-process",
+        "label": "Software Development Process"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:learning-management-system",
+        "label": "Learning Management System"
+      },
+      {
+        "id": "urn:ngm:class:learning-resources",
+        "label": "Learning Resources"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:education-technology",
+        "label": "Education Technology"
+      },
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "slug": "latent-space",
+      "label": "latent space"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "pre-training",
+      "label": "Pre Training"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ]
+}

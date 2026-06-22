@@ -1,0 +1,300 @@
+{
+  "id": "urn:visionflow:page:b12ce3fe146d5da10ef652252d452329b71b52612dd16d2aff3210deb48961db",
+  "title": "Regulatory Domain",
+  "slug": "regulatory-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:regulatory-domain",
+  "domain": "governance",
+  "definition": "The Regulatory Domain classifies concepts concerning the rules issued by public authorities and the obligations they impose on regulated activities. It covers statutory requirements, supervisory regimes and the mechanisms through which compliance is demonstrated and enforced. As a top-level subject axis it constrains how systems in other domains may lawfully be designed and operated.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:governance-domain",
+      "label": "Governance Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.72,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:statutory-requirement",
+        "label": "Statutory Requirement"
+      },
+      {
+        "id": "urn:ngm:class:supervisory-authority",
+        "label": "Supervisory Authority"
+      },
+      {
+        "id": "urn:ngm:class:compliance-obligation",
+        "label": "Compliance Obligation"
+      },
+      {
+        "id": "urn:ngm:class:enforcement-action",
+        "label": "Enforcement Action"
+      },
+      {
+        "id": "urn:ngm:class:reporting-requirement",
+        "label": "Reporting Requirement"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-sandbox",
+        "label": "Regulatory Sandbox"
+      },
+      {
+        "id": "urn:ngm:class:prudential-rule",
+        "label": "Prudential Rule"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:identity-domain",
+        "label": "Identity Domain"
+      },
+      {
+        "id": "urn:ngm:class:audit-trail",
+        "label": "Audit Trail"
+      },
+      {
+        "id": "urn:ngm:class:legal-entity",
+        "label": "Legal Entity"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:market-integrity",
+        "label": "Market Integrity"
+      },
+      {
+        "id": "urn:ngm:class:consumer-protection",
+        "label": "Consumer Protection"
+      },
+      {
+        "id": "urn:ngm:class:systemic-risk-management",
+        "label": "Systemic Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:data-protection",
+        "label": "Data Protection"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:legislative-process",
+        "label": "Legislative Process"
+      },
+      {
+        "id": "urn:ngm:class:public-authority",
+        "label": "Public Authority"
+      }
+    ],
+    "implements": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance-domain",
+        "label": "Regulatory Compliance Domain"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:self-regulation",
+        "label": "Self-Regulation"
+      },
+      {
+        "id": "urn:ngm:class:co-regulation",
+        "label": "Co-Regulation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      },
+      {
+        "id": "urn:ngm:class:standards",
+        "label": "Standards"
+      },
+      {
+        "id": "urn:ngm:class:artificial-intelligence-governance",
+        "label": "Artificial Intelligence Governance"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "id": "urn:ngm:class:impact-assessment",
+        "label": "Impact Assessment"
+      }
+    ],
+    "supports": [
+      {
+        "id": "urn:ngm:class:financial-regulation-domain",
+        "label": "Financial Regulation Domain"
+      },
+      {
+        "id": "urn:ngm:class:data-governance",
+        "label": "Data Governance"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:iso-31000",
+        "label": "ISO 31000"
+      },
+      {
+        "id": "urn:ngm:class:basel-framework",
+        "label": "Basel Framework"
+      }
+    ],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:governance-domain",
+        "label": "Governance Domain"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:policy-framework",
+        "label": "Policy Framework"
+      },
+      {
+        "id": "urn:ngm:class:jurisdiction",
+        "label": "Jurisdiction"
+      },
+      {
+        "id": "urn:ngm:class:cross-border-regulation",
+        "label": "Cross-Border Regulation"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "statutory-requirement",
+      "label": "Statutory Requirement"
+    },
+    {
+      "slug": "supervisory-authority",
+      "label": "Supervisory Authority"
+    },
+    {
+      "slug": "compliance-obligation",
+      "label": "Compliance Obligation"
+    },
+    {
+      "slug": "enforcement-action",
+      "label": "Enforcement Action"
+    },
+    {
+      "slug": "reporting-requirement",
+      "label": "Reporting Requirement"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "Governance Domain"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
+      "slug": "market-integrity",
+      "label": "Market Integrity"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "regulatory-compliance-domain",
+      "label": "Regulatory Compliance Domain"
+    },
+    {
+      "slug": "financial-regulation-domain",
+      "label": "Financial Regulation Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "financial-regulation-domain",
+      "label": "Financial Regulation Domain"
+    },
+    {
+      "slug": "governance-domain",
+      "label": "Governance Domain"
+    },
+    {
+      "slug": "governance-structure",
+      "label": "Governance Structure"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "instant-value-settlement",
+      "label": "Instant value settlement"
+    },
+    {
+      "slug": "kraken",
+      "label": "Kraken"
+    },
+    {
+      "slug": "mi-ca",
+      "label": "MiCA"
+    },
+    {
+      "slug": "oecd",
+      "label": "OECD"
+    },
+    {
+      "slug": "regulatory-compliance-domain",
+      "label": "Regulatory Compliance Domain"
+    },
+    {
+      "slug": "security-domain",
+      "label": "Security Domain"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "tether",
+      "label": "Tether"
+    },
+    {
+      "slug": "tornado-cash",
+      "label": "Tornado Cash"
+    }
+  ]
+}

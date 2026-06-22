@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:1fc01d8033cf8cb1e8bbef65d8a26f15a99d717736e7167f87b88fcfae2f7525",
+  "title": "Financialised Agentic Memetics",
+  "slug": "financialised-agentic-memetics",
+  "public": true,
+  "classIri": "urn:ngm:class:financialised-agentic-memetics",
+  "domain": "artificial-intelligence",
+  "definition": "The phenomenon in which AI agents and autonomous social actors propagate memetic content\u2014ideas, tokens, political positions\u2014tied to speculative financial instruments (memecoins, programmatically-aligned tokens) that derive value from attention and community adoption rather than underlying utility. This creates feedback loops between AI terminal outputs, social media virality, and tokenised capital allocation with tangible real-world effects.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:carbon-credit-token",
+        "label": "Carbon Credit Token"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:crypto-token",
+        "label": "Crypto Token"
+      },
+      {
+        "id": "urn:ngm:class:social-token-economy",
+        "label": "Social Token Economy"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:dao",
+        "label": "DAO"
+      },
+      {
+        "id": "urn:ngm:class:ai-agent-system",
+        "label": "AI Agent System"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "financial-nihilism",
+      "label": "Financial Nihilism"
+    }
+  ],
+  "backlinks": []
+}

@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:10711974a3630a663f6cff68a5e5b489f8416acbdbc6844e44f8cf3aafbf6257",
+  "title": "Metaverse and Spatial Risks",
+  "slug": "metaverse-and-spatial-risks",
+  "public": true,
+  "classIri": "urn:ngm:class:metaverse-and-spatial-risks",
+  "domain": "spatial-computing",
+  "definition": "Metaverse and Spatial Risks encompass the range of harms and hazards that arise specifically from spatially embodied, real-time virtual interactions \u2014 including harassment and abuse that mimics physical-world dynamics, miscommunication amplified by latency and avatar fidelity limitations, digital addiction, physical health impacts from prolonged immersive use, privacy violations through biometric data collection, and regulatory gaps as legislation lags behind technology deployment. These risks require multi-layered mitigation combining technical safeguards, governance frameworks, and international regulatory coordination.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
+      "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
+      "label": "Metaverse governance and safeguarding"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:user-safety",
+        "label": "User Safety"
+      },
+      {
+        "id": "urn:ngm:class:privacy",
+        "label": "Privacy"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      },
+      {
+        "id": "urn:ngm:class:regulatory-framework",
+        "label": "Regulatory Framework"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "id": "urn:ngm:class:metaverse-liability-model",
+        "label": "Metaverse Liability Model"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "rosenberg2022regulation",
+      "label": "rosenberg2022regulation"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "suggested-reading-order",
+      "label": "Suggested Reading Order"
+    }
+  ]
+}

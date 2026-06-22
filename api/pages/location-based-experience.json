@@ -1,0 +1,80 @@
+{
+  "id": "urn:visionflow:page:dcea335499b329ce3f105ea9485a3a7581bc8650d632c545cc679a5ecfd2a5eb",
+  "title": "Location Based Experience",
+  "slug": "location-based-experience",
+  "public": true,
+  "classIri": "urn:ngm:class:location-based-experience",
+  "domain": "spatial-computing",
+  "definition": "An immersive or interactive experience tied to a specific physical venue or geographic location, combining real-world presence with digital or spatial computing overlays. Location-based experiences leverage spatial mapping, real-time content delivery, and user proximity to deliver contextually relevant narrative or interactive content that cannot be replicated remotely.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
+      "id": "urn:ngm:class:immersive-experience",
+      "label": "Immersive Experience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      },
+      {
+        "id": "urn:ngm:class:gps",
+        "label": "Gps"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:performing-arts",
+        "label": "Performing Arts"
+      },
+      {
+        "id": "urn:ngm:class:virtual-production",
+        "label": "Virtual Production"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:content-delivery-network",
+        "label": "Content Delivery Network"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:metaverse-venue",
+        "label": "Metaverse Venue"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "immersive",
+      "label": "Immersive"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "technical-history-extended-cv",
+      "label": "Technical History (extended CV)"
+    }
+  ]
+}

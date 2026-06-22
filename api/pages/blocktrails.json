@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:7e179ca7caeaba8eefaf69746619a187fa9f009d719a11b4aa66edd03b04834c",
+  "title": "blocktrails",
+  "slug": "blocktrails",
+  "public": true,
+  "classIri": "urn:ngm:class:blocktrails",
+  "domain": "infrastructure",
+  "definition": "A concept node representing resource trails related to blockchain exploration tools and Nostr-based document sharing infrastructure. In the NarrativeGoldmine context, blocktrails links to split-screen markdown editing and decentralised document storage via NosDAV and the Nostr protocol.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:knowledge-base",
+        "label": "Knowledge Base"
+      },
+      {
+        "id": "urn:ngm:class:web-technology",
+        "label": "Web Technology"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:blockchain-core-concepts",
+        "label": "blockchain core concepts"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-identity",
+        "label": "Decentralised Identity"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

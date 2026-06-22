@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:3ed5200cd5fee2c05e641670cde111fac1f691f42bd2635f8e04f04dbd380ab9",
+  "title": "Supply Chain Domain",
+  "slug": "supply-chain-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain-domain",
+  "domain": "supply-chain",
+  "definition": "The Supply Chain Domain classifies concepts concerning the flow of goods, information and finance from source to end customer. It covers sourcing, logistics, inventory and the traceability and coordination of multi-party networks. As a top-level subject axis it frames how physical and informational flows are planned, executed and verified across organisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Dc Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:provenance",
+        "label": "Provenance"
+      },
+      {
+        "id": "urn:ngm:class:logistics",
+        "label": "Logistics"
+      },
+      {
+        "id": "urn:ngm:class:inventory-management",
+        "label": "Inventory Management"
+      },
+      {
+        "id": "urn:ngm:class:demand-forecasting",
+        "label": "Demand Forecasting"
+      },
+      {
+        "id": "urn:ngm:class:traceability",
+        "label": "Traceability"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:data-management-domain",
+        "label": "Data Management Domain"
+      },
+      {
+        "id": "urn:ngm:class:identity-domain",
+        "label": "Identity Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:provenance-verification",
+        "label": "Provenance Verification"
+      },
+      {
+        "id": "urn:ngm:class:inventory-optimisation",
+        "label": "Inventory Optimisation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "provenance",
+      "label": "Provenance"
+    },
+    {
+      "slug": "logistics",
+      "label": "Logistics"
+    },
+    {
+      "slug": "inventory-management",
+      "label": "Inventory Management"
+    },
+    {
+      "slug": "demand-forecasting",
+      "label": "Demand Forecasting"
+    },
+    {
+      "slug": "traceability",
+      "label": "Traceability"
+    },
+    {
+      "slug": "data-management-domain",
+      "label": "Data Management Domain"
+    },
+    {
+      "slug": "identity-domain",
+      "label": "Identity Domain"
+    },
+    {
+      "slug": "provenance-verification",
+      "label": "Provenance Verification"
+    },
+    {
+      "slug": "inventory-optimisation",
+      "label": "Inventory Optimisation"
+    },
+    {
+      "slug": "blockchain-domain",
+      "label": "Blockchain Domain"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "Sustainability Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    },
+    {
+      "slug": "gs-1-standards",
+      "label": "GS1 Standards"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "customs-trade-facilitation",
+      "label": "Customs Trade Facilitation"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "logistics-optimization",
+      "label": "Logistics Optimization"
+    },
+    {
+      "slug": "sustainability-domain",
+      "label": "Sustainability Domain"
+    }
+  ]
+}

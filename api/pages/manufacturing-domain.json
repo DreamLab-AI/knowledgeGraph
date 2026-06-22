@@ -1,0 +1,147 @@
+{
+  "id": "urn:visionflow:page:309027d44cedb6ec0fa01e68b6f0db9ce7bb0eb50668e0430c95d877dfdb9ca6",
+  "title": "Manufacturing Domain",
+  "slug": "manufacturing-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:manufacturing-domain",
+  "domain": "robotics",
+  "definition": "The Manufacturing Domain covers the design and operation of systems that produce physical goods at scale. Its scope includes process automation, industrial robotics, quality control and supply chain integration. It is a sub-area of the Robotics Domain concerned with production. The boundary excludes the financial analysis of production economics, which belongs to the Financial Markets Domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics-domain",
+      "label": "Robotics Domain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:process-automation",
+        "label": "Process Automation"
+      },
+      {
+        "id": "urn:ngm:class:industrial-robotics",
+        "label": "Industrial Robotics"
+      },
+      {
+        "id": "urn:ngm:class:quality-control",
+        "label": "Quality Control"
+      },
+      {
+        "id": "urn:ngm:class:predictive-maintenance",
+        "label": "Predictive Maintenance"
+      },
+      {
+        "id": "urn:ngm:class:supply-chain-integration",
+        "label": "Supply Chain Integration"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:robotics-domain",
+        "label": "Robotics Domain"
+      },
+      {
+        "id": "urn:ngm:class:control-theory-domain",
+        "label": "Control Theory Domain"
+      },
+      {
+        "id": "urn:ngm:class:embedded-systems-domain",
+        "label": "Embedded Systems Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:automated-production",
+        "label": "Automated Production"
+      },
+      {
+        "id": "urn:ngm:class:defect-detection",
+        "label": "Defect Detection"
+      },
+      {
+        "id": "urn:ngm:class:operational-efficiency",
+        "label": "Operational Efficiency"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "process-automation",
+      "label": "Process Automation"
+    },
+    {
+      "slug": "industrial-robotics",
+      "label": "Industrial Robotics"
+    },
+    {
+      "slug": "quality-control",
+      "label": "Quality Control"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "supply-chain-integration",
+      "label": "Supply Chain Integration"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "control-theory-domain",
+      "label": "Control Theory Domain"
+    },
+    {
+      "slug": "embedded-systems-domain",
+      "label": "Embedded Systems Domain"
+    },
+    {
+      "slug": "automated-production",
+      "label": "Automated Production"
+    },
+    {
+      "slug": "defect-detection",
+      "label": "Defect Detection"
+    },
+    {
+      "slug": "operational-efficiency",
+      "label": "Operational Efficiency"
+    },
+    {
+      "slug": "computer-vision-domain",
+      "label": "Computer Vision Domain"
+    },
+    {
+      "slug": "isa-95",
+      "label": "ISA-95"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

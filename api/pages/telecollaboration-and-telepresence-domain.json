@@ -1,0 +1,197 @@
+{
+  "id": "urn:visionflow:page:8b30940b460030aa13c8422881a5804ceae51407f8bdb7b5a1666e5d16f0d6cb",
+  "title": "Telecollaboration and Telepresence Domain",
+  "slug": "telecollaboration-and-telepresence-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:telecollaboration-and-telepresence-domain",
+  "domain": "distributed-collaboration",
+  "definition": "Telecollaboration and Telepresence Domain is a distributed collaboration concept and a type of Telecollaboration. that enables DistributedWork.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
+    {
+      "id": "urn:ngm:class:telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:immersive-technology",
+        "label": "ImmersiveTechnology"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:distributed-work",
+        "label": "DistributedWork"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "tele-002-telecollaboration",
+      "label": "TELE-002-telecollaboration"
+    },
+    {
+      "slug": "tele-003-social-presence-theory",
+      "label": "TELE-003-social-presence-theory"
+    },
+    {
+      "slug": "tele-004-media-richness-theory",
+      "label": "TELE-004-media-richness-theory"
+    },
+    {
+      "slug": "tele-005-common-ground-theory",
+      "label": "TELE-005-common-ground-theory"
+    },
+    {
+      "slug": "tele-006-presence",
+      "label": "TELE-006-presence"
+    },
+    {
+      "slug": "tele-020-virtual-reality-telepresence",
+      "label": "TELE-020-virtual-reality-telepresence"
+    },
+    {
+      "slug": "tele-021-augmented-reality-collaboration",
+      "label": "TELE-021-augmented-reality-collaboration"
+    },
+    {
+      "slug": "tele-022-mixed-reality-platforms",
+      "label": "TELE-022-mixed-reality-platforms"
+    },
+    {
+      "slug": "tele-023-meta-quest-platform",
+      "label": "TELE-023-meta-quest-platform"
+    },
+    {
+      "slug": "tele-024-apple-vision-pro-platform",
+      "label": "TELE-024-apple-vision-pro-platform"
+    },
+    {
+      "slug": "tele-025-microsoft-hololens",
+      "label": "TELE-025-microsoft-hololens"
+    },
+    {
+      "slug": "tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh"
+    },
+    {
+      "slug": "tele-050-neural-rendering-telepresence",
+      "label": "TELE-050-neural-rendering-telepresence"
+    },
+    {
+      "slug": "tele-051-3d-gaussian-splatting",
+      "label": "TELE-051-3d-gaussian-splatting"
+    },
+    {
+      "slug": "tele-052-neural-radiance-fields",
+      "label": "TELE-052-neural-radiance-fields"
+    },
+    {
+      "slug": "tele-053-volumetric-video-conferencing",
+      "label": "TELE-053-volumetric-video-conferencing"
+    },
+    {
+      "slug": "tele-100-ai-avatars",
+      "label": "TELE-100-ai-avatars"
+    },
+    {
+      "slug": "tele-105-real-time-language-translation",
+      "label": "TELE-105-real-time-language-translation"
+    },
+    {
+      "slug": "tele-107-ai-meeting-assistants",
+      "label": "TELE-107-ai-meeting-assistants"
+    },
+    {
+      "slug": "tele-110-spatial-audio-processing",
+      "label": "TELE-110-spatial-audio-processing"
+    },
+    {
+      "slug": "tele-150-webrtc",
+      "label": "TELE-150-webrtc"
+    },
+    {
+      "slug": "tele-151-real-time-protocols",
+      "label": "TELE-151-real-time-protocols"
+    },
+    {
+      "slug": "tele-152-low-latency-networking",
+      "label": "TELE-152-low-latency-networking"
+    },
+    {
+      "slug": "tele-153-5g-telepresence",
+      "label": "TELE-153-5g-telepresence"
+    },
+    {
+      "slug": "tele-200-robotic-telepresence",
+      "label": "TELE-200-robotic-telepresence"
+    },
+    {
+      "slug": "tele-201-teleoperation-systems",
+      "label": "TELE-201-teleoperation-systems"
+    },
+    {
+      "slug": "tele-203-haptic-feedback-telepresence",
+      "label": "TELE-203-haptic-feedback-telepresence"
+    },
+    {
+      "slug": "tele-250-blockchain-collaboration",
+      "label": "TELE-250-blockchain-collaboration"
+    },
+    {
+      "slug": "tele-251-smart-contract-coordination",
+      "label": "TELE-251-smart-contract-coordination"
+    },
+    {
+      "slug": "tele-252-dao-governance-telecollaboration",
+      "label": "TELE-252-dao-governance-telecollaboration"
+    },
+    {
+      "slug": "tele-300-digital-twin-collaboration",
+      "label": "TELE-300-digital-twin-collaboration"
+    },
+    {
+      "slug": "tele-301-virtual-office-spaces",
+      "label": "TELE-301-virtual-office-spaces"
+    },
+    {
+      "slug": "tele-302-shared-whiteboards",
+      "label": "TELE-302-shared-whiteboards"
+    },
+    {
+      "slug": "distributed-work",
+      "label": "DistributedWork"
+    },
+    {
+      "slug": "immersive-technology",
+      "label": "ImmersiveTechnology"
+    },
+    {
+      "slug": "tele-001-telepresence",
+      "label": "TELE-001-telepresence"
+    },
+    {
+      "slug": "telecollaboration",
+      "label": "Telecollaboration"
+    }
+  ],
+  "backlinks": []
+}

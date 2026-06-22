@@ -1,0 +1,70 @@
+{
+  "id": "urn:visionflow:page:d723772f8167f4a3e57745bd67425d2b1c88a4de1e82085478e8e20f3a834617",
+  "title": "AI Defence Doc",
+  "slug": "ai-defence-doc",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-defence-doc",
+  "domain": "artificial-intelligence",
+  "definition": "A curated reference document compiling empirical evidence countering common objections to AI capability and originality claims, aggregating benchmarks, research findings, and expert commentary demonstrating that large language models exhibit reasoning, world-model construction, and generalisation beyond stochastic pattern matching. Serves as an evidence base for constructive discourse on AI capabilities and their societal implications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:ai-ethics",
+        "label": "AI Ethics"
+      },
+      {
+        "id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [
+      {
+        "id": "urn:ngm:class:responsible-ai",
+        "label": "Responsible AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ]
+  },
+  "wikilinks": [
+    {
+      "slug": "generative-ai-will-be-designing-new-drugs-all-on-its-own-in-the-near-future",
+      "label": "Generative AI will be designing new drugs all on its own in the near future"
+    }
+  ],
+  "backlinks": []
+}

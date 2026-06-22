@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:3b4516c8f4d86c6300b4674f79d89c17224fec7b3a4370f577c3fb33a870de12",
+  "title": "Layoff tracker and threatened roles",
+  "slug": "layoff-tracker-and-threatened-roles",
+  "public": true,
+  "classIri": "urn:ngm:class:layoff-tracker-and-threatened-roles",
+  "domain": "infrastructure",
+  "definition": "A curated record of mass layoffs in the technology sector from 2023 onwards, cataloguing headcount reductions at major firms alongside UK government estimates that AI automation may displace 10\u201330% of existing jobs. The tracker contextualises how AI adoption\u2014particularly large language models and agentic AI\u2014is accelerating workforce restructuring across white-collar roles.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "id": "urn:ngm:class:economics",
+        "label": "Economics"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "text-summarisation",
+      "label": "Text Summarisation"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:98fb07ce2a77a45a1afc2aa80f3cd8390391d4a86cdf602a29789de209e4b29b",
+  "title": "Plotting a graph using matplotlib python library",
+  "slug": "plotting-a-graph-using-matplotlib-python-library",
+  "public": true,
+  "classIri": "urn:ngm:class:plotting-a-graph-using-matplotlib-python-library",
+  "domain": "infrastructure",
+  "definition": "A Logseq-embedded Python code example demonstrating inline data visualisation using matplotlib within a Pyodide runtime. The snippet generates a sinusoidal plot, encodes it as a base64 PNG, and returns it for display inside the knowledge graph note, illustrating programmatic data visualisation within a personal knowledge management environment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:visualization-layer",
+        "label": "Visualization Layer"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      },
+      {
+        "id": "urn:ngm:class:python-and-py-torch",
+        "label": "Python and PyTorch"
+      },
+      {
+        "id": "urn:ngm:class:software-library",
+        "label": "Software Library"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

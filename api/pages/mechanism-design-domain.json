@@ -1,0 +1,151 @@
+{
+  "id": "urn:visionflow:page:50468bb2678441f5ccf9f61f7c4f0d8cf2ff26f25de40f42beb9cbee358efd06",
+  "title": "Mechanism Design Domain",
+  "slug": "mechanism-design-domain",
+  "public": true,
+  "classIri": "urn:ngm:class:mechanism-design-domain",
+  "domain": "governance",
+  "definition": "The Mechanism Design Domain classifies concepts concerned with engineering rules and incentives so that self-interested participants produce a desired collective outcome. It covers auctions, voting and governance schemes, incentive-compatible protocols, and the analysis that proves their properties. As a top-level subject classification, it scopes the deliberate construction of mechanisms rather than the broader economic theory it draws upon.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Bc Governance And Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:auction-mechanism",
+        "label": "Auction Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:incentive-compatibility",
+        "label": "Incentive Compatibility"
+      },
+      {
+        "id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
+      },
+      {
+        "id": "urn:ngm:class:token-incentive-scheme",
+        "label": "Token Incentive Scheme"
+      },
+      {
+        "id": "urn:ngm:class:fee-market-design",
+        "label": "Fee Market Design"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:game-theory",
+        "label": "Game Theory"
+      },
+      {
+        "id": "urn:ngm:class:economics-domain",
+        "label": "Economics Domain"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:incentive-alignment",
+        "label": "Incentive Alignment"
+      },
+      {
+        "id": "urn:ngm:class:sybil-resistance",
+        "label": "Sybil Resistance"
+      },
+      {
+        "id": "urn:ngm:class:decentralised-governance",
+        "label": "Decentralised Governance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "auction-mechanism",
+      "label": "Auction Mechanism"
+    },
+    {
+      "slug": "incentive-compatibility",
+      "label": "Incentive Compatibility"
+    },
+    {
+      "slug": "voting-mechanism",
+      "label": "Voting Mechanism"
+    },
+    {
+      "slug": "token-incentive-scheme",
+      "label": "Token Incentive Scheme"
+    },
+    {
+      "slug": "fee-market-design",
+      "label": "Fee Market Design"
+    },
+    {
+      "slug": "game-theory",
+      "label": "Game Theory"
+    },
+    {
+      "slug": "economics-domain",
+      "label": "Economics Domain"
+    },
+    {
+      "slug": "incentive-alignment",
+      "label": "Incentive Alignment"
+    },
+    {
+      "slug": "sybil-resistance",
+      "label": "Sybil Resistance"
+    },
+    {
+      "slug": "decentralised-governance",
+      "label": "Decentralised Governance"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    },
+    {
+      "slug": "web-3-domain",
+      "label": "Web3 Domain"
+    },
+    {
+      "slug": "owl-thing",
+      "label": "owl:Thing"
+    }
+  ],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "decentralised-finance-domain",
+      "label": "Decentralised Finance Domain"
+    },
+    {
+      "slug": "economics-domain",
+      "label": "Economics Domain"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    }
+  ]
+}

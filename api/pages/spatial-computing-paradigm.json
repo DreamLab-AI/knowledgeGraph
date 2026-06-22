@@ -1,0 +1,158 @@
+{
+  "id": "urn:visionflow:page:692be20334215e671bdeed4f1c746b0689204f09de9082ba5d5e180ed74eb4cb",
+  "title": "Spatial Computing Paradigm",
+  "slug": "spatial-computing-paradigm",
+  "public": true,
+  "classIri": "urn:ngm:class:spatial-computing-paradigm",
+  "domain": "spatial-computing",
+  "definition": "The Spatial Computing Paradigm is a computing model in which digital information is spatially anchored to, overlaid upon, or blended with the physical world through continuous environmental sensing, three-dimensional scene understanding, and multimodal human-computer interaction. It unifies augmented reality, virtual reality, and mixed reality under a shared architectural concern: maintaining persistent, geometrically consistent digital layers that track real-world coordinates across sessions, devices, and users. Core enabling technologies include simultaneous localisation and mapping (SLAM), depth sensing, object recognition, and spatial anchoring. The paradigm underpins transformative applications across manufacturing, healthcare, education, retail, and collaborative design by dissolving the boundary between physical and digital information spaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.74,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:slam",
+        "label": "SLAM"
+      },
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      },
+      {
+        "id": "urn:ngm:class:spatial-anchoring",
+        "label": "Spatial Anchoring"
+      },
+      {
+        "id": "urn:ngm:class:depth-sensing",
+        "label": "Depth Sensing"
+      }
+    ],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "id": "urn:ngm:class:inertial-measurement-unit",
+        "label": "Inertial Measurement Unit"
+      },
+      {
+        "id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      },
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      },
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:desktop-computing-paradigm",
+        "label": "Desktop Computing Paradigm"
+      },
+      {
+        "id": "urn:ngm:class:mobile-computing",
+        "label": "Mobile Computing"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "id": "urn:ngm:class:internet-of-things",
+        "label": "Internet of Things"
+      },
+      {
+        "id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
+    ],
+    "uses": [
+      {
+        "id": "urn:ngm:class:openxr",
+        "label": "OpenXR"
+      },
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      },
+      {
+        "id": "urn:ngm:class:scene-graph",
+        "label": "Scene Graph"
+      },
+      {
+        "id": "urn:ngm:class:spatial-audio",
+        "label": "Spatial Audio"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [
+      {
+        "id": "urn:ngm:class:khronos-group",
+        "label": "Khronos Group"
+      },
+      {
+        "id": "urn:ngm:class:ieee",
+        "label": "IEEE"
+      }
+    ],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:computing-paradigm",
+        "label": "Computing Paradigm"
+      },
+      {
+        "id": "urn:ngm:class:ar-cloud",
+        "label": "AR Cloud"
+      },
+      {
+        "id": "urn:ngm:class:spatial-web",
+        "label": "Spatial Web"
+      },
+      {
+        "id": "urn:ngm:class:holographic-display",
+        "label": "Holographic Display"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

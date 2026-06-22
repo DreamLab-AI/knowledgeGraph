@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:3b49dda1fae03e41e5a73235e2ce6700093d10090bee0d01d0f2262176b0e443",
+  "title": "Project BroBots",
+  "slug": "project-bro-bots",
+  "public": true,
+  "classIri": "urn:ngm:class:project-bro-bots",
+  "domain": "infrastructure",
+  "definition": "Project BroBots is a multi-agent research initiative to identify, classify, and counter toxic online content using NLP-based harm detection and counter-narrative generation. It employs fine-tuned large language models on social media corpora, the Agentic Alliance tech stack, and is motivated by the harms of automated bot-driven misinformation and harassment across internet platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.35,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:content-moderation",
+        "label": "Content Moderation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:digital-society-harms",
+        "label": "Digital Society Harms"
+      },
+      {
+        "id": "urn:ngm:class:death-of-the-internet",
+        "label": "Death of the Internet"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:agents",
+        "label": "Agents"
+      },
+      {
+        "id": "urn:ngm:class:agentic-alliance",
+        "label": "Agentic Alliance"
+      },
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:projects",
+        "label": "Projects"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [
+    {
+      "slug": "agentic-alliance",
+      "label": "Agentic Alliance"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    }
+  ],
+  "backlinks": []
+}
