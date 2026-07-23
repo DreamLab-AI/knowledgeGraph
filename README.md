@@ -5,8 +5,15 @@
 This repository publishes [narrativegoldmine.com](https://narrativegoldmine.com): a
 static, publicly browsable rendering of the subset of DreamLab's Logseq knowledge
 graph tagged `public:: true`. It is the plain-browser reading surface for the same
-curated corpus that the [VisionClaw](https://github.com/DreamLab-AI/VisionClaw)
+corpus that the [VisionClaw](https://github.com/DreamLab-AI/VisionClaw)
 engine ingests and renders as an ontology-grounded, immersive 3D graph.
+
+> **What this corpus is:** mostly **AI-generated synthetic content, produced under
+> human direction, by design**. It exists as a medium-scale ontology testbed
+> (~7.4k OWL classes, ~100k relations, ~6.8M words) to exercise and demonstrate the
+> VisionFlow pipeline and the VisionClaw engine. Treat it as a demonstration dataset
+> with machine-readable semantics and traceable generation — not as an authoritative
+> human-authored encyclopedia.
 
 The `main` branch you are looking at is deliberately near-empty. It carries two things
 only — the `CNAME` that points the domain at GitHub Pages, and this README. The actual
@@ -108,4 +115,5 @@ ecosystem's licensing and maintainer contacts, see:
   [DreamLab-AI/VisionFlow](https://github.com/DreamLab-AI/VisionFlow).
 
 The published corpus content itself originates in the private `jjohare/logseq` graph;
-its authorship and rights sit with DreamLab AI.
+its generation was directed by, and its rights sit with, DreamLab AI (the content is
+mostly AI-generated synthetic material — see the corpus note at the top).
