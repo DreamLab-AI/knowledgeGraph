@@ -1,0 +1,2 @@
+- ### Definition
+  - Human capital is the classical economic concept treating the skills, knowledge, experience, and health embodied in individuals as a stock of productive capital that yields economic returns through employment and innovation.

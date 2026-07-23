@@ -79,7 +79,7 @@ public:: true
   "subClassOf": [
     {"@id": "urn:ngm:class:generative-model", "label": "Generative Model"},
     {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"},
-    {"@id": "urn:ngm:class:adapter-tuning", "label": "Adapter Tuning"}
+    {"@id": "urn:ngm:class:parameter-efficient-fine-tuning", "label": "Parameter-Efficient Fine-Tuning"}
   ],
   "relations": {
     "hasPart": [

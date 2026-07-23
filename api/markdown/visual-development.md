@@ -1,0 +1,2 @@
+- ### Definition
+  - Visual development is the pre-production creative process of exploring and defining the look, mood, characters, and environments of a visual project through concept sketches, colour studies, and design iteration before final production begins.

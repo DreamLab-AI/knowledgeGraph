@@ -7989,7 +7989,7 @@
     },
     {
       "slug": "bc-cryptographic-primitive",
-      "title": "Cryptographic Primitive",
+      "title": "Cryptographic Primitive (Blockchain)",
       "qualityScore": 0.8
     },
     {
@@ -8004,7 +8004,7 @@
     },
     {
       "slug": "bc-network-component",
-      "title": "Network Component",
+      "title": "Network Component (Blockchain)",
       "qualityScore": 0.8
     },
     {
@@ -18399,6 +18399,11 @@
       "qualityScore": 0.0
     },
     {
+      "slug": "interdisciplinary-science",
+      "title": "Interdisciplinary Science",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "interpretability",
       "title": "Interpretability",
       "qualityScore": 0.72
@@ -18549,6 +18554,11 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "learner-model",
+      "title": "Learner Model",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "learning-algorithm",
       "title": "Learning Algorithm",
       "qualityScore": 0.52
@@ -18677,6 +18687,11 @@
       "slug": "machine-translation",
       "title": "Machine Translation",
       "qualityScore": 0.65
+    },
+    {
+      "slug": "mastery-learning",
+      "title": "Mastery Learning",
+      "qualityScore": 0.0
     },
     {
       "slug": "mathematical-logic",
@@ -19382,6 +19397,11 @@
       "slug": "production-rules",
       "title": "Production Rules",
       "qualityScore": 0.62
+    },
+    {
+      "slug": "program-synthesis",
+      "title": "Program Synthesis",
+      "qualityScore": 0.0
     },
     {
       "slug": "programming-language",
@@ -20154,6 +20174,11 @@
       "qualityScore": 0.62
     },
     {
+      "slug": "theoretical-computer-science",
+      "title": "Theoretical Computer Science",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "third-party-certification",
       "title": "Third Party Certification",
       "qualityScore": 0.62
@@ -20585,7 +20610,7 @@
     },
     {
       "slug": "cat-ai-infrastructure",
-      "title": "AI Infrastructure",
+      "title": "AI Infrastructure (Artificial Intelligence)",
       "qualityScore": 0.85
     },
     {
@@ -22599,11 +22624,6 @@
       "slug": "graphics-processing-unit",
       "title": "Graphics Processing Unit",
       "qualityScore": 0.72
-    },
-    {
-      "slug": "graphql",
-      "title": "Graphql",
-      "qualityScore": 0.62
     },
     {
       "slug": "green-computing",
@@ -25882,7 +25902,7 @@
     },
     {
       "slug": "infra-data-management",
-      "title": "Data Management",
+      "title": "Data Management (Infrastructure)",
       "qualityScore": 0.8
     },
     {
@@ -25902,7 +25922,7 @@
     },
     {
       "slug": "infra-software-engineering",
-      "title": "Software Engineering",
+      "title": "Software Engineering (Infrastructure)",
       "qualityScore": 0.8
     },
     {
@@ -27355,6 +27375,11 @@
       "qualityScore": 0.9
     },
     {
+      "slug": "computational-imaging",
+      "title": "Computational Imaging",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "computational-intelligence",
       "title": "Computational Intelligence",
       "qualityScore": 0.9
@@ -27875,6 +27900,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "human-capital",
+      "title": "Human Capital",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "human-evaluation",
       "title": "Human Evaluation",
       "qualityScore": 0.62
@@ -28098,6 +28128,11 @@
       "slug": "llm-application-frameworks",
       "title": "LLM Application Frameworks",
       "qualityScore": 0.9
+    },
+    {
+      "slug": "llm-evaluation",
+      "title": "LLM Evaluation",
+      "qualityScore": 0.0
     },
     {
       "slug": "llm-orchestration",
@@ -28685,6 +28720,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "psychology",
+      "title": "Psychology",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "py-torch",
       "title": "PyTorch",
       "qualityScore": 0.8
@@ -29045,6 +29085,11 @@
       "qualityScore": 0.72
     },
     {
+      "slug": "technology-race",
+      "title": "Technology Race",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "technology-transfer",
       "title": "Technology Transfer",
       "qualityScore": 0.62
@@ -29193,6 +29238,11 @@
       "slug": "vision-language-action-models",
       "title": "Vision-Language-Action Models",
       "qualityScore": 0.74
+    },
+    {
+      "slug": "visual-development",
+      "title": "Visual Development",
+      "qualityScore": 0.0
     },
     {
       "slug": "visual-grounding",
@@ -33544,7 +33594,7 @@
     },
     {
       "slug": "dc-telepresence",
-      "title": "Telepresence",
+      "title": "Telepresence (Distributed Collaboration)",
       "qualityScore": 0.8
     },
     {
@@ -34445,6 +34495,11 @@
       "qualityScore": 0.68
     },
     {
+      "slug": "machine-learning-software",
+      "title": "Machine Learning Software",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "markov-chain",
       "title": "Markov Chain",
       "qualityScore": 0.72
@@ -34633,6 +34688,11 @@
       "slug": "multimodal-learning",
       "title": "Multimodal Learning",
       "qualityScore": 0.85
+    },
+    {
+      "slug": "multivariate-statistics",
+      "title": "Multivariate Statistics",
+      "qualityScore": 0.0
     },
     {
       "slug": "nearest-neighbor-search",
@@ -35305,6 +35365,11 @@
       "slug": "creative-industries",
       "title": "Creative Industries",
       "qualityScore": 0.9
+    },
+    {
+      "slug": "knowledge-economy",
+      "title": "Knowledge Economy",
+      "qualityScore": 0.0
     }
   ],
   "data": [

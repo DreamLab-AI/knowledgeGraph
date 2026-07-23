@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:multivariate-statistics",
+  "title": "Multivariate Statistics",
+  "slug": "multivariate-statistics",
+  "public": true,
+  "classIri": "urn:ngm:class:multivariate-statistics",
+  "domain": "machine-learning",
+  "definition": "Multivariate statistics is the branch of statistics concerned with observing and analysing more than one outcome variable simultaneously, covering methods such as covariance and correlation structure, dimensionality reduction, and multivariate hypothesis testing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistics",
+      "label": "Statistics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    }
+  ]
+}

@@ -16,8 +16,8 @@
       "label": "Prompt Engineering"
     },
     {
-      "id": "urn:ngm:class:model-optimisation",
-      "label": "Model Optimisation"
+      "id": "urn:ngm:class:model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
     }
   ],
   "entityType": "Class",

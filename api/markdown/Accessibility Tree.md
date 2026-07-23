@@ -202,7 +202,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-    {"@id": "urn:ngm:class:user-interface-model", "label": "User Interface Model"}
+    {"@id": "urn:ngm:class:user-interface", "label": "User Interface"}
   ],
   "relations": {
     "hasPart": [

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:llm-evaluation",
+  "title": "LLM Evaluation",
+  "slug": "llm-evaluation",
+  "public": true,
+  "classIri": "urn:ngm:class:llm-evaluation",
+  "domain": "ai",
+  "definition": "LLM evaluation is the set of methodologies, benchmarks, and metrics used to assess the capabilities, safety, and reliability of large language models, spanning automated benchmark suites, human preference judgements, and task-specific test harnesses.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    }
+  ]
+}

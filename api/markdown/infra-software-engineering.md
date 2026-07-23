@@ -31,7 +31,7 @@ Core sub-domains include software architecture (defining system structure, compo
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@type": "Class",
   "@id": "urn:ngm:class:infra-software-engineering",
-  "label": "Software Engineering",
+  "label": "Software Engineering (Infrastructure)",
   "definition": "Taxonomy hub for software engineering concepts within the infrastructure domain, encompassing the practices, processes, tools, and architectures used to design, build, test, and maintain software systems at scale.",
   "domain": "infrastructure",
   "subClassOf": [

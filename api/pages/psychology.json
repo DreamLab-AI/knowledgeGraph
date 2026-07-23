@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:psychology",
+  "title": "Psychology",
+  "slug": "psychology",
+  "public": true,
+  "classIri": "urn:ngm:class:psychology",
+  "domain": "ai",
+  "definition": "Psychology is the scientific study of mind and behaviour, encompassing cognitive, developmental, social, and clinical subfields that examine how individuals perceive, learn, reason, and act.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "slug": "human-factors",
+      "label": "Human Factors"
+    }
+  ]
+}

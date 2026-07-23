@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:theoretical-computer-science",
+  "title": "Theoretical Computer Science",
+  "slug": "theoretical-computer-science",
+  "public": true,
+  "classIri": "urn:ngm:class:theoretical-computer-science",
+  "domain": "artificial-intelligence",
+  "definition": "Theoretical computer science is the branch of computer science concerned with the mathematical foundations of computation, including computability, computational complexity, formal languages, and algorithm analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-science",
+      "label": "Computer Science"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    }
+  ]
+}

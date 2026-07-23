@@ -1,0 +1,2 @@
+- ### Definition
+  - Computational imaging is the field that jointly designs image-capture hardware and reconstruction algorithms, using computation to recover visual information such as depth, motion, or scenes beyond conventional optics that a camera sensor alone cannot directly capture.

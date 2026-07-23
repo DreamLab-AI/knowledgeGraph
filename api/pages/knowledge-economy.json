@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:knowledge-economy",
+  "title": "Knowledge Economy",
+  "slug": "knowledge-economy",
+  "public": true,
+  "classIri": "urn:ngm:class:knowledge-economy",
+  "domain": "economics",
+  "definition": "The knowledge economy is an economic system in which the production, dissemination, and exploitation of information and intellectual capability, rather than physical inputs, are the primary drivers of growth, productivity, and competitive advantage.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economics",
+      "label": "Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "creative-industries",
+      "label": "Creative Industries"
+    }
+  ]
+}

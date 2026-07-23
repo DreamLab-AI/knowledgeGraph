@@ -25,7 +25,7 @@ public:: true
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@type": "Class",
   "@id": "urn:ngm:class:infra-data-management",
-  "label": "Data Management",
+  "label": "Data Management (Infrastructure)",
   "definition": "Taxonomy hub covering the storage, movement, governance, and quality of data assets within the infrastructure domain, spanning databases, data lakes, ETL pipelines, metadata registries, and data governance frameworks. It provides the structural substrate on which analytics, machine learning, and application workloads depend.",
   "domain": "infrastructure",
   "subClassOf": [

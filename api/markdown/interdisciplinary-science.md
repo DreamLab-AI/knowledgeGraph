@@ -1,0 +1,2 @@
+- ### Definition
+  - Interdisciplinary science is a mode of inquiry that integrates concepts, methods, and data across two or more established disciplines to address questions that no single field can answer alone.

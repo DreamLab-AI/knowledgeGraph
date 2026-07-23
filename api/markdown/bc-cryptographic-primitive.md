@@ -25,7 +25,7 @@ public:: true
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@type": "Class",
   "@id": "urn:ngm:class:bc-cryptographic-primitive",
-  "label": "Cryptographic Primitive",
+  "label": "Cryptographic Primitive (Blockchain)",
   "definition": "Taxonomy hub for the foundational cryptographic building blocks underpinning blockchain systems, including hash functions, digital signatures, asymmetric encryption, zero-knowledge proofs, and cryptographic commitments. These primitives collectively provide the security properties of integrity, authenticity, and privacy that make distributed ledger technology trustworthy.",
   "domain": "blockchain",
   "subClassOf": [

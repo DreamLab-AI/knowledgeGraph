@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:program-synthesis",
+  "title": "Program Synthesis",
+  "slug": "program-synthesis",
+  "public": true,
+  "classIri": "urn:ngm:class:program-synthesis",
+  "domain": "artificial-intelligence",
+  "definition": "Program synthesis is the automated generation of source code or executable procedures that satisfy a given specification, expressed as examples, natural language, or formal constraints, without a human writing the implementation by hand.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "automated-reasoning",
+      "label": "Automated Reasoning"
+    },
+    {
+      "slug": "code-generation",
+      "label": "Code Generation"
+    }
+  ]
+}

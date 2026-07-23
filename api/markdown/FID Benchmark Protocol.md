@@ -60,7 +60,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},
-    {"@id": "urn:ngm:class:benchmark", "label": "Benchmark"}
+    {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"}
   ],
   "relations": {
     "hasPart": [

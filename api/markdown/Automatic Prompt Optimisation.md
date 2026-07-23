@@ -72,7 +72,7 @@ public:: true
   "subClassOf": [
     {"@id": "urn:ngm:class:ai-technique", "label": "AI Technique"},
     {"@id": "urn:ngm:class:prompt-engineering", "label": "Prompt Engineering"},
-    {"@id": "urn:ngm:class:model-optimisation", "label": "Model Optimisation"}
+    {"@id": "urn:ngm:class:model-optimisation-and-performance", "label": "Model Optimisation and Performance"}
   ],
   "relations": {
     "hasPart": [

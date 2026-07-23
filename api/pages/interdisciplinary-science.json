@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:interdisciplinary-science",
+  "title": "Interdisciplinary Science",
+  "slug": "interdisciplinary-science",
+  "public": true,
+  "classIri": "urn:ngm:class:interdisciplinary-science",
+  "domain": "artificial-intelligence",
+  "definition": "Interdisciplinary science is a mode of inquiry that integrates concepts, methods, and data across two or more established disciplines to address questions that no single field can answer alone.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

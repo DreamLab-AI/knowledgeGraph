@@ -69,8 +69,8 @@ public:: true
       "label": "Information Retrieval"
     },
     {
-      "@id": "urn:ngm:class:evaluation-benchmark",
-      "label": "Evaluation Benchmark"
+      "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+      "label": "Evaluation benchmarks and leaderboards"
     }
   ],
   "relations": {

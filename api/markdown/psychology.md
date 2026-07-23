@@ -1,0 +1,2 @@
+- ### Definition
+  - Psychology is the scientific study of mind and behaviour, encompassing cognitive, developmental, social, and clinical subfields that examine how individuals perceive, learn, reason, and act.

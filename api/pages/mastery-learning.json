@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:mastery-learning",
+  "title": "Mastery Learning",
+  "slug": "mastery-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:mastery-learning",
+  "domain": "artificial-intelligence",
+  "definition": "Mastery learning is an instructional strategy in which learners must demonstrate proficiency on a given unit of content before advancing to the next, using formative assessment and targeted remediation to ensure uniformly high achievement rather than a fixed pace of coverage.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
+    },
+    {
+      "slug": "education-and-ai",
+      "label": "Education and AI"
+    }
+  ]
+}

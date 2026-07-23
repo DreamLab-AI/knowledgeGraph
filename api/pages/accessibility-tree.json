@@ -12,8 +12,8 @@
       "label": "Human Computer Interaction"
     },
     {
-      "id": "urn:ngm:class:user-interface-model",
-      "label": "User Interface Model"
+      "id": "urn:ngm:class:user-interface",
+      "label": "User Interface"
     }
   ],
   "entityType": "Class",

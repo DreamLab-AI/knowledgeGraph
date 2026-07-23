@@ -67,7 +67,7 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-    {"@id": "urn:ngm:class:ai-application-domain", "label": "AI Application Domain"}
+    {"@id": "urn:ngm:class:ai-application", "label": "AI Application"}
   ],
   "relations": {
     "hasPart": [

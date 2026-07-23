@@ -1,13 +1,13 @@
 {
-  "total_pages": 7458,
-  "pages_with_ontology": 7458,
-  "public_pages": 7444,
-  "total_issues": 961,
+  "total_pages": 7471,
+  "pages_with_ontology": 7471,
+  "public_pages": 7457,
+  "total_issues": 962,
   "errors": 0,
-  "warnings": 961,
+  "warnings": 962,
   "by_code": {
     "MULTI_PARENT": 958,
-    "INVALID_DOMAIN": 3
+    "INVALID_DOMAIN": 4
   },
   "issues": [
     {
@@ -236,7 +236,7 @@
       "path": "Accessibility Tree.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Human Computer Interaction, User Interface Model"
+      "message": "Multiple parents (2): Human Computer Interaction, User Interface"
     },
     {
       "path": "Accessible Experience.md",
@@ -398,7 +398,7 @@
       "path": "Agent-Based Modelling.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Simulation, Complex Systems Science"
+      "message": "Multiple parents (2): Simulation, Complexity Science"
     },
     {
       "path": "Agent-Based Models.md",
@@ -620,7 +620,7 @@
       "path": "Automatic Prompt Optimisation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): AI Technique, Prompt Engineering, Model Optimisation"
+      "message": "Multiple parents (3): AI Technique, Prompt Engineering, Model Optimisation and Performance"
     },
     {
       "path": "Autonomous AI Agents.md",
@@ -644,7 +644,7 @@
       "path": "BEIR Benchmark.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Information Retrieval, Evaluation Benchmark"
+      "message": "Multiple parents (2): Information Retrieval, Evaluation benchmarks and leaderboards"
     },
     {
       "path": "BIM Software.md",
@@ -1286,7 +1286,7 @@
       "path": "Content Generation.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Generative AI, AI Application Domain"
+      "message": "Multiple parents (2): Generative AI, AI Application"
     },
     {
       "path": "Content Moderation.md",
@@ -1322,7 +1322,7 @@
       "path": "ControlNet Conditioning.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (3): Generative Model, AI Technique, Adapter Tuning"
+      "message": "Multiple parents (3): Generative Model, AI Technique, Parameter-Efficient Fine-Tuning"
     },
     {
       "path": "ControlNet and Similar Spatial Conditioning Systems.md",
@@ -2276,7 +2276,7 @@
       "path": "FID Benchmark Protocol.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Evaluation Metric, Benchmark"
+      "message": "Multiple parents (2): Evaluation Metric, Benchmarks"
     },
     {
       "path": "FSDP.md",
@@ -2871,6 +2871,12 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Computing and Cloud, Tracking Technology"
+    },
+    {
+      "path": "Knowledge Economy.md",
+      "severity": "warning",
+      "code": "INVALID_DOMAIN",
+      "message": "Domain 'economics' not in valid set"
     },
     {
       "path": "Knowledge Graph Kanban Board.md",

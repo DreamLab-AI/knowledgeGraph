@@ -1,0 +1,2 @@
+- ### Definition
+  - A learner model is a system's structured representation of an individual learner's knowledge state, skills, misconceptions, and progress, used by adaptive and intelligent tutoring systems to personalise instruction and assessment.

@@ -73,7 +73,7 @@ public:: true
   "qualityScore": 0.87,
   "subClassOf": [
     { "@id": "urn:ngm:class:simulation", "label": "Simulation" },
-    { "@id": "urn:ngm:class:complex-systems-science", "label": "Complex Systems Science" }
+    { "@id": "urn:ngm:class:complexity-science", "label": "Complexity Science" }
   ],
   "sameAs": [
     { "@id": "urn:ngm:class:agent-based-simulation", "label": "Agent-Based Simulation" },

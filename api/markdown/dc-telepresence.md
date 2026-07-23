@@ -25,7 +25,7 @@ public:: true
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
   "@type": "Class",
   "@id": "urn:ngm:class:dc-telepresence",
-  "label": "Telepresence",
+  "label": "Telepresence (Distributed Collaboration)",
   "definition": "Telepresence is the distributed-collaboration taxonomy hub covering technologies that create a convincing sense of physical co-presence across remote locations — spanning robotic telepresence, haptic-feedback telepresence, virtual-reality telepresence, and social presence theory. It is a peer category to Workspace Tools and Communication Technology within the distributed collaboration domain.",
   "domain": "distributed-collaboration",
   "subClassOf": [

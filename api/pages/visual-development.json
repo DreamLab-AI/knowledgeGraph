@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:visual-development",
+  "title": "Visual Development",
+  "slug": "visual-development",
+  "public": true,
+  "classIri": "urn:ngm:class:visual-development",
+  "domain": "ai",
+  "definition": "Visual development is the pre-production creative process of exploring and defining the look, mood, characters, and environments of a visual project through concept sketches, colour studies, and design iteration before final production begins.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "concept-art",
+      "label": "Concept Art"
+    }
+  ]
+}

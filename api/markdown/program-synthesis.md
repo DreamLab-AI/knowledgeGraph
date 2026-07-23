@@ -1,0 +1,2 @@
+- ### Definition
+  - Program synthesis is the automated generation of source code or executable procedures that satisfy a given specification, expressed as examples, natural language, or formal constraints, without a human writing the implementation by hand.

@@ -12,8 +12,8 @@
       "label": "Evaluation Metric"
     },
     {
-      "id": "urn:ngm:class:benchmark",
-      "label": "Benchmark"
+      "id": "urn:ngm:class:benchmarks",
+      "label": "Benchmarks"
     }
   ],
   "entityType": "Class",

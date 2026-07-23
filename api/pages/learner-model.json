@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:learner-model",
+  "title": "Learner Model",
+  "slug": "learner-model",
+  "public": true,
+  "classIri": "urn:ngm:class:learner-model",
+  "domain": "artificial-intelligence",
+  "definition": "A learner model is a system's structured representation of an individual learner's knowledge state, skills, misconceptions, and progress, used by adaptive and intelligent tutoring systems to personalise instruction and assessment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:adaptive-learning",
+      "label": "Adaptive Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    },
+    {
+      "slug": "competency-based-education",
+      "label": "Competency Based Education"
+    }
+  ]
+}

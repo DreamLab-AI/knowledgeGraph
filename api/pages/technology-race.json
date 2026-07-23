@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:technology-race",
+  "title": "Technology Race",
+  "slug": "technology-race",
+  "public": true,
+  "classIri": "urn:ngm:class:technology-race",
+  "domain": "ai",
+  "definition": "A technology race is a competitive dynamic in which multiple actors, such as companies, nations, or research labs, accelerate investment and development in a given technology to secure strategic, economic, or military advantage ahead of rivals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

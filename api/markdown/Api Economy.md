@@ -60,7 +60,7 @@ public:: true
         "label": "REST API"
       },
       {
-        "@id": "urn:ngm:class:graphql",
+        "@id": "urn:ngm:class:graph-ql",
         "label": "GraphQL"
       }
     ],
