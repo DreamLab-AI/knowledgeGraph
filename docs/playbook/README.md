@@ -208,6 +208,15 @@ into agent contexts verbatim as the operating contract: RFC-2119 keywords,
 numbered invariants, closed value sets. Read the contract documents as
 specifications, not essays.
 
+One asymmetry follows from that, and it is deliberate: the contract documents
+are not descriptions of artefacts you must now go and build. They are the
+artefacts. Paste `02-schema.md` and `templates/authoring-spec.md` into your
+mesh's context, swap the `owf` project token for your own, and you have a
+working authoring contract on day one. Phase 0 is R1 made self-demonstrating:
+the playbook does not tell you to write contracts before content; it hands you
+the contracts, so the first page your corpus ever contains is already governed
+by them.
+
 **Phase 0 — Contracts (`01` §7, `02`, `templates/`).** Before a single content
 page exists, write the contract the whole mesh obeys (R1). The page format,
 slug law, domain enum, parent requirement, grounding requirement and density
@@ -355,10 +364,11 @@ Then, in order:
 
 1. Read [`01-discovery.md`](01-discovery.md) and run its inventory against a lake
    you have, even a small one.
-2. Stand up the contracts before writing content (R1): the authoring spec in
-   [`templates/authoring-spec.md`](templates/authoring-spec.md), the page format
-   in [`02-schema.md`](02-schema.md), the gates in
-   [`templates/gate-config.md`](templates/gate-config.md).
+2. Stand up the contracts before writing content (R1) — by lifting, not
+   writing: paste [`02-schema.md`](02-schema.md) and
+   [`templates/authoring-spec.md`](templates/authoring-spec.md) into your
+   mesh's context with your own project token, and copy the gate set from
+   [`templates/gate-config.md`](templates/gate-config.md) into CI.
 3. Walk the full build in [`guides/reproduce.md`](../guides/reproduce.md), past
    the corpus to the SPARQL queries, the WebVOWL JSON and the binary graph tiers.
 4. When you are ready to write your first page, follow the worked first month in
