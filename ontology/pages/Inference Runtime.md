@@ -15,7 +15,7 @@ public:: true
   "definition":"An inference runtime is the software layer that loads a trained machine-learning model and executes its forward pass to produce predictions on new inputs. It schedules computation across CPUs, GPUs or accelerators, applies graph optimisations such as operator fusion and quantisation, and manages memory, batching and concurrency for low-latency serving. Inference runtimes are the execution engine beneath model-serving infrastructure.",
   "domain":"artificial-intelligence",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"}],
+  "subClassOf":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"},{"@id":"urn:ngm:class:cat-ai-infrastructure","label":"AI Infrastructure (Artificial Intelligence)"}],
   "relations":{
     "requires":[
       {"@id":"urn:ngm:class:gpu","label":"GPU"},

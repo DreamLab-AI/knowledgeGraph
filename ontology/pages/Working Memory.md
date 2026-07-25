@@ -15,7 +15,7 @@ public:: true
   "definition":"Working memory is the short-lived, actively maintained store an agent uses to hold and manipulate the information relevant to its current task. In large-language-model agents it is realised through the context window, intermediate reasoning traces, and scratchpads, augmented by external stores when the active context is insufficient. It is distinguished from long-term memory by its limited capacity, volatility, and tight coupling to ongoing reasoning.",
   "domain":"artificial-intelligence",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:cognitive-architecture","label":"Cognitive Architecture"}],
+  "subClassOf":[{"@id":"urn:ngm:class:cognitive-architecture","label":"Cognitive Architecture"},{"@id":"urn:ngm:class:ai-research-area","label":"AI Research Area"}],
   "relations":{
     "partOf":[{"@id":"urn:ngm:class:cognitive-architecture","label":"Cognitive Architecture"},{"@id":"urn:ngm:class:ai-agent","label":"AI Agent"}],
     "hasPart":[{"@id":"urn:ngm:class:context-window","label":"Context Window"},{"@id":"urn:ngm:class:attention-mechanism","label":"Attention Mechanism"}],

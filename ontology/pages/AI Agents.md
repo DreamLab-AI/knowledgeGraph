@@ -284,8 +284,8 @@ public:: true
         "label": "Tool Use"
       },
       {
-        "@id": "urn:ngm:class:memory",
-        "label": "Memory"
+        "@id": "urn:ngm:class:memory-store",
+        "label": "Memory Store"
       },
       {
         "@id": "urn:ngm:class:reasoning",

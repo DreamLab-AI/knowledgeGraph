@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:database",
       "label": "Database"
+    },
+    {
+      "@id": "urn:ngm:class:nosql-database",
+      "label": "NoSQL Database"
     }
   ],
   "relations": {

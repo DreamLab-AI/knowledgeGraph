@@ -159,7 +159,7 @@ public:: true
       {"@id": "urn:ngm:class:empirical-experimental-design", "label": "Empirical Experimental Design"},
       {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"},
       {"@id": "urn:ngm:class:reproducibility", "label": "Reproducibility"},
-      {"@id": "urn:ngm:class:experiment-tracking", "label": "Experiment Tracking"},
+      {"@id": "urn:ngm:class:empirical-experimental-design-tracking", "label": "Experiment Tracking"},
       {"@id": "urn:ngm:class:continuous-training", "label": "Continuous Training"}
     ],
     "requires": [

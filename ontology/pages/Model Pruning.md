@@ -13,7 +13,7 @@ public:: true
   "definition":"Model pruning is a neural-network compression technique that removes redundant or low-importance parameters, neurons, or structural components from a trained model to reduce its size and computational cost while preserving accuracy. Pruning may be unstructured, zeroing individual weights to induce sparsity, or structured, removing whole channels, filters, or layers to yield models that run faster on standard hardware. Importance is judged by criteria such as weight magnitude or sensitivity, and pruning is typically followed by fine-tuning to recover lost accuracy. It is a core method for deploying large models on resource-constrained and edge environments.",
   "domain":"machine-learning",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:model-compression","label":"Model Compression"}],
+  "subClassOf":[{"@id":"urn:ngm:class:model-compression","label":"Model Compression"},{"@id":"urn:ngm:class:ai-technique","label":"AI Technique"}],
   "relations":{
     "hasPart":[
       {"@id":"urn:ngm:class:fine-tuning","label":"Fine-Tuning"},

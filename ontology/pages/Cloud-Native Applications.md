@@ -121,8 +121,8 @@ alias:: CloudNativeApplications
         "label": "Industry Cloud Platforms"
       },
       {
-        "@id": "urn:ngm:class:elastic-scaling",
-        "label": "Elastic Scaling"
+        "@id": "urn:ngm:class:autoscaling",
+        "label": "Autoscaling"
       }
     ],
     "dependsOn": [

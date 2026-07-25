@@ -473,6 +473,10 @@ public:: true
     {
       "@id": "urn:ngm:class:generative-model",
       "label": "Generative Model"
+    },
+    {
+      "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface",
+      "label": "Node-Based Diffusion Pipeline Interface"
     }
   ],
   "relations": {
@@ -518,8 +522,8 @@ public:: true
         "label": "Image-to-Image Generation"
       },
       {
-        "@id": "urn:ngm:class:image-upscaling",
-        "label": "Image Upscaling"
+        "@id": "urn:ngm:class:ai-upscaling-and-super-resolution",
+        "label": "AI Upscaling and Super-Resolution"
       },
       {
         "@id": "urn:ngm:class:text-to-image-generation",

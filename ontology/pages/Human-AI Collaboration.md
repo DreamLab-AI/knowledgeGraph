@@ -15,7 +15,7 @@ public:: true
   "definition":"Human-AI collaboration is the design of systems and workflows in which people and artificial-intelligence agents work jointly, combining human judgement and oversight with machine speed and scale. It encompasses interaction patterns, division of labour, and trust mechanisms that keep humans meaningfully in or on the loop. Effective collaboration improves decision quality and accountability while harnessing AI as an augmenting rather than replacing force.",
   "domain":"artificial-intelligence",
   "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"}],
+  "subClassOf":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"},{"@id":"urn:ngm:class:ai-application","label":"AI Application"}],
   "relations":{
     "hasPart":[{"@id":"urn:ngm:class:human-in-the-loop","label":"Human-in-the-Loop"},{"@id":"urn:ngm:class:human-oversight","label":"Human Oversight"}],
     "requires":[{"@id":"urn:ngm:class:explainable-ai","label":"Explainable AI"},{"@id":"urn:ngm:class:trustworthy-ai","label":"Trustworthy AI"}],

@@ -8,46 +8,98 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:collaborative-editing",
-  "@type":"Class",
-  "label":"Collaborative Editing",
-  "definition":"Collaborative editing is the capability for multiple people to view and modify a shared document simultaneously, with their changes merged consistently and surfaced to all participants in near real time. It relies on concurrency-control techniques such as operational transformation or conflict-free replicated data types to reconcile concurrent edits without conflicts. Combined with presence and cursor awareness, it makes co-authoring across distributed users feel immediate and coherent.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:real-time-collaboration","label":"Real-Time Collaboration"}],
-  "relations":{
-    "enables":[
-      {"@id":"urn:ngm:class:real-time-collaboration","label":"Real-Time Collaboration"},
-      {"@id":"urn:ngm:class:collaboration","label":"Collaboration"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:collaborative-editing",
+  "@type": "Class",
+  "label": "Collaborative Editing",
+  "definition": "Collaborative editing is the capability for multiple people to view and modify a shared document simultaneously, with their changes merged consistently and surfaced to all participants in near real time. It relies on concurrency-control techniques such as operational transformation or conflict-free replicated data types to reconcile concurrent edits without conflicts. Combined with presence and cursor awareness, it makes co-authoring across distributed users feel immediate and coherent.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:real-time-collaboration",
+      "label": "Real-Time Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:version-history",
+      "label": "Version History"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:real-time-collaboration",
+        "label": "Real-Time Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:operational-transformation","label":"Operational Transformation"},
-      {"@id":"urn:ngm:class:crdt","label":"CRDT"},
-      {"@id":"urn:ngm:class:websocket","label":"WebSocket"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "@id": "urn:ngm:class:web-socket",
+        "label": "WebSocket"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:conflict-resolution","label":"Conflict Resolution"},
-      {"@id":"urn:ngm:class:presence-awareness","label":"Presence Awareness"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:conflict-resolution",
+        "label": "Conflict Resolution"
+      },
+      {
+        "@id": "urn:ngm:class:presence-awareness",
+        "label": "Presence Awareness"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:conflict-free-replicated-data-type","label":"Conflict-Free Replicated Data Type"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:conflict-free-replicated-data-type",
+        "label": "Conflict-Free Replicated Data Type"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:distributed-collaboration","label":"Distributed Collaboration"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:distributed-collaboration","label":"Distributed Collaboration"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:operational-transformation","label":"Operational Transformation"},
-      {"@id":"urn:ngm:class:crdt","label":"CRDT"},
-      {"@id":"urn:ngm:class:presence-awareness","label":"Presence Awareness"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      },
+      {
+        "@id": "urn:ngm:class:presence-awareness",
+        "label": "Presence Awareness"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

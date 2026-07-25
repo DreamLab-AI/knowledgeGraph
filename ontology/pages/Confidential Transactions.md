@@ -28,6 +28,10 @@ alias:: Confidential-Transactions
     {
       "@id": "urn:ngm:class:blockchain-transaction",
       "label": "Blockchain Transaction"
+    },
+    {
+      "@id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive (Blockchain)"
     }
   ],
   "relations": {

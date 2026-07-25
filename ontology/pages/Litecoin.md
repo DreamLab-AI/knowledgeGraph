@@ -62,10 +62,16 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:blockchain",
-    "label": "Blockchain"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency"
+    }
+  ],
   "relations": {
     "requires": [
       {
@@ -95,8 +101,8 @@ public:: true
         "label": "Micropayments"
       },
       {
-        "@id": "urn:ngm:class:cross-border-transactions",
-        "label": "Cross-Border Transactions"
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
       }
     ],
     "implements": [

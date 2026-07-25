@@ -23,23 +23,62 @@ public:: true
   "definition": "GPU resources refer to the pool of graphics processing unit capacity — including VRAM, streaming multiprocessors, tensor cores, and associated interconnect bandwidth — that is provisioned, allocated, and managed as a computational resource for parallel workloads such as AI model training and inference, scientific simulation, computer graphics rendering, and high-performance computing. In cloud and data centre contexts, GPU resources are typically accessed through virtualisation or direct hardware passthrough, managed by schedulers that partition capacity across competing workloads and billed on per-hour or per-token consumption models.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:compute-resources", "label": "Compute Resources"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:compute-resources",
+      "label": "Compute Resources"
+    },
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
-      {"@id": "urn:ngm:class:hardware-acceleration", "label": "Hardware Acceleration"},
-      {"@id": "urn:ngm:class:compute-shader", "label": "Compute Shader"}
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:compute-shader",
+        "label": "Compute Shader"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:gpu-computing", "label": "GPU Computing"},
-      {"@id": "urn:ngm:class:large-scale-compute", "label": "Large-Scale Compute"},
-      {"@id": "urn:ngm:class:computer-graphics", "label": "Computer Graphics"}
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:large-scale-compute",
+        "label": "Large-Scale Compute"
+      },
+      {
+        "@id": "urn:ngm:class:computer-graphics",
+        "label": "Computer Graphics"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:gpu-compute", "label": "GPU Compute"},
-      {"@id": "urn:ngm:class:edge-ai-accelerator", "label": "Edge AI Accelerator"},
-      {"@id": "urn:ngm:class:inference-hardware", "label": "Inference Hardware"}
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-compute",
+        "label": "GPU Compute"
+      },
+      {
+        "@id": "urn:ngm:class:edge-ai-accelerator",
+        "label": "Edge AI Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      }
     ]
   },
   "quality": 0.8

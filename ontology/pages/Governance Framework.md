@@ -98,10 +98,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:performance-management",
-        "label": "Performance Management"
-      },
-      {
         "@id": "urn:ngm:class:risk-management",
         "label": "Risk Management"
       },
@@ -275,7 +271,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Organisational Framework]]
-  - enables:: [[Strategic Alignment]], [[Risk Management]], [[Performance Management]]
+  - enables:: [[Strategic Alignment]], [[Risk Management]]
   - implements:: [[Policy Enforcement]], [[Accountability]], [[Decision Rights]]
 
 - ### Content

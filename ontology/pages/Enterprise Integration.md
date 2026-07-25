@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
     }
   ],
   "relations": {

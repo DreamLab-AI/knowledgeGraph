@@ -19,6 +19,10 @@ public:: true
     {
       "@id": "urn:ngm:class:model-deployment",
       "label": "Model Deployment"
+    },
+    {
+      "@id": "urn:ngm:class:edge-computing",
+      "label": "Edge Computing"
     }
   ],
   "relations": {

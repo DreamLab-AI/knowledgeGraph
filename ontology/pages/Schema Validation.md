@@ -19,12 +19,16 @@ public:: true
     {
       "@id": "urn:ngm:class:data-validation",
       "label": "Data Validation"
+    },
+    {
+      "@id": "urn:ngm:class:json-data-interchange-format-schema",
+      "label": "JSON Schema"
     }
   ],
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -38,7 +42,7 @@ public:: true
         "label": "Data Schema"
       },
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       }
     ],
@@ -50,7 +54,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -86,7 +90,7 @@ public:: true
     ],
     "standardizedBy": [
       {
-        "@id": "urn:ngm:class:json-schema",
+        "@id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       }
     ],

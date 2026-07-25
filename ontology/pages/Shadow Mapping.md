@@ -24,38 +24,98 @@ public:: true
   "definition": "Shadow Mapping is a real-time computer graphics technique for rendering shadows by rendering the scene from the perspective of each light source into a depth texture (the shadow map), then comparing scene-point depth values against that map during the main render pass to determine visibility. It is the dominant method for dynamic shadows in games and real-time rendering engines due to its GPU efficiency and flexibility. Artefacts such as shadow acne and perspective aliasing are mitigated through techniques like bias adjustment, percentage-closer filtering, and cascaded shadow maps. The technique is fundamental to photorealistic rendering in spatial computing and XR applications.",
   "domain": "spatial-computing",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:ray-tracing", "label": "Ray Tracing"},
-      {"@id": "urn:ngm:class:shadow-volumes", "label": "Shadow Volumes"}
+      {
+        "@id": "urn:ngm:class:ray-tracing",
+        "label": "Ray Tracing"
+      },
+      {
+        "@id": "urn:ngm:class:shadow-volumes",
+        "label": "Shadow Volumes"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rasterisation", "label": "Rasterisation"},
-      {"@id": "urn:ngm:class:depth-buffer", "label": "Depth Buffer"},
-      {"@id": "urn:ngm:class:global-illumination", "label": "Global Illumination"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "@id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:global-illumination",
+        "label": "Global Illumination"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:game-engine", "label": "Game Engine"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:game-engine",
+        "label": "Game Engine"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:depth-buffer", "label": "Depth Buffer"},
-      {"@id": "urn:ngm:class:shader", "label": "Shader"}
+      {
+        "@id": "urn:ngm:class:depth-buffer",
+        "label": "Depth Buffer"
+      },
+      {
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:gpu", "label": "Gpu"},
-      {"@id": "urn:ngm:class:texture-mapping", "label": "Texture Mapping"}
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "Gpu"
+      },
+      {
+        "@id": "urn:ngm:class:texture-mapping",
+        "label": "Texture Mapping"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:photorealistic-rendering", "label": "Photorealistic Rendering"},
-      {"@id": "urn:ngm:class:dynamic-lighting", "label": "Dynamic Lighting"}
+      {
+        "@id": "urn:ngm:class:photorealistic-rendering",
+        "label": "Photorealistic Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-lighting",
+        "label": "Dynamic Lighting"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:rasterisation", "label": "Rasterisation"},
-      {"@id": "urn:ngm:class:graphics-pipeline", "label": "Graphics Pipeline"}
+      {
+        "@id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "@id": "urn:ngm:class:graphics-pipeline",
+        "label": "Graphics Pipeline"
+      }
     ]
   },
   "sameAs": [],

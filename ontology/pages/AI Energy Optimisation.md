@@ -174,10 +174,16 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "growing",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:artificial-intelligence",
-    "label": "Artificial Intelligence"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

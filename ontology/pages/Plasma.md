@@ -8,37 +8,106 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:plasma",
-  "@type":"Class",
-  "label":"Plasma",
-  "definition":"Plasma is a blockchain scaling framework that builds hierarchical chains of child ledgers anchored to a root chain, processing transactions off the main chain while periodically committing compact state commitments to it. Users retain the ability to exit a child chain back to the root chain by submitting fraud proofs, which preserves the security guarantees of the underlying ledger even if a child chain operator misbehaves. It was an early Layer 2 design that influenced later optimistic and rollup-based scaling approaches.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
-  "relations":{
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:rollup","label":"Rollup"},
-      {"@id":"urn:ngm:class:sidechain","label":"Sidechain"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:plasma",
+  "@type": "Class",
+  "label": "Plasma",
+  "definition": "Plasma is a blockchain scaling framework that builds hierarchical chains of child ledgers anchored to a root chain, processing transactions off the main chain while periodically committing compact state commitments to it. Users retain the ability to exit a child chain back to the root chain by submitting fraud proofs, which preserves the security guarantees of the underlying ledger even if a child chain operator misbehaves. It was an early Layer 2 design that influenced later optimistic and rollup-based scaling approaches.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:layer-2-protocol",
+      "label": "Layer-2 Protocol"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      }
     ],
-    "dependsOn":[{"@id":"urn:ngm:class:ethereum","label":"Ethereum"}],
-    "enables":[{"@id":"urn:ngm:class:scalability","label":"Scalability"}],
-    "supports":[{"@id":"urn:ngm:class:scalability","label":"Scalability"}],
-    "uses":[{"@id":"urn:ngm:class:consensus","label":"Consensus"}],
-    "requires":[{"@id":"urn:ngm:class:consensus","label":"Consensus"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:ethereum","label":"Ethereum"}],
-    "implements":[{"@id":"urn:ngm:class:decentralization","label":"Decentralization"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:blockchain","label":"Blockchain"},
-      {"@id":"urn:ngm:class:rollup","label":"Rollup"},
-      {"@id":"urn:ngm:class:sidechain","label":"Sidechain"},
-      {"@id":"urn:ngm:class:scalability","label":"Scalability"},
-      {"@id":"urn:ngm:class:ethereum","label":"Ethereum"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:decentralization",
+        "label": "Decentralization"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

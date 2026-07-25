@@ -17,9 +17,9 @@ public:: true
   "maturity":"established",
   "subClassOf":[{"@id":"urn:ngm:class:sustainability-reporting","label":"Sustainability Reporting"}],
   "relations":{
-    "requires":[{"@id":"urn:ngm:class:stakeholder-engagement","label":"Stakeholder Engagement"},{"@id":"urn:ngm:class:disclosure","label":"Disclosure"}],
+    "requires":[{"@id":"urn:ngm:class:stakeholder-engagement","label":"Stakeholder Engagement"},{"@id":"urn:ngm:class:disclosure-requirements","label":"Disclosure Requirements"}],
     "hasPart":[{"@id":"urn:ngm:class:double-materiality","label":"Double Materiality"},{"@id":"urn:ngm:class:financial-materiality","label":"Financial Materiality"}],
-    "enables":[{"@id":"urn:ngm:class:esg-reporting","label":"ESG Reporting"},{"@id":"urn:ngm:class:disclosure","label":"Disclosure"}],
+    "enables":[{"@id":"urn:ngm:class:esg-reporting","label":"ESG Reporting"},{"@id":"urn:ngm:class:disclosure-requirements","label":"Disclosure Requirements"}],
     "supports":[{"@id":"urn:ngm:class:corporate-governance","label":"Corporate Governance"},{"@id":"urn:ngm:class:risk-management","label":"Risk Management"}],
     "uses":[{"@id":"urn:ngm:class:climate-scenario-analysis","label":"Climate Scenario Analysis"}],
     "standardizedBy":[{"@id":"urn:ngm:class:issb","label":"ISSB"},{"@id":"urn:ngm:class:tcfd","label":"TCFD"}],

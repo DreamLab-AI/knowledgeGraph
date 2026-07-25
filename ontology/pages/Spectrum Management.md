@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:radio-frequency-spectrum",
+      "label": "Radio Frequency Spectrum"
     }
   ],
   "relations": {

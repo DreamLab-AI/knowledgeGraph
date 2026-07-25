@@ -23,7 +23,7 @@ public:: true
   "definition": "Mobile robotics is the engineering and scientific discipline concerned with the design, construction, and programming of robots capable of autonomous locomotion through unstructured or semi-structured physical environments. It integrates mechanical locomotion systems (wheeled, tracked, legged, aerial, aquatic), onboard sensor suites, simultaneous localisation and mapping (SLAM) for spatial state estimation, motion planning for collision-free trajectory generation, and control systems for execution — all without continuous human tele-operation. The field is fundamentally interdisciplinary, drawing on computer science, control theory, mechanical engineering, and artificial intelligence, and underpins major commercial domains including warehouse automation, autonomous vehicles, agricultural robotics, and planetary exploration.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}, {"@id": "urn:ngm:class:robo-navigation-and-planning", "label": "Navigation and Planning"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},

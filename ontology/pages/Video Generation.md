@@ -85,8 +85,8 @@ public:: true
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:large-scale-training-data",
-        "label": "Large-Scale Training Data"
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [
@@ -233,7 +233,7 @@ public:: true
   - requires:: [[Diffusion Model]]
   - requires:: [[Text Encoder]]
   - requires:: [[GPU Compute]]
-  - requires:: [[Large-Scale Training Data]]
+  - requires:: [[Training Data]]
   - dependsOn:: [[Latent Diffusion]]
   - dependsOn:: [[Transformer Architecture]]
   - dependsOn:: [[Flow Matching]]

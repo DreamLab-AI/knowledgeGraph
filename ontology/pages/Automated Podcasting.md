@@ -344,8 +344,8 @@ public:: true
         "label": "Cloud Computing Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:neural-text-to-speech",
-        "label": "Neural Text-to-Speech"
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
       },
       {
         "@id": "urn:ngm:class:large-language-models",
@@ -623,7 +623,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Neural Text-to-Speech]]",
+      "raw": "[[Text-to-Speech]]",
       "resolved": "urn:visionflow:linked:neural-text-to-speech",
       "kind": "StubLink"
     },
@@ -849,7 +849,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Generative AI]], [[AI Audio]], [[Speech Synthesis]], [[Content Automation]], [[AI companions]], [[AI Video]]
   - has-part:: [[Text-to-Speech]], [[Voice Cloning]], [[Automated Transcription]], [[AI Audio Editing]], [[Show Notes Generation]], [[AI Script Generation]], [[Podcast Distribution Automation]], [[Speaker Diarisation]], [[Neural Audio Enhancement]]
-  - requires:: [[Large Language Models]], [[Neural Text-to-Speech]], [[Speech Recognition]], [[Audio Signal Processing]], [[Natural Language Processing]], [[Cloud Computing Infrastructure]]
+  - requires:: [[Large Language Models]], [[Text-to-Speech]], [[Speech Recognition]], [[Audio Signal Processing]], [[Natural Language Processing]], [[Cloud Computing Infrastructure]]
   - enables:: [[Scalable Audio Content Production]], [[Low-Cost Podcast Creation]], [[Personalised Audio Summaries]], [[Accessible Media]], [[Multilingual Podcasting]], [[Creator Economy]], [[Real-Time Content Conversion]]
   - implements:: [[Transformer-Based TTS]], [[Voice Cloning]], [[Automatic Speech Recognition]], [[Retrieval-Augmented Generation]], [[Neural Audio Enhancement]], [[Dynamic Ad Insertion]], [[Speaker Embedding]]
   - depends-on:: [[Generative AI]], [[Large Language Models]], [[Speech and Voice]], [[Audio Signal Processing]], [[Attention]], [[Transformer Architecture]]

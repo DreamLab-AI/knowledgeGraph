@@ -34,6 +34,10 @@ public:: true
     {
       "@id": "urn:ngm:class:transfer-learning",
       "label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

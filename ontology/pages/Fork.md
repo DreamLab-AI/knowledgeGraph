@@ -24,40 +24,94 @@ public:: true
   "definition": "A Fork in the context of blockchain and distributed systems is a divergence in the protocol rules or chain history that results in two or more distinct execution paths from a common ancestor state. Hard forks introduce backward-incompatible rule changes requiring all participants to upgrade, potentially creating a permanently divergent chain. Soft forks introduce backward-compatible tightening of rules. Forks can be planned governance events (protocol upgrades) or unintended consequences of network partitions or competing miner/validator behaviour.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"},
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:blockchain-data", "label": "Blockchain Data"},
-      {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain-data",
+        "label": "Blockchain Data"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:merge", "label": "Merge"},
-      {"@id": "urn:ngm:class:backward-compatibility", "label": "Backward Compatibility"}
+      {
+        "@id": "urn:ngm:class:merge",
+        "label": "Merge"
+      },
+      {
+        "@id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:hard-fork", "label": "Hard Fork"},
-      {"@id": "urn:ngm:class:soft-fork", "label": "Soft Fork"}
+      {
+        "@id": "urn:ngm:class:hard-fork",
+        "label": "Hard Fork"
+      },
+      {
+        "@id": "urn:ngm:class:soft-fork",
+        "label": "Soft Fork"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:social-consensus", "label": "Social Consensus"}
+      {
+        "@id": "urn:ngm:class:social-consensus",
+        "label": "Social Consensus"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:protocol-upgrade", "label": "Protocol Upgrade"},
-      {"@id": "urn:ngm:class:network-partition", "label": "Network Partition"}
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      },
+      {
+        "@id": "urn:ngm:class:network-partition",
+        "label": "Network Partition"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:peer-to-peer-network", "label": "Peer-to-Peer Network"}
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
     ],
     "impacts": [
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:tokenisation",
+        "label": "Tokenisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cryptographic-hash", "label": "Cryptographic Hash"}
+      {
+        "@id": "urn:ngm:class:cryptographic-hash",
+        "label": "Cryptographic Hash"
+      }
     ]
   },
   "quality": 0.62,

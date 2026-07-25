@@ -89,7 +89,7 @@ public:: true
   "@type": "Class",
   "label": "AI Investment",
   "definition": "AI Investment is the allocation of capital toward artificial-intelligence research, talent, compute infrastructure, startups, and data assets in pursuit of strategic or financial returns. It spans venture funding, corporate capital expenditure on data centres and chips, sovereign wealth funds, public research grants, and hyperscaler balance-sheet commitments. The scale and concentration of this capital is a primary driver of competitive dynamics among firms and nations, with global AI corporate investment reaching $581 billion in 2025 and Q1 2026 venture activity alone surpassing that figure. Investment categories include frontier-model lab funding, compute infrastructure build-out, application-layer enterprise AI, and sovereign compute programmes. Returns are gated by access to scarce inputs — advanced semiconductor capacity, high-bandwidth memory, and specialised research talent — creating oligopolistic supply-side dynamics that shape long-run market structure.",
-  "domain": "economics",
+  "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
     {"@id": "urn:ngm:class:economics", "label": "Economics"},

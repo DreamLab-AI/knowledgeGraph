@@ -62,6 +62,10 @@ public:: true
     {
       "@id": "urn:ngm:class:telepresence",
       "label": "Telepresence"
+    },
+    {
+      "@id": "urn:ngm:class:edge-computing",
+      "label": "Edge Computing"
     }
   ],
   "relations": {

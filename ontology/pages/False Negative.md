@@ -19,6 +19,10 @@ public:: true
     {
       "@id": "urn:ngm:class:model-evaluation",
       "label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:ngm:class:model-evaluation-results",
+      "label": "Model Evaluation Results"
     }
   ],
   "relations": {

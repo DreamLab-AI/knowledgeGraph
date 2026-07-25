@@ -14,7 +14,7 @@ public:: true
   "definition":"Belief propagation is a message-passing algorithm for performing inference on graphical models by iteratively exchanging local messages between nodes representing variables and the factors that relate them. On tree-structured graphs it computes exact marginal distributions; on graphs with cycles, loopy belief propagation provides an approximate inference scheme that often works well in practice. It is the basis of efficient decoding for modern error-correcting codes and of probabilistic reasoning over structured domains.",
   "domain":"infrastructure",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:graphical-model","label":"Graphical Model"}],
+  "subClassOf":[{"@id":"urn:ngm:class:graphical-model","label":"Graphical Model"},{"@id":"urn:ngm:class:probabilistic-inference","label":"Probabilistic Inference"}],
   "relations":{
     "uses":[
       {"@id":"urn:ngm:class:message-passing","label":"Message Passing"},

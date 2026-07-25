@@ -14,7 +14,7 @@ public:: true
   "definition":"A pre-trained model is a machine-learning model whose parameters have already been learned on a large, often general-purpose dataset, so that it can be reused as a starting point for downstream tasks. Rather than training from random initialisation, practitioners adapt the pre-trained weights through fine-tuning or use the model directly for inference, transferring learned representations to new problems. Pre-trained models underpin transfer learning and are the practical foundation of modern deep learning across language, vision and multimodal tasks.",
   "domain":"machine-learning",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:foundation-model","label":"Foundation Model"}],
+  "subClassOf":[{"@id":"urn:ngm:class:foundation-model","label":"Foundation Model"},{"@id":"urn:ngm:class:ai-model-architecture","label":"AI Model Architecture"}],
   "relations":{
     "dependsOn":[
       {"@id":"urn:ngm:class:model-training","label":"Model Training"},

@@ -89,10 +89,16 @@ public:: true
   "definition": "AR Technology encompasses the hardware, software, and algorithmic systems enabling real-time digital content overlay on physical environments, including spatial tracking, environmental understanding, rendering pipelines, and interaction modalities across mobile, wearable, and projection-based form factors.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "subClassOf": {
-    "@id": "urn:ngm:class:extended-reality",
-    "label": "Extended Reality"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "@id": "urn:ngm:class:augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
+    }
+  ],
   "relations": {
     "requires": [
       {

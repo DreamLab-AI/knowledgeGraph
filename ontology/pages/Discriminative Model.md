@@ -15,7 +15,7 @@ public:: true
   "definition":"A discriminative model is a class of machine learning model that directly learns the conditional probability of a target label given the observed input, rather than modelling how the data itself is generated. It focuses on the decision boundary that separates classes, which often yields strong predictive accuracy on classification and regression tasks. Discriminative models contrast with generative models, which learn the joint distribution of inputs and outputs.",
   "domain":"machine-learning",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"}],
+  "subClassOf":[{"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"},{"@id":"urn:ngm:class:ai-technique","label":"AI Technique"}],
   "relations":{
     "contrastsWith":[{"@id":"urn:ngm:class:generative-model","label":"Generative Model"}],
     "partOf":[{"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"},{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}],

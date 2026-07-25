@@ -22,7 +22,7 @@ public:: true
     ],
     "requires":[
       {"@id":"urn:ngm:class:certificate-authority","label":"Certificate Authority"},
-      {"@id":"urn:ngm:class:pki","label":"PKI"}
+      {"@id":"urn:ngm:class:public-key-infrastructure","label":"Public Key Infrastructure"}
     ],
     "enables":[
       {"@id":"urn:ngm:class:digital-identity","label":"Digital Identity"},
@@ -37,7 +37,7 @@ public:: true
     ],
     "uses":[
       {"@id":"urn:ngm:class:digital-signature","label":"Digital Signature"},
-      {"@id":"urn:ngm:class:pki","label":"PKI"}
+      {"@id":"urn:ngm:class:public-key-infrastructure","label":"Public Key Infrastructure"}
     ],
     "supports":[
       {"@id":"urn:ngm:class:identity-verification","label":"Identity Verification"},

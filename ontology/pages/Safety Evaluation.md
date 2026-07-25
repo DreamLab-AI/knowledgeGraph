@@ -23,17 +23,38 @@ public:: true
   "definition": "Safety evaluation is the systematic assessment of whether an AI system behaves acceptably under a defined threat and risk model, measuring propensities for harmful outputs, susceptibility to misuse, robustness under adversarial pressure, and the presence of dangerous capabilities. It combines automated benchmarks, red-teaming, and structured human review to produce evidence used in deployment decisions and governance reporting. Distinct from capability evaluation, safety evaluation asks not only what a model can do but how reliably it refrains from causing harm.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:red-teaming", "label": "Red Teaming"}
+      {
+        "@id": "urn:ngm:class:red-teaming",
+        "label": "Red Teaming"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:ai-alignment", "label": "AI Alignment"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:ai-alignment",
+        "label": "AI Alignment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"}
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      }
     ]
   },
   "quality": 0.8

@@ -665,8 +665,8 @@ alias:: ConsensusMechanism
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:economic-incentive",
-        "label": "Economic Incentive"
+        "@id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
       },
       {
         "@id": "urn:ngm:class:clock-synchronization",

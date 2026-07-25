@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:foundation-model",
       "label": "Foundation Model"
+    },
+    {
+      "@id": "urn:ngm:class:foundation-model-layer",
+      "label": "Foundation Model Layer"
     }
   ],
   "sameAs": [

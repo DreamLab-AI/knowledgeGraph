@@ -62,6 +62,10 @@ public:: true
     {
       "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:open-standard",
+      "label": "Open Standard"
     }
   ],
   "relations": {

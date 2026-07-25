@@ -59,8 +59,8 @@ public:: true
   "relations": {
     "partOf": [
       {
-        "@id": "urn:ngm:class:security-assessment",
-        "label": "Security Assessment"
+        "@id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
       },
       {
         "@id": "urn:ngm:class:red-teaming",
@@ -250,7 +250,7 @@ public:: true
   - **AI and ML System Testing** — emerging practice applying penetration testing methodology to [[AI Security]], including prompt injection, model extraction, and adversarial input attacks against [[Large Language Models]] and ML inference APIs. This bridges traditional penetration testing with [[AI Security]] concerns.
 
 - ### Relationships
-  - partOf:: [[Security Assessment]]
+  - partOf:: [[Security Audit]]
   - partOf:: [[Red Teaming]]
   - hasPart:: [[Reconnaissance]]
   - hasPart:: [[Vulnerability Scanning]]

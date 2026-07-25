@@ -105,8 +105,8 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:aes",
-        "label": "AES"
+        "@id": "urn:ngm:class:aes-encryption",
+        "label": "AES Encryption"
       },
       {
         "@id": "urn:ngm:class:public-key-infrastructure",

@@ -130,8 +130,8 @@ public:: true
         "label": "Time-Series Data"
       },
       {
-        "@id": "urn:ngm:class:reproducible-experiments",
-        "label": "Reproducible Experiments"
+        "@id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
       }
     ],
     "standardizedBy": [

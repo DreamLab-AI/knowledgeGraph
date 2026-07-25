@@ -57,6 +57,10 @@ public:: true
     {
       "@id": "urn:ngm:class:augmented-reality",
       "label": "Augmented Reality"
+    },
+    {
+      "@id": "urn:ngm:class:environmental-mapping",
+      "label": "Environmental Mapping"
     }
   ],
   "relations": {

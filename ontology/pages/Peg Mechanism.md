@@ -52,8 +52,8 @@ public:: true
         "label": "Collateral"
       },
       {
-        "@id": "urn:ngm:class:token-minting",
-        "label": "Token Minting"
+        "@id": "urn:ngm:class:minting",
+        "label": "Minting"
       }
     ],
     "enables": [

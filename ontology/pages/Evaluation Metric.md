@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:performance-metrics",
       "label": "Performance Metrics"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "sameAs": [

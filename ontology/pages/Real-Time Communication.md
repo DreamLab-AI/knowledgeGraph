@@ -170,7 +170,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:websocket",
+        "@id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       },
       {

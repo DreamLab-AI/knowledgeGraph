@@ -107,8 +107,8 @@ public:: true
         "label": "On-Device Privacy"
       },
       {
-        "@id": "urn:ngm:class:offline-ai",
-        "label": "Offline AI"
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
       }
     ],
     "dependsOn": [
@@ -249,7 +249,7 @@ public:: true
   - is-subclass-of:: [[Edge AI]], [[Machine Learning Inference]], [[Distributed Computing]]
   - has-part:: [[Model Quantisation]], [[Model Pruning]], [[Knowledge Distillation]], [[Neural Architecture Search]], [[Inference Engine]], [[Hardware Accelerator]], [[Model Compression Pipeline]], [[Quantisation-Aware Training]]
   - requires:: [[Inference Engine]], [[Neural Processing Unit]], [[Embedded Systems]], [[Model Compression]], [[Hardware Acceleration]], [[TensorFlow Lite]], [[ONNX Runtime]]
-  - enables:: [[Real-Time AI Inference]], [[On-Device Privacy]], [[Offline AI]], [[Federated Learning]], [[Autonomous Vehicles]], [[Smart Manufacturing]], [[Spatial Computing]], [[On-Device LLM]], [[Healthcare AI]], [[Industrial IoT]]
+  - enables:: [[Real-Time AI Inference]], [[On-Device Privacy]], [[Edge AI]], [[Federated Learning]], [[Autonomous Vehicles]], [[Smart Manufacturing]], [[Spatial Computing]], [[On-Device LLM]], [[Healthcare AI]], [[Industrial IoT]]
   - implements:: [[Machine Learning Inference]], [[Deep Learning]], [[Forward Pass Computation]]
   - depends-on:: [[Embedded Systems]], [[Neural Processing Unit]], [[Edge Computing]], [[Deep Learning]], [[Internet of Things]], [[Hardware Acceleration]]
   - supports:: [[TinyML]], [[IoT Device]], [[Smart City]], [[Digital Twin]], [[Augmented Reality]], [[Virtual Reality]], [[Computer Vision]], [[Speech Recognition]]

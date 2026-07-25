@@ -26,6 +26,10 @@ public:: true
     {
       "@id": "urn:ngm:class:inference-serving",
       "label": "Inference Serving"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)"
     }
   ],
   "relations": {

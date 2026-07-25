@@ -62,6 +62,10 @@ public:: true
     {
       "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

@@ -14,61 +14,168 @@ public:: true
   "domain": "machine-learning",
   "maturity": "mature",
   "subClassOf": [
-    { "@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning" },
-    { "@id": "urn:ngm:class:machine-learning", "label": "Machine Learning" }
+    {
+      "@id": "urn:ngm:class:unsupervised-learning",
+      "label": "Unsupervised Learning"
+    },
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
   ],
   "relations": {
     "partOf": [
-      { "@id": "urn:ngm:class:unsupervised-learning", "label": "Unsupervised Learning" }
+      {
+        "@id": "urn:ngm:class:unsupervised-learning",
+        "label": "Unsupervised Learning"
+      }
     ],
     "hasPart": [
-      { "@id": "urn:ngm:class:distance-metric", "label": "Distance Metric" },
-      { "@id": "urn:ngm:class:hierarchical-clustering", "label": "Hierarchical Clustering" },
-      { "@id": "urn:ngm:class:k-means", "label": "K-Means" },
-      { "@id": "urn:ngm:class:dbscan", "label": "DBSCAN" },
-      { "@id": "urn:ngm:class:spectral-clustering", "label": "Spectral Clustering" },
-      { "@id": "urn:ngm:class:gaussian-mixture-model", "label": "Gaussian Mixture Model" }
+      {
+        "@id": "urn:ngm:class:distance-metric",
+        "label": "Distance Metric"
+      },
+      {
+        "@id": "urn:ngm:class:hierarchical-clustering",
+        "label": "Hierarchical Clustering"
+      },
+      {
+        "@id": "urn:ngm:class:k-means",
+        "label": "K-Means"
+      },
+      {
+        "@id": "urn:ngm:class:dbscan",
+        "label": "DBSCAN"
+      },
+      {
+        "@id": "urn:ngm:class:spectral-clustering",
+        "label": "Spectral Clustering"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-mixture-model",
+        "label": "Gaussian Mixture Model"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:distance-metric", "label": "Distance Metric" },
-      { "@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering" },
-      { "@id": "urn:ngm:class:embedding", "label": "Embedding" }
+      {
+        "@id": "urn:ngm:class:distance-metric",
+        "label": "Distance Metric"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:embedding", "label": "Embedding" },
-      { "@id": "urn:ngm:class:embedding-space", "label": "Embedding Space" },
-      { "@id": "urn:ngm:class:gaussian-mixture-model", "label": "Gaussian Mixture Model" },
-      { "@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction" },
-      { "@id": "urn:ngm:class:neural-network", "label": "Neural Network" }
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:embedding-space",
+        "label": "Embedding Space"
+      },
+      {
+        "@id": "urn:ngm:class:gaussian-mixture-model",
+        "label": "Gaussian Mixture Model"
+      },
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection" },
-      { "@id": "urn:ngm:class:community-detection", "label": "Community Detection" },
-      { "@id": "urn:ngm:class:customer-segmentation", "label": "Customer Segmentation" },
-      { "@id": "urn:ngm:class:exploratory-data-analysis", "label": "Exploratory Data Analysis" },
-      { "@id": "urn:ngm:class:topic-modelling", "label": "Topic Modelling" }
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:community-detection",
+        "label": "Community Detection"
+      },
+      {
+        "@id": "urn:ngm:class:customer-segmentation",
+        "label": "Customer Segmentation"
+      },
+      {
+        "@id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:topic-modelling",
+        "label": "Topic Modelling"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:dimensionality-reduction", "label": "Dimensionality Reduction" },
-      { "@id": "urn:ngm:class:predictive-analytics", "label": "Predictive Analytics" },
-      { "@id": "urn:ngm:class:representation-learning", "label": "Representation Learning" }
+      {
+        "@id": "urn:ngm:class:dimensionality-reduction",
+        "label": "Dimensionality Reduction"
+      },
+      {
+        "@id": "urn:ngm:class:predictive-analytics",
+        "label": "Predictive Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:classification", "label": "Classification" },
-      { "@id": "urn:ngm:class:regression", "label": "Regression" }
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "@id": "urn:ngm:class:regression",
+        "label": "Regression"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:graph-analytics", "label": "Graph Analytics" },
-      { "@id": "urn:ngm:class:data-mining", "label": "Data Mining" },
-      { "@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing" },
-      { "@id": "urn:ngm:class:bioinformatics", "label": "Bioinformatics" },
-      { "@id": "urn:ngm:class:self-supervised-learning", "label": "Self-Supervised Learning" },
-      { "@id": "urn:ngm:class:contrastive-learning", "label": "Contrastive Learning" }
+      {
+        "@id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
+      },
+      {
+        "@id": "urn:ngm:class:data-mining",
+        "label": "Data Mining"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:bioinformatics",
+        "label": "Bioinformatics"
+      },
+      {
+        "@id": "urn:ngm:class:self-supervised-learning",
+        "label": "Self-Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:contrastive-learning",
+        "label": "Contrastive Learning"
+      }
     ]
   },
   "sameAs": [],
-  "quality": 0.90,
-  "provenance": { "attributedTo": "did:nostr:enrichment-swarm", "generatedAt": "2026-06-21T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "quality": 0.9,
+  "provenance": {
+    "attributedTo": "did:nostr:enrichment-swarm",
+    "generatedAt": "2026-06-21T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 ```json-ld

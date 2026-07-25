@@ -8,28 +8,118 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:request-response-pattern",
-  "@type":"Class",
-  "label":"Request-Response Pattern",
-  "definition":"The request-response pattern is a synchronous message-exchange model in which a client sends a request to a server and blocks, or awaits, until a corresponding response is returned. It establishes a one-to-one, correlated interaction where each request expects exactly one reply, forming the basis of most client-server communication. The pattern contrasts with asynchronous, event-driven, and publish-subscribe styles where senders do not wait for an immediate reply.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}],
-  "relations":{
-    "implements":[{"@id":"urn:ngm:class:http","label":"HTTP"},{"@id":"urn:ngm:class:remote-procedure-call","label":"Remote Procedure Call"}],
-    "uses":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"},{"@id":"urn:ngm:class:rest-api","label":"REST API"}],
-    "enables":[{"@id":"urn:ngm:class:api","label":"API"},{"@id":"urn:ngm:class:microservices","label":"Microservices"}],
-    "requires":[{"@id":"urn:ngm:class:network-protocol","label":"Network Protocol"}],
-    "supports":[{"@id":"urn:ngm:class:rest","label":"REST"},{"@id":"urn:ngm:class:service-mesh","label":"Service Mesh"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:event-driven-architecture","label":"Event-Driven Architecture"},{"@id":"urn:ngm:class:message-queue","label":"Message Queue"},{"@id":"urn:ngm:class:webhook","label":"Webhook"}],
-    "relatedTo":[{"@id":"urn:ngm:class:latency","label":"Latency"},{"@id":"urn:ngm:class:idempotency","label":"Idempotency"},{"@id":"urn:ngm:class:http-protocol","label":"HTTP Protocol"}],
-    "dependsOn":[{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:microservices-architecture","label":"Microservices Architecture"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:request-response-pattern",
+  "@type": "Class",
+  "label": "Request-Response Pattern",
+  "definition": "The request-response pattern is a synchronous message-exchange model in which a client sends a request to a server and blocks, or awaits, until a corresponding response is returned. It establishes a one-to-one, correlated interaction where each request expects exactly one reply, forming the basis of most client-server communication. The pattern contrasts with asynchronous, event-driven, and publish-subscribe styles where senders do not wait for an immediate reply.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
+  "relations": {
+    "implements": [
+      {
+        "@id": "urn:ngm:class:http",
+        "label": "HTTP"
+      },
+      {
+        "@id": "urn:ngm:class:remote-procedure-call",
+        "label": "Remote Procedure Call"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:rest-api",
+        "label": "REST API"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:api",
+        "label": "API"
+      },
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:network-protocol",
+        "label": "Network Protocol"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:rest",
+        "label": "REST"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:event-driven-architecture",
+        "label": "Event-Driven Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:message-queue",
+        "label": "Message Queue"
+      },
+      {
+        "@id": "urn:ngm:class:webhook",
+        "label": "Webhook"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:idempotency",
+        "label": "Idempotency"
+      },
+      {
+        "@id": "urn:ngm:class:http-protocol",
+        "label": "HTTP Protocol"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:microservices-architecture",
+        "label": "Microservices Architecture"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

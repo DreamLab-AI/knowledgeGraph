@@ -29,12 +29,7 @@ public:: true
     }
   ],
   "relations": {
-    "enables": [
-      {
-        "@id": "urn:ngm:class:onboarding",
-        "label": "Onboarding"
-      }
-    ],
+    "enables": [],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:kanban-board",

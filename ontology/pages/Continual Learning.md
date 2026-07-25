@@ -83,6 +83,10 @@ public:: true
     {
       "@id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "sameAs": [
@@ -112,16 +116,16 @@ public:: true
       {"@id": "urn:ngm:class:online-learning", "label": "Online Learning"},
       {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
       {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:neural-networks", "label": "Neural Networks"}
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
       {"@id": "urn:ngm:class:few-shot-learning", "label": "Few-Shot Learning"},
-      {"@id": "urn:ngm:class:autonomous-agents", "label": "Autonomous Agents"},
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
       {"@id": "urn:ngm:class:machine-unlearning", "label": "Machine Unlearning"}
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:neural-networks", "label": "Neural Networks"},
+      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
       {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
       {"@id": "urn:ngm:class:loss-function", "label": "Loss Function"},
       {"@id": "urn:ngm:class:representation-learning", "label": "Representation Learning"}

@@ -15,7 +15,7 @@ public:: true
   "definition":"Biomechanics is the study of the mechanical principles governing biological systems, analysing forces, motion and structure in living organisms. In robotics it informs the design of actuators, limbs and gaits that emulate or assist biological movement, bridging physiology and mechanical engineering. It supplies the models of kinematics and dynamics used to make legged, humanoid and wearable machines move efficiently and safely.",
   "domain":"robotics",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:robotics","label":"Robotics"}],
+  "subClassOf":[{"@id":"urn:ngm:class:robotics","label":"Robotics"},{"@id":"urn:ngm:class:robo-actuation-and-control","label":"Actuation and Control"}],
   "relations":{
     "informs":[
       {"@id":"urn:ngm:class:legged-locomotion","label":"Legged Locomotion"},

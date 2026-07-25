@@ -7,50 +7,108 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:throughput",
-  "@type":"Class",
-  "label":"Throughput",
-  "definition":"Throughput is the rate at which a system completes useful work over a unit of time, such as requests served per second, tokens generated per second or bytes transferred per second. It measures sustained productive capacity rather than the time to complete a single operation. In machine learning serving it captures how many inferences or training samples a system can process under load. Maximising throughput typically involves batching, parallelism and resource utilisation, often trading off against per-request latency.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:performance-metrics","label":"Performance Metrics"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:request-rate","label":"Request Rate"},
-      {"@id":"urn:ngm:class:batch-size","label":"Batch Size"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:throughput",
+  "@type": "Class",
+  "label": "Throughput",
+  "definition": "Throughput is the rate at which a system completes useful work over a unit of time, such as requests served per second, tokens generated per second or bytes transferred per second. It measures sustained productive capacity rather than the time to complete a single operation. In machine learning serving it captures how many inferences or training samples a system can process under load. Maximising throughput typically involves batching, parallelism and resource utilisation, often trading off against per-request latency.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:performance-metrics",
+      "label": "Performance Metrics"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:request-rate",
+        "label": "Request Rate"
+      },
+      {
+        "@id": "urn:ngm:class:batch-size",
+        "label": "Batch Size"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:latency","label":"Latency"},
-      {"@id":"urn:ngm:class:response-time","label":"Response Time"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      },
+      {
+        "@id": "urn:ngm:class:response-time",
+        "label": "Response Time"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:parallel-processing","label":"Parallel Processing"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:parallel-processing",
+        "label": "Parallel Processing"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:scalability","label":"Scalability"},
-      {"@id":"urn:ngm:class:high-availability","label":"High Availability"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:batching","label":"Batching"},
-      {"@id":"urn:ngm:class:load-balancing","label":"Load Balancing"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:batching",
+        "label": "Batching"
+      },
+      {
+        "@id": "urn:ngm:class:load-balancing",
+        "label": "Load Balancing"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:hardware-acceleration","label":"Hardware Acceleration"},
-      {"@id":"urn:ngm:class:resource-utilization","label":"Resource Utilization"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:resource-utilization",
+        "label": "Resource Utilization"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:model-serving","label":"Model Serving"},
-      {"@id":"urn:ngm:class:performance-optimization","label":"Performance Optimization"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:bandwidth","label":"Bandwidth"},
-      {"@id":"urn:ngm:class:benchmarking","label":"Benchmarking"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:bandwidth",
+        "label": "Bandwidth"
+      },
+      {
+        "@id": "urn:ngm:class:benchmarking",
+        "label": "Benchmarking"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

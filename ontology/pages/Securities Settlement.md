@@ -46,8 +46,8 @@ public:: true
         "label": "Central Counterparty Clearing"
       },
       {
-        "@id": "urn:ngm:class:custodian-bank",
-        "label": "Custodian Bank"
+        "@id": "urn:ngm:class:custodian",
+        "label": "Custodian"
       }
     ],
     "dependsOn": [

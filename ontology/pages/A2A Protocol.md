@@ -103,10 +103,10 @@ public:: true
     ],
     "requires": [
       {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"},
-      {"@id": "urn:ngm:class:json-rpc-2-0", "label": "JSON-RPC 2.0"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0", "label": "JSON-RPC 2.0"},
       {"@id": "urn:ngm:class:server-sent-events", "label": "Server-Sent Events"},
       {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration"},

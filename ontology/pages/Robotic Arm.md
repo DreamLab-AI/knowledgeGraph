@@ -36,7 +36,7 @@ public:: true
       {"@id":"urn:ngm:class:degrees-of-freedom","label":"Degrees of Freedom"}
     ],
     "enables":[
-      {"@id":"urn:ngm:class:grasping","label":"Grasping"},
+      {"@id":"urn:ngm:class:robotic-grasping","label":"Robotic Grasping"},
       {"@id":"urn:ngm:class:pick-and-place","label":"Pick and Place"}
     ],
     "supports":[

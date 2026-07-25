@@ -80,8 +80,8 @@ public:: true
         "label": "Rough Consensus"
       },
       {
-        "@id": "urn:ngm:class:voting",
-        "label": "Voting"
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
       }
     ],
     "implements": [
@@ -108,8 +108,8 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:voting",
-        "label": "Voting"
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
       }
     ]
   },

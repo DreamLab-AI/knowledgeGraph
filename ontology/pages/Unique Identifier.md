@@ -65,8 +65,8 @@ public:: true
         "label": "Traceability"
       },
       {
-        "@id": "urn:ngm:class:tracking",
-        "label": "Tracking"
+        "@id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
       },
       {
         "@id": "urn:ngm:class:supply-chain-provenance",

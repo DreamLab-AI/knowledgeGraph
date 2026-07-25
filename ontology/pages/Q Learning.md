@@ -8,28 +8,102 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:q-learning",
-  "@type":"Class",
-  "label":"Q Learning",
-  "definition":"Q-learning is a model-free, off-policy reinforcement learning algorithm that learns the value of taking a given action in a given state by iteratively updating an action-value (Q) function towards a bootstrapped Bellman target. Because it learns the optimal action-value function regardless of the policy being followed, it converges to optimal behaviour without requiring a model of the environment's dynamics. It is a foundational algorithm extended by deep Q-networks for high-dimensional problems.",
-  "domain":"machine-learning",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:reinforcement-learning","label":"Reinforcement Learning"}],
-  "relations":{
-    "relatedTo":[{"@id":"urn:ngm:class:reinforcement-learning","label":"Reinforcement Learning"},{"@id":"urn:ngm:class:value-function","label":"Value Function"},{"@id":"urn:ngm:class:agent","label":"Agent"},{"@id":"urn:ngm:class:dynamic-programming","label":"Dynamic Programming"}],
-    "implements":[{"@id":"urn:ngm:class:bellman-equation","label":"Bellman Equation"}],
-    "hasPart":[{"@id":"urn:ngm:class:value-function","label":"Value Function"}],
-    "uses":[{"@id":"urn:ngm:class:reward-function","label":"Reward Function"},{"@id":"urn:ngm:class:neural-network","label":"Neural Network"}],
-    "partOf":[{"@id":"urn:ngm:class:reinforcement-learning","label":"Reinforcement Learning"}],
-    "dependsOn":[{"@id":"urn:ngm:class:markov-decision-process","label":"Markov Decision Process"}],
-    "enables":[{"@id":"urn:ngm:class:deep-reinforcement-learning","label":"Deep Reinforcement Learning"}],
-    "supports":[{"@id":"urn:ngm:class:policy","label":"Policy"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:deep-reinforcement-learning","label":"Deep Reinforcement Learning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:q-learning",
+  "@type": "Class",
+  "label": "Q Learning",
+  "definition": "Q-learning is a model-free, off-policy reinforcement learning algorithm that learns the value of taking a given action in a given state by iteratively updating an action-value (Q) function towards a bootstrapped Bellman target. Because it learns the optimal action-value function regardless of the policy being followed, it converges to optimal behaviour without requiring a model of the environment's dynamics. It is a foundational algorithm extended by deep Q-networks for high-dimensional problems.",
+  "domain": "machine-learning",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:ngm:class:reinforcement-learning-algorithm",
+      "label": "Reinforcement Learning Algorithm"
+    }
+  ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      },
+      {
+        "@id": "urn:ngm:class:agent",
+        "label": "Agent"
+      },
+      {
+        "@id": "urn:ngm:class:dynamic-programming",
+        "label": "Dynamic Programming"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bellman-equation",
+        "label": "Bellman Equation"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:value-function",
+        "label": "Value Function"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:reward-function",
+        "label": "Reward Function"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:policy",
+        "label": "Policy"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:deep-reinforcement-learning",
+        "label": "Deep Reinforcement Learning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

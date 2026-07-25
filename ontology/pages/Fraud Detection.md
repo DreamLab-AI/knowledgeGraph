@@ -34,6 +34,10 @@ public:: true
     {
       "@id": "urn:ngm:class:anomaly-detection",
       "label": "Anomaly Detection"
+    },
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "relations": {

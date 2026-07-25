@@ -8,49 +8,104 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:connectionism",
-  "@type":"Class",
-  "label":"Connectionism",
-  "definition":"Connectionism is an approach in cognitive science and artificial intelligence that models mental and computational phenomena as emergent from networks of simple, densely interconnected units whose collective activity, governed by weighted connections, gives rise to behaviour. It treats knowledge as distributed across connection strengths rather than stored as explicit symbols, and learning as the adjustment of those weights through experience. The paradigm provides the theoretical foundation for artificial neural networks and deep learning.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:cognitive-science","label":"Cognitive Science"}],
-  "relations":{
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:symbolic-ai","label":"Symbolic AI"},
-      {"@id":"urn:ngm:class:symbolic-reasoning","label":"Symbolic Reasoning"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:connectionism",
+  "@type": "Class",
+  "label": "Connectionism",
+  "definition": "Connectionism is an approach in cognitive science and artificial intelligence that models mental and computational phenomena as emergent from networks of simple, densely interconnected units whose collective activity, governed by weighted connections, gives rise to behaviour. It treats knowledge as distributed across connection strengths rather than stored as explicit symbols, and learning as the adjustment of those weights through experience. The paradigm provides the theoretical foundation for artificial neural networks and deep learning.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:symbolic-ai",
+        "label": "Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-reasoning",
+        "label": "Symbolic Reasoning"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:neural-network","label":"Neural Network"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"},
-      {"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"},
-      {"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:neural-network","label":"Neural Network"},
-      {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"},
-      {"@id":"urn:ngm:class:artificial-general-intelligence","label":"Artificial General Intelligence"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:artificial-general-intelligence",
+        "label": "Artificial General Intelligence"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:cognitive-science","label":"Cognitive Science"},
-      {"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:neural-network","label":"Neural Network"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

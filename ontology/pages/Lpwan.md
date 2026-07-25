@@ -15,37 +15,94 @@ public:: true
   "definition": "Low-Power Wide-Area Network (LPWAN) is a class of wireless communication technologies designed to transmit small amounts of data over long distances at very low power consumption, enabling battery-operated IoT devices to operate for years on a single charge. LPWAN technologies trade high data rates for extended range and deep indoor penetration, covering areas from a few kilometres to tens of kilometres per base station. Major LPWAN variants include LoRaWAN, Sigfox, NB-IoT, and LTE-M, each suited to different deployment and regulatory environments.",
   "domain": "infrastructure",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:wireless-communication",
+      "label": "Wireless Communication"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:zigbee", "label": "Zigbee"},
-      {"@id": "urn:ngm:class:z-wave", "label": "Z Wave"},
-      {"@id": "urn:ngm:class:wireless-protocol", "label": "Wireless Protocol"},
-      {"@id": "urn:ngm:class:mesh-networking", "label": "Mesh Networking"}
+      {
+        "@id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "@id": "urn:ngm:class:z-wave",
+        "label": "Z Wave"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-protocol",
+        "label": "Wireless Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:mesh-networking",
+        "label": "Mesh Networking"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:radio-frequency", "label": "Radio Frequency"},
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"}
+      {
+        "@id": "urn:ngm:class:radio-frequency",
+        "label": "Radio Frequency"
+      },
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:iot-device", "label": "IoT Device"},
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:smart-agriculture", "label": "Smart Agriculture"},
-      {"@id": "urn:ngm:class:asset-tracking", "label": "Asset Tracking"}
+      {
+        "@id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:smart-agriculture",
+        "label": "Smart Agriculture"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:wifi", "label": "Wi-Fi"},
-      {"@id": "urn:ngm:class:bluetooth-low-energy", "label": "Bluetooth Low Energy"}
+      {
+        "@id": "urn:ngm:class:wifi",
+        "label": "Wi-Fi"
+      },
+      {
+        "@id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:lorawan", "label": "LoRaWAN"}
+      {
+        "@id": "urn:ngm:class:lorawan",
+        "label": "LoRaWAN"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"}
+      {
+        "@id": "urn:ngm:class:network-infrastructure",
+        "label": "Network Infrastructure"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:sensor-network", "label": "Sensor Network"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:sensor-network",
+        "label": "Sensor Network"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ]
   },
   "quality": 0.62,

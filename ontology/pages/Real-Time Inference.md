@@ -15,7 +15,7 @@ public:: true
   "definition":"Real-time inference is the execution of a trained machine-learning model to produce predictions within strict, low-latency time bounds suitable for interactive or streaming applications. It demands optimised serving infrastructure, efficient model formats, and often hardware acceleration to meet sub-second or millisecond response targets. Real-time inference enables responsive AI features such as recommendations, fraud scoring, and perception in autonomous systems.",
   "domain":"machine-learning",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"}],
+  "subClassOf":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"},{"@id":"urn:ngm:class:model-deployment","label":"Model Deployment"}],
   "relations":{
     "hasPart":[{"@id":"urn:ngm:class:inference-engine","label":"Inference Engine"}],
     "partOf":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"}],

@@ -8,27 +8,96 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:shared-workspace",
-  "@type":"Class",
-  "label":"Shared Workspace",
-  "definition":"A shared workspace is a common digital environment in which multiple people can view, edit and organise shared artefacts together, whether simultaneously or over time. It provides a persistent space holding documents, boards, tasks or models alongside cues about who is present and what they are doing. Shared workspaces are a core construct of collaborative and groupware systems, turning individual tools into venues for coordinated teamwork.",
-  "domain":"distributed-collaboration",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:collaboration","label":"Collaboration"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:presence","label":"Presence"},{"@id":"urn:ngm:class:awareness","label":"Awareness"}],
-    "requires":[{"@id":"urn:ngm:class:synchronisation","label":"Synchronisation"}],
-    "enables":[{"@id":"urn:ngm:class:remote-collaboration","label":"Remote Collaboration"},{"@id":"urn:ngm:class:remote-work","label":"Remote Work"}],
-    "uses":[{"@id":"urn:ngm:class:operational-transformation","label":"Operational Transformation"},{"@id":"urn:ngm:class:crdt","label":"CRDT"}],
-    "supports":[{"@id":"urn:ngm:class:version-control","label":"Version Control"}],
-    "partOf":[{"@id":"urn:ngm:class:distributed-collaboration","label":"Distributed Collaboration"}],
-    "dependsOn":[{"@id":"urn:ngm:class:synchronisation","label":"Synchronisation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:collaboration","label":"Collaboration"},{"@id":"urn:ngm:class:human-computer-interaction","label":"Human-Computer Interaction"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:shared-workspace",
+  "@type": "Class",
+  "label": "Shared Workspace",
+  "definition": "A shared workspace is a common digital environment in which multiple people can view, edit and organise shared artefacts together, whether simultaneously or over time. It provides a persistent space holding documents, boards, tasks or models alongside cues about who is present and what they are doing. Shared workspaces are a core construct of collaborative and groupware systems, turning individual tools into venues for coordinated teamwork.",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:collaboration",
+      "label": "Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      },
+      {
+        "@id": "urn:ngm:class:awareness",
+        "label": "Awareness"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      },
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -136,8 +136,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:optics",
-        "label": "Optics"
+        "@id": "urn:ngm:class:optical-systems",
+        "label": "Optical Systems"
       }
     ],
     "enables": [

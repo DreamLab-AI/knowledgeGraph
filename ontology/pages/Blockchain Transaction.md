@@ -53,6 +53,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)"
     }
   ],
   "relations": {

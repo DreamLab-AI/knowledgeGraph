@@ -58,6 +58,10 @@ class ValidationReport:
     def warnings(self):
         return [i for i in self.issues if i.severity == "warning"]
 
+    @property
+    def infos(self):
+        return [i for i in self.issues if i.severity == "info"]
+
     def summary(self) -> dict:
         by_code = Counter(i.code for i in self.issues)
         return {
@@ -67,6 +71,7 @@ class ValidationReport:
             "total_issues": len(self.issues),
             "errors": len(self.errors),
             "warnings": len(self.warnings),
+            "info": len(self.infos),
             "by_code": dict(by_code),
         }
 
@@ -132,9 +137,22 @@ def validate_corpus(pages: list[PageData]) -> ValidationReport:
                             f"Parent IRI slug '{p_slug}' != label slug '{l_slug}'"))
 
         if len(oc.sub_class_of) > 1:
+            # Informational, NOT a warning. Multiple inheritance is legal in
+            # OWL 2 EL and in this corpus it is deliberate: classes are bridged
+            # across domains and categories by design. 957 classes carry more
+            # than one parent; 313 of them reach more than one taxonomy
+            # category and 97 span more than one domain. Reporting that as a
+            # defect misrepresented the dataset — the count was published as
+            # "961 validation warnings" when 958 of them were the design.
+            #
+            # It stays surfaced rather than deleted because it is the only
+            # place the bridging is enumerated, and the NGG1 node record holds
+            # a single u16 category (FORMAT-NGG1 §3), so the graph tiers keep
+            # only the nearest category. This is where the discarded bridges
+            # are still visible.
             report.issues.append(ValidationIssue(
-                fname, "warning", "MULTI_PARENT",
-                f"Multiple parents ({len(oc.sub_class_of)}): "
+                fname, "info", "MULTI_PARENT",
+                f"Bridging class, {len(oc.sub_class_of)} parents: "
                 f"{', '.join(p.label for p in oc.sub_class_of)}"))
 
     for iri, owners in iri_owners.items():
@@ -213,7 +231,7 @@ def main():
     else:
         s = report.summary()
         print(f"Validation: {s['total_pages']} pages, {s['pages_with_ontology']} with ontology, {s['public_pages']} public")
-        print(f"Issues: {s['errors']} errors, {s['warnings']} warnings")
+        print(f"Issues: {s['errors']} errors, {s['warnings']} warnings, {s['info']} info")
         if report.errors:
             print("\nErrors:")
             for i in report.errors[:30]:

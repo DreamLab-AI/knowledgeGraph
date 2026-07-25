@@ -15,7 +15,7 @@ public:: true
   "definition":"Robot programming is the discipline of specifying the tasks, motions, and decision logic that a robot executes, ranging from low-level joint commands to high-level behavioural goals. It encompasses textual programming languages, graphical and teach-by-demonstration interfaces, and middleware frameworks that connect perception, planning, and actuation. The aim is to translate human intent into reliable, repeatable robot behaviour while respecting safety, timing, and hardware constraints.",
   "domain":"robotics",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:robotics","label":"Robotics"}],
+  "subClassOf":[{"@id":"urn:ngm:class:robotics","label":"Robotics"},{"@id":"urn:ngm:class:robot-operating-system","label":"Robot Operating System"}],
   "relations":{
     "supports":[{"@id":"urn:ngm:class:robot-control","label":"Robot Control"},{"@id":"urn:ngm:class:robotic-manipulation","label":"Robotic Manipulation"},{"@id":"urn:ngm:class:automation","label":"Automation"}],
     "enables":[{"@id":"urn:ngm:class:trajectory-planning","label":"Trajectory Planning"},{"@id":"urn:ngm:class:motion-planning","label":"Motion Planning"},{"@id":"urn:ngm:class:industrial-robot","label":"Industrial Robot"}],

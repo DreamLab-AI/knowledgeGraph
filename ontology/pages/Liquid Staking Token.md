@@ -40,8 +40,8 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:token-minting",
-        "label": "Token Minting"
+        "@id": "urn:ngm:class:minting",
+        "label": "Minting"
       },
       {
         "@id": "urn:ngm:class:proof-of-stake",

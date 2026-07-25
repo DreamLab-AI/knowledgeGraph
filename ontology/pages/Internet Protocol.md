@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
     }
   ],
   "relations": {

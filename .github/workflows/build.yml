@@ -30,11 +30,11 @@
 #
 # What this workflow proves, on every push and pull request:
 #   1. the corpus contains no credential-shaped strings (load-bearing: the
-#      corpus is the published artefact — 7,457 markdown pages go out verbatim)
+#      corpus is the published artefact — 7,874 markdown pages go out verbatim)
 #   2. the NGG1 binary writer still matches its 183-byte golden fixture
 #      (pipeline/tests/test_emit_graph_tiers.py, pipeline/tests/fixtures/ngg1-3n2e.bin)
 #   3. the 7-stage pipeline runs end to end from ontology/pages/
-#   4. the build produced exactly 7457 OWL classes — a hard contract gate, not
+#   4. the build produced exactly 7874 OWL classes — a hard contract gate, not
 #      a printed statistic
 #   5. pipeline.validate reports zero errors over the corpus
 #
@@ -61,7 +61,7 @@ env:
   # The corpus contract. Both dist-ci/data/graph/stats.json (`classes`) and
   # dist-ci/data/ontology.json (`class[]` length) must report this many OWL
   # classes or the build fails. Change it only alongside the corpus.
-  EXPECTED_CLASSES: '7457'
+  EXPECTED_CLASSES: '7874'
 
 jobs:
   build:
@@ -81,12 +81,12 @@ jobs:
       # key on the internet, so this gate blocks the build rather than warning.
       #
       # Every pattern is anchored to a token-shaped suffix on purpose. A bare
-      # `sk-` substring match hits 1097 of the 7457 corpus files (risk-, task-,
+      # `sk-` substring match hits 1107 of the 7874 corpus files (risk-, task-,
       # disk-, desk-assistant …), which would make the gate useless noise; the
       # anchored form `sk-[A-Za-z0-9]{20,}` matches 0. Likewise the bare prefix
       # `[Bb]earer ` used below appears in 64 pages as HTTP prose, while
       # `[Bb]earer <20+ token chars>` matches 0. Verified against the corpus at
-      # 7457 pages: 0 hits total.
+      # 7874 pages: 0 hits total.
       - name: Secret scan (corpus must contain no credential-shaped strings)
         run: |
           set -uo pipefail
@@ -141,12 +141,12 @@ jobs:
           ls -la dist-ci/data/graph/
 
       # ------------------------------------------------------------------
-      # GATE 3 — corpus contract: the build must produce 7457 OWL classes
+      # GATE 3 — corpus contract: the build must produce 7874 OWL classes
       # ------------------------------------------------------------------
       # Read from the artefact the pipeline actually wrote, not from stdout.
       # A silent parse regression (a dropped JSON-LD fence, a changed public
       # filter) shows up here as a number, not as a warning nobody reads.
-      - name: Assert corpus contract (7457 classes)
+      - name: Assert corpus contract (7874 classes)
         run: |
           set -euo pipefail
           python - <<'PY'
@@ -179,10 +179,13 @@ jobs:
       # ------------------------------------------------------------------
       # GATE 4 — validation must report zero errors
       # ------------------------------------------------------------------
-      # pipeline.validate exits 1 on any error. Warnings do not fail the build:
-      # the corpus currently carries 961 of them (957 MULTI_PARENT — a class
-      # with more than one subClassOf — plus 4 INVALID_DOMAIN), and they are a
-      # known, recorded property of the taxonomy rather than a defect.
+      # pipeline.validate exits 1 on any error. Warnings do not fail the build,
+      # and the corpus currently carries none: the report reads 0 errors, 0
+      # warnings, 1401 info, all of the info entries MULTI_PARENT. That code was
+      # a warning until it was reclassified — multiple inheritance is deliberate
+      # here, so 957 of the old 961 warnings were the design, not a defect list
+      # (docs/ci-cd/build-and-gates.md §3). The bridging it counts is published
+      # in stats.json (`bridging`), bridges.json and overview.json.
       - name: Validate corpus (0 errors required)
         run: python -m pipeline.validate ontology/pages
 

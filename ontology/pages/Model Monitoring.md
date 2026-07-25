@@ -8,28 +8,110 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:model-monitoring",
-  "@type":"Class",
-  "label":"Model Monitoring",
-  "definition":"Model monitoring is the continuous observation of a deployed machine learning model's inputs, outputs, and performance in production to detect degradation, data drift, concept drift, and operational issues. It tracks predictive quality, latency, and input distributions against baselines and triggers alerts or retraining when thresholds are breached. As a core MLOps practice, it closes the loop between deployment and maintenance, sustaining model reliability over time.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:mlops","label":"MLOps"}],
-  "relations":{
-    "hasPart":[{"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"}],
-    "uses":[{"@id":"urn:ngm:class:observability","label":"Observability"},{"@id":"urn:ngm:class:anomaly-detection","label":"Anomaly Detection"}],
-    "enables":[{"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"},{"@id":"urn:ngm:class:feedback-loop","label":"Feedback Loop"}],
-    "requires":[{"@id":"urn:ngm:class:model-deployment","label":"Model Deployment"},{"@id":"urn:ngm:class:model-inference","label":"Model Inference"}],
-    "supports":[{"@id":"urn:ngm:class:model-training","label":"Model Training"},{"@id":"urn:ngm:class:model-registry","label":"Model Registry"}],
-    "dependsOn":[{"@id":"urn:ngm:class:data-quality","label":"Data Quality"}],
-    "partOf":[{"@id":"urn:ngm:class:mlops","label":"MLOps"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:observability","label":"Observability"},{"@id":"urn:ngm:class:model-serving","label":"Model Serving"},{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-monitoring",
+  "@type": "Class",
+  "label": "Model Monitoring",
+  "definition": "Model monitoring is the continuous observation of a deployed machine learning model's inputs, outputs, and performance in production to detect degradation, data drift, concept drift, and operational issues. It tracks predictive quality, latency, and input distributions against baselines and triggers alerts or retraining when thresholds are breached. As a core MLOps practice, it closes the loop between deployment and maintenance, sustaining model reliability over time.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:mlops",
+      "label": "MLOps"
+    },
+    {
+      "@id": "urn:ngm:class:data-drift",
+      "label": "Data Drift"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:model-inference",
+        "label": "Model Inference"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

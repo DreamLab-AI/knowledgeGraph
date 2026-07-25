@@ -44,8 +44,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:offline-ai",
-        "label": "Offline AI"
+        "@id": "urn:ngm:class:edge-ai",
+        "label": "Edge AI"
       },
       {
         "@id": "urn:ngm:class:real-time-inference",

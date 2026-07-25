@@ -62,10 +62,16 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:mlops",
-    "label": "MLOps"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:mlops",
+      "label": "MLOps"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

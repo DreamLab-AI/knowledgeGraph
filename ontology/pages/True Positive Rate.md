@@ -58,6 +58,10 @@ public:: true
     {
       "@id": "urn:ngm:class:evaluation-metric",
       "label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:ngm:class:model-performance",
+      "label": "Model Performance"
     }
   ],
   "relations": {

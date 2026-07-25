@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:smart-contract-platform",
       "label": "Smart Contract Platform"
+    },
+    {
+      "@id": "urn:ngm:class:blockchain-network",
+      "label": "Blockchain Network"
     }
   ],
   "sameAs": [

@@ -18,7 +18,7 @@ public:: true
   "subClassOf":[{"@id":"urn:ngm:class:real-time-communication","label":"Real-Time Communication"}],
   "relations":{
     "uses":[
-      {"@id":"urn:ngm:class:websocket","label":"WebSocket"},
+      {"@id":"urn:ngm:class:web-socket","label":"WebSocket"},
       {"@id":"urn:ngm:class:message-queue","label":"Message Queue"}
     ],
     "implements":[

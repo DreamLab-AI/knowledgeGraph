@@ -62,6 +62,10 @@ public:: true
     {
       "@id": "urn:ngm:class:khronos-open-xr",
       "label": "Khronos OpenXR"
+    },
+    {
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
     }
   ],
   "relations": {

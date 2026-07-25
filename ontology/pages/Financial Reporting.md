@@ -28,13 +28,17 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
     }
   ],
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:disclosure",
-        "label": "Disclosure"
+        "@id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
       },
       {
         "@id": "urn:ngm:class:audit",
@@ -77,8 +81,8 @@ public:: true
         "label": "Proof Of Reserves"
       },
       {
-        "@id": "urn:ngm:class:disclosure",
-        "label": "Disclosure"
+        "@id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
       }
     ],
     "supports": [

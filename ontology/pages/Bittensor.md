@@ -62,6 +62,10 @@ public:: true
     {
       "@id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:distributed-training",
+      "label": "Distributed Training"
     }
   ],
   "relations": {

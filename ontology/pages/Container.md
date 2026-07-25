@@ -60,69 +60,193 @@ public:: true
   "definition": "A container is a lightweight, isolated runtime package that bundles an application together with its dependencies, libraries and configuration so it runs consistently across environments. Containers share the host operating system kernel while using namespaces and control groups for isolation, making them far more efficient than full virtual machines. They are the standard unit of deployment for machine-learning services and microservices.",
   "domain": "ai",
   "maturity": "mature",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
-    {"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)"
+    }
   ],
   "relations": {
     "requires": [
-      {"@id": "urn:ngm:class:containerisation", "label": "Containerization"},
-      {"@id": "urn:ngm:class:resource-isolation", "label": "Resource Isolation"},
-      {"@id": "urn:ngm:class:linux-kernel", "label": "Linux Kernel"}
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerization"
+      },
+      {
+        "@id": "urn:ngm:class:resource-isolation",
+        "label": "Resource Isolation"
+      },
+      {
+        "@id": "urn:ngm:class:linux-kernel",
+        "label": "Linux Kernel"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:cgroups", "label": "Control Groups"},
-      {"@id": "urn:ngm:class:namespace", "label": "Namespaces"},
-      {"@id": "urn:ngm:class:open-container-initiative", "label": "Open Container Initiative"},
-      {"@id": "urn:ngm:class:ebpf", "label": "eBPF"}
+      {
+        "@id": "urn:ngm:class:cgroups",
+        "label": "Control Groups"
+      },
+      {
+        "@id": "urn:ngm:class:namespace",
+        "label": "Namespaces"
+      },
+      {
+        "@id": "urn:ngm:class:open-container-initiative",
+        "label": "Open Container Initiative"
+      },
+      {
+        "@id": "urn:ngm:class:ebpf",
+        "label": "eBPF"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:deployment-artifact", "label": "Deployment Artifact"},
-      {"@id": "urn:ngm:class:container-image", "label": "Container Image"},
-      {"@id": "urn:ngm:class:container-registry", "label": "Container Registry"},
-      {"@id": "urn:ngm:class:container-runtime", "label": "Container Runtime"}
+      {
+        "@id": "urn:ngm:class:deployment-artifact",
+        "label": "Deployment Artifact"
+      },
+      {
+        "@id": "urn:ngm:class:container-image",
+        "label": "Container Image"
+      },
+      {
+        "@id": "urn:ngm:class:container-registry",
+        "label": "Container Registry"
+      },
+      {
+        "@id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:microservices", "label": "Microservices"},
-      {"@id": "urn:ngm:class:model-deployment", "label": "Model Deployment"},
-      {"@id": "urn:ngm:class:scalability", "label": "Scalability"},
-      {"@id": "urn:ngm:class:reproducibility", "label": "Reproducibility"},
-      {"@id": "urn:ngm:class:immutable-infrastructure", "label": "Immutable Infrastructure"},
-      {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"}
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:immutable-infrastructure",
+        "label": "Immutable Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:edge-computing",
+        "label": "Edge Computing"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:ci-cd", "label": "CI/CD"},
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:platform-engineering", "label": "Platform Engineering"},
-      {"@id": "urn:ngm:class:gitops", "label": "GitOps"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:ci-cd",
+        "label": "CI/CD"
+      },
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:platform-engineering",
+        "label": "Platform Engineering"
+      },
+      {
+        "@id": "urn:ngm:class:gitops",
+        "label": "GitOps"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
-      {"@id": "urn:ngm:class:kubernetes", "label": "Kubernetes"}
+      {
+        "@id": "urn:ngm:class:orchestration",
+        "label": "Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:cloud-infrastructure", "label": "Cloud Infrastructure"},
-      {"@id": "urn:ngm:class:cloud-native", "label": "Cloud Native"}
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:resource-isolation", "label": "Resource Isolation"},
-      {"@id": "urn:ngm:class:software-supply-chain", "label": "Software Supply Chain"}
+      {
+        "@id": "urn:ngm:class:resource-isolation",
+        "label": "Resource Isolation"
+      },
+      {
+        "@id": "urn:ngm:class:software-supply-chain",
+        "label": "Software Supply Chain"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:virtualisation", "label": "Virtualization"},
-      {"@id": "urn:ngm:class:webassembly", "label": "WebAssembly"},
-      {"@id": "urn:ngm:class:serverless", "label": "Serverless"}
+      {
+        "@id": "urn:ngm:class:virtualisation",
+        "label": "Virtualization"
+      },
+      {
+        "@id": "urn:ngm:class:webassembly",
+        "label": "WebAssembly"
+      },
+      {
+        "@id": "urn:ngm:class:serverless",
+        "label": "Serverless"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:devops", "label": "DevOps"},
-      {"@id": "urn:ngm:class:serverless", "label": "Serverless"},
-      {"@id": "urn:ngm:class:distributed-system", "label": "Distributed System"},
-      {"@id": "urn:ngm:class:infrastructure-as-code", "label": "Infrastructure as Code"},
-      {"@id": "urn:ngm:class:container-security", "label": "Container Security"},
-      {"@id": "urn:ngm:class:service-mesh", "label": "Service Mesh"},
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:high-availability", "label": "High Availability"}
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:serverless",
+        "label": "Serverless"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-system",
+        "label": "Distributed System"
+      },
+      {
+        "@id": "urn:ngm:class:infrastructure-as-code",
+        "label": "Infrastructure as Code"
+      },
+      {
+        "@id": "urn:ngm:class:container-security",
+        "label": "Container Security"
+      },
+      {
+        "@id": "urn:ngm:class:service-mesh",
+        "label": "Service Mesh"
+      },
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
     ]
   },
   "sameAs": [],

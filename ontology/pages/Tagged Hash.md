@@ -15,7 +15,7 @@ public:: true
   "definition": "A Tagged Hash is a domain-separated hash construction formalised in BIP-340 and used throughout Bitcoin's Taproot/Schnorr signature ecosystem, computed as SHA256(SHA256(tag) || SHA256(tag) || msg), where tag is a human-readable string identifying the protocol context. The double-hashing of the tag prefix creates a unique domain separator that prevents cross-protocol hash collisions — ensuring that a hash computed in one context (e.g. key tweaking) cannot be misinterpreted or replayed in another context (e.g. signature nonce generation). Tagged hashes improve security proofs and simplify protocol composition by making each domain's hash computationally distinct.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}],
+  "subClassOf": [{"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}, {"@id": "urn:ngm:class:bc-cryptographic-primitive", "label": "Cryptographic Primitive"}],
   "relations": {
     "dependsOn": [
       {"@id": "urn:ngm:class:sha256", "label": "SHA-256"},

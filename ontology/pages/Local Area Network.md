@@ -24,7 +24,7 @@ public:: true
   "definition": "A local area network (LAN) is a communications network that interconnects devices within a limited geographic area such as a building, campus, or data centre floor, typically under a single administrative domain. LANs provide high-bandwidth, low-latency connectivity enabling resource sharing, collaborative computing, and access to shared infrastructure services. Modern LANs are predominantly implemented using Ethernet (IEEE 802.3) and Wi-Fi (IEEE 802.11) technologies, with switching and VLAN segmentation providing logical isolation.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}, {"@id": "urn:ngm:class:networking-infrastructure", "label": "Networking Infrastructure"}],
   "relations": {
     "partOf": [
       {"@id": "urn:ngm:class:network-infrastructure", "label": "Network Infrastructure"},

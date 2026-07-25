@@ -73,8 +73,8 @@ public:: true
         "label": "Financial Technology"
       },
       {
-        "@id": "urn:ngm:class:digital-innovation",
-        "label": "Digital Innovation"
+        "@id": "urn:ngm:class:innovation",
+        "label": "Innovation"
       }
     ],
     "uses": [
@@ -168,7 +168,7 @@ public:: true
   - Leeds occupies a strategic position at the intersection of road, rail, and digital networks in northern England. Historically rooted in textile manufacture and wool trade, the city has undergone significant economic transformation since the 1980s, emerging as a professional services powerhouse second only to London in the UK for certain financial and legal activity.
   - The city's economy is anchored by banking, insurance, and asset management institutions that chose Leeds for back-office and regional headquarters operations, attracted by lower operating costs than the capital while retaining access to skilled graduates from the [[University of Leeds]] and Leeds Beckett University.
   - Leeds is governed by Leeds City Council within the West Yorkshire Combined Authority, which also oversees [[Bradford]], [[Sheffield]] (adjacent South Yorkshire), Calderdale, Kirklees, and Wakefield. This combined authority structure is central to the [[Northern Powerhouse]] narrative and enables coordinated infrastructure commissioning.
-  - The city's digital and data sector has grown substantially, with Leeds Digital Festival, Nexus innovation hub, and proximity to NHS data assets making it an emerging centre for [[Data-Driven Healthcare]] and [[Digital Innovation]].
+  - The city's digital and data sector has grown substantially, with Leeds Digital Festival, Nexus innovation hub, and proximity to NHS data assets making it an emerging centre for [[Data-Driven Healthcare]] and [[Innovation]].
 
 - ### Key Components
   - **Financial and Professional Services District**
@@ -206,7 +206,7 @@ public:: true
     - Leeds Law School and commercial firms have collaborated on LegalTech incubation
   - **Smart City and Urban Infrastructure**
     - Leeds City Council smart city programmes include sensor networks for traffic and air quality, aligning with [[Smart City]] frameworks
-    - Open data initiatives and the Leeds Data Mill platform enable civic [[Digital Innovation]]
+    - Open data initiatives and the Leeds Data Mill platform enable civic [[Innovation]]
   - **Education Technology and Skills**
     - University partnerships with technology employers create pipelines for [[Skilled Workforce]] development in data science, software engineering, and cybersecurity
   - **Northern England Economic Rebalancing**
@@ -215,7 +215,7 @@ public:: true
 - ### Relationships
   - partOf:: [[Northern Powerhouse]], [[West Yorkshire]]
   - hasPart:: [[University of Leeds]], [[Leeds Bradford Airport]], [[Leeds City Region]]
-  - enables:: [[Financial Technology]], [[Health Data]], [[Digital Innovation]]
+  - enables:: [[Financial Technology]], [[Health Data]], [[Innovation]]
   - uses:: [[Rail Infrastructure]], [[Broadband Connectivity]]
   - requires:: [[Regional Governance]], [[Skilled Workforce]]
   - supports:: [[Research and Development]], [[Legal Services]], [[Professional Services]]

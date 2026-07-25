@@ -8,27 +8,92 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:computational-neuroscience",
-  "@type":"Class",
-  "label":"Computational Neuroscience",
-  "definition":"Computational neuroscience is the study of the nervous system through mathematical models, simulations, and information-processing theories that describe how neurons and neural circuits represent, compute, and learn. It spans biophysical models of single neurons, network models of population dynamics, and theories of coding, plasticity, and behaviour. The field both explains experimental data and inspires artificial neural and neuromorphic systems by clarifying the principles of biological computation.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:cognitive-science","label":"Cognitive Science"}],
-  "relations":{
-    "relatedTo":[{"@id":"urn:ngm:class:neural-network","label":"Neural Network"},{"@id":"urn:ngm:class:cognitive-science","label":"Cognitive Science"},{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}],
-    "enables":[{"@id":"urn:ngm:class:neuromorphic-computing","label":"Neuromorphic Computing"}],
-    "uses":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"},{"@id":"urn:ngm:class:reinforcement-learning","label":"Reinforcement Learning"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}],
-    "supports":[{"@id":"urn:ngm:class:cognitive-architecture","label":"Cognitive Architecture"}],
-    "dependsOn":[{"@id":"urn:ngm:class:neural-network","label":"Neural Network"}],
-    "implements":[{"@id":"urn:ngm:class:cognitive-science","label":"Cognitive Science"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:computational-neuroscience",
+  "@type": "Class",
+  "label": "Computational Neuroscience",
+  "definition": "Computational neuroscience is the study of the nervous system through mathematical models, simulations, and information-processing theories that describe how neurons and neural circuits represent, compute, and learn. It spans biophysical models of single neurons, network models of population dynamics, and theories of coding, plasticity, and behaviour. The field both explains experimental data and inspires artificial neural and neuromorphic systems by clarifying the principles of biological computation.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:cognitive-science",
+      "label": "Cognitive Science"
+    },
+    {
+      "@id": "urn:ngm:class:cognitive-ai",
+      "label": "Cognitive AI"
+    }
+  ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:neuromorphic-computing",
+        "label": "Neuromorphic Computing"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:concurrency",
       "label": "Concurrency"
+    },
+    {
+      "@id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing"
     }
   ],
   "relations": {

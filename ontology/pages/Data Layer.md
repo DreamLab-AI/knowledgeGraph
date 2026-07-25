@@ -12,8 +12,8 @@ alias:: DataLayer
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
-      "@id": "urn:visionflow:linked:acid-compliance",
-      "vc:label": "ACID Compliance"
+      "@id": "urn:visionflow:linked:acid-properties",
+      "vc:label": "ACID Properties"
     },
     {
       "@id": "urn:visionflow:linked:active-record",
@@ -465,8 +465,8 @@ alias:: DataLayer
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:acid-compliance",
-        "label": "ACID Compliance"
+        "@id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
       },
       {
         "@id": "urn:ngm:class:data-availability",
@@ -623,8 +623,8 @@ alias:: DataLayer
   },
   "vc:resolutions": [
     {
-      "raw": "[[ACID Compliance]]",
-      "resolved": "urn:visionflow:linked:acid-compliance",
+      "raw": "[[ACID Properties]]",
+      "resolved": "urn:visionflow:linked:acid-properties",
       "kind": "StubLink"
     },
     {
@@ -1078,7 +1078,7 @@ alias:: DataLayer
   - is-subclass-of:: [[Architectural Layer]], [[System Tier]], [[Software Layer]]
   - has-part:: [[Database Engine]], [[Query Processor]], [[Transaction Manager]], [[Data Indexing]], [[Replication Service]], [[Object-Relational Mapper]], [[Connection Pool]], [[Schema Registry]], [[Cache Layer]], [[Erasure Coding]], [[KZG Commitment]], [[Data Availability Sampling]]
   - requires:: [[Storage Medium]], [[File System]], [[Network Layer]], [[Consensus Protocol]] (for distributed variants), [[Schema Definition]], [[Backup Strategy]]
-  - enables:: [[Data Persistence]], [[Data Consistency]], [[Semantic Query]], [[ACID Compliance]], [[Horizontal Scaling]], [[Polyglot Persistence]], [[Retrieval Augmented Generation]], [[Rollup Scaling]], [[Data Availability]]
+  - enables:: [[Data Persistence]], [[Data Consistency]], [[Semantic Query]], [[ACID Properties]], [[Horizontal Scaling]], [[Polyglot Persistence]], [[Retrieval Augmented Generation]], [[Rollup Scaling]], [[Data Availability]]
   - implements:: [[Repository Pattern]], [[Data Mapper Pattern]], [[Unit of Work]], [[Active Record]], [[CQRS]], [[Event Sourcing]], [[Hexagonal Architecture]], [[Ports and Adapters]]
   - depends-on:: [[Physical Layer]], [[Network Layer]], [[Operating System]], [[File System]], [[Memory Hierarchy]]
   - supports:: [[Business Logic Layer]], [[Application Layer]], [[Domain Model]], [[Reporting Layer]], [[Execution Layer]] (modular blockchain), [[Settlement Layer]] (modular blockchain)
@@ -1683,5 +1683,5 @@ alias:: DataLayer
   - sources:: Codd 1970 CACM; Fowler 2002 *PoEAA*; Evans 2003 *DDD*; Cockburn 2005 *Hexagonal Architecture*; Martin 2017 *Clean Architecture*; Kleppmann 2017 *Designing Data-Intensive Applications*; Al-Bassam, Sonnino, Buterin 2018 *Fraud and Data Availability Proofs* arXiv:1809.09044; Al-Bassam 2019 *LazyLedger* arXiv:1905.09274; Buterin 2020 *Rollup-Centric Ethereum Roadmap*; EigenDA 2023 whitepaper; Celestia mainnet announcement October 2023; Avail mainnet July 2024; EIP-4844 specification 2024; W3C RDF 1.1 / OWL 2 / SPARQL 1.1; ANSI/ISO/IEC 9075 SQL; Lamport 1998 *Part-Time Parliament*; Gilbert & Lynch 2002 CAP proof; Abadi 2012 PACELC; Stonebraker & Çetintemel 2005 *One Size Fits All*; Härder & Reuter 1983 ACID; DeCandia et al. 2007 Dynamo; Corbett et al. 2012 Spanner; Ongaro & Ousterhout 2014 Raft; Malkov & Yashunin 2018 HNSW; Kraska et al. 2018 Learned Indexes; Berners-Lee, Hendler, Lassila 2001 Semantic Web; Baader et al. 2003 Description Logic Handbook.
   - migration-date:: 2026-04-26T00:00:00Z
   - enrichment-date:: 2026-05-16T13:10:00Z
-  - domain-validation:: Confirmed `domain:: infrastructure` is correct — original ontology binds Data Layer to ArchitecturalLayer, Database Engine, Query Processor, Transaction Manager, ACID Compliance (clearly enterprise n-tier sense). Modular-blockchain DA included as major family/sub-area rather than primary domain rebinding, since the existing relationships and Narrative Gold Mine context lock the page to the broader infrastructure sense whilst remaining inclusive of the 2023-2026 DA emergence.
+  - domain-validation:: Confirmed `domain:: infrastructure` is correct — original ontology binds Data Layer to ArchitecturalLayer, Database Engine, Query Processor, Transaction Manager, ACID Properties (clearly enterprise n-tier sense). Modular-blockchain DA included as major family/sub-area rather than primary domain rebinding, since the existing relationships and Narrative Gold Mine context lock the page to the broader infrastructure sense whilst remaining inclusive of the 2023-2026 DA emergence.
   - enrichment-notes:: Phase 6 enrichment performed by claude-opus-4-7. Disambiguated against four candidate senses (modular blockchain DA, enterprise n-tier DAL, GTM dataLayer, GIS data layer). Verified existing ontological commitments via in-page `has-part` and `enables` properties before choosing primary sense. Both enterprise persistence and modular-blockchain DA covered in Major Families and Academic Context for cross-domain coverage. UK Context emphasises UCL Information Security Group as the global epicentre of modular-DA research (Al-Bassam, Sonnino, Meiklejohn, Danezis) plus distributed academic-industrial Data Layer ecosystem across Manchester / Leeds / Sheffield / Newcastle / Edinburgh / Cambridge / Oxford / Southampton / Imperial / UCL.

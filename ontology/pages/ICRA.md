@@ -54,6 +54,10 @@ public:: true
     {
       "@id": "urn:ngm:class:robotics",
       "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:academic-conference",
+      "label": "Academic Conference"
     }
   ],
   "quality": 0.6,

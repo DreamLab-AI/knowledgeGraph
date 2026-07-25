@@ -15,10 +15,6 @@ public:: true
       "vc:label": "Advertising Space"
     },
     {
-      "@id": "urn:visionflow:linked:community-building",
-      "vc:label": "Community Building"
-    },
-    {
       "@id": "urn:visionflow:linked:development-rights",
       "vc:label": "Development Rights"
     },
@@ -194,10 +190,6 @@ public:: true
         "label": "Advertising Space"
       },
       {
-        "@id": "urn:ngm:class:community-building",
-        "label": "Community Building"
-      },
-      {
         "@id": "urn:ngm:class:event-hosting",
         "label": "Event Hosting"
       },
@@ -242,11 +234,6 @@ public:: true
     {
       "raw": "[[Advertising Space]]",
       "resolved": "urn:visionflow:linked:advertising-space",
-      "kind": "StubLink"
-    },
-    {
-      "raw": "[[Community Building]]",
-      "resolved": "urn:visionflow:linked:community-building",
       "kind": "StubLink"
     },
     {
@@ -390,7 +377,7 @@ public:: true
   - has-part:: [[Land Parcel]], [[Ownership Token]], [[Spatial Coordinates]], [[Property Metadata]], [[Development Rights]]
   - is-part-of:: [[Virtual Economy]], [[Virtual World]]
   - requires:: [[Blockchain Infrastructure]], [[Smart Contracts]], [[Spatial Computing Paradigm]], [[Digital Wallet]]
-  - enables:: [[Virtual Commerce]], [[Property Development]], [[Event Hosting]], [[Advertising Space]], [[Community Building]]
+  - enables:: [[Virtual Commerce]], [[Property Development]], [[Event Hosting]], [[Advertising Space]]
   - depends-on:: [[NFT Standards]], [[Land Registry]], [[Metaverse Platform]]
   - bridges-to:: [[Blockchain]]
 

@@ -8,28 +8,102 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:bfloat16",
-  "@type":"Class",
-  "label":"Bfloat16",
-  "definition":"Bfloat16 (brain floating point) is a 16-bit floating-point format that keeps the same 8-bit exponent as 32-bit IEEE float but truncates the mantissa to 7 bits. It preserves the dynamic range of single precision while halving memory and bandwidth, making it well suited to deep-learning training and inference. Because it trades precision for range, it avoids the overflow and underflow problems that affect narrower formats during gradient computation.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:model-compression","label":"Model Compression"}],
-  "relations":{
-    "uses":[{"@id":"urn:ngm:class:tensor-core","label":"Tensor Core"}],
-    "dependsOn":[{"@id":"urn:ngm:class:tensor-processing-unit","label":"Tensor Processing Unit"}],
-    "enables":[{"@id":"urn:ngm:class:inference-optimisation","label":"Inference Optimisation"}],
-    "supports":[{"@id":"urn:ngm:class:gpu-acceleration","label":"GPU Acceleration"}],
-    "requires":[{"@id":"urn:ngm:class:tensor-core","label":"Tensor Core"}],
-    "partOf":[{"@id":"urn:ngm:class:model-compression","label":"Model Compression"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:quantisation","label":"Quantisation"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:memory-bandwidth","label":"Memory Bandwidth"}],
-    "relatedTo":[{"@id":"urn:ngm:class:quantisation","label":"Quantisation"},{"@id":"urn:ngm:class:knowledge-distillation","label":"Knowledge Distillation"},{"@id":"urn:ngm:class:pruning","label":"Pruning"},{"@id":"urn:ngm:class:throughput","label":"Throughput"},{"@id":"urn:ngm:class:transformer-architecture","label":"Transformer Architecture"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:bfloat16",
+  "@type": "Class",
+  "label": "Bfloat16",
+  "definition": "Bfloat16 (brain floating point) is a 16-bit floating-point format that keeps the same 8-bit exponent as 32-bit IEEE float but truncates the mantissa to 7 bits. It preserves the dynamic range of single precision while halving memory and bandwidth, making it well suited to deep-learning training and inference. Because it trades precision for range, it avoids the overflow and underflow problems that affect narrower formats during gradient computation.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-compression",
+      "label": "Model Compression"
+    },
+    {
+      "@id": "urn:ngm:class:mixed-precision-training",
+      "label": "Mixed Precision Training"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:inference-optimisation",
+        "label": "Inference Optimisation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:gpu-acceleration",
+        "label": "GPU Acceleration"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:tensor-core",
+        "label": "Tensor Core"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:model-compression",
+        "label": "Model Compression"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-distillation",
+        "label": "Knowledge Distillation"
+      },
+      {
+        "@id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      },
+      {
+        "@id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

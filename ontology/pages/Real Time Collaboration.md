@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:synchronous-collaboration",
+      "label": "Synchronous Collaboration"
     }
   ],
   "relations": {

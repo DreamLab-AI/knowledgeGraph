@@ -472,6 +472,63 @@ class GraphModel:
     individuals: int = 0
     uncategorised: int = 0
     domainless: int = 0
+    multi_parent: int = 0
+    # Classes whose parents reach more than one category or domain. The tiers
+    # keep only the nearest category per node, so these are the memberships the
+    # binary format cannot carry — see build_graph_model.
+    bridges: list = field(default_factory=list)
+
+
+def _build_category_resolver(public_pages: list[PageData]):
+    """Resolve a class's category by walking subClassOf/instanceOf ancestry.
+
+    Category inheritance used to read direct parents only, so a class two or
+    more hops below a category root fell to CATEGORY_NONE even though its
+    ancestry named a category unambiguously. On the 7,457-class corpus that
+    mislabelled 4,033 classes as uncategorised — 89.7% of the reported total.
+
+    Breadth-first so the NEAREST category ancestor wins; parents are visited in
+    declared order, which keeps the choice deterministic across runs (the NGG1
+    tiers are byte-compared in CI, so a set-ordered walk would break the golden
+    fixture). Cycles are guarded by `seen`, and MAX_DEPTH bounds a pathological
+    chain — the deepest real path in the corpus needs 7.
+    """
+    MAX_DEPTH = 12
+    parents_of: dict[str, tuple[str, ...]] = {}
+    for p in public_pages:
+        oc = p.ontology_class
+        parents_of[_slug_of(oc.iri)] = tuple(
+            _slug_of(r.iri) for r in (*oc.sub_class_of, *oc.instance_of)
+        )
+
+    memo: dict[str, int] = {}
+
+    def resolve(slug: str) -> int:
+        if slug in memo:
+            return memo[slug]
+        seen: set[str] = {slug}
+        frontier = parents_of.get(slug, ())
+        depth = 0
+        found = CATEGORY_NONE
+        while frontier and depth < MAX_DEPTH:
+            nxt: list[str] = []
+            for ps in frontier:
+                cid = CATEGORY_INDEX.get(ps)
+                if cid is not None:
+                    found = cid
+                    break
+                if ps in seen:
+                    continue
+                seen.add(ps)
+                nxt.extend(parents_of.get(ps, ()))
+            if found != CATEGORY_NONE:
+                break
+            frontier = tuple(nxt)
+            depth += 1
+        memo[slug] = found
+        return found
+
+    return resolve
 
 
 def build_graph_model(pages: list[PageData]) -> GraphModel:
@@ -488,6 +545,9 @@ def build_graph_model(pages: list[PageData]) -> GraphModel:
     # 1:1 corpus) was the conflation. Deduped by page identity so a page is
     # never double-counted; page-only sources (no entity block) still count.
     pages_public = len({(p.page_iri or str(p.path)) for p in pages if p.is_public})
+
+    resolve_category = _build_category_resolver(public_pages)
+    page_by_slug = {_slug_of(p.ontology_class.iri): p.ontology_class for p in public_pages}
 
     # 1. Nodes, keyed by canonical (remapped) IRI.
     node_by_canon: dict[str, GNode] = {}
@@ -506,14 +566,11 @@ def build_graph_model(pages: list[PageData]) -> GraphModel:
         elif is_domain_root:
             category_id = CATEGORY_NONE
         else:
-            category_id = CATEGORY_NONE
-            # A Class inherits its category from a subClassOf parent; an
-            # Individual from its instanceOf class (both may name a category).
-            for parent in (*oc.sub_class_of, *oc.instance_of):
-                cid = CATEGORY_INDEX.get(_slug_of(parent.iri))
-                if cid is not None:
-                    category_id = cid
-                    break
+            # A Class inherits its category from its nearest category-bearing
+            # subClassOf ancestor; an Individual from its instanceOf class.
+            # Walks the full ancestry, not just direct parents — see
+            # _build_category_resolver.
+            category_id = resolve_category(own_slug)
         flags = FLAG_HAS_PAGE
         if is_domain_root:
             flags |= FLAG_DOMAIN_ROOT
@@ -594,12 +651,48 @@ def build_graph_model(pages: list[PageData]) -> GraphModel:
     )
     domainless = sum(1 for n in ordered if n.domain_id == DOMAIN_NONE)
 
+    # ── bridging (deliberate multi-parenting) ──
+    # Overlap between domains is a design property of this corpus, not an
+    # accident: 1,401 classes carry more than one subClassOf parent. The NGG1 node
+    # record holds a single u16 category (FORMAT-NGG1 §3), so the tiers keep
+    # only the nearest one and the remaining memberships are dropped on the
+    # floor. Recording them here keeps the design visible in the published data
+    # instead of losing it silently at build time.
+    bridges: list[dict] = []
+    for p in public_pages:
+        oc = p.ontology_class
+        if len(oc.sub_class_of) < 2:
+            continue
+        cats, doms = [], []
+        for r in oc.sub_class_of:
+            ps = _slug_of(r.iri)
+            cid = CATEGORY_INDEX.get(ps)
+            if cid is None:
+                cid = resolve_category(ps)
+            if cid != CATEGORY_NONE and cid not in cats:
+                cats.append(cid)
+            parent = page_by_slug.get(ps)
+            if parent is not None:
+                did = _resolve_domain(parent.domain)
+                if did != DOMAIN_NONE and did not in doms:
+                    doms.append(did)
+        if len(cats) > 1 or len(doms) > 1:
+            bridges.append({
+                "iri": _remap_iri(oc.iri),
+                "label": oc.label,
+                "categories": cats,
+                "domains": doms,
+                "parents": [r.label for r in oc.sub_class_of],
+            })
+
     return GraphModel(
         nodes=ordered, edges=edges,
         declared_backbone=declared_backbone, declared_relations=declared_relations,
         resolvable_backbone=resolvable_backbone, resolvable_relations=resolvable_relations,
         pages_public=pages_public, classes=classes, individuals=individuals,
         uncategorised=uncategorised, domainless=domainless,
+        multi_parent=sum(1 for p in public_pages if len(p.ontology_class.sub_class_of) > 1),
+        bridges=bridges,
     )
 
 
@@ -689,6 +782,25 @@ def _build_overview(model: GraphModel) -> dict:
     ndom = len(DOMAIN_SLUGS)
     ncat = len(CATEGORY_ORDER)
     layout_edges = [(ndom + ci, dom_id) for ci, (_s, _l, dom_id) in enumerate(CATEGORY_ORDER)]
+
+    # Bridge edges: category pairs co-occurring in a class's parent set. The
+    # corpus bridges deliberately, so the taxonomy is a lattice rather than a
+    # tree — emitting only category→domain edges drew it as a tree and hid that.
+    # Aggregated into weighted pairs (weight = number of classes bridging the
+    # pair) so 313 bridging classes become a readable number of edges rather
+    # than 313 overlapping lines.
+    bridge_weight: dict[tuple[int, int], int] = defaultdict(int)
+    for b in model.bridges:
+        cats = sorted(b["categories"])
+        for i in range(len(cats)):
+            for j in range(i + 1, len(cats)):
+                bridge_weight[(cats[i], cats[j])] += 1
+    bridge_pairs = sorted(bridge_weight.items())
+
+    # Bridges participate in the layout: two categories bridged by many classes
+    # should settle near each other. Without this the baked positions would
+    # contradict the edges drawn over them.
+    layout_edges += [(ndom + a, ndom + b) for (a, b), _w in bridge_pairs]
     pos = force_layout(ndom + ncat, layout_edges, iters=200, seed=42)
 
     # Real authored root pages, when they exist, supply the true IRI / label /
@@ -756,6 +868,14 @@ def _build_overview(model: GraphModel) -> dict:
     edges = [
         {"source": ndom + ci, "target": dom_id, "type": EDGE_SUBCLASS}
         for ci, (_s, _l, dom_id) in enumerate(CATEGORY_ORDER)
+    ]
+    # then the bridges, category→category, as relations. `weight` is additive to
+    # the frozen {source,target,type} shape, so a consumer that ignores it is
+    # unaffected; one that reads it can scale line opacity by bridge strength.
+    # Backbone edges stay first so an index-sensitive reader sees them unmoved.
+    edges += [
+        {"source": ndom + a, "target": ndom + b, "type": EDGE_RELATION, "weight": w}
+        for (a, b), w in bridge_pairs
     ]
     taxonomy = [label for (_s, label, _d) in CATEGORY_ORDER]
 
@@ -838,6 +958,16 @@ def emit_graph_tiers(pages: list[PageData], output_dir: Path) -> dict:
         "categories": len(CATEGORY_ORDER),
         "uncategorised": model.uncategorised,
         "domainless": model.domainless,
+        # Deliberate overlap. multiParent counts classes with >1 subClassOf;
+        # crossCategory/crossDomain count those whose parents span more than one
+        # taxonomy category or domain root. The NGG1 node record carries a
+        # single category, so crossCategory classes are the ones whose extra
+        # memberships exist only in bridges.json.
+        "bridging": {
+            "multiParent": model.multi_parent,
+            "crossCategory": sum(1 for b in model.bridges if len(b["categories"]) > 1),
+            "crossDomain": sum(1 for b in model.bridges if len(b["domains"]) > 1),
+        },
         "edges": {
             "declared": model.declared_backbone + model.declared_relations,
             "declaredBackbone": model.declared_backbone,
@@ -849,6 +979,21 @@ def emit_graph_tiers(pages: list[PageData], output_dir: Path) -> dict:
         "scopes": scope_stats,
     }
     (graph_dir / "stats.json").write_text(json.dumps(stats, indent=2), encoding="utf-8")
+
+    # bridges.json — the cross-category/cross-domain memberships NGG1 drops.
+    # Category and domain values are indices into overview.json's taxonomy and
+    # domains arrays, matching the node record encoding.
+    (graph_dir / "bridges.json").write_text(json.dumps({
+        "pipelineVersion": PIPELINE_VERSION,
+        "note": (
+            "Classes bridging more than one taxonomy category or domain. Overlap "
+            "is a design property of this corpus. The NGG1 node record carries a "
+            "single u16 category (FORMAT-NGG1 3), so tiers keep the nearest one; "
+            "the full membership is here. Indices match overview.json."
+        ),
+        "count": len(model.bridges),
+        "bridges": model.bridges,
+    }, indent=2), encoding="utf-8")
 
     return {
         "nodes": len(model.nodes),

@@ -23,11 +23,26 @@ public:: true
   "definition": "Open X-Embodiment is a large, collaborative open dataset and associated model effort that aggregates robot manipulation demonstrations across many robot embodiments and labs. By pooling trajectories from diverse hardware into a unified format, it enables training generalist robot policies that transfer across different platforms. The initiative supports research into cross-embodiment learning and the RT-X family of robotic foundation models.",
   "domain": "robotics",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:imitation-learning", "label": "Imitation Learning"},
-      {"@id": "urn:ngm:class:embodied-minds", "label": "Embodied Minds"}
+      {
+        "@id": "urn:ngm:class:imitation-learning",
+        "label": "Imitation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-minds",
+        "label": "Embodied Minds"
+      }
     ]
   },
   "quality": 0.72

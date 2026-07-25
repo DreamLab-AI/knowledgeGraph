@@ -7,52 +7,104 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:vanishing-gradient-problem",
-  "@type":"Class",
-  "label":"Vanishing Gradient Problem",
-  "definition":"The vanishing gradient problem is a difficulty in training deep or recurrent neural networks in which error gradients shrink exponentially as they are propagated backwards through many layers or time steps, leaving early parameters with negligible updates. It arises because repeated multiplication by small derivative terms, characteristic of saturating activation functions, drives the gradient towards zero. The effect severely impedes learning of long-range dependencies and was a central obstacle to deep learning before mitigations emerged. Remedies include non-saturating activations, careful weight initialisation, normalisation, residual connections and gated recurrent architectures such as the LSTM.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}],
-  "relations":{
-    "relatedTo":[
-      {"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"},
-      {"@id":"urn:ngm:class:recurrent-neural-network","label":"Recurrent Neural Network"},
-      {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:vanishing-gradient-problem",
+  "@type": "Class",
+  "label": "Vanishing Gradient Problem",
+  "definition": "The vanishing gradient problem is a difficulty in training deep or recurrent neural networks in which error gradients shrink exponentially as they are propagated backwards through many layers or time steps, leaving early parameters with negligible updates. It arises because repeated multiplication by small derivative terms, characteristic of saturating activation functions, drives the gradient towards zero. The effect severely impedes learning of long-range dependencies and was a central obstacle to deep learning before mitigations emerged. Remedies include non-saturating activations, careful weight initialisation, normalisation, residual connections and gated recurrent architectures such as the LSTM.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
+    }
+  ],
+  "relations": {
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      },
+      {
+        "@id": "urn:ngm:class:recurrent-neural-network",
+        "label": "Recurrent Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:backpropagation","label":"Backpropagation"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:backpropagation",
+        "label": "Backpropagation"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:residual-connection","label":"Residual Connection"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:activation-function","label":"Activation Function"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:lstm","label":"LSTM"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:lstm",
+        "label": "LSTM"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:residual-connection","label":"Residual Connection"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:residual-connection",
+        "label": "Residual Connection"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:lstm","label":"LSTM"},
-      {"@id":"urn:ngm:class:batch-normalisation","label":"Batch Normalisation"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:lstm",
+        "label": "LSTM"
+      },
+      {
+        "@id": "urn:ngm:class:batch-normalisation",
+        "label": "Batch Normalisation"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:weight-initialisation","label":"Weight Initialisation"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:weight-initialisation",
+        "label": "Weight Initialisation"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

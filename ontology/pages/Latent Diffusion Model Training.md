@@ -24,11 +24,26 @@ elevatedFrom:: [[Stable Diffusion Training]]
   "definition": "Stable Diffusion training is the process of fitting a latent text-to-image diffusion model by teaching a denoising network to reverse a gradual noising process in a compressed latent space, conditioned on text embeddings. Operating in latent rather than pixel space sharply reduces compute and memory, while techniques such as fine-tuning, LoRA, and DreamBooth adapt a base model to new styles or subjects. It underpins much of open-weight generative image and video tooling.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "@id": "urn:ngm:class:model-training",
+      "label": "Model Training"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:fast-ai", "label": "fast.ai"},
-      {"@id": "urn:ngm:class:proprietary-ai-video", "label": "Proprietary AI Video"}
+      {
+        "@id": "urn:ngm:class:fast-ai",
+        "label": "fast.ai"
+      },
+      {
+        "@id": "urn:ngm:class:proprietary-ai-video",
+        "label": "Proprietary AI Video"
+      }
     ]
   },
   "quality": 0.72

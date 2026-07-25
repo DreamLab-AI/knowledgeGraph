@@ -123,8 +123,8 @@ public:: true
         "label": "Merkle Tree"
       },
       {
-        "@id": "urn:ngm:class:elliptic-curve-digital-signature-algorithm",
-        "label": "Elliptic Curve Digital Signature Algorithm"
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
       }
     ],
     "standardizedBy": [

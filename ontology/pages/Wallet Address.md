@@ -17,6 +17,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:public-key",
+      "label": "Public Key"
     }
   ],
   "relations": {

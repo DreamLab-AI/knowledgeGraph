@@ -18,6 +18,10 @@ public:: true
     {
       "@id": "urn:ngm:class:ethereum",
       "label": "Ethereum"
+    },
+    {
+      "@id": "urn:ngm:class:governance-proposal",
+      "label": "Governance Proposal"
     }
   ],
   "relations": {

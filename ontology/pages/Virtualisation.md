@@ -8,27 +8,112 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:virtualisation",
-  "@type":"Class",
-  "label":"Virtualisation",
-  "definition":"Virtualisation is the creation of abstracted, software-defined representations of physical computing resources — processors, memory, storage and networks — allowing multiple isolated environments to share one set of hardware. A hypervisor or equivalent control layer presents each environment with the illusion of dedicated resources while multiplexing the underlying hardware. It is the foundational technology behind cloud computing, enabling consolidation, isolation, elastic provisioning and efficient utilisation of infrastructure.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"},{"@id":"urn:ngm:class:scalability","label":"Scalability"},{"@id":"urn:ngm:class:network-function-virtualization","label":"Network Function Virtualization"}],
-    "uses":[{"@id":"urn:ngm:class:hypervisor","label":"Hypervisor"},{"@id":"urn:ngm:class:hardware-abstraction","label":"Hardware Abstraction"},{"@id":"urn:ngm:class:operating-system","label":"Operating System"}],
-    "requires":[{"@id":"urn:ngm:class:compute-resources","label":"Compute Resources"},{"@id":"urn:ngm:class:resource-management","label":"Resource Management"}],
-    "dependsOn":[{"@id":"urn:ngm:class:hardware-abstraction","label":"Hardware Abstraction"}],
-    "hasPart":[{"@id":"urn:ngm:class:virtual-machine","label":"Virtual Machine"}],
-    "supports":[{"@id":"urn:ngm:class:data-centre","label":"Data Centre"},{"@id":"urn:ngm:class:resource-management","label":"Resource Management"}],
-    "relatedTo":[{"@id":"urn:ngm:class:hypervisor","label":"Hypervisor"},{"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"},{"@id":"urn:ngm:class:operating-system","label":"Operating System"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:kubernetes","label":"Kubernetes"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:virtualisation",
+  "@type": "Class",
+  "label": "Virtualisation",
+  "definition": "Virtualisation is the creation of abstracted, software-defined representations of physical computing resources — processors, memory, storage and networks — allowing multiple isolated environments to share one set of hardware. A hypervisor or equivalent control layer presents each environment with the illusion of dedicated resources while multiplexing the underlying hardware. It is the foundational technology behind cloud computing, enabling consolidation, isolation, elastic provisioning and efficient utilisation of infrastructure.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:operating-system",
+      "label": "Operating System"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:network-function-virtualization",
+        "label": "Network Function Virtualization"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:compute-resources",
+        "label": "Compute Resources"
+      },
+      {
+        "@id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:data-centre",
+        "label": "Data Centre"
+      },
+      {
+        "@id": "urn:ngm:class:resource-management",
+        "label": "Resource Management"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hypervisor",
+        "label": "Hypervisor"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

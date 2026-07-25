@@ -15,34 +15,88 @@ public:: true
   "definition": "Z-Wave is a low-power wireless communication protocol designed specifically for home automation and smart home devices, operating in the sub-GHz frequency band (868 MHz in Europe, 908 MHz in North America). It uses a mesh networking topology where each device can relay signals, extending range and improving reliability throughout a building. Z-Wave supports up to 232 nodes per network and is governed by the Z-Wave Alliance, which maintains interoperability standards across manufacturers.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:zigbee", "label": "Zigbee"},
-      {"@id": "urn:ngm:class:bluetooth-low-energy", "label": "Bluetooth Low Energy"},
-      {"@id": "urn:ngm:class:thread-protocol", "label": "Thread Protocol"},
-      {"@id": "urn:ngm:class:wifi", "label": "Wi-Fi"}
+      {
+        "@id": "urn:ngm:class:zigbee",
+        "label": "Zigbee"
+      },
+      {
+        "@id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      },
+      {
+        "@id": "urn:ngm:class:thread-protocol",
+        "label": "Thread Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:wifi",
+        "label": "Wi-Fi"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:mesh-networking", "label": "Mesh Networking"},
-      {"@id": "urn:ngm:class:wireless-protocol", "label": "Wireless Protocol"}
+      {
+        "@id": "urn:ngm:class:mesh-networking",
+        "label": "Mesh Networking"
+      },
+      {
+        "@id": "urn:ngm:class:wireless-protocol",
+        "label": "Wireless Protocol"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:encryption", "label": "Encryption"},
-      {"@id": "urn:ngm:class:aes", "label": "AES"}
+      {
+        "@id": "urn:ngm:class:encryption",
+        "label": "Encryption"
+      },
+      {
+        "@id": "urn:ngm:class:aes-encryption",
+        "label": "AES Encryption"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:smart-home", "label": "Smart Home"},
-      {"@id": "urn:ngm:class:home-automation", "label": "Home Automation"},
-      {"@id": "urn:ngm:class:iot-device", "label": "IoT Device"}
+      {
+        "@id": "urn:ngm:class:smart-home",
+        "label": "Smart Home"
+      },
+      {
+        "@id": "urn:ngm:class:home-automation",
+        "label": "Home Automation"
+      },
+      {
+        "@id": "urn:ngm:class:iot-device",
+        "label": "IoT Device"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:lpwan", "label": "LPWAN"},
-      {"@id": "urn:ngm:class:industrial-io-t", "label": "Industrial IoT"},
-      {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"}
+      {
+        "@id": "urn:ngm:class:lpwan",
+        "label": "LPWAN"
+      },
+      {
+        "@id": "urn:ngm:class:industrial-io-t",
+        "label": "Industrial IoT"
+      },
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:standards", "label": "Standards"}
+      {
+        "@id": "urn:ngm:class:standards",
+        "label": "Standards"
+      }
     ]
   },
   "quality": 0.62,

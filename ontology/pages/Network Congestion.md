@@ -6,28 +6,102 @@ public:: true
 ```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:network-congestion",
-  "@type":"Class",
-  "label":"Network Congestion",
-  "definition":"Network congestion is the state in which the demand for a network's processing capacity exceeds its available throughput, causing transactions to queue and confirmation times and fees to rise. On a blockchain it occurs when the volume of pending transactions outstrips the space available in upcoming blocks, filling the mempool and triggering competitive fee bidding. Congestion exposes the scalability limits of a system and is a primary driver of fee market dynamics and layer-2 adoption. It is both a symptom of demand and a constraint that shapes protocol design.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
-  "relations":{
-    "dependsOn":[{"@id":"urn:ngm:class:scalability","label":"Scalability"},{"@id":"urn:ngm:class:block-time","label":"Block Time"}],
-    "relatedTo":[{"@id":"urn:ngm:class:mempool","label":"Mempool"},{"@id":"urn:ngm:class:fee-market","label":"Fee Market"},{"@id":"urn:ngm:class:transaction-fee","label":"Transaction Fee"},{"@id":"urn:ngm:class:transaction","label":"Transaction"}],
-    "enables":[{"@id":"urn:ngm:class:fee-market","label":"Fee Market"}],
-    "partOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
-    "requires":[{"@id":"urn:ngm:class:scalability","label":"Scalability"}],
-    "uses":[{"@id":"urn:ngm:class:mempool","label":"Mempool"}],
-    "supports":[{"@id":"urn:ngm:class:transaction-fee","label":"Transaction Fee"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:gas-fee","label":"Gas Fee"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:scalability","label":"Scalability"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:network-congestion",
+  "@type": "Class",
+  "label": "Network Congestion",
+  "definition": "Network congestion is the state in which the demand for a network's processing capacity exceeds its available throughput, causing transactions to queue and confirmation times and fees to rise. On a blockchain it occurs when the volume of pending transactions outstrips the space available in upcoming blocks, filling the mempool and triggering competitive fee bidding. Congestion exposes the scalability limits of a system and is a primary driver of fee market dynamics and layer-2 adoption. It is both a symptom of demand and a constraint that shapes protocol design.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:transaction-pool",
+      "label": "Transaction Pool"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:block-time",
+        "label": "Block Time"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      },
+      {
+        "@id": "urn:ngm:class:transaction",
+        "label": "Transaction"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fee-market",
+        "label": "Fee Market"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 - ### Definition

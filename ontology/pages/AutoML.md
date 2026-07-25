@@ -263,8 +263,8 @@ alias:: Auto-ML
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:reproducible-experiments",
-        "label": "Reproducible Experiments"
+        "@id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
       },
       {
         "@id": "urn:ngm:class:resource-efficiency",

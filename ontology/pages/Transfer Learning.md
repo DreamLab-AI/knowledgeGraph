@@ -26,6 +26,10 @@ alias:: TransferLearning
     {
       "@id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:deep-learning",
+      "label": "Deep Learning"
     }
   ],
   "sameAs": [

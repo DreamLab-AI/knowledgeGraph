@@ -13,7 +13,7 @@ public:: true
   "definition":"Building Information Modelling (BIM) is a collaborative process for creating and managing a shared digital representation of the physical and functional characteristics of a built asset across its lifecycle. A BIM model is an object-oriented, parametric 3D database in which geometry is enriched with semantic data such as materials, costs, schedules and performance properties. It supports coordinated design, clash detection, quantity take-off and facility management by allowing architects, engineers and contractors to work against a single federated source of truth. BIM underpins the convergence of construction practice with digital twin and spatial computing technologies.",
   "domain":"spatial-computing",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}],
+  "subClassOf":[{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"},{"@id":"urn:ngm:class:digital-twin","label":"Digital Twin"}],
   "relations":{
     "partOf":[{"@id":"urn:ngm:class:digital-twin","label":"Digital Twin"}],
     "hasPart":[{"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"}],

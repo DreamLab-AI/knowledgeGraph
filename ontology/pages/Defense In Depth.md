@@ -28,7 +28,7 @@ public:: true
       {"@id":"urn:ngm:class:access-control","label":"Access Control"}
     ],
     "requires":[
-      {"@id":"urn:ngm:class:intrusion-detection","label":"Intrusion Detection"}
+      {"@id":"urn:ngm:class:intrusion-detection-system","label":"Intrusion Detection System"}
     ],
     "enables":[
       {"@id":"urn:ngm:class:risk-mitigation","label":"Risk Mitigation"}

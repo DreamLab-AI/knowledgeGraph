@@ -15,7 +15,7 @@ public:: true
   "definition":"An overlay network is a logical network built on top of an existing physical or underlay network, where nodes are connected by virtual links that may each traverse many underlying hops. By abstracting away the physical topology, overlays implement custom routing, addressing and services such as peer-to-peer file sharing, content delivery and encrypted tunnelling. They trade some efficiency for flexibility, resilience and the ability to deploy new network behaviour without changing the underlay.",
   "domain":"infrastructure",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}],
+  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"},{"@id":"urn:ngm:class:networking-infrastructure","label":"Networking Infrastructure"}],
   "relations":{
     "partOf":[{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}],
     "implements":[{"@id":"urn:ngm:class:virtual-network","label":"Virtual Network"}],

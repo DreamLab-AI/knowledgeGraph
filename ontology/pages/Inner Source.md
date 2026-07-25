@@ -8,48 +8,100 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:inner-source",
-  "@type":"Class",
-  "label":"Inner Source",
-  "definition":"Inner source is the adoption of open-source development practices, tools and culture within the boundaries of a single organisation, allowing teams to discover, use and contribute to each other's code as if it were open source internally. It promotes shared repositories, transparent collaboration, peer review and meritocratic contribution while keeping the code private to the company. The approach aims to reduce duplication, improve quality and spread knowledge across organisational silos.",
-  "domain":"distributed-collaboration",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:distributed-collaboration","label":"Distributed Collaboration"}],
-  "relations":{
-    "uses":[
-      {"@id":"urn:ngm:class:version-control","label":"Version Control"},
-      {"@id":"urn:ngm:class:open-source","label":"Open Source"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:inner-source",
+  "@type": "Class",
+  "label": "Inner Source",
+  "definition": "Inner source is the adoption of open-source development practices, tools and culture within the boundaries of a single organisation, allowing teams to discover, use and contribute to each other's code as if it were open source internally. It promotes shared repositories, transparent collaboration, peer review and meritocratic contribution while keeping the code private to the company. The approach aims to reduce duplication, improve quality and spread knowledge across organisational silos.",
+  "domain": "distributed-collaboration",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:open-source",
+      "label": "Open Source"
+    }
+  ],
+  "relations": {
+    "uses": [
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      },
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:knowledge-sharing","label":"Knowledge Sharing"},
-      {"@id":"urn:ngm:class:collaboration","label":"Collaboration"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:knowledge-sharing",
+        "label": "Knowledge Sharing"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:software-development","label":"Software Development"},
-      {"@id":"urn:ngm:class:software-engineering","label":"Software Engineering"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:software-development",
+        "label": "Software Development"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:proprietary-software","label":"Proprietary Software"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:proprietary-software",
+        "label": "Proprietary Software"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:governance-model","label":"Governance Model"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:governance-model",
+        "label": "Governance Model"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:open-source","label":"Open Source"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:open-source","label":"Open Source"},
-      {"@id":"urn:ngm:class:community","label":"Community"},
-      {"@id":"urn:ngm:class:collaboration","label":"Collaboration"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      },
+      {
+        "@id": "urn:ngm:class:community",
+        "label": "Community"
+      },
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:distributed-collaboration","label":"Distributed Collaboration"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

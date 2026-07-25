@@ -23,20 +23,50 @@ public:: true
   "definition": "AR occlusion is the computational technique by which virtual objects rendered in an augmented reality scene are correctly hidden or partially hidden by real-world geometry that physically lies in front of them from the viewer's perspective. Achieving occlusion requires real-time estimation of the depth structure of the physical scene, typically via depth sensors or monocular depth estimation neural networks, so that the rendering pipeline can apply correct depth ordering between real and virtual content. Without occlusion, virtual objects appear to float unconvincingly in front of all physical surfaces regardless of their spatial relationship.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:augmented-reality",
+      "label": "Augmented Reality"
+    },
+    {
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:depth-estimation", "label": "Depth Estimation"},
-      {"@id": "urn:ngm:class:scene-understanding", "label": "Scene Understanding"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}
+      {
+        "@id": "urn:ngm:class:depth-estimation",
+        "label": "Depth Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:scene-understanding",
+        "label": "Scene Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"},
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"}
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:occlusion-rendering", "label": "Occlusion Rendering"},
-      {"@id": "urn:ngm:class:mixed-reality", "label": "Mixed Reality"}
+      {
+        "@id": "urn:ngm:class:occlusion-rendering",
+        "label": "Occlusion Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:mixed-reality",
+        "label": "Mixed Reality"
+      }
     ]
   },
   "quality": 0.8

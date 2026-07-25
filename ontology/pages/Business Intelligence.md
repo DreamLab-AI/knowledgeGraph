@@ -68,10 +68,6 @@ public:: true
         "label": "Decision Support"
       },
       {
-        "@id": "urn:ngm:class:performance-management",
-        "label": "Performance Management"
-      },
-      {
         "@id": "urn:ngm:class:kpi-monitoring",
         "label": "KPI Monitoring"
       }

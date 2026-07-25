@@ -358,10 +358,6 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:onboarding",
-        "label": "Onboarding"
-      },
-      {
         "@id": "urn:ngm:class:asynchronous-video",
         "label": "Asynchronous Video"
       },

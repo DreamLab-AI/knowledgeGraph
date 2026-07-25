@@ -6,47 +6,96 @@ public:: true
 ```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:biomedical-engineering",
-  "@type":"Class",
-  "label":"Biomedical Engineering",
-  "definition":"Biomedical engineering is the discipline that applies engineering principles, materials, and computational methods to medicine and biology in order to design devices, systems, and processes that diagnose, monitor, treat, or restore human function. It spans medical instrumentation, biomaterials, prosthetics and exoskeletons, rehabilitation robotics, and biosignal processing, bridging mechanical, electrical, and control engineering with the life sciences and clinical practice.",
-  "domain":"robotics",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:robotics","label":"Robotics"}],
-  "relations":{
-    "supports":[
-      {"@id":"urn:ngm:class:prosthetics","label":"Prosthetics"},
-      {"@id":"urn:ngm:class:rehabilitation-robotics","label":"Rehabilitation Robotics"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:biomedical-engineering",
+  "@type": "Class",
+  "label": "Biomedical Engineering",
+  "definition": "Biomedical engineering is the discipline that applies engineering principles, materials, and computational methods to medicine and biology in order to design devices, systems, and processes that diagnose, monitor, treat, or restore human function. It spans medical instrumentation, biomaterials, prosthetics and exoskeletons, rehabilitation robotics, and biosignal processing, bridging mechanical, electrical, and control engineering with the life sciences and clinical practice.",
+  "domain": "robotics",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:medical-robot",
+      "label": "Medical Robot"
+    }
+  ],
+  "relations": {
+    "supports": [
+      {
+        "@id": "urn:ngm:class:prosthetics",
+        "label": "Prosthetics"
+      },
+      {
+        "@id": "urn:ngm:class:rehabilitation-robotics",
+        "label": "Rehabilitation Robotics"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"},
-      {"@id":"urn:ngm:class:control-theory","label":"Control Theory"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:exoskeleton","label":"Exoskeleton"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:exoskeleton",
+        "label": "Exoskeleton"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:sensor-fusion","label":"Sensor Fusion"},
-      {"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:control-theory","label":"Control Theory"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:control-theory",
+        "label": "Control Theory"
+      }
     ],
-    "hasPart":[
-      {"@id":"urn:ngm:class:prosthetics","label":"Prosthetics"}
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:prosthetics",
+        "label": "Prosthetics"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:robotic-system","label":"Robotic System"},
-      {"@id":"urn:ngm:class:rehabilitation-robotics","label":"Rehabilitation Robotics"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robotic-system",
+        "label": "Robotic System"
+      },
+      {
+        "@id": "urn:ngm:class:rehabilitation-robotics",
+        "label": "Rehabilitation Robotics"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:signal-processing",
+        "label": "Signal Processing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 - ### Definition

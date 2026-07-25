@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:immutability",
+      "label": "Immutability"
     }
   ],
   "relations": {

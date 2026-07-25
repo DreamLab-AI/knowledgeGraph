@@ -15,7 +15,7 @@ public:: true
   "definition":"Broadcast television is the distribution of moving-image and audio content to a general audience over terrestrial, satellite, or cable channels, in which a single signal is transmitted simultaneously to many passive receivers. It evolved from analogue standards such as PAL and NTSC to digital systems like DVB and ATSC that carry compressed video over the same spectrum. As a one-to-many medium with scheduled programming, it contrasts with on-demand internet streaming.",
   "domain":"infrastructure",
   "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}],
+  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"},{"@id":"urn:ngm:class:infra-network-and-comms","label":"Network and Communication"}],
   "relations":{
     "hasPart":[{"@id":"urn:ngm:class:video-codec","label":"Video Codec"},{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}],
     "uses":[{"@id":"urn:ngm:class:video-compression","label":"Video Compression"},{"@id":"urn:ngm:class:video-codec","label":"Video Codec"},{"@id":"urn:ngm:class:signal-processing","label":"Signal Processing"}],

@@ -78,8 +78,8 @@ public:: true
         "label": "Legitimacy"
       },
       {
-        "@id": "urn:ngm:class:co-design",
-        "label": "Co-Design"
+        "@id": "urn:ngm:class:participatory-design",
+        "label": "Participatory Design"
       }
     ],
     "uses": [

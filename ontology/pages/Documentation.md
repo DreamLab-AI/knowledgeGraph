@@ -20,7 +20,7 @@ public:: true
     "supports":[{"@id":"urn:ngm:class:reproducibility","label":"Reproducibility"},{"@id":"urn:ngm:class:knowledge-management","label":"Knowledge Management"}],
     "requires":[{"@id":"urn:ngm:class:version-control","label":"Version Control"},{"@id":"urn:ngm:class:metadata","label":"Metadata"}],
     "dependsOn":[{"@id":"urn:ngm:class:data","label":"Data"}],
-    "enables":[{"@id":"urn:ngm:class:onboarding","label":"Onboarding"},{"@id":"urn:ngm:class:maintainability","label":"Maintainability"}],
+    "enables":[{"@id":"urn:ngm:class:maintainability","label":"Maintainability"}],
     "uses":[{"@id":"urn:ngm:class:markdown","label":"Markdown"},{"@id":"urn:ngm:class:static-site-generation","label":"Static Site Generation"}],
     "hasPart":[{"@id":"urn:ngm:class:api-reference","label":"API Reference"},{"@id":"urn:ngm:class:tutorial","label":"Tutorial"}],
     "relatedTo":[{"@id":"urn:ngm:class:technical-writing","label":"Technical Writing"},{"@id":"urn:ngm:class:reproducible-research","label":"Reproducible Research"}],

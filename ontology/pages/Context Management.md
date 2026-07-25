@@ -14,7 +14,7 @@ public:: true
   "definition":"Context management is the set of techniques for assembling, prioritising, compressing, and maintaining the information supplied to a language model within its bounded context window across a task or conversation. It governs what prompts, retrieved documents, prior turns, tool outputs, and state are placed in context, in what order, and at what fidelity, so that the model has the most relevant evidence without exceeding token limits. Effective context management is central to retrieval-augmented generation, long-running agents, and conversational systems, where it directly shapes coherence, accuracy, and cost.",
   "domain":"ai",
   "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"}],
+  "subClassOf":[{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"},{"@id":"urn:ngm:class:prompt-engineering","label":"Prompt Engineering"}],
   "relations":{
     "hasPart":[
       {"@id":"urn:ngm:class:context-window","label":"Context Window"},

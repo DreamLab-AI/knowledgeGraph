@@ -38,7 +38,7 @@ public:: true
       {"@id": "urn:ngm:class:identity-based-encryption", "label": "Identity-Based Encryption"},
       {"@id": "urn:ngm:class:bls-signature", "label": "BLS Signature"},
       {"@id": "urn:ngm:class:zero-knowledge-proof", "label": "Zero Knowledge Proof"},
-      {"@id": "urn:ngm:class:threshold-signature", "label": "Threshold Signature"}
+      {"@id": "urn:ngm:class:threshold-signature-scheme", "label": "Threshold Signature Scheme"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:weil-pairing", "label": "Weil Pairing"},

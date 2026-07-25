@@ -24,42 +24,108 @@ public:: true
   "definition": "A two-way peg (2WP) is a blockchain mechanism that enables assets to be transferred bidirectionally between a parent chain and a sidechain, with the asset supply conserved across both chains. When an asset is locked on the parent chain, an equivalent representation is minted on the sidechain; when returned to the parent chain, the sidechain representation is burned and the original asset is unlocked. Two-way pegs are the foundational primitive for sidechain interoperability, enabling specialised execution environments whilst tethering their native asset to a more secure base layer.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:sidechain",
+      "label": "Sidechain"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:lock-and-mint", "label": "Lock and Mint"},
-      {"@id": "urn:ngm:class:burn-and-release", "label": "Burn and Release"},
-      {"@id": "urn:ngm:class:federation", "label": "Federation"}
+      {
+        "@id": "urn:ngm:class:lock-and-mint",
+        "label": "Lock and Mint"
+      },
+      {
+        "@id": "urn:ngm:class:burn-and-release",
+        "label": "Burn and Release"
+      },
+      {
+        "@id": "urn:ngm:class:federation",
+        "label": "Federation"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:sidechain", "label": "Sidechain"},
-      {"@id": "urn:ngm:class:cross-chain-bridge", "label": "Cross-Chain Bridge"}
+      {
+        "@id": "urn:ngm:class:sidechain",
+        "label": "Sidechain"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:cryptographic-proof", "label": "Cryptographic Proof"}
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-proof",
+        "label": "Cryptographic Proof"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:layer-2-scaling", "label": "Layer 2 Scaling"},
-      {"@id": "urn:ngm:class:cross-chain-interoperability", "label": "Cross-Chain Interoperability"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-interoperability",
+        "label": "Cross-Chain Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:threshold-signature", "label": "Threshold Signature"},
-      {"@id": "urn:ngm:class:merkle-proof", "label": "Merkle Proof"},
-      {"@id": "urn:ngm:class:spv-verification", "label": "SPV Verification"}
+      {
+        "@id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
+      },
+      {
+        "@id": "urn:ngm:class:merkle-proof",
+        "label": "Merkle Proof"
+      },
+      {
+        "@id": "urn:ngm:class:spv-verification",
+        "label": "SPV Verification"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:atomic-swap", "label": "Atomic Swap"},
-      {"@id": "urn:ngm:class:optimistic-rollup", "label": "Optimistic Rollup"},
-      {"@id": "urn:ngm:class:zero-knowledge-rollup", "label": "Zero Knowledge Rollup"}
+      {
+        "@id": "urn:ngm:class:atomic-swap",
+        "label": "Atomic Swap"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      },
+      {
+        "@id": "urn:ngm:class:zero-knowledge-rollup",
+        "label": "Zero Knowledge Rollup"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:one-way-peg", "label": "One Way Peg"},
-      {"@id": "urn:ngm:class:wrapped-token", "label": "Wrapped Token"}
+      {
+        "@id": "urn:ngm:class:one-way-peg",
+        "label": "One Way Peg"
+      },
+      {
+        "@id": "urn:ngm:class:wrapped-token",
+        "label": "Wrapped Token"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:consensus-mechanism", "label": "Consensus Mechanism"}
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
     ]
   },
   "quality": 0.62,

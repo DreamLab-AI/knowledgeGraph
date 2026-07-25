@@ -596,8 +596,8 @@ public:: true
         "label": "Privacy-Preserving Authentication"
       },
       {
-        "@id": "urn:ngm:class:pseudonymous-identity",
-        "label": "Pseudonymous Identity"
+        "@id": "urn:ngm:class:pseudonymity",
+        "label": "Pseudonymity"
       },
       {
         "@id": "urn:ngm:class:selective-disclosure",

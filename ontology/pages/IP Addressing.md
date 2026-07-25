@@ -14,7 +14,7 @@ public:: true
   "definition":"IP addressing is the scheme by which every host and interface on an Internet Protocol network is assigned a numeric identifier used to locate and route datagrams to it. It encompasses the structure of IPv4 and IPv6 address spaces, the partition of addresses into network and host portions via subnet masks and prefixes, and the assignment mechanisms that allocate addresses to devices. Correct addressing is the precondition for routing decisions and end-to-end delivery across interconnected networks.",
   "domain":"infrastructure",
   "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:internet-protocol","label":"Internet Protocol"}],
+  "subClassOf":[{"@id":"urn:ngm:class:internet-protocol","label":"Internet Protocol"},{"@id":"urn:ngm:class:network-infrastructure","label":"Network Infrastructure"}],
   "relations":{
     "partOf":[
       {"@id":"urn:ngm:class:internet-protocol","label":"Internet Protocol"},

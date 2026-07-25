@@ -102,8 +102,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:acid-compliance",
-        "label": "ACID Compliance"
+        "@id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
       },
       {
         "@id": "urn:ngm:class:data-consistency",
@@ -269,7 +269,7 @@ public:: true
   - A centralised database concentrates data storage, retrieval, and administration within a single server or tightly-coupled cluster operated by a single controlling authority.
   - All client applications connect to this central point; there is one canonical representation of every record, eliminating the synchronisation complexity inherent to [[Distributed Systems]].
   - **Why it matters**
-    - Provides the simplest operational model for achieving [[ACID Compliance]]: Atomicity, Consistency, Isolation, and Durability are enforced locally without the need for distributed coordination protocols.
+    - Provides the simplest operational model for achieving [[ACID Properties]]: Atomicity, Consistency, Isolation, and Durability are enforced locally without the need for distributed coordination protocols.
     - Enables deterministic [[Query Optimisation]] because the query planner has full visibility of all data in one place.
     - Supports mature tooling for [[Data Governance]], schema management, and reporting that has been refined over decades.
     - Regulatory regimes (GDPR, HIPAA, SOX) often assume a single data custodian, making centralised control easier to audit and certify.
@@ -294,7 +294,7 @@ public:: true
   - **Network Interface / Connection Pool** — manages client connections over TCP/IP, reducing connection overhead for high-concurrency workloads. Requires [[Network Infrastructure]].
 
 - ### Mechanisms
-  - **ACID Compliance** — all transactions satisfy Atomicity (all-or-nothing), Consistency (valid state transitions), Isolation (concurrent transactions do not corrupt each other), and Durability (committed data survives crashes). See [[ACID Compliance]] and [[ACID Transactions]].
+  - **ACID Properties** — all transactions satisfy Atomicity (all-or-nothing), Consistency (valid state transitions), Isolation (concurrent transactions do not corrupt each other), and Durability (committed data survives crashes). See [[ACID Properties]] and [[ACID Transactions]].
   - **MVCC (Multi-Version Concurrency Control)** — maintains multiple row versions so readers do not block writers; used in PostgreSQL, Oracle, and MySQL InnoDB. Supports high read concurrency without locking.
   - **Write-Ahead Logging (WAL)** — changes are first written to a sequential log before being applied to data pages, enabling crash recovery and streaming [[Replication]].
   - **Index Structures** — B-tree, hash, GIN, and GiST indexes stored centrally allow the [[Query Engine]] to satisfy predicates without full-table scans. See [[Indexing]].
@@ -304,7 +304,7 @@ public:: true
 
 - ### Applications and Use Cases
   - **Enterprise Resource Planning (ERP)** — systems such as SAP and Oracle EBS rely on a centralised database as the single source of truth for financial, HR, and supply-chain records.
-  - **Banking and Financial Services** — core banking platforms require strict [[ACID Compliance]] and a single authoritative ledger; centralised RDBMS (Oracle DB, IBM Db2) dominate. See [[Finance]].
+  - **Banking and Financial Services** — core banking platforms require strict [[ACID Properties]] and a single authoritative ledger; centralised RDBMS (Oracle DB, IBM Db2) dominate. See [[Finance]].
   - **Healthcare Record Systems** — electronic health record (EHR) platforms centralise patient data to enforce [[Regulatory Compliance]] with HIPAA and equivalent standards.
   - **Government and Public Sector** — tax authorities, land registries, and identity systems store records in tightly controlled centralised stores. Connects to [[Data Governance]].
   - **E-commerce Platforms** — product catalogues, inventory, and order management typically run on centralised RDBMS before sharding becomes necessary at extreme scale.
@@ -317,7 +317,7 @@ public:: true
   - hasPart:: [[Relational Database]], [[Query Engine]], [[Access Control]], [[Transaction Management]]
   - partOf:: [[Information System]], [[Data Management]]
   - requires:: [[Network Infrastructure]], [[Data Storage]], [[Backup and Recovery]]
-  - enables:: [[ACID Compliance]], [[Data Consistency]], [[Centralised Access Control]]
+  - enables:: [[ACID Properties]], [[Data Consistency]], [[Centralised Access Control]]
   - dependsOn:: [[Server Infrastructure]], [[Operating System]]
   - implements:: [[SQL]], [[ACID Transactions]]
   - uses:: [[Indexing]], [[Query Optimisation]], [[Replication]]

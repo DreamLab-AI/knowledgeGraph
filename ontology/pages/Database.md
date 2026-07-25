@@ -8,51 +8,112 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:database",
-  "@type":"Class",
-  "label":"Database",
-  "definition":"A database is an organised collection of structured data managed by a database management system that supports persistent storage, efficient retrieval, concurrent access and integrity guarantees. Databases expose query interfaces, enforce schemas or schemaless models, and provide transactional or eventual-consistency semantics depending on their design. They form the durable state layer beneath most data-intensive applications and services.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:sql","label":"SQL"},
-      {"@id":"urn:ngm:class:persistence","label":"Persistence"},
-      {"@id":"urn:ngm:class:caching","label":"Caching"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:database",
+  "@type": "Class",
+  "label": "Database",
+  "definition": "A database is an organised collection of structured data managed by a database management system that supports persistent storage, efficient retrieval, concurrent access and integrity guarantees. Databases expose query interfaces, enforce schemas or schemaless models, and provide transactional or eventual-consistency semantics depending on their design. They form the durable state layer beneath most data-intensive applications and services.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:data-management",
+      "label": "Data Management"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sql",
+        "label": "SQL"
+      },
+      {
+        "@id": "urn:ngm:class:persistence",
+        "label": "Persistence"
+      },
+      {
+        "@id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:data-integrity","label":"Data Integrity"},
-      {"@id":"urn:ngm:class:schema","label":"Schema"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:data-integrity",
+        "label": "Data Integrity"
+      },
+      {
+        "@id": "urn:ngm:class:schema",
+        "label": "Schema"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:data-pipeline","label":"Data Pipeline"},
-      {"@id":"urn:ngm:class:data-engineering","label":"Data Engineering"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:data-engineering",
+        "label": "Data Engineering"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:microservices","label":"Microservices"},
-      {"@id":"urn:ngm:class:high-availability","label":"High Availability"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:scalability","label":"Scalability"},
-      {"@id":"urn:ngm:class:disaster-recovery","label":"Disaster Recovery"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      },
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:access-control","label":"Access Control"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:access-control",
+        "label": "Access Control"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:caching","label":"Caching"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:data-quality","label":"Data Quality"},
-      {"@id":"urn:ngm:class:observability","label":"Observability"},
-      {"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -23,31 +23,88 @@ public:: true
   "definition": "Benign overfitting is the phenomenon, observed in heavily overparameterised models such as deep neural networks, where a model fits its training data exactly, including noise, yet still generalises well to unseen data. This contradicts the classical bias-variance trade-off, which predicts that interpolating noise should harm generalisation. It is closely associated with the double-descent risk curve and is a central puzzle in modern statistical learning theory.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:algorithmic-bias-and-variance", "label": "Algorithmic Bias and Variance"},
-      {"@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation"},
-      {"@id": "urn:ngm:class:double-descent", "label": "Double Descent"},
-      {"@id": "urn:ngm:class:overparameterisation", "label": "Overparameterisation"},
-      {"@id": "urn:ngm:class:statistical-learning-theory", "label": "Statistical Learning Theory"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:grokking", "label": "Grokking"}
+      {
+        "@id": "urn:ngm:class:algorithmic-bias-and-variance",
+        "label": "Algorithmic Bias and Variance"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:double-descent",
+        "label": "Double Descent"
+      },
+      {
+        "@id": "urn:ngm:class:overparameterisation",
+        "label": "Overparameterisation"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:grokking",
+        "label": "Grokking"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
-      {"@id": "urn:ngm:class:regularisation", "label": "Regularisation"},
-      {"@id": "urn:ngm:class:early-stopping", "label": "Early Stopping"}
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:regularisation",
+        "label": "Regularisation"
+      },
+      {
+        "@id": "urn:ngm:class:early-stopping",
+        "label": "Early Stopping"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:implicit-bias", "label": "Implicit Bias"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:overparameterisation", "label": "Overparameterisation"}
+      {
+        "@id": "urn:ngm:class:implicit-bias",
+        "label": "Implicit Bias"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:overparameterisation",
+        "label": "Overparameterisation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:generalisation", "label": "Generalisation"},
-      {"@id": "urn:ngm:class:interpolation", "label": "Interpolation"}
+      {
+        "@id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      },
+      {
+        "@id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
     ]
   },
   "quality": 0.72

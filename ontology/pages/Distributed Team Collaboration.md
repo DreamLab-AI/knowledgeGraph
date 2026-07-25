@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
     }
   ],
   "relations": {
@@ -93,10 +97,6 @@ public:: true
       }
     ],
     "requires": [
-      {
-        "@id": "urn:ngm:class:documentation-culture",
-        "label": "Documentation Culture"
-      },
       {
         "@id": "urn:ngm:class:communication-infrastructure",
         "label": "Digital Communication Infrastructure"

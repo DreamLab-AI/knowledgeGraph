@@ -20,7 +20,7 @@ public:: true
     "hasPart":[{"@id":"urn:ngm:class:physical-risk","label":"Physical Risk"},{"@id":"urn:ngm:class:transition-risk","label":"Transition Risk"}],
     "requires":[{"@id":"urn:ngm:class:climate-scenario-analysis","label":"Climate Scenario Analysis"},{"@id":"urn:ngm:class:materiality-assessment","label":"Materiality Assessment"}],
     "standardizedBy":[{"@id":"urn:ngm:class:tcfd","label":"TCFD"},{"@id":"urn:ngm:class:issb","label":"ISSB"}],
-    "enables":[{"@id":"urn:ngm:class:disclosure","label":"Disclosure"}],
+    "enables":[{"@id":"urn:ngm:class:disclosure-requirements","label":"Disclosure Requirements"}],
     "supports":[{"@id":"urn:ngm:class:sustainable-finance","label":"Sustainable Finance"},{"@id":"urn:ngm:class:corporate-governance","label":"Corporate Governance"}],
     "relatedTo":[{"@id":"urn:ngm:class:climate-change","label":"Climate Change"},{"@id":"urn:ngm:class:esg","label":"ESG"},{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"},{"@id":"urn:ngm:class:existential-risk","label":"Existential Risk"}],
     "bridgesTo":[{"@id":"urn:ngm:class:sustainability-reporting","label":"Sustainability Reporting"},{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"}],

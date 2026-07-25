@@ -8,26 +8,106 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:zero-shot-learning",
-  "@type":"Class",
-  "label":"Zero Shot Learning",
-  "definition":"Zero-shot learning is a machine-learning setting in which a model performs a task on classes or instances it has never seen during training, generalising from auxiliary information such as semantic attributes, natural-language descriptions or a shared embedding space. Modern instances exploit large pre-trained language and vision-language models that align inputs and labels in a common representation, enabling prediction by similarity rather than by fitting task-specific examples. It contrasts with few-shot and supervised learning by requiring no labelled examples of the target classes.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:transfer-learning","label":"Transfer Learning"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:image-classification","label":"Image Classification"},{"@id":"urn:ngm:class:natural-language-processing","label":"Natural Language Processing"},{"@id":"urn:ngm:class:classification","label":"Classification"}],
-    "uses":[{"@id":"urn:ngm:class:representation-learning","label":"Representation Learning"},{"@id":"urn:ngm:class:embedding","label":"Embedding"},{"@id":"urn:ngm:class:clip","label":"CLIP"},{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"}],
-    "dependsOn":[{"@id":"urn:ngm:class:transfer-learning","label":"Transfer Learning"}],
-    "supports":[{"@id":"urn:ngm:class:domain-adaptation","label":"Domain Adaptation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:few-shot-learning","label":"Few-Shot Learning"},{"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"}],
-    "relatedTo":[{"@id":"urn:ngm:class:meta-learning","label":"Meta-Learning"},{"@id":"urn:ngm:class:knowledge-transfer","label":"Knowledge Transfer"},{"@id":"urn:ngm:class:representation-learning","label":"Representation Learning"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:zero-shot-learning",
+  "@type": "Class",
+  "label": "Zero Shot Learning",
+  "definition": "Zero-shot learning is a machine-learning setting in which a model performs a task on classes or instances it has never seen during training, generalising from auxiliary information such as semantic attributes, natural-language descriptions or a shared embedding space. Modern instances exploit large pre-trained language and vision-language models that align inputs and labels in a common representation, enabling prediction by similarity rather than by fitting task-specific examples. It contrasts with few-shot and supervised learning by requiring no labelled examples of the target classes.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:ngm:class:meta-learning",
+      "label": "Meta-Learning"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:image-classification",
+        "label": "Image Classification"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      },
+      {
+        "@id": "urn:ngm:class:embedding",
+        "label": "Embedding"
+      },
+      {
+        "@id": "urn:ngm:class:clip",
+        "label": "CLIP"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:domain-adaptation",
+        "label": "Domain Adaptation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:few-shot-learning",
+        "label": "Few-Shot Learning"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:meta-learning",
+        "label": "Meta-Learning"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-transfer",
+        "label": "Knowledge Transfer"
+      },
+      {
+        "@id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

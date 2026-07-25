@@ -26,6 +26,10 @@ public:: true
     {
       "@id": "urn:ngm:class:augmented-reality",
       "label": "Augmented Reality"
+    },
+    {
+      "@id": "urn:ngm:class:ar-experiences",
+      "label": "Ar Experiences"
     }
   ],
   "relations": {

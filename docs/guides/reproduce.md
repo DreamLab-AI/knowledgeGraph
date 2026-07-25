@@ -3,7 +3,7 @@
 I ran every command below against this repository while writing the guide, on
 Linux, from a clean `python -m venv`. I mark steps I could **not** execute in
 this container **UNVERIFIED**, with the reason. Nothing here is aspirational.
-The end state is a 252,974-triple OWL file, a 7,457-node binary graph, and a React
+The end state is a 258,200-triple OWL file, a 7,874-node binary graph, and a React
 SPA rendering it, served from `localhost`.
 
 ---
@@ -42,31 +42,32 @@ Actual output:
 
 ```
 [1/7] Parsing ontology/pages...
-       7457 pages (7457 OntologyClass, 7457 public)
+       7874 pages (7874 OntologyClass, 7874 public)
 [2/7] Validating...
-       0 errors, 961 warnings
+       0 errors, 0 warnings
 [3/7] Generating Turtle...
-       252974 triples → dist/data/ontology.ttl
+       258200 triples → dist/data/ontology.ttl
 [4/7] Generating WebVOWL JSON...
-       7457 classes → dist/data/ontology.json
+       7874 classes → dist/data/ontology.json
 [5/7] Generating Page API...
-       7457 page files → dist/api/pages
+       7874 page files → dist/api/pages
 [6/7] Generating Search Index...
-       7457 entries → dist/api/search-index.json
+       7874 entries → dist/api/search-index.json
 [7/7] Emitting graph tiers (NGG1)...
-       7457 nodes, 96377 edges → dist/data/graph
+       7874 nodes, 98776 edges → dist/data/graph
 
-Pipeline complete in 18.1s
+Pipeline complete in 18.4s
   Output: dist
-  Classes: 7457
-  Triples: 252974
-  Pages: 7457
-  Search: 7457
+  Classes: 7874
+  Triples: 258200
+  Pages: 7874
+  Search: 7874
 ```
 
-Wall clock: 18.0 s in the reference run recorded in `docs/architecture/pipeline.md`;
-18.1 s when re-run for this guide. The 961 warnings are advisory and split
-957 `MULTI_PARENT` / 4 `INVALID_DOMAIN`:
+Wall clock: 18.4 s on each of the two runs recorded for this guide.
+
+The corpus raises **0 errors and 0 warnings**. It does raise 1,401 *informational*
+issues, all of them one code, `MULTI_PARENT`:
 
 ```python
 from pathlib import Path
@@ -75,8 +76,16 @@ from pipeline.jsonld_parser import parse_corpus
 from pipeline.validate import validate_corpus
 report = validate_corpus(parse_corpus(Path("ontology/pages")))
 print(Counter(i.code for i in report.issues))
-# Counter({'MULTI_PARENT': 957, 'INVALID_DOMAIN': 4})
+# Counter({'MULTI_PARENT': 1401})
 ```
+
+`MULTI_PARENT` used to be emitted as a warning, which read as a defect list. It
+is not one. Multiple inheritance is legal in OWL 2 EL, and in this corpus it is
+deliberate: classes are bridged across categories and domains by design.
+`pipeline/validate.py:153` now records it at severity `info`, and the
+bridging it describes is published rather than discarded; see `bridges.json`
+below. The 4 `INVALID_DOMAIN` warnings the corpus used to raise are gone; every
+`domain` string now falls inside the 16-entry `VALID_DOMAINS` set.
 
 `pipeline/build.py:119` exits non-zero only on *errors*.
 
@@ -84,18 +93,20 @@ What lands where:
 
 | Path | Size | Contents |
 |------|------|----------|
-| `dist/data/ontology.ttl` | 12,301,363 B | OWL 2 EL Turtle, 252,974 triples |
-| `dist/data/ontology.json` | 39,337,821 B | WebVOWL JSON, 7,457 classes / 103,102 properties |
-| `dist/data/graph/full.bin` | 1,282,989 B | NGG1 binary, 7,457 nodes / 96,377 edges |
+| `dist/data/ontology.ttl` | 12,710,991 B | OWL 2 EL Turtle, 258,200 triples |
+| `dist/data/ontology.json` | 40,382,315 B | WebVOWL JSON, 7,874 classes / 105,603 properties |
+| `dist/data/graph/full.bin` | 1,339,983 B | NGG1 binary, 7,874 nodes / 98,776 edges |
 | `dist/data/graph/domain-*.bin` | 6 files | per-domain tiers, capped at 1,500 nodes |
-| `dist/data/graph/overview.json`, `stats.json` | 15,986 B, 2,467 B | 40-node T0 tier; counts + provenance + corpus nature |
-| `dist/api/pages/*.json` | 7,458 files | per-slug page API + `_domain-index.json` |
-| `dist/api/markdown/*.md` | 7,428 files | body mirrors (29 pages have empty bodies) |
-| `dist/api/search-index.json` | 6,700,607 B | flat search index, 7,457 entries |
+| `dist/data/graph/overview.json` | 20,729 B | 40-node T0 tier; 124 edges = 34 backbone + 90 weighted bridge edges |
+| `dist/data/graph/stats.json` | 2,560 B | counts + `bridging` block + provenance + corpus nature |
+| `dist/data/graph/bridges.json` | 167,379 B | the 542 classes that reach more than one category or domain |
+| `dist/api/pages/*.json` | 7,875 files | per-slug page API + `_domain-index.json` |
+| `dist/api/markdown/*.md` | 7,823 files | body mirrors (51 pages have empty bodies) |
+| `dist/api/search-index.json` | 7,080,482 B | flat search index, 7,874 entries |
 | `dist/api/validation-report.json` | — | the stage-2 report, machine-readable |
 | `dist/api/schema/context.jsonld` | — | the published JSON-LD context |
 
-`.gitignore` line 4 excludes `dist/api/` (rebuilt in seconds) and keeps `dist/data/`,
+`.gitignore` line 7 excludes `dist/api/` (rebuilt in seconds) and keeps `dist/data/`,
 the published dataset artefacts.
 
 ### A note on checksums
@@ -104,11 +115,11 @@ the published dataset artefacts.
 match. `ontology.ttl` is not, and this is expected rather than a fault. rdflib
 assigns blank-node labels per run, so the OWL restriction blocks
 (`owl:someValuesFrom`, `owl:onProperty`) serialise in a different order each
-time. Two builds of this corpus produced files of identical length (12,301,363
-bytes, 246,003 lines) that differed on 20,259 lines.
+time. Two builds of this corpus produced files of identical length (12,710,991
+bytes, 250,733 lines) that differed on 20,676 lines.
 
 The graphs are the same graph. Verified by parsing both and comparing
-blank-node-normalised triple sets: 252,974 triples each, sets identical. If you
+blank-node-normalised triple sets: 258,200 triples each, sets identical. If you
 need to compare two Turtle builds, compare parsed graphs rather than bytes:
 
 ```python
@@ -129,7 +140,7 @@ assert norm("a/ontology.ttl") == norm("b/ontology.ttl")
 ```python
 import rdflib
 g = rdflib.Graph()
-g.parse("dist/data/ontology.ttl", format="turtle")   # 252974 triples, 8.3 s
+g.parse("dist/data/ontology.ttl", format="turtle")   # 258200 triples, 8.6 s
 for r in g.query("""
     PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
     PREFIX vc:   <https://narrativegoldmine.com/ns/v1#>
@@ -151,13 +162,13 @@ maturity and quality live under `vc:`
 ### WebVOWL JSON (VERIFIED)
 
 `json.load("dist/data/ontology.json")` gives five keys: `header`, `class`,
-`classAttribute`, `property`, `propertyAttribute`, with `len(d["class"]) == 7457`
-and `len(d["property"]) == 103102`. `d["header"]["description"]` reads
-*"Knowledge graph ontology with 7457 nodes across 18 domains"*: that 18 counts
+`classAttribute`, `property`, `propertyAttribute`, with `len(d["class"]) == 7874`
+and `len(d["property"]) == 105603`. `d["header"]["description"]` reads
+*"Knowledge graph ontology with 7874 nodes across 16 domains"*: that 16 counts
 distinct **raw** `domain` strings, not the 6 canonical domains the graph tiers
-collapse them onto. The file is 39 MB on a single line with no trailing newline
+collapse them onto. The file is 40 MB on a single line with no trailing newline
 (`wc -l` reports 0), so it cannot be streamed line by line. Loading it whole takes
-0.5 s and peaks at 199 MB RSS (`resource.getrusage(RUSAGE_SELF).ru_maxrss`), about
+0.5 s and peaks at 203 MB RSS (`resource.getrusage(RUSAGE_SELF).ru_maxrss`), about
 five times the file size.
 
 ### NGG1 binary header (VERIFIED)
@@ -169,12 +180,12 @@ header, 24-byte node records:
 import struct
 b = open("dist/data/graph/full.bin", "rb").read()
 magic, ver, pad, n, e, o_n, o_a, o_t, o_s = struct.unpack_from("<4sHHIIIIII", b, 0)
-# b'NGG1' 1 nodes 7457 edges 96377 offsets (32, 179000, 594340, 690720) bytes 1282989
+# b'NGG1' 1 nodes 7874 edges 98776 offsets (32, 189008, 615612, 714388) bytes 1339983
 
 NODE = struct.Struct("<IffHHB3xI")   # id, x, y, domain, category, flags, pad, degree
 assert NODE.size == 24
 nid, x, y, dom, cat, flags, deg = NODE.unpack_from(b, o_n)
-# node0: id 0, (124.07, -948.18), domain 5, category 65535, flags 0x4, degree 5
+# node0: id 0, (411.66, -579.87), domain 5, category 11, flags 0x4, degree 5
 
 cnt, blob_len = struct.unpack_from("<II", b, o_s)   # cnt == 2 * node_count
 offs = struct.unpack_from("<%dI" % cnt, b, o_s + 8)
@@ -183,12 +194,137 @@ blob = b[o_s + 8 + 4 * cnt : o_s + 8 + 4 * cnt + blob_len]
 ```
 
 String `n*2` is node `n`'s label and `n*2+1` its IRI. `category == 65535` means
-uncategorised (4,498 nodes), `domain == 65535` domainless (4 nodes). Flags: `0x01`
-domain root, `0x02` category root, `0x04` has page, `0x08` bridge. The writer also
-emits `0x10` for an Individual (`pipeline/emit_graph_tiers.py:221`,
+uncategorised and `domain == 65535` domainless; no node carries the latter. 9
+nodes carry the former, of which only 3 are the `uncategorised: 3` that
+`stats.json` reports. The other 6 are the domain roots (Artificial Intelligence,
+Blockchain, Distributed Collaboration, Infrastructure, Robotics, Spatial
+Computing), which sit above the taxonomy rather than outside it and are not
+defects. Five of the six declare `owl:Thing` as their parent — those are the 5
+`owl:…` parents counted in §6; Spatial Computing declares none at all. The 3
+genuinely uncategorised classes are Electric Vehicle, Ethan Mollick and Urban
+Planning.
+
+Flags: `0x01` domain root, `0x02` category root, `0x04` has page, `0x08` bridge.
+The writer also emits `0x10` for an Individual (`pipeline/emit_graph_tiers.py:221`,
 `FLAG_INDIVIDUAL`); `explorer/FORMAT-NGG1.md` §5 still lists bits 4–7 as reserved,
 so the file is the newer of the two. The extracted corpus has 0 individuals, so no
 node in `full.bin` carries that bit.
+
+Note that `0x08` is **not** the taxonomy bridging described below. The writer sets
+it only when a class declares a `bridgesTo` relation
+(`pipeline/emit_graph_tiers.py:633-636`); multi-category membership is carried in
+`bridges.json`, not in the flags byte.
+
+### Bridging classes (VERIFIED)
+
+1,401 classes declare more than one parent. That is a design property of this
+corpus, not a defect, so the pipeline publishes what the overlap amounts to
+instead of discarding it. `stats.json` carries the headline counts:
+
+```json
+"bridging": { "multiParent": 1401, "crossCategory": 454, "crossDomain": 153 }
+```
+
+454 of those 1,401 reach more than one of the 34 taxonomy categories and 153 span
+more than one of the 6 domains; the union, 542 classes, is enumerated in
+`bridges.json`. Category and domain ids in that file index the arrays in
+`overview.json`, so read the two together:
+
+```python
+import json
+bridges  = json.load(open("dist/data/graph/bridges.json"))
+overview = json.load(open("dist/data/graph/overview.json"))
+cat = {c["id"]: c["label"] for c in overview["categories"]}
+dom = {d["id"]: d["label"] for d in overview["domains"]}
+
+print(bridges["count"])                                       # 542
+print(sum(1 for b in bridges["bridges"] if len(b["categories"]) > 1))   # 454
+print(sum(1 for b in bridges["bridges"] if len(b["domains"]) > 1))      # 153
+
+b = next(x for x in bridges["bridges"] if x["label"] == "AI Documentation Standards")
+print(b["categories"], [cat[c] for c in b["categories"]])
+print(b["domains"],    [dom[d] for d in b["domains"]])
+print(b["parents"])
+```
+
+Output:
+
+```
+542
+454
+153
+[3, 16] ['AI Governance and Ethics', 'Standards and Interoperability']
+[0, 5] ['Artificial Intelligence', 'Infrastructure']
+['AI Governance and Ethics', 'Documentation Standards']
+```
+
+*AI Documentation Standards* is a single class sitting under two parents that
+resolve to two categories in two different domains. Read the same node out of
+`full.bin` and it reports `category 3` and nothing else — the NGG1 node record
+holds a **single** `u16` category (`explorer/FORMAT-NGG1.md` §3, byte offset 14),
+so the tiers keep only the nearest category ancestor and drop the rest. The full
+membership exists only in `bridges.json`. If you are computing anything over
+category overlap, read the JSON; the binary cannot answer the question.
+
+The same bridging feeds the T0 tier. `overview.json` carries 124 edges over its
+40 nodes (6 domain roots, ids 0–5; 34 categories, ids 6–39): 34 of `type 0`, the
+category→domain backbone, and 90 of `type 1`, each a weighted category↔category
+edge whose `weight` is the number of classes bridging that pair. Weights run 1 to
+73, the heaviest being AI Technique ↔ AI Research Area. Those edges also feed the
+force layout, so the baked positions in `overview.json` and the tiers match the
+topology the renderer draws.
+
+### What the tiers drop (VERIFIED)
+
+`stats.json` reports 111,827 declared edges against 98,776 resolvable. The gap is
+13,051 references, and it decomposes exactly:
+
+```python
+from pathlib import Path
+from collections import defaultdict
+from pipeline.jsonld_parser import parse_corpus
+from pipeline.jsonld_to_webvowl import _remap_iri
+from pipeline.emit_graph_tiers import RELATION_ATTRS
+
+pub = [p for p in parse_corpus(Path("ontology/pages")) if p.ontology_class and p.is_public]
+declared = {_remap_iri(p.ontology_class.iri) for p in pub}
+undeclared = dup = kept = 0
+seen, targets = set(), defaultdict(set)
+for p in pub:
+    oc = p.ontology_class
+    src = _remap_iri(oc.iri)
+    refs = [(r.iri, 0) for r in oc.sub_class_of]
+    refs += [(r.iri, 1) for a in RELATION_ATTRS for r in (getattr(oc.relations, a, []) or [])]
+    for iri, etype in refs:
+        tgt = _remap_iri(iri)
+        if tgt not in declared:
+            undeclared += 1; targets[tgt].add(src)
+        elif (src, tgt, etype) in seen:
+            dup += 1
+        else:
+            seen.add((src, tgt, etype)); kept += 1
+print(undeclared, dup, kept)                                  # 6224 6827 98776
+print(len(targets), sum(1 for v in targets.values() if len(v) == 1))   # 4384 2946
+```
+
+6,224 references name a target no page declares. 6,827 are duplicate
+`(source, target, type)` triples, which collapse to one edge. No class references
+itself — `SELF_REFERENCE` is an error code and the corpus raises none.
+
+Those 6,224 are the corpus's remaining dangling references and they are a real,
+acknowledged gap. 5 of them are `subClassOf` (one target, named by five pages);
+the other 6,219 are relation refs across 4,383 distinct targets. They are not
+silently discarded: in the Turtle, a relation target with no page becomes a
+`skos:Concept` stub with a label rebuilt from the slug, so `ontology.ttl` carries
+4,383 such stubs and the triple survives with a weaker type. In the NGG1 tiers
+there is no stub node, so the edge is simply absent.
+
+2,946 of those 4,384 targets are named by exactly one page. Those are deliberately
+left: the corpus's in-degree rule only authors a class for a concept two or more
+pages already reference, on the grounds that a single unsupported mention is not
+evidence a concept exists. `docs/methodology/corpus-generation.md` §9 records that
+policy and publishes its own count for it; the detector there is narrower than the
+one above, so the two figures are not interchangeable.
 
 ---
 
@@ -206,7 +342,7 @@ wasm-pack build --release --target web --out-dir pkg
 (`WASM_SIZE_LIMIT_MB: 1.5`, line 21). `--target web` is not optional: the physics
 worker imports the wasm-bindgen ES glue and calls `mod.default()` for `{ memory }`.
 Ignore the crate-root `webvowl_wasm.d.ts`: it is hand-written and stale — it
-declares `WebVowl` and no `NggExplorer` at all, while the type actually exported is
+declares `WebVowl` and no `NggExplorer` at all, while the exported type is
 `NggExplorer` (`explorer/rust-wasm/src/bindings/explorer.rs:17`). The regenerated
 `pkg/webvowl_wasm.d.ts` is the authoritative one and does declare it.
 
@@ -264,7 +400,7 @@ the worker and the WASM.
 
 Only the first row is a gate in this repository's own CI.
 `.github/workflows/build.yml` installs Python and nothing else: it runs the secret
-scan, `pytest pipeline/tests`, the 7,457-class corpus contract and
+scan, `pytest pipeline/tests`, the 7,874-class corpus contract and
 `pipeline.validate`. The other five rows need a Rust or Node toolchain and run in
 the private publishing CI. The split is tabulated in
 `docs/ci-cd/build-and-gates.md` §2.1 and §2.2.
@@ -355,7 +491,7 @@ Validate it on its own before touching the corpus:
 ```bash
 .venv/bin/python -m pipeline.validate /path/to/dir-with-just-that-page
 # Validation: 1 pages, 1 with ontology, 1 public
-# Issues: 0 errors, 0 warnings
+# Issues: 0 errors, 0 warnings, 0 info
 ```
 
 Building that one-page directory yields 124 triples, the quickest way to see how
@@ -382,22 +518,31 @@ Rules `pipeline/validate.py` enforces. **Errors** (any one fails the build):
 `MISSING_SCHEMA_VERSION`; `MISSING_DOMAIN`; `INVALID_DOMAIN` for a `domain` outside
 the 16-entry `VALID_DOMAINS` set (`validate.py:24` — the 6 roots plus `ai`,
 `supply-chain`, `metaverse`, `data`, `governance`, `security`, `standards`,
-`finance`, `distributed-systems`, `machine-learning`); `SLUG_MISMATCH` for a parent
-IRI slug that disagrees with the parent label — which only fires when the parent
-IRI contains the literal `owl:class:` and does not start with
-`urn:visionflow:linked:`, so the corpus raises 0 of them (8,611 of its 8,616
-declared parents are `urn:ngm:class:…`, the remaining 5 `owl:…`); and
-`MULTI_PARENT` for more than one `subClassOf` entry, which 957 corpus pages carry
-today.
+`finance`, `distributed-systems`, `machine-learning`); and `SLUG_MISMATCH` for a
+parent IRI slug that disagrees with the parent label — which only fires when the
+parent IRI contains the literal `owl:class:` and does not start with
+`urn:visionflow:linked:`. The corpus raises 0 of all four today — `by_code` in
+`dist/api/validation-report.json` holds one key. `SLUG_MISMATCH` in particular
+cannot fire on this corpus at all: 9,476 of its 9,481 declared parents are
+`urn:ngm:class:…` and the remaining 5 `owl:…`, so no parent IRI carries the
+literal the check looks for.
+**Info** (surfaced, never a warning): `MULTI_PARENT` for more than one
+`subClassOf` entry, which 1,401 corpus pages carry.
 
 Four behaviours to know before authoring at scale: `vc:public` defaults to **false**,
 so omitting it silently drops the page from every output; the pipeline drops a page
 with no `@type: "Page"` block entirely, with no diagnostic; a relation target that
 is not itself a declared page becomes a `skos:Concept` stub rather than a dangling
 `owl:Class` (above, all four declared edges are unresolvable, so `stats.json` reports
-`resolvable: 0`); and the pipeline inherits a node's category **one hop** from the
-first parent whose slug is one of the 34 category slugs. That missing transitive
-walk is why 4,498 corpus nodes are uncategorised.
+`resolvable: 0`); and a node's category is inherited by a breadth-first walk of
+`subClassOf`/`instanceOf` ancestry, nearest category ancestor winning, bounded at
+12 hops (`pipeline/emit_graph_tiers.py:482-531`). Parents are visited in declared
+order so the choice is deterministic: the NGG1 tiers are byte-compared against a
+golden fixture in CI, and a set-ordered walk would break it. The walk used to read
+direct parents only, which pushed anything two or more hops below a category root
+into the uncategorised bucket: 4,033 classes, 89.7% of the 4,498 then reported.
+Fixing the resolver took that count to 465; a subsequent repair of the corpus took
+it to the 3 that stand today.
 
 ---
 
@@ -430,15 +575,15 @@ walk is why 4,498 corpus nodes are uncategorised.
   unconditionally on purpose: the SharedArrayBuffer transport had an unsynchronised
   read/write race whose half-written frames the force sim amplified to ~1e20.
   Re-enable only behind a double-buffered SAB with an `Atomics`-gated generation flip.
-- **`ontology.json` will not stream**: it is 39 MB on a single line with no trailing
+- **`ontology.json` will not stream**: it is 40 MB on a single line with no trailing
   newline, so any line-oriented reader gets the whole file in one string. `json.load`
-  handles it in 0.5 s at a 199 MB RSS peak here; if that is too much, use `ijson`, or
-  work from `ontology.ttl` (12.3 MB) or `full.bin` (1.28 MB) instead.
+  handles it in 0.5 s at a 203 MB RSS peak here; if that is too much, use `ijson`, or
+  work from `ontology.ttl` (12.7 MB) or `full.bin` (1.34 MB) instead.
 - **A page you added does not appear.** In order of likelihood: `vc:public` missing
   or false; the Page block is malformed JSON (the parser `json.loads` each fence and
   silently skips decode failures); or the body is empty, in which case
   `dist/api/pages/<slug>.json` exists but `dist/api/markdown/<slug>.md` is never
-  written. 29 corpus pages are in that last state.
+  written. 51 corpus pages are in that last state.
 - **The SPA renders HTML source instead of a page**:
   `explorer/modern/src/api/pageService.ts:133` fetches prose by **title**
   (`/api/markdown/<Title>.md`) while structured data comes by **slug**
@@ -448,7 +593,7 @@ walk is why 4,498 corpus nodes are uncategorised.
   serves `index.html` rather than a 404, and `isValidMarkdown` catches and rejects
   that. The publishing CI guards the drift with a count contract — the mirror's file
   count against a count recomputed through `pipeline.jsonld_parser.parse_corpus`,
-  over public pages **with a non-empty body** (7,428 here, not 7,457). The runnable
+  over public pages **with a non-empty body** (7,823 here, not 7,874). The runnable
   form and the incident that caused it are in `docs/ci-cd/build-and-gates.md` §3.
 
 ---
@@ -462,7 +607,7 @@ repository root *does* carry a `CNAME` (`narrativegoldmine.com`) for the publish
 site, but no workflow step here reads, writes or acts on it — the Pages push lives
 in the private publishing CI (`docs/ci-cd/build-and-gates.md` §1).
 
-**The corpus itself.** The 7,457 pages are mostly AI-generated synthetic content
+**The corpus itself.** The 7,874 pages are mostly AI-generated synthetic content
 produced under human direction, by design: an ontology testbed, not an authoritative
 encyclopaedia. `stats.json` says so in `corpus.description`, and provenance
 (`did:nostr`, `generatedAtTime`, URNs) attests traceable generation under human

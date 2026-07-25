@@ -44,6 +44,10 @@ public:: true
     {
       "@id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:distributed-teams",
+      "label": "Distributed Teams"
     }
   ],
   "relations": {

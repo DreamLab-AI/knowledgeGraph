@@ -70,6 +70,10 @@ public:: true
     {
       "@id": "urn:ngm:class:mobile-robotics",
       "label": "Mobile Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     }
   ],
   "relations": {

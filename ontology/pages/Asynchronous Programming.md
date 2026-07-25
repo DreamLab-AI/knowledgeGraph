@@ -15,7 +15,7 @@ public:: true
   "definition":"Asynchronous programming is a concurrency model in which operations that would otherwise block — such as input/output, network calls or timers — are initiated without halting the executing thread, allowing other work to proceed until results become available. It uses constructs such as callbacks, promises, futures and async/await to express continuations cleanly. The approach improves responsiveness and throughput for input/output-bound workloads without the overhead of one thread per task.",
   "domain":"infrastructure",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:concurrency","label":"Concurrency"}],
+  "subClassOf":[{"@id":"urn:ngm:class:concurrency","label":"Concurrency"},{"@id":"urn:ngm:class:software-engineering","label":"Software Engineering"}],
   "relations":{
     "uses":[
       {"@id":"urn:ngm:class:python","label":"Python"},

@@ -19,6 +19,10 @@ public:: true
     {
       "@id": "urn:ngm:class:model-compression",
       "label": "Model Compression"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

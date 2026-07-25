@@ -69,8 +69,8 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:governance-ecosystem",
-        "label": "Governance Ecosystem"
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
       },
       {
         "@id": "urn:ngm:class:regulatory-framework",

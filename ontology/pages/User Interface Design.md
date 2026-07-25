@@ -19,6 +19,10 @@ public:: true
     {
       "@id": "urn:ngm:class:interface-design",
       "label": "Interface Design"
+    },
+    {
+      "@id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "relations": {

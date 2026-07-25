@@ -23,12 +23,53 @@ public:: true
   "definition": "Financial crime detection is the application of data analysis, machine learning, and rule-based systems to identify patterns indicative of money laundering, fraud, terrorist financing, bribery, market manipulation, and related illicit activities within financial transaction data. It operates at the intersection of compliance obligation and risk management, producing alerts that human investigators triage and escalate to regulatory or law-enforcement bodies.",
   "domain": "finance",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:fraud-detection",
+      "label": "Fraud Detection"
+    },
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
-    "uses": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}, {"@id": "urn:ngm:class:transaction-monitoring", "label": "Transaction Monitoring"}],
-    "enables": [{"@id": "urn:ngm:class:anti-money-laundering", "label": "Anti-Money Laundering"}, {"@id": "urn:ngm:class:compliance", "label": "Compliance"}],
-    "relatedTo": [{"@id": "urn:ngm:class:know-your-customer", "label": "Know Your Customer"}, {"@id": "urn:ngm:class:aml-kyc-compliance", "label": "AML KYC Compliance"}],
-    "supports": [{"@id": "urn:ngm:class:blockchain-analytics", "label": "Blockchain Analytics"}]
+    "uses": [
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-monitoring",
+        "label": "Transaction Monitoring"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:anti-money-laundering",
+        "label": "Anti-Money Laundering"
+      },
+      {
+        "@id": "urn:ngm:class:compliance",
+        "label": "Compliance"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:know-your-customer",
+        "label": "Know Your Customer"
+      },
+      {
+        "@id": "urn:ngm:class:aml-kyc-compliance",
+        "label": "AML KYC Compliance"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:blockchain-analytics",
+        "label": "Blockchain Analytics"
+      }
+    ]
   },
   "quality": 0.8
 }

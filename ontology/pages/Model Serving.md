@@ -58,10 +58,16 @@ public:: true
   "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:model-deployment",
-    "label": "Model Deployment"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-deployment",
+      "label": "Model Deployment"
+    },
+    {
+      "@id": "urn:ngm:class:inference-layer",
+      "label": "Inference Layer"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

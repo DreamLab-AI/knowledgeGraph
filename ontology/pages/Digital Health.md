@@ -15,7 +15,7 @@ public:: true
   "definition":"Digital health is the use of information and communications technology, sensors, data, and artificial intelligence to deliver, manage, and improve healthcare and wellbeing. It spans telemedicine, remote patient monitoring, electronic health records, wearable biosensors, clinical decision support, and AI-assisted diagnostics. The field aims to widen access, personalise care, and improve outcomes while raising acute requirements for patient privacy, data security, and regulatory oversight.",
   "domain":"artificial-intelligence",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"}],
+  "subClassOf":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"},{"@id":"urn:ngm:class:ai-application","label":"AI Application"}],
   "relations":{
     "hasPart":[{"@id":"urn:ngm:class:telemedicine","label":"Telemedicine"},{"@id":"urn:ngm:class:clinical-decision-support","label":"Clinical Decision Support"},{"@id":"urn:ngm:class:medical-imaging","label":"Medical Imaging"}],
     "enables":[{"@id":"urn:ngm:class:telemedicine","label":"Telemedicine"},{"@id":"urn:ngm:class:clinical-decision-support","label":"Clinical Decision Support"}],

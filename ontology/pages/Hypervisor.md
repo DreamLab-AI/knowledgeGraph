@@ -8,28 +8,106 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:hypervisor",
-  "@type":"Class",
-  "label":"Hypervisor",
-  "definition":"A hypervisor, or virtual machine monitor, is system software that creates and runs virtual machines by abstracting and partitioning a host's physical CPU, memory, and I/O resources. Type 1 (bare-metal) hypervisors run directly on hardware, while Type 2 (hosted) hypervisors run atop a conventional operating system. By isolating multiple guest operating systems on shared hardware, the hypervisor is the foundational technology of server virtualisation and cloud computing.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:virtualisation","label":"Virtualisation"}],
-  "relations":{
-    "enables":[{"@id":"urn:ngm:class:virtual-machine","label":"Virtual Machine"},{"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}],
-    "requires":[{"@id":"urn:ngm:class:hardware-abstraction","label":"Hardware Abstraction"},{"@id":"urn:ngm:class:memory-management","label":"Memory Management"}],
-    "uses":[{"@id":"urn:ngm:class:hardware-abstraction","label":"Hardware Abstraction"}],
-    "manages":[{"@id":"urn:ngm:class:virtual-machine","label":"Virtual Machine"}],
-    "supports":[{"@id":"urn:ngm:class:multi-tenancy","label":"Multi-Tenancy"},{"@id":"urn:ngm:class:cloud-infrastructure","label":"Cloud Infrastructure"}],
-    "partOf":[{"@id":"urn:ngm:class:system-software","label":"System Software"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:containerisation","label":"Containerisation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:operating-system","label":"Operating System"},{"@id":"urn:ngm:class:snapshot","label":"Snapshot"},{"@id":"urn:ngm:class:trusted-execution-environment","label":"Trusted Execution Environment"}],
-    "dependsOn":[{"@id":"urn:ngm:class:operating-system","label":"Operating System"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hypervisor",
+  "@type": "Class",
+  "label": "Hypervisor",
+  "definition": "A hypervisor, or virtual machine monitor, is system software that creates and runs virtual machines by abstracting and partitioning a host's physical CPU, memory, and I/O resources. Type 1 (bare-metal) hypervisors run directly on hardware, while Type 2 (hosted) hypervisors run atop a conventional operating system. By isolating multiple guest operating systems on shared hardware, the hypervisor is the foundational technology of server virtualisation and cloud computing.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:virtualisation",
+      "label": "Virtualisation"
+    },
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      },
+      {
+        "@id": "urn:ngm:class:memory-management",
+        "label": "Memory Management"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:hardware-abstraction",
+        "label": "Hardware Abstraction"
+      }
+    ],
+    "manages": [
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:multi-tenancy",
+        "label": "Multi-Tenancy"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-infrastructure",
+        "label": "Cloud Infrastructure"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:system-software",
+        "label": "System Software"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:containerisation",
+        "label": "Containerisation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:snapshot",
+        "label": "Snapshot"
+      },
+      {
+        "@id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:operating-system",
+        "label": "Operating System"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

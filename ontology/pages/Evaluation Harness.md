@@ -23,20 +23,50 @@ public:: true
   "definition": "An evaluation harness is a software framework that automates the systematic assessment of AI model capabilities across standardised benchmark tasks, providing reproducible prompt formatting, answer extraction, scoring, and aggregated reporting. It enables consistent, comparable measurement of model performance across tasks, modalities, and versions, forming the backbone of LLM leaderboards and model selection workflows.",
   "domain": "ai",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:ngm:class:ai-evaluation",
+      "label": "AI Evaluation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}
+      {
+        "@id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards", "label": "Evaluation benchmarks and leaderboards"},
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"}
+      {
+        "@id": "urn:ngm:class:evaluation-benchmarks-and-leaderboards",
+        "label": "Evaluation benchmarks and leaderboards"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"}
+      {
+        "@id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
     ]
   },
   "quality": 0.88

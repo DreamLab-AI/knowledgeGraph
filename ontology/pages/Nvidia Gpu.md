@@ -8,27 +8,125 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:nvidia-gpu",
-  "@type":"Class",
-  "label":"Nvidia Gpu",
-  "definition":"An NVIDIA GPU is a graphics processing unit designed and manufactured by NVIDIA, providing massively parallel computation that has become the dominant hardware substrate for machine learning training and inference. These devices expose thousands of cores together with specialised tensor units optimised for the dense matrix multiplications central to deep learning. They are programmed predominantly through the CUDA platform and serve as the primary accelerator in modern data centres and high-performance computing systems.",
-  "domain":"machine-learning",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:graphics-processing-unit","label":"Graphics Processing Unit"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:data-center","label":"Data Center"},{"@id":"urn:ngm:class:high-performance-computing","label":"High-Performance Computing"}],
-    "enables":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"},{"@id":"urn:ngm:class:hardware-acceleration","label":"Hardware Acceleration"},{"@id":"urn:ngm:class:model-training","label":"Model Training"}],
-    "uses":[{"@id":"urn:ngm:class:cuda","label":"CUDA"},{"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}],
-    "supports":[{"@id":"urn:ngm:class:training","label":"Training"},{"@id":"urn:ngm:class:inference","label":"Inference"},{"@id":"urn:ngm:class:model-serving","label":"Model Serving"},{"@id":"urn:ngm:class:computer-vision","label":"Computer Vision"}],
-    "requires":[{"@id":"urn:ngm:class:energy-consumption","label":"Energy Consumption"}],
-    "implements":[{"@id":"urn:ngm:class:hardware-acceleration","label":"Hardware Acceleration"}],
-    "relatedTo":[{"@id":"urn:ngm:class:gpu","label":"GPU"},{"@id":"urn:ngm:class:gpu-computing","label":"GPU Computing"},{"@id":"urn:ngm:class:tensor","label":"Tensor"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:asic","label":"ASIC"},{"@id":"urn:ngm:class:fpga","label":"FPGA"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:nvidia-gpu",
+  "@type": "Class",
+  "label": "Nvidia Gpu",
+  "definition": "An NVIDIA GPU is a graphics processing unit designed and manufactured by NVIDIA, providing massively parallel computation that has become the dominant hardware substrate for machine learning training and inference. These devices expose thousands of cores together with specialised tensor units optimised for the dense matrix multiplications central to deep learning. They are programmed predominantly through the CUDA platform and serve as the primary accelerator in modern data centres and high-performance computing systems.",
+  "domain": "machine-learning",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:graphics-processing-unit",
+      "label": "Graphics Processing Unit"
+    },
+    {
+      "@id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:data-center",
+        "label": "Data Center"
+      },
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High-Performance Computing"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:training",
+        "label": "Training"
+      },
+      {
+        "@id": "urn:ngm:class:inference",
+        "label": "Inference"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:energy-consumption",
+        "label": "Energy Consumption"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:gpu-computing",
+        "label": "GPU Computing"
+      },
+      {
+        "@id": "urn:ngm:class:tensor",
+        "label": "Tensor"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      }
+    ]
   },
-  "sameAs":[{"@id":"urn:ngm:class:gpu","label":"GPU"}],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [
+    {
+      "@id": "urn:ngm:class:gpu",
+      "label": "GPU"
+    }
+  ],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

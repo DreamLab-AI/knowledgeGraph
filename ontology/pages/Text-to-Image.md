@@ -109,8 +109,8 @@ alias:: Text to Image
         "label": "Synthetic Data Generation"
       },
       {
-        "@id": "urn:ngm:class:digital-art-creation",
-        "label": "Digital Art Creation"
+        "@id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
       },
       {
         "@id": "urn:ngm:class:inpainting",

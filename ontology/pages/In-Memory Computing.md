@@ -14,7 +14,7 @@ public:: true
   "definition":"In-memory computing is an architectural approach that holds working data sets in a system's main memory (RAM) rather than on disk, eliminating storage-layer I/O from the critical path of data access and processing. By keeping data resident in fast volatile memory, it delivers order-of-magnitude reductions in latency and supports high-throughput analytics, transaction processing, and real-time decisioning. It typically pairs with techniques such as columnar layouts, distributed caching, and durability mechanisms (logging, replication, persistence) to combine speed with resilience.",
   "domain":"infrastructure",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}],
+  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"},{"@id":"urn:ngm:class:infra-computing-and-cloud","label":"Computing and Cloud"}],
   "relations":{
     "hasPart":[
       {"@id":"urn:ngm:class:memory-hierarchy","label":"Memory Hierarchy"},

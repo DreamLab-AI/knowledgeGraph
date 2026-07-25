@@ -26,6 +26,10 @@ alias:: ExtendedReality
     {
       "@id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:extended-reality-xr",
+      "label": "Extended Reality (XR)"
     }
   ],
   "relations": {

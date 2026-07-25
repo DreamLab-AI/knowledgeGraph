@@ -15,7 +15,7 @@ public:: true
   "definition":"A voxel grid is a regular three-dimensional lattice that partitions space into uniformly sized cubic cells, each cell (voxel) storing occupancy, colour, density, or other attributes of the volume it covers. It provides a structured spatial representation used to discretise point clouds, build occupancy maps, and accelerate spatial queries in robotics and computer graphics. By contrast with continuous point sets, the fixed cell structure trades fine resolution for predictable indexing and constant-time neighbourhood access.",
   "domain":"spatial-computing",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"}],
+  "subClassOf":[{"@id":"urn:ngm:class:spatial-computing","label":"Spatial Computing"},{"@id":"urn:ngm:class:point-cloud","label":"Point Cloud"}],
   "relations":{
     "contrastsWith":[{"@id":"urn:ngm:class:mapping","label":"Mapping"}],
     "hasPart":[{"@id":"urn:ngm:class:perception","label":"Perception"}],

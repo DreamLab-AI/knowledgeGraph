@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:robotics",
       "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     }
   ],
   "relations": {

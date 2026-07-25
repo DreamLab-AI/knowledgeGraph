@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:reward-model",
       "label": "Reward Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

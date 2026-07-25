@@ -23,7 +23,7 @@ public:: true
   "definition": "Remote assistance is a service modality in which an expert or system provides real-time guidance, intervention, or control to a person or machine at a physically separate location, mediated by communication and rendering technology. It spans technical IT support via screen-sharing, clinical guidance through telestration overlays on AR headsets, and safety-critical interventions in teleoperated robotics. Effective remote assistance requires low-latency bidirectional communication, shared situational awareness, and appropriate interaction modalities for the task domain.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"}],
+  "subClassOf": [{"@id": "urn:ngm:class:remote-collaboration", "label": "Remote Collaboration"}, {"@id": "urn:ngm:class:dc-telepresence", "label": "Telepresence (Distributed Collaboration)"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:telepresence", "label": "Telepresence"},

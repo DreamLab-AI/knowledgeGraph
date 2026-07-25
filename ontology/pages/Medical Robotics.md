@@ -24,39 +24,102 @@ public:: true
   "definition": "Medical Robotics is the application of robotic systems to clinical and surgical settings, encompassing robot-assisted surgery, rehabilitation robotics, diagnostic automation, and hospital logistics. These systems extend clinician precision, reduce invasiveness, and enable procedures at scales or locations beyond unaided human capability. Medical robots must meet rigorous safety, sterilisation, and regulatory standards before clinical deployment. The field intersects robotics engineering, clinical medicine, and regulatory science.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:healthcare-technology", "label": "Healthcare Technology"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:healthcare-technology",
+        "label": "Healthcare Technology"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:minimally-invasive-surgery", "label": "Minimally Invasive Surgery"},
-      {"@id": "urn:ngm:class:rehabilitation", "label": "Rehabilitation"},
-      {"@id": "urn:ngm:class:telemedicine", "label": "Telemedicine"}
+      {
+        "@id": "urn:ngm:class:minimally-invasive-surgery",
+        "label": "Minimally Invasive Surgery"
+      },
+      {
+        "@id": "urn:ngm:class:rehabilitation",
+        "label": "Rehabilitation"
+      },
+      {
+        "@id": "urn:ngm:class:telemedicine",
+        "label": "Telemedicine"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:haptic-feedback", "label": "Haptic Feedback"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:haptic-feedback",
+        "label": "Haptic Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robot-assisted-surgery", "label": "Robot-Assisted Surgery"},
-      {"@id": "urn:ngm:class:remote-surgery", "label": "Remote Surgery"}
+      {
+        "@id": "urn:ngm:class:robot-assisted-surgery",
+        "label": "Robot-Assisted Surgery"
+      },
+      {
+        "@id": "urn:ngm:class:remote-surgery",
+        "label": "Remote Surgery"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:human-robot-interaction", "label": "Human-Robot Interaction"},
-      {"@id": "urn:ngm:class:biomedical-engineering", "label": "Biomedical Engineering"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:human-robot-interaction",
+        "label": "Human-Robot Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:biomedical-engineering",
+        "label": "Biomedical Engineering"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:control-loop", "label": "Control Loop"},
-      {"@id": "urn:ngm:class:actuator", "label": "Actuator"}
+      {
+        "@id": "urn:ngm:class:control-loop",
+        "label": "Control Loop"
+      },
+      {
+        "@id": "urn:ngm:class:actuator",
+        "label": "Actuator"
+      }
     ]
   },
   "sameAs": [],

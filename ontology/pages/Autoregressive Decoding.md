@@ -8,31 +8,108 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:autoregressive-decoding",
-  "@type":"Class",
-  "label":"Autoregressive Decoding",
-  "definition":"Autoregressive decoding is the process by which a sequence model, such as a transformer language model, generates output one token at a time, conditioning each new token on all previously generated tokens. At every step the model produces a probability distribution over the vocabulary, a token is selected by a chosen strategy, and the token is appended and fed back as input for the next step. It is the dominant generation paradigm for large language models and is the primary target of inference optimisations such as caching and speculative methods.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"}],
-    "hasPart":[{"@id":"urn:ngm:class:sampling","label":"Sampling"}],
-    "requires":[{"@id":"urn:ngm:class:transformer","label":"Transformer"}],
-    "enables":[{"@id":"urn:ngm:class:large-language-model","label":"Large Language Model"}],
-    "uses":[{"@id":"urn:ngm:class:kv-cache","label":"KV Cache"}],
-    "dependsOn":[{"@id":"urn:ngm:class:attention-mechanism","label":"Attention Mechanism"}],
-    "supports":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"}],
-    "implements":[{"@id":"urn:ngm:class:sampling","label":"Sampling"}],
-    "relatedTo":[{"@id":"urn:ngm:class:beam-search","label":"Beam Search"},{"@id":"urn:ngm:class:speculative-decoding","label":"Speculative Decoding"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:beam-search","label":"Beam Search"}],
-    "standardizedBy":[{"@id":"urn:ngm:class:transformer","label":"Transformer"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:autoregressive-decoding",
+  "@type": "Class",
+  "label": "Autoregressive Decoding",
+  "definition": "Autoregressive decoding is the process by which a sequence model, such as a transformer language model, generates output one token at a time, conditioning each new token on all previously generated tokens. At every step the model produces a probability distribution over the vocabulary, a token is selected by a chosen strategy, and the token is appended and fed back as input for the next step. It is the dominant generation paradigm for large language models and is the primary target of inference optimisations such as caching and speculative methods.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:large-language-model",
+        "label": "Large Language Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      },
+      {
+        "@id": "urn:ngm:class:speculative-decoding",
+        "label": "Speculative Decoding"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:beam-search",
+        "label": "Beam Search"
+      }
+    ],
+    "standardizedBy": [
+      {
+        "@id": "urn:ngm:class:transformer",
+        "label": "Transformer"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

@@ -297,8 +297,8 @@ alias:: Pre-Training, Pre-training
         "label": "Natural Language Processing"
       },
       {
-        "@id": "urn:ngm:class:corpus",
-        "label": "Corpus"
+        "@id": "urn:ngm:class:training-corpus",
+        "label": "Training Corpus"
       }
     ],
     "dependsOn": [

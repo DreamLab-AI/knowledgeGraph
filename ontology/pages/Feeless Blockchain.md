@@ -6,29 +6,108 @@ public:: true
 ```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:feeless-blockchain",
-  "@type":"Class",
-  "label":"Feeless Blockchain",
-  "definition":"A feeless blockchain is a distributed ledger that allows transactions to be submitted without an explicit per-transaction fee paid to validators. Such designs replace fee-based economics with alternative mechanisms — for example directed acyclic graph structures where each sender contributes a small proof-of-work to confirm prior transactions, or networks where validators are compensated through other means. Feeless models aim to enable micropayments and machine-to-machine value transfer that fee-bearing chains render uneconomic. They must still solve spam prevention and resource accounting without using fees as the deterrent.",
-  "domain":"blockchain",
-  "maturity":"emerging",
-  "subClassOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
-  "relations":{
-    "contrastsWith":[{"@id":"urn:ngm:class:gas-fee","label":"Gas Fee"},{"@id":"urn:ngm:class:transaction-fee","label":"Transaction Fee"}],
-    "uses":[{"@id":"urn:ngm:class:directed-acyclic-graph","label":"Directed Acyclic Graph"},{"@id":"urn:ngm:class:proof-of-work","label":"Proof of Work"}],
-    "enables":[{"@id":"urn:ngm:class:micropayment","label":"Micropayment"}],
-    "requires":[{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"}],
-    "dependsOn":[{"@id":"urn:ngm:class:consensus","label":"Consensus"}],
-    "supports":[{"@id":"urn:ngm:class:energy-efficiency","label":"Energy Efficiency"}],
-    "partOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
-    "implements":[{"@id":"urn:ngm:class:proof-of-history","label":"Proof of History"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:scalability","label":"Scalability"}],
-    "relatedTo":[{"@id":"urn:ngm:class:directed-acyclic-graph","label":"Directed Acyclic Graph"},{"@id":"urn:ngm:class:sybil-attack","label":"Sybil Attack"},{"@id":"urn:ngm:class:validator","label":"Validator"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:feeless-blockchain",
+  "@type": "Class",
+  "label": "Feeless Blockchain",
+  "definition": "A feeless blockchain is a distributed ledger that allows transactions to be submitted without an explicit per-transaction fee paid to validators. Such designs replace fee-based economics with alternative mechanisms — for example directed acyclic graph structures where each sender contributes a small proof-of-work to confirm prior transactions, or networks where validators are compensated through other means. Feeless models aim to enable micropayments and machine-to-machine value transfer that fee-bearing chains render uneconomic. They must still solve spam prevention and resource accounting without using fees as the deterrent.",
+  "domain": "blockchain",
+  "maturity": "emerging",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
+  "relations": {
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gas-fee",
+        "label": "Gas Fee"
+      },
+      {
+        "@id": "urn:ngm:class:transaction-fee",
+        "label": "Transaction Fee"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      },
+      {
+        "@id": "urn:ngm:class:proof-of-work",
+        "label": "Proof of Work"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:energy-efficiency",
+        "label": "Energy Efficiency"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:proof-of-history",
+        "label": "Proof of History"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:directed-acyclic-graph",
+        "label": "Directed Acyclic Graph"
+      },
+      {
+        "@id": "urn:ngm:class:sybil-attack",
+        "label": "Sybil Attack"
+      },
+      {
+        "@id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 - ### Definition

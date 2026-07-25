@@ -15,38 +15,98 @@ public:: true
   "definition": "Indoor Navigation encompasses the technologies and systems that provide wayfinding, positioning, and routing guidance within enclosed spaces where satellite-based positioning (GPS) is unavailable or unreliable. It relies on alternative positioning signals such as Wi-Fi fingerprinting, Bluetooth beacons, Ultra-Wideband (UWB) ranging, visual markers, inertial sensors, and lidar-based spatial maps. Indoor navigation is critical for large venues such as airports, hospitals, shopping centres, factories, and warehouses where occupant or asset routing improves operational efficiency and user experience.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:environmental-mapping",
+      "label": "Environmental Mapping"
+    }
+  ],
   "relations": {
     "enables": [
-      {"@id": "urn:ngm:class:wayfinding", "label": "Wayfinding"},
-      {"@id": "urn:ngm:class:asset-tracking", "label": "Asset Tracking"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"}
+      {
+        "@id": "urn:ngm:class:wayfinding",
+        "label": "Wayfinding"
+      },
+      {
+        "@id": "urn:ngm:class:asset-tracking",
+        "label": "Asset Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:bluetooth-low-energy", "label": "Bluetooth Low Energy"},
-      {"@id": "urn:ngm:class:wifi", "label": "Wi-Fi"},
-      {"@id": "urn:ngm:class:ultra-wideband", "label": "Ultra-Wideband"},
-      {"@id": "urn:ngm:class:lidar", "label": "LiDAR"},
-      {"@id": "urn:ngm:class:spatial-mapping", "label": "Spatial Mapping"}
+      {
+        "@id": "urn:ngm:class:bluetooth-low-energy",
+        "label": "Bluetooth Low Energy"
+      },
+      {
+        "@id": "urn:ngm:class:wifi",
+        "label": "Wi-Fi"
+      },
+      {
+        "@id": "urn:ngm:class:ultra-wideband",
+        "label": "Ultra-Wideband"
+      },
+      {
+        "@id": "urn:ngm:class:lidar",
+        "label": "LiDAR"
+      },
+      {
+        "@id": "urn:ngm:class:spatial-mapping",
+        "label": "Spatial Mapping"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:map-data", "label": "Map Data"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:map-data",
+        "label": "Map Data"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gps", "label": "GPS"},
-      {"@id": "urn:ngm:class:location-services", "label": "Location Services"},
-      {"@id": "urn:ngm:class:simultaneous-localisation-and-mapping", "label": "Simultaneous Localisation and Mapping"}
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "GPS"
+      },
+      {
+        "@id": "urn:ngm:class:location-services",
+        "label": "Location Services"
+      },
+      {
+        "@id": "urn:ngm:class:simultaneous-localisation-and-mapping",
+        "label": "Simultaneous Localisation and Mapping"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:gps", "label": "GPS"}
+      {
+        "@id": "urn:ngm:class:gps",
+        "label": "GPS"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:smart-building", "label": "Smart Building"},
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"}
+      {
+        "@id": "urn:ngm:class:smart-building",
+        "label": "Smart Building"
+      },
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ]
   },
   "quality": 0.62,

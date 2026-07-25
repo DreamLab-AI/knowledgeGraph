@@ -62,6 +62,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:sidechain",
+      "label": "Sidechain"
     }
   ],
   "relations": {

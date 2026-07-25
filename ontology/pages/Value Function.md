@@ -24,16 +24,34 @@ alias:: ValueFunction
   "definition": "A value function in reinforcement learning estimates the expected cumulative future reward obtainable from a given state (state-value) or state-action pair (action-value) under a particular policy. It captures the long-term desirability of situations rather than immediate reward, and satisfies the recursive Bellman equation that relates the value of a state to the values of its successors. Value functions are central to dynamic programming, temporal-difference learning, and actor-critic methods, providing the signal that guides an agent toward reward-maximising behaviour.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:reinforcement-learning",
+      "label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:markov-decision-process", "label": "Markov Decision Process"}
+      {
+        "@id": "urn:ngm:class:markov-decision-process",
+        "label": "Markov Decision Process"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:optimal-control", "label": "Optimal Control"}
+      {
+        "@id": "urn:ngm:class:optimal-control",
+        "label": "Optimal Control"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}
+      {
+        "@id": "urn:ngm:class:machine-learning-discipline",
+        "label": "Machine Learning Discipline"
+      }
     ]
   },
   "quality": 0.8

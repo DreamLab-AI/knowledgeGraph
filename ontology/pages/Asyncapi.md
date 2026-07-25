@@ -32,7 +32,7 @@ public:: true
       {"@id":"urn:ngm:class:message-broker","label":"Message Broker"}
     ],
     "uses":[
-      {"@id":"urn:ngm:class:json-schema","label":"JSON Schema"},
+      {"@id":"urn:ngm:class:json-data-interchange-format-schema","label":"JSON Schema"},
       {"@id":"urn:ngm:class:schema-validation","label":"Schema Validation"}
     ],
     "enables":[
@@ -43,7 +43,7 @@ public:: true
       {"@id":"urn:ngm:class:message-broker","label":"Message Broker"}
     ],
     "dependsOn":[
-      {"@id":"urn:ngm:class:json-schema","label":"JSON Schema"}
+      {"@id":"urn:ngm:class:json-data-interchange-format-schema","label":"JSON Schema"}
     ],
     "bridgesTo":[
       {"@id":"urn:ngm:class:api-gateway","label":"API Gateway"}

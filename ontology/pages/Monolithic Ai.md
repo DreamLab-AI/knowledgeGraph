@@ -24,7 +24,7 @@ public:: true
   "definition": "Monolithic AI refers to a design paradigm in which a single, large, undivided model or system handles all tasks within an AI application, as opposed to decomposed or modular architectures. The term is most often used to contrast with multi-agent, mixture-of-experts, or microservice-based AI designs. Monolithic AI systems are simpler to deploy but harder to update, scale selectively, or audit at component level.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:ai-model-architecture", "label": "AI Model Architecture"}],
   "relations": {
     "contrastsWith": [
       {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"},

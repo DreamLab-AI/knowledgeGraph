@@ -66,6 +66,10 @@ public:: true
     {
       "@id": "urn:ngm:class:gnosis-chain",
       "label": "Gnosis Chain"
+    },
+    {
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)"
     }
   ],
   "relations": {

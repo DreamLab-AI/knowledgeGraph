@@ -15,7 +15,7 @@ public:: true
   "definition":"Operational technology (OT) is the hardware and software that directly monitors and controls physical processes, devices, and infrastructure in industrial environments. It encompasses industrial control systems such as SCADA and distributed control systems, programmable logic controllers, sensors, and actuators that manage manufacturing, energy, and utilities. OT prioritises availability, safety, and real-time determinism, distinguishing it from information technology, with which it increasingly converges under Industry 4.0.",
   "domain":"infrastructure",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}],
+  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"},{"@id":"urn:ngm:class:infra-computing-and-cloud","label":"Computing and Cloud"}],
   "relations":{
     "hasPart":[{"@id":"urn:ngm:class:scada","label":"SCADA"},{"@id":"urn:ngm:class:process-control","label":"Process Control"}],
     "uses":[{"@id":"urn:ngm:class:opc-ua","label":"OPC UA"},{"@id":"urn:ngm:class:telemetry","label":"Telemetry"}],

@@ -66,6 +66,10 @@ public:: true
     {
       "@id": "urn:ngm:class:generative-model",
       "label": "Generative Model"
+    },
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
     }
   ],
   "relations": {

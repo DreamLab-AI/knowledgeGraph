@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:perception",
       "label": "Perception"
+    },
+    {
+      "@id": "urn:ngm:class:audio-spatialization",
+      "label": "Audio Spatialization"
     }
   ],
   "relations": {

@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:hyperparameter",
       "label": "Hyperparameter"
+    },
+    {
+      "@id": "urn:ngm:class:bayesian-optimisation",
+      "label": "Bayesian Optimisation"
     }
   ],
   "relations": {
@@ -70,8 +74,8 @@ public:: true
         "label": "Machine Learning Model"
       },
       {
-        "@id": "urn:ngm:class:automated-machine-learning",
-        "label": "Automated Machine Learning"
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
       },
       {
         "@id": "urn:ngm:class:model-selection",

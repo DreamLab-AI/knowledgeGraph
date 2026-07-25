@@ -18,6 +18,10 @@ public:: true
     {
       "@id": "urn:ngm:class:perception",
       "label": "Perception"
+    },
+    {
+      "@id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "relations": {

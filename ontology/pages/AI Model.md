@@ -81,59 +81,149 @@ public:: true
   "definition": "An AI Model is a computational artefact — comprising a parameterised mathematical function, its learned weights, and associated configuration — that encodes patterns extracted from training data and can be applied to new inputs to generate predictions, classifications, embeddings, or generative outputs. AI models range from simple linear regressors to billion-parameter deep neural networks and constitute the core intellectual and commercial asset of modern AI systems.",
   "domain": "ai",
   "maturity": "mature",
-  "subClassOf": {
-    "@id": "urn:ngm:class:generative-model",
-    "label": "Generative Model"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:ai-model-architecture", "label": "AI Model Architecture"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:gradient-descent", "label": "Gradient Descent"},
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"}
+      {
+        "@id": "urn:ngm:class:ai-model-architecture",
+        "label": "AI Model Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ai-inference", "label": "AI Inference"},
-      {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:ai-agent", "label": "AI Agent"}
+      {
+        "@id": "urn:ngm:class:ai-inference",
+        "label": "AI Inference"
+      },
+      {
+        "@id": "urn:ngm:class:generative-ai",
+        "label": "Generative AI"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      },
+      {
+        "@id": "urn:ngm:class:ai-agent",
+        "label": "AI Agent"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:compute-infrastructure", "label": "Compute Infrastructure"},
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      },
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:model-weights", "label": "Model Weights"},
-      {"@id": "urn:ngm:class:model-checkpoint", "label": "Model Checkpoint"}
+      {
+        "@id": "urn:ngm:class:model-weights",
+        "label": "Model Weights"
+      },
+      {
+        "@id": "urn:ngm:class:model-checkpoint",
+        "label": "Model Checkpoint"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:learning-algorithm", "label": "Machine Learning Algorithm"}
+      {
+        "@id": "urn:ngm:class:learning-algorithm",
+        "label": "Machine Learning Algorithm"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:fine-tuning", "label": "Fine Tuning"},
-      {"@id": "urn:ngm:class:model-quantization", "label": "Model Quantization"}
+      {
+        "@id": "urn:ngm:class:fine-tuning",
+        "label": "Fine Tuning"
+      },
+      {
+        "@id": "urn:ngm:class:model-quantization",
+        "label": "Model Quantization"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:rule-based-systems", "label": "Rule-Based System"},
-      {"@id": "urn:ngm:class:expert-systems", "label": "Expert System"}
+      {
+        "@id": "urn:ngm:class:rule-based-systems",
+        "label": "Rule-Based System"
+      },
+      {
+        "@id": "urn:ngm:class:expert-systems",
+        "label": "Expert System"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"},
-      {"@id": "urn:ngm:class:model-deployment", "label": "Model Deployment"}
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      },
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:ai-model-card", "label": "AI Model Card"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"},
-      {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:ai-model-card",
+        "label": "AI Model Card"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      },
+      {
+        "@id": "urn:ngm:class:foundation-model",
+        "label": "Foundation Model"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ]
   },
   "sameAs": [
-    {"@id": "urn:ngm:class:machine-learning-model", "label": "Machine Learning Model"},
-    {"@id": "urn:ngm:class:predictive-model", "label": "Predictive Model"}
+    {
+      "@id": "urn:ngm:class:machine-learning-model",
+      "label": "Machine Learning Model"
+    },
+    {
+      "@id": "urn:ngm:class:predictive-model",
+      "label": "Predictive Model"
+    }
   ],
   "quality": 0.93,
   "provenance": {

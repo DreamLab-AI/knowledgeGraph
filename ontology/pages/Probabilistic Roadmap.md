@@ -24,41 +24,110 @@ public:: true
   "definition": "A probabilistic roadmap (PRM) is a sampling-based motion-planning algorithm that constructs a graph representation of the free configuration space of a robot by randomly sampling collision-free configurations and connecting nearby configurations with local path planners. In a preprocessing phase, many random configurations are sampled and validated against the robot's collision model; valid configurations become nodes and successful local connections become edges. At query time, start and goal configurations are connected to the roadmap and a graph-search algorithm finds a path. PRMs are effective in high-dimensional configuration spaces where deterministic grid-based planners are computationally infeasible.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:sampling-based-planning", "label": "Sampling Based Planning"},
-      {"@id": "urn:ngm:class:configuration-space", "label": "Configuration Space"},
-      {"@id": "urn:ngm:class:collision-detection", "label": "Collision Detection"},
-      {"@id": "urn:ngm:class:graph-search", "label": "Graph Search"}
+      {
+        "@id": "urn:ngm:class:sampling-based-planning",
+        "label": "Sampling Based Planning"
+      },
+      {
+        "@id": "urn:ngm:class:configuration-space",
+        "label": "Configuration Space"
+      },
+      {
+        "@id": "urn:ngm:class:collision-detection",
+        "label": "Collision Detection"
+      },
+      {
+        "@id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:rapidly-exploring-random-tree", "label": "Rapidly Exploring Random Tree"},
-      {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:path-planning", "label": "Path Planning"},
-      {"@id": "urn:ngm:class:robot-kinematics", "label": "Robot Kinematics"}
+      {
+        "@id": "urn:ngm:class:rapidly-exploring-random-tree",
+        "label": "Rapidly Exploring Random Tree"
+      },
+      {
+        "@id": "urn:ngm:class:motion-planning",
+        "label": "Motion Planning"
+      },
+      {
+        "@id": "urn:ngm:class:path-planning",
+        "label": "Path Planning"
+      },
+      {
+        "@id": "urn:ngm:class:robot-kinematics",
+        "label": "Robot Kinematics"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:robot-arm-planning", "label": "Robot Arm Planning"},
-      {"@id": "urn:ngm:class:multi-query-planning", "label": "Multi Query Planning"},
-      {"@id": "urn:ngm:class:autonomous-navigation", "label": "Autonomous Navigation"}
+      {
+        "@id": "urn:ngm:class:robot-arm-planning",
+        "label": "Robot Arm Planning"
+      },
+      {
+        "@id": "urn:ngm:class:multi-query-planning",
+        "label": "Multi Query Planning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-navigation",
+        "label": "Autonomous Navigation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:configuration-sample", "label": "Configuration Sample"},
-      {"@id": "urn:ngm:class:local-planner", "label": "Local Planner"},
-      {"@id": "urn:ngm:class:roadmap-graph", "label": "Roadmap Graph"}
+      {
+        "@id": "urn:ngm:class:configuration-sample",
+        "label": "Configuration Sample"
+      },
+      {
+        "@id": "urn:ngm:class:local-planner",
+        "label": "Local Planner"
+      },
+      {
+        "@id": "urn:ngm:class:roadmap-graph",
+        "label": "Roadmap Graph"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:random-sampling", "label": "Random Sampling"},
-      {"@id": "urn:ngm:class:obstacle-model", "label": "Obstacle Model"}
+      {
+        "@id": "urn:ngm:class:random-sampling",
+        "label": "Random Sampling"
+      },
+      {
+        "@id": "urn:ngm:class:obstacle-model",
+        "label": "Obstacle Model"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robot-manipulation", "label": "Robot Manipulation"},
-      {"@id": "urn:ngm:class:high-dimensional-planning", "label": "High Dimensional Planning"}
+      {
+        "@id": "urn:ngm:class:robot-manipulation",
+        "label": "Robot Manipulation"
+      },
+      {
+        "@id": "urn:ngm:class:high-dimensional-planning",
+        "label": "High Dimensional Planning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:grid-based-planning", "label": "Grid Based Planning"},
-      {"@id": "urn:ngm:class:potential-field-planning", "label": "Potential Field Planning"}
+      {
+        "@id": "urn:ngm:class:grid-based-planning",
+        "label": "Grid Based Planning"
+      },
+      {
+        "@id": "urn:ngm:class:potential-field-planning",
+        "label": "Potential Field Planning"
+      }
     ]
   },
   "sameAs": [],

@@ -15,7 +15,7 @@ public:: true
   "definition":"A centralized exchange (CEX) is a digital-asset trading venue operated by a single company that custodies user funds, matches orders through an internal order book, and acts as an intermediary for every trade. Users deposit assets into accounts controlled by the operator, who maintains liquidity, settlement, and the matching engine off-chain. CEXs offer high throughput and familiar interfaces but require trust in the operator and typically enforce identity-verification and anti-money-laundering controls.",
   "domain":"blockchain",
   "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
+  "subClassOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"},{"@id":"urn:ngm:class:bc-defi-and-economics","label":"DeFi and Economics"}],
   "relations":{
     "contrastsWith":[{"@id":"urn:ngm:class:decentralized-exchange","label":"Decentralized Exchange"},{"@id":"urn:ngm:class:self-custody","label":"Self-Custody"}],
     "requires":[{"@id":"urn:ngm:class:order-book","label":"Order Book"},{"@id":"urn:ngm:class:custody","label":"Custody"},{"@id":"urn:ngm:class:know-your-customer","label":"Know Your Customer"},{"@id":"urn:ngm:class:liquidity","label":"Liquidity"}],

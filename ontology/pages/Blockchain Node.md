@@ -6,29 +6,116 @@ public:: true
 ```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:blockchain-node",
-  "@type":"Class",
-  "label":"Blockchain Node",
-  "definition":"A blockchain node is a computer running the protocol software of a blockchain network that maintains a copy of the ledger, validates transactions and blocks, and relays them to peers. Nodes collectively enforce the consensus rules and provide the decentralisation and redundancy that make the network trustworthy. They range from full nodes that store and verify the complete chain to light clients that verify selectively, and validator nodes that additionally participate in block production.",
-  "domain":"blockchain",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:peer-to-peer-network","label":"Peer-to-Peer Network"},{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
-    "hasPart":[{"@id":"urn:ngm:class:mempool","label":"Mempool"},{"@id":"urn:ngm:class:full-node","label":"Full Node"}],
-    "dependsOn":[{"@id":"urn:ngm:class:consensus-mechanism","label":"Consensus Mechanism"},{"@id":"urn:ngm:class:peer-to-peer-network","label":"Peer-to-Peer Network"}],
-    "requires":[{"@id":"urn:ngm:class:transaction-validation","label":"Transaction Validation"}],
-    "supports":[{"@id":"urn:ngm:class:decentralisation","label":"Decentralisation"},{"@id":"urn:ngm:class:distributed-ledger","label":"Distributed Ledger"}],
-    "implements":[{"@id":"urn:ngm:class:block-propagation","label":"Block Propagation"}],
-    "uses":[{"@id":"urn:ngm:class:state-synchronisation","label":"State Synchronisation"}],
-    "enables":[{"@id":"urn:ngm:class:validator","label":"Validator"}],
-    "relatedTo":[{"@id":"urn:ngm:class:full-node","label":"Full Node"},{"@id":"urn:ngm:class:light-client","label":"Light Client"},{"@id":"urn:ngm:class:consensus","label":"Consensus"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:distributed-systems","label":"Distributed Systems"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:blockchain-node",
+  "@type": "Class",
+  "label": "Blockchain Node",
+  "definition": "A blockchain node is a computer running the protocol software of a blockchain network that maintains a copy of the ledger, validates transactions and blocks, and relays them to peers. Nodes collectively enforce the consensus rules and provide the decentralisation and redundancy that make the network trustworthy. They range from full nodes that store and verify the complete chain to light clients that verify selectively, and validator nodes that additionally participate in block production.",
+  "domain": "blockchain",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:network-component",
+      "label": "Network Component"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      },
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:mempool",
+        "label": "Mempool"
+      },
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:consensus-mechanism",
+        "label": "Consensus Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:peer-to-peer-network",
+        "label": "Peer-to-Peer Network"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:transaction-validation",
+        "label": "Transaction Validation"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:decentralisation",
+        "label": "Decentralisation"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-ledger",
+        "label": "Distributed Ledger"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:block-propagation",
+        "label": "Block Propagation"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:state-synchronisation",
+        "label": "State Synchronisation"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:validator",
+        "label": "Validator"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:full-node",
+        "label": "Full Node"
+      },
+      {
+        "@id": "urn:ngm:class:light-client",
+        "label": "Light Client"
+      },
+      {
+        "@id": "urn:ngm:class:consensus",
+        "label": "Consensus"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 - ### Definition

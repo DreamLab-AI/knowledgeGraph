@@ -15,7 +15,7 @@ public:: true
   "definition":"Threshold optimisation is the process of selecting the decision boundary applied to a model's continuous scores so that discrete predictions best satisfy a chosen objective. By tuning where a probability or score is converted into a class label, practitioners trade off precision against recall, manage class imbalance, and satisfy fairness or cost constraints. It is a post-hoc technique that adjusts operating points without retraining the underlying model.",
   "domain":"artificial-intelligence",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"}],
+  "subClassOf":[{"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"},{"@id":"urn:ngm:class:performance-metrics","label":"Performance Metrics"}],
   "relations":{
     "enables":[{"@id":"urn:ngm:class:fairness-metrics","label":"Fairness Metrics"},{"@id":"urn:ngm:class:bias-mitigation-techniques","label":"Bias Mitigation Techniques"}],
     "hasPart":[{"@id":"urn:ngm:class:classification-threshold","label":"Classification Threshold"},{"@id":"urn:ngm:class:decision-threshold","label":"Decision Threshold"}],

@@ -34,6 +34,10 @@ public:: true
     {
       "@id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
     }
   ],
   "provenance": {

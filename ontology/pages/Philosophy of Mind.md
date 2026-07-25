@@ -54,6 +54,10 @@ public:: true
     {
       "@id": "urn:ngm:class:cognitive-science",
       "label": "Cognitive Science"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "sameAs": [

@@ -57,6 +57,10 @@ public:: true
     {
       "@id": "urn:ngm:class:ar-technology",
       "label": "AR Technology"
+    },
+    {
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "relations": {

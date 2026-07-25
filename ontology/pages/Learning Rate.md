@@ -8,29 +8,100 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:learning-rate",
-  "@type":"Class",
-  "label":"Learning Rate",
-  "definition":"The learning rate is a hyperparameter in gradient-based optimisation that scales the size of each parameter update applied in the direction of the negative gradient. It governs the trade-off between the speed of convergence and the stability of training: too large a value can cause divergence or oscillation, while too small a value leads to slow progress or stalling in poor regions. It is one of the most consequential settings when training neural networks and is often varied over the course of training by a schedule or adapted per parameter.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:hyperparameter","label":"Hyperparameter"}],
-  "relations":{
-    "requires":[{"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"}],
-    "relatedTo":[{"@id":"urn:ngm:class:hyperparameter","label":"Hyperparameter"},{"@id":"urn:ngm:class:convergence","label":"Convergence"},{"@id":"urn:ngm:class:loss-function","label":"Loss Function"}],
-    "uses":[{"@id":"urn:ngm:class:learning-rate-schedule","label":"Learning Rate Schedule"}],
-    "enables":[{"@id":"urn:ngm:class:convergence","label":"Convergence"}],
-    "dependsOn":[{"@id":"urn:ngm:class:optimiser","label":"Optimiser"}],
-    "supports":[{"@id":"urn:ngm:class:neural-network-training","label":"Neural Network Training"}],
-    "implements":[{"@id":"urn:ngm:class:hyperparameter-tuning","label":"Hyperparameter Tuning"}],
-    "partOf":[{"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:adam-optimiser","label":"Adam Optimiser"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:stochastic-gradient-descent","label":"Stochastic Gradient Descent"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:learning-rate",
+  "@type": "Class",
+  "label": "Learning Rate",
+  "definition": "The learning rate is a hyperparameter in gradient-based optimisation that scales the size of each parameter update applied in the direction of the negative gradient. It governs the trade-off between the speed of convergence and the stability of training: too large a value can cause divergence or oscillation, while too small a value leads to slow progress or stalling in poor regions. It is one of the most consequential settings when training neural networks and is often varied over the course of training by a schedule or adapted per parameter.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:hyperparameter",
+      "label": "Hyperparameter"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "relations": {
+    "requires": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:hyperparameter",
+        "label": "Hyperparameter"
+      },
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      },
+      {
+        "@id": "urn:ngm:class:loss-function",
+        "label": "Loss Function"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:learning-rate-schedule",
+        "label": "Learning Rate Schedule"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:convergence",
+        "label": "Convergence"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:optimiser",
+        "label": "Optimiser"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:neural-network-training",
+        "label": "Neural Network Training"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:hyperparameter-tuning",
+        "label": "Hyperparameter Tuning"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:adam-optimiser",
+        "label": "Adam Optimiser"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:stochastic-gradient-descent",
+        "label": "Stochastic Gradient Descent"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

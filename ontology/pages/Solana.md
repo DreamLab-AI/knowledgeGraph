@@ -23,10 +23,16 @@ public:: true
   "definition": "Solana is a high-performance layer-1 blockchain designed by Anatoly Yakovenko and co-founded with Greg Fitzgerald, launched as mainnet-beta in 2020 by Solana Labs and the Solana Foundation. Its defining innovation, Proof of History, embeds a cryptographic clock — a verifiable delay function based on sequential SHA-256 hashing — into the ledger itself, enabling validators to agree on transaction ordering without peer-to-peer timestamp negotiation. This is complemented by the Sealevel parallel transaction execution runtime, the Gulf Stream mempool-less transaction forwarding protocol, Turbine block propagation, and the Tower BFT consensus algorithm, together enabling sustained throughputs of tens of thousands of transactions per second with sub-second finality at sub-cent fees. Solana underpins major DeFi ecosystems, NFT infrastructure, payments applications, and, more recently, AI-adjacent on-chain compute experiments.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": {
-    "@id": "urn:ngm:class:smart-contract-platform",
-    "label": "Smart Contract Platform"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    },
+    {
+      "@id": "urn:ngm:class:blockchain-network",
+      "label": "Blockchain Network"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

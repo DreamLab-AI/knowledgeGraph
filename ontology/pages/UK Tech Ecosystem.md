@@ -11,8 +11,8 @@ public:: true
   "vc:public": true,
   "vc:outboundWikilinks": [
     {
-      "@id": "urn:visionflow:linked:digital-innovation",
-      "vc:label": "Digital Innovation"
+      "@id": "urn:visionflow:linked:innovation",
+      "vc:label": "Innovation"
     },
     {
       "@id": "urn:visionflow:linked:economic-development",
@@ -86,8 +86,8 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:digital-innovation",
-        "label": "Digital Innovation"
+        "@id": "urn:ngm:class:innovation",
+        "label": "Innovation"
       },
       {
         "@id": "urn:ngm:class:ai-development",
@@ -192,8 +192,8 @@ public:: true
   },
   "vc:resolutions": [
     {
-      "raw": "[[Digital Innovation]]",
-      "resolved": "urn:visionflow:linked:digital-innovation",
+      "raw": "[[Innovation]]",
+      "resolved": "urn:visionflow:linked:innovation",
       "kind": "StubLink"
     },
     {
@@ -253,7 +253,7 @@ public:: true
 
 - ### Relationships
   - is-subclass-of:: [[Technology Industry]]
-  - enables:: [[AI Development]], [[Digital Innovation]], [[Tech Entrepreneurship]]
+  - enables:: [[AI Development]], [[Innovation]], [[Tech Entrepreneurship]]
   - bridges-to:: [[Digital Twin]]
 
 - ### Content

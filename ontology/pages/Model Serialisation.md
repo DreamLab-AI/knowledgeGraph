@@ -24,45 +24,114 @@ public:: true
   "definition": "Model serialisation is the process of converting a trained machine learning model — including its architecture definition, learned weights, and associated metadata — into a persistent, portable file format that can be stored, transferred, and subsequently loaded to restore the model to an operational state. Serialisation enables reproducibility, deployment across different environments, and sharing of pre-trained models through repositories. Common formats include ONNX for cross-framework portability, SafeTensors for security, PyTorch checkpoint files, and framework-native formats such as TensorFlow SavedModel.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:model-deployment", "label": "Model Deployment"},
-      {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"},
-      {"@id": "urn:ngm:class:mlops", "label": "Mlops"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "Mlops"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:file-format", "label": "File Format"},
-      {"@id": "urn:ngm:class:model-architecture", "label": "Model Architecture"},
-      {"@id": "urn:ngm:class:weight-storage", "label": "Weight Storage"}
+      {
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
+      },
+      {
+        "@id": "urn:ngm:class:model-architecture",
+        "label": "Model Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:weight-storage",
+        "label": "Weight Storage"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-portability", "label": "Model Portability"},
-      {"@id": "urn:ngm:class:model-versioning", "label": "Model Versioning"},
-      {"@id": "urn:ngm:class:inference-engine", "label": "Inference Engine"}
+      {
+        "@id": "urn:ngm:class:model-portability",
+        "label": "Model Portability"
+      },
+      {
+        "@id": "urn:ngm:class:model-versioning",
+        "label": "Model Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:inference-engine",
+        "label": "Inference Engine"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:checkpoint", "label": "Checkpoint"},
-      {"@id": "urn:ngm:class:model-metadata", "label": "Model Metadata"}
+      {
+        "@id": "urn:ngm:class:checkpoint",
+        "label": "Checkpoint"
+      },
+      {
+        "@id": "urn:ngm:class:model-metadata",
+        "label": "Model Metadata"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:onnx", "label": "Onnx"},
-      {"@id": "urn:ngm:class:safetensors", "label": "Safetensors"},
-      {"@id": "urn:ngm:class:pickle-format", "label": "Pickle Format"}
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "Onnx"
+      },
+      {
+        "@id": "urn:ngm:class:safetensors",
+        "label": "Safetensors"
+      },
+      {
+        "@id": "urn:ngm:class:pickle-format",
+        "label": "Pickle Format"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"},
-      {"@id": "urn:ngm:class:experiment-reproducibility", "label": "Experiment Reproducibility"}
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:experiment-reproducibility",
+        "label": "Experiment Reproducibility"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:just-in-time-compilation", "label": "Just In Time Compilation"}
+      {
+        "@id": "urn:ngm:class:just-in-time-compilation",
+        "label": "Just In Time Compilation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:onnx", "label": "Onnx"}
+      {
+        "@id": "urn:ngm:class:onnx",
+        "label": "Onnx"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:storage-system", "label": "Storage System"}
+      {
+        "@id": "urn:ngm:class:storage-system",
+        "label": "Storage System"
+      }
     ]
   },
   "sameAs": [],
@@ -76,7 +145,7 @@ public:: true
 ```
 
 - ### Definition
-  - [[Model Serialisation]] converts a trained ML model's architecture and weights into a portable [[File Format]] that persists state for later loading, sharing, or [[Model Deployment]].
+  - [[Model Serialisation]] converts a trained ML model's architecture and weights into a portable [[Data Format]] that persists state for later loading, sharing, or [[Model Deployment]].
   - Formats range from framework-specific [[Checkpoint]] files (PyTorch `.pt`, TensorFlow `SavedModel`) to cross-framework interchange via [[Onnx]] and the security-oriented [[Safetensors]] format.
   - Central to [[Mlops]] workflows, enabling [[Model Registry]] versioning, [[Transfer Learning]] from pre-trained checkpoints, and reproducible [[Experiment Reproducibility]].
 
@@ -106,7 +175,7 @@ public:: true
   - relatedTo:: [[Model Registry]]
   - relatedTo:: [[Mlops]]
   - relatedTo:: [[Transfer Learning]]
-  - requires:: [[File Format]]
+  - requires:: [[Data Format]]
   - requires:: [[Model Architecture]]
   - requires:: [[Weight Storage]]
   - enables:: [[Model Portability]]

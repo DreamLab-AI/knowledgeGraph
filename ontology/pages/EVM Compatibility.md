@@ -7,45 +7,100 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:evm-compatibility",
-  "@type":"Class",
-  "label":"EVM Compatibility",
-  "definition":"EVM compatibility is the property of a blockchain or execution environment that allows it to run smart contracts compiled for the Ethereum Virtual Machine without modification, supporting the same bytecode, opcodes and account model. Compatible chains can reuse Ethereum tooling, wallets, contracts and developer skills, which lowers the cost of porting applications and bootstrapping liquidity. It is the foundation of the wider EVM ecosystem spanning Layer-2 rollups, sidechains and alternative Layer-1 networks.",
-  "domain":"blockchain",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:smart-contract-platform","label":"Smart Contract Platform"}],
-  "relations":{
-    "dependsOn":[
-      {"@id":"urn:ngm:class:evm","label":"EVM"},
-      {"@id":"urn:ngm:class:solidity","label":"Solidity"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:evm-compatibility",
+  "@type": "Class",
+  "label": "EVM Compatibility",
+  "definition": "EVM compatibility is the property of a blockchain or execution environment that allows it to run smart contracts compiled for the Ethereum Virtual Machine without modification, supporting the same bytecode, opcodes and account model. Compatible chains can reuse Ethereum tooling, wallets, contracts and developer skills, which lowers the cost of porting applications and bootstrapping liquidity. It is the foundation of the wider EVM ecosystem spanning Layer-2 rollups, sidechains and alternative Layer-1 networks.",
+  "domain": "blockchain",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    },
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:evm",
+        "label": "EVM"
+      },
+      {
+        "@id": "urn:ngm:class:solidity",
+        "label": "Solidity"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:interoperability","label":"Interoperability"},
-      {"@id":"urn:ngm:class:cross-chain-bridge","label":"Cross-Chain Bridge"},
-      {"@id":"urn:ngm:class:optimistic-rollup","label":"Optimistic Rollup"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:interoperability",
+        "label": "Interoperability"
+      },
+      {
+        "@id": "urn:ngm:class:cross-chain-bridge",
+        "label": "Cross-Chain Bridge"
+      },
+      {
+        "@id": "urn:ngm:class:optimistic-rollup",
+        "label": "Optimistic Rollup"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:smart-contract","label":"Smart Contract"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:layer-2-scaling","label":"Layer 2 Scaling"},
-      {"@id":"urn:ngm:class:rollup","label":"Rollup"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:layer-2-scaling",
+        "label": "Layer 2 Scaling"
+      },
+      {
+        "@id": "urn:ngm:class:rollup",
+        "label": "Rollup"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:ethereum","label":"Ethereum"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:ethereum",
+        "label": "Ethereum"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:zk-sync","label":"zkSync"},
-      {"@id":"urn:ngm:class:arbitrum","label":"Arbitrum"},
-      {"@id":"urn:ngm:class:bnb-chain","label":"BNB Chain"},
-      {"@id":"urn:ngm:class:polygon","label":"Polygon"},
-      {"@id":"urn:ngm:class:connext","label":"Connext"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:zk-sync",
+        "label": "zkSync"
+      },
+      {
+        "@id": "urn:ngm:class:arbitrum",
+        "label": "Arbitrum"
+      },
+      {
+        "@id": "urn:ngm:class:bnb-chain",
+        "label": "BNB Chain"
+      },
+      {
+        "@id": "urn:ngm:class:polygon",
+        "label": "Polygon"
+      },
+      {
+        "@id": "urn:ngm:class:connext",
+        "label": "Connext"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

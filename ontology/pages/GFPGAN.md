@@ -23,7 +23,7 @@ public:: true
   "definition": "GFPGAN (Generative Facial Prior GAN) is a practical deep-learning model for blind face restoration that leverages the rich facial priors encoded in a pretrained StyleGAN to recover realistic detail from degraded portraits. It restores resolution, removes artefacts, and reconstructs plausible facial features in a single forward pass. It is widely used in photo restoration and as a face-enhancement component in image and video pipelines.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}],
+  "subClassOf": [{"@id": "urn:ngm:class:generative-model", "label": "Generative Model"}, {"@id": "urn:ngm:class:generative-adversarial-networks", "label": "Generative Adversarial Networks"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:face-swap", "label": "Face Swap"}, {"@id": "urn:ngm:class:image-and-video-restoration", "label": "Image and Video Restoration"}]
   },

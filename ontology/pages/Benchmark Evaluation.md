@@ -66,37 +66,106 @@ public:: true
   "definition": "Benchmark evaluation is the systematic measurement of a model or system against a standardised dataset and scoring protocol so that results are comparable across systems and over time. A benchmark specifies the task, the data splits, the permitted inputs, and the metrics used to rank performance. In machine learning, benchmark evaluation drives the field's empirical progress, but it is subject to well-known failure modes including train-test contamination, overfitting to leaderboards, and construct validity gaps between the benchmark and the real-world capability it purports to measure.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:ngm:class:ai-evaluation",
+      "label": "AI Evaluation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},
-      {"@id": "urn:ngm:class:performance-benchmarks", "label": "Performance Benchmarks"},
-      {"@id": "urn:ngm:class:benchmark-dataset", "label": "Benchmark Dataset"},
-      {"@id": "urn:ngm:class:evaluation-harness", "label": "Evaluation Harness"},
-      {"@id": "urn:ngm:class:statistical-hypothesis-testing", "label": "Statistical Hypothesis Testing"},
-      {"@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation"}
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Harness"
+      },
+      {
+        "@id": "urn:ngm:class:statistical-hypothesis-testing",
+        "label": "Statistical Hypothesis Testing"
+      },
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-evaluation-results", "label": "Model Evaluation Results"},
-      {"@id": "urn:ngm:class:leaderboard", "label": "Leaderboard"},
-      {"@id": "urn:ngm:class:reproducibility", "label": "Reproducibility"},
-      {"@id": "urn:ngm:class:capability-evaluation", "label": "Capability Evaluation"}
+      {
+        "@id": "urn:ngm:class:model-evaluation-results",
+        "label": "Model Evaluation Results"
+      },
+      {
+        "@id": "urn:ngm:class:leaderboard",
+        "label": "Leaderboard"
+      },
+      {
+        "@id": "urn:ngm:class:reproducibility",
+        "label": "Reproducibility"
+      },
+      {
+        "@id": "urn:ngm:class:capability-evaluation",
+        "label": "Capability Evaluation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:evaluation-harness", "label": "Evaluation Harness"},
-      {"@id": "urn:ngm:class:benchmark-standard", "label": "Benchmark Standard"},
-      {"@id": "urn:ngm:class:ai-benchmark-epistemological-critique", "label": "AI Benchmark Epistemological Critique"},
-      {"@id": "urn:ngm:class:frontier-model-evaluation", "label": "Frontier Model Evaluation"},
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"}
+      {
+        "@id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Harness"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-standard",
+        "label": "Benchmark Standard"
+      },
+      {
+        "@id": "urn:ngm:class:ai-benchmark-epistemological-critique",
+        "label": "AI Benchmark Epistemological Critique"
+      },
+      {
+        "@id": "urn:ngm:class:frontier-model-evaluation",
+        "label": "Frontier Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:benchmark-dataset", "label": "Benchmark Dataset"},
-      {"@id": "urn:ngm:class:ground-truth-labels", "label": "Ground Truth Labels"},
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}
+      {
+        "@id": "urn:ngm:class:benchmark-dataset",
+        "label": "Benchmark Dataset"
+      },
+      {
+        "@id": "urn:ngm:class:ground-truth-labels",
+        "label": "Ground Truth Labels"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:human-evaluation", "label": "Human Evaluation"},
-      {"@id": "urn:ngm:class:heuristic-evaluation", "label": "Heuristic Evaluation"}
+      {
+        "@id": "urn:ngm:class:human-evaluation",
+        "label": "Human Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:heuristic-evaluation",
+        "label": "Heuristic Evaluation"
+      }
     ]
   },
   "quality": 0.78

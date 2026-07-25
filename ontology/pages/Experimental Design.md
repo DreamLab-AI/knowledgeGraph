@@ -14,7 +14,7 @@ public:: true
   "definition":"Experimental design is the systematic planning of investigations so that the resulting data can support valid, efficient, and unbiased inferences about cause and effect. It specifies the treatments, controls, randomisation, replication, and blocking that isolate the effect of manipulated variables from confounders and noise. Grounded in the scientific method and statistical theory, it governs how hypotheses are tested, how sample sizes and power are determined, and how variability is controlled, and it underpins disciplined experimentation from laboratory trials to large-scale online A/B tests.",
   "domain":"artificial-intelligence",
   "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:scientific-method","label":"Scientific Method"}],
+  "subClassOf":[{"@id":"urn:ngm:class:scientific-method","label":"Scientific Method"},{"@id":"urn:ngm:class:ai-research-area","label":"AI Research Area"}],
   "relations":{
     "partOf":[
       {"@id":"urn:ngm:class:scientific-method","label":"Scientific Method"}
@@ -75,6 +75,7 @@ public:: true
 	- Agricultural, industrial, and social-science field experiments.
 - ### Relationships
 	- subClassOf:: [[Scientific Method]]
+	- subClassOf:: [[AI Research Area]]
 	- partOf:: [[Scientific Method]]
 	- requires:: [[Hypothesis Testing]]
 	- requires:: [[Sampling]]

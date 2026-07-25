@@ -14,7 +14,7 @@ public:: true
   "definition":"A false positive is an outcome in which a classifier or detection system reports the positive class for an instance that actually belongs to the negative class. It is one of the four cells of a confusion matrix and corresponds to a Type I error in statistical terms. The rate of false positives directly shapes precision and specificity and is traded off against false negatives when a decision threshold is tuned.",
   "domain":"machine-learning",
   "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:confusion-matrix","label":"Confusion Matrix"}],
+  "subClassOf":[{"@id":"urn:ngm:class:confusion-matrix","label":"Confusion Matrix"},{"@id":"urn:ngm:class:ai-technique","label":"AI Technique"}],
   "relations":{
     "hasPart":[
       {"@id":"urn:ngm:class:classification","label":"Classification"}

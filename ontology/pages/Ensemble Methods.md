@@ -69,10 +69,16 @@ public:: true
   "definition": "Machine learning techniques that combine multiple base models (weak learners) to produce a stronger, more accurate predictor by aggregating their predictions, thereby reducing variance, bias, or both, and achieving better generalisation than any single model alone.",
   "domain": "machine-learning",
   "maturity": "draft",
-  "subClassOf": {
-    "@id": "urn:ngm:class:machine-learning",
-    "label": "Machine Learning"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

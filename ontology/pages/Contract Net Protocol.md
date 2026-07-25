@@ -15,7 +15,7 @@ public:: true
   "definition":"The Contract Net Protocol is a task-sharing interaction pattern for multi-agent systems in which a manager agent announces a task, soliciting bids from potential contractor agents, evaluates the responses, and awards the task to the most suitable bidder. It decomposes distributed problem solving into the phases of announcement, bidding, awarding, and result reporting, treating the agent population as a market for negotiating the allocation of work. The protocol provides a decentralised mechanism for dynamic task allocation without a fixed assignment table.",
   "domain":"artificial-intelligence",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"}],
+  "subClassOf":[{"@id":"urn:ngm:class:artificial-intelligence","label":"Artificial Intelligence"},{"@id":"urn:ngm:class:multi-agent-system","label":"Multi-Agent System"}],
   "relations":{
     "implements":[{"@id":"urn:ngm:class:consensus","label":"Consensus"}],
     "uses":[{"@id":"urn:ngm:class:agent","label":"Agent"}],

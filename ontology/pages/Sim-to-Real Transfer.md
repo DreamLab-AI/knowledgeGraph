@@ -35,6 +35,10 @@ alias:: Sim to Real Transfer
     {
       "@id": "urn:ngm:class:transfer-learning",
       "label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:ngm:class:robot-learning",
+      "label": "Robot Learning"
     }
   ],
   "sameAs": [

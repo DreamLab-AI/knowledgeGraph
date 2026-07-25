@@ -79,7 +79,7 @@ public:: true
       {"@id": "urn:ngm:class:natural-language-generation", "label": "Natural Language Generation"},
       {"@id": "urn:ngm:class:text-to-image-model", "label": "Text-to-Image Model"},
       {"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
       {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"}
     ],
     "enables": [
@@ -157,7 +157,7 @@ public:: true
     {"wikilink": "Content Delivery Network", "@id": "urn:ngm:class:content-delivery-network", "status": "resolved"},
     {"wikilink": "Knowledge Management", "@id": "urn:ngm:class:knowledge-management", "status": "resolved"},
     {"wikilink": "Diffusion Model", "@id": "urn:ngm:class:diffusion-model", "status": "resolved"},
-    {"wikilink": "Multimodal AI", "@id": "urn:ngm:class:multimodal-ai", "status": "resolved"},
+    {"wikilink": "Multimodal AI", "@id": "urn:ngm:class:multimodal-ai-architecture-ai", "status": "resolved"},
     {"wikilink": "Agentic AI", "@id": "urn:ngm:class:agentic-ai", "status": "resolved"},
     {"wikilink": "Social Media Platform Infrastructure", "@id": "urn:ngm:class:social-media-platform-infrastructure", "status": "resolved"},
     {"wikilink": "Content Curation", "@id": "urn:ngm:class:content-curation", "status": "resolved"},

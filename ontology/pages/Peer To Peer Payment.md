@@ -19,6 +19,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:payment-system",
+      "label": "Payment System"
     }
   ],
   "relations": {

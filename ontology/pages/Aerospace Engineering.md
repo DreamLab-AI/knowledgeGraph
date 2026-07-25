@@ -24,7 +24,7 @@ public:: true
   "definition": "Aerospace Engineering is the branch of engineering concerned with the design, development, testing, and operation of aircraft, spacecraft, satellites, and related systems. It encompasses aerodynamics, propulsion, structural mechanics, avionics, guidance systems, and materials science. As an application domain it drives requirements for high-integrity embedded systems, real-time control, fault tolerance, and increasingly autonomous operation.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}, {"@id": "urn:ngm:class:systems-engineering", "label": "Systems Engineering"}],
   "relations": {
     "supports": [
       {"@id": "urn:ngm:class:robotics", "label": "Robotics"},

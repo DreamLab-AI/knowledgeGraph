@@ -23,9 +23,27 @@ public:: true
   "definition": "A URDF (Unified Robot Description Format) robot model is an XML specification that describes a robot's kinematic and dynamic properties, including links, joints, inertial parameters, visual meshes and collision geometry. It is the canonical model format in the ROS ecosystem, consumed by simulators, motion planners and visualisation tools to reason about a robot's physical structure. URDF files enable consistent representation of articulated robots across simulation and control software.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:kinematics-model",
+      "label": "Kinematics Model"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}, {"@id": "urn:ngm:class:gazebo-simulator", "label": "Gazebo Simulator"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:robot-operating-system",
+        "label": "Robot Operating System"
+      },
+      {
+        "@id": "urn:ngm:class:gazebo-simulator",
+        "label": "Gazebo Simulator"
+      }
+    ]
   },
   "quality": 0.72
 }

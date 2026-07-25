@@ -56,8 +56,8 @@ public:: true
         "label": "RSA Algorithm"
       },
       {
-        "@id": "urn:ngm:class:elliptic-curve-digital-signature-algorithm",
-        "label": "Elliptic Curve Digital Signature Algorithm"
+        "@id": "urn:ngm:class:ecdsa",
+        "label": "ECDSA"
       }
     ],
     "enables": [

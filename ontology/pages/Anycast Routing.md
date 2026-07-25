@@ -17,7 +17,7 @@ public:: true
   "maturity":"mature",
   "subClassOf":[{"@id":"urn:ngm:class:routing","label":"Routing"}],
   "relations":{
-    "uses":[{"@id":"urn:ngm:class:ip-addressing","label":"IP Addressing"},{"@id":"urn:ngm:class:network-routing","label":"Network Routing"}],
+    "uses":[{"@id":"urn:ngm:class:ip-addressing","label":"IP Addressing"},{"@id":"urn:ngm:class:routing","label":"Routing"}],
     "requires":[{"@id":"urn:ngm:class:geographic-distribution","label":"Geographic Distribution"}],
     "supports":[{"@id":"urn:ngm:class:cdn","label":"Content Delivery Network"},{"@id":"urn:ngm:class:dns","label":"DNS"}],
     "enables":[{"@id":"urn:ngm:class:failover","label":"Failover"},{"@id":"urn:ngm:class:high-availability","label":"High Availability"}],

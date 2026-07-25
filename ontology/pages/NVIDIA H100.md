@@ -58,6 +58,10 @@ public:: true
     {
       "@id": "urn:ngm:class:gpu",
       "label": "GPU"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
     }
   ],
   "relations": {

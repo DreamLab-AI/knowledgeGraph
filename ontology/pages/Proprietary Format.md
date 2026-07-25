@@ -18,7 +18,7 @@ public:: true
   "subClassOf":[{"@id":"urn:ngm:class:data-format","label":"Data Format"}],
   "relations":{
     "contrastsWith":[{"@id":"urn:ngm:class:open-standard","label":"Open Standard"},{"@id":"urn:ngm:class:open-source","label":"Open Source"}],
-    "partOf":[{"@id":"urn:ngm:class:file-format","label":"File Format"}],
+    "partOf":[{"@id":"urn:ngm:class:data-format","label":"Data Format"}],
     "dependsOn":[{"@id":"urn:ngm:class:proprietary-software","label":"Proprietary Software"}],
     "enables":[{"@id":"urn:ngm:class:vendor-lock-in","label":"Vendor Lock-In"}],
     "uses":[{"@id":"urn:ngm:class:encryption","label":"Encryption"}],
@@ -54,7 +54,7 @@ public:: true
 - subClassOf:: [[Data Format]]
 - contrastsWith:: [[Open Standard]]
 - contrastsWith:: [[Open Source]]
-- partOf:: [[File Format]]
+- partOf:: [[Data Format]]
 - dependsOn:: [[Proprietary Software]]
 - enables:: [[Vendor Lock-In]]
 - uses:: [[Encryption]]

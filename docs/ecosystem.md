@@ -17,18 +17,18 @@ binary graph tiers.
 | Component | Path | Licence | Licence file |
 |---|---|---|---|
 | Build pipeline (10 Python modules + tests) | `pipeline/` | AGPL-3.0-or-later | `LICENSE` |
-| Corpus (7,457 public pages) | `ontology/pages/` | ODbL-1.0 | `LICENSE-DATA` |
+| Corpus (7,874 public pages) | `ontology/pages/` | ODbL-1.0 | `LICENSE-DATA` |
 | Explorer (WasmVOWL derivative) | `explorer/` | MIT | `LICENSE-EXPLORER`, `explorer/license.txt` |
 | JSON-LD context document | `static/ns/v2.jsonld` | AGPL-3.0-or-later | `LICENSE` |
 | Built artefacts | `dist/data/`, `dist/api/` | ODbL-1.0 (data) | `LICENSE-DATA` |
 
-The 2026-07-25 build produced 7,457 OWL classes, 0 individuals, 7,454 pages,
-96,377 emitted edges (of 110,617 declared) and 252,974 Turtle triples, in 18.0
+The 2026-07-25 build produced 7,874 OWL classes, 0 individuals, 7,870 pages,
+98,776 emitted edges (of 111,827 declared) and 258,200 Turtle triples, in 18.3
 seconds. The class, page, node, edge, domain (6) and category (34) counts, plus
 `pipelineVersion: ng-1.0.0` and `datasetDate: 2026-07-25`, are recorded in
 `dist/data/graph/stats.json`. The triple count is a property of
 `dist/data/ontology.ttl`, not of `stats.json`; `rdflib` reports 252974 on
-parsing it. The 18.0 s elapsed time is printed by `pipeline/build.py` at the end
+parsing it. The 18.3 s elapsed time is printed by `pipeline/build.py` at the end
 of a run and is not persisted anywhere. `stats.json` also carries the corpus
 honesty statement `"corpusNature": "synthetic-ai-generated-human-directed"`. The
 corpus is mostly AI-generated synthetic content produced under human direction,
@@ -40,10 +40,10 @@ generation under human direction, not human authorship.
 
 ```mermaid
 flowchart TD
-    SRC["ontology/pages/<br/>7,457 Logseq .md pages<br/>with embedded JSON-LD"]
+    SRC["ontology/pages/<br/>7,874 Logseq .md pages<br/>with embedded JSON-LD"]
 
     subgraph PIPE["pipeline/ — Python + rdflib, AGPL-3.0-or-later"]
-        P1["jsonld_parser.py"] --> P2["validate.py<br/>0 errors, 961 warnings"]
+        P1["jsonld_parser.py"] --> P2["validate.py<br/>0 errors, 0 warnings, 1,402 info"]
         P2 --> P3["jsonld_to_turtle.py"]
         P2 --> P4["jsonld_to_webvowl.py"]
         P2 --> P5["jsonld_to_page_api.py"]
@@ -53,7 +53,7 @@ flowchart TD
 
     SRC --> P1
 
-    TTL["dist/data/ontology.ttl<br/>252,974 triples · 11.7 MiB"]
+    TTL["dist/data/ontology.ttl<br/>258,200 triples · 12.0 MiB"]
     VOWL["dist/data/ontology.json<br/>WebVOWL · 37.5 MiB"]
     TIERS["dist/data/graph/*.bin<br/>full + 6 domain tiers<br/>+ overview.json + stats.json"]
     API["dist/api/pages/*.json + markdown/*.md<br/>+ dist/api/search-index.json"]
@@ -256,10 +256,13 @@ half of that job and deliberately has no deploy path: its whole permission set i
 `contents: read`, so it could not push even if a step tried. It runs a secret scan
 over `ontology/`, the pipeline unit tests (`pipeline/tests`, including the
 183-byte NGG1 golden fixture), the 7-stage build into `dist-ci/`, a hard contract
-gate asserting `EXPECTED_CLASSES: '7457'` against both `stats.json` and
+gate asserting `EXPECTED_CLASSES: '7874'` against both `stats.json` and
 `ontology.json`, and `python -m pipeline.validate ontology/pages`, which must
-report zero errors. The 961 warnings (957 `MULTI_PARENT`, 4 `INVALID_DOMAIN`;
-see `dist/api/validation-report.json`) do not fail the build. Reproduce it with:
+report zero errors. It now also reports zero warnings. The 1,402 remaining
+issues are `MULTI_PARENT` at `info` severity: bridging classes, which are a
+design property of this corpus rather than a defect. They were published as
+warnings until 2026-07-25, when the count was corrected. See
+`dist/api/validation-report.json`. Reproduce it with:
 
 ```bash
 pip install "rdflib>=7.0.0" pytest
@@ -279,8 +282,8 @@ The ontology this project consumes is published from
 [DreamLab-AI/knowledgeGraph](https://github.com/DreamLab-AI/knowledgeGraph)
 and served at [narrativegoldmine.com](https://narrativegoldmine.com).
 
-- Turtle: <https://narrativegoldmine.com/data/ontology.ttl> — 7,457 OWL classes,
-  252,974 triples, 6 domains, 34 categories (build of 2026-07-25).
+- Turtle: <https://narrativegoldmine.com/data/ontology.ttl> — 7,874 OWL classes,
+  258,200 triples, 6 domains, 34 categories (build of 2026-07-25).
 - WebVOWL graph: <https://narrativegoldmine.com/data/ontology.json>
 - JSON-LD context: <https://narrativegoldmine.com/ns/v2.jsonld>
 - Search index: <https://narrativegoldmine.com/api/search-index.json>

@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:bayesian-optimisation",
+      "label": "Bayesian Optimisation"
     }
   ],
   "relations": {

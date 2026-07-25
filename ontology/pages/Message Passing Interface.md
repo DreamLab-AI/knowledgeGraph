@@ -24,40 +24,100 @@ public:: true
   "definition": "Message Passing Interface (MPI) is a standardised communication protocol and application programming interface for parallel and distributed computing. It defines primitives for point-to-point and collective communication between processes running across multiple compute nodes, enabling tightly coupled high-performance computing workloads. MPI is the de facto standard for scientific computing, numerical simulations, and distributed AI training at supercomputer scale.",
   "domain": "infrastructure",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:parallel-computing",
+      "label": "Parallel Computing"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:parallel-computing", "label": "Parallel Computing"},
-      {"@id": "urn:ngm:class:network-fabric", "label": "Network Fabric"},
-      {"@id": "urn:ngm:class:infiniband", "label": "InfiniBand"}
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      },
+      {
+        "@id": "urn:ngm:class:network-fabric",
+        "label": "Network Fabric"
+      },
+      {
+        "@id": "urn:ngm:class:infiniband",
+        "label": "InfiniBand"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:distributed-computing", "label": "Distributed Computing"},
-      {"@id": "urn:ngm:class:collective-communication", "label": "Collective Communication"}
+      {
+        "@id": "urn:ngm:class:distributed-computing",
+        "label": "Distributed Computing"
+      },
+      {
+        "@id": "urn:ngm:class:collective-communication",
+        "label": "Collective Communication"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:high-performance-computing", "label": "High Performance Computing"},
-      {"@id": "urn:ngm:class:cluster-computing", "label": "Cluster Computing"}
+      {
+        "@id": "urn:ngm:class:high-performance-computing",
+        "label": "High Performance Computing"
+      },
+      {
+        "@id": "urn:ngm:class:cluster-computing",
+        "label": "Cluster Computing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:numerical-simulation", "label": "Numerical Simulation"}
+      {
+        "@id": "urn:ngm:class:distributed-training",
+        "label": "Distributed Training"
+      },
+      {
+        "@id": "urn:ngm:class:numerical-simulation",
+        "label": "Numerical Simulation"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:mpi-forum", "label": "MPI Forum"}
+      {
+        "@id": "urn:ngm:class:mpi-forum",
+        "label": "MPI Forum"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:openmp", "label": "OpenMP"},
-      {"@id": "urn:ngm:class:cuda", "label": "CUDA"},
-      {"@id": "urn:ngm:class:remote-direct-memory-access", "label": "Remote Direct Memory Access"},
-      {"@id": "urn:ngm:class:supercomputing", "label": "Supercomputing"}
+      {
+        "@id": "urn:ngm:class:openmp",
+        "label": "OpenMP"
+      },
+      {
+        "@id": "urn:ngm:class:cuda",
+        "label": "CUDA"
+      },
+      {
+        "@id": "urn:ngm:class:remote-direct-memory-access",
+        "label": "Remote Direct Memory Access"
+      },
+      {
+        "@id": "urn:ngm:class:supercomputing",
+        "label": "Supercomputing"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:shared-memory-model", "label": "Shared Memory Model"}
+      {
+        "@id": "urn:ngm:class:shared-memory-model",
+        "label": "Shared Memory Model"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:data-parallelism", "label": "Data Parallelism"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data-parallelism",
+        "label": "Data Parallelism"
+      }
     ]
   },
   "quality": 0.62,

@@ -23,7 +23,7 @@ public:: true
   "definition": "Transaction history is the ordered, append-only record of all value transfers, state changes, or operations executed within a financial or data system, providing a tamper-evident chronological account of who transacted what, with whom, and when. In blockchain systems, transaction history is the fundamental data structure underpinning the distributed ledger — every confirmed block links to its predecessor through cryptographic hashing, making retroactive alteration of any transaction computationally prohibitive. Transaction history serves audit, compliance, forensic, tax, and portfolio analytics functions across both traditional and decentralised financial systems.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}],
+  "subClassOf": [{"@id": "urn:ngm:class:blockchain-transaction", "label": "Blockchain Transaction"}, {"@id": "urn:ngm:class:transaction-ledger", "label": "Transaction Ledger"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:distributed-ledger", "label": "Distributed Ledger"},

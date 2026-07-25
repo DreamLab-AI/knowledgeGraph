@@ -13,7 +13,7 @@ public:: true
   "definition":"Spam prevention is the set of mechanisms that deter the flooding of a shared system with low-value or malicious activity. In blockchain networks it most commonly takes the form of transaction fees or proof-of-work requirements that impose a real cost on each submission, making large-scale spamming economically or computationally infeasible. Spam prevention protects scarce resources such as block space, mempool capacity and validator compute from denial-of-service style abuse. It is a key design constraint that interacts with throughput, fee markets and decentralisation.",
   "domain":"blockchain",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"}],
+  "subClassOf":[{"@id":"urn:ngm:class:blockchain","label":"Blockchain"},{"@id":"urn:ngm:class:sybil-resistance","label":"Sybil Resistance"}],
   "relations":{
     "enables":[{"@id":"urn:ngm:class:scalability","label":"Scalability"}],
     "requires":[{"@id":"urn:ngm:class:transaction-fee","label":"Transaction Fee"}],

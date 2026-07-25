@@ -15,42 +15,108 @@ public:: true
   "definition": "A Streaming Payment is a continuous, real-time value transfer mechanism enabled by programmable money protocols — particularly Layer 2 payment channel networks such as the Bitcoin Lightning Network — whereby funds flow incrementally over time in proportion to ongoing service consumption rather than in discrete lump-sum transactions. Streaming payments enable pay-per-second, pay-per-byte, or pay-per-computation billing models that align payment precisely with value delivered, eliminating invoicing cycles and reducing counterparty risk. They are foundational to micropayment-based business models for media, APIs, AI inference, bandwidth, and real-time data feeds.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "relations": {
     "partOf": [
-      {"@id": "urn:ngm:class:programmable-money", "label": "Programmable Money"},
-      {"@id": "urn:ngm:class:micropayment", "label": "Micropayment"}
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      },
+      {
+        "@id": "urn:ngm:class:micropayment",
+        "label": "Micropayment"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:payment-channel", "label": "Payment Channel"},
-      {"@id": "urn:ngm:class:lightning-network", "label": "Lightning Network"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"}
+      {
+        "@id": "urn:ngm:class:payment-channel",
+        "label": "Payment Channel"
+      },
+      {
+        "@id": "urn:ngm:class:lightning-network",
+        "label": "Lightning Network"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:pay-per-use", "label": "Pay-Per-Use"},
-      {"@id": "urn:ngm:class:web-monetization", "label": "Web Monetization"},
-      {"@id": "urn:ngm:class:machine-to-machine-payment", "label": "Machine-to-Machine Payment"},
-      {"@id": "urn:ngm:class:real-time-economy", "label": "Real-Time Economy"}
+      {
+        "@id": "urn:ngm:class:pay-per-use",
+        "label": "Pay-Per-Use"
+      },
+      {
+        "@id": "urn:ngm:class:web-monetization",
+        "label": "Web Monetization"
+      },
+      {
+        "@id": "urn:ngm:class:machine-to-machine-payment",
+        "label": "Machine-to-Machine Payment"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-economy",
+        "label": "Real-Time Economy"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:hash-time-locked-contract", "label": "Hash Time-Locked Contract"},
-      {"@id": "urn:ngm:class:programmable-money", "label": "Programmable Money"}
+      {
+        "@id": "urn:ngm:class:hash-time-locked-contract",
+        "label": "Hash Time-Locked Contract"
+      },
+      {
+        "@id": "urn:ngm:class:programmable-money",
+        "label": "Programmable Money"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:streaming-payments", "label": "Streaming Payments"},
-      {"@id": "urn:ngm:class:iot-payments", "label": "IoT Payments"},
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:streaming-payments",
+        "label": "Streaming Payments"
+      },
+      {
+        "@id": "urn:ngm:class:iot-payments",
+        "label": "IoT Payments"
+      },
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:batch-payment", "label": "Batch Payment"},
-      {"@id": "urn:ngm:class:subscription-model", "label": "Subscription Model"}
+      {
+        "@id": "urn:ngm:class:batch-payment",
+        "label": "Batch Payment"
+      },
+      {
+        "@id": "urn:ngm:class:subscription-model",
+        "label": "Subscription Model"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:content-monetisation", "label": "Content Monetisation"},
-      {"@id": "urn:ngm:class:api-monetisation", "label": "API Monetisation"}
+      {
+        "@id": "urn:ngm:class:content-monetisation",
+        "label": "Content Monetisation"
+      },
+      {
+        "@id": "urn:ngm:class:api-monetisation",
+        "label": "API Monetisation"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      }
     ]
   },
   "quality": 0.62,

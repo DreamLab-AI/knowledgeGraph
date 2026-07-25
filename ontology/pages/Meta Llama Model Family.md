@@ -59,10 +59,16 @@ elevatedFrom:: [[Llama]]
   "domain": "ai",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:large-language-model",
-    "label": "Large Language Model"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:large-language-model",
+      "label": "Large Language Model"
+    },
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ],
   "relations": {
     "requires": [
       {

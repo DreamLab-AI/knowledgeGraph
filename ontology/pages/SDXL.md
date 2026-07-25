@@ -23,7 +23,7 @@ public:: true
   "definition": "SDXL (Stable Diffusion XL) is a large-scale latent diffusion model released by Stability AI in 2023, comprising a 3.5-billion-parameter UNet and an ensemble of two CLIP text encoders that condition image generation at native 1024×1024 resolution. It introduces a two-stage architecture — a base model followed by a refinement model — and supports advanced conditioning mechanisms including aesthetic scoring and crop coordinates.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"}],
+  "subClassOf": [{"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"}, {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:vae", "label": "VAE"},

@@ -7,51 +7,106 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:pairwise-comparison",
-  "@type":"Class",
-  "label":"Pairwise Comparison",
-  "definition":"Pairwise comparison is a method of evaluation in which items are judged two at a time, with each judgement expressing which of the two is preferred or superior on some criterion. Because relative judgements are easier and more reliable for humans than absolute scoring, pairwise comparison is widely used to elicit preferences and to construct rankings from many such local decisions. Statistical models such as the Bradley-Terry model convert collections of pairwise outcomes into latent strength or quality scores. In machine learning it is the dominant feedback format for training reward models and aligning language models with human preferences.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}],
-  "relations":{
-    "dependsOn":[
-      {"@id":"urn:ngm:class:human-feedback","label":"Human Feedback"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:pairwise-comparison",
+  "@type": "Class",
+  "label": "Pairwise Comparison",
+  "definition": "Pairwise comparison is a method of evaluation in which items are judged two at a time, with each judgement expressing which of the two is preferred or superior on some criterion. Because relative judgements are easier and more reliable for humans than absolute scoring, pairwise comparison is widely used to elicit preferences and to construct rankings from many such local decisions. Statistical models such as the Bradley-Terry model convert collections of pairwise outcomes into latent strength or quality scores. In machine learning it is the dominant feedback format for training reward models and aligning language models with human preferences.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:model-performance",
+      "label": "Model Performance"
+    }
+  ],
+  "relations": {
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:human-feedback","label":"Human Feedback"},
-      {"@id":"urn:ngm:class:preference-learning","label":"Preference Learning"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:human-feedback",
+        "label": "Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:bradley-terry-model","label":"Bradley-Terry Model"},
-      {"@id":"urn:ngm:class:probability-distribution","label":"Probability Distribution"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:bradley-terry-model",
+        "label": "Bradley-Terry Model"
+      },
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:reward-model","label":"Reward Model"},
-      {"@id":"urn:ngm:class:preference-learning","label":"Preference Learning"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      },
+      {
+        "@id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:reinforcement-learning-from-human-feedback","label":"Reinforcement Learning from Human Feedback"},
-      {"@id":"urn:ngm:class:recommendation-system","label":"Recommendation System"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:reinforcement-learning-from-human-feedback",
+        "label": "Reinforcement Learning from Human Feedback"
+      },
+      {
+        "@id": "urn:ngm:class:recommendation-system",
+        "label": "Recommendation System"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:bradley-terry-model","label":"Bradley-Terry Model"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:bradley-terry-model",
+        "label": "Bradley-Terry Model"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:direct-preference-optimisation","label":"Direct Preference Optimisation"},
-      {"@id":"urn:ngm:class:reward-model","label":"Reward Model"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:direct-preference-optimisation",
+        "label": "Direct Preference Optimisation"
+      },
+      {
+        "@id": "urn:ngm:class:reward-model",
+        "label": "Reward Model"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:preference-learning","label":"Preference Learning"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:preference-learning",
+        "label": "Preference Learning"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

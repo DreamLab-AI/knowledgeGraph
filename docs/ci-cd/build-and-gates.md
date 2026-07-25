@@ -1,13 +1,19 @@
 # Build and quality gates
 
 This repository ships a **build**, not a deployment.
-`.github/workflows/build.yml` (204 lines) runs the seven-stage Python pipeline
+`.github/workflows/build.yml` (207 lines) runs the seven-stage Python pipeline
 behind four blocking gates and uploads the output as a run artefact;
 `permissions: contents: read` is the whole permission set, so it cannot write
-anywhere. The private publishing CI is a superset of it: the same four gates, six
-more that need a Rust or Node toolchain this workflow never installs, and then a
-deploy. This document describes each gate, what it catches, and, for two of them,
-the incident that caused it to be written.
+anywhere. It is not a strict subset of the private publishing CI. That CI runs
+nine gates: two of the four here re-appear in it (pipeline unit tests, corpus
+validation — which it runs twice, once inside the build and once standalone),
+six more need a Rust or Node toolchain this workflow never installs, and then it
+deploys. The other two gates here, the secret scan and the class-count contract,
+are specific to this extracted corpus and have no counterpart in that CI, because
+the corpus is the published artefact here and is not there. This document
+describes each gate, what it catches, and, for three of them, the incident that
+shaped it — two that were written because something broke, and one that was
+already there and was reporting the wrong thing.
 
 ---
 
@@ -26,12 +32,13 @@ order, defined in `pipeline/build.py`:
 | 6 | Search index | `pipeline/jsonld_to_search.py` | `api/search-index.json` |
 | 7 | Graph tiers | `pipeline/emit_graph_tiers.py` | `data/graph/*.bin`, `overview.json`, `stats.json` |
 
-The whole pipeline is 2,309 lines of Python across nine modules plus one test
-module, and its only runtime dependency is `rdflib>=7.0.0`.
+The whole pipeline is 2,471 lines of Python across nine modules plus one
+496-line test module, and its only runtime dependency is `rdflib>=7.0.0`.
 
-Measured on 2026-07-25 from this tree: **18.0 seconds**, 7,457 public pages in,
-7,457 OWL classes and 0 individuals out, 252,974 Turtle triples, 96,377 graph
-edges emitted from 110,617 declared, 0 validation errors and 961 warnings.
+Measured on 2026-07-25 from this tree: **18.7 seconds**, 7,874 public pages in,
+7,874 OWL classes and 0 individuals out, 258,200 Turtle triples, 98,776 graph
+edges emitted from 111,827 declared, 0 validation errors, 0 warnings and 1,401
+informational entries.
 
 ```bash
 pip install "rdflib>=7.0.0" pytest
@@ -39,9 +46,11 @@ python -m pipeline.build ontology/pages dist
 python -m pipeline.validate ontology/pages
 ```
 
-`dist/data/` is committed (`ontology.ttl` 12.3 MB, `ontology.json` 39.3 MB,
-`graph/*.bin`); `dist/api/` is 14,889 files and is gitignored, rebuilt in seconds;
-see `.gitignore` lines 1-4.
+`dist/data/` is committed (`ontology.ttl` 12.7 MB, `ontology.json` 40.4 MB,
+`graph/*.bin`, plus the two JSON sidecars `overview.json` and `bridges.json`);
+`dist/api/` is 15,701 files and is gitignored, rebuilt in seconds; see
+`.gitignore` lines 1-8, where the `/dist/api/` rule sits under a comment
+explaining why `/dist/data/` is not ignored.
 
 ---
 
@@ -50,13 +59,13 @@ see `.gitignore` lines 1-4.
 ### 2.1 What `.github/workflows/build.yml` runs
 
 Four gates, cheapest first, so a leaked credential or a broken unit test fails in
-seconds rather than after a 39 MB WebVOWL serialisation.
+seconds rather than after a 40 MB WebVOWL serialisation.
 
 | # | Gate | Command | Catches |
 |---|------|---------|---------|
 | 1 | Secret scan | `grep -rInE '<8 anchored patterns>' ontology/` | credential-shaped strings in a corpus that ships verbatim |
 | 2 | Pipeline unit tests | `python -m pytest pipeline/tests -q` | NGG1 byte layout, overview.json consumer contract, cap policy |
-| 3 | Corpus contract | `EXPECTED_CLASSES: '7457'` read back from two build artefacts | silent parse regressions that move the class count |
+| 3 | Corpus contract | `EXPECTED_CLASSES: '7874'` read back from two build artefacts | silent parse regressions that move the class count |
 | 4 | Validation | `python -m pipeline.validate ontology/pages` exit code | corpus errors (missing IRI/slug/label, self-reference, duplicate IRI) |
 
 The build itself sits between gates 2 and 3 (`python -m pipeline.build
@@ -73,7 +82,7 @@ those toolchains present.
 |------|---------|---------|
 | Honesty grep | `grep` over `explorer/**/*.md` | unevidenced "production ready" status claims |
 | Rust tests | `cargo test --all-features` (in `explorer/rust-wasm`) | NGG1 reader, explorer sim determinism |
-| Typecheck | `npm run build:check` → `tsc -b` (in `explorer/modern`) | SPA type regressions across the whole project graph |
+| Typecheck | `npm run build:check` → `tsc -b && vite build` (in `explorer/modern`) | SPA type regressions across the whole project graph |
 | Vitest | `npm run test` → `vitest run` | NGG1 deserialise, worker protocol, position transport, COI registration |
 | Markdown-mirror contract | file-count comparison against the parser | under-publication of public pages |
 | Explorer smoke | `node tests/smoke/graph-smoke.mjs <dir>` | blank canvas, zero-node T0, unreachable focus, perf budgets |
@@ -83,7 +92,7 @@ those toolchains present.
 `ontology/pages/*.md` ships verbatim, so a leaked key in a page is a leaked key on
 the internet; this gate blocks rather than warns. Every pattern is anchored to a
 token-shaped suffix on purpose. Measured on this corpus: a bare `sk-` substring
-matches **1,097 of the 7,457 files** (risk-, task-, disk-, desk-assistant …) while
+matches **1,107 of the 7,874 files** (risk-, task-, disk-, desk-assistant …) while
 the anchored `sk-[A-Za-z0-9]{20,}` matches **0**; the bare prefix `[Bb]earer `
 appears in **64** files as HTTP prose while `[Bb]earer [A-Za-z0-9._~+/-]{20,}`
 matches **0**. The full eight-pattern alternation returns 0 hits over `ontology/`.
@@ -97,7 +106,7 @@ mistaken for a clean corpus.
 ### Gate 2: pipeline unit tests
 
 `pipeline/tests/test_emit_graph_tiers.py` holds nine tests. Measured on this tree
-(rdflib 7, python 3.12): `9 passed in 0.16s`.
+(rdflib 7.6.0, python 3.12): `9 passed in 0.19s`.
 
 **NGG1 golden fixture.** `test_golden_183_bytes_byte_exact` builds a 3-node /
 2-edge graph and asserts the packed output is byte-identical to the hex dump in
@@ -120,7 +129,15 @@ the frozen SPA reads:
 
 - `nodes` has 6 + 34 entries, domains at indices 0-5, categories at 6-39, order
   frozen because the edge records index into `nodes[]`;
-- `edges` has 34 entries, every target index `< 6`, every type `EDGE_SUBCLASS`;
+- the first 34 `edges` are the backbone, one per category, every target index
+  `< 6`, every type `EDGE_SUBCLASS`, and they stay at indices 0-33 so a reader
+  that assumed the old backbone-only file is unaffected;
+- every edge after those 34 is a category↔category bridge: type
+  `EDGE_RELATION`, both endpoints in 6-39, source ≠ target, `weight >= 1`. On
+  this corpus `overview.json` carries **124 edges: 34 backbone plus 90
+  weighted bridges**, aggregated from the 542 bridging classes in
+  `bridges.json`, and the same bridge pairs feed the force layout, so the baked
+  positions match the topology that is drawn;
 - `taxonomy` has 34 entries; without it the side panel falls back to
   "Category N";
 - `attributedTo == "did:nostr:jjohare"` **and** `isinstance(..., str)`, because
@@ -144,27 +161,33 @@ whole and slices only the relation list).
 
 ### Gate 3: the corpus contract
 
-`EXPECTED_CLASSES: '7457'` is checked against two artefacts the pipeline wrote,
+`EXPECTED_CLASSES: '7874'` is checked against two artefacts the pipeline wrote,
 not against stdout: `stats.json["classes"]` and the length of
-`ontology.json["class"]`. Both read 7457 in `dist/` on this tree. A dropped JSON-LD
+`ontology.json["class"]`. Both read 7874 in `dist/` on this tree. A dropped JSON-LD
 fence or a changed public filter surfaces here as a failing number rather than as a
 warning nobody reads. The step also prints `nodes`, `pages`, `domains`,
 `categories` and the declared/resolvable edge counts, so a run page carries the
 corpus shape without anyone opening an artefact.
 
-`stats.json` reports 7,454 pages against 7,457 classes: three pairs of files share
-a page IRI, and the page count is deduplicated by IRI rather than relabelled as the
-class count.
+The constant is a contract, not a measurement, so it moves only when the corpus
+does. It was `'7457'` until the corpus repair pass added 417 pages for concepts
+that two or more existing pages already referenced; the gate is meant to fail on
+an unexplained change and to be updated deliberately alongside an explained one.
+
+`stats.json` reports 7,870 pages against 7,874 classes: four pairs of files share
+a page IRI (`bitcoin`, `comfy-ui`, `ethereum`, `foundation-models`), and the page
+count is deduplicated by IRI rather than relabelled as the class count.
 
 ### Gate 4: pipeline validation
 
 `pipeline/validate.py` defines six error codes (`MISSING_PAGE_IRI`,
 `MISSING_SLUG`, `MISSING_CLASS_IRI`, `MISSING_LABEL`, `SELF_REFERENCE`,
-`DUPLICATE_IRI`) and five warning codes (`MISSING_SCHEMA_VERSION`,
-`MISSING_DOMAIN`, `INVALID_DOMAIN`, `SLUG_MISMATCH`, `MULTI_PARENT`).
+`DUPLICATE_IRI`), four warning codes (`MISSING_SCHEMA_VERSION`,
+`MISSING_DOMAIN`, `INVALID_DOMAIN`, `SLUG_MISMATCH`) and one informational code
+(`MULTI_PARENT`). Three severities, one exit code: only errors set it.
 
 Errors block. Both entry points end `sys.exit(1 if report.errors else 0)`:
-`pipeline/build.py:119` and `pipeline/validate.py:226` alike, so the build step
+`pipeline/build.py:119` and `pipeline/validate.py:244` alike, so the build step
 and this gate check the same condition twice through different code paths. Adding
 `--json` writes a machine-readable report (`total_pages`, `public_pages`,
 `by_code`, `issues[]`) without changing the exit code. Note that `build()` prints
@@ -174,14 +197,55 @@ still exits 1. Under a CI shell running with `-e`, the validation step aborts on
 the first non-zero exit, which makes any "non-blocking" branch downstream of it
 unreachable. Treat validation errors as fatal, because they are.
 
-Warnings never affect the exit code. The current 961 are **957 `MULTI_PARENT`
-plus 4 `INVALID_DOMAIN`** and nothing else. `MULTI_PARENT` fires whenever a class
-declares more than one `subClassOf`: `A Star Algorithm.md` declares Search
-Algorithm, Informed Search and Graph Search. The four `INVALID_DOMAIN` pages
-(`AI Investment.md`, `Creative Industries.md`, `Knowledge Economy.md` with domain
-`economics`; `Accountability (AI-0068).md` with `ai-governance`) are exactly the
-4 domainless nodes reported in `dist/data/graph/stats.json`. Both are known
-corpus properties, deliberately left as warnings rather than suppressed.
+Warnings never affect the exit code, and there are currently none. The report on
+this tree reads **0 errors, 0 warnings, 1,401 info**, and every one of the 1,401
+is `MULTI_PARENT`:
+
+```
+Validation: 7874 pages, 7874 with ontology, 7874 public
+Issues: 0 errors, 0 warnings, 1401 info
+```
+
+That count was 961 warnings before this pass: 957 `MULTI_PARENT` plus 4
+`INVALID_DOMAIN`. Two separate things took it to zero, and they are not the same
+kind of change. The four `INVALID_DOMAIN` pages (`AI Investment.md`, `Creative
+Industries.md`, `Knowledge Economy.md`, which carried the domain `economics`, and
+`Accountability (AI-0068).md`, which carried `ai-governance`) were repaired in
+the corpus; all four now read `artificial-intelligence`, `stats.json` reports
+`domainless: 0` to match, and the code fires 0 times. The remaining 957 were
+`MULTI_PARENT`, and nothing in the corpus was changed for those: the code was
+**reclassified from warning to info**. §3 sets out why, because it is the more
+interesting of the two.
+
+`MULTI_PARENT` fires whenever a class declares more than one `subClassOf`: `A
+Star Algorithm.md` declares Search Algorithm, Informed Search and Graph Search.
+It is not suppressed, because it is the only place the bridging is enumerated
+per page, and the counts it produces are cross-checked by the emitter:
+`stats.json` reports `bridging: {multiParent: 1401, crossCategory: 454,
+crossDomain: 153}`, and the 1,401 matches the validator's info count exactly.
+`bridges.json` lists the 542 of those classes that reach more than one category
+(454) or more than one domain (153), 65 of them both.
+
+That publication is load-bearing rather than decorative. The NGG1 node record
+carries a single `u16` category (`FORMAT-NGG1` §3), so the binary tiers keep only
+the **nearest** category per node and the rest of the membership is dropped at
+pack time. The full membership exists only in the JSON sidecars. That is a real
+limitation of the binary format, and `bridges.json` is where the discarded
+memberships remain visible.
+
+**What these gates do not check.** Validation is a schema and reference check
+over each page; it is not a completeness or quality check on the corpus, and
+nothing in §2 asserts one. Three properties hold on this tree that no gate here
+would fail on. `stats.json` reports `uncategorised: 3` — three classes whose
+ancestry reaches no category root, so the NGG1 writer packs them as `0xFFFF`.
+13,051 of the 111,827 declared edges point at a target that is not a declared
+class and are dropped before the tiers are packed, leaving the 98,776 resolvable
+edges; both numbers are in `stats.json`, and a large share of those targets are
+named exactly once across the whole corpus, which a later pass is meant to take.
+`individuals: 0` — this is a class hierarchy with no instance data at all. None
+of the three is an error under the six error codes and none is meant to be. They
+are recorded here because a run page reading "0 errors, 0 warnings" is a
+statement about six schema rules, not about the corpus being complete.
 
 ### Rust tests
 
@@ -251,11 +315,11 @@ private.
 Five emitters then re-derive publication independently from `PageData.is_public`:
 Turtle (`build_graph(..., public_only=True)`), WebVOWL
 (`jsonld_to_webvowl.py:48`), page API (`jsonld_to_page_api.py:21`), search index
-(`jsonld_to_search.py:18`) and graph tiers (`emit_graph_tiers.py:481`). Nothing
+(`jsonld_to_search.py:18`) and graph tiers (`emit_graph_tiers.py:538`). Nothing
 downstream trusts an upstream filter. The one deliberate exception is
 `build_backlink_index`, which is called on the full page list so that a private
 page linking to a public one still contributes a backlink; the extracted corpus
-here contains only the 7,457 public pages, so it does not arise.
+here contains only the 7,874 public pages, so it does not arise.
 
 The gate that protects publication is the markdown-mirror count contract
 below.
@@ -280,14 +344,14 @@ compact blocks read `"vc:public":true`. The filter did not match them, so those
 pages were never copied, and every affected page 404'd in the front end, while
 the build reported success, because copying fewer files is not an error.
 
-Measured on this corpus, the two patterns still diverge by exactly the historic
-amount:
+Measured on this corpus, the two patterns still diverge, and the gap has grown
+with the corpus rather than closed:
 
 | Pattern | Files matched |
 |---------|---------------|
-| `"vc:public":[[:space:]]*true` (tolerant) | 7,457 |
-| `"vc:public": true` (space-bearing literal) | 6,804 |
-| **Silently dropped** | **653** |
+| `"vc:public":[[:space:]]*true` (tolerant) | 7,874 |
+| `"vc:public": true` (space-bearing literal) | 6,984 |
+| **Silently dropped** | **890** |
 
 Two things were fixed. The regex was made whitespace-tolerant. More importantly,
 a **contract gate** was added: the mirror's file count is compared against a
@@ -296,8 +360,8 @@ fails the build.
 
 Ported to this repository the expectation has to be stated exactly, because the
 slug-form mirror is not a one-to-one image of the public corpus:
-`jsonld_to_page_api.py` writes a `.md` only when `page.body` is non-empty, and 29
-of the 7,457 public pages have an empty body. The runnable form is therefore:
+`jsonld_to_page_api.py` writes a `.md` only when `page.body` is non-empty, and 51
+of the 7,874 public pages have an empty body. The runnable form is therefore:
 
 ```bash
 python -m pipeline.build ontology/pages dist
@@ -308,8 +372,8 @@ print(sum(1 for p in parse_corpus(Path('ontology/pages')) if p.is_public and p.b
 [ "$md_count" -eq "$expected" ] || exit 1
 ```
 
-Both sides read **7,428** on this tree (7,457 public pages minus the 29 with no
-body). Dropping the `and p.body` term would compare 7,428 against 7,457 and fail
+Both sides read **7,823** on this tree (7,874 public pages minus the 51 with no
+body). Dropping the `and p.body` term would compare 7,823 against 7,874 and fail
 on a corpus property rather than on a regression: the exact failure mode a
 contract gate exists to avoid.
 
@@ -369,6 +433,61 @@ becomes unresponsive" line. The canvas check similarly polls until the box grows
 past R3F's 300×150 default rather than reading immediately, because a genuine CSS
 collapse never grows and the guard still bites.
 
+### MULTI_PARENT, and the 961 warnings that were the design
+
+The two cases above are gates that were added after a regression shipped. This
+one is different and worth separating: the gate was already there, it never
+failed, and it reported the wrong thing for as long as it ran. That is the
+harder failure to notice, because it produces a number, the number is stable,
+and a stable number reads as a measurement.
+
+`MULTI_PARENT` fired at severity `warning` whenever a class declared more than
+one `subClassOf`. The rule encodes an assumption: one parent per class. Multiple
+inheritance is legal in OWL 2 EL, and in this corpus it is deliberate — classes
+are bridged across categories and domains on purpose, which makes the taxonomy a
+lattice rather than a tree. The rule therefore fired 957 times against a corpus
+that was doing exactly what it was built to do, and the validator reported 961
+warnings of which 957 were the design.
+
+That number did not stay in a terminal. "0 validation errors and 961 warnings"
+was published in this document, in `build.yml`'s Gate 4 comment, and downstream
+of both. Anyone counting defects in the dataset would have counted 961 and found
+4.
+
+Three things changed, and only one of them was a corpus fix:
+
+- `MULTI_PARENT` is now severity `info`. The detection is identical; the claim
+  is not. Errors block the build, warnings are debt someone is expected to pay
+  down, info is what the corpus is.
+- the 4 `INVALID_DOMAIN` pages were repaired in the corpus, which is what a
+  warning is for; that code now fires 0 times.
+- the bridging is no longer computed and thrown away. It is published:
+  `stats.json.bridging`, `bridges.json` with 542 entries, and 90 weighted
+  category↔category edges in `overview.json` alongside the 34 backbone edges.
+
+The same detector now reports 1,401 rather than 957, because the corpus repair
+added 417 classes and reattached orphaned ones, so more classes declare a second
+parent. A count that rises is fine when the count is not a defect count.
+
+The lesson generalises in the opposite direction to the mirror-count one. There,
+a filter emitted no signal, and the absence of a signal looked like success.
+Here, a rule emitted a signal, and the presence of one looked like failure.
+**A rule's severity is a claim about intent, not just about structure.** The
+structural fact — this class declares three parents — was detected correctly
+every time; the wrong part was the attached assertion that nobody meant it. A
+validator can only compare data against an assumption someone once wrote down,
+and when the data deliberately violates that assumption, the validator will
+report the design as a defect list. That output is worse than none, because it
+is precise, reproducible and quotable, so it propagates: 961 reached published
+documentation and stayed there.
+
+The practical form is a question to answer before adding any rule at `warning`
+or above: who is expected to act on a hit, and what would they change? If the
+answer is "nobody, the corpus is meant to be like this", the rule belongs at
+`info` — surfaced and counted, but not counted as debt. And a warning count that
+never falls is one of two things: a backlog nobody is working, or a severity
+nobody has questioned. This one was the second, 957 times out of 961.
+
 ---
 
 ## 4. What this repository omits, and why
@@ -402,7 +521,7 @@ and by `_remap_iri` in `pipeline/jsonld_to_webvowl.py` (which
 `emit_graph_tiers.py` imports rather than reimplements), and
 `test_emit_graph_tiers.py` asserts every IRI in `full.bin` starts with
 `https://narrativegoldmine.com/`. These are the stable identifiers for
-252,974 published triples. Rewriting them would invalidate every emitted artefact
+258,200 published triples. Rewriting them would invalidate every emitted artefact
 and break the golden tests. The domain is removed from *deployment*, not from
 *identity*.
 

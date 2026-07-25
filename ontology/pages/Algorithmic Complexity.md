@@ -8,30 +8,114 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:algorithmic-complexity",
-  "@type":"Class",
-  "label":"Algorithmic Complexity",
-  "definition":"Algorithmic complexity is the study of how the computational resources required by an algorithm, principally time and memory, grow as a function of input size. It is expressed using asymptotic notation that abstracts away constant factors to characterise scaling behaviour. In machine learning it governs the feasibility of training and inference, shaping choices of model architecture, optimisation and data structures.",
-  "domain":"machine-learning",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:statistical-learning-theory","label":"Statistical Learning Theory"}],
-  "relations":{
-    "bridgesTo":[{"@id":"urn:ngm:class:scalability","label":"Scalability"}],
-    "dependsOn":[{"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}],
-    "relatedTo":[{"@id":"urn:ngm:class:sample-complexity","label":"Sample Complexity"},{"@id":"urn:ngm:class:vc-dimension","label":"VC Dimension"},{"@id":"urn:ngm:class:generalisation","label":"Generalisation"},{"@id":"urn:ngm:class:model-capacity","label":"Model Capacity"}],
-    "enables":[{"@id":"urn:ngm:class:scalability","label":"Scalability"}],
-    "constrains":[{"@id":"urn:ngm:class:transformer-architecture","label":"Transformer Architecture"}],
-    "supports":[{"@id":"urn:ngm:class:inference-optimisation","label":"Inference Optimisation"}],
-    "requires":[{"@id":"urn:ngm:class:learning-theory","label":"Learning Theory"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:sample-complexity","label":"Sample Complexity"}],
-    "uses":[{"@id":"urn:ngm:class:latency","label":"Latency"}],
-    "partOf":[{"@id":"urn:ngm:class:statistical-learning-theory","label":"Statistical Learning Theory"}],
-    "influences":[{"@id":"urn:ngm:class:throughput","label":"Throughput"},{"@id":"urn:ngm:class:memory-bandwidth","label":"Memory Bandwidth"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:algorithmic-complexity",
+  "@type": "Class",
+  "label": "Algorithmic Complexity",
+  "definition": "Algorithmic complexity is the study of how the computational resources required by an algorithm, principally time and memory, grow as a function of input size. It is expressed using asymptotic notation that abstracts away constant factors to characterise scaling behaviour. In machine learning it governs the feasibility of training and inference, shaping choices of model architecture, optimisation and data structures.",
+  "domain": "machine-learning",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    },
+    {
+      "@id": "urn:ngm:class:computational-complexity-theory",
+      "label": "Computational Complexity Theory"
+    }
+  ],
+  "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:parallel-computing",
+        "label": "Parallel Computing"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:sample-complexity",
+        "label": "Sample Complexity"
+      },
+      {
+        "@id": "urn:ngm:class:vc-dimension",
+        "label": "VC Dimension"
+      },
+      {
+        "@id": "urn:ngm:class:generalisation",
+        "label": "Generalisation"
+      },
+      {
+        "@id": "urn:ngm:class:model-capacity",
+        "label": "Model Capacity"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:scalability",
+        "label": "Scalability"
+      }
+    ],
+    "constrains": [
+      {
+        "@id": "urn:ngm:class:transformer-architecture",
+        "label": "Transformer Architecture"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:inference-optimisation",
+        "label": "Inference Optimisation"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:learning-theory",
+        "label": "Learning Theory"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:sample-complexity",
+        "label": "Sample Complexity"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:latency",
+        "label": "Latency"
+      }
+    ],
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      }
+    ],
+    "influences": [
+      {
+        "@id": "urn:ngm:class:throughput",
+        "label": "Throughput"
+      },
+      {
+        "@id": "urn:ngm:class:memory-bandwidth",
+        "label": "Memory Bandwidth"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

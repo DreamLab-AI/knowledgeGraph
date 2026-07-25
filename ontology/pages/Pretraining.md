@@ -17,7 +17,7 @@ public:: true
   "maturity":"established",
   "subClassOf":[{"@id":"urn:ngm:class:self-supervised-learning","label":"Self-Supervised Learning"}],
   "relations":{
-    "requires":[{"@id":"urn:ngm:class:corpus","label":"Corpus"},{"@id":"urn:ngm:class:unsupervised-learning","label":"Unsupervised Learning"}],
+    "requires":[{"@id":"urn:ngm:class:training-corpus","label":"Training Corpus"},{"@id":"urn:ngm:class:unsupervised-learning","label":"Unsupervised Learning"}],
     "implements":[{"@id":"urn:ngm:class:self-supervised-learning","label":"Self-Supervised Learning"}],
     "enables":[{"@id":"urn:ngm:class:fine-tuning","label":"Fine-Tuning"},{"@id":"urn:ngm:class:transfer-learning","label":"Transfer Learning"}],
     "produces":[{"@id":"urn:ngm:class:foundation-model","label":"Foundation Model"}],
@@ -35,7 +35,7 @@ public:: true
 ```
 
 - ### Definition
-- [[Pretraining]] is the initial large-scale training phase using [[Self-Supervised Learning]] objectives over a broad [[Corpus]].
+- [[Pretraining]] is the initial large-scale training phase using [[Self-Supervised Learning]] objectives over a broad [[Training Corpus]].
 - It learns general representations that [[Transfer Learning]] and [[Fine-Tuning]] later adapt to specific tasks.
 - For a [[Large Language Model]] this typically means [[Next Token Prediction]] or masked-token objectives over vast text.
 - ### Overview
@@ -54,7 +54,7 @@ public:: true
 - Reducing data and compute requirements for downstream tasks via transfer.
 - ### Relationships
 - subClassOf:: [[Self-Supervised Learning]]
-- requires:: [[Corpus]]
+- requires:: [[Training Corpus]]
 - requires:: [[Unsupervised Learning]]
 - implements:: [[Self-Supervised Learning]]
 - enables:: [[Fine-Tuning]]

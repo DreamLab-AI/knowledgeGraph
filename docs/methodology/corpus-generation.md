@@ -1,9 +1,10 @@
 # Corpus Generation
 
-How 7,457 OWL classes were produced: the multi-agent refactor that
+How 7,874 OWL classes were produced: the multi-agent refactor that
 converted a Logseq wiki into an ontology, the inference rules that gave every
-class a parent, the passes that tripled the class count, and the state the
-corpus is genuinely in today.
+class a parent, the passes that nearly tripled the class count, the repair pass
+that closed most of what was left open, and the state the corpus is genuinely
+in today.
 
 The corpus is **mostly AI-generated synthetic content produced under human
 direction, by design**. It is an ontology testbed (a medium-scale graph built
@@ -115,32 +116,34 @@ a domain root, 0 self-references, 0 slug mismatches, and 84 pages flagged
 
 **What the corpus records today is messier than that design.** The shipped
 `provenance.inferenceRule` field is a free-text string, not an enumeration, and
-no validator constrains it. 6,070 classes carry a provenance block; 6,069 of
-those name a rule, across 37 distinct strings:
+no validator constrains it. 6,411 classes carry a provenance block; 6,410 of
+those name a rule, across 38 distinct strings:
 
 ```
-GapMaterialisation 1467   RelationEnrichment 1109   R5DomainRootFallback 983
+GapMaterialisation 1784   RelationEnrichment 1109   R5DomainRootFallback 983
 R1Explicit          981   ManualEnrichment    853   GapFillTier5        528
 ```
 
-Those six account for 5,921. The remaining 31 strings, including
+Those six account for 6,238. The remaining 32 strings, including
 `R2WikilinkParentInference`, `R5BodyWikilinksConvergence`,
-`StubForDanglingParent-2026-07-24` and `ontology-augment-v2`, cover 148
+`StubForDanglingParent-2026-07-24`, `DanglingRelationFix-batch6-2026-07-25` and
+`ontology-augment-v2`, cover 172
 classes between them, and one class has a provenance block with no rule in it.
-Each wave of agents coined its own names. A further **1,387 classes carry no
+Each wave of agents coined its own names, the repair pass of §9 included. A
+further **1,463 classes carry no
 provenance block at all**, so for those the rule is simply not recorded.
 
 ```bash
-# 37 distinct rule strings across 6,069 classes (whitespace normalised —
+# 38 distinct rule strings across 6,410 classes (whitespace normalised —
 # the corpus has both a pretty-printed and a compact JSON emission)
 grep -ho '"inferenceRule": *"[^"]*"' ontology/pages/*.md \
   | tr -d ' ' | sort | uniq -c | sort -rn
-grep -l '"provenance"' ontology/pages/*.md | wc -l      # 6070
+grep -l '"provenance"' ontology/pages/*.md | wc -l      # 6411
 ```
 
 The attribution DIDs do partition cleanly, and they are the honest signal:
-`did:nostr:ontology-mesh` 3,224, `did:nostr:lcr-swarm` 1,565,
-`did:nostr:jjohare` 1,055, `did:nostr:enrichment-swarm` 226. Three of those four
+`did:nostr:ontology-mesh` 3,541, `did:nostr:lcr-swarm` 1,565,
+`did:nostr:jjohare` 1,079, `did:nostr:enrichment-swarm` 226. Three of those four
 are agent identities. Roughly one class in seven is attributed to the human, and
 even that attribution means "asserted during a human-directed pass", not
 "written by hand".
@@ -158,42 +161,61 @@ category ids are contiguous per domain.
 
 The categorisation pass assigned 2,733 classes to categories by parallel agent
 review, correcting 42% of a heuristic baseline. That was 2,733 out of the ~2,900
-classes that existed at the time.
+classes that existed at the time. The corpus then more than doubled and that
+pass was never re-run, so for two months this document reported that 4,498 of
+7,457 classes (60%) sat in no category, and called it the corpus's largest
+quality gap.
 
-**Then the corpus more than doubled, and the categorisation was never re-run.**
-That single fact explains the corpus's largest quality gap. The pipeline
-assigns a category by looking one hop up: it scans a class's `subClassOf`
-parents (then `instanceOf`) and takes the first whose slug is one of the 34
-category slugs; if none is, the class is uncategorised. One hop only, no
-transitive walk: `pipeline/emit_graph_tiers.py` lines 504–517. Cross-tabulating category
-assignment against the month stamped in each class's provenance:
+**That figure was wrong, and it was wrong because of the pipeline, not the
+corpus.** The category resolver looked one hop up: it scanned a class's direct
+`subClassOf` parents (then `instanceOf`) and took the first whose slug was one
+of the 34 category slugs; anything else was uncategorised. No transitive walk.
+The intended shape is four levels, but the corpus is deeper than that in
+practice — the longest real ancestry path needs seven hops — so a class sitting
+two or more levels below a category root was reported as unattached even when
+its ancestry named a category unambiguously. It mislabelled **4,033 classes,
+89.7% of the number we published**.
 
-| Provenance month | Categorised | Uncategorised |
-|---|---:|---:|
-| 2026-05 (refactor + taxonomy era) | 2,001 | 592 |
-| 2026-06 (gap-fill era) | 532 | 2,931 |
-| 2026-07 | 1 | 13 |
-| no provenance | 419 | 968 |
+The resolver now walks ancestry breadth-first, nearest category wins, parents
+visited in declared order so the choice is deterministic across runs — CI
+byte-compares the NGG1 golden fixture, so a set-ordered walk would break the
+build. Cycles are guarded and the walk is bounded at 12 hops
+(`pipeline/emit_graph_tiers.py`, `_build_category_resolver`). That alone took
+uncategorised from 4,498 to 465. The repair pass described in §9 then took it
+to **3**.
 
-Classes stamped with `GapMaterialisation` are 1,459 uncategorised against 8
-categorised. The column sums to 4,504; `stats.json` excludes the 6 domain roots
-themselves, which by construction have no category, and reports **4,498 of
-7,457 classes (60%) in no category**. They still have a domain and a parent, so
-they render and reason; they just hang off the domain root or off another leaf
-rather than under the intended backbone.
+The three are `Electric Vehicle`, `Ethan Mollick` and `Urban Planning`, each
+parented directly to a domain root, so there is no category anywhere in their
+ancestry to inherit. The arithmetic closes: the 34 `memberCount` values in
+`overview.json` sum to 7,831, and 7,831 + 34 category roots + 6 domain roots +
+3 = 7,874. Category sizes are uneven, from Legal and Regulatory at 706 members
+down to Workspace Tools at 35.
 
-Domain assignment fared better. `pipeline/emit_graph_tiers.py` collapses 18 raw
-domain strings onto the 6 canonical roots through a 10-entry alias table
+The correction is worth stating flatly because it cuts both ways. Transitive
+inheritance is only as sound as the parent chain it walks, and per §3 and §5
+most of those parents were chosen by an agent. A class now counts as
+categorised if some ancestor two, three or seven hops up is a category root.
+That is the right reading of the taxonomy — it is what `subClassOf` means — but
+it is not the same claim as "an editor placed this class in this category", and
+nothing here should be read as the stronger claim.
+
+Domain assignment never had the same problem. `pipeline/emit_graph_tiers.py`
+collapses the 16 raw
+domain strings in use onto the 6 canonical roots through a 10-entry alias table
 (`DOMAIN_ALIASES`, lines 130–141): `ai` and `machine-learning` →
 artificial-intelligence, `metaverse` → spatial-computing, `finance` →
 blockchain, and six others (`distributed-systems`, `supply-chain`, `data`,
-`governance`, `security`, `standards`) → infrastructure. Exactly
-two strings resolve to nothing, `economics` on 3 pages and `ai-governance` on
-1, leaving **4 domainless classes**, which are also the 4 `INVALID_DOMAIN`
-validation warnings. Earlier passes did the bulk of that work by hand: 391
-invalid source domains remapped, then 124 ambiguous ones classified.
+`governance`, `security`, `standards`) → infrastructure. Two strings used to
+resolve to nothing, `economics` on 3 pages and `ai-governance` on 1, which were
+the 4 domainless classes and the 4 `INVALID_DOMAIN` validation warnings; both
+strings were repaired at source and **domainless is now 0**. Earlier passes did
+the bulk of that work by hand: 391
+invalid source domains remapped, then 124 ambiguous ones classified. Domain
+membership across the 6 roots: infrastructure 2,585, artificial-intelligence
+1,899, blockchain 1,432, spatial-computing 1,216, robotics 600,
+distributed-collaboration 142.
 
-## 5. Gap materialisation: how 2,833 became 7,457
+## 5. Gap materialisation: how 2,833 became 7,874
 
 The largest single contributor to the corpus is not the original wiki. It is a
 sustained campaign to close dangling references: wikilinks and relation targets
@@ -215,29 +237,34 @@ repository at the named commits:
 | 2026-06-15 | `4ae936046` | 7,384 | 909 in-degree 3–4 genuine-gap concepts |
 | 2026-06-21 | `e4dce4168` | 7,492 | structural cleanup of 398 files + Phase 6 enrichment wave 1 |
 | 2026-07-23 | `0f1a43bfe` | 7,519 | 21 dangling parents resolved (14 of them as new stubs), 7 duplicate labels |
+| 2026-07-25 | `d74a6e90a` | 7,936 | repair pass: orphans re-parented, multiply-referenced dangling targets authored (§9) |
 
 ```bash
 # in the source repository the corpus lives under mainKnowledgeGraph/pages
 git ls-tree -r --name-only <commit> -- mainKnowledgeGraph/pages | grep -c '\.md$'
 ```
 
-That is a recursive file count and runs ahead of the class count. At `0f1a43bfe`
-the 7,519 files include 28 under `.deleted/` and 19 under `_misc/`, neither of
-which the pipeline reads; that leaves 7,472 top-level pages, of which 7,471
-carry an ontology block, and 14 of those set `vc:public` false. 7,471 − 14 =
-the 7,457 classes the build ships.
+That is a recursive file count and runs ahead of the class count. At `d74a6e90a`
+the 7,936 files include 28 under `.deleted/` and 19 under `_misc/`, neither of
+which the pipeline reads; that leaves 7,889 top-level pages, of which 7,888
+carry an ontology block, and 14 of those set `vc:public` false. 7,888 − 14 =
+the 7,874 classes the build ships.
 
-The transform handed over 2,833 class pages; the shipped corpus has 7,457, a net
-+4,624. The great majority of that came from 22 gap-fill and materialisation
-commits between 2026-05-29 and 2026-06-15. Before each wave
+The transform handed over 2,833 class pages; the shipped corpus has 7,874, a net
++5,041. The great majority of that came from 22 gap-fill and materialisation
+commits between 2026-05-29 and 2026-06-15, with a further 417 pages from the
+repair pass of §9. Before each wave
 the candidate list was triaged: one wave (`ce7268f81`) remapped 70 spelling and
 pluralisation variants onto existing classes and dropped 22 as noise rather than
 authoring pages for them. That triage is the only filter; there was no per-page
 human sign-off on the thousands of pages this campaign produced. This is the most important
 honesty point in this document: the majority of the corpus exists because
-*something referenced it* at a reference count above a threshold, its content is
-agent-written prose under an agent-chosen parent, and, per §4, it is
-overwhelmingly uncategorised.
+*something referenced it* at a reference count above a threshold, and its
+content is agent-written prose under an agent-chosen parent. Those pages do
+reach the taxonomy — per §4 the categorisation figure that said otherwise was a
+pipeline defect — but reaching it through a chain of agent-chosen parents is a
+weaker guarantee than a curated placement, and this document does not claim the
+stronger one.
 
 ## 6. Enrichment loop
 
@@ -250,8 +277,8 @@ references, five mandatory `###` sections, and a shell validator that had to
 pass before a manifest entry could be appended. The brief forbade fabrication
 and required web research to be cached alongside the page. The manifest holds
 313 entries; not every entry records every measurement, so the medians are over
-290–297 entries depending on the field: 600 lines (n=297), 9,618 words (n=295),
-51 axioms (n=292), 98 relationships (n=292), 28 references (n=290); axioms and
+294–297 entries depending on the field: 600 lines (n=297), 9,617 words (n=297),
+51 axioms (n=294), 98 relationships (n=294), 28 references (n=294); axioms and
 relationships both above the range the brief asked for. Worker models recorded: Sonnet 183,
 Opus 113, Haiku 17. Outcomes: 295 pass, 2 deferred, 16 unrecorded. Deferral was
 mandatory rather than optional: if the target turned out to be a Logseq tag or
@@ -268,14 +295,14 @@ classes in batches of 40, spine-preserving (`subClassOf` untouched, only object
 properties added): 31 `relation-densify` commits plus 15 earlier `densify`
 commits, plus 8 `enrich: wave`/`enrich: draft` commits that nested flat v1
 relations into the v2 `relations{}` object. This is why the graph is dense:
-102,001 declared relation edges against 8,616 backbone edges
+102,346 declared relation edges against 9,481 backbone edges
 (`dist/data/graph/stats.json`, `edges.declaredRelations` and
 `edges.declaredBackbone`), and why
 `RelationEnrichment` is the second most common inference rule at 1,109 classes.
 
 The relation vocabulary is the 12 terms defined in the nested `relations`
-context of `static/ns/v2.jsonld`, led by relatedTo (6,081 classes), enables
-(5,783) and requires (4,920). A further 45 non-canonical keys appear inside
+context of `static/ns/v2.jsonld`, led by relatedTo (6,141 classes), enables
+(5,869) and requires (5,031). A further 45 non-canonical keys appear inside
 `relations{}` objects across the corpus (`produces`, `depends-on`,
 `isSubclassOf`, and a literal `bridges To` with a space); none are in the
 context and none are in the parser's v2 mapping
@@ -283,9 +310,10 @@ context and none are in the parser's v2 mapping
 
 ## 7. Quality scoring: what it is, and what it is not
 
-Two numeric fields survive from the Logseq era. `quality` appears on 6,739
-classes, `qualityScore` on 1,977, both on 1,259, **and on 1,013 of those the
-two values disagree**. 718 classes carry only `qualityScore`.
+Two numeric fields survive from the Logseq era. `quality` appears on 7,085
+classes, `qualityScore` on 2,001, both on 1,259, **and on 1,013 of those the
+two values disagree**. 742 classes carry only `qualityScore`, and 47 carry
+neither.
 
 Neither is a measurement. They originate as `quality-score::` and
 `authority-score::` frontmatter, and the enrichment brief instructed workers to
@@ -298,11 +326,11 @@ batch signatures, not a distribution.
 There is a mechanical consequence. `static/ns/v2.jsonld` defines `qualityScore`
 but not `quality`; `pipeline/jsonld_parser.py` reads `quality` and falls back to
 `vc:qualityScore`, a key that appears nowhere in the corpus. It therefore never
-reads the context-defined `qualityScore`, and the 718 classes that carry only
-that field are emitted as zero:
+reads the context-defined `qualityScore`, and the 742 classes that carry only
+that field are emitted as zero, alongside the 47 that carry no score at all:
 
 ```bash
-grep -c 'vc:qualityScore "0.0"' dist/data/ontology.ttl   # 718
+grep -c 'vc:qualityScore "0.0"' dist/data/ontology.ttl   # 789 = 742 + 47
 ```
 
 Treat both fields as provenance breadcrumbs. Do not rank on them.
@@ -348,52 +376,145 @@ danglers aliased onto canonical classes, 14 authored as minimal stub classes;
 duplicates. Their receipt is in the source repository at
 `docs/validation/external-validation-rdf-studio-2026-07-23.md`.
 
-## 9. Where the corpus stands today
+## 9. The repair pass, and the figure we published wrong
+
+On 2026-07-25 a 33-agent swarm ran a repair pass over the corpus, and the same
+day two pipeline defects were fixed. The trigger was reading this document's own
+limitations list back and checking it against the artefacts. Two of the numbers
+published there as corpus defects turned out to be pipeline defects.
+
+**Overlap was being reported as a defect.** Almost all of the validation
+warnings this document used to report were a single code, `MULTI_PARENT`, fired
+whenever a class declares more than one `subClassOf`; the rest were the
+`INVALID_DOMAIN` records of §4. Re-running today's validator over the corpus
+exactly as it was published — commit `0f1a43bfe`, 7,457 public classes — gives
+958 `MULTI_PARENT` and 4 `INVALID_DOMAIN`. The total published at the time was
+961, one short of that 962; the gap is an older validator revision counting a
+slightly different page set, and it does not change the point.
+
+Multiple inheritance is legal in OWL 2 EL, and in this corpus it is
+deliberate: classes are bridged across
+categories and domains on purpose, and the bridging campaign of §8 built that
+structure explicitly. Publishing it as a defect list misrepresented the dataset.
+The corpus was clean on that axis; the pipeline was mislabelling its own design.
+
+`MULTI_PARENT` is now emitted at `info` severity, and the bridging — which the
+tier emitter had been computing and discarding — is published as data:
+
+| Artefact | What it now carries |
+|---|---|
+| `stats.json` | `bridging`: multiParent 1,401, crossCategory 454, crossDomain 153 |
+| `bridges.json` | 542 classes with their full category and domain membership, and the parent labels that produce it |
+| `overview.json` | 124 edges: 34 category→domain backbone edges plus 90 weighted category↔category bridge edges |
+
+Bridges also feed the force layout, so the baked positions match the topology
+the renderer draws rather than a tree the data never was.
+
+**One constraint has to be stated plainly.** The NGG1 node record carries a
+single u16 category field (FORMAT-NGG1 §3), so the binary tiers keep only the
+*nearest* category per node. A class in three categories ships in the tiers as a
+member of one. The full membership exists only in `bridges.json`. That is a real
+limitation of the binary format and it is not going away without a format
+change.
+
+**Category inheritance was one level deep**, the defect described in §4. It
+mislabelled 4,033 classes and produced the 60%-uncategorised figure this
+document reported for two months. Fixed by walking ancestry.
+
+**The corpus repair itself.** The swarm re-parented orphaned classes and
+resolved dangling targets that more than one page referenced. Every change was
+verified independently afterwards, and no regression was introduced:
+
+| Measure | Before | After |
+|---|---:|---:|
+| Orphaned classes | 471 | 9 |
+| Dangling references | 2,637 | 1,568 |
+| Dangling `subClassOf` | 5 | 5 |
+| Resolvable edges | 96,377 | 98,776 |
+| Classes | 7,457 | 7,874 |
+
+**68% of the added parents point at a specific semantic class; 32% fall back to
+a category anchor.** That second group is the weaker work: parenting a class to
+the category it plainly belongs in is defensible and is not what a careful
+ontologist would write, exactly the R5 failure mode §3 describes. It is recorded
+here rather than averaged away.
+
+The 417 new classes came from concepts that two or more existing pages already
+referenced — the same in-degree rule the gap-fill campaign of §5 used, applied
+to what that campaign left behind.
+
+Of the 9 remaining orphans, 6 are the domain roots. Those are correctly
+parented to `owl:Thing` and are not defects; the detector counts them because it
+looks for classes that reach a *category* root, which by construction the domain
+roots never will.
+
+**What was deliberately left.** The remaining 1,568 dangling references are
+singletons: targets referenced by exactly one page. Authoring a class for a
+concept one page mentions once would inflate the corpus with material nothing
+corroborates, which is the failure mode the in-degree threshold exists to
+prevent. They stay dangling, and the number is published. Likewise the 5 dangling
+`subClassOf` references, unchanged before and after, and the 3 uncategorised
+classes of §4.
+
+## 10. Where the corpus stands today
 
 Run the build and read the numbers:
 
 ```bash
-python -m pipeline.build ontology/pages dist    # 7 stages, 18.0 seconds
+python -m pipeline.build ontology/pages dist    # 7 stages, ~18 seconds
 python -m pipeline.validate ontology/pages
 ```
 
 | Measure | Value |
 |---|---:|
-| Public class pages | 7,457 |
+| Public classes | 7,874 |
+| Distinct public pages | 7,870 |
 | Pages withheld (`vc:public` not true) | 14 |
 | Individuals | 0 |
-| Turtle triples | 252,974 |
-| Declared edges / resolvable | 110,617 / 96,377 |
+| Turtle triples | 258,200 |
+| Declared edges / resolvable | 111,827 / 98,776 |
 | Domains / categories | 6 / 34 |
-| **Uncategorised classes** | **4,498** |
-| **Domainless classes** | **4** |
+| Bridging: multiParent / crossCategory / crossDomain | 1,401 / 454 / 153 |
+| **Uncategorised classes** | **3** |
+| Domainless classes | 0 |
 | Validation errors | 0 |
-| **Validation warnings** | **961** |
+| Validation warnings | 0 |
+| Validation info (`MULTI_PARENT`) | 1,401 |
 
-The 961 warnings are 957 `MULTI_PARENT` and 4 `INVALID_DOMAIN`, and nothing
-else. `MULTI_PARENT` fires whenever a class declares more than one
-`subClassOf`: for example `A Star Algorithm.md` declares Search Algorithm,
-Informed Search and Graph Search. Multiple inheritance is legal OWL and often
-correct; the warning exists because in this corpus it is frequently an artefact
-of successive agent waves each adding a parent without checking what was
-already there. They are warnings, not errors, and they are not being
-suppressed; they stand, uncleared, at 12.8% of classes.
+7,874 classes across 7,870 distinct public page identities: four page IRIs
+(`bitcoin`, `comfy-ui`, `ethereum`, `foundation-models`) are each carried by two
+files. `stats.json` reports the two counts separately rather than conflating
+them.
+
+The 1,401 `MULTI_PARENT` records are informational, not warnings: for example
+`A Star Algorithm.md` declares Search Algorithm, Informed Search and Graph
+Search. §9 gives the reasoning for the severity change. They are still emitted
+on every run and still countable, because multiple parents are worth seeing —
+some of them are successive agent waves each adding a parent without checking
+what was already there, and the two cases are not distinguishable from the
+declaration alone. What is now published alongside them is the bridging
+structure they produce.
 
 Summarising the honest state:
 
-- **60% of classes are uncategorised.** The taxonomy backbone exists and is
-  correct; most of the corpus was authored after it and never attached to it.
-- **A net +4,624 classes (62% of the shipped corpus) were added after the
+- **3 classes are uncategorised**, down from a published 4,498. Of that 4,498,
+  4,033 were a pipeline defect and 465 a corpus gap; the repair pass closed 462
+  of the 465. The figure was wrong for two months; §4 and §9 record how.
+- **A net +5,041 classes (64% of the shipped corpus) were added after the
   structural transform**, overwhelmingly by the gap-fill campaign, authored
   because something referenced them, with no per-page human sign-off.
 - **4% of pages received the full prose enrichment treatment.** The rest range
   from a definition and a handful of relations to near-stub.
-- **The `inferenceRule` field is not a controlled vocabulary.** 37 distinct
-  strings, 1,387 classes with no provenance at all.
+- **The `inferenceRule` field is not a controlled vocabulary.** 38 distinct
+  strings, 1,463 classes with no provenance at all.
 - **Quality scores are batch markers, not measurements**, and 1,013 classes
   disagree with themselves.
-- **961 validation warnings stand**, along with 4 classes outside the domain
-  vocabulary.
+- **1,568 dangling references remain**, each a singleton target, plus 5 dangling
+  `subClassOf` references.
+- **0 individuals.** The corpus is TBox only; nothing has been instantiated.
+- **The binary tiers carry one category per node.** 542 classes reach more than
+  one category or domain, 454 of them more than one category; the tiers keep the
+  nearest and `bridges.json` carries the rest.
 
 None of this makes the corpus unfit for its purpose. It is a coherent,
 reasoner-clean, densely-connected graph of the right size to exercise a
@@ -401,7 +522,7 @@ JSON-LD → OWL → binary-tier pipeline end to end, and its defects are measure
 and stated rather than hidden. It is not a curated reference work, and no part
 of this repository claims otherwise.
 
-## 10. Auditing any single class
+## 11. Auditing any single class
 
 Provenance is per-class and per-page, so any assertion can be traced without
 reading this document:
@@ -418,10 +539,9 @@ EOF
 ````
 
 The third JSON-LD block on 3,701 pages is a `vc:LinkResolutionsAnnotation`
-recording every `[[wikilink]]` and how it resolved: 61,805 entries, of which
-61,161 carry the full `{raw, resolved, kind}` shape, kind being `StubLink`
-(40,415) or `ResolvedLink` (20,746); the remaining 644 are earlier partial
-shapes from before the field set settled. No pipeline stage reads any of it:
+recording every `[[wikilink]]` and how it resolved: 61,160 entries, all of them
+now carrying the full `{raw, resolved, kind}` shape, kind being `StubLink`
+(40,414) or `ResolvedLink` (20,746). No pipeline stage reads any of it:
 `grep -rn 'resolutions' pipeline/*.py` returns nothing. It exists so a lossy transform can be
 audited after the fact. That is the principle this whole document describes:
 the corpus records what was done to it, including where that was not enough.

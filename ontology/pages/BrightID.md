@@ -95,8 +95,8 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:graph-analysis",
-        "label": "Graph Analysis"
+        "@id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
       },
       {
         "@id": "urn:ngm:class:zero-knowledge-proof",
@@ -226,7 +226,7 @@ public:: true
     - Users install the BrightID mobile app and receive a unique [[Decentralised Identifier]] (a public key).
     - They attend verified connection parties — small video calls or in-person meetings — where participants mutually confirm each other's humanity.
     - Each mutual confirmation creates a weighted edge in the underlying [[Social Graph]].
-  - **Graph Analysis Algorithms**
+  - **Graph Analytics Algorithms**
     - BrightID uses algorithms such as Assa (Average Shortest-path Sybil Analysis), Aura, and SocialRecovery to assign trust levels.
     - Assa detects Sybil clusters by measuring graph diameter and connectivity patterns that diverge from genuine social networks.
     - Aura propagates vouching scores from a set of highly trusted seed accounts, similar to a [[Web of Trust]] model derived from PGP key signing.
@@ -270,7 +270,7 @@ public:: true
   - requires:: [[Social Graph]]
   - requires:: [[Peer-to-Peer Network]]
   - requires:: [[Public Key Cryptography]]
-  - uses:: [[Graph Analysis]]
+  - uses:: [[Graph Analytics]]
   - uses:: [[Zero-Knowledge Proof]]
   - uses:: [[Decentralised Application]]
   - contrastsWith:: [[Sybil Attack]]

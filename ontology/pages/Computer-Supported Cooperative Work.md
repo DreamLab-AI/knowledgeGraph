@@ -8,26 +8,90 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:computer-supported-cooperative-work",
-  "@type":"Class",
-  "label":"Computer-Supported Cooperative Work",
-  "definition":"Computer-Supported Cooperative Work (CSCW) is the interdisciplinary research field that studies how people work together using computer systems and how to design technology that supports their collaboration. It examines coordination, communication, awareness and the social organisation of group work across time and space, informing the design of groupware and collaborative tools. CSCW bridges human-computer interaction, the social sciences and distributed-systems engineering.",
-  "domain":"distributed-collaboration",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:distributed-collaboration","label":"Distributed Collaboration"}],
-  "relations":{
-    "bridgesTo":[{"@id":"urn:ngm:class:human-computer-interaction","label":"Human-Computer Interaction"}],
-    "hasPart":[{"@id":"urn:ngm:class:awareness","label":"Awareness"},{"@id":"urn:ngm:class:presence","label":"Presence"}],
-    "enables":[{"@id":"urn:ngm:class:shared-workspace","label":"Shared Workspace"},{"@id":"urn:ngm:class:remote-collaboration","label":"Remote Collaboration"}],
-    "supports":[{"@id":"urn:ngm:class:collaboration","label":"Collaboration"},{"@id":"urn:ngm:class:remote-work","label":"Remote Work"}],
-    "uses":[{"@id":"urn:ngm:class:synchronisation","label":"Synchronisation"}],
-    "informs":[{"@id":"urn:ngm:class:operational-transformation","label":"Operational Transformation"}],
-    "relatedTo":[{"@id":"urn:ngm:class:distributed-collaboration","label":"Distributed Collaboration"},{"@id":"urn:ngm:class:crdt","label":"CRDT"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:computer-supported-cooperative-work",
+  "@type": "Class",
+  "label": "Computer-Supported Cooperative Work",
+  "definition": "Computer-Supported Cooperative Work (CSCW) is the interdisciplinary research field that studies how people work together using computer systems and how to design technology that supports their collaboration. It examines coordination, communication, awareness and the social organisation of group work across time and space, informing the design of groupware and collaborative tools. CSCW bridges human-computer interaction, the social sciences and distributed-systems engineering.",
+  "domain": "distributed-collaboration",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:distributed-collaboration",
+      "label": "Distributed Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    }
+  ],
+  "relations": {
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:awareness",
+        "label": "Awareness"
+      },
+      {
+        "@id": "urn:ngm:class:presence",
+        "label": "Presence"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:shared-workspace",
+        "label": "Shared Workspace"
+      },
+      {
+        "@id": "urn:ngm:class:remote-collaboration",
+        "label": "Remote Collaboration"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:remote-work",
+        "label": "Remote Work"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:synchronisation",
+        "label": "Synchronisation"
+      }
+    ],
+    "informs": [
+      {
+        "@id": "urn:ngm:class:operational-transformation",
+        "label": "Operational Transformation"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:crdt",
+        "label": "CRDT"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

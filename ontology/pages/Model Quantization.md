@@ -14,7 +14,7 @@ public:: true
   "definition":"Model quantization is a model-compression technique that reduces the numerical precision of a neural network's weights and activations, typically converting 32-bit floating-point values to lower-precision integer or float formats such as INT8, INT4 or FP8. By shrinking the memory footprint and exploiting cheaper integer arithmetic, quantization lowers latency, energy use and storage cost, usually at a small and controllable loss in accuracy. It is applied either after training (post-training quantization) or during training (quantization-aware training) to deploy large models on constrained inference hardware.",
   "domain":"machine-learning",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:model-compression","label":"Model Compression"}],
+  "subClassOf":[{"@id":"urn:ngm:class:model-compression","label":"Model Compression"},{"@id":"urn:ngm:class:ai-technique","label":"AI Technique"}],
   "relations":{
     "partOf":[
       {"@id":"urn:ngm:class:model-optimization","label":"Model Optimization"}

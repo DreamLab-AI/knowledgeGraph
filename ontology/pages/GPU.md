@@ -62,10 +62,16 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:graphics-processing",
-    "label": "Graphics Processing"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:graphics-processing",
+      "label": "Graphics Processing"
+    },
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
   "relations": {
     "hasPart": [
       {
@@ -87,8 +93,8 @@ public:: true
         "label": "Parallel Programming Model"
       },
       {
-        "@id": "urn:ngm:class:graphics-driver",
-        "label": "Graphics Driver"
+        "@id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
       }
     ],
     "enables": [

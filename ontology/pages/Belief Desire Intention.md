@@ -24,7 +24,7 @@ public:: true
   "definition": "The Belief-Desire-Intention (BDI) model is a framework for designing rational software agents in which mental states are represented as beliefs (what the agent knows about the world), desires (goals the agent wishes to achieve), and intentions (committed plans of action). Originating from Bratman's philosophical work on practical reasoning, BDI has been formalised into agent programming languages such as AgentSpeak and frameworks such as JADE. It underpins many autonomous and multi-agent systems requiring deliberative reasoning.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:multi-agent-system", "label": "Multi-Agent System"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:agent-architecture", "label": "Agent Architecture"},

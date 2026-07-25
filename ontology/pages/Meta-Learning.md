@@ -62,8 +62,8 @@ public:: true
         "label": "Continual Learning"
       },
       {
-        "@id": "urn:ngm:class:automated-machine-learning",
-        "label": "Automated Machine Learning"
+        "@id": "urn:ngm:class:auto-ml",
+        "label": "AutoML"
       }
     ],
     "uses": [

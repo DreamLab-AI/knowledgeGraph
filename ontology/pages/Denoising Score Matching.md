@@ -7,30 +7,114 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:denoising-score-matching",
-  "@type":"Class",
-  "label":"Denoising Score Matching",
-  "definition":"Denoising score matching is a training objective for learning the score function, the gradient of the log probability density, of a data distribution. Rather than estimating the score directly, it perturbs data with known Gaussian noise and trains a model to predict the noise, which is equivalent to estimating the score of the noise-perturbed distribution. This objective avoids the intractable normalising constant of energy-based models and underpins score-based generative models and diffusion models, where the learned score guides iterative sampling from noise back to data.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:generative-model","label":"Generative Model"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:diffusion-model","label":"Diffusion Model"}],
-    "implements":[{"@id":"urn:ngm:class:generative-model","label":"Generative Model"}],
-    "uses":[{"@id":"urn:ngm:class:neural-network","label":"Neural Network"},{"@id":"urn:ngm:class:gradient-descent","label":"Gradient Descent"}],
-    "requires":[{"@id":"urn:ngm:class:probability-distribution","label":"Probability Distribution"},{"@id":"urn:ngm:class:stochastic-process","label":"Stochastic Process"}],
-    "hasPart":[{"@id":"urn:ngm:class:sampling","label":"Sampling"}],
-    "enables":[{"@id":"urn:ngm:class:diffusion-model","label":"Diffusion Model"}],
-    "supports":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}],
-    "dependsOn":[{"@id":"urn:ngm:class:stochastic-differential-equation","label":"Stochastic Differential Equation"}],
-    "contrastsWith":[{"@id":"urn:ngm:class:vae","label":"Variational Autoencoder"}],
-    "relatedTo":[{"@id":"urn:ngm:class:probabilistic-model","label":"Probabilistic Model"},{"@id":"urn:ngm:class:markov-chain","label":"Markov Chain"},{"@id":"urn:ngm:class:diffusion-model","label":"Diffusion Model"}],
-    "bridgesTo":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"}]
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:denoising-score-matching",
+  "@type": "Class",
+  "label": "Denoising Score Matching",
+  "definition": "Denoising score matching is a training objective for learning the score function, the gradient of the log probability density, of a data distribution. Rather than estimating the score directly, it perturbs data with known Gaussian noise and trains a model to predict the noise, which is equivalent to estimating the score of the noise-perturbed distribution. This objective avoids the intractable normalising constant of energy-based models and underpins score-based generative models and diffusion models, where the learned score guides iterative sampling from noise back to data.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:generative-model",
+      "label": "Generative Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "implements": [
+      {
+        "@id": "urn:ngm:class:generative-model",
+        "label": "Generative Model"
+      }
+    ],
+    "uses": [
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-descent",
+        "label": "Gradient Descent"
+      }
+    ],
+    "requires": [
+      {
+        "@id": "urn:ngm:class:probability-distribution",
+        "label": "Probability Distribution"
+      },
+      {
+        "@id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ],
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:sampling",
+        "label": "Sampling"
+      }
+    ],
+    "enables": [
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "supports": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ],
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:stochastic-differential-equation",
+        "label": "Stochastic Differential Equation"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:vae",
+        "label": "Variational Autoencoder"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:markov-chain",
+        "label": "Markov Chain"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-model",
+        "label": "Diffusion Model"
+      }
+    ],
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
+    ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

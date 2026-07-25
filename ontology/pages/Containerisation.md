@@ -7,53 +7,108 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:containerisation",
-  "@type":"Class",
-  "label":"Containerisation",
-  "definition":"Containerisation is an operating-system-level virtualisation technique that packages an application together with its dependencies, libraries, and configuration into a single portable, isolated unit called a container. Containers share the host kernel yet maintain isolated user spaces, making them far lighter than full virtual machines while remaining reproducible across environments. The approach underpins cloud-native software delivery, providing consistent runtime behaviour from a developer's laptop to production clusters.",
-  "domain":"infrastructure",
-  "maturity":"mature",
-  "subClassOf":[{"@id":"urn:ngm:class:virtualisation","label":"Virtualisation"}],
-  "relations":{
-    "hasPart":[
-      {"@id":"urn:ngm:class:container-runtime","label":"Container Runtime"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:containerisation",
+  "@type": "Class",
+  "label": "Containerisation",
+  "definition": "Containerisation is an operating-system-level virtualisation technique that packages an application together with its dependencies, libraries, and configuration into a single portable, isolated unit called a container. Containers share the host kernel yet maintain isolated user spaces, making them far lighter than full virtual machines while remaining reproducible across environments. The approach underpins cloud-native software delivery, providing consistent runtime behaviour from a developer's laptop to production clusters.",
+  "domain": "infrastructure",
+  "maturity": "mature",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:virtualisation",
+      "label": "Virtualisation"
+    },
+    {
+      "@id": "urn:ngm:class:container-runtime",
+      "label": "Container Runtime"
+    }
+  ],
+  "relations": {
+    "hasPart": [
+      {
+        "@id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:cloud-native","label":"Cloud Native"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:container-runtime","label":"Container Runtime"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:container-runtime",
+        "label": "Container Runtime"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:virtual-machine","label":"Virtual Machine"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
     ],
-    "implements":[
-      {"@id":"urn:ngm:class:immutable-infrastructure","label":"Immutable Infrastructure"}
+    "implements": [
+      {
+        "@id": "urn:ngm:class:immutable-infrastructure",
+        "label": "Immutable Infrastructure"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:microservices","label":"Microservices"},
-      {"@id":"urn:ngm:class:container-orchestration","label":"Container Orchestration"},
-      {"@id":"urn:ngm:class:cloud-native","label":"Cloud Native"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:microservices",
+        "label": "Microservices"
+      },
+      {
+        "@id": "urn:ngm:class:container-orchestration",
+        "label": "Container Orchestration"
+      },
+      {
+        "@id": "urn:ngm:class:cloud-native",
+        "label": "Cloud Native"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:cloud-computing","label":"Cloud Computing"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:devops","label":"DevOps"},
-      {"@id":"urn:ngm:class:continuous-deployment","label":"Continuous Deployment"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:devops",
+        "label": "DevOps"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:virtual-machine","label":"Virtual Machine"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:virtual-machine",
+        "label": "Virtual Machine"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:kubernetes","label":"Kubernetes"},
-      {"@id":"urn:ngm:class:gitops","label":"GitOps"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:kubernetes",
+        "label": "Kubernetes"
+      },
+      {
+        "@id": "urn:ngm:class:gitops",
+        "label": "GitOps"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

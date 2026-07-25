@@ -1,0 +1,8346 @@
+{
+  "pipelineVersion": "ng-1.0.0",
+  "note": "Classes bridging more than one taxonomy category or domain. Overlap is a design property of this corpus. The NGG1 node record carries a single u16 category (FORMAT-NGG1 3), so tiers keep the nearest one; the full membership is here. Indices match overview.json.",
+  "count": 542,
+  "bridges": [
+    {
+      "iri": "https://narrativegoldmine.com/class/3-d-generation",
+      "label": "3D Generation",
+      "categories": [
+        2,
+        1,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "3D Content Generation",
+        "Generative Model",
+        "Computer Vision"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/3-d-graphics-standard",
+      "label": "3D Graphics Standard",
+      "categories": [
+        12,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "Content and Assets"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/aaai",
+      "label": "AAAI",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Academic Conference",
+        "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ade20-k",
+      "label": "ADE20K",
+      "categories": [
+        5,
+        4
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Benchmarks",
+        "Benchmark Dataset"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/agi-timelines",
+      "label": "AGI Timelines",
+      "categories": [
+        0,
+        32
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Time-Series Forecasting",
+        "Capability Forecasting"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-agent-system",
+      "label": "AI Agent System",
+      "categories": [
+        2,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Artificial Intelligence Core"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-documentation-standards",
+      "label": "AI Documentation Standards",
+      "categories": [
+        3,
+        16
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "Documentation Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-ethics-board",
+      "label": "AI Ethics Board",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "AI Ethics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-fairness",
+      "label": "AI Fairness",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "AI Ethics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-group-formation",
+      "label": "AI Group Formation",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Combinatorial Optimisation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-investment",
+      "label": "AI Investment",
+      "categories": [
+        5,
+        28
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Economics",
+        "Capital Markets"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-risks",
+      "label": "AI Risks",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "AI Safety",
+        "Harm Taxonomy"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-search",
+      "label": "AI Search",
+      "categories": [
+        2,
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Natural Language Processing",
+        "Retrieval-Augmented Generation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-talent",
+      "label": "AI Talent",
+      "categories": [
+        14,
+        5
+      ],
+      "domains": [
+        2,
+        0
+      ],
+      "parents": [
+        "Workforce Development",
+        "Human Capital"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ai-companions",
+      "label": "AI companions",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Affective Computing System",
+        "AI Application"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/api-gateway",
+      "label": "API Gateway",
+      "categories": [
+        29,
+        30
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Network and Communication",
+        "Network and Communication",
+        "Policy Enforcement Point"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ar-frame",
+      "label": "AR Frame",
+      "categories": [
+        12,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "Platform and Environment",
+        "Platform and Environment"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ar-occlusion",
+      "label": "AR Occlusion",
+      "categories": [
+        15,
+        12
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Augmented Reality",
+        "Display and Rendering"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/arc-agi",
+      "label": "ARC-AGI",
+      "categories": [
+        5,
+        32
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Benchmarks",
+        "Benchmark Standard"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/automatic-1111-web-ui",
+      "label": "AUTOMATIC1111 WebUI",
+      "categories": [
+        28,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Open Generative AI Tools",
+        "Image Generation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/accessibility-tree",
+      "label": "Accessibility Tree",
+      "categories": [
+        5
+      ],
+      "domains": [
+        0,
+        2
+      ],
+      "parents": [
+        "Human Computer Interaction",
+        "User Interface"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/accessible-experience",
+      "label": "Accessible Experience",
+      "categories": [
+        17,
+        13
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Interaction Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/account-abstraction",
+      "label": "Account Abstraction",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Smart Contract"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/account-model",
+      "label": "Account Model",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/accountability-ai-0068",
+      "label": "Accountability (AI-0068)",
+      "categories": [
+        32,
+        3
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Accountability",
+        "AI Governance and Ethics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/accountability-oecd",
+      "label": "Accountability (OECD)",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "Policy Framework"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/active-r-d-funding-opportunities-register",
+      "label": "Active R&D Funding Opportunities Register",
+      "categories": [
+        33,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Software Engineering",
+        "Resource Management"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/actor-model",
+      "label": "Actor Model",
+      "categories": [
+        33,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Concurrency",
+        "Distributed Computing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/adaptive-behaviour",
+      "label": "Adaptive Behaviour",
+      "categories": [
+        20,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Agent",
+        "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/address",
+      "label": "Address",
+      "categories": [
+        7,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Cryptographic Primitive",
+        "Blockchain Entity",
+        "Cryptographic Primitive"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/advanced-manufacturing",
+      "label": "Advanced Manufacturing",
+      "categories": [
+        28
+      ],
+      "domains": [
+        5,
+        3
+      ],
+      "parents": [
+        "Infrastructure",
+        "Manufacturing Automation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/adversarial-attacks",
+      "label": "Adversarial Attacks",
+      "categories": [
+        0,
+        3
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "AI Safety"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/agent-development-sdks",
+      "label": "Agent Development SDKs",
+      "categories": [
+        28,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Agent Harness",
+        "Agent Frameworks"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks",
+      "categories": [
+        28,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Agent Harness",
+        "LLM Evaluation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes",
+      "categories": [
+        28
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Agent Harness",
+        "AI Infrastructure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/agent-memory",
+      "label": "Agent Memory",
+      "categories": [
+        15,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Agent",
+        "Cognitive Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/agent-based-modelling",
+      "label": "Agent-Based Modelling",
+      "categories": [
+        15,
+        5
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Simulation",
+        "Complexity Science"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/agent-based-models",
+      "label": "Agent-Based Models",
+      "categories": [
+        5,
+        15
+      ],
+      "domains": [
+        0,
+        2
+      ],
+      "parents": [
+        "Computational Intelligence",
+        "Simulation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/agentic-internet",
+      "label": "Agentic Internet",
+      "categories": [
+        5,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Research Area",
+        "AI Agent System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/agentic-rag",
+      "label": "Agentic RAG",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Information Retrieval",
+        "Retrieval-Augmented Generation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance",
+      "categories": [
+        0,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Neural Network",
+        "Model Evaluation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/algorithmic-transparency-reports",
+      "label": "Algorithmic Transparency Reports",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "AI Ethics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/annotated-training-data",
+      "label": "Annotated Training Data",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/anomaly-detection",
+      "label": "Anomaly Detection",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/apache-parquet",
+      "label": "Apache Parquet",
+      "categories": [
+        31
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Blockchain",
+        "Data Format"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ar-overlay",
+      "label": "Ar Overlay",
+      "categories": [
+        12,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "Platform and Environment"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/arc-face",
+      "label": "ArcFace",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Facial Recognition",
+        "Loss Function"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/arkit",
+      "label": "Arkit",
+      "categories": [
+        15,
+        14
+      ],
+      "domains": [
+        2,
+        3
+      ],
+      "parents": [
+        "Augmented Reality",
+        "Environmental Mapping"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/artificial-general-intelligence",
+      "label": "Artificial General Intelligence",
+      "categories": [
+        5,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Research Area",
+        "AI Research Area",
+        "Frontier AI"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/asset-archive",
+      "label": "Asset Archive",
+      "categories": [
+        14,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Digital Repository"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/asset-format-standards",
+      "label": "Asset Format Standards",
+      "categories": [
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Technical Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/asset-registry",
+      "label": "Asset Registry",
+      "categories": [
+        8,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Token and Asset",
+        "Token and Asset",
+        "Blockchain Application"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/attention-aware-interaction",
+      "label": "Attention Aware Interaction",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Human Computer Interaction"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/audio-parameters",
+      "label": "Audio Parameters",
+      "categories": [
+        14,
+        12
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Display and Rendering"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/augmented-reality-collaboration",
+      "label": "Augmented Reality Collaboration",
+      "categories": [
+        26,
+        24
+      ],
+      "domains": [
+        4
+      ],
+      "parents": [
+        "Telepresence",
+        "Telecollaboration"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/auto-gen",
+      "label": "AutoGen",
+      "categories": [
+        28,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Multi-Agent Systems",
+        "Agent Frameworks"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/automated-decision-making",
+      "label": "Automated Decision Making",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning",
+        "Decision Making"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/automated-design",
+      "label": "Automated Design",
+      "categories": [
+        14,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Generative Design",
+        "Optimisation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/automated-summarization",
+      "label": "Automated Summarization",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Natural Language Processing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/automatic-prompt-optimisation",
+      "label": "Automatic Prompt Optimisation",
+      "categories": [
+        0,
+        4
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Prompt Engineering",
+        "Model Optimisation and Performance"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/autonomous-mobile-robots",
+      "label": "Autonomous Mobile Robots",
+      "categories": [
+        21,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Mobile Robotics",
+        "Mobile Robot"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/autoregressive-decoding",
+      "label": "Autoregressive Decoding",
+      "categories": [
+        1,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Large Language Model",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/autoregressive-model",
+      "label": "Autoregressive Model",
+      "categories": [
+        1,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Generative Model",
+        "Deep Generative Model"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/avatar-creation",
+      "label": "Avatar Creation",
+      "categories": [
+        14,
+        13
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Interaction Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/blake2",
+      "label": "BLAKE2",
+      "categories": [
+        7,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Cryptographic Primitive",
+        "Blockchain Entity",
+        "Cryptographic Primitive"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bleu-score",
+      "label": "BLEU Score",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Evaluation Metric",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bm25",
+      "label": "BM25",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Search Algorithm",
+        "Information Retrieval"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/btc-layer-3",
+      "label": "BTC Layer 3",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Network Component",
+        "Network Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/back-translation",
+      "label": "Back-Translation",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Natural Language Processing",
+        "Data Augmentation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/base-fee",
+      "label": "Base Fee",
+      "categories": [
+        6,
+        10,
+        9
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/batch-inference",
+      "label": "Batch Inference",
+      "categories": [
+        0,
+        4,
+        28
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Machine Learning",
+        "Model Serving",
+        "AI Infrastructure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bayesian-decision-theory",
+      "label": "Bayesian Decision Theory",
+      "categories": [
+        5
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Statistics",
+        "Decision Theory"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing",
+      "categories": [
+        2,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Adaptive Learning",
+        "Probabilistic Model",
+        "Learner Model"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bayesian-optimisation",
+      "label": "Bayesian Optimisation",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Optimisation",
+        "Probabilistic Model"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/behavior-analysis",
+      "label": "Behavior Analysis",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Machine Learning Discipline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/behavioral-analytics",
+      "label": "Behavioral Analytics",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Machine Learning Discipline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/behavioral-modeling",
+      "label": "Behavioral Modeling",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/belief-propagation",
+      "label": "Belief Propagation",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Graphical Model",
+        "Probabilistic Inference"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/benchmark-evaluation",
+      "label": "Benchmark Evaluation",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Evaluation",
+        "AI Evaluation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bias-in-large-language-models",
+      "label": "Bias in Large Language Models",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "AI Safety",
+        "Sociotechnical Harm"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bias-variance-tradeoff",
+      "label": "Bias-Variance Tradeoff",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Statistical Learning Theory",
+        "Hyperparameter Tuning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bitcoin-proof-of-work-protocol-as-money",
+      "label": "Bitcoin As Money",
+      "categories": [
+        9,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Token and Asset"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bitcoin-proof-of-work-protocol-distribution",
+      "label": "Bitcoin Distribution",
+      "categories": [
+        9,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Bitcoin Proof-of-Work Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bitcoin-proof-of-work-protocol-etf",
+      "label": "Bitcoin ETF",
+      "categories": [
+        11,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Governance and Regulation",
+        "Token and Asset",
+        "Exchange-Traded Fund"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bitcoin-proof-of-work-protocol-mining",
+      "label": "Bitcoin Mining",
+      "categories": [
+        6,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Token and Asset"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bitcoin-proof-of-work-protocol-technical-overview",
+      "label": "Bitcoin Technical Overview",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Peer-to-Peer Network"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/bitcoin-transaction",
+      "label": "Bitcoin Transaction",
+      "categories": [
+        10,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Blockchain Transaction",
+        "Bitcoin"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/block-header",
+      "label": "Block Header",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/block-height",
+      "label": "Block Height",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/block-propagation-time",
+      "label": "Block Propagation Time",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Network Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/block-propagation",
+      "label": "Block Propagation",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Consensus Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/block-reward",
+      "label": "Block Reward",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/block-size",
+      "label": "Block Size",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/block-time",
+      "label": "Block Time",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/blockchain-anchoring",
+      "label": "Blockchain Anchoring",
+      "categories": [
+        10,
+        7
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Blockchain Infrastructure",
+        "Cryptographic Hash Function"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/blockchain-collaboration",
+      "label": "Blockchain Collaboration",
+      "categories": [
+        27,
+        24
+      ],
+      "domains": [
+        4
+      ],
+      "parents": [
+        "Protocol and Infrastructure",
+        "Telecollaboration"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/boston-dynamics-spot",
+      "label": "Boston Dynamics Spot",
+      "categories": [
+        21,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Mobile Robotics",
+        "Robot Type"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/burning-mechanism",
+      "label": "Burning Mechanism",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cbdcs",
+      "label": "CBDCs",
+      "categories": [
+        11,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Governance and Regulation",
+        "Token and Asset",
+        "Token and Asset"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cbeci-methodology",
+      "label": "CBECI Methodology",
+      "categories": [
+        5,
+        11
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Evaluation Metric",
+        "Blockchain Environmental Impact Assessment"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cbeci",
+      "label": "CBECI",
+      "categories": [
+        0,
+        32
+      ],
+      "domains": [
+        0,
+        1
+      ],
+      "parents": [
+        "Benchmark Evaluation",
+        "Electricity Consumption"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/comet-metric",
+      "label": "COMET Metric",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Evaluation Metric",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/calculus",
+      "label": "Calculus",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning",
+        "Mathematical Science"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/camera-parameters",
+      "label": "Camera Parameters",
+      "categories": [
+        12,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "Imaging Parameters"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/capability-elicitation",
+      "label": "Capability Elicitation",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Evaluation",
+        "AI Evaluation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/carbon-credit-token",
+      "label": "Carbon Credit Token",
+      "categories": [
+        8,
+        9
+      ],
+      "domains": [
+        1,
+        2
+      ],
+      "parents": [
+        "Token and Asset",
+        "Virtual Economy"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement",
+      "categories": [
+        32,
+        30
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "Legal and Regulatory",
+        "Security and Identity"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/carbon-neutrality-planning",
+      "label": "Carbon Neutrality Planning",
+      "categories": [
+        17,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Strategic Planning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cashu",
+      "label": "Cashu",
+      "categories": [
+        8,
+        6
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Token and Asset",
+        "Bitcoin Layer 2"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/causal-attention",
+      "label": "Causal Attention",
+      "categories": [
+        1,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Model Architecture",
+        "Attention Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/centralized-swarm-control",
+      "label": "Centralized Swarm Control",
+      "categories": [
+        20,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robot Type",
+        "Control System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/chain-reorganization",
+      "label": "Chain Reorganization",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/chain-state",
+      "label": "Chain State",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/character-relationship-graph",
+      "label": "Character Relationship Graph",
+      "categories": [
+        14
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Content and Assets",
+        "Social Network Graph"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/circulating-supply",
+      "label": "Circulating Supply",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cohere",
+      "label": "Cohere",
+      "categories": [
+        1,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Large Language Models",
+        "Enterprise AI"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/coin",
+      "label": "Coin",
+      "categories": [
+        8,
+        10,
+        9
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Token and Asset",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/coinbase-transaction",
+      "label": "Coinbase Transaction",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Consensus Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/collaborative-editing",
+      "label": "Collaborative Editing",
+      "categories": [
+        24,
+        25
+      ],
+      "domains": [
+        5,
+        4
+      ],
+      "parents": [
+        "Real-Time Collaboration",
+        "Version History"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/collaborative-systems-modality-robots",
+      "label": "Collaborative Robots",
+      "categories": [
+        19,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Industrial Robotics",
+        "Industrial Robot"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/collaborative-systems-modality-whiteboard",
+      "label": "Collaborative Whiteboard",
+      "categories": [
+        25,
+        24
+      ],
+      "domains": [
+        4
+      ],
+      "parents": [
+        "Workspace Tools",
+        "Communication Technology",
+        "Communication Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/collision-resistance",
+      "label": "Collision Resistance",
+      "categories": [
+        7,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Cryptographic Primitive",
+        "Blockchain Entity"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/node-based-diffusion-pipeline-interface-api-specification",
+      "label": "ComfyUI API Specification",
+      "categories": [
+        1,
+        33
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "ComfyUI Workflows",
+        "REST API"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/node-based-diffusion-pipeline-interface-manager",
+      "label": "ComfyUI Manager",
+      "categories": [
+        2,
+        33
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Package Manager"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/node-based-diffusion-pipeline-interface-workflows",
+      "label": "ComfyUI Workflows",
+      "categories": [
+        1,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Generative Model",
+        "Node-Based Diffusion Pipeline Interface"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/common-crawl",
+      "label": "Common Crawl",
+      "categories": [
+        31
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Training Data",
+        "Open Data"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/common-sense-reasoning",
+      "label": "Common Sense Reasoning",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Natural Language Understanding",
+        "Reasoning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/compatibility-standards",
+      "label": "Compatibility Standards",
+      "categories": [
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Technical Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/compliance-control",
+      "label": "Compliance Control",
+      "categories": [
+        32,
+        30
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "Security and Identity"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/computational-biology",
+      "label": "Computational Biology",
+      "categories": [
+        31,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Data Science",
+        "Scientific Computing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/computational-complexity-theory",
+      "label": "Computational Complexity Theory",
+      "categories": [
+        33,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Theoretical Computer Science",
+        "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/computational-component",
+      "label": "Computational Component",
+      "categories": [
+        28
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/computer-aided-design",
+      "label": "Computer Aided Design",
+      "categories": [
+        33
+      ],
+      "domains": [
+        3,
+        5
+      ],
+      "parents": [
+        "Robotics",
+        "Software Engineering"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/confidential-transactions",
+      "label": "Confidential Transactions",
+      "categories": [
+        10,
+        7
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Blockchain Transaction",
+        "Cryptographic Primitive (Blockchain)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/connectionism",
+      "label": "Connectionism",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Cognitive Science",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/consensus-rule",
+      "label": "Consensus Rule",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Consensus Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/constraint-satisfaction",
+      "label": "Constraint Satisfaction",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Combinatorial Optimisation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/container",
+      "label": "Container",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (Artificial Intelligence)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/context-engineering",
+      "label": "Context Engineering",
+      "categories": [
+        0,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "AI Agent System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/context-management",
+      "label": "Context Management",
+      "categories": [
+        1,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Large Language Model",
+        "Prompt Engineering"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/continuous-training",
+      "label": "Continuous Training",
+      "categories": [
+        4
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "MLOps",
+        "Machine Learning Operations"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/control-algorithm",
+      "label": "Control Algorithm",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Dynamical Systems",
+        "Computational Intelligence"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/control-net-conditioning",
+      "label": "ControlNet Conditioning",
+      "categories": [
+        1,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Generative Model",
+        "AI Technique",
+        "Parameter-Efficient Fine-Tuning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems",
+      "categories": [
+        2,
+        1,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Generative Model",
+        "Fine Tuning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/convergence",
+      "label": "Convergence",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "AI Research Area",
+        "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cortex-agent",
+      "label": "Cortex Agent",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Agentic Internet",
+        "Agents"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/creator-royalty-token",
+      "label": "Creator Royalty Token",
+      "categories": [
+        8,
+        9
+      ],
+      "domains": [
+        1,
+        2
+      ],
+      "parents": [
+        "Token and Asset",
+        "Virtual Economy"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/crew-ai",
+      "label": "CrewAI",
+      "categories": [
+        2,
+        28
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Agent System",
+        "Multi-Agent Systems"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cross-border-data-transfer-rule",
+      "label": "Cross-Border Data Transfer Rule",
+      "categories": [
+        32,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "Privacy Framework"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cryptocurrency",
+      "label": "Cryptocurrency",
+      "categories": [
+        8,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Token and Asset",
+        "Token and Asset",
+        "Network Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cryptographic-system",
+      "label": "Cryptographic System",
+      "categories": [
+        7,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Cryptographic Primitive",
+        "Blockchain Entity"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy",
+      "categories": [
+        30,
+        33
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Security and Identity",
+        "Computer Science"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cursor",
+      "label": "Cursor",
+      "categories": [
+        33,
+        2
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Software Development",
+        "Generative AI"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/customer-support-automation",
+      "label": "Customer Support Automation",
+      "categories": [
+        5,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Conversational AI",
+        "Customer Service Automation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/customer-support",
+      "label": "Customer Support",
+      "categories": [
+        2
+      ],
+      "domains": [
+        0,
+        4
+      ],
+      "parents": [
+        "Customer Service Automation",
+        "Enterprise Workflow"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cybernetics",
+      "label": "Cybernetics",
+      "categories": [
+        19,
+        33
+      ],
+      "domains": [
+        3,
+        5
+      ],
+      "parents": [
+        "Control Theory",
+        "Systems Theory"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cybersecurity-risk-management",
+      "label": "Cybersecurity Risk Management",
+      "categories": [
+        30
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "Cybersecurity Framework"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/cylindrical-robot",
+      "label": "Cylindrical Robot",
+      "categories": [
+        20,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robot Type",
+        "Robot Type",
+        "Actuation and Control"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/dspy",
+      "label": "DSPy",
+      "categories": [
+        1,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "LLM Application Framework",
+        "Automatic Prompt Optimisation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/dvc",
+      "label": "DVC",
+      "categories": [
+        28,
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "MLOps"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/dwpose",
+      "label": "DWPose",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Computer Vision",
+        "Pose Estimation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/data-augmentation-strategies",
+      "label": "Data Augmentation Strategies",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Machine Learning Discipline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/data-layer",
+      "label": "Data Layer",
+      "categories": [
+        31,
+        29
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Data Management",
+        "Network and Communication"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/data-poisoning",
+      "label": "Data Poisoning",
+      "categories": [
+        0,
+        3
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Adversarial Attack"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/data-protection",
+      "label": "Data Protection",
+      "categories": [
+        17
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Security Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/data-versioning",
+      "label": "Data Versioning",
+      "categories": [
+        28,
+        31
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "Machine Learning Pipeline",
+        "Data Management"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/dataset",
+      "label": "Dataset",
+      "categories": [
+        4,
+        28
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "Data Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/de-fi-services",
+      "label": "De Fi Services",
+      "categories": [
+        15
+      ],
+      "domains": [
+        2,
+        1
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Digital Asset Ecosystem"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/decentralised-ai",
+      "label": "Decentralised Ai",
+      "categories": [
+        4
+      ],
+      "domains": [
+        1,
+        0
+      ],
+      "parents": [
+        "Blockchain",
+        "AI Infrastructure (Artificial Intelligence)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/decentralised-web",
+      "label": "Decentralised Web",
+      "categories": [
+        29,
+        33
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Network and Communication",
+        "Sociotechnical System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/decentralised-file-storage",
+      "label": "Decentralised file storage",
+      "categories": [
+        31,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Data Management",
+        "Content-Addressed Storage",
+        "Distributed Storage"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/decentralization",
+      "label": "Decentralization",
+      "categories": [
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Network Component",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Smart Contract"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/decentralized-identifiers",
+      "label": "Decentralized Identifiers",
+      "categories": [
+        7,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Cryptographic Primitive",
+        "Token and Asset"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/deep-generative-model",
+      "label": "Deep Generative Model",
+      "categories": [
+        2,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Generative AI",
+        "Deep Learning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/deep-learning-framework",
+      "label": "Deep Learning Framework",
+      "categories": [
+        0,
+        33
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Deep Learning",
+        "Machine Learning Software"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/deep-learning",
+      "label": "Deep Learning",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Machine Learning Discipline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content",
+      "categories": [
+        2,
+        3
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "AI Safety",
+        "AI Safety"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/definitions-and-frameworks-for-metaverse",
+      "label": "Definitions and frameworks for Metaverse",
+      "categories": [
+        15,
+        16
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Metaverse Ontology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/deflationary-token",
+      "label": "Deflationary Token",
+      "categories": [
+        8,
+        10,
+        9
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Token and Asset",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/democratic-engagement",
+      "label": "Democratic Engagement",
+      "categories": [
+        17,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Metaverse and Telecollaboration"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/democratic-values",
+      "label": "Democratic Values",
+      "categories": [
+        32,
+        30
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "Policy Enforcement"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/denoising-score-matching",
+      "label": "Denoising Score Matching",
+      "categories": [
+        1,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Generative Model",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/deployer",
+      "label": "Deployer",
+      "categories": [
+        33,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Software Engineering",
+        "Digital Infrastructure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/depth-estimation",
+      "label": "Depth Estimation",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0,
+        2
+      ],
+      "parents": [
+        "AI Technique",
+        "3D Perception",
+        "Computer Vision"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/dev-sec-ops",
+      "label": "DevSecOps",
+      "categories": [
+        33,
+        30
+      ],
+      "domains": [
+        4,
+        5
+      ],
+      "parents": [
+        "Agile Software Development",
+        "Software Engineering",
+        "Cybersecurity"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/di-lo-co",
+      "label": "DiLoCo",
+      "categories": [
+        28,
+        0
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Distributed Computing",
+        "Distributed AI Training",
+        "Federated Learning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/dialogue-system",
+      "label": "Dialogue System",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Natural Language Processing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/difficulty-target",
+      "label": "Difficulty Target",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Consensus Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/difficulty",
+      "label": "Difficulty",
+      "categories": [
+        7,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Cryptographic Primitive",
+        "Blockchain Entity",
+        "Cryptographic Primitive"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/digital-asset-ecosystem",
+      "label": "Digital Asset Ecosystem",
+      "categories": [
+        15
+      ],
+      "domains": [
+        2,
+        1
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Digital Economy"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/digital-avatar",
+      "label": "Digital Avatar",
+      "categories": [
+        14,
+        13
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Interaction Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/digital-citizenship",
+      "label": "Digital Citizenship",
+      "categories": [
+        17,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Virtual Society"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/digital-commerce",
+      "label": "Digital Commerce",
+      "categories": [
+        15
+      ],
+      "domains": [
+        2,
+        1
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Digital Asset Ecosystem"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/digital-constitution",
+      "label": "Digital Constitution",
+      "categories": [
+        17,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Virtual Society"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/digital-content-overlay",
+      "label": "Digital Content Overlay",
+      "categories": [
+        12,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "Augmented Reality"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/digital-identity-wallet",
+      "label": "Digital Identity Wallet",
+      "categories": [
+        10,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Network Component",
+        "Token and Asset"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/digital-marketplace",
+      "label": "Digital Marketplace",
+      "categories": [
+        15
+      ],
+      "domains": [
+        2,
+        1
+      ],
+      "parents": [
+        "Platform and Environment",
+        "E-Commerce"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/digital-ritual",
+      "label": "Digital Ritual",
+      "categories": [
+        15,
+        17
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Virtual Community Practice"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/digital-twin-collaboration",
+      "label": "Digital Twin Collaboration",
+      "categories": [
+        26,
+        24
+      ],
+      "domains": [
+        4
+      ],
+      "parents": [
+        "Telepresence",
+        "Telecollaboration"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/digital-workplace-platform",
+      "label": "Digital Workplace Platform",
+      "categories": [
+        25,
+        24
+      ],
+      "domains": [
+        4
+      ],
+      "parents": [
+        "Workspace Tools",
+        "Communication Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/direct-preference-optimization",
+      "label": "Direct Preference Optimization",
+      "categories": [
+        0,
+        1,
+        3
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Generative Model",
+        "Language Model Alignment"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/distributed-computing",
+      "label": "Distributed Computing",
+      "categories": [
+        28,
+        29
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Computing and Cloud",
+        "Network and Communication",
+        "Network and Communication"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/distributed-ledger-technology-dlt",
+      "label": "Distributed Ledger Technology (DLT)",
+      "categories": [
+        28,
+        29
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Computing and Cloud",
+        "Network Infrastructure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/domain-ontology",
+      "label": "Domain Ontology",
+      "categories": [
+        33,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Software Engineering",
+        "Data Management",
+        "Formal Specification"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/eip",
+      "label": "EIP",
+      "categories": [
+        10,
+        11
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Ethereum",
+        "Governance Proposal"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/etsi-domain-creative-media",
+      "label": "ETSI Domain: Creative Media",
+      "categories": [
+        14,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Etsi Metaverse Domain Taxonomy"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/evm-compatibility",
+      "label": "EVM Compatibility",
+      "categories": [
+        10,
+        6
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Smart Contract Platform",
+        "Protocol and Consensus"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/eclipse-attack",
+      "label": "Eclipse Attack",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Network Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/economics",
+      "label": "Economics",
+      "categories": [
+        5
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Research Area",
+        "Complexity Science"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/edge-ai-accelerator",
+      "label": "Edge AI Accelerator",
+      "categories": [
+        28
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "AI Hardware"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/edge-computing",
+      "label": "Edge Computing",
+      "categories": [
+        28,
+        29
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Computing and Cloud",
+        "Network and Communication"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/edge-deployment",
+      "label": "Edge Deployment",
+      "categories": [
+        4,
+        28
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Model Deployment",
+        "Edge Computing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/edge-orchestration",
+      "label": "Edge Orchestration",
+      "categories": [
+        15
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Edge Computing Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/educational-narrative",
+      "label": "Educational Narrative",
+      "categories": [
+        14,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Immersive Learning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/embodied-presence",
+      "label": "Embodied Presence",
+      "categories": [
+        26
+      ],
+      "domains": [
+        2,
+        4
+      ],
+      "parents": [
+        "Telepresence",
+        "Telepresence (Distributed Collaboration)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/emission-schedule",
+      "label": "Emission Schedule",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/empathetic-ai",
+      "label": "Empathetic AI",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Affective Computing",
+        "Cognitive AI"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/energy-and-power",
+      "label": "Energy and Power",
+      "categories": [
+        28,
+        33
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Computing and Cloud",
+        "Software Engineering",
+        "Grid Infrastructure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/environmental-standards",
+      "label": "Environmental Standards",
+      "categories": [
+        17,
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Technical Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ethereum-account",
+      "label": "Ethereum Account",
+      "categories": [
+        10,
+        6
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Ethereum",
+        "Protocol and Consensus"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/evaluation-harness",
+      "label": "Evaluation Harness",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Evaluation",
+        "AI Evaluation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/evaluation-metric",
+      "label": "Evaluation Metric",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Performance Metrics",
+        "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/event-loop",
+      "label": "Event Loop",
+      "categories": [
+        33,
+        0
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Concurrency",
+        "Execution Model"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/exploration-exploitation-tradeoff",
+      "label": "Exploration Exploitation Tradeoff",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Reinforcement Learning",
+        "Decision Making"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/external-ai-harness",
+      "label": "External AI Harness",
+      "categories": [
+        28,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Agent Harness",
+        "Evaluation Harness"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/face-recognition",
+      "label": "Face Recognition",
+      "categories": [
+        30,
+        5
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Biometric Authentication",
+        "Computer Vision"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/face-swap",
+      "label": "Face Swap",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Computer Vision",
+        "Computer Vision"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/factor-graph",
+      "label": "Factor Graph",
+      "categories": [
+        5,
+        21
+      ],
+      "domains": [
+        0,
+        3
+      ],
+      "parents": [
+        "Graphical Model",
+        "Navigation and Planning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/fashion",
+      "label": "Fashion",
+      "categories": [
+        28,
+        33
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Computing and Cloud",
+        "Software Engineering"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/fault-tolerance",
+      "label": "Fault Tolerance",
+      "categories": [
+        28,
+        33
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Computing and Cloud",
+        "Software Engineering"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/federated-byzantine-fault-tolerance",
+      "label": "Federated Byzantine Fault Tolerance",
+      "categories": [
+        6
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Byzantine Fault Tolerance"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/federation-surface",
+      "label": "Federation Surface",
+      "categories": [
+        29,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Network and Communication",
+        "Middleware Layer"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/fee-market",
+      "label": "Fee Market",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/feedback-mechanism",
+      "label": "Feedback Mechanism",
+      "categories": [
+        13,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Interaction Technology",
+        "Immersive Experience Pipeline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/few-shot-learning",
+      "label": "Few-Shot Learning",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/financial-crime-detection",
+      "label": "Financial Crime Detection",
+      "categories": [
+        2
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Fraud Detection",
+        "AI Application"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/flux-1",
+      "label": "Flux.1",
+      "categories": [
+        1,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Diffusion Model",
+        "Generative AI"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/foundation-model",
+      "label": "Foundation Model",
+      "categories": [
+        5,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Model",
+        "AI Model Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/fraud-detection",
+      "label": "Fraud Detection",
+      "categories": [
+        0,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Anomaly Detection",
+        "AI Application"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/function-calling",
+      "label": "Function Calling",
+      "categories": [
+        0,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "AI Agent System",
+        "AI Agent System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/future-of-work",
+      "label": "Future Of Work",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "Employment Social Contract Under Automation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gan",
+      "label": "GAN",
+      "categories": [
+        1,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Generative Model",
+        "Deep Generative Model"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gpt-engineer",
+      "label": "GPT Engineer",
+      "categories": [
+        2,
+        3
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "AI Adoption",
+        "CLI Multi-Agent Systems"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gpu",
+      "label": "GPU",
+      "categories": [
+        12,
+        28
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Graphics Processing",
+        "Computing and Cloud"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/game-ai",
+      "label": "Game AI",
+      "categories": [
+        5,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "AI Application"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gas-limit",
+      "label": "Gas Limit",
+      "categories": [
+        6,
+        10,
+        9
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gas-metering",
+      "label": "Gas Metering",
+      "categories": [
+        10,
+        6
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Smart Contract Platform",
+        "Protocol and Consensus"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gas-price",
+      "label": "Gas Price",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gaussian-splatting",
+      "label": "Gaussian Splatting",
+      "categories": [
+        12,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "3D Scene Reconstruction"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/generalisation",
+      "label": "Generalisation",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning",
+        "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/generative-ai",
+      "label": "Generative AI",
+      "categories": [
+        2,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Deep Learning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/generative-model",
+      "label": "Generative Model",
+      "categories": [
+        5,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "AI Model Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/generative-models",
+      "label": "Generative Models",
+      "categories": [
+        1,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Generative Model",
+        "Generative AI"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/genesis-block",
+      "label": "Genesis Block",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/global-explanation",
+      "label": "Global Explanation",
+      "categories": [
+        0,
+        3
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Explainability"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/gold",
+      "label": "Gold",
+      "categories": [
+        8,
+        9
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Token and Asset",
+        "Token and Asset",
+        "Hard Money"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/graph-optimisation",
+      "label": "Graph Optimisation",
+      "categories": [
+        4,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Optimisation and Performance",
+        "Inference Optimisation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/graphics-processing-unit",
+      "label": "Graphics Processing Unit",
+      "categories": [
+        12,
+        28
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Graphics Processing",
+        "Computing Infrastructure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/group-vs-individual-fairness",
+      "label": "Group vs Individual Fairness",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "AI Ethics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/halving",
+      "label": "Halving",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/hand-tracking",
+      "label": "Hand Tracking",
+      "categories": [
+        2,
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Gesture Recognition",
+        "Pose Estimation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/hash-collision",
+      "label": "Hash Collision",
+      "categories": [
+        7,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Cryptographic Primitive",
+        "Blockchain Entity",
+        "Cryptographic Primitive"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/hash-function",
+      "label": "Hash Function",
+      "categories": [
+        7
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Cryptographic Primitive",
+        "Compression Function"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/healthcare-analytics",
+      "label": "Healthcare Analytics",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Machine Learning Discipline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/hidden-markov-model",
+      "label": "Hidden Markov Model",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Graphical Model",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/hot-stuff-consensus",
+      "label": "HotStuff Consensus",
+      "categories": [
+        6
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Byzantine Fault Tolerance"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/human-capture-and-recognition",
+      "label": "Human Capture & Recognition",
+      "categories": [
+        13,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Interaction Technology",
+        "Reality Capture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/human-evaluation",
+      "label": "Human Evaluation",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Evaluation",
+        "AI Evaluation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/human-preference",
+      "label": "Human Preference",
+      "categories": [
+        3,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "Neural Network Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/hyperparameter",
+      "label": "Hyperparameter",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/icra",
+      "label": "ICRA",
+      "categories": [
+        2
+      ],
+      "domains": [
+        3,
+        0
+      ],
+      "parents": [
+        "Robotics",
+        "Academic Conference"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/iros",
+      "label": "IROS",
+      "categories": [
+        2
+      ],
+      "domains": [
+        3,
+        0
+      ],
+      "parents": [
+        "Robotics",
+        "Academic Conference"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/image-processing-software",
+      "label": "Image Processing Software",
+      "categories": [
+        12,
+        13
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "Computer Vision System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/image-segmentation",
+      "label": "Image Segmentation",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Computer Vision",
+        "Computer Vision"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/image-and-video-restoration",
+      "label": "Image and Video Restoration",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Computer Vision"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/imitation-learning",
+      "label": "Imitation Learning",
+      "categories": [
+        0,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "AI Agent System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/immersive-experience-pipeline",
+      "label": "Immersive Experience Pipeline",
+      "categories": [
+        15,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Content Production Workflow"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/implicit-neural-representation",
+      "label": "Implicit Neural Representation",
+      "categories": [
+        0,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning",
+        "AI Model Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/incentive-alignment",
+      "label": "Incentive Alignment",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/inclusive-growth",
+      "label": "Inclusive Growth",
+      "categories": [
+        32,
+        30
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "Policy Enforcement"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/indoor-navigation",
+      "label": "Indoor Navigation",
+      "categories": [
+        14
+      ],
+      "domains": [
+        2,
+        3
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Environmental Mapping"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/inductive-bias",
+      "label": "Inductive Bias",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning",
+        "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/industrial-robot",
+      "label": "Industrial Robot",
+      "categories": [
+        20,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Robot Type",
+        "Actuation and Control"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/infiniband",
+      "label": "Infiniband",
+      "categories": [
+        28
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "Interconnect"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/inflationary-token",
+      "label": "Inflationary Token",
+      "categories": [
+        8,
+        10,
+        9
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Token and Asset",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/informed-decision-making",
+      "label": "Informed decision-making",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Decision Support",
+        "Decision Making"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/inpainting",
+      "label": "Inpainting",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Computer Vision"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/input",
+      "label": "Input",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/instant-value-settlement",
+      "label": "Instant value settlement",
+      "categories": [
+        9,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Cryptocurrency"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/internal-ai-harness",
+      "label": "Internal AI Harness",
+      "categories": [
+        28,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Agent Harness",
+        "Evaluation Harness"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/investment-management",
+      "label": "Investment Management",
+      "categories": [
+        9,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Digital Asset"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/io-t-sensor-network",
+      "label": "IoT Sensor Network",
+      "categories": [
+        29,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Network and Communication",
+        "Pervasive Computing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/jupyter-notebook",
+      "label": "Jupyter Notebook",
+      "categories": [
+        31
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Artificial Intelligence",
+        "Data Science"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar",
+      "categories": [
+        1,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Model Architecture",
+        "Diffusion Models",
+        "Parameter-Efficient Fine-Tuning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/keccak-256",
+      "label": "Keccak-256",
+      "categories": [
+        7,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Cryptographic Primitive",
+        "Blockchain Entity"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/knowledge-graph-kanban-board",
+      "label": "Knowledge Graph Kanban Board",
+      "categories": [
+        33,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Software Engineering",
+        "Active Research Projects Registry"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/llm-evaluation",
+      "label": "LLM Evaluation",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Evaluation",
+        "AI Evaluation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/land-parcel",
+      "label": "Land Parcel",
+      "categories": [
+        15,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Virtual Asset"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/lang-chain",
+      "label": "LangChain",
+      "categories": [
+        2,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Agent System",
+        "LLM Application Framework"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/large-scale-pretrained-foundation-model",
+      "label": "Large-Scale Pretrained Foundation Model",
+      "categories": [
+        5,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Model",
+        "AI Model Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/latent-diffusion-model-training",
+      "label": "Latent Diffusion Model Training",
+      "categories": [
+        1,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Generative Model",
+        "Model Training"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/layer2-scaling",
+      "label": "Layer2Scaling",
+      "categories": [
+        10,
+        6
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Network Component",
+        "Blockchain Scalability"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/learning-algorithm",
+      "label": "Learning Algorithm",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Computational Intelligence",
+        "Optimisation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/learning-analytics",
+      "label": "Learning Analytics",
+      "categories": [
+        14,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Educational Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/learning-component",
+      "label": "Learning Component",
+      "categories": [
+        14,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Educational Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/learning-module",
+      "label": "Learning Module",
+      "categories": [
+        14,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Educational Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/learning-resources",
+      "label": "Learning Resources",
+      "categories": [
+        14,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Educational Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/learning",
+      "label": "Learning",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Computer Vision"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/lightning-network",
+      "label": "Lightning Network",
+      "categories": [
+        10,
+        6
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Network Component",
+        "Layer 2 Scaling",
+        "Payment Channel Network"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/liquidity-pool",
+      "label": "Liquidity Pool",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Smart Contract"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc",
+      "categories": [
+        0,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Neural Network"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/lock-and-mint-mechanism",
+      "label": "Lock and Mint Mechanism",
+      "categories": [
+        10,
+        9
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Network Component",
+        "De Fi Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/logistics-optimization",
+      "label": "Logistics Optimization",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Applied Machine Learning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/longest-chain-rule",
+      "label": "Longest Chain Rule",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Consensus Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/low-latency-network",
+      "label": "Low-Latency Network",
+      "categories": [
+        10
+      ],
+      "domains": [
+        5,
+        1
+      ],
+      "parents": [
+        "Infrastructure",
+        "Network Topology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/mlops",
+      "label": "MLOps",
+      "categories": [
+        5,
+        4
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "AI Infrastructure (Artificial Intelligence)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/mteb-benchmark",
+      "label": "MTEB Benchmark",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Evaluation Metric",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/machine-learning-discipline",
+      "label": "Machine Learning Discipline",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Artificial Intelligence Core",
+        "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/machine-learning-discipline-model",
+      "label": "Machine Learning Model",
+      "categories": [
+        5,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "Machine Learning Models"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/machine-learning-discipline-models",
+      "label": "Machine Learning Models",
+      "categories": [
+        1,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Model Architecture",
+        "Machine Learning Discipline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/machine-learning-operations",
+      "label": "Machine Learning Operations",
+      "categories": [
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Infrastructure (Artificial Intelligence)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/machine-learning-software",
+      "label": "Machine Learning Software",
+      "categories": [
+        0,
+        33
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Machine Learning",
+        "Software Engineering"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/machine-learning-discipline-technique",
+      "label": "Machine Learning Technique",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Machine Learning Discipline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/manipulator-arm",
+      "label": "Manipulator Arm",
+      "categories": [
+        13,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Interaction Technology",
+        "Avatar Wearable"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/market-capitalization",
+      "label": "Market Capitalization",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/maximum-sequence-length",
+      "label": "Maximum Sequence Length",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Natural Language Processing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/mechanical-component",
+      "label": "Mechanical Component",
+      "categories": [
+        19,
+        21
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Kinematic Chain"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/meeting-recording",
+      "label": "Meeting Recording",
+      "categories": [
+        24,
+        25
+      ],
+      "domains": [
+        4
+      ],
+      "parents": [
+        "Communication Technology",
+        "Communication Technology",
+        "Digital Workplace Platform"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/meeting-transcription",
+      "label": "Meeting Transcription",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Speech Recognition"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/merkle-root",
+      "label": "Merkle Root",
+      "categories": [
+        7,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Cryptographic Primitive",
+        "Blockchain Entity",
+        "Cryptographic Primitive"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/metadata-standard",
+      "label": "Metadata Standard",
+      "categories": [
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Technical Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline",
+      "categories": [
+        15,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Content Production Workflow"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/metaverse-psychology-profile",
+      "label": "Metaverse Psychology Profile",
+      "categories": [
+        17,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Psychological Research"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/miner",
+      "label": "Miner",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Consensus Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/minting",
+      "label": "Minting",
+      "categories": [
+        8,
+        10,
+        9
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Token and Asset",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/model-based-control",
+      "label": "Model Based Control",
+      "categories": [
+        19,
+        21
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Control System",
+        "Trajectory Optimisation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/model-based-reinforcement-learning",
+      "label": "Model Based Reinforcement Learning",
+      "categories": [
+        0,
+        19
+      ],
+      "domains": [
+        0,
+        3
+      ],
+      "parents": [
+        "Reinforcement Learning",
+        "Reinforcement Learning for Robotics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/model-debugging",
+      "label": "Model Debugging",
+      "categories": [
+        0,
+        28
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Model Evaluation",
+        "AI Infrastructure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/model-monitoring",
+      "label": "Model Monitoring",
+      "categories": [
+        4,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "MLOps",
+        "Data Drift"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/model-optimization",
+      "label": "Model Optimization",
+      "categories": [
+        4,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Deployment",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/model-property",
+      "label": "Model Property",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "AI Concept"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/model-registry",
+      "label": "Model Registry",
+      "categories": [
+        4
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "MLOps",
+        "Machine Learning Operations"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/model-serving",
+      "label": "Model Serving",
+      "categories": [
+        4,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Deployment",
+        "Inference Layer"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/model-training",
+      "label": "Model Training",
+      "categories": [
+        0,
+        1,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Neural Network",
+        "Optimisation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/model-transparency",
+      "label": "Model Transparency",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "AI Ethics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/motion-markers",
+      "label": "Motion Markers",
+      "categories": [
+        13,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Interaction Technology",
+        "Motion Capture Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/multi-party-royalties",
+      "label": "Multi Party Royalties",
+      "categories": [
+        17,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Revenue Sharing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/multi-party-transactions",
+      "label": "Multi Party Transactions",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Transaction"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/multi-layer-agentic-governance-framework",
+      "label": "Multi-Layer Agentic Governance Framework",
+      "categories": [
+        2,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Agent Frameworks"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/multimodal-ai-architecture",
+      "label": "Multimodal AI Architecture",
+      "categories": [
+        5,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Research Area",
+        "AI Model Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/multithreading",
+      "label": "Multithreading",
+      "categories": [
+        33,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Concurrency",
+        "Parallel Computing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/npu",
+      "label": "NPU",
+      "categories": [
+        28
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "AI Hardware"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/nvidia-corporation-h-100",
+      "label": "NVIDIA H100",
+      "categories": [
+        28,
+        4
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "GPU",
+        "AI Infrastructure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/native-token",
+      "label": "Native Token",
+      "categories": [
+        8,
+        10,
+        9
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Token and Asset",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/navigation",
+      "label": "Navigation",
+      "categories": [
+        21,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Navigation and Planning",
+        "Path Planning",
+        "Autonomous System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/network-hash-rate",
+      "label": "Network Hash Rate",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Consensus Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/network-standards",
+      "label": "Network Standards",
+      "categories": [
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Technical Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/network-synchronization",
+      "label": "Network Synchronization",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Consensus Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/neuromorphic-chips",
+      "label": "Neuromorphic Chips",
+      "categories": [
+        28
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "Inference Hardware"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/non-genesis-block",
+      "label": "Non Genesis Block",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Block"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/nvidia-gpu",
+      "label": "Nvidia Gpu",
+      "categories": [
+        12,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Graphics Processing Unit",
+        "Hardware Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/onnx-standard",
+      "label": "ONNX Standard",
+      "categories": [
+        5,
+        16
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "Open Standard"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/obstacle-detection",
+      "label": "Obstacle Detection",
+      "categories": [
+        1,
+        18
+      ],
+      "domains": [
+        0,
+        3
+      ],
+      "parents": [
+        "Perception",
+        "Perception and Sensing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/on-chain-transaction",
+      "label": "On-Chain Transaction",
+      "categories": [
+        10,
+        6
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Blockchain Transaction",
+        "Transaction"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/online-learning",
+      "label": "Online Learning",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Machine Learning Discipline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/opcodes",
+      "label": "Opcodes",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/open-generative-ai-tools",
+      "label": "Open Generative AI tools",
+      "categories": [
+        28
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "Machine Learning Infrastructure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/output",
+      "label": "Output",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/pegasus",
+      "label": "PEGASUS",
+      "categories": [
+        1,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Model Architecture",
+        "Natural Language Processing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/psnr-metric",
+      "label": "PSNR Metric",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Evaluation Metric",
+        "Model Performance"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/partition-attack",
+      "label": "Partition Attack",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Network Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/perception",
+      "label": "Perception",
+      "categories": [
+        1,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Cognitive Architecture",
+        "Embodied AI"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/physical-hardware",
+      "label": "Physical Hardware",
+      "categories": [
+        14,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Hardware"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/physical-layer",
+      "label": "Physical Layer",
+      "categories": [
+        29,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Network and Communication",
+        "Network and Communication",
+        "Hardware Layer"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/physics-material",
+      "label": "Physics Material",
+      "categories": [
+        12,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "Metaverse"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/player-two",
+      "label": "Player Two",
+      "categories": [
+        33,
+        28
+      ],
+      "domains": [
+        5,
+        4
+      ],
+      "parents": [
+        "Software Engineering",
+        "Collaboration Platform"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/pool-share",
+      "label": "Pool Share",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Consensus Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/pose-estimation",
+      "label": "Pose Estimation",
+      "categories": [
+        0,
+        1,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Perception",
+        "Human Computer Interaction"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/post-hoc-explanation",
+      "label": "Post Hoc Explanation",
+      "categories": [
+        0,
+        3
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Explainability"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/predictive-modelling",
+      "label": "Predictive Modelling",
+      "categories": [
+        0,
+        28
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning",
+        "Statistical Modelling"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/preimage-resistance",
+      "label": "Preimage Resistance",
+      "categories": [
+        7,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Cryptographic Primitive",
+        "Blockchain Entity",
+        "Cryptographic Primitive"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/presence-indicator",
+      "label": "Presence Indicator",
+      "categories": [
+        24,
+        26
+      ],
+      "domains": [
+        4,
+        2
+      ],
+      "parents": [
+        "Communication Technology",
+        "Ambient Awareness",
+        "Communication Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/prime-intellect",
+      "label": "Prime Intellect",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/priority-fee",
+      "label": "Priority Fee",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/privacy-preserving-dynamic-creative-optimisation",
+      "label": "Privacy-Preserving Dynamic Creative Optimisation",
+      "categories": [
+        28,
+        29
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Computing and Cloud",
+        "Decentralised Web"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/probabilistic-forecasting",
+      "label": "Probabilistic Forecasting",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "Time Series Forecasting"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/probabilistic-model",
+      "label": "Probabilistic Model",
+      "categories": [
+        0,
+        1
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Neural Network"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D",
+      "categories": [
+        15,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Content and Assets"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/processing-hardware",
+      "label": "Processing Hardware",
+      "categories": [
+        12,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "Physical Hardware"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/prompt-engineering",
+      "label": "Prompt Engineering",
+      "categories": [
+        0,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "In-Context Learning",
+        "AI Application"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/proof-of-stake-sustainability",
+      "label": "Proof Of Stake Sustainability",
+      "categories": [
+        6,
+        11
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Sustainability"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/proposal-distribution",
+      "label": "Proposal Distribution",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "Monte Carlo Methods"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/proprietary-ai-video",
+      "label": "Proprietary AI Video",
+      "categories": [
+        2,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Model Training",
+        "AI Video"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/proprietary-large-language-models",
+      "label": "Proprietary Large Language Models",
+      "categories": [
+        1,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Model Architecture",
+        "Transformer Architecture",
+        "Cognitive AI"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/proprietary-video",
+      "label": "Proprietary Video",
+      "categories": [
+        29,
+        32
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Network and Communication",
+        "Legal and Regulatory",
+        "Content Delivery Network"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/proprioceptive-sensor",
+      "label": "Proprioceptive Sensor",
+      "categories": [
+        18,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Perception and Sensing",
+        "Actuation and Control",
+        "Actuation and Control"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/proximity-search",
+      "label": "Proximity Search",
+      "categories": [
+        14,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Geospatial Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/psychoacoustics",
+      "label": "Psychoacoustics",
+      "categories": [
+        1,
+        12
+      ],
+      "domains": [
+        0,
+        2
+      ],
+      "parents": [
+        "Perception",
+        "Audio Spatialization"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/psychological-phenomenon",
+      "label": "Psychological Phenomenon",
+      "categories": [
+        33,
+        28
+      ],
+      "domains": [
+        5,
+        2
+      ],
+      "parents": [
+        "Software Engineering",
+        "Digital Human Avatar Representation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/quadratic-voting",
+      "label": "Quadratic Voting",
+      "categories": [
+        11,
+        9
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Governance and Regulation",
+        "Governance and Regulation",
+        "Public Goods Funding"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/query-key-value",
+      "label": "Query Key Value",
+      "categories": [
+        1,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Model Architecture",
+        "Attention Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Client-Side Validation Theory",
+        "Network Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/real-analysis",
+      "label": "Real Analysis",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Calculus",
+        "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/real-time-systems",
+      "label": "Real Time Systems",
+      "categories": [
+        19,
+        15
+      ],
+      "domains": [
+        3,
+        2
+      ],
+      "parents": [
+        "Embedded System",
+        "Platform and Environment"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/real-time",
+      "label": "Real Time",
+      "categories": [
+        28,
+        33
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Computing and Cloud",
+        "Operating System",
+        "Safety-Critical Systems"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/real-time-ai-inference",
+      "label": "Real-Time AI Inference",
+      "categories": [
+        0,
+        28
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Inference",
+        "AI Infrastructure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/reasoning",
+      "label": "Reasoning",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Artificial General Intelligence"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/recommendation-systems",
+      "label": "Recommendation Systems",
+      "categories": [
+        5,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "AI Application"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/relay-network",
+      "label": "Relay Network",
+      "categories": [
+        29,
+        10
+      ],
+      "domains": [
+        5,
+        1
+      ],
+      "parents": [
+        "Overlay Network",
+        "Network Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/remote-assistance",
+      "label": "Remote Assistance",
+      "categories": [
+        24,
+        26
+      ],
+      "domains": [
+        4
+      ],
+      "parents": [
+        "Remote Collaboration",
+        "Telepresence (Distributed Collaboration)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/remote-collaboration",
+      "label": "Remote Collaboration",
+      "categories": [
+        24
+      ],
+      "domains": [
+        4,
+        5
+      ],
+      "parents": [
+        "Distributed Collaboration",
+        "Distributed Teams"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/remote-pair-programming",
+      "label": "Remote Pair Programming",
+      "categories": [
+        25,
+        24
+      ],
+      "domains": [
+        4
+      ],
+      "parents": [
+        "Workspace Tools",
+        "Communication Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/reputation-based-bft",
+      "label": "Reputation-Based BFT",
+      "categories": [
+        6
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Byzantine Fault Tolerance"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/responsible-ai-principles",
+      "label": "Responsible AI Principles",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "AI Ethics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Natural Language Processing",
+        "Natural Language Processing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/revenue-sharing",
+      "label": "Revenue Sharing",
+      "categories": [
+        14,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Creator Economy"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/right-to-be-forgotten",
+      "label": "Right to Be Forgotten",
+      "categories": [
+        32,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "Privacy Framework"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/risk-assessment",
+      "label": "Risk Assessment",
+      "categories": [
+        32,
+        33
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "Software Engineering"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/robot-hardware",
+      "label": "Robot Hardware",
+      "categories": [
+        19,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Mobile Robot Platform",
+        "Robotics Platform"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/robotics-perception",
+      "label": "Robotics Perception",
+      "categories": [
+        1,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Perception",
+        "Computer Vision"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/robotics-simulation",
+      "label": "Robotics Simulation",
+      "categories": [
+        15
+      ],
+      "domains": [
+        3,
+        2
+      ],
+      "parents": [
+        "Robotics",
+        "Simulation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/royalty-mechanism",
+      "label": "Royalty Mechanism",
+      "categories": [
+        17
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Digital Rights Management"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/ssim-metric",
+      "label": "SSIM Metric",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Evaluation Metric",
+        "Model Performance"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/strips",
+      "label": "STRIPS",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Knowledge Representation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/safety-evaluation",
+      "label": "Safety Evaluation",
+      "categories": [
+        0,
+        3
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Evaluation",
+        "AI Safety"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/safety-and-alignment",
+      "label": "Safety and alignment",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "AI Safety",
+        "AI Ethics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/sampling",
+      "label": "Sampling",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Technique",
+        "Numerical Methods",
+        "Stochastic Processes"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/scaled-dot-product-attention",
+      "label": "Scaled Dot Product Attention",
+      "categories": [
+        1,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Model Architecture",
+        "Attention Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Computer Vision"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/scene-graph-format",
+      "label": "Scene Graph Format",
+      "categories": [
+        16,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Scene Graph"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/scientific-machine-learning",
+      "label": "Scientific Machine Learning",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning",
+        "Scientific Discovery"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/scikit-learn",
+      "label": "Scikit Learn",
+      "categories": [
+        0,
+        4
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning",
+        "AI Infrastructure (Artificial Intelligence)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/score-matching",
+      "label": "Score Matching",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning Discipline",
+        "AI Technique"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/script",
+      "label": "Script",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/secondary-market-integration",
+      "label": "Secondary Market Integration",
+      "categories": [
+        15
+      ],
+      "domains": [
+        2,
+        1
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Digital Asset Trading"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/securities-regulation",
+      "label": "Securities Regulation",
+      "categories": [
+        11,
+        9
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Governance and Regulation",
+        "DeFi and Economics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/segmentation-and-identification",
+      "label": "Segmentation and Identification",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Computer Vision",
+        "Object Recognition"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/selfish-mining",
+      "label": "Selfish Mining",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Network Component"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/semi-supervised-learning",
+      "label": "Semi-Supervised Learning",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Machine Learning Discipline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/sensitivity",
+      "label": "Sensitivity",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Evaluation",
+        "AI Evaluation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/sensor-model",
+      "label": "Sensor Model",
+      "categories": [
+        21,
+        18
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Probabilistic Robotics",
+        "Perception and Sensing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/shared-whiteboards",
+      "label": "Shared Whiteboards",
+      "categories": [
+        25,
+        24
+      ],
+      "domains": [
+        4
+      ],
+      "parents": [
+        "Workspace Tools",
+        "Telecollaboration"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/signature-scheme",
+      "label": "Signature Scheme",
+      "categories": [
+        7,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Cryptographic Primitive",
+        "Blockchain Entity",
+        "Cryptographic Primitive"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/sim-to-real-transfer",
+      "label": "Sim-to-Real Transfer",
+      "categories": [
+        0,
+        19
+      ],
+      "domains": [
+        0,
+        3
+      ],
+      "parents": [
+        "Transfer Learning",
+        "Robot Learning"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/singularity",
+      "label": "Singularity",
+      "categories": [
+        5,
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Research Area",
+        "Existential Risk",
+        "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/sink-mechanism",
+      "label": "Sink Mechanism",
+      "categories": [
+        9
+      ],
+      "domains": [
+        1,
+        2
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Virtual Economy"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/snapshot-voting",
+      "label": "Snapshot Voting",
+      "categories": [
+        11,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Governance and Regulation",
+        "Token and Asset",
+        "Governance and Regulation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/societal-and-environmental-wellbeing",
+      "label": "Societal and Environmental Wellbeing",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "AI Ethics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/soft-body-dynamics",
+      "label": "Soft Body Dynamics",
+      "categories": [
+        12,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "Metaverse"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/solid-pod",
+      "label": "Solid Pod",
+      "categories": [
+        31,
+        29
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Data Management",
+        "Network and Communication",
+        "Personal Data Store"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/solid",
+      "label": "Solid",
+      "categories": [
+        29,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Network and Communication",
+        "Data Sovereignty"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/solo-mining",
+      "label": "Solo Mining",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Consensus Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/sovereign-mesh",
+      "label": "Sovereign Mesh",
+      "categories": [
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Network Component",
+        "Peer-to-Peer Network"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/spatial-anchor",
+      "label": "Spatial Anchor",
+      "categories": [
+        15,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Ar Scene Graph"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/spatial-anchoring",
+      "label": "Spatial Anchoring",
+      "categories": [
+        15,
+        14
+      ],
+      "domains": [
+        2,
+        3
+      ],
+      "parents": [
+        "Augmented Reality",
+        "Environmental Mapping"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/spatial-calibration",
+      "label": "Spatial Calibration",
+      "categories": [
+        12,
+        13
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "AR Registration"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/spatial-coordinates",
+      "label": "Spatial Coordinates",
+      "categories": [
+        16,
+        12
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Coordinate System"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/stable-diffusion-image-model",
+      "label": "Stable Diffusion Image Model",
+      "categories": [
+        1,
+        2
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Diffusion Model",
+        "Text-to-Image"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/standards-conformance-testing",
+      "label": "Standards Conformance Testing",
+      "categories": [
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/standards-conformance",
+      "label": "Standards Conformance",
+      "categories": [
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/standards-documentation",
+      "label": "Standards Documentation",
+      "categories": [
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/standards-validation",
+      "label": "Standards Validation",
+      "categories": [
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/state-machine",
+      "label": "State Machine",
+      "categories": [
+        28,
+        33
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Computing and Cloud",
+        "Automata Theory"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/stochastic-process",
+      "label": "Stochastic Process",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Dynamical Systems"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/storage-layer",
+      "label": "Storage Layer",
+      "categories": [
+        31,
+        28
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Data Management",
+        "Infrastructure Layer"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/sub-millisecond-latency",
+      "label": "Sub-Millisecond Latency",
+      "categories": [
+        10,
+        6
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Network Component",
+        "Transaction Confirmation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/supply-cap",
+      "label": "Supply Cap",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/supply-chain-tracking",
+      "label": "Supply Chain Tracking",
+      "categories": [
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Blockchain",
+        "Supply Chain Traceability"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/synthetic-data-generator",
+      "label": "Synthetic Data Generator",
+      "categories": [
+        14,
+        17
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Content and Assets",
+        "Data Anonymization Pipeline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/systolic-array",
+      "label": "Systolic Array",
+      "categories": [
+        28
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "Infrastructure",
+        "AI Hardware"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/tele-026-microsoft-mesh",
+      "label": "TELE-026-microsoft-mesh",
+      "categories": [
+        26
+      ],
+      "domains": [
+        2,
+        4
+      ],
+      "parents": [
+        "Telepresence",
+        "Telepresence (Distributed Collaboration)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/tele-027-spatial-platform",
+      "label": "TELE-027-spatial-platform",
+      "categories": [
+        26
+      ],
+      "domains": [
+        2,
+        4
+      ],
+      "parents": [
+        "Telepresence",
+        "Telepresence (Distributed Collaboration)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/tele-050-neural-rendering-telepresence",
+      "label": "TELE-050-neural-rendering-telepresence",
+      "categories": [
+        26
+      ],
+      "domains": [
+        2,
+        4
+      ],
+      "parents": [
+        "Telepresence",
+        "Telepresence (Distributed Collaboration)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/tele-053-volumetric-video-conferencing",
+      "label": "TELE-053-volumetric-video-conferencing",
+      "categories": [
+        26
+      ],
+      "domains": [
+        2,
+        4
+      ],
+      "parents": [
+        "Telepresence",
+        "Telepresence (Distributed Collaboration)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/tele-153-5-g-telepresence",
+      "label": "TELE-153-5g-telepresence",
+      "categories": [
+        26
+      ],
+      "domains": [
+        2,
+        4
+      ],
+      "parents": [
+        "Telepresence",
+        "Telepresence (Distributed Collaboration)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/tele-154-edge-computing-telepresence",
+      "label": "TELE-154-edge-computing-telepresence",
+      "categories": [
+        26,
+        28
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Telepresence",
+        "Edge Computing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/tele-157-predictive-tracking",
+      "label": "TELE-157-predictive-tracking",
+      "categories": [
+        26
+      ],
+      "domains": [
+        2,
+        4
+      ],
+      "parents": [
+        "Telepresence",
+        "Telepresence (Distributed Collaboration)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/tpu",
+      "label": "TPU",
+      "categories": [
+        28
+      ],
+      "domains": [
+        5,
+        0
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "AI Hardware"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/tamper-evidence",
+      "label": "Tamper Evidence",
+      "categories": [
+        10
+      ],
+      "domains": [
+        2,
+        1
+      ],
+      "parents": [
+        "Spatial Computing",
+        "Immutability"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/taproot-assets",
+      "label": "Taproot Assets",
+      "categories": [
+        6,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Token and Asset",
+        "Bitcoin Proof-of-Work Protocol"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/task-planning",
+      "label": "Task Planning",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Automated Planning",
+        "Symbolic AI"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/tendermint-consensus",
+      "label": "Tendermint Consensus",
+      "categories": [
+        6
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Byzantine Fault Tolerance"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/test-dataset",
+      "label": "Test Dataset",
+      "categories": [
+        0,
+        4
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Machine Learning",
+        "Dataset"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/tezos",
+      "label": "Tezos",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Layer 1",
+        "Layer 1 Blockchain"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/throughput",
+      "label": "Throughput",
+      "categories": [
+        0,
+        4
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Performance Metrics",
+        "AI Infrastructure (Artificial Intelligence)"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/time-series-forecasting",
+      "label": "Time Series Forecasting",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Probabilistic Forecasting"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/topological-map",
+      "label": "Topological Map",
+      "categories": [
+        21,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Navigation and Planning",
+        "Navigation and Planning",
+        "Robot Type"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/total-supply",
+      "label": "Total Supply",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Blockchain Entity",
+        "Economic Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/toxicity-detection",
+      "label": "Toxicity Detection",
+      "categories": [
+        2,
+        3
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Content Moderation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/training-data",
+      "label": "Training Data",
+      "categories": [
+        28,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "AI Infrastructure",
+        "Data Governance"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/transaction-confirmation",
+      "label": "Transaction Confirmation",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/transaction-parameter",
+      "label": "Transaction Parameter",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Transaction"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/transaction-pool",
+      "label": "Transaction Pool",
+      "categories": [
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Network Component",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/transaction",
+      "label": "Transaction",
+      "categories": [
+        6,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Protocol and Consensus",
+        "Blockchain Entity",
+        "Distributed Data Structure"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/transformers",
+      "label": "Transformers",
+      "categories": [
+        1,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Model Architecture",
+        "Neural Network",
+        "Attention Mechanism"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/translation",
+      "label": "Translation",
+      "categories": [
+        2,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Application",
+        "Natural Language Processing",
+        "Natural Language Processing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/transparent-revenue-sharing",
+      "label": "Transparent Revenue Sharing",
+      "categories": [
+        17,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Revenue Distribution"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/true-positive-rate",
+      "label": "True Positive Rate",
+      "categories": [
+        5,
+        0
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Evaluation Metric",
+        "Model Performance"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/trust-architecture",
+      "label": "Trust Architecture",
+      "categories": [
+        17
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Security Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem",
+      "categories": [
+        28,
+        33
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Computing and Cloud",
+        "Software Engineering"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/uri-canonicaliser",
+      "label": "URI Canonicaliser",
+      "categories": [
+        29,
+        30
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Network and Communication",
+        "Identity Systems"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/underfitting",
+      "label": "Underfitting",
+      "categories": [
+        0,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Machine Learning Discipline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/unspent-transaction-output",
+      "label": "Unspent Transaction Output",
+      "categories": [
+        10,
+        6
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "Blockchain Transaction",
+        "Transaction"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/user-awareness",
+      "label": "User Awareness",
+      "categories": [
+        17,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Governance and Safety",
+        "User Education"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/user-context-awareness",
+      "label": "User Context Awareness",
+      "categories": [
+        13,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Interaction Technology",
+        "Context Aware Computing"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/user-interface-design",
+      "label": "User Interface Design",
+      "categories": [
+        33,
+        13
+      ],
+      "domains": [
+        5,
+        2
+      ],
+      "parents": [
+        "Interface Design",
+        "Interaction Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/user-interface-standard",
+      "label": "User Interface Standard",
+      "categories": [
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/user-privacy",
+      "label": "User Privacy",
+      "categories": [
+        32,
+        31
+      ],
+      "domains": [
+        5
+      ],
+      "parents": [
+        "Legal and Regulatory",
+        "Privacy Framework"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/vr-controllers",
+      "label": "VR Controllers",
+      "categories": [
+        13,
+        12
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Interaction Technology",
+        "XR Hardware"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/vr-rendering-engine",
+      "label": "VR Rendering Engine",
+      "categories": [
+        12,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "Game Engine"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/validation-set",
+      "label": "Validation Set",
+      "categories": [
+        0,
+        4
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Model Evaluation",
+        "Dataset"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/value-transfer",
+      "label": "Value Transfer",
+      "categories": [
+        9,
+        8
+      ],
+      "domains": [
+        1
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Cryptocurrency"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/verifiable-credential-standard",
+      "label": "Verifiable Credential Standard",
+      "categories": [
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/verification-standard",
+      "label": "Verification Standard",
+      "categories": [
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Standards and Interoperability",
+        "Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/virtual-environment-specification",
+      "label": "Virtual Environment Specification",
+      "categories": [
+        15,
+        16
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Technical Standards"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/virtual-event",
+      "label": "Virtual Event",
+      "categories": [
+        15
+      ],
+      "domains": [
+        4,
+        2
+      ],
+      "parents": [
+        "Distributed Collaboration",
+        "Platform and Environment"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/virtual-production-workflow",
+      "label": "Virtual Production Workflow",
+      "categories": [
+        12,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Display and Rendering",
+        "Production Pipeline"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/virtual-replica",
+      "label": "Virtual Replica",
+      "categories": [
+        15,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Digital Model"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/virtual-society-regulations",
+      "label": "Virtual Society Regulations",
+      "categories": [
+        3
+      ],
+      "domains": [
+        0,
+        5
+      ],
+      "parents": [
+        "AI Governance and Ethics",
+        "Digital Governance"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/virtual-theater",
+      "label": "Virtual Theater",
+      "categories": [
+        15,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Performing Arts"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/virtual-tourism",
+      "label": "Virtual Tourism",
+      "categories": [
+        15,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Tourism Industry"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/virtual-world-creation",
+      "label": "Virtual World Creation",
+      "categories": [
+        15,
+        14
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Platform and Environment",
+        "Digital Content Creation"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/visual-marker",
+      "label": "Visual Marker",
+      "categories": [
+        13,
+        15
+      ],
+      "domains": [
+        2
+      ],
+      "parents": [
+        "Interaction Technology",
+        "AR Technology"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/wallet-address",
+      "label": "Wallet Address",
+      "categories": [
+        7
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Blockchain",
+        "Public Key"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/web-3-infrastructure",
+      "label": "Web3 Infrastructure",
+      "categories": [
+        29
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "Blockchain",
+        "Decentralised Web"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/web3",
+      "label": "Web3",
+      "categories": [
+        9,
+        10
+      ],
+      "domains": [
+        1,
+        5
+      ],
+      "parents": [
+        "DeFi and Economics",
+        "Decentralised Finance",
+        "Peer-to-Peer Network"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/working-memory",
+      "label": "Working Memory",
+      "categories": [
+        1,
+        5
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "Cognitive Architecture",
+        "AI Research Area"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/xr-accessibility-guideline",
+      "label": "XR Accessibility Guideline",
+      "categories": [
+        17
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Accessibility Standard"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/zero-trust-architecture-zta",
+      "label": "Zero-Trust Architecture (ZTA)",
+      "categories": [
+        17
+      ],
+      "domains": [
+        2,
+        5
+      ],
+      "parents": [
+        "Governance and Safety",
+        "Security Architecture"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/k-anonymity-in-datasets",
+      "label": "k-Anonymity in Datasets",
+      "categories": [
+        0,
+        3
+      ],
+      "domains": [
+        0
+      ],
+      "parents": [
+        "AI Technique",
+        "Privacy Preserving Analytics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rb-0026-robot-joint",
+      "label": "rb 0026 robot joint",
+      "categories": [
+        19,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robot"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rb-0027-robot-link",
+      "label": "rb 0027 robot link",
+      "categories": [
+        19,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robot"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rb-0028-forward-kinematics",
+      "label": "rb 0028 forward kinematics",
+      "categories": [
+        19,
+        21
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Kinematics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rb-0029-inverse-kinematics",
+      "label": "rb 0029 inverse kinematics",
+      "categories": [
+        19,
+        21
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Kinematics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rb-0030-jacobian-matrix",
+      "label": "rb 0030 jacobian matrix",
+      "categories": [
+        19,
+        21
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Kinematics"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rb-0033-payload",
+      "label": "rb 0033 payload",
+      "categories": [
+        19,
+        20
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Robot"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rb-0056-impedance-control",
+      "label": "rb 0056 impedance control",
+      "categories": [
+        19,
+        23
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Interaction Control"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rb-0057-admittance-control",
+      "label": "rb 0057 admittance control",
+      "categories": [
+        19,
+        23
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Actuation and Control",
+        "Interaction Control"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/rb-0065-visual-servoing",
+      "label": "rb 0065 visual servoing",
+      "categories": [
+        18,
+        19
+      ],
+      "domains": [
+        3
+      ],
+      "parents": [
+        "Perception and Sensing",
+        "Feedback Control"
+      ]
+    },
+    {
+      "iri": "https://narrativegoldmine.com/class/tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing",
+      "categories": [
+        25,
+        26
+      ],
+      "domains": [
+        4
+      ],
+      "parents": [
+        "Workspace Tools",
+        "Telepresence"
+      ]
+    }
+  ]
+}

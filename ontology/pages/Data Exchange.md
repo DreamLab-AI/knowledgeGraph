@@ -15,7 +15,7 @@ public:: true
   "definition": "Data Exchange refers to the structured transfer of data between systems, organisations, or parties using agreed-upon formats, protocols, and governance frameworks, enabling interoperability without requiring identical internal architectures. It encompasses both technical standards (APIs, file formats, serialisation protocols) and organisational arrangements (data sharing agreements, trust frameworks, data marketplaces) that govern how data flows across boundaries. Modern data exchange platforms provide cataloguing, consent management, lineage tracking, and value exchange mechanisms alongside raw data transfer.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}, {"@id": "urn:ngm:class:data-interoperability", "label": "Data Interoperability"}],
   "relations": {
     "enables": [
       {"@id": "urn:ngm:class:interoperability", "label": "Interoperability"},

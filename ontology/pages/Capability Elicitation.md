@@ -24,7 +24,8 @@ public:: true
   "domain": "ai",
   "maturity": "emerging",
   "subClassOf": [
-    {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+    {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
+    {"@id": "urn:ngm:class:ai-evaluation", "label": "AI Evaluation"}
   ],
   "relations": {
     "relatedTo": [

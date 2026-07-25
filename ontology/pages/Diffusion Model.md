@@ -39,6 +39,10 @@
     {
       "@id": "urn:ngm:class:generative-model",
       "label": "Generative Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "relations": {

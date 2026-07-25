@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:embedded-system",
       "label": "Embedded System"
+    },
+    {
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "relations": {

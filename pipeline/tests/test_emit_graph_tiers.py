@@ -393,12 +393,24 @@ def test_emit_end_to_end(tmp_path):
         assert nd["id"] == 6 + ci
         for key in ("label", "iri", "domain", "degree", "flags", "x", "y"):
             assert key in nd
-    # edges index into nodes[] (category → its domain), 34 backbone edges
-    assert len(overview["edges"]) == 34
-    for e in overview["edges"]:
+    # edges index into nodes[]: 34 backbone (category → its domain) FIRST, then
+    # bridge relations (category → category) for deliberately multi-parented
+    # classes. Overlap is a design property of this corpus, so the taxonomy is a
+    # lattice rather than a tree — see build_graph_model.
+    backbone = [e for e in overview["edges"] if e["type"] == EDGE_SUBCLASS]
+    bridge_edges = [e for e in overview["edges"] if e["type"] == EDGE_RELATION]
+    assert len(backbone) == 34, "one backbone edge per category"
+    # backbone stays at indices 0..33 so an index-sensitive reader is unaffected
+    assert overview["edges"][:34] == backbone
+    for e in backbone:
         assert 0 <= e["source"] < len(overview["nodes"])
         assert 0 <= e["target"] < 6  # every category points at a domain node
-        assert e["type"] == EDGE_SUBCLASS
+    for e in bridge_edges:
+        # both endpoints are category nodes (6..39); a bridge never targets a domain
+        assert 6 <= e["source"] < len(overview["nodes"])
+        assert 6 <= e["target"] < len(overview["nodes"])
+        assert e["source"] != e["target"]
+        assert e["weight"] >= 1
     # taxonomy: 34 category labels indexed by category id (T2 side-panel names)
     assert len(overview["taxonomy"]) == 34
     assert overview["taxonomy"][0] == CATEGORY_ORDER[0][1]

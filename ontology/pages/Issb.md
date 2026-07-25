@@ -17,11 +17,11 @@ public:: true
   "maturity":"emerging",
   "subClassOf":[{"@id":"urn:ngm:class:sustainability-reporting","label":"Sustainability Reporting"}],
   "relations":{
-    "standardizedBy":[{"@id":"urn:ngm:class:disclosure","label":"Disclosure"}],
+    "standardizedBy":[{"@id":"urn:ngm:class:disclosure-requirements","label":"Disclosure Requirements"}],
     "implements":[{"@id":"urn:ngm:class:tcfd","label":"TCFD"},{"@id":"urn:ngm:class:climate-scenario-analysis","label":"Climate Scenario Analysis"}],
     "requires":[{"@id":"urn:ngm:class:materiality-assessment","label":"Materiality Assessment"},{"@id":"urn:ngm:class:carbon-accounting","label":"Carbon Accounting"}],
     "supports":[{"@id":"urn:ngm:class:esg-reporting","label":"ESG Reporting"},{"@id":"urn:ngm:class:sustainable-finance","label":"Sustainable Finance"}],
-    "enables":[{"@id":"urn:ngm:class:disclosure","label":"Disclosure"},{"@id":"urn:ngm:class:financial-materiality","label":"Financial Materiality"}],
+    "enables":[{"@id":"urn:ngm:class:disclosure-requirements","label":"Disclosure Requirements"},{"@id":"urn:ngm:class:financial-materiality","label":"Financial Materiality"}],
     "uses":[{"@id":"urn:ngm:class:ghg-protocol","label":"GHG Protocol"}],
     "relatedTo":[{"@id":"urn:ngm:class:esg","label":"ESG"},{"@id":"urn:ngm:class:financial-regulation","label":"Financial Regulation"},{"@id":"urn:ngm:class:corporate-governance","label":"Corporate Governance"},{"@id":"urn:ngm:class:audit","label":"Audit"}],
     "bridgesTo":[{"@id":"urn:ngm:class:climate-risk","label":"Climate Risk"}],

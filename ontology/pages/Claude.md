@@ -74,6 +74,10 @@ public:: true
     {
       "@id": "urn:ngm:class:large-language-model",
       "label": "Large Language Model"
+    },
+    {
+      "@id": "urn:ngm:class:proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
     }
   ],
   "relations": {

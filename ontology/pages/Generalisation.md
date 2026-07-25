@@ -14,7 +14,7 @@ public:: true
   "definition":"Generalisation is the capacity of a machine-learning model to perform accurately on previously unseen data drawn from the same distribution as its training set, rather than merely memorising training examples. It is the central objective of supervised learning and is quantified by the gap between training and held-out performance. Good generalisation reflects a model that has captured the underlying regularities of a task instead of spurious correlations.",
   "domain":"machine-learning",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"}],
+  "subClassOf":[{"@id":"urn:ngm:class:machine-learning","label":"Machine Learning"},{"@id":"urn:ngm:class:ai-research-area","label":"AI Research Area"}],
   "relations":{
     "enables":[
       {"@id":"urn:ngm:class:transfer-learning","label":"Transfer Learning"}

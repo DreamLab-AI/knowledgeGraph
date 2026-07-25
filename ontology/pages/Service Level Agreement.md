@@ -14,55 +14,123 @@ public:: true
   "domain": "infrastructure",
   "maturity": "mature",
   "subClassOf": [
-    { "@id": "urn:ngm:class:infrastructure", "label": "Infrastructure" }
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:high-availability",
+      "label": "High Availability"
+    }
   ],
   "relations": {
     "hasPart": [
-      { "@id": "urn:ngm:class:service-level-objective", "label": "Service Level Objective" },
-      { "@id": "urn:ngm:class:service-level-indicator", "label": "Service Level Indicator" },
-      { "@id": "urn:ngm:class:service-credit", "label": "Service Credit" }
+      {
+        "@id": "urn:ngm:class:service-level-objective",
+        "label": "Service Level Objective"
+      },
+      {
+        "@id": "urn:ngm:class:service-level-indicator",
+        "label": "Service Level Indicator"
+      },
+      {
+        "@id": "urn:ngm:class:service-credit",
+        "label": "Service Credit"
+      }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:service-management", "label": "Service Management" }
+      {
+        "@id": "urn:ngm:class:service-management",
+        "label": "Service Management"
+      }
     ],
     "implements": [
-      { "@id": "urn:ngm:class:contractual-obligation", "label": "Contractual Obligation" }
+      {
+        "@id": "urn:ngm:class:contractual-obligation",
+        "label": "Contractual Obligation"
+      }
     ],
     "dependsOn": [
-      { "@id": "urn:ngm:class:monitoring", "label": "Monitoring" },
-      { "@id": "urn:ngm:class:observability", "label": "Observability" }
+      {
+        "@id": "urn:ngm:class:monitoring",
+        "label": "Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ],
     "enables": [
-      { "@id": "urn:ngm:class:high-availability", "label": "High Availability" },
-      { "@id": "urn:ngm:class:accountability", "label": "Accountability" }
+      {
+        "@id": "urn:ngm:class:high-availability",
+        "label": "High Availability"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "supports": [
-      { "@id": "urn:ngm:class:cloud-computing", "label": "Cloud Computing" },
-      { "@id": "urn:ngm:class:managed-services", "label": "Managed Services" }
+      {
+        "@id": "urn:ngm:class:cloud-computing",
+        "label": "Cloud Computing"
+      },
+      {
+        "@id": "urn:ngm:class:managed-services",
+        "label": "Managed Services"
+      }
     ],
     "requires": [
-      { "@id": "urn:ngm:class:uptime-measurement", "label": "Uptime Measurement" }
+      {
+        "@id": "urn:ngm:class:uptime-measurement",
+        "label": "Uptime Measurement"
+      }
     ],
     "uses": [
-      { "@id": "urn:ngm:class:metrics", "label": "Metrics" }
+      {
+        "@id": "urn:ngm:class:metrics",
+        "label": "Metrics"
+      }
     ],
     "bridgesTo": [
-      { "@id": "urn:ngm:class:error-budget", "label": "Error Budget" },
-      { "@id": "urn:ngm:class:site-reliability-engineering", "label": "Site Reliability Engineering" }
+      {
+        "@id": "urn:ngm:class:error-budget",
+        "label": "Error Budget"
+      },
+      {
+        "@id": "urn:ngm:class:site-reliability-engineering",
+        "label": "Site Reliability Engineering"
+      }
     ],
     "contrastsWith": [
-      { "@id": "urn:ngm:class:best-effort-service", "label": "Best-Effort Service" }
+      {
+        "@id": "urn:ngm:class:best-effort-service",
+        "label": "Best-Effort Service"
+      }
     ],
     "relatedTo": [
-      { "@id": "urn:ngm:class:disaster-recovery", "label": "Disaster Recovery" },
-      { "@id": "urn:ngm:class:capacity-planning", "label": "Capacity Planning" }
+      {
+        "@id": "urn:ngm:class:disaster-recovery",
+        "label": "Disaster Recovery"
+      },
+      {
+        "@id": "urn:ngm:class:capacity-planning",
+        "label": "Capacity Planning"
+      }
     ]
   },
   "sameAs": [
-    { "@id": "urn:ngm:class:sla", "label": "SLA" }
+    {
+      "@id": "urn:ngm:class:sla",
+      "label": "SLA"
+    }
   ],
   "quality": 0.62,
-  "provenance": { "attributedTo": "did:nostr:ontology-mesh", "generatedAt": "2026-06-15T00:00:00Z", "inferenceRule": "GapMaterialisation" }
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

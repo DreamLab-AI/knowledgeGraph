@@ -75,6 +75,10 @@
     {
       "@id": "urn:ngm:class:interdisciplinary-science",
       "label": "Interdisciplinary Science"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {

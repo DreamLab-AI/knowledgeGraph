@@ -25,7 +25,8 @@ alias:: Informed Decision Making
   "domain": "ai",
   "maturity": "established",
   "subClassOf": [
-    {"@id": "urn:ngm:class:decision-support", "label": "Decision Support"}
+    {"@id": "urn:ngm:class:decision-support", "label": "Decision Support"},
+    {"@id": "urn:ngm:class:decision-making", "label": "Decision Making"}
   ],
   "relations": {
     "relatedTo": [

@@ -18,6 +18,10 @@ public:: true
     {
       "@id": "urn:ngm:class:model-optimization",
       "label": "Model Optimization"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

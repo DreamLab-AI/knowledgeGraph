@@ -79,8 +79,8 @@ public:: true
         "label": "Shader Language"
       },
       {
-        "@id": "urn:ngm:class:graphics-driver",
-        "label": "Graphics Driver"
+        "@id": "urn:ngm:class:gpu-driver",
+        "label": "GPU Driver"
       }
     ],
     "enables": [

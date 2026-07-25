@@ -15,7 +15,7 @@ public:: true
   "definition":"Distributed inference is the execution of a machine learning model's forward pass across multiple devices or machines so that models too large or too demanding for a single accelerator can serve predictions. It partitions the model and its computation using strategies such as tensor, pipeline and data parallelism, and coordinates the resulting workers with high-bandwidth interconnects. Distributed inference is essential for serving very large language and vision models at acceptable latency and throughput.",
   "domain":"machine-learning",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"}],
+  "subClassOf":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"},{"@id":"urn:ngm:class:cat-ai-infrastructure","label":"AI Infrastructure"}],
   "relations":{
     "partOf":[{"@id":"urn:ngm:class:model-serving","label":"Model Serving"}],
     "hasPart":[{"@id":"urn:ngm:class:tensor-parallelism","label":"Tensor Parallelism"}],

@@ -57,6 +57,10 @@ public:: true
     {
       "@id": "urn:ngm:class:cognitive-architecture",
       "label": "Cognitive Architecture"
+    },
+    {
+      "@id": "urn:ngm:class:embodied-ai",
+      "label": "Embodied AI"
     }
   ],
   "relations": {

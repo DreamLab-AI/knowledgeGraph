@@ -65,6 +65,10 @@ public:: true
     {
       "@id": "urn:ngm:class:statistical-learning-theory",
       "label": "Statistical Learning Theory"
+    },
+    {
+      "@id": "urn:ngm:class:hyperparameter-tuning",
+      "label": "Hyperparameter Tuning"
     }
   ],
   "relations": {

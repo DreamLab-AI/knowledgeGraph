@@ -88,7 +88,7 @@ public:: true
         "label": "REST API"
       },
       {
-        "@id": "urn:ngm:class:websocket",
+        "@id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       },
       {

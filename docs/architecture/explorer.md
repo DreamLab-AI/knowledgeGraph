@@ -2,7 +2,7 @@
 
 The explorer is the browser half of this repository: it turns the binary and JSON
 artefacts under `dist/data/` into a navigable graph and a readable page view. It
-lives in `explorer/`, 240 files (excluding `node_modules/`, `target/`, `pkg/`,
+lives in `explorer/`, 227 files (excluding `node_modules/`, `target/`, `pkg/`,
 `dist/` and `.git/`) in two halves:
 
 | Path | What it is |
@@ -98,6 +98,18 @@ a 20-byte record, so the pad was widened from 1 byte to 3. The Python writer pac
 `NGG1_NODE_STRIDE`; the Rust reader declares `NGG1_NODE_STRIDE: usize = 24` with
 the same note.
 
+That record carries **one** `u16 category` (`0xFFFF` = uncategorised,
+FORMAT-NGG1 §3), and that is a real limitation of the frozen format. Multiple
+inheritance is legal in OWL 2 EL and is used deliberately here: 1,401 classes
+carry more than one `subClassOf` parent, and 542 of those bridge more than one
+taxonomy category or domain (454 cross-category, 153 cross-domain). The binary
+tiers keep only the **nearest** category per node; the other memberships cannot
+be expressed in NGG1 and are not recoverable from `full.bin`. They are published
+alongside it instead, in `dist/data/graph/bridges.json` — 542 entries of
+`{iri, label, categories[], domains[], parents[]}`, indices matching
+`overview.json`. Any consumer that needs full category membership must read that
+file; the binary alone will under-report it.
+
 The Rust reader is **not** zero-copy in the C sense, on purpose: it "borrows the
 input `&[u8]` and decodes fields on demand with `from_le_bytes` — no `unsafe`, no
 alignment assumptions (the input slice from JS is not guaranteed 4-aligned, so we
@@ -114,8 +126,8 @@ Agreement between writer and readers is pinned by a **183-byte golden fixture**:
 `ngg1.rs::worked_example()` that asserts its own length is 183. The Python test
 parses it with a `struct`-based reader written independently of the writer, so
 the fixture checks layout rather than round-tripping shared code. The shipped
-`dist/data/graph/full.bin` is 1,282,989 bytes: node_count 7457, edge_count 96377,
-section offsets 32 / 179000 / 594340 / 690720.
+`dist/data/graph/full.bin` is 1,339,983 bytes: node_count 7874, edge_count 98776,
+section offsets 32 / 189008 / 615612 / 714388.
 
 One divergence worth knowing: `modern/src/lib/ngg1.ts` defines
 `FLAG_META = 0x40` ("client-minted collapsed-category metanode"), with no Rust
@@ -138,12 +150,36 @@ Graph state lives entirely in the URL (`src/pages/GraphPage.tsx`):
 
 | URL | Tier | Source |
 |---|---|---|
-| `/graph` | T0 overview | `/data/graph/overview.json` (40 nodes) |
+| `/graph` | T0 overview | `/data/graph/overview.json` (40 nodes, 124 edges) |
 | `/graph?scope=domain:<slug>` | T1 domain | `/data/graph/domain-<slug>.bin` |
 | `/graph?focus=<iri>&r=1\|2` | T2 ego graph | derived client-side from the loaded T1 tier |
 
 A single `useEffect` keyed on the decoded URL drives every load; navigation is by
 `navigate('/graph' + encodeScopeQuery(target))`, so history is the state machine.
+
+T0 is the one tier whose edges are not purely taxonomic. `overview.json` holds 40
+nodes (6 domain roots + 34 category roots) and **124 edges**: 34 backbone
+`subClassOf` category→domain edges at indices 0..33, then 90 category↔category
+relation edges aggregated from the 542 bridging classes. Backbone edges stay
+first so an index-sensitive reader sees them unmoved. Each bridge edge carries a
+`weight` (1 to 73 — how many classes bridge that category pair) added to the
+frozen `{source, target, type}` shape; the same aggregated pairs are also fed
+into the pre-baked force layout in `emit_graph_tiers.py`, so the baked positions
+match the edges drawn over them rather than the tree-shaped layout the
+category→domain edges alone produced.
+
+What the SPA does with the extra 90 edges, read from the source rather than
+inferred: `buildOverviewInput` (`src/pages/GraphPage.tsx`) copies `source`,
+`target` and `type` for every element of `json.edges` into `edgePairs` and
+`edgeTypes`, and reads no other field. It therefore ingests all 124 without any
+change, and discards `weight` — its `OverviewJsonEdge` interface does not declare
+the field. 124 is well inside `MAX_EDGES` 4000, so `assertScope` passes. The 90
+bridge edges carry `type` 1, which puts them in `EdgesSegments`'s second draw
+group and paints them teal at the single constant `EDGE_ALPHA_RELATION`: nothing
+in the renderer scales line opacity by bridge strength today, and a renderer that
+wants to must read `weight` itself. How the result looks on screen is **not**
+verified here — the SPA was not built in this environment (§9), so this is a
+source reading, not an observation of the drawn frame.
 
 `src/stores/scopeStore.ts` (739 lines) is documented as the only place a
 `GraphScope` is constructed, and runs `assertScope()` on every construction.
@@ -253,8 +289,8 @@ Written fresh for this project: `ngg1.rs`, `layout/csr_sim.rs`,
 NGG1 tier protocol, the worker transport and the instanced renderer.
 
 Nothing in the SPA's runtime path touches the inherited stack. It remains in the
-tree because `dist/data/ontology.json` (39.3 MB WebVOWL JSON) is still published
-as a transition artefact.
+tree because `dist/data/ontology.json` (40,382,315 bytes of WebVOWL JSON, 7,874
+entries in `class[]`) is still published as a transition artefact.
 
 ## 7. Licence
 
@@ -315,8 +351,13 @@ workflow's paths point at `publishing-tools/WasmVOWL/`; the same tree is
 
 The workflow in *this* repository, `.github/workflows/build.yml`, is the
 reproducible half only: secret scan, `pytest pipeline/tests`,
-`python -m pipeline.build ontology/pages dist-ci`, a 7457-class contract gate and
+`python -m pipeline.build ontology/pages dist-ci`, a class-count contract gate and
 `python -m pipeline.validate`. It builds no WASM, no SPA, and deploys nothing.
+
+`build.yml` sets `EXPECTED_CLASSES: '7874'` and fails unless both `stats.json`'s
+`classes` and `ontology.json`'s `class[]` length equal it. The value is meant to
+be changed alongside the corpus, and is: a build that silently gains or loses
+classes fails rather than publishing the drift.
 
 ## 9. Build and run: what is verified here, and what is not
 

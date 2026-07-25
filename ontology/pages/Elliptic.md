@@ -63,8 +63,8 @@ public:: true
         "label": "Blockchain Analytics"
       },
       {
-        "@id": "urn:ngm:class:graph-analysis",
-        "label": "Graph Analysis"
+        "@id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
       },
       {
         "@id": "urn:ngm:class:on-chain-data",
@@ -191,7 +191,7 @@ public:: true
 ```
 
 - ### Definition
-  - Elliptic is a blockchain analytics and financial crime compliance company, founded in London in 2013, that provides software tools to trace cryptocurrency transactions across multiple blockchains, attribute them to real-world entities, and assign risk scores to wallets and transactions. Its platform is used by [[Virtual Asset Service Provider]]s, banks, and law enforcement agencies to satisfy [[Anti-Money Laundering]] obligations and detect [[Sanctions Screening]] violations. By combining [[Graph Analysis]], [[Heuristic Clustering]], and [[Machine Learning]], Elliptic enables regulated entities to monitor [[Cryptocurrency]] flows at scale, bridging the technical world of [[Blockchain Analytics]] with the compliance demands of [[Financial Crime Compliance]] frameworks.
+  - Elliptic is a blockchain analytics and financial crime compliance company, founded in London in 2013, that provides software tools to trace cryptocurrency transactions across multiple blockchains, attribute them to real-world entities, and assign risk scores to wallets and transactions. Its platform is used by [[Virtual Asset Service Provider]]s, banks, and law enforcement agencies to satisfy [[Anti-Money Laundering]] obligations and detect [[Sanctions Screening]] violations. By combining [[Graph Analytics]], [[Heuristic Clustering]], and [[Machine Learning]], Elliptic enables regulated entities to monitor [[Cryptocurrency]] flows at scale, bridging the technical world of [[Blockchain Analytics]] with the compliance demands of [[Financial Crime Compliance]] frameworks.
 
 - ### Overview
   - Elliptic was among the first dedicated cryptocurrency compliance companies, emerging from the recognition that the pseudonymous nature of [[Bitcoin]] and other cryptocurrencies created both risk and investigative opportunity.
@@ -210,7 +210,7 @@ public:: true
     - **Cross-Chain Coverage** — the platform extends beyond Bitcoin to cover [[Ethereum]], [[Stablecoins]] (USDT, USDC), [[DeFi]] protocols, and NFT markets, reflecting the breadth of modern [[Digital Asset]] activity.
   - #### Analytics Engine
     - **[[Heuristic Clustering]]** — the co-spend (common-input ownership) heuristic groups addresses that appear together as inputs in a transaction, inferring they share a private key holder. This is the foundational technique for de-anonymising [[Bitcoin]] UTXO graphs.
-    - **[[Graph Analysis]]** — transaction flows are modelled as directed graphs; Elliptic applies graph traversal and [[Network Analysis]] algorithms to follow funds across multiple hops, identifying indirect exposure to illicit sources.
+    - **[[Graph Analytics]]** — transaction flows are modelled as directed graphs; Elliptic applies graph traversal and [[Network Analysis]] algorithms to follow funds across multiple hops, identifying indirect exposure to illicit sources.
     - **Subgraph-level [[Machine Learning]]** — recent capabilities apply graph neural networks to classify subgraphs of transaction activity, improving detection of novel laundering typologies not captured by rule-based heuristics.
     - **[[Risk Scoring]]** — each wallet and transaction receives a composite risk score derived from direct and indirect exposure to flagged entities, weighted by proximity in the transaction graph.
   - #### Compliance Workflows
@@ -235,7 +235,7 @@ public:: true
 - ### Relationships
   - subClassOf:: [[Blockchain Analytics]]
   - requires:: [[On-Chain Data]]
-  - requires:: [[Graph Analysis]]
+  - requires:: [[Graph Analytics]]
   - requires:: [[Heuristic Clustering]]
   - enables:: [[Anti-Money Laundering]]
   - enables:: [[Transaction Monitoring]]

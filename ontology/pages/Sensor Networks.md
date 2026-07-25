@@ -62,6 +62,10 @@ public:: true
     {
       "@id": "urn:ngm:class:sensors",
       "label": "Sensors"
+    },
+    {
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
     }
   ],
   "relations": {

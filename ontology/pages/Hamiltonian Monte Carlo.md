@@ -80,8 +80,8 @@ public:: true
         "label": "Bayesian Optimisation"
       },
       {
-        "@id": "urn:ngm:class:posterior-inference",
-        "label": "Posterior Inference"
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       },
       {
         "@id": "urn:ngm:class:uncertainty-quantification",

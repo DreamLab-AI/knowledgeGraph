@@ -80,8 +80,8 @@ public:: true
         "label": "Camera"
       },
       {
-        "@id": "urn:ngm:class:optics",
-        "label": "Optics"
+        "@id": "urn:ngm:class:optical-systems",
+        "label": "Optical Systems"
       }
     ],
     "enables": [
@@ -218,7 +218,7 @@ public:: true
 
 - ### Key Components
   - **Optics and Illumination**
-    - [[Optics]] — lenses, telecentric optics for dimensional metrology, macro lenses for close-up inspection.
+    - [[Optical Systems]] — lenses, telecentric optics for dimensional metrology, macro lenses for close-up inspection.
     - [[Illumination]] — controlled lighting (structured light, backlighting, coaxial, ring, dome, strobe) is arguably the most critical variable; repeatable images require repeatable illumination.
     - Spectral selection — near-infrared, UV, or polarised light can reveal surface features invisible to the naked eye.
   - **Image Acquisition**
@@ -260,7 +260,7 @@ public:: true
   - requires:: [[Sensor]]
   - requires:: [[Camera]]
   - requires:: [[Illumination]]
-  - requires:: [[Optics]]
+  - requires:: [[Optical Systems]]
   - enables:: [[Object Detection]]
   - enables:: [[Defect Detection]]
   - enables:: [[Dimensional Measurement]]

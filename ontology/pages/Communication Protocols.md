@@ -176,7 +176,7 @@ public:: true
         "label": "MQTT"
       },
       {
-        "@id": "urn:ngm:class:websocket",
+        "@id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       },
       {

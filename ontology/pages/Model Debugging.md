@@ -6,48 +6,116 @@ public:: true
 ```
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:model-debugging",
-  "@type":"Class",
-  "label":"Model Debugging",
-  "definition":"Model debugging is the systematic process of diagnosing, isolating and correcting faults in the behaviour of a machine-learning model, such as poor accuracy, biased predictions, brittleness to distribution shift, or unexpected outputs on specific inputs. Unlike conventional software debugging, it must reason about statistical behaviour, training data, feature representations and learned parameters rather than deterministic control flow. Practitioners combine error analysis, interpretability tooling, slice-based evaluation and counterfactual probing to trace failures back to data, model architecture or the training procedure.",
-  "domain":"artificial-intelligence",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"}],
-  "relations":{
-    "partOf":[{"@id":"urn:ngm:class:machine-learning-operations","label":"Machine Learning Operations"}],
-    "requires":[
-      {"@id":"urn:ngm:class:error-analysis","label":"Error Analysis"},
-      {"@id":"urn:ngm:class:model-evaluation","label":"Model Evaluation"},
-      {"@id":"urn:ngm:class:model-monitoring","label":"Model Monitoring"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:model-debugging",
+  "@type": "Class",
+  "label": "Model Debugging",
+  "definition": "Model debugging is the systematic process of diagnosing, isolating and correcting faults in the behaviour of a machine-learning model, such as poor accuracy, biased predictions, brittleness to distribution shift, or unexpected outputs on specific inputs. Unlike conventional software debugging, it must reason about statistical behaviour, training data, feature representations and learned parameters rather than deterministic control flow. Practitioners combine error analysis, interpretability tooling, slice-based evaluation and counterfactual probing to trace failures back to data, model architecture or the training procedure.",
+  "domain": "artificial-intelligence",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:ngm:class:ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "relations": {
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:machine-learning-operations",
+        "label": "Machine Learning Operations"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:explainable-ai","label":"Explainable AI"},
-      {"@id":"urn:ngm:class:model-interpretability","label":"Model Interpretability"},
-      {"@id":"urn:ngm:class:root-cause-analysis","label":"Root Cause Analysis"},
-      {"@id":"urn:ngm:class:logging","label":"Logging"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:error-analysis",
+        "label": "Error Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      }
     ],
-    "enables":[
-      {"@id":"urn:ngm:class:model-validation","label":"Model Validation"},
-      {"@id":"urn:ngm:class:model-quality","label":"Model Quality"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:model-interpretability",
+        "label": "Model Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:root-cause-analysis",
+        "label": "Root Cause Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:logging",
+        "label": "Logging"
+      }
     ],
-    "dependsOn":[
-      {"@id":"urn:ngm:class:data-quality","label":"Data Quality"},
-      {"@id":"urn:ngm:class:data-drift","label":"Data Drift"}
+    "enables": [
+      {
+        "@id": "urn:ngm:class:model-validation",
+        "label": "Model Validation"
+      },
+      {
+        "@id": "urn:ngm:class:model-quality",
+        "label": "Model Quality"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:machine-learning-model","label":"Machine Learning Model"},
-      {"@id":"urn:ngm:class:mlops","label":"MLOps"}
+    "dependsOn": [
+      {
+        "@id": "urn:ngm:class:data-quality",
+        "label": "Data Quality"
+      },
+      {
+        "@id": "urn:ngm:class:data-drift",
+        "label": "Data Drift"
+      }
     ],
-    "contrastsWith":[{"@id":"urn:ngm:class:debugging","label":"Software Debugging"}],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:observability","label":"Observability"},
-      {"@id":"urn:ngm:class:testing","label":"Testing"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:machine-learning-model",
+        "label": "Machine Learning Model"
+      },
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      }
+    ],
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:debugging",
+        "label": "Software Debugging"
+      }
+    ],
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      },
+      {
+        "@id": "urn:ngm:class:testing",
+        "label": "Testing"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 - ### Definition

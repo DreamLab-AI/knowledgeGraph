@@ -40,8 +40,8 @@ public:: true
         "label": "Environmental Sustainability"
       },
       {
-        "@id": "urn:ngm:class:multilateral-cooperation",
-        "label": "Multilateral Cooperation"
+        "@id": "urn:ngm:class:international-cooperation",
+        "label": "International Cooperation"
       }
     ],
     "enables": [

@@ -42,8 +42,8 @@
         "label": "Large Language Model"
       },
       {
-        "@id": "urn:ngm:class:neural-text-to-speech",
-        "label": "Neural Text-to-Speech"
+        "@id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
       },
       {
         "@id": "urn:ngm:class:video-generation",
@@ -174,7 +174,7 @@
   - **Generation Modalities**
     - [[Image Generation]] — text-to-image and image-to-image synthesis (e.g., Stable Diffusion, Midjourney, DALL-E).
     - [[Video Generation]] — temporal extension of image synthesis to produce coherent motion sequences (e.g., Sora, Runway, Kling).
-    - [[Voice Cloning]] and [[Neural Text-to-Speech]] — reconstruct a speaker's vocal identity from seconds of audio.
+    - [[Voice Cloning]] and [[Text-to-Speech]] — reconstruct a speaker's vocal identity from seconds of audio.
     - [[AI-Generated Text]] — large language model outputs including articles, scripts, and conversational agents.
     - [[Avatar Synthesis]] — full-body or head-only digital humans driven by motion capture or pose estimation.
   - **Core Generation Architectures**
@@ -199,7 +199,7 @@
     - Advertising: hyper-personalised video ad variants generated at scale.
     - Gaming: procedurally generated NPC dialogue and facial animation via [[Avatar Synthesis]].
     - Education: AI-narrated multilingual versions of educational content.
-    - Accessibility: real-time sign-language avatar overlays; on-screen [[Neural Text-to-Speech]] narration.
+    - Accessibility: real-time sign-language avatar overlays; on-screen [[Text-to-Speech]] narration.
   - **Journalism and Media**
     - Automated video reporting from structured data (sports highlights, financial summaries).
     - Localisation of news anchors via [[Voice Cloning]] for regional language variants.
@@ -216,7 +216,7 @@
   - uses:: [[Diffusion Model]]
   - uses:: [[Generative Adversarial Network]]
   - uses:: [[Large Language Model]]
-  - uses:: [[Neural Text-to-Speech]]
+  - uses:: [[Text-to-Speech]]
   - uses:: [[Video Generation]]
   - uses:: [[Image Generation]]
   - enables:: [[Deepfakes]]

@@ -61,12 +61,6 @@ public:: true
         "label": "Enterprise Integration"
       }
     ],
-    "uses": [
-      {
-        "@id": "urn:ngm:class:specification",
-        "label": "Specification"
-      }
-    ],
     "relatedTo": [
       {
         "@id": "urn:ngm:class:strategic-planning",
@@ -128,7 +122,6 @@ public:: true
   - standardizedBy:: [[Standards Documentation]]
   - supports:: [[Strategic Planning]]
   - enables:: [[Enterprise Integration]]
-  - uses:: [[Specification]]
   - relatedTo:: [[Strategic Planning]]
   - relatedTo:: [[Regulatory Conformance]]
   - contrastsWith:: [[Governance Framework]]

@@ -14,7 +14,7 @@ public:: true
   "definition":"The actor model is a mathematical model of concurrent computation in which the universal primitive is the actor, an independent entity that has private state and communicates only by sending asynchronous messages. In response to a message an actor can update its state, send messages to other actors and create new actors. Because actors share nothing and process one message at a time, the model avoids shared-memory data races and provides a foundation for scalable, fault-tolerant distributed systems.",
   "domain":"infrastructure",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:concurrency","label":"Concurrency"}],
+  "subClassOf":[{"@id":"urn:ngm:class:concurrency","label":"Concurrency"},{"@id":"urn:ngm:class:distributed-computing","label":"Distributed Computing"}],
   "relations":{
     "implements":[
       {"@id":"urn:ngm:class:message-passing","label":"Message Passing"},
@@ -69,6 +69,7 @@ public:: true
 	- Workload distribution combined with [[Load Balancing]] across actor clusters.
 - ### Relationships
 	- subClassOf:: [[Concurrency]]
+	- subClassOf:: [[Distributed Computing]]
 	- implements:: [[Message Passing]]
 	- implements:: [[Asynchronous Messaging]]
 	- enables:: [[Concurrency Model]]

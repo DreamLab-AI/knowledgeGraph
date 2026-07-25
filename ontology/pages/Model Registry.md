@@ -58,10 +58,16 @@ public:: true
   "domain": "machine-learning",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:mlops",
-    "label": "MLOps"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:mlops",
+      "label": "MLOps"
+    },
+    {
+      "@id": "urn:ngm:class:machine-learning-operations",
+      "label": "Machine Learning Operations"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

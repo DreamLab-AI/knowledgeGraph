@@ -130,8 +130,8 @@ public:: true
         "label": "Real-Time Analytics"
       },
       {
-        "@id": "urn:ngm:class:intrusion-detection",
-        "label": "Intrusion Detection"
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
       }
     ],
     "dependsOn": [

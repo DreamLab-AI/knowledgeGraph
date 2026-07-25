@@ -52,8 +52,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:voting",
-        "label": "Voting"
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
       },
       {
         "@id": "urn:ngm:class:governance-token",
@@ -94,8 +94,8 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:voting",
-        "label": "Voting"
+        "@id": "urn:ngm:class:voting-mechanism",
+        "label": "Voting Mechanism"
       },
       {
         "@id": "urn:ngm:class:governance-framework",

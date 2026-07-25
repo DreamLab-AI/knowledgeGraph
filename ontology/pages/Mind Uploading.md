@@ -23,10 +23,22 @@ public:: true
   "definition": "Mind uploading is the hypothetical process of scanning a biological brain in sufficient detail to emulate its structure and function on a computational substrate, producing a digital instantiation of an individual's mind. It is a speculative concept central to transhumanist visions of substrate-independent consciousness and digital immortality. No current technology approaches the required resolution or theoretical understanding of consciousness.",
   "domain": "ai",
   "maturity": "experimental",
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:singularity", "label": "Singularity"}
+      {
+        "@id": "urn:ngm:class:singularity",
+        "label": "Singularity"
+      }
     ]
   },
   "quality": 0.72

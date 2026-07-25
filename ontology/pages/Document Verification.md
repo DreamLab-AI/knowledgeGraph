@@ -24,10 +24,6 @@ public:: true
       {
         "@id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
-      },
-      {
-        "@id": "urn:ngm:class:onboarding",
-        "label": "Onboarding"
       }
     ],
     "requires": [
@@ -52,12 +48,7 @@ public:: true
         "label": "Compliance"
       }
     ],
-    "enables": [
-      {
-        "@id": "urn:ngm:class:onboarding",
-        "label": "Onboarding"
-      }
-    ],
+    "enables": [],
     "uses": [
       {
         "@id": "urn:ngm:class:machine-learning",

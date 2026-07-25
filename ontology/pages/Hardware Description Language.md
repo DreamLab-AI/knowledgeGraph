@@ -7,48 +7,100 @@ public:: true
 
 ```json-ld
 {
-  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id":"urn:ngm:class:hardware-description-language",
-  "@type":"Class",
-  "label":"Hardware Description Language",
-  "definition":"A hardware description language (HDL) is a specialised programming language used to describe the structure, behaviour and timing of digital electronic circuits at varying levels of abstraction. HDLs allow engineers to specify logic at the register-transfer level, which synthesis tools then translate into gate-level netlists for fabrication or for configuring reconfigurable devices such as FPGAs. The two dominant HDLs are Verilog and VHDL, complemented by higher-level and verification-oriented variants. By capturing concurrency and precise timing semantics, HDLs make digital designs simulatable, verifiable and reproducible before any silicon is committed.",
-  "domain":"infrastructure",
-  "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}],
-  "relations":{
-    "enables":[
-      {"@id":"urn:ngm:class:fpga","label":"FPGA"},
-      {"@id":"urn:ngm:class:asic","label":"ASIC"},
-      {"@id":"urn:ngm:class:system-on-chip","label":"System-on-Chip"}
+  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id": "urn:ngm:class:hardware-description-language",
+  "@type": "Class",
+  "label": "Hardware Description Language",
+  "definition": "A hardware description language (HDL) is a specialised programming language used to describe the structure, behaviour and timing of digital electronic circuits at varying levels of abstraction. HDLs allow engineers to specify logic at the register-transfer level, which synthesis tools then translate into gate-level netlists for fabrication or for configuring reconfigurable devices such as FPGAs. The two dominant HDLs are Verilog and VHDL, complemented by higher-level and verification-oriented variants. By capturing concurrency and precise timing semantics, HDLs make digital designs simulatable, verifiable and reproducible before any silicon is committed.",
+  "domain": "infrastructure",
+  "maturity": "established",
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "relations": {
+    "enables": [
+      {
+        "@id": "urn:ngm:class:fpga",
+        "label": "FPGA"
+      },
+      {
+        "@id": "urn:ngm:class:asic",
+        "label": "ASIC"
+      },
+      {
+        "@id": "urn:ngm:class:system-on-chip",
+        "label": "System-on-Chip"
+      }
     ],
-    "supports":[
-      {"@id":"urn:ngm:class:hardware-accelerator","label":"Hardware Accelerator"},
-      {"@id":"urn:ngm:class:embedded-systems","label":"Embedded Systems"}
+    "supports": [
+      {
+        "@id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      },
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
-    "uses":[
-      {"@id":"urn:ngm:class:digital-logic","label":"Digital Logic"}
+    "uses": [
+      {
+        "@id": "urn:ngm:class:digital-logic",
+        "label": "Digital Logic"
+      }
     ],
-    "requires":[
-      {"@id":"urn:ngm:class:embedded-systems","label":"Embedded Systems"}
+    "requires": [
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ],
-    "partOf":[
-      {"@id":"urn:ngm:class:infrastructure","label":"Infrastructure"}
+    "partOf": [
+      {
+        "@id": "urn:ngm:class:infrastructure",
+        "label": "Infrastructure"
+      }
     ],
-    "relatedTo":[
-      {"@id":"urn:ngm:class:gpu","label":"GPU"},
-      {"@id":"urn:ngm:class:inference-hardware","label":"Inference Hardware"},
-      {"@id":"urn:ngm:class:hardware-accelerator","label":"Hardware Accelerator"}
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:inference-hardware",
+        "label": "Inference Hardware"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      }
     ],
-    "contrastsWith":[
-      {"@id":"urn:ngm:class:gpu","label":"GPU"}
+    "contrastsWith": [
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
     ],
-    "bridgesTo":[
-      {"@id":"urn:ngm:class:embedded-systems","label":"Embedded Systems"}
+    "bridgesTo": [
+      {
+        "@id": "urn:ngm:class:embedded-systems",
+        "label": "Embedded Systems"
+      }
     ]
   },
-  "sameAs":[],
-  "quality":0.62,
-  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+  "sameAs": [],
+  "quality": 0.62,
+  "provenance": {
+    "attributedTo": "did:nostr:ontology-mesh",
+    "generatedAt": "2026-06-15T00:00:00Z",
+    "inferenceRule": "GapMaterialisation"
+  }
 }
 ```
 

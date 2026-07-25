@@ -34,7 +34,7 @@ public:: true
       {"@id":"urn:ngm:class:cloud-storage","label":"Cloud Storage"}
     ],
     "enables":[
-      {"@id":"urn:ngm:class:backup","label":"Backup"}
+      {"@id":"urn:ngm:class:backup-and-recovery","label":"Backup and Recovery"}
     ],
     "dependsOn":[
       {"@id":"urn:ngm:class:data-storage-layer","label":"Data Storage Layer"}

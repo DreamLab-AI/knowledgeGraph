@@ -15,7 +15,7 @@ public:: true
   "definition":"Sequence-to-sequence learning is a neural modelling framework that maps an input sequence to an output sequence of possibly different length, using an encoder to compress the input into a context representation and a decoder to generate the output token by token. Originally built on recurrent networks, it now predominantly uses the attention-based transformer architecture. It is the dominant paradigm for machine translation, summarisation and other transduction tasks.",
   "domain":"machine-learning",
   "maturity":"established",
-  "subClassOf":[{"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"}],
+  "subClassOf":[{"@id":"urn:ngm:class:supervised-learning","label":"Supervised Learning"},{"@id":"urn:ngm:class:ai-technique","label":"AI Technique"}],
   "relations":{
     "enables":[
       {"@id":"urn:ngm:class:machine-translation","label":"Machine Translation"},

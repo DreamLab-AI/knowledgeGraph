@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:human-interface-device",
+      "label": "Human Interface Device"
     }
   ],
   "relations": {

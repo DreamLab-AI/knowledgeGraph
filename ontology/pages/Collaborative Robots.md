@@ -66,6 +66,10 @@ public:: true
     {
       "@id": "urn:ngm:class:industrial-robotics",
       "label": "Industrial Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:industrial-robot",
+      "label": "Industrial Robot"
     }
   ],
   "relations": {

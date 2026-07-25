@@ -102,7 +102,7 @@ public:: true
       {"@id": "urn:ngm:class:edge-computing", "label": "Edge Computing"},
       {"@id": "urn:ngm:class:on-device-ai", "label": "On-Device AI"},
       {"@id": "urn:ngm:class:low-latency-ai", "label": "Low-Latency AI"},
-      {"@id": "urn:ngm:class:autonomous-agents", "label": "Autonomous Agents"}
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:model-weights", "label": "Model Weights"},
