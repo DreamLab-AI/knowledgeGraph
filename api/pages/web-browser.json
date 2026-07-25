@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:web-browser",
+  "title": "Web Browser",
+  "slug": "web-browser",
+  "public": true,
+  "classIri": "urn:ngm:class:web-browser",
+  "domain": "infrastructure",
+  "definition": "A web browser is a client software application that requests, renders, and executes web content - HTML, CSS, and JavaScript - retrieved over HTTP, providing the runtime environment in which web applications and interactive tools operate. It exposes APIs for graphics rendering, networking, and local storage that higher-level tools such as browser automation frameworks and notebook interfaces depend on. Modern browsers also serve as a general-purpose application host, running everything from productivity software to real-time collaborative tools.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:web-application",
+      "label": "Web Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "web-assembly",
+      "label": "WebAssembly"
+    }
+  ]
+}

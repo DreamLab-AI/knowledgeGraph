@@ -1,4 +1,0 @@
-- ### Definition
-  - Room state tracking maintains a synchronised record of a virtual room's membership and media state, a component required by [[Breakout Room]] functionality.
-- ### Content
-  - The system reconciles join and leave events, role changes, and stream toggles into a single authoritative state propagated to all clients. For breakout rooms it tracks participant assignments and transitions, keeping the main and sub-room views consistent.

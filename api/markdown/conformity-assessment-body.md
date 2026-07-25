@@ -1,4 +1,0 @@
-- ### Definition
-  - A conformity assessment body is an accredited organisation that tests, inspects, and certifies conformance to standards such as a [[Robot Standard]], forming part of a wider [[Trust Framework]].
-- ### Content
-  - In the EU regime such bodies are often "notified bodies" designated to assess high-risk products against directives and regulations. Their attestations underpin CE-marking and analogous market-access schemes, and their own competence is verified through accreditation against ISO/IEC 17000-series standards.

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:real-time-collaboration",
       "label": "Real-Time Collaboration"
+    },
+    {
+      "id": "urn:ngm:class:version-history",
+      "label": "Version History"
     }
   ],
   "entityType": "Class",
@@ -56,7 +60,7 @@
         "label": "CRDT"
       },
       {
-        "id": "urn:ngm:class:websocket",
+        "id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       }
     ],

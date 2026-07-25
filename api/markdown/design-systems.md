@@ -1,4 +1,0 @@
-- ### Definition
-  - A design system packages reusable components, tokens, and documentation into one governed source of truth for an interface. It is required by mature [[Product Design]] practice and a structuring part of how product teams ship consistent UI.
-- ### Content
-  - Design systems express decisions as design tokens (colour, spacing, type) and ship them as a versioned component library consumed by application code. Benefits include consistency, accessibility, and velocity; the chief cost is the governance and maintenance burden of keeping the system aligned with evolving product needs.

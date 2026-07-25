@@ -1,4 +1,0 @@
-- ### Definition
-  - Legal evidence is admissible information used to prove facts in legal proceedings; it is produced by [[Evidence Collection]] processes and given probative force by [[Non-Repudiation]] guarantees over digital records.
-- ### Content
-  - For digital artefacts, admissibility hinges on a documented chain of custody, tamper-evident storage, and cryptographic signing or hashing that ties records to a source and time. Failure to preserve integrity can render otherwise relevant material inadmissible.

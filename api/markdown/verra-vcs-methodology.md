@@ -1,4 +1,0 @@
-- ### Definition
-  - A Verra VCS methodology defines how a project type quantifies carbon outcomes under the Verified Carbon Standard, providing the basis for [[Carbon Credit Tracking]] within [[Green Blockchain Initiatives]].
-- ### Content
-  - Methodologies set the baseline scenario, additionality criteria and monitoring plan for project categories such as reforestation, cookstoves or renewable energy. They standardise quantification so credits are fungible and auditable, and are increasingly tokenised on-chain for transparent tracking.

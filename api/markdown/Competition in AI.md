@@ -362,10 +362,6 @@ public:: true
         "label": "Economic Competitiveness"
       },
       {
-        "@id": "urn:ngm:class:national-security-advantage",
-        "label": "National Security Advantage"
-      },
-      {
         "@id": "urn:ngm:class:technological-leadership",
         "label": "Technological Leadership"
       }

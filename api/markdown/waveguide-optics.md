@@ -1,4 +1,0 @@
-- ### Definition
-  - Waveguide optics guides projected imagery to the eye through a transparent substrate, the display technology inside an [[AR Frame]] and a key enabler of see-through [[Mixed Reality]] headsets.
-- ### Content
-  - Diffractive waveguides use surface-relief or volume holographic gratings for in-coupling, pupil expansion, and out-coupling, while reflective designs use angled mirror arrays. Engineering challenges include chromatic dispersion and rainbow artefacts, limited field of view, and optical efficiency, all balanced against the goal of socially acceptable, glasses-like form factors.

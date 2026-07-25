@@ -93,9 +93,9 @@ public:: true
       {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
       {"@id": "urn:ngm:class:speech-act-theory", "label": "Speech Act Theory"},
       {"@id": "urn:ngm:class:json-data-interchange-format-ld", "label": "JSON-LD"},
-      {"@id": "urn:ngm:class:websocket", "label": "WebSocket"},
+      {"@id": "urn:ngm:class:web-socket", "label": "WebSocket"},
       {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"},
-      {"@id": "urn:ngm:class:json-rpc-2-0", "label": "JSON-RPC 2.0"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0", "label": "JSON-RPC 2.0"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:ontology", "label": "Ontology"},

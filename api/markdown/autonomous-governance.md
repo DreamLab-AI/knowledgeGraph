@@ -1,4 +1,0 @@
-- ### Definition
-  - Autonomous governance enacts collective decisions through code rather than central authority, enabling [[Decentralised Coordination]] and powering autonomous [[Blockchain Entity]] structures such as DAOs.
-- ### Content
-  - Governance logic is encoded in smart contracts that tally votes, enforce quorums, and execute approved proposals automatically. This removes reliance on trusted intermediaries but inherits the rigidity of code, making proposal design, voter participation, and upgrade safety critical concerns.

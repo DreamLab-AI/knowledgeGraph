@@ -1,4 +1,0 @@
-- ### Definition
-  - A navigation mesh partitions walkable terrain into connected convex polygons for efficient movement. It is required by an [[AI Game Agent]] for pathfinding and is a core component of [[AI in Games]].
-- ### Content
-  - Pathfinding over a navmesh typically runs A* across polygon centroids or edges, then smooths the resulting corridor with funnel algorithms. Compared with grid search, navmeshes scale better in large open levels and represent slopes, ledges, and dynamic obstacles more naturally, though they require a baking step to regenerate when geometry changes.

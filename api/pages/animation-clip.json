@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:animation-clip",
+  "title": "Animation Clip",
+  "slug": "animation-clip",
+  "public": true,
+  "classIri": "urn:ngm:class:animation-clip",
+  "domain": "spatial-computing",
+  "definition": "An animation clip is a discrete, reusable unit of animation data, typically a time-ordered sequence of keyframes or pose samples for a skeleton or property set, such as a walk cycle or a wave gesture. Animation controllers and state machines reference clips as the atomic assets they blend, sequence and transition between at runtime. Clips are commonly authored once and retargeted across multiple character rigs that share a compatible skeleton.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:animation",
+      "label": "Animation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -62,10 +62,16 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:graphics-processing",
-    "label": "Graphics Processing"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:graphics-processing",
+      "label": "Graphics Processing"
+    },
+    {
+      "@id": "urn:ngm:class:computing-infrastructure",
+      "label": "Computing Infrastructure"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:private-inference",
+  "title": "Private Inference",
+  "slug": "private-inference",
+  "public": true,
+  "classIri": "urn:ngm:class:private-inference",
+  "domain": "security",
+  "definition": "Private inference is the execution of a machine learning model's forward pass such that neither the input data nor the model's internal state is revealed to the party running the computation, preserving confidentiality of both user data and, where required, model weights. It is commonly implemented using confidential computing hardware such as trusted execution environments, which isolate computation from the host operating system. It enables sensitive applications, such as processing medical or financial data, to use cloud-hosted models without exposing raw inputs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:confidential-computing",
+      "label": "Confidential Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:trusted-execution-environment",
+        "label": "Trusted Execution Environment"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

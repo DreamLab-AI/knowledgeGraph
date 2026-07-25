@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:green-hydrogen",
+  "title": "Green Hydrogen",
+  "slug": "green-hydrogen",
+  "public": true,
+  "classIri": "urn:ngm:class:green-hydrogen",
+  "domain": "infrastructure",
+  "definition": "Green hydrogen is hydrogen gas produced by electrolysing water using electricity drawn entirely from renewable sources such as wind or solar, in contrast to grey hydrogen produced from fossil natural gas via steam methane reforming. It is used as a zero-carbon fuel and chemical feedstock for sectors that are difficult to electrify directly, including heavy industry, long-haul transport, and seasonal energy storage. Green hydrogen production scales with, and helps absorb curtailed output from, renewable energy generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:renewable-energy",
+      "label": "Renewable Energy"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:renewable-energy",
+        "label": "Renewable Energy"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "energy-and-power",
+      "label": "Energy and Power"
+    }
+  ]
+}

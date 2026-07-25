@@ -40,8 +40,8 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:evidence-management",
-        "label": "Evidence Management"
+        "@id": "urn:ngm:class:evidence-collection",
+        "label": "Evidence Collection"
       },
       {
         "@id": "urn:ngm:class:compliance-framework",

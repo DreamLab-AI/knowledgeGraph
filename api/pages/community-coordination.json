@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:community-coordination",
+  "title": "Community Coordination",
+  "slug": "community-coordination",
+  "public": true,
+  "classIri": "urn:ngm:class:community-coordination",
+  "domain": "governance",
+  "definition": "Community coordination is the process by which a distributed group of participants aligns on shared goals, decisions, and resource allocation without centralised command, typically using deliberation, voting, or reputation mechanisms. It underpins governance of open-source projects, decentralised autonomous organisations, and platform communities, where outcomes must reflect dispersed stakeholder input. Effective community coordination balances inclusivity of participation against the decision latency inherent in consensus-seeking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collective-action",
+      "label": "Collective Action"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:collective-action",
+        "label": "Collective Action"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "climate-action-dao",
+      "label": "Climate Action DAO"
+    }
+  ]
+}

@@ -44,8 +44,8 @@
         "label": "GPU Compute"
       },
       {
-        "id": "urn:ngm:class:large-scale-training-data",
-        "label": "Large-Scale Training Data"
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "enables": [

@@ -1,4 +1,0 @@
-- ### Definition
-  - The Seoul Declaration is the 2024 AI Seoul Summit commitment to safe, innovative, and inclusive AI, addressing frontier-model risk. It helps standardise responses to [[AI Risks]] and informs [[Asia-Pacific Regulation]].
-- ### Content
-  - Building on the UK's Bletchley Declaration, it added the Seoul Frontier AI Safety Commitments under which leading developers agreed to publish safety frameworks and define risk thresholds. As a non-binding multilateral statement, its influence flows through subsequent national policy and voluntary corporate adoption.

@@ -130,7 +130,7 @@ alias:: Multi-User Systems, multi-user systems
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:websocket",
+        "@id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       },
       {

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:passthrough-ar",
+  "title": "Passthrough AR",
+  "slug": "passthrough-ar",
+  "public": true,
+  "classIri": "urn:ngm:class:passthrough-ar",
+  "domain": "spatial-computing",
+  "definition": "Passthrough AR is a form of augmented reality in which a headset captures the physical environment through external cameras and re-renders that video feed on internal displays, composited with virtual content, rather than allowing direct optical see-through of the real world. It allows headsets originally built for virtual reality to support mixed and augmented reality experiences using the same opaque display hardware, at the cost of added latency and reduced fidelity compared with optical see-through approaches. Passthrough AR is supported by runtime standards such as OpenXR, which expose camera passthrough as a standard feature that applications can request.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:augmented-reality",
+      "label": "Augmented Reality"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:display-hardware",
+        "label": "Display Hardware"
+      },
+      {
+        "id": "urn:ngm:class:open-xr",
+        "label": "OpenXR"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "open-xr",
+      "label": "OpenXR"
+    }
+  ]
+}

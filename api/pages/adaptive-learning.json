@@ -67,10 +67,6 @@
       {
         "id": "urn:ngm:class:computerised-adaptive-testing",
         "label": "Computerised Adaptive Testing"
-      },
-      {
-        "id": "urn:ngm:class:differentiated-instruction",
-        "label": "Differentiated Instruction"
       }
     ],
     "dependsOn": [
@@ -147,10 +143,6 @@
       }
     ],
     "supports": [
-      {
-        "id": "urn:ngm:class:differentiated-instruction",
-        "label": "Differentiated Instruction"
-      },
       {
         "id": "urn:ngm:class:mastery-learning",
         "label": "Mastery Learning"

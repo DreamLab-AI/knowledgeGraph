@@ -58,6 +58,10 @@ public:: true
     {
       "@id": "urn:ngm:class:model-serving",
       "label": "Model Serving"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)"
     }
   ],
   "relations": {

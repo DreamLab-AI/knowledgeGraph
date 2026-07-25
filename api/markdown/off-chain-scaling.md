@@ -1,4 +1,0 @@
-- ### Definition
-  - Off-chain scaling moves execution off the base chain while anchoring security on it. It generalises constructs such as the [[Payment Channel]] and the [[State Channel]].
-- ### Content
-  - Parties transact by exchanging signed state updates off-chain and only settle on-chain to open, close, or dispute a channel, so the base layer arbitrates rather than processes every interaction. The approach trades constant-latency, low-cost interaction for capital lock-up in channels and the requirement that participants stay online or delegate watchtowers to contest fraud.

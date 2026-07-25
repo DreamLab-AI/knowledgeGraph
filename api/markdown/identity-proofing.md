@@ -1,4 +1,0 @@
-- ### Definition
-  - Identity proofing validates evidence to bind a claimed identity to a real person at onboarding, forming part of [[Identity Verification]] and a building block of any [[Trust Framework]].
-- ### Content
-  - Proofing workflows resolve, validate, and verify identity evidence, escalating from self-asserted to remote biometric and in-person checks as the required assurance level rises. Stronger proofing reduces downstream fraud and synthetic-identity risk but must be balanced against onboarding friction and inclusion concerns.

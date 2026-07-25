@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:reinforcement-learning",
       "label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:ngm:class:reinforcement-learning-for-robotics",
+      "label": "Reinforcement Learning for Robotics"
     }
   ],
   "relations": {

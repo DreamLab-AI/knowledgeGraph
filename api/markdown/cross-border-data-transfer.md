@@ -1,4 +1,0 @@
-- ### Definition
-  - Cross-border data transfer is the transmission of regulated data between jurisdictions under legal constraints on where data may flow and be processed. It is a focus of [[Asia-Pacific Regulation]] and comparable privacy regimes worldwide.
-- ### Content
-  - Lawful transfer typically rests on adequacy findings, contractual safeguards, or explicit consent, with some regimes adding data-localisation mandates. Diverging regional rules force multinationals to map data flows precisely and adopt layered safeguards, since a single non-compliant transfer can trigger significant regulatory penalties.

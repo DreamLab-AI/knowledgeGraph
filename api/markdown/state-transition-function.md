@@ -1,4 +1,0 @@
-- ### Definition
-  - A state transition function is the deterministic [[Blockchain Protocol and Consensus]] rule mapping a current ledger state plus a validated block of transactions to the next state, specifying precisely how balances and contract storage evolve.
-- ### Content
-  - Because every honest node applies the identical function to identical inputs, all replicas converge on the same state, making it the formal core of a blockchain modelled as a replicated state machine. It governs how a [[Distributed Ledger]] advances block by block, and its exact definition within a [[Blockchain Protocol]] determines the semantics of transaction execution and the conditions under which a block is considered valid.

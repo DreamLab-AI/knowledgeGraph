@@ -101,7 +101,7 @@ alias:: Constraint-Based Design
       {"@id": "urn:ngm:class:product-design", "label": "Product Design"},
       {"@id": "urn:ngm:class:topology-optimization", "label": "Topology Optimization"},
       {"@id": "urn:ngm:class:motion-planning", "label": "Motion Planning"},
-      {"@id": "urn:ngm:class:co-design", "label": "Co-Design"}
+      {"@id": "urn:ngm:class:participatory-design", "label": "Participatory Design"}
     ],
     "implements": [
       {"@id": "urn:ngm:class:symbolic-ai", "label": "Symbolic AI"},

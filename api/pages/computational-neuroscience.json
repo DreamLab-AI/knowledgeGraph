@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:cognitive-science",
       "label": "Cognitive Science"
+    },
+    {
+      "id": "urn:ngm:class:cognitive-ai",
+      "label": "Cognitive AI"
     }
   ],
   "entityType": "Class",

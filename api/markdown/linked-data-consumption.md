@@ -1,4 +1,0 @@
-- ### Definition
-  - Linked data consumption dereferences and integrates distributed RDF resources; it is enabled by the [[Federation Surface]] that exposes queryable endpoints and complements the [[Linked Data Encoder]] that produces the data.
-- ### Content
-  - Consumers must handle vocabulary heterogeneity through ontology mapping, manage provenance and trust across sources, and tolerate partial availability of remote graphs. Caching, follow-your-nose dereferencing, and SPARQL federation are the main strategies for assembling integrated answers.

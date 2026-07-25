@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:browser-engine",
+  "title": "Browser Engine",
+  "slug": "browser-engine",
+  "public": true,
+  "classIri": "urn:ngm:class:browser-engine",
+  "domain": "standards",
+  "definition": "A browser engine is the software component that parses and renders web content, implementing the HTML, CSS and JavaScript execution semantics defined by web standards to turn markup and script into an interactive display. Examples include Blink, Gecko and WebKit, each of which independently implements the same standards with varying levels of conformance and performance. Browser engines form the runtime substrate on which web applications, and automated agents that operate a browser, ultimately depend.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:runtime-environment",
+      "label": "Runtime Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.65,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:runtime-environment",
+        "label": "Runtime Environment"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - An MCP client is the host-side connector that opens a session to a server under the [[Model Context Protocol]], relaying tool and resource calls to and from the model. It pairs with an [[MCP Server]] in a one-to-one connection.
-- ### Content
-  - The client handles capability negotiation, request routing, and lifecycle management, isolating the host from server-specific transport details. A single host can instantiate multiple clients to compose many servers, giving a model unified access to diverse tools and data sources.

@@ -1,2 +1,0 @@
-- ### Definition
-  - The capability of a collaborative system to detect and communicate participants' visual attention direction, enabling joint attention and non-verbal coordination in distributed settings.

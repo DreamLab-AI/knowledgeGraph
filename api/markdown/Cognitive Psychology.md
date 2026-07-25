@@ -114,51 +114,142 @@ public:: true
     {
       "@id": "urn:ngm:class:psychology",
       "label": "Psychology"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:working-memory", "label": "Working Memory"},
-      {"@id": "urn:ngm:class:attention-mechanism", "label": "Attention Mechanism"},
-      {"@id": "urn:ngm:class:long-term-memory", "label": "Long-Term Memory"},
-      {"@id": "urn:ngm:class:perception", "label": "Perception"},
-      {"@id": "urn:ngm:class:executive-function", "label": "Executive Function"},
-      {"@id": "urn:ngm:class:language-processing", "label": "Language Processing"}
+      {
+        "@id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "@id": "urn:ngm:class:attention-mechanism",
+        "label": "Attention Mechanism"
+      },
+      {
+        "@id": "urn:ngm:class:long-term-memory",
+        "label": "Long-Term Memory"
+      },
+      {
+        "@id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "@id": "urn:ngm:class:executive-function",
+        "label": "Executive Function"
+      },
+      {
+        "@id": "urn:ngm:class:language-processing",
+        "label": "Language Processing"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human Computer Interaction"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:intelligent-tutoring-system", "label": "Intelligent Tutoring Systems"},
-      {"@id": "urn:ngm:class:behavioural-economics", "label": "Behavioural Economics"},
-      {"@id": "urn:ngm:class:user-experience-design", "label": "User Experience Design"}
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-tutoring-system",
+        "label": "Intelligent Tutoring Systems"
+      },
+      {
+        "@id": "urn:ngm:class:behavioural-economics",
+        "label": "Behavioural Economics"
+      },
+      {
+        "@id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:neuroscience", "label": "Neuroscience"},
-      {"@id": "urn:ngm:class:experimental-methods", "label": "Experimental Methods"},
-      {"@id": "urn:ngm:class:computational-modelling", "label": "Computational Modelling"}
+      {
+        "@id": "urn:ngm:class:neuroscience",
+        "label": "Neuroscience"
+      },
+      {
+        "@id": "urn:ngm:class:experimental-methods",
+        "label": "Experimental Methods"
+      },
+      {
+        "@id": "urn:ngm:class:computational-modelling",
+        "label": "Computational Modelling"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neuroimaging", "label": "Neuroimaging"},
-      {"@id": "urn:ngm:class:psychophysics", "label": "Psychophysics"},
-      {"@id": "urn:ngm:class:reaction-time", "label": "Reaction Time Methods"}
+      {
+        "@id": "urn:ngm:class:neuroimaging",
+        "label": "Neuroimaging"
+      },
+      {
+        "@id": "urn:ngm:class:psychophysics",
+        "label": "Psychophysics"
+      },
+      {
+        "@id": "urn:ngm:class:reaction-time",
+        "label": "Reaction Time Methods"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:behaviourism", "label": "Behaviourism"},
-      {"@id": "urn:ngm:class:psychoanalysis", "label": "Psychoanalysis"},
-      {"@id": "urn:ngm:class:connectionism", "label": "Connectionism"}
+      {
+        "@id": "urn:ngm:class:behaviourism",
+        "label": "Behaviourism"
+      },
+      {
+        "@id": "urn:ngm:class:psychoanalysis",
+        "label": "Psychoanalysis"
+      },
+      {
+        "@id": "urn:ngm:class:connectionism",
+        "label": "Connectionism"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:philosophy-of-mind", "label": "Philosophy of Mind"},
-      {"@id": "urn:ngm:class:embodied-cognition", "label": "Embodied Cognition"},
-      {"@id": "urn:ngm:class:cognitive-architecture", "label": "Cognitive Architecture"},
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:decision-making", "label": "Decision Making"}
+      {
+        "@id": "urn:ngm:class:philosophy-of-mind",
+        "label": "Philosophy of Mind"
+      },
+      {
+        "@id": "urn:ngm:class:embodied-cognition",
+        "label": "Embodied Cognition"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-architecture",
+        "label": "Cognitive Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
     ]
   },
   "quality": 0.88,

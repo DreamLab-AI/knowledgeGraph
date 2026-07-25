@@ -101,8 +101,8 @@ public:: true
         "label": "Fiduciary Duty"
       },
       {
-        "@id": "urn:ngm:class:disclosure",
-        "label": "Disclosure"
+        "@id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
       }
     ],
     "enables": [

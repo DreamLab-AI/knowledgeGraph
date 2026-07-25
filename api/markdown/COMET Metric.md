@@ -23,43 +23,118 @@ public:: true
   "definition": "A family of learned, reference-based and reference-free evaluation metrics for machine translation that use pre-trained multilingual language model representations to predict human-quality assessments of translation output. COMET models correlate more strongly with human judgements than n-gram-overlap metrics such as BLEU by capturing semantic and contextual similarity rather than surface string matching.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:xlm-roberta", "label": "XLM-RoBERTa"},
-      {"@id": "urn:ngm:class:transfer-learning", "label": "Transfer Learning"}
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:xlm-roberta",
+        "label": "XLM-RoBERTa"
+      },
+      {
+        "@id": "urn:ngm:class:transfer-learning",
+        "label": "Transfer Learning"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:quality-estimation", "label": "Quality Estimation"},
-      {"@id": "urn:ngm:class:human-evaluation", "label": "Human Evaluation Correlation"},
-      {"@id": "urn:ngm:class:translation-quality-assurance", "label": "Translation Quality Assurance"}
+      {
+        "@id": "urn:ngm:class:quality-estimation",
+        "label": "Quality Estimation"
+      },
+      {
+        "@id": "urn:ngm:class:human-evaluation",
+        "label": "Human Evaluation Correlation"
+      },
+      {
+        "@id": "urn:ngm:class:translation-quality-assurance",
+        "label": "Translation Quality Assurance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:multilingual-language-model", "label": "Multilingual Language Model"},
-      {"@id": "urn:ngm:class:human-annotation", "label": "Human Annotation Data"}
+      {
+        "@id": "urn:ngm:class:multilingual-language-model",
+        "label": "Multilingual Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:human-annotation",
+        "label": "Human Annotation Data"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:direct-assessment", "label": "Direct Assessment"},
-      {"@id": "urn:ngm:class:multidimensional-quality-metrics", "label": "Multidimensional Quality Metrics"}
+      {
+        "@id": "urn:ngm:class:direct-assessment",
+        "label": "Direct Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:multidimensional-quality-metrics",
+        "label": "Multidimensional Quality Metrics"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:bleu-score", "label": "BLEU Score"},
-      {"@id": "urn:ngm:class:chrf", "label": "chrF"},
-      {"@id": "urn:ngm:class:ter", "label": "TER"},
-      {"@id": "urn:ngm:class:bleurt", "label": "BLEURT"}
+      {
+        "@id": "urn:ngm:class:bleu-score",
+        "label": "BLEU Score"
+      },
+      {
+        "@id": "urn:ngm:class:chrf",
+        "label": "chrF"
+      },
+      {
+        "@id": "urn:ngm:class:ter",
+        "label": "TER"
+      },
+      {
+        "@id": "urn:ngm:class:bleurt",
+        "label": "BLEURT"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:neural-machine-translation", "label": "Neural Machine Translation"},
-      {"@id": "urn:ngm:class:natural-language-understanding", "label": "Natural Language Understanding"},
-      {"@id": "urn:ngm:class:wmt-shared-task", "label": "WMT Shared Task"},
-      {"@id": "urn:ngm:class:xcomet", "label": "XCOMET"},
-      {"@id": "urn:ngm:class:post-editing", "label": "Post-Editing Workflow"}
+      {
+        "@id": "urn:ngm:class:neural-machine-translation",
+        "label": "Neural Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-understanding",
+        "label": "Natural Language Understanding"
+      },
+      {
+        "@id": "urn:ngm:class:wmt-shared-task",
+        "label": "WMT Shared Task"
+      },
+      {
+        "@id": "urn:ngm:class:xcomet",
+        "label": "XCOMET"
+      },
+      {
+        "@id": "urn:ngm:class:post-editing",
+        "label": "Post-Editing Workflow"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:regression-model", "label": "Regression Model"},
-      {"@id": "urn:ngm:class:ranking-model", "label": "Ranking Model"}
+      {
+        "@id": "urn:ngm:class:regression-model",
+        "label": "Regression Model"
+      },
+      {
+        "@id": "urn:ngm:class:ranking-model",
+        "label": "Ranking Model"
+      }
     ]
   },
   "quality": 0.8

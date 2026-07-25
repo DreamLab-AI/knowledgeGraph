@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:error-analysis",
+  "title": "Error Analysis",
+  "slug": "error-analysis",
+  "public": true,
+  "classIri": "urn:ngm:class:error-analysis",
+  "domain": "machine-learning",
+  "definition": "Error analysis is the systematic examination of a model's mistakes to identify patterns, root causes and subgroups where performance is weakest. It typically involves inspecting misclassified examples, confusion matrices and numerical error metrics to distinguish data issues from modelling issues. The findings guide targeted fixes such as additional training data, feature changes or architectural adjustments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-evaluation",
+      "label": "Model Evaluation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-debugging",
+        "label": "Model Debugging"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "confusion-matrix",
+      "label": "Confusion Matrix"
+    },
+    {
+      "slug": "mean-absolute-error",
+      "label": "Mean Absolute Error"
+    },
+    {
+      "slug": "root-mean-square-error",
+      "label": "Root Mean Square Error"
+    }
+  ]
+}

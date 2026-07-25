@@ -1,4 +1,0 @@
-- ### Definition
-  - A versioning system tracks successive states of an artefact and preserves provenance, forming part of a [[Digital Taxonomy Registry]] and a [[Digital Curation Platform]].
-- ### Content
-  - Versioning may be linear, branched or content-addressed, using semantic version numbers, timestamps or hashes as identifiers. It underpins reproducibility and audit by retaining historical states, recording authorship, and supporting diffing, merging and controlled deprecation.

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:mlops",
       "label": "MLOps"
+    },
+    {
+      "id": "urn:ngm:class:machine-learning-operations",
+      "label": "Machine Learning Operations"
     }
   ],
   "entityType": "Class",

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:co-creation",
+  "title": "Co-creation",
+  "slug": "co-creation",
+  "public": true,
+  "classIri": "urn:ngm:class:co-creation",
+  "domain": "distributed-collaboration",
+  "definition": "Co-creation is a collaborative process in which two or more parties, including end users, jointly generate a product, design or piece of content rather than one party producing it for passive consumption by the others. It emphasises shared authorship and iterative feedback across the creative process, and is a common pattern in participatory design, open-source development and collaborative virtual environments. Co-creation is enabled by tools that support simultaneous, shared editing and by design methodologies that structure participant input.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collaboration",
+      "label": "Collaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.65,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

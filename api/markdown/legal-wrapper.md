@@ -1,4 +1,0 @@
-- ### Definition
-  - A legal wrapper is an off-chain entity that grants a DAO legal personality and liability protection; it is a component supplied by [[DAO Tooling]] and a prerequisite for adopting [[Enterprise Token Standards]] in regulated contexts.
-- ### Content
-  - Without a wrapper, DAO members may face unlimited partnership liability and cannot easily contract with off-chain counterparties. Choices among foundation, LLC, and association forms trade off tax treatment, disclosure, and the degree to which token-holder governance is mirrored in legal control.

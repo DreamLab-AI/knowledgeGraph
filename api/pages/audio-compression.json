@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:audio-compression",
+  "title": "Audio Compression",
+  "slug": "audio-compression",
+  "public": true,
+  "classIri": "urn:ngm:class:audio-compression",
+  "domain": "data",
+  "definition": "Audio Compression is the process of reducing the storage size or bandwidth required for audio data, using lossy codecs that discard perceptually less-important information or lossless codecs that preserve the exact waveform. It underlies streaming, spatial audio delivery, and real-time voice communication, balancing fidelity against transmission constraints. Common lossy approaches use psychoacoustic models to remove sound outside human hearing thresholds.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-compression",
+      "label": "Data Compression"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    }
+  ]
+}

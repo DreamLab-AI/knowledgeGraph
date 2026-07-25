@@ -1,4 +1,0 @@
-- ### Definition
-  - Plan and execute is an agent control strategy that drafts a full plan before acting, used by [[Computer Use and Browser Agents]] and general [[Agents]] for long-horizon tasks.
-- ### Content
-  - The agent decomposes a goal into an ordered plan, then executes steps sequentially, monitoring outcomes and re-planning when an action fails or the environment changes. This explicit separation reduces myopic errors and wasted tool calls relative to reactive loops, at the cost of upfront planning latency and sensitivity to plan quality when the environment is highly dynamic.

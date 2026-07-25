@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:diffusion-model",
       "label": "Diffusion Model"
+    },
+    {
+      "id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
     }
   ],
   "entityType": "Class",

@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:skeletal-mesh",
+  "title": "Skeletal Mesh",
+  "slug": "skeletal-mesh",
+  "public": true,
+  "classIri": "urn:ngm:class:skeletal-mesh",
+  "domain": "spatial-computing",
+  "definition": "A skeletal mesh is a 3D character or object model bound to an underlying bone hierarchy, or skeleton, so that mesh vertices deform smoothly as the skeleton is posed or animated. It is the standard representation for animatable characters in avatar systems and real-time engines, and it underlies procedural animation techniques that manipulate bone transforms algorithmically at runtime. Building one requires prior UV unwrapping and rigging work on the base mesh.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:character-rigging",
+      "label": "Character Rigging"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

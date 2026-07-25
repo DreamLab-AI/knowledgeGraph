@@ -1,4 +1,0 @@
-- ### Definition
-  - Model collapse is the distributional degeneration that occurs when models train recursively on synthetic data, eroding rare modes and diversity. It is linked to the [[Death of the Internet]] thesis and is driven by a [[Feedback Loop]] of model-generated content.
-- ### Content
-  - Each generation of training on prior model outputs narrows the learned distribution, first dropping low-probability events then collapsing toward the mean, so accuracy and variety decay. Mitigations include preserving provenance, retaining a fraction of genuine human data, and watermarking or filtering synthetic content.

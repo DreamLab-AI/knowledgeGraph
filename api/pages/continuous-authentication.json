@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:continuous-authentication",
+  "title": "Continuous Authentication",
+  "slug": "continuous-authentication",
+  "public": true,
+  "classIri": "urn:ngm:class:continuous-authentication",
+  "domain": "security",
+  "definition": "Continuous authentication is an approach to identity verification that repeatedly re-validates a user's identity throughout a session, rather than relying solely on a single login event. It draws on signals such as behavioural biometrics, device posture, and network context to detect anomalies that might indicate session hijacking or credential theft. It is increasingly used alongside biometric authentication and identity providers to reduce the window of exposure after initial login.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

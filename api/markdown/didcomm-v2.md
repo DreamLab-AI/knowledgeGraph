@@ -1,4 +1,0 @@
-- ### Definition
-  - DIDComm v2 is an encrypted, transport-independent messaging protocol keyed on DIDs, supporting [[Decentralized Identifiers]] interactions. It is a foundational protocol that implements secure exchange for [[Self-Sovereign Identity]] wallets and agents.
-- ### Content
-  - Messages use JWM/JWE envelopes with anoncrypt or authcrypt modes and can route through mediators for offline delivery. DIDComm v2 supports protocol-defined message types for credential issuance, presentation, and trust establishment, enabling interoperable agent-to-agent communication across vendors.

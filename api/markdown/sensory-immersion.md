@@ -1,4 +1,0 @@
-- ### Definition
-  - Sensory immersion is the perceptual saturation that makes a synthetic environment dominate a user's awareness. It is a constituent part of [[Immersion]] and is enabled by a responsive [[Feedback Mechanism]].
-- ### Content
-  - It scales with display resolution, field of view, frame rate, spatial audio, and tactile cues. High sensory immersion lowers the user's awareness of the medium, but must be matched by low-latency feedback to avoid sensory conflict and to sustain the illusion of being present.

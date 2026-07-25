@@ -1,4 +1,0 @@
-- ### Definition
-  - A formal specification is a precise, mathematically grounded statement of what a system should do or how it is structured, expressed in a language with defined semantics. It is a building block of the [[Formal Methods Domain]] and a basis for constructing a rigorous [[Domain Ontology]].
-- ### Content
-  - Formal specifications are written in notations such as Z, VDM, TLA+, B, or description logics, enabling automated consistency checking and proof. They separate the statement of intent from implementation, allowing requirements to be validated before code exists. In ontology engineering, the OWL axioms themselves constitute a formal specification of a domain.

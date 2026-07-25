@@ -1,4 +1,0 @@
-- ### Definition
-  - A ROS REP defines conventions and standards for the Robot Operating System, standardising a [[Robotics Platform]] and behaviours such as [[Collision Detection]].
-- ### Content
-  - REPs fix shared decisions like REP-103 coordinate conventions and units, ensuring sensors, transforms, and planners agree on frames and semantics. By documenting these norms, the proposals keep the broad ROS ecosystem interoperable.

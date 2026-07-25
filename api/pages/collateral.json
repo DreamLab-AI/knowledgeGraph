@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:collateral",
+  "title": "Collateral",
+  "slug": "collateral",
+  "public": true,
+  "classIri": "urn:ngm:class:collateral",
+  "domain": "finance",
+  "definition": "Collateral is an asset pledged by a borrower to a lender as security for a loan or obligation, which the lender may seize or liquidate if the borrower defaults. In decentralised finance it typically takes the form of over-collateralised crypto assets locked in a smart contract, backing loans, synthetic assets, or stablecoin pegs. The collateral-to-debt ratio determines solvency and triggers liquidation when it falls below a protocol-defined threshold.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:finance",
+      "label": "Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    }
+  ]
+}

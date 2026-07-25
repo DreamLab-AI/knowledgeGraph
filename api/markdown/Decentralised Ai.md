@@ -26,6 +26,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)"
     }
   ],
   "relations": {

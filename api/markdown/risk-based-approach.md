@@ -1,4 +1,0 @@
-- ### Definition
-  - A risk-based approach proportions controls to assessed risk, applied in [[Cross-Border Compliance]] and required by [[AML KYC Compliance]] regimes.
-- ### Content
-  - Institutions classify customers and transactions into risk tiers and apply enhanced, standard, or simplified due diligence accordingly. This focuses investigative effort on the highest-risk activity while reducing friction for routine, low-risk business.

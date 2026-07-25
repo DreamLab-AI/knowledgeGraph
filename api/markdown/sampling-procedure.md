@@ -1,4 +1,0 @@
-- ### Definition
-  - A sampling procedure is the algorithm a [[Generative Adversarial Networks]] model or diffusion model uses to draw outputs from its distribution, and is a constituent step of generative tasks such as [[Inpainting]].
-- ### Content
-  - Sampling balances exploration against quality: stochastic schemes increase diversity while deterministic or low-temperature schemes increase coherence. In diffusion and score-based models, the procedure defines the reverse-time trajectory and the number of denoising steps, directly trading sample quality against inference latency.

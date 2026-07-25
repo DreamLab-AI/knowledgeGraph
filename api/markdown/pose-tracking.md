@@ -1,4 +1,0 @@
-- ### Definition
-  - Pose tracking continuously estimates 6-DoF position and orientation of devices and body parts. It is a constituent capability of the [[Spatial Computing Domain]] and a hard requirement for any [[AR Display Device]].
-- ### Content
-  - Inside-out tracking fuses visual feature tracking with high-rate inertial measurements to estimate pose with low latency and minimal drift. Techniques include visual-inertial odometry, SLAM, and learned keypoint detection. Tight calibration and prediction reduce motion-to-photon latency, which is critical for avoiding discomfort in head-mounted displays.

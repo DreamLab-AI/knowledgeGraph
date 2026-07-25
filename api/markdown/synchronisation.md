@@ -1,4 +1,0 @@
-- ### Definition
-  - Synchronisation coordinates independent processes, clocks, or replicas so they share consistent state or timing, a requirement for both coordinated actuation in a [[Delta Robot]] and consistency across [[Edge Computing]] nodes.
-- ### Content
-  - At the systems level, synchronisation uses primitives such as mutexes, semaphores, barriers, and consensus protocols to serialise access to shared state and order events. In real-time and robotic control it relies on tight clock alignment and deterministic communication so that actuators move in concert. Distributed deployments add the harder problem of agreeing on time and order across nodes that have no shared clock, addressed by protocols like NTP, PTP, and logical-clock schemes.

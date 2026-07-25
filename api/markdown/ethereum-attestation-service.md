@@ -1,4 +1,0 @@
-- ### Definition
-  - The Ethereum Attestation Service is open infrastructure for making verifiable, schema-based attestations on-chain, supporting [[Reputation System]] designs and [[Digital Identity]] credentials.
-- ### Content
-  - Attestations are signed claims linked to reusable schemas, enabling composability across applications. Because EAS is permissionless and issuer-neutral, it serves as a foundational trust primitive for reputation, credentialing, and proof-of-membership use cases.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Ecosystem Connectivity measures how readily platforms and participants interoperate and exchange value across an ecosystem. It is enabled by a [[Compatibility Process]] and is closely tied to [[Network Effects]].
-- ### Content
-  - Connectivity arises from shared protocols, open APIs, and bridging infrastructure that let independent systems integrate without bespoke effort. As more participants connect, the value to each grows superlinearly, reinforcing adoption while raising the importance of governance over standards and access.

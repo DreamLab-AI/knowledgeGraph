@@ -50,8 +50,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:acid-compliance",
-        "label": "ACID Compliance"
+        "id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
       },
       {
         "id": "urn:ngm:class:data-consistency",

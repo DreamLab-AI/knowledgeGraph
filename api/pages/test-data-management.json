@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:test-data-management",
+  "title": "Test Data Management",
+  "slug": "test-data-management",
+  "public": true,
+  "classIri": "urn:ngm:class:test-data-management",
+  "domain": "infrastructure",
+  "definition": "Test data management is the discipline of provisioning, maintaining and controlling the datasets used in software testing, including generating synthetic data, masking or anonymising production data, and versioning fixtures so that tests are repeatable and do not leak sensitive information. It is a prerequisite for reliable automated testing processes, since flaky or stale test data is a common source of non-deterministic test failures. Mature test data management practices integrate with the software testing pipeline to refresh or reset datasets between test runs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-testing",
+      "label": "Software Testing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "testing-process",
+      "label": "Testing Process"
+    }
+  ]
+}

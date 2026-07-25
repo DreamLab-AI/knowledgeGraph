@@ -1,4 +1,0 @@
-- ### Definition
-  - A Domain Model is an abstract, implementation-independent description of the entities, relationships, and rules of a problem domain. It anchors a system's [[Data Layer]] and underpins standardised references such as the [[ETSI Metaverse Domain Model]].
-- ### Content
-  - Domain models express the ubiquitous language of a domain, mapping concepts to classes, attributes, and associations with explicit constraints. They guide schema design and API contracts, and when published as standards they let independent systems exchange data with shared meaning.

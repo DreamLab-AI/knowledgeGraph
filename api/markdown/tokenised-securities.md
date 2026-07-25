@@ -1,4 +1,0 @@
-- ### Definition
-  - Regulated securities issued as blockchain tokens carrying the legal rights of their traditional form, with compliance encoded on-chain. Their issuance must satisfy [[Securities Regulation]] and is commonly implemented via [[Enterprise Smart Contracts]].
-- ### Content
-  - Standards such as ERC-1400 and ERC-3643 add permissioned transfer controls, identity gating, and forced-transfer capabilities required for regulated assets. Tokenisation promises faster settlement, lower issuance cost, and broader access, but is bounded by jurisdictional securities rules and custody requirements.

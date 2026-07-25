@@ -150,8 +150,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:cross-border-transactions",
-        "label": "Cross-Border Transactions"
+        "@id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
       },
       {
         "@id": "urn:ngm:class:price-stability",

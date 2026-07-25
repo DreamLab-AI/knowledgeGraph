@@ -1,4 +1,0 @@
-- ### Definition
-  - Player engagement quantifies how effectively a game retains player attention and motivation. It is a core target for [[AI Game Agent]] design and underpins reward structures in [[Play-to-Earn (P2E)]] economies.
-- ### Content
-  - Engagement is typically modelled through retention curves, daily active users, churn prediction, and progression pacing. AI agents and adaptive difficulty systems tune challenge and reward loops to keep players in a state of flow, while monetisation and tokenomics designs balance engagement against player burnout and economic sustainability.

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:computerised-adaptive-testing",
+  "title": "Computerised Adaptive Testing",
+  "slug": "computerised-adaptive-testing",
+  "public": true,
+  "classIri": "urn:ngm:class:computerised-adaptive-testing",
+  "domain": "machine-learning",
+  "definition": "Computerised adaptive testing (CAT) is an assessment method that selects each subsequent question based on a test-taker's performance on previous items, converging on an estimate of ability with fewer questions than a fixed-form test. It relies on item response theory to model the probability of a correct answer as a function of item difficulty and estimated learner ability, updating the estimate after every response. CAT is widely used in standardised testing and adaptive learning platforms because it shortens test duration while improving measurement precision at the extremes of the ability range. It is closely related to Bayesian knowledge tracing, which similarly updates a learner model from sequential evidence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:adaptive-learning",
+      "label": "Adaptive Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adaptive-learning",
+      "label": "Adaptive Learning"
+    },
+    {
+      "slug": "bayesian-knowledge-tracing",
+      "label": "Bayesian Knowledge Tracing"
+    }
+  ]
+}

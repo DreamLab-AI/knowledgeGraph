@@ -1,4 +1,0 @@
-- ### Definition
-  - Google Gemini is Google DeepMind's family of multimodal LLMs; it relates to [[GPTs and Custom Assistants]] as a competing assistant platform and is a building block used by the emerging [[Agentic Internet]].
-- ### Content
-  - Gemini models are trained from the ground up to process multiple modalities, enabling tasks that mix vision, audio, and language with long context windows. Tiered variants trade capability for latency and cost, from on-device Nano to high-capability Ultra/Pro, served through the Gemini API and Vertex AI. The models support tool use and function calling, making them a backbone for agentic applications and search integration.

@@ -1,2 +1,0 @@
-- ### Definition
-  - The ability for multiple users to edit the same document simultaneously with real-time conflict resolution, making distributed teamwork feel synchronous.

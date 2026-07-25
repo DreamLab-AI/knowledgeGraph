@@ -1,4 +1,0 @@
-- ### Definition
-  - Research agents are autonomous systems that plan, search, read, and synthesise cited findings, relying on [[Context Engineering]] for effective grounding and forming a key use case of the [[Agentic Internet]].
-- ### Content
-  - A research agent typically decomposes a question into sub-queries, retrieves and ranks sources, tracks provenance, and iterates until it can produce a well-supported answer. Quality depends on robust retrieval, faithful citation, and reflection loops that detect gaps or contradictions before reporting.

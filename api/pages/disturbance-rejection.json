@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:disturbance-rejection",
+  "title": "Disturbance Rejection",
+  "slug": "disturbance-rejection",
+  "public": true,
+  "classIri": "urn:ngm:class:disturbance-rejection",
+  "domain": "robotics",
+  "definition": "Disturbance rejection is the capacity of a control system to maintain desired output behaviour despite unmeasured external disturbances or model uncertainties acting on the plant. It is typically achieved through feedback control, integral action, or disturbance observers that estimate and cancel the disturbance's effect. In robotics it is essential for maintaining stable setpoints and trajectories when a robot is subject to external forces, friction, or sensor noise.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:feedback-control",
+      "label": "Feedback Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "feedback-control",
+      "label": "Feedback Control"
+    }
+  ]
+}

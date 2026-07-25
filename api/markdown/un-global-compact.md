@@ -1,4 +1,0 @@
-- ### Definition
-  - A voluntary UN initiative committing businesses to ten principles on human rights, labour, environment, and anti-corruption, with annual progress reporting. It provides a normative basis for [[Ethical Sourcing]] and corporate [[Sustainability]] practice.
-- ### Content
-  - Companies join by signing a commitment letter and then report through an annual Communication on Progress detailing implementation of the ten principles. As a soft-law framework it relies on transparency, peer pressure, and reputational incentives rather than enforcement, and aligns corporate action with the UN Sustainable Development Goals.

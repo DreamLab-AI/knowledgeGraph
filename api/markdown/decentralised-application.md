@@ -1,4 +1,0 @@
-- ### Definition
-  - A decentralised application runs its backend logic as smart contracts on a peer-to-peer blockchain network, a defining building block of [[Web3]] that removes reliance on central servers.
-- ### Content
-  - A dApp's trust-critical logic and state live on-chain in [[Smart Contract]] code, while user interfaces and bulk data sit off-chain. This architecture yields permissionless access and censorship resistance at the cost of latency, gas fees and the immutability of deployed contracts.

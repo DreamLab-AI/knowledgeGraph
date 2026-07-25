@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:beamforming",
+  "title": "Beamforming",
+  "slug": "beamforming",
+  "public": true,
+  "classIri": "urn:ngm:class:beamforming",
+  "domain": "infrastructure",
+  "definition": "Beamforming is a signal processing technique that combines the outputs of an antenna or sensor array with calculated phase and amplitude weightings to steer transmission or reception toward a specific spatial direction. It increases signal gain toward intended targets while suppressing interference from other directions, without physically moving the array. Beamforming is central to modern wireless communication standards and to radar systems that must resolve direction as well as range.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:wireless-communication",
+      "label": "Wireless Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

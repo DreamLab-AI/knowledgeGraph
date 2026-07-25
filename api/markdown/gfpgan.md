@@ -1,4 +1,0 @@
-- ### Definition
-  - GFPGAN is a GAN-based face-restoration model that exploits a generative facial prior; it is used by [[Face Swap]] pipelines and implements high-quality [[Image and Video Restoration]] for faces.
-- ### Content
-  - The model injects features from a degraded input into a pretrained generator via spatial feature transforms, balancing fidelity to the original identity against perceptual realism. It handles compression artefacts, blur, and low resolution, and runs efficiently enough for batch and interactive use. As a restoration tool it is dual-use, since the same enhancement can improve synthetic or manipulated faces.

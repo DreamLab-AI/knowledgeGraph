@@ -1,4 +1,0 @@
-- ### Definition
-  - Scene design is the composition of virtual environments and is performed within an [[Authoring Tool]]; it is one of the creative activities organised under [[ETSI Domain Creative Media]].
-- ### Content
-  - Designers work against a scene graph that hierarchically organises transforms, meshes, lights, and behaviours. Decisions about spatial layout, level of detail, and lighting balance visual fidelity against rendering performance, and increasingly interoperate through open scene-description formats for portability across engines.

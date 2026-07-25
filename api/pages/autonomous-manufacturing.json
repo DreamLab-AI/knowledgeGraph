@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:autonomous-manufacturing",
+  "title": "Autonomous Manufacturing",
+  "slug": "autonomous-manufacturing",
+  "public": true,
+  "classIri": "urn:ngm:class:autonomous-manufacturing",
+  "domain": "robotics",
+  "definition": "Autonomous manufacturing is a production model in which robotic systems and automated machinery execute manufacturing tasks \u2014 assembly, inspection, material handling, and quality control \u2014 with minimal or no direct human intervention, coordinated by software that senses conditions and adapts in real time. It extends manufacturing automation by incorporating perception, planning, and decision-making capabilities that let equipment respond to variation on the production line rather than following fixed, pre-programmed sequences. Autonomous manufacturing is a core pillar of Industry 4.0 initiatives that seek to combine robotics, sensing, and data analytics across the factory floor.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:manufacturing-automation",
+      "label": "Manufacturing Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:industry-4-0",
+        "label": "Industry 4.0"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    }
+  ]
+}

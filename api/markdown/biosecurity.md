@@ -1,4 +1,0 @@
-- ### Definition
-  - Biosecurity comprises the controls that prevent misuse of biological agents and biotechnology, a key safeguard against [[Existential Risk]] and the parent concern under which [[Bio-Terror]] sits.
-- ### Content
-  - Measures include physical and personnel containment, regulated access to select agents, oversight of gain-of-function and other dual-use research, and emerging scrutiny of AI models capable of assisting pathogen design. Effective biosecurity blends technical safeguards with international norms and enforcement.

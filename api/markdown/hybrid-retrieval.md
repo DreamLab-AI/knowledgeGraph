@@ -1,4 +1,0 @@
-- ### Definition
-  - Hybrid retrieval blends keyword-based and embedding-based ranking, forming a core component of [[Semantic Search]] and modern [[AI Search]] pipelines.
-- ### Content
-  - In retrieval-augmented generation systems, candidates from a sparse index and a dense vector store are merged and re-ranked, balancing exact-match precision against semantic recall. Tuning the fusion weights and applying a cross-encoder re-ranker further sharpens result quality for downstream language-model grounding.

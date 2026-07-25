@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:labelled-data",
+  "title": "Labelled Data",
+  "slug": "labelled-data",
+  "public": true,
+  "classIri": "urn:ngm:class:labelled-data",
+  "domain": "artificial-intelligence",
+  "definition": "Labelled data is data annotated with target values, categories or structured tags that supervised machine learning models learn to predict. Labels may be produced by human annotators, expert review or semi-automated pipelines, and their quality directly bounds achievable model accuracy. Labelled data underpins tasks such as model evaluation, semantic parsing and sequence labelling, where a defined label schema drives both training and assessment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:training-data",
+      "label": "Training Data"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dataset",
+        "label": "Dataset"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "id": "urn:ngm:class:semantic-parsing",
+        "label": "Semantic Parsing"
+      },
+      {
+        "id": "urn:ngm:class:sequence-labelling",
+        "label": "Sequence Labelling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

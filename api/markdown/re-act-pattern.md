@@ -1,4 +1,0 @@
-- ### Definition
-  - The ReAct pattern interleaves model reasoning with actions and observations in a loop. It is implemented by [[Agent Frameworks]] and typically realised through [[Function Calling]] to invoke external tools.
-- ### Content
-  - A ReAct trace alternates Thought, Action, and Observation steps until the agent decides it can answer. Grounding reasoning in tool observations reduces hallucination and enables multi-step problem solving, but adds latency and token cost, and demands robust parsing and error handling around tool invocations.

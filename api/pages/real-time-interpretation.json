@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:real-time-interpretation",
+  "title": "Real-Time Interpretation",
+  "slug": "real-time-interpretation",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-interpretation",
+  "domain": "artificial-intelligence",
+  "definition": "Real-time interpretation is the simultaneous conversion of spoken language from a source language into a target language with minimal delay, combining speech recognition, machine translation and speech synthesis in a continuous pipeline. Unlike batch machine translation, it must produce output incrementally as the source speech arrives, trading some accuracy for low latency. It underpins live captioning, simultaneous conference interpretation and voice-based cross-lingual communication tools.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:speech-recognition",
+      "label": "Speech Recognition"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - Digital asset custody secures the private keys that control crypto-assets, using HSMs, MPC, and cold storage. It is central to [[Institutional Custody]] offerings and is shaped by [[Securities Regulation]] governing qualified custodians.
-- ### Content
-  - Custody models range from fully self-custodial to third-party qualified custodians, with MPC and multisig reducing single points of failure. Key trade-offs balance security against operational speed; regulatory regimes increasingly mandate segregation of client assets, proof of reserves, and insurance.

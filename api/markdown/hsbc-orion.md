@@ -1,4 +1,0 @@
-- ### Definition
-  - HSBC Orion is a bank-operated tokenisation platform that relates to [[Enterprise Token Standards]] and is supported by [[Consortium Blockchain]] infrastructure for regulated digital-asset issuance.
-- ### Content
-  - The platform handles the full lifecycle of tokenised securities, from issuance and registry to settlement and servicing, on a permissioned ledger integrated with traditional custody and payment rails. It has been used for tokenised bond issuances, demonstrating how incumbent financial institutions deploy distributed-ledger technology under existing regulatory and operational controls.

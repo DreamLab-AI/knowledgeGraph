@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:intelligent-ticket-routing",
+  "title": "Intelligent Ticket Routing",
+  "slug": "intelligent-ticket-routing",
+  "public": true,
+  "classIri": "urn:ngm:class:intelligent-ticket-routing",
+  "domain": "artificial-intelligence",
+  "definition": "Intelligent ticket routing is the use of machine learning to classify incoming customer support requests and automatically direct each one to the agent, team, or automated workflow best suited to resolve it, based on content, urgency, and historical resolution patterns. It reduces manual triage time and improves first-response accuracy compared with static rule-based routing. It is a core component of customer service and customer support automation platforms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:customer-service-automation",
+      "label": "Customer Service Automation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:customer-service-automation",
+        "label": "Customer Service Automation"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

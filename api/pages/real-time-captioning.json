@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:real-time-captioning",
+  "title": "Real-Time Captioning",
+  "slug": "real-time-captioning",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-captioning",
+  "domain": "ai",
+  "definition": "Real-time captioning is the continuous generation of synchronised text captions from live audio using streaming automatic speech recognition, with latency low enough that captions appear as speech occurs. It is used for live broadcasts, video conferencing, and accessibility services for deaf and hard-of-hearing users. It requires low-latency acoustic and language models tuned to trade a small amount of accuracy for responsiveness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:automatic-speech-recognition",
+      "label": "Automatic Speech Recognition"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:automatic-speech-recognition",
+        "label": "Automatic Speech Recognition"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "automatic-speech-recognition",
+      "label": "automatic speech recognition"
+    }
+  ]
+}

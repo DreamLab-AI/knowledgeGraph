@@ -1,4 +1,0 @@
-- ### Definition
-  - Idempotency guarantees that repeated execution of an operation yields the same state, a precondition for safe retries that underpins [[Fault Tolerance]] and is realised in structures such as a [[CRDT]].
-- ### Content
-  - Systems achieve idempotency by deduplicating on client-supplied keys, by designing state transitions to be commutative and associative, or by recording applied operations. Conflict-free replicated data types exploit these algebraic properties so that the same update can be delivered any number of times and in any order without diverging.

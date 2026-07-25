@@ -1,4 +1,0 @@
-- ### Definition
-  - The ECB Digital Euro Regulation Proposal is the European Commission's 2023 draft legislation establishing the legal basis for a [[Digital Euro]]. It standardises one of the leading [[CBDC Frameworks]] under negotiation in the EU.
-- ### Content
-  - The proposal specifies the digital euro's legal-tender obligations, privacy and data-handling safeguards, intermediary distribution model, and offline payment support. As draft legislation it is subject to amendment by the European Parliament and Council before any final regulation enters force.

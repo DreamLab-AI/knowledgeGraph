@@ -1,4 +1,0 @@
-- ### Definition
-  - National competitiveness measures a country's productivity and growth capacity in the global economy. It is supported by [[AI Adoption]] and the broader [[Adoption of Convergent Technologies]], which raise productivity and create economic spillovers.
-- ### Content
-  - Standard frameworks decompose competitiveness into factor inputs, innovation capacity, and institutional quality. Governments treat AI and convergent-technology uptake as levers because they compound across sectors, but realising the gains depends on complementary skills, regulation, and infrastructure rather than technology alone.

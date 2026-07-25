@@ -1,4 +1,0 @@
-- ### Definition
-  - Feedforward control drives the system from the reference command or a measured disturbance ahead of any output error, making it a key building block of [[Motion Control]] and [[Velocity Control]]. It is a strategy within a closed-loop [[Control System]].
-- ### Content
-  - A feedforward controller inverts a model of the plant to produce the command needed to follow a desired trajectory, contributing the bulk of the control effort while feedback trims residual error. Because it is open-loop with respect to the output, its accuracy depends entirely on model fidelity and disturbance measurability, so practical systems combine feedforward and feedback to gain both responsiveness and robustness.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Legal accountability binds an identifiable party to answerability under law, enabling [[Metaverse Liability Model]] frameworks and the legal provisions described by [[ETSI Domain Ethics and Law]].
-- ### Content
-  - Achieving accountability in distributed and automated systems demands reliable identity attribution, evidentiary records, and clear allocation of responsibility among operators, developers, and users. Without it, harms caused by autonomous agents or pseudonymous actors lack an enforceable remedy.

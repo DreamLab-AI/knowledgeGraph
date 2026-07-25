@@ -1,4 +1,0 @@
-- ### Definition
-  - The Future of Humanity Institute was an Oxford research centre studying long-term and catastrophic risks, whose work framed debates on [[Existential Risk]] and the prospect of a technological [[Singularity]].
-- ### Content
-  - FHI's research spanned existential risk analysis, the ethics and strategy of advanced AI, anthropic reasoning, and global priorities. Bostrom's book Superintelligence emerged from this programme and helped catalyse the modern AI safety field. Though disbanded in 2024, its concepts and many of its researchers continue to influence AI governance and longtermist philanthropy.

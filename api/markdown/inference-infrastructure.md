@@ -1,4 +1,0 @@
-- ### Definition
-  - Inference infrastructure is the production serving stack for deployed models, spanning accelerators, model servers, and orchestration. It underpins latency-sensitive services such as [[AI Search]] and hosted [[Proprietary Large Language Models]].
-- ### Content
-  - Key components include continuous-batching servers, paged attention for KV-cache management, autoscalers, and request routers. Operators optimise for the trade-off between latency, throughput, and cost-per-token under fluctuating demand.

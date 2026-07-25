@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:ground-truth",
+  "title": "Ground Truth",
+  "slug": "ground-truth",
+  "public": true,
+  "classIri": "urn:ngm:class:ground-truth",
+  "domain": "machine-learning",
+  "definition": "Ground truth is the set of verified, correct labels or measurements against which a model's predictions are compared to assess accuracy. It is typically produced by expert annotation, direct measurement, or a trusted reference process, and underpins benchmark datasets used for training and evaluation. The reliability of any accuracy or error metric is bounded by the quality of the ground truth it is measured against.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dataset",
+      "label": "Dataset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:dataset",
+        "label": "Dataset"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ade20-k",
+      "label": "ADE20K"
+    }
+  ]
+}

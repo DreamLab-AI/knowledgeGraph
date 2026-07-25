@@ -23,11 +23,26 @@ public:: true
   "definition": "Annotated Training Data is a dataset whose examples have been augmented with ground-truth labels, bounding boxes, segmentation masks, or other targets that supervised models learn to predict. The annotations are produced by humans, programmatic rules, or model-assisted labeling and define the task the model is trained to solve. Its quality, coverage, and label consistency are primary determinants of supervised-model performance.",
   "domain": "data",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:cross-validation", "label": "Cross-Validation"},
-      {"@id": "urn:ngm:class:segmentation-and-identification", "label": "Segmentation and Identification"}
+      {
+        "@id": "urn:ngm:class:cross-validation",
+        "label": "Cross-Validation"
+      },
+      {
+        "@id": "urn:ngm:class:segmentation-and-identification",
+        "label": "Segmentation and Identification"
+      }
     ]
   },
   "quality": 0.72

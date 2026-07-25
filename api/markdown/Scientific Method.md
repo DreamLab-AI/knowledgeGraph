@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:scientific-discovery",
+      "label": "Scientific Discovery"
     }
   ],
   "relations": {

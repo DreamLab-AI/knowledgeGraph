@@ -23,31 +23,76 @@ public:: true
   "definition": "Flux.1 is a family of open-weight text-to-image generative models developed by Black Forest Labs, founded by former Stability AI researchers including Robin Rombach, the co-creator of Latent Diffusion. Released in August 2024, Flux.1 employs a hybrid architecture combining multimodal and parallel diffusion transformer (DiT) blocks, achieving state-of-the-art image quality and prompt adherence that surpasses earlier diffusion models on benchmarks such as GenEval and T2I-CompBench. The family offers three variants — Flux.1 [pro], Flux.1 [dev], and Flux.1 [schnell] — spanning commercial API, open-weights research, and fast inference use cases respectively.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:diffusion-model", "label": "Diffusion Model"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:diffusion-model",
+      "label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:ngm:class:generative-ai",
+      "label": "Generative AI"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:text-to-image", "label": "Text-to-Image"},
-      {"@id": "urn:ngm:class:diffusion-models", "label": "Diffusion Models"},
-      {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
-      {"@id": "urn:ngm:class:image-generation", "label": "Image Generation"}
+      {
+        "@id": "urn:ngm:class:text-to-image",
+        "label": "Text-to-Image"
+      },
+      {
+        "@id": "urn:ngm:class:diffusion-models",
+        "label": "Diffusion Models"
+      },
+      {
+        "@id": "urn:ngm:class:latent-diffusion",
+        "label": "Latent Diffusion"
+      },
+      {
+        "@id": "urn:ngm:class:image-generation",
+        "label": "Image Generation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"}
+      {
+        "@id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion Image Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:inpainting", "label": "Inpainting"},
-      {"@id": "urn:ngm:class:open-source-ai", "label": "Open-Source AI"}
+      {
+        "@id": "urn:ngm:class:inpainting",
+        "label": "Inpainting"
+      },
+      {
+        "@id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-network-architecture", "label": "Neural Network Architecture"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:neural-network-architecture",
+        "label": "Neural Network Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:lo-ra-do-ra-etc", "label": "LoRA DoRA etc"},
-      {"@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows", "label": "ComfyUI Workflows"}
+      {
+        "@id": "urn:ngm:class:lo-ra-do-ra-etc",
+        "label": "LoRA DoRA etc"
+      },
+      {
+        "@id": "urn:ngm:class:node-based-diffusion-pipeline-interface-workflows",
+        "label": "ComfyUI Workflows"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
     ]
   },
   "quality": 0.8

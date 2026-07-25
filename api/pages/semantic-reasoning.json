@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:semantic-reasoning",
+  "title": "Semantic Reasoning",
+  "slug": "semantic-reasoning",
+  "public": true,
+  "classIri": "urn:ngm:class:semantic-reasoning",
+  "domain": "artificial-intelligence",
+  "definition": "Semantic reasoning is the process of deriving new facts or checking consistency by applying logical inference rules to formally represented knowledge, such as an ontology or knowledge graph, rather than to raw text or numeric data. It exploits explicit semantics, including class hierarchies and property definitions, to infer relationships not directly asserted, for example that an individual belongs to a class through transitive subsumption. Semantic reasoning underlies description-logic reasoners and is affected by whether a knowledge base assumes an open- or closed-world semantics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:reasoning",
+      "label": "Reasoning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "context-awareness",
+      "label": "Context Awareness"
+    }
+  ]
+}

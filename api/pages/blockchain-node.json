@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "id": "urn:ngm:class:network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

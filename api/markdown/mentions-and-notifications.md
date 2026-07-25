@@ -1,2 +1,0 @@
-- ### Definition
-  - Attention-directing mechanisms using @-references and push alerts that ensure relevant participants are notified of messages or events requiring their awareness.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Exoskeleton control coordinates a wearable robot's actuators with its user's movement, supported by the [[Proprioceptive Sensor]] for state estimation and the [[Kinematics Model]] for motion prediction.
-- ### Content
-  - Controllers infer wearer intent from biomechanical signals and apply assistive torque synchronised to gait phase and load. Real-time adaptation and tight safety margins are essential since the machine is physically coupled to a human body.

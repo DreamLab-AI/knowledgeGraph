@@ -1,4 +1,0 @@
-- ### Definition
-  - Integration testing verifies that combined components interoperate correctly across their interfaces. It is a part of the broader [[Testing Process]] and underpins the [[Compatibility Process]].
-- ### Content
-  - Strategies include big-bang, top-down, bottom-up, and sandwich integration, often supported by stubs and test doubles for not-yet-available dependencies. Contract tests and service virtualisation make integration testing repeatable in continuous-integration pipelines.

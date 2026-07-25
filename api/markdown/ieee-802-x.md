@@ -1,4 +1,0 @@
-- ### Definition
-  - IEEE 802-X is the standards family covering LAN, MAN, and PAN networking, encompassing sub-standards such as [[IEEE 802.15.4]] for low-rate wireless networks.
-- ### Content
-  - The 802 working groups partition the data-link layer into logical link control and medium access control sublayers, with each numbered standard addressing a specific medium or topology. This modularity lets new physical layers be added while preserving a common framing and addressing model across the family.

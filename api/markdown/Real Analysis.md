@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:calculus",
       "label": "Calculus"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "relations": {

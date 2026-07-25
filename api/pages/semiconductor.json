@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:semiconductor",
+  "title": "Semiconductor",
+  "slug": "semiconductor",
+  "public": true,
+  "classIri": "urn:ngm:class:semiconductor",
+  "domain": "infrastructure",
+  "definition": "A semiconductor is a material, typically silicon, whose electrical conductivity lies between that of a conductor and an insulator and can be precisely controlled by doping, enabling the transistors that form the basis of modern electronics. Semiconductor devices are fabricated into integrated circuits through processes such as photolithography and etching, and underpin every class of computing hardware from CPUs to sensors. Global compute capacity, including GPU and CPU manufacturing, is bounded by semiconductor fabrication capacity and supply.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware",
+      "label": "Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

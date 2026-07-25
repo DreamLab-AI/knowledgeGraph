@@ -1,4 +1,0 @@
-- ### Definition
-  - Participant Consent is the informed agreement individuals give before being recorded or having their data processed, a legal and ethical prerequisite for [[Meeting Recording]].
-- ### Content
-  - Many jurisdictions require clear notice and an option to decline before audio or video capture. Systems therefore capture and store consent state, gating recording and downstream analytics on it so that processing remains lawful under wiretapping and data-protection regimes.

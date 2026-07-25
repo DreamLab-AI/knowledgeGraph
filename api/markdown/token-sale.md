@@ -1,2 +1,0 @@
-- ### Definition
-  - A Token Sale is a blockchain-based fundraising event in which digital tokens are issued and sold to participants, granting them utility, governance rights, or economic exposure within the issuing protocol or application.

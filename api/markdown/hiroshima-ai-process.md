@@ -1,4 +1,0 @@
-- ### Definition
-  - The Hiroshima AI Process is a G7 multilateral framework for advanced-AI governance that supports and relates to wider [[Asia-Pacific Regulation]] efforts.
-- ### Content
-  - It produced guiding principles and a code of conduct urging risk identification, transparency, incident reporting, and security investment across the AI lifecycle. As a voluntary instrument it seeks interoperability between jurisdictions, bridging binding regimes such as the EU AI Act and lighter-touch national approaches.

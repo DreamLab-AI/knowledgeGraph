@@ -1,4 +1,0 @@
-- ### Definition
-  - The confidence users place in online services to handle data and transactions safely and fairly. It is enabled by [[Consumer Protection]] and [[Participant Protection]] measures.
-- ### Content
-  - Platform trust depends on the interaction of security, privacy, transparency, and accountability, and erodes quickly after breaches, opaque algorithms, or unfair treatment. Regulators increasingly mandate disclosure, redress mechanisms, and protective obligations to anchor trust and protect participants in concentrated digital markets.

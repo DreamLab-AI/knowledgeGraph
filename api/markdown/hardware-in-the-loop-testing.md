@@ -1,4 +1,0 @@
-- ### Definition
-  - Hardware-in-the-loop testing connects physical controllers to a real-time simulated plant, validating a [[Control Algorithm]] under realistic dynamics and often driven by tools such as the [[Gazebo Simulator]].
-- ### Content
-  - A HIL rig runs the simulation on deterministic real-time hardware so sensor inputs and actuator commands are exchanged with the device under test at the true loop rate. This catches timing, fault-handling, and edge-case behaviour early, shortening development cycles and improving safety before deployment on real machines.

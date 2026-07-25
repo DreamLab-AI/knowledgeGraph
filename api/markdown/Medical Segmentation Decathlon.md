@@ -23,9 +23,27 @@ public:: true
   "definition": "The Medical Segmentation Decathlon is a benchmark challenge providing ten diverse medical imaging datasets to evaluate the generalisability of automated segmentation algorithms. Spanning organs and modalities such as brain MRI, liver CT, and cardiac imaging, it tests whether a single method can perform well across heterogeneous anatomical tasks without per-task tuning. It is a widely cited reference for assessing biomedical image-segmentation models.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:segmentation-and-identification", "label": "Segmentation and Identification"}, {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:segmentation-and-identification",
+        "label": "Segmentation and Identification"
+      },
+      {
+        "@id": "urn:ngm:class:computer-vision",
+        "label": "Computer Vision"
+      }
+    ]
   },
   "quality": 0.72
 }

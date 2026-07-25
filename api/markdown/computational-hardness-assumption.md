@@ -1,4 +1,0 @@
-- ### Definition
-  - A computational hardness assumption conjectures that a problem cannot be solved in polynomial time, providing the basis for security reductions in [[Cryptography]] and constructions such as the [[Digital Signature]].
-- ### Content
-  - Schemes are proven secure by reducing an attack to solving the underlying hard problem, so a scheme is only as strong as its assumption. Post-quantum cryptography migrates from factorisation and discrete-log assumptions to lattice, code, and isogeny problems believed to resist quantum attack.

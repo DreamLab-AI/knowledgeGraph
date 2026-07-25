@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:batch-image-processing",
+  "title": "Batch Image Processing",
+  "slug": "batch-image-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:batch-image-processing",
+  "domain": "artificial-intelligence",
+  "definition": "Batch image processing is the automated application of a fixed sequence of image operations, such as resizing, format conversion, colour correction, or generative transformation, across a large set of images without per-image manual intervention. It is exposed by image-generation platforms and pipeline tools as queued or scripted workflows that process many inputs sequentially or in parallel under a shared configuration. Batch processing trades per-image customisation for throughput, making it suited to dataset preparation and bulk content production.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:image-processing",
+      "label": "Image Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:image-processing",
+        "label": "Image Processing"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui",
+      "label": "Comfy Ui"
+    },
+    {
+      "slug": "comfy-ui-api-specification",
+      "label": "ComfyUI API Specification"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    }
+  ]
+}

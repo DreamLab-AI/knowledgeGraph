@@ -1,4 +1,0 @@
-- ### Definition
-  - Data brokers aggregate and resell personal and behavioural data into profiles, forming a key component of [[Digital Society Surveillance]] and a focus of privacy regulation.
-- ### Content
-  - Brokers fuse public records, purchase histories and online tracking signals into segmented profiles sold for advertising, identity verification and risk scoring. Their opacity and scale raise consent, accuracy and surveillance concerns that data-protection regimes increasingly seek to regulate.

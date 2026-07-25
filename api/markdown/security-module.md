@@ -1,4 +1,0 @@
-- ### Definition
-  - A security module provides isolated cryptographic and protection services; it is a part of an [[IoT Sensor Network]] and is required by a [[Token Custody Service]] to safeguard keys.
-- ### Content
-  - Hardware security modules and secure elements perform key operations inside tamper-resistant boundaries, never exposing private material in plaintext. They enforce rate limits, attestation, and role-based access, providing the root of trust for signing, encryption, and credential management across devices and services.

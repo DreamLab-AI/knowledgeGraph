@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "id": "urn:ngm:class:sidechain",
+      "label": "Sidechain"
     }
   ],
   "entityType": "Class",
@@ -83,8 +87,8 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:threshold-signature",
-        "label": "Threshold Signature"
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
       },
       {
         "id": "urn:ngm:class:merkle-proof",

@@ -1,4 +1,0 @@
-- ### Definition
-  - Keypoint detection is a [[Computer Vision]] task that localises distinctive landmarks in images; it is closely related to [[Image Segmentation]] and forms a core component of [[Pose Estimation]] pipelines.
-- ### Content
-  - Classical detectors such as SIFT and ORB find repeatable, scale-invariant interest points for matching, while modern heatmap-based deep networks regress landmark locations for human and object pose. The detected keypoints serve downstream tasks including tracking, 3D reconstruction, augmented reality alignment and gesture recognition.

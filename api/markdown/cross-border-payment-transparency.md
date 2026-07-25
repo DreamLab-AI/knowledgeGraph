@@ -1,4 +1,0 @@
-- ### Definition
-  - Cross-border payment transparency is the disclosure of parties, costs, and routing in international transfers to support oversight and fair pricing. It is enabled by the [[Travel Rule]] and supports trustworthy [[Cross-Border Settlement]].
-- ### Content
-  - Transparency obligations require sharing originator and beneficiary information and surfacing total transfer costs, countering both illicit flows and opaque correspondent-banking fees. On public ledgers, settlement is inherently traceable, but reconciling pseudonymous addresses with regulated identity data remains the core implementation challenge.

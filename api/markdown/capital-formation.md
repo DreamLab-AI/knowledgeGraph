@@ -1,4 +1,0 @@
-- ### Definition
-  - Capital Formation is the mechanism, central to the [[Capital Markets Domain]], by which firms raise funds through securities issuance, conducted within the constraints of [[Securities Regulation]].
-- ### Content
-  - Channels of capital formation range from public offerings (IPOs) and bond issuance to private placements and venture funding. Regulators seek to lower frictions and information asymmetries that impede efficient capital allocation while preserving disclosure standards that protect investors.

@@ -1,4 +1,0 @@
-- ### Definition
-  - User representation is how a person is embodied in a shared digital space, enabled by an [[Avatar System]] and forming part of a [[Virtual World]].
-- ### Content
-  - Representations range from photorealistic full-body avatars to stylised or abstract forms, driven by tracking data, inverse kinematics and expression capture. Design choices affect social presence, identity expression, inclusivity and the bandwidth required to synchronise embodiment across clients.

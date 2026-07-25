@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:hd-maps",
+  "title": "HD Maps",
+  "slug": "hd-maps",
+  "public": true,
+  "classIri": "urn:ngm:class:hd-maps",
+  "domain": "artificial-intelligence",
+  "definition": "HD maps (high-definition maps) are centimetre-accurate digital representations of road infrastructure \u2014 including lane geometry, traffic signs, signal positions and road markings \u2014 used by autonomous vehicles to localise themselves precisely and to anticipate road features beyond the range of onboard sensors. They are built from surveyed lidar and camera data and are typically fused with real-time perception output to cross-check and supplement what the vehicle currently observes. HD maps trade off high localisation accuracy against the cost and staleness risk of maintaining a pre-built map as road conditions change.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autonomous-driving",
+      "label": "Autonomous Driving"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:autonomous-driving",
+        "label": "Autonomous Driving"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-driving-perception",
+        "label": "Autonomous Driving Perception"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "autonomous-driving-perception",
+      "label": "Autonomous Driving Perception"
+    },
+    {
+      "slug": "autonomous-driving",
+      "label": "autonomous driving"
+    }
+  ]
+}

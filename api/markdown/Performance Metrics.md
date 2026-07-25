@@ -44,6 +44,10 @@ public:: true
     {
       "@id": "urn:ngm:class:model-evaluation",
       "label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

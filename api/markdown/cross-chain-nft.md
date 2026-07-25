@@ -1,4 +1,0 @@
-- ### Definition
-  - A cross-chain NFT is a non-fungible token portable across blockchains while keeping its identity and provenance. It depends on [[Cross-Chain Bridge]] mechanisms and advances [[Blockchain Interoperability]] for collectibles and game assets.
-- ### Content
-  - Common designs lock or burn a token on the source chain and mint a verified representation on the destination, ensuring no duplication of the canonical asset. Preserving immutable provenance, royalty enforcement, and metadata fidelity across heterogeneous token standards is the principal difficulty in cross-chain NFT transfer.

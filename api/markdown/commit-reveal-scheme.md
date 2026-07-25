@@ -1,4 +1,0 @@
-- ### Definition
-  - A Commit-Reveal Scheme binds a participant to a hidden value via a hash commitment and later discloses it for verification, a mechanism used to make on-chain [[Quadratic Voting]] resistant to front-running.
-- ### Content
-  - Security rests on the commitment being both hiding (it leaks nothing about the value) and binding (the committer cannot later open it to a different value). In governance and auction contracts, all participants commit before any reveal, neutralising the advantage of acting last and protecting against vote-buying signalling.

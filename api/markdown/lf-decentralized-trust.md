@@ -1,4 +1,0 @@
-- ### Definition
-  - LF Decentralized Trust is the Linux Foundation body, successor to Hyperledger, that hosts decentralised-trust projects including [[Hyperledger Indy]] and provides the neutral governance referenced by [[Blockchain as a Service]] offerings.
-- ### Content
-  - The foundation supplies open governance, CI infrastructure, and trademark stewardship so that competing vendors can co-develop ledger and identity software. Its remit spans enterprise DLT frameworks, decentralised identity, and supporting cryptographic libraries.

@@ -71,10 +71,16 @@ alias:: MachineLearning
   "definition": "Machine Learning is the branch of artificial intelligence in which systems learn predictive or generative models directly from data, without being explicitly programmed with domain rules. It encompasses supervised, unsupervised, and reinforcement learning paradigms, and forms the foundation for deep learning, natural language processing, and computer vision applications. Practical machine learning involves data preparation, feature engineering, model selection, training, evaluation, and deployment within a production pipeline.",
   "domain": "artificial-intelligence",
   "maturity": "emerging",
-  "subClassOf": {
-    "@id": "urn:ngm:class:artificial-intelligence-core",
-    "label": "Artificial Intelligence Core"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence-core",
+      "label": "Artificial Intelligence Core"
+    },
+    {
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

@@ -1,4 +1,0 @@
-- ### Definition
-  - MTEB is the Massive Text Embedding Benchmark, evaluating embedding models across retrieval, clustering, and similarity tasks. It standardises model selection for [[Semantic Search]] and [[Retrieval-Augmented Generation (RAG)]].
-- ### Content
-  - By aggregating dozens of tasks and datasets into a single leaderboard, MTEB exposes how embeddings generalise beyond any one objective, discouraging overfitting to a single benchmark. Practitioners consult it to balance retrieval quality, multilinguality, dimensionality, and inference cost when choosing an embedding model.

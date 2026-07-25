@@ -23,9 +23,27 @@ public:: true
   "definition": "Robotics simulation is the discipline of creating high-fidelity virtual worlds in which robots and their environments are modelled for development, testing, and synthetic-data generation. It emphasises scene description, physically based rendering, and interoperable asset pipelines so simulated environments transfer faithfully to deployment. Standards such as Universal Scene Description enable shared, composable simulation scenes across tools.",
   "domain": "robotics",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:simulation",
+      "label": "Simulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:universal-scene-description", "label": "Universal Scene Description"}, {"@id": "urn:ngm:class:procedural-and-hybrid-4-d", "label": "Procedural and Hybrid 4D"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:universal-scene-description",
+        "label": "Universal Scene Description"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-and-hybrid-4-d",
+        "label": "Procedural and Hybrid 4D"
+      }
+    ]
   },
   "quality": 0.72
 }

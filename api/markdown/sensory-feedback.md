@@ -1,4 +1,0 @@
-- ### Definition
-  - Sensory feedback delivers visual, auditory, haptic, and proprioceptive stimuli in response to user action, closing the perception-action loop. It is required for [[Presence]] and for [[Emotional Immersion]].
-- ### Content
-  - Low latency and cross-modal coherence are critical; mismatches between motion and feedback degrade presence and can induce discomfort. Designers tune feedback timing, intensity, and modality to reinforce believable cause-and-effect and to deepen engagement in immersive experiences.

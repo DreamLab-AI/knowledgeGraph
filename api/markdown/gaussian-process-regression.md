@@ -1,4 +1,0 @@
-- ### Definition
-  - Gaussian process regression performs Bayesian non-parametric regression using a [[Gaussian Process]] prior, a particular [[Stochastic Process]], to predict values with principled uncertainty estimates.
-- ### Content
-  - The kernel encodes assumptions about smoothness and length scale, and its hyperparameters are typically learned by maximising the marginal likelihood. Predictions are closed-form, but exact inference costs cubic time in the number of points, motivating sparse and inducing-point approximations for scale. Its uncertainty estimates make it a natural surrogate model in Bayesian optimisation and active learning.

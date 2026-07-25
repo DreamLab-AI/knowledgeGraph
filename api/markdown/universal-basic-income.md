@@ -1,4 +1,0 @@
-- ### Definition
-  - Universal basic income is an unconditional periodic cash transfer to all individuals, proposed as a tool to address [[Global Inequality]] and economic insecurity arising from automation.
-- ### Content
-  - UBI schemes vary in scale from limited pilots to nationwide proposals. Key design questions concern payment level, funding source, and interaction with existing welfare. The policy is frequently linked to discussions of technological unemployment driven by AI and robotics.

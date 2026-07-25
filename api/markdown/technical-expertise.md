@@ -1,4 +1,0 @@
-- ### Definition
-  - Technical expertise is the specialised knowledge and skill needed to operate in a complex domain, acting as both an enabler of [[AI Development]] and a barrier that limits who can misuse high-consequence capabilities such as those underlying [[Bio-Terror]].
-- ### Content
-  - Expertise combines formal knowledge, tacit skill acquired through practice, and access to tooling and infrastructure, which together determine who can realistically execute advanced technical work. In risk analysis, the expertise barrier is a key control: lowering it through automation or accessible tools can accelerate beneficial innovation while simultaneously broadening the population capable of causing harm. Policy debates around dual-use research therefore focus heavily on how expertise is distributed and whether AI tools meaningfully reduce required skill thresholds.

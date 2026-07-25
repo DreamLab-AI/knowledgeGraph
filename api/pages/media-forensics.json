@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:media-forensics",
+  "title": "Media Forensics",
+  "slug": "media-forensics",
+  "public": true,
+  "classIri": "urn:ngm:class:media-forensics",
+  "domain": "artificial-intelligence",
+  "definition": "Media forensics is the analysis of images, audio and video to determine authenticity, detect manipulation and attribute provenance, using techniques ranging from pixel-level artefact analysis to learned deepfake classifiers. It examines compression artefacts, sensor noise patterns, lighting inconsistencies and model-specific generation fingerprints to distinguish genuine capture from synthetic or edited content. It underpins deepfake detection systems and broader media authenticity assessment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-forensics",
+      "label": "Digital Forensics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:deepfake-detection",
+        "label": "Deepfake Detection"
+      },
+      {
+        "id": "urn:ngm:class:media-authenticity",
+        "label": "Media Authenticity"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-forensics",
+        "label": "Digital Forensics"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    }
+  ]
+}

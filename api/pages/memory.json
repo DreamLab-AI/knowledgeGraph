@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:memory",
+  "title": "Memory",
+  "slug": "memory",
+  "public": true,
+  "classIri": "urn:ngm:class:memory",
+  "domain": "infrastructure",
+  "definition": "Memory, in computing hardware, is the volatile storage a processor uses to hold instructions and data during execution, characterised by its capacity, latency, and bandwidth relative to the CPU. It is allocated and reclaimed by an operating system's memory management subsystem across running processes, and its size and speed directly bound what workloads a system can execute. Memory sits between fast on-chip caches and slower persistent storage in a system's memory hierarchy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computer-hardware",
+      "label": "Computer Hardware"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    }
+  ]
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - Satellite monitoring applies orbital remote sensing to verify environmental and supply-chain claims, forming part of [[Carbon Footprint Measurement]] and a data source for [[Ethical Sourcing]].
-- ### Content
-  - Modern systems combine optical, synthetic-aperture-radar, and hyperspectral sensors with revisit cadences of hours to days. Machine-learning pipelines classify land cover and detect change, providing auditable, independent evidence that complements self-reported corporate sustainability and provenance data.

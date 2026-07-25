@@ -86,10 +86,16 @@ alias:: ReinforcementLearning
   "definition": "Reinforcement learning is a machine learning paradigm in which agents learn optimal policies through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error, encompassing model-free and model-based methods, policy gradient techniques, and value-based approaches.",
   "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": {
-    "@id": "urn:ngm:class:machine-learning",
-    "label": "Machine Learning"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "partOf": [
       {

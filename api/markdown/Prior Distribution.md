@@ -23,12 +23,30 @@ public:: true
   "definition": "A prior distribution is the probability distribution over unknown quantities that encodes belief before observing data, in Bayesian inference. It is combined with the likelihood via Bayes' theorem to produce the posterior. The choice of prior, ranging from informative to weakly informative or uninformative, encodes assumptions and regularises inference, especially with limited data.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning-discipline", "label": "Machine Learning Discipline"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:probability-distribution",
+      "label": "Probability Distribution"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:bayes-filter", "label": "Bayes Filter"},
-      {"@id": "urn:ngm:class:probabilistic-model", "label": "Probabilistic Model"},
-      {"@id": "urn:ngm:class:posterior-distribution", "label": "Posterior Distribution"}
+      {
+        "@id": "urn:ngm:class:bayes-filter",
+        "label": "Bayes Filter"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-model",
+        "label": "Probabilistic Model"
+      },
+      {
+        "@id": "urn:ngm:class:posterior-distribution",
+        "label": "Posterior Distribution"
+      }
     ]
   },
   "quality": 0.72

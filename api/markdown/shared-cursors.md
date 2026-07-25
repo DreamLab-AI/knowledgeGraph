@@ -1,2 +1,0 @@
-- ### Definition
-  - Real-time coloured pointer indicators that show each collaborator's position within a shared document or canvas, enabling spatial awareness without verbal interruption.

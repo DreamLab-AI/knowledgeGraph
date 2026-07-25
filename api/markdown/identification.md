@@ -1,2 +1,0 @@
-- ### Definition
-  - The process of establishing an entity's claimed identity by associating it with a unique identifier and supporting evidence, forming the prerequisite step to authentication and authorisation.

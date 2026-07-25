@@ -1,4 +1,0 @@
-- ### Definition
-  - Data deduplication detects and removes redundant data, improving the quality of [[Training Data]] and supporting [[Identity Resolution]] by matching and merging duplicate records.
-- ### Content
-  - Storage systems deduplicate by hashing chunks and storing each unique block once, reclaiming capacity. In data quality and entity resolution, fuzzy matching and clustering collapse near-duplicate records into a single canonical entity.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Graph representation models a domain as nodes joined by edges, providing the structural substrate that algorithms such as [[Dijkstra Algorithm]] traverse and that a [[Topological Map]] depends upon.
-- ### Content
-  - The choice of representation drives performance: adjacency matrices give O(1) edge lookups at O(V^2) space, while adjacency lists are sparse-friendly. Graphs may be directed, weighted, or labelled, and form the foundation for shortest-path search, network analysis, and knowledge-graph storage.

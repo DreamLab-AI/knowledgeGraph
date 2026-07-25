@@ -1,4 +1,0 @@
-- ### Definition
-  - ECDSA Cryptography is the Elliptic Curve Digital Signature Algorithm, a public-key scheme producing compact signatures from elliptic-curve mathematics. It underpins transaction and message signing in blockchains and off-chain mechanisms such as [[Snapshot Voting]].
-- ### Content
-  - ECDSA achieves equivalent security to RSA at far smaller key sizes, lowering storage and bandwidth costs. In governance systems like gasless snapshot voting, ECDSA signatures let token holders prove authorship of votes cryptographically without an on-chain transaction.

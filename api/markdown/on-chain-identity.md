@@ -1,4 +1,0 @@
-- ### Definition
-  - On-chain identity is a key-controlled, blockchain-anchored identifier that accrues verifiable attributes and history. It is required by a [[Reputation System]] and enables [[NFT Minting]] tied to a persistent profile.
-- ### Content
-  - Identities can attach soulbound tokens, attestations, and naming records to build composable reputation that any contract can verify without a central authority. The main tensions are privacy versus the transparency of public ledgers and the difficulty of recovery and revocation when control depends on private keys.

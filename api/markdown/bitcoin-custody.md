@@ -1,4 +1,0 @@
-- ### Definition
-  - Bitcoin custody covers the secure management of keys controlling bitcoin, ranging from self-custody to federated models like [[Fedimint]] and institutional structures that back products such as a [[Bitcoin ETF]].
-- ### Content
-  - Custody schemes trade off security, recoverability, and convenience. Multi-signature and threshold cryptography spread key control to avoid single points of failure, while qualified custodians add insurance, audits, and regulatory compliance required by institutional and retail investment vehicles.

@@ -23,9 +23,27 @@ public:: true
   "definition": "An ESG-compliant blockchain is a distributed-ledger network designed and operated to meet environmental, social, and governance criteria, most notably by minimising energy use through low-power consensus and by offsetting or sourcing renewable energy. It typically pairs proof-of-stake or other efficient consensus with transparent emissions reporting and inclusive governance. Such networks aim to make blockchain adoption defensible under corporate sustainability and disclosure requirements.",
   "domain": "blockchain",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "relations": {
-    "relatedTo": [{"@id": "urn:ngm:class:crypto-climate-accord", "label": "Crypto Climate Accord"}, {"@id": "urn:ngm:class:sustainable-consensus", "label": "Sustainable Consensus"}]
+    "relatedTo": [
+      {
+        "@id": "urn:ngm:class:crypto-climate-accord",
+        "label": "Crypto Climate Accord"
+      },
+      {
+        "@id": "urn:ngm:class:sustainable-consensus",
+        "label": "Sustainable Consensus"
+      }
+    ]
   },
   "quality": 0.72
 }

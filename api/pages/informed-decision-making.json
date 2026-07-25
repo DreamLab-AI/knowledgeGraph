@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:decision-support",
       "label": "Decision Support"
+    },
+    {
+      "id": "urn:ngm:class:decision-making",
+      "label": "Decision Making"
     }
   ],
   "entityType": "Class",

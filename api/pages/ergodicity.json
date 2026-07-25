@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:ergodicity",
+  "title": "Ergodicity",
+  "slug": "ergodicity",
+  "public": true,
+  "classIri": "urn:ngm:class:ergodicity",
+  "domain": "machine-learning",
+  "definition": "Ergodicity is the property of a stochastic process whereby its long-run time average, computed along a single sufficiently long trajectory, converges to its ensemble average across all possible states. It is a required condition for Markov chain Monte Carlo methods to converge to the target distribution, since it guarantees that a chain will eventually visit all reachable states in proportion to their stationary probability. Non-ergodic chains can become trapped in subsets of the state space and yield biased samples.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

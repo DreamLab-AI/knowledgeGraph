@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:interchain-accounts",
+  "title": "Interchain Accounts",
+  "slug": "interchain-accounts",
+  "public": true,
+  "classIri": "urn:ngm:class:interchain-accounts",
+  "domain": "blockchain",
+  "definition": "Interchain Accounts (ICA) is an Inter-Blockchain Communication protocol extension that lets an account on one Cosmos SDK chain control an account on another chain over IBC, without needing a local key or a bridge contract on the counterparty chain. It enables cross-chain operations, such as staking, voting or trading, to be initiated on a home chain and executed remotely by an owned account elsewhere in the Cosmos ecosystem. It is a standard module built on top of the Cosmos IBC transport, authentication and ordering layers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cosmos-ibc",
+      "label": "Cosmos IBC"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:cosmos-ibc",
+        "label": "Cosmos IBC"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:cosmos",
+        "label": "Cosmos"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

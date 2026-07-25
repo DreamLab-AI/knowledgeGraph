@@ -1,4 +1,0 @@
-- ### Definition
-  - IoT integration links physical sensors and actuators to software so telemetry feeds analytics and control. It is a prerequisite for [[Digital Twin Creation]] and supports [[Logistics Optimization]].
-- ### Content
-  - Architectures span edge gateways, message brokers (MQTT, AMQP), time-series storage, and device management. Reliable integration handles intermittent connectivity, security provisioning, and the volume and velocity of streaming sensor data feeding live digital representations.

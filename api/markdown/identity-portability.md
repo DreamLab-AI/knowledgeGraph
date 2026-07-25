@@ -1,4 +1,0 @@
-- ### Definition
-  - Identity portability lets users carry credentials and reputation between platforms, building on a [[Credential Format Standard]] and enabling [[Avatar Interoperability]] across virtual worlds.
-- ### Content
-  - Portability depends on decentralised identifiers, verifiable credentials, and wallets that the user rather than a platform controls. By decoupling identity from any single provider it reduces lock-in and lets verified attributes such as age, membership, or ownership travel with the user across the open web and immersive environments.

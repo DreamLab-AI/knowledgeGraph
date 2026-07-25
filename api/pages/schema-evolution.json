@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:schema-evolution",
+  "title": "Schema Evolution",
+  "slug": "schema-evolution",
+  "public": true,
+  "classIri": "urn:ngm:class:schema-evolution",
+  "domain": "data",
+  "definition": "Schema evolution is the practice of modifying a data schema over time, such as adding, removing, or renaming fields, while preserving the ability to read data written under earlier versions. It is a core concern for serialisation formats such as Avro, Protobuf, and Parquet, which define explicit compatibility rules governing which changes are backward, forward, or fully compatible. Systems that manage schema evolution typically rely on a schema registry to version schemas centrally and validate that producers and consumers remain compatible before a change is deployed. Poorly managed schema evolution is a common source of pipeline breakage in streaming and data lake architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-schema",
+      "label": "Data Schema"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "schema-registry",
+      "label": "Schema Registry"
+    }
+  ]
+}

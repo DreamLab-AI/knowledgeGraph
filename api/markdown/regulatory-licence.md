@@ -1,4 +1,0 @@
-- ### Definition
-  - A regulatory licence is the named authorisation a supervisor grants for a defined financial activity, a binding requirement under [[Stablecoin Regulation]] for issuers of [[Stablecoins]].
-- ### Content
-  - Licence categories such as e-money institution, payment institution, or money transmitter carry distinct capital, safeguarding, and reporting obligations. Holders must maintain the conditions of their licence continuously, and operating without the correct one exposes issuers to enforcement and product withdrawal.

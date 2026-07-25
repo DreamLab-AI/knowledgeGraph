@@ -1,4 +1,0 @@
-- ### Definition
-  - MLCommons is an open consortium producing ML benchmarks and datasets, most notably MLPerf. It standardises measurement of [[Compute Infrastructure]] and contributes to [[Evaluation Benchmarks and Leaderboards]].
-- ### Content
-  - MLPerf defines tightly specified training and inference tasks with rules ensuring comparable, audited submissions, giving the industry a neutral basis for hardware and system claims. Beyond benchmarks, MLCommons curates large open datasets and develops standards for safety and data quality.

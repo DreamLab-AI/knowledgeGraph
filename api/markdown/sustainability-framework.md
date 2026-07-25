@@ -1,4 +1,0 @@
-- ### Definition
-  - A sustainability framework provides the methodology and reporting standards for quantifying environmental and social impact, giving structure to inputs such as the [[Environmental Impact Metric]] and instruments like the [[Carbon Credit Token]].
-- ### Content
-  - A framework typically specifies the scope of accounting, the calculation methods for each indicator, baseline and target setting, and disclosure formats that enable third-party verification. Widely used examples include the GHG Protocol's Scope 1-3 emissions taxonomy and ESG reporting standards. In blockchain contexts, frameworks define how on-chain activity is measured and how offsets such as carbon-credit tokens are issued, retired, and audited.

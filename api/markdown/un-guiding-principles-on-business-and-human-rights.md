@@ -1,4 +1,0 @@
-- ### Definition
-  - The UN Guiding Principles on Business and Human Rights are a global soft-law framework requiring enterprises to respect human rights and conduct due diligence throughout their operations, informing practices such as [[Ethical Sourcing]].
-- ### Content
-  - Built on the "Protect, Respect and Remedy" framework, the UNGPs ask companies to identify, prevent, mitigate and account for human rights harms. They have shaped national legislation and corporate compliance regimes, providing the normative basis for responsible procurement and supply-chain transparency obligations.

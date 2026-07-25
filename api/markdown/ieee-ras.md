@@ -1,4 +1,0 @@
-- ### Definition
-  - IEEE RAS is the IEEE society and standards body for robotics, publishing ontologies and standards that inform techniques such as the [[Topological Map]] and [[Force Control]].
-- ### Content
-  - Beyond its flagship conferences and journals, RAS develops consensus standards on robot terminology, mapping data formats, and force-controlled manipulation. These standards give researchers and integrators a shared vocabulary and interoperable interfaces, reducing fragmentation across robotics platforms.

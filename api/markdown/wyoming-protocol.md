@@ -1,4 +1,0 @@
-- ### Definition
-  - The Wyoming Protocol is a lightweight peer-to-peer protocol for chaining local voice services, implemented across the [[Home Assistant]] voice stack.
-- ### Content
-  - Wyoming frames audio and intent events as JSON headers followed by binary payloads over TCP sockets, allowing modular wake-word, ASR, and TTS engines to be composed as discrete services. By keeping the entire pipeline on the local network, it enables fully offline voice control without relaying user audio to external clouds.

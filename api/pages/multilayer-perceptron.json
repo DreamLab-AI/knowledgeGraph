@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:multilayer-perceptron",
+  "title": "Multilayer Perceptron",
+  "slug": "multilayer-perceptron",
+  "public": true,
+  "classIri": "urn:ngm:class:multilayer-perceptron",
+  "domain": "machine-learning",
+  "definition": "A multilayer perceptron (MLP) is a feedforward neural network composed of an input layer, one or more hidden layers of fully connected neurons with nonlinear activations, and an output layer, trained by backpropagation. It is a canonical universal function approximator underlying deeper architectures, and is frequently used as a lightweight decoder or coordinate-based function in implicit neural representations. NeRF and related implicit neural representation methods use an MLP to map spatial coordinates directly to colour and density values.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:implicit-neural-representation",
+        "label": "Implicit Neural Representation"
+      },
+      {
+        "id": "urn:ngm:class:ne-rf",
+        "label": "NeRF"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - An LDP Container is a W3C Linked Data Platform resource that aggregates other resources over HTTP, forming the organisational backbone of a [[Solid Pod]] and the storage model that [[Solid]] implements.
-- ### Content
-  - Clients interact with containers using standard verbs: POSTing to a container creates a contained resource, while GET returns membership triples. Basic, direct, and indirect container types let applications model collections, ownership, and derived membership without bespoke server logic.

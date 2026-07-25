@@ -1,4 +1,0 @@
-- ### Definition
-  - Distributed teams collaborate across locations and time zones via digital tools and asynchronous workflows. They are supported by [[Asynchronous Video]] for time-shifted updates and by a [[Meeting AI Assistant]] for capture and summarisation.
-- ### Content
-  - Effective distributed teams emphasise written communication, clear ownership, and overlap windows, augmented by tools for video, chat, and shared docs. Trade-offs include reduced informal contact and time-zone friction, offset by flexibility, broader hiring, and durable, searchable records of decisions.

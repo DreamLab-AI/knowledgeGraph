@@ -1,4 +1,0 @@
-- ### Definition
-  - A sigma-algebra is a family of subsets closed under complement and countable union that identifies the measurable sets of a space. It is a core part of [[Measure Theory]] and is required to define the filtrations underlying a [[Stochastic Process]].
-- ### Content
-  - Together with a sample space and a measure, a sigma-algebra forms a measure space; restricting to probability gives a probability space. Filtrations, which are increasing families of sigma-algebras, encode the flow of information over time and are essential to martingales, conditional expectation, and stochastic calculus.

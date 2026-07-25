@@ -28,12 +28,7 @@
         "label": "Compliance"
       }
     ],
-    "enables": [
-      {
-        "id": "urn:ngm:class:onboarding",
-        "label": "Onboarding"
-      }
-    ],
+    "enables": [],
     "dependsOn": [
       {
         "id": "urn:ngm:class:fraud-detection",
@@ -69,10 +64,6 @@
       {
         "id": "urn:ngm:class:know-your-customer",
         "label": "Know Your Customer"
-      },
-      {
-        "id": "urn:ngm:class:onboarding",
-        "label": "Onboarding"
       }
     ],
     "relatedTo": [

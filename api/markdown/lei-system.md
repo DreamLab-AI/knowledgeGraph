@@ -1,4 +1,0 @@
-- ### Definition
-  - The LEI System is the GLEIF-governed global infrastructure that issues and publishes the [[Legal Entity Identifier]], providing the authoritative directory consumed by [[Regulatory Reporting]] workflows.
-- ### Content
-  - Local Operating Units validate entity data and issue codes against ISO 17442, while the GLEIF maintains the consolidated global file and enforces data quality. Open, free access to the directory lets regulators and counterparties verify identities without proprietary intermediaries.

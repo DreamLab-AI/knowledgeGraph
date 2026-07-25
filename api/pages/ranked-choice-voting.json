@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:ranked-choice-voting",
+  "title": "Ranked-Choice Voting",
+  "slug": "ranked-choice-voting",
+  "public": true,
+  "classIri": "urn:ngm:class:ranked-choice-voting",
+  "domain": "governance",
+  "definition": "Ranked-choice voting is a voting method in which voters rank candidates in order of preference, and votes are redistributed in rounds by eliminating the lowest-ranked candidate until one candidate holds a majority. It is studied within social choice theory as an alternative to plurality voting intended to reduce spoiler effects and better reflect aggregate voter preference. It is used in some collective decision-making systems, including governance mechanisms for decentralised organisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:voting-system",
+      "label": "Voting System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:social-choice-theory",
+        "label": "Social Choice Theory"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

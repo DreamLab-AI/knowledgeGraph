@@ -45,10 +45,6 @@
         "label": "Content Monetisation"
       },
       {
-        "id": "urn:ngm:class:community-building",
-        "label": "Community Building"
-      },
-      {
         "id": "urn:ngm:class:loyalty-programs",
         "label": "Loyalty Programs"
       }
@@ -274,10 +270,6 @@
     {
       "slug": "blockchain",
       "label": "Blockchain"
-    },
-    {
-      "slug": "community-building",
-      "label": "Community Building"
     },
     {
       "slug": "moderation",

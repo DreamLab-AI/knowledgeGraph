@@ -1,4 +1,0 @@
-- ### Definition
-  - The IBC Specification is a standard for trust-minimised message passing between sovereign chains, enabling [[Blockchain Interoperability]] and serving as the transport layer for many a [[Cross-Chain Bridge]].
-- ### Content
-  - IBC separates a transport, authentication, and ordering layer (TAO) from the application layer, allowing arbitrary packet semantics atop a common connection-and-channel handshake. Relayers carry packets and proofs between chains, while each chain verifies the counterparty's consensus via an embedded light client.

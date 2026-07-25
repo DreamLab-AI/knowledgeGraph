@@ -1,4 +1,0 @@
-- ### Definition
-  - The OWASP LLM Top 10 2025 ranks the most critical security risks for LLM applications, providing a baseline that secures [[Agents]] and [[Computer Use and Browser Agents]] against threats like prompt injection.
-- ### Content
-  - It enumerates risks including prompt injection, sensitive data disclosure, supply-chain compromise, excessive agency, and unsafe output handling, each with mitigation guidance. As agentic systems gain real-world capabilities, the list serves as a shared reference for threat modeling and secure design.

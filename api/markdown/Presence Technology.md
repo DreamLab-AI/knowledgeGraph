@@ -24,39 +24,102 @@ public:: true
   "definition": "Presence technology refers to systems and protocols that detect, represent, and communicate the real-time availability and contextual state of users or entities within digital and physical environments. It aggregates signals such as location, device activity, calendar status, and explicit user input to publish a presence indicator consumed by communication, collaboration, and ambient computing applications. In extended reality contexts, presence technology additionally encompasses volumetric capture and avatar fidelity systems that convey embodied social presence.",
   "domain": "spatial-computing",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    }
+  ],
   "relations": {
     "relatedTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"},
-      {"@id": "urn:ngm:class:unified-communications", "label": "Unified Communications"},
-      {"@id": "urn:ngm:class:digital-twin", "label": "Digital Twin"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      },
+      {
+        "@id": "urn:ngm:class:unified-communications",
+        "label": "Unified Communications"
+      },
+      {
+        "@id": "urn:ngm:class:digital-twin",
+        "label": "Digital Twin"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"},
-      {"@id": "urn:ngm:class:real-time-communication", "label": "Real-Time Communication"},
-      {"@id": "urn:ngm:class:location-services", "label": "Location Services"}
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-communication",
+        "label": "Real-Time Communication"
+      },
+      {
+        "@id": "urn:ngm:class:location-services",
+        "label": "Location Services"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:social-presence", "label": "Social Presence"},
-      {"@id": "urn:ngm:class:avatar", "label": "Avatar"},
-      {"@id": "urn:ngm:class:collaborative-xr", "label": "Collaborative XR"}
+      {
+        "@id": "urn:ngm:class:social-presence",
+        "label": "Social Presence"
+      },
+      {
+        "@id": "urn:ngm:class:avatar",
+        "label": "Avatar"
+      },
+      {
+        "@id": "urn:ngm:class:collaborative-xr",
+        "label": "Collaborative XR"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:presence-protocol", "label": "Presence Protocol"},
-      {"@id": "urn:ngm:class:volumetric-capture", "label": "Volumetric Capture"}
+      {
+        "@id": "urn:ngm:class:presence-protocol",
+        "label": "Presence Protocol"
+      },
+      {
+        "@id": "urn:ngm:class:volumetric-capture",
+        "label": "Volumetric Capture"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:identity-management", "label": "Identity Management"},
-      {"@id": "urn:ngm:class:network-connectivity", "label": "Network Connectivity"}
+      {
+        "@id": "urn:ngm:class:identity-management",
+        "label": "Identity Management"
+      },
+      {
+        "@id": "urn:ngm:class:network-connectivity",
+        "label": "Network Connectivity"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"},
-      {"@id": "urn:ngm:class:distributed-collaboration", "label": "Distributed Collaboration"}
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      },
+      {
+        "@id": "urn:ngm:class:distributed-collaboration",
+        "label": "Distributed Collaboration"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:sip", "label": "SIP"},
-      {"@id": "urn:ngm:class:xmpp", "label": "XMPP"}
+      {
+        "@id": "urn:ngm:class:sip",
+        "label": "SIP"
+      },
+      {
+        "@id": "urn:ngm:class:xmpp",
+        "label": "XMPP"
+      }
     ]
   },
   "quality": 0.62,

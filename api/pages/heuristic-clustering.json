@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:heuristic-clustering",
+  "title": "Heuristic Clustering",
+  "slug": "heuristic-clustering",
+  "public": true,
+  "classIri": "urn:ngm:class:heuristic-clustering",
+  "domain": "blockchain",
+  "definition": "Heuristic clustering, in blockchain forensics, is the practice of grouping addresses that are inferred to be controlled by the same entity using behavioural heuristics such as common-input-ownership or change-address detection, rather than direct cryptographic proof of common control. It is the core analytic technique used by chain-analysis firms to de-anonymise transaction graphs and attribute activity to real-world actors. Its outputs are probabilistic, and heuristics can misfire against wallets that deliberately break the assumed patterns.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:clustering",
+      "label": "Clustering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.65,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:clustering",
+        "label": "Clustering"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

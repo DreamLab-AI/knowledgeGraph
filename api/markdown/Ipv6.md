@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:internet-protocol",
       "label": "Internet Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
     }
   ],
   "relations": {

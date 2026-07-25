@@ -1,4 +1,0 @@
-- ### Definition
-  - A hardware wallet is a tamper-resistant signing device for private keys; it is a component used by [[Multi-Sig Governance]] schemes that combine multiple independent signers.
-- ### Content
-  - Keys are generated and held in a secure element, and transactions are signed on-device after physical confirmation, defeating host-based malware. In multi-signature setups, several hardware wallets distribute signing authority, raising the bar for theft or coercion and supporting institutional custody controls.

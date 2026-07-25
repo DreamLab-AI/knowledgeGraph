@@ -1,2 +1,0 @@
-- ### Definition
-  - A Selective Forwarding Unit is a media server that routes individual participant streams in multi-party real-time sessions without decoding or mixing them, enabling scalable group video and audio collaboration.

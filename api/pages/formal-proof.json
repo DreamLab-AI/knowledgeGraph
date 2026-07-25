@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:formal-proof",
+  "title": "Formal Proof",
+  "slug": "formal-proof",
+  "public": true,
+  "classIri": "urn:ngm:class:formal-proof",
+  "domain": "distributed-systems",
+  "definition": "A formal proof is a rigorous, mathematically precise derivation that establishes a proposition follows from a set of axioms and inference rules, without reliance on informal argument or empirical testing. In distributed systems theory, formal proofs are used to establish results such as impossibility theorems and the correctness of consensus protocols under stated failure and timing assumptions. They provide the strongest available assurance of correctness, distinguishing rigorously proven properties from properties merely tested or believed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:formal-verification",
+      "label": "Formal Verification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.65,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:formal-verification",
+        "label": "Formal Verification"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -38,8 +38,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:disclosure",
-        "label": "Disclosure"
+        "id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
       }
     ],
     "dependsOn": [

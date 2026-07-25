@@ -23,7 +23,7 @@ public:: true
   "definition": "ROS-Industrial is an open-source project that extends the Robot Operating System with libraries, drivers, and interfaces for industrial manufacturing automation. It provides standardised drivers for industrial robot arms, motion-planning integration, and tools to bring advanced ROS capabilities into factory settings. It bridges research-grade robotics software with production-grade industrial hardware.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}, {"@id": "urn:ngm:class:robot-operating-system", "label": "Robot Operating System"}],
   "relations": {
     "relatedTo": [{"@id": "urn:ngm:class:robot-standard", "label": "Robot Standard"}, {"@id": "urn:ngm:class:industrial-robot", "label": "Industrial Robot"}]
   },

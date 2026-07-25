@@ -28,6 +28,10 @@ alias:: ComputeResources
     {
       "@id": "urn:ngm:class:computational-resources",
       "label": "Computational Resources"
+    },
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "relations": {

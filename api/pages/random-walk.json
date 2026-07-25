@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:random-walk",
+  "title": "Random Walk",
+  "slug": "random-walk",
+  "public": true,
+  "classIri": "urn:ngm:class:random-walk",
+  "domain": "machine-learning",
+  "definition": "A random walk is a stochastic process describing a path formed by a sequence of random steps, each step's direction and size drawn from a probability distribution independent of the path's prior history in the simplest (Markovian) case. It underlies graph embedding techniques such as node2vec and DeepWalk, which sample walks over a graph to learn vector representations of vertices, and is foundational to the theory of Markov chains. Its long-run behaviour \u2014 recurrence, transience, and diffusion rate \u2014 depends on the dimensionality and structure of the underlying space.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stochastic-process",
+      "label": "Stochastic Process"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:stochastic-process",
+        "label": "Stochastic Process"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

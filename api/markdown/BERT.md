@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:language-model",
       "label": "Language Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "sameAs": [

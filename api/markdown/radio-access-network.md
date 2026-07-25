@@ -1,4 +1,0 @@
-- ### Definition
-  - A radio access network connects devices to the mobile core via base stations and the air interface. It operates above the [[Physical Layer]] and depends on [[Wireless Radio]] hardware for transmission.
-- ### Content
-  - The RAN handles scheduling, beamforming, power control, and inter-cell handover. Disaggregated and virtualised RAN (vRAN/Open RAN) split functions into radio, distributed, and centralised units connected by standardised interfaces, lowering vendor lock-in and enabling cloud-native, AI-assisted radio optimisation.

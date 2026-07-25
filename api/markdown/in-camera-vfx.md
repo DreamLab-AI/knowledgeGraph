@@ -1,4 +1,0 @@
-- ### Definition
-  - In-camera VFX captures final-pixel effects live on LED volumes during shooting, a core method of [[Virtual Production (VP)]] performed within a [[Virtual Production Volume]].
-- ### Content
-  - A real-time engine renders the environment to the LED wall, synchronised to the tracked camera so perspective and reflections respond as it moves, while the wall also provides interactive lighting on the subjects. ICVFX reduces compositing work and gives filmmakers immediate creative feedback, at the cost of demanding precise tracking, calibration, and high-performance rendering.

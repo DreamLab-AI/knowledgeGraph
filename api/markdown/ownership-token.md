@@ -1,4 +1,0 @@
-- ### Definition
-  - An Ownership Token is a blockchain token conferring title to an underlying asset, used to represent ownership of [[Digital Goods]] and [[Digital Real Estate]].
-- ### Content
-  - Usually a non-fungible or semi-fungible token, possession in a wallet equates to provable control, and its transfer transfers ownership. This makes ownership tokens the unit through which digital and tokenized real-world assets are traded, collateralized, and granted programmable rights.

@@ -1,2 +1,0 @@
-- ### Definition
-  - Matrix is an open, federated communication protocol that synchronises shared conversation state across decentralised servers, supporting end-to-end encryption and interoperable real-time collaboration.

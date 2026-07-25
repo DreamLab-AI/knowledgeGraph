@@ -1,2 +1,0 @@
-- ### Definition
-  - Multivariate statistics is the branch of statistics concerned with observing and analysing more than one outcome variable simultaneously, covering methods such as covariance and correlation structure, dimensionality reduction, and multivariate hypothesis testing.

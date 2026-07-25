@@ -1,4 +1,0 @@
-- ### Definition
-  - Workflow orchestration sequences interdependent tasks and tool calls into a coherent process; it is the coordination layer of the [[Agentic Systems Domain]] and routes [[Function Calling]] across steps.
-- ### Content
-  - Orchestration may be centralised (a controller dictating each step) or choreographed (components reacting to events), and in agentic systems it interleaves planning, tool invocation, memory retrieval, and result evaluation. Effective orchestration handles partial failures, branching on intermediate results, and concurrency, contrasting with simple linear chaining by supporting dynamic, state-dependent control flow.

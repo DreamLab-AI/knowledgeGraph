@@ -1,4 +1,0 @@
-- ### Definition
-  - The Wiener process is the canonical continuous-time [[Stochastic Process]] with Gaussian increments; it drives the diffusion dynamics underlying many a [[Generative Model]] and the theory of stochastic differential equations.
-- ### Content
-  - Formally, W(0)=0, increments W(t)-W(s) are N(0, t-s) and independent over disjoint intervals, and paths are almost surely continuous yet non-differentiable. It is the integrator in Itô and Stratonovich calculus, appears as the limit of scaled random walks, and provides the forward-noising prior in score-based and denoising-diffusion generative modelling.

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:machine-learning-classifier",
+  "title": "Machine Learning Classifier",
+  "slug": "machine-learning-classifier",
+  "public": true,
+  "classIri": "urn:ngm:class:machine-learning-classifier",
+  "domain": "machine-learning",
+  "definition": "A machine learning classifier is a supervised learning model trained to assign an input to one of a discrete set of predefined categories, based on patterns learned from labelled training examples. Implementations range from logistic regression and decision trees to deep neural networks, selected according to data volume, interpretability needs and accuracy requirements. Classifiers are deployed in screening and enforcement pipelines that must flag entities matching a target category, such as sanctions screening.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supervised-learning",
+      "label": "Supervised Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

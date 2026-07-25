@@ -1,4 +1,0 @@
-- ### Definition
-  - A technical standard enabling virtual asset service providers to exchange originator and beneficiary data mandated by the FATF Travel Rule. It is a core mechanism within the broader [[Travel Rule]] regime and supports [[AML KYC Compliance]].
-- ### Content
-  - These protocols standardise the secure, privacy-preserving messaging of counterparty identity using the IVMS101 data model and transport schemes such as TRP, OpenVASP, and TRISA. Interoperability between providers is the central challenge, since both sender and receiver must support compatible protocols to complete a compliant transfer.

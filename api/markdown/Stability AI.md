@@ -108,8 +108,8 @@ public:: true
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:large-scale-training-data",
-        "label": "Large-Scale Training Data"
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
       }
     ],
     "contrastsWith": [
@@ -264,7 +264,7 @@ public:: true
   - uses:: [[Variational Autoencoder]]
   - uses:: [[U-Net]]
   - requires:: [[GPU Compute]]
-  - requires:: [[Large-Scale Training Data]]
+  - requires:: [[Training Data]]
   - contrastsWith:: [[OpenAI]]
   - contrastsWith:: [[Midjourney]]
   - contrastsWith:: [[Adobe Firefly]]

@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:concurrency",
       "label": "Concurrency"
+    },
+    {
+      "@id": "urn:ngm:class:execution-model",
+      "label": "Execution Model"
     }
   ],
   "relations": {

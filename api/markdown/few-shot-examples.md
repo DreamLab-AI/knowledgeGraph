@@ -1,4 +1,0 @@
-- ### Definition
-  - Few-shot examples are the demonstrations embedded in a prompt to guide a language model by example, forming the payload of [[Few-Shot Prompting]] and a key element of [[Context Engineering]]. They are an [[AI Technique]] exploiting in-context learning.
-- ### Content
-  - Selecting effective few-shot examples involves choosing demonstrations that are representative of the target distribution, formatted consistently, and ordered to avoid recency or majority biases. Because examples consume context-window budget, practitioners balance their number against token limits and may retrieve semantically similar examples dynamically to maximise relevance per prompt.

@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:robot-perception",
       "label": "Robot Perception"
+    },
+    {
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
     }
   ],
   "relations": {

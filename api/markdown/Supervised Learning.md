@@ -59,10 +59,16 @@ alias:: SupervisedLearning
   "domain": "machine-learning",
   "maturity": "emerging",
   "qualityScore": 0.72,
-  "subClassOf": {
-    "@id": "urn:ngm:class:machine-learning",
-    "label": "Machine Learning"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning",
+      "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "sameAs": [
     {
       "@id": "urn:ngm:class:supervised-machine-learning",

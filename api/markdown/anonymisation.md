@@ -1,4 +1,0 @@
-- ### Definition
-  - Anonymisation strips or obscures identifying information so data subjects cannot be recognized. Image techniques overlap with [[Face Swap]] when faces are replaced rather than blurred, and the practice is a core capability of the [[Privacy Domain]].
-- ### Content
-  - Methods trade privacy against utility: aggregation and generalization reduce granularity, differential privacy adds calibrated noise with formal guarantees, and synthetic substitution replaces real identifiers with realistic fakes. The persistent risk is re-identification by linking quasi-identifiers to external datasets, so strong anonymisation is evaluated against realistic attacker models rather than assumed from naive masking.

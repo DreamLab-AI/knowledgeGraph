@@ -1,4 +1,0 @@
-- ### Definition
-  - Consumer trust is the confidence buyers place in a product or supply chain, strengthened by [[Ethical Sourcing]] and reinforced by [[Consumer Protection]] frameworks.
-- ### Content
-  - Trust is earned through verifiable provenance, transparent labelling, and reliable redress, and eroded by opacity or scandal. Digital traceability, certifications, and tamper-evident records let firms substantiate claims about origin, labour conditions, and environmental impact, converting trust from a reputational asset into auditable evidence.

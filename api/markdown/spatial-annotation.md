@@ -1,4 +1,0 @@
-- ### Definition
-  - Spatial annotation is the anchoring of digital notes or markers to precise locations in a 3D physical or virtual scene so they stay registered to real geometry as the viewer moves, a core mechanism behind [[Digital Content Overlay]].
-- ### Content
-  - It depends on spatial mapping and continuous pose tracking to keep each annotation fixed to its target surface or object across sessions and viewpoints. The capability enables an [[AR Overlay]] to support persistent collaborative markup, remote-assist guidance, and shared spatial computing where multiple users see the same anchored content in situ.

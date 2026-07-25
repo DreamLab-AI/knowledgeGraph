@@ -1,4 +1,0 @@
-- ### Definition
-  - A database that stores RDF subject-predicate-object triples and answers SPARQL queries, often with reasoning support. It is the storage backbone for a [[Knowledge Graph]] and the practice of [[Knowledge Graphing]].
-- ### Content
-  - Triple stores index data in permutations such as SPO, POS, and OSP to make graph pattern matching efficient at scale. Many also implement RDFS/OWL reasoning so that implicit facts can be derived through entailment, which is central to ontology-driven knowledge systems.

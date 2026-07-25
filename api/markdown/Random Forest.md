@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:decision-tree",
       "label": "Decision Tree"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

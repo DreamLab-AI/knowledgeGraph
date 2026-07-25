@@ -1,4 +1,0 @@
-- ### Definition
-  - Creative Commons is a suite of public licences that standardise the permissions creators grant for reuse and redistribution of their work. CC licences are a common legal basis for assembling [[Training Data]] corpora.
-- ### Content
-  - Each licence combines modular conditions—attribution, share-alike, non-commercial, no-derivatives—expressed in legal, human-readable, and machine-readable layers. The licences enable interoperable open content ecosystems, though questions of compatibility, attribution at scale, and the licensing of AI training inputs remain active concerns.

@@ -25,12 +25,7 @@
       }
     ],
     "dependsOn": [],
-    "implements": [
-      {
-        "id": "urn:ngm:class:specification",
-        "label": "Specification"
-      }
-    ],
+    "implements": [],
     "contrastsWith": [
       {
         "id": "urn:ngm:class:open-standards",
@@ -43,12 +38,7 @@
         "label": "JSON-LD"
       }
     ],
-    "uses": [
-      {
-        "id": "urn:ngm:class:specification",
-        "label": "Specification"
-      }
-    ],
+    "uses": [],
     "supports": [
       {
         "id": "urn:ngm:class:web-authn",
@@ -67,10 +57,6 @@
     ],
     "partOf": [],
     "relatedTo": [
-      {
-        "id": "urn:ngm:class:specification",
-        "label": "Specification"
-      },
       {
         "id": "urn:ngm:class:user-interface-standard",
         "label": "User Interface Standard"

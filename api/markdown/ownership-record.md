@@ -1,4 +1,0 @@
-- ### Definition
-  - An Ownership Record is a tamper-evident ledger entry binding an asset to its holder, a component of instruments such as [[Renewable Energy Certificates]] and the [[Creator Royalty Token]].
-- ### Content
-  - On-chain ownership records timestamp each transfer, producing an auditable provenance chain that resists forgery. This verifiable title history is what lets tokenized certificates and royalty-bearing assets prove rightful ownership and entitlement without a trusted central registrar.

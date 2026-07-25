@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:product-provenance",
+  "title": "Product Provenance",
+  "slug": "product-provenance",
+  "public": true,
+  "classIri": "urn:ngm:class:product-provenance",
+  "domain": "supply-chain",
+  "definition": "Product provenance is the verifiable record of a product's origin and the chain of custody it has passed through from raw material to end consumer. It is established by capturing and linking events, such as manufacture, inspection and transfer, into an auditable trail, increasingly recorded on distributed ledgers to resist tampering. Platforms such as VeChain implement product provenance by anchoring supply-chain traceability events on-chain so that authenticity claims can be independently verified.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:supply-chain-traceability",
+      "label": "Supply Chain Traceability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ve-chain",
+      "label": "VeChain"
+    }
+  ]
+}

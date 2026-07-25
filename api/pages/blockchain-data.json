@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)"
     }
   ],
   "entityType": "Class",
@@ -42,8 +46,8 @@
         "label": "Audit Trail"
       },
       {
-        "id": "urn:ngm:class:tokenisation",
-        "label": "Tokenisation"
+        "id": "urn:ngm:class:asset-tokenisation",
+        "label": "Asset Tokenisation"
       }
     ],
     "dependsOn": [

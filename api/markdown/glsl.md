@@ -1,4 +1,0 @@
-- ### Definition
-  - GLSL is the shading language used by OpenGL and WebGL; it is invoked through a [[Graphics API]] and programs the programmable stages of the [[Rendering Pipeline]].
-- ### Content
-  - GLSL programs run massively in parallel on the GPU, with vertex shaders transforming geometry and fragment shaders computing per-pixel output, alongside geometry, tessellation, and compute shaders in modern versions. The language provides vector and matrix types, built-in functions for trigonometry and texture sampling, and qualifiers controlling data flow between stages. It compiles within the graphics driver, contrasting with HLSL for Direct3D and the newer SPIR-V intermediate representation used by Vulkan.

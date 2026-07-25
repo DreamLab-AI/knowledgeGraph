@@ -1,4 +1,0 @@
-- ### Definition
-  - An RGB-D camera captures aligned colour and depth per pixel, a sensor commonly required by a [[Robotics Platform]] and used to support [[Depth Estimation]].
-- ### Content
-  - Depth is recovered via structured light, time-of-flight, or active stereo. The combined data stream feeds SLAM, object recognition, and grasp planning, giving robots both what a scene looks like and where its surfaces are.

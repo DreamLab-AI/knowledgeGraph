@@ -1,4 +1,0 @@
-- ### Definition
-  - A motor controller regulates a motor's speed, torque, and direction by modulating delivered power under closed-loop feedback. It is a hardware part of a [[Mobile Robot Platform]] and a [[Telepresence Robot]].
-- ### Content
-  - Controllers commonly drive brushless DC or stepper motors using PWM and field-oriented control, closing loops on encoder and current feedback for precise motion. They expose interfaces such as CAN, EtherCAT, or PWM to the robot's control stack and enforce limits to protect the motor and mechanism.

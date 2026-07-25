@@ -1,4 +1,0 @@
-- ### Definition
-  - Channel Coding adds redundancy to data to enable error detection and correction over noisy channels; [[Forward Error Correction]] is its principal sub-discipline and it operates within the [[Physical Layer]].
-- ### Content
-  - Modern systems pair powerful codes such as LDPC and polar codes with soft-decision decoding to approach theoretical capacity limits in 5G, Wi-Fi, and satellite links. The coding rate sets the trade-off: lower rates add more redundancy for greater resilience at the cost of throughput.

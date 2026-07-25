@@ -1,4 +1,0 @@
-- ### Definition
-  - A navigation stack bundles localisation, planning, and control so a robot can reach a goal autonomously. [[Nav2]] is a concrete implementation, and it is a key component of a [[Ground Robot]].
-- ### Content
-  - Typical stacks separate a global planner that computes a route over a static map from a local planner or controller that reacts to live sensor data and dynamic obstacles. Behaviour trees or state machines coordinate recovery actions when the robot becomes stuck, and costmaps fuse occupancy and proximity data to keep planned motions safe.

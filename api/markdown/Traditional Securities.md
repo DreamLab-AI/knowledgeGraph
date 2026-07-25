@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:financial-instruments",
+      "label": "Financial Instruments"
     }
   ],
   "relations": {

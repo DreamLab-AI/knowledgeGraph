@@ -1,4 +1,0 @@
-- ### Definition
-  - A sandbox environment is an isolated runtime that lets tools like [[GPT-Engineer]] and [[CLI Multi-Agent Systems]] execute generated code safely, containing any errors or malicious behaviour.
-- ### Content
-  - Sandboxing for AI agents typically combines a container or microVM with resource limits, restricted syscalls, and a scoped network policy. This enables iterative code generation, test execution, and tool use while preventing the agent from affecting the broader host or exfiltrating data.

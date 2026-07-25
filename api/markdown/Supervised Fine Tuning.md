@@ -45,10 +45,16 @@ public:: true
   "definition": "A fine-tuning approach that uses labelled training data to adapt a pre-trained model to specific tasks, optimising performance through supervised learning on input-output pairs. Supervised fine-tuning (SFT) represents the most direct path from general pre-training to task-specific capability, and serves as the foundational first stage in multi-stage alignment pipelines such as InstructGPT and Constitutional AI.",
   "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": {
-    "@id": "urn:ngm:class:fine-tuning",
-    "label": "Fine Tuning"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

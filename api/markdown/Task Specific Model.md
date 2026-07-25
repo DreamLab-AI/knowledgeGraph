@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:foundation-model",
       "label": "Foundation Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "relations": {

@@ -62,6 +62,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:layer-1-blockchain",
+      "label": "Layer 1 Blockchain"
     }
   ],
   "relations": {

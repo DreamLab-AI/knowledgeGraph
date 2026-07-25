@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:retraining",
+  "title": "Retraining",
+  "slug": "retraining",
+  "public": true,
+  "classIri": "urn:ngm:class:retraining",
+  "domain": "artificial-intelligence",
+  "definition": "Retraining is the process of updating a deployed machine learning model's parameters using new or additional data, typically triggered when monitoring detects data drift or concept drift that degrades predictive performance. It may involve fine-tuning the existing model on recent data or training a fresh model from scratch on an updated dataset. Retraining cadence and triggers are core concerns of MLOps pipelines that keep production models aligned with the current data distribution.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-training",
+      "label": "Model Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "concept-drift",
+      "label": "Concept Drift"
+    }
+  ]
+}

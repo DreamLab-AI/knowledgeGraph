@@ -1,4 +1,0 @@
-- ### Definition
-  - OpenZeppelin Governor Contracts provide a modular on-chain governance framework that ties proposals and voting to a [[Governance Token]] and supports delegation patterns underlying [[Delegate Democracy]].
-- ### Content
-  - The Governor base integrates token-weighted voting power, configurable quorum and voting periods, and timelock-gated execution. Its modularity lets DAOs compose vote-counting and delegation strategies, making it a common standard for decentralized governance.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Medical simulation recreates clinical scenarios in virtual environments and on mannequins for safe training and planning. It is a part of broader [[Health Metaverse Application]] use cases and is enhanced by [[Motion Capture]] for realistic procedural feedback.
-- ### Content
-  - High-fidelity simulation combines haptics, physiologically driven models, and tracked instruments to teach skills and rehearse rare events. Outcomes-focused programmes measure skill transfer to clinical practice, positioning simulation as both an education tool and a patient-safety intervention.

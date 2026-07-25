@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:cognitive-walkthrough",
+  "title": "Cognitive Walkthrough",
+  "slug": "cognitive-walkthrough",
+  "public": true,
+  "classIri": "urn:ngm:class:cognitive-walkthrough",
+  "domain": "spatial-computing",
+  "definition": "A cognitive walkthrough is a usability inspection method in which evaluators step through a task sequence as a first-time user would, at each step asking whether the user would know what to do, would notice the correct action is available, and would correctly interpret the feedback received. Unlike heuristic evaluation, which checks a design against general usability principles, a cognitive walkthrough focuses specifically on learnability for new users performing a defined task. It is typically conducted early in design, using prototypes rather than finished products.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:usability",
+      "label": "Usability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:usability",
+        "label": "Usability"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

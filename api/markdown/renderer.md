@@ -1,4 +1,0 @@
-- ### Definition
-  - A renderer turns a scene or markup specification into a visual output, consuming formats such as [[Universal Scene Description]] and powering [[Diagrams as Code]] toolchains.
-- ### Content
-  - Real-time renderers prioritise frame rate via rasterisation and GPU pipelines, while offline renderers use path tracing for physically accurate images. Declarative renderers compile structured source, such as diagram or document specs, into deterministic visuals, decoupling content from presentation.

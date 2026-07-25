@@ -1,4 +1,0 @@
-- ### Definition
-  - Player modelling builds data-driven profiles of player behaviour, skill, and intent. It is a required capability within [[AI in Games]] for adaptive difficulty, personalisation, and procedural content generation.
-- ### Content
-  - Techniques span supervised classification of player types, clustering of behavioural traces, and sequence models that predict next actions. Models may be static (player-type taxonomies) or dynamic (online updates during play), and they feed difficulty adjustment, matchmaking, churn prediction, and content recommendation pipelines.

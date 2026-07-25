@@ -1,4 +1,0 @@
-- ### Definition
-  - Governance voting lets token holders decide protocol proposals; it is implemented by a [[Blockchain Protocol]]'s governance module and is typically enabled by holding or delegating a [[Crypto Token]].
-- ### Content
-  - Common schemes include one-token-one-vote, quadratic voting to dampen whale dominance, and delegated voting where holders assign their power to representatives. Votes can be tallied off-chain via signed messages for gas efficiency or settled on-chain for binding execution behind a timelock. Design challenges include voter apathy, plutocracy, vote buying, and ensuring proposals are well-scoped and secure before execution.

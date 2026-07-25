@@ -1,4 +1,0 @@
-- ### Definition
-  - A safety function is a control-system function whose correct operation reduces or limits risk, as required by a [[Robot Standard]]. Its dependability is quantified through metrics such as the [[Safety Integrity Level]].
-- ### Content
-  - Safety functions are decomposed into sensing, logic, and actuation elements, each assigned to safety-rated hardware and software. Standards like ISO 13849 and IEC 62061 define how a required performance level or integrity level constrains architecture, diagnostic coverage, and mean time to dangerous failure for each function.

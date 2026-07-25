@@ -67,8 +67,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:grasping",
-        "label": "Grasping"
+        "@id": "urn:ngm:class:robotic-grasping",
+        "label": "Robotic Grasping"
       },
       {
         "@id": "urn:ngm:class:dexterous-manipulation",

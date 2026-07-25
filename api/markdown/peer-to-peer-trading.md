@@ -1,4 +1,0 @@
-- ### Definition
-  - Peer-to-peer trading is direct asset exchange between parties without a custodial intermediary, enabling mechanisms such as [[NFT Swapping]] and on-chain [[Barter System]] arrangements.
-- ### Content
-  - In decentralised settings, escrow and atomic-swap smart contracts guarantee that either both legs of a trade execute or neither does, eliminating counterparty default. This model supports order-book DEXs, NFT swap protocols, and bilateral barter, trading the convenience of a central matchmaker for self-custody and censorship resistance.

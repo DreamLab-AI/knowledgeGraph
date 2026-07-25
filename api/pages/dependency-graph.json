@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:dependency-graph",
+  "title": "Dependency Graph",
+  "slug": "dependency-graph",
+  "public": true,
+  "classIri": "urn:ngm:class:dependency-graph",
+  "domain": "data",
+  "definition": "A dependency graph is a directed graph in which nodes represent build artefacts, assets or tasks and edges represent a requires-before relationship between them. Traversing the graph in topological order determines a valid build or execution sequence and reveals cycles that would otherwise deadlock a pipeline. Asset and content pipelines rely on dependency graphs to determine what must be rebuilt when a source file changes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graph-theory",
+      "label": "Graph Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:asset-pipeline",
+        "label": "Asset Pipeline"
+      },
+      {
+        "id": "urn:ngm:class:content-pipeline",
+        "label": "Content Pipeline"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

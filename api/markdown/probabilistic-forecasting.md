@@ -1,4 +1,0 @@
-- ### Definition
-  - Probabilistic forecasting predicts future values as distributions with calibrated uncertainty rather than single points. It is enabled by the [[Probabilistic Model]] and is a specialised form of [[Time-Series Forecasting]].
-- ### Content
-  - Methods include quantile regression, Bayesian models, deep generative time-series models, and ensembles, evaluated with proper scoring rules such as the continuous ranked probability score and quantile loss. Well-calibrated probabilistic forecasts let decision-makers reason about tail risk and set safety stock, reserves, or hedges according to their risk tolerance rather than a single expected value.

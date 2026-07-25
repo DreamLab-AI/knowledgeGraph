@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:discrete-event-simulation",
+  "title": "Discrete Event Simulation",
+  "slug": "discrete-event-simulation",
+  "public": true,
+  "classIri": "urn:ngm:class:discrete-event-simulation",
+  "domain": "artificial-intelligence",
+  "definition": "Discrete event simulation is a modelling technique that represents a system as a sequence of distinct events occurring at specific points in time, advancing the simulation clock directly from one event to the next rather than in fixed time steps. Each event triggers state changes and may schedule further events, typically processed in timestamp order via a priority queue. It is widely used to model queuing systems, logistics networks, and multi-agent interactions where continuous-time simulation would be computationally wasteful.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:simulation",
+      "label": "Simulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:priority-queue",
+        "label": "Priority Queue"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    }
+  ]
+}

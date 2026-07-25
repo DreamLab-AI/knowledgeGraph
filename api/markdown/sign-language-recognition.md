@@ -1,4 +1,0 @@
-- ### Definition
-  - Sign language recognition translates signed gestures into text or speech by modelling hand shape, motion, and facial cues. It is enabled and supported by accurate [[Hand Tracking]] and advances accessible [[Human-Computer Interaction]].
-- ### Content
-  - Modern systems combine pose-estimation backbones with temporal models such as transformers or CTC-trained recurrent networks to handle continuous signing and coarticulation. Challenges include signer variation, limited annotated corpora, and capturing the simultaneous non-manual markers that carry grammatical meaning.

@@ -1,2 +1,0 @@
-- ### Definition
-  - Mathematical Optimisation is the discipline of finding input values that minimise or maximise an objective function subject to constraints, forming the mathematical foundation of machine learning and many AI algorithms.

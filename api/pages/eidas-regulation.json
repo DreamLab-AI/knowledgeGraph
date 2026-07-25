@@ -23,8 +23,8 @@
         "label": "Certificate Authority"
       },
       {
-        "id": "urn:ngm:class:pki",
-        "label": "PKI"
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "enables": [
@@ -66,8 +66,8 @@
         "label": "Digital Signature"
       },
       {
-        "id": "urn:ngm:class:pki",
-        "label": "PKI"
+        "id": "urn:ngm:class:public-key-infrastructure",
+        "label": "Public Key Infrastructure"
       }
     ],
     "supports": [

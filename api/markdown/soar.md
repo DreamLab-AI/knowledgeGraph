@@ -1,4 +1,0 @@
-- ### Definition
-  - SOAR (Security Orchestration, Automation and Response) is a [[Cybersecurity]] platform category that automates and orchestrates incident response through codified playbooks across heterogeneous detection and response tools.
-- ### Content
-  - A SOAR system ingests alerts, enriches them with threat intelligence, and triggers graded automated actions, sharply reducing analyst toil and mean time to respond. Within [[Cyber Security and Cryptography]] operations it acts as the connective layer between SIEM, EDR, and ticketing tools, and increasingly incorporates [[Cognitive AI]] techniques to prioritise and reason over incoming signals.

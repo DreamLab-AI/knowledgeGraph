@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:chivo-wallet",
+  "title": "Chivo Wallet",
+  "slug": "chivo-wallet",
+  "public": true,
+  "classIri": "urn:ngm:class:chivo-wallet",
+  "domain": "blockchain",
+  "definition": "Chivo Wallet is the state-sponsored digital wallet application launched by the government of El Salvador in 2021 to support the country's adoption of bitcoin as legal tender. It allows citizens to hold and transact in both bitcoin and US dollars, including a signup bonus paid in bitcoin, with zero transaction fees within the network. It has been central to El Salvador's Bitcoin Law rollout and is frequently cited in analyses of state-level cryptocurrency adoption.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-wallet",
+      "label": "Digital Wallet"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-wallet",
+        "label": "Digital Wallet"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    }
+  ]
+}

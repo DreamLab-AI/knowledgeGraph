@@ -1,4 +1,0 @@
-- ### Definition
-  - Real-time collaborative editing lets multiple users edit shared content concurrently with automatic merge. It is enabled and supported by [[CRDT]] structures that guarantee eventual consistency without a central coordinator.
-- ### Content
-  - Two dominant approaches exist: operational transformation, which rewrites concurrent operations against each other, and CRDTs, which define commutative merge semantics so replicas converge regardless of operation order. CRDT-based designs suit peer-to-peer and offline-first editing, while OT is common in centralised document services.

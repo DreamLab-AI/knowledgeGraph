@@ -1,4 +1,0 @@
-- ### Definition
-  - An Encryption Protocol is a rule set and message flow that uses cryptography to establish keys and protect data confidentiality and integrity. [[TLS 1.3]] is a leading example, and such protocols form part of any [[Cybersecurity Standard]].
-- ### Content
-  - Protocols define the handshake, cipher-suite negotiation, key-exchange method, and authentication needed for interoperable secure sessions. Modern designs favour forward secrecy, authenticated encryption, and reduced round trips, as exemplified by TLS 1.3's streamlined, more secure handshake.

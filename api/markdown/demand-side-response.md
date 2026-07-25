@@ -1,4 +1,0 @@
-- ### Definition
-  - Demand-side response shifts or curtails consumer electricity use in response to grid and price signals. Open automation platforms such as [[Home Assistant]] can implement it by orchestrating smart loads around tariff and carbon-intensity data.
-- ### Content
-  - Typical actions include pre-heating before a price peak, scheduling EV charging to off-peak windows, and shedding non-critical loads during scarcity. Aggregated across many homes via virtual power plants, demand-side response provides grid services comparable to peaking plants while lowering household bills.

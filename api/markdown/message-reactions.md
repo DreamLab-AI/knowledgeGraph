@@ -1,2 +1,0 @@
-- ### Definition
-  - Lightweight emoji-based acknowledgements attached to individual messages that provide low-friction, asynchronous feedback without generating additional message threads.

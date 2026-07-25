@@ -26,6 +26,10 @@ public:: true
     {
       "@id": "urn:ngm:class:confusion-matrix",
       "label": "Confusion Matrix"
+    },
+    {
+      "@id": "urn:ngm:class:model-performance",
+      "label": "Model Performance"
     }
   ],
   "relations": {

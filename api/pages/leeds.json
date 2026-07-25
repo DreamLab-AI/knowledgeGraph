@@ -24,8 +24,8 @@
         "label": "Financial Technology"
       },
       {
-        "id": "urn:ngm:class:digital-innovation",
-        "label": "Digital Innovation"
+        "id": "urn:ngm:class:innovation",
+        "label": "Innovation"
       }
     ],
     "dependsOn": [],

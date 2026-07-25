@@ -82,8 +82,8 @@
         "label": "AI Agent Coordination"
       },
       {
-        "id": "urn:ngm:class:autonomous-agents",
-        "label": "Autonomous Agents"
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       },
       {
         "id": "urn:ngm:class:fault-tolerance",

@@ -1,4 +1,0 @@
-- ### Definition
-  - Lifecycle management coordinates an asset across creation, operation, and retirement; it enables [[Digital Twin Creation]] to persist usefully and keeps a [[Construction Digital Twin]] aligned with its physical counterpart over time.
-- ### Content
-  - Effective lifecycle management captures versioned state, change history, and maintenance events so that decisions remain traceable. In built-environment contexts it links design, construction, and operational data, allowing the twin to support inspection, retrofit, and end-of-life planning.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Interactive filmmaking lets audiences shape narrative or viewpoint in real time, merging cinema with interactivity. It is enabled by the [[Virtual Production Volume]] and broader [[Virtual Production (VP)]] techniques.
-- ### Content
-  - Real-time engines render branching scenes, dynamic camera paths, and audience-responsive events without re-shooting. LED volumes and in-camera VFX make live reconfiguration of sets and lighting feasible, supporting both linear films with choice points and fully responsive experiences.

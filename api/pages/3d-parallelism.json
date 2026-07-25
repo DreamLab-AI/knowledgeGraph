@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:3d-parallelism",
+  "title": "3D Parallelism",
+  "slug": "3d-parallelism",
+  "public": true,
+  "classIri": "urn:ngm:class:3d-parallelism",
+  "domain": "machine-learning",
+  "definition": "3D parallelism is a distributed training strategy that combines data parallelism, tensor parallelism and pipeline parallelism along three independent axes to train models too large for a single accelerator or single parallelism scheme alone. Each axis partitions a different dimension of the problem: data parallelism splits the batch, tensor parallelism splits individual layers across devices, and pipeline parallelism splits the layer stack across stages. Frameworks such as Megatron-LM and DeepSpeed implement 3D parallelism to scale training to thousands of GPUs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-training",
+      "label": "Distributed Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

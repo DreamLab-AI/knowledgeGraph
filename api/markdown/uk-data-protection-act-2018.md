@@ -1,4 +1,0 @@
-- ### Definition
-  - The primary UK statute governing personal-data processing, supplementing the UK GDPR with data-subject rights, lawful bases, and ICO enforcement. It constrains practices such as [[Digital Society Surveillance]] and data handling by tools like a [[Meeting AI Assistant]].
-- ### Content
-  - The Act covers general processing, law enforcement, and intelligence-service regimes, alongside provisions for special-category data and exemptions. Compliance obligates organisations to uphold the data-protection principles, conduct impact assessments, and respond to rights requests, with significant penalties for breaches.

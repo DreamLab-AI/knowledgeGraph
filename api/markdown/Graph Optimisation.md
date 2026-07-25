@@ -26,6 +26,10 @@ public:: true
     {
       "@id": "urn:ngm:class:model-optimisation-and-performance",
       "label": "Model Optimisation and Performance"
+    },
+    {
+      "@id": "urn:ngm:class:inference-optimisation",
+      "label": "Inference Optimisation"
     }
   ],
   "relations": {

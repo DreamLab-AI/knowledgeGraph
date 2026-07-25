@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:extended-reality",
       "label": "Extended Reality"
+    },
+    {
+      "id": "urn:ngm:class:augmented-reality-ar",
+      "label": "Augmented Reality (AR)"
     }
   ],
   "entityType": "Class",

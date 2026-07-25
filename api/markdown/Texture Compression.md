@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
     }
   ],
   "relations": {

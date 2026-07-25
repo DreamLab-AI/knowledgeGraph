@@ -1,4 +1,0 @@
-- ### Definition
-  - Environmental sensing acquires physical-world data such as temperature, light, and proximity, supplying the perceptual input behind [[Context Awareness]] and built on the [[Sensor]] layer.
-- ### Content
-  - Sensors transduce physical phenomena into signals that perception pipelines fuse into a model of the surroundings. This situational data drives adaptive behaviour in robots, IoT systems, and context-aware applications.

@@ -1,4 +1,0 @@
-- ### Definition
-  - JMLR is a leading open-access journal whose peer-reviewed articles define and validate methods spanning the [[Probabilistic Model]] and [[Learning Algorithm]] literature.
-- ### Content
-  - Operated by volunteer editors and freely accessible since its founding, JMLR set an early precedent for open scholarly publishing in machine learning. Its rigorous review process and the influence of its publications make it a de facto standardizing reference point for theory, methodology and reproducible software in the discipline.

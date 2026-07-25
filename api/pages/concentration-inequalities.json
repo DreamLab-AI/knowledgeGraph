@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:concentration-inequalities",
+  "title": "Concentration Inequalities",
+  "slug": "concentration-inequalities",
+  "public": true,
+  "classIri": "urn:ngm:class:concentration-inequalities",
+  "domain": "machine-learning",
+  "definition": "Concentration inequalities are probabilistic bounds \u2014 such as Markov's, Chebyshev's, Hoeffding's and Chernoff's inequalities \u2014 that quantify how tightly a random variable, typically a sum or average, concentrates around its expected value. In machine learning they provide the mathematical basis for generalisation bounds, showing how closely empirical risk on a finite sample tracks true risk as sample size grows. They are a core analytical tool within statistical learning theory and underpin bias-variance and PAC-learning arguments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistical-learning-theory",
+      "label": "Statistical Learning Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:statistical-learning-theory",
+        "label": "Statistical Learning Theory"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "algorithmic-bias-and-variance",
+      "label": "Algorithmic Bias and Variance"
+    }
+  ]
+}

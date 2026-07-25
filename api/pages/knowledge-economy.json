@@ -4,7 +4,7 @@
   "slug": "knowledge-economy",
   "public": true,
   "classIri": "urn:ngm:class:knowledge-economy",
-  "domain": "economics",
+  "domain": "artificial-intelligence",
   "definition": "The knowledge economy is an economic system in which the production, dissemination, and exploitation of information and intellectual capability, rather than physical inputs, are the primary drivers of growth, productivity, and competitive advantage.",
   "subClassOf": [
     {

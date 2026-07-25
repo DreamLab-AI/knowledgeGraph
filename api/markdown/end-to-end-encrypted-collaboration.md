@@ -1,2 +1,0 @@
-- ### Definition
-  - End-to-end encrypted collaboration ensures that shared documents and messages are encrypted on participants' devices and remain unreadable to servers or intermediaries, requiring client-side approaches to conflict resolution and access control.

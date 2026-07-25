@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:independent-living",
+  "title": "Independent Living",
+  "slug": "independent-living",
+  "public": true,
+  "classIri": "urn:ngm:class:independent-living",
+  "domain": "robotics",
+  "definition": "Independent living is the outcome of enabling people with disabilities, reduced mobility or age-related impairment to carry out daily activities and remain in their own homes with minimal reliance on carers. It is supported by accessibility technology and assistive robotics that compensate for physical or cognitive limitations, such as mobility aids, environmental sensors and robotic assistance with domestic tasks. As a design goal it shapes requirements for assistive systems, prioritising safety, dignity and user autonomy over full automation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:assistive-robotics",
+      "label": "Assistive Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    }
+  ]
+}

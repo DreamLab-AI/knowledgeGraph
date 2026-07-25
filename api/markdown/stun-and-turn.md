@@ -1,2 +1,0 @@
-- ### Definition
-  - STUN and TURN are NAT-traversal protocols that enable WebRTC peers to discover their public network addresses and relay traffic through a server when direct peer-to-peer connectivity is not possible.

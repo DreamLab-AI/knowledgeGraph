@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure"
+    },
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
     }
   ],
   "entityType": "Class",
@@ -68,8 +72,8 @@
         "label": "Encryption"
       },
       {
-        "id": "urn:ngm:class:aes",
-        "label": "AES"
+        "id": "urn:ngm:class:aes-encryption",
+        "label": "AES Encryption"
       }
     ],
     "supports": [],

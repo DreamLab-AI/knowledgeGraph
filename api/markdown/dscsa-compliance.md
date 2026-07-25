@@ -1,4 +1,0 @@
-- ### Definition
-  - DSCSA Compliance is adherence to the U.S. Drug Supply Chain Security Act, mandating serialised, interoperable, unit-level tracing of prescription drugs. It is a core requirement of the [[Pharmaceutical Supply Chain]] and is supported by [[Cold Chain Monitoring]].
-- ### Content
-  - Compliance entails applying unique product identifiers, exchanging transaction information between trading partners, and verifying suspect product to prevent counterfeit drugs. Track-and-trace systems, often built on serialisation databases or distributed ledgers, provide the auditable provenance the Act requires.

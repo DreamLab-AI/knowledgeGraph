@@ -1,4 +1,0 @@
-- ### Definition
-  - A feedback sensor measures an actuator's actual state and returns it to the controller to close the loop, which is why a [[DC Servo Motor]] and a [[Hydraulic Actuator]] require one for precise control. It is a specialised kind of [[Sensor]].
-- ### Content
-  - Feedback sensors supply the measured variable in closed-loop control, enabling proportional-integral-derivative and more advanced controllers to drive error toward zero despite load changes and disturbances. Sensor resolution, bandwidth, and noise directly bound achievable control accuracy and stability, so encoder counts, sampling rates, and signal conditioning are critical design parameters in servo and hydraulic actuation systems.

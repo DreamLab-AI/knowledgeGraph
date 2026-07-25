@@ -1,2 +1,0 @@
-- ### Definition
-  - A composited image or video replacing the real camera background in video calls, enabling privacy and visual consistency for remote participants.

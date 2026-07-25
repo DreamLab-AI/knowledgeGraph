@@ -1,4 +1,0 @@
-- ### Definition
-  - Geographic distribution spreads resources across regions to cut latency and survive localised failures, and is a defining property of a globally deployed [[Distributed Architecture]].
-- ### Content
-  - Multi-region deployments replicate data and services close to users, using techniques such as geo-routing, edge caching, and regional failover. They force explicit choices on the consistency-availability spectrum, since synchronous cross-region replication adds latency while asynchronous replication risks staleness. Data-sovereignty and compliance rules often dictate where particular data may physically reside.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Symbol grounding is the challenge of linking a system's internal symbols to real-world referents so they acquire intrinsic meaning, a prerequisite for [[Cognitive AI]] that genuinely understands rather than merely manipulates tokens.
-- ### Content
-  - Harnad's formulation highlights that a purely symbolic system risks circularity, defining symbols only in terms of other ungrounded symbols. Proposed solutions connect symbols to sensorimotor data, embodiment, or multimodal perception so that representations are anchored in interaction with the environment. The question resurfaces with large language models, where critics argue text-only training leaves symbols ungrounded while others contend that rich statistical structure provides a weaker but functional grounding.

@@ -23,10 +23,16 @@ public:: true
   "definition": "Decision Support refers to the class of information systems, analytical frameworks, and AI-augmented tools designed to improve the quality, speed, and consistency of human or automated decision-making by surfacing relevant data, models, and recommendations at the point of choice. Modern decision support systems integrate structured data from enterprise systems with unstructured signals from documents, sensor streams, and language models to present synthesised options with associated confidence levels and risk profiles. They range from simple rule-based dashboards to sophisticated agentic pipelines that autonomously gather evidence, run simulations, and present ranked courses of action. The field spans domains including clinical medicine, financial trading, military command, supply chain management, and public policy.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": {
-    "@id": "urn:ngm:class:artificial-intelligence",
-    "label": "Artificial Intelligence"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

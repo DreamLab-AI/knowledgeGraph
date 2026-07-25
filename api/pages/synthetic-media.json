@@ -86,8 +86,8 @@
         "label": "Large Language Model"
       },
       {
-        "id": "urn:ngm:class:neural-text-to-speech",
-        "label": "Neural Text-to-Speech"
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
       },
       {
         "id": "urn:ngm:class:video-generation",

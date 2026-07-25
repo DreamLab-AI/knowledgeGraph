@@ -52,8 +52,8 @@ public:: true
         "label": "Secure Enclave"
       },
       {
-        "@id": "urn:ngm:class:challenge-response-authentication",
-        "label": "Challenge-Response Authentication"
+        "@id": "urn:ngm:class:challenge-response-protocol",
+        "label": "Challenge-Response Protocol"
       }
     ],
     "enables": [

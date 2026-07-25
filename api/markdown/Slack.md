@@ -44,7 +44,7 @@ public:: true
         "label": "Asynchronous Communication"
       },
       {
-        "@id": "urn:ngm:class:websocket",
+        "@id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       },
       {

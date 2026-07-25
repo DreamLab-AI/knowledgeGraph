@@ -1,4 +1,0 @@
-- ### Definition
-  - Photorealistic synthesis produces imagery indistinguishable from photographs, enabling high-end [[Proprietary Image Generation]] and realistic [[Procedural and Hybrid 4D]] content.
-- ### Content
-  - Generative approaches learn the distribution of natural images so sampled outputs exhibit plausible light transport, material response, and fine texture, while physically based renderers compute realism from explicit scene physics. The capability powers synthetic media, visual effects, and simulation, and simultaneously drives concerns about deepfakes and the need for provenance and watermarking.

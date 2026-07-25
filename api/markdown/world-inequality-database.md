@@ -1,4 +1,0 @@
-- ### Definition
-  - The World Inequality Database is an open repository of harmonised income- and wealth-distribution series, the primary empirical source for research on [[Global Inequality]] and distributional [[Economics]].
-- ### Content
-  - WID combines fiscal data, national accounts, and surveys using the Distributional National Accounts methodology to reconcile macro totals with micro distributions, yielding consistent top-share and percentile series across countries and decades. Its open access and methodological transparency make it a benchmark dataset, while coverage gaps in low-data regions and reliance on modelling assumptions are recognised limitations.

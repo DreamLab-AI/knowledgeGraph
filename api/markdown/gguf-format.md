@@ -1,4 +1,0 @@
-- ### Definition
-  - GGUF is a unified binary container for quantized LLM weights and metadata; it is a key part of [[Model Optimisation and Performance]] workflows and is used by [[Open Generative AI Tools]] for local inference.
-- ### Content
-  - A GGUF file bundles tensors, hyperparameters, and tokenizer information with a versioned, extensible header, enabling memory-mapped loading and forward compatibility. It supports many quantization levels (e.g. 2-bit through 8-bit and k-quant variants) that trade accuracy for reduced memory footprint. This makes large models runnable on CPUs and modest GPUs, broadening access to local and offline inference.

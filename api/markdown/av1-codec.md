@@ -1,4 +1,0 @@
-- ### Definition
-  - The AV1 codec is an open, royalty-free video compression standard used to encode high-quality video efficiently, including for low-latency [[Screen Sharing]].
-- ### Content
-  - AV1 uses advanced tools such as larger block partitioning, improved motion compensation, and a constrained directional enhancement filter to outperform earlier codecs. Encoding is computationally expensive, so real-time use depends on hardware acceleration or tuned software encoders.

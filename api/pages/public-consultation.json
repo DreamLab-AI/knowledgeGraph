@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:public-consultation",
+  "title": "Public Consultation",
+  "slug": "public-consultation",
+  "public": true,
+  "classIri": "urn:ngm:class:public-consultation",
+  "domain": "governance",
+  "definition": "Public consultation is a formal process by which government bodies or organisations solicit input from affected individuals and groups before finalising a policy, regulation, or major decision, typically through published proposals, comment periods, and hearings. It is a specific, structured mechanism of stakeholder participation intended to widen legitimacy and surface concerns that internal deliberation might miss. Public consultation outcomes are commonly published alongside a summary of how the feedback shaped the final decision.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stakeholder-participation",
+      "label": "Stakeholder Participation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - Reference frames are the coordinate systems against which spatial quantities are expressed, related to one another through [[Coordinate Transformation]] and consumed by every [[Kinematics Model]].
-- ### Content
-  - Typical frames include the world (inertial) frame, base frame, end-effector frame, and per-sensor frames, organised into a transform tree. Software such as the ROS tf system maintains time-stamped relationships between frames so that data captured in one frame can be reasoned about in another.

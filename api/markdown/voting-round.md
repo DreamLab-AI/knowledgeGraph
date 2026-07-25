@@ -1,4 +1,0 @@
-- ### Definition
-  - A voting round is one structured phase of vote exchange in a [[Consensus Mechanism]], the mechanism by which [[Byzantine Fault Tolerance]] protocols converge on a single agreed value.
-- ### Content
-  - Rounds typically require a 2f+1 supermajority among 3f+1 nodes to tolerate f Byzantine faults, with a leader or proposer driving each round and view-change subprotocols handling leader failure. The number of message rounds and the quorum certificate design directly govern latency and communication complexity, motivating pipelined variants such as HotStuff.

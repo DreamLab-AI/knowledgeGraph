@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:hyperparameter-optimisation",
       "label": "Hyperparameter Optimisation"
+    },
+    {
+      "@id": "urn:ngm:class:hyperparameter-tuning",
+      "label": "Hyperparameter Tuning"
     }
   ],
   "relations": {

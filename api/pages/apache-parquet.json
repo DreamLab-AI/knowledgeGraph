@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "id": "urn:ngm:class:data-format",
+      "label": "Data Format"
     }
   ],
   "entityType": "Class",
@@ -19,8 +23,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:file-format",
-        "label": "File Format"
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
       }
     ],
     "enables": [
@@ -47,8 +51,8 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:file-format",
-        "label": "File Format"
+        "id": "urn:ngm:class:data-format",
+        "label": "Data Format"
       }
     ],
     "bridgesTo": [

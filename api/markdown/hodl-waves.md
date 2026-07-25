@@ -1,4 +1,0 @@
-- ### Definition
-  - HODL Waves is an age-banded on-chain metric that implements a view of [[Bitcoin Distribution]], partitioning supply by how long coins have remained unspent.
-- ### Content
-  - Each band aggregates UTXOs by last-moved age, so widening older bands signals long-term holding and conviction while expanding young bands indicates active trading. Analysts read shifts between bands around market tops and bottoms to gauge whether supply is being accumulated by patient holders or sold into rallies.

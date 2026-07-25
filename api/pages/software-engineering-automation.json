@@ -1,0 +1,82 @@
+{
+  "id": "urn:visionflow:page:software-engineering-automation",
+  "title": "Software Engineering Automation",
+  "slug": "software-engineering-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:software-engineering-automation",
+  "domain": "ai",
+  "definition": "Software engineering automation is the application of AI agents and tooling to perform software development tasks -- code generation, testing, refactoring and deployment -- with reduced human intervention. It builds on agent harnesses and autonomous task execution to let coding agents plan, execute and verify multi-step engineering work directly in a terminal or IDE. It underpins the current generation of terminal and IDE coding agents that operate over real codebases and toolchains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:agent-harness",
+        "label": "Agent Harness"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:autonomous-task-execution",
+        "label": "Autonomous Task Execution"
+      },
+      {
+        "id": "urn:ngm:class:terminal-coding-agents",
+        "label": "Terminal Coding Agents"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
+    }
+  ]
+}

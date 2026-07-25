@@ -59,8 +59,8 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:multilateral-cooperation",
-        "label": "Multilateral Cooperation"
+        "@id": "urn:ngm:class:international-cooperation",
+        "label": "International Cooperation"
       },
       {
         "@id": "urn:ngm:class:data-sharing",

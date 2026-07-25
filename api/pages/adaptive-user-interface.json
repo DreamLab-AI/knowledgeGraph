@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:adaptive-user-interface",
+  "title": "Adaptive User Interface",
+  "slug": "adaptive-user-interface",
+  "public": true,
+  "classIri": "urn:ngm:class:adaptive-user-interface",
+  "domain": "spatial-computing",
+  "definition": "An adaptive user interface is an interface that automatically changes its layout, content, or interaction style in response to context such as user behaviour, device, or measured emotional or cognitive state, rather than presenting a single fixed design to all users. It is a subject of human-computer interaction research and is enabled in emerging systems by emotional analytics engines that infer user state in real time. The goal is to reduce cognitive load and improve task efficiency by matching interface complexity to the user's current needs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-computer-interaction",
+      "label": "Human Computer Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human Computer Interaction"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "emotional-analytics-engine",
+      "label": "Emotional Analytics Engine"
+    }
+  ]
+}

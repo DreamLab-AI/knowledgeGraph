@@ -1,4 +1,0 @@
-- ### Definition
-  - Multimodal reasoning lets a model combine [[Vision-Language Model]] inputs and other modalities, using mechanisms such as [[Attention]] to fuse signals and infer conclusions that no single channel supports alone.
-- ### Content
-  - Modern systems achieve this by projecting each modality into a common embedding space and applying cross-attention so tokens from one modality can condition on another. The approach powers visual question answering, chart and document comprehension, and agentic perception, but remains sensitive to modality imbalance and hallucination when one channel is weak or contradictory.

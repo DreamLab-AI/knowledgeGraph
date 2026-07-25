@@ -1,4 +1,0 @@
-- ### Definition
-  - GDPR Article 22 compliance enforces individuals' rights regarding solely-automated decisions, standardising how [[Policy Enforcement]] systems must build in human oversight, contestability, and transparency.
-- ### Content
-  - The provision applies when automated processing alone produces legal or similarly significant effects, permitting it only under specific conditions such as explicit consent, contractual necessity, or authorising law with safeguards. Controllers must implement human review, allow data subjects to express their view and contest outcomes, and provide meaningful explanation. It interacts closely with broader AI governance and accountability obligations.

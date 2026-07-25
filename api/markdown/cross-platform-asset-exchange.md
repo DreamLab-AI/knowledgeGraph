@@ -1,4 +1,0 @@
-- ### Definition
-  - Cross-platform asset exchange is the transfer of 3D assets between virtual platforms with fidelity intact. It is enabled by open [[3D File Format]] standards and by broad [[Standard Format Support]] in tools and engines.
-- ### Content
-  - Exchange relies on formats such as glTF, USD, and FBX that encode geometry, materials, and animation in portable, well-specified ways. True interoperability requires consistent material and physics semantics across runtimes, so divergence in shading models, scale, and rigging conventions remains the practical barrier to seamless asset portability.

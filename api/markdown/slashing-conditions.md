@@ -1,4 +1,0 @@
-- ### Definition
-  - Slashing conditions are the provable validator faults a proof-of-stake chain punishes by burning or redistributing stake, encoded directly in protocol logic. They are implemented by a [[Blockchain Protocol]] and are integral to [[Proof-of-Stake Sustainability]].
-- ### Content
-  - The conditions and their penalty curves define how expensive it is to attack finality, with correlated faults penalised more heavily to deter coordinated misbehaviour. By substituting bonded capital for energy as the security budget, well-tuned slashing conditions let proof-of-stake match proof-of-work security at a fraction of the energy cost.

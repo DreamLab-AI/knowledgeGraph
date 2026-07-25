@@ -1,4 +1,0 @@
-- ### Definition
-  - Compliance testing systematically verifies that a system meets a defined [[Technical Standard]] or regulatory requirement, producing repeatable measurements checked against documented acceptance criteria. It underpins the broader [[Validation Process]].
-- ### Content
-  - Test procedures specify the input conditions, instrumentation, and tolerance bands required to reach a verdict. In fields such as [[Display Metrology]], compliance testing converts subjective quality claims into measurable, auditable evidence that supports certification and market access.

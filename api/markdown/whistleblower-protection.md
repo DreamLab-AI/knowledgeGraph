@@ -1,4 +1,0 @@
-- ### Definition
-  - Whistleblower protection shields insiders who report wrongdoing or unmitigated risk from retaliation; it is a key enforcement mechanism in the [[California AI Bill]] and broader [[Regulatory Compliance]] regimes.
-- ### Content
-  - In frontier-AI statutes, these provisions typically prohibit enforcing contractual clauses that would prevent employees from disclosing risk information to authorities, require internal anonymous reporting channels, and grant remedies for retaliation. The aim is to surface safety concerns that internal incentives might otherwise suppress, complementing mandatory disclosure and audit requirements.

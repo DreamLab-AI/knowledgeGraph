@@ -24,7 +24,7 @@ public:: true
   "definition": "Time of Flight (ToF) is a sensing technique that determines the distance to an object by measuring the elapsed time between the emission of a signal — typically light, sound, or radio waves — and the detection of its reflection. In depth sensing, ToF cameras emit pulsed or modulated infrared light and record the per-pixel round-trip delay to construct a dense depth map. ToF sensors are widely deployed in robotics, autonomous vehicles, augmented reality, and gesture recognition due to their ability to produce real-time depth data without ambient light dependency.",
   "domain": "robotics",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}],
+  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}, {"@id": "urn:ngm:class:proximity-sensor", "label": "Proximity Sensor"}],
   "relations": {
     "uses": [
       {"@id": "urn:ngm:class:infrared-sensing", "label": "Infrared Sensing"},
@@ -36,7 +36,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:depth-sensing", "label": "Depth Sensing"},
-      {"@id": "urn:ngm:class:3d-reconstruction", "label": "3D Reconstruction"},
+      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
       {"@id": "urn:ngm:class:obstacle-detection", "label": "Obstacle Detection"}
     ],
     "supports": [

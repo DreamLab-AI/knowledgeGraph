@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
     }
   ],
   "relations": {

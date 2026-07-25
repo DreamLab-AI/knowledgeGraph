@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:internet-protocol",
       "label": "Internet Protocol"
+    },
+    {
+      "id": "urn:ngm:class:network-infrastructure",
+      "label": "Network Infrastructure"
     }
   ],
   "entityType": "Class",

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:passkey",
+  "title": "Passkey",
+  "slug": "passkey",
+  "public": true,
+  "classIri": "urn:ngm:class:passkey",
+  "domain": "security",
+  "definition": "A passkey is a phishing-resistant, passwordless credential built on WebAuthn and FIDO2 public-key cryptography, stored on a device or synced across a user's devices via a platform cloud account. Authentication proceeds by the device signing a server-issued challenge with a private key that never leaves secure hardware, eliminating shared secrets that can be phished, leaked, or reused. Passkeys are backed by biometric or PIN unlock at the device level and are promoted jointly by Apple, Google, and Microsoft as a replacement for passwords. They require a compatible authenticator and relying-party support to function.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication-mechanism",
+      "label": "Authentication Mechanism"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    }
+  ]
+}

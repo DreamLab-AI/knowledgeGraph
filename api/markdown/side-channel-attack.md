@@ -1,4 +1,0 @@
-- ### Definition
-  - A side-channel attack extracts secrets by measuring physical leakage such as timing, power, or electromagnetic emissions instead of attacking the algorithm directly. It threatens implementations of primitives like a [[Hash Function]] and is a central concern of [[Cryptography Security and Privacy]].
-- ### Content
-  - Classic examples include timing attacks on modular exponentiation, differential power analysis, and cache-timing attacks such as those underlying Spectre-class vulnerabilities. Defences include constant-time execution, blinding, masking, and noise injection, none of which are visible at the level of the mathematical specification.

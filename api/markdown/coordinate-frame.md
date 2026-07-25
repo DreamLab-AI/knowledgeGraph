@@ -1,4 +1,0 @@
-- ### Definition
-  - A coordinate frame is an origin-and-axes reference for measuring pose and motion, required to interpret data from an [[Exteroceptive Sensor]] and to perform [[Collision Detection]].
-- ### Content
-  - Frames are linked by homogeneous transforms forming a tree (for example via ROS tf), letting a system convert measurements between sensor, robot, and world references. Errors in frame definitions or transform chains produce systematic offsets that corrupt mapping, planning, and manipulation.

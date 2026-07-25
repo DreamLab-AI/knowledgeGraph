@@ -26,6 +26,10 @@ public:: true
     {
       "@id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:remote-sensing",
+      "label": "Remote Sensing"
     }
   ],
   "relations": {

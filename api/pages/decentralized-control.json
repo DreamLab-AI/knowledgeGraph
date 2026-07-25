@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:decentralized-control",
+  "title": "Decentralized Control",
+  "slug": "decentralized-control",
+  "public": true,
+  "classIri": "urn:ngm:class:decentralized-control",
+  "domain": "distributed-systems",
+  "definition": "Decentralized control is a control paradigm in which decision-making authority is distributed across many independent agents or nodes rather than concentrated in a single central controller, with global behaviour emerging from local rules and limited peer-to-peer communication. It trades the predictability of centralised control for robustness to single-point failure, scalability to large numbers of agents, and resilience under communication or node loss. Decentralized control is applied both in political and organisational governance and, in engineering, in domains such as swarm robotics where large numbers of simple agents must coordinate without a central coordinator.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-systems",
+      "label": "Distributed Systems"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:swarm-robotics",
+        "label": "Swarm Robotics"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "separation-of-powers",
+      "label": "Separation Of Powers"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    },
+    {
+      "slug": "swarm-robotics",
+      "label": "Swarm Robotics"
+    }
+  ]
+}

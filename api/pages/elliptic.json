@@ -23,8 +23,8 @@
         "label": "Blockchain Analytics"
       },
       {
-        "id": "urn:ngm:class:graph-analysis",
-        "label": "Graph Analysis"
+        "id": "urn:ngm:class:graph-analytics",
+        "label": "Graph Analytics"
       },
       {
         "id": "urn:ngm:class:on-chain-data",

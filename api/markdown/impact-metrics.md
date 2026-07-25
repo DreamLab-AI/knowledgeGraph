@@ -1,4 +1,0 @@
-- ### Definition
-  - Impact metrics quantify the outcomes of interventions, forming a core part of a [[Social Impact Assessment (SIA)]] and the accountability layer of governance structures such as a [[Climate Action DAO]].
-- ### Content
-  - Well-designed metrics distinguish outputs (activities delivered) from outcomes and impacts (changes attributable to the intervention), and pair quantitative figures with context. Their value depends on data quality, attribution rigour, and alignment with recognised frameworks to avoid cherry-picking and to support credible reporting.

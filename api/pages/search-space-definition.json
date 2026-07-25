@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:search-space-definition",
+  "title": "Search Space Definition",
+  "slug": "search-space-definition",
+  "public": true,
+  "classIri": "urn:ngm:class:search-space-definition",
+  "domain": "machine-learning",
+  "definition": "Search space definition is the process of specifying the set of candidate configurations, such as model architectures, hyperparameters, or feature transformations, that an automated search or optimisation algorithm is permitted to explore. A well-formed search space bounds each parameter's type and range and captures dependencies between parameters, directly shaping the efficiency and quality of the resulting search. It is a foundational step in AutoML and neural architecture search, where a poorly defined space can make the optimisation problem intractable or exclude high-performing solutions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:auto-ml",
+      "label": "AutoML"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "auto-ml",
+      "label": "AutoML"
+    }
+  ]
+}

@@ -109,8 +109,8 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:tracking",
-        "label": "Tracking"
+        "@id": "urn:ngm:class:spatial-tracking",
+        "label": "Spatial Tracking"
       },
       {
         "@id": "urn:ngm:class:pose-estimation",

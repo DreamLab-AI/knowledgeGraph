@@ -1,4 +1,0 @@
-- ### Definition
-  - Global localisation determines a robot's pose in a map from scratch, with no initial estimate; it complements absolute references like [[GPS]] and is commonly solved with a [[Particle Filter]] that tracks many hypotheses.
-- ### Content
-  - Particle filters (Monte Carlo localisation) represent the pose distribution with weighted samples that converge as sensor data accumulates, while scan-matching and place-recognition methods generate candidate poses. The approach must handle perceptual aliasing, where different locations look similar, by retaining multimodal beliefs until disambiguating evidence arrives. It is essential at start-up and for recovering after a robot is moved or loses tracking.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Ontology Engineering designs and formalizes machine-readable conceptual models using logic languages such as OWL, providing the structural backbone for [[Knowledge Graphing]] and semantic interoperability.
-- ### Content
-  - Practitioners define classes, properties, and axioms that enable automated reasoning and consistency checking. Robust ontologies support interoperability standards, data integration, and the kind of shared vocabularies that domains such as robotics rely on to exchange meaning unambiguously.

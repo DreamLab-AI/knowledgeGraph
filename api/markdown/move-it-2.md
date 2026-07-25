@@ -1,4 +1,0 @@
-- ### Definition
-  - MoveIt 2 is the ROS 2 motion-planning framework for manipulation, covering IK, collision-aware planning, and execution. It is implemented on a [[Robotics Platform]] and used by a [[Mobile Robot Platform]].
-- ### Content
-  - Its plugin architecture lets users swap planners (OMPL, CHOMP, Pilz), kinematics solvers, and controllers, while the planning scene fuses sensor data for collision checking. MoveIt 2 leverages ROS 2's DDS middleware and lifecycle nodes for deterministic, real-time-capable manipulation pipelines.

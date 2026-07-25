@@ -586,10 +586,6 @@ public:: true
         "label": "Accessibility Provisioning"
       },
       {
-        "@id": "urn:ngm:class:differentiated-instruction",
-        "label": "Differentiated Instruction"
-      },
-      {
         "@id": "urn:ngm:class:mastery-learning",
         "label": "Mastery Learning"
       },

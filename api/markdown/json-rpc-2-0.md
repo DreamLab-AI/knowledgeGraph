@@ -1,4 +1,0 @@
-- ### Definition
-  - JSON-RPC 2.0 is the lightweight RPC encoding that the [[Model Context Protocol]] builds upon, and which underpins the request/response framing used by AI [[Function Calling]] integrations.
-- ### Content
-  - A request specifies a method name, structured parameters and an id; the server returns a result or a typed error keyed to that id, with notifications omitting the id for fire-and-forget calls. Because it is transport-neutral, JSON-RPC runs over HTTP, WebSockets or stdio, which is why it was adopted as the message layer for tooling and node interfaces alike.

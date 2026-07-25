@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:low-rank-decomposition",
+  "title": "Low-Rank Decomposition",
+  "slug": "low-rank-decomposition",
+  "public": true,
+  "classIri": "urn:ngm:class:low-rank-decomposition",
+  "domain": "artificial-intelligence",
+  "definition": "Low-rank decomposition is a linear algebra technique that approximates a matrix as the product of two or more smaller matrices of lower rank, reducing the number of parameters needed to represent it. In machine learning it underlies parameter-efficient fine-tuning methods such as LoRA, which learn a small low-rank update to a pretrained weight matrix instead of updating all parameters. It trades a controlled amount of representational capacity for large reductions in memory and compute cost.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:linear-algebra",
+      "label": "Linear Algebra"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:parameter-efficient-fine-tuning",
+        "label": "Parameter-Efficient Fine-Tuning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    }
+  ]
+}

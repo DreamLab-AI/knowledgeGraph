@@ -1,4 +1,0 @@
-- ### Definition
-  - Usage analytics measures how users engage with a system over time, forming part of broader [[Telemetry and Analytics]] and feeding inputs to a [[Digital Well-Being Index]].
-- ### Content
-  - Pipelines instrument client and server events, aggregate them into metrics such as DAU/MAU and funnels, and surface them through dashboards. Effective practice balances analytic value against data minimisation, consent and anonymisation to protect user privacy.

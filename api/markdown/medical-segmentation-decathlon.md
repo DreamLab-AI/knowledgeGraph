@@ -1,4 +1,0 @@
-- ### Definition
-  - The Medical Segmentation Decathlon is a ten-task benchmark for evaluating how well segmentation algorithms generalise across diverse medical imaging datasets. It standardises evaluation for [[Segmentation and Identification]] within [[Computer Vision]].
-- ### Content
-  - By bundling varied modalities and anatomies under a unified protocol, the challenge rewards methods that adapt without hand-tuning, catalysing self-configuring frameworks such as nnU-Net. It remains a touchstone for measuring robustness and transferability in biomedical segmentation research.

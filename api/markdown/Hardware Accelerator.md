@@ -1,0 +1,74 @@
+public:: true
+
+# Hardware Accelerator
+```json-ld
+{ "@context":"https://narrativegoldmine.com/ns/v1", "@id":"urn:visionflow:page:hardware-accelerator", "@type":"Page", "title":"Hardware Accelerator", "vc:slug":"hardware-accelerator", "vc:public":true, "vc:schemaVersion":2, "vc:outboundWikilinks":[] }
+```
+```json-ld
+{
+  "@context":"https://narrativegoldmine.com/ns/v2.jsonld",
+  "@id":"urn:ngm:class:hardware-accelerator",
+  "@type":"Class",
+  "label":"Hardware Accelerator",
+  "definition":"A hardware accelerator is a specialised electronic device designed to perform a particular class of computation far more efficiently than a general-purpose central processing unit. By dedicating silicon to highly parallel arithmetic such as matrix multiplication, accelerators dramatically increase throughput and energy efficiency for workloads like neural network training and inference. Common forms include graphics processing units, tensor processing units, field-programmable gate arrays and application-specific integrated circuits.",
+  "domain":"machine-learning",
+  "maturity":"mature",
+  "subClassOf":[{"@id":"urn:ngm:class:hardware-acceleration","label":"Hardware Acceleration"}],
+  "relations":{
+    "partOf":[{"@id":"urn:ngm:class:compute-infrastructure","label":"Compute Infrastructure"}],
+    "implements":[{"@id":"urn:ngm:class:hardware-acceleration","label":"Hardware Acceleration"},{"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}],
+    "enables":[{"@id":"urn:ngm:class:deep-learning","label":"Deep Learning"},{"@id":"urn:ngm:class:model-training","label":"Model Training"}],
+    "dependsOn":[{"@id":"urn:ngm:class:compute-infrastructure","label":"Compute Infrastructure"}],
+    "requires":[{"@id":"urn:ngm:class:energy-efficiency","label":"Energy Efficiency"}],
+    "supports":[{"@id":"urn:ngm:class:inference-engine","label":"Inference Engine"},{"@id":"urn:ngm:class:neural-network","label":"Neural Network"}],
+    "hasPart":[{"@id":"urn:ngm:class:gpu","label":"GPU"},{"@id":"urn:ngm:class:tpu","label":"TPU"},{"@id":"urn:ngm:class:fpga","label":"FPGA"},{"@id":"urn:ngm:class:asic","label":"ASIC"}],
+    "relatedTo":[{"@id":"urn:ngm:class:graphics-processing-unit","label":"Graphics Processing Unit"},{"@id":"urn:ngm:class:inference","label":"Inference"}],
+    "bridgesTo":[{"@id":"urn:ngm:class:parallel-computing","label":"Parallel Computing"}]
+  },
+  "sameAs":[],
+  "quality":0.62,
+  "provenance":{"attributedTo":"did:nostr:ontology-mesh","generatedAt":"2026-06-15T00:00:00Z","inferenceRule":"GapMaterialisation"}
+}
+```
+- ### Definition
+- A hardware accelerator is specialised silicon that performs a class of computation more efficiently than a general CPU. It implements [[Hardware Acceleration]] and [[Parallel Computing]] to drive [[Deep Learning]], enabling fast [[Model Training]] and [[Inference]] while improving [[Energy Efficiency]].
+- ### Overview
+- General-purpose CPUs are optimised for low-latency sequential control flow, which makes them inefficient for the massively parallel dense arithmetic at the heart of machine learning.
+- Accelerators dedicate transistors to wide parallel execution units, large register files and high-bandwidth memory, achieving order-of-magnitude gains in throughput per watt for suitable workloads.
+- The accelerator landscape spans programmable [[GPU]] devices, domain-specific [[TPU]] systolic arrays, reconfigurable [[FPGA]] fabrics, and fixed-function [[ASIC]] chips.
+- Software stacks, drivers and compilers translate high-level models into kernels that exploit the accelerator's parallelism and memory hierarchy.
+- ### Mechanisms
+- Single-instruction-multiple-data and single-instruction-multiple-thread execution apply one operation across many data elements simultaneously.
+- Systolic arrays stream operands through a grid of multiply-accumulate units for efficient matrix multiplication.
+- High-bandwidth memory and on-chip caches feed the arithmetic units to avoid stalls.
+- Reduced and mixed precision arithmetic increases effective throughput while preserving acceptable accuracy.
+- ### Applications
+- Training and inference of deep neural networks at scale in data centres.
+- On-device inference in phones, cameras and embedded systems via compact accelerators.
+- Scientific computing, signal processing and cryptographic workloads.
+- Real-time graphics and simulation built atop the [[Graphics Processing Unit]] lineage.
+- ### Key aspects
+- Memory bandwidth and interconnect frequently bound performance more than raw arithmetic capacity.
+- Specialisation trades flexibility for efficiency: an ASIC is fastest but cannot be repurposed.
+- Energy efficiency and thermal limits shape both data-centre and edge deployment.
+- ### Relationships
+- partOf:: [[Compute Infrastructure]]
+- implements:: [[Hardware Acceleration]]
+- implements:: [[Parallel Computing]]
+- enables:: [[Deep Learning]]
+- enables:: [[Model Training]]
+- dependsOn:: [[Compute Infrastructure]]
+- requires:: [[Energy Efficiency]]
+- supports:: [[Inference Engine]]
+- supports:: [[Neural Network]]
+- hasPart:: [[GPU]]
+- hasPart:: [[TPU]]
+- hasPart:: [[FPGA]]
+- hasPart:: [[ASIC]]
+- relatedTo:: [[Graphics Processing Unit]]
+- relatedTo:: [[Inference]]
+- bridgesTo:: [[Parallel Computing]]
+- ### Provenance
+- updated:: 2026-06-15
+- attributedTo:: did:nostr:ontology-mesh
+- inferenceRule:: GapMaterialisation

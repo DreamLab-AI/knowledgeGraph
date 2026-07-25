@@ -1,4 +1,0 @@
-- ### Definition
-  - The ECB Digital Euro Regulation is the framework governing issuance of a euro-area CBDC by the European Central Bank. It standardises the [[Digital Euro]] within the wider category of [[CBDCs]], defining legal-tender status, privacy, and holding limits.
-- ### Content
-  - The regulation assigns the Eurosystem responsibility for issuance while supervised intermediaries handle distribution and user-facing services. It addresses offline use, data-protection safeguards, and limits to preserve financial stability and bank disintermediation concerns.

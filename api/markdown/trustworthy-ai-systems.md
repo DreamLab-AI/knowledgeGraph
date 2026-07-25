@@ -1,4 +1,0 @@
-- ### Definition
-  - AI systems engineered to be reliable, safe, transparent, fair, and accountable across their lifecycle. They are enabled by work on [[Safety and Alignment]] and [[Model Transparency]].
-- ### Content
-  - Trustworthiness is multidimensional, spanning robustness to distribution shift and adversarial attack, explainability, bias mitigation, privacy preservation, and clear lines of human oversight. Standards bodies operationalise these properties into assessment and risk-management processes so that deployment decisions can be evidenced rather than assumed.

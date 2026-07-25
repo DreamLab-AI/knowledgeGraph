@@ -1,4 +1,0 @@
-- ### Definition
-  - A fluid power device transmits or regulates power through pressurised liquid or gas, serving as the parent category for components such as a [[Pneumatic Actuator]] and a [[Proportional Valve]]. It belongs to robotic actuation and control.
-- ### Content
-  - Hydraulic devices use near-incompressible fluid to deliver large, precise forces, while pneumatic devices use compressed air for fast, compliant motion at lower force. Across both, fluid power systems combine power sources (pumps or compressors), control elements (valves), and actuators (cylinders or motors), trading mechanical robustness and high power density against efficiency losses, leakage, and the need for fluid conditioning.

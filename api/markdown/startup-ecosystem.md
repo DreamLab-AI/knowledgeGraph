@@ -1,4 +1,0 @@
-- ### Definition
-  - A startup ecosystem is the regional network of founders, investors, talent, universities, and support institutions whose interaction lets new high-growth firms form and scale, an applied topic within [[Economics]].
-- ### Content
-  - Its vitality rests on capital depth, knowledge spillovers, and enabling policy, which generate [[Network Effects]] that concentrate talent and funding and reinforce a hub's advantage over time. Regulatory choices materially shape these dynamics: measures such as the [[California AI Bill]] influence where AI ventures incorporate, hire, and deploy, illustrating how policy feeds back into ecosystem competitiveness.

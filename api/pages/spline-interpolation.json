@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:spline-interpolation",
+  "title": "Spline Interpolation",
+  "slug": "spline-interpolation",
+  "public": true,
+  "classIri": "urn:ngm:class:spline-interpolation",
+  "domain": "robotics",
+  "definition": "Spline interpolation is a numerical method for constructing a smooth curve that passes through a given set of waypoints by fitting piecewise polynomial segments, most commonly cubic splines, that join with continuous position, velocity, and acceleration at each segment boundary. In robotics it is used to convert a sparse sequence of target waypoints into a continuous, dynamically feasible trajectory that a controller can track without abrupt changes in motion. Spline interpolation is a standard building block of trajectory generation and trajectory planning pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:interpolation",
+      "label": "Interpolation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:trajectory-planning",
+        "label": "Trajectory Planning"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:interpolation",
+        "label": "Interpolation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

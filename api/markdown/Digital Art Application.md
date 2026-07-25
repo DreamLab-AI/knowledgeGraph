@@ -104,8 +104,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:digital-art-creation",
-        "label": "Digital Art Creation"
+        "@id": "urn:ngm:class:digital-art",
+        "label": "Digital Art"
       },
       {
         "@id": "urn:ngm:class:nft-minting",

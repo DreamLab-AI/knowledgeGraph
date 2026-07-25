@@ -4,7 +4,7 @@
   "slug": "accountability-ai-0068",
   "public": true,
   "classIri": "urn:ngm:class:accountability-ai-0068",
-  "domain": "ai-governance",
+  "domain": "artificial-intelligence",
   "definition": "Accountability (AI-0068) is the principle \u2014 codified under ontology reference identifier AI-0068 in structured AI ethics and governance frameworks \u2014 requiring that organisations developing, deploying, or operating AI systems must be able to demonstrate traceable, enforceable responsibility for the systems' decisions and impacts, provide redress mechanisms when harm occurs, maintain identifiable human oversight over automated processes, and document the entire lifecycle of AI systems through auditable artefacts. It grounds the ethical aspiration of accountability in specific technical and organisational obligations, distinguishing it from aspirational guidelines by imposing concrete requirements for AI audit trails, explainability outputs, model documentation, incident response procedures, and designated role assignments for liability.",
   "subClassOf": [
     {

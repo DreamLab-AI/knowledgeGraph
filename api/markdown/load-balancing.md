@@ -1,4 +1,0 @@
-- ### Definition
-  - Load balancing spreads work across resources to maximise throughput and resilience; it is a service used by a [[Service Mesh]] and a structural part of any [[Distributed Architecture]].
-- ### Content
-  - L4 balancers route by IP and port while L7 balancers inspect application data to make content-aware decisions. Combined with active health checks and connection draining, load balancing enables horizontal scaling and graceful handling of node failures without client disruption.

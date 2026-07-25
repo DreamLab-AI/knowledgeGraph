@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:minimally-invasive-surgery",
+  "title": "Minimally Invasive Surgery",
+  "slug": "minimally-invasive-surgery",
+  "public": true,
+  "classIri": "urn:ngm:class:minimally-invasive-surgery",
+  "domain": "robotics",
+  "definition": "Minimally invasive surgery is a class of surgical technique performed through small incisions using specialised instruments and cameras, rather than the large openings required by traditional open surgery. It reduces patient trauma, blood loss, and recovery time by limiting the surgical footprint while preserving surgical precision. Surgical robots extend minimally invasive surgery by providing tremor-filtered, precisely scaled instrument control through the small incisions used in surgical robotics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:surgical-robotics",
+      "label": "Surgical Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

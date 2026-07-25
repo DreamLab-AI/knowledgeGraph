@@ -1,2 +1,0 @@
-- ### Definition
-  - The real-time capture and transmission of hand pose and gesture data from remote participants, enabling natural gestural communication in distributed collaboration environments.

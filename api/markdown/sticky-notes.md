@@ -1,2 +1,0 @@
-- ### Definition
-  - Digital adhesive-note cards placed on shared virtual surfaces to capture and cluster ideas during distributed brainstorming and retrospectives.

@@ -1,4 +1,0 @@
-- ### Definition
-  - A prior distribution encodes belief about unknowns before observing data in Bayesian inference. It is a component of the [[Bayes Filter]] and any [[Probabilistic Model]], and is updated into the [[Posterior Distribution]] once data arrive.
-- ### Content
-  - Priors range from informative (encoding domain knowledge) to weakly informative or non-informative (minimising assumptions). Conjugate priors yield closed-form posteriors and simplify computation, while hierarchical priors share statistical strength across groups. In recursive filters, the predicted prior for each time step is derived from the previous step's posterior propagated through a motion model.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Scenario analysis evaluates outcomes across multiple plausible futures; it builds on [[Time-Series Forecasting]] for projections and is a core input to [[Risk Assessment]].
-- ### Content
-  - Unlike point forecasting, scenario analysis emphasises a small set of internally consistent narratives, often including baseline, optimistic, and adverse cases. It surfaces tail risks and decision sensitivities, supporting contingency planning and regulatory disclosures such as climate and capital-adequacy stress tests.

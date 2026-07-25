@@ -181,8 +181,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:economic-incentive",
-        "label": "Economic Incentive"
+        "@id": "urn:ngm:class:incentive-mechanism",
+        "label": "Incentive Mechanism"
       }
     ],
     "dependsOn": [

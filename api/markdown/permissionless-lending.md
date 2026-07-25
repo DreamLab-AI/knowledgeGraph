@@ -1,4 +1,0 @@
-- ### Definition
-  - Permissionless lending lets anyone supply or borrow assets via open smart-contract pools, a core capability enabled by the [[Decentralised Finance Domain]] and [[Decentralized Finance (DeFi)]].
-- ### Content
-  - Protocols such as Aave and Compound pool deposits and price credit algorithmically from supply-and-demand utilisation, requiring borrowers to over-collateralise so positions can be liquidated automatically if their collateral ratio falls. By removing KYC gatekeeping and discretionary underwriting, permissionless lending offers global, composable credit, while concentrating risk in oracle accuracy and collateral volatility.

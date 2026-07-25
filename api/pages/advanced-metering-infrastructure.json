@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:advanced-metering-infrastructure",
+  "title": "Advanced Metering Infrastructure",
+  "slug": "advanced-metering-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:advanced-metering-infrastructure",
+  "domain": "infrastructure",
+  "definition": "Advanced metering infrastructure (AMI) is the integrated system of smart meters, two-way communication networks and data management software that enables utilities to remotely collect detailed, time-stamped consumption data and to send control signals back to meters and connected devices. It extends earlier automated meter reading by providing bidirectional communication, enabling near-real-time usage data, remote connect/disconnect and dynamic pricing. AMI is a foundational enabler of demand response programmes and smart grid operations, since it supplies the granular consumption data those systems depend on.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-metering",
+      "label": "Smart Metering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:smart-metering",
+        "label": "Smart Metering"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-metering",
+        "label": "Smart Metering"
+      },
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

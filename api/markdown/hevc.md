@@ -1,4 +1,0 @@
-- ### Definition
-  - HEVC (H.265) is a high-efficiency video compression standard; it is a core component of [[Proprietary Video]] delivery and is used to encode high-resolution streams.
-- ### Content
-  - HEVC uses coding tree units up to 64x64, advanced motion prediction, and CABAC entropy coding to cut bitrate for a given quality. Its patent-pool licensing model created cost and clearance friction, which spurred the development of royalty-free codecs while HEVC remains widely supported in hardware and broadcast.

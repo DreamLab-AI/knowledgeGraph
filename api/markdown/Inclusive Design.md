@@ -81,8 +81,8 @@ alias:: InclusiveDesign
         "label": "User Centred Design"
       },
       {
-        "@id": "urn:ngm:class:co-design",
-        "label": "Co-Design"
+        "@id": "urn:ngm:class:participatory-design",
+        "label": "Participatory Design"
       }
     ],
     "standardizedBy": [

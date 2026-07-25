@@ -1,4 +1,0 @@
-- ### Definition
-  - The forecast horizon is how far ahead a model predicts, a core parameter of [[Time Series Forecasting]] and a critical input to [[Demand Forecasting]] decisions. It is a concept within machine-learning forecasting technique.
-- ### Content
-  - Short horizons typically yield lower error and support operational decisions such as inventory replenishment, while longer horizons feed strategic planning at the cost of greater uncertainty and wider prediction intervals. Multi-step forecasting can be produced recursively, directly per step, or jointly, and the chosen horizon governs how models are trained, how backtesting windows are arranged, and how forecast accuracy is reported.

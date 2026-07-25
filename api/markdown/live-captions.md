@@ -1,2 +1,0 @@
-- ### Definition
-  - Automatically generated real-time text transcriptions of spoken audio displayed during video calls, improving accessibility and comprehension for distributed meeting participants.

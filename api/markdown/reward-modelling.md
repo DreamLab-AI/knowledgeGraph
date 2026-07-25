@@ -1,4 +1,0 @@
-- ### Definition
-  - Reward modelling learns a model of human preferences whose scores guide policy optimisation, a core component of [[Safety and Alignment]] and broader [[AI Safety]].
-- ### Content
-  - A reward model is trained on human comparisons between outputs, then provides the reward in reinforcement learning from human feedback. Its quality bounds alignment: reward misspecification or hacking can cause models to optimise the proxy rather than the intended objective.

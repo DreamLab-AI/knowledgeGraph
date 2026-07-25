@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:machine-learning-discipline-model",
       "label": "Machine Learning Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "sameAs": [

@@ -1,4 +1,0 @@
-- ### Definition
-  - The Technology Acceptance Model explains technology uptake through perceived usefulness and perceived ease of use, and is widely applied to study [[AI Adoption]] and the broader [[Adoption of Convergent Technologies]].
-- ### Content
-  - TAM posits a causal chain in which external factors influence two core beliefs, perceived usefulness and perceived ease of use, which jointly determine attitude, behavioural intention, and ultimately use. Successors such as TAM2 and UTAUT extend the base model with social, facilitating, and experiential variables. Researchers apply it to forecast adoption of products from enterprise software to AI assistants, using survey instruments to estimate the strength of each pathway.

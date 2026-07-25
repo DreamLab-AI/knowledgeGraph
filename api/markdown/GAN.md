@@ -57,6 +57,10 @@ public:: true
     {
       "@id": "urn:ngm:class:generative-model",
       "label": "Generative Model"
+    },
+    {
+      "@id": "urn:ngm:class:deep-generative-model",
+      "label": "Deep Generative Model"
     }
   ],
   "sameAs": [

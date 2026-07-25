@@ -66,6 +66,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
     }
   ],
   "relations": {

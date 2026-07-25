@@ -54,10 +54,16 @@ alias:: MachineLearningModel
   "definition": "Computational algorithms trained on data to recognise patterns, make predictions, and perform tasks, including neural networks for content generation, behaviour simulation, computer vision, and natural language processing; the core artefact produced by a machine learning training pipeline.",
   "domain": "machine-learning",
   "maturity": "draft",
-  "subClassOf": {
-    "@id": "urn:ngm:class:machine-learning-discipline",
-    "label": "Machine Learning Discipline"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline-models",
+      "label": "Machine Learning Models"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

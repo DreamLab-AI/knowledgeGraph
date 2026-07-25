@@ -1,2 +1,0 @@
-- ### Definition
-  - A backward-incompatible blockchain protocol upgrade that permanently splits the chain into two networks if not universally adopted, requiring coordinated consensus to avoid a chain split.

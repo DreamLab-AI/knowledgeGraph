@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:discrete-mathematics",
+  "title": "Discrete Mathematics",
+  "slug": "discrete-mathematics",
+  "public": true,
+  "classIri": "urn:ngm:class:discrete-mathematics",
+  "domain": "artificial-intelligence",
+  "definition": "Discrete mathematics is the branch of mathematics concerned with structures that are fundamentally discrete rather than continuous, including sets, graphs, combinatorics, logic and number theory. It provides the formal foundations for computer science, underpinning algorithm analysis, data structures and cryptographic systems that rely on integer arithmetic and modular structures. Computer science curricula treat it as a prerequisite discipline, and fields such as number theory build directly on its results.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:set-theory",
+        "label": "Set Theory"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

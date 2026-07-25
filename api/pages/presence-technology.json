@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
+    },
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

@@ -1,4 +1,0 @@
-- ### Definition
-  - An architecture where the central bank issues digital currency while commercial banks and intermediaries handle distribution and customer-facing services. It is the dominant design implemented within [[CBDC Frameworks]] and most [[CBDCs]].
-- ### Content
-  - The model separates issuance from distribution so that central banks avoid taking on retail customer relationships, KYC, and dispute handling at scale. It mirrors the existing structure of physical cash and bank deposits, easing integration with payment rails while keeping intermediaries as the regulated, consumer-facing tier.

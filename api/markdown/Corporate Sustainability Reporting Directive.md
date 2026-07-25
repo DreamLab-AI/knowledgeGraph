@@ -38,8 +38,8 @@ public:: true
         "label": "Double Materiality"
       },
       {
-        "@id": "urn:ngm:class:disclosure",
-        "label": "Disclosure"
+        "@id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
       }
     ],
     "standardizedBy": [
@@ -58,8 +58,8 @@ public:: true
         "label": "Scope 3 Emissions"
       },
       {
-        "@id": "urn:ngm:class:disclosure",
-        "label": "Disclosure"
+        "@id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
       }
     ],
     "enables": [

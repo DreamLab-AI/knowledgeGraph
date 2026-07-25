@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "id": "urn:ngm:class:decentralised-web",
+      "label": "Decentralised Web"
     }
   ],
   "entityType": "Class",

@@ -1,4 +1,0 @@
-- ### Definition
-  - Textual inversion learns a new embedding for a placeholder token from a few images, teaching a diffusion model a subject or style without changing its weights, and is offered by toolchains such as [[Kohya, DreamBooth and Similar]].
-- ### Content
-  - Rather than updating the model, textual inversion optimises a single embedding vector so that the placeholder pseudo-word reconstructs the example images when used in a prompt. The result is a tiny artefact, often a few kilobytes, that can be shared and combined with other prompts and even other learned concepts. Because the base model is frozen, it is far cheaper than full fine-tuning but generally captures concepts with less fidelity than weight-editing methods like DreamBooth or LoRA.

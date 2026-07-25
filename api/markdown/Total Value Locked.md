@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
     }
   ],
   "relations": {

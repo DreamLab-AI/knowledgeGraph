@@ -1,4 +1,0 @@
-- ### Definition
-  - Electricity Consumption is the total electrical energy a system uses over time, measured in kilowatt- or terawatt-hours. It is a core component of [[Blockchain Energy Consumption]] and is estimated by indices such as the [[CBECI]].
-- ### Content
-  - For proof-of-work networks, consumption scales with hashrate and the efficiency of mining hardware, while proof-of-stake networks consume orders of magnitude less. Accurate estimation combines hashrate, hardware mix, and power-usage assumptions, informing sustainability policy and carbon-footprint accounting.

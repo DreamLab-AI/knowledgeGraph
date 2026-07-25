@@ -113,8 +113,8 @@
         "label": "COCO WholeBody"
       },
       {
-        "id": "urn:ngm:class:stable-diffusion",
-        "label": "Stable Diffusion"
+        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion Image Model"
       }
     ],
     "supports": [],

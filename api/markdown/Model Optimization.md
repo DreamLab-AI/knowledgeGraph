@@ -66,6 +66,10 @@ public:: true
     {
       "@id": "urn:ngm:class:model-deployment",
       "label": "Model Deployment"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

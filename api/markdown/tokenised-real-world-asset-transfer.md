@@ -1,4 +1,0 @@
-- ### Definition
-  - The transfer of tokens representing off-chain assets between parties or chains while preserving the legal link to the underlying asset. It is enabled by [[Cross-Chain Bridge]] mechanisms and broader [[Blockchain Interoperability]].
-- ### Content
-  - Such transfers must reconcile on-chain settlement with off-chain custody and legal title, demanding trusted oracles, registries, and compliance checks. Cross-chain movement adds complexity, as the asset claim must remain valid and non-duplicated when bridged between heterogeneous ledgers.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Extreme Programming is an agile [[Software Development]] methodology built on tight feedback loops and rigorous engineering practices, with pair programming as a defining feature that motivates approaches such as [[Remote Pair Programming]]. It pushes beneficial practices to their logical extreme.
-- ### Content
-  - XP organises work into short iterations driven by user stories, mandating test-first development, continuous integration, and on-site customer collaboration. The methodology trades upfront design documentation for evolutionary design and refactoring, relying on automated tests and pairing to keep defect rates low while accommodating volatile requirements.

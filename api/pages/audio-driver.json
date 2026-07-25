@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:audio-driver",
+  "title": "Audio Driver",
+  "slug": "audio-driver",
+  "public": true,
+  "classIri": "urn:ngm:class:audio-driver",
+  "domain": "spatial-computing",
+  "definition": "An audio driver is the low-level software component that mediates between an operating system's audio subsystem and physical sound hardware, translating generic playback and capture requests into device-specific commands. It manages buffering, sample-rate conversion, latency and device enumeration, and is a prerequisite for any higher-level audio pipeline to reach speakers, headphones or microphones. In spatial and immersive computing, driver latency and buffer size directly affect the achievable audio-visual synchronisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:audio-system",
+      "label": "Audio System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.65,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:audio-system",
+        "label": "Audio System"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

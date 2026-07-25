@@ -1,4 +1,0 @@
-- ### Definition
-  - A persona is the configured personality and role that governs how [[Chatbots]] speak, frame knowledge, and stay consistent across a conversation.
-- ### Content
-  - Personas are typically specified through system prompts and behavioural guardrails that fix tone, allowed topics, and decision style, sometimes reinforced by fine-tuning or retrieval of role-specific knowledge. A well-designed persona improves trust and task fit, while a poorly bounded one can drift, leak instructions, or produce off-brand responses.

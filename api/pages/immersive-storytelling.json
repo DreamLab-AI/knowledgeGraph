@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:immersive-storytelling",
+  "title": "Immersive Storytelling",
+  "slug": "immersive-storytelling",
+  "public": true,
+  "classIri": "urn:ngm:class:immersive-storytelling",
+  "domain": "spatial-computing",
+  "definition": "Immersive storytelling is a narrative form that uses extended reality technologies \u2014 virtual, augmented and mixed reality \u2014 to place an audience within a story environment, allowing them to experience events from a first-person perspective and, in interactive formats, to influence how the narrative unfolds. It draws on techniques from film, game design and spatial audio to create a sense of presence, replacing the fixed frame of traditional media with a fully surrounding, often responsive, environment. Immersive storytelling is used in film production, journalism, museum exhibits and personalised virtual experiences to deepen audience engagement beyond passive viewing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:extended-reality",
+      "label": "Extended Reality"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:extended-reality",
+        "label": "Extended Reality"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:film-production",
+        "label": "Film Production"
+      },
+      {
+        "id": "urn:ngm:class:personalized-virtual-experiences",
+        "label": "Personalized Virtual Experiences"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

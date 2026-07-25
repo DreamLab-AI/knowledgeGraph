@@ -1,4 +1,0 @@
-- ### Definition
-  - Logistics optimisation applies operations-research and algorithmic methods to minimise cost and time across routing, scheduling, and inventory decisions. It draws on inputs such as [[Demand Forecasting]] and supports streamlined [[Customs Trade Facilitation]].
-- ### Content
-  - Typical formulations include the vehicle-routing problem, facility-location models, and multi-echelon inventory optimisation. Solvers range from exact mixed-integer programming to metaheuristics and reinforcement learning, with the choice driven by problem scale and the need for real-time responsiveness.

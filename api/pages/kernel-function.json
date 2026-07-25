@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:kernel-function",
+  "title": "Kernel Function",
+  "slug": "kernel-function",
+  "public": true,
+  "classIri": "urn:ngm:class:kernel-function",
+  "domain": "machine-learning",
+  "definition": "A kernel function is a similarity measure between two data points that implicitly computes an inner product in a high-dimensional feature space without explicitly constructing that space. It underlies kernel methods such as support vector machines and Gaussian processes, enabling non-linear pattern recognition through the kernel trick. Common examples include the radial basis function, polynomial, and linear kernels, each encoding different assumptions about data similarity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:kernel-methods",
+      "label": "Kernel Methods"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "acquisition-function",
+      "label": "Acquisition Function"
+    },
+    {
+      "slug": "bayesian-optimisation",
+      "label": "Bayesian Optimisation"
+    }
+  ]
+}

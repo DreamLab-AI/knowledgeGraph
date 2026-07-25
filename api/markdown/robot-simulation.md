@@ -1,4 +1,0 @@
-- ### Definition
-  - Robot simulation models a robot's physics and sensors in a virtual environment, drawing on [[Forward Kinematics]] and integrating with the [[Robot Operating System]].
-- ### Content
-  - Simulators compute rigid-body dynamics, contacts, and synthetic sensor data so control stacks can be exercised without hardware risk. Running identical middleware in simulation and reality supports rapid iteration, regression testing, and large-scale reinforcement learning.

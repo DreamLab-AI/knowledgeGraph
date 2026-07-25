@@ -1,4 +1,0 @@
-- ### Definition
-  - Horizontal scalability is the ability to grow capacity by adding nodes; it is a defining property enabled by [[Distributed Computing]] within the [[Distributed Systems Domain]].
-- ### Content
-  - Achieving it requires sharding or replicating state, stateless service tiers, and consistency strategies that tolerate partial failure. The pattern favours commodity hardware and elastic autoscaling, but introduces coordination, data-locality, and consistency trade-offs that vertical scaling avoids.

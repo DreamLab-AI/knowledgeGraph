@@ -1,4 +1,0 @@
-- ### Definition
-  - The process of establishing confidence among participants through transparency, accountability, and reliable behaviour. It is enabled by mechanisms such as [[AI-Generated Content Disclosure]] and enforced [[Community Standards]].
-- ### Content
-  - In digital ecosystems trust is fragile and easily eroded by opaque automation, misinformation, or unaccountable moderation. Effective trust building combines technical signals such as provenance and disclosure with social mechanisms such as reputation, consistent enforcement, and participatory governance.

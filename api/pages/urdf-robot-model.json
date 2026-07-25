@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics"
+    },
+    {
+      "id": "urn:ngm:class:kinematics-model",
+      "label": "Kinematics Model"
     }
   ],
   "entityType": "Class",

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:smart-contract-deployment",
+  "title": "Smart Contract Deployment",
+  "slug": "smart-contract-deployment",
+  "public": true,
+  "classIri": "urn:ngm:class:smart-contract-deployment",
+  "domain": "blockchain",
+  "definition": "Smart contract deployment is the process of compiling contract source code to bytecode and publishing it to a blockchain, after which the contract acquires a fixed on-chain address and becomes callable by other accounts and contracts. It typically involves development frameworks that handle compilation, testing, gas estimation, and network submission. Deployment is irreversible on most chains, so verification and testing precede it as standard practice.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "automated-market-making",
+      "label": "Automated Market Making"
+    }
+  ]
+}

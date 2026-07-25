@@ -104,10 +104,6 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:documentation-culture",
-        "label": "Documentation Culture"
-      },
-      {
         "@id": "urn:ngm:class:version-control",
         "label": "Version Control"
       }

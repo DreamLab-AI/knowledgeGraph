@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:inception-v3",
+  "title": "Inception v3",
+  "slug": "inception-v3",
+  "public": true,
+  "classIri": "urn:ngm:class:inception-v3",
+  "domain": "artificial-intelligence",
+  "definition": "Inception v3 is a convolutional neural network architecture from Google that refined the earlier Inception design with factorised convolutions, auxiliary classifiers, and label smoothing to improve accuracy and reduce computational cost on image classification tasks. It replaces large convolutional filters with sequences of smaller asymmetric convolutions, cutting parameter count while preserving representational capacity. Pretrained on ImageNet, its penultimate-layer activations are the standard feature extractor used to compute the Fr\u00e9chet Inception Distance and Inception Score for evaluating generative image models. It remains a common baseline and building block in computer vision pipelines despite the emergence of newer architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:convolutional-neural-network",
+      "label": "Convolutional Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fid-benchmark-protocol",
+      "label": "FID Benchmark Protocol"
+    }
+  ]
+}

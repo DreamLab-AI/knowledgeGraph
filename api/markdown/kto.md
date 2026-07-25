@@ -1,4 +1,0 @@
-- ### Definition
-  - KTO is a prospect-theory-inspired alignment objective that, unlike [[Direct Preference Optimization]], learns from unpaired binary feedback, making it a practical component of the [[Model Training]] alignment stage.
-- ### Content
-  - Because KTO needs only a desirable/undesirable label per sample, it avoids the costly construction of preference pairs while remaining competitive in alignment quality. Its loss asymmetrically penalises degradations more than it rewards improvements, mirroring human loss aversion and producing models that are conservative about regressions.

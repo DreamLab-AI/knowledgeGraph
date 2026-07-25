@@ -1,4 +1,0 @@
-- ### Definition
-  - A sensor interface is the hardware-and-protocol boundary through which a controller reads a sensor, handling signal conditioning, conversion, and bus communication. It is a part of the [[Control System]] and of the [[Embedded Systems Domain]].
-- ### Content
-  - Interfaces span analogue front-ends with amplifiers and filters through digital buses such as I2C, SPI, and CAN. Robust designs address sampling rate, electrical isolation, noise immunity, and deterministic timing so sensor data arrives reliably for closed-loop control.

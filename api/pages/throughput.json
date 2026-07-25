@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:performance-metrics",
       "label": "Performance Metrics"
+    },
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)"
     }
   ],
   "entityType": "Class",

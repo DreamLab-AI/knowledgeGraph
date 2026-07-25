@@ -1,4 +1,0 @@
-- ### Definition
-  - A model checkpoint is a serialised snapshot of a model's weights and optimiser state. It is commonly stored with [[Safetensors]] and loaded by tools such as [[ComfyUI Workflows]].
-- ### Content
-  - Checkpoints make long training runs fault-tolerant by allowing exact resumption, and they are the unit of distribution for pretrained and fine-tuned models. Safetensors has become a preferred format because it avoids the arbitrary-code-execution risk of pickle while supporting fast, zero-copy loading.

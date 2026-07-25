@@ -1,4 +1,0 @@
-- ### Definition
-  - User identity management handles the lifecycle of digital identities, enabling the [[Platform Layer]] to authenticate participants and supporting features such as a [[Breakout Room]].
-- ### Content
-  - It spans registration, authentication, profile and credential management, and offboarding. Robust identity management integrates federation, multi-factor authentication and role assignment, ensuring that users are consistently and securely identified across services and sessions.

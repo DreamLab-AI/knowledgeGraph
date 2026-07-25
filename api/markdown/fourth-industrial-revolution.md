@@ -1,4 +1,0 @@
-- ### Definition
-  - The Fourth Industrial Revolution names the present era of converging digital, physical, and biological technologies, and is closely tied to the [[Adoption of Convergent Technologies]] across industry and society.
-- ### Content
-  - Its hallmarks include AI-driven automation, smart factories, digital twins, additive manufacturing, and pervasive connectivity. Commentators emphasise both productivity gains and disruptions to labour markets, requiring new governance, reskilling, and ethical frameworks. The concept frames policy debates on how nations and firms should adapt to accelerating, compounding innovation.

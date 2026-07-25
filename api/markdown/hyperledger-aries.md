@@ -1,4 +1,0 @@
-- ### Definition
-  - Hyperledger Aries is an agent toolkit for issuing and verifying credentials over secure DIDComm channels, typically built on top of [[Hyperledger Indy]] as its trust registry.
-- ### Content
-  - Aries defines wallet, agent, and protocol layers that let identity holders manage credentials off-ledger while anchoring schemas and revocation registries on-ledger. This separation enables interoperable self-sovereign identity ecosystems where any compliant agent can interact regardless of the underlying ledger.

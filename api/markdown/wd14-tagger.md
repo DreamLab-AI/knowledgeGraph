@@ -1,4 +1,0 @@
-- ### Definition
-  - WD14 Tagger auto-generates descriptive tags for images, a captioning step within [[Kohya DreamBooth and Similar]] pipelines that prepare datasets for [[Generative AI]] fine-tuning.
-- ### Content
-  - The tool runs a pretrained tagger (e.g. ViT or ConvNeXt variants) and applies a confidence threshold to emit comma-separated tags per image, often with options to exclude or weight categories. Caption quality directly shapes the controllability of the resulting fine-tuned model, so practitioners tune thresholds and manually curate tags to avoid baking in spurious or biased associations.

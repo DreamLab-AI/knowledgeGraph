@@ -1,4 +1,0 @@
-- ### Definition
-  - Standardized formats are openly specified, consistent data encodings for 3D assets, scenes, and avatars that fall under [[Supply-Chain Standards and Interoperability]], letting content move faithfully between tools and platforms.
-- ### Content
-  - By fixing conventions for geometry, materials, animation, and metadata, formats such as glTF, USD, and VRM decouple content from any one application. They are the technical precondition for [[Avatar Portability]] across virtual worlds and for durable [[Asset Archive]] storage, since openly documented encodings remain readable long after the originating software is retired.

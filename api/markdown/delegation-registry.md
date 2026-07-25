@@ -1,4 +1,0 @@
-- ### Definition
-  - A delegation registry is a smart contract storing who has delegated voting power to whom, so governance systems can resolve a holder's delegate at tally time. It is a shared component of both [[Snapshot Voting]] and [[On-Chain Voting]].
-- ### Content
-  - Holders call the registry to set or revoke a delegate; vote-counting then walks these mappings to attribute power correctly. Standardised registries (e.g. ERC-5639-style designs) allow multiple governance front-ends to share one authoritative delegation graph, reducing fragmentation.

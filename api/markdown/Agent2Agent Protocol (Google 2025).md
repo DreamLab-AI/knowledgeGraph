@@ -101,12 +101,12 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:service-discovery", "label": "Service Discovery"},
       {"@id": "urn:ngm:class:message-passing", "label": "Message Passing"},
-      {"@id": "urn:ngm:class:json-rpc-2-0", "label": "JSON-RPC 2.0"},
+      {"@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0", "label": "JSON-RPC 2.0"},
       {"@id": "urn:ngm:class:server-sent-events", "label": "Server-Sent Events"},
       {"@id": "urn:ngm:class:http-protocol", "label": "HTTP Protocol"},
       {"@id": "urn:ngm:class:oauth-2-0", "label": "OAuth 2.0"},
       {"@id": "urn:ngm:class:json-web-signature", "label": "JSON Web Signature"},
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
     ],
     "hasPart": [
       {"@id": "urn:ngm:class:agent-card", "label": "Agent Card"},

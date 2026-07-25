@@ -1,4 +1,0 @@
-- ### Definition
-  - Real-time streaming delivers continuous data or media incrementally with minimal latency. It is a constituent part of an [[Agent Event Stream]] and is required by a [[Virtual Performance Space]] for live experiences.
-- ### Content
-  - Protocols range from chunked HTTP adaptive streaming (HLS, DASH) for media to WebRTC and RTP for sub-second interactivity, and Kafka/SSE for event data. Engineering trade-offs centre on the latency-versus-resilience balance: smaller buffers cut delay but increase sensitivity to jitter and packet loss.

@@ -1,4 +1,0 @@
-- ### Definition
-  - A servo valve is an electrohydraulic valve that proportionally meters hydraulic flow from a small electrical command, usually through a torque-motor pilot stage. It is a part of a [[Hydraulic Actuator]] and is closely related to the [[Proportional Valve]].
-- ### Content
-  - Two-stage flapper-nozzle and jet-pipe designs achieve high bandwidth and fine resolution, enabling hydraulic systems to match the controllability of electric drives while delivering far greater force density. They demand clean fluid and precise manufacturing, making them costly but indispensable for heavy-duty legged and industrial robots.

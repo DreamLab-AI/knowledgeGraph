@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:shapley-value",
+  "title": "Shapley Value",
+  "slug": "shapley-value",
+  "public": true,
+  "classIri": "urn:ngm:class:shapley-value",
+  "domain": "ai",
+  "definition": "The Shapley Value is a solution concept from cooperative game theory that fairly allocates a total payoff among players according to their average marginal contribution across every possible coalition. In machine learning it is repurposed to attribute a model's prediction to individual input features, treating each feature as a player contributing to the model's output. This attribution use underlies explainability methods such as SHAP.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:game-theory",
+      "label": "Game Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "shap",
+      "label": "SHAP"
+    }
+  ]
+}

@@ -18,12 +18,7 @@
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:onboarding",
-        "label": "Onboarding"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],

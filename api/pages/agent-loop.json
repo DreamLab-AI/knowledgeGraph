@@ -1,0 +1,100 @@
+{
+  "id": "urn:visionflow:page:agent-loop",
+  "title": "Agent Loop",
+  "slug": "agent-loop",
+  "public": true,
+  "classIri": "urn:ngm:class:agent-loop",
+  "domain": "ai",
+  "definition": "The agent loop is the repeating control cycle \u2014 observe, plan, act, evaluate \u2014 through which an autonomous agent perceives its environment, selects a next action or tool call, executes it, and incorporates the result before repeating. It is the core execution pattern underlying agentic systems, terminal coding agents, and retrieval-augmented reasoning, continuing until a termination condition such as task completion or a step budget is reached. The loop's design governs how an agent balances exploration, tool use, and convergence toward a goal.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:agent-harness",
+      "label": "Agent Harness"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:agent-harness",
+        "label": "Agent Harness"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent",
+      "label": "AI Agent"
+    },
+    {
+      "slug": "ai-agents",
+      "label": "ai agents"
+    },
+    {
+      "slug": "action-executor",
+      "label": "Action Executor"
+    },
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "slug": "agent-identity",
+      "label": "Agent Identity"
+    },
+    {
+      "slug": "agent-memory-layers",
+      "label": "Agent Memory Layers"
+    },
+    {
+      "slug": "agent-memory",
+      "label": "Agent Memory"
+    },
+    {
+      "slug": "agentic-ai",
+      "label": "agentic ai"
+    },
+    {
+      "slug": "agentic-rag",
+      "label": "Agentic RAG"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "autonomous-operation",
+      "label": "Autonomous Operation"
+    },
+    {
+      "slug": "cognitive-architecture",
+      "label": "Cognitive Architecture"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    },
+    {
+      "slug": "progressive-disclosure-harnesses",
+      "label": "Progressive Disclosure Harnesses"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
+    }
+  ]
+}

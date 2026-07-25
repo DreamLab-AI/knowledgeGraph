@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:multi-view-images",
+  "title": "Multi-View Images",
+  "slug": "multi-view-images",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-view-images",
+  "domain": "spatial-computing",
+  "definition": "Multi-View Images are a set of photographs or renders of the same scene or object captured from multiple, known or estimable camera positions, providing the geometric overlap needed to reconstruct three-dimensional structure. They are the primary input to photogrammetry, novel view synthesis, and neural scene representations such as NeRFs and 3D Gaussian splats. Reconstruction accuracy improves with greater viewpoint coverage and more precise camera calibration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:3-d-reconstruction",
+      "label": "3D Reconstruction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

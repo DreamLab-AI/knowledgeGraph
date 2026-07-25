@@ -70,6 +70,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:layer2",
+      "label": "Layer2"
     }
   ],
   "relations": {

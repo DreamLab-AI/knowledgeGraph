@@ -1,4 +1,0 @@
-- ### Definition
-  - Incident investigation reconstructs the cause and impact of security incidents from evidence, drawing on the [[Audit Trail]] and methods defined by a [[Digital Forensics Framework]].
-- ### Content
-  - Investigators preserve the chain of custody, correlate logs and telemetry across systems, and apply root-cause techniques to distinguish initial vectors from downstream effects. Findings feed remediation, legal and regulatory reporting, and improvements to detection and response controls, closing the loop on the incident lifecycle.

@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:hyperparameter-optimisation",
       "label": "Hyperparameter Optimisation"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

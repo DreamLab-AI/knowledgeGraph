@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:front-running",
+  "title": "Front-Running",
+  "slug": "front-running",
+  "public": true,
+  "classIri": "urn:ngm:class:front-running",
+  "domain": "finance",
+  "definition": "Front-running is a form of market manipulation in which an actor with advance knowledge of a pending transaction executes their own trade ahead of it to profit from the anticipated price impact. In blockchain systems this typically takes the form of maximal extractable value, where searchers or validators observe pending transactions in the mempool and insert their own transactions ahead of them. Front-running erodes trust in fair transaction ordering and has motivated countermeasures such as private mempools and fair-ordering protocols.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:market-manipulation",
+      "label": "Market Manipulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "mev",
+      "label": "MEV"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

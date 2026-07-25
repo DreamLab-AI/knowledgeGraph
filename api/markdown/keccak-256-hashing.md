@@ -1,4 +1,0 @@
-- ### Definition
-  - Keccak-256 is the sponge-construction cryptographic hash used across Ethereum, and is the [[Cryptographic Primitive]] that [[Snapshot Voting]] relies on to hash and verify off-chain governance messages.
-- ### Content
-  - The sponge design absorbs input into a large internal state and squeezes out a 256-bit digest, offering strong resistance to collisions and preimages. In off-chain voting platforms, Keccak-256 generates the deterministic message hashes that voters sign, allowing tamper-evident tallies to be verified on-chain without paying gas for every vote.

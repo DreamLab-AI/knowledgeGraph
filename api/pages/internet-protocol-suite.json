@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:internet-protocol-suite",
+  "title": "Internet Protocol Suite",
+  "slug": "internet-protocol-suite",
+  "public": true,
+  "classIri": "urn:ngm:class:internet-protocol-suite",
+  "domain": "infrastructure",
+  "definition": "The Internet Protocol Suite (commonly TCP/IP) is the layered set of communication protocols used to interconnect network devices, defining how data is addressed, routed, fragmented and delivered across heterogeneous networks including the public Internet. It is organised into layers -- link, internet, transport and application -- each providing services to the layer above, with the network layer providing addressing and routing and transport protocols such as TCP, UDP and QUIC providing end-to-end delivery guarantees. Its layered, protocol-agnostic design is what allows the Internet to span vastly different physical networks under one addressing scheme.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-protocol",
+      "label": "Network Protocol"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      },
+      {
+        "id": "urn:ngm:class:quic",
+        "label": "QUIC"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

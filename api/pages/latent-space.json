@@ -1,78 +1,73 @@
 {
-  "id": "urn:visionflow:page:6b236a4e6ba9bf4bc12a7719c46f70399f0f49ef4d1342e1587b41fd89609e09",
-  "title": "latent space",
+  "id": "urn:visionflow:page:latent-space",
+  "title": "Latent Space",
   "slug": "latent-space",
   "public": true,
   "classIri": "urn:ngm:class:latent-space",
-  "domain": "artificial-intelligence",
-  "definition": "A latent space is a compressed, high-dimensional mathematical representation learned by a neural network that encodes the underlying structure of training data. Generative models such as variational autoencoders and diffusion models use latent spaces to interpolate between data points and sample novel outputs. The geometry of the latent space reflects semantic relationships: nearby points correspond to perceptually or semantically similar entities, enabling controlled generation through vector arithmetic.",
+  "domain": "machine-learning",
+  "definition": "Latent space is a learned, typically lower-dimensional continuous space in which a model represents its inputs as vectors, positioning semantically similar inputs closer together. It is produced by an encoder or embedding process and is where operations such as interpolation, arithmetic and sampling are performed before a decoder network reconstructs or generates output in the original data space. Creative AI systems exploit structure in latent space to generate novel, coherent outputs by sampling or navigating it directly.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:ai-technique",
-      "label": "AI Technique"
-    },
-    {
-      "id": "urn:ngm:class:generative-model",
-      "label": "Generative Model"
+      "id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.55,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:generative-ai",
-        "label": "Generative AI"
+        "id": "urn:ngm:class:creative-ai",
+        "label": "Creative AI"
       },
       {
-        "id": "urn:ngm:class:variational-autoencoders",
-        "label": "Variational Autoencoders"
+        "id": "urn:ngm:class:decoder-network",
+        "label": "Decoder Network"
       }
     ],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:encoder-decoder-architecture",
-        "label": "Encoder Decoder Architecture"
-      },
-      {
-        "id": "urn:ngm:class:embedding-model",
-        "label": "Embedding Model"
-      }
-    ],
+    "uses": [],
     "supports": [],
     "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": [
+    "partOf": [
       {
-        "id": "urn:ngm:class:diffusion-model",
-        "label": "Diffusion Model"
+        "id": "urn:ngm:class:representation-learning",
+        "label": "Representation Learning"
       }
-    ]
+    ],
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [
     {
-      "slug": "ai-user",
-      "label": "AI User"
+      "slug": "ai-art-generation",
+      "label": "AI Art Generation"
     },
     {
-      "slug": "client-side-dco",
-      "label": "Client side DCO"
+      "slug": "ai-technology-skills-curriculum",
+      "label": "AI Technology Skills Curriculum"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
     },
     {
       "slug": "comfy-ui-workflows",
       "label": "ComfyUI Workflows"
     },
     {
-      "slug": "courses-and-training",
-      "label": "Courses and Training"
+      "slug": "creative-ai",
+      "label": "Creative AI"
+    },
+    {
+      "slug": "cross-modal-conditioning",
+      "label": "Cross-Modal Conditioning"
     },
     {
       "slug": "data-poisoning",
@@ -83,16 +78,28 @@
       "label": "Death of the Internet"
     },
     {
+      "slug": "decoder-network",
+      "label": "Decoder Network"
+    },
+    {
+      "slug": "deep-generative-model",
+      "label": "Deep Generative Model"
+    },
+    {
       "slug": "generative-adversarial-networks",
       "label": "Generative Adversarial Networks"
     },
     {
-      "slug": "machine-learning",
-      "label": "Machine Learning"
+      "slug": "machine-learning-discipline",
+      "label": "Machine Learning Discipline"
     },
     {
       "slug": "patent",
       "label": "Patent"
+    },
+    {
+      "slug": "privacy-preserving-dynamic-creative-optimisation",
+      "label": "Privacy-Preserving Dynamic Creative Optimisation"
     },
     {
       "slug": "proprietary-ai-video",

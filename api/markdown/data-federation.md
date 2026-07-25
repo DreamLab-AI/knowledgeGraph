@@ -1,4 +1,0 @@
-- ### Definition
-  - Data federation exposes many distributed sources as one virtual queryable database, the underlying mechanism for [[Data Virtualization]] and a [[Data Integration Interface]] that avoids copying data.
-- ### Content
-  - A federation layer parses a query, splits it into source-specific subqueries pushed down for execution, and joins the returned results. The trade-off is query-time latency and source-system load versus the agility of avoiding bulk ETL and duplicate storage.

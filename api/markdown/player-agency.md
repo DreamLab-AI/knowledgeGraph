@@ -1,4 +1,0 @@
-- ### Definition
-  - Player agency is the meaningful influence a participant's choices exert on an experience, a defining property of [[Open World]] design and [[Non-Linear Narrative]] structures.
-- ### Content
-  - Agency arises when systems respond to player decisions with persistent, branching, or emergent consequences, so the player feels like an author rather than a spectator. Designers cultivate it through open exploration, reactive simulation, and narratives that fork on choice, while balancing freedom against authored coherence so that meaningful options do not dissolve into directionless or unsatisfying outcomes.

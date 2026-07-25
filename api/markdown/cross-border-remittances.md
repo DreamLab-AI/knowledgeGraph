@@ -1,4 +1,0 @@
-- ### Definition
-  - Cross-border remittances are person-to-person international money transfers, often from workers abroad to families at home. They are increasingly enabled and made cheaper by [[Stablecoins]] and other crypto payment rails.
-- ### Content
-  - Conventional remittance corridors carry high fees and multi-day settlement, especially in underbanked regions. Stablecoin-based transfers compress cost and time by settling on public ledgers, but mainstream adoption depends on reliable fiat on- and off-ramps, regulatory clarity, and accessible custody for non-technical users.

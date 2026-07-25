@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:free-viewpoint-video",
+  "title": "Free-Viewpoint Video",
+  "slug": "free-viewpoint-video",
+  "public": true,
+  "classIri": "urn:ngm:class:free-viewpoint-video",
+  "domain": "spatial-computing",
+  "definition": "Free-viewpoint video is video content that lets a viewer choose an arbitrary virtual camera position and angle at playback time, rather than being locked to the camera positions used during capture. It is typically produced from volumetric video captured by a multi-camera rig, using novel view synthesis techniques to interpolate or render views that were never directly recorded. It enables immersive playback experiences such as walking around a captured scene in virtual reality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:volumetric-video",
+      "label": "Volumetric Video"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:novel-view-synthesis",
+        "label": "Novel View Synthesis"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

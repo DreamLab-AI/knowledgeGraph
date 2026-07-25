@@ -99,8 +99,8 @@ public:: true
         "label": "Game-Playing AI"
       },
       {
-        "@id": "urn:ngm:class:scientific-ai",
-        "label": "Scientific AI"
+        "@id": "urn:ngm:class:scientific-discovery-acceleration",
+        "label": "Scientific Discovery Acceleration"
       }
     ],
     "hasPart": [

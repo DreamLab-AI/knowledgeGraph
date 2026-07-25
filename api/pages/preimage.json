@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:preimage",
+  "title": "Preimage",
+  "slug": "preimage",
+  "public": true,
+  "classIri": "urn:ngm:class:preimage",
+  "domain": "blockchain",
+  "definition": "A preimage is an input value that, when passed through a cryptographic hash function, produces a specified output digest. Preimage resistance, the computational infeasibility of finding such an input given only the digest, is a core security property required of cryptographic hash functions. In protocols such as hash time-locked contracts, revealing the preimage of a previously published hash is used as cryptographic proof that a condition has been satisfied, enabling trustless conditional payments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-hash-function",
+      "label": "Cryptographic Hash Function"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-hash-function",
+        "label": "Cryptographic Hash Function"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

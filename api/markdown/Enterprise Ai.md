@@ -26,6 +26,10 @@ public:: true
     {
       "@id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "relations": {

@@ -1,2 +1,0 @@
-- ### Definition
-  - A real-time, low-latency text communication channel enabling direct person-to-person or small-group messaging for rapid coordination in distributed teams.

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:training-loop",
+  "title": "Training Loop",
+  "slug": "training-loop",
+  "public": true,
+  "classIri": "urn:ngm:class:training-loop",
+  "domain": "artificial-intelligence",
+  "definition": "A Training Loop is the iterative control structure that drives model training, repeatedly performing a forward pass, loss computation, backward pass, and parameter update over batches of data until a stopping condition is reached. It coordinates gradient descent steps with logging, checkpointing, and evaluation at regular intervals. Its structure is common across frameworks even though the specific optimiser and schedule vary.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:gradient-descent",
+      "label": "Gradient Descent"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    }
+  ]
+}

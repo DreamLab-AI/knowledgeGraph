@@ -1,4 +1,0 @@
-- ### Definition
-  - The PSNR metric quantifies reconstruction fidelity in decibels via the mean squared error between a reference and a processed signal. It is a standard benchmark in [[Image and Video Restoration]] and informs codec decisions in [[Bandwidth Adaptation]].
-- ### Content
-  - PSNR is cheap to compute and monotonic with MSE, making it a default reporting figure for compression and denoising. However, it treats all pixel errors equally and ignores human visual sensitivity, so it is often reported alongside perceptual metrics such as SSIM or LPIPS for a more complete quality assessment.

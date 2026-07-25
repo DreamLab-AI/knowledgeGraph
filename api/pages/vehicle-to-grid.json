@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:vehicle-to-grid",
+  "title": "Vehicle to Grid",
+  "slug": "vehicle-to-grid",
+  "public": true,
+  "classIri": "urn:ngm:class:vehicle-to-grid",
+  "domain": "infrastructure",
+  "definition": "Vehicle-to-grid (V2G) is a technology and operating model that allows an electric vehicle's battery to discharge stored energy back into the electricity grid, turning parked EVs into a distributed, dispatchable energy resource. It requires bidirectional charging hardware and grid-integration software that coordinates charge and discharge cycles with grid operator signals and electricity prices. V2G is a key enabling technology for demand response programmes and for smoothing the intermittency of renewable generation on the grid.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-grid",
+      "label": "Smart Grid"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:electric-vehicle",
+        "label": "Electric Vehicle"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:demand-response",
+        "label": "Demand Response"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

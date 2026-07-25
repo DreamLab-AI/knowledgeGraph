@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:user-centred-design",
+  "title": "User-Centred Design",
+  "slug": "user-centred-design",
+  "public": true,
+  "classIri": "urn:ngm:class:user-centred-design",
+  "domain": "spatial-computing",
+  "definition": "User-centred design is an iterative design methodology that grounds every stage of a system's development in the needs, behaviours and feedback of its intended users, typically through research, prototyping and usability testing. It treats user needs as the primary design constraint rather than an afterthought, in contrast to technology-first approaches. In interactive and spatial systems it shapes affordances, interaction patterns and accessibility provisions so that interfaces remain intuitive across diverse users and contexts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-experience-design",
+      "label": "User Experience Design"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:ergonomics",
+        "label": "Ergonomics"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:inclusive-design",
+        "label": "Inclusive Design"
+      },
+      {
+        "id": "urn:ngm:class:assistive-technology-integration",
+        "label": "Assistive Technology Integration"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:affordance",
+        "label": "Affordance"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:user-experience-design",
+        "label": "User Experience Design"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "assistive-technology-integration",
+      "label": "Assistive Technology Integration"
+    }
+  ]
+}

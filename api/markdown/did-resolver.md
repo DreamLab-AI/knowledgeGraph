@@ -1,4 +1,0 @@
-- ### Definition
-  - A DID resolver maps a DID to its DID document via method-specific drivers, following the W3C DID Resolution spec. It is a core component of [[Decentralized Identity (DID)]] and the mechanism that operationalises [[Decentralized Identifiers]].
-- ### Content
-  - Resolution may hit a blockchain, web server, or peer protocol depending on the DID method, returning verification material and service endpoints. Universal resolvers aggregate many method drivers behind one interface; key concerns are caching, trust in the underlying verifiable data registry, and resistance to spoofed documents.

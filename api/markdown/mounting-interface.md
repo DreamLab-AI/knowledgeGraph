@@ -1,4 +1,0 @@
-- ### Definition
-  - A mounting interface is the standardised mechanical feature set (bolt pattern, flange, alignment) that rigidly joins components. It is a part of a [[Mechanical Component]] and connects to a [[Robot Link]].
-- ### Content
-  - Well-defined interfaces guarantee repeatable alignment and predictable load paths, allowing end-effectors, sensors, and payloads to be swapped without recalibration. Standards such as ISO 9409 tool flanges underpin modular robot design and a broad ecosystem of compatible accessories.

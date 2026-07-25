@@ -29,8 +29,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:software-quality-assurance",
-        "label": "Software Quality Assurance"
+        "id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
       },
       {
         "id": "urn:ngm:class:knowledge-sharing",

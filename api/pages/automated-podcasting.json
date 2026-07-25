@@ -52,8 +52,8 @@
         "label": "Cloud Computing Infrastructure"
       },
       {
-        "id": "urn:ngm:class:neural-text-to-speech",
-        "label": "Neural Text-to-Speech"
+        "id": "urn:ngm:class:text-to-speech",
+        "label": "Text-to-Speech"
       },
       {
         "id": "urn:ngm:class:large-language-models",

@@ -98,7 +98,7 @@ elevatedFrom:: [[perplexity]]
   - ```
   curl --request POST \
     --url https://api.perplexity.ai/chat/completions \
-    --header 'Authorization: Bearer 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' \
+    --header 'Authorization: Bearer $PERPLEXITY_API_KEY' \
     --header 'Content-Type: application/json' \
     --data '{
     "max_tokens": 4096,

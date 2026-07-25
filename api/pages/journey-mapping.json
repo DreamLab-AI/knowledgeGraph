@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:journey-mapping",
+  "title": "Journey Mapping",
+  "slug": "journey-mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:journey-mapping",
+  "domain": "ai",
+  "definition": "Journey mapping is a design research technique that visually documents the sequence of steps, touchpoints, and emotional states a person experiences while interacting with a product, service, or organisation over time. It surfaces pain points, moments of friction, and opportunities for improvement by combining qualitative research with a structured visual timeline. Journey mapping is a core input to customer experience management and user experience design programmes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:customer-experience",
+      "label": "Customer Experience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:user-experience",
+        "label": "User Experience"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    }
+  ]
+}

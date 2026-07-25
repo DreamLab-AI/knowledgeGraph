@@ -23,7 +23,7 @@ public:: true
   "definition": "The Structural Similarity Index (SSIM) is a perceptual image-quality metric that compares two images by modelling luminance, contrast, and structural correlation over local windows, rather than measuring pixel-wise error alone. It correlates better with human judgement of quality than mean squared error or PSNR, producing a score between -1 and 1 where 1 indicates identical structure. It is widely used to evaluate compression, restoration, and generative reconstruction.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}],
+  "subClassOf": [{"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}, {"@id": "urn:ngm:class:model-performance", "label": "Model Performance"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:bandwidth-adaptation", "label": "Bandwidth Adaptation"},

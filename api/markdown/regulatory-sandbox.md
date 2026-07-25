@@ -1,4 +1,0 @@
-- ### Definition
-  - A regulatory sandbox is a supervised live-testing regime offering temporary relief to innovators, used across [[Asia-Pacific Regulation]] and supporting the [[Adoption of Convergent Technologies]].
-- ### Content
-  - Participants operate within agreed limits on customers, volume, and duration while reporting closely to the supervisor. The arrangement de-risks experimentation for firms and gives regulators evidence to shape proportionate rules, though admission criteria and exit pathways vary by jurisdiction.

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:human-annotator",
+  "title": "Human Annotator",
+  "slug": "human-annotator",
+  "public": true,
+  "classIri": "urn:ngm:class:human-annotator",
+  "domain": "machine-learning",
+  "definition": "A human annotator is a person who labels, categorises or reviews raw data samples \u2014 text, images, audio or model outputs \u2014 to produce the ground-truth or preference signals used to train and evaluate machine learning models. Annotators follow labelling guidelines and, for subjective tasks, their agreement is measured via inter-annotator agreement to assess label quality. Human annotators are central to supervised data annotation pipelines and to collecting human feedback for reinforcement learning from human feedback.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-annotation",
+      "label": "Data Annotation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:data-annotation",
+        "label": "Data Annotation"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

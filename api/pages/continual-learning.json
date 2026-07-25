@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
+    },
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",
@@ -56,8 +60,8 @@
         "label": "Regularisation"
       },
       {
-        "id": "urn:ngm:class:neural-networks",
-        "label": "Neural Networks"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       }
     ],
     "enables": [
@@ -70,8 +74,8 @@
         "label": "Few-Shot Learning"
       },
       {
-        "id": "urn:ngm:class:autonomous-agents",
-        "label": "Autonomous Agents"
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       },
       {
         "id": "urn:ngm:class:machine-unlearning",
@@ -80,8 +84,8 @@
     ],
     "dependsOn": [
       {
-        "id": "urn:ngm:class:neural-networks",
-        "label": "Neural Networks"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       },
       {
         "id": "urn:ngm:class:gradient-descent",

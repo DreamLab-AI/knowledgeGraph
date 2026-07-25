@@ -1,4 +1,0 @@
-- ### Definition
-  - Immersion cooling submerges hardware in dielectric fluid for efficient heat removal, a technique used in [[Bitcoin Mining]] that bears on debates over [[Bitcoin Environmental Issues]].
-- ### Content
-  - Single-phase systems circulate fluid past heat sources while two-phase systems exploit boiling and condensation for higher flux. By cutting cooling power and enabling waste-heat reuse, immersion cooling improves power-usage effectiveness, though it raises capital cost and fluid-handling and maintenance complexity.

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:protocol-development",
+  "title": "Protocol Development",
+  "slug": "protocol-development",
+  "public": true,
+  "classIri": "urn:ngm:class:protocol-development",
+  "domain": "standards",
+  "definition": "Protocol development is the process of designing, specifying, implementing and iterating a technical communication or consensus protocol, from initial specification through reference implementation to formal standardisation. It typically proceeds through draft proposals, interoperability testing and governance review before a protocol is adopted as a compatibility standard. In blockchain ecosystems, protocol development is frequently funded through public-goods funding mechanisms that reward contributors to shared infrastructure.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:software-development",
+      "label": "Software Development"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compatibility-standards",
+      "label": "Compatibility Standards"
+    }
+  ]
+}

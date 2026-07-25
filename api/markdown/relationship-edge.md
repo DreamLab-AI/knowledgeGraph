@@ -1,4 +1,0 @@
-- ### Definition
-  - A relationship edge is a typed, often property-bearing connection between nodes, the structural unit that gives a [[Knowledge Graph]] or [[Identity Graph]] its meaning.
-- ### Content
-  - Edges may be directed (subject to object) or undirected, and carry labels such as "owns" or "knows" plus optional weights and timestamps. Graph databases index edges to support efficient traversal, pattern matching, and inference, making edge design central to query expressiveness and performance.

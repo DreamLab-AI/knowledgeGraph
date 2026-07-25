@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:advanced-driver-assistance-system",
+  "title": "Advanced Driver Assistance System",
+  "slug": "advanced-driver-assistance-system",
+  "public": true,
+  "classIri": "urn:ngm:class:advanced-driver-assistance-system",
+  "domain": "robotics",
+  "definition": "An Advanced Driver Assistance System (ADAS) is a suite of sensor-based technologies built into a vehicle that assist a human driver with perception, warning, or partial control tasks such as lane keeping, adaptive cruise control, and automatic emergency braking. It sits below full autonomy on the driving-automation scale, keeping the human driver responsible for the overall task. Standards such as SAE J3016 define the levels of automation ADAS features correspond to.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autonomous-vehicle",
+      "label": "Autonomous Vehicle"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,2 +1,0 @@
-- ### Definition
-  - A persistent, synchronised three-dimensional environment inhabited simultaneously by multiple remote participants, providing a common spatial context for immersive co-located collaboration.

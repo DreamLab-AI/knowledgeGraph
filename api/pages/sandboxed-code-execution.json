@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:sandboxed-code-execution",
+  "title": "Sandboxed Code Execution",
+  "slug": "sandboxed-code-execution",
+  "public": true,
+  "classIri": "urn:ngm:class:sandboxed-code-execution",
+  "domain": "ai",
+  "definition": "Sandboxed code execution is the practice of running AI-agent-generated code inside an isolated runtime \u2014 a container, microVM, or restricted interpreter \u2014 that constrains filesystem, network, and system-call access. It lets an agent execute arbitrary code to compute results or verify hypotheses without risking the host environment or leaking credentials. It matters for autonomous coding agents and terminal-based assistants, where generated code is untrusted by default and must be contained until its effects are reviewed or accepted.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:code-execution",
+      "label": "Code Execution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:code-execution",
+        "label": "Code Execution"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-harness",
+      "label": "Agent Harness"
+    },
+    {
+      "slug": "agent-runtime",
+      "label": "Agent Runtime"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "code-execution",
+      "label": "Code Execution"
+    },
+    {
+      "slug": "terminal-coding-agents",
+      "label": "Terminal Coding Agents"
+    }
+  ]
+}

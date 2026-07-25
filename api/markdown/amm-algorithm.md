@@ -1,4 +1,0 @@
-- ### Definition
-  - An AMM Algorithm is the deterministic pricing curve that quotes prices from pool reserves in a decentralized exchange. It governs the behaviour of a [[Liquidity Pool]] and is the direct source of [[Impermanent Loss]] for providers.
-- ### Content
-  - The constant-product rule keeps the product of reserves invariant, so each trade moves price along a hyperbola, producing slippage proportional to trade size relative to depth. Specialized invariants reduce slippage for correlated assets (stableswap) or concentrate capital in a price band (concentrated liquidity), trading simplicity for capital efficiency and more complex risk profiles.

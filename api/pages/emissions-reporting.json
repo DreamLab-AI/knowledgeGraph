@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:emissions-reporting",
+  "title": "Emissions Reporting",
+  "slug": "emissions-reporting",
+  "public": true,
+  "classIri": "urn:ngm:class:emissions-reporting",
+  "domain": "governance",
+  "definition": "Emissions reporting is the structured disclosure of an organisation's greenhouse gas output across defined scopes and reporting periods, typically following standards such as the GHG Protocol. It converts underlying carbon accounting data into public or regulatory filings that stakeholders and auditors can verify. Frameworks such as the Crypto Climate Accord require signatories to publish emissions reporting to demonstrate progress toward stated climate commitments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:carbon-accounting",
+        "label": "Carbon Accounting"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-accounting",
+      "label": "Carbon Accounting"
+    }
+  ]
+}

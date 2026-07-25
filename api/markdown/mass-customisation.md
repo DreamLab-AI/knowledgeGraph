@@ -1,4 +1,0 @@
-- ### Definition
-  - Mass customisation produces personalised products at near mass-production cost through flexible, modular, configurable manufacturing. It is applied in domains like [[Fashion]] and made economically viable by the reconfigurability of the [[Industrial Robot]].
-- ### Content
-  - The model relies on postponement of differentiation, modular product architectures, and automated changeover to handle lot sizes approaching one. Digital twins, configurators, and adaptive robotic cells reduce the cost penalty of variety that previously made bespoke production uneconomic at scale.

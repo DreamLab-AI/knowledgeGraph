@@ -1,4 +1,0 @@
-- ### Definition
-  - Visual SLAM jointly recovers camera pose and scene structure from imagery; it draws on [[Depth Estimation]] for metric scale and uses [[Visual Place Recognition]] to close loops and bound drift.
-- ### Content
-  - Implementations divide into feature-based (e.g. ORB-SLAM) and direct (e.g. DSO, LSD-SLAM) families, often extended with inertial fusion (VIO) for robustness. Core components are a front-end tracker, a back-end optimiser performing bundle adjustment over keyframes, and loop-closure detection; trade-offs centre on accuracy, computational budget, and resilience to texture-poor or dynamic scenes.

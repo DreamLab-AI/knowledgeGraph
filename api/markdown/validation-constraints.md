@@ -1,4 +1,0 @@
-- ### Definition
-  - Validation constraints define the rules that data must satisfy to conform to a schema, forming part of a [[Metadata Standard]] and a [[Metaverse Ontology Schema]].
-- ### Content
-  - Constraint languages such as SHACL and JSON Schema express closed-world checks on shape, datatype and cardinality. Validators apply these rules to assert conformance, surface violations with diagnostics, and gate data ingestion or publication pipelines.

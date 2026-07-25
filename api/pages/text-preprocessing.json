@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:text-preprocessing",
+  "title": "Text Preprocessing",
+  "slug": "text-preprocessing",
+  "public": true,
+  "classIri": "urn:ngm:class:text-preprocessing",
+  "domain": "machine-learning",
+  "definition": "Text preprocessing is the stage of a natural language processing pipeline that transforms raw text into a normalised, structured form suitable for tokenisation and modelling, encompassing steps such as lowercasing, punctuation and whitespace normalisation, removal of unwanted characters, and segmentation into sentences or tokens. It precedes and feeds directly into tokenisation, which converts the cleaned text into the discrete units a neural network consumes. Consistent text preprocessing reduces vocabulary sparsity and noise, materially affecting downstream model quality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-preprocessing",
+      "label": "Data Preprocessing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tokeniser",
+        "label": "Tokeniser"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

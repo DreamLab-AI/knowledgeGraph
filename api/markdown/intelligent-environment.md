@@ -1,4 +1,0 @@
-- ### Definition
-  - An intelligent environment is a sensed, computationally augmented space that adapts to its occupants. It hosts the [[Autonomous Agent]] and the [[Intelligent Virtual Entity]] as resident actors that respond to context.
-- ### Content
-  - Implementations combine spatial sensing, scene understanding, and agent reasoning so the space anticipates needs, manages resources, and orchestrates interactions. In immersive worlds it provides the substrate within which populations of agents perceive and act.

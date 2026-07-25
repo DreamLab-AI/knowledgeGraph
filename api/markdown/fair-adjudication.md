@@ -1,4 +1,0 @@
-- ### Definition
-  - Fair adjudication is impartial, due-process-respecting decision-making over disputes, providing the legitimacy criterion that a [[Dispute Resolution Mechanism]] and [[E-Contract Arbitration]] must satisfy. It sits within the broader practice of [[Governance]].
-- ### Content
-  - Achieving fair adjudication requires neutral arbiters, equal evidentiary footing, transparent and consistent rule application, and the right to appeal or challenge bias. In decentralised systems this translates into juror-selection schemes, staking and incentive design, and cryptographic commitment to evidence, all intended to approximate procedural fairness without a central authority.

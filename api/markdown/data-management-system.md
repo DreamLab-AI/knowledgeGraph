@@ -1,4 +1,0 @@
-- ### Definition
-  - A data management system is software for storing, organising and governing data across its lifecycle, with specialisations such as the [[Graph Database]] and supporting [[Metadata Standard]] adoption.
-- ### Content
-  - Such systems provide schema definition, transactional integrity, concurrency control, querying and access management. Variants are optimised for relational, document, key-value, graph or time-series workloads depending on the access patterns required.

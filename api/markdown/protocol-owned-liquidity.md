@@ -1,4 +1,0 @@
-- ### Definition
-  - Protocol-owned liquidity is the practice of a protocol owning its own liquidity-pool positions rather than renting them through incentives. It is a core component of [[Treasury Management]] and a tool for durable, self-funded market depth.
-- ### Content
-  - POL is typically accumulated via bonding, where users sell liquidity-provider tokens or assets to the protocol in exchange for discounted native tokens, transferring liquidity ownership to the treasury. Owning liquidity converts a recurring incentive cost into a fee-earning asset and stabilises markets, but it concentrates risk in the treasury's holdings and exposes it to impermanent loss and native-token price swings.

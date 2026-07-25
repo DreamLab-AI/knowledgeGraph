@@ -1,4 +1,0 @@
-- ### Definition
-  - DAG execution schedules dependent tasks expressed as an acyclic graph, running each node once its inputs are available. It is the mechanism that [[ComfyUI Workflows]] and the [[ComfyUI Client]] implement to evaluate node-based pipelines.
-- ### Content
-  - The engine topologically sorts nodes, executes independent branches in parallel, and can cache node outputs so only changed subgraphs re-run. This model underpins build systems, data pipelines (Airflow, Dagster), and generative-AI node editors, trading the expressiveness of arbitrary control flow for predictability and parallelism.

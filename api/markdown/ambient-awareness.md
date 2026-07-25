@@ -1,4 +1,0 @@
-- ### Definition
-  - Ambient Awareness is the background sense of colleagues' presence and activity sustained by subtle, continuous cues. It is surfaced concretely through the [[Presence Indicator]] and related status signals in shared workspaces.
-- ### Content
-  - Rather than interrupting with alerts, ambient awareness leaks lightweight context such as who is online, what they are working on, or whether they are speaking. In telepresence and virtual environments this is delivered via avatars, spatial audio, and activity feeds, reducing coordination overhead and recreating the incidental awareness of a shared physical space.

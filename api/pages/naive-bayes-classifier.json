@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:naive-bayes-classifier",
+  "title": "Naive Bayes Classifier",
+  "slug": "naive-bayes-classifier",
+  "public": true,
+  "classIri": "urn:ngm:class:naive-bayes-classifier",
+  "domain": "machine-learning",
+  "definition": "A naive Bayes classifier is a probabilistic classification algorithm that applies Bayes' theorem under the simplifying (naive) assumption that features are conditionally independent given the class label. Despite this assumption rarely holding exactly in practice, the classifier is computationally efficient, requires little training data, and performs competitively on tasks such as text classification and spam filtering. It estimates class-conditional feature distributions from training data and selects the class maximising posterior probability for a new observation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:bayes-theorem",
+        "label": "Bayes Theorem"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-theorem",
+      "label": "Bayes Theorem"
+    },
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    }
+  ]
+}

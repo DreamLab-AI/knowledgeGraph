@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:3-d-scene-representation",
+  "title": "3D Scene Representation",
+  "slug": "3-d-scene-representation",
+  "public": true,
+  "classIri": "urn:ngm:class:3-d-scene-representation",
+  "domain": "spatial-computing",
+  "definition": "A 3D scene representation is a data structure that encodes the geometry, appearance and spatial layout of a three-dimensional environment, such as point clouds, meshes, voxel grids or neural implicit fields. It underpins 3D content generation and reconstruction pipelines, providing the intermediate format from which renderable or editable scenes are produced. Point clouds are one common instance, forming a sparse, unstructured representation that is often converted into denser structures for downstream use.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:scene-representation",
+      "label": "Scene Representation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:point-cloud",
+        "label": "Point Cloud"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

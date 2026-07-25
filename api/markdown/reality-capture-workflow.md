@@ -1,4 +1,0 @@
-- ### Definition
-  - A reality capture workflow is the staged pipeline that turns physical subjects into digital 3D assets, combining [[Photogrammetry]] and [[Digital Performance Capture]] with reconstruction and cleanup steps.
-- ### Content
-  - The workflow generally moves from data acquisition (multi-view imagery, depth scans, motion data) through registration and dense reconstruction to mesh decimation, UV unwrapping, and texture baking. Quality control at each stage determines whether the resulting asset is suitable for real-time rendering, simulation, or archival use.

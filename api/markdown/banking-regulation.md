@@ -1,2 +1,0 @@
-- ### Definition
-  - The body of laws and supervisory frameworks governing bank formation, operation, and dissolution to ensure systemic stability, depositor protection, and prudential compliance.

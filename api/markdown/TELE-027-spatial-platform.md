@@ -58,6 +58,10 @@ public:: true
     {
       "@id": "urn:ngm:class:telepresence",
       "label": "Telepresence"
+    },
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence (Distributed Collaboration)"
     }
   ],
   "relations": {

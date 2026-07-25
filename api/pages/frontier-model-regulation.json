@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:frontier-model-regulation",
+  "title": "Frontier Model Regulation",
+  "slug": "frontier-model-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:frontier-model-regulation",
+  "domain": "governance",
+  "definition": "Frontier model regulation is the emerging body of law and policy that targets the most capable AI systems specifically, imposing obligations such as pre-deployment risk assessment, capability evaluation, and incident reporting on developers of models above defined compute or capability thresholds. It is a subset of AI regulation distinguished by its focus on systemic and catastrophic risk rather than narrow, application-specific harms. Frontier model regulation has been advanced through instruments such as the EU AI Act's general-purpose AI provisions and voluntary commitments negotiated with leading labs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-regulation",
+      "label": "AI Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    }
+  ]
+}

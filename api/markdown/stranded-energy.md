@@ -1,4 +1,0 @@
-- ### Definition
-  - Stranded energy is power that is produced but cannot reach a market, typically from remote or curtailed generation, and which can be captured by mobile compute loads as discussed in [[Bitcoin Environmental Issues]].
-- ### Content
-  - Stranded energy arises wherever generation is geographically or temporally disconnected from demand, such as flared natural gas, curtailed renewables, and isolated hydro. Its near-zero or negative marginal value makes it attractive for interruptible, location-flexible loads, and Bitcoin mining has emerged as a buyer of last resort that improves the economics of otherwise-wasted resources. This dynamic is central to debates over the energy footprint of proof-of-work networks.

@@ -66,6 +66,10 @@ public:: true
     {
       "@id": "urn:ngm:class:supervised-learning",
       "label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

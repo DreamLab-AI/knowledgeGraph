@@ -1,4 +1,0 @@
-- ### Definition
-  - Format migration converts assets between formats while retaining their semantics, and is enabled by a [[Conversion Pipeline]] and governed by [[Archival Standards]]. It is the principal preservation strategy for long-lived digital collections.
-- ### Content
-  - Migration strategies trade off automation against fidelity: lossless conversions preserve all data, while lossy ones accept controlled degradation to gain compatibility. Best practice records provenance, retains originals, and validates outputs against the target schema. Batch pipelines handle large archives, applying consistent transformation rules and emitting audit logs.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Project Agora is a BIS-led experiment integrating tokenised commercial-bank deposits with central-bank money on a shared programmable platform for cross-border payments. It relates to [[CBDC Frameworks]] and explores permissioned ledger technology comparable to [[Hyperledger Iroha]].
-- ### Content
-  - The project tests a unified ledger in which different forms of money coexist as programmable tokens, aiming to reduce friction, cost, and settlement risk in correspondent banking. By combining tokenised deposits and wholesale central-bank money with smart-contract automation, it probes how regulatory compliance, FX, and finality can be embedded directly into the settlement layer.

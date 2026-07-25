@@ -87,7 +87,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:generative-ai", "label": "Generative AI"},
       {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:multimodal-ai", "label": "Multimodal AI"},
+      {"@id": "urn:ngm:class:multimodal-ai-architecture-ai", "label": "Multimodal AI"},
       {"@id": "urn:ngm:class:digital-economy", "label": "Digital Economy"}
     ],
     "requires": [

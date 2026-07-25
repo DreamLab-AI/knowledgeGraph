@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:defi-infrastructure",
+  "title": "DeFi Infrastructure",
+  "slug": "defi-infrastructure",
+  "public": true,
+  "classIri": "urn:ngm:class:defi-infrastructure",
+  "domain": "blockchain",
+  "definition": "DeFi infrastructure is the layer of foundational protocols and services \u2014 price oracles, stablecoins, bridges, and indexing services \u2014 that decentralised finance applications depend on but do not themselves implement. It sits beneath end-user-facing DeFi protocols such as lending markets and exchanges, supplying reliable price feeds and settlement assets like USDC that those protocols compose into their own functionality. Its reliability and decentralisation materially affect the security of everything built on top of it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:de-fi",
+      "label": "DeFi"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:de-fi",
+        "label": "DeFi"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

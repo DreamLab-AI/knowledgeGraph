@@ -1,0 +1,60 @@
+{
+  "id": "urn:visionflow:page:contestability",
+  "title": "Contestability",
+  "slug": "contestability",
+  "public": true,
+  "classIri": "urn:ngm:class:contestability",
+  "domain": "artificial-intelligence",
+  "definition": "Contestability is the property of a system or decision-making process that allows an affected party to challenge, question or seek review of an automated decision. It requires that the basis of a decision be sufficiently transparent to be examined, and that a mechanism exists for raising and resolving disputes. Contestability is a design and governance goal in AI accountability frameworks, complementing explainability and transparency by ensuring outcomes are not merely explained but also revisable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:accountability",
+      "label": "Accountability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.65,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      },
+      {
+        "id": "urn:ngm:class:transparency",
+        "label": "Transparency"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accountability-ai-0068",
+      "label": "Accountability (AI-0068)"
+    },
+    {
+      "slug": "ai-governance-principle",
+      "label": "Ai Governance Principle"
+    },
+    {
+      "slug": "decision-transparency",
+      "label": "Decision Transparency"
+    },
+    {
+      "slug": "transparency-oecd",
+      "label": "Transparency (OECD)"
+    }
+  ]
+}

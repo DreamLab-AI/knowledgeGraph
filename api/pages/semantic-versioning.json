@@ -1,0 +1,62 @@
+{
+  "id": "urn:visionflow:page:semantic-versioning",
+  "title": "Semantic Versioning",
+  "slug": "semantic-versioning",
+  "public": true,
+  "classIri": "urn:ngm:class:semantic-versioning",
+  "domain": "infrastructure",
+  "definition": "Semantic Versioning (SemVer) is a versioning scheme that encodes compatibility information in a three-part MAJOR.MINOR.PATCH number: major increments signal breaking changes, minor increments add backward-compatible functionality, and patch increments fix bugs without changing the interface. It gives consumers of a package or API a predictable way to reason about upgrade risk. It is widely adopted across package registries, REST and gRPC API contracts, and machine learning model registries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:version-control",
+      "label": "Version Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:backward-compatibility",
+        "label": "Backward Compatibility"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:api-versioning",
+        "label": "API Versioning"
+      },
+      {
+        "id": "urn:ngm:class:api-contract",
+        "label": "Api Contract"
+      },
+      {
+        "id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

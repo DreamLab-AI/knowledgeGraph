@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:independent-verification",
+  "title": "Independent Verification",
+  "slug": "independent-verification",
+  "public": true,
+  "classIri": "urn:ngm:class:independent-verification",
+  "domain": "blockchain",
+  "definition": "Independent Verification is the ability of any participant to check the validity of transactions or state transitions themselves, using publicly available data and consensus rules, rather than trusting a third party's assertion. In blockchain systems it is what a full node performs when it re-executes and validates every block, giving the network its trust-minimised guarantees. It is a precondition for meaningful decentralisation, since a system that cannot be independently verified reduces to trusting whoever operates it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:verification-process",
+      "label": "Verification Process"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    }
+  ]
+}

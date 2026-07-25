@@ -1,4 +1,0 @@
-- ### Definition
-  - Export controls are statutory restrictions on the international transfer of sensitive goods, software, and technology, and have become central to [[Competition in AI]] through limits on advanced compute and semiconductor exports. They form part of the broader [[AI Governance]] and [[Regulatory Compliance]] landscape.
-- ### Content
-  - Modern AI-relevant export-control regimes target high-end GPUs, chip-fabrication equipment, and model weights above defined capability thresholds, requiring licences, end-use certificates, and entity-list screening. They shape global supply chains and strategic positioning, but raise enforcement challenges given the dual-use nature and digital portability of AI artefacts.

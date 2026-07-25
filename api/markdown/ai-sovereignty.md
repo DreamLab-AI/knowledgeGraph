@@ -1,4 +1,0 @@
-- ### Definition
-  - AI Sovereignty is a state's ability to build and govern AI independently of foreign control. It both enables and is supported by [[Competition in AI]], driving investment in domestic [[AI Chips]], data, and models.
-- ### Content
-  - Pursuing sovereignty entails securing the full stack: fabrication or assured chip supply, sovereign compute clusters, locally trained models, domestic data, and aligned regulation. The motivation mixes economic competitiveness, national security, and the desire to enforce local values and legal regimes on systems deployed within a jurisdiction.

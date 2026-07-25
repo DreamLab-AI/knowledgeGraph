@@ -1,4 +1,0 @@
-- ### Definition
-  - A specification governing end-to-end data delivery between processes, covering reliability, ordering, multiplexing, and congestion control. It provides the communication substrate required by higher-level protocols such as [[Model Control Protocols like MCP]] within the [[Networking Domain]].
-- ### Content
-  - TCP offers reliable, ordered byte streams; UDP offers lightweight connectionless datagrams; and QUIC layers multiplexed, encrypted streams over UDP to reduce latency. The choice of transport shapes the latency, reliability, and security characteristics available to the protocols and applications built on top of it.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Consortium governance is the joint control model for permissioned ledgers shared among vetted organisations, supporting [[Enterprise Smart Contracts]] and underpinning [[Blockchain as a Service]] offerings.
-- ### Content
-  - A governing charter defines onboarding, voting weights, validator selection, and upgrade procedures across consortium members. This model suits inter-organisational settlement, supply-chain tracking, and regulated finance where participants need shared infrastructure without ceding control to a fully public network.

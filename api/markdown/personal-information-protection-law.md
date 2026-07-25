@@ -1,4 +1,0 @@
-- ### Definition
-  - The Personal Information Protection Law is China's omnibus data-protection statute and a central instrument of [[Asia-Pacific Regulation]] on personal data.
-- ### Content
-  - PIPL requires a lawful basis (often explicit consent) and data-minimisation for processing, grants rights of access, correction, and deletion, and imposes localisation and security-assessment conditions on cross-border transfers. Its extraterritorial scope means foreign organisations handling the data of people in China must comply, and breaches can attract fines of up to fifty million yuan or five percent of annual turnover.

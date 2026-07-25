@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:merkle-damgard-construction",
+  "title": "Merkle-Damgard Construction",
+  "slug": "merkle-damgard-construction",
+  "public": true,
+  "classIri": "urn:ngm:class:merkle-damgard-construction",
+  "domain": "security",
+  "definition": "The Merkle-Damgard construction is a method for building a collision-resistant cryptographic hash function of arbitrary input length from a fixed-size, collision-resistant compression function, by padding the message and processing it in sequential blocks that chain into one another. SHA-256 and most other widely used hash functions of the SHA-1 and SHA-2 families are built on this construction. It is known to be vulnerable to length-extension attacks unless the hash output is further truncated or otherwise protected.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cryptographic-hash",
+      "label": "Cryptographic Hash"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

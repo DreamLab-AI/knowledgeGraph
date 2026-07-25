@@ -50,8 +50,8 @@
         "label": "Zero Knowledge Proof"
       },
       {
-        "id": "urn:ngm:class:threshold-signature",
-        "label": "Threshold Signature"
+        "id": "urn:ngm:class:threshold-signature-scheme",
+        "label": "Threshold Signature Scheme"
       }
     ],
     "dependsOn": [

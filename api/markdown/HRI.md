@@ -66,6 +66,10 @@ public:: true
     {
       "@id": "urn:ngm:class:robotics",
       "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:robo-human-robot-interaction",
+      "label": "Human-Robot Interaction"
     }
   ],
   "relations": {

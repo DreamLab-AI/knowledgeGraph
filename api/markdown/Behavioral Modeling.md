@@ -49,10 +49,16 @@ public:: true
   "definition": "Behavioral Modeling is the application of machine learning and statistical methods to represent, predict, and simulate how agents (humans, robots, or software entities) act under varying conditions. It underpins applications ranging from user-behaviour analytics and fraud detection to reinforcement learning policies and autonomous agent control.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": {
-    "@id": "urn:ngm:class:machine-learning-discipline",
-    "label": "Machine Learning Discipline"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

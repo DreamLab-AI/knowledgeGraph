@@ -1,4 +1,0 @@
-- ### Definition
-  - CE Marking is the EU conformity mark certifying that a product, including machinery and robots, satisfies applicable safety directives, making it a gatekeeping requirement aligned with each relevant [[Robot Standard]].
-- ### Content
-  - Obtaining the mark involves a conformity assessment that may require notified-body involvement for higher-risk machinery, supported by risk assessment, harmonised-standard compliance, and a technical file. The manufacturer affixes the mark and issues an EU Declaration of Conformity, accepting legal responsibility for the product's safety.

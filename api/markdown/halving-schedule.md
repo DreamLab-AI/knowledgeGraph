@@ -1,4 +1,0 @@
-- ### Definition
-  - The halving schedule is the issuance-reduction rule implemented by [[Bitcoin Mining]] and described in the [[Bitcoin Technical Overview]], halving the block reward at fixed block-height intervals.
-- ### Content
-  - Each halving lowers miner revenue from new coins, shifting the fee/subsidy balance and historically acting as a focal point for supply-shock narratives. Because the schedule is encoded in consensus rules, it provides a transparent, non-discretionary monetary policy distinct from central-bank issuance.

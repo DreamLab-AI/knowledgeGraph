@@ -1,2 +1,0 @@
-- ### Definition
-  - Yjs is a JavaScript CRDT framework that provides conflict-free shared data types and pluggable network transports, enabling real-time collaborative editing in web applications.

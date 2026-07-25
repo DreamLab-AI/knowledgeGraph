@@ -1,4 +1,0 @@
-- ### Definition
-  - OFDM is a modulation scheme that sends data across many orthogonal subcarriers in parallel. It is a [[Physical Layer]] technique used in Wi-Fi, LTE, and 5G.
-- ### Content
-  - The orthogonality of subcarriers, implemented efficiently with the FFT, lets them overlap in frequency without interference, maximising spectral efficiency. A cyclic prefix absorbs multipath delay spread to prevent inter-symbol interference, while the main drawbacks are sensitivity to frequency offset and a high peak-to-average power ratio that stresses transmitters.

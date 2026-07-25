@@ -107,8 +107,8 @@ alias:: BlockchainTechnology
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "@id": "urn:ngm:class:network-node",
-        "label": "Network Node"
+        "@id": "urn:ngm:class:node",
+        "label": "Node"
       }
     ],
     "contrastsWith": [

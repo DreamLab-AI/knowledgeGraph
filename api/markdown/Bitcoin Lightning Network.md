@@ -99,8 +99,8 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:bitcoin-ecosystem",
-        "label": "Bitcoin Ecosystem"
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
       }
     ],
     "requires": [

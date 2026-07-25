@@ -1,4 +1,0 @@
-- ### Definition
-  - An interaction manager orchestrates the dialogue and behaviour flow of an agent, tracking context and selecting timed responses. It is a part of the [[Intelligent Virtual Entity]] and of the broader [[Experience Layer]].
-- ### Content
-  - It maintains dialogue state, arbitrates between competing behaviours, and coordinates multimodal output across speech, animation, and gesture. By decoupling decision logic from rendering, it lets virtual entities behave consistently across contexts.

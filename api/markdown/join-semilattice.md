@@ -1,4 +1,0 @@
-- ### Definition
-  - A join-semilattice is an ordered algebraic structure whose idempotent, commutative, associative join operation provides the convergence guarantee that a [[CRDT]] relies upon to merge concurrent replica states.
-- ### Content
-  - Because merges form a monotone lattice climb toward a least upper bound, state-based (convergent) replicated data types can exchange and combine states in any order without coordination and still reach the same result. This property makes join-semilattices central to eventually consistent and offline-first distributed systems.

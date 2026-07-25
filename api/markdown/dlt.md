@@ -1,4 +1,0 @@
-- ### Definition
-  - Distributed Ledger Technology (DLT) is a family of systems that maintain a shared, replicated record of transactions across many nodes without central control. [[Blockchain]] is the best-known instance, and DLT is a prerequisite for many [[CBDCs]] designs.
-- ### Content
-  - DLT achieves consistency through consensus protocols and cryptographic linking of records, giving tamper-evidence and high availability. Implementations range from permissionless public chains to permissioned consortium ledgers used in regulated finance, where [[CBDC Frameworks]] require auditable, controllable infrastructure.

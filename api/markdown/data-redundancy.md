@@ -1,4 +1,0 @@
-- ### Definition
-  - Data redundancy stores recoverable duplicate copies so information survives failure, implemented in [[Data Storage]] through replication, RAID and codes such as [[Forward Error Correction]].
-- ### Content
-  - Approaches range from full replication and mirroring to space-efficient erasure coding that reconstructs lost shards from parity. The design balances storage overhead and write cost against the durability and availability targets the system must meet.

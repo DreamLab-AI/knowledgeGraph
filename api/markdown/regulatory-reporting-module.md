@@ -1,4 +1,0 @@
-- ### Definition
-  - A regulatory reporting module is the reusable component that formats and submits mandated disclosures, forming part of [[Compliance Monitoring]] systems and the [[Digital Tax Compliance Node]].
-- ### Content
-  - The module typically maintains per-jurisdiction templates, runs validations against regulatory schemas, and manages secure transmission to authorities. By isolating reporting concerns, it lets the rest of a platform evolve independently while keeping filings accurate and auditable.

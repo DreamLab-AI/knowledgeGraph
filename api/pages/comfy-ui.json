@@ -98,8 +98,8 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:stable-diffusion",
-        "label": "Stable Diffusion"
+        "id": "urn:ngm:class:stable-diffusion-image-model",
+        "label": "Stable Diffusion Image Model"
       },
       {
         "id": "urn:ngm:class:latent-diffusion",
@@ -118,7 +118,7 @@
         "label": "VAE"
       },
       {
-        "id": "urn:ngm:class:lora-fine-tuning",
+        "id": "urn:ngm:class:lo-ra-fine-tuning",
         "label": "LoRA Fine-Tuning"
       },
       {

@@ -1,4 +1,0 @@
-- ### Definition
-  - An Access Control Module is a reusable authorization component that decides which principals may perform which operations. It is frequently paired with a [[Timelock]] to gate privileged actions and forms part of [[Digital Rights Management Extended]] schemes that control who may consume protected assets.
-- ### Content
-  - The module typically exposes role definitions, ownership assignment, and modifier-style guards that revert unauthorized calls. In contract suites it is inherited rather than deployed standalone, which keeps permission logic auditable and consistent across functions. Role hierarchies, admin transfer, and emergency pause are common extensions.

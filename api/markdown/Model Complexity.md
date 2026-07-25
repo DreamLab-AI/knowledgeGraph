@@ -19,6 +19,10 @@ public:: true
     {
       "@id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

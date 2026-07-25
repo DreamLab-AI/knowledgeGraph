@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:conditioning-signal",
+  "title": "Conditioning Signal",
+  "slug": "conditioning-signal",
+  "public": true,
+  "classIri": "urn:ngm:class:conditioning-signal",
+  "domain": "artificial-intelligence",
+  "definition": "A conditioning signal is auxiliary input - such as a text prompt, class label, pose map, or edge map - supplied to a generative model to steer its output toward desired attributes without retraining the base model. Techniques such as classifier-free guidance and ControlNet-style spatial conditioning inject these signals at specific points in the generation process to control content, structure, or style. The strength and fidelity of a conditioning signal determine how closely generated output adheres to the intended constraint.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-signal",
+      "label": "Control Signal"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "classifier-free-guidance",
+      "label": "classifier-free guidance"
+    },
+    {
+      "slug": "control-net-conditioning",
+      "label": "ControlNet Conditioning"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    }
+  ]
+}

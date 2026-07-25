@@ -1,4 +1,0 @@
-- ### Definition
-  - Java is a JVM-based object-oriented programming language closely related to [[Kotlin]] and frequently used to author [[Enterprise Smart Contracts]] on permissioned distributed-ledger platforms.
-- ### Content
-  - Its portability, mature tooling and large ecosystem make it a default choice for enterprise services, Android apps and ledger frameworks such as Corda and Hyperledger Fabric. Java's strong static typing, garbage collection and extensive concurrency libraries support large-scale, long-lived systems where reliability and maintainability are paramount.

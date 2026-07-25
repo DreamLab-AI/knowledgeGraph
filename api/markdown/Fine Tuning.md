@@ -114,10 +114,16 @@ alias:: Fine-Tuning, Fine-tuning
   "definition": "The process of adapting a pre-trained model to a specific downstream task by continuing training on task-specific data, typically with a lower learning rate. Fine-tuning leverages knowledge acquired during pre-training whilst specialising the model for particular applications.",
   "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": {
-    "@id": "urn:ngm:class:transfer-learning",
-    "label": "Transfer Learning"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:transfer-learning",
+      "label": "Transfer Learning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "dependsOn": [
       {

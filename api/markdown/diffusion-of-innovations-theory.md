@@ -1,4 +1,0 @@
-- ### Definition
-  - Diffusion of Innovations Theory describes the staged spread of new technologies across adopter segments and the attributes driving uptake. It is the framework applied to study [[Adoption of Convergent Technologies]] and patterns of [[AI Adoption]].
-- ### Content
-  - The theory yields the familiar S-curve of cumulative adoption and the bell-curve of adopter categories, with the "chasm" between early adopters and the early majority being a critical commercialisation hurdle. Communication channels, social networks, and change agents shape the speed and reach of diffusion.

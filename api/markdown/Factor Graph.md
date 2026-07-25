@@ -19,6 +19,10 @@ public:: true
     {
       "@id": "urn:ngm:class:graphical-model",
       "label": "Graphical Model"
+    },
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
     }
   ],
   "relations": {

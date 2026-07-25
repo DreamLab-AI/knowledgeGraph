@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:stream-cipher",
+  "title": "Stream Cipher",
+  "slug": "stream-cipher",
+  "public": true,
+  "classIri": "urn:ngm:class:stream-cipher",
+  "domain": "security",
+  "definition": "A stream cipher is a symmetric encryption technique that combines plaintext with a pseudorandom keystream, one bit or byte at a time, to produce ciphertext, in contrast to block ciphers which operate on fixed-size chunks. The security of a stream cipher depends critically on high-quality random number generation for keystream and nonce material, since keystream reuse catastrophically breaks confidentiality. Stream ciphers are favoured where low latency or resource-constrained encryption of continuous data streams is required.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:symmetric-encryption",
+      "label": "Symmetric Encryption"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:random-number-generation",
+        "label": "Random Number Generation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

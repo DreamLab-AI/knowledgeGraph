@@ -1,4 +1,0 @@
-- ### Definition
-  - Data loss prevention detects and blocks unauthorised movement of sensitive data, forming part of [[Data Protection]] and serving as a [[Compliance Control]] for confidentiality and privacy.
-- ### Content
-  - DLP engines classify content via pattern matching, fingerprinting and machine learning, then apply policies across endpoints, email, networks and SaaS. Actions range from logging and alerting to encryption, quarantine or outright blocking of risky transfers.

@@ -1,4 +1,0 @@
-- ### Definition
-  - FigJam is Figma's real-time [[Collaborative Whiteboard]] for brainstorming and workshops, sitting alongside [[Figma]] in the same product family. It is a digital-collaboration workspace tool for the divergent, ideation phase of work.
-- ### Content
-  - FigJam offers an infinite multiplayer canvas with sticky notes, connectors, voting, timers, and templates that support facilitated remote workshops and design-thinking sessions. Its tight integration with Figma lets teams transition from loosely structured ideation into high-fidelity design without switching platforms, making it a common fixture in distributed product-design collaboration.

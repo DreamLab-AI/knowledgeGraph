@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:misinformation",
+  "title": "Misinformation",
+  "slug": "misinformation",
+  "public": true,
+  "classIri": "urn:ngm:class:misinformation",
+  "domain": "artificial-intelligence",
+  "definition": "Misinformation is false or inaccurate information that is spread regardless of intent to deceive, distinguishing it from disinformation, which is deliberately fabricated. In AI contexts, misinformation risk is amplified by generative capabilities such as deepfakes and by model hallucination, which can produce plausible but false content at scale. Trust and safety practice addresses misinformation through detection, provenance labelling, and content moderation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:trust-and-safety",
+      "label": "Trust and Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:trust-and-safety",
+        "label": "Trust and Safety"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-generated-content-disclosure",
+      "label": "AI-Generated Content Disclosure"
+    },
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    }
+  ]
+}

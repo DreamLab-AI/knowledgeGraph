@@ -89,12 +89,12 @@ public:: true
       {"@id": "urn:ngm:class:python", "label": "Python"}
     ],
     "uses": [
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"},
+      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"},
       {"@id": "urn:ngm:class:latent-diffusion", "label": "Latent Diffusion"},
       {"@id": "urn:ngm:class:node-graph", "label": "Node Graph"},
       {"@id": "urn:ngm:class:clip", "label": "CLIP"},
       {"@id": "urn:ngm:class:vae", "label": "VAE"},
-      {"@id": "urn:ngm:class:lora-fine-tuning", "label": "LoRA Fine-Tuning"},
+      {"@id": "urn:ngm:class:lo-ra-fine-tuning", "label": "LoRA Fine-Tuning"},
       {"@id": "urn:ngm:class:noise-schedule", "label": "Noise Schedule"}
     ],
     "enables": [

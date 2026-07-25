@@ -1,4 +1,0 @@
-- ### Definition
-  - SPIR-V is a Khronos [[Technical Standard]] defining a binary intermediate representation for shaders and compute kernels, serving as the portable bytecode that Vulkan, OpenCL, and OpenGL consume.
-- ### Content
-  - High-level languages like GLSL and HLSL compile to SPIR-V, which a [[Graphics API]] driver then lowers to vendor-specific GPU code, separating authoring languages from hardware targets. This intermediate layer lets a [[Rendering Pipeline]] precompile, validate, and optimise shaders offline, improving load times and enabling cross-vendor tooling and language interoperability.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Responsible deployment releases AI systems with staged rollout, monitoring, and rollback safeguards, informed by [[Social Impact Assessment (SIA)]] and situated within the [[AI Governance Domain]].
-- ### Content
-  - Practices include canary releases, usage policies, abuse monitoring, and kill-switch mechanisms. The goal is to surface and contain harms before they scale, closing the gap between governance intent and operational reality.

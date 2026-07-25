@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:multimedia-processing",
+  "title": "Multimedia Processing",
+  "slug": "multimedia-processing",
+  "public": true,
+  "classIri": "urn:ngm:class:multimedia-processing",
+  "domain": "infrastructure",
+  "definition": "Multimedia processing is the broad category of computational techniques for capturing, encoding, transforming, analysing and rendering audio, video, image and other time-based media. It encompasses signal-processing operations such as filtering and transform coding, as well as higher-level tasks like compression, synchronisation and format conversion. Audio processing and video compression are specific disciplines within this wider field.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:signal-processing",
+      "label": "Signal Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "audio-processing",
+      "label": "Audio Processing"
+    }
+  ]
+}

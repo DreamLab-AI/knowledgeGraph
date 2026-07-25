@@ -121,7 +121,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:websocket",
+        "@id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       },
       {
@@ -145,7 +145,7 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:websocket",
+        "@id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       },
       {

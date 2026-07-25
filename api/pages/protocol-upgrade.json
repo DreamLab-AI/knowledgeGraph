@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:protocol-upgrade",
+  "title": "Protocol Upgrade",
+  "slug": "protocol-upgrade",
+  "public": true,
+  "classIri": "urn:ngm:class:protocol-upgrade",
+  "domain": "blockchain",
+  "definition": "A protocol upgrade is a coordinated change to a blockchain's consensus rules, transaction format, or feature set, deployed through mechanisms such as hard forks, soft forks, or on-chain governance votes. It requires network participants, including validators, miners, and node operators, to adopt new client software to remain in consensus with the upgraded chain. Protocol upgrades are typically preceded by proposal review, testnet deployment, and community signalling through processes such as snapshot governance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:protocol-governance",
+      "label": "Protocol Governance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "testnet",
+      "label": "Testnet"
+    }
+  ]
+}

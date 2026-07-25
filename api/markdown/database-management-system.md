@@ -1,4 +1,0 @@
-- ### Definition
-  - A database management system stores and governs structured data with transactional guarantees, the persistence platform required by a [[Digital Ontology Repository]] and a [[Digital Taxonomy Registry]].
-- ### Content
-  - A DBMS provides schema definition, a query language, ACID transactions, indexing and access control. Specialised engines optimise for different data shapes and workloads, from relational OLTP to graph traversal and full-text search.

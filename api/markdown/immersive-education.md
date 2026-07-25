@@ -1,4 +1,0 @@
-- ### Definition
-  - Immersive education delivers spatial, experiential learning through XR, drawing on [[Learning Resources]] and deployable on open virtual-world platforms such as [[Vircadia]].
-- ### Content
-  - By placing learners inside historical scenes, molecular structures, or hazardous-procedure simulations, immersive education improves engagement and retention for spatial and procedural skills. Effective programmes pair immersive content with sound pedagogy, accessibility provisions, and assessment that maps virtual activity to learning outcomes.

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:preference-data",
+  "title": "Preference Data",
+  "slug": "preference-data",
+  "public": true,
+  "classIri": "urn:ngm:class:preference-data",
+  "domain": "machine-learning",
+  "definition": "Preference data is a dataset of paired or ranked comparisons in which human annotators indicate which of two or more model outputs they prefer, rather than providing an absolute quality score. It is the primary training signal for reward models used in reinforcement learning from human feedback, since relative judgements are typically easier and more consistent for annotators to produce than calibrated absolute ratings. The quality and diversity of preference data materially shape the behaviour that RLHF instils in a model.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-preference",
+      "label": "Human Preference"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.65,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:human-preference",
+        "label": "Human Preference"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

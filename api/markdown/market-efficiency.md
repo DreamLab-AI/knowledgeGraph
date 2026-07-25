@@ -1,4 +1,0 @@
-- ### Definition
-  - Market efficiency measures how quickly and completely prices absorb available information, constraining the scope for abnormal returns. It is closely tied to [[Price Discovery]] and supports [[Consumer Protection]] through fair, transparent pricing.
-- ### Content
-  - Frictions such as information asymmetry, transaction costs, and behavioural biases reduce efficiency, motivating market design that improves transparency and liquidity. In decentralised finance, efficiency depends on arbitrage between venues, oracle accuracy, and the depth of automated market-maker liquidity.

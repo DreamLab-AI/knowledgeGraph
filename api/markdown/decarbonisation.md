@@ -1,4 +1,0 @@
-- ### Definition
-  - Decarbonisation is the systematic reduction of greenhouse-gas emissions toward net zero, supporting a [[Carbon Neutral Blockchain]] and typically guided by [[Science Based Targets]].
-- ### Content
-  - Strategies span avoiding emissions through efficiency, switching to clean energy, and removing or offsetting unavoidable residuals. Credible decarbonisation prioritises absolute reductions aligned to climate-science pathways over reliance on offsets.

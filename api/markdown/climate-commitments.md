@@ -1,4 +1,0 @@
-- ### Definition
-  - Climate Commitments are formal decarbonisation pledges with interim milestones and reporting, encompassing efforts such as a [[Carbon Neutral Blockchain]] and concretised through [[Net Zero Targets]].
-- ### Content
-  - Credible commitments specify scope coverage, baselines, science-aligned trajectories, and the role (if any) of offsets versus direct reductions. Scrutiny of greenwashing has pushed standards toward transparent interim targets and third-party validation so that pledges withstand audit and public accountability.

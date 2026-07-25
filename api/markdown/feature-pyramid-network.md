@@ -1,4 +1,0 @@
-- ### Definition
-  - A Feature Pyramid Network is a multi-scale [[Neural Network]] feature extractor that fuses coarse, semantically strong features with fine, high-resolution ones, enabling robust [[Segmentation and Identification]] and [[Image Segmentation]] across object scales. It does this via top-down and lateral connections.
-- ### Content
-  - FPN augments a standard CNN backbone with a top-down pathway that upsamples deep semantic features and merges them through lateral connections with shallower, spatially precise features, producing a pyramid of prediction-ready maps. This markedly improves small-object detection and segmentation while adding modest computational cost, which is why FPN underpins detectors such as RetinaNet and Mask R-CNN.

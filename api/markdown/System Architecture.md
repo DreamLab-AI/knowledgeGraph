@@ -109,8 +109,8 @@ public:: true
         "label": "High Availability"
       },
       {
-        "@id": "urn:ngm:class:elastic-scaling",
-        "label": "Elastic Scaling"
+        "@id": "urn:ngm:class:autoscaling",
+        "label": "Autoscaling"
       }
     ],
     "dependsOn": [

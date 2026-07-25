@@ -1,4 +1,0 @@
-- ### Definition
-  - Memory bandwidth is the throughput at which a processor can move data to and from memory. It is a defining constraint for [[Hardware and Edge]] AI accelerators and a limiting factor in the [[Rendering Pipeline]].
-- ### Content
-  - Many modern workloads are memory-bound rather than compute-bound, so techniques like operator fusion, quantisation, and on-chip caching aim to reduce memory traffic. High-bandwidth memory (HBM) stacks and wide buses raise the ceiling, but bandwidth per FLOP continues to shape the efficiency of AI and graphics systems.

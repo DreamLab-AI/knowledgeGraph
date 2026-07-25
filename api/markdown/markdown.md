@@ -1,4 +1,0 @@
-- ### Definition
-  - Markdown is a plain-text formatting syntax that renders to HTML while remaining human-readable in source form. It underpins [[Diagrams as Code]] workflows and is consumed by [[AI Diagram Tools]].
-- ### Content
-  - Variants such as CommonMark, GitHub Flavored Markdown, and MyST extend the core with tables, task lists, footnotes, and embedded code. Its plain-text nature makes it version-control friendly and easy for both humans and language models to author and parse.

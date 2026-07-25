@@ -1,4 +1,0 @@
-- ### Definition
-  - A mind map is a radial, hierarchical diagram organising ideas around a central node. It can be authored via [[Diagrams as Code]] and is a common feature of a [[Collaborative Whiteboard]].
-- ### Content
-  - The non-linear, associative layout mirrors how concepts relate, making mind maps effective for early-stage ideation and summarising complex domains. Modern tools add real-time multi-user editing, templating, and export to outlines or presentation formats.

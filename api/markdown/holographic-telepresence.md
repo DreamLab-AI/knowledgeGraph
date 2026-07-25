@@ -1,2 +1,0 @@
-- ### Definition
-  - A telepresence technology that projects life-size, three-dimensional representations of remote participants into a shared space to enable natural co-located interaction.

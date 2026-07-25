@@ -58,65 +58,171 @@ public:: true
   "definition": "A decision tree is a supervised learning model that predicts an outcome by recursively partitioning the feature space into regions, represented as a tree of decision nodes and leaf nodes. Each internal node tests a feature against a threshold and routes an instance down a branch, while leaves assign a class label or numeric value. Decision trees are valued for their interpretability and form the building blocks of ensemble methods such as random forests and gradient boosting.",
   "domain": "machine-learning",
   "maturity": "established",
-  "qualityScore": 0.90,
+  "qualityScore": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:supervised-learning",
       "label": "Supervised Learning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:classification", "label": "Classification"},
-      {"@id": "urn:ngm:class:regression", "label": "Regression"},
-      {"@id": "urn:ngm:class:pruning", "label": "Pruning"},
-      {"@id": "urn:ngm:class:feature-importance", "label": "Feature Importance"}
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "@id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "@id": "urn:ngm:class:pruning",
+        "label": "Pruning"
+      },
+      {
+        "@id": "urn:ngm:class:feature-importance",
+        "label": "Feature Importance"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:ensemble-methods", "label": "Ensemble Methods"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:classification", "label": "Classification"},
-      {"@id": "urn:ngm:class:regression", "label": "Regression"},
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"}
+      {
+        "@id": "urn:ngm:class:classification",
+        "label": "Classification"
+      },
+      {
+        "@id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:ensemble-methods", "label": "Ensemble Methods"},
-      {"@id": "urn:ngm:class:random-forest", "label": "Random Forest"},
-      {"@id": "urn:ngm:class:gradient-boosted-trees", "label": "Gradient Boosted Trees"},
-      {"@id": "urn:ngm:class:decision-transparency", "label": "Decision Transparency"}
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "@id": "urn:ngm:class:random-forest",
+        "label": "Random Forest"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-boosted-trees",
+        "label": "Gradient Boosted Trees"
+      },
+      {
+        "@id": "urn:ngm:class:decision-transparency",
+        "label": "Decision Transparency"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:interpretability", "label": "Interpretability"},
-      {"@id": "urn:ngm:class:explainability", "label": "Explainability"},
-      {"@id": "urn:ngm:class:explainable-ai", "label": "Explainable AI"},
-      {"@id": "urn:ngm:class:regulatory-compliance", "label": "Regulatory Compliance"}
+      {
+        "@id": "urn:ngm:class:interpretability",
+        "label": "Interpretability"
+      },
+      {
+        "@id": "urn:ngm:class:explainability",
+        "label": "Explainability"
+      },
+      {
+        "@id": "urn:ngm:class:explainable-ai",
+        "label": "Explainable AI"
+      },
+      {
+        "@id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"},
-      {"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"},
-      {"@id": "urn:ngm:class:feature-engineering", "label": "Feature Engineering"}
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      },
+      {
+        "@id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      },
+      {
+        "@id": "urn:ngm:class:feature-engineering",
+        "label": "Feature Engineering"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"},
-      {"@id": "urn:ngm:class:training-data", "label": "Training Data"}
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      },
+      {
+        "@id": "urn:ngm:class:training-data",
+        "label": "Training Data"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:neural-network", "label": "Neural Network"},
-      {"@id": "urn:ngm:class:support-vector-machine", "label": "Support Vector Machine"},
-      {"@id": "urn:ngm:class:logistic-regression", "label": "Logistic Regression"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:support-vector-machine",
+        "label": "Support Vector Machine"
+      },
+      {
+        "@id": "urn:ngm:class:logistic-regression",
+        "label": "Logistic Regression"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ensemble-methods", "label": "Ensemble Methods"},
-      {"@id": "urn:ngm:class:random-forest", "label": "Random Forest"},
-      {"@id": "urn:ngm:class:gradient-boosted-trees", "label": "Gradient Boosted Trees"},
-      {"@id": "urn:ngm:class:bagging", "label": "Bagging"},
-      {"@id": "urn:ngm:class:boosting", "label": "Boosting"},
-      {"@id": "urn:ngm:class:bias-variance-tradeoff", "label": "Bias-Variance Tradeoff"},
-      {"@id": "urn:ngm:class:overfitting", "label": "Overfitting"},
-      {"@id": "urn:ngm:class:shap", "label": "SHAP"},
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"}
+      {
+        "@id": "urn:ngm:class:ensemble-methods",
+        "label": "Ensemble Methods"
+      },
+      {
+        "@id": "urn:ngm:class:random-forest",
+        "label": "Random Forest"
+      },
+      {
+        "@id": "urn:ngm:class:gradient-boosted-trees",
+        "label": "Gradient Boosted Trees"
+      },
+      {
+        "@id": "urn:ngm:class:bagging",
+        "label": "Bagging"
+      },
+      {
+        "@id": "urn:ngm:class:boosting",
+        "label": "Boosting"
+      },
+      {
+        "@id": "urn:ngm:class:bias-variance-tradeoff",
+        "label": "Bias-Variance Tradeoff"
+      },
+      {
+        "@id": "urn:ngm:class:overfitting",
+        "label": "Overfitting"
+      },
+      {
+        "@id": "urn:ngm:class:shap",
+        "label": "SHAP"
+      },
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      }
     ]
   },
   "provenance": {

@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:cobot-deployment",
+  "title": "Cobot Deployment",
+  "slug": "cobot-deployment",
+  "public": true,
+  "classIri": "urn:ngm:class:cobot-deployment",
+  "domain": "robotics",
+  "definition": "Cobot deployment is the process of installing and configuring a collaborative robot into a shared workspace with human operators, encompassing risk assessment, speed and separation monitoring, power and force limiting, and compliance with safety standards governing human-robot proximity. It translates abstract safety standards such as ISO/TS 15066 into a concrete, validated physical installation. Successful deployment requires certifying that the cobot's safety-rated monitored stop and force limits meet the standard's thresholds before it operates alongside people.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:collaborative-systems-modality-robot",
+      "label": "Collaborative Robot"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:collaborative-systems-modality-robot",
+        "label": "Collaborative Robot"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:cobot-safety-levels",
+        "label": "Cobot Safety Levels"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

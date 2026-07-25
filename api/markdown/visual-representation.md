@@ -1,4 +1,0 @@
-- ### Definition
-  - A visual representation is the embedding an encoder produces from imagery; it is consumed by a [[Vision-Language Model]] for multimodal reasoning and underpins the geometry recovered by a [[Reality Capture System]].
-- ### Content
-  - Visual representations are learned through supervised, self-supervised (e.g. contrastive or masked-image modelling), or multimodal objectives. Good representations are linearly separable, disentangle nuisance factors, and transfer to unseen domains; they form the latent backbone shared between perception, generation, and cross-modal retrieval pipelines.

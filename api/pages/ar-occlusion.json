@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:augmented-reality",
       "label": "Augmented Reality"
+    },
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
     }
   ],
   "entityType": "Class",

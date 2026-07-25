@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:query-parser",
+  "title": "Query Parser",
+  "slug": "query-parser",
+  "public": true,
+  "classIri": "urn:ngm:class:query-parser",
+  "domain": "data",
+  "definition": "A query parser is the component of a database or graph engine that converts a query written in a query language into a structured, executable representation, typically an abstract syntax tree or query plan. It performs lexical analysis and syntactic validation before handing the parsed structure to an optimiser or execution engine, applying the same parsing theory used in general-purpose compilers. Query parsers are required by relational databases and graph databases alike to translate declarative query text into an internal form the engine can execute.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compiler",
+      "label": "Compiler"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    }
+  ]
+}

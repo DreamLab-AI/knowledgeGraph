@@ -57,57 +57,153 @@ public:: true
   "definition": "A structured discipline for identifying, assessing, prioritising, and treating risks to information systems, data assets, and digital infrastructure arising from threats such as malicious actors, system vulnerabilities, and operational failures. Cybersecurity risk management integrates threat modelling, vulnerability assessment, control selection, and residual risk acceptance into a repeatable governance cycle aligned with organisational risk appetite. Frameworks such as NIST CSF, ISO 27005, and FAIR provide structured methodologies. It bridges technical security practice with executive governance and regulatory compliance.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:cybersecurity-framework",
+      "label": "Cybersecurity Framework"
+    }
+  ],
   "relations": {
     "bridgesTo": [
-      {"@id": "urn:ngm:class:governance", "label": "Governance"},
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:governance",
+        "label": "Governance"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
     "implements": [
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"},
-      {"@id": "urn:ngm:class:information-security-management", "label": "Information Security Management"}
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:information-security-management",
+        "label": "Information Security Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:threat-modelling", "label": "Threat Modelling"},
-      {"@id": "urn:ngm:class:vulnerability-assessment", "label": "Vulnerability Assessment"},
-      {"@id": "urn:ngm:class:continuous-monitoring", "label": "Continuous Monitoring"}
+      {
+        "@id": "urn:ngm:class:threat-modelling",
+        "label": "Threat Modelling"
+      },
+      {
+        "@id": "urn:ngm:class:vulnerability-assessment",
+        "label": "Vulnerability Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:continuous-monitoring",
+        "label": "Continuous Monitoring"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:security-framework", "label": "Security Framework"},
-      {"@id": "urn:ngm:class:risk-assessment", "label": "Risk Assessment"},
-      {"@id": "urn:ngm:class:siem", "label": "SIEM"},
-      {"@id": "urn:ngm:class:soar", "label": "SOAR"},
-      {"@id": "urn:ngm:class:risk-register", "label": "Risk Register"},
-      {"@id": "urn:ngm:class:zero-trust-architecture", "label": "Zero Trust Architecture"}
+      {
+        "@id": "urn:ngm:class:security-framework",
+        "label": "Security Framework"
+      },
+      {
+        "@id": "urn:ngm:class:risk-assessment",
+        "label": "Risk Assessment"
+      },
+      {
+        "@id": "urn:ngm:class:siem",
+        "label": "SIEM"
+      },
+      {
+        "@id": "urn:ngm:class:soar",
+        "label": "SOAR"
+      },
+      {
+        "@id": "urn:ngm:class:risk-register",
+        "label": "Risk Register"
+      },
+      {
+        "@id": "urn:ngm:class:zero-trust-architecture",
+        "label": "Zero Trust Architecture"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:incident-response", "label": "Incident Response"},
-      {"@id": "urn:ngm:class:compliance-monitoring", "label": "Compliance Monitoring"},
-      {"@id": "urn:ngm:class:cyber-resilience", "label": "Cyber Resilience"},
-      {"@id": "urn:ngm:class:operational-resilience", "label": "Operational Resilience"}
+      {
+        "@id": "urn:ngm:class:incident-response",
+        "label": "Incident Response"
+      },
+      {
+        "@id": "urn:ngm:class:compliance-monitoring",
+        "label": "Compliance Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:cyber-resilience",
+        "label": "Cyber Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:operational-resilience",
+        "label": "Operational Resilience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:ai-safety", "label": "AI Safety"},
-      {"@id": "urn:ngm:class:supply-chain-security", "label": "Supply Chain Security"},
-      {"@id": "urn:ngm:class:penetration-testing", "label": "Penetration Testing"},
-      {"@id": "urn:ngm:class:ai-risk-management", "label": "AI Risk Management"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      },
+      {
+        "@id": "urn:ngm:class:supply-chain-security",
+        "label": "Supply Chain Security"
+      },
+      {
+        "@id": "urn:ngm:class:penetration-testing",
+        "label": "Penetration Testing"
+      },
+      {
+        "@id": "urn:ngm:class:ai-risk-management",
+        "label": "AI Risk Management"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:nist-cybersecurity-framework", "label": "NIST Cybersecurity Framework"},
-      {"@id": "urn:ngm:class:iso-27001", "label": "ISO 27001"}
+      {
+        "@id": "urn:ngm:class:nist-cybersecurity-framework",
+        "label": "NIST Cybersecurity Framework"
+      },
+      {
+        "@id": "urn:ngm:class:iso-27001",
+        "label": "ISO 27001"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:resilience", "label": "Resilience"},
-      {"@id": "urn:ngm:class:accountability", "label": "Accountability"}
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      },
+      {
+        "@id": "urn:ngm:class:accountability",
+        "label": "Accountability"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:security-operations", "label": "Security Operations"},
-      {"@id": "urn:ngm:class:threat-detection", "label": "Threat Detection"},
-      {"@id": "urn:ngm:class:security-operations-centre", "label": "Security Operations Centre"}
+      {
+        "@id": "urn:ngm:class:security-operations",
+        "label": "Security Operations"
+      },
+      {
+        "@id": "urn:ngm:class:threat-detection",
+        "label": "Threat Detection"
+      },
+      {
+        "@id": "urn:ngm:class:security-operations-centre",
+        "label": "Security Operations Centre"
+      }
     ]
   },
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",

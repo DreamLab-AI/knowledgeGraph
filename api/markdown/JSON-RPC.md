@@ -99,7 +99,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:websocket",
+        "@id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       },
       {

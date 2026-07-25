@@ -66,10 +66,16 @@ alias:: AugmentedReality
   "definition": "Augmented Reality (AR) is a technology that overlays digital content onto the real world in real-time, enhancing users' perception of their physical environment through smartphones, head-mounted displays, or smart glasses. AR systems require coupling of real and virtual environments, real-time interaction, and precise 3D registration of virtual objects aligned with physical space.",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": {
-    "@id": "urn:ngm:class:extended-reality",
-    "label": "Extended Reality"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:extended-reality",
+      "label": "Extended Reality"
+    },
+    {
+      "@id": "urn:ngm:class:extended-reality-xr",
+      "label": "Extended Reality (XR)"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

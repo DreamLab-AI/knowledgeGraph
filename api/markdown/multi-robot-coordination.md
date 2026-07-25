@@ -1,4 +1,0 @@
-- ### Definition
-  - Multi-robot coordination lets several robots act coherently via task allocation, collision avoidance, and formation control. It often relies on shared localisation such as [[GPS]] and is enabled by [[Task Planning]].
-- ### Content
-  - Centralised schemes optimise globally but scale poorly and form single points of failure, whereas decentralised and market-based methods trade some optimality for robustness and scalability. Reliable coordination depends on consistent localisation, communication, and conflict resolution among the fleet's planners.

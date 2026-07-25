@@ -26,6 +26,10 @@ public:: true
     {
       "@id": "urn:ngm:class:robotics",
       "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:real-time-control",
+      "label": "Real-Time Control"
     }
   ],
   "relations": {

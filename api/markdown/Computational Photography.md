@@ -117,7 +117,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:computer-vision", "label": "Computer Vision"},
-      {"@id": "urn:ngm:class:3d-reconstruction", "label": "3D Reconstruction"},
+      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"},
       {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
       {"@id": "urn:ngm:class:medical-imaging", "label": "Medical Imaging"},
       {"@id": "urn:ngm:class:satellite-imagery", "label": "Satellite Imagery"}

@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:media-authentication",
+  "title": "Media Authentication",
+  "slug": "media-authentication",
+  "public": true,
+  "classIri": "urn:ngm:class:media-authentication",
+  "domain": "standards",
+  "definition": "Media Authentication is the verification that a piece of digital media, such as an image, audio clip, or video, originates from a claimed source and has not been altered since capture or publication. It relies on cryptographic signatures, embedded provenance metadata, or perceptual hashing to detect tampering or synthetic generation. Standards such as C2PA define interoperable formats for attaching and verifying this provenance information.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-provenance",
+      "label": "Content Provenance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

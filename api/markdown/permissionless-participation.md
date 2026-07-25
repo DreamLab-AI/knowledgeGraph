@@ -1,4 +1,0 @@
-- ### Definition
-  - Permissionless participation lets anyone join and validate a network without gatekeeping, a property enabled by the design of a [[Blockchain Protocol]] and its [[Consensus Mechanism]].
-- ### Content
-  - In permissionless systems, Sybil resistance is achieved through costly signals such as proof-of-work hashing or proof-of-stake bonding rather than identity checks, so open entry does not compromise security. This openness maximises decentralisation and censorship resistance but constrains throughput and finality compared with permissioned designs that restrict the validator set.

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:mesh-shading",
+  "title": "Mesh Shading",
+  "slug": "mesh-shading",
+  "public": true,
+  "classIri": "urn:ngm:class:mesh-shading",
+  "domain": "spatial-computing",
+  "definition": "Mesh shading is a GPU rendering pipeline model, exposed through APIs such as Vulkan and DirectX 12, that replaces the fixed vertex-and-geometry-shader stages with programmable task and mesh shaders operating on small groups of primitives called meshlets. It gives applications direct control over primitive culling, level-of-detail selection and amplification within the shader itself, removing bottlenecks inherent in the traditional pipeline. Mesh shading is used to render highly detailed geometry more efficiently in modern real-time graphics engines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graphics-api",
+      "label": "Graphics API"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.65,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graphics-api",
+        "label": "Graphics API"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    }
+  ]
+}

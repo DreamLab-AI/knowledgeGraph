@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:unicode",
+  "title": "Unicode",
+  "slug": "unicode",
+  "public": true,
+  "classIri": "urn:ngm:class:unicode",
+  "domain": "standards",
+  "definition": "Unicode is an international character encoding standard that assigns a unique code point to every character across the world's writing systems, symbols, and control codes, enabling consistent text representation across platforms and languages. It is implemented through encoding forms such as UTF-8, UTF-16, and UTF-32, which map code points to byte sequences of varying width. Unicode underlies virtually all modern text-based data interchange formats, including JSON and Turtle/RDF serialisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-format",
+      "label": "Data Format"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    }
+  ]
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - Security testing discovers vulnerabilities and validates controls; it is used by [[DevSecOps]] and forms a part of the broader [[Testing Process]].
-- ### Content
-  - SAST analyses source for insecure patterns, DAST probes running applications, and software composition analysis flags vulnerable dependencies. Embedding these scans into CI/CD with policy gates enables continuous assurance, while periodic penetration tests provide adversarial validation of the deployed system.

@@ -24,45 +24,114 @@ public:: true
   "definition": "A Texture Map is a 2D image applied to the surface of a 3D model to add visual detail such as colour, roughness, normals, or emissive properties without increasing polygon count. Texture maps are indexed via UV coordinates that establish a correspondence between surface points and image pixels. They are a foundational component of real-time and offline rendering pipelines.",
   "domain": "spatial-computing",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:uv-mapping",
+      "label": "Uv Mapping"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:uv-mapping", "label": "UV Mapping"},
-      {"@id": "urn:ngm:class:mipmap", "label": "Mipmap"},
-      {"@id": "urn:ngm:class:normal-map", "label": "Normal Map"}
+      {
+        "@id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:mipmap",
+        "label": "Mipmap"
+      },
+      {
+        "@id": "urn:ngm:class:normal-map",
+        "label": "Normal Map"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:3d-asset", "label": "3D Asset"},
-      {"@id": "urn:ngm:class:material", "label": "Material"}
+      {
+        "@id": "urn:ngm:class:3d-asset",
+        "label": "3D Asset"
+      },
+      {
+        "@id": "urn:ngm:class:material",
+        "label": "Material"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:uv-mapping", "label": "UV Mapping"},
-      {"@id": "urn:ngm:class:3d-model", "label": "3D Model"}
+      {
+        "@id": "urn:ngm:class:uv-mapping",
+        "label": "UV Mapping"
+      },
+      {
+        "@id": "urn:ngm:class:3d-model",
+        "label": "3D Model"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:physically-based-rendering", "label": "Physically Based Rendering"},
-      {"@id": "urn:ngm:class:real-time-rendering", "label": "Real-Time Rendering"}
+      {
+        "@id": "urn:ngm:class:physically-based-rendering",
+        "label": "Physically Based Rendering"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-rendering",
+        "label": "Real-Time Rendering"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:rasterisation", "label": "Rasterisation"},
-      {"@id": "urn:ngm:class:gpu", "label": "GPU"}
+      {
+        "@id": "urn:ngm:class:rasterisation",
+        "label": "Rasterisation"
+      },
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:gltf", "label": "glTF"},
-      {"@id": "urn:ngm:class:3d-asset-standard", "label": "3D Asset Standard"}
+      {
+        "@id": "urn:ngm:class:gltf",
+        "label": "glTF"
+      },
+      {
+        "@id": "urn:ngm:class:3d-asset-standard",
+        "label": "3D Asset Standard"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:procedural-material", "label": "Procedural Material"},
-      {"@id": "urn:ngm:class:implicit-neural-representation", "label": "Implicit Neural Representation"}
+      {
+        "@id": "urn:ngm:class:procedural-material",
+        "label": "Procedural Material"
+      },
+      {
+        "@id": "urn:ngm:class:implicit-neural-representation",
+        "label": "Implicit Neural Representation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:3d-content-creation", "label": "3D Content Creation"},
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:metaverse", "label": "Metaverse"}
+      {
+        "@id": "urn:ngm:class:3d-content-creation",
+        "label": "3D Content Creation"
+      },
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:metaverse",
+        "label": "Metaverse"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:xr", "label": "XR"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+      {
+        "@id": "urn:ngm:class:xr",
+        "label": "XR"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
     ]
   },
   "quality": 0.62,

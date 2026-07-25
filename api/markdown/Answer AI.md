@@ -75,7 +75,7 @@ public:: true
     "uses": [
       {"@id": "urn:ngm:class:python-programming-language", "label": "Python Programming Language"},
       {"@id": "urn:ngm:class:distributed-training", "label": "Distributed Training"},
-      {"@id": "urn:ngm:class:lora-fine-tuning", "label": "LoRA Fine-Tuning"},
+      {"@id": "urn:ngm:class:lo-ra-fine-tuning", "label": "LoRA Fine-Tuning"},
       {"@id": "urn:ngm:class:quantisation", "label": "Quantisation"},
       {"@id": "urn:ngm:class:foundation-model", "label": "Foundation Model"}
     ],

@@ -1,4 +1,0 @@
-- ### Definition
-  - Sound money principles are the [[Economics]] criteria, scarcity, durability, divisibility, portability, fungibility, verifiability, and resistance to debasement, by which a monetary asset is judged a dependable store of value and medium of exchange.
-- ### Content
-  - Drawing on classical and Austrian monetary thought, these principles emphasise a credibly fixed supply that no issuer can inflate away. They underpin [[Bitcoin as Money]] arguments and the broader [[Bitcoin Value Proposition]], where a capped 21-million-coin issuance and decentralised verification are presented as a modern instantiation of historically sound monetary properties.

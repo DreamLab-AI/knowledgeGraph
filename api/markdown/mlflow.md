@@ -1,4 +1,0 @@
-- ### Definition
-  - MLflow is an open-source platform for the ML lifecycle: tracking, packaging, registry, and deployment. It manages and versions model [[Checkpoints]] alongside the metrics and code that produced them.
-- ### Content
-  - The tracking server logs each run's hyperparameters, metrics, and artefacts, while the model registry adds stage transitions, annotations, and lineage. Being framework-agnostic, it wraps PyTorch, TensorFlow, scikit-learn, and custom flavours behind a common API for storage and serving.

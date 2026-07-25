@@ -1,4 +1,0 @@
-- ### Definition
-  - A force sensor measures applied force or torque, providing the feedback that a [[Hydraulic Actuator]] and [[Admittance Control]] schemes rely on to regulate interaction forces. It is a specialised type of [[Sensor]].
-- ### Content
-  - Force sensors commonly use strain gauges bonded to a compliant structure, with multi-axis units resolving forces and moments along several axes. By closing the loop on contact force, they enable force and impedance/admittance control for tasks like insertion, polishing, and safe collaboration, where position control alone would risk excessive contact forces or instability.

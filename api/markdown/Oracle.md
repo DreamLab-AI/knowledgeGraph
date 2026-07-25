@@ -62,10 +62,16 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:blockchain-infrastructure",
-    "label": "Blockchain Infrastructure"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-infrastructure",
+      "label": "Blockchain Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component (Blockchain)"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

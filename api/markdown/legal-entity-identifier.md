@@ -1,4 +1,0 @@
-- ### Definition
-  - A Legal Entity Identifier is the ISO 17442 code that uniquely names a legal entity, supplying the counterparty reference data that [[Regulatory Reporting]] and the [[Travel Rule]] depend upon.
-- ### Content
-  - LEI reference data distinguishes "who is who" and "who owns whom", letting regulators aggregate exposures across markets. Adoption is driven by mandates such as MiFID II and emerging crypto travel-rule obligations that require identifying transacting institutions.

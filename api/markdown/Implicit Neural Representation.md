@@ -24,7 +24,7 @@ public:: true
   "definition": "An Implicit Neural Representation (INR) is a method of encoding continuous signals—such as 3D shapes, scenes, or images—as the weights of a neural network rather than as discrete grids or meshes. The network acts as a function that maps spatial or temporal coordinates to signal values, enabling theoretically infinite resolution. INRs are widely used in novel-view synthesis, shape reconstruction, and physics simulation.",
   "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}],
+  "subClassOf": [{"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}, {"@id": "urn:ngm:class:ai-model-architecture", "label": "AI Model Architecture"}],
   "relations": {
     "relatedTo": [
       {"@id": "urn:ngm:class:neural-radiance-field", "label": "Neural Radiance Field"},
@@ -41,7 +41,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:novel-view-synthesis", "label": "Novel View Synthesis"},
-      {"@id": "urn:ngm:class:3d-reconstruction", "label": "3D Reconstruction"}
+      {"@id": "urn:ngm:class:3-d-reconstruction", "label": "3D Reconstruction"}
     ],
     "uses": [
       {"@id": "urn:ngm:class:multilayer-perceptron", "label": "Multilayer Perceptron"},

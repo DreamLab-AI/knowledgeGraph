@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:ddos-mitigation",
+  "title": "DDoS Mitigation",
+  "slug": "ddos-mitigation",
+  "public": true,
+  "classIri": "urn:ngm:class:ddos-mitigation",
+  "domain": "security",
+  "definition": "DDoS mitigation is the set of techniques and infrastructure used to detect and absorb distributed denial-of-service traffic so that a targeted service remains available to legitimate users. Approaches include traffic scrubbing, rate limiting, anycast-based load distribution, and edge filtering at content delivery networks positioned close to end users. Effective mitigation depends on capacity headroom large enough to absorb attack volumes while distinguishing malicious traffic from genuine demand spikes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-security",
+      "label": "Network Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:network-security",
+        "label": "Network Security"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

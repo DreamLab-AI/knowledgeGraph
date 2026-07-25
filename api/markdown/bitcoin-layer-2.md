@@ -1,4 +1,0 @@
-- ### Definition
-  - Bitcoin Layer 2 protocols scale Bitcoin off-chain while settling to its base layer, encompassing systems such as [[Cashu]] and federated mints like [[Fedimint]].
-- ### Content
-  - Layer-2 designs move most activity off the base chain, anchoring only periodic settlements. The Lightning Network uses payment channels for instant low-fee transfers, while Chaumian ecash systems like Cashu and federations like Fedimint offer scalable, privacy-oriented custody at the cost of additional trust assumptions.

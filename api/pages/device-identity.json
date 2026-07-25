@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:device-identity",
+  "title": "Device Identity",
+  "slug": "device-identity",
+  "public": true,
+  "classIri": "urn:ngm:class:device-identity",
+  "domain": "security",
+  "definition": "Device identity is a unique, verifiable credential bound to a physical device that allows it to authenticate itself to a network, service, or other devices independently of any human user. It is typically established through a hardware root of trust, such as a TPM or secure element, that stores a cryptographic key pair generated or provisioned at manufacture. In IoT and sensor network deployments, device identity is foundational to zero-trust access control, allowing gateways and platforms to verify which physical device is sending data before admitting it to the network. Without it, spoofed or cloned devices can inject false data or gain unauthorised network access.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-identity",
+      "label": "Digital Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

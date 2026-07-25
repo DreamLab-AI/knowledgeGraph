@@ -1,4 +1,0 @@
-- ### Definition
-  - mBridge is a multi-CBDC distributed-ledger platform for instant cross-border wholesale settlement among participating central banks. Its early prototypes drew on [[Hyperledger Iroha]] and it operationalises wholesale [[CBDCs]].
-- ### Content
-  - The platform runs a custom validating-ledger consensus among central-bank nodes, allowing direct peer settlement without traditional correspondent chains. It is one of the most advanced multilateral CBDC experiments, raising questions about governance, interoperability with domestic systems, and the geopolitics of alternative settlement rails.

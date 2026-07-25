@@ -1,4 +1,0 @@
-- ### Definition
-  - The SSIM metric is a perceptual [[Evaluation Metric]] that scores image similarity by comparing luminance, contrast, and local structural correlation, aligning more closely with human perception than pixel-wise error measures.
-- ### Content
-  - Computed over sliding local windows and combined into a single index in the range -1 to 1, SSIM penalises structural distortion that PSNR overlooks. It is a standard quality signal for [[Image and Video Restoration]] and for [[Bandwidth Adaptation]] schemes that must trade bitrate against perceived fidelity, guiding rate-control and model-training objectives toward perceptually faithful output.

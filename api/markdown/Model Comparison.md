@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:evaluation-metric",
       "label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:ngm:class:ai-evaluation",
+      "label": "AI Evaluation"
     }
   ],
   "relations": {

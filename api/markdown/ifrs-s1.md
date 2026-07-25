@@ -1,4 +1,0 @@
-- ### Definition
-  - IFRS S1 is the ISSB's baseline standard for sustainability-related financial disclosure, providing the general framework that underpins [[ESG Reporting]] and complements [[IFRS S2]].
-- ### Content
-  - The standard mandates a four-pillar disclosure structure (governance, strategy, risk management, metrics and targets) and connectivity between sustainability and financial statements. Its global baseline design lets jurisdictions build interoperable reporting regimes, improving comparability for investors.

@@ -23,45 +23,132 @@ public:: true
   "definition": "BLEU Score (Bilingual Evaluation Understudy) is an automatic evaluation metric for machine translation and text generation quality that measures the overlap of n-gram sequences between a candidate output and one or more human reference translations, applying a brevity penalty to discourage pathologically short outputs. Scores range from 0 to 1 (or 0 to 100 in percentage form), with higher values indicating closer correspondence to the reference. BLEU correlates moderately with human judgement at the corpus level but is known to be unreliable for single-sentence evaluation and insufficient alone for capturing semantic adequacy.",
   "domain": "ai",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:evaluation-metric", "label": "Evaluation Metric"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
-      {"@id": "urn:ngm:class:natural-language-processing", "label": "Natural Language Processing"},
-      {"@id": "urn:ngm:class:n-gram-overlap", "label": "N-Gram Overlap"},
-      {"@id": "urn:ngm:class:geometric-mean", "label": "Geometric Mean"}
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      },
+      {
+        "@id": "urn:ngm:class:n-gram-overlap",
+        "label": "N-Gram Overlap"
+      },
+      {
+        "@id": "urn:ngm:class:geometric-mean",
+        "label": "Geometric Mean"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:automated-evaluation", "label": "Automated Evaluation"},
-      {"@id": "urn:ngm:class:model-comparison", "label": "Model Comparison"},
-      {"@id": "urn:ngm:class:regression-testing", "label": "Regression Testing"}
+      {
+        "@id": "urn:ngm:class:automated-evaluation",
+        "label": "Automated Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:model-comparison",
+        "label": "Model Comparison"
+      },
+      {
+        "@id": "urn:ngm:class:regression-testing",
+        "label": "Regression Testing"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:reference-translation", "label": "Reference Translation"},
-      {"@id": "urn:ngm:class:tokenisation", "label": "Tokenisation"}
+      {
+        "@id": "urn:ngm:class:reference-translation",
+        "label": "Reference Translation"
+      },
+      {
+        "@id": "urn:ngm:class:tokenization",
+        "label": "Tokenization"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:benchmarks", "label": "Benchmarks"},
-      {"@id": "urn:ngm:class:text-generation", "label": "Text Generation"},
-      {"@id": "urn:ngm:class:language-model", "label": "Language Model"},
-      {"@id": "urn:ngm:class:sacrebleu", "label": "SacreBLEU"},
-      {"@id": "urn:ngm:class:meteor-metric", "label": "METEOR"},
-      {"@id": "urn:ngm:class:rouge-metric", "label": "ROUGE"},
-      {"@id": "urn:ngm:class:comet-metric", "label": "COMET Metric"},
-      {"@id": "urn:ngm:class:bert-score", "label": "BERTScore"},
-      {"@id": "urn:ngm:class:wmt-benchmark", "label": "WMT Benchmark"}
+      {
+        "@id": "urn:ngm:class:benchmarks",
+        "label": "Benchmarks"
+      },
+      {
+        "@id": "urn:ngm:class:text-generation",
+        "label": "Text Generation"
+      },
+      {
+        "@id": "urn:ngm:class:language-model",
+        "label": "Language Model"
+      },
+      {
+        "@id": "urn:ngm:class:sacrebleu",
+        "label": "SacreBLEU"
+      },
+      {
+        "@id": "urn:ngm:class:meteor-metric",
+        "label": "METEOR"
+      },
+      {
+        "@id": "urn:ngm:class:rouge-metric",
+        "label": "ROUGE"
+      },
+      {
+        "@id": "urn:ngm:class:comet-metric",
+        "label": "COMET Metric"
+      },
+      {
+        "@id": "urn:ngm:class:bert-score",
+        "label": "BERTScore"
+      },
+      {
+        "@id": "urn:ngm:class:wmt-benchmark",
+        "label": "WMT Benchmark"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:evaluation-harness", "label": "Evaluation Harness"},
-      {"@id": "urn:ngm:class:comet-metric", "label": "COMET Metric"},
-      {"@id": "urn:ngm:class:bert-score", "label": "BERTScore"},
-      {"@id": "urn:ngm:class:human-evaluation", "label": "Human Evaluation"},
-      {"@id": "urn:ngm:class:meteor-metric", "label": "METEOR"}
+      {
+        "@id": "urn:ngm:class:evaluation-harness",
+        "label": "Evaluation Harness"
+      },
+      {
+        "@id": "urn:ngm:class:comet-metric",
+        "label": "COMET Metric"
+      },
+      {
+        "@id": "urn:ngm:class:bert-score",
+        "label": "BERTScore"
+      },
+      {
+        "@id": "urn:ngm:class:human-evaluation",
+        "label": "Human Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:meteor-metric",
+        "label": "METEOR"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-translation", "label": "Machine Translation"},
-      {"@id": "urn:ngm:class:text-summarisation", "label": "Text Summarisation"},
-      {"@id": "urn:ngm:class:benchmark-evaluation", "label": "Benchmark Evaluation"}
+      {
+        "@id": "urn:ngm:class:machine-translation",
+        "label": "Machine Translation"
+      },
+      {
+        "@id": "urn:ngm:class:text-summarisation",
+        "label": "Text Summarisation"
+      },
+      {
+        "@id": "urn:ngm:class:benchmark-evaluation",
+        "label": "Benchmark Evaluation"
+      }
     ]
   },
   "quality": 0.8

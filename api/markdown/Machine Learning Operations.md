@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)"
     }
   ],
   "relations": {

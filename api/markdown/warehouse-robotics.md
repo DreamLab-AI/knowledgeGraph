@@ -1,4 +1,0 @@
-- ### Definition
-  - Warehouse robotics automates intralogistics with coordinated mobile and manipulation robots; fleets navigate using a [[Topological Map]] and are built on a common [[Robotics Platform]].
-- ### Content
-  - Architectures range from goods-to-person systems (shelf-carrying AMRs delivering to fixed pick stations) to autonomous forklifts and piece-picking arms with vision-guided grasping. Central fleet managers handle traffic control, task allocation, and battery scheduling; key trade-offs balance throughput, floor-space density, safety around human workers, and integration cost with existing WMS infrastructure.

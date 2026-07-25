@@ -1,4 +1,0 @@
-- ### Definition
-  - Solid-OIDC is the [[Authentication]] specification of the Solid ecosystem, layering decentralised WebID-based identity over OpenID Connect so users sign in with their own identity provider instead of a platform account.
-- ### Content
-  - It issues DPoP-bound access tokens that Solid Pods verify, letting users grant or revoke application access to their personal data stores. As a core component of [[Solid]], it realises the architecture's separation of [[Digital Identity]], data storage, and application logic, ensuring that authentication does not bind a user to any single vendor.

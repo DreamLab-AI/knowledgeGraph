@@ -1,4 +1,0 @@
-- ### Definition
-  - CSRD compliance is the practice of satisfying the EU Corporate Sustainability Reporting Directive, requiring standardised ESG disclosure under ESRS and supporting [[Carbon Footprint Measurement]] for initiatives like [[Carbon Neutral Blockchain]].
-- ### Content
-  - The directive expands earlier non-financial reporting rules to a much larger set of companies and introduces mandatory assurance of disclosures. Reporting hinges on double materiality, assessing both how sustainability issues affect the company and how the company affects society and environment, with quantified emissions data feeding the assessment.

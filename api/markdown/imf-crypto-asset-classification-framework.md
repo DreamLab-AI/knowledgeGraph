@@ -1,4 +1,0 @@
-- ### Definition
-  - The IMF Crypto Asset Classification Framework is the [[IMF]]'s taxonomy for categorising crypto assets by economic function, shaping debates such as whether to treat [[Bitcoin as Money]].
-- ### Content
-  - The framework distinguishes assets without and with corresponding liabilities, and payment versus investment use cases, aligning crypto with existing macroeconomic and balance-of-payments statistics. This classification underpins coordinated regulation, tax treatment, and systemic-risk surveillance recommended to member states.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Reporting mechanisms are the channels users employ to flag harmful content, required to enforce [[Community Standards]] and to comply with the [[Digital Services Act]].
-- ### Content
-  - Compliant mechanisms provide clear notice forms, confirmation of receipt, defined turnaround times, and routes to appeal moderation decisions. They generate the evidence trail regulators expect under notice-and-action regimes, while safeguards such as rate limiting and prioritisation guard against coordinated misuse.

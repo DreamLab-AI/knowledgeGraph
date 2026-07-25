@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:speech-corpus",
+  "title": "Speech Corpus",
+  "slug": "speech-corpus",
+  "public": true,
+  "classIri": "urn:ngm:class:speech-corpus",
+  "domain": "artificial-intelligence",
+  "definition": "A speech corpus is a curated collection of recorded audio, usually paired with transcriptions, speaker metadata or other annotations, used to train and evaluate speech and voice systems. Applications such as speech recognition and voice cloning both require a sufficiently large and diverse speech corpus to learn accurate acoustic and linguistic models. Corpus quality factors, including recording conditions, speaker diversity and transcription accuracy, directly bound the performance achievable by models trained on it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dataset",
+      "label": "Dataset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    }
+  ]
+}

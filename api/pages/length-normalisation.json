@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:length-normalisation",
+  "title": "Length Normalisation",
+  "slug": "length-normalisation",
+  "public": true,
+  "classIri": "urn:ngm:class:length-normalisation",
+  "domain": "artificial-intelligence",
+  "definition": "Length normalisation is a scoring adjustment applied during sequence decoding that divides or otherwise rescales a candidate sequence's cumulative log-probability by a function of its length, correcting the bias of naive beam search toward shorter outputs. Without it, beam search systematically favours short sequences because every additional token multiplies the sequence probability by a value less than one. It is a standard component of neural machine translation and text generation decoders.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:natural-language-processing",
+      "label": "Natural Language Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:natural-language-processing",
+        "label": "Natural Language Processing"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "beam-search-decoding",
+      "label": "Beam Search Decoding"
+    },
+    {
+      "slug": "beam-search",
+      "label": "Beam Search"
+    }
+  ]
+}

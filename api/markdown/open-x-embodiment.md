@@ -1,4 +1,0 @@
-- ### Definition
-  - Open X-Embodiment is a pooled open dataset of robot manipulation demonstrations across many embodiments, enabling cross-platform generalist policies and supporting [[Imitation Learning]] for [[Embodied Minds]].
-- ### Content
-  - It unifies trajectories from numerous robots and labs into a shared format, lowering the barrier to training transferable control policies. The dataset underpins RT-X foundation models and broader research into how skills generalize across heterogeneous robot bodies.

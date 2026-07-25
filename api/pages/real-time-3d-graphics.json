@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:real-time-3d-graphics",
+  "title": "Real-Time 3D Graphics",
+  "slug": "real-time-3d-graphics",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-3d-graphics",
+  "domain": "spatial-computing",
+  "definition": "Real-Time 3D Graphics is the rendering of three-dimensional scenes at interactive frame rates, typically 30 to 120 frames per second, so that the displayed image responds immediately to changes in viewpoint or scene state. It relies on rasterization pipelines and GPU hardware to meet strict per-frame time budgets, trading off some visual fidelity against the offline techniques used in cinematic rendering. It underlies video games, XR applications, and real-time visualisation tools.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:3-d-rendering",
+      "label": "3D Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

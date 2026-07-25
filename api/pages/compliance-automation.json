@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:compliance-automation",
+  "title": "Compliance Automation",
+  "slug": "compliance-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:compliance-automation",
+  "domain": "governance",
+  "definition": "Compliance automation is the use of software systems to continuously monitor, enforce, and evidence adherence to regulatory and policy requirements, replacing manual audit-driven checks with machine-executable controls. It typically encodes rules as code, evaluates them against live system state or transaction streams, and generates auditable records without human intervention. It reduces the cost and latency of regulatory adherence while improving consistency across large organisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:governance",
+        "label": "Governance"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:regulatory-compliance",
+        "label": "Regulatory Compliance"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

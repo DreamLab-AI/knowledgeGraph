@@ -1,2 +1,0 @@
-- ### Definition
-  - The proof-of-work process in which network nodes solve cryptographic puzzles to validate transactions and mint new coins, providing the economic security mechanism of permissionless blockchains.

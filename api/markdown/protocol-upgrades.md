@@ -1,4 +1,0 @@
-- ### Definition
-  - Protocol upgrades are coordinated changes to a blockchain's consensus rules or feature set, deployed via forks or activation thresholds. They are frequently authorised through [[On-Chain Voting]] and managed under [[Decentralized Governance]] processes.
-- ### Content
-  - Upgrades fall into soft forks (backward-compatible tightening of rules) and hard forks (non-compatible changes requiring all nodes to update). Activation can be miner-signalled, validator-signalled, or time/height-locked. The principal challenge is coordinating distributed stakeholders to avoid chain splits while still allowing the protocol to address security, scalability, and functional needs.

@@ -1,2 +1,0 @@
-- ### Definition
-  - A computational technique that synthetically redirects gaze in video streams so remote participants appear to maintain direct eye contact regardless of display-camera geometry.

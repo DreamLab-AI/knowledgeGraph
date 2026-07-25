@@ -1,2 +1,0 @@
-- ### Definition
-  - LLM evaluation is the set of methodologies, benchmarks, and metrics used to assess the capabilities, safety, and reliability of large language models, spanning automated benchmark suites, human preference judgements, and task-specific test harnesses.

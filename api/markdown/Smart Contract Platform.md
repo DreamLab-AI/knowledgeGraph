@@ -44,6 +44,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:smart-contract",
+      "label": "Smart Contract"
     }
   ],
   "relations": {

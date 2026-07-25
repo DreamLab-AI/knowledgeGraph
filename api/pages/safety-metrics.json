@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:safety-metrics",
+  "title": "Safety Metrics",
+  "slug": "safety-metrics",
+  "public": true,
+  "classIri": "urn:ngm:class:safety-metrics",
+  "domain": "robotics",
+  "definition": "Safety Metrics are quantitative measures used to assess how safely a robotic or autonomous system behaves around humans, such as minimum separation distance, collision frequency, time-to-contact, and force limits during physical contact. They provide an objective basis for comparing systems, setting regulatory thresholds, and validating that a human-robot interaction design meets acceptable risk levels. They are typically measured through instrumented testing rather than self-reported system logs alone.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robot-safety",
+      "label": "Robot Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:double-blind-review",
+  "title": "Double-Blind Review",
+  "slug": "double-blind-review",
+  "public": true,
+  "classIri": "urn:ngm:class:double-blind-review",
+  "domain": "ai",
+  "definition": "Double-blind review is a peer review process in which both the identity of the authors and the identity of the reviewers are withheld from each other, intended to reduce bias arising from reputation, affiliation or personal relationships. It is widely used by academic conferences and journals, including major machine learning venues, to assess submissions on the basis of their technical merit alone. Implementing double-blind review typically requires anonymised manuscripts and a submission system that separates author and reviewer identities throughout the process.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:peer-review",
+      "label": "Peer Review"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:peer-review",
+        "label": "Peer Review"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:academic-conference",
+        "label": "Academic Conference"
+      },
+      {
+        "id": "urn:ngm:class:icml",
+        "label": "ICML"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aaai",
+      "label": "AAAI"
+    },
+    {
+      "slug": "academic-conference",
+      "label": "Academic Conference"
+    }
+  ]
+}

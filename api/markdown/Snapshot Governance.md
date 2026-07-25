@@ -24,34 +24,88 @@ public:: true
   "definition": "Snapshot Governance is an off-chain voting mechanism used in decentralised autonomous organisations whereby token holders cast gasless ballots whose weight is determined by a verified snapshot of holdings at a specific block height. The system enables low-friction community governance without requiring on-chain transaction costs for each vote. Results are typically ratified by a multisig or on-chain executor that enforces the outcome. It represents a pragmatic compromise between full on-chain governance and centralised decision-making.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:blockchain", "label": "Blockchain"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:token-voting", "label": "Token Voting"},
-      {"@id": "urn:ngm:class:smart-contract", "label": "Smart Contract"},
-      {"@id": "urn:ngm:class:ipfs", "label": "Ipfs"}
+      {
+        "@id": "urn:ngm:class:token-voting",
+        "label": "Token Voting"
+      },
+      {
+        "@id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      },
+      {
+        "@id": "urn:ngm:class:ipfs",
+        "label": "Ipfs"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:decentralised-autonomous-organisation", "label": "Decentralised Autonomous Organisation"},
-      {"@id": "urn:ngm:class:governance-token", "label": "Governance Token"},
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
-      {"@id": "urn:ngm:class:voting-power", "label": "Voting Power"}
+      {
+        "@id": "urn:ngm:class:decentralised-autonomous-organisation",
+        "label": "Decentralised Autonomous Organisation"
+      },
+      {
+        "@id": "urn:ngm:class:governance-token",
+        "label": "Governance Token"
+      },
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:voting-power",
+        "label": "Voting Power"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:on-chain-governance", "label": "On-Chain Governance"},
-      {"@id": "urn:ngm:class:delegated-governance", "label": "Delegated Governance"}
+      {
+        "@id": "urn:ngm:class:on-chain-governance",
+        "label": "On-Chain Governance"
+      },
+      {
+        "@id": "urn:ngm:class:delegated-governance",
+        "label": "Delegated Governance"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:community-governance", "label": "Community Governance"},
-      {"@id": "urn:ngm:class:protocol-upgrade", "label": "Protocol Upgrade"}
+      {
+        "@id": "urn:ngm:class:community-governance",
+        "label": "Community Governance"
+      },
+      {
+        "@id": "urn:ngm:class:protocol-upgrade",
+        "label": "Protocol Upgrade"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:blockchain", "label": "Blockchain"},
-      {"@id": "urn:ngm:class:cryptographic-signature", "label": "Cryptographic Signature"}
+      {
+        "@id": "urn:ngm:class:blockchain",
+        "label": "Blockchain"
+      },
+      {
+        "@id": "urn:ngm:class:cryptographic-signature",
+        "label": "Cryptographic Signature"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:decentralised-finance", "label": "Decentralised Finance"},
-      {"@id": "urn:ngm:class:dao-treasury", "label": "Dao Treasury"}
+      {
+        "@id": "urn:ngm:class:decentralised-finance",
+        "label": "Decentralised Finance"
+      },
+      {
+        "@id": "urn:ngm:class:dao-treasury",
+        "label": "Dao Treasury"
+      }
     ]
   },
   "sameAs": [],

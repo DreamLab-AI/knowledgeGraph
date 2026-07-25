@@ -1,4 +1,0 @@
-- ### Definition
-  - Domain Access Control defines who may connect to and act within a virtual-world domain, enforcing ownership and permission boundaries. Platforms such as [[Vircadia]] use it to mediate domain entry and content rights across federated spaces.
-- ### Content
-  - Access decisions typically combine identity verification, allow/deny lists, and role- or capability-based permissions scoped to a single domain server. This lets domain operators run independent, interoperable worlds while retaining control over moderation, content modification, and connection policy.

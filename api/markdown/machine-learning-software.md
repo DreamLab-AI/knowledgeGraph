@@ -1,2 +1,0 @@
-- ### Definition
-  - Machine learning software is the category of tools, libraries, and platforms, distinct from any single learning technique, that support the development, training, deployment, and management of machine learning models.

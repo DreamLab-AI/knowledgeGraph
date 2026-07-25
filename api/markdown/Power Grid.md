@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:power-infrastructure",
       "label": "Power Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:grid-infrastructure",
+      "label": "Grid Infrastructure"
     }
   ],
   "relations": {

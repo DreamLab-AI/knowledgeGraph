@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:participant-recruitment",
+  "title": "Participant Recruitment",
+  "slug": "participant-recruitment",
+  "public": true,
+  "classIri": "urn:ngm:class:participant-recruitment",
+  "domain": "spatial-computing",
+  "definition": "Participant recruitment is the process of identifying, screening and enlisting individuals who match a target user profile to take part in usability testing or broader user research activities. It involves defining eligibility criteria, sourcing candidates through panels, screeners or existing user bases, and scheduling sessions while balancing sample diversity against study timeline and budget. The quality of participant recruitment directly affects how representative and generalisable a study's usability findings are.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-research",
+      "label": "User Research"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - Incentive structures are reward-and-penalty systems that align individual behaviour with collective goals, grounded in [[Game Theory]] and central to applied [[Economics]] of decentralised protocols.
-- ### Content
-  - In blockchain protocols, incentives such as issuance, transaction fees, and staking rewards are balanced against slashing and opportunity costs so that the cost of attack exceeds its benefit. Poorly calibrated incentives invite free-riding, centralisation, or extractive behaviour, making careful mechanism design a prerequisite for sustainable systems.

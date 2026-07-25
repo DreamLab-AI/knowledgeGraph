@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:data-validation",
       "label": "Data Validation"
+    },
+    {
+      "id": "urn:ngm:class:json-data-interchange-format-schema",
+      "label": "JSON Schema"
     }
   ],
   "entityType": "Class",
@@ -18,7 +22,7 @@
   "relationships": {
     "hasPart": [
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -32,7 +36,7 @@
         "label": "Data Schema"
       },
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       }
     ],
@@ -67,7 +71,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       },
       {
@@ -87,7 +91,7 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:json-schema",
+        "id": "urn:ngm:class:json-data-interchange-format-schema",
         "label": "JSON Schema"
       }
     ],

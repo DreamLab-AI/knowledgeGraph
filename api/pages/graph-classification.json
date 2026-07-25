@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:graph-classification",
+  "title": "Graph Classification",
+  "slug": "graph-classification",
+  "public": true,
+  "classIri": "urn:ngm:class:graph-classification",
+  "domain": "machine-learning",
+  "definition": "Graph classification is the machine learning task of assigning a label to an entire graph, such as a molecule, social network or program dependency graph, based on its structure and node or edge attributes, in contrast to node classification which labels individual vertices. It is typically performed by a graph neural network that repeatedly aggregates neighbourhood information through message passing before pooling node representations into a single graph-level embedding for classification. Graph classification is applied to problems such as molecular property prediction, protein function prediction and program analysis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:classification",
+      "label": "Classification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:classification",
+        "label": "Classification"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      },
+      {
+        "id": "urn:ngm:class:node-classification",
+        "label": "Node Classification"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

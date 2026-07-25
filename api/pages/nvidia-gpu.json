@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:graphics-processing-unit",
       "label": "Graphics Processing Unit"
+    },
+    {
+      "id": "urn:ngm:class:hardware-component",
+      "label": "Hardware Component"
     }
   ],
   "entityType": "Class",

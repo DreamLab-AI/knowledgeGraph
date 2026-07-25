@@ -1,4 +1,0 @@
-- ### Definition
-  - A reasoning trace is the step-by-step record of a model's intermediate thoughts and actions, used by [[Agents]] and [[Computer Use and Browser Agents]] to plan, self-correct, and provide auditability.
-- ### Content
-  - Traces capture chain-of-thought text, tool invocations, observations, and branch points, enabling replay and inspection of agent behaviour. They are central to evaluation and safety, since a misleading or unfaithful trace can mask the true cause of an output.

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:weighted-graph",
+  "title": "Weighted Graph",
+  "slug": "weighted-graph",
+  "public": true,
+  "classIri": "urn:ngm:class:weighted-graph",
+  "domain": "data",
+  "definition": "A weighted graph is a graph in which each edge carries a numeric weight representing cost, distance, capacity or another quantity relevant to the traversal or connection it models. Weights generalise simple adjacency into a richer structure that supports shortest-path, minimum-spanning-tree and flow algorithms. Search algorithms such as A* use edge weights together with a heuristic to find least-cost paths efficiently.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:graph-theory",
+      "label": "Graph Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:a-star-algorithm",
+        "label": "A Star Algorithm"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graph-theory",
+        "label": "Graph Theory"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "a-star-algorithm",
+      "label": "A Star Algorithm"
+    },
+    {
+      "slug": "dijkstra-algorithm",
+      "label": "Dijkstra Algorithm"
+    }
+  ]
+}

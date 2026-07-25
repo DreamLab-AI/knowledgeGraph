@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:distributed-collaboration",
       "label": "Distributed Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
     }
   ],
   "relations": {

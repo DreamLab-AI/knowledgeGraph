@@ -1,4 +1,0 @@
-- ### Definition
-  - Apache Atlas is an open-source data-governance and catalog platform that implements [[Metadata Management]] with lineage tracking and classification. It provides the typed metadata model and policy enforcement layer for governed data lakes.
-- ### Content
-  - Atlas stores a graph of typed entities and their relationships, automatically harvesting lineage from integrated processing engines so analysts can trace a column back to its source. Classification tags drive attribute-based access control and compliance reporting, making Atlas a governance backbone in large Hadoop and hybrid analytics deployments.

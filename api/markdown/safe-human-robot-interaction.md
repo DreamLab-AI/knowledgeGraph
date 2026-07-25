@@ -1,4 +1,0 @@
-- ### Definition
-  - Safe human-robot interaction enables robots to work near people without harm, enabled by [[Force Control]] and [[Admittance Control]] among other compliant-control methods.
-- ### Content
-  - Techniques include limiting contact forces, monitoring separation distance and speed, and yielding compliantly on contact. Together they let collaborative robots share space with workers while keeping any incidental contact within biomechanically safe thresholds.

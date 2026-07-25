@@ -1,4 +1,0 @@
-- ### Definition
-  - Demand response mining treats crypto miners as a controllable load that follows grid signals, enabling [[Stranded Energy Monetisation]] of otherwise wasted generation. It is a recurring theme in debates over [[Bitcoin Environmental Issues]].
-- ### Content
-  - Because miners can pause within seconds and have no minimum runtime, they pair well with intermittent renewables and frequency-regulation markets. Critics question net emissions and grid lock-in, while proponents cite reduced flaring, improved renewable economics, and faster curtailment recovery.

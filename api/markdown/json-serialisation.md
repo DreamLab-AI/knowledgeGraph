@@ -1,4 +1,0 @@
-- ### Definition
-  - JSON serialisation encodes structured data as portable JSON text and parses it back, providing the persistence format for [[ComfyUI Workflows]] and the message encoding required by the [[Nostr Protocol]].
-- ### Content
-  - Its self-describing key-value syntax maps cleanly to most programming languages' native types, enabling lossless round-tripping across services. Care is required around number precision, ordering and schema validation, but JSON's ubiquity and tooling make serialisation to and from it the lingua franca of modern data exchange.

@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:networking",
       "label": "Networking"
+    },
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
     }
   ],
   "relations": {

@@ -17,6 +17,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:data-format",
+      "label": "Data Format"
     }
   ],
   "relations": {
@@ -76,8 +80,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:file-format",
-        "label": "File Format"
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
       }
     ],
     "implements": [
@@ -100,8 +104,8 @@ public:: true
     ],
     "contrastsWith": [
       {
-        "@id": "urn:ngm:class:file-format",
-        "label": "File Format"
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
       }
     ]
   },
@@ -146,11 +150,11 @@ public:: true
   - enables:: [[Big Data]]
   - supports:: [[Apache Spark]]
   - supports:: [[Schema Evolution]]
-  - requires:: [[File Format]]
+  - requires:: [[Data Format]]
   - implements:: [[Columnar Storage]]
   - dependsOn:: [[Data Serialisation]]
   - bridgesTo:: [[Data Warehouse]]
-  - contrastsWith:: [[File Format]]
+  - contrastsWith:: [[Data Format]]
 
 - ### Provenance
   - updated:: 2026-06-15

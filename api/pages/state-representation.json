@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:state-representation",
+  "title": "State Representation",
+  "slug": "state-representation",
+  "public": true,
+  "classIri": "urn:ngm:class:state-representation",
+  "domain": "artificial-intelligence",
+  "definition": "State representation is the encoding scheme used to capture the relevant information about a system or environment at a given point, transforming raw observations into a form suitable for prediction, planning, or synchronisation. Choices range from hand-crafted low-dimensional feature vectors to learned latent embeddings produced by an encoder network, and the choice materially affects downstream sample efficiency and generalisation. It is a prerequisite for constructing a world model and for synchronising state across distributed or networked simulations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:state-space",
+      "label": "State Space"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:state-space",
+        "label": "State Space"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "state-synchronization",
+      "label": "State Synchronization"
+    }
+  ]
+}

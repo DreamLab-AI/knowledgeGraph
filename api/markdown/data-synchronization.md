@@ -1,4 +1,0 @@
-- ### Definition
-  - Data synchronization propagates changes and reconciles conflicts to keep copies consistent across systems, a building block for [[ETSI Domain Data Management]] and for a [[Collective Intelligence System]].
-- ### Content
-  - Synchronisation uses change-data-capture, timestamps or vector clocks to detect divergence and merge updates, applying last-writer-wins or CRDT-based resolution. The chosen strategy governs how the system behaves under concurrent edits and intermittent connectivity.

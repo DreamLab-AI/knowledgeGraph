@@ -1,4 +1,0 @@
-- ### Definition
-  - Safety certification is accredited attestation of conformance to safety standards, enabled by [[Collision Detection]] and required to meet [[Cobot Safety Levels]].
-- ### Content
-  - Certification bodies assess design, test protective functions, and audit processes against standards before issuing a mark. The resulting certificate gives operators and regulators documented assurance that the system's safety measures perform to specified integrity levels.

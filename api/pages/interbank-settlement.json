@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:interbank-settlement",
+  "title": "Interbank Settlement",
+  "slug": "interbank-settlement",
+  "public": true,
+  "classIri": "urn:ngm:class:interbank-settlement",
+  "domain": "finance",
+  "definition": "Interbank settlement is the process by which banks finalise the transfer of funds between each other to discharge obligations arising from customer payments, trades, or other transactions. It relies on messaging networks such as SWIFT to communicate payment instructions and on settlement systems, often operated or overseen by central banks, to move the underlying value. Traditional banking depends on reliable interbank settlement to make cross-institution payments final and irrevocable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-system",
+      "label": "Payment System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "swift",
+      "label": "SWIFT"
+    }
+  ]
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - An inverted index maps terms to the documents containing them, the core structure for fast full-text search. It complements [[Semantic Search]] and is a building block of the [[Information Retrieval Domain]].
-- ### Content
-  - Posting lists are compressed and stored with term frequencies and positions to support ranking functions such as BM25 and phrase queries. Modern search stacks often combine inverted indexes for lexical matching with vector indexes for semantic retrieval in hybrid pipelines.

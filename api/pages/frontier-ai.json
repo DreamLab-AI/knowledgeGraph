@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:large-scale-pretrained-foundation-model",
       "label": "Large-Scale Pretrained Foundation Model"
+    },
+    {
+      "id": "urn:ngm:class:foundation-model-layer",
+      "label": "Foundation Model Layer"
     }
   ],
   "entityType": "Class",

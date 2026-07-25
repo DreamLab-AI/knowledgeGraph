@@ -1,4 +1,0 @@
-- ### Definition
-  - Drake is an open-source robotics toolbox for model-based design, simulation, and verification, providing rigorous multibody dynamics and optimisation. It supplies the [[Kinematics Model]] and [[Collision Detection]] machinery used in planning and control.
-- ### Content
-  - Drake exposes a symbolic and numerical engine with analytical gradients, enabling trajectory optimisation, contact simulation, and controller synthesis. Its modular system framework lets engineers compose plants, controllers, and sensors for accurate simulation before deployment to physical hardware.

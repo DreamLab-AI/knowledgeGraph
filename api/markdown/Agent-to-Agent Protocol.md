@@ -133,7 +133,7 @@ public:: true
         "label": "JSON-LD"
       },
       {
-        "@id": "urn:ngm:class:json-rpc-2-0",
+        "@id": "urn:ngm:class:json-data-interchange-format-rpc-2-0",
         "label": "JSON-RPC 2.0"
       },
       {

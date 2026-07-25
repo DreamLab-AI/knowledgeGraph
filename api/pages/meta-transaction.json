@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:meta-transaction",
+  "title": "Meta-Transaction",
+  "slug": "meta-transaction",
+  "public": true,
+  "classIri": "urn:ngm:class:meta-transaction",
+  "domain": "blockchain",
+  "definition": "A meta-transaction is a blockchain transaction that a user signs off-chain but does not submit or pay gas for directly; instead a relayer submits it on the user's behalf and covers the transaction fee. It relies on a standard such as EIP-712 for structured, verifiable off-chain message signing so the relayer and receiving contract can authenticate the original signer. It enables gasless user experiences, letting applications abstract away native token fee requirements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:transaction",
+      "label": "Transaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:eip-712",
+        "label": "EIP-712"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

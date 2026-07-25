@@ -1,2 +1,0 @@
-- ### Definition
-  - Delivery-confirmation signals indicating that a message has been viewed by its recipient, reducing sender uncertainty and supporting timely follow-up in asynchronous distributed communication.

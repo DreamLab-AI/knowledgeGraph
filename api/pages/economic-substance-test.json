@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:economic-substance-test",
+  "title": "Economic Substance Test",
+  "slug": "economic-substance-test",
+  "public": true,
+  "classIri": "urn:ngm:class:economic-substance-test",
+  "domain": "blockchain",
+  "definition": "The economic substance test is a regulatory analysis used to determine whether a transaction or arrangement has genuine business purpose and economic effect beyond obtaining a favourable legal or tax outcome, distinguishing legitimate commercial activity from arrangements structured purely to evade classification. In securities regulation it is applied alongside frameworks such as the Howey test when assessing whether an arrangement constitutes an investment contract. Regulators use the test to look past the formal structure of a transaction to its underlying economic reality.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - Product management guides a product's vision, strategy, and roadmap by balancing user needs against business and technical constraints. It is supported by [[Product Design]] practices and by [[AI Diagram Tools]] for roadmapping and communication.
-- ### Content
-  - The discipline spans discovery (user research, problem validation), prioritisation (frameworks weighing impact against effort), delivery coordination across cross-functional teams, and measurement against product metrics. Practitioners translate strategy into prioritised backlogs and align stakeholders, increasingly leaning on AI assistants to synthesise feedback, draft specifications, and generate diagrams and roadmaps.

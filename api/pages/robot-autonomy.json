@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:robot-autonomy",
+  "title": "Robot Autonomy",
+  "slug": "robot-autonomy",
+  "public": true,
+  "classIri": "urn:ngm:class:robot-autonomy",
+  "domain": "robotics",
+  "definition": "Robot autonomy is the degree to which a robotic system can perceive its environment, make decisions, and execute tasks to achieve goals without ongoing human direction. It spans a spectrum from teleoperation, through supervised autonomy where a human approves key decisions, to full autonomy where the robot plans and acts independently within its operating envelope. Autonomy level is typically determined by the sophistication of a robot's perception, planning, and task-execution stack working together under uncertainty.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:autonomous-system",
+      "label": "Autonomous System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:autonomous-system",
+        "label": "Autonomous System"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - WirelessHART is an industrial mesh networking standard, layered on [[IEEE 802.15.4]] and implemented by an [[IoT Sensor Network]] for reliable plant monitoring and control.
-- ### Content
-  - The protocol uses TDMA scheduling, per-transmission channel hopping across the 2.4 GHz band, and graph/source routing through a redundant mesh managed by a central network manager. Built-in AES-128 encryption, deterministic latency, and self-healing topology make it suited to safety- and availability-critical process applications where Wi-Fi-class networks are too unreliable.

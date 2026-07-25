@@ -1,4 +1,0 @@
-- ### Definition
-  - A query encoder embeds a user query into a dense vector for similarity matching against documents. It is a constituent part of [[Retrieval-Augmented Generation (RAG)]] and [[Semantic Search]] systems.
-- ### Content
-  - In dual-encoder (bi-encoder) designs, the query encoder runs at inference time while document embeddings are precomputed and indexed, giving low-latency retrieval. Training typically uses contrastive objectives with positive and hard-negative passages. Quality hinges on alignment between the query and document encoders' shared embedding space.

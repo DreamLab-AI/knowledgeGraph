@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:flight-control-system",
+  "title": "Flight Control System",
+  "slug": "flight-control-system",
+  "public": true,
+  "classIri": "urn:ngm:class:flight-control-system",
+  "domain": "robotics",
+  "definition": "A flight control system is the set of sensors, actuators, and control-law software that stabilises an aircraft or aerial robot and translates pilot or autopilot commands into control-surface or motor movements. It fuses data from inertial and other sensors to estimate attitude and rate, then computes corrective outputs at high frequency to maintain stable flight. In unmanned aerial robots it typically also implements guidance and navigation loops on top of the core stabilisation control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aerial-robot",
+      "label": "Aerial Robot"
+    }
+  ]
+}

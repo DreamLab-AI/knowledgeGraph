@@ -1,4 +1,0 @@
-- ### Definition
-  - The FSB Cross-Border Payments Roadmap is a G20-endorsed policy programme that standardises goals for international payments, providing the benchmark against which [[CBDCs]] and [[Cross-Border Settlement]] arrangements are assessed.
-- ### Content
-  - The roadmap sets targets for cost, speed, access, and transparency, and organises action across payment system interoperability, data standards (e.g. ISO 20022), and legal frameworks. It explicitly considers how multi-CBDC arrangements and new infrastructures could reduce friction. Progress is tracked through periodic FSB monitoring reports.

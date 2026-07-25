@@ -1,4 +1,0 @@
-- ### Definition
-  - Browser-based screen capture acquires screen video directly in the browser via the Screen Capture API, enabling [[Asynchronous Video]] messaging and web-native [[Screen Recording]].
-- ### Content
-  - The getDisplayMedia API returns a permissioned MediaStream of a chosen screen, window, or tab, which the MediaRecorder API can save or WebRTC can transmit live. Operating inside the browser sandbox, it removes the need for native clients while constraining capture to user-granted sources.

@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:stakeholder-mapping",
+  "title": "Stakeholder Mapping",
+  "slug": "stakeholder-mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:stakeholder-mapping",
+  "domain": "governance",
+  "definition": "Stakeholder mapping is a visual technique for identifying the individuals, groups, and organisations that affect or are affected by a project, and plotting them against dimensions such as influence and interest to prioritise engagement effort. It produces a structured artefact, typically a grid or network diagram, that guides communication planning and risk management. Stakeholder mapping is commonly used as the initial, visual step within a broader stakeholder analysis process.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:stakeholder-analysis",
+      "label": "Stakeholder Analysis"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:stakeholder-engagement",
+        "label": "Stakeholder Engagement"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:stakeholder-analysis",
+        "label": "Stakeholder Analysis"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "social-impact-assessment-sia",
+      "label": "Social Impact Assessment (SIA)"
+    }
+  ]
+}

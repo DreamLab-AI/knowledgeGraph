@@ -62,10 +62,6 @@
         "label": "Advertising Space"
       },
       {
-        "id": "urn:ngm:class:community-building",
-        "label": "Community Building"
-      },
-      {
         "id": "urn:ngm:class:event-hosting",
         "label": "Event Hosting"
       },
@@ -101,10 +97,6 @@
     {
       "slug": "advertising-space",
       "label": "Advertising Space"
-    },
-    {
-      "slug": "community-building",
-      "label": "Community Building"
     },
     {
       "slug": "development-rights",

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:cross-functional-collaboration",
+  "title": "Cross-Functional Collaboration",
+  "slug": "cross-functional-collaboration",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-functional-collaboration",
+  "domain": "distributed-collaboration",
+  "definition": "Cross-functional collaboration is coordinated work between people from different disciplines or organisational units \u2014 such as engineering, design, and operations \u2014 combining diverse expertise toward a shared goal. In distributed and remote settings it depends on digital workplace platforms and virtual collaboration tools to bridge the coordination gaps that would otherwise be closed by physical co-location. It is a recurring requirement for digital workplace platforms and virtual collaboration systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:virtual-collaboration",
+      "label": "Virtual Collaboration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:virtual-collaboration",
+        "label": "Virtual Collaboration"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    }
+  ]
+}

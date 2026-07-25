@@ -102,7 +102,7 @@ elevatedFrom:: [[lognet]]
   - Related to graph databases and digital ontology repositories that consume its structured output.
 
 - ### Content
-  - <iframe src="http://192.168.0.51:3000" style="width: 100%; height: 550px"></iframe>
+  - <iframe src="http://ai-server.local:3000" style="width: 100%; height: 550px"></iframe>
 
 - ### Provenance
   - sources::

@@ -1,4 +1,0 @@
-- ### Definition
-  - The EIP Process is the workflow for proposing, reviewing, and standardising Ethereum Improvement Proposals. It standardises [[Smart Contract]] interfaces such as ERCs and is a working example of [[Decentralized Governance]] of a protocol.
-- ### Content
-  - Proposals progress through defined statuses, with EIP editors checking formatting and process while the community evaluates technical merit toward rough consensus. The ERC category produces interoperable token and contract standards, while Core EIPs require client implementation and network upgrade coordination to take effect.

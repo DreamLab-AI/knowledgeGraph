@@ -1,4 +1,0 @@
-- ### Definition
-  - Sociotechnical analysis is an [[AI Governance and Ethics]] methodology that assesses technology through the entwined behaviour of its technical parts and the human and organisational contexts surrounding it, instead of treating the artefact alone.
-- ### Content
-  - For AI, it traces how a [[Sociotechnical System]] of models, data pipelines, operators, and affected communities jointly generates outcomes, surfacing emergent failure modes invisible to component-level testing. It is a primary lens for identifying [[AI Risks]] such as feedback-driven bias amplification, misuse, and structural harms that arise only when a system is embedded in real social settings.

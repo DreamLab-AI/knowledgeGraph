@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:full-text-search",
+  "title": "Full-Text Search",
+  "slug": "full-text-search",
+  "public": true,
+  "classIri": "urn:ngm:class:full-text-search",
+  "domain": "infrastructure",
+  "definition": "Full-text search is a technique for locating documents or records that contain specified words or phrases by matching against an inverted index built over tokenised text content, rather than scanning raw text linearly. It supports ranking by relevance, stemming, and fuzzy matching, and is provided natively by systems such as PostgreSQL and dedicated engines such as Elasticsearch. Full-text search underpins query engines and log aggregation systems that must retrieve relevant records from large unstructured text corpora.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:search-index",
+      "label": "Search Index"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

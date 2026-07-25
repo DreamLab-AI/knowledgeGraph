@@ -83,8 +83,8 @@
     ],
     "partOf": [
       {
-        "id": "urn:ngm:class:security-assessment",
-        "label": "Security Assessment"
+        "id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
       },
       {
         "id": "urn:ngm:class:red-teaming",

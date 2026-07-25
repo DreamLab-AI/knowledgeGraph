@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:reconfigurable-computing",
+  "title": "Reconfigurable Computing",
+  "slug": "reconfigurable-computing",
+  "public": true,
+  "classIri": "urn:ngm:class:reconfigurable-computing",
+  "domain": "artificial-intelligence",
+  "definition": "Reconfigurable computing is a computing paradigm in which hardware logic itself is reconfigured after fabrication to match the structure of a specific workload, combining the flexibility of software with performance closer to fixed-function hardware. Field-programmable gate arrays are the principal enabling technology, allowing logic blocks and interconnects to be reprogrammed to implement custom pipelines, accelerators or entire processor designs. It sits between general-purpose processors and application-specific integrated circuits, trading some raw throughput for the ability to adapt hardware behaviour after deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:hardware-acceleration",
+      "label": "Hardware Acceleration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field-Programmable Gate Array"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:hardware-acceleration",
+        "label": "Hardware Acceleration"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

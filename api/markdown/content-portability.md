@@ -1,4 +1,0 @@
-- ### Definition
-  - Content portability lets users carry their assets and rights between platforms, enabled by [[Asset Format Standards]] and an agreed [[Data Format Standard]].
-- ### Content
-  - Where interoperability concerns simultaneous cross-platform use, portability concerns the one-way export and re-import of content with its structure intact. It underpins user data rights and anti-lock-in regulation, and relies on documented schemas plus complete, lossless export tooling.

@@ -101,7 +101,7 @@ public:: true
       {"@id": "urn:ngm:class:onnx", "label": "ONNX"},
       {"@id": "urn:ngm:class:mmpose", "label": "MMPose"},
       {"@id": "urn:ngm:class:coco-wholebody", "label": "COCO WholeBody"},
-      {"@id": "urn:ngm:class:stable-diffusion", "label": "Stable Diffusion"}
+      {"@id": "urn:ngm:class:stable-diffusion-image-model", "label": "Stable Diffusion Image Model"}
     ],
     "relatedTo": [
       {"@id": "urn:ngm:class:openpose", "label": "OpenPose"},

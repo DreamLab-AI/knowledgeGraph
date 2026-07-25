@@ -1,4 +1,0 @@
-- ### Definition
-  - Real-time settlement finalises value transfer instantly at transaction time, removing settlement-cycle delay and counterparty risk. It is enabled within the [[Financial Infrastructure Domain]] and by [[CBDCs]].
-- ### Content
-  - Traditional systems batch and net obligations, settling hours or days later (T+1/T+2). Real-time gross settlement and tokenised assets on distributed ledgers allow atomic delivery-versus-payment with finality. Benefits include reduced systemic risk and freed-up collateral, while challenges include liquidity management for continuous gross settlement and 24/7 operational resilience.

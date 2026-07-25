@@ -1,4 +1,0 @@
-- ### Definition
-  - SBTi is the organisation that validates corporate climate targets against scientific decarbonisation pathways, and its certified [[Science-Based Targets]] are frequently cited in [[ESG Reporting]].
-- ### Content
-  - SBTi provides criteria, tools, and a review process covering scope 1, 2, and increasingly scope 3 emissions, plus a separate net-zero standard. Validation signals credibility to investors and regulators, distinguishing science-aligned commitments from unsubstantiated net-zero pledges.

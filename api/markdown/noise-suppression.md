@@ -1,2 +1,0 @@
-- ### Definition
-  - A real-time signal-processing technique that removes background and ambient sounds from audio streams during virtual meetings, ensuring clear voice communication for distributed participants.

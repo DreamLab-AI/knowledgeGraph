@@ -1,4 +1,0 @@
-- ### Definition
-  - Inference compute is the runtime processing required to serve predictions from a trained model, contrasted with training compute. [[Agents]] and [[Computer Use and Browser Agents]] consume it heavily because they issue many sequential model calls per task.
-- ### Content
-  - Inference compute is provisioned via accelerators (GPUs, TPUs, custom ASICs) and optimised through batching, quantisation, and key-value caching. Test-time scaling, where models deliberate longer to improve accuracy, has made inference compute a strategic lever comparable to training scale.

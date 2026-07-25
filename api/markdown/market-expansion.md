@@ -1,4 +1,0 @@
-- ### Definition
-  - Market expansion grows reach by entering new segments, regions, or use cases, enlarging the addressable market. It is frequently enabled by [[Real-Time Translation]] that removes language barriers and by [[Accessibility]] improvements that broaden the addressable user base.
-- ### Content
-  - Successful expansion balances localisation, regulatory compliance, and distribution against the marginal cost of serving new users. Digital products scale across borders cheaply, so the binding constraints are usually trust, cultural fit, and meeting jurisdiction-specific legal and accessibility requirements.

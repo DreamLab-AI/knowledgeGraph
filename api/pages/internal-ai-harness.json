@@ -86,8 +86,8 @@
         "label": "Low-Latency AI"
       },
       {
-        "id": "urn:ngm:class:autonomous-agents",
-        "label": "Autonomous Agents"
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       }
     ],
     "dependsOn": [],

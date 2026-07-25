@@ -1,4 +1,0 @@
-- ### Definition
-  - Dynamics studies how forces and torques produce motion, supplying the equations of motion used in robot [[Control Algorithm]] design. It is a core part of the [[Mechanical Engineering Domain]] and complements kinematics.
-- ### Content
-  - Forward dynamics computes accelerations from applied forces, while inverse dynamics computes the forces required for a desired motion, both central to model-based and force control. Accurate dynamic models, including inertia, friction, and contact, underpin realistic simulation and high-performance manipulation.

@@ -1,4 +1,0 @@
-- ### Definition
-  - The stable swap invariant is an automated market maker [[Economic Mechanism]] that interpolates between constant-sum and constant-product curves to deliver minimal slippage for trades among similarly-valued assets like stablecoins.
-- ### Content
-  - Near the balanced reserve point the curve approximates constant-sum behaviour for near-1:1 pricing, then bends toward constant-product as reserves skew, protecting the pool from depletion. It is the foundation of stablecoin-focused [[Decentralized Exchange]] pools and shapes the returns and risk profile of [[Liquidity Provision]] in low-volatility asset markets.

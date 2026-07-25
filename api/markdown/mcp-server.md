@@ -1,4 +1,0 @@
-- ### Definition
-  - An MCP server exposes tools, resources, and prompts to AI applications via the [[Model Context Protocol]], executing requests relayed by an [[MCP Client]]. It encapsulates integration with an external system behind a uniform protocol surface.
-- ### Content
-  - Servers declare capabilities at connection time and respond to typed requests over a transport such as stdio or HTTP/SSE. By standardising the integration boundary, MCP servers let any compliant host reuse the same connector, fostering an ecosystem of interoperable, composable AI integrations.

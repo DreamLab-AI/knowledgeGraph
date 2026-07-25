@@ -34,6 +34,10 @@ public:: true
     {
       "@id": "urn:ngm:class:diffusion-model",
       "label": "Diffusion Model"
+    },
+    {
+      "@id": "urn:ngm:class:diffusion-models",
+      "label": "Diffusion Models"
     }
   ],
   "relations": {

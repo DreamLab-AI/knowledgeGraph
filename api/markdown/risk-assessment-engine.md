@@ -1,4 +1,0 @@
-- ### Definition
-  - A risk assessment engine automatically scores risk to drive decisions, forming part of [[Customs Trade Facilitation]] and operationalising a [[Risk Assessment Methodology]].
-- ### Content
-  - The engine ingests declarations, party histories, and external signals, applies rules and models, and emits a risk score routing items to green, amber, or red channels. This concentrates inspection resources on high-risk cases while accelerating compliant trade.

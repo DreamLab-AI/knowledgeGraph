@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "id": "urn:ngm:class:layer-2-protocol",
+      "label": "Layer-2 Protocol"
     }
   ],
   "entityType": "Class",

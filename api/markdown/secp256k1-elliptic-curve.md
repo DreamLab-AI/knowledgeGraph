@@ -1,4 +1,0 @@
-- ### Definition
-  - secp256k1 is the elliptic curve whose keypairs and signatures are required by a [[Sovereign Keyset]] and by the [[Nostr Protocol]] for identity and signing.
-- ### Content
-  - The curve's structure permits fast scalar multiplication and the GLV endomorphism optimisation, and its support for Schnorr signatures enables key and signature aggregation. Security rests on the hardness of the elliptic-curve discrete-logarithm problem over the curve's prime-order group.

@@ -1,0 +1,54 @@
+{
+  "id": "urn:visionflow:page:network-fabric",
+  "title": "Network Fabric",
+  "slug": "network-fabric",
+  "public": true,
+  "classIri": "urn:ngm:class:network-fabric",
+  "domain": "infrastructure",
+  "definition": "A network fabric is a switched interconnect topology, typically non-blocking and multi-path such as a fat-tree or dragonfly, that provides uniform high-bandwidth, low-latency connectivity between many compute nodes. It is the physical and logical substrate over which technologies such as InfiniBand move data between GPUs or servers in a cluster. It underpins distributed training and high-performance computing workloads that depend on collective communication primitives such as the Message Passing Interface.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-layer",
+      "label": "Network Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:compute-infrastructure",
+        "label": "Compute Infrastructure"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:message-passing-interface",
+        "label": "Message Passing Interface"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:infiniband",
+        "label": "Infiniband"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    }
+  ]
+}

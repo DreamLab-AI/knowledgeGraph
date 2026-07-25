@@ -1,4 +1,0 @@
-- ### Definition
-  - Cross-platform authentication establishes a user's identity across many platforms from a single verified credential. It is required by the [[Multiverse]] vision and is a structural part of [[Avatar Interoperability]].
-- ### Content
-  - Implementations build on federated protocols such as OAuth/OIDC, single sign-on, and increasingly decentralised identifiers and verifiable credentials that the user controls. The hard problems are trust establishment between independent platforms, consistent permission semantics, and preventing a shared identity from becoming a single point of compromise.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Gradle is a JVM-focused build-automation tool; it is used to build [[R3 Corda]] and its applications and is closely related to [[Kotlin]], which serves as both a target language and a build-script DSL.
-- ### Content
-  - Gradle models builds as task graphs, resolving dependencies from repositories such as Maven Central and executing only the tasks whose inputs changed, aided by an incremental engine and local or remote build cache. Plugins extend it for testing, code quality, containerisation, and platform-specific packaging. Its flexibility and performance have made it the default build system for Android and a common choice for large multi-module JVM projects.

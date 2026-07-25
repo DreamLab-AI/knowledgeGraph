@@ -1,4 +1,0 @@
-- ### Definition
-  - SIOPv2 (Self-Issued OpenID Provider v2) extends OpenID Connect so a user's wallet, not a central server, issues identity assertions bound to a decentralised identifier. It is implemented by a [[Digital Identity Wallet]] and is a building block of [[Distributed Identity]].
-- ### Content
-  - The holder presents a self-issued ID token signed by keys associated with their DID, which the relying party resolves and verifies without a hosted provider. Combined with OpenID4VP, SIOPv2 enables selective disclosure of verifiable credentials, supporting privacy-preserving, user-controlled authentication flows.

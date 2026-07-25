@@ -82,8 +82,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:acid-compliance",
-        "label": "ACID Compliance"
+        "id": "urn:ngm:class:acid-properties",
+        "label": "ACID Properties"
       },
       {
         "id": "urn:ngm:class:data-availability",
@@ -232,8 +232,8 @@
   },
   "wikilinks": [
     {
-      "slug": "acid-compliance",
-      "label": "ACID Compliance"
+      "slug": "acid-properties",
+      "label": "ACID Properties"
     },
     {
       "slug": "active-record",

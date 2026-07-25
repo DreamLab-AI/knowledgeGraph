@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:capability-advertisement",
+  "title": "Capability Advertisement",
+  "slug": "capability-advertisement",
+  "public": true,
+  "classIri": "urn:ngm:class:capability-advertisement",
+  "domain": "artificial-intelligence",
+  "definition": "Capability Advertisement is the mechanism by which an autonomous agent publishes machine-readable metadata describing the skills, tools and interfaces it exposes, allowing other agents or an orchestrator to discover what it can do without prior hard-coded knowledge. It typically takes the form of a structured manifest, such as an agent card, exchanged during a discovery or handshake phase. It underpins dynamic task routing in multi-agent systems built on protocols such as the Agent Communication Protocol and Agent-to-Agent Protocol.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:service-discovery",
+      "label": "Service Discovery"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:service-discovery",
+        "label": "Service Discovery"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:agent-orchestrator",
+        "label": "Agent Orchestrator"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:agent-communication-protocol",
+        "label": "Agent Communication Protocol"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:agent-to-agent-protocol",
+        "label": "Agent-to-Agent Protocol"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-communication-protocol",
+      "label": "Agent Communication Protocol"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agent-to-agent-protocol",
+      "label": "Agent-to-Agent Protocol"
+    },
+    {
+      "slug": "agent2-agent-protocol-google-2025",
+      "label": "Agent2Agent Protocol (Google 2025)"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    }
+  ]
+}

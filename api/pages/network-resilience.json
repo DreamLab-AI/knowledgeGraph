@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:network-resilience",
+  "title": "Network Resilience",
+  "slug": "network-resilience",
+  "public": true,
+  "classIri": "urn:ngm:class:network-resilience",
+  "domain": "infrastructure",
+  "definition": "Network resilience is a network's capacity to maintain an acceptable level of connectivity and service in the face of node or link failure, congestion, attack or partition, typically achieved through redundancy, self-healing routing and peer diversity. It is measured by how quickly and completely the network restores full functionality after a disruptive event. In peer-to-peer and blockchain networks it depends heavily on robust peer discovery mechanisms that keep nodes well connected.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:resilience",
+      "label": "Resilience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:peer-discovery",
+        "label": "Peer Discovery"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "network-layer",
+      "label": "Network Layer"
+    }
+  ]
+}

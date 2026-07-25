@@ -54,7 +54,7 @@ public:: true
         "label": "QUIC"
       },
       {
-        "@id": "urn:ngm:class:websocket",
+        "@id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       }
     ],

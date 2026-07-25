@@ -14,6 +14,10 @@
     {
       "id": "urn:ngm:class:psychology",
       "label": "Psychology"
+    },
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",

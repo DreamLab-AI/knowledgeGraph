@@ -1,0 +1,54 @@
+{
+  "id": "urn:visionflow:page:communication-channel",
+  "title": "Communication Channel",
+  "slug": "communication-channel",
+  "public": true,
+  "classIri": "urn:ngm:class:communication-channel",
+  "domain": "infrastructure",
+  "definition": "A communication channel is the medium or pathway, physical or logical, through which information is transmitted from a sender to a receiver, characterised by properties such as bandwidth, latency, noise and capacity. The concept originates in information theory, where channel capacity bounds the rate at which information can be transmitted reliably. It is a prerequisite for any feedback loop or social interaction that depends on exchanging signals between agents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:information-theory",
+      "label": "Information Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:information-theory",
+        "label": "Information Theory"
+      }
+    ],
+    "enables": [
+      {
+        "id": "urn:ngm:class:feedback-loop",
+        "label": "Feedback Loop"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:social-interaction",
+        "label": "Social Interaction"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    }
+  ]
+}

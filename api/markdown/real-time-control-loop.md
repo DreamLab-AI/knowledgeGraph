@@ -1,4 +1,0 @@
-- ### Definition
-  - A real-time control loop executes sense-compute-actuate cycles at a fixed deterministic rate with hard deadlines. It is a constituent part of the [[Cyber-Physical Systems Domain]] and is required by [[Admittance Control]] for stable force regulation.
-- ### Content
-  - Loop rates range from hundreds of hertz for joint control to kilohertz for current and force loops. Determinism is achieved with real-time operating systems, priority scheduling, and bounded-latency I/O. Jitter and missed deadlines degrade stability, so worst-case execution time analysis and isolation from non-real-time tasks are essential.

@@ -1,0 +1,54 @@
+{
+  "id": "urn:visionflow:page:prompt-caching",
+  "title": "Prompt Caching",
+  "slug": "prompt-caching",
+  "public": true,
+  "classIri": "urn:ngm:class:prompt-caching",
+  "domain": "artificial-intelligence",
+  "definition": "Prompt caching is an inference optimisation in which the key-value attention state for a shared, unchanging prefix of a prompt -- such as a system prompt or long context document -- is computed once and reused across subsequent requests, avoiding redundant computation. It reduces latency and cost for workloads that repeatedly send the same long context with only a short suffix varying between calls. It builds directly on KV cache mechanisms and is a common lever in context engineering for large language model applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:caching",
+      "label": "Caching"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:context-engineering",
+        "label": "Context Engineering"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:kv-cache",
+        "label": "KV Cache"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:caching",
+        "label": "Caching"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    }
+  ]
+}

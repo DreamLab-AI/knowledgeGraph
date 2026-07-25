@@ -1,4 +1,0 @@
-- ### Definition
-  - A push notification is a server-initiated message delivered to clients without polling, enabling real-time alerts. It is required by [[Presence Indicator]] systems and frequently integrated with an [[Identity Provider]] to target authenticated users.
-- ### Content
-  - Delivery typically flows through platform services (APNs, FCM, Web Push) or persistent WebSocket/SSE channels. Key design concerns include token registration, delivery guarantees, throttling, and privacy of notification payloads, which may be encrypted end-to-end to prevent intermediaries from reading content.

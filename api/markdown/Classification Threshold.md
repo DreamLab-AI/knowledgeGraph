@@ -24,41 +24,104 @@ public:: true
   "definition": "A Classification Threshold is a decision boundary applied to the probabilistic output of a classifier to assign discrete class labels. By default set at 0.5 for binary classification, the threshold can be adjusted to trade off precision against recall, or sensitivity against specificity, depending on application requirements. Threshold selection is a critical model calibration step that directly affects downstream decision quality and fairness properties.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "dependsOn": [
-      {"@id": "urn:ngm:class:classifier", "label": "Classifier"},
-      {"@id": "urn:ngm:class:probability-calibration", "label": "Probability Calibration"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"}
+      {
+        "@id": "urn:ngm:class:classifier",
+        "label": "Classifier"
+      },
+      {
+        "@id": "urn:ngm:class:probability-calibration",
+        "label": "Probability Calibration"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:roc-curve", "label": "ROC Curve"},
-      {"@id": "urn:ngm:class:precision-recall-curve", "label": "Precision-Recall Curve"}
+      {
+        "@id": "urn:ngm:class:roc-curve",
+        "label": "ROC Curve"
+      },
+      {
+        "@id": "urn:ngm:class:precision-recall-curve",
+        "label": "Precision-Recall Curve"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:binary-classification", "label": "Binary Classification"},
-      {"@id": "urn:ngm:class:confusion-matrix", "label": "Confusion Matrix"},
-      {"@id": "urn:ngm:class:f1-score", "label": "F1 Score"}
+      {
+        "@id": "urn:ngm:class:binary-classification",
+        "label": "Binary Classification"
+      },
+      {
+        "@id": "urn:ngm:class:confusion-matrix",
+        "label": "Confusion Matrix"
+      },
+      {
+        "@id": "urn:ngm:class:f1-score",
+        "label": "F1 Score"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:decision-system", "label": "Decision System"},
-      {"@id": "urn:ngm:class:risk-management", "label": "Risk Management"}
+      {
+        "@id": "urn:ngm:class:decision-system",
+        "label": "Decision System"
+      },
+      {
+        "@id": "urn:ngm:class:risk-management",
+        "label": "Risk Management"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:supervised-learning", "label": "Supervised Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:supervised-learning",
+        "label": "Supervised Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:regression", "label": "Regression"},
-      {"@id": "urn:ngm:class:hard-label", "label": "Hard Label"}
+      {
+        "@id": "urn:ngm:class:regression",
+        "label": "Regression"
+      },
+      {
+        "@id": "urn:ngm:class:hard-label",
+        "label": "Hard Label"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:ai-fairness", "label": "AI Fairness"},
-      {"@id": "urn:ngm:class:ai-governance", "label": "AI Governance"}
+      {
+        "@id": "urn:ngm:class:ai-fairness",
+        "label": "AI Fairness"
+      },
+      {
+        "@id": "urn:ngm:class:ai-governance",
+        "label": "AI Governance"
+      }
     ],
     "relatedTo_2": [
-      {"@id": "urn:ngm:class:anomaly-detection", "label": "Anomaly Detection"},
-      {"@id": "urn:ngm:class:fraud-detection", "label": "Fraud Detection"}
+      {
+        "@id": "urn:ngm:class:anomaly-detection",
+        "label": "Anomaly Detection"
+      },
+      {
+        "@id": "urn:ngm:class:fraud-detection",
+        "label": "Fraud Detection"
+      }
     ]
   },
   "quality": 0.62,

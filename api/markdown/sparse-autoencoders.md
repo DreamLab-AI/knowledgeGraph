@@ -1,4 +1,0 @@
-- ### Definition
-  - Sparse autoencoders are [[Neural Network]] models that reconstruct inputs through an over-complete hidden layer with a sparsity constraint, so only few latent units fire per input, yielding interpretable features.
-- ### Content
-  - Applied to the internal activations of large language models, they disentangle dense polysemantic representations into more monosemantic features that map onto human-understandable concepts. This makes them a central technique in [[Safety and Alignment]] research, where understanding and steering a model's internal representations is a prerequisite for reliable oversight and intervention.

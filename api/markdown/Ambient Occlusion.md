@@ -48,8 +48,8 @@ public:: true
         "label": "Hemisphere Sampling"
       },
       {
-        "@id": "urn:ngm:class:gpu-shader",
-        "label": "GPU Shader"
+        "@id": "urn:ngm:class:shader",
+        "label": "Shader"
       }
     ],
     "enables": [

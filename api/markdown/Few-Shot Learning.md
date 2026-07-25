@@ -58,10 +58,16 @@ public:: true
   "domain": "machine-learning",
   "maturity": "growing",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:machine-learning-discipline",
-    "label": "Machine Learning Discipline"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "requires": [
       {

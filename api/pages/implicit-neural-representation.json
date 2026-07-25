@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",
@@ -33,7 +37,7 @@
         "label": "Novel View Synthesis"
       },
       {
-        "id": "urn:ngm:class:3d-reconstruction",
+        "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       }
     ],

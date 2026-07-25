@@ -1,4 +1,0 @@
-- ### Definition
-  - Crypto trading is the exchange of digital assets to capture price movements across spot, derivative, and algorithmic markets. It is enabled by venues such as [[Kraken]] and by settlement assets like [[Tether]].
-- ### Content
-  - Traders operate on order-book exchanges and automated market makers, using stablecoins as a quote currency and liquidity bridge between volatile assets. The space is characterised by 24/7 markets, high volatility, leverage availability, and significant exposure to exchange counterparty risk, custody practices, and evolving regulation.

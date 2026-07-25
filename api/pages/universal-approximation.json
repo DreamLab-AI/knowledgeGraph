@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:universal-approximation",
+  "title": "Universal Approximation",
+  "slug": "universal-approximation",
+  "public": true,
+  "classIri": "urn:ngm:class:universal-approximation",
+  "domain": "machine-learning",
+  "definition": "Universal approximation refers to the theoretical property, formalised in the universal approximation theorem, that a feedforward neural network with at least one hidden layer of sufficient width and a suitable non-linear activation function can approximate any continuous function on a compact domain to arbitrary precision. It provides the mathematical justification for using neural networks as general-purpose function approximators. The property depends on the activation function being non-polynomial and does not by itself guarantee that such a network can be learned efficiently from data.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:neural-network",
+      "label": "Neural Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    }
+  ]
+}

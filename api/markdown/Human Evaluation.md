@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:model-evaluation",
       "label": "Model Evaluation"
+    },
+    {
+      "@id": "urn:ngm:class:ai-evaluation",
+      "label": "AI Evaluation"
     }
   ],
   "relations": {

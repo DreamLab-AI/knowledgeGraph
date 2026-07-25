@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:ssim-loss",
+  "title": "SSIM Loss",
+  "slug": "ssim-loss",
+  "public": true,
+  "classIri": "urn:ngm:class:ssim-loss",
+  "domain": "spatial-computing",
+  "definition": "SSIM loss is a training objective derived from the Structural Similarity Index that penalises differences in luminance, contrast, and structure between a rendered or reconstructed image and its target, typically computed as one minus the SSIM score. It is used alongside or instead of pixel-wise losses such as L1 or L2 because it better reflects perceptual image quality. SSIM loss is a common component of the optimisation objective in 3D Gaussian Splatting and other differentiable rendering pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:loss-function",
+      "label": "Loss Function"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    }
+  ]
+}

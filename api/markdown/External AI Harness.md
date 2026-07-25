@@ -104,7 +104,7 @@ public:: true
     "enables": [
       {"@id": "urn:ngm:class:multi-agent-orchestration", "label": "Multi-Agent Orchestration"},
       {"@id": "urn:ngm:class:ai-agent-coordination", "label": "AI Agent Coordination"},
-      {"@id": "urn:ngm:class:autonomous-agents", "label": "Autonomous Agents"},
+      {"@id": "urn:ngm:class:autonomous-agent", "label": "Autonomous Agent"},
       {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
       {"@id": "urn:ngm:class:model-versioning", "label": "Model Versioning"},
       {"@id": "urn:ngm:class:canary-deployment", "label": "Canary Deployment"}

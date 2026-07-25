@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:high-speed-networking",
+  "title": "High-Speed Networking",
+  "slug": "high-speed-networking",
+  "public": true,
+  "classIri": "urn:ngm:class:high-speed-networking",
+  "domain": "infrastructure",
+  "definition": "High-speed networking refers to interconnect technologies and protocols engineered to sustain very high data-transfer rates, typically tens to hundreds of gigabits per second, with minimal latency, spanning link types such as fibre optics, InfiniBand and high-bandwidth Ethernet. It is a prerequisite wherever large data volumes must move between compute nodes, sensors or accelerators without becoming a system bottleneck. Applications range from ASIC-accelerated pipelines to synchronised multi-camera motion capture rigs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:network-layer",
+      "label": "Network Layer"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:network-layer",
+        "label": "Network Layer"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:network-fabric",
+        "label": "Network Fabric"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    }
+  ]
+}

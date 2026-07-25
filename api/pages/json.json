@@ -1,52 +1,33 @@
 {
-  "id": "urn:visionflow:page:ea91b9bc96df05281051ab901705227f7550e6087e4a3c9913e8a399c3ec9b55",
-  "title": "json",
+  "id": "urn:visionflow:page:json",
+  "title": "JSON",
   "slug": "json",
   "public": true,
   "classIri": "urn:ngm:class:json",
   "domain": "infrastructure",
-  "definition": "JSON (JavaScript Object Notation) is a lightweight, human-readable data-interchange format derived from JavaScript object syntax. It provides a universal text-based representation for structured data using key-value pairs and ordered lists, serving as the predominant wire format for REST APIs, configuration files, and data-exchange layers in modern distributed systems and AI pipelines.",
+  "definition": "JSON, JavaScript Object Notation, is a lightweight, text-based data format for representing structured data as nested objects, arrays and primitive values, defined by ECMA-404 and RFC 8259. Its syntax is a strict subset of JavaScript object literal notation, making it directly parseable in browsers while remaining language-independent, with parsers available in essentially every programming language. It is the dominant format for web API payloads, configuration files and document-oriented data storage.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infra-data-management",
-      "label": "Data Management"
+      "id": "urn:ngm:class:data-format",
+      "label": "Data Format"
     }
   ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "emerging",
+  "qualityScore": 0.5,
+  "maturity": "draft",
   "relationships": {
     "hasPart": [],
     "requires": [],
-    "enables": [
-      {
-        "id": "urn:ngm:class:json-ld",
-        "label": "JSON-LD"
-      },
-      {
-        "id": "urn:ngm:class:knowledge-graph",
-        "label": "Knowledge Graph"
-      }
-    ],
+    "enables": [],
     "dependsOn": [],
     "implements": [],
     "contrastsWith": [],
     "bridgesTo": [],
-    "uses": [
-      {
-        "id": "urn:ngm:class:api-standard",
-        "label": "API Standard"
-      }
-    ],
+    "uses": [],
     "supports": [],
     "standardizedBy": [],
     "partOf": [],
-    "relatedTo": [
-      {
-        "id": "urn:ngm:class:ontology",
-        "label": "Ontology"
-      }
-    ]
+    "relatedTo": []
   },
   "wikilinks": [],
   "backlinks": [

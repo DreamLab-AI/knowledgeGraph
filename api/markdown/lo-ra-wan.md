@@ -1,4 +1,0 @@
-- ### Definition
-  - LoRaWAN is a low-power wide-area MAC protocol over the LoRa physical layer; it is implemented by an [[IoT Sensor Network]] and used by applications such as [[Cold Chain Monitoring]] for long-range telemetry.
-- ### Content
-  - Devices operate in classes A, B, and C that trade downlink latency against power consumption, and an adaptive data-rate scheme balances range, airtime, and battery life. Star-of-stars topology routes traffic through gateways to a network server that handles deduplication, security, and application delivery.

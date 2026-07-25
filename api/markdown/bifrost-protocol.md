@@ -1,4 +1,0 @@
-- ### Definition
-  - Bifrost is the transport and interoperability layer used by [[RGB and Client-Side Validation]] to exchange off-chain contract state between participants.
-- ### Content
-  - Because RGB keeps smart-contract state off the Bitcoin chain and validates it client-side, peers must reliably share consignments and proofs. Bifrost provides this communication layer, enabling private, scalable asset issuance anchored to Bitcoin UTXOs without bloating the base chain.

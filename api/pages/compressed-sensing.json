@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:compressed-sensing",
+  "title": "Compressed Sensing",
+  "slug": "compressed-sensing",
+  "public": true,
+  "classIri": "urn:ngm:class:compressed-sensing",
+  "domain": "machine-learning",
+  "definition": "Compressed sensing is a signal processing technique that reconstructs a signal from far fewer samples than classical sampling theory requires, exploiting the fact that many real-world signals are sparse in some basis. Reconstruction is typically posed as a convex optimisation problem that recovers the sparsest signal consistent with the observed measurements. It has applications in medical imaging, wireless communications and any domain where sampling is costly or constrained.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sparse-representation",
+      "label": "Sparse Representation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:convex-optimisation",
+        "label": "Convex Optimisation"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    }
+  ]
+}

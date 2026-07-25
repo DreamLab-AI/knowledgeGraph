@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:tron-blockchain",
+  "title": "Tron Blockchain",
+  "slug": "tron-blockchain",
+  "public": true,
+  "classIri": "urn:ngm:class:tron-blockchain",
+  "domain": "blockchain",
+  "definition": "Tron is a public, high-throughput layer-1 blockchain launched in 2018 that uses a delegated proof-of-stake consensus mechanism to achieve low transaction fees and fast block times, positioning itself as an alternative settlement layer for content and payments. It has become one of the largest hosts of USD-pegged stablecoin transfers, particularly Tether (USDT), owing to its low fees relative to Ethereum. Its EVM-compatible virtual machine allows Ethereum smart contracts to be ported to the network with minimal modification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:layer-1-blockchain",
+      "label": "Layer 1 Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:tether",
+        "label": "Tether"
+      },
+      {
+        "id": "urn:ngm:class:usdt",
+        "label": "USDT"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:layer-1-blockchain",
+        "label": "Layer 1 Blockchain"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

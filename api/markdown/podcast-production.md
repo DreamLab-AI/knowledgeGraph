@@ -1,4 +1,0 @@
-- ### Definition
-  - Podcast production covers the workflow of recording, editing, and distributing episodic audio. It is enabled by [[Speech and Voice]] technologies and supported by [[Music and Audio]] generation and processing tools.
-- ### Content
-  - Modern production pipelines combine automatic speech recognition for transcripts and captions, generative voice synthesis for cloning or narration, source separation and denoising for cleanup, and automated mixing. These tools lower the barrier to high production quality and enable accessibility features such as searchable transcripts and multilingual dubbing.

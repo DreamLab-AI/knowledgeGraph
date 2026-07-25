@@ -1,4 +1,0 @@
-- ### Definition
-  - Olympus DAO is a DeFi protocol built around protocol-owned liquidity and a treasury-backed token. It is a reference case for [[Treasury Management]] and [[Tokenomics Governance]].
-- ### Content
-  - Its mechanism combined bonding to acquire reserve assets with high staking yields to incentivise holding, while governance controlled treasury policy. The model demonstrated both the appeal of protocol-owned liquidity and the fragility of reflexive, high-emission token economies, influencing subsequent designs and cautionary analyses of sustainable tokenomics.

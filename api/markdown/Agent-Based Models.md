@@ -81,7 +81,7 @@ public:: true
       { "@id": "urn:ngm:class:feedback-loop", "label": "Feedback Loop" }
     ],
     "partOf": [
-      { "@id": "urn:ngm:class:complex-systems-science", "label": "Complex Systems Science" },
+      { "@id": "urn:ngm:class:complexity-science", "label": "Complexity Science" },
       { "@id": "urn:ngm:class:computational-intelligence", "label": "Computational Intelligence" }
     ],
     "uses": [

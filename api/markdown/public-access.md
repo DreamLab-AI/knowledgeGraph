@@ -1,4 +1,0 @@
-- ### Definition
-  - Public access is the open provision of digital collections and services to general users without restrictive gating. It is a core enabler of [[Digital Curation Platform]] deployments and of cultural-heritage data-management frameworks such as [[ETSI Domain Data Management Cultural Heritage]].
-- ### Content
-  - Implementing public access requires reconciling openness with copyright, licensing, and preservation policy. Practical mechanisms include open APIs, persistent identifiers, IIIF image delivery, and tiered access where sensitive material is restricted while metadata remains discoverable.

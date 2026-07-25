@@ -1,4 +1,0 @@
-- ### Definition
-  - A Channel Factory is a multiparty funding construct on the [[Lightning Network]] that lets a group open and reshuffle many payment channels off-chain from a single shared on-chain UTXO.
-- ### Content
-  - Participants jointly fund a multisig output and use off-chain allocation transactions to create and adjust subchannels, settling on-chain only when the factory disbands or disputes arise. The design lowers per-channel on-chain cost and reduces blockchain load, at the cost of greater coordination and liveness requirements among members.

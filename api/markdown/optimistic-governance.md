@@ -1,4 +1,0 @@
-- ### Definition
-  - Optimistic Governance lets proposals pass by default unless challenged in a dispute window, a [[Decentralized Governance]] pattern that reduces voting overhead for holders of a [[Governance Token]].
-- ### Content
-  - Routine actions execute without an affirmative vote, requiring participation only to veto or contest. Challenges escalate to full votes or arbitration, so the model trades comprehensive upfront scrutiny for lower coordination cost and faster operational throughput.

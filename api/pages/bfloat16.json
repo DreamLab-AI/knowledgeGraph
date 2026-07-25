@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:model-compression",
       "label": "Model Compression"
+    },
+    {
+      "id": "urn:ngm:class:mixed-precision-training",
+      "label": "Mixed Precision Training"
     }
   ],
   "entityType": "Class",

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:self-service-portal",
+  "title": "Self-Service Portal",
+  "slug": "self-service-portal",
+  "public": true,
+  "classIri": "urn:ngm:class:self-service-portal",
+  "domain": "artificial-intelligence",
+  "definition": "A self-service portal is a customer-facing software interface that lets users resolve requests -- account changes, order tracking, troubleshooting -- without contacting a human agent, often backed by AI-driven search, chatbots or workflow automation. It reduces support-team load by handling routine, well-defined requests automatically while escalating complex cases to human agents. Self-service portals are a common deliverable of customer service and customer support automation initiatives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:user-interface",
+      "label": "User Interface"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:user-interface",
+        "label": "User Interface"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

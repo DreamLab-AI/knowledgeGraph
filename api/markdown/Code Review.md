@@ -72,8 +72,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:software-quality-assurance",
-        "label": "Software Quality Assurance"
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
       },
       {
         "@id": "urn:ngm:class:knowledge-sharing",
@@ -197,7 +197,7 @@ public:: true
 ```
 
 - ### Definition
-  - Code review is the systematic, human-led examination of proposed source code changes by one or more peers other than the original author, intended to detect defects, enforce [[Coding Standards]], and disseminate architectural knowledge across a team. It sits at the intersection of [[Software Quality Assurance]], [[Knowledge Sharing]], and [[Collaborative Workflow]], and forms a foundational practice within both [[Software Engineering]] and [[DevOps]] pipelines. Modern code review is most commonly performed asynchronously via [[Pull Request]] mechanisms in [[Version Control]] platforms such as GitHub, GitLab, and Bitbucket, augmented by [[Static Analysis]], linting, and [[Continuous Integration]] automation.
+  - Code review is the systematic, human-led examination of proposed source code changes by one or more peers other than the original author, intended to detect defects, enforce [[Coding Standards]], and disseminate architectural knowledge across a team. It sits at the intersection of [[Quality Assurance]], [[Knowledge Sharing]], and [[Collaborative Workflow]], and forms a foundational practice within both [[Software Engineering]] and [[DevOps]] pipelines. Modern code review is most commonly performed asynchronously via [[Pull Request]] mechanisms in [[Version Control]] platforms such as GitHub, GitLab, and Bitbucket, augmented by [[Static Analysis]], linting, and [[Continuous Integration]] automation.
 
 - ### Overview
   - Code review emerged from formal inspection techniques developed in the 1970s (Fagan inspections) and has since evolved into a lightweight, tool-assisted, asynchronous practice that is near-universal in professional [[Software Development]].
@@ -241,7 +241,7 @@ public:: true
   - requires:: [[Version Control]]
   - requires:: [[Pull Request]]
   - requires:: [[Coding Standards]]
-  - enables:: [[Software Quality Assurance]]
+  - enables:: [[Quality Assurance]]
   - enables:: [[Knowledge Sharing]]
   - enables:: [[Continuous Integration]]
   - enables:: [[Secure Development Lifecycle]]

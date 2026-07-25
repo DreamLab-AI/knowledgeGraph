@@ -1,4 +1,0 @@
-- ### Definition
-  - Interactive visualization presents data and scenes that users can manipulate live to explore and understand them. It draws on the [[3D Model]] as a subject and on [[Real-Time Rendering]] for responsiveness.
-- ### Content
-  - Effective interactive visualization balances rendering throughput with low-latency input handling, using techniques such as level-of-detail, GPU acceleration, and progressive refinement. Applications span scientific data exploration, BIM and CAD review, dashboards, and immersive analytics.

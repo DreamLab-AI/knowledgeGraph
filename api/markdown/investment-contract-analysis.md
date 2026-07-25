@@ -1,4 +1,0 @@
-- ### Definition
-  - Investment contract analysis determines whether an arrangement is a security, chiefly through the [[Howey Test]]. It is a core procedure within [[Securities Regulation]] as applied to token offerings.
-- ### Content
-  - The analysis weighs investment of money, common enterprise, profit expectation, and reliance on the efforts of others. For crypto assets, the degree of decentralisation and the issuer's ongoing role heavily influence the conclusion and the resulting compliance burden.

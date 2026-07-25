@@ -1,4 +1,0 @@
-- ### Definition
-  - A legal system is the institutional apparatus of laws and courts in a jurisdiction; it is the broader whole of which [[Digital Jurisdiction]] and [[Virtual Property Right]] form constituent concerns.
-- ### Content
-  - Differences between common-law precedent and civil-law codification shape how novel digital constructs are litigated. Conflicts of laws and enforcement reach determine whether rights asserted in virtual environments translate into actionable remedies.

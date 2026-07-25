@@ -78,8 +78,7 @@ public:: true
     ],
     "enables": [
       {"@id": "urn:ngm:class:frontier-model-training", "label": "Frontier Model Training"},
-      {"@id": "urn:ngm:class:technological-leadership", "label": "Technological Leadership"},
-      {"@id": "urn:ngm:class:national-security-advantage", "label": "National Security Advantage"}
+      {"@id": "urn:ngm:class:technological-leadership", "label": "Technological Leadership"}
     ],
     "dependsOn": [
       {"@id": "urn:ngm:class:education-and-ai", "label": "Education and AI"},

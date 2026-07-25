@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:private-5g-network",
+  "title": "Private 5G Network",
+  "slug": "private-5g-network",
+  "public": true,
+  "classIri": "urn:ngm:class:private-5g-network",
+  "domain": "infrastructure",
+  "definition": "A private 5G network is a standalone or non-standalone 5G deployment operated within a defined premises, such as a factory, campus or port, using licensed, shared or unlicensed spectrum dedicated to that organisation rather than a public mobile operator. It gives the operator direct control over coverage, latency, security and quality-of-service guarantees, including network slicing tailored to specific industrial applications. It is commonly deployed where deterministic low latency is required, such as in robotics and machine vision.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:5-g-network",
+      "label": "5G Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:network-slicing",
+        "label": "Network Slicing"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

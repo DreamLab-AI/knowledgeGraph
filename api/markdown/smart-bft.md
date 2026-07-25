@@ -1,4 +1,0 @@
-- ### Definition
-  - SMaRT-BFT is a [[Byzantine Fault Tolerance]] [[Consensus Protocol]] derived from the SMaRt state machine replication framework, providing deterministic transaction ordering across a known validator set. It underpins finality in permissioned settings such as [[Consortium Blockchain]] networks.
-- ### Content
-  - The protocol tolerates up to f Byzantine replicas given 3f+1 total nodes, maintaining safety and liveness under partial synchrony. Because validator identity is established in advance, it avoids the energy cost of open-membership consensus and is frequently offered within [[Blockchain as a Service]] platforms where predictable throughput and immediate finality matter more than permissionless participation.

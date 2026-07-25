@@ -1,4 +1,0 @@
-- ### Definition
-  - Enterprise Risk Management is an organisation-wide [[Governance Framework]] for identifying and mitigating risk, related to [[Risk Assessment Methodology]] and operationalised through [[Compliance Control]].
-- ### Content
-  - ERM aggregates disparate risk types into a unified register with clear ownership, tolerance thresholds, and board-level reporting. Standards such as COSO ERM and ISO 31000 codify the process from risk identification through monitoring.

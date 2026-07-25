@@ -107,8 +107,8 @@ public:: true
         "label": "Replay Attack Prevention"
       },
       {
-        "@id": "urn:ngm:class:challenge-response-authentication",
-        "label": "Challenge-Response Authentication"
+        "@id": "urn:ngm:class:challenge-response-protocol",
+        "label": "Challenge-Response Protocol"
       },
       {
         "@id": "urn:ngm:class:authenticated-encryption",

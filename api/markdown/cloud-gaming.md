@@ -1,4 +1,0 @@
-- ### Definition
-  - Cloud Gaming renders games on server GPUs and streams them as video to thin clients, relying on [[Bandwidth Adaptation]] to sustain quality and interactivity across variable networks.
-- ### Content
-  - End-to-end latency budgets span input capture, server render, encode, network transit, and client decode, with adaptive bitrate streaming trading visual fidelity against congestion. Edge data centres and hardware video encoders are deployed to keep round-trip latency within the tens-of-milliseconds range players tolerate.

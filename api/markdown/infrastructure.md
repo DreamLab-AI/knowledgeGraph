@@ -1,2 +1,0 @@
-- ### Definition
-  - The **Infrastructure** domain is one of the six top-level roots of the NarrativeGoldmine ontology. It groups the foundational systems — compute, networking, storage, data management, security and identity, legal/regulatory, and software engineering — that all other domains depend upon.

@@ -1176,8 +1176,8 @@ public:: true
         "label": "Personal Information Protection Law"
       },
       {
-        "@id": "urn:ngm:class:security-assessment",
-        "label": "Security Assessment"
+        "@id": "urn:ngm:class:security-audit",
+        "label": "Security Audit"
       },
       {
         "@id": "urn:ngm:class:transparency-obligation",
@@ -2412,7 +2412,7 @@ public:: true
       "kind": "StubLink"
     },
     {
-      "raw": "[[Security Assessment]]",
+      "raw": "[[Security Audit]]",
       "resolved": "urn:visionflow:linked:security-assessment",
       "kind": "StubLink"
     },
@@ -2731,7 +2731,7 @@ public:: true
 - ### Relationships
   - is-subclass-of:: [[Regional AI Regulation]], [[AI Governance]], [[Digital Technology Policy]], [[Regulatory Framework]], [[Cross-Border AI Law]]
   - has-part:: [[Interim Measures for Generative AI Services]], [[AI Framework Act]], [[METI AI Guidelines for Business]], [[Model AI Governance Framework]], [[Voluntary AI Safety Standard]], [[Digital Personal Data Protection Act 2023]], [[PCPD AI Model Personal Data Protection Framework]], [[ASEAN AI Governance Guide]], [[AI Verify]], [[IndiaAI Mission]]
-  - requires:: [[Algorithm Filing]], [[Security Assessment]], [[Content Labelling]], [[Risk Management]], [[Personal Information Protection Law]], [[Data Localisation]], [[Transparency Obligation]], [[Human Oversight]]
+  - requires:: [[Algorithm Filing]], [[Security Audit]], [[Content Labelling]], [[Risk Management]], [[Personal Information Protection Law]], [[Data Localisation]], [[Transparency Obligation]], [[Human Oversight]]
   - enables:: [[AI Compliance]], [[Cross-Border AI Cooperation]], [[Frontier Model Evaluation]], [[Algorithmic Accountability]], [[AI Safety Testing]], [[Generative AI Labelling]], [[AI Risk Mitigation]]
   - implements:: [[Hiroshima AI Code of Conduct]], [[Seoul Declaration]], [[Frontier AI Safety Commitments]], [[Bletchley Declaration]], [[OECD AI Principles]], [[G20 AI Principles]]
   - depends-on:: [[Cyberspace Administration of China]], [[Japan AI Safety Institute]], [[Korea AI Safety Institute]], [[IMDA]], [[Department of Industry Science and Resources]], [[MeitY]], [[Personal Information Protection Commission]], [[Office of the Privacy Commissioner Hong Kong]]

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:statistical-learning-theory",
       "label": "Statistical Learning Theory"
+    },
+    {
+      "id": "urn:ngm:class:computational-complexity-theory",
+      "label": "Computational Complexity Theory"
     }
   ],
   "entityType": "Class",

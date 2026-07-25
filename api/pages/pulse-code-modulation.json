@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:pulse-code-modulation",
+  "title": "Pulse-Code Modulation",
+  "slug": "pulse-code-modulation",
+  "public": true,
+  "classIri": "urn:ngm:class:pulse-code-modulation",
+  "domain": "spatial-computing",
+  "definition": "Pulse-code modulation (PCM) is a method for digitally representing sampled analogue signals by periodically measuring amplitude and quantising each sample to a fixed number of bits. It is the baseline uncompressed digital audio format underlying most audio signal processing pipelines and audio systems, from which compressed codecs are derived. Its two key parameters, sample rate and bit depth, jointly determine the fidelity and file size of the represented signal.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:audio-signal-processing",
+      "label": "Audio Signal Processing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "audio-signal-processing",
+      "label": "Audio Signal Processing"
+    }
+  ]
+}

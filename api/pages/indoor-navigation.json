@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
+    },
+    {
+      "id": "urn:ngm:class:environmental-mapping",
+      "label": "Environmental Mapping"
     }
   ],
   "entityType": "Class",

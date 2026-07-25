@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:urban-data-platform",
+  "title": "Urban Data Platform",
+  "slug": "urban-data-platform",
+  "public": true,
+  "classIri": "urn:ngm:class:urban-data-platform",
+  "domain": "infrastructure",
+  "definition": "An urban data platform is a shared digital infrastructure layer that ingests, integrates and exposes data from across a city's sensors, services and administrative systems through common APIs and data models. It underpins city-scale applications such as traffic management, environmental monitoring and citizen services by giving disparate systems a common data substrate rather than isolated silos. Urban data platforms are a foundational requirement for digital twins of society and are deployed by city administrations such as Manchester's.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-infrastructure",
+      "label": "Digital Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:smart-city",
+        "label": "Smart City"
+      },
+      {
+        "id": "urn:ngm:class:digital-twin-of-society-dto-s",
+        "label": "Digital Twin of Society (DToS)"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:digital-infrastructure",
+        "label": "Digital Infrastructure"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    }
+  ]
+}

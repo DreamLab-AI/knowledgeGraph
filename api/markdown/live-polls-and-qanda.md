@@ -1,2 +1,0 @@
-- ### Definition
-  - Interactive real-time features in virtual events that let participants vote on poll questions and submit moderated queries, converting passive audiences into active contributors.

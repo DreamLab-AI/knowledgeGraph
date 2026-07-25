@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:manufacturing-automation",
+      "label": "Manufacturing Automation"
     }
   ],
   "relations": {

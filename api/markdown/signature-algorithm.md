@@ -1,4 +1,0 @@
-- ### Definition
-  - A signature algorithm defines key generation, signing, and verification so that a private-key holder can produce a verifiable, non-repudiable tag over a message. It is the primitive required by [[Digital Signatures]] and by [[Digital Signature Verification]].
-- ### Content
-  - Schemes differ in key size, signature size, speed, and security assumptions: RSA relies on integer factoring, while ECDSA, EdDSA, and Schnorr rely on elliptic-curve discrete logs. Post-quantum candidates such as lattice- and hash-based signatures are being standardised to resist quantum attacks on current discrete-log schemes.

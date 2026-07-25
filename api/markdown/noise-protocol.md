@@ -1,4 +1,0 @@
-- ### Definition
-  - The Noise Protocol is a framework for composing Diffie-Hellman-based secure handshakes. It is related to the [[Signal Protocol]] and is used to secure peer connections in a [[Blockchain Network]].
-- ### Content
-  - Handshake patterns (such as XX, IK, and NK) encode which keys are exchanged and authenticated, yielding a transport channel with chosen properties. Noise underpins WireGuard, the Lightning Network transport, and WhatsApp, demonstrating its appeal for systems that need analysable, low-overhead encrypted channels without the complexity of TLS.

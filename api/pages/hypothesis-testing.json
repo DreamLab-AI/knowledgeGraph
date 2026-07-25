@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:hypothesis-testing",
+  "title": "Hypothesis Testing",
+  "slug": "hypothesis-testing",
+  "public": true,
+  "classIri": "urn:ngm:class:hypothesis-testing",
+  "domain": "machine-learning",
+  "definition": "Hypothesis testing is a statistical inference procedure for deciding, on the basis of sample data, whether to reject a null hypothesis in favour of an alternative, using a test statistic and a pre-specified significance level. It underpins experimental design by providing the formal framework for determining whether an observed effect is unlikely to have arisen by chance. Bayesian decision theory offers an alternative, probability-based framework for the same class of decisions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:statistical-inference",
+      "label": "Statistical Inference"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "artificial-intelligence-research",
+      "label": "Artificial Intelligence Research"
+    },
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "conformal-prediction",
+      "label": "Conformal Prediction"
+    }
+  ]
+}

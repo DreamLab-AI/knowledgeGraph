@@ -1,4 +1,0 @@
-- ### Definition
-  - Raspberry Pi is a low-cost ARM-based single-board computer with GPIO interfacing running Linux. It is supported and commonly required as the host hardware for [[Home Assistant]] home-automation installations.
-- ### Content
-  - With models spanning microcontroller-class (Pico) to multi-core 64-bit boards, the Pi suits edge inference, sensor gateways, and robot controllers. GPIO, I2C, SPI, and camera interfaces enable direct hardware control, while the broad OS and software ecosystem lowers the barrier for self-hosted services and prototyping.

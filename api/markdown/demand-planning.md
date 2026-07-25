@@ -1,4 +1,0 @@
-- ### Definition
-  - Demand planning turns demand estimates into a coordinated plan for inventory, production, and procurement. It is driven by [[Demand Forecasting]] outputs and frequently powered by [[Time-Series Forecasting]] models.
-- ### Content
-  - A demand plan reconciles bottom-up SKU forecasts with top-down financial targets, then feeds sales-and-operations planning. Key trade-offs are service level versus working capital; accuracy depends on data quality, promotion handling, and the ability to sense short-term demand shifts.

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:trust-minimisation",
+  "title": "Trust Minimisation",
+  "slug": "trust-minimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:trust-minimisation",
+  "domain": "distributed-systems",
+  "definition": "Trust minimisation is a design principle for distributed and decentralised systems that aims to reduce the degree to which participants must rely on any single party's honesty or competence for the system to function correctly. It is typically achieved through cryptographic proofs that let one party verify a claim without trusting the claimant, and through decentralised architectures that remove single points of control. It is a foundational goal of blockchain and decentralised web design.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:decentralisation",
+      "label": "Decentralisation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:cryptographic-proofs",
+        "label": "Cryptographic Proofs"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    }
+  ]
+}

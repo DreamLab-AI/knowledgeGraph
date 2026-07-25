@@ -1,4 +1,0 @@
-- ### Definition
-  - Legged robotics studies robots that walk on articulated legs; such platforms depend on actuation hardware like the [[Hydraulic Actuator]] and on the [[Mechanical Component]] subsystems that bear dynamic loads.
-- ### Content
-  - Control stacks combine model-predictive whole-body control with contact scheduling to maintain balance during dynamic gaits. Recent commercial quadrupeds use electric actuators for efficiency, while heavy-duty and humanoid platforms still leverage hydraulics for high force density.

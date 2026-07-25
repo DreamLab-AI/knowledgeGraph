@@ -1,4 +1,0 @@
-- ### Definition
-  - Avionics comprises the safety-critical electronic systems aboard aircraft, a domain where [[Real-Time]] deterministic computing is mandatory.
-- ### Content
-  - Modern avionics use integrated modular architectures with partitioned real-time operating systems to isolate functions of differing criticality. Rigorous verification, redundancy, and certification regimes ensure that flight-control, navigation, and monitoring subsystems meet their timing and reliability guarantees.

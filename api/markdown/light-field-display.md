@@ -1,2 +1,0 @@
-- ### Definition
-  - An output device that reproduces the full four-dimensional light field of a scene to deliver glasses-free, multi-viewer holographic imagery with correct depth and parallax cues.

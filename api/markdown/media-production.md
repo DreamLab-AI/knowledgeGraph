@@ -1,4 +1,0 @@
-- ### Definition
-  - Media production covers the full creation of audiovisual content from planning through post-production. It is realised through a [[Content Creation Pipeline]] and is increasingly supported by [[Speech and Voice]] synthesis tools.
-- ### Content
-  - Modern production blends traditional capture with virtual sets, real-time rendering, and AI-assisted editing, asset generation, and localisation. The shift compresses timelines and lowers cost barriers, while raising provenance, rights, and quality-control concerns around synthetic media.

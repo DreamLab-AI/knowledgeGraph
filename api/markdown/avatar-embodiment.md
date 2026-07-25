@@ -1,2 +1,0 @@
-- ### Definition
-  - The psychological and technical phenomenon in which a user perceives a digital avatar as an extension of their own body, enabling expressive social presence in virtual collaboration environments.

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:alignment-techniques",
+  "title": "Alignment Techniques",
+  "slug": "alignment-techniques",
+  "public": true,
+  "classIri": "urn:ngm:class:alignment-techniques",
+  "domain": "artificial-intelligence",
+  "definition": "Alignment techniques are the methods used to make an AI system's behaviour conform to intended human goals, values, and constraints, particularly as capability increases. They include reinforcement learning from human feedback, constitutional methods, red-teaming, and interpretability-informed fine-tuning. Alignment techniques are a core requirement for building trustworthy conversational AI systems and are considered essential on the path toward artificial general intelligence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-alignment",
+      "label": "AI Alignment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agi-timelines",
+      "label": "AGI Timelines"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:b-tree-index",
+  "title": "B-Tree Index",
+  "slug": "b-tree-index",
+  "public": true,
+  "classIri": "urn:ngm:class:b-tree-index",
+  "domain": "infrastructure",
+  "definition": "A B-tree index is a self-balancing tree data structure used by database engines to maintain sorted data and support efficient logarithmic-time lookups, range scans, insertions, and deletions. Each node holds multiple sorted keys and child pointers, keeping the tree shallow and minimising disk reads relative to a binary tree. It is the default index structure in relational database systems such as PostgreSQL for primary keys and most secondary indexes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-structure",
+      "label": "Data Structure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

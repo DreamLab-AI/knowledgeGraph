@@ -62,7 +62,7 @@
     ],
     "contrastsWith": [
       {
-        "id": "urn:ngm:class:websocket",
+        "id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       },
       {
@@ -96,7 +96,7 @@
     ],
     "supports": [
       {
-        "id": "urn:ngm:class:websocket",
+        "id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       },
       {

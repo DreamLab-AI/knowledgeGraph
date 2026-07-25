@@ -1,4 +1,0 @@
-- ### Definition
-  - The Open AI Chat Completions API defines a message-based request/response schema for prompting language models, now treated as a de facto interface standard by many [[Open Generative AI Tools]] and inference servers.
-- ### Content
-  - The schema supports multi-turn role-tagged messages, function/tool calling, and token streaming. Because numerous self-hosted and commercial backends implement the same shape, it provides backend portability and has effectively standardized how applications integrate with chat-oriented LLMs.

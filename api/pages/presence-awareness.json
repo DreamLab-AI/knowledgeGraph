@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:presence-awareness",
+  "title": "Presence Awareness",
+  "slug": "presence-awareness",
+  "public": true,
+  "classIri": "urn:ngm:class:presence-awareness",
+  "domain": "distributed-collaboration",
+  "definition": "Presence awareness is the capability of a collaborative system to track and surface which users are currently active in a shared space or document, along with lightweight state such as their cursor position, selection or focus. It is a foundational building block for real-time collaborative editing, allowing participants to see who else is present and where their attention is directed. Systems typically implement it as a low-latency, frequently updated channel separate from the durable document state itself.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:awareness",
+      "label": "Awareness"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

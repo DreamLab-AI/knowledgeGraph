@@ -1,4 +1,0 @@
-- ### Definition
-  - A compression function maps a chaining value and a message block to a shorter fixed-length output, serving as the inner primitive of an iterated [[Hash Function]].
-- ### Content
-  - In Merkle-Damgard and sponge-derived designs the compression function is invoked once per message block, with each output feeding the next invocation as the chaining value. Its resistance to collisions and preimages is what propagates to the security guarantees of the overall hash function.

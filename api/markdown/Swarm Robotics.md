@@ -187,8 +187,8 @@ alias:: SwarmRobotics
         "label": "Collective Intelligence"
       },
       {
-        "@id": "urn:ngm:class:search-and-rescue",
-        "label": "Search and Rescue"
+        "@id": "urn:ngm:class:search-and-rescue-robotics",
+        "label": "Search and Rescue Robotics"
       },
       {
         "@id": "urn:ngm:class:environmental-monitoring",

@@ -24,39 +24,96 @@ public:: true
   "definition": "Error Handling is the set of mechanisms, patterns, and strategies in software and systems design for detecting, reporting, and recovering from anomalous conditions that deviate from expected operation. It encompasses exception mechanisms, error codes, retry logic, circuit breakers, fallback strategies, and graceful degradation. Robust error handling is essential to system reliability, security, and maintainability, and is a prerequisite for fault-tolerant distributed systems.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering (Infrastructure)"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:exception-handling", "label": "Exception Handling"},
-      {"@id": "urn:ngm:class:retry-logic", "label": "Retry Logic"},
-      {"@id": "urn:ngm:class:circuit-breaker", "label": "Circuit Breaker"}
+      {
+        "@id": "urn:ngm:class:exception-handling",
+        "label": "Exception Handling"
+      },
+      {
+        "@id": "urn:ngm:class:retry-logic",
+        "label": "Retry Logic"
+      },
+      {
+        "@id": "urn:ngm:class:circuit-breaker",
+        "label": "Circuit Breaker"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:logging", "label": "Logging"},
-      {"@id": "urn:ngm:class:observability", "label": "Observability"}
+      {
+        "@id": "urn:ngm:class:logging",
+        "label": "Logging"
+      },
+      {
+        "@id": "urn:ngm:class:observability",
+        "label": "Observability"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:fault-tolerance", "label": "Fault Tolerance"},
-      {"@id": "urn:ngm:class:reliability", "label": "Reliability"},
-      {"@id": "urn:ngm:class:security", "label": "Security"}
+      {
+        "@id": "urn:ngm:class:fault-tolerance",
+        "label": "Fault Tolerance"
+      },
+      {
+        "@id": "urn:ngm:class:reliability",
+        "label": "Reliability"
+      },
+      {
+        "@id": "urn:ngm:class:security",
+        "label": "Security"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:graceful-degradation", "label": "Graceful Degradation"},
-      {"@id": "urn:ngm:class:resilience", "label": "Resilience"}
+      {
+        "@id": "urn:ngm:class:graceful-degradation",
+        "label": "Graceful Degradation"
+      },
+      {
+        "@id": "urn:ngm:class:resilience",
+        "label": "Resilience"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:debugging", "label": "Debugging"},
-      {"@id": "urn:ngm:class:testing", "label": "Testing"},
-      {"@id": "urn:ngm:class:software-engineering", "label": "Software Engineering"}
+      {
+        "@id": "urn:ngm:class:debugging",
+        "label": "Debugging"
+      },
+      {
+        "@id": "urn:ngm:class:testing",
+        "label": "Testing"
+      },
+      {
+        "@id": "urn:ngm:class:software-engineering",
+        "label": "Software Engineering"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:programming-language", "label": "Programming Language"}
+      {
+        "@id": "urn:ngm:class:programming-language",
+        "label": "Programming Language"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:happy-path", "label": "Happy Path"}
+      {
+        "@id": "urn:ngm:class:happy-path",
+        "label": "Happy Path"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:distributed-systems", "label": "Distributed Systems"}
+      {
+        "@id": "urn:ngm:class:distributed-systems",
+        "label": "Distributed Systems"
+      }
     ]
   },
   "quality": 0.62,

@@ -1,4 +1,0 @@
-- ### Definition
-  - A radio transceiver integrates transmit and receive RF functions into one device. It is required by an [[IoT Sensor Network]] for connectivity and is used by [[Wireless Radio]] systems as their core hardware element.
-- ### Content
-  - Transceivers handle modulation schemes (FSK, OFDM, LoRa), channel access, and power management, with low-power variants critical for battery-operated IoT endpoints. Integrated system-on-chip transceivers combine RF front-ends with microcontrollers and protocol stacks (BLE, Zigbee, Wi-Fi), reducing board complexity and cost.

@@ -76,64 +76,179 @@
   "definition": "A cognitive architecture is a formal specification of the fixed computational structures, memory systems, and control mechanisms that together constitute a general-purpose intelligent agent, independent of any particular task or domain. It prescribes how perception, attention, memory retrieval, reasoning, learning, and action selection are integrated into a unified processing cycle, providing a theoretical and engineering framework for building systems that exhibit adaptive, goal-directed behaviour. Classical examples include ACT-R (Adaptive Control of Thought–Rational), SOAR, and LIDA; contemporary variants extend these principles to neural-symbolic hybrids, transformer-based agent frameworks, and large language model scaffolding systems. Cognitive architectures serve simultaneously as psychological theories of the human mind and as blueprints for artificial intelligence systems.",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "quality": 0.90,
+  "quality": 0.9,
   "subClassOf": [
     {
       "@id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:working-memory", "label": "Working Memory"},
-      {"@id": "urn:ngm:class:long-term-memory", "label": "Long-Term Memory"},
-      {"@id": "urn:ngm:class:declarative-memory", "label": "Declarative Memory"},
-      {"@id": "urn:ngm:class:procedural-memory", "label": "Procedural Memory"},
-      {"@id": "urn:ngm:class:reasoning", "label": "Reasoning"},
-      {"@id": "urn:ngm:class:planning-and-scheduling", "label": "Planning and Scheduling"},
-      {"@id": "urn:ngm:class:perception", "label": "Perception"},
-      {"@id": "urn:ngm:class:action-selection", "label": "Action Selection"},
-      {"@id": "urn:ngm:class:meta-cognition", "label": "Meta-Cognition"}
+      {
+        "@id": "urn:ngm:class:working-memory",
+        "label": "Working Memory"
+      },
+      {
+        "@id": "urn:ngm:class:long-term-memory",
+        "label": "Long-Term Memory"
+      },
+      {
+        "@id": "urn:ngm:class:declarative-memory",
+        "label": "Declarative Memory"
+      },
+      {
+        "@id": "urn:ngm:class:procedural-memory",
+        "label": "Procedural Memory"
+      },
+      {
+        "@id": "urn:ngm:class:reasoning",
+        "label": "Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:planning-and-scheduling",
+        "label": "Planning and Scheduling"
+      },
+      {
+        "@id": "urn:ngm:class:perception",
+        "label": "Perception"
+      },
+      {
+        "@id": "urn:ngm:class:action-selection",
+        "label": "Action Selection"
+      },
+      {
+        "@id": "urn:ngm:class:meta-cognition",
+        "label": "Meta-Cognition"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:agentic-ai", "label": "Agentic AI"},
-      {"@id": "urn:ngm:class:symbolic-reasoning", "label": "Symbolic Reasoning"},
-      {"@id": "urn:ngm:class:autonomous-agents", "label": "Autonomous Agents"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
-      {"@id": "urn:ngm:class:intelligent-tutoring-systems", "label": "Intelligent Tutoring Systems"},
-      {"@id": "urn:ngm:class:cognitive-modelling", "label": "Cognitive Modelling"}
+      {
+        "@id": "urn:ngm:class:agentic-ai",
+        "label": "Agentic AI"
+      },
+      {
+        "@id": "urn:ngm:class:symbolic-reasoning",
+        "label": "Symbolic Reasoning"
+      },
+      {
+        "@id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
+      },
+      {
+        "@id": "urn:ngm:class:human-computer-interaction",
+        "label": "Human-Computer Interaction"
+      },
+      {
+        "@id": "urn:ngm:class:intelligent-tutoring-systems",
+        "label": "Intelligent Tutoring Systems"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-modelling",
+        "label": "Cognitive Modelling"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:knowledge-representation", "label": "Knowledge Representation"},
-      {"@id": "urn:ngm:class:ontology", "label": "Ontology"},
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:production-rules", "label": "Production Rules"}
+      {
+        "@id": "urn:ngm:class:knowledge-representation",
+        "label": "Knowledge Representation"
+      },
+      {
+        "@id": "urn:ngm:class:ontology",
+        "label": "Ontology"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:production-rules",
+        "label": "Production Rules"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:neural-networks", "label": "Neural Networks"},
-      {"@id": "urn:ngm:class:bayesian-inference", "label": "Bayesian Inference"},
-      {"@id": "urn:ngm:class:reinforcement-learning", "label": "Reinforcement Learning"},
-      {"@id": "urn:ngm:class:probabilistic-graphical-models", "label": "Probabilistic Graphical Models"}
+      {
+        "@id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
+      },
+      {
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
+      },
+      {
+        "@id": "urn:ngm:class:reinforcement-learning",
+        "label": "Reinforcement Learning"
+      },
+      {
+        "@id": "urn:ngm:class:probabilistic-graphical-models",
+        "label": "Probabilistic Graphical Models"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:narrow-ai", "label": "Narrow AI"},
-      {"@id": "urn:ngm:class:task-specific-model", "label": "Task-Specific Model"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"}
+      {
+        "@id": "urn:ngm:class:narrow-ai",
+        "label": "Narrow AI"
+      },
+      {
+        "@id": "urn:ngm:class:task-specific-model",
+        "label": "Task-Specific Model"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:general-intelligence", "label": "General Intelligence"},
-      {"@id": "urn:ngm:class:computational-neuroscience", "label": "Computational Neuroscience"},
-      {"@id": "urn:ngm:class:cognitive-science", "label": "Cognitive Science"},
-      {"@id": "urn:ngm:class:cognitive-psychology", "label": "Cognitive Psychology"},
-      {"@id": "urn:ngm:class:large-language-models", "label": "Large Language Models"},
-      {"@id": "urn:ngm:class:neuro-symbolic-ai", "label": "Neuro-Symbolic AI"},
-      {"@id": "urn:ngm:class:global-workspace-theory", "label": "Global Workspace Theory"},
-      {"@id": "urn:ngm:class:decision-making", "label": "Decision Making"}
+      {
+        "@id": "urn:ngm:class:general-intelligence",
+        "label": "General Intelligence"
+      },
+      {
+        "@id": "urn:ngm:class:computational-neuroscience",
+        "label": "Computational Neuroscience"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-science",
+        "label": "Cognitive Science"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-psychology",
+        "label": "Cognitive Psychology"
+      },
+      {
+        "@id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "@id": "urn:ngm:class:neuro-symbolic-ai",
+        "label": "Neuro-Symbolic AI"
+      },
+      {
+        "@id": "urn:ngm:class:global-workspace-theory",
+        "label": "Global Workspace Theory"
+      },
+      {
+        "@id": "urn:ngm:class:decision-making",
+        "label": "Decision Making"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:robotics", "label": "Robotics"},
-      {"@id": "urn:ngm:class:brain-computer-interface", "label": "Brain-Computer Interface"},
-      {"@id": "urn:ngm:class:multi-agent-systems", "label": "Multi-Agent Systems"}
+      {
+        "@id": "urn:ngm:class:robotics",
+        "label": "Robotics"
+      },
+      {
+        "@id": "urn:ngm:class:brain-computer-interface",
+        "label": "Brain-Computer Interface"
+      },
+      {
+        "@id": "urn:ngm:class:multi-agent-systems",
+        "label": "Multi-Agent Systems"
+      }
     ]
   },
   "sameAs": [

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:pre-deployment-evaluation",
+  "title": "Pre-deployment Evaluation",
+  "slug": "pre-deployment-evaluation",
+  "public": true,
+  "classIri": "urn:ngm:class:pre-deployment-evaluation",
+  "domain": "artificial-intelligence",
+  "definition": "Pre-deployment evaluation is the structured assessment of an AI model's capabilities, limitations, and risks conducted before it is released or deployed into production use. It typically combines capability benchmarking, red-teaming, and safety testing to detect dangerous capabilities, misuse potential, or unexpected behaviour ahead of exposure to real users. Pre-deployment evaluation is a central mechanism of frontier AI governance frameworks, including commitments made at the Bletchley Declaration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-safety",
+      "label": "AI Safety"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:ai-safety",
+        "label": "AI Safety"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    }
+  ]
+}

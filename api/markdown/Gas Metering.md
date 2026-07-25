@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:smart-contract-platform",
       "label": "Smart Contract Platform"
+    },
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
     }
   ],
   "relations": {

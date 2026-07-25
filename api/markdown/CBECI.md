@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:benchmark-evaluation",
       "label": "Benchmark Evaluation"
+    },
+    {
+      "@id": "urn:ngm:class:electricity-consumption",
+      "label": "Electricity Consumption"
     }
   ],
   "relations": {

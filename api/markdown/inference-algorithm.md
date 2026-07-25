@@ -1,4 +1,0 @@
-- ### Definition
-  - An inference algorithm is a procedure for reasoning about hidden quantities given evidence, forming the computational core of a [[Probabilistic Model]]. It computes or approximates posterior distributions and predictions.
-- ### Content
-  - Exact inference is tractable only for restricted model structures, so practitioners rely on approximate methods such as [[Hamiltonian Monte Carlo]] and variational inference for large or continuous state spaces. The choice trades off bias, variance, and computational cost.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Decentralized finance is blockchain-based financial services delivered through smart contracts without intermediaries, with mechanics like [[Impermanent Loss]] and coordination via [[Decentralized Governance]].
-- ### Content
-  - Composable DeFi protocols stack lending, decentralised exchanges and stablecoins so that the output of one becomes the input of another. The model offers open access and transparency but concentrates systemic risk in contract code, oracle integrity and liquidity dynamics.

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",
@@ -82,8 +86,8 @@
         "label": "Symbolic Reasoning"
       },
       {
-        "id": "urn:ngm:class:autonomous-agents",
-        "label": "Autonomous Agents"
+        "id": "urn:ngm:class:autonomous-agent",
+        "label": "Autonomous Agent"
       },
       {
         "id": "urn:ngm:class:human-computer-interaction",
@@ -130,8 +134,8 @@
     ],
     "uses": [
       {
-        "id": "urn:ngm:class:neural-networks",
-        "label": "Neural Networks"
+        "id": "urn:ngm:class:neural-network",
+        "label": "Neural Network"
       },
       {
         "id": "urn:ngm:class:bayesian-inference",

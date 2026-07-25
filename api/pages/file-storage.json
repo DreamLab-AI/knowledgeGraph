@@ -29,8 +29,8 @@
     "requires": [],
     "enables": [
       {
-        "id": "urn:ngm:class:backup",
-        "label": "Backup"
+        "id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
       }
     ],
     "dependsOn": [

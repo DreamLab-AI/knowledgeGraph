@@ -54,6 +54,10 @@ public:: true
     {
       "@id": "urn:ngm:class:collaboration",
       "label": "Collaboration"
+    },
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
     }
   ],
   "relations": {

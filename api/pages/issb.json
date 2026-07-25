@@ -29,8 +29,8 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:disclosure",
-        "label": "Disclosure"
+        "id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
       },
       {
         "id": "urn:ngm:class:financial-materiality",
@@ -73,8 +73,8 @@
     ],
     "standardizedBy": [
       {
-        "id": "urn:ngm:class:disclosure",
-        "label": "Disclosure"
+        "id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
       }
     ],
     "partOf": [

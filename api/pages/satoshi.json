@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:satoshi",
+  "title": "Satoshi",
+  "slug": "satoshi",
+  "public": true,
+  "classIri": "urn:ngm:class:satoshi",
+  "domain": "blockchain",
+  "definition": "A satoshi is the smallest indivisible unit of bitcoin, equal to one hundred-millionth of a single bitcoin, named after Bitcoin's pseudonymous creator Satoshi Nakamoto. It is the base unit against which on-chain protocols such as Ordinals and Inscriptions operate, since each satoshi can be individually tracked and inscribed with arbitrary data. Fee markets, token standards such as BRC-20, and wallet accounting are all ultimately denominated in satoshis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bitcoin",
+      "label": "Bitcoin"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

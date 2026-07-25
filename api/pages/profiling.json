@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:profiling",
+  "title": "Profiling",
+  "slug": "profiling",
+  "public": true,
+  "classIri": "urn:ngm:class:profiling",
+  "domain": "infrastructure",
+  "definition": "Profiling is the measurement of a running program's resource use -- CPU time, memory allocation, I/O and call frequency -- to locate the specific functions or code paths that dominate cost. Profilers sample or instrument execution to produce call graphs and hotspot reports that guide targeted optimisation rather than guesswork. Profiling data feeds compiler optimisation decisions and forms the evidence base behind performance benchmarks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:performance-optimization",
+      "label": "Performance Optimization"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:compiler-optimization",
+        "label": "Compiler Optimization"
+      },
+      {
+        "id": "urn:ngm:class:performance-benchmarks",
+        "label": "Performance Benchmarks"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:performance-optimization",
+        "label": "Performance Optimization"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

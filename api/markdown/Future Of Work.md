@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:artificial-intelligence",
       "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:employment-social-contract-under-automation",
+      "label": "Employment Social Contract Under Automation"
     }
   ],
   "relations": {

@@ -120,8 +120,8 @@ public:: true
         "label": "AI-Augmented Software Engineering"
       },
       {
-        "@id": "urn:ngm:class:software-quality-assurance",
-        "label": "Software Quality Assurance"
+        "@id": "urn:ngm:class:quality-assurance",
+        "label": "Quality Assurance"
       }
     ],
     "dependsOn": [

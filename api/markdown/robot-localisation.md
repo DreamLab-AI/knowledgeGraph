@@ -1,4 +1,0 @@
-- ### Definition
-  - Robot localisation estimates a robot's pose within a known map from noisy data, commonly enabled by a [[Bayes Filter]] or a [[Particle Filter]].
-- ### Content
-  - Filters recursively predict pose from motion and correct it from observations, maintaining a probability distribution that captures uncertainty. Particle filters represent this belief with weighted samples, supporting global localisation and recovery from kidnapping.

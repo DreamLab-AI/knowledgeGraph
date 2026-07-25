@@ -1,4 +1,0 @@
-- ### Definition
-  - Hard money is money whose supply resists expansion, making it suitable as a [[Store of Value]] and exemplified historically by [[Gold]] and digitally by fixed-supply cryptocurrencies.
-- ### Content
-  - The defining property is a high and rising stock-to-flow ratio: existing supply greatly exceeds annual new production, so its purchasing power is shielded from inflation. Proponents argue digital hard money combines gold's scarcity with superior divisibility, portability, and verifiability.

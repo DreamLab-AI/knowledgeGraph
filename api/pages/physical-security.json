@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:physical-security",
+  "title": "Physical Security",
+  "slug": "physical-security",
+  "public": true,
+  "classIri": "urn:ngm:class:physical-security",
+  "domain": "security",
+  "definition": "Physical security comprises the measures \u2014 locks, barriers, surveillance, access control and guarding personnel \u2014 that protect facilities, hardware and people from physical threats such as unauthorised entry, theft, tampering and environmental hazards. It is a foundational control layer that complements cybersecurity: a system with strong network defences remains vulnerable if an attacker can gain physical access to servers or storage media. Physical security is a standard requirement for data centres and for safeguarding cryptographic key material in cold storage.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:security",
+      "label": "Security"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:security",
+        "label": "Security"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

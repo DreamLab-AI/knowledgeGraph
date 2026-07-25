@@ -1,4 +1,0 @@
-- ### Definition
-  - A control law is the rule mapping state and reference to control inputs, instantiated in schemes such as [[Position Control]] and [[Force Control]].
-- ### Content
-  - Common forms include PID, full-state feedback, LQR, sliding-mode, and impedance laws, each trading off robustness, performance, and model dependence. The control law is selected and tuned against stability margins and performance specifications, and is the part of the controller that is analysed for closed-loop guarantees.

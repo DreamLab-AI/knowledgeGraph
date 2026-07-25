@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:free-software",
+  "title": "Free Software",
+  "slug": "free-software",
+  "public": true,
+  "classIri": "urn:ngm:class:free-software",
+  "domain": "distributed-collaboration",
+  "definition": "Free software is software distributed under a licence that guarantees users the freedom to run, study, modify, and redistribute it, as codified by the Free Software Foundation's four essential freedoms. The term is distinct from gratis pricing; a programme is free software because of the rights it grants, not because it costs nothing. Copyleft licences such as the GNU GPL operationalise this by requiring derivative works to be distributed under equivalent terms, distinguishing free software from permissively licensed open-source software.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:open-source-software",
+      "label": "Open Source Software"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-source-software",
+        "label": "Open Source Software"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

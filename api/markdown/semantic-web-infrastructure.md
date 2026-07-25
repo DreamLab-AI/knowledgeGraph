@@ -1,4 +1,0 @@
-- ### Definition
-  - Semantic web infrastructure is the stack of standards and services (RDF, OWL, SPARQL, triple stores) that make linked, machine-readable data possible on the web. It is a structural part of any [[Knowledge Graph]] and of a [[Metaverse Ontology Schema]].
-- ### Content
-  - The layer cake spans URIs and IRIs for identity, RDF for the data model, RDFS and OWL for semantics, and SPARQL for query. Production deployments add triple stores, reasoners, and ontology registries to support federation, inference, and interoperability across organisations.

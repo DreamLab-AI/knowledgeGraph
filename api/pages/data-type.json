@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:data-type",
+  "title": "Data Type",
+  "slug": "data-type",
+  "public": true,
+  "classIri": "urn:ngm:class:data-type",
+  "domain": "data",
+  "definition": "A data type is a classification that specifies which values a piece of data may hold and which operations may be performed on it, such as integer, string, boolean, or array. Type declarations allow compilers, interpreters, and schema validators to catch category errors before or during execution, and inform how data is stored and serialised. Data types are the atomic building blocks from which composite structures such as records and schemas are constructed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:type-system",
+      "label": "Type System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:type-system",
+        "label": "Type System"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

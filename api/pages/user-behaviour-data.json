@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:user-behaviour-data",
+  "title": "User Behaviour Data",
+  "slug": "user-behaviour-data",
+  "public": true,
+  "classIri": "urn:ngm:class:user-behaviour-data",
+  "domain": "machine-learning",
+  "definition": "User behaviour data is the record of actions a user takes while interacting with a system, such as clicks, views, purchases, dwell time and navigation paths. It is collected through logging and instrumentation and forms the primary training signal for collaborative filtering, recommendation and personalisation systems. Its quality and volume directly determine how accurately downstream models can infer user preferences and predict future actions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dataset",
+      "label": "Dataset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "collaborative-filtering",
+      "label": "Collaborative Filtering"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    }
+  ]
+}

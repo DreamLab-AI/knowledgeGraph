@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:probabilistic-robotics",
       "label": "Probabilistic Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
     }
   ],
   "relations": {

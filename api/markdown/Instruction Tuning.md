@@ -45,10 +45,16 @@ public:: true
   "definition": "A fine-tuning technique that trains language models to follow natural language instructions by learning from diverse instruction-response pairs. Instruction tuning enables models to generalise to new tasks described through instructions without task-specific training data, bridging raw language modelling and practical assistive behaviour.",
   "domain": "machine-learning",
   "maturity": "emerging",
-  "subClassOf": {
-    "@id": "urn:ngm:class:fine-tuning",
-    "label": "Fine Tuning"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:fine-tuning",
+      "label": "Fine Tuning"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "requires": [
       {

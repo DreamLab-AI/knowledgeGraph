@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics"
+    },
+    {
+      "id": "urn:ngm:class:navigation-system",
+      "label": "Navigation System"
     }
   ],
   "entityType": "Class",

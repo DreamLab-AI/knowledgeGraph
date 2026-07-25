@@ -24,7 +24,7 @@ public:: true
   "definition": "Spectrum allocation is the regulatory and technical process by which electromagnetic frequency bands are assigned to specific services, operators, or technologies to enable wireless communication without harmful interference. Governments and international bodies define how the radio spectrum is divided, licensed, and managed across uses ranging from mobile broadband and satellite communication to broadcasting and scientific research. Efficient allocation balances competing commercial, public safety, and scientific demands while adapting to evolving technologies such as 5G and millimetre-wave systems.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}, {"@id": "urn:ngm:class:infra-network-and-comms", "label": "Network and Communication"}],
   "relations": {
     "requires": [
       {"@id": "urn:ngm:class:regulatory-framework", "label": "Regulatory Framework"},

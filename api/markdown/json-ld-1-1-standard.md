@@ -1,4 +1,0 @@
-- ### Definition
-  - JSON-LD 1.1 is the W3C standard that lets a [[Linked Data Encoder]] express RDF graphs as JSON, and provides the contextual vocabulary mapping required by a [[Federation Surface]] to exchange interoperable semantic data.
-- ### Content
-  - The 1.1 revision added scoped and nested contexts, type-scoped term definitions, the `@json` datatype and improved framing. By aligning ordinary JSON with the RDF data model, JSON-LD enables search engines, knowledge graphs and decentralized systems to consume structured data without bespoke parsers.

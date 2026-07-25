@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:phishing-resistance",
+  "title": "Phishing Resistance",
+  "slug": "phishing-resistance",
+  "public": true,
+  "classIri": "urn:ngm:class:phishing-resistance",
+  "domain": "security",
+  "definition": "Phishing resistance is a property of an authentication mechanism whereby credentials cannot be captured, replayed, or relayed by an attacker impersonating a legitimate service, because the authentication protocol cryptographically binds the exchange to the origin requesting it. Mechanisms such as FIDO2/WebAuthn and hardware security keys achieve this by verifying the requesting origin as part of the cryptographic challenge, so a spoofed site cannot obtain a usable credential. It is increasingly mandated as a baseline requirement for high-assurance authentication standards.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:authentication",
+      "label": "Authentication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:authentication",
+        "label": "Authentication"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "authentication-standards",
+      "label": "Authentication Standards"
+    }
+  ]
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - The European Parliament is the EU's elected co-legislator, adopting rules that drive [[Compliance Control]] obligations and shape initiatives such as the [[Digital Euro]].
-- ### Content
-  - Together with the Council it amends and enacts EU law spanning finance, data, and AI. Its votes determine the regulatory frameworks, including digital-currency and consumer-protection rules, that organisations across the bloc must comply with.

@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:extended-reality",
       "label": "Extended Reality"
+    },
+    {
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "relations": {

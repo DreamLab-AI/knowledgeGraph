@@ -1,4 +1,0 @@
-- ### Definition
-  - Model parallelism splits one large network's parameters and compute across multiple accelerators that cannot individually hold it. Frameworks like [[DeepSpeed]] implement it atop [[Compute Infrastructure]].
-- ### Content
-  - Tensor parallelism partitions matrix multiplications across devices within a layer, while pipeline parallelism assigns consecutive layers to different devices and overlaps micro-batches to hide bubbles. Communication overhead and load balancing are the central trade-offs, motivating hybrid 3D strategies combining tensor, pipeline, and data parallelism.

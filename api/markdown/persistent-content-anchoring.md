@@ -1,4 +1,0 @@
-- ### Definition
-  - Persistent content anchoring fixes virtual objects to real-world positions that survive across sessions, enabling reliable [[AR Registration]] and stable placement within an [[AR Frame]].
-- ### Content
-  - The system stores a spatial anchor as a feature map plus pose, then relocalises the device against that map to restore the anchor's coordinate frame on later visits. Cloud-hosted anchors extend this across users and devices for shared multiplayer AR, with accuracy depending on lighting, environmental change, and the robustness of visual relocalisation.

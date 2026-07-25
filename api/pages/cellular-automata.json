@@ -1,0 +1,69 @@
+{
+  "id": "urn:visionflow:page:cellular-automata",
+  "title": "Cellular Automata",
+  "slug": "cellular-automata",
+  "public": true,
+  "classIri": "urn:ngm:class:cellular-automata",
+  "domain": "artificial-intelligence",
+  "definition": "A cellular automaton is a discrete computational model consisting of a regular grid of cells, each holding one of a finite set of states, that evolve over discrete time steps according to a fixed local update rule applied uniformly across the grid. The next state of a cell depends only on its current state and the states of a defined neighbourhood, yet iterated application of simple local rules can produce complex, emergent global behaviour. Cellular automata are used to study self-organisation and computational universality, and serve as lightweight simulation substrates for physical, biological and social systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:computational-model",
+      "label": "Computational Model"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:computational-model",
+        "label": "Computational Model"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:complex-adaptive-systems",
+        "label": "Complex Adaptive Systems"
+      },
+      {
+        "id": "urn:ngm:class:agent-based-modelling",
+        "label": "Agent-Based Modelling"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-based-modelling",
+      "label": "Agent-Based Modelling"
+    },
+    {
+      "slug": "agent-based-models",
+      "label": "Agent-Based Models"
+    },
+    {
+      "slug": "complex-adaptive-systems",
+      "label": "Complex Adaptive Systems"
+    },
+    {
+      "slug": "computational-modelling",
+      "label": "Computational Modelling"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    }
+  ]
+}

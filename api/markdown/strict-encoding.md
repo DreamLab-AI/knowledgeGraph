@@ -1,4 +1,0 @@
-- ### Definition
-  - Strict encoding is the deterministic serialisation format underlying [[RGB and Client-Side Validation]], producing one canonical byte sequence per value so that commitments verify identically across parties.
-- ### Content
-  - Determinism is the defining property: every structure maps to exactly one encoding with fixed field order and no padding ambiguity, so two implementations always derive identical hashes. This reproducibility lets RGB clients validate state transitions locally against on-chain commitments without a global consensus over the data itself. Strict encoding is implemented alongside strict types, which define the schemas that the encoder serialises.

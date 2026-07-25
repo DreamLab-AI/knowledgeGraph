@@ -1,2 +1,0 @@
-- ### Definition
-  - Routing is the network function of selecting forwarding paths for data packets between source and destination nodes, governed by protocols and algorithms that optimise for latency, cost, or policy compliance.

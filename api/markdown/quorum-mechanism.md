@@ -1,4 +1,0 @@
-- ### Definition
-  - A quorum mechanism sets the minimum participation needed for a governance vote to pass. It is a constituent part of [[On-Chain Voting]] and is required by [[Delegate Democracy]] models to legitimise outcomes.
-- ### Content
-  - Setting quorum is a balance: too high and proposals stall through voter apathy; too low and a small coalition can push through changes. DAOs experiment with adaptive quorums, conviction voting, and delegation to raise effective participation while preventing both gridlock and minority capture.

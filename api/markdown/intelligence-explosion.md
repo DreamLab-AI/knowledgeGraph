@@ -1,4 +1,0 @@
-- ### Definition
-  - Intelligence explosion is the theorised runaway self-improvement of a recursively self-enhancing AI. It is the mechanism most associated with the [[Singularity]] and contrasts with human-centred [[Intelligence Amplification]].
-- ### Content
-  - The argument holds that once a system can design better successors faster than humans can, capability could compound super-linearly. Critics question the assumptions about recursive returns and resource limits, while the prospect motivates research into corrigibility and alignment.

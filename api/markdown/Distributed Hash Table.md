@@ -60,8 +60,8 @@ public:: true
         "label": "Consistent Hashing"
       },
       {
-        "@id": "urn:ngm:class:network-node",
-        "label": "Network Node"
+        "@id": "urn:ngm:class:node",
+        "label": "Node"
       }
     ],
     "enables": [

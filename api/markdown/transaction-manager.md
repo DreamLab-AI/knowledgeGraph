@@ -1,4 +1,0 @@
-- ### Definition
-  - A component that coordinates atomic, consistent, isolated, and durable execution of operations, governing commit, rollback, and concurrency. It is a core part of the [[Data Layer]] and of engines such as a [[Graph Database]].
-- ### Content
-  - Transaction managers use techniques like write-ahead logging, multiversion concurrency control, and lock managers to preserve correctness under concurrent access. In distributed databases they extend these guarantees across nodes via coordination protocols, balancing strict consistency against availability and latency.

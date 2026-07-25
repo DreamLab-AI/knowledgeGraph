@@ -69,8 +69,8 @@ public:: true
         "label": "Green Bond"
       },
       {
-        "@id": "urn:ngm:class:impact-measurement",
-        "label": "Impact Measurement"
+        "@id": "urn:ngm:class:impact-metrics",
+        "label": "Impact Metrics"
       },
       {
         "@id": "urn:ngm:class:stewardship",

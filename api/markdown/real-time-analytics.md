@@ -1,4 +1,0 @@
-- ### Definition
-  - Real-time analytics processes data as it arrives to deliver low-latency insight. It is required by an [[Adaptive Virtual Experience]] and enabled at the network edge by an [[Edge Computing Node]].
-- ### Content
-  - Implementations use stream processors (Kafka Streams, Flink, materialised views) and in-memory stores to maintain continuously updated aggregates. Pushing computation to edge nodes reduces round-trip latency and bandwidth, supporting closed-loop adaptation in interactive and IoT systems where stale data would degrade responsiveness.

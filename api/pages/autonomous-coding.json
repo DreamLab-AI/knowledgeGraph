@@ -1,0 +1,84 @@
+{
+  "id": "urn:visionflow:page:autonomous-coding",
+  "title": "Autonomous Coding",
+  "slug": "autonomous-coding",
+  "public": true,
+  "classIri": "urn:ngm:class:autonomous-coding",
+  "domain": "ai",
+  "definition": "Autonomous coding is the capability of an AI agent to write, modify, test and debug software with minimal human intervention, planning and executing multi-step coding tasks end to end. It builds on code generation but adds agentic control loops for tool use, self-correction and iterative verification against a goal. It is a core capability enabled by agent frameworks, orchestrators and execution sandboxes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:code-generation",
+      "label": "Code Generation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:code-generation",
+        "label": "Code Generation"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-development-sdks",
+      "label": "Agent Development SDKs"
+    },
+    {
+      "slug": "agent-evaluation-benchmarks",
+      "label": "Agent Evaluation Benchmarks"
+    },
+    {
+      "slug": "agent-execution-sandboxes",
+      "label": "Agent Execution Sandboxes"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agent-orchestrator",
+      "label": "Agent Orchestrator"
+    },
+    {
+      "slug": "agentic-workflow",
+      "label": "Agentic Workflow"
+    },
+    {
+      "slug": "auto-gen",
+      "label": "AutoGen"
+    },
+    {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "harness-configuration-packs",
+      "label": "Harness Configuration Packs"
+    },
+    {
+      "slug": "ide-coding-agents",
+      "label": "IDE Coding Agents"
+    },
+    {
+      "slug": "llm-application-frameworks",
+      "label": "LLM Application Frameworks"
+    }
+  ]
+}

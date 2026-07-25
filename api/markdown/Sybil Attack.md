@@ -96,8 +96,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:pseudonymous-identity",
-        "label": "Pseudonymous Identity"
+        "@id": "urn:ngm:class:pseudonymity",
+        "label": "Pseudonymity"
       },
       {
         "@id": "urn:ngm:class:peer-to-peer-network",

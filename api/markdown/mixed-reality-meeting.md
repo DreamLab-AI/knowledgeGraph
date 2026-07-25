@@ -1,2 +1,0 @@
-- ### Definition
-  - A collaborative session blending physical and virtual elements through mixed reality technology, allowing remote participants to appear as holograms or avatars co-located in the local environment.

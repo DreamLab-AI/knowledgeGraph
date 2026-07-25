@@ -1,4 +1,0 @@
-- ### Definition
-  - A timer measures elapsed time or fires an action after a delay, providing shared countdowns and time-boxing features inside tools such as a [[Collaborative Whiteboard]] and underpinning [[Real-Time]] coordination.
-- ### Content
-  - At the system level a timer is driven by a clock source and either reports elapsed duration or invokes a callback when its deadline is reached, supporting one-shot and periodic modes. In collaborative software, a shared timer is synchronised across clients so every participant sees the same countdown, which is used for facilitation patterns like timed brainstorming and sprint reviews. Reliable behaviour depends on consistent time references and tolerance for clock drift and network latency between participants.

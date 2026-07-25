@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:graphical-model",
       "label": "Graphical Model"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

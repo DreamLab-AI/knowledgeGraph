@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:nft-trading",
+  "title": "NFT Trading",
+  "slug": "nft-trading",
+  "public": true,
+  "classIri": "urn:ngm:class:nft-trading",
+  "domain": "blockchain",
+  "definition": "NFT trading is the buying, selling, and exchanging of non-fungible tokens on blockchain-based marketplaces or peer-to-peer, typically settled through smart contracts that transfer token ownership and payment atomically. Prices are discovered through fixed-price listings, auctions, or offer-based negotiation, and transactions are recorded immutably on-chain. NFT trading depends on supporting infrastructure such as digital marketplaces and self-custody wallets like MetaMask for signing transactions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:digital-asset-trading",
+      "label": "Digital Asset Trading"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-marketplace",
+      "label": "Digital Marketplace"
+    }
+  ]
+}

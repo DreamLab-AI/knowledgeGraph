@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:just-in-time-compilation",
+  "title": "Just-In-Time Compilation",
+  "slug": "just-in-time-compilation",
+  "public": true,
+  "classIri": "urn:ngm:class:just-in-time-compilation",
+  "domain": "infrastructure",
+  "definition": "Just-in-time (JIT) compilation translates code, such as bytecode, an intermediate representation, or a traced computation graph, into native machine code at run time rather than fully ahead of time, allowing the compiler to specialise on the shapes, types and hot paths actually observed during execution. It trades a warm-up compilation cost for the performance of native code plus dynamic optimisation opportunities unavailable to static ahead-of-time compilers. It is used both in general-purpose language runtimes and in machine learning frameworks such as JAX to accelerate numerical computation graphs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:compiler",
+      "label": "Compiler"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:compiler",
+        "label": "Compiler"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "automatic-differentiation",
+      "label": "Automatic Differentiation"
+    }
+  ]
+}

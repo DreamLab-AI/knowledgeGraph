@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:xr-content-delivery",
+  "title": "XR Content Delivery",
+  "slug": "xr-content-delivery",
+  "public": true,
+  "classIri": "urn:ngm:class:xr-content-delivery",
+  "domain": "spatial-computing",
+  "definition": "XR Content Delivery is the distribution of extended-reality assets, including 3D models, textures, spatial audio, and streamed scenes, to headsets and mobile devices with the low latency and high bandwidth that immersive rendering requires. It builds on content-delivery-network infrastructure but adds XR-specific concerns such as adaptive level-of-detail streaming and foveated compression. Reliable delivery is a precondition for responsive, motion-sickness-free XR experiences.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:content-delivery-network",
+      "label": "Content Delivery Network"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "immersive-experience-pipeline",
+      "label": "Immersive Experience Pipeline"
+    }
+  ]
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - High Bandwidth Memory is stacked, interposer-mounted DRAM that is required by modern [[Data Processing Hardware]] and forms a critical part of AI [[Compute Infrastructure]].
-- ### Content
-  - By stacking DRAM dies with through-silicon vias and placing them beside the compute die, HBM achieves bandwidth far above conventional GDDR while improving energy efficiency. It is integral to GPU and AI-accelerator packages, directly determining how large a model's weights and activations can be kept fed at full throughput.

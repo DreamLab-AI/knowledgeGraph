@@ -1,4 +1,0 @@
-- ### Definition
-  - Governance infrastructure is the tooling that lets decentralised organisations make and enforce decisions; it is a component of a [[Cross-Platform Compliance Hub]] and the foundation on which [[DAO Tooling]] is built.
-- ### Content
-  - Typical components include proposal frameworks, token- or reputation-weighted voting, delegation, timelocks, and multisig or contract-based execution of approved actions. It often integrates off-chain signalling for cost-free polling with on-chain settlement for binding outcomes. Robust governance infrastructure must balance participation, security against capture, and the ability to upgrade or pause systems safely.

@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:3d-mapping",
+  "title": "3D Mapping",
+  "slug": "3d-mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:3d-mapping",
+  "domain": "spatial-computing",
+  "definition": "3D mapping is the process of building a spatially coherent three-dimensional representation of an environment from sensor observations, such as camera images, LiDAR scans, or depth data, typically as a robot or capture device moves through the space. It relies on techniques including structure-from-motion and triangulation to recover the geometry of the scene and the trajectory of the sensor simultaneously. 3D mapping outputs, including point clouds, meshes, or occupancy grids, support downstream applications in robotics navigation, spatial computing, and photogrammetry-based 3D reconstruction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:3-d-reconstruction",
+      "label": "3D Reconstruction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

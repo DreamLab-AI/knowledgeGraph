@@ -1,4 +1,0 @@
-- ### Definition
-  - Data portability is the ability to export and reuse one's data across services in open formats, enabled by the [[Decentralised Web]] and protocols such as [[Solid]] to break platform lock-in.
-- ### Content
-  - As a legal right it obliges providers to return personal data in a structured, commonly used format on request. As a technical capability, decentralised storage such as personal data pods lets users grant and revoke application access without surrendering custody of the data.

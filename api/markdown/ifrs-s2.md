@@ -1,4 +1,0 @@
-- ### Definition
-  - IFRS S2 is the ISSB's climate-disclosure standard requiring reporting of climate risks and emissions, extending [[IFRS S1]] and giving structure to climate-focused [[ESG Reporting]].
-- ### Content
-  - It mandates quantitative emissions disclosure including the often-challenging Scope 3 value-chain emissions, plus scenario-based resilience assessment and transition-plan reporting. By codifying the TCFD framework into an auditable standard, IFRS S2 raises the consistency and assurability of corporate climate disclosures.

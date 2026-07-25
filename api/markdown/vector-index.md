@@ -1,4 +1,0 @@
-- ### Definition
-  - A vector index structures embeddings for fast nearest-neighbour lookup, forming a core part of [[Retrieval-Augmented Generation (RAG)]] and [[Semantic Search]].
-- ### Content
-  - Algorithms like HNSW build navigable small-world graphs, while IVF and product quantisation cluster and compress vectors to bound memory and latency. Vector databases expose these indexes with filtering, hybrid search and persistence, serving similarity queries at scale.

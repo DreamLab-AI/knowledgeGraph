@@ -1,4 +1,0 @@
-- ### Definition
-  - Credential storage is the protected persistence of secrets and verifiable credentials at rest for later retrieval and verification. It is a requirement of [[Digital Identity Management]] and underpins reliable [[Digital Identity]] systems.
-- ### Content
-  - Robust storage layers credentials behind encryption, key-management hierarchies, and hardware security modules or secure enclaves, with strict access policies and audit logging. Design trade-offs balance recoverability against breach resistance, and increasingly favour user-held or device-bound storage over centralised credential databases.

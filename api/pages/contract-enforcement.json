@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:contract-enforcement",
+  "title": "Contract Enforcement",
+  "slug": "contract-enforcement",
+  "public": true,
+  "classIri": "urn:ngm:class:contract-enforcement",
+  "domain": "governance",
+  "definition": "Contract enforcement is the set of legal, procedural, and technological mechanisms by which the obligations set out in an agreement are made binding and are upheld when a party fails to perform, ranging from courts and arbitration to automated on-chain execution. Traditional enforcement relies on dispute resolution processes and judicial remedies, whereas digital and blockchain-based approaches encode enforcement logic directly into self-executing code or arbitration protocols. Effective contract enforcement is a precondition for trust in both commercial transactions and decentralised digital agreements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dispute-resolution",
+      "label": "Dispute Resolution"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:dispute-resolution",
+        "label": "Dispute Resolution"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "e-contract-arbitration",
+      "label": "E-Contract Arbitration"
+    }
+  ]
+}

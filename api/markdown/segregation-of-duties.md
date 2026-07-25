@@ -1,4 +1,0 @@
-- ### Definition
-  - Segregation of duties is the control principle of splitting conflicting responsibilities; it is required by and forms part of a [[Compliance Control]] framework.
-- ### Content
-  - Effective implementation maps roles to incompatible function pairs and enforces them through access control, approval workflows, and dual authorisation. Where staffing is limited, compensating controls such as independent review or monitoring substitute, and access certifications periodically detect toxic role combinations.

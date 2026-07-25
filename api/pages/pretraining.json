@@ -19,8 +19,8 @@
     "hasPart": [],
     "requires": [
       {
-        "id": "urn:ngm:class:corpus",
-        "label": "Corpus"
+        "id": "urn:ngm:class:training-corpus",
+        "label": "Training Corpus"
       },
       {
         "id": "urn:ngm:class:unsupervised-learning",

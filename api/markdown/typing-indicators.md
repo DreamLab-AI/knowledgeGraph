@@ -1,2 +1,0 @@
-- ### Definition
-  - Real-time signals indicating that a participant is actively composing a message, conveying conversational presence and facilitating natural turn-taking in distributed chat environments.

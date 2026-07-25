@@ -1,0 +1,49 @@
+{
+  "id": "urn:visionflow:page:urban-planning",
+  "title": "Urban Planning",
+  "slug": "urban-planning",
+  "public": true,
+  "classIri": "urn:ngm:class:urban-planning",
+  "domain": "spatial-computing",
+  "definition": "Urban planning is the discipline concerned with the design, regulation and long-term development of land use, infrastructure and public space within cities and regions. Contemporary practice increasingly draws on geospatial data and digital twins of urban systems to model traffic, utilities, housing and environmental impact before physical intervention. It sits at the intersection of policy, civil engineering and spatial computing tools that visualise and simulate proposed changes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:geospatial-data",
+        "label": "Geospatial Data"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:digital-twin-of-society-dto-s",
+        "label": "Digital Twin of Society (DToS)"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-twin-of-society-dto-s",
+      "label": "Digital Twin of Society (DToS)"
+    }
+  ]
+}

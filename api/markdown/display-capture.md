@@ -1,4 +1,0 @@
-- ### Definition
-  - Display capture grabs the contents of a screen or window as a video stream, typically via getDisplayMedia with explicit user consent. It is the underlying capability for [[Screen Recording]] and a constituent part of [[Screen Sharing]].
-- ### Content
-  - The captured MediaStream can be saved locally (recording) or sent over WebRTC (sharing), with the OS and browser enforcing per-surface permission and privacy indicators. Implementations must handle frame-rate and resolution constraints, audio capture options, and the security risk of exposing sensitive on-screen content.

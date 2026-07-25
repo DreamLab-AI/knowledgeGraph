@@ -1,4 +1,0 @@
-- ### Definition
-  - Environment mapping builds a spatial model of a robot's surroundings from sensor data, producing structures such as the [[Occupancy Grid]] and enabling navigation for a [[Mobile Robot Platform]].
-- ### Content
-  - Mapping fuses lidar, depth, and visual input into occupancy grids, point clouds, or semantic maps. Combined with localisation it forms the SLAM problem and underpins collision-free planning in unknown environments.

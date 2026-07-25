@@ -1,4 +1,0 @@
-- ### Definition
-  - Client-Side Validation Theory holds that parties validate their own state transitions off-chain while the blockchain only orders single-use seals, the paradigm directly implemented by [[RGB and Client-Side Validation]].
-- ### Content
-  - The model separates ordering (provided by the base chain) from validation (performed by clients holding the relevant data and proofs), achieving privacy and scalability because contract data never touches the global ledger. Single-use seals bound to Bitcoin UTXOs prevent double-spends, letting complex asset and contract logic execute without on-chain footprint beyond commitments.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Semantic scene understanding parses a visual environment into labelled, structured representations of objects and their relationships, assigning meaning rather than mere bounding boxes. It underpins [[Mixed Reality]] anchoring and the construction of an [[AR Scene Graph]].
-- ### Content
-  - Pipelines typically combine semantic segmentation, instance segmentation, and depth estimation with relational reasoning to produce a scene graph. In augmented and mixed reality, this enables persistent placement, occlusion handling, and physics-aware interaction between virtual and physical objects.

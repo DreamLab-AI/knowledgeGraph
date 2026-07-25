@@ -1,4 +1,0 @@
-- ### Definition
-  - A data model is an abstract specification of entities, attributes, relationships and constraints in a domain, a foundation for any [[Metadata Standard]] within the [[Data Management Domain]].
-- ### Content
-  - Models progress from conceptual diagrams of business entities, through logical schemas independent of technology, to physical implementations tuned for a specific engine. Choosing relational, hierarchical, graph or document modelling shapes how data is queried, validated and evolved.

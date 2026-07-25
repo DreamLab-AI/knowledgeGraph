@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:non-discrimination",
+  "title": "Non-Discrimination",
+  "slug": "non-discrimination",
+  "public": true,
+  "classIri": "urn:ngm:class:non-discrimination",
+  "domain": "governance",
+  "definition": "Non-discrimination is the principle that individuals should not be treated less favourably on the basis of protected characteristics such as race, gender, age, or disability. In technology governance it is operationalised as a requirement that automated systems, including AI models, avoid producing biased or disparate outcomes across protected groups. Non-discrimination is a core component of human rights frameworks and a frequent target of algorithmic fairness auditing.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:human-rights",
+      "label": "Human Rights"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fairness",
+      "label": "Fairness"
+    }
+  ]
+}

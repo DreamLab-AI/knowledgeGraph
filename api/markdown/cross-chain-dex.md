@@ -1,4 +1,0 @@
-- ### Definition
-  - A cross-chain DEX is a non-custodial exchange that swaps assets across distinct blockchains. It is built on [[Cross-Chain Bridge]] infrastructure and supports broader [[Blockchain Interoperability]].
-- ### Content
-  - Implementations use locked-and-minted bridge assets, hashed time-locked atomic swaps, or shared liquidity routers to settle trades spanning chains. The design must manage bridge security, cross-chain finality differences, and liquidity fragmentation, since each external dependency expands the attack surface relative to a single-chain DEX.

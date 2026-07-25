@@ -1,4 +1,0 @@
-- ### Definition
-  - Lumen is the real-time dynamic global illumination system inside [[Unreal Engine]], producing indirect light and reflections without baked lightmaps. It blends screen-space and distance-field tracing with optional [[Ray Tracing]] hardware acceleration.
-- ### Content
-  - Lumen scales across hardware by selecting software or hardware ray-tracing paths and adjusting trace resolution. It removes the lighting-bake workflow, letting artists move lights and geometry interactively, at the cost of careful performance tuning for high-resolution reflections and large open worlds.

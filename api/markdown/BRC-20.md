@@ -172,8 +172,8 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:bitcoin-ecosystem",
-        "label": "Bitcoin Ecosystem"
+        "@id": "urn:ngm:class:bitcoin",
+        "label": "Bitcoin"
       }
     ]
   },
@@ -287,7 +287,7 @@ public:: true
   - relatedTo:: [[Bitcoin Script]]
   - bridges-to:: [[Decentralised Finance]]
   - bridges-to:: [[Tokenisation]]
-  - partOf:: [[Bitcoin Ecosystem]]
+  - partOf:: [[Bitcoin]]
 
 - ### Technical Constraints and Criticisms
   - **No on-chain enforcement** — supply caps and balance rules exist only in indexer software, not in [[Bitcoin Script]] or consensus logic, making BRC-20 token validity a social rather than cryptographic guarantee.

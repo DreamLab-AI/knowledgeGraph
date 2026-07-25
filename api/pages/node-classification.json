@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:node-classification",
+  "title": "Node Classification",
+  "slug": "node-classification",
+  "public": true,
+  "classIri": "urn:ngm:class:node-classification",
+  "domain": "machine-learning",
+  "definition": "Node classification is a graph machine learning task that predicts a categorical label for each vertex in a graph, typically using the graph's structure together with node and edge features. It is commonly solved with graph neural networks, which propagate and aggregate neighbourhood information across message-passing layers to produce per-node predictions. Applications include fraud detection, citation-network labelling and social-network role inference.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:classification",
+      "label": "Classification"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:graph-neural-network",
+        "label": "Graph Neural Network"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,4 +1,0 @@
-- ### Definition
-  - A semantic network represents concepts and typed relationships as a graph; it is used by [[Cognitive AI]] and is a constituent structure within the [[Knowledge Representation Domain]].
-- ### Content
-  - By encoding inheritance and associative links, semantic networks enable inference such as property propagation and spreading activation. They are the conceptual ancestor of modern knowledge graphs and description-logic ontologies, balancing expressiveness against tractable reasoning.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Goal specification expresses an agent's intended outcomes in a machine-evaluable form; it is required by [[Task Planning]] to define the objective and by an [[Autonomous Agent]] to know when its task is complete.
-- ### Content
-  - Goals may be stated as logical conditions over states, as numeric objectives or reward functions, or as natural-language instructions that an LLM grounds into actionable subgoals. Ambiguous or underspecified goals lead to reward hacking, specification gaming, and unintended behaviour, making precise specification a safety concern. Hierarchical decomposition turns a top-level goal into ordered subgoals that planners can satisfy incrementally.

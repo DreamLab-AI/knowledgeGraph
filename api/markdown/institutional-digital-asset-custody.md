@@ -1,4 +1,0 @@
-- ### Definition
-  - Institutional digital asset custody is the regulated, audited safekeeping of crypto assets for large entities. It is supported by [[Multi-Sig Governance]] and broader [[Custody Infrastructure]].
-- ### Content
-  - Providers use cold storage, HSMs, and MPC or multi-signature schemes to distribute signing authority and eliminate single points of failure. Compliance reporting, insurance, and segregated accounts make custody suitable for regulated capital and qualified-custodian requirements.

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:portfolio-optimisation",
+  "title": "Portfolio Optimisation",
+  "slug": "portfolio-optimisation",
+  "public": true,
+  "classIri": "urn:ngm:class:portfolio-optimisation",
+  "domain": "finance",
+  "definition": "Portfolio optimisation is the quantitative process of selecting asset weights within an investment portfolio to achieve an objective, most commonly maximising expected return for a given level of risk, using tools such as convex optimisation over a covariance matrix of asset returns. Modern portfolio theory, originating with Markowitz, formalised this as a mean-variance optimisation problem. Practical implementations extend the basic formulation with constraints on turnover, sector exposure and transaction costs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:quantitative-finance",
+      "label": "Quantitative Finance"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "convex-optimisation",
+      "label": "Convex Optimisation"
+    },
+    {
+      "slug": "covariance-matrix",
+      "label": "Covariance Matrix"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:peer-to-peer-energy-trading",
+  "title": "Peer-to-Peer Energy Trading",
+  "slug": "peer-to-peer-energy-trading",
+  "public": true,
+  "classIri": "urn:ngm:class:peer-to-peer-energy-trading",
+  "domain": "infrastructure",
+  "definition": "Peer-to-peer energy trading is a model in which prosumers, households or businesses that generate their own renewable energy, buy and sell surplus electricity directly with one another over a local distribution network, without a centralised utility as intermediary. Transactions are typically coordinated through smart grid infrastructure and settled using blockchain-based platforms that record generation, consumption, and payment automatically. Peer-to-peer energy trading is closely linked to renewable energy certificates, which provide verifiable proof of the source and attributes of the traded energy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:smart-grid",
+      "label": "Smart Grid"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "renewable-energy-certificates",
+      "label": "Renewable Energy Certificates"
+    }
+  ]
+}

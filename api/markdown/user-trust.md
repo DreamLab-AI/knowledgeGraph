@@ -1,4 +1,0 @@
-- ### Definition
-  - User trust is the confidence users place in a system's integrity and stewardship of their data, fostered by tools like a [[Privacy Impact Assessment (PIA)]] and strong [[Data Protection]].
-- ### Content
-  - Trust is earned through transparent data practices, robust security, clear consent, and consistent, explainable behaviour. It functions as a leading indicator of adoption and retention, and its breach through misuse or breaches can cause lasting reputational harm.

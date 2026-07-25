@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:classification-evaluation",
+  "title": "Classification Evaluation",
+  "slug": "classification-evaluation",
+  "public": true,
+  "classIri": "urn:ngm:class:classification-evaluation",
+  "domain": "machine-learning",
+  "definition": "Classification evaluation is the set of methods used to quantify how well a classifier's predicted labels match ground-truth labels, typically summarised through metrics derived from a confusion matrix such as precision, recall, and F1 score. It distinguishes between overall accuracy, which can be misleading under class imbalance, and per-class metrics that expose asymmetric error costs. Classification evaluation guides model selection, threshold tuning, and reporting of deployed classifier performance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:evaluation-metric",
+      "label": "Evaluation Metric"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:evaluation-metric",
+        "label": "Evaluation Metric"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:utility-function",
+  "title": "Utility Function",
+  "slug": "utility-function",
+  "public": true,
+  "classIri": "urn:ngm:class:utility-function",
+  "domain": "ai",
+  "definition": "A utility function is a mathematical mapping from outcomes or states to a real-valued measure of preference, used to formalise an agent's goals so that decisions can be compared and optimised. In game theory and reinforcement learning it provides the quantity an agent seeks to maximise, underpinning concepts such as expected utility and reward. Utility functions are a core construction of utility theory, applied to model rational choice under uncertainty in both single-agent and multi-agent systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:utility-theory",
+      "label": "Utility Theory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayesian-decision-theory",
+      "label": "Bayesian Decision Theory"
+    },
+    {
+      "slug": "cost-function",
+      "label": "cost function"
+    }
+  ]
+}

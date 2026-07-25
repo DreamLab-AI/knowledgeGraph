@@ -1,4 +1,0 @@
-- ### Definition
-  - A likelihood function scores how well parameters explain observed data; it is a required component of a [[Particle Filter]]'s measurement update and a core element of any [[Probabilistic Model]].
-- ### Content
-  - In a particle filter the likelihood weights each particle by the probability of the current observation given that particle's predicted state, driving resampling toward plausible hypotheses. Maximising the likelihood, or combining it with a prior via Bayes' rule, yields parameter and state estimates.

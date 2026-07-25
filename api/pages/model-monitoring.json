@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:mlops",
       "label": "MLOps"
+    },
+    {
+      "id": "urn:ngm:class:data-drift",
+      "label": "Data Drift"
     }
   ],
   "entityType": "Class",

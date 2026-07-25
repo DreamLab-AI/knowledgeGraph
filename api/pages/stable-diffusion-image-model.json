@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:diffusion-model",
       "label": "Diffusion Model"
+    },
+    {
+      "id": "urn:ngm:class:text-to-image",
+      "label": "Text-to-Image"
     }
   ],
   "entityType": "Class",

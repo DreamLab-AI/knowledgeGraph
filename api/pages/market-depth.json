@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:market-depth",
+  "title": "Market Depth",
+  "slug": "market-depth",
+  "public": true,
+  "classIri": "urn:ngm:class:market-depth",
+  "domain": "finance",
+  "definition": "Market depth is a measure of the volume of buy and sell orders resting at different price levels around the current market price for an asset, indicating how much trading volume a market can absorb before price moves significantly. Greater depth means large orders can be filled with less price impact, and is a direct expression of the liquidity that market makers and liquidity providers supply to a market. Market depth is typically visualised as an order book showing cumulative bid and ask volume by price level.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:liquidity",
+      "label": "Liquidity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.65,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:liquidity",
+        "label": "Liquidity"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

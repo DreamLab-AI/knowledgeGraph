@@ -57,8 +57,8 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:low-latency-inference",
-        "label": "Low-Latency Inference"
+        "@id": "urn:ngm:class:real-time-inference",
+        "label": "Real-Time Inference"
       }
     ],
     "requires": [

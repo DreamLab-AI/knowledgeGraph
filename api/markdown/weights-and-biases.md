@@ -1,4 +1,0 @@
-- ### Definition
-  - Weights & Biases is an experiment-tracking and MLOps platform that logs runs, sweeps, and versioned [[Checkpoints]] to make [[Machine Learning Discipline]] training reproducible and comparable.
-- ### Content
-  - Integration typically requires a few lines of SDK calls to log scalars, media, gradients, and artifacts, after which the hosted UI renders comparison plots, parallel-coordinate sweeps, and lineage graphs. Beyond tracking, W&B offers a model registry and report tooling, positioning it within the broader MLOps stack alongside data-versioning and orchestration systems.

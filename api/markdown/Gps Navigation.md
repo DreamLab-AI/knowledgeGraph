@@ -24,40 +24,106 @@ public:: true
   "definition": "GPS navigation is the use of the Global Positioning System — a satellite-based radio navigation system operated by the United States government — to determine the precise position, velocity, and time of a receiver anywhere on or near Earth. A GPS receiver calculates its location by measuring the time of arrival of signals from at least four satellites and applying trilateration. It is widely used in autonomous robots, vehicles, aircraft, and mobile devices as a primary or complementary localisation sensor.",
   "domain": "robotics",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:robotics", "label": "Robotics"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:navigation-system",
+      "label": "Navigation System"
+    }
+  ],
   "relations": {
     "contrastsWith": [
-      {"@id": "urn:ngm:class:inertial-navigation", "label": "Inertial Navigation"},
-      {"@id": "urn:ngm:class:visual-odometry", "label": "Visual Odometry"},
-      {"@id": "urn:ngm:class:lidar-slam", "label": "Lidar Slam"}
+      {
+        "@id": "urn:ngm:class:inertial-navigation",
+        "label": "Inertial Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:visual-odometry",
+        "label": "Visual Odometry"
+      },
+      {
+        "@id": "urn:ngm:class:lidar-slam",
+        "label": "Lidar Slam"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:satellite-communication", "label": "Satellite Communication"},
-      {"@id": "urn:ngm:class:atomic-clock", "label": "Atomic Clock"},
-      {"@id": "urn:ngm:class:spectrum-allocation", "label": "Spectrum Allocation"}
+      {
+        "@id": "urn:ngm:class:satellite-communication",
+        "label": "Satellite Communication"
+      },
+      {
+        "@id": "urn:ngm:class:atomic-clock",
+        "label": "Atomic Clock"
+      },
+      {
+        "@id": "urn:ngm:class:spectrum-allocation",
+        "label": "Spectrum Allocation"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:autonomous-vehicle", "label": "Autonomous Vehicle"},
-      {"@id": "urn:ngm:class:drone-navigation", "label": "Drone Navigation"},
-      {"@id": "urn:ngm:class:geofencing", "label": "Geofencing"}
+      {
+        "@id": "urn:ngm:class:autonomous-vehicle",
+        "label": "Autonomous Vehicle"
+      },
+      {
+        "@id": "urn:ngm:class:drone-navigation",
+        "label": "Drone Navigation"
+      },
+      {
+        "@id": "urn:ngm:class:geofencing",
+        "label": "Geofencing"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:trilateration", "label": "Trilateration"},
-      {"@id": "urn:ngm:class:kalman-filter", "label": "Kalman Filter"},
-      {"@id": "urn:ngm:class:sensor-fusion", "label": "Sensor Fusion"}
+      {
+        "@id": "urn:ngm:class:trilateration",
+        "label": "Trilateration"
+      },
+      {
+        "@id": "urn:ngm:class:kalman-filter",
+        "label": "Kalman Filter"
+      },
+      {
+        "@id": "urn:ngm:class:sensor-fusion",
+        "label": "Sensor Fusion"
+      }
     ],
     "hasPart": [
-      {"@id": "urn:ngm:class:gnss-receiver", "label": "Gnss Receiver"},
-      {"@id": "urn:ngm:class:satellite-signal", "label": "Satellite Signal"}
+      {
+        "@id": "urn:ngm:class:gnss-receiver",
+        "label": "Gnss Receiver"
+      },
+      {
+        "@id": "urn:ngm:class:satellite-signal",
+        "label": "Satellite Signal"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:robot-localisation", "label": "Robot Localisation"},
-      {"@id": "urn:ngm:class:fleet-management", "label": "Fleet Management"}
+      {
+        "@id": "urn:ngm:class:robot-localisation",
+        "label": "Robot Localisation"
+      },
+      {
+        "@id": "urn:ngm:class:fleet-management",
+        "label": "Fleet Management"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gnss", "label": "Gnss"},
-      {"@id": "urn:ngm:class:dead-reckoning", "label": "Dead Reckoning"},
-      {"@id": "urn:ngm:class:real-time-kinematic", "label": "Real-Time Kinematic"}
+      {
+        "@id": "urn:ngm:class:gnss",
+        "label": "Gnss"
+      },
+      {
+        "@id": "urn:ngm:class:dead-reckoning",
+        "label": "Dead Reckoning"
+      },
+      {
+        "@id": "urn:ngm:class:real-time-kinematic",
+        "label": "Real-Time Kinematic"
+      }
     ]
   },
   "sameAs": [],

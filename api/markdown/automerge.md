@@ -1,2 +1,0 @@
-- ### Definition
-  - Automerge is a CRDT library that automatically merges concurrent JSON document edits across peers by maintaining an append-only operation log, enabling local-first collaborative applications.

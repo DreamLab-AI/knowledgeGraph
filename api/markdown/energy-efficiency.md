@@ -1,4 +1,0 @@
-- ### Definition
-  - Energy efficiency maximises useful output per unit of energy consumed, a defining concern of [[Sustainability]] and a benefit enabled by precise [[Velocity Control]] in motion systems.
-- ### Content
-  - Efficiency gains come from algorithmic optimisation, low-power hardware, and tight control loops that avoid wasted actuation. In robotics, smooth velocity profiles reduce overshoot and braking losses, directly improving the energy-per-task metric.

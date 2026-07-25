@@ -1,4 +1,0 @@
-- ### Definition
-  - Social choice theory is a branch of [[Economics]] that formalises how individual preferences aggregate into collective decisions, characterising the fairness and impossibility limits of voting and welfare aggregation rules.
-- ### Content
-  - Landmark results such as Arrow's impossibility theorem and the Gibbard-Satterthwaite theorem demonstrate fundamental trade-offs in any rank-based aggregation rule. The discipline directly informs [[Governance]] mechanism design, supplying the analytical framework used to evaluate quadratic voting, ranked-choice ballots, and token-weighted on-chain governance for desirable properties and manipulation resistance.

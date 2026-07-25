@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:reactive-systems",
+  "title": "Reactive Systems",
+  "slug": "reactive-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:reactive-systems",
+  "domain": "distributed-systems",
+  "definition": "Reactive systems are software systems designed around asynchronous message passing and event propagation, responding to events as they occur rather than following a fixed, sequential control flow. They are commonly built using an event-driven architecture, in which discrete events drive computation, and the publish-subscribe pattern, which decouples event producers from consumers. This design supports responsiveness, resilience and elasticity under variable load.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:event-driven-architecture",
+      "label": "Event Driven Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:publish-subscribe-pattern",
+        "label": "Publish-Subscribe Pattern"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "event",
+      "label": "Event"
+    }
+  ]
+}

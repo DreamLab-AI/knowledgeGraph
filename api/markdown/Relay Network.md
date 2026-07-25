@@ -27,6 +27,10 @@ public:: true
     {
       "@id": "urn:ngm:class:overlay-network",
       "label": "Overlay Network"
+    },
+    {
+      "@id": "urn:ngm:class:network-component",
+      "label": "Network Component"
     }
   ],
   "relations": {

@@ -1,4 +1,0 @@
-- ### Definition
-  - A Layer 2 Security Council is a multi-signature body that holds privileged emergency powers over a rollup, implemented through [[Multi-Sig Governance]] with signers drawn from independent organisations.
-- ### Content
-  - Security councils are common in optimistic and zero-knowledge rollups during their training-wheels phase. Action thresholds, signer diversity requirements, and time-locked execution are tuned to balance rapid incident response against the risk of governance capture.

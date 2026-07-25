@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:feature-learning",
+  "title": "Feature Learning",
+  "slug": "feature-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:feature-learning",
+  "domain": "machine-learning",
+  "definition": "Feature learning is the automatic discovery of useful representations or features directly from raw data, replacing manual feature engineering with representations learned by a model during training. Non-linear activation functions and layered network architectures such as feed-forward networks are what allow feature learning to build increasingly abstract representations across depth. It is foundational to deep learning's success across vision, language and speech tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:representation-learning",
+      "label": "Representation Learning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:activation-function",
+        "label": "Activation Function"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    }
+  ]
+}

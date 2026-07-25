@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:tamper-evident-storage",
+  "title": "Tamper-Evident Storage",
+  "slug": "tamper-evident-storage",
+  "public": true,
+  "classIri": "urn:ngm:class:tamper-evident-storage",
+  "domain": "security",
+  "definition": "Tamper-evident storage is a data storage architecture designed so that any unauthorised modification of stored records leaves a detectable trace, typically achieved through cryptographic hash chaining, content addressing, or append-only write structures such as a Merkle DAG. It provides the storage-layer implementation of tamper evidence, ensuring that audit logs and other sensitive records can be verified for integrity after the fact rather than merely trusted. Tamper-evident storage is a foundational requirement for audit logs used in regulated or security-critical systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:tamper-evidence",
+      "label": "Tamper Evidence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:blockchain",
       "label": "Blockchain"
+    },
+    {
+      "id": "urn:ngm:class:cryptocurrency",
+      "label": "Cryptocurrency"
     }
   ],
   "entityType": "Class",
@@ -45,8 +49,8 @@
         "label": "Micropayments"
       },
       {
-        "id": "urn:ngm:class:cross-border-transactions",
-        "label": "Cross-Border Transactions"
+        "id": "urn:ngm:class:cross-border-payments",
+        "label": "Cross-Border Payments"
       }
     ],
     "dependsOn": [

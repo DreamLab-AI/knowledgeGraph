@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:linux-kernel",
+  "title": "Linux Kernel",
+  "slug": "linux-kernel",
+  "public": true,
+  "classIri": "urn:ngm:class:linux-kernel",
+  "domain": "infrastructure",
+  "definition": "The Linux kernel is the open-source, Unix-like core of the Linux operating system, managing process scheduling, memory, device drivers and system calls between hardware and user-space programs. First released by Linus Torvalds in 1991, it is maintained collaboratively and licensed under the GPLv2. It provides the namespace and cgroup primitives that container platforms such as Docker rely on to isolate and constrain processes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:operating-system",
+      "label": "Operating System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "container",
+      "label": "Container"
+    }
+  ]
+}

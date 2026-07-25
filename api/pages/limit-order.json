@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:limit-order",
+  "title": "Limit Order",
+  "slug": "limit-order",
+  "public": true,
+  "classIri": "urn:ngm:class:limit-order",
+  "domain": "finance",
+  "definition": "A limit order is an instruction to buy or sell an asset at a specified price or better, remaining unfilled until the market reaches that price rather than executing immediately at the prevailing market price. It rests in the order book alongside other resting orders, contributing to displayed liquidity and price discovery until it is filled, cancelled or expires. Market makers use limit orders on both sides of the book to earn the bid-ask spread while managing inventory risk.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:order-book",
+      "label": "Order Book"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "mature",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:market-making",
+        "label": "Market Making"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:order-book",
+        "label": "Order Book"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

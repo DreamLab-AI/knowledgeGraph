@@ -66,10 +66,16 @@ public:: true
   "domain": "robotics",
   "maturity": "established",
   "qualityScore": 0.7,
-  "subClassOf": {
-    "@id": "urn:ngm:class:robotics",
-    "label": "Robotics"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    },
+    {
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

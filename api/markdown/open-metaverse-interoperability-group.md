@@ -1,4 +1,0 @@
-- ### Definition
-  - The Open Metaverse Interoperability Group develops open protocols for portable avatars, objects, and identity across virtual worlds such as [[Vircadia]], promoting composable metaverse experiences over walled gardens.
-- ### Content
-  - OMI specifications cover avatar portability, glTF extensions, and cross-platform identity. By coordinating open schemas across engines and platforms, the group seeks to let users and assets traverse independent virtual environments without vendor lock-in.

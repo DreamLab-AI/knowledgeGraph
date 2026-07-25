@@ -24,7 +24,7 @@ public:: true
   "definition": "Dynamic batching is a serving-system technique that aggregates multiple independently arriving inference requests into a single batch for joint GPU execution, without requiring a fixed batch size determined at service startup. Requests are collected over a short time window or until a target batch size is reached, then processed together in one forward pass, amortising the fixed overhead of GPU kernel launches and memory transfers across requests. This substantially increases GPU utilisation and throughput compared with processing each request independently, at the cost of a small, controllable increase in per-request latency.",
   "domain": "ai",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}, {"@id": "urn:ngm:class:inference-optimisation", "label": "Inference Optimisation"}],
   "relations": {
     "hasPart": [
       {"@id": "urn:ngm:class:batch-scheduler", "label": "Batch Scheduler"},

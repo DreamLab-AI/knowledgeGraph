@@ -1,4 +1,0 @@
-- ### Definition
-  - Fairness assessment measures whether a model's predictions are equitable across groups, frequently deriving group-conditioned error rates from a [[Confusion Matrix]]. It is a core practice within the [[AI Governance Domain]] and broader [[AI Governance and Ethics]].
-- ### Content
-  - Practitioners select fairness criteria appropriate to the use case (group versus individual fairness, error-rate balance versus calibration) knowing that several definitions are mutually incompatible. Assessments combine quantitative metrics with qualitative review of data provenance and societal context, feeding into bias mitigation, documentation, and accountability obligations.

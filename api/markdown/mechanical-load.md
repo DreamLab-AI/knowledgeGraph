@@ -1,4 +1,0 @@
-- ### Definition
-  - A mechanical load is the force or torque a drive must overcome, comprising inertia, friction, gravity, and process resistance. It is the quantity a [[DC Servo Motor]] must meet and the demand that sizes any [[Electric Motor]].
-- ### Content
-  - Load profiles may be constant, variable, or impulsive, and they shape torque-speed requirements, thermal limits, and control tuning. Mismatched load and drive selection causes overheating, instability, or premature wear, so engineers model reflected inertia and duty cycle before specifying a motor and gearbox.

@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:confusion-matrix",
       "label": "Confusion Matrix"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "relations": {

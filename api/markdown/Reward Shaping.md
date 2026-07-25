@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:reinforcement-learning",
       "label": "Reinforcement Learning"
+    },
+    {
+      "@id": "urn:ngm:class:reinforcement-learning-algorithm",
+      "label": "Reinforcement Learning Algorithm"
     }
   ],
   "relations": {

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:latent-diffusion",
       "label": "Latent Diffusion"
+    },
+    {
+      "id": "urn:ngm:class:diffusion-models",
+      "label": "Diffusion Models"
     }
   ],
   "entityType": "Class",

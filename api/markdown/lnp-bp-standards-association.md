@@ -1,4 +1,0 @@
-- ### Definition
-  - The LNP-BP Standards Association maintains specifications for Bitcoin layer-2/3 protocols, defining [[RGB and Client-Side Validation]] and standardising the [[BTC Layer 3]] constructs built atop Lightning.
-- ### Content
-  - Its work centres on client-side validation, where contract state is kept and verified off-chain while Bitcoin transactions provide commitment and ordering. By publishing open LNPBP specifications the association enables interoperable RGB asset and smart-contract implementations.

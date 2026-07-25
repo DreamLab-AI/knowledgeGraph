@@ -1,4 +1,0 @@
-- ### Definition
-  - The WCO SAFE Framework is a global customs standard underpinning [[Customs Trade Facilitation]], published by the World Customs Organization as a recognised [[Standards Body]].
-- ### Content
-  - SAFE rests on four core elements: harmonised advance electronic manifest data, a consistent risk-management approach, outbound inspection at the importing nation's request, and tangible benefits for compliant Authorised Economic Operators. Mutual recognition of AEO programmes between customs administrations is central to reducing duplicate inspections and accelerating legitimate cross-border trade.

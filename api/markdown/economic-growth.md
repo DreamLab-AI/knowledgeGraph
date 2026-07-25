@@ -1,4 +1,0 @@
-- ### Definition
-  - Economic Growth is the sustained increase in an economy's real output, usually measured by real GDP. It is a key outcome to which [[AI Adoption]] and the [[Adoption of Convergent Technologies]] are expected to contribute through productivity gains.
-- ### Content
-  - Growth theory attributes long-run increases in output to capital deepening, labour-force expansion, and total-factor productivity driven by innovation. General-purpose technologies such as AI can raise productivity across sectors, though realised growth depends on diffusion, complementary investment, and institutional factors.

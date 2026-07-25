@@ -32,8 +32,8 @@
         "label": "Stakeholder Engagement"
       },
       {
-        "id": "urn:ngm:class:disclosure",
-        "label": "Disclosure"
+        "id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
       }
     ],
     "enables": [
@@ -42,8 +42,8 @@
         "label": "ESG Reporting"
       },
       {
-        "id": "urn:ngm:class:disclosure",
-        "label": "Disclosure"
+        "id": "urn:ngm:class:disclosure-requirements",
+        "label": "Disclosure Requirements"
       }
     ],
     "dependsOn": [],

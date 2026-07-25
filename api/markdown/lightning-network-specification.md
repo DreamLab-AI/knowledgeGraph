@@ -1,4 +1,0 @@
-- ### Definition
-  - The Lightning Network Specification (BOLT) standardises Bitcoin's payment-channel protocol; it provides the foundation that [[Taproot Assets]] extends and that [[BTC Layer 3]] constructions build upon.
-- ### Content
-  - The BOLT documents cover transport encryption, channel funding, the commitment-transaction state machine, HTLC forwarding, and the gossip protocol for route discovery. Adherence guarantees interoperability across implementations such as LND, Core Lightning, and Eclair.

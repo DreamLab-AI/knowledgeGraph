@@ -1,4 +1,0 @@
-- ### Definition
-  - A data centre is a purpose-built facility housing compute, storage and network hardware along with the [[Energy and Power]] and cooling systems required to keep them running reliably.
-- ### Content
-  - Facilities are engineered for redundancy across power, cooling and connectivity, with tiered availability classifications. Because cooling and electricity dominate operating cost and environmental impact, efficiency metrics such as power usage effectiveness drive design and sustainability efforts.

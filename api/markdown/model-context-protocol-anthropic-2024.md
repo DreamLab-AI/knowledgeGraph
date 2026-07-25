@@ -1,4 +1,0 @@
-- ### Definition
-  - The Model Context Protocol (MCP), introduced by Anthropic in 2024, is an open JSON-RPC standard linking LLM apps to external tools and data. It standardises capability exposure for [[Agents]] and [[Computer Use and Browser Agents]].
-- ### Content
-  - MCP defines servers that advertise tools, resources, and prompts, and clients (model hosts) that negotiate and invoke them over a transport-agnostic protocol. By providing one interface for many integrations, it reduces bespoke connector work and lets the same tool server be reused across different agent runtimes.

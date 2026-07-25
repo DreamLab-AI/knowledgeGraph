@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:memory-efficient-training",
+  "title": "Memory-Efficient Training",
+  "slug": "memory-efficient-training",
+  "public": true,
+  "classIri": "urn:ngm:class:memory-efficient-training",
+  "domain": "machine-learning",
+  "definition": "Memory-efficient training encompasses techniques that reduce the accelerator memory required to train large neural networks, allowing larger models or batch sizes to fit within fixed hardware budgets. Approaches include gradient checkpointing, which recomputes intermediate activations during the backward pass instead of storing them, and parameter-efficient methods such as LoRA and DoRA, which train small low-rank adapters instead of full weight matrices. These techniques trade additional compute or reduced expressivity for substantially lower peak memory use during model training.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:model-training",
+      "label": "Model Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    }
+  ]
+}

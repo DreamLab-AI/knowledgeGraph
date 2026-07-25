@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:open-source-intelligence",
+  "title": "Open-Source Intelligence",
+  "slug": "open-source-intelligence",
+  "public": true,
+  "classIri": "urn:ngm:class:open-source-intelligence",
+  "domain": "security",
+  "definition": "Open-source intelligence, commonly abbreviated OSINT, is the practice of collecting and analysing information from publicly available sources, including websites, social media, public records, blockchain explorers and news media, to produce actionable intelligence. In security and blockchain-forensics contexts it is used to attribute wallet addresses, trace transaction flows and support threat-intelligence investigations without requiring privileged access to closed systems. Its reliability depends on corroborating multiple independent open sources rather than any single one.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:threat-intelligence",
+      "label": "Threat Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

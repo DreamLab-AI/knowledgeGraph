@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:technological-leadership",
+  "title": "Technological Leadership",
+  "slug": "technological-leadership",
+  "public": true,
+  "classIri": "urn:ngm:class:technological-leadership",
+  "domain": "ai",
+  "definition": "Technological leadership is the position a company, nation, or research institution attains when it consistently sets the pace of innovation and capability in a given technology domain ahead of its rivals. It confers strategic, economic, and often military advantage by shaping standards, capturing talent, and directing the trajectory of adjacent industries. In artificial intelligence, it is contested through model capability benchmarks, compute access, talent acquisition, and patent output. Maintaining it requires sustained investment because leads erode quickly as rivals close capability gaps.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:technology-race",
+      "label": "Technology Race"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:gradient-synchronisation",
+  "title": "Gradient Synchronisation",
+  "slug": "gradient-synchronisation",
+  "public": true,
+  "classIri": "urn:ngm:class:gradient-synchronisation",
+  "domain": "machine-learning",
+  "definition": "Gradient Synchronisation is the process of aggregating and distributing gradient updates across multiple workers or devices during distributed training of a neural network, ensuring all replicas converge on a consistent set of model parameters. It typically uses all-reduce or parameter-server communication patterns, and is a major bottleneck in large-scale training due to network bandwidth constraints. Techniques such as gradient compression and asynchronous updates trade off consistency for throughput.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:distributed-training",
+      "label": "Distributed Training"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fsdp",
+      "label": "FSDP"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    }
+  ]
+}

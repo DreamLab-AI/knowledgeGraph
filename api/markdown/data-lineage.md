@@ -1,4 +1,0 @@
-- ### Definition
-  - Data lineage records the origins, transformations and flow of data through systems, a core part of the [[Data Governance Domain]] and [[Metadata Management]] that establishes provenance and trust.
-- ### Content
-  - Lineage is captured at column or dataset granularity by parsing pipeline code, query logs and metadata, then visualised as a directed graph. It powers impact analysis before changes, root-cause debugging of data errors, and audit trails demanded by regulators.

@@ -1,2 +1,0 @@
-- ### Definition
-  - A signaling server brokers the initial exchange of session descriptions and network candidates between peers, enabling them to establish direct WebRTC or peer-to-peer connections without itself carrying application data.

@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:university-of-london",
+  "title": "University of London",
+  "slug": "university-of-london",
+  "public": true,
+  "classIri": "urn:ngm:class:university-of-london",
+  "domain": "artificial-intelligence",
+  "definition": "The University of London is a federal public research university in London, founded in 1836, comprising a group of largely autonomous constituent colleges and research institutes that award degrees under its charter. King's College London and University College London are among its best-known constituent colleges, each operating substantial independent research programmes, including in artificial intelligence and machine learning. The federal structure allows constituent colleges to share some central services while retaining separate admissions, governance and research identities.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:research-university",
+      "label": "Research University"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [
+      {
+        "id": "urn:ngm:class:king-s-college-london",
+        "label": "King's College London"
+      },
+      {
+        "id": "urn:ngm:class:university-college-london",
+        "label": "University College London"
+      }
+    ],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

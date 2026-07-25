@@ -1,4 +1,0 @@
-- ### Definition
-  - Operational Efficiency is the minimization of wasted resources in delivering outputs, a primary outcome that the [[Manufacturing Domain]] and [[Digital Transformation]] programs aim to enable.
-- ### Content
-  - It is pursued through process redesign, automation, and continuous measurement of input-to-output ratios. Improvements compound across workflows, raising throughput and lowering unit cost, which is why it anchors lean manufacturing and enterprise modernization efforts alike.

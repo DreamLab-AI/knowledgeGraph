@@ -1,4 +1,0 @@
-- ### Definition
-  - The infrastructure converting assets and rights into blockchain tokens and managing their full lifecycle. It is the substrate that produces a [[Crypto Token]] and supports patterns such as [[Fractionalized NFT]].
-- ### Content
-  - Such systems orchestrate minting, transfer rules, KYC/AML enforcement, and burn or redemption flows through composable smart contracts and supporting services. Robust tokenization platforms also maintain off-chain registries and oracles to keep on-chain representations synchronised with legal and custodial reality.

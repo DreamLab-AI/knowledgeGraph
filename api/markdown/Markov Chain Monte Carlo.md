@@ -62,8 +62,8 @@ public:: true
         "label": "Uncertainty Quantification"
       },
       {
-        "@id": "urn:ngm:class:posterior-inference",
-        "label": "Posterior Inference"
+        "@id": "urn:ngm:class:bayesian-inference",
+        "label": "Bayesian Inference"
       }
     ],
     "requires": [

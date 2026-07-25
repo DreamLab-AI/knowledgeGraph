@@ -1,4 +1,0 @@
-- ### Definition
-  - Chaumian Ecash is David Chaum's blind-signature digital cash scheme that delivers payer privacy through bearer tokens, forming the cryptographic basis used by [[Fedimint]] and implemented as the protocol family [[Cashu]].
-- ### Content
-  - In operation a user obtains blindly signed tokens from a mint, then spends them with recipients who redeem or reissue them, with the mint unable to correlate issuance and redemption. The model reintroduces a trusted custodian for liquidity in exchange for strong privacy and instant, low-cost transfers layered over Bitcoin and Lightning.

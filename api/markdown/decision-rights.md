@@ -1,4 +1,0 @@
-- ### Definition
-  - Decision rights define which actor holds authority over each category of decision, anchoring accountability within a [[Governance Domain]]. A [[Governance Framework]] implements them by assigning approval, veto, and escalation powers to specific roles.
-- ### Content
-  - In practice decision rights are encoded in RACI matrices, charters, or on-chain permission schemes. Well-specified rights minimise deadlock and shadow decision-making, while poorly drawn ones create gaps or overlaps that erode trust and slow execution.

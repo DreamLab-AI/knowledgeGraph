@@ -1,4 +1,0 @@
-- ### Definition
-  - Testing verifies that software behaves as specified by executing it against defined cases and checking outputs, a core practice for achieving [[Reliability]] within the [[Software Engineering Domain]].
-- ### Content
-  - Testing is organised into a hierarchy: unit tests isolate individual functions, integration tests exercise component boundaries, and system and acceptance tests validate end-to-end behaviour against requirements. Modern pipelines automate these in continuous integration so that every change is checked against a regression suite. Complementary techniques such as property-based testing, fuzzing, and coverage analysis extend confidence beyond hand-written examples, though no amount of testing proves the absence of all defects.

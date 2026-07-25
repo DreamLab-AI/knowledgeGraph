@@ -1,4 +1,0 @@
-- ### Definition
-  - The FAIR Data Principles require data to be Findable, Accessible, Interoperable, and Reusable, providing the governance foundation that a [[Domain Ontology]] and a [[Metadata Schema]] help operationalise. They are a cornerstone of modern [[Data Management]].
-- ### Content
-  - Implementing FAIR relies on persistent identifiers (e.g. DOIs), structured machine-readable metadata, shared ontologies for interoperability, and explicit licences and provenance for reuse. The principles are pivotal in linked-data and semantic-web contexts, where ontologies and metadata schemas turn raw datasets into interconnected, queryable resources.

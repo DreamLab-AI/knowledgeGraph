@@ -1,4 +1,0 @@
-- ### Definition
-  - Tessera is the private-transaction manager for the [[Quorum Blockchain]], handling encrypted payload exchange that gives confidentiality to [[Enterprise Smart Contracts]].
-- ### Content
-  - Each Quorum node pairs with a Tessera instance that encrypts private transaction payloads, distributes them only to the relevant participants, and stores them off-chain, while the public ledger records just a hash. This separation lets a consortium share a common chain yet keep sensitive contract data visible only to authorised members. Tessera supports pluggable key vaults and enclave-based encryption, succeeding the earlier Constellation manager in production permissioned networks.

@@ -1,4 +1,0 @@
-- ### Definition
-  - BIP-16 defines Pay-to-Script-Hash (P2SH), the Bitcoin standard that makes complex spending conditions practical and underpins [[Multi-Sig Governance]].
-- ### Content
-  - By committing only to a script hash in the output, P2SH keeps transactions compact and lets recipients define multi-signature or time-locked redemption logic. Activated in 2012, it became the foundation for multi-sig custody before SegWit and Taproot refined the model.

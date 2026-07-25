@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:multibase",
+  "title": "Multibase",
+  "slug": "multibase",
+  "public": true,
+  "classIri": "urn:ngm:class:multibase",
+  "domain": "infrastructure",
+  "definition": "Multibase is a self-describing encoding format specification that prefixes a binary value with a single character identifying which base encoding, such as base58btc, base32 or base64url, was used, so the encoded string can be decoded without external context. It is part of the Multiformats family of self-describing protocol specifications. It is used wherever content identifiers or decentralised-identifier material must be represented as text unambiguously across systems, such as Content Identifiers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:multiformats",
+      "label": "Multiformats"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:multiformats",
+        "label": "Multiformats"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:content-identifier",
+        "label": "Content Identifier"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

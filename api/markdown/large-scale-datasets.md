@@ -1,4 +1,0 @@
-- ### Definition
-  - Large-scale datasets are the massive training corpora that constitute essential [[AI Infrastructure]], required to train [[Large Language Models]] and other [[Generative AI]] systems.
-- ### Content
-  - Building them involves large-scale crawling or licensing, aggressive deduplication, quality and safety filtering, and tokenisation, with provenance and licensing increasingly under scrutiny. Empirical scaling laws show model performance improving predictably with data volume and quality, making dataset construction a core engineering and governance challenge in frontier AI.

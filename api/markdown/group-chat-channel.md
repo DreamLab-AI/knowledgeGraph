@@ -1,2 +1,0 @@
-- ### Definition
-  - A persistent, topic-scoped messaging space shared by multiple participants that supports both synchronous and asynchronous team communication.

@@ -61,12 +61,12 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:file-format",
-        "label": "File Format"
+        "@id": "urn:ngm:class:data-format",
+        "label": "Data Format"
       },
       {
-        "@id": "urn:ngm:class:backup",
-        "label": "Backup"
+        "@id": "urn:ngm:class:backup-and-recovery",
+        "label": "Backup and Recovery"
       }
     ],
     "supports": [
@@ -130,7 +130,7 @@ public:: true
   - Exact reconstruction guarantee, with no perceptual or numerical loss.
   - Lower achievable ratios than lossy methods on natural media.
   - Reversible transforms such as Burrows-Wheeler followed by [[Entropy Coding]].
-  - Wide use in general-purpose archive [[Codec]] and [[File Format]] designs.
+  - Wide use in general-purpose archive [[Codec]] and [[Data Format]] designs.
 - ### Mechanisms
   - Huffman and arithmetic/range coding for near-optimal symbol coding.
   - Dictionary substitution (LZ77/LZ78/LZW) for repeated sequences.
@@ -147,7 +147,7 @@ public:: true
   - uses:: [[Entropy Coding]]
   - uses:: [[Information Theory]]
   - hasPart:: [[Codec]]
-  - enables:: [[File Format]]
+  - enables:: [[Data Format]]
   - enables:: [[Backup]]
   - supports:: [[Data Warehouse]]
   - supports:: [[Data Storage]]

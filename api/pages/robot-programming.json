@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics"
+    },
+    {
+      "id": "urn:ngm:class:robot-operating-system",
+      "label": "Robot Operating System"
     }
   ],
   "entityType": "Class",

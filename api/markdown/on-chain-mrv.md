@@ -1,4 +1,0 @@
-- ### Definition
-  - On-Chain MRV anchors Measurement, Reporting, and Verification data to an immutable ledger, supporting auditable climate claims for [[Green Blockchain Initiatives]] and verifiable carbon markets.
-- ### Content
-  - The approach ingests sensor, satellite, and oracle data, attesting it on-chain so carbon credits carry a transparent provenance trail. This mitigates double-counting and greenwashing by making verification continuous and publicly inspectable rather than reliant on periodic manual audits.

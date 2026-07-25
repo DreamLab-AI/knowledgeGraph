@@ -1,4 +1,0 @@
-- ### Definition
-  - Medical devices are regulated instruments and software used to diagnose, monitor, or treat patients. Their safety-critical nature makes [[Fault Tolerance]] essential and frequently imposes [[Real-Time]] performance requirements.
-- ### Content
-  - Device design follows risk-based classification under frameworks such as the EU MDR and FDA regulations, mandating verification, validation, and traceability. Connected and AI-enabled devices add cybersecurity, post-market surveillance, and continuous-learning governance to the established hardware and software assurance burden.

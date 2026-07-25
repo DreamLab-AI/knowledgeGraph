@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics"
+    },
+    {
+      "id": "urn:ngm:class:proximity-sensor",
+      "label": "Proximity Sensor"
     }
   ],
   "entityType": "Class",
@@ -29,7 +33,7 @@
         "label": "Depth Sensing"
       },
       {
-        "id": "urn:ngm:class:3d-reconstruction",
+        "id": "urn:ngm:class:3-d-reconstruction",
         "label": "3D Reconstruction"
       },
       {

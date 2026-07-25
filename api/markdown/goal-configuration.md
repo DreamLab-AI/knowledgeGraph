@@ -1,4 +1,0 @@
-- ### Definition
-  - A goal configuration is the target state in configuration space that a robot must reach; it is required by [[Path Planning]] to define the search endpoint and by [[Trajectory Generation]] to produce executable motion.
-- ### Content
-  - Configurations are expressed in joint space for manipulators or as pose plus orientation for mobile platforms, and may be derived from a task-space goal via inverse kinematics. A planner treats the goal as the terminal node, finding a continuous, collision-free path through free configuration space. Goals can be single points, regions, or sets of acceptable poses when multiple solutions satisfy the task.

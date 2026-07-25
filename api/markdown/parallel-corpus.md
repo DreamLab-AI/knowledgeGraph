@@ -1,4 +1,0 @@
-- ### Definition
-  - A Parallel Corpus is sentence-aligned bilingual or multilingual text that supplies the training signal for [[Translation]] systems, including [[Real-Time Translation]] models.
-- ### Content
-  - Alignment at the segment level lets models learn how meaning maps between languages. Corpus size, translation quality, and domain coverage directly bound achievable accuracy, so curation and cleaning of parallel data are central concerns in machine-translation development.

@@ -28,6 +28,10 @@ alias:: GameAI
     {
       "@id": "urn:ngm:class:machine-learning-discipline",
       "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "relations": {

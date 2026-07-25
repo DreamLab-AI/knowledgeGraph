@@ -1,4 +1,0 @@
-- ### Definition
-  - ETSI MEC is the standard framework for [[Edge Computing]] at the network edge, defining APIs and architecture that standardise [[Hardware and Edge]] deployments for low-latency applications.
-- ### Content
-  - The specification exposes radio-network, location, and bandwidth-management services through standard APIs so applications can run on operator edge infrastructure. This enables consistent, portable deployment of latency-critical AR, vehicular, and IoT workloads across networks.

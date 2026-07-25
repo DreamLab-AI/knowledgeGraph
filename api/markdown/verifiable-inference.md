@@ -1,4 +1,0 @@
-- ### Definition
-  - Verifiable inference cryptographically proves that a model produced a claimed output, a capability required by decentralised compute networks such as [[Prime Intellect]].
-- ### Content
-  - Approaches trade off cost and assurance: zkML generates succinct proofs at heavy proving overhead, TEEs offer hardware attestation with weaker cryptographic guarantees, and optimistic schemes assume honesty with fraud-proof fallback. The goal is trust-minimised verification of outsourced AI computation.

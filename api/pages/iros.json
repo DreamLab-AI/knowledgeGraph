@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:robotics",
       "label": "Robotics"
+    },
+    {
+      "id": "urn:ngm:class:academic-conference",
+      "label": "Academic Conference"
     }
   ],
   "entityType": "Class",

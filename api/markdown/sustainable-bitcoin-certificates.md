@@ -1,4 +1,0 @@
-- ### Definition
-  - Sustainable Bitcoin certificates are tradable green-energy attestations for mined hashrate, issued under schemes such as the [[Sustainable Bitcoin Protocol]] to address [[Bitcoin Environmental Issues]].
-- ### Content
-  - Each certificate represents a verified link between a measured amount of bitcoin mining and a quantity of clean electricity, mirroring the renewable energy certificate model used in conventional power markets. By making the environmental attribute separately tradable, the scheme lets sustainability-focused investors fund greener mining without directly operating it. Critics question additionality and double-counting, the same scrutiny applied to carbon-offset and REC markets generally.

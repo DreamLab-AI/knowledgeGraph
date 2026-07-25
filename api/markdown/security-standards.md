@@ -1,4 +1,0 @@
-- ### Definition
-  - Security standards are the published specifications that generalise both the [[Cybersecurity Standard]] and [[Authentication Standards]] families, defining controls and requirements for protecting systems.
-- ### Content
-  - Frameworks differ in scope: management-system standards define governance and risk processes, control catalogues enumerate technical and procedural safeguards, and protocol standards specify interoperable cryptographic mechanisms. Conformance is demonstrated through certification, attestation, or audit, enabling trust between parties.

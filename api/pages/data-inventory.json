@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:data-inventory",
+  "title": "Data Inventory",
+  "slug": "data-inventory",
+  "public": true,
+  "classIri": "urn:ngm:class:data-inventory",
+  "domain": "governance",
+  "definition": "A data inventory is a structured, maintained record of the categories, locations, and flows of data - particularly personal data - that an organisation collects, processes, and stores. It underpins compliance with data protection regimes such as CCPA and GDPR by allowing an organisation to demonstrate what data it holds, why it holds it, and where it resides when responding to access, deletion, or portability requests. Maintaining an accurate data inventory is a prerequisite for exercising rights such as the right to be forgotten.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:data-catalog",
+      "label": "Data Catalog"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "right-to-be-forgotten",
+      "label": "Right to Be Forgotten"
+    }
+  ]
+}

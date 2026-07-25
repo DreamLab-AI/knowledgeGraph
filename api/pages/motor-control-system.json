@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:motor-control-system",
+  "title": "Motor Control System",
+  "slug": "motor-control-system",
+  "public": true,
+  "classIri": "urn:ngm:class:motor-control-system",
+  "domain": "robotics",
+  "definition": "A motor control system is the integrated assembly of sensing, driver electronics, and feedback logic that regulates the speed, torque, and position of one or more electric motors in a robotic platform. It combines components such as motor drivers, current sensors, and encoders with a control loop that adjusts drive signals in response to measured or estimated motor state. Motor control systems form the actuation layer that translates high-level motion commands into physical movement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:control-system",
+      "label": "Control System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "current-sensor",
+      "label": "Current Sensor"
+    }
+  ]
+}

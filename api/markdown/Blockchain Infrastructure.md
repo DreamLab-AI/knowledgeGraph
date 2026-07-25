@@ -89,10 +89,16 @@ public:: true
   "definition": "The foundational technical components enabling blockchain networks to operate, including nodes, networking protocols, consensus mechanisms, storage systems, and cryptographic primitives that together provide the physical and logical substrate for distributed ledger operation and decentralized application execution.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": {
-    "@id": "urn:ngm:class:blockchain",
-    "label": "Blockchain"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    },
+    {
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

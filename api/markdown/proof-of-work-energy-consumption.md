@@ -1,4 +1,0 @@
-- ### Definition
-  - Proof-of-work energy consumption is the electricity expended by miners to secure PoW blockchains through competitive hashing. It is a central component of [[Bitcoin Environmental Issues]] and is quantified by indices such as the [[CBECI]].
-- ### Content
-  - Energy use derives from the deliberate computational cost that makes block production expensive and chain rewriting infeasible. Estimates rely on assumptions about miner hardware efficiency and the electricity mix powering it, which is contested. Debates centre on grid impact versus use of stranded and renewable energy, demand-response participation, and comparisons with proof-of-stake alternatives that secure chains at a fraction of the energy.

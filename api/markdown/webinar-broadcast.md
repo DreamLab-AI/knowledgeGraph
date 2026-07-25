@@ -1,2 +1,0 @@
-- ### Definition
-  - A one-to-many streamed online event where presenters deliver content to a large remote audience who engage through moderated chat, polls, and Q&A rather than direct audio-video participation.

@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:compliant-motion",
+  "title": "Compliant Motion",
+  "slug": "compliant-motion",
+  "public": true,
+  "classIri": "urn:ngm:class:compliant-motion",
+  "domain": "robotics",
+  "definition": "Compliant motion is robot motion that yields to external contact forces rather than rigidly tracking a predefined trajectory, allowing a manipulator to accommodate unexpected contact, surface irregularities or misalignment. It is achieved through admittance or impedance control, which regulate the relationship between measured force and commanded motion. It is essential for tasks involving physical contact with uncertain environments, such as assembly, polishing and human-robot interaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:force-control",
+      "label": "Force Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    }
+  ]
+}

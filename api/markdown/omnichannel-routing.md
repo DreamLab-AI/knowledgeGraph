@@ -1,4 +1,0 @@
-- ### Definition
-  - Omnichannel routing directs interactions from many channels into a unified, context-aware queue and to the right handler. It is part of an [[Omnichannel]] strategy and is implemented in modern [[Call Centres]].
-- ### Content
-  - Routing engines apply skills-based, priority, and predictive rules, increasingly augmented by AI that classifies intent and forecasts queue load to balance service levels. By preserving a shared customer context across channels, it avoids repetition and enables seamless escalation from a bot to a human while maintaining conversation history.

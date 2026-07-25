@@ -104,8 +104,8 @@ public:: true
         "label": "Peer Discovery"
       },
       {
-        "@id": "urn:ngm:class:network-routing",
-        "label": "Network Routing"
+        "@id": "urn:ngm:class:routing",
+        "label": "Routing"
       }
     ],
     "enables": [

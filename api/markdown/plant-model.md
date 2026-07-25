@@ -1,4 +1,0 @@
-- ### Definition
-  - A plant model mathematically describes the dynamics of the system under control, forming the basis on which [[Control Theory]] designs and validates a [[Control Algorithm]].
-- ### Content
-  - The model relates inputs to outputs through state-space or transfer-function representations, enabling stability analysis, controller design, and simulation before deployment on hardware. Model fidelity governs control performance: unmodelled dynamics and parameter error degrade tracking and robustness, which motivates system identification and robust or adaptive control techniques that tolerate model uncertainty.

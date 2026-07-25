@@ -1,4 +1,0 @@
-- ### Definition
-  - Safety assurance builds justified confidence that a system operates safely, enabled by [[Predictive Maintenance]] and forming part of the [[Autonomous Systems Domain]].
-- ### Content
-  - It integrates hazard identification, structured safety arguments, and verification evidence into a coherent safety case maintained across the lifecycle. Continuous monitoring and predictive maintenance feed operational evidence back, keeping the assurance argument valid as conditions change.

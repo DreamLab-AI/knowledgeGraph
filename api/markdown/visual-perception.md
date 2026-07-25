@@ -1,4 +1,0 @@
-- ### Definition
-  - Visual perception is a robot's interpretation of its surroundings from visual input, required by [[Gaze Control]] and built on data captured by a [[Camera]].
-- ### Content
-  - It encompasses detection, recognition, depth estimation and scene reconstruction, often fusing multiple cameras and learned models. Reliable visual perception enables active behaviours such as directing gaze toward salient targets and guiding manipulation and locomotion in unstructured environments.

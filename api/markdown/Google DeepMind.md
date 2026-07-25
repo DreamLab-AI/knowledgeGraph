@@ -64,8 +64,8 @@ public:: true
         "label": "AI Safety Research"
       },
       {
-        "@id": "urn:ngm:class:scientific-ai",
-        "label": "Scientific AI"
+        "@id": "urn:ngm:class:scientific-discovery-acceleration",
+        "label": "Scientific Discovery Acceleration"
       }
     ],
     "dependsOn": [
@@ -220,7 +220,7 @@ public:: true
   - enables:: [[Reinforcement Learning]]
   - enables:: [[Protein Structure Prediction]]
   - enables:: [[AI Safety Research]]
-  - enables:: [[Scientific AI]]
+  - enables:: [[Scientific Discovery Acceleration]]
   - dependsOn:: [[TensorFlow]]
   - dependsOn:: [[Transformer Architecture]]
   - dependsOn:: [[Neural Network]]

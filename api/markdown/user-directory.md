@@ -1,4 +1,0 @@
-- ### Definition
-  - A user directory stores identity records and attributes that an [[Identity Provider]] queries to authenticate principals, forming a foundational part of an [[Identity Provider (IdP)]].
-- ### Content
-  - Directories expose standard query protocols such as LDAP and SCIM, manage group membership and policy attributes, and synchronise across federated systems. They underpin single sign-on, role-based access control and lifecycle provisioning of accounts.

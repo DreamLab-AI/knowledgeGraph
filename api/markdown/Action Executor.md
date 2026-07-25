@@ -86,7 +86,7 @@ public:: true
       {"@id": "urn:ngm:class:orchestration", "label": "Orchestration"},
       {"@id": "urn:ngm:class:sandbox-environment", "label": "Sandbox Environment"},
       {"@id": "urn:ngm:class:error-handling", "label": "Error Handling"},
-      {"@id": "urn:ngm:class:json-schema", "label": "JSON Schema"}
+      {"@id": "urn:ngm:class:json-data-interchange-format-schema", "label": "JSON Schema"}
     ],
     "enables": [
       {"@id": "urn:ngm:class:agentic-workflow", "label": "Agentic Workflow"},

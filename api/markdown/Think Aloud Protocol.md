@@ -24,38 +24,80 @@ public:: true
   "definition": "The Think Aloud Protocol is a qualitative usability research method in which participants verbalise their thought processes continuously while performing tasks with a system or interface. Originating in cognitive psychology, it provides direct access to users' mental models, expectations, and confusion points. The method is widely used in human-computer interaction research and UX design to uncover usability issues that observation alone cannot reveal. Two variants exist: concurrent think-aloud (verbalising during the task) and retrospective think-aloud (recalling thoughts after completing it).",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:spatial-computing", "label": "Spatial Computing"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:spatial-computing",
+      "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:human-computer-interface",
+      "label": "Human Computer Interface"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:usability-testing", "label": "Usability Testing"},
-      {"@id": "urn:ngm:class:cognitive-walkthrough", "label": "Cognitive Walkthrough"}
+      {
+        "@id": "urn:ngm:class:usability-testing",
+        "label": "Usability Testing"
+      },
+      {
+        "@id": "urn:ngm:class:cognitive-walkthrough",
+        "label": "Cognitive Walkthrough"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:user-experience", "label": "User Experience"},
-      {"@id": "urn:ngm:class:mental-model", "label": "Mental Model"},
-      {"@id": "urn:ngm:class:human-computer-interaction", "label": "Human-Computer Interaction"},
-      {"@id": "urn:ngm:class:qualitative-research", "label": "Qualitative Research"}
+      {
+        "@id": "urn:ngm:class:augmented-reality",
+        "label": "Augmented Reality"
+      },
+      {
+        "@id": "urn:ngm:class:virtual-reality",
+        "label": "Virtual Reality"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:session-recording", "label": "Session Recording"},
-      {"@id": "urn:ngm:class:verbal-protocol-analysis", "label": "Verbal Protocol Analysis"},
-      {"@id": "urn:ngm:class:eye-tracking", "label": "Eye Tracking"}
+      {
+        "@id": "urn:ngm:class:session-recording",
+        "label": "Session Recording"
+      },
+      {
+        "@id": "urn:ngm:class:verbal-protocol-analysis",
+        "label": "Verbal Protocol Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:usability-evaluation", "label": "Usability Evaluation"},
-      {"@id": "urn:ngm:class:interaction-design", "label": "Interaction Design"}
+      {
+        "@id": "urn:ngm:class:usability-evaluation",
+        "label": "Usability Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:interaction-design",
+        "label": "Interaction Design"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:user-centred-design", "label": "User-Centred Design"},
-      {"@id": "urn:ngm:class:accessibility", "label": "Accessibility"}
+      {
+        "@id": "urn:ngm:class:user-centred-design",
+        "label": "User-Centred Design"
+      },
+      {
+        "@id": "urn:ngm:class:accessibility",
+        "label": "Accessibility"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:user-research", "label": "User Research"},
-      {"@id": "urn:ngm:class:task-analysis", "label": "Task Analysis"}
-    ],
-    "relatedTo": [
-      {"@id": "urn:ngm:class:augmented-reality", "label": "Augmented Reality"},
-      {"@id": "urn:ngm:class:virtual-reality", "label": "Virtual Reality"}
+      {
+        "@id": "urn:ngm:class:user-research",
+        "label": "User Research"
+      },
+      {
+        "@id": "urn:ngm:class:task-analysis",
+        "label": "Task Analysis"
+      }
     ]
   },
   "sameAs": [],

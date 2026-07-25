@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:gpu-supply-chain",
+  "title": "GPU Supply Chain",
+  "slug": "gpu-supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu-supply-chain",
+  "domain": "artificial-intelligence",
+  "definition": "The GPU supply chain is the network of design, fabrication, packaging and distribution processes that produce graphics processing units used for AI training and inference, spanning fabless designers, foundries such as TSMC, memory suppliers and system integrators. Its capacity constraints and export controls directly shape which organisations can access the compute needed for frontier model development. It is a specific, compute-focused segment of the broader semiconductor supply chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:semiconductor-supply-chain",
+      "label": "Semiconductor Supply Chain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

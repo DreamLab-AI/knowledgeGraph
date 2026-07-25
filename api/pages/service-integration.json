@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:service-integration",
+  "title": "Service Integration",
+  "slug": "service-integration",
+  "public": true,
+  "classIri": "urn:ngm:class:service-integration",
+  "domain": "infrastructure",
+  "definition": "Service integration is the practice of connecting independently deployed software services so that they can exchange data and coordinate behaviour as a coherent system. It is commonly achieved through APIs, message brokers, and middleware layers that translate between differing protocols and data formats. Effective service integration allows organisations to compose new capabilities from existing systems without rebuilding them.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:system-integration",
+      "label": "System Integration"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "middleware",
+      "label": "Middleware"
+    }
+  ]
+}

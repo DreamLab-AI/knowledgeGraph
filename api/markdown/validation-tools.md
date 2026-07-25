@@ -1,4 +1,0 @@
-- ### Definition
-  - Validation tools automate conformance checking against specifications, supporting a [[Data Format Standard]] and underpinning a [[Compatibility Process]].
-- ### Content
-  - Typical tools include schema validators, linters, conformance test suites and interoperability harnesses. They integrate into CI pipelines and certification programmes, producing machine-readable reports that gate releases and confirm cross-vendor compatibility.

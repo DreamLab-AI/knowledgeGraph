@@ -1,0 +1,56 @@
+{
+  "id": "urn:visionflow:page:economic-competitiveness",
+  "title": "Economic Competitiveness",
+  "slug": "economic-competitiveness",
+  "public": true,
+  "classIri": "urn:ngm:class:economic-competitiveness",
+  "domain": "artificial-intelligence",
+  "definition": "Economic competitiveness is the capacity of a firm, sector or economy to sustain productivity, innovation and market share relative to peers, typically assessed through measures such as productivity growth, export performance and capacity to attract investment and talent. In the context of artificial intelligence, it refers to how AI adoption and capability affect a firm's or nation's relative economic standing. Investment in AI capability and competitive dynamics within AI markets are both treated as drivers of broader economic competitiveness.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:national-competitiveness",
+      "label": "National Competitiveness"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.65,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:national-competitiveness",
+        "label": "National Competitiveness"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-investment",
+      "label": "AI Investment"
+    },
+    {
+      "slug": "ai-talent-war",
+      "label": "AI Talent War"
+    },
+    {
+      "slug": "ai-talent",
+      "label": "AI Talent"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    }
+  ]
+}

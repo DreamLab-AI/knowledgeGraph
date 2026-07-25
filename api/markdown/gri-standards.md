@@ -1,4 +1,0 @@
-- ### Definition
-  - The GRI Standards define a modular disclosure framework that [[ESG Reporting]] implements and that [[Ethical Sourcing]] practices are measured against.
-- ### Content
-  - The standards comprise Universal Standards (applicable to all organisations), Sector Standards, and Topic Standards covering matters such as emissions, labour, and anti-corruption. Their materiality-based approach and structured indicators make sustainability performance auditable and comparable, supporting supply-chain accountability and investor decision-making.

@@ -121,7 +121,7 @@ public:: true
         "label": "End-to-End Encryption"
       },
       {
-        "@id": "urn:ngm:class:websocket",
+        "@id": "urn:ngm:class:web-socket",
         "label": "WebSocket"
       }
     ],

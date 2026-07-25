@@ -45,10 +45,16 @@ public:: true
   "definition": "A configuration variable set before training that controls the learning process but is not learned from data. Examples include learning rate, batch size, number of layers, dropout rate, and regularisation coefficients. Hyperparameter selection directly determines model capacity, convergence speed, and generalisation, making their tuning a critical step in building effective machine learning systems.",
   "domain": "machine-learning",
   "maturity": "established",
-  "subClassOf": {
-    "@id": "urn:ngm:class:machine-learning-discipline",
-    "label": "Machine Learning Discipline"
-  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:machine-learning-discipline",
+      "label": "Machine Learning Discipline"
+    },
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "relations": {
     "hasPart": [
       {

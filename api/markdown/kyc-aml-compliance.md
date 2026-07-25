@@ -1,4 +1,0 @@
-- ### Definition
-  - KYC/AML compliance is the embedded [[Regulatory Compliance]] capability that [[Enterprise Token Standards]] implement through permissioned transfer rules, and that [[Carbon Credit Tracking]] requires to ensure participants are verified and sanctioned-screened.
-- ### Content
-  - In permissioned and tokenised contexts, compliance logic is enforced at the protocol layer through allowlists, transfer restrictions and on-chain credential checks, supported by off-chain identity verification and transaction monitoring. This programmatic enforcement reduces manual review while producing the immutable audit trail regulators expect.

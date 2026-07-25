@@ -50,6 +50,10 @@ public:: true
     {
       "@id": "urn:ngm:class:spatial-computing",
       "label": "Spatial Computing"
+    },
+    {
+      "@id": "urn:ngm:class:geospatial-engine",
+      "label": "Geospatial Engine"
     }
   ],
   "relations": {

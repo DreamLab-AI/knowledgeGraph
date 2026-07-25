@@ -24,43 +24,106 @@ public:: true
   "definition": "An open-source interactive computing document format and execution environment that combines live code cells, rich text narrative, mathematical equations, visualisations, and widgets in a single shareable document. Jupyter Notebooks execute code through kernels (most commonly IPython for Python), enabling iterative, exploratory data analysis with immediate output inline. The format is widely adopted across data science, machine learning research, and scientific computing communities as a primary medium for reproducible research and educational content.",
   "domain": "artificial-intelligence",
   "maturity": "mature",
-  "subClassOf": [{"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "@id": "urn:ngm:class:data-science",
+      "label": "Data Science"
+    }
+  ],
   "relations": {
     "uses": [
-      {"@id": "urn:ngm:class:python", "label": "Python"},
-      {"@id": "urn:ngm:class:interactive-computing", "label": "Interactive Computing"},
-      {"@id": "urn:ngm:class:data-visualisation", "label": "Data Visualisation"}
+      {
+        "@id": "urn:ngm:class:python",
+        "label": "Python"
+      },
+      {
+        "@id": "urn:ngm:class:interactive-computing",
+        "label": "Interactive Computing"
+      },
+      {
+        "@id": "urn:ngm:class:data-visualisation",
+        "label": "Data Visualisation"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:kernel", "label": "Kernel"},
-      {"@id": "urn:ngm:class:web-browser", "label": "Web Browser"}
+      {
+        "@id": "urn:ngm:class:kernel",
+        "label": "Kernel"
+      },
+      {
+        "@id": "urn:ngm:class:web-browser",
+        "label": "Web Browser"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:exploratory-data-analysis", "label": "Exploratory Data Analysis"},
-      {"@id": "urn:ngm:class:reproducible-research", "label": "Reproducible Research"},
-      {"@id": "urn:ngm:class:machine-learning-experimentation", "label": "Machine Learning Experimentation"}
+      {
+        "@id": "urn:ngm:class:exploratory-data-analysis",
+        "label": "Exploratory Data Analysis"
+      },
+      {
+        "@id": "urn:ngm:class:reproducible-research",
+        "label": "Reproducible Research"
+      },
+      {
+        "@id": "urn:ngm:class:machine-learning-experimentation",
+        "label": "Machine Learning Experimentation"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:data-science", "label": "Data Science"},
-      {"@id": "urn:ngm:class:deep-learning-framework", "label": "Deep Learning Framework"},
-      {"@id": "urn:ngm:class:version-control", "label": "Version Control"}
+      {
+        "@id": "urn:ngm:class:data-science",
+        "label": "Data Science"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning-framework",
+        "label": "Deep Learning Framework"
+      },
+      {
+        "@id": "urn:ngm:class:version-control",
+        "label": "Version Control"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"},
-      {"@id": "urn:ngm:class:data", "label": "Data"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "@id": "urn:ngm:class:data",
+        "label": "Data"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:collaboration", "label": "Collaboration"},
-      {"@id": "urn:ngm:class:documentation", "label": "Documentation"}
+      {
+        "@id": "urn:ngm:class:collaboration",
+        "label": "Collaboration"
+      },
+      {
+        "@id": "urn:ngm:class:documentation",
+        "label": "Documentation"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:integrated-development-environment", "label": "Integrated Development Environment"}
+      {
+        "@id": "urn:ngm:class:integrated-development-environment",
+        "label": "Integrated Development Environment"
+      }
     ],
     "standardizedBy": [
-      {"@id": "urn:ngm:class:open-source", "label": "Open Source"}
+      {
+        "@id": "urn:ngm:class:open-source",
+        "label": "Open Source"
+      }
     ],
     "bridges To": [
-      {"@id": "urn:ngm:class:scientific-computing", "label": "Scientific Computing"}
+      {
+        "@id": "urn:ngm:class:scientific-computing",
+        "label": "Scientific Computing"
+      }
     ]
   },
   "quality": 0.62,

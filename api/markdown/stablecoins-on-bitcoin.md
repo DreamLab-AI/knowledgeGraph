@@ -1,4 +1,0 @@
-- ### Definition
-  - Stablecoins on Bitcoin are fiat-pegged [[Digital Asset]] tokens issued on Bitcoin-native protocols such as [[Taproot Assets]], Liquid, or RGB, bringing dollar-denominated value transfer to the Bitcoin ecosystem.
-- ### Content
-  - These tokens inherit Bitcoin's settlement assurances and, when routed over Lightning or higher layers, can move with near-instant finality and low fees. Their issuance is closely tied to [[BTC Layer 3]] and asset-overlay designs that add programmable token semantics atop Bitcoin without altering its base consensus, broadening Bitcoin from a single store-of-value asset toward a general settlement rail for pegged value.

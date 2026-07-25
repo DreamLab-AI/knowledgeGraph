@@ -1,4 +1,0 @@
-- ### Definition
-  - Secure storage persists data with confidentiality and integrity guarantees; it is required by a [[Digital Evidence Chain of Custody]] and by any tamper-resistant [[Audit Trail]].
-- ### Content
-  - Implementations layer encryption at rest with robust key management, fine-grained access control, and integrity mechanisms such as hashing or append-only logs. Where non-repudiation matters, write-once media, cryptographic timestamping, or hardware-backed keys provide tamper-evidence that supports legal and compliance use.

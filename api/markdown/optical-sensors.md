@@ -1,4 +1,0 @@
-- ### Definition
-  - Optical Sensors convert light into electrical signals for imaging and measurement, providing the visual input that [[Digital Performance Capture]] and [[Human Capture and Recognition]] systems require.
-- ### Content
-  - The category spans cameras, photodiodes, depth sensors, and time-of-flight and structured-light units. Their resolution, frame rate, and depth fidelity determine how accurately downstream pipelines reconstruct 3D geometry, motion, and identity from a scene.

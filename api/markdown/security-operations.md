@@ -1,4 +1,0 @@
-- ### Definition
-  - Security operations is the continuous monitoring and response discipline that is related to and supports [[Compliance Monitoring]] by providing detection and incident telemetry.
-- ### Content
-  - A SOC ingests logs and telemetry into a SIEM or detection platform, correlates events into prioritised alerts, and runs investigation and response playbooks. Increasing automation through SOAR and analytics reduces manual triage, while metrics such as mean time to detect and respond gauge effectiveness.

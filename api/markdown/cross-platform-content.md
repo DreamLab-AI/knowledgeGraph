@@ -1,4 +1,0 @@
-- ### Definition
-  - Cross-platform content is media authored once and consumable across many platforms via shared formats and conversion. It is enabled by a [[Format Parser]] and produced through a [[Metaverse Content Pipeline]].
-- ### Content
-  - Achieving portability requires ingesting and emitting interchange formats while preserving geometry, materials, animation, and metadata across heterogeneous runtimes. Robust parsers and pipelines automate validation, transcoding, and optimisation, but semantic mismatches between platform feature sets still require fallback or degradation strategies.

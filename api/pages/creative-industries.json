@@ -4,7 +4,7 @@
   "slug": "creative-industries",
   "public": true,
   "classIri": "urn:ngm:class:creative-industries",
-  "domain": "economics",
+  "domain": "artificial-intelligence",
   "definition": "The creative industries are the economic sectors that generate value primarily from individual creativity, skill, and intellectual property, spanning design, fashion, film, music, gaming, advertising, architecture, and publishing. They combine cultural production with commercial distribution and are increasingly reshaped by generative AI tooling. As an economic domain they constitute a significant employer and exporter of cultural goods \u2014 contributing \u00a3124 billion in gross value added to the UK economy in 2023 \u2014 while simultaneously representing the sector most affected by unresolved questions of copyright, training data use, and AI-enabled labour displacement.",
   "subClassOf": [
     {

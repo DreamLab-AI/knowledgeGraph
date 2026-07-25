@@ -1,4 +1,0 @@
-- ### Definition
-  - Remittances are cross-border personal money transfers, a use case central to [[Bitcoin as Money]] and a pillar of the [[Bitcoin Value Proposition]] given the high cost of legacy channels.
-- ### Content
-  - Conventional providers can charge several percent and take days to settle, especially on low-value corridors. Crypto rails and Lightning offer near-instant, low-fee transfers, though on- and off-ramp friction, volatility, and local liquidity remain practical barriers to mainstream adoption.

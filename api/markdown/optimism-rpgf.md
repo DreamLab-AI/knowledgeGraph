@@ -1,4 +1,0 @@
-- ### Definition
-  - Optimism RPGF is a retroactive public-goods funding mechanism that rewards demonstrated ecosystem impact, often informed by [[DAO Analytics]] and allocation methods related to [[Quadratic Voting]].
-- ### Content
-  - By funding projects after impact is observed rather than promised, RPGF shifts risk away from funders and rewards measurable contribution. Successive funding rounds refine allocation criteria and voter selection, making it a leading testbed for decentralized public-goods financing.

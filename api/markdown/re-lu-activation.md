@@ -1,4 +1,0 @@
-- ### Definition
-  - ReLU is the activation function f(x) = max(0, x), the default nonlinearity in deep [[Neural Network]] architectures. It is used in models such as [[Generative Adversarial Networks]] and taught throughout [[fast.ai]] curricula.
-- ### Content
-  - ReLU is computationally cheap and preserves a constant gradient of 1 for positive inputs, accelerating convergence relative to sigmoid/tanh. Its drawback is the dying-ReLU problem, where neurons stuck in the negative region stop learning; Leaky ReLU, PReLU, ELU, and GELU were introduced to maintain non-zero gradients.

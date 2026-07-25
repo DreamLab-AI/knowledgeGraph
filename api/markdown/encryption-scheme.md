@@ -1,4 +1,0 @@
-- ### Definition
-  - An Encryption Scheme is a triple of key-generation, encryption, and decryption algorithms that converts plaintext to ciphertext under a key. It is a primitive of [[Cryptography]] required by higher-level [[Cryptographic Protocol]] designs.
-- ### Content
-  - Symmetric schemes such as AES use one shared key for speed, while asymmetric schemes such as RSA and elliptic-curve cryptography use key pairs to enable key exchange and signatures. Security is judged against formal notions like IND-CPA and IND-CCA, ensuring ciphertexts leak no useful information to adversaries.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Voice interfaces let users interact through speech, layering recognition and synthesis over [[Natural Language Processing]]; conversational logic is frequently shared with text-based [[Chatbots]].
-- ### Content
-  - A typical voice pipeline performs wake-word detection, streaming ASR, intent parsing, response generation, and TTS, increasingly powered by end-to-end neural models and large language models. Design challenges include disambiguating commands without visual context, handling barge-in and interruptions, and preserving privacy given always-listening microphones.

@@ -1,4 +1,0 @@
-- ### Definition
-  - ROS-Industrial extends the Robot Operating System for manufacturing automation, related to the [[Robot Standard]] ecosystem and used by [[Industrial Robot]] deployments.
-- ### Content
-  - It supplies vendor drivers, a common interface for industrial arms, and integration with motion planning and perception. This lets manufacturers reuse ROS tooling for tasks such as path planning, calibration, and inspection on production hardware.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Resource allocation distributes scarce resources among competing uses through pricing, auctions, or scheduling, enabling [[Value Transfer]] and forming a core concern of the [[Economics Domain]].
-- ### Content
-  - Allocation mechanisms range from centralised scheduling to decentralised market clearing and on-chain fee markets. The design choice shapes efficiency, fairness, and incentive compatibility, determining whether resources flow to their highest-value uses.

@@ -1,4 +1,0 @@
-- ### Definition
-  - Itô calculus extends differential and integral calculus to a [[Stochastic Process]], supplying the rules needed to define and manipulate a [[Stochastic Differential Equation]] driven by Brownian motion.
-- ### Content
-  - The key distinction from ordinary calculus is the Itô correction term arising from the quadratic variation of the driving noise. This framework underlies diffusion models, score-based generative methods and continuous-time formulations of stochastic gradient dynamics in modern machine learning.

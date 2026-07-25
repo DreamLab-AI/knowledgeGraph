@@ -1,4 +1,0 @@
-- ### Definition
-  - An RDF triple store persists data as subject-predicate-object triples queryable via SPARQL. It is a specialised form of [[Graph Database]] and is required to host a [[Metaverse Ontology Schema]].
-- ### Content
-  - Triple stores index triples (and named-graph quads) for efficient pattern matching and support OWL/RDFS entailment to derive inferred statements. They differ from property-graph databases by adhering to W3C semantic-web standards, enabling federation across linked-data sources and standards-based interoperability of ontologies.

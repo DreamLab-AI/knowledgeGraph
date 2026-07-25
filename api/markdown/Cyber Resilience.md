@@ -87,8 +87,8 @@ public:: true
         "label": "Zero Trust Architecture"
       },
       {
-        "@id": "urn:ngm:class:intrusion-detection",
-        "label": "Intrusion Detection"
+        "@id": "urn:ngm:class:intrusion-detection-system",
+        "label": "Intrusion Detection System"
       },
       {
         "@id": "urn:ngm:class:defense-in-depth",

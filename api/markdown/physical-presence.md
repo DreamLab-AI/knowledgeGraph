@@ -1,4 +1,0 @@
-- ### Definition
-  - Physical presence is the felt sense of being bodily located in a remote or virtual space, enabled by [[Haptics]] and by embodied platforms such as the [[TC-0003 Telepresence Robot]].
-- ### Content
-  - Beyond visual and auditory immersion, physical presence depends on closing the action-perception loop: the user's movements drive a remote body or avatar, and forces, textures, and resistance are returned through haptic actuators. This embodiment supports tasks requiring dexterity and social co-presence, with fidelity limited by latency, the realism of force feedback, and the degrees of freedom of the remote platform.

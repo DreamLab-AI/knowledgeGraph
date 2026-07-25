@@ -1,4 +1,0 @@
-- ### Definition
-  - Low-latency interaction minimises the delay between user input and system response so experiences feel immediate. It depends on an optimised [[Networking Layer]] and is governed by a [[Latency Management Protocol]].
-- ### Content
-  - Techniques include edge placement of compute, client-side prediction, motion-to-photon optimisation, and prioritised QoS networking. In XR and cloud gaming, exceeding latency budgets degrades presence and can induce discomfort, making latency a hard design constraint rather than a tunable nicety.

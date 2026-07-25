@@ -1,4 +1,0 @@
-- ### Definition
-  - A proposal distribution generates candidate samples in Monte Carlo methods where direct sampling from the target is intractable. It is required by [[Sampling]] schemes and is a key component of the [[Particle Filter]].
-- ### Content
-  - In importance sampling, samples drawn from the proposal are reweighted by the ratio of target to proposal density; in Metropolis-Hastings the proposal generates moves that are accepted or rejected to leave the target invariant. In particle filtering the proposal often combines the motion model with the latest measurement to focus particles in high-likelihood regions, reducing the degeneracy that otherwise collapses the sample set.

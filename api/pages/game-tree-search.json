@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:game-tree-search",
+  "title": "Game Tree Search",
+  "slug": "game-tree-search",
+  "public": true,
+  "classIri": "urn:ngm:class:game-tree-search",
+  "domain": "artificial-intelligence",
+  "definition": "Game tree search is a family of algorithms that explore the tree of possible future game states branching from the current position, evaluating outcomes to choose the move that optimises a player's expected result against an adversary. Classical approaches such as minimax and alpha-beta pruning traverse the tree exhaustively or with heuristic bounds, while Monte Carlo tree search samples promising branches statistically to scale to games with very large branching factors. It is a foundational technique in adversarial game-playing AI, from classical board games to modern reinforcement-learning agents.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:search-algorithm",
+      "label": "Search Algorithm"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.5,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:graph-search",
+        "label": "Graph Search"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

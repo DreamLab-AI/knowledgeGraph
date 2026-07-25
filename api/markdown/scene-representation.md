@@ -1,2 +1,0 @@
-- ### Definition
-  - Scene Representation is the data structure or mathematical model that encodes the geometry, appearance, and spatial organisation of objects in a 3D environment for use in rendering, simulation, and spatial computing applications.

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:sandboxed-execution",
+  "title": "Sandboxed Execution",
+  "slug": "sandboxed-execution",
+  "public": true,
+  "classIri": "urn:ngm:class:sandboxed-execution",
+  "domain": "security",
+  "definition": "Sandboxed execution is the practice of running untrusted or partially trusted code inside an isolated environment with restricted access to the host filesystem, network and system resources. It contains the effects of faulty or malicious code by enforcing resource and permission boundaries at the process, container or virtual-machine level. Sandboxed execution underpins both security-sensitive contexts, such as running third-party plugins, and autonomous AI agents that must be prevented from taking unintended actions on a host system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sandbox-environment",
+      "label": "Sandbox Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.65,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:sandbox-environment",
+        "label": "Sandbox Environment"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "autonomous-task-execution",
+      "label": "Autonomous Task Execution"
+    }
+  ]
+}

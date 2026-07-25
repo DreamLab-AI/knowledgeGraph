@@ -1,4 +1,0 @@
-- ### Definition
-  - Ethics and law unites moral principles with enforceable legal rules governing technology, a paired concern within [[AI Ethics]] and the wider practice of [[Governance]].
-- ### Content
-  - The domain spans liability, privacy, fairness, and accountability, where ethical norms inform policy and law makes selected norms binding. ETSI and similar bodies treat ethics and law jointly so that systems are both responsible and compliant.

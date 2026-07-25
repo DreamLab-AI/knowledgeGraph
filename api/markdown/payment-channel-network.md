@@ -1,4 +1,0 @@
-- ### Definition
-  - A Payment Channel Network routes off-chain payments across a graph of bilateral channels, the architecture generalized by the [[Lightning Network]] for scalable blockchain payments.
-- ### Content
-  - Participants lock funds in multisignature channels and exchange signed balance updates off-chain, committing only channel opens and closes to the base layer. Routing payments through intermediary channels yields near-instant, low-fee transactions while inheriting the settlement security of the underlying chain.

@@ -1,0 +1,44 @@
+{
+  "id": "urn:visionflow:page:accredited-investor-verification",
+  "title": "Accredited Investor Verification",
+  "slug": "accredited-investor-verification",
+  "public": true,
+  "classIri": "urn:ngm:class:accredited-investor-verification",
+  "domain": "blockchain",
+  "definition": "Accredited investor verification is the process of confirming that a prospective investor meets the income, net-worth, or professional-knowledge thresholds that securities regulation requires for participation in unregistered or exempt securities offerings, such as many security token issuances. It typically involves documentary evidence or third-party attestation rather than self-certification alone. It is a compliance gate distinct from general know-your-customer identity checks, since it verifies financial eligibility rather than identity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.6,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:securities-regulation",
+        "label": "Securities Regulation"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    }
+  ]
+}

@@ -10,6 +10,10 @@
     {
       "id": "urn:ngm:class:perception",
       "label": "Perception"
+    },
+    {
+      "id": "urn:ngm:class:computer-vision",
+      "label": "Computer Vision"
     }
   ],
   "entityType": "Class",

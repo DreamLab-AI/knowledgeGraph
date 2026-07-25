@@ -1,4 +1,0 @@
-- ### Definition
-  - Feedforward compensation computes control action from a model of the plant and known disturbances ahead of any measured error, sharpening the response of [[Velocity Control]] and [[Position Control]] loops. It is a component of a closed-loop [[Control System]].
-- ### Content
-  - In motion control, feedforward terms inject anticipated torque or force based on commanded acceleration, velocity, and known load, so the feedback loop only corrects residual errors. This division reduces tracking lag and improves bandwidth, but its benefit is bounded by model accuracy: imperfect plant models leave residual error that feedback must still absorb.

@@ -72,8 +72,8 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:impact-measurement",
-        "label": "Impact Measurement"
+        "@id": "urn:ngm:class:impact-metrics",
+        "label": "Impact Metrics"
       },
       {
         "@id": "urn:ngm:class:theory-of-change",

@@ -1,4 +1,0 @@
-- ### Definition
-  - The Open Home Foundation is a non-profit steward of open-source smart-home software such as [[Home Assistant]], safeguarding privacy, user choice, and local-first control of the connected home.
-- ### Content
-  - The Foundation holds project IP, funds maintainers, and resists commercial capture of community-built tooling. Its emphasis on local processing over cloud dependence shapes the governance and technical direction of the smart-home projects it oversees.

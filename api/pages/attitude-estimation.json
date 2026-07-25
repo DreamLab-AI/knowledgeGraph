@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:attitude-estimation",
+  "title": "Attitude Estimation",
+  "slug": "attitude-estimation",
+  "public": true,
+  "classIri": "urn:ngm:class:attitude-estimation",
+  "domain": "robotics",
+  "definition": "Attitude estimation is the process of determining the orientation of a rigid body, typically expressed as roll, pitch and yaw or as a quaternion, relative to a reference frame. It fuses measurements from an inertial measurement unit's gyroscopes, accelerometers and magnetometers using sensor-fusion algorithms such as complementary or Kalman filters to counteract individual sensor drift and noise. Accurate attitude estimation is a prerequisite for stable flight control, robot balancing and any system that must reason about its own orientation in space.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sensor-fusion",
+      "label": "Sensor Fusion"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "gyroscope",
+      "label": "Gyroscope"
+    }
+  ]
+}

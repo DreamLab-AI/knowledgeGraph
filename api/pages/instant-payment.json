@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:instant-payment",
+  "title": "Instant Payment",
+  "slug": "instant-payment",
+  "public": true,
+  "classIri": "urn:ngm:class:instant-payment",
+  "domain": "blockchain",
+  "definition": "Instant payment refers to a funds transfer that is settled and made available to the recipient within seconds, rather than the minutes, hours or days typical of traditional clearing systems. On blockchain networks this is commonly achieved through payment channel networks such as the Lightning Network, which route transactions off-chain to avoid base-layer confirmation latency, or through purpose-built low-latency settlement layers. Instant payment is a key usability requirement for point-of-sale and micropayment use cases, where users expect confirmation comparable to card payments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:payment-system",
+      "label": "Payment System"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:payment-system",
+        "label": "Payment System"
+      }
+    ],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:lightning",
+        "label": "Lightning"
+      },
+      {
+        "id": "urn:ngm:class:breez",
+        "label": "Breez"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

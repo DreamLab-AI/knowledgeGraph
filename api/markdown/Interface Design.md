@@ -26,6 +26,10 @@ public:: true
     {
       "@id": "urn:ngm:class:infrastructure",
       "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering (Infrastructure)"
     }
   ],
   "relations": {

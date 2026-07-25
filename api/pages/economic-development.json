@@ -1,0 +1,39 @@
+{
+  "id": "urn:visionflow:page:economic-development",
+  "title": "Economic Development",
+  "slug": "economic-development",
+  "public": true,
+  "classIri": "urn:ngm:class:economic-development",
+  "domain": "governance",
+  "definition": "Economic development is the sustained process of improving a region's productive capacity, living standards, and institutional capabilities, typically measured through indicators such as employment, infrastructure investment, and income growth. It is pursued through policy instruments including industrial strategy, financial inclusion programmes, and public investment in skills and infrastructure. National and regional strategies increasingly treat technology adoption as a lever for economic development.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:economic-growth",
+      "label": "Economic Growth"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "uk-tech-ecosystem",
+      "label": "UK Tech Ecosystem"
+    }
+  ]
+}

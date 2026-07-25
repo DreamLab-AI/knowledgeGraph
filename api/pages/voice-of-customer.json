@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:voice-of-customer",
+  "title": "Voice of Customer",
+  "slug": "voice-of-customer",
+  "public": true,
+  "classIri": "urn:ngm:class:voice-of-customer",
+  "domain": "ai",
+  "definition": "Voice of Customer (VoC) is the systematic capture and analysis of customer feedback, from surveys, support transcripts, reviews and social channels, to surface expressed needs, preferences and pain points that inform product and service decisions. Modern VoC programmes increasingly use natural language processing to extract sentiment and themes from unstructured feedback at scale. It is a core input to customer experience management processes.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:customer-experience",
+      "label": "Customer Experience"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [
+      {
+        "id": "urn:ngm:class:customer-experience-management",
+        "label": "Customer Experience Management"
+      }
+    ],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [
+      {
+        "id": "urn:ngm:class:customer-experience",
+        "label": "Customer Experience"
+      }
+    ],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "customer-experience-management",
+      "label": "Customer Experience Management"
+    },
+    {
+      "slug": "customer-experience",
+      "label": "Customer Experience"
+    }
+  ]
+}

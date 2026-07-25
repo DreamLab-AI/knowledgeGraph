@@ -24,37 +24,88 @@ public:: true
   "definition": "A Systolic Array is a specialised parallel computing architecture composed of a homogeneous network of processing elements (PEs) that rhythmically compute and pass data through the array in a pipelined fashion, analogous to the rhythmic pumping of the heart. Each PE performs a fixed local computation and passes results to neighbours without centralised control or global memory access. This architecture is highly efficient for matrix multiplication and convolution operations, making it the dominant microarchitecture in modern AI accelerators such as Google's Tensor Processing Units.",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [{"@id": "urn:ngm:class:infrastructure", "label": "Infrastructure"}],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    },
+    {
+      "@id": "urn:ngm:class:ai-hardware",
+      "label": "AI Hardware"
+    }
+  ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:processing-element", "label": "Processing Element"},
-      {"@id": "urn:ngm:class:matrix-multiply-accumulate", "label": "Matrix Multiply-Accumulate"}
+      {
+        "@id": "urn:ngm:class:processing-element",
+        "label": "Processing Element"
+      },
+      {
+        "@id": "urn:ngm:class:matrix-multiply-accumulate",
+        "label": "Matrix Multiply-Accumulate"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:matrix-multiplication", "label": "Matrix Multiplication"},
-      {"@id": "urn:ngm:class:deep-learning", "label": "Deep Learning"},
-      {"@id": "urn:ngm:class:neural-network-inference", "label": "Neural Network Inference"}
+      {
+        "@id": "urn:ngm:class:matrix-multiplication",
+        "label": "Matrix Multiplication"
+      },
+      {
+        "@id": "urn:ngm:class:deep-learning",
+        "label": "Deep Learning"
+      },
+      {
+        "@id": "urn:ngm:class:neural-network-inference",
+        "label": "Neural Network Inference"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:data-flow-architecture", "label": "Data Flow Architecture"},
-      {"@id": "urn:ngm:class:hardware-accelerator", "label": "Hardware Accelerator"}
+      {
+        "@id": "urn:ngm:class:data-flow-architecture",
+        "label": "Data Flow Architecture"
+      },
+      {
+        "@id": "urn:ngm:class:hardware-accelerator",
+        "label": "Hardware Accelerator"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:silicon-chip", "label": "Silicon Chip"}
+      {
+        "@id": "urn:ngm:class:silicon-chip",
+        "label": "Silicon Chip"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:gpu", "label": "GPU"},
-      {"@id": "urn:ngm:class:field-programmable-gate-array", "label": "Field Programmable Gate Array"},
-      {"@id": "urn:ngm:class:tensor-processing-unit", "label": "Tensor Processing Unit"}
+      {
+        "@id": "urn:ngm:class:gpu",
+        "label": "GPU"
+      },
+      {
+        "@id": "urn:ngm:class:field-programmable-gate-array",
+        "label": "Field Programmable Gate Array"
+      },
+      {
+        "@id": "urn:ngm:class:tensor-processing-unit",
+        "label": "Tensor Processing Unit"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:von-neumann-architecture", "label": "Von Neumann Architecture"}
+      {
+        "@id": "urn:ngm:class:von-neumann-architecture",
+        "label": "Von Neumann Architecture"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:machine-learning", "label": "Machine Learning"}
+      {
+        "@id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      }
     ],
     "bridgesTo": [
-      {"@id": "urn:ngm:class:artificial-intelligence", "label": "Artificial Intelligence"}
+      {
+        "@id": "urn:ngm:class:artificial-intelligence",
+        "label": "Artificial Intelligence"
+      }
     ]
   },
   "quality": 0.62,

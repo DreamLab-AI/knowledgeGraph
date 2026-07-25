@@ -100,8 +100,7 @@ public:: true
       {"@id": "urn:ngm:class:learning-analytics", "label": "Learning Analytics"},
       {"@id": "urn:ngm:class:mastery-learning", "label": "Mastery Learning"},
       {"@id": "urn:ngm:class:formative-assessment", "label": "Formative Assessment"},
-      {"@id": "urn:ngm:class:computerised-adaptive-testing", "label": "Computerised Adaptive Testing"},
-      {"@id": "urn:ngm:class:differentiated-instruction", "label": "Differentiated Instruction"}
+      {"@id": "urn:ngm:class:computerised-adaptive-testing", "label": "Computerised Adaptive Testing"}
     ],
     "requires": [
       {"@id": "urn:ngm:class:knowledge-graph", "label": "Knowledge Graph"},
@@ -122,7 +121,6 @@ public:: true
       {"@id": "urn:ngm:class:psychometrics", "label": "Psychometrics"}
     ],
     "supports": [
-      {"@id": "urn:ngm:class:differentiated-instruction", "label": "Differentiated Instruction"},
       {"@id": "urn:ngm:class:mastery-learning", "label": "Mastery Learning"},
       {"@id": "urn:ngm:class:metacognition", "label": "Metacognition"}
     ],

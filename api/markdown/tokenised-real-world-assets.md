@@ -1,4 +1,0 @@
-- ### Definition
-  - Blockchain tokens representing ownership of tangible or traditional financial assets, enabling fractionalisation and programmable settlement. They are a key collateral and yield source for [[Decentralized Finance (DeFi)]] and are recorded on a [[Distributed Ledger]].
-- ### Content
-  - RWAs bring trillions in traditional value into reach of on-chain protocols, supporting use cases such as tokenised treasury bills, private credit, and real estate. Their viability hinges on legal recognition of token holders' claims, reliable off-chain custody, and oracle-fed valuation data.

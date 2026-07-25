@@ -28,6 +28,10 @@ public:: true
     {
       "@id": "urn:ngm:class:blockchain-transaction",
       "label": "Blockchain Transaction"
+    },
+    {
+      "@id": "urn:ngm:class:bitcoin",
+      "label": "Bitcoin"
     }
   ],
   "relations": {

@@ -54,6 +54,10 @@ public:: true
     {
       "@id": "urn:ngm:class:mlops",
       "label": "MLOps"
+    },
+    {
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Artificial Intelligence)"
     }
   ],
   "relations": {

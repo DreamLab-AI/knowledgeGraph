@@ -74,58 +74,146 @@ public:: true
     {
       "@id": "urn:ngm:class:mlops",
       "label": "MLOps"
+    },
+    {
+      "@id": "urn:ngm:class:machine-learning-operations",
+      "label": "Machine Learning Operations"
     }
   ],
   "relations": {
     "hasPart": [
-      {"@id": "urn:ngm:class:model-training-pipeline", "label": "Model Training Pipeline"},
-      {"@id": "urn:ngm:class:drift-detection", "label": "Drift Detection"},
-      {"@id": "urn:ngm:class:model-evaluation", "label": "Model Evaluation"},
-      {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"}
+      {
+        "@id": "urn:ngm:class:model-training-pipeline",
+        "label": "Model Training Pipeline"
+      },
+      {
+        "@id": "urn:ngm:class:drift-detection",
+        "label": "Drift Detection"
+      },
+      {
+        "@id": "urn:ngm:class:model-evaluation",
+        "label": "Model Evaluation"
+      },
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      }
     ],
     "enables": [
-      {"@id": "urn:ngm:class:model-deployment", "label": "Model Deployment"},
-      {"@id": "urn:ngm:class:model-serving", "label": "Model Serving"},
-      {"@id": "urn:ngm:class:production-ml", "label": "Production ML"}
+      {
+        "@id": "urn:ngm:class:model-deployment",
+        "label": "Model Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:model-serving",
+        "label": "Model Serving"
+      },
+      {
+        "@id": "urn:ngm:class:production-ml",
+        "label": "Production ML"
+      }
     ],
     "partOf": [
-      {"@id": "urn:ngm:class:mlops", "label": "MLOps"},
-      {"@id": "urn:ngm:class:ai-lifecycle", "label": "AI Lifecycle"}
+      {
+        "@id": "urn:ngm:class:mlops",
+        "label": "MLOps"
+      },
+      {
+        "@id": "urn:ngm:class:ai-lifecycle",
+        "label": "AI Lifecycle"
+      }
     ],
     "dependsOn": [
-      {"@id": "urn:ngm:class:data-drift", "label": "Data Drift"},
-      {"@id": "urn:ngm:class:model-monitoring", "label": "Model Monitoring"},
-      {"@id": "urn:ngm:class:feature-store", "label": "Feature Store"}
+      {
+        "@id": "urn:ngm:class:data-drift",
+        "label": "Data Drift"
+      },
+      {
+        "@id": "urn:ngm:class:model-monitoring",
+        "label": "Model Monitoring"
+      },
+      {
+        "@id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      }
     ],
     "uses": [
-      {"@id": "urn:ngm:class:model-training", "label": "Model Training"},
-      {"@id": "urn:ngm:class:ci-cd-automation", "label": "CI-CD Automation"},
-      {"@id": "urn:ngm:class:experiment-tracking", "label": "Experiment Tracking"},
-      {"@id": "urn:ngm:class:data-pipeline", "label": "Data Pipeline"}
+      {
+        "@id": "urn:ngm:class:model-training",
+        "label": "Model Training"
+      },
+      {
+        "@id": "urn:ngm:class:ci-cd-automation",
+        "label": "CI-CD Automation"
+      },
+      {
+        "@id": "urn:ngm:class:empirical-experimental-design-tracking",
+        "label": "Experiment Tracking"
+      },
+      {
+        "@id": "urn:ngm:class:data-pipeline",
+        "label": "Data Pipeline"
+      }
     ],
     "requires": [
-      {"@id": "urn:ngm:class:feature-store", "label": "Feature Store"},
-      {"@id": "urn:ngm:class:model-registry", "label": "Model Registry"},
-      {"@id": "urn:ngm:class:data-versioning", "label": "Data Versioning"},
-      {"@id": "urn:ngm:class:labelling-pipeline", "label": "Labelling Pipeline"}
+      {
+        "@id": "urn:ngm:class:feature-store",
+        "label": "Feature Store"
+      },
+      {
+        "@id": "urn:ngm:class:model-registry",
+        "label": "Model Registry"
+      },
+      {
+        "@id": "urn:ngm:class:data-versioning",
+        "label": "Data Versioning"
+      },
+      {
+        "@id": "urn:ngm:class:labelling-pipeline",
+        "label": "Labelling Pipeline"
+      }
     ],
     "supports": [
-      {"@id": "urn:ngm:class:continuous-deployment", "label": "Continuous Deployment"},
-      {"@id": "urn:ngm:class:model-governance", "label": "Model Governance"}
+      {
+        "@id": "urn:ngm:class:continuous-deployment",
+        "label": "Continuous Deployment"
+      },
+      {
+        "@id": "urn:ngm:class:model-governance",
+        "label": "Model Governance"
+      }
     ],
     "relatedTo": [
-      {"@id": "urn:ngm:class:continuous-integration", "label": "Continuous Integration"},
-      {"@id": "urn:ngm:class:online-learning", "label": "Online Learning"},
-      {"@id": "urn:ngm:class:continual-learning", "label": "Continual Learning"},
-      {"@id": "urn:ngm:class:federated-learning", "label": "Federated Learning"}
+      {
+        "@id": "urn:ngm:class:continuous-integration",
+        "label": "Continuous Integration"
+      },
+      {
+        "@id": "urn:ngm:class:online-learning",
+        "label": "Online Learning"
+      },
+      {
+        "@id": "urn:ngm:class:continual-learning",
+        "label": "Continual Learning"
+      },
+      {
+        "@id": "urn:ngm:class:federated-learning",
+        "label": "Federated Learning"
+      }
     ],
     "contrastsWith": [
-      {"@id": "urn:ngm:class:batch-training", "label": "Batch Training"},
-      {"@id": "urn:ngm:class:offline-learning", "label": "Offline Learning"}
+      {
+        "@id": "urn:ngm:class:batch-training",
+        "label": "Batch Training"
+      },
+      {
+        "@id": "urn:ngm:class:offline-learning",
+        "label": "Offline Learning"
+      }
     ]
   },
   "sameAs": [],
-  "quality": 0.90,
+  "quality": 0.9,
   "provenance": {
     "attributedTo": "did:nostr:enrichment-swarm",
     "generatedAt": "2026-06-21T00:00:00Z",

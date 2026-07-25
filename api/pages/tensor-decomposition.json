@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:tensor-decomposition",
+  "title": "Tensor Decomposition",
+  "slug": "tensor-decomposition",
+  "public": true,
+  "classIri": "urn:ngm:class:tensor-decomposition",
+  "domain": "machine-learning",
+  "definition": "Tensor decomposition factorises a multi-dimensional array, or tensor, into a combination of simpler, typically lower-rank components, such as in CP or Tucker decomposition, that approximate the original tensor while using far fewer parameters. It is used to compress large weight tensors in neural networks, revealing latent structure and reducing memory and compute cost. It is a key technique underlying model quantisation and hardware-efficient inference pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:tensor-computation",
+      "label": "Tensor Computation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.55,
+  "maturity": "draft",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [
+      {
+        "id": "urn:ngm:class:tensor-computation",
+        "label": "Tensor Computation"
+      }
+    ],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:quantisation",
+        "label": "Quantisation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "applied-mathematics",
+      "label": "Applied Mathematics"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

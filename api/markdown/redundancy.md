@@ -1,4 +1,0 @@
-- ### Definition
-  - Redundancy is the duplication of system elements to remove single points of failure, forming the backbone of [[Fault Tolerance]] and a core concern of [[Reliability Engineering]].
-- ### Content
-  - Patterns range from active-active and active-passive replication to N+1 hardware provisioning and geographic distribution across availability zones. Designers balance the cost of extra capacity against the target availability, often combining redundancy with health checks and automatic failover.
